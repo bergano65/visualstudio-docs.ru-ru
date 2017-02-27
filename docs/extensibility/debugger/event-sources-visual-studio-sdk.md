@@ -1,8 +1,7 @@
 ---
 title: "Источники событий (SDK для Visual Studio) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "отладка [пакет SDK для отладки], источники событий"
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # Источники событий (SDK для Visual Studio)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

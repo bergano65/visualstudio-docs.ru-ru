@@ -1,8 +1,7 @@
 ---
 title: "Профиль видимой временной шкалы | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "визуализатор vs.cv.threads.activelegendConcurrency, активная легенда представления «Потоки»"
 ms.assetid: 559841d1-967c-4b51-8574-6ace23969580
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # Профиль видимой временной шкалы
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

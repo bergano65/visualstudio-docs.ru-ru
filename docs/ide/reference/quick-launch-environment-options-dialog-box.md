@@ -1,8 +1,7 @@
 ---
 title: "Страница &#171;Быстрый запуск&#187;, папка &#171;Среда&#187;, диалоговое окно &#171;Параметры&#187; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "IDE, поиск"
 ms.assetid: 4200f297-d065-4723-9a30-d91ff2e26c9d
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Страница &#171;Быстрый запуск&#187;, папка &#171;Среда&#187;, диалоговое окно &#171;Параметры&#187;
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

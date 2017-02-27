@@ -1,8 +1,7 @@
 ---
 title: "Практическое руководство: реализации вложенных проектов | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "проекты [Visual Studio SDK] вложение"
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 17
-caps.handback.revision: 17
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # Практическое руководство: реализации вложенных проектов
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

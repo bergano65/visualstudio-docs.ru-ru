@@ -1,8 +1,7 @@
 ---
 title: "Страница &quot;Общие&quot;, папка &quot;Среда&quot;, диалоговое окно &quot;Параметры&quot; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,10 +28,10 @@ helpviewer_keywords:
   - "диалоговое окно "Общие параметры среды""
 ms.assetid: 90fc2e6f-572f-4384-96d8-5678299ce58e
 caps.latest.revision: 34
-caps.handback.revision: 34
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 34
 ---
 # Страница &quot;Общие&quot;, папка &quot;Среда&quot;, диалоговое окно &quot;Параметры&quot;
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

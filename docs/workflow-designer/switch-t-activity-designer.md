@@ -1,8 +1,7 @@
 ---
 title: "Конструктор действия Switch&lt;T&gt; | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/27/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -12,10 +11,10 @@ f1_keywords:
   - "System.Activities.Statements.Switch`1.UI"
 ms.assetid: 18a6c96e-49a9-4356-ab61-fbd7e3ab44bb
 caps.latest.revision: 3
-caps.handback.revision: 3
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 3
 ---
 # Конструктор действия Switch&lt;T&gt;
 Действие <xref:System.Activities.Statements.Switch%601> оценивает указанное выражение и выполняет действие из коллекции действий, где связанные ключи соответствуют значениям, полученным от оценки.  

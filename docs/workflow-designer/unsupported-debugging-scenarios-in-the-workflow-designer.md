@@ -1,17 +1,16 @@
 ---
 title: "Неподдерживаемые сценарии отладки в конструкторе рабочих процессов | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 6adbe379-41d0-4681-9cd0-b91f187c3c2c
 caps.latest.revision: 4
-caps.handback.revision: 4
 ms.author: "sdanie"
 manager: "erikre"
+caps.handback.revision: 4
 ---
 # Неподдерживаемые сценарии отладки в конструкторе рабочих процессов
 В конструкторе рабочих процессов в [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] добавлено множество новых функций, но при этом существует несколько сценариев отладки, которые он не поддерживает.В этом документе описаны сценарии отладки, не поддерживаемые конструктором рабочих процессов.  

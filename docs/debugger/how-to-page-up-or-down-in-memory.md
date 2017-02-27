@@ -1,8 +1,7 @@
 ---
 title: "Практическое руководство. Перемещение вверх или вниз по содержимому памяти | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,10 +24,10 @@ helpviewer_keywords:
   - "Окно "Память", переход вверх и вниз по страницам в памяти"
 ms.assetid: 50b30a68-66f6-43f8-a48b-59ce12c95471
 caps.latest.revision: 18
-caps.handback.revision: 18
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 18
 ---
 # Практическое руководство. Перемещение вверх или вниз по содержимому памяти
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

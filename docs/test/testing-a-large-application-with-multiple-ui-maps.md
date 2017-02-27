@@ -1,8 +1,7 @@
 ---
 title: "Тестирование крупного приложения с несколькими картами пользовательского интерфейса | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "закодированные тесты пользовательского интерфейса, несколько карт пользовательского интерфейса"
 ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 22
-caps.handback.revision: 22
 ms.author: "mlearned"
 manager: "douge"
+caps.handback.revision: 22
 ---
 # Тестирование крупного приложения с несколькими картами пользовательского интерфейса
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

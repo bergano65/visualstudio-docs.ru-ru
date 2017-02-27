@@ -1,8 +1,7 @@
 ---
 title: "Пошаговое руководство: Создание приложения основные изолированной среды | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "приложения на основе оболочки изолированного пошаговые руководства [Visual Studio]"
 ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 54
-caps.handback.revision: 54
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 54
 ---
 # Пошаговое руководство: Создание приложения основные изолированной среды
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

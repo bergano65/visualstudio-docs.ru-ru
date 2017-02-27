@@ -1,8 +1,7 @@
 ---
 title: "Поле TASK_STATE_FAULTED | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Поле TASK_STATE_FAULTED, класс задачи [обработчиков отладки платформы .NET Framework]"
 ms.assetid: ced826ae-09a9-4acf-af00-a2343d396bb8
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # Поле TASK_STATE_FAULTED
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

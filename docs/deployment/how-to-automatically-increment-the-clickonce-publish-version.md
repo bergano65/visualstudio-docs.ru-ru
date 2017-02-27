@@ -1,8 +1,7 @@
 ---
 title: "Практическое руководство. Автоматическое увеличение номера версии публикации ClickOnce | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,10 +19,10 @@ helpviewer_keywords:
   - "публикация, ClickOnce"
 ms.assetid: 686ab88a-6305-4914-a05b-fe269cc0ae1e
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 9
 ---
 # Практическое руководство. Автоматическое увеличение номера версии публикации ClickOnce
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

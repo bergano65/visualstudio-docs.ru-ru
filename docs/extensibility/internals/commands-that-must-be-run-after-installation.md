@@ -1,8 +1,7 @@
 ---
 title: "Команды, которые необходимо выполнить после установки | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "После установки команды"
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 caps.latest.revision: 22
-caps.handback.revision: 22
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 22
 ---
 # Команды, которые необходимо выполнить после установки
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

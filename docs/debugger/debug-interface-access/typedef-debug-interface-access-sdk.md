@@ -1,8 +1,7 @@
 ---
 title: "Typedef (SDK для доступа к интерфейсу отладки) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Typedef - символ [пакет SDK для доступа к интерфейсу отладки]"
 ms.assetid: 9ab441b9-cc72-47fa-83e2-87b3c2b891b4
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # Typedef (SDK для доступа к интерфейсу отладки)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

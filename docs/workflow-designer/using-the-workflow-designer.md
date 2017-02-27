@@ -1,8 +1,7 @@
 ---
 title: "Использование конструктора рабочих процессов | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/02/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -12,10 +11,10 @@ helpviewer_keywords:
   - "конструктор рабочих процессов [WFD], использование"
 ms.assetid: 991a942f-29bc-4868-9299-ed80c5665ab5
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 13
 ---
 # Использование конструктора рабочих процессов
 В данном разделе показан способ создания новых действий и проектов рабочих процессов при помощи встроенных конструкторов и редактора выражений, размещенного в нескольких конструкторах операций.  

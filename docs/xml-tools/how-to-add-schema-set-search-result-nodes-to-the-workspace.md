@@ -1,8 +1,7 @@
 ---
 title: "Как добавлять в рабочую область узлы, полученные в результате поиска набора схем | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ff33b3cc-4db9-4b4e-9378-b45ed5999b18
 caps.latest.revision: 3
-caps.handback.revision: 3
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 3
 ---
 # Как добавлять в рабочую область узлы, полученные в результате поиска набора схем
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

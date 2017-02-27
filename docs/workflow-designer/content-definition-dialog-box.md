@@ -1,8 +1,7 @@
 ---
 title: "Диалоговое окно &#171;Определение содержимого&#187; | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/23/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ f1_keywords:
   - "MessageContent.UI"
 ms.assetid: 7e4237c3-90a1-4149-bd8a-3643d1dde0df
 caps.latest.revision: 3
-caps.handback.revision: 3
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 3
 ---
 # Диалоговое окно &#171;Определение содержимого&#187;
 Диалоговое окно **Определение содержимого** используется в [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] для настройки свойств **Content** для действий <xref:System.ServiceModel.Activities.Send>, <xref:System.ServiceModel.Activities.Receive>, <xref:System.ServiceModel.Activities.SendReply>и <xref:System.ServiceModel.Activities.ReceiveReply>.[!INCLUDE[crabout](../test/includes/crabout_md.md)] конструкторах операций, использующих это поле, см. в разделах [Send](../workflow-designer/send-activity-designer.md), [Receive](../workflow-designer/receive-activity-designer.md), [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md) и [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md).  

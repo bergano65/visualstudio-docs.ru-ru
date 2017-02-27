@@ -1,8 +1,7 @@
 ---
 title: "Практическое руководство. Отображение данных трассировки WPF | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "WPF, отладка"
 ms.assetid: be3c6859-06e1-459e-9fd0-46375b5f55ef
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Практическое руководство. Отображение данных трассировки WPF
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

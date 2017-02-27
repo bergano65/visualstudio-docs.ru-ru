@@ -1,8 +1,7 @@
 ---
 title: "Доступ к theText представление с помощью API прежних версий | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "редакторы [Visual Studio SDK] прежних версий - текстового представления."
 ms.assetid: 8f751f72-c972-4be3-84ee-19c281e02e25
 caps.latest.revision: 15
-caps.handback.revision: 15
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # Доступ к theText представление с помощью API прежних версий
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

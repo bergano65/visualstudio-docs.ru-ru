@@ -1,8 +1,7 @@
 ---
 title: "Вложенность проектов | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "проекты [Visual Studio SDK] вложение"
 ms.assetid: 12cce037-9840-4761-845e-5abd5fb317b0
 caps.latest.revision: 15
-caps.handback.revision: 15
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # Вложенность проектов
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

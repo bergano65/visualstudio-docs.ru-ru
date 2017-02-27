@@ -1,8 +1,7 @@
 ---
 title: "Устранение проблем, связанных с анализом кода | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 61c7e44d-2780-4df5-9bcb-49e40c1152fc
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "erickson-doug"
 ms.author: "douge"
 manager: "douge"
+caps.handback.revision: 5
 ---
 # Устранение проблем, связанных с анализом кода
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Как задать точки останова в рабочих процессах (для прежних версий) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "рабочие процессы, задание точек останова"
 ms.assetid: 78e0be39-3e99-487c-bfef-19db0daf6f42
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 6
 ---
 # Как задать точки останова в рабочих процессах (для прежних версий)
 В этом разделе описывается задание точек останова в приложениях [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)], построенных с помощью средства [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] прежних версий.Используйте средство [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] прежних версий, если приложение [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] должно ориентироваться на [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  

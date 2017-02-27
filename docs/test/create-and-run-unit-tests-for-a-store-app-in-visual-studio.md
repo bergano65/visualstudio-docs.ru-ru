@@ -1,8 +1,7 @@
 ---
 title: "Создание и запуск модульных тестов для приложений Магазина в Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "модульные тесты;"
 ms.assetid: d3de7b31-0262-4373-ba84-e74eda7651e4
 caps.latest.revision: 26
-caps.handback.revision: 26
 author: "alexhomer1"
 ms.author: "ahomer"
 manager: "robinr"
+caps.handback.revision: 26
 ---
 # Создание и запуск модульных тестов для приложений Магазина в Visual Studio
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

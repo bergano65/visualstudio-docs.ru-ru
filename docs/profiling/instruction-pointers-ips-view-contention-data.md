@@ -1,8 +1,7 @@
 ---
 title: "Представление указателей инструкций — данные конфликтов профилировщика | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - ""Указатели инструкций" - представление"
 ms.assetid: f5e49c24-d4cf-4f87-977d-37e3223d1196
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # Представление указателей инструкций — данные конфликтов профилировщика
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

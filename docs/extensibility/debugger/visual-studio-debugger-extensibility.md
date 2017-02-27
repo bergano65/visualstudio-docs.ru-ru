@@ -1,8 +1,7 @@
 ---
 title: "Расширение возможностей отладчика Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Пакет SDK для отладки"
 ms.assetid: c088b6a2-c3ad-446b-830d-9c6f41b2934b
 caps.latest.revision: 32
-caps.handback.revision: 32
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 32
 ---
 # Расширение возможностей отладчика Visual Studio
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

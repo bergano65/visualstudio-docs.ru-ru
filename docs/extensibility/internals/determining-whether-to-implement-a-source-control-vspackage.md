@@ -1,8 +1,7 @@
 ---
 title: "Определение порядка реализации VSPackage управления источника | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "пакеты управления исходным кодом, о пакетов систем управления версиями"
 ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
 caps.latest.revision: 24
-caps.handback.revision: 24
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 24
 ---
 # Определение порядка реализации VSPackage управления источника
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

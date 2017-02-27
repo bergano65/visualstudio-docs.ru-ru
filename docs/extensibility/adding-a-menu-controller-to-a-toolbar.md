@@ -1,8 +1,7 @@
 ---
 title: "Добавление контроллера меню панели инструментов | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "контроллеры меню, добавление в панель инструментов"
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 38
-caps.handback.revision: 38
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 38
 ---
 # Добавление контроллера меню панели инструментов
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

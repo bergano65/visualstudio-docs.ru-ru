@@ -1,8 +1,7 @@
 ---
 title: "Задание уникального свойства автоматизации элементов управления для Магазина Windows при тестировании | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "mlearned"
 manager: "douge"
+caps.handback.revision: 10
 ---
 # Задание уникального свойства автоматизации элементов управления для Магазина Windows при тестировании
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

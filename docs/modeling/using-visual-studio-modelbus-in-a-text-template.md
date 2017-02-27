@@ -1,18 +1,17 @@
 ---
 title: "Использование Visual Studio ModelBus в текстовом шаблоне | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5ed3e5c2-f60f-43c7-8ef4-754f511339c5
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 13
 ---
 # Использование Visual Studio ModelBus в текстовом шаблоне
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

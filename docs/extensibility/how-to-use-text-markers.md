@@ -1,8 +1,7 @@
 ---
 title: "Практическое руководство: использование текстовых меток | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "редакторы [Visual Studio SDK] прежних версий - с помощью текстовых меток"
 ms.assetid: 76eed51c-eecb-4579-823e-13df2f0526b9
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Практическое руководство: использование текстовых меток
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Пошаговое руководство: Отображение парные фигурные скобки | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "редакторы [Visual Studio SDK] новый - парные фигурные скобки"
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 27
-caps.handback.revision: 27
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 27
 ---
 # Пошаговое руководство: Отображение парные фигурные скобки
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

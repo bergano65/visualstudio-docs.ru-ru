@@ -1,8 +1,7 @@
 ---
 title: "Службы, предоставляемые (VSPackage управления источника) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "пакеты управления исходным кодом, службы"
 ms.assetid: 9db07d70-87d2-4401-bc88-e3a49d81e9a2
 caps.latest.revision: 15
-caps.handback.revision: 15
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # Службы, предоставляемые (VSPackage управления источника)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

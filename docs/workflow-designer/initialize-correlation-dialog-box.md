@@ -1,8 +1,7 @@
 ---
 title: "Диалоговое окно &#171;Инициализация корреляции&#187; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ f1_keywords:
   - "InitializeCorrelation.UI"
 ms.assetid: 2a0a1cd3-7b9e-493e-9264-fcf85289ffcf
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 6
 ---
 # Диалоговое окно &#171;Инициализация корреляции&#187;
 Диалоговое окно **Инициализация корреляции** используется в [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] для изменения свойства <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> действия <xref:System.ServiceModel.Activities.InitializeCorrelation>.[!INCLUDE[crdefault](../test/includes/crdefault_md.md)] см. раздел [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md).  

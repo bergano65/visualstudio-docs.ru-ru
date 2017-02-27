@@ -1,8 +1,7 @@
 ---
 title: "Практическое руководство: автоматизации для Windows | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "окна инструментов, автоматизация"
 ms.assetid: 512ab2a4-7987-4912-8f40-8804bf66f829
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Практическое руководство: автоматизации для Windows
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

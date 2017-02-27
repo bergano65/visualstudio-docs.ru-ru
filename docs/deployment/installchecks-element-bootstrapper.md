@@ -1,8 +1,7 @@
 ---
 title: "Элемент &lt;InstallChecks&gt; (загрузчик) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "<InstallChecks> - элемент [загрузчик]"
 ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
 caps.latest.revision: 23
-caps.handback.revision: 23
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 23
 ---
 # Элемент &lt;InstallChecks&gt; (загрузчик)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

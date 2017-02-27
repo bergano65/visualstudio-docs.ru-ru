@@ -1,8 +1,7 @@
 ---
 title: "Поле TASK_STATE_RAN_TO_COMPLETION | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Поле TASK_STATE_RAN_TO_COMPLETION, класс задачи [обработчиков отладки платформы .NET Framework]"
 ms.assetid: 0f4830af-fe0c-4141-b768-817f4e426b8c
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # Поле TASK_STATE_RAN_TO_COMPLETION
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Практическое руководство. Создание сеансов анализа производительности с помощью средств профилирования вручную | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "средства производительности, создание сеансов анализа производительности"
 ms.assetid: ee2b3e0c-0990-46d9-8de6-c29fa386b15b
 caps.latest.revision: 18
-caps.handback.revision: 18
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 18
 ---
 # Практическое руководство. Создание сеансов анализа производительности с помощью средств профилирования вручную
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

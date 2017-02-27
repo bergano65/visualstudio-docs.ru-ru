@@ -1,18 +1,17 @@
 ---
 title: "Конструкторы действий обмена сообщениями | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 7
 ---
 # Конструкторы действий обмена сообщениями
 Конструкторы операций обмена сообщениями используются для создания и настройки действий обмена сообщениями, которые отправляют и получают сообщения [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] из приложения [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)].[!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)] представляет пять действий обмена сообщениями, а [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] предоставляет два новых конструктора шаблонов, позволяющих управлять обменом сообщениями в пределах рабочего процесса.В подразделах этого раздела и перечисленных в следующей таблице приводится описание использования действия [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] и конструкторов шаблонов.  

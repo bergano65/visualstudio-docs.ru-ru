@@ -1,8 +1,7 @@
 ---
 title: "Команда New File | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "Создать файл - команда"
 ms.assetid: 767868d6-a525-425b-a43b-2198f636ab6b
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Команда New File
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

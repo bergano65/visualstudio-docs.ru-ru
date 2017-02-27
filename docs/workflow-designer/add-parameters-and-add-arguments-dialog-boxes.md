@@ -1,8 +1,7 @@
 ---
 title: "Диалоговые окна &#171;Добавление параметров&#187; и &#171;Добавление аргументов&#187; | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/02/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,9 +10,9 @@ f1_keywords:
   - "AddParameters.UI"
 ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
 caps.latest.revision: 7
-caps.handback.revision: 7
 ms.author: "sdanie"
 manager: "erikre"
+caps.handback.revision: 7
 ---
 # Диалоговые окна &#171;Добавление параметров&#187; и &#171;Добавление аргументов&#187;
 В следующей таблице описаны элементы пользовательского интерфейса \(UI\) диалогового окна **Добавление параметров**, используемого в конструкторе <xref:System.Activities.Statements.InvokeMethod>.  

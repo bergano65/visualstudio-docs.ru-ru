@@ -1,8 +1,7 @@
 ---
 title: "Использование конструктора рабочих процессов конечного автомата для прежних версий | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "действие StateInitializationActivity"
 ms.assetid: 2cd21123-35c2-4eaf-82f6-86fce7a8f04d
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # Использование конструктора рабочих процессов конечного автомата для прежних версий
 При создании в [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)] нового проекта рабочего процесса конечного автомата, ориентированного на [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], можно выбрать один из шаблонов проекта прежних версий: **Консольное приложение рабочего процесса конечного автомата** или **Библиотека рабочего процесса конечного автомата**.Если выбрать один из этих шаблонов проекта конечного автомата, то конструктор конечного автомата использует пользовательский интерфейс конструктора рабочих процессов прежней версии.Дополнительные сведения о шаблонах проектов конечного автомата прежних версий см. в разделах [Как создать консольные приложения рабочих процессов конечных автоматов \(для прежних версий\)](../Topic/How%20to:%20Create%20State%20Machine%20Workflow%20Console%20Applications%20\(Legacy\).md) и [Как создать библиотеку рабочих процессов конечного автомата \(для прежних версий\)](../Topic/How%20to:%20Create%20a%20State%20Machine%20Workflow%20Library%20\(Legacy\).md).  

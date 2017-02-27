@@ -1,8 +1,7 @@
 ---
 title: "Копирование выбранного | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "визуализатор параллелизма, копирование выбранного"
 ms.assetid: 645d9bd3-0a17-4a09-9b25-b37ae3ff484a
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # Копирование выбранного
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

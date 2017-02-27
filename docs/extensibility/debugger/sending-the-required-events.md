@@ -1,8 +1,7 @@
 ---
 title: "Отправка необходимых событий | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "отладка [пакет SDK для отладки], необходимые события"
 ms.assetid: 08319157-43fb-44a9-9a63-50b919fe1377
 caps.latest.revision: 7
-caps.handback.revision: 7
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # Отправка необходимых событий
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

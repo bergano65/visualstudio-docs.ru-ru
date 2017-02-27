@@ -1,8 +1,7 @@
 ---
 title: "Отладка машинного кода | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,10 +23,10 @@ helpviewer_keywords:
   - "машинный код, отладка"
 ms.assetid: d94eee90-7e0d-4cac-88c1-9831030daa5e
 caps.latest.revision: 21
-caps.handback.revision: 21
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 21
 ---
 # Отладка машинного кода
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

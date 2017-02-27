@@ -1,8 +1,7 @@
 ---
 title: "Практическое руководство. Настройка столбцов представлений отчетов средств профилирования | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "отчеты о производительности, настройка"
 ms.assetid: cb6f6d30-52a5-4d92-ab07-1d5ddb67884c
 caps.latest.revision: 18
-caps.handback.revision: 18
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 18
 ---
 # Практическое руководство. Настройка столбцов представлений отчетов средств профилирования
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

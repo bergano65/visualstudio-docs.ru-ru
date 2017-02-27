@@ -1,8 +1,7 @@
 ---
 title: "Практическое руководство. Включение параметров безопасности ClickOnce-приложений. | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "параметры безопасности, развертывание ClickOnce"
 ms.assetid: 73cd3e9d-cd72-4ad2-8cae-94d6bb6b01e0
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 8
 ---
 # Практическое руководство. Включение параметров безопасности ClickOnce-приложений.
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
