@@ -1,17 +1,16 @@
 ---
 title: "Конструкторы действий конечных автоматов | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/02/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
 caps.latest.revision: 5
-caps.handback.revision: 5
 ms.author: "sdanie"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # Конструкторы действий конечных автоматов
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] включает ряд конструкторов действий, которые вы можете использовать для построения рабочих процессов.Этот раздел содержит предоставленные системой конструктора действий, которые используются для создания и управления рабочими процессами конечного автомата.В следующих разделах приводится описание этих действий, а также дано руководство по их использованию.  

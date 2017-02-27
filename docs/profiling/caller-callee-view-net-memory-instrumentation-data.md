@@ -1,8 +1,7 @@
 ---
 title: "Представление &quot;Вызывающий/вызываемый&quot; — данные инструментирования памяти .NET профилировщика | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "представление "Вызывающий/вызываемый""
 ms.assetid: da624c06-8741-4afb-aad1-f8c0002f3de2
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Представление &quot;Вызывающий/вызываемый&quot; — данные инструментирования памяти .NET профилировщика
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

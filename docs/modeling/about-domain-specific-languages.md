@@ -1,8 +1,7 @@
 ---
 title: "О доменных языках | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ helpviewer_keywords:
   - "Доменный язык"
 ms.assetid: 29e5b6f2-ece4-4f3b-ab08-5f957418702f
 caps.latest.revision: 26
-caps.handback.revision: 26
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 26
 ---
 # О доменных языках
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

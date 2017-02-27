@@ -1,8 +1,7 @@
 ---
 title: "Выбор стратегии реализации ядра отладки | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "отладчики, стратегии реализации"
 ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
 caps.latest.revision: 6
-caps.handback.revision: 6
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # Выбор стратегии реализации ядра отладки
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

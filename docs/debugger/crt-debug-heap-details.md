@@ -1,8 +1,7 @@
 ---
 title: "Сведения о куче отладки CRT | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -77,10 +76,10 @@ helpviewer_keywords:
   - "new - оператор, использование кучи отладки из C++"
 ms.assetid: bf78ace6-28e4-4a04-97c6-39e0cdd00ba4
 caps.latest.revision: 19
-caps.handback.revision: 19
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 19
 ---
 # Сведения о куче отладки CRT
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

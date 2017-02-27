@@ -1,8 +1,7 @@
 ---
 title: "Элемент RequiredFrameworkVersion (шаблоны Visual Studio) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "RequiredFrameworkVersion (шаблоны Visual Studio)"
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Элемент RequiredFrameworkVersion (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

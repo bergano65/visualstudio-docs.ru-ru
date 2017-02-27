@@ -1,8 +1,7 @@
 ---
 title: "Диалоговое окно &quot;Свойства потока&quot; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "свойства потока, Spy++"
 ms.assetid: 5352d11a-debb-4c20-b9a0-d37d94900b1c
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 5
 ---
 # Диалоговое окно &quot;Свойства потока&quot;
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

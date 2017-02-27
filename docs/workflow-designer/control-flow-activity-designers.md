@@ -1,18 +1,17 @@
 ---
 title: "Конструкторы действия управления потоком | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/21/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 7
 ---
 # Конструкторы действия управления потоком
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] включает определенное количество системных действий, которые могут быть использованы для построения рабочих процессов.В этом разделе содержатся действия, предусмотренные системой, и служащие для управления потоком в пределах рабочего процесса.В следующих подразделах приводится описание этих действий, а также описание их использования.  

@@ -1,8 +1,7 @@
 ---
 title: "Практическое руководство. Включение файла данных в приложение ClickOnce | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "развертывание приложений [ClickOnce], файлы данных"
 ms.assetid: 89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 15
 ---
 # Практическое руководство. Включение файла данных в приложение ClickOnce
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

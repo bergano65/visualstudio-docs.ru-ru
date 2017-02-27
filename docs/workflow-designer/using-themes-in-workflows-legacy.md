@@ -1,8 +1,7 @@
 ---
 title: "Использование тем в рабочих процессах (для прежних версий) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "рабочие процессы, темы"
 ms.assetid: 10225f34-aced-432a-846c-82cf6137d7c0
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # Использование тем в рабочих процессах (для прежних версий)
 В данном разделе описывается использование тем в [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] при работе со средством [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] более ранней версии, ориентированного на работу с [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  

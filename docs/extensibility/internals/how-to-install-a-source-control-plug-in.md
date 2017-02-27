@@ -1,8 +1,7 @@
 ---
 title: "Практическое руководство: Установка подключаемого модуля системы управления версиями | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Источник подключаемые модули управления, установка"
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 32
-caps.handback.revision: 32
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 32
 ---
 # Практическое руководство: Установка подключаемого модуля системы управления версиями
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

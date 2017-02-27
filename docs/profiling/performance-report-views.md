@@ -1,8 +1,7 @@
 ---
 title: "Представления отчетов средств профилирования | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "средства профилирования, представления отчетов"
 ms.assetid: 3e84e513-dc64-40bb-b385-03281f28b519
 caps.latest.revision: 24
-caps.handback.revision: 24
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 24
 ---
 # Представления отчетов средств профилирования
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

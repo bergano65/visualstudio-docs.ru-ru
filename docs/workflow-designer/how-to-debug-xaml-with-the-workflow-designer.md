@@ -1,18 +1,17 @@
 ---
 title: "Как отлаживать XAML в конструкторе рабочих процессов | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: d9305dbc-af62-4bdd-b03f-c54e3fe9ecc7
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 8
 ---
 # Как отлаживать XAML в конструкторе рабочих процессов
 Рабочие процессы определены в терминах XAML.Представление пользовательского интерфейса рабочего процесса построено на основе дерева XAML, определяющего рабочий процесс.Отладка выполняется так же, как и отладка рабочих процессов в [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)].Например, при отладке XAML локальные переменные, окно просмотра значений и потоки работают так же, как и при отладке [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].Помимо этого, представление стека вызова при отладке XAML является линейным иерархическим представлением потока выполнения для рабочего процесса.  

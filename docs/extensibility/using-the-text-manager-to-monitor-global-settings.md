@@ -1,8 +1,7 @@
 ---
 title: "С помощью диспетчера текст для наблюдения за глобальные параметры | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "редакторы [Visual Studio SDK] прежних версий - диспетчер текста"
 ms.assetid: 023e7671-cf65-419c-9bc1-3c4ee92aa436
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # С помощью диспетчера текст для наблюдения за глобальные параметры
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

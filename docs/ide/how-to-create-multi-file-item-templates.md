@@ -1,8 +1,7 @@
 ---
 title: "Практическое руководство. Создание многофайловых шаблонов элементов | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "шаблоны Visual Studio, создание многофайловых шаблонов элементов"
 ms.assetid: fe3c4257-e383-4c80-b8af-c5c521959c33
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Практическое руководство. Создание многофайловых шаблонов элементов
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

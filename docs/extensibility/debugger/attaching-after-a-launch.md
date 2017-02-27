@@ -1,8 +1,7 @@
 ---
 title: "Присоединение после запуска | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "отладчики, присоединение к программам"
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Присоединение после запуска
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

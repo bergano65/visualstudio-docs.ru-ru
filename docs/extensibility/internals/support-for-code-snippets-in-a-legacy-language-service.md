@@ -1,8 +1,7 @@
 ---
 title: "Поддержка фрагментов кода в языковую службу для прежних версий | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Поддержка фрагментов кода языковые службы [платформа управляемых пакетов]"
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 28
-caps.handback.revision: 28
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 28
 ---
 # Поддержка фрагментов кода в языковую службу для прежних версий
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

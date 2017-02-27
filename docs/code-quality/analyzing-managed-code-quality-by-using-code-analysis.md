@@ -1,8 +1,7 @@
 ---
 title: "Анализ качества управляемого кода с помощью метода анализа кода | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/12/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "анализ управляемого кода"
 ms.assetid: 68510a55-da51-4381-81a5-0feba76b8b4f
 caps.latest.revision: 24
-caps.handback.revision: 24
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 24
 ---
 # Анализ качества управляемого кода с помощью метода анализа кода
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

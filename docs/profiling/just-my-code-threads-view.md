@@ -1,8 +1,7 @@
 ---
 title: "Только мой код (представление &quot;Потоки&quot;) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Визуализатор параллелизма, только мой код (представление "Потоки")"
 ms.assetid: a9ac8a2c-9d99-4207-8ed4-e87f033f440d
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # Только мой код (представление &quot;Потоки&quot;)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

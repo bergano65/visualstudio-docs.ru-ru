@@ -1,8 +1,7 @@
 ---
 title: "Пошаговое руководство: Доступ к объекту DTE из расширение редактора | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "редакторы [Visual Studio SDK] новый - получение объекта DTE"
 ms.assetid: c1f40bab-c6ec-45b0-8333-ea5ceb02a39d
 caps.latest.revision: 22
-caps.handback.revision: 22
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 22
 ---
 # Пошаговое руководство: Доступ к объекту DTE из расширение редактора
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

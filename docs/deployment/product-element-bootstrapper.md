@@ -1,8 +1,7 @@
 ---
 title: "Элемент &lt;Product&gt; (загрузчик) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "<product> - элемент [загрузчик]"
 ms.assetid: 52b414af-ec80-4d2f-ad14-902543cd268e
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 8
 ---
 # Элемент &lt;Product&gt; (загрузчик)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

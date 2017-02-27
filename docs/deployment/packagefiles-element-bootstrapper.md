@@ -1,8 +1,7 @@
 ---
 title: "Элемент &lt;PackageFiles&gt; (загрузчик) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "<PackageFiles> - элемент [загрузчик]"
 ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 16
 ---
 # Элемент &lt;PackageFiles&gt; (загрузчик)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

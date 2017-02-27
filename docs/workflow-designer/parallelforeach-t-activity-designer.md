@@ -1,8 +1,7 @@
 ---
 title: "Конструктор действия ParallelForEach&lt;T&gt; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ f1_keywords:
   - "System.Activities.Statements.ParallelForEach`1.UI"
 ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 9
 ---
 # Конструктор действия ParallelForEach&lt;T&gt;
 Действие <xref:System.Activities.Statements.ParallelForEach%601> перечисляет элементы коллекции и выполняет вложенную инструкцию для каждого элемента коллекции параллельно, асинхронно в том же потоке.Это действие управления потоком следует использовать вместо действия <xref:System.Activities.Statements.Sequence>, если ожидается, что вложенные действия перейдут в режим бездействия.  

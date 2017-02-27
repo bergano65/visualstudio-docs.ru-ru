@@ -1,8 +1,7 @@
 ---
 title: "Как изменить вариант пошаговой отладки (для прежних версий) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "пошаговое выполнение, изменение параметров"
 ms.assetid: aedc06af-d58a-44d6-aee4-f397f1f923a0
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # Как изменить вариант пошаговой отладки (для прежних версий)
 В этом разделе описывается изменение варианта пошаговой отладки для приложений [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] прежних версий [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] с параллельными действиями.[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  

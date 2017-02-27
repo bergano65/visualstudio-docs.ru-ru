@@ -1,8 +1,7 @@
 ---
 title: "Пошаговое руководство. Использование файла конфигурации для определения источника данных | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "модульные тесты, пошаговое руководство"
 ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 32
-caps.handback.revision: 32
 ms.author: "mlearned"
 manager: "douge"
+caps.handback.revision: 32
 ---
 # Пошаговое руководство. Использование файла конфигурации для определения источника данных
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

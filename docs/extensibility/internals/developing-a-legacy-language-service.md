@@ -1,8 +1,7 @@
 ---
-title: "Разработка службы языка | Microsoft Docs"
+title: "Разработка языковую службу для прежних версий | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,9 +18,9 @@ helpviewer_keywords:
   - "языковые службы разработки"
 ms.assetid: 6151ba88-c1c3-41de-a1cc-668f494d48d1
 caps.latest.revision: 28
-caps.handback.revision: 28
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 28
 ---
 # Разработка службы языка
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

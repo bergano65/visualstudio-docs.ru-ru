@@ -1,8 +1,7 @@
 ---
 title: "Функции API подключаемого модуля источника элемента управления | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "управление подключаемыми модулями источников, функции"
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
 caps.latest.revision: 19
-caps.handback.revision: 19
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 19
 ---
 # Функции API подключаемого модуля источника элемента управления
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

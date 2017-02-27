@@ -1,8 +1,7 @@
 ---
 title: "Команда List Source | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "ListSource - команда"
 ms.assetid: e45f08d2-f4a3-49c3-9452-aa60508e2f74
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # Команда List Source
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

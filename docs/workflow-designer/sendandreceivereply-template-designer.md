@@ -1,8 +1,7 @@
 ---
 title: "Конструктор шаблона SendAndReceiveReply | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/23/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -12,10 +11,10 @@ f1_keywords:
   - "System.ServiceModel.Activities.ReceiveReply.UI"
 ms.assetid: 818a8c84-6593-416d-b016-1d91b85ffb68
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 6
 ---
 # Конструктор шаблона SendAndReceiveReply
 Шаблон  **SendAndReceiveReply** используется для создания пары предварительно настроенных действий <xref:System.ServiceModel.Activities.Send> и <xref:System.ServiceModel.Activities.ReceiveReply> в пределах действия <xref:System.Activities.Statements.Sequence>, которые соотносятся как часть шаблона обмена сообщениями запроса\/ответа на клиенте.  

@@ -1,8 +1,7 @@
 ---
 title: "Управление отмены и повтора с помощью API прежних версий | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "редакторы [Visual Studio SDK] прежних версий - отменить управления"
 ms.assetid: 838c0ddf-fdf3-4df1-8d21-79610b8ba0b1
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Управление отмены и повтора с помощью API прежних версий
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

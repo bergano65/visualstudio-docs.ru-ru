@@ -1,8 +1,7 @@
 ---
 title: "Диалоговое окно &quot;Командная строка события &quot;После построения&quot;&quot; или &quot;Командная строка события &quot;До построения&quot;&quot; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,10 +35,10 @@ helpviewer_keywords:
   - "события сборки, макросы"
 ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Диалоговое окно &quot;Командная строка события &quot;После построения&quot;&quot; или &quot;Командная строка события &quot;До построения&quot;&quot;
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

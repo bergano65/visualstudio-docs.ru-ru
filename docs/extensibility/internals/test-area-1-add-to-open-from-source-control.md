@@ -1,8 +1,7 @@
 ---
 title: "Область тестирования 1: Добавьте для открытия из системы управления версиями | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Источник подключаемые модули управления, добавление и открытие решений"
 ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 caps.latest.revision: 20
-caps.handback.revision: 20
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 20
 ---
 # Область тестирования 1: Добавьте / открыть из системы управления версиями
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

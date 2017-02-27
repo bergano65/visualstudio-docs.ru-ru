@@ -1,8 +1,7 @@
 ---
 title: "Практическое руководство. Отладка элемента управления ActiveX | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -27,10 +26,10 @@ helpviewer_keywords:
   - "проверка [Visual Studio], контейнеры тестов"
 ms.assetid: bbc02cf7-a7e6-44fe-99af-87a43e1d7251
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # Практическое руководство. Отладка элемента управления ActiveX
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

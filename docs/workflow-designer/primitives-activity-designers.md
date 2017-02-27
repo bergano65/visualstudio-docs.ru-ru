@@ -1,18 +1,17 @@
 ---
 title: "Конструкторы действий с базовыми функциями | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/27/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 0a2b613e-dc04-49a1-a787-caec2ec63b90
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 7
 ---
 # Конструкторы действий с базовыми функциями
 Конструкторы примитивных действий используются для создания и настройки различных действий в пространстве имен <xref:System.Activities.Statement>, например, Assign и Delay.В подразделах этого раздела описывается использование действия [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] и конструкторов шаблонов.  

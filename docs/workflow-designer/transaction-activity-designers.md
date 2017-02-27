@@ -1,18 +1,17 @@
 ---
 title: "Конструкторы действий транзакций | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/27/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 8dd0f60f-88ec-4258-bc8d-233689be9997
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 6
 ---
 # Конструкторы действий транзакций
 Конструкторы операций транзакций используются для создания и настройки действий транзакций, например, компенсации и подтверждения.В подразделах этого раздела и перечисленных в следующей таблице приводится описание использования действия [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] и конструкторов шаблонов.  

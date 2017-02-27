@@ -1,8 +1,7 @@
 ---
 title: "Программа узлов | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "сведения о заменяющих узлов программы"
 ms.assetid: 1c5a5c13-c14d-42c3-af11-4c63f1032c8d
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Программа узлов
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

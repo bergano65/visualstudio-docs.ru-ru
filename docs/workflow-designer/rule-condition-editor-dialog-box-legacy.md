@@ -1,8 +1,7 @@
 ---
 title: "Диалоговое окно &#171;Редактор условий для правила&#187; (для прежних версий) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "диалоговое окно "Условие для правила""
 ms.assetid: c7ca8be9-de31-4a64-939c-4d53a50d5e29
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 6
 ---
 # Диалоговое окно &#171;Редактор условий для правила&#187; (для прежних версий)
 В этом разделе описывается использование диалогового окна **Редактор набора условий** в средстве [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] прежних версий.[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  

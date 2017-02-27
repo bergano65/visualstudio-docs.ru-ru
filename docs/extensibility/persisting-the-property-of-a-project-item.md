@@ -1,8 +1,7 @@
 ---
 title: "Сохранение свойства элемента проекта | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "элементы проекта, Добавление свойств"
 ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
 caps.latest.revision: 7
-caps.handback.revision: 7
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # Сохранение свойства элемента проекта
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

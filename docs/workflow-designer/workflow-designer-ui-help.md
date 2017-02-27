@@ -1,8 +1,7 @@
 ---
 title: "Справка по пользовательскому интерфейсу конструктора рабочих процессов | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -12,10 +11,10 @@ helpviewer_keywords:
   - "конструктор рабочих процессов [WFD], справка по пользовательскому интерфейсу"
 ms.assetid: f7afc443-7c7f-4b0f-9517-c58070a640de
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # Справка по пользовательскому интерфейсу конструктора рабочих процессов
 В этом разделе контекстной справки содержатся разделы, относящиеся к приложению [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)].Во время работы с [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)] доступ к этим разделам вы можете получить по нажатию клавиши **F1** в открытом диалоговом окне [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].  

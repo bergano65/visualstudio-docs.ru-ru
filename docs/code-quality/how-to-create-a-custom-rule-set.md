@@ -1,8 +1,7 @@
 ---
 title: "Практическое руководство. Создание настраиваемого набора правил | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "выпуск Development Edition, наборы правил"
 ms.assetid: bcc42508-9592-4802-9f66-a50111641d73
 caps.latest.revision: 24
-caps.handback.revision: 24
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 24
 ---
 # Практическое руководство. Создание настраиваемого набора правил
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

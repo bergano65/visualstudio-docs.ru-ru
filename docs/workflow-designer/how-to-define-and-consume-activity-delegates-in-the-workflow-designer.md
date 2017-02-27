@@ -1,17 +1,16 @@
 ---
 title: "Как определить и использовать делегатов действий в конструкторе рабочих процессов | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
 caps.latest.revision: 3
-caps.handback.revision: 3
 ms.author: "sdanie"
 manager: "erikre"
+caps.handback.revision: 3
 ---
 # Как определить и использовать делегатов действий в конструкторе рабочих процессов
 [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] включает новый готовый конструктор для действия <xref:System.Activities.Statements.InvokeDelegate>.Данный конструктор можно использовать в целях назначения делегатов для действия, производного от <xref:System.Activities.ActivityDelegate>, такого как <xref:System.Activities.ActivityAction> или <xref:System.Activities.ActivityFunc%601>.  

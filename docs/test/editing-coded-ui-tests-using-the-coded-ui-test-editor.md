@@ -1,8 +1,7 @@
 ---
 title: "Изменение закодированных тестов пользовательского интерфейса с помощью редактора закодированных тестов пользовательского интерфейса | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "закодированный тест пользовательского интерфейса, редактор закодированных тестов пользовательского интерфейса"
 ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 40
-caps.handback.revision: 40
 ms.author: "mlearned"
 manager: "douge"
+caps.handback.revision: 40
 ---
 # Изменение закодированных тестов пользовательского интерфейса с помощью редактора закодированных тестов пользовательского интерфейса
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

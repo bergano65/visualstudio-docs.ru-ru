@@ -1,8 +1,7 @@
 ---
 title: "Контрольный список: Создание новых типов проектов | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Контрольный список для создания типов проектов"
 ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
 caps.latest.revision: 23
-caps.handback.revision: 23
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 23
 ---
 # Контрольный список: Создание новых типов проектов
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

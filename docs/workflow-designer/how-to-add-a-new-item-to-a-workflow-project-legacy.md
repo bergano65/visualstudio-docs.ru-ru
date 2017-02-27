@@ -1,8 +1,7 @@
 ---
 title: "Как добавить новый элемент в проект рабочего процесса (для прежних версий) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "рабочие процессы, добавление новых элементов"
 ms.assetid: 130cd83d-942d-437b-bbb5-8088ec0a6d79
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # Как добавить новый элемент в проект рабочего процесса (для прежних версий)
 После создания проекта рабочего процесса с помощью средства [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] прежних версий, предоставленного средой [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)], который ориентируется на работу с [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], в проект можно добавлять элементы [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] и другие знакомые элементы [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

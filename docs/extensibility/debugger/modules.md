@@ -1,8 +1,7 @@
 ---
 title: "Модули | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "отладка [пакет SDK для отладки], модули"
 ms.assetid: c4cf2809-dbdb-4e75-9273-b3d3d77b67d0
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # Модули
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

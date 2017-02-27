@@ -1,8 +1,7 @@
 ---
 title: "Общие сведения о значениях данных по конфликтам ресурсов в средствах профилирования | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "средства профилирования, метод параллелизма"
 ms.assetid: 071c0f0f-1eba-4dc8-ae87-0810e4086dd0
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # Общие сведения о значениях данных по конфликтам ресурсов в средствах профилирования
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

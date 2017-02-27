@@ -1,8 +1,7 @@
 ---
 title: "Пошаговое руководство. Создание пользовательского загрузчика для вывода окна с предупреждением о конфиденциальности | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,10 +21,10 @@ helpviewer_keywords:
   - "развертывание с помощью установщика Windows, необходимые компоненты"
 ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 10
 ---
 # Пошаговое руководство. Создание пользовательского загрузчика для вывода окна с предупреждением о конфиденциальности
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

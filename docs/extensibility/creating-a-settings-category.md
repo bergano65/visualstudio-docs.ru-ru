@@ -1,8 +1,7 @@
 ---
 title: "Создание категория параметров | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "параметры профиля, создания категорий"
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 39
-caps.handback.revision: 39
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 39
 ---
 # Создание категория параметров
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

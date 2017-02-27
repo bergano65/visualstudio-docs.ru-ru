@@ -1,8 +1,7 @@
 ---
 title: "Реализация и регистрации поставщика порта | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "поставщикам портов, регистрация"
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
 caps.latest.revision: 17
-caps.handback.revision: 17
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # Реализация и регистрации поставщика порта
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
