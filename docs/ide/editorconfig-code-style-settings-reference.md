@@ -499,7 +499,7 @@ csharp_style_inlined_variable_declaration = true:suggestion
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
-| Да | Предпочитать использовать выражения throw вместо операторов throw. | **C#:** <br>`this.s = ss ?? throw new ArguementNullException(nameof(s));`
+| Да | Предпочитать использовать выражения throw вместо операторов throw. | **C#:** <br>`this.s = ss ?? throw new ArgumentNullException(nameof(s));`
 | False | Предпочитать использовать операторы throw вместо выражений throw.| **C#:** <br>`if (s==null) {throw new ArgumentNullException(nameof(s));} this.s = s;`
 
 #### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
@@ -525,3 +525,4 @@ csharp_style_throw_expression = true:suggestion
 [*.cs]
 csharp_style_conditional_delegate_call = false:suggestion
 ```
+
