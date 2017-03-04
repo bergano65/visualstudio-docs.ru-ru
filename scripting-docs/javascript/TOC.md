@@ -1,5 +1,5 @@
-# [Новые возможности JavaScript](what-s-new-in-javascript.md)
 # [Справочник по языку JavaScript](javascript-language-reference.md)
+# [Новые возможности JavaScript](what-s-new-in-javascript.md)
 # [Основы JavaScript](javascript-fundamentals.md)
 ## [Написание кода JavaScript](writing-javascript-code.md)
 ## [Переменные](variables-javascript.md)
