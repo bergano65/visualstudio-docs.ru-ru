@@ -1,0 +1,1 @@
+# <a name="welcome-to-scripting-docs"></a>Добро пожаловать в документацию по скриптам!
