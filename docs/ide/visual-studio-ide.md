@@ -27,9 +27,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: c8f031247985fa623e23d79a7614330e78196024
-ms.openlocfilehash: 22da86b2a327db88ac5c863f528eaeaf8b000db7
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: dac3cb1d7767c2ff76ac25f6a486ad30a8d54831
+ms.openlocfilehash: 10db0535b950f1a1525bab89a6df25e4e3f40012
+ms.lasthandoff: 03/03/2017
 
 ---
 # <a name="visual-studio-ide"></a>Интегрированная среда разработки Visual Studio
@@ -221,6 +221,6 @@ ms.lasthandoff: 02/22/2017
  [Установка версии-кандидата Visual Studio 2017](../install/install-visual-studio.md)   
  [Редактирование своего кода](https://www.visualstudio.com/features/ide-vs)   
  [Новые возможности версии-кандидата Visual Studio 2017](../ide/whats-new-in-visual-studio.md)   
- [Перенос, миграция и обновление проектов Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)   
+ [Перенос, миграция и обновление проектов Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)   
  [Обращайтесь к нам](../ide/talk-to-us.md)
 
