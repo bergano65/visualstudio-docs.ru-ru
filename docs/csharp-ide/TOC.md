@@ -9,6 +9,7 @@
 ### [Встроенная временная переменная](refactoring/inline-temporary-variable.md)
 ### [Перемещение типа в соответствующий файл](refactoring/move-type-to-matching-file.md)
 ### [Переименование](refactoring/rename.md)
+### [Тип синхронизации и имя файла](refactoring/sync-type-and-file.md)
 ## [Создание кода](code-generation-csharp.md)
 ### [Создание класса или типа](code-generation/generate-class-type.md)
 ### [Создание метода](code-generation/generate-method.md)
