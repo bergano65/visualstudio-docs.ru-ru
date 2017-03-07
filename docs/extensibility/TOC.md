@@ -10,8 +10,6 @@
 ## [Загрузка упрощенного решения](lightweight-solution-load-extension-impact.md)
 ## [Часто задаваемые вопросы](faq-2017.md)
 # [Практическое руководство. Перенос проектов расширяемости в Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-# [Новые возможности пакета SDK для Visual Studio 2015](what-s-new-in-the-visual-studio-2015-sdk.md)
-# [Практическое руководство. Перенос проектов расширяемости в Visual Studio 2015](how-to-migrate-extensibility-projects-to-visual-studio-2015.md)
 # [Расширение меню и команд](extending-menus-and-commands.md)
 ## [Создание расширения с помощью команды меню](creating-an-extension-with-a-menu-command.md)
 ## [Добавление меню в строку меню Visual Studio](adding-a-menu-to-the-visual-studio-menu-bar.md)
