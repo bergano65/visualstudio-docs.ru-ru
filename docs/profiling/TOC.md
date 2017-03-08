@@ -1,4 +1,4 @@
-# [Средства профилирования](profiling-tools.md)
+# [Средства профилирования](index.md)
 ## [Обзор возможностей профилирования](profiling-feature-tour.md)
 ## [Руководство по профилированию производительности для начинающих](beginners-guide-to-performance-profiling.md)
 ## [Новые возможности средств профилирования](what-s-new-in-profiling-tools.md)
