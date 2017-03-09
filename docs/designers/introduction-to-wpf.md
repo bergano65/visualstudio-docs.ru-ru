@@ -203,7 +203,7 @@ End Namespace
   
  В приведенном ниже примере элемент управления <xref:System.Windows.Controls.DockPanel> используется для размещения нескольких элементов управления <xref:System.Windows.Controls.TextBox>.  
   
- [!CODE [IntroToWPFSnippets#LayoutMARKUP](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#layoutmarkup)]  
+ [!code-xml[IntroToWPFSnippets#LayoutMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_1.xaml)]  
   
  Элемент управления <xref:System.Windows.Controls.DockPanel> позволяет дочерним элементам <xref:System.Windows.Controls.TextBox> сообщать, как они должны быть упорядочены. Для этого в <xref:System.Windows.Controls.DockPanel> реализовано свойство <xref:System.Windows.Controls.DockPanel.Dock%2A>, которое доступно дочерним элементам управления и позволяет каждому из них указывать стиль закрепления.  
   
@@ -263,9 +263,10 @@ End Namespace
   
  Интересной особенностью фигур является то, что они предназначены не только для отображения. В них реализованы многие возможности элементов управления, включая ввод с клавиатуры и с помощью мыши. В приведенном ниже примере показана обработка события <xref:System.Windows.UIElement.MouseUp> объекта <xref:System.Windows.Shapes.Ellipse>.  
   
- [!CODE [IntroToWPFSnippets#HandleEllipseMouseUpEventMARKUP](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#handleellipsemouseupeventmarkup)]  
+  [!code-xml[IntroToWPFSnippets#HandleEllipseMouseUpEventMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_7.xaml)]  
   
- [!CODE [IntroToWPFSnippets#HandleEllipseMouseUpEventCODEBEHIND](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#handleellipsemouseupeventcodebehind)]  
+  [!code-vb[IntroToWPFSnippets#HandleEllipseMouseUpEventCODEBEHIND](../designers/codesnippet/VisualBasic/introduction-to-wpf_8.vb)]
+ [!code-cs[IntroToWPFSnippets#HandleEllipseMouseUpEventCODEBEHIND](../designers/codesnippet/CSharp/introduction-to-wpf_8.cs)]    
   
  На рисунке ниже показан результат выполнения предыдущего кода.  
   
@@ -318,7 +319,7 @@ End Namespace
 ### Видео и звук  
  Элемент управления <xref:System.Windows.Controls.MediaElement> позволяет воспроизводить как видео, так и звук и достаточно гибок для того, чтобы служить основой для пользовательского мультимедиапроигрывателя. Приведенная ниже разметка XAML реализует мультимедиапроигрыватель.  
   
- [!CODE [IntroToWPFSnippets#MediaElementMARKUP](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#mediaelementmarkup)]  
+ [!code-xml[IntroToWPFSnippets#MediaElementMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_9.xaml)]  
   
  На рисунке ниже показано окно с элементом управления <xref:System.Windows.Controls.MediaElement> в действии.  
   
@@ -355,9 +356,9 @@ End Namespace
 ### Модель содержимого  
  Основным назначением большинства элементов управления WPF является отображение содержимого. В WPF тип и число элементов, составляющих содержимое элемента управления, называются *моделью содержимого* элемента управления. Некоторые элементы могут содержать только один объект и только один тип содержимого. Например, содержимым элемента управления <xref:System.Windows.Controls.TextBox> является строковое значение, присвоенное свойству <xref:System.Windows.Controls.TextBox.Text%2A>. В приведенном ниже примере задается содержимое элемента управления <xref:System.Windows.Controls.TextBox>.  
   
- [!CODE [IntroToWPFSnippets#TextBoxContentMARKUP1](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#textboxcontentmarkup1)]  
-[!CODE [IntroToWPFSnippets#TextBoxContentMARKUP2](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#textboxcontentmarkup2)]  
-[!CODE [IntroToWPFSnippets#TextBoxContentMARKUP3](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#textboxcontentmarkup3)]  
+ [!code-xml[IntroToWPFSnippets#TextBoxContentMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_10.xaml)]  
+[!code-xml[IntroToWPFSnippets#TextBoxContentMARKUP2](../designers/codesnippet/Xaml/introduction-to-wpf_11.xaml)]  
+[!code-xml[IntroToWPFSnippets#TextBoxContentMARKUP3](../designers/codesnippet/Xaml/introduction-to-wpf_12.xaml)]  
   
  На рисунке ниже показан результат.  
   
@@ -365,9 +366,9 @@ End Namespace
   
  Другие элементы управления, однако, могут содержать несколько объектов с различным типом содержимого. Содержимым элемента управления <xref:System.Windows.Controls.Button>, определяемым свойством <xref:System.Windows.Controls.ContentControl.Content%2A>, могут быть различные объекты, в том числе элементы управления макетом, текст, изображения и фигуры. В приведенном ниже примере показан элемент управления <xref:System.Windows.Controls.Button>, содержащий <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.Border> и <xref:System.Windows.Controls.MediaElement>.  
   
- [!CODE [IntroToWPFSnippets#ButtonContentMARKUP1](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#buttoncontentmarkup1)]  
-[!CODE [IntroToWPFSnippets#ButtonContentMARKUP2](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#buttoncontentmarkup2)]  
-[!CODE [IntroToWPFSnippets#ButtonContentMARKUP3](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#buttoncontentmarkup3)]  
+ [!code-xml[IntroToWPFSnippets#ButtonContentMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_13.xaml)]  
+[!code-xml[IntroToWPFSnippets#ButtonContentMARKUP2](../designers/codesnippet/Xaml/introduction-to-wpf_14.xaml)]  
+[!code-xml[IntroToWPFSnippets#ButtonContentMARKUP3](../designers/codesnippet/Xaml/introduction-to-wpf_15.xaml)]  
   
  На рисунке ниже показано содержимое этой кнопки.  
   
@@ -385,9 +386,10 @@ End Namespace
   
  Например, в приведенном ниже примере показано, как изменить внешний вид элемента управления <xref:System.Windows.Controls.Button> с помощью <xref:System.Windows.Controls.ControlTemplate>.  
   
- [!CODE [IntroToWPFSnippets#ButtonControlTemplateWindowMARKUP](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#buttoncontroltemplatewindowmarkup)]  
+ [!code-xml[IntroToWPFSnippets#ButtonControlTemplateWindowMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_16.xaml)]  
   
- [!CODE [IntroToWPFSnippets#ButtonControlTemplateWindowCODEBEHIND](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#buttoncontroltemplatewindowcodebehind)]  
+ [!code-cs[IntroToWPFSnippets#ButtonControlTemplateWindowCODEBEHIND](../designers/codesnippet/CSharp/introduction-to-wpf_17.cs)]
+ [!code-vb[IntroToWPFSnippets#ButtonControlTemplateWindowCODEBEHIND](../designers/codesnippet/VisualBasic/introduction-to-wpf_17.vb)]  ]  
   
  В этом примере пользовательский интерфейс кнопки по умолчанию заменяется элементом <xref:System.Windows.Shapes.Ellipse>, имеющим темно\-синюю границу и заполнение, определяемое <xref:System.Windows.Media.RadialGradientBrush>. В элементе управления <xref:System.Windows.Controls.ContentPresenter> выводится содержимое элемента <xref:System.Windows.Controls.Button> — текст «Click Me\!» При нажатии на элемент <xref:System.Windows.Controls.Button> по\-прежнему вызывается событие <xref:System.Windows.Controls.Primitives.ButtonBase.Click>, что соответствует поведению элемента управления <xref:System.Windows.Controls.Button> по умолчанию. Результат показан на примере ниже.  
   
@@ -400,10 +402,10 @@ End Namespace
   
  Оформление по умолчанию является стандартным для элемента управления <xref:System.Windows.Controls.ListBox>. Однако оно предполагает, что для каждой задачи отображается только ее название. Чтобы отобразить название, описание и приоритет задачи, нужно изменить оформление по умолчанию для элементов списка, привязанных к элементу управления <xref:System.Windows.Controls.ListBox>, с помощью <xref:System.Windows.DataTemplate>. Приведенный ниже код XAML определяет такой шаблон <xref:System.Windows.DataTemplate>, который применяется к каждой задаче с помощью атрибута <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>.  
   
- [!CODE [IntroToWPFSnippets#DataTemplateMARKUP1](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#datatemplatemarkup1)]  
-[!CODE [IntroToWPFSnippets#DataTemplateMARKUP2](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#datatemplatemarkup2)]  
-[!CODE [IntroToWPFSnippets#DataTemplateMARKUP3](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#datatemplatemarkup3)]  
-[!CODE [IntroToWPFSnippets#DataTemplateMARKUP4](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#datatemplatemarkup4)]  
+ [!code-xml[IntroToWPFSnippets#DataTemplateMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_18.xaml)]  
+[!code-xml[IntroToWPFSnippets#DataTemplateMARKUP2](../designers/codesnippet/Xaml/introduction-to-wpf_19.xaml)]  
+[!code-xml[IntroToWPFSnippets#DataTemplateMARKUP3](../designers/codesnippet/Xaml/introduction-to-wpf_20.xaml)]  
+[!code-xml[IntroToWPFSnippets#DataTemplateMARKUP4](../designers/codesnippet/Xaml/introduction-to-wpf_21.xaml)]  
   
  На рисунке ниже показан результат использования этого кода.  
   
@@ -416,10 +418,10 @@ End Namespace
 ### Стили  
  Стили позволяют разработчикам и дизайнерам стандартизировать внешний вид своего продукта. Платформа WPF предоставляет строгую модель стилей, в основе которой лежит элемент <xref:System.Windows.Style>. В приведенном ниже примере создается стиль, который задает `Orange` в качестве цвета фона для каждого элемента управления <xref:System.Windows.Controls.Button> в окне.  
   
- [!CODE [IntroToWPFSnippets#StyleMARKUP1](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#stylemarkup1)]  
-[!CODE [IntroToWPFSnippets#StyleMARKUP2](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#stylemarkup2)]  
-[!CODE [IntroToWPFSnippets#StyleMARKUP3](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#stylemarkup3)]  
-[!CODE [IntroToWPFSnippets#StyleMARKUP4](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#stylemarkup4)]  
+ [!code-xml[IntroToWPFSnippets#StyleMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_22.xaml)]  
+[!code-xml[IntroToWPFSnippets#StyleMARKUP2](../designers/codesnippet/Xaml/introduction-to-wpf_23.xaml)]  
+[!code-xml[IntroToWPFSnippets#StyleMARKUP3](../designers/codesnippet/Xaml/introduction-to-wpf_24.xaml)]  
+[!code-xml[IntroToWPFSnippets#StyleMARKUP4](../designers/codesnippet/Xaml/introduction-to-wpf_25.xaml)]  
   
  Так как этот стиль предназначен для всех элементов управления <xref:System.Windows.Controls.Button>, он автоматически применяется ко всем кнопкам в окне, как показано на рисунке ниже.  
   
@@ -432,9 +434,9 @@ End Namespace
   
  В приведенном ниже примере определяется общий цвет фона для элементов управления <xref:System.Windows.Controls.Button> и <xref:System.Windows.Controls.Label>.  
   
- [!CODE [IntroToWPFSnippets#ResourceWindowMARKUP1](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#resourcewindowmarkup1)]  
-[!CODE [IntroToWPFSnippets#ResourceWindowMARKUP2](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#resourcewindowmarkup2)]  
-[!CODE [IntroToWPFSnippets#ResourceWindowMARKUP3](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#resourcewindowmarkup3)]  
+ [!code-xml[IntroToWPFSnippets#ResourceWindowMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_26.xaml)]  
+[!code-xml[IntroToWPFSnippets#ResourceWindowMARKUP2](../designers/codesnippet/Xaml/introduction-to-wpf_27.xaml)]  
+[!code-xml[IntroToWPFSnippets#ResourceWindowMARKUP3](../designers/codesnippet/Xaml/introduction-to-wpf_28.xaml)]  
   
  Ресурс цвета фона реализуется с помощью элемента свойства `Window.Resources`. Этот ресурс доступен всем дочерним элементам объекта <xref:System.Windows.Window>. Существует ряд различных областей действия ресурсов. Некоторые из них перечислены ниже в порядке их разрешения.  
   
@@ -448,13 +450,13 @@ End Namespace
   
  Помимо прямого сопоставления ресурсов с определенной областью действия, можно упаковать один или несколько ресурсов с помощью отдельного объекта <xref:System.Windows.ResourceDictionary>, на который можно ссылаться в других частях приложения. Так, в приведенном ниже примере определяется цвет фона по умолчанию в библиотеке ресурсов.  
   
- [!CODE [IntroToWPFSnippets#ResourceDictionaryMARKUP1](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#resourcedictionarymarkup1)]  
-[!CODE [IntroToWPFSnippets#ResourceDictionaryMARKUP2](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#resourcedictionarymarkup2)]  
+ [!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_29.xaml)]  
+[!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP2](../designers/codesnippet/Xaml/introduction-to-wpf_30.xaml)]  
   
  В приведенном ниже примере используется ссылка на библиотеку ресурсов, определенную в предыдущем примере, что позволяет использовать ее в рамках всего приложения.  
   
- [!CODE [IntroToWPFSnippets#ApplicationScopedResourceDictionaryMARKUP1](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#applicationscopedresourcedictionarymarkup1)]  
-[!CODE [IntroToWPFSnippets#ApplicationScopedResourceDictionaryMARKUP2](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#applicationscopedresourcedictionarymarkup2)]  
+ [!code-xml[IntroToWPFSnippets#ApplicationScopedResourceDictionaryMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_31.xaml)]  
+[!code-xml[IntroToWPFSnippets#ApplicationScopedResourceDictionaryMARKUP2](../designers/codesnippet/Xaml/introduction-to-wpf_32.xaml)]   
   
  Ресурсы и словари ресурсов лежат в основе реализованной в WPF поддержки тем и обложек.  
   
@@ -477,17 +479,14 @@ End Namespace
   
  В приведенном ниже примере показан пользовательский элемент управления для увеличения или уменьшения числового значения, наследуемый от <xref:System.Windows.Controls.UserControl>.  
   
- [!CODE [IntroToWPFSnippets#UserControlMARKUP](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#usercontrolmarkup)]  
+ [!code-xml[IntroToWPFSnippets#UserControlMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_33.xaml)]  
   
- [!CODE [IntroToWPFSnippets#UserControlCODEBEHIND1](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#usercontrolcodebehind1)]  
-[!CODE [IntroToWPFSnippets#UserControlCODEBEHIND2](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#usercontrolcodebehind2)]  
-[!CODE [IntroToWPFSnippets#UserControlCODEBEHIND3](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#usercontrolcodebehind3)]  
+ [!code-cs[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/CSharp/introduction-to-wpf_34.cs)]
+ [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/VisualBasic/introduction-to-wpf_34.vb)]  
   
  В следующем примере показан код XAML, необходимый для включения пользовательского элемента управления в <xref:System.Windows.Window>.  
   
- [!CODE [IntroToWPFSnippets#UserControlWindowMARKUP1](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#usercontrolwindowmarkup1)]  
-[!CODE [IntroToWPFSnippets#UserControlWindowMARKUP2](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#usercontrolwindowmarkup2)]  
-[!CODE [IntroToWPFSnippets#UserControlWindowMARKUP3](../CodeSnippet/VS_Snippets_Wpf/IntroToWPFSnippets#usercontrolwindowmarkup3)]  
+ [!code-xml[IntroToWPFSnippets#UserControlWindowMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_37.xaml)]  
   
  На рисунке ниже показан элемент управления `NumericUpDown`, размещенный в окне <xref:System.Windows.Window>.  
   
