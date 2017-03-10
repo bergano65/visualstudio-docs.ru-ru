@@ -1,55 +1,70 @@
 ---
-title: "Задача LC | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/msbuild/2003#LC"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "LC - задача [MSBuild]"
-  - "MSBuild, LC - задача"
+title: "Задача LC | Документация Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#LC
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- MSBuild, LC task
+- LC task [MSBuild]
 ms.assetid: d5a53472-6f2a-42b8-a6db-593ca99c9790
 caps.latest.revision: 15
-caps.handback.revision: 15
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# Задача LC
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
+ms.openlocfilehash: 7b4ae3bba069cb1218b4ff1cf0b78877d10dfd34
+ms.lasthandoff: 02/22/2017
 
-Служит оболочкой для программы LC.exe, генерирующей LICENSE\-файл из LICX\-файла.  Дополнительные сведения о программе LC.exe см. в разделе [Lc.exe \(License Compiler\)](../Topic/Lc.exe%20\(License%20Compiler\).md).  
+---
+# <a name="lc-task"></a>Задача LC
+Создает программу-оболочку для файл LC.exe для создания LICENSE-файла из LICX-файла. См. дополнительные сведения о [LC.exe (компиляторе лицензий)](http://msdn.microsoft.com/Library/2de803b8-495e-4982-b209-19a72aba0460).  
   
-## Параметры  
- В следующей таблице описаны параметры задачи `LC`.  
+## <a name="parameters"></a>Параметры  
+ В следующей таблице описаны параметры для задачи `LC`.  
   
 |Параметр|Описание|  
-|--------------|--------------|  
-|`LicenseTarget`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Задает исполняемый файл, для которого создаются LICENSES\-файлы.|  
-|`NoLogo`|Необязательный параметр типа `Boolean`.<br /><br /> Отключает отображение эмблемы Майкрософт при запуске.|  
-|`OutputDirectory`|Необязательный параметр типа `String`.<br /><br /> Задает каталог, в котором следует разместить полученные LICENSES\-файлы.|  
-|`OutputLicense`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Задает имя LICENSES\-файла.  Если имя не указано, то используется имя соответствующего LICX\-файла, а создаваемый LICENSES\-файл помещается в каталог, содержащий LICX\-файл.|  
-|`ReferencedAssemblies`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Задает компоненты, на которые имеются ссылки, подлежащие загрузке при генерации LICENSE\-файла.|  
-|`SdkToolsPath`|Необязательный параметр типа `String`.<br /><br /> Задает путь к средствам SDK, таким как resgen.exe.|  
-|`Sources`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Задает элементы, содержащие лицензируемые компоненты, которые подлежат включению в LICENSES\-файл.  Для получения дополнительных сведений см. документацию на переключатель `/complist` в разделе [Lc.exe \(License Compiler\)](../Topic/Lc.exe%20\(License%20Compiler\).md).|  
+|---------------|-----------------|  
+|`LicenseTarget`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Определяет исполняемый файл, для которого создаются LICENSES-файлы.|  
+|`NoLogo`|Необязательный параметр `Boolean` .<br /><br /> Отключает отображение эмблемы Майкрософт при запуске.|  
+|`OutputDirectory`|Необязательный параметр `String` .<br /><br /> Определяет каталог для размещения выходных LICENSES-файлы.|  
+|`OutputLicense`|Необязательный параметр вывода <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Определяет имя LICENSES-файла. Если имя не указано, используется имя LICX-файла, а создаваемый LICENSES-файл помещается в каталог, содержащий LICX-файл.|  
+|`ReferencedAssemblies`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Определяет компоненты, на которые имеются ссылки, для загрузки при создании LICENSES-файла.|  
+|`SdkToolsPath`|Необязательный параметр `String` .<br /><br /> Указывает путь к средствам пакета SDK, например resgen.exe.|  
+|`Sources`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Определяет элементы, содержащие лицензируемые компоненты для включения в LICENSES-файл. См. дополнительные сведения см. в документации по параметру `/complist` в [файле LС.exe (компиляторе лицензий)](http://msdn.microsoft.com/Library/2de803b8-495e-4982-b209-19a72aba0460).|  
   
- Помимо параметров, которые перечислены выше, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, который наследует от класса <xref:Microsoft.Build.Utilities.ToolTask>.  Чтобы получить список этих доп параметров и их описаний, см. [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, который в свою очередь наследует их от класса <xref:Microsoft.Build.Utilities.ToolTask>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).  
   
-## Пример  
- В следующем примере задача `LC` используется для компиляции лицензий.  
+## <a name="example"></a>Пример  
+ В следующем примере задача `LC` компилирует лицензии.  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
 <!-- Item declarations, etc -->  
   
@@ -69,6 +84,6 @@ manager: "ghogen"
 </Project>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

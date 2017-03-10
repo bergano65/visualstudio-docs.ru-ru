@@ -1,51 +1,66 @@
 ---
-title: "Задача GetWinFXPath | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "получение каталога текущей среды выполнения .NET Framework [WPF MSBuild]"
-  - "GetWinFXPath - задача [WPF MSBuild]"
-  - "GetWinFXPath - задача [WPF MSBuild], параметры"
-  - "получение пути к текущей среде выполнения .NET Framework [WPF MSBuild]"
+title: "Задача GetWinFXPath | Документация Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- getting the directory of the current .NET Framework runtime [WPF MSBuild]
+- GetWinFXPath task [WPF MSBuild], parameters
+- GetWinFXPath task [WPF MSBuild]
+- obtaining the path to the current .NET Framework runtime [WPF MSBuild]
 ms.assetid: b1dfb467-f3d3-47f3-83ef-af7b0e33a772
 caps.latest.revision: 5
-caps.handback.revision: 5
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# Задача GetWinFXPath
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
+ms.openlocfilehash: 45d07bf0834aa1488e8c2e3b22ee460eb629539e
+ms.lasthandoff: 02/22/2017
 
-Задача <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> возвращает папку текущего времени выполнения [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)].  
+---
+# <a name="getwinfxpath-task"></a>Задача GetWinFXPath
+Задача <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> возвращает каталог текущей среды выполнения [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)].  
   
-## Параметры задачи  
+## <a name="task-parameters"></a>Параметры задачи  
   
 |Параметр|Описание|  
-|--------------|--------------|  
-|`WinFXPath`|Необязательный выходной параметр **String**.<br /><br /> Действительный путь для времени выполнения [!INCLUDE[TLA2#tla_winfx](../msbuild/includes/tla2sharptla_winfx_md.md)].|  
-|`WinFXNativePath`|Обязательный параметр **String**.<br /><br /> Путь для собственного времени выполнения [!INCLUDE[TLA2#tla_titlewinfx](../msbuild/includes/tla2sharptla_titlewinfx_md.md)].|  
-|`WinFXWowPath`|Обязательный параметр **String**.<br /><br /> Путь к сборкам [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] в 32\-разрядном модуле **Windows on Windows** внутри 64\-разрядных систем.|  
+|---------------|-----------------|  
+|`WinFXPath`|Необязательный параметр вывода **String**.<br /><br /> Определяет действительный путь к среде выполнения [!INCLUDE[TLA2#tla_winfx](../msbuild/includes/tla2sharptla_winfx_md.md)].|  
+|`WinFXNativePath`|Обязательный параметр **string**.<br /><br /> Определяет действительный путь к собственной среде выполнения [!INCLUDE[TLA2#tla_titlewinfx](../msbuild/includes/tla2sharptla_titlewinfx_md.md)].|  
+|`WinFXWowPath`|Обязательный параметр **string**.<br /><br /> Определяет путь к сборкам [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] в 32-разрядном модуле **Windows on Windows** в 64-разрядных системах.|  
   
-## Заметки  
- Если задача <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> выполняется на 64\-разрядном процессоре, то параметру **WinFXPath** назначается путь, хранящийся в параметре **WinFXWowPath**; в противном случае параметру **WinFXPath** назначается путь, хранящийся в параметре **WinFXNativePath**.  
+## <a name="remarks"></a>Примечания  
+ Если задача <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> выполняется в 64-разрядном процессоре, параметру **WinFXPath** присваивается путь, который хранится в параметре **WinFXWowPath**. В противном случае параметру **WinFXPath** присваивается путь, который хранится в параметре **WinFXNativePath**.  
   
-## Пример  
- В следующем примере показано, как с помощью задачи **GetWinFXPath** обнаружить собственный путь для времени выполнения [!INCLUDE[TLA2#tla_titlewinfx](../msbuild/includes/tla2sharptla_titlewinfx_md.md)].  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как использовать задачу **GetWinFXPath** для определения собственного пути среды выполнения [!INCLUDE[TLA2#tla_titlewinfx](../msbuild/includes/tla2sharptla_titlewinfx_md.md)].  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <UsingTask   
     TaskName="Microsoft.Build.Tasks.Windows.GetWinFXPath"   
@@ -59,9 +74,9 @@ manager: "ghogen"
 </Project>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Справочные сведения о WPF для MSBuild](../msbuild/wpf-msbuild-reference.md)   
  [Справочные сведения о задачах](../msbuild/wpf-msbuild-task-reference.md)   
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
- [Построение приложения WPF](../Topic/Building%20a%20WPF%20Application%20\(WPF\).md)
+ [Построение приложения WPF](http://msdn.microsoft.com/Library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

@@ -1,50 +1,65 @@
 ---
-title: "Задача MergeLocalizationDirectives | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "локализация XAML [WPF MSBuild], перемещение комментариев и атрибутов в отдельный файл"
-  - "MergeLocalizationDirectives - задача [WPF MSBuild]"
-  - "MergeLocalizationDirectives - задача [WPF MSBuild], параметры"
-  - "перемещение комментариев и атрибутов локализации в отдельный файл [WPF MSBuild]"
+title: "Задача MergeLocalizationDirectives | Документация Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- localizing XAML [WPF MSBuild], moving comments and attributes to a separate file
+- MergeLocalizationDirectives task [WPF MSBuild], parameters
+- MergeLocalizationDirectives task [WPF MSBuild]
+- moving localization comments and attributes to a separate file [WPF MSBuild]
 ms.assetid: 9095b4f1-88da-4194-914b-ee1456826830
 caps.latest.revision: 5
-caps.handback.revision: 5
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# Задача MergeLocalizationDirectives
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
+ms.openlocfilehash: 94cd8bfa5807e46025f416ad87fc9d82990ef966
+ms.lasthandoff: 02/22/2017
 
-Задача <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> объединяет атрибуты локализации и примечания одного или нескольких файлов в двоичном формате [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] в один файл для всей сборки.  
+---
+# <a name="mergelocalizationdirectives-task"></a>Задача MergeLocalizationDirectives
+Задача <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> выполняет слияние атрибутов локализации и примечаний, связанных с одним или несколькими файлами [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] в двоичном формате, в один файл для всей сборки.  
   
-## Параметры задачи  
+## <a name="task-parameters"></a>Параметры задачи  
   
 |Параметр|Описание|  
-|--------------|--------------|  
-|`GeneratedLocalizationFiles`|Обязательный параметр **ITaskItem\[\]**.<br /><br /> Задание списка файлов директив локализации для отдельных файлов в двоичном формате [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)].|  
-|`OutputFile`|Обязательный выходной параметр типа **String**.<br /><br /> Задание выходного пути для скомпилированной сборки директив локализации.|  
+|---------------|-----------------|  
+|`GeneratedLocalizationFiles`|Обязательный параметр **ITaskItem[]**.<br /><br /> Определяет список файлов директив локализации для отдельных файлов в двоичном формате [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)].|  
+|`OutputFile`|Обязательный параметр вывода **String**.<br /><br /> Определяет выходной путь скомпилированной сборки директив локализации.|  
   
-## Заметки  
- К содержимому [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] можно добавить атрибуты локализации и примечания.  С поддержкой локализации [!INCLUDE[TLA#tla_wpf](../msbuild/includes/tlasharptla_wpf_md.md)] можно удалить атрибуты локализации и примечания, а также поместить их в файл .loc, расположенный отдельно от созданной сборки.  Это можно сделать с помощью атрибута **LocalizationPropertyStorage**.  Дополнительные сведения об атрибутах локализации, примечаниях и атрибуте **LocalizationPropertyStorage** см. в разделе [Атрибуты и комментарии локализации](../Topic/Localization%20Attributes%20and%20Comments.md).  
+## <a name="remarks"></a>Примечания  
+ Вы можете добавлять комментарии и атрибуты локализации к содержимому [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)]. Благодаря поддержке локализации [!INCLUDE[TLA#tla_wpf](../msbuild/includes/tlasharptla_wpf_md.md)] можно удалить комментарии и атрибуты локализации, поместив их в LOC-файл отдельно от созданной сборки. Это можно сделать с помощью атрибута **LocalizationPropertyStorage**. См. дополнительные сведения об атрибуте **LocalizationPropertyStorage** в разделе, посвященном [комментариям и атрибутам локализации](http://msdn.microsoft.com/Library/ead2d9ac-b709-4ec1-a924-39927a29d02f).  
   
-## Пример  
- В следующем примере атрибуты локализации и примечания нескольких файлов в двоичном формате [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] объединяются в один файл .loc.  
+## <a name="example"></a>Пример  
+ В следующем примере выполняется слияние комментариев локализации нескольких файлов [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] в двоичном формате в один LOC-файл.  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <UsingTask   
     TaskName="Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives"   
@@ -57,9 +72,9 @@ manager: "ghogen"
 </Project>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Справочные сведения о WPF для MSBuild](../msbuild/wpf-msbuild-reference.md)   
  [Справочные сведения о задачах](../msbuild/wpf-msbuild-task-reference.md)   
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
- [Построение приложения WPF](../Topic/Building%20a%20WPF%20Application%20\(WPF\).md)
+ [Построение приложения WPF](http://msdn.microsoft.com/Library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

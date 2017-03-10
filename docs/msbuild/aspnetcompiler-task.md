@@ -1,63 +1,78 @@
 ---
-title: "Задача AspNetCompiler | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/msbuild/2003#AspNetCompiler"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "AspNetCompiler - задача [MSBuild]"
-  - "MSBuild, AspNetCompiler - задача"
+title: "Использование задачи AspNetCompiler для предварительной компиляции приложений ASP.NET | Документация Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#AspNetCompiler
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- MSBuild, AspNetCompiler task
+- AspNetCompiler task [MSBuild]
 ms.assetid: f811c019-a67b-4d54-82e6-e29549496f6e
 caps.latest.revision: 11
-caps.handback.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# Задача AspNetCompiler
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 26c3d46033a59f88e70b6afde25a25c1ef5e77e8
+ms.openlocfilehash: 0227d24dda3ca6a94092361f70c7e699c2c79c71
+ms.lasthandoff: 02/22/2017
 
-Задача `AspNetCompiler` представляет собой оболочку для aspnet\_compiler.exe – программы предварительной компиляции приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
+---
+# <a name="aspnetcompiler-task"></a>Задача AspNetCompiler
+Задача `AspNetCompiler` создает оболочку для служебной программы aspnet_compiler.exe, которая выполняет предварительную компиляцию приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
   
-## Параметры задачи  
- В следующей таблице описаны параметры задачи `AspNetCompiler`.  
+## <a name="task-parameters"></a>Параметры задачи  
+ В следующей таблице приводятся параметры задачи `AspNetCompiler`.  
   
 |Параметр|Описание|  
-|--------------|--------------|  
-|`AllowPartiallyTrustedCallers`|Необязательный параметр типа `Boolean`.<br /><br /> Если этот параметр равен `true`, для строго именованных сборок будут разрешены частично доверенные вызывающие объекты.|  
-|`Clean`|Необязательный параметр типа `Boolean`.<br /><br /> Если этот параметр равен `true`, будет произведена чистая сборка предварительно скомпилированного приложения.  Все ранее скомпилированные приложения будут перекомпилированы.  Значение по умолчанию — `false`.  Этот параметр соответствует переключателю **\-c** программы aspnet\_compiler.exe.|  
-|`Debug`|Необязательный параметр типа `Boolean`.<br /><br /> Если этот параметр равен `true`, во время компиляции выводится отладочная информация \(PDB\-файл\).  Значение по умолчанию — `false`.  Этот параметр соответствует переключателю **\-d** программы aspnet\_compiler.exe.|  
-|`DelaySign`|Необязательный параметр типа `Boolean`.<br /><br /> Если этот параметр равен `true`, сборка не подписывается полностью при создании.|  
-|`FixedNames`|Необязательный параметр типа `Boolean`.<br /><br /> Если этот параметр равен `true`, скомпилированным сборкам будут даваться фиксированные имена.|  
-|`Force`|Необязательный параметр типа `Boolean`.<br /><br /> Если этот параметр равен `true`, задача перезаписывает существующий целевой каталог.  Текущее содержимое каталога теряется.  Значение по умолчанию — `false`.  Этот параметр соответствует переключателю **\-f** программы aspnet\_compiler.exe.|  
-|`KeyContainer`|Необязательный параметр типа `String`.<br /><br /> Задает контейнер ключа строго имени.|  
-|`KeyFile`|Необязательный параметр типа `String`.<br /><br /> Задает физический путь к файлу ключей строгого имени.|  
-|`MetabasePath`|Необязательный параметр типа `String`.<br /><br /> Задает полный путь к метабазе IIS приложения.  Данный параметр несовместим с параметрами `VirtualPath` или `PhysicalPath`.  Этот параметр соответствует переключателю **\-m** программы aspnet\_compiler.exe.|  
-|`PhysicalPath`|Необязательный параметр типа `String`.<br /><br /> Задает физический путь к компилируемому приложению.  Если данный параметр отсутствует, для поиска приложения используется метабаза IIS.  Этот параметр соответствует переключателю **\-p** программы aspnet\_compiler.exe.|  
-|`TargetFrameworkMoniker`|Необязательный параметр типа `String`.<br /><br /> задает моникер целевой платформы, указывающий, какую версию .NET Framework файла aspnet\_compiler.exe нужно использовать.  Принимает только специальные имена .NET Framework.|  
-|`TargetPath`|Необязательный параметр типа `String`.<br /><br /> Задает физический путь для размещения скомпилированного приложения.  Если этот параметр не указан, приложение предварительно компилируется на месте.|  
-|`Updateable`|Необязательный параметр типа `Boolean`.<br /><br /> Если этот параметр равен `true`, предварительно скомпилированное приложение будет обновляемым.  Значение по умолчанию — `false`.  Этот параметр соответствует переключателю **\-u** программы aspnet\_compiler.exe.|  
-|`VirtualPath`|Необязательный параметр типа `String`.<br /><br /> Виртуальный путь к компилируемому приложению.  Если задан параметр `PhysicalPath`, для поиска приложения используется физический путь.  В противном случае используется метабаза IIS, и предполагается, что приложение находится на узле по умолчанию.  Этот параметр соответствует переключателю **\-v** программы aspnet\_compiler.exe.|  
+|---------------|-----------------|  
+|`AllowPartiallyTrustedCallers`|Необязательный параметр `Boolean` .<br /><br /> Если этот параметр имеет значение `true`, сборка со строгим именем допускает вызовы с частичным доверием.|  
+|`Clean`|Необязательный параметр `Boolean`.<br /><br /> Если этот параметр имеет значение `true`, то для предварительно скомпилированного приложения будет выполнена чистая сборка. Все ранее скомпилированные компоненты будут перекомпилированы. Значение по умолчанию — `false`. Этот параметр соответствует параметру командной строки **-c** для Aspnet_compiler.exe.|  
+|`Debug`|Необязательный параметр `Boolean` .<br /><br /> Если этот параметр имеет значение `true`, то во время компиляции создается отладочная информация (PDB-файл). Значение по умолчанию — `false`. Этот параметр соответствует параметру командной строки **-d** для Aspnet_compiler.exe.|  
+|`DelaySign`|Необязательный параметр `Boolean` .<br /><br /> Если этот параметр имеет значение `true`, сборка не подписывается полностью при создании.|  
+|`FixedNames`|Необязательный параметр `Boolean` .<br /><br /> Если этот параметр имеет значение `true`, скомпилированным сборкам будут присвоены фиксированные имена.|  
+|`Force`|Необязательный параметр `Boolean`.<br /><br /> Если этот параметр имеет значение `true`, задача перезаписывает конечный каталог, если он уже существует. Все содержимое каталога будет утеряно. Значение по умолчанию — `false`. Этот параметр соответствует параметру командной строки **-f** для aspnet_compiler.exe.|  
+|`KeyContainer`|Необязательный параметр `String` .<br /><br /> Задает контейнер ключа для строгого имени.|  
+|`KeyFile`|Необязательный параметр `String` .<br /><br /> Указывает физический путь к файлу ключа для строгого имени.|  
+|`MetabasePath`|Необязательный параметр `String` .<br /><br /> Указывает полный путь к метабазе IIS приложения. Этот параметр нельзя использовать вместе с параметром `VirtualPath` или `PhysicalPath`. Этот параметр соответствует параметру командной строки **-m** для aspnet_compiler.exe.|  
+|`PhysicalPath`|Необязательный параметр `String` .<br /><br /> Указывает физический путь к компилируемому приложению. Если этот параметр отсутствует, для поиска приложения используется метабаза IIS. Этот параметр соответствует параметру командной строки **-p** для aspnet_compiler.exe.|  
+|`TargetFrameworkMoniker`|Необязательный параметр `String` .<br /><br /> Задает параметр TargetFrameworkMoniker, который определяет используемую версию .NET Framework для aspnet_compiler.exe. Принимает только моникеры платформы .NET Framework.|  
+|`TargetPath`|Необязательный параметр `String` .<br /><br /> Указывает физический путь, по которому компилируется приложение. Если этот параметр не указан, приложение предкомпилируется на месте.|  
+|`Updateable`|Необязательный параметр `Boolean` .<br /><br /> Если этот параметр имеет значение `true`, то предкомпилированное приложения будет обновляемым.  Значение по умолчанию — `false`. Этот параметр соответствует параметру командной строки **-u** для aspnet_compiler.exe.|  
+|`VirtualPath`|Необязательный параметр `String` .<br /><br /> Виртуальный путь к компилируемому приложению. Если указан параметр `PhysicalPath`, для поиска приложения используется физический путь. В противном случае используется метабаза IIS, и предполагается, что приложение расположено в узле по умолчанию. Этот параметр соответствует параметру командной строки **-v** для aspnet_compiler.exe.|  
   
-## Заметки  
- Помимо параметров, которые перечислены выше, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, который наследует от класса <xref:Microsoft.Build.Utilities.ToolTask>.  Чтобы получить список этих доп параметров и их описаний, см. [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Примечания  
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, который в свою очередь наследует их от класса <xref:Microsoft.Build.Utilities.ToolTask>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).  
   
-## Пример  
- В следующем примере кода задача `AspNetCompiler` используется для предварительной компиляции приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
+## <a name="example"></a>Пример  
+ В следующем примере кода задача `AspNetCompiler` выполняет предварительную компиляцию приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     <Target Name="PrecompileWeb">  
         <AspNetCompiler  
@@ -71,6 +86,7 @@ manager: "ghogen"
 </Project>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+
