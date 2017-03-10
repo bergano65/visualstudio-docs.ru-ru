@@ -4,3 +4,4 @@
 # [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
 ## [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 ## [Создание автономной установки Visual Studio](create-an-offline-installation-of-visual-studio.md)
+## [Идентификаторы рабочих нагрузок и компонентов Visual Studio](workload-and-component-ids.md)

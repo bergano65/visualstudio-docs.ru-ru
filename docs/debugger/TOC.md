@@ -199,7 +199,7 @@
 ### [Подготовка к отладке: типы проектов Visual C++](debugging-preparation-visual-cpp-project-types.md)
 ### [Практическое руководство. Отладка оптимизированного кода](how-to-debug-optimized-code.md)
 ### [DebugBreak и __debugbreak](debugbreak-and-debugbreak.md)
-### [Утверждения C/C++](c-cpp-assertions.md)
+### [Проверочные утверждения C/C++](c-cpp-assertions.md)
 ### [Практическое руководство. Отладка встроенного кода ассемблера](how-to-debug-inline-assembly-code.md)
 ### [Методы отладки MFC](mfc-debugging-techniques.md)
 ### [Методы отладки CRT](crt-debugging-techniques.md)

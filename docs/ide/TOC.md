@@ -1,4 +1,4 @@
-# [Интегрированная среда разработки Visual Studio](visual-studio-ide.md)
+# [Обзор возможностей интегрированной среды разработки Visual Studio](visual-studio-ide.md)
 # [Начало работы с Visual Studio](get-started-with-visual-studio.md)
 # [Учетные записи пользователей и обновления](user-accounts-and-updates.md)
 ## [Вход в Visual Studio](signing-in-to-visual-studio.md)
@@ -111,6 +111,7 @@
 ### [Практическое руководство. Изменение регистра текста в редакторе](how-to-change-text-case-in-the-editor.md)
 ### [Практическое руководство. Управление режимами редактора](how-to-manage-editor-modes.md)
 ### [Практическое руководство. Управление окнами редактора](how-to-manage-editor-windows.md)
+## [Разработка кода в Visual Studio без использования проектов и решений](develop-code-in-visual-studio-without-projects-or-solutions.md)
 ## [Создание переносимых, настраиваемых параметров редактора](create-portable-custom-editor-options.md)
 ## [Практическое руководство. Отслеживание кода за счет настройки полосы прокрутки](how-to-track-your-code-by-customizing-the-scrollbar.md)
 ## Навигация по коду

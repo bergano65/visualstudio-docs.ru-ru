@@ -1,5 +1,5 @@
 # [MSBuild](msbuild.md)
-## [Новые возможности MSBuild 12.0](what-s-new-in-msbuild-12-0.md)
+## [Новые возможности MSBuild 15.0](what-s-new-in-msbuild-15-0.md)
 ## [Основные понятия MSBuild](msbuild-concepts.md)
 ### [Свойства MSBuild](msbuild-properties.md)
 #### [Практическое руководство. Использование переменных среды в построении](how-to-use-environment-variables-in-a-build.md)

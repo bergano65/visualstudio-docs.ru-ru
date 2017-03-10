@@ -88,6 +88,7 @@
 ### [Панель элементов, вкладка "Компоненты"](toolbox-components-tab.md)
 ### [Панель элементов, вкладка "Данные"](toolbox-data-tab.md)
 ### [Вкладка "HTML", панель элементов](toolbox-html-tab.md)
+## [Страница параметров конструктора XAML](xaml-designer.md)
 # [Параметры командной строки для команды Devenv](devenv-command-line-switches.md)
 ## [-? (devenv.exe)](q-devenv-exe.md)
 ## [-Build (devenv.exe)](build-devenv-exe.md)
