@@ -1,51 +1,66 @@
 ---
-title: "/Command (devenv.exe) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "/command - параметр Devenv"
-  - "Devenv, /command - параметр"
+title: "-Command (devenv.exe) | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Devenv, /command switch
+- /command Devenv switch
 ms.assetid: 13c20cd6-f09d-400a-8b7b-ecc266a32cef
 caps.latest.revision: 11
-caps.handback.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# /Command (devenv.exe)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
+ms.openlocfilehash: 76e64002e7f9caf7db8511501dd6c320b237ca65
+ms.lasthandoff: 02/22/2017
 
-Выполняет заданную команду после запуска интегрированной среды разработки \(IDE\) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+---
+# <a name="command-devenvexe"></a>/Command (devenv.exe)
+Выполняет заданную команду после запуска интегрированной среды разработки (IDE) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 devenv /command CommandName  
 ```  
   
-## Аргументы  
+## <a name="arguments"></a>Аргументы  
  `CommandName`  
- Обязательный.  Полное имя команды [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] или ее псевдоним в двойных кавычках.  Дополнительные сведения о команды и синтаксис псевдонима см. в разделе [Команды Visual Studio](../../ide/reference/visual-studio-commands.md).  
+ Обязательный. Полное имя команды [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] или ее псевдоним, заключенные в двойные кавычки. Дополнительные сведения о синтаксисе команд и псевдонимов см. в разделе [Команды Visual Studio](../../ide/reference/visual-studio-commands.md).  
   
-## Заметки  
- После завершения запуска в интегрированной среде разработки \(IDE\) выполняется команда с указанным именем.  Если используется этот переключатель, то при запуске IDE домашняя страница [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] не отображается.  
+## <a name="remarks"></a>Примечания  
+ После завершения запуска интегрированная среда разработки выполняет именованную команду. При использовании этого параметра среда IDE не отображает начальную страницу [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] при запуске.  
   
- Если надстройка предоставляет команду, этот переключатель может использоваться для запуска надстройки из командной строки.  Для получения дополнительной информации см. [Практическое руководство. Управление надстройками с помощью диспетчера надстроек](../Topic/How%20to:%20Control%20Add-Ins%20By%20Using%20the%20Add-In%20Manager.md).  
+ Если надстройка предоставляет команду, этот параметр можно использовать для запуска надстройки из командной строки. Дополнительные сведения см. в разделе [Практическое руководство. Управление надстройками с помощью диспетчера надстроек](http://msdn.microsoft.com/Library/4f60444a-cb48-4cdb-8df4-941f6419aeeb).  
   
-## Пример  
- В приведенном примере запускается приложение [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], и автоматически выполняется макрос Open Favorite Files.  
+## <a name="example"></a>Пример  
+ В данном примере запускается [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] и автоматически выполняется макрос Open Favorite Files.  
   
 ```  
 devenv /command "Macros.MyMacros.Module1.OpenFavoriteFiles"  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)   
  [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

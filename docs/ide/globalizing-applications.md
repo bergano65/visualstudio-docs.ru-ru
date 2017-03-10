@@ -1,43 +1,58 @@
 ---
-title: "Глобализация приложений | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "глобализация [Visual Studio], приложения на разных языках"
-  - "код Visual Basic, приложения на разных языках"
-  - "Visual C#, приложения на разных языках"
+title: "Глобализация приложений | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Visual Basic code, international applications
+- globalization [Visual Studio], international applications
+- Visual C#, international applications
 ms.assetid: 8e1b9920-e1ac-4691-928e-cd95bfc6550b
 caps.latest.revision: 9
-caps.handback.revision: 9
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# Глобализация приложений
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
+ms.openlocfilehash: 0d8671ed0cad330a83482a84198ef397a3c4ad08
+ms.lasthandoff: 02/22/2017
 
-Глобализация — это процесс проектирования и разработки программных продуктов, которые работают в средах с различными языковыми и региональными параметрами.  Сведения, содержащиеся в этом разделе, относятся как к формам Windows Forms, так и к страницам Web Forms.  
+---
+# <a name="globalizing-applications"></a>Глобализация приложений
+Глобализация — это процесс проектирования и разработки программных продуктов, которые работают в средах с различными языками и региональными параметрами. Этот раздел относится к страницам Windows Forms и Web Forms.  
   
-## В этом подразделе  
+## <a name="in-this-section"></a>Содержание  
  [Классы, соответствующие определенному языку и региональным параметрам, для глобальных форм Windows Forms и Web Forms](../ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md)  
- Описание классов, отвечающих за форматирование дат, времени, чисел, денежных единиц и других данных в соответствии с языковыми и региональными параметрами.  
+ Описывает классы, которые используются для форматирования дат, времени, чисел, валют и других сведений в соответствии с параметрами языка и региональных параметров.  
   
-## Связанные подразделы  
- [Globalizing Windows Forms](../Topic/Globalizing%20Windows%20Forms.md)  
- Ссылки на страницы справочной системы, касающиеся глобализации форм Windows Forms.  
+## <a name="related-sections"></a>Связанные разделы  
+ [Глобализация Windows Forms](http://msdn.microsoft.com/Library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
+ Ссылки на страницы справки о глобализации форм Windows Forms.  
   
- [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md)  
- Ссылки на страницы справочной системы, касающиеся глобализации страниц Web Forms.  
+ [Глобализация и локализация](http://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
+ Ссылки на страницы справки о глобализации форм Web Forms.  
   
  [Знакомство с международными приложениями на платформе .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
- Основные концепции, связанные с разработкой программного обеспечения для международного рынка в среде Visual Basic или Visual C\#.  
+ Описывает основные концепции разработки программного обеспечения для международного рынка в среде Visual Basic или Visual C#.  
   
- [Рекомендации по разработке международных приложений](../Topic/Best%20Practices%20for%20Developing%20World-Ready%20Applications.md)  
- Сведения о программировании для международной аудитории, в том числе вопросы проектирования и терминологии.
+ [Рекомендации по разработке международных приложений](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ Сведения о программировании для международной аудитории, в частности вопросы конструирования и терминологии.

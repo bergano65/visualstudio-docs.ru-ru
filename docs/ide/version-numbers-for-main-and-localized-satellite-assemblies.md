@@ -1,38 +1,53 @@
 ---
-title: "Номера версий основных и вспомогательных локализованных сборок | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "сборки [Visual Studio], номера версий"
-  - "вспомогательные сборки, номера версий"
-  - "SatelliteContractVersionAttribute"
-  - "номера версий, сборки"
-  - "управление версиями, сборки"
+title: "Номера версий основных и вспомогательных локализованных сборок | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- satellite assemblies, version numbers
+- SatelliteContractVersionAttribute
+- version numbers, assemblies
+- assemblies [Visual Studio], version numbers
+- versioning, assemblies
 ms.assetid: 5489aea1-57b4-4561-9bb4-24d490269602
 caps.latest.revision: 12
-caps.handback.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# Номера версий основных и вспомогательных локализованных сборок
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
+ms.openlocfilehash: a41d725b9f58d0f434c3f5169d76988b675aa312
+ms.lasthandoff: 02/22/2017
 
-Класс <xref:System.Resources.SatelliteContractVersionAttribute> обеспечивает поддержку управления версиями основных сборок, использующих локализованные ресурсы, с помощью диспетчера ресурсов.  Использование атрибута <xref:System.Resources.SatelliteContractVersionAttribute> в основной сборке приложения позволяет обновлять и повторно развертывать сборку, не обновляя при этом вспомогательные сборки.  Например, класс <xref:System.Resources.SatelliteContractVersionAttribute> можно использовать в составе пакета обновления, который не включает новых ресурсов, не выполняя повторного построения и развертывания вспомогательных сборок.  Для обеспечения доступности локализованных ресурсов версия сопутствующего контракта основной сборки должна соответствовать классу <xref:System.Reflection.AssemblyVersionAttribute> вспомогательных сборок.  В атрибуте <xref:System.Resources.SatelliteContractVersionAttribute> необходимо указать точный номер версии; подстановочные знаки, такие как "\*", не допускаются.  Дополнительные сведения см. в разделе [Извлечение ресурсов](../Topic/Retrieving%20Resources%20in%20Desktop%20Apps.md).  
+---
+# <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>Номера версий основных и вспомогательных локализованных сборок
+Класс <xref:System.Resources.SatelliteContractVersionAttribute> обеспечивает поддержку управления версиями для основной сборки, которая использует локализованные ресурсы с помощью диспетчера ресурсов. Применение <xref:System.Resources.SatelliteContractVersionAttribute> к основной сборке приложения позволяет обновить и повторно развернуть ее, не обновляя вспомогательные сборки. Например, можно использовать класс <xref:System.Resources.SatelliteContractVersionAttribute> с пакетом обновления, который предоставляет новые ресурсы только после перестройки и повторного развертывания вспомогательных сборок. Чтобы ваши локализованные ресурсы были доступны, версия контракта для вспомогательной сборки в основной сборке должна соответствовать классу <xref:System.Reflection.AssemblyVersionAttribute> вспомогательных сборок. Следует указать точный номер версии в <xref:System.Resources.SatelliteContractVersionAttribute>; подстановочные знаки, такие как "*", не допускаются. Дополнительные сведения см. в разделе [Извлечение ресурсов](http://msdn.microsoft.com/Library/eca16922-1c46-4f68-aefe-e7a12283641f).  
   
-## Обновление сборок  
- Класс <xref:System.Resources.SatelliteContractVersionAttribute> позволяет обновлять основную сборку, не обновляя вспомогательную сборку, и наоборот.  При обновлении основной сборки изменяется номер ее версии.  Если нужно по\-прежнему работать с существующими вспомогательными сборками, измените номер версии основной сборки, но оставьте номер версии вспомогательного контракта прежним.  Например, первый выпуск основной сборки может иметь номер версии 1.0.0.0.  Вспомогательный контракт и вспомогательная сборка также будут иметь номер версии 1.0.0.0.  При необходимости обновления основной сборки для пакета обновления можно изменить версию сборки на 1.0.0.1 и при этом сохранить версию 1.0.0.0 вспомогательного контракта и вспомогательной сборки.  
+## <a name="updating-assemblies"></a>Обновление сборок  
+ Класс <xref:System.Resources.SatelliteContractVersionAttribute> позволяет обновить основную сборку, не затрагивая вспомогательную, и наоборот. При обновлении основной сборки ее номер версии изменяется. Если вы хотите и дальше использовать имеющиеся вспомогательные сборки, измените номер версии основной сборки, а номер версии контракта для вспомогательной сборки оставьте без изменений. Например, в первом выпуске основная сборка может иметь версию 1.0.0.0. Версия контракта для вспомогательной сборки и версия самой вспомогательной сборки также будут иметь номер 1.0.0.0. Если вам нужно обновить основную сборку для пакета обновления, можно изменить ее версию на 1.0.0.1, оставив у контракта для вспомогательной сборки и самой вспомогательной сборки версию 1.0.0.0.  
   
- Если требуется обновить вспомогательную, а не основную сборку, следует изменить атрибут <xref:System.Reflection.AssemblyVersionAttribute> вспомогательной сборки.  Вместе со вспомогательной сборкой потребуется отправить сборку политики, в которой будет говориться, что новая вспомогательная сборка совместима с предыдущей вспомогательной сборкой.  Дополнительные сведения о политиках см. в разделе [Обнаружение сборок средой выполнения](../Topic/How%20the%20Runtime%20Locates%20Assemblies.md).  
+ Если требуется обновить вспомогательную сборку без основной сборку, измените <xref:System.Reflection.AssemblyVersionAttribute> вспомогательной сборки. Вместе со вспомогательной сборкой вам нужно отправить сборку политики, которая указывает, что новая вспомогательная сборка совместима со старой. Дополнительные сведения о политиках см. в разделе [Обнаружение сборок в среде выполнения](http://msdn.microsoft.com/Library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34).  
   
- Следующий фрагмент кода иллюстрирует задание версии вспомогательного контракта.  Этот код можно поместить в скрипт построения, в файл AssemblyInfo.vb или AssemblyInfo.cs.  
+ В следующем примере кода показано, как задать версию контракта для вспомогательной сборки. Код можно поместить в скрипт сборки либо в файл AssemblyInfo.vb или AssemblyInfo.cs.  
   
 ```vb#  
 <Assembly: SatelliteContractVersionAttribute("4.3.2.1")>  
@@ -43,9 +58,9 @@ manager: "ghogen"
 [assembly: SatelliteContractVersionAttribute("4.3.2.1")]  
 ```  
   
-## См. также  
- [Обнаружение сборок в среде выполнения](../Topic/How%20the%20Runtime%20Locates%20Assemblies.md)   
- [Настройка атрибутов сборки](../Topic/Setting%20Assembly%20Attributes.md)   
+## <a name="see-also"></a>См. также  
+ [Обнаружение сборок в среде выполнения](http://msdn.microsoft.com/Library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34)   
+ [Настройка атрибутов сборки](http://msdn.microsoft.com/Library/36a98a81-b5b5-4c19-912a-11f91eff7f4e)   
  [Безопасность и локализованные вспомогательные сборки](../ide/security-and-localized-satellite-assemblies.md)   
  [Локализация приложений](../ide/localizing-applications.md)   
  [Глобализация и локализация приложений](../ide/globalizing-and-localizing-applications.md)
