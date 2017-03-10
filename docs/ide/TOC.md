@@ -49,7 +49,7 @@
 #### [Шаг 8. Добавление метода для проверки, выиграл ли игрок](step-8-add-a-method-to-verify-whether-the-player-won.md)
 #### [Шаг 9. Изучение других возможностей](step-9-try-other-features.md)
 ## [Начало работы с C++ в Visual Studio](getting-started-with-cpp-in-visual-studio.md)
-## [Начало работы с отладкой в Visual Studio 2015](getting-started-with-debugging-in-visual-studio.md)
+## [Начало работы с отладкой в Visual Studio](getting-started-with-debugging-in-visual-studio.md)
 # [Поиск и использование расширений Visual Studio](finding-and-using-visual-studio-extensions.md)
 # [Решения и проекты в Visual Studio](solutions-and-projects-in-visual-studio.md)
 ## [Создание решений и проектов](creating-solutions-and-projects.md)

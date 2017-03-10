@@ -13,7 +13,7 @@
 ## [Вариант размера текстур: половина/четверть](half-quarter-texture-dimensions-variant.md)
 ## [Вариант сжатия текстур BC](bc-texture-compression-variant.md)
 # [Список событий](graphics-event-list.md)
-# [Состояние](graphics-state.md)
+# [Состояние графики](graphics-state.md)
 # [Этапы конвейера](graphics-pipeline-stages.md)
 # [Стек вызовов событий](graphics-event-call-stack.md)
 # [Журнал пикселей](graphics-pixel-history.md)
