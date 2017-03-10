@@ -43,9 +43,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4b82b8583ec54af9eee383255d20b40674e7c2c1
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: dac3cb1d7767c2ff76ac25f6a486ad30a8d54831
+ms.openlocfilehash: 99a485f2b7ebda9169797db06212ae56dc4d9eb1
+ms.lasthandoff: 03/03/2017
 
 ---
 # <a name="managing-references-in-a-project"></a>Управление ссылками в проекте
@@ -72,7 +72,7 @@ ms.lasthandoff: 02/22/2017
 ### <a name="project-references"></a>Ссылки проекта  
  Проекты универсальной платформы Windows (UWP), предназначенные для Windows 10, могут создавать ссылки на другие проекты UWP в решении либо на двоичные файлы или проекты Магазина Windows, ориентированные на [!INCLUDE[win81](../debugger/includes/win81_md.md)], при условии, что эти проекты не используют интерфейсы API, которые являются устаревшими в Windows 10. Более подробную информацию см. в разделе [Перенос приложения из среды выполнения Windows 8 в UWP](https://msdn.microsoft.com/en-us/library/windows/apps/dn954974.aspx).  
 
- Если вы решили переориентировать проекты [!INCLUDE[win81](../debugger/includes/win81_md.md)] на Windows 10, см. раздел [Перенос, миграция и обновление проектов Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)  
+ Если вы решили переориентировать проекты [!INCLUDE[win81](../debugger/includes/win81_md.md)] на Windows 10, см. раздел [Перенос, миграция и обновление проектов Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
 
 ### <a name="extension-sdk-references"></a>Справочник по пакетам SDK расширений  
  Проекты Visual Basic, C#, C++ и JavaScript Магазина Windows, предназначенные для UWP, могут ссылаться на пакеты SDK расширений, предназначенные для [!INCLUDE[win81](../debugger/includes/win81_md.md)], при условии, что эти пакеты SDK расширений не используют API, которые являются устаревшими в Windows 10. Проверьте сайт поставщика пакета SDK расширений, чтобы выяснить, могут ли на него ссылаться проекты Магазина Windows, предназначенные для UWP.  
