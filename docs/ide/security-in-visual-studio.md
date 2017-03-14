@@ -1,7 +1,7 @@
 ---
 title: "Безопасность в Visual Studio | Документы Майкрософт"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 02/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -31,9 +31,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 8e34062596ab2f87ae97934b89b4c292e8f28f32
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 7a282fc04c1eb01f0c56b1d76880276fc270686d
+ms.openlocfilehash: 96136c7223f3d5f78fff9bfe3106d48cab4dd44a
+ms.lasthandoff: 03/01/2017
 
 ---
 # <a name="security-in-visual-studio"></a>Безопасность в Visual Studio
@@ -56,3 +56,12 @@ ms.lasthandoff: 02/22/2017
   
  [Рекомендации по безопасности](/visual-cpp/top/security-best-practices-for-cpp)  
  Описание переполнения буфера и общая картина функциональности проверки безопасности в Microsoft Visual C++, которая включается с помощью флага времени компиляции /GS.
+
+## <a name="building-for-security"></a>Безопасная сборка  
+ При сборке безопасность играет немаловажную роль.  Выполнив дополнительные процедуры, можно повысить безопасность развернутого приложения и защитить его от несанкционированного реконструирования, спуфинга и других атак.
+
+ [Dotfuscator Community Edition (CE)](dotfuscator/index.md)  
+ Здесь объясняется, как настроить и начать использовать бесплатное решение Dotfuscator Community Edition с PreEmptive Protection для защиты сборок .NET от реконструирования и несанкционированного использования (например, несанкционированная отладка).
+  
+ [Управление сборками и подписывание манифестов](managing-assembly-and-manifest-signing.md)  
+ Здесь рассматривается подписывание с использованием строгих имен, которое можно применять для уникальной идентификации программных компонентов, предотвращая таким образом спуфинг.
