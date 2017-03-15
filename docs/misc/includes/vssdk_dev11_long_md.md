@@ -1,0 +1,1 @@
+SDK для Visual Studio 2012

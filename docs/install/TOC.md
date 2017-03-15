@@ -1,0 +1,8 @@
+# [Установка Visual Studio](install-visual-studio.md)
+# [Изменение Visual Studio](modify-visual-studio.md)
+# [Удаление Visual Studio](uninstall-visual-studio.md)
+# [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
+## [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+## [Создание автономной установки Visual Studio](create-an-offline-installation-of-visual-studio.md)
+## [Автоматическое применение ключей продуктов при развертывании Visual Studio](automatically-apply-product-keys-when-deploying-visual-studio.md)
+## [Идентификаторы рабочих нагрузок и компонентов Visual Studio](workload-and-component-ids.md)
