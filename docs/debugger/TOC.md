@@ -1,5 +1,4 @@
-# [Отладка в Visual Studio](debugging-in-visual-studio.md)
-# [Обзор функций отладчика](debugger-feature-tour.md)
+# [Обзор средства отладки](debugger-feature-tour.md)
 # [Новые возможности отладчика в Visual Studio](what-s-new-for-the-debugger-in-visual-studio.md)
 # [Основы отладки](debugger-basics.md)
 ## [Начало работы с отладчиком](getting-started-with-the-debugger.md)
