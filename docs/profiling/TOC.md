@@ -1,5 +1,4 @@
-# [Средства профилирования](profiling-tools.md)
-## [Обзор возможностей профилирования](profiling-feature-tour.md)
+# [Обзор возможностей профилирования](profiling-feature-tour.md)
 ## [Руководство по профилированию производительности для начинающих](beginners-guide-to-performance-profiling.md)
 ## [Новые возможности средств профилирования](what-s-new-in-profiling-tools.md)
 ## [Запуск средств профилирования с отладчиком или без него](running-profiling-tools-with-or-without-the-debugger.md)
