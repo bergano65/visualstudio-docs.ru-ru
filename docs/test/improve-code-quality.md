@@ -1,7 +1,7 @@
 ---
 title: "Улучшение качества кода"
 ms.custom: na
-ms.date: 10/14/2016
+ms.date: 02/17/2017
 ms.reviewer: na
 ms.suite: na
 ms.technology:
@@ -30,9 +30,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 93f70de0acfa8b5efcfe141a1f8060061a4ba15d
-ms.openlocfilehash: 0c439304b8a23166293fc4cc6d984947fd51f133
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 7a282fc04c1eb01f0c56b1d76880276fc270686d
+ms.openlocfilehash: df5195e7cc435f6da8ebfee4589d7c6258018993
+ms.lasthandoff: 03/01/2017
 
 ---
 # <a name="improve-code-quality"></a>Улучшение качества кода
@@ -50,8 +50,6 @@ ms.lasthandoff: 02/22/2017
 |[Модульное тестирование кода](../test/unit-test-your-code.md)|Обозреватель тестов позволяет легко интегрировать модульные тесты в вашу практику разработки. Можно использовать платформу для выполнения модульных тестов Microsoft или одну из нескольких сторонних платформ, в том числе платформы с открытым исходным кодом.|  
 |[Анализ качества приложения](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|Средства анализа статического кода помогают найти проблемы проектирования, использования, обслуживания и стиля в коде C++ и управляемом коде. Многие из этих проблем могут привести к ошибкам, которые трудно воспроизвести в стандартной среде тестирования.|  
 |[Оценка сложности и удобства сопровождения управляемого кода](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Метрики кода представляют собой набор оценок программного обеспечения, которые дают разработчикам более глубокое представление о разрабатываемом коде. Эти метрики включают индекс удобства поддержки для функций и классов, цикломатическую сложность функций, глубину наследования классов и величину взаимозависимости между классами.|  
-|[PreEmptive Analytics для Team Foundation Server](http://msdn.microsoft.com/library/hh973124.aspx)|PreEmptive Analytics для TFS CE помогает интегрировать процедуры разработки на основе обратной связи в применяемые вами процессы разработки. Ваши приложения будут автоматически отправлять данные с отчетами об исключениях в службу PreEmptive Analytics при возникновении ошибок во время работы. Затем служба создает или обновляет рабочие элементы в Microsoft Team Foundation Server на основе правил и порогов, определенных пользователем.|  
-|[PreEmptive Dotfuscator и Analytics CE](assetId:///25d195d4-9f76-4dcc-9fbb-eeb9bdca9a3f)|PreEmptive Dotfuscator — это средство по запутыванию и сжатию кода .NET, обеспечивающее защиту программ от реконструирования с одновременным уменьшением их размера и увеличением их эффективности.|  
   
 ## <a name="related-scenarios"></a>Связанные сценарии  
  [Внедрение Visual Studio и Team Foundation Server для управления жизненным циклом приложений](assetId:///7ae9182f-4762-4bd3-b238-39ce987932e5)  
@@ -62,6 +60,9 @@ ms.lasthandoff: 02/22/2017
   
  [Тестирование приложения](https://www.visualstudio.com/docs/test/overview)  
  С помощью [!INCLUDE[vsPreShort](../test/includes/vspreshort_md.md)] и [!INCLUDE[vsUltShort](../test/includes/vsultshort_md.md)] можно работать более продуктивно на этапе тестирования. [!INCLUDE[vsPreShort](../test/includes/vspreshort_md.md)] или [!INCLUDE[vsUltShort](../test/includes/vsultshort_md.md)] позволяет планировать работы по тестированию. Можно создавать, управлять, изменять и выполнять тесты как в ручном, так и в автоматическом режиме. Также можно оценить соответствие хода выполнения тестов плану.  
+  
+ [Защита приложения с помощью PreEmptive Protection — Dotfuscator](../ide/dotfuscator/index.md)  
+ Используйте бесплатное решение Dotfuscator Community Edition, чтобы защитить коммерческие тайны и другую интеллектуальную собственность от пиратства, подделки, изменения данных и несанкционированной отладки.  Dotfuscator защищает скомпилированные сборки и их безопасность. Вам не нужно писать дополнительный код или иметь доступ к исходному коду.
   
  [Сборка приложения](https://www.visualstudio.com/docs/build/overview)  
  [!INCLUDE[esprbuild](../test/includes/esprbuild_md.md)] позволяет создавать автоматические сборки кода и управлять ими. [!INCLUDE[esprbuild](../test/includes/esprbuild_md.md)] позволяет создавать серверы для развертывания сборок. Кроме того, можно анализировать тенденции сборок.  
