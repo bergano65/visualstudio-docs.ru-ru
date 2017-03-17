@@ -1,7 +1,7 @@
 ---
 title: "Создание переносимых, настраиваемых параметров редактора | Документы Майкрософт"
 ms.custom: 
-ms.date: 12/14/2016
+ms.date: 02/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -33,9 +33,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 31f433b28b67dc6f3179be87cb5894b5b3f0aa4f
-ms.openlocfilehash: 8c986958f141d3efc2ffe29b4176b43e9960e0e1
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 203e1e27cc892e96b103fc6cb22a73672a8e16af
+ms.openlocfilehash: 70f3c6c7e4356a698aa6c1dd265f6c79c662673e
+ms.lasthandoff: 03/01/2017
 
 ---
 # <a name="create-portable-custom-editor-settings"></a>Создание переносимых, настраиваемых параметров редактора
@@ -86,4 +86,16 @@ ms.lasthandoff: 02/22/2017
 
 > [!NOTE]
 >  Добавление файла .editorconfig в проект или базу кода не приведет к преобразованию существующих стилей в новые. Изменение будет применяться только к новым добавленным строкам. При удалении файла .editorconfig из проекта или базы кода необходимо перезагрузить файлы кода для параметров редактора, чтобы восстановить глобальные параметры. Все ошибки в файлах .editorconfig выводятся в окне ошибок в Visual Studio.
+
+## <a name="support-editorconfig-for-your-language-service"></a>Поддержка EditorConfig для языковой службы
+
+В большинстве случаев при реализации языковой службы Visual Studio не требуется выполнять никаких дополнительных действий для поддержки универсальных свойств EditorConfig. Редактор кода автоматически обнаруживает и считывает файл .editorconfig, открываемый пользователем, и задает соответствующие параметры текстового буфера и просмотра. Но в некоторых языковых службах во время редактирования или форматирования текста пользователем вместо глобальных параметров для таких элементов, как знаки табуляции и пробелы, используется параметр соответствующего контекстуального текстового представления. В этих случаях языковую службу нужно обновить для поддержки файлов EditorConfig.
+
+В следующей таблице приведены изменения, необходимые для обновления языковой службы для поддержки файлов EditorConfig.
+
+| Нерекомендуемый глобальный параметр, зависящий от языка | Заменяющий контекстный параметр |
+| :------------- | :------------- |
+| Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.fInsertTabs или Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs | !textBufferOptions.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId) или !textView.Options.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId) |
+| Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uIndentSize или Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.IndentSize | textBufferOptions.GetOptionValue(DefaultOptions. IndentSizeOptionId) или textView.Options.GetOptionValue(DefaultOptions. IndentSizeOptionId) |
+| Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uTabSize или Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.TabSize | textBufferOptions.GetOptionValue(DefaultOptions.TabSizeOptionId) или textView.Options.GetOptionValue(DefaultOptions.TabSizeOptionId) |
 
