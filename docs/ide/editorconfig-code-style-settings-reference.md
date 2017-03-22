@@ -89,9 +89,9 @@ error | Если этот стиль не соблюдается, выводит
         - [Выражения throw](#null_checking_throw_expressions)
         - [Вызовы условного делегата](#null_checking_conditional_delegate_calls)
 
-## <a name="a-namethisandmethis-and-me-qualificationa"></a><a name="this_and_me">Квалификация "This." и "Me."</a>
+## <a name="this_and_me">Квалификация "This." и "Me."</a>
 
-### <a name="a-namethisandmefieldsfieldsa"></a><a name="this_and_me_fields">Поля</a>
+### <a name="this_and_me_fields">Поля</a>
 
 |  Имя параметра | `dotnet_style_qualification_for_field` |
 | ------------- |:-------------:|
@@ -109,7 +109,7 @@ error | Если этот стиль не соблюдается, выводит
 dotnet_style_qualification_for_field = false:suggestion
 ```
 
-### <a name="a-namethisandmepropertiespropertiesa"></a><a name="this_and_me_properties">Свойства</a>
+### <a name="this_and_me_properties">Свойства</a>
 
 |  Имя параметра | `dotnet_style_qualification_for_property` |
 | ------------- |:-------------:|
@@ -128,7 +128,7 @@ dotnet_style_qualification_for_property = false:suggestion
 ```
 
 
-### <a name="a-namethisandmemethodsmethodsa"></a><a name="this_and_me_methods">Методы</a>
+### <a name="this_and_me_methods">Методы</a>
 |  Имя параметра | `dotnet_style_qualification_for_method` |
 | ------------- |:-------------:|
 | **Применимые языки** | C# и Visual Basic
@@ -146,7 +146,7 @@ dotnet_style_qualification_for_property = false:suggestion
 dotnet_style_qualification_for_method = false:suggestion
 ```
 
-### <a name="a-namethisandmeeventseventsa"></a><a name="this_and_me_events">События</a>
+### <a name="this_and_me_events">События</a>
 |  Имя параметра | `dotnet_style_qualification_for_event` |
 | ------------- |:-------------:|
 | **Применимые языки** | C# и Visual Basic
@@ -164,7 +164,7 @@ dotnet_style_qualification_for_event = false:suggestion
 ```
 
 ## <a name="language_keywords">Ключевые слова языка (int, string и т. д.) и имена типов .NET Framework для ссылок на типы</a>
-### <a name="a-namelanguagekeywordsvariableslocals-parameters-and-membersa"></a><a name="language_keywords_variables">Локальные переменные, параметры и элементы</a>
+### <a name="language_keywords_variables">Локальные переменные, параметры и элементы</a>
 |  Имя параметра | `dotnet_style_predefined_type_for_locals_parameters_members` |
 | ------------- |:-------------:|
 | **Применимые языки** | C# и Visual Basic
@@ -181,7 +181,7 @@ dotnet_style_qualification_for_event = false:suggestion
 dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
 ``` 
 
-### <a name="a-namelanguagekeywordsmemberaccessmember-access-expressionsa"></a><a name="language_keywords_member_access">Выражения доступа к элементам</a>
+### <a name="language_keywords_member_access">Выражения доступа к элементам</a>
 |  Имя параметра | `dotnet_style_predefined_type_for_member_access` |
 | ------------- |:-------------:|
 | **Применимые языки** | C# и Visual Basic
@@ -198,8 +198,8 @@ dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
 dotnet_style_predefined_type_for_member_access = true:suggestion
 ``` 
 
-## <a name="a-nameexpressionlevelexpression-level-preferencesa"></a><a name="expression_level">Настройки уровня выражений</a>
-### <a name="a-nameexpressionlevelobjectinitializersobject-initializersa"></a><a name="expression_level_object_initializers">Инициализаторы объектов</a>
+## <a name="expression_level">Настройки уровня выражений</a>
+### <a name="expression_level_object_initializers">Инициализаторы объектов</a>
 |  Имя параметра | `dotnet_style_object_initializer` |
 | ------------- |:-------------:|
 | **Применимые языки** | C# и Visual Basic
@@ -216,7 +216,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 dotnet_style_object_initializer = true:suggestion
 ``` 
 
-### <a name="a-nameexpressionlevelcollectioninitializerscollection-initializersa"></a><a name="expression_level_collection_initializers">Инициализаторы коллекций</a>
+### <a name="expression_level_collection_initializers">Инициализаторы коллекций</a>
 |  Имя параметра | `dotnet_style_collection_initializer` |
 | ------------- |:-------------:|
 | **Применимые языки** | C# и Visual Basic
@@ -233,7 +233,7 @@ dotnet_style_object_initializer = true:suggestion
 dotnet_style_collection_initializer = true:suggestion
 ```
 
-### <a name="a-nameexpressionleveltuplenamesexplicit-tuple-namesa"></a><a name="expression_level_tuple_names">Явные имена кортежей</a>
+### <a name="expression_level_tuple_names">Явные имена кортежей</a>
 |  Имя параметра | `dotnet_style_explicit_tuple_names` |
 | ------------- |:-------------:|
 | **Применимые языки** | C# и Visual Basic
@@ -250,7 +250,7 @@ dotnet_style_collection_initializer = true:suggestion
 dotnet_style_explicit_tuple_names = true:suggestion
 ``` 
 
-### <a name="a-nameexpressionlevelnullcheckingcoalescing-expressions-in-null-checkinga"></a><a name="expression_level_null_checking">Выражения объединения в проверке "null"</a>
+### <a name="expression_level_null_checking">Выражения объединения в проверке "null"</a>
 |  Имя параметра | `dotnet_style_coalesce_expression` |
 | ------------- |:-------------:|
 | **Применимые языки** | C# и Visual Basic
@@ -267,7 +267,7 @@ dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_coalesce_expression = true:suggestion
 ``` 
 
-### <a name="a-nameexpressionlevelnullpropogationnull-propagation-in-null-checkinga"></a><a name="expression_level_null_propogation">Распространение значений NULL в проверке "null"</a>
+### <a name="expression_level_null_propogation">Распространение значений NULL в проверке "null"</a>
 |  Имя параметра | `dotnet_style_null_propagation` |
 | ------------- |:-------------:|
 | **Применимые языки** | C# и Visual Basic
@@ -284,9 +284,9 @@ dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_null_propagation = true:suggestion
 ``` 
 
-# <a name="a-namecsharpcodestylecsharp-code-style-settingsa"></a><a name="csharp_codestyle">Параметры стиля кода C#</a>
-## <a name="a-namevarvara"></a><a name="var">"var"</a>
-### <a name="a-namevarbuiltinvar-for-built-in-typesa"></a><a name="var_built_in">"var" для встроенных типов</a>
+# <a name="csharp_codestyle">Параметры стиля кода C#</a>
+## <a name="var">"var"</a>
+### <a name="var_built_in">"var" для встроенных типов</a>
 |  Имя параметра | `csharp_style_var_for_built_in_types` |
 | ------------- |:-------------:|
 | **Применимые языки** | C#
@@ -303,7 +303,7 @@ dotnet_style_null_propagation = true:suggestion
 csharp_style_var_for_built_in_types = true:suggestion
 ``` 
 
-### <a name="a-namevarapparentvar-when-type-is-apparenta"></a><a name="var_apparent">"var", если тип является очевидным</a>
+### <a name="var_apparent">"var", если тип является очевидным</a>
 |  Имя параметра | `csharp_style_var_when_type_is_apparent` |
 | ------------- |:-------------:|
 | **Применимые языки** | C#
@@ -320,7 +320,7 @@ csharp_style_var_for_built_in_types = true:suggestion
 csharp_style_var_when_type_is_apparent = true:suggestion
 ``` 
 
-### <a name="a-namevarelsewherevar-elsewherea"></a><a name="var_elsewhere">"var" в другом месте</a>
+### <a name="var_elsewhere">"var" в другом месте</a>
 |  Имя параметра | `csharp_style_var_elsewhere` |
 | ------------- |:-------------:|
 | **Применимые языки** | C#
@@ -337,7 +337,7 @@ csharp_style_var_when_type_is_apparent = true:suggestion
 csharp_style_var_elsewhere = true:suggestion
 ``` 
 
-### <a name="a-nameexpressionbodiedmembersmethodsa"></a><a name="expression_bodied_members">Методы</a>
+### <a name="expression_bodied_members">Методы</a>
 |  Имя параметра | `csharp_style_expression_bodied_methods` |
 | ------------- |:-------------:|
 | **Применимые языки** | C#
@@ -354,7 +354,7 @@ csharp_style_var_elsewhere = true:suggestion
 csharp_style_expression_bodied_methods = false:none
 ``` 
 
-### <a name="a-nameexpressionbodiedmembersconstructorsconstructorsa"></a><a name="expression_bodied_members_constructors">Конструкторы</a>
+### <a name="expression_bodied_members_constructors">Конструкторы</a>
 |  Имя параметра | `csharp_style_expression_bodied_constructors` |
 | ------------- |:-------------:|
 | **Применимые языки** | C#
@@ -371,7 +371,7 @@ csharp_style_expression_bodied_methods = false:none
 csharp_style_expression_bodied_constructors = false:none
 ``` 
 
-### <a name="a-nameexpressionbodiedmembersoperatorsoperatorsa"></a><a name="expression_bodied_members_operators">Операторы</a>
+### <a name="expression_bodied_members_operators">Операторы</a>
 |  Имя параметра | `csharp_style_expression_bodied_operators` |
 | ------------- |:-------------:|
 | **Применимые языки** | C#
@@ -388,7 +388,7 @@ csharp_style_expression_bodied_constructors = false:none
 csharp_style_expression_bodied_operators = false:none
 ``` 
 
-### <a name="a-nameexpressionbodiedmemberspropertiespropertiesa"></a><a name="expression_bodied_members_properties">Свойства</a>
+### <a name="expression_bodied_members_properties">Свойства</a>
 |  Имя параметра | `csharp_style_expression_bodied_properties` |
 | ------------- |:-------------:|
 | **Применимые языки** | C#
@@ -405,7 +405,7 @@ csharp_style_expression_bodied_operators = false:none
 csharp_style_expression_bodied_properties = false:none
 ``` 
 
-### <a name="a-nameexpressionbodiedmembersindexersindexersa"></a><a name="expression_bodied_members_indexers">Индексаторы</a>
+### <a name="expression_bodied_members_indexers">Индексаторы</a>
 |  Имя параметра | `csharp_style_expression_bodied_indexers` |
 | ------------- |:-------------:|
 | **Применимые языки** | C#
@@ -422,7 +422,7 @@ csharp_style_expression_bodied_properties = false:none
 csharp_style_expression_bodied_indexers = false:none
 ``` 
 
-### <a name="a-nameexpressionbodiedmembersaccessorsaccessorsa"></a><a name="expression_bodied_members_accessors">Методы доступа</a>
+### <a name="expression_bodied_members_accessors">Методы доступа</a>
 |  Имя параметра | `csharp_style_expression_bodied_accessors` |
 | ------------- |:-------------:|
 | **Применимые языки** | C#
@@ -439,8 +439,8 @@ csharp_style_expression_bodied_indexers = false:none
 csharp_style_expression_bodied_accessors = false:none
 ``` 
 
-## <a name="a-namepatternmatchingpattern-matchinga"></a><a name="pattern_matching">Сопоставление шаблонов</a>
-### <a name="a-namepatternmatchingiscastis-with-cast-checkinga"></a><a name="pattern_matching_is_cast">"is" с проверкой "cast"</a>
+## <a name="pattern_matching">Сопоставление шаблонов</a>
+### <a name="pattern_matching_is_cast">"is" с проверкой "cast"</a>
 |  Имя параметра | `csharp_style_pattern_matching_over_is_with_cast_check` |
 | ------------- |:-------------:|
 | **Применимые языки** | C#
@@ -457,7 +457,7 @@ csharp_style_expression_bodied_accessors = false:none
 csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 ```
 
-### <a name="a-namepatternmatchingasnullas-with-null-checkinga"></a><a name="pattern_matching_as_null">"as"с проверкой "null"</a>
+### <a name="pattern_matching_as_null">"as"с проверкой "null"</a>
 |  Имя параметра | `csharp_style_pattern_matching_over_as_with_null_check` |
 | ------------- |:-------------:|
 | **Применимые языки** | C#
@@ -474,14 +474,14 @@ csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 ```
 
-### <a name="a-nameinlinedvariabledeclarationsinlined-variable-declarationsa"></a><a name="inlined_variable_declarations">Встроенные объявления переменных</a>
+### <a name="inlined_variable_declarations">Встроенные объявления переменных</a>
 |  Имя параметра | `csharp_style_inlined_variable_declaration` |
 | ------------- |:-------------:|
 | **Применимые языки** | C#
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
-| Да | Предпочитать встроенное объявление переменных `out`, когда возможно. | **C#:** <br>`if (int.TryParse(value out int i) {...}`
+| Да | Предпочитать встроенное объявление переменных `out`, когда возможно. | **C#:** <br>`if (int.TryParse(value, out int i) {...}`
 | False | Предпочитать явное объявление переменных `out`.| **C#:** <br>`int i; if (int.TryParse(value, out i) {...}`
 
 #### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
@@ -491,8 +491,8 @@ csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 csharp_style_inlined_variable_declaration = true:suggestion
 ```
 
-## <a name="a-namenullcheckingnull-checking-preferencesa"></a><a name="null_checking">Параметры проверки "null"</a>
-### <a name="a-namenullcheckingthrowexpressionsthrow-expressionsa"></a><a name="null_checking_throw_expressions">Выражения throw</a>
+## <a name="null_checking">Параметры проверки "null"</a>
+### <a name="null_checking_throw_expressions">Выражения throw</a>
 |  Имя параметра | `csharp_style_throw_expression` |
 | ------------- |:-------------:|
 | **Применимые языки** | C#
@@ -509,7 +509,7 @@ csharp_style_inlined_variable_declaration = true:suggestion
 csharp_style_throw_expression = true:suggestion
 ```
 
-### <a name="a-namenullcheckingconditionaldelegatecallsprefer-conditional-delegate-callsa"></a><a name="null_checking_conditional_delegate_calls">Предпочитать вызовы условного делегата</a>
+### <a name="null_checking_conditional_delegate_calls">Предпочитать вызовы условного делегата</a>
 |  Имя параметра | `csharp_style_conditional_delegate_call` |
 | ------------- |:-------------:|
 | **Применимые языки** | C#
