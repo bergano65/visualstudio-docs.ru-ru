@@ -28,14 +28,12 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e273f31cb1f43ff79fd9a4ade37d112351dea9b5
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
+ms.openlocfilehash: 19ce2d4cc1ff92240529f35f42845778ded49fdf
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="migrate-64-bit-debugger-com-class-registration"></a>Перенос 64-разрядного отладчика регистрации классов COM
-
->**Примечание:** этот документ является предварительным и зависимости в выпуске версии-Кандидата Visual Studio 2017 г.
 
 Для расширения отладчика, зарегистрировавшись COM-классов в разделе HKEY_CLASSES_ROOT (с помощью regasm regsvr32, или запись непосредственно в реестр) и загружается msvsmon.exe (удаленный отладчик) стало возможным для предоставления этой регистрации в msvsmon без необходимости записи в раздел HKEY_CLASSES_ROOT. Это влияет на устаревших вычислители выражений отладчика .NET или отладчики, которые настроены для загрузки в процессе msvsmon.exe.
 

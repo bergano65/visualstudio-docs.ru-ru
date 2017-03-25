@@ -28,18 +28,16 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 4f93b8c1db59dd8d8a407c82002240641be43018
-ms.openlocfilehash: 1f9248442357c4447703ac6d6dac8a27934904e8
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: 5b6334c38a6c058f274498c06f8e07c934931910
+ms.openlocfilehash: efd17a3317302fedcb9bd42aded7a38adee2f75f
+ms.lasthandoff: 03/22/2017
 
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Практическое руководство: перенести проекты расширения среды Visual Studio 2017 г.
 
->**Примечание:** этот документ является предварительным и зависимости в выпуске версии-Кандидата Visual Studio 2017 г.
-
 В этом документе объясняется, как обновить проекты расширения среды для Visual Studio 2017 г. Кроме описания обновление файлов проекта, он также описывает, как обновление до новой версии 3 VSIX манифеста формат (VSIX v3) расширения манифеста версии 2 (VSIX v2).
 
-## <a name="install-visual-studio-2017-rc-with-required-workloads"></a>Установка Visual Studio RC 2017 г. с рабочих нагрузок
+## <a name="install-visual-studio-2017-with-required-workloads"></a>Установка Visual Studio 2017 г. с рабочих нагрузок
 
 Убедитесь, что установка включает следующие рабочие нагрузки:
 
@@ -59,19 +57,16 @@ ms.lasthandoff: 03/01/2017
 
 >**Примечание:** Если решение не ссылаются на пакет Microsoft.VSSDK.BuildTools NuGet, этот шаг можно пропустить.
 
-Для создания расширения в новый v3 VSIX формат (версии 3), решение будет необходимо построить с помощью новых средств VSSDK сборки. Это будет устанавливается вместе с Visual Studio RC 2017 г., но v2 расширения VSIX может хранение ссылки на более старую версию через NuGet. В этом случае необходимо вручную установить обновление пакета Microsoft.VSSDK.BuildTools NuGet для вашего решения. Во время выпуска версии-КАНДИДАТА этот пакет будет находиться в состоянии «Предварительный выпуск».
+Для создания расширения в новый v3 VSIX формат (версии 3), решение будет необходимо построить с помощью новых средств VSSDK сборки. Это будет устанавливается вместе с Visual Studio 2017 г., но v2 расширения VSIX может хранение ссылки на более старую версию через NuGet. В этом случае необходимо вручную установить обновление пакета Microsoft.VSSDK.BuildTools NuGet для вашего решения.
 
 Чтобы обновить ссылки на NuGet для Microsoft.VSSDK.BuildTools:
 
 * Щелкните правой кнопкой мыши на решении и выберите **управление пакетами NuGet для решения...**
 * Перейдите к **обновления** вкладки.
-* Установите флажок, чтобы **включить предварительный выпуск**.
 * Выберите Microsoft.VSSDK.BuildTools (последняя версия).
 * Нажмите клавишу **обновление**.
 
 ![Средства построения VSSDK](media/vssdk-build-tools.png)
-
->**Примечание:** на снимке экрана показан другой версии BuildTools. Выберите версию-КАНДИДАТ.
 
 ## <a name="make-changes-to-the-vsix-extension-manifest"></a>Внесите изменения в манифест VSIX расширения
 
@@ -80,7 +75,7 @@ ms.lasthandoff: 03/01/2017
 >**Примечание:** как минимум все расширения следует указать основной компонент редактора Visual Studio в качестве необходимого компонента.
 
 * Измените расширение файла манифеста (обычно называемый source.extension.vsixmanifest).
-* Обеспечить `InstallationTarget` включает 15,0.
+* Обеспечить `InstallationTarget` включает 15.0.
 * Добавление необходимых для установки компонентов (как показано в примере ниже).
   * Рекомендуется указывать только идентификаторы компонентов для установки необходимых компонентов.
   * В конце этого документа в разделе [инструкции по определению идентификаторов компонентов](#finding-component-ids).
@@ -161,7 +156,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\deven
 
 Попытка установить расширение:
 
-* В Visual Studio RC 2017 г.
+* В Visual Studio 2017 г.
 
 ![Установщик VSIX в Visual Studio 2017 г.](media/vsixinstaller-vs-2017.png)
 
@@ -170,7 +165,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\deven
   * Должны работать для Visual Studio 2012, Visual Studio 2013, Visual Studio 2015.
 * Необязательно: Проверьте, что проверка версии установщик VSIX соответствует выбору версий.
   * Включает предыдущие версии Visual Studio (если он установлен).
-  * Включает в себя Visual Studio RC 2017 г.
+  * Включает в себя Visual Studio 2017 г.
 
 Если недавно открыть Visual Studio, может появиться диалоговое окно следующим образом:
 
@@ -182,7 +177,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\deven
 
 ## <a name="check-when-missing-the-required-prerequisites"></a>Если отсутствуют необходимые компоненты
 
-* Предпринята попытка установить расширение на компьютере с Visual Studio 2017 г. версия-Кандидат, СОДЕРЖАЩИЕ не все компоненты, определенные в необходимых компонентов (см. выше).
+* Предпринята попытка установить расширение на компьютере с Visual Studio 2017 г., не СОДЕРЖАЩИЕ все компоненты, определенные в необходимых компонентов (см. выше).
 * Убедитесь, что установка идентифицирует отсутствующий компонент/s и они перечислены в качестве необходимого компонента в VSIXInstaller.
 * Примечание: Повышение потребуется, если все необходимые компоненты должны быть установлены с расширением.
 
@@ -196,7 +191,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\deven
 
 Тип расширения | Отображаемое имя |    Идентификатор
 --- | --- | ---
-Редактор | Основной редактор Visual Studio    | Microsoft.VisualStudio.CoreEditor
+Редактор | Основной редактор Visual Studio    | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# и Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
 WPF | Основные управляемого рабочего стола рабочей нагрузки | Microsoft.VisualStudio.Component.ManagedDesktop.Core
 Отладчик | Отладчик Just-In-Time | Microsoft.VisualStudio.Component.Debugger.JustInTime

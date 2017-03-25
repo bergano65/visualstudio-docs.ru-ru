@@ -33,9 +33,9 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 477f57bbca9c49e7d7d13155fc1f6e55ee4667a8
-ms.openlocfilehash: efc5a2722757229057a91f5e3a6c2ad3681f5a89
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
+ms.openlocfilehash: b3cd444e48893057a057c39c515e51ff8b509b34
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="visual-studio-sdk"></a>SDK для Visual Studio
@@ -58,10 +58,10 @@ Visual Studio SDK позволяет расширить возможности V
  Если вам не доводилось писать расширение до Visual Studio, вы должны найти дополнительные сведения об этих возможностях, а также в [начинает разрабатывать расширения Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).  
   
 ## <a name="installing-the-visual-studio-sdk"></a>Установка Visual Studio SDK  
- Начиная с Visual Studio 2015, не установить пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в установку Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ Пакет SDK для Visual Studio — это дополнительная функция в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="whats-new-in-the-visual-studio-2015-sdk"></a>Новые возможности пакета SDK для Visual Studio 2015 г.  
- Пакет SDK для Visual Studio содержит ряд новых возможностей, включая лампочки и новых элементов проекта, которые позволяют создавать команды меню, окна инструментов и расширения редактора, с помощью пакета VSIX. Дополнительные сведения см. в разделе [новые возможности Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
+## <a name="whats-new-in-the-visual-studio-2017-sdk"></a>Новые возможности Visual Studio SDK 2017 г.  
+ Пакет SDK для Visual Studio содержит некоторые новые возможности, такие как поддержка облегченного решение нагрузки и формат v3 VSIX, а также существенные изменения, которые могут потребовать обновления расширения. Дополнительные сведения см. в разделе [новые возможности Visual Studio SDK 2017 г.](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md).  
   
 ## <a name="visual-studio-user-experience-guidelines"></a>Руководство по работе пользователей Visual Studio  
  Полезные советы по разработке пользовательского интерфейса для расширения в [Visual Studio техники](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
@@ -92,7 +92,7 @@ Visual Studio SDK позволяет расширить возможности V
   
 ## <a name="see-also"></a>См. также  
  [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)   
- [Практическое руководство: перенести проекты расширения среды Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)   
+ [Практическое руководство: перенести проекты расширения среды Visual Studio 2017 г.](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)   
  [Часто задаваемые вопросы: Преобразование надстроек в расширения VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
  [Управление несколькими потоками в управляемом коде](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [Расширение меню и команд](../extensibility/extending-menus-and-commands.md)   
@@ -111,4 +111,4 @@ Visual Studio SDK позволяет расширить возможности V
  [В Visual Studio SDK](../extensibility/internals/inside-the-visual-studio-sdk.md)   
  [Поддержка Visual Studio SDK](../extensibility/support-for-the-visual-studio-sdk.md)   
  [Архив](../extensibility/archive.md)   
- [Справочник по Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md)
+ [Справочник по пакету SDK для Visual Studio](../extensibility/visual-studio-sdk-reference.md)
