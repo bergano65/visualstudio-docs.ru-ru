@@ -4,9 +4,9 @@ hide_bc: true
 title: "Документация по Visual Studio"
 description: "Узнайте, как с помощью Visual Studio 2017 разрабатывать приложения, службы и инструменты для платформ и устройств на используемом вами языке."
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 2a782993b8e2787c99c384c6df9c72316fe11521
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 371d314bfb81e47a13e7f00d4d4269313477ecf9
+ms.openlocfilehash: c00f51ce4662806d4c7112a3bd7a5e531e3ba521
+ms.lasthandoff: 03/23/2017
 
 ---
 <div id="main" class="v2">
@@ -570,8 +570,26 @@ ms.lasthandoff: 03/07/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Расширения</h3>
-                                                    <p>Включение собственных функций в среду разработки Visual Studio для оптимизации разработки.
-                                                    </p>
+                                                    <p>Включение собственных функций в среду разработки Visual Studio для оптимизации разработки.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/visualstudio/data-tools/accessing-data-in-visual-studio">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img data-scaleimage="./images/vs_features-9.svg" src="./images/vs_features-9.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Данные</h3>
+                                                    <p>Создавайте приложения, способные работать с данными практически в любых продуктах и службах СУБД, в любом формате и любом месте — на локальном компьютере, в локальной сети, а также в общедоступном, частном или гибридном облаке.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -767,4 +785,3 @@ ms.lasthandoff: 03/07/2017
         </ul>
     </div>
 </div>
-
