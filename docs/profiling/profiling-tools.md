@@ -1,5 +1,5 @@
 ---
-title: "Средства профилирования | Документация Майкрософт"
+title: "Средства профилирования в Visual Studio | Документация Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,9 +31,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 8f844c2d7d975476bc4c059d211a1d6cb0df64eb
-ms.openlocfilehash: 4c995fb6df6316ce7f84fae7075b81063b54ebf7
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: 0d129b4820944f5717c63243cb8550bc4fed3385
+ms.openlocfilehash: 380b65540d8f5c6ea6d8a8adf1f3c5575f5dd9dc
+ms.lasthandoff: 03/20/2017
 
 ---
 # <a name="profiling-tools"></a>Средства профилирования
@@ -103,15 +103,16 @@ ms.lasthandoff: 02/28/2017
 ## <a name="which-tool-should-i-use"></a>Какие средства следует использовать?  
  Ниже приведена таблица со списком различных средств, предлагаемых в Visual Studio, и различных типов проектов, в которых эти средства можно использовать.  
   
-|Средство производительности|Классические приложения Windows|Универсальные приложения Windows или приложения Магазина Windows|ASP.NET|  
+|Средство производительности|Классические приложения Windows|Универсальные приложения Windows или приложения Магазина Windows|ASP.NET/ASP.NET Core|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[Использование памяти](../profiling/memory-usage.md)|да|да|да|  
 |[Использование ЦП](../profiling/cpu-usage.md)|да|да|да|  
 |[Использование GPU](../debugger/gpu-usage.md)|да|да|нет|  
 |[Временная шкала приложения](../profiling/application-timeline.md)|да|да|нет|  
-|[PerfTips](../profiling/perftips.md)|да|да для XAML, нет для HTML|нет|  
-|[Обозреватель производительности](../profiling/performance-explorer.md)|да|нет|да|  
-|[IntelliTrace](../debugger/intellitrace.md)|Только .NET Enterprise|Только .NET Enterprise|Только .NET Enterprise|  
+|[PerfTips](../profiling/perftips.md)|да|да для XAML, нет для HTML|да|  
+|[Обозреватель производительности](../profiling/performance-explorer.md)|да|нет|да (нет для ASP.NET Core)|  
+|[IntelliTrace](../debugger/intellitrace.md)|Только .NET Enterprise|Только .NET Enterprise|Только .NET Enterprise|
+|[Использование сети](../profiling/network-usage.md)|нет|да|нет| 
 |[Скорость реагирования пользовательского интерфейса HTML](../profiling/html-ui-responsiveness.md)|нет|да для HTML, нет для XAML|нет|  
 |[Память JavaScript](../profiling/javascript-memory.md)|нет|да для HTML, нет для XAML|нет|  
   
