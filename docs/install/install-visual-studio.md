@@ -1,8 +1,8 @@
 ---
-title: "Установка версии-кандидата Visual Studio 2017 | Документы Майкрософт"
+title: "Установка Visual Studio 2017 | Документация Майкрософт"
 description: "Сведения о поэтапной установке среды Visual Studio."
 ms.custom: 
-ms.date: 11/18/2016
+ms.date: 03/07/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -12,9 +12,7 @@ ms.topic: get-started-article
 f1_keywords:
 - vs.about
 helpviewer_keywords:
-- install Visual Studio Preview
 - install Visual Studio
-- installing Visual Studio
 - dev15
 - set up Visual Studio
 - Visual Studio setup
@@ -39,31 +37,35 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5e1ab0284a11fb9ecf30694d22b8bb5dc7a52a6d
-ms.openlocfilehash: 997a1e0966c5e08314c616dba76842120ab50d63
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 8c4e45eadd81c54a372885ce89ccced1256d3b3d
+ms.openlocfilehash: 5552f67ae880e3b7ec832d6d035382e2abcca116
+ms.lasthandoff: 03/09/2017
 
 ---
-# <a name="install-visual-studio-2017-rc"></a>Установка версии-кандидата Visual Studio 2017
+# <a name="install-visual-studio-2017"></a>Установка Visual Studio 2017
 Предлагаем ознакомиться с новым способом установки Visual Studio. В последней версии мы упростили выбор и установку нужных компонентов, что позволяет уменьшить объем требуемых для Visual Studio ресурсов системы и ускорить установку.  
 
- Хотите ознакомиться с другими новыми возможностями версии-кандидата? Обратитесь к [заметкам о выпуске](https://www.visualstudio.com/news/releasenotes/vs15-relnotes). Более подробные сведения о том, как мы переработали процедуру установки, см. в записях блога [Более быстрый и эффективный установщик Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2016/04/01/faster-leaner-visual-studio-installer/) и [Разбор оптимизированной процедуры установки Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2016/04/25/anatomy-of-a-low-impact-visual-studio-install/).  
+ Вы хотите ознакомиться с другими новыми возможностями? Обратитесь к [заметкам о выпуске](https://www.visualstudio.com/news/releasenotes/vs15-relnotes). Более подробные сведения о том, как мы переработали процедуру установки, см. в записях блога [Более быстрый и эффективный установщик Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2016/04/01/faster-leaner-visual-studio-installer/) и [Разбор оптимизированной процедуры установки Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2016/04/25/anatomy-of-a-low-impact-visual-studio-install/).  
 
  Готовы к установке? Мы последовательно опишем каждое действие. Итак, начнем.  
 
 ## <a name="install-the-installer"></a>Установка установщика  
- После скачивания версии-кандидата Visual Studio 2017 вы получаете файл начальной загрузки, который, в свою очередь, устанавливает новый упрощенный установщик. В этом новом установщике есть все необходимое для настройки установки.  
+ После скачивания Visual Studio 2017 вы получаете файл начальной загрузки, который, в свою очередь, устанавливает новый облегченный установщик. В этом новом установщике есть все необходимое для настройки установки.  
 
 > [!IMPORTANT]
-> Если на вашем компьютере установлена предварительная версия Visual Studio 2017, вам будет предложено удалить ее перед установкой версии-кандидата Visual Studio 2017.
+> Если на вашем компьютере установлена предварительная версия Visual Studio 2017, вам будет предложено удалить ее перед установкой Visual Studio 2017.
 
-1.  [Скачайте версию-кандидат Visual Studio Enterprise 2017](https://www.visualstudio.com/vs/visual-studio-2017-rc/) и нажмите кнопку **Сохранить**.  Затем в папке **Загрузки** запустите файл `vs_Enterprise.exe`.  
+1.  **[Скачайте Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)** и нажмите кнопку **Сохранить**. Затем откройте **каталог загрузки** и запустите файл начального загрузчика, соответствующий выбранной версии:
 
-     Если появляется оповещение системы контроля учетных записей, нажмите кнопку **Да**.  
+  * **vs_enterprise.exe** для Visual Studio Enterprise;
+  * **vs_professional.exe** для Visual Studio Professional;
+  * **vs_community.exe** для Visual Studio Community.  <br><br>
 
-2.  Мы попросим вас принять [условия лицензии](https://www.visualstudio.com/support/legal/mt591984) корпорации Майкрософт и [заявление о конфиденциальности](https://www.visualstudio.com/dn948229) корпорации Майкрософт. Чтобы продолжить, нажмите кнопку **Установить**.  
+  Если появляется оповещение системы контроля учетных записей, нажмите кнопку **Да**.  
 
-  ![Условия лицензии и заявление о конфиденциальности](media/01-installingdev15prev4-licensetermsandprivacystatement.png "Условия лицензии и заявление о конфиденциальности корпорации Майкрософт")  
+2.  Мы попросим вас принять [условия лицензии](https://www.visualstudio.com/license-terms/) и [заявление о конфиденциальности](https://go.microsoft.com/fwlink/?LinkID=824704) корпорации Майкрософт. Чтобы продолжить, нажмите кнопку **Установить**.  
+
+   ![Условия лицензии и заявление о конфиденциальности](media/vs2017-privacy-and-license-terms.PNG "Условия лицензии и заявление о конфиденциальности корпорации Майкрософт")  
 
 3.  Появятся несколько экранов состояния, на которых показан ход установки. Когда установка установщика завершится, можно приступить к выбору требуемых наборов функций или рабочих нагрузок.
 
@@ -74,7 +76,7 @@ ms.lasthandoff: 02/22/2017
 
 1.  Найдите нужную рабочую нагрузку на экране **Установка Visual Studio**.  
 
-  ![Диалоговое окно установки версии-кандидата Visual Studio 2017](../ide/media/willow1.png "Установка Visual Studio 2017")
+  ![Диалоговое окно установки Visual Studio 2017](media/vs2017-workloads.PNG "Установка Visual Studio 2017")
 
      Например, выберите рабочую нагрузку "Разработка классических приложений .NET". В нее входит основной редактор кода по умолчанию, который предоставляет базовую поддержку редактирования кода для более чем 20 языков, возможность открывать и изменять код в любой папке без наличия проекта и интегрированное управление исходным кодом.  
 
@@ -88,25 +90,22 @@ ms.lasthandoff: 02/22/2017
 
 Если вы не хотите пользоваться удобной функцией рабочих нагрузок для настройки установленного экземпляра Visual Studio, выберите в установщике Visual Studio вариант **Отдельные компоненты**, выберите нужные компоненты и следуйте указаниям.
 
-  ![Visual Studio 2017 — установка отдельных компонентов](media/vs2017install-IndividualComponents.PNG "Установка отдельных компонентов Visual Studio")
+  ![Visual Studio 2017 — установка отдельных компонентов](media/vs2017-workloads.PNG "Установка отдельных компонентов Visual Studio")
 
 ## <a name="install-language-packs"></a>Установка языковых пакетов
 
-Чтобы установить версию-кандидат Visual Studio 2017 на нужном языке, выберите в установщике Visual Studio пункт **Языковые пакеты** и следуйте указаниям.
+Чтобы установить Visual Studio 2017 на нужном языке, выберите в установщике Visual Studio пункт **Языковые пакеты** и следуйте указаниям.
 
-  ![Visual Studio 2017 — установка языковых пакетов](media/vs2017install-LanguagePacks.PNG "Установка языковых пакетов Visual Studio")
+  ![Visual Studio 2017 — установка языковых пакетов](media/vs2017-languages.PNG "Установка языковых пакетов Visual Studio")
 
 ### <a name="change-the-installer-language"></a>Изменение языка установщика
 
-По умолчанию при первом запуске установщик пытается использовать язык операционной системы. Эта настройка сохраняется. Вы можете изменить ее, запустив установщик из командной строки. Например, можно принудительно запустить установщик на английском языке, выполнив команду `vs_installer.exe --locale en-US`. Этот язык сохранится при следующем запуске установщика. Установщик поддерживает следующие токены языков: zh-CN, zh-TW, cs-CZ, en-US, fr-FR, de-DE, it-IT, ja-JP, ko-KR, pl-PL, pt-BR, ru-RU, es-ES и tr-TR.
+По умолчанию при первом запуске установщик пытается использовать язык операционной системы. Эта настройка сохраняется. Вы можете изменить ее, запустив установщик из командной строки. Например, можно принудительно запустить установщик на английском языке, выполнив команду `vs_installer.exe --locale en-US`. Программа установки запомнит этот параметр и использует его при следующем запуске. Установщик поддерживает следующие токены языков: zh-CN, zh-TW, cs-CZ, en-US, fr-FR, de-DE, it-IT, ja-JP, ko-KR, pl-PL, pt-BR, ru-RU, es-ES и tr-TR.
 
-
-  > [!IMPORTANT]
-  > Хотя версию-кандидат Visual Studio 2017 в общем можно использовать в рабочей среде, рабочие нагрузки и компоненты, которые в пользовательском интерфейсе установки доступны в режиме предварительной версии, в рабочей среде не поддерживаются.
 
 ## <a name="see-also"></a>См. также  
-* [Изменение версии-кандидата Visual Studio 2017](modify-visual-studio.md)
-* [Удаление версии-кандидата Visual Studio 2017](uninstall-visual-studio.md)
+* [Изменение Visual Studio 2017](modify-visual-studio.md)
+* [Удаление Visual Studio 2017](uninstall-visual-studio.md)
 * [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
 * [Как сообщить о проблеме с Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
 
