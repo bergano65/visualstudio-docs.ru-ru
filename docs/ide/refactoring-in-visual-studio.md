@@ -1,4 +1,5 @@
 ---
+redirect_url: /visualstudio/ide/refactoring-code-generation-quick-actions
 title: "Рефакторинг в Visual Studio | Документы Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
