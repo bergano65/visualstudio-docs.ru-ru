@@ -28,28 +28,21 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: d4741ff741b89997bbfe4fea9b0f60bba84e63db
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 77e7ce26df70e41e2328442454fe78c7a663f1f3
+ms.openlocfilehash: de00ef86413571739446b61427c3a8e6c4680c06
+ms.lasthandoff: 03/08/2017
 
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript в Visual Studio
 JavaScript — полноправный язык в Visual Studio. При написании кода JavaScript в интегрированной среде разработки Visual Studio можно использовать большинство или все стандартные средства редактирования (фрагменты кода, IntelliSense и т. д.). Код JavaScript можно написать для многих типов приложений и служб.  
   
- См. справочную документацию по языку [JavaScript](http://msdn.microsoft.com/library/d1et7k7c\(v=vs.94\).aspx).  
+ См. справочную документацию по языку [JavaScript](https://docs.microsoft.com/scripting/javascript/javascript-language-reference).
   
  Определенные версии Visual Studio или специальные расширения Visual Studio могут потребоваться для разработки конкретных типов приложений и служб с помощью HTML и JavaScript. В следующем списке приводятся ссылки на дополнительные сведения.  
   
--   Для создания кроссплатформенных приложений с помощью Apache Cordova [доступны средства Visual Studio для Apache Cordova](http://go.microsoft.com/fwlink/p/?LinkId=397606).  
+-   Для создания кроссплатформенных приложений с помощью Apache Cordova [доступны средства Visual Studio для Apache Cordova](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/).  
   
--   Для создания приложений для платформ [Магазин Windows](http://dev.windows.com/develop) и [Windows Phone](http://dev.windows.com/develop) (а также универсальных приложений с поддержкой двух этих платформ) [доступны эти средства](http://dev.windows.com/en-us/develop/downloads).  
-  
--   Для создания облачных служб посетите [сайт Microsoft Azure](http://azure.microsoft.com/documentation/).  
-  
--   Для создания веб-сайтов и веб-приложений посетите [сайт ASP.NET](http://www.asp.net/get-started/websites).  
-  
-    > [!NOTE]
-    >  Можно создать пустой веб-сайт ASP.NET и использовать его для программирования кода HTML, CSS и JavaScript. Файл Webconfig, предоставляемый ASP.NET, дает возможность выполнять отладку в Visual Studio (кроме того, при запуске приложения можно использовать инструменты F12).  
+-   Ссылки на технологии JavaScript, которые можно использовать в Visual Studio, вы найдете на страницах описания [JavaScript](https://docs.microsoft.com/scripting/javascript/) и [технологий создания скриптов](https://docs.microsoft.com/scripting/).
   
  Редактор JavaScript в Visual Studio обеспечивает поддержку IntelliSense. См. дополнительные сведения об [IntelliSense для JavaScript](../ide/javascript-intellisense.md).  
   
@@ -69,5 +62,5 @@ JavaScript — полноправный язык в Visual Studio. При нап
 |Оператор Spread|[Оператор spread](http://msdn.microsoft.com/Library/10263a4c-bd27-4d87-9917-fb4b6bf373db) (`…`) расширяет доступные для итерации выражения в отдельные аргументы. Например, `a.b(…array)` примерно равен `a.b.apply(a, array)`.|  
 |Символы|Объекты [Symbol](http://msdn.microsoft.com/Library/2ad059f1-4b7f-4758-882a-c74ce1283ab0) позволяют добавлять свойства в существующие объекты без создания помех существующим свойствам объектов, непредусмотренной видимости и других несогласованных дополнений, которые могут быть реализованы другими частями кода.|  
 |Строки шаблона|[Строки шаблона](http://msdn.microsoft.com/Library/f2e525a5-b0fc-49c3-95a0-641788e5c12a) — это строковые литералы, позволяющие оценивать выражения и сцеплять их со строковым литералом.|  
-|Усовершенствования Юникода|Была усовершенствована поддержка Юникода. Так, новый формат escape-последовательности поддерживает астральные кодовые точки (кодовые точки с более&4; шестнадцатеричных цифр). См. дополнительные сведения о [специальных символах](http://msdn.microsoft.com/Library/3b38b1bd-1f0f-4748-b13e-55cab36fd126).|  
+|Усовершенствования Юникода|Была усовершенствована поддержка Юникода. Так, новый формат escape-последовательности поддерживает астральные кодовые точки (кодовые точки с более 4 шестнадцатеричных цифр). См. дополнительные сведения о [специальных символах](http://msdn.microsoft.com/Library/3b38b1bd-1f0f-4748-b13e-55cab36fd126).|  
 |Множество WeakSet|Множество [WeakSet](http://msdn.microsoft.com/Library/f97e6e7c-d678-4e32-978e-d949a7cafa3a) — это коллекция объектов, которая будет удалена как мусор при отсутствии доступных ссылок на нее.|

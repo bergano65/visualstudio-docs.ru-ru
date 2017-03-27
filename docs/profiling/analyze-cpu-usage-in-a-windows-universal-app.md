@@ -1,6 +1,6 @@
 ---
-title: "Анализ загрузки ЦП в универсальных приложениях для Windows | Документы Майкрософт"
-ms.custom: 
+title: "Анализ загрузки ЦП в универсальных приложениях Windows | Документация Майкрософт"
+ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
@@ -30,12 +30,12 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 3d3a1b062063a24f70f8f6cab90ad25d458d0146
-ms.openlocfilehash: a2f2c81345a5477df5e2d6f88bf95935330af1dc
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: c0fa199f2ccbdc7b4e60b4295645ccf83792d435
+ms.lasthandoff: 03/07/2017
 
 ---
-# <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Анализ загрузки ЦП в универсальных приложениях для Windows
+# <a name="analyze-cpu-usage-in-a-universal-windows-app-uwp"></a>Анализ загрузки ЦП в универсальных приложениях Windows (UWP)
 ![Применимо к Windows и Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
  Если вам нужно проанализировать проблемы с производительностью в своем приложении, следует сначала понять, как оно использует ЦП. Средство **Загрузка ЦП** показывает, в какой части кода затрачивается больше всего ресурсов ЦП. Чтобы сконцентрироваться на определенных сценариях, этот инструмент можно запустить вместе с инструментом [ Временная шкала приложения](../profiling/application-timeline.md) и/или [Расход энергии](../profiling/analyze-energy-use-in-store-apps.md) в рамках одного сеанса диагностики.  
@@ -45,7 +45,7 @@ ms.lasthandoff: 02/22/2017
   
  В этом пошаговом руководстве рассматривается сбор и анализ данных о загрузке ЦП для простого универсального XAML-приложения для Windows.  
   
-##  <a name="a-namebkmkcreatethecpuusedemoprojecta-create-the-cpuusedemo-project"></a><a name="BKMK_Create_the_CpuUseDemo_project"></a> Создание проекта CpuUseDemo  
+##  <a name="BKMK_Create_the_CpuUseDemo_project"></a> Создание проекта CpuUseDemo  
  **CpuUseDemo** — это приложение, созданное для демонстрации сбора и анализа данных о загрузке ЦП. Кнопки выдают число, вызывая метод, который выбирает максимальное значение из нескольких вызовов функции. Вызванная функция создает очень большое количество случайных значений, а затем возвращает последнее из них. Эти данные отображаются в текстовом поле.  
   
 1.  Создайте новый проект универсального приложения для Windows на C# с именем **CpuUseDemo**, используя шаблон **BlankApp**.  
@@ -58,7 +58,7 @@ ms.lasthandoff: 02/22/2017
   
 4.  Выполните сборку приложения и попробуйте поработать с ним. Это приложение является достаточно простым, чтобы продемонстрировать наиболее распространенные примеры анализа данных о загрузке ЦП.  
   
-##  <a name="a-namebkmkcollectcpuusagedataa-collect-cpu-usage-data"></a><a name="BKMK_Collect_CPU_usage_data"></a> Сбор данных о загрузке ЦП  
+##  <a name="BKMK_Collect_CPU_usage_data"></a> Сбор данных о загрузке ЦП  
  ![Запуск сборки выпуска приложения в симуляторе](../profiling/media/cpu_use_wt_setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
 1.  В Visual Studio задайте **Симулятор** в качестве цели развертывания и **Выпуск** в качестве конфигурации решения.  
@@ -83,14 +83,14 @@ ms.lasthandoff: 02/22/2017
   
  ![Отчет CpuUsage](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
   
-##  <a name="a-namebkmkanalyzethecpuusagereporta-analyze-the-cpu-usage-report"></a><a name="BKMK_Analyze_the_CPU_Usage_report"></a> Анализ отчета о загрузке ЦП  
+##  <a name="BKMK_Analyze_the_CPU_Usage_report"></a> Анализ отчета о загрузке ЦП  
   
-###  <a name="a-namebkmkcpuutilizationtimelinegrapha-cpu-utilization-timeline-graph"></a><a name="BKMK_CPU_utilization_timeline_graph"></a> График зависимости загрузки ЦП от времени  
+###  <a name="BKMK_CPU_utilization_timeline_graph"></a> График зависимости загрузки ЦП от времени  
  ![График временной шкалы CpuUtilization (%)](../profiling/media/cpu_use_wt_timelinegraph.png "CPU_USE_WT_TimelineGraph")  
   
  На графике использования ЦП отображается активность ЦП для приложения в виде процента от совокупного времени ЦП, объединяющего все ядра процессора на устройстве. Данные для этого отчета были собраны на компьютере с двумя ядрами. Два больших всплеска активности ЦП соответствуют двум нажатиям кнопок. `GetMaxNumberButton_Click` выполняется синхронно на одном ядре, поэтому высота графика при таком методе никогда не превышает 50 %. `GetMaxNumberAsycButton_Click` выполняется асинхронно на обоих ядрах, поэтому график показывает, что использование ЦП близко к общему объему ресурсов обоих ядер.  
   
-####  <a name="a-namebkmkselecttimelinesegmentstoviewdetailsa-select-timeline-segments-to-view-details"></a><a name="BKMK_Select_timeline_segments_to_view_details"></a> Выбор сегментов временной шкалы для просмотра подробных сведений  
+####  <a name="BKMK_Select_timeline_segments_to_view_details"></a> Выбор сегментов временной шкалы для просмотра подробных сведений  
  Используйте полосы выделения на временной шкале **Диагностический сеанс**, чтобы сконцентрироваться на данных GetMaxNumberButton_Click:  
   
  ![Выбранный отчет GetMaxNumberButton_Click](../profiling/media/cpu_use_wt_getmaxnumberreport.png "CPU_USE_WT_GetMaxNumberReport")  
@@ -103,10 +103,10 @@ ms.lasthandoff: 02/22/2017
   
  Этот метод выполняется примерно на одну секунду быстрее, чем `GetMaxNumberButton_Click`, однако значение записей в дереве вызовов не слишком очевидно.  
   
-###  <a name="a-namebkmkthecpuusagecalltreea-the-cpu-usage-call-tree"></a><a name="BKMK_The_CPU_Usage_call_tree"></a> Дерево вызовов средства "Загрузка ЦП"  
+###  <a name="BKMK_The_CPU_Usage_call_tree"></a> Дерево вызовов средства "Загрузка ЦП"  
  Чтобы понять сведения в дереве вызовов, повторно выберите сегмент `GetMaxNumberButton_Click` и просмотрите дерево вызовов.  
   
-####  <a name="a-namebkmkcalltreestructurea-call-tree-structure"></a><a name="BKMK_Call_tree_structure"></a> Структура дерева вызовов  
+####  <a name="BKMK_Call_tree_structure"></a> Структура дерева вызовов  
  ![Дерево вызовов GetMaxNumberButton_Click](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
 |||  
@@ -116,7 +116,7 @@ ms.lasthandoff: 02/22/2017
 |![Шаг 3](../profiling/media/procguid_3.png "ProcGuid_3")|Дочерними элементами узла второго уровня являются методы пользовательского кода и асинхронные подпрограммы, которые вызываются или создаются кодом системы и инфраструктуры на втором уровне.|  
 |![Шаг 4](../profiling/media/procguid_4.png "ProcGuid_4")|Дочерние узлы метода содержат данные только для вызова родительского метода. Если параметр **Показать внешний код** отключен, методы приложения также могут содержать узел **[Внешний код]** .|  
   
-####  <a name="a-namebkmkexternalcodea-external-code"></a><a name="BKMK_External_Code"></a> Внешний код  
+####  <a name="BKMK_External_Code"></a> Внешний код  
  Внешний код состоит из функций в компонентах системы и платформы, которые исполняются вашим кодом. Внешний код включает функции, которые запускают и останавливают приложение, отрисовывают пользовательский интерфейс, управляют потоками и предоставляют приложению другие низкоуровневые службы. В большинстве случаев внешний код вас интересовать не будет, поэтому дерево вызовов средства "Использование ЦП" собирает внешние функции пользовательского метода в один узел **[Внешний код]** .  
   
  Если вы захотите посмотреть пути к вызовам внешнего кода, выберите **Показать внешний код** в списке **Представление фильтра** и выберите **Применить**.  
@@ -131,7 +131,7 @@ ms.lasthandoff: 02/22/2017
   
  ![Поиск вложенного внешнего кода](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
   
-###  <a name="a-namebkmkcalltreedatacolumnsa-call-tree-data-columns"></a><a name="BKMK_Call_tree_data_columns"></a> Столбцы данных дерева вызовов  
+###  <a name="BKMK_Call_tree_data_columns"></a> Столбцы данных дерева вызовов  
   
 |||  
 |-|-|  
@@ -141,7 +141,7 @@ ms.lasthandoff: 02/22/2017
 |**Собственное время ЦП (мс)**|Время в миллисекундах, затраченное на вызовы функции в выбранном временном интервале, и функций, которые были вызваны этой функцией.|  
 |**Модуль**|Имя модуля, содержащего функцию, или количество модулей, содержащих функции в узле [Внешний код].|  
   
-###  <a name="a-namebkmkasynchronousfunctionsinthecpuusagecalltreea-asynchronous-functions-in-the-cpu-usage-call-tree"></a><a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Асинхронные функции в дереве вызовов средства "Загрузка ЦП"  
+###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Асинхронные функции в дереве вызовов средства "Загрузка ЦП"  
  Если компилятор обнаруживает асинхронный метод, он создает скрытый класс для контроля выполнения этого метода. По существу, класс представляет собой конечный автомат, содержащий список функций, созданных компилятором, которые асинхронно вызывают операции исходного метода. Также класс включает обратные вызовы, планировщик и итераторы, необходимые для его правильной работы. При вызове исходного метода родительским методом среда выполнения удаляет метод из контекста выполнения родительского метода и выполняет методы скрытого класса в контексте кода системы и инфраструктуры, который управляет выполнением приложения. Асинхронные методы часто, но не всегда выполняются в отдельном потоке (или в нескольких потоках). Этот код отображается в дереве вызовов средства "Использование ЦП" в виде дочерних элементов узла **[Внешний код]** сразу под верхним узлом дерева.  
   
  Чтобы увидеть его в нашем примере, снова выберите период `GetMaxNumberAsyncButton_Click` на временной шкале.  
@@ -158,7 +158,7 @@ ms.lasthandoff: 02/22/2017
   
 -   `MainPage::<GetNumberAsync>b__b` показывает время ЦП, затраченное на выполнение задач, которые вызывают `GetNumber`.  
   
-##  <a name="a-namebkmknextstepsa-next-steps"></a><a name="BKMK_Next_steps"></a> Дальнейшие действия  
+##  <a name="BKMK_Next_steps"></a> Дальнейшие действия  
  Приложение ДемонстрацияИспользованияЦП нельзя назвать шедевром, но вы можете расширить его возможности, экспериментируя с асинхронными операциями и другими инструментами в разделе "Производительность и диагностика".  
   
 -   Обратите внимание на то, что `MainPage::<GetNumberAsync>b__b` проводит больше времени в узле [Внешний код], чем затрачивает на выполнение метода GetNumber. Основная часть этого времени является затратами на выполнение асинхронных операций. Попробуйте увеличить число задач (с помощью константы `NUM_TASKS` в MainPage.xaml.cs) и уменьшить число итераций в `GetNumber` (измените значение `MIN_ITERATIONS`). Запустите сценарий сбора и сравните активность ЦП `MainPage::<GetNumberAsync>b__b` с показаниями исходного диагностического сеанса инструмента "Использование ЦП". Попробуйте сократить число задач и увеличить количество итераций.  
@@ -167,7 +167,7 @@ ms.lasthandoff: 02/22/2017
   
      Создайте новый сеанс в разделе "Производительность и диагностика" и добавьте как инструмент "Скорость реагирования ИП XAML", так и инструмент "Использование ЦП". Запустите сценарий сбора. Если вы дочитали до этого места, скорее всего, вы не нашли в отчете ничего нового, однако графики **Использование потока пользовательского интерфейса** для двух методов имеют весьма характерные различия. В сложных приложениях, используемых в реальных условиях, такое сочетание инструментов может оказаться очень полезным.  
   
-##  <a name="a-namebkmkmainpagexamla-mainpagexaml"></a><a name="BKMK_MainPage_xaml"></a> MainPage.xaml  
+##  <a name="BKMK_MainPage_xaml"></a> MainPage.xaml  
   
 ```xaml  
 <Page  
@@ -202,7 +202,7 @@ ms.lasthandoff: 02/22/2017
   
 ```  
   
-##  <a name="a-namebkmkmainpagexamlcsa-mainpagexamlcs"></a><a name="BKMK_MainPage_xaml_cs"></a> MainPage.xaml.cs  
+##  <a name="BKMK_MainPage_xaml_cs"></a> MainPage.xaml.cs  
   
 ```CSharp  
 using System;  

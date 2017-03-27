@@ -1,75 +1,96 @@
 ---
-title: "Элемент ItemMetadata (MSBuild) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "<ItemMetadata> - элемент [MSBuild]"
-  - "ItemMetadata - элемент [MSBuild]"
+title: "Элемент ItemMetadata (MSBuild) | Документация Майкрософт"
+ms.custom: 
+ms.date: 03/13/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- ItemMetadata Element [MSBuild]
+- <ItemMetadata> Element [MSBuild]
 ms.assetid: e3db5122-202d-43a9-b2f4-3e0ec4ed3d08
 caps.latest.revision: 17
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 17
----
-# Элемент ItemMetadata (MSBuild)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 0e5a449ef396e7b9fd23a2c018bdc7f8791b7b38
+ms.openlocfilehash: 3c92bc200ac47bdd5b1b0f6f707cd2cb9f9aada5
+ms.lasthandoff: 03/13/2017
 
-Содержит определяемый пользователем ключ метаданных элемента, содержащий значение метаданных элемента.  Элемент может иметь любое число пар ключ\-значение метаданных.  
-  
-## Синтаксис  
-  
+---
+# <a name="itemmetadata-element-msbuild"></a>Элемент ItemMetadata (MSBuild)
+Содержит определяемый пользователем ключ метаданных элемента, содержащий значение метаданных элемента. Элемент может иметь любое число пар метаданных "ключ — значение".  
+
+ \<Project>  
+ \<ItemGroup>  
+ \<Item>  
+
+## <a name="syntax"></a>Синтаксис  
+
 ```  
-<ItemMetadataName> Item Metadata value </ItemMetadataName>  
+<ItemMetadataName> Item Metadata value</ItemMetadataName>  
 ```  
-  
-## Атрибуты и элементы  
- В следующих разделах описаны атрибуты, дочерние элементы и родительские элементы.  
-  
-### Атрибуты  
-  
+
+## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
+
+### <a name="attributes"></a>Атрибуты  
+
 |Атрибут|Описание|  
-|-------------|--------------|  
-|`Condition`|Необязательный атрибут.<br /><br /> Проверяемое условие.  Дополнительные сведения см. в разделе [Conditions](../msbuild/msbuild-conditions.md).|  
-  
-### Дочерние элементы  
+|---------------|-----------------|  
+|`Condition`|Необязательный атрибут.<br /><br /> Проверяемое условие. Дополнительные сведения см. в разделе [Условия](../msbuild/msbuild-conditions.md).|  
+
+### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
-  
-### Родительские элементы  
-  
+
+### <a name="parent-elements"></a>Родительские элементы  
+
 |Элемент|Описание|  
-|-------------|--------------|  
-|[Элемент](../msbuild/item-element-msbuild.md)|Определяемый пользователем элемент, задающий входные данные для процесса построения.|  
-  
-## Текстовое значение  
+|-------------|-----------------|  
+|[Элемент](../msbuild/item-element-msbuild.md)|Определяемый пользователем элемент, задающий входные данные для процесса сборки.|  
+
+## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является необязательным.  
-  
- Этот текст задает значение метаданных элемента, которые могут иметь вид текста или XML.  
-  
-## Заметки  
-  
-## Пример  
- В следующем примере кода показано, как добавить метаданные `Culture` со значением `fr` к элементу `CSFile`.  
-  
-```  
+
+ Этот текст задает для элемента значение метаданных, которое может быть текстом или XML-документом.  
+
+## <a name="remarks"></a>Примечания  
+
+## <a name="example"></a>Пример  
+ Следующий пример кода демонстрирует добавление метаданных `Culture` со значением `fr` к элементу `CSFile`.  
+
+```xml  
 <ItemGroup>  
     <CSFile Include="main.cs" >  
         <Culture>fr</Culture>  
     </CSFile>  
 </ItemGroup>  
 ```  
-  
-## См. также  
- [Справочные сведения о схеме файлов проектов](../msbuild/msbuild-project-file-schema-reference.md)   
+
+## <a name="see-also"></a>См. также  
+ [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)   
  [Элементы](../msbuild/msbuild-items.md)
+

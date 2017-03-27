@@ -1,6 +1,6 @@
 ---
-title: "Использование памяти | Документация Майкрософт"
-ms.custom: 
+title: "Анализ использования памяти в Visual Studio | Документация Майкрософт"
+ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
@@ -29,12 +29,12 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 8a3c6e60d0ea85d93281764ec3a3435538b9baa0
-ms.openlocfilehash: b81ce391ad842085f95ff0a4a6e906036406230a
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 6f77b935309f5b0877fdeb9794a29fed3f0df9c0
+ms.lasthandoff: 03/07/2017
 
 ---
-# <a name="memory-usage"></a>Использование памяти
+# <a name="analyze-memory-usage"></a>Анализ использования памяти
 С помощью встроенного в отладчик средства диагностики **Использование памяти** вы сможете находить утечки памяти и выявлять неэффективное использование памяти. С помощью средства "Использование памяти" можно сделать один или несколько *снимков* управляемой и собственной памяти в куче. Вы можете делать снимки приложений .NET, приложений на основе машинного кода, а также смешанных программ (на основе .NET и машинного кода).  
   
 -   Можно проанализировать один мгновенный снимок, чтобы понять относительное влияние типов объектов на использование памяти и найти код в приложении, который использует память неэффективно.  
@@ -182,6 +182,6 @@ ms.lasthandoff: 02/28/2017
   
  [Блог: применение средства "Использование памяти" при отладке в Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
   
- [Блог о Visual C++: диагностика внутренней памяти в предварительной версии Visual Studio&2015;](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)  
+ [Блог о Visual C++: диагностика внутренней памяти в предварительной версии Visual Studio 2015](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)  
   
  [Блог о Visual C++: средства диагностики внутренней памяти для CTP-версии Visual Studio 2015](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx)

@@ -1,6 +1,6 @@
 ---
-title: "Использование сети | Документы Майкрософт"
-ms.custom: 
+title: "Анализ использования сети для приложений UWP в Visual Studio | Документация Майкрософт"
+ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
@@ -29,12 +29,12 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: a4eb45e8e0548ead5d99c441abcfa7baf3ffde4f
-ms.openlocfilehash: 1e345367473f72c0b83c3bc7e4ede393c1bc56ec
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 60d05761993a4bd7547d83274e103de1b5c30b34
+ms.lasthandoff: 03/07/2017
 
 ---
-# <a name="network-usage"></a>Использование сети
+# <a name="analyze-network-usage-in-uwp-apps"></a>Анализ использования сети для приложений UWP
 Средство диагностики **Сеть** в Visual Studio собирает данные о сетевых операциях, выполняемых с помощью [Windows.Web.Http API](https://msdn.microsoft.com/library/windows/apps/windows.web.http.aspx). Анализ данных может помочь при устранении проблем, например, при доступе и проверке подлинности, при неправильном использовании кэша, при низкой производительности процесса отображения и загрузки.  
   
  Средство «Сеть» поддерживает только приложения универсальной платформы для Windows. Другие платформы в настоящее время не поддерживаются.  

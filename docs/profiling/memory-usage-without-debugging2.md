@@ -1,6 +1,6 @@
 ---
-title: "Использование памяти без отладки&2; | Документы Майкрософт"
-ms.custom: 
+title: "Анализ использования памяти без отладчика VS | Документация Майкрософт"
+ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
@@ -34,12 +34,12 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: bdfe341252a7c4340a8c0a624d4394124c3efada
-ms.openlocfilehash: d0d021c01cc97a97aa75eda58a17ccd1c2089520
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 9ff0dfb7330f70bb66597127347c8375f2c4c9ea
+ms.lasthandoff: 03/07/2017
 
 ---
-# <a name="memory-usage-without-debugging"></a>Использование памяти без отладки
+# <a name="memory-usage-without-the-debugger"></a>Использование памяти без отладчика
 Средство **Использование памяти** без отладки можно использовать для выполнения перечисленных далее задач.  
   
 -   Мониторинг использования памяти приложением прямо в Visual Studio во время разработки сценария.  
@@ -50,7 +50,7 @@ ms.lasthandoff: 02/22/2017
   
  В этом разделе описывается применение инструмента "Использование памяти" для анализа универсального приложения Windows на XAML. Если вы хотите проанализировать использование памяти в универсальных приложениях Windows на базе JavaScript и HTML, см. статью [Analyze memory usage (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx) (Анализ использования памяти [JavaScript]).  
   
-##  <a name="a-namebkmkstartamemoryusagediagnosticsessiona-start-a-memory-usage-diagnostic-session"></a><a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Запуск диагностического сеанса по использованию памяти  
+##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Запуск диагностического сеанса по использованию памяти  
   
 1.  Откройте универсальный проект Windows на C# в Visual Studio.  
   
@@ -60,7 +60,7 @@ ms.lasthandoff: 02/22/2017
   
      ![Запуск сеанса диагностики использования памяти](../profiling/media/memuse_start_diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
   
-##  <a name="a-namebkmkmonitormemoryusea-monitor-memory-use"></a><a name="BKMK_Monitor_memory_use"></a> Мониторинг использования памяти  
+##  <a name="BKMK_Monitor_memory_use"></a> Мониторинг использования памяти  
  Хотя вы можете применять инструмент **Использование памяти**, чтобы создавать подробные отчеты для поиска и устранения проблем, этот же инструмент можно использовать для изучения воздействия разрабатываемого сценария на память в режиме реального времени.  
   
  При запуске сеанса диагностики запускается ваше приложение, а в окне **Средства диагностики** отображается график использования памяти приложением.  
@@ -69,22 +69,22 @@ ms.lasthandoff: 02/22/2017
   
  График временной шкалы показывает колебания объема памяти, используемого выполняемым приложением. Пики на графике обычно указывают на то, что некоторый код собирает или создает данные, а после обработки удаляет их. Крупные пики обозначают области, которые вы, вероятно, сможете оптимизировать. Особое внимание следует уделять использованию памяти без ее возвращения, так как это может указывать на неэффективное использование памяти и даже на ее утечку.  
   
-###  <a name="a-namebkmkcloseamonitoringsessiona-close-a-monitoring-session"></a><a name="BKMK_Close_a_monitoring_session"></a> Закрытие сеанса мониторинга  
+###  <a name="BKMK_Close_a_monitoring_session"></a> Закрытие сеанса мониторинга  
  ![Остановка сбора](../profiling/media/memuse__stopcollection.png "MEMUSE__StopCollection")  
   
  Чтобы остановить сеанс мониторинга без создания отчета, просто закройте окно диагностики. Чтобы создать отчет по полученным снимкам памяти, нажмите кнопку **Остановить**.  
   
-##  <a name="a-namebkmktakesnapshotstoanalyzethememorystateofyourappa-take-snapshots-of-the-memory-state-of-your-app"></a><a name="BKMK_Take_snapshots_to_analyze_the_memory_state_of_your_app"></a> Получение моментальных снимков состояния памяти приложения  
+##  <a name="BKMK_Take_snapshots_to_analyze_the_memory_state_of_your_app"></a> Получение моментальных снимков состояния памяти приложения  
  Если вы обнаружили проблему с памятью и хотите разобраться с ней подробнее, можно создать моментальные снимки во время сеанса диагностики, зафиксировав состояние объектов в памяти на определенный момент времени. Поскольку приложение использует большое количество разных типов объектов, вам может потребоваться сосредоточить анализ на одном сценарии. Кроме того, рекомендуется получить базовый снимок приложения до возникновения проблем с памятью, другой снимок — при первом возникновении проблемы, а также еще один или несколько снимков, если вы в состоянии повторить этот сценарий.  
   
  Для сбора моментальных снимков запустите новый сеанс диагностики. Когда вы захотите зафиксировать данные о памяти, выберите **Сделать снимок**. Для создания отчета выберите **Остановить**.  
   
-##  <a name="a-namebkmkmemoryusageoverviewpagea-memory-usage-overview-page"></a><a name="BKMK_Memory_Usage_overview_page"></a> Страница обзора инструмента "Использование памяти"  
+##  <a name="BKMK_Memory_Usage_overview_page"></a> Страница обзора инструмента "Использование памяти"  
  После остановки сбора данных инструмент "Использование памяти" останавливает приложение и отображает обзорный отчет.  
   
  ![Страница обзора использования памяти](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")  
   
-###  <a name="a-namebkmkmemoryusagesnapshotviewsa-memory-usage-snapshot-views"></a><a name="BKMK_Memory_Usage_snapshot_views"></a> Представления снимков инструмента "Использование памяти"  
+###  <a name="BKMK_Memory_Usage_snapshot_views"></a> Представления снимков инструмента "Использование памяти"  
  Представления снимков позволяют открывать подробные отчеты в новых окнах Visual Studio. Существует два вида представлений снимков:  
   
 -   [Подробный отчет о снимках](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports) отображает типы и экземпляры в одном моментальном снимке.  
@@ -102,42 +102,42 @@ ms.lasthandoff: 02/22/2017
 |![Шаг 3](../profiling/media/procguid_3.png "ProcGuid_3")|Текст этой ссылки указывает разницу между общим размером объектов в памяти, зафиксированным на момент получения данного снимка, и общим размером из предыдущего снимка.<br /><br /> В тексте этой ссылки указано положительно число, когда размер памяти этого снимка больше размера памяти предыдущего снимка, если же первый размер меньше второго, отображается отрицательное число. Текст ссылки **Baseline** (Базовый) указывает на то, что данный снимок является первым в сеансе диагностики; текст **No Difference** (Без различий) указывает на равенство значений.<br /><br /> Выберите данную ссылку, чтобы отобразить разностный отчет о снимках с сортировкой по разности между общими размерами экземпляров типов.|  
 |![Шаг 4](../profiling/media/procguid_4.png "ProcGuid_4")|Текст этой ссылки указывает разницу между общим числом объектов в памяти для данного снимка и числом объектов из предыдущего снимка.<br /><br /> Выберите данную ссылку, чтобы отобразить разностный отчет о снимках (diff) с сортировкой по разности между общими количествами экземпляров типов.|  
   
-##  <a name="a-namebkmksnapshotreportsa-snapshot-reports"></a><a name="BKMK_Snapshot_reports"></a> Отчеты по снимкам  
+##  <a name="BKMK_Snapshot_reports"></a> Отчеты по снимкам  
  ![Отчет о снимке "Использование памяти"](../profiling/media/memuse_snapshotreport_all.png "MEMUSE_SnapshotReport_All")  
   
-###  <a name="a-namebkmksnapshotreporttreesa-snapshot-report-trees"></a><a name="BKMK_Snapshot_report_trees"></a> Деревья отчетов по снимкам  
+###  <a name="BKMK_Snapshot_report_trees"></a> Деревья отчетов по снимкам  
   
-####  <a name="a-namebkmkmanagedheapa-managed-heap"></a><a name="BKMK_Managed_Heap"></a> Управляемая куча  
+####  <a name="BKMK_Managed_Heap"></a> Управляемая куча  
  Деревья ["Управляемая куча" (сведения о снимке)](../profiling/memory-usage-without-debugging2.md#BKMK_Managed_Heap_tree__Snapshot_details_) и ["Управляемая куча" (разница между снимками)](../profiling/memory-usage-without-debugging2.md#BKMK_Managed_Heap_tree__Snapshot_diff_) показывают типы и экземпляры в отчете. При выборе типа или экземпляра отображаются деревья **Пути к корню** и **Объекты, на которые указывает ссылка** для выбранного элемента.  
   
-####  <a name="a-namebkmkpathstoroota-paths-to-root"></a><a name="BKMK_Paths_to_Root"></a> Пути к корню  
+####  <a name="BKMK_Paths_to_Root"></a> Пути к корню  
  [Дерево "Пути к корню" (сведения о снимке)](../profiling/memory-usage-without-debugging2.md#BKMK_Paths_to_Root_tree__Snapshot_details_) и [Дерево "Пути к корню" (разница между снимками)](../profiling/memory-usage-without-debugging2.md#BKMK_Paths_to_Root_tree__Snapshot_diff_) показывают цепочку объектов, ссылающихся на тип или экземпляр. Сборщик мусора .NET Framework очищает память для объекта только после освобождения всех ссылок на него.  
   
-####  <a name="a-namebkmkreferencedobjectsa-referenced-objects"></a><a name="BKMK_Referenced_Objects"></a> Объекты, на которые указывает ссылка  
+####  <a name="BKMK_Referenced_Objects"></a> Объекты, на которые указывает ссылка  
  [Дерево "Объекты, на которые указывает ссылка" (сведения о снимке)](../profiling/memory-usage-without-debugging2.md#BKMK_Referenced_Objects_tree__Snapshot_details_) и [Дерево "Объекты, на которые указывает ссылка" (разница между снимками)](../profiling/memory-usage-without-debugging2.md#BKMK_Referenced_Objects_tree__Snapshot_diff_) показывают объекты, на которые ссылается выбранный тип или экземпляр.  
   
-###  <a name="a-namebkmkobjecttypeandinstancefieldsa-object-type-and-instance-fields"></a><a name="BKMK_Object_Type_and_Instance_fields"></a> Поля "Тип объекта" и "Экземпляр"  
+###  <a name="BKMK_Object_Type_and_Instance_fields"></a> Поля "Тип объекта" и "Экземпляр"  
  Когда запись **Тип объекта** имеет вложенные записи, вы можете отобразить их, выбрав значок со стрелкой. Если текст **Тип объекта** выделен голубым цветом, его можно выбрать для перехода к соответствующему объекту в файле исходного кода. Исходный файл открывается в отдельном окне.  
   
  В качестве имен экземпляров используются уникальные идентификаторы, создаваемые инструментом "Использование памяти".  
   
  Если вы нашли тип, которые не можете быстро идентифицировать, или не знаете, как он связан с вашим кодом, не стоит беспокоиться. Вероятно, это объект из .NET Framework, операционной системы или компилятора, отображаемый инструментом "Использование памяти" в связи с тем, что он входит в состав цепочек владения ваших объектов.  
   
-###  <a name="a-namebkmkreporttreefiltersa-report-tree-filters"></a><a name="BKMK_Report_tree_filters_"></a> Фильтры деревьев отчетов  
+###  <a name="BKMK_Report_tree_filters_"></a> Фильтры деревьев отчетов  
  Основная часть приложений содержит неожиданно большое число типов, большинство из которых не представляют интереса для разработчика приложений. Инструмент **Использование памяти** определяет два фильтра, которые вы можете использовать для скрытия большинства таких типов в деревьях **Управляемая куча** и **Пути к корню**. Можно также осуществлять фильтрацию дерева по имени типа.  
   
  ![Параметры сортировки и фильтрации](../profiling/media/memuse_sortandfilter.png "MEMUSE_SortAndFilter")  
   
-####  <a name="a-namebkmkfiltera-filter"></a><a name="BKMK_Filter"></a> Фильтр  
+####  <a name="BKMK_Filter"></a> Фильтр  
  Введите строку в поле **Фильтр**, чтобы отобразить только те типы из дерева, которые содержат указанный текст. Этот фильтр не учитывает регистр и распознает введенную строку в любой части имени типа.  
   
-####  <a name="a-namebkmkcollapsesmallobjectsa-collapse-small-objects"></a><a name="BKMK_Collapse_Small_Objects"></a> Свернуть маленькие объекты  
+####  <a name="BKMK_Collapse_Small_Objects"></a> Свернуть маленькие объекты  
  При применении данного фильтра типы, у которых значение **Размер (байт)** меньше 0,5 процента от общего размера памяти снимка, в списке **Управляемая куча** не отображаются.  
   
-####  <a name="a-namebkmkjustmycodea-just-my-code"></a><a name="BKMK_Just_My_Code"></a> Только мой код  
+####  <a name="BKMK_Just_My_Code"></a> Только мой код  
  Фильтр **Только мой код** скрывает большинство экземпляров, созданных внешним кодом. Внешние типы принадлежат операционной системе или компонентам инфраструктуры либо создаются компилятором.  
   
-##  <a name="a-namebkmksnapshotdetailsreportsa-snapshot-details-reports"></a><a name="BKMK_Snapshot_details_reports"></a> Подробные отчеты о снимках  
+##  <a name="BKMK_Snapshot_details_reports"></a> Подробные отчеты о снимках  
  Подробный отчет о снимках позволяет вам сосредоточиться на одном снимке из сеанса диагностики. Чтобы открыть подробный отчет, выберите одну из ссылок в представлении снимков, как показано на следующем изображении. Обе ссылки открывают один и тот же отчет, единственное различие заключается в начальном порядке сортировки дерева **Управляемая куча** в этом отчете. В обоих случаях вы можете изменить порядок сортировки после открытия отчета.  
   
  ![Ссылки на отчет о снимке в представлении снимка](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
@@ -146,7 +146,7 @@ ms.lasthandoff: 02/22/2017
   
 -   Ссылка **Объектов** сортирует отчет по столбцу **Количество**.  
   
-###  <a name="a-namebkmkmanagedheaptreesnapshotdetailsa-managed-heap-tree-snapshot-details"></a><a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Дерево "Управляемая куча" (сведения о снимке)  
+###  <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Дерево "Управляемая куча" (сведения о снимке)  
  Дерево **Управляемая куча** перечисляет типы объектов, которые хранятся в памяти. Вы можете развернуть имя типа, чтобы просмотреть десять самых крупных экземпляров этого типа, отсортированных по размеру. При выборе типа или экземпляра отображаются деревья **Пути к корню** и **Объекты, на которые указывает ссылка** для выбранного элемента.  
   
  ![Дерево "Управляемая куча"](../profiling/media/memuse__snapshotdetails_managedheaptree.png "MEMUSE__SnapshotDetails_ManagedHeapTree")  
@@ -158,14 +158,14 @@ ms.lasthandoff: 02/22/2017
 |**Размер (байт)**|Для типа — это размер всех экземпляров типа в снимке памяти без учета размера объектов, содержащихся в этих экземплярах.<br /><br /> Для экземпляра, типа — это размер объекта без учета размера объектов, содержащихся в экземпляре. экземплярах.|  
 |**Инклюзивный размер (байт)**|Размер экземпляров типа или размер отдельного экземпляра, включая размер содержащихся внутри объектов.|  
   
-###  <a name="a-namebkmkpathstoroottreesnapshotdetailsa-paths-to-root-tree-snapshot-details"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Дерево "Пути к корню" (сведения о снимке)  
+###  <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Дерево "Пути к корню" (сведения о снимке)  
  Дерево **Пути к корню** показывает цепочку объектов, ссылающихся на тип или экземпляр. Сборщик мусора .NET Framework очищает память для объекта только после освобождения всех ссылок на него.  
   
  ![Дерево "Пути к корню" для типов](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "MEMUSE_SnapshotDetails_Type_PathsToRootTree")  
   
  При просмотре типа в дереве **Пути к корню** число объектов тех типов, которые содержат ссылки на этот тип, отображается в столбце **Количество ссылок**. Этот столбец не отображается, когда вы анализируете экземпляр.  
   
-###  <a name="a-namebkmkreferencedobjectstreesnapshotdetailsa-referenced-objects-tree-snapshot-details"></a><a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Дерево "Объекты, на которые указывает ссылка" (сведения о снимке)  
+###  <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Дерево "Объекты, на которые указывает ссылка" (сведения о снимке)  
  Дерево **Объекты, на которые указывает ссылка** показывает объекты, на которые ссылается выбранный тип или экземпляр.  
   
  ![Дерево "Объекты со ссылками" для экземпляров](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
@@ -176,7 +176,7 @@ ms.lasthandoff: 02/22/2017
 |**Размер (байт)**|Для типа — это размер всех экземпляров типа без учета размера объектов, содержащихся в этом типе.<br /><br /> Для экземпляра — это размер объекта без учета размера объектов, содержащихся в объекте.|  
 |**Инклюзивный размер (байт)**|Размер экземпляров типа или размер экземпляра, включая размер содержащихся внутри объектов.|  
   
-##  <a name="a-namebkmksnapshotdifferencediffreportsa-snapshot-difference-diff-reports"></a><a name="BKMK_Snapshot_difference__diff__reports"></a> Разностные отчеты по снимкам (diff)  
+##  <a name="BKMK_Snapshot_difference__diff__reports"></a> Разностные отчеты по снимкам (diff)  
  Разностный отчет по снимкам (diff) показывает изменения между основным снимком и снимком, полученным непосредственно перед ним. Чтобы открыть разностный отчет (diff), выберите одну из ссылок в представлении снимков, как показано на следующем изображении. Обе ссылки открывают один и тот же отчет, единственное различие заключается в начальном порядке сортировки дерева **Управляемая куча** в этом отчете. Вы можете изменить порядок сортировки после открытия отчета.  
   
  ![Ссылки на отчет о различиях в представлении снимка](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  
@@ -185,7 +185,7 @@ ms.lasthandoff: 02/22/2017
   
 -   Ссылка **Объектов** сортирует отчет по столбцу **Количество**.  
   
-###  <a name="a-namebkmkmanagedheaptreesnapshotdiffa-managed-heap-tree-snapshot-diff"></a><a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> Дерево "Управляемая куча" (разница между снимками)  
+###  <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> Дерево "Управляемая куча" (разница между снимками)  
  Дерево **Управляемая куча** перечисляет типы объектов, которые хранятся в памяти. Вы можете развернуть имя типа, чтобы просмотреть десять самых крупных экземпляров этого типа, отсортированных по размеру. При выборе типа или экземпляра отображаются деревья **Пути к корню** и **Объекты, на которые указывает ссылка** для выбранного элемента.  
   
  ![Дерево "Управляемая куча" для типа в отчете о различиях](../profiling/media/memuse_snapshotdiff_type_heap.png "MEMUSE_SnapshotDiff_Type_Heap")  
@@ -202,12 +202,12 @@ ms.lasthandoff: 02/22/2017
 |**Инклюзивный размер (байт)**|Размер объектов в основном снимке с учетом размера объектов, содержащихся в этих объектах.|  
 |**Разница инклюзивного размера (байт)**|Для типа — это разница в размере всех экземпляров типа между основным снимком и предыдущим снимком с учетом размера объектов, содержащихся в этих объектах. Для экземпляра это поле отображается пустым.|  
   
-###  <a name="a-namebkmkpathstoroottreesnapshotdiffa-paths-to-root-tree-snapshot-diff"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Дерево "Пути к корню" (разница между снимками)  
+###  <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Дерево "Пути к корню" (разница между снимками)  
  Дерево **Пути к корню** показывает цепочку объектов, ссылающихся на тип или экземпляр. Сборщик мусора .NET Framework очищает память для объекта только после освобождения всех ссылок на него.  
   
  ![Дерево "Пути к корню" для экземпляров в представлении различий](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "MEMUSE_SnapshotDiff_PathsToRoot_Instance_All")  
   
-###  <a name="a-namebkmkreferencedobjectstreesnapshotdiffa-referenced-objects-tree-snapshot-diff"></a><a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Дерево "Объекты, на которые указывает ссылка" (разница между снимками)  
+###  <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Дерево "Объекты, на которые указывает ссылка" (разница между снимками)  
  Дерево **Объекты, на которые указывает ссылка** показывает объекты, на которые ссылается основной тип или экземпляр.  
   
  ![Дерево "Объекты со ссылками" для экземпляров](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
