@@ -7,6 +7,7 @@
 ### [Использование памяти без отладки](memory-usage-without-debugging2.md)
 ## [Использование ЦП](cpu-usage.md)
 ### [Анализ использования ЦП в универсальных приложениях для Windows](analyze-cpu-usage-in-a-windows-universal-app.md)
+## [Использование GPU](gpu-usage.md)
 ## [Временная шкала приложения](application-timeline.md)
 ## [PerfTips](perftips.md)
 ## [Память JavaScript](javascript-memory.md)
