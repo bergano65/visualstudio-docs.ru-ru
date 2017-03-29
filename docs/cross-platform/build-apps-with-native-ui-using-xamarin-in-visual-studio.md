@@ -71,7 +71,7 @@ ms.lasthandoff: 02/22/2017
 >      -   [Привет, Xamarin.Forms](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms/quickstart/)  
 >     -   [Привет, Xamarin.Forms (несколько экранов)](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms-multiscreen/)  
   
-##  <a name="a-namesolutiona-set-up-your-solution"></a><a name="solution"></a> Настройка решения  
+##  <a name="solution"></a> Настройка решения  
  С помощью этих действий создается решение Xamarin с собственным пользовательским интерфейсом, которое содержит переносимую библиотеку классов для общего кода и два добавленных пакета NuGet.  
   
 1.  В Visual Studio создайте решение **Пустое приложение (Native Portable)** и назовите его **WeatherApp**. Чтобы найти этот шаблон, введите **Native Portable** в поле поиска.  
@@ -92,7 +92,7 @@ ms.lasthandoff: 02/22/2017
   
 3.  Добавьте **Newtonsoft.Json** и пакет NuGet в проект PCL. Они будут использоваться для обработки информации, полученной от службы данных о погоде.  
   
-    -   Щелкните правой кнопкой на **решении WeatherApp** в обозревателе решений и выберите **Управление пакетами NuGet для решения... **.  
+    -   Щелкните правой кнопкой на **решении WeatherApp** в обозревателе решений и выберите **Управление пакетами NuGet для решения...**.  
   
          В окне NuGet перейдите на вкладку **Обзор** и наберите **Newtonsoft** в строке поиска.  
   
@@ -110,7 +110,7 @@ ms.lasthandoff: 02/22/2017
   
 5.  Соберите свое решение и убедитесь в отсутствии ошибок сборки.  
   
-##  <a name="a-namedataservicea-write-shared-data-service-code"></a><a name="dataservice"></a> Создание общего кода для службы данных  
+##  <a name="dataservice"></a> Создание общего кода для службы данных  
  Именно в проекте **WeatherApp (переносимый)** вы будете писать код для переносимой библиотеки классов, общей для всех платформ. Переносимая библиотека классов автоматически включается в пакеты приложений для iOS, Android и Windows Phone.  
   
  Далее в переносимую библиотеку классов добавляется код, который обращается к данным от службы погоды и сохраняет эти данные:  
@@ -239,7 +239,7 @@ ms.lasthandoff: 02/22/2017
   
 10. Соберите проект переносимой библиотеки классов **WeatherApp** , чтобы убедиться в правильности кода.  
   
-##  <a name="a-nameandroida-design-ui-for-android"></a><a name="Android"></a> Разработка пользовательского интерфейса для приложения Android  
+##  <a name="Android"></a> Разработка пользовательского интерфейса для приложения Android  
  Теперь мы разработаем пользовательский интерфейс, подключим его к общему коду, а затем запустим приложение.  
   
 ### <a name="design-the-look-and-feel-of-your-app"></a>Разработка интерфейса приложения  
@@ -542,7 +542,7 @@ ms.lasthandoff: 02/22/2017
 > [!TIP]
 >  Полный исходный код этого проекта можно найти в [репозитории mobile-samples в GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).  
   
-##  <a name="a-namewindowsa-design-ui-for-windows-phone"></a><a name="Windows"></a> Разработка пользовательского интерфейса для приложения Windows Phone  
+##  <a name="Windows"></a> Разработка пользовательского интерфейса для приложения Windows Phone  
  Теперь мы разработаем пользовательский интерфейс для Windows Phone, подключим его к общему коду, а затем запустим приложение.  
   
 ### <a name="design-the-look-and-feel-of-your-app"></a>Разработка интерфейса приложения  
@@ -648,7 +648,7 @@ ms.lasthandoff: 02/22/2017
 > [!TIP]
 >  Полный исходный код этого проекта можно найти в [репозитории mobile-samples в GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).  
   
-##  <a name="a-namenexta-next-steps"></a><a name="next"></a> Дальнейшие действия  
+##  <a name="next"></a> Дальнейшие действия  
  **Добавление пользовательского интерфейса для iOS в решение**  
   
  Расширьте этот пример, добавив собственный пользовательский интерфейс для iOS. Для этого необходимо подключиться к компьютеру Mac в локальной сети, на котором установлены Xcode и Xamarin. После этого можно использовать конструктор iOS непосредственно в Visual Studio. Законченное приложение можно найти [в репозитории mobile-samples в GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).  
