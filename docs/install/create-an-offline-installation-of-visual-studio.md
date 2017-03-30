@@ -2,7 +2,7 @@
 title: "Создание автономного установщика Visual Studio 2017 | Документация Майкрософт"
 description: "Сведения о создании автономного установщика Visual Studio."
 ms.custom: 
-ms.date: 03/07/2017
+ms.date: 03/21/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -34,9 +34,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 91fde66abf2f325ef0a6a0a2fd30e36981f44033
-ms.openlocfilehash: acb47946c29d99cb53b34d67fe8a26f5611307f9
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 5b6334c38a6c058f274498c06f8e07c934931910
+ms.openlocfilehash: 563c78a49eb55886b1ddbd4f437951c99c6568e5
+ms.lasthandoff: 03/22/2017
 
 ---
 # <a name="create-an-offline-installer-for-visual-studio-2017"></a>Создание автономного установщика Visual Studio 2017
@@ -54,6 +54,8 @@ ms.lasthandoff: 03/08/2017
 |Visual Studio Enterprise |**vs_enterprise.exe**|  
 |Visual Studio Professional |**vs_professional.exe**|  
 |Visual Studio Community |**vs_community.exe**|
+
+Другие поддерживаемые начальные загрузчики: vs_buildtools.exe, vs_feedbackclient.exe, vs_teamexplorer.exe, vs_testagent.exe, vs_testcontroller.exe и vs_testprofessional.exe.
 
 ## <a name="create-an-offline-installation-folder"></a>Создание папки автономной установки
 Чтобы создать автономную установку со всеми языками и функциями, используйте одну из команд, приведенных в следующих примерах.
@@ -90,8 +92,6 @@ ms.lasthandoff: 03/08/2017
 * Чтобы обновить экземпляр Visual Studio, установленный из папки автономной установки, запустите программу установки Visual Studio и нажмите кнопку **Обновить**.
 * Чтобы обновить саму папку автономной установки с учетом последних обновлений, снова запустите команду ```--layout```. Обязательно укажите в этой команде ту же папку, которая использовалась ранее. Тогда будут скачаны только те компоненты, которые изменились с момента предыдущего запуска ```--layout```.
 
-
-Для обновления автономной установки снова запустите команду `--layout`. Обязательно укажите в этой команде ту же папку, которая использовалась ранее. Тогда будут скачаны только те компоненты, которые изменились с момента предыдущего запуска `--layout`.
 
 ### <a name="how-to-troubleshoot-an-offline-installer"></a>Устранение неполадок с автономным установщиком
 Иногда возникают проблемы. Здесь мы приводим список известных проблем и варианты решений, которые могут оказаться полезными.
