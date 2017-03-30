@@ -4,6 +4,7 @@
 ### [Пакет Azure SDK для Python](azure-sdk-for-python.md)
 ## [Начало работы с Python](getting-started.md)
 ### [Публикация в Azure](publishing-to-azure.md)
+### [Создание расширения C++ для Python](cpp-and-python.md)
 ## [Проекты Python](python-projects.md)
 ### [Шаблоны веб-проектов](template-web.md)
 ### [Шаблоны веб-проектов Django](template-django.md)
