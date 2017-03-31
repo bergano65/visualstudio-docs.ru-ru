@@ -1,14 +1,10 @@
 ---
-title:
-- "Идентификаторы рабочих нагрузок и компонентов для Visual Studio Test Professional 2017 | Документация Майкрософт"
+title: "Идентификаторы рабочих нагрузок и компонентов для Visual Studio Test Professional 2017 | Документация Майкрософт"
 description: "Идентификаторы рабочих нагрузок и компонентов Visual Studio можно использовать для создания интегрированных средств тестирования для инженеров-испытателей"
 keywords: 
-author:
-- TerryGLee
-ms.author:
-- tglee
-manager:
-- ghogen
+author: TerryGLee
+ms.author: tglee
+manager: ghogen
 ms.date: 03/07/2017
 ms.topic: article
 helpviewer_keywords:
