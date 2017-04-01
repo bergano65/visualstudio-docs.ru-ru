@@ -1,7 +1,7 @@
 # [Добро пожаловать в Visual Studio 2017!](welcome-to-visual-studio.md)
 # [Новые возможности](ide/whats-new-in-visual-studio.md)
 # [Установка](install/TOC.md)
-# [Интегрированная среда разработки Visual Studio](ide/index.md)
+# [Интегрированная среда разработки Visual Studio](ide/visual-studio-ide.md)
 # [Visual Basic](/dotnet/articles/visual-basic)
 # [Visual C#](/dotnet/articles/csharp)
 # [Visual C++](/cpp/top/visual-cpp-in-visual-studio)
