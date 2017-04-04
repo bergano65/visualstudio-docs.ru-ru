@@ -10,7 +10,7 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 14
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - de-de
@@ -415,3 +415,4 @@ ms.lasthandoff: 03/07/2017
  [Отладка машинного кода](../debugger/debugging-native-code.md)   
  [Пошаговое руководство. Создание и использование библиотеки DLL (C++)](http://msdn.microsoft.com/Library/3ae94848-44e7-4955-bbad-7d40f493e941)   
  [Импортирование и экспортирование](/visual-cpp/build/importing-and-exporting)
+

@@ -10,9 +10,8 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: 5a6f5b32-bfce-4a63-81e9-02d54c592539
 caps.latest.revision: 12
-author: alexhomer1
-ms.author: ahomer
-manager: robinr
+ms.author: douge
+manager: douge
 translation.priority.ht:
 - cs-cz
 - de-de
@@ -138,3 +137,4 @@ ms.lasthandoff: 02/22/2017
 2.  В обозревателе тестов выберите методы теста и щелкните команду **Отладить выбранные тесты** в контекстном меню.  
   
  См. дополнительные сведения об [отладке в Visual Studio](../debugger/debugging-in-visual-studio.md).
+

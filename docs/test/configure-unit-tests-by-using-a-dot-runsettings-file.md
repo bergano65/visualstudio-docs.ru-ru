@@ -10,7 +10,7 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 25
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - de-de
@@ -59,7 +59,7 @@ ms.lasthandoff: 02/22/2017
   
  ![Включение файла параметров запуска](../test/media/runsettings-1.png "RunSettings-1")  
   
-##  <a name="a-nameexamplea-copy-this-example-runsettings-file"></a><a name="example"></a> Копирование файла RUNSETTINGS этого примера  
+##  <a name="example"></a> Копирование файла RUNSETTINGS этого примера  
  Ниже приводится пример стандартного RUNSETTINGS-файла. Каждый элемент файла необязателен, поскольку каждое значение имеет значение по умолчанию.  
   
 ```xml  
@@ -181,3 +181,4 @@ ms.lasthandoff: 02/22/2017
 ## <a name="see-also"></a>См. также  
  [Настройка анализа покрытия кода](../test/customizing-code-coverage-analysis.md)   
  [Указание параметров тестирования для тестов Visual Studio](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests)
+

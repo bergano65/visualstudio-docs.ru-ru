@@ -13,7 +13,7 @@ helpviewer_keywords:
 - team-based development
 ms.assetid: 73baa961-c21f-43fe-bb92-3f59ae9b5945
 caps.latest.revision: 39
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - cs-cz
@@ -70,3 +70,4 @@ ms.lasthandoff: 03/07/2017
   
  [Отслеживание работы с помощью Visual Studio Online или Team Foundation Server](https://www.visualstudio.com/docs/work/overview)  
  [!INCLUDE[vstsTfsLong](../test/includes/vststfslong_md.md)] можно использовать для планирования и отслеживания проектов, независимо от того, используется ли гибкий процесс, формальный процесс или их вариации. Планирование проектов, отслеживание их выполнения в сравнении с планом и внесение необходимых исправлений позволяет снизить риск, избежать непредсказуемых ситуаций и более эффективно контролировать стоимость проектов.
+
