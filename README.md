@@ -1,19 +1,19 @@
-## Microsoft Open Source Code of Conduct
+## <a name="microsoft-open-source-code-of-conduct"></a>Правила поведения корпорации Майкрософт при работе с открытым кодом
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+Этот проект ввела [Microsoft Open источника Кодекс](https://opensource.microsoft.com/codeofconduct/).
+Дополнительные сведения см. в [вопросах и ответах по правилам поведения](https://opensource.microsoft.com/codeofconduct/faq/). С любыми дополнительными вопросами или комментариями обратитесь по адресу [opencode@microsoft.com](mailto:opencode@microsoft.com).
 
-# Visual Studio 2017 documentation
+# <a name="visual-studio-2017-documentation"></a>Документация по Visual Studio 2017
 
-Welcome! This repo contains source files for the work-in-progress Visual Studio 2017 technical documentation. The topics are published on the [Visual Studio documentation site](https://docs.microsoft.com/visualstudio).
+Добро пожаловать! Этот репозиторий содержит исходные файлы для технической документации по проводимым работам для Visual Studio 2017. Эти разделы опубликованы на [сайте документации по Visual Studio](https://docs.microsoft.com/visualstudio).
 
-The documentation for Visual Basic and Visual C# are located in a separate repo at [http://github.com/dotnet/core-docs](http://github.com/dotnet/core-docs), and the Visual C++ documentation is located in the repo located at [http://github.com/Microsoft/cpp-docs](http://github.com/Microsoft/cpp-docs).
+Документация для Visual Basic и Visual C# находится в отдельном репозитории по адресу [http://github.com/dotnet/core-docs](http://github.com/dotnet/core-docs), а документация по Visual C++ — в репозитории по адресу [http://github.com/Microsoft/cpp-docs](http://github.com/Microsoft/cpp-docs).
 
-## Contributing to the documentation
+## <a name="contributing-to-the-documentation"></a>Участие в работе над документацией
 
-To contribute to this documentation, please see the [Contributing guide](CONTRIBUTING.md).
-We welcome your contributions to help us improve the Visual Studio docs. All the articles in this repository use GitHub flavored markdown.
+Чтобы принять участие в работе над этой документацией, см. [руководство по участию](CONTRIBUTING.md).
+Ждем ваших публикаций, призванных помочь улучшить документацию по Visual Studio. Все статьи в этом репозитории используют разметку GitHub Flavored Markdown.
 
-Several feature areas of Visual Studio have their own folders in this repo, such as **debugger** for topics on debugging, **ide** for topics on the Visual Studio interactive development environment (IDE), and so forth. The **/media** subfolder in each folder contains art files for the topics. The [Contributing guide](CONTRIBUTING.md) has more information.
+Некоторые области Visual Studio имеют в этом репозитории собственные папки, например **debugger** для отладки, **ide** для интегрированной среды разработки (IDE) Visual Studio и т. д. Вложенная папка **/media** в каждой из папок содержит файлы ART для соответствующих тем. Дополнительные сведения см. в [руководстве по участию](CONTRIBUTING.md).
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+Этот проект ввела [Microsoft Open источника Кодекс](https://opensource.microsoft.com/codeofconduct/). Дополнительные сведения см. в [вопросах и ответах по правилам поведения](https://opensource.microsoft.com/codeofconduct/faq/). С любыми дополнительными вопросами или комментариями обратитесь по адресу [opencode@microsoft.com](mailto:opencode@microsoft.com).

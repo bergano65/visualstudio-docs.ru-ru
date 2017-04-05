@@ -2,7 +2,7 @@
 title: "Изменение Visual Studio 2017 | Документация Майкрософт"
 description: "Сведения о поэтапном изменении среды Visual Studio."
 ms.custom: H1Hack27Feb2017
-ms.date: 03/07/2017
+ms.date: 03/27/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -34,9 +34,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 7ba87c0ba023b76a1f992eb9af660decd0b80ccd
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 9e635a28d3338bcf518a0aec69c476280eedf6e2
+ms.openlocfilehash: 183f5761e0b3159412d1da6bb4f30d716a4c41db
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Изменение Visual Studio 2017 путем добавления или удаления рабочих нагрузок и компонентов
@@ -52,6 +52,9 @@ ms.lasthandoff: 03/07/2017
      Например, на компьютере с юбилейным обновлением Windows 10 нажмите кнопку **Пуск** и прокрутите список до буквы **V**. Вы увидите пункт **Установщик Visual Studio**.  
 
      ![Установщик Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Поиск установщика Microsoft Visual Studio")
+
+     >[!NOTE]
+     На некоторых компьютерах установщик Visual Studio может быть указан под буквой **"M"** — для **Microsoft Visual Studio**.
 
 2.  Щелкните установщик (или коснитесь его) и выберите действие **Изменить**.  
 

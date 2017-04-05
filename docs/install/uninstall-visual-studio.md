@@ -2,7 +2,7 @@
 title: "Удаление Visual Studio 2017 | Документация Майкрософт"
 description: "Сведения о поэтапном удалении среды Visual Studio."
 ms.custom: 
-ms.date: 03/07/2017
+ms.date: 03/27/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -32,9 +32,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: b2926232b920fc06c5c14a36d736e6fd73f87f1f
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 9e635a28d3338bcf518a0aec69c476280eedf6e2
+ms.openlocfilehash: 3a4dda7736409ce60d6f1a1aa42b820978d63074
+ms.lasthandoff: 03/27/2017
 
 ---
 
@@ -46,6 +46,9 @@ ms.lasthandoff: 03/07/2017
      Например, на компьютере с юбилейным обновлением Windows 10 нажмите кнопку **Пуск** и прокрутите список до буквы **V**. Вы увидите пункт **Установщик Visual Studio**.  
 
      ![Установщик Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Поиск установщика Microsoft Visual Studio")
+
+     >[!NOTE]
+     На некоторых компьютерах установщик Visual Studio может быть указан под буквой **"M"** — для **Microsoft Visual Studio**.
 
 2.  Щелкните установщик, чтобы запустить его, щелкните ![Значок сведений](media/vs2017uninstall-UninstallIcon.png "Выбор значка параметров") и выберите пункт **Удалить**.  
 
