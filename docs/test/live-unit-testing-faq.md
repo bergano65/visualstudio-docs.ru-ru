@@ -27,9 +27,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: edb6c75d35f89df363a07eb24ba31e203bc6672e
-ms.openlocfilehash: 1c200c5f9dd295fff54784e7ebe20cea2ce99cf1
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
+ms.openlocfilehash: 03abb5a6508a6c93c6770bd9373381c9173b7103
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Часто задаваемые вопросы о функции Live Unit Testing
@@ -59,6 +59,18 @@ ms.lasthandoff: 03/15/2017
        </RunConfiguration> 
     </RunSettings> 
    ``` 
+
+## <a name="why-does-live-unit-testing-show-incorrect-coverage-after-you-upgrade-the-test-adapter-referenced-in-your-visual-studio-projects-to-the-supported-version"></a>Почему Live Unit Testing показывает неправильный объем протестированного кода после обновления адаптера теста, на который ссылаются проекты Visual Studio, до поддерживаемой версии?
+
+**Ответ.**
+
+- Если несколько проектов в решении ссылаются на пакет адаптера теста NuGet, требуется обновить каждый из них до поддерживаемой версии.
+
+- Убедитесь, что PROPS-файл MSBuild, импортированный из пакета адаптера теста, также обновлен должным образом. Проверьте версию и путь импорта для пакета NuGet, которые обычно указаны в начале файла проекта, например:
+
+   ```xml
+    <Import Project="..\packages\xunit.runner.visualstudio.2.2.0\build\net20\xunit.runner.visualstudio.props" Condition="Exists('..\packages\xunit.runner.visualstudio.2.2.0\build\net20\xunit.runner.visualstudio.props')" />
+   ```
 
 ## <a name="can-i-customize-my-live-unit-testing-builds"></a>Можно ли настроить сборки Live Unit Testing? 
 

@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: dbedb933ce3cabf000e7487fcf03133db3a326b4
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
+ms.openlocfilehash: e0a51155a42fb51244114da86a292381a7a28a21
+ms.lasthandoff: 03/27/2017
 
 ---
 
@@ -52,13 +52,13 @@ ms.lasthandoff: 03/10/2017
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-1. Установите [предварительную версию Visual Studio 2017](https://www.visualstudio.com/vs/preview). В настоящее время это единственный способ установить рабочую нагрузку Python для Visual Studio 2017.
+1. Установите ["Visual Studio 2017 Preview" со страницы https://www.visualstudio.com/vs/preview](https://www.visualstudio.com/vs/preview). **Примечание**. Этот канал предварительной версии *отличается* от итоговой версии Visual Studio 2017 и содержит функции, которые находятся на этапе разработки и появятся в дальнейших обновлениях Visual Studio 2017, включая поддержку Python.
 
 1. В установщике предварительной версии выберите рабочую нагрузку **Web & Cloud > Python Development** (Облачная и веб-разработка > Разработка Python).
 
     ![Рабочая нагрузка разработки Python в установщике Visual Studio](media/installation-python-workload.png)
 
-1. В правой части окна установщика выберите интерпретатор Python и все дополнительные средства, которые вам нужны.
+1. В правой части окна установщика выберите интерпретатор Python и все дополнительные средства, которые вам нужны. Например, если планируется разработать расширения C++ для Python, включите параметр **Собственные средства разработки Python**.
 
     ![Параметры разработки Python в установщике Visual Studio](media/installation-python-options.png)
 
