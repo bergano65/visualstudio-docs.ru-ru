@@ -41,13 +41,13 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 4ad346483c37e1f221ebd396a60d30b5bf94a028
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: bde2b08fb3cc1b183d224ab3282e44f21a094403
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="cl-task"></a>Задача CL
-Использует оболочку компилятора Visual C++ — cl.exe. Компилятор создает исполняемые файлы (EXE-файлы), библиотеки динамической компоновки (DLL-файлы) или модули кода (NETMODULE-файлы). Дополнительные сведения см. в разделе [Параметры компилятора](/visual-cpp/build/reference/compiler-options).  
+Использует оболочку компилятора Visual C++ — cl.exe. Компилятор создает исполняемые файлы (EXE-файлы), библиотеки динамической компоновки (DLL-файлы) или модули кода (NETMODULE-файлы). Дополнительные сведения см. в разделе [Параметры компилятора](/cpp/build/reference/compiler-options).  
   
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи **CL**. Большинство параметров задачи и некоторые наборы параметров соответствуют параметрам командной строки.  
@@ -58,7 +58,7 @@ ms.lasthandoff: 02/22/2017
   
      Добавляет каталог к списку каталогов, в которых выполняется поиск включаемых файлов.  
   
-     Дополнительные сведения см. в разделе [/I (дополнительные каталоги включения)](/visual-cpp/build/reference/i-additional-include-directories).  
+     Дополнительные сведения см. в разделе [/I (дополнительные каталоги включения)](/cpp/build/reference/i-additional-include-directories).  
   
 -   **AdditionalOptions**  
   
@@ -66,13 +66,13 @@ ms.lasthandoff: 02/22/2017
   
      Список параметров командной строки. Например, "/*параметр_1* /*параметр_2* /*параметр_#*". Этот параметр используется для указания параметров командной строки, не представленных каким-либо другим параметром задачи.  
   
-     Дополнительные сведения см. в разделе [Параметры компилятора](/visual-cpp/build/reference/compiler-options).  
+     Дополнительные сведения см. в разделе [Параметры компилятора](/cpp/build/reference/compiler-options).  
   
 -   **AdditionalUsingDirectories**Необязательный параметр String[].  
   
      Указывает каталог, в котором компилятор будет производить поиск для разрешения ссылок, переданных в директиву **#using**.  
   
-     Дополнительные сведения см. в разделе [/AI (указание каталогов метаданных)](/visual-cpp/build/reference/ai-specify-metadata-directories).  
+     Дополнительные сведения см. в разделе [/AI (указание каталогов метаданных)](/cpp/build/reference/ai-specify-metadata-directories).  
   
 -   **AlwaysAppend**  
   
@@ -84,7 +84,7 @@ ms.lasthandoff: 02/22/2017
   
      Создает файл листинга, содержащий код сборки.  
   
-     Дополнительные сведения см. в описании параметра **/Fa** в разделе [/FA, /Fa (файл листинга)](/visual-cpp/build/reference/fa-fa-listing-file).  
+     Дополнительные сведения см. в описании параметра **/Fa** в разделе [/FA, /Fa (файл листинга)](/cpp/build/reference/fa-fa-listing-file).  
   
 -   **AssemblerOutput**  
   
@@ -104,13 +104,13 @@ ms.lasthandoff: 02/22/2017
   
     -   **All** - **/FAcs**  
   
-     Дополнительные сведения см. в описании параметров **/FA**, **/FAc**, **/FAs** и **/FAcs** в разделе [/FA, /Fa (файл листинга)](/visual-cpp/build/reference/fa-fa-listing-file).  
+     Дополнительные сведения см. в описании параметров **/FA**, **/FAc**, **/FAs** и **/FAcs** в разделе [/FA, /Fa (файл листинга)](/cpp/build/reference/fa-fa-listing-file).  
   
 -   **BasicRuntimeChecks**  
   
      Необязательный параметр String.  
   
-     Включает и отключает функцию проверки ошибок во время выполнения совместно с атрибутом директивы pragma [runtime_checks](/visual-cpp/preprocessor/runtime-checks).  
+     Включает и отключает функцию проверки ошибок во время выполнения совместно с атрибутом директивы pragma [runtime_checks](/cpp/preprocessor/runtime-checks).  
   
      Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.  
   
@@ -122,7 +122,7 @@ ms.lasthandoff: 02/22/2017
   
     -   **EnableFastChecks** -                          **/RTC1**  
   
-     Дополнительные сведения см. в разделе [/RTC (проверки ошибок во время выполнения)](/visual-cpp/build/reference/rtc-run-time-error-checks).  
+     Дополнительные сведения см. в разделе [/RTC (проверки ошибок во время выполнения)](/cpp/build/reference/rtc-run-time-error-checks).  
   
 -   **BrowseInformation**  
   
@@ -130,7 +130,7 @@ ms.lasthandoff: 02/22/2017
   
      Если он имеет значение `true`, создается файл информации об исходном коде.  
   
-     Дополнительные сведения см. в описании параметра **/FR** в разделе [/FR, /Fr (создать SBR-файл)](/visual-cpp/build/reference/fr-fr-create-dot-sbr-file).  
+     Дополнительные сведения см. в описании параметра **/FR** в разделе [/FR, /Fr (создать SBR-файл)](/cpp/build/reference/fr-fr-create-dot-sbr-file).  
   
 -   **BrowseInformationFile**  
   
@@ -138,7 +138,7 @@ ms.lasthandoff: 02/22/2017
   
      Задает имя для файла информации об исходном коде.  
   
-     Дополнительные сведения см. в описании параметра **BrowseInformation** в этой таблице, а также в разделе [/FR, /Fr (создать SBR-файл)](/visual-cpp/build/reference/fr-fr-create-dot-sbr-file).  
+     Дополнительные сведения см. в описании параметра **BrowseInformation** в этой таблице, а также в разделе [/FR, /Fr (создать SBR-файл)](/cpp/build/reference/fr-fr-create-dot-sbr-file).  
   
 -   **BufferSecurityCheck**  
   
@@ -146,7 +146,7 @@ ms.lasthandoff: 02/22/2017
   
      Если значение равно `true`, обнаруживаются некоторые переполнения буфера, при которых перезаписывается обратный адрес. Это стандартный способ работы с кодом, в котором не используется принудительное ограничение размера буфера.  
   
-     Дополнительные сведения см. в разделе [Параметр /GS (проверка безопасности буфера)](/visual-cpp/build/reference/gs-buffer-security-check).  
+     Дополнительные сведения см. в разделе [Параметр /GS (проверка безопасности буфера)](/cpp/build/reference/gs-buffer-security-check).  
   
 -   **BuildingInIDE**  
   
@@ -168,7 +168,7 @@ ms.lasthandoff: 02/22/2017
   
     -   **StdCall** -                          **/Gz**  
   
-     Дополнительные сведения см. в разделе [/Gd, /Gr, /Gv, /Gz (соглашение о вызовах)](/visual-cpp/build/reference/gd-gr-gv-gz-calling-convention).  
+     Дополнительные сведения см. в разделе [/Gd, /Gr, /Gv, /Gz (соглашение о вызовах)](/cpp/build/reference/gd-gr-gv-gz-calling-convention).  
   
 -   **CompileAs**  
   
@@ -184,7 +184,7 @@ ms.lasthandoff: 02/22/2017
   
     -   **CompileAsCpp** - **/TP**  
   
-     Дополнительные сведения см. в разделе [Параметры /Tc, /Tp, /TC, /TP (определение типа исходного файла)](/visual-cpp/build/reference/tc-tp-tc-tp-specify-source-file-type).  
+     Дополнительные сведения см. в разделе [Параметры /Tc, /Tp, /TC, /TP (определение типа исходного файла)](/cpp/build/reference/tc-tp-tc-tp-specify-source-file-type).  
   
 -   **CompileAsManaged**  
   
@@ -204,7 +204,7 @@ ms.lasthandoff: 02/22/2017
   
     -   **OldSyntax** - **/clr:oldSyntax**  
   
-     Дополнительные сведения см. в разделе [/clr (компиляция CLR)](/visual-cpp/build/reference/clr-common-language-runtime-compilation).  
+     Дополнительные сведения см. в разделе [/clr (компиляция CLR)](/cpp/build/reference/clr-common-language-runtime-compilation).  
   
 -   **CreateHotpatchableImage**  
   
@@ -212,7 +212,7 @@ ms.lasthandoff: 02/22/2017
   
      Если он имеет значение `true`, то компилятор должен подготовить образ для *критического обновления*. Этот параметр позволяет добиться того, что длина первой инструкции каждой функции равна двум байтам, что необходимо для выполнения критического обновления.  
   
-     Дополнительные сведения см. в разделе [/hotpatch (создать образ с обновлениями)](/visual-cpp/build/reference/hotpatch-create-hotpatchable-image).  
+     Дополнительные сведения см. в разделе [/hotpatch (создать образ с обновлениями)](/cpp/build/reference/hotpatch-create-hotpatchable-image).  
   
 -   **DebugInformationFormat**  
   
@@ -228,7 +228,7 @@ ms.lasthandoff: 02/22/2017
   
     -   **EditAndContinue** - **/ZI**  
   
-     Дополнительные сведения см. в разделе [/Z7, /Zi, /ZI (формат отладочной информации)](/visual-cpp/build/reference/z7-zi-zi-debug-information-format).  
+     Дополнительные сведения см. в разделе [/Z7, /Zi, /ZI (формат отладочной информации)](/cpp/build/reference/z7-zi-zi-debug-information-format).  
   
 -   **DisableLanguageExtensions**  
   
@@ -236,7 +236,7 @@ ms.lasthandoff: 02/22/2017
   
      Если он имеет значение **true**, то компилятор должен выдавать ошибку для языковых конструкций, несовместимых либо с ANSI C, либо с ANSI C++.  
   
-     Дополнительные сведения см. в описании параметра **/Za** в разделе [/Za, /Ze (отключить расширения языка)](/visual-cpp/build/reference/za-ze-disable-language-extensions).  
+     Дополнительные сведения см. в описании параметра **/Za** в разделе [/Za, /Ze (отключить расширения языка)](/cpp/build/reference/za-ze-disable-language-extensions).  
   
 -   **DisableSpecificWarnings**  
   
@@ -244,7 +244,7 @@ ms.lasthandoff: 02/22/2017
   
      Отключает номера предупреждений, которые указаны в списке, разделенном точками с запятой.  
   
-     Дополнительные сведения см. в описании параметра `/wd` в разделе [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (уровень предупреждений)](/visual-cpp/build/reference/compiler-option-warning-level).  
+     Дополнительные сведения см. в описании параметра `/wd` в разделе [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (уровень предупреждений)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **EnableEnhancedInstructionSet**  
   
@@ -258,7 +258,7 @@ ms.lasthandoff: 02/22/2017
   
     -   **StreamingSIMDExtensions2** - **/arch:SSE2**  
   
-     Дополнительные сведения см. в разделе [/arch (x86)](/visual-cpp/build/reference/arch-x86).  
+     Дополнительные сведения см. в разделе [/arch (x86)](/cpp/build/reference/arch-x86).  
   
 -   **EnableFiberSafeOptimizations**  
   
@@ -266,7 +266,7 @@ ms.lasthandoff: 02/22/2017
   
      Если он имеет значение `true`, то поддерживается безопасность волокон для данных, выделенных с помощью статической локальной памяти потока, то есть данных, выделенных с помощью `__declspec(thread)`.  
   
-     Дополнительные сведения см. в разделе [/GT (поддержка локальной памяти потока, безопасной относительно волокон)](/visual-cpp/build/reference/gt-support-fiber-safe-thread-local-storage).  
+     Дополнительные сведения см. в разделе [/GT (поддержка локальной памяти потока, безопасной относительно волокон)](/cpp/build/reference/gt-support-fiber-safe-thread-local-storage).  
   
 -   **EnablePREfast**  
   
@@ -274,7 +274,7 @@ ms.lasthandoff: 02/22/2017
   
      Если он имеет значение `true`, то включается анализ кода.  
   
-     Дополнительные сведения см. в разделе [/analyze (анализ кода)](/visual-cpp/build/reference/analyze-code-analysis).  
+     Дополнительные сведения см. в разделе [/analyze (анализ кода)](/cpp/build/reference/analyze-code-analysis).  
   
 -   **ErrorReporting**  
   
@@ -292,7 +292,7 @@ ms.lasthandoff: 02/22/2017
   
     -   **Send** - **/errorReport:send**  
   
-     Дополнительные сведения см. в разделе [Параметр /errorReport (отчет о внутренних ошибках компилятора)](/visual-cpp/build/reference/errorreport-report-internal-compiler-errors).  
+     Дополнительные сведения см. в разделе [Параметр /errorReport (отчет о внутренних ошибках компилятора)](/cpp/build/reference/errorreport-report-internal-compiler-errors).  
   
 -   **ExceptionHandling**  
   
@@ -310,7 +310,7 @@ ms.lasthandoff: 02/22/2017
   
     -   **SyncCThrow** - **/EHs**  
   
-     Дополнительные сведения см. в статье [/EH (модель обработки исключений)](/visual-cpp/build/reference/eh-exception-handling-model).  
+     Дополнительные сведения см. в статье [/EH (модель обработки исключений)](/cpp/build/reference/eh-exception-handling-model).  
   
 -   **ExpandAttributedSource**  
   
@@ -318,7 +318,7 @@ ms.lasthandoff: 02/22/2017
   
      Если он имеет значение `true`, то создается файл списка, имеющий расширенные атрибуты, внедренные в исходный файл.  
   
-     Дополнительные сведения см. в разделе [/Fx (слияние подставляемого кода)](/visual-cpp/build/reference/fx-merge-injected-code) .  
+     Дополнительные сведения см. в разделе [/Fx (слияние подставляемого кода)](/cpp/build/reference/fx-merge-injected-code) .  
   
 -   **FavorSizeOrSpeed**  
   
@@ -334,7 +334,7 @@ ms.lasthandoff: 02/22/2017
   
     -   **Speed** - **/Ot**  
   
-     Дополнительные сведения см. в разделе [/Os, /Ot (приоритет размера кода или скорости кода)](/visual-cpp/build/reference/os-ot-favor-small-code-favor-fast-code).  
+     Дополнительные сведения см. в разделе [/Os, /Ot (приоритет размера кода или скорости кода)](/cpp/build/reference/os-ot-favor-small-code-favor-fast-code).  
   
 -   **FloatingPointExceptions**  
   
@@ -342,7 +342,7 @@ ms.lasthandoff: 02/22/2017
   
      Если он имеет значение `true`, то включается надежная модель исключения с плавающей запятой. Исключения вызываются сразу же после их инициализации.  
   
-     Дополнительные сведения см. в описании параметра /**fp:except** в разделе [/fp (Определение поведения с плавающей запятой)](/visual-cpp/build/reference/fp-specify-floating-point-behavior).  
+     Дополнительные сведения см. в описании параметра /**fp:except** в разделе [/fp (Определение поведения с плавающей запятой)](/cpp/build/reference/fp-specify-floating-point-behavior).  
   
 -   **FloatingPointModel**  
   
@@ -358,13 +358,13 @@ ms.lasthandoff: 02/22/2017
   
     -   **Fast** - **/fp:fast**  
   
-     Дополнительные сведения см. в разделе [/fp (определение поведения с плавающей запятой)](/visual-cpp/build/reference/fp-specify-floating-point-behavior).  
+     Дополнительные сведения см. в разделе [/fp (определение поведения с плавающей запятой)](/cpp/build/reference/fp-specify-floating-point-behavior).  
   
 -   **ForceConformanceInForLoopScope**  
   
      Необязательный логический параметр.  
   
-     Если он имеет значение `true`, то реализуется стандартное поведение C++ в для циклов [for](/visual-cpp/cpp/for-statement-cpp), использующих расширения Майкрософт ([/Ze](/visual-cpp/build/reference/za-ze-disable-language-extensions)).  
+     Если он имеет значение `true`, то реализуется стандартное поведение C++ в для циклов [for](/cpp/cpp/for-statement-cpp), использующих расширения Майкрософт ([/Ze](/cpp/build/reference/za-ze-disable-language-extensions)).  
   
      Дополнительные сведения см. в разделе [/Zc:forScope (принудительное обеспечение соответствия в области видимости оператора for)](http://msdn.microsoft.com/Library/3031f02d-3b14-4ad0-869e-22b0110c3aed).  
   
@@ -374,7 +374,7 @@ ms.lasthandoff: 02/22/2017
   
      Вызывает обработку препроцессором одного или нескольких указанных файлов заголовков.  
   
-     Дополнительные сведения см. в разделе [/FI (имя принудительно включаемого файла)](/visual-cpp/build/reference/fi-name-forced-include-file).  
+     Дополнительные сведения см. в разделе [/FI (имя принудительно включаемого файла)](/cpp/build/reference/fi-name-forced-include-file).  
   
 -   **ForcedUsingFiles**  
   
@@ -382,7 +382,7 @@ ms.lasthandoff: 02/22/2017
   
      Вызывает обработку препроцессором одного или нескольких указанных файлов **#using**.  
   
-     Дополнительные сведения см. в разделе [/FU (именование файла с принудительно используемым атрибутом #using)](/visual-cpp/build/reference/fu-name-forced-hash-using-file).  
+     Дополнительные сведения см. в разделе [/FU (именование файла с принудительно используемым атрибутом #using)](/cpp/build/reference/fu-name-forced-hash-using-file).  
   
 -   **FunctionLevelLinking**  
   
@@ -390,7 +390,7 @@ ms.lasthandoff: 02/22/2017
   
      Если значение равно `true`, компилятор может упаковывать отдельные функции в форме упакованных функций (COMDAT).  
   
-     Дополнительные сведения см. в разделе [/Gy (включение компоновки на уровне функций)](/visual-cpp/build/reference/gy-enable-function-level-linking).  
+     Дополнительные сведения см. в разделе [/Gy (включение компоновки на уровне функций)](/cpp/build/reference/gy-enable-function-level-linking).  
   
 -   **GenerateXMLDocumentationFiles**  
   
@@ -398,7 +398,7 @@ ms.lasthandoff: 02/22/2017
   
      Если значение равно `true`, компилятор обрабатывает комментарии к документации в файлах исходного кода и создает XDC-файл для каждого файла с исходным кодом, в котором есть комментарии к документации.  
   
-     Дополнительные сведения см. в разделе [/doc (обработка комментариев документации) (C/C++)](/visual-cpp/build/reference/doc-process-documentation-comments-c-cpp). См. также описание параметра **XMLDocumentationFileName** в этой таблице.  
+     Дополнительные сведения см. в разделе [/doc (обработка комментариев документации) (C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp). См. также описание параметра **XMLDocumentationFileName** в этой таблице.  
   
 -   **IgnoreStandardIncludePath**  
   
@@ -406,7 +406,7 @@ ms.lasthandoff: 02/22/2017
   
      Если значение равно `true`, компилятор не выполняет поиск файлов для включения в каталогах, указанных в переменных среды PATH и INCLUDE.  
   
-     Дополнительные сведения см. в разделе [/X (отклонение стандартных путей включения)](/visual-cpp/build/reference/x-ignore-standard-include-paths).  
+     Дополнительные сведения см. в разделе [/X (отклонение стандартных путей включения)](/cpp/build/reference/x-ignore-standard-include-paths).  
   
 -   **InlineFunctionExpansion**  
   
@@ -424,7 +424,7 @@ ms.lasthandoff: 02/22/2017
   
     -   **AnySuitable** - **/Ob2**  
   
-     Дополнительные сведения см. в разделе [Параметр /Ob (расширение встраиваемых функций)](/visual-cpp/build/reference/ob-inline-function-expansion).  
+     Дополнительные сведения см. в разделе [Параметр /Ob (расширение встраиваемых функций)](/cpp/build/reference/ob-inline-function-expansion).  
   
 -   **IntrinsicFunctions**  
   
@@ -432,7 +432,7 @@ ms.lasthandoff: 02/22/2017
   
      Если значение равно `true`, вызов некоторых функций заменяется на встроенные или какие-либо другие формы функции, которые способствуют более быстрому выполнению приложения.  
   
-     Дополнительные сведения см. в разделе [/Oi (создание встроенных функций)](/visual-cpp/build/reference/oi-generate-intrinsic-functions).  
+     Дополнительные сведения см. в разделе [/Oi (создание встроенных функций)](/cpp/build/reference/oi-generate-intrinsic-functions).  
   
 -   **MinimalRebuild**  
   
@@ -440,7 +440,7 @@ ms.lasthandoff: 02/22/2017
   
      Если значение равно `true`, включается минимальное перестроение, определяющее, необходимо ли перекомпилировать исходные файлы C++, содержащие измененные определения классов C++ (хранящиеся в файлах заголовка (H)).  
   
-     Дополнительные сведения см. в разделе [/Gm (включение минимального перепостроения)](/visual-cpp/build/reference/gm-enable-minimal-rebuild).  
+     Дополнительные сведения см. в разделе [/Gm (включение минимального перепостроения)](/cpp/build/reference/gm-enable-minimal-rebuild).  
   
 -   **MultiProcessorCompilation**  
   
@@ -448,7 +448,7 @@ ms.lasthandoff: 02/22/2017
   
      Если он имеет значение `true`, то для компиляции используется несколько процессоров. Этот параметр создает процесс для каждого эффективного процессора на компьютере.  
   
-     Дополнительные сведения см. в разделе [/MP (построить с несколькими процессами)](/visual-cpp/build/reference/mp-build-with-multiple-processes). См. также описание параметра **ProcessorNumber** в этой таблице.  
+     Дополнительные сведения см. в разделе [/MP (построить с несколькими процессами)](/cpp/build/reference/mp-build-with-multiple-processes). См. также описание параметра **ProcessorNumber** в этой таблице.  
   
 -   **ObjectFileName**  
   
@@ -456,7 +456,7 @@ ms.lasthandoff: 02/22/2017
   
      Указывает имя файла или каталога объектного файла (OBJ), которое следует использовать вместо имени по умолчанию.  
   
-     Дополнительные сведения см. в разделе [/Fo (имя объектного файла)](/visual-cpp/build/reference/fo-object-file-name).  
+     Дополнительные сведения см. в разделе [/Fo (имя объектного файла)](/cpp/build/reference/fo-object-file-name).  
   
 -   **ObjectFiles**  
   
@@ -470,7 +470,7 @@ ms.lasthandoff: 02/22/2017
   
      Если он имеет значение `true`, то имя библиотеки времени выполнения С, установленное по умолчанию, опускается в объектном файле (OBJ-файле). По умолчанию компилятор помещает имя библиотеки в OBJ-файл, чтобы перенаправить компоновщик в правильную библиотеку.  
   
-     Дополнительные сведения см. в разделе [/Zl (опущенное по умолчанию имя библиотеки)](/visual-cpp/build/reference/zl-omit-default-library-name).  
+     Дополнительные сведения см. в разделе [/Zl (опущенное по умолчанию имя библиотеки)](/cpp/build/reference/zl-omit-default-library-name).  
   
 -   **OmitFramePointers**  
   
@@ -478,7 +478,7 @@ ms.lasthandoff: 02/22/2017
   
      Если значение равно `true`, подавляется создание указателей фрейма в стеке вызова.  
   
-     Дополнительные сведения см. в разделе [/Oy (подавление указателей фрейма)](/visual-cpp/build/reference/oy-frame-pointer-omission).  
+     Дополнительные сведения см. в разделе [/Oy (подавление указателей фрейма)](/cpp/build/reference/oy-frame-pointer-omission).  
   
 -   **OpenMPSupport**  
   
@@ -486,7 +486,7 @@ ms.lasthandoff: 02/22/2017
   
      Если он имеет значение `true`, то компилятор будет обрабатывать предложения и директивы OpenMP.  
   
-     Дополнительные сведения см. в разделе [/openmp (включение поддержки OpenMP 2.0)](/visual-cpp/build/reference/openmp-enable-openmp-2-0-support).  
+     Дополнительные сведения см. в разделе [/openmp (включение поддержки OpenMP 2.0)](/cpp/build/reference/openmp-enable-openmp-2-0-support).  
   
 -   **Optimization**  
   
@@ -504,7 +504,7 @@ ms.lasthandoff: 02/22/2017
   
     -   **Full** - **/Ox**  
   
-     Дополнительные сведения см. в разделе [Параметры /O (оптимизация кода)](/visual-cpp/build/reference/o-options-optimize-code).  
+     Дополнительные сведения см. в разделе [Параметры /O (оптимизация кода)](/cpp/build/reference/o-options-optimize-code).  
   
 -   **PrecompiledHeader**  
   
@@ -520,7 +520,7 @@ ms.lasthandoff: 02/22/2017
   
     -   **Use** - **/Yu**  
   
-     Дополнительные сведения см. в разделах [/Yc (создать предкомпилированный заголовочный файл)](/visual-cpp/build/reference/yc-create-precompiled-header-file) и [/Yu (использование файла предкомпилированного заголовка)](/visual-cpp/build/reference/yu-use-precompiled-header-file). Кроме того, см. параметры **PrecompiledHeaderFile** и **PrecompiledHeaderOutputFile** в этой таблице.  
+     Дополнительные сведения см. в разделах [/Yc (создать предкомпилированный заголовочный файл)](/cpp/build/reference/yc-create-precompiled-header-file) и [/Yu (использование файла предкомпилированного заголовка)](/cpp/build/reference/yu-use-precompiled-header-file). Кроме того, см. параметры **PrecompiledHeaderFile** и **PrecompiledHeaderOutputFile** в этой таблице.  
   
 -   **PrecompiledHeaderFile**  
   
@@ -528,7 +528,7 @@ ms.lasthandoff: 02/22/2017
   
      Задает имя файла предкомпилированного заголовка для создания или использования.  
   
-     Дополнительные сведения см. в разделах [/Yc (создать предкомпилированный заголовочный файл)](/visual-cpp/build/reference/yc-create-precompiled-header-file) и [/Yu (использование файла предкомпилированного заголовка)](/visual-cpp/build/reference/yu-use-precompiled-header-file).  
+     Дополнительные сведения см. в разделах [/Yc (создать предкомпилированный заголовочный файл)](/cpp/build/reference/yc-create-precompiled-header-file) и [/Yu (использование файла предкомпилированного заголовка)](/cpp/build/reference/yu-use-precompiled-header-file).  
   
 -   **PrecompiledHeaderOutputFile**  
   
@@ -536,7 +536,7 @@ ms.lasthandoff: 02/22/2017
   
      Задает путь для предкомпилированного заголовка, который используется вместо пути по умолчанию.  
   
-     Дополнительные сведения см. в разделе [/Fp (имя PCH-файла)](/visual-cpp/build/reference/fp-name-dot-pch-file).  
+     Дополнительные сведения см. в разделе [/Fp (имя PCH-файла)](/cpp/build/reference/fp-name-dot-pch-file).  
   
 -   **PreprocessKeepComments**  
   
@@ -544,7 +544,7 @@ ms.lasthandoff: 02/22/2017
   
      Если значение равно `true`, в ходе предварительной обработки комментарии сохраняются.  
   
-     Дополнительные сведения см. в разделе [/C (сохранять комментарии во время предварительной обработки)](/visual-cpp/build/reference/c-preserve-comments-during-preprocessing).  
+     Дополнительные сведения см. в разделе [/C (сохранять комментарии во время предварительной обработки)](/cpp/build/reference/c-preserve-comments-during-preprocessing).  
   
 -   **PreprocessorDefinitions**  
   
@@ -552,7 +552,7 @@ ms.lasthandoff: 02/22/2017
   
      Определяет символ предобработки для исходного файла.  
   
-     Для получения дополнительной информации см. раздел [Определения препроцессора (/D)](/visual-cpp/build/reference/d-preprocessor-definitions).  
+     Для получения дополнительной информации см. раздел [Определения препроцессора (/D)](/cpp/build/reference/d-preprocessor-definitions).  
   
 -   **PreprocessOutput**  
   
@@ -566,7 +566,7 @@ ms.lasthandoff: 02/22/2017
   
      Задает имя выходного файла, в который параметр **PreprocessToFile** записывает предварительно обработанные выходные данные.  
   
-     Дополнительные сведения см. в разделе [/Fi (предварительная обработка имени выходного файла)](/visual-cpp/build/reference/fi-preprocess-output-file-name).  
+     Дополнительные сведения см. в разделе [/Fi (предварительная обработка имени выходного файла)](/cpp/build/reference/fi-preprocess-output-file-name).  
   
 -   **PreprocessSuppressLineNumbers**  
   
@@ -574,7 +574,7 @@ ms.lasthandoff: 02/22/2017
   
      Если значение равно `true`, выполняется предобработка исходных файлов C и C++, которые копируются на стандартное устройство вывода.  
   
-     Дополнительные сведения см. в разделе [/EP (предварительная обработка в поток стандартных выходных файлов без директив #line)](/visual-cpp/build/reference/ep-preprocess-to-stdout-without-hash-line-directives).  
+     Дополнительные сведения см. в разделе [/EP (предварительная обработка в поток стандартных выходных файлов без директив #line)](/cpp/build/reference/ep-preprocess-to-stdout-without-hash-line-directives).  
   
 -   **PreprocessToFile**  
   
@@ -582,7 +582,7 @@ ms.lasthandoff: 02/22/2017
   
      Если значение равно `true`, выполняется предобработка файлов на языке C и С++, а выходные данные записываются в файл.  
   
-     Дополнительные сведения см. в разделе [/P (вывод результатов предварительной обработки в файл)](/visual-cpp/build/reference/p-preprocess-to-a-file).  
+     Дополнительные сведения см. в разделе [/P (вывод результатов предварительной обработки в файл)](/cpp/build/reference/p-preprocess-to-a-file).  
   
 -   **ProcessorNumber**  
   
@@ -596,7 +596,7 @@ ms.lasthandoff: 02/22/2017
   
      Задает имя файла для базы данных программы (PDB-файла).  
   
-     Дополнительные сведения см. в разделе [/Fd (имя файла базы данных программы)](/visual-cpp/build/reference/fd-program-database-file-name).  
+     Дополнительные сведения см. в разделе [/Fd (имя файла базы данных программы)](/cpp/build/reference/fd-program-database-file-name).  
   
 -   **RuntimeLibrary**  
   
@@ -614,7 +614,7 @@ ms.lasthandoff: 02/22/2017
   
     -   **MultiThreadedDebugDLL** - **/MDd**  
   
-     Дополнительные сведения см. в разделе [/MD, /MT, /LD (использование библиотеки времени выполнения)](/visual-cpp/build/reference/md-mt-ld-use-run-time-library).  
+     Дополнительные сведения см. в разделе [/MD, /MT, /LD (использование библиотеки времени выполнения)](/cpp/build/reference/md-mt-ld-use-run-time-library).  
   
 -   **RuntimeTypeInfo**  
   
@@ -622,7 +622,7 @@ ms.lasthandoff: 02/22/2017
   
      Если он имеет значение `true`, то добавляется код для проверки типов объектов C++ во время выполнения (сведения о типе времени выполнения).  
   
-     Дополнительные сведения см. в разделе [/GR (предоставление информации о типах во время выполнения)](/visual-cpp/build/reference/gr-enable-run-time-type-information).  
+     Дополнительные сведения см. в разделе [/GR (предоставление информации о типах во время выполнения)](/cpp/build/reference/gr-enable-run-time-type-information).  
   
 -   **ShowIncludes**  
   
@@ -630,7 +630,7 @@ ms.lasthandoff: 02/22/2017
   
      Если значение равно `true`, компилятор выводит список включаемых файлов.  
   
-     Дополнительные сведения см. в разделе [/showIncludes (список включаемых файлов)](/visual-cpp/build/reference/showincludes-list-include-files).  
+     Дополнительные сведения см. в разделе [/showIncludes (список включаемых файлов)](/cpp/build/reference/showincludes-list-include-files).  
   
 -   **SmallerTypeCheck**  
   
@@ -638,7 +638,7 @@ ms.lasthandoff: 02/22/2017
   
      Если он имеет значение `true`, то выводится сообщение об ошибке времени выполнения, когда значение назначается типу данных меньшего размера, что приводит к потере данных.  
   
-     Дополнительные сведения см. в описании параметра **/RTCc** в разделе [/RTC (проверки ошибок во время выполнения)](/visual-cpp/build/reference/rtc-run-time-error-checks).  
+     Дополнительные сведения см. в описании параметра **/RTCc** в разделе [/RTC (проверки ошибок во время выполнения)](/cpp/build/reference/rtc-run-time-error-checks).  
   
 -   **Sources**  
   
@@ -652,7 +652,7 @@ ms.lasthandoff: 02/22/2017
   
      Если он имеет значение `true`, то компилятору позволено создавать одну копию одинаковых строк в образе программы.  
   
-     Дополнительные сведения см. в разделе [/GF (исключение повторяющихся строк)](/visual-cpp/build/reference/gf-eliminate-duplicate-strings).  
+     Дополнительные сведения см. в разделе [/GF (исключение повторяющихся строк)](/cpp/build/reference/gf-eliminate-duplicate-strings).  
   
 -   **StructMemberAlignment**  
   
@@ -674,7 +674,7 @@ ms.lasthandoff: 02/22/2017
   
     -   **16Bytes** - **/Zp16**  
   
-     Дополнительные сведения см. в статье [/Zp (выравнивание членов структур)](/visual-cpp/build/reference/zp-struct-member-alignment).  
+     Дополнительные сведения см. в статье [/Zp (выравнивание членов структур)](/cpp/build/reference/zp-struct-member-alignment).  
   
 -   **SuppressStartupBanner**  
   
@@ -682,7 +682,7 @@ ms.lasthandoff: 02/22/2017
   
      Если задано значение `true`, запрещается отображение сообщения о номере версии и авторских правах при запуске задачи.  
   
-     Дополнительные сведения см. в разделе [/nologo (отмена вывода начального заголовка) (C/C++)](/visual-cpp/build/reference/nologo-suppress-startup-banner-c-cpp).  
+     Дополнительные сведения см. в разделе [/nologo (отмена вывода начального заголовка) (C/C++)](/cpp/build/reference/nologo-suppress-startup-banner-c-cpp).  
   
 -   **TrackerLogDirectory**  
   
@@ -698,7 +698,7 @@ ms.lasthandoff: 02/22/2017
   
      Обрабатывает указанный список предупреждений компилятора как ошибки.  
   
-     Дополнительные сведения см. в описании параметра **/we**`n` в разделе [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (уровень предупреждений)](/visual-cpp/build/reference/compiler-option-warning-level).  
+     Дополнительные сведения см. в описании параметра **/we**`n` в разделе [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (уровень предупреждений)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **TreatWarningAsError**  
   
@@ -706,7 +706,7 @@ ms.lasthandoff: 02/22/2017
   
      Если значение равно `true`, все предупреждения компилятора обрабатываются как ошибки.  
   
-     Дополнительные сведения см. в описании параметра **/WX** в разделе [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (уровень предупреждений)](/visual-cpp/build/reference/compiler-option-warning-level).  
+     Дополнительные сведения см. в описании параметра **/WX** в разделе [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (уровень предупреждений)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **TreatWChar_tAsBuiltInType**  
   
@@ -722,7 +722,7 @@ ms.lasthandoff: 02/22/2017
   
      Если значение равно `true`, отменяется определение символов для систем Майкрософт, определяемых компилятором.  
   
-     Дополнительные сведения см. в описании параметра **/u** в разделе [Параметры /U и /u (отмена определения символа)](/visual-cpp/build/reference/u-u-undefine-symbols).  
+     Дополнительные сведения см. в описании параметра **/u** в разделе [Параметры /U и /u (отмена определения символа)](/cpp/build/reference/u-u-undefine-symbols).  
   
 -   **UndefinePreprocessorDefinitions**  
   
@@ -730,7 +730,7 @@ ms.lasthandoff: 02/22/2017
   
      Задает список одного или нескольких символов препроцессора для отмены определения.  
   
-     Дополнительные сведения см. в описании параметра **/U** в разделе [Параметры /U и /u (отмена определения символа)](/visual-cpp/build/reference/u-u-undefine-symbols).  
+     Дополнительные сведения см. в описании параметра **/U** в разделе [Параметры /U и /u (отмена определения символа)](/cpp/build/reference/u-u-undefine-symbols).  
   
 -   **UseFullPaths**  
   
@@ -738,7 +738,7 @@ ms.lasthandoff: 02/22/2017
   
      Если значение равно `true`, отображается полный путь к файлам исходного кода, переданный компилятору в диагностике.  
   
-     Дополнительные сведения см. в разделе [/FC (полный путь к файлу исходного кода в папке Diagnostics)](/visual-cpp/build/reference/fc-full-path-of-source-code-file-in-diagnostics).  
+     Дополнительные сведения см. в разделе [/FC (полный путь к файлу исходного кода в папке Diagnostics)](/cpp/build/reference/fc-full-path-of-source-code-file-in-diagnostics).  
   
 -   **UseUnicodeForAssemblerListing**  
   
@@ -746,7 +746,7 @@ ms.lasthandoff: 02/22/2017
   
      Если он имеет значение `true`, то выходной файл будет создан в формате UTF-8.  
   
-     Дополнительные сведения см. в описании параметра **/FAu** в разделе [/FA, /Fa (файл листинга)](/visual-cpp/build/reference/fa-fa-listing-file).  
+     Дополнительные сведения см. в описании параметра **/FAu** в разделе [/FA, /Fa (файл листинга)](/cpp/build/reference/fa-fa-listing-file).  
   
 -   **WarningLevel**  
   
@@ -768,7 +768,7 @@ ms.lasthandoff: 02/22/2017
   
     -   **EnableAllWarnings** - **/Wall**  
   
-     Дополнительные сведения см. в описании параметра **/W***n* в разделе [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (уровень предупреждений)](/visual-cpp/build/reference/compiler-option-warning-level).  
+     Дополнительные сведения см. в описании параметра **/W***n* в разделе [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (уровень предупреждений)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **WholeProgramOptimization**  
   
@@ -776,7 +776,7 @@ ms.lasthandoff: 02/22/2017
   
      Если значение равно `true`, включается оптимизация всей программы.  
   
-     Дополнительные сведения см. в разделе [/GL (оптимизация всей программы)](/visual-cpp/build/reference/gl-whole-program-optimization).  
+     Дополнительные сведения см. в разделе [/GL (оптимизация всей программы)](/cpp/build/reference/gl-whole-program-optimization).  
   
 -   **XMLDocumentationFileName**  
   
@@ -784,7 +784,7 @@ ms.lasthandoff: 02/22/2017
   
      Задает имя создаваемых XML-файлов документации. Этот параметр может быть именем файла или каталога.  
   
-     Дополнительные сведения см. описание аргумента `name` в разделе [/doc (обработка комментариев документации) (C/C++)](/visual-cpp/build/reference/doc-process-documentation-comments-c-cpp). См. также описание параметра **GenerateXMLDocumentationFiles** в этой таблице.  
+     Дополнительные сведения см. описание аргумента `name` в разделе [/doc (обработка комментариев документации) (C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp). См. также описание параметра **GenerateXMLDocumentationFiles** в этой таблице.  
   
 -   **MinimalRebuildFromTracking**  
   

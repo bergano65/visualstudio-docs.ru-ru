@@ -28,9 +28,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 76721dbf816cf7b7b8691efc10d22aac6b69cb05
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 84549f28f33933eacbf44742b5be129df8ab780e
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Написание модульных тестов для языка C/C++ с использованием платформы модульного тестирования Майкрософт для C++
@@ -48,7 +48,7 @@ ms.lasthandoff: 03/07/2017
   
     -   Добавьте оператор `#include` для файла `.h`, содержащего объявления внешне доступных функций DLL.  
   
-         Файл `.h` должен содержать объявления функций, отмеченных `_declspec(dllimport)`. Кроме того, можно экспортировать методы, используя DEF-файл. Дополнительные сведения см. в статье [Импортирование и экспортирование](/visual-cpp/build/importing-and-exporting).  
+         Файл `.h` должен содержать объявления функций, отмеченных `_declspec(dllimport)`. Кроме того, можно экспортировать методы, используя DEF-файл. Дополнительные сведения см. в статье [Импортирование и экспортирование](/cpp/build/importing-and-exporting).  
   
          Модульные тесты могут получать доступ только к функциям, экспортированным из тестируемой библиотеки DLL.  
   
@@ -184,7 +184,7 @@ ms.lasthandoff: 03/07/2017
   
      ![Новый проект кода DLL и H-файл с макросами API](../test/media/utecpp07.png "UteCpp07")  
   
-     Оператор объявления `__declspec(dllexport)` делает открытые и защищенные члены класса видимыми вне библиотеки DLL. Для получения дополнительной информации см. [Using dllimport and dllexport in C++ Classes](/visual-cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).  
+     Оператор объявления `__declspec(dllexport)` делает открытые и защищенные члены класса видимыми вне библиотеки DLL. Для получения дополнительной информации см. [Using dllimport and dllexport in C++ Classes](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).  
   
 4.  В основной CPP-файл добавьте минимальное тело функции.  
   
@@ -414,5 +414,5 @@ ms.lasthandoff: 03/07/2017
  [Общие сведения о взаимодействии управляемого и неуправляемого кода](http://msdn.microsoft.com/library/ms973872.aspx)   
  [Отладка машинного кода](../debugger/debugging-native-code.md)   
  [Пошаговое руководство. Создание и использование библиотеки DLL (C++)](http://msdn.microsoft.com/Library/3ae94848-44e7-4955-bbad-7d40f493e941)   
- [Импортирование и экспортирование](/visual-cpp/build/importing-and-exporting)
+ [Импортирование и экспортирование](/cpp/build/importing-and-exporting)
 
