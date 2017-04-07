@@ -1,60 +1,76 @@
 ---
-title: "IDebugBreakpointErrorEvent2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBreakpointErrorEvent2"
-helpviewer_keywords: 
-  - "IDebugBreakpointErrorEvent2"
+title: "IDebugBreakpointErrorEvent2 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugBreakpointErrorEvent2
+helpviewer_keywords:
+- IDebugBreakpointErrorEvent2
 ms.assetid: adee79df-8db5-4510-a7df-c50f4dbf5e35
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
----
-# IDebugBreakpointErrorEvent2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 94ab4dfbe72d28f52767c6dde259483d6905e401
+ms.lasthandoff: 04/05/2017
 
-Этот интерфейс определяет сеанс отладки \(SDM\), диспетчер ожидается точка останова не может быть привязана, загруженной в программе или по причине предупреждения или ошибки.  
+---
+# <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
+Этот интерфейс указывает диспетчера сеанса отладки (SDM), ожидающая точка останова не были привязаны в загрузить программу, либо из-за предупреждения или ошибки.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IDebugBreakpointErrorEvent2 : IUnknown  
 ```  
   
-## Примечания по реализации  
- DE реализует этот интерфейс в процессе поддержки для точек останова.  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) интерфейс должен быть реализован в одном объекте, как этот интерфейс \(SDM использует  [QueryInterface](/visual-cpp/atl/queryinterface) доступ  `IDebugEvent2` интерфейс\).  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
+ DE реализует этот интерфейс в рамках поддержки точек останова. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) на один и тот же объект как этот интерфейс должен быть реализован интерфейс (использует SDM [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейс).  
   
-## Замечания для вызывающих объектов  
- DE создает и отправляет этот объект события, когда ожидается точка останова невозможно привязать к отлаживаемой программы.  Событие отправляется с помощью IDebugEventCallback2 функция обратного вызова, предоставляемая SDM, когда он вложен в отлаживаемом программе.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ DE создает и отправляет этот объект события, когда ожидающая точка останова не может быть привязано к отлаживаемой программы. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функции обратного вызова, предоставляемой SDM, когда он присоединен к отлаживаемой программы.  
   
-## Методы в том порядке Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugBreakpointErrorEvent2`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|Возвращает IDebugErrorBreakpoint2 интерфейс, который описывает предупреждения или ошибки.|  
+|------------|-----------------|  
+|[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|Возвращает [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) интерфейс, который описывает предупреждения или ошибки.|  
   
-## Заметки  
- Если точка останова привязана, событие отправляется SDM.  Если точка останова, то нельзя привязать `IDebugBreakpointErrorEvent2` отправляет; в противном случае \-  [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) отправить.  
+## <a name="remarks"></a>Примечания  
+ Каждый раз, когда привязан точки останова, SDM отправляется событие. Если точка останова не может быть привязана, `IDebugBreakpointErrorEvent2` передаются; в противном случае — [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) отправляется.  
   
- Например, если условие, связанное с точкой останова, ожидающих не удается выполнить синтаксический анализ или оценивать, предупреждение, которое отправляется ожидается точка останова невозможно привязать в настоящее время.  Это может происходить, если код для точки останова не загрузил.  
+ Например при условие, связанное с ожидающая точка останова не удается проанализировать или оценки, предупреждение отправляется, что ожидающая точка останова не может быть привязано в данный момент. Это может произойти, если код для точки останова еще не загружен.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   

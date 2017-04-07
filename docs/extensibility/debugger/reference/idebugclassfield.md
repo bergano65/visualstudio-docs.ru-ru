@@ -1,61 +1,77 @@
 ---
-title: "IDebugClassField | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugClassField"
-helpviewer_keywords: 
-  - "Интерфейс IDebugClassField"
+title: "IDebugClassField | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugClassField
+helpviewer_keywords:
+- IDebugClassField interface
 ms.assetid: 49358cbc-8973-4862-9dcc-79b1248e6712
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugClassField
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: d155b774f7ede68c712c89b692daad507aac0515
+ms.lasthandoff: 04/05/2017
 
+---
+# <a name="idebugclassfield"></a>IDebugClassField
 Этот интерфейс представляет класс как тип.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
-IDebugClassField : IDebugContainerField  
+IDebugClassField : IDebugContainerField  
 ```  
   
-## Примечания по реализации  
- Поставщик символов реализует этот интерфейс на одном и том же объекта, реализующего [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) интерфейс.  Этот интерфейс специализация, представляющий тип класса.  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
+ Символ поставщик реализует этот интерфейс на тот же объект, реализующий [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) интерфейса. Этот интерфейс является специализацией, которая представляет тип класса.  
   
-## Замечания для вызывающих объектов  
- Несколько интерфейсов имеют методы, которые может вернуть этот интерфейс, в том числе [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)"  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)и  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md).  Также можно воспользоваться [QueryInterface](/visual-cpp/atl/queryinterface) получить этот интерфейс с  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) если интерфейс  [GetKind](../Topic/IDebugField::GetKind.md) метод возвращает пометить  `FIELD_TYPE_CLASS`.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Количество интерфейсов имеют методы, которые могут возвращать этот интерфейс включая [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md), и [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md). Кроме того, можно использовать [QueryInterface](/cpp/atl/queryinterface) получить этот интерфейс из [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) интерфейс, если [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) метод возвращает флаг `FIELD_TYPE_CLASS`.  
   
-## Методы в том порядке Vtable  
- в дополнение к методам на [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) и  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) интерфейсы, этот интерфейс, реализующих следующее:  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
+ В дополнение к методам на [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) и [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) интерфейсах, этот интерфейс реализует следующие:  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[EnumBaseClasses](../Topic/IDebugClassField::EnumBaseClasses.md)|Создает перечислитель для базовых классов этого класса.|  
-|[DoesInterfaceExist](../../../extensibility/debugger/reference/idebugclassfield-doesinterfaceexist.md)|Определяет, определен в классе определенный интерфейс.|  
+|------------|-----------------|  
+|[EnumBaseClasses](../../../extensibility/debugger/reference/idebugclassfield-enumbaseclasses.md)|Создает перечислитель для базовых классов из этого класса.|  
+|[DoesInterfaceExist](../../../extensibility/debugger/reference/idebugclassfield-doesinterfaceexist.md)|Определяет, если конкретный интерфейс определен в классе.|  
 |[EnumNestedClasses](../../../extensibility/debugger/reference/idebugclassfield-enumnestedclasses.md)|Создает перечислитель для вложенных классов этого класса.|  
-|[GetEnclosingClass](../../../extensibility/debugger/reference/idebugclassfield-getenclosingclass.md)|Возвращает класс, ограничивающий данный класс.|  
-|[EnumInterfacesImplemented](../Topic/IDebugClassField::EnumInterfacesImplemented.md)|Создает перечислитель для интерфейсов, реализованных этим классом.|  
-|[EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)|Создает перечислитель для конструкторов этого класса.|  
-|[GetDefaultIndexer](../../../extensibility/debugger/reference/idebugclassfield-getdefaultindexer.md)|Возвращает имя по умолчанию индексатора.|  
+|[GetEnclosingClass](../../../extensibility/debugger/reference/idebugclassfield-getenclosingclass.md)|Возвращает класс, который содержит этот класс.|  
+|[EnumInterfacesImplemented](../../../extensibility/debugger/reference/idebugclassfield-enuminterfacesimplemented.md)|Создает перечислитель для интерфейсов, реализованных данным классом.|  
+|[EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)|Создает перечислитель для конструкторы этого класса.|  
+|[GetDefaultIndexer](../../../extensibility/debugger/reference/idebugclassfield-getdefaultindexer.md)|Возвращает имя индексатора по умолчанию.|  
 |[EnumNestedEnums](../../../extensibility/debugger/reference/idebugclassfield-enumnestedenums.md)|Создает перечислитель для вложенных перечислителей этого класса.|  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: sh.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейсы поставщика символов](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

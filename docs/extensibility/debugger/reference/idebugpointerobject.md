@@ -31,16 +31,16 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: ad0660d583e1bc23c19b0fbd1836eb952d778665
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 0fbc9ae8e067a3442135e436712c1dc47360e339
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="idebugpointerobject"></a>IDebugPointerObject
 > [!IMPORTANT]
 >  В Visual Studio 2015 этот способ реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Этот интерфейс представляет собой указатель объекта.  
+ Этот интерфейс представляет объект указателя.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -49,22 +49,22 @@ IDebugPointerObject : IDebugObject
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Средство оценки выражений реализует этот интерфейс для представления объекта указателя.  
+ Средство оценки выражений реализует этот интерфейс для представления указателя объект.  
   
 ## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) интерфейса можно получить этот интерфейс, используя [QueryInterface](/visual-cpp/atl/queryinterface) Если `IDebugObject` представляет указатель.  
+ [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) интерфейса можно получить этот интерфейс, используя [QueryInterface](/cpp/atl/queryinterface) Если `IDebugObject` представляет указатель.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  Помимо методов, наследуемых от [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md), `IDebugPointerObject` интерфейс предоставляет следующие методы.  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Разыменование](../../../extensibility/debugger/reference/idebugpointerobject-dereference.md)|Возвращает объект, на который указывает интерфейс.|  
-|[Метод GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)|Возвращает значение, на который указывает интерфейс, как ряд последовательных байтов.|  
+|[Разыменовать](../../../extensibility/debugger/reference/idebugpointerobject-dereference.md)|Возвращает объект, на который указывает интерфейс.|  
+|[Метод GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)|Возвращает значение, на который указывает интерфейс, как ряд последовательных байтах.|  
 |[SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)|Задает значение, на который указывает интерфейс из серии последовательных байтов.|  
   
 ## <a name="remarks"></a>Примечания  
- Вычислитель выражений использует этот интерфейс, чтобы представить указатель в дерево синтаксического анализа.  
+ Вычислитель выражений использует этот интерфейс для представления указателя в дерево синтаксического анализа.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: ee.h  

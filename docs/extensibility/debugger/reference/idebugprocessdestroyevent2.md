@@ -1,48 +1,64 @@
 ---
-title: "IDebugProcessDestroyEvent2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcessDestroyEvent2"
-helpviewer_keywords: 
-  - "IDebugProcessDestroyEvent2"
+title: "IDebugProcessDestroyEvent2 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProcessDestroyEvent2
+helpviewer_keywords:
+- IDebugProcessDestroyEvent2
 ms.assetid: 1b8e0528-95bc-48fa-9653-2cea66c8dc3a
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
----
-# IDebugProcessDestroyEvent2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 18dc8600aeaee6e900961ab83b449e338e06cc18
+ms.lasthandoff: 04/05/2017
 
-Этот интерфейс при отправке процесс завершен нетипово или наконец, будет удален из кластера.  
+---
+# <a name="idebugprocessdestroyevent2"></a>IDebugProcessDestroyEvent2
+Этот интерфейс отправляется в том случае, когда процесс завершается, необычайно завершает работу или отключается от.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
-IDebugProcessDestroyEvent2 : IUnknown  
+IDebugProcessDestroyEvent2 : IUnknown  
 ```  
   
-## Примечания по реализации  
- Отладчик \(DE\) или пользовательского поставщика порта реализовать этот интерфейс, чтобы информировать, что процесс завершен.   IDebugEvent2 интерфейс должен быть реализован в одном объекте, как этот интерфейс.  SDM использует [QueryInterface](/visual-cpp/atl/queryinterface) доступ  `IDebugEvent2` интерфейс.  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
+ Модуль отладки (DE) или пользовательский порт поставщика реализация этого интерфейса позволяет сообщить, что процесс завершен. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) на один и тот же объект как этот интерфейс должен быть реализован интерфейс. Использует SDM [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейса.  
   
-## Замечания для вызывающих объектов  
- DE или пользовательского поставщика порта создают и выполняют этот объект события для оповещения завершение процесса.  Отправляет данное событие с помощью DE IDebugEventCallback2 функция обратного вызова, предоставленные SDM, когда он вложенно для отлаживаемой программы.  Пользовательский поставщик отправляет данное событие использование порта [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) интерфейс.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ DE или пользовательский порт поставщика создает и отправляет этот объект события, чтобы сообщить о завершении процесса. DE отправляет это событие, используя [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функции обратного вызова, предоставляемую SDM, когда он присоединяется к отлаживаемой программы. Поставщик настраиваемого порта отправляет это событие с помощью [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) интерфейса.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Базовых интерфейсов](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   

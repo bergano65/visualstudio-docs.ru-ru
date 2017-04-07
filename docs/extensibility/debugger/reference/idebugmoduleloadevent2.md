@@ -1,58 +1,74 @@
 ---
-title: "IDebugModuleLoadEvent2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugModuleLoadEvent2"
-helpviewer_keywords: 
-  - "Интерфейс IDebugModuleLoadEvent2"
+title: "IDebugModuleLoadEvent2 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugModuleLoadEvent2
+helpviewer_keywords:
+- IDebugModuleLoadEvent2 interface
 ms.assetid: 7d26fb23-5d49-4ba7-b7c5-3aed4d7be81e
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugModuleLoadEvent2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 5ed22167ab056492108bb69452117764716957be
+ms.lasthandoff: 04/05/2017
 
-Этот интерфейс передается с помощью обработчика отладки \(DE\) к сеансу отладки \(SDM\), если диспетчер будет загружен или будет выгружен модуль.  
+---
+# <a name="idebugmoduleloadevent2"></a>IDebugModuleLoadEvent2
+Этот интерфейс отправляется подсистема отладки (DE) диспетчера сеанса отладки (SDM) при загрузке или выгрузке модуля.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IDebugModuleLoadEvent2 : IUnknown  
 ```  
   
-## Примечания по реализации  
- DE реализующий этот интерфейс, чтобы информировать, что был загружен или был выгружен модуль.   IDebugEvent2 интерфейс должен быть реализован в одном объекте, как этот интерфейс.  SDM использует [QueryInterface](/visual-cpp/atl/queryinterface) доступ  `IDebugEvent2` интерфейс.  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
+ DE реализует этот интерфейс для отчетов, что модуль был загружен или выгружен. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) на один и тот же объект как этот интерфейс должен быть реализован интерфейс. Использует SDM [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейса.  
   
-## Замечания для вызывающих объектов  
- DE создает и отправляет этот объект события для оповещения о том, что был загружен или был выгружен модуль.  Событие отправляется с помощью IDebugEventCallback2 функция обратного вызова, предоставленные SDM, когда он вложенно для отлаживаемой программы.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ DE создает и отправляет этот объект события отчета модуль был загружен или выгружен. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функции обратного вызова, предоставляемую SDM, когда он присоединяется к отлаживаемой программы.  
   
-## Методы в том порядке Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны метод `IDebugModuleLoadEvent2`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)|Получает модуль, который загружается и выгружается.|  
+|------------|-----------------|  
+|[GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)|Возвращает модуль, для которого создается загружен или выгружен.|  
   
-## Заметки  
- Visual Studio использует это событие для хранения **Модули** окно последнее.  
+## <a name="remarks"></a>Примечания  
+ Visual Studio использует это событие, чтобы **модули** окна в актуальном состоянии.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Базовых интерфейсов](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
