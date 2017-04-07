@@ -35,9 +35,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: f70339a150a53d346ab9a6f59b4b1634263f5b9e
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 80ce7de7e89844d8c9cb1052499b2d873e04965e
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="options-text-editor-cc-formatting"></a>"Параметры", "Текстовый редактор", C/C++, "Форматирование"
@@ -81,16 +81,16 @@ ms.lasthandoff: 03/07/2017
  При помещении файла в текстовый редактор можно включить возможность структурирования. Дополнительные сведения см. в разделе [Структура](../../ide/outlining.md). Если выбран этот параметр, возможность структурирования будет включаться при открытии файла.  
   
  **Автоматическое структурирование блоков областей #pragma**  
- При выборе этого параметра включается автоматическое структурирование для [директив pragma](/visual-cpp/preprocessor/pragma-directives-and-the-pragma-keyword). Это позволяет разворачивать и сворачивать блоки области директивы pragma в режиме создания структуры.  
+ При выборе этого параметра включается автоматическое структурирование для [директив pragma](/cpp/preprocessor/pragma-directives-and-the-pragma-keyword). Это позволяет разворачивать и сворачивать блоки области директивы pragma в режиме создания структуры.  
   
  **Автоматическое структурирование блоков операторов**  
  Если выбран этот параметр, автоматическое структурирование включается для следующих конструкций операторов:  
   
 -   [if-else](/dotnet/csharp/language-reference/keywords/if-else)  
   
--   [Оператор switch (C++)](/visual-cpp/cpp/switch-statement-cpp)  
+-   [Оператор switch (C++)](/cpp/cpp/switch-statement-cpp)  
   
--   [Оператор while (C++)](/visual-cpp/cpp/while-statement-cpp)  
+-   [Оператор while (C++)](/cpp/cpp/while-statement-cpp)  
   
 ## <a name="see-also"></a>См. также  
  [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)   

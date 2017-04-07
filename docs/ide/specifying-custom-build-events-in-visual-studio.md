@@ -30,9 +30,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: a9f75e48f1fa8834a4232d234a54ca32c0a43e38
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: fd5955068a899199969c970434ff14401a654d35
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Указание настраиваемых событий построения в Visual Studio
@@ -44,7 +44,7 @@ ms.lasthandoff: 02/22/2017
   
 -   Visual C# и F# — [Указание событий сборки (C#)](../ide/how-to-specify-build-events-csharp.md).  
   
--   Visual C++ — [Указание событий сборки ](/visual-cpp/ide/specifying-build-events).  
+-   Visual C++ — [Указание событий сборки ](/cpp/ide/specifying-build-events).  
   
 ## <a name="syntax"></a>Синтаксис  
  События сборки следуют тому же синтаксису, что и команды DOS, но для упрощения процесса создания событий сборки можно использовать макросы. Список доступных макросов см. в разделе [Диалоговое окно "Командная строка события перед сборкой" или "Командная строка события после сборки"](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).  

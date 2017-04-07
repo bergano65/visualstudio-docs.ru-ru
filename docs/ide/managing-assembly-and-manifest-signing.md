@@ -33,9 +33,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 68358885d93e9e6b7f231750c35065be9521c3fe
-ms.openlocfilehash: b1ce5a5c4dc05cb9d0a2ebcb68a10a5054b68893
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: a990441ed4ef551a0fc6defcda45d51ff0c0d209
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Управление сборками и подписывание манифестов
@@ -45,7 +45,7 @@ ms.lasthandoff: 03/01/2017
   
  Сведения о подписи сборок в проектах Visual Basic и C# см. в разделе [Создание и использование сборок со строгими именами](http://msdn.microsoft.com/Library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
   
- Сведения о подписи сборок в проектах Visual C++ см. в разделе [Сборки со строгими именами (подписывание сборок) (C++/CLI)](/visual-cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).  
+ Сведения о подписи сборок в проектах Visual C++ см. в разделе [Сборки со строгими именами (подписывание сборок) (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).  
 
 > [!NOTE]
 >  Подписывание с использованием строгих имен не защищает от реконструирования сборки.  Сведения о защите от реконструирования см. в статье о программе [Dotfuscator Community Edition (CE)](dotfuscator/index.md).
@@ -87,4 +87,4 @@ ms.lasthandoff: 03/01/2017
   
 ## <a name="see-also"></a>См. также  
  [Сборки со строгими именами](http://msdn.microsoft.com/Library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [Сборки со строгими именами (подписывание сборок) (C++-CLI)](/visual-cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)
+ [Сборки со строгими именами (подписывание сборок) (C++-CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

@@ -41,9 +41,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e6d73f518f62cefc1fbb791d6c51a6d42a4cfae5
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 5666566315e94f109c5ca214dcf5b2a539911203
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="devenv-command-line-switches"></a>Параметры командной строки для команды Devenv
@@ -92,7 +92,7 @@ ms.lasthandoff: 02/22/2017
 |[/Log (devenv.exe)](../../ide/reference/log-devenv-exe.md)|Запускает [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] и записывает все действия в файл журнала.|  
 |[/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md) или `/r`|Компилирует и запускает указанное решение.|  
 |[/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)|Компилирует и выполняет указанное решение, свертывая окно IDE при выполнении решения и закрывая IDE после завершения выполнения.|  
-|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Инициирует использование в IDE переменных среды PATH, INCLUDE и LIB для компиляции на [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] вместо параметров, указанных в диалоговом окне **Параметры** в разделе "Каталоги VC++" параметров **проектов**. Дополнительные сведения см. в разделе [Установка переменных пути и среды при построении из командной строки](/visual-cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|  
+|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Инициирует использование в IDE переменных среды PATH, INCLUDE и LIB для компиляции на [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] вместо параметров, указанных в диалоговом окне **Параметры** в разделе "Каталоги VC++" параметров **проектов**. Дополнительные сведения см. в разделе [Установка переменных пути и среды при построении из командной строки](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|  
 |[/Edit (devenv.exe)](../../ide/reference/edit-devenv-exe.md)|Открывает указанные файлы в запущенном экземпляре этого приложения. Если нет запущенных экземпляров, то запускается новый экземпляр с упрощенной структурой окна.|  
 |[/ResetAddin (devenv.exe)](../../ide/reference/resetaddin-devenv-exe.md)|Запускает экземпляр среды IDE Visual Studio без загрузки указанной надстройки.|  
 |[/SafeMode (devenv.exe)](../../ide/reference/safemode-devenv-exe.md)|Запускает [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] в безопасном режиме и загружает только среду и службы по умолчанию, а также прилагаемые версии сторонних пакетов.|  

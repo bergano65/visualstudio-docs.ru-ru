@@ -34,9 +34,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: cf427f2c06e377895dd6477d67dacbd04c996ec5
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: d4772671e61d2225a97ef5e36f24e6f8a4a45c35
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="supplying-xml-code-comments"></a>Создание XML-примечаний к коду
@@ -46,7 +46,7 @@ ms.lasthandoff: 02/22/2017
   
  Дополнительные сведения о документировании кода в C# см. в разделе [Комментарии XML-документации](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).  
   
- Дополнительные сведения о документировании кода в C++ см. в разделах [Комментарии](/visual-cpp/cpp/comments-cpp) и [XML-документация](/visual-cpp/ide/xml-documentation-visual-cpp).  
+ Дополнительные сведения о документировании кода в C++ см. в разделах [Комментарии](/cpp/cpp/comments-cpp) и [XML-документация](/cpp/ide/xml-documentation-visual-cpp).  
   
 ## <a name="see-also"></a>См. также  
  [Использование технологии IntelliSense](../ide/using-intellisense.md)
