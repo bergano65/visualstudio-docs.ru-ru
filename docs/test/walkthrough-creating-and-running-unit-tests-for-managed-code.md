@@ -16,7 +16,7 @@ helpviewer_keywords:
 - unit tests, authoring
 ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 83
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - de-de
@@ -72,7 +72,7 @@ ms.lasthandoff: 02/22/2017
   
 -   Проект "Банк". См. раздел [Пример проекта для создания модульных тестов](../test/sample-project-for-creating-unit-tests.md).  
   
-##  <a name="a-namebkmkpreparethewalkthrougha-prepare-the-walkthrough"></a><a name="BKMK_Prepare_the_walkthrough"></a> Подготовка к выполнению пошагового руководства  
+##  <a name="BKMK_Prepare_the_walkthrough"></a> Подготовка к выполнению пошагового руководства  
   
 1.  Запустите Visual Studio.  
   
@@ -123,7 +123,7 @@ public void Debit(double amount)
   
 ```  
   
-##  <a name="a-namebkmkcreateaunittestprojecta-create-a-unit-test-project"></a><a name="BKMK_Create_a_unit_test_project"></a> Создание проекта модульного теста  
+##  <a name="BKMK_Create_a_unit_test_project"></a> Создание проекта модульного теста  
  **Предварительное требование**: необходимо выполнить действия, приведенные в подразделе [Подготовка к выполнению пошагового руководства](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
   
 #### <a name="to-create-a-unit-test-project"></a>Создание проекта модульного теста  
@@ -144,7 +144,7 @@ public void Debit(double amount)
   
 6.  В диалоговом окне "Диспетчер ссылок" разверните **Решение** и проверьте элемент **Банк** .  
   
-##  <a name="a-namebkmkcreatethetestclassa-create-the-test-class"></a><a name="BKMK_Create_the_test_class"></a> Создание тестового класса  
+##  <a name="BKMK_Create_the_test_class"></a> Создание тестового класса  
  Тестовый класс нужен для проверки класса `BankAccount` . Можно использовать UnitTest1.cs, созданный в шаблоне проекта, но лучше дать файлу и классу более описательные имена. Можно сделать это за один шаг, переименовав файл в обозревателе решений.  
   
  **Переименование файла класса**  
@@ -179,7 +179,7 @@ namespace BankTests
 using BankAccountNS;  
 ```  
   
-###  <a name="a-namebkmktestclassrequirementsa-test-class-requirements"></a><a name="BKMK_Test_class_requirements"></a> Требования к тестовому классу  
+###  <a name="BKMK_Test_class_requirements"></a> Требования к тестовому классу  
  Минимальные требования к тестовому классу следующие:  
   
 -   Атрибут `[TestClass]` является обязательным для платформы модульных тестов Microsoft для управляемого кода в любом классе, содержащем методы модульных тестов, которые необходимо выполнить в обозревателе тестов.  
@@ -188,7 +188,7 @@ using BankAccountNS;
   
  Можно иметь другие классы в проекте модульного теста, которые не содержат атрибута `[TestClass]` , а также иметь другие методы в тестовых классах, у которых атрибут — `[TestMethod]` . Можно использовать эти другие классы и методы в методах теста.  
   
-##  <a name="a-namebkmkcreatethefirsttestmethoda-create-the-first-test-method"></a><a name="BKMK_Create_the_first_test_method"></a> Создание первого тестового метода  
+##  <a name="BKMK_Create_the_first_test_method"></a> Создание первого тестового метода  
  В этой процедуре мы напишем методы модульного теста для проверки поведения метода `Debit` класса `BankAccount` . Этот метод приведен выше.  
   
  Путем анализа тестируемого метода мы определили, что необходимо проверить по меньшей мере три поведения.  
@@ -229,7 +229,7 @@ using BankAccountNS;
   
  Этот метод достаточно прост. Мы создаем новый объект `BankAccount` с начальным балансом, а затем снимаем допустимое значение. Используем платформу модульных тестов Майкрософт для метода <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> управляемого кода, чтобы проверить соответствие конечного баланса ожидаемому.  
   
-###  <a name="a-namebkmktestmethodrequirementsa-test-method-requirements"></a><a name="BKMK_Test_method_requirements"></a> Требования к методу теста  
+###  <a name="BKMK_Test_method_requirements"></a> Требования к методу теста  
  Метод теста должен удовлетворять следующим требованиям:  
   
 -   Метод должен быть отмечен атрибутом `[TestMethod]` .  
@@ -238,7 +238,7 @@ using BankAccountNS;
   
 -   Метод не должен иметь параметров.  
   
-##  <a name="a-namebkmkbuildandrunthetesta-build-and-run-the-test"></a><a name="BKMK_Build_and_run_the_test"></a> Сборка и запуск теста  
+##  <a name="BKMK_Build_and_run_the_test"></a> Сборка и запуск теста  
   
 #### <a name="to-build-and-run-the-test"></a>Сборка и запуск теста  
   
@@ -250,10 +250,10 @@ using BankAccountNS;
   
 3.  В данном случае тест пройден не будет. Метод теста будет перемещен в группу **Непройденные тесты** . Выберите этот метод в обозревателе тестов для просмотра сведений в нижней части окна.  
   
-##  <a name="a-namebkmkfixyourcodeandrerunyourtestsa-fix-your-code-and-rerun-your-tests"></a><a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Исправление кода и повторный запуск тестов  
+##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Исправление кода и повторный запуск тестов  
  **Анализ результатов теста**  
   
- Результат теста содержит сообщение, описывающее возникшую ошибку. Для метода `AreEquals` сообщение отражает ожидаемый результат (параметр **Expected\<*XXX*>**) и фактически полученный (параметр **Actual\<*YYY*>**). Ожидалось, что баланс уменьшится относительно начального баланса, но вместо этого произошло его увеличение на сумму списания.  
+ Результат теста содержит сообщение, описывающее возникшую ошибку. Для метода `AreEquals` сообщение отражает ожидаемый результат (параметр **Expected\<*XXX*>**) и фактически полученный (параметр**Actual\<*YYY*>**). Ожидалось, что баланс уменьшится относительно начального баланса, но вместо этого произошло его увеличение на сумму списания.  
   
  Повторная проверка кода "Дебит" показывает, что модульный тест позволил успешно найти ошибку. Сумма списания добавляется на баланс счета, а не вычитается.  
   
@@ -275,7 +275,7 @@ m_balance -= amount;
   
  В обозревателе тестов выберите **Запустить все** , чтобы запустить тест повторно. Красно-зеленая строка состояния станет зеленой, и тест будет перемещен в группу **Пройденные тесты** .  
   
-##  <a name="a-namebkmkuseunitteststoimproveyourcodea-use-unit-tests-to-improve-your-code"></a><a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Использование модульных тестов для улучшения кода  
+##  <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Использование модульных тестов для улучшения кода  
  В этом разделе рассматривается, как последовательный процесс анализа, разработки модульных тестов и рефакторинга может помочь сделать рабочий код более надежным и эффективным.  
   
  **Анализ проблем**  
@@ -434,3 +434,4 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 ```  
   
  В заключение скажем, что проведенная работа по улучшению тестируемого кода привела к созданию более надежных и информативных методов тестов. Однако более существенно то, что дополнительный анализ позволил улучшить тестируемый код в данном проекте.
+

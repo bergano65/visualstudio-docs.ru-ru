@@ -33,25 +33,24 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: dac3cb1d7767c2ff76ac25f6a486ad30a8d54831
-ms.openlocfilehash: 480be03d8ca431ff90ff00881a29daeaecfbec1b
-ms.lasthandoff: 03/03/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: dc32236dad42ec169fc1c7a243b7c67fd5a8dbf3
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="user-permissions-and-visual-studio"></a>Разрешения пользователей и Visual Studio
 Для обеспечения безопасности следует по возможности запускать Visual Studio от имени обычного пользователя.  
-  
+
 > [!WARNING]
 >  Также необходимо компилировать, запускать и отлаживать только те решения Visual Studio, которые получены от надежных людей или из надежных расположений.  
-  
+
  В интегрированной среде разработки Visual Studio можно выполнять большинство операций от имени обычного пользователя, а права администратора требуются для выполнения следующих задач:  
-  
+
 |Область|Задача|Дополнительные сведения|  
 |----------|----------|--------------------------|  
 |Установка|Установка Visual Studio.|[Установка Visual Studio](../install/install-visual-studio.md)|  
-||Обновление с пробного выпуска Visual Studio.|[Практическое руководство. Переход с ознакомительного выпуска Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|  
 ||Установка, обновление или удаление локального содержимого справки.|[Установка локального содержимого и управление им](../ide/install-and-manage-local-content.md)|  
-|Типы приложений|Разработка решений для SharePoint 2010.|[Требования по разработке решений SharePoint](/office-dev/office-dev/requirements-for-developing-sharepoint-solutions)|  
+|Типы приложений|Разработка решений для SharePoint.|[Требования по разработке решений SharePoint](/office-dev/office-dev/requirements-for-developing-sharepoint-solutions)|  
 ||Получение лицензии разработчика для [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|[Получение лицензии разработчика (приложения Магазина Windows)](http://go.microsoft.com/fwlink/?LinkID=241313)|  
 |Панель элементов|Добавление классических элементов управления COM на **Панель элементов**.|[Использование панели элементов](../ide/using-the-toolbox.md)|  
 |Надстройки|Установка и использование надстроек, которые были созданы с помощью классической COM-модели в интегрированной среде разработки.|[Создание надстроек и мастеров](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|  
@@ -61,30 +60,30 @@ ms.lasthandoff: 03/03/2017
 ||Отладка приложений, выполняемых под другой учетной записью пользователя, например веб-сайтов ASP.NET.|[Отладка приложений ASP.NET и AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)|  
 ||Отладка в зоне для приложений XAML-браузера (XBAP).|[Основное приложение WPF (PresentationHost.exe)](http://msdn.microsoft.com/Library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|  
 ||Использование эмулятора для отладки проектов облачных служб для Microsoft Azure.|[Отладка облачной службы в Visual Studio](http://go.microsoft.com/fwlink/?LinkId=266725)|  
-||Настройка межсетевого экрана для удаленной отладки.|[Настройка инструментов удаленной отладки в устройстве](../Topic/Set%20Up%20the%20Remote%20Tools%20on%20the%20Device.md)|  
+||Настройка межсетевого экрана для удаленной отладки.|[Удаленная отладка](../debugger/remote-debugging.md)|  
 |Средства производительности|Профилирование приложения.|[Руководство по профилированию производительности для начинающих](../profiling/beginners-guide-to-performance-profiling.md)|  
-|Развертывание|Развертывание веб-приложения в службах IIS на локальном компьютере.|[Развертывание веб-приложения ASP.NET у поставщика услуг размещения с использованием Visual Studio или Visual Web Developer: развертывание в IIS в качестве тестовой среды](http://go.microsoft.com/fwlink/?LinkId=266478)|  
-|Предоставление обратной связи в корпорацию Майкрософт|Изменение режима участия в программе улучшения качества Visual Studio.|[Практическое руководство. Отправка отзывов](../misc/how-to-send-feedback-about-visual-studio.md)|  
-  
+|Развертывание|Развертывание веб-приложения в службах IIS на локальном компьютере.|[Развертывание веб-приложения ASP.NET у поставщика услуг размещения с использованием Visual Studio или Visual Web Developer: развертывание в IIS в качестве тестовой среды](http://go.microsoft.com/fwlink/?LinkId=266478)|
+
 ## <a name="running-visual-studio-as-an-administrator"></a>Запуск Visual Studio от имени администратора  
  Visual Studio можно запускать с правами администратора при каждом запуске интегрированной среды разработки или изменить ярлык приложения так, чтобы оно всегда запускалось с правами администратора. Дополнительные сведения см. в справке Windows.  
-  
+
 #### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8debuggerincludeswin8mdmd-includewin81debuggerincludeswin81mdmd-includewinserver8debuggerincludeswinserver8mdmd-or-includewinblueserver2ideincludeswinblueserver2mdmd"></a>Запуск Visual Studio с правами администратора в [!INCLUDE[win8](../debugger/includes/win8_md.md)], [!INCLUDE[win81](../debugger/includes/win81_md.md)], [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] и [!INCLUDE[winblue_server_2](../ide/includes/winblue_server_2_md.md)]  
-  
+
 1.  На **начальном экране** введите **Visual Studio**. Вы увидите установленные версии Visual Studio.  
-  
+
 2.  Выберите версию Visual Studio, которую нужно запустить, а затем откройте контекстное меню (оно появится внизу экрана). Выберите **Запуск от имени администратора**.  
-  
+
      После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)**.  
-  
+
 #### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7debuggerincludeswin7mdmd-or-includewinsvr08r2debuggerincludeswinsvr08r2mdmd"></a>Запуск Visual Studio с правами администратора в [!INCLUDE[win7](../debugger/includes/win7_md.md)] и [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]  
-  
+
 1.  Нажмите кнопку **Пуск** и выберите **Все программы**.  
-  
+
 2.  В папке **Microsoft Visual Studio** *версия* выберите **Visual Studio** *версия*, откройте контекстное меню, а затем выберите пункт **Запуск от имени администратора**.  
-  
+
      После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)**.  
-  
+
 ## <a name="see-also"></a>См. также  
  [Перенос, миграция и обновление проектов Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)   
  [Установка Visual Studio](../install/install-visual-studio.md)
+

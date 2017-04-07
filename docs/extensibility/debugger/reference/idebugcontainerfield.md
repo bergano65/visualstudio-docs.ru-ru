@@ -31,9 +31,9 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7cf087725f8cfcb8ba53da739706ededcddb61c4
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: a91b491aeb234a20dc601950c5ff8a436b1be90a
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
@@ -49,7 +49,7 @@ IDebugContainerField : IDebugField
  Символ поставщик реализует этот интерфейс на тот же объект, реализующий [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейса. Этот интерфейс также является базовым классом для всех интерфейсов, которые представляют собой контейнеры.  
   
 ## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- Многие методы в интерфейсах многие возвращают этот интерфейс. Так как это базовый класс для всех контейнеров, более специализированными интерфейсами можно получить из этого интерфейса с помощью [QueryInterface](/visual-cpp/atl/queryinterface). Включить такие интерфейсы [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md), [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md), и [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md).  
+ Многие методы для многих интерфейсов возвращают этот интерфейс. Это базовый класс для всех контейнеров, более специализированных интерфейсов можно получить из этого интерфейса с помощью [QueryInterface](/cpp/atl/queryinterface). Такие интерфейсы включают [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md), [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md), и [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md).  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В дополнение к методам на [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс, этот интерфейс реализует следующий метод:  
@@ -59,7 +59,7 @@ IDebugContainerField : IDebugField
 |[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)|Создает перечислитель для полей контейнера.|  
   
 ## <a name="remarks"></a>Примечания  
- Массивы (содержащих переменные), классы (содержащих методы и переменные) и методы (содержащих параметры и локальные переменные) являются примерами контейнеров.  
+ Массивы (контейнеров для переменных), классы (контейнеров для методов и переменных) и методы (содержащих параметры и локальные переменные) иллюстрируют все контейнеры.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: sh.h  

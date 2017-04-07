@@ -31,13 +31,13 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7e9573c4c039a335fc65776483760d06067d94ff
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: b1feaad2478a39799dfc9239cef288553120bd6d
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
-Этот интерфейс используется программа узлами для указания всех возможных отладчики (DE), можно отлаживать программы.  
+Этот интерфейс используется программа узлами для указания всех возможных отладчики (DE), можно отлаживать этой программы.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,21 +46,21 @@ IDebugProgramEngines2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- DE или пользовательский порт поставщик реализует этот интерфейс на тот же объект, реализующий [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) для поддержки конкретных DE для определенной программы установки.  
+ DE или пользовательский порт поставщик реализует этот интерфейс на тот же объект, реализующий [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) для поддержки конкретных DE для конкретной программы установки.  
   
 ## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- Вызов [QueryInterface](/visual-cpp/atl/queryinterface) на `IDebugProgramNode2` интерфейса для получения этого интерфейса.  
+ Вызовите [QueryInterface](/cpp/atl/queryinterface) на `IDebugProgramNode2` интерфейс для получения этого интерфейса.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugProgramEngines2`.  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[EnumPossibleEngines](../../../extensibility/debugger/reference/idebugprogramengines2-enumpossibleengines.md)|Указывает все возможные DEs, можно отлаживать программы.|  
-|[SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md)|Выбирает DE, используемые для отладки программы.|  
+|[EnumPossibleEngines](../../../extensibility/debugger/reference/idebugprogramengines2-enumpossibleengines.md)|Указывает все возможные DEs, выполнять отладку этой программы.|  
+|[SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md)|Выбирает DE, используемые для отладки этой программы.|  
   
 ## <a name="remarks"></a>Примечания  
- После выбора пользователем DE Выбор регистрируется с узлом программы путем вызова [SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md). Выбранного ядра становится ядра, возвращенный [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md).  
+ После DE, выбираемый пользователем, выбор зарегистрирован узел программы путем вызова [SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md). Выбранного ядра становится ядра, возвращенных [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md).  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

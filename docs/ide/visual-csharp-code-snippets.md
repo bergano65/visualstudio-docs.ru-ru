@@ -35,9 +35,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: a4721d8bbd5dd6ec29f555ee8d4848ef3660243f
-ms.openlocfilehash: 0e1c37c0ce85cc44f7d43d895f3b4a4615539e3e
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 5b6334c38a6c058f274498c06f8e07c934931910
+ms.openlocfilehash: 01c13c4e0c9107f07580fb1701f81eac74a5022f
+ms.lasthandoff: 03/22/2017
 
 ---
 # <a name="visual-c-code-snippets"></a>Фрагменты кода Visual C#
@@ -64,7 +64,7 @@ ms.lasthandoff: 02/22/2017
 |else|Создает [else](/dotnet/csharp/language-reference/keywords/if-else) блок.|Внутри метода, индексатора, метода доступа к свойству или событию.|  
 |enum|Создает объявление типа [enum](/dotnet/csharp/language-reference/keywords/enum).|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|  
 |равно|Создает объявление метода, переопределяющего метод <xref:System.Object.Equals%2A>, определенный в классе <xref:System.Object>.|Внутри класса или структуры.|  
-|exception|Создает объявление класса, производного от исключения (по умолчанию </xref:System.Exception>).|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|  
+|exception|Создает объявление класса, производного от исключения (по умолчанию <xref:System.Exception>).|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|  
 |for|Создает цикл [for](/dotnet/csharp/language-reference/keywords/for).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
 |foreach|Создает цикл [foreach](/dotnet/csharp/language-reference/keywords/foreach-in).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
 |forr|Создает цикл [for](/dotnet/csharp/language-reference/keywords/for), уменьшающий переменную цикла после каждой итерации.|Внутри метода, индексатора, метода доступа к свойству или событию.|  
@@ -78,7 +78,7 @@ ms.lasthandoff: 02/22/2017
 |mbox|Создает вызов метода <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Также может потребоваться добавить ссылку на библиотеку System.Windows.Forms.dll.|Внутри метода, индексатора, метода доступа к свойству или событию.|  
 |namespace|Создает объявление [namespace](/dotnet/csharp/language-reference/keywords/namespace).|Внутри пространства имен (включая глобальное пространство имен).|  
 |prop|Создает объявление [автоматически реализуемого свойства](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).|Внутри класса или структуры.|  
-ropfull|Создает объявление свойства с методами доступа get и set.|Внутри класса или структуры.|  
+propfull|Создает объявление свойства с методами доступа get и set.|Внутри класса или структуры.|  
 |propg|Создает доступное только для чтения [автоматически реализуемое свойство](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties) с закрытым методом доступа set.|Внутри класса или структуры.|  
 |sim|Создает объявление метода [static](/dotnet/csharp/language-reference/keywords/static)[int](/dotnet/csharp/language-reference/keywords/int) Main.|Внутри класса или структуры.|  
 |структура|Создает объявление [struct](/dotnet/csharp/language-reference/keywords/struct).|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|  
@@ -98,3 +98,4 @@ ropfull|Создает объявление свойства с методами
  [Параметры шаблона](../ide/template-parameters.md)   
  [Практическое руководство. Использование окружающих фрагментов кода](../ide/how-to-use-surround-with-code-snippets.md)   
  
+

@@ -1,35 +1,54 @@
 ---
-title: "Элемент Task (MSBuild) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "<Task> - элемент [MSBuild]"
-  - "Task - элемент [MSBuild]"
+title: "Элемент Task (MSBuild) | Документация Майкрософт"
+ms.custom: 
+ms.date: 03/13/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- Task element [MSBuild]
+- <Task> element [MSBuild]
 ms.assetid: d82e2485-e5f0-4936-a357-745bacccc299
 caps.latest.revision: 22
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 22
----
-# Элемент Task (MSBuild)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 0e5a449ef396e7b9fd23a2c018bdc7f8791b7b38
+ms.openlocfilehash: 0632ff6bf62885527158194ef317d18220bbbe89
+ms.lasthandoff: 03/13/2017
 
-Создает и запускает экземпляр задачи [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  Имя элемента определяется именем создаваемой задачи.  
-  
-## Синтаксис  
-  
+---
+# <a name="task-element-msbuild"></a>Элемент Task (MSBuild)
+Создает и выполняет экземпляр задачи [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Имя элемента определяется именем создаваемой задачи.  
+
+ \<Project>  
+ \<Target>  
+
+## <a name="syntax"></a>Синтаксис  
+
 ```  
 <Task Parameter1="Value1"... ParameterN="ValueN"  
     ContinueOnError="WarnAndContinue/true/ErrorAndContinue/ErrorAndStop/false"  
@@ -37,39 +56,39 @@ caps.handback.revision: 22
     <Output... />  
 </Task>  
 ```  
-  
-## Атрибуты и элементы  
- В следующих разделах описаны атрибуты, дочерние элементы и родительские элементы.  
-  
-### Атрибуты  
-  
+
+## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
+
+### <a name="attributes"></a>Атрибуты  
+
 |Атрибут|Описание|  
-|-------------|--------------|  
-|`Condition`|Необязательный атрибут.  Проверяемое условие.  Дополнительные сведения см. в разделе [Conditions](../msbuild/msbuild-conditions.md).|  
-|`ContinueOnError`|Необязательный атрибут.  Может содержать одно из следующих значений:<br /><br /> -   **WarnAndContinue** или **true**.  При сбое задачи, последующие задачи в элементе [целевой объект](../msbuild/target-element-msbuild.md) и построении продолжают выполняться, и все ошибки из задачи рассматриваются как предупреждения.<br />-   **ErrorAndContinue**.  При сбое задачи, последующие задачи в элементе `Target` и построении продолжают выполняться, и все ошибки из задачи следует обрабатывать как ошибки.<br />-   **ErrorAndStop** или **false** \(по умолчанию\).  При сбое задачи, не исполнены остальные задачи в элементе `Target` и построении и считается, что не удалось весь элемент `Target` и построение.<br /><br /> Версии платформы .NET Framework до 4,5 поддерживали только значения `true` и `false`.<br /><br /> Дополнительные сведения см. в разделе [Практическое руководство. Игнорирование ошибок в задачах](../Topic/How%20to:%20Ignore%20Errors%20in%20Tasks.md).|  
-|`Parameter`|Обязательный атрибут в случае, если класс содержит одно или несколько свойств с атрибутом `[Required]`.<br /><br /> Определяемый пользователем параметр задачи, значением которого является значение параметра.  Элемент `Task` может содержать любое число параметров, и каждый атрибут соответствует свойству .NET в классе задачи.|  
-  
-### Дочерние элементы  
-  
+|---------------|-----------------|  
+|`Condition`|Необязательный атрибут. Проверяемое условие. Дополнительные сведения см. в разделе [Условия](../msbuild/msbuild-conditions.md).|  
+|`ContinueOnError`|Необязательный атрибут. Может содержать одно из следующих значений:<br /><br /> -   **WarnAndContinue** или **true**. При сбое задачи последующие задачи в элементе [Target](../msbuild/target-element-msbuild.md) и сборке продолжают выполняться, а все ошибки из задачи рассматриваются как предупреждения.<br />-   **ErrorAndContinue**. При сбое задачи последующие задачи в элементе `Target` и сборке продолжают выполняться, а все ошибки из задачи рассматриваются как ошибки.<br />-   **ErrorAndStop** или **false** (значение по умолчанию). При сбое задачи остальные задачи в элементе `Target` и сборке не выполняются, и считается, что возник сбой всего элемента `Target` и всей сборки.<br /><br /> Версии платформы .NET Framework, предшествовавшие 4.5, поддерживали только значения `true` и `false`.<br /><br /> Дополнительные сведения см. в статье [Практическое руководство. Игнорирование ошибок в задачах](../msbuild/how-to-ignore-errors-in-tasks.md).|  
+|`Parameter`|Требуется, если класс задачи содержит одно или несколько свойств с атрибутом `[Required]`.<br /><br /> Определяемый пользователем параметр задачи, значением которого является значение параметра. В элементе `Task` может существовать любое число параметров, и каждый атрибут соответствует свойству .NET в классе задачи.|  
+
+### <a name="child-elements"></a>Дочерние элементы  
+
 |Элемент|Описание|  
-|-------------|--------------|  
-|[Output](../msbuild/output-element-msbuild.md)|Задает сохранение выходных данных задачи в файле проекта.  Задача может содержать любое число элементов `Output`, включая ноль.|  
-  
-### Родительские элементы  
-  
+|-------------|-----------------|  
+|[Вывод](../msbuild/output-element-msbuild.md)|Сохраняет выходные данные задачи в файле проекта. Задача может содержать нуль и более элементов `Output`.|  
+
+### <a name="parent-elements"></a>Родительские элементы  
+
 |Элемент|Описание|  
-|-------------|--------------|  
-|[Целевой объект](../msbuild/target-element-msbuild.md)|Элемент\-контейнер для задач [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
-  
-## Заметки  
- Элемент `Task` в файле проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] создает экземпляр задачи, устанавливает его свойства и запускает его.  Элемент `Output` сохраняет выходные параметры в свойствах или элементах, используемых в других местах файла проекта.  
-  
- Если в родительском элементе `Target` задачи имеются элементы [OnError](../msbuild/onerror-element-msbuild.md), они будут обрабатываться даже в случае, если произошел сбой выполнения задачи, а `ContinueOnError` имеет значение `false`.  Дополнительные сведения о задачах см. в разделе [Задачи](../msbuild/msbuild-tasks.md).  
-  
-## Пример  
- В следующем примере кода создается экземпляр класса [Csc task](../msbuild/csc-task.md), устанавливается шесть из его свойств, после чего задача выполняется.  После выполнения значение свойства `OutputAssembly` объекта помещается в список элементов с именем `FinalAssemblyName`.  
-  
-```  
+|-------------|-----------------|  
+|[Target](../msbuild/target-element-msbuild.md)|Элемент контейнера для задач [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
+
+## <a name="remarks"></a>Примечания  
+ Элемент `Task` в файле проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] создает экземпляр задачи, устанавливает для него свойства и выполняет его. Элемент `Output` сохраняет выходные параметры в свойствах или элементах, которые будут использоваться в другом месте в файле проекта.  
+
+ Если в родительском элементе `Target` задачи существуют элементы [OnError](../msbuild/onerror-element-msbuild.md), они будут обрабатываться даже в случае сбоя задачи, когда `ContinueOnError` имеет значение `false`. Дополнительные сведения о задачах см. в разделе [Задачи](../msbuild/msbuild-tasks.md).  
+
+## <a name="example"></a>Пример  
+ Следующий пример кода создает экземпляр класса [задачи Csc](../msbuild/csc-task.md), устанавливает шесть свойств и выполняет задачу. После выполнения значение свойства `OutputAssembly` этого объекта помещается в список элементов с именем `FinalAssemblyName`.  
+
+```xml  
 <Target Name="Compile" DependsOnTarget="Resources" >  
     <Csc Sources="@(CSFile)"  
           TargetType="library"  
@@ -82,8 +101,9 @@ caps.handback.revision: 22
     </Csc>  
 </Target>  
 ```  
-  
-## См. также  
+
+## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
- [Справочные сведения о схеме файлов проектов](../msbuild/msbuild-project-file-schema-reference.md)
+ [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)
+

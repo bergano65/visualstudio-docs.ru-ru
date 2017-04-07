@@ -1,7 +1,7 @@
 ---
 title: "Как сообщить о проблеме с Visual Studio 2017 | Документы Майкрософт"
 ms.custom: 
-ms.date: 2016-10-05
+ms.date: 03/07/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -13,13 +13,13 @@ ms.author: tglee
 manager: ghogen
 robots: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: b81a082de053b11e8dbe05317f69d4bcb603f4de
-ms.openlocfilehash: 5aac18786f3952648eeea4e7d0258a5e59c497c2
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
+ms.openlocfilehash: 2220a1c2def8fd831f3adba1f3b02e03efe47fe9
+ms.lasthandoff: 03/07/2017
 
 ---
-# <a name="how-to-report-a-problem-with-visual-studio-2017-rc"></a>Как сообщить о проблеме с версией-кандидатом Visual Studio 2017
-Если возникла проблема с Visual Studio, мы хотим о ней узнать, чтобы диагностировать и устранить ее.  С помощью средства **Сообщить о проблеме** можно собрать подробные сведения о проблеме и отправить их в корпорацию Майкрософт, сделав всего несколько щелчков.  
+# <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Как сообщить о проблеме с Visual Studio 2017
+Если возникла проблема с Visual Studio, мы хотим о ней узнать, чтобы диагностировать и устранить ее.  С помощью средства **Сообщить о проблеме** можно собрать подробные сведения о проблеме и затем легко отправить их в корпорацию Майкрософт.  
 
  Корпорация Майкрософт уважает вашу конфиденциальность. Сведения о том, как мы обращаемся с поступающей от вас информацией, см. в [Заявлении о конфиденциальности для семейства продуктов Microsoft Visual Studio](https://www.visualstudio.com/en-us/dn948229).  
 
@@ -28,13 +28,22 @@ ms.lasthandoff: 02/22/2017
 
  ![Пункт меню "Сообщить о проблеме"](../ide/media/report-a-problem-menu-item.png "Пункт меню "Сообщить о проблеме"")  
 
+## <a name="sign-in-to-visual-studio"></a>Выполните вход в Visual Studio
+ Прежде чем сообщать о проблеме, желательно войти в Visual Studio, если вы не сделали этого ранее. Это позволит вам не только передать информацию о возникшей проблеме, но также проголосовать или оставить комментарий по этой или любой другой из опубликованных вами проблем.
+
+  1. Нажмите кнопку **Вход**, которая находится в левой части средства, как показано на следующем снимке экрана.
+  2. Следуйте инструкциям на экране, чтобы выполнить вход.
+
+  ![Вход для сообщения о проблеме](../ide/media/vs2017-report-a-problem-sign-in.png "Вход для сообщения о проблеме")
+
+
 ## <a name="search-and-vote-for-similar-problems"></a>Найдите подобные проблемы и проголосуйте за них  
 ###  <a name="search_and_vote"></a>  
 
 1.  Найдите свою проблему и посмотрите, сообщили ли о ней другие пользователи.
 2.  Если о ней уже кто-то сообщил, проголосуйте за нее, чтобы дать нам знать.  
 
-  ![VS15-FeedbackTool-SearchForSimilarReportedProblems](../ide/media/feedbacktool-searchforsimilarreportedproblems.png "Поиск подобных проблем и голосование за них")
+  ![VS15-FeedbackTool-SearchForSimilarReportedProblems](../ide/media/vs2017-report-a-problem-search-and-vote.png "Поиск подобных проблем и голосование за них")
 
 
 ## <a name="report-a-new-problem"></a>Сообщите о новой проблеме

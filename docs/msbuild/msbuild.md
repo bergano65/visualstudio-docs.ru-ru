@@ -31,9 +31,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: d014b703c491603c86fcd6a89c1dc17f35b0deae
-ms.openlocfilehash: 99850b840fbda9f7e7674d926822ff461e69da17
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 79d77230e46bade8e89d4503dbf95b1f1831e464
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="msbuild"></a>MSBuild
@@ -41,7 +41,7 @@ ms.lasthandoff: 02/22/2017
   
  Visual Studio использует MSBuild для загрузки и сборки управляемых проектов. Файлы проектов в Visual Studio (с расширением CSPROJ, VBPROJ, VCXPROJ) содержат код XML MSBuild, который выполняется при сборке проекта с помощью интегрированной среды разработки. Проекты Visual Studio импортируют все необходимые параметры и процессы сборки для выполнения стандартной работы по разработке, но их можно расширять и изменять в Visual Studio или в редакторе XML.  
   
- Сведения об MSBuild для C++ см. в разделе [MSBuild (Visual C++)](/visual-cpp/build/msbuild-visual-cpp).  
+ Сведения об MSBuild для C++ см. в разделе [MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp).  
   
  В следующих примерах показаны случаи, когда сборки можно запускать с помощью командной строки MSBuild, а не интегрированной среды разработки Visual Studio.  
   

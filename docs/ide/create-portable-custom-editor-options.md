@@ -1,7 +1,7 @@
 ---
-title: "Создание переносимых, настраиваемых параметров редактора | Документы Майкрософт"
+title: "Создание переносимых настраиваемых параметров редактора с EditorConfig | Документы Майкрософт"
 ms.custom: 
-ms.date: 12/14/2016
+ms.date: 02/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -33,12 +33,12 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 31f433b28b67dc6f3179be87cb5894b5b3f0aa4f
-ms.openlocfilehash: 8c986958f141d3efc2ffe29b4176b43e9960e0e1
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 46846db26bee30841e6cb35913d533b512d01ba0
+ms.openlocfilehash: f377ada139d9c0e8b01b640cf603cf349dc1c3c3
+ms.lasthandoff: 03/27/2017
 
 ---
-# <a name="create-portable-custom-editor-settings"></a>Создание переносимых, настраиваемых параметров редактора
+# <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Создание переносимых настраиваемых параметров редактора с EditorConfig
 Параметры текстового редактора в Visual Studio применяются ко всем проектам заданного типа. Так, например, измененный параметр текстового редактора C# применяется ко *всем* проектам C# в Visual Studio. Однако в некоторых случаях может потребоваться использовать соглашения, которые отличаются от ваших собственных настроек редактора. Это можно сделать с помощью файлов [EditorConfig](http://editorconfig.org/), предоставляющих общие параметры текстового редактора для каждого проекта. Параметры EditorConfig, которые содержатся в файле .editorconfig, добавляются в базу кода, заменяя глобальные параметры текстового редактора Visual Studio. Это означает, что каждую базу кода можно настроить для использования нужных вам параметров текстового редактора. Для использования этой возможности в Visual Studio подключаемый модуль не требуется.
 
 ## <a name="coding-consistency"></a>Согласованность при кодировании
@@ -87,3 +87,17 @@ ms.lasthandoff: 02/22/2017
 > [!NOTE]
 >  Добавление файла .editorconfig в проект или базу кода не приведет к преобразованию существующих стилей в новые. Изменение будет применяться только к новым добавленным строкам. При удалении файла .editorconfig из проекта или базы кода необходимо перезагрузить файлы кода для параметров редактора, чтобы восстановить глобальные параметры. Все ошибки в файлах .editorconfig выводятся в окне ошибок в Visual Studio.
 
+## <a name="support-editorconfig-for-your-language-service"></a>Поддержка EditorConfig для языковой службы
+
+В большинстве случаев при реализации языковой службы Visual Studio не требуется выполнять никаких дополнительных действий для поддержки универсальных свойств EditorConfig. Редактор кода автоматически обнаруживает и считывает файл .editorconfig, открываемый пользователем, и задает соответствующие параметры текстового буфера и просмотра. Но в некоторых языковых службах во время редактирования или форматирования текста пользователем вместо глобальных параметров для таких элементов, как знаки табуляции и пробелы, используется параметр соответствующего контекстуального текстового представления. В этих случаях языковую службу нужно обновить для поддержки файлов EditorConfig.
+
+В следующей таблице приведены изменения, необходимые для обновления языковой службы для поддержки файлов EditorConfig.
+
+| Нерекомендуемый глобальный параметр, зависящий от языка | Заменяющий контекстный параметр |
+| :------------- | :------------- |
+| Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.fInsertTabs или Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs | !textBufferOptions.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId) или !textView.Options.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId) |
+| Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uIndentSize или Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.IndentSize | textBufferOptions.GetOptionValue(DefaultOptions. IndentSizeOptionId) или textView.Options.GetOptionValue(DefaultOptions. IndentSizeOptionId) |
+| Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uTabSize или Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.TabSize | textBufferOptions.GetOptionValue(DefaultOptions.TabSizeOptionId) или textView.Options.GetOptionValue(DefaultOptions.TabSizeOptionId) |
+
+# <a name="see-also"></a>См. также
+[Создание переносимых настраиваемых параметров редактора с EditorConfig](create-portable-custom-editor-options.md)

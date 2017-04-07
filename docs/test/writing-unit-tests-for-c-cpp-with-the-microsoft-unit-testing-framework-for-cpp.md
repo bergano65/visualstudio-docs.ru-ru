@@ -1,5 +1,5 @@
 ---
-title: "Написание модульных тестов для языка C/C++ с использованием платформы модульного тестирования Майкрософт для C++ | Документы Майкрософт"
+title: "Написание модульных тестов для языка C/C++ с использованием платформы модульного тестирования Майкрософт для C++ | Документация Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -10,7 +10,7 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 14
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - de-de
@@ -28,9 +28,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: dd88409bb0774342e0a9f50178e1204cabf72e46
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 84549f28f33933eacbf44742b5be129df8ab780e
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Написание модульных тестов для языка C/C++ с использованием платформы модульного тестирования Майкрософт для C++
@@ -48,7 +48,7 @@ ms.lasthandoff: 02/22/2017
   
     -   Добавьте оператор `#include` для файла `.h`, содержащего объявления внешне доступных функций DLL.  
   
-         Файл `.h` должен содержать объявления функций, отмеченных `_declspec(dllimport)`. Кроме того, можно экспортировать методы, используя DEF-файл. Дополнительные сведения см. в статье [Импортирование и экспортирование](/visual-cpp/build/importing-and-exporting).  
+         Файл `.h` должен содержать объявления функций, отмеченных `_declspec(dllimport)`. Кроме того, можно экспортировать методы, используя DEF-файл. Дополнительные сведения см. в статье [Импортирование и экспортирование](/cpp/build/importing-and-exporting).  
   
          Модульные тесты могут получать доступ только к функциям, экспортированным из тестируемой библиотеки DLL.  
   
@@ -98,7 +98,7 @@ ms.lasthandoff: 02/22/2017
   
         3.  В контекстном меню теста выберите пункт **Отладка выбранного теста**, чтобы выполнить тест в отладчике.  
   
-##  <a name="a-namewalkthrougha-walkthrough-developing-an-unmanaged-dll-with-test-explorer"></a><a name="walkthrough"></a> Пошаговое руководство по разработке неуправляемой библиотеки DLL с помощью обозревателя тестов  
+##  <a name="walkthrough"></a> Пошаговое руководство по разработке неуправляемой библиотеки DLL с помощью обозревателя тестов  
  Можно адаптировать это пошаговое руководство для разработки собственной библиотеки DLL. Для этого необходимо выполнить указанные ниже основные шаги.  
   
 1.  [Создайте тестовый проект для машинного кода](#unitTestProject). Тесты создаются в отдельном проекте (не в проекте разрабатываемой библиотеки DLL).  
@@ -117,7 +117,7 @@ ms.lasthandoff: 02/22/2017
   
 8.  [Изолируйте модули от внешних ресурсов](https://msdn.microsoft.com/library/hh549174.aspx). Обычно библиотека DLL зависит от других компонентов разрабатываемой системы, таких как другие библиотеки DLL, базы данных или удаленные подсистемы. Полезно тестировать каждый модуль отдельно от его зависимостей. Внешние компоненты могут сделать выполнение тестов медленным. Во время разработки другие компоненты могут быть еще не готовы.  
   
-###  <a name="a-nameunittestprojecta-create-a-native-unit-test-project"></a><a name="unitTestProject"></a> Создание проекта машинного модульного теста  
+###  <a name="unitTestProject"></a> Создание проекта машинного модульного теста  
   
 1.  В меню **Файл** последовательно выберите пункты **Создать**и **Проект**.  
   
@@ -166,7 +166,7 @@ ms.lasthandoff: 02/22/2017
   
          ![Обозреватель модульных тестов с одним пройденным тестом](../test/media/utecpp04.png "UteCpp04")  
   
-###  <a name="a-namecreatedllprojecta-create-an-unmanaged-dll-project"></a><a name="createDllProject"></a> Создание проекта неуправляемой библиотеки DLL  
+###  <a name="createDllProject"></a> Создание проекта неуправляемой библиотеки DLL  
   
 1.  Создайте проект **Visual C++** с помощью шаблона **Проект Win32**.  
   
@@ -184,7 +184,7 @@ ms.lasthandoff: 02/22/2017
   
      ![Новый проект кода DLL и H-файл с макросами API](../test/media/utecpp07.png "UteCpp07")  
   
-     Оператор объявления `__declspec(dllexport)` делает открытые и защищенные члены класса видимыми вне библиотеки DLL. Для получения дополнительной информации см. [Using dllimport and dllexport in C++ Classes](/visual-cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).  
+     Оператор объявления `__declspec(dllexport)` делает открытые и защищенные члены класса видимыми вне библиотеки DLL. Для получения дополнительной информации см. [Using dllimport and dllexport in C++ Classes](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).  
   
 4.  В основной CPP-файл добавьте минимальное тело функции.  
   
@@ -196,7 +196,7 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-###  <a name="a-namecoupleprojectsa-couple-the-test-project-to-the-dll-project"></a><a name="coupleProjects"></a> Привязка тестового проекта к проекту библиотеки DLL  
+###  <a name="coupleProjects"></a> Привязка тестового проекта к проекту библиотеки DLL  
   
 1.  Добавьте проект DLL в ссылки тестового проекта.  
   
@@ -246,7 +246,7 @@ ms.lasthandoff: 02/22/2017
   
  Вы настроили тест и проекты кода и подтвердили, что можно выполнять тесты, которые запускают функции из проекта кода. Теперь можно начать писать реальные тесты и код.  
   
-###  <a name="a-nameiteratea-iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a> Итеративное расширение тестов и обеспечение их успешного выполнения  
+###  <a name="iterate"></a> Итеративное расширение тестов и обеспечение их успешного выполнения  
   
 1.  Добавьте новый тест.  
   
@@ -304,7 +304,7 @@ ms.lasthandoff: 02/22/2017
     > [!TIP]
     >  Разрабатывайте код, добавляя тесты по одному. После каждой итерации проверяйте, все ли тесты завершаются успешно.  
   
-###  <a name="a-namedebuga-debug-a-failing-test"></a><a name="debug"></a> Отладка непройденного теста  
+###  <a name="debug"></a> Отладка непройденного теста  
   
 1.  Добавьте еще один тест.  
   
@@ -379,7 +379,7 @@ ms.lasthandoff: 02/22/2017
 > [!TIP]
 >  Если у отдельных тестов нет зависимостей, предотвращающих выполнение этих тестов в любом порядке, включите параллельное тестирование с помощью переключателя ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") на панели инструментов. Это может заметно сократить время, необходимое для выполнения всех тестов.  
   
-###  <a name="a-namerefactora-refactor-the-code-without-changing-tests"></a><a name="refactor"></a> Рефакторинг кода без изменения тестов  
+###  <a name="refactor"></a> Рефакторинг кода без изменения тестов  
   
 1.  Упростите основное вычисление в функции SquareRoot.  
   
@@ -414,4 +414,5 @@ ms.lasthandoff: 02/22/2017
  [Общие сведения о взаимодействии управляемого и неуправляемого кода](http://msdn.microsoft.com/library/ms973872.aspx)   
  [Отладка машинного кода](../debugger/debugging-native-code.md)   
  [Пошаговое руководство. Создание и использование библиотеки DLL (C++)](http://msdn.microsoft.com/Library/3ae94848-44e7-4955-bbad-7d40f493e941)   
- [Импортирование и экспортирование](/visual-cpp/build/importing-and-exporting)
+ [Импортирование и экспортирование](/cpp/build/importing-and-exporting)
+

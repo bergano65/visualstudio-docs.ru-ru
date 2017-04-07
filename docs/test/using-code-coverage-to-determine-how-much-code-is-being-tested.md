@@ -12,7 +12,7 @@ helpviewer_keywords:
 - code coverage
 ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 36
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - cs-cz
@@ -271,7 +271,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
   
      При наличии нескольких определений исходного кода теста повторите этот шаг для каждого из них.  
   
-    -   *Однако не существует поля с именем **Тип файла параметров запуска**.*  
+    -   *Однако не существует поля с именем**Тип файла параметров запуска**.*  
   
          В разделе **Автоматизированные тесты** щелкните **Тестовая сборка** и нажмите кнопку с многоточием **[...]** в конце строки. В диалоговом окне **Добавление/изменение тестового запуска** в разделе **Средство выполнения тестов** щелкните **Средство выполнения тестов Visual Studio**.  
   
@@ -302,3 +302,4 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
  [Настройка анализа покрытия кода](../test/customizing-code-coverage-analysis.md)   
  [Troubleshooting Code Coverage](../test/troubleshooting-code-coverage.md)  (Устранение неполадок с покрытием кода)  
  [Модульное тестирование кода](../test/unit-test-your-code.md)
+

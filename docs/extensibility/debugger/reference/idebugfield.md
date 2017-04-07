@@ -31,9 +31,9 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e272f7b5e314e09d111ca3996870f5131ebdc3d0
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: b96de879e880fc786f3bcedbe797cb66e68e04b9
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="idebugfield"></a>IDebugField
@@ -49,7 +49,7 @@ IDebugField : IUnknown
  Символ поставщик реализует этот интерфейс как базовый класс для всех полей.  
   
 ## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- Этот интерфейс является базовым классом для всех полей. На основе возвращаемого значения из [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md), этот интерфейс может возвращать более специализированными интерфейсами с помощью [QueryInterface](/visual-cpp/atl/queryinterface). Кроме того, многие интерфейсы возвращают `IDebugField` объектов с помощью различных методов.  
+ Этот интерфейс является базовым классом для всех полей. На основе возвращаемого значения [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md), этот интерфейс может возвращать более специализированных интерфейсов с помощью [QueryInterface](/cpp/atl/queryinterface). Кроме того, многие интерфейсы возвращают `IDebugField` объекты из различных методов.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugField`.  
@@ -59,17 +59,17 @@ IDebugField : IUnknown
 |[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)|Возвращает отображаемую информацию о символов или типа.|  
 |[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)|Возвращает тип поля.|  
 |[GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)|Возвращает тип поля.|  
-|[GetContainer](../../../extensibility/debugger/reference/idebugfield-getcontainer.md)|Возвращает контейнер поля.|  
+|[GetContainer](../../../extensibility/debugger/reference/idebugfield-getcontainer.md)|Получает контейнер поля.|  
 |[GetAddress](../../../extensibility/debugger/reference/idebugfield-getaddress.md)|Получает адрес поля.|  
 |[GetSize](../../../extensibility/debugger/reference/idebugfield-getsize.md)|Получает размер поля в байтах.|  
 |[GetExtendedInfo](../../../extensibility/debugger/reference/idebugfield-getextendedinfo.md)|Возвращает расширенные сведения о поле.|  
 |[Равно](../../../extensibility/debugger/reference/idebugfield-equal.md)|Сравнивает два поля.|  
-|[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|Возвращает сведения зависят от типов символов или типа.|  
+|[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|Получает сведения зависят от типов о символа или типа.|  
   
 ## <a name="remarks"></a>Примечания  
  Тип эквивалентен языка C `typedef`.  
   
- В следующем примере язык C++ `weather` является типом класса и `sunny` и `stormy` символов:  
+ В следующем примере язык C++ `weather` является типом класса и `sunny` и `stormy` являются символами:  
   
 ```cpp#  
 class weather;  
@@ -77,7 +77,7 @@ weather sunny;
 weather stormy;  
 ```  
   
- Поле представляет символ ли тип можно определить путем вызова [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) и проверив [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) результат. Если `FIELD_KIND_TYPE` установлен бит, поле имеет тип и если `FIELD_KIND_SYMBOL` установлен бит, он представляет собой символ.  
+ Можно определить тип путем вызова ли поле представляет символ [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) и проверив [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) результат. Если `FIELD_KIND_TYPE` установлен бит, поле имеет тип и если `FIELD_KIND_SYMBOL` установлен бит, это символ.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: sh.h  

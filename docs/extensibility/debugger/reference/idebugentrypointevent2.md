@@ -1,52 +1,68 @@
 ---
-title: "IDebugEntryPointEvent2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEntryPointEvent2"
-helpviewer_keywords: 
-  - "Интерфейс IDebugEntryPointEvent2"
+title: "IDebugEntryPointEvent2 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugEntryPointEvent2
+helpviewer_keywords:
+- IDebugEntryPointEvent2 interface
 ms.assetid: a15d1cc3-97b7-438c-8d24-c23149708f42
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugEntryPointEvent2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 194db40a0f73d998d5bf944fde42f09cd7f97b7d
+ms.lasthandoff: 04/05/2017
 
-Отладчик \(DE\) отправляет этот интерфейс для сеанса отладки \(SDM\) диспетчер когда программа выполнена первая инструкция перед его кода пользователя.  
+---
+# <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
+Модуль отладки (DE) отправляет этот интерфейс диспетчера сеанса отладки (SDM) в том случае, когда программа близок к выполнению его первой инструкции пользовательского кода.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IDebugEntryPointEvent2 : IUnknown  
 ```  
   
-## Примечания по реализации  
- DE реализует этот интерфейс реализованы как часть обычных операций.   IDebugEvent2 интерфейс должен быть реализован в одном объекте, как этот интерфейс.  SDM использует [QueryInterface](/visual-cpp/atl/queryinterface) доступ  `IDebugEvent2` интерфейс.  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
+ DE реализует этот интерфейс как часть его нормальной работы. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) на один и тот же объект как этот интерфейс должен быть реализован интерфейс. Использует SDM [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейса.  
   
-## Замечания для вызывающих объектов  
- DE создает и отправляет этот объект события, когда отлаживаемой программы была загружена и готов к выполнению первая инструкция кода пользователя.  Событие отправляется с помощью IDebugEventCallback2 функция обратного вызова, предоставленные SDM, когда он вложило в отлаживаемом программе.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ DE создает и отправляет этот объект события, если отлаживаемая программа была загружена и готов к выполнению первой инструкции пользовательского кода. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функции обратного вызова, предоставляемую SDM, когда он присоединен к отлаживаемой программы.  
   
-## Заметки  
- [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) отправляет когда программа будет выполняться очень первая инструкция.  Например, `IDebugEntryPoint2` пользователь собирается выполнить, когда программа отправляет  `main` функция.  
+## <a name="remarks"></a>Примечания  
+ [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) отправляется, когда программа собирается выполнения самой первой инструкции. Например `IDebugEntryPoint2` отправляется, когда программа находится близок к выполнению пользователя `main` функции.  
   
- Отправляет когда DE `IDebugEntryPointEvent2`текущая позиция кода должна быть в первой инструкции кода пользователя, таких как  `main`.  
+ Когда отправляет DE `IDebugEntryPointEvent2`, в настоящее время код должно представлять в первой инструкции пользовательского кода, например `main`.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)

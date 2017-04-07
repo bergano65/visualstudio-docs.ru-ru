@@ -28,9 +28,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 6fd4350f2e11f95f77cd592f91c1467ddada293d
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 9e635a28d3338bcf518a0aec69c476280eedf6e2
+ms.openlocfilehash: 6cbb3f36dd2ffc0e075b2d79753b1e0e96a8f810
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>Общие элементы пользовательского интерфейса (Visual Studio)
@@ -72,6 +72,9 @@ ms.lasthandoff: 02/22/2017
   
  ["Параметры", "Текстовый редактор", "C/C++", "Дополнительно"](../../ide/reference/options-text-editor-c-cpp-advanced.md)  
  Позволяет задавать дополнительные параметры для файлов C и C++.  
+
+["Параметры", "Текстовый редактор", C/C++, "Дополнительно"](../../ide/reference/options-text-editor-c-cpp-experimental.md)  
+ Позволяет задавать экспериментальные параметры для файлов C и C++. Эти параметры доступны здесь, чтобы вы могли оценить их и отправить нам отзыв. Позднее они могут быть удалены из продукта либо включены в его состав под другим именем. 
   
  ["Параметры", "Текстовый редактор", C#, "Форматирование"](../../ide/reference/options-text-editor-csharp-formatting.md)  
  Позволяет задавать параметры форматирования для файлов C#.  

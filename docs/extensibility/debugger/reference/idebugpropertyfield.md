@@ -1,58 +1,74 @@
 ---
-title: "IDebugPropertyField | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPropertyField"
-helpviewer_keywords: 
-  - "Интерфейс IDebugPropertyField"
+title: "IDebugPropertyField | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugPropertyField
+helpviewer_keywords:
+- IDebugPropertyField interface
 ms.assetid: b50edb2c-fb8d-4def-993d-17d23d2027c1
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugPropertyField
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: cbb7047dc06feebc82c49b9d6a549babd7463852
+ms.lasthandoff: 04/05/2017
 
-Этот интерфейс предоставляет функции, позволяющие получать и устанавливать свойство.  
+---
+# <a name="idebugpropertyfield"></a>IDebugPropertyField
+Этот интерфейс содержит функции, позволяющие получения и задания свойства.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
-IDebugPropertyField : IDebugContainerField  
+IDebugPropertyField : IDebugContainerField  
 ```  
   
-## Примечания по реализации  
- Поставщик символов реализует этот интерфейс на одном и том же объекта, реализующего [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md).  Этот интерфейс специализация, которая поддерживает концепцию свойства в классе.  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
+ Символ поставщик реализует этот интерфейс на тот же объект, реализующий [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md). Этот интерфейс является специализацией, которая поддерживает концепцию свойства в классе.  
   
-## Замечания для вызывающих объектов  
- Используйте [QueryInterface](/visual-cpp/atl/queryinterface) получить этот интерфейс с  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) если интерфейс  [GetKind](../Topic/IDebugField::GetKind.md) метод возвращает  `FIELD_KIND_PROP`.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Используйте [QueryInterface](/cpp/atl/queryinterface) получить этот интерфейс из [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) интерфейс, если [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) возвращает `FIELD_KIND_PROP`.  
   
-## Методы в том порядке Vtable  
- в дополнение к методам на [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) и  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) интерфейсы этот интерфейс реализуется следующие методы:  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
+ В дополнение к методам на [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) и [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) интерфейсах, этот интерфейс реализует следующие методы:  
   
 |Метод|Описание|  
-|-----------|--------------|  
+|------------|-----------------|  
 |[GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)|Возвращает метод, который возвращает свойство.|  
-|[GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)|Возвращает метод, который устанавливает свойство.|  
+|[GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)|Возвращает метод, который задает для свойства.|  
   
-## Заметки  
- Свойство принцип управляемого кода и представляет метод, который обрабатывается как переменную.  Свойства не существуют в автономном C\+\+.  
+## <a name="remarks"></a>Примечания  
+ Свойство — это понятие управляемого кода и представляет метод, который рассматривается как переменную. Свойства не существуют в неуправляемом коде C++.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: sh.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейсы поставщика символов](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

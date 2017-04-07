@@ -1,37 +1,53 @@
 ---
-title: "Практическое руководство: обновление строки состояния | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "редакторы [Visual Studio SDK] прежних версий - обновление строки состояния"
+title: "Как: обновление строки состояния | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- editors [Visual Studio SDK], legacy - update status bar
 ms.assetid: 7500c8a7-4913-4818-a88b-bfd1b9887cb6
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# Практическое руководство: обновление строки состояния
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 15b207618487fd49516849c591ef80c56b618ce0
+ms.lasthandoff: 04/05/2017
 
-**строка состояния** панель элементов управления, расположенная в нижней части многие окна приложения, содержащее один или несколько линий или индикаторы текст состояния.  
+---
+# <a name="how-to-update-the-status-bar"></a>Как: обновление строки состояния
+**Строка состояния** находится панель элементов управления в нижней части многих приложений windows, содержащий один или несколько строк текста состояния или индикаторы.  
   
-### Обновления строки состояния  
+### <a name="to-update-the-status-bar"></a>Для обновления строки состояния  
   
-1.  Реализация <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> в каждом отдельном объекте представления \(DocView\), редактор, например представление формы и представление кода.  
+1.  Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>для каждого отдельного представления объекта (DocView), предоставляющий редактора, таких как представление формы и представление кода.</xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>  
   
-2.  При вызове интегрированной среды разработки <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>обновите сведения  **строка состояния** путем вызова методов  <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>.  
+2.  При вызове метода интегрированной среды разработки <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>, обновить сведения в **строка состояния** , вызывая методы <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>.</xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> </xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>  
   
     > [!NOTE]
-    >  Вызовы интегрированной среды разработки <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> окно документа только если для исходной активированы.  Для получения остатка времени, что окно документа активно, необходимо обновить **строка состояния** подробные сведения о том, как изменяется состояние пользовательского редактора.  
+    >  Интегрированная среда разработки вызовы <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>только при первоначальной активации окна документа.</xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> В течение времени, которое является активной в окне документа, необходимо обновить **строка состояния** сведения, что состояние изменения редактора.  
   
-## Отказоустойчивость  
- A **строка состояния** содержит 4 отдельных полей:  
+## <a name="robust-programming"></a>Отказоустойчивость  
+ Объект **строка состояния** содержит четыре отдельные поля:  
   
 -   Текст состояния  
   
@@ -39,13 +55,13 @@ caps.handback.revision: 12
   
 -   Анимированный значок  
   
--   Данные редактора  
+-   Сведения о редакторе  
   
- Дополнительные сведения см. в разделе [Строки состояния](/visual-cpp/mfc/status-bars).  
+ Дополнительные сведения см. в разделе [строки состояния](/cpp/mfc/status-bars).  
   
- Интегрированная среда разработки автоматически вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> метод вашего  <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> реализация активировано при обработке окно документа.  
+ Интегрированная среда разработки автоматически вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>метод вашей <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>реализации при активации окна документа.</xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> </xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>  
   
- Разработчик VSPackage отвечает за обновление текста состояния в строке состояния.  Интегрированная среда разработки сбросит эта строка "ПОДГОТАВЛИВАЕТ", если текстовое поле состояния набор для очистки текст \(""\) во время простоя.  
+ Разработчик VSPackage, отвечает за обновление текст состояния в строке состояния. IDE сбрасывает эту строку, чтобы все «ГОТОВО», если текстовое поле состояния имеет значение пустой текст ("») в состоянии простоя.  
   
-## См. также  
- [Строки состояния](/visual-cpp/mfc/status-bars)
+## <a name="see-also"></a>См. также  
+ [Строки состояния](/cpp/mfc/status-bars)

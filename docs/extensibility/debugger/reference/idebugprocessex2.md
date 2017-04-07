@@ -1,66 +1,82 @@
 ---
-title: "IDebugProcessEx2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcessEx2"
-helpviewer_keywords: 
-  - "Интерфейс IDebugProcessEx2"
+title: "IDebugProcessEx2 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProcessEx2
+helpviewer_keywords:
+- IDebugProcessEx2 interface
 ms.assetid: 44e309ba-1d6f-499b-aa7e-9b34858a6d57
 caps.latest.revision: 21
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 21
----
-# IDebugProcessEx2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 56483c55810f75042184439be9f0d7bcfb2d6836
+ms.lasthandoff: 04/05/2017
 
-Этот интерфейс позволяет сеансу отладки \(SDM\) уведомляет диспетчер процесс, что вложение или finally удаляет из процесса.  
+---
+# <a name="idebugprocessex2"></a>IDebugProcessEx2
+Этот интерфейс позволяет сеанса, диспетчер отладочной (SDM) уведомления процесса, присоединение или отсоединение от процесса.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IDebugProcessEx2 : IUnknown  
 ```  
   
-## Примечания по реализации  
- Пользовательский поставщик порта реализует этот интерфейс на одном объекте как IDebugProcess2 интерфейс:  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
+ Поставщик пользовательский порт реализует этот интерфейс на один и тот же объект как [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) интерфейс для:  
   
--   Отслеживание поддержки сеансов, подключенных к процессу  
+-   Поддержка отслеживания сеансы, подключенные к процессу  
   
--   Поддержка автоматическ\-вложит через несколько обработчиков отладки  
+-   Поддержка автоматического присоединения через несколько обработчиков отладки  
   
- Пользовательский поставщик порта может реализовать этот интерфейс, если он выбирает.  
+ Пользовательский порт поставщика можно реализовать этот интерфейс, если он выбирает.  
   
-## Замечания для вызывающих объектов  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
   
--   Вызовы SDM [QueryInterface](/visual-cpp/atl/queryinterface) на  `IDebugProcess2` интерфейс для получения этого интерфейса.  
+-   Вызовы SDM [QueryInterface](/cpp/atl/queryinterface) на `IDebugProcess2` интерфейс для получения этого интерфейса.  
   
-## Методы в том порядке Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugProcessEx2`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[Attach](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Сообщает, что сеанс отладки процесса теперь процесс.|  
-|[Detach](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Информирует процесс, что сеанс не процесс отладки.|  
-|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Добавляет список обработчиков узлы программы отладки.|  
+|------------|-----------------|  
+|[Attach](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Сообщает процесс, что сеанс теперь отлаживаемого процесса.|  
+|[Detach](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Сообщает процесс, что сеанс больше не является отладка процесса.|  
+|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Добавляет узлы программы список отладчики.|  
   
-## Заметки  
- Этот интерфейс является частным между SDM и процессом.  
+## <a name="remarks"></a>Примечания  
+ Этот интерфейс является частным между SDM и процесса.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: Portpriv.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Базовых интерфейсов](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

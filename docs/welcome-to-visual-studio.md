@@ -1,7 +1,7 @@
 ---
-title: "Вас приветствует версия-кандидат Visual Studio 2017 | Документы Майкрософт"
+title: "Вас приветствует Visual Studio 2017 | Документация Майкрософт"
 ms.custom: 
-ms.date: 11/16/2016
+ms.date: 03/02/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -10,7 +10,7 @@ f1_keywords:
 - msdnstart
 helpviewer_keywords:
 - Visual Studio
-- Visual Studio 2017 RC
+- Visual Studio 2017
 ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 125
 author: kempb
@@ -32,27 +32,25 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 10e877cbba18807926ad032e9cc1b94f08f0c843
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 7ec312bf7c85759fef700f0746c0981f263d46e2
+ms.lasthandoff: 03/07/2017
 
 ---
-# <a name="welcome-to-visual-studio-2017-rc"></a>Вас приветствует версия-кандидат Visual Studio 2017
-Вас приветствует Visual Studio! У нас есть все необходимое для создания отличных приложений для устройств, настольных приложений, веб-приложений и облачных решений. Написание кода для iOS, Android и Windows в одной интегрированной среде разработки (IDE). Получите доступ к удобной и функциональной среде IntelliSense, воспользуйтесь преимуществами простой навигации по коду, быстрой сборки и развертывания в кратчайшие сроки. Visual Studio повышает продуктивность и позволяет удобно работать самостоятельно и в составе команды.  
+# <a name="welcome-to-visual-studio-2017"></a>Вас приветствует Visual Studio 2017.
+У нас есть все необходимое для создания отличных приложений для устройств, настольных приложений, веб-приложений и облачных решений. Создавайте код для iOS, Android, Linux, Windows и других ОС в одной интегрированной среде разработки (IDE). Воспользуйтесь великолепной интерактивной системой помощи *IntelliSense*, удобными средствами для навигации по коду и отладки, важными преимуществами быстрой сборки и развертывания. Visual Studio повышает продуктивность и позволяет удобно работать самостоятельно и в составе команды.  
 
 > [!NOTE]
->  Щелкните здесь, чтобы ознакомиться с заметками о выпуске [для версии-кандидата Visual Studio 2017](https://go.microsoft.com/fwlink/?linkid=834799).    
+>  Щелкните здесь, чтобы ознакомиться с заметками о выпуске [для Visual Studio 2017](https://go.microsoft.com/fwlink/?linkid=834799).    
 
- Загрузите [Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=517106) бесплатно, чтобы сразу приступить к программированию. Для кросс-платформенной разработки необходимо установить дополнительные пакеты. (Дополнительные возможности можно найти в [других выпусках Visual Studio](http://www.visualstudio.com).)  
+ Загрузите [Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=517106) бесплатно, чтобы сразу приступить к программированию. Для кроссплатформенной разработки необходимо установить дополнительные пакеты. Дополнительные возможности можно найти в [других выпусках Visual Studio](http://www.visualstudio.com).
 
- Можно установить версию-кандидат Visual Studio 2017, скачав эту среду со страницы [загружаемых файлов Visual Studio](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Дополнительные сведения о процедуре установки см. в разделе [Installing Visual Studio 2017 RC](https://go.microsoft.com/fwlink/?linkid=833223) (Установка версии-кандидата Visual Studio). Начните немедленно: создайте новый проект или откройте файл с кодом и начинайте писать код. Выберите тип создаваемого приложения. Кроме того, можете [просмотреть обзор](https://go.microsoft.com/fwlink/?linkid=833058) интегрированной среды разработки Visual Studio, чтобы подробнее познакомиться с инструментами.  
+ Чтобы установить Visual Studio 2017, скачайте эту среду со страницы [Загружаемые файлы Visual Studio](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Дополнительные сведения о процедуре установки см. в статье [Установка Visual Studio 2017](https://go.microsoft.com/fwlink/?linkid=833223). Начните немедленно: создайте новый проект или откройте файл с кодом и начинайте писать код. Выберите тип создаваемого приложения. Кроме того, можете [просмотреть обзор](https://go.microsoft.com/fwlink/?linkid=833058) интегрированной среды разработки Visual Studio, чтобы подробнее познакомиться с инструментами.
 
- Не забудьте просмотреть нашу [галерею кода](https://code.msdn.microsoft.com/) , где вы найдете примеры, которые помогут вам создавать приложения быстрее. Множество видеороликов по Visual Studio можно найти на канале [Channel 9](https://channel9.msdn.com/VisualStudio).
+ Не забудьте просмотреть нашу [галерею кода](https://code.msdn.microsoft.com/) , где вы найдете примеры, которые помогут вам создавать приложения быстрее. Большое количество видеороликов по Visual Studio представлено на канале [Channel 9](https://channel9.msdn.com/VisualStudio) и в [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!jobf=Developer&lang=1033).
 
-## <a name="build-apps-and-games-for-android-ios-and-windows"></a>Создание приложений и игр для Android, iOS и Windows  
- Используя Visual Studio, можно создавать приложения для устройств Android, iOS и Windows. Дополнительные сведения см. в разделе [Разработка кроссплатформенных мобильных приложений](cross-platform/cross-platform-mobile-development-in-visual-studio.md).  
-
- Сведения об универсальных приложениях для Windows (UWP) см. в разделе [Универсальные приложения для Windows](https://dev.windows.com/en-us/windows-apps).  
+## <a name="build-cross-platform-apps-and-games"></a>Создание кроссплатформенных приложений и игр  
+ С помощью Visual Studio вы можете создавать приложения и игры для устройств под управлением Android, iOS, Linux, Windows и других ОС. Дополнительные сведения см. в разделе [Разработка кроссплатформенных мобильных приложений](cross-platform/cross-platform-mobile-development-in-visual-studio.md).  Универсальные приложения Windows позволяют использовать один код на нескольких платформах. Дополнительные сведения см. в документации [по универсальной платформе Windows](https://dev.windows.com/en-us/windows-apps).
 
  Выберите нужные инструменты с учетом требований ваших приложений и языка, который вы хотите использовать.  
 
@@ -68,14 +66,16 @@ ms.lasthandoff: 02/22/2017
 
 [Создание игр в Visual Studio](https://www.visualstudio.com/vs/game-development/) с помощью таких инструментов как DirectX, Unity, Unreal, Cocos и многие другие.
 
-## <a name="connect-your-apps-to-services"></a>Подключение приложений к службам  
- Вы можете подключиться к этим службам без дополнительных настроек (при условии наличия учетной записи для каждой из служб):  
+## <a name="connect-your-apps-to-cloud-services"></a>Подключение приложений к облачным службам  
+ Если у вас есть учетная запись онлайн-службы, например Azure, вы можете подключить к ней свое приложение, используя встроенные подключенные службы.
 
 - [Мобильные службы Azure](http://azure.microsoft.com/documentation/services/mobile-services/)  
 
 - [Служба хранилища Azure](http://azure.microsoft.com/documentation/services/storage/)  
 
-Вы можете установить [средства разработки Azure](https://azure.microsoft.com/en-us/tools/) для создания облачных приложений непосредственно из интегрированной среды разработки и для подключения к службам Azure.
+При установке Visual Studio можно дополнительно установить рабочую нагрузку **Разработка для Azure**, которая содержит пакет SDK Azure для .NET. Эти средства позволяют подключаться к службам Azure, создавать приложения и ресурсы на базе облачных систем и управлять ими непосредственно из интегрированной среды разработки.
+
+- [HockeyApp](https://www.visualstudio.com/hockey-app/) поможет вам распространять бета-версии, собирать динамические отчеты о сбоях и получать отзывы от реальных пользователей.
 
 Кроме того, вы можете интегрировать интерфейсы API REST Office 365 в собственное приложение для подключения к данным, хранящимся в облаке. Дополнительные сведения см. в [этих примерах](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
 
@@ -107,7 +107,7 @@ ms.lasthandoff: 02/22/2017
 
 |||  
 |-|-|  
-|[Новые возможности версии-кандидата Visual Studio 2017](ide/whats-new-in-visual-studio.md)|[Новые возможности Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
+|[Новые возможности Visual Studio 2017](ide/whats-new-in-visual-studio.md)|[Новые возможности Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 |[Новые возможности Visual C#](/dotnet/articles/csharp/csharp-7)|
 
 

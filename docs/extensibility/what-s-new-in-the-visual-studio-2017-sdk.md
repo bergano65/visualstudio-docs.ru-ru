@@ -28,14 +28,12 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 221f4911981deec0330f76a82c0cc8a1b968e56e
-ms.openlocfilehash: 60898d7cace1c10006436a8d98cbd7f7628cf972
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
+ms.openlocfilehash: 3da360fc4df5516f5d976f807319c07b49d8c4e8
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Новые возможности Visual Studio SDK 2017 г.
-
->**Примечание:** этот документ является предварительным и зависимости в выпуске версии-Кандидата Visual Studio 2017 г.
 
 Пакет SDK для Visual Studio содержит следующие новые и обновленные средства для Visual Studio 2017 г.
 
@@ -52,8 +50,8 @@ ms.lasthandoff: 02/22/2017
 Чтобы узнать об этих изменениях см. следующие разделы:
 
 * [Изменения расширяемости для 2017 г.](breaking-changes-2017.md)
-* [Поддержка NGen в VSIX v3](ngen-support.md)
-* [Установка вне папки расширения](set-install-root.md)
+* [Поддержка NGen в VSIX v3](ngen-support.md)
+* [Установка за пределами папки расширений](set-install-root.md)
 * [Вопросы и ответы по расширяемости Visual Studio 2017 г.](faq-2017.md)
 
 ## <a name="migrating-extensibility-project-to-visual-studio-2017"></a>Перенос проекта расширения для Visual Studio 2017 г.

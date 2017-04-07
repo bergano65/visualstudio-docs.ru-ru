@@ -29,13 +29,18 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 28eaaaff0c69ab9588a9d1351aee595abf957e2e
-ms.openlocfilehash: d8c8a0908e7ddd630cfac7b879fae0521acd6944
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 91fde66abf2f325ef0a6a0a2fd30e36981f44033
+ms.openlocfilehash: 8c13675dbd06111bb0eced77f9343c80959afba1
+ms.lasthandoff: 03/08/2017
 
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Журнал изменений (набор средств Visual Studio для Unity)
 Журнал изменений в наборе средств Visual Studio для Unity  
+
+## <a name="3001"></a>3.0.0.1
+ Выпущено 07.03.2017 г.
+
+### <a name="this-version-includes-all-new-features-and-bug-fixes-introduced-with-28x-series"></a>Эта версия включает все новые функции и исправления, представленные в серии 2.8.x.
 
 ## <a name="282-30-preview-3"></a>2.8.2 (3.0 предварительная версия 3)
  Выпущено 25.01.2017 г.
@@ -708,7 +713,7 @@ ms.lasthandoff: 02/22/2017
   
 -   Устранены исключения в меню Unity, когда решение не было загружено.  
   
--   Исправлена ошибка UVS&48;: ввод двойных кавычек иногда вызывает ошибку и прерывает все функции (автозавершение, выделение синтаксиса и т. д.).  
+-   Исправлена ошибка UVS 48: ввод двойных кавычек иногда вызывает ошибку и прерывает все функции (автозавершение, выделение синтаксиса и т. д.).  
   
 -   Исправлена ошибка "UVS-46: двойное открытие файла скрипта (UnityScript) при щелчке списка ошибок в Visual Studio".  
   

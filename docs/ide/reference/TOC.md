@@ -153,7 +153,7 @@
 ## [Команда "Перейти к следующей точке останова"](toggle-breakpoint-command.md)
 ## [Команда Watch](watch-command.md)
 # [Средства XML в Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)
-# [MSBuild](../../msbuild/msbuild1.md)
+# [MSBuild](../../msbuild/msbuild.md)
 # [Специальные функции для людей с ограниченными возможностями](accessibility-for-people-with-disabilities.md)
 ## [Специальные возможности Visual Studio](accessibility-features-of-visual-studio.md)
 ### [Практическое руководство. Настройка параметров доступа в интегрированной среде разработки](how-to-set-ide-accessibility-options.md)

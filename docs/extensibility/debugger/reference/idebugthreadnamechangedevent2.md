@@ -31,13 +31,13 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d57362fa76e5131976a72a77dc030e7a2b117d62
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 5bb790dbc786f41a4eb09e1d6e0c3cf95cb79508
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="idebugthreadnamechangedevent2"></a>IDebugThreadNameChangedEvent2
-Этот интерфейс отправляется ядром отладки (DE) диспетчера сеанса отладки (SDM) при изменении имени потока в отлаживаемой программы.  
+Этот интерфейс отправляется подсистема отладки (DE) диспетчера сеанса отладки (SDM) при изменении имени потока в отлаживаемой программы.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,10 +46,10 @@ IDebugThreadNameChangedEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- DE реализует этот интерфейс для отчета об изменении имени потока. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) на тот же объект, как этот интерфейс должен быть реализован интерфейс. Использует SDM [QueryInterface](/visual-cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейс.  
+ DE реализует этот интерфейс для отчета об изменении имени потока. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) на один и тот же объект как этот интерфейс должен быть реализован интерфейс. Использует SDM [QueryInterface](/cpp/atl/queryinterface) для доступа к `IDebugEvent2` интерфейса.  
   
 ## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
- DE создает и отправляет этот объект события для отчета об изменении имени потока. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функции обратного вызова, предоставляемую SDM, когда он присоединен к отлаживаемой программы.  
+ DE создает и отправляет этот объект события отчета об изменении имени потока. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функции обратного вызова, предоставляемую SDM, когда он присоединяется к отлаживаемой программы.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

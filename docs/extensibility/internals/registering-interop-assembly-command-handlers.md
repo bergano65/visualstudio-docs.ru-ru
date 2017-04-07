@@ -1,67 +1,88 @@
 ---
-title: "Регистрация обработчиков команд сборки взаимодействия | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "сборки взаимодействия, обработчики команд"
-  - "Обработка с использованием сборок взаимодействия, регистрация команд"
+title: "Регистрация обработчиков команд сборки взаимодействия | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- interop assemblies, command handlers
+- command handling with interop assemblies, registering
 ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 caps.latest.revision: 19
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 19
----
-# Регистрация обработчиков команд сборки взаимодействия
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 774266bbcd64e87229f8f97626cdff1462b27fcb
+ms.lasthandoff: 04/05/2017
 
-Необходимо зарегистрировать VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] таким образом, интегрированную среду разработки \(IDE\) правильно направляет его команды.  
+---
+# <a name="registering-interop-assembly-command-handlers"></a>Регистрация обработчиков команд сборки взаимодействия
+Необходимо зарегистрировать VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , чтобы интегрированной среды разработки (IDE) правильно перенаправляет его команды.  
   
- Можно обновить реестр, изменив вручную или с помощью файла регистрации \(RGS\-\). Для получения дополнительной информации см. [Creating Registrar Scripts](/visual-cpp/atl/creating-registrar-scripts).  
+ Можно обновить реестр, путем редактирования вручную или с помощью файла регистратора (RGS-). Дополнительные сведения см. в разделе [Создание скриптов регистратора](/cpp/atl/creating-registrar-scripts).  
   
- Управляемые пакета Framework \(MPF\) предоставляет следующие функциональные возможности через <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> класса.  
+ Managed Package Framework (MPF) предоставляет следующие функциональные возможности через <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>класс.</xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>  
   
- [Command Table Format Reference](http://msdn.microsoft.com/ru-ru/09e9c6ef-9863-48de-9483-d45b7b7c798f) ресурсы находятся в неуправляемых библиотек спутниковой связи DLL пользовательского интерфейса.  
+ [Команда ссылка на формат таблицы](http://msdn.microsoft.com/en-us/09e9c6ef-9863-48de-9483-d45b7b7c798f) ресурсы находятся в неуправляемых библиотек спутниковой связи DLL пользовательского интерфейса.  
   
-## Регистрация обработчика команды VSPackage  
- VSPackage, выступающий в качестве обработчика для пользовательского интерфейса \(UI\) — на основе команды требуется запись реестра с именем VSPackage `GUID`. Этот параметр реестра указывает расположение файла ресурсов VSPackage пользовательского интерфейса и ресурсов меню в файле. Запись реестра, сам находится в разделе HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\VisualStudio\\*\< версия \>*\\Menus, где *\< версия \>* версия [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], например 9.0.  
+## <a name="command-handler-registration-of-a-vspackage"></a>Команда регистрации обработчика пакета VSPackage  
+ Пакет VSPackage, выступающего в качестве обработчика для пользовательского интерфейса (UI) — на основе команды требуется запись реестра с именем VSPackage `GUID`. Эта запись реестра указывает расположение файла ресурсов пользовательского интерфейса в пакете VSPackage и ресурс меню в этом файле. Параметр реестра сам находится в папке HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<версии настроек*\Menus, где *\<версии настроек* версия [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], например 9.0.  
   
 > [!NOTE]
->  Путь к корневому каталогу HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\VisualStudio\\*\< версия \>* может быть переопределен с альтернативной корневых при [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] инициализируется оболочки. Дополнительные сведения о корневой путь в разделе [Установка пакетов VSPackages с помощью установщика Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  
+>  Путь к корневому каталогу HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<версии настроек* может быть переопределен с альтернативной корневой при [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] инициализируется оболочки. Дополнительные сведения о корневой путь в разделе [Установка пакетов VSPackage с помощью установщика Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  
   
-### Запись реестра CTMENU ресурсов  
+### <a name="the-ctmenu-resource-registry-entry"></a>Запись реестра CTMENU ресурсов  
  Структура записи реестра выглядит так:  
   
 ```  
-HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\ Menus\ <GUID> = <Resource Information>  
+HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\  
+  Menus\  
+    <GUID> = <Resource Information>  
 ```  
   
- \<*GUID*\> является `GUID` из VSPackage в форме {XXXXXX\-XXXX\-XXXX\-XXXX\-XXXXXXXXX}.  
+ \<*Идентификатор GUID*настроек — `GUID` пакета VSPackage в форме {XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXX}.  
   
- *\< сведения о ресурсе \>* состоит из трех элементов, разделенных запятыми. Эти элементы расположены в порядке:  
+ *\<Сведения о ресурсах настроек* состоит из трех элементов, разделенных запятыми. Эти элементы располагаются в порядке:  
   
- \<*Путь к DLL ресурсов*\>, \<*идентификатор ресурса меню*\>, \<*версии меню*\>  
+ \<*Путь к DLL-Библиотека ресурсов*настроек, \< *идентификатор ресурса меню*настроек, \< *версии меню*>  
   
- В следующей таблице описаны поля \<*сведения о ресурсах*\>.  
+ В следующей таблице описаны поля \< *сведения о ресурсах*настроек.  
   
 |Элемент|Описание|  
-|-------------|--------------|  
-|\<*Путь к DLL ресурсов*\>|Это полный путь к ресурсу библиотеки DLL, содержащей ресурс меню или указан, означающее, что VSPackage ресурс библиотеки DLL для использования \(как указано в подразделе пакеты, где зарегистрирован VSPackage, сам\).<br /><br /> Обычно это поле оставить пустым.|  
-|\<*Идентификатор ресурса меню*\>|Это идентификатор ресурса `CTMENU` ресурс, который содержит все элементы пользовательского интерфейса для VSPackage при компиляции из [.vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) файла.|  
-|\<*Версии меню*\>|Это число, используемое в качестве версии для `CTMENU` ресурсов.[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Это значение используется для определения, если нужно произвести повторное слияние содержимого `CTMENU` ресурсов с помощью своего кэша всех `CTMENU` ресурсов. Произвести повторное слияние запускается с помощью команды devenv установки.<br /><br /> Это значение следует изначально задано значение 1 и увеличивается на единицу после каждого изменения в `CTMENU` ресурсов и до произвести повторное слияние.|  
+|-------------|-----------------|  
+|\<*Путь к DLL-Библиотека ресурсов*>|Это полный путь к DLL, содержащую ресурс меню ресурса или указан, указание того, что в пакете VSPackage ресурсов DLL для использования (как указано в подразделе пакеты, где зарегистрирован сам пакет VSPackage).<br /><br /> Обычно это поле оставить пустым.|  
+|\<*Идентификатор ресурса меню*>|Это идентификатор ресурса `CTMENU` ресурс, который содержит все элементы пользовательского интерфейса для VSPackage как откомпилирован из [.vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) файла.|  
+|\<*Версия меню*>|Это число, используемое в качестве версии для `CTMENU` ресурсов. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Это значение используется для определения того, ему следует произвести повторное слияние содержимого `CTMENU` ресурсов с использованием своего кэша всех `CTMENU` ресурсов. Произвести повторное слияние инициируется, выполнив команду setup devenv.<br /><br /> Это значение следует изначально задано значение 1 и увеличивается на единицу после каждого изменения в `CTMENU` ресурсов и перед инициализацией произвести повторное слияние.|  
   
-### Пример  
- Вот пример несколько записей ресурсов:  
+### <a name="example"></a>Пример  
+ Ниже приведен пример несколько записей ресурсов:  
   
 ```  
-HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\ Menus\ {019971D6-4685-11D2-B48A-0000F87572EB} = ,1, 10 {1b027a40-8f43-11d0-8d11-00a0c91bc942} = , 10211, 3  
+HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\  
+  Menus\  
+    {019971D6-4685-11D2-B48A-0000F87572EB} = ,1, 10  
+    {1b027a40-8f43-11d0-8d11-00a0c91bc942} = , 10211, 3  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Как добавить элементы пользовательского интерфейса в пакеты VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Команды и меню, использования сборок взаимодействия](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)
+ [Команды и меню, которые используют сборки взаимодействия](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)
