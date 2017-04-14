@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 03/07/2017
+ms.date: 04/06/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -32,9 +32,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
-ms.openlocfilehash: 604221ffe4e8218b1e66fcd32d7a8b1ac4a49765
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
+ms.openlocfilehash: 130317d20e3da1a10634bd2be60df369f635aeb7
+ms.lasthandoff: 04/06/2017
 
 ---
 
@@ -58,17 +58,17 @@ ms.lasthandoff: 03/07/2017
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | Имя | Тип зависимости
---- | --- | ---
-Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | Обязательное
-Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test Manager | Обязательное
+Идентификатор компонента | Имя | Версия | Тип зависимости
+--- | --- | --- | ---
+Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.0.26208.0 | Обязательное
+Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test Manager | 15.0.26228.0 | Обязательное
 ## <a name="unaffiliated-components"></a>Самостоятельные компоненты
 
 Здесь перечислены компоненты, которые не используются рабочими нагрузками, но могут быть выбраны в качестве отдельного компонента.
 
-Идентификатор компонента | Имя
---- | ---
-Н/Д | Н/Д
+Идентификатор компонента | Имя | Версия
+--- | --- | ---
+Н/Д | Н/Д | Н/Д
 
 
 ## <a name="see-also"></a>См. также
@@ -76,5 +76,6 @@ Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test
 * [Идентификаторы рабочих нагрузок и компонентов Visual Studio](workload-and-component-ids.md)
 * [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
 * [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+  * [Примеры параметров командной строки](command-line-parameter-examples.md)
 * [Создание автономной установки Visual Studio](create-an-offline-installation-of-visual-studio.md)
 
