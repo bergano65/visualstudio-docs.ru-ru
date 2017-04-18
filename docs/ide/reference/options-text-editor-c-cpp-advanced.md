@@ -34,9 +34,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: ba9c9b60de651eecc92ea10ba44579a7dadc36df
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 9c9e9e8c63d69e797a28ce4f8b1ac0adcf074b77
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="options-text-editor-cc-advanced"></a>"Параметры", "Текстовый редактор", C/C++, "Дополнительно"
@@ -139,7 +139,7 @@ ms.lasthandoff: 03/27/2017
  **Максимум кэшированных записей преобразования**  
  Максимальное число записей преобразования, которые будут оставаться активными во время запросов IntelliSense. Значение должно находиться в диапазоне от 2 до 15. Это число напрямую связано с максимальным количеством выполняемых процессов VCPkgSrv.exe (для данного экземпляра Visual Studio). Значение по умолчанию — 2, но если у вас достаточно памяти, вы можете увеличить его, что может немного повысить производительность IntelliSense.  
   
- Дополнительные сведения о записях преобразования см. в разделе [Фазы трансляции](/visual-cpp/preprocessor/phases-of-translation).  
+ Дополнительные сведения о записях преобразования см. в разделе [Фазы трансляции](/cpp/preprocessor/phases-of-translation).  
 
  **Преобразовать точки в стрелки в списке членов**  
  Заменяет "." на "->" в списке членов, если это применимо.

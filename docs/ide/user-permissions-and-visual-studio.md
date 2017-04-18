@@ -33,9 +33,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: dc32236dad42ec169fc1c7a243b7c67fd5a8dbf3
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 0dc9fed1e5fc5a827e836310175d558b14cd41b4
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="user-permissions-and-visual-studio"></a>Разрешения пользователей и Visual Studio
@@ -54,8 +54,8 @@ ms.lasthandoff: 03/07/2017
 ||Получение лицензии разработчика для [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|[Получение лицензии разработчика (приложения Магазина Windows)](http://go.microsoft.com/fwlink/?LinkID=241313)|  
 |Панель элементов|Добавление классических элементов управления COM на **Панель элементов**.|[Использование панели элементов](../ide/using-the-toolbox.md)|  
 |Надстройки|Установка и использование надстроек, которые были созданы с помощью классической COM-модели в интегрированной среде разработки.|[Создание надстроек и мастеров](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|  
-|Сборка|Использование выполняющихся после сборки событий, которые регистрируют компонент.|[Сведения об этапах настраиваемой сборки и событиях сборки](/visual-cpp/ide/understanding-custom-build-steps-and-build-events)|  
-||Включение этапа регистрации при сборке проектов С++.|[Сведения об этапах настраиваемой сборки и событиях сборки](/visual-cpp/ide/understanding-custom-build-steps-and-build-events)|  
+|Сборка|Использование выполняющихся после сборки событий, которые регистрируют компонент.|[Сведения об этапах настраиваемой сборки и событиях сборки](/cpp/ide/understanding-custom-build-steps-and-build-events)|  
+||Включение этапа регистрации при сборке проектов С++.|[Сведения об этапах настраиваемой сборки и событиях сборки](/cpp/ide/understanding-custom-build-steps-and-build-events)|  
 |Отладка|Отладка приложений с повышенными разрешениями.|[Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)|  
 ||Отладка приложений, выполняемых под другой учетной записью пользователя, например веб-сайтов ASP.NET.|[Отладка приложений ASP.NET и AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)|  
 ||Отладка в зоне для приложений XAML-браузера (XBAP).|[Основное приложение WPF (PresentationHost.exe)](http://msdn.microsoft.com/Library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|  

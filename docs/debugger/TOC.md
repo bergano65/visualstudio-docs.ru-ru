@@ -97,6 +97,7 @@
 ## [Удаленная отладка ASP.NET на компьютере со службами IIS](remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
 ## [Удаленная отладка проекта на C# ](remote-debugging-csharp.md)
 ## [Удаленная отладка проекта на C++ ](remote-debugging-cpp.md)
+## [Удаленная отладка ASP.NET в Azure](remote-debugging-azure.md)
 ## [Настройка брандмауэра Windows для удаленной отладки](configure-the-windows-firewall-for-remote-debugging.md)
 ## [Назначение портов удаленного отладчика](remote-debugger-port-assignments.md)
 ## [Ошибки удаленной отладки и их устранение](remote-debugging-errors-and-troubleshooting.md)

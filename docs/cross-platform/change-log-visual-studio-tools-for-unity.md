@@ -29,13 +29,42 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 91fde66abf2f325ef0a6a0a2fd30e36981f44033
-ms.openlocfilehash: 8c13675dbd06111bb0eced77f9343c80959afba1
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
+ms.openlocfilehash: 2af148cb8367ea3a584ac8e028c8167e4ad6123b
+ms.lasthandoff: 04/06/2017
 
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Журнал изменений (набор средств Visual Studio для Unity)
 Журнал изменений в наборе средств Visual Studio для Unity  
+
+## <a name="3100"></a>3.1.0.0
+ Выпущено 07.04.2017 г.
+
+### <a name="new-features"></a>Новые функции  
+  
+-   **Отладчик:**  
+
+    -   Добавлена поддержка для новой среды выполнения Unity (совместимой с .NET 4.6 и C# 6).
+        
+-   **Создание проекта:**  
+
+    -   Добавлена поддержка профиля .NET 4.6.
+    
+    -   Добавлена поддержка файлов mcs.rsp.
+    
+    -   При использовании Unity 5.6 всегда следует выбирать параметр небезопасной компиляции.
+    
+    -   Добавлена поддержка создания проекта "Player" при использовании серверной части платформы Магазина Windows и IL2CPP.
+   
+### <a name="bug-fixes"></a>Исправления ошибок  
+  
+-   **Редактор кода:**  
+
+    -   Исправлено положение курсора после вставки метода автоматического завершения.
+  
+-   **Создание проекта:**  
+  
+    -   Удалена постобработка версии сборки.
 
 ## <a name="3001"></a>3.0.0.1
  Выпущено 07.03.2017 г.

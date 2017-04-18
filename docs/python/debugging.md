@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: b5d72a83092c2b97b30b7a8af539a0b1aca50418
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: adf122a478b29674dc2924dcf7d42972a5a3f52e
+ms.openlocfilehash: 1d26ca1a464e2ec15c0d5d338a46b6fb1e7e1d65
+ms.lasthandoff: 04/10/2017
 
 ---
 
@@ -105,7 +105,7 @@ ms.lasthandoff: 03/27/2017
 
 ### <a name="inspecting-and-modifying-values"></a>Проверка и изменение значений
 
-При остановке отладчика можно проверить и изменить значения переменных. Окно контрольного значения позволяет отслеживать отдельные переменные, а также пользовательские выражения. (Общие сведения см. в статье [Debugger feature tour](../debugger/getting-started-with-the-debugger.md#BKMK_Inspect_Variables) (Обзор функций отладчика))
+При остановке отладчика можно проверить и изменить значения переменных. Окно контрольного значения позволяет отслеживать отдельные переменные, а также пользовательские выражения. (Общие сведения см. в статье [Debugger feature tour](../debugger/getting-started-with-the-debugger.md#inspect-variables-with-the-autos-and-locals-windows) (Обзор функций отладчика))
 
 Чтобы просмотреть подсказку для значения, просто наведите указатель мыши на любую переменную в редакторе. Щелкните значение, чтобы изменить его:
 

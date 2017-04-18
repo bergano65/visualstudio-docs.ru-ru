@@ -31,9 +31,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 9f7b45efa01eb245cc4c933126578bbf9aa52f81
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 168e14b8f7e913a2dc4656f01f8cc5cc8ff80284
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="visual-c-enumerations-in-class-designer"></a>Перечисления Visual C++ в конструкторе классов
@@ -59,8 +59,8 @@ enum class CardSuit {
   
  Фигура перечисления C++ в схеме классов выглядит и работает подобно фигуре структуры, за исключением того, что она называется **Перечисление** или **Класс перечисления**, имеет розовый, а не синий цвет, и располагает цветной границей на левом и верхнем полях. Фигуры перечисления и структуры имеют прямые углы.  
   
- Дополнительные сведения об использовании типа `enum` см. в статье [Enumerations](/visual-cpp/cpp/enumerations-cpp) (Перечисления).  
+ Дополнительные сведения об использовании типа `enum` см. в статье [Enumerations](/cpp/cpp/enumerations-cpp) (Перечисления).  
   
 ## <a name="see-also"></a>См. также  
  [Working with Visual C++ Code (Class Designer)](../ide/working-with-visual-cpp-code-class-designer.md)  (Работа с кодом Visual C++ (конструктор классов))  
- [Перечисления](/visual-cpp/cpp/enumerations-cpp)
+ [Перечисления](/cpp/cpp/enumerations-cpp)

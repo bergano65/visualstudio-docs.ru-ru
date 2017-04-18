@@ -1,7 +1,7 @@
 ---
-title: "Редактирование кода в Инструментах Python для Visual Studio | Документация Майкрософт"
+title: "Редактирование кода Python в Visual Studio | Документы Майкрософт"
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 4/10/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -29,15 +29,15 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 79d7c18b672119b745258feee0f646dff96c1922
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
+ms.openlocfilehash: 0f2ecd6ca52a04e8813610c0f406251ef4604354
+ms.lasthandoff: 04/10/2017
 
 ---
 
 # <a name="editing-python-code"></a>Редактирование кода Python
 
-Чтобы сократить время работы разработчиков в редакторе кода, Инструменты Python для Visual Studio (PTVS) предоставляют функции, позволяющие повысить эффективность, например выделение синтаксиса IntelliSense, автозавершение, справка по сигнатурам, переопределения методов, а также поиск и навигация. 
+Чтобы сократить время работы разработчиков в редакторе кода, поддержка Python в Visual Studio предоставляет функции, позволяющие повысить эффективность, например выделение синтаксиса IntelliSense, автозавершение, справка по сигнатурам, переопределения методов, а также поиск и навигация. 
 
 Содержание раздела
 
@@ -45,9 +45,9 @@ ms.lasthandoff: 03/07/2017
 - [Фрагменты кода](#code-snippets)
 - [Навигация по коду](#navigating-your-code)
 
-Общие сведения о редактировании кода в Visual Studio см. в статье [Создание кода в редакторе кода и текста](../ide/writing-code-in-the-code-and-text-editor.md). Ознакомьтесь также со статьей [Структура](../ide/outlining.md), чтобы узнать, как сконцентрироваться на определенных разделах кода. PTVS позволяют проверять классы, определенные в каждом модуле, и функции, определенные в этих классах, с помощью обозревателя объектов Visual Studio (**Просмотр > Другие окна > Обозреватель объектов** или клавиши CTRL+W, J). 
+Общие сведения о редактировании кода в Visual Studio см. в статье [Создание кода в редакторе кода и текста](../ide/writing-code-in-the-code-and-text-editor.md). Ознакомьтесь также со статьей [Структура](../ide/outlining.md), чтобы узнать, как сконцентрироваться на определенных разделах кода. Поддержка Python позволяет проверять классы, определенные в каждом модуле, и функции, определенные в этих классах, с помощью обозревателя объектов Visual Studio (**Просмотр > Другие окна > Обозреватель объектов** или клавиши CTRL+W, J). 
 
-Вводный обзор редактирования кода Python представлен в видео [Getting Started with PTVS, Part 3: Editing](https://youtu.be/uZGZNEyyeKs?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Начало работы с PTVS, часть 3. Редактирование) длительностью 3 мин 48 с, размещенном на сайте youtube.com.
+Вводный обзор редактирования кода Python представлен в видео [Getting Started with Python in Visual Studio, Part 3: Editing](https://youtu.be/uZGZNEyyeKs?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Начало работы с Python в Visual Studio, часть 3. Редактирование) длительностью 3 мин 48 с, размещенном на сайте youtube.com.
 
 > [!VIDEO https://www.youtube.com/embed/uZGZNEyyeKs]
 
@@ -136,12 +136,12 @@ ms.lasthandoff: 03/07/2017
 Сведения о том, как создать собственные фрагменты кода, см. в статье [Пошаговое руководство. Создание фрагмента кода](https://docs.microsoft.com/en-us/visualstudio/ide/walkthrough-creating-a-code-snippet).
 Чтобы настроить фрагмент кода, [создайте его](https://msdn.microsoft.com/en-us/library/ms165394.aspx) и импортируйте с помощью диспетчера фрагментов кода. 
 
-Если вы написали качественный фрагмент кода, к которому вы хотите предоставить общий доступ, разместите его в репозитории и [сообщите нам](https://github.com/Microsoft/PTVS/issues). Возможно, мы сможем включить его в следующий выпуск PTVS.
+Если вы написали качественный фрагмент кода, к которому вы хотите предоставить общий доступ, разместите его в репозитории и [сообщите нам](https://github.com/Microsoft/PTVS/issues). Возможно, мы сможем включить его в следующий выпуск Visual Studio.
 
 
 ## <a name="navigating-your-code"></a>Навигация по коду
 
-PTVS предоставляет несколько вариантов для быстрой навигации по коду, а также по библиотекам, которым доступен исходный код: [Панель навигации](#navigation-bar), [Перейти к определению](#go-to-definition), [Перейти к](#navigate-to), [Найти все ссылки](#find-all-references) и [Обозреватель объектов](#object-browser).
+Поддержка Python предоставляет несколько вариантов для быстрой навигации по коду, а также по библиотекам, которым доступен исходный код: [Панель навигации](#navigation-bar), [Перейти к определению](#go-to-definition), [Перейти к](#navigate-to) и [Найти все ссылки](#find-all-references), как описано ниже. Можно также использовать [обозреватель объектов](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser) Visual Studio.
 
 ### <a name="navigation-bar"></a>Панель навигации
 

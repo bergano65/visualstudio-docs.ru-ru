@@ -28,9 +28,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e843adb473be51e185fd3b5dc514b44f16106157
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 332ef0d4534d8f607a1b5d92038855ebd247657f
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="managing-project-and-solution-properties"></a>Управление свойствами проекта и решения
@@ -60,7 +60,7 @@ ms.lasthandoff: 02/22/2017
   
  ![Свойства проекта Visual C++](../ide/media/vs2015_projprops_cpp.png "VS2015_ProjProps_cpp")  
   
- Сведения о свойствах проекта C++ см. в разделе [Работа со свойствами проектов](/visual-cpp/ide/working-with-project-properties). Дополнительные сведения о свойствах JavaScript см. в разделе [Страницы свойств (JavaScript)](../ide/reference/property-pages-javascript.md).  
+ Сведения о свойствах проекта C++ см. в разделе [Работа со свойствами проектов](/cpp/ide/working-with-project-properties). Дополнительные сведения о свойствах JavaScript см. в разделе [Страницы свойств (JavaScript)](../ide/reference/property-pages-javascript.md).  
   
 ## <a name="solution-properties"></a>Свойства решения  
  Для доступа к свойствам решения щелкните правой кнопкой мыши узел решения в **обозревателе решений** и выберите пункт **Свойства**. В открывшемся диалоговом окне можно задать параметры проекта для сборки отладки или выпуска, указать, какие проекты должны запускаться при нажатии клавиши F5, а также задать параметры анализа кода.  
