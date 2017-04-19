@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: 69740c73cc133e08254fc546d2b59885270725f2
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: 2a6555eb9c0a88b1533428cf2aa932b3fc4960ec
+ms.openlocfilehash: 2a92d10d4e47983de6e3f3c5b55adfcc5dc68c8a
+ms.lasthandoff: 03/30/2017
 
 ---
 
@@ -89,6 +89,11 @@ ms.lasthandoff: 03/10/2017
 >
 > ![Развернутое окно Python Environments (Среды Python)](media/environments-expanded-view.png)
 
+> [!Note]
+> Несмотря на то что Visual Studio учитывает параметр system-site-packages, его нельзя изменить из среды Visual Studio.
+
+### <a name="creating-an-environment-for-an-existing-interpreter"></a>Создание среды для существующего интерпретатора
+
 Если интерпретатор Python установлен стандартно, Visual Studio обычно находит его в ходе проверки реестра. В противном случае Visual Studio можно указать путь к интерпретатору следующим образом:
 
 1. Чтобы создать новую среду, в окне Python Environments (Среды Python) выберите **Настраиваемая...**. После этого откроется [вкладка **Настройка**](#configure-tab), как показано ниже.
@@ -100,9 +105,6 @@ ms.lasthandoff: 03/10/2017
 1. Выберите **Auto Detect** (Автоматическое обнаружение), чтобы Visual Studio заполнила оставшиеся поля, или заполните их вручную.
 1. Выберите **Применить**, чтобы сохранить среду.
 1. Чтобы удалить среду, щелкните **Удалить** на вкладке **Настройка**.
-
-> [!Note]
-> Несмотря на то что Visual Studio учитывает параметр system-site-packages, его нельзя изменить из среды Visual Studio.
 
 ### <a name="overview-tab"></a>Вкладка "Обзор"
 
