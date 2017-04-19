@@ -1,7 +1,7 @@
 ---
 title: "Новые возможности Visual Studio 2017 | Документация Майкрософт"
 ms.custom: 
-ms.date: 04/04/2017
+ms.date: 04/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -31,9 +31,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: b19199274d116e20af4c415673ebbeded95859d9
-ms.lasthandoff: 04/05/2017
+ms.sourcegitcommit: ddc84f3b92d8e0febaea3d23b415bd6e703cc530
+ms.openlocfilehash: e04b972187b7b7ec225b48cc9b8904d804399ff8
+ms.lasthandoff: 04/07/2017
 
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Новые возможности Visual Studio 2017
@@ -130,11 +130,11 @@ Visual Studio перемещает свои расширения, а также 
 Чтобы расширить возможности DevOps для разработки баз данных SQL Server, в следующих выпусках Visual Studio 2017 были добавлены средства для работы с данными Redgate.
 
 В составе Visual Studio 2017 Enterprise:
-- [Redgate ReadyRoll Core](http://www.red-gate.com/products/sql-development/readyroll/entrypage/microsoft-and-readyroll?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=relnotes0317) помогает разрабатывать скрипты переноса, управлять изменениями в базах данных с помощью системы управления версиями, а также автоматизировать безопасное развертывание изменений базы данных SQL Server вместе с изменениями приложений.
-- [Redgate SQL Prompt Core](http://www.red-gate.com/products/sql-development/sql-prompt/entrypage/microsoft-and-sql-prompt?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=relnotes0317) помогает писать запросы SQL быстрее и точнее с помощью интеллектуального завершения кода. SQL Prompt автоматически завершает объекты и ключевые слова базы данных и системы и предлагает варианты при вводе текста. Код становится чище и содержит меньше ошибок, так как вам не нужно запоминать имя или псевдоним каждого столбца.
+- [Redgate ReadyRoll Core](http://www.red-gate.com/products/sql-development/readyroll/entrypage/microsoft-and-readyroll?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=docs-newinvs) помогает разрабатывать скрипты переноса, управлять изменениями в базах данных с помощью системы управления версиями, а также автоматизировать безопасное развертывание изменений базы данных SQL Server вместе с изменениями приложений.
+- [Redgate SQL Prompt Core](http://www.red-gate.com/products/sql-development/sql-prompt/entrypage/microsoft-and-sql-prompt?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=docs-newinvs) помогает писать запросы SQL быстрее и точнее с помощью интеллектуального завершения кода. SQL Prompt автоматически завершает объекты и ключевые слова базы данных и системы и предлагает варианты при вводе текста. Код становится чище и содержит меньше ошибок, так как вам не нужно запоминать имя или псевдоним каждого столбца.
 
 В составе всех выпусков Visual Studio 2017:
-- [Redgate SQL Search](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=relnotes0317) повышает продуктивность работы, позволяя быстро находить фрагменты и объекты SQL в нескольких базах данных.
+- [Redgate SQL Search](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) повышает продуктивность работы, позволяя быстро находить фрагменты и объекты SQL в нескольких базах данных.
 
 Дополнительные сведения см. в статье блога [Средства работы с данными Redgate в Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/).
 
