@@ -13,7 +13,7 @@ JavaScript — полноправный язык в Visual Studio. При нап
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/scripting/javascript/javascript-in-vs-2017">
+        <a href="https://docs.microsoft.com/scripting/javascript/javascript-in-vs-2017">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
