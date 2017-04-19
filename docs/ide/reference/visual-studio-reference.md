@@ -29,9 +29,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 5b6cd74c8c86c2512a0f699392f20c77703799a5
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: e32d7a177a1a6ff0e26fba7f418f368a64bb1337
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="visual-studio-reference"></a>Справочник по Visual Studio
@@ -53,7 +53,7 @@ ms.lasthandoff: 02/22/2017
  [Справочные материалы по Visual Studio для приложений](../../ide/reference/visual-studio-for-applications-reference.md)  
  Содержит справочную документацию по интерфейсам, которые можно использовать для интеграции обработчиков скриптов платформы .NET Framework в приложения.  
   
- [MSBuild](../../msbuild/msbuild1.md)  
+ [MSBuild](../../msbuild/msbuild.md)
  Содержит документы, посвященные использованию платформы построения Майкрософт, интегрированной в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
  [Ресурсы для устранения неполадок интегрированной среды разработки](../../ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md)  
@@ -69,7 +69,7 @@ ms.lasthandoff: 02/22/2017
  [Справочник по Visual Basic](/dotnet/visual-basic/reference/index)  
  Сведения об обновлении [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] и справочник по языку [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] и времени выполнения.  
   
- [Стандартные библиотеки и язык C/C++](/visual-cpp/cpp/c-cpp-language-and-standard-libraries)  
+ [Стандартные библиотеки и язык C/C++](/cpp/cpp/c-cpp-language-and-standard-libraries)  
  Содержит справочную документацию по этому языку.  
   
  [Справочник по JScript](http://msdn.microsoft.com/en-us/2e47f004-963c-4661-b887-a14e4660aadd)  

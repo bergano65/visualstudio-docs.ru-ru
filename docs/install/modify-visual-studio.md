@@ -2,7 +2,7 @@
 title: "Изменение Visual Studio 2017 | Документация Майкрософт"
 description: "Сведения о поэтапном изменении среды Visual Studio."
 ms.custom: H1Hack27Feb2017
-ms.date: 03/27/2017
+ms.date: 04/03/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -34,9 +34,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 9e635a28d3338bcf518a0aec69c476280eedf6e2
-ms.openlocfilehash: 183f5761e0b3159412d1da6bb4f30d716a4c41db
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: af9699b63fdfb81a274affb78856817520c38b05
+ms.openlocfilehash: d1da76eee8295865740720e8575e7258b3719e7e
+ms.lasthandoff: 04/03/2017
 
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Изменение Visual Studio 2017 путем добавления или удаления рабочих нагрузок и компонентов
@@ -72,6 +72,8 @@ ms.lasthandoff: 03/27/2017
 
 Если вы не хотите пользоваться удобной функцией рабочих нагрузок для настройки установленного экземпляра Visual Studio, выберите в установщике Visual Studio вариант **Отдельные компоненты**, выберите нужные компоненты и следуйте указаниям.  
 
+## <a name="get-support"></a>Техническая поддержка
+Иногда возникают проблемы. При сбое установки Visual Studio ознакомьтесь с советами, приведенными в статье базы знаний [Устранение неполадок и исправление ошибок установки и обновления Visual Studio 2017](https://support.microsoft.com/help/4015967/troubleshooting-visual-studio-2017-installation-and-upgrade-failures).
 
 ## <a name="see-also"></a>См. также  
 * [Установка Visual Studio 2017](https://go.microsoft.com/fwlink/?linkid=833223)

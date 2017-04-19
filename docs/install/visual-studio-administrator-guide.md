@@ -1,7 +1,7 @@
 ---
 title: "Руководство администратора Visual Studio | Документы Майкрософт"
 ms.custom: 
-ms.date: 03/07/2017
+ms.date: 04/03/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -33,30 +33,49 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 69ac1327fa9233bf0ecc18be5e7d2f2a4f82b3b0
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: af9699b63fdfb81a274affb78856817520c38b05
+ms.openlocfilehash: fb7a87b720ad29252c602d9be5b958d8417ab93e
+ms.lasthandoff: 04/03/2017
 
 ---
 # <a name="visual-studio-administrator-guide-for-visual-studio-2017"></a>Руководство администратора Visual Studio 2017
 
-Visual Studio можно развертывать в сети, если каждый конечный компьютер отвечает [минимальным требованиям для установки](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs). Чтобы создать общую сетевую папку, запустите файл установки с параметром --layout, как описано в разделе [Создание автономной установки Visual Studio](create-an-offline-installation-of-visual-studio.md), а затем скопируйте его с локального компьютера в общую сетевую папку.   
+ Visual Studio можно развертывать в сети, если каждый конечный компьютер отвечает [минимальным требованиям для установки](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs).
 
- Обратите внимание, что установки из общей сетевой папки "запоминают" исходное расположение, из которого они выполнялись. Это означает, что при восстановлении клиентского компьютера может потребоваться вернуться к сетевой папке, из которой клиент был установлен изначально. В связи с этим необходимо внимательно отнестись к выбору сетевых расположений, которые должны соответствовать времени существования клиентов Visual Studio 2017 в вашей организации.
+ Независимо от выбранного способа развертывания (с помощью такого программного обеспечения, как System Center, или пакетного файла), как правило, выполняются следующие действия:
+
+1. [Создание кэша структуры продукта Visual Studio](create-an-offline-installation-of-visual-studio.md) в сетевой папке.
+
+2. [Выбор рабочих нагрузок и компонентов](workload-and-component-ids.md), которые требуется установить.
+
+3. [Сборка скрипта установки](use-command-line-parameters-to-install-visual-studio.md) с использованием выбранных элементов и других параметров командной строки, определяющих свойства установки.
+
+4. При необходимости [применение ключа корпоративной лицензии](automatically-apply-product-keys-when-deploying-visual-studio.md) в рамках скрипта установки, чтобы освободить пользователей от необходимости отдельной активации программного обеспечения.
+
+5. Выполнение созданного ранее скрипта на целевых рабочих станциях разработчиков с использованием выбранной технологии развертывания.
+
+6. Регулярная установка последних обновлений Visual Studio в расположениях в сети с помощью команды, используемой на шаге 1, для добавления новых компонентов.
+
+> [!IMPORTANT]
+>  Обратите внимание, что установки из общей сетевой папки "запоминают" исходное расположение, из которого они выполнялись. Это означает, что при восстановлении клиентского компьютера может потребоваться вернуться к сетевой папке, из которой клиент был установлен изначально. В связи с этим необходимо внимательно отнестись к выбору сетевых расположений, которые должны соответствовать времени существования клиентов Visual Studio 2017 в вашей организации.
 
 ## <a name="tools"></a>Инструменты
 
- У нас есть несколько средств, которые помогут вам управлять установками Visual Studio.
+ Мы предлагаем несколько средств, предназначенных для обнаружения установленных экземпляров Visual Studio на клиентских компьютерах и управления ими:
 
-* [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples). Это примеры на языках C# и C++, которые помогут пользователям запрашивать экземпляры VS на своих компьютерах.
-* [VSWhere](https://github.com/microsoft/vswhere). Исполняемый EXE-файл на C++, который помогает найти основные средства Visual Studio.
-* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell). Мощные скрипты PowerShell для распространенных задач администрирования, связанных с установкой.
+* [VSWhere](https://github.com/microsoft/vswhere). Исполняемый файл C++, с помощью которого можно определить местоположение базовых инструментов Visual Studio для установленного экземпляра Visual Studio.
+* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell). Скрипты PowerShell, которые позволяют определить установленные экземпляры Visual Studio с помощью API конфигурации установки.
+* [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples). Образцы на языках C# и C++, демонстрирующие применение API конфигурации установки для запроса существующей установки.
+
+Кроме того, [API конфигурации установки](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.setup.configuration.aspx) реализует интерфейсы для разработчиков, которые хотят создавать свои собственные служебные программы для опроса экземпляров Visual Studio.
+
+>[!TIP]
+>Дополнительные сведения об установке Visual Studio 2017 г. в [статьях блога Хита Стюарта (Heath Stewart)](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/).
 
 
 ## <a name="see-also"></a>См. также
 * [Установка Visual Studio 2017](install-visual-studio.md)
+* [Создание автономного установщика Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
 * [Использование параметров командной строки для установки Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
-* [Создание автономной установки Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
-* [Использование идентификаторов рабочих нагрузок и компонентов Visual Studio для настройки автономной установки](workload-and-component-ids.md)
 * [Как сообщить о проблеме с Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
 

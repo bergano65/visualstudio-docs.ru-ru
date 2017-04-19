@@ -2,7 +2,7 @@
 title: "Установка Visual Studio 2017 | Документация Майкрософт"
 description: "Сведения о поэтапной установке среды Visual Studio."
 ms.custom: 
-ms.date: 03/07/2017
+ms.date: 04/03/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -37,9 +37,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 8c4e45eadd81c54a372885ce89ccced1256d3b3d
-ms.openlocfilehash: 5552f67ae880e3b7ec832d6d035382e2abcca116
-ms.lasthandoff: 03/09/2017
+ms.sourcegitcommit: af9699b63fdfb81a274affb78856817520c38b05
+ms.openlocfilehash: 47688935cec36db174c3a0c424b1705ae47c6118
+ms.lasthandoff: 04/03/2017
 
 ---
 # <a name="install-visual-studio-2017"></a>Установка Visual Studio 2017
@@ -102,6 +102,8 @@ ms.lasthandoff: 03/09/2017
 
 По умолчанию при первом запуске установщик пытается использовать язык операционной системы. Эта настройка сохраняется. Вы можете изменить ее, запустив установщик из командной строки. Например, можно принудительно запустить установщик на английском языке, выполнив команду `vs_installer.exe --locale en-US`. Программа установки запомнит этот параметр и использует его при следующем запуске. Установщик поддерживает следующие токены языков: zh-CN, zh-TW, cs-CZ, en-US, fr-FR, de-DE, it-IT, ja-JP, ko-KR, pl-PL, pt-BR, ru-RU, es-ES и tr-TR.
 
+## <a name="get-support"></a>Техническая поддержка
+Иногда возникают проблемы. При сбое установки Visual Studio ознакомьтесь с советами, приведенными в статье базы знаний [Устранение неполадок и исправление ошибок установки и обновления Visual Studio 2017](https://support.microsoft.com/help/4015967/troubleshooting-visual-studio-2017-installation-and-upgrade-failures).
 
 ## <a name="see-also"></a>См. также  
 * [Изменение Visual Studio 2017](modify-visual-studio.md)

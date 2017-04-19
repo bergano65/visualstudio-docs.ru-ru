@@ -1,7 +1,7 @@
 ---
 title: "Новые возможности Visual Studio 2017 | Документация Майкрософт"
 ms.custom: 
-ms.date: 03/08/2017
+ms.date: 04/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -31,9 +31,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 8c4e45eadd81c54a372885ce89ccced1256d3b3d
-ms.openlocfilehash: 14a06f4344989052b0a020570dc87d9697ba95d0
-ms.lasthandoff: 03/09/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: b19199274d116e20af4c415673ebbeded95859d9
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Новые возможности Visual Studio 2017
@@ -122,6 +122,21 @@ Visual Studio перемещает свои расширения, а также 
 В Visual Studio Enterprise 2017 функция Live Unit Testing предоставляет результаты динамического модульного тестирования и отображает результаты покрытия кода в редакторе в процессе кодирования. Она работает в проектах C# и Visual Basic для .NET Framework и поддерживает три платформы тестирования — MSTest, xUnit и NUnit.
 
 ![Live Unit Testing](../ide/media/lut-codewindow.png "Пример новой функции Live Unit Testing в корпоративном выпуске Visual Studio")
+
+Дополнительные сведения см. в статье блога [Динамическое модульное тестирование в Visual Studio 2017 Enterprise](https://blogs.msdn.microsoft.com/visualstudio/2017/03/09/live-unit-testing-in-visual-studio-2017-enterprise/).
+
+### <a name="devops"></a>DevOps
+#### <a name="redgate-data-tools"></a>Средства для работы с данными Redgate:
+Чтобы расширить возможности DevOps для разработки баз данных SQL Server, в следующих выпусках Visual Studio 2017 были добавлены средства для работы с данными Redgate.
+
+В составе Visual Studio 2017 Enterprise:
+- [Redgate ReadyRoll Core](http://www.red-gate.com/products/sql-development/readyroll/entrypage/microsoft-and-readyroll?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=relnotes0317) помогает разрабатывать скрипты переноса, управлять изменениями в базах данных с помощью системы управления версиями, а также автоматизировать безопасное развертывание изменений базы данных SQL Server вместе с изменениями приложений.
+- [Redgate SQL Prompt Core](http://www.red-gate.com/products/sql-development/sql-prompt/entrypage/microsoft-and-sql-prompt?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=relnotes0317) помогает писать запросы SQL быстрее и точнее с помощью интеллектуального завершения кода. SQL Prompt автоматически завершает объекты и ключевые слова базы данных и системы и предлагает варианты при вводе текста. Код становится чище и содержит меньше ошибок, так как вам не нужно запоминать имя или псевдоним каждого столбца.
+
+В составе всех выпусков Visual Studio 2017:
+- [Redgate SQL Search](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=relnotes0317) повышает продуктивность работы, позволяя быстро находить фрагменты и объекты SQL в нескольких базах данных.
+
+Дополнительные сведения см. в статье блога [Средства работы с данными Redgate в Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/).
 
 ### <a name="visual-studio-ide-enhancements"></a>Усовершенствования интегрированной среды разработки Visual Studio
 #### <a name="interact-with-git"></a>Взаимодействие с Git
