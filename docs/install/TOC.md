@@ -1,4 +1,5 @@
 # [Установка Visual Studio](install-visual-studio.md)
+# [Обновление Visual Studio](update-visual-studio.md)
 # [Изменение Visual Studio](modify-visual-studio.md)
 # [Удаление Visual Studio](uninstall-visual-studio.md)
 # [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
