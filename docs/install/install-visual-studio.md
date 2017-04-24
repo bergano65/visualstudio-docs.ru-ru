@@ -2,7 +2,7 @@
 title: "Установка Visual Studio 2017 | Документация Майкрософт"
 description: "Сведения о поэтапной установке среды Visual Studio."
 ms.custom: 
-ms.date: 04/03/2017
+ms.date: 04/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -37,9 +37,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: af9699b63fdfb81a274affb78856817520c38b05
-ms.openlocfilehash: 47688935cec36db174c3a0c424b1705ae47c6118
-ms.lasthandoff: 04/03/2017
+ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
+ms.openlocfilehash: 059dd2068c5aa0d55f94f293d8430a1f401354ba
+ms.lasthandoff: 04/06/2017
 
 ---
 # <a name="install-visual-studio-2017"></a>Установка Visual Studio 2017
@@ -76,7 +76,7 @@ ms.lasthandoff: 04/03/2017
 
 1.  Найдите нужную рабочую нагрузку на экране **Установка Visual Studio**.  
 
-  ![Диалоговое окно установки Visual Studio 2017](media/vs2017-workloads.PNG "Установка Visual Studio 2017")
+  ![Диалоговое окно установки Visual Studio 2017](media/vs2017-workloads.PNG "Установка рабочих нагрузок Visual Studio")
 
      Например, выберите рабочую нагрузку "Разработка классических приложений .NET". В нее входит основной редактор кода по умолчанию, который предоставляет базовую поддержку редактирования кода для более чем 20 языков, возможность открывать и изменять код в любой папке без наличия проекта и интегрированное управление исходным кодом.  
 
@@ -90,7 +90,7 @@ ms.lasthandoff: 04/03/2017
 
 Если вы не хотите пользоваться удобной функцией рабочих нагрузок для настройки установленного экземпляра Visual Studio, выберите в установщике Visual Studio вариант **Отдельные компоненты**, выберите нужные компоненты и следуйте указаниям.
 
-  ![Visual Studio 2017 — установка отдельных компонентов](media/vs2017-workloads.PNG "Установка отдельных компонентов Visual Studio")
+  ![Visual Studio 2017 — установка отдельных компонентов](media/vs2017-components.PNG "Установка отдельных компонентов Visual Studio")
 
 ## <a name="install-language-packs"></a>Установка языковых пакетов
 
@@ -107,7 +107,10 @@ ms.lasthandoff: 04/03/2017
 
 ## <a name="see-also"></a>См. также  
 * [Изменение Visual Studio 2017](modify-visual-studio.md)
+* [Обновление Visual Studio](update-visual-studio.md)
 * [Удаление Visual Studio 2017](uninstall-visual-studio.md)
 * [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
+* [Создание автономного установщика Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+* [Использование параметров командной строки для установки Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) 
 * [Как сообщить о проблеме с Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
 
