@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 2a6555eb9c0a88b1533428cf2aa932b3fc4960ec
-ms.openlocfilehash: 2a92d10d4e47983de6e3f3c5b55adfcc5dc68c8a
-ms.lasthandoff: 03/30/2017
+ms.sourcegitcommit: adf122a478b29674dc2924dcf7d42972a5a3f52e
+ms.openlocfilehash: 1f8f68e36f94aaf253d304edaa2360333b261be3
+ms.lasthandoff: 04/10/2017
 
 ---
 
@@ -231,7 +231,7 @@ Visual Studio использует среду по умолчанию для в�
 
 ![Создание виртуальной среды при наличии файла requirements.txt](media/environments-requirements-txt.png)
 
-Если pip не может установить пакет, указанный в файле `requirements.txt`, установка завершается сбоем. В этом случае нужно вручную исключить этот пакет из файла или использовать [параметры pip](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) для указания ссылки на устанавливаемую версию пакета. Например, можно использовать [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) для компиляции зависимости и добавления параметра `--find-links <path>` в файл `requirements.txt`.
+Если PIP не может установить пакет, указанный в файле `requirements.txt`, вся установка завершается сбоем. В этом случае нужно вручную исключить этот пакет из файла или использовать [параметры pip](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) для указания ссылки на устанавливаемую версию пакета. Например, можно использовать [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) для компиляции зависимости и добавления параметра `--find-links <path>` в файл `requirements.txt`.
 
 ```output
 C:\Project>pip wheel azure
