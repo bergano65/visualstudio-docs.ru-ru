@@ -2,7 +2,7 @@
 title: "Создание автономного установщика Visual Studio 2017 | Документация Майкрософт"
 description: "Сведения о создании автономного установщика Visual Studio."
 ms.custom: 
-ms.date: 03/21/2017
+ms.date: 04/05/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -34,9 +34,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5b6334c38a6c058f274498c06f8e07c934931910
-ms.openlocfilehash: 563c78a49eb55886b1ddbd4f437951c99c6568e5
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: 4e33dc3ebb32569b547aa9bcb6db9a15dbe4fc21
+ms.openlocfilehash: fda1a4fbfebd856312174fe24ff161b0e9d04bb9
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="create-an-offline-installer-for-visual-studio-2017"></a>Создание автономного установщика Visual Studio 2017
@@ -66,7 +66,7 @@ ms.lasthandoff: 03/22/2017
 - Команда для выпуска Visual Studio Professional: <br> ```vs_professional.exe --layout c:\vs2017offline```
 - Команда для выпуска Visual Studio Community: <br> ```vs_community.exe --layout c:\vs2017offline```
 
-Дополнительные примеры см. в разделе [Настройка автономного установщика](#how-to-customize-your-offline- installer) на этой странице.
+Дополнительные примеры см. в разделе [Настройка автономного установщика](#how-to-customize-your-offline-installer) на этой странице.
 
 ## <a name="install-from-the-offline-installation-folder"></a>Установка из папки автономной установки
 Вы можете запустить автономную установку в любой удобный момент. В любом случае потребуется выполнить следующие действия.
@@ -98,6 +98,7 @@ ms.lasthandoff: 03/22/2017
 
 | Проблеми       | Элемент                   | Решение |
 | ----------- | ---------------------- | -------- |
+| Вы получаете сообщение об ошибке установщика Visual Studio "Установка завершена с предупреждениями", после чего эмулятор Windows завершает установку со сбоем. | Эмулятор Windows 10 | Откройте папку установки в автономном режиме для Visual Studio, перейдите к вложенной папке "Win10_Emulator_10.0.15063,version=10.0.15063.12,chip=x64" и запустите файл EmulatorSetup.exe, чтобы установить эмулятор Windows. |
 | Появляется предупреждение о невозможности установки некоторых компонентов и пакетов.  | Программа установки Android SDK (уровень API) | Если вы хотите включить пакеты SDK Android (уровень API), для создания автономного установщика потребуется подключение к Интернету. Если вы находитесь в сети с ограниченным доступом, необходимо разрешить доступ к следующим URL-адресам: <br><br> — http://dl.google.com:443 <br> — http://dl-ssl.google.com:443 <br>  — https://dl-ssl.google.com/android/repository/*<br><br>Дополнительные сведения об устранении возможных проблем с параметрами прокси-сервера см. в записи блога [Сбои установки Visual Studio (программа установки Android SDK) при использовании прокси-сервера](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/).  |  
 | У пользователей отсутствуют права доступа к файлам. | Разрешения (ACL) | *Прежде* чем открывать общий доступ к автономной установке, необходимо настроить разрешения (ACL) и предоставить пользователям права на чтение. |
 | Не удается установить новые рабочие нагрузки, компоненты или языки.  | `--layout`  | Если вы производите установку из частичного макета и выбираете рабочие нагрузки, компоненты или языки, которых нет в этом макете, вам потребуется доступ в Интернет. |

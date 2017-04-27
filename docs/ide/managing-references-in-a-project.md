@@ -43,9 +43,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 8c478c49ee429e0c5d96dc60f035fcb460b902c8
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 06cdfb076120ffd7459a16b56c659bb86942cd7f
+ms.openlocfilehash: 890e181643d2cc5d4861d64ffd9052e0400126d0
+ms.lasthandoff: 03/31/2017
 
 ---
 # <a name="managing-references-in-a-project"></a>Управление ссылками в проекте
@@ -70,9 +70,9 @@ ms.lasthandoff: 03/07/2017
 ## <a name="windows-store-app-references"></a>ссылки на приложение Магазина Windows;  
 
 ### <a name="project-references"></a>Ссылки проекта  
- Проекты универсальной платформы Windows (UWP), предназначенные для Windows 10, могут создавать ссылки на другие проекты UWP в решении либо на двоичные файлы или проекты Магазина Windows, ориентированные на [!INCLUDE[win81](../debugger/includes/win81_md.md)], при условии, что эти проекты не используют интерфейсы API, которые являются устаревшими в Windows 10. Более подробную информацию см. в разделе [Перенос приложения из среды выполнения Windows 8 в UWP](https://msdn.microsoft.com/en-us/library/windows/apps/dn954974.aspx).  
+ Проекты универсальной платформы Windows (UWP), предназначенные для Windows 10, могут создавать ссылки на другие проекты UWP в решении либо на двоичные файлы или проекты Магазина Windows, ориентированные на [!INCLUDE[win81](../debugger/includes/win81_md.md)], при условии, что эти проекты не используют интерфейсы API, которые являются устаревшими в Windows 10. Более подробную информацию см. в разделе [Перенос приложения из среды выполнения Windows 8 в UWP](https://docs.microsoft.com/en-us/windows/uwp/porting/w8x-to-uwp-root).  
 
- Если вы решили переориентировать проекты [!INCLUDE[win81](../debugger/includes/win81_md.md)] на Windows 10, см. раздел [Перенос, миграция и обновление проектов Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
+ Если вы решили изменить целевую платформу проектов [!INCLUDE[win81](../debugger/includes/win81_md.md)] на Windows 10, ознакомьтесь со статьей [Перенос, миграция и обновление проектов Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md).  
 
 ### <a name="extension-sdk-references"></a>Справочник по пакетам SDK расширений  
  Проекты Visual Basic, C#, C++ и JavaScript Магазина Windows, предназначенные для UWP, могут ссылаться на пакеты SDK расширений, предназначенные для [!INCLUDE[win81](../debugger/includes/win81_md.md)], при условии, что эти пакеты SDK расширений не используют API, которые являются устаревшими в Windows 10. Проверьте сайт поставщика пакета SDK расширений, чтобы выяснить, могут ли на него ссылаться проекты Магазина Windows, предназначенные для UWP.  
