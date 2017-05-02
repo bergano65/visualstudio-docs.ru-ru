@@ -22,7 +22,7 @@ caps.handback.revision: 8
 В JavaScript можно использовать почти все элементы API среды выполнения Windows.  Однако на некоторые аспекты представления элементов среды выполнения Windows в JavaScript нужно обратить особое внимание.  
   
 > [!IMPORTANT]
->  Дополнительные сведения о создании компонентов среды выполнения Windows в C\+\+, C\# или Visual Basic и их использовании в JavaScript см. в разделе [Создание компонентов среды выполнения Windows](../Topic/Creating%20Windows%20Runtime%20Components.md).  
+>  Дополнительные сведения о создании компонентов среды выполнения Windows в C\+\+, C\# или Visual Basic и их использовании в JavaScript см. в разделе [Создание компонентов среды выполнения Windows](http://msdn.microsoft.com/library/9a6b8f0a-7d5e-40a0-a9c5-a59b4908e133).  
   
 ## Особые случаи использования типов среды выполнения Windows в представлении JavaScript  
   

@@ -37,4 +37,4 @@ caps.handback.revision: 7
  Ни один из этих ограничений, которые применяются к узлу, который выбирает реализовать состояние многопоточного интерфейс [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) и состояние продетую в объектной модели.  Такой узел может использовать интерфейс [IActiveScript](../winscript/reference/iactivescript.md) из любого потока, без ограничений.  
   
 ## См. также  
- [\<PAVE OVER\> Интерфейсы скриптов Microsoft Windows — введение](../Topic/%3CPAVE%20OVER%3E%20Microsoft%20Windows%20Script%20Interfaces%20-%20Introduction.md)
+ [\<PAVE OVER\> Интерфейсы скриптов Microsoft Windows — введение](http://msdn.microsoft.com/library/3d10169f-2984-49ef-90c6-dd89c97f1dd6)

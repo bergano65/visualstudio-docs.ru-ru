@@ -43,7 +43,7 @@ caps.handback.revision: 28
   
 -   Сведения об API\-интерфейсах [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] см. в разделе [Справочник по API для среды выполнения Windows и библиотеки Windows для JavaScript](http://go.microsoft.com/fwlink/p/?LinkID=250938).  
   
- Редактор JavaScript в Visual Studio обеспечивает поддержку IntelliSense.  Дополнительные сведения см. в разделе [IntelliSense для JavaScript](../Topic/JavaScript%20IntelliSense.md).  
+ Редактор JavaScript в Visual Studio обеспечивает поддержку IntelliSense.  Дополнительные сведения см. в разделе [IntelliSense для JavaScript](~/ide/javascript-intellisense.md).  
   
 ## В этом подразделе  
  [Сведения о версии](../../javascript/reference/javascript-version-information.md)  
