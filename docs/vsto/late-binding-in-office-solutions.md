@@ -68,7 +68,7 @@ caps.handback.revision: 48
  [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Использование типа dynamic &#40;Руководство по программированию на C&#35;&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
  [Оператор Option Strict](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
- [Отражение &#40;C&#35; и Visual Basic&#41;](../Topic/Reflection%20(C%23%20and%20Visual%20Basic).md)   
+ [Отражение &#40;C&#35; и Visual Basic&#41;](http://msdn.microsoft.com/library/5d1d1bcf-08de-4d0b-97a8-912d17c00f26)   
  [Проектирование и создание решений Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

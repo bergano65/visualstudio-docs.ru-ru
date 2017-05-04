@@ -220,7 +220,7 @@ caps.handback.revision: 39
 ## Создание вручную пакетов VSIX  
  Чтобы создать вручную пакеты VSIX для расширений инструментов SharePoint, выполните следующие действия.  
   
-1.  Создайте EXTENSION.VSIXMANIFEST\-файл, \[Типы\_контента\].xml и файл пакета VSIX \(VSIX\-файл\).  Дополнительные сведения см. в разделах [Составляющие пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md) и [Практическое руководство. Упаковка расширения &#40;развертывания VSIX&#41; вручную](../Topic/How%20to:%20Manually%20Package%20an%20Extension%20(VSIX%20Deployment).md).  
+1.  Создайте EXTENSION.VSIXMANIFEST\-файл, \[Типы\_контента\].xml и файл пакета VSIX \(VSIX\-файл\).  Дополнительные сведения см. в разделах [Составляющие пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md) и [Практическое руководство. Упаковка расширения &#40;развертывания VSIX&#41; вручную](~/misc/how-to-manually-package-an-extension-vsix-deployment.md).  
   
 2.  Добавьте сборку расширения в пакет VSIX.  Если расширение содержит команду SharePoint, также добавьте сборку, которая реализует команду SharePoint в пакете VSIX.  
   

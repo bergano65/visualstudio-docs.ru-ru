@@ -39,7 +39,7 @@ caps.handback.revision: 39
   
 #### Добавление объекта данных  
   
--   Откройте окно **Источники данных** и создайте источник данных из объекта. Для получения дополнительной информации см. [Практическое руководство. Подключение к данным в объектах](../Topic/How%20to:%20Connect%20to%20Data%20in%20Objects.md).  
+-   Откройте окно **Источники данных** и создайте источник данных из объекта. Для получения дополнительной информации см. [Практическое руководство. Подключение к данным в объектах](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
   
 ## Подключение объекта данных к BindingSource  
  В проектах уровня документа вы добавляете элементы управления в документ и привязываете их к данным во время разработки.  
@@ -75,6 +75,6 @@ caps.handback.revision: 39
  [Практическое руководство. Заполнение документов данными из базы данных](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
  [Практическое руководство. Обновление источника данных с помощью данных из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
  [Подключение к данным в приложениях Windows Forms](/visual-studio/data-tools/connecting-to-data-in-windows-forms-applications)   
- [Общие сведения о компоненте BindingSource](../Topic/BindingSource%20Component%20Overview.md)  
+ [Общие сведения о компоненте BindingSource](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)  
   
   

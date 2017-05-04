@@ -49,7 +49,7 @@ caps.handback.revision: 43
   
  Знание следующих подходов может оказаться полезным, но не требуется для выполнения пошагового руководства.  
   
--   Мастера для проектов и шаблонов элементов в Visual Studio.  Дополнительные сведения см. в разделе [Практическое руководство. Использование мастеров для шаблонов проекта](../Topic/How%20to:%20Use%20Wizards%20with%20Project%20Templates.md) и в документации на интерфейс <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>.  
+-   Мастера для проектов и шаблонов элементов в Visual Studio.  Дополнительные сведения см. в разделе [Практическое руководство. Использование мастеров для шаблонов проекта](~/extensibility/how-to-use-wizards-with-project-templates.md) и в документации на интерфейс <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>.  
   
 -   настраиваемые действия в SharePoint.  Дополнительные сведения см. в разделе [Custom Action](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
@@ -84,7 +84,7 @@ caps.handback.revision: 43
   
 2.  В **Конструктор проектов** проверьте, что требуемая версия .NET Framework устанавливаются на платформу .NET Framework 4,5.  
   
-     Для проектов visual C\#, можно установить это значение на вкладке **Приложение**.  Для проектов Visual Basic, можно установить это значение на вкладке **Компилировать**.  Дополнительные сведения см. в разделе [Практическое руководство. Определение целевой версии .NET Framework](../Topic/How%20to:%20Target%20a%20Version%20of%20the%20.NET%20Framework.md).  
+     Для проектов visual C\#, можно установить это значение на вкладке **Приложение**.  Для проектов Visual Basic, можно установить это значение на вкладке **Компилировать**.  Дополнительные сведения см. в разделе [Практическое руководство. Определение целевой версии .NET Framework](~/ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 3.  В проекте **ItemTemplateWizard** добавьте элемент **Окно \(WPF\)** в проект и назовите элемент **WizardWindow**.  
   
@@ -354,7 +354,7 @@ caps.handback.revision: 43
  [Defining Custom SharePoint Project Item Types](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Практическое руководство. Использование мастеров для шаблонов проекта](../Topic/How%20to:%20Use%20Wizards%20with%20Project%20Templates.md)   
+ [Практическое руководство. Использование мастеров для шаблонов проекта](~/extensibility/how-to-use-wizards-with-project-templates.md)   
  [По умолчанию расположений и идентификаторы настраиваемых действий](http://go.microsoft.com/fwlink/?LinkId=181964)  
   
   

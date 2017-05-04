@@ -28,12 +28,12 @@ caps.handback.revision: 40
   
 |Элемент|Описание|Атрибуты|  
 |-------------|--------------|--------------|  
-|[Элемент &#60;assembly&#62; &#40;приложение ClickOnce&#41;](../Topic/%3Cassembly%3E%20Element%20(ClickOnce%20Application).md)|Обязательный. Это элемент верхнего уровня.|`manifestVersion`|  
-|[Элемент &#60;assemblyIdentity&#62; &#40;приложение ClickOnce&#41;](../Topic/%3CassemblyIdentity%3E%20Element%20(ClickOnce%20Application).md)|Обязательный. Определяет основную сборку приложения [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)].|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
-|[Элемент &#60;trustInfo&#62; &#40;приложение ClickOnce&#41;](../Topic/%3CtrustInfo%3E%20Element%20(ClickOnce%20Application).md)|Определяет требования к безопасности приложения.|Нет|  
-|[Элемент &#60;entryPoint&#62; &#40;приложение ClickOnce&#41;](../Topic/%3CentryPoint%3E%20Element%20(ClickOnce%20Application).md)|Обязательный. Определяет точку входа в код приложения для выполнения.|`name`<br /><br /> `dependencyName`<br /><br /> `customHostSpecified`|  
-|[Элемент &#60;dependency&#62; &#40;приложение ClickOnce&#41;](../Topic/%3Cdependency%3E%20Element%20(ClickOnce%20Application).md)|Обязательный. Определяет все зависимости, необходимые для выполнения приложения. При необходимости определяет сборки, которые требуется установить предварительно.|Нет|  
-|[Элемент &#60;file&#62; &#40;приложение ClickOnce&#41;](../Topic/%3Cfile%3E%20Element%20(ClickOnce%20Application).md)|Обязательный. Определяет все не являющиеся сборками файлы, используемые приложением. Может включать данные изоляции модели COM, связанные с этим файлом.|`name`<br /><br /> `size`|  
+|[Элемент &#60;assembly&#62; &#40;приложение ClickOnce&#41;](~/deployment/assembly-element-clickonce-application.md)|Обязательный. Это элемент верхнего уровня.|`manifestVersion`|  
+|[Элемент &#60;assemblyIdentity&#62; &#40;приложение ClickOnce&#41;](~/deployment/assemblyidentity-element-clickonce-application.md)|Обязательный. Определяет основную сборку приложения [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)].|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
+|[Элемент &#60;trustInfo&#62; &#40;приложение ClickOnce&#41;](~/deployment/trustinfo-element-clickonce-application.md)|Определяет требования к безопасности приложения.|Нет|  
+|[Элемент &#60;entryPoint&#62; &#40;приложение ClickOnce&#41;](~/deployment/entrypoint-element-clickonce-application.md)|Обязательный. Определяет точку входа в код приложения для выполнения.|`name`<br /><br /> `dependencyName`<br /><br /> `customHostSpecified`|  
+|[Элемент &#60;dependency&#62; &#40;приложение ClickOnce&#41;](~/deployment/dependency-element-clickonce-application.md)|Обязательный. Определяет все зависимости, необходимые для выполнения приложения. При необходимости определяет сборки, которые требуется установить предварительно.|Нет|  
+|[Элемент &#60;file&#62; &#40;приложение ClickOnce&#41;](http://msdn.microsoft.com/library/56e3490c-eed5-4841-b1bf-eefe778b6ac9)|Обязательный. Определяет все не являющиеся сборками файлы, используемые приложением. Может включать данные изоляции модели COM, связанные с этим файлом.|`name`<br /><br /> `size`|  
   
  Манифесты приложений для решений Office имеют указанный ниже элемент в пространстве имен `co.v1`.  
   
@@ -70,7 +70,7 @@ caps.handback.revision: 40
 |[Элемент &#60;vstoRuntime&#62; &#40;разработка решений Office в Visual Studio&#41;](../vsto/vstoruntime-element-office-development-in-visual-studio.md)|Обязательный. Указывает конкретную версию среды выполнения средств Visual Studio для Office, поддерживаемую решением Office.|`release`<br /><br /> `version`<br /><br /> `supportUrl`|  
   
 ## Заметки  
- Манифесты приложений и развертывания в решениях Office можно менять вручную. После этого манифесты приложений и развертывания необходимо подписать повторно с помощью Инструмента создания и изменения манифестов \(mage.exe и mageui.exe\). Для получения дополнительной информации см. [Практическое руководство. Повторное подписание манифестов приложения и развертывания](../Topic/How%20to:%20Re-sign%20Application%20and%20Deployment%20Manifests.md).  
+ Манифесты приложений и развертывания в решениях Office можно менять вручную. После этого манифесты приложений и развертывания необходимо подписать повторно с помощью Инструмента создания и изменения манифестов \(mage.exe и mageui.exe\). Для получения дополнительной информации см. [Практическое руководство. Повторное подписание манифестов приложения и развертывания](~/deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## Расположение файлов  
  Манифест приложения определяется для отдельной версии решения. По этой причине манифест приложения следует хранить отдельно от манифеста развертывания.[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] помещает файлы, относящиеся к конкретной версии, в подкаталог, название которого соответствует версии и который находится в подкаталоге **Файлы приложения** каталога публикации.  

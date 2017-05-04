@@ -95,11 +95,11 @@ caps.handback.revision: 14
   
  В VSPackage объект <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> можно запросить с помощью одного из следующих методов.  
   
--   Метода <xref:System.IServiceProvider.GetService%2A> управляемого пакетом VSPackage, производным от класса <xref:Microsoft.VisualStudio.Shell.Package>.  Дополнительные сведения см. в разделе [Практическое руководство: Получение службы](../Topic/How%20to:%20Get%20a%20Service.md).  
+-   Метода <xref:System.IServiceProvider.GetService%2A> управляемого пакетом VSPackage, производным от класса <xref:Microsoft.VisualStudio.Shell.Package>.  Дополнительные сведения см. в разделе [Практическое руководство: Получение службы](~/extensibility/how-to-get-a-service.md).  
   
--   Статического метода <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>.  Дополнительные сведения см. в разделе [Практическое руководство. Использование GetGlobalService](../Topic/How%20to:%20Use%20GetGlobalService.md).  
+-   Статического метода <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>.  Дополнительные сведения см. в разделе [Практическое руководство. Использование GetGlobalService](~/misc/how-to-use-getglobalservice.md).  
   
- В расширении Visual Studio с доступом к объекту <xref:EnvDTE80.DTE2> можно запросить объект <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> с помощью метода <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> объекта <xref:Microsoft.VisualStudio.Shell.ServiceProvider>.  Дополнительные сведения см. в разделе [Практическое руководство. Получение службы из объекта DTE](../Topic/How%20to:%20Get%20a%20Service%20from%20the%20DTE%20Object.md).  
+ В расширении Visual Studio с доступом к объекту <xref:EnvDTE80.DTE2> можно запросить объект <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> с помощью метода <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> объекта <xref:Microsoft.VisualStudio.Shell.ServiceProvider>.  Дополнительные сведения см. в разделе [Практическое руководство. Получение службы из объекта DTE](~/misc/how-to-get-a-service-from-the-dte-object.md).  
   
 ### Пример  
  В следующем примере кода показано, как обратиться к службе проекта в надстройке Visual Studio.  Чтобы воспользоваться этим кодом, выполните его из класса `Connect` в проекте надстройки.  Объект `_applicationObject` создается в проектах надстройки автоматически; этот объект является экземпляром интерфейса <xref:EnvDTE80.DTE2>.  
@@ -109,15 +109,15 @@ caps.handback.revision: 14
   
  Для этого примера необходимо следующее.  
   
--   Проект надстройки Visual Studio.  Дополнительные сведения см. в разделе [Практическое руководство. Создание надстройки](../Topic/How%20to:%20Create%20an%20Add-In.md).  
+-   Проект надстройки Visual Studio.  Дополнительные сведения см. в разделе [Практическое руководство. Создание надстройки](http://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce).  
   
 -   Ссылки на сборки Microsoft.VisualStudio.OLE.Interop, Microsoft.VisualStudio.Shell и Microsoft.VisualStudio.SharePoint.  
   
 ## См. также  
  [Using the SharePoint Project Service](../sharepoint/using-the-sharepoint-project-service.md)   
- [Практическое руководство. Создание надстройки](../Topic/How%20to:%20Create%20an%20Add-In.md)   
- [Практическое руководство: Получение службы](../Topic/How%20to:%20Get%20a%20Service.md)   
- [Практическое руководство. Получение службы из объекта DTE](../Topic/How%20to:%20Get%20a%20Service%20from%20the%20DTE%20Object.md)   
- [Практическое руководство. Использование мастеров для шаблонов проекта](../Topic/How%20to:%20Use%20Wizards%20with%20Project%20Templates.md)  
+ [Практическое руководство. Создание надстройки](http://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)   
+ [Практическое руководство: Получение службы](~/extensibility/how-to-get-a-service.md)   
+ [Практическое руководство. Получение службы из объекта DTE](~/misc/how-to-get-a-service-from-the-dte-object.md)   
+ [Практическое руководство. Использование мастеров для шаблонов проекта](~/extensibility/how-to-use-wizards-with-project-templates.md)  
   
   

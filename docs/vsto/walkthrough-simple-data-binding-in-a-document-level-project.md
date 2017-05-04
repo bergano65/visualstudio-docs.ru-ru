@@ -191,7 +191,7 @@ caps.handback.revision: 57
   
 -   Привязка ячейки к нескольким столбцам в таблице вместо одного поля.  Дополнительные сведения см. в разделе [Пошаговое руководство. Сложная привязка данных в проекте уровня документа](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).  
   
--   Использование <xref:System.Windows.Forms.BindingNavigator> для прокрутки записи.  Дополнительные сведения см. в разделе [Практическое руководство. Переход между данными с помощью элемента управления BindingNavigator в Windows Forms](../Topic/How%20to:%20Navigate%20Data%20with%20the%20Windows%20Forms%20BindingNavigator%20Control.md).  
+-   Использование <xref:System.Windows.Forms.BindingNavigator> для прокрутки записи.  Дополнительные сведения см. в разделе [Практическое руководство. Переход между данными с помощью элемента управления BindingNavigator в Windows Forms](http://msdn.microsoft.com/library/0e5d4f34-bc9b-47cf-9b8d-93acbb1f1dbb).  
   
 ## См. также  
  [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)   

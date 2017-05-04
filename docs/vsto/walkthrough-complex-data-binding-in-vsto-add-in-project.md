@@ -73,7 +73,7 @@ caps.handback.revision: 37
   
 4.  Если подключение к базе данных `AdventureWorksLT` существует, выберите его и нажмите кнопку **Далее**.  
   
-     В противном случае нажмите **Создать подключение** и в диалоговом окне **Добавление подключения**  создайте новое подключение. Дополнительные сведения см. в разделе [Практическое руководство. Подключение к данным в базе данных](../Topic/How%20to:%20Connect%20to%20Data%20in%20a%20Database.md).  
+     В противном случае нажмите **Создать подключение** и в диалоговом окне **Добавление подключения**  создайте новое подключение. Дополнительные сведения см. в разделе [Практическое руководство. Подключение к данным в базе данных](~/data-tools/how-to-connect-to-data-in-a-database.md).  
   
 5.  На странице **Сохранение подключения в файле конфигурации приложения** нажмите кнопку **Далее**.  
   
@@ -146,6 +146,6 @@ caps.handback.revision: 37
  [Привязка элементов управления Windows Forms к данным в Visual Studio](../Topic/Binding%20Windows%20Forms%20controls%20to%20data%20in%20Visual%20Studio.md)   
  [Общие сведения об использовании файлов локальной базы данных в решениях для Office](../vsto/using-local-database-files-in-office-solutions-overview.md)   
  [Подключение к данным в приложениях Windows Forms](/visual-studio/data-tools/connecting-to-data-in-windows-forms-applications)   
- [Общие сведения о компоненте BindingSource](../Topic/BindingSource%20Component%20Overview.md)  
+ [Общие сведения о компоненте BindingSource](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)  
   
   

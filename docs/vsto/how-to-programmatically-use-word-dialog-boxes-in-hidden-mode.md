@@ -44,6 +44,6 @@ caps.handback.revision: 47
  [Практическое руководство. Программное использование встроенных диалоговых окон в Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
  [Общие сведения об объектной модели Word](../vsto/word-object-model-overview.md)   
  [Позднее связывание в решениях Office](../vsto/late-binding-in-office-solutions.md)   
- [Отражение &#40;C&#35; и Visual Basic&#41;](../Topic/Reflection%20(C%23%20and%20Visual%20Basic).md)  
+ [Отражение &#40;C&#35; и Visual Basic&#41;](http://msdn.microsoft.com/library/5d1d1bcf-08de-4d0b-97a8-912d17c00f26)  
   
   

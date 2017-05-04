@@ -39,7 +39,7 @@ caps.handback.revision: 47
   
 1.  Откройте проект уровня документа Word в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и откройте документ в конструкторе.  
   
-2.  Откройте окно **Источники данных** и создайте источник данных из базы данных.  Дополнительные сведения см. в разделе [Практическое руководство. Подключение к данным в базе данных](../Topic/How%20to:%20Connect%20to%20Data%20in%20a%20Database.md).  
+2.  Откройте окно **Источники данных** и создайте источник данных из базы данных.  Дополнительные сведения см. в разделе [Практическое руководство. Подключение к данным в базе данных](~/data-tools/how-to-connect-to-data-in-a-database.md).  
   
 3.  Перетащите нужное поле из окна **Источники данных** в ваш документ.  
   
@@ -52,11 +52,11 @@ caps.handback.revision: 47
   
 -   Типизированный набор данных, который инкапсулирует таблицы данных, подключенные к базе данных.  Дополнительные сведения см. в разделе [Работа с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).  
   
--   Объект <xref:System.Windows.Forms.BindingSource>, который подключает элемент управления к типизированному набору данных.  Дополнительные сведения см. в разделе [Общие сведения о компоненте BindingSource](../Topic/BindingSource%20Component%20Overview.md).  
+-   Объект <xref:System.Windows.Forms.BindingSource>, который подключает элемент управления к типизированному набору данных.  Дополнительные сведения см. в разделе [Общие сведения о компоненте BindingSource](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f).  
   
 -   Объект TableAdapter, который подключает типизированный набор данных к базе данных.  Дополнительные сведения см. в разделе [Общие сведения об адаптере таблиц](/visual-studio/data-tools/tableadapter-overview).  
   
--   Объект TableAdapterManager, который используется для координации адаптеров таблиц в наборе данных для реализации иерархических обновлений.  Дополнительные сведения см. в разделах [Иерархическое обновление](../data-tools/hierarchical-update.md) и [Общие сведения о компоненте TableAdapterManager](../Topic/TableAdapterManager%20Overview.md).  
+-   Объект TableAdapterManager, который используется для координации адаптеров таблиц в наборе данных для реализации иерархических обновлений.  Дополнительные сведения см. в разделах [Иерархическое обновление](../data-tools/hierarchical-update.md) и [Общие сведения о компоненте TableAdapterManager](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
   
  При выполнении проекта элемент управления отображает первую запись в источнике данных.  Вы можете использовать <xref:System.Windows.Forms.BindingSource>, чтобы позволить пользователям прокручивать записи.  
   
@@ -74,6 +74,6 @@ caps.handback.revision: 47
  [Практическое руководство. Обновление источника данных с помощью данных из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
  [Общие сведения об использовании файлов локальной базы данных в решениях для Office](../vsto/using-local-database-files-in-office-solutions-overview.md)   
  [Подключение к данным в приложениях Windows Forms](/visual-studio/data-tools/connecting-to-data-in-windows-forms-applications)   
- [Общие сведения о компоненте BindingSource](../Topic/BindingSource%20Component%20Overview.md)  
+ [Общие сведения о компоненте BindingSource](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)  
   
   

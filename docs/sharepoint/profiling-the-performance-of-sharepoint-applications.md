@@ -66,7 +66,7 @@ caps.handback.revision: 17
   
 ## См. также  
  [Построение и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
- [Тестирование приложения](../Topic/Test%20apps%20early%20and%20often.md)   
+ [Тестирование приложения](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
  [Улучшение качества кода](../test/improve-code-quality.md)  
   
   

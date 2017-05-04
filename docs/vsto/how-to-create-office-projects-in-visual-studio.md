@@ -44,7 +44,7 @@ caps.handback.revision: 95
      Откроется диалоговое окно **Новый проект**.  
   
     > [!NOTE]  
-    >  По умолчанию проекты Office ориентированы на [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)].  Дополнительные сведения см. в разделе [Профиль клиента .NET Framework](../Topic/.NET%20Framework%20Client%20Profile.md).  
+    >  По умолчанию проекты Office ориентированы на [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)].  Дополнительные сведения см. в разделе [Профиль клиента .NET Framework](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
   
 2.  В области шаблонов в узле используемого языка разверните пункт **Office\/SharePoint**.  
   
@@ -95,7 +95,7 @@ caps.handback.revision: 95
      Откроется диалоговое окно **Новый проект**.  
   
     > [!NOTE]  
-    >  По умолчанию проекты Office ориентированы на [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)].  Дополнительные сведения см. в разделе [Профиль клиента .NET Framework](../Topic/.NET%20Framework%20Client%20Profile.md).  
+    >  По умолчанию проекты Office ориентированы на [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)].  Дополнительные сведения см. в разделе [Профиль клиента .NET Framework](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
   
 2.  В области шаблонов в узле используемого языка разверните пункт **Office\/SharePoint**.  
   

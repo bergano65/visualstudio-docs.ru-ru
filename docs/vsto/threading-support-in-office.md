@@ -42,7 +42,7 @@ caps.handback.revision: 32
   
 -   Маршалинг  
   
- Общие сведения о многопоточности см. в разделе [Multithreading in Components](../Topic/Multithreading%20in%20Components.md).  
+ Общие сведения о многопоточности см. в разделе [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779).  
   
  Office выполняется в основном однопотоковом подразделении \(STA\).  Понимание следствий этого позволяет понять способы использования нескольких потоков с Office.  
   
@@ -68,16 +68,16 @@ caps.handback.revision: 32
  [!code-csharp[Trin_VstcoreCreatingExcel#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreCreatingExcel/CS/ThisWorkbook.cs#5)]
  [!code-vb[Trin_VstcoreCreatingExcel#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreCreatingExcel/VB/ThisWorkbook.vb#5)]  
   
- Дополнительные сведения см. в разделе [Managed Threading Best Practices](../Topic/Managed%20Threading%20Best%20Practices.md).  
+ Дополнительные сведения см. в разделе [Managed Threading Best Practices](http://msdn.microsoft.com/library/e51988e7-7f4b-4646-a06d-1416cee8d557).  
   
 ## Безрежимные формы  
  Безрежимные формы во время отображения допускают некоторые форм взаимодействий с приложениями.  Пользователь работает с формами, а формы взаимодействуют с открытыми приложениями.  Объектная модель Office поддерживает безрежимные формы, однако их необходимо использовать на фоновом потоке.  
   
 ## См. также  
- [Multithreading in Components](../Topic/Multithreading%20in%20Components.md)   
- [Managed Threading](../Topic/Managed%20Threading.md)   
- [Работа с потоками &#40;C&#35; и Visual Basic&#41;](../Topic/Threading%20(C%23%20and%20Visual%20Basic).md)   
- [Using Threads and Threading](../Topic/Using%20Threads%20and%20Threading.md)   
+ [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)   
+ [Managed Threading](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)   
+ [Работа с потоками &#40;C&#35; и Visual Basic&#41;](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c)   
+ [Using Threads and Threading](http://msdn.microsoft.com/library/9b5ec2cd-121b-4d49-b075-222cf26f2344)   
  [Проектирование и создание решений Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

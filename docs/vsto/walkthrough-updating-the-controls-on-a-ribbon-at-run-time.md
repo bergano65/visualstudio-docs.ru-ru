@@ -291,7 +291,7 @@ caps.handback.revision: 50
 ## См. также  
  [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Обзор ленты](../vsto/ribbon-overview.md)   
- [Интегрированные в язык запросы \(LINQ\)](../Topic/LINQ%20(Language-Integrated%20Query).md)   
+ [Интегрированные в язык запросы \(LINQ\)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)   
  [Практическое руководство. Работа с настройкой ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Конструктор лент](../vsto/ribbon-designer.md)   
  [Пошаговое руководство. Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   

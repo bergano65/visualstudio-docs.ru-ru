@@ -22,7 +22,7 @@ manager: "ghogen"
 caps.handback.revision: 24
 ---
 # Использование элементов управления WPF в решениях Office
-  Хотя решения, созданные с помощью средств разработки Office в Visual Studio, предназначены для работы непосредственно с элементами управления Windows Forms, в них также можно использовать элементы управления WPF.  Windows Presentation Foundation \(WPF\) — это альтернатива Windows Forms для разработки пользовательских интерфейсов.  WPF использует язык разметки XAML для реализации новых методов включения элементов пользовательского интерфейса, объектов мультимедиа и документов.  Дополнительные сведения см. в разделе [Введение в WPF в Visual Studio 2015](../Topic/Introduction%20to%20WPF%20in%20Visual%20Studio%202015.md).  
+  Хотя решения, созданные с помощью средств разработки Office в Visual Studio, предназначены для работы непосредственно с элементами управления Windows Forms, в них также можно использовать элементы управления WPF.  Windows Presentation Foundation \(WPF\) — это альтернатива Windows Forms для разработки пользовательских интерфейсов.  WPF использует язык разметки XAML для реализации новых методов включения элементов пользовательского интерфейса, объектов мультимедиа и документов.  Дополнительные сведения см. в разделе [Введение в WPF в Visual Studio 2015](http://msdn.microsoft.com/library/582a314e-e23d-4144-b45b-acbbd5579252).  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
@@ -98,21 +98,21 @@ caps.handback.revision: 24
 ## Ресурсы WPF  
  Дополнительные сведения об архитектуре и проектировании для размещения элементов управления WPF в элементах управления и формах Windows Forms см. в следующих разделах:  
   
--   [Windows Forms и архитектура ввода взаимодействия WPF](../Topic/Windows%20Forms%20and%20WPF%20Interoperability%20Input%20Architecture.md)  
+-   [Windows Forms и архитектура ввода взаимодействия WPF](http://msdn.microsoft.com/library/0eb6f137-f088-4c5e-9e37-f96afd28f235)  
   
--   [Сопоставление свойств Windows Forms и WPF](../Topic/Windows%20Forms%20and%20WPF%20Property%20Mapping.md)  
+-   [Сопоставление свойств Windows Forms и WPF](http://msdn.microsoft.com/library/999d8298-9c04-467d-a453-86e41002057d)  
   
--   [Взаимодействие WPF и Windows Forms](../Topic/WPF%20and%20Windows%20Forms%20Interoperation.md)  
+-   [Взаимодействие WPF и Windows Forms](http://msdn.microsoft.com/library/9e8aa6b6-112c-4579-98d1-c974917df499)  
   
--   [Элементы управления Windows Forms и эквивалентные элементы управления WPF](../Topic/Windows%20Forms%20Controls%20and%20Equivalent%20WPF%20Controls.md)  
+-   [Элементы управления Windows Forms и эквивалентные элементы управления WPF](http://msdn.microsoft.com/library/8a157e6b-8054-46db-a5cf-a78966acc7a1)  
   
  Дополнительные сведения о добавлении элементов управления WPF к элементам управления и формам Windows Forms в Visual Studio во время разработки см. в следующих разделах:  
   
--   [Пошаговое руководство. Создание нового содержимого WPF для формы Windows Forms во время разработки](../Topic/Walkthrough:%20Creating%20New%20WPF%20Content%20on%20Windows%20Forms%20at%20Design%20Time.md)  
+-   [Пошаговое руководство. Создание нового содержимого WPF для формы Windows Forms во время разработки](http://msdn.microsoft.com/library/2e92d8e8-f0e4-4df7-9f07-2acf35cd798c)  
   
--   [Пошаговое руководство. Упорядочение содержимого WPF для формы Windows Forms во время разработки](../Topic/Walkthrough:%20Arranging%20WPF%20Content%20on%20Windows%20Forms%20at%20Design%20Time.md)  
+-   [Пошаговое руководство. Упорядочение содержимого WPF для формы Windows Forms во время разработки](http://msdn.microsoft.com/library/5efb1c53-1484-43d6-aa8a-f4861b99bb8a)  
   
--   [Пошаговое руководство. Применение стилей к содержимому WPF](../Topic/Walkthrough:%20Styling%20WPF%20Content.md)  
+-   [Пошаговое руководство. Применение стилей к содержимому WPF](http://msdn.microsoft.com/library/e574aac7-7ea4-4cdb-8034-bab541f000df)  
   
 ## См. также  
  [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)   

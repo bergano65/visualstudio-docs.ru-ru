@@ -50,7 +50,7 @@ caps.handback.revision: 22
 ### assemblyIdentity  
  Обязательный. Элемент `assemblyIdentity` в пространстве имен `vstav3`  ссылается на существующий элемент `assemblyIdentity` в манифесте приложения [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)].  
   
- Роль `assemblyIdentity` и его атрибуты описываются в разделе [Элемент &#60;assemblyIdentity&#62; &#40;приложение ClickOnce&#41;](../Topic/%3CassemblyIdentity%3E%20Element%20(ClickOnce%20Application).md).  
+ Роль `assemblyIdentity` и его атрибуты описываются в разделе [Элемент &#60;assemblyIdentity&#62; &#40;приложение ClickOnce&#41;](~/deployment/assemblyidentity-element-clickonce-application.md).  
   
 ## Пример настройки на уровне документа  
   

@@ -41,12 +41,12 @@ caps.handback.revision: 33
   
 5.  Нажмите кнопку **Добавить**.  
   
-6.  Создайте файл конфигурации в соответствии со схемой файла конфигурации приложения.  Дополнительные сведения см. в разделе [Схема файлов конфигурации для .NET Framework](../Topic/Configuration%20File%20Schema%20for%20the%20.NET%20Framework.md).  
+6.  Создайте файл конфигурации в соответствии со схемой файла конфигурации приложения.  Дополнительные сведения см. в разделе [Схема файлов конфигурации для .NET Framework](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38).  
   
  Никаких особых доводов в пользу использования файлов конфигурации с проектами Office не существует.  
   
 ## См. также  
- [Схема файлов конфигурации для .NET Framework](../Topic/Configuration%20File%20Schema%20for%20the%20.NET%20Framework.md)   
+ [Схема файлов конфигурации для .NET Framework](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)   
  [Проектирование и создание решений Office](../vsto/designing-and-creating-office-solutions.md)   
  [Развертывание решения Office](../vsto/deploying-an-office-solution.md)  
   

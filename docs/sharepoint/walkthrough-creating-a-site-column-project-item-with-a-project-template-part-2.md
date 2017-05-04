@@ -53,7 +53,7 @@ caps.handback.revision: 53
   
  Знание следующих подходов может оказаться полезным, но не требуется для выполнения пошагового руководства.  
   
--   Мастера для проектов и шаблонов элементов в Visual Studio.  Дополнительные сведения см. в разделе [Практическое руководство. Использование мастеров для шаблонов проекта](../Topic/How%20to:%20Use%20Wizards%20with%20Project%20Templates.md) и в документации на интерфейс <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>.  
+-   Мастера для проектов и шаблонов элементов в Visual Studio.  Дополнительные сведения см. в разделе [Практическое руководство. Использование мастеров для шаблонов проекта](~/extensibility/how-to-use-wizards-with-project-templates.md) и в документации на интерфейс <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>.  
   
 -   Столбцы сайтов в SharePoint.  Дополнительные сведения см. в [Столбцы](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
@@ -121,7 +121,7 @@ caps.handback.revision: 53
   
 3.  Убедитесь, что требуемая версия .NET Framework задает на платформу .NET Framework 4.5, не платформы .NET Framework 4.5.  
   
-     Для получения дополнительной информации см. [Практическое руководство. Определение целевой версии .NET Framework](../Topic/How%20to:%20Target%20a%20Version%20of%20the%20.NET%20Framework.md).  
+     Для получения дополнительной информации см. [Практическое руководство. Определение целевой версии .NET Framework](~/ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 4.  Открыть контекстное меню для проекта **ProjectTemplateWizard**, выберите **Добавить**, затем выберите **Создать элемент**.  
   
@@ -168,7 +168,7 @@ caps.handback.revision: 53
   
 13. При разработке проекта на языке Visual Basic следует импортировать пространство имен ProjectTemplateWizard в проект с помощью **Конструктор проектов**.  
   
-     Для получения дополнительной информации см. [Практическое руководство. Добавление или удаление импортированных пространств имен &#40;Visual Basic&#41;](../Topic/How%20to:%20Add%20or%20Remove%20Imported%20Namespaces%20(Visual%20Basic).md).  
+     Для получения дополнительной информации см. [Практическое руководство. Добавление или удаление импортированных пространств имен &#40;Visual Basic&#41;](~/ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
   
 #### Настройка проекта SharePointCommands  
   
@@ -551,6 +551,6 @@ caps.handback.revision: 53
  [Defining Custom SharePoint Project Item Types](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Практическое руководство. Использование мастеров для шаблонов проекта](../Topic/How%20to:%20Use%20Wizards%20with%20Project%20Templates.md)  
+ [Практическое руководство. Использование мастеров для шаблонов проекта](~/extensibility/how-to-use-wizards-with-project-templates.md)  
   
   

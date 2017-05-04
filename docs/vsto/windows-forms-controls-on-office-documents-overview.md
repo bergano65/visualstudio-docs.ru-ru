@@ -152,7 +152,7 @@ caps.handback.revision: 75
  [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)   
  [Общие сведения о панели действий](../vsto/actions-pane-overview.md)   
- [Элементы управления Windows Forms](../Topic/Windows%20Forms%20Controls.md)   
+ [Элементы управления Windows Forms](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)   
  [Ограничения по использованию элементов управления Windows Forms в документах Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)   
  [Практическое руководство. Добавление элементов управления Windows Forms в документы Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [Практическое руководство. Изменение размера внутри ячеек листа Excel](../vsto/how-to-resize-controls-within-worksheet-cells.md)   

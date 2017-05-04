@@ -48,7 +48,7 @@ caps.handback.revision: 38
   
  Также рекомендуется установить [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)].  Пакет SDK включает шаблоны проектов и средства, позволяющие расширять Visual Studio.  В частности пакет SDK включает шаблон проекта, который можно использовать для быстрого создания пакетов расширений Visual Studio \(VSIX\).  Пакеты VSIX предпочтительный способ развертывания расширений Visual Studio в Visual Studio.  Все расширения средств SharePoint необходимо развертывать с помощью пакетов VSIX.  Во всех приведенных в данных документах пошаговых руководствах предполагается, что установлен выпуск [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)].  
   
- Чтобы загрузить пакет SDK, посетите веб\-сайт [http:\/\/go.microsoft.com\/fwlink\/?LinkId\=164562](http://go.microsoft.com/fwlink/?LinkId=164562).  Дополнительные сведения о расширениях Visual Studio см. в разделе [Разработка расширений Visual Studio](../Topic/Developing%20Visual%20Studio%20Extensions.md).  
+ Чтобы загрузить пакет SDK, посетите веб\-сайт [http:\/\/go.microsoft.com\/fwlink\/?LinkId\=164562](http://go.microsoft.com/fwlink/?LinkId=164562).  Дополнительные сведения о расширениях Visual Studio см. в разделе [Разработка расширений Visual Studio](http://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14).  
   
 ## См. также  
  [Overview of the Programming Model of SharePoint Tools Extensions](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   

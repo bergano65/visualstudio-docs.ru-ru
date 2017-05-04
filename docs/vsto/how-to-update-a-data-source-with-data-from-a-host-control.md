@@ -98,7 +98,7 @@ caps.handback.revision: 52
   
 1.  Вызовите метод <xref:System.Windows.Forms.BindingSource.EndEdit%2A> объекта <xref:System.Windows.Forms.BindingSource> для элемента управления.  
   
-     Объект <xref:System.Windows.Forms.BindingSource> создается автоматически при добавлении элемента управления с привязкой к данным в документ или книгу во время разработки. Объект <xref:System.Windows.Forms.BindingSource> подключает элемент управления к типизированному набору данных. Для получения дополнительной информации см. [Общие сведения о компоненте BindingSource](../Topic/BindingSource%20Component%20Overview.md).  
+     Объект <xref:System.Windows.Forms.BindingSource> создается автоматически при добавлении элемента управления с привязкой к данным в документ или книгу во время разработки. Объект <xref:System.Windows.Forms.BindingSource> подключает элемент управления к типизированному набору данных. Для получения дополнительной информации см. [Общие сведения о компоненте BindingSource](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f).  
   
      В следующем примере кода предполагается, что проект содержит <xref:System.Windows.Forms.BindingSource> с именем `customersBindingSource`.  
   
