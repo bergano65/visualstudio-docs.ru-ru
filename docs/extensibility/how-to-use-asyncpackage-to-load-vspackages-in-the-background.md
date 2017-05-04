@@ -1,62 +1,78 @@
 ---
-title: "Практическое руководство: использование AsyncPackage для загрузки пакетов VSPackages в фоновом режиме | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Как: используется для загрузки пакетов VSPackage в фоновом режиме AsyncPackage | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: 8
-ms.author: "gregvanl"
-caps.handback.revision: 8
----
-# Практическое руководство: использование AsyncPackage для загрузки пакетов VSPackages в фоновом режиме
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: c9df048a49580f3526b48e29041ef3758722ed27
+ms.openlocfilehash: bcfdf6991c12affc1000ace72b16f97be9de469a
+ms.lasthandoff: 05/03/2017
 
-Загрузка и инициализировать пакет VS может привести к дискового ввода\-вывода. Если таких операций ввода\-вывода происходит в потоке пользовательского интерфейса, он может привести к проблемам скорости реагирования. Чтобы решить эту проблему, представила Visual Studio 2015 <xref:Microsoft.VisualStudio.Shell.AsyncPackage> класс, который позволяет загрузка пакета в фоновом потоке.  
+---
+# <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Как: использовать AsyncPackage для загрузки пакетов VSPackage в фоновом режиме
+Загрузка и инициализация пакета VS может привести к дискового ввода-вывода. Если таких операций ввода-вывода происходит в потоке пользовательского интерфейса, он может привести к проблемам скорости реагирования. Для решения этой проблемы в Visual Studio 2015 появился < xref:Microsoft.VisualStudio.Shell.AsyncPackage > класс, который позволяет пакета загрузку в фоновом потоке.  
   
-## Создание AsyncPackage  
- Сначала нужно создать проект VSIX \(**файл \/ Создание \/ Project или Visual C\# и расширяемости и проект VSIX**\) и добавление в проект VSPackage \(щелкните правой кнопкой мыши проект и **Добавить новый элемент или C\# элемента и расширяемости и Visual Studio пакета**\). Затем можно создавать службы и добавьте эти службы в пакет.  
+## <a name="creating-an-asyncpackage"></a>Создание AsyncPackage  
+ Сначала нужно создать проект VSIX (**файл / создать / Project / Visual C# / расширяемости / проект VSIX**) и добавление в проект VSPackage (щелкните проект правой кнопкой мыши и **добавить новый элемент / C# элемента или расширяемость/Visual Studio Package**). Затем можно создать служб и добавить эти службы в пакет.  
   
-1.  Наследовать из пакета <xref:Microsoft.VisualStudio.Shell.AsyncPackage>.  
+1.  Пакет наследуйте от < xref:Microsoft.VisualStudio.Shell.AsyncPackage >.  
   
-2.  Если нужно предоставить службы которого запрос может вызвать пакет для загрузки:  
+2.  Если вы указываете которого запрос может привести к пакету, подлежащему загрузке службы:  
   
-     Для указания в Visual Studio, пакета является безопасным для загрузки в фоновом режиме и согласиться на это поведение вашей <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> следует задать **AllowsBackgroundLoading** значение true в конструктор атрибута.  
+     Для указания в Visual Studio, пакет может безопасно фоновую загрузку и согласиться на это поведение, следует установить < xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute > **AllowsBackgroundLoading** значение true в конструктор атрибута.  
   
     ```c#  
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]  
   
     ```  
   
-     Чтобы указать Visual Studio, что это безопасно для создания экземпляра службы в фоновом потоке, необходимо задать <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttributeBase.IsAsyncQueryable%2A> значение true в <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> конструктора.  
+     Чтобы указать Visual Studio, можно безопасно для создания экземпляра службы в фоновом потоке, следует установить свойство < xref:Microsoft.VisualStudio.Shell.ProvideServiceAttributeBase.IsAsyncQueryable%2A > значение true в конструкторе < xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute >.  
   
     ```c#  
     [ProvideService(typeof(SMyTestService), IsAsyncQueryable = true)]  
   
     ```  
   
-3.  Если загружается через контексты пользовательского интерфейса, то следует указать **PackageAutoLoadFlags.BackgroundLoad** для <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> или значением \(0x2\) в флаги записывается как значение записи автоматически загружать ваш пакет.  
+3.  При загрузке через контексты пользовательского интерфейса, а затем следует указать **PackageAutoLoadFlags.BackgroundLoad** для < xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute > или значение (0x2) в флаги записывается как значение автоматически загружать записи пакета.  
   
     ```c#  
     [ProvideAutoLoad(UIContextGuid, PackageAutoLoadFlags.BackgroundLoad)]  
   
     ```  
   
-4.  При наличии инициализации асинхронной работы, необходимо переопределить <xref:Microsoft.VisualStudio.Shell.AsyncPackage.InitializeAsync%2A>. Удалить **Initialize\(\)** метод, предоставленный шаблоном VSIX. \( **Initialize\(\)** метод в **AsyncPackage** запечатан\). Можно использовать любой из <xref:Microsoft.VisualStudio.Shell.AsyncPackage.AddService%2A> методы для добавления асинхронные службы в пакет.  
+4.  При наличии работ для асинхронной инициализации, должны переопределять < xref:Microsoft.VisualStudio.Shell.AsyncPackage.InitializeAsync%2A >. Удалить **Initialize()** метода, предоставляемого шаблоном VSIX. ( **Initialize()** метод в **AsyncPackage** является запечатанным). Можно использовать любой из методов < xref:Microsoft.VisualStudio.Shell.AsyncPackage.AddService%2A > для добавления асинхронной служб в пакет.  
   
-     Примечание: Для вызова **базовый. InitializeAsync\(\)**, можно изменить исходный код для:  
+     Примечание: Для вызова **базового. InitializeAsync()**, можно изменить исходный код для:  
   
     ```c#  
     await base.InitializeAsync(cancellationToken, progress);  
     ```  
   
-5.  Необходимо соблюдать осторожность не создает удаленный вызов процедур \(удалите вызов процедуры\) из асинхронной инициализации кода \(в **InitializeAsync**\). Это может произойти при вызове <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> прямо или косвенно.  Когда требуются загружает синхронизации, блокирует поток пользовательского интерфейса с помощью <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>. Модель блокировки по умолчанию отключает RPC. Это означает, что при попытке использовать RPC из асинхронных задач будет взаимоблокировка Если поток пользовательского интерфейса является сам ожидание пакета для загрузки. Общие альтернативой является маршалинг код, чтобы поток пользовательского интерфейса, при необходимости, с помощью примерно **Joinable фабрики задач**<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> или другой механизм, который не использует RPC.  НЕ используйте **ThreadHelper.Generic.Invoke** или обычно блокирует вызывающий поток ожидает получения в поток пользовательского интерфейса.  
+5.  Вы должны уделить особое внимание делает вызовов RPC (удаленный вызов процедуры) из асинхронной инициализации кода (в **InitializeAsync**). Это может произойти при вызове < xref:Microsoft.VisualStudio.Shell.Package.GetService%2A > прямо или косвенно.  При синхронизации загружает требуются, поток пользовательского интерфейса будет блокировать < xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory >. Модель блокировки по умолчанию отключает RPC. Это означает, что при попытке использовать RPC из асинхронных задач будет взаимоблокировка Если поток пользовательского интерфейса — Ожидание для загрузки пакета. Общие альтернативой состоит в маршалинге кода в поток пользовательского интерфейса, при необходимости, с помощью примерно **Joinable фабрики задач**элемента < xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A > или другой механизм, который не использует RPC.  НЕ используйте **ThreadHelper.Generic.Invoke** или обычно блокирует вызывающий поток ожидает получить в поток пользовательского интерфейса.  
   
-     Примечание: Не следует использовать **GetService** или **QueryService** в ваш **InitializeAsync** метод. Если их использовать, необходимо сначала переключиться в поток пользовательского интерфейса. Альтернативой является использование <xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A> из своей **AsyncPackage** \(путем приведения его к <xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider>.\)  
+     Примечание: Следует избегать использования **GetService** или **QueryService** в ваш **InitializeAsync** метод. Если требуется использовать их, необходимо сначала нужно переключиться на поток пользовательского интерфейса. Альтернативой является использование < xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A > из вашей **AsyncPackage** (путем приведения его к < xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider >.)  
   
- C\#: Создание AsyncPackage:  
+ C#: Создайте AsyncPackage:  
   
 ```c#  
 [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]       
@@ -71,29 +87,29 @@ public sealed class TestPackage : AsyncPackage
 }  
 ```  
   
-## Преобразовать существующие VSPackage AsyncPackage  
- Большая часть работы по совпадает с создания нового **AsyncPackage**. Необходимо выполнить следующие шаги с 1 по 5 выше. Необходимо также выполнить дополнительное внимание на следующее:  
+## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>Преобразование существующего пакета VSPackage в AsyncPackage  
+ Большинство изменений, совпадает со значением создания нового **AsyncPackage**. Необходимо выполнить шаги 1 – 5 выше. Необходимо также выполнить дополнительное внимание на следующее:  
   
-1.  Не забудьте удалить **инициализации** переопределение имеется в пакете.  
+1.  Не забудьте удалить **инициализировать** переопределения, заданные в пакете.  
   
-2.  Избежать взаимоблокировок: может быть скрыт RPC в коде, который теперь происходит в фоновом потоке. Необходимо убедиться, что при создании RPC \(например **GetService**\), необходимо либо \(1\) переключиться в основной поток, или \(2\) используйте асинхронную версию API, если он существует \(например **GetServiceAsync**\).  
+2.  Избежать взаимоблокировок: может быть скрытым удаленных вызовов процедур в коде, который теперь происходит в фоновом потоке. Необходимо убедиться, что при создании удаленного вызова Процедуры (например **GetService**), необходимо или (1) переключиться в основной поток, или (2) используйте асинхронную версию API, если он существует (например **GetServiceAsync**).  
   
-3.  Не переключайтесь между потоками слишком часто. Пытаться локализировать работы, могут выполняться в фоновом потоке. Это уменьшает время загрузки.  
+3.  Не переключает потоки слишком часто. Повторите для локализации работы, могут выполняться в фоновом потоке. Это уменьшает время загрузки.  
   
-## Запрос служб из AsyncPackage  
+## <a name="querying-services-from-asyncpackage"></a>Выполняется запрос служб из AsyncPackage  
  **AsyncPackage** может или не может загрузить асинхронно в зависимости от вызывающего объекта. Например,  
   
--   Если вызывающий объект вызывается **GetService** или **QueryService** \(оба синхронного API\) или  
+-   Если вызывающий объект вызывается **GetService** или **QueryService** (оба синхронного API) или  
   
--   Если вызывающий объект вызывается **IVsShell::LoadPackage** \(или **IVsShell5::LoadPackageWithContext**\) или  
+-   Если вызывающий объект вызывается **IVsShell::LoadPackage** (или **IVsShell5::LoadPackageWithContext**) или  
   
--   Загрузка инициируется контекста пользовательского интерфейса, но не указан, механизм контекста пользовательского интерфейса можно при асинхронной загрузки  
+-   Нагрузки инициируется контекста пользовательского интерфейса, но вы не указали том, что механизм контекста пользовательского интерфейса можно загрузить можно асинхронно  
   
- затем пакет будет загружать синхронно.  
+ затем пакет будет загружаться синхронно.  
   
- Обратите внимание, что пакет по\-прежнему возможности \(на стадии его инициализации асинхронной\) для работы из потока пользовательского интерфейса, хотя поток пользовательского интерфейса будет заблокирован для завершения этой работы. Если он использует **IAsyncServiceProvider** для асинхронного запроса для службы, затем загрузки и инициализации выполняется асинхронно при условии, что они не блокировали непосредственно на объект результирующей задачи.  
+ Обратите внимание, что ваш пакет по-прежнему возможности (на стадии его инициализации асинхронного) для выполнения работы вне потока пользовательского интерфейса на то, что поток пользовательского интерфейса будет заблокирован для выполнения этой работы. Если он использует **IAsyncServiceProvider** для асинхронного запроса для службы, затем загрузки и инициализации выполняются асинхронно при условии, что они не блокировали сразу на объект результирующей задачи.  
   
- C\#: Как асинхронный запрос службы:  
+ C#: Практическое руководство асинхронно запроса службы.  
   
 ```c#  
 using Microsoft.VisualStudio.Shell;   
@@ -102,3 +118,4 @@ using Microsoft.VisualStudio.Shell.Interop;
 IAsyncServiceProvider asyncServiceProvider = Package.GetService(typeof(SAsyncServiceProvider)) as IAsyncServiceProvider;   
 IMyTestService testService = await ayncServiceProvider.GetServiceAsync(typeof(SMyTestService)) as IMyTestService;  
 ```
+
