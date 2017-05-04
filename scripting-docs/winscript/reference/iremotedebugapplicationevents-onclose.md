@@ -1,0 +1,44 @@
+---
+title: "IRemoteDebugApplicationEvents::OnClose | Microsoft Docs"
+ms.custom: ""
+ms.date: "01/18/2017"
+ms.prod: "windows-script-interfaces"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "reference"
+apiname: IRemoteDebugApplicationEvents.OnClose
+apilocation: jscript.dll
+helpviewer_keywords: 
+  - "IRemoteDebugApplicationEvents::OnClose"
+ms.assetid: 57ef69e0-1ced-480a-a1bf-c91d8d5dd2d2
+caps.latest.revision: 8
+author: "mikejo5000"
+ms.author: "mikejo"
+manager: "ghogen"
+caps.handback.revision: 8
+---
+# IRemoteDebugApplicationEvents::OnClose
+Обрабатывает событие завершения приложения.  
+  
+## Синтаксис  
+  
+```  
+HRESULT OnClose();  
+```  
+  
+#### Параметры  
+ Этот метод не принимает параметры.  
+  
+## Возвращаемое значение  
+ Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+  
+|Значение|Описание|  
+|--------------|--------------|  
+|`S_OK`|Метод успешно выполнен.|  
+  
+## Заметки  
+ Этот метод обрабатывает событие завершения приложения.  
+  
+## См. также  
+ [Интерфейс IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md)

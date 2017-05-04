@@ -1,0 +1,1 @@
+Internet Explorer версии до Internet Explorer 6

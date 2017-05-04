@@ -1,0 +1,1 @@
+Internet Explorer 9 \(стандартный режим\), Internet Explorer 10 \(стандартный режим\), Internet Explorer 11 \(стандартный режим\) и приложения из Магазина Windows
