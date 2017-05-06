@@ -1,5 +1,5 @@
 ---
-title: "Специальные возможности в проектах Office | Microsoft Docs"
+title: "Специальные возможности в проектах Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

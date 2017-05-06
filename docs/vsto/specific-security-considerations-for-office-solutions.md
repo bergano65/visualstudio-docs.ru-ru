@@ -1,5 +1,5 @@
 ---
-title: "Рекомендации по обеспечению безопасности для решений Office | Microsoft Docs"
+title: "Рекомендации по обеспечению безопасности для решений Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

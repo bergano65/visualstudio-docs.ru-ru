@@ -1,5 +1,5 @@
 ---
-title: "Практическое руководство. Добавление элементов управления XMLNode в документы Word | Microsoft Docs"
+title: "Практическое руководство. Добавление элементов управления XMLNode в документы Word"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

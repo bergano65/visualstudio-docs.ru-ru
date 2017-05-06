@@ -1,5 +1,5 @@
 ---
-title: "Объединение настроек VBA и настроек на уровне документа | Microsoft Docs"
+title: "Объединение настроек VBA и настроек на уровне документа"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

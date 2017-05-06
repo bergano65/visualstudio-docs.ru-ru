@@ -1,5 +1,5 @@
 ---
-title: "Создание решений рабочих процессов SharePoint | Microsoft Docs"
+title: "Создание решений рабочих процессов SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

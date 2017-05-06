@@ -1,5 +1,5 @@
 ---
-title: "Привязка данных к элементам управления в решениях Office | Microsoft Docs"
+title: "Привязка данных к элементам управления в решениях Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

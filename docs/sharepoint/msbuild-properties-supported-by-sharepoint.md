@@ -1,5 +1,5 @@
 ---
-title: "Свойства MSBuild, поддерживаемые в проектах SharePoint | Microsoft Docs"
+title: "Свойства MSBuild, поддерживаемые в проектах SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Развертывание, публикация и обновление пакетов решений SharePoint | Microsoft Docs"
+title: "Развертывание, публикация и обновление пакетов решений SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

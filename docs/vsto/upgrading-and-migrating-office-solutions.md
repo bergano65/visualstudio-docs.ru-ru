@@ -1,5 +1,5 @@
 ---
-title: "Обновление и перенос решений Office | Microsoft Docs"
+title: "Обновление и перенос решений Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

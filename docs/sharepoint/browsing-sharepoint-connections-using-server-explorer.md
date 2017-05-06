@@ -1,5 +1,5 @@
 ---
-title: "Просмотр подключений SharePoint с помощью обозревателя серверов | Microsoft Docs"
+title: "Просмотр подключений SharePoint с помощью обозревателя серверов"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

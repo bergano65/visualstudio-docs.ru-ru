@@ -1,5 +1,5 @@
 ---
-title: "Глобальный доступ к объектам в проектах Office | Microsoft Docs"
+title: "Глобальный доступ к объектам в проектах Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

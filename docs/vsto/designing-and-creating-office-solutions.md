@@ -1,5 +1,5 @@
 ---
-title: "Проектирование и создание решений Office | Microsoft Docs"
+title: "Проектирование и создание решений Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

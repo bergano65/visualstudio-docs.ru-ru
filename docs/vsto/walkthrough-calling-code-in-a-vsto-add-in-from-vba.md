@@ -1,5 +1,5 @@
 ---
-title: "Пошаговое руководство. Вызов кода из VBA в надстройках VSTO | Microsoft Docs"
+title: "Пошаговое руководство. Вызов кода из VBA в надстройках VSTO"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

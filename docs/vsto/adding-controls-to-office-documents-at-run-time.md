@@ -1,5 +1,5 @@
 ---
-title: "Добавление элементов управления в документы Office во время выполнения | Microsoft Docs"
+title: "Добавление элементов управления в документы Office во время выполнения"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

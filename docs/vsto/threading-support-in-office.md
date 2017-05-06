@@ -1,5 +1,5 @@
 ---
-title: "Поддержка потока в Office | Microsoft Docs"
+title: "Поддержка потока в Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

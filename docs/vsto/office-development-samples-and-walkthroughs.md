@@ -1,5 +1,5 @@
 ---
-title: "Образцы и пошаговые руководства разработки Office | Microsoft Docs"
+title: "Образцы и пошаговые руководства разработки Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

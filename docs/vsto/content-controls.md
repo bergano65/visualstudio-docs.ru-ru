@@ -1,5 +1,5 @@
 ---
-title: "Элементы управления содержимым | Microsoft Docs"
+title: "Элементы управления содержимым"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

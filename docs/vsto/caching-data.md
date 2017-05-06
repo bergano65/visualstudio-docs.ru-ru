@@ -1,5 +1,5 @@
 ---
-title: "Кэширование данных | Microsoft Docs"
+title: "Кэширование данных"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

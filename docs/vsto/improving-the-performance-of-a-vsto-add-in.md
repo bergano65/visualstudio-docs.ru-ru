@@ -1,5 +1,5 @@
 ---
-title: "Повышение производительности надстройки VSTO | Microsoft Docs"
+title: "Повышение производительности надстройки VSTO"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

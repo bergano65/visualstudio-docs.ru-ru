@@ -1,5 +1,5 @@
 ---
-title: "Рекомендации по созданию областей формы Outlook | Microsoft Docs"
+title: "Рекомендации по созданию областей формы Outlook"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

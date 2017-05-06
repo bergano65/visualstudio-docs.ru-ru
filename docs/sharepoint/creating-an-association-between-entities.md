@@ -1,5 +1,5 @@
 ---
-title: "Создание ассоциации между сущностями | Microsoft Docs"
+title: "Создание ассоциации между сущностями"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Пошаговое руководство. Создание внешнего списка в SharePoint с помощью бизнес-данных | Microsoft Docs"
+title: "Пошаговое руководство. Создание внешнего списка в SharePoint с помощью бизнес-данных"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

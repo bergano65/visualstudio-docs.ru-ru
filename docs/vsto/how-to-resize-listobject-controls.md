@@ -1,5 +1,5 @@
 ---
-title: "Практическое руководство. Изменение размера элементов управления ListObject | Microsoft Docs"
+title: "Практическое руководство. Изменение размера элементов управления ListObject"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

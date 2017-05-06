@@ -1,5 +1,5 @@
 ---
-title: "Работа с документами Visio | Microsoft Docs"
+title: "Работа с документами Visio"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

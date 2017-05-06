@@ -1,5 +1,5 @@
 ---
-title: "Практическое руководство. Установка основных сборок взаимодействия Microsoft Office | Microsoft Docs"
+title: "Практическое руководство. Установка основных сборок взаимодействия Microsoft Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

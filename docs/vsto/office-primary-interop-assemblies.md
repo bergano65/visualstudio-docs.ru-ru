@@ -1,5 +1,5 @@
 ---
-title: "Основные сборки взаимодействия Office | Microsoft Docs"
+title: "Основные сборки взаимодействия Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

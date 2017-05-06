@@ -1,5 +1,5 @@
 ---
-title: "Записи реестра для надстроек VSTO | Microsoft Docs"
+title: "Записи реестра для надстроек VSTO"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

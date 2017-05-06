@@ -1,5 +1,5 @@
 ---
-title: "Защита паролей в документах Office | Microsoft Docs"
+title: "Защита паролей в документах Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

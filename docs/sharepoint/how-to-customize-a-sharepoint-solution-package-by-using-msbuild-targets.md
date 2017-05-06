@@ -1,5 +1,5 @@
 ---
-title: "Практическое руководство. Настройка пакета решения SharePoint с помощью целевых объектов MSBuild | Microsoft Docs"
+title: "Практическое руководство. Настройка пакета решения SharePoint с помощью целевых объектов MSBuild"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

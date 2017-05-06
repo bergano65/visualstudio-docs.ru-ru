@@ -1,5 +1,5 @@
 ---
-title: "Слияние XML в манифестах компонентов и пакетов | Microsoft Docs"
+title: "Слияние XML в манифестах компонентов и пакетов"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

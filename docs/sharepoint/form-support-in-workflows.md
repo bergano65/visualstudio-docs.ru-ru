@@ -1,5 +1,5 @@
 ---
-title: "Поддержка форм в рабочих процессах | Microsoft Docs"
+title: "Поддержка форм в рабочих процессах"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

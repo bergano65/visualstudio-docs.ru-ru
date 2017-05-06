@@ -1,5 +1,5 @@
 ---
-title: "Практическое руководство. Программное перемещение элементов в Outlook | Microsoft Docs"
+title: "Практическое руководство. Программное перемещение элементов в Outlook"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Создание столбцов сайта, типов содержимого и списков для SharePoint | Microsoft Docs"
+title: "Создание столбцов сайта, типов содержимого и списков для SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

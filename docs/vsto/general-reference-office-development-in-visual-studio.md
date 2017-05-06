@@ -1,5 +1,5 @@
 ---
-title: "Общие справочные материалы (разработка решений Office в Visual Studio) | Microsoft Docs"
+title: "Общие справочные материалы (разработка решений Office в Visual Studio)"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

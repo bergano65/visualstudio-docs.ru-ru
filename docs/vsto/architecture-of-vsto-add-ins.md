@@ -1,5 +1,5 @@
 ---
-title: "Архитектура надстроек VSTO | Microsoft Docs"
+title: "Архитектура надстроек VSTO"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

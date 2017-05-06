@@ -1,5 +1,5 @@
 ---
-title: "Пошаговое руководство. Создание первой надстройки VSTO для Project | Microsoft Docs"
+title: "Пошаговое руководство. Создание первой надстройки VSTO для Project"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

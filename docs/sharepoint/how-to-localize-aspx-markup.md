@@ -1,5 +1,5 @@
 ---
-title: "Практическое руководство. Локализация разметки ASPX | Microsoft Docs"
+title: "Практическое руководство. Локализация разметки ASPX"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

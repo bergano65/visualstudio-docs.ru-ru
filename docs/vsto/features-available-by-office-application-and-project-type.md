@@ -1,5 +1,5 @@
 ---
-title: "Доступность функций по типам приложений Office и проектов | Microsoft Docs"
+title: "Доступность функций по типам приложений Office и проектов"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Дополнительные сведения об ошибках SharePoint | Microsoft Docs"
+title: "Дополнительные сведения об ошибках SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

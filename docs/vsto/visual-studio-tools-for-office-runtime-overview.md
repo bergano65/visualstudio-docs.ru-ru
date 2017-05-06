@@ -1,5 +1,5 @@
 ---
-title: "Общие сведения об инструментах Visual Studio для среды выполнения Office | Microsoft Docs"
+title: "Общие сведения об инструментах Visual Studio для среды выполнения Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

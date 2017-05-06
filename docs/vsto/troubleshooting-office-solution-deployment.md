@@ -1,5 +1,5 @@
 ---
-title: "Устранение неполадок, связанных с развертыванием решения Office | Microsoft Docs"
+title: "Устранение неполадок, связанных с развертыванием решения Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

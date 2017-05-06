@@ -1,5 +1,5 @@
 ---
-title: "Пошаговое руководство. Создание и отладка решения рабочих процессов SharePoint | Microsoft Docs"
+title: "Пошаговое руководство. Создание и отладка решения рабочих процессов SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Функция GetValidCompatibleFramework | Microsoft Docs"
+title: "Функция GetValidCompatibleFramework"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

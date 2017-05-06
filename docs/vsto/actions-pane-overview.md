@@ -1,5 +1,5 @@
 ---
-title: "Общие сведения о панели действий | Microsoft Docs"
+title: "Общие сведения о панели действий"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

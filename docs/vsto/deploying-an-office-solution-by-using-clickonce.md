@@ -1,5 +1,5 @@
 ---
-title: "Развертывание решения Office с помощью ClickOnce | Microsoft Docs"
+title: "Развертывание решения Office с помощью ClickOnce"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

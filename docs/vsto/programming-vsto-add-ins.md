@@ -1,5 +1,5 @@
 ---
-title: "Приступая к программированию надстроек VSTO | Microsoft Docs"
+title: "Приступая к программированию надстроек VSTO"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

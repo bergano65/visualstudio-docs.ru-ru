@@ -1,5 +1,5 @@
 ---
-title: "Совместная разработка решений Office | Microsoft Docs"
+title: "Совместная разработка решений Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

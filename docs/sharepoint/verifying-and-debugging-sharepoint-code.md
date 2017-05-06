@@ -1,5 +1,5 @@
 ---
-title: "Проверка и отладка кода SharePoint | Microsoft Docs"
+title: "Проверка и отладка кода SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

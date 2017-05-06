@@ -1,5 +1,5 @@
 ---
-title: "Настройка пользовательского интерфейса Office | Microsoft Docs"
+title: "Настройка пользовательского интерфейса Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

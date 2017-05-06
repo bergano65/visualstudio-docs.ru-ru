@@ -1,5 +1,5 @@
 ---
-title: "Создание страниц приложений для SharePoint | Microsoft Docs"
+title: "Создание страниц приложений для SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

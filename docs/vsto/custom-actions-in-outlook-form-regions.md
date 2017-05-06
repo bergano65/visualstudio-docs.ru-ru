@@ -1,5 +1,5 @@
 ---
-title: "Пользовательские действия в областях форм Outlook | Microsoft Docs"
+title: "Пользовательские действия в областях форм Outlook"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

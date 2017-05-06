@@ -1,5 +1,5 @@
 ---
-title: "Автоматизация Excel с помощью расширенных объектов | Microsoft Docs"
+title: "Автоматизация Excel с помощью расширенных объектов"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

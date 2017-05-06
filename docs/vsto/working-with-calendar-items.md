@@ -1,5 +1,5 @@
 ---
-title: "Работа с элементами календаря | Microsoft Docs"
+title: "Работа с элементами календаря"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

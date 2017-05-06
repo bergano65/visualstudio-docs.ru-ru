@@ -1,5 +1,5 @@
 ---
-title: "Отладка проектов Office | Microsoft Docs"
+title: "Отладка проектов Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

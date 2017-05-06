@@ -1,5 +1,5 @@
 ---
-title: "Знакомство с программными настройками уровня документа для Excel | Microsoft Docs"
+title: "Знакомство с программными настройками уровня документа для Excel"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

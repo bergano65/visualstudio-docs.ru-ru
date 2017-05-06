@@ -1,5 +1,5 @@
 ---
-title: "Ведущий элемент документа | Microsoft Docs"
+title: "Ведущий элемент документа"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

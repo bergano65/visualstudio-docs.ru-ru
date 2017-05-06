@@ -1,5 +1,5 @@
 ---
-title: "Практическое руководство. Добавление компонента в решение SharePoint | Microsoft Docs"
+title: "Практическое руководство. Добавление компонента в решение SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

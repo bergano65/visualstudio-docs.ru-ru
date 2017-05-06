@@ -1,5 +1,5 @@
 ---
-title: "Интеграция бизнес-данных в SharePoint | Microsoft Docs"
+title: "Интеграция бизнес-данных в SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

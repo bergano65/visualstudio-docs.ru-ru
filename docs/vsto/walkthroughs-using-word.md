@@ -1,5 +1,5 @@
 ---
-title: "Пошаговые руководства с использованием Word | Microsoft Docs"
+title: "Пошаговые руководства с использованием Word"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Решения InfoPath | Microsoft Docs"
+title: "Решения InfoPath"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

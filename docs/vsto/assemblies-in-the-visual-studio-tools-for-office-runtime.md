@@ -1,5 +1,5 @@
 ---
-title: "Сборки среды выполнения Visual Studio Tools for Office | Microsoft Docs"
+title: "Сборки среды выполнения Visual Studio Tools for Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

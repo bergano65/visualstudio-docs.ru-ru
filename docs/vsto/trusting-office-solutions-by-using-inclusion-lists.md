@@ -1,5 +1,5 @@
 ---
-title: "Предоставление доверия решениям Office с помощью списков включения | Microsoft Docs"
+title: "Предоставление доверия решениям Office с помощью списков включения"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Пошаговое руководство. Создание веб-части для SharePoint с помощью конструктора | Microsoft Docs"
+title: "Пошаговое руководство. Создание веб-части для SharePoint с помощью конструктора"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

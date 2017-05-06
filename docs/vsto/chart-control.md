@@ -1,5 +1,5 @@
 ---
-title: "Элемент управления &quot;диаграмма&quot; | Microsoft Docs"
+title: "Элемент управления &quot;диаграмма&quot;"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

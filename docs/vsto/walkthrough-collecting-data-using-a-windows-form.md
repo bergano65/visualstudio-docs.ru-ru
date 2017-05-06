@@ -1,5 +1,5 @@
 ---
-title: "Пошаговое руководство. Сбор данных с использованием формы Windows Forms | Microsoft Docs"
+title: "Пошаговое руководство. Сбор данных с использованием формы Windows Forms"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

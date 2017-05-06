@@ -1,5 +1,5 @@
 ---
-title: "Практическое руководство. Предоставление доступа к коду со стороны VBA в проекте Visual Basic | Microsoft Docs"
+title: "Практическое руководство. Предоставление доступа к коду со стороны VBA в проекте Visual Basic"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

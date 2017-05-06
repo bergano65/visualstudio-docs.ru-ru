@@ -1,5 +1,5 @@
 ---
-title: "Работа с текстом в документах | Microsoft Docs"
+title: "Работа с текстом в документах"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

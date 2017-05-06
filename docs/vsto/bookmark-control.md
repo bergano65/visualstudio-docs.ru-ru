@@ -1,5 +1,5 @@
 ---
-title: "Элементы управления Bookmark | Microsoft Docs"
+title: "Элементы управления Bookmark"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

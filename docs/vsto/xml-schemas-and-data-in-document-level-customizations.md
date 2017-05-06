@@ -1,5 +1,5 @@
 ---
-title: "XML-схемы и данные в настройках на уровне документа | Microsoft Docs"
+title: "XML-схемы и данные в настройках на уровне документа"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

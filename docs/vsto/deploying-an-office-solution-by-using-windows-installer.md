@@ -1,5 +1,5 @@
 ---
-title: "Развертывание решения Office с помощью установщика Windows | Microsoft Docs"
+title: "Развертывание решения Office с помощью установщика Windows"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

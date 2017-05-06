@@ -1,5 +1,5 @@
 ---
-title: "Расширение документов Word и книг Excel в надстройках VSTO в среде выполнения | Microsoft Docs"
+title: "Расширение документов Word и книг Excel в надстройках VSTO в среде выполнения"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

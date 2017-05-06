@@ -1,5 +1,5 @@
 ---
-title: "Примеры разработки решений Office | Microsoft Docs"
+title: "Примеры разработки решений Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

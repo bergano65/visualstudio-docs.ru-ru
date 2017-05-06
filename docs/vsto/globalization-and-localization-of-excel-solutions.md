@@ -1,5 +1,5 @@
 ---
-title: "Глобализация и локализация решений Excel | Microsoft Docs"
+title: "Глобализация и локализация решений Excel"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

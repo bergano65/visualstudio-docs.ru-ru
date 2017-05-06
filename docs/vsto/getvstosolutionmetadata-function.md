@@ -1,5 +1,5 @@
 ---
-title: "Функция GetVstoSolutionMetadata | Microsoft Docs"
+title: "Функция GetVstoSolutionMetadata"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

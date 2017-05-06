@@ -1,5 +1,5 @@
 ---
-title: "Пошаговое руководство. Создание веб-части Silverlight, отображающей данные OData для SharePoint | Microsoft Docs"
+title: "Пошаговое руководство. Создание веб-части Silverlight, отображающей данные OData для SharePoint"
 ms.custom: ""
 ms.date: "02/22/2017"
 ms.prod: "visual-studio-dev14"

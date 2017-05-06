@@ -1,5 +1,5 @@
 ---
-title: "Пошаговое руководство. Отладка приложения SharePoint при помощи IntelliTrace | Microsoft Docs"
+title: "Пошаговое руководство. Отладка приложения SharePoint при помощи IntelliTrace"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

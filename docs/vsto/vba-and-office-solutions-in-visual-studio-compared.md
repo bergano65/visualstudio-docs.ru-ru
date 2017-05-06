@@ -1,5 +1,5 @@
 ---
-title: "Сравнение решений Office и VBA в Visual Studio | Microsoft Docs"
+title: "Сравнение решений Office и VBA в Visual Studio"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

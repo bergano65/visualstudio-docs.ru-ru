@@ -1,5 +1,5 @@
 ---
-title: "Решения Outlook | Microsoft Docs"
+title: "Решения Outlook"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

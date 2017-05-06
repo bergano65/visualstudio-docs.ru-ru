@@ -1,5 +1,5 @@
 ---
-title: "Использование элементов управления Windows Forms в листах Excel | Microsoft Docs"
+title: "Использование элементов управления Windows Forms в листах Excel"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

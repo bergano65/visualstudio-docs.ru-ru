@@ -1,5 +1,5 @@
 ---
-title: "Обновление проекта. Диалоговое окно &quot;Параметры&quot; | Microsoft Docs"
+title: "Обновление проекта. Диалоговое окно &quot;Параметры&quot;"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

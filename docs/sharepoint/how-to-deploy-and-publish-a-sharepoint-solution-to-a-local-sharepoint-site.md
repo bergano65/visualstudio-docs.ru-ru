@@ -1,5 +1,5 @@
 ---
-title: "Практическое руководство. Развертывание и публикация решения SharePoint на локальном сайте SharePoint | Microsoft Docs"
+title: "Практическое руководство. Развертывание и публикация решения SharePoint на локальном сайте SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

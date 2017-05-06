@@ -1,5 +1,5 @@
 ---
-title: "Практическое руководство. Добавление элементов управления Windows Forms в документы Office | Microsoft Docs"
+title: "Практическое руководство. Добавление элементов управления Windows Forms в документы Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

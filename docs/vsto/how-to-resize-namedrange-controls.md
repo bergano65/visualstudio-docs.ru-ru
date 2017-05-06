@@ -1,5 +1,5 @@
 ---
-title: "Практическое руководство. Изменения размера элементов управления &quot;NamedRange&quot; | Microsoft Docs"
+title: "Практическое руководство. Изменения размера элементов управления &quot;NamedRange&quot;"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

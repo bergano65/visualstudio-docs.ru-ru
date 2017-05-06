@@ -1,5 +1,5 @@
 ---
-title: "Общие сведения о пользовательских XML-частях | Microsoft Docs"
+title: "Общие сведения о пользовательских XML-частях"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

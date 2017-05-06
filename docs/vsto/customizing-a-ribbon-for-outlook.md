@@ -1,5 +1,5 @@
 ---
-title: "Настройка ленты для Outlook | Microsoft Docs"
+title: "Настройка ленты для Outlook"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

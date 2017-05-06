@@ -1,5 +1,5 @@
 ---
-title: "Пошаговое руководство. Импорт области формы, созданной в Outlook | Microsoft Docs"
+title: "Пошаговое руководство. Импорт области формы, созданной в Outlook"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

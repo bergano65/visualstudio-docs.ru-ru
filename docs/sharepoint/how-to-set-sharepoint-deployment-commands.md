@@ -1,5 +1,5 @@
 ---
-title: "Практическое руководство. Установка команд развертывания SharePoint | Microsoft Docs"
+title: "Практическое руководство. Установка команд развертывания SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

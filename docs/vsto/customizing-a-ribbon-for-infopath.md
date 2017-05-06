@@ -1,5 +1,5 @@
 ---
-title: "Настройка ленты для InfoPath | Microsoft Docs"
+title: "Настройка ленты для InfoPath"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Доступ к ленте во время выполнения | Microsoft Docs"
+title: "Доступ к ленте во время выполнения"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

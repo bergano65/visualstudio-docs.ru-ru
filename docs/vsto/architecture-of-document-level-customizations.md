@@ -1,5 +1,5 @@
 ---
-title: "Архитектура настроек на уровне документа | Microsoft Docs"
+title: "Архитектура настроек на уровне документа"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

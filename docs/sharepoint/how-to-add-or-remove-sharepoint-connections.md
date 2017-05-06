@@ -1,5 +1,5 @@
 ---
-title: "Практическое руководство. Добавление и удаление подключений SharePoint | Microsoft Docs"
+title: "Практическое руководство. Добавление и удаление подключений SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

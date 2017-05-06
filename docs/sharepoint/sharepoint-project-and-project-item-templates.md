@@ -1,5 +1,5 @@
 ---
-title: "Шаблоны проектов и элементов проектов SharePoint | Microsoft Docs"
+title: "Шаблоны проектов и элементов проектов SharePoint"
 ms.custom: ""
 ms.date: "02/22/2017"
 ms.prod: "visual-studio-dev14"

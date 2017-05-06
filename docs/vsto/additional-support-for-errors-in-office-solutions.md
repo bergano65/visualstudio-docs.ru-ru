@@ -1,5 +1,5 @@
 ---
-title: "Дополнительные сведения об ошибках в решениях Office | Microsoft Docs"
+title: "Дополнительные сведения об ошибках в решениях Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Пошаговые руководства по разработке решений SharePoint | Microsoft Docs"
+title: "Пошаговые руководства по разработке решений SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

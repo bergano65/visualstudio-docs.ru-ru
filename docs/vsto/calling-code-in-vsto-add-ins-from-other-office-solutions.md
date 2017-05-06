@@ -1,5 +1,5 @@
 ---
-title: "Вызов кода в надстройках VSTO из других решений Office | Microsoft Docs"
+title: "Вызов кода в надстройках VSTO из других решений Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

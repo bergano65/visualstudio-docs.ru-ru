@@ -1,5 +1,5 @@
 ---
-title: "Общие задачи программирования Office | Microsoft Docs"
+title: "Общие задачи программирования Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

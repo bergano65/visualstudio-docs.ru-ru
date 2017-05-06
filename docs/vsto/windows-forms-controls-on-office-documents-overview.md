@@ -1,5 +1,5 @@
 ---
-title: "Общие сведения об использовании элементов управления Windows Forms в документах Office | Microsoft Docs"
+title: "Общие сведения об использовании элементов управления Windows Forms в документах Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

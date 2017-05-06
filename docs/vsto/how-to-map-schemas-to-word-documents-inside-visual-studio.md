@@ -1,5 +1,5 @@
 ---
-title: "Практическое руководство. Сопоставление схем и документов Word в Visual Studio | Microsoft Docs"
+title: "Практическое руководство. Сопоставление схем и документов Word в Visual Studio"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

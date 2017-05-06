@@ -1,5 +1,5 @@
 ---
-title: "Пошаговое руководство. Импорт элементов из существующего сайта SharePoint | Microsoft Docs"
+title: "Пошаговое руководство. Импорт элементов из существующего сайта SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"
