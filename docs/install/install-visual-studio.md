@@ -36,18 +36,19 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
 ms.openlocfilehash: 059dd2068c5aa0d55f94f293d8430a1f401354ba
+ms.contentlocale: ru-ru
 ms.lasthandoff: 04/06/2017
 
 ---
 # <a name="install-visual-studio-2017"></a>Установка Visual Studio 2017
-Предлагаем ознакомиться с новым способом установки Visual Studio. В последней версии мы упростили выбор и установку нужных компонентов, что позволяет уменьшить объем требуемых для Visual Studio ресурсов системы и ускорить установку.  
+Предлагаем ознакомиться с новым способом установки Visual Studio. В последней версии мы упростили выбор и установку нужных компонентов, что позволяет уменьшить объем требуемых для Visual Studio ресурсов системы и ускорить установку.
 
  Вы хотите ознакомиться с другими новыми возможностями? Обратитесь к [заметкам о выпуске](https://www.visualstudio.com/news/releasenotes/vs15-relnotes). Более подробные сведения о том, как мы переработали процедуру установки, см. в записях блога [Более быстрый и эффективный установщик Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2016/04/01/faster-leaner-visual-studio-installer/) и [Разбор оптимизированной процедуры установки Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2016/04/25/anatomy-of-a-low-impact-visual-studio-install/).  
 
- Готовы к установке? Мы последовательно опишем каждое действие. Итак, начнем.  
+ Готовы к установке? Мы последовательно опишем каждое действие. Итак, начнем.
 
 ## <a name="install-the-installer"></a>Установка установщика  
  После скачивания Visual Studio 2017 вы получаете файл начальной загрузки, который, в свою очередь, устанавливает новый облегченный установщик. В этом новом установщике есть все необходимое для настройки установки.  
