@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 04/06/2017
+ms.date: 05/10/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -31,9 +31,10 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
 ms.openlocfilehash: 6b981d8ec1594da3db8fa1384ddeeee9da519837
+ms.contentlocale: ru-ru
 ms.lasthandoff: 04/06/2017
 
 ---
@@ -61,7 +62,6 @@ ms.lasthandoff: 04/06/2017
 Идентификатор компонента | Имя | Версия | Тип зависимости
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.0.26208.0 | Обязательное
-
 ## <a name="unaffiliated-components"></a>Самостоятельные компоненты
 
 Здесь перечислены компоненты, которые не используются рабочими нагрузками, но могут быть выбраны в качестве отдельного компонента.
@@ -69,7 +69,6 @@ Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback C
 Идентификатор компонента | Имя | Версия
 --- | --- | ---
 Н/Д | Н/Д | Н/Д
-
 
 ## <a name="see-also"></a>См. также
 
