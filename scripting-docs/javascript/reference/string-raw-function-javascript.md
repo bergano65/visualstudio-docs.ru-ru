@@ -1,0 +1,73 @@
+---
+title: "Функция String.raw (JavaScript) | Microsoft Docs"
+ms.custom: ""
+ms.date: "01/18/2017"
+ms.prod: "windows-client-threshold"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-javascript"
+ms.tgt_pltfrm: ""
+ms.topic: "language-reference"
+dev_langs: 
+  - "JavaScript"
+  - "TypeScript"
+  - "DHTML"
+ms.assetid: b1038b73-3944-4645-b075-3a674b313762
+caps.latest.revision: 3
+author: "mikejo5000"
+ms.author: "mikejo"
+manager: "ghogen"
+caps.handback.revision: 3
+---
+# Функция String.raw (JavaScript)
+Возвращает необработанную строковую форму строки шаблона.  
+  
+## Синтаксис  
+  
+```  
+String.raw`templateStr`;  
+String.raw(obj, ...substitutions);  
+```  
+  
+#### Параметры  
+ `templateStr`  
+ Обязательный.  Строка шаблона.  
+  
+ `obj`  
+ Обязательный.  Правильно отформатированный объект, указанный с помощью нотации литерала объекта, например: { raw: 'value' }.  
+  
+ `...substitutions`  
+ Необязательно.  Массив \([параметр "остальное"](../../javascript/functions-javascript.md)\), состоящий из одного значения или нескольких значений подстановки.  
+  
+## Заметки  
+ Функция `String.raw` предназначена для использования со [строками шаблона](../../javascript/advanced/template-strings-javascript.md).  Необработанная строка будет содержать все escape\-символы и символы обратной косой черты, которые присутствуют в строке.  
+  
+ Если `obj` не является правильно отформатированным объектом, выводится сообщение об ошибке.  
+  
+## Пример  
+  
+```  
+function log(arg) {  
+    if(console && console.log) {  
+        console.log(arg);  
+    }  
+};  
+  
+var name = "bob";  
+  
+log(`hello \t${name}`);  
+log(String.raw`hello \t${name}`);  
+// The following usage for String.raw is supported but  
+// is not typical.  
+log(String.raw({ raw: 'fred'}, 'F', 'R', 'E'));  
+  
+// Output:  
+// hello   bob  
+// hello \tbob  
+// fFrReEd  
+  
+```  
+  
+## Требования  
+ [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]
