@@ -3,10 +3,11 @@ layout: HubPage
 hide_bc: true
 title: "Документация по Visual Studio"
 description: "Узнайте, как с помощью Visual Studio 2017 разрабатывать приложения, службы и инструменты для платформ и устройств на используемом вами языке."
-translationtype: Human Translation
-ms.sourcegitcommit: 06cdfb076120ffd7459a16b56c659bb86942cd7f
-ms.openlocfilehash: 5a8448dff45473fa40892fb07604759a9d015021
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 2831d252fbc9601e62c372ac3df7704e1dc65f2a
+ms.openlocfilehash: a8f12e3418da5ec6fe778d3a7eaed610c120a859
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/10/2017
 
 ---
 <div id="main" class="v2">
@@ -201,7 +202,7 @@ ms.lasthandoff: 03/31/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Python (предварительная версия)</h3>
+                                                    <h3>Python</h3>
                                                     <p>Интерактивная разработка для приложений Python с помощью привычных платформ, включая Django и Flask.</p>
                                                 </div>
                                             </div>
@@ -247,6 +248,25 @@ ms.lasthandoff: 03/31/2017
                                     </div>
                                 </a>
                             </li>                            
+                            <li>        
+                                <a href="https://go.microsoft.com/fwlink/?linkid=834748">        
+                                  <div class="cardSize">        
+                                    <div class="cardPadding">        
+                                      <div class="card">        
+                                        <div class="cardImageOuter">        
+                                          <div class="cardImage bgdAccent1 cardScaleImage">        
+                                            <img data-scaleimage="./images/vs_web-6.svg" src="./images/vs_web-6.svg" alt="" />        
+                                        </div>        
+                                        </div>        
+                                          <div class="cardText">        
+                                            <h3>Приложения для обработки и анализа данных и аналитические приложения</h3>        
+                                            <p>Языки и инструменты для создания приложений для обработки и анализа данных, включая Python, R и F#.</p>        
+                                        </div>        
+                                      </div>        
+                                    </div>        
+                                  </div>        
+                                </a>        
+                            </li>
                             <li>
                                 <a href="https://go.microsoft.com/fwlink/?linkid=833075">
                                     <div class="cardSize">
@@ -287,7 +307,7 @@ ms.lasthandoff: 03/31/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Разработка мобильных приложений на платформе .NET</h3>
+                                                    <h3>Разработка мобильных приложений для .NET</h3>
                                                     <p>Создание межплатформенных приложений для iOS, Android или Windows с помощью Xamarin.</p>
                                                 </div>
                                             </div>
@@ -589,7 +609,7 @@ ms.lasthandoff: 03/31/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Данные</h3>
-                                                    <p>Создавайте приложения, способные работать с данными практически в любых продуктах и службах СУБД, в любом формате и любом месте — на локальном компьютере, в локальной сети, а также в общедоступном, частном или гибридном облаке.</p>
+                                                    <p>Создание приложений для обработки данных, которые могут подключаться к любой локальной или облачной базе данных или службе. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -731,7 +751,7 @@ ms.lasthandoff: 03/31/2017
                                             </div>
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833068">
-                                                    <h3>Python (предварительная версия)</h3>
+                                                    <h3>Python</h3>
                                                     <p>Динамический объектно-ориентированный высокоуровневый язык программирования, который часто используется для быстрой разработки приложений.</p>
                                                 </a>
                                             </div>
