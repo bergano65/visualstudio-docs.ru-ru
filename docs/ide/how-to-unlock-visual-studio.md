@@ -28,16 +28,17 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 89c7ea153dc44342851b43ced5d99ffcd0b52312
 ms.openlocfilehash: 75f0baac767d66ec3c942d26957beed256f45ab3
+ms.contentlocale: ru-ru
 ms.lasthandoff: 02/22/2017
 
 ---
 # <a name="how-to-unlock-visual-studio"></a>Разблокирование Visual Studio
 Вы можете работать с ознакомительной версией Visual Studio бесплатно в течение 30 дней. При входе в интегрированную среду разработки пробный период можно продлить на 90 дней. Чтобы продолжить использование Visual Studio, разблокируйте ее. Для этого:  
   
-1.  используйте подписку;  
+1.  используйте подписку.  
   
 2.  введите ключ продукта.  
   
@@ -69,7 +70,7 @@ ms.lasthandoff: 02/22/2017
   
  Это сообщение указывает, что, хотя подписка по-прежнему действительна, маркер лицензии, используемый Visual Studio для обновления подписки, не был обновлен и устарел по одной из следующих причин:  
   
-1.  вы не использовали Visual Studio или длительное время не были подключены к Интернету;  
+1.  вы не использовали Visual Studio или длительное время не были подключены к Интернету.  
   
 2.  вы вышли из Visual Studio.  
   
