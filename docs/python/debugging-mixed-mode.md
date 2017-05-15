@@ -1,7 +1,7 @@
 ---
 title: "Смешанный режим отладки для Python в Visual Studio | Документы Майкрософт"
 ms.custom: 
-ms.date: 4/10/2017
+ms.date: 5/8/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -28,22 +28,26 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
-ms.openlocfilehash: bdc621831893f907beba7ec5ad503fe4d96c0042
-ms.lasthandoff: 04/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: 919227fb624f4b6dc51e13ccadea8e2682b9816f
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/09/2017
 
 ---
 
 # <a name="debugging-python-and-c-together"></a>Совместная отладка Python и C++
 
-Большинство обычных отладчиков Python поддерживает только отладку кода Python. Но на практике Python используется совместно с C или C++, если требуется высокая производительность или возможность напрямую вызывать интерфейсы API платформ (например, см. раздел [Создание расширения C++ для Python](cpp-and-python.md). Visual Studio (при использовании Инструментов Python для Visual Studio 2.0 и более поздней версии) предоставляет интегрированную одновременную отладку в смешанном режиме для Python и машинного кода C/C++ с помощью объединенных стеков вызовов, возможность переключаться между Python и машинным кодом, точки останова в любом типе кода, а также возможность видеть представления объектов Python в кадрах машинного кода и наоборот:
+Большинство обычных отладчиков Python поддерживает только отладку кода Python. Но на практике Python используется совместно с C или C++, если требуется высокая производительность или возможность напрямую вызывать интерфейсы API платформ (например, см. раздел [Создание расширения C++ для Python](cpp-and-python.md). Visual Studio предоставляет интегрированную одновременную отладку в смешанном режиме для Python и машинного кода (C/C++) с объединением стеков вызовов, возможностью переключаться между Python и машинным кодом, точками останова для кода любого типа, а также возможностью видеть представления объектов Python в кадрах машинного кода и наоборот.
 
 ![Отладка в смешанном режиме](media/mixed-mode-debugging.png) 
 
 Введение в создание, тестирование и отладку модулей машинного кода С с помощью Visual Studio см. в видео [Deep Dive: Creating Native Modules](https://youtu.be/D9RlT06a1EI) (Подробный обзор. Создание собственных модулей) длительностью 9 мин 9 с, размещенном на сайте youtube.com.
 
 > [!VIDEO https://www.youtube.com/embed/D9RlT06a1EI]
+
+> [!Note]
+> Смешанный режим отладки не доступен в Инструментах Python для Visual Studio 1.x.
 
 ## <a name="enabling-mixed-mode-debugging"></a>Включение смешанного режима отладки
 
