@@ -29,9 +29,10 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 73039d6e9bf0db6b3deee00745e21660173f21c0
+ms.contentlocale: ru-ru
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -62,7 +63,7 @@ public sealed class BasicPackage : Package
  Если для какой-либо причине ни один из этих методов выполняется успешно при удалении расширения, VSPackage сборки из командной строки можно отменить регистрацию следующим образом:  
   
 ```  
-<location of Visual Studio 2015 install>\"Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin\regpkg” /unregister <pathToVSPackage assembly>  
+<location of Visual Studio 2015 install>\"Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin\regpkg" /unregister <pathToVSPackage assembly>  
 ```  
   
 ## <a name="see-also"></a>См. также  

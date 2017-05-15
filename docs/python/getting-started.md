@@ -1,7 +1,7 @@
 ---
 title: "Начало работы с Python в Visual Studio | Документация Майкрософт"
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 5/1/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -27,16 +27,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: 2659c1a3b1adfc3f462971205460942c5fe5171f
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: 8001036077b8b14af80fabceafad5d3aff9b25f4
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/09/2017
 
 ---
 
 # <a name="getting-started-with-python-in-visual-studio"></a>Начало работы с Python в Visual Studio
 
-Если у вас установлена среда Visual Studio с рабочей нагрузкой Python (Visual Studio 2017) или с Инструментами Python для Visual Studio (Visual Studio 2015 и более ранние версии), вы можете приступить к изучению возможностей разработки на Python.
+Если у вас установлена среда Visual Studio с рабочей нагрузкой Python (Visual Studio 2017) или с Инструментами Python для Visual Studio (Visual Studio 2015 и более ранние версии), вы можете приступить к изучению возможностей разработки на Python. (При необходимости используйте раздел [Установка](installation.md).)
 
 В этом пошаговом руководстве мы создадим пустое приложение Python, выберем среду Python для работы и напишем несколько строк кода, чтобы увидеть технологию IntelliSense в работе. Мы также поработаем с интерактивным окном REPL, чтобы создать код, а затем завершим работу программы и запустим ее саму по себе и в отладчике.
 
@@ -271,4 +272,5 @@ ms.lasthandoff: 03/27/2017
 - Visual Studio предоставляет возможность отладки приложения на удаленных серверах, как описано в статьях [Удаленная отладка кода Python](debugging-cross-platform-remote.md) и [Удаленная отладка кода Python в Azure](debugging-azure-remote.md).
 - Сведения о том, как оценить производительность кода Python, см. в статье [Профилирование кода Python](profiling.md).
 - Модульные тесты, написанные на Python, напрямую интегрируются в Visual Studio Test Explorer, как это описано в статье [Настройка модульного тестирования для кода Python](unit-testing.md).
+- [Бесплатные курсы Python в Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
 

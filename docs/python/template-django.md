@@ -1,7 +1,7 @@
 ---
-title: "Шаблон веб-проекта Django в Инструментах Python для Visual Studio | Документация Майкрософт"
+title: "Шаблон веб-проекта Django для Python в Visual Studio | Документация Майкрософт"
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 5/8/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -28,18 +28,19 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 7f65641fbf15edfe16931badc19602a0fc773bff
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: 4a5db2deb3633e8305dbf83cbe6ba8c0e3344c72
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/09/2017
 
 ---
 
 # <a name="django-web-project-template"></a>Шаблон веб-проекта Django
 
-[Django](https://www.djangoproject.com/) — это высокоуровневая платформа Python для быстрого создания безопасных и масштабируемых веб-систем. Инструменты Python для Visual Studio (PTVS) предоставляют шаблон проекта для настройки структуры веб-приложения на основе Django. Чтобы использовать этот шаблон в Visual Studio, выберите **Файл > Новый > Проект**, выполните поиск по запросу Django и выберите шаблон "Веб-проект Django". Созданный проект будет содержать стандартный код и базу данных SQLite по умолчанию. Шаблон "Пустой веб-проект Django" выглядит так же, но не включает базу данных.
+[Django](https://www.djangoproject.com/) — это высокоуровневая платформа Python для быстрого создания безопасных и масштабируемых веб-систем. Поддержка Python в Visual Studio предоставляет шаблон проекта для настройки структуры веб-приложения на основе Django. Чтобы использовать этот шаблон в Visual Studio, выберите **Файл > Новый > Проект**, выполните поиск по запросу Django и выберите шаблон "Веб-проект Django". Созданный проект будет содержать стандартный код и базу данных SQLite по умолчанию. Шаблон "Пустой веб-проект Django" выглядит так же, но не включает базу данных.
 
-PTVS предоставляет полную поддержку технологии IntelliSense для проектов Django.
+Visual Studio предоставляет полную поддержку технологии IntelliSense для проектов Django.
 
 - Переменные контекста, передаваемые в шаблоне:
 
@@ -56,7 +57,7 @@ PTVS предоставляет полную поддержку технолог
     ![IntelliSense для JavaScript](media/template-django-intellisense-js.png)
 
 
-Также PTVS предоставляет полную [поддержку отладки](debugging.md) для проектов Django: 
+Также Visual Studio предоставляет полную [поддержку отладки](debugging.md) для проектов Django: 
 
 ![Точки останова](media/template-django-debugging.png)
 

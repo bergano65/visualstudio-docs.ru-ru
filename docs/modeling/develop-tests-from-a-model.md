@@ -27,9 +27,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: 08aabdfe0e268f93ef7723076375b7f65b15ccf3
 ms.openlocfilehash: b7cb109d11669f411b5ca3bdf3c4c32a63ac53a1
+ms.contentlocale: ru-ru
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -100,11 +101,11 @@ ms.lasthandoff: 02/22/2017
  Чтобы протестировать такой вариант использования, как "Добавление пункта в заказ", включите в метод теста код, аналогичный следующему:  
   
 ```  
-Order order = … ; // set up an order  
+Order order = ... ; // set up an order  
 // Store prior state:  
 int countBefore = order.MenuItems.Count;   
 // Perform use case:  
-MenuItem chosenItem = …; // choose an item  
+MenuItem chosenItem = ...; // choose an item  
 AddItemToOrder (chosenItem, order);   
 // Verify part of postcondition:  
 int countAfter = order.MenuItems.Count;  
@@ -145,7 +146,7 @@ Assert (countAfter == countBefore = 1);
   
  С точки зрения тестирования модель требований представляется краткой версией тестов. Поэтому на протяжении проекта необходимо поддерживать отношение между тестами и моделью.  
   
-##  <a name="a-nameattachinga-attaching-test-cases-to-model-elements"></a><a name="Attaching"></a>Присоединение тестовых случаев к элементам модели  
+##  <a name="Attaching"></a>Присоединение тестовых случаев к элементам модели  
  Если в проекте используется [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], вы можете связать тесты с элементами модели. Это позволяет быстро находить тесты, на которые влияет изменение требований, и помогает отслеживать, в какой степени было удовлетворено требование.  
   
  Тесты можно связать со всеми видами элементов. Ниже представлено несколько примеров.  

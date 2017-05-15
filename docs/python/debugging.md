@@ -1,7 +1,7 @@
 ---
-title: "Отладка в Инструментах Python для Visual Studio | Документация Майкрософт"
+title: "Отладка Python в Visual Studio | Документация Майкрософт"
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 5/8/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -28,16 +28,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: adf122a478b29674dc2924dcf7d42972a5a3f52e
-ms.openlocfilehash: 1d26ca1a464e2ec15c0d5d338a46b6fb1e7e1d65
-ms.lasthandoff: 04/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: e15edc1f2739cad0960619aa6cb4b089589eebd8
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/09/2017
 
 ---
 
 # <a name="debugging-your-python-code"></a>Отладка кода Python
 
-Инструменты Python для Visual Studio (PTVS) предоставляют комплексные возможности отладки для Python, включая присоединение к выполняемым процессам, вычисление выражений в окнах контрольных значений и интерпретации, проверку локальных переменных, точки останова, инструкции "Шаг с заходом", "Шаг с выходом", "Шаг с обходом", команду "Задать следующий оператор" и многое другое. 
+Visual Studio предоставляет широкие возможности отладки для Python, включая присоединение к выполняемым процессам, вычисление выражений в окнах контрольных значений и интерпретации, проверку локальных переменных, точки останова, инструкции "Шаг с заходом", "Шаг с выходом", "Шаг с обходом", команду "Задать следующий оператор" и многое другое. 
 
 Обзор отладки см. в видео [Getting Started with PTVS, Part 4: Debugging](https://youtu.be/bO7wpzgy74A?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Начало работы с PTVS, часть 4. Отладка) длительностью 3 мин 30 с, размещенном на сайте youtube.com.
 
@@ -58,7 +59,7 @@ ms.lasthandoff: 04/10/2017
 
 <a name="debugging-without-a-project"</a>
 > [!Tip]
-> PTVS поддерживает возможность отладки без проекта. В редакторе Visual Studio щелкните правой кнопкой автономный файл Python, выберите **Start with Debugging** (Запуск с отладкой), и PTVS запустит скрипт с глобальной средой по умолчанию (см. статью о [средах Python](python-environments.md)) и без аргументов. В дальнейшем у вас будет полная поддержка отладки.
+> Python в Visual Studio поддерживает возможность отладки без проекта. Откройте в редакторе автономный файл Python, щелкните область редактора правой кнопкой и выберите **Start with Debugging** (Запуск с отладкой). Visual Studio запустит скрипт с глобальной средой по умолчанию (см. статью [о средах Python](python-environments.md)) и без аргументов. В дальнейшем у вас будет полная поддержка отладки.
 >
 > Для управления средой и аргументами необходимо создать проект для кода. Это можно легко сделать с помощью шаблона [From Existing Python Code](python-projects.md#creating-a-project-from-existing-files) (Из существующего кода Python).
 
