@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
-ms.openlocfilehash: b9e1c2b6be671adb99a13e4a0eb4357fbba477b2
-ms.lasthandoff: 04/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: a14bc7e8c9194fff3a1bec2739c9e9c2480e905b
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/09/2017
 
 ---
 
@@ -44,7 +45,7 @@ Visual Studio позволяет быстро переформатировать
 
 Параметры форматирования задаются в меню **Средства > Параметры > Текстовый редактор > Python > Форматирование** и на соответствующих вложенных вкладках. По умолчанию здесь настроено надмножество правил из [руководства по стилю PEP 8](http://www.python.org/dev/peps/pep-0008/). Вкладка **Общие** определяет, когда применяется форматирование. Остальные три вложенные страницы описаны в следующих разделах.
 
-Поддержка Python в Visual Studio также предлагает в меню **Правка > Дополнительно** полезную команду [Fill Comment Paragraph](#fill-comment-paragraph-command) (Заполнить абзац комментариев).
+[Поддержка Python в Visual Studio](installation.md) также добавляет в меню **Правка > Дополнительно** полезную команду [Fill Comment Paragraph](#fill-comment-paragraph-command) (Заполнить абзац комментариев).
 
 ## <a name="spacing"></a>Интервал
 

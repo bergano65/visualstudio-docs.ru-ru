@@ -26,10 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: 03abb5a6508a6c93c6770bd9373381c9173b7103
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: c9df048a49580f3526b48e29041ef3758722ed27
+ms.openlocfilehash: 08677472bc13d58d9ab0b42b856955f8434089e4
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/03/2017
 
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Часто задаваемые вопросы о функции Live Unit Testing
@@ -229,6 +230,8 @@ public class Class1
 - Выберите **Инструменты**, **Параметры**, **Live Unit Testing** и задайте для параметра ведения журнала значение **Подробный**. В этом случае в окне вывода будут отображаться более подробные журналы. 
 
 - В качестве значения переменной среды пользователя `LiveUnitTesting_BuildLog` задайте файл, который вы хотите использовать для сбора данных журнала MSBuild. Затем в этом файле можно просмотреть более подробные сообщения журнала MSBuild из сборок Live Unit Testing.
+
+- Задайте для пользовательской переменной среды `LiveUnitTesting_TestPlatformLog` значение `1`, чтобы собирать журнал тестовой платформы. Теперь в файле `[Solution Root]\.vs\[Solution Name]\log\[VisualStudio Process ID]` можно просмотреть подробные сообщения журнала тестовой платформы о запусках динамического модульного тестирования.
 
 - Создайте переменную среды уровня пользователя `VS_UTE_DIAGNOSTICS` и присвойте ей значение 1 (или другое значение), а затем перезапустите Visual Studio. После этого на вкладке **Выходные данные — Тесты** в Visual Studio должно отображаться большое количество регистрируемых данных. 
  
