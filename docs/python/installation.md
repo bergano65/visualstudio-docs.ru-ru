@@ -1,7 +1,7 @@
 ---
 title: "Установка поддержки Python в Visual Studio | Документация Майкрософт"
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 5/8/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -28,14 +28,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: e0a51155a42fb51244114da86a292381a7a28a21
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: 9cdd87d81f0b0f4748a25c7bb87fb840e246854c
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/09/2017
 
 ---
 
-# <a name="installing-python-support-for-visual-studio"></a>Установка поддержки Python для Visual Studio
+# <a name="installing-python-support-in-visual-studio"></a>Установка поддержки Python в Visual Studio
 
 Чтобы установить поддержку Python для Visual Studio, выполните инструкции из раздела, который соответствует вашей версии Visual Studio.
 
@@ -52,11 +53,14 @@ ms.lasthandoff: 03/27/2017
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-1. Установите ["Visual Studio 2017 Preview" со страницы https://www.visualstudio.com/vs/preview](https://www.visualstudio.com/vs/preview). **Примечание**. Этот канал предварительной версии *отличается* от итоговой версии Visual Studio 2017 и содержит функции, которые находятся на этапе разработки и появятся в дальнейших обновлениях Visual Studio 2017, включая поддержку Python.
+1. Установите Visual Studio 2017 со страницы [https://www.visualstudio.com/vs/preview](https://www.visualstudio.com/vs/).
 
-1. В установщике предварительной версии выберите рабочую нагрузку **Web & Cloud > Python Development** (Облачная и веб-разработка > Разработка Python).
+1. В установщике Visual Studio выберите рабочую нагрузку **Web & Cloud > Python Development** (Облачная и веб-разработка > Разработка Python).
 
     ![Рабочая нагрузка разработки Python в установщике Visual Studio](media/installation-python-workload.png)
+
+    > [!Note]
+    > Также Python входит в рабочую нагрузку **Приложения для обработки и анализа данных и аналитические приложения**.
 
 1. В правой части окна установщика выберите интерпретатор Python и все дополнительные средства, которые вам нужны. Например, если планируется разработать расширения C++ для Python, включите параметр **Собственные средства разработки Python**.
 
@@ -88,7 +92,7 @@ ms.lasthandoff: 03/27/2017
 
 По умолчанию поддержка Python устанавливается для всех пользователей на компьютере.
 
-В Visual Studio 2017 рабочая нагрузка Python устанавливается в каталог `%ProgramFiles(x86)%\Microsoft Visual Studio\Preview\<VS_edition>Common7\IDE\Extensions\Microsoft\Python`, где &lt;VS_edition&gt; может иметь значение Community, Professional или Enterprise.
+В Visual Studio 2017 рабочая нагрузка Python устанавливается в каталог `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\<VS_edition>Common7\IDE\Extensions\Microsoft\Python`, где &lt;VS_edition&gt; может иметь значение Community, Professional или Enterprise.
 
 В Visual Studio 2015 и более ранних версиях используются такие пути установки:
 

@@ -17,3 +17,4 @@
 Некоторые области Visual Studio имеют в этом репозитории собственные папки, например **debugger** для отладки, **ide** для интегрированной среды разработки (IDE) Visual Studio и т. д. Вложенная папка **/media** в каждой из папок содержит файлы ART для соответствующих тем. Дополнительные сведения см. в [руководстве по участию](CONTRIBUTING.md).
 
 Этот проект ввела [Microsoft Open источника Кодекс](https://opensource.microsoft.com/codeofconduct/). Дополнительные сведения см. в [вопросах и ответах по правилам поведения](https://opensource.microsoft.com/codeofconduct/faq/). С любыми дополнительными вопросами или комментариями обратитесь по адресу [opencode@microsoft.com](mailto:opencode@microsoft.com).
+# <a name="officedev-reference"></a>officedev-reference
