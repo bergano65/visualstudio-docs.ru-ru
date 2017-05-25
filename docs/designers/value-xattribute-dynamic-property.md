@@ -30,10 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: c013001a52e5b894bcbcdaf9a40309505b39140c
-ms.lasthandoff: 02/22/2017
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="value-xattribute-dynamic-property"></a>Value (динамическое свойство XAttribute)
@@ -46,7 +47,7 @@ attrib.Value
 ```  
   
 ## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение  
- Объект <xref:System.String>, содержащий значение этого атрибута.  
+ Объект типа <xref:System.String>, содержащий значение этого атрибута.  
   
 ## <a name="exceptions"></a>Исключения  
   
@@ -55,7 +56,7 @@ attrib.Value
 |<xref:System.ArgumentNullException>|При настройке значение параметра `value` - `null`.|  
   
 ## <a name="remarks"></a>Примечания  
- Это свойство эквивалентно свойству <xref:System.Xml.Linq.XAttribute.Value%2A> класса <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>, но это динамическое свойство также поддерживает уведомления об изменениях.  
+ Это свойство эквивалентно свойству <xref:System.Xml.Linq.XAttribute.Value%2A> класса <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>, однако это динамическое свойство также поддерживает уведомление об изменениях.  
   
 ## <a name="see-also"></a>См. также  
  <xref:System.Xml.Linq.XAttribute.Value%2A?displayProperty=fullName>   

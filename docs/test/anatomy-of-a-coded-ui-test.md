@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
 ms.openlocfilehash: bf50213627703ac18257e3f0ec44c20cc7bb2cc9
-ms.lasthandoff: 04/04/2017
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Составляющие закодированного теста пользовательского интерфейса
@@ -73,10 +74,10 @@ using Mouse = Microsoft.VisualStudio.TestTools.UITesting.Mouse;
 using MouseButtons = System.Windows.Forms.MouseButtons;  
 ```  
   
- Пространство имен <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls> включается для пользовательского интерфейса Windows. Для пользовательского интерфейса веб-страницы используется пространство имен <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>. Для пользовательского интерфейса Windows Presentation Foundation используется пространство имен <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls>.  
+ Пространство имен <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls> включается для пользовательского интерфейса Windows. Для пользовательского интерфейса веб-страниц будет использоваться пространство имен <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>; для пользовательского интерфейса Windows Presentation Foundation будет использоваться пространство имен <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls>.  
   
 ####  <a name="UIMapClass"></a> Класс UIMap  
- Следующий раздел файла содержит класс <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>.  
+ Следующий раздел файла — это класс <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>.  
   
 ```  
 [GeneratedCode("Coded UITest Builder", "10.0.21221.0")]  
@@ -94,7 +95,7 @@ public void VerifyTotal()
 public void CleanUp()  
 ```  
   
- Эта часть класса <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> также включает сформированный код для каждого свойства, являющегося обязательным для методов.  
+ Эта часть класса <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> также включает созданный код для каждого свойства, необходимого методам.  
   
 ```  
 public virtual LaunchCalculatorParams LaunchCalculatorParams  
@@ -155,7 +156,7 @@ Assert.AreEqual(
     uIItemEdit.Text);  
 ```  
   
- Имя текстового поля указано как неизвестное, поскольку разработчик приложения «Калькулятор Windows» не предоставил общедоступное имя для элемента управления. Метод <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=fullName> завершается сбоем, если фактическое значение не равно ожидаемому, что соответствует состоянию сбоя тестирования. Также обратите внимание, что ожидаемое значение содержит десятичную точку, за которой следует пробел. Если вам когда-нибудь понадобится изменить функциональные возможности данного теста, необходимо будет предусмотреть эту десятичную точку и пробел.  
+ Имя текстового поля указано как неизвестное, поскольку разработчик приложения «Калькулятор Windows» не предоставил общедоступное имя для элемента управления. Метод <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=fullName> завершается неудачно, если фактическое значение не равно ожидаемому значению, что приведет к сбою теста. Также обратите внимание, что ожидаемое значение содержит десятичную точку, за которой следует пробел. Если вам когда-нибудь понадобится изменить функциональные возможности данного теста, необходимо будет предусмотреть эту десятичную точку и пробел.  
   
 #####  <a name="UIMapProperties"></a> Свойства UIMap  
  Код для каждого свойства также довольно стандартный во всем классе. Следующий код для свойства `AddItemsParams` используется в методе `AddItems()`.  
@@ -199,15 +200,15 @@ public class AddItemsParams
 }  
 ```  
   
- Как и все классы в файле `UIMap.cs`, данный класс начинается с атрибута <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. Этот небольшой класс содержит область `Fields`, которая определяет строки, используемые в качестве параметров для метода <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName>, который применяется в ранее описанном методе `UIMap.AddItems()`. Вы можете написать код для замены значений в этих строковых полях до вызова метода, в котором используются эти параметры.  
+ Как и все классы в файле `UIMap.cs`, данный класс начинается с атрибута <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. В этом небольшом классе имеется область `Fields`, определяющая строки, которые должны использоваться в качестве параметров для метода <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName>, используемого в рассмотренном выше методе `UIMap.AddItems()`. Вы можете написать код для замены значений в этих строковых полях до вызова метода, в котором используются эти параметры.  
   
 ###  <a name="UIMapCS"></a> UIMap.cs  
  По умолчанию этот файл содержит разделяемый класс `UIMap`, в котором отсутствуют методы и свойства.  
   
 #### <a name="uimap-class"></a>Класс UIMap  
- Здесь вы можете создать настраиваемый код, расширяющий функциональные возможности класса <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>. Код, созданный в этом файле, не будет генерироваться заново **построителем закодированных тестов пользовательского интерфейса** при каждом изменении теста.  
+ В этом классе вы можете создать пользовательский код для расширения функциональных возможностей класса <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>. Код, созданный в этом файле, не будет генерироваться заново **построителем закодированных тестов пользовательского интерфейса** при каждом изменении теста.  
   
- Во всех частях <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> можно использовать методы и свойства из любой другой части класса <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>.  
+ Все части <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> могут использовать методы и свойства из других частей класса <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>.  
   
 ###  <a name="CodedUITestCS"></a> CodedUITest1.cs  
  Этот файл создается **построителем закодированных тестов пользовательского интерфейса**, но не пересоздается при каждом изменении теста, поэтому вы можете изменять код в этом файле. Имя файла формируется из имени, указанного для теста при его создании.  
@@ -273,7 +274,7 @@ public void MyTestCleanup()
 }  
 ```  
   
- К методу `MyTestInitialize()` применяется атрибут <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute>, который указывает платформе тестирования на необходимость вызова этого метода до всех остальных методов тестирования. Аналогичным образом, к методу `MyTestCleanup()` применяется атрибут <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>, который указывает платформе тестирования на необходимость вызова этого метода после вызова всех остальных методов тестирования. Использование этих методов является необязательным. Для данного теста метод `UIMap.LaunchCalculator()` может быть вызван из `MyTestInitialize()`, а метод `UIMap.CloseCalculator()` может быть вызван из `MyTestCleanup()` вместо `CodedUITest1Method1()`.  
+ Метод `MyTestInitialize()` имеет применяемый к нему атрибут <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute>, который указывает платформе тестирования вызывать этот метод до всех остальных методов теста. Аналогично метод `MyTestCleanup()` имеет применяемый к нему атрибут <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>, который указывает платформе тестирования вызывать этот метод после вызова остальных методов теста. Использование этих методов является необязательным. Для данного теста метод `UIMap.LaunchCalculator()` может быть вызван из `MyTestInitialize()`, а метод `UIMap.CloseCalculator()` может быть вызван из `MyTestCleanup()` вместо `CodedUITest1Method1()`.  
   
  При добавлении в данный класс дополнительных методов с помощью <xref:Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute> платформа тестирования будет вызывать каждый метод в рамках этого теста.  
   
