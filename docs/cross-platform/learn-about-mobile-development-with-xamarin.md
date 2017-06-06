@@ -26,14 +26,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: f78e2b713e75c5601a07907e7f717db92571568b
-ms.openlocfilehash: 53f6b9dbc91369266857ae73a3abe4745cbab7ce
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: a8acd1f49f66ff0e5fb3023bff5de18db9c8c308
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Подробности о разработке мобильных приложений с использованием Xamarin
-В этой статье представлены материалы общего характера, которые помогут понять основы разработки кроссплатформенных мобильных приложений с помощью Xamarin. Если вы еще не установили Visual Studio и Xamarin, сначала запустите процесс [Настройка и установка](../cross-platform/setup-and-install.md), затем вернитесь сюда, чтобы изучить представленные ниже материалы во время выполнения установщиков.  
+В этой статье представлены материалы общего характера, которые помогут понять основы разработки кроссплатформенных мобильных приложений с помощью Xamarin. Если вы еще не установили Visual Studio и Xamarin, сначала запустите процесс [Setup and install](../cross-platform/setup-and-install.md) , затем вернитесь сюда, чтобы изучить представленные ниже материалы во время выполнения программы установки.  
   
 > [!NOTE]
 >  Если не указано иное, рекомендуется сначала прочитать указанные непосредственно здесь страницы и не переходить по ссылкам на их дочерние страницы. Если после освоения этого списка процесс установки по-прежнему выполняется, вы можете вернуться и изучить дополнительные разделы.  
@@ -74,7 +75,7 @@ ms.lasthandoff: 02/22/2017
   
  Xamarin.Forms предоставляет общий набор интерфейсов API, который позволяет создавать общий уровень пользовательского интерфейса для всех платформ в переносимой библиотеке классов.  Xamarin.Forms отрисовывает нативные элементы управления для каждой целевой платформы, чтобы передать знакомые внешний вид и ощущения.  Вместо использования конструктора в Xamarin.Forms можно создать свой пользовательский интерфейс с помощью C# и XAML.  
   
- Не нужно решать, какой подход использовать сразу, — приложения могут быть реализованы с помощью сочетания Xamarin Native и Xamarin.Forms:  
+ Не нужно решать, какой подход использовать сразу, — приложения могут быть реализованы с помощью сочетания Xamarin Native и Xamarin.Forms.  
   
 -   Xamarin.Forms используется для создания экранов общего назначения, предоставляющих аналогичные пользовательский интерфейс и возможности на разных платформах, например страницы для входа, формы контактов и результаты поиска.  
   
@@ -88,20 +89,20 @@ ms.lasthandoff: 02/22/2017
   
 1.  [Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/) (xamarin.com) предоставляет краткий обзор, а также сравнение Xamarin.Forms и уровней нативного пользовательского интерфейса (то есть Xamarin.iOS и Xamarin.Android).  
   
-2.  Первые три минуты видео Джеймса Монтеманьо [Xamarin.Forms: создание нативных приложений iOS, Android и Windows с помощью C# и XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (Channel9, 13 мин 3 с) содержат еще один обзор; остальная часть видео посвящена демонстрациям.  
+2.  Первые три минуты видео Джеймса Монтеманьо [Xamarin.Forms: создание нативных приложений iOS, Android и Windows с помощью C# и XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (Channel9, 13 мин 3 с) содержат еще один обзор; остальная часть видео посвящена демонстрациям.  
   
 3.  (Необязательно.) [Введение в Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/introduction-to-xamarin-forms/) (xamarin.com)  
   
 4.  (Необязательно.) Примеры использования OnPlatform для настройки см. в документации по [классу Device](http://developer.xamarin.com/guides/xamarin-forms/platform-features/device/) (xamarin.com)  
   
-5.  (Необязательно.) Статья [Кроссплатформенная разработка — общий доступ к коду пользовательского интерфейса на мобильных платформах с помощью Xamarin.Forms](https://msdn.microsoft.com/magazine/dn904669.aspx), автор Джейсон Смит (Jason Smith) из MSDN Magazine. В статье описаны разные возможности настройки в Xamarin.Forms, подробнее о которых написано в другой статье, [Настройка элементов управления для каждой платформы](http://developer.xamarin.com/guides/xamarin-forms/custom-renderer/) (xamarin.com).  
+5.  (Необязательно.) Статья [Кроссплатформенная разработка — общий доступ к коду пользовательского интерфейса на мобильных платформах с помощью Xamarin.Forms](https://msdn.microsoft.com/magazine/dn904669.aspx) , автор Джейсон Смит (Jason Smith) из MSDN Magazine. В статье описаны разные возможности настройки в Xamarin.Forms, подробнее о которых написано в другой статье, [Настройка элементов управления для каждой платформы](http://developer.xamarin.com/guides/xamarin-forms/custom-renderer/) (xamarin.com).  
   
 ## <a name="deeper-dive-debugging-with-emulators"></a>Подробное рассмотрение: отладка с помощью эмуляторов  
  *10–15 минут*  
   
  Для отладки кроссплатформенных приложений без использования физического устройства необходимо использовать следующие средства.  
   
-1.  **Эмулятор Android.** В зависимости от того, какая версия Windows используется, рекомендуется либо эмулятор Microsoft Visual Studio для Android или Xamarin Player, которые обеспечивают высокую производительность и поддерживает широкий набор возможностей устройства:  
+1.  **Эмулятор Android.** В зависимости от того, какая версия Windows используется, рекомендуется или эмулятор Microsoft Visual Studio для Android, или Xamarin Player, которые обеспечивают высокую производительность и поддерживают широкий набор возможностей устройства.  
   
     -   **Компьютеры с Windows 8+.** Настоятельно рекомендуется использовать эмулятор Microsoft [Visual Studio для Android](https://www.visualstudio.com/en-us/features/msft-android-emulator-vs.aspx), который устанавливается вместе с Visual Studio.  Видео об [эмуляторе Visual Studio для Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Channel9, 5 мин. 55 сек.) содержит еще один обзор и демонстрацию.  
   
@@ -109,9 +110,9 @@ ms.lasthandoff: 02/22/2017
   
 2.  **Симулятор iOS Apple.** Дополнительные сведения см. в статье [Начало работы с симулятором iOS](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
   
-3.  **Эмулятор Microsoft Windows Phone.** Дополнительные сведения см. в статье [Эмулятор Windows Phone для Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx).  
+3.  **Эмулятор Microsoft Windows Phone.** Дополнительные сведения см. в статье [Эмулятор Windows Phone для Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx).  
   
-##  <a name="a-namecomponentsa-deeper-dive-xamarin-components"></a><a name="components"></a> Подробное рассмотрение: компоненты Xamarin  
+##  <a name="components"></a> Deeper Dive: Xamarin Components  
  *10 минут*  
   
  Многие расширенные возможности доступны для приложений Xamarin через компоненты Xamarin. Полный каталог доступен для скачивания на сайте [http://components.xamarin.com/](http://components.xamarin.com/)и включает в себя компоненты для дополнительных элементов управления пользовательского интерфейса, проверки подлинности, разнообразные облачные службы, например Microsoft Azure, и многое другое.

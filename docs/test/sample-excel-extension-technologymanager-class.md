@@ -27,10 +27,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
 ms.openlocfilehash: 07e37b1a1d7b02992bb4da69bd158878095dd789
-ms.lasthandoff: 04/04/2017
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>Пример расширения Excel. Класс TechnologyManager
@@ -43,7 +44,7 @@ ms.lasthandoff: 04/04/2017
  В коде диспетчера технологий по возможности используется канал удаленного взаимодействия .NET, открытый классом `Communicator` для извлечения данных из надстройки, выполняющейся в процессе Excel.  
   
 ## <a name="com-visibility"></a>Видимость COM  
- Обратите внимание, что этот класс и все классы элементов, расширяющие класс <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>, содержат атрибут <xref:System.Runtime.InteropServices.ComVisibleAttribute> со значением `true` для обеспечения видимости этих классов для модели COM.  
+ Обратите внимание, что данный класс и все классы элементов, расширяющие класс <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>, содержат атрибут <xref:System.Runtime.InteropServices.ComVisibleAttribute> со значением `true` для обеспечения видимости этих классов для модели COM.  
   
 ## <a name="technologyname-property"></a>Свойство TechnologyName  
  Это переопределение свойства <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.TechnologyName%2A?displayProperty=fullName> должно предоставлять уникальное понятное имя, которое определяет базовую технологию для всех других компонентов расширения. Для данного расширения используется значение "Excel".  
@@ -65,10 +66,10 @@ ms.lasthandoff: 04/04/2017
 -   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.ConvertToThisTechnology%2A?displayProperty=fullName>  
   
 ## <a name="parsequeryid-method"></a>Метод ParseQueryId  
- При создании закодированного теста пользовательского интерфейса можно указать значения свойств для некоторых или всех элементов управления в тесте. Эти значения используются средой тестирования для создания пар "имя-значение", которые называются свойствами поиска и применяются для поиска определенных элементов управления пользовательского интерфейса в процессе выполнения теста. Совокупность свойств поиска представляет значение свойства <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A?displayProperty=fullName> каждого элемента технологии, который включает каждый элемент управления. Так как поиск элемента управления может выполняться несколько раз в течение теста, этот метод предоставляет диспетчеру технологий способ оптимизации синтаксического анализа свойств поиска для данного элемента управления. Этот метод также возвращает файл cookie, который может использоваться платформой для последующих поисков элемента управления. В этой реализации метода используется метод <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.AndCondition.Match%2A?displayProperty=fullName> для синтаксического анализа свойств поиска.  
+ При создании закодированного теста пользовательского интерфейса можно указать значения свойств для некоторых или всех элементов управления в тесте. Эти значения используются средой тестирования для создания пар "имя-значение", которые называются свойствами поиска и применяются для поиска определенных элементов управления пользовательского интерфейса в процессе выполнения теста. Это переопределение метода <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A?displayProperty=fullName> возвращает число, обозначающее уровень поддержки, который диспетчер технологий обеспечивает для элемента управления, представленного указанным дескриптором. Так как поиск элемента управления может выполняться несколько раз в течение теста, этот метод предоставляет диспетчеру технологий способ оптимизации синтаксического анализа свойств поиска для данного элемента управления. Этот метод также возвращает файл cookie, который может использоваться платформой для последующих поисков элемента управления. В этой реализации метода для синтаксического анализа свойств поиска используется метод <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.AndCondition.Match%2A?displayProperty=fullName>.  
   
 ## <a name="matchelement-method"></a>Метод MatchElement  
- Для выполнения поиска элементов управления диспетчером технологий можно реализовать метод <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.Search%2A?displayProperty=fullName> для возвращения массива возможных совпадений или вызова исключения <xref:System.NotSupportedException>, которое предписывает платформе использовать собственный алгоритм поиска. В любом случае необходимо реализовать метод <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.MatchElement%2A>, и в этой реализации снова используется метод <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.AndCondition.Match%2A?displayProperty=fullName>.  
+ Для выполнения поиска элементов управления вы можете реализовать метод <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.Search%2A?displayProperty=fullName> или для возвращения массива возможных совпадений или вызова исключения — метод <xref:System.NotSupportedException>, который указывает среде использовать собственный алгоритм поиска. В любом случае необходимо реализовать метод <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.MatchElement%2A>, и в этой реализации снова используется метод <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.AndCondition.Match%2A?displayProperty=fullName>.  
   
 ## <a name="navigation-methods"></a>Методы навигации  
  Эти методы получают родительские, дочерние или одноуровневые элементы для указанного элемента из иерархии пользовательского интерфейса. Код несложен и содержит понятные комментарии.  

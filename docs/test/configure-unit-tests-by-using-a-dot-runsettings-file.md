@@ -27,16 +27,17 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 04c981d458912aaf3802e727369893759faab3a5
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 1600207e0c504f4b4dcbf620e92bcc06e14ec035
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Настройка модульных тестов с помощью файла .runsettings
 Модульные тесты в Visual Studio можно настроить с помощью *RUNSETTINGS-файла. (Имя файла не имеет значения, если вы используете расширение RUNSETTINGS.) Например, можно изменить платформу .NET Framework, в которой выполняются тесты, каталог, в который отправляются результаты теста, и данные, собранные во время тестового запуска.  
   
- Если вам не требуется специальная конфигурация, *RUNSETTINGS-файл не нужен. Чаще всего он используется для настройки [объема протестированного кода](../test/customizing-code-coverage-analysis.md).  
+ Если вам не требуется специальная конфигурация, * RUNSETTINGS-файл не нужен. Чаще всего он используется для настройки [объема протестированного кода](../test/customizing-code-coverage-analysis.md).  
   
 > [!NOTE]
 >  **RUNSETTINGS-файл и TESTSETTINGS-файл**  
@@ -47,7 +48,7 @@ ms.lasthandoff: 02/22/2017
   
 ## <a name="customizing-tests-with-a-runsettings-file"></a>Настройка тестов с помощью файла RUNSETTINGS  
   
-1.  Добавьте XML-файл в решение Visual Studio и задайте для него имя test.runsettings. (Имя файла не имеет значения, но расширением должно быть ".runsettings".)  
+1.  Добавьте XML-файл в решение Visual Studio и задайте для него имя test.runsettings. (Имя файла не имеет значения, но расширением должно быть .runsettings.)  
   
 2.  Замените содержимое файла [примером](#example).  
   

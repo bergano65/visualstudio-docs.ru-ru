@@ -29,10 +29,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 77e7ce26df70e41e2328442454fe78c7a663f1f3
-ms.openlocfilehash: 7ceaa18fa104d8131ad415a890cd15baf3efcacb
-ms.lasthandoff: 03/08/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: f01484e64f8d8c90cd38fbcdcb934ef43cfe3390
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Кроссплатформенная разработка для мобильных устройств в Visual Studio
@@ -85,7 +86,7 @@ ms.lasthandoff: 03/08/2017
 #### <a name="design-one-set-of-pages-that-render-across-all-devices-by-using-xamarinforms"></a>Создание одного набора страниц, отображаемого на всех устройствах, с помощью Xamarin.Forms
  В зависимости от сложности конструкции приложения, возможно, имеет смысл использовать для его создания шаблоны *Xamarin.Forms* в группе шаблонов проектов **Мобильные приложения** . Xamarin.Forms — это набор средств разработки пользовательского интерфейса, с помощью которого можно создать единый интерфейс приложения для совместного использования на устройствах Android, iOS и Windows.  При компиляции решения Xamarin.Forms вы получаете приложение для Android, приложение для iOS и приложение для Windows. Дополнительные сведения см. в разделе [Дополнительные сведения о разработке мобильных приложений с помощью Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md).
 
-####  <a name="ShareHTML"></a> Совместное использование кода между приложениями Android, iOS и Windows
+####  <a name="ShareHTML"></a> Совместное использование кода приложениями Android, iOS и Windows
  Если вы не используете Xamarin.Forms и предпочитаете разрабатывать приложения для каждой платформы отдельно, вы можете совместно использовать большую часть кода, не относящегося к пользовательскому интерфейсу, в проектах для разных платформ (Android, iOS и Windows). К нему относятся любая бизнес-логика, интеграция в облаке, доступ к базе данных или любой другой код, предназначенный для платформы .NET Framework. Единственным кодом, который нельзя совместно использовать, является код, предназначенный для конкретной платформы.
 
  ![Совместное использование кода между пользовательскими интерфейсами в приложениях Android, iOS и Windows](../cross-platform/media/sharecode.png "ShareCode")
@@ -123,11 +124,11 @@ ms.lasthandoff: 03/08/2017
 
  ![Универсальные гибридные приложения](../cross-platform/media/multidevicehybridapps.png "MultiDeviceHybridApps")
 
- Чтобы приступить к работе, установите Visual Studio 2015 и выберите **HTML/JavaScript (Apache Cordova)** во время установки. Если вы пользуетесь Visual Studio 2013, установите инструменты Visual Studio для расширения Apache Cordova. В любом случае, инструменты Cordova автоматически установят любое стороннее программное обеспечение, необходимое для создания универсального приложения (для нескольких платформ).
+ Чтобы приступить к работе, установите Visual Studio 2015 и выберите **HTML/JavaScript (Apache Cordova)** во время установки. Если вы пользуетесь Visual Studio 2013, установите инструменты Visual Studio для расширения Apache Cordova. В любом случае инструменты Cordova автоматически установят любое стороннее программное обеспечение, необходимое для создания универсального приложения (для нескольких платформ).
 
- После установки расширения откройте Visual Studio и создайте проект **пустого приложения (Apache Cordova)** . Затем можно разработать приложение с помощью JavaScript или TypeScript. Кроме того, можно добавлять подключаемые модули для расширения функциональности приложения, и API-интерфейсы из подключаемых модулей будут появляться в IntelliSense в ходе написания кода.
+ После установки расширения откройте Visual Studio и создайте проект **пустого приложения (Apache Cordova)**. Затем можно разработать приложение с помощью JavaScript или TypeScript. Кроме того, можно добавлять подключаемые модули для расширения функциональности приложения, и API-интерфейсы из подключаемых модулей будут появляться в IntelliSense в ходе написания кода.
 
- Когда вы будете готовы к запуску приложения и пошаговому выполнению кода, выберите эмулятор, например, эмулятор Apache Ripple или эмулятор Visual Studio (для Android или Windows Phone), браузер или устройство, которое подключено непосредственно к компьютеру. Запустите приложение. Если вы разрабатываете приложение на компьютере Windows, можно запустить его прямо на нем. Все эти возможности встроены в Visual Studio в составе расширения "Инструменты Visual Studio для Apache Cordova".
+ Когда вы будете готовы к запуску приложения и пошаговому выполнению кода, выберите эмулятор, например эмулятор Apache Ripple или эмулятор Visual Studio (для Android или Windows Phone), браузер или устройство, которое подключено непосредственно к компьютеру. Запустите приложение. Если вы разрабатываете приложение на компьютере Windows, можно запустить его прямо на нем. Все эти возможности встроены в Visual Studio в составе расширения "Инструменты Visual Studio для Apache Cordova".
 
  Шаблоны проектов для создания универсальных приложений Windows по-прежнему доступны в Visual Studio, и вы можете свободно использовать их, если планируете ориентироваться только на устройства Windows. Если впоследствии вы решите перейти к устройствам Android и iOS, то всегда сможете перенести свой код в проект Cordova. Существуют версии API-интерфейсов WinJS c открытым исходным кодом, поэтому можно повторно использовать любой код, задействующий эти API. С другой стороны, если вы планируете ориентироваться на другие платформы в будущем, рекомендуем начать работу с набором средств Visual Studio для Apache Cordova.
 
@@ -160,8 +161,8 @@ ms.lasthandoff: 03/08/2017
 
 |**Дополнительные сведения**|
 |--------------------|
-|[Загрузка Visual Studio.](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Установка Visual C++ для средств разработки кроссплатформенных мобильных приложений.](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (Библиотека MSDN)|
+|[Скачивание Visual Studio.](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Установка Visual C++ для средств разработки кроссплатформенных мобильных приложений.](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (библиотека MSDN)|
 |[Дополнительные сведения об использовании C++ для нескольких платформ.](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[Установите нужные компоненты, а затем создайте собственное приложение действия для Android](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (библиотека MSDN)|
 |[Сведения об эмуляторе Visual Studio для Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
@@ -170,7 +171,7 @@ ms.lasthandoff: 03/08/2017
 |[Дополнительные примеры разработки кроссплатформенных мобильных приложений для C++](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
 
 ##  <a name="Unity"></a> Создание кросс-платформенной игры для устройств Android, iOS и Windows с использованием инструментов Visual Studio для Unity
- Инструменты Visual Studio для Unity представляют собой бесплатное расширение Visual Studio, которое интегрирует мощные функции редактирования кода, повышения продуктивности и средства отладки в составе Visual Studio с *Unity*, популярной кроссплатформенной системой и средой разработки для игр и мощных графических приложений на платформах Windows, iOS, Android и на других платформах, включая веб-приложения.
+ Инструменты Visual Studio для Unity представляют собой бесплатное расширение Visual Studio, которое интегрирует мощные функции редактирования кода, повышения продуктивности и средства отладки в составе Visual Studio с *Unity*, популярной кроссплатформенной системой и средой разработки для игр и мощных графических приложений на платформах Windows, iOS, Android и других платформах, включая веб-приложения.
 
  ![Среда разработки VSTU](../cross-platform/media/vstu_overview.png "VSTU_Overview")
 
@@ -180,9 +181,9 @@ ms.lasthandoff: 03/08/2017
 
 |**Дополнительные сведения**|
 |--------------------|
-|[Дополнительные сведения о сборке игр Unity с помощью Visual Studio](https://www.visualstudio.com/en-us/features/unitytools-vs.aspx)|
-|[Дополнительные сведения об инструментах Visual Studio для Unity](../cross-platform/visual-studio-tools-for-unity.md) (библиотека MSDN)|
-|[Приступая к работе с инструментами Visual Studio для Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) (библиотека MSDN)|
+|[Дополнительные сведения о построении игр Unity с помощью Visual Studio](https://www.visualstudio.com/en-us/features/unitytools-vs.aspx)|
+|[Дополнительные сведения о средствах Visual Studio для Unity](../cross-platform/visual-studio-tools-for-unity.md) (библиотека MSDN)|
+|[Начните работать со средствами Visual Studio Tools для Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) (библиотека MSDN)|
 |[Читать о последних возможностях Visual Studio Tools для предварительной версии Unity 2.0](http://blogs.msdn.com/b/visualstudio/archive/2014/12/03/visual-studio-tools-for-unity-2-0-preview.aspx) (блог Visual Studio)|
 |[Смотреть видео с введением в Visual Studio Tools для предварительной версии Unity 2.0](http://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (видео)|
 |[Сведения о Unity](http://unity3d.com/) (веб-сайт Unity)|

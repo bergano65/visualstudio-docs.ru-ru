@@ -26,10 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: c77c8698a4536bc21b86260bb557fe79f03385cc
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 5f32c2bc9f289a69a5ef9e7acfc1a973017fec0f
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Анализ закодированных тестов пользовательского интерфейса с помощью журналов закодированных тестов пользовательского интерфейса
@@ -80,7 +81,7 @@ ms.lasthandoff: 02/22/2017
     -   <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
   
 ### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Шаг 2. Запуск кодированного теста пользовательского интерфейса и просмотр журнала  
- При запуске закодированного теста пользовательского интерфейса после внесения изменений в файл **QTAgent32.exe.config** вы увидите выходную ссылку в результатах обозревателя тестов. Если выбран подробный уровень трассировки ("verbose"), файлы журнала создаются не только при ошибке теста, но и при успешном выполнении теста.  
+ При запуске закодированного теста пользовательского интерфейса после внесения изменений в файл **QTAgent32.exe.config** вы увидите выходную ссылку в результатах обозревателя тестов. Если выбран подробный уровень трассировки (verbose), файлы журнала создаются не только при ошибке теста, но и при успешном выполнении теста.  
   
 1.  В меню **Тест** выберите **Окна** и щелкните **Обозреватель тестов**.  
   

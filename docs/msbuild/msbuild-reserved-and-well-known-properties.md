@@ -34,10 +34,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 078576d6e1988bf1cefbb09646ea44f61085f5cf
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 7a873df77756e5a957d327049566c8e0db1f3a8a
+ms.openlocfilehash: f1f9931e6e7c8dda4cb74f407901f41467c690cc
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/11/2017
 
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Зарезервированные и стандартные свойства MSBuild
@@ -64,6 +65,7 @@ ms.lasthandoff: 02/22/2017
 |`MSBuildProjectFile`|Полное имя файла проекта, включая расширение, например "MyApp.proj".|Зарезервированное|  
 |`MSBuildProjectFullPath`|Абсолютный путь к файлу проекта и его полное имя, включая расширение, например "C:\MyCompany\MyProduct\MyApp.proj".|Зарезервированное|  
 |`MSBuildProjectName`|Имя файла проекта без расширения, например "MyApp".|Зарезервированное|  
+|`MSBuildRuntimeType`|Тип текущей среды выполнения. Представлено в MSBuild 15. Значение может быть не определено (до MSBuild 15), `Full` (указывает на то, что MSBuild выполняется на платформе .NET для ПК), `Core` (указывает на то, что MSBuild выполняется на платформе .NET Core) или `Mono` (указывает на то, что MSBuild выполняется на платформе на Mono).|Зарезервированное|  
 |`MSBuildStartupDirectory`|Абсолютный путь к каталогу, из которого вызывается [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. С помощью этого свойства можно собирать все, что находится ниже конкретной точки в дереве проекта, без создания файлов dirs.proj в каждом каталоге. Вместо этого у вас будет только один проект, — например, c:\traversal.proj, как показано ниже:<br /><br /> `<Project ...>     <ItemGroup>         <ProjectFiles              Include="$            (MSBuildStartupDirectory)            **\*.csproj"/>     </ItemGroup>     <Target Name="build">         <MSBuild             Projects="@(ProjectFiles)"/>     </Target> </Project>`<br /><br /> Чтобы выполнить сборку в любой точке дерева, введите следующее:<br /><br /> `msbuild c:\traversal.proj`<br /><br /> Не включайте в это свойство завершающую обратную косую черту.|Зарезервированное|  
 |`MSBuildThisFile`|Часть `MSBuildThisFileFullPath`, представляющая собой имя и расширение файла.|Зарезервированное|  
 |`MSBuildThisFileDirectory`|Часть `MSBuildThisFileFullPath`, представляющая собой каталог.<br /><br /> Включите в путь завершающую обратную косую черту.|Зарезервированное|  

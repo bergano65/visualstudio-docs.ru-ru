@@ -32,17 +32,18 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
 ms.openlocfilehash: 5a4f1fd5bf35a6010c2d919194b8ef21073e9a18
-ms.lasthandoff: 04/04/2017
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="using-the-assert-classes"></a>Использование классов Assert
 Классы Assert пространства имен UnitTestingFramework служат для проверки определенных функциональных возможностей. Метод модульного теста использует код метода в коде разработки, но докладывает о корректности поведения кода только в том случае, если включены операторы Assert.  
   
 ## <a name="kinds-of-asserts"></a>Типы классов Assert  
- Пространство имен <xref:Microsoft.VisualStudio.TestTools.UnitTesting> предоставляет несколько типов классов Assert.  
+ В пространстве имен <xref:Microsoft.VisualStudio.TestTools.UnitTesting> имеется несколько типов классов Assert.  
   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>  
   

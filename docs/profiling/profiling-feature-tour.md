@@ -1,7 +1,7 @@
 ---
 title: "Обзор возможностей профилирования | Документы Майкрософт"
-ms.custom: 
-ms.date: 02/03/2016
+ms.custom: H1HackMay2017
+ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -30,13 +30,14 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 2beee9df6c4897d1fa7d55502a7ed277a1eb6046
-ms.openlocfilehash: 4a64d7385009b6d502fc20acfbead4b49323fa4f
-ms.lasthandoff: 03/21/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 90b2481b0ec4f9387fe3a2c0b733a103e8c03845
+ms.openlocfilehash: a219a09f96b34a434a3bf1103e560104c294eb96
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/23/2017
 
 ---
-# <a name="profiling-feature-tour"></a>Обзор возможностей профилирования
+# <a name="feature-tour-of-profiling-in-visual-studio"></a>Обзор возможностей профилирования в Visual Studio
 
 Visual Studio предоставляет широкий набор средств профилирования для выявления различных типов проблем с производительностью в зависимости от типа приложения.
 
@@ -176,7 +177,7 @@ Visual Studio предоставляет широкий набор средст�
 |[Обозреватель производительности](../profiling/performance-explorer.md)|да|нет|да (нет для ASP.NET Core)|  
 |[IntelliTrace](../debugger/intellitrace.md)|Только .NET Enterprise|Только .NET Enterprise|Только .NET Enterprise|
 |[Использование сети](../profiling/network-usage.md)|нет|да|нет| 
-|[Скорость реагирования пользовательского интерфейса HTML](../profiling/html-ui-responsiveness.md)|нет|да для HTML, нет для XAML|нет|  
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|нет|да для HTML, нет для XAML|нет|  
 |[Память JavaScript](../profiling/javascript-memory.md)|нет|да для HTML, нет для XAML|нет|  
 
 ## <a name="see-also"></a>См. также  

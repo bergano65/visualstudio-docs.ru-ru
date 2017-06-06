@@ -28,22 +28,22 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: b01ab828f06a13f3f8e4c7b9c72e2f05da409840
-ms.openlocfilehash: 49baa370a6d6258f2435b80adb504d78f922b8e8
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: b3c999f9b960e6d220fcf9e4715393dd27e5fe73
 ms.contentlocale: ru-ru
-ms.lasthandoff: 04/14/2017
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Программа установки, установка и проверки для пользователей Mac
 Эта статья предназначена для разработчиков, которые работают в основном на Mac и которые будут при необходимости использовать Visual Studio на виртуальной машине Windows на компьютере Mac. Если вы работаете в основном на компьютере с Windows и вам нужно настроить дополнительный компьютер Mac, чтобы разрабатывать приложения для iOS, см. основную статью [Настройка и установка](../cross-platform/setup-and-install.md) .
 
- Для работы с Xamarin на Mac потребуется следующее:
+ Для работы с Xamarin на Mac потребуется следующее.
 
 -   Компьютер Mac под управлением сmacOS Sierra 10.12 или выше, на котором установлены Xcode и Xamarin.
 
 -   одна из следующих конфигураций:
 
-    -   **Запуск Xamarin Studio непосредственно на компьютере Mac.** Xamarin Studio — окружение разработки Xamarin, которое поддерживает создание приложений для Android, iOS и Windows с помощью C#.  Краткий обзор Xamarin Studio см. на [сайте с основной информацией о Xamarin Studio](https://xamarin.com/studio) (xamarin.com).
+    -   **Запуск Xamarin Studio непосредственно на компьютере Mac.** Xamarin Studio — окружение разработки Xamarin, которое поддерживает создание приложений для Android, iOS и Windows с помощью C#.  Краткий обзор Xamarin Studio см. на [сайте с основной информацией о Xamarin Studio](https://xamarin.com/studio) (xamarin.com).
 
     -   **Parallels или VMWare уже настроен на компьютере Mac.** Запустите Windows с Visual Studio 2017 и Xamarin внутри Parallels или VMWare.  В такой конфигурации Xamarin устанавливается вместе с Visual Studio как расширение, которое позволяет использовать Visual Studio в качестве окружения разработки для создания приложений Android, iOS и Windows с помощью C#.  Обратите внимание, что можно получить бесплатную 3-месячную подписку на Parallels в рамках программы Visual Studio Developer Essentials. См. публикацию [Microsoft Visual Studio Dev Essentials будет включать доступ к Parallels Desktop Pro и Parallels Access](http://blog.parallels.com/blog/2015/11/18/visual-studio-dev-essentials/) (Microsoft Visual Studio Dev Essentials Will Include Parallels Desktop Pro and Parallels Access, блог Parallels).
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 04/14/2017
 
 ##  <a name="mac"></a> Настройка Mac (Apple ID, Xcode и Xamarin)
 
-1.  Создайте бесплатный идентификатор Apple ID в разделе [Мой идентификатор Apple ID](https://appleid.apple.com/) , если у вас его нет. Это необходимо для установки приложения Xcode и входа в него.
+1.  Создайте бесплатный идентификатор Apple ID в разделе [Мой идентификатор Apple ID](https://appleid.apple.com/), если у вас его нет. Это необходимо для установки приложения Xcode и входа в него.
 
 2.  Скачайте и установите Xcode по адресу [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/).
 

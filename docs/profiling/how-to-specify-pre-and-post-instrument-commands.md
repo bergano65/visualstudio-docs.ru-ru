@@ -34,10 +34,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f69134d056015f0208e7f5f8d0c7121bd0060223
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: afbc73dbeda9d8201d1ed0cfccdf80025fc82306
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Практическое руководство. Указание команд, предваряющих инструментирование, и команд после инструментирования

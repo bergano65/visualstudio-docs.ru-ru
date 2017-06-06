@@ -27,10 +27,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 1694abeb37e7fa0e5766dfda16a05bd5e7895885
-ms.openlocfilehash: 7d8f95b62fcf7f32b972e0d9b64a0175f7d1f47c
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 969024cd3e3db42d05e2b163b3d8a674493d8aba
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Тестирование приложений Windows UWP и приложений Windows Phone 8.1 с помощью закодированных тестов пользовательского интерфейса
@@ -83,7 +84,7 @@ ms.lasthandoff: 04/05/2017
   
 ## <a name="deploy-the-windows-phone-app"></a>Развертывание приложения Windows Phone  
   
-1.  Чтобы закодированный тест ИП могут сопоставить элементы управления приложения, необходимо развернуть приложение.  
+1.  Чтобы закодированный тест пользовательского интерфейса мог сопоставить элементы управления приложения, необходимо развернуть приложение.  
   
      ![Развертывание приложения Windows Phone](../test/media/cuit_phone_deploy.png "CUIT_Phone_Deploy")  
   
@@ -105,7 +106,7 @@ ms.lasthandoff: 04/05/2017
   
      ![Создание закодированного теста пользовательского интерфейса с помощью перекрестья](../test/media/cuit_phone_howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
   
-3.  Выберите приложение, а затем скопируйте значение свойства **AutomationId** , которое будет использоваться для запуска приложения в тесте.  
+3.  Выберите приложение, а затем скопируйте значение свойства **AutomationId**, которое будет использоваться для запуска приложения в тесте.  
   
      ![Копирование значения AutomationId приложения](../test/media/cuit_phone_getautomationid.png "CUIT_Phone_GetAutomationId")  
   
@@ -334,12 +335,12 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="q-do-i-have-to-deploy-the-windows-phone-app-in-the-emulator-in-order-to-map-ui-controls"></a>В. Требуется ли развернуть приложение Windows Phone в эмуляторе для сопоставления элементов управления ИП?  
  **О**. Да, для использования построителя закодированных тестов ИП необходимо запустить эмулятор и развернуть в нем приложение. В противном случае появится сообщение о том, что запущенный эмулятор не найден.  
   
-###  <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> В. Тесты можно выполнять только в эмуляторе или можно использовать и физическое устройство?  
+###  <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> В. Тесты можно выполнять только на эмуляторе или можно использовать и физическое устройство?  
  **О**. Поддерживаются оба варианта. Цель выполнения теста выбирается за счет изменения типа эмулятора или устройства панели инструментов устройства. Если выбран параметр "Устройство", необходимо подключить устройство Phone Blue к одному из USB-портов компьютера.  
   
  ![Выбор версии эмулятора или физического устройства](../test/media/cuit_phone_testtarget.png "CUIT_Phone_TestTarget")  
   
-### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>В. Почему я не вижу параметр для записи закодированного теста ИП в диалоговом окне "Создать код" или "Закодированный тест ИП"?  
+### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>В. Почему я не вижу параметр для записи закодированного теста пользовательского интерфейса в диалоговом окне "Создать код" или "Закодированный тест пользовательского интерфейса"?  
  **О**. Параметр записи не поддерживается для приложений Windows Phone.  
   
 ### <a name="q-can-i-create-a-coded-ui-test-for-my-windows-phone-apps-based-on-winjs-silverlight-or-html5"></a>В. Можно ли создать закодированный тест ИП для приложений Windows Phone, написанных на WinJS, Silverlight или HTML5?  
@@ -368,7 +369,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
  **О**. Любые изменения кода, внесенные в файл UIMapDesigner.cs, будут перезаписываться каждый раз при создании кода с помощью построителя кодированных тестов ИП. Если требуется изменить записанный метод, необходимо скопировать его в файл UIMap.cs и переименовать. Файл UIMap.cs можно использовать для переопределения методов и свойств в файле UIMapDesigner.cs. Необходимо удалить ссылку на исходный метод в файле CodedUITest.cs и заменить ее именем переименованного метода.  
   
 ### <a name="q-can-i-run-a-coded-ui-test-on-my-windows-phone-app-from-the-command-line"></a>В. Можно ли выполнять закодированный тест ИП для приложения Windows Phone из командной строки?  
- **О**. Да, используйте файл runsettings, чтобы указать целевое устройство для выполнения теста. Например:  
+ **О**. Да, используйте файл runsettings, чтобы указать целевое устройство для выполнения теста. Пример:  
   
  **vstest.console.exe "pathToYourCodedUITestDll" /settings:devicetarget.runsettings**  
   
@@ -396,7 +397,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 |Специализированные классы для элементов управления оболочки|<xref:Microsoft.VisualStudio.TestTools.UITesting.DirectUIControls.DirectUIControl>|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|  
 |Элемент управления WebView в XAML-приложении|Поддерживается, если вы используете специализированные классы Html* для взаимодействия с элементами HTML. См. раздел <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|Не поддерживается.|  
 |Выполнение автоматизированных тестов в MTM|Поддерживается.|Не поддерживается.|  
-|Тесты на основе данных|Сведения об использовании внешних источников данных и атрибута DataSource метода теста см. в разделе [Тесты на основе данных](../test/creating-a-data-driven-coded-ui-test.md).|Данные указываются в строке с использованием атрибута DataRow тестового метода. См. раздел [Использование закодированных тестов ИП на основе данных для приложений Windows Phone](#TestingPhoneAppsCodedUI_DataDriven) этой статьи.|  
+|Тесты на основе данных|Сведения об использовании внешних источников данных и атрибута DataSource тестового метода см. в разделе [Тесты на основе данных](../test/creating-a-data-driven-coded-ui-test.md) .|Данные указываются в строке с использованием атрибута DataRow тестового метода. См. раздел [Использование закодированных тестов ИП на основе данных для приложений Windows Phone](#TestingPhoneAppsCodedUI_DataDriven) этой статьи.|  
   
  Сведения о закодированных тестах пользовательского интерфейса для приложений Магазина Windows см. в разделе [Тестирование приложений Windows UWP и приложений Магазина Windows 8.1 с помощью закодированных тестов пользовательского интерфейса](../test/test-windows-store-8-1-apps-with-coded-ui-tests.md).  
   

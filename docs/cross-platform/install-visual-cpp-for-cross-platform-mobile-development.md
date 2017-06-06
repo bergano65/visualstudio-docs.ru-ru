@@ -30,10 +30,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: bfe3001ddefaba1220174fecbf8e484fe4987efd
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: d284309b0243f8d551d06c53d50d5df5de8f3f3c
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Install Visual C++ for Cross-Platform Mobile Development
@@ -42,10 +43,10 @@ ms.lasthandoff: 02/22/2017
  [Требования](#Requirements)   
  [Получение инструментов](#GetTheTools)   
  [Установка инструментов](#InstallTheTools)   
- [Установка инструментов для iOS](#InstallForiOS)   
+ [Install tools for iOS](#InstallForiOS)   
  [Установка или обновление зависимостей вручную](#ThirdParty)  
   
-##  <a name="a-namerequirementsa-requirements"></a><a name="Requirements"></a> Требования  
+##  <a name="Requirements"></a> Требования  
   
 -   Требования для установки см. в статье [Требования к системе для Visual Studio 2015](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs).  
   
@@ -60,10 +61,10 @@ ms.lasthandoff: 02/22/2017
   
 -   Для создания кода для iOS требуется идентификатор Apple ID, учетная запись разработчика iOS и компьютер Mac, на котором может выполняться [Xcode 6](http://go.microsoft.com/fwlink/p/?LinkId=536387) и выше в OS X Mavericks или более поздних версий. Простое описание шагов установки см. в разделе [Install tools for iOS](#InstallForiOS).  
   
-##  <a name="a-namegetthetoolsa-get-the-tools"></a><a name="GetTheTools"></a> Получение инструментов  
+##  <a name="GetTheTools"></a> Получение инструментов  
  Visual C++ для разработки кроссплатформенных мобильных приложений — это устанавливаемый компонент, включенный в выпуски Visual Studio Community, Professional и Enterprise. Для получения Visual Studio перейдите на страницу [скачивания Visual Studio 2015](http://go.microsoft.com/fwlink/p/?linkid=517106) и скачайте Visual Studio 2015 с обновлением 2.  
   
-##  <a name="a-nameinstallthetoolsa-install-the-tools"></a><a name="InstallTheTools"></a> Установка инструментов  
+##  <a name="InstallTheTools"></a> Установка инструментов  
  В установщике Visual Studio 2015 можно выбрать установку Visual C++ для разработки кроссплатформенных мобильных приложений. При этом устанавливаются необходимые инструменты языка C++, шаблоны и компоненты для Visual Studio, наборы средств GCC и Clang, необходимые для сборки и отладки решений Android, а также компоненты для взаимодействия с компьютером Mac при разработке для iOS. Также устанавливаются все сторонние средства и комплекты разработки программного обеспечения, необходимые для поддержки разработки приложений iOS и Android. В основном это программное обеспечение с открытым исходным кодом, необходимое для поддержки платформы Android.  
   
 -   Набор Android Native Development Kit (NDK) требуется для сборки кода C++, предназначенного для платформы Android.  
@@ -100,10 +101,10 @@ ms.lasthandoff: 02/22/2017
   
 5.  Запустите Visual Studio. Если вы впервые запускаете Visual Studio, настройка и вход могут занять некоторое время. Когда среда Visual Studio будет готова, в меню **Сервис** выберите **Расширения и обновления**, **Обновления**. Если имеются обновления Visual Studio для Visual C++ для разработки кроссплатформенных мобильных приложений или для эмулятора Microsoft Visual Studio для Android, установите их.  
   
-##  <a name="a-nameinstallforiosa-install-tools-for-ios"></a><a name="InstallForiOS"></a> Установка инструментов для iOS  
- Visual C++ для разработки кроссплатформенных мобильных приложений можно использовать для редактирования, отладки и развертывания кода iOS в эмуляторе iOS или на устройстве iOS, но из-за ограничений, связанных с лицензированием, выполнять сборку кода необходимо удаленно на компьютере Mac. Для сборки и запуска приложений iOS с помощью Visual Studio необходимо установить и настроить удаленный агент на компьютере Mac. Подробные инструкции по установке, а также сведения о необходимых компонентах и параметрах настройки см. в разделе [Установка и настройка средств для разработки с помощью iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Если вы не выполняете сборку для iOS, этот шаг можно пропустить.  
+##  <a name="InstallForiOS"></a> Install tools for iOS  
+ Visual C++ для разработки кроссплатформенных мобильных приложений можно использовать для редактирования, отладки и развертывания кода iOS в эмуляторе iOS или на устройстве iOS, но из-за ограничений, связанных с лицензированием, выполнять сборку кода необходимо удаленно на компьютере Mac. Для сборки и запуска приложений iOS с помощью Visual Studio необходимо установить и настроить удаленный агент на компьютере Mac. Подробные инструкции по установке, а также сведения о необходимых компонентах и параметрах настройки см. в разделе [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Если вы не выполняете сборку для iOS, этот шаг можно пропустить.  
   
-##  <a name="a-namethirdpartya-install-or-update-dependencies-manually"></a><a name="ThirdParty"></a> Установка или обновление зависимостей вручную  
+##  <a name="ThirdParty"></a> Установка или обновление зависимостей вручную  
  Если вы решили не устанавливать одну или несколько сторонних зависимостей с помощью установщика Visual Studio при установке компонента "Разработка мобильных приложений Visual C++", вы можете установить их позднее с помощью инструкций в разделе [Install the tools](#InstallTheTools). Их также можно установить или обновить отдельно от Visual Studio.  
   
 > [!CAUTION]
@@ -111,11 +112,11 @@ ms.lasthandoff: 02/22/2017
   
  Прочтите следующую информацию и используйте следующие ссылки для установки зависимостей вручную.  
   
--   [Пакет SDK для Java SE](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
+-   [Java SE Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
   
      По умолчанию установщик помещает средства Java в каталог C:\Program Files (x86)\Java.  
   
--   [Пакет SDK для Android](https://developer.android.com/sdk/index.html#Other)  
+-   [Android SDK](https://developer.android.com/sdk/index.html#Other)  
   
      Во время установки обновите API-интерфейсы требуемым образом. Убедитесь, что установлен как минимум пакет SDK для Android 5.0 Lollipop (уровень API 21). По умолчанию установщик помещает пакет SDK Android в каталог C:\Program Files (x86)\Android\android-sdk.  
   
@@ -123,7 +124,7 @@ ms.lasthandoff: 02/22/2017
   
      Для использования некоторых эмуляторов Android, входящих в пакет SDK для Android, нужно установить дополнительные драйверы Intel HAXM. Для успешной установки драйверов Intel HAXM может потребоваться удалить компонент Hyper-V из Windows. Для использования эмуляторов Windows Phone и эмулятора Microsoft Visual Studio для Android компонент Hyper-V потребуется восстановить.  
   
--   [Пакет NDK для Android](https://developer.android.com/tools/sdk/ndk/index.html)  
+-   [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html)  
   
      По умолчанию программа установки помещает пакет Android NDK в каталог C:\ProgramData\Microsoft\AndroidNDK. Чтобы обновить установку NDK, можно повторно скачать и установить Android NDK.  
   

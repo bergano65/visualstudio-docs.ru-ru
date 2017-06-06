@@ -30,10 +30,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 0b25d326d103c5da3b09b79d3a574734debed071
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 89694c49fdd115064d1ebe9f5dfe910b77548a76
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Диалоговое окно "Дополнительные параметры" (визуализатор параллелизма)
@@ -90,7 +91,7 @@ ms.lasthandoff: 02/22/2017
  Если вы хотите, чтобы в будущих трассировках не отображались данные конкретного поставщика, снимите флажок рядом с поставщиком, которого необходимо удалить.  
   
 ## <a name="files"></a>Файлы  
- На вкладке **Файлы** можно указать каталог, в который должны сохраняться файлы трассировки после сбора.  Для каждой собранной трассировки визуализатор параллелизма создает&4; файла:  
+ На вкладке **Файлы** можно указать каталог, в который должны сохраняться файлы трассировки после сбора.  Для каждой собранной трассировки визуализатор параллелизма создает 4 файла:  
   
 -   файл журнала трассировки событий режима ядра (*.kernel.etl);  
   
