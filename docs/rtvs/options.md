@@ -11,7 +11,7 @@ ms.tgt_pltfrm:
 f1_keywords:
 - vs.toolsoptionspages.r_tools
 - vs.toolsoptionspages.r_tools.advanced
-- VS.ToolsOptionsPages.R_Tools.%23150
+- vs.toolsoptionspages.r_tools.#150
 ms.topic: article
 ms.assetid: 554dc602-ecad-4cd0-8e6f-a60bb8a2328f
 caps.latest.revision: 1
@@ -58,7 +58,7 @@ ms.lasthandoff: 05/12/2017
 
 ![Макет окна для обработки и анализа данных в Visual Studio](media/installation-data-scientist-layout-result.png)
 
-> [!Important]        
+> [!Important]      
 > Чтобы позже вернуться к другим параметрам Visual Studio, сначала выберите команду **Сервис > Импорт и экспорт параметров**. Для этого выберите **Экспортировать выбранные параметры среды** и укажите имя файла. Чтобы восстановить эти параметры, используйте ту же команду и выберите **Импортировать выбранные параметры среды**. Также можно использовать те же команды, если макет для обработки и анализа данных был изменен, чтобы вернуться к нему позже, вместо того, чтобы использовать команду **Параметры обработки и анализа данных** напрямую.
 
 ## <a name="debugging"></a>Отладка
