@@ -35,10 +35,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 0baf22ca488f4500fb3f4e845a0957b6225dd327
-ms.lasthandoff: 02/22/2017
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
@@ -69,7 +70,7 @@ ms.lasthandoff: 02/22/2017
 |[Команда "Вывести память"](../../ide/reference/list-memory-command.md)|d|Debug.ListMemory|  
 |[Команда List Memory](../../ide/reference/list-memory-command.md) как ANSI|da|Debug.ListMemory /Ansi|  
 |[Команда List Memory](../../ide/reference/list-memory-command.md) в однобайтовом формате|db|Debug.ListMemory /Format:OneByte|  
-|[Команда List Memory](../../ide/reference/list-memory-command.md) как ANSI с&4;-байтовым форматом|dc|Debug.ListMemory /Format:FourBytes /Ansi|  
+|[Команда List Memory](../../ide/reference/list-memory-command.md) как ANSI с 4-байтовым форматом|dc|Debug.ListMemory /Format:FourBytes /Ansi|  
 |[Команда List Memory](../../ide/reference/list-memory-command.md) в четырехбайтовом формате|dd|Debug.ListMemory /Format:FourBytes|  
 |Удалить до начала строки|DelBOL|Edit.DeleteToBOL|  
 |Удалить до конца строки|DelEOL|Edit.DeleteToEOL|  
