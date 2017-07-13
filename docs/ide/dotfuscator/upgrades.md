@@ -39,28 +39,32 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 507ff049dae50698d86e1536ed21ab982da1af85
-ms.openlocfilehash: eeabf6db465f57ab373c592b01a682ed6442800f
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 8ce85525f6af336682f6f8547c2f6c13dde73c8c
+ms.openlocfilehash: 60ca38639f6523cdbace4efa4aa48b48d5e9a886
+ms.contentlocale: ru-ru
+ms.lasthandoff: 06/23/2017
 
 ---
 
-# <a name="upgrade-dotfuscator-community-edition-ce"></a>Обновление Dotfuscator Community Edition (CE)
+# Обновление Dotfuscator Community Edition (CE)
+<a id="upgrade-dotfuscator-community-edition-ce" class="xliff"></a>
 
 Dotfuscator Community Edition (Dotfuscator CE) предлагает множество функций защиты приложений, которые доступны всем разработчикам, использующим Microsoft Visual Studio.
 Однако пользователям, обновившим версию Dotfuscator, доступны дополнительные функции.
 
-## <a name="registering-dotfuscator-ce"></a>Регистрация Dotfuscator CE
+## Регистрация Dotfuscator CE
+<a id="registering-dotfuscator-ce" class="xliff"></a>
 
 Зарегистрированные пользователи Dotfuscator CE получают доступ к дополнительным функциям, таким как [поддержка командной строки][cli], позволяющим легко интегрировать Dotfuscator CE в ваш автоматический процесс сборки.
 
 Регистрация производится быстро, просто и бесплатно.
 Чтобы зарегистрировать Dotfuscator CE, см. [раздел "Регистрация Dotfuscator CE" на странице с вводными сведениями полного руководства пользователя Dotfuscator CE][register-ce].
 
-## <a name="dotfuscator-professional"></a>Dotfuscator Professional
+## Dotfuscator Professional
+<a id="dotfuscator-professional" class="xliff"></a>
 
-Хотя Dotfuscator Community Edition предоставляет базовый уровень защиты, ***PreEmptive Protection - Dotfuscator* Professional Edition** включает улучшенные функции обфускации и возможности защиты.
+Хотя Dotfuscator Community Edition предоставляет базовый уровень защиты, **_PreEmptive Protection - Dotfuscator_ Professional Edition** включает улучшенные функции обфускации и возможности защиты.
 Сюда входит следующее.
 
 * *Защита интеллектуальной собственности*
@@ -91,7 +95,8 @@ Dotfuscator Professional — это отраслевой стандарт [ма
 Дополнительные сведения о расширенных функциях защиты приложений Dotfuscator Professional см. на [странице обзора Dotfuscator][product-about] PreEmptive Solutions и [сравните их с Community Edition][product-compare].
 [Полностью поддерживаемые пробные версии доступны по запросу на сайте preemptive.com][eval].
 
-## <a name="see-also"></a>См. также
+## См. также
+<a id="see-also" class="xliff"></a>
 
 [Этот раздел в полном руководстве пользователя Dotfuscator CE][full]
 
@@ -112,7 +117,8 @@ Dotfuscator Professional — это отраслевой стандарт [ма
 [product-about]: https://www.preemptive.com/products/dotfuscator/overview
 [product-compare]: https://www.preemptive.com/products/dotfuscator/compare-editions
 
-[cli]: https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/intro_cli.html
-[register-ce]: https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/gui_getstarted.html#register
+[cli]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_cli.html
+[register-ce]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html#register
 
-[full]: https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/intro_upgrades.html
+[full]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_upgrades.html
+

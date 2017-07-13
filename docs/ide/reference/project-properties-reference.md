@@ -30,16 +30,19 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4e23eb8ff0c1459c6dc5b9ac1928f8f7092c9a3e
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 0616477123b4b2a08763a3871f42d67e06c1aa3a
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/24/2017
 
 ---
-# <a name="project-properties-reference"></a>Справочник по свойствам проектов
+# Справочник по свойствам проектов
+<a id="project-properties-reference" class="xliff"></a>
 Вы можете ознакомиться с дополнительными сведениями о способах настройки и изменения свойств проекта.  
   
-## <a name="project-properties-pages"></a>Страницы свойств проекта  
+## Страницы свойств проекта
+<a id="project-properties-pages" class="xliff"></a>  
   
 |Заголовок|Описание|  
 |-----------|-----------------|  
@@ -59,6 +62,6 @@ ms.lasthandoff: 02/22/2017
 |||  
 |||  
   
-## <a name="see-also"></a>См. также  
- [Знакомство с конструктором проектов](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
+## См. также
+<a id="see-also" class="xliff"></a>  
  [Решения и проекты](../../ide/solutions-and-projects-in-visual-studio.md)

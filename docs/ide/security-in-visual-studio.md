@@ -30,34 +30,39 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 57f7d51786d2636eb865eb81bb3468e79c6f19f9
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 7314921a9416184c4bd63312bd5a82cef4102ddd
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/30/2017
 
 ---
-# <a name="security-in-visual-studio"></a>Безопасность в Visual Studio
+# Безопасность в Visual Studio
+<a id="security-in-visual-studio" class="xliff"></a>
 Вопросы безопасности должны рассматриваться на всех этапах разработки приложения — от проектирования до развертывания. Начните работу с запуска Visual Studio в наиболее безопасном режиме. См. раздел [Разрешения пользователей](../ide/user-permissions-and-visual-studio.md).  
   
  Для успешной разработки безопасного приложения следует ознакомиться с основными понятиями безопасности и средствами защиты платформ, для которых разрабатывается приложение. Кроме того, необходимо понимать приемы безопасного кодирования.  
   
-## <a name="understanding-security"></a>Общее представление о безопасности  
- [Безопасность](http://msdn.microsoft.com/Library/9a9621d7-8883-4a4f-a874-65e8e09e20a6)  
+## Общее представление о безопасности
+<a id="understanding-security" class="xliff"></a>  
+ [Безопасность](/dotnet/standard/security/index)  
  Описание управления доступом к коду, ролевой политики безопасности, а также политики и средств безопасности в .NET Framework.  
   
  [Десять советов по защите кода, которые должен знать каждый разработчик](http://go.microsoft.com/fwlink/?LinkId=72877)  
  Вопросы, внимание к которым позволит избежать возникновения угрозы безопасности для данных или системы.  
   
-## <a name="coding-for-security"></a>Безопасное кодирование  
+## Безопасное кодирование
+<a id="coding-for-security" class="xliff"></a>  
  Большинство ошибок кодирования, которые приводят к уязвимости системы безопасности, происходит из-за неправильных допущений разработчиков при работе с вводимыми пользователем данными или из-за неполного понимания принципов работы платформы, для которой разрабатывается приложение.  
   
- [Правила написания безопасного кода](http://msdn.microsoft.com/Library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)  
+ [Правила написания безопасного кода](/dotnet/standard/security/secure-coding-guidelines)  
  Правила классификации компонентов для решения вопросов безопасности.  
   
  [Рекомендации по безопасности](/cpp/top/security-best-practices-for-cpp)  
  Описание переполнения буфера и общая картина функциональности проверки безопасности в Microsoft Visual C++, которая включается с помощью флага времени компиляции /GS.
 
-## <a name="building-for-security"></a>Безопасная сборка  
+## Безопасная сборка
+<a id="building-for-security" class="xliff"></a>  
  При сборке безопасность играет немаловажную роль.  Выполнив дополнительные процедуры, можно повысить безопасность развернутого приложения и защитить его от несанкционированного реконструирования, спуфинга и других атак.
 
  [Dotfuscator Community Edition (CE)](dotfuscator/index.md)  

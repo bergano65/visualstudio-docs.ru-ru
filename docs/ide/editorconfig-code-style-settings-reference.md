@@ -7,8 +7,8 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
-- VB
 - CSharp
+- VB
 helpviewer_keywords:
 - editor
 ms.assetid: 
@@ -30,16 +30,19 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 46846db26bee30841e6cb35913d533b512d01ba0
-ms.openlocfilehash: a5b26ed093ed86c8c438b2024f69d371fde2de36
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 8ce85525f6af336682f6f8547c2f6c13dde73c8c
+ms.openlocfilehash: 288595f50555bd8314d0ad60cd2e1ce8121a8ab0
+ms.contentlocale: ru-ru
+ms.lasthandoff: 06/23/2017
 
 ---
 
-# <a name="net-code-style-settings-for-editorconfig"></a>Параметры стиля кода .NET для EditorConfig
+# Параметры стиля кода .NET для EditorConfig
+<a id="net-code-style-settings-for-editorconfig" class="xliff"></a>
 
-## <a name="possible-values"></a>Возможные значения
+## Возможные значения
+<a id="possible-values" class="xliff"></a>
 
 `options_name = false|true : none|suggestion|warning|error`
 
@@ -52,7 +55,8 @@ suggestion | Если этот стиль не соблюдается, пока�
 предупреждение | Если этот стиль не соблюдается, выводить предупреждение компилятора.
 error | Если этот стиль не соблюдается, выводить ошибку компилятора.
 
-## <a name="net-code-style-options"></a>Параметры стиля кода .NET
+## Параметры стиля кода .NET
+<a id="net-code-style-options" class="xliff"></a>
 
 - [Параметры стиля кода .NET](#this_and_me)
     - [Квалификация "This." и "Me."](#this_and_me)
@@ -102,7 +106,8 @@ error | Если этот стиль не соблюдается, выводит
 | Да | Предпочитать, чтобы все нестатические поля, используемые в нестатических методах, предварялись `this.` в C# или `Me.` в Visual Basic. | **C#:** <br>`this.capacity = 0;` <br><br> **Visual Basic:** `Me.capacity = 0`
 | False | Предпочитать, чтобы все нестатические поля, используемые в нестатических методах, не предварялись `this.` в C# или `Me.` в Visual Basic. | **C#:** <br>`capacity = 0;` <br><br> **Visual Basic:** `capacity = 0`
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp and VisualBasic code style settings:
 [*.cs,*.vb]
@@ -120,7 +125,8 @@ dotnet_style_qualification_for_field = false:suggestion
 | Да | Предпочитать, чтобы все нестатические свойства, используемые в нестатических методах, предварялись `this.` в C# или `Me.` в Visual Basic.| **C#:** <br>`this.ID = 0;` <br><br> **Visual Basic:** `Me.ID = 0`
 | False | Предпочитать, чтобы все нестатические свойства, используемые в нестатических методах, *не* предварялись `this.` в C# или `Me.` в Visual Basic. | **C#:** <br>`ID = 0;` <br><br> **Visual Basic:** `ID = 0`
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp and VisualBasic code style settings:
 [*.cs,*.vb]
@@ -139,7 +145,8 @@ dotnet_style_qualification_for_property = false:suggestion
 | False | Предпочитать, чтобы все нестатические методы, вызываемые из нестатических методов, *не* предварялись `this.` в C# или `Me.` в Visual Basic. | **C#:** <br>`Display();` <br><br> **Visual Basic:** `Display()`
 
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp and VisualBasic code style settings:
 [*.cs, *.vb]
@@ -156,7 +163,8 @@ dotnet_style_qualification_for_method = false:suggestion
 | Да | Предпочитать, чтобы все нестатические события, на которые существуют ссылки в нестатических методах, предварялись `this.` в C# или `Me.` в Visual Basic.| **C#:** <br>`this.Elapsed += Handler;` <br><br> **Visual Basic:** `AddHandler Me.Elapsed, AddressOf Handler`
 | False | Предпочитать, чтобы все нестатические события, на которые существуют ссылки в нестатических методах, *не* предварялись `this.` в C# или `Me.` в Visual Basic. | **C#:** <br>`Elapsed += Handler;` <br><br> **Visual Basic:** `AddHandler Elapsed, AddressOf Handler`
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp and VisualBasic code style settings:
 [*.cs, *.vb]
@@ -174,7 +182,8 @@ dotnet_style_qualification_for_event = false:suggestion
 | Да | Для локальных переменных, параметров и элементов типов предпочитать, чтобы типы с представляющим их ключевым словом языка (`int`, `double`, `float`, `short`, `long`, `decimal`, `string`) использовали ключевое слово вместо имени типа (`Int32`, `Int64` и т. д.).| **C#:** <br>`private int _member;` <br><br> **Visual Basic:** `Private _member As Integer`
 | False | Для локальных переменных, параметров и элементов типов предпочитать, чтобы типы с представляющим их ключевым словом языка (`int`, `double`, `float`, `short`, `long`, `decimal`, `string`) использовали имя типа (`Int32`, `Int64` и т. д.) вместо ключевого слова.  | **C#:** <br>`private Int32 _member;` <br><br> **Visual Basic:** `Private _member As Int32`
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp and VisualBasic code style settings:
 [*.cs, *.vb]
@@ -191,7 +200,8 @@ dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
 | Да | Предпочитать ключевое слово при использовании выражения доступа к элементам в типе, представленном ключевым словом (`int`, `double`, `float`, `short`, `long`, `decimal`, `string`).| **C#:** <br>`var local = int.MaxValue;` <br><br> **Visual Basic:** `Dim local = Integer.MaxValue`
 | False | Предпочитать имя типа при использовании выражения доступа к элементам в типе, представленном ключевым словом (`int`, `double`, `float`, `short`, `long`, `decimal`, `string`). | **C#:** <br>`var local = Int32.MaxValue;` <br><br> **Visual Basic:** `Dim local = Int32.MaxValue`
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp and VisualBasic code style settings:
 [*.cs, *.vb]
@@ -209,7 +219,8 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 | Да | Предпочитать инициализировать объекты с помощью инициализаторов объектов, когда это возможно.| **C#:** <br>`var c = new Customer(){ Age = 21 };` <br><br> **Visual Basic:** `Dim c = New Customer() With { .Age = 21 }`
 | False | Предпочитать *не* инициализировать объекты с помощью инициализаторов объектов. | **C#:** <br>`var c = new Customer();`<br>`c.Age = 21;` <br><br> **Visual Basic:** <br>`Dim c = new Customer() `<br>`c.Age = 21`
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp and VisualBasic code style settings:
 [*.cs, *.vb]
@@ -226,7 +237,8 @@ dotnet_style_object_initializer = true:suggestion
 | Да | Предпочитать инициализировать коллекции с помощью инициализаторов коллекций, когда это возможно.| **C#:** <br>`var list = new List<int>{ 1, 2, 3 };` <br><br> **Visual Basic:** <br> `Dim list = new List(Of Integer) From { 1, 2, 3}`
 | False | Предпочитать *не* инициализировать коллекции с помощью инициализаторов коллекций. | **C#:** <br>`var list = new List<int>();`<br>`list.Add(1);`<br>`list.Add(2);`<br>`list.Add(3);` <br><br> **Visual Basic:** <br>`Dim list = new List(Of Integer)`<br>`list.Add(1)`<br>`list.Add(2)`<br>`list.Add(3)`
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp and VisualBasic code style settings:
 [*.cs, *.vb]
@@ -243,7 +255,8 @@ dotnet_style_collection_initializer = true:suggestion
 | Да | Предпочитать имена кортежей свойствам ItemX.| **C#:** <br>`(string name, int age) customer = GetCustomer();`<br>`var name = customer.name;` <br><br> **Visual Basic:** <br> `Dim customer As (name As String, age As Integer) = GetCustomer()`<br>`Dim name = customer.name`
 | False | Предпочитать свойства ItemX именам кортежей. | **C#:** <br>`(string name, int age) customer = GetCustomer();`<br>`var name = customer.Item1;` <br><br> **Visual Basic:** <br>`Dim customer As (name As String, age As Integer) = GetCustomer()`<br> `Dim name = customer.Item1`
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp and VisualBasic code style settings:
 [*.cs, *.vb]
@@ -260,7 +273,8 @@ dotnet_style_explicit_tuple_names = true:suggestion
 | Да | Предпочитать выражение объединения со значением NULL проверке тернарного оператора.| **C#:** <br>`var v = x ?? y;` <br><br> **Visual Basic:** <br> `Dim v = If(x, y)`
 | False | Предпочитать проверку тернарного оператора выражению объединения со значением NULL. | **C#:** <br>`var v = x != null ? x : y; // or`<br>`var v = x == null ? y : x;` <br><br> **Visual Basic:** <br>`Dim v = If(x Is Nothing, y, x) ' or`<br> `Dim v = If(x IsNot Nothing, x, y)`
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp and VisualBasic code style settings:
 [*.cs, *.vb]
@@ -277,7 +291,8 @@ dotnet_style_coalesce_expression = true:suggestion
 | Да | Предпочитать использовать условный оператор со значением NULL, где это возможно.| **C#:** <br>`var v = o?.ToString();` <br><br> **Visual Basic:** <br> `Dim v = o?.ToString()`
 | False | Предпочитать использовать тернарную проверку "null", где это возможно. | **C#:** <br>`var v = o == null ? null : o.ToString(); // or`<br>`var v = o != null ? o.String() : null;` <br><br> **Visual Basic:** <br>`Dim v = If(o Is Nothing, Nothing, o.ToString()) ' or`<br> `Dim v = If(o IsNot Nothing, o.ToString(), Nothing)`
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp and VisualBasic code style settings:
 [*.cs, *.vb]
@@ -296,7 +311,8 @@ dotnet_style_null_propagation = true:suggestion
 | Да | Предпочитать, чтобы `var` использовался для встроенных системных типов, таких как `int`.| **C#:** <br>`var x = 5;`
 | False | Предпочитать, чтобы `var` не использовался для встроенных системных типов, таких как `int`. | **C#:** <br>`int x = 5;`
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp code style settings:
 [*.cs]
@@ -313,7 +329,8 @@ csharp_style_var_for_built_in_types = true:suggestion
 | Да | Предпочитать использовать `var`, если тип уже упоминается в правой части выражения объявления.| **C#:** <br>`var obj = new C();`
 | False | Предпочитать не использовать `var`, если тип уже упоминается в правой части выражения объявления. | **C#:** <br>`C obj = new C();`
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp code style settings:
 [*.cs]
@@ -330,7 +347,8 @@ csharp_style_var_when_type_is_apparent = true:suggestion
 | Да | Предпочитать `var` во всех случаях, если не переопределено другим правилом стиля кода.| **C#:** <br>`var f = this.Init();`
 | False | Предпочитать не использовать var во всех случаях, если не переопределено другим правилом стиля кода.| **C#:** <br>`bool f = this.Init();`
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp code style settings:
 [*.cs]
@@ -347,7 +365,8 @@ csharp_style_var_elsewhere = true:suggestion
 | Да | Предпочитать элементы, воплощающие выражение, для методов.| **C#:** <br>`public int GetAge() => this.Age;`
 | False | Не предпочитать элементы, воплощающие выражение, для методов.| **C#:** <br>`public int GetAge() { return this.Age; }`
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp code style settings:
 [*.cs]
@@ -364,7 +383,8 @@ csharp_style_expression_bodied_methods = false:none
 | Да | Предпочитать элементы, воплощающие выражение, для конструкторов.| **C#:** <br>`public Customer(int age) => Age = age;`
 | False | Не предпочитать элементы, воплощающие выражение, для конструкторов.| **C#:** <br>`public Customer(int age) { Age = age; }`
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp code style settings:
 [*.cs]
@@ -381,7 +401,8 @@ csharp_style_expression_bodied_constructors = false:none
 | Да | Предпочитать элементы, воплощающие выражение, для операторов.| **C#:** <br>`public static ComplexNumber operator +(ComplexNumber c1, ComplexNumber c2)`<br>`=> new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary);`
 | False | Не предпочитать элементы, воплощающие выражение, для операторов.| **C#:** <br>`public static ComplexNumber operator +(ComplexNumber c1, ComplexNumber c2)`<br>`{ return new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary); }`
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp code style settings:
 [*.cs]
@@ -398,7 +419,8 @@ csharp_style_expression_bodied_operators = false:none
 | Да | Предпочитать элементы, воплощающие выражение, для свойств.| **C#:** <br>`public int Age => _age;`
 | False | Не предпочитать элементы, воплощающие выражение, для свойств.| **C#:** <br>`public int Age { get { return _age; }}`
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp code style settings:
 [*.cs]
@@ -415,7 +437,8 @@ csharp_style_expression_bodied_properties = false:none
 | Да | Предпочитать элементы, воплощающие выражение, для индексаторов.| **C#:** <br>`public T this[int i] => _value[i];`
 | False | Не предпочитать элементы, воплощающие выражение, для индексаторов.| **C#:** <br>`public T this[int i] { get { return _values[i]; } }`
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp code style settings:
 [*.cs]
@@ -432,7 +455,8 @@ csharp_style_expression_bodied_indexers = false:none
 | Да | Предпочитать элементы, воплощающие выражение, для методов доступа.| **C#:** <br>`public int Age { get => _age; set => _age = value; }`
 | False | Не предпочитать элементы, воплощающие выражение, для методов доступа.| **C#:** <br>`public int Age { get { return _age; } set { _age = value; } }`
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp code style settings:
 [*.cs]
@@ -450,7 +474,8 @@ csharp_style_expression_bodied_accessors = false:none
 | Да | Предпочитать сопоставления шаблонов вместо выражений `is` с приведениями типов.| **C#:** <br>`if (o is int i) {...}`
 | False | Предпочитать выражения `is` с приведениями типов вместо сопоставления шаблонов.| **C#:** <br>`if (o is int) {var i = (int)o; ... }`
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp code style settings:
 [*.cs]
@@ -467,7 +492,8 @@ csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 | Да | Предпочитать сопоставление шаблонов вместо выражений `as` с проверками "null", чтобы определить, имеет ли что-то определенный тип.| **C#:** <br>`if (o is string s) {...}`
 | False | Предпочитать выражения `as` с проверками "null" вместо соответствия шаблонам, чтобы определить, имеет ли что-то определенный тип.| **C#:** <br>`var s = o as string; if (s != null) {...}`
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp code style settings:
 [*.cs]
@@ -484,7 +510,8 @@ csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 | Да | Предпочитать встроенное объявление переменных `out`, когда возможно. | **C#:** <br>`if (int.TryParse(value, out int i) {...}`
 | False | Предпочитать явное объявление переменных `out`.| **C#:** <br>`int i; if (int.TryParse(value, out i) {...}`
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp code style settings:
 [*.cs]
@@ -502,7 +529,8 @@ csharp_style_inlined_variable_declaration = true:suggestion
 | Да | Предпочитать использовать выражения throw вместо операторов throw. | **C#:** <br>`this.s = ss ?? throw new ArgumentNullException(nameof(s));`
 | False | Предпочитать использовать операторы throw вместо выражений throw.| **C#:** <br>`if (s==null) {throw new ArgumentNullException(nameof(s));} this.s = s;`
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp code style settings:
 [*.cs]
@@ -519,7 +547,8 @@ csharp_style_throw_expression = true:suggestion
 | Да | Предпочитать использовать условную операцию объединения (`?.`) при вызове лямбда-выражения вместо выполнения проверки "null". | **C#:** <br>`func?.Invoke(args);`
 | False | Предпочитать выполнять проверку "null" перед вызовом лямбда-выражения вместо использования условного оператора объединения (`?.`).| **C#:** <br>`if (func!=null) { func(args); }`
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+#### Пример файла editorconfig:
+<a id="example-editorconfig-file" class="xliff"></a>
 ```
 # CSharp code style settings:
 [*.cs]

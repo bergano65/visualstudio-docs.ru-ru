@@ -75,25 +75,29 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 07dfd26933090708cf40adff5f7ceb4785686245
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 1d273749cc41eb975dc9f93329edf9a57aaae09a
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/24/2017
 
 ---
-# <a name="manage-external-tools"></a>Управление внешними инструментами
+# Управление внешними инструментами
+<a id="manage-external-tools" class="xliff"></a>
 Внешние инструменты можно вызвать прямо из Visual Studio с помощью меню **Сервис**. Несколько инструментов по умолчанию доступны в меню **Сервис**, однако вы можете самостоятельно добавлять другие исполняемые файлы.  
 
-## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Инструменты, доступные в меню "Сервис" Visual Studio
+## Инструменты, доступные в меню "Сервис" Visual Studio
+<a id="tools-available-on-the-visual-studio-tools-menu" class="xliff"></a>
  В меню **Сервис** содержится несколько встроенных команд:
 
 *  **Расширения и обновления** для [управления расширениями Visual Studio](finding-and-using-visual-studio-extensions.md).
 *  **Диспетчер фрагментов кода...** для [организации фрагментов кода](code-snippets.md#code-snippet-manager).
 *  **PreEmptive Protection — Dotfuscator** для запуска [Dotfuscator Community Edition (CE)](dotfuscator/index.md) (если эта программа [установлена](dotfuscator/install.md)).
-*  **Настройка...** для [настройки меню и панелей инструментов](how-to-customize-menus-and-toolbars-in-visual-studio).
+*  **Настройка...** для [настройки меню и панелей инструментов](how-to-customize-menus-and-toolbars-in-visual-studio.md).
 *  **Параметры...** для [установки различных параметров интегрированной среды разработки Visual Studio и других инструментов](reference/options-dialog-box-visual-studio.md).
 
-## <a name="add-new-tools-to-the-tools-menu"></a>Добавление новых инструментов в меню "Сервис" 
+## Добавление новых инструментов в меню "Сервис"
+<a id="add-new-tools-to-the-tools-menu" class="xliff"></a> 
  Вы можете добавить внешний инструмент в меню **Сервис**. Откройте диалоговое окно **Внешние инструменты...**, нажмите кнопку **Добавить**, а затем введите данные. Например, следующая запись вызывает открытие проводника Windows в каталоге с файлом, который в настоящий момент открыт в Visual Studio:  
   
 1.  Заголовок: *Открыть расположение файла*
@@ -126,6 +130,7 @@ ms.lasthandoff: 04/05/2017
 |Каталог решения|$(SolutionDir)|Каталог текущего решения (диск + путь).|  
 |Имя файла решения|$(SolutionFileName)|Имя файла текущего решения (диск + путь + имя файла).|  
 
-## <a name="see-also"></a>См. также  
+## См. также
+<a id="see-also" class="xliff"></a>  
  [Средства сборки С/C++](/cpp/build/reference/c-cpp-build-tools)
 
