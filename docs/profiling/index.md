@@ -1,13 +1,17 @@
 ---
 layout: LandingPage
-title: "Профилирование в Visual Studio"
-translationtype: Human Translation
-ms.sourcegitcommit: dac3cb1d7767c2ff76ac25f6a486ad30a8d54831
-ms.openlocfilehash: 06edcb5e4d6656b3b5c3441879bc48951b0585da
-ms.lasthandoff: 03/03/2017
+title: "Профилирование приложений с Visual Studio"
+description: "Узнайте, как с помощью Visual Studio 2017 создавать профили производительности для приложений, служб и инструментов на выбранном вами языке."
+ms.technology: vs-ide-debug
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
+ms.openlocfilehash: 6b54253dadb80dd6881ba366b5bb466f4eae7706
+ms.contentlocale: ru-ru
+ms.lasthandoff: 06/30/2017
 
 ---
-#<a name="profiling-in-visual-studio"></a>Профилирование в Visual Studio
+# Профилирование в Visual Studio
+<a id="profiling-in-visual-studio" class="xliff"></a>
 
 Средства профилирования и диагностики позволяют разработчикам диагностировать использование памяти и ЦП и выявлять другие проблемы на уровне приложения. С помощью этих средств можно накапливать данные (например, значения переменных, вызовы функций и события) в течение времени выполнения приложения в отладчике. Вы можете просматривать состояние приложения на разных этапах во время выполнения кода. 
 
