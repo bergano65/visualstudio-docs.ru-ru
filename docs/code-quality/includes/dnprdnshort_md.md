@@ -13,7 +13,7 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
+ms.translationtype: HT
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 0821dd4bff10bcd55a19ce3e3b41fc37b6502eab
 ms.contentlocale: ru-ru

@@ -13,9 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: HT
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: f6fad52e678d95b67a92224f3694ab91f9b8661e
+ms.contentlocale: ru-ru
 
 ---
 Язык XAML
