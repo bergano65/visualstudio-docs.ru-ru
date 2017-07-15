@@ -41,16 +41,14 @@ ms.contentlocale: ru-ru
 ms.lasthandoff: 07/10/2017
 
 ---
-<a id="getting-started-with-visual-c-and-visual-basic" class="xliff"></a>
-
 # Начало работы с Visual C# и Visual Basic
+<a id="getting-started-with-visual-c-and-visual-basic" class="xliff"></a>
 Этот раздел хорошо подходит для тех, кто начинает изучать Visual C# или Microsoft Visual Basic. Набор документации "Приступая к работе" содержит ссылки на набор последовательных занятий для ознакомления с языками Visual C# и Visual Basic. Желаем успехов в создании первоклассных программ!  
   
  Дополнительные сведения по Visual C++ см. в разделе [Ресурсы, посвященные Visual C++](http://msdn.microsoft.com/vstudio/hh386302.aspx).  
   
-<a id="in-this-section" class="xliff"></a>
-
-## Содержание  
+## Содержание
+<a id="in-this-section" class="xliff"></a>  
  [Пошаговое руководство. Создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
  Изучите основные окна интегрированной среды разработки Visual Studio, оптимизируйте среду разработки с помощью параметров и создайте простую программу.  
   
