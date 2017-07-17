@@ -22,21 +22,6 @@ caps.latest.revision: 46
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
 ms.openlocfilehash: 9a4b04dc59c409a5c68ad1fb376abb33b3859ff6
@@ -44,8 +29,10 @@ ms.contentlocale: ru-ru
 ms.lasthandoff: 05/24/2017
 
 ---
+
 # Создание решений и проектов
 <a id="create-solutions-and-projects" class="xliff"></a>
+
 Проекты — это логические контейнеры для всех объектов, которые необходимы для сборки приложения. Когда вы выбираете **Файл**, **Создать**, **Проект** в главном меню для создания проекта, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] создает решение, которое будет его содержать. После этого в решение при необходимости можно добавить дополнительные новые или существующие проекты. Можно создавать проекты из существующих файлов кода, а также временные проекты (только .NET), которые будут удалены после завершения работы с ними.
 
 > [!NOTE]
