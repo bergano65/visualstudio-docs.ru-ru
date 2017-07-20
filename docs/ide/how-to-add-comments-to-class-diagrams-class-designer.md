@@ -1,42 +1,59 @@
 ---
-title: "How to: Add Comments to Class Diagrams (Class Designer) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.classdesigner.comment"
-helpviewer_keywords: 
-  - "annotations, class diagrams"
-  - "class diagrams, adding comment shapes"
-  - "comment shapes"
+title: "Практическое руководство. Добавление комментариев в схему классов (конструктор классов) | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.classdesigner.comment
+helpviewer_keywords:
+- annotations, class diagrams
+- class diagrams, adding comment shapes
+- comment shapes
 ms.assetid: d54005d5-a29d-4c4e-b153-feb6e84dd44f
 caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# How to: Add Comments to Class Diagrams (Class Designer)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
+ms.openlocfilehash: fe17aaf87c9ec8af55e6e175103e795991a02b5a
+ms.contentlocale: ru-ru
+ms.lasthandoff: 07/14/2017
 
-Для добавления примечаний к схемам классов можно использовать фигуры комментария.  У фигуры комментария есть свойство **Текст**, в которое можно ввести текст.  Фигуры комментария существуют только в области схемы и отсутствуют в коде.  
+---
+# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Практическое руководство. Добавление комментариев в схему классов (конструктор классов)
+Для добавления примечаний к схемам классов можно использовать фигуры комментария. У фигуры комментария есть свойство **Текст**, в которое можно вводить текст. Фигуры комментария существуют только в области схемы, а не в коде.  
   
- Комментарии принадлежат представлению схемы классов в **Конструкторе классов**. При открытии в одном и том же проекте второй схемы классов комментарии, созданные в первом представлении, не отобразятся.  При удалении схемы классов все комментарии, содержащиеся в схеме, также будут удалены.  
+ Комментарии принадлежат представлению схемы классов в **конструкторе классов**. При открытии в одном проекте второй схемы классов комментарии, созданные в первом представлении, не отображаются. При удалении схемы классов все содержащиеся в ней комментарии также удаляются.  
   
  Размеры фигуры комментария можно изменить, однако нельзя изменить другие характеристики представления комментария, такие как фон, цвет, шрифт или размер шрифта.  
   
-### Добавление комментария  
+### <a name="to-add-a-comment"></a>Добавление комментария  
   
-1.  Перетащите комментарий из **Панели элементов конструктора классов** на схему классов.  
+1.  Перетащите комментарий из **панели инструментов конструктора классов** на схему классов.  
   
-2.  Щелкните новую фигуру комментария на схеме и введите требуемый текст.  
+2.  Щелкните новую фигуру комментария на схеме и введите нужный текст.  
   
-## См. также  
- [Working with Class Diagrams \(Class Designer\)](../ide/working-with-class-diagrams-class-designer.md)   
- [Working with Class Diagrams \(Class Designer\)](../ide/working-with-class-diagrams-class-designer.md)   
- [How to: Customize Class Diagrams \(Class Designer\)](../ide/how-to-customize-class-diagrams-class-designer.md)
+## <a name="see-also"></a>См. также  
+ [Работа со схемами классов (конструктор классов)](../ide/working-with-class-diagrams-class-designer.md)   
+ [Работа со схемами классов (конструктор классов)](../ide/working-with-class-diagrams-class-designer.md)   
+ [Практическое руководство. Настройка схем классов (конструктор классов)](../ide/how-to-customize-class-diagrams-class-designer.md)

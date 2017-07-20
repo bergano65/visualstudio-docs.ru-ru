@@ -1,36 +1,53 @@
 ---
-title: "How to: Print Class Diagrams (Class Designer) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "printing [Visual Studio], class diagrams"
-  - "class diagrams, printing"
+title: "Практическое руководство. Печать схем классов (конструктор классов) | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- printing [Visual Studio], class diagrams
+- class diagrams, printing
 ms.assetid: 62c87425-3446-41fb-943c-1f86397883c8
 caps.latest.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# How to: Print Class Diagrams (Class Designer)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
+ms.openlocfilehash: 0b238b86d80de31e40e10dc0efe6d6ea37e91121
+ms.contentlocale: ru-ru
+ms.lasthandoff: 07/14/2017
 
-Вывести на печать схему классов можно с помощью функции печати Visual Studio.  
+---
+# <a name="how-to-print-class-diagrams-class-designer"></a>Практическое руководство. Печать схем классов (конструктор классов)
+Схему классов можно распечатать с помощью функции печати Visual Studio.  
   
-### Печать схемы классов  
+### <a name="to-print-a-class-diagram"></a>Печать схемы классов  
   
-1.  Откройте схему классов.  \(Выберите вкладку схемы классов.\)  
+1.  Откройте схему классов. (Если нужно, откройте вкладку схемы классов, чтобы отобразить схему.)  
   
-2.  В меню **Файл** выберите пункт **Печать**.  
+2.  В меню **Файл** выберите команду **Печать**.  
   
-     Схема классов будет напечатана полностью.  Обратите внимание, что для печати схемы требуемого размера необходимо задать соответствующие значения параметров в диалоговом окне "Параметры страницы".  
+     Будет распечатана вся схема классов. Обратите внимание на то, что при необходимости печати на бумаге соответствующего размера может потребоваться корректировка настроек в диалоговом окне "Параметры страницы".  
   
-## См. также  
- [How to: Copy Class Diagram Elements to a Microsoft Office Document \(Class Designer\)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md)   
- [How to: Export Class Diagrams As Images \(Class Designer\)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)
+## <a name="see-also"></a>См. также  
+ [Практическое руководство. Копирование элементов схемы классов в документ Microsoft Office (конструктор классов)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md)   
+ [Практическое руководство. Экспорт схем классов как изображений (конструктор классов)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)

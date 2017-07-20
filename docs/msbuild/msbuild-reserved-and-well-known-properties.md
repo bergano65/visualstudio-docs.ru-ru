@@ -34,11 +34,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
+ms.translationtype: HT
 ms.sourcegitcommit: 7a873df77756e5a957d327049566c8e0db1f3a8a
 ms.openlocfilehash: f1f9931e6e7c8dda4cb74f407901f41467c690cc
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/11/2017
+ms.lasthandoff: 07/14/2017
 
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Зарезервированные и стандартные свойства MSBuild
@@ -77,5 +77,4 @@ ms.lasthandoff: 05/11/2017
 |`MSBuildToolsVersion`|Версия набора инструментов [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], используемая для сборки проекта.<br /><br /> Примечание. Набор инструментов [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] состоит из задач, целей и средств, используемых для сборки приложения. Средства включают компиляторы csc.exe и vbc.exe. Дополнительные сведения см. в разделах [Набор инструментов (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) и [Стандартные и настраиваемые конфигурации наборов инструментов](../msbuild/standard-and-custom-toolset-configurations.md).|Зарезервированное|  
   
 ## <a name="see-also"></a>См. также  
- [Справочник по MSBuild](../msbuild/msbuild-reference.md)
- [Свойства MSBuild](../msbuild/msbuild-properties.md)
+ [Справочник по MSBuild](../msbuild/msbuild-reference.md) [Свойства MSBuild](../msbuild/msbuild-properties.md)

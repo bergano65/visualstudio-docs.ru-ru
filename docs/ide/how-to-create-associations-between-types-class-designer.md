@@ -1,51 +1,68 @@
 ---
-title: "How to: Create Associations Between Types (Class Designer) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.classdesigner.associationline"
-helpviewer_keywords: 
-  - "types [Visual Studio], associations"
-  - "association lines, defining (Class Designer)"
-  - "defining association lines (Class Designer)"
-  - "associations, types"
-  - "association lines"
+title: "Практическое руководство. Создание ассоциаций между типами (конструктор классов) | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.classdesigner.associationline
+helpviewer_keywords:
+- types [Visual Studio], associations
+- association lines, defining (Class Designer)
+- defining association lines (Class Designer)
+- associations, types
+- association lines
 ms.assetid: adccb9c8-2f8a-4086-9fa9-f70f99fb6e00
 caps.latest.revision: 20
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 20
----
-# How to: Create Associations Between Types (Class Designer)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
+ms.openlocfilehash: 81629535c7d6001ad1bbb59ca2b40da4cb252628
+ms.contentlocale: ru-ru
+ms.lasthandoff: 07/14/2017
 
-Линии связи в конструкторе классов показывают отношения между классами в схеме.  Линия связи представляет класс, который является типом "свойство" или "поле" другого класса в проекте.  Линии связи обычно используются для иллюстрации наиболее важных отношений между классами в проекте.  
+---
+# <a name="how-to-create-associations-between-types-class-designer"></a>Практическое руководство. Создание ассоциаций между типами (конструктор классов)
+Линии связи в конструкторе классов показывают отношения между классами в схеме. Линия связи представляет класс, который является типом "свойство" или "поле" другого класса в проекте. Линии связи обычно используются для иллюстрации наиболее важных отношений между классами в проекте.  
   
- Можно отобразить все поля и свойства как ассоциации, но более рационально отображать как ассоциации только самые важные члены, в зависимости от того, что требуется акцентировать на схеме. \(Менее важные члены можно отобразить как обычные члены или скрыть их совсем.\)  
+ Можно отобразить все поля и свойства как ассоциации, но более рационально отображать как ассоциации только самые важные члены, в зависимости от того, что требуется акцентировать на схеме. (Менее важные члены можно отобразить как обычные члены или скрыть их совсем.)  
   
 > [!NOTE]
 >  Конструктор классов поддерживает только однонаправленные ассоциации.  
   
-### Определение линии связи в конструкторе классов  
+### <a name="to-define-an-association-line-in-the-class-diagram"></a>Определение линии связи в конструкторе классов  
   
-1.  В области инструментов, в разделе "Конструктор классов" щелкните элемент **Связь**.  
+1.  В области "Конструктор классов" панели элементов выберите элемент **Ассоциация**.  
   
 2.  Нарисуйте линию между двумя фигурами, которые необходимо связать ассоциацией.  
   
-     В первом классе будет создано новое свойство.  Данное свойство отображается как линия связи \(не как свойство в секции фигуры\) с именем по умолчанию.  Его тип является фигурой, на которую указывает линия связи.  
+     В первом классе будет создано новое свойство. Данное свойство отображается как линия связи (не как свойство в секции фигуры) с именем по умолчанию. Его тип является фигурой, на которую указывает линия связи.  
   
-### Изменение имени ассоциации  
+### <a name="to-change-the-name-of-an-association"></a>Изменение имени ассоциации  
   
 -   На рабочей области конструирования щелкните метку линии связи и введите новое имя.  
   
- — либо —  
+ \- или -  
   
 1.  Щелкните фигуру, которая содержит свойство, отображаемое как ассоциация.  
   
@@ -55,5 +72,5 @@ caps.handback.revision: 20
   
      Имя обновится в окне **Сведения о классе**, на линии связи, в окне "Свойства" и в коде.  
   
-## См. также  
- [How to: Change Between Member Notation and Association Notation \(Class Designer\)](../Topic/How%20to:%20Change%20Between%20Member%20Notation%20and%20Association%20Notation%20\(Class%20Designer\).md)
+## <a name="see-also"></a>См. также  
+ [Практическое руководство. Переключение между представлением в виде членов класса и представлением в виде ассоциации (конструктор классов)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)

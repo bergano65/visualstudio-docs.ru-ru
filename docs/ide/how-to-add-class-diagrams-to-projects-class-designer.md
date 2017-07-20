@@ -1,57 +1,74 @@
 ---
-title: "How to: Add Class Diagrams to Projects (Class Designer) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "class diagrams, creating"
-  - "Class Designer [Visual Studio], opening"
+title: "Практическое руководство. Добавление схем классов в проекты (конструктор классов) | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- class diagrams, creating
+- Class Designer [Visual Studio], opening
 ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
 caps.latest.revision: 39
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 39
----
-# How to: Add Class Diagrams to Projects (Class Designer)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
+ms.openlocfilehash: 6f55d051129231dc3fd24d484e3acada92cb8933
+ms.contentlocale: ru-ru
+ms.lasthandoff: 07/14/2017
 
-Для проектирования, изменения и рефакторинга классов и других типов добавьте в проект Visual C\# .NET, Visual Basic .NET или C\+\+ диаграмму классов.  Для визуализации различных частей кода в проекте добавьте в проект несколько диаграмм классов.  
+---
+# <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>How to: Add Class Diagrams to Projects (Class Designer)
+Для проектирования, изменения и рефакторинга классов и других типов добавьте в проект Visual C# .NET, Visual Basic .NET или C++ диаграмму классов. Для визуализации различных частей кода в проекте добавьте в проект несколько диаграмм классов.  
   
- Диаграммы классов не могут быть созданы для проектов с общим кодом для нескольких приложений.  Сведения о создании схем классов UML см. в разделе [Создание проектов и схем моделирования UML](../modeling/create-uml-modeling-projects-and-diagrams.md).  
+ Диаграммы классов не могут быть созданы для проектов с общим кодом для нескольких приложений. Сведения о создании схем классов UML см. в разделе [Создание проектов и схем моделирования UML](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
-### Добавление пустой схемы классов в проект  
+### <a name="to-add-a-blank-class-diagram-to-a-project"></a>Добавление пустой схемы классов в проект  
   
-1.  В обозревателе решений правой кнопкой мыши щелкните имя проекта.  Щелкните **Добавить новый элемент** или **Добавить**, **Создать элемент**.  
+1.  В обозревателе решений правой кнопкой мыши щелкните имя проекта. Щелкните **Добавить новый элемент** или **Добавить**, а затем **Создать элемент**.  
   
-2.  В списке шаблонов выберите **Схема классов**.  Для проектов Visual C\+\+ данный шаблон можно найти в разделе **Шаблоны** и в разделе **Служебная программа**.  
+2.  В списке шаблонов выберите пункт **Схема классов**. Для проектов Visual C++ этот шаблон находится в подразделе **Служебная программа** раздела **Шаблоны**.  
   
-     В конструкторе классов откроется схема классов, и в иерархии проекта обозревателя решений появится файл с расширением CD.  Для перетаскивания фигур и линий на диаграмме воспользуйтесь панелью инструментов конструктора классов.  
+     В конструкторе классов откроется схема классов, и в иерархии проекта обозревателя решений появится файл с расширением CD. Для перетаскивания фигур и линий на диаграмме воспользуйтесь панелью инструментов конструктора классов.  
   
 3.  Чтобы добавить несколько схем классов, необходимо повторить шаги данной процедуры.  
   
-### Добавление диаграммы классов на основе существующих типов  
+### <a name="to-add-a-class-diagram-based-on-existing-types"></a>Добавление диаграммы классов на основе существующих типов  
   
-1.  В обозревателе решений откройте контекстное меню файла класса, а затем выберите **Просмотр схемы класса**.  
+1.  В обозревателе решений откройте контекстное меню файла класса и выберите **Просмотр схемы класса**.  
   
-     \-или\-  
+     -или-  
   
-     В **представлении классов** откройте контекстное меню пространства имен или типа и выберите пункт **Просмотреть схему классов**.  
+     В **представлении классов** откройте контекстное меню пространства имен или типа и выберите пункт **Просмотр схемы класса**.  
   
-### Отображение содержимого всего проекта в схеме классов  
+### <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>Отображение содержимого всего проекта в схеме классов  
   
-1.  В обозревателе решений или представлении классов щелкните правой кнопкой мыши проект и выберите **Просмотреть**, а затем — **Просмотреть схему классов**.  
+1.  В обозревателе решений или в представлении классов щелкните проект правой кнопкой мыши и выберите **Просмотреть**, а затем — **Просмотреть схему классов**.  
   
      Будет создана автоматически заполняемая схема классов.  
   
-## См. также  
- [How to: Create Types by using Class Designer](../ide/how-to-create-types-by-using-class-designer.md)   
- [How to: View Existing Types \(Class Designer\)](../Topic/How%20to:%20View%20Existing%20Types%20\(Class%20Designer\).md)   
- [Designing Classes and Types \(Class Designer\)](../ide/designing-classes-and-types-class-designer.md)   
- [Viewing Types and Relationships \(Class Designer\)](../ide/viewing-types-and-relationships-class-designer.md)   
- [Working with Class Diagrams \(Class Designer\)](../ide/working-with-class-diagrams-class-designer.md)
+## <a name="see-also"></a>См. также  
+ [Практическое руководство. Создание типов с помощью конструктора классов](../ide/how-to-create-types-by-using-class-designer.md)   
+ [Практическое руководство. Просмотр существующих типов (конструктор классов)](../ide/how-to-view-existing-types-class-designer.md)   
+ [Конструирование классов и типов (конструктор классов)](../ide/designing-classes-and-types-class-designer.md)   
+ [Просмотр типов и отношений (конструктор классов)](../ide/viewing-types-and-relationships-class-designer.md)   
+ [Работа со схемами классов (конструктор классов)](../ide/working-with-class-diagrams-class-designer.md)
