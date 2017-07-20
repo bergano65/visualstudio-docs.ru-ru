@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
-ms.openlocfilehash: 2af148cb8367ea3a584ac8e028c8167e4ad6123b
-ms.lasthandoff: 04/06/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 7aa8de1116409f30cf1a0cd2fd689c03c2242724
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Журнал изменений (набор средств Visual Studio для Unity)
@@ -265,7 +266,7 @@ ms.lasthandoff: 04/06/2017
   
 ### <a name="bug-fixes"></a>Исправления ошибок  
   
--   Отображение пунктов меню в Unity до версии 4.2  
+-   Отображение пунктов меню в Unity до версии 4.2  
   
 -   Сообщение об ошибке больше не выводится, когда Visual Studio блокирует XML-файлы IntelliSense.  
   
@@ -760,7 +761,7 @@ ms.lasthandoff: 04/06/2017
   
 -   Исправлена ошибка "UVS-11: локальные переменные в сопрограммах".  
   
-## <a name="11--beta-release"></a>1.1 — бета-версия  
+## <a name="11---beta-release"></a>1.1 — бета-версия  
  Выпущено 09.10.2014 г.  
   
 ## <a name="1013"></a>1.0.13  
@@ -963,6 +964,6 @@ ms.lasthandoff: 04/06/2017
   
 -   Исправлено поведение автозавершения для библиотек DLL в папке Asset для UnityScript и Boo.  
   
-## <a name="10--initial-release"></a>1.0 — начальный выпуск  
+## <a name="10---initial-release"></a>1.0 — начальный выпуск  
  Выпущено 22.08.2012 г.
 

@@ -44,7 +44,7 @@ ms.lasthandoff: 03/03/2017
 # <a name="convert-dialog-box"></a>Диалоговое окно "Преобразование"
 Диалоговое окно **Преобразование** позволяет выбирать средство преобразования для создания нового проекта из старого, например проекта [!INCLUDE[vbprvblong](../../ide/reference/includes/vbprvblong_md.md)] из проекта Visual Basic 6. Можно также использовать [преобразователь проектов Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246465), доступный на веб-сайте CodePlex, чтобы обновить проекты, созданные в предыдущих версиях Visual Studio.  
   
- [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)].  
+ [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="opening-the-convert-dialog-box"></a>Открытие диалогового окна "Преобразование"  
   

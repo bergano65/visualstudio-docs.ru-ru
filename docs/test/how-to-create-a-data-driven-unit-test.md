@@ -34,10 +34,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
 ms.openlocfilehash: 2eaf4aa44fdc1bec56bb513af54ea7db72dcf3db
-ms.lasthandoff: 04/04/2017
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Практическое руководство. Создание модульного теста, управляемого данными
@@ -63,7 +64,7 @@ ms.lasthandoff: 04/04/2017
   
 1.  Создайте источник данных, в котором содержатся значения, используемые в методе теста. Источник данных может быть любого типа, который зарегистрирован на компьютере, где выполняется тест.  
   
-2.  Добавьте закрытое поле <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> и открытое свойство `TestContext` в тестовый класс.  
+2.  Добавьте частное поле <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> и общее свойство `TestContext` в тестовый класс.  
   
 3.  Создайте метод модульного теста и добавьте к нему атрибут <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.  
   

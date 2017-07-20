@@ -31,19 +31,21 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 2831d252fbc9601e62c372ac3df7704e1dc65f2a
-ms.openlocfilehash: e59204427c8d7d1706ca6c85261733efdcbc440e
+ms.sourcegitcommit: 8bf0b097be929b30627e0f1139c6e0b145933ab4
+ms.openlocfilehash: ec2ae70312c7cb5f26630246046cadc7c210e1c2
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 05/26/2017
 
 ---
-# <a name="quick-actions"></a>Быстрые действия
+# Быстрые действия
+<a id="quick-actions" class="xliff"></a>
 
 [Быстрые действия](refactoring-code-generation-quick-actions.md#quick-actions) позволяют легко создавать и изменять код, а также выполнять его рефакторинг одним действием.  Хотя существует много быстрых действий, которые применяются непосредственно к C# или Visual Basic, некоторые из них применяются к обоим этим видам проектов.  Их можно применять, используя значок лампочки ![маленький значок лампочки](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") или сочетание клавиш **CTRL+.**, когда курсор находится на подходящей строке кода.
 
 Лампочка видна, если проблема подчеркнута красной волнистой линией и Visual Studio предлагает способ ее исправления. Например, если имеется ошибка, подчеркнутая красной волнистой линией, лампочка загорится, когда станут доступны пути исправления этой ошибки. Сторонние разработчики могут предоставить для любого языка пользовательскую диагностику и предложения, например в рамках SDK, и лампочки Visual Studio будут появляться на основе этих правил.  
 
-### <a name="to-see-a-light-bulb"></a>Отображение лампочки  
+### Отображение лампочки
+<a id="to-see-a-light-bulb" class="xliff"></a>  
 
 1. Во многих случаях лампочки самопроизвольно появляются при наведении указателя мыши в момент ошибки или в левом поле редактора при перемещении курсора в строку, которая содержит ошибку. Если вы видите красную волнистую линию, наведите на нее курсор, чтобы появилась лампочка. Также можно включить отображение лампочки при использовании мыши или клавиатуры для перехода к строке, где возникла проблема.  
 
@@ -51,15 +53,18 @@ ms.lasthandoff: 05/10/2017
 
    ![Лампочка с наведением указателя мыши](../ide/media/vs2015_lightbulb_hover.png "VS2017_LightBulb_Hover")  
 
-### <a name="to-see-potential-fixes"></a>Просмотр возможных исправлений  
+### Просмотр возможных исправлений
+<a id="to-see-potential-fixes" class="xliff"></a>  
 Щелкните стрелку вниз или ссылку "Показать возможные исправления", чтобы увидеть список быстрых действий, которые может предпринять лампочка.  
 
 ![Расширенная лампочка](../ide/media/vs2015_lightbulb_hover_expanded.png "VS2017_LightBulb_hover_expanded")
 
-## <a name="common-quick-actions"></a>Распространенные быстрые действия
+## Распространенные быстрые действия
+<a id="common-quick-actions" class="xliff"></a>
 Ниже приведены некоторые распространенные быстрые действия, которые применяются как к коду C#, так и к коду Visual Basic.
 
-### <a name="add-missing-casesdefault-caseboth"></a>Добавление отсутствующих элементов case и/или case по умолчанию
+### Добавление отсутствующих элементов case и/или case по умолчанию
+<a id="add-missing-casesdefault-caseboth" class="xliff"></a>
 При создании оператора `switch` на языке C# или оператора `Select Case` на Visual Basic можно использовать действие кода, чтобы автоматически добавить отсутствующие элементы case и/или оператор case по умолчанию.  Пустой оператор представлен ниже:
 
 ```CSharp
@@ -121,7 +126,8 @@ Select Case myEnum
 End Select
 ```
 
-### <a name="correct-misspelled-type"></a>Правильный тип с опечаткой
+### Правильный тип с опечаткой
+<a id="correct-misspelled-type" class="xliff"></a>
 Если вы случайно неправильно указали тип в Visual Studio, это быстрое действие автоматически исправит его.  Вы увидите эти элементы в меню лампочки в виде **"Изменить "*тип с опечаткой*" на "*правильный тип*"**.  Пример:
 
 ```CSharp
@@ -150,7 +156,8 @@ Function MyFunction as Integer
 End Function
 ```
 
-### <a name="remove-unnecessary-cast"></a>Удаление ненужного приведения
+### Удаление ненужного приведения
+<a id="remove-unnecessary-cast" class="xliff"></a>
 Если вы приводите тип к другому типу, которому приведение не требуется, быстрое действие **Удалить ненужное приведение** приведет к удалению приведения из кода.
 
 ```CSharp
@@ -173,7 +180,8 @@ Dim number as Integer = CType(3, Integer)
 Dim number as Integer = 3
 ```
 
-### <a name="replace-method-with-property--replace-property-with-method"></a>Замена метода на свойство или свойства на метод
+### Замена метода на свойство или свойства на метод
+<a id="replace-method-with-property--replace-property-with-method" class="xliff"></a>
 Эти быстрые действия позволяют преобразовать метод в свойство или наоборот.  В приведенном ниже примере показана замена метода на свойство.  Чтобы добиться обратного, просто инвертируйте разделы *Before* и *After*.
 
 ```CSharp
@@ -212,7 +220,8 @@ ReadOnly Property MyValue As Integer
 End Property
 ```
 
-### <a name="make-method-synchronous"></a>Превращение метода в синхронный
+### Превращение метода в синхронный
+<a id="make-method-synchronous" class="xliff"></a>
 При использовании ключевого слова `async`/`Async` для метода ожидается, что где-нибудь внутри этого метода также будет использоваться ключевое слово `await`/`Await`.  Однако, если это не так, отображается данное быстрое действие, позволяющее сделать метод синхронным, удалив ключевое слово `async`/`Async` и изменив тип возвращаемого значения.  Используйте параметр **Синхронизация метода** в меню быстрых действий.
 
 ```CSharp
@@ -245,7 +254,8 @@ Function MyAsyncMethod() As Integer
 End Function
 ```
 
-### <a name="make-method-asynchronous"></a>Превращение метода в асинхронный
+### Превращение метода в асинхронный
+<a id="make-method-asynchronous" class="xliff"></a>
 При использовании ключевого слова `await`/`Await` внутри метода предполагается, что сам метод помечен ключевым словом `async`/`Async`.  Однако, если это не так, отображается данное быстрое действие, позволяющее сделать метод асинхронным.  Используйте параметр **Make method/Function asynchronous** (Сделать метод/функцию асинхронными) в меню быстрых действий.
 
 ```CSharp
@@ -278,10 +288,12 @@ Async Function MyAsyncMethod() As Task(Of Integer)
 End Function
 ```
 
-### <a name="remove-unnecesary-usingsimports"></a>Удаление ненужных директив using/Import
+### Удаление ненужных директив using/Import
+<a id="remove-unnecesary-usingsimports" class="xliff"></a>
 Быстрое действие **Удалить ненужные директивы using/импорты** удалит все неиспользуемые операторы `using` и `Import` для текущего файла.  При выборе этого элемента неиспользованные директивы import пространства имен немедленно удаляются.
 
-### <a name="add-usingsimports-for-types-in-reference-assemblies-nuget-packages-or-other-types-in-your-solution"></a>Добавление директив using/Imports для типов в ссылочных сборках, пакетах NuGet или других типов в решении
+### Добавление директив using/Imports для типов в ссылочных сборках, пакетах NuGet или других типов в решении
+<a id="add-usingsimports-for-types-in-reference-assemblies-nuget-packages-or-other-types-in-your-solution" class="xliff"></a>
 При использовании типов, расположенных в других проектах вашего решения, автоматически появляется быстрое действие, но другие нужно включить на вкладке **Сервис > Параметры > C#** или **Basic > Дополнительно**:  
 
 * Предлагать using/import для типов в эталонных сборках
@@ -313,8 +325,9 @@ Imports System.Diagnostics
 Debug.WriteLine("Hello")
 ```
 
-### <a name="convert-to-interpolated-string"></a>Преобразовать в интерполированную строку
-[Интерполированные строки](/dotnet/articles/csharp/language-reference/keywords/interpolated-strings) позволяют легко выразить строки с внедренными переменными по аналогии с методом **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)**.  Это быстрое действие распознает использование сцепленных строк или оператора **String.Format** и переключается на использование интерполированной строки.
+### Преобразовать в интерполированную строку
+<a id="convert-to-interpolated-string" class="xliff"></a>
+[Интерполированные строки](/dotnet/csharp/language-reference/keywords/interpolated-strings) позволяют легко выразить строки с внедренными переменными по аналогии с методом **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)**.  Это быстрое действие распознает использование сцепленных строк или оператора **String.Format** и переключается на использование интерполированной строки.
 
 ```CSharp
 // Before
@@ -340,46 +353,54 @@ Dim num as Integer = 3
 Dim s As String = $"My string with {num} in the middle"
 ```
 
-### <a name="remove-merge-conflict-markers"></a>Удаление маркеров конфликтов слияния
+### Удаление маркеров конфликтов слияния
+<a id="remove-merge-conflict-markers" class="xliff"></a>
 Эти быстрые действия позволяют устранить конфликты слияния, "применяя изменения", то есть удаляя конфликтующие фрагменты кода и маркеры. (Доступно только в Visual Studio 2017 (предварительная версия 15.3)).
 
 ![Рефакторинг — разрешение конфликтов слияния](../ide/media/vside-refactoring-merge-conflicts.png)
 
-### <a name="add-null-checks-for-parameters"></a>Добавление проверки null для параметров
+### Добавление проверки null для параметров
+<a id="add-null-checks-for-parameters" class="xliff"></a>
 Это быстрое действие позволяет добавить в код проверку параметра на значение Null. (Доступно только в Visual Studio 2017 (предварительная версия 15.3)).
 
 ![Рефакторинг — добавление проверки на значение null](../ide/media/vside-refactoring-nullcheck.png)
 
-### <a name="constructor-generator-improvements"></a>Улучшения генератора конструкторов
+### Улучшения генератора конструкторов
+<a id="constructor-generator-improvements" class="xliff"></a>
 При создании конструктора это быстрое действие позволяет выбрать свойства или поля, которые нужно создать, или выбрать для создания конструктор с пустым телом. Также с его помощью можно добавить в существующий конструктор параметры от источника вызова. (Доступно только в Visual Studio 2017 (предварительная версия 15.3)).
 
 ![Рефакторинг — создание конструкторов](../ide/media/vside-refactoring-constructors.png)
 
-### <a name="remove-unused-variables"></a>Удаление неиспользуемых переменных
+### Удаление неиспользуемых переменных
+<a id="remove-unused-variables" class="xliff"></a>
 Это быстрое действие позволяет удалить объявленные переменные, которые нигде не используются. (Доступно только в Visual Studio 2017 (предварительная версия 15.3)).
 
 ![Рефакторинг — неиспользуемые переменные](../ide/media/vside-refactoring-unusedvars.png)
 
-### <a name="generate-overrides"></a>Создание переопределений
+### Создание переопределений
+<a id="generate-overrides" class="xliff"></a>
 Это быстрое действие позволяет создать в классе или структуре переопределение из пустой строки. Диалоговое окно **Выбор членов** позволяет выбрать элементы для переопределения. (Доступно только в Visual Studio 2017 (предварительная версия 15.3)).
 
 ![Рефакторинг — переопределения](../ide/media/vside-refactoring-overrides.png)
 
 ![Диалоговое окно "Рефакторинг — переопределение"](../ide/media/vside-refactoring-overrides-dialog.png)
 
-### <a name="change-base-for-numeric-literals"></a>Изменение основания для числовых литералов
+### Изменение основания для числовых литералов
+<a id="change-base-for-numeric-literals" class="xliff"></a>
 Это быстрое действие позволяет преобразовать числовой литерал в систему счисления с другим основанием. Например, можно перевести любое шестнадцатеричное число в двоичное. (Доступно только в Visual Studio 2017 (предварительная версия 15.3)).
 
 ![Рефакторинг — изменение основания](../ide/media/vside-refactoring-changebase1.png)
 
 ![Рефакторинг — изменение основания](../ide/media/vside-refactoring-changebase2.png)
 
-### <a name="insert-digit-separators-into-literals"></a>Добавление разделителей между цифрами в литералах
+### Добавление разделителей между цифрами в литералах
+<a id="insert-digit-separators-into-literals" class="xliff"></a>
 Это быстрое действие позволяет добавлять знаки-разделители в литеральные значения. (Доступно только в Visual Studio 2017 (предварительная версия 15.3)).
 
 ![Рефакторинг — изменение разделителей между цифрами](../ide/media/vside-refactoring-separators.png)
 
-### <a name="convert-if-construct-to-switch"></a>Преобразование конструкции **if** в конструкцию **switch**
+### Преобразование конструкции **if** в конструкцию **switch**
+<a id="convert-if-construct-to-switch" class="xliff"></a>
 Это быстрое действие позволяет преобразовать конструкцию **if-then-else** в конструкцию **switch**. (Доступно только в Visual Studio 2017 (предварительная версия 15.3)).
 
 ```CSharp
@@ -429,6 +450,7 @@ Select Case obj
 End Select
 ```
 
-# <a name="see-also"></a>См. также
+# См. также
+<a id="see-also" class="xliff"></a>
 * [Стили кода и быстрые действия](code-styles-and-quick-actions.md)
 

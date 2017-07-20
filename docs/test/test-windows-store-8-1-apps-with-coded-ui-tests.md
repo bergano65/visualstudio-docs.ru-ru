@@ -27,10 +27,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: b40df6e53321efa72081166a1c77d0f3accf914e
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 806c1b22718a26e02916ada853372df4f11fb6cd
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Тестирование приложений Windows UWP и приложений Магазина Windows 8.1 с помощью закодированных тестов пользовательского интерфейса
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/04/2017
   
 ## <a name="create-a-simple-windows-store-app"></a>Создание простого приложения Магазина Windows  
   
-1.  Чтобы выполнять закодированные тесты пользовательского интерфейса для XAML-приложения Магазина Windows, необходимо [настроить уникальное свойство автоматизации, определяющее каждый элемент управления](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md).  
+1.  Чтобы выполнять закодированные тесты ИП для XAML-приложения Магазина Windows, необходимо [настроить уникальное свойство автоматизации, определяющее каждый элемент управления](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md).  
   
      В меню **Сервис** выберите пункт **Параметры** и щелкните **Текстовый редактор**, выберите **XAML**и **Прочее**.  
   
@@ -311,7 +312,7 @@ ms.lasthandoff: 04/04/2017
   
 ## <a name="q--a"></a>Вопросы и ответы  
   
-#### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Вопрос. Почему я не вижу параметр для записи закодированного теста пользовательского интерфейса в диалоговом окне "Создать код" или "Закодированный тест пользовательского интерфейса"?**  
+#### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>В. Почему я не вижу параметр для записи закодированного теста ИП в диалоговом окне "Создать код" или "Закодированный тест пользовательского интерфейса"? **  
   
 **О**. Параметр записи не поддерживается для приложений Магазина Windows.  
   
@@ -334,7 +335,7 @@ ms.lasthandoff: 04/04/2017
   
 После создания проекта разработка теста остается прежней.  
   
-#### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Вопрос. Почему не следует изменять файл UIMap.Designer?**  
+#### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>В. Почему не следует изменять файл UIMap.Designer? **  
   
 **О**. Любые изменения кода, внесенные в файл UIMapDesigner.cs, будут перезаписываться каждый раз при создании кода с помощью построителя кодированных тестов ИП. Если требуется изменить записанный метод, необходимо скопировать его в файл UIMap.cs и переименовать. Файл UIMap.cs можно использовать для переопределения методов и свойств в файле UIMapDesigner.cs. Необходимо удалить ссылку на исходный метод в файле CodedUITest.cs и заменить ее именем переименованного метода.  
   

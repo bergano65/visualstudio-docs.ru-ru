@@ -32,13 +32,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 0dc9fed1e5fc5a827e836310175d558b14cd41b4
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: badbf6892698c6e35ce76500001839c7c9e6734a
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/30/2017
 
 ---
-# <a name="user-permissions-and-visual-studio"></a>Разрешения пользователей и Visual Studio
+# Разрешения пользователей и Visual Studio
+<a id="user-permissions-and-visual-studio" class="xliff"></a>
 Для обеспечения безопасности следует по возможности запускать Visual Studio от имени обычного пользователя.  
 
 > [!WARNING]
@@ -58,16 +60,18 @@ ms.lasthandoff: 04/05/2017
 ||Включение этапа регистрации при сборке проектов С++.|[Сведения об этапах настраиваемой сборки и событиях сборки](/cpp/ide/understanding-custom-build-steps-and-build-events)|  
 |Отладка|Отладка приложений с повышенными разрешениями.|[Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)|  
 ||Отладка приложений, выполняемых под другой учетной записью пользователя, например веб-сайтов ASP.NET.|[Отладка приложений ASP.NET и AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)|  
-||Отладка в зоне для приложений XAML-браузера (XBAP).|[Основное приложение WPF (PresentationHost.exe)](http://msdn.microsoft.com/Library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|  
+||Отладка в зоне для приложений XAML-браузера (XBAP).|[Основное приложение WPF (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|  
 ||Использование эмулятора для отладки проектов облачных служб для Microsoft Azure.|[Отладка облачной службы в Visual Studio](http://go.microsoft.com/fwlink/?LinkId=266725)|  
 ||Настройка межсетевого экрана для удаленной отладки.|[Удаленная отладка](../debugger/remote-debugging.md)|  
 |Средства производительности|Профилирование приложения.|[Руководство по профилированию производительности для начинающих](../profiling/beginners-guide-to-performance-profiling.md)|  
 |Развертывание|Развертывание веб-приложения в службах IIS на локальном компьютере.|[Развертывание веб-приложения ASP.NET у поставщика услуг размещения с использованием Visual Studio или Visual Web Developer: развертывание в IIS в качестве тестовой среды](http://go.microsoft.com/fwlink/?LinkId=266478)|
 
-## <a name="running-visual-studio-as-an-administrator"></a>Запуск Visual Studio от имени администратора  
+## Запуск Visual Studio от имени администратора
+<a id="running-visual-studio-as-an-administrator" class="xliff"></a>  
  Visual Studio можно запускать с правами администратора при каждом запуске интегрированной среды разработки или изменить ярлык приложения так, чтобы оно всегда запускалось с правами администратора. Дополнительные сведения см. в справке Windows.  
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8debuggerincludeswin8mdmd-includewin81debuggerincludeswin81mdmd-includewinserver8debuggerincludeswinserver8mdmd-or-includewinblueserver2ideincludeswinblueserver2mdmd"></a>Запуск Visual Studio с правами администратора в [!INCLUDE[win8](../debugger/includes/win8_md.md)], [!INCLUDE[win81](../debugger/includes/win81_md.md)], [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] и [!INCLUDE[winblue_server_2](../ide/includes/winblue_server_2_md.md)]  
+#### Запуск Visual Studio с правами администратора в [!INCLUDE[win8](../debugger/includes/win8_md.md)], [!INCLUDE[win81](../debugger/includes/win81_md.md)], [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] и [!INCLUDE[winblue_server_2](../ide/includes/winblue_server_2_md.md)]
+<a id="to-run-visual-studio-with-administrative-permissions-on-includewin8debuggerincludeswin8mdmd-includewin81debuggerincludeswin81mdmd-includewinserver8debuggerincludeswinserver8mdmd-or-includewinblueserver2ideincludeswinblueserver2mdmd" class="xliff"></a>  
 
 1.  На **начальном экране** введите **Visual Studio**. Вы увидите установленные версии Visual Studio.  
 
@@ -75,7 +79,8 @@ ms.lasthandoff: 04/05/2017
 
      После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)**.  
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7debuggerincludeswin7mdmd-or-includewinsvr08r2debuggerincludeswinsvr08r2mdmd"></a>Запуск Visual Studio с правами администратора в [!INCLUDE[win7](../debugger/includes/win7_md.md)] и [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]  
+#### Запуск Visual Studio с правами администратора в [!INCLUDE[win7](../debugger/includes/win7_md.md)] и [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]
+<a id="to-run-visual-studio-with-administrative-permissions-on-includewin7debuggerincludeswin7mdmd-or-includewinsvr08r2debuggerincludeswinsvr08r2mdmd" class="xliff"></a>  
 
 1.  Нажмите кнопку **Пуск** и выберите **Все программы**.  
 
@@ -83,7 +88,8 @@ ms.lasthandoff: 04/05/2017
 
      После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)**.  
 
-## <a name="see-also"></a>См. также  
+## См. также
+<a id="see-also" class="xliff"></a>  
  [Перенос, миграция и обновление проектов Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)   
  [Установка Visual Studio](../install/install-visual-studio.md)
 

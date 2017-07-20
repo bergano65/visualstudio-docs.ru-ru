@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 1a51a8dbf28be35febf4a0954a997e542ffd0f09
 ms.openlocfilehash: a05e0509ec092f810e0990fbc838707d126595e1
-ms.lasthandoff: 02/22/2017
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Практическое руководство. Использование пакета SDK визуализатора параллелизма для создания маркеров
@@ -97,7 +98,7 @@ ms.lasthandoff: 02/22/2017
   
      ![Визуализатор параллелизма с тремя пользовательскими последовательностями маркеров](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")  
   
-### <a name="to-use-visual-basic-or-c"></a>Использование Visual Basic или C## #
+### <a name="to-use-visual-basic-or-c"></a>Использование Visual Basic или C# #
   
 1.  Добавьте поддержку пакета SDK визуализатора параллелизма в ваше приложение. Дополнительные сведения см. в статье [Concurrency Visualizer SDK](../profiling/concurrency-visualizer-sdk.md) (Пакет SDK визуализатора параллелизма).  
   
@@ -112,7 +113,7 @@ ms.lasthandoff: 02/22/2017
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
     ```  
   
-3.  Добавьте код для создания трех интервалов в последовательностях маркеров по умолчанию и записи флага, сообщения и оповещения (по одному для каждого диапазона). Можно создать объект <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> путем вызова статического метода [EnterSpan](assetId:///EnterSpan?qualifyHint=False&autoUpgrade=True). Для записи в последовательности по умолчанию используйте статические методы записи класса <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.  
+3.  Добавьте код для создания трех интервалов в последовательностях маркеров по умолчанию и записи флага, сообщения и оповещения (по одному для каждого диапазона). Объект <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> можно создать путем вызова статического метода [EnterSpan](assetId:///EnterSpan?qualifyHint=False&autoUpgrade=True). Для записи ряда по умолчанию используйте статические методы записи класса <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.  
   
     ```VB  
   
@@ -157,7 +158,7 @@ ms.lasthandoff: 02/22/2017
   
      ![Визуализатор параллелизма с маркерами и оповещениями](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")  
   
-5.  Добавьте код для создания пользовательских последовательностей маркеров с помощью статического метода <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A>. Класс <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> содержит методы для создания интервалов и записи флагов, сообщений и оповещений.  
+5.  Добавьте код для создания ряда маркеров клиента с помощью статического метода <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A>. Класс <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> содержит методы для создания диапазонов и флагов записи, сообщений и предупреждения.  
   
     ```VB  
   

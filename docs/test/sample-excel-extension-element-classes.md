@@ -27,19 +27,20 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
 ms.openlocfilehash: 396960f31c60318833b8171a4e17595db6ff9fca
-ms.lasthandoff: 04/04/2017
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="sample-excel-extension-element-classes"></a>Пример расширения Excel. Классы Element
-Расширение использует классы, которые являются производными от класса <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> и представляют элементы управления типа "Лист" и "Ячейка" в приложении [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)].  
+Расширение использует классы, которые являются производными от класса <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> и представляют элементы управления "Лист" и "Ячейка" в приложении [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)].  
   
  Базовым элементом для данного расширения является `ExcelElement`. От этого элемента наследуются классы `ExcelWorksheetElement` и `ExcelCellElement`.  
   
 ## <a name="element-and-elementinformation-classes"></a>Классы Element и ElementInformation  
- `Element` является базовым классом для всех элементов пользовательского интерфейса для расширения Excel; он наследуется от класса <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>. `ElementInformation` является базовым классом для классов информации об элементах в примере; он не содержит членов.  
+ `Element` является базовым классом для всех элементов пользовательского интерфейса для расширения Excel; он является производным от класса <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>. `ElementInformation` является базовым классом для классов информации об элементах в примере; он не содержит членов.  
   
 #### <a name="simple-properties-and-methods"></a>Простые свойства и методы  
  Эти члены возвращают простые значения, например значение свойства `Name` или `ClassName`; код этих членов является простым и удобным для восприятия. Некоторые значения возвращаются с помощью класса `Utility`, который рассматривается ниже. Прочие члены возвращают значение `null`, так как они не имеют отношения к этому примеру расширения. Два члена имеют большее значение по сравнению с остальными: свойство <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A> и метод <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.CacheProperties%2A>.  
@@ -53,7 +54,7 @@ ms.lasthandoff: 04/04/2017
 ## <a name="worksheetelement-and-worksheetinformation-classes"></a>Классы WorksheetElement и WorksheetInformation  
  Класс `WorksheetElement` представляет лист Excel в платформе тестирования; он наследуется от базового класса `Element`. Для предоставления конкретной информации об объекте листа Excel переопределяются три свойства: <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.ClassName%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.ControlTypeName%2A> и <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.Name%2A>.  
   
- К этому классу также применяется атрибут <xref:System.Runtime.InteropServices.ComVisibleAttribute>, чтобы сделать класс доступным для модели COM.  
+ К этому классу также применяется атрибут <xref:System.Runtime.InteropServices.ComVisibleAttribute>, чтобы сделать класс видимым для модели COM.  
   
  Класс `WorksheetInformation` представляет информацию о листе Excel. У него имеется только один член — свойство `SheetName`, однако этого достаточно для данного примера.  
   

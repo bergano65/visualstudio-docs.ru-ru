@@ -41,13 +41,14 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 1e73cc14de8a94b2e2ce631834e36b6bc30fa7a6
+ms.contentlocale: ru-ru
 ms.lasthandoff: 02/22/2017
 
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>How to: Add or Remove References By Using the Reference Manager
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Практическое руководство. Добавление и удаление ссылок с помощью диспетчера ссылок
 Диалоговое окно **Диспетчер ссылок** позволяет добавлять ссылки на компоненты, которые разработали вы, корпорация Майкрософт или другая организация, а также управлять этими ссылками. При разработке универсального приложения Windows ваш проект автоматически ссылается на все правильные библиотеки DLL пакета SDK Windows. При разработке приложения .NET ваш проект автоматически ссылается на mscorlib.dll. Некоторые API .NET представлены в компонентах, которые необходимо добавить вручную. Ссылки на компоненты COM или пользовательские компоненты необходимо добавить вручную.  
 
 ## <a name="adding-and-removing-a-reference"></a>Добавление и удаление ссылки  

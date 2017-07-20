@@ -13,9 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: HT
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 852304b9111277ecf951e737f839acf3d9abec45
+ms.contentlocale: ru-ru
 
 ---
 Приложение обозревателя XAML (XBAP)

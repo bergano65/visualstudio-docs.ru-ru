@@ -32,16 +32,19 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 6b0b95bfd2112383229c6a36ee7b9c6cdab827eb
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 83faa2ad32073c4133295953afa6259e88eee2d5
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/30/2017
 
 ---
-# <a name="how-to-save-and-open-files-with-encoding"></a>Практическое руководство. Сохранение и открытие файлов с использованием определенной кодировки
+# Практическое руководство. Сохранение и открытие файлов с использованием определенной кодировки
+<a id="how-to-save-and-open-files-with-encoding" class="xliff"></a>
 Вы можете сохранять файлы с определенной кодировкой для поддержки языков с двунаправленным письмом. Можно также указать кодировку при открытии файла, чтобы система Visual Studio отобразила его правильно.  
   
-### <a name="to-save-a-file-with-encoding"></a>Сохранение файла с кодировкой  
+### Сохранение файла с кодировкой
+<a id="to-save-a-file-with-encoding" class="xliff"></a>  
   
 1.  В меню **Файл** выберите **Сохранить файл как** и затем нажмите кнопку раскрывающегося списка рядом с кнопкой **Сохранить**.  
   
@@ -55,7 +58,8 @@ ms.lasthandoff: 02/22/2017
   
      Если вы хотите работать с файлом, имеющим определенную кодировку, можно сообщить Visual Studio использовать эту кодировку при открытии файла. Конкретный метод зависит от того, является ли файл частью проекта.  
   
-### <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>Открытие файла с кодировкой, являющегося частью проекта  
+### Открытие файла с кодировкой, являющегося частью проекта
+<a id="to-open-an-encoded-file-that-is-part-of-a-project" class="xliff"></a>  
   
 1.  В **обозревателе решений** щелкните файл правой кнопкой мыши и выберите команду **Открыть с помощью**.  
   
@@ -65,7 +69,8 @@ ms.lasthandoff: 02/22/2017
   
 3.  В диалоговом окне **Кодировка** выберите кодировку, которую должен использовать редактор.  
   
-### <a name="to-open-an-encoded-file-that-is-not-part-of-a-project"></a>Открытие файла с кодировкой, не являющегося частью проекта  
+### Открытие файла с кодировкой, не являющегося частью проекта
+<a id="to-open-an-encoded-file-that-is-not-part-of-a-project" class="xliff"></a>  
   
 1.  В меню **Файл** наведите указатель мыши на пункт **Открыть**, выберите элемент **Файл** или **Файл из Интернета**, а затем выберите нужный файл.  
   
@@ -73,6 +78,7 @@ ms.lasthandoff: 02/22/2017
   
 3.  Выполните шаги 2 и 3 из предыдущей процедуры.  
   
-## <a name="see-also"></a>См. также  
- [Кодировка и глобализация Windows Forms](http://msdn.microsoft.com/Library/22e8965d-a712-42b3-8167-3ee346bd70f9)   
+## См. также
+<a id="see-also" class="xliff"></a>  
+ [Кодировка и глобализация Windows Forms](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)   
  [Глобализация и локализация приложений](../ide/globalizing-and-localizing-applications.md)

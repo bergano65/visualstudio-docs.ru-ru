@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 9885f3cff76b9c5e1d053550be80c4b68cf9de1b
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 2c4cb515c4442b3c48c42f47f9116e9ff536a5f4
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Создание управляемого данными закодированного теста пользовательского интерфейса
@@ -135,7 +136,7 @@ ms.lasthandoff: 02/22/2017
   
      Теперь, когда у нас есть созданный набор данных, следует привязать данные к тесту.  
   
-#### <a name="step-3--add-data-source-binding"></a>Шаг 3. Добавление привязки источника данных  
+#### <a name="step-3---add-data-source-binding"></a>Шаг 3. Добавление привязки источника данных  
   
 1.  Чтобы привязать источник данных, добавьте атрибут `DataSource` в существующий атрибут `[TestMethod]`, который находится сразу над методом теста.  
   
@@ -163,7 +164,7 @@ ms.lasthandoff: 02/22/2017
   
      Далее мы будем настраивать тест для использования значений из файла источника данных.  
   
-#### <a name="step-4--use-the-data-in-the-coded-ui-test"></a>Шаг 4. Использование данных в закодированном тесте пользовательского интерфейса  
+#### <a name="step-4---use-the-data-in-the-coded-ui-test"></a>Шаг 4. Использование данных в закодированном тесте пользовательского интерфейса  
   
 1.  Добавьте `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` в верхнюю часть файла CodedUITest.cs:  
   
@@ -212,7 +213,7 @@ ms.lasthandoff: 02/22/2017
   
 3.  Сохраните решение.  
   
-#### <a name="step-5--run-the-data-driven-test"></a>Шаг 5. Запуск управляемого данными теста  
+#### <a name="step-5---run-the-data-driven-test"></a>Шаг 5. Запуск управляемого данными теста  
   
 1.  Убедитесь, что тест теперь управляется данными, запустив его еще раз.  
   

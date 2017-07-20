@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 60d05761993a4bd7547d83274e103de1b5c30b34
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 44110390bcddc67d86dcfcc81c2d5961e346ccf7
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Анализ использования сети для приложений UWP
@@ -40,7 +41,7 @@ ms.lasthandoff: 03/07/2017
  Средство «Сеть» поддерживает только приложения универсальной платформы для Windows. Другие платформы в настоящее время не поддерживаются.  
   
 > [!NOTE]
->  Более полное описание средства "Сеть" см. в разделе [Introducing Visual Studio’s network tool](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx) (Введение в средство "Сеть" Visual Studio).  
+>  Более полное описание средства "Сеть" см. в разделе [Введение в средство "Сеть" Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx).  
   
 ## <a name="collecting-network-tool-data"></a>Сбор данных средством «Сеть»  
  Средство **Сеть** следует запускать с открытым проектом Visual Studio на компьютере Visual Studio.  
@@ -49,7 +50,7 @@ ms.lasthandoff: 03/07/2017
   
 2.  В меню выберите **Отладка, Профилировщик производительности**. Выберите **Сеть** и нажмите кнопку **Запуск**.  
   
-3.  Средство «Сеть» начнет сбор HTTP-трафика вашего приложения.  
+3.  Средство "Сеть" начнет сбор HTTP-трафика вашего приложения.  
   
      При запуске приложения в представлении сводки на левой панели отобразится список записанных HTTP-операций. Выберите элемент в представлении сводки, чтобы получить дополнительные сведения на панели сведений в правой области.  
   
@@ -92,4 +93,4 @@ ms.lasthandoff: 03/07/2017
 ## <a name="see-also"></a>См. также  
  [Running Profiling Tools With or Without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
  [Visual Studio blog: Introducing Visual Studio’s network inspector](http://go.microsoft.com/fwlink/?LinkId=535022)  (Запуск средств профилирования с отладчиком или без него) (Блог Visual Studio: знакомство с инспектором сети Visual Studio)  
- [Channel 9 Video: VS Diagnostics tools – New Network Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206) (Видео на Channel 9: Средства диагностики VS — новый профилировщик сети)
+ [Channel 9 Video: VS Diagnostics tools – New Network Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206) (Видео на Channel 9: средства диагностики VS — новый профилировщик сети)

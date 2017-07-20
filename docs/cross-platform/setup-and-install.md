@@ -27,10 +27,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: b01ab828f06a13f3f8e4c7b9c72e2f05da409840
-ms.openlocfilehash: 00c6e3dc4d7d1ed56d8cb196aad466cdeb7feb50
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: d353d8a0a41ad487191b79aa68f26585cf9902b4
 ms.contentlocale: ru-ru
-ms.lasthandoff: 04/14/2017
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="setup-and-install"></a>Настройка и установка
@@ -94,7 +94,7 @@ ms.lasthandoff: 04/14/2017
   
 ##  <a name="mac"></a> Настройка Mac (Apple ID, Xcode и Xamarin)  
   
-1.  Создайте бесплатный идентификатор Apple ID на сайте [https://appleid.apple.com](https://appleid.apple.com/) , если у вас его нет. Это необходимо для установки приложения Xcode и входа в него.  
+1.  Создайте бесплатный идентификатор Apple ID на сайте [https://appleid.apple.com](https://appleid.apple.com/), если у вас его нет. Это необходимо для установки приложения Xcode и входа в него.  
   
 2.  Скачайте и установите Xcode на странице  [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/)и добавьте ваш идентификатор Apple ID, как описано в разделе [Добавление учетной записи для XCode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).  
   

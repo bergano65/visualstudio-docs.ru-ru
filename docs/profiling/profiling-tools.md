@@ -30,10 +30,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 0d129b4820944f5717c63243cb8550bc4fed3385
-ms.openlocfilehash: 380b65540d8f5c6ea6d8a8adf1f3c5575f5dd9dc
-ms.lasthandoff: 03/20/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 09c33f3cc331af03659922e178e4089f177132de
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="profiling-tools"></a>Средства профилирования
@@ -72,7 +73,7 @@ ms.lasthandoff: 03/20/2017
 ## <a name="perftips"></a>PerfTips  
  ![DiagPerfTips](../profiling/media/diagperftips.png "DiagPerfTips")  
   
- При остановке выполнения отладчика на точке останова или при завершения шага в окне редактора отображается время, прошедшее от предыдущей точки останова до прерывания. Эти подсказки [PerfTips](../profiling/perftips.md) позволяют проводить мониторинг и анализ производительности приложения во время отладки. **PerfTips** доступны в классических приложениях, универсальных приложениях Windows и приложениях ASP.NET.
+ При остановке выполнения отладчика на точке останова или при завершения шага в окне редактора отображается время, прошедшее от предыдущей точки останова до прерывания. Эти [PerfTips](../profiling/perftips.md) позволяют проводить мониторинг и анализ производительности приложения во время отладки. **PerfTips** доступны в классических приложениях, универсальных приложениях Windows и приложениях ASP.NET.
 
 ## <a name="performance-explorer"></a>Обозреватель производительности  
  ![PerfTools](../profiling/media/perftools.png "PerfTools")  
@@ -98,7 +99,7 @@ ms.lasthandoff: 03/20/2017
  [IntelliTrace](../debugger/intellitrace.md) позволяет записывать определенные события, проверять данные в окне **Локальные** во время событий отладчика и вызовов функций, а также отлаживать трудновоспроизводимые ошибки.  IntelliTrace является главным образом средством отладки, однако оно также предоставляет сведения, которые можно использовать для анализа производительности. Это средство можно использовать только в Visual Studio Enterprise с классическими приложениями, универсальными приложениями Windows и приложениями ASP.NET C#. IntelliTrace можно открыть из окна **Средства диагностики** во время отладки (**Отладка / Windows / Показать средства диагностики**).  
   
 ## <a name="profiling-in-production"></a>Профилирование в рабочей среде  
- Для сбора сведений о профиле ЦП мы рекомендуем выполнять профилирование в рабочей среде [из командной строки с помощью vsperf.exe](../profiling/using-the-profiling-tools-from-the-command-line.md). В целях поддержки удаленного профилирования в службе приложений Azure профилирование выполняется через [обозреватель серверов или портал Kudu](https://azure.microsoft.com/en-us/blog/remote-profiling-support-in-azure-app-service/).  
+ Для сбора сведений о профиле ЦП профилирование в рабочей среде рекомендуется выполнять из [командной строки с помощью vsperf.exe](../profiling/using-the-profiling-tools-from-the-command-line.md) . В целях поддержки удаленного профилирования в службе приложений Azure профилирование выполняется через [обозреватель серверов или портал Kudu](https://azure.microsoft.com/en-us/blog/remote-profiling-support-in-azure-app-service/).  
   
 ## <a name="which-tool-should-i-use"></a>Какие средства следует использовать?  
  Ниже приведена таблица со списком различных средств, предлагаемых в Visual Studio, и различных типов проектов, в которых эти средства можно использовать.  
@@ -113,7 +114,7 @@ ms.lasthandoff: 03/20/2017
 |[Обозреватель производительности](../profiling/performance-explorer.md)|да|нет|да (нет для ASP.NET Core)|  
 |[IntelliTrace](../debugger/intellitrace.md)|Только .NET Enterprise|Только .NET Enterprise|Только .NET Enterprise|
 |[Использование сети](../profiling/network-usage.md)|нет|да|нет| 
-|[Скорость реагирования пользовательского интерфейса HTML](../profiling/html-ui-responsiveness.md)|нет|да для HTML, нет для XAML|нет|  
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|нет|да для HTML, нет для XAML|нет|  
 |[Память JavaScript](../profiling/javascript-memory.md)|нет|да для HTML, нет для XAML|нет|  
   
 ## <a name="see-also"></a>См. также  

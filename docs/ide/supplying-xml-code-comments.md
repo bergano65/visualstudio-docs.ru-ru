@@ -33,20 +33,23 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: d4772671e61d2225a97ef5e36f24e6f8a4a45c35
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 9e45ed816d117a21ca680e101e0beaabb41da6d3
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/30/2017
 
 ---
-# <a name="supplying-xml-code-comments"></a>Создание XML-примечаний к коду
+# Создание XML-примечаний к коду
+<a id="supplying-xml-code-comments" class="xliff"></a>
 Примечания в файлах исходного кода можно сделать доступными в виде IntelliSense. При добавлении параметра /doc в командную строку компилятора Visual Basic, C# или C++ создается XML-файл, который служит основой для документации IntelliSense.  
   
- Дополнительные сведения о документировании кода в Visual Basic см. в разделе [Практическое руководство. Создание XML-документации](http://msdn.microsoft.com/Library/27b5b06c-09b9-496a-8245-f9542d846230).  
+ Дополнительные сведения о документировании кода в Visual Basic см. в разделе [Практическое руководство. Создание XML-документации](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation).  
   
  Дополнительные сведения о документировании кода в C# см. в разделе [Комментарии XML-документации](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).  
   
  Дополнительные сведения о документировании кода в C++ см. в разделах [Комментарии](/cpp/cpp/comments-cpp) и [XML-документация](/cpp/ide/xml-documentation-visual-cpp).  
   
-## <a name="see-also"></a>См. также  
+## См. также
+<a id="see-also" class="xliff"></a>  
  [Использование технологии IntelliSense](../ide/using-intellisense.md)
