@@ -28,11 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 855dbb26932fbd1f5594c2b8714eac873d6f0408
-ms.openlocfilehash: cc55f091d91e98d82a9b4f2b51d2ff4da1936a9b
+ms.translationtype: HT
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 6b8097dca52bbc0ef867938841713df0c9018718
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/19/2017
+ms.lasthandoff: 07/19/2017
 
 ---
 # <a name="introduction-to-wpf"></a>Введение в WPF
@@ -45,7 +45,7 @@ ms.lasthandoff: 05/19/2017
  Этот обзор предназначен для новичков: в нем рассматриваются ключевые возможности и понятия WPF.  
   
 ##  <a name="Programming_with_WPF"></a> Программирование с помощью WPF  
- WPF существует в виде подмножества типов .NET Framework, которые по большей части находятся в пространстве имен <xref:System.Windows>. Если ранее вы создавали приложения с помощью .NET Framework, используя управляемые технологии, такие как ASP.NET и Windows Forms, основные принципы программирования с помощью WPF должны быть вам знакомы: вы создаете экземпляры классов, задаете свойства, вызываете методы и обрабатываете события — все это с использованием своего любимого языка программирования .NET, например C# или Visual Basic.  
+ WPF существует в виде подмножества типов .NET Framework, которые по большей части находятся в пространстве имен <xref:System.Windows> . Если ранее вы создавали приложения с помощью .NET Framework, используя управляемые технологии, такие как ASP.NET и Windows Forms, основные принципы программирования с помощью WPF должны быть вам знакомы: вы создаете экземпляры классов, задаете свойства, вызываете методы и обрабатываете события — все это с использованием своего любимого языка программирования .NET, например C# или Visual Basic.  
   
  WPF включает в себя дополнительные конструкции программирования, которые расширяют возможности свойств и событий: [свойства зависимостей](https://msdn.microsoft.com/en-us/library/ms752914\(v=vs.100\).aspx) и [перенаправленные события](https://msdn.microsoft.com/en-us/library/ms742806\(v=vs.100\).aspx).  
   
@@ -77,7 +77,7 @@ ms.lasthandoff: 05/19/2017
 </Window>  
 ```  
   
- Этот код XAML определяет окно и кнопку с помощью элементов `Window` и `Button` соответственно. Каждый элемент настраивается с помощью атрибутов, например атрибута `Window` элемента `Title` , определяющего текст заголовка окна. Во время выполнения WPF преобразует элементы и атрибуты, определенные в разметке, в экземпляры классов WPF. Например, элемент `Window` преобразуется в экземпляр класса <xref:System.Windows.Window>, свойство <xref:System.Windows.Window.Title%2A> которого является значением атрибута `Title`.  
+ Этот код XAML определяет окно и кнопку с помощью элементов `Window` и `Button` соответственно. Каждый элемент настраивается с помощью атрибутов, например атрибута `Window` элемента `Title` , определяющего текст заголовка окна. Во время выполнения WPF преобразует элементы и атрибуты, определенные в разметке, в экземпляры классов WPF. Например, элемент `Window` преобразуется в экземпляр класса <xref:System.Windows.Window> , свойство <xref:System.Windows.Window.Title%2A> которого является значением атрибута `Title` .  
   
  На рисунке ниже показан пользовательский интерфейс, который определяется кодом XAML из предыдущего примера.  
   
@@ -154,7 +154,7 @@ End Namespace
   
 ```  
   
- В этом примере в коде программной части реализован класс, производный от класса <xref:System.Windows.Window>. С помощью атрибута `x:Class` разметка связывается с классом в коде программной части. Метод `InitializeComponent` вызывается из конструктора класса кода программной части для слияния пользовательского интерфейса, определенного в разметке, с классом кода программной части. (Метод `InitializeComponent` создается автоматически при сборке приложения, поэтому реализовывать его вручную не нужно.) Сочетание `x:Class` и `InitializeComponent` обеспечивает правильную инициализацию реализации при ее создании. Класс кода программной части также реализует обработчик событий <xref:System.Windows.Controls.Primitives.ButtonBase.Click> кнопки. При нажатии на кнопку обработчик событий выводит окно сообщения, вызывая метод <xref:System.Windows.MessageBox.Show%2A?displayProperty=fullName>.  
+ В этом примере в коде программной части реализован класс, производный от класса <xref:System.Windows.Window> . С помощью атрибута `x:Class` разметка связывается с классом в коде программной части. Метод `InitializeComponent` вызывается из конструктора класса кода программной части для слияния пользовательского интерфейса, определенного в разметке, с классом кода программной части. (Метод `InitializeComponent` создается автоматически при сборке приложения, поэтому реализовывать его вручную не нужно.) Сочетание `x:Class` и `InitializeComponent` обеспечивает правильную инициализацию реализации при ее создании. Класс кода программной части также реализует обработчик событий <xref:System.Windows.Controls.Primitives.ButtonBase.Click> кнопки. При нажатии на кнопку обработчик событий выводит окно сообщения, вызывая метод <xref:System.Windows.MessageBox.Show%2A?displayProperty=fullName> .  
   
  На рисунке ниже показан результат нажатия на кнопку.  
   
@@ -163,36 +163,36 @@ End Namespace
 ##  <a name="Controls"></a> Элементы управления  
  Возможности взаимодействия с пользователем, обеспечиваемые моделью приложения, реализуются с помощью сконструированных элементов управления. В WPF «элемент управления» — это общий термин, который относится к категории классов WPF, размещаемых в окне или на странице, имеющих пользовательский интерфейс и реализующих некоторое поведение.  
   
- Более подробную информацию см. в разделе [Элементы управления](http://msdn.microsoft.com/Library/3f255a8a-35a8-4712-9065-472ff7d75599).  
+ Более подробную информацию см. в разделе [Элементы управления](/dotnet/framework/wpf/controls/index).  
   
 ### <a name="wpf-controls-by-function"></a>Функциональная классификация элементов управления WPF  
  Ниже перечислены встроенные элементы управления WPF.  
   
--   **Кнопки** : <xref:System.Windows.Controls.Button> и <xref:System.Windows.Controls.Primitives.RepeatButton>.  
+-   **Кнопки**: <xref:System.Windows.Controls.Button> и <xref:System.Windows.Controls.Primitives.RepeatButton>.  
   
--   **Вывод данных**: <xref:System.Windows.Controls.DataGrid>, <xref:System.Windows.Controls.ListView> и <xref:System.Windows.Controls.TreeView>.  
+-   **Вывод данных**: <xref:System.Windows.Controls.DataGrid>, <xref:System.Windows.Controls.ListView>и <xref:System.Windows.Controls.TreeView>.  
   
 -   **Вывод и выбор дат**: <xref:System.Windows.Controls.Calendar> и <xref:System.Windows.Controls.DatePicker>.  
   
--   **Диалоговые окна**: <xref:Microsoft.Win32.OpenFileDialog>, <xref:System.Windows.Controls.PrintDialog> и <xref:Microsoft.Win32.SaveFileDialog>.  
+-   **Диалоговые окна**: <xref:Microsoft.Win32.OpenFileDialog>, <xref:System.Windows.Controls.PrintDialog>и <xref:Microsoft.Win32.SaveFileDialog>.  
   
 -   **Рукописный ввод**: <xref:System.Windows.Controls.InkCanvas> и <xref:System.Windows.Controls.InkPresenter>.  
   
--   **Документы**: <xref:System.Windows.Controls.DocumentViewer>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, <xref:System.Windows.Controls.FlowDocumentReader>, <xref:System.Windows.Controls.FlowDocumentScrollViewer> и <xref:System.Windows.Controls.StickyNoteControl>.  
+-   **Документы**: <xref:System.Windows.Controls.DocumentViewer>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, <xref:System.Windows.Controls.FlowDocumentReader>, <xref:System.Windows.Controls.FlowDocumentScrollViewer>и <xref:System.Windows.Controls.StickyNoteControl>.  
   
--   **Ввод**: <xref:System.Windows.Controls.TextBox>, <xref:System.Windows.Controls.RichTextBox> и <xref:System.Windows.Controls.PasswordBox>.  
+-   **Ввод**: <xref:System.Windows.Controls.TextBox>, <xref:System.Windows.Controls.RichTextBox>и <xref:System.Windows.Controls.PasswordBox>.  
   
--   **Макет**: <xref:System.Windows.Controls.Border>, <xref:System.Windows.Controls.Primitives.BulletDecorator>, <xref:System.Windows.Controls.Canvas>, <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.Expander>, <xref:System.Windows.Controls.Grid>, <xref:System.Windows.Controls.GridView>, <xref:System.Windows.Controls.GridSplitter>, <xref:System.Windows.Controls.GroupBox>, <xref:System.Windows.Controls.Panel>, <xref:System.Windows.Controls.Primitives.ResizeGrip>, <xref:System.Windows.Controls.Separator>, <xref:System.Windows.Controls.Primitives.ScrollBar>, <xref:System.Windows.Controls.ScrollViewer>, <xref:System.Windows.Controls.StackPanel>, <xref:System.Windows.Controls.Primitives.Thumb>, <xref:System.Windows.Controls.Viewbox>, <xref:System.Windows.Controls.VirtualizingStackPanel>, <xref:System.Windows.Window> и <xref:System.Windows.Controls.WrapPanel>.  
+-   **Макет**: <xref:System.Windows.Controls.Border>, <xref:System.Windows.Controls.Primitives.BulletDecorator>, <xref:System.Windows.Controls.Canvas>, <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.Expander>, <xref:System.Windows.Controls.Grid>, <xref:System.Windows.Controls.GridView>, <xref:System.Windows.Controls.GridSplitter>, <xref:System.Windows.Controls.GroupBox>, <xref:System.Windows.Controls.Panel>, <xref:System.Windows.Controls.Primitives.ResizeGrip>, <xref:System.Windows.Controls.Separator>, <xref:System.Windows.Controls.Primitives.ScrollBar>, <xref:System.Windows.Controls.ScrollViewer>, <xref:System.Windows.Controls.StackPanel>, <xref:System.Windows.Controls.Primitives.Thumb>, <xref:System.Windows.Controls.Viewbox>, <xref:System.Windows.Controls.VirtualizingStackPanel>, <xref:System.Windows.Window>и <xref:System.Windows.Controls.WrapPanel>.  
   
--   **Мультимедиа**: <xref:System.Windows.Controls.Image>, <xref:System.Windows.Controls.MediaElement> и <xref:System.Windows.Controls.SoundPlayerAction>.  
+-   **Мультимедиа**: <xref:System.Windows.Controls.Image>, <xref:System.Windows.Controls.MediaElement>и <xref:System.Windows.Controls.SoundPlayerAction>.  
   
--   **Меню**: <xref:System.Windows.Controls.ContextMenu>, <xref:System.Windows.Controls.Menu> и <xref:System.Windows.Controls.ToolBar>.  
+-   **Меню**: <xref:System.Windows.Controls.ContextMenu>, <xref:System.Windows.Controls.Menu>и <xref:System.Windows.Controls.ToolBar>.  
   
--   **Навигация**: <xref:System.Windows.Controls.Frame>, <xref:System.Windows.Documents.Hyperlink>, <xref:System.Windows.Controls.Page>, <xref:System.Windows.Navigation.NavigationWindow> и <xref:System.Windows.Controls.TabControl>.  
+-   **Навигация**: <xref:System.Windows.Controls.Frame>, <xref:System.Windows.Documents.Hyperlink>, <xref:System.Windows.Controls.Page>, <xref:System.Windows.Navigation.NavigationWindow>и <xref:System.Windows.Controls.TabControl>.  
   
--   **Выбор**: <xref:System.Windows.Controls.CheckBox>, <xref:System.Windows.Controls.ComboBox>, <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.RadioButton> и <xref:System.Windows.Controls.Slider>.  
+-   **Выбор**: <xref:System.Windows.Controls.CheckBox>, <xref:System.Windows.Controls.ComboBox>, <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.RadioButton>и <xref:System.Windows.Controls.Slider>.  
   
--   **Информирование пользователя**: <xref:System.Windows.Controls.AccessText>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.Primitives.Popup>, <xref:System.Windows.Controls.ProgressBar>, <xref:System.Windows.Controls.Primitives.StatusBar>, <xref:System.Windows.Controls.TextBlock> и <xref:System.Windows.Controls.ToolTip>.  
+-   **Информирование пользователя**: <xref:System.Windows.Controls.AccessText>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.Primitives.Popup>, <xref:System.Windows.Controls.ProgressBar>, <xref:System.Windows.Controls.Primitives.StatusBar>, <xref:System.Windows.Controls.TextBlock>и <xref:System.Windows.Controls.ToolTip>.  
   
 ##  <a name="Input_And_Commanding"></a> Ввод и команды  
  Элементы управления чаще всего используются для определения ввода данных пользователем и реагирования на него. [Система ввода WPF](https://msdn.microsoft.com/en-us/library/ms754010\(v=vs.100\).aspx) использует как прямые, так и перенаправленные события для поддержки ввода текста, управления фокусом и определения положения указателя мыши.  
@@ -222,7 +222,7 @@ End Namespace
   
  [!code-xml[IntroToWPFSnippets#LayoutMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_1.xaml)]  
   
- Элемент управления <xref:System.Windows.Controls.DockPanel> позволяет дочерним элементам <xref:System.Windows.Controls.TextBox> сообщать, как они должны быть упорядочены. Для этого в <xref:System.Windows.Controls.DockPanel> реализовано свойство <xref:System.Windows.Controls.DockPanel.Dock%2A>, которое доступно дочерним элементам управления и позволяет каждому из них указывать стиль закрепления.  
+ Элемент управления <xref:System.Windows.Controls.DockPanel> позволяет дочерним элементам <xref:System.Windows.Controls.TextBox> сообщать, как они должны быть упорядочены. Для этого в <xref:System.Windows.Controls.DockPanel> реализовано свойство <xref:System.Windows.Controls.DockPanel.Dock%2A> , которое доступно дочерним элементам управления и позволяет каждому из них указывать стиль закрепления.  
   
 > [!NOTE]
 >  Свойство, которое реализуется родительским элементом управления для использования дочерними элементами, представляет собой конструкцию WPF, называемую [присоединенным свойством](https://msdn.microsoft.com/en-us/library/ms749011\(v=vs.100\).aspx).  
@@ -238,7 +238,7 @@ End Namespace
   
 2.  обеспечение копирования изменений, внесенных в данные с помощью элементов управления, обратно в управляемые объекты.  
   
- Чтобы упростить разработку приложений, платформа WPF предоставляет механизм привязки данных для автоматического выполнения этих действий. Основной элемент механизма привязки данных — класс <xref:System.Windows.Data.Binding>, задачей которого является привязка элемента управления (целевого объекта привязки) к объекту данных (источнику привязки). Эта связь показана на рисунке ниже.  
+ Чтобы упростить разработку приложений, платформа WPF предоставляет механизм привязки данных для автоматического выполнения этих действий. Основной элемент механизма привязки данных — класс <xref:System.Windows.Data.Binding> , задачей которого является привязка элемента управления (целевого объекта привязки) к объекту данных (источнику привязки). Эта связь показана на рисунке ниже.  
   
  ![Основная схема привязки данных](../designers/media/databindingmostbasic.png "DataBindingMostBasic")  
   
@@ -254,7 +254,7 @@ End Namespace
   
  [!code-vb[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../designers/codesnippet/VisualBasic/introduction-to-wpf_6.vb)] [!code-cs[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../designers/codesnippet/CSharp/introduction-to-wpf_6.cs)]  
   
- В этом примере экземпляр класса `Person` создается в коде программной части и устанавливается в качестве контекста данных для `DataBindingWindow`. В разметке свойство <xref:System.Windows.Controls.TextBox.Text%2A> элемента управления <xref:System.Windows.Controls.TextBox> привязывается к свойству `Person.Name` (с помощью синтаксической конструкции «`{Binding ... }`» языка XAML). Этот код XAML предписывает платформе WPF привязать элемент управления <xref:System.Windows.Controls.TextBox> к объекту `Person`, который хранится в свойстве <xref:System.Windows.FrameworkElement.DataContext%2A> окна.  
+ В этом примере экземпляр класса `Person` создается в коде программной части и устанавливается в качестве контекста данных для `DataBindingWindow`. В разметке свойство <xref:System.Windows.Controls.TextBox.Text%2A> элемента управления <xref:System.Windows.Controls.TextBox> привязывается к свойству `Person.Name` (с помощью синтаксической конструкции «`{Binding ... }`» языка XAML). Этот код XAML предписывает платформе WPF привязать элемент управления <xref:System.Windows.Controls.TextBox> к объекту `Person` , который хранится в свойстве <xref:System.Windows.FrameworkElement.DataContext%2A> окна.  
   
  Механизм привязки данных WPF поддерживает дополнительные возможности, включая проверку, сортировку, фильтрацию и группировку. Кроме того, привязка данных поддерживает использование шаблонов данных с целью создания настраиваемого пользовательского интерфейса для связанных данных, если пользовательский интерфейс на основе стандартных элементов управления WPF не удовлетворяет требованиям.  
   
@@ -291,7 +291,7 @@ End Namespace
 ### <a name="2-d-geometries"></a>Двумерные геометрические объекты  
  Двумерные фигуры, предоставляемые WPF, включают в себя стандартный набор базовых фигур. Однако вам может потребоваться создать собственные фигуры, чтобы упростить разработку пользовательского интерфейса. Для этой цели WPF предоставляет геометрические объекты. На рисунке ниже демонстрируется использование геометрических объектов для создания пользовательской фигуры, которую можно нарисовать напрямую, применять как кисть или использовать для обрезки других фигур и элементов управления.  
   
- Объекты <xref:System.Windows.Shapes.Path> можно использовать для рисования замкнутых и незамкнутых фигур, нескольких фигур и даже криволинейных фигур.  
+ Объекты<xref:System.Windows.Shapes.Path> можно использовать для рисования замкнутых и незамкнутых фигур, нескольких фигур и даже криволинейных фигур.  
   
  Объекты <xref:System.Windows.Media.Geometry> можно использовать для обрезки, проверки попадания и отрисовки двумерных графических данных.  
   
@@ -368,7 +368,7 @@ End Namespace
  По этой причине WPF предоставляет разнообразные механизмы создания уникальных пользовательских интерфейсов, включая модель мультимедийного содержимого для элементов управления, триггеры, шаблоны элементов управления и данных, стили, ресурсы пользовательского интерфейса, темы и обложки.  
   
 ### <a name="content-model"></a>Модель содержимого  
- Основным назначением большинства элементов управления WPF является отображение содержимого. В WPF тип и число элементов, составляющих содержимое элемента управления, называются *моделью содержимого*элемента управления. Некоторые элементы могут содержать только один объект и только один тип содержимого. Например, содержимым элемента управления <xref:System.Windows.Controls.TextBox> является строковое значение, присвоенное свойству <xref:System.Windows.Controls.TextBox.Text%2A>. В приведенном ниже примере задается содержимое элемента управления <xref:System.Windows.Controls.TextBox>.  
+ Основным назначением большинства элементов управления WPF является отображение содержимого. В WPF тип и число элементов, составляющих содержимое элемента управления, называются *моделью содержимого*элемента управления. Некоторые элементы могут содержать только один объект и только один тип содержимого. Например, содержимым элемента управления <xref:System.Windows.Controls.TextBox> является строковое значение, присвоенное свойству <xref:System.Windows.Controls.TextBox.Text%2A> . В приведенном ниже примере задается содержимое элемента управления <xref:System.Windows.Controls.TextBox>.  
   
  [!code-xml[IntroToWPFSnippets#TextBoxContentMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_10.xaml)]  
 [!code-xml[IntroToWPFSnippets#TextBoxContentMARKUP2](../designers/codesnippet/Xaml/introduction-to-wpf_11.xaml)]  
@@ -394,7 +394,7 @@ End Namespace
  Хотя основным назначением разметки XAML является определение внешнего вида приложения, ее также можно использовать для реализации некоторых аспектов поведения приложения. Один из примеров — изменение внешнего вида приложения с помощью триггеров при выполнении пользователем определенных действий. Более подробную информацию см. в разделе [Стилизация и использование шаблонов](https://msdn.microsoft.com/en-us/library/ms745683\(v=vs.100\).aspx).  
   
 ### <a name="control-templates"></a>Шаблоны элементов управления  
- Пользовательские интерфейсы по умолчанию для элементов управления WPF обычно формируются на основе других элементов управления и фигур. Например, элемент управления <xref:System.Windows.Controls.Button> состоит из элементов управления <xref:Microsoft.Windows.Themes.ButtonChrome> и <xref:System.Windows.Controls.ContentPresenter>. <xref:Microsoft.Windows.Themes.ButtonChrome> обеспечивает стандартный внешний вид кнопки, а <xref:System.Windows.Controls.ContentPresenter> служит для вывода ее содержимого, определяемого свойством <xref:System.Windows.Controls.ContentControl.Content%2A>.  
+ Пользовательские интерфейсы по умолчанию для элементов управления WPF обычно формируются на основе других элементов управления и фигур. Например, элемент управления <xref:System.Windows.Controls.Button> состоит из элементов управления <xref:Microsoft.Windows.Themes.ButtonChrome> и <xref:System.Windows.Controls.ContentPresenter> . <xref:Microsoft.Windows.Themes.ButtonChrome> обеспечивает стандартный внешний вид кнопки, а <xref:System.Windows.Controls.ContentPresenter> служит для вывода ее содержимого, определяемого свойством <xref:System.Windows.Controls.ContentControl.Content%2A> .  
   
  Иногда внешний вид элемента управления по умолчанию может не согласовываться с общим оформлением приложения. В этом случае можно использовать <xref:System.Windows.Controls.ControlTemplate> для изменения пользовательского интерфейса элемента управления, не меняя его содержимое и поведение.  
   
@@ -404,7 +404,7 @@ End Namespace
   
  [!code-cs[IntroToWPFSnippets#ButtonControlTemplateWindowCODEBEHIND](../designers/codesnippet/CSharp/introduction-to-wpf_17.cs)] [!code-vb[IntroToWPFSnippets#ButtonControlTemplateWindowCODEBEHIND](../designers/codesnippet/VisualBasic/introduction-to-wpf_17.vb)]  
   
- В этом примере пользовательский интерфейс кнопки по умолчанию заменяется элементом <xref:System.Windows.Shapes.Ellipse>, имеющим темно-синюю границу и заполнение, определяемое <xref:System.Windows.Media.RadialGradientBrush>. В элементе управления <xref:System.Windows.Controls.ContentPresenter> выводится содержимое элемента <xref:System.Windows.Controls.Button> — текст "Click Me!" При нажатии на элемент <xref:System.Windows.Controls.Button> по-прежнему вызывается событие <xref:System.Windows.Controls.Primitives.ButtonBase.Click>, что соответствует поведению элемента управления <xref:System.Windows.Controls.Button> по умолчанию. Результат показан на примере ниже.  
+ В этом примере пользовательский интерфейс кнопки по умолчанию заменяется элементом <xref:System.Windows.Shapes.Ellipse>, имеющим темно-синюю границу и заполнение, определяемое <xref:System.Windows.Media.RadialGradientBrush>. В элементе управления <xref:System.Windows.Controls.ContentPresenter> выводится содержимое элемента <xref:System.Windows.Controls.Button>— текст «Click Me!» При нажатии на элемент <xref:System.Windows.Controls.Button> по-прежнему вызывается событие <xref:System.Windows.Controls.Primitives.ButtonBase.Click> , что соответствует поведению элемента управления <xref:System.Windows.Controls.Button> по умолчанию. Результат показан на примере ниже.  
   
  ![Кнопка в виде эллипса и второе окно](../designers/media/wpfintrofigure2.png "WPFIntroFigure2")  
   
@@ -413,7 +413,7 @@ End Namespace
   
  ![Список с оформлением по умолчанию](../designers/media/wpfintrofigure18.png "WPFIntroFigure18")  
   
- Оформление по умолчанию является стандартным для элемента управления <xref:System.Windows.Controls.ListBox>. Однако оно предполагает, что для каждой задачи отображается только ее название. Чтобы отобразить название, описание и приоритет задачи, нужно изменить оформление по умолчанию для элементов списка, привязанных к элементу управления <xref:System.Windows.Controls.ListBox>, с помощью <xref:System.Windows.DataTemplate>. Приведенный ниже код XAML определяет такой шаблон <xref:System.Windows.DataTemplate>, который применяется к каждой задаче с помощью атрибута <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>.  
+ Оформление по умолчанию является стандартным для элемента управления <xref:System.Windows.Controls.ListBox>. Однако оно предполагает, что для каждой задачи отображается только ее название. Чтобы отобразить название, описание и приоритет задачи, нужно изменить оформление по умолчанию для элементов списка, привязанных к элементу управления <xref:System.Windows.Controls.ListBox> , с помощью <xref:System.Windows.DataTemplate>. Приведенный ниже код XAML определяет такой шаблон <xref:System.Windows.DataTemplate>, который применяется к каждой задаче с помощью атрибута <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>.  
   
  [!code-xml[IntroToWPFSnippets#DataTemplateMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_18.xaml)]  
 [!code-xml[IntroToWPFSnippets#DataTemplateMARKUP2](../designers/codesnippet/Xaml/introduction-to-wpf_19.xaml)]  
@@ -429,7 +429,7 @@ End Namespace
  Более подробную информацию см. в разделе [Общие сведения о шаблонах данных](https://msdn.microsoft.com/en-us/library/ms742521\(v=vs.100\).aspx).  
   
 ### <a name="styles"></a>Стили  
- Стили позволяют разработчикам и дизайнерам стандартизировать внешний вид своего продукта. Платформа WPF предоставляет строгую модель стилей, в основе которой лежит элемент <xref:System.Windows.Style>. В приведенном ниже примере создается стиль, который задает `Orange` в качестве цвета фона для каждого элемента управления <xref:System.Windows.Controls.Button> в окне.  
+ Стили позволяют разработчикам и дизайнерам стандартизировать внешний вид своего продукта. Платформа WPF предоставляет строгую модель стилей, в основе которой лежит элемент <xref:System.Windows.Style> . В приведенном ниже примере создается стиль, который задает `Orange` в качестве цвета фона для каждого элемента управления <xref:System.Windows.Controls.Button> в окне.  
   
  [!code-xml[IntroToWPFSnippets#StyleMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_22.xaml)]  
 [!code-xml[IntroToWPFSnippets#StyleMARKUP2](../designers/codesnippet/Xaml/introduction-to-wpf_23.xaml)]  
@@ -453,15 +453,15 @@ End Namespace
   
  Ресурс цвета фона реализуется с помощью элемента свойства `Window.Resources` . Этот ресурс доступен всем дочерним элементам объекта <xref:System.Windows.Window>. Существует ряд различных областей действия ресурсов. Некоторые из них перечислены ниже в порядке их разрешения.  
   
-1.  Отдельный элемент управления (с использованием наследуемого свойства <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName>).  
+1.  Отдельный элемент управления (с использованием наследуемого свойства <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> ).  
   
-2.  <xref:System.Windows.Window> или <xref:System.Windows.Controls.Page> (также с использованием наследуемого свойства <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName>).  
+2.  <xref:System.Windows.Window> или <xref:System.Windows.Controls.Page> (также с использованием наследуемого свойства <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> ).  
   
-3.  <xref:System.Windows.Application> (с использованием свойства <xref:System.Windows.Application.Resources%2A?displayProperty=fullName>).  
+3.  <xref:System.Windows.Application> (с использованием свойства <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> ).  
   
  Разнообразие областей действия обеспечивает гибкость в отношении способов определения ресурсов и предоставления доступа к ним.  
   
- Помимо прямого сопоставления ресурсов с определенной областью действия, можно упаковать один или несколько ресурсов с помощью отдельного объекта <xref:System.Windows.ResourceDictionary>, на который можно ссылаться в других частях приложения. Так, в приведенном ниже примере определяется цвет фона по умолчанию в библиотеке ресурсов.  
+ Помимо прямого сопоставления ресурсов с определенной областью действия, можно упаковать один или несколько ресурсов с помощью отдельного объекта <xref:System.Windows.ResourceDictionary> , на который можно ссылаться в других частях приложения. Так, в приведенном ниже примере определяется цвет фона по умолчанию в библиотеке ресурсов.  
   
  [!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_29.xaml)]  
 [!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP2](../designers/codesnippet/Xaml/introduction-to-wpf_30.xaml)]  
@@ -488,7 +488,7 @@ End Namespace
   
 -   **Модель элемента управления**. Пользовательский элемент управления наследуется от <xref:System.Windows.Controls.Control> и используется для создания реализаций, в которых поведение и внешний вид разделяются с помощью шаблонов, как в большинстве элементов управления WPF. Наследование от класса <xref:System.Windows.Controls.Control> обеспечивает большую гибкость при создании собственного пользовательского интерфейса, чем пользовательские элементы управления, но может потребовать больших усилий.  
   
--   **Модель элемента платформы**. Пользовательский элемент управления наследуется от класса <xref:System.Windows.FrameworkElement>, если его внешний вид определяется пользовательской логикой отрисовки, а не шаблонами.  
+-   **Модель элемента платформы**. Пользовательский элемент управления наследуется от класса <xref:System.Windows.FrameworkElement> , если его внешний вид определяется пользовательской логикой отрисовки, а не шаблонами.  
   
  В приведенном ниже примере показан пользовательский элемент управления для увеличения или уменьшения числового значения, наследуемый от <xref:System.Windows.Controls.UserControl>.  
   
