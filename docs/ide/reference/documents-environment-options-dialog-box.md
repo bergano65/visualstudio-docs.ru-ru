@@ -1,5 +1,5 @@
 ---
-title: "Страница &quot;Документы&quot;, папка &quot;Среда&quot;, диалоговое окно &quot;Параметры&quot; | Microsoft Docs"
+title: "Страница \"Документы\", папка \"Среда\", диалоговое окно \"Параметры\" | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -51,7 +51,7 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
+ms.translationtype: HT
 ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
 ms.openlocfilehash: e98661157ec1168c2aa19717c626a82f5e0a1975
 ms.contentlocale: ru-ru

@@ -1,5 +1,5 @@
 ---
-title: "Панель элементов, вкладка &quot;Данные&quot; | Microsoft Docs"
+title: "Панель элементов, вкладка \"Данные\" | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,7 +31,7 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
+ms.translationtype: HT
 ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
 ms.openlocfilehash: bfe6b74b10829ac06d07b3e22b969b8ed6357972
 ms.contentlocale: ru-ru
