@@ -9,6 +9,7 @@
 ## [Примеры параметров командной строки](command-line-parameter-examples.md)
 ## [Создание сетевой установки Visual Studio](create-a-network-installation-of-visual-studio.md)
 ## [Особые рекомендации по установке Visual Studio в автономной среде](install-visual-studio-in-offline-environment.md)
+## [Установка Visual Studio в среде, защищенной брандмауэром или прокси-сервером](install-visual-studio-behind-a-firewall-or-proxy-server.md)
 ## [Автоматизация установки Visual Studio с помощью файла ответов](automated-installation-with-response-file.md)
 ## [Автоматическое применение ключей продуктов при развертывании Visual Studio](automatically-apply-product-keys-when-deploying-visual-studio.md)
 ## [Настройка параметров по умолчанию для корпоративного развертывания Visual Studio](set-defaults-for-enterprise-deployments.md)
