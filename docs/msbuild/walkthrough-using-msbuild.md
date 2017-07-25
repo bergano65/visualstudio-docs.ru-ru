@@ -29,10 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 3ba7680d46345f2b49019659c715cfb418933d39
-ms.openlocfilehash: ecfd08a410983561f3c1e761eb25302b6d9281c4
-ms.lasthandoff: 02/22/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 34c78f4573bc2b11e738c3722cefaa8e294287b5
+ms.contentlocale: ru-ru
+ms.lasthandoff: 07/18/2017
 
 ---
 # <a name="walkthrough-using-msbuild"></a>Пошаговое руководство. Использование MSBuild
@@ -454,7 +455,7 @@ $(PropertyName)
 1.  В редакторе кода замените задачу Message следующей строкой:  
   
     ```xml  
-    <Message Text="Compile item type contains @(XFiles)" />  
+    <Message Text="XFiles item type contains @(XFiles)" />  
     ```  
   
 2.  Добавьте эту группу элементов сразу после элемента Import:  
@@ -476,7 +477,7 @@ $(PropertyName)
 5.  Проанализируйте результат. Вы должны увидеть следующую строку:  
   
     ```  
-    Compile item type contains Form1.cs;Program.cs;Properties/Resources.resx  
+    XFiles item type contains Form1.cs;Program.cs;Properties/Resources.resx  
     ```  
   
 ## <a name="item-metadata"></a>Метаданные элементов  
@@ -596,3 +597,4 @@ $(PropertyName)
 ## <a name="see-also"></a>См. также
 [MSBuild Overview](../msbuild/msbuild.md) (Общие сведения о MSBuild)  
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
+
