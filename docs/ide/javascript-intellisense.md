@@ -1,7 +1,7 @@
 ---
 title: "JavaScript IntelliSense | Документы Майкрософт"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 06/28/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -51,8 +51,7 @@ ms.contentlocale: ru-ru
 ms.lasthandoff: 07/11/2017
 
 ---
-# IntelliSense для JavaScript
-<a id="javascript-intellisense" class="xliff"></a>
+# <a name="javascript-intellisense"></a>IntelliSense для JavaScript
 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] обеспечивает эффективное редактирование JavaScript. Система Visual Studio, основанная на языковой службе TypeScript, расширяет возможности IntelliSense, поддерживает современные компоненты JavaScript, а также улучшенные функции для повышения эффективности работы, такие как "Перейти к определению", рефакторинг и многое другое.
 
 > [!NOTE]
@@ -60,8 +59,7 @@ ms.lasthandoff: 07/11/2017
 
 Дополнительные сведения об общих функциональных возможностях IntelliSense в [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] см. в разделе [Использование технологии IntelliSense](../ide/using-intellisense.md). 
 
-## Новые возможности языковой службы JavaScript в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
-<a id="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd" class="xliff"></a>
+## <a name="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd"></a>Новые возможности языковой службы JavaScript в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 JavaScript IntelliSense в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] теперь отображает гораздо больше информации в списках элементов и параметров.
 Эта новая информация предоставляется языковой службой TypeScript, которая использует статический анализ, чтобы помочь вам лучше понять код.
