@@ -38,10 +38,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 699ad120c95500e04d238270b8ac282ad0a8d288
+ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
+ms.openlocfilehash: d376d2f99ccfddb2d96797fa2db0e1ef3872f34b
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/03/2017
 
 ---
 # <a name="vbc-task"></a>Задача Vbc
@@ -68,7 +68,7 @@ ms.lasthandoff: 05/13/2017
 |`Imports`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Импорт пространства имен из указанных коллекций элементов. Этот параметр соответствует параметру [/imports](/dotnet/visual-basic/reference/command-line-compiler/imports) компилятора vbc.exe.|  
 |`KeyContainer`|Необязательный параметр `String` .<br /><br /> Задает имя контейнера криптографического ключа. Этот параметр соответствует параметру [/keycontainer](/dotnet/visual-basic/reference/command-line-compiler/keycontainer) компилятора vbc.exe.|  
 |`KeyFile`|Необязательный параметр `String` .<br /><br /> Задает имя файла, содержащего криптографический ключ. Дополнительные сведения см. в разделе [/keyfile](/dotnet/visual-basic/reference/command-line-compiler/keyfile).|  
-|`LangVersion`|Необязательный параметр типа [String](assetId:///String?qualifyHint=False&autoUpgrade=True).<br /><br /> Задает используемую версию языка ("9" или "10").|  
+|`LangVersion`|Необязательный параметр <xref:System.String?displayProperty=fullName> .<br /><br /> Задает используемую версию языка ("9" или "10").|  
 |`LinkResources`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Создается ссылка на ресурс .NET Framework в выходном файле. Файл ресурса не помещается в выходной файл. Этот параметр соответствует параметру [/linkresource](/dotnet/visual-basic/reference/command-line-compiler/linkresource) компилятора vbc.exe.|  
 |`MainEntryPoint`|Необязательный параметр `String` .<br /><br /> Задает класс или модуль, содержащий процедуру `Sub Main`. Этот параметр соответствует параметру [/main](/dotnet/visual-basic/reference/command-line-compiler/main) компилятора vbc.exe.|  
 |`ModuleAssemblyName`|Необязательный параметр `String` .<br /><br /> Задает сборку, частью которой будет этот модуль.|  

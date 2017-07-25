@@ -28,10 +28,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: a2958c20bbfbd9f4f3d03946dbe230326894b1c1
+ms.sourcegitcommit: 795bf9746c4ae48ac04141a05ba56462ecb90482
+ms.openlocfilehash: 7b69cc5d96a1b51a3d58f688a53bb0156ec3b713
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/23/2017
 
 ---
 # <a name="gpu-usage"></a>Использование GPU
@@ -93,7 +93,7 @@ ms.lasthandoff: 05/13/2017
 
 <!-- VERSIONLESS -->
 ## <a name="export-to-gpuview-or-windows-performance-analyzer"></a>Экспорт в GPUView или Windows Performance Analyzer
-Начиная с Visual Studio 2017 эти данные можно открыть с помощью [GPUView](https://msdn.microsoft.com/library/windows/desktop/ff570133(v=vs.85).aspx) и [Windows Performance Analyzer](https://msdn.microsoft.com/windows/hardware/commercialize/test/wpt/windows-performance-analyzer), щелкнув ссылку **Открыть в GpuView** или **Открыть в WPA** в нижней правой части диагностического сеанса.
+Начиная с Visual Studio 2017 эти данные можно открыть с помощью [GPUView](/windows-hardware/drivers/display/using-gpuview) и [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer), щелкнув ссылку **Открыть в GpuView** или **Открыть в WPA** в нижней правой части диагностического сеанса.
 
 ![Открыть в...](media/gfx_diag_open_in.png)
 <!-- /VERSIONLESS -->
@@ -170,5 +170,5 @@ ms.lasthandoff: 05/13/2017
 -   [Средство использования GPU в Visual Studio (видео)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
 -   [Средство использования GPU в Visual Studio 2013 с обновлением 4, CTP-версия 1 (блог)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
 -   [Использование GPU для DirectX в Visual Studio (блог)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
-- [GPUView](https://msdn.microsoft.com/library/windows/desktop/ff570133(v=vs.85).aspx) 
-- [Windows Performance Analyzer](https://msdn.microsoft.com/windows/hardware/commercialize/test/wpt/windows-performance-analyzer)
+- [GPUView](/windows-hardware/drivers/display/using-gpuview) 
+- [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer)

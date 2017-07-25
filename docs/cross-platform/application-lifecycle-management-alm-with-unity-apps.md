@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 7e95cec543216f13de06d2c2b86bc08040d1a7fb
+ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
+ms.openlocfilehash: de365cf073ed234ece1d9af56232a29b7ef8eec4
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 05/26/2017
 
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Использование управления жизненным циклом приложения (ALM) с приложениями Unity
@@ -77,7 +77,7 @@ ms.lasthandoff: 05/13/2017
 |-------------|--------------------------|-------------------------|  
 |[Используйте управление версиями в Team Foundation](http://msdn.microsoft.com/Library/1d629052-c65d-4c5d-81eb-eaa4413fe285) или Visual Studio Team Services|Да|Проекты Unity представляют собой наборы файлов, которые можно добавлять в системы управления версиями так же, как любые другие проекты. Однако существует ряд особенностей, которые описаны ниже.|  
 |[Приступая к работе с Git в Team Services](http://msdn.microsoft.com/Library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Да|См. примечания после таблицы.|  
-|[Анализ кода/повышение качества кода (ссылки, предлагаемые изменения и т. д.)](http://msdn.microsoft.com/Library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Да||  
+|[Улучшение качества кода](/visualstudio/test/improve-code-quality)|Да||  
 |[Поиск изменений кода и других журналов](../ide/find-code-changes-and-other-history-with-codelens.md)|Да||  
 |[Использование карт кода для отладки приложений](../modeling/use-code-maps-to-debug-your-applications.md)|Да||  
   
@@ -113,7 +113,7 @@ ms.lasthandoff: 05/13/2017
 |[Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)|Нет|Закодированные тесты пользовательского интерфейса предполагают наличие доступных для чтения элементов управления в пользовательском интерфейсе приложения. Приложения Unity по своей сути являются графическими, и их содержимое не может считываться средствами для проведения таких тестов.|  
   
 ## <a name="improve-code-quality"></a>Улучшите качество кода  
- Ссылка: **[Улучшите качество кода](http://msdn.microsoft.com/Library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Ссылка: **[Улучшите качество кода](/visualstudio/test/improve-code-quality)**  
   
 |Функция|Поддерживается в Xamarin|Дополнительные комментарии|  
 |-------------|--------------------------|-------------------------|  

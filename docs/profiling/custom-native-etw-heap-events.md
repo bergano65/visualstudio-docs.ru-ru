@@ -29,16 +29,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 83fbf12dce91f79d537b574ea9903af5d6e61d1f
-ms.openlocfilehash: 0cc24f68ddef374f539c299d87cede8a13fac1a2
-ms.lasthandoff: 02/28/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 795bf9746c4ae48ac04141a05ba56462ecb90482
+ms.openlocfilehash: afc044be4d63b7a292a6d94e360366913bd28883
+ms.contentlocale: ru-ru
+ms.lasthandoff: 06/23/2017
 
 ---
 
 # <a name="custom-native-etw-heap-events"></a>События пользовательской собственной кучи трассировки событий Windows
 
-Visual Studio содержит разнообразные [средства профилирования и диагностики](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools), включая встроенный профилировщик памяти.  Этот профилировщик обрабатывает [события ETW](https://msdn.microsoft.com/en-us/library/windows/desktop/aa363668(v=vs.85).aspx) от поставщика кучи и анализирует выделение и использование памяти.  По умолчанию это средство может анализировать только выделения из стандартной кучи Windows, а выделения вне собственной кучи не отображаются.
+Visual Studio содержит разнообразные [средства профилирования и диагностики](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools), включая встроенный профилировщик памяти.  Этот профилировщик обрабатывает [события ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) от поставщика кучи и анализирует выделение и использование памяти.  По умолчанию это средство может анализировать только выделения из стандартной кучи Windows, а выделения вне собственной кучи не отображаются.
 
 Во многих случаях может потребоваться использовать пользовательскую кучу и исключить издержки при распределении из стандартной кучи.  Например, можно использовать [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx), чтобы выделить большой объем памяти при запуске приложения или игры, а затем управлять собственными блоками в рамках этого списка.  В этом случае средство профилирования памяти будет видеть только первоначальное выделение, а не пользовательское управление, выполняемые в блоке памяти.  Но с помощью поставщика ETW пользовательской собственной кучи можно указать средству на выделение, осуществляемые вне стандартной кучи.
 
