@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 0f5730af2e61bb1bd342e607db7c1244ad7d0008
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 996ec0a9fa601517993cb6049a114796c36489fe
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="step-6-add-a-timer"></a>Шаг 6. Добавление таймера
@@ -50,8 +51,7 @@ ms.lasthandoff: 02/22/2017
   
 3.  Выберите значок элемента управления "Таймер" в конструкторе Windows Forms, а затем нажмите клавишу ВВОД или дважды щелкните таймер, чтобы добавить пустой обработчик событий **Tick**. Замените код следующим кодом или вручную введите следующий код в обработчик событий.  
   
-     [!code-cs[VbExpressTutorial4Step6#7](../ide/codesnippet/CSharp/step-6-add-a-timer_1.cs)]
-     [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]  
+     [!code-cs[VbExpressTutorial4Step6#7](../ide/codesnippet/CSharp/step-6-add-a-timer_1.cs)] [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]  
   
      Обработчик события Tick выполняет три действия. Сначала он останавливает таймер, вызывая метод `Stop()`. Затем он использует две ссылочные переменные, `firstClicked` и `secondClicked`, чтобы снова сделать невидимыми значки двух меток, которые выбрал игрок. Наконец, он сбрасывает значения ссылочных переменных `firstClicked` и `secondClicked` на `null` в Visual C# и `Nothing` в Visual Basic. Это важный шаг, поскольку таким образом программа сбрасывает себя. Теперь она не отслеживает какие-либо элементы управления `Label` и снова готова к выбору метки игроком.  
   
@@ -60,8 +60,7 @@ ms.lasthandoff: 02/22/2017
   
 4.  Чтобы увидеть работу нового таймера, перейдите к редактору кода и добавьте следующий код в начало и конец метода обработчика событий `label_Click()`. (Добавляется оператор `if` в начало метода и три оператора в конец. Остальная часть метода остается неизменной.)  
   
-     [!code-cs[VbExpressTutorial4Step6#8](../ide/codesnippet/CSharp/step-6-add-a-timer_2.cs)]
-     [!code-vb[VbExpressTutorial4Step6#8](../ide/codesnippet/VisualBasic/step-6-add-a-timer_2.vb)]  
+     [!code-cs[VbExpressTutorial4Step6#8](../ide/codesnippet/CSharp/step-6-add-a-timer_2.cs)] [!code-vb[VbExpressTutorial4Step6#8](../ide/codesnippet/VisualBasic/step-6-add-a-timer_2.vb)]  
   
      Код в начале метода проверяет, запущен ли таймер, обращаясь к значению свойству **Enabled**. Таким образом, если игрок выбирает первый и второй элемент управления `Label` и таймер запускается, выбор третьего элемента управления Label ни к чему не приведет.  
   

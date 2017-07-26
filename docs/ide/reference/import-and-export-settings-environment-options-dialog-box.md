@@ -1,26 +1,43 @@
 ---
 title: "Страница &quot;Параметры импорта и экспорта&quot;, папка &quot;Среда&quot;, диалоговое окно &quot;Параметры&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.ToolsOptionsPages.Environment.Profiles"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.ToolsOptionsPages.Environment.Profiles
 ms.assetid: 4e69f97b-2bd2-4619-a5f9-92ca2e814de3
 caps.latest.revision: 3
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 3
----
-# Страница &quot;Параметры импорта и экспорта&quot;, папка &quot;Среда&quot;, диалоговое окно &quot;Параметры&quot;
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: ed92925df40f7e896aa95f12e9d6c93656397ec2
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/24/2017
 
-Эта страница служит для задания места сохранения файла параметров пользователя и указания необходимости использования файла параметров команды.  Дополнительные сведения о параметрах см. в разделе [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/ru-ru/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+---
+# <a name="import-and-export-settings-environment-options-dialog-box"></a>Страница "Параметры импорта и экспорта", папка "Среда", диалоговое окно "Параметры"
+Эта страница служит для задания места сохранения файла параметров пользователя и указания необходимости использования файла параметров команды. Дополнительные сведения о параметрах см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Диалоговое окно "Параметры среды"](../../ide/reference/environment-options-dialog-box.md)

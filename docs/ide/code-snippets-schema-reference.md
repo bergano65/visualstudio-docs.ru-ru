@@ -32,10 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4d03ab21333e269d10ef9a013a11665ed3fbba92
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 18627c9f14e82bef85ff433eea14d99653f78e68
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="code-snippets-schema-reference"></a>Справочник по схеме фрагментов кода
@@ -532,7 +533,7 @@ is a great color. I love Blue.
  Задает краткий текст, используемый для вставки фрагмента кода. Текстовое значение элемента `Shortcut` может содержать только буквенно-цифровые знаки, дефисы ( - ) и символы подчеркивания ( _ ).  
   
 > [!CAUTION]
->  Символы "_" и "–" не поддерживаются в элементах Shortcut фрагментов кода C++.  
+>  Символы "_" и "-" не поддерживаются в качестве ярлыков фрагментов кода C++.  
   
 ```xml  
 <Shortcut>  

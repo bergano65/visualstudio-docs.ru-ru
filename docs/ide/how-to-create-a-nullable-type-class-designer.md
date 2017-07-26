@@ -30,10 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 5b55bd1c7b6be5c8fabafded8cd3a658ec9602d8
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 001e8d8c1a6371d76b1a52826da16d471f07c1ba
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Практическое руководство. Создание типа, допускающего значение NULL (конструктор классов)
@@ -41,7 +42,7 @@ ms.lasthandoff: 02/22/2017
   
  *Тип, допускающий значение NULL* является типом значений, который можно расширить, чтобы он принял стандартный набор значений для этого типа, а также значение NULL. Например, для допускающего значение NULL `Int32`, который также обозначается как Nullable\<Int32>, можно назначить любое значение от -2 147 483 648 до 2 147 483 647 или значение NULL. Для Nullable\<bool> можно назначить значения `True`, `False` или NULL (без значения).  
   
- Типы, допускающие значения NULL, — это экземпляры структуры <xref:System.Nullable%601>. Каждый объект типа, допускающего значение NULL, имеет два открытых свойства, доступных только для чтения, `HasValue` и `Value`:  
+ Типы, допускающие значения NULL, являются экземплярами структуры <xref:System.Nullable%601>. Каждый объект типа, допускающего значение NULL, имеет два открытых свойства, доступных только для чтения, `HasValue` и `Value`:  
   
 -   `HasValue` имеет тип `bool` и указывает, содержит ли переменная определенное значение. `True` означает, что переменная содержит значение, не равное NULL. Можно провести тест для определенного значения с помощью оператора, такого как `if (x.HasValue)` или `if (y != null)`.  
   
@@ -87,5 +88,5 @@ ms.lasthandoff: 02/22/2017
  <xref:System.Nullable%601>   
  [Типы, допускающие значения NULL](/dotnet/csharp/programming-guide/nullable-types/index)   
  [Использование допускающих значение NULL типов](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)   
- [Практическое руководство. Идентификация типа, допускающего значение NULL](http://msdn.microsoft.com/Library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
+ [Практическое руководство. Идентификация типа, допускающего значение NULL](/dotnet/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type)   
  [Типы значений, допускающие значение NULL](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

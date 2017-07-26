@@ -1,54 +1,70 @@
 ---
-title: "/ResetSettings (devenv.exe) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "/ResetSettings - параметр Devenv"
-  - "Devenv, /ResetSettings - параметр"
-  - "ResetSettings - параметр"
+title: -ResetSettings (devenv.exe) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Devenv, /ResetSettings switch
+- ResetSettings switch
+- /ResetSettings Devenv switch
 ms.assetid: 1d41021c-6f58-4bd5-b122-d1c995812192
 caps.latest.revision: 10
-caps.handback.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# /ResetSettings (devenv.exe)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 08d285b07d775f3e46bb2f5106ff8140d3058f8f
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/24/2017
 
-Восстанавливает параметры [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] по умолчанию и автоматически запускает IDE [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  При необходимости выполняется сброс параметров в соответствии с указанным файлом .vssettings.  
+---
+# <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
+Восстанавливает параметры по умолчанию [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] и автоматически запускает интегрированную среду разработки [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. При необходимости выполняет сброс параметров в соответствии с указанным файлом VSSETTINGS.  
   
- Параметры по умолчанию определяются профилем, выбранным при первом запуске [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ Параметры по умолчанию определяются по профилю, который был выбран при первом запуске [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 Devenv /ResetSettings SettingsFile  
 ```  
   
-## Аргументы  
+## <a name="arguments"></a>Аргументы  
  `SettingsFile`  
- Полный путь и имя файла .vssettings с параметрами для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ Полный путь и имя VSSETTINGS-файла, применяемого к [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]  
   
- Для восстановления профиля обычных параметров среды разработки используйте `General`.  
+ Чтобы восстановить профиль "Общие параметры разработки", используйте `General`.  
   
-## Заметки  
- Если параметр `SettingsFile` не указан, при следующем запуске [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] будет предложено выбрать коллекцию параметров по умолчанию.  
+## <a name="remarks"></a>Примечания  
+ Если файл `SettingsFile` не указан, при следующем запуске [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] вам будет предложено выбрать коллекцию параметров по умолчанию.  
   
-## Пример  
- В приведенной командной строке показано применение параметров, сохраненных в файле `MySettings.vssettings`.  
+## <a name="example"></a>Пример  
+ Следующая команда применяет параметры, сохраненные в файле `MySettings.vssettings`.  
   
 ```  
 Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"  
 ```  
   
-## См. также  
- [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/ru-ru/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
+## <a name="see-also"></a>См. также  
+ [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)   
  [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)

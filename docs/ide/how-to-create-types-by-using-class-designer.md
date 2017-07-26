@@ -1,33 +1,50 @@
 ---
-title: "How to: Create Types by using Class Designer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.Clr.ClrAttributesDialog"
-helpviewer_keywords: 
-  - "custom attributes, applying"
-  - "class diagrams, creating types"
-  - "classes [Visual Studio], creating with Class Designer"
-  - "Class Designer [Visual Studio], creating classes"
-  - "types [Visual Studio], class diagrams"
-  - "attributes [Visual Studio], applying custom"
+title: "Практическое руководство. Создание типов с помощью конструктора классов | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.Clr.ClrAttributesDialog
+helpviewer_keywords:
+- custom attributes, applying
+- class diagrams, creating types
+- classes [Visual Studio], creating with Class Designer
+- Class Designer [Visual Studio], creating classes
+- types [Visual Studio], class diagrams
+- attributes [Visual Studio], applying custom
 ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
 caps.latest.revision: 41
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 41
----
-# How to: Create Types by using Class Designer
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 4dacf9110ee20dde9b6224eb96b7aca0f982515d
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/13/2017
 
-Для создания новых типов проектов Visual C\# .NET и Visual Basic .NET используйте диаграмму классов.  Сведения о существующих типах см. в статье [How to: View Existing Types \(Class Designer\)](../Topic/How%20to:%20View%20Existing%20Types%20\(Class%20Designer\).md).  
+---
+# <a name="how-to-create-types-by-using-class-designer"></a>Практическое руководство. Создание типов с помощью конструктора классов
+Для создания новых типов проектов Visual C# .NET и Visual Basic .NET используйте диаграмму классов. Сведения о существующих типах см. в статье [Практическое руководство. Просмотр существующих типов (конструктор классов)](../ide/how-to-view-existing-types-class-designer.md).  
   
 -   [Создание нового типа](#CreateType)  
   
@@ -43,15 +60,15 @@ caps.handback.revision: 41
   
     -   **Enum**  
   
-    -   **Интерфейс**  
+    -   **Interface**  
   
-    -   **Структура** \(VB\) или **Struct** \(C\#\)  
+    -   **Структура** (VB) или **Struct** (C#)  
   
-    -   **Делегат**  
+    -   **Delegate**  
   
-    -   **Модуль** \(только VB\)  
+    -   **Модуль** (только в Visual Basic)  
   
-2.  Задайте имя типа.  Затем выберите для него уровень доступа.  
+2.  Задайте имя типа. Затем выберите для него уровень доступа.  
   
 3.  Выберите файл, в который требуется добавить исходный код для типа:  
   
@@ -65,12 +82,12 @@ caps.handback.revision: 41
   
     |||  
     |-|-|  
-    |**Для**|**Add**|  
-    |Классы, абстрактные классы, структуры или struct|Методы, свойства, поля, события, конструкторы \(метод\), деструкторы \(метод\) и константы, определяющие тип|  
+    |**Для типа**|**Добавить**|  
+    |Классы, абстрактные классы, структуры или struct|Методы, свойства, поля, события, конструкторы (метод), деструкторы (метод) и константы, определяющие тип|  
     |перечислениям;|Значения поля, составляющие перечисление|  
     |интерфейсов,|Методы, свойства и события, составляющие интерфейс|  
     |Делегат|Параметры, определяющие делегат|  
-    |Module|Методы, свойства, поля, события, конструкторы \(метод\), деструкторы \(метод\) и константы, определяющие модуль|  
+    |Module|Методы, свойства, поля, события, конструкторы (метод), деструкторы (метод) и константы, определяющие модуль|  
   
      См. раздел [Создание членов](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
   
@@ -78,9 +95,9 @@ caps.handback.revision: 41
   
 1.  Щелкните фигуру типа на схеме классов.  
   
-2.  В окне "Свойства" рядом со свойством **Пользовательские атрибуты** для типа нажмите кнопку с многоточием \(…\).  
+2.  В окне "Свойства" рядом со свойством **Пользовательские атрибуты** для типа нажмите кнопку с многоточием (…).  
   
-3.  Добавьте один или несколько настраиваемых атрибутов, по одному на строку.  Не заключайте их в квадратные скобки.  
+3.  Добавьте один или несколько настраиваемых атрибутов, по одному на строку. Не заключайте их в квадратные скобки.  
   
      По завершении пользовательские атрибуты будут применены к типу.  
   
@@ -90,13 +107,13 @@ caps.handback.revision: 41
   
 2.  В окне "Свойства" перейдите к свойству члена **Пользовательские атрибуты**.  
   
-3.  Добавьте один или несколько настраиваемых атрибутов, по одному на строку.  Не заключайте их в квадратные скобки.  
+3.  Добавьте один или несколько настраиваемых атрибутов, по одному на строку. Не заключайте их в квадратные скобки.  
   
      По завершении пользовательские атрибуты будут применены к типу.  
   
-## См. также  
- [How to: Create Inheritance Between Types \(Class Designer\)](../ide/how-to-create-inheritance-between-types-class-designer.md)   
- [How to: Create Associations Between Types \(Class Designer\)](../ide/how-to-create-associations-between-types-class-designer.md)   
- [Creating and Configuring Type Members \(Class Designer\)](../ide/creating-and-configuring-type-members-class-designer.md)   
- [Working with Class Diagrams \(Class Designer\)](../ide/working-with-class-diagrams-class-designer.md)   
- [Designing Classes and Types \(Class Designer\)](../ide/designing-classes-and-types-class-designer.md)
+## <a name="see-also"></a>См. также  
+ [Практическое руководство. Создание наследования между типами (конструктор классов)](../ide/how-to-create-inheritance-between-types-class-designer.md)   
+ [Практическое руководство. Создание ассоциаций между типами (конструктор классов)](../ide/how-to-create-associations-between-types-class-designer.md)   
+ [Создание и настройка членов типов (конструктор классов)](../ide/creating-and-configuring-type-members-class-designer.md)   
+ [Работа со схемами классов (конструктор классов)](../ide/working-with-class-diagrams-class-designer.md)   
+ [Конструирование классов и типов (конструктор классов)](../ide/designing-classes-and-types-class-designer.md)

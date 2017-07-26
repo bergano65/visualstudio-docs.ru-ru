@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 9044821c2bfee0dba8ffa91f3d91afd565b8d957
 ms.openlocfilehash: 75c899caa3b620899bb2bd8107c63386dd4f40d9
-ms.lasthandoff: 02/22/2017
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Шаг 3. Назначение каждой метке случайного значка
@@ -40,15 +41,13 @@ ms.lasthandoff: 02/22/2017
   
 1.  Перед добавлением следующего кода разберитесь в принципе его работы. В C# есть новое ключевое слово `foreach`, а в Visual Basic — `For Each`. (Одна из строк закомментирована по причине, описанной в конце этой процедуры.)  
   
-     [!code-cs[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_1.cs)]
-     [!code-vb[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_1.vb)]  
+     [!code-cs[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_1.cs)] [!code-vb[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_1.vb)]  
   
 2.  Добавьте метод `AssignIconsToSquares()`, как показано в предыдущем шаге. Вы можете поместить его сразу же после кода, добавленного в разделе [Шаг 2. Добавление случайного объекта и списка значков](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).  
   
      Как было сказано выше, в методе `AssignIconsToSquares()` имеется определенное нововведение: цикл `foreach` в Visual C# и `For Each` в Visual Basic. Цикл `For Each` можно использовать в любое время для выполнения одного и того же действия несколько раз. В данном случае требуется выполнять одни и те же операторы для каждой метки в TableLayoutPanel, как показано в следующем коде. Первая строка создает переменную с именем `control`, которая хранит каждый элемент управления по одному, пока у этого элемента управления есть инструкции в цикле, выполняемом для него.  
   
-     [!code-cs[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_2.cs)]
-     [!code-vb[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_2.vb)]  
+     [!code-cs[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_2.cs)] [!code-vb[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_2.vb)]  
   
     > [!NOTE]
     >  Используются имена iconLabel и control, поскольку они являются описательными. Можно заменить эти имена на любые другие и это не повлияет на работу кода (при условии, что имена будут изменены имена в каждом операторе внутри цикла).  
@@ -57,8 +56,7 @@ ms.lasthandoff: 02/22/2017
   
      Внимательнее рассмотрите код, выполняемый внутри цикла `foreach` или `For Each`. Этот код воспроизведен здесь.  
   
-     [!code-cs[VbExpressTutorial4Step2_3_4#16](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_3.cs)]
-     [!code-vb[VbExpressTutorial4Step2_3_4#16](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_3.vb)]  
+     [!code-cs[VbExpressTutorial4Step2_3_4#16](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_3.cs)] [!code-vb[VbExpressTutorial4Step2_3_4#16](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_3.vb)]  
   
      Первая строка преобразует переменную `control` в метку с именем `iconLabel`. Следующая строка представляет собой оператор `if`, проверяющий и обеспечивающий успешное выполнение преобразования. Если преобразование выполняется, выполняются операторы в операторе `if`. (Как можно вспомнить из предыдущих занятий, оператор `if` используется для проверки заданного условия). Первая строка в операторе `if` создает переменную с именем `randomNumber`, содержащую случайное число, соответствующее одному из элементов списка значков. Для этого используется метод `Next` объекта `Random`, созданного ранее. Метод `Next` возвращает случайное число. Эта строка также использует свойство `Count` списка `icons` для определения диапазона, из которого выбирается случайное число. В следующей строке один из элементов списка значков присваивается свойству `Text` этой метки. Пояснения относительно строки с комментариям приводятся далее в этом разделе. Наконец, последняя строка в операторе `if` удаляет из списка значок, добавленный в форму.  
   
@@ -90,8 +88,7 @@ ms.lasthandoff: 02/22/2017
   
 6.  Чтобы скрыть значки, остановите программу и удалите метки комментариев с соответствующей строки кода в цикле `For Each`.  
   
-     [!code-cs[VbExpressTutorial4Step2_3_4#15](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_5.cs)]
-     [!code-vb[VbExpressTutorial4Step2_3_4#15](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_5.vb)]  
+     [!code-cs[VbExpressTutorial4Step2_3_4#15](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_5.cs)] [!code-vb[VbExpressTutorial4Step2_3_4#15](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_5.vb)]  
   
 7.  На панели меню нажмите кнопку **Сохранить все**, чтобы сохранить программу, а затем запустите программу. Похоже, что значки исчезли. Отображается только голубой фон. Однако значки назначены случайным образом и по-прежнему существуют. Поскольку значки имеют тот же цвет, что и фон, они невидимы, т. е. скрыты от игрока. Наконец, игра станет неинтересной, если игрок будет сразу видеть все значки!  
   

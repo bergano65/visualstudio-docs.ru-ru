@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: eecbfe02fbb0850e7954be1baf7aa3d607601b80
-ms.lasthandoff: 02/22/2017
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="step-7-keep-pairs-visible"></a>Шаг 7. Отмена исчезновения пар значков
@@ -40,8 +41,7 @@ ms.lasthandoff: 02/22/2017
   
 1.  Добавьте следующий оператор `if` в конец кода метода обработчика событий `label_Click()` перед оператором, который запускает таймер. Внимательно просмотрите код при добавлении его в программу. Рассмотрим, как работает код.  
   
-     [!code-cs[VbExpressTutorial4Step7#9](../ide/codesnippet/CSharp/step-7-keep-pairs-visible_1.cs)]
-     [!code-vb[VbExpressTutorial4Step7#9](../ide/codesnippet/VisualBasic/step-7-keep-pairs-visible_1.vb)]  
+     [!code-cs[VbExpressTutorial4Step7#9](../ide/codesnippet/CSharp/step-7-keep-pairs-visible_1.cs)] [!code-vb[VbExpressTutorial4Step7#9](../ide/codesnippet/VisualBasic/step-7-keep-pairs-visible_1.vb)]  
   
      Первая строка только что добавленного оператора `if` проверяет, совпадает ли значок в первой метке, которую выбрал игрок, со значком во второй метке. Если значки совпадают, программа выполняет три оператора, которые расположены между фигурными скобками в C# или внутри оператора `if` в Visual Basic. Первые два оператора сбрасывают ссылочные переменные `firstClicked` и `secondClicked`, чтобы они больше не отслеживали какие-либо метки. (Возможно, вы узнали эти два оператора из обработчика событий Tick таймера.) Третий оператор — оператор `return`, который сообщает программе, что требуется пропустить оставшиеся в методе операторы и не выполнять их.  
   

@@ -31,10 +31,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: edc126208bb401c8dba9a6be722cbd0dbda21caf
-ms.openlocfilehash: 720048b861bfb208489a62340efca28ae88d1951
+ms.sourcegitcommit: 8bf0b097be929b30627e0f1139c6e0b145933ab4
+ms.openlocfilehash: 28c6a166a423b3341ae32676830861eaa78cb40d
 ms.contentlocale: ru-ru
-ms.lasthandoff: 04/22/2017
+ms.lasthandoff: 05/26/2017
 
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Новые возможности Visual Studio 2017
@@ -203,7 +203,7 @@ Visual Studio перемещает свои расширения, а также 
 
 ## <a name="see-also"></a>См. также  
 * [What's New in Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio) (Новые возможности Visual C++)
-* [What's New in C#](https://docs.microsoft.com/en-us/dotnet/articles/csharp/csharp-7) (Новые возможности C#)  
+* [What's New in C#](https://docs.microsoft.com/en-us/dotnet/csharp/csharp-7) (Новые возможности C#)  
 * [What's New for Team Foundation Server](https://www.visualstudio.com/en-us/docs/whats-new) (Новые возможности Team Foundation Server)
 * [Заметки о выпуске Visual Studio](https://www.visualstudio.com/news/vs2015-vs)
 

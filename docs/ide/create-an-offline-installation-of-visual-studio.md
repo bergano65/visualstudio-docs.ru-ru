@@ -1,8 +1,8 @@
 ---
 title: "Создание автономной установки Visual Studio | Документы Майкрософт"
-description: "Выберите версию и узнайте, как создать автономную установку Visual Studio."
+description: "Сведения о создании автономной установки Visual Studio."
 ms.custom: 
-ms.date: 03/27/2017
+ms.date: 05/15/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -33,18 +33,17 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
-ms.openlocfilehash: 305402c28998de265549715356c93840f3f2f09e
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: d9de84bed187c62962a76424aabdc5f355dff4dc
+ms.openlocfilehash: 3f62dda1c768c62c438e30a75155fbecabe049e0
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/15/2017
 
 ---
-# <a name="create-an-offline-installation-of-visual-studio"></a>Создание автономной установки Visual Studio
+# <a name="create-an-offline-installation-of-visual-studio-2017"></a>Создание автономной установки Visual Studio 2017
 
-Если вы хотите создать структуру автономной установки Visual Studio для последующей установки продукта на компьютере без подключения к Интернету, следуйте нашим рекомендациям.
+Если вам требуется выполнить автономную установку Visual Studio 2017, мы можем предложить вам полезные ресурсы для ознакомления.
 
-Выберите версию Visual Studio, которая вас интересует, и просмотрите сведения на одной из следующих страниц.
-
-* **Visual Studio 2015** — см. страницу [Create an Offline Installation of Visual Studio 2015](https://msdn.microsoft.com/library/mt706497.aspx) (Создание автономной установки Visual Studio 2015) на сайте MSDN.
-* **Visual Studio 2017** — см. страницу [Создание автономной установки Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md) на сайте docs.microsoft.com.
+* Если вы хотите установить один экземпляр Visual Studio 2017, но подключение к Интернету недоступно или ненадежно, см. статью [Установка Visual Studio 2017 в сетевых средах с низкой пропускной способностью или низким уровнем надежности](../install/install-visual-studio-in-offline-environment.md).  
+* Если вы являетесь администратором предприятия, которому требуется выполнить развертывание Visual Studio 2017 в сети клиентских рабочих станций, которые отделены от Интернета брандмауэром, см. статью [Создание сетевой установки Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) и [Особые рекомендации по установке Visual Studio в автономной среде](../install/install-visual-studio-in-offline-environment.md).
 

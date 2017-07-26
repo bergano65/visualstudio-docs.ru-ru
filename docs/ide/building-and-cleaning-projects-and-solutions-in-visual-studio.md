@@ -42,17 +42,18 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: ce6f346f77217e61d93879118610934422cdc642
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: f43b470f07e8b90c62d17c7905ad458a22d41ff1
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/24/2017
 
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Построение и очистка проектов и решений в Visual Studio
 Процедуры, описанные в этом разделе, используются для построения, перестроения или очистки всех или некоторые проектов или элементов проекта в решении. Пошаговые инструкции см. в статье [Пошаговое руководство. Построение приложения](../ide/walkthrough-building-an-application.md).  
   
 > [!NOTE]
->  Пользовательский интерфейс в вашем выпуске Visual Studio может отличаться от приведенного в этом разделе в зависимости от ваших текущих параметров. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров**. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Пользовательский интерфейс в вашем выпуске Visual Studio может отличаться от приведенного в этом разделе в зависимости от ваших текущих параметров. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров**. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
 ### <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Сборка, перестроение или очистка всего решения  
   

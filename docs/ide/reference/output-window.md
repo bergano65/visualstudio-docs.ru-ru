@@ -35,10 +35,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 989bc338e0cb8c49a2342d998e1e09e8f6b0eb9f
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 60636023fc506df5ed6e57d4f4d9c90e680ab607
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="output-window"></a>Окно выходных данных
@@ -74,7 +75,7 @@ ms.lasthandoff: 04/05/2017
   
  Некоторые возможности и команды интегрированной среды разработки, вызываемые в [командном окне](../../ide/reference/command-window.md), направляют свои выходные данные в окно **Вывод**. Выходные данные из внешних средств, таких как файлы BAT и COM, которые обычно отображаются в окне командной строки, направляются в область **Вывод** при выборе параметра **Использовать окно вывода** в окне [Управление внешними инструментами](../../ide/managing-external-tools.md). В областях **Вывод** могут отображаться и многие другие виды сообщений. Например, когда синтаксис Transact-SQL в хранимой процедуре проверяется по конечной базе данных, результаты отображаются в окне **Вывод**.  
   
- Также можно запрограммировать приложения для записи диагностических сообщений во время выполнения в область **Вывод**. Чтобы сделать это, используйте элементы класса <xref:System.Diagnostics.Debug> или <xref:System.Diagnostics.Trace> в пространстве <xref:System.Diagnostics> библиотеки классов .NET Framework. Элементы класса <xref:System.Diagnostics.Debug> отображают выходные данные при сборке конфигураций отладки проекта или решения; элементы класса <xref:System.Diagnostics.Trace> отображают выходные данные при сборке конфигурации отладки или выпуска. Дополнительные сведения см. в разделе [Диагностические сообщения в окне вывода](../../debugger/diagnostic-messages-in-the-output-window.md).  
+ Также можно запрограммировать приложения для записи диагностических сообщений во время выполнения в область **Вывод**. Для этого используйте члены класса <xref:System.Diagnostics.Debug> или <xref:System.Diagnostics.Trace> в пространстве имен <xref:System.Diagnostics> библиотеки классов .NET Framework. Члены класса <xref:System.Diagnostics.Debug> отображают выходные данные при сборке конфигураций отладки проекта или решения; члены класса <xref:System.Diagnostics.Trace> отображают выходные данные при сборке конфигурации отладки или выпуска. Дополнительные сведения см. в разделе [Диагностические сообщения в окне вывода](../../debugger/diagnostic-messages-in-the-output-window.md).  
   
  В [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] можно создать настраиваемые этапы и события сборки, предупреждения и ошибки которых отображаются и учитывается в области **Вывод**. Нажав клавишу F1 на строке выходных данных, можно отобразить соответствующий раздел справки. Дополнительные сведения см. в разделе [Форматирование выходных данных этапа настраиваемой сборки или события сборки](/cpp/ide/formatting-the-output-of-a-custom-build-step-or-build-event).  
   
@@ -86,4 +87,4 @@ ms.lasthandoff: 04/05/2017
  [Практическое руководство. Управление окном вывода](http://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [Компилирование и сборка](../../ide/compiling-and-building-in-visual-studio.md)   
  [Общие сведения о конфигурациях построения](../../ide/understanding-build-configurations.md)   
- [Общие сведения о библиотеке классов](http://msdn.microsoft.com/Library/7e4c5921-955d-4b06-8709-101873acf157)
+ [Общие сведения о библиотеке классов](/dotnet/standard/class-library-overview)

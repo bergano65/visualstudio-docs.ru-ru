@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 2f67cbb9e3a2895dc6c35e68dbd6b262862c6514
-ms.openlocfilehash: 5a42f721c30dba9c14f7871a0d771f07054e2550
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 8b1f56944190c60795d5bbd726388309caca7070
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="sign-in-to-visual-studio"></a>Выполните вход в Visual Studio
@@ -42,13 +43,13 @@ ms.lasthandoff: 02/22/2017
 
 -   **Предоставляет доступ в обширному ряду преимуществ** из программы Visual Studio Dev Essentials, включая бесплатное программное обеспечение, обучение, поддержку и многое другое. Дополнительные сведения см. в разделе [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) .  
 
--   **Синхронизация параметров Visual Studio** . Настраиваемые параметры, например привязки клавиш, макет окна и цветовая тема, вступают в силу сразу после входа в Visual Studio на любом другом устройстве. См. раздел [Синхронизированные параметры в Visual Studio](../ide/synchronized-settings-in-visual-studio.md).  
+-   **Синхронизация параметров Visual Studio**. Настраиваемые параметры, например привязки клавиш, макет окна и цветовая тема, вступают в силу сразу после входа в Visual Studio на любом другом устройстве. См. раздел [Синхронизированные параметры в Visual Studio](../ide/synchronized-settings-in-visual-studio.md).  
 
--   **Неограниченная по времени разблокировка выпуска Visual Studio Express** . Вы можете использовать любой из выпусков Visual Studio Express столько, сколько потребуется; ограничение ознакомительного периода в 30 дней снимается.  
+-   **Неограниченная по времени разблокировка выпуска Visual Studio Express**. Вы можете использовать любой из выпусков Visual Studio Express столько, сколько потребуется; ограничение ознакомительного периода в 30 дней снимается.  
 
 -   **Разблокировка Visual Studio Community Edition** вместо ограничения ознакомительного периода в 30 дней.  
 
--   **Продление пробного периода Visual Studio** . Пробный период Visual Studio Professional и Visual Studio Enterprise продлен с 30 до 90 дней.  
+-   **Продление пробного периода Visual Studio**. Пробный период Visual Studio Professional и Visual Studio Enterprise продлевается с 30 до 90 дней.  
 
 -   **Разблокировка Visual Studio при использовании учетной записи, связанной с подпиской MSDN или VSO**. См. раздел [Разблокирование Visual Studio](../ide/how-to-unlock-visual-studio.md).  
 

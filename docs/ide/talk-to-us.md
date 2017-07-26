@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: d580064a03291aad49134674bd42413ae05e3e72
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 99d1cfc816d5fd64367ff4524de89776ef25a4b8
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="talk-to-us"></a>Talk to Us
@@ -64,7 +65,7 @@ ms.lasthandoff: 03/07/2017
  Если вы хотите поделиться своими вопросами и ответами с другими разработчиками, воспользуйтесь [порталом сообщества разработчиков Visual Studio Developer](https://developercommunity.visualstudio.com/index.html), [форумами MSDN](http://social.msdn.microsoft.com/Forums/home) или сайтом [StackOverflow](http://stackoverflow.com/). Вы можете просматривать код других разработчиков и делиться собственными примерами на веб-сайтах [Примеры кода от разработчиков](http://code.msdn.microsoft.com/) и [CodePlex](http://www.codeplex.com/). И последняя, но не менее важная возможность — вы можете делиться своим опытом, отвечая на отзывы клиентов в разделе "Примечания" на любой странице Visual Studio на сайте [docs.microsoft.com](https://docs.microsoft.com/visualstudio/).
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Я хочу помочь улучшить качество документации по Visual Studio  
-  Используйте кнопку обратной связи (**Была ли эта страница полезной?**) в нижней части страницы. Эта кнопка имеется на всех страницах документации. Если вы ищете ответ, но не можете его найти, сообщите нам, какую информацию вы ищете. (Кроме того, можно добавить отзыв на любую страницу Visual Studio на сайте [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) в разделе "Примечания".)
+  Используйте кнопку обратной связи (**Была ли эта страница полезной?**) в нижней части страницы. Эта кнопка имеется на всех страницах документации. Если вы ищете ответ, но не можете его найти, сообщите нам, какие сведения вам нужны. (Кроме того, можно добавить отзыв на любую страницу Visual Studio на сайте [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) в разделе "Примечания".)
 
 ## <a name="see-also"></a>См. также  
  [How to Report a Problem with Visual Studio](how-to-report-a-problem-with-visual-studio-2017.md) (Как сообщить о проблеме с Visual Studio)

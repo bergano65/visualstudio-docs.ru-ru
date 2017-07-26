@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
 ms.openlocfilehash: 3d132b3500bebd4071e3391d30a3cf444136ddea
-ms.lasthandoff: 03/06/2017
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="step-5-add-label-references"></a>Шаг 5. Добавление ссылок на метки
@@ -40,8 +41,7 @@ ms.lasthandoff: 03/06/2017
   
 1.  Добавьте ссылки на метки в свою форму, используя следующий код.  
   
-     [!code-vb[VbExpressTutorial4Step5#5](../ide/codesnippet/VisualBasic/step-5-add-label-references_1.vb)]
-     [!code-cs[VbExpressTutorial4Step5#5](../ide/codesnippet/CSharp/step-5-add-label-references_1.cs)]  
+     [!code-vb[VbExpressTutorial4Step5#5](../ide/codesnippet/VisualBasic/step-5-add-label-references_1.vb)] [!code-cs[VbExpressTutorial4Step5#5](../ide/codesnippet/CSharp/step-5-add-label-references_1.cs)]  
   
      Ссылочные переменные похожи на операторы, которые вы использовали для добавления объектов (таких как объекты `Timer`, `List` и `Random`) в форму. Однако эти операторы не приводят к появлению в форме двух дополнительных меток, поскольку в них не используется ключевое слово `new`. Без ключевого слова `new` объект не создается. Именно поэтому `firstClicked` и `secondClicked` называются ссылочными переменными — они просто отслеживают (или ссылаются на) объекты `Label`.  
   
@@ -49,8 +49,7 @@ ms.lasthandoff: 03/06/2017
   
 2.  Измените свой обработчик событий Click для использования новой ссылочной переменной `firstClicked`. Удалите последний оператор (`label_Click()`) в методе обработчика событий `clickedLabel.ForeColor = Color.Black;` и замените его последующим оператором `if`. (Не забудьте включить комментарий и весь оператор `if`).  
   
-     [!code-vb[VbExpressTutorial4Step5#6](../ide/codesnippet/VisualBasic/step-5-add-label-references_2.vb)]
-     [!code-cs[VbExpressTutorial4Step5#6](../ide/codesnippet/CSharp/step-5-add-label-references_2.cs)]  
+     [!code-vb[VbExpressTutorial4Step5#6](../ide/codesnippet/VisualBasic/step-5-add-label-references_2.vb)] [!code-cs[VbExpressTutorial4Step5#6](../ide/codesnippet/CSharp/step-5-add-label-references_2.cs)]  
   
 3.  Сохраните и выполните программу. Выберите одну из меток и появится ее значок.  
   

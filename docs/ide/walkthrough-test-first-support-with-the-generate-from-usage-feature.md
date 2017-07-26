@@ -31,14 +31,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
-ms.openlocfilehash: 349cf26923ebee02162b6a113b39393aea01c58f
-ms.lasthandoff: 03/06/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: b5c18e7d208879498c1923403ec1bd213adffb5a
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/24/2017
 
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Пошаговое руководство. Основанная на тестировании поддержка с помощью возможности "Создание в результате использования"
-В этом разделе демонстрируется использование функции [Создание в результате использования](../misc/generate-from-usage.md), которая поддерживает разработку на основе тестирования.  
+В этом разделе демонстрируется использование функции [Создание в результате использования](../ide/visual-csharp-intellisense.md#generate-from-usage), которая поддерживает разработку на основе тестирования.  
   
  *Разработка на основе тестирования* является подходом к созданию программного обеспечения, в рамках которого на основе спецификаций продукта создаются модульные тесты, а затем создается исходный код, который приводит к успешному выполнению тестов. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] поддерживает разработку на основе тестирования путем создания новых типов и членов в исходном коде при их первом упоминании в тестовых случаях до их определения.  
   
@@ -68,7 +69,7 @@ ms.lasthandoff: 03/06/2017
 2.  Найдите объявление класса `UnitTest1` и переименуйте его в `AutomobileTest`. Если в C# есть конструктор `UnitTest1()` , переименуйте его в `AutomobileTest()`.  
   
     > [!NOTE]
-    >  Теперь функция IntelliSense поддерживает два режима завершения инструкций: *режим завершения* и *режим предложений*. Режим предложений следует применять в тех случаях, когда классы и члены используются до их определения. Когда открыто окно IntelliSense, для переключения между режимом завершения и режимом предложений можно нажать клавиши CTRL+ALT+ПРОБЕЛ. Дополнительные сведения см. в разделе [Using IntelliSense](../ide/using-intellisense.md) (Использование IntelliSense). Режим предложений поможет вам при вводе `Automobile` в следующем шаге.  
+    >  Теперь функция IntelliSense поддерживает два режима завершения инструкций: *режим завершения* и *режим предложений*. Режим предложений следует применять в тех случаях, когда классы и члены используются до их определения. Когда открыто окно IntelliSense, для переключения между режимом завершения и режимом предложений можно нажать клавиши CTRL+ALT+ПРОБЕЛ. Дополнительные сведения см. в разделе [Using IntelliSense](../ide/using-intellisense.md) . Режим предложений поможет вам при вводе `Automobile` в следующем шаге.  
   
 3.  Найдите метод `TestMethod1()` и переименуйте его в `DefaultAutomobileIsInitializedCorrectly()`. Внутри этого метода создайте экземпляр класса с именем `Automobile`, как показано в приведенных ниже примерах. Отобразится волнистая линия подчеркивания, свидетельствующая об ошибке компиляции, а под именем типа отобразится смарт-тег. Расположение смарт-тега зависит от того, используется ли [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] или [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
   
@@ -88,7 +89,7 @@ Visual C#
   
 5.  Теперь возможны два варианта. Вы можете щелкнуть команду **Создать класс для Automobile** , чтобы создать файл в тестовом проекте и заполнить его пустым классом с именем `Automobile`. Это быстрый способ создания класса в новом файле текущего проекта с модификаторами доступа по умолчанию. Вы также можете выбрать команду **Сформировать новый тип** , чтобы открыть диалоговое окно **Формирование нового типа** . Это обеспечивает размещение класса в существующем файле или добавление файла в другой проект.  
   
-     Выберите команду **Сформировать новый тип** , чтобы открыть диалоговое окно **Формирование нового типа** , которое показано на рисунке ниже. В списке **Проект** выберите элемент **GFUDemo_VB** или элемент **GFUDemo_CS**, чтобы среда [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] добавила файл в проект исходного кода, а не в тестовый проект.  
+     Выберите команду **Сформировать новый тип** , чтобы открыть диалоговое окно **Формирование нового типа** , которое показано на рисунке ниже. В списке **Проект** выберите элемент **GFUDemo_VB** или элемент **GFUDemo_CS** , чтобы среда [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] добавила файл в проект исходного кода, а не в тестовый проект.  
   
      ![Диалоговое окно "Сформировать новый тип"](../ide/media/genotherdialog.png "GenOtherDialog")  
 Диалоговое окно "Сформировать новый тип"  
@@ -103,8 +104,7 @@ Visual C#
   
      Добавьте приведенную ниже строку кода в элемент `DefaultAutomobileIsInitializedCorrectly`.  
   
-     [!code-cs[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
-     [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]  
+     [!code-cs[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)] [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]  
   
      Так как код ссылается на два неопределенных свойства `Automobile`, отображается смарт-тег. Щелкните смарт-тег для `Model` , а затем выберите пункт **Создание прототипа свойства**. Создайте заглушку свойства и для свойства `TopSpeed` .  
   
@@ -135,10 +135,9 @@ Visual C#
   
 1.  В этом тестовом методе будет создана заглушка конструктора, которая инициализирует свойства `Model` и `TopSpeed` указанными значениями. После этого будет добавлен код, завершающий тест. Добавьте приведенный ниже дополнительный тестовый метод в класс `AutomobileTest` .  
   
-     [!code-cs[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
-     [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]  
+     [!code-cs[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)] [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]  
   
-2.  Щелкните смарт-тег в новом конструкторе класса и выберите команду **Сформировать заглушку конструктора**. В файле класса `Automobile` обратите внимание на то, что новый конструктор проверил имена локальных переменных, используемых в вызове конструктора, обнаружил свойства с одинаковыми именами в классе `Automobile` и создал в теле конструктора код для хранения значений аргументов в свойствах `Model` и `TopSpeed` . (В [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] поля `_model` и `_topSpeed` нового конструктора являются неявно определенными резервными полями свойств `Model` и `TopSpeed`.)  
+2.  Щелкните смарт-тег в новом конструкторе класса и выберите команду **Сформировать заглушку конструктора**. В файле класса `Automobile` обратите внимание на то, что новый конструктор проверил имена локальных переменных, используемых в вызове конструктора, обнаружил свойства с одинаковыми именами в классе `Automobile` и создал в теле конструктора код для хранения значений аргументов в свойствах `Model` и `TopSpeed` . (В [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]поля `_model` и `_topSpeed` нового конструктора являются неявно определенными резервными полями свойств `Model` и `TopSpeed` .)  
   
 3.  После создания нового конструктора под вызовом конструктора по умолчанию в `DefaultAutomobileIsInitializedCorrectly`отображается волнистая линия. Сообщение об ошибке указывает на то, что класс `Automobile` не имеет конструктора, который не принимает ни одного аргумента. Чтобы создать явный конструктор по умолчанию без параметров, щелкните смарт-тег и выберите команду **Сформировать заглушку конструктора**.  
   
@@ -146,15 +145,13 @@ Visual C#
   
 1.  Предположим, что согласно спецификации новый объект `Automobile` может быть переведен в состояние Running, если его свойства `Model` и `TopSpeed` содержат значения, отличные от значений по умолчанию. Добавьте приведенные ниже строки в метод `AutomobileWithModelNameCanStart` .  
   
-     [!code-cs[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
-     [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]  
+     [!code-cs[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)] [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]  
   
 2.  Щелкните смарт-тег для вызова метода `myAuto.Start` , а затем выберите команду **Сформировать заглушку метода**.  
   
 3.  Щелкните смарт-тег для свойства `IsRunning` , а затем выберите команду **Создание прототипа свойства**. Класс `Automobile` теперь содержит следующий код:  
   
-     [!code-cs[VbTDDWalkthrough#4](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_4.cs)]
-     [!code-vb[VbTDDWalkthrough#4](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_4.vb)]  
+     [!code-cs[VbTDDWalkthrough#4](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_4.cs)] [!code-vb[VbTDDWalkthrough#4](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_4.vb)]  
   
 ### <a name="to-run-the-tests"></a>Запуск тестов  
   
@@ -173,13 +170,11 @@ Visual C#
   
 1.  Добавьте приведенный ниже код в конструктор по умолчанию, чтобы свойства `Model`, `TopSpeed` и `IsRunning` были инициализированы правильными значениями по умолчанию `"Not specified"`, `-1`и `True` (`true`).  
   
-     [!code-cs[VbTDDWalkthrough#5](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.cs)]
-     [!code-vb[VbTDDWalkthrough#5](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.vb)]  
+     [!code-cs[VbTDDWalkthrough#5](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.cs)] [!code-vb[VbTDDWalkthrough#5](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.vb)]  
   
 2.  При вызове метода `Start` он должен устанавливать флажок `IsRunning` в значение true только в том случае, если свойство `Model` или `TopSpeed` имеет значение, отличное от значения по умолчанию. Удалите `NotImplementedException` из тела метода и добавьте приведенный ниже код.  
   
-     [!code-cs[VbTDDWalkthrough#6](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.cs)]
-     [!code-vb[VbTDDWalkthrough#6](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.vb)]  
+     [!code-cs[VbTDDWalkthrough#6](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.cs)] [!code-vb[VbTDDWalkthrough#6](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.vb)]  
   
 ### <a name="to-run-the-tests-again"></a>Повторный запуск тестов  
   
@@ -189,7 +184,7 @@ Visual C#
 Результаты теста - окно  
   
 ## <a name="see-also"></a>См. также  
- [Создание в результате использования](../misc/generate-from-usage.md)   
+ [Создание в результате использования](../ide/visual-csharp-intellisense.md#generate-from-usage)   
  [Создание кода](../ide/writing-code-in-the-code-and-text-editor.md)   
  [Использование IntelliSense](../ide/using-intellisense.md)   
  [Модульное тестирование кода](../test/unit-test-your-code.md)
