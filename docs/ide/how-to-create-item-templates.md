@@ -32,10 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 9b29250916c91c98176585bbdb8c5a4018dbd6c7
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
+ms.openlocfilehash: 3524c21503d0432d509c607ea157f3fe675b443d
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/31/2017
 
 ---
 # <a name="how-to-create-item-templates"></a>Практическое руководство. Создание шаблонов элементов
@@ -43,7 +44,7 @@ ms.lasthandoff: 02/22/2017
 
  Мастер выполняет за вас большой объем работы по созданию базового шаблона, но во многих случаях необходимо вручную изменить VSTEMPLATE-файл после экспорта шаблона. Например, если элемент должен отображаться в диалоговом окне **Добавление нового элемента** для проекта приложения [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], необходимо выполнить ряд дополнительных действий. [Вторая процедура](../ide/how-to-create-item-templates.md#modify_template) этого раздела помогает выполнить данную задачу.  
 
- Чтобы указать, что шаблон должен отображаться только для определенных подтипов проекта, например Office, базы данных или веб-сайта, см. [этот раздел](../ide/how-to-create-multi-file-item-templates.md#enable_templates).  
+ Чтобы указать, что шаблон должен отображаться только для определенных подтипов проекта, например Office, базы данных или веб-сайта, см. [этот раздел](#enable_templates).  
 
  В некоторых случаях может потребоваться вручную создать шаблон элемента с нуля. В [третьей процедуре](../ide/how-to-create-item-templates.md#create_template) показано, как это сделать.  
 
@@ -80,11 +81,13 @@ ms.lasthandoff: 02/22/2017
 
 3.  Откройте VSTEMPLATE-файл в Visual Studio.  
 
-4.  Для проекта C# Магазина Windows 8.1 в VSTEMPLATE-файле добавьте следующий XML-код между открывающим и закрывающим тегами `<TemplateData>`: `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`.  
+4.  Для проекта C# универсального приложения Windows в VSTEMPLATE-файле добавьте следующий XML-код после открывающего тега `<TemplateData>`: `<TemplateID>Microsoft.CSharp.Class</TemplateID>`. 
 
-     Проект C++ магазина Windows 8.1 использует значение `WinRT-Native-6.3`. Для проектов Windows 10 и других типов проектов см. раздел [Элемент TemplateGroupID (шаблоны Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md).  
+    Для проекта C# Магазина Windows 8.1 в VSTEMPLATE-файле добавьте следующий XML-код между открывающим и закрывающим тегами `<TemplateData>`: `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`.  
 
-     В следующем примере показано все содержимое VSTEMPLATE-файла после добавления строки XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Этот примере характерен для проектов C#. Можно изменить элементы <ProjectTpe> и \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> для указания других языков и типов проектов.  
+    Проект C++ магазина Windows 8.1 использует значение `WinRT-Native-6.3`. Для проектов Windows 10 и других типов проектов см. раздел [Элемент TemplateGroupID (шаблоны Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md).  
+
+    В следующем примере показано все содержимое VSTEMPLATE-файла после добавления строки XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Этот примере характерен для проектов C#. Можно изменить элементы <ProjectTpe> и \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> для указания других языков и типов проектов.  
 
     ```xml  
     <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
@@ -116,8 +119,9 @@ ms.lasthandoff: 02/22/2017
  Теперь можно добавить основанный на этом шаблоне элемент в проект [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] с помощью диалогового окна **Добавление нового элемента**.  
 
  Дополнительные сведения об именах параметров см. в разделе [Параметры шаблона](../ide/template-parameters.md).  
-
-### <a name="to-enable-templates-for-specific-project-sub-types"></a>Включение шаблонов для конкретных подтипов проектов  
+  
+ 
+### <a name="enable_templates"></a> Включение шаблонов для конкретных подтипов проектов  
 
 1.  Среда разработки позволяет предоставлять элементы проекта из диалогового окна "Добавление элемента" для определенных типов проектов. Используйте эту процедуру, чтобы сделать пользовательские элементы доступными для проектов Windows, веб-сайтов, Office или баз данных.  
 

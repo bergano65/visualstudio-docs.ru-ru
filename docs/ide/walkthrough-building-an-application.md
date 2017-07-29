@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 4f237be3ffdfe2bca52e885822a9fbfbbf97ba6a
-ms.openlocfilehash: 738e8c25509253872274a49303b2b02a8f7ba1a6
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: dc4bcdcc11e357979641268ae77a8e39f8408f7a
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="walkthrough-building-an-application"></a>Пошаговое руководство. Построение приложения
@@ -243,7 +244,7 @@ ms.lasthandoff: 02/22/2017
   
      ![Команда "Собрать решение" в меню "Сборка"](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
   
-#### <a name="to-specify-a-release-build-for-visual-c"></a>Указание сборки выпуска для Visual C# #
+#### <a name="to-specify-a-release-build-for-visual-c"></a>Указание сборки выпуска для Visual C# #
   
 1.  Открывается **Конструктор проектов**.  
   
@@ -271,7 +272,7 @@ ms.lasthandoff: 02/22/2017
  Поздравляем! Вы успешно выполнили это пошаговое руководство.  
   
 ## <a name="see-also"></a>См. также  
- [Пошаговое руководство. Сборка проекта (C++)](http://msdn.microsoft.com/Library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)   
+ [Пошаговое руководство. Сборка проекта (C++)](/cpp/ide/walkthrough-building-a-project-cpp)   
  [Общие сведения о предварительной компиляции проектов веб-приложений ASP.NET](http://msdn.microsoft.com/en-us/b940abbd-178d-4570-b441-52914fa7b887)   
  [Пошаговое руководство. Использование MSBuild](../msbuild/walkthrough-using-msbuild.md)
 

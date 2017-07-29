@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 1464a7e654c68828e132e2d6973c9e558ebe23a5
+ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
+ms.openlocfilehash: e5ed1f9b6771b489218d2c6118454f1070535b6d
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 05/26/2017
 
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Управление жизненным циклом приложений (ALM) для приложений Xamarin
@@ -81,7 +81,7 @@ ms.lasthandoff: 05/13/2017
 |-------------|----------------------------|-------------------------|  
 |[Используйте управление версиями в Team Foundation](http://msdn.microsoft.com/Library/1d629052-c65d-4c5d-81eb-eaa4413fe285) или Visual Studio Team Services|Да||  
 |[Приступая к работе с Git в Team Services](http://msdn.microsoft.com/Library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Да||  
-|[Анализ кода/повышение качества кода (ссылки, предлагаемые изменения и т. д.)](http://msdn.microsoft.com/Library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Да||  
+|[Улучшение качества кода](/visualstudio/test/improve-code-quality)|Да||  
 |[Поиск изменений кода и других журналов](../ide/find-code-changes-and-other-history-with-codelens.md)|Да|Кроме выхода за границы конкретной платформы, где реализация не разрешается до времени выполнения.|  
 |[Использование карт кода для отладки приложений](../modeling/use-code-maps-to-debug-your-applications.md)|Да||  
   
@@ -109,7 +109,7 @@ ms.lasthandoff: 05/13/2017
 |[Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)|Только для Windows|Средства записи тестов пользовательского интерфейса Visual Studio предназначено только для Windows. Средства для других платформ описаны в разделе [Средство записи тестов Xamarin](https://www.xamarin.com/test-cloud/recorder).|  
   
 ## <a name="improve-code-quality"></a>Улучшите качество кода  
- Ссылка: **[Улучшите качество кода](http://msdn.microsoft.com/Library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Ссылка: **[Улучшите качество кода](/visualstudio/test/improve-code-quality)**  
   
 |Функция|Поддерживается в Xamarin|Дополнительные комментарии|  
 |-------------|----------------------------|-------------------------|  

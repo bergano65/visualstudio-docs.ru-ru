@@ -32,10 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 1a1b6d341325477c39ea3cb1faee029f78069325
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 8bf0b097be929b30627e0f1139c6e0b145933ab4
+ms.openlocfilehash: 93e0c6676d48a0164dcf3b184bcb886934372787
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/26/2017
 
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Обзор настройки для различных версий в Visual Studio
@@ -84,16 +85,15 @@ ms.lasthandoff: 02/22/2017
  Чтобы нацелиться на определенную версию .NET Framework, нужно сначала установить подходящие ссылки на сборки. Ссылки на сборки для .NET Framework версий 2.0, 3.0 и 3.5 включены в пакет обновления 1 (SP1) для .NET Framework 3.5, который можно скачать на веб-сайте [Центра загрузки Майкрософт, Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=227602). Ссылки на сборки для клиентского профиля .NET Framework 3.5, .NET Framework 4, клиентского профиля .NET Framework 4 и Silverlight также доступны на веб-сайте [скачиваемых материалов для Visual Studio](http://go.microsoft.com/fwlink/?LinkId=179687).  
   
 > [!NOTE]
->  Клиентский профиль .NET Framework — это подмножество компонентов .NET Framework, предоставляющее ограниченный набор библиотек и функций. Дополнительные сведения о клиентских профилях см. в разделе [Клиентский профиль .NET Framework](http://msdn.microsoft.com/Library/f0219919-1f02-4588-8704-327a62fd91f1).  
+>  Клиентский профиль .NET Framework — это подмножество компонентов .NET Framework, предоставляющее ограниченный набор библиотек и функций. Дополнительные сведения о клиентских профилях см. в разделе [Клиентский профиль .NET Framework](/dotnet/framework/deployment/client-profile).  
   
- Диалоговое окно **Добавить ссылку** позволяет отключить системные сборки, не относящиеся к целевой версии [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], чтобы их нельзя было добавить в проект случайно. (Системные сборки — это DLL-файлы, включенные в версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].) Ссылки, которые относятся к версии платформы, которая старше целевой версии, не будут разрешены, а зависящие от них элементы управления невозможно будет добавить. Если вы хотите активировать такую ссылку, измените целевую версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] для проекта на ту, которая содержит эту ссылку.  Дополнительные сведения см. в разделе [Знакомство с конструктором проектов](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+ Диалоговое окно **Добавить ссылку** позволяет отключить системные сборки, не относящиеся к целевой версии [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], чтобы их нельзя было добавить в проект случайно. (Системные сборки — это DLL-файлы, включенные в версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].) Ссылки, которые относятся к версии платформы, которая старше целевой версии, не будут разрешены, а зависящие от них элементы управления невозможно будет добавить. Если вы хотите активировать такую ссылку, измените целевую версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] для проекта на ту, которая содержит эту ссылку.  Дополнительные сведения см. в [практическом руководстве по настройке конкретной версии .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
  Дополнительные сведения о ссылках на сборки см. в разделе [Разрешение сборок во время разработки](../msbuild/resolving-assemblies-at-design-time.md).  
   
 ## <a name="enabling-linq"></a>Включение LINQ  
- При нацеливании на .NET Framework 3.5 или более поздней версии ссылка на System.Core и импорт уровня проекта для System.Linq (в Visual Basic) добавляются автоматически. Если вы хотите использовать функции LINQ, нужно также включить параметр "Option Infer on" (только в Visual Basic). Ссылка и импорт удаляются автоматически при изменении целевой версии на более раннюю версию .NET Framework. Дополнительные сведения см. в разделе [Практическое руководство. Создание проекта LINQ](../Topic/How%20to:%20Create%20a%20LINQ%20Project.md).  
+ При нацеливании на .NET Framework 3.5 или более поздней версии ссылка на System.Core и импорт уровня проекта для System.Linq (в Visual Basic) добавляются автоматически. Если вы хотите использовать функции LINQ, нужно также включить параметр "Option Infer on" (только в Visual Basic). Ссылка и импорт удаляются автоматически при изменении целевой версии на более раннюю версию .NET Framework. Дополнительные сведения см. в разделе [Работа с LINQ](/dotnet/csharp/tutorials/working-with-linq).  
   
 ## <a name="see-also"></a>См. также  
  [Настройка для различных версий](../msbuild/msbuild-multitargeting-overview.md)   
- [Настройка веб-проектов ASP.NET для различных версий .NET Framework](http://msdn.microsoft.com/Library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)   
  [Совместимость платформ и требования к системе](http://www.microsoft.com/visualstudio/eng/products/compatibility)

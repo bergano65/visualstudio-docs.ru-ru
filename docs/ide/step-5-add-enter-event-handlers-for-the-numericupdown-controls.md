@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: c4060c35d7bfd0f82cb05a7fbb99931fae0d1f1e
-ms.lasthandoff: 02/22/2017
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Шаг 5. Добавление обработчиков событий входа для элементов управления NumericUpDown
@@ -69,8 +70,7 @@ ms.lasthandoff: 02/22/2017
   
 3.  В методе для обработчика событий **answer_Enter** введите следующий код.  
   
-     [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
-     [!code-cs[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]  
+     [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)] [!code-cs[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]  
   
      Этот код может показаться сложным, однако в нем легко разобраться, если просмотреть его шаг за шагом. Сначала посмотрите на верхнюю часть метода — `object sender` в C# или `sender As System.Object` в Visual Basic. Этот параметр ссылается на объект, событие которого срабатывает. Он называется отправителем. В данном случае объектом-отправителем является элемент управления NumericUpDown. Поэтому в первой строке метода указывается, что отправителем является не просто какой-либо объект, а именно элемент управления NumericUpDown. (каждый элемент управления NumericUpDown это объект, но не каждый объект, это элемент управления NumericUpDown). Элемент управления NumericUpDown в этом методе называется **answerBox**, поскольку он будет использоваться для всех элементов управления NumericUpDown в форме, а не только для элемента управления NumericUpDown с именем "sum". Поскольку переменная answerBox объявлена в этом методе, ее область действия ограничена этим методом. Иными словами, эту переменную можно использовать только внутри этого метода.  
   

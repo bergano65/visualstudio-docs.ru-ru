@@ -30,10 +30,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
-ms.openlocfilehash: 889d538b732b360b475788ec6d67b47920703c73
-ms.lasthandoff: 04/06/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 77c4408fcd93a776468cf5fb23b3807a2b8d594d
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/24/2017
 
 ---
 # <a name="options-text-editor-cc-experimental"></a>"Параметры", "Текстовый редактор", C/C++, "Экспериментальный"
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/06/2017
  Эти функции доступны в установке Visual Studio 2017.  
   
 > [!NOTE]
->  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. См. раздел [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. См. статью [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="enable-predictive-intellisense"></a>Включить прогнозный IntelliSense
 Прогнозный IntelliSense ограничивает число результатов, отображаемых в раскрывающемся списке IntelliSense, чтобы вы видели лишь результаты, релевантные в данном контексте. Например, если ввести <code>int x =</code> и вызвать раскрывающийся список IntelliSense, вы увидите только целые числа или функции, которые их возвращают. По умолчанию прогнозный IntelliSense отключен.
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/06/2017
   
 -   **Добавление пространства имен using и полное определение символа** — аналогично предыдущему пункту, но относится к пространствам имен.  
   
--   **Добавление недостающих точек с запятой**  
+-   **Добавление недостающих точек с запятой.**  
   
 -   **Справка MSDN** — поиск информации о сообщении об ошибке на сайте MSDN.  
   

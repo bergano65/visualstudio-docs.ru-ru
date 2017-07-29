@@ -39,10 +39,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d0d537c3611faff3b81760daf95b6fc01e0d01a0
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: ba2ed6d0973e4775b1137c300608bc5ca1bdcb66
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Рефакторинг классов и типов (конструктор классов)
@@ -59,7 +60,7 @@ ms.lasthandoff: 02/22/2017
 |**Работа с интерфейсами:** в конструкторе классов можно реализовать интерфейс на схеме классов путем подключения его к классу, который предоставляет код для методов интерфейса.|-   [Практическое руководство. Реализация интерфейса (конструктор классов)](../ide/how-to-implement-an-interface-class-designer.md)|  
 |**Типы рефакторинга, члены типов и параметры:** при помощи конструктора классов можно переименовывать типы, переопределять члены типов или перемещать их из одного типа в другой. Можно также создать типы, допускающие значение NULL.|-   [Переименование типов и членов типов](../ide/refactoring-classes-and-types-class-designer.md#RenamingTypesAndMembers)<br />-   [Перемещение членов типа из одного типа в другой](../ide/refactoring-classes-and-types-class-designer.md#MovingTypeMembers)<br />-   [Практическое руководство. Создание типа, допускающего значение NULL (конструктор классов)](../ide/how-to-create-a-nullable-type-class-designer.md)|  
   
-###  <a name="a-namerenamingtypesandmembersa-renaming-types-and-type-members"></a><a name="RenamingTypesAndMembers"></a> Переименование типов и членов типов  
+###  <a name="RenamingTypesAndMembers"></a> Переименование типов и членов типов  
  В конструкторе классов тип или член типа можно переименовать на схеме классов или в окне «Свойства». В окне "Сведения о классе" можно изменить имя члена, но не тип. Переименование типа или члена типа распространяется на все окна и места кода, где применялось старое имя.  
   
 ##### <a name="to-rename-a-name-in-the-class-designer"></a>Изменение имени в конструкторе классов  
@@ -93,7 +94,7 @@ ms.lasthandoff: 02/22/2017
   
      Изменение имени распространится на все окна и места кода в текущем проекте, где применялось старое имя.  
   
-###  <a name="a-namemovingtypemembersa-moving-type-members-from-one-type-to-another"></a><a name="MovingTypeMembers"></a> Перемещение членов типа из одного типа в другой  
+###  <a name="MovingTypeMembers"></a> Перемещение членов типа из одного типа в другой  
  С помощью **конструктора классов**можно перемещать член типа из одного типа в другой, если оба типа отображаются на текущей схеме классов.  
   
 ##### <a name="to-move-a-type-member-from-one-type-to-another"></a>Перемещение члена типа из одного типа в другой  

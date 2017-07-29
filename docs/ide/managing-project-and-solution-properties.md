@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 332ef0d4534d8f607a1b5d92038855ebd247657f
-ms.lasthandoff: 04/05/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 359e1eb5df8f19774d352ace631802367b6dd8c9
+ms.openlocfilehash: 481153e7f3d609c56f313ff5ee9f3f1b511dc5ef
+ms.contentlocale: ru-ru
+ms.lasthandoff: 07/11/2017
 
 ---
 # <a name="managing-project-and-solution-properties"></a>Управление свойствами проекта и решения
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/05/2017
   
  ![Контекстное меню проекта](../ide/media/vs2015_proj_prop_menu.gif "vs2015_proj_prop_menu")  
   
- У проектов .NET также есть узел свойств в дереве проекта.  
+ Проекты .NET также могут содержать узел свойств в дереве проекта.  
   
  ![Узел свойств в дереве обозревателя решений](../ide/media/vs2015_props_se.png "VS2015_Props_SE")  
   
@@ -48,8 +49,8 @@ ms.lasthandoff: 04/05/2017
 ## <a name="project-properties"></a>Свойства проекта  
  Свойства проекта упорядочены по группам, у каждой из которых есть собственная страница свойств. При этом могут использоваться различные страницы для разных языков и типов проектов.  
   
-### <a name="c-and-visual-basic-projects"></a>Проекты C# и Visual Basic  
- В проектах C# и Visual Basic свойства отображаются в **конструкторе проектов**. На следующем рисунке показана страница свойств сборки для проекта WPF на C#.  
+### <a name="c-visual-basic-and-f-projects"></a>Проекты C#, Visual Basic и F#  
+ В проектах C#, Visual Basic и F# свойства отображаются в **конструкторе проектов**. На следующем рисунке показана страница свойств сборки для проекта WPF на C#.  
   
  ![Конструктор проектов Visual Studio](../ide/media/vs2015_proppage_build.png "VS2015_PropPage_Build")  
   
@@ -67,3 +68,4 @@ ms.lasthandoff: 04/05/2017
   
 ## <a name="see-also"></a>См. также  
  [Решения и проекты в Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+

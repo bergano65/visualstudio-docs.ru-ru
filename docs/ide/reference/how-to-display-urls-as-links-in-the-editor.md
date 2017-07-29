@@ -1,41 +1,58 @@
 ---
 title: "Практическое руководство. Отображение URL-адресов как ссылок в редакторе | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "редактор кода, отображение URL-адресов"
-  - "редакторы, отображение URL-адресов"
-  - "URL-адреса, открытие"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- URLs, opening
+- Code Editor, displaying URLs
+- editors, displaying URLs
 ms.assetid: 7c673953-476e-4897-9c2d-1fc15556c172
 caps.latest.revision: 9
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# Практическое руководство. Отображение URL-адресов как ссылок в редакторе
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 47b609a3138dff39db7b817ce320a0a46665127a
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/24/2017
 
-Можно сделать так, чтобы URL\-адреса в коде воспринимались редактором кода как активные ссылки.  В этом случае:  
+---
+# <a name="how-to-display-urls-as-links-in-the-editor"></a>Практическое руководство. Отображение URL-адресов как ссылок в редакторе
+Редактор кода может обрабатывать UR-адреса в коде как активные ссылки. При использовании этой функции URL-адреса:  
   
--   URL\-адреса отображаются подчеркнутыми.  
+-   отображаются подчеркнутыми;  
   
--   При наведении кнопки мыши на адрес выводится **Подсказка**.  
+-   при наведении на них указателя мыши выводятся **подсказки**;  
   
--   При нажатии клавиши **CTRL** и левой кнопкой мыши на ссылке сообщается о попытке открытия веб\-узла.  По умолчанию веб\-узел открывается во внутреннем браузере.  
+-   при нажатии клавиш **CTRL** + щелчок левой кнопкой мыши предпринимается попытка открыть указанный веб-сайт. По умолчанию веб-сайт отображается во внутреннем веб-браузере.  
   
 > [!NOTE]
->  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих настроек или выпуска.  Чтобы изменить параметры, в меню **Сервис** выберите команду **Импорт и экспорт параметров**.  Дополнительные сведения см. в разделе [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/ru-ru/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## Процедура  
+## <a name="procedure"></a>Процедура  
   
-#### Отображение URL\-адресов как ссылок  
+#### <a name="to-display-urls-as-links"></a>Отображение URL-адресов как ссылок  
   
 1.  В меню **Сервис** выберите пункт **Параметры**.  
   
@@ -47,9 +64,9 @@ caps.handback.revision: 9
   
      Чтобы изменить параметр для всех языков, разверните папку **Все языки** и выберите **Общие**.  
   
-4.  В **Отображение** выберите **Открывать URL\-адреса однократным щелчком**.  
+4.  В разделе **Отображение** выберите **Открывать URL-адреса однократным щелчком**.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Настройка редактора](../../ide/customizing-the-editor.md)   
  [Диалоговое окно "Параметры текстового редактора"](../../ide/reference/text-editor-options-dialog-box.md)   
  [Создание кода](../../ide/writing-code-in-the-code-and-text-editor.md)

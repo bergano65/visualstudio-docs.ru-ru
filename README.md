@@ -7,7 +7,9 @@
 
 Добро пожаловать! Этот репозиторий содержит исходные файлы для технической документации по проводимым работам для Visual Studio 2017. Эти разделы опубликованы на [сайте документации по Visual Studio](https://docs.microsoft.com/visualstudio).
 
-Документация для Visual Basic и Visual C# находится в отдельном репозитории по адресу [http://github.com/dotnet/core-docs](http://github.com/dotnet/core-docs), а документация по Visual C++ — в репозитории по адресу [http://github.com/Microsoft/cpp-docs](http://github.com/Microsoft/cpp-docs).
+Этот репозиторий был перемещен 23 июня 2017 г. из раздела https://github.com/Microsoft/vsdocs. Трафик на старые URL-адреса перенаправляется сюда.
+
+Документация для Visual Basic и Visual C# находится в отдельном репозитории по адресу [http://github.com/dotnet/core-docs](http://github.com/dotnet/core-docs), а документация по Visual C++ — в репозитории по адресу [http://github.com/MicrosoftDocs/cpp-docs](http://github.com/MicrosoftDocs/cpp-docs).
 
 ## <a name="contributing-to-the-documentation"></a>Участие в работе над документацией
 
@@ -17,4 +19,4 @@
 Некоторые области Visual Studio имеют в этом репозитории собственные папки, например **debugger** для отладки, **ide** для интегрированной среды разработки (IDE) Visual Studio и т. д. Вложенная папка **/media** в каждой из папок содержит файлы ART для соответствующих тем. Дополнительные сведения см. в [руководстве по участию](CONTRIBUTING.md).
 
 Этот проект ввела [Microsoft Open источника Кодекс](https://opensource.microsoft.com/codeofconduct/). Дополнительные сведения см. в [вопросах и ответах по правилам поведения](https://opensource.microsoft.com/codeofconduct/faq/). С любыми дополнительными вопросами или комментариями обратитесь по адресу [opencode@microsoft.com](mailto:opencode@microsoft.com).
-# <a name="officedev-reference"></a>officedev-reference
+

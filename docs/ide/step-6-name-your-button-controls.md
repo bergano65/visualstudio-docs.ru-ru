@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 09ce424d13fd6fa2e6e511370f509dd54a7c1a1e
 ms.openlocfilehash: 9af9f76e799c39533785f9230be867ace4dbee6a
-ms.lasthandoff: 02/22/2017
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="step-6-name-your-button-controls"></a>Шаг 6. Присвоение имен элементам управления "Кнопка"
@@ -52,7 +53,7 @@ ms.lasthandoff: 02/22/2017
 Окно "Свойства" с именем closeButton  
   
     > [!NOTE]
-    >  Если попробовать изменить имя кнопки на **closeButton**, с пробелом между словами close и Button, среда интегрированной разработки выведет сообщение об ошибке «Недопустимое значение свойства». Пробелы (а также несколько других символов) запрещено использовать в именах элементов управления.  
+    >  If you try changing the name of your button to **closeButton**, with a space between the words close and Button, the IDE displays an error message: "Property value is not valid." Пробелы (а также несколько других символов) запрещено использовать в именах элементов управления.  
   
 2.  Переименуйте другие три кнопки как **backgroundButton**, **clearButton**, **showButton**. Имена можно проверить в раскрывающемся списке селектора элементов управления в окне **Свойства** . Отобразятся новые имена кнопок.  
   
@@ -63,8 +64,7 @@ ms.lasthandoff: 02/22/2017
   
 4.  Обратите внимание на эту часть кода. (Откройте вкладку **VB** ниже, если используется Visual Basic для просмотра Visual Basic-версии кода.)  
   
-     [!code-vb[VbExpressTutorial1Step6#1](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_1.vb)]
-     [!code-cs[VbExpressTutorial1Step6#1](../ide/codesnippet/CSharp/step-6-name-your-button-controls_1.cs)]  
+     [!code-vb[VbExpressTutorial1Step6#1](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_1.vb)] [!code-cs[VbExpressTutorial1Step6#1](../ide/codesnippet/CSharp/step-6-name-your-button-controls_1.cs)]  
   
      Вы видите код с именем `showButton_Click()`. Интегрированная среда разработки добавила его в код формы при открытии файла кода для кнопки **showButton** . Во время разработки при открытии файла кода для элемента управления в форме для элемента управления создается код, если он еще не существует. Этот код, известный как *метод*, выполняется при запуске программы и использовании этого элемента управления (в данном случае — кнопка **Показать рисунок** ).  
   
@@ -80,8 +80,7 @@ ms.lasthandoff: 02/22/2017
   
      Ниже показан новый код, который представлен в редакторе кода.  
   
-     [!code-vb[VbExpressTutorial1Step6#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
-     [!code-cs[VbExpressTutorial1Step6#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]  
+     [!code-vb[VbExpressTutorial1Step6#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)] [!code-cs[VbExpressTutorial1Step6#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]  
   
      Пять методов, которые были добавлены, называются *обработчики событий*, так как программа вызывает их каждый раз, когда происходит событие (например, пользователь нажимает кнопку или устанавливает флажок).  
   

@@ -1,53 +1,28 @@
 # [Python в Visual Studio](python-in-visual-studio.md)
-
 ## [Установка](installation.md)
-
 ### [Среды Python](python-environments.md)
-
+### [Работа с Python в службе приложений Azure](managing-python-on-azure-app-service.md)
 ### [Пакет Azure SDK для Python](azure-sdk-for-python.md)
-
 ## [Начало работы с Python](getting-started.md)
-
 ### [Публикация в Azure](publishing-to-azure.md)
-
 ### [Создание расширения C++ для Python](cpp-and-python.md)
-
 ## [Проекты Python](python-projects.md)
-
 ### [Шаблоны веб-проектов](template-web.md)
-
 ### [Шаблоны веб-проектов Django](template-django.md)
-
 ### [Шаблон облачной службы Azure](template-azure-cloud-service.md)
-
 ## [Редактирование кода](code-editing.md)
-
 ### [Форматирование кода](code-formatting.md)
-
 ### [Оптимизация кода](code-refactoring.md)
-
 ### [Использование PyLint](code-pylint.md)
-
 ## [Интерактивный Python (REPL)](interactive-repl.md)
-
 ### [Использование IPython REPL](interactive-repl-ipython.md)
-
 ## [Отладка](debugging.md)
-
 ### [Удаленная отладка в Azure](debugging-azure-remote.md)
-
 ### [Решение проблем с удаленной отладкой в Azure](debugging-azure-remote-troubleshooting.md)
-
 ### [Кроссплатформенная удаленная отладка](debugging-cross-platform-remote.md)
-
 ### [Отладка в смешанном режиме для Python/C++](debugging-mixed-mode.md)
-
 ### [Символы для отладки в смешанном режиме](debugging-symbols-for-mixed-mode.md)
-
 ## [Параметры](options.md)
-
 ## [Профилирование](profiling.md)
-
 ## [Модульное тестирование](unit-testing.md)
-
 ## [Использование расширения Cookiecutter](cookiecutter.md)
