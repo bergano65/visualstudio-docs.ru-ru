@@ -134,7 +134,7 @@ namespace Simple
   
  Полученный Windows приложения выглядит следующим образом:  
   
- ![SimpleSolution](../../extensibility/internals/media/simplesolution.png "SimpleSolution")  
+ ![SimpleSolution](~/extensibility/internals/media/simplesolution.png "SimpleSolution")  
   
  Первым и единственным \<проекта настроек тег в операции чтения шаблона:  
   

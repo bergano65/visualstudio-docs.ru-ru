@@ -35,7 +35,7 @@ caps.handback.revision: 22
   
 3.  При добавлении объекта `List` обратите внимание на открывшееся окно **IntelliSense**.  Ниже приведен пример на языке Visual C\#, но аналогичный текст отобразится и при добавлении списка в Visual Basic.  
   
-     ![Окно свойств, отображающее событие Click](../ide/media/express_listintellisense.png "Express\_ListIntellisense")  
+     ![Окно свойств, отображающее событие Click](~/ide/media/express_listintellisense.png "Express\_ListIntellisense")  
 Окно IntelliSense  
   
     > [!NOTE]

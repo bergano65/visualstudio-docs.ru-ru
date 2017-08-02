@@ -59,7 +59,7 @@ caps.handback.revision: 27
   
      Обратите внимание, что при вводе точки \(.\) после слова "randomizer" в коде открывается окно IntelliSense, в котором отображаются все методы объекта `Random`, которые можно вызвать.  Например, в списке Intellisense присутствует метод `Next()`, как показано ниже.  
   
-     ![Метод Next](../ide/media/express_randomwhite.png "Express\_RandomWhite")  
+     ![Метод Next](~/ide/media/express_randomwhite.png "Express\_RandomWhite")  
 Метод Next  
   
      При вводе точки после объекта IntelliSense отображает список членов объекта, таких как свойства, методы и события.  

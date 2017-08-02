@@ -46,18 +46,18 @@ ms.lasthandoff: 05/13/2017
 
      Например, на компьютере с юбилейным обновлением Windows 10 нажмите кнопку **Пуск** и прокрутите список до буквы **У**. Вы увидите пункт **Установщик Visual Studio**.  
 
-     ![Установщик Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Поиск установщика Microsoft Visual Studio")
+     ![Установщик Visual Studio](~/install/media/vs2017-locate-the-visual-studio-installer.PNG "Поиск установщика Microsoft Visual Studio")
 
      >[!NOTE]
      На некоторых компьютерах установщик Visual Studio может быть указан под буквой **"M"** — для **Microsoft Visual Studio**.
 
-2.  Щелкните установщик, чтобы запустить его, щелкните ![Значок сведений](media/vs2017uninstall-UninstallIcon.png "Выбор значка параметров") и выберите пункт **Удалить**.  
+2.  Щелкните установщик, чтобы запустить его, щелкните ![Значок сведений](~/install/media/vs2017uninstall-UninstallIcon.png "Выбор значка параметров") и выберите пункт **Удалить**.  
 
-     ![Изменение Visual Studio 2017: изменение, запуск, восстановление или удаление](media/vs2017-uninstall.PNG "Восстановление или удаление Visual Studio 2017")  
+     ![Изменение Visual Studio 2017: изменение, запуск, восстановление или удаление](~/install/media/vs2017-uninstall.PNG "Восстановление или удаление Visual Studio 2017")  
 
 3.  Нажмите кнопку **ОК**, чтобы подтвердить действие.
 
-     ![Изменение Visual Studio 2017: удаление продукта](media/vs2017-uninstall-confirm.PNG "Подтверждение удаления Visual Studio 2017")  
+     ![Изменение Visual Studio 2017: удаление продукта](~/install/media/vs2017-uninstall-confirm.PNG "Подтверждение удаления Visual Studio 2017")  
 
 Если в будущем вы захотите снова установить Visual Studio 2017, запустите установщик Visual Studio и выберите **Установить** на экране выбора.
 

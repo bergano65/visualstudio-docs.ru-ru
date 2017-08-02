@@ -63,7 +63,7 @@ ms.lasthandoff: 05/19/2017
   
 2.  Выберите событие **Ввод**, введите `answer_Enter` и нажмите клавишу ВВОД.  
   
-     ![Диалоговое окно "Свойства"](../ide/media/express_answerenter.png "Express_AnswerEnter")  
+     ![Диалоговое окно "Свойства"](~/ide/media/express_answerenter.png "Express_AnswerEnter")  
 Диалоговое окно "Свойства"  
   
      Вы только что добавили обработчик событий "Ввод" для элемента управления NumericUpDown с именем "sum" и назвали этот обработчик **answer_Enter**.  

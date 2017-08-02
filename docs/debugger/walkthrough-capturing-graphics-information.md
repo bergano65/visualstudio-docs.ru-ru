@@ -48,7 +48,7 @@ manager: "ghogen"
   
 #### Захват графических данных  
   
--   На панели инструментов "Диагностика графики" нажмите кнопку **Захват**.![Значок кнопки захвата графики](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
+-   На панели инструментов "Диагностика графики" нажмите кнопку **Захват**.![Значок кнопки захвата графики](~/debugger/graphics/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
   
      \-или\-  
   

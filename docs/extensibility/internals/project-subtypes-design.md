@@ -52,7 +52,7 @@ caps.handback.revision: 32
   
  На следующем рисунке показано схематическое представление многоуровневого агрегата подтипа проекта.  
   
- ![График Visual Studio multilevel projectflavor](../../extensibility/internals/media/vs_multilevelprojectflavor.gif "VS\_MultilevelProjectFlavor")  
+ ![График Visual Studio multilevel projectflavor](~/extensibility/internals/media/vs_multilevelprojectflavor.gif "VS\_MultilevelProjectFlavor")  
 Многоуровневый подтип проекта  
   
  Многоуровневый агрегат подтипа проекта состоит из 3 уровней базового проекта, статистическая обработка подтипом проекта, затем далее статистическая обработка проводится дополнительным подтипом данного проекта.  Диаграмма фокусируется на некоторых поддержка интерфейсов, предоставляемых как часть [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] архитектура подтипа проекта.  
@@ -62,7 +62,7 @@ caps.handback.revision: 32
   
  Ниже рассматриваются реализации расширителей автоматизации, конфигурация проекта обзор объект в частности, используемое для подтипов проекта, чтобы расширить основную систему проектов.  
   
- ![График авто расширения проекта Flavor VS](../../extensibility/internals/media/vs_projectflavorautoextender.png "VS\_ProjectFlavorAutoExtender")  
+ ![График авто расширения проекта Flavor VS](~/extensibility/internals/media/vs_projectflavorautoextender.gif "VS\_ProjectFlavorAutoExtender")  
 Расширитель автоматизации подтипа проекта.  
   
  Подтипы проектов могут дальше расширить систему проекта, расширяющие базовую объектную модель автоматизации.  Они указываются как часть объекта автоматизации DTE и используются для расширения проекта, объект `ProjectItem` объект и  `Configuration` объект.  Дополнительные сведения см. в разделе [Расширение модели объекта базового проекта](../../extensibility/internals/extending-the-object-model-of-the-base-project.md).  

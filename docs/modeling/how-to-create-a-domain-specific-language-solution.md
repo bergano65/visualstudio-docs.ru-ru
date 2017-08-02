@@ -60,7 +60,7 @@ ms.lasthandoff: 02/22/2017
         > [!NOTE]
         >  Предпочтительно, вводимое имя должно быть допустимым идентификатором Visual C#, поскольку он может использоваться для создания кода.  
   
-     ![Создание диалогового окна DSL](../modeling/media/create_dsldialog.png "Create_DSLDialog")  
+     ![Создание диалогового окна DSL](~/modeling/media/create_dsldialog.png "Create_DSLDialog")  
   
 2.  Выберите шаблон DSL.  
   

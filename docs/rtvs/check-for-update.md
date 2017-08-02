@@ -44,7 +44,7 @@ ms.lasthandoff: 05/12/2017
 
 Чтобы проверить версию, в Visual Studio выберите **Справка > О программе** и прокрутите вниз до записи **Инструменты R для Visual Studio**.
 
-![Проверка версии RTVS в Visual Studio (VS2017)](media/current-version.png)
+![Проверка версии RTVS в Visual Studio (VS2017)](~/rtvs/media/current-version.png)
 
 Требования к Visual Studio и Windows см. в разделе [Установка](installation.md).
 

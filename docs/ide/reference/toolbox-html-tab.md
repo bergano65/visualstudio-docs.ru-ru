@@ -53,12 +53,12 @@ ms.lasthandoff: 06/23/2017
  По умолчанию на вкладке HTML доступны указанные ниже средства.  
 
  **Указатель**  
- ![Указатель HTMLpage конструктора мобильных устройств ASP.NET](../../ide/reference/media/vxpointer.gif "vxPointer")  
+ ![Указатель HTMLpage конструктора мобильных устройств ASP.NET](~/ide/reference/media/vxpointer.gif "vxPointer")  
 
  Это средство выбирается по умолчанию при открытии любой вкладки области элементов. Его нельзя удалить. Указатель позволяет перетаскивать объекты на поверхность конструктора, изменять их размеры и перемещать по странице или форме. Дополнительные сведения см. в разделе [Использование панели элементов](../../ide/using-the-toolbox.md).  
 
  **Ввод (кнопка)**  
- ![Кнопка веб-страницы HTML](../../ide/reference/media/vxbutton.gif "vxButton")  
+ ![Кнопка веб-страницы HTML](~/ide/reference/media/vxbutton.gif "vxButton")  
 
  Вставляет элемент `input` объекта `type="button"`. Чтобы изменить отображаемый текст, измените свойство `name`. По умолчанию `id="Button1"` вставляется для первой кнопки, `id="Button2"` для второй и т. д.  
 
@@ -69,7 +69,7 @@ ms.lasthandoff: 06/23/2017
 ```  
 
  **Ввод (кнопка сброса)**  
- ![Снимок экрана HTMLpageResetButton](../../ide/reference/media/vxreset.gif "vxReset")  
+ ![Снимок экрана HTMLpageResetButton](~/ide/reference/media/vxreset.gif "vxReset")  
 
  Вставляет элемент `input` объекта `type="reset"`. Чтобы изменить отображаемый текст, измените свойство `name`. По умолчанию `id="Reset1"` вставляется для первой кнопки сброса, `id="Reset2"` для второй и т. д.  
 
@@ -80,7 +80,7 @@ ms.lasthandoff: 06/23/2017
 ```  
 
  **Ввод (кнопка отправки)**  
- ![Снимок экрана HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif "vxSubmit")  
+ ![Снимок экрана HTMLpageToolbarSubmitButton](~/ide/reference/media/vxsubmit.gif "vxSubmit")  
 
  Вставляет элемент `input` объекта `type="submit"`. Чтобы изменить отображаемый текст, измените свойство `name`. По умолчанию `id="Submit1"` вставляется для первой кнопки отправки, `id="Submit2"` для второй и т. д.  
 
@@ -91,7 +91,7 @@ ms.lasthandoff: 06/23/2017
 ```  
 
  **Ввод (текст)**  
- ![Снимок экрана HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif "vxTextfield")  
+ ![Снимок экрана HTMLpageToolbarTextField](~/ide/reference/media/vxtextfield.gif "vxTextfield")  
 
  Вставляет элемент `input` объекта `type="text"` в документ. Чтобы изменить отображаемый текст по умолчанию, измените атрибут `value`. По умолчанию `id="Text1"` вставляется для первого текстового поля, `id="Text2"` для второго и т. д.  
 
@@ -105,7 +105,7 @@ ms.lasthandoff: 06/23/2017
 >  Рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в статье [Validating User Input in ASP.NET Web Pages (Razor) Sites](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Ввод (файл)**  
- ![Поле файла страницы HTML](../../ide/reference/media/vxfilefield.gif "vxFilefield")  
+ ![Поле файла страницы HTML](~/ide/reference/media/vxfilefield.gif "vxFilefield")  
 
  Вставляет элемент `input` объекта `type="file"` в документ. По умолчанию `id="File1"` вставляется для первого поля файла, `id="File2"` для второго и т. д.  
 
@@ -119,7 +119,7 @@ ms.lasthandoff: 06/23/2017
 >  Рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в статье [Validating User Input in ASP.NET Web Pages (Razor) Sites](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Ввод (пароль)**  
- ![Поле пароля Visual Studio](../../ide/reference/media/vxpassword.gif "vxPassword")  
+ ![Поле пароля Visual Studio](~/ide/reference/media/vxpassword.gif "vxPassword")  
 
  Вставляет элемент `input` объекта `type="password"`. По умолчанию `id="Password1"` вставляется для первого поля пароля, `id="Password2"` для второго и т. д.  
 
@@ -133,7 +133,7 @@ ms.lasthandoff: 06/23/2017
 >  Если приложение передает имена пользователей и пароли, следует настроить веб-сайт, чтобы использовать SSL для шифрования передачи. Подробнее см. в подразделе "Обеспечение безопасности подключений с помощью SSL" раздела [Руководство по операциям IIS](http://go.microsoft.com/fwlink/?linkid=47856). Дополнительно рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в статье [Validating User Input in ASP.NET Web Pages (Razor) Sites](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Ввод (флажок)**  
- ![Параметр Checkbox панели элементов веб-страницы HTML](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")  
+ ![Параметр Checkbox панели элементов веб-страницы HTML](~/ide/reference/media/vxcheckbox.gif "vxCheckbox")  
 
  Вставляет элемент `input` объекта `type="checkbox"`. Чтобы изменить отображаемый текст, измените свойство `name`. По умолчанию `id="Checkbox1"` вставляется для первого флажка, `id="Checkbox2"` для второго и т. д.  
 
@@ -144,7 +144,7 @@ ms.lasthandoff: 06/23/2017
 ```  
 
  **Ввод (переключатель)**  
- ![Снимок экрана VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif "vxRadio")  
+ ![Снимок экрана VisualStudioHTMLpageRadioButton](~/ide/reference/media/vxradio.gif "vxRadio")  
 
  Вставляет элемент `input` объекта `type="radio"`. Чтобы изменить отображаемый текст, измените свойство `name`. По умолчанию `id="Radio1"` вставляется для первого переключателя, `id="Radio2"` для второго и т. д.  
 
@@ -155,7 +155,7 @@ ms.lasthandoff: 06/23/2017
 ```  
 
  **Ввод (скрытое поле)**  
- ![Скрытый элемент страницы HTML](../../ide/reference/media/vxhidden.gif "vxhidden")  
+ ![Скрытый элемент страницы HTML](~/ide/reference/media/vxhidden.gif "vxhidden")  
 
  Вставляет элемент `input` объекта `type="hidden"`. По умолчанию `id="Hidden1"` вставляется для первого скрытого поля, `id="Hidden2"` для второго и т. д.  
 
@@ -166,7 +166,7 @@ ms.lasthandoff: 06/23/2017
 ```  
 
  **Текстовая область**  
- ![Область текста панели инструментов HTMLpage](../../ide/reference/media/vxtextarea.gif "vxTextarea")  
+ ![Область текста панели инструментов HTMLpage](~/ide/reference/media/vxtextarea.gif "vxTextarea")  
 
  Вставляет элемент `textarea`. Можно изменить размер текстовой области или с помощью полос прокрутки просматривать текст, выходящий за пределы области отображения. Чтобы изменить отображаемый текст по умолчанию, измените атрибут `value`. По умолчанию `id="textarea1"` вставляется для первой текстовой области, `id=" textarea 2"` для второй и т. д.  
 
@@ -180,7 +180,7 @@ ms.lasthandoff: 06/23/2017
 >  Рекомендуется проверить весь пользовательский ввод. Дополнительные сведения см. в статье [Validating User Input in ASP.NET Web Pages (Razor) Sites](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Таблица**  
- ![Снимок экрана HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif "vxTable")  
+ ![Снимок экрана HTMLpageToolbarTable](~/ide/reference/media/vxtable.gif "vxTable")  
 
  Вставляет элемент `table`.  
 
@@ -191,7 +191,7 @@ ms.lasthandoff: 06/23/2017
 ```  
 
 **Изображение**  
- ![Элемент изображения страницы HTML](../../ide/reference/media/vximage.gif "vxImage")  
+ ![Элемент изображения страницы HTML](~/ide/reference/media/vximage.gif "vxImage")  
 
  Вставляет элемент `img`. Измените этот элемент, чтобы указать его `src` и текст `alt`.  
 
@@ -202,7 +202,7 @@ ms.lasthandoff: 06/23/2017
 ```  
 
  **Выбрать**  
- ![Открывающаяся панель элементов страницы HTML](../../ide/reference/media/vxdropdown.gif "vxDropdown")  
+ ![Открывающаяся панель элементов страницы HTML](~/ide/reference/media/vxdropdown.gif "vxDropdown")  
 
  Вставляет элемент `select` раскрывающегося списка (без атрибута `size`). По умолчанию `id="select1"` вставляется для первого списка, `id="select2"` для второго и т. д.  
 
@@ -215,7 +215,7 @@ ms.lasthandoff: 06/23/2017
  Можно создать многострочный элемент `select`, увеличивая значение свойства размера.  
 
  **Горизонтальная линия**  
- ![Элемент горизонтальной линии страницы HTML](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")  
+ ![Элемент горизонтальной линии страницы HTML](~/ide/reference/media/vxhorizontal.gif "vxHorizontal")  
 
  Вставляет элемент `hr`. Для увеличения толщины линии измените атрибут `size`.  
 
@@ -226,7 +226,7 @@ ms.lasthandoff: 06/23/2017
 ```  
 
  **ДИВ**  
- ![Метка страницы HTML](../../ide/reference/media/vxlabel.gif "vxLabel")  
+ ![Метка страницы HTML](~/ide/reference/media/vxlabel.gif "vxLabel")  
 
  Вставляет элемент `div`, включающий атрибут `ms_positioning="FlowLayout"`. За исключением ширины и высоты, этот элемент аналогичен панели потокового макета. Чтобы форматировать текст, содержащийся в элементе `div`, добавьте атрибут `class="stylename"` в открывающий тег.  
 

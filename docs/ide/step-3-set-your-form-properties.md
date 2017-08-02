@@ -20,7 +20,7 @@ caps.handback.revision: 18
 
 Далее окно **Свойства** используется для изменения внешнего вида формы.  
   
- ![ссылка на видео](../data-tools/media/playvideo.png "PlayVideo") Видеоверсию этого раздела см. на следующих страницах: [Tutorial 1: Create a Picture Viewer in Visual Basic \- Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) или [Tutorial 1: Create a Picture Viewer in C\# \- Video 1](http://go.microsoft.com/fwlink/?LinkId=205199).  Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса.  Однако концепции и процедуры аналогичны текущей версии Visual Studio.  
+ ![ссылка на видео](~/data-tools/media/playvideo.gif "PlayVideo") Видеоверсию этого раздела см. на следующих страницах: [Tutorial 1: Create a Picture Viewer in Visual Basic \- Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) или [Tutorial 1: Create a Picture Viewer in C\# \- Video 1](http://go.microsoft.com/fwlink/?LinkId=205199).  Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса.  Однако концепции и процедуры аналогичны текущей версии Visual Studio.  
   
 ### Настройка свойств формы  
   
@@ -41,7 +41,7 @@ caps.handback.revision: 18
   
 4.  Вернитесь к конструктору Windows Forms.  Нажмите нижний правый маркер перетаскивания формы, который представляет собой небольшой белый квадрат в нижнем правом углу формы и показан на рисунке ниже.  
   
-     ![Маркер перетаскивания](../ide/media/express_bottomrt_drag.png "Express\_BottomRT\_Drag")  
+     ![Маркер перетаскивания](~/ide/media/express_bottomrt_drag.png "Express\_BottomRT\_Drag")  
 Маркер перетаскивания  
   
      Перетащите маркер, чтобы изменить размер формы — она должна стать шире и немного выше.  

@@ -140,7 +140,7 @@ public partial class ParentsHaveChildren
   
  Пример применяется к представленной ниже модели домена. Отношение ParentsHaveChildren имеет роли, которые называются Child и Parent.  
   
- ![Схема определения DSL &#45; Модель семейного дерева](../modeling/media/familyt_person.png "FamilyT_Person")  
+ ![Схема определения DSL &#45; Модель семейного дерева](~/modeling/media/familyt_person.png "FamilyT_Person")  
   
 ## <a name="validation-categories"></a>Категории проверки  
  В <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> атрибут, указать выполнение метода проверки.  

@@ -51,7 +51,7 @@ manager: "ghogen"
   
 4.  В окне отладчика JIT выберите версию Visual Studio, которую необходимо использовать для отладки.  
   
-     ![JustInTimeDebugger](../debugger/media/justintimedebugger.png "JustInTimeDebugger")  
+     ![JustInTimeDebugger](~/debugger/media/justintimedebugger.png "JustInTimeDebugger")  
   
 5.  Запустится новый экземпляр Visual Studio, а выполнение будет остановлено на методе `Debugger.Launch()`.  
   

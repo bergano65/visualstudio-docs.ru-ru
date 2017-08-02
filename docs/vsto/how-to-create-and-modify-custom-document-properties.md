@@ -32,7 +32,7 @@ caps.handback.revision: 46
   
  В следующем примере показано, как добавить пользовательское свойство в настройку уровня документа для Excel и присвоить ему значение.  
   
- ![ссылка на видео](../vsto/media/playvideo.png "ссылка на видео") Демонстрационные видеоматериалы см. на странице [Раздел справки: доступ к настраиваемым свойствам документов в Microsoft Word и работа с ними](http://go.microsoft.com/fwlink/?LinkId=136772).  
+ ![ссылка на видео](~/data-tools/media/playvideo.gif "ссылка на видео") Демонстрационные видеоматериалы см. на странице [Раздел справки: доступ к настраиваемым свойствам документов в Microsoft Word и работа с ними](http://go.microsoft.com/fwlink/?LinkId=136772).  
   
 ## Пример  
  [!code-csharp[Trin_VstcoreProgramming#6](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgramming/CS/ThisWorkbook.cs#6)]

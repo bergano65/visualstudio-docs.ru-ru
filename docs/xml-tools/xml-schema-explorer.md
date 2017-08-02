@@ -59,7 +59,7 @@ caps.handback.revision: 3
   
  Ниже приведен пример структуры дерева:  
   
- ![Обозреватель схемы XML](../xml-tools/media/xmlschemaexplorer.gif "XMLSchemaExplorer")  
+ ![Обозреватель схемы XML](~/xml-tools/media/xmlschemaexplorer.gif "XMLSchemaExplorer")  
   
 ## Выделение и активация  
  Чтобы выделить и выбрать узел, щелкните один раз обозреватель схем.  

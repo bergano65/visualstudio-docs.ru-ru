@@ -99,7 +99,7 @@ ms.lasthandoff: 05/30/2017
   
      Кроме того, можно ввести **Создать проект** в окне **Быстрый запуск** , чтобы выполнить то же самое действие.  
   
-     ![В поле "Быстрый запуск" укажите новый проект](../ide/media/exploreide-quicklaunchnewprojectsmall.png "ExploreIDE-QuickLaunchNewProjectsmall")  
+     ![В поле "Быстрый запуск" укажите новый проект](~/ide/media/exploreide-quicklaunchnewprojectsmall.png "ExploreIDE-QuickLaunchNewProjectsmall")  
   
 2.  Выберите шаблон приложения WPF Visual Basic или Visual C# , воспользовавшись, например, путем по меню в левой области **Установлены**, **Шаблоны**, **Visual C#**, **Windows**, а затем выбрав «Приложение WPF» в средней области.  В нижней части диалогового окна нового проекта назовите проект HelloWPFApp.  
   
@@ -113,7 +113,7 @@ ms.lasthandoff: 05/30/2017
   
  Рисунок 5. Элементы проекта  
   
- ![Обозреватель решений с добавленными файлами HelloWPFApp](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
+ ![Обозреватель решений с добавленными файлами HelloWPFApp](~/ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
   
  После создания проекта его можно настраивать. С помощью окна **Свойства** (в меню **Вид** ) можно отображать и изменять параметры элементов проекта, элементов управления и других элементов в приложении. С помощью свойств проекта и страниц свойств можно отображать и изменять параметры проектов и решений.  
   
@@ -121,7 +121,7 @@ ms.lasthandoff: 05/30/2017
   
 1.  В следующей процедуре вы дадите MainWindow более конкретное имя. В **Обозревателе решений**выберите файл MainWindow.xaml. Должно отображаться окно **Свойства**, но если его нет, выберите в меню **Вид** пункт **Окно свойств**. Измените значение свойства **Имя файла** на `Greetings.xaml`.  
   
-     ![Окно свойств с выделенным именем файла](../ide/media/exploreide-filenameinpropertieswindow.png "ExploreIDE-FilenameinPropertiesWindow")  
+     ![Окно свойств с выделенным именем файла](~/ide/media/exploreide-filenameinpropertieswindow.png "ExploreIDE-FilenameinPropertiesWindow")  
   
      **Обозреватель решений** показывает, что файл теперь называется Greetings.xaml, и если развернуть узел MainWindow.xaml (переместив курсор на узел и нажав клавишу стрелки вправо), то видно, что файл MainWindow.xaml.vb (или MainWindow.xaml.cs) теперь называется Greetings.xaml.vb (или Greetings.xaml.cs). Этот файл с текстом программы вложен в узел файла .xaml, что означает их тесную связь.  
   
@@ -274,7 +274,7 @@ ms.lasthandoff: 05/30/2017
   
 1.  Запустите отладчик, выбрав **Отладка**, затем **Начать отладку**.  
   
-     ![Команда "Начать отладку" в меню "Отладка"](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
+     ![Команда "Начать отладку" в меню "Отладка"](~/ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
   
      Появится диалоговое окно, показывающее, что произошло исключение IOException "Не удалось обнаружить ресурс mainwindow.xaml".  
   
@@ -340,7 +340,7 @@ ms.lasthandoff: 05/30/2017
   
 2.  Измените конфигурацию сборки для HelloWPFApp с **Отладка** на **Выпуск** с помощью раскрывающегося списка на панели инструментов (сейчас это "Отладка").  
   
-     ![Панель инструментов "Стандартная" с выбранной конфигурацией "Выпуск"](../ide/media/exploreide-releaseversion.png "ExploreIDE-ReleaseVersion")  
+     ![Панель инструментов "Стандартная" с выбранной конфигурацией "Выпуск"](~/ide/media/exploreide-releaseversion.png "ExploreIDE-ReleaseVersion")  
   
 3.  Постройте решение, выбрав **Сборка**, затем **Собрать решение** или нажмите клавишу F6.  
   

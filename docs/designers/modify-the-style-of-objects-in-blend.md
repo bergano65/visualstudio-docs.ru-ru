@@ -52,7 +52,7 @@ ms.lasthandoff: 05/13/2017
 ##  <a name="Brushes"></a>Кисти: изменение внешнего вида объекта  
  Примените кисть к объекту, если вы хотите изменить его внешний вид.  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Редактор кистей](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Редактор кистей](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).  
   
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Нанесение повторяющегося изображения или рисунка на объект  
  Нанесите повторяющееся изображение или шаблон на объект с помощью *мозаичной кисти*.  
@@ -61,17 +61,17 @@ ms.lasthandoff: 05/13/2017
   
  Создайте кисть изображения с помощью образа. На следующих рисунках представлены кисть изображения, мозаичная кисть изображения и перевернутая кисть изображения.  
   
- ![](../designers/media/81f84f56-906d-456b-8288-d77da1e01e31.png "81f84f56-906d-456b-8288-d77da1e01e31") ![](../designers/media/d3782ca8-64da-47a4-a095-c6cdd0fa47a2.png "d3782ca8-64da-47a4-a095-c6cdd0fa47a2") ![](../designers/media/38ae3691-f3f1-4a1e-82ca-c7fa164bf56e.png "38ae3691-f3f1-4a1e-82ca-c7fa164bf56e")  
+ ![](~/designers/media/81f84f56-906d-456b-8288-d77da1e01e31.png "81f84f56-906d-456b-8288-d77da1e01e31") ![](~/designers/media/d3782ca8-64da-47a4-a095-c6cdd0fa47a2.png "d3782ca8-64da-47a4-a095-c6cdd0fa47a2") ![](~/designers/media/38ae3691-f3f1-4a1e-82ca-c7fa164bf56e.png "38ae3691-f3f1-4a1e-82ca-c7fa164bf56e")  
   
  Создайте кисть рисования с помощью векторного рисунка, например контура или фигуры. На следующих рисунках представлены кисть рисования, мозаичная кисть рисования и перевернутая кисть рисования.  
   
- ![](../designers/media/197666ac-ef57-4c5c-9779-669e991a00a5.png "197666ac-ef57-4c5c-9779-669e991a00a5") ![](../designers/media/ba09cda3-4cee-40ba-b3d4-edc032158bdc.png "ba09cda3-4cee-40ba-b3d4-edc032158bdc") ![](../designers/media/15bf6021-620c-4490-9eae-086153d3f14f.png "15bf6021-620c-4490-9eae-086153d3f14f")  
+ ![](~/designers/media/197666ac-ef57-4c5c-9779-669e991a00a5.png "197666ac-ef57-4c5c-9779-669e991a00a5") ![](~/designers/media/ba09cda3-4cee-40ba-b3d4-edc032158bdc.png "ba09cda3-4cee-40ba-b3d4-edc032158bdc") ![](~/designers/media/15bf6021-620c-4490-9eae-086153d3f14f.png "15bf6021-620c-4490-9eae-086153d3f14f")  
   
  Создайте кисть визуального объекта с помощью элемента управления, например кнопки. На следующих рисунках показаны кисть визуального объекта и мозаичная кисть визуального объекта  
   
- ![](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png "fb6c90e0-153c-48fe-b563-e601beac6227") ![](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png "e261b99f-7d8f-4d91-bc84-19c7beccc255")  
+ ![](~/designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png "fb6c90e0-153c-48fe-b563-e601beac6227") ![](~/designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png "e261b99f-7d8f-4d91-bc84-19c7beccc255")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Мозаичные кисти](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Мозаичные кисти](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).  
   
 ##  <a name="Styles"></a>Стили и шаблоны: создание согласованного внешнего вида и поведения элемента управления  
  Можно всего один раз разработать внешний вид и поведение элемента управления и затем применить эти параметры к другим элементам управления, чтобы вам не нужно было поддерживать их по отдельности.  
@@ -87,7 +87,7 @@ ms.lasthandoff: 05/13/2017
   
  Если вы хотите настроить шаблон на основе существующего элемента управления, выберите объект в области рисования. Затем в верхней части области рисования нажмите кнопку навигации, выберите **Изменить шаблон**, а затем выберите **Изменить копию** или **Создать пустой**.  
   
- ![](../designers/media/5ebdb33f-aad2-4c10-a328-5e8b04c56a36.png "5ebdb33f-aad2-4c10-a328-5e8b04c56a36")  
+ ![](~/designers/media/5ebdb33f-aad2-4c10-a328-5e8b04c56a36.png "5ebdb33f-aad2-4c10-a328-5e8b04c56a36")  
   
  Чтобы создать стиль, выберите объект, а затем в меню **Объект** выберите пункт **Изменить стиль** и **Изменить копию** или **Создать пустой**.  
   
@@ -99,40 +99,40 @@ ms.lasthandoff: 05/13/2017
   
  В диалоговом окне **Создание ресурса стиля** можно присвоить имя стилю или шаблону, чтобы его можно было использовать в дальнейшем, или можно применить стиль или шаблон для всех элементов управления этого типа.  
   
- ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
+ ![](~/designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
   
 > [!NOTE]
 >  Невозможно создать стили и шаблоны для каждого типа элемента управления. Если элемент управления не поддерживает стили, то кнопка навигации не отображается в области рисования.  
 >   
 >  Чтобы вернуться в область редактирования основного документа, щелкните **Вернуться к области** ![](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png "55844eb3-ed98-4f20-aa66-a6f5b23eeb2b").  
 >   
->  ![](../designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
+>  ![](~/designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Создание стиля](http://www.microsoft.com/showcase/details.aspx?uuid=9b8e86e2-8e90-4d61-81af-fa5b5afb3e95).  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Создание стиля](http://www.microsoft.com/showcase/details.aspx?uuid=9b8e86e2-8e90-4d61-81af-fa5b5afb3e95).  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Создание шаблона элемента управления в Expression Blend](http://msdn.microsoft.com/expression/cc263912.aspx).  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Создание шаблона элемента управления в Expression Blend](http://msdn.microsoft.com/expression/cc263912.aspx).  
   
 ### <a name="apply-a-style-or-template-to-a-control"></a>Применение стиля или шаблона к элементу управления  
  Щелкните правой кнопкой мыши объект на панели [Объекты и временная шкала](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57), выберите элемент **Изменить шаблон**, а затем нажмите кнопку **Применить ресурс**.  
   
- ![](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png "dc12debc-7711-47d9-84ce-10322a384397")  
+ ![](~/designers/media/dc12debc-7711-47d9-84ce-10322a384397.png "dc12debc-7711-47d9-84ce-10322a384397")  
   
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Восстановление стиля или шаблона элемента управления по умолчанию  
- Выберите элемент управления и на панели [Свойства](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57) найдите свойство **Стиль** или **Шаблон**. Затем нажмите кнопку **Дополнительные параметры![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb")** и нажмите в контекстном меню кнопку **Сброс**.  
+ Выберите элемент управления и на панели [Свойства](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57) найдите свойство **Стиль** или **Шаблон**. Затем нажмите кнопку **Дополнительные параметры![](~/designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb")** и нажмите в контекстном меню кнопку **Сброс**.  
   
 ##  <a name="Visual"></a>Визуальные состояния: изменение внешнего вида элемента управления в зависимости от его состояния  
  Элементы управления могут иметь различное визуальное представление в зависимости от действий пользователя. Например, можно сделать, чтобы кнопка становилась зеленой при нажатии пользователя, или запустить анимацию. Уменьшить или увеличить интервал времени между визуальными состояниями можно с помощью переходов.  
   
- ![](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png "a95c671a-5639-40b9-83db-1e6b214330d5")  
+ ![](~/designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png "a95c671a-5639-40b9-83db-1e6b214330d5")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Управление состоянием элементов управления WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Управление состоянием элементов управления WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).  
   
 ##  <a name="Resources"></a>Ресурсы: создание цветов, стилей и шаблонов и их последующее повторное использование  
  Практически любой элемент проекта можно преобразовать в ресурс. Ресурс представляет собой объект, который можно многократно использовать в разных местах в приложении . Например, можно создать один раз цвет, преобразовать его в ресурс, а затем использовать этот ресурс для ряда объектов Чтобы изменить цвет всех этих объектов, достаточно изменить ресурс цвета.  
   
- ![](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-b153-52a23cd744f7") ![](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  
+ ![](~/designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-b153-52a23cd744f7") ![](~/designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Краткие сведения о ресурсах](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Краткие сведения о ресурсах](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).  
   
 ## <a name="see-also"></a>См. также  
  [Создание пользовательского интерфейса с помощью Blend для Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

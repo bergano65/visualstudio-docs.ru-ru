@@ -65,13 +65,13 @@ ms.lasthandoff: 05/13/2017
 
 2.  В программе установки щелкните значок **Выбор дополнительных вариантов** (три полоски), расположенный _рядом с_ кнопкой **Запуск**, затем выберите **Изменить**.  
   
-     ![Выбор действия "Изменить" в установке Visual Studio](../cross-platform/media/cross-plat-xamarin-setup-1a.png "Кросс-платформенная установка Xamarin 1")  
+     ![Выбор действия "Изменить" в установке Visual Studio](~/cross-platform/media/cross-plat-xamarin-setup-1a.png "Кросс-платформенная установка Xamarin 1")  
   
 3.  Установите следующие флажки.
 
     1.  **Мобильные приложения и игры > Разработка мобильных приложений на платформе .NET**. При этом также будут автоматически выбраны различные инструменты Android в разделе "Общие средства и пакеты средств разработки". Этот параметр также позволяет обновить любую существующую установку Xamarin.  
   
-         ![Выбор параметра "Мобильная разработка" в разделе разработки игр и мобильных приложений](../cross-platform/media/cross-plat-xamarin-setup-2a.png "Кросс-платформенная установка Xamarin 2")  
+         ![Выбор параметра "Мобильная разработка" в разделе разработки игр и мобильных приложений](~/cross-platform/media/cross-plat-xamarin-setup-2a.png "Кросс-платформенная установка Xamarin 2")  
   
     2. **Windows > Разработка с помощью универсальной платформы Windows"** (необязательно). Здесь вы можете выбрать образы эмуляторов, на скачивание которых потребуется дополнительное время. Также вы можете запустить установщик Visual Studio в любое время позже, чтобы добавить их.  
 
@@ -130,8 +130,8 @@ ms.lasthandoff: 05/13/2017
 
     2.  Выберите целевой объект **iPhoneSimulator** из раскрывающегося списка сборки Visual Studio, как показано ниже. Если симуляторов в списке нет, запустите Xcode на компьютере Mac, выберите **Xcode -> Preferences** (Xcode -> Параметры) и нажмите кнопку **Download** (Cкачать). В разделе **Components** (Компоненты) вы должны увидеть доступные для скачивания версии симулятора. Дополнительные инструкции по отладке можно найти на странице Xamarin [Отладка](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) (xamarin.com).
 
-         ![Выбор целевого объекта сборки iPhoneSimulator](../cross-platform/media/crossplat-xamarin-verify-5.png "Проверка CrossPlat Xamarin 5")
+         ![Выбор целевого объекта сборки iPhoneSimulator](~/cross-platform/media/crossplat-xamarin-verify-5.png "Проверка CrossPlat Xamarin 5")
 
     3.  Выберите целевой объект iPhone в раскрывающемся списке отладки Visual Studio, как показано ниже, и запустите отладчик, нажав клавишу F5. Это откроет симулятор на Mac, где можно будет взаимодействовать с приложением во время отладки из Visual Studio.
 
-         ![Выбор целевого объекта отладки iPhone](../cross-platform/media/crossplat-xamarin-verify-6.png "Проверка CrossPlat Xamarin 6")
+         ![Выбор целевого объекта отладки iPhone](~/cross-platform/media/crossplat-xamarin-verify-6.png "Проверка CrossPlat Xamarin 6")

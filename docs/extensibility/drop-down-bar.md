@@ -24,7 +24,7 @@ caps.handback.revision: 12
 ## Раскрывающиеся полосы интерфейсы  
  IN [!INCLUDE[vcprvc](../debugger/includes/vcprvc_md.md)]например, черта, раскрывающемся списке, содержащий списки  [!INCLUDE[vcprvc](../debugger/includes/vcprvc_md.md)] элементы и  [!INCLUDE[vcprvc](../debugger/includes/vcprvc_md.md)] Функции\-члены элементов, как показано на рисунке ниже.  
   
- ![Раскрывающиеся строки](../extensibility/media/vsdropdown_bar.gif "vsDropdown\_bar")  
+ ![Раскрывающиеся строки](~/extensibility/media/vsdropdown_bar.gif "vsDropdown\_bar")  
 Список линейчатых диаграмм  
   
  При реализации черта раскрывающемся списке, 4 интерфейса первичной серьезности:  

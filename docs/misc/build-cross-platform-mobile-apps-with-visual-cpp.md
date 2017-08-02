@@ -103,7 +103,7 @@ manager: "douge"
   
      Вот как выглядит приложение по умолчанию в эмуляторе Visual Studio для Android.  
   
-     ![Эмулятор, запускающий ваше приложение](../cross-platform/media/cppmdd_emulator_running_app.png "CppMDD\_Emulator\_Running\_App")  
+     ![Эмулятор, запускающий ваше приложение](~/cross-platform/media/cppmdd_emulator_running_app.PNG "CppMDD\_Emulator\_Running\_App")  
   
     > [!TIP]
     >  Visual Studio запускает эмулятор, который за несколько секунд загружает и развертывает код.  После запуска приложения можно задать точки останова и использовать отладчик для проверки кода, языковых стандартов и контрольных значений.  

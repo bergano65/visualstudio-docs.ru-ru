@@ -42,7 +42,7 @@ ms.lasthandoff: 04/05/2017
 ## <a name="extensibility-architecture"></a>Архитектура расширяемости  
  Ниже показана архитектура расширяемости Visual Studio. Пакеты VSPackage предоставляют функциональные возможности приложений, которое является общим как службы в интегрированной среде разработки. Стандартная IDE также предлагает широкий набор служб, таких как <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, которые предоставляют доступ к функциям окон интегрированной среды разработки.</xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>  
   
- ![График архитектуры окружения](../../extensibility/internals/media/environment.gif "environment")  
+ ![График архитектуры окружения](~/extensibility/internals/media/environment.gif "environment")  
 Обобщенное представление архитектуры Visual Studio  
   
 ## <a name="vspackages"></a>VSPackages  
@@ -75,7 +75,7 @@ ms.lasthandoff: 04/05/2017
   
  Рассмотрим приведенный ниже рисунок Visual Studio, которая содержит несколько окон инструментов.  
   
- ![Снимок экрана](../../extensibility/internals/media/t1gui.png "T1gui")  
+ ![Снимок экрана](~/extensibility/internals/media/t1gui.png "T1gui")  
   
  Некоторые окна инструментов закреплены вместе в одну область, отображаются в окне инструментов обозревателя решений и скрывает окна инструментов, но делает их доступными, щелкнув вкладок. На рисунке показаны два окна инструментов **список ошибок** и **вывода** закреплены вместе на одной панели окна.  
   

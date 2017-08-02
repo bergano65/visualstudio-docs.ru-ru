@@ -53,7 +53,7 @@ Visual Studio помогает привести в соответствие пр
   
 |**Категории**|**Ссылки**|  
 |------------------|---------------|  
-|**Видео**|![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: семь дуг: понимание кода и разработка систем в Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: разработка архитектуры приложения с помощью схемы зависимостей](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [MSDN как серия: проверка кода с помощью схем зависимостей](http://go.microsoft.com/fwlink/?LinkID=214405)|  
+|**Видео**|![ссылка на видео](~/data-tools/media/playvideo.gif "PlayVideo") [Channel 9: семь дуг: понимание кода и разработка систем в Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![ссылка на видео](~/data-tools/media/playvideo.gif "PlayVideo") [Channel 9: разработка архитектуры приложения с помощью схемы зависимостей](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![ссылка на видео](~/data-tools/media/playvideo.gif "PlayVideo") [MSDN как серия: проверка кода с помощью схем зависимостей](http://go.microsoft.com/fwlink/?LinkID=214405)|  
 |**Форумы**|-   [Visual Studio визуализации & средства моделирования](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio визуализации & моделирования SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**Блоги**|-   [Visual Studio ALM + блог Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**Технические статьи и журналы**|[Центр MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)|  

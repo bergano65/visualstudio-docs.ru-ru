@@ -65,7 +65,7 @@ ms.lasthandoff: 02/22/2017
   
 -   В меню **Вид** выберите команду **Список задач** (сочетание клавиш: CTRL+\\, T).  
   
-     ![Окно "Список задач"](../ide/media/vs2015_task_list.png "vs2015_task_list")  
+     ![Окно "Список задач"](~/ide/media/vs2015_task_list.png "vs2015_task_list")  
   
 #### <a name="to-change-the-sort-order-of-the-list"></a>Изменение порядка сортировки элементов в списке  
   
@@ -114,7 +114,7 @@ ms.lasthandoff: 02/22/2017
   
      Отображается [Страница "Список задач", папка "Среда", диалоговое окно "Параметры"](../ide/reference/task-list-environment-options-dialog-box.md).  
   
-     ![Список задач Visual Studio](../ide/media/vs2015_task_list_options.png "vs2015_task_list_options")  
+     ![Список задач Visual Studio](~/ide/media/vs2015_task_list_options.png "vs2015_task_list_options")  
   
 3.  В категории **Токены** в текстовом поле **Имя** введите имя токена, например "BUG".  
   
@@ -134,7 +134,7 @@ ms.lasthandoff: 02/22/2017
 ##  <a name="shortcuts"></a> Ярлыки  
  Объект *ярлык* — это закладка в коде, которая отслеживается в **списке задач**; он имеет свой значок, отличный от обычной закладки. Дважды щелкните ярлык в **Списке задач** , чтобы перейти к соответствующему месту в коде.  
   
- ![Значок ярлыка списка задач Visual Studio](../ide/media/vs2015_task_list_bookmark.png "vs2015_task_list_bookmark")  
+ ![Значок ярлыка списка задач Visual Studio](~/ide/media/vs2015_task_list_bookmark.png "vs2015_task_list_bookmark")  
   
 #### <a name="to-create-a-shortcut"></a>Создание ярлыка  
   

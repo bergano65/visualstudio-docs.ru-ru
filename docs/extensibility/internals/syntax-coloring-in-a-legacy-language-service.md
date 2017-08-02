@@ -25,7 +25,7 @@ caps.handback.revision: 22
 ## Модель Colorizer  
  Служба языков реализует <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> интерфейс, который затем используется редакторами.  Эта реализация отдельный объект от языковой службы, как показано на следующей иллюстрации.  
   
- ![График SVC Colorizer](../../extensibility/internals/media/figlgsvccolorizer.png "FigLgSvcColorizer")  
+ ![График SVC Colorizer](~/extensibility/internals/media/figlgsvccolorizer.gif "FigLgSvcColorizer")  
 Простая модель colorizer  
   
 > [!NOTE]

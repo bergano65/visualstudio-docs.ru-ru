@@ -38,7 +38,7 @@ manager: "ghogen"
   
 #### Захват кадра  
   
--   В Visual Studio на панели инструментов **Графика** нажмите кнопку **Захватить кадр**![Значок кнопки захвата графики](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
+-   В Visual Studio на панели инструментов **Графика** нажмите кнопку **Захватить кадр**![Значок кнопки захвата графики](~/debugger/graphics/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
   
 -   На клавиатуре нажмите клавишу PRINT SCREEN.  
   

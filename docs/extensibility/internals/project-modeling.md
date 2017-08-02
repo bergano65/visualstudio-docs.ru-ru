@@ -49,7 +49,7 @@ Projects
   
  Автоматизация проектов выполните, в следующей схеме.  
   
- ![Объекты проекта Visual Studio](../../extensibility/internals/media/projectobjects.png "ProjectObjects")  
+ ![Объекты проекта Visual Studio](~/extensibility/internals/media/projectobjects.gif "ProjectObjects")  
 Автоматизация проектов  
   
  Если не реализуется a `Project` объект среда по\-прежнему возвращает универсальный шаблон  `Project` объект, содержащий только имя проекта.  

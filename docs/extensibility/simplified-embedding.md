@@ -21,7 +21,7 @@ caps.handback.revision: 16
 
 Упрощенного внедрения включен в редакторе при его объект представления документа parented \(то есть является дочерним элементом\) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]и  <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> интерфейс реализован для обработки его команды окна.  Редакторы не может внедрить упрощено Активные элементы управления основного приложения.  Объекты, используемые для создания редактор упрощенного внедрения с на следующем рисунке показаны.  
   
- ![График упрощенного вложенного редактора](../extensibility/media/vssimplifiedembeddingeditor.png "vsSimplifiedEmbeddingEditor")  
+ ![График упрощенного вложенного редактора](~/extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor")  
 Редактор упрощенного внедрения с  
   
 > [!NOTE]

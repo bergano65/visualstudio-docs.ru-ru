@@ -71,7 +71,7 @@ ms.lasthandoff: 05/13/2017
   
 12. Выберите элемент управления Checkbox. В окне "Свойства" измените значение свойства **Имя** с \<No Name> на checkBox1 и очистите свойство **IsEnabled**.  
   
-     ![Простое приложение WPF](../test/media/codedui_wpfapp.png "CodedUI_WPFApp")  
+     ![Простое приложение WPF](~/test/media/codedui_wpfapp.png "CodedUI_WPFApp")  
   
 13. Дважды щелкните элемент управления "Кнопка", чтобы добавить обработчик события щелчка.  
   
@@ -163,11 +163,11 @@ ms.lasthandoff: 05/13/2017
   
 8.  Щелкните **Начать запись** в окне "UIMap — построитель кодированных тестов ИП".  
   
-     ![Начать запись](../test/media/cuit_builder_record.png "CUIT_Builder_Record")  
+     ![Начать запись](~/test/media/cuit_builder_record.png "CUIT_Builder_Record")  
   
      Вы можете приостановить запись, например если вы работаете с входящей почтой.  
   
-     ![Приостановка записи](../test/media/cuit_.png "CUIT_")  
+     ![Приостановка записи](~/test/media/cuit_.png "CUIT_")  
   
     > [!WARNING]
     >  Все действия, выполненные на рабочем столе, будут записаны. Приостановите запись, если вы выполняете действия, которые могут привести к записи конфиденциальных данных.  
@@ -385,11 +385,11 @@ ms.lasthandoff: 05/13/2017
 ## <a name="external-resources"></a>Внешние ресурсы  
   
 ### <a name="videos"></a>Видеоролики  
- ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode1-GettingStarted](http://go.microsoft.com/fwlink/?LinkID=230573)  
+ ![ссылка на видео](~/data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode1-GettingStarted](http://go.microsoft.com/fwlink/?LinkID=230573)  
   
- ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode2-MaintainenceAndDebugging](http://go.microsoft.com/fwlink/?LinkID=230574)  
+ ![ссылка на видео](~/data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode2-MaintainenceAndDebugging](http://go.microsoft.com/fwlink/?LinkID=230574)  
   
- ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode3-HandCoding](http://go.microsoft.com/fwlink/?LinkID=230575)  
+ ![ссылка на видео](~/data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode3-HandCoding](http://go.microsoft.com/fwlink/?LinkID=230575)  
   
 ### <a name="hands-on-lab"></a>Практическое лабораторное занятие  
  [Виртуальная лаборатория MSDN. Введение в создание тестов пользовательского интерфейса с помощью Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=22508)  

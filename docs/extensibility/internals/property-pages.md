@@ -32,7 +32,7 @@ caps.handback.revision: 12
   
  2 Общих типов **ПроектОкна свойств** диалоговые окна, доступные в пределах  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  В сначала для проектов Visual Basic, например страницы свойств отображаются в формат полей, как показано на следующем снимке экрана.  В секунду, перечислены далее в этом разделе, узлы страницы свойств сетка свойств, аналогичную этому, найденный в окне свойства.  
   
- ![Страница свойства Visual Basic](../../extensibility/internals/media/vsvbproppages.png "vsVBPropPages")  
+ ![Страница свойства Visual Basic](~/extensibility/internals/media/vsvbproppages.gif "vsVBPropPages")  
 Диалоговое окно страницы свойств проекта в формате и структуре дерева поля  
   
  Структура дерева в диалоговом окне страницы свойств не строится с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>.  Среды, основанная на уровне имени прошла на него <xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages> и  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage> интерфейсы построения.  
@@ -57,7 +57,7 @@ caps.handback.revision: 12
   
  Второй тип страницы свойств для отображения в узлах образцов форму сетки свойств, как показано на следующем снимке экрана.  
   
- ![Страницы свойства VC](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")  
+ ![Страницы свойства VC](~/extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")  
 Диалоговое окно страницы свойств в сетке свойств  
   
  Интерфейсы `IVSMDPropertyBrowser` и  `IVSMDPropertyGrid` объявлено в vsmanaged.h \(\) используется для создания и заполнения сетка свойств в диалоговое окно или окно.  

@@ -47,7 +47,7 @@ ms.lasthandoff: 02/22/2017
   
  На следующем рисунке показан службу языка basic.  
   
- ![График языка модели службы](../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
+ ![График языка модели службы](~/extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
 Базовые объекты службы редактора и языка  
   
  Объект данных документа для базового редактора называется текстового буфера и представлен <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>объекта.</xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> Объект представления документа называется представлением текста и представлен <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>объекта.</xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> Эти два объекта совместной работы через языковую службу для предоставления унифицированного представления базового редактора. Данные из текстового буфера и отображает представление текста в окне документа вызывается окна кода. Окно документа кода управляет диспетчер окон кода.  

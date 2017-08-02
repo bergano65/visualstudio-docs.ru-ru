@@ -56,7 +56,7 @@ JavaScript не допускает явного ввода для объявле
   
  **Параметры завершения для объекта, который не может быть определен**  
   
- ![Технология IntelliSense для идентификаторов JavaScript](../ide/media/js_intellisense_identifiers.png "js\_intellisense\_identifiers")  
+ ![Технология IntelliSense для идентификаторов JavaScript](~/ide/media/js_intellisense_identifiers.png "js\_intellisense\_identifiers")  
   
  Список завершения объекта можно переопределить при помощи комментариев XML\-документации или возможности расширения JavaScript IntelliSense.  Используя эти средства, можно предоставить сведения о типе и более описательные сведения о IntelliSense при его в противном случае оказаться недоступны.  Дополнительные сведения см. в разделах [Расширение IntelliSense для JavaScript](../ide/extending-javascript-intellisense.md) и [Практическое руководство. Создание комментариев XML\-документации для JavaScript](../ide/create-xml-documentation-comments-for-javascript-intellisense.md).  
   

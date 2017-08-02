@@ -63,14 +63,14 @@ using (ILinkedUndoTransaction t =
 ## <a name="dependency-links"></a>Связи зависимостей  
  Связь зависимости представлена объектом. Навигация для нее возможна в любом направлении:  
   
- ![ILayerDependencyLink соединяет два элемента Ilayer. ] (../modeling/media/layerapi_dependency.png "LayerApi_Dependency")  
+ ![ILayerDependencyLink соединяет два элемента Ilayer. ] (~/modeling/media/layerapi_dependency.png "LayerApi_Dependency")  
   
  Чтобы создать связь зависимости, вызовите метод `source.CreateDependencyLink(target)`.  
   
 ## <a name="comments"></a>Комментарии  
  Комментарии могут содержаться внутри слоев или модели слоев, кроме того, они могут быть связаны с другим элементом слоя:  
   
- ![Комментарии можно прикрепить к любому элементу слоя. ] (../modeling/media/layerapi_comments.png "LayerApi_Comments")  
+ ![Комментарии можно прикрепить к любому элементу слоя. ] (~/modeling/media/layerapi_comments.png "LayerApi_Comments")  
   
  Комментарий может быть связан с любым числом элементов (включая нуль).  
   
@@ -135,7 +135,7 @@ public void ... (...)
     if (element != null) ... }}  
 ```  
   
- ![Каждый элемент ILayerElement представлен фигурой IShape. ] (../modeling/media/layerapi_shapes.png "LayerApi_Shapes")  
+ ![Каждый элемент ILayerElement представлен фигурой IShape. ] (~/modeling/media/layerapi_shapes.png "LayerApi_Shapes")  
   
  <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>и <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram>также используются для отображения моделей UML.</xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram></xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape> Дополнительные сведения см. в разделе [отображение модели UML на схемах](../modeling/display-a-uml-model-on-diagrams.md).  
   

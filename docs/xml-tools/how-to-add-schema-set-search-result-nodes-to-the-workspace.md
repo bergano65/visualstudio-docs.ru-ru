@@ -31,7 +31,7 @@ caps.handback.revision: 3
   
 2.  Введите "purchaseOrder" в текстовом поле поиска панели инструментов [Обозреватель XML](../xml-tools/xml-schema-explorer.md) и нажмите кнопку поиска.  
   
-     ![Поиск по ключевым словам в обозревателе схемы XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")  
+     ![Поиск по ключевым словам в обозревателе схемы XML](~/xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")  
   
      Результаты поиска также выделяются в обозревателе XML\-схем и отмечаются галочками на вертикальной полосе прокрутки.  
   

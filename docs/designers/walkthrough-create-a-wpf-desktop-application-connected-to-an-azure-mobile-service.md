@@ -115,7 +115,7 @@ ms.lasthandoff: 05/13/2017
   
      Этот код XAML создает повторно используемый шаблон с заполнителями для полей номера, заголовка и описания. Во время выполнения заполнители можно заменять текстом, как показано на рисунке ниже.  
   
-     ![Пользовательский элемент управления QuickStartTask](../designers/media/wpfquickstart1.PNG "WPFQuickStart1")  
+     ![Пользовательский элемент управления QuickStartTask](~/designers/media/wpfquickstart1.PNG "WPFQuickStart1")  
   
 6.  В **обозревателе решений**разверните узел **QuickStartTask.xaml** и откройте файл **QuickStartTask.xaml.cs** или **QuickStartTask.xaml.vb** .  
   
@@ -302,7 +302,7 @@ ms.lasthandoff: 05/13/2017
   
      На этом этапе интерфейс должен выглядеть так, как показано на рисунке ниже.  
   
-     ![Элемент MainWindow в конструкторе](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
+     ![Элемент MainWindow в конструкторе](~/designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
   
     > [!NOTE]
     >  При выполнении нескольких следующих процедур вы можете увидеть ошибки в **списке ошибок** , если он открыт. Не беспокойтесь, они пропадут после завершения остальных процедур.  
@@ -572,7 +572,7 @@ ms.lasthandoff: 05/13/2017
   
      Обратите внимание на то, что в списке **Query and Update Data** (Запрос и обновление данных) появились два пункта, как показано на рисунке ниже.  
   
-     ![Элементы Todo добавляются в список.](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")  
+     ![Элементы Todo добавляются в список.](~/designers/media/wpfquickstart3.PNG "WPFQuickStart3")  
   
 4.  Установите флажок **Do something else** в списке.  
   

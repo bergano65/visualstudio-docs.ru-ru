@@ -37,7 +37,7 @@ caps.handback.revision: 17
   
  В итоге модель должна выглядеть так:  
   
- ![Трехмерная сцена, показывающая модель поверхности](../designers/media/digit-terrain-model.png "Digit\-Terrain\-Model")  
+ ![Трехмерная сцена, показывающая модель поверхности](~/designers/media/digit-terrain-model.png "Digit\-Terrain\-Model")  
   
  Перед началом убедитесь, что окна **Properties** и **Toolbox** отображаются.  
   
@@ -65,7 +65,7 @@ caps.handback.revision: 17
   
  Модель местности завершена.  Ниже показана финальная версия модели с примененным к ней затенением Фонга:  
   
- ![Трехмерная сцена, показывающая модель поверхности](../designers/media/digit-terrain-model.png "Digit\-Terrain\-Model")  
+ ![Трехмерная сцена, показывающая модель поверхности](~/designers/media/digit-terrain-model.png "Digit\-Terrain\-Model")  
   
  Можно использовать эту модель ландшафта, чтобы продемонстрировать эффект шейдера градиента, описанный в [Практическое руководство. Создание основанного на геометрии шейдера градиента](../designers/how-to-create-a-geometry-based-gradient-shader.md).  
   

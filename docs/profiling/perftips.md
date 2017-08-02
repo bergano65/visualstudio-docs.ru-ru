@@ -42,7 +42,7 @@ ms.lasthandoff: 02/22/2017
 ## <a name="perftips"></a>PerfTips  
  При остановке выполнения отладчика на точке останова или при завершения шага в окне редактора отображается время, прошедшее от предыдущей точки останова до прерывания. Дополнительные сведения см. в записи блога [PerfTips: информация о производительности при отладке с помощью Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx).  
   
- ![PerfTip](../profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
+ ![PerfTip](~/profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
   
 ## <a name="diagnostics-tools-window"></a>Окно "Средства диагностики"  
  Точки останова и связанные с ними данные о времени отображаются в окне "Средства диагностики".  

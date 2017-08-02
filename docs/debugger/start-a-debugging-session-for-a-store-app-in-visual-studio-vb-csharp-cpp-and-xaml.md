@@ -44,7 +44,7 @@ manager: "ghogen"
 # Запуск сеанса отладки для приложения Магазина в Visual Studio (VB, C#, C++ и XAML)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Применимо к Windows и к Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Применимо к Windows и к Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  В этом разделе описывается запуск сеанса отладки приложений Магазина, написанных на языке XAML и Visual C\+\+, Visual C\# или Visual Basic. Отладка приложения подразумевает настройку сеанса отладки и выбор способа запуска приложения.  
   
@@ -104,11 +104,11 @@ manager: "ghogen"
   
     -   В Visual C\# и Visual Basic выберите **Отладка**.  
   
-         ![Страница свойств отладки проекта C&#35;&#47;VB](../debugger/media/dbg_csvb_debugpropertypage.png "DBG\_CsVb\_DebugPropertyPage")  
+         ![Страница свойств отладки проекта C&#35;&#47;VB](~/debugger/media/dbg_csvb_debugpropertypage.png "DBG\_CsVb\_DebugPropertyPage")  
   
     -   В Visual C\+\+ разверните узел **Свойства конфигурации** и выберите **Отладка**.  
   
-         ![Страница свойств отладки приложения C&#43;&#43; для Магазина Windows](../debugger/media/dbg_cpp_debugpropertypage.png "DBG\_CPP\_DebugPropertyPage")  
+         ![Страница свойств отладки приложения C&#43;&#43; для Магазина Windows](~/debugger/media/dbg_cpp_debugpropertypage.png "DBG\_CPP\_DebugPropertyPage")  
   
 ###  <a name="BKMK_Choose_the_build_configuration_options"></a> Выберите параметры конфигурации построения  
   
@@ -117,7 +117,7 @@ manager: "ghogen"
 2.  В списке **Платформа** выберите целевую платформу для построения. В большинстве случаев лучшим вариантом является **Any CPU** \(**Все платформы** в Visual C\+\+\).  
   
 ###  <a name="BKMK_Choose_the_deployment_target"></a> Выберите целевой объект развертывания  
- ![Применимо только к Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![Применимо только к Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Можно развернуть и отладить приложение Магазина Windows на компьютере с Visual Studio, в имитаторе Visual Studio на локальном компьютере или на удаленном устройстве.  
   
@@ -149,12 +149,12 @@ manager: "ghogen"
   
     -   В приложениях C\+\+ щелкните стрелку вниз в поле **Имя компьютера** и выберите **\<Поиск...\>**.  
   
-     ![Диалоговое окно выбора подключения к удаленному отладчику](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN\_SelectRemoteDebuggerDlg")  
+     ![Диалоговое окно выбора подключения к удаленному отладчику](~/debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN\_SelectRemoteDebuggerDlg")  
   
     > [!NOTE]
     >  В диалоговом окне **Выбрать подключение к удаленному отладчику** отображаются компьютеры в локальной подсети и компьютеры, непосредственно подключенные к компьютеру Visual Studio с помощью кабеля Ethernet. Чтобы указать другой компьютер, введите имя в поле **Имя компьютера**.  
   
- ![Применимо только к Windows Phone](../debugger/media/phone_only_content.png "phone\_only\_content")  
+ ![Применимо только к Windows Phone](~/debugger/media/phone_only_content.png "phone\_only\_content")  
   
  Приложения Магазина Windows Phone можно развернуть на телефоне или одном из эмуляторов телефона Visual Studio. Выберите устройство или эмулятор из списка **Целевое устройство**.  
   
@@ -177,7 +177,7 @@ manager: "ghogen"
 |**Смешанный \(управляемый и машинный\)**|Отладка машинного кода C\/C\+\+ и управляемого кода в приложении. Код JavaScript игнорируется.|  
 |**Только GPU**|Отладка машинного кода C\+\+, который выполняется в графическом процессоре \(GPU\).|  
   
- ![Применимо только к Windows Phone](../debugger/media/phone_only_content.png "phone\_only\_content")  
+ ![Применимо только к Windows Phone](~/debugger/media/phone_only_content.png "phone\_only\_content")  
   
  Для приложений Магазина Windows Phone можно также выбрать отладчик, используемый для фоновых процессов, в поле **Процесс фоновой задачи**.  
   
@@ -191,7 +191,7 @@ manager: "ghogen"
 -   В приложениях Visual C\+\+ выберите **Да** в списке **Запустить приложение** на странице свойств **Отладка**.  
   
 ###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> \(Необязательно\) Отключите сетевое замыкание на себя  
- ![Применимо только к Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![Применимо только к Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Из соображений безопасности приложению для Магазина Windows, установленному стандартным образом, не разрешается выполнять сетевые вызовы к устройству, на котором оно установлено. По умолчанию Visual Studio создает для развертываемого приложения исключение из этого правила. Это исключение позволяет тестировать процедуры обмена данными на одном компьютере. Прежде чем отправлять приложение в Магазин Windows, необходимо протестировать приложение без этого исключения.  
   
@@ -205,7 +205,7 @@ manager: "ghogen"
  Для диагностики проблемы с установкой и первоначальной конфигурацией приложения Visual C\# или Visual Basic выберите **Удалить, а затем переустановить пакет** на странице свойств **Отладка**, чтобы создать исходную установку при запуске отладки. Этот параметр не доступен для проектов Visual C\+\+.  
   
 ###  <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> \(Необязательно\). Отключите требование аутентификации для запуска удаленного отладчика  
- ![Применимо только к Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![Применимо только к Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  По умолчанию для запуска удаленного отладчика необходимо вводить учетные данные.  
   

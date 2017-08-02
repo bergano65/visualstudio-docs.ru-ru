@@ -65,7 +65,7 @@ caps.handback.revision: 2
   
  **Пояснительный текст в Visual Studio**  
   
- ![Supplemental text in Visual Studio](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601\-c\_SupplementalText2")  
+ ![Supplemental text in Visual Studio](~/extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601\-c\_SupplementalText2")  
   
  **Пояснительный текст в Visual Studio**  
   
@@ -108,7 +108,7 @@ caps.handback.revision: 2
   
 -   При запуске диалоговых окон, соблюдения стандартов для эллипсов: нет кнопку с многоточием для навигации, эллипсы, если задача требует дополнительных пользовательского интерфейса.  
   
-     ![Help link in Visual Studio](../../extensibility/ux-guidelines/media/0601-e_helplink.png "0601\-e\_HelpLink")  
+     ![Help link in Visual Studio](~/extensibility/ux-guidelines/media/0601-e_helplink.png "0601\-e\_HelpLink")  
   
      **Многоточие \(...\) в справке ссылка указывает, что задача потребует дополнительных пользовательского интерфейса.**  
   
@@ -260,7 +260,7 @@ caps.handback.revision: 2
   
 |Хорошо|Неверный|  
 |------------|--------------|  
-|«Номер набран больше не службы. Проверьте номер и наберите его еще раз или набрать 0 для оператора.»|-   «Ошибка \(449\): недопустимое число»<br />-   «Эта ошибка необработанное исключение указывает, что операция завершилась успешно».<br /><br /> ![Bad error message in Visual Studio](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602\-a\_ErrorDialog")|  
+|«Номер набран больше не службы. Проверьте номер и наберите его еще раз или набрать 0 для оператора.»|-   «Ошибка \(449\): недопустимое число»<br />-   «Эта ошибка необработанное исключение указывает, что операция завершилась успешно».<br /><br /> ![Bad error message in Visual Studio](~/extensibility/ux-guidelines/media/0602-a_errordialog.png "0602\-a\_ErrorDialog")|  
   
 ## Доступ к справке  
   

@@ -144,7 +144,7 @@ typedef struct _CrtMemBlockHeader
  Новые объекты \(0xCD\)  
  Новые объекты при выделении памяти заполняются значением 0xCD.  
   
- ![К началу](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
   
 ##  <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> Типы блоков в отладочной куче  
  Каждому блоку памяти в отладочной куче присвоен один из пяти типов выделений памяти.  Эти типы отслеживаются и по\-разному фиксируются в отчетах в зависимости от целей: обнаружение утечки памяти или отчет о состоянии.  Тип блока можно задать, выделив его с помощью непосредственного вызова одной из функций выделения отладочной кучи, например [\_malloc\_dbg](/visual-cpp/c-runtime-library/reference/malloc-dbg).  Пять типов блоков памяти в отладочной куче \(задаются в **nBlockUse** — члене структуры **\_CrtMemBlockHeader**\) следующие:  
@@ -178,7 +178,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
 #define _BLOCK_SUBTYPE(block)       (block >> 16 & 0xFFFF)  
 ```  
   
- ![К началу](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
   
 ##  <a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a> Проверка целостности кучи и утечек памяти  
  Из кода могут быть доступны многие функции отладочной кучи.  В следующих разделах описываются эти возможности и способы их использования.  
@@ -199,7 +199,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
 |**\_CRTDBG\_CHECK\_CRT\_DF**|Off|Указывает, что блоки, помеченные как **\_CRT\_BLOCK**, должны включаться в операции обнаружения утечки и сравнения состояний.  Если этот бит выключен, память, используемая внутренне библиотекой CRT, во время таких операций не обрабатывается.|  
 |**\_CRTDBG\_LEAK\_CHECK\_DF**|Off|Принудительно запускает диагностирование утечек по выходе из программы — через вызов **\_CrtDumpMemoryLeaks**.  Если при попытке приложения освободить всю выделенную память происходит сбой, создается отчет об ошибке.|  
   
- ![К началу](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
   
 ##  <a name="BKMK_Configure_the_debug_heap"></a> Настройка отладочной кучи  
  Все функции кучи, такие как `malloc`, `free`, `calloc`, `realloc`, `new` и `delete`, разрешают своим отладочным эквивалентам действовать в отладочной куче.  Когда освобождается блок памяти, отладочная куча автоматически проверяет целостность буферов по обеим сторонам выделенной области и выдает отчет об ошибке в случае их перезаписи.  
@@ -234,7 +234,7 @@ tmpFlag &= ~_CRTDBG_CHECK_CRT_DF;
 _CrtSetDbgFlag( tmpFlag );  
 ```  
   
- ![К началу](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
   
 ##  <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> new, delete и \_CLIENT\_BLOCK в отладочной куче C\+\+  
  Отладочные версии библиотеки времени выполнения C содержат отладочные версии операторов C\+\+ `new` и `delete`.  При использовании типа выделения `_CLIENT_BLOCK` необходимо либо непосредственно вызвать отладочную версию оператора `new`, либо создать макросы, заменяющие оператор `new` в режиме отладки, как показано в следующем примере.  
@@ -272,7 +272,7 @@ int main( )   {
   
  Отладочная версия оператора `delete` работает со всеми типами блоков и не требует изменений в программе при компиляции версии выпуска.  
   
- ![К началу](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
   
 ##  <a name="BKMK_Heap_State_Reporting_Functions"></a> Функции создания отчетов о состоянии кучи  
  **\_CrtMemState**  
@@ -309,7 +309,7 @@ typedef struct _CrtMemState
 |[\_CrtMemDumpAllObjectsSince](/visual-cpp/c-runtime-library/reference/crtmemdumpallobjectssince)|Выводит сведения обо всех объектах, выделенных с момента получения данного снимка кучи или с начала выполнения.  При каждом выводе блока **\_CLIENT\_BLOCK** вызывается предоставляемая приложением функция\-обработчик, если она была установлена с помощью **\_CrtSetDumpClient**.|  
 |[\_CrtDumpMemoryLeaks](/visual-cpp/c-runtime-library/reference/crtdumpmemoryleaks)|Определяет, не произошла ли утечка памяти с начала выполнения программы, и, если произошла, выводит все выделенные объекты.  Каждый раз, когда функция **\_CrtDumpMemoryLeaks** выводит блок **\_CLIENT\_BLOCK**, вызывается предоставляемая приложением функция\-обработчик, если она была установлена с помощью **\_CrtSetDumpClient**.|  
   
- ![К началу](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
   
 ##  <a name="BKMK_Track_Heap_Allocation_Requests"></a> Отслеживание запросов выделения кучи  
  Хотя точное указание имени исходного файла и номера строки, на которой стоит утверждение или выполняется макрос, часто очень полезно для выявления причины проблемы, этого не всегда достаточно для функций выделения кучи.  Поскольку макросы могут вставляться в разные места логического дерева приложения, выделение часто скрыто в специальной программе из библиотеки DLL, которая тоже может вызываться из разных мест и в разное время.  И поэтому вопрос обычно не в том, какая строка кода осуществила некорректное выделение, а в том, которое из тысяч выделений, сделанных этой строкой, было некорректным и почему.  
@@ -364,7 +364,7 @@ int addNewRecord(struct RecStruct *prevRecord,
   
  Теперь имя исходного файла и номер строки, где вызывалась `addNewRecord`, будут сохранены в каждом выделенном в отладочной куче блоке и помещены в отчет при проверке этого блока.  
   
- ![К началу](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
   
 ## См. также  
  [Отладка машинного кода](../debugger/debugging-native-code.md)

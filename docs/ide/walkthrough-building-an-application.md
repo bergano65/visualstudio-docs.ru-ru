@@ -105,13 +105,13 @@ ms.lasthandoff: 05/30/2017
   
 3.  В диалоговом окне **Создание конфигурации решения** введите для новой конфигурации имя `Test`, скопируйте параметры из существующей конфигурации отладки и нажмите кнопку **ОК**.  
   
-     ![Диалоговое окно конфигурации нового решения](../ide/media/buildwalk_newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")  
+     ![Диалоговое окно конфигурации нового решения](~/ide/media/buildwalk_newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")  
   
 4.  В списке **Активная платформа решения** выберите **Создать**.  
   
 5.  В диалоговом окне **Создание платформы решения** выберите **x64** и не копируйте параметры из платформы x86.  
   
-     ![Диалоговое окно платформы нового решения](../ide/media/buildwalk_newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
+     ![Диалоговое окно платформы нового решения](~/ide/media/buildwalk_newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
   
 6.  Нажмите кнопку **ОК** .  
   
@@ -134,7 +134,7 @@ ms.lasthandoff: 05/30/2017
   
  Рис. 1. Предупреждения Visual Basic  
   
- ![Окно выходных данных Visual Basic](../ide/media/buildwalk_vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")  
+ ![Окно выходных данных Visual Basic](~/ide/media/buildwalk_vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")  
   
  Рис 2. Предупреждения Visual C#  
   
@@ -181,7 +181,7 @@ ms.lasthandoff: 05/30/2017
   
  Окно **Вывод** отображает только сводные данные о сборке.  
   
- ![Окно выходных данных, предупреждения сборки Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")  
+ ![Окно выходных данных, предупреждения сборки Visual Basic](~/ide/media/buildwalk_visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")  
   
  Дополнительные сведения см. в разделе [Практическое руководство. Отключение предупреждений компилятора](../ide/how-to-suppress-compiler-warnings.md).  
   

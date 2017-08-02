@@ -201,17 +201,17 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
  **Подключение входит в тип OutPort вложенного компонента**  
   
- ![Построитель подключения](../modeling/media/connectionbuilder_3.png "ConnectionBuilder_3")  
+ ![Построитель подключения](~/modeling/media/connectionbuilder_3.png "ConnectionBuilder_3")  
   
  В связи с этим необходимо указать, что подключение может идти от вложенного компонента к типу OutPort. Чтобы указать такое подключение, необходимо задать **использует настраиваемое принятие** на **InPort** тип как роль источника и **OutPort** типа, что и целевой роли в **подробные сведения о DSL** окна, как показано на следующем рисунке:  
   
  **Директива подключения связи в обозреватель DSL**  
   
- ![Изображение мастера подключения](../modeling/media/connectionbuilder_4a.png "ConnectionBuilder_4a")  
+ ![Изображение мастера подключения](~/modeling/media/connectionbuilder_4a.png "ConnectionBuilder_4a")  
   
  **Директива подключения связи в окно сведений DSL**  
   
- ![](../modeling/media/connectionbuilder_4b.png "ConnectionBuilder_4b")  
+ ![](~/modeling/media/connectionbuilder_4b.png "ConnectionBuilder_4b")  
   
  После этого в класс ConnectionBuilder необходимо предоставить методы:  
   

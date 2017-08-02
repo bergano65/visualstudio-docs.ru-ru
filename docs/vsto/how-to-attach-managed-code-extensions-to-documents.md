@@ -32,7 +32,7 @@ caps.handback.revision: 32
 > [!NOTE]  
 >  Загрузка настройки прекратится, если в коде ожидаются элементы управления, отсутствующие в указанном документе.  
   
- ![ссылка на видео](../vsto/media/playvideo.png "ссылка на видео") Для просмотра связанных демонстрационных видеороликов перейдите по ссылке [How Do I: Attach or Detach a VSTO Assembly from a Word Document?](http://go.microsoft.com/fwlink/?LinkId=136782).  
+ ![ссылка на видео](~/data-tools/media/playvideo.gif "ссылка на видео") Для просмотра связанных демонстрационных видеороликов перейдите по ссылке [How Do I: Attach or Detach a VSTO Assembly from a Word Document?](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
 ### Вложение расширений управляемого кода в документ  
   

@@ -44,22 +44,22 @@ Visual Studio предоставляет полную поддержку тех�
 
 - Переменные контекста, передаваемые в шаблоне:
 
-    ![IntelliSense для переменных контекста](media/template-django-intellisense.png)
+    ![IntelliSense для переменных контекста](~/python/media/template-django-intellisense.png)
 
 - Добавление тегов и фильтрация для обоих встроенных и определяемых пользователем элементов:
 
-    ![IntelliSense для тегов и фильтров](media/template-django-intellisense-filter.png)
+    ![IntelliSense для тегов и фильтров](~/python/media/template-django-intellisense-filter.png)
 
 - Цветовая маркировка синтаксиса для внедренного CSS и JavaScript:
 
-    ![IntelliSense для CSS](media/template-django-intellisense-css.png)
+    ![IntelliSense для CSS](~/python/media/template-django-intellisense-css.png)
 
-    ![IntelliSense для JavaScript](media/template-django-intellisense-js.png)
+    ![IntelliSense для JavaScript](~/python/media/template-django-intellisense-js.png)
 
 
 Также Visual Studio предоставляет полную [поддержку отладки](debugging.md) для проектов Django: 
 
-![Точки останова](media/template-django-debugging.png)
+![Точки останова](~/python/media/template-django-debugging.png)
 
 ## <a name="django-management-console"></a>Консоль управления Django
 
@@ -67,16 +67,16 @@ Visual Studio предоставляет полную поддержку тех�
 
 - **Open Django Shell...** (Открыть оболочку Django...) открывает оболочку в контексте приложения, в которой вы можете управлять моделями:
 
-    ![Консоль](media/template-django-console-shell.png)
+    ![Консоль](~/python/media/template-django-console-shell.png)
 
 - **Django Sync DB** (База данных синхронизации Django) выполняет в интерактивном окне команду `manage.py syncdb`:
 
-    ![Консоль](media/template-django-console-sync-db.png)
+    ![Консоль](~/python/media/template-django-console-sync-db.png)
 
 - **Collect Static** (Сбор статических файлов) выполняет `manage.py collectstatic --noinput` для копирования всех статических файлов в путь, указанный параметром `STATIC_ROOT` в файле `settings.py`. Обратите внимание, что при [публикации в Microsoft Azure](template-web.md#publishing-to-azure-app-service) статические файлы автоматически сохраняются в процессе публикации.
 
-    ![Консоль](media/template-django-console-collect-static.png)
+    ![Консоль](~/python/media/template-django-console-collect-static.png)
 
 - **Validate** (Проверка) выполняет `manage.py validate`, чтобы получить сообщения обо всех ошибках проверки установленных моделей, заданных параметром `INSTALLED_APPS` в файле `settings.py`:
 
-    ![Консоль](media/template-django-console-validate.png)
+    ![Консоль](~/python/media/template-django-console-validate.png)

@@ -89,15 +89,15 @@ caps.handback.revision: 50
     > [!NOTE]  
     >  Если вкладка **Разработчик** не отображается, сделайте ее видимой.  Дополнительные сведения см. в разделе [Практическое руководство. Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6.  В группе **Элементы управления** нажмите кнопку **Текст** ![PlainTextContentControl](../vsto/media/plaintextcontrol.png "PlainTextContentControl"), чтобы добавить <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> в первую ячейку.  
+6.  В группе **Элементы управления** нажмите кнопку **Текст** ![PlainTextContentControl](~/vsto/media/plaintextcontrol.gif "PlainTextContentControl"), чтобы добавить <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> в первую ячейку.  
   
 7.  Выберите вторую строку во втором столбце таблицы \(рядом с элементом **Дата приема на работу**\).  
   
-8.  В группе **Элементы управления** нажмите кнопку **Выбор даты** ![DatePickerContentControl](../vsto/media/datepicker.png "DatePickerContentControl"), чтобы добавить <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> во вторую ячейку.  
+8.  В группе **Элементы управления** нажмите кнопку **Выбор даты** ![DatePickerContentControl](~/vsto/media/datepicker.gif "DatePickerContentControl"), чтобы добавить <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> во вторую ячейку.  
   
 9. Выберите третью строку во втором столбце таблицы \(рядом с элементом **Должность**\).  
   
-10. В группе **Элементы управления** нажмите кнопку **Раскрывающийся список** ![DropDownListContentControl](../vsto/media/dropdownlist.png "DropDownListContentControl"), чтобы добавить <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> в последнюю ячейку.  
+10. В группе **Элементы управления** нажмите кнопку **Раскрывающийся список** ![DropDownListContentControl](~/vsto/media/dropdownlist.gif "DropDownListContentControl"), чтобы добавить <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> в последнюю ячейку.  
   
  Вот и весь пользовательский интерфейс для этого проекта.  При запуске проекта можно ввести текст в первой строке и выбрать дату во второй строке.  Следующий шаг — присоединение данных, которые будут отображаться в документе, к XML\-файлу.  
   

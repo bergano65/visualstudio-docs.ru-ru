@@ -131,7 +131,7 @@ ms.lasthandoff: 04/04/2017
   
      Будет построен и запущен проект теста. Появится окно обозревателя тестов, а тест будет указан в разделе **Пройденные тесты**. Область сводки в нижней части окна содержит дополнительные сведения о выбранном тесте.  
   
-     ![Обозреватель тестов](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
+     ![Обозреватель тестов](~/test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
   
 ##  <a name="BKMK_Add_the_Rooter_class_to_the_Maths_project"></a> Добавление класса Rooter в проект Maths  
   
@@ -200,7 +200,7 @@ ms.lasthandoff: 04/04/2017
   
 5.  В разделе "Обозреватель тестов" выберите **Запустить все**.  
   
-     ![Основной тест пройден](../test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
+     ![Основной тест пройден](~/test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
   
  Вы настроили тест и проекты кода и подтвердили, что можно выполнять тесты, которые запускают функции из проекта кода. Теперь можно начать писать реальные тесты и код.  
   

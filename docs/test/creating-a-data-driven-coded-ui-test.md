@@ -53,7 +53,7 @@ ms.lasthandoff: 05/13/2017
   
 2.  Выберите запись действий.  
   
-     ![Выбор записи действий](../test/media/cuit_datadriven_generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")  
+     ![Выбор записи действий](~/test/media/cuit_datadriven_generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")  
   
 3.  Откройте приложение "Калькулятор" и начните запись теста.  
   
@@ -61,7 +61,7 @@ ms.lasthandoff: 05/13/2017
   
 4.  Сложите 1 и 2, приостановите средство записи и создайте метод теста. Позже эти значения ввода пользователя будут заменены значениями из файла данных.  
   
-     ![Создание метода тестирования](../test/media/cuit_datadriven_cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")  
+     ![Создание метода тестирования](~/test/media/cuit_datadriven_cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")  
   
      Закройте построитель теста. Метод добавляется в тест.  
   
@@ -91,7 +91,7 @@ ms.lasthandoff: 05/13/2017
   
 8.  После настройки утверждения снова создайте код из построителя. При этом создается новый метод для проверки.  
   
-     ![Создание метода проверочного утверждения](../test/media/cuit_datadriven_assertiongencode.png "CUIT_dataDriven_AssertionGenCode")  
+     ![Создание метода проверочного утверждения](~/test/media/cuit_datadriven_assertiongencode.png "CUIT_dataDriven_AssertionGenCode")  
   
      Так как метод `ValidateSum` проверяет результаты метода `AddNumbers`, переместите его в нижнюю часть блока кода.  
   

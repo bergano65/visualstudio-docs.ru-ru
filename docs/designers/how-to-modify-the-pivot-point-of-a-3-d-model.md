@@ -46,7 +46,7 @@ caps.handback.revision: 14
   
  Модель дома с измененным центром вращения:  
   
- ![Модель дома с измененным центром вращения](../designers/media/digit-modified-model.png "Digit\-Modified\-Model")  
+ ![Модель дома с измененным центром вращения](~/designers/media/digit-modified-model.png "Digit\-Modified\-Model")  
   
 ## См. также  
  [Практическое руководство. Создание простейшей трехмерной модели](../Topic/How%20to:%20Create%20a%20Basic%203-D%20Model.md)   
