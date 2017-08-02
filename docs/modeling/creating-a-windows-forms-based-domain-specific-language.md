@@ -20,7 +20,7 @@ ms.lasthandoff: 02/22/2017
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Создание доменного языка на основе Windows Forms
 Windows Forms можно использовать для отображения состояния модели доменного языка (DSL), вместо использования на схеме DSL. В этом разделе рассматриваются привязки формы Windows Forms для DSL, используя [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] визуализации и моделирования SDK.  
   
- ![DSL-Wpf-2](~/docs/modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
+ ![DSL-Wpf-2](~/modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
 Экземпляр DSL, показывая пользовательский Интерфейс формы Windows и обозреватель моделей.  
   
 ## <a name="creating-a-windows-forms-dsl"></a>Создание Windows Forms DSL  
@@ -71,7 +71,7 @@ Windows Forms можно использовать для отображения 
 ## <a name="updating-the-dsl-definition"></a>Обновление определения DSL  
  Следующие определения DSL используется в этом пошаговом руководстве.  
   
- ![DSL-Wpf-1](~/docs/modeling/media/dsl-wpf-1.png "DSL-Wpf-1")  
+ ![DSL-Wpf-1](~/modeling/media/dsl-wpf-1.png "DSL-Wpf-1")  
   
 #### <a name="to-update-the-dsl-definition"></a>Для обновления определения доменного языка  
   
@@ -130,7 +130,7 @@ Windows Forms можно использовать для отображения 
   
      Свойства и связи класс модели отображаются в окне «Источники данных».  
   
-     ![DslWpf&3;](~/docs/modeling/media/dslwpf-3.png "DslWpf-3")  
+     ![DslWpf&3;](~/modeling/media/dslwpf-3.png "DslWpf-3")  
   
 #### <a name="to-connect-your-model-to-a-form"></a>Для подключения к модели в форму  
   
@@ -175,7 +175,7 @@ Windows Forms можно использовать для отображения 
   
 -   Это гарантирует, что, когда пользователь выбирает строку, окна «Свойства» отображает свойства соответствующий элемент модели, а не строку сетки данных.  
   
- ![DslWpf4](~/docs/modeling/media/dslwpf4.png "DslWpf4")  
+ ![DslWpf4](~/modeling/media/dslwpf4.png "DslWpf4")  
 Схема связей между источники данных и представления.  
   
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>Для выполнения привязки к линии DSL  
@@ -305,7 +305,7 @@ Windows Forms можно использовать для отображения 
   
      Вы сможете изменить имя элемента в представлении сетки данных. Можно также удалить из него.  
   
- ![DSL-Wpf-2](~/docs/modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
+ ![DSL-Wpf-2](~/modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
   
 ### <a name="about-the-code-to-add-an-element"></a>О коде, чтобы добавить элемент  
  Для новых кнопок элемент следующий альтернативный код немного проще.  

@@ -23,7 +23,7 @@ caps.handback.revision: 15
 # Запуск приложений для Магазина Windows на локальном компьютере
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Применимо только к Windows](~/docs/debugger/media/windows_only_content.png "windows\_only\_content")  
+![Применимо только к Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Чтобы провести отладку, тестирование или анализ производительности для приложения Магазина Windows, вы можете запустить это приложение на том же компьютере, где размещается Visual Studio.  Если экран устройства поддерживает сенсорное управление, вам становятся доступны все функции приложения, в противном случае вы сможете использовать только жесты, выполняемые с помощью мыши и клавиатуры.  
   
@@ -47,7 +47,7 @@ caps.handback.revision: 15
   
 -   В проектах C\# и Visual Basic щелкните элемент **Отладка** и выберите **Локальный компьютер** в раскрывающемся списке **Целевое устройство**.  
   
-     ![Страница свойств проектов C&#35; и Visual Basic](~/docs/debugger/media/vsrun_cs_vb_projprop_local.png "VSRUN\_CS\_VB\_ProjProp\_Local")  
+     ![Страница свойств проектов C&#35; и Visual Basic](~/debugger/media/vsrun_cs_vb_projprop_local.png "VSRUN\_CS\_VB\_ProjProp\_Local")  
   
 -   В проектах C\+\+ и JavaScript разверните узел **Свойства конфигурации**, щелкните **Отладка** и выберите **Локальный отладчик** в списке **Загружаемый отладчик**.  
   

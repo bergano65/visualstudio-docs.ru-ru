@@ -49,7 +49,7 @@ manager: "ghogen"
 > [!NOTE]
 >  Параметр **Показать внешний код** сохраняется в профилировщик текущего пользователя.  Он применяется ко всем проектам на всех языках, открываемых этим пользователем.  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents)  
   
 ##  <a name="BKMK__NET_Framework_Just_My_Code"></a> "Только мой код" в .NET Framework  
  [Пользовательский код и код, не написанный пользователем](#BKMK_NET_User_and_non_user_code) **&#124;** [Поведение пошагового выполнения](#BKMK_NET_Stepping_behavior) **&#124;** [Поведение точки останова](#BKMK_NET_Breakpoint_behavior) **&#124;** [Поведение исключения](#BKMK_NET_Exception_behavior)  
@@ -71,24 +71,24 @@ manager: "ghogen"
   
  Весь остальной код считается пользовательским.  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в .NET Framework](#BKMK__NET_Framework_Just_My_Code)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в .NET Framework](#BKMK__NET_Framework_Just_My_Code)  
   
 ###  <a name="BKMK_NET_Stepping_behavior"></a> Поведение пошагового выполнения  
  При выполнении **Шага с заходом** \(клавиша F11\) внутрь кода, не написанного пользователем, отладчик выполняет этот код с переходом к следующему оператору пользователя.  При выполнении **Шага с выходом** \(сочетание клавиш: Shift \+ F11\) отладчик переходит к следующей строке пользовательского кода.  Если код пользователя не обнаруживается, выполнение продолжается до завершения работы приложения, достижения точки останова или возникновения исключения.  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в .NET Framework](#BKMK__NET_Framework_Just_My_Code)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в .NET Framework](#BKMK__NET_Framework_Just_My_Code)  
   
 ###  <a name="BKMK_NET_Breakpoint_behavior"></a> Поведение точки останова  
  Если включен режим "Только мой код", можно выбрать **Прервать все** \(сочетание клавиш: Ctrl \+ Alt \+ Break\) и остановить выполнение в месте, где нет кода пользователя.  Когда это происходит, отображается окно "Нет исходного кода".  Если затем выбирается команда "Шаг", отладчик переходит к следующей строке пользовательского кода.  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в .NET Framework](#BKMK__NET_Framework_Just_My_Code)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в .NET Framework](#BKMK__NET_Framework_Just_My_Code)  
   
 ###  <a name="BKMK_NET_Exception_behavior"></a> Поведение исключения  
  При возникновении необработанного исключения в коде, написанном не пользователем, отладчик прерывается на той строке в коде пользователя, где было создано исключение.  
   
  Если для этого исключения включена первичная обработка исключения, строка кода пользователя выделяется зеленым цветом.  Стек вызовов отображает кадр с аннотациями с подписью **\[Внешний код\]**.  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в .NET Framework](#BKMK__NET_Framework_Just_My_Code)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в .NET Framework](#BKMK__NET_Framework_Just_My_Code)  
   
 ##  <a name="BKMK_C___Just_My_Code"></a> "Только мой код" в C\+\+  
  [Пользовательский код и код, не написанный пользователем](#BKMK_CPP_User_and_non_user_code) **&#124;** [Поведение пошагового выполнения](#BKMK_CPP_Stepping_behavior) **&#124;** [Поведение исключения](#BKMK_CPP_Exception_behavior) **&#124;** [Настройка поведения пошагового выполнения](#BKMK_CPP_Customize_stepping_behavior) **&#124;** [Настройка поведения стека вызовов](#BKMK_CPP_Customize_call_stack_behavior)  
@@ -112,19 +112,19 @@ manager: "ghogen"
   
  Для настройки пошагового выполнения и поведения окна стека вызовов в `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` вы можете создавать собственные `.natstepfilter` и `.natjmc`.  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в C++](#BKMK_C___Just_My_Code)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в C++](#BKMK_C___Just_My_Code)  
   
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> Поведение пошагового выполнения  
  При выполнении **Шага с заходом** \(клавиша F11\) внутрь кода, не написанного пользователем, из пользовательского кода отладчик выполняет этот код с переходом к следующей строке пользовательского кода.  При выполнении **Шага с выходом** \(сочетание клавиш: Shift \+ F11\) отладчик переходит к следующей строке пользовательского кода.  Если код пользователя не обнаруживается, выполнение продолжается до завершения работы приложения, достижения точки останова или возникновения исключения.  
   
  Если отладчик делает останов в коде, не написанном пользователем \(например, если команда "Прервать все" останавливает в коде, не написанном пользователем\), пошаговое выполнение продолжается в коде, не написанном пользователем.  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в C++](#BKMK_C___Just_My_Code)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в C++](#BKMK_C___Just_My_Code)  
   
 ###  <a name="BKMK_CPP_Exception_behavior"></a> Поведение исключения  
  Если отладчик обнаруживает исключение, он останавливается на исключении независимо от того, находится ли оно в коде пользователя.  Параметры **Не обработанные пользовательским кодом** в диалоговом окне **Исключения** игнорируются.  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в C++](#BKMK_C___Just_My_Code)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в C++](#BKMK_C___Just_My_Code)  
   
 ###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> Настройка поведения пошагового выполнения  
  Вы можете определить функции, для которых будут выполняться шаги с обходом, внеся их в файлы `*.natstepfilter` как код, не написанный пользователем.  
@@ -158,7 +158,7 @@ manager: "ghogen"
 |`Module`|Необязательно.  Регулярное выражение в формате ECMA\-262, указывающее полный путь к модулю, содержащему функцию.  Сопоставление не учитывает регистр.|  
 |`Action`|Обязательный.  Одно из следующих чувствительных к регистру значений:<br /><br /> -   `NoStepInto`  — указывает отладчику, что необходимо выполнить шаг с обходом соответствующей функции.<br />-   `StepInto`  — указывает отладчику, что необходимо осуществить шаги с заходом в соответствующие функции, отменяя все остальные инструкции `NoStepInto` для соответствующих функций.|  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в C++](#BKMK_C___Just_My_Code)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в C++](#BKMK_C___Just_My_Code)  
   
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Настройка поведения стека вызовов  
  Вы можете указать модули, файлы исходного кода и функции, которые необходимо рассматривать как код, не написанный пользователем, в стеках вызовов, указав их в файлах `*.natjmc`.  
@@ -210,7 +210,7 @@ manager: "ghogen"
 |`Module`|Необязательно.  Имя модуля или полный путь к модулю, содержащему эту функцию.  Этот атрибут можно использовать для устранения неоднозначности функций с одинаковыми именами.|  
 |`ExceptionImplementation`|Если задано значение `true`, стек вызовов отображает функцию, которая создала исключение, а не данную функцию.|  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в C++](#BKMK_C___Just_My_Code)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в C++](#BKMK_C___Just_My_Code)  
   
 ##  <a name="BKMK_JavaScript_Just_My_Code"></a> "Только мой код" в JavaScript  
  [Пользовательский код и код, не написанный пользователем](#BKMK_JS_User_and_non_user_code) **&#124;** [Поведение пошагового выполнения](#BKMK_JS_Stepping_behavior) **&#124;** [Поведение точки останова](#BKMK_JS_Breakpoint_behavior) **&#124;** [Поведение исключения](#BKMK_JS_Exception_behavior) **&#124;** [Настройка режима "Только мой код"](#BKMK_JS_Customize_Just_My_Code)  
@@ -242,7 +242,7 @@ manager: "ghogen"
   
  Весь остальной код классифицируется как **MyCode**.  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в JavaScript](#BKMK_JavaScript_Just_My_Code)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в JavaScript](#BKMK_JavaScript_Just_My_Code)  
   
 ###  <a name="BKMK_JS_Stepping_behavior"></a> Поведение пошагового выполнения  
   
@@ -254,7 +254,7 @@ manager: "ghogen"
   
 -   **Шаг с выходом** \(сочетание клавиш: Shift \+ F11\) останавливается на следующей строке кода пользователя.  Если код пользователя не обнаруживается, выполнение продолжается до завершения работы приложения, достижения точки останова или возникновения исключения.  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в JavaScript](#BKMK_JavaScript_Just_My_Code)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в JavaScript](#BKMK_JavaScript_Just_My_Code)  
   
 ###  <a name="BKMK_JS_Breakpoint_behavior"></a> Поведение точки останова  
   
@@ -266,7 +266,7 @@ manager: "ghogen"
   
     -   коде **UnrelatedCode**, отладчик не останавливается.  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в JavaScript](#BKMK_JavaScript_Just_My_Code)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в JavaScript](#BKMK_JavaScript_Just_My_Code)  
   
 ###  <a name="BKMK_JS_Exception_behavior"></a> Поведение исключения  
  Если необработанное исключение возникает в:  
@@ -281,7 +281,7 @@ manager: "ghogen"
   
 -   Если исключение не обрабатывается, отладчик останавливается.  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в JavaScript](#BKMK_JavaScript_Just_My_Code)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в JavaScript](#BKMK_JavaScript_Just_My_Code)  
   
 ###  <a name="BKMK_JS_Customize_Just_My_Code"></a> Настройка режима "Только мой код"  
  Чтобы разделить код пользователя и код, не написанный пользователем, для отдельного проекта Visual Studio, добавьте файл .json с именем `mycode.json` в корневую папку проекта.  
@@ -352,4 +352,4 @@ manager: "ghogen"
   
  Строка URL\-адреса или файла может содержать один или несколько символов `*`, соответствующих любому количеству символов.  `*` равноценен регулярному выражению `.*`.  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в JavaScript](#BKMK_JavaScript_Just_My_Code)
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents) **&#124;** ["Только мой код" в JavaScript](#BKMK_JavaScript_Just_My_Code)

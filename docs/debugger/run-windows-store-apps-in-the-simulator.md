@@ -42,9 +42,9 @@ caps.handback.revision: 42
 ##  <a name="BKMK_Choose_an_interaction_mode"></a> Выбор режима взаимодействия  
  Вы можете выбрать следующие режимы взаимодействия.  
   
--   ![Кнопка режима мыши](~/docs/debugger/media/simulator_mousemodebtn.png "SIMULATOR\_MouseModeBtn") Режим мыши: устанавливает режим взаимодействия с помощью жестов мыши. К жестам мыши относятся щелчки, двойные щелчки и перетаскивания.  
+-   ![Кнопка режима мыши](~/debugger/media/simulator_mousemodebtn.png "SIMULATOR\_MouseModeBtn") Режим мыши: устанавливает режим взаимодействия с помощью жестов мыши. К жестам мыши относятся щелчки, двойные щелчки и перетаскивания.  
   
--   ![Кнопка запуска эмуляции сенсорного ввода](~/docs/debugger/media/simulator_starttouchemulationbtn.png "SIMULATOR\_StartTouchEmulationBtn") Эмуляция сенсорного экрана: устанавливает режим взаимодействия с помощью жестов касания одним пальцем. К события касания одним пальцем относятся касания, перетаскивания и проведение пальцем по экрану.  
+-   ![Кнопка запуска эмуляции сенсорного ввода](~/debugger/media/simulator_starttouchemulationbtn.png "SIMULATOR\_StartTouchEmulationBtn") Эмуляция сенсорного экрана: устанавливает режим взаимодействия с помощью жестов касания одним пальцем. К события касания одним пальцем относятся касания, перетаскивания и проведение пальцем по экрану.  
   
      ![Simulator one finger target](../debugger/media/simulator_onefinger.png "SIMULATOR\_OneFinger") Один целевой значок указывает расположение событий в имитаторе. Используйте мышь для перемещения указателя.  
   
@@ -53,7 +53,7 @@ caps.handback.revision: 42
 ## Жест сжатия и масштабирования  
  Устанавливает режим взаимодействия с помощью жестов сжатия и масштабирования, выполняемых двумя пальцами.  
   
--   ![Siimulator two finger target](~/docs/debugger/media/simulator_twofinger.png "SIMULATOR\_TwoFinger")  
+-   ![Siimulator two finger target](~/debugger/media/simulator_twofinger.png "SIMULATOR\_TwoFinger")  
   
      Двойной целевой значок указывает расположение двух пальцев на экране устройства.  
   
@@ -108,7 +108,7 @@ caps.handback.revision: 42
   
 -   Чтобы задать расположение снимков экрана, нажмите кнопку **Параметры снимка экрана** и выберите расположение из контекстного меню.  
   
-     ![Контекстное меню параметров снимка экрана](~/docs/debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR\_ScreenShotSettingsCntxMnu")  
+     ![Контекстное меню параметров снимка экрана](~/debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR\_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> Имитация свойств сетевых подключений  
  Можно помочь пользователям приложения управлять расходами на оплату сетевых подключений с лимитным тарифным планом путем уведомления о стоимости сетевых подключений или изменениях состояния тарифных планов и предоставления приложению возможности использовать эти сведения, чтобы избежать дополнительных расходов на оплату роуминга или затрат из\-за превышения заданного ограничения на передачу данных. Интерфейсы API [Windows.Networking.Connectivity](https://msdn.microsoft.com/en-us/library/windows/apps/windows.networking.connectivity.aspx) позволяют реагировать на события [NetworkStatusChanged](https://msdn.microsoft.com/en-us/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) и [TriggerType](https://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx), на которые имеется подписка. См. [краткое руководство по управлению ограничениями расходов на оплату сетевых подключений с лимитным тарифным планом](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  

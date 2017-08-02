@@ -120,7 +120,7 @@ caps.handback.revision: 20
 ##  <a name="tier_interaction"></a> Уровневое взаимодействие  
  При профилировании уровневого взаимодействия в файл данных профилирования добавляются сведения о синхронных вызовах [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] между страницей [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] или другим приложением и базой данных [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)].  Данные включают количество времени, затрачиваемого на вызовы, а также максимальное и минимальное время.  Данные об уровневом взаимодействии можно добавлять в данные профилирования, собранные с помощью методов выборки, инструментирования, памяти .NET или параллелизма.  
   
- ![Данные профилирования взаимодействия уровней](~/docs/profiling/media/tierinteraction_profilingtools.png "TierInteraction\_ProfilingTools")  
+ ![Данные профилирования взаимодействия уровней](~/profiling/media/tierinteraction_profilingtools.png "TierInteraction\_ProfilingTools")  
 Данные об уровневом взаимодействии, собранные средствами профилирования  
   
  [Сбор данных взаимодействия уровней](../profiling/collecting-tier-interaction-data.md)  

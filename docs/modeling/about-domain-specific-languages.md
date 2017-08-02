@@ -38,7 +38,7 @@ caps.handback.revision: 26
   
  На следующем рисунке показана небольшую модель в diagrammatic DSL:  
   
- ![Модель1 семейного древа Тюдор](~/docs/modeling/media/tudor_familytreemodel.png "Tudor\_FamilyTreeModel")  
+ ![Модель1 семейного древа Тюдор](~/modeling/media/tudor_familytreemodel.png "Tudor\_FamilyTreeModel")  
   
 ## Что можно делать с DSLs  
  Типичное приложение DSL создавать программный код или другие артефакты.  При указании можно указать свой DSL *текстовые шаблоны* чтение модели DSL, и создает текстовые файлы.  

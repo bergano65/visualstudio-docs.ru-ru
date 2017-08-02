@@ -44,7 +44,7 @@ ms.lasthandoff: 05/09/2017
 
 После завершения установки выберите **Просмотр > Cookicutter Explorer**, чтобы отрыть окно обозревателя.
 
-![Главное окно Cookiecutter](~/docs/python/media/cookiecutter-overview.png)
+![Главное окно Cookiecutter](~/python/media/cookiecutter-overview.png)
 
 ## <a name="cookiecutter-workflow"></a>Рабочий процесс Cookiecutter
 
@@ -76,7 +76,7 @@ ms.lasthandoff: 05/09/2017
 
 После локальной установки шаблона Cookiecutter отображает страницу параметров, на которой вы можете указать, где именно Cookiecutter создать файлы, а также ряд других параметров.
 
-![Страница параметров Cookiecutter](~/docs/python/media/cookiecutter-template-options.png)
+![Страница параметров Cookiecutter](~/python/media/cookiecutter-template-options.png)
 
 Для каждого шаблона Cookiecutter определяется свой набор параметров и устанавливается значение по умолчанию (предложенный текст в каждом поле ввода). Значением по умолчанию может быть фрагмент кода, особенно если это динамическое значение, использующее другие параметры. 
 
@@ -90,13 +90,13 @@ ms.lasthandoff: 05/09/2017
 
 После успешного создания файлов Cookiecutter предоставит возможность открывать файлы в **обозревателе решений**.
 
-![Отображение команды обозревателя решений в Cookiecutter](~/docs/python/media/cookiecutter-files-created.png)
+![Отображение команды обозревателя решений в Cookiecutter](~/python/media/cookiecutter-files-created.png)
 
 ## <a name="cookiecutter-options"></a>Параметры Cookiecutter
 
 Выберите **Инструменты > Параметры > Cookiecutter**, чтобы увидеть доступные параметры Cookiecutter.
 
-![Параметры Cookiecutter](~/docs/python/media/cookiecutter-tools-options.png)
+![Параметры Cookiecutter](~/python/media/cookiecutter-tools-options.png)
 
 | Параметр | Описание |
 | --- | --- |

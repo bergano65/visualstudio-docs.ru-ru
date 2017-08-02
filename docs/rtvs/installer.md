@@ -40,7 +40,7 @@ ms.lasthandoff: 05/12/2017
 
 Благодарим вас за установку инструментов R для Visual Studio (RTVS)! Ознакомьтесь с возможностями инструментов и поделитесь с нами своим мнением, воспользовавшись ссылками в разделе [ресурсов](#resources) ниже.
 
-![Снимок экрана RTVS](~/docs/rtvs/media/installer-screenshot.png)
+![Снимок экрана RTVS](~/rtvs/media/installer-screenshot.png)
 
 ## <a name="resources"></a>Ресурсы
 

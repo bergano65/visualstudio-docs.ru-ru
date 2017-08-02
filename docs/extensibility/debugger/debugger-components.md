@@ -37,7 +37,7 @@ caps.handback.revision: 30
   
  На следующей диаграмме показана связь между этих элементов отладчика Visual Studio.  
   
- ![Общие сведения о компонентах отладчика](~/docs/extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")  
+ ![Общие сведения о компонентах отладчика](~/extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")  
   
 ## Содержание  
  [Отладка пакета](../../extensibility/debugger/debug-package.md)  

@@ -82,7 +82,7 @@ ms.lasthandoff: 05/13/2017
   
  В режиме конструктора в левой нижней части экрана доступны дополнительные команды области рисования, как показано ниже:  
   
- ![Команды в представлении конструирования](~/docs/designers/media/xaml_editor_design_controls.png "xaml_editor_design_controls")  
+ ![Команды в представлении конструирования](~/designers/media/xaml_editor_design_controls.png "xaml_editor_design_controls")  
   
  На этой панели инструментов доступны следующие команды:  
   

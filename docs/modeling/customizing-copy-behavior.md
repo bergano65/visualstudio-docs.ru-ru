@@ -29,7 +29,7 @@ caps.handback.revision: 16
   
  Это правило применяется к скопированным элементам и связям рекурсивно.  
   
- ![Скопированные и вставленные элементы](~/docs/modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")  
+ ![Скопированные и вставленные элементы](~/modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")  
   
  Скопированные элементы и связи сериализуются и сохраняются в <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> \(EGP\), который размещается в буфере обмена.  
   
@@ -237,7 +237,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 > [!TIP]
 >  Дополнительные сведения о настройке модели с помощью программного кода см. в разделе [Перемещение по модели и обновление модели в коде программы](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
- ![Схема последовательностей для операции копирования](~/docs/modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")  
+ ![Схема последовательностей для операции копирования](~/modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")  
   
  ![Схема последовательностей операции вставки](../modeling/media/dslpasteseqdiagram.png "dslPasteSeqDiagram")  
   

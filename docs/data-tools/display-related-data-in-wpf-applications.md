@@ -56,7 +56,7 @@ manager: "ghogen"
   
      На следующем рисунке показана связанная таблица **Заказы** таблицы **Клиенты** в наборе данных в окне **Источники данных**.  
   
-     ![Окно “Источники данных”, демонстрирующее отношение](~/docs/data-tools/media/datasources2.gif "DataSources2")  
+     ![Окно “Источники данных”, демонстрирующее отношение](~/data-tools/media/datasources2.gif "DataSources2")  
   
 ## См. также  
  [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   

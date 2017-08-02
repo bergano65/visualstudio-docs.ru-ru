@@ -59,7 +59,7 @@ ms.lasthandoff: 02/22/2017
   
 1.  Создайте решение с **доменного языка** шаблона, который можно найти в разделе **другие типы и расширения проекта** в **новый проект** диалоговое окно.  
   
-     ![Создание диалогового окна DSL](~/docs/modeling/media/create_dsldialog.png "Create_DSLDialog")  
+     ![Создание диалогового окна DSL](~/modeling/media/create_dsldialog.png "Create_DSLDialog")  
   
      При нажатии кнопки **ОК**, **мастер доменного языка** открывает и отображает список шаблонов решений DSL.  
   
@@ -110,7 +110,7 @@ ms.lasthandoff: 02/22/2017
   
  Если запустить решение, созданные на **минимальный язык** шаблона, экспериментальный экземпляр [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] будет иметь следующий вид:  
   
- ![](~/docs/modeling/media/dsl_min.png "DSL_min")  
+ ![](~/modeling/media/dsl_min.png "DSL_min")  
   
  Работа с инструментами Создайте элементы и соедините их.  
   
@@ -296,7 +296,7 @@ ms.lasthandoff: 02/22/2017
   
     4.  Возле имени каждого декоратора должен быть установлен флажок.  
   
-     ![Сопоставление фигур и окно сведений DSL](~/docs/modeling/media/dsldetailswindow.png "DslDetailsWindow")  
+     ![Сопоставление фигур и окно сведений DSL](~/modeling/media/dsldetailswindow.png "DslDetailsWindow")  
   
 7.  **Сделать элемент панели инструментов для создания элементов класса домена.**  
   
@@ -359,7 +359,7 @@ ms.lasthandoff: 02/22/2017
   
  **Установите свойство отношения, разрешить дубликаты** Если между одной парой элементов модели может существовать несколько связей одного класса. Например, можно разрешить Преподавателю обучать одного и того же Студента нескольким Дисциплинам.  
   
- ![Фигуры карты для соединителей](~/docs/modeling/media/music_connector.png "Music_Connector")  
+ ![Фигуры карты для соединителей](~/modeling/media/music_connector.png "Music_Connector")  
   
  Дополнительные сведения см. в разделе [свойства доменных связей](../modeling/properties-of-domain-relationships.md) и [свойства доменных ролей](../modeling/properties-of-domain-roles.md).  
   
@@ -426,7 +426,7 @@ ms.lasthandoff: 02/22/2017
   
  Самый простой способ добиться этого эффекта в определении DSL — это определить один класс домена для контейнера и один класс домена для каждого списка. Класс контейнера сопоставлен с фигурой секции.  
   
- ![Карта фигур](~/docs/modeling/media/music_mapcomp.png "Music_MapComp")  
+ ![Карта фигур](~/modeling/media/music_mapcomp.png "Music_MapComp")  
   
  Дополнительные сведения см. в разделе [свойства фигуры секций](../modeling/properties-of-compartment-shapes.md).  
   
@@ -516,7 +516,7 @@ ms.lasthandoff: 02/22/2017
   
 7.  Откройте Обозреватель языка. Убедитесь, что узлы контейнера содержат узлы элементов списка.  
   
- ![Созданный обозреватель DSL](~/docs/modeling/media/music_explorer.png "Music_Explorer")  
+ ![Созданный обозреватель DSL](~/modeling/media/music_explorer.png "Music_Explorer")  
   
  После первого тестирования фигуры секции можно откорректировать некоторые свойства и добавить расширенные свойства. Дополнительные сведения см. в разделе [Настройка и расширение доменного языка](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   

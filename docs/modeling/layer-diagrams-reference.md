@@ -64,7 +64,7 @@ ms.lasthandoff: 02/22/2017
  В этом разделе описаны элементы, которые можно использовать на схеме зависимостей. Более подробные сведения о том, как создать и схем зависимостей см. в разделе [схемы зависимостей: рекомендации по](../modeling/layer-diagrams-guidelines.md). Дополнительные сведения о шаблонах слоев посетите [сайт шаблоны и рекомендации &](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
 ## <a name="reading-dependency-diagrams"></a>Чтение схем зависимостей  
- ![Элементы на схемах зависимостей](~/docs/modeling/media/uml_layerrefreading.png "UML_LayerRefReading")  
+ ![Элементы на схемах зависимостей](~/modeling/media/uml_layerrefreading.png "UML_LayerRefReading")  
   
  Следующая таблица описывает элементы, которые можно использовать на схеме зависимостей.  
   

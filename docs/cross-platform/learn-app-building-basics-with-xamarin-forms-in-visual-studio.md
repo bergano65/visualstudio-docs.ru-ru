@@ -91,7 +91,7 @@ ms.lasthandoff: 05/13/2017
   
     -   Нажмите кнопку **Обновить**.  
   
-         ![Обновление пакета NuGet Xamarin.Forms](~/docs/cross-platform/media/crossplat-xamarin-formsguide-4.png "CrossPlat Xamarin FormsGuide 4")  
+         ![Обновление пакета NuGet Xamarin.Forms](~/cross-platform/media/crossplat-xamarin-formsguide-4.png "CrossPlat Xamarin FormsGuide 4")  
   
 4.  Добавьте **Newtonsoft.Json** и пакет NuGet в проект PCL. Они будут использоваться для обработки информации, полученной от службы данных о погоде.  
   

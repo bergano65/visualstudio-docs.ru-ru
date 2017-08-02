@@ -44,7 +44,7 @@ ms.lasthandoff: 05/13/2017
   
  Вы можете настроить пропуск уведомлений, тогда они не будут отображаться в Visual Studio. Сбросить список игнорируемых уведомлений можно в диалоговом окне ["Уведомления", "Среда", "Параметры"](../ide/reference/notifications-environment-options-dialog-box.md).  
   
- ![Значок уведомления Visual Studio](~/docs/ide/media/vs2015_notificationicon.png "vs2015_NotificationIcon")  
+ ![Значок уведомления Visual Studio](~/ide/media/vs2015_notificationicon.png "vs2015_NotificationIcon")  
   
 ## <a name="see-also"></a>См. также  
  [Интегрированная среда разработки Visual Studio](../ide/visual-studio-ide.md)

@@ -28,7 +28,7 @@ caps.handback.revision: 39
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- ![ссылка на видео](~/docs/data-tools/media/playvideo.gif "ссылка на видео") Для просмотра связанных демонстрационных видеороликов перейдите по ссылке [How Do I: Use XML Mapping in Excel?](http://go.microsoft.com/fwlink/?LinkID=130288).  
+ ![ссылка на видео](~/data-tools/media/playvideo.gif "ссылка на видео") Для просмотра связанных демонстрационных видеороликов перейдите по ссылке [How Do I: Use XML Mapping in Excel?](http://go.microsoft.com/fwlink/?LinkID=130288).  
   
 ## Привязка данных к элементу управления  
  Элемент управления <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> поддерживает привязку только к одному полю данных \(простая привязка данных\).  Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> может поддерживать сложную привязку данных и создается автоматически при сопоставлении повторяющегося элемента схемы ячейке.  Дополнительные сведения см. в разделе [Элемент управления ListObject](../vsto/listobject-control.md).  

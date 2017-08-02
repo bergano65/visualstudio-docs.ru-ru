@@ -45,7 +45,7 @@ ms.lasthandoff: 03/07/2017
 
 Чтобы «ngen» сборка VSIX должен устанавливаться «каждого экземпляра каждого компьютера». Эту возможность можно включить, установив флажок «все пользователи» в конструкторе extension.vsixmanifest:
 
-![Проверка всех пользователей](~/docs/extensibility/media/check-all-users.png)
+![Проверка всех пользователей](~/extensibility/media/check-all-users.png)
 
 ## <a name="how-to-enable-ngen"></a>Как включить Ngen
 
@@ -60,7 +60,7 @@ ms.lasthandoff: 03/07/2017
 
 Здесь рассматривается **свойства** окна в действии:
 
-![NGen в свойствах](~/docs/extensibility/media/ngen-in-properties.png)
+![NGen в свойствах](~/extensibility/media/ngen-in-properties.png)
 
 Ссылка на проект в проект VSIX CSPROJ-файл будет добавлен метаданных:
 

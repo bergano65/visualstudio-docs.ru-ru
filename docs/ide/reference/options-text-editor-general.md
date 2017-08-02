@@ -98,7 +98,7 @@ ms.lasthandoff: 05/24/2017
   
 |Поле выделения включено|Поле выделения выключено|  
 |-------------------------|--------------------------|  
-|![HTMLpageSelectionMarginOn screenshot](~/docs/ide/reference/media/vxselmaron.gif "vxSelmaron")|![HTMLpageSelectionMarginOff screenshot](~/docs/ide/reference/media/vxselmaroff.gif "vxSelmaroff")|  
+|![HTMLpageSelectionMarginOn screenshot](~/ide/reference/media/vxselmaron.gif "vxSelmaron")|![HTMLpageSelectionMarginOff screenshot](~/ide/reference/media/vxselmaroff.gif "vxSelmaroff")|  
   
  Поле индикаторов  
  Если этот флажок установлен, за левым краем области текста редактора отображается вертикальное поле. Если щелкнуть это поле, отображаются значок и подсказка, связанные с текстом. Например, в поле индикаторов отображаются ярлыки точки останова или списка задач. Сведения в поле индикаторов не выводятся на печать.  

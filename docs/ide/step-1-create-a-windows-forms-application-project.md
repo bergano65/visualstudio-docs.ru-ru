@@ -20,7 +20,7 @@ caps.handback.revision: 22
 
 Первый шаг в создании программы для просмотра изображений — это создание проекта приложения Windows Forms.  
   
- ![ссылка на видео](~/docs/data-tools/media/playvideo.gif "PlayVideo") Видеоверсию этого раздела см. на следующих страницах: [Tutorial 1: Create a Picture Viewer in Visual Basic \- Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) или [Tutorial 1: Create a Picture Viewer in C\# \- Video 1](http://go.microsoft.com/fwlink/?LinkId=205199).  Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса.  Однако концепции и процедуры аналогичны текущей версии Visual Studio.  
+ ![ссылка на видео](~/data-tools/media/playvideo.gif "PlayVideo") Видеоверсию этого раздела см. на следующих страницах: [Tutorial 1: Create a Picture Viewer in Visual Basic \- Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) или [Tutorial 1: Create a Picture Viewer in C\# \- Video 1](http://go.microsoft.com/fwlink/?LinkId=205199).  Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса.  Однако концепции и процедуры аналогичны текущей версии Visual Studio.  
   
 ### Создание проекта приложения Windows Forms  
   
@@ -40,7 +40,7 @@ caps.handback.revision: 22
     > [!NOTE]
     >  В вашем случае макет окна может отличаться от показанного.  Точный макет окна зависит от версии Visual Studio, используемого языка программирования и других факторов.  Однако необходимо убедиться, что отображаются все три окна.  
   
-     ![Окно интегрированной среды разработки](~/docs/ide/media/express_ideoverview_visio.png "Express\_IDEOverview\_Visio")  
+     ![Окно интегрированной среды разработки](~/ide/media/express_ideoverview_visio.png "Express\_IDEOverview\_Visio")  
 Окно интегрированной среды разработки  
   
      Интерфейс содержит три окна: главное окно, **Обозреватель решений** и окно **Свойства**.  
@@ -62,7 +62,7 @@ caps.handback.revision: 22
   
      Другой вариант — нажать кнопку **Сохранить все** на панели инструментов, показанной на следующем рисунке.  
   
-     ![Кнопка "Сохранить все" на панели инструментов](~/docs/ide/media/express_iconsaveall.png "Express\_IconSaveAll")  
+     ![Кнопка "Сохранить все" на панели инструментов](~/ide/media/express_iconsaveall.png "Express\_IconSaveAll")  
 Кнопка "Сохранить все" на панели инструментов  
   
      Visual Studio автоматически заполняет имя папки и имя проекта, а затем сохраняет проект в папке проектов.  

@@ -38,7 +38,7 @@ ms.lasthandoff: 07/19/2017
 # <a name="introduction-to-wpf"></a>Введение в WPF
 Платформа Windows Presentation Foundation (WPF) позволяет создавать клиентские приложения для настольных систем Windows с привлекательным пользовательским интерфейсом.  
   
- ![Пример пользовательского интерфейса Contoso Healthcare](~/docs/designers/media/wpfintrofigure24.png "WPFIntroFigure24")  
+ ![Пример пользовательского интерфейса Contoso Healthcare](~/designers/media/wpfintrofigure24.png "WPFIntroFigure24")  
   
  В основе WPF лежит независимый от разрешения векторный модуль визуализации, использующий возможности современного графического оборудования. Возможности этого модуля расширяются с помощью комплексного набора функций разработки приложений, которые включают в себя язык XAML, элементы управления, привязку к данным, макет, двухмерную и трехмерную графику, анимацию, стили, шаблоны, документы, мультимедиа, текст и типографические функции. WPF входит в состав .NET Framework, поэтому вы можете создавать приложения, включающие другие элементы библиотеки классов .NET Framework.  
   
@@ -81,7 +81,7 @@ ms.lasthandoff: 07/19/2017
   
  На рисунке ниже показан пользовательский интерфейс, который определяется кодом XAML из предыдущего примера.  
   
- ![Окно с кнопкой](~/docs/designers/media/wpfintrofigure10.png "WPFIntroFigure10")  
+ ![Окно с кнопкой](~/designers/media/wpfintrofigure10.png "WPFIntroFigure10")  
   
  Так как язык XAML основан на XML, создаваемый с его помощью пользовательский интерфейс образует иерархию вложенных элементов, известную как [дерево элементов](https://msdn.microsoft.com/en-us/library/ms753391\(v=vs.100\).aspx). Дерево элементов обеспечивает логичный и интуитивно понятный способ создания пользовательских интерфейсов и управления ими.  
   
@@ -158,7 +158,7 @@ End Namespace
   
  На рисунке ниже показан результат нажатия на кнопку.  
   
- ![Окно сообщения](~/docs/designers/media/wpfintrofigure25.png "WPFIntroFigure25")  
+ ![Окно сообщения](~/designers/media/wpfintrofigure25.png "WPFIntroFigure25")  
   
 ##  <a name="Controls"></a> Элементы управления  
  Возможности взаимодействия с пользователем, обеспечиваемые моделью приложения, реализуются с помощью сконструированных элементов управления. В WPF «элемент управления» — это общий термин, который относится к категории классов WPF, размещаемых в окне или на странице, имеющих пользовательский интерфейс и реализующих некоторое поведение.  
@@ -229,7 +229,7 @@ End Namespace
   
  На рисунке ниже показан результат использования разметки XAML из предыдущего примера.  
   
- ![Страница DockPanel](~/docs/designers/media/wpfintrofigure11.png "WPFIntroFigure11")  
+ ![Страница DockPanel](~/designers/media/wpfintrofigure11.png "WPFIntroFigure11")  
   
 ##  <a name="Data_Binding"></a> Привязка данных  
  Большинство приложений предоставляют пользователям возможность просматривать и редактировать данные. Для приложений WPF задачи хранения данных и доступа к ним уже обеспечиваются такими технологиями, как SQL Server и ADO .NET. После получения доступа к данным и их загрузки в управляемые объекты приложения WPF начинается самое сложное. Фактически этот процесс состоит из двух этапов:  
@@ -276,7 +276,7 @@ End Namespace
 ### <a name="2-d-shapes"></a>Двумерные фигуры  
  WPF предоставляет библиотеку стандартных векторных двумерных фигур, таких как прямоугольники и эллипсы, которые показаны на рисунке ниже.  
   
- ![Эллипсы и прямоугольники](~/docs/designers/media/wpfintrofigure4.PNG "WPFIntroFigure4")  
+ ![Эллипсы и прямоугольники](~/designers/media/wpfintrofigure4.PNG "WPFIntroFigure4")  
   
  Интересной особенностью фигур является то, что они предназначены не только для отображения. В них реализованы многие возможности элементов управления, включая ввод с клавиатуры и с помощью мыши. В приведенном ниже примере показана обработка события <xref:System.Windows.UIElement.MouseUp> объекта <xref:System.Windows.Shapes.Ellipse>.  
   
@@ -287,7 +287,7 @@ End Namespace
   
  На рисунке ниже показан результат выполнения предыдущего кода.  
   
- ![Окно с текстом "Вы щелкнули эллипс!"](~/docs/designers/media/wpfintrofigure12.png "WPFIntroFigure12")  
+ ![Окно с текстом "Вы щелкнули эллипс!"](~/designers/media/wpfintrofigure12.png "WPFIntroFigure12")  
   
  Более подробную информацию см. в разделе [Обзор фигур и базовых средств рисования в приложении WPF](https://msdn.microsoft.com/en-us/library/ms747393\(v=vs.100\).aspx).  
   
@@ -298,28 +298,28 @@ End Namespace
   
  Объекты <xref:System.Windows.Media.Geometry> можно использовать для обрезки, проверки попадания и отрисовки двумерных графических данных.  
   
- ![Различные способы использования Path](~/docs/designers/media/wpfintrofigure5.PNG "WPFIntroFigure5")  
+ ![Различные способы использования Path](~/designers/media/wpfintrofigure5.PNG "WPFIntroFigure5")  
   
  Более подробную информацию см. в разделе [Общие сведения о классе Geometry](https://msdn.microsoft.com/en-us/library/ms751808\(v=vs.100\).aspx).  
   
 ### <a name="2-d-effects"></a>Двумерные эффекты  
  В число возможностей двумерной графики WPF входят визуальные эффекты, такие как градиенты, растровые изображения, рисунки, рисование с видео, вращение, масштабирование и наклон. Применение всех этих эффектов обеспечивается с помощью кистей. На рисунке ниже показан ряд примеров.  
   
- ![Иллюстрации различных кистей](~/docs/designers/media/wpfintrofigure6.PNG "WPFIntroFigure6")  
+ ![Иллюстрации различных кистей](~/designers/media/wpfintrofigure6.PNG "WPFIntroFigure6")  
   
  Более подробную информацию см. в разделе [Общие сведения о кистях WPF](https://msdn.microsoft.com/en-us/library/aa970904\(v=vs.100\).aspx).  
   
 ### <a name="3-d-rendering"></a>Трехмерная отрисовка  
  Платформа WPF также предоставляет возможности трехмерной отрисовки, которые интегрированы с возможностями двумерной графики, что позволяет создавать более интересные и яркие пользовательские интерфейсы. Например, на рисунке ниже показаны двумерные изображения, наложенные на трехмерные объекты.  
   
- ![Снимок экрана примера Visual3D](~/docs/designers/media/wpfintrofigure13.png "WPFIntroFigure13")  
+ ![Снимок экрана примера Visual3D](~/designers/media/wpfintrofigure13.png "WPFIntroFigure13")  
   
  Более подробную информацию см. в разделе [Обзор трехмерной графики](https://msdn.microsoft.com/en-us/library/ms747437\(v=vs.100\).aspx).  
   
 ##  <a name="Animation"></a> Анимация  
  Поддержка анимации в WPF позволяет применять к элементам управления такие эффекты, как увеличение, дрожание, вращение и исчезание, создавать интересные эффекты смены страниц и другие эффекты. Вы можете анимировать большинство классов WPF, даже настраиваемые классы. На рисунке ниже показана простая анимация в действии.  
   
- ![Изображения анимированного куба](~/docs/designers/media/wpfintrofigure7.png "WPFIntroFigure7")  
+ ![Изображения анимированного куба](~/designers/media/wpfintrofigure7.png "WPFIntroFigure7")  
   
  Более подробную информацию см. в разделе [Общие сведения об эффектах анимации](https://msdn.microsoft.com/en-us/library/ms752312\(v=vs.100\).aspx).  
   
@@ -329,7 +329,7 @@ End Namespace
 ### <a name="images"></a>Изображения  
  Изображения присутствуют в большинстве приложений, и платформа WPF предоставляет несколько способов их использования. На рисунке ниже показан пользовательский интерфейс со списком, содержащим эскизы. При выборе эскиза изображение отображается в полном размере.  
   
- ![Эскизы и полноразмерное изображение](~/docs/designers/media/wpfintrofigure8.PNG "WPFIntroFigure8")  
+ ![Эскизы и полноразмерное изображение](~/designers/media/wpfintrofigure8.PNG "WPFIntroFigure8")  
   
  Более подробную информацию см. в разделе [Общие сведения об обработке изображений](https://msdn.microsoft.com/en-us/library/ms748873\(v=vs.100\).aspx).  
   
@@ -340,7 +340,7 @@ End Namespace
   
  На рисунке ниже показано окно с элементом управления <xref:System.Windows.Controls.MediaElement> в действии.  
   
- ![Элемент управления MediaElement с аудио и видео](~/docs/designers/media/wpfintrofigure1.png "WPFIntroFigure1")  
+ ![Элемент управления MediaElement с аудио и видео](~/designers/media/wpfintrofigure1.png "WPFIntroFigure1")  
   
  Более подробную информацию см. в разделе [Общие сведения о графике, анимации и мультимедиа в WPF](https://msdn.microsoft.com/en-us/library/ms742562\(v=vs.100\).aspx).  
   
@@ -359,7 +359,7 @@ End Namespace
   
  В качестве демонстрации интеграции текста с графикой на рисунке ниже показано применение эффектов оформления текста.  
   
- ![Текст и виды его оформления](~/docs/designers/media/wpfintrofigure23.png "WPFIntroFigure23")  
+ ![Текст и виды его оформления](~/designers/media/wpfintrofigure23.png "WPFIntroFigure23")  
   
  Более подробную информацию см. в разделе [Типографическая разметка в Windows Presentation Foundation](https://msdn.microsoft.com/en-us/library/ms742190\(v=vs.100\).aspx).  
   
@@ -379,7 +379,7 @@ End Namespace
   
  На рисунке ниже показан результат.  
   
- ![Элемент управления TextBox с текстом](~/docs/designers/media/wpfintrofigure21.png "WPFIntroFigure21")  
+ ![Элемент управления TextBox с текстом](~/designers/media/wpfintrofigure21.png "WPFIntroFigure21")  
   
  Другие элементы управления, однако, могут содержать несколько объектов с различным типом содержимого. Содержимым элемента управления <xref:System.Windows.Controls.Button>, определяемым свойством <xref:System.Windows.Controls.ContentControl.Content%2A>, могут быть различные объекты, в том числе элементы управления макетом, текст, изображения и фигуры. В приведенном ниже примере показан элемент управления <xref:System.Windows.Controls.Button>, содержащий <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.Border> и <xref:System.Windows.Controls.MediaElement>.  
   
@@ -389,7 +389,7 @@ End Namespace
   
  На рисунке ниже показано содержимое этой кнопки.  
   
- ![Кнопка с несколькими типами содержимого](~/docs/designers/media/wpfintrofigure22.png "WPFIntroFigure22")  
+ ![Кнопка с несколькими типами содержимого](~/designers/media/wpfintrofigure22.png "WPFIntroFigure22")  
   
  Дополнительную информацию о типах содержимого, поддерживаемого различными элементами управления, см. в разделе [Модель содержимого WPF](https://msdn.microsoft.com/en-us/library/bb613548\(v=vs.100\).aspx).  
   
@@ -410,12 +410,12 @@ End Namespace
   
  В этом примере пользовательский интерфейс кнопки по умолчанию заменяется элементом <xref:System.Windows.Shapes.Ellipse>, имеющим темно-синюю границу и заполнение, определяемое <xref:System.Windows.Media.RadialGradientBrush>. В элементе управления <xref:System.Windows.Controls.ContentPresenter> выводится содержимое элемента <xref:System.Windows.Controls.Button>— текст «Click Me!» При нажатии на элемент <xref:System.Windows.Controls.Button> по-прежнему вызывается событие <xref:System.Windows.Controls.Primitives.ButtonBase.Click> , что соответствует поведению элемента управления <xref:System.Windows.Controls.Button> по умолчанию. Результат показан на примере ниже.  
   
- ![Кнопка в виде эллипса и второе окно](~/docs/designers/media/wpfintrofigure2.png "WPFIntroFigure2")  
+ ![Кнопка в виде эллипса и второе окно](~/designers/media/wpfintrofigure2.png "WPFIntroFigure2")  
   
 ### <a name="data-templates"></a>Шаблоны данных  
  В то время как шаблон элемента управления позволяет определять внешний вид элемента управления, шаблон данных дает возможность настраивать оформление его содержимого. Шаблоны данных часто используются для оптимизации отображения привязанных данных. На рисунке ниже показано стандартное оформление элемента управления <xref:System.Windows.Controls.ListBox>, привязанного к коллекции объектов `Task`, в котором у каждой задачи есть название, описание и приоритет.  
   
- ![Список с оформлением по умолчанию](~/docs/designers/media/wpfintrofigure18.png "WPFIntroFigure18")  
+ ![Список с оформлением по умолчанию](~/designers/media/wpfintrofigure18.png "WPFIntroFigure18")  
   
  Оформление по умолчанию является стандартным для элемента управления <xref:System.Windows.Controls.ListBox>. Однако оно предполагает, что для каждой задачи отображается только ее название. Чтобы отобразить название, описание и приоритет задачи, нужно изменить оформление по умолчанию для элементов списка, привязанных к элементу управления <xref:System.Windows.Controls.ListBox> , с помощью <xref:System.Windows.DataTemplate>. Приведенный ниже код XAML определяет такой шаблон <xref:System.Windows.DataTemplate>, который применяется к каждой задаче с помощью атрибута <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>.  
   
@@ -426,7 +426,7 @@ End Namespace
   
  На рисунке ниже показан результат использования этого кода.  
   
- ![Список, использующий шаблон данных](~/docs/designers/media/wpfintrofigure19.png "WPFIntroFigure19")  
+ ![Список, использующий шаблон данных](~/designers/media/wpfintrofigure19.png "WPFIntroFigure19")  
   
  Обратите внимание на то, что элемент управления <xref:System.Windows.Controls.ListBox> сохранил свое поведение и общий внешний вид. Изменилось только оформление содержимого, отображаемого в списке.  
   
@@ -442,7 +442,7 @@ End Namespace
   
  Так как этот стиль предназначен для всех элементов управления <xref:System.Windows.Controls.Button>, он автоматически применяется ко всем кнопкам в окне, как показано на рисунке ниже.  
   
- ![Две оранжевые кнопки](~/docs/designers/media/wpfintrofigure20.png "WPFIntroFigure20")  
+ ![Две оранжевые кнопки](~/designers/media/wpfintrofigure20.png "WPFIntroFigure20")  
   
  Более подробную информацию см. в разделе [Стилизация и использование шаблонов](https://msdn.microsoft.com/en-us/library/ms745683\(v=vs.100\).aspx).  
   
@@ -507,7 +507,7 @@ End Namespace
   
  На рисунке ниже показан элемент управления `NumericUpDown`, размещенный в окне <xref:System.Windows.Window>.  
   
- ![Пользовательский элемент управления](~/docs/designers/media/wpfintrofigure3.png "WPFIntroFigure3")  
+ ![Пользовательский элемент управления](~/designers/media/wpfintrofigure3.png "WPFIntroFigure3")  
   
  Более подробную информацию о пользовательских элементах управления см. в разделе [Общие сведения о разработке управления](https://msdn.microsoft.com/en-us/library/ms745025\(v=vs.100\).aspx).  
   

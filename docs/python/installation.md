@@ -57,14 +57,14 @@ ms.lasthandoff: 05/09/2017
 
 1. В установщике Visual Studio выберите рабочую нагрузку **Web & Cloud > Python Development** (Облачная и веб-разработка > Разработка Python).
 
-    ![Рабочая нагрузка разработки Python в установщике Visual Studio](~/docs/python/media/installation-python-workload.png)
+    ![Рабочая нагрузка разработки Python в установщике Visual Studio](~/python/media/installation-python-workload.png)
 
     > [!Note]
     > Также Python входит в рабочую нагрузку **Приложения для обработки и анализа данных и аналитические приложения**.
 
 1. В правой части окна установщика выберите интерпретатор Python и все дополнительные средства, которые вам нужны. Например, если планируется разработать расширения C++ для Python, включите параметр **Собственные средства разработки Python**.
 
-    ![Параметры разработки Python в установщике Visual Studio](~/docs/python/media/installation-python-options.png)
+    ![Параметры разработки Python в установщике Visual Studio](~/python/media/installation-python-options.png)
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 
@@ -74,7 +74,7 @@ ms.lasthandoff: 05/09/2017
 
 1. Выберите **Языки программирования > Инструменты Python для Visual Studio** и нажмите **Далее**:
 
-    ![Выбор PTVS в установщике Visual Studio 2015](~/docs/python/media/installation-vs2015.png)    
+    ![Выбор PTVS в установщике Visual Studio 2015](~/python/media/installation-vs2015.png)    
 
 1. Когда завершится работа установщика Visual Studio, [установите любой интерпретатор Python на свой выбор](python-environments.md#selecting-and-installing-python-interpreters).
 

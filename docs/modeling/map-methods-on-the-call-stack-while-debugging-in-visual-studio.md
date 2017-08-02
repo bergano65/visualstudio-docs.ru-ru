@@ -75,7 +75,7 @@ ms.lasthandoff: 02/22/2017
   
 2.  При переходе приложения в режиме приостановки выполнения или шаг с заходом в функцию выберите **карта кода**. (Keyboard: **Ctrl** + **Shift** + **`**)  
   
-     ![Выберите код карты, чтобы запустить сопоставление стека вызовов](~/docs/debugger/media/debuggermap_choosecodemap.png "DebuggerMap_ChooseCodeMap")  
+     ![Выберите код карты, чтобы запустить сопоставление стека вызовов](~/debugger/media/debuggermap_choosecodemap.png "DebuggerMap_ChooseCodeMap")  
   
      Текущий стек вызовов выделен в новой карте кода оранжевым цветом:  
   
@@ -136,11 +136,11 @@ ms.lasthandoff: 02/22/2017
   
      По умолчанию в сопоставлении отображается только ваш код. Чтобы просмотреть внешний код, включите его в **стек вызовов** окна:  
   
-     ![Отображение внешнего кода с помощью окна стека вызовов](~/docs/debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")  
+     ![Отображение внешнего кода с помощью окна стека вызовов](~/debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")  
   
      или отключите **включить только мой код** в параметрах отладки Visual Studio:  
   
-     ![Показать внешний код, с помощью диалогового окна параметров](~/docs/debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")  
+     ![Показать внешний код, с помощью диалогового окна параметров](~/debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")  
   
 -   **Изменение сопоставления влияет на код?**  
   
@@ -168,7 +168,7 @@ ms.lasthandoff: 02/22/2017
   
 -   **Остановка карты автоматически добавлять новые стеки вызова**  
   
-     Выберите ![кнопка - отображение стека вызовов на код сопоставления автоматически](~/docs/debugger/media/debuggermap_automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") на панели инструментов карты. Чтобы вручную добавить текущий стек вызовов на карту, нажмите клавишу **Ctrl** + **Shift** + **`**.  
+     Выберите ![кнопка - отображение стека вызовов на код сопоставления автоматически](~/debugger/media/debuggermap_automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") на панели инструментов карты. Чтобы вручную добавить текущий стек вызовов на карту, нажмите клавишу **Ctrl** + **Shift** + **`**.  
   
      Существующие стеки вызовов по-прежнему будут выделяться на сопоставлении во время отладки.  
   

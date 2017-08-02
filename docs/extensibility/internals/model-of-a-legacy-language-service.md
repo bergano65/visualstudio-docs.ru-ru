@@ -32,7 +32,7 @@ caps.handback.revision: 20
   
  Следующий документ концептуального показана модель базовой службы языка.  
   
- ![График языка модели службы](~/docs/extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
+ ![График языка модели службы](~/extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
 Основная модель службы языка  
   
  Основные приложения окна документов представление документа в этом случае редактора [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] редактор.  Представление документа и текстовый буфер принадлежат редактором.  Эти объекты работают с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] специализированное с названием через окно документа a окно кода.  Окно кода содержится в <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> объект, созданный и управляется средой разработки.  

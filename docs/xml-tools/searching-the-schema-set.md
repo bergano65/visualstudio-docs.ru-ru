@@ -27,7 +27,7 @@ caps.handback.revision: 3
 ## Поиск по ключевому слову  
  Поиск по ключевому слову осуществляется посредством ввода подстроки в текстовом поле **Поиск набора схем** панели инструментов обозревателя XML\-схем.  
   
- ![Поиск по ключевым словам в обозревателе схемы XML](~/docs/xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")  
+ ![Поиск по ключевым словам в обозревателе схемы XML](~/xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")  
   
  Обозреватель XML\-схем выполнит поиск набора схем по следующим параметрам:  
   

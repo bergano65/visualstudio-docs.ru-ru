@@ -48,7 +48,7 @@ caps.handback.revision: 40
   
 -   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] или [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
   
- ![ссылка на видео](~/docs/data-tools/media/playvideo.gif "ссылка на видео") Видеоверсию этого раздела см. на странице [Практическое видеоруководство. Разработка области формы Outlook](http://go.microsoft.com/fwlink/?LinkId=140824).  
+ ![ссылка на видео](~/data-tools/media/playvideo.gif "ссылка на видео") Видеоверсию этого раздела см. на странице [Практическое видеоруководство. Разработка области формы Outlook](http://go.microsoft.com/fwlink/?LinkId=140824).  
   
 ## Создание нового проекта надстройки Outlook VSTO  
  Сначала создайте базовый проект надстройки VSTO.  

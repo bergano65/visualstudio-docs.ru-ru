@@ -301,7 +301,7 @@ Windows использует несколько тем системного ур
   
 Примеры поверхности редактор в "голубой" теме.  
   
-![Редактор в "голубой" теме](~/docs/extensibility/ux-guidelines/media/030303-c_editorblue.png "030303-c_EditorBlue")<br />Редактор в "Голубой" теме
+![Редактор в "голубой" теме](~/extensibility/ux-guidelines/media/030303-c_editorblue.png "030303-c_EditorBlue")<br />Редактор в "Голубой" теме
   
 ![Редактор в теме высокой контрастности #1](../../extensibility/ux-guidelines/media/030303-d_editorhc1.png "030303-d_EditorHC1")<br />Редактор в теме высокой контрастности #1
   
@@ -725,11 +725,11 @@ Visual Studio узла триггеры подключаемого модуля 
   
 **Цвет темы:**  
   
-![Изменения цветовой темы](~/docs/extensibility/ux-guidelines/media/0305-a_colortheme.png "0305-a_ColorTheme")<br />Изменения цветовой темы  
+![Изменения цветовой темы](~/extensibility/ux-guidelines/media/0305-a_colortheme.png "0305-a_ColorTheme")<br />Изменения цветовой темы  
   
 **Темы среды:**  
   
-![Изменения темы среды](~/docs/extensibility/ux-guidelines/media/0305-b_environmenttheme.png "0305-b_EnvironmentTheme")<br />Изменения темы среды  
+![Изменения темы среды](~/extensibility/ux-guidelines/media/0305-b_environmenttheme.png "0305-b_EnvironmentTheme")<br />Изменения темы среды  
   
 **Темы операционной системы** (только при изменении в и из режима высокой контрастности):  
   

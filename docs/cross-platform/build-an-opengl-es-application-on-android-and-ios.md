@@ -109,7 +109,7 @@ ms.lasthandoff: 05/13/2017
   
      Visual Studio запускает эмулятор, который за несколько секунд загружает и развертывает код. Ниже показано, как приложение выглядит в эмуляторе Visual Studio для Android.  
   
-     ![Приложение, работающее в эмуляторе Android](~/docs/cross-platform/media/cppmdd_opengles_andemulator.png "CPPMDD_OpenGLES_AndEmulator")  
+     ![Приложение, работающее в эмуляторе Android](~/cross-platform/media/cppmdd_opengles_andemulator.png "CPPMDD_OpenGLES_AndEmulator")  
   
      После запуска приложения можно задать точки останова и использовать отладчик для проверки кода, языковых стандартов и контрольных значений.  
   
@@ -150,7 +150,7 @@ ms.lasthandoff: 05/13/2017
   
      После запуска приложения можно задать точки останова и использовать отладчик Visual Studio для проверки локальных значений, стека вызовов и контрольных значений.  
   
-     ![Отладчик в точке останова в приложении iOS](~/docs/cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")  
+     ![Отладчик в точке останова в приложении iOS](~/cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")  
   
 5.  Для останова процесса отладки нажмите Shift + F5.  
   

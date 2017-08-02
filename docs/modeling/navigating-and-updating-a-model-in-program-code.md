@@ -70,11 +70,11 @@ ms.lasthandoff: 02/22/2017
 ##  <a name="a-nameexamplea-an-example-dsl-definition"></a><a name="example"></a>Пример определения DSL  
  Это основная часть DslDefinition.dsl в примерах в этом разделе:  
   
- ![Схема определения DSL — модель семейного дерева](~/docs/modeling/media/familyt_person.png "FamilyT_Person")  
+ ![Схема определения DSL — модель семейного дерева](~/modeling/media/familyt_person.png "FamilyT_Person")  
   
  Эта модель является экземпляром данного DSL:  
   
- ![Модель1 семейного древа Тюдор](~/docs/modeling/media/tudor_familytreemodel.png "Tudor_FamilyTreeModel")  
+ ![Модель1 семейного древа Тюдор](~/modeling/media/tudor_familytreemodel.png "Tudor_FamilyTreeModel")  
   
 ### <a name="references-and-namespaces"></a>Ссылки и пространства имен  
  Выполнение кода в этом разделе, необходимо создать ссылки:  
@@ -365,7 +365,7 @@ using (Transaction t = targetDiagram.Store.
  В DSL элемент модели домена, который представляет концепции, например человека или музыкальной записи, отдельно от элемента фигуры, который представляет отображаемые на диаграмме. Элемент модели домена хранит важные свойства и отношения понятий. Элемент фигуры сохраняет размер, положение и цвет объекта представления на диаграмме, а макет ее компонентов.  
   
 ### <a name="presentation-elements"></a>Представление элементов  
- ![Схема классов базовых типов фигур и элементов](~/docs/modeling/media/dslshapesandelements.png "DSLshapesAndElements")  
+ ![Схема классов базовых типов фигур и элементов](~/modeling/media/dslshapesandelements.png "DSLshapesAndElements")  
   
  В определении DSL каждого элемента, который указывается создает класс, производный от одного из следующих стандартных классов.  
   

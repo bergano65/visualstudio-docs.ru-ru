@@ -28,7 +28,7 @@ manager: "ghogen"
 # JavaScript Console commands
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Применимо к Windows и к Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+![Применимо к Windows и к Windows Phone](~/debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
  Для отправки сообщений и выполнения других задач в окне консоли JavaScript системы Visual Studio можно использовать команды. Примеры, демонстрирующие способы использования этого окна см. в разделе [Краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Информация в этом разделе относится к приложениям Магазина Windows, приложениям Магазина Windows Phone и приложениям, созданным с помощью инструментов Visual Studio для Apache Cordova. Информацию о командах консоли, поддерживаемых в приложениях Cordova, см. в разделе [Debug Your App](../Topic/Debug%20Your%20App%20Built%20with%20Visual%20Studio%20Tools%20for%20Apache%20Cordova.md). Информацию об использование консоли в инструментах Internet Explorer, вызываемых кнопкой F12, см. в [этой статье](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
   

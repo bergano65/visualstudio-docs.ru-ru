@@ -47,7 +47,7 @@ ms.lasthandoff: 02/22/2017
   
  При отключении кода проекта Visual Studio будет отображать заполнители, такие как имя свойства для привязки, где данные больше не доступны, или заполнитель для элемента управления, который больше не выполняется.  
   
- ![Диалоговое окно "Необработанное исключение"](~/docs/designers/media/xaml_unhandledexception.png "XAML_UnhandledException")  
+ ![Диалоговое окно "Необработанное исключение"](~/designers/media/xaml_unhandledexception.png "XAML_UnhandledException")  
   
 #### <a name="to-determine-if-project-code-is-causing-an-exception"></a>Как определить, вызвано ли исключение кодом проекта  
   
@@ -63,7 +63,7 @@ ms.lasthandoff: 02/22/2017
   
 2.  В диспетчере задач Windows нажмите кнопку **Завершить задачу** , чтобы закрыть все экземпляры конструктора XAML Visual Studio, работающие в данный момент.  
   
-     ![Экземпляры конструктора XAML в диспетчере задач](~/docs/designers/media/xaml_taskmanager.png "XAML_TaskManager")  
+     ![Экземпляры конструктора XAML в диспетчере задач](~/designers/media/xaml_taskmanager.png "XAML_TaskManager")  
   
 3.  В Visual Studio откройте страницу XAML, содержащую код или элемент управления, который требуется отладить.  
   
@@ -75,7 +75,7 @@ ms.lasthandoff: 02/22/2017
   
 7.  В диалоговом окне **Присоединение к процессу** выберите процесс **XDesProc.exe** в списке **Доступные процессы**и нажмите кнопку **Присоединиться** .  
   
-     ![Процесс конструктора XAML](~/docs/designers/media/xaml_attach.png "XAML_Attach")  
+     ![Процесс конструктора XAML](~/designers/media/xaml_attach.png "XAML_Attach")  
   
      Это процесс для конструктора XAML в первом экземпляре Visual Studio.  
   
@@ -89,7 +89,7 @@ ms.lasthandoff: 02/22/2017
   
 -   Или же можно нажать кнопку **Отключить код проекта** в панели инструментов в конструкторе XAML.  
   
-     ![Кнопка "Отключить код проекта"](~/docs/designers/media/xaml_disablecode.png "XAML_DisableCode")  
+     ![Кнопка "Отключить код проекта"](~/designers/media/xaml_disablecode.png "XAML_DisableCode")  
   
      Вы можете нажать эту кнопку еще раз, чтобы включить код проекта.  
   

@@ -59,7 +59,7 @@ caps.handback.revision: 58
   
 -   Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] или Microsoft Outlook 2010.  
   
- ![ссылка на видео](~/docs/data-tools/media/playvideo.gif "ссылка на видео") Связанные демонстрационные видеоролики см. на странице [Как использовать области задач в Outlook?](http://go.microsoft.com/fwlink/?LinkID=130309).  
+ ![ссылка на видео](~/data-tools/media/playvideo.gif "ссылка на видео") Связанные демонстрационные видеоролики см. на странице [Как использовать области задач в Outlook?](http://go.microsoft.com/fwlink/?LinkID=130309).  
   
 ## Создание проекта  
  Настраиваемые области задач реализуются в надстройках VSTO. Начните с создания проекта надстройки VSTO для Outlook.  

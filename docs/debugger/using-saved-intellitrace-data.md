@@ -120,7 +120,7 @@ manager: "ghogen"
   
      Если метод находится в коде приложения, Visual Studio перейдет к этому методу.  
   
-     ![Переход к коду приложения из события производительности](~/docs/debugger/media/ffr_itsummarypageperformancegotocode.png "FFR\_ITSummaryPagePerformanceGoToCode")  
+     ![Переход к коду приложения из события производительности](~/debugger/media/ffr_itsummarypageperformancegotocode.png "FFR\_ITSummaryPagePerformanceGoToCode")  
   
      Теперь можно просмотреть другие записанные значения, стек вызова, выполнить пошаговый обход кода или использовать окно **IntelliTrace** для [перемещения вперед или назад "по времени" между другими методами](../debugger/intellitrace.md), которые вызывались в ходе этого события производительности.  
   

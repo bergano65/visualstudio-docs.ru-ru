@@ -31,7 +31,7 @@ caps.handback.revision: 15
  Пример вложенных проектов можно найти в образце Example.Nested проекта C\#.  
   
 ## Пример вложенных проектов  
- ![Вложенные решения проектов](~/docs/extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects")  
+ ![Вложенные решения проектов](~/extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects")  
 Пример вложенных проектов  
   
 ## См. также  

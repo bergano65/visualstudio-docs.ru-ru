@@ -80,7 +80,7 @@ private async void ThreadsExampleBtn_Click(object sender, RoutedEventArgs e) { T
 private async void ThreadsExampleBtn_Click(object sender, EventArgs e) { TextBox1.Text = String.Empty; var tbLinesList = new List<string>() {"Simulating work on UI thread."}; TextBox1.Lines = tbLinesList.ToArray(); DoSomeWork(20, tbLinesList); tbLinesList.Add("Simulating work on non-UI thread."); TextBox1.Lines = tbLinesList.ToArray(); await Task.Run(() => DoSomeWork(1000, tbLinesList)); tbLinesList.Add("ThreadsExampleBtn_Click completes."); TextBox1.Lines = tbLinesList.ToArray(); } private void DoSomeWork(int msOfWork, List<string> tbLinesList) { // simulate work var endTime = DateTime.Now.AddMilliseconds(msOfWork); while (DateTime.Now < endTime) { }; { // spin }; // report completion var msg = String.Format("Some work completed in {0} ms on UI thread. \n", msOfWork); tbLinesList.Add(msg); TextBox1.Lines = tbLinesList.ToArray(); }  
 ```  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание этой статьи](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Метод, выполняемый в потоке, не связанном с пользовательским интерфейсом, обновляет пользовательский интерфейс](#BKMK_A_method_running_on_a_non_UI_thread_updates_the_UI)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание этой статьи](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Метод, выполняемый в потоке, не связанном с пользовательским интерфейсом, обновляет пользовательский интерфейс](#BKMK_A_method_running_on_a_non_UI_thread_updates_the_UI)  
   
 ###  <a name="BKMK_Avoiding_InvalidOperationExceptions_on_non_UI_threads"></a> Предотвращение исключения InvalidOperationException в потоках без пользовательского интерфейса  
  Платформы ИП Windows реализуют шаблон *диспетчера*, который содержит метод для проверки, выполняется ли вызов члена элемента пользовательского интерфейса в потоке ИП, а также другие методы для планирования вызова в потоке пользовательского интерфейса.  
@@ -110,7 +110,7 @@ private void DoSomeWork(int msOfWork, List<string> tbLinesList) { // simulate wo
 private void DoSomeWork(int msOfWork) { // simulate work var endTime = DateTime.Now.AddMilliseconds(msOfWork); while (DateTime.Now < endTime) { // spin }; // report completion var msgFormat = "Some work completed in {0} ms on {1}UI thread.\n"; var msg = String.Empty; if (TextBox1.Dispatcher.HasThreadAccess) { msg = String.Format(msgFormat, msOfWork, String.Empty); TextBox1.Text += msg; } else { msg = String.Format(msgFormat, msOfWork, "non-"); TextBox1.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal,()=> {TextBox1.Text += msg;}); } }  
 ```  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание этой статьи](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Метод, выполняемый в потоке, не связанном с пользовательским интерфейсом, обновляет пользовательский интерфейс](#BKMK_A_method_running_on_a_non_UI_thread_updates_the_UI)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание этой статьи](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Метод, выполняемый в потоке, не связанном с пользовательским интерфейсом, обновляет пользовательский интерфейс](#BKMK_A_method_running_on_a_non_UI_thread_updates_the_UI)  
   
 ##  <a name="BKMK_A_statement_in_a_foreach_For_Each_in_Visual_Basic_block_changes_the_collection_it_is_iterating"></a> Оператор в блоке foreach \(For Each в Visual Basic\) изменяет коллекцию, в которой он выполняет итерации  
  [Вызов исключения InvalidOperationException с оператором foreach](#BKMK_Causing_an_InvalidOperationException_with_foreach)  **&#124;**  [Предотвращение исключения InvalidOperationException в циклах](#BKMK_Avoiding_InvalidOperationExceptions_in_loops)  
@@ -125,7 +125,7 @@ private void DoSomeWork(int msOfWork) { // simulate work var endTime = DateTime.
 -   Дополнительные сведения: коллекция была изменена; невозможно выполнить операцию перечисления.  
   
 <CodeContentPlaceHolder>5</CodeContentPlaceHolder>  
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание этой статьи](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Оператор в блоке foreach (For Each в Visual Basic) изменяет коллекцию, в которой он выполняет итерации](#BKMK_A_statement_in_a_foreach_For_Each_in_Visual_Basic_block_changes_the_collection_it_is_iterating)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание этой статьи](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Оператор в блоке foreach (For Each в Visual Basic) изменяет коллекцию, в которой он выполняет итерации](#BKMK_A_statement_in_a_foreach_For_Each_in_Visual_Basic_block_changes_the_collection_it_is_iterating)  
   
 ###  <a name="BKMK_Avoiding_InvalidOperationExceptions_in_loops"></a> Предотвращение исключения InvalidOperationException в циклах  
   
@@ -136,7 +136,7 @@ private void DoSomeWork(int msOfWork) { // simulate work var endTime = DateTime.
  Если вам необходимо добавить или удалить элементы из списка в ходе выполнения итерации в коллекции, используйте цикл [for](/dotnet/csharp/language-reference/keywords/for) \([For](/dotnet/visual-basic/language-reference/statements/for-next-statement) в Visual Basic\):  
   
 <CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание этой статьи](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Оператор в блоке foreach (For Each в Visual Basic) изменяет коллекцию, в которой он выполняет итерации](#BKMK_A_statement_in_a_foreach_For_Each_in_Visual_Basic_block_changes_the_collection_it_is_iterating)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание этой статьи](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Оператор в блоке foreach (For Each в Visual Basic) изменяет коллекцию, в которой он выполняет итерации](#BKMK_A_statement_in_a_foreach_For_Each_in_Visual_Basic_block_changes_the_collection_it_is_iterating)  
   
 ##  <a name="BKMK_A_Nullable_T_that_is_null_is_cast_to_T"></a> Nullable\<T\>, имеющий значение null, приводится к T  
  [Вызов исключения InvalidOperationException с недопустимым приведением](#BKMK_Causing_an_InvalidOperationException_with_an_invalid_cast)  **&#124;**  [Предотвращение исключения InvalidOperationException из плохого приведения](#BKMK_Avoiding_InvalidOperationException_from_a_bad_cast)  
@@ -155,7 +155,7 @@ private void MapQueryResults() { var dbQueryResults = new int?[] { 1, 2, null, 4
   
 ```  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание этой статьи](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Nullable&lt;T&gt;, имеющий значение null, приводится к T](#BKMK_A_Nullable_T_that_is_null_is_cast_to_T)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание этой статьи](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Nullable&lt;T&gt;, имеющий значение null, приводится к T](#BKMK_A_Nullable_T_that_is_null_is_cast_to_T)  
   
 ###  <a name="BKMK_Avoiding_InvalidOperationException_from_a_bad_cast"></a> Предотвращение исключения InvalidOperationException из плохого приведения  
  Для предотвращения исключения <xref:System.InvalidOperationException>:  
@@ -179,7 +179,7 @@ private void MapQueryResults() { var dbQueryResults = new int?[] { 1, 2, null, 4
   
 ```  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание этой статьи](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Nullable&lt;T&gt;, имеющий значение null, приводится к T](#BKMK_A_Nullable_T_that_is_null_is_cast_to_T)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание этой статьи](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Nullable&lt;T&gt;, имеющий значение null, приводится к T](#BKMK_A_Nullable_T_that_is_null_is_cast_to_T)  
   
 ##  <a name="BKMK_A_System_Linq_Enumerable_method_is_called_on_an_empty_collection"></a> Метод System.Linq.Enumerable вызывается при пустой коллекции  
  Методы <xref:System.Linq.Enumerable>, <xref:System.Linq.Enumerable.Aggregate%2A>, <xref:System.Linq.Enumerable.Average%2A>, <xref:System.Linq.Enumerable.Last%2A>, <xref:System.Linq.Enumerable.Max%2A>, <xref:System.Linq.Enumerable.Min%2A>, <xref:System.Linq.Enumerable.First%2A>, <xref:System.Linq.Enumerable.Single%2A> и <xref:System.Linq.Enumerable.SingleOrDefault%2A> выполняют операции над последовательностью и возвращают один результат.  
@@ -219,7 +219,7 @@ private void FindAverageOfNumbersGreaterThan4() { var dbQueryResults = new[] { 1
   
 ```  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание этой статьи](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Метод System.Linq.Enumerable вызывается при пустой коллекции](#BKMK_A_System_Linq_Enumerable_method_is_called_on_an_empty_collection)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание этой статьи](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Метод System.Linq.Enumerable вызывается при пустой коллекции](#BKMK_A_System_Linq_Enumerable_method_is_called_on_an_empty_collection)  
   
 ###  <a name="BKMK_First_and_FirstOrDefault_methods"></a> Методы First и FirstOrDefault  
  Выражение <xref:System.Linq.Enumerable.First%2A> возвращает первый элемент последовательности или создает исключение <xref:System.InvalidOperationException>, если последовательность является пустой.  Для возвращения заданного значения или значения по умолчанию вместо создания исключения можно вызывать метод <xref:System.Linq.Enumerable.FirstOrDefault%2A> вместо метода <xref:System.Linq.Enumerable.First%2A>.  
@@ -254,7 +254,7 @@ private void FindANumbersGreaterThan4() { var dbQueryResults = new[] { 1, 2, 3, 
   
 ```  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание этой статьи](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Метод System.Linq.Enumerable вызывается при пустой коллекции](#BKMK_A_System_Linq_Enumerable_method_is_called_on_an_empty_collection)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание этой статьи](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Метод System.Linq.Enumerable вызывается при пустой коллекции](#BKMK_A_System_Linq_Enumerable_method_is_called_on_an_empty_collection)  
   
 ###  <a name="BKMK_Single_and_SingleOrDefault_methods"></a> Методы Single и SingleOrDefault  
  Методы <xref:System.Linq.Enumerable.Single%2A?displayProperty=fullName> возвращают единственный элемент последовательности или единственный элемент последовательности, который удовлетворяет заданному тесту.  
@@ -313,7 +313,7 @@ private void FindTheOnlyNumberGreaterThan2() { var dbQueryResults = new[] { (obj
   
 ```  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание этой статьи](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Метод System.Linq.Enumerable вызывается при пустой коллекции](#BKMK_A_System_Linq_Enumerable_method_is_called_on_an_empty_collection)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание этой статьи](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Метод System.Linq.Enumerable вызывается при пустой коллекции](#BKMK_A_System_Linq_Enumerable_method_is_called_on_an_empty_collection)  
   
 ##  <a name="BKMK_Related_articles"></a> Связанные статьи  
  [Правила разработки исключений \(рекомендации по разработке .NET Framework\)](http://msdn.microsoft.com/library/ms229014)  
@@ -346,4 +346,4 @@ private void FindTheOnlyNumberGreaterThan2() { var dbQueryResults = new[] { (obj
   
  [Обработка исключений в сетевых приложениях \(XAML\) \(Windows\)](http://msdn.microsoft.com/library/Dn263240)  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание этой статьи](#BKMK_In_this_article)
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание этой статьи](#BKMK_In_this_article)

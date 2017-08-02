@@ -29,7 +29,7 @@ caps.handback.revision: 7
 # Краткое руководство. Отладка JavaScript с помощью консоли
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Применимо к Windows и к Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Применимо к Windows и к Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Окно консоли JavaScript можно использовать для взаимодействия и отладки приложений Магазина, созданных с использованием JavaScript. Эти возможности поддерживаются для приложений [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], приложений Магазина Windows Phone и приложений, созданных с помощью инструментов Visual Studio для Apache Cordova. Справочник по консольным командам см. в разделе [Команды консоли JavaScript](../debugger/javascript-console-commands.md).  
   
@@ -161,7 +161,7 @@ caps.handback.revision: 7
   
      Приложение входит в режим приостановки выполнения, когда выполнение достигает функции `updateImages()` и текущая строка выполнения программы выделяется желтым.  
   
-     ![Использование режима приостановки выполнения в консоли JavaScript](~/docs/debugger/media/js_breakmode.png "JS\_BreakMode")  
+     ![Использование режима приостановки выполнения в консоли JavaScript](~/debugger/media/js_breakmode.png "JS\_BreakMode")  
   
      Можно изменить значения переменных, чтобы немедленно изменить состояние программы, не завершая текущего сеанса отладки.  
   
@@ -199,7 +199,7 @@ caps.handback.revision: 7
   
  На следующем рисунке показан список "Цель" в окне консоли JavaScript.  
   
- ![Выбор назначения в окне консоли JavaScript](~/docs/debugger/media/js_console_target.png "JS\_Console\_Target")  
+ ![Выбор назначения в окне консоли JavaScript](~/debugger/media/js_console_target.png "JS\_Console\_Target")  
   
  Вы также можете переключить контекст выполнения с помощью команды `cd`, однако вы должны знать имя другого контекста выполнения, а используемая вами ссылка должна находиться в области. Список **Целевой объект** предоставляет более удобный доступ к другим контекстам выполнения.  
   

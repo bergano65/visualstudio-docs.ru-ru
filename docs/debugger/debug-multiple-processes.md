@@ -49,14 +49,14 @@ caps.handback.revision: 16
   
 2.  На странице **Отладка**, **Общие** снимите флажок **Прерывать все процессы при прерывании одного**.  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
   
 ##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Поиск исходных файлов и файлов символов \(.pdb\)  
  Для отображения и пошагового выполнения исходного кода процесса отладчику требуется доступ к исходным файлам и файлам символов процесса.  Подробнее см. раздел [Указание файлов символов \(.pdb\) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
  Если не удается получить доступ к файлам процесса, для перемещения по коду можно воспользоваться окном "Дизассемблирование".  См. раздел [Практическое руководство. Использование окна дизассемблирования](../debugger/how-to-use-the-disassembly-window.md).  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
   
 ##  <a name="BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger"></a> Запуск нескольких процессов в решении VS, присоединение к процессу, автоматический запуск процесса в отладчике  
   
@@ -81,9 +81,9 @@ caps.handback.revision: 16
 ####  <a name="BKMK_Start_a_specific_project_in_a_solution"></a> Запуск конкретного проекта в решении  
  Чтобы запустить проект для решения, не сменяя запускаемый по умолчанию проект, выберите требуемый проект в Обозревателе решений и выберите команду **Отладка** в контекстном меню.  Затем можно выбрать команду **Запустить новый экземпляр** или **Шаг с заходом в новый экземпляр**.  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Запуск нескольких процессов в решении VS, присоединение к процессу, автоматический запуск процесса в отладчике](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Запуск нескольких процессов в решении VS, присоединение к процессу, автоматический запуск процесса в отладчике](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
   
 ####  <a name="BKMK_Start_multiple_projects_in_a_solution"></a> Запуск нескольких проектов в решении  
   
@@ -93,9 +93,9 @@ caps.handback.revision: 16
   
 3.  Для каждого проекта, который необходимо изменить, выберите **Запустить**, **Запуск без отладки** или **Нет**.  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Запуск нескольких процессов в решении VS, присоединение к процессу, автоматический запуск процесса в отладчике](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Запуск нескольких процессов в решении VS, присоединение к процессу, автоматический запуск процесса в отладчике](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
   
 ###  <a name="BKMK_Attach_to_a_process"></a> Присоединение к процессу  
  Отладчик может также *присоединяться* к программам, выполняемым в процессах вне Visual Studio, включая программы, которые работают на удаленном устройстве.  После присоединения к программе можно использовать команды отладчика, проверять состояние программы и выполнять другие действия.  Возможности проверки программы могут быть ограничены в зависимости от того, была ли программа собрана с отладочной информацией, имеется ли доступ к исходному коду программы, а также отслеживает ли JIT\-компилятор среды CLR отладочную информацию.  
@@ -108,7 +108,7 @@ caps.handback.revision: 16
   
  ![Присоединение к процессу &#45; диалоговое окно](../debugger/media/dbg_attachtoprocessdlg.png "DBG\_AttachToProcessDlg")  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
   
 ###  <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> Автоматический запуск процесса в отладчике  
  В некоторых случаях может потребоваться отладить код запуска для программы, которая запускается другим процессом.  К ним относятся службы и действия пользовательской настройки.  В этих случаях можно заставить отладчик запускаться и автоматически присоединяться при запуске приложения.  
@@ -131,9 +131,9 @@ caps.handback.revision: 16
   
      ![Диалоговое окно редактирования строки](../debugger/media/dbg_execution_automaticstart_editstringdlg.png "DBG\_Execution\_AutomaticStart\_EditStringDlg")  
   
- ![Запись автоматического запуска отладчика в regedit.exe](~/docs/debugger/media/dbg_execution_automaticstart_result.png "DBG\_Execution\_AutomaticStart\_Result")  
+ ![Запись автоматического запуска отладчика в regedit.exe](~/debugger/media/dbg_execution_automaticstart_result.png "DBG\_Execution\_AutomaticStart\_Result")  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
   
 ##  <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> Переключение процессов, приостановка и продолжение выполнения, пошаговое выполнение исходного кода  
   
@@ -158,9 +158,9 @@ caps.handback.revision: 16
   
  Переключение к проекту делает этот проект текущим процессом для отладки.  Статус текущего процесса отображается в любом используемом окне отладчика, и все команды пошагового выполнения влияют только на текущий процесс.  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Переключение процессов, приостановка и продолжение выполнения, пошаговое выполнение исходного кода](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Переключение процессов, приостановка и продолжение выполнения, пошаговое выполнение исходного кода](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
   
 ###  <a name="BKMK_Break__step__and_continue_commands"></a> Команды прерывания, пошагового выполнения и продолжения выполнения  
   
@@ -179,9 +179,9 @@ caps.handback.revision: 16
 |Контекстное меню окна **Процессы**:<br /><br /> -   **Остановить процесс**|Недоступно|Выбранный процесс приостанавливается.<br /><br /> Остальные процессы сохраняют свое текущее состояние \(остаются приостановленными или продолжают выполняться\).|  
 |Контекстное меню окна **Процессы**:<br /><br /> -   **Продолжить процесс**|Недоступно|Выбранный процесс возобновляется.<br /><br /> Остальные процессы сохраняют свое текущее состояние \(остаются приостановленными или продолжают выполняться\).|  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Переключение процессов, приостановка и продолжение выполнения, пошаговое выполнение исходного кода](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Переключение процессов, приостановка и продолжение выполнения, пошаговое выполнение исходного кода](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
   
 ##  <a name="BKMK_Stop_debugging__terminate_or_detach_from_processes"></a> Остановка отладки, окончание или отсоединение от процессов  
   
@@ -214,9 +214,9 @@ caps.handback.revision: 16
 |Контекстное меню окна **Процессы**:<br /><br /> -   **Завершить процесс**|Выбранный процесс завершается.<br /><br /> Остальные процессы сохраняют свое текущее состояние \(остаются приостановленными или продолжают выполняться\).|  
 |Контекстное меню окна **Процессы**:<br /><br /> -   **Отсоединиться при остановке отладки**|Переключает поведение команды **Отладка**, **Остановить отладку** для выбранного процесса:<br /><br /> -   Флажок установлен: отладчик отсоединяется от процесса.<br />-   Флажок снят: процесс завершается.|  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Остановка отладки, окончание или отсоединение от процессов](../debugger/debug-multiple-processes.md#BKMK_Stop_debugging__terminate_or_detach_from_processes)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Остановка отладки, окончание или отсоединение от процессов](../debugger/debug-multiple-processes.md#BKMK_Stop_debugging__terminate_or_detach_from_processes)  
   
- ![К началу](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
+ ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
   
 ## См. также  
  [Указание файлов символов \(.pdb\) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   

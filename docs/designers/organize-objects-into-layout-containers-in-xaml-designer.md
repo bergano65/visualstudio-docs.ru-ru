@@ -66,50 +66,50 @@ ms.lasthandoff: 05/13/2017
 ###  <a name="Grid"></a> Сетка  
  Упорядочивание объектов по строкам и столбцам.  
   
- ![](~/docs/designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png "98b234b2-ac3b-441f-9136-98375fee87b7")  
+ ![](~/designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png "98b234b2-ac3b-441f-9136-98375fee87b7")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/docs/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Использование сеток](http://www.popscreen.com/v/6A4hj/Microsoft-Expression-Blend-Using-Grids)  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Использование сеток](http://www.popscreen.com/v/6A4hj/Microsoft-Expression-Blend-Using-Grids)  
   
 ###  <a name="Uniform"></a> UniformGrid  
  Равномерное или однородное упорядочивание объектов в областях сетки. Эта панель отлично подходит для упорядочивания списка изображений.  
   
- ![](~/docs/designers/media/928b9284-a7e8-4678-875a-656b80b78076.png "928b9284-a7e8-4678-875a-656b80b78076")  
+ ![](~/designers/media/928b9284-a7e8-4678-875a-656b80b78076.png "928b9284-a7e8-4678-875a-656b80b78076")  
   
  (Доступно только для проектов WPF)  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/docs/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Использование UniformGrid](http://www.popscreen.com/v/6A4iq/Microsoft-Expression-Blend-Working-with-a-UniformGrid)  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Использование UniformGrid](http://www.popscreen.com/v/6A4iq/Microsoft-Expression-Blend-Working-with-a-UniformGrid)  
   
 ###  <a name="Canvas"></a> Canvas  
  Упорядочивание объектов любым образом При запуске приложения пользователями эти элементы будут иметь фиксированные позиции на экране.  
   
- ![](~/docs/designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png "e1ae27f0-3a57-454e-b580-877dcea8836d")  
+ ![](~/designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png "e1ae27f0-3a57-454e-b580-877dcea8836d")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/docs/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с холстом](http://www.popscreen.com/v/6A4hT/Microsoft-Expression-Blend-Working-with-the-Canvas)  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с холстом](http://www.popscreen.com/v/6A4hT/Microsoft-Expression-Blend-Working-with-the-Canvas)  
   
 ###  <a name="Stack"></a> StackPanel  
  Расположение объектов в одну линию по вертикали или по горизонтали.  
   
- ![](~/docs/designers/media/a85a7b57-b0a8-495e-b985-f0291e41d093.png "a85a7b57-b0a8-495e-b985-f0291e41d093")  
+ ![](~/designers/media/a85a7b57-b0a8-495e-b985-f0291e41d093.png "a85a7b57-b0a8-495e-b985-f0291e41d093")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/docs/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с элементами StackPanel и WrapPanel](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с элементами StackPanel и WrapPanel](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)  
   
 ###  <a name="Wrap"></a> WrapPanel  
  Упорядочивание объектов последовательно в направлении слева направо. Когда место закончится и строка достигнет края справа, то панель *перенесет* содержимое на следующую строку, и так будет повторяться раз за разом слева направо и сверху вниз. Вы также можете задать вертикальную ориентацию панели с переносом, чтобы объекты переносились в другой очередности: сверху вниз и слева направо.  
   
  (Доступно только для проектов WPF)  
   
- ![](~/docs/designers/media/b1c415fb-9a32-4a18-aa0b-308fca994ac9.png "b1c415fb-9a32-4a18-aa0b-308fca994ac9")  
+ ![](~/designers/media/b1c415fb-9a32-4a18-aa0b-308fca994ac9.png "b1c415fb-9a32-4a18-aa0b-308fca994ac9")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/docs/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с элементами StackPanel и WrapPanel](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с элементами StackPanel и WrapPanel](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)  
   
 ###  <a name="Dock"></a> DockPanel  
  Размещение элементов происходит таким образом, чтобы они оставались или были *закрепленными* у одного края панели.  
   
  (Доступно только для проектов WPF)  
   
- ![](~/docs/designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png "72d46b58-9a49-4dd5-8af7-6843c0440226")  
+ ![](~/designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png "72d46b58-9a49-4dd5-8af7-6843c0440226")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/docs/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [WPF — DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [WPF — DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)  
   
 ## <a name="layout-controls"></a>Элементы управления макета  
  Вы также можете добавить объекты к элементам управления. Они не так многофункциональны, как панель макета, но также могут оказаться полезными в определенных случаях.  
@@ -129,9 +129,9 @@ ms.lasthandoff: 05/13/2017
 ###  <a name="Border"></a> Граница  
  Создайте границу, фон или одновременно границу и фон вокруг объекта. Для **границы** можно добавить только один объект. Если вы хотите применить границу или фон для нескольких объектов, добавьте панель макета для **границы**. Затем добавьте объекты для панели или элемента управления.  
   
- ![](~/docs/designers/media/e761238b-99fd-43c5-bbc4-57538b8289ff.png "e761238b-99fd-43c5-bbc4-57538b8289ff")  
+ ![](~/designers/media/e761238b-99fd-43c5-bbc4-57538b8289ff.png "e761238b-99fd-43c5-bbc4-57538b8289ff")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/docs/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с элементом Border](http://www.popscreen.com/v/6A4hB/Microsoft-Expression-Blend-Working-with-Borders)  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с элементом Border](http://www.popscreen.com/v/6A4hB/Microsoft-Expression-Blend-Working-with-Borders)  
   
 ###  <a name="Popup"></a> Всплывающее окно  
  Отображение информации или параметров для пользователей в окне. Для элемента **Всплывающее окно** можно добавить только один объект. По умолчанию **Всплывающее окно** содержит **Сетку**, но этот параметр можно изменить.  
@@ -139,14 +139,14 @@ ms.lasthandoff: 05/13/2017
 ###  <a name="Scroll"></a> ScrollViewer  
  Позволяет пользователям прокручивать вниз страницу или часть страницы. Для элемента **ScrollViewer** можно добавить только один объект, поэтому очень важно добавить панель макета, например **сетку** или **StackPanel**.  
   
- ![](~/docs/designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png "06b326d4-f23d-41a6-b26b-e1aff37572a7")  
+ ![](~/designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png "06b326d4-f23d-41a6-b26b-e1aff37572a7")  
   
 ###  <a name="View"></a> Viewbox  
  Масштабирование объектов способом, аналогичным масштабированию с помощью элемента управления масштабом. Для панели **Viewbox** можно добавить только один объект. Чтобы применить этот эффект к нескольким объектам, добавьте панель макета для **ViewBox**, а затем добавьте элементы управления для этой панели макета.  
   
  (Доступно только для проектов WPF)  
   
- ![](~/docs/designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png "f5b13c66-d918-4141-8a16-bd8f8628687a")  
+ ![](~/designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png "f5b13c66-d918-4141-8a16-bd8f8628687a")  
   
 ## <a name="see-also"></a>См. также  
  [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)   

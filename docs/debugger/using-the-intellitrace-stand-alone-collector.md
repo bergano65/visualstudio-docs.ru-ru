@@ -146,7 +146,7 @@ manager: "ghogen"
   
 1.  На сервере приложения убедитесь, что PowerShell включен. Для большинства версий Windows Server эту функцию можно добавить в средство администрирования **Server Manager**.  
   
-     ![Добавление PowerShell с помощью диспетчера серверов](~/docs/debugger/media/intellitrace_servermanager_addpowershell.png "INTELLITRACE\_ServerManager\_AddPowerShell")  
+     ![Добавление PowerShell с помощью диспетчера серверов](~/debugger/media/intellitrace_servermanager_addpowershell.png "INTELLITRACE\_ServerManager\_AddPowerShell")  
   
 2.  Установите командлеты IntelliTrace PowerShell.  
   

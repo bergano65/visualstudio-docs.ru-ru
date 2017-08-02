@@ -25,7 +25,7 @@ caps.handback.revision: 19
   
  Окно кода <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> объекта, имеющего представления текста и признаков, находящегося в объекте. При создании окна кода во время вашего экземпляра основной редактор языка службы можно присоединить <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> в окно кода, как показано на следующем рисунке.  
   
- ![График CodeWindow](~/docs/extensibility/media/vscodewindow.gif "vscodewindow")  
+ ![График CodeWindow](~/extensibility/media/vscodewindow.gif "vscodewindow")  
 Окно кода  
   
  Языковая служба реализует диспетчер окон кода и отвечает за управление элементы оформления, например раскрывающуюся панель. Этот код вызывает окно <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> метод во время инициализации окна кода. При этом вызове языковую службу можно добавить раскрывающуюся панель или панель инструментов с кнопками \(<xref:Microsoft.VisualStudio.TextManager.Interop.IVsButtonBarClient>\) в окне кода.  

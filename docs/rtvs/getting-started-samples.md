@@ -52,11 +52,11 @@ ms.lasthandoff: 05/12/2017
 
 - В примере `1-Getting Started with R.R` рассматриваются основы R, включая использование пакетов, загрузку и анализ данных, а также построение.
 
-    ![Пример выходных данных из примера 1-Getting Started with R.R](~/docs/rtvs/media/samples-getting-started-output.png)
+    ![Пример выходных данных из примера 1-Getting Started with R.R](~/rtvs/media/samples-getting-started-output.png)
 
 - В примере `2-Introduction to ggplot2.R` представлен графический пакет ggplot2, известный своими визуально привлекательными диаграммами и несложным синтаксисом. В этом примере визуализируются данные о землетрясении на Фиджи.
 
-    ![Пример выходных данных из примера 2-Introduction to ggplot2.R](~/docs/rtvs/media/samples-ggplot-output.png)
+    ![Пример выходных данных из примера 2-Introduction to ggplot2.R](~/rtvs/media/samples-ggplot-output.png)
 
 
 ## <a name="microsoft-r-server-and-machine-learning"></a>Microsoft R Server и машинное обучение
@@ -67,7 +67,7 @@ ms.lasthandoff: 05/12/2017
 
 - `Benchmarks` запускает ряд ресурсоемких тестов производительности, чтобы продемонстрировать повышение производительности за счет использования Microsoft R Open и Intel Math Kernel Library (MKL) для быстрых параллельных линейных алгебраических вычислений. С помощью имитации данных можно оценить возможности использования двух потоков по сравнению с одним потоком для определенных вычислений, связанных с матрицей.   
 
-    ![Пример построения при тестировании производительности](~/docs/rtvs/media/samples-mro-benchmark-plot.png)
+    ![Пример построения при тестировании производительности](~/rtvs/media/samples-mro-benchmark-plot.png)
 
 - `Bike_Rental_Estimation_with_MRS` создает модель прогнозирования спроса на прокат велосипедов на основе набора исторических данных с помощью сервера Microsoft R Server. 
 
@@ -76,7 +76,7 @@ ms.lasthandoff: 05/12/2017
     - `Import Data from URL to xdf.R` демонстрирует способ загрузки в Microsoft Server R файла данных с определенным URL-адресом в виде файла XDF. (Требуется MRS.)
     - `Using ggplot2.R` является расширенной версией примера `A First Look at R/2-Introduction to ggplot2.R`, в котором представлен более широкий обзор функциональных возможностей ggplot2, включая интерактивное трехмерное построение.
 
-        ![Выходные данные примера Using ggplot2.R](~/docs/rtvs/media/samples-3d-interactive.png)
+        ![Выходные данные примера Using ggplot2.R](~/rtvs/media/samples-3d-interactive.png)
 
 - В `Datasets` имеется три файла `.csv`, которые используются в других примерах.
 - `Flight_Delays_Prediction_with_R` и `Flight_Delays_Prediction_with_MRS` демонстрируют, как спрогнозировать задержку рейсов с помощью R, машинного обучения, исторических данных о прибытии по графику и данных о погоде. 
@@ -100,11 +100,11 @@ ms.lasthandoff: 05/12/2017
 
 Следующее сравнение показывает, что MRS и MRO с MKL имеют значительно большую вычислительную производительность, когда речь заходит об определенных матричных вычислениях, по сравнению с R и MRO без MKL. В этом вычислении используется имитация данных.
 
-![Сравнение MRS и MRO с MKL и R и MRO без MKL](~/docs/rtvs/media/samples-speed-comparison.png)
+![Сравнение MRS и MRO с MKL и R и MRO без MKL](~/rtvs/media/samples-speed-comparison.png)
 
 Сравнение технических R с MRO и MRS см. в [подробном рассмотрении этой темы Ликсуном Чжаном (Lixun Zhang)](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html).
 
 На графике ниже представлено сравнение затраченного времени в секундах, которое потребовалось для создания модели логистической регрессии для прогнозирования того, будет ли задержка прибытия пассажирских авиарейсов составлять более 15 минут. Время, затраченное при использовании CRAN R, значительно увеличивается при небольшом увеличении числа строк, тогда как при использовании MRS время увеличивается лишь примерно в два раза. Сведения об этом тесте производительности см. в примере `Benchmarks/rxGlm_benchmark.R`.
 
-![Тест производительности rxGlm](~/docs/rtvs/media/samples-rxGLM-benchmark.png)
+![Тест производительности rxGlm](~/rtvs/media/samples-rxGLM-benchmark.png)
 

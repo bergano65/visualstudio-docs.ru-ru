@@ -78,7 +78,7 @@ ms.lasthandoff: 05/30/2017
   
 1.  В **обозревателе решений** откройте контекстное меню проекта, для которого требуется изменить целевую платформу, и выберите пункт **Свойства**.  
   
-     ![Свойства проводника Visual Studio](~/docs/ide/media/vs_slnexplorer_properties.png "vs_slnExplorer_Properties")  
+     ![Свойства проводника Visual Studio](~/ide/media/vs_slnexplorer_properties.png "vs_slnExplorer_Properties")  
   
     > [!IMPORTANT]
     >  Сведения об изменении целевой версии для проектов C++ см. в разделе [Практическое руководство. Изменение требуемой версии .NET Framework и набора средств платформы](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).  

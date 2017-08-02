@@ -115,7 +115,7 @@ caps.handback.revision: 5
   
 5.  Двойным щелчком выберите "Свойство "Mame" не существует в пространстве имен "http:\/\/schemas.microsoft.com\/winfx\/2006\/xaml". Вместо символа "M" в "Mame" должен стоять символ "N". Теперь, когда XAML может быть проанализирован, приложение появляется на рабочей области конструирования.  
   
-     ![Отладка XAML в Blend для Visual Studio](~/docs/debugger/media/blend_debugartboard_xaml.png "blend\_debugArtboard\_XAML")  
+     ![Отладка XAML в Blend для Visual Studio](~/debugger/media/blend_debugartboard_xaml.png "blend\_debugArtboard\_XAML")  
   
      Нажмите Ctrl\+Shift\+B для сборки проекта и подтверждения того, что ошибок больше нет.  
   

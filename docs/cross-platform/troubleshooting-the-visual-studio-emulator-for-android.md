@@ -227,11 +227,11 @@ ms.lasthandoff: 05/13/2017
   
     2.  Для адаптера vEthernet (Внутренний порт Ethernet —  эмулятор Windows Phone, внутренний коммутатор) выберите **Свойства** в контекстном меню.  
   
-         ![Виртуальный адаптер, используемый Hyper&#45;V](~/docs/cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")  
+         ![Виртуальный адаптер, используемый Hyper&#45;V](~/cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")  
   
          Здесь показаны свойства адаптера.  
   
-         ![Свойства виртуального адаптера](~/docs/cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")  
+         ![Свойства виртуального адаптера](~/cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")  
   
     3.  Для этого адаптера в списке **Это подключение использует следующие компоненты** необходимо выбрать только следующие элементы:  
   
@@ -259,7 +259,7 @@ ms.lasthandoff: 05/13/2017
   
     -   Откройте Hyper-V и перейдите в диспетчер виртуальных коммутаторов. Создайте виртуальный коммутатор с именем «Внутренний коммутатор эмулятора Windows Phone» и для типа соединения установите значение **Внутренняя сеть**.  
   
-         ![Диспетчер виртуальных коммутаторов](~/docs/cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")  
+         ![Диспетчер виртуальных коммутаторов](~/cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")  
   
      Теперь запустите эмулятор. Он должен работать.  
   

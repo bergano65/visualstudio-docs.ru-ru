@@ -59,7 +59,7 @@ ms.lasthandoff: 02/22/2017
   
  На следующей схеме показана как контекст предоставляется для службы языка, который реализует `IVsLanguageContextProvider`.  
   
- ![График LangServiceImplementation2](~/docs/extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
+ ![График LangServiceImplementation2](~/extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
 Контекст для службы языка  
   
  Как видно из диаграммы, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] основной текстовый редактор содержит контейнер контекста, присоединенные к нему. Этот контейнер контекст указывает три отдельных подконтекст сумки: языковой службы, редактора по умолчанию и текстовой метки. Языковой службы и текст маркера подконтекст контейнеры содержат атрибуты и ключевые слова для языковой службы, если <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>реализации интерфейса и текстовых меток Если <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>интерфейс реализован.</xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> </xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> Если не реализовать один из этих интерфейсов, редактор предоставляет контекст для ключевого слова в позиции курсора в контейнере подконтекст редактора по умолчанию.  

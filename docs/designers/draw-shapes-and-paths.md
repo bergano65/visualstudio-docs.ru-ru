@@ -57,7 +57,7 @@ ms.lasthandoff: 05/13/2017
 ##  <a name="Shape"></a> Рисование фигуры  
  Фигуры можно найти на панели **Ресурсы** .  
   
- ![Категория фигур на панели ресурсов](~/docs/designers/media/b4_shapes_assetspanel.png "b4_Shapes_AssetsPanel")  
+ ![Категория фигур на панели ресурсов](~/designers/media/b4_shapes_assetspanel.png "b4_Shapes_AssetsPanel")  
   
  Перетащите любую нужную фигуру в область рисования. Затем используйте маркеры фигуры, чтобы масштабировать, поворачивать, перемещать и наклонять фигуру.  
   
@@ -68,7 +68,7 @@ ms.lasthandoff: 05/13/2017
   
  Контур можно нарисовать с помощью линии, пера или карандаша. Эти инструменты доступны на панели **Средства** .  
   
- ![](~/docs/designers/media/717956a8-b6a5-4e37-8af3-70bcfc78c82a.png "717956a8-b6a5-4e37-8af3-70bcfc78c82a") ![](~/docs/designers/media/8fbbbb21-be83-4cf6-903b-3a49f00c9860.png "8fbbbb21-be83-4cf6-903b-3a49f00c9860")  
+ ![](~/designers/media/717956a8-b6a5-4e37-8af3-70bcfc78c82a.png "717956a8-b6a5-4e37-8af3-70bcfc78c82a") ![](~/designers/media/8fbbbb21-be83-4cf6-903b-3a49f00c9860.png "8fbbbb21-be83-4cf6-903b-3a49f00c9860")  
   
 ### <a name="draw-a-straight-line"></a>Рисование прямой линии  
  Используйте средства **Перо** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")или **Линия** ![](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "eb618397-5283-48be-8396-3449be7b6fbf").  
@@ -116,12 +116,12 @@ ms.lasthandoff: 05/13/2017
 ##  <a name="Convert"></a> Преобразование фигуры в контур  
  Чтобы изменить фигуру теми же способами, которые вы использовали для изменения контура, преобразуйте фигуру в контур.  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/docs/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с контурами: преобразование фигуры в контур](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с контурами: преобразование фигуры в контур](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).  
   
 ##  <a name="Combine"></a> Объединение контуров  
  Контуры и фигуры можно объединить в один контур.  
   
- ![](~/docs/designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-a338-4ef4-96c5-dae51cc1ca8a")  
+ ![](~/designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-a338-4ef4-96c5-dae51cc1ca8a")  
   
 |||||  
 |-|-|-|-|  
@@ -129,7 +129,7 @@ ms.lasthandoff: 05/13/2017
 |![](../designers/media/b1_2.png "B1_2")|Объединение|![](../designers/media/b1_5.png "B1_5")|Исключение перекрытия|  
 |![](../designers/media/b1_3.png "B1_3")|Divide|![](../designers/media/b1_6.png "B1_6")|Subtract|  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/docs/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с контурами: объединение контуров](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с контурами: объединение контуров](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).  
   
 ##  <a name="Compound"></a> Создание составного пути  
  При создании составного контура все пересекающиеся части контуров исключаются из результата, и результирующий контур принимает визуальные свойства нижнего контура.  
@@ -138,14 +138,14 @@ ms.lasthandoff: 05/13/2017
   
  ![](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png "2157a8aa-d9a7-4de4-8de5-b10d28f08a84")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/docs/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с контурами: создание составного контура](https://www.youtube.com/watch?v=Io5bC0-nH6Q).  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с контурами: создание составного контура](https://www.youtube.com/watch?v=Io5bC0-nH6Q).  
   
 ##  <a name="Clipping"></a> Создание контура кадрирования  
  Контур обрезки — это контур или фигура, применяемая к другому объекту, чтобы скрыть части маскируемого объекта за пределами контура обрезки.  
   
  ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/docs/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с контурами: создание контура кадрирования](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Работа с контурами: создание контура кадрирования](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).  
   
 ## <a name="see-also"></a>См. также  
  [Создание пользовательского интерфейса с помощью Blend для Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

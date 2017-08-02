@@ -101,7 +101,7 @@ ms.lasthandoff: 05/13/2017
   
  Чтобы проверить требования к оперативной памяти и Windows, в панели управления выберите "Система и безопасность", а затем — "Система".  
   
- ![Проверьте требования к системе](~/docs/cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")  
+ ![Проверьте требования к системе](~/cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")  
   
 ##  <a name="Network"></a> Требования к сети  
  Сеть должна удовлетворять следующим требованиям.  
@@ -147,7 +147,7 @@ ms.lasthandoff: 05/13/2017
 > [!IMPORTANT]
 >  После входа в группу выйдите из системы или выполните перезагрузку, чтобы изменения вступили в силу.  
   
- ![Присоединение к группе безопасности администраторов Hyper&#45;V](~/docs/cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")  
+ ![Присоединение к группе безопасности администраторов Hyper&#45;V](~/cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")  
   
  Чтобы добавить себя в группу вручную, откройте оснастку "Локальные пользователи и группы". Более подробную информацию см. в разделе [Добавление учетной записи пользователя в группу](http://windows.microsoft.com/en-us/windows/add-user-account-to-group#1TC=windows-7). (Сведения в этом разделе для Windows 7 также применимы к Windows 8.)  
   

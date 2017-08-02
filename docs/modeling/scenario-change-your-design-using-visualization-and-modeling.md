@@ -307,7 +307,7 @@ ms.lasthandoff: 02/22/2017
   
  Разработчик изучает карту, развернув класс PaymentProcessing и выбрав его члены для просмотра потенциально затрагиваемых областей.  
   
- ![Методы внутри класса PaymentProcessing и их зависимости](~/docs/modeling/media/depgraph_expandeddn.png "DepGraph_ExpandedDN")  
+ ![Методы внутри класса PaymentProcessing и их зависимости](~/modeling/media/depgraph_expandeddn.png "DepGraph_ExpandedDN")  
   
  **Методы внутри класса PaymentProcessing и их зависимостей**  
   
@@ -362,7 +362,7 @@ ms.lasthandoff: 02/22/2017
   
  Чтобы помочь компании Lucerne описать и обсудить сущности, участвующие в варианте использования «Обработка платежа», была создана следующая схема классов.  
   
- ![Сущности обработки платежа на схеме классов](~/docs/modeling/media/uml_payentities.png "UML_PayEntities")  
+ ![Сущности обработки платежа на схеме классов](~/modeling/media/uml_payentities.png "UML_PayEntities")  
   
  **Сущности обработки платежа на схеме классов**  
   

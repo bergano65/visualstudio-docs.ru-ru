@@ -67,7 +67,7 @@ ms.lasthandoff: 04/04/2017
   
 3.  Назовите проект `RooterLibTests`, укажите расположение, назовите решение `RooterLib`, установите флажок **Создать каталог для решения**.  
   
-     ![Задание решения, имени проекта и расположения](~/docs/test/media/ute_cpp_windows_unittestlib_createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")  
+     ![Задание решения, имени проекта и расположения](~/test/media/ute_cpp_windows_unittestlib_createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")  
   
 4.  В новом проекте откройте файл **unittest1.cpp**.  
   
@@ -100,7 +100,7 @@ ms.lasthandoff: 04/04/2017
   
      Будет построен и запущен проект теста. Появится окно обозревателя тестов, а тест будет указан в разделе **Пройденные тесты**. Область сводки в нижней части окна содержит дополнительные сведения о выбранном тесте.  
   
-     ![Обозреватель тестов](~/docs/test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
+     ![Обозреватель тестов](~/test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
   
 ##  <a name="BKMK_Add_the_DLL_project_to_the_solution"></a> Добавление в решение проекта библиотеки DLL  
   
@@ -211,7 +211,7 @@ ms.lasthandoff: 04/04/2017
   
 5.  В разделе "Обозреватель тестов" выберите **Запустить все**.  
   
-     ![Основной тест пройден](~/docs/test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
+     ![Основной тест пройден](~/test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
   
  Вы настроили тест и проекты кода и подтвердили, что можно выполнять тесты, которые запускают функции из проекта кода. Теперь можно начать писать реальные тесты и код.  
   

@@ -65,7 +65,7 @@ ms.lasthandoff: 02/22/2017
   
  Следующей схеме показано, как реализуются интерфейсы, которые поддерживают конфигурации решений и проектов.  
   
- ![График интерфейсов конфигурации](~/docs/extensibility/internals/media/vsconfiginterfaces.gif "vsConfigInterfaces")  
+ ![График интерфейсов конфигурации](~/extensibility/internals/media/vsconfiginterfaces.gif "vsConfigInterfaces")  
 Интерфейсы конфигурации  
   
  Несколько примечания, относящиеся к предыдущей схеме.  

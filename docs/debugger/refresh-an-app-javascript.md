@@ -28,7 +28,7 @@ caps.handback.revision: 20
 # Обновление приложения (JavaScript)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Применимо к Windows и к Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Применимо к Windows и к Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Можно внести изменения в код в ходе отладки, а затем обновить приложение Магазина с использованием JavaScript, нажав кнопку **Обновить приложение Windows** на панели инструментов **Отладка**.  Нажатие этой кнопки перезапускает приложение без остановки и перезапуска отладчика.  Функция обновления позволяет вносить изменения в код HTML, CSS и JavaScript и сразу видеть результат.  Эта функция поддерживается как для приложений Магазина Windows, так и для приложений Магазина Windows Phone.  
   
@@ -77,7 +77,7 @@ caps.handback.revision: 20
     Hello!  
     ```  
   
-7.  Нажмите кнопку **Обновить приложение Windows**, которая выглядит следующим образом: ![Кнопка "Обновить приложение Windows"](~/docs/debugger/media/js_refresh.png "JS\_Refresh").  \(Или нажмите клавишу F4.\)  
+7.  Нажмите кнопку **Обновить приложение Windows**, которая выглядит следующим образом: ![Кнопка "Обновить приложение Windows"](~/debugger/media/js_refresh.png "JS\_Refresh").  \(Или нажмите клавишу F4.\)  
   
 8.  Перейдите в приложение.  Приложение перезапускается без перезапуска отладчика, и отображается новый заголовок.  
   

@@ -52,18 +52,18 @@ ms.lasthandoff: 05/13/2017
 
      Например, на компьютере с юбилейным обновлением Windows 10 нажмите кнопку **Пуск** и прокрутите список до буквы **У**. Вы увидите пункт **Установщик Visual Studio**.  
 
-     ![Установщик Visual Studio](~/docs/install/media/vs2017-locate-the-visual-studio-installer.PNG "Поиск установщика Microsoft Visual Studio")
+     ![Установщик Visual Studio](~/install/media/vs2017-locate-the-visual-studio-installer.PNG "Поиск установщика Microsoft Visual Studio")
 
      >[!NOTE]
      На некоторых компьютерах установщик Visual Studio может быть указан под буквой **"M"** — для **Microsoft Visual Studio**.
 
 2.  Щелкните установщик (или коснитесь его) и выберите действие **Изменить**.  
 
-     ![Запустите или измените Visual Studio](~/docs/install/media/vs2017-modify.PNG "Изменение Visual Studio 2017")  
+     ![Запустите или измените Visual Studio](~/install/media/vs2017-modify.PNG "Изменение Visual Studio 2017")  
 
 3.  На экране **Рабочие нагрузки** выберите рабочие нагрузки, которые нужно установить, или отмените выбор тех, которые нужно удалить.  
 
-    ![Диалоговое окно программы установки Visual Studio 2017](~/docs/install/media/vs2017-modify-workloads.PNG "Выбор рабочей нагрузки в Visual Studio 2017")
+    ![Диалоговое окно программы установки Visual Studio 2017](~/install/media/vs2017-modify-workloads.PNG "Выбор рабочей нагрузки в Visual Studio 2017")
 
 4. Еще раз щелкните или коснитесь **Изменить**.  
 

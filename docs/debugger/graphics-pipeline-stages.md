@@ -124,7 +124,7 @@ manager: "ghogen"
   
  Чтобы просмотреть результат этапа шейдеров вершин, выберите эскиз этапа шейдеров вершин для просмотра полноразмерного растеризованного каркаса сетки после его преобразования шейдером вершин.  
   
- ![Результат предварительного просмотра стадии шейдера вершин](~/docs/debugger/graphics/media/gfx_diag_vertex_shader_preview.png "gfx\_diag\_vertex\_shader\_preview")  
+ ![Результат предварительного просмотра стадии шейдера вершин](~/debugger/graphics/media/gfx_diag_vertex_shader_preview.png "gfx\_diag\_vertex\_shader\_preview")  
   
 ## См. также  
  [Пошаговое руководство. Отсутствие объектов вследствие заливки вершин](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   

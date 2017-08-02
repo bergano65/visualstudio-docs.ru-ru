@@ -40,11 +40,11 @@ manager: "ghogen"
   
 2.  В меню **Вид** выберите **Другие окна** \> **Источники данных**.  
   
-     ![Просмотр других окон "Источники данных"](~/docs/data-tools/media/viewdatasources.png "ViewDataSources")  
+     ![Просмотр других окон "Источники данных"](~/data-tools/media/viewdatasources.png "ViewDataSources")  
   
 3.  В окне **Источники данных** выберите **Добавить новый источник данных**.  
   
-     ![Добавить новый источник данных](~/docs/data-tools/media/dataaddnewdatasource.png "dataAddNewDataSource")  
+     ![Добавить новый источник данных](~/data-tools/media/dataaddnewdatasource.png "dataAddNewDataSource")  
   
 4.  На странице **Выбор типа источника данных** выберите **База данных** и нажмите кнопку **Далее**.  
   
@@ -87,11 +87,11 @@ manager: "ghogen"
   
 2.  В меню **Вид** выберите **Другие окна** \> **Источники данных**.  
   
-     ![Просмотр других окон "Источники данных"](~/docs/data-tools/media/viewdatasources.png "ViewDataSources")  
+     ![Просмотр других окон "Источники данных"](~/data-tools/media/viewdatasources.png "ViewDataSources")  
   
 3.  В окне **Источники данных** выберите **Добавить новый источник данных**.  
   
-     ![Добавить новый источник данных](~/docs/data-tools/media/dataaddnewdatasource.png "dataAddNewDataSource")  
+     ![Добавить новый источник данных](~/data-tools/media/dataaddnewdatasource.png "dataAddNewDataSource")  
   
 4.  На странице **Выбор типа источника данных** выберите **База данных** и нажмите кнопку **Далее**.  
   
