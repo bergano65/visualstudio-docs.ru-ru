@@ -38,7 +38,7 @@ caps.handback.revision: 21
 ## Сценарий 1: Общие VSPackage  
  В этом случае общие VSPackage \(единый двоичный файл, который поддерживает несколько версий [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]\) поставляется в пакет установщика Windows. Регистрация с каждой версией [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] управляется выбираемых пользователем функции. Это также означает, что при назначении для разделения функций каждого компонента могут быть выбраны для установки или удаления, создания пользователя в элементе управления интеграции VSPackage в разных версиях [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. \(См. [компоненты установщика Windows](http://msdn.microsoft.com/library/aa372840\(VS.85\).aspx) Дополнительные сведения об использовании функций в пакеты установщика Windows.\)  
   
- ![График VS Shared VSPackage](../../extensibility/internals/media/vs_sharedpackage.png "VS\_SharedPackage")  
+ ![График VS Shared VSPackage](~/docs/extensibility/internals/media/vs_sharedpackage.gif "VS\_SharedPackage")  
 Общий установочный пакет VSPackage  
   
  Как показано на рисунке, общие компоненты становятся частью функцию Feat\_Common, которая всегда устанавливается. Благодаря функции Feat\_VS2002 и Feat\_VS2003 видимым, пользователи могут выбирать во время установки в какой версии [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] хочет интегрировать VSPackage. Пользователи также могут использовать режим обслуживания установщика Windows, чтобы добавить или удалить компоненты, который в данном случае добавляет или удаляет сведения о регистрации VSPackage из разных версий [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -52,7 +52,7 @@ caps.handback.revision: 21
 > [!CAUTION]
 >  Каждый раз, когда VSPackage является общим для нескольких версий [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], очень важно, что последующих выпусках VSPackage обратной совместимости с предыдущими версиями платформы [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Там, где не может поддерживать обратную совместимость, необходимо использовать VSPackages side\-by\-side, закрытым. Для получения дополнительной информации см. [Поддержка нескольких версий Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).  
   
- ![Изображение обновление пакета VS Shared VS](../../extensibility/internals/media/vs_sharedpackageupdate.png "VS\_SharedPackageUpdate")  
+ ![Изображение обновление пакета VS Shared VS](~/docs/extensibility/internals/media/vs_sharedpackageupdate.gif "VS\_SharedPackageUpdate")  
 Общие обновления установщик VSPackage  
   
  Этот сценарий представлен новый установщик VSPackage, преимуществами поддержки небольшие обновления установщика Windows. Просто установить версию 1.1 и его обновлении версии 1.0. Однако не обязательно иметь версии 1.0 в системе. Та же программа установит версии 1.1 в системе без версии 1.0. Преимущество для предоставления незначительного обновления таким образом является, что нет необходимости проходить через работу по разработке обновления установщик и установщик полного продукта. Установщик выполняет оба задания. Исправление безопасности или пакета обновления может вместо этого воспользоваться преимуществами исправлений установщика Windows. Дополнительные сведения см. в разделе [обновления и исправления](http://msdn.microsoft.com/library/aa370579\(VS.85\).aspx).  
@@ -60,7 +60,7 @@ caps.handback.revision: 21
 ## Сценарий 3: Side\-by\-Side VSPackage  
  Этот сценарий знакомит два установщика VSPackage — один для каждой версии Visual Studio .NET 2003 и [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Каждый установщик устанавливает side\-by\-side или частный VSPackage \(специально созданных и установлены для конкретной версии [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]\). Каждый VSPackage имеет свой собственный компонент. Следовательно, каждый по отдельности обслуживаются исправления или обслуживания освобождает. Поскольку VSPackage DLL, теперь зависит от версии, допускается включать регистрационные сведения в один и тот же компонент как библиотеку DLL.  
   
- ![График пакета VS Side&#45;by&#45;Side VS](../../extensibility/internals/media/vs_sbys_package.gif "VS\_SbyS\_Package")  
+ ![График пакета VS Side&#45;by&#45;Side VS](~/docs/extensibility/internals/media/vs_sbys_package.gif "VS\_SbyS\_Package")  
 Установщик Side\-by\-side VSPackage  
   
  Каждый установщик также включает код, который совместно используется двумя установщиками. Если совместно используемого кода устанавливается в общем расположении, оба MSI\-файлы установки установит общего кода только один раз. Второй установщика просто увеличивает значение счетчика ссылок на компонент. Счетчик ссылок гарантирует, что если один из пакетов VSPackages удаляется, общий код будет храниться другие VSPackage. Если второй VSPackage удаляется также, общего кода будет удален.  
@@ -70,7 +70,7 @@ caps.handback.revision: 21
   
  В этом случае VSPackage является управляемых VSPackage установлены в глобальный кэш сборок \(GAC\). При перестроении в него исправления безопасности, необходимо изменить номер редакции часть номера версии сборки. Сведения о регистрации для нового номера версии сборки заменяет предыдущую версию, вызывает [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] для загрузки сборки, основного.  
   
- ![График обновления пакета VS Side&#45;by&#45;Side VS](../../extensibility/internals/media/vs_sbys_packageupdate.png "VS\_SbyS\_PackageUpdate")  
+ ![График обновления пакета VS Side&#45;by&#45;Side VS](~/docs/extensibility/internals/media/vs_sbys_packageupdate.gif "VS\_SbyS\_PackageUpdate")  
 Установщик обновлений Side\-by\-side VSPackage  
   
  **Примечание** Дополнительные сведения о развертывании сборок side\-by\-side в разделе [Упрощение развертывания и устранения DLL Hell с платформой .NET Framework](http://msdn.microsoft.com/library/ms973843.aspx).  

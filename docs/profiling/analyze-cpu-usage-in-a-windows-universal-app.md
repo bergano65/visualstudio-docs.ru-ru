@@ -37,7 +37,7 @@ ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="analyze-cpu-usage-in-a-universal-windows-app-uwp"></a>Анализ загрузки ЦП в универсальных приложениях Windows (UWP)
-![Применимо к Windows и Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+![Применимо к Windows и Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
  Если вам нужно проанализировать проблемы с производительностью в своем приложении, следует сначала понять, как оно использует ЦП. Средство **Загрузка ЦП** показывает, в какой части кода затрачивается больше всего ресурсов ЦП. Чтобы сконцентрироваться на определенных сценариях, этот инструмент можно запустить вместе с инструментом [ Временная шкала приложения](../profiling/application-timeline.md) и/или [Расход энергии](../profiling/analyze-energy-use-in-store-apps.md) в рамках одного сеанса диагностики.  
   
@@ -51,7 +51,7 @@ ms.lasthandoff: 05/13/2017
   
 1.  Создайте новый проект универсального приложения для Windows на C# с именем **CpuUseDemo**, используя шаблон **BlankApp**.  
   
-     ![Создание CpuUseDemoProject](../profiling/media/cpu_use_newproject.png "CPU_USE_NewProject")  
+     ![Создание CpuUseDemoProject](~/docs/profiling/media/cpu_use_newproject.png "CPU_USE_NewProject")  
   
 2.  Замените MainPage.xaml [этим кодом](#BKMK_MainPage_xaml).  
   
@@ -60,7 +60,7 @@ ms.lasthandoff: 05/13/2017
 4.  Выполните сборку приложения и попробуйте поработать с ним. Это приложение является достаточно простым, чтобы продемонстрировать наиболее распространенные примеры анализа данных о загрузке ЦП.  
   
 ##  <a name="BKMK_Collect_CPU_usage_data"></a> Сбор данных о загрузке ЦП  
- ![Запуск сборки выпуска приложения в симуляторе](../profiling/media/cpu_use_wt_setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
+ ![Запуск сборки выпуска приложения в симуляторе](~/docs/profiling/media/cpu_use_wt_setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
 1.  В Visual Studio задайте **Симулятор** в качестве цели развертывания и **Выпуск** в качестве конфигурации решения.  
   
@@ -72,35 +72,35 @@ ms.lasthandoff: 05/13/2017
   
 3.  В разделе "Производительность и диагностика" выберите **Загрузка ЦП**, а затем **Запуск**.  
   
-     ![Запуск сеанса диагностики CpuUsage](../profiling/media/cpu_use_wt_perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
+     ![Запуск сеанса диагностики CpuUsage](~/docs/profiling/media/cpu_use_wt_perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
   
 4.  После запуска приложения нажмите кнопку **Get Max Number**(Получить максимальное количество). После вывода результата подождите примерно одну секунду, а затем нажмите **Get Max Number Async**(Получить максимальное количество асинхронно). Перерыв между нажатиями кнопок облегчает нахождение в диагностическом отчете информации о подпрограммах обработки нажатия кнопок.  
   
 5.  После вывода второй строки выберите **Остановка сбора** в разделе "Производительность и диагностика".  
   
- ![Остановка сбора данных CpuUsage](../profiling/media/cpu_use_wt_stopcollection.png "CPU_USE_WT_StopCollection")  
+ ![Остановка сбора данных CpuUsage](~/docs/profiling/media/cpu_use_wt_stopcollection.png "CPU_USE_WT_StopCollection")  
   
  Инструмент "Использование ЦП" анализирует данные и отображает отчет.  
   
- ![Отчет CpuUsage](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
+ ![Отчет CpuUsage](~/docs/profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
   
 ##  <a name="BKMK_Analyze_the_CPU_Usage_report"></a> Анализ отчета о загрузке ЦП  
   
 ###  <a name="BKMK_CPU_utilization_timeline_graph"></a> График зависимости загрузки ЦП от времени  
- ![График временной шкалы CpuUtilization (%)](../profiling/media/cpu_use_wt_timelinegraph.png "CPU_USE_WT_TimelineGraph")  
+ ![График временной шкалы CpuUtilization (%)](~/docs/profiling/media/cpu_use_wt_timelinegraph.png "CPU_USE_WT_TimelineGraph")  
   
  На графике использования ЦП отображается активность ЦП для приложения в виде процента от совокупного времени ЦП, объединяющего все ядра процессора на устройстве. Данные для этого отчета были собраны на компьютере с двумя ядрами. Два больших всплеска активности ЦП соответствуют двум нажатиям кнопок. `GetMaxNumberButton_Click` выполняется синхронно на одном ядре, поэтому высота графика при таком методе никогда не превышает 50 %. `GetMaxNumberAsycButton_Click` выполняется асинхронно на обоих ядрах, поэтому график показывает, что использование ЦП близко к общему объему ресурсов обоих ядер.  
   
 ####  <a name="BKMK_Select_timeline_segments_to_view_details"></a> Выбор сегментов временной шкалы для просмотра подробных сведений  
  Используйте полосы выделения на временной шкале **Диагностический сеанс**, чтобы сконцентрироваться на данных GetMaxNumberButton_Click:  
   
- ![Выбранный отчет GetMaxNumberButton_Click](../profiling/media/cpu_use_wt_getmaxnumberreport.png "CPU_USE_WT_GetMaxNumberReport")  
+ ![Выбранный отчет GetMaxNumberButton_Click](~/docs/profiling/media/cpu_use_wt_getmaxnumberreport.png "CPU_USE_WT_GetMaxNumberReport")  
   
  Временная шкала **Диагностический сеанс** теперь отображает выбранный сегмент (в данном отчете он немного превышает 2 секунды) и отфильтровывает дерево вызовов, отображая только те методы, которые выполнялись в рамках выбранного периода.  
   
  Теперь выберите период `GetMaxNumberAsyncButton_Click`.  
   
- ![Выбор отчета GetMaxNumberAsyncButton_Click](../profiling/media/cpu_use_wt_getmaxnumberasync_selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
+ ![Выбор отчета GetMaxNumberAsyncButton_Click](~/docs/profiling/media/cpu_use_wt_getmaxnumberasync_selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
   
  Этот метод выполняется примерно на одну секунду быстрее, чем `GetMaxNumberButton_Click`, однако значение записей в дереве вызовов не слишком очевидно.  
   
@@ -108,36 +108,36 @@ ms.lasthandoff: 05/13/2017
  Чтобы понять сведения в дереве вызовов, повторно выберите сегмент `GetMaxNumberButton_Click` и просмотрите дерево вызовов.  
   
 ####  <a name="BKMK_Call_tree_structure"></a> Структура дерева вызовов  
- ![Дерево вызовов GetMaxNumberButton_Click](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
+ ![Дерево вызовов GetMaxNumberButton_Click](~/docs/profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
 |||  
 |-|-|  
-|![Шаг 1](../profiling/media/procguid_1.png "ProcGuid_1")|Узел верхнего уровня в деревьях вызовов для использования ЦП представляет собой псевдоузел|  
-|![Шаг 2](../profiling/media/procguid_2.png "ProcGuid_2")|В большинстве приложений при отключенном параметре **Показать внешний код** узлом второго уровня является узел **[Внешний код]** , который содержит код системы и инфраструктуры, запускающий и останавливающий приложение, отрисовывающий пользовательский интерфейс, управляющий планированием потоков и предоставляющий приложению другие низкоуровневые службы.|  
-|![Шаг 3](../profiling/media/procguid_3.png "ProcGuid_3")|Дочерними элементами узла второго уровня являются методы пользовательского кода и асинхронные подпрограммы, которые вызываются или создаются кодом системы и инфраструктуры на втором уровне.|  
-|![Шаг 4](../profiling/media/procguid_4.png "ProcGuid_4")|Дочерние узлы метода содержат данные только для вызова родительского метода. Если параметр **Показать внешний код** отключен, методы приложения также могут содержать узел **[Внешний код]** .|  
+|![Шаг 1](~/docs/profiling/media/procguid_1.png "ProcGuid_1")|Узел верхнего уровня в деревьях вызовов для использования ЦП представляет собой псевдоузел|  
+|![Шаг 2](~/docs/profiling/media/procguid_2.png "ProcGuid_2")|В большинстве приложений при отключенном параметре **Показать внешний код** узлом второго уровня является узел **[Внешний код]** , который содержит код системы и инфраструктуры, запускающий и останавливающий приложение, отрисовывающий пользовательский интерфейс, управляющий планированием потоков и предоставляющий приложению другие низкоуровневые службы.|  
+|![Шаг 3](~/docs/profiling/media/procguid_3.png "ProcGuid_3")|Дочерними элементами узла второго уровня являются методы пользовательского кода и асинхронные подпрограммы, которые вызываются или создаются кодом системы и инфраструктуры на втором уровне.|  
+|![Шаг 4](~/docs/profiling/media/procguid_4.png "ProcGuid_4")|Дочерние узлы метода содержат данные только для вызова родительского метода. Если параметр **Показать внешний код** отключен, методы приложения также могут содержать узел **[Внешний код]** .|  
   
 ####  <a name="BKMK_External_Code"></a> Внешний код  
  Внешний код состоит из функций в компонентах системы и платформы, которые исполняются вашим кодом. Внешний код включает функции, которые запускают и останавливают приложение, отрисовывают пользовательский интерфейс, управляют потоками и предоставляют приложению другие низкоуровневые службы. В большинстве случаев внешний код вас интересовать не будет, поэтому дерево вызовов средства "Использование ЦП" собирает внешние функции пользовательского метода в один узел **[Внешний код]**.  
   
  Если вы захотите посмотреть пути к вызовам внешнего кода, выберите **Показать внешний код** в списке **Представление фильтра** и выберите **Применить**.  
   
- ![Выбор "Представление фильтра", а затем "Показать внешний код"](../profiling/media/cpu_use_wt_filterview.png "CPU_USE_WT_FilterView")  
+ ![Выбор "Представление фильтра", а затем "Показать внешний код"](~/docs/profiling/media/cpu_use_wt_filterview.png "CPU_USE_WT_FilterView")  
   
  Помните о том, что многие цепочки вызовов имеют глубокий уровень вложенности, поэтому ширина столбца "Имя функции" может превышать ширину многих мониторов. В этом случае имена функций отображаются в виде **[…]**.  
   
- ![Вложенный внешний код в дереве вызовов](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "CPU_USE_WT_ShowExternalCodeTooWide")  
+ ![Вложенный внешний код в дереве вызовов](~/docs/profiling/media/cpu_use_wt_showexternalcodetoowide.png "CPU_USE_WT_ShowExternalCodeTooWide")  
   
  Используйте поле поиска, чтобы найти требуемый узел, а затем воспользуйтесь горизонтальной полосой прокрутки для отображения данных в представлении:  
   
- ![Поиск вложенного внешнего кода](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
+ ![Поиск вложенного внешнего кода](~/docs/profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
   
 ###  <a name="BKMK_Call_tree_data_columns"></a> Столбцы данных дерева вызовов  
   
 |||  
 |-|-|  
-|**Общая активность ЦП (%)**|![Уравнение для общего процента](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Процент активности ЦП приложения за выбранный период времени, потраченной на вызовы функции и функций, которые вызывала данная функция. Обратите внимание, что это отличается от графика временной шкалы **Использование ЦП** , который сравнивает общую активность приложения за период времени с общей доступной емкостью ЦП.|  
-|**Собственная активность ЦП (%)**|![Уравнение для процента собственной активности](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Процент активности ЦП приложения за выбранный период времени, потраченной на вызовы функции, исключая выполнение функций, которые вызывала данная функция.|  
+|**Общая активность ЦП (%)**|![Уравнение для общего процента](~/docs/profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Процент активности ЦП приложения за выбранный период времени, потраченной на вызовы функции и функций, которые вызывала данная функция. Обратите внимание, что это отличается от графика временной шкалы **Использование ЦП** , который сравнивает общую активность приложения за период времени с общей доступной емкостью ЦП.|  
+|**Собственная активность ЦП (%)**|![Уравнение для процента собственной активности](~/docs/profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Процент активности ЦП приложения за выбранный период времени, потраченной на вызовы функции, исключая выполнение функций, которые вызывала данная функция.|  
 |**Общее время ЦП (мс)**|Время в миллисекундах, затраченное на вызовы функции в выбранном временном интервале, и функций, которые были вызваны этой функцией.|  
 |**Собственное время ЦП (мс)**|Время в миллисекундах, затраченное на вызовы функции в выбранном временном интервале, и функций, которые были вызваны этой функцией.|  
 |**Модуль**|Имя модуля, содержащего функцию, или количество модулей, содержащих функции в узле [Внешний код].|  
@@ -147,11 +147,11 @@ ms.lasthandoff: 05/13/2017
   
  Чтобы увидеть его в нашем примере, снова выберите период `GetMaxNumberAsyncButton_Click` на временной шкале.  
   
- ![Выбор отчета GetMaxNumberAsyncButton_Click](../profiling/media/cpu_use_wt_getmaxnumberasync_selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
+ ![Выбор отчета GetMaxNumberAsyncButton_Click](~/docs/profiling/media/cpu_use_wt_getmaxnumberasync_selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
   
  Два первых узла в узле **[Внешний код]** представляют собой созданные компилятором методы класса конечного автомата. Третий узел является вызовом исходного метода. Развернув созданные методы, можно понять, как это работает.  
   
- ![Развернутое дерево вызовов GetMaxNumberAsyncButton_Click](../profiling/media/cpu_use_wt_getmaxnumberasync_expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
+ ![Развернутое дерево вызовов GetMaxNumberAsyncButton_Click](~/docs/profiling/media/cpu_use_wt_getmaxnumberasync_expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
   
 -   `MainPage::GetMaxNumberAsyncButton_Click` выполняет немного функций: управляет списком значений задач, вычисляет максимальное значение на основе результатов и отображает выходные данные.  
   

@@ -78,7 +78,7 @@ caps.handback.revision: 52
   
 3.  В окне **Свойства** разверните свойство **\(DataBindings\)**.  
   
-4.  Рядом со свойством **\(Дополнительно\)** нажмите кнопку с многоточием \(![Снимок экрана VisualStudioEllipsesButton](../vsto/media/vbellipsesbutton.png "Снимок экрана VisualStudioEllipsesButton")\).  
+4.  Рядом со свойством **\(Дополнительно\)** нажмите кнопку с многоточием \(![Снимок экрана VisualStudioEllipsesButton](~/docs/vsto/media/vbellipsesbutton.png "Снимок экрана VisualStudioEllipsesButton")\).  
   
 5.  В диалоговом окне **Форматирование и дополнительная привязка** щелкните раскрывающийся список **Режим обновления источника данных** и выберите одно из следующих значений.  
   

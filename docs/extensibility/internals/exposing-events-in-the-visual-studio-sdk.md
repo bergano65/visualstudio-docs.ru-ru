@@ -61,7 +61,7 @@ caps.handback.revision: 16
   
  Когда потребитель автоматизации запрашиваемых всех объектов событий, создайте корневой объект, который содержит методы для любого события, которое поддерживает VSPackage. Среда вызывает соответствующий `get_` этого объекта. Например если `DTE.Events.AutomationProjectsEvents` вызове `get_AutomationProjectsEvents` был вызван метод на корневой объект.  
   
- ![События проекта Visual Studio](../../extensibility/internals/media/projectevents.png "ProjectEvents")  
+ ![События проекта Visual Studio](~/docs/extensibility/internals/media/projectevents.gif "ProjectEvents")  
 Модель автоматизации для события  
   
  Класс `CProjectEventsContainer` представляет исходный объект для BscProjectsEvents, а `CProjectItemsEventsContainer` представляет исходный объект для BscProjectItemsEvents.  

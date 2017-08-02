@@ -35,7 +35,7 @@ caps.handback.revision: 25
 ## Определение, является ли данные уже открытого документа  
  Запуск таблица document \(RDT\) в справках интегрированной среды разработки \(ide\), отслеживается ли данные для документа уже открыт, как показано на следующей диаграмме.  
   
- ![График DocDataView](../extensibility/media/docdataview.png "Docdataview")  
+ ![График DocDataView](~/docs/extensibility/media/docdataview.gif "Docdataview")  
 Несколько представлений  
   
  По умолчанию каждое представление \(объект представления документа\) содержится в его границах окна \(<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>\).  Как уже определено, однако данные документа может отображаться в нескольких представлений.  Чтобы разрешить это Visual Studio проверяет RDT, чтобы определить, является ли документ в вопросе уже открыт в редакторе.  При вызове интегрированной среды разработки <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> чтобы создать значение, отличное от null, возвращенных в редакторе  `punkDocDataExisting` параметр указывает на то, что документ уже открыт в другом редакторе.  Дополнительные сведения о функциях см. в разделе RDT [Таблицы запущенных документа](../extensibility/internals/running-document-table.md).  

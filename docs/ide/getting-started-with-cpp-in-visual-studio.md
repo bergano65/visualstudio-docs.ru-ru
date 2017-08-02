@@ -124,7 +124,7 @@ ms.lasthandoff: 05/13/2017
   
 -   Запустите отладчик.  
   
-     ![Команда "Начать отладку" в меню "Отладка"](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
+     ![Команда "Начать отладку" в меню "Отладка"](~/docs/ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
   
      Отладчик запустится и выполнит код. Окно консоли (отдельное окно, подобное командной строке) отображается в течение нескольких секунд, но при остановке отладчика быстро закрывается. Чтобы просмотреть текст, необходимо установить точку останова выполнения программы.  
   
@@ -157,7 +157,7 @@ ms.lasthandoff: 05/13/2017
   
 2.  Измените конфигурацию сборки для GreetingsConsoleApp с **Отладка** на **Выпуск**.  
   
-     ![Сборка окончательной версии приложения](../ide/media/c--ide_changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")  
+     ![Сборка окончательной версии приложения](~/docs/ide/media/c--ide_changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")  
   
 3.  Постройте решение.  
   

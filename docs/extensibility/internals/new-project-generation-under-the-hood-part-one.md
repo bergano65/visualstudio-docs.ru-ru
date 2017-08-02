@@ -37,7 +37,7 @@ caps.handback.revision: 29
 ## Диалоговом окне Новый проект  
  Все начинается при выборе типа проекта для нового проекта. Давайте начнем, щелкнув **Новый проект** на **файл** меню.**Новый проект** откроется диалоговое окно, выглядящие примерно так:  
   
- ![Диалоговое окно “Новый проект”](../../extensibility/internals/media/newproject.png "NewProject")  
+ ![Диалоговое окно “Новый проект”](~/docs/extensibility/internals/media/newproject.gif "NewProject")  
   
  Давайте взглянем поближе.**Типов проектов** дерева перечислены различные типы проектов, можно создать. При выборе типа проекта, например **Visual C\# Windows**, вы увидите список шаблонов приложений, чтобы приступить к работе.**Установленные шаблоны visual Studio** устанавливаются Visual Studio и доступны для любого пользователя компьютера. Можно добавить новые шаблоны для создания или сбора **Мои шаблоны** и доступны только для вас.  
   
@@ -107,11 +107,11 @@ devenv /installvstemplates
   
  Для Visual Studio с C\# параметры разработчика **типы проектов** дерева выглядит примерно так:  
   
- ![Типы проектов](../../extensibility/internals/media/projecttypes.png "ProjectTypes")  
+ ![Типы проектов](~/docs/extensibility/internals/media/projecttypes.png "ProjectTypes")  
   
  В соответствующую папку Шаблоны\_проекта выглядит следующим образом:  
   
- ![Шаблоны проектов](../../extensibility/internals/media/projecttemplates.png "ProjectTemplates")  
+ ![Шаблоны проектов](~/docs/extensibility/internals/media/projecttemplates.png "ProjectTemplates")  
   
  При **Новый проект** откроется диалоговое окно [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] просматривает папку Шаблоны\_проекта и воссоздает свою структуру в **типы проектов** дерева с некоторыми изменениями:  
   
@@ -209,7 +209,7 @@ devenv /installvstemplates
   
 1.  Откройте **Новый проект** диалогового окна выберите и разверните **Visual C\#** узел проекта.  
   
- ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
+ ![MyProjectNode](~/docs/extensibility/internals/media/myprojectnode.png "MyProjectNode")  
   
  **MyProjectNode** отображается как дочерний узел Visual C\# просто узле Windows.  
   

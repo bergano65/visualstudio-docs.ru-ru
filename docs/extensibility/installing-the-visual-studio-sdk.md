@@ -44,7 +44,7 @@ ms.lasthandoff: 03/07/2017
 ## <a name="installing-the-visual-studio-sdk-from-a-solution"></a>Установка Visual Studio SDK из решения  
  При открытии решения в проекте расширения без необходимости установки VSSDK, вам предложат по выделенным информационное выше в обозревателе решений. Он должен выглядеть примерно следующим образом:  
   
- ![SolutionExplorerInstall](../extensibility/media/solutionexplorerinstall.png "SolutionExplorerInstall")  
+ ![SolutionExplorerInstall](~/docs/extensibility/media/solutionexplorerinstall.png "SolutionExplorerInstall")  
   
 ## <a name="installing-the-visual-studio-sdk-from-the-command-line"></a>Установка из командной строки Visual Studio SDK  
 Как и в Visual Studio рабочей нагрузки или компонент, можно также установить этот элемент из командной строки. В разделе [использовать параметры командной строки для установки Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) сведения о коммутаторы соответствующую командную строку и способ определения идентификаторов рабочей нагрузки или компонента.

@@ -52,7 +52,7 @@ function getArea(radius) {
   
  В предыдущем примере IntelliSense отображает описание, параметры и возвращаемые сведения при вводе открывающей скобки для `getArea`.  
   
- ![Сведения IntelliSense для функции](../ide/media/js_intellisense_jsdoc_comments.png "JS\_IntelliSense\_JSDoc\_Comments")  
+ ![Сведения IntelliSense для функции](~/docs/ide/media/js_intellisense_jsdoc_comments.png "JS\_IntelliSense\_JSDoc\_Comments")  
   
  В примере показано, как использовать тег @typedef с тегом @property.  
   

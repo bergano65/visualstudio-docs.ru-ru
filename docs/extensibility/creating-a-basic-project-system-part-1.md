@@ -75,7 +75,7 @@ caps.handback.revision: 47
   
 3.  Сделать специальный значок. Этот значок появляется в **Новый проект** диалоговое окно «» далее в этом пошаговом руководстве.  
   
-     ![Значок: значок простого проекта](../extensibility/media/simpleprojicon.png "SimpleProjIcon")  
+     ![Значок: значок простого проекта](~/docs/extensibility/media/simpleprojicon.png "SimpleProjIcon")  
   
 4.  Значок сохраните и закройте редактор значков.  
   
@@ -471,7 +471,7 @@ caps.handback.revision: 47
   
 2.  В **Свойства** windows, уменьшить точечного рисунка 16 x 16 пикселей. Сделать различение точечного рисунка.  
   
-     ![Команда простого проекта](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
+     ![Команда простого проекта](~/docs/extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
   
 3.  В **Свойства** измените **действие построения** точечного рисунка, который **внедренный ресурс**.  
   
@@ -546,7 +546,7 @@ caps.handback.revision: 47
   
 2.  В только что созданный проект Обратите внимание, что SimpleProjectNode.bmp используется как значок узел проекта.  
   
-     ![Простой проект Узел нового проекта](../extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")  
+     ![Простой проект Узел нового проекта](~/docs/extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")  
   
 3.  Откройте файл Program.cs в редакторе кода. Вы должны увидеть исходный код, подобный приведенному ниже.  
   
@@ -649,6 +649,6 @@ caps.handback.revision: 47
   
 6.  Начните отладку проекта. Новый проект должен компиляции, запуска и отображение «Hello VSX\!\!\!» в окне консоли.  
   
-     ![Команда Simple Project](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
+     ![Команда Simple Project](~/docs/extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
   
  Поздравляем\! Вы реализовали систему базового управляемого проекта.

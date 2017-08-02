@@ -31,19 +31,19 @@ caps.handback.revision: 20
   
 |Значок|Описание|Значок|Описание|  
 |------------|--------------|------------|--------------|  
-|![Символ пространства имен](../ide/media/vxnamespace_icon.gif "vxNamespace\_Icon")|Пространство имен|![Символ объявления](../ide/media/vxmethod_icon.png "vxMethod\_Icon")|Метод или функция|  
-|![Значок класса](../ide/media/vxclass_icon.png "vxClass\_Icon")|Класс|![Символ оператора](../ide/media/vxoperator_icon.png "vxOperator\_Icon")|Оператор|  
-|![Символ интерфейса без описания операций](../ide/media/vxinterface_icon.png "vxInterface\_Icon")|Интерфейс|![Символ свойства](../ide/media/vxproperty_icon.png "vxProperty\_Icon")|Свойство.|  
-|![Символ структуры](../ide/media/vxstruct_icon.png "vxStruct\_Icon")|Структура|![Значок поля](../ide/media/vxfield_icon.png "vxField\_Icon")|Поле или переменная|  
-|![Символ объединения](../ide/media/vxunion_icon.png "vxUnion\_Icon")|Union|![Символ события](../ide/media/vxevent_icon.png "vxEvent\_Icon")|Событие|  
-|![Символ перечисления](../ide/media/vxenum_icon.png "vxEnum\_Icon")|Enum|![Значок константы](../ide/media/vxconstant_icon.png "vxConstant\_Icon")|Константа|  
-|![Символ определения типа](../ide/media/vxtypedef_icon.png "vxTypeDef\_Icon")|TypeDef|![Символ элемента перечисления](../ide/media/vxenumitem_icon.png "vxEnumItem\_Icon")|Элемент перечисления|  
-|![Символ модуля Visual Studio](../ide/media/vxmodule_icon.gif "vxModule\_Icon")|Модуль|![Символ элемента сопоставления](../ide/media/vxmapitem_icon.png "vxMapItem\_Icon")|Элемент сопоставления|  
-|![Символ метода расширения](../ide/media/extensionmethod.png "ExtensionMethod")|Метод расширения|![Символ объявления](../ide/media/vxmethod_icon.png "vxMethod\_Icon")|Внешнее объявление|  
-|![Символ делегата](../ide/media/vxdelegate_icon.png "vxDelegate\_Icon")|Делегат|![Значок ошибки представления классов и обозревателя объектов](../ide/media/erroricon.png "ErrorIcon")|Ошибка|  
-|![Символ исключения](../ide/media/vxexception_icon.png "vxException\_Icon")|Исключение|![Символ шаблона](../ide/media/vxtemplate_icon.png "vxTemplate\_Icon")|Шаблон|  
-|![Символ сопоставления](../ide/media/vxmap_icon.png "vxMap\_Icon")|Сопоставление|![Символ восклицательного знака при ошибке](../ide/media/vxerror_icon.png "vxError\_Icon")|Нет данных|  
-|![Символ пересылки типов](../ide/media/ob_type_forward.png "ob\_type\_forward")|Пересылка типов|||  
+|![Символ пространства имен](~/docs/ide/media/vxnamespace_icon.gif "vxNamespace\_Icon")|Пространство имен|![Символ объявления](~/docs/ide/media/vxmethod_icon.gif "vxMethod\_Icon")|Метод или функция|  
+|![Значок класса](~/docs/ide/media/vxclass_icon.gif "vxClass\_Icon")|Класс|![Символ оператора](~/docs/ide/media/vxoperator_icon.gif "vxOperator\_Icon")|Оператор|  
+|![Символ интерфейса без описания операций](~/docs/ide/media/vxinterface_icon.gif "vxInterface\_Icon")|Интерфейс|![Символ свойства](~/docs/ide/media/vxproperty_icon.gif "vxProperty\_Icon")|Свойство.|  
+|![Символ структуры](~/docs/ide/media/vxstruct_icon.gif "vxStruct\_Icon")|Структура|![Значок поля](~/docs/ide/media/vxfield_icon.gif "vxField\_Icon")|Поле или переменная|  
+|![Символ объединения](~/docs/ide/media/vxunion_icon.gif "vxUnion\_Icon")|Union|![Символ события](~/docs/ide/media/vxevent_icon.gif "vxEvent\_Icon")|Событие|  
+|![Символ перечисления](~/docs/ide/media/vxenum_icon.gif "vxEnum\_Icon")|Enum|![Значок константы](~/docs/ide/media/vxconstant_icon.gif "vxConstant\_Icon")|Константа|  
+|![Символ определения типа](~/docs/ide/media/vxtypedef_icon.gif "vxTypeDef\_Icon")|TypeDef|![Символ элемента перечисления](~/docs/ide/media/vxenumitem_icon.gif "vxEnumItem\_Icon")|Элемент перечисления|  
+|![Символ модуля Visual Studio](~/docs/ide/media/vxmodule_icon.gif "vxModule\_Icon")|Модуль|![Символ элемента сопоставления](~/docs/ide/media/vxmapitem_icon.gif "vxMapItem\_Icon")|Элемент сопоставления|  
+|![Символ метода расширения](~/docs/ide/media/extensionmethod.gif "ExtensionMethod")|Метод расширения|![Символ объявления](~/docs/ide/media/vxmethod_icon.gif "vxMethod\_Icon")|Внешнее объявление|  
+|![Символ делегата](~/docs/ide/media/vxdelegate_icon.gif "vxDelegate\_Icon")|Делегат|![Значок ошибки представления классов и обозревателя объектов](~/docs/ide/media/erroricon.gif "ErrorIcon")|Ошибка|  
+|![Символ исключения](~/docs/ide/media/vxexception_icon.gif "vxException\_Icon")|Исключение|![Символ шаблона](~/docs/ide/media/vxtemplate_icon.gif "vxTemplate\_Icon")|Шаблон|  
+|![Символ сопоставления](~/docs/ide/media/vxmap_icon.gif "vxMap\_Icon")|Сопоставление|![Символ восклицательного знака при ошибке](~/docs/ide/media/vxerror_icon.gif "vxError\_Icon")|Нет данных|  
+|![Символ пересылки типов](~/docs/ide/media/ob_type_forward.gif "ob\_type\_forward")|Пересылка типов|||  
   
 ## Сигнальные значки  
  Следующие сигнальные значки применимы ко всем перечисленным выше значкам и указывают на их доступность.  
@@ -54,11 +54,11 @@ caps.handback.revision: 20
 |Значок|Описание|  
 |------------|--------------|  
 |\<Сигнальный значок отсутствует\>|Public.  доступен из любого места в компоненте и из любого компонента, который содержит на него ссылку.|  
-|![Символ Protected](../ide/media/vxsignal_icon_key.png "vxSignal\_Icon\_Key")|Защищенный —  доступен из содержащего класса или типа или из класса или типа, которые являются производными от содержащего класса или типа.|  
-|![Символ Private](../ide/media/vxsignal_icon_lock.png "vxSignal\_Icon\_Lock")|Закрытый —  доступен только из содержащего класса или типа.|  
-|![Символ Sealed](../ide/media/vxsignal_icon_envelope.png "vxSignal\_Icon\_Envelope")|Запечатанным.|  
-|![Символ Friend&#47;Internal](../ide/media/vxsignal_icon_diamond.png "vxSignal\_Icon\_Diamond")|Дружественный и внутренний.  доступен только из проекта.|  
-|![Значок стрелки](../ide/media/vxsignal_icon_arrow.gif "vxSignal\_Icon\_Arrow")|Ярлык —  ярлык объекта.|  
+|![Символ Protected](~/docs/ide/media/vxsignal_icon_key.gif "vxSignal\_Icon\_Key")|Защищенный —  доступен из содержащего класса или типа или из класса или типа, которые являются производными от содержащего класса или типа.|  
+|![Символ Private](~/docs/ide/media/vxsignal_icon_lock.gif "vxSignal\_Icon\_Lock")|Закрытый —  доступен только из содержащего класса или типа.|  
+|![Символ Sealed](~/docs/ide/media/vxsignal_icon_envelope.gif "vxSignal\_Icon\_Envelope")|Запечатанным.|  
+|![Символ Friend&#47;Internal](~/docs/ide/media/vxsignal_icon_diamond.gif "vxSignal\_Icon\_Diamond")|Дружественный и внутренний.  доступен только из проекта.|  
+|![Значок стрелки](~/docs/ide/media/vxsignal_icon_arrow.gif "vxSignal\_Icon\_Arrow")|Ярлык —  ярлык объекта.|  
   
 ## См. также  
  [Просмотр структуры кода](../ide/viewing-the-structure-of-code.md)

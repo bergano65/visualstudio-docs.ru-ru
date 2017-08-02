@@ -59,7 +59,7 @@ ms.lasthandoff: 04/04/2017
 ###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> Элемент управления звуком  
  Действия **элемента управления звуком** на элементе управления звуком HTML5 правильно записываются и воспроизводятся.  
   
- ![Элемент управления звуком HTML5](../test/media/codedui_html5_audio.png "CodedUI_HTML5_Audio")  
+ ![Элемент управления звуком HTML5](~/docs/test/media/codedui_html5_audio.png "CodedUI_HTML5_Audio")  
   
 |Действие|Запись|Созданный код|  
 |------------|---------------|--------------------|  
@@ -102,7 +102,7 @@ string Volume
 ###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Элемент управления видео  
  Действия **элемента управления видео** на элементе управления видео HTML5 правильно записываются и воспроизводятся.  
   
- ![Элемент управления видео HTML5](../test/media/codedui_html5_video.png "CodedUI_HTML5_Video")  
+ ![Элемент управления видео HTML5](~/docs/test/media/codedui_html5_video.png "CodedUI_HTML5_Video")  
   
 |Действие|Запись|Созданный код|  
 |------------|---------------|--------------------|  
@@ -132,7 +132,7 @@ string VideoWidth
 ###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Slider  
  Действия **элемента управления Slider** на элементе управления Slider HTML5 правильно записываются и воспроизводятся.  
   
- ![Элемент управления Slider HTML5](../test/media/codedui_html5_slider.png "CodedUI_HTML5_Slider")  
+ ![Элемент управления Slider HTML5](~/docs/test/media/codedui_html5_slider.png "CodedUI_HTML5_Slider")  
   
 |Действие|Запись|Созданный код|  
 |------------|---------------|--------------------|  
@@ -152,7 +152,7 @@ string ValueAsNumber
 ###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> ProgressBar  
  **Элемент управления ProgreesBar:** с элементом управления ProgressBar нельзя взаимодействовать. Вы можете добавить утверждения о свойствах `Value` и `Max` этого элемента управления.  
   
- ![Элемент управления HTML5 ProgressBar](../test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")  
+ ![Элемент управления HTML5 ProgressBar](~/docs/test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")  
   
 ## <a name="see-also"></a>См. также  
  [Элементы HTML](http://go.microsoft.com/fwlink/?LinkID=232441)   

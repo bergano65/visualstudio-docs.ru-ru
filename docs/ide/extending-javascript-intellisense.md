@@ -29,7 +29,7 @@ manager: "ghogen"
   
  Языковая служба JavaScript предоставляет функции IntelliSense для библиотек JavaScript третьей стороны, добавленные в проект.  Для большинства библиотек завершение операторов предоставляется автоматически языковой службы.  На следующем рисунке показан пример завершения операторов:  
   
- ![Пример завершения операторов](../ide/media/js_intellisense_completion.png "js\_intellisense\_completion")  
+ ![Пример завершения операторов](~/docs/ide/media/js_intellisense_completion.png "js\_intellisense\_completion")  
   
  Если ваша библиотека содержит описания переменных, функций и объектов в стандартных теги комментария JavaScript \(\/\), это позволяет автоматически, по умолчанию, из функции расширяемости IntelliSense, которые предоставляют описательную информацию во всплывающем окне, отображается справа от элементов в списке завершения или после набора открывающей скобки в вызове функции.  Комментарии в всплывающем окне содержат описание элемента.  В следующем примере показан всплывающее окно для списка завершения.  
   
@@ -315,7 +315,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 5.  В appCode.js введите следующий код.  При вводе, вы увидите стандартные комментарии в расширении, показанном в качестве кратких сведений IntelliSense.  
   
-     ![Пример, демонстрирующий использование intellisense.annotate](../ide/media/js_intellisense_annotations.png "js\_intellisense\_annotations")  
+     ![Пример, демонстрирующий использование intellisense.annotate](~/docs/ide/media/js_intellisense_annotations.png "js\_intellisense\_annotations")  
   
 ###  <a name="Logging"></a> Отправлять сообщения в окне вывода  
  В следующей процедуре показано, как отправлять сообщения в окне вывода.  Можно отправлять сообщения для облегчения отладки расширения IntelliSense.  
@@ -488,7 +488,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 4.  В appCode.js введите следующий код.  При вводе, вы увидите, что Значок для пространства имен изменился "{}", как используются в C\-\#.  
   
-     ![Пример, демонстрирующий использование свойства glyph](../ide/media/js_intellisense_glyph_namespace.png "js\_intellisense\_glyph\_namespace")  
+     ![Пример, демонстрирующий использование свойства glyph](~/docs/ide/media/js_intellisense_glyph_namespace.png "js\_intellisense\_glyph\_namespace")  
   
 5.  В appCode.js введите следующий код.  При вводе, появится новый Значок перечисления для члена Enum1 и Значок классов для члена SomeClass1.  
   
@@ -530,7 +530,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 3.  В appCode.js введите следующий код.  Список идентификаторов отображается вместо IntelliSense, поскольку создаватьая программу\-оболочку функция никогда не вызывается, что означает, что функция `throttled` не возвращает никаких результатов.  
   
-     ![Пример переопределения результатов IntelliSense](../ide/media/js_intellisense_override.png "js\_intellisense\_override")  
+     ![Пример переопределения результатов IntelliSense](~/docs/ide/media/js_intellisense_override.png "js\_intellisense\_override")  
   
 4.  Добавьте следующий код в exampleLib.intellisense.js.  Это расширение изменяет функциональности времени разработки, чтобы IntelliSense отображается для создаватьой программу\-оболочку функции, как ожидалось.  
   
@@ -543,7 +543,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 5.  В appCode.js, запустите результаты, используя тот же код, введенной ранее.  Это время технология IntelliSense предоставляет требуемые сведения.  
   
-     ![Пример переопределения результатов IntelliSense](../ide/media/js_intellisense_override_fixed.png "js\_intellisense\_override\_fixed")  
+     ![Пример переопределения результатов IntelliSense](~/docs/ide/media/js_intellisense_override_fixed.png "js\_intellisense\_override\_fixed")  
   
 ## См. также  
  [IntelliSense для JavaScript](../ide/javascript-intellisense.md)   

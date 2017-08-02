@@ -75,7 +75,7 @@ ms.lasthandoff: 02/22/2017
 ####  <a name="a-namebkmkmodalerrormessagedialogsa-modal-error-message-dialogs"></a><a name="BKMK_ModalErrorMessageDialogs"></a>Модальные диалоговые окна сообщения  
  Ошибка модальное диалоговое окно используется для отображения сообщения об ошибке, требующее подтверждения или действия пользователя.  
   
- ![Модальное сообщение об ошибке](../../extensibility/ux-guidelines/media/0901-01_modalerrormessage.png "0901&01;_ModalErrorMessage")  
+ ![Модальное сообщение об ошибке](~/docs/extensibility/ux-guidelines/media/0901-01_modalerrormessage.png "0901&01;_ModalErrorMessage")  
   
  **Диалоговое окно ошибки модального оповещения пользователя Недопустимая строка подключения к базе данных**  
   
@@ -88,14 +88,14 @@ ms.lasthandoff: 02/22/2017
   
  Строка состояния также выделяется цветом добавьте визуальную привлекательность и функциональное значение путем взаимодействия различных изменений состояния интегрированной среды разработки, например когда IDE находится в режиме отладки.  
   
- ![Изменения цвета строки состояния интегрированной среды разработки](../../extensibility/ux-guidelines/media/0901-02_idestatusbar.png "0901&02;_IDEStatusBar")  
+ ![Изменения цвета строки состояния интегрированной среды разработки](~/docs/extensibility/ux-guidelines/media/0901-02_idestatusbar.png "0901&02;_IDEStatusBar")  
   
  **Цветов строки состояния интегрированной среды разработки**  
   
 ####  <a name="a-namebkmkembeddedinfobara-embedded-infobar"></a><a name="BKMK_EmbeddedInfobar"></a>Встроенная информационная панель  
  Информационная панель позволяет в верхней части окна документа или окно инструментов информирует пользователя о состоянии или условие. Он также может предложить команды, чтобы пользователь имел возможность принимать меры. Информационная панель — это стандартная оболочка элемент управления. Избегайте создания собственных, которой будет работать и отображаются согласована с другими пользователями в Интегрированной среде разработки. В разделе [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars) сведения о реализации и руководство по использованию.  
   
- ![Внедренный информационной панели](../../extensibility/ux-guidelines/media/0901-03_embeddedinfobar.png "0901&03;_EmbeddedInfobar")  
+ ![Внедренный информационной панели](~/docs/extensibility/ux-guidelines/media/0901-03_embeddedinfobar.png "0901&03;_EmbeddedInfobar")  
   
  **Информационная внедряются в окне документа, предупреждающее, что IDE находится в режиме журнала отладки, редактор не будет отвечать таким же образом, как и в стандартном режиме отладки.**  
   
@@ -114,21 +114,21 @@ ms.lasthandoff: 02/22/2017
   
  Окно уведомления не является в настоящее время расширяемым.  
   
- ![Окно уведомлений Visual Studio](../../extensibility/ux-guidelines/media/0901-06_vsnotificationswindow.png "0901&06;_VSNotificationsWindow")  
+ ![Окно уведомлений Visual Studio](~/docs/extensibility/ux-guidelines/media/0901-06_vsnotificationswindow.png "0901&06;_VSNotificationsWindow")  
   
  **Окно уведомлений Visual Studio средство**  
   
 ####  <a name="a-namebkmkerrorlista-error-list"></a><a name="BKMK_ErrorList"></a>Список ошибок  
  Уведомления в списке ошибок указывают ошибок и предупреждений, произошла во время компиляции и процесс сборки и позволяет пользователю переходить в коде, конкретный код ошибки.  
   
- ![Список ошибок](../../extensibility/ux-guidelines/media/0901-08_errorlist.png "0901&08;_ErrorList")  
+ ![Список ошибок](~/docs/extensibility/ux-guidelines/media/0901-08_errorlist.png "0901&08;_ErrorList")  
   
  **Список ошибок в Visual Studio**  
   
 ####  <a name="a-namebkmkembeddedstatusbarsa-embedded-status-bars"></a><a name="BKMK_EmbeddedStatusBars"></a>Внедренные состояния  
  Так как в строке состояния интегрированной среды разработки является динамическим, с области клиента контекст сопоставлен активное окно документа и сведения, обновление на контекст пользователя или системы ответов, трудно поддерживать непрерывное отображение информации или предоставьте состояния на асинхронных долгосрочных процессов. Например в строке состояния интегрированной среды разработки не подходит для уведомления о нескольких запусков или выбранные элементы немедленных результаты тестового запуска. Важно сохранить такие сведения о состоянии в контексте документа или инструмента окна, где пользователь делает выбор или запускает процесс.  
   
- ![Встроенная строка состояния](../../extensibility/ux-guidelines/media/0901-09_embeddedstatusbar.png "0901&09;_EmbeddedStatusBar")  
+ ![Встроенная строка состояния](~/docs/extensibility/ux-guidelines/media/0901-09_embeddedstatusbar.png "0901&09;_EmbeddedStatusBar")  
   
  **Встроенная строка состояния в Visual Studio**  
   
@@ -140,7 +140,7 @@ ms.lasthandoff: 02/22/2017
 ####  <a name="a-namebkmknotificationbubblesa-notification-bubbles"></a><a name="BKMK_NotificationBubbles"></a>Уведомления пузырьков  
  Может передаваться уведомления могут отображаться как информационное редактора или конструктора или как часть области уведомлений Windows. Пользователь понимает эти пузырьков как проблемы, которые может устранить позже, что является преимуществом для некритических уведомления. Может передаваться не подходят для важную информацию, пользователь должен решить сразу. При использовании уведомлений может передаваться в Visual Studio выполните [руководство Windows Desktop пузырьков уведомления](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742472\(v=vs.85\).aspx).  
   
- ![Всплывающее уведомление](../../extensibility/ux-guidelines/media/0901-07_notificationbubbles.png "0901&07;_NotificationBubbles")  
+ ![Всплывающее уведомление](~/docs/extensibility/ux-guidelines/media/0901-07_notificationbubbles.png "0901&07;_NotificationBubbles")  
   
  **Всплывающее уведомление в области уведомлений Windows, используемых для Visual Studio**  
   
@@ -191,14 +191,14 @@ ms.lasthandoff: 02/22/2017
 #### <a name="progress-bars"></a>Индикаторы выполнения  
   
 ##### <a name="indeterminate"></a>Не определено  
- ![Неопределенный индикатор](../../extensibility/ux-guidelines/media/0901-04_indeterminate.png "0901&04;_Indeterminate")  
+ ![Неопределенный индикатор](~/docs/extensibility/ux-guidelines/media/0901-04_indeterminate.png "0901&04;_Indeterminate")  
   
  **Неопределенный индикатор выполнения**  
   
  «Неопределенное» означает общий ход выполнения операции или процесс не может быть определено. Используйте полосы неопределенного хода выполнения для операции, требующие неограниченное количество времени или, доступ к неизвестного числа объектов. Используйте текстовое описание прилагаются происходящее. Используйте время ожидания для предоставления границы в операции на основе времени. Индикаторы выполнения неопределенное используйте анимацию, чтобы показать, что становится хода выполнения, но не предоставляют других сведений о. Не следует выбирать Неопределенный индикатор выполнения на основе только возможно отсутствие точность только.  
   
 ##### <a name="determinate"></a>Определенный  
- ![Определенный индикатор выполнения](../../extensibility/ux-guidelines/media/0901-05_determinate.png "0901&05;_Determinate")  
+ ![Определенный индикатор выполнения](~/docs/extensibility/ux-guidelines/media/0901-05_determinate.png "0901&05;_Determinate")  
   
  **Определенный индикатор выполнения**  
   
@@ -217,12 +217,12 @@ ms.lasthandoff: 02/22/2017
 #### <a name="other-progress-indicators"></a>Другие индикаторы выполнения  
   
 ##### <a name="ants-animated-horizontal-dots"></a>ANTS (анимированный горизонтальной точки)  
- ![Ход выполнения ants](../../extensibility/ux-guidelines/media/0903-01_ants.png "0903&01;_Ants")  
+ ![Ход выполнения ants](~/docs/extensibility/ux-guidelines/media/0903-01_ants.png "0903&01;_Ants")  
   
  «Ants,» анимированный горизонтальной точек, обеспечивает визуальное для процесса сервера неопределенный приема-передачи.  
   
 ##### <a name="spinner-progress-ring"></a>Счетчик (кольца хода выполнения)  
- ![Индикатор хода выполнения](../../extensibility/ux-guidelines/media/0903-02_spinner.png "0903&02;_Spinner")  
+ ![Индикатор хода выполнения](~/docs/extensibility/ux-guidelines/media/0903-02_spinner.png "0903&02;_Spinner")  
   
  Счетчик (также называется «кольца хода выполнения») имеет неопределенный индикатор, в основном используется относительно контекстные пользовательского интерфейса. Отображает счетчик в непосредственной близости от его связанные содержимого, например заголовка текстового категории, обмен сообщениями или элемента управления.  
   
@@ -234,69 +234,69 @@ ms.lasthandoff: 02/22/2017
 ##### <a name="status-bar"></a>Строка состояния  
  Строка состояния предоставляет приложению место отображения сообщений и полезную информацию для пользователя без прерывания работы пользователя. Как правило, отображается в нижней части окна, для отслеживания хода выполнения будет иметь состояние совет панели инструментов, которое включает сообщение о показатель прогресса в сочетании с индикатор.  
   
- ![Строка состояния с индикатором](../../extensibility/ux-guidelines/media/0903-03_statusbarprogressbar.png "0903&03;_StatusBarProgressBar")  
+ ![Строка состояния с индикатором](~/docs/extensibility/ux-guidelines/media/0903-03_statusbarprogressbar.png "0903&03;_StatusBarProgressBar")  
   
  **Строка состояния с индикатором выполнения**  
   
- ![Строка состояния с сообщениями](../../extensibility/ux-guidelines/media/0903-04_statusbarmessage.png "0903&04;_StatusBarMessage")  
+ ![Строка состояния с сообщениями](~/docs/extensibility/ux-guidelines/media/0903-04_statusbarmessage.png "0903&04;_StatusBarMessage")  
   
  **Строка состояния с текстовым описанием**  
   
 ##### <a name="infobar"></a>Информационная панель  
  Похоже на строке состояния информационная панель предоставляет контекстные уведомлений и обмена сообщениями, который также может быть связан с неопределенным индикаторы например индикатор выполнения или счетчика. Информационная панель не следует предоставлять индикатора прогресса или детальном уровне хода выполнения. В разделе [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).  
   
- ![Информационная панель с индикатором выполнения и сообщениями](../../extensibility/ux-guidelines/media/0903-05_infobar.png "0903&05;_InfoBar")  
+ ![Информационная панель с индикатором выполнения и сообщениями](~/docs/extensibility/ux-guidelines/media/0903-05_infobar.png "0903&05;_InfoBar")  
   
  **Информационная панель с индикатором выполнения и текстовое описание**  
   
- ![Информационная панель внутри окна](../../extensibility/ux-guidelines/media/0903-06_infobarinwindow.png "0903&06;_InfoBarInWindow")  
+ ![Информационная панель внутри окна](~/docs/extensibility/ux-guidelines/media/0903-06_infobarinwindow.png "0903&06;_InfoBarInWindow")  
   
  **Информационная панель внутри окна анализа кода**  
   
 ##### <a name="inline"></a>Встроенная функция  
  Встроенный индикатор хода выполнения может быть представлена любых типов загрузчик хода выполнения. Обычно индикатор выполнения объединяется с сообщениями, но это не является обязательным требованием.  
   
- ![Встроенный индикатор](../../extensibility/ux-guidelines/media/0903-07_inlinespinner.png "0903&07;_InlineSpinner")  
+ ![Встроенный индикатор](~/docs/extensibility/ux-guidelines/media/0903-07_inlinespinner.png "0903&07;_InlineSpinner")  
   
  **В сочетании с текстовое описание вращения**  
   
- ![Встроенные упакованные индикаторы выполнения](../../extensibility/ux-guidelines/media/0903-08_inlinestackedprogress.png "0903&08;_InlineStackedProgress")  
+ ![Встроенные упакованные индикаторы выполнения](~/docs/extensibility/ux-guidelines/media/0903-08_inlinestackedprogress.png "0903&08;_InlineStackedProgress")  
   
  **Гистограммы с накоплением прогресса**  
   
- ![Встроенная передача сообщений о ходе выполнения](../../extensibility/ux-guidelines/media/0903-09_inlinetext.png "0903&09;_InlineText")  
+ ![Встроенная передача сообщений о ходе выполнения](~/docs/extensibility/ux-guidelines/media/0903-09_inlinetext.png "0903&09;_InlineText")  
   
  **Server Explorer встроенный текст: обновление...**  
   
 ##### <a name="tool-windows"></a>Окна инструментов  
  Индикатор хода выполнения глобального представляется Неопределенный индикатор, расположенный непосредственно под панелью инструментов.  
   
- ![Неопределенный индикатор](../../extensibility/ux-guidelines/media/0903-23_globalindeterminate.png "0903&23;_GlobalIndeterminate")  
+ ![Неопределенный индикатор](~/docs/extensibility/ux-guidelines/media/0903-23_globalindeterminate.png "0903&23;_GlobalIndeterminate")  
   
  **Team Explorer глобальный Неопределенный индикатор**  
   
 ##### <a name="dialogs"></a>Диалоговые окна  
  Диалоговые окна могут содержать любые типы загрузчика хода выполнения. Индикаторы хода выполнения можно в паре с сообщениями также, как в сочетании с несколькими уровнями индикатор хода выполнения представляют детализированные и вложенные процессы.  
   
- ![Диалоговое окно с несколькими типами индикаторов выполнения](../../extensibility/ux-guidelines/media/0903-11_dialog.png "0903&11;_Dialog")  
+ ![Диалоговое окно с несколькими типами индикаторов выполнения](~/docs/extensibility/ux-guidelines/media/0903-11_dialog.png "0903&11;_Dialog")  
   
  **Диалоговое окно Visual Studio с помощью параллельных процессов и несколькими типами индикаторов выполнения**  
   
- ![Диалоговое окно с загрузчиком хода выполнения и сообщениями](../../extensibility/ux-guidelines/media/0903-12_dialog2.png "0903&12;_Dialog2")  
+ ![Диалоговое окно с загрузчиком хода выполнения и сообщениями](~/docs/extensibility/ux-guidelines/media/0903-12_dialog2.png "0903&12;_Dialog2")  
   
  **Visual Studio диалоговое окно с загрузчиком хода выполнения и обмена сообщениями встроенных команд**  
   
 ##### <a name="document-well"></a>Документ также  
  Документ также могут отображаться несколько типов загрузчик хода выполнения в сочетании с элементами управления.  
   
- ![Ход выполнения обмена сообщениями в документе также](../../extensibility/ux-guidelines/media/0903-13_documentwell.png "0903&13;_DocumentWell")  
+ ![Ход выполнения обмена сообщениями в документе также](~/docs/extensibility/ux-guidelines/media/0903-13_documentwell.png "0903&13;_DocumentWell")  
   
  **Неопределенный индикатор под панелью инструментов**  
   
 ##### <a name="output-window"></a>Окно выходных данных  
  В окне вывода подходит для обработки ход процесса и состояние текущих выполняется через встроенные текстовых сообщений. Следует использовать в строке состояния и любые выходные данные окна хода выполнения.  
   
- ![Ход выполнения обмена сообщениями в окне вывода](../../extensibility/ux-guidelines/media/0903-14_outputwindow.png "0903&14;_OutputWindow")  
+ ![Ход выполнения обмена сообщениями в окне вывода](~/docs/extensibility/ux-guidelines/media/0903-14_outputwindow.png "0903&14;_OutputWindow")  
   
  **Окно вывода со статусом непрерывный процесс и ожидания системы обмена сообщениями**  
   
@@ -305,7 +305,7 @@ ms.lasthandoff: 02/22/2017
 ### <a name="overview"></a>Обзор  
  Infobars предоставляют пользователю индикатора близко к точке их внимания и с помощью общей информационной панели управления гарантирует согласованность внешнего вида и взаимодействия.  
   
- ![Информационная панель](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904&01;_Infobar")  
+ ![Информационная панель](~/docs/extensibility/ux-guidelines/media/0904-01_infobar.png "0904&01;_Infobar")  
   
  **Infobars в Visual Studio**  
   
@@ -377,7 +377,7 @@ public InfoBarModel(string text, IEnumerable<IVsInfoBarActionItem> actionItems, 
   
  Ниже приведен пример создания InfoBarModel текст гиперссылки, значки и кнопки действия.  
   
- ![Информационная панель с гиперссылкой](../../extensibility/ux-guidelines/media/0904-02_infobarhyperlink.png "0904&02;_InfobarHyperlink")  
+ ![Информационная панель с гиперссылкой](~/docs/extensibility/ux-guidelines/media/0904-02_infobarhyperlink.png "0904&02;_InfobarHyperlink")  
   
 ```  
 var infoBar = new InfoBarModel(  
@@ -495,31 +495,31 @@ public interface IVsInfoBarUIEvents
 ### <a name="field-validation"></a>Проверка полей  
  Проверка формы и поле состоит из трех компонентов: элемент управления, значок и подсказку. Хотя несколько типов элементов управления можно использовать, текстовое поле будет использоваться в качестве примера.  
   
- ![Поле проверки (пустое)](../../extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905&01;_FieldValidation")  
+ ![Поле проверки (пустое)](~/docs/extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905&01;_FieldValidation")  
   
  Если поле является обязательным, должно быть водяного знака текст о том, ** \<необходимых настроек** и фон поля должен быть индикатор желтый (VSColor: `Environment.ControlEditRequiredBackground`) и серый цвет переднего плана (VSColor: `Environment.ControlEditRequiredHintText`):  
   
- ![Поле проверки с меткой «Required»](../../extensibility/ux-guidelines/media/0905-02_fieldvalidationrequired.png "0905&02;_FieldValidationRequired")  
+ ![Поле проверки с меткой «Required»](~/docs/extensibility/ux-guidelines/media/0905-02_fieldvalidationrequired.png "0905&02;_FieldValidationRequired")  
   
  Программа может определить, что элемент управления находится в состоянии *недопустимое содержимое, введенное* при перемещении фокуса на другой элемент управления или когда пользователь нажимает кнопку «ОК» фиксации или когда пользователь сохраняет документ или форму.  
   
  После определения недопустимое состояние содержимого внутри элемента управления или просто рядом с ним появится значок. При наведении курсора мыши, значок или элементом управления, появится подсказка с описанием ошибки. Кроме того границы 1 пиксель появятся вокруг элемента управления, который создает недопустимое состояние.  
   
- ![Характеристика схемы проверки полей](../../extensibility/ux-guidelines/media/0905-03_layoutspecs.png "0905&03;_LayoutSpecs")  
+ ![Характеристика схемы проверки полей](~/docs/extensibility/ux-guidelines/media/0905-03_layoutspecs.png "0905&03;_LayoutSpecs")  
   
  **Характеристика схемы проверки полей**  
   
 #### <a name="acceptable-variations-for-icon-location"></a>Допустимые варианты расположение значка  
  Существует бесчисленное множество уникальных случаев, в которых пользователи должны быть в курсе ошибки проверки. Учитывая типа элемента управления и настройки пользовательского интерфейса выберите расположение значков, в зависимости от ситуации.  
   
- ![Допустимые расположения расположение значка](../../extensibility/ux-guidelines/media/0905-04_iconlocation.png "0905&04;_IconLocation")  
+ ![Допустимые расположения расположение значка](~/docs/extensibility/ux-guidelines/media/0905-04_iconlocation.png "0905&04;_IconLocation")  
   
  **Допустимые варианты расположения значок проверки полей**  
   
 #### <a name="validation-requiring-a-round-trip-to-a-server-or-network-connection"></a>Проверка необходимости кругового пути для подключения к серверу или сети  
  В некоторых случаях требуется проверить содержимое кругового пути к серверу и необходимо Показать ход выполнения пользователя, проверки и состояния ошибки. Ниже на рисунке показан пример этого обращения и рекомендуемые пользовательского интерфейса.  
   
- ![Проверка, включающая кругового пути к серверу](../../extensibility/ux-guidelines/media/0905-05_roundtrip.png "0905&05;_RoundTrip")  
+ ![Проверка, включающая кругового пути к серверу](~/docs/extensibility/ux-guidelines/media/0905-05_roundtrip.png "0905&05;_RoundTrip")  
   
  **Проверка, включающая кругового пути к серверу**  
   
@@ -528,13 +528,13 @@ public interface IVsInfoBarUIEvents
 #### <a name="in-place-warning-text"></a>Текст предупреждения на месте  
  Если места, доступные для помещения сообщения об ошибке близко к элемента управления в состоянии ошибки, предпочтительнее с помощью подсказки отдельно.  
   
- ![Предупреждение на месте](../../extensibility/ux-guidelines/media/0905-06_inplacewarning.png "0905&06;_InPlaceWarning")  
+ ![Предупреждение на месте](~/docs/extensibility/ux-guidelines/media/0905-06_inplacewarning.png "0905&06;_InPlaceWarning")  
   
  **Текст предупреждения на месте**  
   
 #### <a name="watermarks"></a>Водяные знаки  
  Иногда весь элемент управления или окно находится в состоянии ошибки. В этом случае используйте водяного знака для указания ошибки.  
   
- ![Водяной знак](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905&07;_Watermark")  
+ ![Водяной знак](~/docs/extensibility/ux-guidelines/media/0905-07_watermark.png "0905&07;_Watermark")  
   
  **Проверка полей водяной знак**

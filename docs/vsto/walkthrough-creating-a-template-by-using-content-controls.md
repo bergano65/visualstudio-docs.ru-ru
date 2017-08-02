@@ -87,19 +87,19 @@ caps.handback.revision: 42
     > [!NOTE]  
     >  Если вкладка **Разработчик** не отображается, сделайте ее видимой.  Дополнительные сведения см. в разделе [Практическое руководство. Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6.  В группе **Элементы управления** нажмите кнопку **Текст** ![PlainTextContentControl](../vsto/media/plaintextcontrol.png "PlainTextContentControl"), чтобы добавить <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> в первую ячейку.  
+6.  В группе **Элементы управления** нажмите кнопку **Текст** ![PlainTextContentControl](~/docs/vsto/media/plaintextcontrol.gif "PlainTextContentControl"), чтобы добавить <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> в первую ячейку.  
   
 7.  Щелкните вторую ячейку во втором столбце \(рядом с ячейкой **Дата приема на работу**\).  
   
-8.  В группе **Элементы управления** нажмите кнопку **Средство выбора даты** ![DatePickerContentControl](../vsto/media/datepicker.png "DatePickerContentControl"), чтобы добавить <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> во вторую ячейку.  
+8.  В группе **Элементы управления** нажмите кнопку **Средство выбора даты** ![DatePickerContentControl](~/docs/vsto/media/datepicker.gif "DatePickerContentControl"), чтобы добавить <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> во вторую ячейку.  
   
 9. Щелкните третью ячейку во втором столбце \(рядом с ячейкой **Должность**\).  
   
-10. В группе **Элементы управления** нажмите кнопку **Поле со списком** ![ComboBoxContentControl](../vsto/media/combobox.png "ComboBoxContentControl"), чтобы добавить <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> в третью ячейку.  
+10. В группе **Элементы управления** нажмите кнопку **Поле со списком** ![ComboBoxContentControl](~/docs/vsto/media/combobox.gif "ComboBoxContentControl"), чтобы добавить <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> в третью ячейку.  
   
 11. Щелкните последнюю ячейку во втором столбце \(рядом с ячейкой **Изображение**\).  
   
-12. В группе **Элементы управления** нажмите кнопку **Элемент управления содержимым рисунка** ![PictureContentControl](../vsto/media/pictcontentcontrol.png "PictureContentControl"), чтобы добавить <xref:Microsoft.Office.Tools.Word.PictureContentControl> в последнюю ячейку.  
+12. В группе **Элементы управления** нажмите кнопку **Элемент управления содержимым рисунка** ![PictureContentControl](~/docs/vsto/media/pictcontentcontrol.gif "PictureContentControl"), чтобы добавить <xref:Microsoft.Office.Tools.Word.PictureContentControl> в последнюю ячейку.  
   
 ## Создание таблицы отзывов клиентов  
  Создайте таблицу, содержащую три различных типа элементов управления содержимым, в которой пользователь может ввести отзывы клиентов.  
@@ -124,15 +124,15 @@ caps.handback.revision: 42
   
 6.  На ленте перейдите на вкладку **Разработчик**.  
   
-7.  В группе **Элементы управления** нажмите кнопку **Текст** ![PlainTextContentControl](../vsto/media/plaintextcontrol.png "PlainTextContentControl"), чтобы добавить <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> в первую ячейку.  
+7.  В группе **Элементы управления** нажмите кнопку **Текст** ![PlainTextContentControl](~/docs/vsto/media/plaintextcontrol.gif "PlainTextContentControl"), чтобы добавить <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> в первую ячейку.  
   
 8.  Щелкните вторую ячейку во втором столбце \(рядом с ячейкой **Степень удовлетворенности**\).  
   
-9. В группе **Элементы управления** нажмите кнопку **Раскрывающийся список** ![DropDownListContentControl](../vsto/media/dropdownlist.png "DropDownListContentControl"), чтобы добавить <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> во вторую ячейку.  
+9. В группе **Элементы управления** нажмите кнопку **Раскрывающийся список** ![DropDownListContentControl](~/docs/vsto/media/dropdownlist.gif "DropDownListContentControl"), чтобы добавить <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> во вторую ячейку.  
   
 10. Щелкните последнюю ячейку во втором столбце \(рядом с ячейкой **Комментарии**\).  
   
-11. В группе **Элементы управления** нажмите кнопку **Форматированный текст** ![RichTextContentControl](../vsto/media/richtextcontrol.png "RichTextContentControl"), чтобы добавить <xref:Microsoft.Office.Tools.Word.RichTextContentControl> в последнюю ячейку.  
+11. В группе **Элементы управления** нажмите кнопку **Форматированный текст** ![RichTextContentControl](~/docs/vsto/media/richtextcontrol.gif "RichTextContentControl"), чтобы добавить <xref:Microsoft.Office.Tools.Word.RichTextContentControl> в последнюю ячейку.  
   
 ## Заполнение поля со списком и раскрывающегося списка программным способом  
  Элементы управления содержимым можно инициализировать во время разработки с помощью окна **Свойства** в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  Также их можно инициализировать во время выполнения, что позволяет динамически задавать их начальное состояние.  В рамках этого пошагового руководства используйте код для заполнения записей <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> и <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> во время выполнения, чтобы увидеть, как эти объекты работают.  

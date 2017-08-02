@@ -30,7 +30,7 @@ caps.handback.revision: 38
   
  В приведенном ниже примере кода показано добавление элементов управления с привязкой к данным в проекты уровня документа с помощью конструктора.  Пример добавления элементов управления с привязкой к данным в проекты уровня приложения во время выполнения см. в разделе [Пошаговое руководство. Сложная привязка данных в проекте надстройки VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md).  
   
- ![ссылка на видео](../vsto/media/playvideo.png "ссылка на видео") Для просмотра связанных демонстрационных видеороликов перейдите по ссылкам [How Do I: Transfer Data Into an Excel Worksheet?](http://go.microsoft.com/fwlink/?LinkID=130277) и [How Do I: Consume Database Data in Excel?](http://go.microsoft.com/fwlink/?LinkID=130287).  
+ ![ссылка на видео](~/docs/data-tools/media/playvideo.gif "ссылка на видео") Для просмотра связанных демонстрационных видеороликов перейдите по ссылкам [How Do I: Transfer Data Into an Excel Worksheet?](http://go.microsoft.com/fwlink/?LinkID=130277) и [How Do I: Consume Database Data in Excel?](http://go.microsoft.com/fwlink/?LinkID=130287).  
   
 ## Добавление элемента управления с привязкой к данным на лист во время разработки  
   

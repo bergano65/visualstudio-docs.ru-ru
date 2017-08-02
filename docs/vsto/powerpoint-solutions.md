@@ -33,7 +33,7 @@ caps.handback.revision: 41
   
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]  
   
- ![ссылка на видео](../vsto/media/playvideo.png "ссылка на видео") Демонстрационные видеоматериалы см. в разделе [Практическое руководство. Создание надстройки для Microsoft PowerPoint](http://go.microsoft.com/fwlink/?LinkId=132767).  
+ ![ссылка на видео](~/docs/data-tools/media/playvideo.gif "ссылка на видео") Демонстрационные видеоматериалы см. в разделе [Практическое руководство. Создание надстройки для Microsoft PowerPoint](http://go.microsoft.com/fwlink/?LinkId=132767).  
   
 ## Автоматизация PowerPoint с помощью объектной модели PowerPoint  
  Объектная модель Word предоставляет различные типы, которые можно использовать для автоматизации Word. С их помощью можно написать код для выполнения распространенных задач:  

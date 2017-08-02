@@ -23,7 +23,7 @@ caps.handback.revision: 10
 # Отладка элемента управления WebView
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Применимо к Windows и к Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Применимо к Windows и к Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Для проверки и отладки элементов управления `WebView` в приложении среды выполнения Windows вы можете настроить Visual Studio на вложение отладчика скрипта при запуске приложения.  Начиная с обновления 2 для Visual Studio 2013, у вас появилось два способа взаимодействия с элементами управления `WebView` с помощью отладчика.  
   
@@ -78,7 +78,7 @@ caps.handback.revision: 10
   
 5.  В окне консоли выберите веб\-страницу или `iFrame`, отображаемые элементом управления `WebView` в списке **Цель**.  
   
-     ![Выбор назначения в окне консоли JavaScript](../debugger/media/js_console_target.png "JS\_Console\_Target")  
+     ![Выбор назначения в окне консоли JavaScript](~/docs/debugger/media/js_console_target.png "JS\_Console\_Target")  
   
     > [!NOTE]
     >  С помощью консоли вы можете одновременно взаимодействовать с отдельным `WebView`, `iFrame`, контрактом отправки данных или рабочим веб\-процессом.  Каждый элемент требует отдельного экземпляра узла веб\-платформы \(WWAHost.exe\).  Одновременно можно взаимодействовать с одним узлом.  

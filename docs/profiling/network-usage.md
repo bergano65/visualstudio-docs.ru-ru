@@ -58,7 +58,7 @@ ms.lasthandoff: 05/13/2017
   
  Окно отчета должно выглядеть следующим образом:  
   
- ![Окно средства "Сеть"](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
+ ![Окно средства "Сеть"](~/docs/profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyzing-data"></a>Анализ данных  
  Вы можете проанализировать записанный HTTP-трафик во время выполнения приложения и даже после того, как приложение будет закрыто, выбрав любую из сетевых операций, отображенных в представлении сводки.  

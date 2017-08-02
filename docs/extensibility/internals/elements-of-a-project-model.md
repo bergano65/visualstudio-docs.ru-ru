@@ -35,7 +35,7 @@ caps.handback.revision: 18
   
  На следующей иллюстрации показаны основные интерфейсы, службы и объекты, составляющие типичная реализация проекта.  Можно использовать вспомогательный объект приложения, HierUtil7, чтобы создать основные объекты и другой котельный лист программирования.  Дополнительные сведения о вспомогательном приложении приложения HierUtil7 см. в разделе [Not in Build: Using HierUtil7 Project Classes to Implement a Project Type \(C\+\+\)](http://msdn.microsoft.com/ru-ru/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
- ![График модели проекта Visual Studio](../../extensibility/internals/media/vsprojectmodel.png "vsProjectModel")  
+ ![График модели проекта Visual Studio](~/docs/extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
 Модель проекта  
   
  Дополнительные сведения об интерфейсах и службах, перечисленных в предыдущей диаграмме и других дополнительных интерфейсов, включенных в схеме, см. [Основные компоненты модели проекта](../../extensibility/internals/project-model-core-components.md).  

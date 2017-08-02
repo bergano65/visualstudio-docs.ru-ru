@@ -29,7 +29,7 @@ caps.handback.revision: 29
   
  Чтобы удалить сборку настройки, можно использовать один из методов RemoveCustomization, предоставленных средой [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  Выбор используемого метода зависит от необходимости удаления настройки во время выполнения \(т.е. путем выполнения кода в настройке с открытым документом Word или книгой Excel\) или настройки из закрытого документа или документа, находящегося на сервере, на котором не установлен пакет Microsoft Office.  
   
- ![ссылка на видео](../vsto/media/playvideo.png "ссылка на видео") Для просмотра связанных демонстрационных видеороликов перейдите по ссылке [How Do I: Attach or Detach a VSTO Assembly from a Word Document?](http://go.microsoft.com/fwlink/?LinkId=136782).  
+ ![ссылка на видео](~/docs/data-tools/media/playvideo.gif "ссылка на видео") Для просмотра связанных демонстрационных видеороликов перейдите по ссылке [How Do I: Attach or Detach a VSTO Assembly from a Word Document?](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
 ### Удаление сборки настройки во время выполнения  
   

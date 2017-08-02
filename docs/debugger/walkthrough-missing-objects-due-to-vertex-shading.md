@@ -36,7 +36,7 @@ manager: "ghogen"
   
  В этом сценарии при запуске приложения для тестирования фон отрисовывается так, как ожидалось, однако один из объектов не отображается. С помощью диагностики графики можно записать данные о проблеме в журнал графики, чтобы можно было выполнить отладку приложения. Проблема в приложении выглядит следующим образом:  
   
- ![Объект не виден.](../debugger/media/gfx_diag_demo_missing_object_shader_problem.png "gfx\_diag\_demo\_missing\_object\_shader\_problem")  
+ ![Объект не виден.](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_problem.png "gfx\_diag\_demo\_missing\_object\_shader\_problem")  
   
 ## Исследование  
  С помощью средств диагностики графики можно загрузить файл журнала графики для проверки кадров, захваченных в ходе теста.  
@@ -68,7 +68,7 @@ manager: "ghogen"
   
 4.  Остановитесь, когда достигнете вызова Draw, соответствующего отсутствующему объекту. В этом сценарии в окне **Этапы графического конвейера** видно, что геометрия была передана в GPU \(о чем говорит наличие эскиза сборщика входных данных\), однако она не отображается в целевом объекте отрисовки, так как произошла ошибка на этапе шейдера вершин \(об этом говорит эскиз шейдера вершин\).  
   
-     ![Событие DrawIndexed и его результат в конвейере](../debugger/media/gfx_diag_demo_missing_object_shader_step_2.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_2")  
+     ![Событие DrawIndexed и его результат в конвейере](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_2.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_2")  
   
  Убедившись, что приложение передало вызов Draw для геометрии отсутствующего объекта, и обнаружив, что проблема возникает на этапе шейдера вершин, можно использовать отладчик HLSL для проверки шейдера вершин и узнать, что случилось с геометрией объекта. Отладчик HLSL можно использовать для проверки состояния переменных HLSL при выполнении, пошагового выполнения кода HLSL и указания точек останова для помощи в диагностике проблемы.  
   
@@ -80,19 +80,19 @@ manager: "ghogen"
   
 3.  При первом изменении `output` член `worldPos` записывается.  
   
-     ![Значение "output.worldPos" оказывается допустимым](../debugger/media/gfx_diag_demo_missing_object_shader_step_4.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_4")  
+     ![Значение "output.worldPos" оказывается допустимым](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_4.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_4")  
   
      Так как его значение кажется разумным, пошаговое выполнение кода продолжается до следующей строки, которая изменяет `output`.  
   
 4.  При следующем изменении `output` член `pos` записывается.  
   
-     ![Значение "output.pos" было обнулено](../debugger/media/gfx_diag_demo_missing_object_shader_step_5.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_5")  
+     ![Значение "output.pos" было обнулено](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_5.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_5")  
   
      На этот раз значение члена `pos` — все нули, и это кажется подозрительным. Далее нужно определить, как случилось так, что `output.pos` имеет все нули в качестве значения.  
   
 5.  Можно заметить, что `output.pos` получает значение из переменной, которая называется `temp`. В предыдущей строке видно, что значение `temp` является результатом умножения его предыдущего значение на константу, которая называется `projection`. Кажется, что подозрительное значение `temp` является результатом такого умножения. При наведении указателя мыши на `projection` можно заметить, что его значением также являются все нули.  
   
-     ![Матрица проекций содержит недопустимое преобразование](../debugger/media/gfx_diag_demo_missing_object_shader_step_6.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_6")  
+     ![Матрица проекций содержит недопустимое преобразование](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_6.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_6")  
   
      В этом сценарии анализ показывает, что подозрительное значение `temp`, скорее всего, вызвано его умножением на `projection`, и так как `projection` — константа, в которой должна находиться матрица проекции, становится понятно, что она не должна содержать все нули.  
   
@@ -104,7 +104,7 @@ manager: "ghogen"
   
 2.  Перейдите в стек вызовов в исходном коде приложения. В окне **Стек вызовов событий графики** выберите самый верхний вызов, чтобы узнать, заполняется ли там буфер констант. Если нет, продолжайте перемещаться вверх по стеку вызовов, пока не найдете место, где он заполняется. В этом сценарии обнаружено, что буфер констант заполняется \(с помощью Direct3D API `UpdateSubresource`\) выше по стеку вызовов в функции с именем `MarbleMaze::Render` и что его значение берется из объекта буфера констант с именем `m_marbleConstantBufferData`:  
   
-     ![Код, устанавливающий постоянный буфер объекта](../debugger/media/gfx_diag_demo_missing_object_shader_step_7.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_7")  
+     ![Код, устанавливающий постоянный буфер объекта](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_7.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_7")  
   
     > [!TIP]
     >  При одновременной отладке приложения можно установить точку останова в этом месте, и она будет достигнута при отрисовке следующего кадра. Это позволяет проверить члены `m_marbleConstantBufferData`, чтобы убедиться, что значение члена `projection` равно всем нулям при заполнении буфера констант.  
@@ -119,12 +119,12 @@ manager: "ghogen"
   
  После нахождения расположения, где задается значение `m_marbleConstantBufferData.projection`, можно изучить окружающий исходный код для определения источника неправильного значения. В этом сценарии обнаружено, что в качестве значения `m_marbleConstantBufferData.projection` задана локальная переменная с именем `projection` до инициализации значения, указанного кодом `m_camera->GetProjection(&projection);` на следующей строке.  
   
- ![Проекция шарика задается до инициализации](../debugger/media/gfx_diag_demo_missing_object_shader_step_9.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_9")  
+ ![Проекция шарика задается до инициализации](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_9.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_9")  
   
  Чтобы устранить проблему, переместите строку кода, которая устанавливает значение `m_marbleConstantBufferData.projection` после строки, которая инициализирует значение локальной переменной `projection`.  
   
- ![Исправленный исходный код C&#43;&#43;](../debugger/media/gfx_diag_demo_missing_object_shader_step_10.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_10")  
+ ![Исправленный исходный код C&#43;&#43;](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_10.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_10")  
   
  Внеся исправления в код, можно заново собрать его и еще раз запустить приложение, чтобы убедиться, что проблема с отрисовкой решена.  
   
- ![Объект появился.](../debugger/media/gfx_diag_demo_missing_object_shader_resolution.png "gfx\_diag\_demo\_missing\_object\_shader\_resolution")
+ ![Объект появился.](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_resolution.png "gfx\_diag\_demo\_missing\_object\_shader\_resolution")

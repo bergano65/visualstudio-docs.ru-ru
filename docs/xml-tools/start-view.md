@@ -33,7 +33,7 @@ caps.handback.revision: 3
 ## Панель инструментов  
  Можно перемещаться между начальным представлением, [представлением модели содержимого](../xml-tools/content-model-view.md) и [представлением графика](../xml-tools/graph-view.md) на панели инструментов конструктора XML\-схем.  
   
- ![Панель инструментов конструктора схемы XML.](../xml-tools/media/xsdstartviewtoolbar.gif "XSDStartViewToolbar")  
+ ![Панель инструментов конструктора схемы XML.](~/docs/xml-tools/media/xsdstartviewtoolbar.gif "XSDStartViewToolbar")  
   
  Следующие кнопки панели инструментов конструктора XSD включены, если активно начальное представление.  
   

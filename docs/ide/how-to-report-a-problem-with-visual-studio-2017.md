@@ -34,7 +34,7 @@ ms.lasthandoff: 03/07/2017
   1. Нажмите кнопку **Вход**, которая находится в левой части средства, как показано на следующем снимке экрана.
   2. Следуйте инструкциям на экране, чтобы выполнить вход.
 
-  ![Вход для сообщения о проблеме](../ide/media/vs2017-report-a-problem-sign-in.png "Вход для сообщения о проблеме")
+  ![Вход для сообщения о проблеме](~/docs/ide/media/vs2017-report-a-problem-sign-in.png "Вход для сообщения о проблеме")
 
 
 ## <a name="search-and-vote-for-similar-problems"></a>Найдите подобные проблемы и проголосуйте за них  
@@ -43,7 +43,7 @@ ms.lasthandoff: 03/07/2017
 1.  Найдите свою проблему и посмотрите, сообщили ли о ней другие пользователи.
 2.  Если о ней уже кто-то сообщил, проголосуйте за нее, чтобы дать нам знать.  
 
-  ![VS15-FeedbackTool-SearchForSimilarReportedProblems](../ide/media/vs2017-report-a-problem-search-and-vote.png "Поиск подобных проблем и голосование за них")
+  ![VS15-FeedbackTool-SearchForSimilarReportedProblems](~/docs/ide/media/vs2017-report-a-problem-search-and-vote.png "Поиск подобных проблем и голосование за них")
 
 
 ## <a name="report-a-new-problem"></a>Сообщите о новой проблеме

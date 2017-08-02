@@ -84,11 +84,11 @@ ms.lasthandoff: 05/13/2017
   
 1.  Создайте проект закодированного теста ИП для приложения Магазина Windows.  
   
-     ![Новый проект закодированного теста пользовательского интерфейса &#40;приложения для Магазина Windows&#41;](../test/media/cuit_windowsstore_newproject.png "CUIT_WindowsStore_NewProject")  
+     ![Новый проект закодированного теста пользовательского интерфейса &#40;приложения для Магазина Windows&#41;](~/docs/test/media/cuit_windowsstore_newproject.png "CUIT_WindowsStore_NewProject")  
   
 2.  С помощью перекрестия включите режим редактирования карты ИП.  
   
-     ![Выбор изменения карты пользовательского интерфейса или добавления утверждений](../test/media/cuit_windowsstoreapp_createproject_gencodedialog.png "CUIT_WindowsStoreApp_CreateProject_GenCodeDialog")  
+     ![Выбор изменения карты пользовательского интерфейса или добавления утверждений](~/docs/test/media/cuit_windowsstoreapp_createproject_gencodedialog.png "CUIT_WindowsStoreApp_CreateProject_GenCodeDialog")  
   
 3.  Выберите плитку приложения с помощью перекрестья в построителе закодированных тестов ИП, щелкните правой кнопкой свойство **AutomationId** и выберите команду **Скопировать значение в буфер обмена**. Это значение будет использоваться позднее для записи действия, необходимого для запуска тестируемого приложения.  
   
@@ -116,7 +116,7 @@ ms.lasthandoff: 05/13/2017
   
 9. Добавьте и создайте код для утверждения.  
   
-     ![Формирование кода для утверждения текстового поля](../test/media/cuit_windowsstoreapp_textbox_generate_assertion.png "CUIT_WindowsStoreApp_Textbox_Generate_Assertion")  
+     ![Формирование кода для утверждения текстового поля](~/docs/test/media/cuit_windowsstoreapp_textbox_generate_assertion.png "CUIT_WindowsStoreApp_Textbox_Generate_Assertion")  
   
 10. **Visual C#**  
   

@@ -23,7 +23,7 @@ caps.handback.revision: 13
 # Отладка примера кода HTML, CSS и JavaScript
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Применимо к Windows и к Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Применимо к Windows и к Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Приведенный в этом разделе код — это файл примера для раздела [Краткое руководство по отладке HTML и CSS](../debugger/quickstart-debug-html-and-css.md).  Ошибки, намеренно допущенные в кратком руководстве, исправлены в этой версии кода.  
   

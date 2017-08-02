@@ -66,7 +66,7 @@ ms.lasthandoff: 03/22/2017
 * Выберите Microsoft.VSSDK.BuildTools (последняя версия).
 * Нажмите клавишу **обновление**.
 
-![Средства построения VSSDK](media/vssdk-build-tools.png)
+![Средства построения VSSDK](~/docs/extensibility/media/vssdk-build-tools.png)
 
 ## <a name="make-changes-to-the-vsix-extension-manifest"></a>Внесите изменения в манифест VSIX расширения
 
@@ -103,18 +103,18 @@ ms.lasthandoff: 03/22/2017
 * Откройте файл source.extension.vsixmanifest [Design].
 * Выберите **необходимые компоненты** и нажмите **New** кнопки.
 
-  ![Конструктор манифеста VSIX](media/vsix-manifest-designer.png)
+  ![Конструктор манифеста VSIX](~/docs/extensibility/media/vsix-manifest-designer.png)
 
 * **Добавление новых необходимых компонентов** окно.
 
-  ![Добавление необходимых компонентов vsix](media/add-vsix-prerequisite.png)
+  ![Добавление необходимых компонентов vsix](~/docs/extensibility/media/add-vsix-prerequisite.png)
 
 * Щелкните раскрывающийся список для **имя** и выберите нужное готовности к установке.
 * Обновите версию, если это требуется.
 
   >Примечание: Поле версии будет предварительно заполнен версии установленных компонента, с диапазоном охват до (но не включая) следующей основной версии компонента.
 
-  ![Добавление необходимых компонентов roslyn](media/add-roslyn-prerequisite.png)
+  ![Добавление необходимых компонентов roslyn](~/docs/extensibility/media/add-roslyn-prerequisite.png)
 
 * Press **OK**.
 
@@ -133,7 +133,7 @@ ms.lasthandoff: 03/22/2017
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe
 ```
 
-![Запуск внешней программы](media/start-external-program.png)
+![Запуск внешней программы](~/docs/extensibility/media/start-external-program.png)
 
 >**Примечание:** отладки действие при запуске обычно хранится в. csproj.user файла. Этот файл обычно включается в файл .gitignore и таким образом, не сохраняется обычно с другими файлами проекта при фиксации в систему управления версиями. Таким образом Если были извлечены из системы управления версиями новые решения весьма вероятно, проект будет содержать значения не задать для запуска действия. Будет иметь новые проекты VSIX, созданные с помощью Visual Studio 2017 г. csproj.user файл, созданный с помощью значений по умолчанию, указывает на текущий каталог установки Visual Studio. Однако при переходе с расширением VSIX v2, вероятнее всего,. csproj.user файл будет содержать ссылки на каталог установки предыдущей версии Visual Studio. Для параметра **отладки** > **действие при запуске** позволит правильно экспериментальный экземпляр Visual Studio для запуска при попытке выполнить отладку расширения.
 
@@ -158,7 +158,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\deven
 
 * В Visual Studio 2017 г.
 
-![Установщик VSIX в Visual Studio 2017 г.](media/vsixinstaller-vs-2017.png)
+![Установщик VSIX в Visual Studio 2017 г.](~/docs/extensibility/media/vsixinstaller-vs-2017.png)
 
 * Необязательно: Проверьте в предыдущих версиях Visual Studio.
   * Подтверждает обратной совместимости.
@@ -169,7 +169,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\deven
 
 Если недавно открыть Visual Studio, может появиться диалоговое окно следующим образом:
 
-![VS запущенных процессов](media/vs-running-processes.png)
+![VS запущенных процессов](~/docs/extensibility/media/vs-running-processes.png)
 
 Подождите завершения работы процессов или вручную завершить задачи. Процессы можно найти по имени или с Идентификатором, перечисленные в скобках.
 
@@ -181,7 +181,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\deven
 * Убедитесь, что установка идентифицирует отсутствующий компонент/s и они перечислены в качестве необходимого компонента в VSIXInstaller.
 * Примечание: Повышение потребуется, если все необходимые компоненты должны быть установлены с расширением.
 
-![отсутствует необходимый компонент vsixinstaller](media/vsixinstaller-missing-prerequisite.png)
+![отсутствует необходимый компонент vsixinstaller](~/docs/extensibility/media/vsixinstaller-missing-prerequisite.png)
 
 ## <a name="deciding-on-components"></a>Выбор компонентов
 

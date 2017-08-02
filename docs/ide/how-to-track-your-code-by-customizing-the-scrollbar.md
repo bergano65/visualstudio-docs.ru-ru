@@ -32,11 +32,11 @@ caps.handback.revision: 5
   
      Вот как выглядит полоса прокрутки после поиска строки.  Обратите внимание, что отображаются все экземпляры строки.  
   
-     ![Полоса прокрутки после поиска строки.](../ide/media/enhancedscrollbarsearch.png "EnhancedScrollbarSearch")  
+     ![Полоса прокрутки после поиска строки.](~/docs/ide/media/enhancedscrollbarsearch.png "EnhancedScrollbarSearch")  
   
      Вот как выглядит полоса прокрутки после замены всех экземпляров строки.  Сразу же видно, что операция вызвала некоторые проблемы.  
   
-     ![Полоса прокрутки после замены строки с ошибками](../ide/media/enhancedscrollbarreplace.png "EnhancedScrollbarReplace")  
+     ![Полоса прокрутки после замены строки с ошибками](~/docs/ide/media/enhancedscrollbarreplace.png "EnhancedScrollbarReplace")  
   
 ### Установка режима отображения полосы прокрутки  
   
@@ -46,10 +46,10 @@ caps.handback.revision: 5
   
      Вот как выглядит пример поиска в режиме карты со средней шириной.  
   
-     ![Полоса прокрутки в режиме карты](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")  
+     ![Полоса прокрутки в режиме карты](~/docs/ide/media/enhancedscrollbar.png "EnhancedScrollbar")  
   
 2.  Чтобы включить предварительный просмотр кода при перемещении курсора вверх и вниз по полосе прокрутки в режиме карты, выберите параметр **Показывать подсказку предварительного просмотра**.  Вот как это выглядит.  
   
-     ![Полоса прокрутки с подсказкой](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")  
+     ![Полоса прокрутки с подсказкой](~/docs/ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")  
   
      Если вы хотите сохранить режим карты и подсказки предварительного просмотра и при этом отключить обзор исходного кода, установите для параметра **Обзор исходного кода** значение **Выкл**.

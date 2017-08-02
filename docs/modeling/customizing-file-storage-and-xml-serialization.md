@@ -51,11 +51,11 @@ caps.handback.revision: 17
 ## <a name="the-default-serialization-scheme"></a>Схема сериализации по умолчанию  
  Чтобы создать пример в этом разделе, использовался следующие определения DSL.  
   
- ![Схема определения DSL &#45; Модель семейного дерева](../modeling/media/familyt_person.png "FamilyT_Person")  
+ ![Схема определения DSL &#45; Модель семейного дерева](~/docs/modeling/media/familyt_person.png "FamilyT_Person")  
   
  Этот DSL был использован для создания модели, которая имеет следующий вид на экране.  
   
- ![Обозреватель, панель элементов и схема семейного дерева](../modeling/media/familyt_instance.png "FamilyT_Instance")  
+ ![Обозреватель, панель элементов и схема семейного дерева](~/docs/modeling/media/familyt_instance.png "FamilyT_Instance")  
   
  Эта модель сохранен и затем снова открыть в текстовом редакторе XML:  
   

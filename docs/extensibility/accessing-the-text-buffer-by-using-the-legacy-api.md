@@ -24,7 +24,7 @@ caps.handback.revision: 15
 ## Системы координат одной и 2\-Измерения  
  Одноразмерная координат позиция основана на позиции знака из первого символа в буфере, например 147.  Использовании <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream> интерфейс для доступа к одномерный массив расположение в буфере.  Плоская система координат основан на парах линии и индексов.  Например, символ в буфере, с 43, 5 был бы на линии 43 5 символов справа от первого символа в этой линии.  Доступ к плоское расположение в буфере с помощью <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> интерфейс.  Оба <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> и  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream> интерфейсы реализуются объектом текстового буфера \(<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>\) и может быть друг от друга с помощью  `QueryInterface`.  На следующей диаграмме показаны эти и другие интерфейсы ключа on <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>.  
   
- ![Объект текстового буфера](../extensibility/media/vstextbuffer.png "vsTextBuffer")  
+ ![Объект текстового буфера](~/docs/extensibility/media/vstextbuffer.gif "vsTextBuffer")  
 Объект текстового буфера  
   
  Хотя любая система координат работает в текстовом буфере, она оптимизирована для использования плоских координат.  Одноразмерная система координат может создать снижение производительности.  Поэтому используйте плоскую систему координат, когда это возможно.  

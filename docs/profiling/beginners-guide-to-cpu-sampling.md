@@ -90,7 +90,7 @@ ms.lasthandoff: 03/07/2017
   
  Каждая нумерованная область на рисунке соответствует определенному шагу в процедуре.  
   
- ![Представление сводного отчета для выборки](../profiling/media/summary_sampling.png "Summary_Sampling")  
+ ![Представление сводного отчета для выборки](~/docs/profiling/media/summary_sampling.png "Summary_Sampling")  
   
 #### <a name="to-analyze-sampling-data"></a>Анализ данных выборки  
   

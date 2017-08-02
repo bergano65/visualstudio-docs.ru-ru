@@ -23,7 +23,7 @@ caps.handback.revision: 14
 # Развертывание приложений для Магазина Windows из Visual Studio
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Применимо только к Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+![Применимо только к Windows](~/docs/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Функциональность развертывания Visual Studio выполняет сборку и регистрацию приложений Магазина Windows, созданных с помощью Visual Studio на целевом устройстве. Конкретный способ регистрации зависит от того, является ли целевое устройство локальным или удаленным:  
   
@@ -80,13 +80,13 @@ caps.handback.revision: 14
   
 4.  Можно ввести сетевое имя или IP\-адрес удаленного устройства или выбрать его в диалоговом окне **Выбрать подключение к удаленному отладчику**.  
   
-     ![Диалоговое окно выбора подключения к удаленному отладчику](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN\_SelectRemoteDebuggerDlg")  
+     ![Диалоговое окно выбора подключения к удаленному отладчику](~/docs/debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN\_SelectRemoteDebuggerDlg")  
   
      В диалоговом окне **Выбрать подключение к удаленному отладчику** отображаются устройства в локальной подсети и устройства, непосредственно подключенные к компьютеру Visual Studio с помощью кабеля Ethernet.  
   
  **Указание удаленного устройства на странице проекта JavaScript или Visual C\+\+**  
   
- ![Свойства проекта C&#43;&#43; для удаленной отладки](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN\_CPP\_ProjProp\_Remote")  
+ ![Свойства проекта C&#43;&#43; для удаленной отладки](~/docs/debugger/media/vsrun_cpp_projprop_remote.png "VSRUN\_CPP\_ProjProp\_Remote")  
   
 1.  Выберите **Удаленный отладчик** из списка **Отладчик для запуска**.  
   

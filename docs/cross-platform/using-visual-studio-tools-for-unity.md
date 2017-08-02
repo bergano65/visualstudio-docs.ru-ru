@@ -50,7 +50,7 @@ ms.lasthandoff: 05/13/2017
 ### <a name="unity-monobehavior-scripting-wizard"></a>Мастер создания скриптов Unity MonoBehavior  
  В Unity большинство скриптов реализуются путем наследования от класса MonoBehavior и переопределения некоторых его методов. Мастер MonoBehavior можно использовать для быстрого создания пустых определений методов MonoBehavior, для которых нужно создать перегрузку. С помощью этого мастера можно выбрать из списка доступных методов один метод или несколько методов, для которых нужно создать перегрузку, указать, куда они должны быть вставлены в коде, и решить, следует ли включить комментарии о том, как они используются.  
   
- ![Диалоговое окно мастера MonoBehaviour](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")  
+ ![Диалоговое окно мастера MonoBehaviour](~/docs/cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")  
   
 ##### <a name="to-create-empty-monobehavior-method-definitions-by-using-the-monobehavior-wizard"></a>Создание определений пустых методов MonoBehavior с помощью мастера MonoBehavior  
   
@@ -71,7 +71,7 @@ ms.lasthandoff: 05/13/2017
 #### <a name="quick-monobehavior-scripting-wizard"></a>Мастер создания скриптов Quick MonoBehavior  
  Если вы уже знакомы с Unity API, перегруженные методы можно реализовать еще быстрее с помощью мастера Quick MonoBehavior. Этот мастер позволяет указать только один метод, который вставляется без комментариев на позицию курсора.  
   
- ![Диалоговое окно мастера Quick MonoBehaviour](../cross-platform/media/vstu_monobehavior_wizard_quick.png "vstu_monobehavior_wizard_quick")  
+ ![Диалоговое окно мастера Quick MonoBehaviour](~/docs/cross-platform/media/vstu_monobehavior_wizard_quick.png "vstu_monobehavior_wizard_quick")  
   
 ###### <a name="to-create-an-empty-monobehavior-method-definition-by-using-the-quick-monobehavior-wizard"></a>Создание определения пустого метода MonoBehavior с помощью мастера Quick MonoBehavior  
   
@@ -86,13 +86,13 @@ ms.lasthandoff: 05/13/2017
 ### <a name="unity-project-explorer"></a>Обозреватель проектов Unity  
  Для перехода в Visual Studio к какому-либо проекту Unity можно использовать обозреватель проектов Unity.  
   
- ![Окно обозревателя проектов Unity](../cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")  
+ ![Окно обозревателя проектов Unity](~/docs/cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")  
   
 ##### <a name="to-view-the-unity-project-explorer"></a>Работа с обозревателем проектов Unity  
   
 -   В Visual Studio в главном меню выберите **Представление** и **Обозреватель проектов Unity**. (Или нажмите клавиши **ALT+SHIFT+E**.)  
   
-     ![Изображение окна обозревателя проектов Unity](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")  
+     ![Изображение окна обозревателя проектов Unity](~/docs/cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")  
   
  Обозреватель проектов Unity отображает все файлы и каталоги проекта Unity так же, как это делает редактор Unity. Это отличается от способа организации скриптов Unity в обозревателе решений, который содержит только файлы скриптов и отображает их в виде проектов, а решение, создаваемое набором средств Visual Studio для Unity, их организует. Зачастую проще найти скрипт, который требуется изменить, с помощью обозревателя проектов Unity, особенно в крупных проектах. Он также позволяет легко изменять другие файлы (например, текстовые файлы конфигурации) в Visual Studio, не добавляя их в какой-либо из проектов решения Visual Studio.  
   
@@ -126,18 +126,18 @@ ms.lasthandoff: 05/13/2017
   
 -   В главном меню Visual Studio выберите **Отладка** и **Присоединить отладчик Unity**.  
   
-     ![Присоединение отладчика Unity](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")  
+     ![Присоединение отладчика Unity](~/docs/cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")  
   
 -   *Или* щелкните значок подключения, отображаемый в строке состояния в правом нижнем углу Visual Studio.  
   
-     ![Этот значок показывает, что инструменты VSTU подключены к Unity](../cross-platform/media/vstu_connection_connected.png "vstu_connection_connected")  
+     ![Этот значок показывает, что инструменты VSTU подключены к Unity](~/docs/cross-platform/media/vstu_connection_connected.png "vstu_connection_connected")  
   
 > [!TIP]
 >  Если в значке подключения отображается галочка, это означает, что вы уже подключены к экземпляру Unity.  
   
  В диалоговом окне **Выбор экземпляра Unity** отображаются сведения о каждом экземпляре Unity, к которому можно подключиться.  
   
- ![Выбор экземпляра Unity, к которому нужно подключиться](../cross-platform/media/vstu_connection_to_unity.png "vstu_connection_to_unity")  
+ ![Выбор экземпляра Unity, к которому нужно подключиться](~/docs/cross-platform/media/vstu_connection_to_unity.png "vstu_connection_to_unity")  
   
  **Проект**  
  Имя проекта Unity, который выполняется в этом экземпляре Unity.  
@@ -186,13 +186,13 @@ ms.lasthandoff: 05/13/2017
   
 1.  Добавьте существующий проект библиотеки DLL в решение Visual Studio, которое создается набором средств Visual Studio для Unity. В ряде случаев вы можете создать новый проект с управляемой библиотекой DLL, который будет содержать компоненты кода проекта Unity. В этом сценарии в решение Visual Studio можно добавить новый проект с управляемой библиотекой DLL. Дополнительные сведения о добавлении нового или существующего проекта в решение см. в разделе [Практическое руководство. Добавление проектов в решение](https://msdn.microsoft.com/en-us/library/vstudio/ff460187.aspx).  
   
-     ![Добавление существующего проекта библиотеки DLL в решение](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")  
+     ![Добавление существующего проекта библиотеки DLL в решение](~/docs/cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")  
   
      В любом случае набор средств Visual Studio для Unity сохраняет ссылку на проект, даже если он должен повторно создать файлы проекта и решения, поэтому эти действия нужно будет выполнить только один раз.  
   
 2.  Создайте ссылку на нужный профиль платформы Unity в проекте DLL. В Visual Studio в свойствах проекта DLL для свойства **Целевая платформа** укажите версию платформы Unity, которую вы используете. Это библиотека базового класса Unity, соответствующая уровню совместимости API, на который ориентирован ваш проект, например библиотека базовых классов Unity full, micro или web. Благодаря этому ваша библиотека DLL не будет вызывать методы платформы, существующие на других платформах или уровнях совместимости, но которые могут отсутствовать в версии платформы Unity, которую вы используете.  
   
-     ![Настройка целевой платформы Unity для библиотеки DLL](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")  
+     ![Настройка целевой платформы Unity для библиотеки DLL](~/docs/cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")  
   
 3.  Скопируйте библиотеку DLL в папку Asset (ресурсы) своего проекта Unity. В Unity ресурсы представляют собой файлы, которые упаковываются и развертываются вместе с вашим приложением Unity, чтобы их можно было загружать во время выполнения. Так как библиотеки DLL связываются во время выполнения, их необходимо развертывать как ресурсы. Для развертывания в виде ресурса редактору Unity требуется, чтобы библиотеки DLL были помещены в папку Assets вашего проекта Unity. Предусмотрены два способа выполнения этой задачи.  
   

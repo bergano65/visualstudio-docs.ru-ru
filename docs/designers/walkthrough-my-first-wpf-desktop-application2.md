@@ -257,7 +257,7 @@ ms.lasthandoff: 05/13/2017
   
      На рисунке ниже показано приложение с кнопками навигации по окну.  
   
-     ![Снимок экрана примера ExpenseIt](../designers/media/gettingstartedfigure1.png "GettingStartedFigure1")  
+     ![Снимок экрана примера ExpenseIt](~/docs/designers/media/gettingstartedfigure1.png "GettingStartedFigure1")  
   
 6.  Закройте приложение, чтобы вернуться в режим конструктора.  
   
@@ -313,7 +313,7 @@ ms.lasthandoff: 05/13/2017
   
 3.  Выполните сборку и запуск приложения. На рисунке ниже показано, как выглядят элементы управления, созданные с помощью кода XAML в этой процедуре, во время выполнения.  
   
-     ![Снимок экрана примера ExpenseIt](../designers/media/gettingstartedfigure2.png "GettingStartedFigure2")  
+     ![Снимок экрана примера ExpenseIt](~/docs/designers/media/gettingstartedfigure2.png "GettingStartedFigure2")  
   
 4.  Закройте приложение, чтобы вернуться в режим конструктора.  
   
@@ -480,7 +480,7 @@ ms.lasthandoff: 05/13/2017
   
 6.  Если сейчас выполнить сборку и запуск приложения, оно должно выглядеть, как показано на рисунке ниже.  
   
-     ![Снимок экрана примера ExpenseIt](../designers/media/gettingstartedfigure3.png "GettingStartedFigure3")  
+     ![Снимок экрана примера ExpenseIt](~/docs/designers/media/gettingstartedfigure3.png "GettingStartedFigure3")  
   
 #### <a name="to-add-code-to-the-button"></a>Добавление кода в кнопку  
   

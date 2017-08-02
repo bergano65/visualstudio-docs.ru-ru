@@ -73,10 +73,10 @@ ms.lasthandoff: 05/24/2017
   
 3.  Найдите метод `TestMethod1()` и переименуйте его в `DefaultAutomobileIsInitializedCorrectly()`. Внутри этого метода создайте экземпляр класса с именем `Automobile`, как показано в приведенных ниже примерах. Отобразится волнистая линия подчеркивания, свидетельствующая об ошибке компиляции, а под именем типа отобразится смарт-тег. Расположение смарт-тега зависит от того, используется ли [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] или [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
   
-     ![Подчеркивание смарт-тега на языке Visual Basic](../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")  
+     ![Подчеркивание смарт-тега на языке Visual Basic](~/docs/ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")  
 Visual Basic  
   
-     ![Подчеркивание смарт-тега на языке C#](../ide/media/genclass_underline.png "GenClass_Underline")  
+     ![Подчеркивание смарт-тега на языке C#](~/docs/ide/media/genclass_underline.png "GenClass_Underline")  
 Visual C#  
   
 4.  Наведите указатель мыши на смарт-тег, чтобы просмотреть сообщение об ошибке, в котором сообщается о том, что тип `Automobile` еще не определен. Щелкните смарт-тег или нажмите клавиши CTRL+. (CTRL+точка), чтобы открыть контекстное меню "Создание в результате использования", как показано на рисунке ниже.  
@@ -112,10 +112,10 @@ Visual C#
   
      На рисунке ниже показано контекстное меню смарт-тега.  
   
-     ![Контекстное меню создания свойства на языке Visual Basic](../ide/media/genpropertysmarttagvb.png "GenPropertySmartTagVB")  
+     ![Контекстное меню создания свойства на языке Visual Basic](~/docs/ide/media/genpropertysmarttagvb.png "GenPropertySmartTagVB")  
 Visual Basic  
   
-     ![Контекстное меню создания свойства на языке C#](../ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS")  
+     ![Контекстное меню создания свойства на языке C#](~/docs/ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS")  
 Visual C#  
   
 ### <a name="to-locate-the-source-code"></a>Поиск исходного кода  
@@ -161,7 +161,7 @@ Visual C#
   
      Окно **Результаты теста** показано на рисунке ниже.  
   
-     ![Результаты теста, завершившегося ошибкой](../ide/media/testsfailed.png "TestsFailed")  
+     ![Результаты теста, завершившегося ошибкой](~/docs/ide/media/testsfailed.png "TestsFailed")  
 Результаты теста - окно  
   
 2.  В окне **Результаты теста** дважды щелкните каждую строку результата теста для перехода к месту сбоя в ходе каждого тестирования.  

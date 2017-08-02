@@ -38,7 +38,7 @@ ms.lasthandoff: 05/13/2017
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Создание приложений с нативным пользовательским интерфейсом с использованием Xamarin в Visual Studio
 Выполнив действия, описанные в разделах [Установка и настройка](../cross-platform/setup-and-install.md) и [Проверка среды Xamarin](../cross-platform/verify-your-xamarin-environment.md), вы можете перейти к этому пошаговому руководству, в котором будет описано, как создать базовое приложение Xamarin (показано ниже) с собственным пользовательским интерфейсом. При использовании собственного пользовательского интерфейса общий код находится в переносимой библиотеке классов (PCL), а проекты для отдельных платформ содержат определения пользовательского интерфейса.  
   
- ![Приложение Xamarin для Android и Windows Phone](../cross-platform/media/cross-plat-xamarin-build-1.png "Cross-Plat Xamarin Build 1")  
+ ![Приложение Xamarin для Android и Windows Phone](~/docs/cross-platform/media/cross-plat-xamarin-build-1.png "Cross-Plat Xamarin Build 1")  
   
  Вам предстоит выполнить следующие действия.  
   
@@ -468,7 +468,7 @@ ms.lasthandoff: 05/13/2017
   
 13. Сохраните файл и переключитесь в представление **Макет**. Пользовательский интерфейс будет выглядеть следующим образом:  
   
-     ![Пользовательский интерфейс для приложения Android](../cross-platform/media/xamarin_androidui.png "Xamarin_AndroidUI")  
+     ![Пользовательский интерфейс для приложения Android](~/docs/cross-platform/media/xamarin_androidui.png "Xamarin_AndroidUI")  
   
 14. Откройте файл **MainActivity.cs** и удалите строки в методе *OnCreate*, которые ссылаются на кнопку по умолчанию, которая была удалена ранее. Готовый код должен выглядеть следующим образом:  
   
@@ -597,13 +597,13 @@ ms.lasthandoff: 05/13/2017
   
  В представлении конструктора пользовательский интерфейс должен выглядеть следующим образом:  
   
- ![Пользовательский интерфейс приложения Windows Phone](../cross-platform/media/xamarin_winphone_finalui.png "Xamarin_WinPhone_FinalUI")  
+ ![Пользовательский интерфейс приложения Windows Phone](~/docs/cross-platform/media/xamarin_winphone_finalui.png "Xamarin_WinPhone_FinalUI")  
   
 ### <a name="consume-your-shared-code"></a>Использование общего кода  
   
 1.  В конструкторе нажмите кнопку **Узнать погоду** .  
   
-2.  В окне **Свойства** нажмите кнопку обработчика событий (![Значок обработчиков событий Visual Studio](../cross-platform/media/blend_vs_eventhandlers_icon.png "blend_VS_EventHandlers_icon")).  
+2.  В окне **Свойства** нажмите кнопку обработчика событий (![Значок обработчиков событий Visual Studio](~/docs/cross-platform/media/blend_vs_eventhandlers_icon.png "blend_VS_EventHandlers_icon")).  
   
      Этот значок появится в верхнем углу окна **Свойства** .  
   

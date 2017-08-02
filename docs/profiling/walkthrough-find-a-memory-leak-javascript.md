@@ -42,7 +42,7 @@ ms.lasthandoff: 02/22/2017
 
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Пошаговое руководство. Поиск утечек памяти (JavaScript)
-![Применимо к Windows и к Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+![Применимо к Windows и к Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
  В этом пошаговом руководстве описан процесс обнаружения и исправления простой проблемы с памятью с помощью анализатора памяти JavaScript. Анализатор памяти JavaScript доступен в Visual Studio для приложений из Магазина Windows, созданных для Windows с использованием JavaScript. В этом сценарии создается приложение, которое неверно сохраняет элементы DOM в памяти, вместо того чтобы избавляться от них с той же скоростью, с которой они создаются.  
   
@@ -227,7 +227,7 @@ ms.lasthandoff: 02/22/2017
   
 15. Откройте объект HTMLDivElement вверху дерева объектов, как показано здесь.  
   
-     ![Представление Diff в числе объектов в куче](../profiling/media/js_mem_app_typesdiff.png "JS_Mem_App_TypesDiff")  
+     ![Представление Diff в числе объектов в куче](~/docs/profiling/media/js_mem_app_typesdiff.png "JS_Mem_App_TypesDiff")  
   
      Это представление отображает полезные сведения об утечке памяти, например:  
   

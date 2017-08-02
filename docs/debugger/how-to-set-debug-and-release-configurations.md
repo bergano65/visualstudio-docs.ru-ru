@@ -60,7 +60,7 @@ caps.handback.revision: 45
   
 2.  На панели инструментов выберите либо **Отладка**, либо **Выпуск** из списка **Конфигурации решения**.  
   
-     ![Конфигурация построения панели инструментов](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
+     ![Конфигурация построения панели инструментов](~/docs/debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
   
      Эта панель инструментов недоступна в выпусках Express.  Для выбора конфигурации можно использовать пункты меню **Собрать решение F6** и **Начать отладку F5**.  
   

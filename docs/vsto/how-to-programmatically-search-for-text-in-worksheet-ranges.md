@@ -33,7 +33,7 @@ caps.handback.revision: 47
 > [!NOTE]  
 >  После достижения конца диапазон метод <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> продолжает поиск с его начала.  Код должен не допустить вход в бесконечный цикл.  В этом примере показан один из способов решения этой задачи — с помощью свойства <xref:Microsoft.Office.Interop.Excel.Range.Address%2A>.  
   
- ![ссылка на видео](../vsto/media/playvideo.png "ссылка на видео") Для просмотра связанных демонстрационных видеороликов перейдите по ссылке [How Do I: Use the Find Method in an Excel Add\-in?](http://go.microsoft.com/fwlink/?LinkID=130294).  
+ ![ссылка на видео](~/docs/data-tools/media/playvideo.gif "ссылка на видео") Для просмотра связанных демонстрационных видеороликов перейдите по ссылке [How Do I: Use the Find Method in an Excel Add\-in?](http://go.microsoft.com/fwlink/?LinkID=130294).  
   
 ### Выполнение поиска текста в диапазоне ячеек на листе  
   

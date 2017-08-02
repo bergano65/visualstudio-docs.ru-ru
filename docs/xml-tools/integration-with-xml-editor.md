@@ -26,7 +26,7 @@ caps.handback.revision: 3
   
  На следующем снимке экрана показана схема XML, открытая в обозревателе XML\-схем.Обозреватель XML\-схем отображает набор схем в виде дерева.XML Editor отображает текстовый вид узла, который сейчас активен в обозревателе XML\-схем.  
   
- ![XSDDesignerWithXMLEditor](../xml-tools/media/xsddesignerwithxmleditor.gif "XSDDesignerWithXMLEditor")  
+ ![XSDDesignerWithXMLEditor](~/docs/xml-tools/media/xsddesignerwithxmleditor.gif "XSDDesignerWithXMLEditor")  
   
  В некоторых случаях рекомендуется просматривать код в редакторе XML и графическом конструкторе параллельно.Чтобы просмотреть оба файла разом, щелкните правой кнопкой мыши в любом месте редактора XML и выберите **Конструктор представлений**.В меню Visual Studio Windows выберите **Создать группу горизонтальных \(или вертикальных\) вкладок**.  
   

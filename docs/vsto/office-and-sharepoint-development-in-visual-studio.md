@@ -96,7 +96,7 @@ caps.handback.revision: 87
   
  Вот пример возможностей надстройки VSTO. Эта надстройка VSTO добавляет элементы управления ленты, настраиваемую область задач и диалоговое окно в PowerPoint.  
   
- ![Надстройка PowerPoint](../vsto/media/powerpointaddin.png "Надстройка PowerPoint")  
+ ![Надстройка PowerPoint](~/docs/vsto/media/powerpointaddin.png "Надстройка PowerPoint")  
   
  **Дополнительные сведения**  
   

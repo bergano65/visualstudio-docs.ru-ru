@@ -41,7 +41,7 @@ ms.lasthandoff: 02/22/2017
 ## <a name="objects-in-the-automation-model"></a>Объекты в модели автоматизации  
  Модель автоматизации состоит из связанных групп объектов, контролирующих главные аспекты среде. Вот диаграмма, отображающая обширный набор объектов, которые составляют модель автоматизации.  
   
- ![Диаграмма объектов автоматизации Visual Studio](../../extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")  
+ ![Диаграмма объектов автоматизации Visual Studio](~/docs/extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")  
 Объекты автоматизации Visual Studio  
   
  Дополнительные сведения см. в разделе [расширение среды Visual Studio](http://msdn.microsoft.com/Library/4173a963-7ac7-4966-9bb7-e28a9d9f6792).  

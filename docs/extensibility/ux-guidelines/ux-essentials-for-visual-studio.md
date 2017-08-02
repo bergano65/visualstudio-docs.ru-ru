@@ -99,7 +99,7 @@ ms.lasthandoff: 05/04/2017
   
  В этом случае имеется дополнительные значения, так как содержит значок, используемый для предупреждения "&times;" значок, поэтому нельзя использовать общий значок удаления рядом с ней. В результате пользовательского интерфейса используется кнопка "Удалить", более неуклюжим управления.  
   
- ![Размещение пользовательского интерфейса в состоянии ошибки по умолчанию — это шаблон от Visual Studio.](../../extensibility/ux-guidelines/media/manifestdesignererrordeclarationsanti-pattern.png "ManifestDesignererrordeclarationsanti-pattern")<br />Размещение пользовательского интерфейса в состоянии ошибки по умолчанию — это шаблон от Visual Studio.
+ ![Размещение пользовательского интерфейса в состоянии ошибки по умолчанию — это шаблон от Visual Studio.](~/docs/extensibility/ux-guidelines/media/manifestdesignererrordeclarationsanti-pattern.png "ManifestDesignererrordeclarationsanti-pattern")<br />Размещение пользовательского интерфейса в состоянии ошибки по умолчанию — это шаблон от Visual Studio.
   
 #### <a name="alternatives"></a>Альтернативные варианты  
  Будет намного более удачным решением этой проблемы:  
@@ -122,7 +122,7 @@ ms.lasthandoff: 05/04/2017
 Принудительное пользователю выполнять чтение пояснительного текста перед закрытием пользовательского интерфейса является антишаблонов в среде Visual Studio. Правильно разработанное, видео ссылки должны отображаться подсказка с дополнительными сведениями о при наведении указателя мыши и выбрав пункт «&times;» следует закрыть сообщение без необходимости дальнейшей взаимодействовать.
 
 
- ![Пояснительный текст anti &#45; шаблон &#45; Неверный](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Шаблон неправильную ссылку на видео
+ ![Пояснительный текст anti &#45; шаблон &#45; Неверный](~/docs/extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Шаблон неправильную ссылку на видео
   
 #### <a name="result"></a>Результат  
  Вместо простого кнопка закрытия (одним щелчком мыши) пользователь вынужден позволяет просто закрыть пользовательский Интерфейс в каждом месте, отображаются ссылки на видео с двумя отдельными щелчками.  
@@ -130,20 +130,20 @@ ms.lasthandoff: 05/04/2017
 #### <a name="alternatives"></a>Альтернативные варианты  
  Правильный подход для этой ситуации можно выполнить общий шаблон для Internet Explorer, Microsoft Office и Visual Studio: при наведении курсора мыши, пользователь может видеть описание элемента tooltip и одним щелчком мыши скрывает пользовательский Интерфейс.  
   
- ![Пояснительный текст anti &#45; шаблон &#45; Правильно](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti-pattern-correct")<br />Шаблон правильные ссылки на видео
+ ![Пояснительный текст anti &#45; шаблон &#45; Правильно](~/docs/extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti-pattern-correct")<br />Шаблон правильные ссылки на видео
   
 ### <a name="using-command-bars-for-settings"></a>Использование командной строки для параметров  
  **Рисунок А** представляет этот антишаблон: размещение параметр под Командная кнопка, применяется не только в команду. В этот эскиз есть команды, помимо начать отладку, как и представление в браузере, запуск без отладки и шаг с заходом —, будут использовать выбранный параметр.  
 
-  ![На рисунке ответ антишаблон командной панели](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-pattern-FigureA")<br />На рисунке ответ антишаблон командной панели
+  ![На рисунке ответ антишаблон командной панели](~/docs/extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-pattern-FigureA")<br />На рисунке ответ антишаблон командной панели
   
  Немного лучше, но по-прежнему нежелательным, помещает параметры этого типа в панели инструментов, как показано в **рисунок В**. Разворачивающиеся кнопки занимают меньше места и, следовательно улучшение по раскрывающимся спискам, оба проекта по-прежнему используется панель инструментов для повышения уровня, то, что на самом деле не команды.  
  
- ![На рисунке B: лучше, но по-прежнему антишаблон командной панели](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-pattern-FigureB")<br />На рисунке B: лучше, но по-прежнему антишаблон командной панели
+ ![На рисунке B: лучше, но по-прежнему антишаблон командной панели](~/docs/extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-pattern-FigureB")<br />На рисунке B: лучше, но по-прежнему антишаблон командной панели
  
   В правильный подход, показанный в **рисунок С**, параметр привязан к ряд команд. Нет глобального параметра устанавливается, и мы просто переключении между четырьмя командами. Это единственный случай, в котором допустимы команд на панели инструментов. 
 
- ![Рисунок C: правильное использование панели команд Visual Studio](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-pattern-FigureC")<br />Рисунок C: правильное использование панели команд Visual Studio
+ ![Рисунок C: правильное использование панели команд Visual Studio](~/docs/extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-pattern-FigureC")<br />Рисунок C: правильное использование панели команд Visual Studio
    
 ### <a name="control-anti-patterns"></a>Антишаблоны управления  
  Некоторые антишаблоны являются просто неправильное использование или внешний вид элемента управления или группы элементов управления.  
@@ -152,15 +152,15 @@ ms.lasthandoff: 05/04/2017
  Подчеркивание текста следует использовать только для гиперссылки.  
   
  **Неправильный:**    
- ![Подчеркнутый текст, не являющегося гиперссылкой это шаблон от Visual Studio.](../../extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "0102-g_GroupLabelIncorrect")<br />Подчеркнутый текст, не являющегося гиперссылкой это шаблон от Visual Studio.
+ ![Подчеркнутый текст, не являющегося гиперссылкой это шаблон от Visual Studio.](~/docs/extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "0102-g_GroupLabelIncorrect")<br />Подчеркнутый текст, не являющегося гиперссылкой это шаблон от Visual Studio.
   
  **Хороший:**   
- ![Стиль правильно, не гиперссылки текст отображается без каких-либо шрифт среды разработки.](../../extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "0102-h_GroupLabelCorrect")<br />Стиль правильно, не гиперссылки текст отображается без каких-либо шрифт среды разработки.
+ ![Стиль правильно, не гиперссылки текст отображается без каких-либо шрифт среды разработки.](~/docs/extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "0102-h_GroupLabelCorrect")<br />Стиль правильно, не гиперссылки текст отображается без каких-либо шрифт среды разработки.
   
 #### <a name="clicking-on-a-check-box-results-in-a-pop-up-dialog"></a>Щелкнув флажок результатов в всплывающем диалоговом окне  
  Щелкнув флажок «Включить удаленный рабочий стол для всех ролей» в мастере «Публикация приложения Windows Azure» немедленно появится всплывающее диалоговое окно Visual Studio антишаблон. Кроме того, поле флажок не заполняет с флажком после выбора, другой антишаблон взаимодействия.  
   
- ![Открывая диалоговое окно после нажатием флажков антишаблон Visual Studio.](../../extensibility/ux-guidelines/media/0102-i_checkboxpopup.png "0102-i_CheckboxPopup")<br />Открывая диалоговое окно после нажатием флажков антишаблон Visual Studio.
+ ![Открывая диалоговое окно после нажатием флажков антишаблон Visual Studio.](~/docs/extensibility/ux-guidelines/media/0102-i_checkboxpopup.png "0102-i_CheckboxPopup")<br />Открывая диалоговое окно после нажатием флажков антишаблон Visual Studio.
   
 ### <a name="hyperlink-anti-patterns"></a>Антишаблоны гиперссылки  
  В следующем примере содержится два антишаблоны.  
@@ -169,7 +169,7 @@ ms.lasthandoff: 05/04/2017
   
 2.  «Дополнительные сведения» не соответствующий текст для получения ссылки на раздел общих понятий. Задача пользователя — не узнать больше, это понимать последствия по своему выбору.  
   
- ![Пропуск службы цвет и с помощью «Дополнительные» для гиперссылки, антишаблоны Visual Studio.](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")<br />Пропуск службы цвет и с помощью «Дополнительные» для гиперссылки, антишаблоны Visual Studio.  
+ ![Пропуск службы цвет и с помощью «Дополнительные» для гиперссылки, антишаблоны Visual Studio.](~/docs/extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")<br />Пропуск службы цвет и с помощью «Дополнительные» для гиперссылки, антишаблоны Visual Studio.  
   
  **Лучшие решения:** вводить вопрос, пользователь будет запросом, щелкнув ссылку.  
   

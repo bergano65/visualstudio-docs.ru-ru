@@ -32,7 +32,7 @@ manager: "douge"
 ## Используемые объекты и интерфейсы  
  Объекты, используемые для реализации встроенной активации, показаны на рисунке ниже.  
   
- ![Редактор активации на месте](../misc/media/vsinplaceactivationeditor.png "vsInPlaceActivationEditor")  
+ ![Редактор активации на месте](~/docs/extensibility/media/vsinplaceactivationeditor.gif "vsInPlaceActivationEditor")  
 Редактор встроенной активации  
   
 > [!NOTE]

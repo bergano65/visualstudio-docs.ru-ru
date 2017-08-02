@@ -143,7 +143,7 @@ caps.handback.revision: 2
   
  **Рисунок 08.01\-h: Тематические диалоговое окно**  
   
- ![Themed dialog dimensions](../../extensibility/ux-guidelines/media/0801-i_themeddialogdimensions.png "0801\-i\_ThemedDialogDimensions")  
+ ![Themed dialog dimensions](~/docs/extensibility/ux-guidelines/media/0801-i_themeddialogdimensions.png "0801\-i\_ThemedDialogDimensions")  
   
  **Рисунок 08.01\-i: Тематические диалоговое окно — измерений**  
   
@@ -151,7 +151,7 @@ caps.handback.revision: 2
   
  **Рис 08.01\-j: Диалоговое окно тематические — шрифты**  
   
- ![Themed dialog colors](../../extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801\-k\_ThemedDialogColors")  
+ ![Themed dialog colors](~/docs/extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801\-k\_ThemedDialogColors")  
   
  **Рисунок 08.01\-k: Тематические диалоговое окно — цветов**  
   

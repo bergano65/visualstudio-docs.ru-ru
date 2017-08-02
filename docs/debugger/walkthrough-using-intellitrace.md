@@ -54,7 +54,7 @@ IntelliTrace можно использовать для сбора сведен�
   
      Приведенный ниже снимок экрана сделан в Visual Studio 2015 с обновлением 1.  
   
-     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace\-Update1")  
+     ![IntelliTrace&#45;Update1](~/docs/debugger/media/intellitrace-update1.png "IntelliTrace\-Update1")  
   
 7.  Выберите событие и просмотрите подробности о нем.  
   
@@ -68,7 +68,7 @@ IntelliTrace можно использовать для сбора сведен�
   
      Приведенный ниже снимок экрана сделан в Visual Studio 2015 с обновлением 1.  
   
-     ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging\-Update1")  
+     ![HistoricalDebugging&#45;Update1](~/docs/debugger/media/historicaldebugging-update1.png "HistoricalDebugging\-Update1")  
   
 8.  Если ошибка не найдена, попробуйте изучить другие события, которые предположительно ее вызвали. Вы также можете просмотреть сведения о вызове записи IntelliTrace и выполнить вызовы функций по шагам.  
   

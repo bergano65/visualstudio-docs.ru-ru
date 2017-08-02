@@ -26,7 +26,7 @@ caps.handback.revision: 24
 # Запуск сеанса отладки для приложений Магазина в Visual Studio (JavaScript)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Применимо к Windows и к Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Применимо к Windows и к Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  В этом разделе описывается запуск сеанса отладки приложений Магазина Windows, написанных на JavaScript и HTML5. Вы можете начать отладку одним нажатием или настроить сеанс отладки под конкретные сценарии, а затем выбрать способ запуска приложения.  
   
@@ -67,7 +67,7 @@ caps.handback.revision: 24
 -   [Подключение отладчика](#BKMK_Attach_the_debugger)  
   
 ##  <a name="BKMK_The_easy_way_to_start_debugging"></a> Простой способ запуска отладки  
- ![Применимо только к Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![Применимо только к Windows](~/docs/debugger/media/windows_only_content.png "windows\_only\_content")  
   
 1.  Откройте приложение в Visual Studio.  
   
@@ -75,7 +75,7 @@ caps.handback.revision: 24
   
 3.  Нажмите клавишу F5.  
   
- ![Применимо только к Windows Phone](../debugger/media/phone_only_content.png "phone\_only\_content")  
+ ![Применимо только к Windows Phone](~/docs/debugger/media/phone_only_content.png "phone\_only\_content")  
   
  Visual Studio создает и запускает приложение с подключенным отладчиком. Выполнение продолжается до достижения точки останова, приостановления выполнения вручную, необработанного исключения или завершения приложения. Дополнительные сведения см. в разделе [Краткое руководство по отладке HTML и CSS](../debugger/quickstart-debug-html-and-css.md).  
   
@@ -97,7 +97,7 @@ caps.handback.revision: 24
 ###  <a name="BKMK_Choose_the_deployment_target"></a> Выберите целевой объект развертывания  
  Можно развернуть и отладить приложение на компьютере с Visual Studio, в имитаторе Visual Studio на локальном компьютере или на удаленном компьютере. Выберите целевую платформу в списке **Загружаемый отладчик** на странице свойств **Отладка** для проекта.  
   
- ![Применимо только к Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![Применимо только к Windows](~/docs/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Для приложения Магазина Windows выберите в списке **Целевое устройство** один из следующих вариантов.  
   
@@ -113,12 +113,12 @@ caps.handback.revision: 24
   
 -   Выберите стрелку вниз в поле **Имя компьютера** и нажмите **\<Поиск...\>**. После этого выберите удаленный компьютер из диалогового окна **Выбрать подключение к удаленному отладчику**.  
   
-     ![Выбор подключения к удаленному отладчику](../debugger/media/vsrun_pro_selectremotedebuggerdlg.png "VSRUN\_PRO\_SelectRemoteDebuggerDlg")  
+     ![Выбор подключения к удаленному отладчику](~/docs/debugger/media/vsrun_pro_selectremotedebuggerdlg.png "VSRUN\_PRO\_SelectRemoteDebuggerDlg")  
   
     > [!NOTE]
     >  В диалоговом окне Выбор подключения к удаленному отладчику» отображаются компьютеры в локальной подсети и компьютеры, непосредственно подключенные к компьютеру Visual Studio с помощью кабеля Ethernet. Чтобы указать другой компьютер, введите имя в поле **Имя компьютера**.  
   
- ![Применимо только к Windows Phone](../debugger/media/phone_only_content.png "phone\_only\_content")  
+ ![Применимо только к Windows Phone](~/docs/debugger/media/phone_only_content.png "phone\_only\_content")  
   
  Для приложения Магазина Windows выберите **Устройство** или один из эмуляторов в списке **Целевое устройство**.  
   
@@ -145,7 +145,7 @@ caps.handback.revision: 24
 -   Выберите **Да**, чтобы запустить приложение немедленно.  
   
 ###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> \(Необязательно\) Отключите сетевое замыкание на себя  
- ![Применимо только к Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![Применимо только к Windows](~/docs/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Из соображений безопасности приложению Магазина Windows, установленному стандартным образом, не разрешается выполнять сетевые вызовы к устройству, на котором оно установлено. По умолчанию Visual Studio создает для развертываемого приложения исключение из этого правила. Это исключение позволяет тестировать процедуры обмена данными на одном компьютере. Прежде чем отправлять приложение в Магазин Windows, необходимо протестировать приложение без этого исключения.  
   

@@ -92,7 +92,7 @@ manager: "ghogen"
   
 6.  По завершении настройки появится окно удаленного отладчика.  
   
-     ![RemoteDebuggerWindow](../debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")  
+     ![RemoteDebuggerWindow](~/docs/debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")  
   
  Чтобы завершить работу удаленного отладчика, выберите в окне команду **Файл\/Выход**. Перезапустить его можно из меню **Пуск** или командной строки:  
   
@@ -170,7 +170,7 @@ manager: "ghogen"
   
 7.  Для конфигурации **Отладка** установите флажок **Развертывание**.  
   
-     ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
+     ![RemoteDebugCplusDeploy](~/docs/debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
   
 8.  Начните отладку \(выберите **Отладка \> Начать отладку** или нажмите клавишу **F5**\).  
   

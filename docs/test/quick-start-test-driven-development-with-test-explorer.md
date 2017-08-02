@@ -46,7 +46,7 @@ ms.lasthandoff: 05/13/2017
 -   Возможность увидеть всю требуемую информацию в одном окне.  
   
 ## <a name="using-test-explorer"></a>Использование обозревателя тестов  
- ![Обозреватель модульных тестов с кнопкой "Запустить все"](../test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")  
+ ![Обозреватель модульных тестов с кнопкой "Запустить все"](~/docs/test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")  
   
 #### <a name="to-run-unit-tests-by-using-test-explorer"></a>Запуск модульных тестов с помощью обозревателя тестов  
   

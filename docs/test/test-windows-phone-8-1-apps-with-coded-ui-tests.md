@@ -46,7 +46,7 @@ ms.lasthandoff: 05/13/2017
   
 2.  В обозревателе решений выберите файл MainPage.xaml. Из панели инструментов перетащите элемент управления "Кнопка" и "Текстовое поле" на поверхность разработки.  
   
-     ![Добавление элементов управления в MainPage.xaml](../test/media/cuit_phone_app_addcontrols.png "CUIT_Phone_App_AddControls")  
+     ![Добавление элементов управления в MainPage.xaml](~/docs/test/media/cuit_phone_app_addcontrols.png "CUIT_Phone_App_AddControls")  
   
 3.  В окне "Свойства" укажите имя кнопки  
   
@@ -104,7 +104,7 @@ ms.lasthandoff: 05/13/2017
   
 2.  С помощью перекрестия включите режим редактирования карты ИП.  
   
-     ![Создание закодированного теста пользовательского интерфейса с помощью перекрестья](../test/media/cuit_phone_howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
+     ![Создание закодированного теста пользовательского интерфейса с помощью перекрестья](~/docs/test/media/cuit_phone_howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
   
 3.  Выберите приложение, а затем скопируйте значение свойства **AutomationId**, которое будет использоваться для запуска приложения в тесте.  
   

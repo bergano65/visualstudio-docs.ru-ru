@@ -36,7 +36,7 @@ manager: "ghogen"
   
  В этом сценарии при запуске приложения для тестирования фон отрисовывается так, как ожидалось, однако один из объектов не отображается. С помощью диагностики графики можно записать данные о проблеме в журнал графики, чтобы можно было выполнить отладку приложения. Проблема в приложении выглядит следующим образом:  
   
- ![Объект не виден](../debugger/media/gfx_diag_demo_misconfigured_pipeline_problem.png "gfx\_diag\_demo\_misconfigured\_pipeline\_problem")  
+ ![Объект не виден](~/docs/debugger/graphics/media/gfx_diag_demo_misconfigured_pipeline_problem.png "gfx\_diag\_demo\_misconfigured\_pipeline\_problem")  
   
 ## Исследование  
  С помощью средств диагностики графики можно загрузить документ журнала графики для проверки кадров, захваченных в ходе теста.  
@@ -100,7 +100,7 @@ manager: "ghogen"
   
  Чтобы устранить проблему, присвойте правильный шейдер пикселей, используя первый параметр вызова API `ID3D11DeviceContext::PSSetShader`.  
   
- ![Исправленный исходный код C&#43;&#43;](../debugger/media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx\_diag\_demo\_misconfigured\_pipeline\_step\_6")  
+ ![Исправленный исходный код C&#43;&#43;](~/docs/debugger/graphics/media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx\_diag\_demo\_misconfigured\_pipeline\_step\_6")  
   
  Внеся исправления в код, можно заново собрать его и еще раз запустить приложение, чтобы убедиться, что проблема с отрисовкой решена:  
   

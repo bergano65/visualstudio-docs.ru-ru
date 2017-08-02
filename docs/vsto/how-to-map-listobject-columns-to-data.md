@@ -27,7 +27,7 @@ caps.handback.revision: 35
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- ![ссылка на видео](../vsto/media/playvideo.png "ссылка на видео") Связанные демонстрационные видеоролики см. в разделе [Инструкции. Создание списка в Excel, подключенного к списку SharePoint](http://go.microsoft.com/fwlink/?LinkID=130263).  
+ ![ссылка на видео](~/docs/data-tools/media/playvideo.gif "ссылка на видео") Связанные демонстрационные видеоролики см. в разделе [Инструкции. Создание списка в Excel, подключенного к списку SharePoint](http://go.microsoft.com/fwlink/?LinkID=130263).  
   
 ## Сопоставление столбцов  
   
