@@ -29,9 +29,10 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
 ms.openlocfilehash: 774266bbcd64e87229f8f97626cdff1462b27fcb
+ms.contentlocale: ru-ru
 ms.lasthandoff: 04/05/2017
 
 ---
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/05/2017
  [Команда ссылка на формат таблицы](http://msdn.microsoft.com/en-us/09e9c6ef-9863-48de-9483-d45b7b7c798f) ресурсы находятся в неуправляемых библиотек спутниковой связи DLL пользовательского интерфейса.  
   
 ## <a name="command-handler-registration-of-a-vspackage"></a>Команда регистрации обработчика пакета VSPackage  
- Пакет VSPackage, выступающего в качестве обработчика для пользовательского интерфейса (UI) — на основе команды требуется запись реестра с именем VSPackage `GUID`. Эта запись реестра указывает расположение файла ресурсов пользовательского интерфейса в пакете VSPackage и ресурс меню в этом файле. Параметр реестра сам находится в папке HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<версии настроек*\Menus, где *\<версии настроек* версия [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], например 9.0.  
+ Пакет VSPackage, выступающего в качестве обработчика для пользовательского интерфейса (UI) — на основе команды требуется запись реестра с именем VSPackage `GUID`. Эта запись реестра указывает расположение файла ресурсов пользовательского интерфейса в пакете VSPackage и ресурс меню в этом файле. Параметр реестра сам находится в папке HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<версии настроек*\Menus, где  *\<версии настроек* версия [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], например 9.0.  
   
 > [!NOTE]
 >  Путь к корневому каталогу HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<версии настроек* может быть переопределен с альтернативной корневой при [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] инициализируется оболочки. Дополнительные сведения о корневой путь в разделе [Установка пакетов VSPackage с помощью установщика Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  
