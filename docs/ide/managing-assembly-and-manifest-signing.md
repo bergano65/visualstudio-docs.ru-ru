@@ -32,11 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: b42679476f9e1da034011eb7e9b81250c0c81a1e
+ms.translationtype: HT
+ms.sourcegitcommit: a3c0f4d3bde8bb03d3766383eba01665e58458be
+ms.openlocfilehash: 6a28915840af1b22dffe704ac931a57f25ca6879
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/30/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Управление сборками и подписывание манифестов
@@ -80,12 +80,12 @@ ms.lasthandoff: 05/30/2017
 > [!WARNING]
 >  При этом следует защитить файл ключа паролем, чтобы предотвратить его использование другим пользователем. Ключи также можно защитить с помощью поставщиков или хранилищ сертификатов.  
   
- Кроме того, можно указать уже созданный ключ. Дополнительные сведения о создании пары ключей смотрите в разделе [Практическое руководство. Создание пары открытого и закрытого ключей](http://msdn.microsoft.com/Library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
+ Кроме того, можно указать уже созданный ключ. Дополнительные сведения о создании пары ключей смотрите в разделе [Практическое руководство. Создание пары открытого и закрытого ключей](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).  
   
  При наличии доступа только к открытому ключу можно использовать отложенную подпись, чтобы отложить применение ключа. Для этого можно установить флажок **Только отложенная подпись**. Проект с отложенной подписью не будет работать, и нельзя будет выполнить его отладку. Однако можно пропустить проверку во время разработки с помощью [Sn.exe (средство строгих имен)](/dotnet/framework/tools/sn-exe-strong-name-tool) с параметром `-Vr`.  
   
  Дополнительные сведения о подписи манифестов см. в разделе [Практическое руководство. Подписание манифестов приложения и развертывания](../ide/how-to-sign-application-and-deployment-manifests.md).  
   
 ## <a name="see-also"></a>См. также  
- [Сборки со строгими именами](http://msdn.microsoft.com/Library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
+ [Сборки со строгими именами](/dotnet/framework/app-domains/strong-named-assemblies)   
  [Сборки со строгими именами (подписывание сборок) (C++-CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)
