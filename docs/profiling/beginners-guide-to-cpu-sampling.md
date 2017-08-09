@@ -33,11 +33,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: ddd52c1af0a164235de2e5055896e020dc8715c3
+ms.translationtype: HT
+ms.sourcegitcommit: 5c28e68b89f6583dc35a91b275693c11e0259dfd
+ms.openlocfilehash: 251b00c479c3853ba4fc00521f3e4cac74a93d27
 ms.contentlocale: ru-ru
-ms.lasthandoff: 03/07/2017
+ms.lasthandoff: 07/13/2017
 
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Руководство по выборке циклов ЦП для начинающих
@@ -90,7 +90,7 @@ ms.lasthandoff: 03/07/2017
   
  Каждая нумерованная область на рисунке соответствует определенному шагу в процедуре.  
   
- ![Представление сводного отчета для выборки](~/profiling/media/summary_sampling.png "Summary_Sampling")  
+ ![Представление сводного отчета для выборки](../profiling/media/summary_sampling.png "Summary_Sampling")  
   
 #### <a name="to-analyze-sampling-data"></a>Анализ данных выборки  
   
@@ -139,9 +139,9 @@ ms.lasthandoff: 03/07/2017
   
 4.  После повторного запуска сеанса в папку **Отчеты** папки для сеанса в **обозревателе производительности** добавляется другой файл данных. Выберите исходные и новые данные профилирования, щелкните выбранное правой кнопкой мыши и выберите пункт **Сравнить отчеты о производительности**.  
   
-     Открывается новое окно отчета с результатами сравнения. Дополнительные сведения об использовании представления сравнения см. в статье [How to: Compare Performance Data Files](../profiling/how-to-compare-performance-data-files.md) (Практическое руководство. Сравнение файлов данных профилировщика).  
+     Открывается новое окно отчета с результатами сравнения. Дополнительные сведения об использовании представления сравнения см. в статье [How to: Compare Performance Data Files](../profiling/how-to-compare-performance-data-files.md) (Практическое руководство. Сравнение файлов данных профилировщика).
   
 ## <a name="see-also"></a>См. также  
  [Обозреватель производительности](../profiling/performance-explorer.md)   
  [Начало работы](../profiling/getting-started-with-performance-tools.md)   
- [Разделы общих сведений](../profiling/overviews-performance-tools.md)
+ [Обзоры](../profiling/overviews-performance-tools.md) [Профилирование в Visual Studio](../profiling/index.md) [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md)

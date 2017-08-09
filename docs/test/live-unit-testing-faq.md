@@ -26,11 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: e59263c352084107d9849ab656b8b7d034337c53
+ms.translationtype: HT
+ms.sourcegitcommit: 359e1eb5df8f19774d352ace631802367b6dd8c9
+ms.openlocfilehash: 2a58b84403189d824494af85bc732a1b8cf3d0b6
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 07/11/2017
 
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Часто задаваемые вопросы о функции Live Unit Testing
@@ -39,7 +39,7 @@ ms.lasthandoff: 05/13/2017
 
 **Ответ.**
 
-Сейчас функция Live Unit Testing не работает с проектами .NET Core. Мы планируем добавить эту поддержку в будущем. 
+Да. Функция Live Unit Testing совместима с .NET Core и .NET Frameworks. Поддержка .NET Core была недавно добавлена в предварительную версию 15.3 Visual Studio 2017. 
 
 ## <a name="why-doesnt-live-unit-testing-work-when-i-turn-it-on"></a>Почему функция Live Unit Testing не работает после включения? 
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 05/13/2017
 
 - Пакеты NuGet, на которые имеются ссылки в проекте, не были восстановлены. Чтобы устранить эту проблему, перед включением Live Unit Testing выполните явную сборку решения или восстановите пакеты NuGet в решении. 
 
-- При использовании в проекте тестов на основе MSTest удалите ссылку на `Microsoft.VisualStudio.QualityTools.UnitTestFramework` и добавьте ссылки на последнюю версию пакетов NuGet для MSTest, `MSTest.TestAdapter` (минимальная версия — 1.1.4-preview) и `MSTest.TestFramework` (минимальная версия — 1.0.5-preview). Дополнительные сведения см. в разделе "Поддерживаемые тестовые платформы" статьи [Функция Live Unit Testing в Visual Studio 2017](live-unit-testing.md#supported-test-frameworks).
+- При использовании в проекте тестов на основе MSTest удалите ссылку на `Microsoft.VisualStudio.QualityTools.UnitTestFramework` и добавьте ссылки на последнюю версию пакетов NuGet для MSTest, `MSTest.TestAdapter` (минимальная версия — 1.1.11) и `MSTest.TestFramework` (минимальная версия — 1.1.11). Дополнительные сведения см. в разделе "Поддерживаемые тестовые платформы" статьи [Функция Live Unit Testing в Visual Studio 2017](live-unit-testing.md#supported-test-frameworks).
  
 - По крайней мере один проект в решении должен иметь ссылку на NuGet или прямую ссылку на тестовую платформу xUnit, NUnit или MSTest. Этот проект также должен иметь ссылку на соответствующий пакет NuGet для адаптера теста Visual Studio. Ссылку на адаптер теста Visual Studio можно также создать, используя файл `.runsettings`. Файл `.runsettings` должен иметь запись, аналогичную следующей: 
 
@@ -239,3 +239,4 @@ public class Class1
 
 [Динамическое модульное тестирование](live-unit-testing.md)
  
+

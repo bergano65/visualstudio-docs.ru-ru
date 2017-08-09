@@ -34,11 +34,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 90b2481b0ec4f9387fe3a2c0b733a103e8c03845
-ms.openlocfilehash: 36770fe6fad52e33144f382446d7e851734f87c5
+ms.translationtype: HT
+ms.sourcegitcommit: 5c28e68b89f6583dc35a91b275693c11e0259dfd
+ms.openlocfilehash: 6e4094925eec3e4a8768219180e75fa9d1f1fa03
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 07/13/2017
 
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Руководство по профилированию производительности для начинающих
@@ -47,6 +47,8 @@ ms.lasthandoff: 05/23/2017
 При приостановке отладчика средство **Загрузка ЦП** собирает сведения о функциях, которые выполняются в приложении. Кроме того, это средство перечисляет функции, которые выполняли максимальный объем работы, а также предоставляет график временной шкалы, который позволяет сосредоточить внимание на определенных сегментах сеанса выборки.
 
 Центр диагностики предоставляет различные возможности по запуску сеансов диагностики и управлению ими. Если средство **Загрузка ЦП** не предоставляет необходимые данные, можно воспользоваться [другими средствами профилирования](../profiling/Profiling-Tools.md), предоставляющими другие виды информации, которая может оказаться полезной. Как правило, проблемы производительности приложения могут вызываться другими компонентами помимо ЦП, такими как память, отрисовка пользовательского интерфейса или время запроса сети. Центр диагностики предоставляет ряд других параметров для записи и анализа такого рода данных.
+
+Вы также можете просмотреть [видео об использовании средств диагностики](#video), где показано, как анализировать загрузку ЦП и использование памяти.
 
 В этом разделе мы обсудим анализ загрузки ЦП в обычном рабочем процессе отладки. Анализировать загрузку ЦП также можно без подключения отладчика или указав выполняющееся приложение. Дополнительные сведения см. в разделе [Run profiling tools without debugging](../profiling/running-profiling-tools-with-or-without-the-debugger.md) (Запуск средств профилирования без отладки).
   
@@ -63,7 +65,7 @@ ms.lasthandoff: 05/23/2017
 
 4.  Вы можете выбрать, что следует просмотреть, [Использование памяти](../profiling/Memory-Usage.md) или **Загрузка ЦП** (либо оба средства), с помощью параметра **Выбор средств** на панели инструментов. Если вы используете Visual Studio Enterprise, также можно включить или отключить IntelliTrace, последовательно выбрав **Сервис | Параметры | IntelliTrace**.
 
-     ![Вывод средств диагностики](~/profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+     ![Вывод средств диагностики](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
 
      Нас главным образом интересует загрузка ЦП, поэтому убедитесь, что средство **Загрузка ЦП** включено (оно включено по умолчанию).
 
@@ -71,7 +73,7 @@ ms.lasthandoff: 05/23/2017
 
      По завершении загрузки приложения отображается представление "Сводка" средств диагностики.
 
-     ![Вкладка "Сводка" средств диагностики](~/profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+     ![Вкладка "Сводка" средств диагностики](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
      Дополнительные сведения о событиях см. в разделе [Поиск и фильтрация на вкладке "События" окна "Средства диагностики"](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).
 
@@ -79,7 +81,7 @@ ms.lasthandoff: 05/23/2017
 
 7.  Приостановив отладчик, включите сбор данных о загрузке ЦП, а затем откройте вкладку **Загрузка ЦП**.
 
-     ![Средства диагностики, "Включить профилирование ЦП"](~/profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
+     ![Средства диагностики, "Включить профилирование ЦП"](../profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
 
      При выборе пункта **Включить профилирование ЦП** Visual Studio начнет записывать функции и сведения о времени их выполнения. Эти собранные данные можно просматривать только в том случае, если приложение останавливается в точке останова.
 
@@ -89,15 +91,15 @@ ms.lasthandoff: 05/23/2017
 
 9.  Выберите интересующую вас область на временной шкале ЦП (это должна быть та область, для которой отображаются данные профилирования).
 
-     ![Средства диагностики, выбор сегмента временной шкалы](~/profiling/media/DiagToolsSelectTimeSegment.png "DiagToolsSelectTimeSegment")
+     ![Средства диагностики, выбор сегмента временной шкалы](../profiling/media/DiagToolsSelectTimeSegment.png "DiagToolsSelectTimeSegment")
 
      Профилировщик начинает подготавливать данные потока. Дождитесь завершения этой операции.
 
-     ![Средства диагностики, подготовка потоков](~/profiling/media/DiagToolsPreparingThreads.png "DiagToolsPreparingThreads")
+     ![Средства диагностики, подготовка потоков](../profiling/media/DiagToolsPreparingThreads.png "DiagToolsPreparingThreads")
   
      Средство "Загрузка ЦП" выведет отчет на вкладке **Загрузка ЦП**.
   
-     ![Средства диагностики, вкладка "Загрузка ЦП"](~/profiling/media/DiagToolsCPUUsageTab.png "DiagToolsCPUUsageTab")
+     ![Средства диагностики, вкладка "Загрузка ЦП"](../profiling/media/DiagToolsCPUUsageTab.png "DiagToolsCPUUsageTab")
 
      На этом этапе можно начать анализировать данные.
 
@@ -107,7 +109,7 @@ ms.lasthandoff: 05/23/2017
 
 1. В списке функций изучите функции, которые выполняют большую часть работы.
 
-    ![Средства диагностики, список функций на вкладке "Загрузка ЦП"](~/profiling/media/DiagToolsCPUUsageFunctionList.png "DiagToolsCPUUsageFunctionList")
+    ![Средства диагностики, список функций на вкладке "Загрузка ЦП"](../profiling/media/DiagToolsCPUUsageFunctionList.png "DiagToolsCPUUsageFunctionList")
 
     > [!TIP]
     > Функции перечисляются, начиная с тех, которые выполняют большую часть работы (а не в порядке вызова). Это позволяет быстро находить функции, которые выполнялись дольше всего.
@@ -116,7 +118,7 @@ ms.lasthandoff: 05/23/2017
 
     При двойном щелчке функции в левой панели откроется представление **Вызывающий/вызываемый**. 
 
-    ![Средства диагностики, представление "Вызывающий/вызываемый"](~/profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
+    ![Средства диагностики, представление "Вызывающий/вызываемый"](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
 
     В этом представлении выбранная функции отображается в заголовке и в поле **Текущая функция** (в этом примере GetNumber). Функция, вызывавшая текущую функцию, отображается в левой части окна в разделе **Вызывающая функция**, а все функции, вызываемые текущей функцией, отображаются в поле **Вызываемые функции** справа. (Можно выбрать любое поле, чтобы изменить текущую функцию.)
 
@@ -131,7 +133,7 @@ ms.lasthandoff: 05/23/2017
  
     Каждая нумерованная область на рисунке соответствует определенному шагу в процедуре.
   
-    ![Средства диагностики, дерево вызовов](~/profiling/media/DiagToolsCallTree.png "DiagToolsCallTree")
+    ![Средства диагностики, дерево вызовов](../profiling/media/DiagToolsCallTree.png "DiagToolsCallTree")
   
 |||
 |-|-|
@@ -154,7 +156,7 @@ ms.lasthandoff: 05/23/2017
   
 Если вы захотите посмотреть пути к вызовам внешнего кода, выберите **Показать внешний код** в списке **Представление фильтра** и выберите **Применить**.  
   
-![Выбор "Представление фильтра", а затем "Показать внешний код"](~/profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")  
+![Выбор "Представление фильтра", а затем "Показать внешний код"](../profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")  
   
 Помните о том, что многие цепочки вызовов имеют глубокий уровень вложенности, поэтому ширина столбца "Имя функции" может превышать ширину многих мониторов. В этом случае имена функций отображаются в виде **[…]**.
   
@@ -162,8 +164,12 @@ ms.lasthandoff: 05/23/2017
 
 > [!TIP]
 > Если вы выполняете профилирование внешнего кода, вызывающего функции Windows, следует убедиться, что используются самые новые версии PDB-файлов. Без этих файлов имена функций Windows в представлениях отчетов будут отображаться в непонятном или трудном для понимания виде. Дополнительные сведения о том, как убедиться в наличии нужных файлов, см. в статье [Указание файлов символов (.pdb) и файлов с исходным кодом в отладчике](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+
+## <a name="video"></a> Видео о средствах диагностики
+
+<div style="padding-top: 56.25%; position: relative; width: 100%;">
+<iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171" frameborder="0" allowfullscreen></iframe>
+</div>
   
 ## <a name="see-also"></a>См. также  
- [[Использование памяти](../profiling/memory-usage.md)
- [Загрузка ЦП](../profiling/cpu-usage.md)
- [Средства профилирования](../profiling/profiling-tools.md)
+ [[Использование памяти](../profiling/memory-usage.md) [Загрузка ЦП](../profiling/cpu-usage.md) [Профилирование в Visual Studio](../profiling/index.md) [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md)

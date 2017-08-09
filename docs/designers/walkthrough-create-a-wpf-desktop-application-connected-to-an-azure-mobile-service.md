@@ -13,26 +13,11 @@ caps.latest.revision: 7
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 7716a0e9249c67760ae7b31160dcae89b77b9ca7
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: b42e50dcfc4820b750c04085f1e881ee25f786f9
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Пошаговое руководство. Создание классического приложения WPF, подключенного к мобильной службе Azure
@@ -41,7 +26,7 @@ ms.lasthandoff: 05/13/2017
 ##  <a name="Requirements"></a> Необходимые компоненты  
  Для выполнения этого пошагового руководства необходимо следующее.  
   
--   Visual Studio 2015 — любая версия, поддерживающая разработку на основе WPF.  
+-   Visual Studio 2017 или любая версия, поддерживающая разработку на основе WPF.  
   
 -   Активная учетная запись Microsoft Azure  
   
@@ -115,7 +100,7 @@ ms.lasthandoff: 05/13/2017
   
      Этот код XAML создает повторно используемый шаблон с заполнителями для полей номера, заголовка и описания. Во время выполнения заполнители можно заменять текстом, как показано на рисунке ниже.  
   
-     ![Пользовательский элемент управления QuickStartTask](~/designers/media/wpfquickstart1.PNG "WPFQuickStart1")  
+     ![Пользовательский элемент управления QuickStartTask](../designers/media/wpfquickstart1.PNG "WPFQuickStart1")  
   
 6.  В **обозревателе решений**разверните узел **QuickStartTask.xaml** и откройте файл **QuickStartTask.xaml.cs** или **QuickStartTask.xaml.vb** .  
   
@@ -217,7 +202,7 @@ ms.lasthandoff: 05/13/2017
   
      Этот код использует свойства зависимостей для задания значений полей номера, заголовка и описания во время выполнения.  
   
-8.  В строке меню выберите **Сборка**> **Собрать WPFQuickStart** , чтобы выполнить сборку пользовательского элемента управления.  
+8.  В строке меню выберите **Сборка**&gt; **Собрать WPFQuickStart** , чтобы выполнить сборку пользовательского элемента управления.  
   
 #### <a name="to-create-and-modify-the-main-window"></a>Создание и изменение главного окна  
   
@@ -302,7 +287,7 @@ ms.lasthandoff: 05/13/2017
   
      На этом этапе интерфейс должен выглядеть так, как показано на рисунке ниже.  
   
-     ![Элемент MainWindow в конструкторе](~/designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
+     ![Элемент MainWindow в конструкторе](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
   
     > [!NOTE]
     >  При выполнении нескольких следующих процедур вы можете увидеть ошибки в **списке ошибок** , если он открыт. Не беспокойтесь, они пропадут после завершения остальных процедур.  
@@ -572,7 +557,7 @@ ms.lasthandoff: 05/13/2017
   
      Обратите внимание на то, что в списке **Query and Update Data** (Запрос и обновление данных) появились два пункта, как показано на рисунке ниже.  
   
-     ![Элементы Todo добавляются в список.](~/designers/media/wpfquickstart3.PNG "WPFQuickStart3")  
+     ![Элементы Todo добавляются в список.](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")  
   
 4.  Установите флажок **Do something else** в списке.  
   
@@ -581,8 +566,8 @@ ms.lasthandoff: 05/13/2017
 ## <a name="next-steps"></a>Дальнейшие действия  
  Вы ознакомились с весьма простым примером классического приложения WPF, сервером для которого является Azure. Безусловно, реальное приложение скорее всего будет гораздо более сложными, но основные принципы те же. См. статью [WPF в .NET Framework](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx).  
   
- Вы можете сделать пользовательский интерфейс более привлекательным, добавив цвета, фигуры, графические элементы и даже анимацию. См. раздел [Разработка XAML в Visual Studio и Blend для Visual Studio](../designers/designing-xaml-in-visual-studio.md).  
-  
+ Вы можете сделать пользовательский интерфейс более привлекательным, добавив цвета, фигуры, графические элементы и даже анимацию. См. разделы [Создание пользовательского интерфейса с помощью конструктора XAML в Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) и [Создание пользовательского интерфейса с помощью Blend для Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md). Сравнение средств см. в разделе [Разработка XAML в Visual Studio и Blend для Visual Studio](../designers/designing-xaml-in-visual-studio.md).  
+
  С помощью мобильных служб Azure можно подключаться к существующим базам данных SQL или другим источникам данных. См. [документацию по мобильным службам](http://azure.microsoft.com/en-us/services/app-service/mobile/).  
   
 ## <a name="see-also"></a>См. также  

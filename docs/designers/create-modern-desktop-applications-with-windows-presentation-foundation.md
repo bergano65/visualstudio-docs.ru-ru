@@ -1,7 +1,7 @@
 ---
 title: "Создание современных приложений для настольных систем с помощью Windows Presentation Foundation | Документы Майкрософт"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 7/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -13,38 +13,17 @@ caps.latest.revision: 3
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
-ms.openlocfilehash: b88bfe69145fadf0d4c6eac53ea6e4f206f9226b
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: c454fae0dd607c0fddfe84add6d51d683dea1b46
 ms.contentlocale: ru-ru
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 07/18/2017
 
 ---
-# Создание современных приложений для настольных систем с помощью Windows Presentation Foundation
-<a id="create-modern-desktop-applications-with-windows-presentation-foundation" class="xliff"></a>
-Windows Presentation Foundation (WPF) в Visual Studio 2015 предоставляет разработчикам унифицированную модель программирования для создания современных бизнес-приложений Windows для настольных систем.  
-  
- [Начало работы с WPF](../designers/getting-started-with-wpf.md)  
-  
- [Разработка XAML в Visual Studio и Blend для Visual Studio](../designers/designing-xaml-in-visual-studio.md)  
-  
- Платформа WPF в последних версиях .NET Framework существенно не изменялась с версии 4.0. Документация для версии 4.0 также применима к текущей версии:  
-  
- [Введение в WPF](https://msdn.microsoft.com/en-us/library/aa970268\(v=vs.100\).aspx)  
-  
- [WPF в .NET Framework](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx)
+# <a name="create-modern-desktop-applications-with-windows-presentation-foundation"></a>Создание современных приложений для настольных систем с помощью Windows Presentation Foundation
+
+Windows Presentation Foundation (WPF) в Visual Studio предоставляет разработчикам унифицированную модель программирования для создания современных бизнес-приложений Windows для настольных систем.  
+
+Если вам нужно подробное пошаговое руководство, начните с раздела [Начало работы с WPF](../designers/getting-started-with-wpf.md) и двигайтесь далее.
+
+Сравнение доступных средств см. в разделе [Разработка XAML в Visual Studio и Blend для Visual Studio](../designers/designing-xaml-in-visual-studio.md).

@@ -1,7 +1,7 @@
 ---
 title: "Перенос, миграция и обновление проектов Visual Studio | Документы Майкрософт"
 ms.custom: 
-ms.date: 04/28/2017
+ms.date: 7/14/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -23,48 +23,40 @@ ms.assetid: bee759bd-6ff5-4c2e-913a-ea7d3c906c29
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: bd2199e68bf23a191efe624da311dd11217028a8
-ms.openlocfilehash: 77042a35175aa13d27ed31d1562198e800e065ae
+ms.translationtype: HT
+ms.sourcegitcommit: dc7a0c10390de67b56a83d2824224bed24125db0
+ms.openlocfilehash: 922bec8857910ae4fa1497137eb2e3d70ee133c7
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 07/17/2017
 
 ---
+
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Перенос, миграция и обновление проектов Visual Studio
 
-Как правило, каждая новая версия Visual Studio поддерживает большую часть типов проектов, файлов и других ресурсов предыдущих выпусков. С ними можно работать, как обычно, и при условии, что вы не зависите от новых функций, Visual Studio сохраняет обратную совместимость с предыдущими версиями Visual Studio 2015, Visual Studio 2013 и Visual Studio 2012. (См. [заметки о выпуске](https://www.visualstudio.com/vs/release-notes/), чтобы узнать, какие функции к какой версии относятся.) Но поддержка некоторых типов со временем меняется. Более новая версия Visual Studio может больше не поддерживать некоторые типы или же может потребоваться перенести и обновить их так, чтобы они не являлись обратно совместимыми. В этом разделе содержатся сведения о затронутых типах проектов в Visual Studio 2017. Список поддерживаемых типов для Visual Studio 2017 можно найти в разделе [Целевая платформа и совместимость](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs).
+Как правило, каждая новая версия Visual Studio поддерживает большую часть типов проектов, файлов и других ресурсов предыдущих выпусков. С ними можно работать, как обычно, и при условии, что вы не зависите от новых функций, Visual Studio сохраняет обратную совместимость с предыдущими версиями Visual Studio 2015, Visual Studio 2013 и Visual Studio 2012. (См. [заметки о выпуске](https://www.visualstudio.com/vs/release-notes/), чтобы узнать, какие функции к какой версии относятся.)
 
-> [!Note]
-> Для открытия определенных типов проектов требуется добавить соответствующую рабочую нагрузку с помощью установщика Visual Studio.
+Но поддержка некоторых типов со временем меняется. Более новая версия Visual Studio может больше не поддерживать некоторые типы или же может потребоваться перенести и обновить их так, чтобы они не являлись обратно совместимыми. Текущее состояние проблем с миграцией см. на [сайте сообщества разработчиков Visual Studio](https://developercommunity.visualstudio.com).
 
+> [!Important]
+> Этот раздел содержит только сведения о типах проектов в Visual Studio 2017, связанных с миграцией. Здесь не указаны поддерживаемые типы проектов, не имеющие проблем с миграцией. Этот список находится на странице [целевой платформы и совместимости](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs). Обратите внимание, что некоторые типы проектов больше не поддерживаются в Visual Studio 2017 и поэтому не могут быть перенесены.
+
+> [!Important]
+> Для открытия отдельных типов проектов требуется добавить соответствующие рабочие нагрузки в установщике Visual Studio. При отсутствии установленной рабочей нагрузки Visual Studio сообщает о неизвестном или несовместимом типе проекта. В этом случае проверьте параметры установки и повторите попытку. Просмотрите раздел [целевой платформы и совместимости](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs) для получения сведений о поддержке проектов в Visual Studio 2017.
 
 ## <a name="projects"></a>Проекты
 
-В следующем списке описывается поддержка проектов Visual Studio 2017, созданных в более ранних версиях. Если здесь отсутствует проект или тип файла, который должен быть, проверьте [версию Visual Studio 2015 в этом разделе](https://msdn.microsoft.com/library/hh266747.aspx) и запишите ее в комментариях ниже.
+В следующем списке описывается поддержка проектов Visual Studio 2017, созданных в более ранних версиях.
+
+Если здесь отсутствует проект или тип файла, который должен быть, проверьте [версию Visual Studio 2015 в этом разделе](https://msdn.microsoft.com/library/hh266747.aspx) и запишите ее в комментариях ниже.
 
 | Тип проекта | Поддержка |
 | --- | --- |
-| Проекты .NET Core (XPROJ) | В проектах, созданных в Visual Studio 2015, использовались предварительные версии средств, включающие XPROJ-файл проекта. При открытии XPROJ-файла в Visual Studio 2017 вам будет предложено перенести файл в формат CSPROJ (создается резервная копия XPROJ-файла). Этот формат CSPROJ для проектов .NET Core не поддерживается в VS 2015 и более ранних версиях.  Формат XPROJ не поддерживается в Visual Studio 2017, за исключением переноса в формат CSPROJ. Дополнительные сведения см. в статье [Перенос проектов .NET Core в формат .csproj](https://docs.microsoft.com/dotnet/articles/core/migration/#visual-studio-2017).|
+| Проекты .NET Core (XPROJ) | В проектах, созданных в Visual Studio 2015, использовались предварительные версии средств, включающие XPROJ-файл проекта. При открытии XPROJ-файла в Visual Studio 2017 вам будет предложено перенести файл в формат CSPROJ (создается резервная копия XPROJ-файла). Этот формат CSPROJ для проектов .NET Core не поддерживается в VS 2015 и более ранних версиях.  Формат XPROJ не поддерживается в Visual Studio 2017, за исключением переноса в формат CSPROJ. Дополнительные сведения см. в статье [Перенос проектов .NET Core в формат .csproj](https://docs.microsoft.com/dotnet/core/migration/#visual-studio-2017).|
 | Веб-приложение ASP.NET и веб-приложения ASP.NET Core с включенной службой Application Insights | В Visual Studio сведения о ресурсах хранятся в реестре для каждого экземпляра пользователя. Это действует в случае, если пользователь не открыл проект и хочет найти данные Azure Application Insights. Расположение реестра в Visual Studio 2015 отличается от расположения реестра в Visual Studio 2017, поэтому конфликты отсутствуют.<br/><br/>Когда пользователь создает веб-приложение ASP.NET или веб-приложение ASP.NET Core, ресурс сохраняется в SUO-файл. Пользователь может открыть проект в Visual Studio 2015 или 2017 и сведения о ресурсе будут использоваться в обеих версиях до тех пор, пока Visual Studio поддерживает проекты и решения, используемые в обеих версиях. Пользователям потребуется пройти проверку подлинности один раз в каждой версии продукта. Например, если проект создается в Visual Studio 2015 и открывается в Visual Studio 2017, пользователю потребуется пройти проверку подлинности в Visual Studio 2017 г. |
 | Веб-форма или форма Windows C#/Visual Basic | Проект можно открыть в Visual Studio 2017 и Visual Studio 2015. |
 | Проекты модульных тестов базы данных (CSPROJ, VBPROJ)    | Старые проекты модульных тестов данных будут загружены в Visual Studio 2017, но они будут использовать GAC-версию зависимостей. Чтобы обновить проект модульного теста для использования последних зависимостей, щелкните проект правой кнопкой мыши в обозревателе решений и выберите **Преобразовать в проект модульного тестирования SQL Server**. |
 | F# | В Visual Studio 2017 можно открывать проекты, созданные в Visual Studio 2013 и 2015. Чтобы включить функции Visual Studio 2017 в этих проектах, откройте окно свойств проекта, и измените целевой объект fsharp.core на F# 4.1. Обратите внимание, что вариант **Поддержка языка F #** в установщике Visual Studio не выбран по умолчанию с рабочими нагрузками .NET; необходимо включить его, выбрав соответствующий параметр для рабочей нагрузки или выбрав его на вкладке **Отдельные компоненты** в разделе **Действия разработки**. |
-| InstallShield<br/>Установка MSI | Проекты установщика, созданные в Visual Studio 2010, можно открыть в более поздних версиях с помощью [расширения проектов установщика Visual Studio](https://marketplace.visualstudio.com/items?itemName=UnniRavindranathan-MSFT.MicrosoftVisualStudio2013InstallerProjects). Также поддержку таких проектов можно выполнять с помощью [InstallShield Limited Edition](https://blogs.msdn.microsoft.com/visualstudio/2013/08/15/whats-new-in-visual-studio-2013-and-installshield-limited-edition/). |
+| InstallShield<br/>Установка MSI | Проекты установщика, созданные в Visual Studio 2010, можно открыть в более поздних версиях с помощью [расширения проектов установщика Visual Studio](https://marketplace.visualstudio.com/items?itemName=UnniRavindranathan-MSFT.MicrosoftVisualStudio2013InstallerProjects). Также см. сведения о [расширении набора инструментов WiX для Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). InstallShield Limited Edition больше не входит в состав Visual Studio. Уточните доступность этого решения для Visual Studio 2017 у компании [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio). |
 | LightSwitch | LightSwitch больше не поддерживается в Visual Studio 2017. Проекты, созданные в Visual Studio 2012 и более ранних версиях и открытые в Visual Studio 2013 или Visual Studio 2015, будут обновлены и затем могут быть открыты только в Visual Studio 2013 или Visual Studio 2015. |
 | Инструменты Microsoft Azure для Visual Studio | Для открытия этих типов проектов сначала установите [пакет Azure SDK для .NET](http://azure.microsoft.com/downloads/), а затем откройте соответствующий проект. При необходимости проект будет обновлен. |
 | Платформа MVC ("модель-представление-контроллер") (ASP.NET MVC) | Поддержка версий MVC и Visual Studio:<ul><li>Visual Studio 2010 с пакетом обновления 1 (SP1) поддерживает MVC 2 и MVC 3. Поддержка MVC 4 добавляется с помощью [скачивания ASP.NET 4 MVC 4 для Visual Studio 2010 с пакетом обновления 1 (SP1)](https://www.microsoft.com/download/details.aspx?id=30683).</li><li>Visual Studio 2012 поддерживает только MVC 3 и MVC 4.</li><li>Visual Studio 2013 поддерживает только MVC 4 и MVC 5</li><li>Visual Studio 2017 и Visual Studio 2015 поддерживают MVC 4 (можно открывать существующие проекты, но не создавать новые) и MVC 5.</li></ul><br/><br/>Обновление версий MVC:<ul><li>Сведения об автоматическом обновлении MVC 2 до MCV 3 см. в разделе [Средство обновления приложения MVC 3 ASP.NET](http://go.microsoft.com/fwlink/?LinkID=238178).</li><li>Сведения об обновлении MVC 2 до MVC 3 вручную см. в разделе [Обновление проекта ASP.NET MVC 2 до обновления инструментов ASP.NET MVC 3](http://go.microsoft.com/fwlink/?linkid=238178).</li><li>Сведения об обновлении MVC3 до MVC 4 вручную см. в разделе [Обновление проекта ASP.NET MVC 3 до ASP.NET MVC 4](http://www.asp.net/whitepapers/mvc4-release-notes). Если проект ориентирован на платформу .NET Framework 3.5 с пакетом обновления 1 (SP1), необходимо переориентировать его на .NET Framework 4.</li><li>Сведения об обновлении MVC 4 до MVC 5 вручную см. в разделе [Обновление проекта ASP.NET MVC 4 и веб-API до ASP.NET MVC 5 и веб-API 2](https://www.asp.net/mvc/overview/releases/how-to-upgrade-an-aspnet-mvc-4-and-web-api-project-to-aspnet-mvc-5-and-web-api-2).</li></ul> |
