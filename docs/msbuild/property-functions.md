@@ -29,10 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 203e1e27cc892e96b103fc6cb22a73672a8e16af
-ms.openlocfilehash: f351952a256679ec2d6c9dc2daa5288ca7214ad0
-ms.lasthandoff: 03/01/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
+ms.openlocfilehash: c52ed7c7e6de33d10d2a653a1072766aa9fb8023
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/31/2017
 
 ---
 # <a name="property-functions"></a>Функции свойств
@@ -98,6 +99,10 @@ ms.lasthandoff: 03/01/2017
 -   System.IO.Path  
 
 -   System.Math  
+
+-   System.Runtime.InteropServices.OSPlatform
+
+-   System.Runtime.InteropServices.RuntimeInformation
 
 -   System.UInt16  
 
@@ -195,6 +200,15 @@ ms.lasthandoff: 03/01/2017
 |Целое значение BitwiseAnd(первое целое значение, второе целое значение)|Примените побитовый параметр `AND` к первому и второму значению (первое & второе).|  
 |Целое значение BitwiseXor(первое целое значение, второе целое значение)|Примените побитовый параметр `XOR` к первому и второму значению (первое ^ второе).|  
 |Целое значение BitwiseNot(первое целое значение)|Примените побитовый параметр `NOT` (~первое значение).|  
+|bool IsOsPlatform(строка platformString)|Указание того, является ли текущая платформа ОС `platformString`. `platformString` должен быть элементом `OSPlatform`.|
+|bool IsOSUnixLike|Значение true, если текущая операционная система — это система Unix.|
+|Строка NormalizePath(параметры строка[] путь)|Возвращает канонический полный путь для предоставленного пути и проверяет правильность знаков разделения для каталогов, используемых в текущей операционной системе.|
+|Строка NormalizeDirectory(параметры строка[] путь)|Возвращает канонический полный путь для предоставленного каталога и проверяет правильность знаков разделения для каталогов, используемых в текущей операционной системе, а также наличие косой черты в конце.|
+|Строка EnsureTrailingSlash(строка путь)|Если в конце заданного пути нет косой черты, она добавляется. Если путь является пустой строкой, он не изменяется.|
+|Строка GetPathOfFileAbove(строка файл, строка startingDirectory)|Поиск файла в зависимости от расположения текущего файла сборки, или на основе `startingDirectory`, если он указан.|
+|GetDirectoryNameOfFileAbove(строка startingDirectory, строка fileName)|Поиск файла в указанном каталоге либо в структуре каталогов над ним.|
+|Строка MakeRelative(строка basePath, строка путь)|Делает `path` относительным для `basePath`. `basePath` должен быть абсолютным каталогом. Если `path` невозможно сделать относительным, он возвращается дословно. Аналогично `Uri.MakeRelativeUri`.|
+|Строка ValueOrDefault(стока conditionValue, строка defaultValue)|Возвращение строки в параметре "defaultValue" только в том случае, если параметр "conditionValue" пуст; в противном случае возвращается значение conditionValue.|
 
 ##  <a name="nested-property-functions"></a>Вложенные функции свойства  
  Функции свойства можно объединять для формирования более сложных функций, как показано в следующем примере.  

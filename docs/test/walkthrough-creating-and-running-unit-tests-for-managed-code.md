@@ -33,10 +33,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: a00b80092a44190d626b93b0ecc5689bafd1a4e3
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
+ms.openlocfilehash: 8b60481a9895e818773273cecbf89212f557d620
+ms.contentlocale: ru-ru
+ms.lasthandoff: 06/03/2017
 
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода
@@ -124,7 +125,7 @@ public void Debit(double amount)
 ```  
   
 ##  <a name="BKMK_Create_a_unit_test_project"></a> Создание проекта модульного теста  
- **Предварительное требование**: необходимо выполнить действия, приведенные в подразделе [Подготовка к выполнению пошагового руководства](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
+ **Предварительное требование**: необходимо выполнить действия, приведенные в подразделе [Prepare the walkthrough](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
   
 #### <a name="to-create-a-unit-test-project"></a>Создание проекта модульного теста  
   
@@ -193,7 +194,7 @@ using BankAccountNS;
   
  Путем анализа тестируемого метода мы определили, что необходимо проверить по меньшей мере три поведения.  
   
-1.  Метод создает исключение [ArgumentOutOfRangeException](assetId:///ArgumentOutOfRangeException?qualifyHint=False&autoUpgrade=True) , если сумма по дебету превышает баланс.  
+1.  Метод создает исключение <xref:System.ArgumentOutOfRangeException> , если сумма по дебету превышает баланс.  
   
 2.  Он также создает исключение `ArgumentOutOfRangeException` , если сумма по дебету меньше нуля.  
   
@@ -227,7 +228,7 @@ using BankAccountNS;
     }  
     ```  
   
- Этот метод достаточно прост. Мы создаем новый объект `BankAccount` с начальным балансом, а затем снимаем допустимое значение. Используем платформу модульных тестов Майкрософт для метода <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> управляемого кода, чтобы проверить соответствие конечного баланса ожидаемому.  
+ Этот метод достаточно прост. Мы создаем новый объект `BankAccount` с начальным балансом, а затем снимаем допустимое значение. Используем платформу модульных тестов Microsoft для метода <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> управляемого кода, чтобы проверить соответствие конечного баланса ожидаемому.  
   
 ###  <a name="BKMK_Test_method_requirements"></a> Требования к методу теста  
  Метод теста должен удовлетворять следующим требованиям:  
@@ -253,7 +254,7 @@ using BankAccountNS;
 ##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Исправление кода и повторный запуск тестов  
  **Анализ результатов теста**  
   
- Результат теста содержит сообщение, описывающее возникшую ошибку. Для метода `AreEquals` сообщение отражает ожидаемый результат (параметр **Expected\<*XXX*>**) и фактически полученный (параметр**Actual\<*YYY*>**). Ожидалось, что баланс уменьшится относительно начального баланса, но вместо этого произошло его увеличение на сумму списания.  
+ Результат теста содержит сообщение, описывающее возникшую ошибку. Для метода `AreEquals` сообщение отражает ожидаемый результат (параметр **Expected\<*XXX*>**) и фактически полученный (параметр **Actual\<*YYY*>**). Ожидалось, что баланс уменьшится относительно начального баланса, но вместо этого произошло его увеличение на сумму списания.  
   
  Повторная проверка кода "Дебит" показывает, что модульный тест позволил успешно найти ошибку. Сумма списания добавляется на баланс счета, а не вычитается.  
   
@@ -309,7 +310,7 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
   
 ```  
   
- Мы используем атрибут <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> для подтверждения правильности созданного исключения. Данный атрибут приводит к тому, что тест не будет пройден, если не возникнет исключения `ArgumentOutOfRangeException` . Запуск теста как с положительными, так и с отрицательными значениями `debitAmount`, а также временное изменение тестируемого метода для возвращения универсального исключения <xref:System.ApplicationException> при размере списания меньше нуля показывает, что тест работает правильно. Чтобы проверить случай, когда размер списания превышает баланс, необходимо:  
+ Мы используем атрибут <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> для подтверждения правильности созданного исключения. Данный атрибут приводит к тому, что тест не будет пройден, если не возникнет исключения `ArgumentOutOfRangeException` . Запуск теста как с положительными, так и с отрицательными значениями `debitAmount` , а также временное изменение тестируемого метода для возвращения универсального исключения <xref:System.ApplicationException> при размере списания меньше нуля показывает, что тест работает правильно. Чтобы проверить случай, когда размер списания превышает баланс, необходимо:  
   
 1.  Создать новый метод теста с именем `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange`.  
   
@@ -331,7 +332,7 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 throw new ArgumentOutOfRangeException("amount");  
 ```  
   
- Поиск в библиотеке MSDN позволяет обнаружить существование конструктора, сообщающего более детальную информацию. <xref:System.ArgumentOutOfRangeException.%23ctor%2A>`(String, Object, String)` включает имя аргумента, значение аргумента и определяемое пользователем сообщение. Мы можем выполнить рефакторинг тестируемого метода для использования данного конструктора. Более того, можно использовать открытые для общего доступа члены типа для указания ошибок.  
+ Поиск в библиотеке MSDN позволяет обнаружить существование конструктора, сообщающего более детальную информацию. <xref:System.ArgumentOutOfRangeException.%23ctor%2A>`(String, Object, String)` включает имя аргумента, значения аргумента и определяемое пользователем сообщение. Мы можем выполнить рефакторинг тестируемого метода для использования данного конструктора. Более того, можно использовать открытые для общего доступа члены типа для указания ошибок.  
   
  **Рефакторинг тестируемого кода**  
   
@@ -360,7 +361,7 @@ public const string DebitAmountLessThanZeroMessage = "Debit amount less than zer
 // ...  
 ```  
   
- **Рефакторинг методов теста**  
+ **Рефакторинг тестовых методов**  
   
  В данном тестовом методе сначала удалим атрибут `ExpectedException` . Вместо этого перехватываем возвращаемое исключение и проверяем, что оно было создано в правильном условном операторе. Однако теперь необходимо выбрать между двумя возможными вариантами для проверки оставшихся условий. Например, в методе `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` можно выполнить одно из следующих действий:  
   
@@ -368,7 +369,7 @@ public const string DebitAmountLessThanZeroMessage = "Debit amount less than zer
   
 -   Проверить, что сообщение (третий параметр конструктора) включает `DebitAmountExceedsBalanceMessage` , определенное в классе `BankAccount` .  
   
- Метод <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> платформы модульных тестов Майкрософт позволяет проверить второй параметр без вычислений, необходимых в первом случае.  
+ Метод <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> платформы модульных тестов Microsoft позволяет проверить второй параметр без вычислений, необходимых в первом случае.  
   
  Вторая попытка корректировки `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` может выглядеть следующим образом:  
   
@@ -404,7 +405,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
   
 3.  Если значение `debitAmount` допустимо (т.е. меньше баланса, но больше нуля), то исключение перехватывается, а утверждение никогда не сработает. Метод теста проходит успешно. Это не хорошо, поскольку метод теста должен был завершиться ошибкой в том случае, если исключение не создается.  
   
- Третьим фактом является ошибка в методе теста. Попытаемся разрешить проблему, добавив утверждение <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> в конце метода теста для обработки случая, когда исключение не создается.  
+ Третьим фактом является ошибка в методе теста. Попытаемся разрешить проблему, добавив утверждение <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> в конце тестового метода для обработки случая, когда исключение не создается.  
   
  Однако повторное тестирование показывает, что тест теперь оказывается непройденным при перехватывании верного исключения. Оператор catch сбрасывает исключение и метод продолжает выполняться, приводя к ошибочному срабатыванию следующего утверждения. Чтобы разрешить эту новую проблему, добавим оператор `return` после `StringAssert`. Повторное тестирование подтверждает, что проблемы решены. Наша окончательная версия `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` выглядит следующим образом:  
   

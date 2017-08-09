@@ -1,7 +1,7 @@
 ---
 title: "Средства производительности в приложениях Windows 8 и Windows Server 2012 | Документы Майкрософт"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 06/19/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -28,19 +28,20 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 65bceca75b87aaf187926ebbed1a54ce4f0e8eec
-ms.openlocfilehash: c1b3058b6a1af9161f71cbea995c562670013e86
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: baf12bba10dfba15f10d75fd1f7a4cdc4000e441
+ms.openlocfilehash: a5d885f8604bdb52907adae4f231b41e0881017f
+ms.contentlocale: ru-ru
+ms.lasthandoff: 06/21/2017
 
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Средства производительности в приложениях Windows 8 и Windows Server 2012
-Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым средства производительности Visual Studio собирают данные на этих платформах. Приложениям для магазина Windows также требуются новые методы сбора. В этом разделе описаны изменения средств производительности на платформах Windows 8 и Windows Server 2012.  
+Возможности расширенной безопасности, появившиеся в Windows 8 и Windows Server 2012, требовали значительных изменений в способе, которым средства производительности Visual Studio собирают данные на этих платформах. Приложениям для магазина Windows также требуются новые методы сбора. Этот раздел описывает изменения средств производительности, начиная с платформ Windows 8 и Windows Server 2012.
   
 > [!NOTE]
->  Средства производительности в других поддерживаемых версиях Windows (Windows 7, Windows Server 2008 R2) не изменились.  
+>  Средства производительности в других поддерживаемых версиях Windows (Windows 7, Windows Server 2008 R2) не изменились.
   
-##  <a name="a-namebkmkinthistopica-in-this-topic"></a><a name="BKMK_In_this_topic"></a> Содержание раздела  
+##  <a name="BKMK_In_this_topic"></a> Содержание раздела  
  [Сбор данных в приложениях для Магазина Windows из интегрированной среды разработки Visual Studio](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
   
  [Сбор данных в приложениях, выполняющихся на рабочем столе в Windows 8 или в Windows Server 2012, из интегрированной среды разработки Visual Studio](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
@@ -51,7 +52,7 @@ ms.lasthandoff: 02/22/2017
   
  [Сбора данных уровневого взаимодействия (TIP)](#BKMK_Collecting_tier_interaction__TIP__data)  
   
-##  <a name="a-namebkmkprofilingwindowsstoreappsfromthevisualstudioidea-collecting-data-on-windows-store-apps-from-the-visual-studio-ide"></a><a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Сбор данных в приложениях для Магазина Windows из интегрированной среды разработки Visual Studio  
+##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Сбор данных в приложениях для Магазина Windows из интегрированной среды разработки Visual Studio  
  При профилировании приложения для Магазина Windows, написанного на языке JavaScript и HTML 5, собираются данные инструментирования для кода javascript. При профилировании приложения для Магазина Windows или компонента, написанного на Visual C++, Visual C# или Visual Basic, собираются данные выборки для машинного и управляемого кода. Вы можете профилировать приложение локально или на удаленном компьютере.  
   
  Эти функции и параметры профилирования не поддерживаются при профилировании приложений для Магазина Windows:  
@@ -88,19 +89,19 @@ ms.lasthandoff: 02/22/2017
   
  [Содержание раздела](#BKMK_In_this_topic)  
   
-##  <a name="a-namebkmkprofilingappsrunningonthewindows8desktoporonwindowsserver2012fromthevisualstudioidea-collecting-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-from-the-visual-studio-ide"></a><a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Сбор данных в приложениях, выполняющихся на рабочем столе в Windows 8 или в Windows Server 2012, из интегрированной среды разработки Visual Studio  
+##  <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Сбор данных в приложениях, выполняющихся на рабочем столе в Windows 8 или в Windows Server 2012, из интегрированной среды разработки Visual Studio  
  Профилирование с помощью метода инструментирования не изменено для Windows 8.  
   
  Профилирование уровневого взаимодействия (TIP) с помощью метода выборки не поддерживается.  
   
-###  <a name="a-namebkmkprofilingappsrunningonthewindows8desktoporonwindowsserver2012byusingsamplingfromthevisualstudioidea-collecting-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-by-using-sampling-from-the-visual-studio-ide"></a><a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> Сбор данных в приложениях, выполняющихся на рабочем столе в Windows 8 или в Windows Server 2012, с помощью выборки из интегрированной среды разработки Visual Studio  
- Эти функции и параметры профилирования не поддерживаются при профилировании приложения Windows 8 для настольных систем или приложения Windows Server 2012 с помощью метода выборки:  
+###  <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> Сбор данных в приложениях, выполняющихся на рабочем столе в Windows 8 или в Windows Server 2012, с помощью выборки из интегрированной среды разработки Visual Studio  
+ Эти функции и параметры профилирования не поддерживаются при профилировании приложения Windows 8 для настольных систем или приложения Windows Server 2012 с помощью метода выборки:
   
--   Профилирование уровневого взаимодействия (TIP). Поддерживается сбор данных TIP с помощью метода инструментирования.  
+-   Профилирование уровневого взаимодействия (TIP). Поддерживается сбор данных TIP с помощью метода инструментирования.
   
 -   Параметры выборки, например установка интервала времени и события выборки, а также сбор дополнительных данных счетчика производительности.  
   
-##  <a name="a-namebkmkprofilingfromthecommandlinea-profiling-from-the-command-line"></a><a name="BKMK_Profiling_from_the_command_line"></a> Профилирование из командной строки  
+##  <a name="BKMK_Profiling_from_the_command_line"></a> Профилирование из командной строки  
  Используйте две следующие программы командной строки для сбора данных профилирования на устройствах Windows 8 и Windows Server 2012, в том числе тех, на которых не установлен Visual Studio.  
   
 |Имя программы|Описание|  
@@ -127,14 +128,14 @@ ms.lasthandoff: 02/22/2017
   
 -   Параметры выборки, например установка интервала времени и события выборки, а также сбор дополнительных данных счетчика производительности.  
   
-##  <a name="a-namebkmkcollectingtierinteractiontipdataa-collecting-tier-interaction-tip-data"></a><a name="BKMK_Collecting_tier_interaction__TIP__data"></a> Сбора данных уровневого взаимодействия (TIP)  
+##  <a name="BKMK_Collecting_tier_interaction__TIP__data"></a> Сбора данных уровневого взаимодействия (TIP)  
  Профилирование уровневого взаимодействия позволяет получить дополнительные сведения о времени выполнения функций многоуровневых приложений, взаимодействующих с базой данных посредством служб ADO.NET. Данные собираются только для синхронных вызовов функций.  
   
  **Выпуски Visual Studio**  
   
- Данные профилирования уровневого взаимодействия можно собирать с помощью [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] или [!INCLUDE[vs_pro_current_short](../profiling/includes/vs_pro_current_short_md.md)]. Однако данные профилирования уровневого взаимодействия можно просматривать только в [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] и [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)].  
+ Данные профилирования уровневого взаимодействия можно собирать с помощью [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]или [!INCLUDE[vs_pro_current_short](../profiling/includes/vs_pro_current_short_md.md)]. Однако данные профилирования уровневого взаимодействия можно просматривать только в [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] и [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)].  
   
- **Windows 8 и Windows Server 2012**  
+ **Windows 8 или Windows Server 2012**  
   
 1.  Чтобы собрать данные об уровневом взаимодействии из приложений, выполняющихся на рабочем столе Windows 8 или Windows Server 2012, необходимо использовать метод инструментирования.  
   

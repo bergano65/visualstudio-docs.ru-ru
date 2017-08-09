@@ -1,50 +1,67 @@
 ---
-title: "WriteAllTLogs | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "WriteAllTLogs"
-apilocation: 
-  - "filetracker.dll"
-apitype: "COM"
-helpviewer_keywords: 
-  - "WriteAllTLogs"
+title: "WriteAllTLogs | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+apiname:
+- WriteAllTLogs
+apilocation:
+- filetracker.dll
+apitype: COM
+helpviewer_keywords:
+- WriteAllTLogs
 ms.assetid: 1fa3e10b-263c-4960-a9ad-485c02a7a872
 caps.latest.revision: 5
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 5
----
-# WriteAllTLogs
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
+ms.openlocfilehash: bceb71feaa265ba52af3716a090bbf5ecf24a6b8
+ms.contentlocale: ru-ru
+ms.lasthandoff: 06/03/2017
 
-Записывает журналы отслеживания для всех контекстов и потоков.  
+---
+# <a name="writealltlogs"></a>WriteAllTLogs
+Записывает журналы отслеживания для всех потоков и контекстов.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```  
+```cpp
 HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName);  
 ```  
   
-#### Параметры  
- \[входящий\] `intermediateDirectory`  
- Каталог, в который записывается журнал отслеживания.  
+#### <a name="parameters"></a>Параметры  
+ [in] `intermediateDirectory`  
+ Каталог, в котором хранится журнал отслеживания.  
   
- \[входящий\] `tlogRootName`  
- Корень имени файла журнала.  
+ [in] `tlogRootName`  
+ Имя корневой папки для имени файла журнала.  
   
-## Возвращаемое значение  
- [HRESULT](assetId:///HRESULT?qualifyHint=False&autoUpgrade=True) с установленным битом [SUCCEEDED](assetId:///SUCCEEDED?qualifyHint=False&autoUpgrade=True), если был создан контекст отслеживания.  
+## <a name="return-value"></a>Возвращаемое значение  
+ **HRESULT** с установленным битом **SUCCEEDED**, если контекст отслеживания был создан.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** FileTracker.h  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [WriteContextTLogs](../msbuild/writecontexttlogs.md)
