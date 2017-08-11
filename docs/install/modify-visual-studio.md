@@ -18,30 +18,15 @@ ms.assetid: 3399ea7b-a291-4a9e-80a1-b861a21afa1d
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: f8d907587deb8e14e777d9c69f07da6d819143e5
+ms.translationtype: HT
+ms.sourcegitcommit: 89f86a5935ad283ef5c0e29ea2db0ae22cf603a8
+ms.openlocfilehash: 3899b139066dddf0b39acaabe2874e0a7d9ad3d3
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/07/2017
 
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Изменение Visual Studio 2017 путем добавления или удаления рабочих нагрузок и компонентов
-Мы упростили не только персонализацию Visual Studio в соответствии с выполняемыми задачами, но и настройку самой среды Visual Studio. Для этого больше не нужно обращаться к панели управления: просто запустите установщик Visual Studio и внесите нужные изменения.  
+Мы упростили не только персонализацию Visual Studio в соответствии с выполняемыми задачами, но и настройку самой среды Visual Studio. Теперь больше не нужно обращаться к панели управления. Вместо этого запустите Visual Studio Installer и внесите нужные изменения.
 
 Ниже описывается порядок действий.  
 
@@ -50,20 +35,20 @@ ms.lasthandoff: 05/13/2017
 
 1.  Найдите установщик Visual Studio на своем компьютере.  
 
-     Например, на компьютере с юбилейным обновлением Windows 10 нажмите кнопку **Пуск** и прокрутите список до буквы **У**. Вы увидите пункт **Установщик Visual Studio**.  
+     Например, на компьютере с юбилейным обновлением Windows 10 нажмите кнопку **Пуск** и прокрутите список до буквы **V**, где расположен пункт **Visual Studio Installer**.  
 
-     ![Установщик Visual Studio](~/install/media/vs2017-locate-the-visual-studio-installer.PNG "Поиск установщика Microsoft Visual Studio")
+     ![Установщик Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Поиск установщика Microsoft Visual Studio")
 
      >[!NOTE]
-     На некоторых компьютерах установщик Visual Studio может быть указан под буквой **"M"** — для **Microsoft Visual Studio**.
+     На некоторых компьютерах установщик Visual Studio может быть указан под буквой **"M"** — для **Microsoft Visual Studio**.<br/><br/> Кроме того, Visual Studio Installer можно найти в следующем расположении: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 2.  Щелкните установщик (или коснитесь его) и выберите действие **Изменить**.  
 
-     ![Запустите или измените Visual Studio](~/install/media/vs2017-modify.PNG "Изменение Visual Studio 2017")  
+     ![Запустите или измените Visual Studio](media/vs2017-modify.PNG "Изменение Visual Studio 2017")  
 
 3.  На экране **Рабочие нагрузки** выберите рабочие нагрузки, которые нужно установить, или отмените выбор тех, которые нужно удалить.  
 
-    ![Диалоговое окно программы установки Visual Studio 2017](~/install/media/vs2017-modify-workloads.PNG "Выбор рабочей нагрузки в Visual Studio 2017")
+    ![Диалоговое окно программы установки Visual Studio 2017](media/vs2017-modify-workloads.PNG "Выбор рабочей нагрузки в Visual Studio 2017")
 
 4. Еще раз щелкните или коснитесь **Изменить**.  
 
@@ -74,7 +59,7 @@ ms.lasthandoff: 05/13/2017
 Если вы не хотите пользоваться удобной функцией рабочих нагрузок для настройки установленного экземпляра Visual Studio, выберите в установщике Visual Studio вариант **Отдельные компоненты**, выберите нужные компоненты и следуйте указаниям.  
 
 ## <a name="get-support"></a>Техническая поддержка
-Иногда возникают проблемы. При сбое установки Visual Studio ознакомьтесь с советами, приведенными в статье базы знаний [Устранение неполадок и исправление ошибок установки и обновления Visual Studio 2017](https://support.microsoft.com/help/4015967/troubleshooting-visual-studio-2017-installation-and-upgrade-failures).
+Иногда возникают проблемы. При сбое установки Visual Studio ознакомьтесь с советами, приведенными на странице [Устранение неполадок и исправление ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md).
 
 ## <a name="see-also"></a>См. также  
 * [Установка Visual Studio 2017](https://go.microsoft.com/fwlink/?linkid=833223)
