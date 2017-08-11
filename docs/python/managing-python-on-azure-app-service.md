@@ -16,10 +16,10 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 5b509a46dd3dbee3a45ab2eac57242636beee17b
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: 56fccdd5e103cf29c8ea4a93ab80de7187275642
 ms.contentlocale: ru-ru
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -176,7 +176,7 @@ FastCGI — это интерфейс, работающий на уровне �
 }
 ```
 
-Сведения о командах и проверке подлинности см. в [документации по Kudu](https://github.com/projectkudu/kudu/wiki/REST-API). Вы также можете просмотреть учетные данные с помощью [`az webapp deployment list-publishing-profiles command`](https://docs.microsoft.com/cli/azure/webapp/deployment#list-publishing-profiles) из Azure CLI. Вспомогательную библиотеку для публикации команд Kudu также можно найти на сайте GitHub] (https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).
+Сведения о командах и проверке подлинности см. в [документации по Kudu](https://github.com/projectkudu/kudu/wiki/REST-API). Вы также можете просмотреть учетные данные с помощью [`az webapp deployment list-publishing-profiles command`](https://docs.microsoft.com/cli/azure/webapp/deployment#list-publishing-profiles) из Azure CLI. Вспомогательную библиотеку для отправки команд Kudu можно найти [на сайте GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).
 
 
 ### <a name="copying-libraries-into-app-source-code"></a>Копирование библиотек в исходный код приложения
@@ -188,3 +188,4 @@ FastCGI — это интерфейс, работающий на уровне �
 ### <a name="avoiding-virtual-environments"></a>Отказ от виртуальных окружений
 
 Хотя локальная работа в виртуальном окружении может помочь вам полноценно изучить нужные сайту зависимости, использовать виртуальные окружения в службе приложений не рекомендуется. Вместо этого просто установите библиотеки в основную папку Python и разверните их вместе с приложением, чтобы предотвратить конфликты зависимостей.
+

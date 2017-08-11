@@ -1,7 +1,7 @@
 ---
 title: "Эмулятор Visual Studio для Android | Документация Майкрософт"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 07/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -27,11 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 07f3e972f06707f21543b5a70c9712d9706a3980
+ms.translationtype: HT
+ms.sourcegitcommit: fd35d38110fdd82d8748a57701d15dcc1933053e
+ms.openlocfilehash: 9a0dc7e7d771fa13300c8287096e330633461400
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 07/25/2017
 
 ---
 # <a name="visual-studio-emulator-for-android"></a>Эмулятор Visual Studio для Android
@@ -39,23 +39,10 @@ ms.lasthandoff: 05/13/2017
   
  Эмулятор Visual Studio для Android обеспечивает производительность, сравнимую с быстродействием реального устройства. Однако перед публикацией приложение рекомендуется проверить на физическом устройстве.  
   
- Приложение можно протестировать в уникальном профиле устройства для каждой платформы Android, разрешений экрана и других свойств оборудования, поддерживаемых эмулятором Visual Studio для Android.  
-  
- В этом разделе содержатся следующие подразделы.  
-  
--   [Установка и удаление](#Installing)  
-  
--   [Требования к системе и обратная совместимость](#Requirements)  
-  
--   [Сетевое подключение эмулятора Visual Studio для Android](#Networking)  
-  
--   [Настройка эмулятора Visual Studio для Android](#Configuring)  
-  
--   [Возможности, которые можно тестировать в эмуляторе](#FeaturesTest)  
-  
--   [Возможности, которые нельзя тестировать в эмуляторе](#FeaturesNonTest)  
-  
--   [Ресурсы поддержки](#Support)  
+ Приложение можно протестировать в уникальном профиле устройства для каждой платформы Android, разрешений экрана и других свойств оборудования, поддерживаемых эмулятором Visual Studio для Android.
+
+> [!NOTE]
+> Мы рекомендуем использовать эмулятор Google Android совместно с инструментами Visual Studio для Apache Cordova. Дополнительные сведения см. в статье [Запуск приложения Apache Cordova на Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator).
   
 ##  <a name="Installing"></a> Установка и удаление  
  Установка  
@@ -100,7 +87,7 @@ ms.lasthandoff: 05/13/2017
   
  В Visual Studio 2015 устанавливать, удалять и запускать профили устройств можно с помощью диспетчера эмуляторов. Для доступа к диспетчеру эмуляторов выберите в меню **Сервис** пункт **Эмулятор Visual Studio для Android**.  
   
- ![Эмулятор Visual Studio для диспетчера Android](~/cross-platform/media/android_emu_manager.png "Android_Emu_Manager")  
+ ![Эмулятор Visual Studio для диспетчера Android](../cross-platform/media/android_emu_manager.png "Android_Emu_Manager")  
   
  По умолчанию существует четыре предварительно установленных профиля устройств (конфигурации телефонов KitKat и Lollipop 5" и планшетных компьютеров 7"), согласно записям белым текстом и значкам. Другие профили в списке будут затемнены до тех пор, пока не будет нажата кнопка **Установить профиль** и завершена установка. Список можно отфильтровать по уровню API. Чтобы просмотреть полные сведения о конфигурации, щелкните стрелку сведений в нижней правой части профиля.  
   

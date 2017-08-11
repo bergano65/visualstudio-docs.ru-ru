@@ -16,10 +16,10 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 04937d3cd1a16e0be90305221850e691c8d18c50
+ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
+ms.openlocfilehash: b68dc3d2fb7877349fc319ce5ea6e799f80c1dbf
 ms.contentlocale: ru-ru
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 07/26/2017
 
 ---
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 07/18/2017
 
 1. Откройте [Проект Python](python-projects.md), загруженный в Visual Studio, щелкните его правой кнопкой мыши, выберите **Добавить > Новый элемент...**, а затем выберите **Модульный тест Python** и нажмите **Добавить**.
 
-1. Это действие создает `test1.py file with code that imports the standard `unittest` module, derives a test class from `unittest.TestCase`, and invokes `unittest.main(), если запустить скрипт напрямую:
+1. Этот процесс создает файл `test1.py`, код которого при прямом вызове скрипта импортирует стандартный модуль `unittest`, производный от тестового класса `unittest.TestCase`, и вызывает метод `unittest.main()`:
 
   ```python
   import unittest

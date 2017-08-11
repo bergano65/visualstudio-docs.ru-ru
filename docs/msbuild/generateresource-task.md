@@ -37,11 +37,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
-ms.openlocfilehash: 029b5627cf8f7213dfe3bab233db01fe27aa6c49
+ms.translationtype: HT
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: d1e2efc557f90d01a955710d53a1f2724b5f5f7d
 ms.contentlocale: ru-ru
-ms.lasthandoff: 06/03/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="generateresource-task"></a>Задача GenerateResource
@@ -58,7 +58,7 @@ ms.lasthandoff: 06/03/2017
 |`ExecuteAsTool`|Необязательный параметр `Boolean` .<br /><br /> Если задано значение `true`, из соответствующей внепроцессной требуемой версии .NET Framework запустятся программы Tlbimp.exe и Aximp.exe для создания необходимых сборок-оболочек. Этот параметр разрешает настройку для различных версий `ResolveComReferences`.|  
 |`FilesWritten`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит имена всех файлов, записанных на диск. Включает файл кэша (при его наличии). Этот параметр полезен для реализаций метода Clean.|  
 |`MinimalRebuildFromTracking`|Необязательный параметр `Boolean` .<br /><br /> Получает или задает параметр, указывающий, будет ли использоваться отслеживаемая добавочная сборка. Если задано значение `true`, включится добавочная сборка. В противном случае произойдет принудительное выполнение повторной сборки.|  
-|`NeverLockTypeAssemblies`|Необязательный параметр `Boolean` .<br /><br /> Указывает имя созданных файлов, например RESOURCES-файлов. Если имя не указано, используется имя соответствующего входного файла, а создаваемый RESOURCES-файл помещается в каталог, содержащий входной файл.|  
+|`NeverLockTypeAssemblies`|Необязательный параметр `Boolean`.<br /><br /> Возвращает или задает логическое значение, указывающее, следует ли создать новый [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) для оценки файлов ресурсов (RESX) (true) или создать новый [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) только в том случае, когда файлы ресурсов ссылаются на сборку пользователя (false).|  
 |`OutputResources`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает имя созданных файлов, например RESOURCES-файлов. Если имя не указано, используется имя соответствующего входного файла, а создаваемый RESOURCES-файл помещается в каталог, содержащий входной файл.|  
 |`PublicClass`|Необязательный параметр `Boolean` .<br /><br /> Если задано значение `true`, создает класс ресурса со строгой типизацией как открытый класс.|  
 |`References`|Необязательный параметр `String[]` .<br /><br /> Ссылки для загрузки типов в RESX-файлы. Элементы данных RESX-файла могут содержать тип .NET. Этот параметр должен быть разрешен при считывании RESX-файла. Как правило, он разрешается с использованием стандартных правил загрузки типов. Если предоставить сборки в `References`, они будут иметь приоритет.<br /><br /> Для строго типизированных ресурсов этот параметр не требуется.|  
@@ -112,3 +112,4 @@ ms.lasthandoff: 06/03/2017
 ## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+
