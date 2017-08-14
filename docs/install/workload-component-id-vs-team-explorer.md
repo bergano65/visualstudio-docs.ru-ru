@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 05/10/2017
+ms.date: 08/09/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -62,6 +62,7 @@ ms.lasthandoff: 05/13/2017
 Идентификатор компонента | Имя | Версия | Тип зависимости
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.CoreEditor | Основной редактор Visual Studio | 15.0.26208.0 | Обязательное
+
 ## <a name="unaffiliated-components"></a>Самостоятельные компоненты
 
 Здесь перечислены компоненты, которые не используются рабочими нагрузками, но могут быть выбраны в качестве отдельного компонента.
