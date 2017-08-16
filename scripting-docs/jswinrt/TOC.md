@@ -5,3 +5,4 @@
 # [Обработка событий среды выполнения Windows на языке JavaScript](handling-windows-runtime-events-in-javascript.md)
 # [Представление типов среды выполнения Windows в JavaScript](javascript-representation-of-windows-runtime-types.md)
 # [Представления объектов DateTime и TimeSpan в среде выполнения Windows](windows-runtime-datetime-and-timespan-representations.md)
+# [Коды ошибок для приложений среды выполнения Windows, использующих JavaScript](error-codes-for-windows-runtime-apps-using-javascript.md)
