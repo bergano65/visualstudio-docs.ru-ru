@@ -25,15 +25,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: eb2ab9d49cdeb1ed71da8ef67841f7796862dc30
-ms.openlocfilehash: 0120e0adfed2c27ebd17d446f2f0e5c808acff92
+ms.translationtype: MT
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 24e19e5752534fb8391fa3e11f250c4a7ed8a737
 ms.contentlocale: ru-ru
-ms.lasthandoff: 02/22/2017
+ms.lasthandoff: 08/17/2017
 
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Вызов преобразования текста в расширении VS
-При создании расширения Visual Studio, например, команда меню или [доменного языка](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), можно использовать службы текстовых шаблонов для преобразования текстовых шаблонов. Получение <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating>службы и приведите его к <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.</xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating> </xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating>  
+При создании расширения Visual Studio, такого как команда меню или [доменного языка](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), службой текстовых шаблонов можно использовать для преобразования текстовых шаблонов. Получите службу типа <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> и выполните приведение к типу <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.  
   
 ## <a name="getting-the-text-templating-service"></a>Получение службы текстовых шаблонов  
   
@@ -55,9 +55,9 @@ string result = t4.ProcessTemplate(filePath, System.IO.File.ReadAllText(filePath
 ## <a name="passing-parameters-to-the-template"></a>Передача параметров в шаблоны  
  Параметры можно передавать в шаблон. Чтобы получить значения параметров в шаблоне, можно воспользоваться директивой `<#@parameter#>`.  
   
- Для этого типа параметра необходимо использовать сериализуемый или маршалируемый тип. То есть, тип должен объявляться с <xref:System.SerializableAttribute>, или он должен быть производным от <xref:System.MarshalByRefObject>.</xref:System.MarshalByRefObject> </xref:System.SerializableAttribute> Это ограничение является обязательным, потому что текстовый шаблон выполняется в отдельном домене приложения. Все встроенные типы, такие как **System.String** и **System.Int32** являются сериализуемыми.  
+ Для этого типа параметра необходимо использовать сериализуемый или маршалируемый тип. Это значит, что тип должен объявляться с типом <xref:System.SerializableAttribute> или наследоваться от типа <xref:System.MarshalByRefObject>. Это ограничение является обязательным, потому что текстовый шаблон выполняется в отдельном домене приложения. Все встроенные типы, такие как **System.String** и **System.Int32** являются сериализуемыми.  
   
- Для передачи значений параметров вызывающий код может размещать значения либо в `Session` словаре, или в <xref:System.Runtime.Remoting.Messaging.CallContext>.</xref:System.Runtime.Remoting.Messaging.CallContext>  
+ Для передачи значений параметров вызывающий код может размещать значения либо в словаре `Session`, либо в типе <xref:System.Runtime.Remoting.Messaging.CallContext>.  
   
  В следующем примере оба метода использованы для преобразования короткого тестового шаблона:  
   
@@ -94,7 +94,7 @@ string result = t4.ProcessTemplate("",
 ```  
   
 ## <a name="error-reporting-and-the-output-directive"></a>Отчеты об ошибках и директива Output  
- Любые ошибки, возникающие в процессе обработки, отображаются в окне ошибок [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Кроме того чтобы можно уведомления об ошибках, указав функцию обратного вызова, реализующий <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplatingCallback>.</xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplatingCallback>  
+ Любые ошибки, возникающие в процессе обработки, отображаются в окне ошибок [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Кроме того, чтобы настроить уведомления об ошибках, можно задать обратный вызов, реализующий <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplatingCallback>.  
   
  Если необходимо записать строку результатов в файл, полезно знать, какие расширение файла и кодировка были заданы в директиве `<#@output#>` шаблона. Эти сведения также передаются обратному вызову. Дополнительные сведения см. в разделе [директива Output T4](../modeling/t4-output-directive.md).  
   
@@ -151,15 +151,15 @@ Sample text.
  Предупреждение компилятора отображается в окне ошибок [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и создает вызов `ErrorCallback`.  
   
 ## <a name="reference-parameters"></a>Параметры ссылок  
- Можно передавать значения из текстового шаблона, используя класс параметров, который является производным от <xref:System.MarshalByRefObject>.</xref:System.MarshalByRefObject>  
+ Можно передавать значения из текстового шаблона, используя класс параметров, наследуемый от <xref:System.MarshalByRefObject>.  
   
 ## <a name="related-topics"></a>Связанные разделы  
  Создание текста из предварительно обработанного текстового шаблона  
  Вызовите метод `TransformText()` сгенерированного класса. Дополнительные сведения см. в разделе [Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
  Создание текста за пределами расширения [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
- Определите пользовательское ведущее приложение. Дополнительные сведения см. в разделе [обработки текстовых шаблонов с помощью пользовательского хост-класса](../modeling/processing-text-templates-by-using-a-custom-host.md).  
+ Определите пользовательское ведущее приложение. Дополнительные сведения см. в разделе [обработка текстовых шаблонов с помощью пользовательского хост-класса](../modeling/processing-text-templates-by-using-a-custom-host.md).  
   
  Создание исходного кода с возможностью последующей компиляции и выполнения  
- Вызов `t4.PreprocessTemplate()` метод <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.</xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>
+ Вызовите метод `t4.PreprocessTemplate()` типа <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
 
