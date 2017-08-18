@@ -1,26 +1,33 @@
 ---
-title: "Справочник (среда выполнения JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Справочник (среда выполнения JavaScript) | Документы Майкрософт"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: 0bfe50da-fd79-4e00-9458-bc667769b415
 caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
+ms.openlocfilehash: 90b22d51a79bbf6252781a49e2ac6b1749d3674f
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/11/2017
+
 ---
-# Справочник (среда выполнения JavaScript)
-API среды выполнения JavaScript \(JsRT\) позволяют добавлять возможности для создания сценариев в настольные и серверные приложения, выполняемые в системе под управлением Windows.  
+# <a name="reference-javascript-runtime"></a>Справочник (среда выполнения JavaScript)
+API среды выполнения JavaScript (JsRT) позволяют добавлять возможности для создания сценариев в настольные и серверные приложения, выполняемые в системе под управлением Windows.  
   
-## В этом подразделе  
+ Если вы собираетесь внедрить [ChakraCore](https://github.com/Microsoft/ChakraCore) в приложение, см. справочные сведения по JSRT на [вики-сайте ChakraCoreе](http://aka.ms/corejsrtref).  
+  
+## <a name="in-this-section"></a>Содержание  
  Здесь описаны определения типов, константы и перечисления, которые поддерживают размещение JsRT.  
   
--   [Определения типов \(Typedef\), константы и перечисления среды выполнения JavaScript](../chakra-hosting/javascript-runtime-typedefs-constants-and-enumerations.md)  
+-   [Определения типов, константы и перечисления среды выполнения JavaScript](../chakra-hosting/javascript-runtime-typedefs-constants-and-enumerations.md)  
   
  Следующие функции включают размещение в среде JsRT.  
   
@@ -254,6 +261,6 @@ API среды выполнения JavaScript \(JsRT\) позволяют до�
   
 -   [Функция JsVariantToValue](../chakra-hosting/jsvarianttovalue-function.md)  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Размещение среды выполнения JavaScript](../chakra-hosting/hosting-the-javascript-runtime.md)   
  [Размещение среды выполнения JavaScript](../chakra-hosting/javascript-runtime-hosting.md)

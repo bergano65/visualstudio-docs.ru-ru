@@ -1,46 +1,51 @@
 ---
-title: "Создание объектов (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "функции конструирования"
-  - "конструкторы, включение свойств и методов"
-  - "создание объектов"
-  - "создание объектов, сведения о создании объектов"
-  - "создание объектов, функции конструирования"
-  - "создание объектов, прототипы"
-  - "пользовательские объекты"
-  - "пользовательские объекты, создание"
-  - "функции конструирования"
-  - "инициализация объектов, использование конструкторов"
-  - "объекты, создание [JavaScript]"
-  - "объекты-прототипы"
+title: "Создание объектов (JavaScript) | Документы Майкрософт"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- constructors, including properties and methods
+- function constructor
+- creating objects, constructor functions
+- constructor functions
+- prototype objects
+- creating objects
+- custom objects, creating
+- creating objects, about creating objects
+- objects, creating [JavaScript]
+- creating objects, prototypes
+- custom objects
+- initializing objects, using constructors
 ms.assetid: 58d1baa5-4fe8-4a56-a926-5b11765df704
 caps.latest.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 19
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 359e1eb5df8f19774d352ace631802367b6dd8c9
+ms.openlocfilehash: 0ba7962179cc2f0fcb972caee692edabee368c7d
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/11/2017
+
 ---
-# Создание объектов (JavaScript)
-Существует несколько способов создания собственных объектов в JavaScript.  Можно создать экземпляр объекта [Объект Object](../javascript/reference/object-object-javascript.md) напрямую и добавить собственные свойства и методы,  определить объект с помощью нотации литерала объекта,  а также использовать для определения объекта функцию конструктора.  Дополнительные сведения об использовании функций конструкторов в статье [Использование конструкторов для определения типов](../javascript/advanced/using-constructors-to-define-types.md).  
+# <a name="creating-objects-javascript"></a>Создание объектов (JavaScript)
+Существует несколько способов создания собственных объектов в JavaScript. Вы можете непосредственно создать экземпляр [объекта Object](../javascript/reference/object-object-javascript.md) и добавить свои собственные свойства и методы, определить объект с помощью нотации объектного литерала, а также использовать для определения объекта функцию конструктора. Подробнее об использовании функций конструкторов: [Использование конструкторов для определения типов](../javascript/advanced/using-constructors-to-define-types.md).  
   
-## Пример  
- В следующем коде показано, как создать экземпляр объекта и добавить несколько свойств.  В данном случае только объект `pasta` имеет свойства `grain`, `width` и `shape`.  
+## <a name="example"></a>Пример  
+ В следующем коде показано, как создать экземпляр объекта и добавить несколько свойств. В данном случае только объект `pasta` имеет свойства `grain`, `width` и `shape`.  
   
-```javascript  
-var pasta = new Object();  
+```JavaScript  
+const pasta = new Object();  
 pasta.grain = "wheat";  
 pasta.width = 0.5;  
 pasta.shape = "round";  
@@ -57,36 +62,36 @@ document.write(pasta.getShape());
   
 ```  
   
-## Литералы объектов  
- Если нужно создать только один экземпляр объекта, можно воспользоваться нотацией литерала объекта.  В следующем коде показано, как создать экземпляр объекта с помощью нотации литерала объекта.  
+## <a name="object-literals"></a>Объектные литералы  
+ Если нужно создать только один экземпляр объекта, можно воспользоваться нотацией объектного литерала. В следующем коде показано, как создать экземпляр объекта с помощью нотации объектного литерала.  
   
-```javascript  
-var pasta = {  
+```JavaScript  
+const pasta = {  
     grain: "wheat",  
     width: 0.5,  
     shape: "round"  
 };  
 ```  
   
- Литерал объекта можно также вставлять в конструктор.  
+ Объектный литерал можно также вставлять в конструктор.  
   
 > [!CAUTION]
 >  Описанные ниже функции поддерживаются только в [!INCLUDE[jsv12text](../javascript/includes/jsv12text-md.md)].  
   
  В [!INCLUDE[jsv12text](../javascript/includes/jsv12text-md.md)] для создания литерала объекта можно использовать сокращенный синтаксис.  
   
-```javascript  
-var key = 'a';  
-var value = 5;  
+```JavaScript  
+const key = 'a';  
+const value = 5;  
   
 // Older version  
-var obj1 = {  
+const obj1 = {  
     key: key,  
     value: value  
 };  
   
 // Edge mode  
-var obj2 = {key, value};  
+const obj2 = {key, value};  
   
 console.log(obj2);  
   
@@ -94,28 +99,28 @@ console.log(obj2);
 // [object Object] {key: "a", value: 5}  
 ```  
   
- В следующем примере кода показано, как использовать сокращенный синтаксис для определения методов в литералах объектов.  
+ В следующем примере кода показано, как использовать сокращенный синтаксис для определения методов в объектных литералах.  
   
-```javascript  
+```JavaScript  
 // Older versions  
-var obj = {  
+const obj = {  
     method1: function() {},  
     method2: function() {}  
 };  
   
 // Edge mode  
-var obj = {  
+const obj = {  
     method1() {},  
     method2() {}  
 };  
 ```  
   
- В [!INCLUDE[jsv12text](../javascript/includes/jsv12text-md.md)] имена свойств в литералах объектов можно создавать динамически.  В следующем примере кода имя свойства для объекта создается динамически с помощью синтаксиса set.  
+ В [!INCLUDE[jsv12text](../javascript/includes/jsv12text-md.md)] имена свойств в литералах объектов можно создавать динамически. В следующем примере кода имя свойства для объекта создается динамически с помощью синтаксиса set.  
   
-```javascript  
-var propName = "prop_42";  
+```JavaScript  
+const propName = "prop_42";  
   
-var obj = {  
+const obj = {  
     value: 0,  
     set [propName](v) {  
         this.value = v;  
@@ -135,10 +140,10 @@ console.log(obj.value);
   
  В следующем примере кода имя свойства для класса создается динамически с помощью синтаксиса get.  
   
-```javascript  
-var propName = "prop_42";  
+```JavaScript  
+const propName = "prop_42";  
   
-var obj = {  
+const obj = {  
     get [propName]() {  
         return 777;  
     }  
@@ -150,10 +155,11 @@ console.log(obj.prop_42);
 // 777  
 ```  
   
- В следующем примере кода создается вычисляемое свойство с помощью [синтаксиса функции со стрелкой](../javascript/functions-javascript.md), прибавляющей к имени свойства 42.  
+ В следующем примере кода создается вычисляемое свойство и используется [синтаксис функции со стрелкой](../javascript/functions-javascript.md) для добавления 42 к имени свойства.  
   
-```javascript  
-var obj = {  
+```JavaScript  
+const obj = {  
     [ 'prop_' + (() => 42)() ]: 42  
 };  
 ```
+
