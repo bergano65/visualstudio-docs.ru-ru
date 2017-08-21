@@ -29,45 +29,23 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: cd8418f782f800390d166403374ecb879970dbc3
-ms.openlocfilehash: 92304c73b1a098c32a74011956dadd8097b8329d
+ms.sourcegitcommit: a2cfae1be1415a2d770d1467a09f207f73eafd05
+ms.openlocfilehash: 5b872f1d28c132fe2910bed16882ba6fb01e6782
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 08/16/2017
 
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Журнал изменений (набор средств Visual Studio для Unity)
 Журнал изменений в наборе средств Visual Studio для Unity  
 
-## <a name="3400"></a>3.4.0.0
- Выпущено 22.08.2017 г.
+## <a name="3302"></a>3.3.0.2
+ Выпущено 15.08.2017 г.
 
-### <a name="new-features"></a>Новые функции  
-
--   **Project Generation:**  
-
-    -   Добавлена поддержка блоков компиляции assembly.json.
-
-    -   Прекращено копирование сборок Unity в папку проекта.
-    
--   **Отладчик:**  
-
-    -   Добавлена поддержка установки следующего выражения в новой среде выполнения Unity.
-    
-    -   Добавлена поддержка типа Decimal в новой среде выполнения Unity.
-    
-    -   Добавлена поддержка явных и неявных преобразований.
-    
 ### <a name="bug-fixes"></a>Исправления ошибок  
   
--   **Вычисления:**  
-
-    -   Исправлена ошибка при создании массива с неявным размером.
-    
-    -   Исправлена ошибка при создании компилятором элементов с локальными переменными.
+-   **Создание проекта:**  
    
--   **Project Generation:**  
-   
-    -   Исправлена ссылка на Microsoft.CSharp на уровне API 4.6.
+    -   Исправлено создание решений Visual Studio на базе Unity 5.5 и предыдущих версий.
    
 ## <a name="3300"></a>3.3.0.0
  Выпущено 14.08.2017 г.
