@@ -17,10 +17,10 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: b01caada54c08bb7f9c9baabfe9ece486e087794
-ms.openlocfilehash: 190a5e183757a5f02eeeb4aca7fc1c2e7f1beb1c
+ms.sourcegitcommit: 1e85a41fea58723b8f7f2119d0d0c951574c4f9c
+ms.openlocfilehash: f0fb1e91107017fd25e44f524550b0eef1732865
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/15/2017
 
 ---
 
@@ -45,6 +45,14 @@ ms.lasthandoff: 08/07/2017
      ![Изменение Visual Studio 2017: удаление продукта](media/vs2017-uninstall-confirm.PNG "Подтверждение удаления Visual Studio 2017")  
 
 Если в будущем вы захотите снова установить Visual Studio 2017, запустите Visual Studio Installer и выберите **Установить** на экране выбора.
+
+## <a name="uninstall-visual-studio-installer"></a>Удаление установщика Visual Studio
+Чтобы полностью удалить Visual Studio 2017 и установщик Visual Studio с компьютера, удалите их окна "Программы и компоненты".
+1. Откройте окно "Программы и компоненты". Например, в Windows 10 нажмите кнопку **Пуск** и в строке поиска введите **Программы и компоненты**.  
+2. Найдите **Microsoft Visual Studio 2017**.  
+3. Нажмите кнопку **Удалить**.  
+
+На компьютере будут удалены все установки 2017, а также установщик Visual Studio.
 
 ## <a name="see-also"></a>См. также  
 * [Установка Visual Studio](install-visual-studio.md)
