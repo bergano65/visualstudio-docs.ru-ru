@@ -37,11 +37,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 7ec5dd2249f67a2aa23dc42b1f4065bc5d9a318c
+ms.translationtype: HT
+ms.sourcegitcommit: 1c2afd23f9f6a7444b723a0f7d93ababad2624e7
+ms.openlocfilehash: 15e453ace87993aae4ecf80e37cf97e4afce2f28
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/15/2017
 
 ---
 # <a name="common-msbuild-project-properties"></a>Общие свойства проектов MSBuild
@@ -78,6 +78,7 @@ ms.lasthandoff: 05/13/2017
 |DefineTrace|Логическое значение, указывающее, требуется ли определять константу TRACE.|  
 |DebugType|Задает уровень создаваемой отладочной информации. Допустимые значения: "full", "pdbonly" и "none".|  
 |DelaySign|Логическое значение, указывающее, требуется ли отложить подпись сборки или полностью подписать сборку.|  
+|Детерминированный|Логическое значение, указывающее, должен ли компилятор создавать идентичные сборки для идентичных входных данных. Этот параметр соответствует параметру `/deterministic` компиляторов `vbc.exe` и `csc.exe`.|
 |DisabledWarnings|Подавляет указанные предупреждения. Указывать необходимо только числовую часть идентификатора предупреждения. При указании нескольких предупреждений они отделяются друг от друга точкой с запятой. Этот параметр соответствует ключу `/nowarn` компилятора vbc.exe.|  
 |DisableFastUpToDateCheck|Логическое значение, применимое только к [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Диспетчер сборок [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] использует процесс FastUpToDateCheck, чтобы определить, требуется ли пересобрать проект для сохранения его актуальности. Это позволяет получить результат быстрее, чем при использовании [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Задание для свойства DisableFastUpToDateCheck значения `true` позволяет обойти диспетчер сборок [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и принудить его использовать [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] для определения актуальности проекта.|  
 |DocumentationFile|Имя файла, создаваемого в качестве файла XML-документации. Это имя включает только имя файла и не содержит информации о пути.|  
@@ -85,7 +86,7 @@ ms.lasthandoff: 05/13/2017
 |ExcludeDeploymentUrl|Задача [GenerateDeploymentManifest Task](../msbuild/generatedeploymentmanifest-task.md) добавляет в манифест развертывания тег deploymentProvider, если файл проекта включает какой-либо из следующих элементов:<br /><br /> —   UpdateUrl;<br />—   InstallUrl;<br />—   PublishUrl.<br /><br /> С помощью ExcludeDeploymentUrl, однако, можно запретить добавление тега deploymentProvider в манифест развертывания, даже если указан какой-либо из вышеперечисленных URL-адресов. Для этого добавьте в файл проекта следующее свойство:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **Примечание.** ExcludeDeploymentUrl не предоставляется в интегрированной среде разработки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], поэтому задать его можно только путем редактирования файла проекта вручную. Задание этого свойства не влияет на публикацию в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], т. е. тег deploymentProvider все равно будет добавлен к URL-адресу, заданному элементом PublishUrl.|  
 |FileAlignment|Задает выравнивание размеров выходного файла в байтах. Допустимые значения: 512, 1024, 2048, 4096, 8192. Это свойство эквивалентно переключателю `/filealignment` компилятора.|  
 |FrameworkPathOverride|Задает расположение библиотек mscorlib.dll и microsoft.visualbasic.dll. Этот параметр эквивалентен переключателю `/sdkpath` компилятора vbc.exe.|  
-|GenerateDocumentation|Логический параметр, указывающий, создается ли при сборке документация. Если он имеет значение `true`, в процессе сборки создается информация документации и помещается в XML-файл вместе с именем исполняемого файла или библиотеки, созданных задачей сборки.|  
+|GenerateDocumentation|(только для Visual Basic .NET) Логический параметр, указывающий, создается ли при сборке документация. Если он имеет значение `true`, в процессе сборки создается информация документации и помещается в XML-файл вместе с именем исполняемого файла или библиотеки, созданных задачей сборки.|
 |IntermediateOutputPath|Полный путь к промежуточной выходной папке, производный от `BaseIntermediateOutputPath`, если путь не указан. Например, \obj\debug\\. Если эти свойство переопределено, задание `BaseIntermediateOutputPath` не имеет силы.|  
 |KeyContainerName|Имя контейнера ключа строгого имени.|  
 |KeyOriginatorFile|Имя файла ключа строгого имени.|  
@@ -105,6 +106,7 @@ ms.lasthandoff: 05/13/2017
 |OverwriteReadOnlyFiles|Логическое значение, указывающее, может ли сборка перезаписывать файлы, доступные только на чтение, или должна выдавать ошибку.|  
 |PdbFile|Имя выдаваемого PDB-файла. Это свойство эквивалентно переключателю `/pdb` компилятора csc.exe.|  
 |Платформа|Операционная система, для которой выполняется сборка. Допустимые значения: "Любой ЦП", "x86" и "x64".|  
+|ProduceReferenceAssembly|Логическое значение, которое при задании `true` включает создание [ссылочных сборок](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md) для текущей сборки. При использовании этой функции `Deterministic` должно иметь значение `true`. Это свойство соответствует параметру `/refout` компиляторов `vbc.exe` и `csc.exe`.|
 |RemoveIntegerChecks|Логическое значение, указывающее, включены ли проверки ошибок переполнения для целых чисел. Значение по умолчанию — `false`. Это свойство эквивалентно переключателю `/removeintchecks` компилятора vbc.exe.|  
 |SGenUseProxyTypes|Логическое значение, указывающее, следует ли создавать прокси-типы с помощью SGen.exe.<br /><br /> Цель SGen использует это свойство для установки флага UseProxyTypes. По умолчанию это свойство имеет значение true, и пользовательского интерфейса для изменения этого значения не существует. Чтобы создать сборку сериализации для типов, не относящихся к веб-службам, добавьте это свойство в файл проекта и присвойте ему значение false, прежде чем импортировать Microsoft.Common.Targets или C#/VB.targets.|  
 |SGenToolPath|Необязательный путь, указывающий расположение, откуда можно получить SGen.exe при переопределении текущей версии SGen.exe.|  
