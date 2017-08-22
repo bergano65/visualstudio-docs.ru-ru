@@ -1,188 +1,197 @@
 ---
-title: "Пошаговое руководство. Создание пользовательского элемента управления Windows Forms с подстановочной привязкой данных | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "привязка данных, пользовательские элементы управления"
-  - "LookupBindingPropertiesAttribute - класс, примеры"
-  - "пользовательские элементы управления [Visual Basic], создание"
+title: Using lookup tables in data binding - Windows Forms controls| Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- aspx
+helpviewer_keywords:
+- data binding, user controls
+- LookupBindingPropertiesAttribute class, examples
+- user controls [Visual Basic], creating
 ms.assetid: c48b4d75-ccfc-4950-8b14-ff8adbfe4208
 caps.latest.revision: 14
-caps.handback.revision: 11
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 4f98e2a2c6b6500c1656f4a4bf291878f168457b
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/22/2017
+
 ---
-# Пошаговое руководство. Создание пользовательского элемента управления Windows Forms с подстановочной привязкой данных
-При отображении данных на формах Windows Forms вы можете выбрать имеющиеся элементы управления в области элементов или создать пользовательские элементы управления, если вашему приложению требуется функциональность, отсутствующая в стандартных элементах управления.  В этом пошаговом руководстве демонстрируется создание элемента управления, реализующего <xref:System.ComponentModel.LookupBindingPropertiesAttribute>.  Элементы управления, реализующие <xref:System.ComponentModel.LookupBindingPropertiesAttribute>, могут содержать три свойства, которые можно привязать к данным.  Такие элементы управления похожи на <xref:System.Windows.Forms.ComboBox>.  
+# <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Create a Windows Forms user control that supports lookup data binding
+When displaying data on Windows Forms, you can choose existing controls from the **Toolbox**, or you can author custom controls if your application requires functionality not available in the standard controls. This walkthrough shows how to create a control that implements the <xref:System.ComponentModel.LookupBindingPropertiesAttribute>. Controls that implement the <xref:System.ComponentModel.LookupBindingPropertiesAttribute> can contain three properties that can be bound to data. Such controls are similar to a <xref:System.Windows.Forms.ComboBox>.  
   
- Дополнительные сведения о создании элементов управления см. в разделе [Создание элементов управления Windows Forms во время разработки](../Topic/Developing%20Windows%20Forms%20Controls%20at%20Design%20Time.md).  
+ For more information on control authoring, see [Developing Windows Forms Controls at Design Time](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).  
   
- При создании элементов управления для использования в сценариях привязки к данным необходимо реализовать один из следующих атрибутов привязки к данным.  
+ When authoring controls for use in data-binding scenarios you need to implement one of the following data-binding attributes:  
   
-|Использование атрибута привязки к данным|  
-|----------------------------------------------|  
-|Реализуйте <xref:System.ComponentModel.DefaultBindingPropertyAttribute> на простых элементах управления, таких как <xref:System.Windows.Forms.TextBox>, которые отображают отдельный столбец \(или свойство\) данных.  Для получения дополнительной информации см. [Пошаговое руководство. Создание пользовательского элемента управления Windows Forms с простой привязкой данных](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).|  
-|Реализуйте <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> на элементах управления, таких как <xref:System.Windows.Forms.DataGridView>, которые отображают списки \(или таблицы\) данных.  Для получения дополнительной информации см. [Пошаговое руководство. Создание пользовательского элемента управления Windows Forms со сложной привязкой данных](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|  
-|Реализуйте <xref:System.ComponentModel.LookupBindingPropertiesAttribute> на элементах управления, таких как <xref:System.Windows.Forms.ComboBox>, которые отображают списки \(или таблицы\) данных, но также должны представлять отдельный столбец или отдельное свойство.  \(Этот процесс описан в данном пошаговом руководстве.\)|  
+|Data-binding attribute usage|  
+|-----------------------------------|  
+|Implement the <xref:System.ComponentModel.DefaultBindingPropertyAttribute> on simple controls, like a <xref:System.Windows.Forms.TextBox>, that display a single column (or property) of data. For more information, see [Create a Windows Forms user control that supports simple data binding](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).|  
+|Implement the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> on controls, like a <xref:System.Windows.Forms.DataGridView>, that display lists (or tables) of data. For more information, see [Create a Windows Forms user control that supports complex data binding](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|  
+|Implement the <xref:System.ComponentModel.LookupBindingPropertiesAttribute> on controls, like a <xref:System.Windows.Forms.ComboBox>, that display lists (or tables) of data, but also need to present a single column or property. (This process is described in this walkthrough page.)|  
   
- В этом пошаговом руководстве создается элемент управления поиска, который привязан к данным из двух таблиц.  В данном примере используются таблицы `Customers` и `Orders` из учебной базы данных "Борей".  Элемент управления поиска будет привязан к полю `CustomerID` из таблицы `Orders`.  Он будет использовать это значение для поиска `CompanyName` в таблице `Customers`.  
+ This walkthrough creates a lookup control that binds to data from two tables. This example uses the `Customers` and `Orders` tables from the Northwind sample database. The lookup control will be bound to the `CustomerID` field from the `Orders` table. It will use this value to look up the `CompanyName` from the `Customers` table.  
   
- В этом пошаговом руководстве описаны следующие процедуры.  
+ During this walkthrough, you will learn how to:  
   
--   Создание нового проекта **Приложение Windows**.  
+-   Create a new **Windows Application**.  
   
--   Добавление нового **Пользовательского элемента управления** в проект.  
+-   Add a new **User Control** to your project.  
   
--   Визуальное проектирование пользовательского элемента управления.  
+-   Visually design the user control.  
   
--   Реализация атрибута `LookupBindingProperty`.  
+-   Implement the `LookupBindingProperty` attribute.  
   
--   Создание набора данных с помощью [мастер настройки источника данных](../data-tools/media/data-source-configuration-wizard.png).  
+-   Create a dataset with the **Data Source Configuration** wizard.  
   
--   Настройка столбца **CustomerID** таблицы **Заказы** в окне **Источники данных** на использование нового элемента управления.  
+-   Set the **CustomerID** column on the **Orders** table, in the **Data Sources** window, to use the new control.  
   
--   Создание формы для отображения данных в новом элементе управления.  
+-   Create a form to display data in the new control.  
   
-## Обязательные компоненты  
- Для выполнения данного пошагового руководства требуется:  
+## <a name="prerequisites"></a>Prerequisites  
+ In order to complete this walkthrough, you will need:  
   
--   Доступ к примеру базы данных "Борей".  Для получения дополнительной информации см. [Практическое руководство. Установка образцов баз данных](../data-tools/how-to-install-sample-databases.md).  
+-   Access to the Northwind sample database.  
   
-## Создание приложения Windows  
- Первым шагом является создание **Приложения Windows**.  
+## <a name="create-a-windows-application"></a>Create a Windows Application  
+ The first step is to create a **Windows Application**.  
   
-#### Порядок создания нового проекта Windows  
+#### <a name="to-create-the-new-windows-project"></a>To create the new Windows project  
   
-1.  В меню **Файл** Visual Studio создайте новый **Проект**.  
+1.  In Visual Studio, from the **File** menu, create a new **Project**.  
   
-2.  Присвойте проекту имя "LookupControlWalkthrough".  
+2.  Name the project **LookupControlWalkthrough**.  
   
-3.  Выберите **Приложение Windows** и нажмите кнопку **ОК**.  Для получения дополнительной информации см. [Клиентские приложения](../Topic/Developing%20Client%20Applications%20with%20the%20.NET%20Framework.md).  
+3.  Select **Windows  Forms Application**, and click **OK**.  
   
-     Создается проект **LookupControlWalkthrough**, который добавляется в **Обозреватель решений**.  
+     The **LookupControlWalkthrough** project is created, and added to **Solution Explorer**.  
   
-## Добавление пользовательского элемента управления в проект  
- В данном руководстве элемент управления поиска создается из **Пользовательского элемента управления**, поэтому добавьте в проект **LookupControlWalkthrough** элемент **Пользовательский элемент управления**.  
+## <a name="add-a-user-control-to-the-project"></a>Add a user control to the project  
+ This walkthrough creates a lookup control from a **User Control**, so add a **User Control** item to the **LookupControlWalkthrough** project.  
   
-#### Добавление пользовательского элемента управления в проект  
+#### <a name="to-add-a-user-control-to-the-project"></a>To add a user control to the project  
   
-1.  В меню **Проект** выберите пункт **Добавить пользовательский элемент управления**.  
+1.  From the **Project** menu, select **Add User Control**.  
   
-2.  Введите `LookupBox` в области **Имя** и нажмите кнопку **Добавить**.  
+2.  Type `LookupBox` in the **Name** area, and then click **Add**.  
   
-     Элемент управления **LookupBox** добавляется в **Обозреватель решений** и открывается в конструкторе.  
+     The **LookupBox** control is added to **Solution Explorer**, and opens in the designer.  
   
-## Проектирование элемента управления LookupBox  
+## <a name="design-the-lookupbox-control"></a>Design the LookupBox control  
   
-#### Порядок проектирования элемента управления LookupBox  
+#### <a name="to-design-the-lookupbox-control"></a>To design the LookupBox control  
   
--   Перетащите <xref:System.Windows.Forms.ComboBox> из **Области элементов** на рабочую область конструирования пользовательского элемента управления.  
+-   Drag a <xref:System.Windows.Forms.ComboBox> from the **Toolbox** onto the user control's design surface.  
   
-## Добавление необходимого атрибута привязки к данным  
- Для элементов управления поиска, поддерживающих привязку к данным, можно реализовать <xref:System.ComponentModel.LookupBindingPropertiesAttribute>.  
+## <a name="add-the-required-data-binding-attribute"></a>Add the required data-binding attribute  
+ For lookup controls that support data binding, you can implement the <xref:System.ComponentModel.LookupBindingPropertiesAttribute>.  
   
-#### Реализация атрибута LookupBindingProperties  
+#### <a name="to-implement-the-lookupbindingproperties-attribute"></a>To implement the LookupBindingProperties attribute  
   
-1.  Переключите элемент управления **LookupBox** в представление кода.  \(В меню **Вид** выберите **Код**.\)  
+1.  Switch the **LookupBox** control to code view. (On the **View** menu, choose **Code**.)  
   
-2.  Замените код в `LookupBox` следующим кодом:  
+2.  Replace the code in the `LookupBox` with the following:  
   
-     [!code-vb[VbRaddataDisplaying#5](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.vb)]
-     [!code-cs[VbRaddataDisplaying#5](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.cs)]  
+     [!code-vb[VbRaddataDisplaying#5](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.vb)]  [!code-cs[VbRaddataDisplaying#5](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.cs)]  
   
-3.  В меню **Построение** выберите пункт **Построить решение**.  
+3.  From the **Build** menu, choose **Build Solution**.  
   
-## Создание источника данных из вашей базы данных  
- В этом шаге **Мастер настройки источника данных** используется для создания источника данных на основе таблиц `Customers` и `Orders` в учебной базе данных "Борей".  Для создания подключения необходимо иметь доступ к учебной базе данных "Борей".  Дополнительные сведения о настройке учебной базы данных "Борей" см. в разделе [Практическое руководство. Установка образцов баз данных](../data-tools/how-to-install-sample-databases.md).  
+## <a name="create-a-data-source-from-your-database"></a>Create a data source from your database  
+ This step creates a data source using the **Data Source Configuration**wizard, based on the `Customers` and `Orders` tables in the Northwind sample database. You must have access to the Northwind sample database to create the connection. For information on setting up the Northwind sample database, see [Install SQL Server sample databases](../data-tools/install-sql-server-sample-databases.md).  
   
-#### Создание источника данных  
+#### <a name="to-create-the-data-source"></a>To create the data source  
   
-1.  В меню **Данные** выберите команду **Показать источники данных**.  
+1.  On the **Data** menu, click **Show Data Sources**.  
   
-2.  В окне **Источники данных** выберите **Добавить новый источник данных**, чтобы запустить **Мастер настройки источника данных**.  
+2.  In the **Data Sources** window, select **Add New Data Source** to start the **Data Source Configuration** wizard.  
   
-3.  На странице **Выбор типа источника данных** выберите элемент **База данных** и нажмите **Далее**.  
+3.  Select **Database** on the **Choose a Data Source Type** page, and then click **Next**.  
   
-4.  На странице **Выбор подключения к базе данных** выполните одно из следующих действий.  
+4.  On the **Choose your Data Connection** page do one of the following:  
   
-    -   Если подключение к учебной базе данных Northwind доступно в раскрывающемся списке, то выберите его.  
+    -   If a data connection to the Northwind sample database is available in the drop-down list, select it.  
   
-         \-или\-  
+    -   Select **New Connection** to launch the **Add/Modify Connection** dialog box.  
   
-    -   Выберите **Новое подключение** для открытия диалогового окна **Добавить\/изменить подключение**.  
+5.  If your database requires a password, select the option to include sensitive data, and then click **Next**.  
   
-5.  Если базе данных требуется пароль, выберите параметр для включения конфиденциальных данных и щелкните **Далее**.  
+6.  On the **Save connection string to the Application Configuration file** page, click **Next**.  
   
-6.  На странице **Сохранение подключения в файле конфигурации приложения** нажмите кнопку **Далее**.  
+7.  On the **Choose your Database Objects** page, expand the **Tables** node.  
   
-7.  Разверните узел **Таблицы** на странице **Выбор объектов базы данных**.  
+8.  Select the `Customers` and `Orders` tables, and then click **Finish**.  
   
-8.  Выберите таблицы `Customers` и `Orders` и нажмите кнопку **Готово**.  
+     The **NorthwindDataSet** is added to your project, and the `Customers` and `Orders` tables appear in the **Data Sources** window.  
   
-     Объект **NorthwindDataSet** добавляется в проект, и таблицы `Customers` и `Orders` отображаются в окне **Источники данных**.  
+## <a name="set-the-customerid-column-of-the-orders-table-to-use-the-lookupbox-control"></a>Set the CustomerID column of the Orders table to use the LookupBox control  
+ Within the **Data Sources** window, you can set the control to be created prior to dragging items onto your form.  
   
-## Настройка столбца CustomerID таблицы заказов на использование элемента управления LookupBox  
- Вы можете задать создаваемый элемент управления в окне **Источники данных** перед перетаскиванием элементов на форму.  
+#### <a name="to-set-the-customerid-column-to-bind-to-the-lookupbox-control"></a>To set the CustomerID column to bind to the LookupBox control  
   
-#### Порядок настройки столбца CustomerID на привязку к элементу управления LookupBox  
+1.  Open **Form1** in the designer.  
   
-1.  Откройте **Form1** в конструкторе.  
+2.  Expand the **Customers** node in the **Data Sources** window.  
   
-2.  Разверните узел **Клиенты** в окне **Источники данных**.  
+3.  Expand the **Orders** node (the one in the **Customers** node below the **Fax** column).  
   
-3.  Разверните узел **Заказы** \(в узле **Клиенты** под столбцом **Факс**\).  
+4.  Click the drop-down arrow on the **Orders** node, and choose **Details** from the control list.  
   
-4.  Щелкните стрелку раскрывающегося списка в узле **Заказы** и выберите **Сведения** в списке элементов управления.  
+5.  Click the drop-down arrow on the **CustomerID** column (in the **Orders** node), and choose **Customize**.  
   
-5.  Щелкните стрелку раскрывающегося списка в столбце **CustomerID** \(в узле **Заказы**\) и выберите **Настройка**.  
+6.  Select the **LookupBox** from the list of **Associated Controls** in the **Data UI Customization Options** dialog box.  
   
-6.  Выберите **LookupBox** в списке **Связанные элементы управления** диалогового окна **Настройка данных интерфейса пользователя**.  
+7.  Click **OK**.  
   
-7.  Нажмите кнопку **ОК**.  
+8.  Click the drop-down arrow on the **CustomerID** column, and choose **LookupBox**.  
   
-8.  Щелкните стрелку раскрывающегося списка в столбце **CustomerID** и выберите **LookupBox**.  
+## <a name="add-controls-to-the-form"></a>Add controls to the form  
+ You can create the data-bound controls by dragging items from the **Data Sources** window onto **Form1**.  
   
-## Добавление элементов управления на форму  
- Вы можете создавать элементы управления с привязкой к данным с помощью перетаскивания элементов из окна **Источники данных** на **Form1**.  
+#### <a name="to-create-data-bound-controls-on-the-windows-form"></a>To create data-bound controls on the Windows Form  
   
-#### Создание элементов управления с привязкой к данным на форме Windows Forms  
+-   Drag the **Orders** node from the **Data Sources** window onto the Windows Form, and verify that the **LookupBox** control is used to display the data in the `CustomerID` column.  
   
--   Перетащите узел **Заказы** из окна **Источники данных** на форму Windows Forms и убедитесь, что элемент управления **LookupBox** используется для отображения данных в столбце `CustomerID`.  
+## <a name="bind-the-control-to-look-up-companyname-from-the-customers-table"></a>Bind the control to look up CompanyName from the Customers table  
   
-## Привязка элемента управления для поиска CompanyName в таблице клиентов  
+#### <a name="to-setup-the-lookup-bindings"></a>To setup the lookup bindings  
   
-#### Настройка привязок поиска  
+-   Select the main **Customers** node in the **Data Sources** window, and drag it onto the combo box in the **CustomerIDLookupBox** on **Form1**.  
   
--   Выберите главный узел **Клиенты** в окне **Источники данных** и перетащите его на поле со списком в **CustomerIDLookupBox** на **Form1**.  
+     This sets up the data binding to display the `CompanyName` from the `Customers` table, while maintaining the `CustomerID` value from the `Orders` table.  
   
-     При этом задается привязка к данным для отображения `CompanyName` из таблицы `Customers` с сохранением значения `CustomerID` из таблицы `Orders`.  Для получения дополнительной информации см. [Практическое руководство. Создание таблиц подстановки в приложениях Windows Forms](../data-tools/create-lookup-tables-in-windows-forms-applications.md).  
+## <a name="running-the-application"></a>Running the application  
   
-## Запуск приложения  
+#### <a name="to-run-the-application"></a>To run the application  
   
-#### Запуск приложения  
+-   Press F5 to run the application.  
   
--   Нажмите клавишу F5 для запуска приложения.  
+-   Navigate through some records, and verify that the `CompanyName` appears in the `LookupBox` control.  
   
--   Перейдите по нескольким записям и проверьте, что `CompanyName` отображается в элементе управления `LookupBox`.  
-  
-## См. также  
- [Задание поведения, при котором элемент управления создается при перетаскивании из окна "Источники данных"](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)   
- [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Подключение к данным в Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Подготовка приложения к получению данных](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Выборка данных в приложение](../data-tools/fetching-data-into-your-application.md)   
- [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Редактирование данных в приложении](../data-tools/editing-data-in-your-application.md)   
- [Проверка данных](../Topic/Validating%20Data.md)   
- [Сохранение данных](../data-tools/saving-data.md)
+## <a name="see-also"></a>See Also  
+ [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+

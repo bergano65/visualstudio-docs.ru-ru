@@ -1,114 +1,143 @@
 ---
-title: "Настройка брандмауэра Windows для удаленной отладки | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Configure the Windows Firewall for Remote Debugging | Microsoft Docs
+ms.custom: 
+ms.date: 05/18/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
 caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
----
-# Настройка брандмауэра Windows для удаленной отладки
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: cd4596e063bc6fb66a259d34109eb1eb74d1780c
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/22/2017
 
-В этом разделе описывается настройка брандмауэра для обеспечения удаленной отладки на компьютерах со следующими операционными системами:  
+---
+# <a name="configure-the-windows-firewall-for-remote-debugging"></a>Configure the Windows Firewall for Remote Debugging
+This topic describes how to configure the firewall to enable remote debugging on computers that run the following operating systems:  
   
--   Windows 7  
+-   Windows 10  
   
--   Windows 8 или 8.1  
+-   Windows 8/8.1  
   
--   Windows 10  
+-   Windows 7   
   
--   Windows Server 2008 \(R2\)  
+-   Windows Server 2012 R2  
+
+-   Windows Server 2012
   
--   Windows Server 2012  
+-   Windows Server 2008 R2 
   
--   Windows Server 2012 R2  
+ If the network on which you are debugging is not protected by a firewall, this configuration is unnecessary. Otherwise, both the computer that hosts Visual Studio and the remote computer that is to be debugged require changes to the firewall configuration.  
   
- Если сеть, в которой выполняется отладка, не защищена брандмауэром, в этой настройке нет необходимости. В противном случае и на компьютере, на котором размещена среда Visual Studio, и на удаленном компьютере, на котором выполняется отладка, нужно внести изменения в конфигурацию брандмауэра.  
+ **IPSec** If your network requires that communication be performed using IPSec, you must open additional ports on both the Visual Studio host computer and the remote computer.  
   
- **IPSec**. Если обмен данными по сети должен выполняться по протоколу IPSec, необходимо открыть дополнительные порты как на компьютере с Visual Studio, так и на удаленном компьютере.  
+ **Web Server** If you are debugging a remote Web server, you must open an additional port on the remote computer. (For IIS, port 80 must be open.)  
   
- **Веб\-сервер**. При отладке удаленного веб\-сервера необходимо открыть дополнительный порт на удаленном компьютере.  
+ Note that both computers do not have to run the same operating system. For example, the Visual Studio computer can run Windows 10 and the remote computer can run Windows Server 2012 R2.      
   
- Имейте в виду, что на двух компьютерах необязательно должна использоваться одна и та же операционная система. Например, на компьютере с Visual Studio может использоваться Windows 10, а на удаленном компьютере — Windows Server 2012 R2.  
-  
-## Настройка брандмауэра Windows на компьютере Visual Studio  
- Инструкции по настройке брандмауэра Windows немного различаются в зависимости от операционной системы. В Windows 7 и Windows Server 2008 используется слово **программа**, а в Windows 8, Windows 8.1, Windows 10 и Windows Server 2012 — слово **приложение**.  В приведенных ниже инструкциях будет использоваться слово **приложение**.  
-  
-1.  Откройте страницу брандмауэра Windows. \(В поле поиска меню **Пуск** введите **Брандмауэр Windows**\).  
-  
-2.  Щелкните **Разрешение взаимодействия с приложением или компонентом в брандмауэре Windows**.  
-  
-3.  В списке **Разрешенные программы и компоненты** найдите пункт **Обнаружение удаленного отладчика Visual Studio**. Если он есть, убедитесь в том, что он выбран и что также выбран один или несколько типов сетей.  
-  
-4.  Если пункт **Обнаружение удаленного отладчика Visual Studio** отсутствует в списке, щелкните **Разрешить другое приложение**. Если он по\-прежнему не отображается в окне **Добавление приложения**, нажмите кнопку **Обзор** и перейдите в папку **\<каталог установки Visual Studio\>\\Common7\\IDE\\Remote Debugger**. Найдите соответствующую приложению папку \(x86, x64, Appx\) и выберите файл **msvsmon.exe**. Затем нажмите кнопку **Добавить**.  
-  
-5.  В списке **Разрешенные программы и компоненты** выберите пункт **Монитор удаленной отладки Visual Studio**. Выберите один или несколько типов сетей \(**Доменная, Домашняя или рабочая \(частная\), Общедоступная**\), с которыми должен взаимодействовать монитор удаленной отладки. Эти типы должны включать сеть, к которой подключен компьютер Visual Studio.  
-  
-## Открытие порта на компьютере Visual Studio для включения отображения  
- Необходимо разрешить обнаружение компьютеров, на которых запущен удаленный отладчик, через входящий порт UDP 3702. Инструкции по его добавлению см. в разделе "Настройка портов в брандмауэре".  
-  
-## Настройка брандмауэра Windows на удаленном компьютере для удаленной отладки  
- Компоненты удаленной отладки можно установить на удаленном компьютере или запустить из общего каталога. В обоих случаях необходимо настроить брандмауэр на удаленном компьютере. Компоненты удаленной отладки находятся в следующем каталоге:  
-  
- **\<каталог установки Visual Studio\>\\Common7\\IDE\\Remote Debugger**  
-  
- Инструкции по настройке брандмауэра Windows немного различаются в зависимости от операционной системы. В Windows 7 и Windows Server 2008 используется слово **программа**, а в Windows 8, Windows 8.1, Windows 10 и Windows Server 2012 — слово **приложение**.  В приведенных ниже инструкциях будет использоваться слово **приложение**.  
-  
-1.  Откройте страницу брандмауэра Windows. \(В поле поиска меню **Пуск** введите **Брандмауэр Windows**.\)  
-  
-2.  Щелкните **Разрешение взаимодействия с приложением или компонентом в брандмауэре Windows**.  
-  
-3.  В списке **Разрешенные программы и компоненты** найдите пункт **Монитор удаленной отладки Visual Studio**. Если он есть, убедитесь в том, что он выбран и что также выбран один или несколько типов сетей.  
-  
-4.  Если пункт **Монитор удаленной отладки Visual Studio** отсутствует в списке, щелкните **Разрешить другое приложение**. Если он по\-прежнему не отображается в окне **Добавление приложения**, нажмите кнопку **Обзор** и перейдите в папку **\<каталог установки Visual Studio\>\\Common7\\IDE\\Remote Debugger**. Найдите соответствующую приложению папку \(x86, x64, Appx\) и выберите файл **msvsmon.exe**. Затем нажмите кнопку **Добавить**.  
-  
-5.  В списке **Разрешенные программы** выберите пункт **Монитор удаленной отладки Visual Studio**. Выберите один или несколько типов сетей \(**Доменная, Домашняя или рабочая \(частная\), Общедоступная**\), с которыми должен взаимодействовать монитор удаленной отладки. Эти типы должны включать сеть, к которой подключен компьютер Visual Studio.  
-  
-## Порты на удаленном компьютере, обеспечивающие удаленную отладку  
+## <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>Ports on the remote computer that enable remote debugging  
   
 |||||  
 |-|-|-|-|  
-|**Порты**|**Входящий или исходящий**|**Протокол**|**Описание**|  
-|3702|Исходящий|UDP|Требуется для обнаружения удаленного отладчика.|  
-|4020||TCP|Для Visual Studio 2015. Номер порта увеличивается на 2 с каждой версией Visual Studio. Более подробную информацию см. в разделе "Назначение портов удаленного отладчика Visual Studio".|  
-|4021||TCP|Для Visual Studio 2015. Номер порта увеличивается на 2 с каждой версией Visual Studio. Более подробную информацию см. в разделе "Назначение портов удаленного отладчика Visual Studio".|  
+|**Ports**|**Incoming/Outgoing**|**Protocol**|**Description**|   
+|4022|Incoming|TCP|For VS 2017. The port number is incremented by 2 for each Visual Studio version. For more information, see [Visual Studio Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md).|  
+|4023|Incoming|TCP|For VS 2017. The port number is incremented by 2 for each Visual Studio version. (Only used to remote debug a 32-bit process from the 64-bit version of the remote debugger.) For more information, see  [Visual Studio Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md).| 
+|3702|Outgoing|UDP|(Optional) Required for remote debugger discovery.|    
   
-## Порты на удаленном компьютере, обеспечивающие удаленную отладку в режиме совместимости управляемого или машинного кода  
+## <a name="how-to-configure-ports-in-windows-firewall"></a>How to Configure Ports in Windows Firewall  
+
+When you install Visual Studio or the remote debugger, the software will try to open the correct ports. However, in some scenarios (such as using a third party firewall), you may need to open a port manually. If you need to verify that ports are open, see [Troubleshooting](#troubleshooting). Some instructions for opening a port may be different on older versions of Windows.
+
+To open a port:
+  
+1. Open the **Start** menu, search for **Windows Firewall with Advanced Security**.
+
+2. Then choose **Inbound Rules > New Rule > Port**, and then click **Next**. (For Outgoing rules, choose **Outbound Rules** instead.)
+
+3. Choose either **TCP** or **UDP**, depending on the port number.
+
+4. Under **Specific local ports**, enter the port number, click **Next**.
+
+5. Click **Allow the Connection** and then click **Next**.
+
+6. Select one or more network types to enable for the port and click **Next**.
+
+    The type you select must include the network to which the remote computer is connected.
+7. Add the name (for example, **msvsmon**, **IIS**, or **Web Deploy**) for the rule and click **Finish**.
+
+    You should see your new rule in the Inbound Rules or Outbound Rules list.
+
+## <a name="troubleshooting"></a>Troubleshooting
+
+If you are having trouble attaching to your app with the remote debugger, you may need to verify that the correct ports are open.
+
+### <a name="verify-that-ports-are-open-in-the-windows-firewall-on-the-visual-studio-computer"></a>Verify that ports are open in the Windows Firewall on the Visual Studio Computer  
+ The instructions for configuring the Windows firewall differ slightly on different operating systems. On Windows 8/8.1, Windows 10, and Windows Server 2012, the word **app** is used; on Windows 7 or Windows Server 2008, the word **program** is used;  In the following steps we will use the word **app**.  
+  
+1.  Open the Windows Firewall page. (In the **Start** menu search box, type **Windows Firewall**).  
+  
+2.  Click **Allow an app or feature through Windows Firewall**.  
+  
+3.  In the **Allowed apps and features** list, look for **Visual Studio Remote Debugger Discovery**. If it is listed, make sure that it is selected, and that one or more network types are also selected.  
+  
+4.  If **Visual Studio Remote Debugger Discovery** is not listed, click **Allow another app**. If you still don't see it in the **Add an app** window, click **Browse** and navigate to **\<Visual Studio installation directory>\Common7\IDE\Remote Debugger**. Find the appropriate folder for the application (x86, x64, Appx) and then select **msvsmon.exe**. Then click **Add**.  
+  
+5.  In the **Allowed apps and features** list, select **Visual Studio Remote Debugger**. Check one or more network types (**Domain, Home/Work (Private), Public**) that you want the remote debugging monitor to communicate with. The types must include the network to which the Visual Studio computer is connected. 
+
+### <a name="verify-that-ports-are-open-in-the-windows-firewall-on-the-remote-computer"></a>Verify that ports are open in the Windows Firewall on the remote computer  
+ The remote debugging components can be installed on the remote computer or run from a shared directory. The firewall of the remote computer must be configured in both cases. The remote debugging components are located in:  
+  
+ **\<Visual Studio installation directory>\Common7\IDE\Remote Debugger**  
+  
+ The instructions for configuring the Windows firewall differ slightly on different operating systems. On Windows 8/8.1, Windows 10, and Windows Server 2012, the word **app** is used; on Windows 7 or Windows Server 2008, the word **program** is used;  In the following steps we will use the word **app**.  
+  
+1.  Open the Windows Firewall page. (On the **Start** menu search box, type **Windows Firewall**.)  
+  
+2.  Click **Allow an app or feature through Windows Firewall**.  
+  
+3.  In the **Allowed apps and features** list, look for **Visual Studio Remote Debugger**. If it is listed, make sure that it is selected, and that one or more network types are also selected.  
+  
+4.  If **Visual Studio Remote Debugger** is not listed, click **Allow another app**. If you still don't see it in the **Add an app window**, click **Browse** and navigate to **\<Visual Studio installation directory>\Common7\IDE\Remote Debugger**. Find the appropriate folder for the application (x86, x64, Appx) and then select **msvsmon.exe**. Then click **Add**.  
+  
+5.  In the **Allowed apps** list, select **Visual Studio Remote Debugger**. Check one or more network types (**Domain, Home/Work (Private), Public**) that you want the remote debugging monitor to communicate with. The types must include the network to which the Visual Studio computer is connected. 
+
+### <a name="managed-or-native-compatibility-mode-open-additional-ports-on-the-remote-computer"></a>(Managed or native compatibility mode) Open additional ports on the remote computer
+
+If you are using compatibility mode for the debugger (**Tools > Options > Debugging**), additional ports will need to be opened. Compatibility mode enables a legacy version of the debugger and different ports are required.
+
+> [!NOTE]
+> The legacy version of the debugger is the Visual Studio 2010 debugger.
   
 |||||  
 |-|-|-|-|  
-|**Порты**|**Входящий или исходящий**|**Протокол**|**Описание**|  
-|135, 139, 445|Исходящий|TCP|Обязательный.|  
-|137, 138|Исходящий|UDP|Обязательный.|  
-|500, 4500|Исходящий|UDP|Требуется, если в соответствии с политикой домена обмен данными по сети должен осуществляться по протоколу IPSec.|  
-|80|Исходящий|TCP|Требуется для отладки веб\-сервера.|  
+|**Ports**|**Incoming/Outgoing**|**Protocol**|**Description**|  
+|135, 139, 445|Outgoing|TCP|Required.|  
+|137, 138|Outgoing|UDP|Required.|  
+|500, 4500|Outgoing|UDP|Required if your domain policy requires network communication to be performed through IPSec.|  
+|80|Outgoing|TCP|Required for Web Server debugging.|
   
-## Настройка портов в брандмауэре Windows  
-  
-1.  В меню **Пуск** найдите пункт **Брандмауэр Windows в режиме повышенной безопасности**.  
-  
-2.  Щелкните **Правила для входящих подключений** или **Правила для исходящих подключений**, а затем в списке **Действия** выберите пункт **Новое правило**.  
-  
-3.  На странице **Тип правила** выберите **Порт** и нажмите кнопку **Далее**.  
-  
-4.  На странице **Протокол и порты** выберите протокол порта \(TCP или UDP\). Выберите **Определенные локальные порты** и введите один или несколько номеров портов, которые нужно включить для протокола. Номера отделяются запятыми. Затем нажмите кнопку **Далее**.  
-  
-5.  На странице **Действие** выберите **Разрешить подключение** и нажмите кнопку **Далее**.  
-  
-6.  На странице **Профиль** выберите один или несколько типов сетей, которые нужно включить для порта. Выбранные типы должны включать сеть, к которой подключен удаленный компьютер. Затем нажмите кнопку **Далее**.  
-  
-7.  На странице **Имя** введите имя правила, а затем нажмите кнопку **Готово**.  
-  
-8.  Новое правило должно появиться в списке **Правила для входящих подключений** или **Правила для исходящих подключений**.  
-  
-## См. также  
- [Удаленная отладка](../debugger/remote-debugging.md)
+## <a name="see-also"></a>See Also  
+ [Remote Debugging](../debugger/remote-debugging.md)

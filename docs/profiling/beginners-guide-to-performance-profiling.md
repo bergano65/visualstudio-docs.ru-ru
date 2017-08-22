@@ -1,5 +1,5 @@
 ---
-title: "Руководство по профилированию производительности в Visual Studio для начинающих | Документация Майкрософт"
+title: Beginner's Guide to Performance Profiling in Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
 ms.reviewer: 
@@ -35,143 +35,144 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: 14c21f67beb92d3b13a5c54c755ccb846d116a9c
-ms.openlocfilehash: aaa19a3a818c3fa3196d79959ee30c5eae4c1b5f
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: a5eabb6a62e4b362d9355772621d27f574034ff1
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/22/2017
 
 ---
-# <a name="beginners-guide-to-performance-profiling"></a>Руководство по профилированию производительности для начинающих
-Средства профилирования Visual Studio можно использовать для анализа проблем с производительностью в приложении. Эта процедура демонстрирует работу с вкладкой **Загрузка ЦП** средств диагностики для получения данных о производительности для приложения. Средства диагностики поддерживаются для разработки приложений .NET в Visual Studio, включая ASP.NET, и для разработки машинного кода или кода C++.
+# <a name="beginners-guide-to-performance-profiling"></a>Beginner's Guide to Performance Profiling
+You can use Visual Studio profiling tools to analyze performance issues in your application. This procedure shows how to use **CPU Usage** tab of the Diagnostics Tools to obtain performance data for your app. The Diagnostics Tools are supported for .NET development in Visual Studio, including ASP.NET, and for native/C++ development.
   
-При приостановке отладчика средство **Загрузка ЦП** собирает сведения о функциях, которые выполняются в приложении. Кроме того, это средство перечисляет функции, которые выполняли максимальный объем работы, а также предоставляет график временной шкалы, который позволяет сосредоточить внимание на определенных сегментах сеанса выборки.
+When the debugger pauses, the **CPU Usage** tool collects information about the functions that are executing in your application. The tool lists the functions that were performing work, and provides a timeline graph you can use to focus on specific segments of the sampling session.
 
-Центр диагностики предоставляет различные возможности по запуску сеансов диагностики и управлению ими. Если средство **Загрузка ЦП** не предоставляет необходимые данные, можно воспользоваться [другими средствами профилирования](../profiling/Profiling-Tools.md), предоставляющими другие виды информации, которая может оказаться полезной. Как правило, проблемы производительности приложения могут вызываться другими компонентами помимо ЦП, такими как память, отрисовка пользовательского интерфейса или время запроса сети. Центр диагностики предоставляет ряд других параметров для записи и анализа такого рода данных.
+The Diagnostic hub offers you a lot of other options to run and manage your diagnostics session. If **CPU Usage** does not give you the data that you need, the [other profiling tools](../profiling/Profiling-Tools.md) provide different kinds of information that might be helpful to you. In many cases, the performance bottleneck of your application may be caused by something other than your CPU, such as memory, rendering UI, or network request time. The Diagnostics hub offers you a lot of other options to record and analyze this kind of data.
 
 |         |         |
 |---------|---------|
-| ![Посмотреть видео](../install/media/video-icon.png "WatchVideo") | Просмотрите [видео об использовании средств диагностики](#video), где показано, как можно анализировать загрузку ЦП и использование памяти. |
+| ![Watch a video](../install/media/video-icon.png "WatchVideo") | [Watch a video](#video) on using the diagnostics tools that shows how to analyze CPU usage and how to analyze memory usage. |
 
-В этом разделе мы обсудим анализ загрузки ЦП в обычном рабочем процессе отладки. Анализировать загрузку ЦП также можно без подключения отладчика или указав выполняющееся приложение. Дополнительные сведения см. в разделе [Run profiling tools without debugging](../profiling/running-profiling-tools-with-or-without-the-debugger.md) (Запуск средств профилирования без отладки).
+In this topic, we'll discuss analyzing CPU usage in your normal debugging workflow. You can also analyze CPU usage without a debugger attached or by targeting a running app - for more information see [Collect profiling data without debugging](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) in [Run profiling tools with or without the debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Шаг 1. Сбор данных профилирования 
+##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Step 1: Collect profiling data 
   
-1.  Откройте проект для отладки в Visual Studio и установите точку останова в приложении в точке, где вы хотите проверить загрузку ЦП.
+1.  Open the project you want to debug in Visual Studio and set a breakpoint in your app at the point where you want to examine CPU usage.
 
-2.  Установите вторую точку останова в конце функции или области кода, который требуется проанализировать.
+2.  Set a second breakpoint at the end of the function or region of code that you want to analyze.
 
     > [!TIP]
-    > С помощью двух точек останова можно ограничить сбор данных частями кода, которые требуется проанализировать.
+    > By setting two breakpoints, you can limit data collection to the parts of code that you want to analyze.
   
-3.  Окно **Средства диагностики** появится автоматически, если вы не отключали эту функцию. Чтобы снова открыть окно, щелкните **Отладка | Окна | Показать средства диагностики**.
+3.  The **Diagnostic Tools** window appears automatically unless you have turned it off. To bring up the window again, click **Debug / Windows / Show Diagnostic Tools**.
 
-4.  Вы можете выбрать, что следует просмотреть, [Использование памяти](../profiling/Memory-Usage.md) или **Загрузка ЦП** (либо оба средства), с помощью параметра **Выбор средств** на панели инструментов. Если вы используете Visual Studio Enterprise, также можно включить или отключить IntelliTrace, последовательно выбрав **Сервис | Параметры | IntelliTrace**.
+4.  You can choose whether to see **CPU Usage**, [Memory Usage](../profiling/Memory-Usage.md), or both, with the **Select Tools** setting on the toolbar. If you are running Visual Studio Enterprise,  you can also enable or disable IntelliTrace in **Tools / Options / IntelliTrace**.
 
-     ![Вывод средств диагностики](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+     ![Show Diagnostics Tools](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
 
-     Нас главным образом интересует загрузка ЦП, поэтому убедитесь, что средство **Загрузка ЦП** включено (оно включено по умолчанию).
+     We will mainly be looking at CPU utilization, so make sure that **CPU Usage** is enabled (it is enabled by default).
 
-5.  Щелкните **Отладка | Начать отладку** (**Запустить** на панели инструментов или **F5**).
+5.  Click **Debug / Start Debugging** (or **Start** on the toolbar, or **F5**).
 
-     По завершении загрузки приложения отображается представление "Сводка" средств диагностики.
+     When the app finishes loading, the Summary view of the Diagnostics Tools appears.
 
-     ![Вкладка "Сводка" средств диагностики](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+     ![Diagnostics Tools Summary Tab](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
-     Дополнительные сведения о событиях см. в разделе [Поиск и фильтрация на вкладке "События" окна "Средства диагностики"](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).
+     For more information on the events, see [Searching and filtering the Events tab of the Diagnostic Tools window](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx)
 
-6.  Запустите сценарий, который вызвал срабатывание первой точки останова.
+6.  Run the scenario that will cause your first breakpoint to be hit.
 
-7.  Приостановив отладчик, включите сбор данных о загрузке ЦП, а затем откройте вкладку **Загрузка ЦП**.
+7.  While the debugger is paused, enable the collection of the CPU Usage data and then open the **CPU Usage** tab.
 
-     ![Средства диагностики, "Включить профилирование ЦП"](../profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
+     ![Diagnostics Tools Enable CPU Profiling](../profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
 
-     При выборе пункта **Включить профилирование ЦП** Visual Studio начнет записывать функции и сведения о времени их выполнения. Эти собранные данные можно просматривать только в том случае, если приложение останавливается в точке останова.
+     When you choose **Enable CPU Profiling**, Visual Studio will begin recording your functions and how much time they take to execute. You can only view this collected data when your application is halted at a breakpoint.
 
-8.  Нажмите клавишу F5, чтобы запустить приложение до второй точки останова.
+8.  Hit F5 to run the app to your second breakpoint.
 
-     Теперь у вас есть данные о производительности приложения именно для той области кода, которая выполняется между двумя точками останова.
+     Now, you now have performance data for your application specifically for the region of code that runs between the two breakpoints.
 
-9.  Выберите интересующую вас область на временной шкале ЦП (это должна быть та область, для которой отображаются данные профилирования).
+9.  Select the region you're interested in analyzing in the CPU timeline (it must be a region that shows profiling data).
 
-     ![Средства диагностики, выбор сегмента временной шкалы](../profiling/media/DiagToolsSelectTimeSegment.png "DiagToolsSelectTimeSegment")
+     ![Diagnostics Tools Selecting a Time Segment](../profiling/media/DiagToolsSelectTimeSegment.png "DiagToolsSelectTimeSegment")
 
-     Профилировщик начинает подготавливать данные потока. Дождитесь завершения этой операции.
+     The profiler begins preparing thread data. Wait for it to finish.
 
-     ![Средства диагностики, подготовка потоков](../profiling/media/DiagToolsPreparingThreads.png "DiagToolsPreparingThreads")
+     ![Diagnostics Tools Preparing Threads](../profiling/media/DiagToolsPreparingThreads.png "DiagToolsPreparingThreads")
   
-     Средство "Загрузка ЦП" выведет отчет на вкладке **Загрузка ЦП**.
+     The CPU Usage tool displays the report in the **CPU Usage** tab.
   
-     ![Средства диагностики, вкладка "Загрузка ЦП"](../profiling/media/DiagToolsCPUUsageTab.png "DiagToolsCPUUsageTab")
+     ![Diagnostics Tools CPU Usage Tab](../profiling/media/DiagToolsCPUUsageTab.png "DiagToolsCPUUsageTab")
 
-     На этом этапе можно начать анализировать данные.
+     At this point, you can begin to analyze the data.
 
-## <a name="Step2"></a> Шаг 2. Анализ данных о загрузке ЦП
+## <a name="Step2"></a> Step 2: Analyze CPU usage data
 
-Мы рекомендуем начать анализ данных с проверки списка функций на вкладке "Загрузка ЦП" и выявления функций, выполняющих основную часть работы, а затем подробно рассмотреть каждую из этих функций.
+We recommend that you begin analyzing your data by examining the list of functions under CPU Usage, identifying the functions that are doing the most work, and then taking a closer look at each one.
 
-1. В списке функций изучите функции, которые выполняют большую часть работы.
+1. In the function list, examine the functions that are doing the most work.
 
-    ![Средства диагностики, список функций на вкладке "Загрузка ЦП"](../profiling/media/DiagToolsCPUUsageFunctionList.png "DiagToolsCPUUsageFunctionList")
+    ![Diagnostics Tools CPU Usage Function List](../profiling/media/DiagToolsCPUUsageFunctionList.png "DiagToolsCPUUsageFunctionList")
 
     > [!TIP]
-    > Функции перечисляются, начиная с тех, которые выполняют большую часть работы (а не в порядке вызова). Это позволяет быстро находить функции, которые выполнялись дольше всего.
+    > Functions are listed in order starting with those doing the most work (they're not in call order). This helps you quickly identify the longest running functions.
 
-2. В списке функций дважды щелкните одну из функций вашего приложения, которая выполняет много работы.
+2. In the function list, double-click one of your app functions that is doing a lot of work.
 
-    При двойном щелчке функции в левой панели откроется представление **Вызывающий/вызываемый**. 
+    When you double-click a function, the **Caller/Callee** view opens in the left pane. 
 
-    ![Средства диагностики, представление "Вызывающий/вызываемый"](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
+    ![Diagnostics Tools Caller Callee View](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
 
-    В этом представлении выбранная функции отображается в заголовке и в поле **Текущая функция** (в этом примере GetNumber). Функция, вызывавшая текущую функцию, отображается в левой части окна в разделе **Вызывающая функция**, а все функции, вызываемые текущей функцией, отображаются в поле **Вызываемые функции** справа. (Можно выбрать любое поле, чтобы изменить текущую функцию.)
+    In this view, the selected function shows up in the heading and in the **Current Function** box (GetNumber, in this example). The function that called the current function is shown on the left under **Calling Function**, and any functions called by the current function are shown in **Called Functions** box on the right. (You can select either box to change the current function.)
 
-    В этом представлении показано общее время (мс) и доля общего времени выполнения приложения, затраченного на выполнение функции.
+    This view shows you the total time (ms) and the percentage of the overall app running time that the function has taken to complete.
 
-    В поле **Тело функции** также показан общий объем времени (и доля времени), затраченного в теле функции за исключением времени, затраченного в вызываемых и вызывающих функциях. (В этом примере в теле функции затрачено 3713 из 3729 мс, а оставшиеся 16 мс затрачены во внешнем коде, вызванном этой функцией).
+    **Function Body** also shows you the total amount of time (and the percentage of time) spent in the function body excluding time spent in calling and called functions. (In this example, 3713 out of 3729 ms were spent in the function body, and the remaining 16 ms were spent in external code called by this function).
 
     > [!TIP]
-    > Высокие значения в поле **Тело функции** могут свидетельствовать о проблемах производительности внутри самой функции.
+    > High values in **Function Body** may indicate a performance bottleneck within the function itself.
 
-3. Если вы хотите увидеть более обобщенное представление, показывающее порядок, в котором вызываются функции, выберите в раскрывающемся списке в верхней части панели пункт **Дерево вызовов**.
+3. If you want to see a higher-level view showing the order in which the functions are called, select **Call Tree** from the drop-down list at the top of the pane.
  
-    Каждая нумерованная область на рисунке соответствует определенному шагу в процедуре.
+    Each numbered area in the figure relates to a step in the procedure.
   
-    ![Средства диагностики, дерево вызовов](../profiling/media/DiagToolsCallTree.png "DiagToolsCallTree")
+    ![Diagnostics Tools Call Tree](../profiling/media/DiagToolsCallTree.png "DiagToolsCallTree")
   
 |||
 |-|-|
-|![Шаг 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|Узел верхнего уровня в деревьях вызовов для использования ЦП представляет собой псевдоузел|  
-|![Шаг 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|В большинстве приложений при отключенном параметре [Показать внешний код](#BKMK_External_Code) узлом второго уровня является узел **[Внешний код]** , который содержит код системы и инфраструктуры, запускающий и останавливающий приложение, отрисовывающий пользовательский интерфейс, управляющий планированием потоков и предоставляющий приложению другие низкоуровневые службы.|  
-|![Шаг 3](../profiling/media/ProcGuid_3.png "ProcGuid_3")|Дочерними элементами узла второго уровня являются методы пользовательского кода и асинхронные подпрограммы, которые вызываются или создаются кодом системы и инфраструктуры на втором уровне.|
-|![Шаг 4](../profiling/media/ProcGuid_4.png "ProcGuid_4")|Дочерние узлы метода содержат данные только для вызова родительского метода. Если параметр **Показать внешний код** отключен, методы приложения также могут содержать узел **[Внешний код]** .|
+|![Step 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|The top-level node in CPU Usage call trees is a pseudo-node|  
+|![Step 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|In most apps, when the [Show External Code](#BKMK_External_Code) option is disabled, the second-level node is an **[External Code]** node that contains the system and framework code that starts and stops the app, draws the UI, controls thread scheduling, and provides other low-level services to the app.|  
+|![Step 3](../profiling/media/ProcGuid_3.png "ProcGuid_3")|The children of the second-level node are the user-code methods and asynchronous routines that are called or created by the second-level system and framework code.|
+|![Step 4](../profiling/media/ProcGuid_4.png "ProcGuid_4")|Child nodes of a method contain data only for the calls of the parent method. When **Show External Code** is disabled, app methods can also contain an **[External Code]** node.|
 
-Ниже приведены дополнительные сведения по значениям столбца.
+Here is more information on the column values:
 
-- Значение **Общее время ЦП** указывает, какой объем работы был выполнен некоторой функцией и всеми вызванными ей функциями. Высокие значения общего времени ЦП указывают на функции, которые в целом являются наиболее ресурсоемкими.
+- **Total CPU** indicates how much work was done by the function and any functions called by it. High total CPU values point to the functions that are most expensive overall.
   
-- Значение **Собственное время** указывает, какой объем работы был выполнен кодом в теле функции, за исключением работы, выполненной вызванными ей функциями. Высокие значения **собственного времени ЦП** могут свидетельствовать о проблемах производительности внутри самой функции.
+- **Self CPU** indicates how much work was done by the code in the function body, excluding the work done by functions that were called by it. High **Self CPU** values may indicate a performance bottleneck within the function itself.
 
-- **Модули**. Имя модуля, содержащего функцию, или количество модулей, содержащих функции в узле [Внешний код].
+- **Modules** The name of the module containing the function, or the number of modules containing the functions in an [External Code] node.
 
-## <a name="BKMK_External_Code"></a>Просмотр внешнего кода
+## <a name="BKMK_External_Code"></a>View external code
 
-Внешний код — это функции в компонентах системы и платформы, которые исполняются вашим кодом. Внешний код включает функции, которые запускают и останавливают приложение, отрисовывают пользовательский интерфейс, управляют потоками и предоставляют приложению другие низкоуровневые службы. В большинстве случаев внешний код вас интересовать не будет, поэтому средство "Загрузка ЦП" собирает внешние функции пользовательского метода в один узел **[Внешний код]**.
+External code are functions in system and framework components that executed by the code you write. External code include functions that start and stop the app, draw the UI, control threading, and provide other low-level services to the app. In most cases, you won't be interested in external code, and so the CPU Usage tool gathers the external functions of a user method into one **[External Code]** node.
   
-Если вы захотите посмотреть пути к вызовам внешнего кода, выберите **Показать внешний код** в списке **Представление фильтра** и выберите **Применить**.  
+If you want to view the call paths of external code, choose **Show External Code** from the **Filter view** list and then choose **Apply**.  
   
-![Выбор "Представление фильтра", а затем "Показать внешний код"](../profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")  
+![Choose Filter View, then Show External Code](../profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")  
   
-Помните о том, что многие цепочки вызовов имеют глубокий уровень вложенности, поэтому ширина столбца "Имя функции" может превышать ширину многих мониторов. В этом случае имена функций отображаются в виде **[…]**.
+Be aware that many external code call chains are deeply nested, so that the width of the Function Name column can exceed the display width of all but the largest of computer monitors. When this happens, function names are shown as **[...]**.
   
-Используйте поле поиска, чтобы найти требуемый узел, а затем воспользуйтесь горизонтальной полосой прокрутки для отображения данных в представлении.
+Use the search box to find a node that you are looking for, then use the horizontal scroll bar to bring the data into view.
 
 > [!TIP]
-> Если вы выполняете профилирование внешнего кода, вызывающего функции Windows, следует убедиться, что используются самые новые версии PDB-файлов. Без этих файлов имена функций Windows в представлениях отчетов будут отображаться в непонятном или трудном для понимания виде. Дополнительные сведения о том, как убедиться в наличии нужных файлов, см. в статье [Указание файлов символов (.pdb) и файлов с исходным кодом в отладчике](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+> If you profile external code that calls Windows functions, you should make sure that you have the most current .pdb files. Without these files, your report views will list Windows function names that are cryptic and difficult to understand. For more information about how to make sure that you have the files you need, see [Specify Symbol (.pdb) and Source Files in the Debugger](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-## <a name="video"></a> Видео о средствах диагностики
+## <a name="video"></a> Watch a video on using the diagnostics tools
 
 <div style="padding-top: 56.25%; position: relative; width: 100%;">
 <iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171" frameborder="0" allowfullscreen></iframe>
 </div>
   
-## <a name="see-also"></a>См. также  
- [[Использование памяти](../profiling/memory-usage.md) [Загрузка ЦП](../profiling/cpu-usage.md) [Профилирование в Visual Studio](../profiling/index.md) [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md)
+## <a name="see-also"></a>See Also  
+ [[Memory Usage](../profiling/memory-usage.md) [CPU Usage](../profiling/cpu-usage.md) [Profiling in Visual Studio](../profiling/index.md) [Profiling Feature Tour](../profiling/profiling-feature-tour.md)
+

@@ -1,264 +1,282 @@
 ---
-title: "Запуск сеанса отладки для приложений Магазина в Visual Studio (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.installedapppackagelauncher"
-  - "vs.debug.error.wwahost_scriptdebuggingdisabled"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: Start a debugging session for Store Apps in Visual Studio (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.installedapppackagelauncher
+- vs.debug.error.wwahost_scriptdebuggingdisabled
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: fb91203f-2cf4-44d3-8ed9-93bc5aaa50b8
 caps.latest.revision: 24
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 24
----
-# Запуск сеанса отладки для приложений Магазина в Visual Studio (JavaScript)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pt-br
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 5a1e75fb305a98ee46f76c0403774535278b53e2
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/22/2017
 
-![Применимо к Windows и к Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+---
+# <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>Start a debugging session for Store Apps in Visual Studio (JavaScript)
+![Applies to Windows and Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- В этом разделе описывается запуск сеанса отладки приложений Магазина Windows, написанных на JavaScript и HTML5. Вы можете начать отладку одним нажатием или настроить сеанс отладки под конкретные сценарии, а затем выбрать способ запуска приложения.  
+ This topic describes how to start a debugging session for Windows Store apps written in JavaScript and HTML5. You can start debugging with a single keystroke, or you can configure the debugging session for specific scenarios and then choose the way to start the app.  
   
 > [!NOTE]
->  Сведения для приложений, написанных на языке XAML и Visual C\+\+, Visual C\# или Visual Basic, см. в разделе [Запуск сеанса отладки \(VB, C\#, C\+\+ и XAML\)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).  
+>  For apps written in XAML and Visual C#, Visual C++, or Visual Basic, see [Start a debug session (VB, C#, C++ and XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
-##  <a name="BKMK_In_this_topic"></a> Содержание раздела  
- [Содержание раздела](#BKMK_In_this_topic)  
+##  <a name="BKMK_In_this_topic"></a> In this topic  
+ [In this topic](#BKMK_In_this_topic)  
   
- [Простой способ запуска отладки](#BKMK_The_easy_way_to_start_debugging)  
+ [The easy way to start debugging](#BKMK_The_easy_way_to_start_debugging)  
   
- [Настройка сеанса отладки](#BKMK_Configure_the_debugging_session)  
+ [Configure the debugging session](#BKMK_Configure_the_debugging_session)  
   
--   [Откройте страницу свойств отладки для данного проекта.](#BKMK_Open_the_debugging_property_page_for_the_project)  
+-   [Open the debugging property page for the project](#BKMK_Open_the_debugging_property_page_for_the_project)  
   
--   [Выберите параметры конфигурации построения](#BKMK_Choose_the_build_configuration_options)  
+-   [Choose the build configuration options](#BKMK_Choose_the_build_configuration_options)  
   
--   [Выберите целевой объект развертывания](#BKMK_Choose_the_deployment_target)  
+-   [Choose the deployment target](#BKMK_Choose_the_deployment_target)  
   
--   [Выбор отладчика](#BKMK_Choose_the_debugger_to_use)  
+-   [Choose the debugger to use](#BKMK_Choose_the_debugger_to_use)  
   
--   [(Необязательно) Задержка запуска приложения в сеансе отладки](#BKMK__Optional__Delay_starting_app_in_the_debug_session)  
+-   [(Optional) Delay starting the app in the debug session](#BKMK__Optional__Delay_starting_app_in_the_debug_session)  
   
--   [(Необязательно) Отключите сетевое замыкание на себя](#BKMK__Optional__Disable_network_loopbacks)  
+-   [(Optional) Disable network loopbacks](#BKMK__Optional__Disable_network_loopbacks)  
   
- [Запуск сеанса отладки](#BKMK_Start_the_debugging_session)  
+ [Start the debugging session](#BKMK_Start_the_debugging_session)  
   
--   [Начать отладку (F5)](#BKMK_Start_debugging__F5_)  
+-   [Start debugging (F5)](#BKMK_Start_debugging__F5_)  
   
--   [Начать отладку (F5), но отложить запуск приложения](#BKMK_Start_debugging__F5__but_delay_the_app_start)  
+-   [Start debugging (F5) but delay the app start](#BKMK_Start_debugging__F5__but_delay_the_app_start)  
   
- [Запуск установленного приложения в отладчике](#BKMK_Start_an_installed_app_in_the_debugger)  
+ [Start an installed app in the debugger](#BKMK_Start_an_installed_app_in_the_debugger)  
   
- [Подключение отладчика к выполняемому приложению](#BKMK_Attach_the_debugger_to_a_running_app_)  
+ [Attach the debugger to a running app](#BKMK_Attach_the_debugger_to_a_running_app_)  
   
--   [Настройте приложение для запуска в режиме отладки.](#BKMK_Set_the_app_to_run_in_debug_mode)  
+-   [Set the app to run in debug mode](#BKMK_Set_the_app_to_run_in_debug_mode)  
   
--   [Подключение отладчика](#BKMK_Attach_the_debugger)  
+-   [Attach the debugger](#BKMK_Attach_the_debugger)  
   
-##  <a name="BKMK_The_easy_way_to_start_debugging"></a> Простой способ запуска отладки  
- ![Применимо только к Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
+##  <a name="BKMK_The_easy_way_to_start_debugging"></a> The easy way to start debugging  
+ ![Applies to Windows only](../debugger/media/windows_only_content.png "windows_only_content")  
   
-1.  Откройте приложение в Visual Studio.  
+1.  Open the app solution in Visual Studio.  
   
-2.  Если решение содержит проекты как для приложений Магазина Windows, так и для приложений Магазина Windows Phone, убедитесь, что проект, отладку которого вы хотите выполнить, является запускаемым. В обозревателе решений выберите этот проект и в контекстном меню выберите команду **Назначить запускаемым проектом**.  
+2.  If the solution contains projects for both Windows Store and Windows Store Phone apps, make sure that the project you want to debug is the start-up project. In Solution Explore, select the project and then choose **Set as StartUp Project** from the context menu.  
   
-3.  Нажмите клавишу F5.  
+3.  Press F5.  
   
- ![Применимо только к Windows Phone](~/debugger/media/phone_only_content.png "phone\_only\_content")  
+ ![Applies to Windows Phone only](../debugger/media/phone_only_content.png "phone_only_content")  
   
- Visual Studio создает и запускает приложение с подключенным отладчиком. Выполнение продолжается до достижения точки останова, приостановления выполнения вручную, необработанного исключения или завершения приложения. Дополнительные сведения см. в разделе [Краткое руководство по отладке HTML и CSS](../debugger/quickstart-debug-html-and-css.md).  
+ Visual Studio builds and starts the app with the debugger attached. Execution continues until a breakpoint is reached, you manually suspend execution, an unhandled exception occurs, or the app ends. For more information, see [Quickstart: Debug HTML and CSS](../debugger/quickstart-debug-html-and-css.md).  
   
-##  <a name="BKMK_Configure_the_debugging_session"></a> Настройка сеанса отладки  
- Поскольку скрипт не компилируется, конфигурация сборки и параметры платформы не применяются. Если вы производите отладку компонента C\+\+ или управляемого компонента, установите для параметра **Конфигурация** значение **Отладка** и выберите целевую платформу в диалоговом окне **Конфигурация**.  
+##  <a name="BKMK_Configure_the_debugging_session"></a> Configure the debugging session  
+ Because script is not compiled, the build configuration and platform settings don't apply. If you are debugging a C++ or managed component, set the **Configuration** to **Debug** and choose your target platform from the **Configuration** dialog.  
   
-###  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> Откройте страницу свойств отладки для данного проекта.  
+###  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> Open the debugging property page for the project  
   
-1.  Выберите проект в обозревателе решений. В контекстном меню выберите **Свойства**.  
+1.  In Solution Explorer, select the project. On the shortcut menu, choose **Properties**.  
   
-2.  Разверните узел **Свойства конфигурации** и выберите пункт **Отладка**.  
+2.  Expand the **Configuration Properties**  node and then choose **Debugging**.  
   
-###  <a name="BKMK_Choose_the_build_configuration_options"></a> Выберите параметры конфигурации построения  
+###  <a name="BKMK_Choose_the_build_configuration_options"></a> Choose the build configuration options  
   
-1.  В списке **Конфигурация** выберите **Отладка** или **\(Активная\) отладка**.  
+1.  From the **Configuration** list, choose **Debug** or **(Active) Debug**.  
   
-2.  В списке **Платформа** выберите целевую платформу для построения. В большинстве случаев лучшим вариантом является **Любой ЦП**.  
+2.  From the **Platform** list choose the target platform to build for. In most cases, **Any CPU** is the best choice.  
   
-###  <a name="BKMK_Choose_the_deployment_target"></a> Выберите целевой объект развертывания  
- Можно развернуть и отладить приложение на компьютере с Visual Studio, в имитаторе Visual Studio на локальном компьютере или на удаленном компьютере. Выберите целевую платформу в списке **Загружаемый отладчик** на странице свойств **Отладка** для проекта.  
+###  <a name="BKMK_Choose_the_deployment_target"></a> Choose the deployment target  
+ You can deploy and debug an app on the Visual Studio machine, in the Visual Studio simulator on the local machine, or on a remote machine. You choose the target from the **Debugger to launch** list on the **Debugging** property page for the project.  
   
- ![Применимо только к Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![Applies to Windows only](../debugger/media/windows_only_content.png "windows_only_content")  
   
- Для приложения Магазина Windows выберите в списке **Целевое устройство** один из следующих вариантов.  
+ For a Windows Store app, choose one of these options from the **Target device** list:  
   
 |||  
 |-|-|  
-|**Локальный компьютер**|Отладка приложения в текущем сеансе на локальном компьютере. См. раздел [Запуск приложений для Магазина Windows на локальном компьютере](../debugger/run-windows-store-apps-on-the-local-machine.md).|  
-|**Имитатор**|Отладка приложения в имитаторе Visual Studio для приложений [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]. Имитатор представляет собой окно на рабочем столе, которое позволяет отлаживать недоступные на локальном компьютере функциональные возможности устройства, такие как сенсорный ввод и поворот устройства. См. раздел [Запуск приложений для Магазина Windows в симуляторе](../debugger/run-windows-store-apps-in-the-simulator.md).|  
-|**Удаленный компьютер**|Отладка приложения на устройстве, подключенном к локальному компьютеру по интрасети или подсоединенном с помощью кабеля Ethernet напрямую. Для удаленной отладки на удаленном устройстве должны быть установлены и запущены удаленные средства Visual Studio. См. раздел [Запуск приложений Магазина Windows на удаленном компьютере](../debugger/run-windows-store-apps-on-a-remote-machine.md).|  
+|**Local Machine**|Debug the app in the current session on your local machine. See [Run Windows Store apps on the local machine](../debugger/run-windows-store-apps-on-the-local-machine.md).|  
+|**Simulator**|Debug the app in the Visual Studio simulator for [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] apps. The simulator is a Desktop window that enables you to debug device functionality—such as touch gestures and device rotation—that are not available on the local machine. See [Run Windows Store apps in the simulator](../debugger/run-windows-store-apps-in-the-simulator.md).|  
+|**Remote Machine**|Debug the app on a device that is connected to the local machine over an intranet or directly connected by using an Ethernet cable. To debug remotely, the Visual Studio Remote Tools must be installed and running on the remote device. See [Run Windows Store apps on a remote machine](../debugger/run-windows-store-apps-on-a-remote-machine.md).|  
   
- При выборе пункта **Удаленный компьютер** укажите имя или IP\-адрес удаленного компьютера одним из следующих способов.  
+ If you choose **Remote Machine**, specify the name or IP address of the remote machine in one of these ways:  
   
--   Введите имя или IP\-адрес удаленного компьютера в поле **Имя компьютера**.  
+-   Enter the name or IP address of the remote machine in the **Machine Name** box.  
   
--   Выберите стрелку вниз в поле **Имя компьютера** и нажмите **\<Поиск...\>**. После этого выберите удаленный компьютер из диалогового окна **Выбрать подключение к удаленному отладчику**.  
+-   Choose the down arrow in the **Machine Name** box and choose **\<Locate...>**. Then choose the remote machine from **Select Remote Debugger Connection** dialog box.  
   
-     ![Выбор подключения к удаленному отладчику](~/debugger/media/vsrun_pro_selectremotedebuggerdlg.png "VSRUN\_PRO\_SelectRemoteDebuggerDlg")  
+     ![Select Remote Debugger Connection](../debugger/media/vsrun_pro_selectremotedebuggerdlg.png "VSRUN_PRO_SelectRemoteDebuggerDlg")  
   
     > [!NOTE]
-    >  В диалоговом окне Выбор подключения к удаленному отладчику» отображаются компьютеры в локальной подсети и компьютеры, непосредственно подключенные к компьютеру Visual Studio с помощью кабеля Ethernet. Чтобы указать другой компьютер, введите имя в поле **Имя компьютера**.  
+    >  The Select Remote Debugger Connection dialog box displays machines that are on the local sub-net and machines that are directly connected to the Visual Studio machine by an Ethernet cable. To specify another machine, enter the name in the **Machine Name** box.  
   
- ![Применимо только к Windows Phone](~/debugger/media/phone_only_content.png "phone\_only\_content")  
+ ![Applies to Windows Phone only](../debugger/media/phone_only_content.png "phone_only_content")  
   
- Для приложения Магазина Windows выберите **Устройство** или один из эмуляторов в списке **Целевое устройство**.  
+ For a Windows Store Phone app, choose **Device** or one of the emulators from the **Target device** list.  
   
-###  <a name="BKMK_Choose_the_debugger_to_use"></a> Выбор отладчика  
- По умолчанию отладчик подключается к коду JavaScript в приложении. Вы можете выполнить отладку машинного кода C\+\+ и управляемого кода компонентов приложения вместо кода JavaScript. Указать код для отладки можно в списке **Тип отладчика** на странице свойств **Отладка** проекта приложения.  
+###  <a name="BKMK_Choose_the_debugger_to_use"></a> Choose the debugger to use  
+ By default, the debugger attaches to the JavaScript code in your app. You can choose to debug the native C++ and managed code of components of your app instead of the JavaScript code. You specify the code to debug in the **Debugger Type** list on the **Debugging** property page of the app project.  
   
- Выберите один из следующих отладчиков в списке **Тип отладчика**.  
+ Choose one of these debuggers from the **Debugger Type** list:  
   
 |||  
 |-|-|  
-|**Только скрипт**|Отладка кода JavaScript в приложении. Управляемый код и машинный код игнорируются.|  
-|**Только машинный код**|Отладка машинного кода C\/C\+\+ в приложении. Управляемый код и код JavaScript игнорируются.|  
-|**Машинный код и скрипт**|Отладка машинного кода C\+\+ и кода JavaScript в приложении.|  
-|**Только управляемый код**|Отладка управляемого кода в приложении. Код JavaScript и машинный код C\/C\+\+ игнорируются.|  
-|**Смешанный \(управляемый и машинный\)**|Отладка машинного кода C\/C\+\+ и управляемого кода в приложении. Код JavaScript игнорируется.|  
+|**Script Only**|Debug JavaScript code in your app. Managed code and native code are ignored.|  
+|**Native Only**|Debug native C/C++ code in your app. Managed code and JavaScript code are ignored.|  
+|**Native with Script**|Debug native C++ code and JavaScript code in your app.|  
+|**Managed Only**|Debug managed code in your app. JavaScript code and native C/C++ code are ignored.|  
+|**Mixed (Managed and Native)**|Debug native C/C++ code and managed code in your app. JavaScript code is ignored.|  
   
-###  <a name="BKMK__Optional__Delay_starting_app_in_the_debug_session"></a> \(Необязательно\) Задержка запуска приложения в сеансе отладки  
- По умолчанию Visual Studio немедленно запускает приложение при запуске отладки. Однако можно начать сеанс отладки, но отложить запуск приложения. Приложение открывается в отладчике при запуске приложения из меню "Пуск", по контракту активации или запуске другим процессом или методом. Вы также можете использовать отложенный запуск для отладки фоновых событий в приложении, которые должны возникать, пока приложение не выполняется.  
+###  <a name="BKMK__Optional__Delay_starting_app_in_the_debug_session"></a> (Optional) Delay starting the app in the debug session  
+ By default, Visual Studio immediately starts the app when you start debugging. You can also start a debug session but delay the start of your app. The app is launched in the debugger when it is launched from the Start menu or by an activation contract, or when it is started by another process or method. You can also use delayed start to debug background events in your app that you want to occur when the app is not running.  
   
- Укажите, требуется ли отложить запуск приложения, в списке **Запустить приложение** на странице свойств **Отладка** проекта приложения. Выберите один из следующих вариантов.  
+ You specify whether to delay the launch of your app in the **Launch Application** list on the **Debugging** property page of the app project. Choose one of these options:  
   
--   Выберите **Нет**, чтобы отложить запуск приложения.  
+-   Choose **No** to delay the launch of your app.  
   
--   Выберите **Да**, чтобы запустить приложение немедленно.  
+-   Choose **Yes** to launch the app immediately.  
   
-###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> \(Необязательно\) Отключите сетевое замыкание на себя  
- ![Применимо только к Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
+###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> (Optional) Disable network loopbacks  
+ ![Applies to Windows only](../debugger/media/windows_only_content.png "windows_only_content")  
   
- Из соображений безопасности приложению Магазина Windows, установленному стандартным образом, не разрешается выполнять сетевые вызовы к устройству, на котором оно установлено. По умолчанию Visual Studio создает для развертываемого приложения исключение из этого правила. Это исключение позволяет тестировать процедуры обмена данными на одном компьютере. Прежде чем отправлять приложение в Магазин Windows, необходимо протестировать приложение без этого исключения.  
+ For security reasons, a Windows Store app that is installed in the standard manner is not allowed to make network calls to the device it is installed on. By default, Visual Studio deployment creates an exemption from this rule for the deployed app. This exemption allows you to test communication procedures on a single machine. Before you submit your app to the Windows Store, you should test your app without the exemption.  
   
- Чтобы удалить исключение из правила сетевого замыкания на себя, выберите **Нет** в списке **Разрешить сетевое замыкание на себя** на странице свойств **Отладка**.  
+ To remove the network loopback exemption, choose **No** from the **Allow Network Loopback** list on the **Debugging** property page.  
   
-##  <a name="BKMK_Start_the_debugging_session"></a> Запуск сеанса отладки  
+##  <a name="BKMK_Start_the_debugging_session"></a> Start the debugging session  
   
-###  <a name="BKMK_Start_debugging__F5_"></a> Начать отладку \(F5\)  
- При выборе команды **Начать отладку** в меню **Отладка** \(или при нажатии клавиши F5\) Visual Studio запускает приложение с подключенным отладчиком. Выполнение продолжается до достижения точки останова, приостановления выполнения вручную, необработанного исключения или завершения приложения.  
+###  <a name="BKMK_Start_debugging__F5_"></a> Start debugging (F5)  
+ When you choose **Start Debugging** on the **Debug** menu (Keyboard: F5), Visual Studio launches the app with the debugger attached. Execution continues until a breakpoint is reached, you manually suspend execution, an unhandled exception occurs, or the app ends.  
   
-###  <a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> Начать отладку \(F5\), но отложить запуск приложения  
- Приложение можно настроить для выполнения в режиме отладки, но запускать его нужно не отладчиком, а другим методом. Например, можно выполнить отладку запуска приложения из меню «Пуск» или отладку какого\-либо фонового процесса в приложении без запуска самого приложения. Чтобы задержать запуск приложения, выполните следующие действия.  
+###  <a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> Start debugging (F5) but delay the app start  
+ You can set the app to run in debug mode, but let it be started by a method other than the debugger. For example, you might want to debug the launch of your app from the Start menu, or to debug a background process in the app without starting the app.To delay the app start, do this:  
   
-1.  На странице**Отладка** свойств проекта приложения выберите значение **Нет** в списке **Запустить приложение**.  
+1.  On the **Debug** page of the app project properties, choose **No** from the **Launch Application** list.  
   
-2.  Выберите **Начать отладку** в меню **Отладка** \(или на клавиатуре нажмите клавишу F5\).  
+2.  Choose **Start Debugging** on the **Debug** menu (Keyboard: F5).  
   
-3.  Запустите приложение из меню «Пуск», по контракту исполнения или другой процедурой.  
+3.  Start your app from the Start menu, an execution contract, or by another procedure.  
   
- Приложение запускается в режиме отладки. Выполнение продолжается до достижения точки останова, приостановки выполнения вручную, возникновения необработанного исключения или завершения приложения.  
+ The app starts in debug mode. Execution continues until a breakpoint is reached, you manually suspend execution, an unhandled exception occurs, or the app ends.  
   
- Дополнительные сведения об отладке фоновых задач см. в разделе [Вызов событий приостановки, возобновления и фоновых событий для Магазина Windows](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).  
+ . For more information about debugging background tasks, see [Trigger suspend, resume, and background events for Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).  
   
-##  <a name="BKMK_Start_an_installed_app_in_the_debugger"></a> Запуск установленного приложения в отладчике  
- При запуске отладки нажатием клавиши F5 Visual Studio выполняет сборку приложения и развертывает его, настраивает приложение для выполнения в режиме отладки и затем запускает его. Чтобы запустить приложение, уже установленное на устройстве, используйте диалоговое окно "Отлаживать установленный пакет приложения". Эта процедура применима при необходимости выполнить отладку приложения, установленного из Магазина Windows, или при наличии исходных файлов для приложения, но отсутствии для него проекта Visual Studio. Например, у вас может быть специальная система сборок, в которой не используются проекты и решения Visual Studio.  
+##  <a name="BKMK_Start_an_installed_app_in_the_debugger"></a> Start an installed app in the debugger  
+ When you start debugging by using F5, Visual Studio builds and deploys the app, sets the app to run in debug mode, and then starts it. To start an app that is already installed on a device, use the Debug Installed App Package dialog box. This procedure is useful when you need to debug an app that was installed from the Windows store, or when you have the source files for the app, but you do not have a Visual Studio project for the app. For example, you might have a custom build system that does not use Visual Studio projects or solutions.  
   
- Приложение может быть установлено на локальном устройстве или на удаленном устройстве. Его можно запустить немедленно или настроить для выполнения в отладчике при запуске другим процессом или методом, например из меню "Пуск" или по контракту на активацию. Приложение также можно настроить для выполнения в режиме отладки, если требуется выполнить отладку какого\-либо фонового процесса, не запуская приложение. Дополнительные сведения см. в разделе [Вызов событий приостановки, возобновления и фоновых событий для Магазина Windows](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).  
+ The app can be installed on the local device, or it can be on a remote device.  You can start the app immediately, or you can set it to run in the debugger when it is started by another process or method, such as from the Start menu or by an activation contract, You can also set the app to run in debug mode when you want to debug a background process without starting the app. For more information, see [Trigger suspend, resume, and background events for Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).  
   
- Чтобы настроить установленное приложение для запуска в режиме отладки, выполните следующие действия.  
+ To set an installed app to run in debug mode, do this:  
   
 > [!NOTE]
->  В начале выполнения этой процедуры приложение не должно быть запущенным.  
+>  The app must not be running when you start this procedure.  
   
-1.  В меню **Отладка** выберите команду **Отлаживать установленный пакет приложения**.  
+1.  On the **Debug** menu, choose **Debug Installed App Package**.  
   
-2.  Выберите в списке один из следующих вариантов.  
+2.  Choose one of the following options from the list:  
   
     |||  
     |-|-|  
-    |**Локальный компьютер**|Отладка приложения в текущем сеансе на локальном компьютере. См. раздел [Запуск приложений для Магазина Windows на локальном компьютере](../debugger/run-windows-store-apps-on-the-local-machine.md).|  
-    |**Имитатор**|Отладка приложения в имитаторе Visual Studio для приложений [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]. Имитатор представляет собой окно на рабочем столе, которое позволяет отлаживать недоступные на локальном компьютере функциональные возможности устройства, такие как сенсорный ввод и поворот устройства. См. раздел [Запуск приложений для Магазина Windows в симуляторе](../debugger/run-windows-store-apps-in-the-simulator.md).|  
-    |**Удаленный компьютер**|Отладка приложения на устройстве, подключенном к локальному компьютеру по интрасети или подсоединенном с помощью кабеля Ethernet напрямую. Для удаленной отладки на удаленном устройстве должны быть установлены и запущены удаленные средства Visual Studio. См. раздел [Запуск приложений Магазина Windows на удаленном компьютере](../debugger/run-windows-store-apps-on-a-remote-machine.md).|  
+    |**Local Machine**|Debug the app in the current session on your local machine. See [Run Windows Store apps on the local machine](../debugger/run-windows-store-apps-on-the-local-machine.md).|  
+    |**Simulator**|Debug the app in the Visual Studio simulator for [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] apps. The simulator is a Desktop window that enables you to debug device functionality—such as touch gestures and device rotation—that are not available on the local machine. See [Run Windows Store apps in the simulator](../debugger/run-windows-store-apps-in-the-simulator.md).|  
+    |**Remote Machine**|Debug the app on a device that is connected to the local machine over an intranet or directly connected by using an Ethernet cable. To debug remotely, the Visual Studio Remote Tools must be installed and running on the remote device. See [Run Windows Store apps on a remote machine](../debugger/run-windows-store-apps-on-a-remote-machine.md).|  
   
-3.  Выберите приложение в списке **Установленные пакеты приложений**.  
+3.  Choose the app from the **Installed App Packages** list.  
   
-4.  Выберите модуль отладки для использования в списке **Отлаживать этот тип кода**.  
+4.  Choose the debug engine to use from the **Debug this code type** list.  
   
-5.  \(Необязательно\). Выберите **Не запускать, а отлаживать мой код при открытии**, чтобы выполнить отладку приложения при его запуске каким\-либо другим методом или отладку фонового процесса.  
+5.  (Optional). Choose **Do not launch, but debug my code when it starts** to debug the app when it is started by some other method, or to debug a background process.  
   
- Когда вы нажимаете **Запуск**, приложение запускается или настраивается для запуска в режиме отладки.  
+ When you click **Start**, the app is launched or is set to run in debug mode.  
   
-##  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> Подключение отладчика к выполняемому приложению  
- Чтобы подключить отладчик к приложению [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], необходимо с помощью диспетчера отлаживаемых пакетов настроить приложение на запуск в режиме отладки. Диспетчер отлаживаемых пакетов устанавливается вместе с инструментами удаленной отладки Visual Studio.  
+##  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> Attach the debugger to a running app  
+ To attach the debugger to a [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] app, you must use the Debuggable Package Manager to set the app to run in debug mode. The Debuggable Package Manager is installed with the Visual Studio Remote Tools.  
   
- Подключение отладчика к приложению полезно, когда требуется отладить уже установленное приложение, например приложение, установленное из Магазина Windows. Подключение необходимо, когда имеются исходные файлы приложения, но отсутствует проект Visual Studio для приложения. Например, установлена специальная система построений, в которой не используются проекты и решения Visual Studio.  
+ Attaching the debugger to an app is useful when you need to debug an already-installed app, such as an app that was installed from the Windows store. Attaching is required when you have the source files for the app, but you do not have a Visual Studio project for the app. For example, you might have a custom build system that does not use Visual Studio projects or solutions.  
   
- Для подключения к приложению выполните следующие действия.  
+ To attach to an app:  
   
-1.  Настройте приложение для запуска в режиме отладки. Это нужно делать, когда приложение не выполняется.  
+1.  Set the app to run in debug mode. This must be done when the app is not running.  
   
-2.  Запустите приложение. Можно запустить приложение из меню «Пуск», по контракту исполнения или другим методом.  
+2.  Start the app. You can start the app from the Start menu, an execution contract, or some other method.  
   
-3.  Подключите отладчик к выполняемому приложению.  
+3.  Attach the debugger to the running app.  
   
-###  <a name="BKMK_Set_the_app_to_run_in_debug_mode"></a> Настройте приложение для запуска в режиме отладки.  
+###  <a name="BKMK_Set_the_app_to_run_in_debug_mode"></a> Set the app to run in debug mode  
   
-1.  Установите инструменты удаленной отладки Visual Studio на устройстве, на котором установлено приложение. См. раздел [Установка инструментов удаленной отладки](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).  
+1.  Install the Visual Studio Remote Tools on the device where the app is installed. See [Installing the remote tools](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).  
   
-2.  В меню «Пуск» найдите `Debuggable Package Manager` и запустите его.  
+2.  On the Start menu, search for `Debuggable Package Manager` and then start it.  
   
-     Отобразится окно PowerShell, настроенное для работы с командлетами AppxDebug.  
+     A PowerShell window properly configured for the AppxDebug cmdlet appears.  
   
-3.  Чтобы включить отладку приложения, необходимо задать идентификатор приложения PackageFullName. Чтобы просмотреть список всех приложений с идентификатором PackageFullName, введите `Get-AppxPackage` в командной строке PowerShell.  
+3.  To enable debugging of an app, you must specify the PackageFullName identifier of the app. To view a list all apps that includes the PackageFullName, type `Get-AppxPackage` at the PowerShell prompt.  
   
-4.  В командной строке PowerShell введите `Enable-AppxDebug` *ПолноеИмяПакета*, где *Полное ИмяПакета* — идентификатор PackageFullName этого приложения.  
+4.  At the PowerShell prompt, enter `Enable-AppxDebug` *PackageFullName* where *PackageFullName* is the PackageFullName identifier of the app.  
   
-###  <a name="BKMK_Attach_the_debugger"></a> Подключение отладчика  
+###  <a name="BKMK_Attach_the_debugger"></a> Attach the debugger  
   
 > [!TIP]
->  Приложения JavaScript выполняются в экземпляре процесса wwahost.exe. Если при вложении в приложение выполняются другие приложения JavaScript, вам потребуется знать числовой идентификатор процесса того wwahost.exe, где выполняется приложение.  
+>  JavaScript apps run in an instance of the wwahost.exe process. If other JavaScript apps are running when you attach to the app, you will need to know the numeric process id (PID) of the wwahost.exe that the app is running in.  
 >   
->  Самый простой способ решения данной проблемы заключается в закрытии всех других приложений JavaScript. В противном случае вы можете открыть диспетчер задач Windows перед запуском приложения и записать идентификаторы процессов wwahost.exe. При указании процесса для подключения в диалоговом окне **Доступные процессы** файл wwahost.exe приложения будет иметь идентификатор, отличный от записанного вами.  
+>  The easiest way to deal with this situation is to close all of the other JavaScript apps. Otherwise, you can open Windows Task Manager before you start the app and note the ids of the wwahost.exe processes. When you specify the process to attach to in the **Available Processes**  dialog box, the wwahost.exe of the app will have an id that is different than the ones that you have noted.  
   
- Чтобы подключить отладчик, выполните следующие действия.  
+ To attach the debugger:  
   
-1.  В меню **Отладка** выберите **Подключить к процессу**.  
+1.  On the **Debug** menu, choose **Attach to Process**.  
   
-     Откроется диалоговое окно **Подключить к процессу**.  
+     The **Attach to Process** dialog box appears.  
   
-2.  Чтобы подключить отладчик к приложению на удаленном устройстве, укажите это удаленное устройство в поле **Квалификатор**. Вы можете выполнить следующие действия.  
+2.  To attach to an app on a remote device, specify the remote device in the **Qualifier** box. You can:  
   
-    -   Ввести имя в поле **Квалификатор**.  
+    -   Enter the name in the **Qualifier** box.  
   
-    -   Щелкнуть стрелку вниз в поле **Квалификатор** и выбрать устройство из списка устройств, к которым ранее подключался отладчик.  
+    -   Choose the down-arrow in the **Qualifier** box and choose the device from a list of devices that you have attached to before.  
   
-    -   Нажать кнопку **Найти**, чтобы выбрать устройство из списка устройств в локальной подсети.  
+    -   Choose **Find** to choose the device from a list of devices on your local subnet.  
   
-3.  Укажите тип кода, который требуется отладить, в поле **Подключить к** поле.  
+3.  Specify the type of code that you want to debug in the **Attach to** box.  
   
-     Нажмите кнопку **Выбрать** и затем выполните одно из следующих действий.  
+     Choose **Select** and then do one of the following:  
   
-    -   Установите флажок **Автоматически определять тип отлаживаемого кода**.  
+    -   Choose **Automatically determine the type of code to debug**.  
   
-    -   Щелкните **Выполнять отладку кода следующих типов** и выберите один или несколько типов из списка.  
+    -   Choose **Debug these code types** and then choose one or more types from the list.  
   
-4.  В списке **Доступные процессы**  выберите соответствующий процесс **wwahost.exe**. Используйте столбец **Заголовок** для идентификации приложения.  
+4.  In the **Available Processes**  list, choose the appropriate **wwahost.exe** process. Use the **Title** column to identify your app.  
   
-5.  Нажмите кнопку **Подключить**.  
+5.  Choose **Attach**.  
   
- Visual Studio подключает отладчик к процессу. Выполнение продолжается до достижения точки останова, приостановки выполнения вручную, возникновения необработанного исключения или завершения приложения.  
+ Visual Studio attaches the debugger to the process. Execution continues until a breakpoint is reached, you manually suspend execution, an unhandled exception occurs, or the app ends.  
   
-## См. также  
- [Управление выполнение в сессии отладки \(JavaScript\)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md)   
- [Краткое руководство по отладке HTML и CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Вызов событий приостановки, возобновления и фоновых событий для Магазина Windows](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)   
- [Отладка приложений в Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)
+## <a name="see-also"></a>See Also  
+ [Control execution in a debug session (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md)   
+ [Quickstart: Debug HTML and CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Trigger suspend, resume, and background events for Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)   
+ [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)

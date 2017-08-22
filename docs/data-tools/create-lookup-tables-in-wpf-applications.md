@@ -1,66 +1,85 @@
 ---
-title: "Практическое руководство. Создание таблиц подстановки в приложениях WPF | Microsoft Docs"
-ms.custom: ""
-ms.date: "09/21/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "данные [WPF], отображение"
-  - "привязка данных, WPF"
-  - "отображение данных, WPF"
-  - "WPF [WPF], данные"
-  - "привязка данных WPF [Visual Studio]"
-  - "конструктор WPF, привязка данных"
-  - "WPF, привязка данных в Visual Studio"
+title: Create lookup tables in WPF applications | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- aspx
+helpviewer_keywords:
+- data [WPF], displaying
+- WPF, data binding in Visual Studio
+- WPF data binding [Visual Studio]
+- displaying data, WPF
+- WPF [WPF], data
+- WPF Designer, data binding
+- data binding, WPF
 ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 caps.latest.revision: 16
-caps.handback.revision: 13
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 35c99d7b903674af2e4d8b6f6e8c770d440d95c8
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/22/2017
+
 ---
-# Практическое руководство. Создание таблиц подстановки в приложениях WPF
-Таблицу подстановки можно создать путем перетаскивания главного узла родительской таблицы или объекта из окна **Источники данных** на элемент управления, который уже привязан к столбцу или свойству в связанной дочерней таблице.  Термин *таблица подстановки* \(иногда используется *привязка подстановки*\) описывает элемент управления, который отображает информацию из одной таблицы данных на основе значения в поле внешнего ключа в другой таблице.  
+# <a name="create-lookup-tables-in-wpf-applications"></a>Create lookup tables in WPF applications
+The term *lookup table* (sometimes called a *lookup binding*) describes a control that displays information from one data table based on the value of a foreign-key field in another table. You can create a lookup table by dragging the main node of a parent table or object in the **Data Sources** window onto a control that is already bound to a column or property in a related child table.  
   
- Например, рассмотрим таблицу `Orders` в базе данных продаж.  Каждая запись в таблице `Orders` включает `CustomerID`, указывающий, какой клиент разместил заказ.  `CustomerID` является внешним ключом, который указывает на запись клиента в таблице `Customers`.  При отображении списка заказов из таблицы `Orders` может потребоваться вместо `CustomerID` отобразить реальное имя клиента.  Поскольку имя клиента содержится в таблице `Customers`, для его отображения потребуется создать таблицу подстановки.  Таблица подстановки использует значение `CustomerID` в записи `Orders` для перемещения по связи и возвращает понятное имя клиента.  
+ For example, consider a table of `Orders` in a sales database. Each record in the `Orders` table includes a `CustomerID` that indicates which customer placed the order. The `CustomerID` is a foreign key that points to a customer record in the `Customers` table. When you display a list of orders from the `Orders` table, you may want to display the actual customer name instead of the `CustomerID`. Because the customer name is in the `Customers` table, you need to create a lookup table to display the customer name. The lookup table uses the `CustomerID` value in the `Orders` record to navigate the relationship, and return the customer name.  
   
-### Создание таблицы подстановок  
+## <a name="to-create-a-lookup-table"></a>To create a lookup table  
   
-1.  Добавьте в проект источник данных одного из следующих типов со связанными данными:  
+1.  Add one of the following types of data sources with related data to your project:  
   
-    -   Набор данных или модель EDM.  Дополнительные сведения см. в разделе [Практическое руководство. Подключение к данным в базе данных](../data-tools/how-to-connect-to-data-in-a-database.md).  
+    -   Dataset or Entity Data Model. 
   
-    -   Служба данных WCF, служба WCF или веб\-служба.  Дополнительные сведения см. в разделе [Практическое руководство. Подключение к данным в службе](../data-tools/how-to-connect-to-data-in-a-service.md).  
+    -   WCF Data Service, WCF service or Web service. For more information, see [How to: Connect to Data in a Service](../data-tools/how-to-connect-to-data-in-a-service.md).  
   
-    -   Объекты.  Дополнительные сведения см. в разделе [Практическое руководство. Подключение к данным в объектах](../Topic/How%20to:%20Connect%20to%20Data%20in%20Objects.md).  
-  
-    > [!NOTE]
-    >  Для создания таблицы подстановки необходимо, чтобы в качестве источника данных для проекта существовали две связанные таблицы или два связанных объекта.  
-  
-2.  Откройте **конструктор WPF** и удостоверьтесь, что он содержит контейнер, который является допустимым целевым объектом перетаскивания элементов в окне **Источники данных**.  
-  
-     Дополнительные сведения о допустимых целевых объектах перетаскивания см. в разделе [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
-  
-3.  Чтобы открыть окно **Источники данных**, щелкните пункт **Показать источники данных** в меню **Данные**.  
-  
-4.  Разворачивайте узлы в окне **Источники данных**, пока не увидите родительскую таблицу или родительский объект и связанную дочернюю таблицу или дочерний объект.  
+    -   Objects. For more information, see [Bind to objects in Visual Studio](bind-objects-in-visual-studio.md).  
   
     > [!NOTE]
-    >  Связанная дочерняя таблица или дочерний объект — это узел, который отображается как развертываемый дочерний узел в узле родительской таблицы или родительского объекта.  
+    >  Before you can create a lookup table, two related tables or objects must exist as a data source for the project.  
   
-5.  Щелкните раскрывающееся меню дочернего узла и выберите **Сведения**.  
+2.  Open the **WPF Designer**, and make sure that the designer contains a container that is a valid drop target for items in the **Data Sources** window.  
   
-6.  Разверните дочерний узел.  
+     For more information about valid drop targets, see [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).  
   
-7.  В дочернем узле щелкните раскрывающееся меню элемента, связывающего дочерние и родительские данные \(в приведенном выше примере это будет узел **CustomerID**\).  Выберите один из следующих типов элементов управления, поддерживающих привязку подстановки.  
+3.  On the **Data** menu, click **Show Data Sources** to open the **Data Sources** window.  
+  
+4.  Expand the nodes in the **Data Sources** window, until you can see the parent table or object and the related child table or object.  
+  
+    > [!NOTE]
+    >  The related child table or object is the node that appears as an expandable child node under the parent table or object.  
+  
+5.  Click the drop-down menu for the child node, and select **Details**.  
+  
+6.  Expand the child node.  
+  
+7.  Under the child node, click the drop-down menu for the item that relates the child and parent data. (In the preceding example, this is the **CustomerID** node.) Select one of the following types of controls that support lookup binding:  
   
     -   **ComboBox**  
   
@@ -69,30 +88,30 @@ manager: "ghogen"
     -   **ListView**  
   
         > [!NOTE]
-        >  Если элемент управления **ListBox** или **ListView** отсутствует в списке, его можно добавить в список.  Сведения см. в разделе [Задание поведения, при котором элемент управления создается при перетаскивании из окна "Источники данных"](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+        >  If the **ListBox** or **ListView** control does not appear in the list, you can add these controls to the list. For information, see [Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
-    -   Любой пользовательский элемент управления, производный от класса <xref:System.Windows.Controls.Primitives.Selector>.  
+    -   Any custom control that derives from <xref:System.Windows.Controls.Primitives.Selector>.  
   
         > [!NOTE]
-        >  Сведения о том, как добавлять пользовательские элементы управления в список элементов, которые можно выбирать как элементы в окне **Источники данных**, см. в разделе [Добавление пользовательских элементов управления в окно "Источники данных"](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+        >  For information about how to add custom controls to the list of controls you can select for items in the **Data Sources** window, see [Add custom controls to the Data Sources window](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
-8.  Перетащите дочерний узел из окна **Источники данных** на контейнер в конструкторе WPF \(в приведенном выше примере дочерним является узел **Orders**\).  
+8.  Drag the child node from the **Data Sources** window onto a container in the WPF designer. (In the preceding example, the child node is the **Orders** node.)  
   
-     Visual Studio генерирует язык XAML, который создает новые связанные с данными элементы управления для всех перетаскиваемых элементов.  Язык XAML также добавляет к ресурсам целевого объекта перетаскивания новый <xref:System.Windows.Data.CollectionViewSource> для дочерней таблицы или дочернего объекта.  Для некоторых источников данных Visual Studio также генерирует код для загрузки данных в таблицу или объект.  Дополнительные сведения см. в разделе [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
+     Visual Studio generates XAML that creates new data-bound controls for each of the items that you drag. The XAML also adds a new <xref:System.Windows.Data.CollectionViewSource> for the child table or object to the resources of the drop target. For some data sources, Visual Studio also generates code to load data into the table or object. For more information, see [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).  
   
-9. Перетащите родительский узел из окна **Источники данных** на созданный ранее элемент управления привязкой подстановки \(в приведенном выше примере родительским является узел **Customers**\).  
+9. Drag the parent node from the **Data Sources** window onto the lookup binding control that you created earlier. (In the preceding example, the parent node is the **Customers** node).  
   
-     Visual Studio задает некоторые свойства элемента управления для настройки привязки подстановки.  В следующей таблице перечисляются свойства, изменяемые Visual Studio.  При необходимости эти свойства можно изменить в редакторе XAML или в окне **Свойства**.  
+     Visual Studio sets some properties on the control to configure the lookup binding. The following table lists the properties that Visual Studio modifies. If necessary, you can change these properties in the XAML or in the **Properties** window.  
   
-    |Свойство.|Объяснение настройки|  
-    |---------------|--------------------------|  
-    |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|Это свойство указывает на коллекцию или привязку, которые используются для получения данных, отображаемых в элементе управления.  Visual Studio задает это свойство элементу <xref:System.Windows.Data.CollectionViewSource> для родительских данных, которые перетаскивались на элемент управления.|  
-    |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|Это свойство указывает путь к элементу данных, отображаемому в элементе управления.  Visual Studio задает это свойство первому столбцу или свойству в родительских данных после первичного ключа, содержащего строковый тип данных.<br /><br /> Если требуется отобразить другой столбец или другое свойство в родительских данных, измените это свойство, задав путь к другому свойству.|  
-    |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio создает привязку этого свойства к столбцу или свойству дочерних данных, которые перетаскивались в конструктор.  Это свойство является внешним ключом для родительских данных.|  
-    |<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A>|Visual Studio задает этому свойству путь к столбцу или свойству дочерних данных, которые являются внешним ключом для родительских данных.|  
+    |Property|Explanation of setting|  
+    |--------------|----------------------------|  
+    |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|This property specifies the collection or binding that is used to get the data that is displayed in the control. Visual Studio sets this property to the <xref:System.Windows.Data.CollectionViewSource> for the parent data you dragged to the control.|  
+    |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|This property specifies the path of the data item that is displayed in the control. Visual Studio sets this property to the first column or property in the parent data, after the primary key, that has a string data type.<br /><br /> If you want to display a different column or property in the parent data, change this property to the path of a different property.|  
+    |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio binds this property to the column or property of the child data that you dragged to the designer. This is the foreign key to the parent data.|  
+    |<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A>|Visual Studio sets this property to the path of the column or property of the child data that is the foreign key to the parent data.|  
   
-## См. также  
- [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
- [Практическое руководство. Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
- [Практическое руководство. Отображение связанных данных в приложениях WPF](../data-tools/display-related-data-in-wpf-applications.md)   
- [Пошаговое руководство. Отображение связанных данных в приложении WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
+## <a name="see-also"></a>See Also  
+ [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
+ [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
+ [Display related data in WPF applications](../data-tools/display-related-data-in-wpf-applications.md)   
+ [Walkthrough: Displaying Related Data in a WPF Application](../data-tools/display-related-data-in-wpf-applications.md)

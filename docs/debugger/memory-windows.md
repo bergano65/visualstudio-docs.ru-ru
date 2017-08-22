@@ -1,125 +1,138 @@
 ---
-title: "Окно памяти | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.memory"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Память - окно"
-  - "строки [Visual Studio], просмотр"
-  - "отладчик [Visual Studio], окно "Память""
-  - "память [Visual Studio], отладка"
-  - "отладка [Visual Studio], окно "Память""
-  - "буферы, просмотр"
+title: View Memory for Variables in the Debugger | Microsoft Docs
+ms.custom: H1Hack27Feb2017
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.memory
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+helpviewer_keywords:
+- Memory window
+- strings [Visual Studio], viewing
+- debugger [Visual Studio], Memory window
+- memory [Visual Studio], debugging
+- debugging [Visual Studio], Memory window
+- buffers, viewing
 ms.assetid: 7f7a0439-10e4-4966-bb2d-51f04cda4fe2
 caps.latest.revision: 32
-caps.handback.revision: 32
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Окно памяти
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 2b271eaf132aea65c1217d8b4f3bfef7e1e1ac0e
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/22/2017
 
-Окно **Память** предоставляет обзор области памяти, используемой программой.  Окно **Контрольные значения**, диалоговое окно **Быстрая проверка**, окно **Видимые** и окно **Локальные** отображают содержимое переменных, которые хранятся в определенных участках памяти.  Но окно **Память** показывает более полную картину.  Данное представление может быть полезно при анализе больших частей данных \(например, буферов или больших строк\), которые плохо отображаются в других окнах.  Однако в окне **Память** могут отображаться не только данные.  В нем может отображаться все, что находится в области памяти, будь то данные, код или случайные биты мусора из свободного участка памяти.  
+---
+# <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Use the Memory Windows in the Visual Studio Debugger
+The **Memory** window provides a view into the memory space that is used by your application. The **Watch** window, **QuickWatch** dialog box, **Autos** window, and **Locals** window show you the content of variables, which are stored at specific locations in memory. But the **Memory** window shows you the large-scale picture. This view can be convenient for examining large pieces of data (buffers or large strings, for example) that do not display well in the other windows. However, the **Memory** window is not limited to displaying data. It displays everything in the memory space, whether the content is data, code, or random bits of garbage in unassigned memory.  
   
- Окно **Память** доступно только при включении отладки на уровне адреса в узле **Отладка** диалогового окна **Параметры**.  Окно **Память** не доступно для скриптов и SQL, поскольку эти языки не поддерживают концепцию памяти.  
+ The **Memory** window is available only if address-level debugging is enabled in the **Options** dialog box, **Debugging** node. The **Memory** window is not available for Script or SQL, which are languages that do not recognize the concept of memory.  
   
-## Открытие окна "Память"  
+## <a name="opening-a-memory-window"></a>Opening a Memory Window  
   
-#### Открытие окна "Память"  
+#### <a name="to-open-a-memory-window"></a>To open a Memory window  
   
-1.  Запустите отладку, если еще не сделали это.  
+1.  Start debugging, if you are not already in debug mode.  
   
-2.  В меню **Отладка** выберите пункт **Окна**.  Затем выберите **Память** и щелкните **Память 1**, **Память 2**, **Память 3** или **Память 4**. \(В младших выпусках [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] имеется только одно окно **Память**.  При использовании одного из таких выпусков просто щелкните пункт **Память**.\)  
+2.  In the **Debug** menu, point to **Windows**. Then, point to **Memory** and then click **Memory 1**, **Memory 2**, **Memory 3**, or **Memory 4**. (Lower-level editions of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] have only a single **Memory** window. If you are using one of those editions, just click **Memory**.)  
   
-## Разбиение по страницам в окне "Память"  
- В окне **Память** имеется вертикальная полоса прокрутки, работающая в нестандартном режиме.  Современные персональные компьютеры имеют очень большое адресное пространство, поэтому в нем достаточно легко заблудиться, перетаскивая бегунок полосы прокрутки в произвольное расположение.  По этой причине бегунок "подпружинен" и всегда остается в центре полосы прокрутки.  В приложениях машинного кода можно постранично перемещаться вверх и вниз, однако нельзя свободно использовать полосу прокрутки.  
+## <a name="paging-in-the-memory-window"></a>Paging in the Memory Window  
+ The **Memory** window has a vertical scrollbar that operates in a nonstandard manner. The address space of a modern computer is very large, and you could easily get lost by grabbing the scrollbar thumb and dragging it to a random location. For that reason, the thumb is "spring-loaded" and always remains in the center of the scrollbar. In native code applications, you can page up or down, but cannot scroll about freely.  
   
- Старшие адреса памяти отображаются в нижней части экрана.  Для просмотра старших адресов следует прокрутить экран вниз, а не вверх.  
+ Higher memory addresses appear at the bottom of the window. To view a higher address, scroll down, not up.  
   
-#### Перемещение вверх или вниз в области памяти  
+#### <a name="to-page-up-or-down-in-memory"></a>To page up or down in memory  
   
-1.  Для перемещения на страницу вниз \(к старшему адресу памяти\) щелкните вертикальную полосу прокрутки под бегунком.  
+1.  To page down (move to a higher memory address), click under the thumb in the vertical scrollbar.  
   
-2.  Для перемещения на страницу вверх \(к младшему адресу памяти\) щелкните вертикальную полосу прокрутки ниже бегунка.  
+2.  To page up (move to a lower memory address), click above the thumb the vertical scrollbar.  
   
-## Выбор ячейки памяти  
- Быстро переместиться в выбранную ячейку памяти можно с помощью операции перетаскивания или с помощью изменения значения в поле **Адрес**.  В поле **Адрес** можно вводить не только числовые значения, но и выражения, результатом вычисления которых является адрес.  По умолчанию выражение **Адрес** интерпретируется в окне **Память** в режиме реального времени, т.е. это выражение заново вычисляется по мере выполнения программы.  Выражения, вычисляемые в реальном времени, могут быть очень полезными.  Например, их можно использовать для просмотра участка памяти, на который ссылается указатель.  
+## <a name="selecting-a-memory-location"></a>Selecting a Memory Location  
+ If you want to move instantly to a selected location in memory, you can do so by using a drag-and-drop operation or by editing the value in the **Address** box. The **Address** box accepts not only numeric values but also expressions that evaluate to addresses. By default, the **Memory** window treats an **Address** expression as a live expression, which is reevaluated as your program executes. Live expressions can be very useful. For example, you can use them to view the memory that is touched by a pointer.  
   
-#### Выбор ячейки памяти с помощью перетаскивания  
+#### <a name="to-select-a-memory-location-by-dragging-and-dropping"></a>To select a memory location by dragging and dropping  
   
-1.  Выберите в любом окне адрес памяти или переменную\-указатель, содержащую адрес памяти.  
+1.  In any window, select a memory address or pointer variable that contains a memory address.  
   
-2.  Перетащите адрес или указатель в окно **Память**.  
+2.  Drag the address or pointer to the **Memory** window.  
   
-#### Выбор ячейки памяти путем ввода значения  
+#### <a name="to-select-a-memory-location-by-editing"></a>To select a memory location by editing  
   
-1.  В окне **Память** выберите поле **Адрес**.  
+1.  In the **Memory** window, select the **Address** box.  
   
-2.  Введите или вставьте нужный адрес и нажмите клавишу **ВВОД**.  
+2.  Type or paste the address you want to see, and then press **ENTER**.  
   
-## Изменение способа отображения информации в окне памяти  
- Можно настроить способ отображения содержимого памяти в окне **Память**.  По умолчанию содержимое памяти отображается в виде шестнадцатеричных однобайтовых целых чисел, а количество столбцов определяется автоматически исходя из текущей ширины окна.  
+## <a name="changing-the-way-the-memory-window-displays-information"></a>Changing the Way the Memory Window Displays Information  
+ You can customize the way the **Memory** window shows memory contents. By default, memory contents appear as one-byte integers in hexadecimal format, and the number of columns is determined automatically by the current width of the window.  
   
-#### Изменение формата содержимого памяти  
+#### <a name="to-change-the-format-of-the-memory-contents"></a>To change the format of the memory contents  
   
-1.  Щелкните правой кнопкой мыши в окне **Память**.  
+1.  Right-click the **Memory** window.  
   
-2.  Выберите требуемый формат.  
+2.  Choose the format that you want.  
   
-#### Изменение числа столбцов в окне "Память"  
+#### <a name="to-change-the-number-of-columns-in-the-memory-window"></a>To change the number of columns in the Memory window  
   
-1.  На панели инструментов в верхней части окна **Память** найдите список **Столбцы**.  
+1.  In the toolbar at the top of the **Memory** window, locate the **Columns** list.  
   
-2.  В списке **Столбцы** выберите необходимое количество столбцов для отображения или команду **Авто** для автоматической установки ширины окна.  
+2.  In the **Columns** list, select the number of columns that you want to display or select **Auto** for automatic adjustment to fit the width of the window.  
   
- Если требуется, чтобы содержимое окна **Память** не изменялось в ходе выполнения программы, можно выключить вычисление выражений в режиме реального времени.  
+ If you do not want the contents of the **Memory** window to change as your program executes, you can turn off live expression evaluation.  
   
-#### Включение или выключение вычисления в режиме реального времени  
+#### <a name="to-toggle-live-evaluation"></a>To toggle live evaluation  
   
-1.  Щелкните правой кнопкой мыши в окне **Память**.  
+1.  Right-click the **Memory** window.  
   
-2.  В контекстном меню выберите пункт **Автоматический пересчет**.  
+2.  On the shortcut menu, click **Reevaluate Automatically**.  
   
-     Если вычисление в режиме реального времени включено, параметр будет помеченным, и щелчок мышью по этому параметру выключит вычисление.  Если вычисление в режиме реального времени выключено, параметр будет непомеченным, и щелчок мышью по этому параметру включит вычисление.  
+     If live evaluation is on, the option will be selected, and clicking it turns off live evaluation. If live evaluation is off, the option is not selected, and clicking it turns on live evaluation.  
   
- Можно скрывать или отображать панель инструментов в верхней части окна **Память**.  Если панель инструментов скрыта, поле "Адрес" и другие средства недоступны.  
+ You can hide or display the toolbar at the top of the **Memory** window. You will not have access to Address box or other tools as long as the toolbar is hidden.  
   
-#### Включение или отключение панели инструментов  
+#### <a name="to-toggle-the-toolbar"></a>To toggle the toolbar  
   
-1.  Щелкните правой кнопкой мыши окно **Память**.  
+1.  Right-click a **Memory** window.  
   
-2.  В контекстном меню выберите пункт **Показать панель инструментов**.  
+2.  On the shortcut menu, click **Show Toolbar**.  
   
-     Панель инструментов появится или исчезнет, в зависимости от своего предыдущего состояния.  
+     The toolbar appears or disappears, depending on its previous state.  
   
-## Отслеживание указателя в памяти  
- В приложениях машинного кода можно использовать имена регистров в качестве выражений реального времени.  Например, можно использовать указатель стека для отслеживания стека.  
+## <a name="following-a-pointer-through-memory"></a>Following a Pointer Through Memory  
+ In native code applications, you can use register names as live expressions. For example, you can use the stack pointer to follow the stack.  
   
-#### Отслеживание указателя в памяти  
+#### <a name="to-follow-a-pointer-through-memory"></a>To follow a pointer through memory  
   
-1.  В окне **Память** в поле **Адрес** введите выражение указателя.  Переменная указателя должна находиться внутри текущей области.  В зависимости от языка может возникнуть необходимость в ее разыменовании.  
+1.  In the **Memory** window **Address** box, type a pointer expression. The pointer variable must be in the current scope. Depending on the language, you might have to dereference it.  
   
-2.  Нажмите клавишу **ВВОД**.  
+2.  Press **ENTER**.  
   
-     Теперь, при запуске команды выполнения, например **Шаг**, отображаемый адрес памяти будет автоматически изменяться при изменении указателя.  
+     Now, when you use an execution command such as **Step**, the memory address that is displayed will automatically change as the pointer changes.  
   
-## См. также  
- [Просмотр данных в отладчике](../debugger/viewing-data-in-the-debugger.md)
+## <a name="see-also"></a>See Also  
+ [Viewing Data in the Debugger](../debugger/viewing-data-in-the-debugger.md)

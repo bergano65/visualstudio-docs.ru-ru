@@ -1,69 +1,88 @@
 ---
-title: "Практическое руководство. Разделение наборов данных и адаптеров таблиц на разные проекты | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "многоуровные приложения, разделение наборов данных и адаптеров таблиц"
-  - "адаптеры таблиц TableAdapter, многоуровные приложения"
+title: Separate datasets and TableAdapters into different projects | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- aspx
+helpviewer_keywords:
+- TableAdapters, n-tier applications
+- n-tier applications, separating Datasets and TableAdapters
 ms.assetid: f66a3940-6227-46af-a930-9177f425f4fd
 caps.latest.revision: 18
-caps.handback.revision: 15
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: dc20aca5db8114c30cf4e42966317e42f3b518b8
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/22/2017
+
 ---
-# Практическое руководство. Разделение наборов данных и адаптеров таблиц на разные проекты
-Типизированные наборы данных были усовершенствованы так, что классы [адаптеры таблиц TableAdapter](../Topic/TableAdapters.md) и наборы данных могут быть созданы в разных проектах.  Это позволяет быстро разделять уровни приложения и создавать многоуровневые приложения обработки данных.  
+# <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Separate datasets and TableAdapters into different projects
+Typed datasets have been enhanced so that the [TableAdapters](create-and-configure-tableadapters.md) and dataset classes can be generated into separate projects. This enables you to quickly separate application layers and generate n-tier data applications.  
   
- В следующей процедуре описывается процесс использования конструктора [Создание и изменение типизированных наборов данных](../data-tools/creating-and-editing-typed-datasets.md) для создания кода набора данных в проект, отдельный от проекта, который содержит созданный код `TableAdapter`.  
+ The following procedure describes the process of using the **Dataset Designer** to generate dataset code into a project that is separate from the project that contains the generated `TableAdapter` code.  
   
-## Разделение наборов данных и адаптеров таблиц  
- Когда код набора данных отделяется от кода `TableAdapter`, проект, который будет содержать код набора данных, должен быть размещен в текущем решении.  Если этот проект не находится в текущем решении, он не будет доступен в списке **Проект набора данных** в окне **Свойства**.  
+## <a name="separatedatasets-and-tableadapters"></a>Separatedatasets and TableAdapters  
+ When you separate dataset code from `TableAdapter` code, the project that  contains the dataset code must be located in the current solution. If this project is not located in the current solution, it won't be available in the **DataSet Project** list in the **Properties** window.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-#### Для выделения набора данных в другой проект:  
+#### <a name="to-separate-the-dataset-into-a-different-project"></a>To separate the dataset into a different project  
   
-1.  Откройте решение, содержащее набор данных \(XSD\-файл\).  
-  
-    > [!NOTE]
-    >  Если решение не содержит проекта, в который нужно выделить код набора данных, создайте его или добавьте существующий проект в решение.  
-  
-2.  Дважды щелкните на файл типизированного набора данных \(XSD\-файл\) в **Обозревателе решений** для открытия набора данных в **Конструкторе наборов данных**.  
-  
-3.  Щелкните на пустую область в **Конструкторе наборов данных**.  
-  
-4.  Найдите узел **Проект набора данных** в окне **Свойства**.  
-  
-5.  В списке **Проект набора данных** выберите имя проекта, в котором будет помещен код набора данных.  
-  
-     После выбора проекта, в который будет помещен код набора данных, свойству **Файл набора данных** присваивается значение имени файла, принятое по умолчанию.  При необходимости это имя можно изменить.  Кроме того, если требуется поместить код набора данных в определенный каталог, можно установить свойству **Папка проекта** значение имени папки.  
+1.  Open a solution that contains a dataset (.xsd file).  
   
     > [!NOTE]
-    >  После разделения наборов данных и адаптеров таблиц \(путем установки свойства **Проект набора данных**\) существующие в проекте разделяемые классы наборов данных не будут перемещаться автоматически.  Существующие разделяемые классы наборов данных должны быть вручную перемещены в проект набора данных.  
+    >  If the solution does not contain the project into which you want to separate your dataset code, create the project, or add an existing project to the solution.  
   
-6.  Сохраните набор данных.  
+2.  Double-click a typed dataset file (an .xsd file) in **Solution Explorer** to open the dataset in the **Dataset Designer**.  
   
-     Код набора данных помещается в проект, выбранный в свойстве **Проект набора данных**, а код **Адаптера таблиц** помещается в текущий проект.  
+3.  Select an empty area of the **Dataset Designer**.  
   
- По умолчанию результатом разделения кода набора данных и кода `TableAdapter` являются отдельные файлы классов в каждом проекте.  Исходный проект содержит файл с именем DatasetName.Designer.vb \(или DatasetName.Designer.cs\), содержащий код `TableAdapter`.  Проект, указанный в свойстве **Проект набора данных**, содержит файл с именем DatasetName.DataSet.Designer.vb \(или DatasetName.DataSet.Designer.cs\), содержащий код набора данных.  
+4.  In the **Properties** window, locate the **DataSet Project** node.  
+  
+5.  In the **DataSet Project** list, select the name of the project into which you want to generate the dataset code.  
+  
+     After you select the project into which you want to generate the dataset code, the **DataSet File** property is populated with a default file name. You can change this name if necessary. Additionally, if you want to generate the dataset code into a specific directory, you can set the **Project Folder** property to the name of a folder.  
+  
+    > [!NOTE]
+    >  When you separate datasets and TableAdapters (by setting the **DataSet Project** property), existing partial dataset classes in the project won't be moved automatically. Existing dataset partial classes must be  moved manually to the dataset project.  
+  
+6.  Save the dataset.  
+  
+     The dataset code is generated into the selected project  in the **DataSet Project** property, and the **TableAdapter** code is generated into the current project.  
+  
+ By default, after you separate the dataset and `TableAdapter` code, the result is a discrete class file in each project. The original project has a file  named DatasetName.Designer.vb (or DatasetName.Designer.cs) that contains the `TableAdapter` code. The project that's designated in the **Dataset Project** property has a file named DatasetName.DataSet.Designer.vb (or DatasetName.DataSet.Designer.cs) that contains the dataset code.  
   
 > [!NOTE]
->  Выбрав проект набора данных или `TableAdapter`, нажмите кнопку **Показать все файлы** в **Обозревателе решений** для просмотра созданных файлов классов.  
+>  To view the generated class file, select the dataset or `TableAdapter` project. Then, in **Solution Explorer**, select **Show All Files**.  
   
-## См. также  
- [Общие сведения о N\-уровневых приложениях для работы с данными](../data-tools/n-tier-data-applications-overview.md)   
- [Пошаговое руководство. Создание многоуровневого приложения для работы с данными](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
- [Иерархическое обновление](../data-tools/hierarchical-update.md)   
- [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
- [ADO.NET](../Topic/ADO.NET.md)
+## <a name="see-also"></a>See Also  
+ [N-Tier Data Applications Overview](../data-tools/n-tier-data-applications-overview.md)   
+ [Walkthrough: Creating an N-Tier Data Application](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
+ [Hierarchical update](../data-tools/hierarchical-update.md)   
+ [Accessing data in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
+ [ADO.NET](/dotnet/framework/data/adonet/index)

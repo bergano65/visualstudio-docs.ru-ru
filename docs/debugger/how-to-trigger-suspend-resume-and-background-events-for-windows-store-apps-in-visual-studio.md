@@ -1,131 +1,148 @@
 ---
-title: "Практическое руководство. Вызов событий приостановки, возобновления и фоновых событий для приложений для Магазина Windows в Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.error.background_task_activate_failure"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: How to trigger suspend, resume, and background events for Windows Store apps in Visual Studio | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.error.background_task_activate_failure
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: 824ff3ca-fedf-4cf5-b3e2-ac8dc82d40ac
 caps.latest.revision: 17
-caps.handback.revision: 17
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Практическое руководство. Вызов событий приостановки, возобновления и фоновых событий для приложений для Магазина Windows в Visual Studio
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pt-br
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: f1ec5363d5561fbca1a706831e4d4da7e935b48f
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/22/2017
 
-Если в данный момент отладка не выполняется, приложение **Управление жизненным циклом процесса** Windows управляет состоянием выполнения приложения: запуском, приостановкой, возобновлением и завершением работы приложения в ответ на действия пользователя и состояние устройства. При отладке Windows отключает эти события активации. В этом разделе описывается запуск этих событий в отладчике.  
+---
+# <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>How to trigger suspend, resume, and background events for Windows Store apps in Visual Studio
+When you are not debugging, Windows **Process Lifetime Management** (PLM) controls the execution state of your app—starting, suspending, resuming, and terminating the app in response to user actions and the state of the device. When you are debugging, Windows disables these activation events. This topic describes how to fire these events in the debugger.  
   
- Кроме того, в этом разделе описывается, как отладить **Фоновые задачи**. Фоновые задачи позволяют выполнять определенные операции в фоновом процессе, даже если приложение не выполняется. Можно использовать отладчик, чтобы перевести приложение в режим отладки, а затем, не запуская пользовательский интерфейс, запустить фоновую задачу и начать ее отладку.  
+ This topic also describes how to debug **Background tasks**. Background tasks enable you to perform certain operations in a background process, even when you app is not running. You can use the debugger to put your app in debug mode and then— without starting the UI—start and debug the background task.  
   
- Дополнительные сведения об управлении жизненным циклом процессов и фоновых задачах см. в разделе [Launching, resuming, and multitasking](http://msdn.microsoft.com/ru-ru/04307b1b-05af-46a6-b639-3f35e297f71b).  
+ For more information about Process Lifetime Management and background tasks see [Launching, resuming, and multitasking](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b).  
   
-##  <a name="BKMK_In_this_topic"></a> Содержание раздела  
- [События управления жизненным циклом процессов активации](#BKMK_Trigger_Process_Lifecycle_Management_events)  
+##  <a name="BKMK_In_this_topic"></a> In this topic  
+ [Trigger Process Lifetime Management events](#BKMK_Trigger_Process_Lifecycle_Management_events)  
   
- [Активация фоновых задач](#BKMK_Trigger_background_tasks)  
+ [Trigger background tasks](#BKMK_Trigger_background_tasks)  
   
--   [Активация события фоновой задачи из стандартного сеанса отладки](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
+-   [Trigger a background task event from a standard debug session](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
   
--   [Активация фоновой задачи, когда приложение не выполняется](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
+-   [Trigger a background task when the app is not running](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
   
- [Активация событий управления жизненным циклом процесса и фоновых задач из установленного приложения](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
+ [Trigger Process Lifetime Management events and background tasks from an installed app](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
   
- [Диагностика ошибок активации фоновой задачи](#BKMK_Diagnosing_background_task_activation_errors)  
+ [Diagnosing background task activation errors](#BKMK_Diagnosing_background_task_activation_errors)  
   
-##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> События управления жизненным циклом процессов активации  
- Windows может приостановить работу приложения, если пользователь переходит из него или если Windows переключается в режим низкого электропотребления. Можно ответить на событие `Suspending`, чтобы сохранить соответствующие данные приложения и пользовательские данные в постоянном хранилище и чтобы освободить ресурсы. При переходе из состояния **Приостановлено** приложение возвращается в состояние **Выполняется** и продолжает работу с того момента, в котором оно было приостановлено. Можно ответить на событие `Resuming`, чтобы восстановить или обновить состояние приложения и получить назад ресурсы.  
+##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Trigger Process Lifetime Management events  
+ Windows can suspend your app when the user switches away from it or when Windows enters a low power state. You can respond to the `Suspending` event to save relevant app and user data to persistent storage and to release resources. When an app is resumed from the **Suspended** state, it enters the **Running** state and continues from where it was when it was suspended. You can respond to the `Resuming` event to restore or refresh application state and reclaim resources.  
   
- Хотя Windows пытается хранить в памяти как можно больше приостановленных приложений, Windows может завершить работу приложения, если ресурсов для хранения приложения в памяти недостаточно. Пользователь также может явно закрыть приложение. Специального события, указывающего, что пользователь закрыл приложение, не существует.  
+ Although Windows attempts to keep as many suspended apps in memory as possible, Windows can terminate your app if there aren't enough resources to keep it in memory. A user can also explicitly close your app. There's no special event to indicate that the user has closed an app.  
   
- В отладчике Visual Studio можно вручную приостановить, возобновить и завершить работу приложения для отладки событий жизненного цикла процессов. Чтобы выполнить отладку события жизненного цикла процесса, выполните следующие действия.  
+ In the Visual Studio debugger, you can manually suspend, resume, and terminate your apps to debug process lifecycle events. To debug a process lifecycle event:  
   
-1.  Задайте точку останова в обработчике события, которое необходимо отладить.  
+1.  Set a breakpooint in the handler of the event that you want to debug.  
   
-2.  Нажмите клавишу **F5**, чтобы начать отладку.  
+2.  Press **F5** to start debugging.  
   
-3.  На панели инструментов **Место отладки** выберите событие, которое необходимо создать.  
+3.  On the **Debug Location** toolbar, choose the event that you want to fire:  
   
-     ![Приостановка, возобновление, завершение и перевод в фоновый режим для задач](../debugger/media/dbg_suspendresumebackground.png "DBG\_SuspendResumeBackground")  
+     ![Suspend, resume, terminate, and background tasks](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
-     Обратите внимание, что команда **Приостановить и завершить работу** закрывает приложение и завершает сеанс отладки.  
+     Note that **Suspend and terminate** closes the app and ends the debug session.  
   
-##  <a name="BKMK_Trigger_background_tasks"></a> Активация фоновых задач  
- Любое приложение может зарегистрировать фоновую задачу, чтобы отвечать на некоторые системные события, даже если приложение не выполняется. Фоновые задачи не могут выполнять код, который непосредственно обновляет пользовательский интерфейс; вместо этого они показывают пользователю сведения об обновлениях плитки, обновлениях эмблемы и всплывающие уведомления. Дополнительные сведения см. в разделе [Supporting your app with background tasks](http://msdn.microsoft.com/ru-ru/4c7bb148-eb1f-4640-865e-41f627a46e8e).  
+##  <a name="BKMK_Trigger_background_tasks"></a> Trigger background tasks  
+ Any app can register a background task to respond to certain system events, even when the app is not running. Background tasks can't run code that directly updates the UI; instead, they show information to the user with tile updates, badge updates, and toast notifications. For more information, see [Supporting your app with background tasks](http://msdn.microsoft.com/en-us/4c7bb148-eb1f-4640-865e-41f627a46e8e)  
   
- Можно активировать события, которые запускают фоновые задачи для приложения, из отладчика.  
+ You can trigger the events that start background tasks for your app from the debugger.  
   
 > [!NOTE]
->  Отладчик может активировать только те события, которые не содержат данные, такие как события, указывающие на изменение состояния устройства. Фоновые задачи, которые требуют ввод данных пользователем или другие данные, необходимо активировать вручную.  
+>  The debugger can trigger only those events that do not contain data, such as events that indicate a change of state in the device. You have to manually trigger background tasks that require user input or other data.  
   
- Проще всего активировать событие фоновой задачи, когда приложение не запущено. Однако также поддерживается активация события в стандартном сеансе отладки.  
+ The most realistic way to trigger a background task event is when your app is not running. However, triggering the event in a standard debugging session is also supported.  
   
-###  <a name="BKMK_Trigger_a_background_task_event_from_a_standard_debug_session"></a> Активация события фоновой задачи из стандартного сеанса отладки  
+###  <a name="BKMK_Trigger_a_background_task_event_from_a_standard_debug_session"></a> Trigger a background task event from a standard debug session  
   
-1.  Задайте точку останова в коде фоновой задачи, который требуется отладить.  
+1.  Set a breakpoint in the background task code that you want to debug.  
   
-2.  Нажмите клавишу **F5**, чтобы начать отладку.  
+2.  Press **F5** to start debugging.  
   
-3.  Из списка событий на панели инструментов **Место отладки** выберите фоновую задачу, которую требуется запустить.  
+3.  From the events list on the **Debug Location** toolbar, choose the background task that you want to start.  
   
-     ![Приостановка, возобновление, завершение и перевод в фоновый режим для задач](../debugger/media/dbg_suspendresumebackground.png "DBG\_SuspendResumeBackground")  
+     ![Suspend, resume, terminate, and background tasks](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
-###  <a name="BKMK_Trigger_a_background_task_when_the_app_is_not_running"></a> Активация фоновой задачи, когда приложение не выполняется  
+###  <a name="BKMK_Trigger_a_background_task_when_the_app_is_not_running"></a> Trigger a background task when the app is not running  
   
-1.  Задайте точку останова в коде фоновой задачи, который требуется отладить.  
+1.  Set a breakpoint in the background task code that you want to debug.  
   
-2.  Откройте страницу свойств отладки для запускаемого проекта. Выберите проект в Обозревателе решений. В меню **Отладка** выберите пункт **Свойства**.  
+2.  Open the debug property page for the start-up project. In Solution Explorer, select the project. On the **Debug** menu, choose **Properties**.  
   
-     Для проектов C\+\+ можно развернуть **Свойства конфигурации**, а затем выбрать **Отладка**.  
+     For C++ projects, you might have to expand **Configuration Properties** and then choose **Debugging**.  
   
-3.  Выполните одно из следующих действий.  
+3.  Do one of the following:  
   
-    -   Для проектов Visual C\# и Visual Basic выберите **Не запускать, а отлаживать мой код при открытии**.  
+    -   For Visual C# and Visual Basic projects, choose **Do not launch, but debug my code when it starts**  
   
-         ![Свойство отладки запуска приложения C&#35;&#47;VB](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG\_CsVb\_DontLaunchApp")  
+         ![C&#35;&#47;VB debug launch application property](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")  
   
-    -   Для проектов JavaScript и Visual C\+\+ выберите **Нет** из списка **Запустить приложение**.  
+    -   For JavaScript and Visual C++ projects, choose **No** from the **Launch application** list.  
   
-         ![Свойство отладки запуска приложения C&#43;&#43;&#47;VB](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG\_CppJs\_DontLaunchApp")  
+         ![C&#43;&#43;&#47;VB Launch application debug property](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")  
   
-4.  Нажмите клавишу **F5**, чтобы перевести приложение в режим отладки. Обратите внимание, что в списке **Процесс** на панели инструментов **Место отладки** указывается имя пакета приложения, которое требуется указать в режиме отладки.  
+4.  Press **F5** to put the app in debug mode. Note the **Process** list on the **Debug Location** toolbar displays the app package name to indicate that you are in debug mode.  
   
-     ![Фоновая задача в списке процессов](~/debugger/media/dbg_backgroundtask_processlist.png "DBG\_BackgroundTask\_ProcessList")  
+     ![Background task Process list](../debugger/media/dbg_backgroundtask_processlist.png "DBG_BackgroundTask_ProcessList")  
   
-5.  Из списка событий на панели инструментов **Место отладки** выберите фоновую задачу, которую требуется запустить.  
+5.  From the events list on the **Debug Location** toolbar, choose the background task that you want to start.  
   
-     ![Приостановка, возобновление, завершение и перевод в фоновый режим для задач](../debugger/media/dbg_suspendresumebackground.png "DBG\_SuspendResumeBackground")  
+     ![Suspend, resume, terminate, and background tasks](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
-##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> Активация событий управления жизненным циклом процесса и фоновых задач из установленного приложения  
- Чтобы загрузить приложение, уже установленное в отладчик, используйте диалоговое окно "Отлаживать установленное приложение". Например, можно выполнить отладку приложения, установленного из Магазина Windows, или при наличии исходных файлов для приложения, но отсутствии для него проекта Visual Studio. С помощью диалогового окна "Отлаживать установленное приложение" можно запустить приложение в режиме отладки на компьютере Visual Studio или удаленном устройстве либо настроить приложение для выполнения в режиме отладки, но не запускать его. Дополнительные сведения см. в подразделе **Запуск установленного приложения в отладчике** раздела [Запуск сеанса отладки](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Start_an_installed_app_in_the_debugger) для [JavaScript](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger) или **Visual C\+\+, Visual C\# и Visual Basic**.  
+##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> Trigger Process Lifetime Management events and background tasks from an installed app  
+ Use the Debug Installed App dialog box to load an app that is already installed into the debugger. For example, you might debug an app that was installed from the Windows store, or debug an app when you have the source files for the app, but not a Visual Studio project for the app. The Debug Installed App dialog box allows you start an app in debug mode on the Visual Studio machine or on a remote device, or to set the app to run in debug mode but not start it. See the **Start an installed app in the debugger** section of either the [JavaScript](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Start_an_installed_app_in_the_debugger) or [Visual C++, Visual C#, and Visual Basic](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger) versions of **How to start a debugging session** for more information.  
   
- После загрузки приложения в отладчик можно использовать любую из описанных выше процедур.  
+ Once the app is loaded into the debugger, you can use any of the procedures described above.  
   
-##  <a name="BKMK_Diagnosing_background_task_activation_errors"></a> Диагностика ошибок активации фоновой задачи  
- В журналах диагностики в окне просмотра событий Windows для фоновой инфраструктуры содержались подробные сведения о средствах, которые можно использовать для диагностики и устранения ошибок фоновой задачи. Чтобы просмотреть журнал, выполните следующие действия.  
+##  <a name="BKMK_Diagnosing_background_task_activation_errors"></a> Diagnosing background task activation errors  
+ The diagnostic logs in Windows Event Viewer for the background infrastructure contained detailed information that you can use to diagnose and troubleshoot background task errors. To view the log:  
   
-1.  Откройте приложение просмотра событий.  
+1.  Open the Event Viewer application.  
   
-2.  В панели **Действия** выберите **Просмотр** и убедитесь, что установлен флажок **Отобразить аналитический и отладочный журналы**.  
+2.  In the **Actions** pane, choose **View** and make sure **Show Analytic and Debug Logs** is checked.  
   
-3.  В дереве **Просмотр событий \(локальных\)** разверните узлы **Журналы приложений и служб** \/ **Microsoft** \/ **Windows** \/ **BackgroundTasksInfrastructure**.  
+3.  On the **Event Viewer (Local)** tree, expand the nodes **Applications and Services Logs** > **Microsoft** > **Windows** > **BackgroundTasksInfrastructure**.  
   
-4.  Выберите журнал **Диагностические**.  
+4.  Choose the **Diagnostic** log.  
   
-## См. также  
- [Тестирование приложений Магазина с помощью Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
- [Отладка приложений в Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [Application lifecycle](http://msdn.microsoft.com/ru-ru/53cdc987-c547-49d1-a5a4-fd3f96b2259d)   
- [Launching, resuming, and multitasking](http://msdn.microsoft.com/ru-ru/04307b1b-05af-46a6-b639-3f35e297f71b)
+## <a name="see-also"></a>See Also  
+ [Testing Store apps with Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
+ [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
+ [Application lifecycle](http://msdn.microsoft.com/en-us/53cdc987-c547-49d1-a5a4-fd3f96b2259d)   
+ [Launching, resuming, and multitasking](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)

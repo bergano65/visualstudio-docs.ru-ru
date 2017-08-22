@@ -1,123 +1,140 @@
 ---
-title: "Практическое руководство. Создание формы Windows Forms для поиска данных | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "данные [Visual Studio], параметризированные запросы"
-  - "данные [Visual Studio], поиск"
-  - "параметры, отображение отфильтрованных данных"
-  - "Windows Forms, отображение данных"
-  - "Windows Forms, поиск данных"
+title: Create a Windows Form to search data | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- aspx
+helpviewer_keywords:
+- Windows Forms, searching data
+- Windows Forms, displaying data
+- parameters, displaying filtered data
+- data [Visual Studio], paramaterizing queries
+- data [Visual Studio], searching
 ms.assetid: 65ca79a9-7458-466c-af55-978cd24c549e
 caps.latest.revision: 28
-caps.handback.revision: 25
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: f89cd3db830dfc3e2a2825044bac1eb4fece75da
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/22/2017
+
 ---
-# Практическое руководство. Создание формы Windows Forms для поиска данных
-Довольно распространенным сценарием приложения является отображение выбранных данных на форме.  Например, вам может потребоваться отобразить заказы для определенного клиента или сведения о конкретном заказе.  В таком сценарии пользователь вводит в форму информацию, после чего выполняется запрос, включающий в себя эти введенные пользователем данные в качестве параметра; таким образом, данные выбираются на основе параметризированного запроса.  Запрос возвращает только те данные, которые удовлетворяют введенным пользователем условиям.  Это пошаговое руководство показывает, как создать запрос, возвращающий клиентов из определенного города, и изменить пользовательский интерфейс, чтобы пользователи могли ввести название города и нажать кнопку для выполнения запроса.  
+# <a name="create-a-windows-form-to-search-data"></a>Create a Windows Form to search data
+A common application scenario is to display selected data on a form. For example, you might want to display the orders for a specific customer or the details of a specific order. In this scenario, a user enters information into a form, and then a query is executed with the user's input as a parameter; that is, the data is selected based on a parameterized query. The query returns only the data that satisfies the criteria entered by the user. This walkthrough shows how to create a query that returns customers in a specific city, and modify the user interface so that users can enter a city's name and press a button to execute the query.  
   
- Использование параметризованных запросов помогает сделать приложение эффективным, так как позволяет базе данных заниматься своей непосредственной задачей — быстрой фильтрацией записей.  И наоборот, если запросить всю таблицу базы данных, передать ее по сети и использовать логику приложения для поиска записей, ваше приложение станет медленным и неэффективным.  
+ Using parameterized queries helps make your application efficient by letting the database do the work it is best at — quickly filtering records. In contrast, if you request an entire database table, transfer it over the network, and then use application logic to find the records you want, your application can become slow and inefficient.  
   
- Вы можете добавить параметризованные запросы в любой адаптер таблицы \(и элементы управления для приема значений параметров и выполнения запроса\) с помощью [Диалоговое окно "Построитель условий поиска"](../Topic/Search%20Criteria%20Builder%20Dialog%20Box.md).  Откройте диалоговое окно, выбрав команду **Добавить запрос** в меню **Данные** \(или на любом смарт\-теге адаптера таблицы\).  
+ You can add parameterized queries to any TableAdapter (and controls to accept parameter values and execute the query), using the **Search Criteria Builder** dialog box. Open the dialog box by selecting the **Add Query** command on the **Data** menu (or on any TableAdapter smart tag).  
   
- В данном пошаговом руководстве представлены следующие задачи.  
+ Tasks illustrated in this walkthrough include:  
   
--   Создание нового проекта **Приложение Windows**.  
+-   Creating a new Windows Forms Application project.  
   
--   Создание и настройка источника данных в приложении с помощью [мастер настройки источника данных](../data-tools/media/data-source-configuration-wizard.png).  
+-   Creating and configuring the data source in your application with the **Data Source Configuration** wizard.  
   
--   Настройка типа удаления для элементов в [окно "Источники данных"](../Topic/Data%20Sources%20Window.md).  Для получения дополнительной информации см. [Задание поведения, при котором элемент управления создается при перетаскивании из окна "Источники данных"](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+-   Setting the drop type of the items in the **Data Sources**window.  
   
--   Создание отображающих данные элементов управления с помощью перетаскивания элементов из окна **Источники данных** на форму.  
+-   Creating controls that display data by dragging items from the **Data Sources** window onto a form.  
   
--   Добавление элементов управления для отображения данных на форме.  
+-   Adding controls to display the data on the form.  
   
--   Заполнение окна [Диалоговое окно "Построитель условий поиска"](../Topic/Search%20Criteria%20Builder%20Dialog%20Box.md).  
+-   Completing the **Search Criteria Builder** dialog box.  
   
--   Ввод параметров в форму и выполнение параметризованного запроса.  
+-   Entering parameters into the form and executing the parameterized query.  
   
-## Обязательные компоненты  
- Для выполнения данного пошагового руководства требуется:  
+## <a name="prerequisites"></a>Prerequisites  
+ In order to complete this walkthrough, you need:  
   
--   Доступ к примеру базы данных "Борей".  Для получения дополнительной информации см. [Практическое руководство. Установка образцов баз данных](../data-tools/how-to-install-sample-databases.md).  
+-   Access to the Northwind sample database.  
   
-## Создание приложения Windows  
- Первым шагом является создание **Приложения Windows**.  На данном этапе имя проекту можно не назначать, однако мы зададим его, так как позднее планируем сохранить проект.  
+## <a name="create-the-windows-application"></a>Create the Windows Application  
+ The first step is to create a **Windows Application**. Assigning a name to the project is optional at this step, but you'll give it a name here because you'll save it later.  
   
-#### Порядок создания нового проекта приложения Windows  
+#### <a name="to-create-the-new-windows-application-project"></a>To create the new Windows Application project  
   
-1.  Перейдите в меню **Файл** и создайте новый проект.  
+1.  From the **File** menu, create a new project.  
   
-2.  Присвойте проекту имя `WindowsSearchForm`.  
+2.  Name the project `WindowsSearchForm`.  
   
-3.  Выберите **Приложение Windows** и нажмите кнопку **ОК**.  Для получения дополнительной информации см. [Клиентские приложения](../Topic/Developing%20Client%20Applications%20with%20the%20.NET%20Framework.md).  
+3.  Select **Windows Application** and click **OK**.  
   
-     Создается проект **WindowsSearchForm**, который добавляется в **Обозреватель решений**.  
+     The **WindowsSearchForm** project is created and added to **Solution Explorer**.  
   
-## Создание источника данных  
- На этом шаге **Мастер настройки источника данных** используется для создания источника данных из базы данных.  Для создания подключения необходимо иметь доступ к учебной базе данных "Борей".  Дополнительные сведения о настройке учебной базы данных "Борей" см. в разделе [Практическое руководство. Установка образцов баз данных](../data-tools/how-to-install-sample-databases.md).  
+## <a name="create-the-data-source"></a>Create the data source  
+ This step creates a data source from a database using the **Data Source Configuration** wizard. You must have access to the Northwind sample database to create the connection. For information on setting up the Northwind sample database, see [Install SQL Server sample databases](../data-tools/install-sql-server-sample-databases.md).  
   
-#### Создание источника данных  
+#### <a name="to-create-the-data-source"></a>To create the data source  
   
-1.  В меню **Данные** выберите команду **Показать источники данных**.  
+1.  On the **Data** menu, click **Show Data Sources**.  
   
-2.  В окне **Источники данных** выберите **Добавить новый источник данных**, чтобы запустить **Мастер настройки источника данных**.  
+2.  In the **Data Sources** window, select **Add New Data Source** to start the **Data Source Configuration** wizard.  
   
-3.  На странице **Выбор типа источника данных** выберите элемент **База данных** и нажмите **Далее**.  
+3.  Select **Database** on the **Choose a Data Source Type** page, and then click **Next**.  
   
-4.  На странице **Выбор подключения к базе данных** выполните одно из следующих действий.  
+4.  On the **Choose your Data Connection** page do one of the following:  
   
-    -   Если подключение к учебной базе данных Northwind доступно в раскрывающемся списке, то выберите его.  
+    -   If a data connection to the Northwind sample database is available in the drop-down list, select it.  
   
-         \-или\-  
+    -   Select **New Connection** to launch the **Add/Modify Connection** dialog box.  
   
-    -   Выберите **Новое подключение** для открытия диалогового окна **Добавить\/изменить подключение**.  
+5.  If your database requires a password, select the option to include sensitive data, and then click **Next**.  
   
-5.  Если базе данных требуется пароль, выберите параметр для включения конфиденциальных данных и щелкните **Далее**.  
+6.  On the **Save connection string to the Application Configuration file** page, click **Next**.  
   
-6.  На странице **Сохранение подключения в файле конфигурации приложения** нажмите кнопку **Далее**.  
+7.  On the **Choose your Database Objects** page, expand the **Tables** node.  
   
-7.  Разверните узел **Таблицы** на странице **Выбор объектов базы данных**.  
+8.  Select the **Customers** table, and then click **Finish**.  
   
-8.  Выберите таблицу **Клиенты** и нажмите **Готово**.  
+     The **NorthwindDataSet** is added to your project, and the **Customers** table appears in the **Data Sources** window.  
   
-     Объект **NorthwindDataSet** добавляется в проект, и таблица **Клиенты** отображается в окне **Источники данных**.  
+## <a name="create-the-form"></a>Create the form  
+ You can create the data-bound controls by dragging items from the **Data Sources** window onto your form.  
   
-## Создание формы  
- Вы можете создавать элементы управления с привязкой к данным с помощью перетаскивания элементов из окна **Источники данных** на форму.  
+#### <a name="to-create-data-bound-controls-on-the-form"></a>To create data-bound controls on the form  
   
-#### Создание элементов управления с привязкой к данным на форме  
+1.  Expand the **Customers** node in the **Data Sources** window.  
   
-1.  Разверните узел **Клиенты** в окне **Источники данных**.  
+2.  Drag the **Customers** node from the **Data Sources** window to your form.  
   
-2.  Перетащите узел **Клиенты** из окна **Источники данных** на свою форму.  
+     A <xref:System.Windows.Forms.DataGridView> and a tool strip (<xref:System.Windows.Forms.BindingNavigator>) for navigating records appear on the form. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray.  
   
-     На форме появляются <xref:System.Windows.Forms.DataGridView> и полоса инструментов \(<xref:System.Windows.Forms.BindingNavigator>\) для перемещения по записям.  В области компонентов появляется [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource> и <xref:System.Windows.Forms.BindingNavigator>.  
+## <a name="add-parameterization-search-functionality-to-the-query"></a>Add parameterization (search functionality) to the query  
+ You can add a WHERE clause to the original query using the **Search Criteria Builder** dialog box.  
   
-## Добавление параметризации \(функциональности поиска\) в запрос  
- Вы можете добавить предложение WHERE в исходный запрос с помощью [Диалоговое окно "Построитель условий поиска"](../Topic/Search%20Criteria%20Builder%20Dialog%20Box.md).  
+#### <a name="to-create-a-parameterized-query-and-controls-to-enter-the-parameters"></a>To create a parameterized query and controls to enter the parameters  
   
-#### Порядок создания параметризованного запроса и элементов управления для ввода параметров  
+1.  Select the <xref:System.Windows.Forms.DataGridView> control, and then choose **Add Query** on the **Data** menu.  
   
-1.  Выберите элемент управления <xref:System.Windows.Forms.DataGridView> и щелкните **Добавить запрос** в меню **Данные**.  
+2.  Type `FillByCity` in the **New query name** area on the **Search Criteria Builder** dialog box.  
   
-2.  Введите `FillByCity` в области **Имя нового запроса** окна [Диалоговое окно "Построитель условий поиска"](../Topic/Search%20Criteria%20Builder%20Dialog%20Box.md).  
+3.  Add `WHERE City = @City` to the query in the **Query Text** area.  
   
-3.  Добавьте `WHERE City = @City` в запрос в области **Текст запроса**.  
-  
-     Запрос должен выглядеть примерно следующим образом:  
+     The query should be similar to the following:  
   
      `SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax`  
   
@@ -126,34 +143,29 @@ manager: "ghogen"
      `WHERE City = @City`  
   
     > [!NOTE]
-    >  Источники данных Access и OleDb используют вопросительный знак "?" для обозначения параметров, поэтому предложение WHERE должно иметь следующий вид: `WHERE City = ?`.  
+    >  Access and OLE DB data sources use the question mark ('?') to denote parameters, so the WHERE clause would look like this: `WHERE City = ?`.  
   
-4.  Нажмите кнопку **ОК**, чтобы закрыть диалоговое окно **Построитель условий поиска**.  
+4.  Click **OK** to close the **Search Criteria Builder** dialog box.  
   
-     На форму добавляется **FillByCityToolStrip**.  
+     A **FillByCityToolStrip** is added to the form.  
   
-## Тестирование приложения  
- При запуске приложения открывается ваша форма, готовая к получению входных данных в качестве параметра.  
+## <a name="testing-the-application"></a>Testing the application  
+ Running the application opens your form ready to take the parameter as input.  
   
-#### Тестирование приложения  
+#### <a name="to-test-the-application"></a>To test the application  
   
-1.  Нажмите клавишу F5 для запуска приложения.  
+1.  Press F5 to run the application.  
   
-2.  Введите "Лондон" в текстовом поле **Город** и щелкните **FillByCity**.  
+2.  Type **London** into the **City** text box, and then click **FillByCity**.  
   
-     Сетка данных заполняется клиентами, соответствующими условию параметризации.  В этом примере сетка данных отображает только клиентов, для которых в столбце **Город** задано значение **Лондон**.  
+     The data grid is populated with customers that meet the criteria. In this example, the data grid only displays customers that have a value of **London** in their **City** column.  
   
-## Следующие действия  
- В зависимости от требований приложения существуют несколько шагов, которые, возможно, потребуется выполнить после создания параметризованной формы.  Ниже приводится перечень рекомендаций, позволяющих улучшить полученный результат.  
+## <a name="next-steps"></a>Next Steps  
+ Depending on your application requirements, there are several steps you may want to perform after creating a parameterized form. Some enhancements you could make to this walkthrough include:  
   
--   Добавление элементов управления, отображающих связанные данные.  Для получения дополнительной информации см. [Практическое руководство. Отображение связанных данные в приложении Windows Forms](../Topic/How%20to:%20Display%20Related%20Data%20in%20a%20Windows%20Forms%20Application.md).  
+-   Adding controls that display related data. For more information, see [Relationships in Datasets](relationships-in-datasets.md).  
   
--   Изменение набора данных для добавления или удаления объектов базы данных.  Для получения дополнительной информации см. [Практическое руководство. Редактирование набора данных](../Topic/How%20to:%20Edit%20a%20Dataset.md).  
+-   Editing the dataset to add or remove database objects. For more information, see [Create and configure datasets](../data-tools/create-and-configure-datasets-in-visual-studio.md).  
   
-## См. также  
- [Пошаговые руководства работы с данными](../Topic/Data%20Walkthroughs.md)   
- [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Общие сведения об источниках данных](../data-tools/add-new-data-sources.md)   
- [Общие сведения об адаптере таблиц](../data-tools/tableadapter-overview.md)   
- [Общие сведения о компоненте BindingSource](../Topic/BindingSource%20Component%20Overview.md)   
- [Общие сведения об элементе управления BindingNavigator](../Topic/BindingNavigator%20Control%20Overview%20\(Windows%20Forms\).md)
+## <a name="see-also"></a>See Also  
+ [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

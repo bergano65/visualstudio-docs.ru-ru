@@ -1,144 +1,161 @@
 ---
-title: "Практическое руководство. Отладка исходного кода Code Center Premium | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Code Center Premium"
-  - "отладка [Visual Studio], Code Center Premium"
+title: 'How to: Debug with Code Center Premium Source | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- Code Center Premium
+- debugging [Visual Studio], Code Center Premium
 ms.assetid: 18b4769d-b007-4428-9dae-9e72c283ff0d
 caps.latest.revision: 23
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 23
----
-# Практическое руководство. Отладка исходного кода Code Center Premium
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 9d9c246234bc86cefb9e0a24f97f4c3d692d3942
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/22/2017
 
-С помощью отладчика [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] можно отлаживать защищенный доступный исходный код Microsoft MSDN Code Center Premium.  
+---
+# <a name="how-to-debug-with-code-center-premium-source"></a>How to: Debug with Code Center Premium Source
+With the [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] debugger, you can debug secure shared source from Microsoft MSDN Code Center Premium.  
   
- В этом разделе поясняется порядок выполнения настройки и отладки исходного кода Code Center Premium в Visual Studio.  
+ This topic explains how to set up and debug Code Center Premium source code in Visual Studio.  
   
-### Подготовка к отладке с Code Center Premium  
+### <a name="to-prepare-for-debugging-with-code-center-premium"></a>To prepare for debugging with Code Center Premium  
   
-1.  Подсоедините устройство чтения SmartCard и вставьте карту, полученную по программе Shared Source Initiative.  
+1.  Connect your SmartCard reader and insert the card you obtained from the Shared Source Initiative.  
   
-2.  Запустите Visual Studio.  
+2.  Launch Visual Studio.  
   
-3.  В меню **Сервис** выберите пункт **Параметры**.  
+3.  On the **Tools** menu, click **Options**.  
   
-4.  В диалоговом окне **Параметры** откройте узел **Отладка** и выберите **Общие**.  
+4.  In the **Options** dialog box, open the **Debugging** node and click **General**.  
   
-5.  Снимите флажок **Включить режим "Только мой код" \(только управляемый код\)**.  
+5.  Clear the **Enable Just My Code (Managed Only)** check box.  
   
-6.  Установите флажок **Включить поддержку сервера системы управления версиями**.  
+6.  Select **Enable Enable Source Server Support**.  
   
-7.  Снимите флажок **Требовать точного соответствия исходной версии файлов**.  
+7.  Clear **Require source files to exactly match the original version**.  
   
-8.  В категории **Отладка** щелкните пункт **Символы**.  
+8.  Under the **Debugging** node, click **Symbols**.  
   
-9. В поле **Места размещения файлов символов \(.pdb\)** снимите флажок **Серверы символов Microsoft** и добавьте следующие расположения:  
+9. In the **Symbol File (.pdb) Locations** box, clear the **Microsoft Server Symbols** check box and add the following locations:  
   
      `https://codepremium.msdn.microsoft.com/symbols`  
   
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
     > [!NOTE]
-    >  Обязательно используйте косую черту **\/** в конце пути.  
+    >  Be sure to include the trailing slash**/** at the end of the path.  
   
-     Переместите данные расположения в начало списка, чтобы эти символы гарантированно загружались первыми.  
+     Move these locations to the top of the list to ensure that these symbols are loaded first.  
   
     > [!NOTE]
-    >  Данные расположения Code Center Premium должны находиться вверху списка, чтобы они были первыми загружаемыми расположениями.  В Visual Studio 2010 ни один сервер невозможно расположить над записью **Серверы символов Microsoft**, вот почему необходимо снять флажок.  
+    >  These Code Center Premium locations must be listed first so that they are the first locations that are loaded. In Visual Studio 2010, you cannot move any servers above the **Microsoft Symbol Servers** entry, which is why you must clear the check box.  
     >   
-    >  Чтобы загрузить символы из символов Microsoft во время сеанса отладки, выполните следующие действия:  
+    >  To load symbols from the Microsoft symbols during a debug session, do this:  
     >   
-    >  1.  В меню **Отладка** выберите пункт **Окна**, а затем пункт **Модули**.  
-    > 2.  Выберите модуль, для которого требуется загрузить символы, и откройте контекстное меню.  Выберите команду **Загрузить символы из**, а затем выберите **Серверы символов Microsoft**.  
+    >  1.  On the **Debug** menu, choose **Windows** and then choose **Modules**.  
+    > 2.  Select the module that you want symbols for, and then open the shortcut menu. Choose **Load Symbols From** and then choose **Microsoft Symbol Servers**.  
   
-10. В поле **Кэшировать символы с серверов символов в этом каталоге** введите расположение \(например, `C:\symbols`\), где Code Center Premium может кэшировать символы.  Кэширование символов может значительно повысить производительность во время отладки.  
+10. In the **Cache symbols from symbol servers in this directory** box, enter a location such as `C:\symbols` where Code Center Premium can cache the symbols. Caching symbols can significantly improve performance during debugging.  
   
-     В случае затруднений при отладке исходного кода с помощью [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] после выполнения данной процедуры проверьте, нет ли в расположении кэширования ранее кэшированных и устаревших файлов символов.  Удалите старые файлы символов.  
+     If you experience difficulty debugging source code with [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] after you complete this procedure, check your cache location for previously cached and outdated symbol files. Remove the outdated symbol files.  
   
-11. Нажмите кнопку **ОК**.  
+11. Click **OK**.  
   
-12. Перезапустите [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], чтобы обеспечить сохранение параметров.  
+12. Restart [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] to ensure that settings are persisted.  
   
-### Отладка исходного кода с помощью присоединения к процессу  
+### <a name="to-debug-your-source-code-using-attach-to-process"></a>To debug your source code using Attach to Process  
   
-1.  Подсоедините устройство чтения SmartCard и вставьте карту, полученную по программе Shared Source Initiative.  
+1.  Connect your SmartCard reader and insert the card you obtained from the Shared Source Initiative.  
   
-2.  Запустите Visual Studio.  
+2.  Launch Visual Studio.  
   
-3.  Откройте проект в Visual Studio.  
+3.  Open your Visual Studio project.  
   
-4.  В меню **Сервис** выберите пункт **Присоединение к процессу**.  
+4.  On the **Tools** menu, click **Attach to Process**.  
   
-5.  В диалоговом окне **Присоединение к процессу** нажмите **Выбрать**.  
+5.  In the **Attach to Process** dialog box, click **Select**.  
   
-6.  В диалоговом окне **Выбор типа кода** в группе **Выполнять отладку кода следующих типов** выберите **Машинный код**, **Управляемый код** и **Управляемый код \(версия 4\)**.  
+6.  In the **Select Code Type** dialog box, under **Detect these code types**, select **Native**, **Managed**, and **Managed(v4.0)**.  
   
-7.  Нажмите кнопку **ОК**, чтобы закрыть диалоговое окно **Выбор типа кода**.  
+7.  Click **OK** to dismiss the **Select Code Type** dialog box.  
   
-8.  В поле **Доступные процессы** выберите процесс, для которого требуется произвести отладку.  
+8.  In the **Available Processes** box, select the process you want to debug.  
   
-9. Нажмите кнопку **Присоединить**.  
+9. Click **Attach**.  
   
-10. Когда будет предложено подтвердить ваш сертификат, нажмите кнопку **ОК**.  Затем введите свой ПИН\-код.  Если будет предложено, примите условия использования Code Center Premium.  
+10. When you are prompted to confirm your certificate, click **OK**. Then enter your PIN. Accept the terms of use for Code Center Premium, if you are prompted,.  
   
-     Загрузка символов может занимать много времени — это зависит от скорости сети.  Когда все символы будут успешно загружены, в строке состояния появится соответствующее уведомление.  
+     Downloading symbols can take lots of time, depending on the network speed. The status bar will indicate when all symbols have been downloaded successfully.  
   
-11. Повторите шаги по подсоединению для всех управляемых проектов в вашем решении.  
+11. Repeat the attach steps for all managed projects in your Solution.  
   
-### Отладка исходного кода из существующего решения  
+### <a name="to-debug-source-code-from-an-existing-solution"></a>To debug source code from an existing solution  
   
-1.  В области **Обозреватель решений** откройте контекстное меню для решения и выберите пункт **Свойства**.  
+1.  In **Solution Explorer**, open the shortcut menu for the solution and then choose **Properties**.  
   
-2.  В диалоговом окне "Страницы свойств решения" выберите **Исходные файлы отладки** в узле **Общие свойства**.  
+2.  In the Solution Property Pages dialog box, choose **Debug Source Files** in the **Common Properties** node.  
   
-3.  Добавьте следующее расположение в список **Каталоги, содержащие исходные файлы**:  
+3.  Add the following location to the **Directories containing source files** list:  
   
      `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
     > [!NOTE]
-    >  Обязательно используйте косую черту **\/** в конце пути.  
+    >  Be sure to include the trailing slash**/** at the end of the path.  
   
-4.  Для каждого управляемого проекта в решении выполните следующие действия.  
+4.  For each managed project in your solution, do the following  
   
-    1.  В области "Обозреватель решений" откройте контекстное меню для проекта и выберите пункт **Свойства**.  
+    1.  In Solution Explorer, open the shortcut menu for the project and then choose **Properties**.  
   
-    2.  Выберите **Отладка**, а затем пункт **Разрешить отладку неуправляемого кода**.  
+    2.  Select **Debug** and then choose **Enable unmanaged code debugging**.  
   
-### Отладка решения с исходным кодом Code Center Premium  
+### <a name="to-debug-your-solution-with-code-center-premium-source"></a>To debug your solution with Code Center Premium source  
   
-1.  В вашем классе `Package` установите точку останова на конструктор пакета.  
+1.  In your `Package` class, set a breakpoint on the package constructor.  
   
-2.  В меню `Debug` выберите команду **Начать отладку**.  
+2.  In the `Debug` menu, click **Start Debugging**.  
   
-3.  Достигнув точки останова в конструкторе пакета, перейдите в окно **Стек вызовов** и щелкните правой кнопкой мыши кадр стека той сборки, из которой требуется загрузить символы, затем выберите пункт **Загрузить символы**.  
+3.  When you hit the breakpoint in the package constructor, go to the **Call Stack** window and right-click the stack frame of the assembly you want to load symbols from, then click **Load Symbols**.  
   
-     Дважды щелкните кадр вызова, чтобы загрузить исходный код.  
+     Double-click the call frame to load the source.  
   
-### Просмотр исходного кода в Code Center Premium  
+### <a name="to-browse-source-code-on-code-center-premium"></a>To browse source code on Code Center Premium  
   
-1.  Подсоедините устройство чтения SmartCard и вставьте карту, полученную по программе Shared Source Initiative.  
+1.  Connect your SmartCard reader and insert the card you obtained from the Shared Source Initiative.  
   
-2.  Запустите Internet Explorer и введите следующий URL\-адрес: `https://codepremium.msdn.microsoft.com`  
+2.  Launch Internet Explorer enter the following URL: `https://codepremium.msdn.microsoft.com`  
   
-3.  Найдите нужный исходный код.  
+3.  Browse to find the source you want.  
   
-## См. также  
- [Параметры отладки и подготовка](../debugger/debugger-settings-and-preparation.md)   
- [Безопасность отладчика](../debugger/debugger-security.md)   
+## <a name="see-also"></a>See Also  
+ [Debugger Settings and Preparation](../debugger/debugger-settings-and-preparation.md)   
+ [Debugger Security](../debugger/debugger-security.md)   
  [Code Center Premium](http://www.microsoft.com/resources/sharedsource/ccp.mspx)

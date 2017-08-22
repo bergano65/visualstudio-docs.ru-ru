@@ -1,187 +1,269 @@
 ---
-title: "Окна &quot;Контрольные значения&quot; и &quot;Быстрая проверка&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.watch"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-helpviewer_keywords: 
-  - "отладка [Visual Studio], окно контрольных значений"
-  - "выражения [отладчик], вычисление"
-  - "переменные [отладчик], вычисление"
-  - "вычисление выражений"
-  - "регистры, вычисление"
-  - "отладка [Visual Studio], вычисление выражений"
+title: Set a Watch on Variables in Visual Studio | Microsoft Docs
+ms.custom: H1Hack27Feb2017
+ms.date: 04/04/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.watch
+helpviewer_keywords:
+- debugging [Visual Studio], Watch window
+- expressions [debugger], evaluating
+- variables [debugger], evaluating
+- expression evaluation
+- registers, evaluating
+- debugging [Visual Studio], expression evaluation
 ms.assetid: d5c18377-2a0e-4819-a645-407e24ccc58c
 caps.latest.revision: 45
-caps.handback.revision: 44
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Окна &quot;Контрольные значения&quot; и &quot;Быстрая проверка&quot;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: c443f4aa25ff4fcc672be11fc3d4ee296a196e2b
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/22/2017
 
-Окна **Контрольные значения** \(**Отладка \> Окна \> Контрольные значения \> Контрольные значения \(1, 2, 3, 4\)**\) и **Быстрая проверка** \(**Отладка \> Быстрая проверка**\) можно использовать для наблюдения за переменными и выражениями во время сеанса отладки. Отличие в том, что в окне **Контрольные значения** могут одновременно выводиться несколько переменных, а в окне **Быстрая проверка** — только одна.  
+---
+# <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Set a Watch on Variables using the Watch and QuickWatch Windows in Visual Studio
+While you are debugging, you can use the **Watch** (**Debug > Windows > Watch > Watch (1, 2, 3, 4)**) and **QuickWatch** (right-click on variable / **Debug > QuickWatch**) windows to watch variables and expressions.  The difference is that the **Watch** window can display several variables, while the **QuickWatch** window displays a single variable at a time.
+
+The windows are only available during a debugging session. 
   
-## Наблюдение за одной переменной с помощью окна "Быстрая проверка"  
- Окно **Быстрая проверка** можно использовать для наблюдения за одной переменной. Например, предположим, что имеется следующий код:  
+## <a name="observing-a-single-variable-with-quickwatch"></a>Observing a single variable with QuickWatch  
+ You can use the **QuickWatch** window to observe a single variable. For example, if you have the following code:  
   
-```c#  
-static void Main(string[] args) { int a, b; a = 1; b = 2; for (int i = 0; i < 10; i++) { a = a + b; } }  
+```CSharp
+static void Main(string[] args)  
+{  
+    int a, b;  
+    a = 1;  
+    b = 2;  
+    for (int i = 0; i < 10; i++)  
+    {  
+        a = a + b;  
+    }   
+}  
 ```  
   
- Наблюдать за переменной в окне "Быстрая проверка" можно описанным ниже образом.  
+ You can observe the a variable in the QuickWatch window as follows:  
   
-1.  Установите точку останова на строке `a = a + b;`.  
+1.  Set a breakpoint on the `a = a + b;` line.  
   
-2.  Приступите к отладке. Выполнение прекратится в точке останова.  
+2.  Start debugging. Execution stops at the breakpoint.  
   
-3.  Откройте окно **Быстрая проверка** \(щелкните переменную правой кнопкой мыши и выберите пункт **Отладка \> Быстрая проверка** или нажмите клавиши **SHIFT\+F9**\). Вы можете открыть окно и добавить переменную в окно **Выражение**, а затем щелкнуть **Пересчитать**. В окне **Значения** должна появиться переменная со значением 2.  
+3.  Open the **QuickWatch** window (right-click on a, then choose **QuickWatch**, or **SHIFT+F9**).
+
+    You should see the a variable in the **Values** window, with a value of 1.
+
+    ![QuickWatch Expression](../debugger/media/watchexpression.png "QuickWatchExpression")  
+
+    If you want to evaluate an expression using the variable, add an expression such as `a + b` to the **Expression** window and click **Reevaluate**. 
   
-4.  **Быстрая проверка** — это модальное диалоговое окно, поэтому вы не можете продолжать отладку, пока оно открыто. Чтобы добавить переменную в окно **Контрольные значения**, можно щелкнуть **Добавить контрольное значение**.  
+4.  Add the variable to the **Watch** window from **QuickWatch** by clicking **Add Watch**. 
+
+    > [!NOTE]
+    > The **QuickWatch** window is a modal dialog window, so you can't continue debugging as long as it is open.  
   
-5.  Закройте окно **Быстрая проверка**. Теперь вы можете продолжать отладку, наблюдая за значением в окне **Контрольные значения**.  
+5.  Close the **QuickWatch** window. Now you can continue debugging while you observe the value in the **Watch** window.  
   
-## Наблюдение за переменными в окне "Контрольные значения"  
- С помощью окна **Контрольные значения** можно наблюдать за несколькими переменными. Например, предположим, что имеется следующий код:  
+## <a name="observing-variables-with-the-watch-window"></a>Observing variables with the Watch window  
+ You can observe multiple variables with the **Watch** window. For example, if you have the following code:  
   
-```c#  
-static void Main(string[] args) { int a, b, c; a = 1; b = 2; c = 0; for (int i = 0; i < 10; i++) { a++; b *= 2; c = a + b; } }  
-  
-```  
-  
- Добавьте значения трех переменных в окно "Контрольные значения", выполнив указанные ниже действия.  
-  
-1.  Установите точку останова на строке `c = a + b;`.  
-  
-2.  Начните отладку \(**F5**\). Выполнение прекратится в точке останова.  
-  
-3.  Откройте окно "Контрольные значения" \(выберите пункт **Отладка \> Окна \> Контрольные значения \> Контрольные значения 1** или нажмите клавиши **CTRL\+ALT\+W, 1**\).  
-  
-4.  Добавьте переменную `a` в первую строку, переменную `b` — во вторую строку, а переменную `c` — в третью строку.  
-  
-5.  Продолжайте отладку.  
-  
- В процессе итерации по циклу `for` значения переменных должны меняться.  
-  
- При программировании в машинных кодах иногда может потребоваться уточнить контекст имени переменной или выражения, содержащего имя переменной. Контекст — это функция, файл исходного кода и модуль, где находится переменная. Для этого можно использовать синтаксис оператора контекста. Более подробную информацию см. в статье "Выражения в C\+\+".  
-  
-## Наблюдение за выражениями в окне "Контрольные значения"  
- Теперь попробуем использовать выражение. Добавить можно любое допустимое выражение, которое распознает отладчик.  
-  
- Например, если имеется код, приведенный в предыдущем разделе, можно вычислить среднее трех значений следующим образом:  
-  
- ![WatchExpression](~/debugger/media/watchexpression.png "WatchExpression")  
-  
- В целом правила вычисления выражений в окне **Контрольные значения** аналогичны правилам вычисления выражений в используемом языке программирования. Если в выражении есть синтаксическая ошибка, должна произойти та же ошибка компилятора, которая возникла бы в редакторе кода. Ниже приведен пример.  
-  
- ![WatchExpressionError](~/debugger/media/watchexpressionerror.png "WatchExpressionError")  
-  
-##  <a name="bkmk_refreshWatch"></a> Обновление устаревших контрольных значений  
- В некоторых случаях при вычислении выражения в окне **Контрольные значения** может появиться значок обновления \(кружок с двумя стрелками или двумя волнистыми линиями\).  Например, это может произойти, если вычисление свойств выключено \(**Сервис \> Параметры \> Отладка \> Включить вычисление свойств и другие неявные вызовы функций**\) и имеется следующий код:  
-  
-```c#  
-static void Main(string[] args) { List<string> list = new List<string>(); list.Add("hello"); list.Add("goodbye"); }  
+```C++  
+int main()
+{
+    int a, b, c;
+    a = 1;
+    b = 2;
+    c = 0;
+
+    for (int i = 0; i < 10; i++)
+    {
+        a++;
+        b *= 2;
+        c = a + b;
+    }
+
+    return 0;
+}
   
 ```  
   
- Если вы устанавливаете наблюдение за свойством `Count` списка, то должны увидеть что\-то подобное:  
+ Add the values of the three variables to the Watch window as follows:  
+  
+1.  Set a breakpoint on the `c = a + b;` line.  
+  
+2.  Start debugging (**F5**). Execution stops at the breakpoint.  
+  
+3.  Open the Watch window (**Debug > Windows > Watch > Watch 1**, or **CTRL+ALT+W, 1**).  
+  
+4.  Add the `a` variable to the first row, the `b` variable to the second row, and the `c` variable to the third row.
+
+    You can add variables by clicking an empty row and typing the variable name.
+  
+5.  Continue debugging (press **F11** to advance the debugger).  
+  
+ You should see the variable values changing as you iterate through the `for` loop.  
+  
+ If you are programming in native code, you may sometimes need to qualify the context of a variable name or an expression containing a variable name. The context is the function, source file, and module where a variable is located. If you have to do this, you can use the context operator syntax. For more information, see [Context Operator (C++)](../debugger/context-operator-cpp.md).  
+  
+## <a name="observing-expressions-with-the-watch-window"></a>Observing expressions with the Watch window  
+ Now let's try using an expression instead. You can add any valid expression recognized by the debugger.  
+  
+ For example, if you have the code listed in the preceding section, you can get the average of the three values like this:  
+  
+ ![Watch Expression](../debugger/media/watchexpression.png "WatchExpression")  
+  
+ In general, the rules for evaluating expressions in the **Watch** window are the same as the rules for evaluating expressions in your coding language. If your expression has a syntax error, you can expect the same compiler error that you would see in the code editor. Here's an example:  
+  
+ ![Watch Expression Error](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
+  
+##  <a name="bkmk_refreshWatch"></a> Refreshing Watch values that are out of date  
+ In certain circumstances you might see a refresh icon (a circular arrow) when an expression is evaluated in the **Watch** window.  For example, if you have property evaluation turned off (**Tools > Options > Debugging > Enable property evaluation and other implicit function calls**), and you have the following code:  
+  
+```CSharp  
+static void Main(string[] args)  
+{  
+    List<string> list = new List<string>();  
+    list.Add("hello");  
+    list.Add("goodbye");  
+}  
+  
+```  
+  
+ If you set a watch on the `Count` property of the list, you should see something like the following:  
   
  ![RefreshWatch](../debugger/media/refreshwatch.png "RefreshWatch")  
   
- Это указывает на ошибочные или устаревшие значения. Обычно можно обновить значение, щелкнув значок, но в некоторых случаях может быть предпочтительнее не делать этого. Сначала нужно узнать, почему значение не было рассчитано.  
+ This indicates an error or a value that is out of date. You can generally refresh the value by clicking on the icon, but in some cases you might prefer not to refresh it. First you need to know why the value was not evaluated.  
   
- При наведении указателя мыши на значок отображается всплывающая подсказка, в которой указаны причины, по которым нельзя вычислить значение выражения. Значок с изогнутыми стрелками может отображаться по следующим причинам:  
+ If you point to the icon, a tooltip provides information about why the expression was not evaluated.  If the circling arrows appear, the expression was not evaluated for one of the following reasons:  
   
--   •	При вычислении выражения возникла ошибка. Например, истекло время ожидания или переменная находилась вне области действия.  
+-   An error occurred as the expression was being evaluated. For example, a time-out might have occurred, or a variable might have been out of scope.  
   
--   •	Выражение содержит вызов функции, который мог вызвать побочный эффект в приложении \(см. раздел [Побочные эффекты и выражения](#bkmk_sideEffects)\).  
+-   The expression contains a function call which could trigger a side effect in the application (see [Side Effects and Expressions](#bkmk_sideEffects)).  
   
--   Автоматическое вычисление свойств и неявных вызовов функций отладчиком отключено \(**Сервис \> Параметры \> Отладка \> Включить вычисление свойств и другие неявные вызовы функций**\), поэтому выражение нельзя вычислить автоматически.  
+-   Automatic evaluation of properties and implicit functions calls by the debugger is turned off (**Tools > Options > Debugging > Enable property evaluation and other implicit function calls**), and then the expression cannot be automatically evaluated.  
   
- Чтобы обновить значение, щелкните значок обновления или нажмите клавишу ПРОБЕЛ. Отладчик попытается пересчитать выражение. Если значок обновления отображался из\-за отключения автоматического вычисления свойств и неявных побочных эффектов, выражение можно вычислить.  
+ To refresh the value, click the refresh icon or press the spacebar. The debugger will try to reevaluate the expression. If the refresh icon appeared because automatic evaluation of properties and implicit side effects was turned off, the expression can be evaluated.  
   
- Если появляется значок в виде кружка с двумя волнистыми линиями, выражение не было вычислено из\-за возможной зависимости между потоками. Иными словами, для вычисления коду требуется временно запустить другие потоки в приложении. Как правило, при нахождении в режиме приостановки выполнения все потоки в приложении остановлены. Разрешение временного запуска других потоков может привести к непредвиденным результатам, а также привести к тому, что отладчик будет игнорировать различные события, например точки останова и исключения, созданные в этих потоках.  
+ If you see an icon that is a circle with two wavy lines that resemble threads, the expression was not evaluated because of a potential cross-thread dependency. In other words, evaluating the code requires other threads in your application to run temporarily. When you are in break mode, all threads in your application are typically stopped. Allowing other threads to run temporarily can have unexpected effects on the state of your program and causes the debugger to ignore events such as breakpoints and exceptions thrown on those threads.  
   
-##  <a name="bkmk_sideEffects"></a> Побочные эффекты и выражения  
- Вычисление некоторых выражений может привести к изменению значения некоторой переменной или иным образом повлиять на состояние программы. Например, вычисление следующего выражения изменяет значение `var1`:  
+##  <a name="bkmk_sideEffects"></a> Side Effects and Expressions  
+ Evaluating some expressions can change the value of a variable or otherwise affect the state of your program. For example, evaluating the following expression changes the value of `var1`:  
   
 ```  
 var1 = var2  
 ```  
   
- Это называется [побочным эффектом](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Побочные эффекты могут усложнить отладку из\-за изменения способа работы программы.  
+ This is called  a [side effect](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Side effects can make debugging more difficult by changing the way your program operates.  
   
- Если известно, что у выражения есть побочные эффекты, то оно вычисляется только один раз при первом его вводе. Последующие вычисления не выполняются. Этот режим можно отменить, щелкнув значок обновления, который стоит рядом со значением.  
+ An expression that is known to have side effects is  evaluated only once, when you first enter it. Subsequent evaluations are disabled. You can manually override this behavior by clicking the update icon that appears next to the value.  
   
- Один из способов избежать любых побочных эффектов — отключить автоматическое вычисление функций \(**Сервис \> Параметры \> Отладка \> Включить вычисление свойств и другие неявные вызовы функций**\).  
+ One way to avoid all side effects is to turn off automatic function evaluation (**Tools > Options > Debugging > Enable property evaluation and other implicit function calls**).  
   
- Если вычисление свойств и неявных вызовов функций отключено, можно принудительно вычислить выражение с помощью модификатора формата **ac** \(только в C\#\). См. раздел [Определители формата в C\#](../debugger/format-specifiers-in-csharp.md).  
+ When evaluation of properties or implicit function calls is turned off, you can force evaluation by using the **ac** format modifier (for C# only). See [Format Specifiers in C#](../debugger/format-specifiers-in-csharp.md).  
   
-## Использование идентификаторов объектов в окне "Контрольные значения" \(C\# и Visual Basic\)  
- Иногда необходимо наблюдать за поведением определенного объекта. Например, может потребоваться отслеживать объект, на который ссылается локальная переменная, после того как эта переменная вышла из области действия. В C\# и Visual Basic можно создавать идентификаторы объектов для определенных экземпляров ссылочных типов и использовать их в окне "Контрольные значения" и условиях точек останова. Идентификатор объекта создается службами отладки среды CLR и связан с объектом.  
+## <a name="bkmk_objectIds"></a> Using Object IDs in the Watch window (C# and Visual Basic)  
+ There are times when you want to observe the behavior of a specific object; for example, you might want to track an object referred to by a local variable after that variable has gone out of scope. In C# and Visual Basic, you can create object IDs for specific instances of reference types and use them in the Watch window and in breakpoint conditions. The object ID is generated by the common language runtime (CLR) debugging services and associated with the object.  
   
 > [!NOTE]
->  Идентификаторы объектов создают слабые ссылки и не предотвращают сборку мусора для объекта. Они действительны только в рамках текущего сеанса отладки.  
+>  Object IDs create weak references, and do not prevent the object from being garbage collected. They are valid only for the current debugging session.  
   
- В приведенном ниже коде один метод создает `Person` с помощью локальной переменной, но вам нужно узнать имя `Person` в другом методе.  
+ In the following code one method creates a `Person` using a local variable, but you want to find out what the `Person`'s name is in a different method:  
   
-```c#  
-class Person { public Person(string name) { Name = name; } public string Name { get; set; } } public class Program { List<Person> _people = new List<Person>(); public static void Main(string[] args) { MakePerson(); DoSomething(); } private static void MakePerson() { var p = new Person("Bob"); _people.Add(p); } private static void DoSomething() { // more processing Console.WriteLine("done"); } }  
+```CSharp  
+class Person  
+{  
+    public Person(string name)  
+    {  
+        Name = name;  
+    }  
+    public string Name { get; set; }  
+}  
+  
+public class Program  
+{  
+    List<Person> _people = new List<Person>();  
+    public static void Main(string[] args)  
+    {  
+        MakePerson();  
+        DoSomething();  
+    }  
+  
+    private static void MakePerson()  
+    {  
+        var p = new Person("Bob");  
+        _people.Add(p);  
+    }  
+  
+    private static void DoSomething()  
+    {  
+        // more processing  
+         Console.WriteLine("done");  
+    }  
+}  
   
 ```  
   
- Вы можете добавить ссылку на этот объект `Person` в окно **Контрольные значения**, выполнив указанные ниже действия.  
+ You can add a reference to that `Person` object in the **Watch** window as follows:  
   
-1.  Установите точку останова в коде после создания объекта.  
+1.  Set a breakpoint in the code some time after the object has been created.  
   
-2.  Начните отладку и, когда выполнение остановится в точке останова, найдите переменную в окне **Локальные**, щелкните ее правой кнопкой мыши и выберите пункт **Создать идентификатор объекта**.  
+2.  Start debugging, and when execution stops in the breakpoint, find the variable in the **Locals** window, right-click it, and select **Make Object ID**.  
   
-3.  В окне **Локальные** вы должны увидеть символ **$** и число. Это и есть идентификатор объекта.  
+3.  You should see a **$** plus a number in the **Locals** window. This is the object ID.  
   
-4.  Добавьте идентификатор объекта в окно "Контрольные значения".  
+4.  Add the object ID to the Watch window.  
   
-5.  Установите точку останова там, где нужно отследить поведение объекта.  В приведенном выше коде это место находится внутри метода `DoSomething()`.  
+5.  Set a breakpoint where you want to observe the object's behavior.  In the code above, that would be in the `DoSomething()` method.  
   
-6.  Продолжайте отладку и, когда выполнение остановится в методе `DoSomething()`, в окне **Контрольные значения** отобразится объект `Person`.  
+6.  Continue debugging, and when execution stops in the `DoSomething()` method, the **Watch** window displays the `Person` object.  
   
 > [!NOTE]
->  Если необходимо просмотреть свойства объекта, например `Person.Name` в приведенном выше примере, должно быть включено вычисление свойств.  
+>  If you want to see the object's properties, such as `Person.Name` in the example above, you must have enabled property evaluation .  
   
-## Использование регистров в окне "Контрольные значения" \(только C\+\+\)  
- При отладке машинного кода, кроме имен переменных, можно добавлять имена регистров с помощью  **$\<имя регистра\>** или **@\<имя регистра\>**.  Для получения дополнительной информации см. [Псевдопеременные](../debugger/pseudovariables.md).  
+## <a name="using-registers-in-the-watch-window-c-only"></a>Using registers in the Watch window (C++ only)  
+ If you are debugging native code, you can add register names as well as variable names using **$\<register name>** or **@\<register name>**.  For more information, see [Pseudovariables](../debugger/pseudovariables.md).  
   
-## Динамическое представление и окно "Контрольные значения"  
- В некоторых скриптовых языках \(например, в JavaScript и Python\) используется динамическая или [утиная типизация](https://en.wikipedia.org/wiki/Duck_typing), а в языках .NET \(в версии 4.0 и более поздних\) поддерживаются объекты, за которыми трудно наблюдать с помощью обычных окон отладки, так как у них могут быть свойства и методы времени выполнения, которые нельзя отобразить.  
+## <a name="dynamicview-and-the-watch-window"></a>DynamicView and the Watch window  
+ Some scripting languages (e.g. JavaScript or Python) use dynamic or [duck typing](https://en.wikipedia.org/wiki/Duck_typing), and .NET languages (in version 4.0 and later) support objects that are difficult to observe using the normal debugging windows, because they may have runtime properties and methods that cannot be displayed.  
   
- Когда в окне "Контрольные значения" отображается объект, созданный на основе типа, реализующего [IDynamicMetaObjectProvider Интерфейс](../Topic/IDynamicMetaObjectProvider%20Interface.md), отладчик добавляет специальный узел **Динамическое представление** в окно **Видимые**. В этом узле показаны динамические члены динамического объекта, но не разрешено изменять их значения.  
+ When the Watch window displays a or an object created from a type that implements the [IDynamicMetaObjectProvider Interface](http://msdn.microsoft.com/Library/e887a72d-ebe2-4253-a7e8-3d8d05154647), the debugger adds a special **Dynamic View**  node to the **Autos** display. This node shows the dynamic members of the dynamic object but does not allow editing of the member values.  
   
- Если щелкнуть правой кнопкой мыши любой дочерний объект узла **Динамическое представление** и выбрать пункт **Добавить контрольное значение**, отладчик вставит новую контрольную переменную, которая приводит объект к динамическому объекту. Иными словами, **object Name** становится \(**\(dynamic\)object\).Name**.  
+ If you right-click any child of a **Dynamic View** and choose **Add Watch**, the debugger inserts a new watch variable that casts an object to a dynamic object. In other words, **object Name** becomes (**(dynamic)object).Name**.  
   
- Вычисление членов **динамического представления** может иметь побочные эффекты. Объяснение того, что такое побочные эффекты, см. в разделе [Побочные эффекты и выражения](#bkmk_sideEffects). Для C\# отладчик автоматически не пересчитывает значения, отображаемые в **Динамическом представлении** при переходе на новую строку кода. В Visual Basic выражения, добавляемые с помощью **динамического представления**, автоматически обновляются.  
+ Evaluating the members of a **Dynamic View** can have side effects. For an explanation of what side effects are, see [Side Effects and Expressions](#bkmk_sideEffects). For C#, the debugger does not automatically reevaluate the values shown in the **Dynamic View** when you step to a new line of code. For Visual Basic, expressions added through the **Dynamic View** are automatically refreshed.  
   
- Инструкции по обновлению значений динамического представления см. в разделе [Обновление устаревших контрольных значений](#bkmk_refreshWatch).  
+ For instructions about how to refresh the Dynamic View values, see [Refreshing Watch values that are out of date](#bkmk_refreshWatch).  
   
- Если нужно отобразить только **динамическое представление** объекта, можно использовать описатель формата **dynamic**.  
+ If you want to display only the **Dynamic View** for an object, you can use the **dynamic** format specifier:  
   
--   C\#: **ИмяОбъекта, dynamic**  
+-   C#: **ObjectName, dynamic**  
   
--   Visual Basic: **$dynamic, ИмяОбъекта**  
+-   Visual Basic:: **$dynamic, ObjectName**  
   
- **Динамическое представление** также улучшает процесс отладки для COM\-объектов. Когда отладчик встречает COM\-объект, инкапсулированный в **System.\_\_ComObject**, он добавляет узел **Динамическое представление** для объекта.  
+ The **Dynamic View** also enhances the debugging experience for COM objects. When the debugger encounters a COM object wrapped in **System.__ComObject**, it adds a **Dynamic View** node for the object.  
   
-## См. также  
- [Окна отладчика](../debugger/debugger-windows.md)
+## <a name="see-also"></a>See Also  
+ [Debugger Windows](../debugger/debugger-windows.md)

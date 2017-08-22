@@ -1,86 +1,98 @@
 ---
-title: "Ошибка: сбой удаленного входа в систему рабочей группы | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.error.workgroup_remote_logon_failure"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "ошибка входа в систему, удаленная отладка"
-  - "удаленная отладка, ошибка входа в систему"
+title: 'Error: Workgroup Remote Logon Failure | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.error.workgroup_remote_logon_failure
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- JScript
+- C++
+helpviewer_keywords:
+- logon failure, remote debugging
+- remote debugging, logon failure
 ms.assetid: 7be2c5bb-40fe-48d6-8cfc-c231fbd3d64e
 caps.latest.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 19
----
-# Ошибка: сбой удаленного входа в систему рабочей группы
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: d0ebccfdb523661ba04a103bf6999e9c6546d1c7
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/22/2017
 
-Текст сообщения об ошибке:  
+---
+# <a name="error-workgroup-remote-logon-failure"></a>Error: Workgroup Remote Logon Failure
+This error reads:  
   
- "Ошибка входа в систему: неизвестное имя пользователя или неверный пароль"  
+ Logon failure: unknown user name or bad password  
   
- **Причина**  
+ **Cause**  
   
- Эта ошибка может возникать, если в ходе отладки с компьютера рабочей группы произведена попытка подключиться к удаленному компьютеру.  Возможные причины:  
+ This error can occur when you are debugging from a machine on a workgroup and you try to connect to remote machine. Possible causes include:  
   
--   На удаленном компьютере нет учетной записи с соответствующими именем и паролем.  
+-   There is no account with the matching name and password on the remote machine.  
   
--   Если компьютер с Visual Studio и удаленный компьютер оба принадлежат рабочим группам, эта ошибка может возникать из\-за установленного по умолчанию значения параметра **Локальной политики безопасности** на удаленном компьютере.  Значение по умолчанию для параметра **Локальная политика безопасности**: **Гостевая — локальные пользователи удостоверяются как гости**.  Чтобы отлаживать при таких настройках, необходимо установить параметр на удаленном компьютере в значение **Обычная — локальные пользователи удостоверяются как они сами**.  
+-   If both the Visual Studio computer and the remote machine are on workgroups, this error may occur due to the default **Local Security Policy** setting on the remote machine. The default setting for the **Local Security Policy** setting is **Guest only - local users authenticate as Guest**. To debug on this setup, you must change the setting on the remote machine to **Classic - local users authenticate as themselves**.  
   
 > [!NOTE]
->  Для выполнения следующих задач необходимо иметь права администратора.  
+>  You must be an administrator to carry out the following tasks.  
   
-### Открытие окна "Локальная политика безопасности"  
+### <a name="to-open-the-local-security-policy-window"></a>To open the Local Security Policy window  
   
-1.  Запустите оснастку консоли управления \(MMC\) **secpol.msc**.  Для этого введите secpol.msc в поле поиска файлов, в поле "Выполнить" или в командной строке.  
+1.  Start the **secpol.msc** Microsoft Management Console snap-in. Type secpol.msc in Windows search, the Windows Run box, or at a command prompt.  
   
-### Добавление назначений прав пользователя  
+### <a name="to-add-user-rights-assignments"></a>To add user rights assignments  
   
-1.  Открытие локальной политики  
+1.  Open the **Local Security Policy** window.  
   
-2.  Откройте окно **Локальная политика безопасности**.  
+2.  Expand the **Local Policies** folder.  
   
-3.  Разверните папку **Локальные политики**.  
+3.  Click **User Rights Assignment**.  
   
-4.  Выберите **Назначение прав пользователя**.  
+4.  In the **Policy** column, double-click **Debug programs** to view current local group policy assignments in the **Local Security Policy Setting** dialog box.  
   
-5.  В столбце **Политика** дважды щелкните **Отладка программ** для просмотра назначений текущей локальной групповой политики в диалоговом окне **Параметр локальной политики безопасности**.  
+     ![Local Security Policy User Rights](../debugger/media/dbg_err_localsecuritypolicy_userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")  
   
-     ![Права пользователя локальной политики безопасности](../debugger/media/dbg_err_localsecuritypolicy_userrightsdebugprograms.png "DBG\_ERR\_LocalSecurityPolicy\_UserRightsDebugPrograms")  
+5.  To add new users, click the **Add User or Group** button.  
   
-6.  Чтобы добавить новых пользователей, нажмите кнопку **Добавить пользователя или группу**.  
+### <a name="to-change-the-sharing-and-security-model"></a>To change the Sharing and Security Model  
   
-### Изменение модели безопасности и совместного использования  
+1.  Open the **Local Security Policy** window.  
   
-1.  Откройте окно **Локальная политика безопасности**.  
+2.  Expand the **Local Policies** folder.  
   
-2.  Разверните папку **Локальные политики**.  
+3.  Click **Security Options**.  
   
-3.  Нажмите **Параметры безопасности**.  
+4.  In the **Policy** column, double-click **Network access: Sharing and security model for local accounts**.  
   
-4.  В столбце **Политики** дважды щелкните **Сетевой доступ: модель совместного доступа и безопасности для локальных учетных записей**.  
+5.  In the **Network access: Sharing and security model for local accounts** dialog box, change the value to **Classic - local users authenticate as themselves** and click the **Apply** button.  
   
-5.  В диалоговом окне **Сетевой доступ: модель совместного доступа и безопасности для локальных учетных записей** измените значение на **Обычная — локальные пользователи удостоверяются как они сами** и нажмите кнопку **Применить**.  
+     ![Local Security Policy Security Options](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")  
   
-     ![Параметры локальной политики безопасности](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG\_ERR\_LocalSecurityPolicy\_SecurityOptions\_NetworkAccess")  
-  
-## См. также  
- [Ошибки удаленной отладки и их устранение](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Удаленная отладка](../debugger/remote-debugging.md)
+## <a name="see-also"></a>See Also  
+ [Remote Debugging Errors and Troubleshooting](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Remote Debugging](../debugger/remote-debugging.md)

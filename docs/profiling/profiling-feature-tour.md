@@ -1,5 +1,5 @@
 ---
-title: "Обзор возможностей профилирования | Документы Майкрософт"
+title: Profiling Feature Tour | Microsoft Docs
 ms.custom: H1HackMay2017
 ms.date: 05/18/2017
 ms.reviewer: 
@@ -30,155 +30,155 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 90b2481b0ec4f9387fe3a2c0b733a103e8c03845
-ms.openlocfilehash: a219a09f96b34a434a3bf1103e560104c294eb96
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: b4f4e312fb7717edfe950cf6977279a1bd67a458
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 08/22/2017
 
 ---
-# <a name="feature-tour-of-profiling-in-visual-studio"></a>Обзор возможностей профилирования в Visual Studio
+# <a name="profiling-feature-tour"></a>Profiling Feature Tour
 
-Visual Studio предоставляет широкий набор средств профилирования для выявления различных типов проблем с производительностью в зависимости от типа приложения.
+Visual Studio provides a variety of profiling tools to help you diagnose different kinds of performance issues depending on your app type.
 
-Средства профилирования, которыми можно воспользоваться во время сеанса отладки, доступны в окне "Средства диагностики". Окно "Средства диагностики" появится автоматически, если вы не отключали эту функцию. Чтобы открыть окно, щелкните **Отладка | Окна | Показать средства диагностики**. В открытом окне можно выбирать средства, для которых требуется собрать данные.
+The profiling tools that you can access during a debugging session are available in the Diagnostic Tools window. The Diagnostic Tools window appears automatically unless you have turned it off. To bring up the window, click **Debug / Windows / Show Diagnostic Tools**. With the window open, you can select tools for which you want to collect data.
 
-![Окно "Средства диагностики"](~/profiling/media/prof-tour-diagnostic-tools.png "Средства диагностики")
+![Diagnostic Tools window](../profiling/media/prof-tour-diagnostic-tools.png "Diagnostic Tools")
 
-При отладке можно использовать окно **Средства диагностики** для анализа использования ЦП и памяти, а также просматривать события, отображающие сведения, связанные с производительностью.
+While you are debugging, you can use the **Diagnostic Tools** window to analyze CPU and memory usage, and you can view events that show performance-related information.
 
-![Сводка в окне "Средства диагностики"](~/profiling/media/prof-tour-cpu-and-memory-graph.gif "Сводка в окне "Средства диагностики"")
+![Diagnostic Tools Summary view](../profiling/media/prof-tour-cpu-and-memory-graph.gif "Diagnostic Tools Summary")
 
-Использование окна **Средства диагностики** часто является предпочтительным способом профилирования приложений, но вместо этого также можно выполнять анализ приложения после неустранимого сбоя. Дополнительные сведения о различных подходах см. в разделе [Выполнение средств профилирования с отладчиком и без него](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+The **Diagnostic Tools** window is often the preferred way to profile apps, but you can also do a post-mortem analysis of your app instead. If you want more information on different approaches, see [Running Profiling Tools With or Without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="analyze-cpu-usage"></a>Анализ использования ЦП
+## <a name="analyze-cpu-usage"></a>Analyze CPU Usage
 
-Средство загрузки ЦП является хорошей отправной точкой для анализа производительности приложения. С его помощью вы получите дополнительные сведения о ресурсах ЦП, используемых приложением. Более подробное пошаговое руководство по работе со средством загрузки ЦП см. в разделе [Руководство по профилированию производительности для начинающих](../profiling/beginners-guide-to-performance-profiling.md).
+The CPU Usage tool is a good place to start analyzing your app's performance. It will tell you more about CPU resources that your app is consuming. For a more detailed walkthrough of the CPU Usage tool, see [Beginner's Guide to Performance Profiling](../profiling/beginners-guide-to-performance-profiling.md).
 
-В представлении **Сводка** окна средств диагностики выберите **Включить профилирование ЦП** (необходимо быть в сеансе отладки).
+From the **Summary** view of the Diagnostic Tools, choose **Enable CPU Profiling** (you must be in a debugging session).
 
-![Включение отображения данных о загрузке ЦП в окне "Средства диагностики"](~/profiling/media/prof-tour-enable-cpu-profiling.png "Данные о загрузке ЦП в окне "Средства диагностики"")
+![Enable CPU usage in the Diagnostic Tools](../profiling/media/prof-tour-enable-cpu-profiling.png "Diagnostic Tools Enable CPU Usage")
 
-Для наиболее эффективного использования средства установите в коде две точки останова: одну в начале и одну в конце функции и области кода, которую требуется проанализировать. Проверьте данные профилирования во время приостановки во второй точке останова.
+To use the tool most effectively, set two breakpoints in your code, one at the beginning and one at the end of the function or the region of code you want to analyze. Examine the profiling data when you are paused at the second breakpoint.
 
-В представлении **Загрузка ЦП** отображается список функций, упорядоченных по самой продолжительно выполняющейся (эта функция расположена в верхней части). Это поможет переходить к функциям, где наблюдаются проблемы с производительностью.
+The **CPU Usage** view shows you a list of functions ordered by longest running, with the longest running function at the top. This can help guide you to functions where performance bottlenecks are happening.
 
-![Представление данных о загрузке ЦП в окне "Средства диагностики"](~/profiling/media/prof-tour-cpu-usage.png "Данные о загрузке ЦП в окне "Средства диагностики"")
+![Diagnostic Tools CPU Usage view](../profiling/media/prof-tour-cpu-usage.png "Diagnostic Tools CPU Usage")
 
-Дважды щелкните нужную функцию, после чего откроется подробное представление с тремя панелями (представление "бабочки"): выбранная функция будет находиться в центре окна, вызываемая функция — в левой части, а вызывающая функция — в правой. В разделе **Тело функции** также показан общий объем времени (и доля времени), затраченного в теле функции за исключением времени, затраченного в вызываемых и вызывающих функциях. Эти данные помогут оценить, оказывает ли негативное влияние на производительность сама функция.
+Double-click on a function that you are interested in, and you will see a more detailed three-pane "butterfly" view, with the selected function in the middle of the window, the calling function on the left, and called functions on the right. The **Function Body** section shows the total amount of time (and the percentage of time) spent in the function body excluding time spent in calling and called functions. This data can help you evaluate whether the function itself is a performance bottleneck.
 
-![Представление "бабочки" с вызывающей и вызываемой функциями в окне "Средства диагностики"](~/profiling/media/prof-tour-cpu-usage-caller-callee.png "Представление вызывающей и вызываемой функциями в окне "Средства диагностики"")
+![Diagnostic Tools caller callee "butterfly" view](../profiling/media/prof-tour-cpu-usage-caller-callee.png "Diagnostic Tools Caller Callee View")
 
-## <a name="analyze-memory-usage"></a>Анализ использования памяти
+## <a name="analyze-memory-usage"></a>Analyze Memory Usage
 
-В окне средств диагностики также можно оценить использование памяти в приложении. Например, можно узнать число и размер объектов в куче. Более подробные инструкции по анализу памяти см. в разделе [Использование памяти](../profiling/memory-usage.md).
+The Diagnostic Tools window also allows you to evaluate memory usage in your app. For example, you can look at the number and size of objects on the heap. For more detailed instructions to analyze memory, see [Analyze Memory Usage](../profiling/memory-usage.md).
 
-Для анализа использования памяти необходимо сделать хотя бы один снимок памяти во время отладки. Часто наилучшим способом анализа памяти является создание двух снимков: первый создается непосредственно перед возникновением потенциальной проблемы с памятью, а второй — сразу же после возникновения этой проблемы. Затем можно просмотреть различия двух моментальных снимков и точно определить, что изменилось.
+To analyze memory usage, you need to take at least one memory snapshot while you are debugging. Often, the best way to analyze memory is to take two snapshots; the first right before a suspected memory issue, and the second snapshot right after a suspected memory issue occurs. Then you can view a diff of the two snapshots and see exactly what changed.
 
-![Создание снимка в окне "Средства диагностики"](~/profiling/media/prof-tour-take-snapshots.gif "Создание снимка в окне "Средства диагностики"")
+![Take a snapshot in the Diagnostic Tools](../profiling/media/prof-tour-take-snapshots.gif "Diagnostic Tools Take Snapshots")
 
-При щелчке одной из ссылок со стрелкой откроется разностное представление кучи (красная стрелка вверх ![Увеличение использования памяти](~/profiling/media/prof-tour-mem-usage-up-arrow.png "Увеличение использования памяти") показывает растущее количество объектов (слева) или увеличивающийся размер памяти (справа)). Если щелкнуть ссылку справа, откроется разностное представление кучи, упорядоченное по объектам, которые привели к максимальному увеличению размера кучи. Это может помочь выявить проблемы с памятью. Например, на следующем рисунке байты, используемые объектами `ClassHandlersStore`, увеличены на 3 492 байт на втором моментальном снимке.
+When you select one of the arrow links, you are given a differential view of the heap (a red up arrow ![Memory Usage Increase](../profiling/media/prof-tour-mem-usage-up-arrow.png "Memory Usage Increase") shows an increasing object count (left) or an increasing heap size (right)). If you click the right link, you get a differential heap view ordered by objects that increased the most in heap size. This can help you pinpoint memory problems. For example, in the illustration below, the bytes used by `ClassHandlersStore` objects increased by 3,492 bytes in the second snapshot.
 
-![Разностное представление кучи в окне "Средства диагностики"](~/profiling/media/prof-tour-mem-usage-diff-heap.png "Разностное представление кучи в окне "Средства диагностики"")
+![Diagnostic Tools heap diff view](../profiling/media/prof-tour-mem-usage-diff-heap.png "Diagnostic Tools Heap Diff view")
 
-Если в представлении **Использование памяти** щелкнуть ссылку слева, представление кучи будет упорядочено по количеству объектов. Объекты определенного типа, количество которых максимально выросло, отображаются в верхней части (отсортированы по столбцу **Count Diff** (Разница числа)).
+If you click the link on the left instead in the **Memory Usage** view, the heap view is organized by object count; the objects of a particular type that increased the most in number are shown at the top (sorted by **Count Diff** column).
 
-## <a name="examine-performance-events"></a>Изучение событий производительности
+## <a name="examine-performance-events"></a>Examine Performance Events
 
-В представлении **События** в окне средств диагностики отображаются различные события, которые возникают при отладке, например операция задания точки останова или пошагового выполнения кода. Можно проверить такие сведения, как длительность события (измеряется с момента последней приостановки отладчика или с момента запуска приложения). Например, при пошаговом выполнении кода (F10, F11) в представлении **События** отображается длительность выполнения приложения с операции на предыдущем шаге до текущего шага.
+The **Events** view in the Diagnostic Tools shows you different events that occur while you are debugging, such as the setting of a breakpoint or a code stepping operation. You can check information such as the duration of the event (measured from when the debugger was last paused, or when the app started). For example, if you step through code (F10, F11), the **Events** view shows you the app runtime duration from the previous step operation to the current step.
 
-![Представление событий в окне "Средства диагностики"](~/profiling/media/prof-tour-events.png "Представление событий в окне "Средства диагностики"")
+![Diagnostic Tools Events view](../profiling/media/prof-tour-events.png "Diagnostic Tools View Events")
 
  > [!NOTE]
- > Если у вас установлен выпуск Visual Studio Enterprise, на этой вкладке вы можете увидеть [события IntelliTrace](../debugger/intellitrace.md).
+ > If you have Visual Studio Enterprise, you can also see [IntelliTrace events](../debugger/intellitrace.md) in this tab.
 
-Эти же события также отображаются в редакторе кода в виде советов для повышения производительности.
+The same events also show up in the code editor, which you can view as PerfTips.
 
-![Обзор профилирования — советы по повышению производительности](~/profiling/media/prof-tour-perf-tips.png "Обзор профилирования — советы по повышению производительности")
+![Profiling Tour PerfTips](../profiling/media/prof-tour-perf-tips.png "Profiling Tour PerfTips")
 
-## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>Проверка событий производительности и доступности пользовательского интерфейса (UWP)
+## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>Examine UI Performance and Accessibility Events (UWP)
 
-В приложениях UWP в окне "Средства диагностики" можно включить параметр **Анализ пользовательского интерфейса**. Средство выполняет поиск общих проблем производительности или доступности и во время отладки отображает их в представлении **События**. В описаниях событий содержатся сведения, которые могут помочь при устранении неполадок.
+In your UWP apps, you can enable **UI Analysis** in the Diagnostic Tools window. The tool searches for common performance or accessibility issues and displays them in the **Events** view while you are debugging. The event descriptions provide information that can help resolve issues.
 
-![Представление "События" с параметром "Анализ пользовательского интерфейса" в окне "Средства диагностики"](~/profiling/media/prof-tour-ui-analysis.png "Представление "События" с параметром "Анализ пользовательского интерфейса" в окне "Средства диагностики"")
+![View UI Analysis events in the Diagnostic Tools](../profiling/media/prof-tour-ui-analysis.png "Diagnostic Tools View UI Analysis Events")
 
-## <a name="profile-release-builds-without-the-debugger"></a>Профилирование сборок выпусков без отладчика
+## <a name="profile-release-builds-without-the-debugger"></a>Profile Release Builds without the Debugger
 
-Средства профилирования, такие как "Загрузка ЦП " и "Использование памяти", можно использовать с отладчиком (см. предыдущие разделы) либо их можно запустить с помощью профилировщика производительности, который предназначен для анализа сборок **Выпуск**. В профилировщике производительности можно собрать диагностические сведения во время работы приложения, а затем проанализировать их после его остановки. Дополнительные сведения о различных подходах см. в статье [Выполнение средств профилирования с отладчиком и без него](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Profiling tools like CPU Usage and Memory Usage can be used with the debugger (see earlier sections), or you can run profiling tools using the Performance Profiler, which is intended to provide analysis for **Release** builds. In the Performance Profiler, you can collect diagnostic info while the app is running, and then examine the collected information after the app is stopped. For more information on these different approaches, see [Running Profiling Tools With or Without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-![Профилировщик производительности](~/profiling/media/prof-tour-performance-profiler.png "Профилировщик производительности")
+![Performance Profiler](../profiling/media/prof-tour-performance-profiler.png "Performance Profiler")
 
-Откройте профилировщик производительности, последовательно выбрав **Отладка, Профилировщик производительности**.
+Open the Performance Profiler by choosing **Debug / Performance Profiler**.
 
-В окне можно выбрать несколько средств профилирования, доступных в разных сценариях. Средства, такие как "Загрузка ЦП", могут предоставлять дополнительные данные, полезные для проведения анализа.
+The window will allow you to select multiple profiling tools in some scenarios. Tools such as CPU Usage may provide complementary data that you can use to help in your analysis.
 
-## <a name="analyze-resource-consumption-xaml"></a>Анализ использования ресурсов (XAML)
+## <a name="analyze-resource-consumption-xaml"></a>Analyze Resource Consumption (XAML)
 
-В приложениях XAML, таких как классические приложения WPF и приложения для Магазина Windows, можно анализировать потребление ресурсов, используя средство "Временная шкала приложения". Например, вы можете проанализировать время, затраченное приложением на подготовку кадров пользовательского интерфейса (макет и обработка), обработку запросов от сети и дисков, а также на такие сценарии, как запуск приложения, загрузка страницы и изменение размера окон. Чтобы использовать это средство, выберите **Временная шкала приложения** в профилировщике производительности и нажмите кнопку **Запустить**. В приложении выполните сценарий с предполагаемой проблемой потребления ресурсов, а затем щелкните **Остановка сбора**, чтобы создать отчет.
+In XAML apps, such as Windows desktop WPF apps and Windows Store apps, you can analyze resource consumption using the Application Timeline tool. For example, you can analyze the time spent by your application preparing UI frames (layout and render), servicing network and disk requests, and in scenarios like application startup, page load, and Window resize. To use the tool, choose **Application Timeline** in the Performance Profiler, and then choose **Start**. In your app, go through the scenario with a suspected resource consumption issue, and then choose **Stop collection** to generate the report.
 
-Низкие значения частоты кадров на графе **Пропускная способность визуализации** может означать наличие проблем визуализации, присутствующих при запуске приложения. Аналогично, высокие показатели на графе **Использование потока пользовательского интерфейса** могут соответствовать проблемам со скоростью отклика пользовательского интерфейса. В отчете можно выбрать временной период предполагаемой проблемы производительности и затем в представлении "Подробная временная шкала" (нижняя панель) изучить подробные действия потока пользовательского интерфейса.
+Low framerates in the **Visual throughput** graph may correspond to visual problems that you see when running your app. Similarly, high numbers in the **UI thread utilization** graph may also correspond to UI responsiveness issues. In the report, you can select a time period with a suspected performance issue, and then examine the detailed UI thread activities in the Timeline details view (lower pane).
 
-![Средство профилирования — временная шкала приложения](~/profiling/media/prof-tour-application-timeline.gif "Обзор профилирования — временная шкала приложения")
+![Application Timeline profiling tool](../profiling/media/prof-tour-application-timeline.gif "Profiling Tour Application Timeline")
 
-В представлении "Подробная временная шкала" находятся такие сведения, как тип действия (или затронутый элемент пользовательского интерфейса), а также длительность действия. Например, на рисунке событие **Макета** для элемента управления сетки длится 57,53 мс.
+In the Timeline details view, you can find information such as the type of activitiy (or the UI element involved) along with the duration of the activity. For example, in the illustration, a **Layout** event for a Grid control takes 57.53 ms.
 
-Дополнительные сведения см. в разделе [Временная шкала приложения](../profiling/application-timeline.md).
+For more information, see [Application Timeline](../profiling/application-timeline.md).
 
-## <a name="analyze-gpu-usage-direct3d"></a>Анализ использования GPU (Direct3D)
+## <a name="analyze-gpu-usage-direct3d"></a>Analyze GPU Usage (Direct3D)
 
-В приложениях Direct3D (компоненты Direct3D должны быть в C++) можно изучить действие GPU и проанализировать проблемы производительности. Дополнительные сведения см. в разделе [Использование GPU](../debugger/gpu-usage.md). Чтобы использовать это средство, выберите **Использование GPU** в профилировщике производительности и нажмите кнопку **Запустить**. В приложении выполните нужные действия профилирования, а затем щелкните **Остановка сбора**, чтобы создать отчет.
+In Direct3D apps (Direct3D components must be in C++), you can examine activity on the GPU and analyze performance issues. For more information, see [GPU Usage](../debugger/gpu-usage.md). To use the tool, choose **GPU Usage** in the Performance Profiler, and then choose **Start**. In your app, go through the scenario that you're interested in profiling, and then choose **Stop collection** to generate a report.
 
-Выберите период времени на графах и щелкните **Просмотреть сведения**. В нижней панели появится представление подробных сведений. В этом представлении можно узнать, сколько событий происходит в каждом ЦП и графическом процессоре. Выбирайте события в самой нижней панели, чтобы открывать всплывающие окна на временной шкале. Например, выберите событие **Присутствующие**, чтобы просмотреть всплывающие окна по вызову **Присутствующий**. (Светло-серые вертикальные линии Vsync можно использовать в качестве справочных сведений, позволяющих понять, попустили ли вертикальную синхронизацию определенные вызовы с типом **Присутствующий**. Чтобы приложение постоянно поддерживало 60 кадров/с, между каждыми двумя вертикальными синхронизациями должен быть один вызов с типом **Присутствующий**.
+When you select a time period in the graphs and choose **view details**, a detailed view appears in the lower pane. In the detailed view, you can examine how much activity is happening on each CPU and GPU. Select events in the lowest pane to get popups in the timeline. For example, select the **Present** event to view **Present** call popups. (The light gray vertical Vsync lines can be used as a reference to understand whether certain **Present** calls missed Vsync. There must be one **Present** call between every two Vsyncs in order for the app to steadily hit 60 FPS.)
 
-![Средство профилирования — использование GPU](~/profiling/media/prof-tour-gpu-usage.png "Диалоговое окно "Использование GPU"")
+![GPU Usage profiling tool](../profiling/media/prof-tour-gpu-usage.png "Diag GPU Usage")
 
-Графы также можно использовать для определения узких мест производительности ЦП или GPU.
+You can also use the graphs to determine whether there are CPU bound or GPU bound performance bottlenecks.
 
-## <a name="analyze-performance-javascript"></a>Анализ производительности (JavaScript)
+## <a name="analyze-performance-javascript"></a>Analyze Performance (JavaScript)
 
-Для универсальных приложений HTML Windows можно использовать средство "Память JavaScript" и средство "Скорость реагирования пользовательского интерфейса HTML".
+For Windows Universal HTML apps, you can use the JavaScript Memory tool and the HTML UI Responsiveness tool.
 
-Средство "Память JavaScript" аналогично средству "Использование памяти", доступному для других типов приложений. Это средство можно использовать для анализа использования памяти и поиска утечек памяти в приложении. Дополнительные сведения об этом средстве см. в разделе [Память JavaScript](../profiling/javascript-memory.md).
+The JavaScript Memory tool is similar to the Memory Usage tool available for other app types. You can use this tool to understand memory usage and find memory leaks in your app. For more details about the tool, see [JavaScript Memory](../profiling/javascript-memory.md).
 
-![Средство профилирования — память JavaScript](../profiling/media/diagjsmemory.png "Диалоговое окно "Память JavaScript"")
+![JavaScript Memory profiling tool](../profiling/media/diagjsmemory.png "DiagJSMemory")
 
-Для диагностики скорости отклика пользовательского интерфейса, медленной загрузки и медленных визуальных обновлений в универсальных приложениях HTML Windows используйте средство "Скорость реагирования пользовательского интерфейса HTML". Это средство аналогично инструменту "Временная шкала приложения" для других типов приложений. Дополнительные сведения см. в разделе [Скорость реагирования пользовательского интерфейса HTML](../profiling/html-ui-responsiveness.md).
+To diagnose UI responsiveness, slow loading time, and slow visual updates in Windows Universal HTML apps, use the HTML UI Responsiveness tool. Usage is similar to the Application Timeline tool for other app types. For more information, see [HTML UI responsiveness](../profiling/html-ui-responsiveness.md).
 
-![Средство профилирования — скорость реагирования пользовательского интерфейса HTML](../profiling/media/diaghtmlresp.png "Диалоговое окно "Скорость реагирования пользовательского интерфейса HTML"")
+![HTML UI Responsiveness profiling tool](../profiling/media/diaghtmlresp.png "DiagHTMLResp")
 
-## <a name="analyze-network-usage-uwp"></a>Анализ использования сети (UWP)
+## <a name="analyze-network-usage-uwp"></a>Analyze Network Usage (UWP)
 
-В приложениях UWP можно анализировать выполняемые сетевые операции с помощью API `Windows.Web.Http`. Это средство может помочь устранить такие проблемы, как ошибки доступа и проверки подлинности, неправильное использование кэша и никакая производительность отображения и скорости загрузки. Чтобы использовать это средство, выберите **Сеть** в профилировщике производительности и нажмите кнопку **Запустить**. В приложении выполните нужные действия, где используется `Windows.Web.Http`, а затем щелкните **Остановка сбора**, чтобы создать отчет.
+In UWP apps, you can analyze network operations performed using the `Windows.Web.Http` API.This tool may help you to resolve issues like access and authentication problems, incorrect cache-use, and poor display and download performance. To use the tool, choose **Network** in the Performance Profiler, and then choose **Start**. In your app, go through the scenario that uses `Windows.Web.Http`, and then choose **Stop collection** to generate the report.
 
-![Средство профилирования — использование сети](~/profiling/media/prof-tour-network-usage.png "Диалоговое окно "Использование сети"")
+![Network Usage profiling tool](../profiling/media/prof-tour-network-usage.png "Diag Network Usage")
 
-Выберите операцию в представлении "Сводка", чтобы просмотреть более подробные сведения.
+Select an operation in the summary view to view more details.
 
-![Подробные сведения в средстве профилирования сети](~/profiling/media/prof-tour-network-usage-details.png "Окно с подробными сведениями об использовании сети")
+![Detailed information in the Network Usage tool](../profiling/media/prof-tour-network-usage-details.png "Diag Network Usage Details")
 
-Дополнительные сведения см. в разделе [Использование сети](../profiling/network-usage.md).
+For more information, see [Network Usage](../profiling/network-usage.md).
 
-## <a name="analyze-performance-legacy-tools"></a>Анализ производительности (устаревшие инструменты)
+## <a name="analyze-performance-legacy-tools"></a>Analyze Performance (Legacy Tools)
 
-Если требуются функции, которые в настоящее время отсутствуют в средствах "Загрузка ЦП" или "Использование памяти", и вы работаете с классическими приложениями или приложениями ASP.NET, воспользуйтесь обозревателем производительности, поддерживающем профилирование. (Не поддерживается в приложениях UWP). Дополнительные сведения см. в разделе [Обозреватель производительности](../profiling/performance-explorer.md).
+If you need features such as instrumentation that are not currently present in CPU Usage or Memory Usage tools, and you are running desktop or ASP.NET apps, you can use the Performance Explorer for profiling. (Not supported in UWP apps). For more info, see [Performance Explorer](../profiling/performance-explorer.md)
 
-![Средство "Обозреватель производительности"](~/profiling/media/prof-tour-performance-explorer.png "Обозреватель производительности")
+![Performance Explorer tool](../profiling/media/prof-tour-performance-explorer.png "Performance Explorer")
 
-## <a name="which-tool-should-i-use"></a>Какие средства следует использовать?  
-Ниже приведена таблица со списком различных средств, предлагаемых в Visual Studio, и различных типов проектов, в которых эти средства можно использовать.
+## <a name="which-tool-should-i-use"></a>Which Tool Should I Use?  
+Here is a table that lists the different tools Visual Studio offers and the different project types you can use them with:
   
-|Средство производительности|Классические приложения Windows|Универсальные приложения Windows или приложения Магазина Windows|ASP.NET/ASP.NET Core|  
+|Performance Tool|Windows desktop|Windows Universal/Store|ASP.NET/ASP.NET Core|  
 |----------------------|---------------------|------------------------------|-------------|  
-|[Использование памяти](../profiling/memory-usage.md)|да|да|да|  
-|[Использование ЦП](../profiling/cpu-usage.md)|да|да|да|  
-|[Использование GPU](../debugger/gpu-usage.md)|да|да|нет|  
-|[Временная шкала приложения](../profiling/application-timeline.md)|да|да|нет|  
-|[PerfTips](../profiling/perftips.md)|да|да для XAML, нет для HTML|да|  
-|[Обозреватель производительности](../profiling/performance-explorer.md)|да|нет|да (нет для ASP.NET Core)|  
-|[IntelliTrace](../debugger/intellitrace.md)|Только .NET Enterprise|Только .NET Enterprise|Только .NET Enterprise|
-|[Использование сети](../profiling/network-usage.md)|нет|да|нет| 
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|нет|да для HTML, нет для XAML|нет|  
-|[Память JavaScript](../profiling/javascript-memory.md)|нет|да для HTML, нет для XAML|нет|  
+|[Memory Usage](../profiling/memory-usage.md)|yes|yes|yes|  
+|[CPU Usage](../profiling/cpu-usage.md)|yes|yes|yes|  
+|[GPU Usage](../debugger/gpu-usage.md)|yes|yes|no|  
+|[Application Timeline](../profiling/application-timeline.md)|yes|yes|no|  
+|[PerfTips](../profiling/perftips.md)|yes|yes for XAML, no for HTML|yes|  
+|[Performance Explorer](../profiling/performance-explorer.md)|yes|no|yes (no for ASP.NET Core)|  
+|[IntelliTrace](../debugger/intellitrace.md)|.NET Enterprise only|.NET Enterprise only|.NET Enterprise only|
+|[Network Usage](../profiling/network-usage.md)|no|yes|no| 
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|no|yes for HTML, no for XAML|no|  
+|[JavaScript Memory](../profiling/javascript-memory.md)|no|yes for HTML, no for XAML|no|  
 
-## <a name="see-also"></a>См. также  
- [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)
+## <a name="see-also"></a>See Also  
+ [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)

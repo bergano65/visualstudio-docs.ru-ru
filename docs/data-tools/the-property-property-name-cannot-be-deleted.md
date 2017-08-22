@@ -1,34 +1,53 @@
 ---
-title: "Не удается удалить свойство &lt;имя свойства&gt; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: The property &lt;property name&gt; cannot be deleted | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 55873f74-7834-4ec1-8815-eeeb65618d87
 caps.latest.revision: 2
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
-caps.handback.revision: 2
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: feae56294e98e67634cad7afa24ba22ad155412d
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/22/2017
+
 ---
-# Не удается удалить свойство &lt;имя свойства&gt;
-Свойство \<имя свойства\> не может быть удалено, поскольку оно задано в качестве дискриминатора наследования между \<имя класса\> и \<имя класса\>.  
+# <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>The property &lt;property name&gt; cannot be deleted
+The property \<property name> cannot be deleted because it is set as the **Discriminator Property** for the inheritance between \<class name> and \<class name>  
   
- Выбранное свойство имеет значение **Свойство дискриминатора** для наследования между классами, указанными в сообщении об ошибке.Свойства не могут быть удалены, если они участвуют в конфигурации наследования между классами данных.  
+ The selected property is set as the **Discriminator Property** for the inheritance between the classes indicated in the error message. Properties cannot be deleted if they are participating in the inheritance configuration between data classes.  
   
- Установите **Свойство дискриминатора** другое свойство класса данных, чтобы дать возможность успешного удаления нужного свойства.  
+ Set the **Discriminator Property** to a different property of the data class to enable successful deletion of the desired property.  
   
-### Исправление этой ошибки  
+### <a name="to-correct-this-error"></a>To correct this error  
   
-1.  В реляционном конструкторе объектов выберите линию наследования, которая подключает классы данных, указанные в сообщении об ошибке.  
+1.  In the O/R Designer, select the inheritance line that connects the data classes indicated in the error message.  
   
-2.  Задайте свойству **Дискриминатор** другое свойство.  
+2.  Set the **Discriminator** Property to a different property.  
   
-3.  Попытайтесь снова удалить свойство.  
+3.  Try to delete the property again.  
   
-## См. также  
- [Как настроить наследование с использованием реляционного конструктора объектов](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)   
- [Наследование классов данных \(реляционный конструктор объектов\)](../data-tools/data-class-inheritance-o-r-designer.md)   
- [Пошаговое руководство. Создание классов LINQ to SQL с помощью однотабличного наследования \(реляционный конструктор объектов\)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)
+## <a name="see-also"></a>See Also  
+ [How to: Configure inheritance by using the O/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)   
+ [Data class inheritance (O/R Designer)](../data-tools/data-class-inheritance-o-r-designer.md)   
+ [Walkthrough: Creating LINQ to SQL Classes by Using Single-Table Inheritance (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)

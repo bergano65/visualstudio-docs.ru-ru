@@ -1,51 +1,70 @@
 ---
-title: "Как добавить проверку в классы сущностей | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'How to: Add validation to entity classes | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
 caps.latest.revision: 3
-caps.handback.revision: 1
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 25df2b3849a0cb18ec15a0fde2798e36c829a8da
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/22/2017
+
 ---
-# Как добавить проверку в классы сущностей
-*Проверка* классов сущностей представляет собой процесс подтверждения того, что значения, вводимые в объекты данных, соответствуют ограничениям в схеме объекта, а также правилам, установленным для приложения.Проверка данных перед отправкой обновлений в основную базы данных рекомендуется, это уменьшает количество ошибок.Это также уменьшает потенциальное количество циклов передачи между приложением и базой данных.  
+# <a name="how-to-add-validation-to-entity-classes"></a>How to: Add validation to entity classes
+*Validating* entity classes is the process of confirming that the values entered into data objects comply with the constraints in an object's schema, and also to the rules established for the application. Validating data before you send updates to the underlying database is a good practice that reduces errors. It also reduces the potential number of round trips between an application and the database.  
   
- [Реляционный конструктор объектов](../data-tools/linq-to-sql-tools-in-visual-studio2.md) обеспечивает частичные методы, которые дают возможность пользователям расширять сгенерированный проектировщиком код, который выполняется во время выполнения Вставок, Обновлений и Удалений из завершенных сущностей, а также во время и после отдельных изменений столбца.  
+ The [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) provides partial methods that enable users to extend the designer-generated code that runs during Inserts, Updates, and Deletes of complete entities, and also during and after individual column changes.  
   
 > [!NOTE]
->  В этом разделе описаны основные этапы добавления проверки в классы сущностей с помощью [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].Поскольку могло бы быть трудно следовать этим универсальным шагам, не обращаясь к определенному классу сущностей, было предоставлено пошаговое руководство, которое использует реальные данные.Подробные пошаговые инструкции для конфигурирования проверки с использованием [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] см. в [Пошаговое руководство. Добавление проверки в классы сущностей](../Topic/Walkthrough:%20Adding%20Validation%20to%20Entity%20Classes.md).  
+>  This topic provides the basic steps for adding validation to entity classes by using the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. Because it might be difficult to follow these generic steps without referring to a specific entity class, a walkthrough that uses actual data has been provided.  
   
-## Добавление проверки для изменений данных в отдельном столбце  
- В этой процедуре показывается, как проверять данные при изменении значений в столбцах.Поскольку проверка выполняется в внутри определения класса \(а не в интерфейсе пользователя\), вызывается исключение, если значение не проходит проверку.Реализуйте обработку ошибок для кода в приложении, которое пытается изменять значения столбцов.  
+## <a name="adding-validation-for-changes-to-the-value-in-a-specific-column"></a>Adding Validation for Changes to the Value in a Specific Column  
+ This procedure shows how to validate data when the value in a column changes. Because the validation is performed inside the class definition (instead of in the user interface) an exception is thrown if the value causes validation to fail. Implement error handling for the code in your application that attempts to change the column values.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-#### Для проверки данных при изменении значений столбца  
+#### <a name="to-validate-data-during-a-columns-value-change"></a>To validate data during a column's value change  
   
-1.  Откройте или создайте новый файл классов LINQ to SQL Classes \(**.dbml**\) в [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].\(Дважды щелкните по файлу **.dbml** в **Обозревателе решений**.\)  
+1.  Open or create a new LINQ to SQL Classes file (**.dbml** file) in the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. (Double-click the **.dbml** file in **Solution Explorer**.)  
   
-2.  В реляционном конструкторе объектов щелкните правой кнопкой мыши по классу, для которого вы хотите добавить проверку, после чего щелкните по **Просмотр кода**.  
+2.  In the O/R Designer, right-click the class for which you want to add validation and then click **View Code**.  
   
-     Открывается Редактор кода с разделяемым классом для выбранного класса сущностей.  
+     The Code Editor opens with a partial class for the selected entity class.  
   
-3.  Поместите курсор в разделяемый класс.  
+3.  Place the cursor in the partial class.  
   
-4.  Для проектов Visual Basic:  
+4.  For Visual Basic projects:  
   
-    1.  Разверните список **Имя метода** list.  
+    1.  Expand the **Method Name** list.  
   
-    2.  Найдите метод **On***COLUMNNAME***Changing** для столбца, в который требуется добавить проверку.  
+    2.  Locate the **On*COLUMNNAME*Changing** method for the column you want to add validation to.  
   
-    3.  Метод `On`*COLUMNNAME*`Changing` добавляется в разделяемый класс.  
+    3.  An `On`*COLUMNNAME*`Changing` method is added to the partial class.  
   
-    4.  Добавьте следующий код, чтобы сначала убедиться, что значение было введено, и потом, чтобы гарантировать, что введенное значение для столбца приемлемо для приложения:Аргумент `value` содержит предложенное значение, так что добавьте логику, чтобы подтвердить, что это — допустимое значение:  
+    4.  Add the following code to first verify that a value has been entered and then to ensure that the value entered for the column is acceptable for your application. The `value` argument contains the proposed value, so add logic to confirm that it is a valid value:  
   
         ```vb#  
         If value.HasValue Then  
@@ -56,11 +75,11 @@ manager: "ghogen"
         End If  
         ```  
   
-     Для проектов C\#:  
+     For C# projects:  
   
-    1.  Поскольку проекты C\# автоматически не генерируют обработчики событий, то можно использовать IntelliSense для создания изменяющие столбец разделяемые методы.  
+    1.  Because C# projects do not automatically generate the event handlers, you can use IntelliSense to create the column-changing partial methods.  
   
-         Введите `partial` и потом пространство для доступа к списку доступных разделяемых методов.Щелкните изменяющий метод для столбца, для которого вы хотите добавить проверку.Следующий код напоминает код, который генерируется, когда выбирается изменяющий столбец разделяемый метод:  
+         Type `partial` and then a space to access the list of available partial methods. Click the column-changing method for the column you want to add validation for. The following code resembles code that is generated when you select a column-changing partial method:  
   
         ```c#  
         partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)  
@@ -70,31 +89,31 @@ manager: "ghogen"
   
         ```  
   
-## Добавление проверки для обновлений в класс сущностей.  
- В дополнение к проверке значений во время изменений можно проверить правильность данных, когда осуществляется попытка обновить завершенный класс сущностей.Проверка во время предпринятого обновления позволяет сравнить значения в нескольких столбцах, если бизнес\- правила требуют этого.В следующей процедуре показано, как осуществлять проверку, когда осуществляется попытка обновить завершенный класс сущностей.  
+## <a name="adding-validation-for-updates-to-an-entity-class"></a>Adding Validation for Updates to an Entity Class  
+ In addition to checking values during changes, you can also validate data when an attempt is made to update a complete entity class. Validation during an attempted update enables you to compare values in multiple columns if business rules require this. The following procedure shows how to validate when an attempt is made to update a complete entity class.  
   
 > [!NOTE]
->  Код проверки для обновлений в полных классах сущностей выполняется в разделяемом классе <xref:System.Data.Linq.DataContext>, а не в разделяемом классе заданного класса сущности.  
+>  Validation code for updates to complete entity classes is executed in the partial <xref:System.Data.Linq.DataContext> class (instead of in the partial class of a specific entity class).  
   
-#### Для добавления проверки во время обновления в классе сущностей  
+#### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>To validate data during an update to an entity class  
   
-1.  Откройте или создайте новый файл классов LINQ to SQL Classes \(**.dbml**\) в [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].\(Дважды щелкните по файлу **.dbml** в **Обозревателе решений**.\)  
+1.  Open or create a new LINQ to SQL Classes file (**.dbml** file) in the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. (Double-click the **.dbml** file in **Solution Explorer**.)  
   
-2.  В реляционном конструкторе объектов щелкните правой кнопкой мыши по пустой области и выберите пункт **Просмотр кода**.  
+2.  Right-click an empty area on the O/R Designer and click **View Code**.  
   
-     Открывается Редактор кода с разделяемым классом для `DataContext`.  
+     The Code Editor opens with a partial class for the `DataContext`.  
   
-3.  Поместите курсор в разделяемый класс для `DataContext`.  
+3.  Place the cursor in the partial class for the `DataContext`.  
   
-4.  Для проектов Visual Basic:  
+4.  For Visual Basic projects:  
   
-    1.  Разверните список **Имя метода** list.  
+    1.  Expand the **Method Name** list.  
   
-    2.  Нажмите кнопку **Обновить***ENTITYCLASSNAME*.  
+    2.  Click **Update***ENTITYCLASSNAME*.  
   
-    3.  Метод `Update`*ENTITYCLASSNAME* добавляется в разделяемый класс.  
+    3.  An `Update`*ENTITYCLASSNAME* method is added to the partial class.  
   
-    4.  Обратитесь к отдельным значениям в столбце, используя аргумент `instance`, как показано в следующем коде:  
+    4.  Access individual column values by using the `instance` argument, as shown in the following code:  
   
         ```vb#  
         If (instance.COLUMNNAME = x) And (instance.COLUMNNAME = y) Then  
@@ -103,11 +122,11 @@ manager: "ghogen"
         End If  
         ```  
   
-     Для проектов C\#:  
+     For C# projects:  
   
-    1.  Поскольку проекты C\# автоматически не создают обработчиков событий, то вы можете использовать технологию IntelliSense для создания метода частичного обновления `Update`*CLASSNAME*.  
+    1.  Because C# projects do not automatically generate the event handlers, you can use IntelliSense to create the partial `Update`*CLASSNAME* method.  
   
-    2.  Введите `partial` и потом пространство для доступа к списку доступных разделяемых методов.Щелкните метод обновления для класса, для которого вы хотите добавить проверку.Следующий код напоминает код, который создается при выборе разделяемого метода `Update`*CLASSNAME*:  
+    2.  Type `partial` and then a space to access the list of available partial methods. Click the update method for the class you want to add validation for. The following code resembles code that is generated when you select an `Update`*CLASSNAME* partial method:  
   
         ```c#  
         partial void UpdateCLASSNAME(CLASSNAME instance)  
@@ -120,7 +139,7 @@ manager: "ghogen"
         }  
         ```  
   
-## См. также  
- [Реляционный конструктор объектов](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)   
- [Проверка данных](../Topic/Validating%20Data.md)
+## <a name="see-also"></a>See Also  
+ [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
+ [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
+ [Validating Data](validate-data-in-datasets.md)

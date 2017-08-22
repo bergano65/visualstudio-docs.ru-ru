@@ -1,226 +1,244 @@
 ---
-title: "Отладка одного или нескольких процессов в Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.programs"
-  - "vs.debug.processes.attaching"
-  - "vs.debug.activeprogram"
-  - "vs.debug.attaching"
-  - "vs.debug.attachedprocesses"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: Debug Multiple Processes | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.programs
+- vs.debug.processes.attaching
+- vs.debug.activeprogram
+- vs.debug.attaching
+- vs.debug.attachedprocesses
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: bde37134-66af-4273-b02e-05b3370c31ab
 caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
----
-# Отладка одного или нескольких процессов в Visual Studio
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 0acc1dc2ec66758d827d7acbc9c04538dfcb3882
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/22/2017
 
-Ниже описаны способы запуска отладки процессов, переключения между процессами, приостановки и возобновления выполнения, пошагового выполнения исходного кода, остановки отладки, а также отсоединения от процессов или прекращения их работы.  
+---
+# <a name="debug-multiple-processes"></a>Debug Multiple Processes
+Here's how to start debugging processes, switch between processes, break and continue execution, step through source, stop debugging, and terminate or detach from processes.  
   
-##  <a name="BKMK_Contents"></a> Описание  
- [Настройка поведения выполнения нескольких процессов](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
+##  <a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a> Configure the execution behavior of multiple processes  
+ By default, when multiple processes are running in the debugger, the breaking, stepping, and stopping debugger commands usually affect all the processes. For example, when one process is suspended at a breakpoint, the execution of all other processes is also suspended. You can change this default behavior to gain more control over the targets of execution commands.  
   
- [Поиск исходных файлов и файлов символов (.pdb)](#BKMK_Find_the_source_and_symbol___pdb__files)  
+1.  Click **Debug > Options and Settings**.  
   
- [Запуск нескольких процессов в решении VS, присоединение к процессу, автоматический запуск процесса в отладчике](#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
+2.  On the **Debugging**, **General** page, clear the **Break all processes when one process breaks** check box.  
   
- [Переключение процессов, приостановка и продолжение выполнения, пошаговое выполнение исходного кода](#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
   
- [Остановка отладки, окончание или отсоединение от процессов](#BKMK_Stop_debugging__terminate_or_detach_from_processes)  
+##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Find the source and symbol (.pdb) files  
+ To navigate the source code of a process, the debugger needs access to the source files and symbol files of the process. See [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
-##  <a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a> Настройка поведения выполнения нескольких процессов  
- Когда в отладчике запущено одновременно несколько процессов, команды приостановки выполнения и пошагового выполнения, а также остановка команд отладчика по умолчанию влияют на все процессы.  Например, когда один процесс приостанавливается в точке останова, выполнение всех остальных процессов также приостанавливается.  Можно изменить это принимаемое по умолчанию поведение, чтобы обрести больший контроль над целевыми объектами команд выполнения.  
+ If you can't access the files for a process, you can navigate by using the Disassembly window. See [How to: Use the Disassembly Window](../debugger/how-to-use-the-disassembly-window.md)  
   
-1.  В меню **Отладка** выберите **Параметры и настройки**.  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
   
-2.  На странице **Отладка**, **Общие** снимите флажок **Прерывать все процессы при прерывании одного**.  
+##  <a name="BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger"></a> Start multiple processes in a VS solution, attach to a process, automatically start a process in the debugger  
   
- ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
+-   [Start debugging multiple processes in a Visual Studio solution](#BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution)  
   
-##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Поиск исходных файлов и файлов символов \(.pdb\)  
- Для отображения и пошагового выполнения исходного кода процесса отладчику требуется доступ к исходным файлам и файлам символов процесса.  Подробнее см. раздел [Указание файлов символов \(.pdb\) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+-   [Change the startup project](#BKMK_Change_the_startup_project)  
   
- Если не удается получить доступ к файлам процесса, для перемещения по коду можно воспользоваться окном "Дизассемблирование".  См. раздел [Практическое руководство. Использование окна дизассемблирования](../debugger/how-to-use-the-disassembly-window.md).  
+-   [Start a specific project in a solution](#BKMK_Start_a_specific_project_in_a_solution)  
   
- ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
+-   [Start multiple projects in a solution](#BKMK_Start_multiple_projects_in_a_solution)  
   
-##  <a name="BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger"></a> Запуск нескольких процессов в решении VS, присоединение к процессу, автоматический запуск процесса в отладчике  
+-   [Attach to a process](#BKMK_Attach_to_a_process)  
   
--   [Запуск отладки нескольких процессов в решении Visual Studio](#BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution) • [Смена запускаемого проекта](#BKMK_Change_the_startup_project) • [Запуск конкретного проекта в решении](#BKMK_Start_a_specific_project_in_a_solution) • [Запуск нескольких проектов в решении](#BKMK_Start_multiple_projects_in_a_solution) • [Присоединение к процессу](#BKMK_Attach_to_a_process) • [Автоматический запуск процесса в отладчике](#BKMK_Automatically_start_an_process_in_the_debugger)  
-  
-> [!NOTE]
->  Отладчик не присоединяется автоматически к дочернему процессу, который запущен отлаживаемым процессом, даже если дочерний проект находится в том же решении.  Чтобы отладить дочерний процесс:  
->   
->  -   Присоединитесь к дочернему процессу после того, как он запущен.  
->   
->      \-или\-  
-> -   Настройте параметры Windows таким образом, что дочерний процесс автоматически запускался в новом экземпляре отладчика.  
-  
-###  <a name="BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution"></a> Запуск отладки нескольких процессов в решении Visual Studio  
- Если в решении Visual Studio имеется несколько проектов, которые могут выполняться независимо \(проекты, выполняемые в отдельных процессах\), можно выбрать, какие проекты запускаются отладчиком.  
-  
- ![Изменение типа запуска для проекта](../debugger/media/dbg_execution_startmultipleprojects.png "DBG\_Execution\_StartMultipleProjects")  
-  
-####  <a name="BKMK_Change_the_startup_project"></a> Смена запускаемого проекта  
- Чтобы сменить запускаемый проект для решения, выберите проект в Обозревателе решений, затем выберите пункт **Назначить запускаемым проектом** в контекстном меню.  
-  
-####  <a name="BKMK_Start_a_specific_project_in_a_solution"></a> Запуск конкретного проекта в решении  
- Чтобы запустить проект для решения, не сменяя запускаемый по умолчанию проект, выберите требуемый проект в Обозревателе решений и выберите команду **Отладка** в контекстном меню.  Затем можно выбрать команду **Запустить новый экземпляр** или **Шаг с заходом в новый экземпляр**.  
-  
- ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Запуск нескольких процессов в решении VS, присоединение к процессу, автоматический запуск процесса в отладчике](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
-  
- ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
-  
-####  <a name="BKMK_Start_multiple_projects_in_a_solution"></a> Запуск нескольких проектов в решении  
-  
-1.  В Обозревателе решений выберите решение, затем в контекстном меню выберите **Свойства**.  
-  
-2.  Выберите **Общие свойства**, **Запускаемый проект** в диалоговом окне **Свойства**.  
-  
-3.  Для каждого проекта, который необходимо изменить, выберите **Запустить**, **Запуск без отладки** или **Нет**.  
-  
- ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Запуск нескольких процессов в решении VS, присоединение к процессу, автоматический запуск процесса в отладчике](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
-  
- ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
-  
-###  <a name="BKMK_Attach_to_a_process"></a> Присоединение к процессу  
- Отладчик может также *присоединяться* к программам, выполняемым в процессах вне Visual Studio, включая программы, которые работают на удаленном устройстве.  После присоединения к программе можно использовать команды отладчика, проверять состояние программы и выполнять другие действия.  Возможности проверки программы могут быть ограничены в зависимости от того, была ли программа собрана с отладочной информацией, имеется ли доступ к исходному коду программы, а также отслеживает ли JIT\-компилятор среды CLR отладочную информацию.  
-  
- Дополнительные сведения см. в разделе [Присоединение к выполняемым процессам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
-  
- **Присоединение к процессу, выполняющемуся на локальном компьютере**  
-  
- Выберите **Отладка**, **Присоединиться к процессу**.  В диалоговом окне **Присоединение к процессу** выделите процесс в списке **Доступные процессы** и нажмите кнопку **Присоединиться**.  
-  
- ![Присоединение к процессу &#45; диалоговое окно](../debugger/media/dbg_attachtoprocessdlg.png "DBG\_AttachToProcessDlg")  
-  
- ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
-  
-###  <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> Автоматический запуск процесса в отладчике  
- В некоторых случаях может потребоваться отладить код запуска для программы, которая запускается другим процессом.  К ним относятся службы и действия пользовательской настройки.  В этих случаях можно заставить отладчик запускаться и автоматически присоединяться при запуске приложения.  
-  
-1.  Запустите Редактор реестра \(**regedit.exe**\).  
-  
-2.  Перейдите к папке **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options**.  
-  
-3.  Выберите папку приложения, которое требуется запустить в отладчике.  
-  
-     Если имя приложения не перечислено как дочерняя папка, выберите **Параметры выполнения файла изображения** и затем выберите **Создать**, **Раздел** в контекстном меню.  Выберите новый раздел, в контекстном меню выберите команду **Переименовать**, а затем введите имя приложения.  
-  
-4.  В контекстном меню папки приложения выберите **Создать**, **Строковый параметр**.  
-  
-5.  Поменяйте имя нового значения с **New Value** на `debugger`.  
-  
-6.  В контекстном меню записи "debugger" выберите **Изменить**.  
-  
-7.  В диалоговом окне изменения строкового параметра введите `vsjitdebugger.exe` в поле **Значение**.  
-  
-     ![Диалоговое окно редактирования строки](../debugger/media/dbg_execution_automaticstart_editstringdlg.png "DBG\_Execution\_AutomaticStart\_EditStringDlg")  
-  
- ![Запись автоматического запуска отладчика в regedit.exe](~/debugger/media/dbg_execution_automaticstart_result.png "DBG\_Execution\_AutomaticStart\_Result")  
-  
- ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
-  
-##  <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> Переключение процессов, приостановка и продолжение выполнения, пошаговое выполнение исходного кода  
-  
--   [Переключение между процессами](#BKMK_Switch_between_processes) • [Команды прерывания, пошагового выполнения и продолжения выполнения](#BKMK_Break__step__and_continue_commands)  
-  
-###  <a name="BKMK_Switch_between_processes"></a> Переключение между процессами  
- Во время отладки можно подключиться к нескольким процессам, но в любой момент времени только один из них будет активным в отладчике.  Активный или *текущий* процесс можно выбрать с помощью панели инструментов "Место отладки" или в окне **Процессы**.  Для переключения между процессами оба процесса должны находиться в режиме приостановки выполнения.  
-  
- **Установка текущего процесса**  
-  
--   На панели инструментов "Место отладки" выберите **Процесс**, чтобы отобразить список **Процесс**.  Выберите процесс, который требуется установить в качестве текущего процесса.  
-  
-     ![Переключение между процессами](../debugger/media/dbg_execution_switchbetweenmodules.png "DBG\_Execution\_SwitchBetweenModules")  
-  
-     Если панель инструментов **Место отладки** не отображается, выберите **Сервис**, **Настроить**.  На вкладке **Панели инструментов** выберите **Место отладки**.  
-  
--   Откройте окно **Процессы** \(сочетание клавиш: **Ctrl\+Alt\+Z**\), чтобы найти процесс, который необходимо сделать текущим процессом, и дважды щелкните его.  
-  
-     ![Окно процессов](../debugger/media/dbg_processeswindow.png "DBG\_ProcessesWindow")  
-  
-     Текущий процесс будет отмечен желтой стрелкой.  
-  
- Переключение к проекту делает этот проект текущим процессом для отладки.  Статус текущего процесса отображается в любом используемом окне отладчика, и все команды пошагового выполнения влияют только на текущий процесс.  
-  
- ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Переключение процессов, приостановка и продолжение выполнения, пошаговое выполнение исходного кода](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
-  
- ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
-  
-###  <a name="BKMK_Break__step__and_continue_commands"></a> Команды прерывания, пошагового выполнения и продолжения выполнения  
+-   [Automatically start a process in the debugger](#BKMK_Automatically_start_an_process_in_the_debugger)  
   
 > [!NOTE]
->  По умолчанию предусмотренные в отладчике команды прерывания, продолжения и пошагового выполнения влияют на все отлаживаемые в данный момент процессы.  Чтобы изменить это поведение, см. подраздел [Настройка поведения выполнения нескольких процессов](#BKMK_Configure_the_execution_behavior_of_multiple_processes).  
+>  The debugger does not automatically attach to a child process that is started by a debugged process, even if the child project is in the same solution. To debug a child process:  
+>   
+>  -   Attach to the child process after it has been started.  
+>   
+>      -or-  
+> -   Configure Windows to automatically start the child process in a new instance of the debugger.  
+  
+###  <a name="BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution"></a> Start debugging multiple processes in a Visual Studio solution  
+ When you have more than one project in a Visual Studio solution that can run independently (projects that run in separate processes), you can select which projects the debugger starts.  
+  
+ ![Changing the startup type for a project](../debugger/media/dbg_execution_startmultipleprojects.png "DBG_Execution_StartMultipleProjects")  
+  
+####  <a name="BKMK_Change_the_startup_project"></a> Change the startup project  
+ To change the startup project for a solution, select the project in Solution Explorer and then choose **Set as Startup Project** from the context menu.  
+  
+####  <a name="BKMK_Start_a_specific_project_in_a_solution"></a> Start a specific project in a solution  
+ To start a project for a solution without changing the default startup project, select the project in Solution Explorer and then choose **Debug** from the context menu. You can then choose **Start new instance** or **Step Into new instance**.  
+  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Start multiple processes in a VS solution, attach to a process, automatically start a process in the debugger](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
+  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
+  
+####  <a name="BKMK_Start_multiple_projects_in_a_solution"></a> Start multiple projects in a solution  
+  
+1.  Select the solution in Solution Explorer and then choose **Properties** on the context menu.  
+  
+2.  Select **Common Properties**, **Startup Project** on the **Properties** dialog box.  
+  
+3.  For each project that you want to change, choose either **Start**, **Start without debugging**, or **None**.  
+  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Start multiple processes in a VS solution, attach to a process, automatically start a process in the debugger](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
+  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
+  
+###  <a name="BKMK_Attach_to_a_process"></a> Attach to a process  
+ The debugger can also to *attach* to programs that are running in processes outside of Visual Studio, including programs that are running on a remote device. After you attach to a program, you can use debugger execution commands, inspect the program state, and so on. Your ability to inspect the program might be limited, depending on whether the program was built with debug information and whether you have access to the program's source code, and whether the common language runtime JIT compiler is tracking debug information.  
+  
+ See [Attach to Running Processes](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) for more information.  
+  
+ **Attach to a process that is running on your local machine**  
+  
+ Click **Debug > Attach to Process**. On the **Attach to Process** dialog box, select the process from the **Available Processes** list, and then choose **Attach**.  
+  
+ ![Attach to Process dialog box](../debugger/media/dbg_attachtoprocessdlg.png "DBG_AttachToProcessDlg")  
+  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
+  
+###  <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> Automatically start a process in the debugger  
+ Sometimes, you might need to debug the startup code for a program that is launched by another process. Examples include services and custom setup actions. In these scenarios, you can have the debugger launch and automatically attach when your application starts.  
+  
+1.  Start the Registry Editor (**regedit.exe**).  
+  
+2.  Navigate to the **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options** folder.  
+  
+3.  Select the folder of the app that you want to start in the debugger.  
+  
+     If the name of the app is not listed as a child folder, select **Image File Execution Options** and then choose **New**, **Key** on the context menu. Select the new key, choose **Rename** on the shortcut menu, and then enter the name of the app.  
+  
+4.  On the context menu of the app folder, choose **New**, **String Value**.  
+  
+5.  Change the name of the new value from **New Value** to `debugger`.  
+  
+6.  On the context menu of the debugger entry, choose **Modify**.  
+  
+7.  On the Edit String dialog box, type `vsjitdebugger.exe` in the **Value data** box.  
+  
+     ![Edit String dialog box](../debugger/media/dbg_execution_automaticstart_editstringdlg.png "DBG_Execution_AutomaticStart_EditStringDlg")  
+  
+ ![Automatic debugger start entry in regedit.exe](../debugger/media/dbg_execution_automaticstart_result.png "DBG_Execution_AutomaticStart_Result")  
+  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
+  
+##  <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> Switch processes, break and continue execution, step through source  
+  
+-   [Switch between processes](#BKMK_Switch_between_processes)  
+  
+-   [Break, step, and continue commands](#BKMK_Break__step__and_continue_commands)  
+  
+###  <a name="BKMK_Switch_between_processes"></a> Switch between processes  
+ You can attach to multiple processes when you are debugging, but only one process is active in the debugger at any given time. You can set the active or *current* process in the Debug Location toolbar or in the **Processes** window. To switch between processes, both processes must be in break mode.  
+  
+ **To set the current process**  
+  
+-   On the Debug Location toolbar, choose **Process** to view the **Process** list box. Select the process that you want to designate as current process.  
+  
+     ![Switch between processes](../debugger/media/dbg_execution_switchbetweenmodules.png "DBG_Execution_SwitchBetweenModules")  
+  
+     If the **Debug Location** toolbar is not visible, choose **Tools**, **Customize**. On the **Toolbars** tab, choose **Debug Location**.  
+  
+-   Open the **Processes** window (shortcut **Ctrl+Alt+Z**), find the process that you want to set as the current process, and double-click it.  
+  
+     ![Processes window](../debugger/media/dbg_processeswindow.png "DBG_ProcessesWindow")  
+  
+     The current process is marked by a yellow arrow.  
+  
+ Switching to a project sets it the current process for debugging purposes. Any debugger window that you view will show the state for the current process, and all stepping commands affect only the current process.  
+  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Switch processes, break and continue execution, step through source](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
+  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
+  
+###  <a name="BKMK_Break__step__and_continue_commands"></a> Break, step, and continue commands  
+  
+> [!NOTE]
+>  By default, the break, continue and step debugger commands affect all processes that are being debugged. To change this behavior, see [Configure the execution behavior of multiple processes](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
   
 ||||  
 |-|-|-|  
-|**Команда**|**Прерывать все процессы при прерывании одного**<br /><br /> Флажок установлен \(по умолчанию\)|**Прерывать все процессы при прерывании одного**<br /><br /> Флажок снят|  
-|Меню **Отладка**:<br /><br /> -   **Прервать все**|Все процессы приостанавливаются.|Все процессы приостанавливаются.|  
-|Меню **Отладка**:<br /><br /> -   **Continue**|Все процессы возобновляются.|Все приостановленные процессы возобновляются.|  
-|Меню **Отладка**:<br /><br /> -   **Шаг с заходом**<br />-   **Шаг с обходом**<br />-   **Шаг с выходом**|Во время выполнения шага текущего процесса все процессы выполняются.<br /><br /> Затем все процессы приостанавливаются.|Текущий процесс выполняется пошагово.<br /><br /> Приостановленные процессы возобновляются.<br /><br /> Выполняемые процессы продолжают выполняться.|  
-|Меню **Отладка**:<br /><br /> -   **Шаг с заходом \(только текущий процесс\)**<br />-   **Шаг с обходом \(только текущий процесс\)**<br />-   **Шаг с выходом \(только текущий процесс\)**|Недоступно|Текущий процесс выполняется пошагово.<br /><br /> Остальные процессы сохраняют свое текущее состояние \(остаются приостановленными или продолжают выполняться\).|  
-|Окна исходного кода.<br /><br /> -   **Точка останова**|Все процессы приостанавливаются.|Приостанавливается только процесс окна исходного кода.|  
-|Контекстное меню окна исходного кода:<br /><br /> -   **Выполнить до текущей позиции**<br /><br /> Окно исходного кода должно находиться в текущем процессе.|Все процессы выполняются, а процесс в окне исходного кода выполняется до курсора и приостанавливается.<br /><br /> После этого приостанавливаются все остальные процессы.|Процесс в окне исходного кода выполняется до курсора.<br /><br /> Остальные процессы сохраняют свое текущее состояние \(остаются приостановленными или продолжают выполняться\).|  
-|Контекстное меню окна **Процессы**:<br /><br /> -   **Остановить процесс**|Недоступно|Выбранный процесс приостанавливается.<br /><br /> Остальные процессы сохраняют свое текущее состояние \(остаются приостановленными или продолжают выполняться\).|  
-|Контекстное меню окна **Процессы**:<br /><br /> -   **Продолжить процесс**|Недоступно|Выбранный процесс возобновляется.<br /><br /> Остальные процессы сохраняют свое текущее состояние \(остаются приостановленными или продолжают выполняться\).|  
+|**Command**|**Break all processes when one process breaks**<br /><br /> Checked (Default)|**Break all processes when one process breaks**<br /><br /> Cleared|  
+|**Debug** menu:<br /><br /> -   **Break All**|All processes break.|All processes break.|  
+|**Debug** menu:<br /><br /> -   **Continue**|All processes resume.|All suspended processes resume.|  
+|**Debug** menu:<br /><br /> -   **Step Into**<br />-   **Step Over**<br />-   **Step Out**|All processes run while current process steps.<br /><br /> Then all processes break.|Current process steps.<br /><br /> Suspended processes resume.<br /><br /> Running processes continue.|  
+|**Debug** menu:<br /><br /> -   **Step Into Current Process**<br />-   **Step Over Current Process**<br />-   **Step Out Current Process**|N/A|Current process steps.<br /><br /> Other processes maintain their existing state (suspended or running).|  
+|Source window<br /><br /> -   **Breakpoint**|All processes break.|Only source window process breaks.|  
+|Source window context menu:<br /><br /> -   **Run to cursor**<br /><br /> The source window must be in the current process.|All processes run while source window process runs to cursor and then breaks.<br /><br /> Then all other processes break.|Source window process runs to cursor.<br /><br /> Other processes maintain their existing state (suspended or running).|  
+|**Processes** window context menu:<br /><br /> -   **Break Process**|N/A|Selected process breaks.<br /><br /> Other processes maintain their existing state (suspended or running).|  
+|**Processes** window context menu:<br /><br /> -   **Continue  Process**|N/A|Selected process resumes.<br /><br /> Other processes maintain their existing state (suspended or running).|  
   
- ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Переключение процессов, приостановка и продолжение выполнения, пошаговое выполнение исходного кода](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Switch processes, break and continue execution, step through source](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
   
- ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
   
-##  <a name="BKMK_Stop_debugging__terminate_or_detach_from_processes"></a> Остановка отладки, окончание или отсоединение от процессов  
+##  <a name="BKMK_Stop_debugging__terminate_or_detach_from_processes"></a> Stop debugging, terminate or detach from processes  
   
--   [Команды остановки, окончания и отсоединения](#BKMK_Stop__terminate__and_detach_commands)  
+-   [Stop, terminate, and detach commands](#BKMK_Stop__terminate__and_detach_commands)  
   
- Когда в отладчике одновременно открыто несколько процессов, команда **Отладка**, **Остановить отладку** по умолчанию приводит к остановке или отсоединению от всех процессов в зависимости от того, каким образом тот или иной процесс был открыт в отладчике.  
+ By default, when you choose **Debug**, **Stop Debugging** when multiple processes are open in the debugger, the debugger terminates or detaches from all processes depending on how the process was opened in the debugger:  
   
--   Если текущий процесс был запущен в отладчике, этот процесс завершается.  
+-   If the current process was launched in the debugger, that process is terminated.  
   
--   Если отладчик был присоединен к текущему процессу, отладчик отсоединяется от процесса, не прекращая его выполнение.  
+-   If you attached the debugger to the current process, the debugger detaches from the process and leaves the process running.  
   
- Например, если запустить отладку некоторого процесса из решения Visual Studio, затем присоединить отладчик к другому процессу, который уже выполняется, после чего выбрать **Остановить отладку**, произойдет следующее: сеанс отладки завершится; процесс, который был запущен в Visual Studio, также завершится; присоединенный процесс продолжит выполняться.  Действие команды остановки отладки можно индивидуально задать для каждого процесса с помощью описанной ниже процедуры.  
+ For example, if you start debugging a process from a Visual Studio solution, attach to another process that is already running, and then choose **Stop Debugging**, the debugging session ends, the process that was started in Visual Studio is terminated, while the process that you attached is left running. You can use the following procedures to control the way that you stop debugging.  
   
 > [!NOTE]
->  Параметр **Прерывать все процессы при прерывании одного** не влияет на поведение остановки отладки, завершения процессов и отсоединения от процессов.  
+>  The **Break all processes when one process breaks** option does not affect stopping debugging or terminating and detaching from processes.  
   
- **Изменение влияния команды "Остановить отладку" на отдельный процесс**  
+ **To change how Stop Debugging affects an individual process**  
   
--   Откройте окно **Процессы** \(сочетание клавиш: **Ctrl\+Alt\+Z**\).  Выберите процесс и установите либо снимите флажок **Отсоединиться при остановке отладки**.  
+-   Open the **Processes** window (shortcut **Ctrl+Alt+Z**). Select a process and then select or clear the **Detach when debugging stopped** check box.  
   
-###  <a name="BKMK_Stop__terminate__and_detach_commands"></a> Команды остановки, окончания и отсоединения  
+###  <a name="BKMK_Stop__terminate__and_detach_commands"></a> Stop, terminate, and detach commands  
   
 |||  
 |-|-|  
-|**Команда**|**Описание**|  
-|Меню **Отладка**:<br /><br /> -   **Остановить отладку**|Если поведение не изменено параметром **Отсоединиться при остановке отладки** окна **Процессы**:<br /><br /> 1.  Процессы, запущенные отладчиком, завершаются.<br />2.  Присоединенные процессы отсоединяются от отладчика.|  
-|Меню **Отладка**:<br /><br /> -   **Завершить все**|Все процессы завершаются.|  
-|Меню **Отладка**:<br /><br /> -   **Отсоединить все**|Отладчик отсоединяется от всех процессов.|  
-|Контекстное меню окна **Процессы**:<br /><br /> -   **Отсоединить процесс**|Отладчик отсоединяется от выбранного процесса.<br /><br /> Остальные процессы сохраняют свое текущее состояние \(остаются приостановленными или продолжают выполняться\).|  
-|Контекстное меню окна **Процессы**:<br /><br /> -   **Завершить процесс**|Выбранный процесс завершается.<br /><br /> Остальные процессы сохраняют свое текущее состояние \(остаются приостановленными или продолжают выполняться\).|  
-|Контекстное меню окна **Процессы**:<br /><br /> -   **Отсоединиться при остановке отладки**|Переключает поведение команды **Отладка**, **Остановить отладку** для выбранного процесса:<br /><br /> -   Флажок установлен: отладчик отсоединяется от процесса.<br />-   Флажок снят: процесс завершается.|  
+|**Command**|**Description**|  
+|**Debug** menu:<br /><br /> -   **Stop Debugging**|Unless the behavior is changed by **Processes** window **Detach when debugging stops** option:<br /><br /> 1.  Processes started by debugger are terminated.<br />2.  Attached processes are detached from the debugger.|  
+|**Debug** menu:<br /><br /> -   **Terminate All**|All processes are terminated.|  
+|**Debug** menu:<br /><br /> -   **Detach All**|The debugger detaches from all processes.|  
+|**Processes** window context menu:<br /><br /> -   **Detach Process**|The debugger detaches from the selected process.<br /><br /> Other processes maintain their existing state (suspended or running).|  
+|**Processes** window context menu:<br /><br /> -   **Terminate Process**|The selected process is terminated.<br /><br /> Other processes maintain their existing state (suspended or running).|  
+|**Processes** window context menu:<br /><br /> -   **Detach when debugging stops**|Toggles the behavior of **Debug**, **Stop Debugging** for the selected process:<br /><br /> -   Checked: The debugger detaches from the process.<br />-   Cleared: The process is terminated.|  
   
- ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Остановка отладки, окончание или отсоединение от процессов](../debugger/debug-multiple-processes.md#BKMK_Stop_debugging__terminate_or_detach_from_processes)  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Stop debugging, terminate or detach from processes](../debugger/debug-multiple-processes.md#BKMK_Stop_debugging__terminate_or_detach_from_processes)  
   
- ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Описание](#BKMK_Contents)  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
   
-## См. также  
- [Указание файлов символов \(.pdb\) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
- [Присоединение к выполняемым процессам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Навигация по коду с помощью отладчика](../debugger/navigating-through-code-with-the-debugger.md)   
- [JIT\-отладка](../debugger/just-in-time-debugging-in-visual-studio.md)   
- [Отладка многопоточных приложений](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+## <a name="see-also"></a>See Also  
+ [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [Attach to Running Processes](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
+ [Navigating through Code with the Debugger](../debugger/navigating-through-code-with-the-debugger.md)   
+ [Just-In-Time Debugging](../debugger/just-in-time-debugging-in-visual-studio.md)   
+ [Debug Multithreaded Applications](../debugger/debug-multithreaded-applications-in-visual-studio.md)

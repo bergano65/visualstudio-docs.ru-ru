@@ -1,5 +1,5 @@
 ---
-title: "Функции свойств | Документы Майкрософт"
+title: Property Functions | Microsoft Docs
 ms.custom: 
 ms.date: 02/21/2017
 ms.reviewer: 
@@ -29,50 +29,50 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
-ms.openlocfilehash: c52ed7c7e6de33d10d2a653a1072766aa9fb8023
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 03b4eba806256f0bc6a37c6639a3a9cc44abd3ae
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/31/2017
+ms.lasthandoff: 08/22/2017
 
 ---
-# <a name="property-functions"></a>Функции свойств
-В версиях 4 и 4.5 платформы .NET Framework можно оценивать скрипты MSBuild с помощью функции свойства. Функции свойства можно использовать во всех случаях, где появляются свойства. В отличие от задач, функции свойства можно использовать за пределами целей и оценивать до запуска целей.  
+# <a name="property-functions"></a>Property Functions
+In the .NET Framework versions 4 and 4.5, property functions can be used to evaluate MSBuild scripts. Property functions can be used wherever properties appear. Unlike tasks, property functions can be used outside of targets, and are evaluated before any target runs.  
 
- Без использования задач MSBuild вы можете читать системное время, сравнивать строки, сопоставлять регулярные выражения и выполнять другие действия в скрипте построения. MSBuild попытается преобразовать строку в число и число в строку и при необходимости выполнит другие преобразования.  
+ Without using MSBuild tasks, you can read the system time, compare strings, match regular expressions, and perform other actions in your build script. MSBuild will try to convert string to number and number to string, and make other conversions as required.  
 
-## <a name="property-function-syntax"></a>Синтаксис функции свойства  
- Существуют три типа функций свойства, каждая из которых имеет свой синтаксис.  
+## <a name="property-function-syntax"></a>Property Function Syntax  
+ These are three kinds of property functions; each function has a different syntax:  
 
--   Функции свойства строки (экземпляра)  
+-   String (instance) property functions  
 
--   Функции статичного свойства  
+-   Static property functions  
 
--   Функции свойства MSBuild  
+-   MSBuild property functions  
 
-### <a name="string-property-functions"></a>Функции свойства строки  
- Все значения свойства построения являются значениями строки. Для управления значением свойства можно использовать методы строки (экземпляра). Например, можно извлечь имя диска (первые три символа) из свойства построения, которое представляет собой полный путь, с помощью следующего кода.  
+### <a name="string-property-functions"></a>String Property Functions  
+ All build property values are just string values. You can use string (instance) methods to operate on any property value. For example, you can extract the drive name (the first three characters) from a build property that represents a full path by using this code:  
 
  `$(ProjectOutputFolder.Substring(0,3))`  
 
-### <a name="static-property-functions"></a>Функции статичного свойства  
- В скрипте построения можно получить доступ к статическим свойствам и методам многих системных классов. Чтобы получить значение статического свойства, используйте следующий синтаксис, где *Class* — это имя системного класса, а *Property* — это имя свойства.  
+### <a name="static-property-functions"></a>Static Property Functions  
+ In your build script, you can access the static properties and methods of many system classes. To get the value of a static property, use the following syntax, where *Class* is the name of the system class and *Property* is the name of the property.  
 
  `$([Class]::Property)`  
 
- Например, чтобы задать свойство построения на текущую дату и время, можно использовать следующий код.  
+ For example, you can use the following code to set a build property to the current date and time.  
 
  `<Today>$([System.DateTime]::Now)</Today>`  
 
- Чтобы вызвать статический метод, используйте следующий синтаксис, где *Class* — это имя системного класса, *Method* — это имя метода, а *(Parameters)* — это список параметров метода.  
+ To call a static method, use the following syntax, where *Class* is the name of the system class, *Method* is the name of the method, and *(Parameters)* is the parameter list for the method:  
 
  `$([Class]::Method(Parameters))`  
 
- Например, чтобы задать свойство построения на новый GUID, можно использовать следующий скрипт.  
+ For example, to set a build property to a new GUID, you can use this script:  
 
  `<NewGuid>$([System.Guid]::NewGuid())</NewGuid>`  
 
- В функциях статического свойства можно использовать любой статический метод или свойство следующих системных классов.  
+ In static property functions, you can use any static method or property of these system classes:  
 
 -   System.Byte  
 
@@ -124,7 +124,7 @@ ms.lasthandoff: 05/31/2017
 
 -   Microsoft.Build.Utilities.ToolLocationHelper  
 
- Кроме этого, можно использовать следующие статические методы и свойства.  
+ In addition, you can use the following static methods and properties:  
 
 -   System.Environment::CommandLine  
 
@@ -160,113 +160,113 @@ ms.lasthandoff: 05/31/2017
 
 -   System.IO.File::ReadAllText  
 
-### <a name="calling-instance-methods-on-static-properties"></a>Вызов методов экземпляра на статических свойствах  
- При доступе к статическому свойству, которое возвращает экземпляр объектов, можно вызывать методы экземпляра этого объекта. Чтобы вызвать метод экземпляра, используйте следующий синтаксис, где *Class* — это имя системного класса, *Property* — это имя свойства, *Method* — это имя метода, а *(Parameters)* — это список параметров метода.  
+### <a name="calling-instance-methods-on-static-properties"></a>Calling Instance Methods on Static Properties  
+ If you access a static property that returns an object instance, you can invoke the instance methods of that object. To invoke an instance method, use the following syntax, where *Class* is the name of the system class, *Property* is the name of the property, *Method* is the name of the method, and *(Parameters)* is the parameter list for the method:  
 
  `$([Class]::Property.Method(Parameters))`  
 
- Имя класса должно содержать полное пространство имен.  
+ The name of the class must be fully qualified with the namespace.  
 
- Например, чтобы задать свойство построения на текущую дату, можно использовать следующий код.  
+ For example, you can use the following code to set a build property to the current date today.  
 
  `<Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>`  
 
-### <a name="msbuild-property-functions"></a>Функции свойства MSBuild  
- Для обеспечения арифметической побитовой логической поддержки escape-символов можно использовать несколько статических методов из вашего построения. Получить доступ к этим методам можно с помощью следующего синтаксиса, где *Method* — это имя метода, а *Parameters* — это список параметров метода.  
+### <a name="msbuild-property-functions"></a>MSBuild Property Functions  
+ Several static methods in your build can be accessed to provide arithmetic, bitwise logical, and escape character support. You access these methods by using the following syntax, where *Method* is the name of the method and *Parameters* is the parameter list for the method.  
 
  `$([MSBuild]::Method(Parameters))`  
 
- Например, чтобы добавить два свойства с числовыми значениями, используйте следующий код.  
+ For example, to add together two properties that have numeric values, use the following code.  
 
  `$([MSBuild]::Add($(NumberOne), $(NumberTwo))`  
 
- Приведем список функций свойства MSBuild.  
+ Here is a list of MSBuild property functions:  
 
-|Подпись функции|Описание|  
+|Function Signature|Description|  
 |------------------------|-----------------|  
-|Сложение double(double a, double b)|Сложение двух значений double.|  
-|Сложение long(long a, long b)|Сложение двух значений long.|  
-|Вычитание double(double a, double b)|Вычитание двух значений double.|  
-|Вычитание long(long a, long b)|Вычитание двух значений long.|  
-|Умножение double(double a, double b)|Умножение двух значений double.|  
-|Умножение long(long a, long b)|Умножение двух значений long.|  
-|Деление double(double a, double b)|Деление двух значений double.|  
-|Деление long(long a, long b)|Деление двух значений long.|  
-|Остаток от деления double (double a, double b)|Остаток от деления двух значений double.|  
-|Остаток от деления long(long a, long b)|Остаток от деления двух значений long.|  
-|строка Escape (строка не экранируется)|Escape-последовательность строки в соответствии с правилами экранирования MSBuild.|  
-|строка Unescape (строка экранируется)|Unescape-последовательность строки в соответствии с правилами экранирования MSBuild.|  
-|Целое значение BitwiseOr(первое целое значение, второе целое значение)|Примените побитовый параметр `OR` к первому и второму значению (первое &#124; второе).|  
-|Целое значение BitwiseAnd(первое целое значение, второе целое значение)|Примените побитовый параметр `AND` к первому и второму значению (первое & второе).|  
-|Целое значение BitwiseXor(первое целое значение, второе целое значение)|Примените побитовый параметр `XOR` к первому и второму значению (первое ^ второе).|  
-|Целое значение BitwiseNot(первое целое значение)|Примените побитовый параметр `NOT` (~первое значение).|  
-|bool IsOsPlatform(строка platformString)|Указание того, является ли текущая платформа ОС `platformString`. `platformString` должен быть элементом `OSPlatform`.|
-|bool IsOSUnixLike|Значение true, если текущая операционная система — это система Unix.|
-|Строка NormalizePath(параметры строка[] путь)|Возвращает канонический полный путь для предоставленного пути и проверяет правильность знаков разделения для каталогов, используемых в текущей операционной системе.|
-|Строка NormalizeDirectory(параметры строка[] путь)|Возвращает канонический полный путь для предоставленного каталога и проверяет правильность знаков разделения для каталогов, используемых в текущей операционной системе, а также наличие косой черты в конце.|
-|Строка EnsureTrailingSlash(строка путь)|Если в конце заданного пути нет косой черты, она добавляется. Если путь является пустой строкой, он не изменяется.|
-|Строка GetPathOfFileAbove(строка файл, строка startingDirectory)|Поиск файла в зависимости от расположения текущего файла сборки, или на основе `startingDirectory`, если он указан.|
-|GetDirectoryNameOfFileAbove(строка startingDirectory, строка fileName)|Поиск файла в указанном каталоге либо в структуре каталогов над ним.|
-|Строка MakeRelative(строка basePath, строка путь)|Делает `path` относительным для `basePath`. `basePath` должен быть абсолютным каталогом. Если `path` невозможно сделать относительным, он возвращается дословно. Аналогично `Uri.MakeRelativeUri`.|
-|Строка ValueOrDefault(стока conditionValue, строка defaultValue)|Возвращение строки в параметре "defaultValue" только в том случае, если параметр "conditionValue" пуст; в противном случае возвращается значение conditionValue.|
+|double Add(double a, double b)|Add two doubles.|  
+|long Add(long a, long b)|Add two longs.|  
+|double Subtract(double a, double b)|Subtract two doubles.|  
+|long Subtract(long a, long b)|Subtract two longs.|  
+|double Multiply(double a, double b)|Multiply two doubles.|  
+|long Multiply(long a, long b)|Multiply two longs.|  
+|double Divide(double a, double b)|Divide two doubles.|  
+|long Divide(long a, long b)|Divide two longs.|  
+|double Modulo(double a, double b)|Modulo two doubles.|  
+|long Modulo(long a, long b)|Modulo two longs.|  
+|string Escape(string unescaped)|Escape the string according to MSBuild escaping rules.|  
+|string Unescape(string escaped)|Unescape the string according to MSBuild escaping rules.|  
+|int BitwiseOr(int first, int second)|Perform a bitwise `OR` on the first and second (first &#124; second).|  
+|int BitwiseAnd(int first, int second)|Perform a bitwise `AND` on the first and second (first & second).|  
+|int BitwiseXor(int first, int second)|Perform a bitwise `XOR` on the first and second (first ^ second).|  
+|int BitwiseNot(int first)|Perform a bitwise `NOT` (~first).|  
+|bool IsOsPlatform(string platformString)|Specify whether the current OS platform is `platformString`. `platformString` must be a member of <xref:System.Runtime.InteropServices.OSPlatform>.|
+|bool IsOSUnixLike|True if current OS is a Unix system.|
+|string NormalizePath(params string[] path)|Gets the canonicalized full path of the provided path and ensures it contains the correct directory separator characters for the current operating system.|
+|string NormalizeDirectory(params string[] path)|Gets the canonicalized full path of the provided directory and ensures it contains the correct directory separator characters for the current operating system while ensuring it has a trailing slash.|
+|string EnsureTrailingSlash(string path)|If the given path doesn't have a trailing slash then add one. If the path is an empty string, does not modify it.|
+|string GetPathOfFileAbove(string file, string startingDirectory)|Searches for a file based on the current build file's location, or based on `startingDirectory`, if specified.|
+|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|Locate a file in either the directory specified or a location in the directory structure above that directory.|
+|string MakeRelative(string basePath, string path)|Makes `path` relative to `basePath`. `basePath` must be an absolute directory. If `path` cannot be made relative, it is returned verbatim. Similar to `Uri.MakeRelativeUri`.|
+|string ValueOrDefault(string conditionValue, string defaultValue)|Return the string in parameter 'defaultValue' only if parameter 'conditionValue' is empty, else, return the value conditionValue.|
 
-##  <a name="nested-property-functions"></a>Вложенные функции свойства  
- Функции свойства можно объединять для формирования более сложных функций, как показано в следующем примере.  
+##  <a name="nested-property-functions"></a>Nested Property Functions  
+ You can combine property functions to form more complex functions, as the following example shows.  
 
  `$([MSBuild]::BitwiseAnd(32, $([System.IO.File]::GetAttributes(tempFile))))`  
 
- В этом примере возвращается значение <xref:System.IO.FileAttributes>`Archive` бит (32 или 0) файла, указанного в пути `tempFile`. Обратите внимание, что значения перечисляемых данных не могут отображаться в функциях свойства по имени. Вместо этого необходимо использовать числовое значение (32).  
+ This example returns the value of the <xref:System.IO.FileAttributes>`Archive` bit (32 or 0) of the file given by the path `tempFile`. Notice that enumerated data values cannot appear by name within property functions. The numeric value (32) must be used instead.  
 
- Во вложенных функциях свойства могут также появляться метаданные. Дополнительные сведения см. в статье [Пакетная обработка](../msbuild/msbuild-batching.md).  
+ Metadata may also appear in nested property functions. For more information, see [Batching](../msbuild/msbuild-batching.md).  
 
 ##  <a name="msbuild-doestaskhostexist"></a>MSBuild DoesTaskHostExist  
- Функция свойства `DoesTaskHostExist` в MSBuild возвращает сведения об установленном сервере задач для указанной среды выполнения и значение архитектуры.  
+ The `DoesTaskHostExist` property function in MSBuild returns whether a task host is currently installed for the specified runtime and architecture values.  
 
- Эта функция свойства использует следующий синтаксис.  
+ This property function has the following syntax:  
 
 ```  
 $[MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture)  
 ```  
 
 ##  <a name="msbuild-ensuretrailingslash"></a>MSBuild EnsureTrailingSlash  
- Функция свойства `EnsureTrailingSlash` в MSBuild добавляет косую черту, если таковая отсутствует.  
+ The `EnsureTrailingSlash` property function in MSBuild adds a trailing slash if one doesn't already exist.  
 
- Эта функция свойства использует следующий синтаксис.  
+ This property function has the following syntax:  
 
 ```  
 $([MSBuild]::EnsureTrailingSlash('$(PathProperty)')  
 ```  
 
 ##  <a name="msbuild-getdirectorynameoffileabove"></a>MSBuild GetDirectoryNameOfFileAbove  
- Функция свойства `GetDirectoryNameOfFileAbove` в MSBuild выполняет поиск файла в каталогах выше текущего каталога в пути.  
+ The MSBuild `GetDirectoryNameOfFileAbove` property function looks for a file in the directories above the current directory in the path.  
 
- Эта функция свойства использует следующий синтаксис.  
+ This property function has the following syntax:  
 
 ```  
 $[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)  
 ```  
 
- В следующем коде показан пример этого синтаксиса.  
+ The following code is an example of this syntax.  
 
 ```xml  
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))\EnlistmentInfo.props" Condition=" '$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))' != '' " />  
 ```  
 
 ##  <a name="msbuild-getpathoffileabove"></a>MSBuild GetPathOfFileAbove  
- Функция свойства `GetPathOfFileAbove` в MSBuild возвращает путь к файлу, непосредственно предшествующему данному. Она функционально эквивалентна вызову.
+ The `GetPathOfFileAbove` property function in MSBuild returns the path of the file immediately preceding this one. It is functionally equivalent to calling
 
  ```<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />```
 
- Эта функция свойства использует следующий синтаксис.  
+ This property function has the following syntax:  
 
 ```  
 $([MSBuild]::GetPathOfFileAbove(dir.props)  
 ```  
 
 ##  <a name="msbuild-getregistryvalue"></a>MSBuild GetRegistryValue  
- Функция свойства `GetRegistryValue` в MSBuild возвращает значение раздела реестра. Она принимает два аргумента — имя раздела и имя значения — и возвращает значение в реестр. Если не указано имя значения, возвращается значение по умолчанию.  
+ The MSBuild `GetRegistryValue` property function returns the value of a registry key. This function takes two arguments, the key name and the value name, and returns the value from the registry. If you don't specify a value name, the default value is returned.  
 
- В следующих примерах показано, как используется эта функция.  
+ The following examples show how this function is used:  
 
 ```  
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value  
@@ -276,40 +276,40 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
 ```  
 
 ##  <a name="msbuild-getregistryvaluefromview"></a>MSBuild GetRegistryValueFromView  
- Функция свойства `GetRegistryValueFromView` в MSBuild получает данные системного реестра с учетом раздела реестра, значения и одного или нескольких упорядоченных представлений реестра. Раздел и значения ищутся в каждом представлении реестра по порядку, пока не будут найдены.  
+ The MSBuild `GetRegistryValueFromView` property function gets system registry data given the registry key, value, and one or more ordered registry views. The key and value are searched in each registry view in order until they are found.  
 
- Синтаксис функции свойства.  
+ The syntax for this property function is:  
 
  [MSBuild\]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)  
 
- 64-разрядная операционная система Windows ведет раздел реестра HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node, содержащий представление реестра HKEY_LOCAL_MACHINE\SOFTWARE для 32-разрядных приложений.  
+ The Windows 64-bit operating system maintains a HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node registry key that presents a HKEY_LOCAL_MACHINE\SOFTWARE registry view for 32-bit applications.  
 
- По умолчанию 32-разрядное приложение, работающее на WOW64, получает доступ к 32-разрядному представлению реестра, а 64-разрядное приложение — к 64-разрядному представлению реестра.  
+ By default, a 32-bit application running on WOW64 accesses the 32-bit registry view and a 64-bit application accesses the 64-bit registry view.  
 
- Доступны следующие представления реестра.  
+ The following registry views are available:  
 
-|Представление реестра|Определение|  
+|Registry View|Definition|  
 |-------------------|----------------|  
-|RegistryView.Registry32|Представление реестра для 32-разрядного приложения.|  
-|RegistryView.Registry64|Представление реестра для 64-разрядного приложения.|  
-|RegistryView.Default|Представление реестра, совпадающее с процессом, на котором работает приложение.|  
+|RegistryView.Registry32|The 32-bit application registry view.|  
+|RegistryView.Registry64|The 64-bit application registry view.|  
+|RegistryView.Default|The registry view that matches the process that the application is running on.|  
 
- Пример.  
+ The following is an example.  
 
  `$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))`  
 
- Получение данных SLRuntimeInstallPath из раздела ReferenceAssemblies, поиск сначала в 64-разрядном, а затем в 32-разрядном представлении реестра.  
+ gets the SLRuntimeInstallPath data of the ReferenceAssemblies key, looking first in the 64-bit registry view and then in the 32-bit registry view.  
 
 ##  <a name="msbuild-makerelative"></a>MSBuild MakeRelative  
- Функция свойства `MakeRelative` в MSBuild возвращает путь второго пути относительно первого пути. Каждый путь может быть файлом или папкой.  
+ The MSBuild `MakeRelative` property function returns the relative path of the second path relative to first path. Each path can be a file or folder.  
 
- Эта функция свойства использует следующий синтаксис.  
+ This property function has the following syntax:  
 
 ```  
 $[MSBuild]::MakeRelative($(FileOrFolderPath1), $(FileOrFolderPath2))  
 ```  
 
- В следующем коде показан пример этого синтаксиса.  
+ The following code is an example of this syntax.  
 
 ```xml  
 <PropertyGroup>  
@@ -330,9 +330,9 @@ Output:
 ```  
 
 ##  <a name="msbuild-valueordefault"></a>MSBuild ValueOrDefault  
- Функция свойства `ValueOrDefault` в MSBuild возвращает первый аргумент, если он не нулевой или пустой. Если первый аргумент нулевой, функция возвращает второй аргумент.  
+ The MSBuild `ValueOrDefault` property function returns the first argument, unless it's null or empty. If the first argument is null or empty, the function returns the second argument.  
 
- В следующем примере показано, как используется эта функция.  
+ The following example shows how this function is used.  
 
 ```xml  
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -355,7 +355,7 @@ Output:
 -->  
 ```
 
-## <a name="see-also"></a>См. также
-[MSBuild Properties](../msbuild/msbuild-properties.md)  (Свойства MSBuild)  
-[MSBuild Overview](../msbuild/msbuild.md) (Общие сведения о MSBuild)
+## <a name="see-also"></a>See Also
+[MSBuild Properties](../msbuild/msbuild-properties.md)   
+[MSBuild Overview](../msbuild/msbuild.md)
 

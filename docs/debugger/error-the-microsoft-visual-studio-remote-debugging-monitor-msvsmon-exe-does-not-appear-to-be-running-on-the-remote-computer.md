@@ -1,80 +1,97 @@
 ---
-title: "Ошибка: вероятно, монитор удаленной отладки Microsoft Visual Studio (MSVSMON.EXE) не запущен на удаленном компьютере | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.error.server_machine_no_default"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: 'Error: The Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) does not appear to be running on the remote computer. | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.error.server_machine_no_default
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: 86db9931-50e3-4095-b161-802ed8ef39c9
 caps.latest.revision: 21
-caps.handback.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Ошибка: вероятно, монитор удаленной отладки Microsoft Visual Studio (MSVSMON.EXE) не запущен на удаленном компьютере
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 17c436f1fc74d2b06eb98b0bbfb71634563fe558
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/22/2017
 
-Это сообщение об ошибке означает, что Visual Studio не удалось найти подходящий экземпляр монитора удаленной отладки Visual Studio на удаленном компьютере. Без монитора удаленной отладки Visual Studio удаленная отладка невозможна. Информацию о скачивании и настройке удаленного отладчика см. в разделе [Настройка Инструментов удаленной отладки в устройстве](../Topic/Set%20Up%20the%20Remote%20Tools%20on%20the%20Device.md).  
+---
+# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Error: The Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) does not appear to be running on the remote computer.
+This error message means that Visual Studio could not find the correct instance of the Visual Studio Remote Debugging Monitor on the remote computer. The Visual Studio Remote Debugging Monitor must be installed for remote debugging to work. For information about downloading and setting up the remote debugger, see [Remote Debugging](../debugger/remote-debugging.md).  
   
 > [!IMPORTANT]
->  Если вы считаете, что получили это сообщение из\-за ошибки продукта, сообщите о проблеме с помощью функции [Отправить смайлик](../Topic/Visual%20Studio%20Send%20a%20Smile%20Instructions.md) Visual Studio. Если вам нужна дополнительная помощь, обратитесь к разделу [Обращайтесь к нам](../ide/talk-to-us.md), чтобы узнать, как связаться с корпорацией Майкрософт.  
+>  If you believe you have received this message because of a product bug, please [report this issue to Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2017.md). If you need more help, see [Talk to Us](../ide/talk-to-us.md) for ways to contact Microsoft.  
   
-## Это сообщение было получено во время отладки в Visual Studio 2010 или более ранней версии  
- Если вы используете версию Visual Studio 2010 или более раннюю, эта ошибка может также возникать, если не включен общий доступ к файлам и принтерам. Чтобы узнать больше об этой проблеме, обратитесь к документации для версии Visual Studio 2010: [Ошибка: вероятно, монитор удаленной отладки Microsoft Visual Studio \(MSVSMON.EXE\) не запущен на удаленном компьютере — Visual Studio 2010](https://msdn.microsoft.com/en-us/library/ms164726\(v=vs.100\).aspx)  
+## <a name="i-got-this-message-while-i-was-debugging-in-visual-studio-2010-or-earlier"></a>I got this message while I was debugging in Visual Studio 2010 or earlier  
+ If the version of Visual Studio that you are using is Visual Studio 2010 or earlier, you might also receive this error if file and printer sharing is not enabled. To find out more about this issue, please refer to the Visual Studio 2010 version of this documentation: [Error: The Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) does not appear to be running on the remote computer. - Visual Studio 2010](https://msdn.microsoft.com/en-us/library/ms164726\(v=vs.100\).aspx)  
   
-## Это сообщение было получено при локальной отладке  
- Если это сообщение появляется при локальной отладке, причиной может быть антивирусная программа или брандмауэр сторонних разработчиков. Visual Studio является 32\-разрядным приложением, поэтому для отладки 64\-разрядных приложений используется 64\-разрядная версия удаленного отладчика. Два процесса взаимодействуют друг с другом по локальной сети на локальном компьютере. Трафик не отправляется с компьютера, но приложение для обеспечения безопасности от сторонних разработчиков может блокировать обмен данными.  
+## <a name="i-got-this-message-while-i-was-debugging-locally"></a>I got this message while I was debugging locally  
+ If you are getting this message while you are debugging locally, your anti-virus software or a third-party firewall may be to blame. Visual Studio is a 32-bit application, so it uses the 64-bit version of the remote debugger to debug 64-bit applications. The two processes communicate using the local network within the local computer. No traffic leaves the computer, but it is possible that third party security software may block the communication.  
   
- В следующих разделах перечислены некоторые другие причины получения этого сообщения и возможные способы решения проблемы.  
+ The following sections list some other reasons why you might have gotten this message, and what you can do to fix the issue.  
   
-## Удаленный компьютер недоступен.  
- Попробуйте выполнить [проверку связи](https://technet.microsoft.com/en-us/library/ee624059\(v=ws.10\).aspx) с удаленным компьютером. Если он не отвечает на проверку связи, инструментам удаленной отладки также не удастся подключиться к нему. Попробуйте перезагрузить удаленный компьютер и проверить, правильно ли он настроен в сети.  
+## <a name="the-remote-machine-is-not-reachable"></a>The remote machine is not reachable  
+ Try to [ping](https://technet.microsoft.com/en-us/library/ee624059\(v=ws.10\).aspx) the remote machine. If it doesn't reply to the ping, the remote tools won't be able to connect either. Try rebooting the remote machine and otherwise making sure that it is correctly configured on the network.  
   
-## Версия удаленного отладчика не соответствует версии Visual Studio.  
- Запущенная локально версия Visual Studio должна совпадать с версией монитора удаленной отладки, запущенного на удаленном компьютере. Чтобы устранить эту проблему, скачайте и установите соответствующую версию монитора удаленной отладки. Чтобы найти нужную версию удаленного отладчика, перейдите в [Центр загрузки](http://www.microsoft.com/en-us/download).  
+## <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>The version of the remote debugger doesn't match the version of Visual Studio  
+ The version of Visual Studio that you are running locally needs to match the version of the remote debugging monitor that is running on the remote machine. To fix this, download and install the matching version of the remote debugging monitor. Go to the [Download Center](http://www.microsoft.com/en-us/download) to find the right version of the remote debugger.  
   
-## На локальном и удаленном компьютерах используются разные режимы аутентификации  
- На локальном и удаленном компьютерах должен использоваться один и тот же режим аутентификации. Чтобы устранить эту проблему, настройте на обоих компьютерах один и тот же режим аутентификации. Более подробную информацию о режимах аутентификации см. в статье [Обзор аутентификации Windows](https://technet.microsoft.com/en-us/library/hh831472.aspx).  
+## <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>The local and remote machines have different authentication modes  
+ The local and remote machines need to use the same authentication mode. To fix this, make sure that both machines are using the same authentication mode. For more information about authentication modes, see [Windows Authentication Overview](https://technet.microsoft.com/en-us/library/hh831472.aspx).  
   
-## Удаленный отладчик запущен с использованием другой учетной записи пользователя  
- Решить эту проблему можно одним из указанных ниже способов.  
+## <a name="the-remote-debugger-is-running-under-a-different-user-account"></a>The remote debugger is running under a different user account  
+ You can solve this in one of the following ways:  
   
--   Вы можете остановить работу удаленного отладчика и перезапустить его с учетной записью, используемой на локальном компьютере.  
+-   You can stop the remote debugger and restart it with the account you are using on the local computer.  
   
--   Удаленный отладчик можно запустить из командной строки с параметром **\/allow \<имя\_пользователя\>**: `msvsmon /allow <username@computer>`  
+-   You can start the remote debugger from the command line with the **/allow \<username>** parameter: `msvsmon /allow <username@computer>`  
   
--   Добавить пользователя в список разрешений удаленного отладчика можно, выбрав пункт **Сервис\/Разрешения**.  
+-   You can add the user to the remote debugger's permissions (in the remote debugger window, **Tools > Permissions**).  
   
--   Если описанные выше способы использовать нельзя, можно разрешить любому пользователю выполнять удаленную отладку. В окне удаленного отладчика откройте диалоговое окно **Сервис \> Параметры**. Если выбрать **Без аутентификации**, то затем можно установить флажок **Разрешить отладку любому пользователю**. Однако этот параметр следует использовать, если нет другого выбора или если вы находитесь в частной сети.  
+-   If you can't use the methods in the preceding steps, you can allow any user to do remote debugging. In the remote debugger window, go to the **Tools > Options** dialog. When you select   **No Authentication**, you can then check **Allow any user to debug**. However, you should use this option only if you have no choice, or if you are on a private network.  
   
-## Брандмауэр на удаленном компьютере запрещает входящие подключения к удаленному отладчику  
- Брандмауэры на компьютере Visual Studio и на удаленном компьютере нужно настроить так, чтобы разрешить обмен данными между Visual Studio и удаленным отладчиком. Информацию о портах, используемых удаленным отладчиком, см. в разделе [Назначение портов удаленного отладчика](../debugger/remote-debugger-port-assignments.md). Информацию о настройке брандмауэра Windows см. в разделе [Настройка брандмауэра Windows для удаленной отладки](../debugger/configure-the-windows-firewall-for-remote-debugging.md).  
+## <a name="the-firewall-on-the-remote-machine-doesnt-allow-incoming-connections-to-the-remote-debugger"></a>The firewall on the remote machine doesn't allow incoming connections to the remote debugger  
+ The firewall on the Visual Studio machine and the firewall on the remote machine must be configured to allow communication between Visual Studio and the remote debugger. For information about the ports the remote debugger is using, see [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md). For information about configuring the Windows firewall, see [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md).  
   
-## Антивирусная программа блокирует подключения.  
- Антивирусная программа Windows разрешает подключения к удаленному отладчику, но некоторые антивирусные программы сторонних разработчиков могут блокировать их. Чтобы узнать, как разрешить эти подключения, см. документацию по используемой антивирусной программе.  
+## <a name="anti-virus-software-is-blocking-the-connections"></a>Anti-virus software is blocking the connections  
+ Windows anti-virus software allows remote debugger connections, but some third-party anti-virus software may block them. Check the documentation for your anti-virus software to find out how to allow these connections.  
   
-## Политика сетевой безопасности блокирует обмен данными между удаленным компьютером и Visual Studio.  
- Проверьте, не блокирует ли политика сетевой безопасности обмен данными. Более подробную информацию о политике сетевой безопасности Windows см. в статье [Управление безопасностью](https://msdn.microsoft.com/en-us/library/windows/desktop/ms721855\(v=vs.85\).aspx).  
+## <a name="network-security-policy-is-blocking-communication-between-the-remote-machine-and-visual-studio"></a>Network security policy is blocking communication between the remote machine and Visual Studio  
+ Review your network security to make sure that it is not blocking communication. For more information about Windows network security policy, see [Security policy settings](/windows/device-security/security-policy-settings/security-policy-settings).  
   
-## Удаленная отладка невозможна из\-за слишком высокой загрузки сети.  
- Попробуйте выполнить удаленную отладку в другое время или перепланировать работу в сети на другое время.  
+## <a name="the-network-is-too-busy-to-support-remote-debugging"></a>The network is too busy to support remote debugging  
+ You may need to do remote debugging at a different time, or reschedule work on the network for a different time.  
   
-## Дополнительная справка  
- Чтобы получить дополнительную справку по удаленному отладчику, включая сведения о параметрах командной строки, откройте в браузере следующий адрес:  
+## <a name="more-help"></a>More help  
+ To get more remote debugger help, including command-line switches, click **Help > Usage** in the remote debugger window. If you don't have it open you can see the web page by copying the following line to a  **File Explorer** window. (You need to replace \<Visual Studio installation directory> with the location of your Visual Studio installation.)  
   
- **res:\/\/C:\\Program%20Files\\Microsoft%20Visual%20Studio%2014.0\\Common7\\IDE\\Remote%20Debugger\\x64\\msvsmon.exe\/help.htm**  
+ res://*\<Visual Studio installation directory>*\Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm  
   
-## См. также  
- [Ошибки удаленной отладки и их устранение](../debugger/remote-debugging-errors-and-troubleshooting.md)
+## <a name="see-also"></a>See Also  
+ [Remote Debugging Errors and Troubleshooting](../debugger/remote-debugging-errors-and-troubleshooting.md)

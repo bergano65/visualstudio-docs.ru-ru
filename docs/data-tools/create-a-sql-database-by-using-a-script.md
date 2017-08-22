@@ -1,53 +1,72 @@
 ---
-title: "Пошаговое руководство. Создание небольшого примера базы данных | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
+title: Create a SQL database by using a script | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- aspx
 ms.assetid: 36f913c0-f5a7-4831-83a0-baba721ac95c
 caps.latest.revision: 14
-caps.handback.revision: 10
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 6871f54959652787dfc115f8360e67aa4c8ddf33
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/22/2017
+
 ---
-# Пошаговое руководство. Создание небольшого примера базы данных
-В данном пошаговом руководстве используется Visual Studio, чтобы создать небольшую базу данных, которая содержит пример кода для [Пошаговое руководство. Создание простого приложения для работы с данными с помощью ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md).  
+# <a name="create-a-sql-database-by-using-a-script"></a>Create a SQL database by using a script
+In this walkthrough, you use Visual Studio to create a small database that contains the sample code for [Create a simple data application by using ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md).  
   
- **Содержание раздела**  
+ **In this topic**  
   
--   [Создание скрипта, содержащего схему базы данных.](../data-tools/create-a-sql-database-by-using-a-script.md#CreateScript)  
+-   [Create a script that contains a database schema](../data-tools/create-a-sql-database-by-using-a-script.md#CreateScript)  
   
--   [Создание проекта базы данных и импорт схемы](../data-tools/create-a-sql-database-by-using-a-script.md#CreateProject)  
+-   [Create a database project and import a schema](../data-tools/create-a-sql-database-by-using-a-script.md#CreateProject)  
   
--   [Развертывание базы данных](../data-tools/create-a-sql-database-by-using-a-script.md#DeployDatabase)  
+-   [Deploy the database](../data-tools/create-a-sql-database-by-using-a-script.md#DeployDatabase)  
   
-## Обязательные компоненты  
- Для выполнения инструкций данного пошагового руководства требуется установленная [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  Необходимо также иметь возможность подключиться к серверу базы данных или базе данных LocalDB, где у вас есть разрешения на создание и развертывание базы данных.  
+## <a name="prerequisites"></a>Prerequisites  
+ To complete this walkthrough, you must have SQL Server Express LocalDB, or another SQL database, installed.  
   
-##  <a name="CreateScript"></a> Создание скрипта, содержащего схему базы данных.  
+##  <a name="CreateScript"></a> Create a script that contains a database schema  
   
-#### Создание скрипта, из которого можно импортировать схему  
+#### <a name="to-create-a-script-from-which-you-can-import-a-schema"></a>To create a script from which you can import a schema  
   
-1.  В [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] в строке меню выберите **Файл**, **Создать**, **Файл**.  
+1.  In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], on the menu bar, select **File** > **New** > **File**.  
   
-     Появится диалоговое окно **Создание файла**.  
+     The **New File** dialog box appears.  
   
-2.  В списке **Категории** выберите **Общие**.  
+2.  In the **Categories** list, select **General**.  
   
-3.  В списке **Шаблоны** выберите **SQL\-файл**, а затем нажмите кнопку **Открыть**.  
+3.  In the **Templates** list, select **Sql File**, and then select the **Open** button.  
   
-     Появится редактор Редактор Transact\-SQL.  
+     The Transact-SQL editor opens.  
   
-4.  Скопируйте приведенный ниже код Transact\-SQL и вставьте его в редактор Transact\-SQL.  
+4.  Copy the following Transact-SQL code, and then paste it into the Transact-SQL editor.  
   
     ```  
     PRINT N'Creating Sales...';  
@@ -209,62 +228,62 @@ manager: "ghogen"
     GO  
     ```  
   
-5.  В меню **Файл** выберите **Сохранить SqlQuery\_1.sql как**.  
+5.  On the menu bar, select **File** > **Save SqlQuery_1.sql As...**.  
   
-     Откроется диалоговое окно **Сохранить файл как**.  
+     The **Save File As** dialog box appears.  
   
-6.  В поле **Имя файла** введите `SampleImportScript.sql`, запомните расположение, в котором будет сохранен файл, а затем нажмите кнопку **Сохранить**.  
+6.  In the **File Name** box, enter `SampleImportScript.sql`, note the location where you'll save the file, and then select the **Save** button.  
   
-7.  В меню **Файл** выберите **Закрыть решение**.  
+7.  On the menu bar, select **File** > **Close Solution**.  
   
-     Затем создайте проект базы данных и импортируйте схему из только что созданного скрипта.  
+     Next, create a database project, and then import the schema from the script that you've created.  
   
-##  <a name="CreateProject"></a> Создание проекта базы данных и импорт схемы  
+##  <a name="CreateProject"></a> Create a database project and import a schema  
   
-#### Создание проекта базы данных  
+#### <a name="to-create-a-database-project"></a>To create a database project  
   
-1.  В меню **Файл** выберите **Создать**, **Проект**.  
+1.  On the menu bar, select **File** > **New** > **Project**.  
   
-     Откроется диалоговое окно **Новый проект**.  
+     The **New Project** dialog box appears.  
   
-2.  В разделе **Установленные** разверните узел **Шаблоны**, разверните узел **Другие языки** выберите категорию **SQL Server**, а затем выберите шаблон **Проект базы данных SQL Server**.  
+2.  Under **Installed**, expand the **Templates** node, expand the **Other Languages** node, select the **SQL Server** category, and then select the **SQL Server Database Project** template.  
   
     > [!NOTE]
-    >  Узел **Другие языки** не виден во всех установки Visual Studio.  
+    >  The **Other Languages** node doesn't appear in all installations of Visual Studio.  
   
-3.  В поле **Имя** введите `Small Database`.  
+3.  In the **Name** box, enter `Small Database`.  
   
-4.  Установите флажок **Создать каталог для решения**, если он еще не установлен.  
+4.  Select the **Create directory for solution** check box if it isn't already selected.  
   
-5.  Снимите флажок **Добавить в систему управления версиями**, если он установлен, и нажмите кнопку **ОК**.  
+5.  Clear the **Add to source control** check box if it isn't already cleared, and then select the **OK** button.  
   
-     В **обозревателе решений** отобразится созданный проект.  
+     The database project is created and appears in **Solution Explorer**.  
   
-     Далее импортируйте схему базы данных из скрипта.  
+     Next, import the database schema from the script.  
   
-#### Импорт схемы базы данных из скрипта  
+#### <a name="to-import-a-database-schema-from-a-script"></a>To import a database schema from a script  
   
-1.  В меню **Проект** выберите **Импорт**, **Скрипт**.  
+1.  On the menu bar, select **Project** > **Import** > **Script**.  
   
-2.  На странице приветствия прочитайте текст и нажмите кнопку **Далее**.  
+2.  On the **Welcome** page, review the text, and then select the **Next** button.  
   
-3.  Выберите переключатель **Отдельный файл**, а затем нажмите кнопку **Обзор**.  
+3.  Select the **Single File** option button, and then select the **Browse** button.  
   
-     Откроется диалоговое окно **Импорт скрипта SQL**.  
+     The **Import SQL Script** dialog box appears.  
   
-4.  Откройте папку, где сохранен файл SampleImportScript.sql, выберите его и затем нажмите кнопку **Открыть**.  
+4.  Open the folder where you saved the SampleImportScript.sql file, select the file, and then select the **Open** button.  
   
-5.  Нажмите кнопку **Готово**, чтобы закрыть диалоговое окно **Импорт скрипта SQL**.  
+5.  Select the **Finish** button to close the **Import SQL Script** dialog box.  
   
-     Скрипт будет импортирован, и объекты, определенные в этом скрипте, будут добавлены в проект базы данных.  
+     The script is imported, and the objects that the script defines are added to your database project.  
   
-6.  Просмотр сводки, а затем нажмите кнопку **Готово**, чтобы закрыть диалоговое окно **Импорт файла скрипта SQL**.  
+6.  Review the summary, and then click the **Finish** button to close the **Import SQL Script File** dialog box.  
   
-7.  В поле **Обозреватель решений** разверните папки "Сбыт", "Скрипты" и "Безопасность" вашего проекта и убедитесь, что они содержат файлы SQL.  
+7.  In **Solution Explorer**, expand the Sales, Scripts, and Security folders of your project, and verify that they contain .sql files.  
   
-8.  В поле **Обозреватель объектов SQL Server** убедитесь, что база данных находится в узле **Проекты**.  
+8.  In **SQL Server Object Explorer**, verify that the database appears under the **Projects** node.  
   
-     На этом этапе база данных содержит только системные объекты, такие как таблицы и хранимые процедуры.  После развертывания базы данных она будет содержать пользовательские таблицы и хранимые процедуры, определяемые скриптами.  
+     At this point, the database contains only system objects, such as tables and stored procedures. After you deploy the database, it will contain the user tables and stored procedures that the scripts define.  
   
-##  <a name="DeployDatabase"></a> Развертывание базы данных  
- При нажатии клавиши F5 развертывается или публикуется база данных в базу данных LocalDB по умолчанию.  Можно развернуть базу данных в другое место, откройте страницы свойств для проекта, выберите вкладку **Отладка**, а затем изменить строку подключения.
+##  <a name="DeployDatabase"></a> Deploy the database  
+ When you press the **F5** key, you deploy (or publish) the database to a LocalDB database by default. You can deploy the database to a different location by opening the properties page for the project, selecting the **Debug** tab, and then changing the connection string.
