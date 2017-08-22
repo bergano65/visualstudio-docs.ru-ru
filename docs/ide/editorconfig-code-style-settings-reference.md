@@ -31,10 +31,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: 3037d92e9de377ab4b306a5a0e164e29fa6659e7
-ms.openlocfilehash: 600cd62e7843274b52da5ac7200b5168311cab07
+ms.sourcegitcommit: 223750aef8d997c6ae017f49ea0a9522bdba72bc
+ms.openlocfilehash: c5687a3971d4b670e73e55294e6dfd0c7c3f91d0
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -99,12 +99,15 @@ error | Если этот стиль не соблюдается, выводит
     - [Параметры проверки "null"](#null_checking)
         - [Выражения throw](#null_checking_throw_expressions)
         - [Вызовы условного делегата](#null_checking_conditional_delegate_calls)
+    - [Настройки блока кода](#code_block)
+        - [Предпочтение фигурных скобок](#prefer_braces)
 
 ## <a name="this_and_me">Квалификация "This." и "Me."</a>
 ### <a name="this_and_me_fields">Поля (IDE0003/IDE0009)</a>
-|  Имя параметра | `dotnet_style_qualification_for_field` |
-| ------------- |:-------------:|
-| **Применимые языки** | C# и Visual Basic
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|  `dotnet_style_qualification_for_field` | C# и Visual Basic | false:none | Visual Studio 2017 RTW |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -119,10 +122,10 @@ dotnet_style_qualification_for_field = false:suggestion
 ```
 
 ### <a name="this_and_me_properties">Свойства (IDE0003/IDE0009)</a>
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`dotnet_style_qualification_for_property`| C# и Visual Basic | false:none | Visual Studio 2017 RTW |
 
-|  Имя параметра | `dotnet_style_qualification_for_property` |
-| ------------- |:-------------:|
-| **Применимые языки** | C# и Visual Basic
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -137,9 +140,10 @@ dotnet_style_qualification_for_property = false:suggestion
 ```
 
 ### <a name="this_and_me_methods">Методы (IDE0003/IDE0009)</a>
-|  Имя параметра | `dotnet_style_qualification_for_method` |
-| ------------- |:-------------:|
-| **Применимые языки** | C# и Visual Basic
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`dotnet_style_qualification_for_method`| C# и Visual Basic | false:none | Visual Studio 2017 RTW |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -155,9 +159,10 @@ dotnet_style_qualification_for_method = false:suggestion
 ```
 
 ### <a name="this_and_me_events">События (IDE0003/IDE0009)</a>
-|  Имя параметра | `dotnet_style_qualification_for_event` |
-| ------------- |:-------------:|
-| **Применимые языки** | C# и Visual Basic
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`dotnet_style_qualification_for_event`| C# и Visual Basic | false:none | Visual Studio 2017 RTW |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -173,9 +178,10 @@ dotnet_style_qualification_for_event = false:suggestion
 
 ## <a name="language_keywords">Ключевые слова языка (int, string и т. д.) и имена типов .NET Framework для ссылок на типы</a>
 ### <a name="language_keywords_variables"> Локальные переменные, параметры и элементы (IDE0012/IDE0014)</a>
-|  Имя параметра | `dotnet_style_predefined_type_for_locals_parameters_members` |
-| ------------- |:-------------:|
-| **Применимые языки** | C# и Visual Basic
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`dotnet_style_predefined_type_for_locals_parameters_members`| C# и Visual Basic | true:none | Visual Studio 2017 RTW |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -190,9 +196,10 @@ dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
 ``` 
 
 ### <a name="language_keywords_member_access">Выражения доступа к элементу (IDE0013/IDE0015)</a>
-|  Имя параметра | `dotnet_style_predefined_type_for_member_access` |
-| ------------- |:-------------:|
-| **Применимые языки** | C# и Visual Basic
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`dotnet_style_predefined_type_for_member_access`| C# и Visual Basic | true:none | Visual Studio 2017 RTW |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -208,9 +215,10 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 ## <a name="expression_level">Настройки уровня выражений</a>
 ### <a name="expression_level_object_initializers">Инициализаторы объектов (IDE0017)</a>
-|  Имя параметра | `dotnet_style_object_initializer` |
-| ------------- |:-------------:|
-| **Применимые языки** | C# и Visual Basic
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`dotnet_style_object_initializer`| C# и Visual Basic | true:suggestion | Visual Studio 2017 RTW |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -225,9 +233,10 @@ dotnet_style_object_initializer = true:suggestion
 ``` 
 
 ### <a name="expression_level_collection_initializers">Инициализаторы коллекций (IDE0028)</a>
-|  Имя параметра | `dotnet_style_collection_initializer` |
-| ------------- |:-------------:|
-| **Применимые языки** | C# и Visual Basic
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`dotnet_style_collection_initializer`| C# и Visual Basic | true:suggestion | Visual Studio 2017 RTW |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -242,9 +251,10 @@ dotnet_style_collection_initializer = true:suggestion
 ```
 
 ### <a name="expression_level_tuple_names">Явные имена кортежей (IDE0033)</a>
-|  Имя параметра | `dotnet_style_explicit_tuple_names` |
-| ------------- |:-------------:|
-| **Применимые языки** | C# 7.0+ и Visual Basic 15+
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`dotnet_style_explicit_tuple_names`| C# 7.0+ и Visual Basic 15+ | true:suggestion | Visual Studio 2017 RTW |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -259,9 +269,10 @@ dotnet_style_explicit_tuple_names = true:suggestion
 ``` 
 
 ### <a name="expression_level_null_checking">Объединение выражений при проверке NULL (IDE0029)</a>
-|  Имя параметра | `dotnet_style_coalesce_expression` |
-| ------------- |:-------------:|
-| **Применимые языки** | C# и Visual Basic
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`dotnet_style_coalesce_expression`| C# и Visual Basic | true:suggestion | Visual Studio 2017 RTW |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -276,9 +287,10 @@ dotnet_style_coalesce_expression = true:suggestion
 ``` 
 
 ### <a name="expression_level_null_propogation">Распространение значений NULL при проверке NULL (IDE0031)</a>
-|  Имя параметра | `dotnet_style_null_propagation` |
-| ------------- |:-------------:|
-| **Применимые языки** | C# и Visual Basic
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`dotnet_style_null_propagation`| C# 6.0+ и Visual Basic 14+ | true:suggestion | Visual Studio 2017 RTW |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -295,9 +307,10 @@ dotnet_style_null_propagation = true:suggestion
 # <a name="csharp_codestyle">Параметры стиля кода C#</a>
 ## <a name="var">var и явные типы</a>
 ### <a name="var_built_in">var для встроенных типов (IDE0007, IDE0008)</a>
-|  Имя параметра | `csharp_style_var_for_built_in_types` |
-| ------------- |:-------------:|
-| **Применимые языки** | C#
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_var_for_built_in_types`| C# | true:none | Visual Studio 2017 RTW |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -312,9 +325,10 @@ csharp_style_var_for_built_in_types = true:suggestion
 ``` 
 
 ### <a name="var_apparent">var для очевидных типов (IDE0007, IDE0008)</a>
-|  Имя параметра | `csharp_style_var_when_type_is_apparent` |
-| ------------- |:-------------:|
-| **Применимые языки** | C#
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_var_when_type_is_apparent`| C# | true:none | Visual Studio 2017 RTW |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -329,9 +343,10 @@ csharp_style_var_when_type_is_apparent = true:suggestion
 ``` 
 
 ### <a name="var_elsewhere">var в других ситуациях (IDE0007, IDE0008)</a>
-|  Имя параметра | `csharp_style_var_elsewhere` |
-| ------------- |:-------------:|
-| **Применимые языки** | C#
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_var_elsewhere`| C# | true:none | Visual Studio 2017 RTW |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -347,9 +362,10 @@ csharp_style_var_elsewhere = true:suggestion
 
 ##<a name="expression_bodied_members">Элементы, воплощающие выражение</a>
 ### <a name="expression_bodied_members_methods">Методы (IDE0022)</a>
-|  Имя параметра | `csharp_style_expression_bodied_methods` |
-| ------------- |:-------------:|
-| **Применимые языки** | C# 6.0+
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_expression_bodied_methods`| C# 6.0+ | false:none | Visual Studio 2017 RTW |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -364,9 +380,10 @@ csharp_style_expression_bodied_methods = false:none
 ``` 
 
 ### <a name="expression_bodied_members_constructors">Конструкторы (IDE0021)</a>
-|  Имя параметра | `csharp_style_expression_bodied_constructors` |
-| ------------- |:-------------:|
-| **Применимые языки** | C# 6.0+
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_expression_bodied_constructors`| C# 7.0+ | false:none | Visual Studio 2017 RTW |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -381,9 +398,10 @@ csharp_style_expression_bodied_constructors = false:none
 ``` 
 
 ### <a name="expression_bodied_members_operators">Операторы (IDE0023, IDE0024)</a>
-|  Имя параметра | `csharp_style_expression_bodied_operators` |
-| ------------- |:-------------:|
-| **Применимые языки** | C# 6.0+
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_expression_bodied_operators` | C# 7.0+ | false:none | Visual Studio 2017 RTW |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -398,9 +416,10 @@ csharp_style_expression_bodied_operators = false:none
 ``` 
 
 ### <a name="expression_bodied_members_properties">Свойства (IDE0025)</a>
-|  Имя параметра | `csharp_style_expression_bodied_properties` |
-| ------------- |:-------------:|
-| **Применимые языки** | C# 7.0+
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_expression_bodied_properties` | C# 7.0+ | true:none | Visual Studio 2017 RTW |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -411,13 +430,14 @@ csharp_style_expression_bodied_operators = false:none
 ```
 # CSharp code style settings:
 [*.cs]
-csharp_style_expression_bodied_properties = false:none
+csharp_style_expression_bodied_properties = true:none
 ``` 
 
 ### <a name="expression_bodied_members_indexers">Индексаторы (IDE0026)</a>
-|  Имя параметра | `csharp_style_expression_bodied_indexers` |
-| ------------- |:-------------:|
-| **Применимые языки** | C# 7.0+
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_expression_bodied_indexers` | C# 7.0+ | true:none | Visual Studio 2017 RTW |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -432,9 +452,10 @@ csharp_style_expression_bodied_indexers = false:none
 ``` 
 
 ### <a name="expression_bodied_members_accessors">Методы доступа (IDE0027)</a>
-|  Имя параметра | `csharp_style_expression_bodied_accessors` |
-| ------------- |:-------------:|
-| **Применимые языки** | C# 7.0+
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_expression_bodied_accessors` | C# 7.0+ | true:none | Visual Studio 2017 RTW |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -450,9 +471,10 @@ csharp_style_expression_bodied_accessors = false:none
 
 ## <a name="pattern_matching">Сопоставление шаблонов</a>
 ### <a name="pattern_matching_is_cast">is с проверкой cast (IDE0020)</a>
-|  Имя параметра | `csharp_style_pattern_matching_over_is_with_cast_check` |
-| ------------- |:-------------:|
-| **Применимые языки** | C# 7.0+
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_pattern_matching_over_is_with_cast_check` | C# 7.0+ | true:suggestion | Visual Studio 2017 RTW |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -467,9 +489,10 @@ csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 ```
 
 ### <a name="pattern_matching_as_null">as с проверкой NULL (IDE0019)</a>
-|  Имя параметра | `csharp_style_pattern_matching_over_as_with_null_check` |
-| ------------- |:-------------:|
-| **Применимые языки** | C# 7.0+
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_pattern_matching_over_as_with_null_check` | C# 7.0+ | true:suggestion | Visual Studio 2017 RTW |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -484,9 +507,10 @@ csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 ```
 
 ### <a name="inlined_variable_declarations">Встроенные объявления переменных IDE0018)</a>
-|  Имя параметра | `csharp_style_inlined_variable_declaration` |
-| ------------- |:-------------:|
-| **Применимые языки** | C#
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_inlined_variable_declaration` | C# 7.0+ | true:suggestion | Visual Studio 2017 RTW |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -501,9 +525,10 @@ csharp_style_inlined_variable_declaration = true:suggestion
 ```
 ## <a name="expression_level_csharp">Настройки уровня выражений</a>
 ### <a name="expression_level_default">Упрощение выражений `default` (IDE0034)</a>
-|  Имя параметра | `csharp_prefer_simple_default_expression` |
-| ------------- |:-------------:|
-| **Применимые языки** | C# 7.1+ и Visual Basic
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_prefer_simple_default_expression` | C# 7.1+ | true:suggestion | Visual Studio 2017 версии 15.3 |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -512,16 +537,17 @@ csharp_style_inlined_variable_declaration = true:suggestion
 
 #### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
 ```
-# CSharp and VisualBasic code style settings:
+# CSharp code style settings:
 [*.cs]
 csharp_prefer_simple_default_expression = true:suggestion
 ``` 
 
 ## <a name="null_checking">Параметры проверки "null"</a>
 ### <a name="null_checking_throw_expressions">Выражения throw (IDE0016)</a>
-|  Имя параметра | `csharp_style_throw_expression` |
-| ------------- |:-------------:|
-| **Применимые языки** | C# 7.0+
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_throw_expression`  | C# 7.0+ | true:suggestion | Visual Studio 2017 RTW |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -536,9 +562,10 @@ csharp_style_throw_expression = true:suggestion
 ```
 
 ### <a name="null_checking_conditional_delegate_calls">Предпочитать условные вызовы делегата (IDE0041)</a>
-|  Имя параметра | `csharp_style_conditional_delegate_call` |
-| ------------- |:-------------:|
-| **Применимые языки** | C#
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_conditional_delegate_call`  | C# 6.0+ | true:suggestion | Visual Studio 2017 RTW |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -550,6 +577,25 @@ csharp_style_throw_expression = true:suggestion
 # CSharp code style settings:
 [*.cs]
 csharp_style_conditional_delegate_call = false:suggestion
+```
+
+## <a name="code_block">Настройки блока кода</a>
+### <a name="prefer_braces">Предпочтение фигурных скобок (IDE0011)</a>
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_prefer_braces`  | C#  | true:none | Visual Studio 2017 версии 15.3 |
+
+
+| Значение | Описание | Применен 
+| ------------- |:-------------|:-------------|
+| True | Предпочтение фигурных скобок | **C#:** <br>`if (test) { this.Display(); }`
+| False | По возможности следует использовать фигурные скобки. | **C#:** <br>`if (test) this.Display();`
+
+#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+```
+# CSharp code style settings:
+[*.cs]
+csharp_prefer_braces = true:none
 ```
 
 # <a name="formatting"> Правила форматирования</a>
@@ -575,6 +621,7 @@ csharp_style_conditional_delegate_call = false:suggestion
         - [Новая строка перед элементами в предложениях выражений запроса](#newline_before_query)
     - [Параметры отступа](#indent)
         - [Отступ в конструкции `switch` case](#indent_switch)
+        - [Отступ для меток `switch`](#indent_switch_labels)
         - [Размещение меток](#label)
     - [Параметры интервалов](#spacing)
         - [Пробел после приведения](#space_after_cast)
@@ -588,9 +635,10 @@ csharp_style_conditional_delegate_call = false:suggestion
 
 ## <a name="usings">Управление директивами using</a>
 ### <a name="usings_sort_system_first">Помещать системные директивы первыми при сортировке</a>
-|  Имя параметра | `dotnet_sort_system_directives_first` |
-| ------------- |:-------------:|
-| **Применимые языки** | C# и Visual Basic
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`dotnet_sort_system_directives_first`  |  C# и Visual Basic | true | Visual Studio 2017 версии 15.3  |
+
 
 | Значение | Описание | Применен 
 | ------------- |:-------------|:-------------|
@@ -607,9 +655,10 @@ dotnet_sort_system_directives_first = true
 # <a name="csharp_formatting">Параметры форматирования C#</a>
 ## <a name="newline">Параметры перевода строки</a>
 ### <a name="newline_before_brace">Новая строка перед открывающей скобкой (`{`)</a>
-|  Имя параметра | `csharp_new_line_before_open_brace` |
-| ------------- |:-------------:|
-| **Применимые языки** | C#
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_new_line_before_open_brace`  |  C#  | true | Visual Studio 2017 версии 15.3  |
+
 
 | Значение | Описание 
 | ------------- |:-------------|
@@ -646,9 +695,10 @@ csharp_new_line_before_open_brace = methods, properties, control_blocks, types
 ``` 
 
 ### <a name="newline_before_else"> Новая строка перед `else`</a>
-|  Имя параметра | `csharp_new_line_before_else` |
-| ------------- |:-------------:|
-| **Применимые языки** | C#
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_new_line_before_else` |  C#  | true | Visual Studio 2017 версии 15.3  |
+
 
 | Значение | Описание 
 | ------------- |:-------------|
@@ -683,9 +733,10 @@ csharp_new_line_before_else = true
 ``` 
 
 ### <a name="newline_before_catch"> Новая строка перед `catch`</a>
-|  Имя параметра | `csharp_new_line_before_catch` |
-| ------------- |:-------------:|
-| **Применимые языки** | C#
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+| `csharp_new_line_before_catch`|  C#  | true | Visual Studio 2017 версии 15.3  |
+
 
 | Значение | Описание 
 | ------------- |:-------------|
@@ -720,9 +771,10 @@ csharp_new_line_before_catch = true
 ``` 
 
 ### <a name="newline_before_finally"> Новая строка перед `finally`</a>
-|  Имя параметра | `csharp_new_line_before_catch` |
-| ------------- |:-------------:|
-| **Применимые языки** | C#
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+| `csharp_new_line_before_finally`|  C#  | true | Visual Studio 2017 версии 15.3  |
+
 
 | Значение | Описание 
 | ------------- |:-------------|
@@ -762,9 +814,10 @@ csharp_new_line_before_finally = true
 ``` 
 
 ### <a name="newline_before_object"> Новая строка перед элементами в инициализаторах объектов</a>
-|  Имя параметра | `csharp_new_line_before_members_in_object_initializers` |
-| ------------- |:-------------:|
-| **Применимые языки** | C#
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+| `csharp_new_line_before_members_in_object_initializers`|  C#  | true | Visual Studio 2017 версии 15.3  |
+
 
 | Значение | Описание 
 | ------------- |:-------------|
@@ -797,9 +850,10 @@ csharp_new_line_before_members_in_object_initializers = true
 ``` 
 
 ### <a name="newline_before_anonymous"> Новая строка перед элементами в анонимных типах</a>
-|  Имя параметра | `csharp_new_line_before_members_in_anonymous_types` |
-| ------------- |:-------------:|
-| **Применимые языки** | C#
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+| `csharp_new_line_before_members_in_anonymous_types` |  C#  | true | Visual Studio 2017 версии 15.3  |
+
 
 | Значение | Описание 
 | ------------- |:-------------|
@@ -832,9 +886,10 @@ csharp_new_line_before_members_in_anonymous_types = true
 ``` 
 
 ### <a name="newline_before_query"> Новая строка перед элементами в предложениях выражений запроса</a>
-|  Имя параметра | `csharp_new_line_within_query_expression_clauses` |
-| ------------- |:-------------:|
-| **Применимые языки** | C#
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_new_line_within_query_expression_clauses`  |  C#  | true | Visual Studio 2017 версии 15.3  |
+
 
 | Значение | Описание 
 | ------------- |:-------------|
@@ -864,9 +919,9 @@ csharp_new_line_within_query_expression_clauses = true
 
 ## <a name="indent">Параметры отступа</a>
 ### <a name="indent_switch">Отступ в конструкции `switch` case</a>
-|  Имя параметра | `csharp_indent_case_contents` |
-| ------------- |:-------------:|
-| **Применимые языки** | C#
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+| `csharp_indent_case_contents`  |  C#  | true | Visual Studio 2017 версии 15.3  |
 
 | Значение | Описание 
 | ------------- |:-------------|
@@ -911,10 +966,59 @@ switch(c) {
 csharp_indent_case_contents = true
 ``` 
 
+### <a name="indent_switch_labels">Отступ для меток `switch`</a>
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+| `csharp_indent_switch_labels`  |  C#  | true | Visual Studio 2017 версии 15.3  |
+
+| Значение | Описание 
+| ------------- |:-------------|
+| True | Отступ для меток `switch`  |
+| False | Отступ для меток `switch` |
+
+#### <a name="applied"></a>Область применения:
+```csharp
+// csharp_indent_switch_labels = true
+switch(c) {
+    case Color.Red:
+        Console.WriteLine("The color is red");
+        break;
+    case Color.Blue:
+        Console.WriteLine("The color is blue");
+        break;
+    default:
+        Console.WriteLine("The color is unknown.");
+        break;
+}
+```
+
+```csharp
+// csharp_indent_switch_labels = false
+switch(c) {
+case Color.Red:
+    Console.WriteLine("The color is red");
+    break;
+case Color.Blue:
+    Console.WriteLine("The color is blue");
+    break;
+default:
+    Console.WriteLine("The color is unknown.");
+    break;
+}
+```
+
+#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
+```
+# CSharp formatting settings:
+[*.cs]
+csharp_indent_switch_labels = true
+``` 
+
 ### <a name="label">Размещение меток</a>
-|  Имя параметра | `csharp_indent_labels` |
-| ------------- |:-------------:|
-| **Применимые языки** | C#
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_indent_labels`  |  C#  | one_less | Visual Studio 2017 версии 15.3  |
+
 
 | Значение | Описание 
 | ------------- |:-------------|
@@ -956,9 +1060,10 @@ csharp_indent_labels = one_less
 
 ## <a name="spacing">Параметры интервалов</a>
 ### <a name="space_after_cast"> Пробел после приведения</a>
-|  Имя параметра | `csharp_space_after_cast` |
-| ------------- |:-------------:|
-| **Применимые языки** | C#
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+| `csharp_space_after_cast` |  C#  | false | Visual Studio 2017 версии 15.3  |
+
 
 | Значение | Описание | Применен |
 | ------------- |:-------------|:-------------|
@@ -973,9 +1078,10 @@ csharp_space_after_cast = true
 ``` 
 
 ### <a name="space_control_flow"> Пробел после ключевых слов в операторах потока управления</a>
-|  Имя параметра | `csharp_space_after_keywords_in_control_flow_statements` |
-| ------------- |:-------------:|
-| **Применимые языки** | C#
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+| `csharp_space_after_keywords_in_control_flow_statements` |  C#  | true | Visual Studio 2017 версии 15.3  |
+
 
 | Значение | Описание | Применен |
 | ------------- |:-------------|:-------------|
@@ -990,9 +1096,10 @@ csharp_space_after_keywords_in_control_flow_statements = true
 ``` 
 
 ### <a name="space_parameter_list"> Пробел между скобками в списке аргументов при объявлении метода</a>
-|  Имя параметра | `csharp_space_between_method_declaration_parameter_list_parentheses` |
-| ------------- |:-------------:|
-| **Применимые языки** | C#
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+| `csharp_space_between_method_declaration_parameter_list_parentheses` |  C#  | false | Visual Studio 2017 версии 15.3  |
+
 
 | Значение | Описание | Применен |
 | ------------- |:-------------|:-------------|
@@ -1007,9 +1114,10 @@ csharp_space_between_method_declaration_parameter_list_parentheses = true
 ```
 
 ### <a name="space_method_call"> Пробел между скобками в списке аргументов при вызове метода</a>
-|  Имя параметра | `csharp_space_between_method_call_parameter_list_parentheses` |
-| ------------- |:-------------:|
-| **Применимые языки** | C#
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|  `csharp_space_between_method_call_parameter_list_parentheses` |  C#  | false | Visual Studio 2017 версии 15.3  |
+
 
 | Значение | Описание | Применен |
 | ------------- |:-------------|:-------------|
@@ -1024,9 +1132,10 @@ csharp_space_between_method_call_parameter_list_parentheses = control_flow_state
 ```  
 
 ### <a name="space_other"> Пробел между скобками в других ситуациях</a>
-|  Имя параметра | `csharp_space_between_parentheses` |
-| ------------- |:-------------:|
-| **Применимые языки** | C#
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|  `csharp_space_between_parentheses`  |  C#  | false | Visual Studio 2017 версии 15.3  |
+
 
 | Значение | Описание | Применен |
 | ------------- |:-------------|:-------------|
@@ -1043,9 +1152,10 @@ csharp_space_between_parentheses = control_flow_statements, type_casts
 
 ## <a name="wrapping">Параметры переноса</a>
 ### <a name="wrapping_statement">Оставлять выражения и объявления элемента в одной строке</a>
-|  Имя параметра | `csharp_preserve_single_line_statements` |
-| ------------- |:-------------:|
-| **Применимые языки** | C#
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|  `csharp_preserve_single_line_statements`   |  C#  | true | Visual Studio 2017 версии 15.3  |
+
 
 | Значение | Описание |
 | ------------- |:-------------|
@@ -1072,9 +1182,10 @@ csharp_preserve_single_line_statements = true
 ``` 
 
 ### <a name="wrapping_block">Оставлять блок в одной строке</a>
-|  Имя параметра | `csharp_preserve_single_line_blocks` |
-| ------------- |:-------------:|
-| **Применимые языки** | C#
+| **Имя параметра** | **Применимые языки** | **По умолчанию в Visual Studio** | **Поддерживаемая версия** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|   `csharp_preserve_single_line_blocks`    |  C#  | true | Visual Studio 2017 версии 15.3  |
+
 
 | Значение | Описание |
 | ------------- |:-------------|
@@ -1129,7 +1240,7 @@ styleTitle:<br>
 
  `none` и `silent` являются синонимами. Они обозначают, что для пользователя не будут отображаться никакие сообщения. По сути это означает отключение правила.
 
- `suggestion` означает, что пользователю будут предоставлены следующие сообщения в списке ошибок и в интегрированной среде разработки. Серьезность `suggetion` означает использование правила именования, но не позволяет ему прерывать сборку.
+ `suggestion` означает, что пользователю будут предоставлены следующие сообщения в списке ошибок и в интегрированной среде разработки. Серьезность `suggestion` означает использование правила именования, но не позволяет ему прерывать сборку.
 
 Серьезность | effect
 ------------ | -------------
@@ -1160,16 +1271,6 @@ error | Если этот стиль не соблюдается, выводит
 | `event` | | |
 | `delegate` | | |
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
-```
-# CSharp formatting settings:
-[*.cs]
-dotnet_naming_rule.async_methods_end_in_async.symbols = any_async_methods
-
-dotnet_naming_symbols.any_async_methods.applicable_kinds = method
-dotnet_naming_symbols.any_async_methods.applicable_accessibilities = *
-dotnet_naming_symbols.any_async_methods.required_modifiers = async
-``` 
 
 ### <a name="style-specification"></a>Спецификация стиля
 Определяет стиль именования, применяемый к символам.
@@ -1189,15 +1290,6 @@ dotnet_naming_symbols.any_async_methods.required_modifiers = async
 | Разделитель слов | Обязательный разделитель между словами в идентификаторе. |
 | Регистр букв |`pascal_case`, `camel_case`, `first_word_upper`, `all_upper`, `all_lower` | 
 
-#### <a name="example-editorconfig-file"></a>Пример файла editorconfig:
-```
-# CSharp formatting settings:
-[*.cs]
-dotnet_naming_rule.async_methods_end_in_async.style = end_in_async
-
-dotnet_naming_style.end_in_async.required_suffix = Async
-dotnet_naming_style.end_in_async.capitalization = pascal_case
-``` 
 
 ### <a name="example-naming-convention"></a>Пример соглашения об именовании
 ```
