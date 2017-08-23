@@ -14,10 +14,10 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 1f384f593129c4a0e879762d6e2e7f5944171af6
+ms.sourcegitcommit: 0387b9a656f97d9354f95f121cad8422e93a69bc
+ms.openlocfilehash: b1d99a132c6e29239862e9bd7629eb47a679138f
 ms.contentlocale: ru-ru
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/18/2017
 
 ---
 # <a name="getting-started-with-wpf"></a>Начало работы с WPF
@@ -31,10 +31,11 @@ Windows Presentation Foundation (WPF) — это платформа польз�
 | Я хочу сравнить средства проектирования XAML... |[Разработка XAML в Visual Studio и Blend для Visual Studio](../designers/designing-xaml-in-visual-studio.md)|  
 |Не знакомы с .NET?|[Общие сведения о платформе .NET Framework](https://msdn.microsoft.com/en-us/library/zw4w595w\(v=vs.140\).aspx)<br /><br /> [.NET Framework Application Essentials](/dotnet/standard/application-essentials) (Основные сведения о приложениях .NET Framework)<br /><br /> [Начало работы с Visual C# и Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)|  
 |Дополнительные сведения о WPF...|[Введение в WPF](../designers/introduction-to-wpf.md)<br /><br /> [Общие сведения о языке XAML (WPF)](https://docs.microsoft.com/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br /> [Элементы управления](https://docs.microsoft.com/dotnet/framework/wpf/controls/)<br /><br /> [Общие сведения о привязке данных](https://docs.microsoft.com/dotnet/framework/wpf/data/data-binding-overview)<br /><br /> [Привязка данных WPF с помощью LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md)|  
-|Вы разработчик Windows Forms?|[Элементы управления Windows Forms и эквивалентные элементы управления WPF](https://docs.microsoft.com/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls).aspx)<br /><br /> [Взаимодействие WPF и Windows Forms](https://docs.microsoft.com/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|  
+|Вы разработчик Windows Forms?|[Элементы управления Windows Forms и эквивалентные элементы управления WPF](https://docs.microsoft.com/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br /> [Взаимодействие WPF и Windows Forms](https://docs.microsoft.com/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|  
   
 ## <a name="see-also"></a>См. также  
  [Библиотека классов (WPF)](https://docs.microsoft.com/dotnet/framework/wpf/class-library-wpf)   
  [Обзор разработки приложений](https://docs.microsoft.com/dotnet/framework/wpf/app-development/index)   
  [Домашняя страница документации по .NET](https://docs.microsoft.com/dotnet/index)   
  [Создание современных приложений для настольных систем с помощью Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+
