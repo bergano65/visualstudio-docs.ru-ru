@@ -1,7 +1,7 @@
 ---
-title: "Новые возможности Visual Studio 2017 | Документация Майкрософт"
+title: What's New in Visual Studio 2017 | Microsoft Docs
 ms.custom: 
-ms.date: 08/14/2017
+ms.date: 08/22/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -16,230 +16,236 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 8a544bd1e1242bb6fabe00f7842ac33ed9d9d444
-ms.openlocfilehash: ed82a978d4b72ed6ed178e715916c929b383eb14
+ms.sourcegitcommit: 3cd705d703b3d745c502290422e29b3c6da39ee5
+ms.openlocfilehash: 5bf00b7e5ed79f8679b837d0dcabf03550d2b849
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 08/22/2017
 
 ---
-# <a name="what39s-new-in-visual-studio-2017"></a>Новые возможности Visual Studio 2017
-#### <a name="updated-for-the-153-release"></a>Обновлено для выпуска 15.3
-Visual Studio 2017 обеспечивает беспрецедентную производительность для любого устройства, приложения или платформы. Используйте Visual Studio 2017 для разработки приложений для Android, iOS, Windows, Linux, а также веб-приложений и облачных приложений. Быстро пишите код, выполняйте отладку и диагностику с легкостью, часто тестируйте и уверенно создавайте выпуски решений. Visual Studio можно расширить и настроить, создав собственные расширения. Система управления версиями в этом выпуске делает разработку гибкой, а совместную работу — эффективной.
+# <a name="what39s-new-in-visual-studio-2017"></a>What&#39;s New in Visual Studio 2017
+#### <a name="updated-for-the-153-release"></a>Updated for the 15.3 release
+Unparalleled productivity for any dev, any app, and any platform. Use Visual Studio 2017 to develop apps for Android, iOS, Windows, Linux, web, and cloud. Code fast, debug and diagnose with ease, test often, and release with confidence. You can also extend and customize Visual Studio by building your own extensions. Use version control, be agile, and collaborate efficiently with this release!
 
-Далее приводится общий обзор внесенных изменений.
+Here is a high-level recap of the changes we've made:
 
-* **Пересмотренные основы**. Новые возможности настройки позволяют сократить время установки и выполнять установку любого компонента в любое время. Теперь, когда вы хотите загрузить большие решения и проекты или когда работаете с папками кода или даже одним файлом кода, Visual Studio запускается быстрее. Вам не нужно отвлекаться ни на что другое, особенно если вы работаете с DevOps.
-* **Быстродействие и производительность.** Мы уделили внимание новым и современным возможностям по разработке мобильных, облачных и классических приложений. Мы также улучшили общие процедуры по приобретению, повышению производительности и продуктивности разработчиков. Теперь Visual Studio запускается и реагирует быстрее, а также использует меньше памяти.
-* **Разработка облачных приложений с помощью Azure.** Встроенный набор инструментов Azure позволяет без проблем создавать ориентированные на облако приложения на базе Microsoft Azure. Visual Studio упрощает настройку, сборку, отладку, упаковку и развертывание приложений и служб в Azure.
-* **Разработка мобильных приложений.** Благодаря Xamarin в Visual Studio 2017 можно усовершенствовать проекты и получать результаты быстрее. Xamarin объединяет многоплатформенные требования к мобильности, используя одноядерную базу кода и набор навыков. Переходите на мобильные технологии, используя те же рабочие команды, вложения в технологии и код C#, чтобы предоставлять услуги для клиентов с опережением графика и в рамках бюджета. Не пропустите новые разработки мобильных технологий, чтобы дать возможность клиентам ощутить их преимущества, а также используйте портфель приложений для повышения производительности, чтобы повысить эффективность работы ваших сотрудников.
-* **Межплатформенная разработка**. Без проблем доставляйте программное обеспечение для любой целевой платформы. Распространяйте процессы DevOps на SQL Server с помощью средств работы с данными Redgate и безопасно автоматизируйте развертывания баз данных в Visual Studio. Разрабатывайте и выпускайте многоплатформенные игры с помощью набора средств Visual Studio для Unity. Или используйте .NET Core для создания приложений и библиотек, которые в неизменном виде выполняются в операционных системах Windows, Linux и macOS. (Новая возможность в 15.3: получение параллельной поддержки для пакетов SDK для .NET Core 2.0.)
+* **Redefined fundamentals**. A new setup experience means that you can install more quickly and install what you want when you need it. Whether you want to load large solutions and projects, or work on folders of code, or even a single file of code, Visual Studio starts faster. And, Visual Studio helps you stay focused on the big picture, especially for teams embracing DevOps.
+* **Performance and productivity**. We have focused on new and modern mobile, cloud, and desktop development capabilities. And, we've also improved the overall acquisition, performance, and general developer productivity experiences. Visual Studio starts faster, is more responsive, and uses less memory than before.
+* **Cloud app development with Azure**. A built-in suite of Azure tools enable you to easily create cloud-first apps powered by Microsoft Azure. Visual Studio makes it easy to configure, build, debug, package, and deploy apps and services on Azure.
+* **Mobile app development**. In Visual Studio 2017, you can innovate and get results fast with Xamarin, which unifies your multi-platform mobile requirements by using one core codebase and set of skills. Go mobile with your existing teams, technology investments, and C# code to deliver consumer-grade experiences ahead of schedule and under budget. Accelerate every step of the mobile lifecycle to deliver world-class consumer experiences or a portfolio of productivity apps to empower your workforce.
+* **Cross-platform development** Seamlessly deliver software to any targeted platform. Extend DevOps processes to SQL Server through Redgate Data Tools and safely automate database deployments from Visual Studio. Develop and release multiplatform games by using Visual Studio Tools for Unity. Or, use .NET Core to write apps and libraries that run unmodified across Windows, Linux, and macOS operating systems. (And new in 15.3: Get side-by-side support for .NET Core 2.0 SDKs.)
 
 > [!NOTE]
-> Полный список новых возможностей и функций Visual Studio 2017 см. в [этой](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) статье.
+> For a complete list of new features and functionality in Visual Studio 2017, see the [Release Notes](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
 
-Здесь приведены более подробные сведения о некоторых самых важных усовершенствованиях и новых функциях в Visual Studio 2017.
+Here is more detailed information about some of the most notable improvements and new features in Visual Studio 2017.
 
-## <a name="redefined-fundamentals"></a>Пересмотренные основы
-### <a name="a-new-setup-experience"></a>Новые возможности установки
+## <a name="redefined-fundamentals"></a>Redefined fundamentals
+### <a name="a-new-setup-experience"></a>A new setup experience
 
-[Скачайте Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) или [ознакомьтесь с требованиями к системе Visual Studio](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs).
+[Download Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) or [Check Visual Studio system requirements](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs)
 
- Visual Studio упрощает и ускоряет установку необходимых вам компонентов в любое время. Удаление тоже происходит без ошибок.
+ Visual Studio makes it easier and faster to install just the features you need, when you need them. And, it uninstalls cleanly, too.
 
- Самое важное изменение, которое вы заметите при установке Visual Studio, — это новый интерфейс установки. На вкладке **Рабочие нагрузки** вы увидите сгруппированные параметры установки для представления общей инфраструктуры, языков и платформ. Этот интерфейс охватывает все — от разработки классических приложений .NET до разработки приложений C++ для устройств с Windows, Linux и iOS.
+ The most important change to note when you install Visual Studio is its new setup experience. On the **Workloads** tab, you'll see installation options that are grouped to represent common frameworks, languages, and platforms. It covers everything from .NET desktop development to C++ application development on Windows, Linux, and iOS.
 
-Выбирайте нужные вам рабочие нагрузки и при необходимости изменяйте их.
+Choose the workloads you need, and change them when you need to.
 
- ![Диалоговое окно установки Visual Studio 2017](../install/media/install-visual-studio-enterprise.png "Экран установки Visual Studio 2017")
+ ![Visual Studio 2017 setup dialog](../install/media/install-visual-studio-enterprise.png "Visual Studio 2017 setup screen")
 
-Хотите выбрать собственные компоненты вместо рабочих нагрузок? Откройте вкладку **Отдельные компоненты** в установщике. Хотите установить языковые пакеты, не изменяя параметр "Язык Windows"? Откройте вкладку **Языковые пакеты** в установщике.  
+Want to pick your own components instead of using workloads? Select the **Individual components** tab from the installer. Want to install Language Packs without also having to change the Windows language option? Choose the **Language packs** tab of the installer.  
 
-Дополнительные сведения о новых возможностях установки, включая пошаговые инструкции по их реализации, см. в статье [Установка версии-кандидата Visual Studio 2017](../install/install-visual-studio.md).
+To learn more about the new installation experience, including step-by-step instructions that walk you through it, see our [Install Visual Studio](../install/install-visual-studio.md) page.
 
-## <a name="performance-and-productivity"></a>Быстродействие и производительность
-### <a name="sign-in-across-multiple-accounts"></a>Вход для нескольких учетных записей  
-В Visual Studio представлена новая служба удостоверений, которая позволяет совместно использовать учетные записи пользователей в Team Explorer, инструментах Azure, публикациях для Магазина Windows и т. д.
+## <a name="performance-and-productivity"></a>Performance and productivity
+### <a name="sign-in-across-multiple-accounts"></a>Sign in across multiple accounts  
+We've introduced a new identity service in Visual Studio that allows you to share user accounts across Team Explorer, Azure Tools, Windows Store publishing, and more.
 
-Вы также можете дольше оставаться в системе. Не требуется выполнять вход через каждые 12 часов. Дополнительные сведения см. в записи блога [Fewer Visual Studio Sign-in Prompts](https://blogs.msdn.microsoft.com/visualstudio/2016/08/15/fewer-visual-studio-sign-in-prompts/) (Сокращение количества запросов на вход в Visual Studio).
+You can stay signed in longer, too. Visual Studio won't ask you to sign in again every 12 hours. To learn more, see the [Fewer Visual Studio Sign-in Prompts](https://blogs.msdn.microsoft.com/visualstudio/2016/08/15/fewer-visual-studio-sign-in-prompts/) blog post.
 
-### <a name="start-visual-studio-faster"></a>Быстрый запуск Visual Studio
-Новый центр производительности Visual Studio поможет вам в оптимизации времени запуска интегрированной среды разработки (IDE). Здесь указываются все расширения и окна инструментов, которые снижают скорость запуска IDE. Его можно использовать для повышения производительности запуска, определив запуск расширения или необходимость открытия окон инструментов во время запуска.
+### <a name="start-visual-studio-faster"></a>Start Visual Studio faster
+The new Visual Studio Performance Center can help you optimize your IDE start-up time. The Performance Center lists all the extensions and tool windows that might slow down the IDE startup. You can use it to improve startup performance by determining when extensions start, or whether tool windows are open at startup.
 
-### <a name="decrease-solution-load-time"></a>Сокращение времени загрузки решения
-Работа с решениями, которые содержат большое число проектов, не означает, что вам нужно концентрироваться на всех файлах или проектах одновременно. Теперь вы можете выполнять задачи редактирования и отладки без ожидания загрузки каждого проекта в Visual Studio. Чтобы испробовать эти возможности в управляемых проектах, установите флажок **Загрузка упрощенного решения**, предварительно выбрав "Инструменты" -> "Параметры"-> "Проекты и решения".
+### <a name="decrease-solution-load-time"></a>Decrease solution load time
+Working on solutions that contain large numbers of projects doesn't mean you have to work with all the files or projects at one time. Now you can edit and debug without waiting for Visual Studio to load every project. To try this out with managed projects, turn on the  **Lightweight Solution load** from Tools -> Options -> Projects and Solutions.
 
-  ![Диалоговое окно "Параметры" в Visual Studio 2017](../ide/media/vs2017ide-lightweight-solution-load.png "Диалоговое окно "Параметры" в Visual Studio 2017. Загрузка упрощенного решения для всех решений")
+  ![Options dialog box in Visual Studio 2017](../ide/media/vs2017ide-lightweight-solution-load.png "Visual Studio 2017 - Options dialog box - Lightweight solution load for all solutions")
 
-### <a name="faster-on-demand-loading-of-extensions"></a>Ускоренная загрузка расширений по требованию
-Visual Studio перемещает свои расширения, а также работает со сторонними расширениями, поэтому они загружаются по требованию, а не во время запуска интегрированной среды разработки. Хотите узнать, какие расширения влияют на скорость запуска, загрузки решений и ввода данных? Эту информацию можно найти, выбрав "Справка"-> "Управление производительностью Visual Studio".
+### <a name="faster-on-demand-loading-of-extensions"></a>Faster on-demand loading of extensions
+Visual Studio is moving its extensions (and working with third-party extensions too) so that they load on-demand, rather than at IDE startup. Curious about which extensions impact startup, solution load, and typing performance? You can see this information in Help -> Manage Visual Studio Performance.
 
-  ![Диалоговое окно "Параметры" в Visual Studio 2017](../ide/media/vs2017ide-manage-vs-perf.png "Диалоговое окно справки Visual Studio. Управление производительностью")
+  ![Options dialog box in Visual Studio 2017](../ide/media/vs2017ide-manage-vs-perf.png "Visual Studio Help dialog box - Performance Management")
 
-#### <a name="manage-your-extensions-with-roaming-extensions-manager"></a>Управление расширениями с помощью диспетчера перемещаемых расширений
-При входе в Visual Studio настройка каждой среды разработки с использованием избранных расширений стала проще. Новый диспетчер перемещаемых расширений отслеживает все ваши избранные расширения, создавая синхронизируемый список в облаке.  
+#### <a name="manage-your-extensions-with-roaming-extensions-manager"></a>Manage your extensions with Roaming Extensions Manager
+It's easier to set up each development environment with your favorite extensions when you sign in to Visual Studio. The new Roaming Extension Manager keeps track of all your favorite extensions by creating a synchronized list in the cloud.  
 
-Чтобы просмотреть список расширений в Visual Studio, выберите "Инструменты" > "Расширения и обновления", а затем — "Диспетчер перемещаемых расширений".
+To see a list of your extensions in Visual Studio, click  Tools > Extensions & Updates, and then click the Roaming Extension Manager.
 
-![Visual Studio 2017: диалоговое окно "Расширения и обновления"](../ide/media/vs2017ide-extensions-and-updates.png "Visual Studio 2017: "Инструменты > Расширения и обновления"")
+![Visual Studio 2017 - Extensions and Updates dialog](../ide/media/vs2017ide-extensions-and-updates.png "Visual Studio 2017 - Tools > Extensions and Updates dialog")
 
-Диспетчер перемещаемых расширений отслеживает все установленные расширения, но вы можете выбрать те, которые нужно добавить в список перемещаемых.
+The Roaming Extension Manager tracks all the extensions you install, but you can choose which ones you want to add to your Roaming list.
 
-![Visual Studio 2017: диалоговое окно "Расширения и обновления"](../ide/media/vs2017ide-RoamingExtensionManager.png "Visual Studio 2017: диспетчер перемещаемых расширений")
+![Visual Studio 2017 - Extensions and Updates dialog](../ide/media/vs2017ide-RoamingExtensionManager.png "Visual Studio 2017 - Roaming Extension Manager")
 
-При использовании диспетчера перемещаемых расширений вы заметите в списке три типа значков.
-* ![Значок перемещаемого расширения](../ide/media/vs2017ide-roamedicon.png "Значок перемещаемого расширения")***Значок перемещаемого расширения***. Расширение включено в список перемещаемых, но еще не установлено на этом компьютере.
-  (Такие расширения можно установить с помощью кнопки **Скачать**.)
-* ![Значок перемещаемого и установленного расширения](../ide/media/vs2017ide-roamedinstalledicon.png "Значок перемещаемого и установленного расширения")***Значок перемещаемого и установленного расширения***. Все расширения включены в список перемещаемых и установлены в среде разработки.
-  (Если вы решите, что перемещать расширение не нужно, его можно удалить с помощью кнопки **Остановить перемещение**.)
-* ![Значок установленного расширения](../ide/media/vs2017ide-installedicon.png "Значок установленного расширения")***Значок установленного расширения***. Все расширения установлены в среде, но не включены в список перемещаемых.
-  (Расширения можно добавить в список перемещаемых с помощью кнопки **Начать перемещение**.)
+When you use the Roaming Extension Manager, there are three icon types on your list:
+* ![Roamed icon](../ide/media/vs2017ide-roamedicon.png "Roamed Icon") ***Roamed***: An extension that is part of this Roaming List, but not installed on your machine.
+  (You can install these by using the **Download** button.)
+* ![Roamed & Installed icon](../ide/media/vs2017ide-roamedinstalledicon.png "Roamed & Installed Icon") ***Roamed & Installed***: All extensions that are part of this Roaming List and installed in your dev environment.
+  (If you decide you do not want to roam, you can remove these by using the **Stop Roaming** button.)
+* ![Installed icon](../ide/media/vs2017ide-installedicon.png "Installed Icon") ***Installed***: All extensions that are installed in this environment, but are not part of your Roaming List.
+  (You can add extensions to the Roaming List by using the **Start Roaming** button.)
 
-Любое расширение, скачанное после того, как вы выполнили вход в систему, будет добавлено в список перемещаемых как **перемещаемое и установленное**, а значит, будет доступно вам на любом компьютере.
+Any extension that you download while you are signed in is added to your list as **Roamed & Installed** and is part of your Roaming list, which gives you access to it from any machine.
 
-### <a name="experience-live-architecture-dependency-validation-and-live-unit-testing"></a>Динамическая проверка зависимостей архитектуры и динамическое модульное тестирование
-При вводе кода в редакторе кода вы получите уведомления от Visual Studio о нарушениях правил архитектурных зависимостей в режиме реального времени. Это стало доступным с помощью схем проверки зависимостей (т. е. схем слоев).
+### <a name="experience-live-architecture-dependency-validation-and-live-unit-testing"></a>Experience live architecture dependency validation and live unit testing
+As you type code in the text editor, Visual Studio notifies you in real time of architectural dependency rule violations by using Dependency Validation diagrams (a.k.a. Layer diagrams).
 
-Ошибки отображаются в списке ошибок, а точное расположение проблемы обозначается в текстовом редакторе волнистыми линиями. Это снижает вероятность привнесения нежелательных зависимостей.
+Errors appear in the Error List and squiggles appear in the text editor showing you the precise location of the violation. You are now less likely to introduce unwanted dependencies.
 
-![Динамическая проверка архитектуры](../ide/media/vs2017ide-LiveArchitectureDepedendencyValidation.png "Динамическая проверка зависимостей архитектуры")
+![Live Architecture Validation](../ide/media/vs2017ide-LiveArchitectureDepedendencyValidation.png "Live Architecture Dependency validation")
 
-#### <a name="live-unit-testing"></a>Live Unit Testing
-В Visual Studio Enterprise 2017 функция Live Unit Testing предоставляет результаты динамического модульного тестирования и отображает результаты покрытия кода в редакторе в процессе кодирования. Она работает в проектах C# и Visual Basic для .NET Framework и .NET Core и поддерживает три платформы тестирования — MSTest, xUnit и NUnit.
+#### <a name="live-unit-testing"></a>Live unit testing
+In Visual Studio Enterprise 2017, live unit testing gives you live unit test results and code coverage in the editor while you are coding. It works with C# and Visual Basic projects for both the .NET Framework and .NET Core, and it supports three test frameworks of MSTest, xUnit, and NUnit.
 
-![Live Unit Testing](../ide/media/lut-codewindow.png "Пример новой функции Live Unit Testing в корпоративном выпуске Visual Studio")
+![Live Unit Testing](../ide/media/lut-codewindow.png "An example of our new Live Unit Testing feature in the Enterprise edition of Visual Studio")
 
-Дополнительные сведения см. в статье блога [Динамическое модульное тестирование в Visual Studio 2017 Enterprise](https://blogs.msdn.microsoft.com/visualstudio/2017/03/09/live-unit-testing-in-visual-studio-2017-enterprise/).
+For more information, see the [Live Unit Testing in Visual Studio 2017 Enterprise](https://blogs.msdn.microsoft.com/visualstudio/2017/03/09/live-unit-testing-in-visual-studio-2017-enterprise/) blog post.
 
-#### <a name="set-up-a-cicd-pipeline-to-run-automated-tests-efficiently"></a>Настройка конвейера CI/CD для эффективного выполнения автоматических тестов
-Автоматическое тестирование является ключевой частью любого конвейера DevOps. Оно позволяет согласованно и стабильно тестировать и выпускать решения в более короткие сроки. Потоки CI/CD (непрерывной интеграции и непрерывной доставки) могут помочь повысить эффективность процесса.
+#### <a name="set-up-a-cicd-pipeline-to-run-automated-tests-efficiently"></a>Set up a CI/CD pipeline to run automated tests efficiently
+Automated testing is a key part of any DevOps pipeline. It allows you to consistently and reliably test and release your solution on much shorter cycles. CI/CD (Continuous Integration and Continuous Delivery) flows can help make the process more efficient.
 
-Дополнительные сведения см. в записи блога [CI/CD pipeline for automated tests in DevOps](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) (Конвейер CI/CD для автоматических тестов в DevOps).
+For more information about automated tests, see the [CI/CD pipeline for automated tests in DevOps](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) blog post.
+
+And, for more information about what's new in the [Continuous Delivery Tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs extension, see the [Committing with Confidence: Commit Time Code Quality](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) blog post.
+
+### <a name="a-focus-on-accessibility"></a>A focus on accessibility
+In 15.3, we made over 1,700 targeted fixes to improve compatibility between Visual Studio and the assistive technologies that many of our customers use. There are dozens of scenarios that are more compatible with screen readers, high contrast themes, and other assistive technologies than ever before. The debugger, editor and shell have all gotten significant improvements, too.
+
+For more information, see the [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog post.
+
+### <a name="visual-studio-ide-enhancements"></a>Visual Studio IDE enhancements
+#### <a name="use-new-refactorings"></a>Use new refactorings
+In 15.3, we’ve added a handful of new refactorings, to include:
+*   Resolve merge conflict
+*   Add parameter (from CallSite)
+*   Generate overrides
+*   Add named argument
+*   Add null-check for parameters
+*   Insert digit-separators into literals
+*   Change base for numeric literals (for example, hex to binary)
+*   Convert if-to-switch
+*   Remove unused variable
+
+For more information, see the [Refactoring, Code Generation, and Quick Actions in Visual Studio](refactoring-code-generation-quick-actions.md) page.
 
 
-### <a name="visual-studio-ide-enhancements"></a>Усовершенствования интегрированной среды разработки Visual Studio
-#### <a name="use-new-refactorings"></a>Использование нового рефакторинга
-В выпуске 15.3 мы добавили несколько новых возможностей рефакторинга:
-*   Разрешение конфликтов слияния
-*   Добавление параметра (из CallSite)
-*   Создание переопределений
-*   Добавление именованного аргумента
-*   Добавление проверки значений NULL для параметра
-*   Добавление разделителей между цифрами в литералы
-*   Изменение основания для числовых литералов (например, шестнадцатеричное на двоичное)
-*   Преобразование if-to-switch
-*   Удаление неиспользуемой переменной
+#### <a name="interact-with-git"></a>Interact with Git
+When you are working with a project in Visual Studio, you can set up and quickly commit and publish your code to a Git service. You can also manage your Git repositories by using menu clicks from buttons in the bottom right-hand corner of the IDE.
 
-Дополнительные сведения см. на странице [Рефакторинг, создание кода и быстрые действия в Visual Studio](refactoring-code-generation-quick-actions.md).
+![Visual Studio 2017 interacts with the Git dialog](../ide/media/vsIDE-GitInteraction.png "Git tools in the Visual Studio IDE")
 
+#### <a name="view-and-navigate-code-with-structure-visualizer"></a>View and navigate code with Structure Visualizer
+The Structure Visualizer draws structure guide lines (a.k.a. indent guides) on your code. You can use them to visualize and discover what block of code you're in at any time without having to scroll. Hovering on the lines shows you the tooltips that let you see the opening of that block and its parents. It's  available for all the languages supported via TextMate grammars as well as C#, Visual Basic, and XAML.
 
-#### <a name="interact-with-git"></a>Взаимодействие с Git
-Если вы работаете с проектом в Visual Studio, вы можете настроить код, а также быстро зафиксировать и опубликовать его в службе Git. Вы также можете управлять репозиториями Git, используя пункты меню в правом нижнем углу IDE.
+![Visual Studio 2017 structure visualizer](../ide/media/vsIDE-StructureVisualizer.png "Structure visualizer in Visual Studio")
 
-![Диалоговое окно взаимодействия Visual Studio 2017 с Git](../ide/media/vsIDE-GitInteraction.png "Инструменты Git в интегрированной среде разработки Visual Studio")
+#### <a name="experience-improved-navigation-controls"></a>Experience improved navigation controls
+We've refreshed the navigation experience to help you get from A to B with greater confidence and fewer distractions.
 
-#### <a name="view-and-navigate-code-with-structure-visualizer"></a>Просмотр кода и навигация по коду с помощью визуализатора структуры
-Визуализатор структуры создает направляющие структуры (т. е. направляющие отступа) в вашем коде. Вы можете их использовать в любое время для визуализации и определения блока кода, в котором вы находитесь, без необходимости прокрутки. Если навести указатель мыши на строки, отображаются подсказки, которые позволят увидеть открытие блока и его родительских элементов. Эта возможность доступна для всех языков поддерживаемых грамматиками TextMate, а также языков C#, Visual Basic и XAML.
+* **Go To** (Ctrl+F12) &ndash; navigate from any base type or member to its various implementations.
 
-![Визуализатор структуры Visual Studio 2017](../ide/media/vsIDE-StructureVisualizer.png "Визуализатор структуры Visual Studio")
+* **Go To All** (Ctrl+T or Ctrl+,) &ndash; navigate directly to any file/type/member/symbol declaration. You can filter your result list or use the query syntax (for example, "f searchTerm" for files, "t searchTerm" for types, etc.).
 
-#### <a name="experience-improved-navigation-controls"></a>Улучшенные возможности перехода
-Мы обновили возможности навигации, чтобы помочь вам максимально быстро попасть из точки А в точку В с наименьшими препятствиями.
+ ![Improved Go To All](../ide/media/vs2017ide-navigation-go-to.png "Example of the improved Go To All feature")
 
-* **Перейти** (CTRL+F12) — позволяет перейти от любого базового типа или элемента к его различным реализациям.
+* **Find All References (Shift+F12)** &ndash; with syntax colorization, you can group Find All Reference results by a combination of project, definition, and path. You can also "lock" results so that you can continue to find other references without losing your original results.
 
-* **Перейти ко всем** (CTRL+T или CTRL+,) — позволяет перейти напрямую к любому объявлению файла, типа, элемента или символа. Вы можете отфильтровать список результатов или использовать синтаксис запроса (например, "f searchTerm" для файлов, "t searchTerm" для типов и т. д.).
+ ![New Find All References tool](../ide/media/vs2017ide-find-all-references.png "Example of the new Find All References tool")
 
- ![Обновленный элемент "Перейти ко всем"](../ide/media/vs2017ide-navigation-go-to.png "Пример обновленной функции "Перейти ко всем"")
+* **Indent Guides** &ndash; dotted, gray vertical lines act as landmarks in code to provide context within your frame of view. You may recognize them from the popular Productivity Power Tools.
 
-* **Найти все ссылки** (SHIFT+F12) — используя раскраску синтаксиса, вы можете сгруппировать результаты "Найти все ссылки" с помощью сочетания проекта, определения и пути. Вы также можете "заблокировать" результаты, чтобы продолжить поиск других ссылок без потери первоначальных результатов.
-
- ![Новый инструмент "Найти все ссылки"](../ide/media/vs2017ide-find-all-references.png "Пример нового инструмента "Найти все ссылки"")
-
-* **Направляющие отступа** — пунктирные серые вертикальные линии, выполняющие функцию ориентиров в коде, чтобы предоставить контекст в кадре представления. Возможно, они вам знакомы из Productivity Power Tools.
-
-Дополнительные сведения о новых функциях производительности см. в записи блога о [производительности в Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/), опубликованной Марком Уилсоном-Томасом (Mark Wilson-Thomas).
+For more information about our new productivity features, see the [Productivity in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/) blog post by Mark Wilson-Thomas.
 
 ### <a name="visual-c"></a>Visual C++
-Вы увидите некоторые улучшения в Visual Studio, а именно — распространение основных рекомендаций C++ в Visual Studio, обновление компилятора с помощью добавления расширенной поддержки функций C++11 и C++, а также добавление и обновление функциональных возможностей библиотек C++. Мы также повысили производительность интегрированной среды разработки C++, рабочих нагрузок установки и т. д.
+You'll see several improvements in Visual Studio, such as distributing C++ Core Guidelines with Visual Studio, updating the compiler by adding enhanced support for C++11 and C++ features, and adding and updating functionality in the C++ libraries. We've also improved the performance of the C++ IDE, installation workloads, and more.
 
-Мы устранили более 250 ошибок и заявленных проблем в компиляторе и других инструментах. Информация о многих из этих ошибок поступила к нам от клиентов через [Microsoft Connect](https://connect.microsoft.com/VisualStudio "Microsoft Connect").
+As well, we've fixed over 250 bugs and reported issues in the compiler and tools, many submitted by customers through [Microsoft Connect](https://connect.microsoft.com/VisualStudio "Microsoft Connect").
 
-Дополнительные сведения см. в статье [Новые возможности Visual C ++ в Visual Studio 2017](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio).  
+For complete details, see our [What's New for Visual C++ in Visual 2017](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio) page.  
 
-### <a name="debugging-and-diagnostics"></a>Отладка и диагностика
-#### <a name="run-to-click"></a>Выполнение до щелкнутого:
-Теперь вы можете выполнить более простой переход в процессе отладки. Нет необходимости настраивать точки останова, чтобы остановиться на нужной строке. При остановке в отладчике просто щелкните значок рядом со строкой кода. Выполнение кода остановится на выбранной строке, когда в следующий раз дойдет до нее.
+### <a name="debugging-and-diagnostics"></a>Debugging and Diagnostics
+#### <a name="run-to-click"></a>Run to Click:
+Now, you can more easily skip ahead during debugging without setting a breakpoint to stop on the line you want. When you are stopped in the debugger, just click the icon that appears next to the line of code. Your code will run and stop on that line the next time it is hit in your code path.
 
-![Отладка в Visual Studio 2017. Выполнение до щелчка](../ide/media/vs2017ide-RunToClick.png "Выполнение до щелчка в отладчике Visual Studio и диагностика")
+![Visual Studio 2017 debug - Run To Click](../ide/media/vs2017ide-RunToClick.png "Run To Click in Visual Studio debug & diagnostics")
 
-#### <a name="the-new-exception-helper"></a>Новый помощник по исправлению ошибок:
-Новый помощник по исправлению ошибок поможет мгновенно просмотреть сведения об исключении. Данные представлены кратко и содержательно. Вы также можете получить быстрый доступ к внутренним исключениям. При диагностике исключения NullReferenceException вы сможете быстро увидеть, какой параметр имел значение NULL, прямо в помощнике по исправлению ошибок.
+#### <a name="the-new-exception-helper"></a>The New Exception Helper:
+The new Exception Helper helps you view your exception information at-a-glance. The information is presented in a compact form with instant access to inner exceptions. When you diagnose a NullReferenceException, you can quickly see what was null right inside the Exception Helper.
 
-![Диалоговое окно нового помощника по исправлению ошибок в Visual Studio](../ide/media/vs2017ide-ExceptionHelper.png "Диалоговое окно нового помощника по исправлению ошибок")
+![The New Exception Helper dialog in Visual Studio](../ide/media/vs2017ide-ExceptionHelper.png "The New Exception Helper dialog")
 
-Дополнительные сведения см. в публикации [Using the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (Использование нового помощника по исправлению ошибок в Visual Studio).
+For more information, see the [Using the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) blog post.
 
-## <a name="cloud-app-development-with-azure"></a>Разработка облачных приложений с помощью Azure
-### <a name="azure-functions-tools"></a>Средства функций Azure
-В рамках рабочей нагрузки "Разработка для Azure" мы включили средства, упрощающие разработку функций Azure с помощью предварительно скомпилированных библиотек классов C#. Теперь вы можете создавать, запускать проекты и выполнять их отладку на локальном компьютере разработчика, а затем публиковать их из Visual Studio непосредственно в Azure.
+## <a name="cloud-app-development-with-azure"></a>Cloud app development with Azure
+### <a name="azure-functions-tools"></a>Azure Functions Tools
+As part of the "Azure development" workload, we've included tools to help you develop Azure functions by using pre-compiled C# class libraries. Now you can build, run, and debug on your local development machine and then publish directly to Azure from Visual Studio.
 
-Дополнительные сведения см. на странице [Средства функций Azure для Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs).
+For more information, see the [Azure Functions Tools for Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs) page.
 
-## <a name="mobile-app-development"></a>Разработка мобильных приложений
+## <a name="mobile-app-development"></a>Mobile app development
 ### <a name="xamarin"></a>Xamarin
-В рамках рабочей нагрузки "Разработка мобильных приложения на .NET" разработчики, знакомые с C#, .NET и Visual Studio, могут доставлять собственные приложения Android, iOS и Windows с помощью Xamarin. Разработчики могут рассчитывать на такие же возможности и производительность при работе с Xamarin для мобильных приложений, включая удаленную отладку на устройствах Android, iOS и Windows, без необходимости изучать нативные языки, например Objective-C или Java. &mdash;
+As part of the "Mobile development with .NET" workload, developers familiar with C#, .NET, and Visual Studio can deliver native Android, iOS, and Windows apps by using Xamarin. Developers can enjoy the same the power and productivity when working with Xamarin for mobile apps, including remote debugging on Android, iOS, and Windows devices&mdash;without having to learn native coding languages like Objective-C or Java.
 
-Дополнительные сведения см. на странице [Visual Studio и Xamarin](../cross-platform/visual-studio-and-xamarin.md).
+For more information, see the [Visual Studio and Xamarin](../cross-platform/visual-studio-and-xamarin.md) page.
 
-### <a name="entitlements-editor"></a>Редактор объемов обслуживания
-**Новые возможности версии 15.3**: для выполнения задач разработки для iOS мы добавили автономный редактор объемов обслуживания. Он имеет понятный пользовательский интерфейс с простой функциональностью. Чтобы запустить его, дважды щелкните файл entitlements.plist.
+### <a name="entitlements-editor"></a>Entitlements editor
+**New in 15.3**: For your iOS development needs, we've added a stand-alone Entitlements editor. It includes a user-friendly UI that can be easily browsed. To launch it, double-click your entitlements.plist file.
 
-![Редактор объемов обслуживания для Xamarin](../ide/media/xamarin-entitlements-editor.png "Редактор объемов обслуживания для Xamarin")
+![Entitlement editor for Xamarin](../ide/media/xamarin-entitlements-editor.png "Entitlement editor for Xamarin")
 
-## <a name="cross-platform-development"></a>Кроссплатформенная разработка
-### <a name="redgate-data-tools"></a>Средства для работы с данными Redgate
-Чтобы расширить возможности DevOps для разработки баз данных SQL Server, в следующих выпусках Visual Studio 2017 были добавлены средства для работы с данными Redgate.
+## <a name="cross-platform-development"></a>Cross-platform development
+### <a name="redgate-data-tools"></a>Redgate Data Tools
+To extend DevOps capabilities to SQL Server database development, Redgate Data Tools are now available in the following editions of Visual Studio 2017.
 
-В составе Visual Studio 2017 Enterprise:
-- [Redgate ReadyRoll Core](http://www.red-gate.com/products/sql-development/readyroll/entrypage/microsoft-and-readyroll?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=docs-newinvs) помогает разрабатывать скрипты переноса, управлять изменениями в базах данных с помощью системы управления версиями, а также автоматизировать безопасное развертывание изменений базы данных SQL Server вместе с изменениями приложений.
-- [Redgate SQL Prompt Core](http://www.red-gate.com/products/sql-development/sql-prompt/entrypage/microsoft-and-sql-prompt?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=docs-newinvs) помогает писать запросы SQL быстрее и точнее с помощью интеллектуального завершения кода. SQL Prompt автоматически завершает объекты и ключевые слова базы данных и системы и предлагает варианты при вводе текста. Код становится чище и содержит меньше ошибок, так как вам не нужно запоминать имя или псевдоним каждого столбца.
+Included with Visual Studio 2017 Enterprise:
+- [Redgate ReadyRoll Core](http://www.red-gate.com/products/sql-development/readyroll/entrypage/microsoft-and-readyroll?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=docs-newinvs) helps you develop migration scripts, manage database changes using source control, and safely automate deployments of SQL Server database changes alongside applications changes.
+- [Redgate SQL Prompt Core](http://www.red-gate.com/products/sql-development/sql-prompt/entrypage/microsoft-and-sql-prompt?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=docs-newinvs) helps you write SQL more quickly and accurately with the help of intelligent code completion. SQL Prompt autocompletes database and system objects and keywords, and offers column suggestions as you type. This results in cleaner code and fewer errors because you don't have to remember every column name or alias.
 
-В составе всех выпусков Visual Studio 2017:
-- [Redgate SQL Search](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) повышает продуктивность работы, позволяя быстро находить фрагменты и объекты SQL в нескольких базах данных.
+Included with all editions of Visual Studio 2017:
+- [Redgate SQL Search](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) increases your productivity by helping you quickly find SQL fragments and objects across multiple databases.
 
-Дополнительные сведения см. в статье блога [Средства работы с данными Redgate в Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/).
+To learn more, see our [Redgate Data Tools in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/) blog post.
 
-### <a name="visual-studio-tools-for-unity"></a>Набор средств Visual Studio для Unity
-В рамках рабочей нагрузки "Разработка игр для Unity" мы включили средства для разработки кроссплатформенных приложений для создания двумерных и трехмерных игр и интерактивного содержимого. Создайте одну игру и опубликуйте ее на 21 платформе, включая все мобильные платформы, WebGL, настольные системы (Mac, ПК и Linux), Интернет или приставки, с помощью Visual Studio 2017 и Unity 5.6.
+### <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
+As part of the "Games development for Unity" workload, we've included tools to help you develop cross-platform to create 2D and 3D games and interactive content. Create once and publish to 21 platforms, including all mobile platforms, WebGL, Mac, PC and Linux desktop, web, or consoles by using Visual Studio 2017 and Unity 5.6.
 
-Дополнительные сведения см. на странице сведений об [инструментах Visual Studio для Unity](../cross-platform/visual-studio-tools-for-unity.md).
+For more information, see the [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) page.
 
 ### <a name="net-core"></a>.NET Core
-.NET Core — это универсальная, модульная, кроссплатформенная и открытая версия платформы .NET Standard, которая содержит множество тех же API, что и .NET Framework.
+.NET Core is a general purpose, modular, cross-platform, and open source implementation of the .NET Standard and contains many of the same APIs as the .NET Framework.
 
-Платформа .NET Core состоит из нескольких компонентов, включая управляемые компиляторы, среду выполнения, библиотеки базовых классов и многочисленные модели приложений, такие как ASP.NET Core. Она поддерживает три основные операционные системы: Windows, Linux и Mac OS. .NET Core можно использовать при работе с устройствами, облаком, а также в сценариях внедрения и Интернета вещей.
+The .NET Core platform is made of several components, which include the managed compilers, the runtime, the base class libraries, and numerous application models, such as ASP.NET Core. .NET Core supports three main operating systems: Windows, Linux, and macOS. You can use .NET Core in device, cloud, and embedded/IoT scenarios.
 
-А теперь она включает поддержку Docker.
+And, it now includes Docker support
 
-**Новые возможности версии 15.3**: Visual Studio 2017 версии 15.3 поддерживает разработку .NET Core 2.0. (В версии 15.3 для использования .NET Core 2.0 необходимо отдельно скачать и установить пакет SDK для .NET Core 2.0.)
+**New in 15.3**: Visual Studio 2017 version 15.3 supports .NET Core 2.0 development. (In 15.3, using .NET Core 2.0 requires downloading and installing the .NET Core 2.0 SDK separately.)
 
-Дополнительные сведения см. в [руководстве по .NET Core](https://docs.microsoft.com/dotnet/core/index).
+For more information, see the [.NET Core Guide](https://docs.microsoft.com/dotnet/core/index) page.
 
-## <a name="talk-to-us"></a>Обращайтесь к нам  
- Зачем отправлять отзыв группе Visual Studio? Потому что мы серьезно относимся к отзывам клиентов — они позволяют нам совершенствовать продукты.
+## <a name="talk-to-us"></a>Talk to us  
+ Why send feedback to the Visual Studio team? Because we take customer feedback seriously: It drives much what we do.
 
-Если вы хотите внести предложение по улучшению Visual Studio или сообщить о проблеме, дополнительные сведения см. на странице [Talk to Us](../ide/talk-to-us.md) (Обращайтесь к нам).
+If you want to make suggestion about how we can improve Visual Studio, or report a problem, please see the [Talk to Us](../ide/talk-to-us.md) page for more information.
 
-### <a name="report-a-problem"></a>Сообщите о проблеме  
- Иногда для передачи всех последствий возникшей проблемы простого сообщения недостаточно. В случае зависания, сбоя или других проблем с производительностью вы можете предоставить нам шаги для воспроизведения и вспомогательные файлы (например, снимки экрана и файлы дампа трассировки и кучи) с помощью средства **Сообщить о проблеме**. Дополнительные сведения об использовании этого средства см. на странице [How to Report a Problem](how-to-report-a-problem-with-visual-studio-2017.md) (Как сообщить о проблеме).
+### <a name="report-a-problem"></a>Report a problem  
+ Sometimes, a message isn't enough to convey the full impact of a problem you've encountered. If you experience a hang, crash, or other performance issue, you can easily share repro steps and supporting files (such as screenshots and trace & heap dump files) with us by using the **Report a Problem** tool. For more information about how to use this tool, see the [How to Report a Problem](how-to-report-a-problem-with-visual-studio-2017.md) page.
 
-### <a name="track-your-issue-in-connect"></a>Отслеживание проблемы в Connect  
- Если требуется отследить состояние отзыва о Visual Studio, перейдите в модуль [Connect](http://connect.microsoft.com/) и сообщите там об ошибке. После отправки можно вернуться в Connect и отслеживать его состояние.
+### <a name="track-your-issue-in-connect"></a>Track your issue in Connect  
+ If want to track the status of your Visual Studio feedback, go to [Connect](http://connect.microsoft.com/) and report the bug there. After you report it, you can return to Connect to track its status.
 
-## <a name="see-also"></a>См. также
-* [Заметки о выпуске Visual Studio 2017](https://www.visualstudio.com/news/vs2015-vs)
-* [What's New in Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio) (Новые возможности Visual C++)
-* [What's New in C#](https://docs.microsoft.com/dotnet/csharp/csharp-7) (Новые возможности C#)  
-* [What's New for Team Foundation Server](https://www.visualstudio.com/docs/whats-new) (Новые возможности Team Foundation Server)
-* [Новые возможности Visual Studio для Mac](https://www.visualstudio.com/vs/visual-studio-mac/)
+## <a name="see-also"></a>See Also
+* [Visual Studio 2017 Release Notes](https://www.visualstudio.com/news/vs2015-vs)
+* [What's New in Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
+* [What's New in C#](https://docs.microsoft.com/dotnet/csharp/csharp-7)  
+* [What's New for Team Foundation Server](https://www.visualstudio.com/docs/whats-new)
+* [What's New in Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/)
 
