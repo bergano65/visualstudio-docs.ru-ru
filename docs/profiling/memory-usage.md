@@ -1,5 +1,5 @@
 ---
-title: "Анализ использования памяти в Visual Studio | Документация Майкрософт"
+title: Analyze Memory Usage in Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
 ms.reviewer: 
@@ -28,162 +28,162 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
-ms.openlocfilehash: eefa071731dd6cd6a681edd78c22d345e6b0f799
+ms.translationtype: HT
+ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
+ms.openlocfilehash: 56ff9bcee976de7ae6be4bc410c275438f0f16ec
 ms.contentlocale: ru-ru
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/23/2017
 
 ---
-# <a name="analyze-memory-usage"></a>Анализ использования памяти
-С помощью встроенного в отладчик средства диагностики **Использование памяти** вы сможете находить утечки памяти и выявлять ее неэффективное использование. С помощью средства "Использование памяти" можно сделать один или несколько *снимков* управляемой и собственной памяти в куче. Вы можете делать снимки приложений .NET, приложений на основе машинного кода, а также смешанных программ (на основе .NET и машинного кода).  
+# <a name="analyze-memory-usage"></a>Analyze Memory Usage
+Find memory leaks and inefficient memory while you're debugging with the debugger-integrated **Memory Usage** diagnostic tool. The Memory Usage tool lets you take one or more *snapshots* of the managed and native memory heap. You can collect snapshots of .NET, native, or mixed mode (.NET and native) apps.  
   
--   Можно проанализировать один мгновенный снимок, чтобы понять относительное влияние типов объектов на использование памяти и найти код в приложении, который использует память неэффективно.  
+-   You can analyze a single snapshot to understand the relative impact of the object types on memory use, and to find code in your app that uses memory inefficiently.  
   
--   Вы также можете сравнить (diff) два мгновенных снимка приложения, чтобы найти области в коде, вызывающие рост объема используемой памяти.  
+-   You can also compare (diff) two snapshots of an app to find areas in your code that cause the memory use to increase over time.  
   
- На рисунке ниже показано окно **Средства диагностики** (доступно в Visual Studio 2015 с обновлением 1 и в более поздних версиях).  
+ The following graphic shows the **Diagnostic Tools** window (available in Visual Studio 2015 Update 1 and later versions):  
   
  ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
- Хотя с помощью средства **Использование памяти** можно делать снимки памяти в любой момент, для управления выполнением приложения во время анализа ошибок производительности вы можете использовать отладчик Visual Studio. Задание точек останова, пошаговое выполнение, всеобщее прерывание и другие действия отладчика могут помочь вам сосредоточиться на анализе производительности при обращении к наиболее важным ветвям кода. Выполняя эти действия, когда приложение запущено, вы сможете исключить влияние не интересующего вас кода и значительно ускорить диагностику проблем.  
+ Although you can collect memory snapshots at any time in the **Memory Usage** tool, you can use the Visual Studio debugger to control how your application executes while investigating performance issues. Setting breakpoints, stepping, Break All, and other debugger actions can help you focus your performance investigations on the code paths that are most relevant. Performing those actions while your app is running can eliminate the noise from the code that doesn't interest you and can significantly reduce the amount of time it takes you to diagnose an issue.  
   
- Средство анализа памяти можно также использовать отдельно от отладчика. См. раздел [Memory Usage without Debugging](../profiling/memory-usage-without-debugging2.md).  
+ You can also use the memory tool outside of the debugger. See [Memory Usage without Debugging](../profiling/memory-usage-without-debugging2.md).  
   
 > [!NOTE]
->  **Поддержка пользовательского распределителя** . Профилировщик внутренней памяти работает путем сбора данных событий [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) выделения памяти, создаваемых во время выполнения.  Распределители в CRT и пакете Windows SDK аннотированы на уровне исходного кода, что позволяет регистрировать их данные выделения.  Если вы создаете собственные распределители, любые функции, возвращающие указатель на только что выделенную память в куче, можно декорировать с помощью [__declspec](/cpp/cpp/declspec)(allocator), как показано в этом примере для myMalloc:  
+>  **Custom Allocator Support** The native memory profiler works by collecting allocation [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) event data emitted by during runtime.  Allocators in the CRT and Windows SDK have been annotated at the source level so that their allocation data can be captured.  If you are writing your own allocators, then any functions that return a pointer to newly allocated heap memory can be decorated with [__declspec](/cpp/cpp/declspec)(allocator), as seen in this example for myMalloc:  
 >   
 >  `__declspec(allocator) void* myMalloc(size_t size)` 
 
-## <a name="collect-memory-usage-data"></a>Сбор данных об использовании памяти
+## <a name="collect-memory-usage-data"></a>Collect memory usage data
 
-1.  Откройте проект для отладки в Visual Studio и установите точку останова в приложении в точке, где вы хотите начать проверку использования памяти.
+1.  Open the project you want to debug in Visual Studio and set a breakpoint in your app at the point where you want to begin examining memory usage.
 
-    Если вы подозреваете, что в определенной области памяти может возникнуть проблема, задайте первую точку останова до ее возникновения.
+    If you have an area where you suspect a memory issue, set the first breakpoint before the memory issue occurs.
 
     > [!TIP]
-    >  Так как из-за изменений в объеме выделяемой памяти создание профиля памяти для интересующей вас операции может быть затруднительно, разместите точки останова в начале и в конце операции или пройдите по ней, чтобы попробовать найти точку, в которой объем памяти изменился. 
+    >  Because it can be challenging to capture the memory profile of an operation that interests you when your app frequently allocates and de-allocates memory, set breakpoints at the start and end of the operation (or step through the operation) to find the exact point that memory changed. 
 
-2.  Установите вторую точку останова в конце функции или области кода, который требуется проанализировать, либо после возникновения предполагаемой проблемы с памятью.
+2.  Set a second breakpoint at the end of the function or region of code that you want to analyze (or after a suspected memory issue occurs).
   
-3.  Окно **Средства диагностики** появится автоматически, если вы не отключали эту функцию. Чтобы снова открыть окно, щелкните **Отладка | Окна | Показать средства диагностики**.
+3.  The **Diagnostic Tools** window appears automatically unless you have turned it off. To bring up the window again, click **Debug / Windows / Show Diagnostic Tools**.
 
-4.  На панели инструментов выберите **Использование памяти**, применяя параметр **Выбор средств**.
+4.  Choose **Memory Usage** with the **Select Tools** setting on the toolbar.
 
-     ![Вывод средств диагностики](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+     ![Show Diagnostics Tools](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
 
-5.  Щелкните **Отладка | Начать отладку** (**Запустить** на панели инструментов или **F5**).
+5.  Click **Debug / Start Debugging** (or **Start** on the toolbar, or **F5**).
 
-     По завершении загрузки приложения отображается представление "Сводка" средств диагностики.
+     When the app finishes loading, the Summary view of the Diagnostics Tools appears.
 
-     ![Вкладка "Сводка" средств диагностики](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+     ![Diagnostics Tools Summary Tab](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
      > [!NOTE]
-     >  Поскольку сбор данных об использовании памяти может повлиять на производительность отладки приложений, основанных на машинном коде, а также смешанных программ, по умолчанию снимки памяти выключены. Чтобы включить моментальные снимки для приложений на базе машинного кода или для смешанных программ, начните сеанс отладки (клавиша **F5**). Когда отобразится окно **Средства диагностики**, перейдите на вкладку "Использование памяти" и выберите **Профилирование кучи**.  
+     >  Because collecting memory data can affect the debugging performance of your native or mixed-mode apps, memory snapshots are disabled by default. To enable snapshots in native or mixed-mode apps, start a debugging session (Shortcut key: **F5**). When the **Diagnostic Tools** window appears, choose the Memory Usage tab, and then choose **Heap Profiling**.  
      >   
-     >  ![Включение снимков](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
+     >  ![Enable snapshots](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
      >   
-     >  Остановите (сочетание клавиш: **Shift + F5**) и перезапустите отладку.  
+     >  Stop (Shortcut key: **Shift + F5**) and restart debugging.  
 
-6.  Чтобы сделать моментальный снимок в начале сеанса отладки, на сокращенной панели инструментов **Использование памяти** выберите команду **Сделать снимок**. (Таким образом здесь также можно задать точку останова.)
+6.  To take a snapshot at the start of your debugging session, choose **Take snapshot** on the **Memory Usage** summary toolbar. (It may help to set a breakpoint here as well.)
 
-    ![Создание снимка](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot") 
+    ![Take snapshot](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot") 
      
      > [!TIP]
-     >  Чтобы получить базовые показатели для сравнения состояния памяти, сделайте снимок в начале сеанса отладки.  
+     >  To create a baseline for memory comparisons, consider taking a snapshot at the start of your debugging session.  
 
-6.  Запустите сценарий, который вызвал срабатывание первой точки останова.
+6.  Run the scenario that will cause your first breakpoint to be hit.
 
-7.  После приостановки отладчика на первой точке останова на сокращенной панели инструментов **Использование памяти** выберите команду **Сделать снимок**.  
+7.  While the debugger is paused at the first breakpoint, choose **Take snapshot** on the **Memory Usage** summary toolbar.  
 
-8.  Нажмите клавишу F5, чтобы запустить приложение до второй точки останова.
+8.  Hit F5 to run the app to your second breakpoint.
 
-9.  Теперь создайте еще один моментальный снимок.
+9.  Now, take another snapshot.
 
-     На этом этапе можно начать анализировать данные.    
+     At this point, you can begin to analyze the data.    
   
-## <a name="analyze-memory-usage-data"></a>Анализ данных использования памяти
-В строках сводной таблицы "Использование памяти" приводятся моментальные снимки, сделанные во время сеанса отладки, и ссылки на дополнительные подробные представления.
+## <a name="analyze-memory-usage-data"></a>Analyze memory usage data
+The rows of Memory Usage summary table lists the snapshots that you have taken during the debugging session and provides links to more detailed views.
 
-![Сводная таблица памяти](../profiling/media/dbgdiag_mem_summarytable.png "DBGDIAG_MEM_SummaryTable")
+![Memory summary table](../profiling/media/dbgdiag_mem_summarytable.png "DBGDIAG_MEM_SummaryTable")
 
- Имена столбцов зависят от режима отладки, выбранного в параметрах проекта: .NET, отладка машинного кода или смешанная отладка (для .NET и машинного кода).  
+ The name of the columns depend on the debugging mode you choose in the project properties: .NET, native, or mixed (both .NET and native).  
   
--   В столбцах **Объекты (разн.)** и **Выделения (разл.)** указывается число объектов в .NET и внутренней памяти на момент создания моментального снимка.  
+-   The **Objects (Diff)** and **Allocations (Diff)** columns display the number of objects in .NET and native memory when the snapshot was taken.  
   
--   В столбце **Размер кучи (разн.)** указывается число байтов в куче .NET и в собственных кучах. 
+-   The **Heap Size (Diff)** column displays the number of bytes in the .NET and native heaps 
 
-Если сделать несколько снимков, в каждой строке сводной таблицы будет отображаться разница значений с предыдущим снимком.  
+When you have taken multiple snapshots, the cells of the summary table include the change in the value between the row snapshot and the previous snapshot.  
 
-Чтобы выполнить анализ данных об использовании памяти, щелкните одну из ссылок, которая позволяет открыть подробный отчет об использовании памяти:  
+To analyze memory usage, click one of the links that opens up a detailed report of memory usage:  
 
--   Чтобы отобразить подробности об изменении значения текущего моментального снимка по сравнению с предыдущим, щелкните разницу в значениях слева от стрелки (![Увеличение объема используемой памяти](../profiling/media/prof-tour-mem-usage-up-arrow.png "Увеличение объема используемой памяти")). Красная стрелка обозначает, что объем используемой памяти увеличился, а зеленая — что он снизился.
+-   To view details of the difference between the current snapshot and the previous snapshot, choose the change link to the left of the arrow (![Memory Usage Increase](../profiling/media/prof-tour-mem-usage-up-arrow.png "Memory Usage Increase")). A red arrow indicates an increase in memory usage, and a green arrow to indicates a decrease.
 
     > [!TIP]
-    >  Чтобы быстрее выявить проблемы с памятью, типы объектов в отчетах об изменениях можно отсортировать по наибольшему увеличению общего объема (щелкните ссылку "Изменения" в столбце **Объекты (разн.)**) или по наибольшему увеличению размера кучи (щелкните ссылку "Изменения" в столбце **Размер кучи (разн.)**).
+    >  To help identify memory issues more quickly, the diff reports are sorted by object types that increased the most in overall number (click the change link in **Objects (Diff)** column) or that increased the most in overall heap size (click the change link in **Heap Size (Diff)** column).
 
--   Чтобы отобразить подробности только для выбранного моментального снимка, щелкните ссылку "Без изменений". 
+-   To view details of only the selected snapshot, click the non-change link. 
   
- Отчет отображается в новом окне.   
+ The report appears in a separate window.   
   
-### <a name="managed-types-reports"></a>Отчеты об управляемых типах  
- Щелкните текущее значение в столбце **Объекты (разн.)** или **Выделения (разл.)** в сводной таблице "Использование памяти".  
+### <a name="managed-types-reports"></a>Managed types reports  
+ Choose the current link of a **Objects (Diff)** or **Allocations (Diff)** cell in the Memory Usage summary table.  
   
- ![Отчет отладчика управляемого типа отчета — пути к корню](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
+ ![Debugger managed type report &#45; Paths to Root](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
   
- В верхней области показываются число и размер типов, зарегистрированных снимком, включая размер всех объектов, на которые ссылаются типы (**Инклюзивный размер**).  
+ The top pane shows the count and size of the types in the snapshot, including the size of all objects that are referenced by the type (**Inclusive Size**).  
   
- В дереве **Пути к корню** в нижней области отображаются объекты, на которые ссылается тип, выбранный в верхней области. Сборщик мусора .NET Framework очищает память для объекта только при освобождении последнего типа, ссылавшегося на него.  
+ The **Paths to Root** tree in the bottom pane displays the objects that reference the type selected in the upper pane. The .NET Framework garbage collector cleans up the memory for an object only when the last type that references it has been released.  
   
- В дереве **Типы, на которые указывает ссылка** отображаются ссылки, активные для выбранного в верхней области типа.  
+ The **Referenced Types** tree displays the references that are held by the type selected in the upper pane.  
   
- ![Представление отчета по управляемым ссылочным типам](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")  
+ ![Managed eferenced types report view](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")  
   
- Чтобы отобразить экземпляры типа, выбранного в области сверху, щелкните значок ![Значок экземпляра](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon").  
+ To display the instances of a selected type in the upper pane, choose the ![Instance icon](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon") icon.  
   
- ![Представление экземпляров](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")  
+ ![Instances view](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")  
   
- На панели **Экземпляры** , которая открывается в верхней области, отображаются экземпляры выбранного объекта текущего снимка. На панелях "Пути к корню" и "Объекты, на которые указывает ссылка" отображаются объекты, которые ссылаются на выбранный экземпляр, а также типы, на которые ссылается выбранный экземпляр. Если создать снимок после остановки отладчика и навести указатель мыши на ячейку в столбце "Значение", во всплывающей подсказке отобразятся значения объекта.  
+ The **Instances** view displays the instances of the selected object in the snapshot in the upper pane. The Paths to Root and Referenced Types pane display the objects that reference the selected instance and the types that the selected instance references. When the debugger is stopped at the point where the snapshot was taken, you can hover over the Value cell to display the values of the object in a tool tip.  
   
-### <a name="native-type-reports"></a>Отчеты о собственных типах  
- Щелкните текущее значение в столбце **Выделения (разл.)** или **Размер кучи (разн.)** в сводной таблице "Использование памяти", отображаемой в окне **Средства диагностики**.  
+### <a name="native-type-reports"></a>Native type reports  
+ Choose the current link of a **Allocations (Diff)** or **Heap Size (Diff)** cell in the Memory Usage summary table of the **Diagnostic Tools** window.  
   
- ![Представление собственного типа](../profiling/media/dbgdiag_mem_native_typesview.png "DBGDIAG_MEM_Native_TypesView")  
+ ![Native Type View](../profiling/media/dbgdiag_mem_native_typesview.png "DBGDIAG_MEM_Native_TypesView")  
   
- В режиме **Представление типов** отображается число и размер типов, зарегистрированных снимком.  
+ The **Types View** displays the number and size of the types in the snapshot.  
   
--   Чтобы отобразить информацию об объектах выбранного типа, зарегистрированных снимком, щелкните значок "Экземпляры" (![Значок "Экземпляры" в столбце "Тип объекта"](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) в соответствующей строке.  
+-   Choose the instances icon (![The instance icon in the Object Type column](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) of a selected type to display information about the objects of the selected type in the snapshot.  
   
-     В окне **Экземпляры** отображаются все экземпляры выбранного типа. При выборе экземпляра на панели **Стек вызовов выделений** отображается стек вызовов, использованный для создания этого экземпляра.  
+     The **Instances** view displays each instance of the selected type. Selecting an instance displays the call stack that resulted in the creation of the instance in the **Allocation Call Stack** pane.  
   
-     ![Представление экземпляров](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")  
+     ![Instances view](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")  
   
--   Чтобы отобразить стек вызовов для выбранного типа, в раскрывающемся меню **Режим просмотра** выберите пункт **Представление стеков** .  
+-   Choose **Stacks View** in the **View Mode** list to see the allocation stack for the selected type.  
   
-     ![Представление стеков](../profiling/media/dbgdiag_mem_native_stacksview.png "DBGDIAG_MEM_Native_StacksView")  
+     ![Stacks View](../profiling/media/dbgdiag_mem_native_stacksview.png "DBGDIAG_MEM_Native_StacksView")  
   
-### <a name="change-diff-reports"></a>Отчеты об изменениях  
+### <a name="change-diff-reports"></a>Change (Diff) reports  
   
--   В окне **Средства диагностики** щелкните в необходимой ячейке сводной таблицы **Использование памяти** разницу в значениях.  
+-   Choose the change link in a cell of the summary table of the **Memory Usage** tab on the **Diagnostic Tools** window.  
   
-     ![Выбор отчета изменений (Diff)](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
+     ![Choose a change &#40;dif&#41;f report](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
   
--   Выберите моментальный снимок в списке **Сравнить с** , в котором отображаются управляемые или собственные отчеты.  
+-   Choose a snapshot in the **Compare To** list of a managed or native report.  
   
-     ![Выбор моментального снимка из списка сравнения](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
+     ![Choose a snapshot from the Compare To list](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
   
- С помощью отчета об изменениях в основной отчет можно добавить столбцы, помеченные надписью **(Разн.)**, в которых будет отображаться разница между двумя выбранными снимками. Отчет об изменениях собственных типов может выглядеть следующим образом.  
+ The change report adds columns (marked with **(Diff)**) to the base report that show the difference between the base snapshot value and the comparison snapshot. Here's how a Native Type View diff report might look:  
   
- ![Представление собственных типов Diff](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
+ ![Native Types Diff Veiw](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
-## <a name="blogs-and-videos"></a>Блоги и видео  
- [Окно отладчика "Средства диагностики" в Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
+## <a name="blogs-and-videos"></a>Blogs and videos  
+ [Diagnostic Tools debugger window in Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   
- [Блог: применение средства "Использование памяти" при отладке в Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
+ [Blog: Memory Usage Tool while debugging in Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
   
- [Блог о Visual C++: диагностика внутренней памяти в предварительной версии Visual Studio 2015](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)  
+ [Visual C++ Blog: Native Memory Diagnostics in VS2015 Preview](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)  
   
- [Блог о Visual C++: средства диагностики внутренней памяти для CTP-версии Visual Studio 2015](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx)
+ [Visual C++ Blog: Native Memory Diagnostic Tools for Visual Studio 2015 CTP](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx)
 
-## <a name="see-also"></a>См. также
- [Профилирование в Visual Studio](../profiling/index.md) [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md)
+## <a name="see-also"></a>See Also
+ [Profiling in Visual Studio](../profiling/index.md) [Profiling Feature Tour](../profiling/profiling-feature-tour.md)
