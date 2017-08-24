@@ -1,52 +1,195 @@
 ---
-title: "Вычисление выражения Контрольное значение | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "вычисление выражений, контрольных выражений"
-  - "просмотреть выражений"
+title: Evaluating a Watch Expression | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- expression evaluation, watch expressions
+- watch expressions
 ms.assetid: 8317cd52-6fea-4e8f-a739-774dc06bd44b
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# Вычисление выражения Контрольное значение
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 4e39bff4c9b300eec1970a3ad5a622d3a5d52cfc
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
+---
+# <a name="evaluating-a-watch-expression"></a>Evaluating a Watch Expression
 > [!IMPORTANT]
->  В Visual Studio 2015 этот способ реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  In Visual Studio 2015, this way of implementing expression evaluators is deprecated. For information about implementing CLR expression evaluators, please see [CLR Expression Evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) and [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- При готовности для отображения значения выражения для контроля Visual Studio вызывает [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) в свою очередь вызывает [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). В результате получается [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) объект, содержащий значение и тип выражения.  
+ When Visual Studio is ready to display the value of a watch expression, it calls [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) which in turn calls [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). This produces an [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) object that contains the value and type of the expression.  
   
- В этой реализации `IDebugParsedExpression::EvaluateSync`, выражение анализируется и оценивается в то же время. Эта реализация выполняет следующие задачи:  
+ In this implementation of `IDebugParsedExpression::EvaluateSync`, the expression is parsed and evaluated at the same time. This implementation performs the following tasks:  
   
-1.  Выполняет синтаксический анализ и вычисляет выражение для создания универсальный объект, содержащий значение и тип. В C\# это представляется как `object` хотя в C\+\+ это представляется как `VARIANT`.  
+1.  Parses and evaluates the expression to produce a generic object that holds the value and its type. In C#, this is represented as an `object` while in C++ this is represented as a `VARIANT`.  
   
-2.  Создает экземпляр класса \(называется `CValueProperty` в этом примере\), реализующий `IDebugProperty2` интерфейса и сохраняет в классе возвращаемого значения.  
+2.  Instantiates a class (called `CValueProperty` in this example) that implements the `IDebugProperty2` interface and stores in the class the value to be returned.  
   
-3.  Возвращает `IDebugProperty2` интерфейс из `CValueProperty` объекта.  
+3.  Returns the `IDebugProperty2` interface from the `CValueProperty` object.  
   
-## Управляемый код  
- Это реализация `IDebugParsedExpression::EvaluateSync` в управляемом коде. Вспомогательный метод `Tokenize` выполняет синтаксический анализ выражения в дерево синтаксического анализа. Вспомогательная функция `EvalToken` преобразуется в значение маркера. Вспомогательная функция `FindTerm` рекурсивно обходит дерево синтаксического анализа вызов `EvalToken` для каждого узла, представляющее значение и применения любой операции \(сложение или умножение\) в выражении.  
+## <a name="managed-code"></a>Managed Code  
+ This is an implementation of the `IDebugParsedExpression::EvaluateSync` in managed code. The helper method `Tokenize` parses the expression into a parse tree. The helper function `EvalToken` converts the token to a value. The helper function `FindTerm` recursively traverses the parse tree, calling `EvalToken` for each node representing a value and applying any operations (addition or subtraction) in the expression.  
   
-```c#  
-namespace EEMC { public class CParsedExpression : IDebugParsedExpression { public HRESULT EvaluateSync( uint evalFlags, uint timeout, IDebugSymbolProvider provider, IDebugAddress address, IDebugBinder binder, string resultType, out IDebugProperty2 result) { HRESULT retval = COM.S_OK; this.evalFlags = evalFlags; this.timeout = timeout; this.provider = provider; this.address = address; this.binder = binder; this.resultType = resultType; try { IDebugField field = null; // Tokenize, then parse. tokens = Tokenize(expression); result = new CValueProperty( expression, (int) FindTerm(EvalToken(tokens[0], out field),1), field, binder); } catch (ParseException) { result = new CValueProperty(expression, "Huh?"); retval = COM.E_INVALIDARG; } return retval; } } }  
+```cs  
+namespace EEMC  
+{  
+    public class CParsedExpression : IDebugParsedExpression  
+    {  
+        public HRESULT EvaluateSync(  
+            uint evalFlags,  
+            uint timeout,  
+            IDebugSymbolProvider provider,  
+            IDebugAddress address,  
+            IDebugBinder binder,  
+            string resultType,  
+            out IDebugProperty2 result)  
+        {  
+            HRESULT retval = COM.S_OK;  
+            this.evalFlags = evalFlags;  
+            this.timeout = timeout;  
+            this.provider = provider;  
+            this.address = address;  
+            this.binder = binder;  
+            this.resultType = resultType;  
+  
+            try  
+            {  
+                IDebugField field = null;  
+                // Tokenize, then parse.  
+                tokens = Tokenize(expression);  
+                result = new CValueProperty(  
+                             expression,  
+                             (int) FindTerm(EvalToken(tokens[0], out field),1),  
+                             field,  
+                             binder);  
+            }  
+            catch (ParseException)  
+            {  
+                result = new CValueProperty(expression, "Huh?");  
+                retval = COM.E_INVALIDARG;  
+            }  
+            return retval;  
+        }  
+    }  
+}  
 ```  
   
-## Неуправляемый код  
- Это реализация `IDebugParsedExpression::EvaluateSync` в неуправляемом коде. Вспомогательная функция `Evaluate` анализирует и вычисляет выражение, возвращая `VARIANT` удерживая результирующее значение. Вспомогательная функция `VariantValueToProperty` пакеты `VARIANT` в `CValueProperty` объекта.  
+## <a name="unmanaged-code"></a>Unmanaged Code  
+ This is an implementation of the `IDebugParsedExpression::EvaluateSync` in unmanaged code. The helper function `Evaluate` parses and evaluates the expression, returning a `VARIANT` holding the resulting value. The helper function `VariantValueToProperty` bundles the `VARIANT` into a `CValueProperty` object.  
   
 ```  
-[C++] STDMETHODIMP CParsedExpression::EvaluateSync( in  DWORD                 evalFlags, in  DWORD                 dwTimeout, in  IDebugSymbolProvider* pprovider, in  IDebugAddress*        paddress, in  IDebugBinder*         pbinder, in  BSTR                  bstrResultType, out IDebugProperty2**     ppproperty ) { // dwTimeout parameter is ignored in this implementation. if (pprovider == NULL) return E_INVALIDARG; if (paddress == NULL) return E_INVALIDARG; if (pbinder == NULL) return E_INVALIDARG; if (ppproperty == NULL) return E_INVALIDARG; else *ppproperty = 0; HRESULT hr; VARIANT value; BSTR    bstrErrorMessage = NULL; hr = ::Evaluate( pprovider, paddress, pbinder, m_expr, &bstrErrorMessage, &value ); if (hr != S_OK) { if (bstrErrorMessage == NULL) return hr; //we can display better messages ourselves. HRESULT hrLocal = S_OK; VARIANT varType; VARIANT varErrorMessage; VariantInit( &varType ); VariantInit( &varErrorMessage ); varErrorMessage.vt      = VT_BSTR; varErrorMessage.bstrVal = bstrErrorMessage; CValueProperty* valueProperty = new CValueProperty(); if (valueProperty != NULL) { hrLocal = valueProperty->Init(m_expr, varType, varErrorMessage); if (SUCCEEDED(hrLocal)) { hrLocal = valueProperty->QueryInterface( IID_IDebugProperty2, reinterpret_cast<void**>(ppproperty) ); } } VariantClear(&varType); VariantClear(&varErrorMessage); //frees BSTR if (!valueProperty) return hr; valueProperty->Release(); if (FAILED(hrLocal)) return hr; } else { if (bstrErrorMessage != NULL) SysFreeString(bstrErrorMessage); hr = VariantValueToProperty( pprovider, paddress, pbinder, m_radix, m_expr, value, ppproperty ); VariantClear(&value); if (FAILED(hr)) return hr; } return S_OK; }  
+[C++]  
+STDMETHODIMP CParsedExpression::EvaluateSync(   
+    in  DWORD                 evalFlags,  
+    in  DWORD                 dwTimeout,  
+    in  IDebugSymbolProvider* pprovider,  
+    in  IDebugAddress*        paddress,  
+    in  IDebugBinder*         pbinder,  
+    in  BSTR                  bstrResultType,  
+    out IDebugProperty2**     ppproperty )  
+{  
+    // dwTimeout parameter is ignored in this implementation.  
+    if (pprovider == NULL)  
+        return E_INVALIDARG;  
+  
+    if (paddress == NULL)  
+        return E_INVALIDARG;  
+  
+    if (pbinder == NULL)  
+        return E_INVALIDARG;  
+  
+    if (ppproperty == NULL)  
+        return E_INVALIDARG;  
+    else  
+        *ppproperty = 0;  
+  
+    HRESULT hr;  
+    VARIANT value;  
+    BSTR    bstrErrorMessage = NULL;  
+    hr = ::Evaluate( pprovider,  
+                     paddress,  
+                     pbinder,  
+                     m_expr,  
+                     &bstrErrorMessage,  
+                     &value );  
+    if (hr != S_OK)  
+    {  
+        if (bstrErrorMessage == NULL)  
+            return hr;  
+  
+        //we can display better messages ourselves.  
+        HRESULT hrLocal = S_OK;  
+        VARIANT varType;  
+        VARIANT varErrorMessage;  
+  
+        VariantInit( &varType );  
+        VariantInit( &varErrorMessage );  
+        varErrorMessage.vt      = VT_BSTR;  
+        varErrorMessage.bstrVal = bstrErrorMessage;  
+  
+        CValueProperty* valueProperty = new CValueProperty();  
+        if (valueProperty != NULL)  
+        {  
+            hrLocal = valueProperty->Init(m_expr, varType, varErrorMessage);  
+            if (SUCCEEDED(hrLocal))   
+            {  
+                hrLocal = valueProperty->QueryInterface( IID_IDebugProperty2,  
+                        reinterpret_cast<void**>(ppproperty) );  
+            }  
+        }  
+  
+        VariantClear(&varType);  
+        VariantClear(&varErrorMessage); //frees BSTR  
+        if (!valueProperty)  
+            return hr;  
+        valueProperty->Release();  
+        if (FAILED(hrLocal))  
+            return hr;  
+    }  
+    else  
+    {  
+        if (bstrErrorMessage != NULL)  
+            SysFreeString(bstrErrorMessage);  
+  
+        hr = VariantValueToProperty( pprovider,  
+                                     paddress,  
+                                     pbinder,  
+                                     m_radix,  
+                                     m_expr,  
+                                     value,  
+                                     ppproperty );  
+        VariantClear(&value);  
+        if (FAILED(hr))  
+            return hr;  
+    }  
+  
+    return S_OK;  
+}  
 ```  
   
-## См. также  
- [Оценки выражения окна контрольных значений](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
- [Пример реализации вычисление выражений](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)
+## <a name="see-also"></a>See Also  
+ [Evaluating a Watch Window Expression](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
+ [Sample Implementation of Expression Evaluation](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)

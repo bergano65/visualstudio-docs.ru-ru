@@ -1,28 +1,45 @@
 ---
-title: "IDebugTypeFieldBuilder::CreatePrimitive | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "CreatePrimitive"
-  - "IDebugTypeFieldBuilder::CreatePrimitive"
+title: IDebugTypeFieldBuilder::CreatePrimitive | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- CreatePrimitive
+- IDebugTypeFieldBuilder::CreatePrimitive
 ms.assetid: 512c6ff0-97c5-409f-939f-4cc969bc4bb9
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugTypeFieldBuilder::CreatePrimitive
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: a3a78b3d76cd78b9c6a3a707101e1237eb1958ea
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Создает объект, который представляет тип-примитив.  
+---
+# <a name="idebugtypefieldbuildercreateprimitive"></a>IDebugTypeFieldBuilder::CreatePrimitive
+Creates an object that represents a primitive type.  
   
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT CreatePrimitive (  
@@ -31,22 +48,22 @@ HRESULT CreatePrimitive (
 );  
 ```  
   
-```c#  
+```cs  
 int CreatePrimitive (  
    uint            dwElementType,  
    out IDebugField pTypeField  
 );  
 ```  
   
-#### <a name="parameters"></a>Параметры  
+#### <a name="parameters"></a>Parameters  
  `dwElementType`  
- [in] Значение из [перечисление CorElementType](CorElementType%20Enumeration.xml) представляющий тип-примитив.  
+ [in] Value from the [CorElementType Enumeration](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) that represents the primitive type.  
   
  `pTypeField`  
- [out] Возвращает интерфейс IDebugField для нового типа.  
+ [out] Returns the IDebugField interface for the new type.  
   
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>See Also  
  [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)

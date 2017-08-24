@@ -1,70 +1,87 @@
 ---
-title: "IDebugCustomViewer::DisplayValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCustomViewer::DisplayValue"
-helpviewer_keywords: 
-  - "IDebugCustomViewer::DisplayValue"
+title: IDebugCustomViewer::DisplayValue | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugCustomViewer::DisplayValue
+helpviewer_keywords:
+- IDebugCustomViewer::DisplayValue
 ms.assetid: 7a538248-5ced-450e-97cd-13fabe35fb1c
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugCustomViewer::DisplayValue
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: b3dd1c9297cbef09f376c764b33c4b0a92ebb562
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Этот метод вызывается для отображения указанного значения.  
+---
+# <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
+This method is called to display the specified value.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT DisplayValue(  
-   HWND             hwnd,  
-   DWORD            dwID,  
-   IUnknown *       pHostServices,  
-   IDebugProperty3* pDebugProperty);  
+   HWND             hwnd,  
+   DWORD            dwID,  
+   IUnknown *       pHostServices,  
+   IDebugProperty3* pDebugProperty);  
 );  
 ```  
   
-```c#  
+```cs  
 int DisplayValue(  
-   IntPtr          hwnd,   
-   uint            dwID,   
-   object          pHostServices,   
-   IDebugProperty3 pDebugProperty  
+   IntPtr          hwnd,   
+   uint            dwID,   
+   object          pHostServices,   
+   IDebugProperty3 pDebugProperty  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Parameters  
  `hwnd`  
- \[in\] родительское окно  
+ [in] Parent window  
   
  `dwID`  
- \[in\] идентификатор для пользовательских средств просмотра, которые поддерживают более одного типа.  
+ [in] ID for custom viewers that support more than one type.  
   
  `pHostServices`  
- \[in\] Зарезервирован.  Всегда задавайте значение null.  
+ [in] Reserved. Always set to null.  
   
  `pDebugProperty`  
- \[in\] интерфейс, который может быть использован для получения значения для отображения.  
+ [in] Interface that can be used to retrieve the value to be displayed.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise returns error code.  
   
-## Заметки  
- Отображение" в "является модальным, что этот метод создает требуемое окно отображает значение ожидает ввода и закрывает окно все перед возвратом вызывающему.  Это означает, что метод должен обрабатывать все аспекты отображения значения свойства, от окно для вывода на ввод пользователя в разрушать окно.  
+## <a name="remarks"></a>Remarks  
+ The display is "modal" in that this method will create the necessary window, display the value, wait for input, and close the window, all before returning to the caller. This means the method must handle all aspects of displaying the property's value, from creating a window for output, to waiting for user input, to destroying the window.  
   
- Поддержка изменить значение с заданным [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) объект, можно воспользоваться  [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) метод \- если значение можно выразить в виде строки.  В противном случае необходимо создать пользовательский интерфейс\-монопольный средству оценки выражений, реализующий данное `DisplayValue` метод\-на одном объекте, реализующий  `IDebugProperty3` интерфейс.  Этот пользовательский интерфейс, предоставленными бы методы для изменения размера и сложности произвольные данные.  
+ To support changing the value on the given [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) object, you can use the [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) method —if the value can be expressed as a string. Otherwise, it is necessary to create a custom interface—exclusive to the expression evaluator implementing this `DisplayValue` method—on the same object that implements the `IDebugProperty3` interface. This custom interface would supply methods for changing the data of an arbitrary size or complexity.  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)

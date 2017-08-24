@@ -1,5 +1,5 @@
 ---
-title: "Обновление фигур и соединителей в соответствии с моделью | Документы Microsoft"
+title: Updating Shapes and Connectors to Reflect the Model | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -11,16 +11,17 @@ caps.latest.revision: 6
 author: alancameronwills
 ms.author: awills
 manager: douge
-translationtype: Machine Translation
-ms.sourcegitcommit: eb2ab9d49cdeb1ed71da8ef67841f7796862dc30
-ms.openlocfilehash: 97ec749c0a89dae6c5a98702926d8ad82b6af3ac
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 6f6e72eefb8a61a12940a95eba59411469625c98
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
 ---
-# <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Обновление фигур и соединителей в соответствии с моделью
-В доменном языке в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], чтобы внешний вид фигуры отражают состояние базовой модели.  
+# <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Updating Shapes and Connectors to Reflect the Model
+In a domain-specific language in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], you can make the appearance of a shape reflect the state of the underlying model.  
   
- В примерах кода в этом разделе должны добавляться к `.cs` файла в вашей `Dsl` проекта. Эти инструкции в каждом файле, необходимо:  
+ The code examples in this topic should be added to a `.cs` file in your `Dsl` project. You will need these statements in each file:  
   
 ```  
 using Microsoft.VisualStudio.Modeling;  
@@ -28,26 +29,26 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 ```  
   
-## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Задайте свойства фигуры карты для управления видимостью декоратора  
- Можно управлять видимостью декоратора без написания программного кода, настроив сопоставление фигуры и класс домена в определении DSL. Дополнительные сведения см. в разделе  [способ определения доменного языка](../modeling/how-to-define-a-domain-specific-language.md).
+## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Set Shape Map properties to control the visibility of a decorator  
+ You can control the visibility of a decorator without writing program code, by configuring the mapping between the shape and the domain class in the DSL Definition. For more information, see [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md).
   
-## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>Предоставляют цвет и стиль фигуры в виде свойств  
- В определении DSL, щелкните правой кнопкой мыши фигуру класса, выберите пункт **добавить предоставленный**и выберите один из элементов, таких как **цвет заливки**.  
+## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>Expose the color and style of a shape as properties  
+ In the DSL Definition, right-click the shape class, point to **Add Exposed**, and then click one of the items such as **Fill Color**.  
   
- Фигура теперь имеет свойство домена, которое можно задать в коде программы или имени пользователя. Например чтобы задать его в программном коде команды или правило, можно написать:  
+ The shape now has a domain property that you can set in program code or as a user. For example, to set it in the program code of a command or rule, you could write:  
   
  `shape.FillColor = System.Drawing.Color.Red;`  
   
- Если вы хотите сделать переменной свойства только под управлением программы, а не пользователем, выберите свойство домена например **цвет заливки** в схеме определения DSL. В окне «Свойства» задайте **возможность просмотра** для `false` или **Readonly пользовательского интерфейса —** для `true`.  
+ If you want to make the property variable only under program control, and not by the user, select the new domain property such as **Fill Color** in the DSL Definition diagram. Then, in the Properties window, set **Is Browsable** to `false` or set **Is UI Readonly** to `true`.  
   
-## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>Определение правил изменения, чтобы сделать цвет, стиль или расположение зависит от свойства элемента модели  
- Можно определить правила, которые обновят внешний вид фигуры, зависит от других частей модели. Например можно определить изменить правило для элемента модели, который обновляет цвет его фигура, зависит от свойства элемента модели. Дополнительные сведения о правилах изменение в разделе [распространение изменений в модели правил](../modeling/rules-propagate-changes-within-the-model.md).  
+## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>Define Change Rules to make color, style or location depend on model element properties  
+ You can define rules that update the appearance the shape dependent on other parts of the model. For example, you could define a Change Rule on a model element that updates the color of its shape dependent on the properties of the model element. For more information about Change Rules, see [Rules Propagate Changes Within the Model](../modeling/rules-propagate-changes-within-the-model.md).  
   
- Правила следует использовать только для обновления свойств, которые хранятся в хранилище, поскольку правила не вызываются при выполнении команды Undo. Это включает некоторые графические функции, такие как размер и видимость фигуры. Для обновления этих компонентов фигуры, в разделе [обновление хранилища не графические функции](#OnAssociatedProperty).  
+ You should use rules only to update properties that are maintained within the Store, because rules are not invoked when the Undo command is performed. This does not include some graphical features such as the size and visibility of a shape. To update those features of a shape, see [Updating Non-Store Graphical features](#OnAssociatedProperty).  
   
- В следующем примере предполагается, что предоставляется `FillColor` как свойство домена, как описано в предыдущем разделе.  
+ The following example assumes that you have exposed `FillColor` as a domain property as described in the previous section.  
   
-```c#  
+```cs  
 [RuleOn(typeof(ExampleElement))]  
   class ExampleElementPropertyRule : ChangeRule  
   {  
@@ -84,10 +85,10 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 ```  
   
-## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Используйте OnChildConfigured для инициализации свойств фигуры  
- Для установки свойств фигуры при первом создании переопределения `OnChildConfigured()` в определении разделяемого класса схемы. Класс схемы, указанный в определении DSL и созданный код находится в **Dsl\Generated Code\Diagram.cs**. Пример:  
+## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Use OnChildConfigured to initialize a shape's properties  
+ To set the properties of a shape when it is first created, the override `OnChildConfigured()` in a partial definition of your diagram class. The diagram class is specified in your DSL Definition, and the generated code is in **Dsl\Generated Code\Diagram.cs**. For example:  
   
-```c#  
+```cs  
 partial class MyLanguageDiagram  
 {  
   protected override void OnChildConfigured(ShapeElement child, bool childWasPlaced, bool createdDuringViewFixup)  
@@ -108,12 +109,12 @@ partial class MyLanguageDiagram
   
 ```  
   
- Этот метод можно использовать для свойства домена и функции вне хранилища, такие как размер фигуры.  
+ This method can be used both for domain properties and non-store features, such as the size of the shape.  
   
-##  <a name="a-nameonassociatedpropertya-use-associatevaluewith-to-update-other-features-of-a-shape"></a><a name="OnAssociatedProperty"></a>Используйте AssociateValueWith() для обновления других компонентов фигуры  
- Для некоторых функций фигуры, например, имеет ли он тень или стиль стрелки соединительной линии встроенные метода предоставлять функции свойства домена не существует.  Изменения в таких функций не находятся под контролем системы транзакций. Таким образом, не подходит для обновления их с помощью правил, поскольку правила не вызываются, когда пользователь выполняет команду отмены.  
+##  <a name="OnAssociatedProperty"></a> Use AssociateValueWith() to update other features of a shape  
+ For some features of a shape, such as whether it has a shadow, or the arrow style of a connector, there is no built-in method of exposing the feature as a domain property.  Changes to such features are not under the control of the transaction system. Therefore, it is not appropriate to update them using rules, because rules are not invoked when the user performs the Undo command.  
   
- Вместо этого такие функции, можно обновить с помощью <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>.</xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A> В следующем примере стиль стрелки соединительной линии управляется значением свойства домена в отношение, которое отображает соединителя:  
+ Instead, you can update such features by using <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. In the following example, the arrow style of a connector is controlled by a value of a domain property in the relationship that the connector displays:  
   
 ```  
 public partial class ArrowConnector // My connector class.   
@@ -130,7 +131,7 @@ public partial class ArrowConnector // My connector class.
       if ("IsDirected".Equals(e.PropertyName))  
       {  
         if (e.NewValue.Equals(true))  
-        { // Update the shape’s built-in Decorator feature:  
+        { // Update the shape's built-in Decorator feature:  
           this.DecoratorTo = LinkDecorator.DecoratorEmptyArrow;  
         }  
         else  
@@ -154,7 +155,7 @@ public partial class ArrowConnector // My connector class.
   
 ```  
   
- `AssociateValueWith()`должен быть вызван один раз для каждого свойства домена, который требуется зарегистрировать. После его вызова будет вызывать любые изменения с указанным свойством `OnAssociatedPropertyChanged()` в любой фигуры, представляющие свойства элемента модели.  
+ `AssociateValueWith()` should be called one time for each domain property that you want to register. After it has been called, any changes to the specified property will call `OnAssociatedPropertyChanged()` in any shapes that present the property's model element.  
   
- Нет необходимости вызывать `AssociateValueWith()` для каждого экземпляра. Несмотря на то, что InitializeResources является методом экземпляра, он вызывается только один раз для каждого класса shape.
+ It is not necessary to call `AssociateValueWith()` for each instance. Although InitializeResources is an instance method, it is invoked only one time for each shape class.
 

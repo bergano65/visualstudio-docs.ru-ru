@@ -1,81 +1,99 @@
 ---
-title: "CA1901: объявления P/Invoke должны быть переносимыми | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1901"
-  - "PInvokeDeclarationsShouldBePortable"
-helpviewer_keywords: 
-  - "CA1901"
-  - "PInvokeDeclarationsShouldBePortable"
+title: 'CA1901: P-Invoke declarations should be portable | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1901
+- PInvokeDeclarationsShouldBePortable
+helpviewer_keywords:
+- CA1901
+- PInvokeDeclarationsShouldBePortable
 ms.assetid: 90361812-55ca-47f7-bce9-b8775d3b8803
 caps.latest.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 23
----
-# CA1901: объявления P/Invoke должны быть переносимыми
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: a004749aec8e4473a7a5d050114acdaa4b63651d
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
+---
+# <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: P/Invoke declarations should be portable
 |||  
 |-|-|  
 |TypeName|PInvokeDeclarationsShouldBePortable|  
 |CheckId|CA1901|  
-|Категория|Microsoft.Portability|  
-|Критическое изменение|Критическое — если вызов P\/Invoke доступен для кода за пределами сборки.  Не критическое — если вызов P\/Invoke недоступен для кода за пределами сборки.|  
+|Category|Microsoft.Portability|  
+|Breaking Change|Breaking - If the P/Invoke is visible outside the assembly. Non Breaking - If the P/Invoke is not visible outside the assembly.|  
   
-## Причина  
- Данное правило вычисляет размер каждого параметра и возвращаемого значения вызова P\/Invoke и проверяет правильность их размера при маршалировании в неуправляемый код на 32\-разрядных и 64\-разрядных платформах.  Наиболее распространенным нарушением этого правила является передача целого числа фиксированного размера там, где требуется переменная, размер которой соответствует зависящему от платформы указателю.  
+## <a name="cause"></a>Cause  
+ This rule evaluates the size of each parameter and the return value of a P/Invoke and verifies that their size, when marshaled to unmanaged code on 32-bit and 64-bit platforms, is correct. The most common violation of this rule is to pass a fixed-sized integer where a platform-dependent, pointer-sized variable is required.  
   
-## Описание правила  
- Любой из следующих сценариев нарушает правило:  
+## <a name="rule-description"></a>Rule Description  
+ Either of the following scenarios violates this rule occurs:  
   
--   Типом возвращаемого значения или параметра указано целое число фиксированного размера, тогда как следовало указать тип `IntPtr`.  
+-   The return value or parameter is typed as a fixed-size integer when it should be typed as an `IntPtr`.  
   
--   Для возвращаемого значения или параметра указан тип `IntPtr`, тогда как следовало указать целочисленный тип фиксированного размера.  
+-   The return value or parameter is typed as an `IntPtr` when it should be typed as a fixed-size integer.  
   
-## Устранение нарушений  
- Нарушение данного правила можно устранить, если использовать для представления дескрипторов тип `IntPtr` или `UIntPtr` вместо типа `Int32` или `UInt32`.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ You can fix this violation by using `IntPtr` or `UIntPtr` to represent handles instead of `Int32` or `UInt32`.  
   
-## Отключение предупреждений  
- Не следует отключать данные предупреждения.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ You should not suppress this warning.  
   
-## Пример  
- В следующем примере демонстрируется нарушение данного правила.  
+## <a name="example"></a>Example  
+ The following example demonstrates a violation of this rule.  
   
-```c#  
+```cs  
 internal class NativeMethods  
 {  
-    [DllImport("shell32.dll", CharSet=CharSet.Auto)]  
-    internal static extern IntPtr ExtractIcon(IntPtr hInst,   
-        string lpszExeFileName, IntPtr nIconIndex);  
+    [DllImport("shell32.dll", CharSet=CharSet.Auto)]  
+    internal static extern IntPtr ExtractIcon(IntPtr hInst,   
+        string lpszExeFileName, IntPtr nIconIndex);  
 }  
 ```  
   
- В этом примере параметр `nIconIndex` объявлен как `IntPtr`, который имеет размер 4 байта на 32\-х разрядной платформе и размер 8 байт на 64\-х разрядной платформе.  В неуправляемом объявлении, которое приведено далее, можно увидеть, что `nIconIndex` является целым числом без знака размером 4 байта на всех платформах.  
+ In this example, the `nIconIndex` parameter is declared as an `IntPtr`, which is 4 bytes wide on a 32-bit platform and 8 bytes wide on a 64-bit platform. In the unmanaged declaration that follows, you can see that `nIconIndex` is a 4-byte unsigned integer on all platforms.  
   
-```c#  
+```cs  
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,   
-    UINT nIconIndex);  
+    UINT nIconIndex);  
 ```  
   
-## Пример  
- Чтобы устранить это нарушение, измените объявление следующим образом:  
+## <a name="example"></a>Example  
+ To fix the violation, change the declaration to the following:  
   
-```c#  
+```cs  
 internal class NativeMethods{  
-    [DllImport("shell32.dll", CharSet=CharSet.Auto)]   
-    internal static extern IntPtr ExtractIcon(IntPtr hInst,   
-        string lpszExeFileName, uint nIconIndex);  
+    [DllImport("shell32.dll", CharSet=CharSet.Auto)]   
+    internal static extern IntPtr ExtractIcon(IntPtr hInst,   
+        string lpszExeFileName, uint nIconIndex);  
 }  
 ```  
   
-## См. также  
- [Предупреждения переносимости](../code-quality/portability-warnings.md)
+## <a name="see-also"></a>See Also  
+ [Portability Warnings](../code-quality/portability-warnings.md)

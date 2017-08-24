@@ -1,78 +1,95 @@
 ---
-title: "SEEK_START | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SEEK_START"
-helpviewer_keywords: 
-  - "Перечисление SEEK_START"
+title: SEEK_START | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SEEK_START
+helpviewer_keywords:
+- SEEK_START enumeration
 ms.assetid: 55bd8901-626e-428b-a263-23b14417f4c6
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# SEEK_START
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 55d89e084bfc63258e6eca4200b7cc83f2e2014f
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Задает положение, с которого следует начать поиск в потоке дизассемблированный код.  
+---
+# <a name="seekstart"></a>SEEK_START
+Specifies the position from which to start seeking in a disassembly stream.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-enum enum_SEEK_START {   
-   SEEK_START_BEGIN       = 0x0001,  
-   SEEK_START_END         = 0x0002,  
-   SEEK_START_CURRENT     = 0x0003,  
-   SEEK_START_CODECONTEXT = 0x0004,  
-   SEEK_START_CODELOCID   = 0x0005  
+enum enum_SEEK_START {   
+   SEEK_START_BEGIN       = 0x0001,  
+   SEEK_START_END         = 0x0002,  
+   SEEK_START_CURRENT     = 0x0003,  
+   SEEK_START_CODECONTEXT = 0x0004,  
+   SEEK_START_CODELOCID   = 0x0005  
 };  
 typedef DWORD SEEK_START;  
 ```  
   
-```c#  
-public enum enum_SEEK_START {   
-   SEEK_START_BEGIN       = 0x0001,  
-   SEEK_START_END         = 0x0002,  
-   SEEK_START_CURRENT     = 0x0003,  
-   SEEK_START_CODECONTEXT = 0x0004,  
-   SEEK_START_CODELOCID   = 0x0005  
+```cs  
+public enum enum_SEEK_START {   
+   SEEK_START_BEGIN       = 0x0001,  
+   SEEK_START_END         = 0x0002,  
+   SEEK_START_CURRENT     = 0x0003,  
+   SEEK_START_CODECONTEXT = 0x0004,  
+   SEEK_START_CODELOCID   = 0x0005  
 };  
 ```  
   
-## Члены  
- SEEK\_START\_BEGIN  
- Начинает поиск в начале текущего документа.  
+## <a name="members"></a>Members  
+ SEEK_START_BEGIN  
+ Starts seeking at the beginning of the current document.  
   
- SEEK\_START\_END  
- Начинает поиск в конце текущего документа.  
+ SEEK_START_END  
+ Starts seeking at the end of the current document.  
   
- SEEK\_START\_CURRENT  
- Начинает поиск в текущей позиции текущего документа.  
+ SEEK_START_CURRENT  
+ Starts seeking at the current position of the current document.  
   
- SEEK\_START\_CODECONTEXT  
- Начинает иская в заданном контексте кода текущего документа.  
+ SEEK_START_CODECONTEXT  
+ Starts seeking at the given code context of the current document.  
   
- SEEK\_START\_CODELOCID  
- Начинает иская на заданном идентификаторе расположение кода.  Идентификаторы расположение кода получены путем вызова [GetCurrentLocation](../Topic/IDebugDisassemblyStream2::GetCurrentLocation.md).  
+ SEEK_START_CODELOCID  
+ Starts seeking at the given code location identifier. Code location identifiers are obtained by calling [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).  
   
-## Заметки  
- Передается в качестве аргумента [Поиск](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Passed as an argument to the [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) method.  
   
-## Требования  
- Заголовок: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Поиск](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)   
- [GetCurrentLocation](../Topic/IDebugDisassemblyStream2::GetCurrentLocation.md)
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)   
+ [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)

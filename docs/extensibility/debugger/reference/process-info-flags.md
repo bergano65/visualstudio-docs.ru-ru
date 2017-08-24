@@ -1,74 +1,91 @@
 ---
-title: "PROCESS_INFO_FLAGS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "PROCESS_INFO_FLAGS"
-helpviewer_keywords: 
-  - "Перечисление PROCESS_INFO_FLAGS"
+title: PROCESS_INFO_FLAGS | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- PROCESS_INFO_FLAGS
+helpviewer_keywords:
+- PROCESS_INFO_FLAGS enumeration
 ms.assetid: 696951ce-701a-40c2-ac8c-b897f3aae6e2
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# PROCESS_INFO_FLAGS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 865608b6fd066c6cd894bc6b5eeffce03570deee
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Описывает или задает свойства процесса.  
+---
+# <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
+Describes or specifies properties of a process.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-enum enum_PROCESS_INFO_FLAGS {   
-   PIFLAG_SYSTEM_PROCESS    = 0x00000001,  
-   PIFLAG_DEBUGGER_ATTACHED = 0x00000002,  
-   PIFLAG_PROCESS_STOPPED   = 0x00000004,  
-   PIFLAG_PROCESS_RUNNING   = 0x00000008,  
+enum enum_PROCESS_INFO_FLAGS {   
+   PIFLAG_SYSTEM_PROCESS    = 0x00000001,  
+   PIFLAG_DEBUGGER_ATTACHED = 0x00000002,  
+   PIFLAG_PROCESS_STOPPED   = 0x00000004,  
+   PIFLAG_PROCESS_RUNNING   = 0x00000008,  
 };  
 typedef DWORD PROCESS_INFO_FLAGS;  
 ```  
   
-```c#  
-enum enum_PROCESS_INFO_FLAGS {   
-   PIFLAG_SYSTEM_PROCESS    = 0x00000001,  
-   PIFLAG_DEBUGGER_ATTACHED = 0x00000002,  
-   PIFLAG_PROCESS_STOPPED   = 0x00000004,  
-   PIFLAG_PROCESS_RUNNING   = 0x00000008,  
+```cs  
+enum enum_PROCESS_INFO_FLAGS {   
+   PIFLAG_SYSTEM_PROCESS    = 0x00000001,  
+   PIFLAG_DEBUGGER_ATTACHED = 0x00000002,  
+   PIFLAG_PROCESS_STOPPED   = 0x00000004,  
+   PIFLAG_PROCESS_RUNNING   = 0x00000008,  
 };  
 ```  
   
-## Члены  
- PIFLAG\_SYSTEM\_PROCESS  
- Указывает, что процесс процесс системы.  
+## <a name="members"></a>Members  
+ PIFLAG_SYSTEM_PROCESS  
+ Indicates that the process is a system process.  
   
- PIFLAG\_DEBUGGER\_ATTACHED  
- Указывает, что процесс отладки отладчиком.  Это может быть a [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] отладчик или другой отладчиком, например WinDbg.  
+ PIFLAG_DEBUGGER_ATTACHED  
+ Indicates that the process is being debugged by a debugger. It may be a [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debugger, or it may be some other debugger, for example, WinDbg.  
   
- PIFLAG\_PROCESS\_STOPPED  
- Указывает, что процесс завершается.  Допустимо, только если `PIFLAG_DEBUGGER_ATTACHED` также указывает.  Доступный внутри [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)] и более поздних версиях.  
+ PIFLAG_PROCESS_STOPPED  
+ Indicates the process is stopped. Valid only if `PIFLAG_DEBUGGER_ATTACHED` is also specified. Available in [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)] and later.  
   
- PIFLAG\_PROCESS\_RUNNING  
- Указывает, что процесс запущен.  Допустимо, только если `PIFLAG_DEBUGGER_ATTACHED` также указывает.  Доступный внутри [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)] и более поздних версиях.  
+ PIFLAG_PROCESS_RUNNING  
+ Indicates the process is running. Valid only if `PIFLAG_DEBUGGER_ATTACHED` is also specified. Available in [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)] and later.  
   
-## Заметки  
- Используется для `Flags` элемент  [PROCESS\_INFO](../../../extensibility/debugger/reference/process-info.md) структура.  
+## <a name="remarks"></a>Remarks  
+ Used for the `Flags` member of the [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) structure.  
   
- Эти флаги могут объединяться с побитовый оператор `OR`.  
+ These flags may be combined with a bitwise `OR`.  
   
-## Требования  
- Заголовок: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [PROCESS\_INFO](../../../extensibility/debugger/reference/process-info.md)
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

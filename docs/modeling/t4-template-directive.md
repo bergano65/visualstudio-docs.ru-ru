@@ -1,5 +1,5 @@
 ---
-title: "T4 Директива Template | Документы Microsoft"
+title: T4 Template Directive | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -25,78 +25,79 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: eb2ab9d49cdeb1ed71da8ef67841f7796862dc30
-ms.openlocfilehash: ae369eacf934db165a10783bb59ad8a812f8c542
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: b29e3397cf5efbffb3bed41d11d942750cb9b76a
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
 ---
-# <a name="t4-template-directive"></a>Директива Template T4
-Как правило, текстовый шаблон T4 в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] начинается с директивы `template`, которая задает способ обработки шаблона. В каждом текстовом шаблоне и файлах, которые он содержит, может присутствовать только одна директива шаблона.  
+# <a name="t4-template-directive"></a>T4 Template Directive
+A [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] T4 text template usually starts with a `template` directive, which specifies how the template should be processed. There should be no more than one template directive in a text template and any files that it includes.  
   
- Общие сведения о создании текстовых шаблонов см. в разделе [написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md).  
+ For a general overview of writing text templates, see [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md).  
   
-## <a name="using-the-template-directive"></a>Применение директивы Template  
+## <a name="using-the-template-directive"></a>Using the Template Directive  
   
 ```  
 <#@ template [language="VB"] [compilerOptions="options"] [culture="code"] [debug="true"] [hostspecific="true"] [inherits="templateBaseClass"] [visibility="internal"] [linePragmas="false"] #>  
 ```  
   
- Директива `template` имеет несколько атрибутов, позволяющих задавать разные аспекты преобразования. Ни один атрибут не является обязательным.  
+ The `template` directive has several attributes that allow you to specify different aspects of the transformation. All the attributes are optional.  
   
-## <a name="compileroptions-attribute"></a>атрибут compilerOptions  
- Пример  
+## <a name="compileroptions-attribute"></a>compilerOptions attribute  
+ Example:  
  `compilerOptions="optimize+"`  
   
- Допустимые значения:  
- Любые допустимые параметры компилятора.  
+ Valid values:  
+ Any valid compiler options.  
   
- Игнорируется для шаблонов времени выполнения (предварительно обработанных).  
+ Ignored for run-time (preprocessed) templates.  
   
- Эти параметры применяются, если шаблон преобразован в [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] или [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)] и компилируется полученный код.  
+ These options are applied when the template has been converted into [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] or [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)], and the resulting code is compiled.  
   
-## <a name="culture-attribute"></a>атрибут culture  
- Пример  
+## <a name="culture-attribute"></a>culture attribute  
+ Example:  
  `culture="de-CH"`  
   
- Допустимые значения:  
- "", инвариантные язык и региональные параметры, используемые по умолчанию.  
+ Valid values:  
+ "", the invariant culture, which is the default.  
   
- Язык и региональные параметры задаются как строка в форме xx-XX. Например: en-US, ja-JP, de-CH, de-DE. Дополнительные сведения см. в разделе <xref:System.Globalization.CultureInfo?displayProperty=fullName>.</xref:System.Globalization.CultureInfo?displayProperty=fullName>  
+ A culture expressed as a string in the form xx-XX. For example, en-US, ja-JP, de-CH, de-DE. For more information, see <xref:System.Globalization.CultureInfo?displayProperty=fullName>.  
   
- Этот атрибут задает язык и региональные параметры для использования при преобразовании блока выражений в текст.  
+ The culture attribute specifies the culture to use when an expression block is converted to text.  
   
-## <a name="debug-attribute"></a>атрибут debug  
- Пример  
+## <a name="debug-attribute"></a>debug attribute  
+ Example:  
  ```  
 debug="true"  
 ```  
   
- Допустимые значения:  
- `true, false`. Значение по умолчанию — false.  
+ Valid values:  
+ `true, false`. False is the default.  
   
- Если атрибут `debug` имеет значение `true`, промежуточный файл кода содержит сведения, позволяющие отладчику точнее определить положение прерывания или исключения в шаблоне.  
+ If the `debug` attribute is `true`, the intermediate code file will contain information that enables the debugger to identify more accurately the position in your template where a break or exception occurred.  
   
- Для шаблонов времени разработки записывается промежуточный файл кода для вашего **% TEMP %** каталога.  
+ For design-time templates the intermediate code file will be written to your **%TEMP%** directory.  
   
- Для выполнения шаблона времени разработки в отладчике, сохраните текстовый шаблон, а затем откройте контекстное меню текстового шаблона в обозревателе решений и выберите **отладить шаблон T4**.  
+ To run a design-time template in the debugger, save the text template, then open the shortcut menu of the text template in Solution Explorer, and choose **Debug T4 Template**.  
   
-## <a name="hostspecific-attribute"></a>атрибут hostspecific  
- Пример  
+## <a name="hostspecific-attribute"></a>hostspecific attribute  
+ Example:  
  ```  
 hostspecific="true"  
 ```  
   
- Допустимые значения:  
- `true, false, trueFromBase`. Значение по умолчанию — false.  
+ Valid values:  
+ `true, false, trueFromBase`. False is the default.  
   
- Если задать для этого атрибута значение `true`, свойство с именем `Host` будет добавлено в класс, сгенерированный текстовым шаблоном. Свойство представляет собой ссылку на узел модуля преобразования и объявляется как <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.</xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> Если определено пользовательское ведущее приложение, можно выполнить его приведение к типу пользовательского ведущего приложения.  
+ If you set the value of this attribute to `true`, a property named `Host` is added to the class generated by your text template. The property is a reference to the host of the transformation engine, and is declared as <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. If you have defined a custom host, you can cast it to the custom host type.  
   
- Поскольку тип данного свойства зависит от типа ведущего приложения, оно полезно, только если пишется текстовый шаблон, работающий с конкретным ведущим приложением. Он применим к [шаблоны разработки](../modeling/design-time-code-generation-by-using-t4-text-templates.md), но не [шаблоны во время выполнения](../modeling/run-time-text-generation-with-t4-text-templates.md).  
+ Because the type of this property depends on the type of host, it is only useful if you are writing a text template that works only with a specific host. It's applicable to [design-time templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md), but not [run-time templates](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
- Когда свойство `hostspecific` имеет значение `true` и вы используете [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], можно привести `this.Host` к типу IServiceProvider для доступа к функциям [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Кроме того, можно воспользоваться `Host.ResolvePath(filename)` для получения абсолютного пути к файлу в проекте. Например:  
+ When `hostspecific` is `true` and you are using [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], you can cast `this.Host` to IServiceProvider to access [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] features. You can also use `Host.ResolvePath(filename)` to obtain the absolute path of a file in the project. For example:  
   
-```c#  
+```cs  
 <#@ template debug="false" hostspecific="true" language="C#" #>  
 <#@ output extension=".txt" #>  
 <#@ assembly name="EnvDTE" #>  
@@ -116,22 +117,22 @@ Content of myFile is:
   
 ```  
   
- Если атрибуты `inherits` и `hostspecific` используются совместно, укажите host="trueFromBase" в производном классе и host="true" в базовом классе. Это позволит избежать двойного определения свойства `Host` в созданном коде.  
+ If you use the `inherits` and `hostspecific` attributes together, specify host="trueFromBase" in the derived class and host="true" in the base class. This avoids a double definition of the `Host` property in the generated code.  
   
-## <a name="language-attribute"></a>атрибут language  
- Пример  
+## <a name="language-attribute"></a>language attribute  
+ Example:  
  `language="VB"`  
   
- Допустимые значения:  
- `C#` (по умолчанию)  
+ Valid values:  
+ `C#` (default)  
   
  `VB`  
   
- Атрибут language задает язык ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] или [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) для использования в исходном коде в блоках инструкций и выражений. Этот язык будет использоваться в промежуточном файле кода, из которого создаются выходные данные. Этот язык не связан с языком, создаваемым шаблоном, который может быть представлен любым видом текста.  
+ The language attribute specifies the language ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] or [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) to use for the source code in statement and expression blocks. The intermediate code file from which the output is generated will use this language. This language is not related to the language that your template generates, which can be any kind of text.  
   
- Например:  
+ For example:  
   
-```vb#  
+```vb  
 <#@ template language="VB" #>  
 <#@ output extension=".txt" #>  
 Squares of numbers:  
@@ -146,17 +147,17 @@ Squares of numbers:
   
 ```  
   
-## <a name="inherits-attribute"></a>атрибут inherits  
- Можно задать наследование программного кода шаблона от другого класса, который также может быть создан из текстового шаблона.  
+## <a name="inherits-attribute"></a>inherits attribute  
+ You can specify that the program code of your template can inherit from another class, which can also be generated from a text template.  
   
-### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>Наследование в текстовом шаблоне времени выполнения (предварительно обработанном)  
- Можно использовать наследование между текстовыми шаблонами времени выполнения для создания базового шаблона с несколькими производными вариантами. Шаблоны времени выполнения, которые имеют **пользовательское средство** свойству **TextTemplatingFilePreprocessor**. Шаблон времени выполнения создает код, который можно вызывать в приложении для создания текста, который определен в шаблоне. Дополнительные сведения см. в разделе [Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).  
+### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>Inheritance in a run-time (preprocessed) text template  
+ You can use inheritance between run-time text templates to create a basic template that has several derived variants. Run-time templates are those that have the **Custom Tool** property set to **TextTemplatingFilePreprocessor**. A run-time template generates code that you can call in your application to create the text defined in the template. For more information, see [Run-Time Text Generation with T4 Text Templates](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
- Если атрибут `inherits` не задан, базовый и производный классы создаются из текстового шаблона. При задании атрибута `inherits` создается только производный класс. Можно создать базовый класс вручную, однако он должен предоставлять методы, используемые производным классом.  
+ If you do not specify an `inherits` attribute, a base class and a derived class are generated from your text template. When you specify an `inherits` attribute, only the derived class is generated. You can write a base class by hand, but it must provide the methods that are used by the derived class.  
   
- Как правило, в качестве базового класса указывается другой предварительно обработанный шаблон. Базовый шаблон предоставляет общие блоки текста, которые могут чередоваться с текстом из производных шаблонов. Можно использовать блоки функций класса `<#+ ... #>`, чтобы определить методы, содержащие фрагменты текста. Например, можно поместить структуру выходного текста в базовый шаблон и предоставить виртуальные методы, которые могут переопределяться в производных шаблонах:  
+ More typically, you specify another preprocessed template as the base class. The base template provides common blocks of text, which can be interleaved with text from the derived templates. You can use class feature blocks `<#+ ... #>` to define methods that contain text fragments. For example, you can place the framework of the output text in the base template, providing virtual methods that can be overridden in derived templates:  
   
- Текстовый шаблон времени выполнения (предварительно обработанный) BaseTemplate.tt:  
+ Run-time (preprocessed) text template BaseTemplate.tt:  
  ```scr  
 This is the common header.  
 <#   
@@ -175,8 +176,8 @@ This is the common footer.
   
 ```  
   
- Текстовый шаблон времени выполнения (предварительно обработанный) DerivedTemplate1.tt:  
- ```c#  
+ Run-time (preprocessed) text template DerivedTemplate1.tt:  
+ ```cs  
 <#@ template language="C#" inherits="BaseTemplate" #>  
 <#   
   // Run the base template:  
@@ -200,12 +201,12 @@ protected override void SpecificFragment2()
   
 ```  
   
- Код приложения для вызова DerivedTemplate1:  
- ```c#  
+ Application code to invoke DerivedTemplate1:  
+ ```cs  
 Console.WriteLine(new DerivedTemplate().TransformText());  
 ```  
   
- Полученные выходные данные:  
+ Resulting output:  
  ```  
 This is the common header.  
    Fragment 1 for DerivedTemplate1  
@@ -214,41 +215,41 @@ A common central text.
 This is the common footer.  
 ```  
   
- Можно создавать базовый и производный классы в разных проектах. Не забудьте добавить базовый проект или сборку в ссылки производного проекта.  
+ You can build the base and derived classes in different projects. Remember to add the base project or assembly to the derived project's references.  
   
- Кроме того, в качестве базового класса можно использовать обычный, созданный вручную класс. Базовый класс должен предоставлять методы, используемые производным классом.  
+ You can also use an ordinary hand-written class as the base class. The base class must provide the methods used by the derived class.  
   
 > [!WARNING]
->  Если атрибуты `inherits` и `hostspecific` используются совместно, укажите hostspecific="trueFromBase" в производном классе и host="true" в базовом классе. Это позволит избежать двойного определения свойства `Host` в созданном коде.  
+>  If you use the `inherits` and `hostspecific` attributes together, specify hostspecific="trueFromBase" in the derived class and host="true" in the base class. This avoids a double definition of the `Host` property in the generated code.  
   
-### <a name="inheritance-in-a-design-time-text-template"></a>Наследование в текстовом шаблоне времени разработки  
- Во время разработки текстовый шаблон является файл, для которого **пользовательское средство** равен **TextTemplatingFileGenerator**. Этот шаблон позволяет создать выходной файл кода или текста, формирующего часть проекта [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. При создании выходного файла шаблон сначала преобразуется в промежуточный файл программного кода, который обычно не видно пользователю. Атрибут `inherits` задает базовый класс для данного промежуточного кода.  
+### <a name="inheritance-in-a-design-time-text-template"></a>Inheritance in a design-time text template  
+ A design-time text template is a file for which **Custom Tool** is set to **TextTemplatingFileGenerator**. The template generates an output file of code or text, which forms part of your [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] project. To generate the output file, the template is first translated into an intermediate program code file, which you do not usually see. The `inherits` attribute specifies the base class for this intermediate code.  
   
- Для разработки текстового шаблона можно указать любой базовый класс, производный от <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>.</xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> Воспользуйтесь директивой `<#@assembly#>` для загрузки сборки или проекта, содержащего базовый класс.  
+ For a design-time text template, you can specify any base class that is derived from <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Use the `<#@assembly#>` directive to load the assembly or project that contains the base class.  
   
- Дополнительные сведения см. в разделе [«Наследования в текстовые шаблоны» в блоге Гарета Джонса](http://go.microsoft.com/fwlink/?LinkId=208373).  
+ For more information, see ["Inheritance in Text Templates" in Gareth Jones' Blog](http://go.microsoft.com/fwlink/?LinkId=208373).  
   
-## <a name="linepragmas-attribute"></a>Атрибут LinePragmas  
- Пример  
+## <a name="linepragmas-attribute"></a>LinePragmas attribute  
+ Example:  
  `linePragmas="false"`  
   
- Допустимые значения:  
- `true` (по умолчанию)  
+ Valid values:  
+ `true` (default)  
   
  `false`  
   
- Если для этого атрибута установлено значение false, удаляются теги, задающие номера строк в созданном коде. Это означает, что компилятор сообщает о любых ошибках с указанием номеров строк созданного кода. Таким образом расширяются возможности отладки, позволяя выбирать отладку текстового шаблона или созданного кода.  
+ Setting this attribute to false removes the tags that identify your line numbers within the generated code. This means that the compiler will report any errors by using line numbers of the generated code.This gives you more debugging options, as you can choose to debug either the text template or the generated code.  
   
- Этот атрибут также может помочь, если вы считаете, что абсолютные имена файлов в директивах pragma вызывают отвлекающие слияния в системе управления исходным кодом.  
+ This attribute can also help if you're finding the absolute filenames in pragmas are causing distracting merges under source code control.  
   
-## <a name="visibility-attribute"></a>Атрибут Visibility  
- Пример  
+## <a name="visibility-attribute"></a>Visibility attribute  
+ Example:  
  `visibility="internal"`  
   
- Допустимые значения:  
- `public` (по умолчанию)  
+ Valid values:  
+ `public` (default)  
   
  `internal`  
   
- В текстовом шаблоне времени выполнения задает атрибут видимости созданного класса. По умолчанию класс является частью открытого API кода, но если задать значение `visibility="internal"`, только ваш код сможет использовать класс, создающий текст.
+ In a runtime text template, this sets the visibility attribute of the generated class. By default, the class is part of the public API of your code, but by setting `visibility="internal"` you can make sure that only your code can use the text-generating class.
 

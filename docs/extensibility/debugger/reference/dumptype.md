@@ -1,5 +1,5 @@
 ---
-title: "DUMPTYPE | Документы Microsoft"
+title: DUMPTYPE | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 8a64d0d3c074b1d0b852afbd492aaa7ec9d37609
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: be7c7b4fe24187dd515dbfcfe3ce59ee453ecaee
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="dumptype"></a>DUMPTYPE
-Указывает, какая часть состояния программы (например, выполнение потоков, кадров стека и текущий адрес инструкции) для помещения в дамп.  
+Specifies how much of a program's state (such as running threads, stack frames, and current instruction address) to dump.  
   
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum enum_DUMPTYPE {   
@@ -49,30 +50,30 @@ enum enum_DUMPTYPE {
 typedef DWORD DUMPTYPE;  
 ```  
   
-```c#  
+```cs  
 public enum enum_DUMPTYPE {   
    DUMP_MINIDUMP = 0,  
    DUMP_FULLDUMP = 1  
 };  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Members  
  DUMP_MINIDUMP  
- Указывает небольшое compact аварийной копии памяти.  
+ Specifies a small, compact dump.  
   
  DUMP_FULLDUMP  
- Указывает большие, полный дамп.  
+ Specifies a large, complete dump.  
   
-## <a name="remarks"></a>Примечания  
- Передается в качестве аргумента для [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) метод.  
+## <a name="remarks"></a>Remarks  
+ Passed as an argument to the [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) method.  
   
-## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)

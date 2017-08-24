@@ -1,43 +1,60 @@
 ---
-title: "Рефакторинг для упорядочения параметров (C#) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.csharp.refactoring.reorder"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "рефакторинг [C#], Изменение порядка параметров"
-  - "Изменение порядка параметров - рефакторинг [C#]"
+redirect_url: /visualstudio/csharp-ide/refactoring/change-method-signature
+title: Reorder Parameters Refactoring (C#) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-csharp
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.csharp.refactoring.reorder
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- refactoring [C#], Reorder Parameters
+- Reorder Parameters refactoring [C#]
 ms.assetid: 4dabf21a-a9f0-41e9-b11b-55760cf2bd90
 caps.latest.revision: 26
-caps.handback.revision: 26
-author: "BillWagner"
-ms.author: "wiwagn"
-manager: "wpickett"
----
-# Рефакторинг для упорядочения параметров (C#)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: BillWagner
+ms.author: wiwagn
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: bf433e4bf8d32c39511bf043414a55ccb1a9d5bd
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-`Reorder Parameters` — это операция рефакторинга Visual C\#, являющаяся простым способом изменения порядка параметров методов, индексаторов и делегатов.  `Reorder Parameters` изменяет объявление члена и во всех местах, где он вызывается, расположение параметров изменяется в соответствии с новым их порядком.  
+---
+# <a name="reorder-parameters-refactoring-c"></a>Reorder Parameters Refactoring (C#)
+`Reorder Parameters` is a Visual C# refactoring operation that provides an easy way to change the order of the parameters for methods, indexers, and delegates. `Reorder Parameters` changes the declaration, and at any locations where the member is called, the parameters are rearranged to reflect the new order.  
   
- Для выполнения операции `Reorder Parameters`, поместите курсор на или рядом с методом, индексатором или делегатом.  Расположив курсор в нужном месте, следует вызвать выполнение операции `Reorder Parameters`, нажав сочетание клавиш или выбрав соответствующую команду в контекстном меню.  
+ To perform the `Reorder Parameters` operation, put the cursor on or next to a method, indexer, or delegate. When the cursor is in position, invoke the `Reorder Parameters` operation by pressing the keyboard shortcut, or by clicking the command from the shortcut menu.  
   
 > [!NOTE]
->  Невозможно изменить порядок первого параметра метода расширения.  
+>  You cannot reorder the first parameter in an extension method.  
   
-### Чтобы изменить порядок параметров  
+### <a name="to-reorder-parameters"></a>To reorder parameters  
   
-1.  Создайте библиотеку классов с именем `ReorderParameters`и затем замените `Class1` следующим примером кода.  
+1.  Create a class library named `ReorderParameters`, and then replace `Class1` with the following example code.  
   
-    ```c#  
+    ```cs  
     class ProtoClassA  
     {  
         // Invoke on 'MethodB'.  
@@ -56,26 +73,26 @@ manager: "wpickett"
     }  
     ```  
   
-2.  Расположите курсор на объявлении или вызове метода `MethodB`.  
+2.  Place the cursor on `MethodB`, either in the method declaration or the method call.  
   
-3.  В меню **Оптимизация** выберите пункт **Изменение порядка параметров**.  
+3.  On the **Refactor** menu, click **Reorder Parameters**.  
   
-     Откроется диалоговое окно **Упорядочение параметров**.  
+     The **Reorder Parameters** dialog box appears.  
   
-4.  В диалоговом окне **Изменение порядка параметров** выберите `int i` в списке **Параметры** и затем нажмите кнопку со стрелкой вниз.  
+4.  In the **Reorder Parameters** dialog box, select `int i` in the **Parameters** list, and then click the down button.  
   
-     В качестве альтернативы, можно перетащит элемент `int i`, расположив его после элемента `bool b` в списке **Параметры**.  
+     Alternatively, you can drag `int i` after `bool b` in the **Parameters** list.  
   
-5.  В диалоговом окне **Изменение порядка параметров** нажмите кнопку **ОК**.  
+5.  In the **Reorder Parameters** dialog box, click **OK**.  
   
-     Если флажок **Предварительный просмотр изменений ссылок** в диалоговом окне **Изменение порядка параметров** установлен, то откроется диалоговое окно **Предварительный просмотр изменений — изменение порядка параметров**.  Это окно позволяет выполнить предварительный просмотр изменений в списке параметров метода `MethodB` как в сигнатуре, так и в вызове метода.  
+     If the **Preview reference changes** option is selected in the **Reorder Parameters** dialog box, the **Preview Changes - Reorder Parameters** dialog box will appear. It provides a preview of the changes in the parameter list for `MethodB` in both the signature and the method call.  
   
-    1.  Если откроется диалоговое окно **Предварительный просмотр изменений — изменение порядка параметров**, нажмите кнопку **Применить**.  
+    1.  If the **Preview Changes - Reorder Parameters** dialog box appears, click **Apply**.  
   
-         В этом примере обновляются объявление метода `MethodB` и все места его вызова.  
+         In this example, the method declaration and all the method call sites for `MethodB` are updated.  
   
-## Заметки  
- Порядок параметров метода можно изменить из того места, где метод объявляется или вызывается.  Курсор следует располагать на объявлении метода или делегате, а не на его основной части.  
+## <a name="remarks"></a>Remarks  
+ You can reorder parameters from a method declaration or a method call. Position the cursor on or next to the method or delegate declaration but not in the body.  
   
-## См. также  
- [Рефакторинг \(C\#\)](../csharp-ide/refactoring-csharp.md)
+## <a name="see-also"></a>See Also  
+ [Refactoring (C#)](refactoring-csharp.md)

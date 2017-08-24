@@ -1,5 +1,5 @@
 ---
-title: "Управление параметрами приложения (.NET) | Документы Майкрософт"
+title: Managing Application Settings (.NET) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,90 +32,84 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: a6435584544cbffb9d90258cfba1d83bd71ee8cc
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: d8d2fbd4af47b3c94ec3f5d1cbc6d88a52ca2e39
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/30/2017
+ms.lasthandoff: 08/24/2017
 
 ---
-# Управление параметрами приложения (.NET)
-<a id="managing-application-settings-net" class="xliff"></a>
-Параметры приложений позволяют динамически хранить данные приложения. Параметры позволяют хранить на клиентском компьютере информацию, которая не должна быть включена в код приложения (например, строку подключения), настройки пользователя и другие сведения, необходимые во время выполнения.  
+# <a name="managing-application-settings-net"></a>Managing Application Settings (.NET)
+Application settings enable you to store application information dynamically. Settings allow you to store information on the client computer that should not be included in the application code (for example a connection string), user preferences and other information you need at runtime.  
   
- Параметры приложения заменяют динамические свойства, используемые в более ранних версиях Visual Studio.  
+ Application settings replace the dynamic properties used in earlier versions of Visual Studio.  
   
- Каждый параметр приложения должен иметь уникальное имя. Именем может быть любая комбинация букв, цифр или символов подчеркивания, которая не начинается с цифры и не содержит пробелов. Имя может быть изменено с помощью свойства `Name` .  
+ Each application setting must have a unique name. The name can be any combination of letters, numbers, or an underscore that does not start with a number, and it cannot contain spaces. The name can be changed through the `Name` property.  
   
- Параметры приложения могут храниться в виде любого типа данных, который может быть сериализован в формат XML или имеет метод `TypeConverter` , реализующий `ToString`/`FromString`. Наиболее распространенными типами являются `String`, `Integer` и `Boolean`, но можно также хранить значения как <xref:System.Drawing.Color>, <xref:System.Object> или в виде строки подключения.  
+ Application settings can be stored as any data type that can be serialized to XML or has a `TypeConverter` that implements `ToString`/`FromString`. The most common types are `String`, `Integer`, and `Boolean`, but you can also store values as <xref:System.Drawing.Color>, <xref:System.Object>, or as a connection string.  
   
- Параметры приложений также содержат значение. Значение задается с помощью свойства **Value** и должно соответствовать типу данных параметра.  
+ Application settings also contain a value. The value is set with the **Value** property and must match the data type of the setting.  
   
- Кроме того, параметры приложений могут быть связаны со свойством формы или элемента управления во время разработки.  
+ In addition, application settings can be bound to a property of a form or control at design time.  
   
- Существуют два типа параметров приложений в зависимости от области действия:  
+ There are two types of application settings, based on scope:  
   
--   Параметры, область действия которых ограничивается приложением, могут использоваться для хранения такой информации, как URL-адрес для веб-службы или строка подключения к базе данных. Эти значения связаны с приложением. Следовательно, пользователи не могут изменять их во время выполнения.  
+-   Application-scoped settings can be used for information such as a URL for a Web service or a database connection string. These values are associated with the application. Therefore, users cannot change them at run time.  
   
--   Параметры, область действия которых ограничивается пользователем, можно использовать для хранения такой информации, как сохранение последнего положения формы или предпочитаемых настроек шрифта. Пользователи могут изменять эти значения во время выполнения.  
+-   User-scoped settings can be used for information such as persisting the last position of a form or a font preference. Users can change these values at run time.  
   
- Можно изменить тип параметра с помощью свойства **Scope** .  
+ You can change the type of a setting by using the **Scope** property.  
   
- Система работы с проектами хранит параметры приложений в двух файлах XML: файле app.config, который создается во время разработки при создании первого параметра приложения; и файле user.config, который создается во время выполнения, когда работающий с приложением пользователь изменяет значение любого параметра пользователя. Обратите внимание, что изменения параметров пользователей не записываются на диск, если только приложение специально не вызовет для этого метод.  
+ The project system stores application settings in two XML files: an app.config file, which is created at design time when you create the first application setting; and a user.config file, which is created at run time when the user who runs the application changes the value of any user setting. Notice that changes in user settings are not written to disk unless the application specifically calls a method to do this.  
   
-## Создание параметров приложения во время разработки
-<a id="creating-application-settings-at-design-time" class="xliff"></a>  
- В режиме разработки можно создавать параметры приложения двумя способами: с помощью страницы **Параметры** **Конструктора проектов**либо с помощью окна **Свойства** формы или элемента управления, которое позволяет привязать параметр к свойству.  
+## <a name="creating-application-settings-at-design-time"></a>Creating Application Settings at Design Time  
+ At design time, you can create application settings in two ways: by using the **Settings** page of the **Project Designer**, or by using the **Properties** window for a form or control, which allows you to bind a setting to a property.  
   
- При создании параметра, область действия которого ограничивается приложением (например строки подключения к базе данных или ссылки на ресурсы сервера), [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] сохраняет его в файл app.config с тегом `<applicationSettings>` . (Строки подключения сохраняются под тегом `<connectionStrings>` .)  
+ When you create an application-scoped setting (for example, a database connection string, or a reference to server resources), [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] saves it in app.config with the `<applicationSettings>` tag. (Connection strings are saved under the `<connectionStrings>` tag.)  
   
- При создании параметра, область действия которого ограничивается пользователем (например шрифта по умолчанию, домашней страницы или размера окна), [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] сохраняет ее в файл app.config с тегом `<userSettings>` .  
+ When you create a user-scoped setting (for example, default font, home page, or window size), [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] saves it in app.config with the `<userSettings>` tag.  
   
 > [!IMPORTANT]
->  При хранении строк подключения в файле в app.config необходимо предпринимать меры предосторожности, чтобы избегать раскрытия секретной информации, такой как пароли или пути сервера, содержащейся в строке подключения.  
+>  When you store connection strings in app.config, you should take precautions to avoid revealing sensitive information, such as passwords or server paths, in the connection string.  
 >   
->  Если информация для строки подключения берется из внешнего источника (например пользователь задает идентификатор пользователя и пароль), то необходимо следить за тем, чтобы значения, которые используются для составления строки подключения, не содержали дополнительных параметров строки подключения, изменяющих действие подключения.  
+>  If you take connection string information from an external source, such as a user supplying a user ID and password, you must be careful to ensure that the values that you use to construct your connection string do not contain additional connection string parameters that change the behavior of your connection.  
 >   
->  Рассмотрите возможность использования функции защищенной конфигурации для шифрования секретной информации в файле конфигурации. Дополнительные сведения см. в статье [Защита сведений о соединении](/dotnet/framework/data/adonet/protecting-connection-information).  
+>  Consider using the Protected Configuration feature to encrypt sensitive information in the configuration file. See [Protecting Connection Information](/dotnet/framework/data/adonet/protecting-connection-information) for more information.  
   
 > [!NOTE]
->  Из-за отсутствия модели файла конфигурации для библиотек классов, параметры приложений не применяются для проектов библиотек классов. Исключением является Visual Studio Tools для проекта Office DLL, который может иметь файл конфигурации.  
+>  Because there is no configuration file model for class libraries, application settings do not apply for Class Library projects. The exception is a Visual Studio Tools for Office DLL project, which can have a configuration file.  
   
-## Использование индивидуальных файлов параметров
-<a id="using-customized-settings-files" class="xliff"></a>  
- Для удобства управления группами параметров в проект можно добавить индивидуальные файлы настроек. Содержащиеся в одном файле параметры загружаются и сохраняются как единое целое. Следовательно возможность хранения параметров в отдельных файлах для часто и редко используемых групп позволяет сэкономить время на загрузке и сохранении параметров.  
+## <a name="using-customized-settings-files"></a>Using Customized Settings Files  
+ You can add customized settings files to your project for convenient management of groups of settings. Settings that are contained in a single file are loaded and saved as a unit. Therefore, being able to store settings in separate files for frequently-used and infrequently-used groups can save time in loading and saving settings.  
   
- Например, можно добавить в проект такой файл, как SpecialSettings.Settings. Хотя класс `SpecialSettings` и не открыт для доступа через пространство имен `My` , но функция **Просмотр кода** позволяет прочесть индивидуальный файл параметров, содержащий `Partial Class SpecialSettings`.  
+ For example, you can add a file such as SpecialSettings.settings to your project. While your `SpecialSettings` class is not exposed in the `My` namespace, **View Code** can read the custom settings file that contains `Partial Class SpecialSettings`.  
   
- Конструктор параметров сначала ищет файл Settings.settings, который создает система работы с проектами; это файл, отображаемый Конструктором проектов по умолчанию на вкладке **Параметры** . Файл Settings.Settings находится в папке "Мои проекты", предназначенной для проектов [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] , и в папке "Свойства", предназначенной для проектов [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] . Затем Конструктор проектов ищет другие файлы параметров в корневой папке проекта. Таким образом, индивидуальный файл параметров следует помещать туда же. Если добавить файл с расширением SETTINGS в другое место проекта, Конструктор проекта не сможет его найти.  
+ The Settings Designer first searches for the Settings.settings file that the project system creates; this is the default file that the Project Designer displays in the **Settings** tab. Settings.settings is located in the My Project folder for [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projects and in the Properties folder for [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projects. The Project Designer then searches for other settings files in the project's root folder. Therefore, you should put your custom settings file there. If you add a .settings file elsewhere in your project, the Project Designer will not be able to locate it.  
   
-## Доступ или изменение параметров приложения во время выполнения в Visual Basic
-<a id="accessing-or-changing-application-settings-at-run-time-in-visual-basic" class="xliff"></a>  
- В проектах [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] во время выполнения доступ к параметрам приложения можно получить с помощью объекта `My.Settings` . На странице **Параметры** нажмите кнопку **Просмотреть код** , чтобы просмотреть файл Settings.vb. Файл Settings.vb определяет класс `Settings`, который позволяет обрабатывать эти события в классе параметров: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded> и <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Обратите внимание, что класс `Settings` в файле Settings.vb является частичным классом, который отображает только принадлежащий пользователю код, а не весь сгенерированный класс. Более подробную информацию о доступе к параметрам приложения с помощью объекта `My.Settings` см. в разделе [Accessing Application Settings](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings).  
+## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-basic"></a>Accessing or Changing Application Settings at Run Time in Visual Basic  
+ In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projects, you can access application settings at run time by using the `My.Settings` object. On the **Settings** page, click the **View code** button to view the Settings.vb file. Settings.vb defines the `Settings` class, which enables you to handle these events on the settings class: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>, and <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Notice that the `Settings` class in Settings.vb is a partial class that displays only the user-owned code, not the whole generated class. For more information about accessing application settings by using the `My.Settings` object, see [Accessing Application Settings](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings).  
   
- Значения любого изменяемого пользователем во время выполнения приложения параметра, область действия которого ограничивается пользователем (например положение формы), хранятся в файле User.config. Обратите внимание, что значения по умолчанию по-прежнему сохраняются в файл app.config.  
+ The values of any user-scoped settings that the user changes at run time (for example, the position of a form) are stored in a user.config file. Notice that the default values are still saved in app.config.  
   
- В случае изменения во время выполнения приложения каких-либо параметров, область действия которых ограничивается пользователем, например при тестировании приложения, и требуется восстановить их значения по умолчанию, нажмите кнопку **Синхронизировать** .  
+ If you have changed any user-scoped settings during run time, for example in testing the application, and want to reset these settings to their default values, click the **Synchronize** button.  
   
- Настоятельно рекомендуется использовать для доступа к параметрам объект `My.Settings` и используемый по умолчанию файл с расширением SETTINGS. Это связано с тем, что можно использовать Конструктор параметров для задания свойств параметрам и, кроме того, настройки пользователей автоматически сохраняются перед завершением работы приложения. Однако приложение [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] может получить доступ к настройкам напрямую. В этом случае необходим доступ к классу `MySettings` и использование индивидуального файла с расширением SETTINGS в корневой папке проекта. Необходимо также сохранить пользовательские настройки до завершения работы приложения, как бы это было сделано для приложения C#. Это описывается в следующем разделе.  
+ We strongly recommend that you use the `My.Settings` object and the default .settings file to access settings. This is because you can use the Settings Designer to assign properties to settings, and, additionally, user settings are automatically saved before application shutdown. However, your [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] application can access settings directly. In that case you have to access the `MySettings` class and use a custom .settings file in the root of the project. You must also save the user settings before ending the application, as you would do for a C# application; this is described in the following section.  
   
-## Доступ или изменение параметров приложения во время выполнения в Visual C#
-<a id="accessing-or-changing-application-settings-at-run-time-in-visual-c" class="xliff"></a> #
- В языках, отличных от [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], например [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], доступ к классу `Settings` необходимо осуществлять напрямую, как показано в следующем примере [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .  
+## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-c"></a>Accessing or Changing Application Settings at Run Time in Visual C# #
+ In languages other than [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], such as [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], you must access the `Settings` class directly, as shown in the following [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] example.  
   
-```c#  
+```cs  
 Properties.Settings.Default.FirstUserSetting = "abc";  
 ```  
   
- Также необходимо явным образом вызывать метод `Save` этого оберточного класса, чтобы сохранить настройки пользователя. Обычно это выполняется в обработчике событий `Closing` главной формы. В следующем примере [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] показан вызов метода `Save` .  
+ You must also explicitly call the `Save` method of this wrapper class in order to persist the user settings. You usually do this in the `Closing` event handler of the main form. The following [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] example shows a call to the `Save` method.  
   
-```c#  
+```cs  
 Properties.Settings.Default.Save();  
 ```  
   
- Общие сведения о доступе к параметрам приложений с помощью класса `Settings` см. в разделе [Общие сведения о параметрах приложений](/dotnet/framework/winforms/advanced/application-settings-overview). Информацию об итерации параметров см. в этой [записи форума](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).  
+ For general information about accessing application settings through the `Settings` class, see [Application Settings Overview](/dotnet/framework/winforms/advanced/application-settings-overview). For information about iterating through the settings, see this [forum post](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).  
   
-## См. также
-<a id="see-also" class="xliff"></a>  
- [Доступ к параметрам приложения](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)
+## <a name="see-also"></a>See Also  
+ [Accessing Application Settings](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)
 

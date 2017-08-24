@@ -1,5 +1,5 @@
 ---
-title: "Шаг 7. Отмена исчезновения пар значков | Документы Майкрософт"
+title: 'Step 7: Keep Pairs Visible | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -27,55 +27,55 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: eecbfe02fbb0850e7954be1baf7aa3d607601b80
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: c4509686b578b68a2313819aef8700c94e4db87a
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/19/2017
+ms.lasthandoff: 08/24/2017
 
 ---
-# <a name="step-7-keep-pairs-visible"></a>Шаг 7. Отмена исчезновения пар значков
-Игра работает правильно, пока игрок выбирает только пары значков, которые не совпадают. Но давайте посмотрим, что произойдет, когда игрок выберет совпадающую пару. Вместо того чтобы значки исчезали благодаря включению таймера (с помощью метода `Start()`), игра должна сбрасываться и больше не отслеживать метки с помощью ссылочных переменных `firstClicked` и `secondClicked`. Но цвета двух меток, которые были выбраны, не должны сбрасываться.  
+# <a name="step-7-keep-pairs-visible"></a>Step 7: Keep Pairs Visible
+The game works well, as long as the player only chooses pairs of icons that don't match. But consider what should happen when the player chooses a matching pair. Instead of making the icons disappear by turning on the timer (using the `Start()` method), the game should reset itself so that it's no longer keeping track of any labels using the `firstClicked` and `secondClicked` reference variables, without resetting the colors for the two labels that were chosen.  
   
-### <a name="to-keep-pairs-visible"></a>Отмена исчезновения пар значков  
+### <a name="to-keep-pairs-visible"></a>To keep pairs visible  
   
-1.  Добавьте следующий оператор `if` в конец кода метода обработчика событий `label_Click()` перед оператором, который запускает таймер. Внимательно просмотрите код при добавлении его в программу. Рассмотрим, как работает код.  
+1.  Add the following `if` statement to the `label_Click()` event handler method, near the end of the code just above the statement where you start the timer. Take a close look at the code while adding it to the program. Consider how the code works.  
   
-     [!code-cs[VbExpressTutorial4Step7#9](../ide/codesnippet/CSharp/step-7-keep-pairs-visible_1.cs)] [!code-vb[VbExpressTutorial4Step7#9](../ide/codesnippet/VisualBasic/step-7-keep-pairs-visible_1.vb)]  
+     [!code-cs[VbExpressTutorial4Step7#9](../ide/codesnippet/CSharp/step-7-keep-pairs-visible_1.cs)]  [!code-vb[VbExpressTutorial4Step7#9](../ide/codesnippet/VisualBasic/step-7-keep-pairs-visible_1.vb)]  
   
-     Первая строка только что добавленного оператора `if` проверяет, совпадает ли значок в первой метке, которую выбрал игрок, со значком во второй метке. Если значки совпадают, программа выполняет три оператора, которые расположены между фигурными скобками в C# или внутри оператора `if` в Visual Basic. Первые два оператора сбрасывают ссылочные переменные `firstClicked` и `secondClicked`, чтобы они больше не отслеживали какие-либо метки. (Возможно, вы узнали эти два оператора из обработчика событий Tick таймера.) Третий оператор — оператор `return`, который сообщает программе, что требуется пропустить оставшиеся в методе операторы и не выполнять их.  
+     The first line of the `if` statement you just added checks whether the icon in the first label that the player chooses is the same as the icon in the second label. If the icons are identical, the program executes the three statements between the curly braces in C# or the three statements within the `if` statement in Visual Basic. The first two statements reset the `firstClicked` and `secondClicked` reference variables so that they no longer keep track of any of the labels. (You may recognize those two statements from the timer's Tick event handler.) The third statement is a `return` statement, which tells the program to skip the rest of the statements in the method without executing them.  
   
-     При программировании в Visual C# вы могли обратить внимание, что в некоторых местах кода используется одиночный знак равенства (`=`), а в других — двойной знак равенства (`==`). Рассмотрим, почему в одних местах используется `=`, а в других — `==`.  
+     If programming in Visual C#, you may have noticed that some of the code uses a single equal sign (`=`), while other statements use two equal signs (`==`). Consider why `=` is used in some places but `==` is used in other places.  
   
-     Вот хороший пример, показывающий разницу. Внимательно посмотрите на код между скобками в операторе `if`.  
+     This is a good example that shows the difference. Take a careful look at the code between the parentheses in the `if` statement.  
   
-    ```vb#  
+    ```vb  
     firstClicked.Text = secondClicked.Text  
     ```  
   
-    ```c#  
+    ```cs  
     firstClicked.Text == secondClicked.Text  
     ```  
   
-     Затем внимательно посмотрите на первый оператор в блоке кода после оператора `if`.  
+     Then look closely at the first statement in the block of code after the `if` statement.  
   
-    ```vb#  
+    ```vb  
     firstClicked = Nothing  
     ```  
   
-    ```c#  
+    ```cs  
     firstClicked = null;  
     ```  
   
-     Первый из этих двух операторов проверяет, являются ли два значка одинаковыми. Поскольку два значения сравниваются, программа Visual C# использует оператор равенства `==`. Второй оператор на самом деле изменяет значение (это называется *присваивание*), задавая ссылочной переменной `firstClicked` значение `null`, чтобы ее сбросить. Вот почему здесь используется оператор присваивания `=`. В Visual C# для задания значений используется оператор `=`, а оператор `==` используется для их сравнения. В Visual Basic оператор `=` используется для присваивания значений переменным и для сравнения.  
+     The first of those two statements checks whether two icons are the same. Because two values are being compared, the Visual C# program uses the `==` equality operator. The second statement actually changes the value (called *assignment*), setting the `firstClicked` reference variable equal to `null` to reset it. That's why it uses the `=` assignment operator instead. Visual C# uses `=` to set values, and `==` to compare them. Visual Basic uses `=` for both variable assignment and comparison.  
   
-2.  Сохраните и запустите программу, а затем начните выбирать значки в форме. Если вы выбрали пару, которая не совпадает, произойдет событие таймера Tick и оба значка исчезнут. Если вы выбрали пару, которая совпадает, выполнится новый оператор `if`, а оператор return укажет методу пропустить код, запускающий таймер, чтобы значки остались видимыми, как показано на следующем рисунке.  
+2.  Save and run the program, and then start choosing icons on the form. If you choose a pair that doesn't match, the timer's Tick event triggers, and both icons disappear. If you choose a matching pair, the new `if` statement executes, and the return statement causes the method to skip the code that starts the timer, so the icons stay visible, as shown in the following picture.  
   
-     ![Игра, которую вы создадите в этом учебном руководстве](../ide/media/express_finishedgame.png "Express_FinishedGame")  
-Игра "Подбери пару!" с видимыми парами значков  
+     ![Game that you create in this tutorial](../ide/media/express_finishedgame.png "Express_FinishedGame")  
+Matching game with visible icon pairs  
   
-### <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал  
+### <a name="to-continue-or-review"></a>To continue or review  
   
--   Следующий шаг руководства: [Шаг 8. Добавление метода для проверки, выиграл ли игрок](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).  
+-   To go to the next tutorial step, see [Step 8: Add a Method to Verify Whether the Player Won](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).  
   
--   Предыдущий шаг руководства см. в разделе [Шаг 6. Добавление таймера](../ide/step-6-add-a-timer.md).
+-   To return to the previous tutorial step, see [Step 6: Add a Timer](../ide/step-6-add-a-timer.md).

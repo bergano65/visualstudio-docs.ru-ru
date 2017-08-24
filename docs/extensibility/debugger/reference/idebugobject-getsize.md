@@ -1,52 +1,69 @@
 ---
-title: "IDebugObject::GetSize | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugObject::GetSize"
-helpviewer_keywords: 
-  - "Метод IDebugObject::GetSize"
+title: IDebugObject::GetSize | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugObject::GetSize
+helpviewer_keywords:
+- IDebugObject::GetSize method
 ms.assetid: 89af423b-36eb-479d-b2de-2693455eca15
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugObject::GetSize
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 86eb59908fc605d0d5ff77dd887ad1571b6a55a9
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Получает размер объекта в байтах.  
+---
+# <a name="idebugobjectgetsize"></a>IDebugObject::GetSize
+Gets the size of the object in bytes.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetSize(   
-   UINT* pnSize  
+HRESULT GetSize(   
+   UINT* pnSize  
 );  
 ```  
   
-```c#  
+```cs  
 int GetSize(  
-   out uint pnSize  
+   out uint pnSize  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Parameters  
  `pnSize`  
- \[out\] возвращает размер \(в байтах\).  
+ [out] Returns the size in bytes.  
   
-## Возвращаемое значение  
- В случае успеха возвращает значение S\_OK; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## Заметки  
- Используйте [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md) метод для извлечения значения как последовательность байтов.  
+## <a name="remarks"></a>Remarks  
+ Use the [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md) method to retrieve the value as a sequence of bytes.  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

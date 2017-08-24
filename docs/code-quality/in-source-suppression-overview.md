@@ -1,126 +1,142 @@
 ---
-title: "Общие сведения о подавлении в исходном коде | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "подавление в исходном коде, анализ кода"
-  - "анализ кода, подавление в исходном коде"
+title: In Source Suppression Overview | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- source suppression, code analysis
+- code analysis, source suppression
 ms.assetid: f1a2dc6a-a9eb-408c-9078-2571e57d207d
 caps.latest.revision: 40
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 40
----
-# Общие сведения о подавлении в исходном коде
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 6b3ce7761c6a7bee5c0b4270b7784f67fe60080f
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Подавление в исходном коде — это возможность игнорировать нарушения, выявленные анализом кода в управляемом коде, путем добавления атрибута **SuppressMessage** в сегменты кода, вызывающие нарушения.  Атрибут **SuppressMessage** является условным атрибутом, который включается в метаданные промежуточного языка сборки управляемого кода только в том случае, если символ компиляции CODE\_ANALYSIS определен во время компиляции.  
+---
+# <a name="in-source-suppression-overview"></a>In Source Suppression Overview
+In-source suppression is the ability to suppress or ignore Code Analysis violations in managed code by adding the **SuppressMessage** attribute to the code segments that cause the violations. The **SuppressMessage** attribute is a conditional attribute which is included in the IL metadata of your managed code assembly only if the CODE_ANALYSIS compilation symbol is defined at compile time.  
   
- В C\+\+\/CLI для добавления этого атрибута используйте макрос CA\_SUPPRESS\_MESSAGE или CA\_GLOBAL\_SUPPRESS\_MESSAGE в файле заголовка.  
+ In C++/CLI, use the macros CA_SUPPRESS_MESSAGE or CA_GLOBAL_SUPPRESS_MESSAGE in the header file,  to add the attribute .  
   
- Подавление в исходном коде не рекомендуется использовать в готовых к выпуску построениях во избежание случайного распространения метаданных подавления в исходном коде.  Поскольку эта функция потребляет вычислительные ресурсы, включение метаданных подавления в исходном коде может вызвать ухудшение производительности приложения.  
+ You should not use in-source suppressions on release builds to prevent shipping the in-source suppression metadata accidentally. Because of the processing cost of in-source suppression, the performance of your application can also be degraded by including the in-source suppression metadata.  
   
 > [!NOTE]
->  Кодировать данные атрибуты вручную не нужно.  Для получения дополнительной информации см. [Практическое руководство. Отключение предупреждений при помощи пункта меню](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  Для кода C\+\+ этот пункт меню недоступен.  
+>  You do not have to hand code these attributes yourself. For more information, see [How to: Suppress Warnings by Using the Menu Item](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). The menu item is not available for C++ code.  
   
-## Атрибут SuppressMessage  
- Если щелкнуть правой кнопкой мыши предупреждение анализа кода в **списке ошибок** и выбрать пункт **Подавить сообщения**, атрибут **SuppressMessage** добавляется в код или в глобальный файл подавления проекта.  
+## <a name="suppressmessage-attribute"></a>SuppressMessage Attribute  
+ When you right-click a Code Analysis warning in the **Error List** and then click **Suppress Message(s)**, a **SuppressMessage** attribute is added either in your code or to the project's global suppressions file.  
   
- Атрибут **SuppressMessage** имеет следующий формат:  
+ The **SuppressMessage** attribute has the following format:  
   
 ```vb  
 <Scope:SuppressMessage("Rule Category", "Rule Id", Justification = "Justification", MessageId = "MessageId", Scope = "Scope", Target = "Target")>  
 ```  
   
-```c#  
+```cs  
 [Scope:SuppressMessage("Rule Category", "Rule Id", Justification = "Justification", MessageId = "MessageId", Scope = "Scope", Target = "Target")]  
   
 ```  
   
- \[C\+\+\]  
+ [C++]  
   
 ```  
 CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification", MessageId = "MessageId", Scope = "Scope", Target = "Target")  
   
 ```  
   
- Где:  
+ Where:  
   
--   **Rule Category** — категория, в которой определяется правило.  Дополнительные сведения о категориях правил анализа кода см. в разделе [Анализ для предупреждений управляемого кода](../code-quality/code-analysis-for-managed-code-warnings.md).  
+-   **Rule Category** - The category in which the rule is defined. For more information about code analysis rule categories, see [Code Analysis for Managed Code Warnings](../code-quality/code-analysis-for-managed-code-warnings.md).  
   
--   **Rule Id** — идентификатор правила.  Поддерживается как короткое, так и полное имя идентификатора правила.  Короткое имя выглядит следующим образом: CAXXXX. Полное имя выглядит следующим образом: CAXXXX:FriendlyTypeName.  
+-   **Rule Id** - The identifier of the rule. Support includes both a short and long name for the rule identifier. The short name is CAXXXX; the long name is CAXXXX:FriendlyTypeName.  
   
--   **Justification** — текст причины подавления предупреждения.  
+-   **Justification** - The text that is used to document the reason for suppressing the message.  
   
--   **Message Id** — уникальный идентификатор проблемы для каждого сообщения.  
+-   **Message Id** - Unique identifier of a problem for each message.  
   
--   **Scope** — объект, в рамках которого подавляется предупреждение.  Если объект не задан, по умолчанию устанавливается объект атрибута.  В число поддерживаемых областей входят следующие:  
+-   **Scope** - The target on which the warning is being suppressed. If the target is not specified, it is set to the target of the attribute. Supported scopes include the following:  
   
     -   Module  
   
-    -   Пространство имен  
+    -   Namespace  
   
-    -   Ресурс  
+    -   Resource  
   
-    -   Тип  
+    -   Type  
   
-    -   Член  
+    -   Member  
   
--   **Target** — идентификатор, используемый для обозначения объекта, в рамках которого подавляется предупреждение.  Он должен содержать полное имя элемента.  
+-   **Target** - An identifier that is used to specify the target on which the warning is being suppressed. It must contain a fully-qualified item name.  
   
-## Использование атрибута SuppressMessage  
- Предупреждения анализа кода подавляются на уровне, на котором применяется экземпляр атрибута **SuppressMessage**.  Цель такой политики заключается в тесной привязке сведений о подавлении к коду в месте нарушения.  
+## <a name="suppressmessage-usage"></a>SuppressMessage Usage  
+ Code Analysis warnings are suppressed at the level to which an instance of the **SuppressMessage** attribute is applied. The purpose of this is to tightly couple the suppression information to the code where the violation occurs.  
   
- Общая форма подавления включает категорию правила и идентификатор правила, содержащий имя правила в произвольной доступной для чтения форме.  Например:  
+ The general form of suppression includes the rule category and a rule identifier which contains an optional human-readable representation of the rule name. For example,  
   
  `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`  
   
- Если из соображений производительности требуется минимизировать объем метаданных подавления в исходном коде, само имя правила можно не использовать.  Категория и идентификатор правила вместе составляют достаточно уникальное обозначение правила.  Например:  
+ If there are strict performance reasons for minimizing in-source suppression metadata, the rule name itself can be left out. The rule category and its rule ID together constitute a sufficiently unique rule identifier. For example,  
   
  `[SuppressMessage("Microsoft.Design", "CA1039")]`  
   
- Данный формат не рекомендуется из соображений сопровождаемости.  
+ This format is not recommended because of maintainability issues.  
   
-## Подавление нескольких нарушений внутри тела метода  
- Атрибуты могут применяться только к методам, но не могут быть внедрены в тело метода.  Однако можно задать идентификатор в виде идентификатора сообщения для распознавания нескольких случаев нарушения внутри метода.  
+## <a name="suppressing-multiple-violations-within-a-method-body"></a>Suppressing Multiple Violations within a method body  
+ Attributes can only be applied to a method and cannot be embedded within the method body. However, you can specify the identifier as the message ID to distinguish multiple occurrences of a violation within a method.  
   
- [!code-cpp[InSourceSuppression#1](../code-quality/codesnippet/CPP/in-source-suppression-overview_1.cpp)]
- [!code-vb[InSourceSuppression#1](../code-quality/codesnippet/VisualBasic/in-source-suppression-overview_1.vb)]
- [!code-cs[InSourceSuppression#1](../code-quality/codesnippet/CSharp/in-source-suppression-overview_1.cs)]  
+ [!code-cpp[InSourceSuppression#1](../code-quality/codesnippet/CPP/in-source-suppression-overview_1.cpp)] [!code-vb[InSourceSuppression#1](../code-quality/codesnippet/VisualBasic/in-source-suppression-overview_1.vb)] [!code-cs[InSourceSuppression#1](../code-quality/codesnippet/CSharp/in-source-suppression-overview_1.cs)]  
   
-## Созданный код  
- Компиляторы управляемого кода и ряд сторонних средств создают код, упрощая и ускоряя процесс написания кода.  Созданный компиляторами код, как правило, помечается в исходных файлах атрибутом **GeneratedCodeAttribute**.  
+## <a name="generated-code"></a>Generated Code  
+ Managed code compilers and some third-party tools generate code to facilitate rapid code development. Compiler-generated code that appears in source files is usually marked with the **GeneratedCodeAttribute** attribute.  
   
- Существует возможность подавления предупреждений и ошибок анализа кода для созданного кода.  Сведения о подавлении таких предупреждений и ошибок см. в разделе [Практическое руководство. Отключение предупреждений для созданного кода](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).  
+ You can choose whether to suppress Code Analysis warnings and errors for generated code. For information about how to suppress such warnings and errors, see [How to: Suppress Warnings for Generated Code](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).  
   
- Обратите внимание, что средство анализа кода пропускает атрибут **GeneratedCodeAttribute**, когда он применяется к целой сборке или к отдельному параметру.  Такие ситуации возникают нечасто.  
+ Note that Code Analysis ignores **GeneratedCodeAttribute** when it is applied to either an entire assembly or a single parameter. These situations occur rarely.  
   
-## Подавления на глобальном уровне  
- Средство анализа управляемого кода проверяет атрибуты **SuppressMessage**, которые применяются на уровне сборки, модуля, типа, члена или параметра.  Оно также выявляет нарушения на уровне ресурсов и пространств имен.  Такие нарушения должны применяться на глобальном уровне, для них задается область действия и целевые объекты.  Например, следующее сообщение подавляет нарушение на уровне пространства имен:  
+## <a name="global-level-suppressions"></a>Global-Level Suppressions  
+ The managed code analysis tool examines **SuppressMessage** attributes that are applied at the assembly, module, type, member, or parameter level. It also fires violations against resources and namespaces. These violations must be applied at the global level and are scoped and targeted. For example, the following message suppresses a namespace violation:  
   
  `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`  
   
 > [!NOTE]
->  При подавлении предупреждения на уровне пространства имен подавление применяется к самому пространству имен.  Подавление не распространяется на типы внутри пространства имен.  
+>  When you suppress a warning with namespace scope, it suppresses the warning against the namespace itself. It does not suppress the warning against types within the namespace.  
   
- Любое подавление можно выразить, задав для него явную область действия.  Такие подавления должны применяться на глобальном уровне.  Подавление на уровне члена невозможно задать путем оформления типа.  
+ Any suppression can be expressed by specifying an explicit scope. These suppressions must live at the global level. You cannot specify member-level suppression by decorating a type.  
   
- Подавления на глобальном уровне — единственный способ подавления сообщений, относящихся к созданному компиляторами коду, который не сопоставляется с явно предоставленным исходным кодом пользователя.  Например, в следующем примере кода подавляется нарушение в созданном компилятором конструкторе:  
+ Global-level suppressions are the only way to suppress messages that refer to compiler-generated code that does not map to explicitly provided user source. For example, the following code suppresses a violation against a compiler-emitted constructor:  
   
  `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`  
   
 > [!NOTE]
->  Целевой объект всегда содержит полное имя элемента.  
+>  Target always contains the fully-qualified item name.  
   
-## Глобальный файл подавления  
- Глобальный файл подавления содержит подавления, которые либо применяются на глобальном уровне, либо не имеют определенного целевого объекта.  Например, в данном файле хранятся подавления на уровне сборки.  Кроме того, в данном файле хранится ряд подавлений ASP.NET, потому что параметры на уровне проекта недоступны для кода за пределами формы.  Глобальное подавление создается и добавляется в проект, когда впервые используется команда **Подавить сообщения** с параметром **В файле проекта для блокируемых предупреждений** в окне "Список ошибок".  Для получения дополнительной информации см. [Практическое руководство. Отключение предупреждений при помощи пункта меню](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  
+## <a name="global-suppression-file"></a>Global Suppression File  
+ The global suppression file maintains suppressions that are either global-level suppressions or suppressions that do not specify a target. For example, suppressions for assembly level violations are stored in this file. Additionally, some ASP.NET suppressions are stored in this file because project level settings are not available for code behind a form. A global suppression is created and added to your project the first time that you select the **In Project Suppression File** option of the **Suppress Message(s)** command in the Error List window. For more information, see [How to: Suppress Warnings by Using the Menu Item](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  <xref:System.Diagnostics.CodeAnalysis>

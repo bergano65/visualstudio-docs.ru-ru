@@ -1,5 +1,5 @@
 ---
-title: "IDebugObject::IsNullReference | Документы Microsoft"
+title: IDebugObject::IsNullReference | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 8dc2376af276a99dd63bbc4d4ffd89825acc1762
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: e43841d4cc991d2fee0631674aac705ddf386b1f
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
-Проверяет, является ли этот объект является пустой ссылкой.  
+Tests whether this object is a null reference.  
   
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT IsNullReference(   
@@ -47,21 +48,21 @@ HRESULT IsNullReference(
 );  
 ```  
   
-```c#  
+```cs  
 int IsNullReference(  
    out int pfIsNull  
 );  
 ```  
   
-#### <a name="parameters"></a>Параметры  
+#### <a name="parameters"></a>Parameters  
  `pfIsNull`  
- [out] Возвращает ненулевое значение (`TRUE`) Если этот объект является пустой ссылкой; в противном случае — возвращает ноль (`FALSE`).  
+ [out] Returns non-zero (`TRUE`) if this object is a null reference; otherwise, returns zero (`FALSE`).  
   
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает значение S_OK; в противном случае возвращается код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## <a name="remarks"></a>Примечания  
- Указатель null означает пустой объект или объект, который не назначен.  
+## <a name="remarks"></a>Remarks  
+ A null reference means an empty object or an object that has not been assigned to.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>See Also  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

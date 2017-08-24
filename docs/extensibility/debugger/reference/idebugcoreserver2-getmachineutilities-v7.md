@@ -1,5 +1,5 @@
 ---
-title: "IDebugCoreServer2::GetMachineUtilities_V7 | Документы Microsoft"
+title: IDebugCoreServer2::GetMachineUtilities_V7 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,19 +30,20 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 8cec5befece6b3415a903ed84d8d31cbe3988ee8
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 8c579ac58640b19c0988a61d2711dff52b659699
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="idebugcoreserver2getmachineutilitiesv7"></a>IDebugCoreServer2::GetMachineUtilities_V7
-Этот метод возвращает машины служебные программы для сервера.  
+This method gets the machine utilities for a server.  
   
 > [!NOTE]
->  Этот метод устарел: не используйте ([!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] всегда возвращает `E_NOTIMPL` при вызове этого метода). Он сохраняется по историческим причинам.  
+>  This method is obsolete: do not use ([!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] always returns `E_NOTIMPL` if this method is called). It is retained for historical reasons.  
   
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT GetMachineUtilities_V7(  
@@ -50,21 +51,21 @@ HRESULT GetMachineUtilities_V7(
 );  
 ```  
   
-```c#  
+```cs  
 int GetMachineUtilities_V7(  
    out IDebugMDMUtil2_V7 ppUtil  
 );  
 ```  
   
-#### <a name="parameters"></a>Параметры  
+#### <a name="parameters"></a>Parameters  
  `ppUtil`  
- [out] Возвращает `IDebugMDMUtil2_V7` интерфейс, представляющий сведения о служебных программ машине.  
+ [out] Returns an `IDebugMDMUtil2_V7` interface that represents the machine utilities information.  
   
-## <a name="return-value"></a>Возвращаемое значение  
- Всегда возвращает `E_NOTIMPL`, указывающее, что метод не реализован.  
+## <a name="return-value"></a>Return Value  
+ Always returns `E_NOTIMPL`, indicating that the method is not implemented.  
   
-## <a name="remarks"></a>Примечания  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]всегда возвращает `E_NOTIMPL` при вызове этого метода.  
+## <a name="remarks"></a>Remarks  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] always returns `E_NOTIMPL` if this method is called.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>See Also  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

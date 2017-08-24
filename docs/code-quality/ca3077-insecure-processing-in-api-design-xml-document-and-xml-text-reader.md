@@ -1,54 +1,72 @@
 ---
-title: "CA3077: небезопасная обработка в структуре API средств чтения документов и текста XML | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'CA3077: Insecure Processing in API Design, XML Document and XML Text Reader | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 7f33771b-f3c8-4c02-bef6-f581b623c303
 caps.latest.revision: 7
-caps.handback.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA3077: небезопасная обработка в структуре API средств чтения документов и текста XML
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 79fcb3bd6c6453eec03f489fc92646463cdb80ff
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
+---
+# <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: Insecure Processing in API Design, XML Document and XML Text Reader
 |||  
 |-|-|  
 |TypeName|InsecureDTDProcessingInAPIDesign|  
 |CheckId|CA3077|  
-|Категория|Microsoft.Security|  
-|Критическое изменение|Не критическое|  
+|Category|Microsoft.Security|  
+|Breaking Change|Non Breaking|  
   
-## Причина  
- При разработке API, производных от XMLDocument и XMLTextReader, обратите внимание на <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>.  Использование небезопасных экземпляров DTDProcessing при ссылке на источники внешних сущностей или их разрешении, а также при задании небезопасных значений в XML может привести к раскрытию информации.  
+## <a name="cause"></a>Cause  
+ When designing an API derived from XMLDocument and XMLTextReader, be mindful of <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>.  Using insecure DTDProcessing instances when referencing or resolving external entity sources or setting insecure values in the XML may lead to information disclosure.  
   
-## Описание правила  
- [DTD](https://msdn.microsoft.com/en-us/library/aa468547.aspx) — это один из двух способов определения допустимости документа средством синтаксического анализа XML, как указано в [стандарте XML 1.0 консорциума W3C](http://www.w3.org/TR/2008/REC-xml-20081126/). Это правило ищет свойства и экземпляры, в которых принимаются недоверенные данные, для предупреждения разработчиков о возможных угрозах [Раскрытие информации](../Topic/Information%20Disclosure.md), которые могут привести к атакам типа [отказ в обслуживании \(DoS\)](../Topic/Denial%20of%20Service.md). Это правило активируется, если:  
+## <a name="rule-description"></a>Rule Description  
+ A [Document Type Definition (DTD)](https://msdn.microsoft.com/en-us/library/aa468547.aspx) is one of two ways an XML parser can determine the validity of a document, as defined by the  [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). This rule seeks properties and instances where untrusted data is accepted to warn developers about potential [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) threats, which may lead to [Denial of Service (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) attacks. This rule triggers when:  
   
--   классы <xref:System.Xml.XmlDocument> и <xref:System.Xml.XmlTextReader> используют значения сопоставителя по умолчанию для обработки DTD;  
+-   <xref:System.Xml.XmlDocument> or <xref:System.Xml.XmlTextReader> classes use default resolver values for DTD processing    .  
   
--   конструктор для производных классов XmlDocument или XmlTextReader не определен либо для <xref:System.Xml.XmlResolver> не используется безопасное значение.  
+-   No constructor is defined for the XmlDocument or XmlTextReader derived classes or no secure value is used for <xref:System.Xml.XmlResolver>.  
   
-## Устранение нарушений  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
   
--   Перехватывайте и обрабатывайте все исключения XmlTextReader exception соответствующим образом, чтобы не допустить раскрытия информации.  
+-   Catch and process all XmlTextReader exceptions properly to avoid path information disclosure    .  
   
--   Используйте <xref:System.Xml.XmlSecureResolver> вместо XmlResolver, чтобы ограничить доступ к ресурсам для  XmlTextReader.  
+-   Use <xref:System.Xml.XmlSecureResolver>instead of XmlResolver to restrict the resources the XmlTextReader can  access.  
   
-## Отключение предупреждений  
- Отключайте правило этого предупреждения, только если уверены, что входные данные получены из доверенного источника.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Unless you're sure that the input is known to be from a trusted source, do not suppress a rule from this warning.  
   
-## Примеры псевдокода  
+## <a name="pseudo-code-examples"></a>Pseudo-code Examples  
   
-### Нарушение  
+### <a name="violation"></a>Violation  
   
-```c#  
+```cs  
 using System;   
 using System.Xml;   
   
@@ -68,9 +86,9 @@ namespace TestNamespace
 }  
 ```  
   
-### Решение  
+### <a name="solution"></a>Solution  
   
-```c#  
+```cs  
 using System;   
 using System.Xml;   
   

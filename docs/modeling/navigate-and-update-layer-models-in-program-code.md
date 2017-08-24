@@ -1,5 +1,5 @@
 ---
-title: "Переход и обновление моделей слоев в коде программы | Документы Microsoft"
+title: Navigate and update layer models in program code | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -28,19 +28,20 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: fd26c504273cae739ccbeef5e406891def732985
-ms.openlocfilehash: 626fc2b217285ae0c79dbd57f925281e10a0efbb
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 781b57612e3fe26f2edd7754442def5eb1341a93
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
 ---
-# <a name="navigate-and-update-layer-models-in-program-code"></a>Перемещение по моделям слоев в коде программы и их обновление
-В этом разделе рассматриваются элементы и отношения в моделях слоев, к которым можно перейти и которые можно обновить с помощью программного кода. Дополнительные сведения о схемах зависимостей с точки зрения пользователя см. в разделе [схемы зависимостей: справочник](../modeling/layer-diagrams-reference.md) и [схемы зависимостей: рекомендации по](../modeling/layer-diagrams-guidelines.md).  
+# <a name="navigate-and-update-layer-models-in-program-code"></a>Navigate and update layer models in program code
+This topic describes the elements and relationships in layer models, which you can navigate and update by using program code. For more information about dependency diagrams from the user's point of view, see [Dependency Diagrams: Reference](../modeling/layer-diagrams-reference.md) and [Dependency Diagrams: Guidelines](../modeling/layer-diagrams-guidelines.md).  
   
- <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer>Модели, описанные в этом разделе является интерфейсом более общей <xref:Microsoft.VisualStudio.GraphModel>модели.</xref:Microsoft.VisualStudio.GraphModel> </xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> При создании [меню расширения команды или жеста](../modeling/add-commands-and-gestures-to-layer-diagrams.md), используйте `Layer` модели. При создании [расширения проверки слоев](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), проще использовать `GraphModel`.  
+ The <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> model described in this topic is a facade on a more general <xref:Microsoft.VisualStudio.GraphModel> model. If you are writing a [menu command or gesture extension](../modeling/add-commands-and-gestures-to-layer-diagrams.md), use the `Layer` model. If you are writing a [layer validation extension](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), it is easier to use the `GraphModel`.  
   
-## <a name="transactions"></a>Транзакции  
- При обновлении модели рекомендуется заключить изменения в транзакцию `ILinkedUndoTransaction`. Это позволяет сгруппировать изменения в рамках одной транзакции. В случае сбоя любых изменений будет выполнен откат всей сборки. Если пользователь отменяет изменение, все изменения будут отменены.  
+## <a name="transactions"></a>Transactions  
+ When you update a model, consider enclosing the changes in a `ILinkedUndoTransaction`. This groups your changes into one transaction. If any of the changes fails, the whole transaction will be rolled back. If the user undoes a change, all the changes will be undone together.  
   
 ```  
 using (ILinkedUndoTransaction t =  
@@ -51,32 +52,32 @@ using (ILinkedUndoTransaction t =
 }  
 ```  
   
-## <a name="containment"></a>Вложение  
- ![И в элементе ILayerModel ILayer могут содержаться в. ] (../modeling/media/layerapi_containment.png "LayerApi_Containment")  
+## <a name="containment"></a>Containment  
+ ![ILayer and ILayerModel can both contain ILayers.](../modeling/media/layerapi_containment.png "LayerApi_Containment")  
   
- Слои (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayer>) и модель слоев (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerModel>) могут содержать комментарии и слои.</xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerModel> </xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayer>  
+ Layers (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayer>) and the layer model (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerModel>) can contain Comments and Layers.  
   
- Слой (`ILayer`) может содержаться в модели слоев (`ILayerModel`) или быть вложенным в другой `ILayer`.  
+ A layer (`ILayer`) can be contained in a layer model (`ILayerModel`) or it can be nested within another `ILayer`.  
   
- Для создания комментария или слоя используйте методы создания в соответствующем контейнере.  
+ To create a comment or a layer, use the creation methods on the appropriate container.  
   
-## <a name="dependency-links"></a>Связи зависимостей  
- Связь зависимости представлена объектом. Навигация для нее возможна в любом направлении:  
+## <a name="dependency-links"></a>Dependency Links  
+ A dependency link is represented by an object. It can be navigated in either direction:  
   
- ![ILayerDependencyLink соединяет два элемента Ilayer. ] (~/modeling/media/layerapi_dependency.png "LayerApi_Dependency")  
+ ![An ILayerDependencyLink connects two ILayers.](../modeling/media/layerapi_dependency.png "LayerApi_Dependency")  
   
- Чтобы создать связь зависимости, вызовите метод `source.CreateDependencyLink(target)`.  
+ To create a dependency link, call `source.CreateDependencyLink(target)`.  
   
-## <a name="comments"></a>Комментарии  
- Комментарии могут содержаться внутри слоев или модели слоев, кроме того, они могут быть связаны с другим элементом слоя:  
+## <a name="comments"></a>Comments  
+ Comments can be contained inside layers or the layer model, and can also be linked to any layer element:  
   
- ![Комментарии можно прикрепить к любому элементу слоя. ] (~/modeling/media/layerapi_comments.png "LayerApi_Comments")  
+ ![Comments can be attached to any layer element.](../modeling/media/layerapi_comments.png "LayerApi_Comments")  
   
- Комментарий может быть связан с любым числом элементов (включая нуль).  
+ A comment can be linked to any number of elements, including none.  
   
- Чтобы получить комментарии, прикрепленные к элементу слоя, используйте код:  
+ To get the comments that are attached to a layer element, use:  
   
-```c#  
+```cs  
 ILayerModel model = diagram.GetLayerModel();   
 IEnumerable<ILayerComment> comments =   
    model.Comments.Where(comment =>   
@@ -85,40 +86,39 @@ IEnumerable<ILayerComment> comments =
 ```  
   
 > [!CAUTION]
->  Свойство `Comments` слоя `ILayer` получает комментарии, вложенные в `ILayer`. Оно не получает комментарии, связанные с ним.  
+>  The `Comments` property of an `ILayer` gets comments that are contained within the `ILayer`. It does not get the comments that are linked to it.  
   
- Создайте комментарий, вызвав метод `CreateComment()` в соответствующем контейнере.  
+ Create a comment by invoking `CreateComment()` on the appropriate container.  
   
- Создайте связь, используя `CreateLink()` в комментарии.  
+ Create a link by using `CreateLink()` on the comment.  
   
-## <a name="layer-elements"></a>Элементы слоя  
- Все типы элементов, которые могут содержаться в модели, являются элементами слоя:  
+## <a name="layer-elements"></a>Layer Elements  
+ All the types of element that can be contained in a model are layer elements:  
   
- ![содержимое схемы зависимостей, содержит элементы Ilayerelement. ] (../modeling/media/layerapi_layerelements.png "LayerApi_LayerElements")  
+ ![dependency diagram contents are ILayerElements.](../modeling/media/layerapi_layerelements.png "LayerApi_LayerElements")  
   
-## <a name="properties"></a>Свойства  
- Каждый `ILayerElement` включает словарь строк с именем `Properties`. Этот словарь можно использовать для присоединения произвольных сведений к любому элементу слоя.  
+## <a name="properties"></a>Properties  
+ Each `ILayerElement` has a string dictionary named `Properties`. You can use this dictionary to attach arbitrary information to any layer element.  
   
-## <a name="artifact-references"></a>Ссылки на артефакты  
- Ссылка на артефакт (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>) представляет собой ссылку между слоем и элементом проекта, такие как файл, класс или папка.</xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference> Пользователи создают артефакты для создания слоя или добавить с помощью перетаскивания элементов из обозревателя решений, представление классов или обозреватель объектов на диаграмму зависимостей. К слою может быть привязано любое число ссылок на артефакты.  
+## <a name="artifact-references"></a>Artifact References  
+ An artifact reference (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>) represents the link between a layer and a project item such as a file, class, or folder. The user creates artifacts when they create a layer or add to it by dragging items from Solution Explorer, Class View, or Object Browser onto a dependency diagram. Any number of artifact references can be linked to a layer.  
   
- В каждой строке обозревателя слоев отображается ссылка на артефакт. Дополнительные сведения см. в разделе [создавать диаграммы зависимостей в коде](../modeling/create-layer-diagrams-from-your-code.md).  
+ Each row in Layer Explorer displays an artifact reference. For more information, see [Create dependency diagrams from your code](../modeling/create-layer-diagrams-from-your-code.md).  
   
- Основные типы и методы, затрагиваемые ссылками на артефакты, следующие:  
+ The principal types and methods concerned with artifact references are as follows:  
   
- <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>.</xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference> Свойство Categories указывает, на какой тип артефакта имеется ссылка (например, класс, исполняемый файл или сборка). Категории определяют, каким образом идентификатор идентифицирует целевой артефакт.  
+ <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>. The Categories property indicates what kind of artifact is referenced, such as a class, executable file, or assembly. Categories determines how the Identifier identifies the target artifact.  
   
- <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ArtifactReferenceExtensions.CreateArtifactReferenceAsync%2A>Создает ссылку артефакта из <xref:EnvDTE.Project>или <xref:EnvDTE.ProjectItem>.</xref:EnvDTE.ProjectItem> </xref:EnvDTE.Project></xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ArtifactReferenceExtensions.CreateArtifactReferenceAsync%2A> Это асинхронная операция. Поэтому обычно требуется предоставить метод обратного вызова, вызываемый при завершении создания.  
+ <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ArtifactReferenceExtensions.CreateArtifactReferenceAsync%2A> creates an artifact reference from an <xref:EnvDTE.Project> or <xref:EnvDTE.ProjectItem>. This is an asynchronous operation. Therefore, you usually provide a callback that is called when the creation is complete.  
   
- Ссылки на артефакты слоя не следует путать с артефактами в схемах вариантов использования.  
+ Layer Artifact References should not be confused with Artifacts in use case diagrams.  
   
-## <a name="shapes-and-diagrams"></a>Фигуры и схемы  
- Для представления каждого элемента в модели слоев используются два объекта: <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>и <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>.</xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape> </xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> 
-          `IShape` представляет положение и размер фигуры на схеме. В моделях слоев каждый `ILayerElement` есть `IShape`и каждый `IShape` на зависимость схема имеет один `ILayerElement`. `IShape` также используется для моделей UML. Поэтому не каждому объекту `IShape` назначается элемент слоя.  
+## <a name="shapes-and-diagrams"></a>Shapes and Diagrams  
+ Two objects are used to represent each element in a layer model: an <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>, and an <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>. The `IShape` represents the position and size of the shape on the diagram. In layer models, every `ILayerElement` has one `IShape`, and every `IShape` on a dependency diagram has one `ILayerElement`. `IShape` is also used for UML models. Therefore, not every `IShape` has a layer element.  
   
- Аналогичным образом, <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerModel>отображается на одной <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram>.</xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> </xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerModel>  
+ In the same manner, the <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerModel> is displayed on one <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram>.  
   
- В коде пользовательского обработчика команды или жеста можно получить текущую схему и текущий набор фигур, используя импорт `DiagramContext`:  
+ In the code of a custom command or gesture handler, you can get the current diagram and the current selection of shapes from the `DiagramContext` import:  
   
 ```  
 public class ... {  
@@ -135,14 +135,14 @@ public void ... (...)
     if (element != null) ... }}  
 ```  
   
- ![Каждый элемент ILayerElement представлен фигурой IShape. ] (~/modeling/media/layerapi_shapes.png "LayerApi_Shapes")  
+ ![Each ILayerElement is presented by an IShape.](../modeling/media/layerapi_shapes.png "LayerApi_Shapes")  
   
- <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>и <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram>также используются для отображения моделей UML.</xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram></xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape> Дополнительные сведения см. в разделе [отображение модели UML на схемах](../modeling/display-a-uml-model-on-diagrams.md).  
+ <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape> and <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> are also used to display UML models. For more information, see [Display a UML model on diagrams](../modeling/display-a-uml-model-on-diagrams.md).  
   
-## <a name="see-also"></a>См. также  
- [Добавление команд и жестов в схемы зависимостей](../modeling/add-commands-and-gestures-to-layer-diagrams.md)   
- [Добавление пользовательской проверки архитектуры в схемы зависимостей](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
- [Добавление пользовательских свойств в схемы зависимостей](../modeling/add-custom-properties-to-layer-diagrams.md)   
- [Схемы зависимостей: Справочник](../modeling/layer-diagrams-reference.md)   
- [Схемы зависимостей: рекомендации](../modeling/layer-diagrams-guidelines.md)   
+## <a name="see-also"></a>See Also  
+ [Add commands and gestures to dependency diagrams](../modeling/add-commands-and-gestures-to-layer-diagrams.md)   
+ [Add custom architecture validation to dependency diagrams](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
+ [Add custom properties to dependency diagrams](../modeling/add-custom-properties-to-layer-diagrams.md)   
+ [Dependency Diagrams: Reference](../modeling/layer-diagrams-reference.md)   
+ [Dependency Diagrams: Guidelines](../modeling/layer-diagrams-guidelines.md)   
 

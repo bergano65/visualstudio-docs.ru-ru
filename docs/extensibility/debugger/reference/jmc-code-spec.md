@@ -1,61 +1,78 @@
 ---
-title: "JMC_CODE_SPEC | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "JMC_CODE_SPEC"
-helpviewer_keywords: 
-  - "Структура JMC_CODE_SPEC"
+title: JMC_CODE_SPEC | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- JMC_CODE_SPEC
+helpviewer_keywords:
+- JMC_CODE_SPEC structure
 ms.assetid: d89498f1-4234-46d9-b4e2-abbcbca5068a
 caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
----
-# JMC_CODE_SPEC
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 378d21c576d9fb59a9ee3bdd4003a94a5924144b
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Эта структура используется для задания сведений о JustMyCode для модуля.  
+---
+# <a name="jmccodespec"></a>JMC_CODE_SPEC
+This structure is used to set the JustMyCode information for a module.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-typedef struct _JMC_CODE_SPEC {  
-   BOOL fIsUserCode;  
-   BSTR bstrModuleName;  
-} JMC_CODE_SPEC;  
+typedef struct _JMC_CODE_SPEC {  
+   BOOL fIsUserCode;  
+   BSTR bstrModuleName;  
+} JMC_CODE_SPEC;  
 ```  
   
-```c#  
-public struct JMC_CODE_SPEC {  
-   public int    fIsUserCode;  
-   public string bstrModuleName;  
+```cs  
+public struct JMC_CODE_SPEC {  
+   public int    fIsUserCode;  
+   public string bstrModuleName;  
 };  
 ```  
   
-## Члены  
+## <a name="members"></a>Members  
  fIsUserCode  
- Ненулевое значение \(`TRUE`если модуль должен считаться кодом пользователя; в противном случае \- нуль \(`FALSE`если модуль обрабатываться как внешний код и отлаживанным.  
+ Non-zero (`TRUE`) if the module is to be considered user code; otherwise, zero (`FALSE`) if the module is to be treated as external code and not to be debugged.  
   
  bstrModuleName  
- Имя модуля в вопросе.  
+ Name of the module in question.  
   
-## Заметки  
- Эта структура передается как список таких структур к [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) метод.  
+## <a name="remarks"></a>Remarks  
+ This structure is passed as a list of such structures to the [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) method.  
   
-## Требования  
- Заголовок: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## <a name="see-also"></a>See Also  
+ [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)

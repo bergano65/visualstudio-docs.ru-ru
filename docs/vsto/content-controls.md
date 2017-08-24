@@ -1,197 +1,202 @@
 ---
-title: "Элементы управления содержимым"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VST.Toolbox.DropDownListContentControl"
-  - "VST.Toolbox.RichTextContentControl"
-  - "VST.Toolbox.PlainTextContentControl"
-  - "VST.Toolbox.ComboBoxContentControl"
-  - "VST.Toolbox.CCBuildingBlockGalleryContentControl"
-  - "VST.Toolbox.DatePickerContentControl"
-  - "VST.Toolbox.PictureContentControl"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "коллекция стандартных блоков [разработка решений Office в Visual Studio]"
-  - "BuildingBlockGalleryContentControl - класс"
-  - "ComboBoxContentControl -класс"
-  - "элементы управления содержимым [разработка решений Office в Visual Studio]"
-  - "элементы управления содержимым [разработка решений Office в Visual Studio], сведения об элементах управления содержимым"
-  - "элементы управления [разработка решений Office в Visual Studio], элементы управления содержимым"
-  - "настраиваемые XML-части, элементы управления содержимым"
-  - "привязка данных [разработка решений Office в Visual Studio], элементы управления содержимым"
-  - "DatePickerContentControl - класс"
-  - "стандартные блоки документа [разработка решений Office в Visual Studio]"
-  - "документы [разработка решений Office в Visual Studio], ограниченные разрешения"
-  - "DropDownListContentControl - класс"
-  - "GroupContentControl - класс"
-  - "Office - документы [разработка решений Office в Visual Studio], ограниченные разрешения"
-  - "PictureContentControl - класс"
-  - "PlainTextContentControl - класс"
-  - "ограниченные разрешения [разработка решений Office в Visual Studio]"
-  - "RichTextContentControl - класс"
-  - "шаблоны [разработка решений Office в Visual Studio], элементы управления содержимым"
+title: Content Controls | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VST.Toolbox.DropDownListContentControl
+- VST.Toolbox.RichTextContentControl
+- VST.Toolbox.PlainTextContentControl
+- VST.Toolbox.ComboBoxContentControl
+- VST.Toolbox.CCBuildingBlockGalleryContentControl
+- VST.Toolbox.DatePickerContentControl
+- VST.Toolbox.PictureContentControl
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- document building blocks [Office development in Visual Studio]
+- restricted permissions [Office development in Visual Studio]
+- ComboBoxContentControl class
+- PictureContentControl class
+- PlainTextContentControl class
+- Office documents [Office development in Visual Studio], restricted permissions
+- RichTextContentControl class
+- content controls [Office development in Visual Studio]
+- building block gallery [Office development in Visual Studio]
+- controls [Office development in Visual Studio], content controls
+- GroupContentControl class
+- documents [Office development in Visual Studio], restricted permissions
+- DropDownListContentControl class
+- DatePickerContentControl class
+- data binding [Office development in Visual Studio], content controls
+- content controls [Office development in Visual Studio], about content controls
+- custom XML parts, content controls
+- templates [Office development in Visual Studio], content controls
+- BuildingBlockGalleryContentControl class
 ms.assetid: ed59e522-dd6e-4c82-8d49-f5dbcfcc950d
 caps.latest.revision: 65
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 64
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: cc344929d2c7384c09c611e6420d605a5a8ab1d5
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
+
 ---
-# Элементы управления содержимым
-  Элементы управления содержимым позволяют разрабатывать документы и шаблоны, которые имеют следующие возможности и функции.  
+# <a name="content-controls"></a>Content Controls
+  Content controls provide a way for you to design documents and templates that have these features:  
   
--   Пользовательский интерфейс с возможностью управляемого ввода данных, например в виде формы.  
+-   A user interface (UI) that has controlled input like a form.  
   
--   Ограничения, запрещающие пользователям редактировать защищенные разделы документа или шаблона.  Дополнительные сведения см. в разделе [Защита частей документов с помощью элементов управления содержимым](#Protection).  
+-   Restrictions that prevent users from editing protected sections of the document or template. For more information, see [Protecting Parts of Documents by Using Content Controls](#Protection).  
   
--   Привязка данных к источнику данных  Дополнительные сведения см. в разделе [Привязка данных к элементам управления содержимым](#DataBinding).  
+-   Data binding to a data source. For more information, see [Binding Data to Content Controls](#DataBinding).  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- ![ссылка на видео](~/data-tools/media/playvideo.gif "ссылка на видео") Демонстрационные видеоматериалы см. в статье [Привязка данных к элементам управления содержимым Word 2007 с помощью набора средств Visual Studio для Office \(3.0\)](http://go.microsoft.com/fwlink/?LinkId=136785).  
+ ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [Binding Data to Word 2007 Content Controls Using Visual Studio Tools for the Office System (3.0)](http://go.microsoft.com/fwlink/?LinkId=136785).  
   
-## Общие сведения об элементах управления содержимым  
- Элементы управления содержимым предоставляют пользовательский интерфейс, который оптимизирован как для данных, вводимых пользователем, так и для печати.  При добавлении элемента управления содержимым в документ этот элемент управления идентифицируется границей, заголовком и временным текстом, который может содержать инструкции для пользователя.  Границы и заголовок элемента управления в печатных версиях документа не отображаются.  
+## <a name="overview-of-content-controls"></a>Overview of Content Controls  
+ Content controls provide a UI that is optimized for both user input and print. When you add a content control to a document, the control is identified by a border, a title, and temporary text that can provide instructions to the user. The border and the title of the control do not appear in printed versions of the document.  
   
- Например, если требуется, чтобы пользователь мог ввести дату в раздел вашего документа, то в документ можно добавить элемент управления для выбора даты.  Когда пользователь щелкает элемент управления, появляется стандартный пользовательский интерфейс выбора даты.  Для настройки отображаемого регионального календаря и указания формата даты также можно задать свойства элемента управления.  После того как пользователь выберет дату, пользовательский интерфейс элемента управления скрывается и при печати появляется только дата.  
+ For example, if you want the user to enter a date in a section of your document, you can add a date picker content control to the document. When users click the control, the standard date picker UI appears. You can also set properties of the control to set the regional calendar that is displayed and to specify the date format. After the user chooses a date, the UI of the control is hidden, and only the date appears if the user prints the document.  
   
- Элементы управления содержимым также позволяют выполнять следующие действия.  
+ Content controls also help you do the following:  
   
--   Запрет пользователям изменять или удалять части документа.  Это удобно, если в документе или шаблоне есть сведения, доступные пользователям для чтения, но не для изменения, или если пользователи должны иметь возможность редактировать элементы управления содержимым, но не удалять их.  
+-   Prevent users from editing or deleting parts of a document. This is useful if you have information in a document or template that users should be able to read but not edit, or if you want users to be able to edit content controls but not delete them.  
   
--   Привязка документа или шаблона к данным.  Элементы управления содержимым можно привязать к полям базы данных, управляемым объектам в [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)], элементам XML, которые хранятся в документе, и другим источникам данных.  
+-   Bind parts of a document or template to data. You can bind content controls to database fields, managed objects in the [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)], XML elements that are stored in the document, and other data sources.  
   
- В проектах на уровне документа элементы управления содержимым можно добавлять в документ во время разработки или во время выполнения.  В проектах надстройки VSTO элементы управления содержимым можно добавлять в любой открытый документ во время выполнения.  Дополнительные сведения см. в разделе [Практическое руководство. Добавление элементов управления содержимым в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
-  
-> [!NOTE]  
->  Элементы управления содержимым можно использовать только в документах, сохраненных в формате Open XML.  В документах, сохраненных в формате документов Word 97\-2003 \(DOC\), элементы управления содержимым использовать нельзя.  
-  
-## Типы элементов управления содержимым  
- В документы можно добавлять элементы управления содержимым девяти типов.  Большинство элементов управления содержимым имеет соответствующий тип в пространстве имен <xref:Microsoft.Office.Tools.Word>.  Также можно использовать универсальный элемент <xref:Microsoft.Office.Tools.Word.ContentControl>, который может представлять любой из доступных элементов управления содержимым.  Пошаговое руководство по каждому из доступных элементов управления содержимым см. в разделе [Пошаговое руководство. Создание шаблона с помощью элементов управления содержимым](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
-  
-### Коллекция стандартных блоков  
- Коллекция стандартных блоков позволяет пользователям выбирать такие блоки из списка *стандартных блоков документа* для их вставки в документ.  Стандартный блок документа — это часть содержимого, которая была создана для многократного применения, например общая титульная страница, отформатированная таблица или заголовок.  Дополнительные сведения см. в описании типа <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>.  Дополнительные сведения о стандартных блоках см. в разделе [Новые возможности для разработчиков в Word 2007](http://msdn.microsoft.com/ru-ru/74aa6688-65b3-4167-997d-131f26ad8f84).  
-  
-### Флажок  
- Флажок предоставляет пользовательский интерфейс, который имеет двоичное состояние — установлен или снят.  
-  
- В отличие от других типов элементов управления содержимым, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] не предоставляет специальный тип, представляющий элемент управления содержимым «флажок».  Другими словами, тип CheckBoxContentControl не существует.  Тем не менее для создания элемента управления содержимым «флажок» в документ можно программным образом добавить универсальный элемент <xref:Microsoft.Office.Tools.Word.ContentControl>.  Дополнительные сведения см. в разделе [Элементы управления содержимым «флажок» в проектах Word](#checkbox).  
-  
-### Поле со списком  
- Поле со списком отображает список элементов, которые можно выбрать.  В отличие от раскрывающегося списка, поле со списком позволяет пользователям добавлять собственные элементы.  Дополнительные сведения см. в описании типа <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>.  
-  
-### Управляющий элемент выбора даты  
- Управляющий элемент выбора даты предоставляет пользовательский интерфейс календаря для выбора даты.  Календарь появляется, когда пользователь щелкает стрелку раскрывающегося списка в элементе управления.  Можно использовать региональные календари и различные форматы даты.  Дополнительные сведения см. в описании типа <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>.  
-  
-### Раскрывающийся список  
- Раскрывающийся список отображает список элементов, которые можно выбрать.  В отличие от поля со списком, раскрывающийся список не позволяет пользователям добавлять или изменять элементы.  Дополнительные сведения см. в описании типа <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>.  
-  
-### Группа  
- Элемент управления «группа» определяет защищенную область документа, которую нельзя изменять или удалять.  Элемент управления «группа» может содержать любые элементы документа, например текст, таблицы, графику и другие элементы управления содержимым.  Дополнительные сведения см. в описании типа <xref:Microsoft.Office.Tools.Word.GroupContentControl>.  
-  
-### Рисунок  
- Элемент управления «рисунок» отображает изображение.  Изображение можно указать во время разработки или во время выполнения, либо пользователь может щелкнуть этот элемент управления, чтобы выбрать изображение для вставки в документ.  Дополнительные сведения см. в описании типа <xref:Microsoft.Office.Tools.Word.PictureContentControl>.  
-  
-### Формат RTF  
- Элемент управления «форматированный текст» содержит текст или другие элементы, например таблицы, рисунки или другие элементы управления содержимым.  Дополнительные сведения см. в описании типа <xref:Microsoft.Office.Tools.Word.RichTextContentControl>.  
-  
-### Обычный текст  
- Элемент управления «обычный текст» содержит текст.  Элемент управления «обычный текст» не может содержать другие элементы, например таблицы, рисунки или другие элементы управления содержимым.  Кроме того, весь текст в элементе управления «обычный текст» имеет одинаковое форматирование.  Например, если выделить курсивом одно слово в предложении, которое находится в элементе управления «обычный текст», то курсивом будет выделен весь текст в этом элементе управления.  Дополнительные сведения см. в типе <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>.  
-  
-### Универсальный элемент управления содержимым  
- Универсальный элемент управления содержимым — это объект <xref:Microsoft.Office.Tools.Word.ContentControl>, который может представлять любой из элементов управления содержимым доступного типа.  Чтобы объект <xref:Microsoft.Office.Tools.Word.ContentControl> вел себя как элемент управления содержимым другого типа, его можно изменить с помощью свойства <xref:Microsoft.Office.Tools.Word.ContentControl.Type%2A>.  Например, если создан объект <xref:Microsoft.Office.Tools.Word.ContentControl>, представляющий элемент управления «обычный текст», его можно изменить во время выполнения так, чтобы он вел себя как поле со списком.  
-  
- Объекты <xref:Microsoft.Office.Tools.Word.ContentControl> можно создавать только во время выполнения, но не во время разработки.  Дополнительные сведения см. в разделе [Практическое руководство. Добавление элементов управления содержимым в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
-  
-## Общие возможности элементов управления содержимым  
- Большинство элементов управления содержимым имеют общий набор членов, которые можно использовать для выполнения распространенных задач.  В следующей таблице указаны некоторые задачи, которые можно выполнять с помощью таких членов.  
-  
-|Для выполнения этой задачи|Выполните следующее.|  
-|--------------------------------|--------------------------|  
-|Получение или задание текста, отображаемого в элементе управления.|Используйте свойство **Text**. **Note:**  У типов <xref:Microsoft.Office.Tools.Word.PictureContentControl> и <xref:Microsoft.Office.Tools.Word.ContentControl> нет такого свойства.|  
-|Получение или задание временного текста, отображаемого в элементе управления, пока пользователь не изменит элемент управления, элемент управления не заполнится данными из источника данных или не будет удалено содержимое элемента управления.|Используйте свойство **PlaceholderText**. **Note:**  У типа <xref:Microsoft.Office.Tools.Word.PictureContentControl> нет такого свойства.|  
-|Получение или задание заголовка, который отображается на границе элемента управления содержимым, когда пользователь его щелкает.|Используйте свойство **Title**.|  
-|Автоматическое удаление элемента управления из документа после того, как пользователь изменяет элемент управления.  \(Текст в элементе управления остается в документе.\)|Используйте свойство **Temporary**.|  
-|Выполнение кода, когда пользователь щелкает элемент управления содержимым или когда курсор программным образом перемещается в элемент управления содержимым.|Обработайте событие <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> элемента управления.|  
-|Выполнение кода, когда пользователь щелкает вне элемента управления содержимым или когда курсор перемещается программным образом за пределы элемента управления содержимым.|Обработайте событие <xref:Microsoft.Office.Tools.Word.ContentControlBase.Exiting> элемента управления.|  
-|Выполнение кода после добавления элемента управления содержимым в документ в результате выполнения операции повтора или отмены.|Обработайте событие <xref:Microsoft.Office.Tools.Word.ContentControlBase.Added> элемента управления.|  
-|Выполнение кода непосредственно перед удалением из документа элемента управления содержимым.|Обработайте событие <xref:Microsoft.Office.Tools.Word.ContentControlBase.Deleting> элемента управления.|  
-  
-##  <a name="Protection"></a> Защита частей документов с помощью элементов управления содержимым  
- При защите части документа вы запрещаете пользователям изменять или удалять содержимое в этой части документа.  Для защиты частей документа с помощью элементов управления содержимым можно использовать несколько способов.  
-  
- Если область, которую необходимо защитить, находится внутри элемента управления содержимым, то чтобы запретить изменение или удаление элемента управления, можно использовать свойства элемента управления содержимым.  
-  
--   Свойство **LockContents** запрещает пользователям изменять содержимое.  
-  
--   Свойство **LockContentControl** запрещает пользователям удалять содержимое.  
-  
- Если область, которую необходимо защитить, находится не внутри элемента управления содержимым или вы хотите защитить область, которая содержит элементы управления содержимым и другие типы содержимого, то область можно целиком поместить в элемент <xref:Microsoft.Office.Tools.Word.GroupContentControl>.  В отличие от других элементов управления содержимым, <xref:Microsoft.Office.Tools.Word.GroupContentControl> не отображает пользователям пользовательский интерфейс.  Он предназначен только для того, чтобы определить область, которую пользователи не могут изменять.  
+ In document-level projects, you can add content controls to your document at design time or at run time. In VSTO Add-in projects, you can add content controls to any open document at run time. For more information, see [How to: Add Content Controls to Word Documents](../vsto/how-to-add-content-controls-to-word-documents.md).  
   
 > [!NOTE]  
->  При создании элемента <xref:Microsoft.Office.Tools.Word.GroupContentControl>, который содержит внедренные элементы управления содержимым, такие элементы не защищаются автоматически.  Чтобы запретить пользователям изменять содержимое, необходимо использовать свойство **LockContents** каждого внедренного элемента управления.  
+>  You can use content controls only in documents that are saved in the Open XML Format. You cannot use content controls in documents that are saved in the Word 97-2003 document (.doc) format.  
   
- Дополнительные сведения об использовании элементов управления содержимым для защиты частей документов см. в разделе [Практическое руководство. Защита частей документов с помощью элементов управления содержимым](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+## <a name="types-of-content-controls"></a>Types of Content Controls  
+ There are nine different types of content controls that you can add to documents. Most of the content controls have a corresponding type in the <xref:Microsoft.Office.Tools.Word> namespace. You can also use a generic <xref:Microsoft.Office.Tools.Word.ContentControl>, which can represent any of the available content controls. For a walkthrough that demonstrates how to use each of the available content controls, see [Walkthrough: Creating a Template By Using Content Controls](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
   
-##  <a name="DataBinding"></a> Привязка данных к элементам управления содержимым  
- Для отображения данных в документах элемент управления содержимым можно привязать к источнику данных.  При обновлении источника данных элемент управления содержимым будет показывать внесенные изменения.  Изменения также можно сохранить обратно в источник данных.  
+### <a name="building-block-gallery"></a>Building Block Gallery  
+ A building block gallery enables users to select from a list of *document building blocks* to insert into a document. A document building block is a piece of content that has been created to be used multiple times, such as a common cover page, a formatted table, or a header. For more information, see the <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> type. For more information about building blocks, see [What's New for Developers in Word 2007](http://msdn.microsoft.com/en-us/74aa6688-65b3-4167-997d-131f26ad8f84).  
   
- Элементы управления содержимым предоставляют следующие возможности по привязке данных.  
+### <a name="check-box"></a>Check Box  
+ A check box provides a UI that represents a binary state: selected or cleared.  
   
--   Для привязки элементов управления содержимым к полям базы данных или управляемым объектам можно использовать ту же модель привязки данных, что и Windows Forms.  
+ Unlike the other types of content controls, the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] does not provide a specific type that represents a check box content control. In other words, there is no CheckBoxContentControl type. However, you can still create a check box content control by adding a generic <xref:Microsoft.Office.Tools.Word.ContentControl> to a document programmatically. For more information, see [Check Box Content Controls in Word Projects](#checkbox).  
   
--   Элементы управления содержимым можно привязать к элементам во фрагментах XML\-кода \(они также называются *пользовательские XML\-части*\), которые внедряются в документ.  
+### <a name="combo-box"></a>Combo Box  
+ A combo box displays a list of items that users can select. Unlike a drop-down list, the combo box enables users to add their own items. For more information, see the <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> type.  
   
- Общие сведения о привязке элементов управления ведущего приложения в решениях Office к данным см. в разделе [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+### <a name="date-picker"></a>Date Picker  
+ A date picker provides a calendar UI for selecting a date. The calendar appears when the end user clicks the drop-down arrow in the control. You can use regional calendars and different date formats. For more information, see the <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> type.  
   
-### Использование модели привязки данных Windows Forms  
- Большинство элементов управления содержимым поддерживают простую модель привязки данных, используемую Windows Forms.  Простая привязка данных означает, что элемент управления привязывается к одному элементу данных, например к значению в столбце таблицы данных.  Дополнительные сведения см. в разделе [Связывание данных и Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27).  
+### <a name="drop-down-list"></a>Drop-Down List  
+ A drop-down list displays a list of items that users can select. Unlike a combo box, the drop-down list does not let users add or edit items. For more information, see the <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> type.  
   
- В проектах на уровне документа для привязки данных к элементам управления содержимым можно использовать окно **Источники данных** в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  Дополнительные сведения о добавлении привязанных к данным элементов управления содержимым в документы см. в разделах [Практическое руководство. Заполнение документов данными из базы данных](../vsto/how-to-populate-documents-with-data-from-a-database.md) и [Практическое руководство. Заполнение документов данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md).  
+### <a name="group"></a>Group  
+ A group control defines a protected region of a document that users cannot edit or delete. A group control can contain any document items, such as text, tables, graphics, and other content controls. For more information, see the <xref:Microsoft.Office.Tools.Word.GroupContentControl> type.  
   
- В следующей таблице перечислены элементы управления содержимым, которые можно привязать к каждому типу данных в окне **Источники данных**.  
+### <a name="picture"></a>Picture  
+ A picture control displays an image. You can specify the image at design time or run time, or users can click this control to select an image to insert in the document. For more information, see the <xref:Microsoft.Office.Tools.Word.PictureContentControl> type.  
   
-|Тип данных|Элемент управления содержимым по умолчанию|Другие элементы управления содержимым, которые можно привязать к этому типу данных|  
-|----------------|------------------------------------------------|----------------------------------------------------------------------------------------|  
+### <a name="rich-text"></a>Rich Text  
+ A rich text control contains text or other items, such as tables, pictures, or other content controls. For more information, see the <xref:Microsoft.Office.Tools.Word.RichTextContentControl> type.  
+  
+### <a name="plain-text"></a>Plain Text  
+ A plain text control contains text. A plain text control cannot contain other items, such as tables, pictures, or other content controls. In addition, all of the text in a plain text control has the same formatting. For example, if you italicize one word of a sentence that is in a plain text control, all the text inside the control is italicized. For more information, see the <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> type.  
+  
+### <a name="generic-content-control"></a>Generic Content Control  
+ A generic content control is a <xref:Microsoft.Office.Tools.Word.ContentControl> object that can represent any of the available types of content controls. You can change a <xref:Microsoft.Office.Tools.Word.ContentControl> object to behave like a different type of content control by using the <xref:Microsoft.Office.Tools.Word.ContentControl.Type%2A> property. For example, if you create a <xref:Microsoft.Office.Tools.Word.ContentControl> object that represents a plain text control, you can change it at run time so that it behaves like a combo box.  
+  
+ You can create <xref:Microsoft.Office.Tools.Word.ContentControl> objects only at run time, not at design time. For more information, see [How to: Add Content Controls to Word Documents](../vsto/how-to-add-content-controls-to-word-documents.md).  
+  
+## <a name="common-features-of-content-controls"></a>Common Features of Content Controls  
+ Most content controls share a set of members that you can use to perform common tasks. The following table describes some of the tasks that you can perform by using these members.  
+  
+|For this task:|Do this:|  
+|--------------------|--------------|  
+|Get or set the text that is displayed in the control.|Use the **Text** property. **Note:**  The <xref:Microsoft.Office.Tools.Word.PictureContentControl> and <xref:Microsoft.Office.Tools.Word.ContentControl> types do not have this property.|  
+|Get or set the temporary text that is displayed in the control until a user edits the control, the control is populated with data from a data source, or the control's contents are deleted.|Use the **PlaceholderText** property. **Note:**  The <xref:Microsoft.Office.Tools.Word.PictureContentControl> type does not have this property.|  
+|Get or set the title that is displayed in the border of the content control when the user clicks it.|Use the **Title** property.|  
+|Remove the control from the document automatically after the user edits the control. (The text in the control remains in the document.)|Use the **Temporary** property.|  
+|Run code when the user clicks in the content control, or when the cursor is moved into the content control programmatically.|Handle the <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> event of the control.|  
+|Run code when the user clicks outside the content control, or when the cursor is moved outside the content control programmatically.|Handle the <xref:Microsoft.Office.Tools.Word.ContentControlBase.Exiting> event of the control.|  
+|Run code after the content control is added to the document as a result of a redo or undo operation.|Handle the <xref:Microsoft.Office.Tools.Word.ContentControlBase.Added> event of the control.|  
+|Run code just before the content control is deleted from the document.|Handle the <xref:Microsoft.Office.Tools.Word.ContentControlBase.Deleting> event of the control.|  
+  
+##  <a name="Protection"></a> Protecting Parts of Documents By Using Content Controls  
+ When you protect a part of a document, you prevent users from changing or deleting the content in that part of the document. There are several ways you can protect parts of a document by using content controls.  
+  
+ If the area you want to protect is inside a content control, you can use properties of the content control to prevent users from editing or deleting the control:  
+  
+-   The **LockContents** property prevents users from editing the contents.  
+  
+-   The **LockContentControl** property prevents users from deleting the control.  
+  
+ If the area you want to protect is not inside a content control, or if you want to protect an area that contains content controls and other types of content, you can put the whole area in a <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Unlike other content controls, a <xref:Microsoft.Office.Tools.Word.GroupContentControl> provides no UI that is visible to the user. Its only purpose is to define a region that users cannot edit.  
+  
+> [!NOTE]  
+>  If you create a <xref:Microsoft.Office.Tools.Word.GroupContentControl> that contains embedded content controls, the embedded content controls are not automatically protected. You must use the **LockContents** property of each embedded control to prevent users from editing their contents.  
+  
+ For more information about how to use content controls to protect parts of documents, see [How to: Protect Parts of Documents by Using Content Controls](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+  
+##  <a name="DataBinding"></a> Binding Data to Content Controls  
+ You can display data in documents by binding a content control to a data source. When the data source is updated, the content control reflects the changes. You can also save changes back to the data source.  
+  
+ Content controls provide the following data binding options:  
+  
+-   You can bind content controls to database fields or managed objects by using the same data binding model as Windows Forms.  
+  
+-   You can bind content controls to elements in pieces of XML (also named *custom XML parts*) that are embedded in the document.  
+  
+ For an overview of binding host controls in Office solutions to data, see [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md).  
+  
+### <a name="using-the-windows-forms-data-binding-model"></a>Using the Windows Forms Data Binding Model  
+ Most content controls support the simple data binding model that Windows Forms uses. Simple data binding means that a control is bound to a single data element, such as a value in a column of a data table. For more information, see [Data Binding and Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
+  
+ In document-level projects, you can bind data to content controls by using the **Data Sources** window in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. For more information about how to add data-bound content controls to documents, see [How to: Populate Documents with Data from a Database](../vsto/how-to-populate-documents-with-data-from-a-database.md) and [How to: Populate Documents with Data from Objects](../vsto/how-to-populate-documents-with-data-from-objects.md).  
+  
+ The following table lists the content controls that you can bind to each data type in the **Data Sources** window.  
+  
+|Data type|Default content control|Other content controls that can be bound to this data type|  
+|---------------|-----------------------------|----------------------------------------------------------------|  
 |<xref:System.Boolean><br /><br /> <xref:System.Byte><br /><br /> <xref:System.Char><br /><br /> <xref:System.Double><br /><br /> <xref:System.Enum><br /><br /> <xref:System.Guid><br /><br /> <xref:System.Int16><br /><br /> <xref:System.Int32><br /><br /> <xref:System.Int64><br /><br /> <xref:System.SByte><br /><br /> <xref:System.Single><br /><br /> <xref:System.String><br /><br /> <xref:System.TimeSpan><br /><br /> <xref:System.UInt16><br /><br /> <xref:System.UInt32><br /><br /> <xref:System.UInt64>|<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.DatePickerContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|  
 |<xref:System.DateTime>|<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|  
-|<xref:System.Drawing.Image><br /><br /> Массив <xref:System.Byte>|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Нет|  
+|<xref:System.Drawing.Image><br /><br /> <xref:System.Byte> array|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|None|  
   
- В проектах на уровне документа и проектах надстроек VSTO для привязки элемента управления содержимым к источнику данных программным образом можно использовать метод <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> свойства <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> элемента управления.  Для этого передайте строку **Текст** в параметр *propertyName* метода <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A>.  Свойство **Text** — это свойство привязки данных по умолчанию элементов управления содержимым.  
+ In document-level and VSTO Add-in projects, you can bind a content control to a data source programmatically by using the <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> method of the <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> property of the control. If you do this, pass in the string **Text** to the *propertyName* parameter of the <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> method. The **Text** property is the default data binding property of content controls.  
   
- Элементы управления содержимым также поддерживают двухстороннюю привязку данных, при которой изменения в элементе управления переносятся в источник данных.  Дополнительные сведения см. в разделе [Практическое руководство. Обновление источника данных с помощью данных из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
+ Content controls also support two-way data binding, in which changes in the control are updated to the data source. For more information, see [How to: Update a Data Source with Data from a Host Control](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
   
 > [!NOTE]  
->  Элементы управления содержимым не поддерживают сложную привязку данных.  Если для привязки <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> или <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> к источнику данных применяется модель данных Windows Forms, при щелчке элемента управления пользователи увидят только одно значение.  Если эти элементы управления необходимо привязать к набору значений данных, которые пользователь может выбирать, то эти элементы можно привязать к элементам в пользовательской XML\-части.  
+>  Content controls do not support complex data binding. If you bind a <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> or <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> to a data source by using the Windows Forms data model, users will see only a single value when they click the control. If you want to bind these controls to a set of data values that users can choose from, you can bind these controls to elements in a custom XML part.  
   
-### Привязка элементов управления содержимым к пользовательским XML\-частям  
- Элементы управления содержимым можно привязать к элементам в пользовательских XML\-частях, которые внедряются в документ.  Дополнительные сведения о пользовательских XML\-частях см. в разделе [Общие сведения о пользовательских XML-частях](../vsto/custom-xml-parts-overview.md).  
+### <a name="binding-content-controls-to-custom-xml-parts"></a>Binding Content Controls to Custom XML Parts  
+ You can bind some content controls to elements in custom XML parts that are embedded in the document. For more information about custom XML parts, see [Custom XML Parts Overview](../vsto/custom-xml-parts-overview.md).  
   
- Для привязки элемента управления содержимым к элементу в пользовательской XML\-части используйте свойство **XMLMapping** элемента управления.  В следующем примере кода показано, как привязать <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> к элементу `Price` в узле `Product` в пользовательской XML\-части, которая уже была добавлена в документ.  
+ To bind a content control to an element in a custom XML part, use the **XMLMapping** property of the control. The following code example demonstrates how to bind a <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> to the `Price` element under the `Product` node in a custom XML part that has already been added to the document.  
   
 ```vb  
 plainTextContentControl1.XMLMapping.SetMapping("/Product/Price")  
 ```  
   
-```csharp  
+```cs  
 plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, null);  
 ```  
   
- Пошаговое руководство по привязке элементов управления содержимым к пользовательским XML\-частям см. в разделе [Пошаговое руководство. Привязка элементов управления содержимым к пользовательским XML-частям](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
+ For a walkthrough that demonstrates how to bind content controls to custom XML parts in more detail, see [Walkthrough: Binding Content Controls to Custom XML Parts](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
- При привязке элемента управления содержимым к пользовательской XML\-части автоматически включается двусторонняя привязка данных.  Когда пользователь редактирует текст в элементе управления, соответствующие XML\-элементы обновляются автоматически.  Аналогичным образом, если значения элементов в пользовательских XML\-частях изменяются, элементы управления содержимым, привязанные к этим XML\-элементам, будут отображать новые данные.  
+ When you bind a content control to a custom XML part, two-way data binding is automatically enabled. If a user edits text in the control, the corresponding XML elements are automatically updated. Similarly, if element values in the custom XML parts are changed, the content controls that are bound to the XML elements will display the new data.  
   
- К пользовательским XML\-частям можно привязать элементы управления содержимым следующего типа.  
+ You can bind the following types of content controls to custom XML parts:  
   
 -   <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>  
   
@@ -203,45 +208,43 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
   
 -   <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>  
   
-### События привязки данных для элементов управления содержимым  
- Все элементы управления содержимым предоставляют набор событий, которые можно обрабатывать для выполнения задач, связанных с данными, например для проверки соответствия текста в элементе управления заданным критериям перед обновлением источника данных.  В следующей таблице перечислены события элементов управления, которые относятся к привязке данных.  
+### <a name="data-binding-events-for-content-controls"></a>Data Binding Events for Content Controls  
+ All content controls provide a set of events that you can handle to perform data-related tasks, such as validating that the text in a control meets certain criteria before the data source is updated. The following table lists the content control events that are related to data binding.  
   
-|Задача|Событие|  
-|------------|-------------|  
-|Выполнение кода непосредственно перед тем, как Word автоматически обновит текст в элементе управления содержимым, привязанном к пользовательской XML\-части.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|  
-|Выполнение кода непосредственно перед тем, как Word автоматически обновит данные в пользовательской XML\-части, которая привязана к элементу управления содержимым \(то есть после изменения текста в элементе управления содержимым\).|<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|  
-|Выполнение кода для проверки содержимого элемента управления в соответствии с пользовательскими критериями.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.Validating>|  
-|Выполнение кода после успешной проверки содержимого элемента управления.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.Validated>|  
+|Task|Event|  
+|----------|-----------|  
+|Run code just before Word automatically updates the text in a content control that is bound to a custom XML part.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|  
+|Run code just before Word automatically updates data in a custom XML part that is bound to a content control (that is, after the text in the content control changes).|<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|  
+|Run your own code to validate the contents of the control according to custom criteria.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.Validating>|  
+|Run code after the contents of the control have been successfully validated.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.Validated>|  
   
-## Ограничения для элементов управления содержимым  
- При использовании элементов управления содержимым в проектах Office следует учитывать следующие ограничения.  
+## <a name="limitations-of-content-controls"></a>Limitations of Content Controls  
+ When you use content controls in your Office projects, be aware of the following limitations.  
   
-### Различия в поведении между временем разработки и временем выполнения  
- Многие ограничения, которые Microsoft Office Word налагает на элементы управления содержимым во время выполнения, не применяются во время разработки.  При разработке пользовательского интерфейса решения на уровне документа в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] изменяйте элементы управления содержимым только теми способами, которые поддерживаются во время выполнения.  
+### <a name="behavior-differences-between-design-time-and-run-time"></a>Behavior Differences Between Design Time and Run Time  
+ Many of the limitations that Microsoft Office Word imposes on content controls at run time are not enforced at design time. When you design the UI of a document-level solution in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], be sure to modify content controls only in ways that are supported at run time.  
   
- При изменении элемента управления содержимым во время разработки с помощью способа, который элемент управления не поддерживает во время выполнения, конструктор [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] не будет предупреждать о том, что изменения не поддерживаются.  Тем не менее при отладке или запуске проекта либо при сохранении и последующем повторном открытии проекта в Word появится сообщение об ошибке и запрос на разрешение исправить документ.  При восстановлении документа Word удалит из элемента управления все неподдерживаемое содержимое и форматирование.  
+ If you modify a content control at design time in a way that the control does not support at run time, the [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer will not alert you of the unsupported changes. However, when you debug or run the project, or if you save and then reopen the project, Word will display an error message and request permission to repair the document. When you repair the document, Word removes all unsupported content and formatting from the control.  
   
- Например, Word не запретит вам добавить таблицу в <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> во время разработки.  Однако так как объекты <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> не могут содержать таблицы во время выполнения, то при открытии этого документа Word выдаст сообщение об ошибке.  
+ For example, Word does not prevent you from adding a table to a <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> at design time. However, because <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> objects cannot contain tables at run time, Word will display an error message when the document is opened.  
   
- Также следует отметить, что многие свойства, определяющие поведение элементов управления содержимым, не оказывают никакого влияния во время разработки.  Например, если для свойства **LockContents** элемента управления содержимым во время разработки установить значение **True**, то можно будет изменить текст в элементе управления в конструкторе [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  Это свойство не позволяет изменять элемент управления только во время выполнения.  
+ Also note that many properties that define the behavior of content controls have no effect at design time. For example, if you set the **LockContents** property of a content control to **True** at design time, you can still edit text in the control in the [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer. This property only prevents users from editing the control at run time.  
   
-### Ограничения для событий  
- Элементы управления содержимым не предоставляют событие, которое возникает при изменении пользователем текста или других элементов в элементе управления.  Например, не существует событие, возникающее, когда пользователь выбирает другой элемент в <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> или <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>.  
+### <a name="event-limitations"></a>Event Limitations  
+ Content controls do not provide an event that is raised when the user changes text or other items in the control. For example, there is no event that is raised when a user selects a different item in a <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> or <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>.  
   
- Чтобы определить, когда пользователь изменяет содержимое элемента управления содержимым, элемент управления можно привязать к пользовательской XML\-части, а затем обрабатывать событие <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>.  Это событие возникает, когда пользователь изменяет содержимое элемента управления, привязанного к пользовательской XML\-части.  Пошаговое руководство по привязке элемента управления содержимым к пользовательским XML\-частям см. в разделе [Пошаговое руководство. Привязка элементов управления содержимым к пользовательским XML-частям](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
+ To determine when a user edits the contents of a content control, you can bind the control to a custom XML part, and then handle the <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating> event. This event is raised when the user changes the contents of a control that is bound to a custom XML part. For a walkthrough that demonstrates how to bind a content control to a custom XML part, see [Walkthrough: Binding Content Controls to Custom XML Parts](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
-###  <a name="checkbox"></a> Элементы управления содержимым «флажок» в проектах Word  
- В Word 2010 появился новый тип элемента управления содержимым, который представляет флажок.  Однако [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] не предоставляет соответствующий тип CheckBoxContentControl, который можно использовать в проектах Office.  Чтобы создать содержимое элемента управления «флажок» в [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] или Word 2010, используйте метод <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> для создания объекта <xref:Microsoft.Office.Tools.Word.ContentControl> и передайте значение <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> в этот метод для указания элемента управления содержимым «флажок».  В следующем примере кода показано, как это сделать.  
+###  <a name="checkbox"></a> Check Box Content Controls in Word Projects  
+ Word 2010 introduced a new type of content control that represents a check box. However, the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] does not provide a corresponding CheckBoxContentControl type for you to use in Office projects. To create a check box content control in a [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] or Word 2010 project, use the <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> method to create a <xref:Microsoft.Office.Tools.Word.ContentControl> object, and pass the <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> value to the method to specify a check box content control. The following code example demonstrates how to do this.  
   
- [!code-csharp[Trin_ContentControlReference#800](../snippets/csharp/VS_Snippets_OfficeSP/Trin_ContentControlReference/CS/checkbox.cs#800)]
- [!code-vb[Trin_ContentControlReference#800](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_ContentControlReference/VB/checkbox.vb#800)]  
+ [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)] [!code-cs[Trin_ContentControlReference#800](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs#800)]  
   
-## См. также  
- [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)   
- [Практическое руководство. Добавление элементов управления содержимым в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [Пошаговое руководство. Создание шаблона с помощью элементов управления содержимым](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)   
- [Данные в решениях Office](../vsto/data-in-office-solutions.md)   
- [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  
+## <a name="see-also"></a>See Also  
+ [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)   
+ [How to: Add Content Controls to Word Documents](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [Walkthrough: Creating a Template By Using Content Controls](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)   
+ [Data in Office Solutions](../vsto/data-in-office-solutions.md)   
+ [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+

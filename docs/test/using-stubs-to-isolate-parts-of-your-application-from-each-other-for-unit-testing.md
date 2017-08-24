@@ -1,5 +1,5 @@
 ---
-title: "Использование заглушек для изоляции частей приложений друг от друга при модульном тестировании | Microsoft Docs"
+title: Using stubs to isolate parts of your application from each other for unit testing | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -26,68 +26,68 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: d9588eff64ef29c757b6d4224c17975e6ee9d0ee
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 43134fc58872d9a5b006119d7437c76c6c820597
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/24/2017
 
 ---
-# <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Использование заглушек для изоляции частей приложений друг от друга при модульном тестировании
-*Типы заглушек* — это одна из двух технологий, которые платформа Microsoft Fakes предоставляет для более простого изолирования тестируемого компонента от других вызываемых компонентов. Заглушка — это небольшая часть кода, которая заменяет собой другой компонент во время тестирования. Преимущество использования заглушки заключается в том, что она возвращает последовательные результаты, упрощая написание теста. Тесты можно выполнять, даже если другие компоненты пока не работают.  
+# <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Using stubs to isolate parts of your application from each other for unit testing
+*Stub types* are one of two technologies that the Microsoft Fakes framework provides to let you easily isolate a component you are testing from other components that it calls. A stub is a small piece of code that takes the place of another component during testing. The benefit of using a stub is that it returns consistent results, making the test easier to write. And you can run tests even if the other components are not working yet.  
   
- Обзор и рекомендации по быстрому началу работы с Fakes см. в разделе [Изоляция тестируемого кода с помощью Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
+ For an overview and quick start guide to Fakes, see [Isolating Code Under Test with Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
   
- Для использования заглушек необходимо написать компонент таким образом, чтобы он использовал только интерфейсы, а не классы для ссылки на другие части приложения. Это рекомендуемая практика разработки, поскольку при внесении изменений в одну часть, скорее всего, не потребуется вносить изменения в другую. При тестировании это позволяет заменить заглушку на реальный компонент.  
+ To use stubs, you have to write your component so that it uses only interfaces, not classes, to refer to other parts of the application. This is a good design practice because it makes changes in one part less likely to require changes in another. For testing, it allows you to substitute a stub for a real component.  
   
- На схеме представлен компонент StockAnalyzer, который требуется протестировать. Обычно он использует другой компонент — RealStockFeed. Но RealStockFeed возвращает различные результаты при каждом вызове его методов, что усложняет тестирование StockAnalyzer.  Во время тестирования мы заменяем этот компонент на другой класс — StubStockFeed.  
+ In the diagram, the component StockAnalyzer is the one we want to test. It normally uses another component, RealStockFeed. But RealStockFeed returns different results every time its methods are called, making it difficult to test StockAnalyzer.  During testing, we replace it with a different class, StubStockFeed.  
   
- ![Классы Real и Stub соответствуют одному интерфейсу.](../test/media/fakesinterfaces.png "FakesInterfaces")  
+ ![Real and Stub classes conform to one interface.](../test/media/fakesinterfaces.png "FakesInterfaces")  
   
- Поскольку предполагается, что заглушки могут структурировать код таким образом, они обычно используются для изолирования одной части приложения от другой. Для изолирования ее от других сборок, которыми вы не можете управлять, например System.dll, обычно используются оболочки. См. [Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).  
+ Because stubs rely on your being able to structure your code in this way, you typically use stubs to isolate one part of your application from another. To isolate it from other assemblies that are not under your control, such as System.dll, you would normally use shims. See [Using shims to isolate your application from other assemblies for unit testing](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).  
   
  **Requirements**  
   
 -   Visual Studio Enterprise  
   
-## <a name="in-this-topic"></a>Содержание раздела  
+## <a name="in-this-topic"></a>In this topic  
   
--   [Использование заглушек](#how)  
+-   [How to use stubs](#how)  
   
-    -   [Разработка для внедрения зависимости](#Dependency)  
+    -   [Design for Dependency Injection](#Dependency)  
   
-    -   [Создание заглушек](#GeneratingStubs)  
+    -   [Generate Stubs](#GeneratingStubs)  
   
-    -   [Создание теста с заглушками](#WriteTest)  
+    -   [Write your Test with Stubs](#WriteTest)  
   
-    -   [Проверка значений параметров](#mocks)  
+    -   [Verifying Parameter Values](#mocks)  
   
--   [Заглушки для различных видов членов типа](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Stub_basics)  
+-   [Stubs for different kinds of type members](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Stub_basics)  
   
-    -   [Методы](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Methods)  
+    -   [Methods](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Methods)  
   
-    -   [Свойства](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Properties)  
+    -   [Properties](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Properties)  
   
-    -   [События](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Events)  
+    -   [Events](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Events)  
   
-    -   [Универсальные методы](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Generic_methods)  
+    -   [Generic methods](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Generic_methods)  
   
-    -   [Заглушки виртуальных классов](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Partial_stubs)  
+    -   [Stubs of virtual classes](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Partial_stubs)  
   
--   [Отладка заглушек](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Debugging_stubs)  
+-   [Debugging stubs](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Debugging_stubs)  
   
--   [Ограничения заглушки](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Stub_limitation)  
+-   [Stub limitations](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Stub_limitation)  
   
--   [Изменение поведения заглушек по умолчанию](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Changing_the_default_behavior_of_stubs)  
+-   [Changing the default behavior of stubs](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Changing_the_default_behavior_of_stubs)  
   
-##  <a name="How"></a> Использование заглушек  
+##  <a name="How"></a> How to use stubs  
   
-###  <a name="Dependency"></a> Разработка для внедрения зависимости  
- Для использования заглушек приложение должно быть разработано таким образом, чтобы различные компоненты не зависели друг от друга, а только от определений интерфейса. Вместо соединения во время компиляции компоненты соединяются во время выполнения. Этот шаблон позволяет создать надежное и легко обновляемое программное обеспечение, поскольку изменения, как правило, не выходят за границы компонентов. Им рекомендуется пользоваться, даже если вы не используете заглушки. При написании нового кода легко использовать шаблон [внедрения зависимости](http://en.wikipedia.org/wiki/Dependency_injection). При написании тестов для существующего программного обеспечения может потребоваться выполнить его рефакторинг. Если это непрактично, можно рассмотреть возможность использования оболочек.  
+###  <a name="Dependency"></a> Design for dependency injection  
+ To use stubs, your application has to be designed so that the different components are not dependent on each other, but only dependent on interface definitions. Instead of being coupled at compile time, components are connected at run time. This pattern helps to make software that is robust and easy to update, because changes tend not to propagate across component boundaries. We recommend following it even if you don't use stubs. If you are writing new code, it's easy to follow the [dependency injection](http://en.wikipedia.org/wiki/Dependency_injection) pattern. If you are writing tests for existing software, you might have to refactor it. If that would be impractical, you could consider using shims instead.  
   
- Начнем с показательного примера, представленного на схеме. Класс StockAnalyzer считывает курсы акций и выдает некоторые интересные результаты. Он имеет несколько открытых методов, которые требуется протестировать. Для простоты рассмотрим только один из этих методов, который сообщает текущий курс определенной акции. Требуется написать модульный тест этого метода. Вот первый вариант теста.  
+ Let's start this discussion with a motivating example, the one in the diagram. The class StockAnalyzer reads share prices and generates some interesting results. It has some public methods, which we want to test. To keep things simple, let's just look at one of those methods, a very simple one that reports the current price of a particular share. We want to write a unit test of that method. Here's the first draft of a test:  
   
-```c#  
+```cs  
 [TestMethod]  
 public void TestMethod1()  
 {  
@@ -100,7 +100,7 @@ public void TestMethod1()
 }  
 ```  
   
-```vb#  
+```vb  
 <TestMethod()> Public Sub TestMethod1()  
     ' Arrange:  
     Dim analyzer = New StockAnalyzer()  
@@ -111,11 +111,11 @@ public void TestMethod1()
 End Sub  
 ```  
   
- Одна проблема с данным тестом немедленно бросается в глаза: курсы акции различаются, поэтому утверждение обычно будет выдавать ошибку.  
+ One problem with this test is immediately obvious: share prices vary, and so the assertion will usually fail.  
   
- Другая проблема может заключаться в том, что компонент StockFeed, который используется классом StockAnalyzer, в данный момент находится в разработке. Вот первый вариант кода тестируемого метода.  
+ Another problem might be that the StockFeed component, which is used by the StockAnalyzer, is still under development. Here's the first draft of the code of the method under test:  
   
-```c#  
+```cs  
 public int GetContosoPrice()  
 {  
     var stockFeed = new StockFeed(); // NOT RECOMMENDED  
@@ -123,28 +123,28 @@ public int GetContosoPrice()
 }  
 ```  
   
-```vb#  
+```vb  
 Public Function GetContosoPrice()  
     Dim stockFeed = New StockFeed() ' NOT RECOMMENDED  
     Return stockFeed.GetSharePrice("COOO")  
 End Function  
 ```  
   
- В таком виде этот метод может не компилироваться или может вызвать исключение, поскольку работа над классом StockFeed еще не завершена.  
+ As it stands, this method might not compile or might throw an exception because work on the StockFeed class is not yet complete.  
   
- Внедрение интерфейса позволит решить обе эти проблемы.  
+ Interface injection addresses both of these problems.  
   
- При внедрении интерфейса применяется следующее правило:  
+ Interface injection applies the following rule:  
   
--   Код любого компонента приложения не должен явно ссылаться на класс в другом компоненте ни в объявлении, ни в операторе `new`. Вместо этого переменные и параметры необходимо объявлять с помощью интерфейсов. Экземпляры компонента должны создаваться только в контейнере компонента.  
+-   The code of any component of your application should never explicitly refer to a class in another component, either in a declaration or in a `new` statement. Instead, variables and parameters should be declared with interfaces. Component instances should be created only by the component's container.  
   
-     "Компонент" в данном случае означает класс или группу классов, которые разрабатываются и обновляются вместе. Обычно компонент — это код в одном проекте Visual Studio. Отделять классы в одном компоненте не так важно, поскольку они обновляются одновременно.  
+     By "component" in this case we mean a class, or a group of classes that you develop and update together. Typically, a component is the code in one Visual Studio project. It's less important to decouple classes within one component, because they are updated at the same time.  
   
-     Также не имеет особого значения отделять компоненты от классов относительно стабильной платформы, например System.dll. Если написать интерфейсы для всех этих классов, код будет перегружен.  
+     It is also not so important to decouple your components from the classes of a relatively stable platform such as System.dll. Writing interfaces for all these classes would clutter your code.  
   
- Таким образом, код StockAnalyzer можно улучшить, отделив его от StockFeed с помощью интерфейса следующим образом.  
+ The StockAnalyzer code can therefore be improved by decoupling it from the StockFeed by using an interface like this:  
   
-```c#  
+```cs  
 public interface IStockFeed  
 {  
     int GetSharePrice(string company);  
@@ -164,7 +164,7 @@ public class StockAnalyzer
 }  
 ```  
   
-```vb#  
+```vb  
 Public Interface IStockFeed  
     Function GetSharePrice(company As String) As Integer  
 End Interface  
@@ -182,34 +182,34 @@ End Class
   
 ```  
   
- В этом примере классу StockAnalyzer передается реализация IStockFeed при построении. В готовом приложении код инициализации выполнил бы следующее подключение.  
+ In this example, StockAnalyzer is passed an implementation of an IStockFeed when it is constructed. In the completed application, the initialization code would perform the connection:  
   
 ```  
 analyzer = new StockAnalyzer(new StockFeed())  
 ```  
   
- Существуют более гибкие способы выполнения этого подключения. Например, StockAnalyzer может принять объект фабрики, который может создать экземпляры различных реализаций IStockFeed в различных условиях.  
+ There are more flexible ways of performing this connection. For example, StockAnalyzer could accept a factory object that can instantiate different implementations of IStockFeed in different conditions.  
   
-###  <a name="GeneratingStubs"></a> Создание заглушек  
- Вы отделили класс, который необходимо протестировать, от других используемых им компонентов. Такое отделение позволяет не только сделать приложение более надежным и гибким, но и подключить тестируемый компонент к реализациям заглушки интерфейсов для тестирования.  
+###  <a name="GeneratingStubs"></a> Generate stubs  
+ You've decoupled the class you want to test from the other components that it uses. As well as making the application more robust and flexible, the decoupling allows you to connect the component under test to stub implementations of the interfaces for test purposes.  
   
- Достаточно написать заглушки как классы обычным способом. Однако Microsoft Fakes предлагает более динамический способ создания наиболее подходящей заглушки для каждого теста.  
+ You could simply write the stubs as classes in the usual way. But Microsoft Fakes provides you with a more dynamic way to create the most appropriate stub for every test.  
   
- Чтобы использовать заглушки, необходимо сначала создать типы заглушек из определений интерфейса.  
+ To use stubs, you must first generate stub types from the interface definitions.  
   
-##### <a name="adding-a-fakes-assembly"></a>Добавление сборки имитации  
+##### <a name="adding-a-fakes-assembly"></a>Adding a Fakes Assembly  
   
-1.  В обозревателе решений разверните список **Ссылки** проекта модульного теста.  
+1.  In Solution Explorer, expand your unit test project's **References**.  
   
-    -   При работе в Visual Basic необходимо выбрать **Показать все файлы** на панели инструментов обозревателя решений, чтобы просмотреть список "Ссылки".  
+    -   If you are working in Visual Basic, you must select **Show All Files** in the Solution Explorer toolbar, in order to see the References list.  
   
-2.  Выберите сборку, содержащую определения интерфейса, для которых необходимо создать заглушки.  
+2.  Select the assembly that contains the interface definitions for which you want to create stubs.  
   
-3.  В контекстном меню щелкните **Добавить сборку имитаций**.  
+3.  On the shortcut menu, choose **Add Fakes Assembly**.  
   
-###  <a name="WriteTest"></a> Создание теста с заглушками  
+###  <a name="WriteTest"></a> Write your test with stubs  
   
-```c#  
+```cs  
 [TestClass]  
 class TestStockAnalyzer  
 {  
@@ -240,7 +240,7 @@ class TestStockAnalyzer
 }  
 ```  
   
-```vb#  
+```vb  
 <TestClass()> _  
 Class TestStockAnalyzer  
   
@@ -265,14 +265,14 @@ End Class
   
 ```  
   
- Особую роль здесь играет класс `StubIStockFeed`. Для каждого открытого типа в сборке, на которую указывает ссылка, механизм Microsoft Fakes создает класс заглушки. Имя класса заглушки является производным от имени интерфейса, где `Fakes.Stub` — это префикс, за которым следуют имена типов параметров.  
+ The special piece of magic here is the class `StubIStockFeed`. For every public type in the referenced assembly, the Microsoft Fakes mechanism generates a stub class. The name of the stub class is the derived from the name of the interface, with "`Fakes.Stub`" as a prefix, and the parameter type names appended.  
   
- Заглушки также создаются для методов получения и задания свойств, для событий и для универсальных методов.  
+ Stubs are also generated for the getters and setters of properties, for events, and for generic methods.  
   
-###  <a name="mocks"></a> Проверка значений параметров  
- Можно проверить, что компонент передает правильные значения, когда вызывает другой компонент. Можно поместить утверждение в заглушку или сохранить значение и проверить его в основной части теста. Пример:  
+###  <a name="mocks"></a> Verifying parameter values  
+ You can verify that when your component makes a call to another component, it passes the correct values. You can either place an assertion in the stub, or you can store the value and verify it in the main body of the test. For example:  
   
-```c#  
+```cs  
 [TestClass]  
 class TestMyComponent  
 {  
@@ -310,7 +310,7 @@ class TestMyComponent
   
 ```  
   
-```vb#  
+```vb  
 <TestClass()> _  
 Class TestMyComponent  
     <TestMethod()> _  
@@ -347,12 +347,12 @@ Class TestMyComponent
 End Class  
 ```  
   
-##  <a name="BKMK_Stub_basics"></a> Заглушки для различных видов членов типа  
+##  <a name="BKMK_Stub_basics"></a> Stubs for different kinds of type members  
   
-###  <a name="BKMK_Methods"></a> Методы  
- Как описано в примере, методы могут быть заменены заглушками путем добавления делегата в экземпляр класса заглушки. Имя типа заглушки является производным от имен метода и параметров. Например, даны следующие интерфейс `IMyInterface` и метод `MyMethod`.  
+###  <a name="BKMK_Methods"></a> Methods  
+ As described in the example, methods can be stubbed by attaching a delegate to an instance of the stub class. The name of the stub type is derived from the names of the method and parameters. For example, given the following `IMyInterface` interface and method `MyMethod`:  
   
-```c#  
+```cs  
 // application under test  
 interface IMyInterface   
 {  
@@ -360,21 +360,21 @@ interface IMyInterface
 }  
 ```  
   
- Мы присоединяем заглушку к методу `MyMethod`, который всегда возвращает значение 1.  
+ We attach a stub to `MyMethod` that always returns 1:  
   
-```c#  
+```cs  
 // unit test code  
   var stub = new StubIMyInterface ();  
   stub.MyMethodString = (value) => 1;  
   
 ```  
   
- Если не предоставить заглушку для функции, Fakes создаст функцию, возвращающую значение по умолчанию возвращаемого типа. Для чисел значением по умолчанию является 0, а для типов классов — `null` (C#) или `Nothing` (Visual Basic).  
+ If you do not provide a stub for a function, Fakes will generate a function that returns the default value of the return type. For numbers, the default value is 0, and for class types it is `null` (C#) or `Nothing` (Visual Basic).  
   
-###  <a name="BKMK_Properties"></a> Свойства  
- Методы получения и задания свойств представляются как отдельные делегаты и могут быть заменены заглушками отдельно. Например, рассмотрим свойство `Value` интерфейса `IMyInterface`.  
+###  <a name="BKMK_Properties"></a> Properties  
+ Property getters and setters are exposed as separate delegates and can be stubbed separately. For example, consider the `Value` property of `IMyInterface`:  
   
-```c#  
+```cs  
 // code under test  
 interface IMyInterface   
 {  
@@ -383,9 +383,9 @@ interface IMyInterface
   
 ```  
   
- Мы присоединяем делегаты к методам получения и задания свойства `Value`, чтобы сымитировать автосвойство.  
+ We attach delegates to the getter and setter of `Value` to simulate an auto-property:  
   
-```c#  
+```cs  
 // unit test code  
 int i = 5;  
 var stub = new StubIMyInterface();  
@@ -394,12 +394,12 @@ stub.ValueSet = (value) => i = value;
   
 ```  
   
- Если не предоставить методы-заглушки для метода получения или задания свойства, Fakes создаст заглушку, хранящую значения, чтобы свойство заглушки выступало в роли простой переменной.  
+ If you do not provide stub methods for either the setter or the getter of a property, Fakes will generate a stub that stores values, so that the stub property works like a simple variable.  
   
-###  <a name="BKMK_Events"></a> События  
- События представляются как поля делегата. В результате любые события, замененные заглушками, могут вызываться путем вызова резервного поля события. Рассмотрим следующий интерфейс, который требуется заменить заглушкой.  
+###  <a name="BKMK_Events"></a> Events  
+ Events are exposed as delegate fields. As a result, any stubbed event can be raised simply by invoking the event backing field. Let's consider the following interface to stub:  
   
-```c#  
+```cs  
 // code under test  
 interface IWithEvents   
 {  
@@ -407,9 +407,9 @@ interface IWithEvents
 }  
 ```  
   
- Чтобы вызвать событие `Changed`, достаточно вызвать резервный делегат.  
+ To raise the `Changed` event, we simply invoke the backing delegate:  
   
-```c#  
+```cs  
 // unit test code  
   var withEvents = new StubIWithEvents();  
   // raising Changed  
@@ -417,10 +417,10 @@ interface IWithEvents
   
 ```  
   
-###  <a name="BKMK_Generic_methods"></a> Универсальные методы  
- Чтобы заменить универсальные методы заглушками, предоставьте делегат для каждого требуемого экземпляра метода. Например, рассмотрим следующий интерфейс, содержащий универсальный метод.  
+###  <a name="BKMK_Generic_methods"></a> Generic methods  
+ It's possible to stub generic methods by providing a delegate for each desired instantiation of the method. For example, given the following interface containing a generic method:  
   
-```c#  
+```cs  
 // code under test  
 interface IGenericMethod   
 {  
@@ -428,9 +428,9 @@ interface IGenericMethod
 }  
 ```  
   
- Можно написать тест, в котором экземпляр `GetValue<int>` заменяется заглушкой.  
+ you could write a test that stubs the `GetValue<int>` instantiation:  
   
-```c#  
+```cs  
 // unit test code  
 [TestMethod]  
 public void TestGetValue()   
@@ -443,12 +443,12 @@ public void TestGetValue()
 }  
 ```  
   
- Если бы код вызвал `GetValue<T>` с любым другим экземпляром, то заглушка просто вызвала бы поведение.  
+ If the code were to call `GetValue<T>` with any other instantiation, the stub would simply call the behavior.  
   
-###  <a name="BKMK_Partial_stubs"></a> Заглушки виртуальных классов  
- В предыдущих примерах заглушки создавались из интерфейсов. Заглушки также можно создавать из класса с виртуальными или абстрактными членами. Например:  
+###  <a name="BKMK_Partial_stubs"></a> Stubs of virtual classes  
+ In the previous examples, the stubs have been generated from interfaces. You can also generate stubs from a class that has virtual or abstract members. For example:  
   
-```c#  
+```cs  
 // Base class in application under test  
     public abstract class MyClass  
     {  
@@ -460,9 +460,9 @@ public void TestGetValue()
     }  
 ```  
   
- В заглушке, созданной из этого класса, можно задать методы делегата для DoAbstract() и DoVirtual(), но не DoConcrete().  
+ In the stub generated from this class, you can set delegate methods for DoAbstract() and DoVirtual(), but not DoConcrete().  
   
-```c#  
+```cs  
 // unit test  
   var stub = new Fakes.MyClass();  
   stub.DoAbstractString = (x) => { Assert.IsTrue(x>0); };  
@@ -470,9 +470,9 @@ public void TestGetValue()
   
 ```  
   
- Если не предоставить делегат для виртуального метода, Fakes может предоставить поведение по умолчанию или вызвать метод в базовом классе. Чтобы вызывался базовый метод, задайте свойство `CallBase`.  
+ If you do not provide a delegate for a virtual method, Fakes can either provide the default behavior, or it can call the method in the base class. To have the base method called, set the `CallBase` property:  
   
-```c#  
+```cs  
 // unit test code  
 var stub = new Fakes.MyClass();  
 stub.CallBase = false;  
@@ -484,30 +484,30 @@ stub.CallBase = true;
 Assert.AreEqual(43,stub.DoVirtual(1));  
 ```  
   
-##  <a name="BKMK_Debugging_stubs"></a> Отладка заглушек  
- Типы заглушек призваны обеспечить бесперебойную отладку. По умолчанию отладчик должен обходить любой создаваемый код, чтобы сразу переходить к пользовательским реализациям членов, которые присоединены к заглушке.  
+##  <a name="BKMK_Debugging_stubs"></a> Debugging stubs  
+ The stub types are designed to provide a smooth debugging experience. By default, the debugger is instructed to step over any generated code, so it should step directly into the custom member implementations that were attached to the stub.  
   
-##  <a name="BKMK_Stub_limitation"></a> Ограничения заглушки  
+##  <a name="BKMK_Stub_limitation"></a> Stub limitations  
   
-1.  Сигнатуры методов с указателями не поддерживаются.  
+1.  Method signatures with pointers aren't supported.  
   
-2.  Запечатанные классы или статические методы не могут быть заменены заглушками, поскольку типы заглушек зависят от диспетчеризации виртуальных методов. В таких случаях используйте типы оболочек, которые описываются в разделе [Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)  
+2.  Sealed classes or static methods can't be stubbed because stub types rely on virtual method dispatch. For such cases, use shim types as described in [Using shims to isolate your application from other assemblies for unit testing](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)  
   
-##  <a name="BKMK_Changing_the_default_behavior_of_stubs"></a> Изменение поведения заглушек по умолчанию  
- Каждый созданный тип заглушки содержит экземпляр интерфейса `IStubBehavior` (через свойство `IStub.InstanceBehavior`). Поведение вызывается каждый раз, когда клиент вызывает член без присоединенного пользовательского делегата. Если поведение не задано, будет использоваться экземпляр, возвращаемый свойством `StubsBehaviors.Current`. По умолчанию это свойство возвращает поведение, вызывающее исключение `NotImplementedException`.  
+##  <a name="BKMK_Changing_the_default_behavior_of_stubs"></a> Changing the default behavior of stubs  
+ Each generated stub type holds an instance of the `IStubBehavior` interface (through the `IStub.InstanceBehavior` property). The behavior is called whenever a client calls a member with no attached custom delegate. If the behavior has not been set, it will use the instance returned by the `StubsBehaviors.Current` property. By default, this property returns a behavior that throws a `NotImplementedException` exception.  
   
- Это поведение можно изменить в любое время, задав свойство `InstanceBehavior` в любом экземпляре заглушки. Например, в следующем фрагменте кода изменяется поведение, которое ничего не делает или возвращает значение по умолчанию для возвращаемого типа `default(T)`.  
+ The behavior can be changed at any time by setting the `InstanceBehavior` property on any stub instance. For example, the following snippet changes a behavior that does nothing or returns the default value of the return type: `default(T)`:  
   
-```c#  
+```cs  
 // unit test code  
 var stub = new StubIFileSystem();  
 // return default(T) or do nothing  
 stub.InstanceBehavior = StubsBehaviors.DefaultValue;  
 ```  
   
- Поведение также можно изменить глобально для всех объектов заглушки, для которых не было задано поведение, путем задания свойства `StubsBehaviors.Current`.  
+ The behavior can also be changed globally for all stub objects for which the behavior has not been set by setting the `StubsBehaviors.Current` property:  
   
-```c#  
+```cs  
 // unit test code  
 //change default behavior for all stub instances  
 //where the behavior has not been set  
@@ -515,11 +515,11 @@ StubBehaviors.Current =
     BehavedBehaviors.DefaultValue;  
 ```  
   
-## <a name="external-resources"></a>Внешние ресурсы  
+## <a name="external-resources"></a>External resources  
   
-### <a name="guidance"></a>Руководство  
- [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188)  
+### <a name="guidance"></a>Guidance  
+ [Testing for Continuous Delivery with Visual Studio 2012 - Chapter 2: Unit Testing: Testing the Inside](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>См. также  
- [Изоляция тестируемого кода с помощью Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
+## <a name="see-also"></a>See Also  
+ [Isolating Code Under Test with Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
 

@@ -1,39 +1,55 @@
 ---
-title: "Свойство AsyncTaskMethodBuilder.ObjectIdForDebugger | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Свойство ObjectForDebugger, структура AsyncTaskMethodBuilder [обработчиков отладки платформы .NET Framework]"
+title: AsyncTaskMethodBuilder.ObjectIdForDebugger Property | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- ObjectForDebugger property, AsyncTaskMethodBuilder structure [.NET Framework debug engines]
 ms.assetid: 78338537-b451-4655-9f04-a21f6fe197a3
 caps.latest.revision: 4
-caps.handback.revision: 4
-ms.author: "gregvanl"
-manager: "ghogen"
----
-# Свойство AsyncTaskMethodBuilder.ObjectIdForDebugger
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 9ec2c61ea492669853384702dc06776764c97529
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Возвращает объект, который может использоваться для уникальной идентификации этого построителя в отладчик.  
+---
+# <a name="asynctaskmethodbuilderobjectidfordebugger-property"></a>AsyncTaskMethodBuilder.ObjectIdForDebugger Property
+Gets an object that may be used to uniquely identify this builder to the debugger.  
   
- **Пространство имен:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
- **Сборки:** mscorlib \(в библиотеке mscorlib.dll\)  
+ **Assembly:** mscorlib (in mscorlib.dll)  
   
- Так как не удается получить доступ к внутреннему элементу из платформы .NET Framework, следующий синтаксис предоставляется общего промежуточного языка \(CIL\).  
+ Because you cannot access this internal member from the .NET Framework, the following syntax is provided in Common Intermediate Language (CIL).  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
-```c#  
+```cs  
 private object ObjectIdForDebugger  
 ```  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>   
- [Внутренние компоненты параллельных расширений для .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+ [Parallel Extension Internals for the .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

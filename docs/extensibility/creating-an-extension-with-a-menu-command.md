@@ -1,58 +1,75 @@
 ---
-title: "Создание расширения с помощью команды меню | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "запись vspackage"
-  - "VSPackage"
-  - "учебники"
-  - "пакет Visual studio"
+title: Creating an Extension with a Menu Command | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- write a vspackage
+- vspackage
+- tutorials
+- visual studio package
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 56
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 56
----
-# Создание расширения с помощью команды меню
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 83b337db3c5852ad4d1f31be966833de4e025d5a
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-В этом пошаговом руководстве показано, как создать расширение с помощью команды меню, которое запускает приложение Блокнот.  
+---
+# <a name="creating-an-extension-with-a-menu-command"></a>Creating an Extension with a Menu Command
+This walkthrough shows how to create an extension with a menu command that launches Notepad.  
   
-## Обязательные компоненты  
- Начиная с Visual Studio 2015, не установить пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в установку Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [Установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Prerequisites  
+ Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## Создание команды меню  
+## <a name="creating-a-menu-command"></a>Creating a Menu Command  
   
-1.  Создайте проект VSIX с именем **FirstMenuCommand**. Можно найти шаблон проекта VSIX в **Новый проект** диалоговом окне под **Visual C\# и расширяемость**.  
+1.  Create a VSIX project named **FirstMenuCommand**. You can find the VSIX project template in the **New Project** dialog under **Visual C# / Extensibility**.  
   
-2.  При открытии проекта, Добавление пользовательской команды элемента шаблона с именем **FirstCommand**. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **Добавить или создать элемент**. В **Добавление нового элемента** диалоговое окно, последовательно выберите пункты **Visual C\# и расширяемость** и выберите **настраиваемой команды**. В **имя** в нижней части окна, измените имя файла команд для **FirstCommand.cs**.  
+2.  When the project opens, add a custom command item template named **FirstCommand**. In the **Solution Explorer**, right-click the project node and select **Add / New Item**. In the **Add New Item** dialog, go to **Visual C# / Extensibility** and select **Custom Command**. In the **Name** field at the bottom of the window, change the command file name to **FirstCommand.cs**.  
   
-3.  Выполните сборку решения и запустите отладку.  
+3.  Build the project and start debugging.  
   
-     Откроется экспериментальный экземпляр Visual Studio. Дополнительные сведения о экспериментальный экземпляр в разделе [Экспериментальный экземпляр](../extensibility/the-experimental-instance.md).  
+     The experimental instance of Visual Studio appears. For more information about the experimental instance, see [The Experimental Instance](../extensibility/the-experimental-instance.md).  
   
-4.  В экспериментальном экземпляре откройте  **средства\-расширения и обновления** окна. Вы должны увидеть **FirstMenuCommand** здесь расширения. \(Если вы откроете **расширения и обновления** в работе экземпляра Visual Studio, вы не увидите **FirstMenuCommand**\).  
+4.  In the experimental instance, open the  **Tools / Extensions and Updates** window. You should see the **FirstMenuCommand** extension here. (If you open **Extensions and Updates** in your working instance of Visual Studio, you won't see **FirstMenuCommand**).  
   
-     Теперь перейдите к **средства** меню в экспериментальном экземпляре. Вы должны увидеть **вызова FirstCommand** команды. На этом этапе он просто появляется окно сообщения с сообщением «FirstCommandPackage внутри FirstMenuCommand.FirstCommand.MenuItemCallback\(\)». Мы рассмотрим фактически запустить Блокнот из этой команды в следующем разделе.  
+     Now go to the **Tools** menu in the experimental instance. You should see **Invoke FirstCommand** command. At this point it just brings up a message box that says "FirstCommandPackage Inside FirstMenuCommand.FirstCommand.MenuItemCallback()". We'll see how to actually start Notepad from this command in the next section.  
   
-## Изменение обработчик команды меню  
- Теперь изменим обработчик команды для запуска блокнота.  
+## <a name="changing-the-menu-command-handler"></a>Changing the Menu Command Handler  
+ Now let's update the command handler to start Notepad.  
   
-1.  Остановить отладку и вернуться к работе экземпляра Visual Studio. Откройте файл FirstCommand.cs и добавьте следующий оператор using:  
+1.  Stop debugging and go back to your working instance of Visual Studio. Open the FirstCommand.cs file and add the following using statement:  
   
-    ```c#  
+    ```cs  
     using System.Diagnostics;  
     ```  
   
-2.  Найдите закрытый конструктор FirstCommand. Это где команда подключен к службе команды и указанный обработчик команды. Измените имя обработчика команды StartNotepad, следующим образом.  
+2.  Find the private FirstCommand constructor. This is where the command is hooked up to the command service and the command handler is specified. Change the name of the command handler to StartNotepad, as follows:  
   
-    ```c#  
+    ```cs  
     private FirstCommand(Package package)  
     {  
         if (package == null)  
@@ -73,9 +90,9 @@ caps.handback.revision: 56
     }  
     ```  
   
-3.  Удалите метод MenuItemCallback и добавьте метод StartNotepad, который будет просто запустить Блокнот:  
+3.  Remove the MenuItemCallback method and add a StartNotepad method which will just start Notepad:  
   
-    ```c#  
+    ```cs  
     private void StartNotepad(object sender, EventArgs e)  
     {  
         Process proc = new Process();  
@@ -84,52 +101,52 @@ caps.handback.revision: 56
     }  
     ```  
   
-4.  Теперь попробуйте все в деле. При отладке проекта и нажмите кнопку **инструменты и вызвать FirstCommand**, вы увидите экземпляр Notepad начать работу.  
+4.  Now try it out. When you start debugging the project and click **Tools / Invoke FirstCommand**, you should see an instance of Notepad come up.  
   
-     Можно использовать экземпляр <xref:System.Diagnostics.Process> класса для выполнения любой исполняемый файл, а не только «Блокнот». Попытка с calc.exe, например.  
+     You can use an instance of the <xref:System.Diagnostics.Process> class to run any executable, not just Notepad. Try it with calc.exe, for example.  
   
-## Очистка экспериментальной среде  
- Если разрабатывается несколько расширений, или просто изучение результатов с разными версиями кода расширения, экспериментальной среде может перестать работать как должно. В этом случае следует запустить сценарий сброса. Он называется **Сброс экспериментального экземпляра Visual Studio 2015**, и он входит в состав пакета SDK для Visual Studio. Этот сценарий удаляет все ссылки на модули из экспериментальной среды, поэтому можно начать с нуля.  
+## <a name="cleaning-up-the-experimental-environment"></a>Cleaning up the Experimental Environment  
+ If you are developing multiple extensions, or just exploring outcomes with different versions of your extension code, your experimental environment may stop working the way it should. In this case, you should run the reset script. It's called **Reset the Visual Studio 2015 Experimental Instance**, and it ships as part of the Visual Studio SDK. This script removes all references to your extensions from the experimental environment, so you can start from scratch.  
   
- Вы можете получить на этот сценарий одним из двух способов:  
+ You can get to this script in one of two ways:  
   
-1.  На рабочем столе найти **Сброс экспериментального экземпляра Visual Studio 2015**.  
+1.  From the desktop, find **Reset the Visual Studio 2015 Experimental Instance**.  
   
-2.  В командной строке выполните следующую команду:  
+2.  From the command line, run the following:  
   
     ```  
     <VSSDK installation>\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp && PAUSE  
   
     ```  
   
-## Развертывание расширения  
- Теперь, когда имеется средство расширения с нужным образом, пора подумать о совместной работы с коллегами и друзьями. Это просто, поскольку они имеют установлена Visual Studio 2015. Все, что нужно сделать — отправить их в VSIX\-файл, созданный. \(Не забудьте построения в режиме выпуска\).  
+## <a name="deploying-your-extension"></a>Deploying your extension  
+ Now that you have your tool extension running the way you want, it's time to think about sharing it with your friends and colleagues. That's easy, as long as they have Visual Studio 2015 installed. All you have to do is send them the .vsix file you built. (Be sure to build it in Release mode.)  
   
- Для этого расширения VSIX\-файл можно найти в каталоге bin FirstMenuCommand. В частности предполагая, что при построении конфигурации выпуска, он будет выглядеть в:  
+ You can find the .vsix file for this extension in the FirstMenuCommand bin directory. Specifically, assuming you have built the Release configuration, it will be in:  
   
- **\< каталог кода \> \\FirstMenuCommand\\FirstMenuCommand\\bin\\Release\\ FirstMenuCommand.vsix**  
+ **\<code directory>\FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand.vsix**  
   
- Чтобы установить расширение, вашего друга необходимо закрыть все открытые экземпляры Visual Studio, а затем дважды щелкните VSIX\-файл, который появляется **установщик VSIX**. Файлы копируются в **%LocalAppData%\\Microsoft\\VisualStudio\\14.0\\Extensions** каталога.  
+ To install the extension, your friend needs to close all open instances of Visual Studio, then double-click the .vsix file, which brings up the **VSIX Installer**. The files are copied to the **%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions** directory.  
   
- Когда ваш друг обеспечит Visual Studio снова, он найти расширение FirstMenuCommand в **средства\-расширения и обновления**. Он может перейти к **расширения и обновления** удаление или отключение расширения слишком.  
+ When your friend brings up Visual Studio again, he'll find the FirstMenuCommand extension in **Tools / Extensions and Updates**. He can go to **Extensions and Updates** to uninstall or disable the extension, too.  
   
-## Дальнейшие действия  
- В этом пошаговом руководстве были показаны только небольшую часть возможностях расширения Visual Studio. Вот краткий список прочего \(довольно просто\), что можно сделать с помощью расширений Visual Studio:  
+## <a name="next-steps"></a>Next Steps  
+ This walkthrough has shown you only a small part of what you can do with a Visual Studio extension. Here's a short list of other (reasonably easy) things you can do with Visual Studio extensions:  
   
-1.  Можно выполнять различные дополнительные действия с помощью простого меню команды:  
+1.  You can do many more things with a simple menu command:  
   
-    1.  Добавьте собственный значок: [Добавление значков на команды меню](../extensibility/adding-icons-to-menu-commands.md)  
+    1.  Add your own icon: [Adding Icons to Menu Commands](../extensibility/adding-icons-to-menu-commands.md)  
   
-    2.  Измените текст команды меню: [Изменение текста команды меню](../extensibility/changing-the-text-of-a-menu-command.md)  
+    2.  Change the text of the menu command: [Changing the Text of a Menu Command](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-    3.  Добавьте команду контекстного меню: [Привязка сочетания клавиш к пунктам меню](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+    3.  Add a menu shortcut to a command: [Binding Keyboard Shortcuts to Menu Items](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
-2.  Добавьте различные виды команд, меню и панели инструментов: [Расширение меню и команд](../extensibility/extending-menus-and-commands.md)  
+2.  Add different kinds of commands, menus, and toolbars: [Extending Menus and Commands](../extensibility/extending-menus-and-commands.md)  
   
-3.  Добавьте средство windows и расширять встроенные окон инструментов Visual Studio: [Расширение и настройка окна инструментов](../extensibility/extending-and-customizing-tool-windows.md)  
+3.  Add tool windows and extend the built-in Visual Studio tool windows: [Extending and Customizing Tool Windows](../extensibility/extending-and-customizing-tool-windows.md)  
   
-4.  Добавьте существующие редакторы кода IntelliSense, код предложения и другие функции: [Расширение редактора и языковые службы](../extensibility/extending-the-editor-and-language-services.md)  
+4.  Add IntelliSense, code suggestions, and other features to existing code editors: [Extending the Editor and Language Services](../extensibility/extending-the-editor-and-language-services.md)  
   
-5.  Добавьте параметры и свойства страницы и параметры пользователя для расширения: [Расширение свойств и окна свойств](../extensibility/extending-properties-and-the-property-window.md) и [Расширение настройки пользователя и параметры](../extensibility/extending-user-settings-and-options.md)  
+5.  Add Options and Property pages and user settings to your extension: [Extending Properties and the Property Window](../extensibility/extending-properties-and-the-property-window.md) and [Extending User Settings and Options](../extensibility/extending-user-settings-and-options.md)  
   
- Другие виды расширений требуют немного большей работы, таких как создание нового типа проекта \([Расширение проектов](../extensibility/extending-projects.md)\), создание нового типа редактора \([Создание пользовательские редакторы и конструкторы](../extensibility/creating-custom-editors-and-designers.md)\), или реализации расширения в изолированной оболочки: [Visual Studio изолированной оболочки](../extensibility/visual-studio-isolated-shell.md)
+ Other kinds of extensions require a little more work, such as creating a new type of project ([Extending Projects](../extensibility/extending-projects.md)), creating a new type of editor ([Creating Custom Editors and Designers](../extensibility/creating-custom-editors-and-designers.md)), or implementing your extension in an isolated shell: [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md)

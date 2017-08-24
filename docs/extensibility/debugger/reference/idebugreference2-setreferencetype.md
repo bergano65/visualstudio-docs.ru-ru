@@ -1,5 +1,5 @@
 ---
-title: "IDebugReference2::SetReferenceType | Документы Microsoft"
+title: IDebugReference2::SetReferenceType | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4827e0e54caa6b10fdf876e4360a5f9df480de00
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: a9d975854fffee9410cf839e3e265dbbca2d9085
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
-Задает ссылочный тип. Зарезервировано для будущего использования.  
+Sets the reference type. Reserved for future use.  
   
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT SetReferenceType (   
@@ -47,19 +48,19 @@ HRESULT SetReferenceType (
 );  
 ```  
   
-```c#  
+```cs  
 int SetReferenceType (   
    enum_REFERENCE_TYPE dwRefType  
 );  
 ```  
   
-#### <a name="parameters"></a>Параметры  
+#### <a name="parameters"></a>Parameters  
  `dwRefType`  
- [in] Значение из [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) перечисление, указывающее тип ссылки.  
+ [in] A value from the [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) enumeration that specifies the reference type.  
   
-## <a name="return-value"></a>Возвращаемое значение  
- Всегда возвращает значение `E_NOTIMPL`.  
+## <a name="return-value"></a>Return Value  
+ Always returns `E_NOTIMPL`.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>See Also  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   
  [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)

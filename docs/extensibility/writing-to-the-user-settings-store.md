@@ -1,5 +1,5 @@
 ---
-title: "Запись в хранилище настроек пользователя | Документы Microsoft"
+title: Writing to the User Settings Store | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -26,51 +26,52 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 35ca397d57906a6316543325a08b118613fc2035
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: f019716be5a5d4615a8bb02d898d16a00ef2ab89
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
 ---
-# <a name="writing-to-the-user-settings-store"></a>Запись в хранилище настроек пользователя
-Параметры пользователя, для записи параметров в аналогичных **инструменты и параметры** диалогового окна, окна свойств и некоторых других диалоговых окон. Расширения Visual Studio может использовать для хранения небольших объемов данных. В этом пошаговом руководстве показано, как добавлять Блокнот в Visual Studio в качестве внешнего инструмента, чтение и запись в хранилище настроек пользователя.  
+# <a name="writing-to-the-user-settings-store"></a>Writing to the User Settings Store
+User settings are writeable settings like the ones in the **Tools / Options** dialog, properties windows, and certain other dialog boxes. Visual Studio extensions may use these to store small amounts of data. This walkthrough shows how to add Notepad to Visual Studio as an external tool by reading from and writing to the user settings store.  
   
-### <a name="backing-up-your-user-settings"></a>Резервное копирование параметров пользователя  
+### <a name="backing-up-your-user-settings"></a>Backing up Your User Settings  
   
-1.  Необходимо сбросить параметры внешних средств, можно отлаживать и повторите процедуру. Для этого необходимо сохранить первоначальные параметры, чтобы их можно было восстановить при необходимости.  
+1.  You must be able to reset the External Tools settings so that you can debug and repeat the procedure. To do this, you must save the original settings so that you can restore them as required.  
   
-2.  Откройте Regedit.exe.  
+2.  Open Regedit.exe.  
   
-3.  Перейдите к средствам HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External\\.  
+3.  Navigate to HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\\.  
   
     > [!NOTE]
-    >  Убедитесь, что вы находитесь на ключ, который содержит \14.0Exp\ и не \14.0\\. При запуске экспериментальном экземпляре Visual Studio в кусте реестра «14.0Exp», настройки пользователя.  
+    >  Make sure that you are looking at the key that contains \14.0Exp\ and not \14.0\\. When you run the experimental instance of Visual Studio, your user settings are in the registry hive "14.0Exp".  
   
-4.  Щелкните правой кнопкой мыши подраздел \External Tools\ и нажмите кнопку **Экспорт**. Убедитесь, что **Выбранная ветвь** выбран.  
+4.  Right-click the \External Tools\ subkey, and then click **Export**. Make sure that **Selected branch** is selected.  
   
-5.  Сохраните полученный файл внешних Tools.reg.  
+5.  Save the resulting External Tools.reg file.  
   
-6.  Позже, когда вы хотите сбросить параметры внешних средств, выберите раздел реестра HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\ и нажмите кнопку **удаление** в контекстном меню.  
+6.  Later, when you want to reset the External Tools settings, select the HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\ registry key and click **Delete** on the context menu.  
   
-7.  Когда **подтверждение удаления раздела** откроется диалоговое окно, нажмите кнопку **Да**.  
+7.  When the **Confirm Key Delete** dialog box appears, click **Yes**.  
   
-8.  Щелкните правой кнопкой мыши Tools.reg внешний файл, сохраненный ранее, нажмите кнопку **открыть с помощью**и нажмите кнопку **редактора реестра**.  
+8.  Right-click the External Tools.reg file that you saved earlier, click **Open with**, and then click **Registry Editor**.  
   
-## <a name="writing-to-the-user-settings-store"></a>Запись в хранилище настроек пользователя  
+## <a name="writing-to-the-user-settings-store"></a>Writing to the User Settings Store  
   
-1.  Создайте проект VSIX с именем UserSettingsStoreExtension, а затем добавьте пользовательскую команду с именем UserSettingsStoreCommand. Дополнительные сведения о создании пользовательских команд в разделе [создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)  
+1.  Create a VSIX project named UserSettingsStoreExtension and then add a custom command named UserSettingsStoreCommand. For more information about how to create a custom command, see [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-2.  В UserSettingsStoreCommand.cs, добавьте следующие операторы using:  
+2.  In UserSettingsStoreCommand.cs, add the following using statements:  
   
-    ```c#  
+    ```cs  
     using System.Collections.Generic;  
     using Microsoft.VisualStudio.Settings;  
     using Microsoft.VisualStudio.Shell.Settings;  
     ```  
   
-3.  В MenuItemCallback удалите тело метода и работу пользователя, параметры хранения, как показано ниже:  
+3.  In MenuItemCallback, delete the body of the method and get the user settings store, as follows:  
   
-    ```c#  
+    ```cs  
     private void MenuItemCallback(object sender, EventArgs e)  
     {  
         SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
@@ -78,9 +79,9 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-4.  Теперь найдите того, является ли Блокнот уже как внешняя программа. Необходимо выполнить итерацию все внешние инструменты, чтобы определить, является ли параметр ToolCmd «Блокнот», как показано ниже:  
+4.  Now find out whether Notepad is already set as an external tool. You need to iterate through all the external tools to determine whether the ToolCmd setting is "Notepad", as follows:  
   
-    ```c#  
+    ```cs  
     private void MenuItemCallback(object sender, EventArgs e)  
     {  
         SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
@@ -102,7 +103,7 @@ ms.lasthandoff: 02/22/2017
   
     ```  
   
-5.  Если блокнота еще не был установлен как внешнего инструмента, установите его следующим образом:  
+5.  If Notepad hasn't been set as an external tool, set it as follows:  
   
     ```vb  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -138,10 +139,10 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-6.  Проверьте код. Помните, добавляет Блокнот как внешнего средства, поэтому необходимо выполнить откат реестра перед запуском его во второй раз.  
+6.  Test the code. Remember that it adds Notepad as an External Tool, so you must roll back the registry before running it a second time.  
   
-7.  Создание кода и начать отладку.  
+7.  Build the code and start debugging.  
   
-8.  На **средства** меню, щелкните **UserSettingsStoreCommand вызова**. При этом будет добавлен текстовый редактор Блокнот и **средства** меню.  
+8.  On the **Tools** menu, click **Invoke UserSettingsStoreCommand**. This will add Notepad to the **Tools** menu.  
   
-9. Теперь вы увидите Блокнот в Сервис / Параметры меню и затем щелкните **Блокнот** следует открыть экземпляр Notepad.
+9. Now you should see Notepad on the Tools / Options menu, and clicking **Notepad** should bring up an instance of Notepad.

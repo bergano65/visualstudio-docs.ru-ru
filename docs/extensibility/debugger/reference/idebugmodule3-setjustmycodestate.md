@@ -1,5 +1,5 @@
 ---
-title: "IDebugModule3::SetJustMyCodeState | Документы Microsoft"
+title: IDebugModule3::SetJustMyCodeState | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4fd680371b20b12e3e8ed5a1c8991eb35a1cb51f
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: d6c12c6bbbeed1228d36fb40acfcb7b8b6ab69e2
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="idebugmodule3setjustmycodestate"></a>IDebugModule3::SetJustMyCodeState
-Помечает модуль как пользовательский код или нет.  
+Marks the module as being user code or not.  
   
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT SetJustMyCodeState(  
@@ -47,18 +48,18 @@ HRESULT SetJustMyCodeState(
 );  
 ```  
   
-```c#  
+```cs  
 int SetJustMyCodeState(  
    int fIsUserCode  
 );  
 ```  
   
-#### <a name="parameters"></a>Параметры  
+#### <a name="parameters"></a>Parameters  
  `fIsUserCode`  
- [in] Ненулевое значение (`TRUE`), если модуль считается пользовательским кодом, ноль (`FALSE`), если его не следует.  
+ [in] Nonzero (`TRUE`) if the module should be considered user code, zero (`FALSE`) if it should not.  
   
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае — возвращает код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns error code.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>See Also  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

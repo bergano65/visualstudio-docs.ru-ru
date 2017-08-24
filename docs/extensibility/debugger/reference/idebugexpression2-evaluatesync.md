@@ -1,121 +1,138 @@
 ---
-title: "IDebugExpression2::EvaluateSync | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugExpression2::EvaluateSync"
-helpviewer_keywords: 
-  - "IDebugExpression2::EvaluateSync"
+title: IDebugExpression2::EvaluateSync | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugExpression2::EvaluateSync
+helpviewer_keywords:
+- IDebugExpression2::EvaluateSync
 ms.assetid: 88964915-dce3-4005-b4f3-9f37415e41e4
 caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
----
-# IDebugExpression2::EvaluateSync
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 336df94ff7a67f68e6640dbe3ee41e6c237fe4b9
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Этот метод вычисляет выражение.  
+---
+# <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
+This method evaluates the expression synchronously.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT EvaluateSync(   
-   EVALFLAGS             dwFlags,  
-   DWORD                 dwTimeout,  
-   IDebugEventCallback2* pExprCallback,  
-   IDebugProperty2**     ppResult  
+HRESULT EvaluateSync(   
+   EVALFLAGS             dwFlags,  
+   DWORD                 dwTimeout,  
+   IDebugEventCallback2* pExprCallback,  
+   IDebugProperty2**     ppResult  
 );  
 ```  
   
-```c#  
+```cs  
 int EvaluateSync(  
-   enum_EVALFLAGS       dwFlags,   
-   uint                 dwTimeout,   
-   IDebugEventCallback2 pExprCallback,   
-   out IDebugProperty2  ppResult  
+   enum_EVALFLAGS       dwFlags,   
+   uint                 dwTimeout,   
+   IDebugEventCallback2 pExprCallback,   
+   out IDebugProperty2  ppResult  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Parameters  
  `dwFlags`  
- \[in\] сочетание пометит из [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) перечисление, которое контролирует оценки выражений.  
+ [in] A combination of flags from the [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumeration that control expression evaluation.  
   
  `dwTimeout`  
- \[in\] максимальное время, в миллисекундах, ожидания возврата из этого метода.  Используйте `INFINITE` ждать бесконечно.  
+ [in] Maximum time, in milliseconds, to wait before returning from this method. Use `INFINITE` to wait indefinitely.  
   
  `pExprCallback`  
- \[in\] данный параметр всегда значение NULL.  
+ [in]This parameter is always a null value.  
   
  `ppResult`  
- \[out\] возвращает IDebugProperty2 объект, содержащий результат оценки выражений.  
+ [out] Returns the [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) object that contains the result of the expression evaluation.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  Некоторые стандартные коды ошибки:  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise returns an error code. Some typical error codes are:  
   
-|Ошибка|Описание|  
-|------------|--------------|  
-|E\_EVALUATE\_BUSY\_WITH\_EVALUATION|Другое выражение было определено в данный момент, и параллельная вычисление выражений не поддерживается.|  
-|E\_EVALUATE\_TIMEOUT|Оценка истекло.|  
+|Error|Description|  
+|-----------|-----------------|  
+|E_EVALUATE_BUSY_WITH_EVALUATION|Another expression is currently being evaluated, and simultaneous expression evaluation is not supported.|  
+|E_EVALUATE_TIMEOUT|Evaluation timed out.|  
   
-## Заметки  
- Для синхронной обработки нет необходимости отправлять событие обратно в Visual Studio после завершения вычислений.  
+## <a name="remarks"></a>Remarks  
+ For synchronous evaluation, it is not necessary to send an event back to Visual Studio upon completion of the evaluation.  
   
-## Пример  
- В следующем примере показано, как реализовать этот метод для простого `CExpression` объект, реализующий  [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) интерфейс.  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a simple `CExpression` object that implements the [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) interface.  
   
 ```cpp#  
 HRESULT CExpression::EvaluateSync(EVALFLAGS dwFlags,  
-                                  DWORD dwTimeout,  
-                                  IDebugEventCallback2* pExprCallback,  
-                                  IDebugProperty2** ppResult)  
+                                  DWORD dwTimeout,  
+                                  IDebugEventCallback2* pExprCallback,  
+                                  IDebugProperty2** ppResult)  
 {  
-    // Set the aborted state to FALSE.    
-    m_bAborted = FALSE;    
-    // Delegate the evaluation to EvalExpression.    
-    return EvalExpression(TRUE, ppResult);    
+    // Set the aborted state to FALSE.    
+    m_bAborted = FALSE;    
+    // Delegate the evaluation to EvalExpression.    
+    return EvalExpression(TRUE, ppResult);    
 }  
   
 HRESULT CExpression::EvalExpression(BOOL bSynchronous,  
-                                    IDebugProperty2** ppResult)  
+                                    IDebugProperty2** ppResult)  
 {  
-    HRESULT hr;  
+    HRESULT hr;  
   
-    // Get the value of an environment variable.  
-    PCSTR pszVal = m_pEnvBlock->GetEnv(m_pszVarName);  
-    // Create and initialize a CEnvVar object with the retrieved value.  
-    // CEnvVar implements the IDebugProperty2 interface.  
-    CComObject<CEnvVar> *pEnvVar;  
-    CComObject<CEnvVar>::CreateInstance(&pEnvVar);  
-    pEnvVar->Init(m_pszVarName, pszVal, m_pDoc);  
+    // Get the value of an environment variable.  
+    PCSTR pszVal = m_pEnvBlock->GetEnv(m_pszVarName);  
+    // Create and initialize a CEnvVar object with the retrieved value.  
+    // CEnvVar implements the IDebugProperty2 interface.  
+    CComObject<CEnvVar> *pEnvVar;  
+    CComObject<CEnvVar>::CreateInstance(&pEnvVar);  
+    pEnvVar->Init(m_pszVarName, pszVal, m_pDoc);  
   
-    if (pszVal) {  
-        // Check for synchronous evaluation.  
-        if (bSynchronous) {  
-            // Set and AddRef the result, IDebugProperty2 interface.  
-            *ppResult = pEnvVar;  
-            (*ppResult)->AddRef();  
-            hr = S_OK;  
-        } else {  
-            //For asynchronous evaluation, send an evaluation complete event.  
-            CExprEvalEvent *pExprEvent = new CExprEvalEvent(this, pEnvVar);  
-            pExprEvent->SendEvent(m_pExprCallback, NULL, NULL, NULL);  
-        }  
-    } else {  
-        // If a valid value is not retrieved, return E_FAIL.  
-        hr = E_FAIL;  
-    }  
-    return hr;  
+    if (pszVal) {  
+        // Check for synchronous evaluation.  
+        if (bSynchronous) {  
+            // Set and AddRef the result, IDebugProperty2 interface.  
+            *ppResult = pEnvVar;  
+            (*ppResult)->AddRef();  
+            hr = S_OK;  
+        } else {  
+            //For asynchronous evaluation, send an evaluation complete event.  
+            CExprEvalEvent *pExprEvent = new CExprEvalEvent(this, pEnvVar);  
+            pExprEvent->SendEvent(m_pExprCallback, NULL, NULL, NULL);  
+        }  
+    } else {  
+        // If a valid value is not retrieved, return E_FAIL.  
+        hr = E_FAIL;  
+    }  
+    return hr;  
 }  
 ```  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)   
  [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   

@@ -1,54 +1,71 @@
 ---
-title: "IDebugBreakpointUnboundEvent2::GetReason | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBreakpointUnboundEvent2::GetReason"
-helpviewer_keywords: 
-  - "IDebugBreakpointUnboundEvent2::GetReason"
+title: IDebugBreakpointUnboundEvent2::GetReason | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugBreakpointUnboundEvent2::GetReason
+helpviewer_keywords:
+- IDebugBreakpointUnboundEvent2::GetReason
 ms.assetid: 0f8a4fec-d3eb-417d-8516-4f7b51904033
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# IDebugBreakpointUnboundEvent2::GetReason
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 5d3fda79f546fe1f62806eecd7b201e48cec0f97
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Возвращает причину точка останова была отменена привязка.  
+---
+# <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
+Gets the reason the breakpoint was unbound.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetReason(   
-   BP_UNBOUND_REASON* pdwUnboundReason  
+HRESULT GetReason(   
+   BP_UNBOUND_REASON* pdwUnboundReason  
 );  
 ```  
   
-```c#  
-int GetReason(   
-   out enum_ BP_UNBOUND_REASON pdwUnboundReason  
+```cs  
+int GetReason(   
+   out enum_ BP_UNBOUND_REASON pdwUnboundReason  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Parameters  
  `pdwUnboundReason`  
- \[out\] возвращает значение [BP\_UNBOUND\_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) перечисление, указывающее причину точка останова была отменена привязка.  
+ [out] Returns a value from the [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) enumeration specifying the reason the breakpoint was unbound.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Заметки  
- Причины точку останова отскоком в другое место после операции правка\-и\-продолжать или определение, что точка останова будет привязана ошибке.  
+## <a name="remarks"></a>Remarks  
+ Reasons include a breakpoint being rebound to a different location after an edit-and-continue operation, or a determination that a breakpoint was bound in error.  
   
-## Пример  
- В следующем примере показано, как реализовать этот метод, a **CBreakpointUnboundDebugEventBase** объект, предоставляющий  [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) интерфейс.  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a **CBreakpointUnboundDebugEventBase** object that exposes the [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) interface.  
   
 ```cpp#  
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(  
@@ -69,5 +86,5 @@ STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(
 }  
 ```  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)

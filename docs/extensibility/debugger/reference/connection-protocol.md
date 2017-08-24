@@ -1,5 +1,5 @@
 ---
-title: "CONNECTION_PROTOCOL | Документы Microsoft"
+title: CONNECTION_PROTOCOL | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: ed80d3caee3a0e407e42670adcabb0e2710bd59d
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 56b90ac83640e839b2cdccd74c63090b5c17c913
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
 ---
-# <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
-Указывает протокол, используемый для обмена данными между сервером отладки и отладки пакета (DE).  
+# CONNECTION_PROTOCOL
+Indicates the protocol being used to communicate between a debug server and the debug package (DE).  
   
-## <a name="syntax"></a>Синтаксис  
+## Syntax  
   
 ```cpp  
 typedef enum tagCONNECTION_PROTOCOL {  
@@ -53,7 +54,7 @@ typedef enum tagCONNECTION_PROTOCOL {
 } CONNECTION_PROTOCOL;  
 ```  
   
-```c#  
+```cs  
 public enum CONNECTION_PROTOCOL {  
    CONNECTION_NONE    = 0,  
    CONNECTION_UNKNOWN = 1,  
@@ -65,38 +66,38 @@ public enum CONNECTION_PROTOCOL {
 };  
 ```  
   
-#### <a name="parameters"></a>Параметры  
+#### Parameters  
  CONNECTION_NONE  
- Нет соединения с сервером.  
+ No connection has been made to a server.  
   
  CONNECTION_UNKNOWN  
- Подключение установлено, но оно имеет неизвестный тип.  
+ A connection has been made, but it is of an unknown type.  
   
  CONNECTION_LOCAL  
- Подключен к локальному серверу.  
+ Connection is to a local server.  
   
  CONNECTION_PIPE  
- Подключение осуществляется через именованный канал.  
+ Connection is through a named pipe.  
   
  CONNECTION_TCPIP  
- Соединение использует протокол TCP/IP.  
+ Connection uses TCP/IP.  
   
  CONNECTION_HTTP  
- Соединение использует протокол HTTP (через веб-сервер).  
+ Connection uses HTTP (through a Web server).  
   
  CONNECTION_OTHER  
- Было установлено соединение другого типа (это значение не используется в настоящее время).  
+ Some other type of connection has been established (this value is not currently used).  
   
-## <a name="remarks"></a>Примечания  
- Эти значения возвращаются из [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) метод.  
+## Remarks  
+ These values are returned from the [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) method.  
   
-## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+## Requirements  
+ Header: msdbg.h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)

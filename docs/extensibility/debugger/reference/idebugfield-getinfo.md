@@ -1,54 +1,71 @@
 ---
-title: "IDebugField::GetInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugField::GetInfo"
-helpviewer_keywords: 
-  - "Метод IDebugField::GetInfo"
+title: IDebugField::GetInfo | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugField::GetInfo
+helpviewer_keywords:
+- IDebugField::GetInfo method
 ms.assetid: 7d508200-89ce-400f-a8ea-f28e7610cb2b
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# IDebugField::GetInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: dcc267d755bbb02591d81ac240e31e4f24245db9
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Этот метод возвращает displayable сведения о поле.  
+---
+# <a name="idebugfieldgetinfo"></a>IDebugField::GetInfo
+This method gets displayable information about the field.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetInfo(   
-   FIELD_INFO_FIELDS dwFields,  
-   FIELD_INFO* pFieldInfo  
+HRESULT GetInfo(   
+   FIELD_INFO_FIELDS dwFields,  
+   FIELD_INFO* pFieldInfo  
 );  
 ```  
   
-```c#  
+```cs  
 int GetInfo(  
-   enum_FIELD_INFO_FIELDS dwFields,  
-   FIELD_INFO[] pFieldInfo  
+   enum_FIELD_INFO_FIELDS dwFields,  
+   FIELD_INFO[] pFieldInfo  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Parameters  
  `dwFields`  
- \[in\] сочетание [FIELD\_INFO\_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) константы, выбираются данные для отображения.  Если поле представляет символ, то обычно это имя и типа символа.  
+ [in] A combination of [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) constants that selects the information to be displayed. If the field represents a symbol, this is typically the symbol name and type.  
   
  `pFieldInfo`  
- \[out\] возвращает данные из предоставленного [FIELD\_INFO](../../../extensibility/debugger/reference/field-info.md) структура.  
+ [out] Returns the information in the supplied [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) structure.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
- [FIELD\_INFO](../../../extensibility/debugger/reference/field-info.md)
+ [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)

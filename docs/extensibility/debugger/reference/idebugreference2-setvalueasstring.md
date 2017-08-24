@@ -1,58 +1,75 @@
 ---
-title: "IDebugReference2::SetValueAsString | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugReference2::SetValueAsString"
-helpviewer_keywords: 
-  - "IDebugReference2::SetValueAsString"
+title: IDebugReference2::SetValueAsString | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugReference2::SetValueAsString
+helpviewer_keywords:
+- IDebugReference2::SetValueAsString
 ms.assetid: 9a508ced-fd54-44f5-bb42-ec15c80384d7
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugReference2::SetValueAsString
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: bdbc61dd8adac3996374df27a0e27cb330f0431f
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Устанавливает значение ссылки из строки.  Зарезервировано для использования в будущем.  
+---
+# <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
+Sets the value of a reference from a string. Reserved for future use.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT SetValueAsString (   
-   LPCOLESTR pszValue,  
-   DWORD     dwRadix,  
-   DWORD     dwTimeout  
+HRESULT SetValueAsString (   
+   LPCOLESTR pszValue,  
+   DWORD     dwRadix,  
+   DWORD     dwTimeout  
 );  
 ```  
   
-```c#  
-int SetValueAsString (   
-   string pszValue,  
-   uint   dwRadix,  
-   uint   dwTimeout  
+```cs  
+int SetValueAsString (   
+   string pszValue,  
+   uint   dwRadix,  
+   uint   dwTimeout  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Parameters  
  `pszValue`  
- \[in\] значение в виде строки.  
+ [in] The value as a string.  
   
  `dwRadix`  
- \[in\] корневой каталог, используемый в отформатировать любое числовое сведения.  
+ [in] The radix to be used in formatting any numerical information.  
   
  `dwTimeout`  
- \[in\] максимальное время, в миллисекундах, ожидания возврата из этого метода.  Используйте `INFINITE` ждать бесконечно.  
+ [in] Maximum time, in milliseconds, to wait before returning from this method. Use `INFINITE` to wait indefinitely.  
   
-## Возвращаемое значение  
- Всегда возвращает значение `E_NOTIMPL`.  
+## <a name="return-value"></a>Return Value  
+ Always returns `E_NOTIMPL`.  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

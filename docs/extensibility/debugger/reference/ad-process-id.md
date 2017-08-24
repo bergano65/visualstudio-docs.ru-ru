@@ -1,5 +1,5 @@
 ---
-title: "AD_PROCESS_ID | Документы Microsoft"
+title: AD_PROCESS_ID | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7453d0d8eb9e9081be4a8f18cfb87d1cd3f9f8bb
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: cbdeffbe76f86274c8936462038c4f636a64aab8
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="adprocessid"></a>AD_PROCESS_ID
-Указывает идентификатор процесса, который может быть системный идентификатор или идентификатор GUID.  
+Specifies the process ID, which may be either a system ID or a GUID.  
   
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 typedef struct _AD_PROCESS_ID {  
@@ -52,7 +53,7 @@ typedef struct _AD_PROCESS_ID {
 } AD_PROCESS_ID;  
 ```  
   
-```c#  
+```cs  
 public struct AD_PROCESS_ID {  
    AD_PROCESS_ID_TYPE ProcessIdType;  
    DWORD              dwProcessId;   
@@ -61,21 +62,21 @@ public struct AD_PROCESS_ID {
 };  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Members  
  `ProcessIdType`  
- Значение из [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) перечисление, определяющее, как интерпретировать `ProcessId` объединения (или, для управляемого кода, какие члены структуры для доступа к).  
+ A value from the [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) enumeration specifying how to interpret the `ProcessId` union (or, for managed code, which member of the structure to access).  
   
  dwProcessId  
- Идентификатор процесса как значение от системы.  
+ The process ID as a value from the system.  
   
  guidProcessId  
- Идентификатор процесса, в виде идентификатора GUID.  
+ The process ID as a GUID.  
   
  dwUnused  
- Заполнение.  
+ Padding.  
   
-## <a name="remarks"></a>Примечания  
- Эта структура передается следующие методы:  
+## <a name="remarks"></a>Remarks  
+ This structure is passed to the following methods:  
   
 -   [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
   
@@ -85,21 +86,21 @@ public struct AD_PROCESS_ID {
   
 -   [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)  
   
- И возвращается из следующих методов:  
+ And is returned from the following methods:  
   
 -   [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
   
 -   [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)  
   
-## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## <a name="see-also"></a>See Also  
+ [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)   
  [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)   
  [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)   

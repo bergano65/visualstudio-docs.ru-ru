@@ -1,88 +1,105 @@
 ---
-title: "EncUnavailableReason | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "EncUnavailableReason"
-helpviewer_keywords: 
-  - "Перечисление EncUnavailableReason"
+title: EncUnavailableReason | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- EncUnavailableReason
+helpviewer_keywords:
+- EncUnavailableReason enumeration
 ms.assetid: c10aa4c0-d7e0-4de1-b8ff-7e050985eb12
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# EncUnavailableReason
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 8c9f25370aefdf68a97fcb0ab4af6acf3fd6eafe
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-`This is for internal use only!` Представляет причины, то  **"Операция ""Изменить и продолжить"""** не доступны.  
+---
+# <a name="encunavailablereason"></a>EncUnavailableReason
+`This is for internal use only!` Represents the reasons that **Edit and Continue** is not available.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-enum tagEncUnavailableReason {  
-   ENCUN_NONE,  
-   ENCUN_INTEROP,  
-   ENCUN_SQLCLR,  
-   ENCUN_MINIDUMP,  
-   ENCUN_EMBEDDED,  
-   ENCUN_ATTACH,  
-   ENCUN_WIN64  
+enum tagEncUnavailableReason {  
+   ENCUN_NONE,  
+   ENCUN_INTEROP,  
+   ENCUN_SQLCLR,  
+   ENCUN_MINIDUMP,  
+   ENCUN_EMBEDDED,  
+   ENCUN_ATTACH,  
+   ENCUN_WIN64  
 };  
-typedef enum tagEncUnavailableReason EncUnavailableReason;  
+typedef enum tagEncUnavailableReason EncUnavailableReason;  
 ```  
   
-```c#  
-public enum EncUnavailableReason {  
-   ENCUN_NONE,  
-   ENCUN_INTEROP,  
-   ENCUN_SQLCLR,  
-   ENCUN_MINIDUMP,  
-   ENCUN_EMBEDDED,  
-   ENCUN_ATTACH,  
-   ENCUN_WIN64  
+```cs  
+public enum EncUnavailableReason {  
+   ENCUN_NONE,  
+   ENCUN_INTEROP,  
+   ENCUN_SQLCLR,  
+   ENCUN_MINIDUMP,  
+   ENCUN_EMBEDDED,  
+   ENCUN_ATTACH,  
+   ENCUN_WIN64  
 };  
 ```  
   
-#### Параметры  
- ENCUN\_NONE  
- Нет конкретной причины правка и кнопка продолжить не доступны.  
+#### <a name="parameters"></a>Parameters  
+ ENCUN_NONE  
+ No specific reason why Edit and Continue is not available.  
   
- ENCUN\_INTEROP  
- Правка и кнопка продолжить не доступны во время вызова метода Взаимодействия.  
+ ENCUN_INTEROP  
+ Edit and Continue is not available during an InterOp call.  
   
- ENCUN\_SQLCLR  
- Правка и кнопка продолжить не доступны во время вызова процедуры SQL, использующий среду CLR.  
+ ENCUN_SQLCLR  
+ Edit and Continue is not available during an SQL procedure call that uses the Common Language Runtime (CLR).  
   
- ENCUN\_MINIDUMP  
- Правка и кнопка продолжить не доступны при обработке мини\-дамп.  
+ ENCUN_MINIDUMP  
+ Edit and Continue is not available while processing a mini-dump.  
   
- ENCUN\_EMBEDDED  
- Правка и кнопка продолжить не доступны при обработке внедренный код.  
+ ENCUN_EMBEDDED  
+ Edit and Continue is not available when processing embedded code.  
   
- ENCUN\_ATTACH  
- Правка и кнопка продолжить не доступны, поскольку сеанс был вложен в, не запущено, отладчик.  
+ ENCUN_ATTACH  
+ Edit and Continue is not available because the session was attached to, not launched by, the debugger.  
   
- ENCUN\_WIN64  
- Правка и кнопка продолжить не доступны при обработке 64 \- код windows.  
+ ENCUN_WIN64  
+ Edit and Continue is not available while processing 64-bit Windows code.  
   
-## Заметки  
- Это перечисление только для внутреннего использования by [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) и  [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) такие методы, как реализуется пользовательским поставщиком порта должны всегда возвращать  `E_NOTIMPL`.  
+## <a name="remarks"></a>Remarks  
+ This enumeration is for internal use only by [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]. The [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) and [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) methods as implemented by a custom port supplier should always return `E_NOTIMPL`.  
   
-## Требования  
- Заголовок: msdbg.idl  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.idl  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)   
  [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)

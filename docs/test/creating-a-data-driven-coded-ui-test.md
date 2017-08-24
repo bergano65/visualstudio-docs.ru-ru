@@ -1,5 +1,5 @@
 ---
-title: "Создание управляемого данными закодированного теста пользовательского интерфейса | Документы Майкрософт"
+title: Creating a Data-Driven Coded UI Test | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -28,44 +28,44 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 2c4cb515c4442b3c48c42f47f9116e9ff536a5f4
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 388aa6ce843d1990273b0aac7a4148ffc5944d98
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/24/2017
 
 ---
-# <a name="creating-a-data-driven-coded-ui-test"></a>Создание управляемого данными закодированного теста пользовательского интерфейса
-Для тестирования различных условий можно запускать тесты несколько раз с различными значениями параметров. Управляемые данными закодированные тесты пользовательского интерфейса — удобный способ сделать это. Вы задаете значения параметров в источнике данных, и каждая строка в источнике данных — это итерация закодированного теста пользовательского интерфейса. Общий результат теста будет основываться на результате всех итераций. Например если одна итерация завершается неудачей, общим результатом теста будет ошибка.  
+# <a name="creating-a-data-driven-coded-ui-test"></a>Creating a Data-Driven Coded UI Test
+To test different conditions, you can run your tests multiple times with different parameter values. Data-driven coded UI tests are a convenient way to do this. You define parameter values in a data source, and each row in the data source is an iteration of the coded UI test. The overall result of the test will be based on the outcome for all the iterations. For example, if one test iteration fails, the overall test result is failure.  
   
  **Requirements**  
   
 -   Visual Studio Enterprise  
   
-## <a name="create-a-data-driven-coded-ui-test"></a>Создание управляемого данными закодированного теста пользовательского интерфейса  
- В этом примере создается закодированный тест пользовательского интерфейса, который работает в приложении "Калькулятор Windows". Он складывает два числа и использует утверждение для проверки правильности суммы. Далее утверждение и значения параметров для двух чисел кодируются в управляемые данными и сохраняются в файле с разделителями-запятыми (CSV).  
+## <a name="create-a-data-driven-coded-ui-test"></a>Create a data-driven coded UI test  
+ This sample creates a coded UI test that runs on the Windows Calculator application. It adds two numbers together and uses an assertion to validate that the sum is correct. Next, the assertion and the parameter values for the two numbers are coded to become data-driven and stored in a comma-separated value (.csv) file.  
   
-#### <a name="step-1---create-a-coded-ui-test"></a>Шаг 1. Создание закодированного теста пользовательского интерфейса  
+#### <a name="step-1---create-a-coded-ui-test"></a>Step 1 - Create a coded UI test  
   
-1.  Создайте проект.  
+1.  Create a project.  
   
-     ![Создание проекта закодированного теста пользовательского интерфейса](../test/media/cuit_datadriven_.png "CUIT_dataDriven_")  
+     ![Create a coded UI test project](../test/media/cuit_datadriven_.png "CUIT_dataDriven_")  
   
-2.  Выберите запись действий.  
+2.  Choose to record the actions.  
   
-     ![Выбор записи действий](~/test/media/cuit_datadriven_generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")  
+     ![Choose to record the actions](../test/media/cuit_datadriven_generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")  
   
-3.  Откройте приложение "Калькулятор" и начните запись теста.  
+3.  Open the calculator app and start recording the test.  
   
-     ![Запись действий](../test/media/cuit_datadriven_cuitbuilder.png "CUIT_dataDriven_CUITBuilder")  
+     ![Record actions](../test/media/cuit_datadriven_cuitbuilder.png "CUIT_dataDriven_CUITBuilder")  
   
-4.  Сложите 1 и 2, приостановите средство записи и создайте метод теста. Позже эти значения ввода пользователя будут заменены значениями из файла данных.  
+4.  Add 1 plus 2, pause the recorder, and generate the test method. Later we'll replace the values of this user input with values from a data file.  
   
-     ![Создание метода тестирования](~/test/media/cuit_datadriven_cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")  
+     ![Genetate test method](../test/media/cuit_datadriven_cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")  
   
-     Закройте построитель теста. Метод добавляется в тест.  
+     Close the test builder. The method is added to the test:  
   
-    ```c#  
+    ```cs  
     [TestMethod]  
     public void CodedUITestMethod1()  
     {  
@@ -75,27 +75,27 @@ ms.lasthandoff: 05/13/2017
     }  
     ```  
   
-5.  С помощью метода `AddNumbers()` проверьте, выполняется ли тест. Поместите курсор в метод теста, показанный выше, откройте контекстное меню и выберите пункт **Запуск тестов**. (Сочетание клавиш: Ctrl + R, T).  
+5.  Use the `AddNumbers()` method to verify that the test runs. Place the cursor in the test method shown above, open the context menu, and choose **Run Tests**. (Keyboard shortcut: Ctrl + R, T).  
   
-     В окне обозревателя тестов отображается результат теста, показывающий, пройден тест или нет. Чтобы открыть окно обозревателя тестов, в меню **ТЕСТ** выберите пункт **Окна**, а затем выберите пункт **Обозреватель тестов**.  
+     The test result that shows if the test passed or failed is displayed in the Test Explorer window. To open the Test Explorer window, from the **TEST** menu, choose **Windows** and then choose **Test Explorer**.  
   
-6.  Так как источник данных также может использоваться для значений параметров утверждения, с помощью которых тест проверяет ожидаемые значения, добавим утверждение для проверки правильности суммы двух чисел. Поместите курсор в методе теста, показанном выше, откройте контекстное меню, выберите пункт **Сформировать код для закодированного теста пользовательского интерфейса**, а затем выберите пункт **Использовать построитель закодированных тестов пользовательского интерфейса**.  
+6.  Because a data source can also be used for assertion parameter values—which are used by the test to verify expected values—let's add an assertion to validate that the sum of the two numbers is correct. Place the cursor in the test method shown above, open the context menu and choose **Generate Code for Coded UI Test**, and then **Use Coded UI Test Builder**.  
   
-     Сопоставьте элемент управления "Текст" с калькулятором, который отображает сумму.  
+     Map the text control in the calculator that displays the sum.  
   
-     ![Сопоставление элемента управления текста пользовательского интерфейса](../test/media/cuit_datadriven_addassertion.png "CUIT_dataDriven_AddAssertion")  
+     ![Map the UI text control](../test/media/cuit_datadriven_addassertion.png "CUIT_dataDriven_AddAssertion")  
   
-7.  Добавьте утверждение, которое проверяет правильность значения суммы. Выберите свойство **DisplayText**, которое имеет значение **3**, а затем выберите **Добавить утверждение**. С помощью средства сравнения **AreEqual** проверьте, имеет ли сравнение значение **3**.  
+7.  Add an assertion that validates that the value of the sum is correct. Choose the **DisplayText** property that has the value of **3** and then choose **Add Assertion**. Use the **AreEqual** comparator and verify that the comparison value is **3**.  
   
-     ![Настройка утверждения](../test/media/cuit_datadriven_builderaddassertion2.png "CUIT_dataDriven_BuilderAddAssertion2")  
+     ![Configure the assertion](../test/media/cuit_datadriven_builderaddassertion2.png "CUIT_dataDriven_BuilderAddAssertion2")  
   
-8.  После настройки утверждения снова создайте код из построителя. При этом создается новый метод для проверки.  
+8.  After configuring the assertion, generate code from the builder again. This creates a new method for the validation.  
   
-     ![Создание метода проверочного утверждения](~/test/media/cuit_datadriven_assertiongencode.png "CUIT_dataDriven_AssertionGenCode")  
+     ![Generate the assertion method](../test/media/cuit_datadriven_assertiongencode.png "CUIT_dataDriven_AssertionGenCode")  
   
-     Так как метод `ValidateSum` проверяет результаты метода `AddNumbers`, переместите его в нижнюю часть блока кода.  
+     Because the `ValidateSum` method validates the results of the `AddNumbers` method, move it to the bottom of the code block.  
   
-    ```c#  
+    ```cs  
     public void CodedUITestMethod1()  
     {  
   
@@ -106,17 +106,17 @@ ms.lasthandoff: 05/13/2017
     }  
     ```  
   
-9. Убедитесь, что тест выполняется, с помощью метода `ValidateSum()`. Поместите курсор в метод теста, показанный выше, откройте контекстное меню и выберите пункт **Запуск тестов**. (Сочетание клавиш: Ctrl + R, T).  
+9. Verify that the test runs by using the `ValidateSum()` method. Place the cursor in the test method shown above, open the context menu, and choose **Run Tests**. (Keyboard shortcut:Ctrl + R, T).  
   
-     На этом этапе все значения параметров заданы в соответствующих методах как константы. Теперь давайте создадим набор данных, чтобы сделать наш тест управляемым данными.  
+     At this point, all the parameter values are defined in their methods as constants. Next, let's create a data set to make our test data-driven.  
   
-#### <a name="step-2---create-a-data-set"></a>Шаг 2. Создание набора данных  
+#### <a name="step-2---create-a-data-set"></a>Step 2 - Create a data set  
   
-1.  Добавьте в проект dataDrivenSample текстовый файл с именем `data.csv`.  
+1.  Add a text file to the dataDrivenSample project named `data.csv`.  
   
-     ![Добавление в проект файла с разделителями-запятыми](../test/media/cuit_datadriven_addcsvfile.png "CUIT_dataDriven_AddCSVFile")  
+     ![Add a comma seperated value file to the project](../test/media/cuit_datadriven_addcsvfile.png "CUIT_dataDriven_AddCSVFile")  
   
-2.  Заполните CSV-файл следующими данными.  
+2.  Populate the .csv file with the following data:  
   
     |Num1|Num2|Sum|  
     |----------|----------|---------|  
@@ -124,21 +124,21 @@ ms.lasthandoff: 05/13/2017
     |5|6|11|  
     |6|8|14|  
   
-     После добавления данных этот файл должен выглядеть следующим образом.  
+     After adding the data, the file should appear as the following:  
   
-     ![Заполнение CSV-файла данными](../test/media/cuit_datadriven_adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")  
+     ![Populate the .CSV file with data](../test/media/cuit_datadriven_adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")  
   
-3.  Важно сохранить этот CSV-файл в правильной кодировке. В меню **ФАЙЛ** выберите **Дополнительные параметры сохранения** и выберите в качестве кодировки **Юникод (UTF-8 без сигнатуры) — кодовая страница 65001**.  
+3.  It is important to save the .csv file using the correct encoding. On the **FILE** menu, choose **Advanced Save Options** and choose **Unicode (UTF-8 without signature) - Codepage 65001** as the encoding.  
   
-4.  Этот CSV-файл необходимо скопировать в выходной каталог, иначе не удается запустить тест. Скопируйте его с помощью окна «Свойства».  
+4.  The .csv file, must be copied to the output directory, or the test can't run. Use the Properties window to copy it.  
   
-     ![Развертывание CSV-файла](../test/media/cuit_datadriven_deploycsvfile.png "CUIT_dataDriven_DeployCSVFile")  
+     ![Deploy the .CSV file](../test/media/cuit_datadriven_deploycsvfile.png "CUIT_dataDriven_DeployCSVFile")  
   
-     Теперь, когда у нас есть созданный набор данных, следует привязать данные к тесту.  
+     Now that we have the data set created, let's bind the data to the test.  
   
-#### <a name="step-3---add-data-source-binding"></a>Шаг 3. Добавление привязки источника данных  
+#### <a name="step-3---add-data-source-binding"></a>Step 3 - Add data source binding  
   
-1.  Чтобы привязать источник данных, добавьте атрибут `DataSource` в существующий атрибут `[TestMethod]`, который находится сразу над методом теста.  
+1.  To bind the data source, add a `DataSource` attribute within the existing `[TestMethod]` attribute that is immediately above the test method.  
   
     ```  
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]  
@@ -153,20 +153,20 @@ ms.lasthandoff: 05/13/2017
   
     ```  
   
-     Источник данных теперь доступен для использования в этом тестовом методе.  
+     The data source is now available for you to use in this test method.  
   
     > [!TIP]
-    >  Примеры использования других типов источников данных, таких как XML, SQL Express и Excel, см. в разделе [Примеры атрибутов источников данных](#CreateDataDrivenCUIT_QA_DataSourceAttributes).  
+    >  See [data source attribute samples](#CreateDataDrivenCUIT_QA_DataSourceAttributes) in the Q & A section for samples of using other data source types such as XML, SQL Express and Excel.  
   
-2.  Запустите тест.  
+2.  Run the test.  
   
-     Обратите внимание, что тест выполняется в три итерации. Это происходит потому, что привязанный источник данных содержит три строки данных. Однако можно также заметить, что тест по-прежнему использует константные значения параметров и каждый раз складывает 1 и 2, получая сумму 3.  
+     Notice that the test runs through three iterations. This is because the data source that was bound contains three rows of data. However, you will also notice that the test is still using the constant parameter values and is adding 1 + 2 with a sum of 3 each time.  
   
-     Далее мы будем настраивать тест для использования значений из файла источника данных.  
+     Next, we'll configure the test to use the values in the data source file.  
   
-#### <a name="step-4---use-the-data-in-the-coded-ui-test"></a>Шаг 4. Использование данных в закодированном тесте пользовательского интерфейса  
+#### <a name="step-4---use-the-data-in-the-coded-ui-test"></a>Step 4 - Use the data in the coded UI test  
   
-1.  Добавьте `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` в верхнюю часть файла CodedUITest.cs:  
+1.  Add `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` to the top of the CodedUITest.cs file:  
   
     ```  
     using System;  
@@ -182,7 +182,7 @@ ms.lasthandoff: 05/13/2017
     using Microsoft.VisualStudio.TestTools.UITesting.WinControls;  
     ```  
   
-2.  Добавьте `TestContext.DataRow[]` в метод `CodedUITestMethod1()`, который будет применять значения из источника данных. Значения из источника данных переопределяют константы, назначенные элементам управления UIMap, с помощью элементов управления `SearchProperties`:  
+2.  Add `TestContext.DataRow[]` in the `CodedUITestMethod1()` method which will apply values from the data source. The data source values override the constants assigned to UIMap controls by using the controls `SearchProperties`:  
   
     ```  
     public void CodedUITestMethod1()  
@@ -197,38 +197,38 @@ ms.lasthandoff: 05/13/2017
     }  
     ```  
   
-     Чтобы понять, в какие свойства поиска следует кодировать данные, используйте редактор закодированных тестов пользовательского интерфейса.  
+     To figure out which search properties to code the data to, use the Coded UI Test Editor.  
   
-    -   Откройте файл UIMap.uitest.  
+    -   Open the UIMap.uitest file.  
   
-         ![Открытие редактора закодированных тестов пользовательского интерфейса](../test/media/cuit_datadriven_opentesteditor.png "CUIT_dataDriven_OpenTestEditor")  
+         ![Open the Coded UI Test Editor](../test/media/cuit_datadriven_opentesteditor.png "CUIT_dataDriven_OpenTestEditor")  
   
-    -   Выберите действие пользовательского интерфейса и просмотрите соответствующее сопоставление элементов управления пользовательского интерфейса. Обратите внимание, как сопоставление соответствует коду, например, `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.  
+    -   Choose the UI action and observe the corresponding UI control mapping. Notice how the mapping corresponds to the code, for example, `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.  
   
-         ![Использование редактора закодированных тестов пользовательского интерфейса для поддержки при кодировании](../test/media/cuit_datadriven_testeditor.png "CUIT_dataDriven_TestEditor")  
+         ![Use the Coded UI Test Editor to assist with code](../test/media/cuit_datadriven_testeditor.png "CUIT_dataDriven_TestEditor")  
   
-    -   В окне свойств откройте **свойства поиска**. Значение **Имя** свойств поиска — это то, что обрабатывается в коде с помощью источника данных. Например, `SearchProperties` назначаются значения в первом столбце каждой строки данных: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. В рамках трех итераций этот тест изменит значение **Имя** для свойства поиска на 3, затем на 5 и, наконец, на 6.  
+    -   In the Properties Window, open **Search Properties**. The search properties **Name** value is what is being manipulated in the code using the data source. For example, the `SearchProperties` is being assigned the values in the first column of each data row: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. For the three iterations, this test will change the **Name** value for the search property to 3, then 5, and finally 6.  
   
-         ![Использование свойств поиска для поддержки при кодировании](../test/media/cuit_datadriven_searchproperties.png "CUIT_dataDriven_SearchProperties")  
+         ![Use the search properties to assist in coding](../test/media/cuit_datadriven_searchproperties.png "CUIT_dataDriven_SearchProperties")  
   
-3.  Сохраните решение.  
+3.  Save the solution.  
   
-#### <a name="step-5---run-the-data-driven-test"></a>Шаг 5. Запуск управляемого данными теста  
+#### <a name="step-5---run-the-data-driven-test"></a>Step 5 - Run the data-driven test  
   
-1.  Убедитесь, что тест теперь управляется данными, запустив его еще раз.  
+1.  Verify that the test is now data-driven by running the test again.  
   
-     Вы должны увидеть, как тест проходит по трем итерациям, используя значения из CSV-файла. Проверка также должна работать, и тест в обозревателе тестов должен отображаться как пройденный.  
+     You should see the test run through the three iterations using the values in the .csv file. The validation should work as well and the test should display as passed in the Test Explorer.  
   
- **Руководство**  
+ **Guidance**  
   
- Дополнительные сведения см. в разделах [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188) и [Тестирование непрерывной доставки с Visual Studio 2012 — глава 5. Автоматизация системных тестов](http://go.microsoft.com/fwlink/?LinkID=255196).  
+ For additional information, see [Testing for Continuous Delivery with Visual Studio 2012 - Chapter 2: Unit Testing: Testing the Inside](http://go.microsoft.com/fwlink/?LinkID=255188) and [Testing for Continuous Delivery with Visual Studio 2012 - Chapter 5: Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
-## <a name="q--a"></a>Вопросы и ответы  
+## <a name="q--a"></a>Q & A  
   
-###  <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> Что такое атрибуты источника данных для других типов источников данных, таких как SQL Express или XML?  
- Можно использовать строки примеров источников данных из таблицы ниже, скопировав их в код, и внести необходимые настройки.  
+###  <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> What are the data source attributes for other data source types, such as SQL Express or XML?  
+ You can use the sample data source strings in the table below by copying them to your code and making the necessary customizations.  
   
- **Типы и атрибуты источников данных**  
+ **Data Source Types and Attributes**  
   
 -   CSV  
   
@@ -238,7 +238,7 @@ ms.lasthandoff: 05/13/2017
   
      `DataSource("System.Data.Odbc", "Dsn=ExcelFiles;Driver={Microsoft Excel Driver (*.xls)};dbq=|DataDirectory|\\Data.xls;defaultdir=.;driverid=790;maxbuffersize=2048;pagetimeout=5;readonly=true", "Sheet1$", DataAccessMethod.Sequential), DeploymentItem("Sheet1.xls"), TestMethod]`  
   
--   Тестовый случай в Team Foundation Server  
+-   Test case in Team Foundation Server  
   
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.TestCase", "http://vlm13261329:8080/tfs/DefaultCollection;Agile", "30", DataAccessMethod.Sequential), TestMethod]`  
   
@@ -250,8 +250,8 @@ ms.lasthandoff: 05/13/2017
   
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`  
   
-### <a name="q-can-i-use-data-driven-tests-on-my-windows-phone-app"></a>Вопрос. Можно ли использовать управляемые данными тесты в моем приложении Windows Phone?  
- **О.** Да. Закодированные тесты ИП на основе данных для Windows Phone определяются с помощью атрибута DataRow тестового метода. В следующем примере для x и y заданы значения 1 и 2 в первой итерации и значения -1 и -2 во второй итерации теста.  
+### <a name="q-can-i-use-data-driven-tests-on-my-windows-phone-app"></a>Q: Can I use data-driven tests on my Windows Phone app?  
+ **A:** Yes. Data-driven Coded UI tests for Windows Phone are defined using the DataRow attribute on a test method. In the following example, x and y use the values of 1 and 2 for the first iteration and -1 and -2 for the second iteration of the test.  
   
 ```  
 [DataRow(1, 2, DisplayName = "Add positive numbers")]  
@@ -261,18 +261,18 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
 ```  
   
- Дополнительные сведения см. в разделе [Использование управляемых данными закодированных тестов пользовательского интерфейса в приложениях Windows Phone](../test/test-windows-phone-8-1-apps-with-coded-ui-tests.md#TestingPhoneAppsCodedUI_DataDriven).  
+ For more information, see [Use Data-driven coded UI tests on Windows Phone apps](../test/test-windows-phone-8-1-apps-with-coded-ui-tests.md#TestingPhoneAppsCodedUI_DataDriven).  
   
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>В. Почему не следует изменять файл UIMap.Designer?  
- **О**. Любые изменения кода, внесенные в файл UIMapDesigner.cs, будут перезаписываться каждый раз при создании кода с помощью построителя кодированных тестов ИП. В этом примере и в большинстве случаев изменения кода, необходимые, чтобы тест использовал источник данных, можно делать в файле исходного кода теста (т. е. CodedUITest1.cs).  
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Q: Why can't I modify the code in the UIMap.Designer file?  
+ **A:** Any code changes you make in the UIMapDesigner.cs file will be overwritten every time you generate code using the UIMap - Coded UI Test Builder. In this sample, and in most cases, the code changes needed to enable a test to use a data source can be made to the test's source code file (that is, CodedUITest1.cs).  
   
- Если требуется изменить записанный метод, необходимо скопировать его в файл UIMap.cs и переименовать. Файл UIMap.cs можно использовать для переопределения методов и свойств в файле UIMapDesigner.cs. Необходимо удалить ссылку на исходный метод в файле CodedUITest.cs и заменить ее именем переименованного метода.  
+ If you have to modify a recorded method, you must copy it to UIMap.cs file and rename it. The UIMap.cs file can be used to override methods and properties in the UIMapDesigner.cs file. You must remove the reference to the original method in the Coded UITest.cs file and replace it with the renamed method name.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>See Also  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>   
- [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)   
- [Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Рекомендации по выполнению закодированных тестов пользовательского интерфейса](../test/best-practices-for-coded-ui-tests.md)   
- [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+ [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md)   
+ [Creating Coded UI Tests](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
+ [Best Practices for Coded UI Tests](../test/best-practices-for-coded-ui-tests.md)   
+ [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 

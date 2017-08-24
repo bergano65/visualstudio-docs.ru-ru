@@ -1,50 +1,67 @@
 ---
-title: "IDebugAlias2::GetAppDomainId | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetAppDomainId"
-  - "IDebugAlias2::GetAppDomainId"
+title: IDebugAlias2::GetAppDomainId | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- GetAppDomainId
+- IDebugAlias2::GetAppDomainId
 ms.assetid: 23581aaa-5a53-4859-b264-eca49fc44bcd
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugAlias2::GetAppDomainId
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: cf3a3ab96901137ff957d7772abdddc02245227c
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Извлекает идентификатор для домена приложения.  
+---
+# <a name="idebugalias2getappdomainid"></a>IDebugAlias2::GetAppDomainId
+Retrieves the identifier for the application domain.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT GetAppDomainId (  
-   ULONG32* pappDomainId  
+   ULONG32* pappDomainId  
 );  
 ```  
   
-```c#  
+```cs  
 int GetAppDomainId (  
-   out uint pappDomainId  
+   out uint pappDomainId  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Parameters  
  `pappDomainId`  
- \[out\] возвращает идентификатор домена приложения.  
+ [out] Returns the application domain identifier.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Заметки  
- Идентификатор домена приложения изменяется, когда приложение перезапускается и новый домен приложения создается.  
+## <a name="remarks"></a>Remarks  
+ The application domain identifier changes whenever the application is restarted and a new application domain is created.  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  [IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)

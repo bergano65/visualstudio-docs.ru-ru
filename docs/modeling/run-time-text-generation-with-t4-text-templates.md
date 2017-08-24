@@ -1,31 +1,48 @@
 ---
-title: "Run-Time Text Generation with T4 Text Templates | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Preprocessed Text Template project item"
-  - "TextTemplatingFilePreprocessor custom tool"
-  - "text templates, TransformText() method"
-  - "text templates, generating files at run time"
+title: Run-Time Text Generation with T4 Text Templates | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Preprocessed Text Template project item
+- TextTemplatingFilePreprocessor custom tool
+- text templates, TransformText() method
+- text templates, generating files at run time
 ms.assetid: 79b4b3c6-a9a7-4446-b6fd-e2388fc6b05f
 caps.latest.revision: 22
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 22
----
-# Run-Time Text Generation with T4 Text Templates
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: alancameronwills
+ms.author: awills
+manager: douge
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 7396ea74f72c7407d41f396c6b9a713faf8826c0
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Можно создавать текстовые строки в приложении во время выполнения с помощью [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] текстовые шаблоны во время выполнения.  На компьютере, на котором выполняется приложение, не обязательно должна быть установлена система [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Шаблоны во время выполнения, иногда называются «предварительная обработка текстовых шаблонов», так как во время компиляции шаблона формирует код, выполняемый во время выполнения.  
+---
+# <a name="run-time-text-generation-with-t4-text-templates"></a>Run-Time Text Generation with T4 Text Templates
+You can generate text strings in your application at run time by using [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] runtime text templates. The computer where the application executes does not have to have [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Runtime templates are sometimes called "preprocessed text templates" because at compile time, the template generates code that is executed at run time.  
   
- Каждый шаблон представляет собой сочетание текста в том виде, в каком он будет представлен в сгенерированной строке, и фрагментов программного кода.  Программные фрагменты предоставляют значения для переменных частей строки и управляют условными и повторяющимися частями.  
+ Each template is a mixture of the text as it will appear in the generated string, and fragments of program code. The program fragments supply values for the variable parts of the string, and also control conditional and repeated parts.  
   
- Например, следующий шаблон можно использовать в приложении, создающем HTML\-отчет.  
+ For example, the following template could be used in an application that creates an HTML report.  
   
 ```  
 <#@ template language="C#" #>  
@@ -42,26 +59,26 @@ This report is Company Confidential.
 </body></html>  
 ```  
   
- Обратите внимание, что шаблон — это страница HTML, в которой переменные части были заменены программным кодом.  Начать создание такой страницы можно с написания статического прототипа страницы HTML.  Затем можно заменить таблицу и другие переменные части программным кодом, который генерирует содержимое, варьирующееся от случая к случаю.  
+ Notice that the template is an HTML page in which the variable parts have been replaced with program code. You could begin the design of such a page by writing a static prototype of the HTML page. You could then replace the table and other variable parts with program code that generates the content that varies from one occasion to the next.  
   
- Благодаря использованию шаблона в приложении проще увидеть окончательную форму выходных данных, чем, к примеру, при использовании длинной последовательности инструкций write.  В этом случае можно проще и более надежно менять форму выходных данных.  
+ Using a template in your application makes it is easier to see the final form of the output than you could in, for example, a long series of write statements. Making changes to the form of the output is easier and more reliable.  
   
-## Создание текстового шаблона времени выполнения в любом приложении  
+## <a name="creating-a-run-time-text-template-in-any-application"></a>Creating a Run-Time Text Template in any Application  
   
-#### Создание текстового шаблона времени выполнения  
+#### <a name="to-create-a-run-time-text-template"></a>To create a run-time text template  
   
-1.  В обозревателе решений, в контекстном меню проекта выберите  **Добавить**,  **Новый элемент**.  
+1.  In Solution Explorer, on the shortcut menu of your project, choose **Add**, **New Item**.  
   
-2.  В  **Добавить новый элемент** выберите  **Текст шаблона во время выполнения**.  \(В [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] см. в разделе **Common Items\\General**.\)  
+2.  In the **Add New Item** dialog box, select **Runtime Text Template**. (In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] look under **Common Items\General**.)  
   
-3.  Введите имя файла шаблона.  
+3.  Type a name for your template file.  
   
     > [!NOTE]
-    >  Имя файла шаблона будет использоваться как имя класса в сгенерированном коде.  Поэтому оно не должно содержать пробелов и знаков препинания.  
+    >  The template file name will be used as a class name in the generated code. Therefore, it should not have spaces or punctuation.  
   
-4.  Выберите  **Добавить**.  
+4.  Choose **Add**.  
   
-     Будет создан новый файл с расширением **.tt**.  Его свойство **Специальный инструмент** будет иметь значение **TextTemplatingFilePreprocessor**.  Он содержит следующие строки:  
+     A new file is created that has extension **.tt**. Its **Custom Tool** property is set to **TextTemplatingFilePreprocessor**. It contains the following lines:  
   
     ```  
     <#@ template language="C#" #>  
@@ -71,37 +88,37 @@ This report is Company Confidential.
     <#@ import namespace="System.Collections.Generic" #>  
     ```  
   
-## Преобразование существующего файла в шаблон времени выполнения  
- Удобный способ создания шаблона — преобразование имеющегося примера выходных данных.  Например, если приложение будет генерировать HTML\-файлы, можно начать с создания обычного HTML\-файла.  Убедитесь, что он правильно работает и его представление является верным.  Затем включите его в проект [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и преобразуйте в шаблон.  
+## <a name="converting-an-existing-file-to-a-run-time-template"></a>Converting an Existing File to a Run-Time Template  
+ A good way to create a template is to convert an existing example of the output. For example, if your application will generate HTML files, you can start by creating a plain HTML file. Make sure that it works correctly and that its appearance is correct. Then include it into your [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] project and convert it to a template.  
   
-#### Преобразование существующего текстового файла в шаблон времени выполнения  
+#### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>To convert an existing text file to a run-time template  
   
-1.  Включите файл в проект [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  В обозревателе решений, в контекстном меню проекта выберите  **Добавить**,  **Существующий элемент**.  
+1.  Include the file into your [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] project. In Solution Explorer, on the shortcut menu of the project, choose **Add**, **Existing Item**.  
   
-2.  Свойству **Специальные инструменты** этого файла присвойте значение **TextTemplatingFilePreprocessor**.  В обозревателе решений, в контекстном меню файл, выберите  **Свойства**.  
+2.  Set the file's **Custom Tools** property to **TextTemplatingFilePreprocessor**. In Solution Explorer, on the shortcut menu of the file, choose **Properties**.  
   
     > [!NOTE]
-    >  Если это свойство уже установлено, убедитесь, что оно имеет значение **TextTemplatingFilePreprocessor**, а не **TextTemplatingFileGenerator**.  Так может случиться, если вы включили файл, уже имеющий расширение **.tt**.  
+    >  If the property is already set, make sure that it is **TextTemplatingFilePreprocessor** and not **TextTemplatingFileGenerator**. This can happen if you include a file that already has the extension **.tt**.  
   
-3.  Измените расширение имени файла на **.tt**.  Хотя этот шаг является необязательным, он позволяет избежать открытия файла в неподходящем редакторе.  
+3.  Change the file name extension to **.tt**. Although this step is optional, it helps you avoid opening the file in an incorrect editor.  
   
-4.  Удалите из основной части имени файла все пробелы и знаки препинания.  Например, имя "My Web Page.tt" было бы неверным, а имя "MyWebPage.tt" годится.  Имя файла будет использоваться как имя класса в сгенерированном коде.  
+4.  Remove any spaces or punctuation from the main part of the file name. For example "My Web Page.tt" would be incorrect, but "MyWebPage.tt" is correct. The file name will be used as a class name in the generated code.  
   
-5.  В начало файла вставьте следующую строку:  Если вы работаете в проекте Visual Basic, замените "C\#" на "VB".  
+5.  Insert the following line at the beginning of the file. If you are working in a Visual Basic project, replace "C#" with "VB".  
   
      `<#@ template language="C#" #>`  
   
-## Содержимое шаблона времени выполнения  
+## <a name="the-content-of-the-run-time-template"></a>The Content of the Run-Time Template  
   
-### Директива template  
- Сохраните первую строку шаблона в том виде, в каком она была при создании файла:  
+### <a name="template-directive"></a>Template directive  
+ Keep the first line of the template as it was when you created the file:  
   
  `<#@ template language="C#" #>`  
   
- Параметр language будет зависеть от языка проекта.  
+ The language parameter will depend on the language of your project.  
   
-### Чистое содержимое  
- Отредактируйте файл **.tt**, чтобы он содержал только текст, который должно генерировать приложение.  Примеры.  
+### <a name="plain-content"></a>Plain content  
+ Edit the **.tt** file to contain the text that you want your application to generate. For example:  
   
 ```  
 <html><body>  
@@ -111,10 +128,10 @@ This report is Company Confidential.
 </body></html>  
 ```  
   
-### Внедренный программный код  
- Программный код можно вставлять между тегами `<#` и `#>`.  Примеры.  
+### <a name="embedded-program-code"></a>Embedded program code  
+ You can insert program code between `<#` and `#>`. For example:  
   
-```c#  
+```cs  
 <table>  
     <# for (int i = 1; i <= 10; i++)  
        { #>  
@@ -124,7 +141,7 @@ This report is Company Confidential.
  </table>  
 ```  
   
-```vb#  
+```vb  
 <table>  
 <#  
     For i As Integer = 1 To 10  
@@ -138,54 +155,54 @@ This report is Company Confidential.
   
 ```  
   
- Обратите внимание, что инструкции вставляются между тегами `<# ... #>`, а выражения – между `<#= ... #>`.  Дополнительные сведения см. в разделе [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md).  
+ Notice that statements are inserted between `<# ... #>` and expressions are inserted between `<#= ... #>`. For more information, see [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md).  
   
-## Использование шаблона  
+## <a name="using-the-template"></a>Using the Template  
   
-### Код, формируемый на основе шаблона  
- При сохранении файла **.tt** генерируется дочерний файл **.cs** или **.vb**.  Чтобы просмотреть этот файл в обозревателе решений, разверните узел файла **.tt**.  В проекте Visual Basic возможность развернуть этот узел появится после того, как вы щелкните **Показать все файлы** на панели инструментов обозревателя решений.  
+### <a name="the-code-built-from-the-template"></a>The code built from the template  
+ Whenever you save the **.tt** file, a subsidiary **.cs** or **.vb** file will be generated. To see this file in Solution Explorer, expand the **.tt** file node. In a Visual Basic project, you will be able to expand the node after you click **Show All Files** in the Solution Explorer toolbar.  
   
- Заметьте, что этот дочерний файл содержит разделяемый класс, имеющий метод с именем `TransformText()`.  Этот метод можно вызвать из приложения.  
+ Notice that this subsidiary file contains a partial class that contains a method called `TransformText()`. You can call this method from your application.  
   
-### Генерирование текста во время выполнения  
- В коде приложения можно генерировать содержимое шаблона с использованием таких вызовов:  
+### <a name="generating-text-at-run-time"></a>Generating text at run time  
+ In your application code, you can generate the content of your template using a call like this:  
   
-```c#  
+```cs  
 MyWebPage page = new MyWebPage();  
 String pageContent = page.TransformText();  
 System.IO.File.WriteAllText("outputPage.html", pageContent);  
   
 ```  
   
-```vb#  
+```vb  
 Dim page = New My.Templates.MyWebPage  
 Dim pageContent = page.TransformText()  
 System.IO.File.WriteAllText("outputPage.html", pageContent)  
   
 ```  
   
- Чтобы поместить созданный класс в определенном пространстве имен, задайте значение для свойства **Пространство имен специального инструмента** в файле текстового шаблона.  
+ To place the generated class in a particular namespace, set the **Custom Tool Namespace** property of the text template file.  
   
-### Отладка во время выполнения текстовых шаблонов  
- Отладка и тестирование текстовые шаблоны во время выполнения таким же образом, как обычный код.  
+### <a name="debugging-runtime-text-templates"></a>Debugging Runtime Text Templates  
+ Debug and test runtime text templates in the same way as ordinary code.  
   
- Можно установить точку останова в текст шаблона.  Если запустить приложение в режиме отладки из Visual Studio можно пошаговое выполнение кода и оценки выражений смотреть обычным способом.  
+ You can set a breakpoint in a text template. If you start the application in debugging mode from Visual Studio, you can step through the code and evaluate watch expressions in the usual way.  
   
-### Передача параметров в конструкторе  
- Обычно шаблон должен импортировать некоторые данные из других частей приложения.  Чтобы облегчить эту задачу, генерируемый на основе шаблона код создается в виде разделяемого класса.  Можно создать другую часть этого класса в другом файле проекта.  Этот файл может содержать конструктор с параметрами, свойства и функции, доступные как из внедренного в шаблон кода, так и из остальной части приложения.  
+### <a name="passing-parameters-in-the-constructor"></a>Passing parameters in the constructor  
+ Usually a template must import some data from other parts of the application. To make this easy, the code built by the template is a partial class. You can create another part of the same class in another file in your project. That file can include a constructor with parameters, properties and functions that can accessed both by the code that is embedded in the template, and by the rest of the application.  
   
- Например, можно создать отдельный файл **MyWebPageCode.cs**:  
+ For example, you could create a separate file **MyWebPageCode.cs**:  
   
-```c#  
+```cs  
 partial class MyWebPage  
 {  
     private MyData m_data;  
     public MyWebPage(MyData data) { this.m_data = data; }}  
 ```  
   
- В файле шаблона **MyWebPage.tt** можно написать:  
+ In your template file **MyWebPage.tt**, you could write:  
   
-```c#  
+```cs  
 <h2>Sales figures</h2>  
 <table>  
 <# foreach (MyDataItem item in m_data.Items)   
@@ -198,19 +215,19 @@ partial class MyWebPage
 </table>  
 ```  
   
- Использование этого шаблона в приложении  
+ To use this template in the application:  
   
-```c#  
+```cs  
 MyData data = ...;  
 MyWebPage page = new MyWebPage(data);  
 String pageContent = page.TransformText();  
 System.IO.File.WriteAllText("outputPage.html", pageContent);  
 ```  
   
-#### Параметры конструктора в Visual Basic  
- В [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] отдельный файл **MyWebPageCode.vb** содержит следующее:  
+#### <a name="constructor-parameters-in-visual-basic"></a>Constructor parameters in Visual Basic  
+ In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], the separate file **MyWebPageCode.vb** contains:  
   
-```vb#  
+```vb  
 Namespace My.Templates  
   Partial Public Class MyWebPage  
     Private m_data As MyData  
@@ -221,9 +238,9 @@ Namespace My.Templates
 End Namespace  
 ```  
   
- Файл шаблона может содержать:  
+ The template file could contain:  
   
-```vb#  
+```vb  
 <#@ template language="VB" #>  
 <html><body>  
 <h1>Sales for January</h2>  
@@ -242,9 +259,9 @@ This report is Company Confidential.
   
 ```  
   
- Шаблон в этом случае вызывается передачей параметров в конструктор:  
+ And the template would be invoked by passing the parameter in the constructor:  
   
-```vb#  
+```vb  
 Dim data = New My.Templates.MyData  
     ' Add data values here ....  
 Dim page = New My.Templates.MyWebPage(data)  
@@ -253,55 +270,55 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
   
 ```  
   
-#### Передача данных в свойства шаблона  
- Альтернативным способом передачи данных шаблону является добавление в класс шаблона открытых свойств в частичном определении класса.  Перед вызовом метода `TransformText()` приложение может задать свойства.  
+#### <a name="passing-data-in-template-properties"></a>Passing data in template properties  
+ An alternative method of passing data to the template is to add public properties to the template class in a partial class definition. Your application can set the properties before invoking `TransformText()`.  
   
- Кроме того, в класс шаблонов можно добавить поля в виде частичного определения.  В этом случае можно выполнять передачу данных между последовательными выполнениями шаблона.  
+ You can also add fields to your template class in a partial definition. This would enable you to pass data between successive executions of the template.  
   
-### Использование разделяемого класса для кода  
- Многие разработчики предпочитают не включать в шаблоны крупные фрагменты кода.  Вместо этого определяются методы в разделяемом классе, имя которого совпадает с именем файла шаблона.  Вызовите эти методы из шаблона.  В этом случае в шаблоне лучше видно, как будет выглядеть целевая выходная строка.  Обсуждения внешнего вида результата можно отделить от логики создания данных, которые отображаются в этом результате.  
+### <a name="use-partial-classes-for-code"></a>Use partial classes for code  
+ Many developers prefer to avoid writing large bodies of code in templates. Instead, define methods in a partial class that has the same name as the template file. Call those methods from the template. In this way, the template shows you more clearly what the target output string will look like. Discussions about the appearance of the result can be separated from the logic of creating the data that it displays.  
   
-### Сборки и ссылки  
- Если требуется, чтобы код шаблона ссылался на сборку .NET или другую сборку, такую как **System.Xml.dll**, нужно добавить ее в раздел **Ссылки** проекта обычным образом.  
+### <a name="assemblies-and-references"></a>Assemblies and references  
+ If you want your template code to reference a .NET or other assembly such as **System.Xml.dll**, you should add it to your project's **References** in the usual manner.  
   
- Если требуется импортировать пространство имен таким же образом, как это делается с использованием инструкции `using`, можно воспользоваться директивой `import`:  
+ If you want to import a namespace in the same way as a `using` statement, you can do this with the `import` directive:  
   
 ```  
 <#@ import namespace="System.Xml" #>  
 ```  
   
- Эти директивы должны размещаться в начале файла, сразу за директивой `<#@template`.  
+ These directives must be placed at the beginning of the file, immediately after the `<#@template` directive.  
   
-### Общее содержимое  
- Если имеется текст, который должен использоваться в нескольких шаблонах, можно разместить его в отдельном файле и включать в каждый файл, где он должен присутствовать:  
+### <a name="shared-content"></a>Shared content  
+ If you have text that is shared between several templates, you can place it in a separate file and include it in each file in which it should appear:  
   
 ```  
 <#@include file="CommonHeader.txt" #>  
 ```  
   
- Включаемое содержимое может содержать любое сочетание программного кода и обычного текста, а также другие директивы include и прочие директивы.  
+ The included content can contain any mixture of program code and plain text, and it can contain other include directives and other directives.  
   
- Директива include может использоваться в любой части текста файла шаблона или включаемого файла.  
+ The include directive can be used anywhere within the text of a template file or an included file.  
   
-### Наследование текстовых шаблонов времени выполнения  
- Можно настроить обмен содержимым между шаблонами времени выполнения, создав шаблон базового класса, который может быть абстрактным.  Использование `inherits` параметр `<@#template#>` директивы для ссылки на другой класс шаблона во время выполнения.  
+### <a name="inheritance-between-run-time-text-templates"></a>Inheritance between Run-Time Text Templates  
+ You can share content between run-time templates by writing a base class template, which can be abstract. Use the `inherits` parameter of the `<@#template#>` directive to reference another runtime template class.  
   
-#### Шаблон наследования: фрагменты в базовых методах  
- В шаблоне, использованном в следующем примере, обратите внимание на следующее:  
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Inheritance pattern: Fragments in Base Methods  
+ In the pattern used in the example that follows, notice the following points:  
   
--   Базовый класс `SharedFragments` определяет методы в составе блоков функций класса `<#+ ... #>`.  
+-   The base class `SharedFragments` defines methods within class feature blocks `<#+ ... #>`.  
   
--   Базовый класс не содержит текста в свободной форме.  Все его текстовые блоки размещены внутри методов функций класса.  
+-   The base class contains no free text. Instead, all its text blocks occur inside the class feature methods.  
   
--   Производный класс вызывает методы, определенные в базовом классе `SharedFragments`.  
+-   The derived class invokes the methods defined in `SharedFragments`.  
   
--   Приложение вызывает метод `TextTransform()` производного класса, но не преобразует базовый класс `SharedFragments`.  
+-   The application calls the `TextTransform()` method of the derived class, but does not transform the base class `SharedFragments`.  
   
--   Базовый и производный классы являются текстовые шаблоны во время выполнения:,  **Пользовательский инструмент** свойству  **TextTemplatingFilePreprocessor**.  
+-   Both the base and derived classes are runtime text templates: that is, the **Custom Tool** property is set to **TextTemplatingFilePreprocessor**.  
   
  **SharedFragments.tt:**  
   
-```c#  
+```cs  
 <#@ template language="C#" #>  
 <#+  
 protected void SharedText(int n)  
@@ -317,7 +334,7 @@ protected void SharedText(int n)
   
  **MyTextTemplate1.tt:**  
   
-```c#  
+```cs  
 <#@ template language="C#" inherits="SharedFragments" #>  
 begin 1  
    <# SharedText(2); #>  
@@ -327,14 +344,14 @@ end 1
   
  **MyProgram.cs:**  
   
-```c#  
+```cs  
 ...   
 MyTextTemplate1 t1  = new MyTextTemplate1();  
 string result = t1.TransformText();  
 Console.WriteLine(result);  
 ```  
   
- **Полученные выходные данные:**  
+ **The resulting output:**  
   
 ```  
 begin 1  
@@ -342,12 +359,12 @@ begin 1
 end 1  
 ```  
   
-#### Шаблон наследования: текст в основной части базового шаблона  
- Этот подход является альтернативой использованию наследования шаблонов и предполагает определение массива текста в базовом шаблоне.  Производные шаблон предоставляют фрагменты данных и текста, которые вставляются в базовое содержимое.  
+#### <a name="inheritance-pattern-text-in-base-body"></a>Inheritance Pattern: Text in Base Body  
+ In this alternative approach to using template inheritance, the bulk of the text is defined in the base template. The derived templates provide data and text fragments that fit into the base content.  
   
  **AbstractBaseTemplate1.tt:**  
   
-```c#  
+```cs  
 <#@ template language="C#" #>  
   
 Here is the description for this derived template:  
@@ -371,7 +388,7 @@ End of common template.
   
  **DerivedTemplate1.tt:**  
   
-```c#  
+```cs  
 <#@ template language="C#" inherits="AbstractBaseTemplate1" #>  
 <#   
   // Set the base template properties:  
@@ -396,16 +413,16 @@ protected override void SpecificFragment(int n)
   
 ```  
   
- **Код приложения:**  
+ **Application code:**  
   
-```c#  
+```cs  
 ...   
 DerivedTemplate1 t1 = new DerivedTemplate1();  
 string result = t1.TransformText();  
 Console.WriteLine(result);  
 ```  
   
- **Полученные выходные данные:**  
+ **Resulting output:**  
   
 ```  
 Here is the description for this derived template:  
@@ -417,12 +434,12 @@ End of common template.
 End material for DerivedTemplate1.  
 ```  
   
-## Связанные разделы  
- Шаблоны времени разработки: если требуется использовать шаблон для генерирования кода, который станет частью приложения, см. раздел [Design\-Time Code Generation by using T4 Text Templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md).  
+## <a name="related-topics"></a>Related Topics  
+ Design Time Templates: If you want to use a template to generate code that becomes part of your application, see [Design-Time Code Generation by using T4 Text Templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md).  
   
- Шаблоны во время выполнения можно использовать в любом приложении, где определить шаблоны и их содержимого во время компиляции.  Однако если требуется написать расширение [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], генерирующее текст из шаблонов, изменяющихся во время выполнения, см. раздел [Invoking Text Transformation in a VS Extension](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
+ Runtime templates can be used in any application where the templates and their content are determined at compile time. But if you want to write a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extension that generates text from templates that change at run time, see [Invoking Text Transformation in a VS Extension](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  [Code Generation and T4 Text Templates](../modeling/code-generation-and-t4-text-templates.md)   
  [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md)   
- [Общее представление о T4: Предварительная обработка текстовых шаблонов, г\-н Олег Sych](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)
+ [Understanding T4: Preprocessed Text Templates by Oleg Sych](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)

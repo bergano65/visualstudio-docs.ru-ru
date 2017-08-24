@@ -1,50 +1,67 @@
 ---
-title: "IDebugObject::IsProxy | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugObject::IsProxy"
-  - "Прокси"
+title: IDebugObject::IsProxy | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugObject::IsProxy
+- IsProxy
 ms.assetid: 06c66b87-db95-4400-ab26-5d33e743a439
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugObject::IsProxy
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 65702f87e1d482ab6c1920bb9b75ba9ed97718cf
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Определяет, является ли объект прозрачным прокси.  
+---
+# <a name="idebugobjectisproxy"></a>IDebugObject::IsProxy
+Determines if the object is a transparent proxy.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT IsProxy (  
-   BOOL* pfIsProxy  
+   BOOL* pfIsProxy  
 );  
 ```  
   
-```c#  
+```cs  
 int IsProxy (  
-   out bool pfIsProxy  
+   out bool pfIsProxy  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Parameters  
  `pfIsProxy`  
- \[out\] `TRUE` если объект прозрачным прокси. в противном случае \-  `FALSE`.  
+ [out] `TRUE` if the object is a transparent proxy; otherwise, `FALSE`.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Заметки  
- Этот метод реализуется значение по умолчанию C\+\+ debug обработчик.  
+## <a name="remarks"></a>Remarks  
+ This method is implemented by the default C++ debug engine.  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

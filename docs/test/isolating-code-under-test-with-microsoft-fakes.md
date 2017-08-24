@@ -1,5 +1,5 @@
 ---
-title: "Изоляция тестируемого кода с помощью Microsoft Fakes | Документы Майкрософт"
+title: Isolating Code Under Test with Microsoft Fakes | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -26,82 +26,82 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 3941968fa0e2e6205c94076f555c8366f009d4c0
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 934e3b35f095f949ad11ef73e4365169d1c3e2c3
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/24/2017
 
 ---
-# <a name="isolating-code-under-test-with-microsoft-fakes"></a>Изоляция тестируемого кода с помощью Microsoft Fakes
-Microsoft Fakes помогает изолировать тестируемый код, заменяя другие части приложения *заглушками* или *оболочками*. Это небольшие части кода, которые управляются тестами. Изолируя код для тестирования, при непрохождении теста вы будете знать, что причина лежит именно в этом коде, а не где-либо еще. Заглушки и оболочки также позволяют тестировать код, даже если другие части приложения еще не работают.  
+# <a name="isolating-code-under-test-with-microsoft-fakes"></a>Isolating Code Under Test with Microsoft Fakes
+Microsoft Fakes help you isolate the code you are testing by replacing other parts of the application with *stubs* or *shims*. These are small pieces of code that are under the control of your tests. By isolating your code for testing, you know that if the test fails, the cause is there and not somewhere else. Stubs and shims also let you test your code even if other parts of your application are not working yet.  
   
- Fakes предлагает два варианта на выбор:  
+ Fakes come in two flavors:  
   
--   [Заглушка](#stubs) заменяет класс небольшим заменителем, реализующим тот же интерфейс.  Для использования заглушек необходимо разработать приложение таким образом, чтобы каждый компонент зависел только от интерфейса, а не от других компонентов. (В данном случае "компонент" означает класс или группу классов, которые разрабатываются и обновляются вместе и обычно содержатся в сборке.)  
+-   A [stub](#stubs) replaces a class with a small substitute that implements the same interface.  To use stubs, you have to design your application so that each component depends only on interfaces, and not on other components. (By "component" we mean a class or group of classes that are designed and updated together and typically contained in an assembly.)  
   
--   [Оболочка](#shims) изменяет скомпилированный код приложения во время выполнения, чтобы вместо заданного вызова метода он запускал код-оболочку, предоставляемый тестом. Оболочки можно использовать для замены вызовов сборок, которые невозможно изменить, например сборок .NET.  
+-   A [shim](#shims) modifies the compiled code of your application at run time so that instead of making a specified method call, it runs the shim code that your test provides. Shims can be used to replace calls to assemblies that you cannot modify, such .NET assemblies.  
   
- ![Имитации замещают другие компоненты](../test/media/fakes-2.png "Fakes-2")  
+ ![Fakes replace other components](../test/media/fakes-2.png "Fakes-2")  
   
  **Requirements**  
   
 -   Visual Studio Enterprise  
   
-## <a name="choosing-between-stub-and-shim-types"></a>Выбор между заглушкой и оболочкой  
- Обычно проект Visual Studio считается компонентом, потому что эти классы разрабатываются и обновляются одновременно. Заглушки и оболочки можно использовать для вызовов, осуществляемых проектом в отношении других проектов в решении или других сборок, на которые ссылается проект.  
+## <a name="choosing-between-stub-and-shim-types"></a>Choosing between stub and shim types  
+ Typically, you would consider a Visual Studio project to be a component, because you develop and update those classes at the same time. You would consider using stubs and shims for calls that the project makes to other projects in your solution, or to other assemblies that the project references.  
   
- Как правило, заглушки рекомендуется использовать для вызовов в пределах решения Visual Studio, а оболочки — для вызовов других сборок, на которые указывают ссылки. Это происходит потому, что в собственном решении рекомендуется отделять компоненты, указывая интерфейсы нужным заглушкам способом. Однако внешние сборки, такие как System.dll, обычно не предоставляются с отдельными определениями интерфейса, поэтому вместо них приходится использовать оболочки.  
+ As a general guide, use stubs for calls within your Visual Studio solution, and shims for calls to other referenced assemblies. This is because within your own solution it is good practice to decouple the components by defining interfaces in the way that stubbing requires. But external assemblies such as System.dll typically are not provided with separate interface definitions, so you must use shims instead.  
   
- Вот некоторые другие причины.  
+ Other considerations are:  
   
- **Производительность.** Оболочки выполняются медленнее, потому что они перезаписывают код во время выполнения. Заглушки не приводят к снижению производительности и выполняются так же быстро, как и виртуальные методы.  
+ **Performance.** Shims run slower because they rewrite your code at run time. Stubs do not have this performance overhead and are as fast as virtual methods can go.  
   
- **Статические методы, запечатанные типы.** Заглушки можно использовать только для реализации интерфейсов. Таким образом, типы заглушек невозможно использовать для статических методов, невиртуальных методов, запечатанных виртуальных методов, методов в запечатанных типах и т. д.  
+ **Static methods, sealed types.** You can only use stubs to implement interfaces. Therefore, stub types cannot be used for static methods, non-virtual methods, sealed virtual methods, methods in sealed types, and so on.  
   
- **Внутренние типы.** Как заглушки, так и оболочки можно использовать с внутренними типами, доступ к которым предоставляется посредством атрибута сборки <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>.  
+ **Internal types.** Both stubs and shims can be used with internal types that are made accessible by using the assembly attribute <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>.  
   
- **Закрытые методы.** Оболочки могут заменять вызовы закрытых методов, если все типы в сигнатуре метода являются видимыми. Заглушки могут заменять только видимые методы.  
+ **Private methods.** Shims can replace calls to private methods if all the types on the method signature are visible. Stubs can only replace visible methods.  
   
- **Интерфейсы и абстрактные методы.** Заглушки позволяют реализовывать интерфейсы и абстрактные методы, которые можно использовать при тестировании. Оболочки не могут реализовать интерфейсы и абстрактные методы, поскольку они не имеют тел методов.  
+ **Interfaces and abstract methods.** Stubs provide implementations of interfaces and abstract methods that can be used in testing. Shims can't instrument interfaces and abstract methods, because they don't have method bodies.  
   
- Как правило, типы заглушек рекомендуется использовать для изоляции от зависимостей в базе кода. Для этого можно скрыть компоненты за интерфейсами. Типы оболочек можно использовать для изоляции от сторонних компонентов, которые не предоставляют пригодного для тестирования API.  
+ In general, we recommend that you use stub types to isolate from dependencies within your codebase. You can do this by hiding the components behind interfaces. Shim types can be used to isolate from third-party components that do not provide a testable API.  
   
-##  <a name="stubs"></a> Начало работы с заглушками  
- Дополнительные сведения см. в разделе [Использование заглушек для изоляции частей приложений друг от друга при модульном тестировании](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
+##  <a name="stubs"></a> Getting started with stubs  
+ For a more detailed description, see [Using stubs to isolate parts of your application from each other for unit testing](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
   
-1.  **Вставка интерфейсов**  
+1.  **Inject interfaces**  
   
-     Для использования заглушек необходимо написать код, который требуется протестировать таким образом, чтобы он явно не упоминал классы в другом компоненте приложения. В данном случае "компонент" значит класс или классы, которые разрабатываются и обновляются вместе и обычно содержатся в одном проекте Visual Studio. Переменные и параметры должны быть объявлены с помощью интерфейсов, а экземпляры других компонентов должны быть переданы в фабрику или созданы с ее помощью. Например, если StockFeed — это класс в другом компоненте приложения, то следующий код будет считаться неудачным.  
+     To use stubs, you have to write the code you want to test in such a way that it does not explicitly mention classes in another component of your application. By "component" we mean a class or classes that are developed and updated together, and typically contained in one Visual Studio project. Variables and parameters should be declared by using interfaces and instances of other components should be passed in or created by using a factory. For example, if StockFeed is a class in another component of the application, then this would be considered bad:  
   
      `return (new StockFeed()).GetSharePrice("COOO"); // Bad`  
   
-     Вместо этого определите интерфейс, который может быть реализован другим компонентом или заглушкой в целях тестирования.  
+     Instead, define an interface that can be implemented by the other component, and which can also be implemented by a stub for test purposes:  
   
-    ```c#  
+    ```cs  
     public int GetContosoPrice(IStockFeed feed)  
     { return feed.GetSharePrice("COOO"); }  
   
     ```  
   
-    ```vb#  
+    ```vb  
     Public Function GetContosoPrice(feed As IStockFeed) As Integer  
      Return feed.GetSharePrice("COOO")  
     End Function  
   
     ```  
   
-2.  **Добавление сборки Fakes**  
+2.  **Add Fakes Assembly**  
   
-    1.  В обозревателе решений разверните список ссылок тестового проекта. При использовании Visual Basic нужно щелкнуть **Показать все файлы**, чтобы открыть список ссылок.  
+    1.  In Solution Explorer, expand the test project's reference list. If you are working in Visual Basic, you must choose **Show All Files** in order to see the reference list.  
   
-    2.  Выберите ссылку на сборку, в которой определен интерфейс (например, IStockFeed). В контекстном меню данной ссылки щелкните **Добавить сборку имитаций**.  
+    2.  Select the reference to the assembly in which the interface (for example IStockFeed) is defined. On the shortcut menu of this reference, choose **Add Fakes Assembly**.  
   
-    3.  Выполните повторную сборку решения.  
+    3.  Rebuild the solution.  
   
-3.  В тестах создайте экземпляры заглушки и предоставьте код для ее методов.  
+3.  In your tests, construct instances of the stub and provide code for its methods:  
   
-    ```c#  
+    ```cs  
     [TestClass]  
     class TestStockAnalyzer  
     {  
@@ -132,7 +132,7 @@ Microsoft Fakes помогает изолировать тестируемый �
     }  
     ```  
   
-    ```vb#  
+    ```vb  
     <TestClass()> _  
     Class TestStockAnalyzer  
   
@@ -157,16 +157,16 @@ Microsoft Fakes помогает изолировать тестируемый �
   
     ```  
   
-     Особую роль здесь играет класс `StubIStockFeed`. Для каждого интерфейса в сборке, на которую указывает ссылка, механизм Microsoft Fakes создаст класс заглушки. Имя класса заглушки является производным от имени интерфейса, где `Fakes.Stub` — это префикс, за которым следуют имена типов параметров.  
+     The special piece of magic here is the class `StubIStockFeed`. For every interface in the referenced assembly, the Microsoft Fakes mechanism generates a stub class. The name of the stub class is the derived from the name of the interface, with "`Fakes.Stub`" as a prefix, and the parameter type names appended.  
   
-     Заглушки также создаются для методов получения и задания свойств, для событий и для универсальных методов. Дополнительные сведения см. в разделе [Использование заглушек для изоляции частей приложений друг от друга при модульном тестировании](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
+     Stubs are also generated for the getters and setters of properties, for events, and for generic methods. For more information, see [Using stubs to isolate parts of your application from each other for unit testing](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
   
-##  <a name="shims"></a> Начало работы с оболочками  
- (Дополнительные сведения см. в разделе [Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).)  
+##  <a name="shims"></a> Getting started with shims  
+ (For a more detailed description, see [Using shims to isolate your application from other assemblies for unit testing](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).)  
   
- Предположим, что компонент содержит вызовы `DateTime.Now`.  
+ Suppose your component contains calls to `DateTime.Now`:  
   
-```c#  
+```cs  
 // Code under test:  
     public int GetTheCurrentYear()  
     {  
@@ -175,19 +175,19 @@ Microsoft Fakes помогает изолировать тестируемый �
   
 ```  
   
- Во время тестирования потребовалось заменить свойство `Now` оболочкой, поскольку реальная версия при каждом вызове возвращает разные значения, что создает неудобства.  
+ During testing, you would like to shim the `Now` property, because the real version inconveniently returns a different value at every call.  
   
- Для использования оболочек не следует изменять код приложения или писать его определенным способом.  
+ To use shims, you don't have to modify the application code or write it a particular way.  
   
-1.  **Добавление сборки Fakes**  
+1.  **Add Fakes Assembly**  
   
-     В обозревателе решений откройте ссылки проекта модульного теста и выберите ссылку на сборку, содержащую метод, который требуется имитировать. В этом примере класс `DateTime` находится в файле **System.dll**.  Чтобы просмотреть ссылки в проекте Visual Basic, щелкните **Показать все файлы**.  
+     In Solution Explorer, open your unit test project's references and select the reference to the assembly that contains the method you want to fake. In this example, the `DateTime` class is in **System.dll**.  To see the references in a Visual Basic project, choose **Show All Files**.  
   
-     Выберите **Добавить сборку имитаций**.  
+     Choose **Add Fakes Assembly**.  
   
-2.  **Вставка оболочки в ShimsContext**  
+2.  **Insert a shim in a ShimsContext**  
   
-    ```c#  
+    ```cs  
     [TestClass]  
     public class TestClass1  
     {   
@@ -220,7 +220,7 @@ Microsoft Fakes помогает изолировать тестируемый �
   
     ```  
   
-    ```vb#  
+    ```vb  
     <TestClass()> _  
     Public Class TestClass1  
         <TestMethod()> _  
@@ -246,22 +246,22 @@ Microsoft Fakes помогает изолировать тестируемый �
     End Class  
     ```  
   
-     Имена классов оболочки создаются путем добавления префикса `Fakes.Shim` к имени исходного типа. Имена параметров добавляются к имени метода. (Ссылки на сборки в System.Fakes можно не добавлять.)  
+     Shim class names are made up by prefixing `Fakes.Shim` to the original type name. Parameter names are appended to the method name. (You don't have to add any assembly reference to System.Fakes.)  
   
- В предыдущем примере использовалась оболочка для статического метода. Чтобы использовать оболочку для метода экземпляра, вставьте `AllInstances` между именем типа и именем метода.  
+ The previous example uses a shim for a static method. To use a shim for an instance method, write `AllInstances` between the type name and the method name:  
   
 ```  
 System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...  
 ```  
   
- (Нет сборки System.IO.Fakes для ссылки. Пространство имен создается в процессе создания оболочки. Однако можно использовать using или Import обычным способом.)  
+ (There is no 'System.IO.Fakes' assembly to reference. The namespace is generated by the shim creation process. But you can use 'using' or 'Import' in the usual way.)  
   
- Можно также создать оболочки для отдельных экземпляров, конструкторов и свойств. Дополнительные сведения см. в разделе [Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).  
+ You can also create shims for specific instances, for constructors, and for properties. For more information, see [Using shims to isolate your application from other assemblies for unit testing](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).  
   
-## <a name="in-this-section"></a>В данном разделе  
- [Использование заглушек для изоляции частей приложений друг от друга при модульном тестировании](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)  
+## <a name="in-this-section"></a>In this section  
+ [Using stubs to isolate parts of your application from each other for unit testing](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)  
   
- [Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)  
+ [Using shims to isolate your application from other assemblies for unit testing](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)  
   
- [Формирование и компиляция кода, а также соглашения об именовании в Microsoft Fakes](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)
+ [Code generation, compilation, and naming conventions in Microsoft Fakes](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)
 

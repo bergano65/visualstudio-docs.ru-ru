@@ -1,60 +1,77 @@
 ---
-title: "Walkthrough: Creating a Custom Text Template Host | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "walkthroughs [text templates], custom host"
-  - "text templates, custom host walkthrough"
+title: 'Walkthrough: Creating a Custom Text Template Host | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- walkthroughs [text templates], custom host
+- text templates, custom host walkthrough
 ms.assetid: d00bc366-65ed-4229-885a-196ef9625f05
 caps.latest.revision: 51
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 51
----
-# Walkthrough: Creating a Custom Text Template Host
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: alancameronwills
+ms.author: awills
+manager: douge
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 9999709a1185834224e273682a9eaaf4a789f75f
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-*Основное приложение* преобразования  *текстовых шаблонов* предоставляет среду, необходимую для выполнения *процессора преобразования текстовых шаблонов*.  Основное приложение отвечает за управление взаимодействием этого процессора с файловой системой.  Процессор преобразования текстовых шаблонов или *процессор директив*, которому требуется файл или сборка, могут запросить этот ресурс у основного приложения.  В ответ основное приложение просмотрит каталоги и глобальный кэш сборок в поиске запрошенного ресурса.  Дополнительные сведения см. в разделе [The Text Template Transformation Process](../modeling/the-text-template-transformation-process.md).  
+---
+# <a name="walkthrough-creating-a-custom-text-template-host"></a>Walkthrough: Creating a Custom Text Template Host
+A *text template**host* provides an environment that enables the *text template transformation engine* to run. The host is responsible for managing the engine's interaction with the file system. The engine or *directive processor* that needs a file or an assembly can request a resource from the host. The host can then search directories and the global assembly cache to locate the requested resource. For more information, see [The Text Template Transformation Process](../modeling/the-text-template-transformation-process.md).  
   
- Можно написать пользовательское основное приложение, если требуется использовать функциональные возможности *преобразования текстовых шаблонов* извне [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] или необходимо интегрировать эти функциональные возможности в пользовательские средства.  Для создания пользовательского основного приложения необходимо создать класс, наследующий от <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  Документацию по отдельным методам см. в разделе <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
+ You can write a custom host if you want to use the *text template transformation* functionality from outside [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] or if you want to integrate that functionality into custom tools. To create a custom host, you must create a class that inherits from <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. For the documentation of the individual methods, see <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
   
 > [!WARNING]
->  При создании расширения или пакета [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] можно воспользоваться службой создания текстовых шаблонов, а не создавать собственный узел.  Дополнительные сведения см. в разделе [Invoking Text Transformation in a VS Extension](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
+>  If you are writing a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extension or package, consider using the text templating service instead of creating your own host. For more information, see [Invoking Text Transformation in a VS Extension](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
   
- В данном пошаговом руководстве представлены следующие задачи:  
+ Tasks illustrated in this walkthrough include the following:  
   
--   Создание пользовательского основного приложения для текстовых шаблонов.  
+-   Creating a custom text template host.  
   
--   Тестирование пользовательского основного приложения.  
+-   Testing the custom host.  
   
-## Обязательные компоненты  
- Для выполнения данного пошагового руководства необходимо следующее:  
+## <a name="prerequisites"></a>Prerequisites  
+ To complete this walkthrough, you must have the following:  
   
--   Visual Studio 2010 или более поздней версии  
+-   Visual Studio 2010 or later  
   
--   Пакет Visual Studio SDK  
+-   Visual Studio SDK  
   
-## Создание пользовательского основного приложения для текстовых шаблонов  
- В этом пошаговом руководстве вы создадите пользовательское основное приложение в исполняемом приложении, которое может вызываться из командной строки.  Это приложение принимает файл текстового шаблона как аргумент, считывает шаблон, вызывает процессор для его преобразования и выводит сообщения о произошедших ошибках в окне командной строки.  
+## <a name="creating-a-custom-text-template-host"></a>Creating a Custom Text Template Host  
+ In this walkthrough, you create a custom host in an executable application that can be called from the command line. The application accepts a text template file as an argument, reads the template, calls the engine to transform the template, and displays any errors that occur in the command prompt window.  
   
-#### Создание пользовательского основного приложения  
+#### <a name="to-create-a-custom-host"></a>To create a custom host  
   
-1.  Создайте в Visual Studio консольное приложение Visual Basic или Visual C\# с именем CustomHost.  
+1.  In Visual Studio, create a new Visual Basic or a C# console application named CustomHost.  
   
-2.  Добавьте ссылки на следующие сборки:  
+2.  Add references to the following assemblies:  
   
     -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 или более поздней версии**  
+    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 and later versions**  
   
-3.  В файле Program.cs или Module1.vb замените существующий код следующим кодом:  
+3.  Replace the code in the Program.cs or Module1.vb file with the following code:  
   
-    ```c#  
+    ```cs  
     using System;  
     using System.IO;  
     using System.CodeDom.Compiler;  
@@ -404,7 +421,7 @@ caps.handback.revision: 51
     }  
     ```  
   
-    ```vb#  
+    ```vb  
     Imports System  
     Imports System.IO  
     Imports System.CodeDom.Compiler  
@@ -711,27 +728,27 @@ caps.handback.revision: 51
     End Namespace  
     ```  
   
-4.  Только для [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]: откройте меню **Проект** и выберите команду **Свойства CustomHost**.  В списке **Автоматически запускаемый объект** выберите **CustomHost.Program**.  
+4.  For [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] only, open the **Project** menu, and click **CustomHost Properties**. In the **Startup object** list, click **CustomHost.Program**.  
   
-5.  В меню **Файл** выберите команду **Сохранить все**.  
+5.  On the **File** menu, click **Save All**.  
   
-6.  В меню **Построение** выберите **Построить решение**.  
+6.  On the **Build** menu, click **Build Solution**.  
   
-## Тестирование пользовательского основного приложения  
- Чтобы протестировать пользовательское основное приложение, вы напишете текстовый шаблон, запустите пользовательское основное приложение, передадите ему имя этого шаблона и убедитесь, что шаблон преобразован.  
+## <a name="testing-the-custom-host"></a>Testing the Custom Host  
+ To test the custom host, you write a text template, then you run the custom host, pass it the name of the text template, and verify that the template is transformed.  
   
-#### Создание текстового шаблона для тестирования пользовательского основного приложения  
+#### <a name="to-create-a-text-template-to-test-the-custom-host"></a>To create a text template to test the custom host  
   
-1.  Создайте текстовый файл с именем `TestTemplate.tt`.  
+1.  Create a text file, and name it `TestTemplate.tt`.  
   
-     Для создания этого файла можно использовать любой текстовый редактор \(например, Блокнот\).  
+     You can use any text editor (for example, Notepad) to create the file.  
   
-2.  Добавьте в этот файл следующее:  
+2.  Add the following to the file:  
   
     > [!NOTE]
-    >  Язык программирования текстового шаблона не обязательно должны совпадать с языком программирования пользовательского основного приложения.  
+    >  The programming language of the text template does not have to match that of the custom host.  
   
-    ```c#  
+    ```cs  
     Text Template Host Test  
   
     <#@ template debug="true" #>  
@@ -749,7 +766,7 @@ caps.handback.revision: 51
     #>  
     ```  
   
-    ```vb#  
+    ```vb  
     Text Template Host Test  
   
     <#@ template debug="true" language="VB"#>  
@@ -769,41 +786,41 @@ caps.handback.revision: 51
   
     ```  
   
-3.  Сохраните и закройте файл.  
+3.  Save and close the file.  
   
-#### Тестирование пользовательского основного приложения  
+#### <a name="to-test-the-custom-host"></a>To test the custom host  
   
-1.  Откройте окно командной строки.  
+1.  Open the Command Prompt window.  
   
-2.  Введите путь к исполняемому файлу пользовательского основного приложения, но пока не нажимайте клавишу ВВОД.  
+2.  Type the path of the executable file for the custom host, but do not press ENTER yet.  
   
-     Например, введите:  
+     For example, type:  
   
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  Вместо того чтобы вводить адрес, можно найти файл CustomHost.exe в **Проводнике Windows** и перетащить его в окно командной строки.  
+    >  Instead of typing the address, you can browse to the file CustomHost.exe in **Windows Explorer** and then drag the file into the Command Prompt window.  
   
-3.  Введите пробел.  
+3.  Type a space.  
   
-4.  Введите путь к файлу текстового шаблона и нажмите клавишу ВВОД.  
+4.  Type the path of the text template file, and then press ENTER.  
   
-     Например, введите:  
+     For example, type:  
   
      `C:\<YOUR PATH>TestTemplate.tt`  
   
     > [!NOTE]
-    >  Вместо того чтобы вводить адрес, можно найти файл TestTemplate.tt в **Проводнике Windows** и перетащить его в окно командной строки.  
+    >  Instead of typing the address, you can browse to the file TestTemplate.tt in **Windows Explorer** and then drag the file into the Command Prompt window.  
   
-     Пользовательское основное приложение запустится и выполнит процесс преобразования текстового шаблона.  
+     The custom host application runs and completes the text template transformation process.  
   
-5.  В **проводнике Windows** перейдите в папку, содержащую файл TestTemplate.tt.  
+5.  In **Windows Explorer**, browse to the folder that contains the file TestTemplate.tt.  
   
-     Эта папка содержит также файл TestTemplate1.txt.  
+     That folder also contains the file TestTemplate1.txt.  
   
-6.  Откройте этот файл, чтобы увидеть результаты преобразования текстового шаблона.  
+6.  Open this file to see the results of the text template transformation.  
   
-     Сгенерированный текстовый вывод должен выглядеть так:  
+     The generated text output appears and looks like this:  
   
     ```  
     Text Template Host Test  
@@ -813,8 +830,8 @@ caps.handback.revision: 51
     This is a test  
     ```  
   
-## Следующие действия  
- В этом пошаговом руководстве вы создали основное приложение преобразования текстовых шаблонов, поддерживающее базовые функциональные возможности преобразования.  Можно расширить это основное приложение для поддержки текстовых шаблонов, которые вызывают пользовательские или сгенерированные процессоры директив.  Дополнительные сведения см. в разделе [Пошаговое руководство. Связывание основного приложения с генерируемым обработчиком директив](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).  
+## <a name="next-steps"></a>Next Steps  
+ In this walkthrough, you created a text template transformation host that supports the basic transformation functionality. You can expand your host to support text templates that call custom or generated directive processors. For more information, see [Walkthrough: Connecting a Host to a Generated Directive Processor](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>

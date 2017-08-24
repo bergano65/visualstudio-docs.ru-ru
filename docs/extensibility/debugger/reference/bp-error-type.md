@@ -1,5 +1,5 @@
 ---
-title: "BP_ERROR_TYPE | Документы Microsoft"
+title: BP_ERROR_TYPE | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 07248d28d34373176f9897472c39c0756012da59
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 1afc6abcccaf8226b83858121eac4e98136abdb5
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="bperrortype"></a>BP_ERROR_TYPE
-Указывает тип ошибки точки останова.  
+Specifies the error type of a breakpoint.  
   
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum enum_BP_ERROR_TYPE {   
@@ -58,7 +59,7 @@ enum enum_BP_ERROR_TYPE {
 typedef DWORD BP_ERROR_TYPE;  
 ```  
   
-```c#  
+```cs  
 public enum enum_BP_ERROR_TYPE {   
    BPET_NONE            = 0x00000000,  
    BPET_TYPE_WARNING    = 0x00000001,  
@@ -74,53 +75,53 @@ public enum enum_BP_ERROR_TYPE {
 };  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Members  
  BPET_NONE  
- Указывает ошибки отсутствуют точки останова.  
+ Specifies no breakpoint error.  
   
  BPET_TYPE_WARNING  
- Задает стиль предупреждение точки останова ошибку.  
+ Specifies a warning-style breakpoint error.  
   
  BPET_TYPE_ERROR  
- Указывает ошибку стиля ошибки точки останова.  
+ Specifies an error-style breakpoint error.  
   
  BPET_SEV_HIGH  
- Задает точку останова серьезной ошибки.  
+ Specifies a high-severity breakpoint error.  
   
  BPET_SEV_GENERAL  
- Задает средний уровень опасности останова ошибку.  
+ Specifies a medium-severity breakpoint error.  
   
  BPET_SEV_LOW  
- Задает точку останова Низкая важность ошибку.  
+ Specifies a low-severity breakpoint error.  
   
  BPET_TYPE_MASK  
- Задает стиль маски ошибку точки останова.  
+ Specifies a mask-style breakpoint error.  
   
  BPET_SEV_MASK  
- Задает серьезность маска стиля останова ошибку.  
+ Specifies a severity-mask-style breakpoint error.  
   
  BPET_GENERAL_WARNING  
- Задает точку останова общие предупреждение стиля ошибку.  
+ Specifies a general-warning-style breakpoint error.  
   
  BPET_GENERAL_ERROR  
- Задает точку останова Общие ошибки стиля ошибку.  
+ Specifies a general-error-style breakpoint error.  
   
  BPET_ALL  
- Задает все типы точек останова ошибок.  
+ Specifies all breakpoint error types.  
   
-## <a name="remarks"></a>Примечания  
- Эти значения могут объединяться с помощью побитовой операции `OR` и используется для `dwType` членом [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) структуры. Передается в качестве параметра для [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) метод.  
+## <a name="remarks"></a>Remarks  
+ These values may be combined with a bitwise `OR` and used for the `dwType` member of the [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) structure. Passed as a parameter to the [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) method.  
   
- Тип ошибки точки останова состоит из типа и серьезности. Это означает, что тип ошибки точки останова никогда не только тип (например, `BPET_TYPE_ERROR`,) или уровнем серьезности (например, `BPET_SEV_GENERAL`) сам по себе. `BPET_GENERAL_WARNING`и `BPET_GENERAL_ERROR` предоставляют стандартные значения для общих точек останова предупреждения и ошибки.  
+ A breakpoint error type is composed of a type and a severity. This means that a breakpoint error type is never just a type (for example, `BPET_TYPE_ERROR`,) or a severity (for example, `BPET_SEV_GENERAL`) by itself. `BPET_GENERAL_WARNING` and `BPET_GENERAL_ERROR` provide predefined values for general warning and error breakpoints.  
   
-## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)   
  [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)

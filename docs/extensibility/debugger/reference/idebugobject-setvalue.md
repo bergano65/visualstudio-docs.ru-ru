@@ -1,5 +1,5 @@
 ---
-title: "IDebugObject::SetValue | Документы Microsoft"
+title: IDebugObject::SetValue | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 41d233966012eec9d7be81736b00413f8f1404a7
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 65217acdb68da93ee005c5abcf798abe42dc7efc
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
-Задает значение объекта из последовательности байтов.  
+Sets the value of the object from a consecutive series of bytes.  
   
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT SetValue(   
@@ -48,26 +49,26 @@ HRESULT SetValue(
 );  
 ```  
   
-```c#  
+```cs  
 int SetValue(  
    byte[] pValue,   
    uint   nSize  
 );  
 ```  
   
-#### <a name="parameters"></a>Параметры  
+#### <a name="parameters"></a>Parameters  
  `pValue`  
- [in] Массив байтов, представляющий новое значение.  
+ [in] An array of bytes representing the new value.  
   
  `nSize`  
- [in] Размер значения в байтах.  
+ [in] The size of the value in bytes.  
   
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает значение S_OK; в противном случае возвращается код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## <a name="remarks"></a>Примечания  
- Значения в массиве копируются в это [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объекту, заменяя существующие значения. Размер нового значения может быть больше или меньше существующее значение. Это `IDebugObject` не может быть пустой ссылкой.  
+## <a name="remarks"></a>Remarks  
+ The values in the array are copied into this [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) object, replacing any existing value. The size of the new value can be larger or smaller than the existing value. This `IDebugObject` cannot be a null reference.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>See Also  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

@@ -1,52 +1,68 @@
 ---
-title: "Рефакторинг для извлечения метода (C#) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.csharp.refactoring.extractmethod"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "рефакторинг [C#], извлечение метода"
-  - "Извлечение метода - операция рефакторинга [C#]"
+redirect_url: /visualstudio/csharp-ide/refactoring/extract-method
+title: Extract Method Refactoring (C#) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-csharp
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- refactoring [C#], Extract Method
+- Extract Method refactoring operation [C#]
 ms.assetid: eeba11df-a815-4bec-9c21-8a831891b783
 caps.latest.revision: 29
-caps.handback.revision: 29
-author: "BillWagner"
-ms.author: "wiwagn"
-manager: "wpickett"
----
-# Рефакторинг для извлечения метода (C#)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: BillWagner
+ms.author: wiwagn
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 3d8a2c29b292c1e09b51b2543724eb85e7eda75b
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-**Извлечение метода** — это операция рефакторинга, обеспечивающая простой способ создания нового метода из фрагмента кода существующего члена.  
+---
+# <a name="extract-method-refactoring-c"></a>Extract Method Refactoring (C#)
+**Extract Method** is a refactoring operation that provides an easy way to create a new method from a code fragment in an existing member.  
   
- С помощью операции **Извлечение метода** можно создать новый метод путем извлечения выделенного кода, находящегося внутри блока кода существующего члена.  Новый, извлеченный метод содержит выделенный код, а выделенный код в существующем члене меняется на вызов нового метода.  Превращение фрагмента кода в отдельный метод позволяет быстро и точно реорганизовать код с целью его много кратного использования и лучшей читаемости.  
+ Using **Extract Method**, you can create a new method by extracting a selection of code from inside the code block of an existing member. The new, extracted method contains the selected code, and the selected code in the existing member is replaced with a call to the new method. Turning a fragment of code into its own method lets you quickly and accurately reorganize code for better reuse and readability.  
   
- Операция **Извлечение метода** позволяет получить следующие преимущества:  
+ **Extract Method** has the following benefits:  
   
--   Способствует использованию лучших методов программирования, выделяя отдельные, многократно используемые методы.  
+-   Encourages best coding practices by emphasizing discrete, reusable methods.  
   
--   Способствует получению самодокументирующего кода за счет хорошей организации.  
+-   Encourages self-documenting code through good organization.  
   
-     При использовании описательных имен методы верхнего уровня можно читать как последовательности комментариев.  
+     When descriptive names are used, high-level methods can read more like a series of comments.  
   
--   Способствует созданию сильно детализированных методов для упрощения переопределения.  
+-   Encourages the creation of finer-grained methods to simplify overriding.  
   
--   Сокращает дублирование кода.  
+-   Reduces code duplication.  
   
-### Чтобы воспользоваться операцией "извлечение метода"  
+### <a name="to-use-extract-method"></a>To use Extract Method  
   
-1.  Создайте консольное приложение с именем `ExtractMethod`и затем замените `Program` следующим примером кода.  
+1.  Create a console application named `ExtractMethod`, and then replace `Program` with the following example code.  
   
-    ```c#  
+    ```cs  
     class A  
     {  
         const double PI = 3.141592;  
@@ -68,44 +84,43 @@ manager: "wpickett"
     }  
     ```  
   
-2.  Выберите фрагмент кода, которые нужно извлечь:  
+2.  Select the code fragment you want to extract:  
   
-    ```c#  
+    ```cs  
     double area = PI * radius * radius;  
-  
     ```  
   
-3.  В меню  **Оптимизация** выберите пункт **Извлечение метода**.  
+3.  On the **Refactor** menu, click **Extract Method**.  
   
-     Откроется диалоговое окно **Извлечение метода**.  
+     The **Extract Method** dialog box appears.  
   
-     В качестве альтернативы, диалоговое окно **Извлечение метода** можно открыть нажатием на клавиатуре сочетания клавиш CTRL\+R, M.  
+     Alternatively, you can also type the keyboard shortcut CTRL+R, M to display the **Extract Method** dialog box.  
   
-     Кроме того, можно щелкнуть правой кнопкой мыши выделенный код, навести курсор на пункт меню **Оптимизация** и затем выбрать пункт **Извлечение метода**, после чего откроется диалоговое окно **Извлечение метода**.  
+     You can also right-click the selected code, point to **Refactor**, and then click **Extract Method** to display the **Extract Method** dialog box.  
   
-4.  Укажите имя нового метода, например `CircleArea`, в поле **Имя нового метода**.  
+4.  Specify a name for the new method, such as `CircleArea`, in the **New Method Name** box.  
   
-     Предварительный просмотр сигнатуры нового метода отображается в области **Предварительный просмотр сигнатуры метода**.  
+     A preview of the new method signature displays under **Preview Method Signature**.  
   
-5.  Нажмите кнопку **ОК**.  
+5.  Click **OK**.  
   
-## Заметки  
- При использовании команды **Извлечение метода** новый метод вставляется после исходного члена в тот же класс.  
+## <a name="remarks"></a>Remarks  
+ When you use the **Extract Method** command, the new method is inserted following the source member in the same class.  
   
-## Разделяемые типы  
- Если класс является разделяемым типом, то операция **Извлечение метода** приводит к генерированию нового метода непосредственно после исходного члена.  Операция **Извлечение метода** определяет сигнатуру нового метода, создавая статический метод, если в коде нового метода нет ссылок на данные экземпляра.  
+## <a name="partial-types"></a>Partial Types  
+ If the class is a partial type, then **Extract Method** generates the new method immediately following the source member. **Extract Method** determines the signature of the new method, creating a static method when no instance data is referenced by the code in the new method.  
   
-## Параметры универсального типа  
- При извлечении метода, имеющего неограниченный параметр универсального типа, в сгенерированном коде модификатор `ref` к этому параметру не добавляется, если ему не присваивается значение.  Если извлеченный метод будет поддерживать ссылочные типы в качестве аргумента универсального типа, то необходимо вручную добавить модификатор `ref` к параметру сигнатуры метода.  
+## <a name="generic-type-parameters"></a>Generic Type Parameters  
+ When you extract a method that has an unconstrained generic type parameter, the generated code will not add the `ref` modifier to that parameter unless a value is assigned to it. If the extracted method will support reference types as the generic type argument, then you should manually add the `ref` modifier to the parameter in the method signature.  
   
-## Анонимные методы  
- При попытке извлечь часть анонимного метода, включающего ссылку на локальную переменную, которая объявлена или ссылка на которую существует за пределами анонимного метода, среда разработки Visual Studio выдаст предупреждение о возможных изменениях семантики.  
+## <a name="anonymous-methods"></a>Anonymous Methods  
+ If you try to extract part of an anonymous method that includes a reference to a local variable that is either declared or referenced outside the anonymous method, then Visual Studio will warn you about potential semantic changes.  
   
- Если анонимным методом используется значение локальной переменной, то это значение получается в момент выполнения анонимного метода.  При извлечении анонимного метода в другой метод значение локальной переменной получается в момент вызова извлеченного метода.  
+ When an anonymous method uses the value of a local variable, the value is obtained at the moment the anonymous method is executed. When an anonymous method is extracted into another method, the value of the local variable is obtained at the moment of the call to the extracted method.  
   
- Следующий пример демонстрирует это изменение семантики.  В случае выполнения этого кода на консоль будут выведены символы **11**.  При использовании операции **Извлечение метода** с целью извлечения отмеченного комментариями региона кода в отдельный метод и последующем выполнении полученного в результате оптимизации кода на консоль будут выведены символы **10**.  
+ The following example illustrates this semantic change. If this code is executed, then **11** will be printed to the console. If you use **Extract Method** to extract the region of code that is marked by code comments into its own method and then execute the refactored code, then **10** will be printed to the console.  
   
-```c#  
+```cs  
 class Program  
 {  
     delegate void D();  
@@ -123,7 +138,7 @@ class Program
 }  
 ```  
   
- Чтобы обойти эту ситуацию, сделайте локальные переменные, используемые в анонимном методе, полями класса.  
+ To work around this situation, make the local variables that are used in the anonymous method fields of the class.  
   
-## См. также  
- [Рефакторинг \(C\#\)](../csharp-ide/refactoring-csharp.md)
+## <a name="see-also"></a>See Also  
+ [Refactoring (C#)](refactoring-csharp.md)

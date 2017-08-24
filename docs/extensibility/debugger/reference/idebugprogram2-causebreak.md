@@ -1,48 +1,65 @@
 ---
-title: "IDebugProgram2::CauseBreak | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::CauseBreak"
-helpviewer_keywords: 
-  - "IDebugProgram2::CauseBreak"
+title: IDebugProgram2::CauseBreak | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProgram2::CauseBreak
+helpviewer_keywords:
+- IDebugProgram2::CauseBreak
 ms.assetid: 07d353fc-68ab-4297-a18f-3d3c7a80e121
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugProgram2::CauseBreak
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 32c85b2a83012d867e6b6d5a6336b948589c6c32
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Запросы, что программа останавливает выполнение при следующем запуске одного из своих потоков пытаются выполнить.  
+---
+# <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
+Requests that the program stop execution the next time one of its threads attempts to run.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT CauseBreak(   
-   void   
+HRESULT CauseBreak(   
+   void   
 );  
 ```  
   
-```c#  
+```cs  
 int CauseBreak();  
 ```  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Заметки  
- IDebugBreakEvent2 событие отправляется когда программа далее пытается выполнить код после вызова этого метода.  
+## <a name="remarks"></a>Remarks  
+ An [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) event is sent when the program next attempts to run code after this method is called.  
   
- Этот метод является асинхронным, в котором метод возвращается немедленно, не обязательно ждать программы, чтобы остановить себя.  
+ This method is asynchronous in that the method returns immediately without necessarily waiting for the program to stop.  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)

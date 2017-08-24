@@ -1,104 +1,121 @@
 ---
-title: "EVALFLAGS90 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Перечисление EVALFLAGS90"
+title: EVALFLAGS90 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- EVALFLAGS90 enumeration
 ms.assetid: 64fb0139-8b04-4726-b52c-db2e04d65498
 caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
----
-# EVALFLAGS90
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: fb795ea7e2e5658d0945fce9f2b8674144aa1de2
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Перечисляет допустимые значения для флагов, отслеживающие оценки выражений.  Это перечисление расширяет [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) перечисление.  
+---
+# <a name="evalflags90"></a>EVALFLAGS90
+Enumerates the valid values for flags that control expression evaluation. This enumeration extends the [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumeration.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum enum_EVALFLAGS90  
 {  
-   // VS 8.0 values  
-   EVAL90_RETURNVALUE                 = 0x0002,  
-   EVAL90_NOSIDEEFFECTS               = 0x0004,  
-   EVAL90_ALLOWBPS                    = 0x0008,  
-   EVAL90_ALLOWERRORREPORT            = 0x0010,  
-   EVAL90_FUNCTION_AS_ADDRESS         = 0x0040,  
-   EVAL90_NOFUNCEVAL                  = 0x0080,  
-   EVAL90_NOEVENTS                    = 0x1000,  
-   EVAL90_DESIGN_TIME_EXPR_EVAL       = 0x2000,  
-   EVAL90_ALLOW_IMPLICIT_VARS         = 0x4000,  
+   // VS 8.0 values  
+   EVAL90_RETURNVALUE                 = 0x0002,  
+   EVAL90_NOSIDEEFFECTS               = 0x0004,  
+   EVAL90_ALLOWBPS                    = 0x0008,  
+   EVAL90_ALLOWERRORREPORT            = 0x0010,  
+   EVAL90_FUNCTION_AS_ADDRESS         = 0x0040,  
+   EVAL90_NOFUNCEVAL                  = 0x0080,  
+   EVAL90_NOEVENTS                    = 0x1000,  
+   EVAL90_DESIGN_TIME_EXPR_EVAL       = 0x2000,  
+   EVAL90_ALLOW_IMPLICIT_VARS         = 0x4000,  
   
-   // Values added in VS 9.0  
-   EVAL90_FORCE_EVALUATION_NOW        = 0x8000  
+   // Values added in VS 9.0  
+   EVAL90_FORCE_EVALUATION_NOW        = 0x8000  
 };  
 typedef DWORD EVALFLAGS90;  
 ```  
   
-```c#  
+```cs  
 public enum enum_EVALFLAGS90  
 {  
-   // VS 8.0 values  
-   EVAL90_RETURNVALUE                 = 0x0002,  
-   EVAL90_NOSIDEEFFECTS               = 0x0004,  
-   EVAL90_ALLOWBPS                    = 0x0008,  
-   EVAL90_ALLOWERRORREPORT            = 0x0010,  
-   EVAL90_FUNCTION_AS_ADDRESS         = 0x0040,  
-   EVAL90_NOFUNCEVAL                  = 0x0080,  
-   EVAL90_NOEVENTS                    = 0x1000,  
-   EVAL90_DESIGN_TIME_EXPR_EVAL       = 0x2000,  
-   EVAL90_ALLOW_IMPLICIT_VARS         = 0x4000,  
+   // VS 8.0 values  
+   EVAL90_RETURNVALUE                 = 0x0002,  
+   EVAL90_NOSIDEEFFECTS               = 0x0004,  
+   EVAL90_ALLOWBPS                    = 0x0008,  
+   EVAL90_ALLOWERRORREPORT            = 0x0010,  
+   EVAL90_FUNCTION_AS_ADDRESS         = 0x0040,  
+   EVAL90_NOFUNCEVAL                  = 0x0080,  
+   EVAL90_NOEVENTS                    = 0x1000,  
+   EVAL90_DESIGN_TIME_EXPR_EVAL       = 0x2000,  
+   EVAL90_ALLOW_IMPLICIT_VARS         = 0x4000,  
   
-   // Values added in VS 9.0  
-   EVAL90_FORCE_EVALUATION_NOW        = 0x8000  
+   // Values added in VS 9.0  
+   EVAL90_FORCE_EVALUATION_NOW        = 0x8000  
 };  
 ```  
   
-#### Параметры  
- EVAL90\_RETURNVALUE  
- Указывает, что было вычислено возвращаемое значение, если они есть.  
+#### <a name="parameters"></a>Parameters  
+ EVAL90_RETURNVALUE  
+ Specifies that the return value, if any, be evaluated.  
   
- EVAL90\_NOSIDEEFFECTS  
- Указывает, что побочные эффекты, предоставляемых.  
+ EVAL90_NOSIDEEFFECTS  
+ Specifies that side effects not be allowed.  
   
- EVAL90\_ALLOWBPS  
- Определяет остановки в точках останова.  
+ EVAL90_ALLOWBPS  
+ Specifies stopping on breakpoints.  
   
- EVAL90\_ALLOWERRORREPORT  
- Указывает, что отчеты об ошибках на узле, который требуется разрешить.  В основном используется для оценки выражений в скрипте в Internet Explorer.  
+ EVAL90_ALLOWERRORREPORT  
+ Specifies that error reporting to the host to be allowed. Primarily used for expression evaluation in script in Internet Explorer.  
   
- EVAL90\_FUNCTION\_AS\_ADDRESS  
- Обеспечивает функции должен вычисляться как адреса, вместо вызова функции.  
+ EVAL90_FUNCTION_AS_ADDRESS  
+ Forces functions to be evaluated as addresses, instead of invoking the function.  
   
- EVAL90\_NOFUNCEVAL  
- Предотвращает функцию из быть вычисляемым.  Например, рассмотрим `int` токен в выражении  `myExpression(int) + 10`.  Эта функция может правильно вычислить в качестве адреса, но не в качестве значения.  
+ EVAL90_NOFUNCEVAL  
+ Prevents function from being evaluated. For example, consider the `int` token in the expression `myExpression(int) + 10`. This function can be correctly evaluated as an address, but not as a value.  
   
- EVAL90\_NOEVENTS  
- Пометить для указания того, что события, происходящие во время оценки выражений не должны быть отправлены к сеансу отладки \(SDM\) или диспетчер в интегрированной среде разработки.  
+ EVAL90_NOEVENTS  
+ Flag to indicate that events that occur during the expression evaluation should not be sent to the session debug manager (SDM) or to the IDE.  
   
- EVAL90\_DESIGN\_TIME\_EXPR\_EVAL  
- Включает вычисление выражений в процессе разработки.  
+ EVAL90_DESIGN_TIME_EXPR_EVAL  
+ Enables design-time expression evaluation.  
   
- EVAL90\_ALLOW\_IMPLICIT\_VARS  
- Обеспечивает неявное создание переменной.  
+ EVAL90_ALLOW_IMPLICIT_VARS  
+ Allows implicit variable creation.  
   
- EVAL90\_FORCE\_EVALUATION\_NOW  
- Принудительное вычисление немедленное.  Это полезно обслуживание запроса, например запрос пользователя.  
+ EVAL90_FORCE_EVALUATION_NOW  
+ Forces evaluation to occur immediately. This is useful when servicing a request, such as a user request.  
   
-## Требования  
- Заголовок: Msdbg90.h  
+## <a name="requirements"></a>Requirements  
+ Header: Msdbg90.h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

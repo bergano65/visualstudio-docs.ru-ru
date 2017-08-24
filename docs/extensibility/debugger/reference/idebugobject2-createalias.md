@@ -1,5 +1,5 @@
 ---
-title: "IDebugObject2::CreateAlias | Документы Microsoft"
+title: IDebugObject2::CreateAlias | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f001d55d1cfef8f900e783abba639f11aa7b41e5
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 2ebd7c5b7b7e9c1825bcc8676baebf654f747e2f
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
-Создает уникальный идентификатор или псевдоним для этого объекта или возвращает существующего псевдонима.  
+Creates a unique ID or alias for this object or returns an existing alias.  
   
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT CreateAlias(  
@@ -47,22 +48,22 @@ HRESULT CreateAlias(
 );  
 ```  
   
-```c#  
+```cs  
 int CreateAlias(  
    out IDebugAlias ppAlias  
 );  
 ```  
   
-#### <a name="parameters"></a>Параметры  
+#### <a name="parameters"></a>Parameters  
  `ppAlias`  
- [out] Псевдоним новую (или существующую).  
+ [out] The new (or existing) alias.  
   
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает значение S_OK; в противном случае возвращается код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## <a name="remarks"></a>Примечания  
- Псевдоним является меткой, которая представляет определенный объект, пока объект находится в памяти.  
+## <a name="remarks"></a>Remarks  
+ An alias is a label that represents a particular object while the object is in memory.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>See Also  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)   
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

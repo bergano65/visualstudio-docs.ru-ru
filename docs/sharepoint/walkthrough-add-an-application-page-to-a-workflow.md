@@ -1,82 +1,87 @@
 ---
-title: "Пошаговое руководство. Добавление страницы приложения в рабочий процесс"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "страница приложения [разработка приложений SharePoint в Visual Studio]"
-  - "разработка приложений SharePoint в Visual Studio, добавление страницы приложений в рабочий процесс"
+title: 'Walkthrough: Add an Application Page to a Workflow | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, adding applications page to workflow
+- application page [SharePoint development in Visual Studio]
 ms.assetid: e4845d07-917b-45cb-a569-4ecdd602fbd9
 caps.latest.revision: 28
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 27
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 4ba8eaefb9500c70f60ab9046f6af57fb2f65538
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
+
 ---
-# Пошаговое руководство. Добавление страницы приложения в рабочий процесс
-  В этом пошаговом руководстве показано, как добавить страницу приложения, в которой отображаются данные, извлекаемые в рабочий процесс из проекта рабочего процесса.  В нем используется проект, описанный в разделе [Пошаговое руководство. Создание рабочего процесса с формами связывания и запуска](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
+# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Walkthrough: Add an Application Page to a Workflow
+  This walkthrough demonstrates how to add an application page that displays data derived from a workflow to a workflow project. It builds on the project described in the topic [Walkthrough: Creating a Workflow with Association and Initiation Forms](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
   
- В этом пошаговом руководстве показано выполнение следующих задач.  
+ This walkthrough demonstrates the following tasks:  
   
--   Добавление ASPX\-страницы приложения в проект рабочего процесса SharePoint.  
+-   Adding an ASPX application page to a SharePoint workflow project.  
   
--   Получение и обработка данных из проекта рабочего процесса.  
+-   Obtaining data from the workflow project and manipulating it.  
   
--   Отображение данных в таблице на странице приложения.  
+-   Displaying data in a table on the application page.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
--   Поддерживаемые выпуски [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] и SharePoint.  Для получения дополнительной информации см. [Требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Supported editions of [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] and SharePoint. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Visual Studio.  
   
--   Также необходимо создать проект, описанный в разделе [Пошаговое руководство. Создание рабочего процесса с формами связывания и запуска](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
+-   You also have to complete the project in the topic [Walkthrough: Creating a Workflow with Association and Initiation Forms](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
   
-## Изменение кода рабочего процесса  
- Сначала добавьте в код рабочего процесса строку, задающую в столбце Outcome сумму, указанную в отчете о затратах.  Это значение будет использоваться в дальнейшем для вычисления итоговой суммы по отчету.  
+## <a name="amending-the-workflow-code"></a>Amending the Workflow Code  
+ First, add a line of code to the workflow to set the value of the Outcome column to the amount of the expense report. This value is used later in the expense report summary calculation.  
   
-#### Указание значения в столбце Outcome в рабочем процессе  
+#### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>To set the value of the Outcome column in the workflow  
   
-1.  Загрузите проект, созданный согласно инструкциям в разделе [Пошаговое руководство. Создание рабочего процесса с формами связывания и запуска](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md), в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Load the completed project from the topic [Walkthrough: Creating a Workflow with Association and Initiation Forms](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) into [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Откройте файле с кодом Workflow1.cs или Workflow1.vb \(в зависимости от используемого языка программирования\).  
+2.  Open the code for Workflow1.cs or Workflow1.vb (depending on your programming language).  
   
-3.  В конце метода `createTask1_MethodInvoking` добавьте следующий код.  
+3.  To the bottom of the `createTask1_MethodInvoking` method, add the following code:  
   
     ```vb  
     createTask1_TaskProperties1.ExtendedProperties("Outcome") =   
       workflowProperties.InitiationData  
     ```  
   
-    ```csharp  
+    ```cs  
     createTask1_TaskProperties1.ExtendedProperties["Outcome"] =   
       workflowProperties.InitiationData;  
     ```  
   
-## Создание страницы приложения  
- Теперь добавьте в проект ASPX\-форму.  В ней будут отображаться данные, полученные из проекта рабочего процесса отчета о затратах.  Для этого необходимо добавить страницу приложения.  В странице приложения используется та же главная страница, что и в других страницах SharePoint, а значит она будет похожа на другие страницы сайта SharePoint.  
+## <a name="creating-an-application-page"></a>Creating an Application Page  
+ Next, add an ASPX form to the project. This form will display data obtained from the expense report workflow project. To do this, you will add an application page. An application page uses the same master page as other SharePoint pages, meaning that it will resemble other pages on the SharePoint site.  
   
-#### Добавление страницы приложения в проект  
+#### <a name="to-add-an-application-page-to-the-project"></a>To add an application page to the project  
   
-1.  Выберите проект ExpenseReport, а затем в строке меню выберите **Проект**, **Добавить новый элемент**.  
+1.  Choose the ExpenseReport project, and then, on the menu bar, choose **Project**, **Add New Item**.  
   
-2.  В области **Шаблоны** выберите шаблон **Страница приложения**, используйте имя элемента проекта по умолчанию \(**ApplicaitonPage1.aspx**\), и выберите кнопку **Добавить**.  
+2.  In the **Templates** pane, choose the **Application Page** template, use the default name for the project item (**ApplicaitonPage1.aspx**), and choose the **Add** button.  
   
-3.  В [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] файла ApplicationPage1.aspx замените раздел `PlaceHolderMain` следующим кодом.  
+3.  In the [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] of ApplicationPage1.aspx, replace the `PlaceHolderMain` section with the following:  
   
     ```  
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">  
@@ -88,9 +93,9 @@ caps.handback.revision: 27
     </asp:Content>  
     ```  
   
-     Этот код добавляет на страницу таблицу с заголовком.  
+     This code adds a table to the page together with a title.  
   
-4.  Добавьте заголовок страницы приложения, заменив раздел `PlaceHolderPageTitleInTitleArea` следующим кодом.  
+4.  Add a title to the application page by replacing the `PlaceHolderPageTitleInTitleArea` section with the following:  
   
     ```  
     <asp:Content ID="PageTitleInTitleArea" ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server" >  
@@ -98,14 +103,14 @@ caps.handback.revision: 27
     </asp:Content>  
     ```  
   
-## Программирование страницы приложения  
- Теперь добавьте код на страницу приложения сводки по отчету о затратах.  Код реализует следующее поведение: когда пользователь открывает страницу, в списке задач SharePoint проверяется наличие сумм затрат, превышающих заданный лимит.  В отчете указывается сумма затрат по каждому пункту.  
+## <a name="coding-the-application-page"></a>Coding the Application Page  
+ Next, add code to the expense report summary application page. When you open the page, the code scans the Task list in SharePoint for expenses that exceeded the allocated spending limit. The report lists each item together with the sum of the expenses.  
   
-#### Программирование страницы приложения  
+#### <a name="to-code-the-application-page"></a>To code the application page  
   
-1.  Выберите узел **ApplicationPage1.aspx**, а затем в меню выберите **Вид**, **Код**, чтобы открыть код страницы приложения.  
+1.  Choose the **ApplicationPage1.aspx** node, and then, on the menu bar, choose **View**, **Code** to display the code behind the application page.  
   
-2.  Замените операторы **using** или **Import** \(в зависимости от используемого языка программирования\) в начале кода класса следующими строками:  
+2.  Replace the **using** or **Import** statements (depending on your programming language) at the top of the class with the following:  
   
     ```vb  
     Imports System  
@@ -120,7 +125,7 @@ caps.handback.revision: 27
     Imports Microsoft.SharePoint.Navigation  
     ```  
   
-    ```csharp  
+    ```cs  
     using System;  
     using Microsoft.SharePoint;  
     using Microsoft.SharePoint.WebControls;  
@@ -133,7 +138,7 @@ caps.handback.revision: 27
     using Microsoft.SharePoint.Navigation;  
     ```  
   
-3.  Добавьте следующий код в метод `Page_Load`.  
+3.  Add the following code to the `Page_Load` method:  
   
     ```vb  
     Try  
@@ -205,7 +210,7 @@ caps.handback.revision: 27
     End Try  
     ```  
   
-    ```csharp  
+    ```cs  
     try  
     {  
         // Reference the Tasks list on the SharePoint site.  
@@ -297,62 +302,62 @@ caps.handback.revision: 27
     ```  
   
     > [!WARNING]  
-    >  Обязательно замените «TestServer» в коде на допустимое имя сервера с SharePoint.  
+    >  Be sure to replace "TestServer" in the code with the name of a valid server that's running SharePoint.  
   
-## Тестирование страницы приложения  
- Теперь проверьте, правильно ли отображаются данные о затратах на странице приложения.  
+## <a name="testing-the-application-page"></a>Testing the Application Page  
+ Next, determine whether the application page displays the expense data correctly.  
   
-#### Тестирование страницы приложения  
+#### <a name="to-test-the-application-page"></a>To test the application page  
   
-1.  Нажмите клавишу F5 для запуска проекта и его развертывания в SharePoint.  
+1.  Choose the F5 key to run and deploy the project to SharePoint.  
   
-2.  Нажмите кнопку **Домой**, затем воспользуйтесь ссылкой **Общие документы** на панели быстрого запуска, чтобы открыть список "Общие документы" на сайте SharePoint.  
+2.  Choose the **Home** button, and then choose the **Shared Documents** link on the QuickLaunch bar to display the Shared Documents list on the SharePoint site.  
   
-3.  Чтобы представить отчеты о расходах для этого примера, необходимо загрузить несколько новых документов в список "Документы". Для этого нужно щелкнуть ссылку **Документы** на вкладке **Инструменты библиотеки** в верхней части страницы и нажать кнопку **Отправить документ** на ленте.  
+3.  To represent expense reports for this example, upload some new documents into the Documents list by choosing the **Documents** link on the **LibraryTools** tab at the top of the page and then choosing the **Upload Document** button on the tool ribbon.  
   
-4.  Загрузив несколько документов, создайте экземпляр рабочего процесса, щелкнув ссылку **Библиотека** на вкладке **LibraryTools** в верхней части страницы, а затем нажав кнопку **Параметры библиотеки** на ленте.  
+4.  After you upload some documents, instantiate the workflow by choosing the **Library** link on the **LibraryTools** tab at the top of the page and then choosing the **Library Settings** button on the tool ribbon.  
   
-5.  На странице **Параметры библиотеки документов** выберите ссылку **Параметры рабочих процессов** в разделе **Разрешения и управление**.  
+5.  In the **Document Library Settings** page, choose the **Workflow Settings** link in the **Permissions and Management** section.  
   
-6.  На странице **Параметры рабочих процессов** выберите ссылку **Добавить рабочий процесс**.  
+6.  In the **Workflow Settings** page, choose the **Add a workflow** link.  
   
-7.  На странице **Добавление рабочего процесса** выберите рабочий процесс **ExpenseReport — Workflow1**, введите имя рабочего процесса \(например, ExpenseTest\) и нажмите кнопку **Далее**.  
+7.  In the **Add a Workflow** page, choose the **ExpenseReport - Workflow1** workflow, enter a name for the workflow, such as **ExpenseTest**, and then choose the **Next** button.  
   
-     Откроется форма связывания рабочего процесса.  Укажите в ней лимит суммы затрат.  
+     The workflow Association form appears. Use it to report the expense limit amount.  
   
-8.  В форме ассоциации введите **1000** в поле **Лимит автоматического утверждения**, а затем нажмите кнопку **Сопоставить рабочий процесс**.  
+8.  In the Association form, enter **1000** into the **Auto Approval Limit** box, and then choose the **Associate Workflow** button.  
   
-9. Нажмите кнопку **Домой**, чтобы вернуться на домашнюю страницу SharePoint.  
+9. Choose the **Home** button to return to the SharePoint home page.  
   
-10. На панели быстрого запуска щелкните ссылку **Общие документы**.  
+10. Choose the **Shared Documents** link on the QuickLaunch bar.  
   
-11. Выберите один из отправленных документов и появится раскрывающаяся стрелка, выберите ее, а затем выберите элемент **Рабочие процессы**.  
+11. Choose one of the uploaded documents to display a drop-down arrow, choose it, and then choose the **Workflows** item.  
   
-12. Выберите изображение рядом с рабочим процессом ExpenseTest, чтобы открыть форму запуска рабочего процесса.  
+12. Choose the image next to the ExpenseTest to display the workflow Initiation form.  
   
-13. В текстовом поле **Общая сумма затрат** укажите сумму, превышающую 1000, и нажмите кнопку **Запустить рабочий процесс**.  
+13. In the **Expense Total** text box, enter a value that's greater than 1000, and then choose the **Start Workflow** button.  
   
-     Если сумма затрат в отчете превышает заданный лимит, в список задач добавляется задача.  Кроме того, в отчет о затратах в списке "Общие документы" добавляется столбец с именем **ExpenseTest** и значением **Выполнен**.  
+     When a reported expense exceeds the allocated expense amount, a task is added to the Task List. A column named **ExpenseTest** with the value **Completed** is also added to the expense report item in the Shared Documents list.  
   
-14. Повторите действия 11—13 для других документов в списке "Общие документы". \(Точное количество документов не имеет значения.\)  
+14. Repeat steps 11 - 13 with other documents in the Shared Documents list. (The exact number of documents is not important.)  
   
-15. Откройте страницу приложения сводки по отчету о затратах, указав в адресной строке веб\-браузера следующий URL\-адрес: **http:\/\/***SystemName***\/\_layouts\/ExpenseReport\/ApplicationPage1.aspx**.  
+15. Display the expense report summary application page by opening the following URL in a Web browser: **http://***SystemName***/_layouts/ExpenseReport/ApplicationPage1.aspx**.  
   
-     На странице сводки по отчету о затратах приводятся все отчеты, в которых превышен лимит затрат, указывается сумма превышения для каждого отчета и общая сумма по всем отчетам.  
+     The expense report summary page lists all of the expense reports that exceeded the allocated amount, the amount they exceeded it by, and the total amount for all reports.  
   
-## Следующие действия  
- Дополнительные сведения о страницах приложений SharePoint см. в разделе [Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
+## <a name="next-steps"></a>Next Steps  
+ For more information about SharePoint application pages, see [Creating Application Pages for SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
- Дополнительные сведения о разработке страниц SharePoint с помощью Visual Web Designer в Visual Studio см. в следующих разделах.  
+ You can learn more about how to design SharePoint page content by using the Visual Web Designer in Visual Studio from these topics:  
   
--   [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).  
+-   [Creating Web Parts for SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).  
   
--   [Создание многократно используемых пользовательских элементов управления для веб-частей или страниц приложений](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).  
+-   [Creating Reusable Controls for Web Parts or Application Pages](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).  
   
-## См. также  
- [Пошаговое руководство. Создание рабочего процесса с формами связывания и запуска](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
- [Практическое руководство. Создание страницы приложения](../sharepoint/how-to-create-an-application-page.md)   
- [Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
- [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Walkthrough: Creating a Workflow with Association and Initiation Forms](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
+ [How to: Create an Application Page](../sharepoint/how-to-create-an-application-page.md)   
+ [Creating Application Pages for SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
+ [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
   
   

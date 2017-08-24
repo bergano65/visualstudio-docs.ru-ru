@@ -1,55 +1,72 @@
 ---
-title: "Структуризация в языковую службу для прежних версий | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "структуризация"
-  - "Структурирование языковые службы [платформа управляемых пакетов]"
-  - "структурирование, поддержка в языковые службы [платформа управляемых пакетов]"
+title: Outlining in a Legacy Language Service | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- outlining
+- language services [managed package framework], outlining
+- outlining, supporting in language services [managed package framework]
 ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
----
-# Структуризация в языковую службу для прежних версий
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: e5cf0a9d11720022861231ba434e56050c664c64
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Структурирование позволяет свернуть сложную программу в общие сведения или структуры. Например в C\# все методы можно свернуть, чтобы одна строка, показывающая сигнатуру метода. Кроме того классы и структуры можно свернуть, чтобы отображать только имена структур и классов. В одном методе сложную логику можно свернуть, чтобы показать общий поток, показывая только первая строка инструкции, такие как `foreach`, `if`, и `while`.  
+---
+# <a name="outlining-in-a-legacy-language-service"></a>Outlining in a Legacy Language Service
+Outlining makes it possible to collapse a complex program into an overview or outline. For example, in C# all methods can be collapsed to a single line, showing only the method signature. In addition, structures and classes can be collapsed to show only the names of the structures and classes. Inside a single method, complex logic can be collapsed to show the overall flow by showing only the first line of statements such as `foreach`, `if`, and `while`.  
   
- Устаревший языковые службы реализуются как частью VSPackage, но это использование расширений MEF новый способ реализации возможностей службы языка. Для получения дополнительных см [Пошаговое руководство: структурирование](../../extensibility/walkthrough-outlining.md).  
+ Legacy language services are implemented as part of a VSPackage, but the newer way to implement language service features is to use MEF extensions. To find out more, see [Walkthrough: Outlining](../../extensibility/walkthrough-outlining.md).  
   
 > [!NOTE]
->  Мы рекомендуем начать использовать новый редактор API как можно быстрее. Это улучшает производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.  
+>  We recommend that you begin to use the new editor API as soon as possible. This will improve the performance of your language service and let you take advantage of new editor features.  
   
-## Включение поддержки для структуры  
- `AutoOutlining` Запись реестра имеет значение 1, чтобы включить автоматическое структурирование. Автоматическое структурирование устанавливает анализ всего источника при загрузке или изменен для определения скрытые области и отображать структурирования переноса файла. Структурирование можно также управлять вручную пользователем.  
+## <a name="enabling-support-for-outlining"></a>Enabling Support for Outlining  
+ The `AutoOutlining` registry entry is set to 1 to enable automatic outlining. Automatic outlining sets up a parse of the whole source when a file is loaded or changed in order to identify hidden regions and show the outlining glyphs. Outlining can also be controlled manually by the user.  
   
- Значение `AutoOutlining` реестра можно получить с помощью <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> свойство <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса.`AutoOutlining` Запись реестра можно инициализировать с именованным параметром <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> атрибутов \(см. [Регистрация службы языка](../../extensibility/internals/registering-a-legacy-language-service1.md) Подробные сведения\).  
+ The value of the `AutoOutlining` registry entry can be obtained through the <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> property on the <xref:Microsoft.VisualStudio.Package.LanguagePreferences> class. The `AutoOutlining` registry entry can be initialized with a named parameter to the <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> attribute (see [Registering a Legacy Language Service](../../extensibility/internals/registering-a-legacy-language-service1.md) for details).  
   
-## Скрытые области  
- Для предоставления структурирование, службе язык должен поддерживать скрытые области. Это диапазоны текста, который можно разворачивать и сворачивать. Можно выделять скрытые области, стандартный язык символы, такие как фигурные скобки или пользовательские символы. Например, C\# имеет `#region`и`#endregion` пару, которая разделяет скрытой области.  
+## <a name="the-hidden-region"></a>The Hidden Region  
+ To provide outlining, your language service must support hidden regions. These are spans of text that can be expanded or collapsed. Hidden regions can be delimited by standard language symbols, such as curly braces, or by custom symbols. For example, C# has a `#region`/`#endregion` pair that delimits a hidden region.  
   
- Скрытые области управляются диспетчером скрытые области, который предоставляется как <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> интерфейса.  
+ Hidden regions are managed by a hidden region manager, which is exposed as the <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> interface.  
   
- Структурирование использует скрытые области <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegion> интерфейс и содержит диапазон скрытой области, отображается текущее состояние и заголовок будет отображаться, когда диапазон свернута.  
+ Outlining uses hidden regions the <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegion> interface and contain the span of the hidden region, the current visible state, and the banner to be shown when the span is collapsed.  
   
- Средство синтаксического анализа языковой службы использует <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> метод для добавления новой скрытые области с поведением по умолчанию для скрытые области при <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> метод позволяет настроить внешний вид и поведение контура. После скрытой области сеанса, получают скрытые области [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] управляет скрытые области для языковой службы.  
+ The language service parser uses the <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> method to add a new hidden region with the default behavior for hidden regions, while the <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> method allows you to customize the appearance and behavior of the outline. Once hidden regions are given to the hidden region session, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] manages the hidden regions for the language service.  
   
- Если вам нужно определить, когда уничтожается, скрытой области сеанса, скрытой области изменяется, или необходимо убедиться, что скрытые определенного региона является видимым. необходимо создать производный класс от <xref:Microsoft.VisualStudio.Package.Source> класса и переопределить соответствующие методы <xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A>, <xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A>, и <xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A>, соответственно.  
+ If you need to determine when the hidden region session is destroyed, a hidden region is changed, or you need to make sure a particular hidden region is visible; you must derive a class from the <xref:Microsoft.VisualStudio.Package.Source> class and override the appropriate methods, <xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A>, <xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A>, and <xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A>, respectively.  
   
-### Пример  
- Ниже приведен упрощенный пример создания скрытые области для всех пар фигурные скобки. Предполагается, что язык предоставляет парные фигурные скобки и фигурные скобки для сопоставления по крайней мере включить фигурные скобки \({и}\). Этот подход является только для иллюстративных целей. Полная реализация будет иметь полный Обработка обращений в <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>. В этом примере также показано, как задать <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> предпочтение `true` временно. Альтернативным вариантом является указание `AutoOutlining` именем параметра в `ProvideLanguageServiceAttribute` атрибут в языковой пакет.  
+### <a name="example"></a>Example  
+ Here is a simplified example of creating hidden regions for all pairs of curly braces. It is assumed that the language provides brace matching, and that the braces to be matched include at least the curly braces ({ and }). This approach is for illustrative purposes only. A full implementation would have a complete handling of cases in <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>. This example also shows how to set the <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> preference to `true` temporarily. An alternative is to specify the `AutoOutlining` named parameter in the `ProvideLanguageServiceAttribute` attribute in your language package.  
   
- В этом примере предполагается, что правила C\# для комментариев, строк и литералы.  
+ This example assumes C# rules for comments, strings, and literals.  
   
-```c#  
+```cs  
 using Microsoft.VisualStudio.Package;  
 using Microsoft.VisualStudio.TextManager.Interop;  
   
@@ -118,6 +135,6 @@ namespace MyLanguagePackage
 }  
 ```  
   
-## См. также  
- [Компоненты прежних версий языка службы](../../extensibility/internals/legacy-language-service-features1.md)   
- [Регистрация службы языка](../../extensibility/internals/registering-a-legacy-language-service1.md)
+## <a name="see-also"></a>See Also  
+ [Legacy Language Service Features](../../extensibility/internals/legacy-language-service-features1.md)   
+ [Registering a Legacy Language Service](../../extensibility/internals/registering-a-legacy-language-service1.md)

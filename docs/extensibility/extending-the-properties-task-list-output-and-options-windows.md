@@ -1,5 +1,5 @@
 ---
-title: "Расширение свойств, список задач, выходные данные и параметры Windows | Документы Microsoft"
+title: Extending the Properties, Task List, Output, and Options Windows | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -33,40 +33,41 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 75937e3f2cf1d3fa9c5c78de8b7df5f8869ef49e
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 0f3c29f4aba14f6b17759758cf7ab9f364f2b07b
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
 ---
-# <a name="extending-the-properties-task-list-output-and-options-windows"></a>Расширение свойств, список задач, выходные данные и параметры Windows
-Можно получить доступ к любого окна инструментов в Visual Studio. В этом пошаговом руководстве показано, как интегрировать сведения о окно средства в новый **параметры** страницы и новый параметр на **свойства** страницы, а также способ записи **список задач** и **вывода** windows.  
+# <a name="extending-the-properties-task-list-output-and-options-windows"></a>Extending the Properties, Task List, Output, and Options Windows
+You can access any tool window in Visual Studio. This walkthrough shows how to integrate information about your tool window into a new **Options** page and a new setting on the **Properties** page, and also how to write to the **Task List** and **Output** windows.  
   
-## <a name="prerequisites"></a>Предварительные требования  
- Начиная с Visual Studio 2015, не установить пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в установку Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Prerequisites  
+ Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="create-an-extension-with-a-tool-window"></a>Создайте расширение с окном инструментов  
+## <a name="create-an-extension-with-a-tool-window"></a>Create an Extension with a Tool Window  
   
-1.  Создайте проект с именем **TodoList** с помощью шаблона VSIX и добавление шаблона элемента окна пользовательского инструмента с именем **TodoWindow**.  
-  
-    > [!NOTE]
-    >  Дополнительные сведения о создании модуля с окном инструмента см. в разделе [создания расширения с окном инструмента](../extensibility/creating-an-extension-with-a-tool-window.md).  
-  
-## <a name="set-up-the-tool-window"></a>Настройка окна средства  
- Текстовое поле для ввода нового элемента списка дел, кнопку, чтобы добавить новый элемент в список и элемент ListBox для отображения элементов в списке.  
-  
-1.  В TodoWindow.xaml удалите элементы управления Button, TextBox и StackPanel из пользовательского элемента управления.  
+1.  Create a project named **TodoList** using the VSIX template, and add a custom tool window item template named **TodoWindow**.  
   
     > [!NOTE]
-    >  Это действие не удаляет **button1_Click** обработчик событий, который будет использовать в дальнейшем.  
+    >  For more information about creating an extension with a tool window, see [Creating an Extension with a Tool Window](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-2.  От **все элементы управления WPF** раздел **элементов**, перетащите **холст** управления в сетку.  
+## <a name="set-up-the-tool-window"></a>Set Up the Tool Window  
+ Add a TextBox in which to type a new ToDo item, a Button to add the new item to the list, and a ListBox to display the items on the list.  
   
-3.  Перетащите **TextBox**, **кнопку**и **ListBox** на холст. Упорядочивание элементов так, чтобы текстовое поле и кнопку на том же уровне и ListBox заполняет остальную часть окна под ними, как показано на рисунке ниже.  
+1.  In TodoWindow.xaml, delete the Button, TextBox, and StackPanel controls from the UserControl.  
   
-     ![Окно инструментов завершения](~/extensibility/media/t5-toolwindow.png "окно инструментов T5")  
+    > [!NOTE]
+    >  This does not delete the **button1_Click** event handler, which you will reuse in a later step.  
   
-4.  На панели XAML найдите кнопку и установите его свойство содержимого **добавить**. Подключите обработчик событий кнопки в элемент управления Button, добавив `Click="button1_Click"` атрибута. Холст Блок должен выглядеть следующим образом:  
+2.  From the **All WPF Controls** section of the **Toolbox**, drag a **Canvas** control to the grid.  
+  
+3.  Drag a **TextBox**, a **Button**, and a **ListBox** to the Canvas. Arrange the elements so that the TextBox and the Button are on the same level, and the ListBox fills the rest of the window below them, as in the picture below.  
+  
+     ![Finished Tool Window](../extensibility/media/t5-toolwindow.png "T5-ToolWindow")  
+  
+4.  In the XAML pane, find the Button and set its Content property to **Add**. Reconnect the button event handler to the Button control by adding a `Click="button1_Click"` attribute. The Canvas block should look like this:  
   
     ```xml  
     <Canvas HorizontalAlignment="Left" Width="306">  
@@ -76,17 +77,17 @@ ms.lasthandoff: 02/22/2017
     </Canvas>  
     ```  
   
-#### <a name="customize-the-constructor"></a>Настройка конструктора  
+#### <a name="customize-the-constructor"></a>Customize the constructor  
   
-1.  В файле TodoWindowControl.xaml.cs добавьте следующий оператор using:  
+1.  In the TodoWindowControl.xaml.cs file, add the following using statement:  
   
-    ```c#  
+    ```cs  
     using System;  
     ```  
   
-2.  Добавьте открытые ссылку на TodoWindow и TodoWindowControl конструктор принимает параметр TodoWindow. Код должен выглядеть следующим образом:  
+2.  Add a public reference to the TodoWindow and have the TodoWindowControl constructor take a TodoWindow parameter. The code should look like this:  
   
-    ```c#  
+    ```cs  
     public TodoWindow parent;  
   
     public TodoWindowControl(TodoWindow window)  
@@ -96,9 +97,9 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-3.  В TodoWindow.cs измените конструктор TodoWindowControl необходимо добавить параметр TodoWindow. Код должен выглядеть следующим образом:  
+3.  In TodoWindow.cs, change TodoWindowControl constructor to include the TodoWindow parameter. The code should look like this:  
   
-    ```c#  
+    ```cs  
     public TodoWindow() : base(null)  
     {  
         this.Caption = "TodoWindow";  
@@ -109,26 +110,26 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-## <a name="create-an-options-page"></a>Создание страницы параметров  
- Можно указать страницу в **параметры** диалоговое окно, чтобы пользователи могут изменять параметры для окна средства. Создание страницы параметров требует как класс, описывающий параметры и запись в файле TodoListPackage.cs или TodoListPackage.vb.  
+## <a name="create-an-options-page"></a>Create an Options Page  
+ You can provide a page in the **Options** dialog box so that users can change settings for the tool window. Creating an Options page requires both a class that describes the options and an entry in the TodoListPackage.cs or TodoListPackage.vb file.  
   
-1.  Добавьте класс с именем `ToolsOptions.cs`. Сделайте класс ToolsOptions наследовать <xref:Microsoft.VisualStudio.Shell.DialogPage>.</xref:Microsoft.VisualStudio.Shell.DialogPage>  
+1.  Add a class named `ToolsOptions.cs`. Make the ToolsOptions class inherit from <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
   
-    ```c#  
+    ```cs  
     class ToolsOptions : DialogPage  
     {  
     }  
     ```  
   
-2.  Добавьте следующий оператор using:  
+2.  Add the following using statement:  
   
-    ```c#  
+    ```cs  
     using Microsoft.VisualStudio.Shell;  
     ```  
   
-3.  Страницы параметров в этом пошаговом руководстве предоставляет только один параметр с именем DaysAhead. Добавьте закрытое поле с именем **daysAhead** , а свойство **DaysAhead** ToolsOptions класс:  
+3.  The Options page in this walkthrough provides only one option named DaysAhead. Add a private field named **daysAhead** and a property named **DaysAhead** to the ToolsOptions class:  
   
-    ```c#  
+    ```cs  
     private double daysAhead;  
   
     public double DaysAhead  
@@ -138,54 +139,54 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
- Теперь проект следует помнить о странице "Параметры".  
+ Now you must make the project aware of this Options page.  
   
-#### <a name="make-the-options-page-available-to-users"></a>Предоставьте пользователям страницы параметров  
+#### <a name="make-the-options-page-available-to-users"></a>Make the Options page available to users  
   
-1.  Добавьте в TodoWindowPackage.cs, <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>в класс TodoWindowPackage:</xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>  
+1.  In TodoWindowPackage.cs, add a <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> to the TodoWindowPackage class:  
   
-    ```c#  
+    ```cs  
     [ProvideOptionPage(typeof(ToolsOptions), "ToDo", "General", 101, 106, true)]  
     ```  
   
-2.  Первым параметром конструктора ProvideOptionPage является типом класса ToolsOptions, который был создан ранее. Второй параметр «ToDo» — имя категории, в **параметры** диалоговое окно. Третий параметр «Общие», — это имя подкатегории **параметры** диалоговое, где будут доступны страницы параметров. Следующие два параметра, идентификаторы ресурсов для строк; Первый — имя категории, а второй — имя подкатегории. Последний параметр определяет, может ли доступ к этой странице с помощью автоматизации.  
+2.  The first parameter to the ProvideOptionPage constructor is the type of the class ToolsOptions, which you created earlier. The second parameter, "ToDo", is the name of the category in the **Options** dialog box. The third parameter, "General", is the name of the subcategory of the **Options** dialog box where the Options page will be available. The next two parameters are resource IDs for strings; the first is the name of the category, and the second is the name of the subcategory. The final parameter determines whether this page can be accessed by using automation.  
   
-     Когда пользователь открывает страницу параметров, она должна иметь вид следующий рисунок.  
+     When a user opens your Options page, it should resemble the following picture.  
   
-     ![Страница параметров](~/extensibility/media/t5optionspage.gif "T5OptionsPage")  
+     ![Options Page](../extensibility/media/t5optionspage.gif "T5OptionsPage")  
   
-     Обратите внимание, категории **ToDo** и подкатегории **Общие**.  
+     Notice the category **ToDo** and the subcategory **General**.  
   
-## <a name="make-data-available-to-the-properties-window"></a>Сделать данные доступными в окне «Свойства»  
- Чтобы сделать информацию списка можно сделать доступными, создав класс с именем TodoItem, в которой хранятся сведения об отдельных элементов в списке дел.  
+## <a name="make-data-available-to-the-properties-window"></a>Make Data Available to the Properties Window  
+ You can make To Do list information available by creating a class named TodoItem that stores information about the individual items in the ToDo list.  
   
-1.  Добавьте класс с именем `TodoItem.cs`.  
+1.  Add a class named `TodoItem.cs`.  
   
-     Когда окно инструментов доступна пользователям, позиции в списке представлены TodoItems. Когда пользователь выбирает один из этих элементов в списке ListBox **свойства** окно сведений об элементе.  
+     When the tool window is available to users, the items in the ListBox will be represented by TodoItems. When the user selects one of these items in the ListBox, the **Properties** window will display information about the item.  
   
-     Чтобы сделать данные доступными в **свойства** окне данных превратить в открытых свойств, которые имеют две специальные атрибуты, `Description` и `Category`. `Description`Представляет текст, отображаемый в нижней части **свойства** окна. `Category`Определяет, где свойство должно выглядеть при **свойства** окно, отображаемое в **по категориям** представления. На следующем рисунке **свойства** окно находится в **по категориям** представление, **имя** свойство в **поля ToDo** выбранной категорией и описание **имя** свойства отображается в нижней части окна.  
+     To make data available in the **Properties** window, you turn the data into public properties that have two special attributes, `Description` and `Category`. `Description` is the text that appears at the bottom of the **Properties** window. `Category` determines where the property should appear when the **Properties** window is displayed in the **Categorized** view. In the following picture, the **Properties** window is in **Categorized** view, the **Name** property in the **ToDo Fields** category is selected, and the description of the **Name** property is displayed at the bottom of the window.  
   
-     ![Окно «Свойства»](~/extensibility/media/t5properties.png "T5Properties")  
+     ![Properties Window](../extensibility/media/t5properties.png "T5Properties")  
   
-2.  Добавьте следующие операторы using в файл TodoItem.cs.  
+2.  Add the following using statements the TodoItem.cs file.  
   
-    ```c#  
+    ```cs  
     using System.ComponentModel;  
     using System.Windows.Forms;  
     using Microsoft.VisualStudio.Shell.Interop;  
     ```  
   
-3.  Добавление `public` модификатор доступа к объявлению класса.  
+3.  Add the `public` access modifier to the class declaration.  
   
-    ```c#  
+    ```cs  
     public class TodoItem  
     {  
     }  
     ```  
   
-     Добавьте два свойства, имя и DueDate. Мы сделаем это UpdateList() и CheckForErrors() позже.  
+     Add the two properties, Name and DueDate. We'll do the UpdateList() and CheckForErrors() later.  
   
-    ```c#  
+    ```cs  
     public class TodoItem  
     {  
         private TodoWindowControl parent;  
@@ -218,9 +219,9 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-4.  Добавьте закрытый ссылку на пользовательский элемент управления. Добавьте конструктор, который принимает пользовательского элемента управления и имя для этого элемента списка дел. Чтобы найти значение daysAhead, он возвращает свойства параметров страницы.  
+4.  Add a private reference to the user control. Add a constructor that takes the user control and the name for this ToDo item. To find the value for daysAhead, it gets the Options page property.  
   
-    ```c#  
+    ```cs  
     private TodoWindowControl parent;  
   
     public TodoItem(TodoWindowControl control, string itemName)  
@@ -247,18 +248,18 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-5.  Поскольку экземпляры `TodoItem` класса будут храниться в списке ListBox, ListBox будет вызывать `ToString` функция, то необходимо перегрузить `ToString` функции. Добавьте следующий код в файл TodoItem.cs, после конструктора и до конца класса.  
+5.  Because instances of the `TodoItem` class will be stored in the ListBox and the ListBox will call the `ToString` function, you must overload the `ToString` function. Add the following code to TodoItem.cs, after the constructor and before the end of the class.  
   
-    ```c#  
+    ```cs  
     public override string ToString()  
     {  
         return name + " Due: " + dueDate.ToShortDateString();  
     }  
     ```  
   
-6.  В TodoWindowControl.xaml.cs, добавьте методы-заглушки для класса TodoWindowControl `CheckForError` и `UpdateList` методы. Поместите их после ProcessDialogChar и до конца файла.  
+6.  In TodoWindowControl.xaml.cs, add stub methods to the TodoWindowControl class for the `CheckForError` and `UpdateList` methods. Put them after the ProcessDialogChar and before the end of the file.  
   
-    ```c#  
+    ```cs  
     public void CheckForErrors()  
     {  
     }  
@@ -267,16 +268,16 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-     `CheckForError` Метод будет вызывать метод с тем же именем в родительском объекте, и этот метод будет проверять ли все ошибки, произошедшие и правильной обработки. `UpdateList` Метода происходит обновление в родительском элементе управления ListBox, при вызове метода `Name` и `DueDate` свойства в класс изменения. Они будут реализованы позднее.  
+     The `CheckForError` method will call a method that has the same name in the parent object, and that method will check whether any errors have occurred and handle them correctly. The `UpdateList` method will update the ListBox in the parent control; the method is called when the `Name` and `DueDate` properties in this class change. They will be implemented later.  
   
-## <a name="integrate-into-the-properties-window"></a>Интеграция в окне «Свойства»  
- Теперь напишите код, который управляет ListBox, который будет привязан к **свойства** окна.  
+## <a name="integrate-into-the-properties-window"></a>Integrate into the Properties Window  
+ Now write the code that manages the ListBox, which will be tied to the **Properties** window.  
   
- Необходимо изменить кнопки щелкните обработчик для чтения текстовом поле, создания TodoItem и добавляет его в список ListBox.  
+ You must change the button click handler to read the TextBox, create a TodoItem, and adds it to the ListBox.  
   
-1.  Замените существующий `button1_Click` функция с кодом, который создает новый элемент TodoItem и добавляет его в список ListBox. Он вызывает TrackSelection(), которые будут определены позже.  
+1.  Replace the existing `button1_Click` function with code that creates a new TodoItem and adds it to the ListBox. It calls TrackSelection(), which will be defined later.  
   
-    ```c#  
+    ```cs  
     private void button1_Click(object sender, RoutedEventArgs e)  
     {  
         if (textBox.Text.Length > 0)  
@@ -289,9 +290,9 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-2.  В режиме конструктора выберите элемент управления ListBox. В **свойства** окну, нажмите кнопку **обработчики событий** кнопку и найдите событие SelectionChanged. Введите в текстовое поле с **listBox_SelectionChanged**. Таким образом в код добавляется заглушка для обработчика SelectionChanged и присваивает его к событию.  
+2.  In the Design view select the ListBox control. In the **Properties** window click the **Event handlers** button and find the SelectionChanged event. Fill in the text box with **listBox_SelectionChanged**. Doing this adds a stub for a SelectionChanged handler and assigns it to the event.  
   
-3.  Реализуйте метод TrackSelection(). Поскольку необходимо будет получить <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>служб, необходимо сделать <xref:Microsoft.VisualStudio.Shell.WindowPane.GetService%2A>доступен TodoWindowControl.</xref:Microsoft.VisualStudio.Shell.WindowPane.GetService%2A> </xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection></xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> Добавьте следующий метод в класс TodoWindow:  
+3.  Implement the TrackSelection() method. Since you will need to get the <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell><xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> services, you need make the <xref:Microsoft.VisualStudio.Shell.WindowPane.GetService%2A> accessible by the TodoWindowControl. Add the following method to the TodoWindow class:  
   
     ```  
     internal object GetVsService(Type service)  
@@ -300,16 +301,16 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-4.  Добавьте следующие операторы using в TodoWindowControl.xaml.cs:  
+4.  Add the following using statements to TodoWindowControl.xaml.cs:  
   
-    ```c#  
+    ```cs  
     using System.Runtime.InteropServices;  
     using Microsoft.VisualStudio.Shell.Interop;  
     using Microsoft.VisualStudio;  
     using Microsoft.VisualStudio.Shell;  
     ```  
   
-5.  Заполните обработчик SelectionChanged следующим образом:  
+5.  Fill in the SelectionChanged handler as follows:  
   
     ```  
     private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)  
@@ -318,9 +319,9 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-6.  Теперь заполните функцию TrackSelection, которая обеспечивает интеграцию с **свойства** окна. Эта функция вызывается, когда пользователь добавляет элемент к списку ListBox или щелкает элемент в ListBox. Он добавляет содержимое ListBox SelectionContainer и передает SelectionContainer для **свойства** окна <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>обработчик события.</xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> Служба TrackSelection выбранных объектов в пользовательском интерфейсе (UI) отслеживает и отображает их свойства  
+6.  Now, fill in the TrackSelection function, which will provide integration with the **Properties** window. This function is called when the user adds an item to the ListBox or clicks an item in the ListBox. It adds the contents of the ListBox to a SelectionContainer and passes the SelectionContainer to the **Properties** window's <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> event handler. The TrackSelection service tracks selected objects in the user interface (UI) and displays their properties  
   
-    ```c#  
+    ```cs  
     private SelectionContainer mySelContainer;  
     private System.Collections.ArrayList mySelItems;  
     private IVsWindowFrame frame = null;  
@@ -366,11 +367,11 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-     Теперь, когда класс, **свойства** можно использовать окно, вы можете интегрировать **свойства** окно с окном инструментов. Когда пользователь щелкает элемент в ListBox в окне средства **свойства** окна должны обновляться соответствующим образом. Аналогично, когда пользователь изменяет элемента списка дел в **свойства** окно, следует обновить соответствующий элемент.  
+     Now that you have a class that the **Properties** window can use, you can integrate the **Properties** window with the tool window. When the user clicks an item in the ListBox in the tool window, the **Properties** window should be updated accordingly. Similarly, when the user changes a ToDo item in the **Properties** window, the associated item should be updated.  
   
-7.  Теперь добавьте остальная часть кода функции на обновление списка в TodoWindowControl.xaml.cs. Он должен удаление и повторное добавление измененные TodoItem из списка.  
+7.  Now, add the rest of the UpdateList function code in TodoWindowControl.xaml.cs. It should drop and re-add the modified TodoItem from the ListBox.  
   
-    ```c#  
+    ```cs  
     public void UpdateList(TodoItem item)  
     {  
         var index = listBox.SelectedIndex;  
@@ -380,22 +381,22 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-8.  Тестирование кода. Выполните сборку решения и запустите отладку. Экспериментальный экземпляр должен отображаться.  
+8.  Test your code. Build the project and start debugging. The experimental instance should appear.  
   
-9. Откройте **инструменты и параметры** страниц. Вы должны увидеть категории задач на левой панели. Категории перечислены в алфавитном порядке, поэтому найдите служб терминалов.  
+9. Open the **Tools / Options** pages. You should see the ToDo category in the left pane. Categories are listed in alphabetical, so look under the Ts.  
   
-10. На странице параметров списка задач, вы увидите DaysAhead набора свойств, к **0**. Измените его на **2**.  
+10. On the Todo options page, you should see the DaysAhead property set to **0**. Change it to **2**.  
   
-11. Для представления и другие окна откройте в меню **TodoWindow**. Тип **EndDate** в текстовом поле и нажмите кнопку **добавить**.  
+11. On the View / Other Windows menu, open **TodoWindow**. Type **EndDate** in the text box and click **Add**.  
   
-12. В списке вы увидите два дня позже, чем текущая дата.  
+12. In the list box you should see a date two days later than today.  
   
-## <a name="add-text-to-the-output-window-and-items-to-the-task-list"></a>Добавление текста в окне вывода и элементы в список задач  
- Для **список задач**, можно создать новый объект типа "Задача", а затем добавьте этот объект задачи для **список задач** путем вызова его метода Add. Для записи **вывода** окна, вызвать его getpane-метод для получения объекта области и затем вызвать метод OutputString объекта области.  
+## <a name="add-text-to-the-output-window-and-items-to-the-task-list"></a>Add Text to the Output Window and Items to the Task List  
+ For the **Task List**, you create a new object of type Task, and then add that Task object to the **Task List** by calling its Add method. To write to the **Output** window, you call its GetPane method to obtain a pane object, and then you call the OutputString method of the pane object.  
   
-1.  В TodoWindowControl.xaml.cs в `button1_Click` метод, добавьте код для получения **Общие** области **вывода** окна (по умолчанию) и запись в него. Метод должен выглядеть следующим образом:  
+1.  In TodoWindowControl.xaml.cs, in the `button1_Click` method, add code to get the **General** pane of the **Output** window (which is the default), and write to it. The method should look like this:  
   
-    ```c#  
+    ```cs  
     private void button1_Click(object sender, EventArgs e)  
     {  
         if (textBox.Text.Length > 0)  
@@ -420,9 +421,9 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-2.  Чтобы добавить элементы в список задач, необходимо добавить вложенный класс в класс TodoWindowControl. Вложенный класс должно быть производным от <xref:Microsoft.VisualStudio.Shell.TaskProvider>.</xref:Microsoft.VisualStudio.Shell.TaskProvider> Добавьте следующий код в конец класса TodoWindowControl.  
+2.  In order to add items to the Task List, you need a to add a nested class to the TodoWindowControl class. The nested class needs to derive from <xref:Microsoft.VisualStudio.Shell.TaskProvider>. Add the following code to the end of the TodoWindowControl class.  
   
-    ```c#  
+    ```cs  
     [Guid("72de1eAD-a00c-4f57-bff7-57edb162d0be")]  
     public class TodoWindowTaskProvider : TaskProvider  
     {  
@@ -433,9 +434,9 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-3.  Далее добавьте закрытый ссылку TodoTaskProvider и метод CreateProvider() класс TodoWindowControl. Код должен выглядеть следующим образом:  
+3.  Next add a private reference to TodoTaskProvider and a CreateProvider() method to the TodoWindowControl class. The code should look like this:  
   
-    ```c#  
+    ```cs  
     private TodoWindowTaskProvider taskProvider;  
     private void CreateProvider()  
     {  
@@ -447,9 +448,9 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-4.  Добавьте в класс TodoWindowControl ClearError(), который очищает список задач, и ReportError(), который добавляет запись в список задач.  
+4.  Add ClearError(), which clears the Task List, and ReportError(), which adds an entry to the Task List, to the TodoWindowControl class.  
   
-    ```c#  
+    ```cs  
     private void ClearError()  
     {  
         CreateProvider();  
@@ -479,9 +480,9 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-5.  Реализуйте метод CheckForErrors следующим образом.  
+5.  Now implement the CheckForErrors method, as follows.  
   
-    ```c#  
+    ```cs  
     public void CheckForErrors()  
     {  
         foreach (TodoItem item in listBox.Items)  
@@ -495,30 +496,30 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-## <a name="trying-it-out"></a>Ознакомление с его  
+## <a name="trying-it-out"></a>Trying It Out  
   
-1.  Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.  
+1.  Build the project and start debugging. The experimental instance appears.  
   
-2.  Откройте TodoWindow (**представления и других окон или TodoWindow**).  
+2.  Open the TodoWindow (**View / Other Windows / TodoWindow**).  
   
-3.  Введите в текстовом поле и нажмите кнопку **добавить**.  
+3.  Type something in the text box and then click **Add**.  
   
-     Срок 2 дней после текущей добавляется в список. Создаются без ошибок и **список задач** (**Просмотр / задач список**) должен иметь нет записей.  
+     A due date 2 days after today is added to the list box. No errors are generated, and the **Task List** (**View / Task List**) should have no entries.  
   
-4.  Теперь измените параметр на **Сервис / Параметры / ToDo** страница с **2** к **0**.  
+4.  Now change the setting on the **Tools / Options / ToDo** page from **2** back to **0**.  
   
-5.  Введите еще что-нибудь **TodoWindow** и нажмите кнопку **добавить** еще раз. Это вызывает ошибку, а также запись в **списка задач**.  
+5.  Type something else in the **TodoWindow** and then click **Add** again. This triggers an error and also an entry in the **Task List**.  
   
-     При добавлении элементов исходной даты присваивается теперь плюс 2 дня.  
+     As you add items, the initial date is set to now plus 2 days.  
   
-6.  На **представление** меню, нажмите кнопку **вывода** открыть **вывода** окна.  
+6.  On the **View** menu, click **Output** to open the **Output** window.  
   
-     Обратите внимание, что каждый раз, нужно добавить элемент, сообщение отображается в **список задач** области.  
+     Notice that every time that you add an item, a message is displayed in the **Task List** pane.  
   
-7.  Щелкните один из элементов в списке.  
+7.  Click one of the items in the ListBox.  
   
-     **Свойства** выводятся два свойства для элемента.  
+     The **Properties** window displays the two properties for the item.  
   
-8.  Измените одно из свойств и нажмите клавишу ВВОД.  
+8.  Change one of the properties and then press ENTER.  
   
-     Элемент обновляется в списке ListBox.
+     The item is updated in the ListBox.

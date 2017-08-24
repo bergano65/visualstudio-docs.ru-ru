@@ -1,5 +1,5 @@
 ---
-title: "Добавление пользовательской проверки архитектуры в схемы зависимостей | Документы Microsoft"
+title: Add custom architecture validation to dependency diagrams | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -28,117 +28,118 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Machine Translation
-ms.sourcegitcommit: fd26c504273cae739ccbeef5e406891def732985
-ms.openlocfilehash: 16702d78769037b693ddfc0a36ac62453e9b7115
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: d14346c73d5d8ba730ff080719e65c6f1d1f3f94
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
 ---
-# <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Добавление пользовательской проверки архитектуры в схемы зависимостей
-В Visual Studio позволяет проверять исходный код в проекте по модели слоев, чтобы проверить, соответствие исходного кода в зависимости от схемы зависимости. В программе предусмотрен стандартный алгоритм проверки, однако вы можете определять собственные расширения проверки.  
+# <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Add custom architecture validation to dependency diagrams
+In Visual Studio, users can validate the source code in a project against a layer model so that they can verify that the source code conforms to the dependencies on a dependency diagram. There is a standard validation algorithm, but you can define your own validation extensions.  
   
- Когда пользователь выбирает **Проверка архитектуры** команды на схеме зависимостей, вызывается стандартный метод проверки, следуют любые расширения проверки, которые были установлены.  
+ When the user selects the **Validate Architecture** command on a dependency diagram, the standard validation method is invoked, followed by any validation extensions that have been installed.  
   
 > [!NOTE]
->  В диаграмме зависимостей основной целью проверки является сравнение схемы с программным кодом в других частях решения.  
+>  In a dependency diagram, the main purpose of validation is to compare the diagram with the program code in other parts of the solution.  
   
- Расширение проверки слоев можно упаковать в формат Visual Studio Integration Extension (VSIX) и предоставить его другим пользователям Visual Studio. Проверяющий элемент можно разместить в отдельном файле VSIX или объединить с другими расширениями. Код проверяющего элемента необходимо создавать в отдельном проекте Visual Studio, а не в проекте, содержащем другие расширения.  
+ You can package your layer validation extension into a Visual Studio Integration Extension (VSIX), which you can distribute to other Visual Studio users. You can either place your validator in a VSIX by itself, or you can combine it in the same VSIX as other extensions. You should write the code of the validator in its own Visual Studio project, not in the same project as other extensions.  
   
 > [!WARNING]
->  Создав проект проверки, скопируйте в него [пример кода](#example) , приведенный в конце этого раздела, и внесите в него изменения с учетом своих задач.  
+>  After you have created a validation project, copy the [example code](#example) at the end of this topic and then edit that to your own needs.  
   
-## <a name="requirements"></a>Требования  
- В разделе [требования к](../modeling/extend-layer-diagrams.md#prereqs).  
+## <a name="requirements"></a>Requirements  
+ See [Requirements](../modeling/extend-layer-diagrams.md#prereqs).  
   
-## <a name="defining-a-layer-validator-in-a-new-vsix"></a>Определение проверяющего элемента слоя в новом файле VSIX  
- Самый быстрый способ создать проверяющий элемент — это шаблон проекта. В этом случае код и манифест VSIX размещаются в одном и том же проекте.  
+## <a name="defining-a-layer-validator-in-a-new-vsix"></a>Defining a Layer Validator in a New VSIX  
+ The quickest method of creating a validator is to use the project template. This places the code and the VSIX manifest into the same project.  
   
-#### <a name="to-define-an-extension-by-using-a-project-template"></a>Определение расширения с использованием шаблона проекта  
+#### <a name="to-define-an-extension-by-using-a-project-template"></a>To define an extension by using a project template  
   
-1.  Создайте проект в новом решении, выбрав команду **Создать проект** в меню **Файл** .  
+1.  Create a project in a new solution, by using the **New Project** command on the **File** menu.  
   
-2.  В разделе **Проекты моделирования** диалогового окна **Новый проект**выберите пункт **Расширение проверки конструктора слоев**.  
+2.  In the **New Project** dialog box, under **Modeling Projects**, select **Layer Designer Validation Extension**.  
   
-     Шаблон создает проект, который содержит небольшой пример.  
+     The template creates a project that contains a small example.  
   
     > [!WARNING]
-    >  Шаблон makethe работают должным образом:  
+    >  To makethe template work properly:  
     >   
-    >  -   Отредактируйте вызовы функции `LogValidationError` , удалив необязательные аргументы `errorSourceNodes` и `errorTargetNodes`.  
-    > -   Если используются пользовательские свойства, примените обновление, указанное в [Добавление пользовательских свойств в схемы зависимостей](../modeling/add-custom-properties-to-layer-diagrams.md).  
+    >  -   Edit calls to `LogValidationError` to remove the optional arguments `errorSourceNodes` and `errorTargetNodes`.  
+    > -   If you use custom properties, apply the update mentioned in [Add custom properties to dependency diagrams](../modeling/add-custom-properties-to-layer-diagrams.md).  
   
-3.  Отредактируйте код, чтобы определить проверку. Более подробную информацию см. в разделе [Программная проверка](#programming).  
+3.  Edit the code to define your validation. For more information, see [Programming Validation](#programming).  
   
-4.  Сведения о тестировании расширения см. в разделе [Отладка проверки слоев](#debugging).  
+4.  To test the extension, see [Debugging Layer Validation](#debugging).  
   
     > [!NOTE]
-    >  Этот метод вызывается только в особых обстоятельствах. Точки останова не срабатывают автоматически. Более подробную информацию см. в разделе [Отладка проверки слоев](#debugging).  
+    >  Your method will be called only in specific circumstances, and breakpoints will not work automatically. For more information, see [Debugging Layer Validation](#debugging).  
   
-5.  Чтобы установить расширение в основном экземпляре [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], или на другом компьютере найдите **.vsix** файл **bin\\\***. Скопируйте его на компьютер, а затем дважды щелкните его. Чтобы удалить расширение, выберите пункт **Расширения и обновления** в меню **Сервис** .  
+5.  To install the extension in the main instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], or on another computer, find the **.vsix** file in **bin\\\***. Copy it to the computer where you want to install it, and then double-click it. To uninstall it, use **Extensions and Updates** on the **Tools** menu.  
   
-## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Добавление проверяющего элемента слоя в отдельный файл VSIX  
- Если нужно создать один файл VSIX, который содержит проверяющие элементы слоев, команды и другие расширения, рекомендуется создать один проект для определения VSIX и отдельные проекты для обработчиков. 
+## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Adding a Layer Validator to a Separate VSIX  
+ If you want to create one VSIX that contains layer validators, commands, and other extensions, we recommend that you create one project to define the VSIX, and separate projects for the handlers. 
   
-#### <a name="to-add-layer-validation-to-a-separate-vsix"></a>Добавление проверки слоев в отдельный файл VSIX  
+#### <a name="to-add-layer-validation-to-a-separate-vsix"></a>To add layer validation to a separate VSIX  
   
-1.  Создайте проект библиотеки классов в новом или существующем решении Visual Studio. В диалоговом окне **Новый проект** выберите пункт **Visual C#** , а затем **Библиотека классов**. Этот проект содержит класс проверки слоев.  
+1.  Create a Class Library project in a new or existing Visual Studio solution. In the **New Project** dialog box, click **Visual C#** and then click **Class Library**. This project will contain the layer validation class.  
   
-2.  Определите или создайте проект VSIX в решении. Проект VSIX содержит файл с именем **source.extension.vsixmanifest**. Чтобы добавить проект VSIX, выполните указанные ниже действия.  
+2.  Identify or create a VSIX project in your solution. A VSIX project contains a file that is named **source.extension.vsixmanifest**. If you have to add a VSIX project, follow these steps:  
   
-    1.  В диалоговом окне **Новый проект** последовательно выберите пункты **Visual C#**, **Расширение среды**, **Проект VSIX**.  
+    1.  In the **New Project** dialog box, choose **Visual C#**, **Extensibility**, **VSIX Project**.  
   
-    2.  В контекстном меню проекта VSIX в **обозревателе решений**выберите пункт **Назначить запускаемым проектом**.  
+    2.  In **Solution Explorer**, on the shortcut menu of the VSIX project, **Set as Startup Project**.  
   
-3.  В **source.extension.vsixmanifest**на вкладке **Активы**добавьте проект проверки слоев в качестве компонента MEF:  
+3.  In **source.extension.vsixmanifest**, under **Assets**, add the layer validation project as a MEF component:  
   
-    1.  Выберите **Создать**.  
+    1.  Choose **New**.  
   
-    2.  В диалоговом окне **Добавить новый актив** установите следующие параметры:  
+    2.  In the **Add New Asset** dialog box, set:  
   
-         **Тип** = **Microsoft.VisualStudio.MefComponent**  
+         **Type** = **Microsoft.VisualStudio.MefComponent**  
   
-         **Источник** = **Проект в текущем решении**  
+         **Source** = **A project in current solution**  
   
-         **Проект** = *проект проверяющего элемента*  
+         **Project** = *your validator project*  
   
-4.  Также необходимо добавить его в качестве проверки слоев:  
+4.  You must also add it as a layer validation:  
   
-    1.  Выберите **Создать**.  
+    1.  Choose **New**.  
   
-    2.  В диалоговом окне **Добавить новый актив** установите следующие параметры:  
+    2.  In the **Add New Asset** dialog box, set:  
   
-         **Тип** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Это значение не указано в раскрывающемся списке. Его необходимо ввести с клавиатуры.  
+         **Type** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. This is not one of the options in the drop-down list. You must enter it from the keyboard.  
   
-         **Источник** = **Проект в текущем решении**  
+         **Source** = **A project in current solution**  
   
-         **Проект** = *проект проверяющего элемента*  
+         **Project** = *your validator project*  
   
-5.  Вернитесь в проект проверки слоев и добавьте указанные ниже ссылки на проект.  
+5.  Return to the layer validation project, and add the following project references:  
   
-    |**Ссылки**|**Что это позволяет сделать**|  
+    |**Reference**|**What this allows you to do**|  
     |-------------------|------------------------------------|  
-    |Microsoft.VisualStudio.GraphModel.dll|Чтение графа архитектуры|  
-    |Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema.dll|Чтение кода DOM, связанного со слоями|  
-    |Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Чтение модели слоев|  
-    |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Чтение и обновление фигур и схем|  
-    |System.ComponentModel.Composition|Определение компонента проверки с помощью Managed Extensibility Framework (MEF)|  
-    |Microsoft.VisualStudio.Modeling.Sdk.[версия]|Определение расширений моделирования|  
+    |Microsoft.VisualStudio.GraphModel.dll|Read the architecture graph|  
+    |Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema.dll|Read the code DOM associated with layers|  
+    |Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Read the Layer model|  
+    |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Read and update shapes and diagrams.|  
+    |System.ComponentModel.Composition|Define the validation component using Managed Extensibility Framework (MEF)|  
+    |Microsoft.VisualStudio.Modeling.Sdk.[version]|Define modeling extensions|  
   
-6.  Скопируйте пример кода в конце этого раздела в файл класса в проекте библиотеки проверяющего элемента, чтобы добавить в него код для проверки. Более подробную информацию см. в разделе [Программная проверка](#programming).  
+6.  Copy the example code at the end of this topic into the class file in the validator library project to contain the code for your validation. For more information, see [Programming Validation](#programming).  
   
-7.  Сведения о тестировании расширения см. в разделе [Отладка проверки слоев](#debugging).  
+7.  To test the extension, see [Debugging Layer Validation](#debugging).  
   
     > [!NOTE]
-    >  Этот метод вызывается только в особых обстоятельствах. Точки останова не срабатывают автоматически. Более подробную информацию см. в разделе [Отладка проверки слоев](#debugging).  
+    >  Your method will be called only in specific circumstances, and breakpoints will not work automatically. For more information, see [Debugging Layer Validation](#debugging).  
   
-8.  Чтобы установить VSIX в главном экземпляре [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], или на другом компьютере найдите **.vsix** файл **bin** каталог проекта VSIX. Скопируйте его на компьютер, где требуется выполнить установку VSIX. Дважды щелкните файл VSIX в проводнике Windows (или проводнике в Windows 8).  
+8.  To install the VSIX in the main instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], or on another computer, find the **.vsix** file in the **bin** directory of the VSIX project. Copy it to the computer where you want to install the VSIX. Double-click the VSIX file in Windows Explorer. (File Explorer in Windows 8.)  
   
-     Чтобы удалить расширение, выберите пункт **Расширения и обновления** в меню **Сервис** .  
+     To uninstall it, use **Extensions and Updates** on the **Tools** menu.  
   
-##  <a name="a-nameprogramminga-programming-validation"></a><a name="programming"></a>Программная проверка  
- Чтобы определить расширение проверки слоя, необходимо определить класс указанным ниже образом.  
+##  <a name="programming"></a> Programming Validation  
+ To define a layer validation extension, you define a class that has the following characteristics:  
   
--   Общая форма объявления должна иметь следующий вид:  
+-   The overall form of the declaration is as follows:  
   
     ```  
   
@@ -158,31 +159,31 @@ ms.lasthandoff: 02/22/2017
       } }  
     ```  
   
--   При обнаружении ошибки сообщите о ней с помощью функции `LogValidationError()`.  
+-   When you discover an error, you can report it by using `LogValidationError()`.  
   
     > [!WARNING]
-    >  Не используйте необязательные параметры функции `LogValidationError`.  
+    >  Do not use the optional parameters of `LogValidationError`.  
   
- Когда пользователь вызывает команду меню **Проверить архитектуру** , система среды выполнения слоев анализирует слои и их артефакты и формирует граф. Граф состоит из четырех частей:  
+ When the user invokes the **Validate Architecture** menu command, the layer runtime system analyses the layers and their artifacts to produce a graph. The graph has four parts:  
   
--   Модели слоев решения [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], представленные на графе в виде узлов и связей.  
+-   The layer models of the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution that are represented as nodes and links in the graph.  
   
--   код, элементы проекта и другие артефакты, определенные в решении и представленные в виде узлов, а также связи, которые представляют зависимости, обнаруженные в процессе анализа;  
+-   The code, project items, and other artifacts that are defined in the solution and represented as nodes, and links that represent the dependencies discovered by the analysis process.  
   
--   связи между узлами слоя и узлами артефактов кода;  
+-   Links from the layer nodes to the code artifact nodes.  
   
--   узлы, представляющие ошибки, которые были обнаружены проверяющим элементом.  
+-   Nodes that represent errors discovered by the validator.  
   
- После создания графа вызывается стандартный метод проверки. После этого все установленные методы проверки расширения вызываются в произвольном порядке. Граф передается каждому методу `ValidateArchitecture` , который может просканировать его и сообщить об обнаруженных ошибках.  
+ When the graph has been constructed, the standard validation method is called. When this is complete, any installed extension validation methods are called in unspecified order. The graph is passed to each `ValidateArchitecture` method, which can scan the graph and report any errors that it finds.  
   
 > [!NOTE]
->  Это не является таким же, как процесс проверки, который может использоваться на доменных языках.  
+>  This is not the same as the validation process that can be used in domain-specific languages.  
   
- Методы проверки не должны менять проверяемую модель слоев или код.  
+ Validation methods should not change the layer model or the code that is being validated.  
   
- Модель графа определена в <xref:Microsoft.VisualStudio.GraphModel>.</xref:Microsoft.VisualStudio.GraphModel> Основными классами этого узла являются <xref:Microsoft.VisualStudio.GraphModel.GraphNode>и <xref:Microsoft.VisualStudio.GraphModel.GraphLink>.</xref:Microsoft.VisualStudio.GraphModel.GraphLink> </xref:Microsoft.VisualStudio.GraphModel.GraphNode>  
+ The graph model is defined in <xref:Microsoft.VisualStudio.GraphModel>. Its principal classes are <xref:Microsoft.VisualStudio.GraphModel.GraphNode> and <xref:Microsoft.VisualStudio.GraphModel.GraphLink>.  
   
- Каждый узел и каждая связь имеют одну или несколько категорий, задающих тип элемента или отношения, которое этот узел или связь представляет. Узлы типичного графа имеют следующие категории:  
+ Each Node and each Link has one or more Categories which specify the type of element or relationship that it represents. The nodes of a typical graph have the following categories:  
   
 -   Dsl.LayerModel  
   
@@ -202,38 +203,38 @@ ms.lasthandoff: 02/22/2017
   
 -   CodeSchema_Property  
   
- Связи от слоев к элементам в коде имеют категорию «Представляет».  
+ Links from layers to elements in the code have the category "Represents".  
   
-##  <a name="a-namedebugginga-debugging-validation"></a><a name="debugging"></a>Отладка проверки  
- Чтобы выполнить отладку расширения проверки слоев, нажмите клавиши CTRL+F5. Откроется экспериментальный экземпляр [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Откройте или создайте модель слоев в этом экземпляре. Эта модель должна быть связана с кодом и иметь хотя бы одну зависимость.  
+##  <a name="debugging"></a> Debugging Validation  
+ To debug your layer validation extension, press CTRL+F5. An experimental instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] opens. In this instance, open or create a layer model. This model must be associated with code, and must have at least one dependency.  
   
-### <a name="test-with-a-solution-that-contains-dependencies"></a>Тестирование решения, содержащего зависимости  
- Проверка выполняется только при наличии указанных ниже характеристик.  
+### <a name="test-with-a-solution-that-contains-dependencies"></a>Test with a Solution that contains Dependencies  
+ Validation is not executed unless the following characteristics are present:  
   
--   На диаграмме зависимостей существует хотя бы одна связь зависимости.  
+-   There is at least one dependency link on the dependency diagram.  
   
--   В модели имеются слои, связанные с элементами кода.  
+-   There are layers in the model that are associated with code elements.  
   
- При первом запуске экспериментального экземпляра [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для тестирования расширения проверки откройте или создайте решение с указанными характеристиками.  
+ The first time that you start an experimental instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] to test your validation extension, open or create a solution that has these characteristics.  
   
-### <a name="run-clean-solution-before-validate-architecture"></a>Выполнение очистки решения перед проверкой архитектуры  
- Всякий раз при обновлении кода проверки необходимо использовать команду **Очистить решение** в меню **Сборка** экспериментального решения. Только после этого можно тестировать команду «Проверка». Это связано с тем, что результаты проверки кэшируются. Если диаграмма зависимостей теста или ее код не обновлялись, методы проверки не будет выполняться.  
+### <a name="run-clean-solution-before-validate-architecture"></a>Run Clean Solution before Validate Architecture  
+ Whenever you update your validation code, use the **Clean Solution** command on the **Build** menu in the experimental solution, before you test the Validate command. This is necessary because the results of validation are cached. If you have not updated the test dependency diagram or its code, the validation methods will not be executed.  
   
-### <a name="launch-the-debugger-explicitly"></a>Явный запуск отладчика  
- Проверка выполняется в отдельном процессе. Поэтому точки останова используемого метода проверки не будут активированы. Необходимо явно подключить отладчик к процессу после запуска проверки.  
+### <a name="launch-the-debugger-explicitly"></a>Launch the Debugger Explicitly  
+ Validation runs in a separate process. Therefore, the breakpoints in your validation method will not be triggered. You must attach the debugger to the process explicitly when validation has started.  
   
- Чтобы подключить отладчик к процессу проверки, вставьте вызов функции `System.Diagnostics.Debugger.Launch()` в начало метода проверки. Когда откроется диалоговое окно отладки, выберите основной экземпляр [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ To attach the debugger to the validation process, insert a call to `System.Diagnostics.Debugger.Launch()` at the start of your validation method. When the debugging dialog box appears, select the main instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
- Кроме того, можно вставить вызов функции `System.Windows.Forms.MessageBox.Show()`. Когда появится окно сообщения, перейдите к основному экземпляру [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и на **отладки** меню **присоединиться к процессу**. Выберите процесс, который называется **Graphcmd.exe**.  
+ Alternatively, you can insert a call to `System.Windows.Forms.MessageBox.Show()`. When the message box appears, go to the main instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] and on the **Debug** menu click **Attach to Process**. Select the process that is named **Graphcmd.exe**.  
   
- Всегда запускайте экспериментальный экземпляр, нажимая клавиши CTRL+F5 (**Запуск без отладки**).  
+ Always start the experimental instance by pressing CTRL+F5 (**Start without Debugging**).  
   
-### <a name="deploying-a-validation-extension"></a>Развертывание расширения проверки  
- Чтобы установить расширение проверки на компьютер, на котором установлена подходящая версия Visual Studio, откройте VSIX-файл на конечном компьютере. Чтобы установить расширение на компьютере, на котором установлена сборка [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)], необходимо вручную извлечь содержимое файла VSIX в папку Extensions. Дополнительные сведения см. в разделе [развертывание расширения модели слоев](../modeling/deploy-a-layer-model-extension.md).  
+### <a name="deploying-a-validation-extension"></a>Deploying a Validation Extension  
+ To install your validation extension on a computer on which a suitable version of Visual Studio is installed, open the VSIX file on the target computer. To install on a computer on which [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] is installed, you must manually extract the VSIX contents into an Extensions folder. For more information, see [Deploy a layer model extension](../modeling/deploy-a-layer-model-extension.md).  
   
-##  <a name="a-nameexamplea-example-code"></a><a name="example"></a>Пример кода  
+##  <a name="example"></a> Example code  
   
-```c#  
+```cs  
 using System;  
 using System.ComponentModel.Composition;  
 using System.Globalization;  
@@ -292,6 +293,6 @@ namespace Validator3
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Расширение схемы зависимостей](../modeling/extend-layer-diagrams.md)
+## <a name="see-also"></a>See Also  
+ [Extend dependency diagrams](../modeling/extend-layer-diagrams.md)
 

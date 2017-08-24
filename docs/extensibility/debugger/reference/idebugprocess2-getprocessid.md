@@ -1,51 +1,68 @@
 ---
-title: "IDebugProcess2::GetProcessId | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcess2::GetProcessId"
-helpviewer_keywords: 
-  - "IDebugProcess2::GetProcessId"
+title: IDebugProcess2::GetProcessId | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProcess2::GetProcessId
+helpviewer_keywords:
+- IDebugProcess2::GetProcessId
 ms.assetid: d5b6f03c-d49d-4b83-b072-016ac3124f5f
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugProcess2::GetProcessId
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: a89cb13322019ef22af927974afab48f10626598
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Возвращает идентификатор GUID для этого процесса.  
+---
+# <a name="idebugprocess2getprocessid"></a>IDebugProcess2::GetProcessId
+Gets the GUID for this process.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetProcessId(  
-   GUID* pguidProcessId  
+HRESULT GetProcessId(  
+   GUID* pguidProcessId  
 );  
 ```  
   
-```c#  
-int GetProcessId(  
-   out Guid pguidProcessId  
+```cs  
+int GetProcessId(  
+   out Guid pguidProcessId  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Parameters  
  `pguidProcessId`  
- \[out\] возвращает идентификатор GUID для этого процесса.  
+ [out] Returns the GUID for this process.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Заметки  
- Глобальный уникальный идентификатор \(GUID\) указывает этот процесс от всех остальных процессов, запущенных в системе.  
+## <a name="remarks"></a>Remarks  
+ The Globally Unique IDentifier (GUID) identifies this process from all other processes running in the system.  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

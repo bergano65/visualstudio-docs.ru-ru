@@ -1,5 +1,5 @@
 ---
-title: "BPREQI_FIELDS90 | Документы Microsoft"
+title: BPREQI_FIELDS90 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -28,16 +28,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4c4377f2d9d95cc99e6b49d9ae32110d3caaae47
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: aaf58bdc99391e481e9829b7606c230ee39f8cd4
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="bpreqifields90"></a>BPREQI_FIELDS90
-Перечисляет допустимые значения, определяющие извлекаемого запрос точки останова. Это перечисление расширяет [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисления.  
+Enumerates the valid values that specify the information to be retrieved about a breakpoint request. This enumeration extends the [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumeration.  
   
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum enum_BPREQI_FIELDS90  
@@ -65,7 +66,7 @@ enum enum_BPREQI_FIELDS90
 typedef DWORD BPREQI_FIELDS90;  
 ```  
   
-```c#  
+```cs  
 public enum enum_BPREQI_FIELDS90  
 {  
     // VS 8.0 values  
@@ -90,58 +91,58 @@ public enum enum_BPREQI_FIELDS90
 };  
 ```  
   
-#### <a name="parameters"></a>Параметры  
+#### <a name="parameters"></a>Parameters  
  BPREQI90_BPLOCATION  
- Инициализировать или использовать `bpLocation` (точки останова) поле [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) или [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структуры.  
+ Initialize or use the `bpLocation` (breakpoint location) field of the [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) or [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) structure.  
   
  BPREQI90_LANGUAGE  
- Инициализировать или использовать `guidLanguage` поле `BP_REQUEST_INFO` или `BP_REQUEST_INFO2` структуры.  
+ Initialize or use the `guidLanguage` field of the `BP_REQUEST_INFO` or `BP_REQUEST_INFO2` structure.  
   
  BPREQI90_PROGRAM  
- Инициализировать или использовать `pProgram` поле `BP_REQUEST_INFO` или `BP_REQUEST_INFO2` структуры.  
+ Initialize or use the `pProgram` field of the `BP_REQUEST_INFO` or `BP_REQUEST_INFO2` structure.  
   
  BPREQI90_PROGRAMNAME  
- Инициализировать или использовать `bstrProgramName` поле `BP_REQUEST_INFO` или `BP_REQUEST_INFO2` структуры.  
+ Initialize or use the `bstrProgramName` field of the `BP_REQUEST_INFO` or `BP_REQUEST_INFO2` structure.  
   
  BPREQI90_THREAD  
- Инициализировать или использовать `pThread` поле `BP_REQUEST_INFO` или `BP_REQUEST_INFO2` структуры.  
+ Initialize or use the `pThread` field of the `BP_REQUEST_INFO` or `BP_REQUEST_INFO2` structure.  
   
  BPREQI90_THREADNAME  
- Инициализировать или использовать `bstrThreadName` поле `BP_REQUEST_INFO` или `BP_REQUEST_INFO2` структуры.  
+ Initialize or use the `bstrThreadName` field of the `BP_REQUEST_INFO` or `BP_REQUEST_INFO2` structure.  
   
  BPREQI90_PASSCOUNT  
- Инициализировать или использовать `bpPassCount` поле `BP_REQUEST_INFO` или `BP_REQUEST_INFO2` структуры.  
+ Initialize or use the `bpPassCount` field of the `BP_REQUEST_INFO` or `BP_REQUEST_INFO2` structure.  
   
  BPREQI90_CONDITION  
- Инициализировать или использовать `bpCondition` (условие точки останова) поле `BP_REQUEST_INFO` или `BP_REQUEST_INFO2` структуры.  
+ Initialize or use the `bpCondition` (breakpoint condition) field of the `BP_REQUEST_INFO` or `BP_REQUEST_INFO2` structure.  
   
  BPREQI90_FLAGS  
- Инициализировать или использовать `dwFlags` поле `BP_REQUEST_INFO` или `BP_REQUEST_INFO2` структуры.  
+ Initialize or use the `dwFlags` field of the `BP_REQUEST_INFO` or `BP_REQUEST_INFO2` structure.  
   
  BPREQI90_ALLOLDFIELDS  
- Инициализировать или использовать все поля из `BP_REQUEST_INFO` структуры.  
+ Initialize or use all fields for the of the `BP_REQUEST_INFO` structure.  
   
  BPREQI90_VENDOR  
- Инициализировать или использовать `guidVendor` поле `BP_REQUEST_INFO2` структуры.  
+ Initialize or use the `guidVendor` field of `BP_REQUEST_INFO2` structure.  
   
  BPREQI90_CONSTRAINT  
- Инициализировать или использовать `bstrConstraint` поле `BP_REQUEST_INFO2` структуры.  
+ Initialize or use the `bstrConstraint` field of `BP_REQUEST_INFO2` structure.  
   
  BPREQI90_TRACEPOINT  
- Инициализировать или использовать `bstrTracepoint` поле `BP_REQUEST_INFO2` структуры.  
+ Initialize or use the `bstrTracepoint` field of `BP_REQUEST_INFO2` structure.  
   
  BPREQI90_MACROTRACEPOINT  
- Инициализировать или использовать `bstrMacroTracepoint` поле `BP_REQUEST_INFO2` структуры. BPREQI_ALLFIELDS не содержит это поле.  
+ Initialize or use the `bstrMacroTracepoint` field of `BP_REQUEST_INFO2` structure. BPREQI_ALLFIELDS does not include this field.  
   
  BPREQI90_ALLFIELDS  
- Указывает все поля для `BP_REQUEST_INFO2` структуры.  
+ Specifies all fields for the `BP_REQUEST_INFO2` structure.  
   
-## <a name="requirements"></a>Требования  
- Заголовок: Msdbg90.h  
+## <a name="requirements"></a>Requirements  
+ Header: Msdbg90.h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

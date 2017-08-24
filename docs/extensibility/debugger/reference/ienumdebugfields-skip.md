@@ -1,5 +1,5 @@
 ---
-title: "IEnumDebugFields::Skip | Документы Microsoft"
+title: IEnumDebugFields::Skip | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 2174206faa86e9853bcc31f1f91add9361f00636
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 27dbf25eff7dd34181c1dda6f72c1437b99a8200
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="ienumdebugfieldsskip"></a>IEnumDebugFields::Skip
-Этот метод пропускает указанное число элементов.  
+This method skips over the specified number of elements.  
   
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT Skip(  
@@ -47,21 +48,21 @@ HRESULT Skip(
 );  
 ```  
   
-```c#  
+```cs  
 int Skip(  
    uint celt  
 );  
 ```  
   
-#### <a name="parameters"></a>Параметры  
+#### <a name="parameters"></a>Parameters  
  `celt`  
- [in] Число пропускаемых элементов.  
+ [in] Number of elements to skip.  
   
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если `celt` больше, чем число оставшихся элементов; в противном случае — возвращает код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`. Returns `S_FALSE` if `celt` is greater than the number of remaining elements; otherwise, returns an error code.  
   
-## <a name="remarks"></a>Примечания  
- Если `celt` указывает значение, превышающее число оставшихся элементов перечисления задано до конца и `S_FALSE` возвращается.  
+## <a name="remarks"></a>Remarks  
+ If `celt` specifies a value greater than the number of remaining elements, the enumeration is set to the end and `S_FALSE` is returned.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>See Also  
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

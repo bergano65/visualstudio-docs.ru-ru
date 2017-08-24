@@ -1,5 +1,5 @@
 ---
-title: "IDebugSymbolProvider::GetMethodFieldsByName | Документы Microsoft"
+title: IDebugSymbolProvider::GetMethodFieldsByName | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d04fc7cb5142fe8c7dc9b966466ae35ac015e355
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: ab6998588cbfd76e015e2dfeac92f90f181be15c
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
-Этот метод возвращает поле, представляющее имя полного имени метода.  
+This method gets the field representing a fully qualified method name.  
   
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT GetMethodFieldsByName(   
@@ -49,7 +50,7 @@ HRESULT GetMethodFieldsByName(
 );  
 ```  
   
-```c#  
+```cs  
 int GetMethodFieldsByName(  
    string               pszFullName,   
    NAME_MATCH           nameMatch,   
@@ -57,22 +58,22 @@ int GetMethodFieldsByName(
 );  
 ```  
   
-#### <a name="parameters"></a>Параметры  
+#### <a name="parameters"></a>Parameters  
  `pszFullName`  
- [in] Имя метода.  
+ [in] The method name.  
   
  `nameMatch`  
- [in] Выбор типа сопоставления, например, с учетом регистра.  
+ [in] Selects the type of match, for example, case-sensitive.  
   
  `ppEnum`  
- [out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) перечислитель для полей, связанных с данным методом.  
+ [out] Returns an [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumerator for the fields associated with this method.  
   
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="remarks"></a>Примечания  
- Если он переопределен, например метод можно связать с нескольких полей.  
+## <a name="remarks"></a>Remarks  
+ A method can be associated with multiple fields if it is overloaded, for example.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>See Also  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

@@ -1,48 +1,65 @@
 ---
-title: "IDebugProcess3::GetEngineFilter | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetEngineFilter"
-  - "IDebugProcess3::GetEngineFilter"
+title: IDebugProcess3::GetEngineFilter | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- GetEngineFilter
+- IDebugProcess3::GetEngineFilter
 ms.assetid: ccb7ecb0-f189-4e80-b5b2-221a095e01f5
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugProcess3::GetEngineFilter
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 1ce2c9029ad729f9974def324b33457fb5009a30
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Извлекает массив уникальных идентификаторов доступных обработчиков отладки.  
+---
+# <a name="idebugprocess3getenginefilter"></a>IDebugProcess3::GetEngineFilter
+Retrieves an array of unique identifiers for available debug engines.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT GetEngineFilter(  
-   GUID_ARRAY *pEngineArray  
+   GUID_ARRAY *pEngineArray  
 );  
 ```  
   
-```c#  
+```cs  
 public int GetEngineFilter(  
-   out GUID_ARRAY[] pEngineArray  
+   out GUID_ARRAY[] pEngineArray  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Parameters  
  `pEngineArray`  
- \[out\] ссылка на структуру, содержащую уникальные идентификаторы для обработчиков отладки.  
+ [out] Reference to a structure that contains unique identifiers for debug engines.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
- [GUID\_ARRAY](../../../extensibility/debugger/reference/guid-array.md)
+ [GUID_ARRAY](../../../extensibility/debugger/reference/guid-array.md)

@@ -1,115 +1,132 @@
 ---
-title: "MODULE_INFO | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MODULE_INFO"
-helpviewer_keywords: 
-  - "Структура MODULE_INFO"
+title: MODULE_INFO | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- MODULE_INFO
+helpviewer_keywords:
+- MODULE_INFO structure
 ms.assetid: f2e06180-1ab3-4eb5-a428-7994cceb61b6
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# MODULE_INFO
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 2ad0fe31572fda794a8be06580330a63c0ca0d0b
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Описывает указанный модуль \(DLL или EXE, сборку\).  
+---
+# <a name="moduleinfo"></a>MODULE_INFO
+Describes a particular module (DLL, EXE, or assembly).  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-typedef struct tagMODULE_INFO {   
-   MODULE_INFO_FIELDS dwValidFields;  
-   BSTR               m_bstrName;  
-   BSTR               m_bstrUrl;  
-   BSTR               m_bstrVersion;  
-   BSTR               m_bstrDebugMessage;  
-   UINT64             m_addrLoadAddress;  
-   UINT64             m_addrPreferredLoadAddress;  
-   DWORD              m_dwSize;  
-   DWORD              m_dwLoadOrder;  
-   FILETIME           m_TimeStamp;  
-   BSTR               m_bstrUrlSymbolLocation;  
-   MODULE_FLAGS       m_dwModuleFlags;  
+typedef struct tagMODULE_INFO {   
+   MODULE_INFO_FIELDS dwValidFields;  
+   BSTR               m_bstrName;  
+   BSTR               m_bstrUrl;  
+   BSTR               m_bstrVersion;  
+   BSTR               m_bstrDebugMessage;  
+   UINT64             m_addrLoadAddress;  
+   UINT64             m_addrPreferredLoadAddress;  
+   DWORD              m_dwSize;  
+   DWORD              m_dwLoadOrder;  
+   FILETIME           m_TimeStamp;  
+   BSTR               m_bstrUrlSymbolLocation;  
+   MODULE_FLAGS       m_dwModuleFlags;  
 } MODULE_INFO;  
 ```  
   
-```c#  
-public struct MODULE_INFO {   
-   public uint     dwValidFields;  
-   public string   m_bstrName;  
-   public string   m_bstrUrl;  
-   public string   m_bstrVersion;  
-   public string   m_bstrDebugMessage;  
-   public ulong    m_addrLoadAddress;  
-   public ulong    m_addrPreferredLoadAddress;  
-   public uint     m_dwSize;  
-   public uint     m_dwLoadOrder;  
-   public FILETIME m_TimeStamp;  
-   public string   m_bstrUrlSymbolLocation;  
-   public uint     m_dwModuleFlags;  
+```cs  
+public struct MODULE_INFO {   
+   public uint     dwValidFields;  
+   public string   m_bstrName;  
+   public string   m_bstrUrl;  
+   public string   m_bstrVersion;  
+   public string   m_bstrDebugMessage;  
+   public ulong    m_addrLoadAddress;  
+   public ulong    m_addrPreferredLoadAddress;  
+   public uint     m_dwSize;  
+   public uint     m_dwLoadOrder;  
+   public FILETIME m_TimeStamp;  
+   public string   m_bstrUrlSymbolLocation;  
+   public uint     m_dwModuleFlags;  
 };  
 ```  
   
-## Члены  
+## <a name="members"></a>Members  
  dwValidFields  
- Комбинация из пометит [MODULE\_INFO\_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) перечисление, которое определяет, какие поля заполнянны.  
+ A combination of flags from the [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) enumeration that specifies which fields are filled out.  
   
- m\_bstrName  
- Имя модуля.  
+ m_bstrName  
+ The module name.  
   
- m\_bstrUrl  
- URL\-адрес модуля.  
+ m_bstrUrl  
+ The module URL.  
   
- m\_bstrVersion  
- Версия модуля.  
+ m_bstrVersion  
+ The module version.  
   
- m\_bstrDebugMessage  
- Дополнительное сообщение о модуле, например, "символы нельзя будет загрузить."  
+ m_bstrDebugMessage  
+ An optional message about the module, for example, "Symbols cannot be loaded."  
   
- m\_addrLoadAddress  
- Адрес загрузки модуля.  
+ m_addrLoadAddress  
+ The module load address.  
   
- m\_addrPreferredLoadAddress  
- Предпочтительный адрес загрузки модуля.  
+ m_addrPreferredLoadAddress  
+ The preferred load address of the module.  
   
- m\_dwSize  
- Размер модуля.  
+ m_dwSize  
+ The module size.  
   
- m\_dwLoadOrder  
- Порядок загрузки модуля.  
+ m_dwLoadOrder  
+ The module load order.  
   
- m\_TimeStamp  
- Файл символов время последнего изменения.  
+ m_TimeStamp  
+ The time the symbol file was last modified.  
   
- m\_bstrUrlSymbolLocation  
- Расположение файлов символов \(например ".  \\ "\) определено в модуле.  Используется как начальное положение, чтобы найти символы для модуля.  
+ m_bstrUrlSymbolLocation  
+ The location of the symbol file (for example, ".\\") specified in the module. Used as a starting location to find symbols for a module.  
   
- m\_dwModuleFlags  
- Комбинация из пометит [MODULE\_FLAGS](../../../extensibility/debugger/reference/module-flags.md) перечисление, описывающее модуль.  
+ m_dwModuleFlags  
+ A combination of flags from the [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) enumeration that describes the module.  
   
-## Заметки  
- Эта структура передается [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) метод, в котором он заполнен.  
+## <a name="remarks"></a>Remarks  
+ This structure is passed to the [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) method where it is filled in.  
   
- Эта структура соответствует каждому модулю в перечисляемый **Модули** окна.  
+ This structure corresponds to each module listed in the **Modules** window.  
   
-## Требования  
- Заголовок: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
- [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [MODULE\_INFO\_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)   
- [MODULE\_FLAGS](../../../extensibility/debugger/reference/module-flags.md)   
+## <a name="see-also"></a>See Also  
+ [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)   
+ [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

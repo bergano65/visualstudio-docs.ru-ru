@@ -1,73 +1,90 @@
 ---
-title: "IDebugStackFrame3::InterceptCurrentException | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugStackFrame3::InterceptCurrentException"
-helpviewer_keywords: 
-  - "IDebugStackFrame3::InterceptCurrentException"
+title: IDebugStackFrame3::InterceptCurrentException | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugStackFrame3::InterceptCurrentException
+helpviewer_keywords:
+- IDebugStackFrame3::InterceptCurrentException
 ms.assetid: 116c7324-7645-4c15-b484-7a5cdd065ef5
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugStackFrame3::InterceptCurrentException
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: b1b556058cbdf4e59e091e1b75248de5fde9eb51
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Вызывается отладчиком в текущем кадре стека, когда он становится потребоваться перехватывать текущее исключение.  
+---
+# <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
+Called by the debugger on the current stack frame when it wants to intercept the current exception.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT InterceptCurrentException(  
-   INTERCEPT_EXCEPTION_ACTION dwFlags,  
-   UINT64*                    pqwCookie  
+   INTERCEPT_EXCEPTION_ACTION dwFlags,  
+   UINT64*                    pqwCookie  
 );  
 ```  
   
-```c#  
+```cs  
 int InterceptCurrentException(  
-   uint dwFlags,   
-   out  ulong pqwCookie  
+   uint dwFlags,   
+   out  ulong pqwCookie  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Parameters  
  `dwFlags`  
- \[in\] определяет различные действия.  В настоящее время только [INTERCEPT\_EXCEPTION\_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md) Значение  `IEA_INTERCEPT` поддерживается и должен быть задан.  
+ [in] Specifies different actions. Currently, only the [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md) value `IEA_INTERCEPT` is supported and must be specified.  
   
  `pqwCookie`  
- \[out\] уникальное значение, определяющее заданное исключение.  
+ [out] Unique value identifying a particular exception.  
   
-## Возвращаемое значение  
- В случае успеха возвращает значение S\_OK; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
- Следующие наиболее распространенной ошибка возвращается.  
+ The following are the most common error returns.  
   
-|Ошибка|Описание|  
-|------------|--------------|  
-|`E_EXCEPTION_CANNOT_BE_INTERCEPTED`|Текущее исключение не могут быть перехвачены.|  
-|`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|Текущий кадр выполнения не был поиск обработчика.|  
-|`E_INTERCEPT_CURRENT_EXCEPTION_NOT_SUPPORTED`|Этот метод не поддерживается для этого кадра.|  
+|Error|Description|  
+|-----------|-----------------|  
+|`E_EXCEPTION_CANNOT_BE_INTERCEPTED`|The current exception cannot be intercepted.|  
+|`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|The current execution frame hasn't been searched for a handler yet.|  
+|`E_INTERCEPT_CURRENT_EXCEPTION_NOT_SUPPORTED`|This method is not supported for this frame.|  
   
-## Заметки  
- Исключение возникает, когда элемент управления увеличений отладчика от времени выполнения на ключевых этапах в процессе обработки исключений.  Во время этих ключевых моментов отладчик может запросить текущий кадр стека, если кадр нужно перехватить исключение.  Таким образом, существенно перехваченное исключение обработчик исключений во время работы для кадра стека, даже если кадр стека, отсутствует обработчик исключения \(например, блок try\/catch в программном коде\).  
+## <a name="remarks"></a>Remarks  
+ When an exception is thrown, the debugger gains control from the run time at key points during the exception handling process. During these key moments, the debugger can ask the current stack frame if the frame wants to intercept the exception. In this way, an intercepted exception is essentially an on-the-fly exception handler for a stack frame, even if that stack frame doesn't have an exception handler (for example, a try/catch block in the program code).  
   
- Когда отладчик должен знать, если исключение должно перехвачено, он вызывает этот метод на текущем объекте кадра стека.  Этот метод отвечает за обработку все сведения о исключения.  Если [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) не реализован интерфейс или  `InterceptStackException` метод возвращает любую ошибку, то отладчик продолжает обрабатывать исключение обычно.  
+ When the debugger wants to know if the exception should be intercepted, it calls this method on the current stack frame object. This method is responsible for handling all details of the exception. If the [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) interface is not implemented or the `InterceptStackException` method returns any error, then the debugger continues processing the exception normally.  
   
 > [!NOTE]
->  Исключения могут быть перехвачены только в управляемом коде, т е отлаживаемой программы, когда выполняется с временем выполнения .NET.  Конечно, сторонним разработчикам языков могут реализовывать `InterceptStackException` в них обработчиков отладки, чтобы выбрать.  
+>  Exceptions can be intercepted only in managed code, that is, when the program being debugged is running under the .NET run time. Of course, third-party language implementers can implement `InterceptStackException` in their own debug engines if they so choose.  
   
- После завершения отсекаемый отрезок [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) сигнализирует.  
+ After the interception is complete, an [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) is signaled.  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)   
- [INTERCEPT\_EXCEPTION\_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md)   
+ [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md)   
  [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)

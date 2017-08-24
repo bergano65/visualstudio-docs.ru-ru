@@ -1,29 +1,46 @@
 ---
-title: "DBG_ATTRIB_FLAGS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DBG_ATTRIB_FLAGS"
-helpviewer_keywords: 
-  - "Перечисления DBGPROP_ATTRIB_FLAGS"
+title: DBG_ATTRIB_FLAGS | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DBG_ATTRIB_FLAGS
+helpviewer_keywords:
+- DBGPROP_ATTRIB_FLAGS enumerations
 ms.assetid: 2f13e601-dadc-476e-a8ec-01c4515082e7
 caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
----
-# DBG_ATTRIB_FLAGS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 61d570da34c133ceb1b08ad56ae795b05afde421
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Описывает различные атрибуты [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) или  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) интерфейс.  Элемент [DEBUG\_PROPERTY\_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структура.  
+---
+# <a name="dbgattribflags"></a>DBG_ATTRIB_FLAGS
+Describes various attributes for an [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) or an [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) interface. Member of the [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) structure.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 #define DBG_ATTRIB_NONE                 0x0000000000000000,  
@@ -95,7 +112,7 @@ caps.handback.revision: 17
 typedef UINT64 DBG_ATTRIB_FLAGS;  
 ```  
   
-```c#  
+```cs  
 public const int DBG_ATTRIB_NONE                 = 0x0000000000000000,  
 public const int DBG_ATTRIB_ALL                  = 0x00000000ffffffff,  
   
@@ -163,158 +180,158 @@ public const int DBG_ATTRIB_CHILD_ALL            = 0x0000ff0000000000,
 public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000  
 ```  
   
-## Члены  
- DBG\_ATTRIB\_NONE  
- Указывает атрибуты.  
+## <a name="members"></a>Members  
+ DBG_ATTRIB_NONE  
+ Indicates no attributes.  
   
- DBG\_ATTRIB\_ALL  
- Отображает все атрибуты.  
+ DBG_ATTRIB_ALL  
+ Indicates all attributes.  
   
- DBG\_ATTRIB\_OBJ\_IS\_EXPANDABLE  
- Указывает, что ссылка или свойства имеют дочерних элементов.  
+ DBG_ATTRIB_OBJ_IS_EXPANDABLE  
+ Indicates that the reference or property has children.  
   
- DBG\_ATTRIB\_OBJ\_HAS\_ID  
- Указывает, что было создано идентификатор для данного объекта.  
+ DBG_ATTRIB_OBJ_HAS_ID  
+ Indicates that an ID for this object has been created.  
   
- DBG\_ATTRIB\_OBJ\_CAN\_HAVE\_ID  
- Указывает на то, что идентификатор для данного объекта могут быть созданы.  
+ DBG_ATTRIB_OBJ_CAN_HAVE_ID  
+ Indicates that an ID for this object can be created.  
   
- DBG\_ATTRIB\_VALUE\_READONLY  
- Указывает, что значение только для чтения.  
+ DBG_ATTRIB_VALUE_READONLY  
+ Indicates that the value is read-only.  
   
- DBG\_ATTRIB\_VALUE\_ERROR  
- Указывает, что ошибка.  
+ DBG_ATTRIB_VALUE_ERROR  
+ Indicates that the value is an error.  
   
- DBG\_ATTRIB\_VALUE\_SIDE\_EFFECT  
- Указывает, что вычисление имеет побочный эффект.  
+ DBG_ATTRIB_VALUE_SIDE_EFFECT  
+ Indicates that the evaluation had a side effect.  
   
- DBG\_ATTRIB\_OVERLOADED\_CONTAINER  
- Указывает, что данное свойство действительно контейнер перегрузок.  
+ DBG_ATTRIB_OVERLOADED_CONTAINER  
+ Indicates that this property is really a container of overloads.  
   
- DBG\_ATTRIB\_VALUE\_BOOLEAN  
- Указывает, что значения в `DEBUG_PROPERTY_INFO::bstrValue` логический.  
+ DBG_ATTRIB_VALUE_BOOLEAN  
+ Indicates that the value in `DEBUG_PROPERTY_INFO::bstrValue` is Boolean.  
   
- DBG\_ATTRIB\_VALUE\_BOOLEAN\_TRUE  
- Указывает, что значения в `DEBUG_PROPERTY_INFO::bstrValue` логическое и  `TRUE`.  
+ DBG_ATTRIB_VALUE_BOOLEAN_TRUE  
+ Indicates that the value in `DEBUG_PROPERTY_INFO::bstrValue` is Boolean and `TRUE`.  
   
- DBG\_ATTRIB\_VALUE\_INVALID  
- Указывает, что значения в `DEBUG_PROPERTY_INFO::bstrValue` недопустимый.  
+ DBG_ATTRIB_VALUE_INVALID  
+ Indicates that the value in `DEBUG_PROPERTY_INFO::bstrValue` is not valid.  
   
- DBG\_ATTRIB\_VALUE\_NAT  
- Указывает, что значения в `DEBUG_PROPERTY_INFO::bstrValue` "не самое"\(Nat\).  Преобразование сетевых адресов описывает пометить регистра в процессорах Intel 64, указывает отложенное умозрительные исключения.  
+ DBG_ATTRIB_VALUE_NAT  
+ Indicates that the value in `DEBUG_PROPERTY_INFO::bstrValue` is "*not a thing*" (NAT). NAT describes a register flag in Intel 64-bit processors that indicates deferred speculative exceptions.  
   
- DBG\_ATTRIB\_VALUE\_AUTOEXPANDED  
- Указывает, что значения в `DEBUG_PROPERTY_INFO::bstrValue` по возможности автоматическ\-развернет.  
+ DBG_ATTRIB_VALUE_AUTOEXPANDED  
+ Indicates that the value in `DEBUG_PROPERTY_INFO::bstrValue` has possibly been auto-expanded.  
   
- DBG\_ATTRIB\_VALUE\_TIMEOUT  
- Указывает, что вычисление имеет синхронизированное\-вне.  
+ DBG_ATTRIB_VALUE_TIMEOUT  
+ Indicates that an evaluation has timed-out.  
   
- DBG\_ATTRIB\_VALUE\_RAW\_STRING  
- Указывает, что значения в `DEBUG_PROPERTY_INFO::bstrValue` может быть представлено сырцовой строкой.  
+ DBG_ATTRIB_VALUE_RAW_STRING  
+ Indicates that the value in `DEBUG_PROPERTY_INFO::bstrValue` can be represented by a raw string.  
   
- DBG\_ATTRIB\_VALUE\_CUSTOM\_VIEWER  
- Указывает, что это свойство имеет по крайней мере одного настраиваемого средства просмотра, связанного с ним.  
+ DBG_ATTRIB_VALUE_CUSTOM_VIEWER  
+ Indicates that this property has at least one custom viewer associated with it.  
   
- DBG\_ATTRIB\_ACCESS\_NONE  
- Указывает объект, который не имеет ни одного `public`"  `private`ни  `protected` доступ типа.  
+ DBG_ATTRIB_ACCESS_NONE  
+ Indicates an object that has neither `public`, `private`, nor `protected` type access.  
   
- DBG\_ATTRIB\_ACCESS\_PUBLIC  
- Указывает объект, имеющий открытого доступа.  
+ DBG_ATTRIB_ACCESS_PUBLIC  
+ Indicates an object that has public access.  
   
- DBG\_ATTRIB\_ACCESS\_PRIVATE  
- Указывает объект, который содержит закрытый доступ.  
+ DBG_ATTRIB_ACCESS_PRIVATE  
+ Indicates an object that has private access.  
   
- DBG\_ATTRIB\_ACCESS\_PROTECTED  
- Указывает объект, защищал доступ.  
+ DBG_ATTRIB_ACCESS_PROTECTED  
+ Indicates an object that has protected access.  
   
- DBG\_ATTRIB\_ACCESS\_FINAL  
- Указывает конечный объект, имеющий доступ.  
+ DBG_ATTRIB_ACCESS_FINAL  
+ Indicates an object that has final access.  
   
- DBG\_ATTRIB\_ACCESS\_ALL  
- Маска для извлечения атрибуты доступа из `DBG_ATTRIB_FLAGS`.  
+ DBG_ATTRIB_ACCESS_ALL  
+ Mask to extract the access attributes from `DBG_ATTRIB_FLAGS`.  
   
- DBG\_ATTRIB\_STORAGE\_NONE  
- Указывает, что заданный тип хранения.  
+ DBG_ATTRIB_STORAGE_NONE  
+ Indicates that there is no storage type specified.  
   
- DBG\_ATTRIB\_STORAGE\_GLOBAL  
- Указывает глобальная хранилище.  
+ DBG_ATTRIB_STORAGE_GLOBAL  
+ Indicates global storage.  
   
- DBG\_ATTRIB\_STORAGE\_STATIC  
- Указывает статического хранилища.  
+ DBG_ATTRIB_STORAGE_STATIC  
+ Indicates static storage.  
   
- DBG\_ATTRIB\_STORAGE\_REGISTER  
- Указывает хранилище в регистре.  
+ DBG_ATTRIB_STORAGE_REGISTER  
+ Indicates storage in the register.  
   
- DBG\_ATTRIB\_STORAGE\_ALL  
- Маска для извлечения атрибуты хранилища из `DBG_ATTRIB_FLAGS`.  
+ DBG_ATTRIB_STORAGE_ALL  
+ Mask to extract the storage attributes from `DBG_ATTRIB_FLAGS`.  
   
- DBG\_ATTRIB\_TYPE\_NONE  
- Указывает, что никакой модификатор типа.  
+ DBG_ATTRIB_TYPE_NONE  
+ Indicates that there is no type modifier.  
   
- DBG\_ATTRIB\_TYPE\_VIRTUAL  
- Отображает тип объекта виртуальным.  
+ DBG_ATTRIB_TYPE_VIRTUAL  
+ Indicates that the type of object is virtual.  
   
- DBG\_ATTRIB\_TYPE\_CONSTANT  
- Указывает, что тип объекта.  
+ DBG_ATTRIB_TYPE_CONSTANT  
+ Indicates that the type of object is constant.  
   
- DBG\_ATTRIB\_TYPE\_SYNCHRONIZED  
- Отображает тип объекта, синхронизирован.  
+ DBG_ATTRIB_TYPE_SYNCHRONIZED  
+ Indicates that the type of object is synchronized.  
   
- DBG\_ATTRIB\_TYPE\_VOLATILE  
- Отображает тип объекта, испаряющ.  
+ DBG_ATTRIB_TYPE_VOLATILE  
+ Indicates that the type of object is volatile.  
   
- DBG\_ATTRIB\_TYPE\_ALL  
- Маска для извлечения атрибуты типа из `DBG_ATTRIB_FLAGS`.  
+ DBG_ATTRIB_TYPE_ALL  
+ Mask to extract the type attributes from `DBG_ATTRIB_FLAGS`.  
   
- DBG\_ATTRIB\_DATA  
- Указывает, что данный объект поля данных.  
+ DBG_ATTRIB_DATA  
+ Indicates that this object is a data field.  
   
- DBG\_ATTRIB\_METHOD  
- Указывает, что данный объект метод.  
+ DBG_ATTRIB_METHOD  
+ Indicates that this object is a method.  
   
- DBG\_ATTRIB\_PROPERTY  
- Указывает, что данный объект свойства.  
+ DBG_ATTRIB_PROPERTY  
+ Indicates that this object is a property.  
   
- DBG\_ATTRIB\_CLASS  
- Указывает, что данный объект класса.  
+ DBG_ATTRIB_CLASS  
+ Indicates that this object is a class.  
   
- DBG\_ATTRIB\_BASECLASS  
- Указывает, что данный объект базовый класс.  
+ DBG_ATTRIB_BASECLASS  
+ Indicates that this object is a base class.  
   
- DBG\_ATTRIB\_INTERFACE  
- Указывает, что данный объект интерфейса.  
+ DBG_ATTRIB_INTERFACE  
+ Indicates that this object is an interface.  
   
- DBG\_ATTRIB\_INNERCLASS  
- Указывает, что данный объект внутренний класс.  
+ DBG_ATTRIB_INNERCLASS  
+ Indicates that this object is an inner class.  
   
- DBG\_ATTRIB\_MOSTDERIVED  
- Указывает, что данный объект \`*дополнительные всего\-выведено*'.  Термин "*дополнительные всего\-выведено*"означает фактический тип объекта, а не его тип ссылки.  
+ DBG_ATTRIB_MOSTDERIVED  
+ Indicates that this object is '*most-derived*'. The term "*most-derived*" means the actual type of the object, and not the type of its reference.  
   
- DBG\_ATTRIB\_CHILD\_ALL  
- Указывает маску `DBG_ATTRIB_DATA` via  `DBG_ATTRIB_MOSTDERIVED`.  
+ DBG_ATTRIB_CHILD_ALL  
+ Indicates a mask of `DBG_ATTRIB_DATA` through `DBG_ATTRIB_MOSTDERIVED`.  
   
- DBG\_ATTRIB\_MULTI\_CUSTOM\_VIEWERS  
- Указывает, что объект имеет нескольких пользовательских средств просмотра, связанных с ним.  
+ DBG_ATTRIB_MULTI_CUSTOM_VIEWERS  
+ Indicates that the object has multiple custom viewers associated with it.  
   
-## Заметки  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
->  Значения в этом перечислении фактически не определенные в сборке для c\#.  Вместо этого необходимо скопировать определения к конкретному файлу источника.  
+>  The values in this enumeration are not actually defined in the assembly for C#. Instead, you must copy the definitions to your source file.  
   
- Эти флаги также используются для фильтрации дочерние узлы объекта, например, передается в качестве аргумента [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md).  Значения могут объединяться с побитовый оператор `OR`.  
+ These flags are also used to filter children of an object, for example, when passed as an argument to [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md). The values may be combined with a bitwise `OR`.  
   
- `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` пометить индикаторов к  [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] доступ  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) интерфейс из  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) интерфейс и вызвать метод  [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) список пользовательских средств просмотра.  
+ The `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` flag is an indication to [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] to obtain the [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface from the [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interface and call [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) for a list of custom viewers.  
   
-## Требования  
- Заголовок: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   
- [DEBUG\_PROPERTY\_INFO](../../../extensibility/debugger/reference/debug-property-info.md)
+ [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)

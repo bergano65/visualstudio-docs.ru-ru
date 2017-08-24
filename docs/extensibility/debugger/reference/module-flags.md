@@ -1,84 +1,101 @@
 ---
-title: "MODULE_FLAGS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MODULE_FLAGS"
-helpviewer_keywords: 
-  - "Перечисление MODULE_FLAGS"
+title: MODULE_FLAGS | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- MODULE_FLAGS
+helpviewer_keywords:
+- MODULE_FLAGS enumeration
 ms.assetid: 0e555b42-b846-4dbb-812e-8e3d11c85b2d
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# MODULE_FLAGS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: e75c67cb3660353c33a26a8f0c8cf141b18e014b
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Используется для описания модуль.  
+---
+# <a name="moduleflags"></a>MODULE_FLAGS
+Used to describe a module.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-enum enum_MODULE_FLAGS {   
-   MODULE_FLAG_NONE        = 0x0000,  
-   MODULE_FLAG_SYSTEM      = 0x0001,  
-   MODULE_FLAG_SYMBOLS     = 0x0002,  
-   MODULE_FLAG_64BIT       = 0x0004,  
-   MODULE_FLAG_OPTIMIZED   = 0x0008,  
-   MODULE_FLAG_UNOPTIMIZED = 0x0010  
+enum enum_MODULE_FLAGS {   
+   MODULE_FLAG_NONE        = 0x0000,  
+   MODULE_FLAG_SYSTEM      = 0x0001,  
+   MODULE_FLAG_SYMBOLS     = 0x0002,  
+   MODULE_FLAG_64BIT       = 0x0004,  
+   MODULE_FLAG_OPTIMIZED   = 0x0008,  
+   MODULE_FLAG_UNOPTIMIZED = 0x0010  
 };  
 typedef DWORD MODULE_FLAGS;  
 ```  
   
-```c#  
-public enum enum_MODULE_FLAGS {   
-   MODULE_FLAG_NONE        = 0x0000,  
-   MODULE_FLAG_SYSTEM      = 0x0001,  
-   MODULE_FLAG_SYMBOLS     = 0x0002,  
-   MODULE_FLAG_64BIT       = 0x0004,  
-   MODULE_FLAG_OPTIMIZED   = 0x0008,  
-   MODULE_FLAG_UNOPTIMIZED = 0x0010  
+```cs  
+public enum enum_MODULE_FLAGS {   
+   MODULE_FLAG_NONE        = 0x0000,  
+   MODULE_FLAG_SYSTEM      = 0x0001,  
+   MODULE_FLAG_SYMBOLS     = 0x0002,  
+   MODULE_FLAG_64BIT       = 0x0004,  
+   MODULE_FLAG_OPTIMIZED   = 0x0008,  
+   MODULE_FLAG_UNOPTIMIZED = 0x0010  
 };  
 ```  
   
-## Члены  
- MODULE\_FLAG\_NONE  
- Не задает ни один модуль.  
+## <a name="members"></a>Members  
+ MODULE_FLAG_NONE  
+ Specifies no module.  
   
- MODULE\_FLAG\_SYSTEM  
- Определяет модуль системы.  
+ MODULE_FLAG_SYSTEM  
+ Specifies a system module.  
   
- MODULE\_FLAG\_SYMBOLS  
- Определяет модуль символов.  
+ MODULE_FLAG_SYMBOLS  
+ Specifies a symbol module.  
   
- MODULE\_FLAG\_64BIT  
- Определяет 64 модуль.  
+ MODULE_FLAG_64BIT  
+ Specifies a 64-bit module.  
   
- MODULE\_FLAG\_OPTIMIZED  
- Позволяет оптимизировать определяющую модуль.  Это состояние отражается в **Модули** окна.  
+ MODULE_FLAG_OPTIMIZED  
+ Specifies the module has been optimized. This state is reflected in the **Modules** window.  
   
- MODULE\_FLAG\_UNOPTIMIZED  
- Определяет модуль не позволяет оптимизировать.  Это состояние отражается в **Модули** окна.  Это состояние по умолчанию.  
+ MODULE_FLAG_UNOPTIMIZED  
+ Specifies the module has not been optimized. This state is reflected in the **Modules** window. This is the default state.  
   
-## Заметки  
- Используется для `m_dwModuleFlags` элемент  [MODULE\_INFO](../../../extensibility/debugger/reference/module-info.md) структура.  
+## <a name="remarks"></a>Remarks  
+ Used for the `m_dwModuleFlags` member of the [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) structure.  
   
- Эти флаги могут объединяться с побитовый оператор `OR`.  
+ These flags may be combined with a bitwise `OR`.  
   
-## Требования  
- Заголовок: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [MODULE\_INFO](../../../extensibility/debugger/reference/module-info.md)
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)

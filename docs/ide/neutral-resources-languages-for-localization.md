@@ -1,48 +1,65 @@
 ---
-title: "Языки нейтральных ресурсов для локализации | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "язык и региональные параметры, обнаружение ресурсов"
-  - "глобализация [Visual Studio], ресурсы"
-  - "локализация [Visual Studio], ресурсы"
-  - "нейтральные ресурсы"
-  - "NeutralResourcesLanguageAttribute - класс"
-  - "ресурсы [Visual Studio], система резервного использования"
+title: Neutral Resources Languages for Localization | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- localization [Visual Studio], resources
+- NeutralResourcesLanguageAttribute class
+- globalization [Visual Studio], resources
+- resources [Visual Studio], fallback system
+- culture, locating resources
+- neutral resources
 ms.assetid: ef064995-3b84-4698-a708-9689b7723533
 caps.latest.revision: 8
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# Языки нейтральных ресурсов для локализации
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: cc31ee5c559478e5c1faefc485e02f022f98caa5
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
-Класс <xref:System.Resources.NeutralResourcesLanguageAttribute> определяет язык и региональные параметры ресурсов, включаемых в основную сборку.  Этот атрибут применяется для повышения производительности, чтобы объект <xref:System.Resources.ResourceManager> не искал ресурсы, включенные в основную сборку.  
+---
+# <a name="neutral-resources-languages-for-localization"></a>Neutral Resources Languages for Localization
+The <xref:System.Resources.NeutralResourcesLanguageAttribute> class specifies the culture of the resources included in the main assembly. This attribute is used as a performance enhancement, so that the <xref:System.Resources.ResourceManager> object does not search for resources that are included in the main assembly.  
   
- Следующий фрагмент кода иллюстрирует задание языка нейтральных ресурсов.  Этот код можно поместить в скрипт построения, в файл AssemblyInfo.vb или AssemblyInfo.cs.  
+ The following code shows how to set the neutral resources language. The code can be placed in either a build script or in the AssemblyInfo.vb or AssemblyInfo.cs file.  
   
-```vb#  
+```vb  
 ' Set neutral resources language for assembly.  
 <Assembly: NeutralResourcesLanguageAttribute("en")>  
   
 ```  
   
-```c#  
+```cs  
 // Set neutral resources language for assembly.  
 [assembly: NeutralResourcesLanguageAttribute("en")]  
 ```  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  <xref:System.Resources.ResourceManager>   
- [Знакомство с международными приложениями на платформе .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)   
- [Иерархическая организация ресурсов для локализации](../ide/hierarchical-organization-of-resources-for-localization.md)   
- [Локализация приложений](../ide/localizing-applications.md)   
- [Глобализация и локализация приложений](../ide/globalizing-and-localizing-applications.md)
+ [Introduction to International Applications Based on the .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)   
+ [Hierarchical Organization of Resources for Localization](../ide/hierarchical-organization-of-resources-for-localization.md)   
+ [Localizing Applications](../ide/localizing-applications.md)   
+ [Globalizing and Localizing Applications](../ide/globalizing-and-localizing-applications.md)

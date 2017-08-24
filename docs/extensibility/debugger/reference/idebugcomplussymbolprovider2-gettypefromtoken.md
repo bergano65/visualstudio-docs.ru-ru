@@ -1,5 +1,5 @@
 ---
-title: "IDebugComPlusSymbolProvider2::GetTypeFromToken | Документы Microsoft"
+title: IDebugComPlusSymbolProvider2::GetTypeFromToken | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -29,16 +29,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c14a46cd2d46edb245e78025d03626414dcbb3f2
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: e5d352e43ec4f5f2f364c0c472afb9acb1030d7d
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
-Получает тип токена.  
+Retrieves a type given its token.  
   
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT GetTypeFromToken(  
@@ -49,7 +50,7 @@ HRESULT GetTypeFromToken(
 );  
 ```  
   
-```c#  
+```cs  
 int GetTypeFromToken(  
    uint            appDomain,  
    Guid            guidModule,  
@@ -58,24 +59,24 @@ int GetTypeFromToken(
 );  
 ```  
   
-#### <a name="parameters"></a>Параметры  
+#### <a name="parameters"></a>Parameters  
  `appDomain`  
- [in] Идентификатор домена приложения.  
+ [in] Identifier of the application domain.  
   
  `guidModule`  
- [in] Уникальный идентификатор модуля.  
+ [in] Unique identifier of the module.  
   
  `tdToken`  
- [in] Маркер типа, который требуется получить.  
+ [in] Token of the type to be retrieved.  
   
  `ppField`  
- [out] Возвращает тип, представленный [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).  
+ [out] Returns the type that is represented by the [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).  
   
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) интерфейса.  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interface.  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetTypeFromToken(  
@@ -103,5 +104,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>See Also  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
