@@ -1,99 +1,116 @@
 ---
-title: "Функция SccGetParentProjectPath | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccGetParentProjectPath"
-helpviewer_keywords: 
-  - "Функция SccGetParentProjectPath"
+title: SccGetParentProjectPath Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccGetParentProjectPath
+helpviewer_keywords:
+- SccGetParentProjectPath function
 ms.assetid: 62a71579-36b3-48b9-a1c8-04ab100efa08
 caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
----
-# Функция SccGetParentProjectPath
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 1f19c1787e16d8d8b0c7b5e52703f6f0d0660300
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-Эта функция определяет родительский путь проекта из указанного проекта. Эта функция вызывается, когда пользователь добавляет проект Visual Studio для системы управления версиями.  
+---
+# <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath Function
+This function determines the parent project path of a specified project. This function is called when the user is adding a Visual Studio project to source control.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccGetParentProjectPath(  
-   LPVOID pContext,  
-   HWND   hWnd,  
-   LPSTR  lpUser,  
-   LPCSTR lpProjPath,  
-   LPSTR  lpAuxProjPath,  
-   LPSTR  lpParentProjPath  
+   LPVOID pContext,  
+   HWND   hWnd,  
+   LPSTR  lpUser,  
+   LPCSTR lpProjPath,  
+   LPSTR  lpAuxProjPath,  
+   LPSTR  lpParentProjPath  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Parameters  
  pContext  
- \[in\] Подключаемый модуль Контекстный указатель исходного элемента управления.  
+ [in] The source control plug-in context pointer.  
   
  hWnd  
- \[in\] Дескриптор окна интегрированной среды разработки, подключаемый модуль системы управления версиями можно использовать в качестве родительского для все диалоговые окна, которые он предоставляет.  
+ [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
   
  lpUser  
- \[in, out\] Имя пользователя \(до SCC\_USER\_SIZE, включая символ конца строки NULL\).  
+ [in, out] The user name (up to SCC_USER_SIZE, including the NULL terminator).  
   
  lpProjPath  
- \[in\] Строка, идентифицирующая путь проекта \(до SCC\_PRJPATH\_SIZE, включая символ конца строки NULL\).  
+ [in] String identifying the project path (up to SCC_PRJPATH_SIZE, including the NULL terminator).  
   
  lpAuxProjPath  
- \[in, out\] Вспомогательный строка, определяющая проекта \(до SCC\_PRJPATH\_SIZE, включая символ конца строки NULL\).  
+ [in, out] Auxiliary string identifying the project (up to SCC_PRJPATH_SIZE, including the NULL terminator).  
   
  lpParentProjPath  
- \[in, out\] Выходная строка идентификации родительский путь проекта \(до SCC\_PRJPATH\_SIZE, включая символ конца строки NULL\).  
+ [in, out] Output string identifying the parent project path (up to SCC_PRJPATH_SIZE, including the NULL terminator).  
   
-## Возвращаемое значение  
- Реализации подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Значение|Описание|  
-|--------------|--------------|  
-|SCC\_OK|Родительский путь проекта был успешно получен.|  
-|SCC\_E\_INITIALIZEFAILED|Не удалось инициализировать проект.|  
-|SCC\_E\_INVALIDUSER|Пользователю не удалось выполнить вход модуль управления версиями.|  
-|SCC\_E\_UNKNOWNPROJECT|Подключаемый модуль системы управления версиями проекта неизвестен.|  
-|SCC\_E\_INVALIDFILEPATH|Путь к файлу недопустим или непригодным для использования.|  
-|SCC\_E\_NOTAUTHORIZED|Для выполнения этой операции не разрешено пользователю.|  
-|SCC\_E\_ACCESSFAILURE|Произошла ошибка при доступе к системе управления версиями, вероятно, из\-за проблемы с сетью или конфликтов. Рекомендуется повторить операцию.|  
-|SCC\_E\_PROJSYNTAXERR|Проект недопустимый синтаксис.|  
-|SCC\_E\_CONNECTIONFAILURE|Проблема подключения хранилища.|  
-|SCC\_E\_NONSPECIFICERROR<br /><br /> SCC\_E\_UNKNOWNERROR|Неспецифическая ошибка.|  
+|Value|Description|  
+|-----------|-----------------|  
+|SCC_OK|Parent project path was successfully obtained.|  
+|SCC_E_INITIALIZEFAILED|Project could not be initialized.|  
+|SCC_E_INVALIDUSER|The user could not log in to the source control plug-in.|  
+|SCC_E_UNKNOWNPROJECT|Project is unknown to the source control plug-in.|  
+|SCC_E_INVALIDFILEPATH|Invalid or unusable file path.|  
+|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
+|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
+|SCC_E_PROJSYNTAXERR|Invalid project syntax.|  
+|SCC_E_CONNECTIONFAILURE|Store connection problem.|  
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Nonspecific failure.|  
   
-## Заметки  
- Эта функция возвращает успех или неудачу код и, в случае успешного выполнения заполняет переменную `lpParentProjPath` путь полный проект в указанный проект.  
+## <a name="remarks"></a>Remarks  
+ This function returns a success or failure code and, if successful, fills the variable `lpParentProjPath` with the full project path to the specified project.  
   
- Эта функция возвращает родительский путь проекта из существующего проекта. Для корневой проект, функция возвращает путь к проекту, который был передан в \(то есть тот же корневой проект путь\). Обратите внимание, что путь проекта строка, которая имеет смысл только для подключаемого модуля системы управления версиями.  
+ This function returns the parent project path of an existing project. For the root project, the function returns the project path that was passed in (that is, the same root project path). Note that a project path is a string that is meaningful only to the source control plug-in.  
   
- IDE готова к принятию изменений `lpUser` и `lpAuxProjPath` также параметры. Среда IDE будет сохранять эти строки и передать их в [SccOpenProject](../extensibility/sccopenproject-function.md) при открытии этого проекта в будущем. Эти строки таким образом, представляют собой способ для системы управления версиями, подключаемый модуль для данных отслеживания, который необходимо связать с проектом.  
+ The IDE is prepared to accept changes to the `lpUser` and `lpAuxProjPath` parameters as well. The IDE will persist these strings and pass them to the [SccOpenProject](../extensibility/sccopenproject-function.md) when the user opens this project in the future. These strings, therefore, provide a way for the source control plug-in to track information it needs to associate with a project.  
   
- Эта функция аналогична [SccGetProjPath](../extensibility/sccgetprojpath-function.md), за исключением того, что он не предлагать пользователю выбрать проект. Он также не создает новый проект, но работает только с существующим проектом.  
+ This function is similar to the [SccGetProjPath](../extensibility/sccgetprojpath-function.md), except that it does not prompt the user to select a project. It also never creates a new project but works only with an existing project.  
   
- При `SccGetParentProjectPath` вызове `lpProjPath` и `lpAuxProjPath` не будет пустым и будет соответствовать допустимым проектом. Эти строки обычно принимаются IDE из предыдущего вызова `SccGetProjPath` функции.  
+ When `SccGetParentProjectPath` is called, `lpProjPath` and `lpAuxProjPath` will not be empty and will correspond to a valid project. These strings are usually received by the IDE from a previous call to the `SccGetProjPath` function.  
   
- `lpUser` Аргумент представляет собой имя пользователя. IDE передаст тем же именем пользователя, он ранее получен от `SccGetProjPath` функции и подключаемый модуль системы управления версиями следует использовать имя по умолчанию. Если пользователь уже открытое соединение с помощью подключаемого модуля, подключаемый модуль должен попытайтесь устранить каких\-либо запросов, чтобы убедиться в том, что функция будет работать без вмешательства пользователя. Тем не менее, если имя входа не удается, подключаемый модуль должен запросить пользователя для входа и, получив является допустимым именем входа, передайте имя обратно в `lpUser`. Так как подключаемый модуль может изменить эту строку, IDE всегда будет выделить буфер размером \(`SCC_USER_LEN`\+ 1\). Если строка изменяется, новая строка необходимо допустимое имя входа \(по крайней мере как допустимый как старая строка\).  
+ The `lpUser` argument is the user name. The IDE will pass in the same user name that it had previously received from the `SccGetProjPath` function, and the source control plug-in should use the name as a default. If the user already has an open connection with the plug-in, then the plug-in should try to eliminate any prompts to make sure the function works silently. However, if the login fails, the plug-in should prompt the user for a login and, when it receives a valid login, pass the name back in `lpUser`. Because the plug-in may change this string, the IDE will always allocate a buffer of size (`SCC_USER_LEN`+1). If the string is changed, the new string must be a valid login name (at least as valid as the old string).  
   
-## Технические примечания для SccCreateSubProject и SccGetParentProjectPath  
- Добавление решений и проектов в систему управления версиями, был упрощен в Visual Studio, чтобы свести к минимуму количество раз, когда пользователь будет предложено выбрать расположения в системе управления версиями. Эти изменения активируются по Visual Studio, если подключаемый модуль системы управления версиями поддерживает несколько новых функций [SccCreateSubProject](../extensibility/scccreatesubproject-function.md) и `SccGetParentProjectPath` функции. Однако следующий параметр реестра можно отключить эти изменения и вернуться к предыдущему поведению Visual Studio \(исходный элемент управления Plug\-in API версии 1.1\).  
+## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>Technical Notes for SccCreateSubProject and SccGetParentProjectPath  
+ Adding solutions and projects to source control has been simplified in Visual Studio to minimize the number of times a user is prompted to select locations in the source control system. These changes are activated by Visual Studio if a source control plug-in supports both of the new functions, the [SccCreateSubProject](../extensibility/scccreatesubproject-function.md) and the `SccGetParentProjectPath` function. However, the following registry entry can be used to disable these changes and revert to the previous Visual Studio (Source Control Plug-in API Version 1.1) behavior:  
   
- \[HKEY\_CURRENT\_USER\\Software\\Microsoft\\VisualStudio\\8.0\\SourceControl\] «DoNotCreateSolutionRootFolderInSourceControl» \= DWORD: 00000001  
+ [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl"=dword:00000001  
   
- Если этот параметр реестра не существует или имеет значение DWORD: 00000000, пытается использовать новые функции Visual Studio `SccCreateSubProject`и`SccGetParentProjectPath`.  
+ If this registry entry does not exist or is set to dword:00000000, Visual Studio attempts to use the new functions, `SccCreateSubProject`and`SccGetParentProjectPath`.  
   
- Если параметр реестра DWORD: 00000001, Visual Studio не будет пытаться использовать эти новые функции и операции добавления в систему управления версиями работают так, как было в предыдущих версиях Visual Studio.  
+ If the registry entry is set to dword:00000001, Visual Studio does not attempt to use these new functions, and the operations of adding to source control work as they did in prior versions of Visual Studio.  
   
-## См. также  
- [Функции API подключаемого модуля источника элемента управления](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
  [SccCreateSubProject](../extensibility/scccreatesubproject-function.md)   
  [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

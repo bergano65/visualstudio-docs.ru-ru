@@ -1,66 +1,83 @@
 ---
-title: "Функция SccGetEvents | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccGetEvents"
-helpviewer_keywords: 
-  - "Функция SccGetEvents"
+title: SccGetEvents Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccGetEvents
+helpviewer_keywords:
+- SccGetEvents function
 ms.assetid: 32f8147d-6dcc-465e-b07b-42da5824f9b0
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
----
-# Функция SccGetEvents
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 8db1e74d8529192408be12c9f87ca4f3ea086516
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-Эта функция извлекает события в очереди состояния.  
+---
+# <a name="sccgetevents-function"></a>SccGetEvents Function
+This function retrieves a queued status event.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccGetEvents (  
-   LPVOID pvContext,  
-   LPSTR  lpFileName,  
-   LPLONG lpStatus,  
-   LPLONG pnEventsRemaining  
+   LPVOID pvContext,  
+   LPSTR  lpFileName,  
+   LPLONG lpStatus,  
+   LPLONG pnEventsRemaining  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Parameters  
  pvContext  
- \[in\] Структура подключаемого модуля контекста исходного элемента управления.  
+ [in] The source control plug-in context structure.  
   
  lpFileName  
- \[in, out\] Буфер, который подключаемый модуль системы управления версиями помещает имя возвращенного файла \(до \_MAX\_PATH символов\).  
+ [in, out] Buffer where the source control plug-in puts the returned file name (up to _MAX_PATH characters).  
   
  lpStatus  
- \[in, out\] Возвращает код состояния \(см. [Код состояния файла](../extensibility/file-status-code-enumerator.md) Возможные значения\).  
+ [in, out] Returns status code (see [File Status Code](../extensibility/file-status-code-enumerator.md) for possible values).  
   
  pnEventsRemaining  
- \[in, out\] Возвращает число записей останется в очереди, после этого вызова. Если это число велико, вызывающий объект может понадобиться вызвать [SccQueryInfo](../extensibility/sccqueryinfo-function.md) для получения всех данных за один раз.  
+ [in, out] Returns number of entries left in the queue after this call. If this number is large, the caller may decide to call the [SccQueryInfo](../extensibility/sccqueryinfo-function.md) to get all the information at once.  
   
-## Возвращаемое значение  
- Реализации подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Значение|Описание|  
-|--------------|--------------|  
-|SCC\_OK|Получение событий выполнено успешно.|  
-|SCC\_E\_OPNOTSUPPORTED|Эта функция не поддерживается.|  
-|SCC\_E\_NONSPECIFICERROR|Неспецифическая ошибка.|  
+|Value|Description|  
+|-----------|-----------------|  
+|SCC_OK|Get events succeeded.|  
+|SCC_E_OPNOTSUPPORTED|This function is not supported.|  
+|SCC_E_NONSPECIFICERROR|Nonspecific failure.|  
   
-## Заметки  
- Эта функция вызывается во время простоя обработки для просмотра были обновлений состояния для файлов в системе управления версиями. Подключаемый модуль системы управления версиями поддерживает состояние всех файлов, которые, как известно, и при каждом изменении состояния помечена для подключаемого модуля, состояние и связанный файл хранятся в очереди. Когда `SccGetEvents` вызывается верхней части получается и возвращается элемент из очереди. Эта функция ограничивается вернуть только ранее кэшированные данные и должен иметь очень ограниченные сроки \(то есть без чтения диска или запрашивает состояние системы управления версиями\); в противном случае производительность интегрированной среды разработки может начать снижаться.  
+## <a name="remarks"></a>Remarks  
+ This function is called during idle processing to see if there have been any status updates for files under source control. The source control plug-in maintains status of all the files it knows about, and whenever a change of status is noted by the plug-in, the status and the associated file are stored in a queue. When `SccGetEvents` is called, the top element of the queue is retrieved and returned. This function is constrained to return only previously cached information and must have a very quick turnaround (that is, no reading of the disk or asking the source control system for status); otherwise the performance of the IDE may start to degrade.  
   
- Если отчет не обновляется состояние, подключаемый модуль системы управления версиями хранит пустая строка в буфере, на который указывает `lpFileName`. В противном случае — подключаемый модуль хранит имя полного пути файла для которого сведения о состоянии изменилась и возвращается код соответствующего состояния \(одно из значений, подробно [Код состояния файла](../extensibility/file-status-code-enumerator.md)\).  
+ If there is no status update to report, the source control plug-in stores an empty string in the buffer pointed to by `lpFileName`. Otherwise, the plug-in stores the full path name of the file for which the status information has changed and returns the appropriate status code (one of the values detailed in [File Status Code](../extensibility/file-status-code-enumerator.md)).  
   
-## См. также  
- [Функции API подключаемого модуля источника элемента управления](../extensibility/source-control-plug-in-api-functions.md)   
- [Код состояния файла](../extensibility/file-status-code-enumerator.md)
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
+ [File Status Code](../extensibility/file-status-code-enumerator.md)

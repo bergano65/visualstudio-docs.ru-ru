@@ -1,41 +1,58 @@
 ---
-title: "IDebugPortSupplier2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPortSupplier2"
-helpviewer_keywords: 
-  - "Интерфейс IDebugPortSupplier2"
+title: IDebugPortSupplier2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugPortSupplier2
+helpviewer_keywords:
+- IDebugPortSupplier2 interface
 ms.assetid: 37067324-2ea6-4a01-8829-a6e9c7a70068
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
----
-# IDebugPortSupplier2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4bc102daaea87a8dff93eb76b0bc42e195fa1f21
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-Порты предоставляют этого интерфейса к сеансу диспетчер отладки \(SDM\).  
+---
+# <a name="idebugportsupplier2"></a>IDebugPortSupplier2
+This interface supplies ports to the session debug manager (SDM).  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugPortSupplier2 : IUnknown  
 ```  
   
-## Примечания по реализации  
- Пользовательский поставщик порта, реализующий этот интерфейс, чтобы представить поставщика порта.  
+## <a name="notes-for-implementers"></a>Notes for Implementers  
+ A custom port supplier implements this interface to represent a port supplier.  
   
-## Замечания для вызывающих объектов  
- Вызов `CoCreateInstance` с помощью поставщика порта  `GUID` возвращает этот интерфейс \(это типичный способ получить этот интерфейс\).  Примеры.  
+## <a name="notes-for-callers"></a>Notes for Callers  
+ A call to `CoCreateInstance` with a port supplier's `GUID` returns this interface (this is the typical way to obtain this interface). For example:  
   
-```cpp#  
+```cpp  
 IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)  
 {  
     IDebugPortSupplier2 *pPS = NULL;  
@@ -50,39 +67,39 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 }  
 ```  
   
- Вызов [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md) возвращает этот интерфейс, представляющий текущего поставщика порта, используемого by  [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
+ A call to [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md) returns this interface, representing the current port supplier being used by [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
   
- [GetPortSupplier](../Topic/IDebugPort2::GetPortSupplier.md) возвращает этот интерфейс, представляющий поставщика порта, который создал порт.  
+ [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md) returns this interface, representing the port supplier that created the port.  
   
- [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) представляет список  `IDebugPortSupplier` интерфейсы \(  `IEnumDebugPortSuppliers` интерфейс получен из  [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md), представляющий всех зарегистрированных поставщиков портов с  [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]\).  
+ [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) represents a list of `IDebugPortSupplier` interfaces (the `IEnumDebugPortSuppliers` interface is obtained from [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md), representing all of the port suppliers registered with [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]).  
   
- Отладчик не взаимодействует с поставщиком порта.  
+ A debug engine typically does not interact with a port supplier.  
   
-## Методы в том порядке Vtable  
- В следующей таблице показаны методы `IDebugPortSupplier2`.  
+## <a name="methods-in-vtable-order"></a>Methods in Vtable Order  
+ The following table shows the methods of `IDebugPortSupplier2`.  
   
-|Метод|Описание|  
-|-----------|--------------|  
-|[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|Получает имя поставщика порта.|  
-|[GetPortSupplierId](../Topic/IDebugPortSupplier2::GetPortSupplierId.md)|Получает идентификатор поставщика порта.|  
-|[GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md)|Получает порт от поставщика порта.|  
-|[EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)|Перечисляет порты, которые уже существуют.|  
-|[CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)|Проверяет, что поставщик порта поддерживает добавление новых порты.|  
-|[AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)|Добавить порт.|  
-|[RemovePort](../../../extensibility/debugger/reference/idebugportsupplier2-removeport.md)|Удаляет порт.|  
+|Method|Description|  
+|------------|-----------------|  
+|[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|Gets the port supplier name.|  
+|[GetPortSupplierId](../../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)|Gets the port supplier identifier.|  
+|[GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md)|Gets a port from a port supplier.|  
+|[EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)|Enumerates the ports that already exist.|  
+|[CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)|Verifies that a port supplier supports adding new ports.|  
+|[AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)|Adds a port.|  
+|[RemovePort](../../../extensibility/debugger/reference/idebugportsupplier2-removeport.md)|Removes a port.|  
   
-## Заметки  
- Поставщик порта может определить именем и идентификатором, добавлять и удалять порты и перечислить все порты, которые поставщик порта.  
+## <a name="remarks"></a>Remarks  
+ A port supplier can identify itself by name and ID, add and remove ports, and enumerate all ports that the port supplier provides.  
   
-## Требования  
- Заголовок: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
- [Базовых интерфейсов](../../../extensibility/debugger/reference/core-interfaces.md)   
- [GetPortSupplier](../Topic/IDebugPort2::GetPortSupplier.md)   
+## <a name="see-also"></a>See Also  
+ [Core Interfaces](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)   
  [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)   
  [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)

@@ -1,98 +1,115 @@
 ---
-title: "Функция SccCreateSubProject | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccCreateSubProject"
-helpviewer_keywords: 
-  - "Функция SccCreateSubProject"
+title: SccCreateSubProject Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccCreateSubProject
+helpviewer_keywords:
+- SccCreateSubProject function
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
 caps.latest.revision: 19
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 19
----
-# Функция SccCreateSubProject
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: cf9a5adb915820b9b098ee9006e67b82c45a25e5
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-Эта функция создает подпроект с заданным именем в существующий проект родительского заданные `lpParentProjPath` аргумент.  
+---
+# <a name="scccreatesubproject-function"></a>SccCreateSubProject Function
+This function creates a subproject with the given name under an existing parent project specified by the `lpParentProjPath` argument.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccCreateSubProject(  
-   LPVOID pContext,  
-   HWND   hWnd,  
-   LPSTR  lpUser,  
-   LPCSTR lpParentProjPath,  
-   LPCSTR lpSubProjName,  
-   LPSTR  lpAuxProjPath,  
-   LPSTR  lpSubProjPath  
+   LPVOID pContext,  
+   HWND   hWnd,  
+   LPSTR  lpUser,  
+   LPCSTR lpParentProjPath,  
+   LPCSTR lpSubProjName,  
+   LPSTR  lpAuxProjPath,  
+   LPSTR  lpSubProjPath  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Parameters  
  pContext  
- \[in\] Подключаемый модуль Контекстный указатель исходного элемента управления.  
+ [in] The source control plug-in context pointer.  
   
  hWnd  
- \[in\] Дескриптор окна интегрированной среды разработки, подключаемый модуль системы управления версиями можно использовать в качестве родительского для все диалоговые окна, которые он предоставляет.  
+ [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
   
  lpUser  
- \[in, out\] Имя пользователя \(до SCC\_USER\_SIZE, включая символ конца строки NULL\).  
+ [in, out] The username (up to SCC_USER_SIZE, including the NULL terminator).  
   
  lpParentProjPath  
- \[in\] Строка, идентифицирующая путь родительского проекта \(до SCC\_PRJPATH\_SIZE, включая символ конца строки NULL\).  
+ [in] A string identifying the path of the parent project (up to SCC_PRJPATH_SIZE, including the NULL terminator).  
   
  lpSubProjName  
- \[in\] Имя предлагаемые подпроекта \(до SCC\_PRJPATH\_SIZE, включая символ конца строки NULL\).  
+ [in] The suggested subproject name (up to SCC_PRJPATH_SIZE, including the NULL terminator).  
   
  lpAuxProjPath  
- \[in, out\] Вспомогательный строка, определяющая проекта \(до SCC\_PRJPATH\_SIZE, включая символ конца строки NULL\).  
+ [in, out] Auxiliary string identifying the project (up to SCC_PRJPATH_SIZE, including the NULL terminator).  
   
  lpSubProjPath  
- \[in, out\] Выходная строка идентификации пути для подпроекта \(до SCC\_PRJPATH\_SIZE, включая символ конца строки NULL\).  
+ [in, out] Output string identifying the path for the subproject (up to SCC_PRJPATH_SIZE, including the NULL terminator).  
   
-## Возвращаемое значение  
- Реализации подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Значение|Описание|  
-|--------------|--------------|  
-|SCC\_OK|Подпроект успешно создан.|  
-|SCC\_E\_INITIALIZEFAILED|Не удалось инициализировать родительского проекта.|  
-|SCC\_E\_INVALIDUSER|Пользователь не может войти систему управления версиями.|  
-|SCC\_E\_COULDNOTCREATEPROJECT|Не удается создать подпроект.|  
-|SCC\_E\_PROJSYNTAXERR|Проект недопустимый синтаксис.|  
-|SCC\_E\_UNKNOWNPROJECT|Родительский проект неизвестен подключаемый модуль системы управления версиями.|  
-|SCC\_E\_INVALIDFILEPATH|Путь к файлу недопустим или непригодным для использования.|  
-|SCC\_E\_NOTAUTHORIZED|Для выполнения этой операции не разрешено пользователю.|  
-|SCC\_E\_ACCESSFAILURE|Произошла ошибка при доступе к системе управления версиями, вероятно, из\-за проблемы с сетью или конфликтов. Рекомендуется повторить операцию.|  
-|SCC\_E\_CONNECTIONFAILURE|Удалось установить подключаемый модуль подключения управления источника.|  
-|SCC\_E\_NONSPECIFICERROR<br /><br /> SCC\_E\_UNKNOWNERROR|Неспецифическая ошибка.|  
+|Value|Description|  
+|-----------|-----------------|  
+|SCC_OK|Subproject was successfully created.|  
+|SCC_E_INITIALIZEFAILED|Parent project could not be initialized.|  
+|SCC_E_INVALIDUSER|The user could not log in to the source control system.|  
+|SCC_E_COULDNOTCREATEPROJECT|Subproject cannot be created.|  
+|SCC_E_PROJSYNTAXERR|Invalid project syntax.|  
+|SCC_E_UNKNOWNPROJECT|The parent project is unknown to the source control plug-in.|  
+|SCC_E_INVALIDFILEPATH|Invalid or unusable file path.|  
+|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
+|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
+|SCC_E_CONNECTIONFAILURE|There was a source control plug-in connection problem.|  
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Nonspecific failure.|  
   
-## Заметки  
- Если подпроект с именем уже существует, функция может изменить имя по умолчанию для создания уникальных, например путем добавления «\_ \< число \>» к нему. Вызывающий объект должен быть готов к внесению изменений `lpUser`, `lpSubProjPath`, и `lpAuxProjPath`.`lpSubProjPath` И`lpAuxProjPath` аргументы затем используются в вызове [SccOpenProject](../extensibility/sccopenproject-function.md). Они не должно изменяться после возврата вызывающему объекту. Эти строки представляют собой способ для системы управления версиями, подключаемый модуль для отслеживания сведений, которые нужно связать с проектом. Так как подключаемый модуль можно использовать форматированную строку, могут не подходить для просмотра вызывающей стороны интегрированной среды разработки эти два параметра, при возврате не отображаются. Функция возвращает успех или неудачу кода и в случае успешного выполнения заполняет переменную `lpSubProjPath` путем полного проекта в новый проект.  
+## <a name="remarks"></a>Remarks  
+ If a subproject with the name already exists, the function can change the default name to create a unique one, for example by adding "_\<number>" to it. The caller must be prepared to accept changes to `lpUser`, `lpSubProjPath`, and `lpAuxProjPath`. The `lpSubProjPath` and`lpAuxProjPath` arguments are then used in a call to the [SccOpenProject](../extensibility/sccopenproject-function.md). They should not be modified by the caller upon return. These strings provide a way for the source control plug-in to track information that it needs to associate with a project. The caller IDE will not display these two parameters upon return, because the plug-in can use a formatted string that might not be suitable for viewing. The function returns a success or failure code and, if successful, fills the variable `lpSubProjPath` with the full project path to the new project.  
   
- Эта функция аналогична [SccGetProjPath](../extensibility/sccgetprojpath-function.md), за исключением того, что он автоматически создает проект, а не предлагать пользователю выбрать один. При `SccCreateSubProject` вызове функции `lpParentProjName` и `lpAuxProjPath` не будет пустым и будет соответствовать допустимым проектом. Эти строки обычно принимаются IDE из предыдущего вызова `SccGetProjPath` функции или [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md).  
+ This function is similar to the [SccGetProjPath](../extensibility/sccgetprojpath-function.md), except that it silently creates a project rather than prompting the user to select one. When the `SccCreateSubProject` function is called, `lpParentProjName` and `lpAuxProjPath` will not be empty and will correspond to a valid project. These strings are usually received by the IDE from a previous call to the `SccGetProjPath` function or the [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md).  
   
- `lpUser` Аргумент представляет собой имя пользователя. IDE передаст тем же именем пользователя, он ранее получен от `SccGetProjPath`, и модуль управления версиями следует использовать имя по умолчанию. Если пользователь уже открытое соединение с помощью подключаемого модуля, подключаемый модуль должен попытайтесь устранить каких\-либо запросов, чтобы убедиться в том, что функция будет работать без вмешательства пользователя. Тем не менее, если имя входа не удается, подключаемый модуль должен запросить пользователя для входа и, получив является допустимым именем входа, передайте имя обратно в `lpUser`. Так как подключаемый модуль может изменить эту строку, IDE будет всегда выделяется буфер размером \(SCC\_USER\_LEN \+ 1 или SCC\_USER\_SIZE, который включает места для завершающего символа null\). Если строка изменяется, новая строка необходимо допустимое имя входа \(по крайней мере как допустимый как старая строка\).  
+ The `lpUser` argument is the user name. The IDE will pass in the same user name that it had previously received from `SccGetProjPath`, and the source control plug-in should use the name as a default. If the user already has an open connection with the plug-in, then the plug-in should try to eliminate any prompts to make sure the function works silently. However, if the login fails, the plug-in should prompt the user for a login and, when it receives a valid login, pass the name back in `lpUser`. Because the plug-in may change this string, the IDE will always allocate a buffer of size (SCC_USER_LEN+1 or SCC_USER_SIZE, which includes space for the null terminator). If the string is changed, the new string must be a valid login name (at least as valid as the old string).  
   
-## Технические примечания для SccCreateSubProject и SccGetParentProjectPath  
- Добавление решений и проектов в систему управления версиями, был упрощен в Visual Studio, чтобы свести к минимуму количество раз, когда пользователь будет предложено выбрать расположения в системе управления версиями. Эти изменения активируются по Visual Studio, если подключаемый модуль системы управления версиями поддерживает несколько новых функций `SccCreateSubProject` и `SccGetParentProjectPath`. Однако следующий параметр реестра можно отключить эти изменения и вернуться к поведению предыдущих Visual Studio \(исходный элемент управления Plug\-in API версии 1.1\).  
+## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>Technical Notes for SccCreateSubProject and SccGetParentProjectPath  
+ Adding solutions and projects to source control has been simplified in Visual Studio to minimize the number of times a user is prompted to select locations in the source control system. These changes are activated by Visual Studio if a source control plug-in supports both of the new functions, `SccCreateSubProject` and `SccGetParentProjectPath`. However, the following registry entry can be used to disable these changes and revert to previous Visual Studio (Source Control Plug-in API Version 1.1) behavior:  
   
- \[HKEY\_CURRENT\_USER\\Software\\Microsoft\\VisualStudio\\8.0\\SourceControl\] «DoNotCreateSolutionRootFolderInSourceControl» \= DWORD: 00000001  
+ [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl"=dword:00000001  
   
- Если этот параметр реестра не существует или имеет значение DWORD: 00000000, Visual Studio пытается использовать новые функции `SccCreateSubProject` и `SccGetParentProjectPath`.  
+ If this registry entry does not exist or is set to dword:00000000, Visual Studio attempts to use the new functions, `SccCreateSubProject` and `SccGetParentProjectPath`.  
   
- Если параметр реестра DWORD: 00000001, Visual Studio не будет пытаться использовать эти новые функции и операции добавления в систему управления версиями работают так, как было в предыдущих версиях Visual Studio.  
+ If the registry entry is set to dword:00000001, Visual Studio does not attempt to use these new functions, and the operations of adding to source control work as they did in prior versions of Visual Studio.  
   
-## См. также  
- [Функции API подключаемого модуля источника элемента управления](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
  [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)   
  [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

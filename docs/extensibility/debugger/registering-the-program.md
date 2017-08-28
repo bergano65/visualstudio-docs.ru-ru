@@ -1,110 +1,127 @@
 ---
-title: "Регистрация программы | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "программы регистрации"
-  - "отладка [пакет SDK для отладки], программы регистрации"
+title: Registering the Program | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- programs, registration
+- debugging [Debugging SDK], program registration
 ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# Регистрация программы
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 939b047c531ef365ef9a57b8b0947ffa8b0e1575
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-После того как отладчик приобретал порт, представленный IDebugPort2 интерфейс, следующий шаг в поле разрешить программа для отладки зарегистрировать его с портом.  Как только после регистрации программа доступна для отладки означает одно из следующих значений:  
+---
+# <a name="registering-the-program"></a>Registering the Program
+After the debug engine has acquired a port, represented by an [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interface, the next step in enabling the program to be debugged is to register it with the port. Once registered, the program is available for debugging by one of the following means:  
   
--   Процесс вложение, который позволяет отладчику к элементу управления отладки увеличения полного выполнения приложения.  
+-   The process of attaching, which allows the debugger to gain complete debugging control of a running application.  
   
--   JIT отладка, что позволяет при отладке после \-\- фактов программы, которая работает независимо от отладчика.  Если архитектура среды выполнения перехватывает ошибку, отладчик получает уведомление до выпусков операционной системы или среды выполнения память и ресурсы ошибаясь программы.  
+-   Just-in-time (JIT) debugging, which allows for after-the-fact debugging of a program that runs independently of a debugger. When the run-time architecture catches a fault, the debugger is notified before the operating system or runtime environment releases the memory and resources of the faulting program.  
   
-## Регистрация процедура  
+## <a name="registering-procedure"></a>Registering Procedure  
   
-#### Регистрация программы  
+#### <a name="to-register-your-program"></a>To register your program  
   
-1.  Вызовите [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) метод, реализуемый портом.  
+1.  Call the [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) method implemented by the port.  
   
-     `IDebugPortNotify2::AddProgramNode` требует указателя на  [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) интерфейс.  
+     `IDebugPortNotify2::AddProgramNode` requires a pointer to an [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interface.  
   
-     Как правило, когда операционная система или среду выполнения загрузки программы, она создает узел программы.  Если поставлена загружает обработчик отладки \(DE\) программу, то DE создает и регистрирует узел программы.  
+     Typically, when the operating system or run-time environment loads a program, it creates the program node. If the debug engine (DE) is asked to load the program then the DE creates and registers the program node.  
   
-     В следующем примере показан обработчик отладки при запуске программы и при регистрации его с портом.  
+     The following example shows the debug engine launching the program and registering it with a port.  
   
     > [!NOTE]
-    >  Это не является единственным способа запуска и продолжить процесс; это основной пример регистрация программы с портом.  
+    >  This is not the only way to launch and resume a process; this is mainly an example of registering a program with a port.  
   
-    ```cpp#  
+    ```cpp  
     // This is an IDebugEngineLaunch2 method.  
     HRESULT CDebugEngine::LaunchSuspended(/* omitted parameters */,  
-                                          IDebugPort2 *pPort,  
-                                          /* omitted parameters */,  
-                                          IDebugProcess2**ppDebugProcess)  
+                                          IDebugPort2 *pPort,  
+                                          /* omitted parameters */,  
+                                          IDebugProcess2**ppDebugProcess)  
     {  
-        // do stuff here to set up for a launch (such as handling the other parameters)  
-        ...  
+        // do stuff here to set up for a launch (such as handling the other parameters)  
+        ...  
   
-        // Now get the IPortNotify2 interface so we can register a program node  
-        // in CDebugEngine::ResumeProcess.  
-        CComPtr<IDebugDefaultPort2> spDefaultPort;  
-        HRESULT hr = pPort->QueryInterface(&spDefaultPort);  
-        if (SUCCEEDED(hr))  
-        {  
-            CComPtr<IDebugPortNotify2> spPortNotify;  
-            hr = spDefaultPort->GetPortNotify(&spPortNotify);  
-            if (SUCCEEDED(hr))  
-            {  
-                // Remember the port notify so we can use it in ResumeProcess.  
-                m_spPortNotify = spPortNotify;  
+        // Now get the IPortNotify2 interface so we can register a program node  
+        // in CDebugEngine::ResumeProcess.  
+        CComPtr<IDebugDefaultPort2> spDefaultPort;  
+        HRESULT hr = pPort->QueryInterface(&spDefaultPort);  
+        if (SUCCEEDED(hr))  
+        {  
+            CComPtr<IDebugPortNotify2> spPortNotify;  
+            hr = spDefaultPort->GetPortNotify(&spPortNotify);  
+            if (SUCCEEDED(hr))  
+            {  
+                // Remember the port notify so we can use it in ResumeProcess.  
+                m_spPortNotify = spPortNotify;  
   
-                // Now launch the process in a suspended state and return the  
-                // IDebugProcess2 interface  
-                CComPtr<IDebugPortEx2> spPortEx;  
-                hr = pPort->QueryInterface(&spPortEx);  
-                if (SUCCEEDED(hr))  
-                {  
-                    // pass on the parameters we were given (omitted here)  
-                    hr = spPortEx->LaunchSuspended(/* omitted paramters */,ppDebugProcess)  
-                }  
-            }  
-        }  
-        return(hr);  
+                // Now launch the process in a suspended state and return the  
+                // IDebugProcess2 interface  
+                CComPtr<IDebugPortEx2> spPortEx;  
+                hr = pPort->QueryInterface(&spPortEx);  
+                if (SUCCEEDED(hr))  
+                {  
+                    // pass on the parameters we were given (omitted here)  
+                    hr = spPortEx->LaunchSuspended(/* omitted paramters */,ppDebugProcess)  
+                }  
+            }  
+        }  
+        return(hr);  
     }  
   
     HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)  
     {  
-        // Make a program node for this process  
-        HRESULT hr;  
-        CComPtr<IDebugProgramNode2> spProgramNode;  
-        hr = this->GetProgramNodeForProcess(pProcess, &spProgramNode);  
-        if (SUCCEEDED(hr))  
-        {  
-            hr = m_spPortNotify->AddProgramNode(spProgramNode);  
-            if (SUCCEEDED(hr))  
-            {  
-                // resume execution of the process using the port given to us earlier.  
-               // (Querying for the IDebugPortEx2 interface is valid here since  
-               // that's how we got the IDebugPortNotify2 interface in the first place.)  
-                CComPtr<IDebugPortEx2> spPortEx;  
-                hr = m_spPortNotify->QueryInterface(&spPortEx);  
-                if (SUCCEEDED(hr))  
-                {  
-                    hr  = spPortEx->ResumeProcess(pDebugProcess);  
-                }  
-            }  
-        }  
-        return(hr);  
+        // Make a program node for this process  
+        HRESULT hr;  
+        CComPtr<IDebugProgramNode2> spProgramNode;  
+        hr = this->GetProgramNodeForProcess(pProcess, &spProgramNode);  
+        if (SUCCEEDED(hr))  
+        {  
+            hr = m_spPortNotify->AddProgramNode(spProgramNode);  
+            if (SUCCEEDED(hr))  
+            {  
+                // resume execution of the process using the port given to us earlier.  
+               // (Querying for the IDebugPortEx2 interface is valid here since  
+               // that's how we got the IDebugPortNotify2 interface in the first place.)  
+                CComPtr<IDebugPortEx2> spPortEx;  
+                hr = m_spPortNotify->QueryInterface(&spPortEx);  
+                if (SUCCEEDED(hr))  
+                {  
+                    hr  = spPortEx->ResumeProcess(pDebugProcess);  
+                }  
+            }  
+        }  
+        return(hr);  
     }  
   
     ```  
   
-## См. также  
- [Приступая к порту](../../extensibility/debugger/getting-a-port.md)   
- [Включение программы для отладки](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+## <a name="see-also"></a>See Also  
+ [Getting a Port](../../extensibility/debugger/getting-a-port.md)   
+ [Enabling a Program to Be Debugged](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

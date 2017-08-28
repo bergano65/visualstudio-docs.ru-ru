@@ -1,5 +1,5 @@
 ---
-title: "Функция SccGetProjPath | Документы Microsoft"
+title: SccGetProjPath Function | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,24 +30,25 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 551fe26fe20da62d6892a8c7e807cf6c22600fc8
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b45e9a9f33bd5f1b30ee0f300385ef984ce1bc0b
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="sccgetprojpath-function"></a>Функция SccGetProjPath
-Эта функция пользователю путь проекта, который является строкой, имеет смысл только для подключаемого модуля системы управления версиями. Вызывается, когда пользователь является:  
+# <a name="sccgetprojpath-function"></a>SccGetProjPath Function
+This function prompts the user for a project path, which is a string that is meaningful only to the source control plug-in. It is called when the user is:  
   
--   Создание нового проекта  
+-   Creating a new project  
   
--   При добавлении существующего проекта в систему управления версиями  
+-   Adding an existing project to version control  
   
--   Попытка найти существующий проект контроля версий  
+-   Attempting to find an existing version control project  
   
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccGetProjPath (  
    LPVOID pvContext,  
    HWND   hWnd,  
@@ -60,68 +61,68 @@ SCCRTN SccGetProjPath (
 );  
 ```  
   
-#### <a name="parameters"></a>Параметры  
+#### <a name="parameters"></a>Parameters  
  pvContext  
- [in] Структура подключаемого модуля контекста исходного элемента управления.  
+ [in] The source control plug-in context structure.  
   
  hWnd  
- [in] Дескриптор окна интегрированной среды разработки, подключаемый модуль системы управления версиями можно использовать в качестве родительского для все диалоговые окна, которые он предоставляет.  
+ [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
   
  lpUser  
- [in, out] Имя пользователя (не должна превышать SCC_USER_SIZE, включая символ конца строки NULL)  
+ [in, out] The user name (not to exceed SCC_USER_SIZE, including the NULL terminator)  
   
  lpProjName  
- [in, out] Имя проекта интегрированной среды разработки, рабочей области проекта или файла makefile (не должна превышать SCC_PRJPATH_SIZE, включая символ конца строки NULL).  
+ [in, out] The name of the IDE project, project workspace, or makefile (not to exceed SCC_PRJPATH_SIZE, including the NULL terminator).  
   
  lpLocalPath  
- [in, out] Путь рабочего проекта. Если `bAllowChangePath` — `TRUE`, подключаемый модуль системы управления версиями можно изменить эту строку (не превышает _MAX_PATH, включая символ конца строки).  
+ [in, out] The project's working path. If `bAllowChangePath` is `TRUE`, the source control plug-in can modify this string (not to exceed _MAX_PATH, including the null-terminator).  
   
  lpAuxProjPath  
- [in, out] Буфер для пути возвращаемый проекта (не должна превышать SCC_PRJPATH_SIZE, включая символ конца строки NULL).  
+ [in, out] A buffer for the returned project path (not to exceed SCC_PRJPATH_SIZE, including the NULL terminator).  
   
  bAllowChangePath  
- [in] Если это `TRUE`, подключаемый модуль системы управления версиями можно запрашивать и изменять `lpLocalPath` строку.  
+ [in] If this is `TRUE`, the source control plug-in can prompt for and modify the `lpLocalPath` string.  
   
  pbNew  
- [in, out] В значение указывает, следует ли создать новый проект. Возвращаемое значение указывает на успешное завершение создания проекта:  
+ [in, out] Value coming in indicates whether to create a new project. Value returned indicates success of creating a project:  
   
-|Входящие|Интерпретация|  
+|Incoming|Interpretation|  
 |--------------|--------------------|  
-|TRUE|Пользователь может создать новый проект.|  
-|FALSE|Пользователь не может создать новый проект.|  
+|TRUE|The user may create a new project.|  
+|FALSE|The user may not create a new project.|  
   
-|Исходящий|Интерпретация|  
+|Outgoing|Interpretation|  
 |--------------|--------------------|  
-|TRUE|Был создан новый проект.|  
-|FALSE|Был выбран существующий проект.|  
+|TRUE|A new project was created.|  
+|FALSE|An existing project was selected.|  
   
-## <a name="return-value"></a>Возвращаемое значение  
- Реализации подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Значение|Описание|  
+|Value|Description|  
 |-----------|-----------------|  
-|SCC_OK|Проект был успешно создан или получить.|  
-|SCC_I_OPERATIONCANCELED|Операция была отменена.|  
-|SCC_E_ACCESSFAILURE|Произошла ошибка при доступе к системе управления версиями, вероятно, из-за проблемы с сетью или конфликтов.|  
-|SCC_E_CONNECTIONFAILURE|Ошибка при попытке подключения к системе управления версиями.|  
-|SCC_E_NONSPECIFICERROR|Произошла неизвестная ошибка.|  
+|SCC_OK|The project was successfully created or retrieved.|  
+|SCC_I_OPERATIONCANCELED|The operation was canceled.|  
+|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues.|  
+|SCC_E_CONNECTIONFAILURE|There was a problem trying to connect to the source control system.|  
+|SCC_E_NONSPECIFICERROR|An unspecified error occurred.|  
   
-## <a name="remarks"></a>Примечания  
- Эта функция предназначена для получения параметров IDE `lpProjName` и `lpAuxProjPath`. После подключаемый модуль системы управления версиями предлагает пользователю ввести эти сведения, он передает эти две строки в Интегрированной среде разработки. Среда разработки сохраняет эти строки в файле решения и передает их [SccOpenProject](../extensibility/sccopenproject-function.md) каждый раз, когда пользователь открывает этот проект. Эти строки включить подключаемый модуль для отслеживания сведений, связанных с проектом.  
+## <a name="remarks"></a>Remarks  
+ The purpose of this function is for the IDE to acquire the parameters `lpProjName` and `lpAuxProjPath`. After the source control plug-in prompts the user for this information, it passes these two strings back to the IDE. The IDE persists these strings in its solution file and passes them to the [SccOpenProject](../extensibility/sccopenproject-function.md) whenever the user opens this project. These strings enable the plug-in to track information associated with a project.  
   
- При вызове функции `lpAuxProjPath` установлено равным пустой строке. `lProjName`также может быть пустым, или он может содержать имя проекта интегрированной среды разработки, которое может использовать или игнорировать подключаемый модуль системы управления версиями. Если функция успешно возвращает значение, подключаемый модуль возвращает два соответствующих строк. IDE не делаются никакие предположения о эти строки, не используйте их и не позволит пользователю изменять их. Если пользователь хочет изменить параметры, будет вызывать IDE `SccGetProjPath` снова, передавая в те же значения получала предыдущее время. Это дает подключаемый модуль полный контроль над этими двумя строками.  
+ When the function is first called, `lpAuxProjPath` is set to an empty string. `lProjName` may also be empty, or it may contain the IDE project name, which the source control plug-in may use or ignore. When the function successfully returns, the plug-in returns the two corresponding strings. The IDE makes no assumptions about these strings, will not use them, and will not allow the user to modify them. If the user wants to change the settings, the IDE will call `SccGetProjPath` again, passing in the same values it had received the previous time. This gives the plug-in complete control over these two strings.  
   
- Для `lpUser`, интегрированной среды разработки может передать имя пользователя, или он может просто передать указатель на пустую строку. Если имя пользователя, подключаемый модуль системы управления версиями следует использовать как значение по умолчанию. Тем не менее, если имя не было передано или Ошибка входа в систему с заданным именем, подключаемый модуль должен запросить пользователя для входа в систему и передайте имя обратно в `lpUser` при получении действительного имени входа. Так как подключаемый модуль может изменить эту строку, IDE всегда будет выделить буфер размером (`SCC_USER_LEN`+&1;).  
+ For `lpUser`, the IDE may pass in a user name, or it may simply pass in a pointer to an empty string. If there is a user name, the source control plug-in should use it as a default. However, if no name was passed or if the login failed with the given name, the plug-in should prompt the user for a login and pass the name back in `lpUser` when it receives a valid login. Because the plug-in may change this string, the IDE will always allocate a buffer of size (`SCC_USER_LEN`+1).  
   
 > [!NOTE]
->  Первая выполняет действие, которое интегрированной среды разработки может быть либо вызов `SccOpenProject` функции или `SccGetProjPath` функции. Следовательно, у них одинаковые `lpUser` параметр, позволяющий модуль для входа пользователя в или во время управления версиями. Даже если возврат из функции указывает на сбой, подключаемый модуль необходимо ввести эту строку с недопустимым именем для входа.  
+>  The first action that the IDE performs may be a call to either the `SccOpenProject` function or the `SccGetProjPath` function. Hence, both of them have an identical `lpUser` parameter, which enables the source control plug-in to log the user in at either time. Even if the return from the function indicates a failure, the plug-in must fill this string with a valid login name.  
   
- `lpLocalPath`— Это каталог, где пользователь сохраняет проект. Он может быть пустой строкой. Если не существует каталога в настоящее время определены (как в случае пользователь, пытающийся загрузить проект из системы управления версиями) и `bAllowChangePath` — `TRUE`, подключаемый модуль системы управления версиями может запросить у пользователя ввод или другого метода разместить свои строки в `lpLocalPath`. Если `bAllowChangePath` — `FALSE`, подключаемый модуль не следует менять строку, поскольку пользователь уже работает в указанном каталоге.  
+ `lpLocalPath` is the directory where the user keeps the project. It may be an empty string. If there is no directory currently defined (as in the case of a user attempting to download a project from the source control system) and if `bAllowChangePath` is `TRUE`, the source control plug-in can prompt the user for input or use some other method to place its own string into `lpLocalPath`. If `bAllowChangePath` is `FALSE`, the plug-in should not change the string, because the user is already working in the specified directory.  
   
- Если пользователь создает новый проект, чтобы поместить в системе управления версиями, подключаемый модуль системы управления версиями может не создать на самом деле он в системе управления версиями во время `SccGetProjPath` вызывается. Вместо этого он передает строку вместе с ненулевое значение для `pbNew`, указывает, что проект будут созданы в системе управления версиями.  
+ If the user creates a new project to be put under source control, the source control plug-in might not actually create it in the source control system at the time `SccGetProjPath` is called. Instead, it passes back the string along with a nonzero value for `pbNew`, indicating that the project will be created in the source control system.  
   
- Например, если пользователь в **новый проект** мастера в Visual Studio добавляет свой проект в систему управления версиями, вызывает данную функцию, Visual Studio и подключаемый модуль определяет, является ли необходимо создать новый проект в системе управления версиями для проекта Visual Studio. Если пользователь нажимает кнопку **отменить** перед завершением мастера, проект не создается. Если пользователь нажимает кнопку **ОК**, Visual Studio вызывает `SccOpenProject`, передавая `SCC_OPT_CREATEIFNEW`, и в этот момент создается проект системы управления версиями.  
+ For example, if a user in the **New Project** wizard in Visual Studio adds his or her project to source control, Visual Studio calls this function, and the plug-in determines if it is okay to create a new project in the source control system to contain the Visual Studio project. If the user clicks **Cancel** before completing the wizard, the project is never created. If the user clicks **OK**, Visual Studio calls `SccOpenProject`, passing in `SCC_OPT_CREATEIFNEW`, and the source controlled project is created at that time.  
   
-## <a name="see-also"></a>См. также  
- [Функции API подключаемого модуля источника элемента управления](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)

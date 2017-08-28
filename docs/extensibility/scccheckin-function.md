@@ -1,5 +1,5 @@
 ---
-title: "Функция SccCheckin | Документы Microsoft"
+title: SccCheckin Function | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,18 +30,19 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e8bfa87246bc866a251951e4700b796d833dd63f
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b082ca831c17dcab3fbc95f8dd547da23a1f8982
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="scccheckin-function"></a>Функция SccCheckin
-Эта функция проверяет ранее извлеченные файлы в системе управления версиями, сохранение изменений и создание новой версии. Эта функция вызывается с числом и массив имен файлов для возврата.  
+# <a name="scccheckin-function"></a>SccCheckin Function
+This function checks in previously checked-out files to the source control system, storing the changes and creating a new version. This function is called with a count and an array of names of the files to be checked in.  
   
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccCheckin (  
    LPVOID    pvContext,  
    HWND      hWnd,  
@@ -53,50 +54,50 @@ SCCRTN SccCheckin (
 );  
 ```  
   
-#### <a name="parameters"></a>Параметры  
+#### <a name="parameters"></a>Parameters  
  pvContext  
- [in] Структура подключаемого модуля контекста исходного элемента управления.  
+ [in] The source control plug-in context structure.  
   
  hWnd  
- [in] Дескриптор окна интегрированной среды разработки, SCC подключаемый модуль можно использовать в качестве родительского для все диалоговые окна, которые он предоставляет.  
+ [in] A handle to the IDE window that the SCC plug-in can use as a parent for any dialog boxes that it provides.  
   
  nFiles  
- [in] Число файлов, выбранных для возврата.  
+ [in] Number of files selected to be checked in.  
   
  lpFileNames  
- [in] Массив имен файлов для возврата полный локальный путь.  
+ [in] Array of fully qualified local path names of files to be checked in.  
   
  lpComment  
- [in] Комментарий, применяемый к каждой из выбранных файлов, возврат. Это `NULL` если подключаемый модуль системы управления версиями следует запрашивать комментарий.  
+ [in] Comment to be applied to each of the selected files being checked in. This is `NULL` if the source control plug-in should prompt for a comment.  
   
- Возможности  
- [in] Команда флаги, либо 0 или `SCC_KEEP_CHECKEDOUT`.  
+ fOptions  
+ [in] Command flags, either 0 or `SCC_KEEP_CHECKEDOUT`.  
   
  pvOptions  
- [in] Параметры, специфичные для подключаемых модулей SCC.  
+ [in] SCC plug-in-specific options.  
   
-## <a name="return-value"></a>Возвращаемое значение  
- Реализации подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Значение|Описание|  
+|Value|Description|  
 |-----------|-----------------|  
-|SCC_OK|Файлы успешно возврата.|  
-|SCC_E_FILENOTCONTROLLED|Выбранный файл не существует в системе управления версиями.|  
-|SCC_E_ACCESSFAILURE|Произошла ошибка при доступе к системе управления версиями, вероятно, из-за проблемы с сетью или конфликтов. Рекомендуется повторить операцию.|  
-|SCC_E_NONSPECIFICERROR|Неспецифическая ошибка. Файл не был возвращен.|  
-|SCC_E_NOTCHECKEDOUT|Пользователь не извлечен файл, поэтому нельзя проверить.|  
-|SCC_E_CHECKINCONFLICT|Возврат не может быть выполнена, так как:<br /><br /> -Другой пользователь проверен в вперед и `bAutoReconcile` было ложным.<br /><br /> -или-<br /><br /> -Автоматического слияния невозможно (например, когда файлы являются двоичными).|  
-|SCC_E_VERIFYMERGE|Файл был объединены автоматически, но еще не возвращен ожидающих проверка пользователя.|  
-|SCC_E_FIXMERGE|Файл был объединены автоматически, но еще не возвращен из-за конфликта слияния, который необходимо разрешить вручную.|  
-|SCC_E_NOTAUTHORIZED|Для выполнения этой операции не разрешено пользователю.|  
-|SCC_I_OPERATIONCANCELED|Операция была отменена до завершения.|  
-|SCC_I_RELOADFILE|Файл или проект должен быть перезагружен.|  
-|SCC_E_FILENOTEXIST|Локальный файл не найден.|  
+|SCC_OK|Files was successfully checked in.|  
+|SCC_E_FILENOTCONTROLLED|The selected file is not under source code control.|  
+|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
+|SCC_E_NONSPECIFICERROR|Nonspecific failure. File was not checked in.|  
+|SCC_E_NOTCHECKEDOUT|The user has not checked out the file, so cannot check it in.|  
+|SCC_E_CHECKINCONFLICT|Checkin could not be performed because:<br /><br /> -   Another user has checked in ahead and `bAutoReconcile` was false.<br /><br /> -or-<br /><br /> -   The auto-merge cannot be done (for example, when files are binary).|  
+|SCC_E_VERIFYMERGE|File has been auto-merged but has not been checked in pending user verification.|  
+|SCC_E_FIXMERGE|File has been auto-merged but has not been checked in due to a merge conflict that must be manually resolved.|  
+|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
+|SCC_I_OPERATIONCANCELED|Operation was cancelled before completion.|  
+|SCC_I_RELOADFILE|A file or project needs to be reloaded.|  
+|SCC_E_FILENOTEXIST|Local file was not found.|  
   
-## <a name="remarks"></a>Примечания  
- Все файлы, проверяемые относится комментарий. Комментарий может быть `null` строка, в этом случае подключаемый модуль системы управления версиями можно запрашивать пользователя строка комментария для каждого файла.  
+## <a name="remarks"></a>Remarks  
+ The comment applies to all files being checked in. The comment argument can be a `null` string, in which case the source control plug-in can prompt the user for a comment string for each file.  
   
- `fOptions` Аргумент нельзя задать значение `SCC_KEEP_CHECKEDOUT` флаг, обозначающий намерение пользователя в файле и попробуйте еще раз.  
+ The `fOptions` argument can be given a value of the `SCC_KEEP_CHECKEDOUT` flag to indicate the user's intent to check the file in and check it out again.  
   
-## <a name="see-also"></a>См. также  
- [Функции API подключаемого модуля источника элемента управления](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)

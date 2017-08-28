@@ -1,91 +1,108 @@
 ---
-title: "Функция SccInitialize | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccInitialize"
-helpviewer_keywords: 
-  - "Функция SccInitialize"
+title: SccInitialize Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccInitialize
+helpviewer_keywords:
+- SccInitialize function
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
----
-# Функция SccInitialize
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 76235f932ccaac04672e50f8d349ab6fcd55cd4d
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-Эта функция инициализирует подключаемый модуль системы управления версиями и предоставляет возможности и ограничения в интегрированную среду разработки \(IDE\).  
+---
+# <a name="sccinitialize-function"></a>SccInitialize Function
+This function initializes the source control plug-in and provides capabilities and limits to the integrated development environment (IDE).  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccInitialize (  
-   LPVOID* ppvContext,  
-   HWND    hWnd,  
-   LPCSTR  lpCallerName,  
-   LPSTR   lpSccName,  
-   LPLONG  lpSccCaps,  
-   LPSTR   lpAuxPathLabel,  
-   LPLONG  pnCheckoutCommentLen,  
-   LPLONG  pnCommentLen  
+   LPVOID* ppvContext,  
+   HWND    hWnd,  
+   LPCSTR  lpCallerName,  
+   LPSTR   lpSccName,  
+   LPLONG  lpSccCaps,  
+   LPSTR   lpAuxPathLabel,  
+   LPLONG  pnCheckoutCommentLen,  
+   LPLONG  pnCommentLen  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Parameters  
  `ppvContext`  
- \[in\] Подключаемый модуль системы управления версиями можно поместить указатель на структуру контекста здесь.  
+ [in] The source control plug-in can place a pointer to its context structure here.  
   
  `hWnd`  
- \[in\] Дескриптор окна интегрированной среды разработки, подключаемый модуль системы управления версиями можно использовать в качестве родительского для все диалоговые окна, которые он предоставляет.  
+ [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
   
  `lpCallerName`  
- \[in\] Имя программы, вызывая подключаемый модуль системы управления версиями.  
+ [in] The name of the program calling the source control plug-in.  
   
  `lpSccName`  
- \[in, out\] Буфер, который помещает собственное имя в подключаемый модуль системы управления версиями \(не должно превышать `SCC_NAME_LEN`\).  
+ [in, out] The buffer where the source control plug-in puts its own name (not to exceed `SCC_NAME_LEN`).  
   
  `lpSccCaps`  
- \[out\] Возвращает подключаемого модуля флаги возможностей системы управления версиями.  
+ [out] Returns the source control plug-in's capability flags.  
   
  `lpAuxPathLabel`  
- \[in, out\] Буфер, который подключаемый модуль системы управления версиями помещает строку, описывающую `lpAuxProjPath` возвращаемый параметр [SccOpenProject](../extensibility/sccopenproject-function.md) и [SccGetProjPath](../extensibility/sccgetprojpath-function.md) \(не должно превышать `SCC_AUXLABEL_LEN`\).  
+ [in, out] The buffer where the source control plug-in puts a string that describes the `lpAuxProjPath` parameter returned by the [SccOpenProject](../extensibility/sccopenproject-function.md) and the [SccGetProjPath](../extensibility/sccgetprojpath-function.md) (not to exceed `SCC_AUXLABEL_LEN`).  
   
  `pnCheckoutCommentLen`  
- \[out\] Возвращает максимально допустимую длину для извлечения комментарий.  
+ [out] Returns the maximum permissible length for a checkout comment.  
   
  `pnCommentLen`  
- \[out\] Возвращает максимально допустимую длину для других комментариев.  
+ [out] Returns the maximum permissible length for other comments.  
   
-## Возвращаемое значение  
- Реализации подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Значение|Описание|  
-|--------------|--------------|  
-|SCC\_OK|Инициализация элемента управления источника завершилась успешно.|  
-|SCC\_E\_INITIALIZEFAILED|Не удалось инициализировать систему.|  
-|SCC\_E\_NOTAUTHORIZED|Пользователь не может выполнить указанную операцию.|  
-|SCC\_E\_NONSPECFICERROR|Неспецифическая ошибка; Система управления версиями не инициализирован.|  
+|Value|Description|  
+|-----------|-----------------|  
+|SCC_OK|Source control initialization succeeded.|  
+|SCC_E_INITIALIZEFAILED|System could not be initialized.|  
+|SCC_E_NOTAUTHORIZED|The user is not allowed to perform the specified operation.|  
+|SCC_E_NONSPECFICERROR|Nonspecific failure; source control system was not initialized.|  
   
-## Заметки  
- IDE вызывает эту функцию при его первой загрузке подключаемого модуля системы управления версиями. Он позволяет передать некоторые данные, такие как имя вызывающего объекта, чтобы подключаемый модуль интегрированную среду разработки. IDE также возвращает определенные сведения, например максимально допустимую длину для подключаемого модуля в возможностей и комментарии.  
+## <a name="remarks"></a>Remarks  
+ The IDE calls this function when it first loads the source control plug-in. It enables the IDE to pass certain information, such as the caller name, to the plug-in. The IDE also gets back certain information such as the maximum allowable length for comments and the plug-in's capabilities.  
   
- `ppvContext` Указывает `NULL` указателя. Подключаемый модуль системы управления версиями можно выделить структуру для внутреннего использования и сохраняют указатель на эту структуру в `ppvContext`. IDE передает этот указатель остальными функциями VSSCI API, позволяя подключаемый модуль есть не прибегая к глобальное хранилище информации о контексте и поддерживать несколько экземпляров подключаемого модуля. Эта структура должна быть освобождена при [SccUninitialize](../extensibility/sccuninitialize-function.md) вызывается.  
+ The `ppvContext` points to a `NULL` pointer. The source control plug-in can allocate a structure for its own use and store a pointer to that structure in `ppvContext`. The IDE will pass this pointer to every other VSSCI API function, allowing the plug-in to have context information available without resorting to global storage and to support multiple instances of the plug-in. This structure should be deallocated when the [SccUninitialize](../extensibility/sccuninitialize-function.md) is called.  
   
- `lpCallerName` И `lpSccName` параметры включения интегрированной среды разработки и подключаемый модуль системы управления версиями для обмена имена. Эти имена могут использоваться просто для того, чтобы различать несколько экземпляров, или они на самом деле могут отображаться в меню и диалоговых окнах.  
+ The `lpCallerName` and `lpSccName` parameters enable the IDE and the source control plug-in to exchange names. These names may be used simply to distinguish among multiple instances, or they may actually appear in menus or dialog boxes.  
   
- `lpAuxPathLabel` Параметр является строкой, используемой как комментарий для определения пути вспомогательный проекта, хранятся в файле решения и передается в систему управления версиями, подключаемый модуль в вызове [SccOpenProject](../extensibility/sccopenproject-function.md).[!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] используется строка «проект SourceSafe:»; другой источник подключаемые модули управления рекомендуется воздержаться от использования данной конкретной строки.  
+ The `lpAuxPathLabel` parameter is a string used as a comment to identify the auxiliary project path that is stored in the solution file and passed to the source control plug-in in a call to the [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] uses the string "SourceSafe Project:"; other source control plug-ins should refrain from using this particular string.  
   
- `lpSccCaps` Дает системы управления версиями подключаемого модуля место для хранения, указывающее, подключаемые в возможности битовые флаги. \(Полный список возможностей битовые флаги в разделе [Флаги возможностей](../extensibility/capability-flags.md)\). Например если подключаемый модуль планы для записи результатов в функцию обратного вызова, предоставленный вызывающим объектом, подключаемый модуль задается возможность бит SCC\_CAP\_TEXTOUT. Это будет сигнализировать интегрированной среды разработки для создания окна для управления результаты версии.  
+ The `lpSccCaps` parameter gives the source control plug-in a place to store bitflags indicating the plug-in's capabilities. (For a full list of capability bitflags, see [Capability Flags](../extensibility/capability-flags.md)). For instance, if the plug-in plans to write results into a caller-provided callback function, the plug-in would set the capability bit SCC_CAP_TEXTOUT. This would signal the IDE to create a window for version control results.  
   
-## См. также  
- [Функции API подключаемого модуля источника элемента управления](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
  [SccUninitialize](../extensibility/sccuninitialize-function.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)   
- [Флаги возможностей](../extensibility/capability-flags.md)
+ [Capability Flags](../extensibility/capability-flags.md)

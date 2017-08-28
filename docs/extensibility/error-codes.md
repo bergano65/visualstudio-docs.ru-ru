@@ -1,82 +1,101 @@
 ---
-title: "Коды ошибок | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "коды ошибок, подключаемые модули управления версиями"
-  - "управление подключаемыми модулями источников, коды ошибок"
-  - "ошибки [пакет SDK Visual Studio]"
+title: Error Codes | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- error codes, source control plug-ins
+- source control plug-ins, error codes
+- errors [Visual Studio SDK]
 ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
 caps.latest.revision: 19
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 19
----
-# Коды ошибок
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 69f5ade6fa28b85d77924dffab9b82d602e04421
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-При API подключаемого модуля управления источника функция возвращает ошибку, ожидается один из следующих кодов ошибки. Все ошибки отрицательное значение, предупреждения или информационные коды являются положительными, и 0 — успех.  
+---
+# <a name="error-codes"></a>Error Codes
+When a Source Control Plug-in API function returns an error, it is expected to be one of the following error codes. All errors are negative, warnings or informational error codes are positive, and success is 0.  
   
-|Код ошибки|Значение|Описание|  
-|----------------|--------------|--------------|  
-|`SCC_I_SHARESUBPROJOK`|7|Подключаемый модуль поддерживает добавление файлов из системы управления версиями в два этапа. Для получения дополнительной информации см. [SccSetOption](../extensibility/sccsetoption-function.md).|  
-|`SCC_I_FILEDIFFERS`|6|Локальный файл отличается от файла в базе данных управления версиями \(например, [SccDiff](../extensibility/sccdiff-function.md) могут возвращать это значение\).|  
-|`SCC_I_RELOADFILE`|5|Локальный файл был изменен во время операции управления версиями; интегрированной среды разработки следует перезагрузить файл, если это возможно.|  
-|`SCC_I_FILENOTAFFECTED`|4|Файл не изменяется.|  
-|`SCC_I_PROJECTCREATED`|3|Проект был создан во время операции системы управления версиями \(например, во время вызова [SccOpenProject](../extensibility/sccopenproject-function.md) при `SCC_OP_CREATEIFNEW` указан флаг\).|  
-|`SCC_I_OPERATIONCANCELED`|2|Операция была отменена.|  
-|`SCC_I_ADV_SUPPORT`|1|Подключаемый модуль поддерживает дополнительные параметры для заданной команды. Для получения дополнительной информации см. [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md).|  
-|`SCC_OK`|0|Выполнено.|  
-|`SCC_E_INITIALIZEFAILED`|\-1|Ошибка: Сбой при инициализации.|  
-|`SCC_E_UNKNOWNPROJECT`|\-2|Ошибка: проект неизвестно.|  
-|`SCC_E_COULDNOTCREATEPROJECT`|\-3|Ошибка: не удалось создать проект.|  
-|`SCC_E_NOTCHECKEDOUT`|\-4|Ошибка: файл не извлечен.|  
-|`SCC_E_ALREADYCHECKEDOUT`|\-5|Ошибка: файл уже извлечен.|  
-|`SCC_E_FILEISLOCKED`|\-6|Ошибка: файл заблокирован.|  
-|`SCC_E_FILEOUTEXCLUSIVE`|\-7|Ошибка: файл монопольно извлечен.|  
-|`SCC_E_ACCESSFAILURE`|\-8|Произошла ошибка при доступе к системе управления версиями, вероятно, из\-за проблемы с сетью или конфликтов. Рекомендуется повторить операцию.|  
-|`SCC_E_CHECKINCONFLICT`|\-9|Ошибка: конфликт во время возврата.|  
-|`SCC_E_FILEALREADYEXISTS`|\-10|Ошибка: файл уже существует.|  
-|`SCC_E_FILENOTCONTROLLED`|\-11|Ошибка: файл не в системе управления версиями.|  
-|`SCC_E_FILEISCHECKEDOUT`|\-12|Ошибка: файл извлечен.|  
-|`SCC_E_NOSPECIFIEDVERSION`|\-13|Ошибка: не существует указанной версии.|  
-|`SCC_E_OPNOTSUPPORTED`|\-14|Ошибка: операция не поддерживается.|  
-|`SCC_E_NONSPECIFICERROR`|\-15|Иная ошибка.|  
-|`SCC_E_OPNOTPERFORMED`|\-16|Ошибка, операция не выполнена.|  
-|`SCC_E_TYPENOTSUPPORTED`|\-17|Ошибка: тип файла, например, двоичных данных, не поддерживается система управления исходным кодом.|  
-|`SCC_E_VERIFYMERGE`|\-18|Файл был объединены автоматически, но еще не возвращен из\-за проверки ожидает пользовательский.|  
-|`SCC_E_FIXMERGE`|\-19|Файл был объединены автоматически, но еще не возвращен из\-за конфликта слияния, который необходимо разрешить вручную.|  
-|`SCC_E_SHELLFAILURE`|\-20|Ошибка из\-за сбоя оболочки.|  
-|`SCC_E_INVALIDUSER`|\-21|Ошибка: недопустимый пользователь.|  
-|`SCC_E_PROJECTALREADYOPEN`|\-22|Ошибка: проект уже открыт.|  
-|`SCC_E_PROJSYNTAXERR`|\-23|Ошибка синтаксиса в проект.|  
-|`SCC_E_INVALIDFILEPATH`|\-24|Ошибка: недопустимый путь к файлу.|  
-|`SCC_E_PROJNOTOPEN`|\-25|Ошибка: проект не открыт.|  
-|`SCC_E_NOTAUTHORIZED`|\-26|Ошибка: пользователь не авторизован для выполнения этой операции.|  
-|`SCC_E_FILESYNTAXERR`|\-27|Ошибка синтаксиса файла.|  
-|`SCC_E_FILENOTEXIST`|\-28|Ошибка, локальный файл не существует.|  
-|`SCC_E_CONNECTIONFAILURE`|\-29|Ошибка: произошла ошибка подключения.|  
-|`SCC_E_UNKNOWNERROR`|\-30|Произошла неизвестная ошибка.|  
-|`SCC_E_BACKGROUNDGETINPROGRESS`|\-31|Фоновая операция get в данный момент выполняется.|  
+|Error Code|Value|Description|  
+|----------------|-----------|-----------------|  
+|`SCC_I_SHARESUBPROJOK`|7|Plug-in supports adding files from source control in two steps. For more information, see [SccSetOption](../extensibility/sccsetoption-function.md).|  
+|`SCC_I_FILEDIFFERS`|6|The local file is different from the file in the source control database (for example, [SccDiff](../extensibility/sccdiff-function.md) may return this value).|  
+|`SCC_I_RELOADFILE`|5|Local file was changed during the source control operation; the IDE should reload the file if possible.|  
+|`SCC_I_FILENOTAFFECTED`|4|The file is not affected.|  
+|`SCC_I_PROJECTCREATED`|3|The Project was created during the source control operation (for example, during a call to [SccOpenProject](../extensibility/sccopenproject-function.md) when `SCC_OP_CREATEIFNEW` flag is specified).|  
+|`SCC_I_OPERATIONCANCELED`|2|Operation was cancelled.|  
+|`SCC_I_ADV_SUPPORT`|1|Plug-in supports advanced options for the specified command. For more information, see [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md).|  
+|`SCC_OK`|0|Success.|  
+|`SCC_E_INITIALIZEFAILED`|-1|Error: initialization failed.|  
+|`SCC_E_UNKNOWNPROJECT`|-2|Error: project is unknown.|  
+|`SCC_E_COULDNOTCREATEPROJECT`|-3|Error: project could not be created.|  
+|`SCC_E_NOTCHECKEDOUT`|-4|Error: the file is not checked out.|  
+|`SCC_E_ALREADYCHECKEDOUT`|-5|Error: the file is already checked out.|  
+|`SCC_E_FILEISLOCKED`|-6|Error: the file is locked.|  
+|`SCC_E_FILEOUTEXCLUSIVE`|-7|Error: the file is exclusively checked out.|  
+|`SCC_E_ACCESSFAILURE`|-8|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
+|`SCC_E_CHECKINCONFLICT`|-9|Error: there was a conflict during check in.|  
+|`SCC_E_FILEALREADYEXISTS`|-10|Error: the file already exists.|  
+|`SCC_E_FILENOTCONTROLLED`|-11|Error: the file is not under source control.|  
+|`SCC_E_FILEISCHECKEDOUT`|-12|Error: the file is checked out.|  
+|`SCC_E_NOSPECIFIEDVERSION`|-13|Error: there is no specified version.|  
+|`SCC_E_OPNOTSUPPORTED`|-14|Error: the operation is not supported.|  
+|`SCC_E_NONSPECIFICERROR`|-15|Nonspecific error.|  
+|`SCC_E_OPNOTPERFORMED`|-16|Error, the operation was not performed.|  
+|`SCC_E_TYPENOTSUPPORTED`|-17|Error: the type of the file, for example, binary, is not supported by the source code control system.|  
+|`SCC_E_VERIFYMERGE`|-18|File has been auto-merged but has not been checked because it is pending user verification.|  
+|`SCC_E_FIXMERGE`|-19|File has been auto-merged but has not been checked in due to a merge conflict that must be manually resolved.|  
+|`SCC_E_SHELLFAILURE`|-20|Error due to a shell failure.|  
+|`SCC_E_INVALIDUSER`|-21|Error: the user is invalid.|  
+|`SCC_E_PROJECTALREADYOPEN`|-22|Error: the project is already open.|  
+|`SCC_E_PROJSYNTAXERR`|-23|Project syntax error.|  
+|`SCC_E_INVALIDFILEPATH`|-24|Error: the file path is invalid.|  
+|`SCC_E_PROJNOTOPEN`|-25|Error: the project is not open.|  
+|`SCC_E_NOTAUTHORIZED`|-26|Error: the user is not authorized to perform this operation.|  
+|`SCC_E_FILESYNTAXERR`|-27|File syntax error.|  
+|`SCC_E_FILENOTEXIST`|-28|Error, the local file does not exist.|  
+|`SCC_E_CONNECTIONFAILURE`|-29|Error: there was a connection failure.|  
+|`SCC_E_UNKNOWNERROR`|-30|Unknown error.|  
+|`SCC_E_BACKGROUNDGETINPROGRESS`|-31|Background get operation is currently in progress.|  
   
-## Макросы для Быстрая проверка  
+## <a name="macros-provided-for-quick-checking"></a>Macros Provided for Quick Checking  
   
-```cpp#  
-IS_SCC_ERROR(rtn) (((rtn) < 0) ? TRUE : FALSE) IS_SCC_SUCCESS(rtn) (((rtn) == SCC_OK) ? TRUE : FALSE) IS_SCC_WARNING(rtn) (((rtn) > 0) ? TRUE : FALSE)  
+```cpp  
+IS_SCC_ERROR(rtn) (((rtn) < 0) ? TRUE : FALSE)  
+IS_SCC_SUCCESS(rtn) (((rtn) == SCC_OK) ? TRUE : FALSE)  
+IS_SCC_WARNING(rtn) (((rtn) > 0) ? TRUE : FALSE)  
 ```  
   
-## Заметки  
- Все функции API подключаемого модуля управления источника \(за исключением [SccAdd](../extensibility/sccadd-function.md), [SccCheckin](../extensibility/scccheckin-function.md), и [SccDiff](../extensibility/sccdiff-function.md)\) должны успешно завершиться, когда локальные файлы, которые передаются как аргументы не существуют в рабочую папку. Например, интегрированной среды разработки может выпустить вызов [SccCheckout](../extensibility/scccheckout-function.md) или [SccUncheckout](../extensibility/sccuncheckout-function.md) в файле, который не существует в рабочую папку, но существует в системе управления версиями. Этот вызов будет успешным. Только в том случае, если файл отсутствует в рабочую папку или в системе управления версиями функция ожидается сбой.  
+## <a name="remarks"></a>Remarks  
+ All Source Control Plug-in API functions (except the [SccAdd](../extensibility/sccadd-function.md), [SccCheckin](../extensibility/scccheckin-function.md), and [SccDiff](../extensibility/sccdiff-function.md)) are expected to succeed when the local files that are passed as arguments do not exist in the working folder. For example, the IDE may issue a call to the [SccCheckout](../extensibility/scccheckout-function.md) or [SccUncheckout](../extensibility/sccuncheckout-function.md) on a file that does not exist in the working folder, but exists in the source control system. This call would succeed. Only when there is no file in the working folder or in the source control system is the function expected to fail.  
   
- Некоторые функции, такие как `SccAdd` и `SccCheckin`, специально должна возвращать `SCC_E_FILENOTEXIST` при файл в рабочей папке не существует. Другие функции должны успешно завершиться, когда рабочий файл не существует, если функции оперируют допустимое имя файла в системе управления версиями.  
+ Certain functions, such as `SccAdd` and `SccCheckin`, should specifically return `SCC_E_FILENOTEXIST` when the file in the working folder does not exist. Other functions are expected to succeed when the working file does not exist, if the functions operate on a valid file name in the source control system.  
   
- Подключаемый модуль системы управления версиями следует делать никаких предположений о правах доступа для файла в рабочей папке, даже если подключаемый модуль пометили файл только для чтения во время некоторой операции. Файл в рабочую папку можно переместить, удаленные и изменены за пределами подключаемые в элемент управления.  
+ The source control plug-in should make no assumptions regarding privileges on a file in the working folder, even if the plug-in had marked the file read-only during some operation. A file in the working folder can be moved, deleted, and changed outside the plug-in's control.  
   
-## См. также  
- [Подключаемые модули управления версиями](../extensibility/source-control-plug-ins.md)
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-ins](../extensibility/source-control-plug-ins.md)
