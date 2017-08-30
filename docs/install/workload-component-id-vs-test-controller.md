@@ -1,11 +1,11 @@
 ---
-title: "Идентификаторы рабочих нагрузок и компонентов для Visual Studio Test Controller 2017 | Документация Майкрософт"
-description: "Идентификаторы рабочих нагрузок и компонентов Visual Studio можно использовать для распространения автоматических тестов на несколько компьютеров"
+title: Visual Studio Test Controller 2017 workload and component IDs | Microsoft Docs
+description: Use Visual Studio workload and component IDs to distribute automated tests to multiple machines
 keywords: 
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 08/09/2017
+ms.date: 08/30/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -31,51 +31,51 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: a9b33db2ba10b9a1e4c85a8caf17345f21a057b2
+ms.translationtype: HT
+ms.sourcegitcommit: 96018963278cd1d53b226473baade41da1e98111
+ms.openlocfilehash: 4af6768bbb9f3e4e494ea85596a9706103537824
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 
-# <a name="visual-studio-test-controller-2017-component-directory"></a>Каталог компонентов для Visual Studio Test Controller 2017
+# <a name="visual-studio-test-controller-2017-component-directory"></a>Visual Studio Test Controller 2017 component directory
 
-В таблицах на этой странице перечислены идентификаторы, которые можно использовать для установки Visual Studio с помощью командной строки. Обратите внимание, что по мере выхода обновлений для Visual Studio здесь будут появляться новые компоненты.
+The tables on this page list the IDs that you can use to install Visual Studio by using the command line. Note that we will add additional components as we release updates to Visual Studio.
 
-Также обратите внимание на следующие моменты:
+Also note the following about the page:
 
-* Каждая рабочая нагрузка имеет свой раздел, за которым приводится идентификатор рабочей нагрузки и таблица компонентов, доступных для этой рабочей нагрузки.
-* По умолчанию при установке рабочей нагрузки устанавливаются только **обязательные** компоненты. По вашему желанию вы можете включить в установку **рекомендованные** и (или) **дополнительные** компоненты.
-* Мы также добавили отдельный раздел для дополнительных компонентов, которые не связаны с конкретными рабочими нагрузками.
+* Each workload has its own section, followed by the workload ID and a table of the components that are available for the workload.
+* By default, the **Required** components will be installed when you install the workload. If you choose to, you can also install the **Recommended** and **Optional** components.
+* We've also added a section that lists the additional components that are not affiliated with any workload.
 
-Дополнительные сведения об использовании идентификаторов см. в статье [Использование параметров командной строки для установки версии-кандидата Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Список идентификаторов рабочих нагрузок и компонентов для других продуктов вы найдете в статье [Идентификаторы рабочих нагрузок и компонентов Visual Studio 2017](workload-and-component-ids.md).
+For more information about how to use these IDs, see [Use Command-Line Parameters to Install Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) page. And, for a list of workload and component IDs for other products, see [Visual Studio 2017 Workload and Component IDs](workload-and-component-ids.md) page.
 
 ## <a name="test-controller"></a>Test Controller
 
-**Идентификатор.** Microsoft.VisualStudio.Workload.TestController
+**ID:** Microsoft.VisualStudio.Workload.TestController
 
-**Описание.** Распределение автоматических тестов на несколько компьютеров.
+**Description:** Distribute automated tests to multiple machines
 
-### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
+### <a name="components-included-by-this-workload"></a>Components included by this workload
 
-Идентификатор компонента | Имя | Версия | Тип зависимости
+Component ID | Name | Version | Dependency type
 --- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Основные функции Test Controller | 15.0.26208.0 | Обязательное
+Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Test Controller core features | 15.0.26711.1 | Required
 
-## <a name="unaffiliated-components"></a>Самостоятельные компоненты
+## <a name="unaffiliated-components"></a>Unaffiliated components
 
-Здесь перечислены компоненты, которые не используются рабочими нагрузками, но могут быть выбраны в качестве отдельного компонента.
+These are components that are not included with any workload, but may be selected as an individual component.
 
-Идентификатор компонента | Имя | Версия
+Component ID | Name | Version
 --- | --- | ---
-Н/Д | Н/Д | Н/Д
+n/a | n/a | n/a
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>See also
 
-* [Идентификаторы рабочих нагрузок и компонентов Visual Studio](workload-and-component-ids.md)
-* [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
-* [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-  * [Примеры параметров командной строки](command-line-parameter-examples.md)
-* [Создание автономной установки Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Visual Studio workload and component IDs](workload-and-component-ids.md)
+* [Visual Studio administrator guide](visual-studio-administrator-guide.md)
+* [Use command-line parameters to install Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+  * [Command-line parameter examples](command-line-parameter-examples.md)
+* [Create an offline installation of Visual Studio](create-an-offline-installation-of-visual-studio.md)
 
