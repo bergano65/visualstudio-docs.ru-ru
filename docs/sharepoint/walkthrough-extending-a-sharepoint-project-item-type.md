@@ -1,305 +1,308 @@
 ---
-title: "Walkthrough: Extending a SharePoint Project Item Type"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "project items [SharePoint development in Visual Studio], extending"
-  - "SharePoint project items, extending"
-  - "SharePoint development in Visual Studio, extending project items"
+title: 'Walkthrough: Extending a SharePoint Project Item Type | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- project items [SharePoint development in Visual Studio], extending
+- SharePoint project items, extending
+- SharePoint development in Visual Studio, extending project items
 ms.assetid: 1cea4e0f-ce33-4cd7-a664-800184865456
 caps.latest.revision: 36
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 35
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 7dce4b0abf2f2294441497eedf17842d47ce3f97
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Walkthrough: Extending a SharePoint Project Item Type
-  Элемент проекта **Модель подключения к бизнес\-данным** служит для создания модели для службы подключения к бизнес\-данным в SharePoint.  По умолчанию при создании модели с помощью данного элемента проекта данные в модели не отображаются для пользователей.  Необходимо создать в SharePoint внешний список, чтобы пользователи могли видеть данные.  
+# <a name="walkthrough-extending-a-sharepoint-project-item-type"></a>Walkthrough: Extending a SharePoint Project Item Type
+  You can use the **Business Data Connectivity Model** project item to create a model for the Business Data Connectivity (BDC) service in SharePoint. By default, when you create a model by using this project item, the data in the model is not displayed to users. You must also create an external list in SharePoint to enable users to view the data.  
   
- В данном пошаговом руководстве создается расширение для элемента проекта **Модель подключения к бизнес\-данным**.  Разработчики могут использовать это расширение для создания в проекте внешнего списка, отображающего данные в модели подключения к бизнес\-данным.  В этом пошаговом руководстве показано выполнение следующих задач.  
+ In this walkthrough, you will create an extension for the **Business Data Connectivity Model** project item. Developers can use the extension to create an external list in their project that displays the data in the BDC model. This walkthrough demonstrates the following tasks:  
   
--   Создание расширения Visual Studio для выполнения двух основных задач:  
+-   Creating a Visual Studio extension that performs two main tasks:  
   
-    -   создание внешнего списка, отображающего данные в модели подключения к бизнес\-данным.  В расширении для создания определяющего список файла Elements.xml используется объектная модель системы проектов SharePoint.  Кроме того, при этом файл добавляется в проект, чтобы его можно было развертывать вместе с моделью подключения к бизнес\-данным.  
+    -   It generates an external list that displays the data in a BDC model. The extension uses the object model for the SharePoint project system to generate an Elements.xml file that defines the list. It also adds the file to the project so that it is deployed together with the BDC model.  
   
-    -   Пункт контекстного меню добавляется в проектные элементы **Модель подключения к бизнес\-данным** в **обозревателе решений**.  С помощью пункта меню разработчики могут создать внешний список для модели подключения к бизнес\-данным.  
+    -   It adds a shortcut menu item to the **Business Data Connectivity Model** project items in **Solution Explorer**. Developers can click this menu item to generate an external list for the BDC model.  
   
--   Построение пакета расширения Visual Studio \(VSIX\) для развертывания сборки расширения.  
+-   Building a Visual Studio Extension (VSIX) package to deploy the extension assembly.  
   
--   Тестирование расширения.  
+-   Testing the extension.  
   
-## Обязательные компоненты  
- Для выполнения данного пошагового руководства на компьютере разработчика должны быть установлены следующие компоненты:  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components on the development computer to complete this walkthrough:  
   
--   поддерживаемые выпуски Microsoft Windows, SharePoint и Visual Studio.  Для получения дополнительной информации см. [Требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Supported editions of Microsoft Windows, SharePoint and Visual Studio. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)].  В этом пошаговом руководстве шаблон **Проект VSIX** из пакета SDK используется для создания пакета VSIX, который служит для развертывания элемента проекта.  Для получения дополнительной информации см. [Extending the SharePoint Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+-   The [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. This walkthrough uses the **VSIX Project** template in the SDK to create a VSIX package to deploy the project item. For more information, see [Extending the SharePoint Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Знание следующих подходов может оказаться полезным, но не требуется для выполнения пошагового руководства.  
+ Knowledge of the following concepts is helpful, but not required, to complete the walkthrough:  
   
--   служба подключения к бизнес\-данным в [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].  Дополнительные сведения см. в [Архитектура BDC](http://go.microsoft.com/fwlink/?LinkId=177798).  
+-   The BDC service in [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]. For more information, see [BDC Architecture](http://go.microsoft.com/fwlink/?LinkId=177798).  
   
--   схема XML для моделей подключения к бизнес\- данным.  [Инфраструктура модели подключения к бизнес\-данным](http://go.microsoft.com/fwlink/?LinkId=177799) Дополнительные сведения в разделе в.  
+-   The XML schema for BDC models. For more information, see [BDC Model Infrastructure](http://go.microsoft.com/fwlink/?LinkId=177799).  
   
-## Создание проектов  
- Чтобы выполнить это пошаговое руководство, необходимо создать два проекта:  
+## <a name="creating-the-projects"></a>Creating the Projects  
+ To complete this walkthrough, you need to create two projects:  
   
--   проект VSIX, который позволит создать пакет VSIX для развертывания расширения проектного элемента;  
+-   A VSIX project to create the VSIX package to deploy the project item extension.  
   
--   проект библиотеки классов, реализующей расширение проектного элемента.  
+-   A class library project that implements the project item extension.  
   
- Начните выполнение пошагового руководства с создания проектов.  
+ Start the walkthrough by creating the projects.  
   
-#### Создание проекта VSIX  
+#### <a name="to-create-the-vsix-project"></a>To create the VSIX project  
   
-1.  Запустите [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  В меню **Файл** выберите **Создать**, **Проект**.  
+2.  On the menu bar, choose **File**, **New**, **Project**.  
   
-3.  В диалоговом окне **Создание проекта** разверните узел **Visual C\#** или  **Visual Basic**, а затем выберите узел **Расширение среды**.  
-  
-    > [!NOTE]  
-    >  Узел **Расширение среды** доступен только в том случае, если необходимо установить пакет SDK для Visual Studio.  Дополнительные сведения см. в параграфе предварительных требований ранее в этом разделе.  
-  
-4.  В списке **Создание проекта** в верхней части диалогового окна, выберите команду **.NET Framework 4.5**.  
-  
-     Для работы с расширениями средств SharePoint требуются компоненты этой версии .NET Framework.  
-  
-5.  Выберите шаблон **Проект VSIX**.  
-  
-6.  В поле **Имя** введите **GenerateExternalDataLists**, а затем нажмите кнопку **ОК**.  
-  
-     Среда [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] добавит проект **GenerateExternalDataLists** в **Обозреватель решений**.  
-  
-7.  Если файл source.extension.vsixmanifest автоматически не открыт, откройте его контекстное меню в проекте GenerateExternalDataLists, а затем выберите **Открыть**  
-  
-8.  Убедитесь, что файл source.extension.vsixmanifest имеет непустую запись \(введите Contoso\) для поля из авторов, сохраните файл, а затем ее конечная точка.  
-  
-#### Создание проекта расширения  
-  
-1.  В **Обозреватель решений** откройте контекстное меню для узла решения **GenerateExternalDataLists**, выберите **Добавить**, затем выберите **Создание проекта**.  
+3.  In the **New Project** dialog box, expand the **Visual C#** or **Visual Basic** nodes, and then choose the **Extensibility** node.  
   
     > [!NOTE]  
-    >  В проектах Visual Basic узел решения отображается в **обозревателе решений**, только если в диалоговом окне ["Общие", страница "Проекты и решения", диалоговое окно "Параметры"](http://msdn.microsoft.com/ru-ru/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca) установлен флажок **Всегда показывать решение**.  
+    >  The **Extensibility** node is available only if you install the Visual Studio SDK. For more information, see the prerequisites section earlier in this topic.  
   
-2.  В диалоговом окне **Добавить новый проект** разверните узел **Visual C\#** или  **Visual Basic**, а затем выберите узел **Окна**.  
+4.  In the list at the top of the **New Project** dialog box, choose **.NET Framework 4.5**.  
   
-3.  В списке в верхней части диалогового окна, выберите команду **.NET Framework 4.5**.  
+     SharePoint tools extensions require features in this version of the .NET Framework.  
   
-4.  В списке шаблонов проектов выберите **Библиотека классов**.  
+5.  Choose the **VSIX Project** template.  
   
-5.  В поле **Имя** введите **BdcProjectItemExtension**, а затем нажмите кнопку **ОК**.  
+6.  In the **Name** box, enter **GenerateExternalDataLists**, and then choose the **OK** button.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] добавит проект **BdcProjectItemExtension** в решение и откроет заданный по умолчанию файл с кодом Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **GenerateExternalDataLists** project to **Solution Explorer**.  
   
-6.  Удалите из проекта файл c кодом Class1.  
+7.  If the source.extension.vsixmanifest file doesn't open automatically, open its shortcut menu in the GenerateExternalDataLists project, and then choose **Open**  
   
-## Настройка проекта расширения  
- Перед созданием кода для расширения элемента проекта добавьте в проект расширения ссылки на файлы с кодом и сборки.  
+8.  Verify that the source.extension.vsixmanifest file has a non-blank entry (enter Contoso) for the Author field, save the file, and then close it.  
   
-#### Настройка проекта  
+#### <a name="to-create-the-extension-project"></a>To create the extension project  
   
-1.  В проект BdcProjectItemExtension добавьте два файла с кодом со следующими именами.  
+1.  In **Solution Explorer**, open the shortcut menu for the **GenerateExternalDataLists** solution node, choose **Add**, and then choose **New Project**.  
+  
+    > [!NOTE]  
+    >  In Visual Basic projects, the solution node appears in **Solution Explorer** only when the **Always show solution** check box is selected in the [NIB: General, Projects and Solutions, Options Dialog Box](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
+  
+2.  In the **Add New Project** dialog box, expand the **Visual C#** or **Visual Basic** nodes, and then choose the **Windows** node.  
+  
+3.  In the list at the top of the dialog box, choose **.NET Framework 4.5**.  
+  
+4.  In the list of project templates, choose **Class Library**.  
+  
+5.  In the **Name** box, enter **BdcProjectItemExtension**, and then choose the **OK** button.  
+  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **BdcProjectItemExtension** project to the solution and opens the default Class1 code file.  
+  
+6.  Delete the Class1 code file from the project.  
+  
+## <a name="configuring-the-extension-project"></a>Configuring the Extension Project  
+ Before you write code to create the project item extension, add code files and assembly references to the extension project.  
+  
+#### <a name="to-configure-the-project"></a>To configure the project  
+  
+1.  In the BdcProjectItemExtension project, add two code files that have the following names:  
   
     -   ProjectItemExtension  
   
     -   GenerateExternalDataLists  
   
-2.  Выберите проект BdcProjectItemExtension, а затем в строке меню выберите **Проект**, **Добавить ссылку**.  
+2.  Choose the BdcProjectItemExtension project, and then, on the menu bar, choose **Project**, **Add Reference**.  
   
-3.  Разверните узел **Сборки** и выберите узел **основа** и выберите флажок для каждой из следующих сборок:  
+3.  Under the **Assemblies** node, choose the **Framework** node, and the select the check box for each of the following assemblies:  
   
     -   System.ComponentModel.Composition  
   
     -   WindowsBase  
   
-4.  Разверните узел **Сборки** и выберите узел **Расширения**, а затем выделите флажок для следующей сборки:  
+4.  Under the **Assemblies** node, choose the **Extensions** node, and then select the check box for the following assembly:  
   
     -   Microsoft.VisualStudio.SharePoint  
   
-5.  Нажмите кнопку **ОК**.  
+5.  Choose the **OK** button.  
   
-## Определение расширения элемента проекта  
- Создайте класс, определяющий расширение для элемента проекта **Модель подключения к бизнес\-данным**.  Для определения расширения класс реализует интерфейс <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>.  Этот интерфейс следует реализовывать всякий раз, когда требуется расширить имеющийся тип элемента проекта.  
+## <a name="defining-the-project-item-extension"></a>Defining the Project Item Extension  
+ Create a class that defines the extension for the **Business Data Connectivity Model** project item. To define the extension, the class implements the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> interface. Implement this interface whenever you want to extend an existing type of project item.  
   
-#### Определение расширения элемента проекта  
+#### <a name="to-define-the-project-item-extension"></a>To define the project item extension  
   
-1.  Вставьте следующий код в файл с кодом ProjectItemExtension.  
-  
-    > [!NOTE]  
-    >  После добавления этого кода, проект будет иметь некоторые компилировать ошибки.  Эти ошибки исчезнут при добавлении кода на следующих шагах.  
-  
-     [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectitemextension.bdcgenerateexternaldatalists/cs/bdcprojectitemextension/projectitemextension.cs#1)]
-     [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../snippets/visualbasic/VS_Snippets_OfficeSP/spextensibility.projectitemextension.bdcgenerateexternaldatalists/vb/bdcprojectitemextension/projectitemextension.vb#1)]  
-  
-## Создание внешних списков данных  
- Добавьте частичное определение класса `GenerateExternalDataListsExtension`, который создает внешний список данных для каждой сущности в модели подключения к бизнес\-данным.  Для создания внешнего списка данных этот код сначала считывает относящиеся к сущности данные в модели подключения к бизнес\-данным путем анализа XML\-кода в файле модели.  Затем он создает экземпляр списка на основе данной модели подключения к бизнес\-данным и добавляет экземпляр списка в проект.  
-  
-#### Создание внешних списков данных  
-  
-1.  Вставьте следующий код в файл с кодом GenerateExternalDataLists.  
-  
-     [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#2](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectitemextension.bdcgenerateexternaldatalists/cs/bdcprojectitemextension/generateexternaldatalists.cs#2)]
-     [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#2](../snippets/visualbasic/VS_Snippets_OfficeSP/spextensibility.projectitemextension.bdcgenerateexternaldatalists/vb/bdcprojectitemextension/generateexternaldatalists.vb#2)]  
-  
-## Контрольная точка  
- Теперь проект содержит весь код, необходимый для реализации расширения элемента проекта, которое рассматривается в данном пошаговом руководстве.  Выполите построение решения, чтобы убедиться, что компиляция проекта выполняется без ошибок.  
-  
-#### Построение решения  
-  
-1.  В меню **Сборка** выберите **Собрать решение**.  
-  
-## Создание пакета VSIX для развертывания расширения элемента проекта  
- Для развертывания расширения воспользуйтесь проектом VSIX в своем решении для создания пакета VSIX.  Сначала настройте пакет VSIX, изменив содержимое файла source.extension.vsixmanifest, входящего в состав проекта VSIX.  Затем создайте пакет VSIX, выполнив построение решения.  
-  
-#### Настройка и создание пакета VSIX  
-  
-1.  В **Обозреватель решений** откройте контекстное меню для файла source.extension.vsixmanifest в проекте GenerateExternalDataLists, а затем выберите **Открыть**.  
-  
-     Файл будет открыт Visual Studio в редакторе манифестов.  Файл source.extension.vsixmanifest является основой файла extension.vsixmanifest, который является обязательным для всех пакетов VSIX.  Дополнительные сведения об этом файле см. в разделе [Справочник по схеме расширения VSIX](http://msdn.microsoft.com/ru-ru/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
-  
-2.  В поле **Название продукта** введите **Генератор списка внешние данные**.  
-  
-3.  В поле **Автор** введите **Contoso**.  
-  
-4.  В поле **Описание** введите **Расширения элемента проекта Модели подключения к бизнес\-данным, которые можно использовать для создания списки внешних данных**.  
-  
-5.  На вкладке **Активы** редактора, нажмите кнопку **Создать**.  
-  
-     Откроется диалоговое окно **Добавить новый актив**.  
-  
-6.  В списке **Тип** выберите **Microsoft.VisualStudio.MefComponent**.  
+1.  Paste the following code into the the ProjectItemExtension code file.  
   
     > [!NOTE]  
-    >  Это значение соответствует элементу `MefComponent`, описанному в файле extension.vsixmanifest.  Этот элемент задает имя сборки расширения в пакете VSIX.  Для получения дополнительной информации см. [NIB: MEFComponent Element \(VSX Schema\)](http://msdn.microsoft.com/ru-ru/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  After you add this code, the project will have some compile errors. These errors will go away when you add code in later steps.  
   
-7.  В списке **Источник** выберите **Проект в текущем решении**.  
+     [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/projectitemextension.cs#1)]  [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/projectitemextension.vb#1)]  
   
-8.  В списке **Проект** выберите **BdcProjectItemExtension**, а затем нажмите кнопку **ОК**.  
+## <a name="creating-the-external-data-lists"></a>Creating the External Data Lists  
+ Add a partial definition of the `GenerateExternalDataListsExtension` class that creates an external data list for each entity in the BDC model. To create the external data list, this code first reads the entity data in the BDC model by parsing the XML data in the BDC model file. Then, it creates a list instance that is based on the BDC model and adds this list instance to the project.  
   
-9. В меню **Сборка** выберите **Собрать решение**.  
+#### <a name="to-create-the-external-data-lists"></a>To create the external data lists  
   
-10. Убедитесь, что проект будет компилироваться и построения без ошибок.  
+1.  Paste the following code into the GenerateExternalDataLists code file.  
   
-11. Убедитесь, что в выходную папку построения для проекта GenerateExternalDataLists теперь она содержит файл GenerateExternalDataLists.vsix.  
+     [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#2](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.vb#2)]  [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#2](../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.cs#2)]  
   
-     По умолчанию выходной папкой построения является папка. \\bin\\Debug папку в папке, содержащей файл проекта.  
+## <a name="checkpoint"></a>Checkpoint  
+ At this point in the walkthrough, all the code for the project item extension is now in the project. Build the solution to make sure that the project compiles without errors.  
   
-## Тестирование расширения элемента проекта  
- Расширение элемента проекта готово к тестированию.  Начните отладку проекта расширения в экспериментальном экземпляре Visual Studio.  Затем с помощью расширения в экспериментальном экземпляре Visual Studio создайте внешний список для модели BDC.  После этого откройте внешний список на сайте SharePoint, чтобы проверить, что он работает ожидаемым образом.  
+#### <a name="to-build-the-solution"></a>To build the solution  
   
-#### Запуск отладки расширения  
+1.  On the menu bar, choose **Build**, **Build Solution**.  
   
-1.  При необходимости перезапустите Visual Studio с правами администратора, а затем открывает решение GenerateExternalDataLists.  
+## <a name="creating-a-vsix-package-to-deploy-the-project-item-extension"></a>Creating a VSIX Package to Deploy the Project Item Extension  
+ To deploy the extension, use the VSIX project in your solution to create a VSIX package. First, configure the VSIX package by modifying the source.extension.vsixmanifest file that is included in the VSIX project. Then, create the VSIX package by building the solution.  
   
-2.  В проект BdcProjectItemExtension, откройте файл с кодом ProjectItemExtension, а затем добавьте точку останова в строке кода в методе `Initialize`.  
+#### <a name="to-configure-and-create-the-vsix-package"></a>To configure and create the VSIX package  
   
-3.  Откройте файл с кодом GenerateExternalDataLists, а затем добавьте точку останова в первой строке кода в методе `GenerateExternalDataLists_Execute`.  
+1.  In **Solution Explorer**, open the shortcut menu for the source.extension.vsixmanifest file in the GenerateExternalDataLists project, and then choose **Open**.  
   
-4.  Запустите отладку путем выбора ключа F5 или, в строке меню, выбирая **Отладка**, **Начать отладку**.  
+     Visual Studio opens the file in the manifest editor. The source.extension.vsixmanifest file is the basis for the extension.vsixmanifest file is required by all VSIX packages. For more information about this file, see [VSIX Extension Schema 1.0 Reference](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
-     Visual Studio установит расширение в папку %UserProfile%\\AppData\\Local\\Microsoft\\VisualStudio\\10.0Exp\\Extensions\\Contoso\\External Data List Generator\\1.0 и запустит экспериментальный экземпляр Visual Studio.  После этого можно тестировать элемент проекта в открытом экземпляре Visual Studio.  
+2.  In the **Product Name** box, enter **External Data List Generator**.  
   
-#### Тестирование расширения  
+3.  In the **Author** box, enter **Contoso**.  
   
-1.  В экспериментальном экземпляре Visual Studio в строке меню выберите **Файл**, **Создать**, **Проект**.  
+4.  In the **Description** box, enter **An extension for Business Data Connectivity Model project items that can be used to generate external data lists**.  
   
-2.  В диалоговом окне **Создание проекта** разверните узел **Шаблоны**, разверните узел **Visual C\#**, разверните узел **SharePoint** и выберите пункт **2010**.  
+5.  On the **Assets** tab of the editor, choose the **New** button.  
   
-3.  В списке в верхней части диалогового окна, убедитесь, что выбрано **.NET Framework 3.5**.  Для проектов [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] требуется эта версия .NET Framework.  
+     The **Add New Asset** dialog box appears.  
   
-4.  В списке шаблонов проектов выберите **Проект SharePoint 2010**.  
+6.  In the **Type** list, choose **Microsoft.VisualStudio.MefComponent**.  
   
-5.  В поле **Имя** введите **SharePointProjectTestBDC**, а затем нажмите кнопку **ОК**.  
+    > [!NOTE]  
+    >  This value corresponds to the `MefComponent` element in the extension.vsixmanifest file. This element specifies the name of an extension assembly in the VSIX package. For more information, see [NIB: MEFComponent Element (VSX Schema)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
   
-6.  В мастере настройки SharePoint введите URL\-адрес сайта, который требуется использовать для отладки, выберите **Развернуть как решение фермы**, затем нажмите кнопку **Готово**.  
+7.  In the **Source** list, choose **A project in current solution**.  
   
-7.  Открыть контекстное меню для проекта SharePointProjectTestBDC, выберите **Добавить**, затем выберите **Создать элемент**.  
+8.  In the **Project** list, choose **BdcProjectItemExtension**, and then choose the **OK** button.  
   
-8.  В диалоговом окне **Добавьте NewItem — SharePointProjectTestBDC** разверните узел заданного языка, разверните узел **SharePoint**.  
+9. On the menu bar, choose **Build**, **Build Solution**.  
   
-9. Выберите узел **2010**, а затем выберите шаблон **Модель подключения к бизнес\-данным \(только для решения фермы\)**.  
+10. Make sure that the project compiles and builds without errors.  
   
-10. В поле **Имя** введите **TestBDCModel**, а затем нажмите кнопку **Добавить**.  
+11. Make sure that the build output folder for the GenerateExternalDataLists project now contains the GenerateExternalDataLists.vsix file.  
   
-11. Убедитесь, что выполнение кода в другом экземпляре Visual Studio прерывается на точке останова, заданной в методе `Initialize` файла с кодом ProjectItemExtension.  
+     By default, the build output folder is the ..\bin\Debug folder under the folder that contains your project file.  
   
-12. В остановленном экземпляре Visual Studio выберите ключ **F5** или щелкните в строке меню выберите **Отладка**, **Продолжить**, чтобы продолжить отладку проекта.  
+## <a name="testing-the-project-item-extension"></a>Testing the Project Item Extension  
+ You are now ready to test the project item extension. First, start debugging the extension project in the experimental instance of Visual Studio. Then, use the extension in the experimental instance of Visual Studio to generate an external list for a BDC model. Finally, open the external list on the SharePoint site to verify that it works as expected.  
   
-13. В экспериментальном экземпляре Visual Studio выберите ключ **F5** либо в строке меню выберите **Отладка**, **Начать отладку**, чтобы выполнить построение, развертывание и запустите проект **TestBDCModel**.  
+#### <a name="to-start-debugging-the-extension"></a>To start debugging the extension  
   
-     В веб\-браузере будет открыта страница по умолчанию сайта SharePoint, который определен для отладки.  
+1.  If necessary, restart Visual Studio with administrative credentials, and then open the GenerateExternalDataLists solution.  
   
-14. Убедитесь, что в разделе **Списки** в области панели быстрого запуска еще не содержит список, основанного на модели подключения к бизнес\-данным по умолчанию в проекте.  Необходимо сначала создать внешний список данных, воспользовавшись для этого пользовательским интерфейсом SharePoint или расширением элемента проекта.  
+2.  In the BdcProjectItemExtension project, open the ProjectItemExtension code file, and then add a breakpoint to the line of code in the `Initialize` method.  
   
-15. Закройте веб\-браузера.  
+3.  Open the GenerateExternalDataLists code file, and then add a breakpoint to the first line of code in the `GenerateExternalDataLists_Execute` method.  
   
-16. В экземпляре Visual Studio с проект TestBDCModel, откройте контекстное меню узла **TestBDCModel** в **Обозреватель решений** и выберите пункт **Создайте список внешние данные**.  
+4.  Start debugging by choosing the F5 key or, on the menu bar, choosing **Debug**, **Start Debugging**.  
   
-17. Убедитесь, что выполнение кода в другом экземпляре Visual Studio прерывается на точке останова, заданной в методе `GenerateExternalDataLists_Execute`.  Выберите ключ **F5** либо в строке меню выберите **Отладка**, **Продолжить**, чтобы продолжить отладку проекта.  
+     Visual Studio installs the extension to %UserProfile%\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Contoso\External Data List Generator\1.0 and starts an experimental instance of Visual Studio. You will test the project item in this instance of Visual Studio.  
   
-18. Экспериментальный экземпляр Visual Studio добавляет с именем **Entity1DataList** экземпляра списка в проект TestBDCModel, а также создает экземпляр с именем **Feature2** функции экземпляра списка.  
+#### <a name="to-test-the-extension"></a>To test the extension  
   
-19. Выберите ключ **F5** либо в строке меню выберите **Отладка**, **Начать отладку**, чтобы выполнить построение, развертывание и запуск проекта TestBDCModel.  
+1.  In the experimental instance of Visual Studio, on the menu bar, choose **File**, **New**, **Project**.  
   
-     В веб\-браузере будет открыта страница по умолчанию сайта SharePoint, который используется для отладки.  
+2.  In the **New Project** dialog box, expand the **Templates** node, expand the **Visual C#** node, expand the **SharePoint** node, and then choose **2010**.  
   
-20. В разделе **Списки** области панели быстрого запуска, выберите в списке **Entity1DataList**.  
+3.  In the list at the top of the dialog box, make sure that **.NET Framework 3.5** is selected. Projects for [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] require this version of the .NET Framework.  
   
-21. Проверьте, что список содержит столбцы с именами Identifier1 и сообщением, в дополнение к одному элементу идентификатор, который имеет значение 0 и сообщение " Hello World ".  
+4.  In the list of project templates, choose **SharePoint 2010 Project**.  
   
-     Шаблон **Модель подключения к бизнес\-данным** создает модель подключения к бизнес\-данным по умолчанию, предоставляет всех этих данных.  
+5.  In the **Name** box, enter **SharePointProjectTestBDC**, and then choose the **OK** button.  
   
-22. Закройте веб\-браузера.  
+6.  In the SharePoint Customization Wizard, enter the URL of the site that you want to use for debugging, choose **Deploy as a farm solution**, and then choose the **Finish**button.  
   
-## Очистка компьютера разработчика  
- После тестирования расширения элемента проекта удалите с сайта SharePoint внешний список и модель подключения к бизнес\-данным, а также удалите из Visual Studio расширение элемента проекта.  
+7.  Open the shortcut menu for the SharePointProjectTestBDC project, choose **Add**, and then choose **New Item**.  
   
-#### Удаление внешнего списка данных с сайта SharePoint  
+8.  In the **Add NewItem - SharePointProjectTestBDC** dialog box, expand the installed language node, expand the **SharePoint** node.  
   
-1.  В области панели быстрого запуска сайта SharePoint, выберите в списке **Entity1DataList**.  
+9. Choose the **2010** node, and then choose the **Business Data Connectivity Model (Farm Solution only)** template.  
   
-2.  На ленте сайта SharePoint перейдите на вкладку **Список**.  
+10. In the **Name** box, enter **TestBDCModel**, and then choose the **Add** button.  
   
-3.  На вкладке **Список** в группе **Параметры** выберите **Параметры списка**.  
+11. Verify that the code in the other instance of Visual Studio stops on the breakpoint that you set in the `Initialize` method of the ProjectItemExtension code file.  
   
-4.  В разделе **Разрешения и управление** выберите **Удаление этого списка**, а затем нажмите кнопку **ОК**, чтобы подтвердить, что требуется отправить список в корзину.  
+12. In the stopped instance of Visual Studio, choose the **F5** key, or on menu bar, choose **Debug**, **Continue** to continue to debug the project.  
   
-5.  Закройте веб\-браузера.  
+13. In the experimental instance of Visual Studio, choose the **F5** key, or, on the menu bar, choose **Debug**, **Start Debugging** to build, deploy, and run the **TestBDCModel** project.  
   
-#### Удаление модели подключения к бизнес\-данным с сайта SharePoint  
+     The web browser opens to the default page of the SharePoint site that's specified for debugging.  
   
-1.  В экспериментальном экземпляре Visual Studio в строке меню выберите **Построение**, **Отозвать**.  
+14. Verify that the **Lists** section in the Quick Launch area doesn't yet contain a list that's based on the default BDC model in the project. You must first create an external data list, either by using the SharePoint user interface or by using the project item extension.  
   
-     Visual Studio удаляет модель BDC c сайта SharePoint.  
+15. Close the web browser.  
   
-#### Удаление расширения элемента проекта из Visual Studio  
+16. In the instance of Visual Studio that has the TestBDCModel project open, open the shortcut menu for the **TestBDCModel** node in **Solution Explorer**, and then choose **Generate External Data List**.  
   
-1.  В экспериментальном экземпляре Visual Studio в строке меню выберите **Сервис**, **Расширения и обновления**.  
+17. Verify that the code in the other instance of Visual Studio stops on the breakpoint that you set in the `GenerateExternalDataLists_Execute` method. Choose the **F5** key, or, on the menu bar, choose **Debug**, **Continue** to continue to debug the project.  
   
-     Появится диалоговое окно **Расширения и обновления**.  
+18. The experimental instance of Visual Studio adds a list instance that's named **Entity1DataList** to the TestBDCModel project, and the instance also generates a feature that's named **Feature2** for the list instance.  
   
-2.  В списке расширений выберите **Генератор списка внешние данные**, а затем нажмите кнопку **Удалить**.  
+19. Choose the **F5** key, or, on the menu bar, choose **Debug**, **Start Debugging** to build, deploy, and run the TestBDCModel project.  
   
-3.  В диалоговом окне, появившемся на экране, нажмите кнопку **Да**, чтобы подтвердить удаление расширения.  
+     The web browser opens to the default page of the SharePoint site that's used for debugging.  
   
-4.  Выберите **Перезагрузить сейчас** для завершения процесса удаления.  
+20. In the **Lists** section of the Quick Launch area, choose the **Entity1DataList** list.  
   
-5.  Закройте оба экземпляра Visual Studio \(экспериментальный экземпляр и экземпляр, в котором GenerateExternalDataLists открыто решение\).  
+21. Verify that the list contains columns that are named Identifier1 and Message, in addition to one item that has an Identifier1 value of 0 and a Message value of Hello World.  
   
-## См. также  
+     The **Business Data Connectivity Model** project template generates the default BDC model that provides all of this data.  
+  
+22. Close the web browser.  
+  
+## <a name="cleaning-up-the-development-computer"></a>Cleaning up the Development Computer  
+ After you finish testing the project item extension, remove the external list and BDC model from the SharePoint site and remove the project item extension from Visual Studio.  
+  
+#### <a name="to-remove-the-external-data-list-from-the-sharepoint-site"></a>To remove the external data list from the SharePoint site  
+  
+1.  In the Quick Launch area of the SharePoint site, choose the **Entity1DataList** list.  
+  
+2.  In the Ribbon on the SharePoint site, choose the **List** tab.  
+  
+3.  On the **List** tab, in the **Settings** group, choose **List Settings**.  
+  
+4.  Under **Permissions and Management**, choose **Delete this list**, and then choose **OK** to confirm that you want to send the list to the Recycle Bin.  
+  
+5.  Close the web browser.  
+  
+#### <a name="to-remove-the-bdc-model-from-the-sharepoint-site"></a>To remove the BDC model from the SharePoint site  
+  
+1.  In the experimental instance of Visual Studio, on the menu bar, choose **Build**, **Retract**.  
+  
+     Visual Studio removes the BDC model from the SharePoint site.  
+  
+#### <a name="to-remove-the-project-item-extension-from-visual-studio"></a>To remove the project item extension from Visual Studio  
+  
+1.  In the experimental instance of Visual Studio, on the menu bar, choose **Tools**, **Extensions and Updates**.  
+  
+     The **Extensions and Updates** dialog box opens.  
+  
+2.  In the list of extensions, choose **External Data List Generator**, and then choose the **Uninstall** button.  
+  
+3.  In the dialog box that appears, choose **Yes** to confirm that you want to uninstall the extension.  
+  
+4.  Choose **Restart Now** to complete the uninstallation.  
+  
+5.  Close both instances of Visual Studio (the experimental instance and the instance in which the GenerateExternalDataLists solution is open).  
+  
+## <a name="see-also"></a>See Also  
  [Extending the SharePoint Project System](../sharepoint/extending-the-sharepoint-project-system.md)   
- [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md)   
- [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)  
+ [Creating a Business Data Connectivity Model](../sharepoint/creating-a-business-data-connectivity-model.md)   
+ [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md)  
   
   

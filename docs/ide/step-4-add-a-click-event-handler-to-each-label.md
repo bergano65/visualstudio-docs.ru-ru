@@ -1,5 +1,5 @@
 ---
-title: "Шаг 4. Добавление к каждой метке обработчика событий щелчка мышью | Документы Майкрософт"
+title: 'Step 4: Add a Click Event Handler to Each Label | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -27,53 +27,53 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 0e5b7a1c40e53fa70fe3f6931e1e2a871defe183
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: b7a7fc66913ff7cc4afc952f2f797781a6f90819
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/19/2017
+ms.lasthandoff: 08/30/2017
 
 ---
-# <a name="step-4-add-a-click-event-handler-to-each-label"></a>Шаг 4. Добавление к каждой метке обработчика событий щелчка мышью
-Игра "Подбери пару!" работает следующим образом.  
+# <a name="step-4-add-a-click-event-handler-to-each-label"></a>Step 4: Add a Click Event Handler to Each Label
+The matching game works as follows:  
   
-1.  Когда игрок выбирает один из квадратов со скрытым значком, программа показывает значок игроку, изменяя цвет значка на черный.  
+1.  When a player chooses one of the squares with a hidden icon, the program shows the icon to the player by changing the icon color to black.  
   
-2.  После этого игрок выбирает другой скрытый значок.  
+2.  Then the player chooses another hidden icon.  
   
-3.  Если значки совпадают, они остаются видимыми. Если нет, оба значка снова скрываются.  
+3.  If the icons match, they stay visible. If not, both icons are hidden again.  
   
- Чтобы программа работала именно так, добавьте обработчик событий Click, изменяющий цвет выбираемой метки.  
+ To get your program to work that way, you add a Click event handler that changes the color of the label that is chosen.  
   
-### <a name="to-add-a-click-event-handler-to-each-label"></a>Добавление обработчика событий Click к каждой метке  
+### <a name="to-add-a-click-event-handler-to-each-label"></a>To add a Click event handler to each label  
   
-1.  Откройте форму в конструкторе Windows Forms. В обозревателе решений выберите Form1.cs или Form1.vb. В строке меню выберите **Вид**, **Конструктор**.  
+1.  Open the form in the Windows Forms Designer. In Solution Explorer, choose Form1.cs or Form1.vb. On the menu bar, choose **View**, **Designer**.  
   
-2.  Выберите первый элемент Label, чтобы выделить его. Затем, удерживая нажатой клавишу CTRL, выберите каждую из оставшихся меток, чтобы выбрать и их. Убедитесь, что выбраны все метки.  
+2.  Choose the first label control to select it. Then, hold down the CTRL key while you choose each of the other labels to select them. Be sure that every label is selected.  
   
-3.  Нажмите кнопку **События** на панели инструментов в окне **Свойства**, чтобы открыть страницу **События** в окне **Свойства**. Прокрутите вниз до события **Click** и введите **label_Click** в поле, как показано на следующем рисунке.  
+3.  Choose the **Events** button on the tool bar in the **Properties** window to view the **Events** page in the **Properties** window. Scroll down to the **Click** event, and enter **label_Click** in the box, as shown in the following picture.  
   
-     ![Окно свойств, отображающее событие Click](~/ide/media/express_labelclick.png "Express_labelClick")  
-Окно свойств, отображающее событие Click  
+     ![Properties window showing Click event](../ide/media/express_labelclick.png "Express_labelClick")  
+Properties window showing Click event  
   
-4.  Нажмите клавишу ВВОД. Интегрированная среда разработки добавит обработчик событий Click, который называется `label_Click()`, в код и подключит его к каждой метке в форме.  
+4.  Choose the ENTER key. The IDE adds a Click event handler called `label_Click()` to the code, and hooks it to each of the labels on the form.  
   
-5.  Добавьте остальную часть кода следующим образом:  
+5.  Fill in the rest of the code, as follows:  
   
-     [!code-cs[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/CSharp/step-4-add-a-click-event-handler-to-each-label_1.cs)] [!code-vb[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/VisualBasic/step-4-add-a-click-event-handler-to-each-label_1.vb)]  
-  
-    > [!NOTE]
-    >  При копировании и вставке блока кода `label_Click()` вместо его ввода вручную проследите за тем, что заменить существующий код `label_Click()`. В противном случае в коде появится дублирующий блок.  
+     [!code-csharp[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/CSharp/step-4-add-a-click-event-handler-to-each-label_1.cs)]  [!code-vb[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/VisualBasic/step-4-add-a-click-event-handler-to-each-label_1.vb)]  
   
     > [!NOTE]
-    >  Возможно, вы узнали `object sender` в верхней части обработчика событий; он совпадает с кодом в руководстве [Учебное руководство 2. Создание ограниченной по времени математической головоломки](../ide/tutorial-2-create-a-timed-math-quiz.md). Поскольку вы подключили различные события Click элемента управления Label к одному методу обработчика событий, один и тот же метод вызывается независимо от того, какую метку щелкнет пользователь. Методу обработчика событий необходимо знать, какую метку выбрал игрок, поэтому для определения элемента управления Label используется имя **sender**. Первая строка метода сообщает программе, что это не просто универсальный объект, а элемент управления Label, для обращения к свойствам и методам которого используется имя **clickedLabel**.  
+    >  If you copy and paste the `label_Click()` code block rather than entering the code manually, be sure to replace the existing `label_Click()` code. Otherwise, you'll end up with a duplicate code block.  
   
-     Этот метод сначала проверяет, было ли успешно выполнено преобразование (приведение) **clickedLabel** из объекта в элемент управления Label. Если операция завершилась неудачно, его значение будет `null` (C#) или `Nothing` (Visual Basic) и оставшаяся часть кода метода не будет выполнена. Затем метод с помощью свойства **ForeColor** элемента управления Label проверяет цвет текста выбранной метки. Если цвет текста метки черный, это это означает, что значок уже был выбран, а метод выполнен. (Для этого и нужен оператор `return`. Он сообщает программе, что необходимо остановить выполнение метода.) В противном случае значок не был выбран, поэтому программа изменяет цвет текста метки на черный.  
+    > [!NOTE]
+    >  You may recognize `object sender` at the top of the event handler as the same one used in the [Tutorial 2: Create a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md) tutorial. Because you hooked up different label control Click event to a single event handler method, the same method is called no matter which label the user chooses. The event handler method needs to know which label was chosen, so it uses the name **sender** to identify the label control. The first line of the method tells the program that it's not just a generic object, but specifically a label control, and that it uses the name **clickedLabel** to access the label's properties and methods.  
   
-6.  В строке меню выберите **Файл**, **Сохранить все**, чтобы сохранить ход выполнения, а затем в строке меню выберите **Отладка**, **Начать отладку**, чтобы запустить программу. Вы должны увидеть пустую форму с синим фоном. Выберите любую ячейку в форме, и один из значков станет видимым. Продолжайте выбирать различные ячейки формы. Значки будут отображаться при их выборе.  
+     This method first checks whether **clickedLabel** was successfully converted (cast) from an object to a label control. If unsuccessful, it has a value of `null` (C#) or `Nothing` (Visual Basic), and you don't want to execute the remainder of the code in the method. Next, the method checks the chosen label's text color by using the label's **ForeColor** property. If the label's text color is black, then that means the icon's already been chosen and the method is done. (That's what the `return` statement does: It tells the program to stop executing the method.) Otherwise, the icon hasn't been chosen, so the program changes the label's text color to black.  
   
-### <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал  
+6.  On the menu bar, choose **File**, **Save All** to save your progress, and then, on the menu bar, choose **Debug**, **Start Debugging** to run your program. You should see an empty form with a blue background. Choose any of the cells in the form, and one of the icons should become visible. Continue choosing different places in the form. As you choose the icons, they should appear.  
   
--   Следующий шаг руководства см. в разделе [Шаг 5. Добавление ссылок на метки](../ide/step-5-add-label-references.md).  
+### <a name="to-continue-or-review"></a>To continue or review  
   
--   Предыдущий шаг руководства см. в разделе [Шаг 3. Назначение каждой метке случайного значка](../ide/step-3-assign-a-random-icon-to-each-label.md).
+-   To go to the next tutorial step, see [Step 5: Add Label References](../ide/step-5-add-label-references.md).  
+  
+-   To return to the previous tutorial step, see [Step 3: Assign a Random Icon to Each Label](../ide/step-3-assign-a-random-icon-to-each-label.md).

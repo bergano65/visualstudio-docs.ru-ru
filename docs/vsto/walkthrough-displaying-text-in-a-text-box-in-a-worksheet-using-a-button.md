@@ -1,120 +1,124 @@
 ---
-title: "Пошаговое руководство. Отображение текста в текстовом поле рабочего листа с помощью кнопки"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "текст [разработка решений Office в Visual Studio], отображение листов"
-  - "текст [разработка решений Office в Visual Studio], текстовые поля"
-  - "текстовые поля, отображение текста в листах"
-  - "листы, отображение текста"
+title: 'Walkthrough: Displaying Text in a Text Box in a Worksheet Using a Button | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- text [Office development in Visual Studio], displaying worksheets
+- worksheets, displaying text
+- text boxes, displaying text in worksheets
+- text [Office development in Visual Studio], text boxes
 ms.assetid: 59b73159-aab7-4f61-9ace-1723c18d78d6
 caps.latest.revision: 56
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 55
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 18f5bccd1e9ee54ac759e8815ed71c87e4a06eb7
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Отображение текста в текстовом поле рабочего листа с помощью кнопки
-  В этом пошаговом руководстве описываются основные принципы использования кнопок и текстовых полей на рабочих листах Microsoft Office Excel и способы создания проектов Excel с помощью средств разработки Office в Visual Studio.  Для просмотра результатов в готовом примере обратитесь к примеру элементов управления Excel в разделе [Образцы и пошаговые руководства разработки Office](../vsto/office-development-samples-and-walkthroughs.md).  
+# <a name="walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Walkthrough: Displaying Text in a Text Box in a Worksheet Using a Button
+  This walkthrough shows the basics of using buttons and text boxes on Microsoft Office Excel worksheets, and how to create Excel projects using Office development tools in Visual Studio. To see the result as a completed sample, see the Excel Controls Sample at [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- В процессе выполнения этого пошагового руководства вы научитесь:  
+ During this walkthrough, you will learn how to:  
   
--   добавление элементов управления на лист;  
+-   Add controls to a worksheet.  
   
--   заполнение текстового поля при нажатии кнопки;  
+-   Populate a text box when a button is clicked.  
   
--   Тестирование проекта.  
+-   Test your project.  
   
 > [!NOTE]  
->  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях.  Эти элементы определяются используемым выпуском Visual Studio и его параметрами.  Дополнительные сведения см. в разделе [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/ru-ru/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] или [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] or [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
-## Создание проекта  
- На данном этапе с помощью Visual Studio создается проект книги Excel.  
+## <a name="creating-the-project"></a>Creating the Project  
+ In this step, you will create an Excel Workbook project using Visual Studio.  
   
-#### Создание нового проекта  
+#### <a name="to-create-a-new-project"></a>To create a new project  
   
-1.  Создайте проект книги Excel с именем Кнопка Excel.  Убедитесь, что выбрано **Создать новый документ**.  Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Create an Excel Workbook project with the name **My Excel Button**. Make sure that **Create a new document** is selected. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Созданная книга Excel открывается в конструкторе Visual Studio, и проект **Кнопка Excel** добавляется в **Обозреватель решений**.  
+     Visual Studio opens the new Excel workbook in the designer and adds the **My Excel Button** project to **Solution Explorer**.  
   
-## Добавление элементов управления на лист  
- Для этого пошагового руководства требуется кнопка и текстовое поле на первом листе.  
+## <a name="adding-controls-to-the-worksheet"></a>Adding Controls to the Worksheet  
+ For this walkthrough, you will need a button and a text box on the first worksheet.  
   
-#### Добавление кнопки и текстового поля  
+#### <a name="to-add-a-button-and-a-text-box"></a>To add a button and a text box  
   
-1.  Убедитесь, что книга **Мои Excel Button.xlsx** открыта в конструкторе Visual Studio, и `Sheet1`.  
+1.  Verify that the **My Excel Button.xlsx** workbook is open in the Visual Studio designer, with `Sheet1` displayed.  
   
-2.  С вкладки **Стандартные элементы управления** панели элементов перетащите элемент управления <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> на лист `Sheet1`.  
+2.  From the **Common Controls** tab of the Toolbox, drag a <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> to `Sheet1`.  
   
-3.  В меню **Вид** выберите команду **Окно свойств**.  
+3.  From the **View** menu, select **Properties Window**.  
   
-4.  Убедитесь, что элемент **TextBox1** отображается в раскрывающемся списке окна **Свойства**, и присвойте его свойству **Name** значение **displayText**.  
+4.  Be sure that **TextBox1** is visible in the **Properties** window drop-down box and change the **Name** property of the text box to **displayText**.  
   
-5.  Перетащите элемент управления **Кнопка** на лист `Sheet1` и измените следующие свойства:  
+5.  Drag a **Button** control onto `Sheet1` and change the following properties:  
   
-    |Свойство|Значение|  
-    |--------------|--------------|  
-    |**Имя**|**insertText**|  
-    |**Текст.**|Вставить текст|  
+    |Property|Value|  
+    |--------------|-----------|  
+    |**Name**|**insertText**|  
+    |**Text**|**Insert Text**|  
   
- Теперь напишите код, выполняемый при нажатии кнопки.  
+ Now write the code to run when the button is clicked.  
   
-## Заполнение текстового поля при нажатии кнопки  
- Каждый раз, когда пользователь нажимает кнопку **Здравствуй, мир\!** добавляется в текстовое поле.  
+## <a name="populating-the-text-box-when-the-button-is-clicked"></a>Populating the Text Box when the Button is Clicked  
+ Each time the user clicks the button, **Hello World!** is appended to the text box.  
   
-#### Добавление текста в текстовое поле при нажатии кнопки  
+#### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>To write to the text box when the button is clicked  
   
-1.  В **обозревателе решений** щелкните правой кнопкой мыши **Sheet1** и выберите в контекстном меню команду **Просмотреть код**.  
+1.  In **Solution Explorer**, right-click **Sheet1**, and then click **View Code** on the shortcut menu.  
   
-2.  В обработчик событий <xref:System.Windows.Forms.Control.Click> кнопки добавьте следующий код:  
+2.  Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler of the button:  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#11](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsExcel/CS/Sheet1.cs#11)]
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#11](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsExcel/VB/Sheet1.vb#11)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#11)]  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#11)]  
   
-3.  В C\# необходимо добавлять обработчик событий <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>, как показано ниже.  Сведения о создании обработчиков событий см. в разделе [Практическое руководство. Создание обработчиков событий в проектах Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+3.  In C#, you must add an event handler to the <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> event as shown below. For information on creating event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#12](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsExcel/CS/Sheet1.cs#12)]  
+     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#12)]  
   
-## Тестирование приложения  
- Теперь тест в книгу, чтобы убедиться, что сообщение в текстовое поле **Здравствуй, мир\!**. при нажатии кнопки.  
+## <a name="testing-the-application"></a>Testing the Application  
+ You can now test your workbook to make sure that the message **Hello World!** appears in the text box when you click the button.  
   
-#### Проверка рабочей книги  
+#### <a name="to-test-your-workbook"></a>To test your workbook  
   
-1.  Нажмите клавишу F5 для запуска проекта.  
+1.  Press F5 to run your project.  
   
-2.  Щелкните кнопку.  
+2.  Click the button.  
   
-3.  Убедитесь, что в текстовом поле отображается текст **Здравствуй, мир\!**.  
+3.  Confirm that **Hello World!** appears in the text box.  
   
-## Следующие действия  
- В этом пошаговом руководстве рассмотрены основные принципы использования кнопок и текстовых полей на рабочих листах Excel.  Далее будут рассмотрены следующие задачи:  
+## <a name="next-steps"></a>Next Steps  
+ This walkthrough shows the basics of using buttons and text boxes on Excel worksheets. Here are some tasks that might come next:  
   
--   Развертывание проекта.  Дополнительные сведения см. в разделе [Развертывание решения Office](../vsto/deploying-an-office-solution.md).  
+-   Deploying the project. For more information, see [Deploying an Office Solution](../vsto/deploying-an-office-solution.md).  
   
--   Использование флажков для изменения форматирования.  Дополнительные сведения см. в разделе [Пошаговое руководство. Изменение форматирования листа с использованием элементов управления CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
+-   Using check boxes to change formatting. For more information, see [Walkthrough: Changing Worksheet Formatting Using CheckBox Controls](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
   
-## См. также  
- [Практическое руководство. Добавление элементов управления Windows Forms в документы Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Пошаговые руководства с использованием Excel](../vsto/walkthroughs-using-excel.md)   
- [Ограничения по использованию элементов управления Windows Forms в документах Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+## <a name="see-also"></a>See Also  
+ [How to: Add Windows Forms Controls to Office Documents](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Walkthroughs Using Excel](../vsto/walkthroughs-using-excel.md)   
+ [Limitations of Windows Forms Controls on Office Documents](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

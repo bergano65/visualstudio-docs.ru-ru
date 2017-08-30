@@ -1,93 +1,110 @@
 ---
-title: "CA1021: не используйте параметры out | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1021"
-  - "AvoidOutParameters"
-helpviewer_keywords: 
-  - "AvoidOutParameters"
-  - "CA1021"
+title: 'CA1021: Avoid out parameters | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1021
+- AvoidOutParameters
+helpviewer_keywords:
+- AvoidOutParameters
+- CA1021
 ms.assetid: 970f2304-842c-4fb7-9734-f3871da8d479
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 19
----
-# CA1021: не используйте параметры out
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: c2d981d71613b94c7c1142d40fc0ef8e4a6d0a5c
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1021-avoid-out-parameters"></a>CA1021: Avoid out parameters
 |||  
 |-|-|  
 |TypeName|AvoidOutParameters|  
 |CheckId|CA1021|  
-|Категория|Microsoft.Design|  
-|Критическое изменение|Критическое изменение|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## Причина  
- Открытый или защищенный метод открытого типа имеет выходной \(`out`\) параметр.  
+## <a name="cause"></a>Cause  
+ A public or protected method in a public type has an `out` parameter.  
   
-## Описание правила  
- Чтобы реализовать передачу типов по ссылке \(с помощью ключевого слова `out` или `ref`\), от разработчика требуется опыт работы с указателями, понимание отличия между типами значения и ссылочными типами и умение управлять методами с несколькими возвращаемыми значениями.  Кроме того, далеко не каждый понимает разницу между параметрами `out` и `ref`.  
+## <a name="rule-description"></a>Rule Description  
+ Passing types by reference (using `out` or `ref`) requires experience with pointers, understanding how value types and reference types differ, and handling methods with multiple return values. Also, the difference between `out` and `ref` parameters is not widely understood.  
   
- Если ссылочный тип передается "по ссылке", метод предполагает использовать параметр для возвращения другого экземпляра объекта.  Передачу ссылочного типа по ссылке также называют использованием двойного указателя, указателя на указатель или двойного косвенного обращения.  В соответствии с соглашением о вызовах, в котором по умолчанию используется передача "по значению", параметр, принимающий ссылочный тип, уже получает указатель на объект.  Указатель \(а не объект, на который он указывает\) передается по значению.  Передача по значению означает, что метод не может изменить указатель таким образом, чтобы он указывал на новый экземпляр ссылочного типа.  Однако метод может изменить содержимое объекта, на который указывает указатель.  Для большинства приложений этого достаточно и обеспечивает желаемое поведение.  
+ When a reference type is passed "by reference," the method intends to use the parameter to return a different instance of the object. Passing a reference type by reference is also known as using a double pointer, pointer to a pointer, or double indirection. By using the default calling convention, which is pass "by value," a parameter that takes a reference type already receives a pointer to the object. The pointer, not the object to which it points, is passed by value. Pass by value means that the method cannot change the pointer to have it point to a new instance of the reference type. However, it can change the contents of the object to which it points. For most applications this is sufficient and yields the desired behavior.  
   
- Если метод должен возвращать другой экземпляр, следует использовать возвращаемое значение метода.  Для получения сведений о методах, которые обрабатывают строки и возвращают новый экземпляр строки, см. в описании класса <xref:System.String?displayProperty=fullName>.  При использовании данной модели вызывающему объекту необходимо решить, следует ли сохранять исходный объект.  
+ If a method must return a different instance, use the return value of the method to accomplish this. See the <xref:System.String?displayProperty=fullName> class for a variety of methods that operate on strings and return a new instance of a string. When this model is used, the caller must decide whether the original object is preserved.  
   
- Конечно, возвращаемые значения всем знакомы и повсеместно используются, однако для правильного применения параметров `out` и `ref` требуется средний уровень навыков проектирования и кодирования.  Архитекторам, разрабатывающим библиотеки для широкого использования, не следует ожидать, что пользователи являются профессионалами в использовании параметров `out` и `ref`.  
+ Although return values are commonplace and heavily used, the correct application of `out` and `ref` parameters requires intermediate design and coding skills. Library architects who design for a general audience should not expect users to master working with `out` or `ref` parameters.  
   
-## Устранение нарушений  
- Для устранения нарушения данного правила, вызванного типом значения, необходимо, чтобы метод возвращал объект в качестве своего возвращаемого значения.  Если метод должен возвращать несколько значений, измените его таким образом, чтобы он возвращал единственный экземпляр объекта, содержащего значения.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule that is caused by a value type, have the method return the object as its return value. If the method must return multiple values, redesign it to return a single instance of an object that holds the values.  
   
- Для устранения нарушения данного правила, вызванного ссылочным типом, следует убедиться, что действительно требуется возвращать новый экземпляр ссылки.  Если такое поведения является необходимым, то для этого следует использовать возвращаемое значение метода.  
+ To fix a violation of this rule that is caused by a reference type, make sure that the desired behavior is to return a new instance of the reference. If it is, the method should use its return value to do this.  
   
-## Отключение предупреждений  
- Отключение предупреждений о нарушении этого правила является безопасным.  Однако подобная структура кода может приводить к проблемам удобства использования.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule. However, this design could cause usability issues.  
   
-## Пример  
- В следующей библиотеке показаны две реализации класса, который создает отклики на ввод пользователя.  Первая реализация \(`BadRefAndOut`\) вынуждает пользователя библиотеки управлять тремя возвращаемыми значениями.  Во второй реализации \(`RedesignedRefAndOut`\) работа пользователя упрощается за счет возвращения класса\-контейнера \(`ReplyData`\), который управляет данными как единым блоком.  
+## <a name="example"></a>Example  
+ The following library shows two implementations of a class that generates responses to the feedback of a user. The first implementation (`BadRefAndOut`) forces the library user to manage three return values. The second implementation (`RedesignedRefAndOut`) simplifies the user experience by returning an instance of a container class (`ReplyData`) that manages the data as a single unit.  
   
- [!code-cs[FxCop.Design.NoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_1.cs)]  
+ [!code-csharp[FxCop.Design.NoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_1.cs)]  
   
-## Пример  
- В следующем приложении демонстрируется работа пользователя.  Вызов переработанной библиотеки \(метода `UseTheSimplifiedClass`\) более понятен, и сведениями, возвращаемыми данным методом, легче управлять.  Выходные данные, возвращаемые обоими методами, идентичны.  
+## <a name="example"></a>Example  
+ The following application illustrates the experience of the user. The call to the redesigned library (`UseTheSimplifiedClass` method) is more straightforward, and the information returned by the method is easily managed. The output from the two methods is identical.  
   
- [!code-cs[FxCop.Design.TestNoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_2.cs)]  
+ [!code-csharp[FxCop.Design.TestNoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_2.cs)]  
   
-## Пример  
- В следующем примере библиотеки демонстрируется использование параметров `ref` для ссылочных типов. Здесь также показан оптимальный способ реализации данной функциональной возможности.  
+## <a name="example"></a>Example  
+ The following example library illustrates how `ref` parameters for reference types are used and shows a better way to implement this functionality.  
   
- [!code-cs[FxCop.Design.RefByRefNo#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_3.cs)]  
+ [!code-csharp[FxCop.Design.RefByRefNo#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_3.cs)]  
   
-## Пример  
- В следующем приложении для демонстрации поведения библиотеки вызывается каждый ее метод.  
+## <a name="example"></a>Example  
+ The following application calls each method in the library to demonstrate the behavior.  
   
- [!code-cs[FxCop.Design.TestRefByRefNo#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_4.cs)]  
+ [!code-csharp[FxCop.Design.TestRefByRefNo#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_4.cs)]  
   
- В результате выполнения примера получается следующий результат:  
+ This example produces the following output.  
   
-  **Изменение указателя \- передается по значению:**  
+ **Changing pointer - passed by value:**  
 **12345**  
 **12345**  
-**Изменение указателя \- передается по ссылке:**  
+**Changing pointer - passed by reference:**  
 **12345**  
 **12345 ABCDE**  
-**Передача возвратом значения:**  
+**Passing by return value:**  
 **12345 ABCDE**   
-## Методы, использующие шаблон Try  
+## <a name="try-pattern-methods"></a>Try pattern methods  
   
-### Описание  
- Использование методов, которые реализуют шаблон **Try\<Something\>**, например <xref:System.Int32.TryParse%2A?displayProperty=fullName>, не приводит к нарушению данного правила.  В следующем примере показана структура \(тип значения\), которая реализует метод <xref:System.Int32.TryParse%2A?displayProperty=fullName>.  
+### <a name="description"></a>Description  
+ Methods that implement the **Try\<Something>** pattern, such as <xref:System.Int32.TryParse%2A?displayProperty=fullName>, do not raise this violation. The following example shows a structure (value type) that implements the <xref:System.Int32.TryParse%2A?displayProperty=fullName> method.  
   
-### Код  
- [!CODE [FxCop.Design.TryPattern#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Design.TryPattern#1)]  
+### <a name="code"></a>Code  
+ [!code-csharp[FxCop.Design.TryPattern#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_5.cs)]  
   
-## Связанные правила  
- [CA1045: не передавайте типы по ссылке](../code-quality/ca1045-do-not-pass-types-by-reference.md)
+## <a name="related-rules"></a>Related Rules  
+ [CA1045: Do not pass types by reference](../code-quality/ca1045-do-not-pass-types-by-reference.md)

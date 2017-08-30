@@ -1,72 +1,88 @@
 ---
-title: "Пошаговое руководство. Загрузка вспомогательных сборок по требованию с помощью интерфейса API технологии развертывания ClickOnce | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "развертывание ClickOnce, глобализация"
-  - "развертывание ClickOnce, локализация"
-  - "развертывание ClickOnce, загрузка по требованию"
-  - "глобализация, ClickOnce"
-  - "локализация, развертывание ClickOnce"
-  - "локализация, Windows Forms"
-  - "вспомогательные сборки, ClickOnce"
-  - "Windows Forms, локализация"
+title: 'Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- ClickOnce deployment, globalization
+- localization, Windows Forms
+- Windows Forms, localization
+- globalization, ClickOnce
+- satellite assemblies, ClickOnce
+- ClickOnce deployment, on-demand download
+- localization, ClickOnce deployment
+- ClickOnce deployment, localization
 ms.assetid: fdaa553f-a27e-44eb-a4e2-08c122105a87
 caps.latest.revision: 11
-caps.handback.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# Пошаговое руководство. Загрузка вспомогательных сборок по требованию с помощью интерфейса API технологии развертывания ClickOnce
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 617b8edabe41382c298ee70b68c304cfdc51eb6f
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
-Приложения Windows Forms можно настроить для нескольких языков и региональных параметров, воспользовавшись вспомогательными сборками.*Вспомогательная сборка* — это сборка, содержащая ресурсы приложения для языка, отличного от языка и региональных параметров приложения по умолчанию.  
+---
+# <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API
+Windows Forms applications can be configured for multiple cultures through the use of satellite assemblies. A *satellite assembly* is an assembly that contains application resources for a culture other than the application's default culture.  
   
- Как указано в разделе [Локализация приложений ClickOnce](../deployment/localizing-clickonce-applications.md), одно развертывание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] может включать несколько вспомогательных сборок для нескольких языков и региональных параметров. По умолчанию [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] загружает все вспомогательные сборки в развертывание на клиентском компьютере, хотя один клиент, вероятно, потребует только одну вспомогательную сборку.  
+ As discussed in [Localizing ClickOnce Applications](../deployment/localizing-clickonce-applications.md), you can include multiple satellite assemblies for multiple cultures within the same [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] deployment. By default, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] will download all of the satellite assemblies in your deployment to the client machine, although a single client will probably require only one satellite assembly.  
   
- Это пошаговое руководство показывает, как пометить вспомогательные сборки как необязательные и загрузить только сборку, необходимую клиентскому компьютеру для текущих настроек языка и региональных параметров. В следующей процедуре используются средства, доступные в [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Эту задачу также можно выполнить в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  См. также раздел [Пошаговое руководство. Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce и конструктора](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) или [Пошаговое руководство. Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce и конструктора](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
+ This walkthrough demonstrates how to mark your satellite assemblies as optional, and download only the assembly a client machine needs for its current culture settings. The following procedure uses the tools available in the [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. You can also perform this task in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Also see [Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API Using the Designer](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) or [Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API Using the Designer](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
   
 > [!NOTE]
->  В целях тестирования в следующем примере кода программным образом задается следующий язык и региональные параметры: `ja-JP`. В подразделе «Дальнейшие действия» далее в этом разделе приводятся сведения о том, как настроить этот код для производственной среды.  
+>  For testing purposes, the following code example programmatically sets the culture to `ja-JP`. See the "Next Steps" section later in this topic for information on how to adjust this code for a production environment.  
   
-## Обязательные компоненты  
- Составители этого раздела исходили из того, что вы знаете, как добавить локализованные ресурсы в свое приложение с использованием Visual Studio. См. подробные инструкции в разделе [Пошаговое руководство. Локализация Windows Forms](https://msdn.microsoft.com/en-us/library/vstudio/y99d1cd3\(v=vs.100\).aspx).  
+## <a name="prerequisites"></a>Prerequisites  
+ This topic assumes that you know how to add localized resources to your application using Visual Studio. For detailed instructions, see [Walkthrough: Localizing Windows Forms](https://msdn.microsoft.com/en-us/library/vstudio/y99d1cd3\(v=vs.100\).aspx).  
   
-### Загрузка вспомогательных сборок по требованию  
+### <a name="to-download-satellite-assemblies-on-demand"></a>To download satellite assemblies on demand  
   
-1.  Добавьте следующий код в приложение, чтобы включить загрузку вспомогательных сборок по требованию.  
+1.  Add the following code to your application to enable on-demand downloading of satellite assemblies.  
   
-     [!code-cs[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
-     [!code-vb[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]  
+     [!code-csharp[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]  [!code-vb[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]  
   
-2.  Создайте вспомогательные сборки для своего приложения с помощью [Resgen.exe \(Resource File Generator\)](../Topic/Resgen.exe%20\(Resource%20File%20Generator\).md) или [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+2.  Generate satellite assemblies for your application by using [Resgen.exe (Resource File Generator)](/dotnet/framework/tools/resgen-exe-resource-file-generator) or [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-3.  Создайте манифест приложения или откройте существующий манифест приложения с помощью MageUI.exe. Более подробную информацию об этом средстве см. в разделе [MageUI.exe \(Manifest Generation and Editing Tool, Graphical Client\)](../Topic/MageUI.exe%20\(Manifest%20Generation%20and%20Editing%20Tool,%20Graphical%20Client\).md).  
+3.  Generate an application manifest, or open your existing application manifest, by using MageUI.exe. For more information about this tool, see [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).  
   
-4.  Щелкните вкладку **Файлы**.  
+4.  Click the **Files** tab.  
   
-5.  Щелкните кнопку **многоточие** \(**...**\) и выберите каталог, содержащий все сборки и файлы вашего приложения, включая вспомогательные сборки, созданные с помощью инструмента Resgen.exe. \(Вспомогательная сборка будет иметь имя в формате *isoCode*\\ApplicationName.Resources.dll, где *isoCode* — это идентификатор языка в формате RFC 1766.\)  
+5.  Click the **ellipsis** button (**...**) and select the directory containing all of your application's assemblies and files, including the satellite assemblies you generated using Resgen.exe. (A satellite assembly will have a name in the form *isoCode*\ApplicationName.resources.dll, where *isoCode* is a language identifier in RFC 1766 format.)  
   
-6.  Щелкните **Заполнить**, чтобы добавить файлы в ваше развертывание.  
+6.  Click **Populate** to add the files to your deployment.  
   
-7.  Установите флажок **Необязательно** для каждой вспомогательной сборки.  
+7.  Select the **Optional** check box for each satellite assembly.  
   
-8.  Установите в поле группировки для каждой вспомогательной сборки соответствующий идентификатор языка по ISO. Например, для японской вспомогательной сборки нужно указать имя группы загрузки `ja-JP`. В результате код, добавленный вами в шаге 1, сможет загружать соответствующую вспомогательную сборку в зависимости от настройки свойства <xref:System.Threading.Thread.CurrentUICulture%2A> у пользователя.  
+8.  Set the group field for each satellite assembly to its ISO language identifier. For example, for a Japanese satellite assembly, you would specify a download group name of `ja-JP`. This will enable the code you added in step 1 to download the appropriate satellite assembly, depending upon the user's <xref:System.Threading.Thread.CurrentUICulture%2A> property setting.  
   
-## Следующие действия  
- В продуктивной среде, скорее всего, потребуется удалить строку в примере кода, задающую определенное значение для свойства <xref:System.Threading.Thread.CurrentUICulture%2A>, потому что на клиентских компьютерах правильное значение будет задаваться по умолчанию. Если приложение выполняется на клиентском компьютере с японским языком, например, свойство <xref:System.Threading.Thread.CurrentUICulture%2A> будет по умолчанию равно `ja-JP`. Программная установка этого значения — хороший способ проверить вспомогательные сборки перед развертыванием приложения.  
+## <a name="next-steps"></a>Next Steps  
+ In a production environment, you will likely need to remove the line in the code example that sets <xref:System.Threading.Thread.CurrentUICulture%2A> to a specific value, because client machines will have the correct value set by default. When your application runs on a Japanese client machine, for example, <xref:System.Threading.Thread.CurrentUICulture%2A> will be `ja-JP` by default. Setting this value programmatically is a good way to test your satellite assemblies before you deploy your application.  
   
-## См. также  
- [Локализация приложений ClickOnce](../deployment/localizing-clickonce-applications.md)
+## <a name="see-also"></a>See Also  
+ [Localizing ClickOnce Applications](../deployment/localizing-clickonce-applications.md)

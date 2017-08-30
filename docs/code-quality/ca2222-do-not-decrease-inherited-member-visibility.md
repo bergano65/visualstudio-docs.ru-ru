@@ -1,50 +1,66 @@
 ---
-title: "CA2222: не уменьшайте видимость унаследованных членов | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DoNotDecreaseInheritedMemberVisibility"
-  - "CA2222"
-helpviewer_keywords: 
-  - "CA2222"
-  - "DoNotDecreaseInheritedMemberVisibility"
+title: 'CA2222: Do not decrease inherited member visibility | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DoNotDecreaseInheritedMemberVisibility
+- CA2222
+helpviewer_keywords:
+- DoNotDecreaseInheritedMemberVisibility
+- CA2222
 ms.assetid: 066c8675-381f-43cc-956c-d757cc494028
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 14
----
-# CA2222: не уменьшайте видимость унаследованных членов
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: d4ab56a1963c0b6129aff83088b08104ccbe5437
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222: Do not decrease inherited member visibility
 |||  
 |-|-|  
 |TypeName|DoNotDecreaseInheritedMemberVisibility|  
 |CheckId|CA2222|  
-|Категория|Microsoft.Usage|  
-|Критическое изменение|Не критическое|  
+|Category|Microsoft.Usage|  
+|Breaking Change|Non Breaking|  
   
-## Причина  
- Закрытый метод в незапечатанном типе имеет подпись, идентичную с открытым методом, объявленным в базовом типе.  Закрытый метод не является окончательным.  
+## <a name="cause"></a>Cause  
+ A private method in an unsealed type has a signature that is identical to a public method declared in a base type. The private method is not final.  
   
-## Описание правила  
- Не следует изменять модификатор доступа для унаследованных членов.  Если сделать унаследованный член закрытым, то доступ вызывающих объектов к реализации метода базового класса все равно не будет запрещен.  Если сделать член закрытым при незапечатанном типе, наследуемые типы могут вызывать последнюю открытую реализацию метода в иерархии наследования.  Чтобы изменить модификатор доступа следует либо пометить метод как окончательный, либо запечатать его тип, чтобы избежать переопределения.  
+## <a name="rule-description"></a>Rule Description  
+ You should not change the access modifier for inherited members. Changing an inherited member to private does not prevent callers from accessing the base class implementation of the method. If the member is made private and the type is unsealed, inheriting types can call the last public implementation of the method in the inheritance hierarchy. If you must change the access modifier, either the method should be marked final or its type should be sealed to prevent the method from being overridden.  
   
-## Устранение нарушений  
- Чтобы устранить нарушение этого правила, измените доступ \(он не должен быть закрытым\).  Либо можно сделать метод окончательным, если это поддерживается используемым языком программирования.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, change the access to be non-private. Alternatively, if your programming language supports it, you can make the method final.  
   
-## Отключение предупреждений  
- Для этого правила отключать вывод предупреждений не следует.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## Пример  
- В следующем примере показан тип, который нарушает данное правило.  
+## <a name="example"></a>Example  
+ The following example shows a type that violates this rule.  
   
- [!code-vb[FxCop.Usage.InheritedPublic#1](../code-quality/codesnippet/VisualBasic/ca2222-do-not-decrease-inherited-member-visibility_1.vb)]
- [!code-cs[FxCop.Usage.InheritedPublic#1](../code-quality/codesnippet/CSharp/ca2222-do-not-decrease-inherited-member-visibility_1.cs)]
+ [!code-vb[FxCop.Usage.InheritedPublic#1](../code-quality/codesnippet/VisualBasic/ca2222-do-not-decrease-inherited-member-visibility_1.vb)] [!code-csharp[FxCop.Usage.InheritedPublic#1](../code-quality/codesnippet/CSharp/ca2222-do-not-decrease-inherited-member-visibility_1.cs)]

@@ -1,63 +1,68 @@
 ---
-title: "Глобальный доступ к объектам в проектах Office"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "ThisDocument_Shutdown"
-  - "ThisDocument_Startup"
-  - "класс Globals, глобальный доступ к объекту"
-  - "листы [разработка решений Office в Visual Studio], глобальный доступ"
-  - "документы [разработка решений Office в Visual Studio], глобальный доступ"
-  - "обработчики событий [разработка решений Office в Visual Studio]"
-  - "ThisWorkbook_Startup"
-  - "надстройки уровня приложения [разработка решений Office в Visual Studio]"
-  - "надстройки [разработка решений Office в Visual Studio], события"
-  - "книги [разработка решений Office в Visual Studio], глобальный доступ"
-  - "ThisWorkbook_Shutdown"
-  - "настройки уровня документа [разработка решений Office в Visual Studio]"
-  - "Startup - событие"
-  - "Shutdown - событие"
-  - "проекты [разработка решений Office в Visual Studio], глобальный доступ"
-  - "документы Office [разработка решений Office в Visual Studio], глобальный доступ"
-  - "ThisAddin_Startup"
-  - "события [разработка решений Office в Visual Studio]"
-  - "ThisAddIn_Shutdown"
+title: Global Access to Objects in Office Projects | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- ThisDocument_Shutdown
+- ThisDocument_Startup
+- Globals class, object global access
+- worksheets [Office development in Visual Studio], global access
+- documents [Office development in Visual Studio], global access
+- event handlers [Office development in Visual Studio]
+- ThisWorkbook_Startup
+- application-level addins [Office development in Visual Studio]
+- addins [Office development in Visual Studio], events
+- workbooks [Office development in Visual Studio], global access
+- ThisWorkbook_Shutdown
+- document-level customizations [Office development in Visual Studio]
+- Startup event
+- Shutdown event
+- projects [Office development in Visual Studio], global access
+- Office documents [Office development in Visual Studio, global access
+- ThisAddin_Startup
+- events [Office development in Visual Studio]
+- ThisAddIn_Shutdown
 ms.assetid: f6a7f0ef-75d0-4a9b-9aec-be95ffa26adf
 caps.latest.revision: 55
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 54
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: a166e8ce7dc6315d9e150e8c7a1a11d135fd5517
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Глобальный доступ к объектам в проектах Office
-  При создании проекта Office Visual Studio автоматически создает в проекте класс с именем `Globals`. Класс `Globals` можно использовать для доступа к различным элементам проекта из любого кода проекта в среде выполнения.  
+# <a name="global-access-to-objects-in-office-projects"></a>Global Access to Objects in Office Projects
+  When you create an Office project, Visual Studio automatically generates a class named `Globals` in the project. You can use the `Globals` class to access several different project items at run time from any code in the project.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## Использование класса Globals  
- `Globals` является статическим классом, содержащим ссылки на определенные элементы проекта. С помощью класса `Globals` разработчик может обращаться к следующим элементам из любого кода проекта в среде выполнения:  
+## <a name="how-to-use-the-globals-class"></a>How to Use the Globals Class  
+ `Globals` is a static class that keeps references to certain items in your project. By using the `Globals` class, you can access the following items from any code in the project at run time:  
   
--   Классы `ThisWorkbook` и `Sheet`*n* в книге Excel или проекте шаблона. Доступ к этим объектам осуществляется с помощью свойств `Globals.ThisWorkbook` и `Sheet`*n*.  
+-   The `ThisWorkbook` and `Sheet`*n* classes in an Excel workbook or template project. You can access these objects by using the `Globals.ThisWorkbook` and `Sheet`*n* properties.  
   
--   Класс `ThisDocument` в документе Word или проекте шаблона. Доступ к этому объекту осуществляется с помощью свойства `Globals.ThisDocument`.  
+-   The `ThisDocument` class in a Word document or template project. You can access this object by using the `Globals.ThisDocument` property.  
   
--   Класс `ThisAddIn` в проекте надстройки VSTO. Доступ к этому объекту осуществляется с помощью свойства `Globals.ThisAddIn`.  
+-   The `ThisAddIn` class in an VSTO Add-in project. You can access this object by using the `Globals.ThisAddIn` property.  
   
--   Все ленты проекта, настроенные с использованием конструктора лент. Доступ к лентам осуществляется с помощью свойства `Globals.Ribbons`. Для получения дополнительной информации см. [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md).  
+-   All Ribbons in your project that you customized by using the Ribbon Designer. You can access the Ribbons by using the `Globals.Ribbons` property. For more information, see [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md).  
   
--   Все области формы Outlook в проекте надстройки VSTO для Outlook. Доступ к областям формы осуществляется с помощью свойства `Globals.FormRegions`. Для получения дополнительной информации см. [Доступ к области формы во время выполнения](../vsto/accessing-a-form-region-at-run-time.md).  
+-   All Outlook form regions in an Outlook VSTO Add-in project. You can access the form regions by using the `Globals.FormRegions` property. For more information, see [Accessing a Form Region at Run Time](../vsto/accessing-a-form-region-at-run-time.md).  
   
--   Объект фабрики, позволяющий создавать элементы управления ленты и ведущие элементы в среде выполнения в проектах, предназначенных для платформы [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Доступ к этому объекту осуществляется с помощью свойства `Globals.Factory`. Этот объект представляет собой экземпляр класса, который реализует один из следующих интерфейсов:  
+-   A factory object that enables you to create Ribbon controls, and host items at run time in projects that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or the [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. You can access this object by using the `Globals.Factory` property. This object is an instance of a class that implements one the following interfaces:  
   
     -   <xref:Microsoft.Office.Tools.Factory>  
   
@@ -67,24 +72,23 @@ caps.handback.revision: 54
   
     -   <xref:Microsoft.Office.Tools.Word.Factory>  
   
- Например, свойство `Globals.Sheet1` позволяет вставлять текст в элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> на листе `Sheet1`, когда пользователь нажимает кнопку на панели действий в проекте уровня документа для Excel.  
+ For example, you can use the `Globals.Sheet1` property to insert text into a <xref:Microsoft.Office.Tools.Excel.NamedRange> control on `Sheet1` when a user clicks a button on the actions pane in a document-level project for Excel.  
   
- [!code-csharp[Trin_VstcoreProgramming#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgramming/CS/Sheet1.cs#1)]
- [!code-vb[Trin_VstcoreProgramming#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgramming/VB/Sheet1.vb#1)]  
+ [!code-vb[Trin_VstcoreProgramming#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#1)] [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]  
   
-## Инициализация класса Globals  
- Код, который пытается использовать класс `Globals` до полной инициализации документа или надстройки VSTO, может вызывать исключение в среде выполнения. Например, использование класса `Globals` при объявлении переменной уровня класса может привести к сбою, потому что класс `Globals` может не инициализироваться со ссылками на все ведущие элементы перед созданием объявленного объекта.  
+## <a name="initializing-the-globals-class"></a>Initializing the Globals Class  
+ Code that attempts to use the `Globals` class before the document or VSTO Add-in is completely initialized might throw a run time exception. For example, using `Globals` when declaring a class-level variable might fail because the `Globals` class might not be initialized with references to all of the host items before the declared object is instantiated.  
   
 > [!NOTE]  
->  Класс `Globals` никогда не инициализируется во время разработки, но экземпляры элементов управления создаются разработчиком. Это означает, что, если создается пользовательский элемент управления, в котором свойство класса `Globals` используется в пользовательском классе элементов управления, нужно проверять, возвращает ли свойство значение **null**, прежде чем пытаться использовать возвращенный объект.  
+>  The `Globals` class is never initialized at design time, but control instances are created by the designer. This means that if you create a user control that uses a property of the `Globals` class from inside a user control class, you must whether the property returns **null** before you try to use the returned object.  
   
-## См. также  
- [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)   
- [Доступ к области формы во время выполнения](../vsto/accessing-a-form-region-at-run-time.md)   
- [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)   
- [Ведущий элемент документа](../vsto/document-host-item.md)   
- [Ведущий элемент книги](../vsto/workbook-host-item.md)   
- [Ведущие элементы листа](../vsto/worksheet-host-item.md)   
- [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Accessing a Form Region at Run Time](../vsto/accessing-a-form-region-at-run-time.md)   
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Document Host Item](../vsto/document-host-item.md)   
+ [Workbook Host Item](../vsto/workbook-host-item.md)   
+ [Worksheet Host Item](../vsto/worksheet-host-item.md)   
+ [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   
   

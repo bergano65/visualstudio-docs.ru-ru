@@ -1,99 +1,108 @@
 ---
-title: "CA1806: не игнорируйте результаты метода | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1806"
-  - "DoNotIgnoreMethodResults"
-helpviewer_keywords: 
-  - "CA1806"
-  - "DoNotIgnoreMethodResults"
+title: 'CA1806: Do not ignore method results | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1806
+- DoNotIgnoreMethodResults
+helpviewer_keywords:
+- CA1806
+- DoNotIgnoreMethodResults
 ms.assetid: fd805687-0817-481e-804e-b62cfb3b1076
 caps.latest.revision: 27
-caps.handback.revision: 27
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA1806: не игнорируйте результаты метода
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 758939a6e49402d6e4da8d9e0d549e8da94f1bb8
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Do not ignore method results
 |||  
 |-|-|  
 |TypeName|DoNotIgnoreMethodResults|  
 |CheckId|CA1806|  
-|Категория|Microsoft.Usage|  
-|Критическое изменение|Не критическое|  
+|Category|Microsoft.Usage|  
+|Breaking Change|Non Breaking|  
   
-## Причина  
- Это предупреждение может возникать по нескольким причинам.  
+## <a name="cause"></a>Cause  
+ There are several possible reasons for this warning:  
   
--   Создается новый объект, который нигде не используется.  
+-   A new object is created but never used.  
   
--   Вызывается метод, который создает и возвращает новую строку, однако эта строка нигде не используется.  
+-   A method that creates and returns a new string is called and the new string is never used.  
   
--   Метод COM или P\/Invoke возвращает значение HRESULT или код ошибки, который никогда не используется.  Описание правила  
+-   A COM or P/Invoke method that returns a HRESULT or error code that is never used. Rule Description  
   
- Ненужное создание объекта и связанная с ним сборка мусора для неиспользуемого объекта понижает производительность.  
+ Unnecessary object creation and the associated garbage collection of the unused object degrade performance.  
   
- Строки невозможно изменить, и такие методы как String.ToUpper возвращают новый экземпляр строки, а не изменяют экземпляр строки в вызывающем методе.  
+ Strings are immutable and methods such as String.ToUpper returns a new instance of a string instead of modifying the instance of the string in the calling method.  
   
- Игнорирование HRESULT или кода ошибки может привести к непредвиденному поведению в состоянии ошибки или к нехватке ресурсов.  
+ Ignoring HRESULT or error code can lead to unexpected behavior in error conditions or to low-resource conditions.  
   
-## Устранение нарушений  
- Если метод А создает новый экземпляр объекта В, который никогда не используется, передайте этот экземпляр в качестве аргумента другому методу или присвойте экземпляр переменной.  Если не требуется создавать объект, удалите его; или  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ If method A creates a new instance of B object that is never used, pass the instance as an argument to another method or assign the instance to a variable. If the object creation is unnecessary, remove the it.-or-  
   
- Если метод A вызывает метод B, но не использует новый экземпляр строки, возвращаемый методом B.  Передайте этот экземпляр другому методу в качестве аргумента, присвойте экземпляр переменной.  Или удалите вызов, если он не нужен.  
+ If method A calls method B, but does not use the new string instance that the method B returns. Pass the instance as an argument to another method, assign the instance to a variable. Or remove the call if it is unnecessary.  
   
- – или –  
+ -or-  
   
- Если метод A вызывает метод B, но не использует значение HRESULT или код ошибки, возвращаемый методом B.  Используйте результат в условном операторе, присвойте его переменной или передайте его в качестве аргумента другому методу.  
+ If method A calls method B, but does not use the HRESULT or error code that the method returns. Use the result in a conditional statement, assign the result to a variable, or pass it as an argument to another method.  
   
-## Отключение предупреждений  
- Предупреждения о нарушении данного правила можно отключить только в том случае, если создание объекта необходимо для какой\-либо цели.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule unless the act of creating the object serves some purpose.  
   
-## Пример  
- В следующем примере показан класс, игнорирующий результат вызова метода String.Trim.  
+## <a name="example"></a>Example  
+ The following example shows a class that ignores the result of calling String.Trim.  
   
- [!CODE [FxCop.Usage.DoNotIgnoreMethodResults#1](FxCop.Usage.DoNotIgnoreMethodResults#1)]  
+ [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_1.cs)] [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_1.vb)] [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_1.cpp)]  
   
-## Пример  
- В следующем примере предыдущее нарушение устраняется присвоением результата метода String.Trim переменной, для которой он вызывался.  
+## <a name="example"></a>Example  
+ The following example fixes the previous violation by assigning the result of String.Trim back to the variable it was called on.  
   
- [!CODE [FxCop.Usage.DoNotIgnoreMethodResults2#1](FxCop.Usage.DoNotIgnoreMethodResults2#1)]  
+ [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_2.cs)] [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_2.vb)] [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_2.cpp)]  
   
-## Пример  
- В следующем примере показан метод, который не использует создаваемый им объект.  
+## <a name="example"></a>Example  
+ The following example shows a method that does not use an object that it creates.  
   
 > [!NOTE]
->  Это нарушение нельзя воспроизвести в Visual Basic.  
+>  This violation cannot be reproduced in Visual Basic.  
+
+ [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_3.cpp)] [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_3.cs)]   
   
- [!code-cs[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_1.cs)]
- [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_1.vb)]
- [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_1.cpp)]  
+## <a name="example"></a>Example  
+ The following example fixes the previous violation by removing the unnecessary creation of an object.  
+
+ [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_4.cs)] [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_4.cpp)] 
+
+<!-- Examples don't exist for the below... -->
+<!--
+## Example  
+ The following example shows a method that ignores the error code that the native method GetShortPathName returns.  
   
-## Пример  
- В следующем примере предыдущее нарушение устраняется посредством удаления ненужного создания объекта.  
-  
- [!code-cs[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_2.cs)]
- [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_2.vb)]
- [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_2.cpp)]  
-  
-## Пример  
- В следующем примере показан метод, игнорирующий код ошибки, который возвращается собственным методом GetShortPathName.  
-  
- [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_3.cpp)]
- [!code-cs[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_3.cs)]  
-  
-## Пример  
- В следующем примере предыдущее нарушение устраняется посредством проверки кода ошибки и создания исключения при сбое вызова.  
-  
- [!code-cs[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_4.cs)]
- [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_4.cpp)]
+## Example  
+ The following example fixes the previous violation by checking the error code and throwing an exception when the call fails.  
+-->

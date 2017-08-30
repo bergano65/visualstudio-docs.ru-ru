@@ -1,61 +1,65 @@
 ---
-title: "Практическое руководство. Добавление сущности в модель"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "EntityTool"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "подключение к бизнес-данным [разработка приложений SharePoint в Visual Studio], добавление сущности"
-  - "подключение к бизнес-данным [разработка приложений SharePoint в Visual Studio], сущность"
-  - "служба подключения к бизнес-данным [разработка приложений SharePoint в Visual Studio], добавление сущности"
-  - "служба подключения к бизнес-данным [разработка приложений SharePoint в Visual Studio], сущность"
+title: 'How to: Add an Entity to a Model | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- EntityTool
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- BDC [SharePoint development in Visual Studio], entity
+- Business Data Connectivity service [SharePoint development in Visual Studio], adding an entity
+- Business Data Connectivity service [SharePoint development in Visual Studio], entity
+- BDC [SharePoint development in Visual Studio], adding an entity
 ms.assetid: 139a6639-dabe-4e14-bb64-e5f4efb6f2fb
 caps.latest.revision: 23
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 22
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 16dc2a7c05f1b7290596be337cdec0fe2637bf32
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Практическое руководство. Добавление сущности в модель
-  Чтобы создать сущность, добавьте элемент управления сущности из **панели элементов** Visual Studio в конструктор подключения к бизнес\-данным.  
+# <a name="how-to-add-an-entity-to-a-model"></a>How to: Add an Entity to a Model
+  To create an entity, add an entity control from the Visual Studio **Toolbox** onto the Business Data Connectivity (BDC) designer.  
   
-### Добавление сущности в модель  
+### <a name="to-add-an-entity-to-the-model"></a>To add an entity to the model  
   
-1.  Создайте или откройте проект подключения к бизнес\-данным.  Для получения дополнительной информации см. [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md).  
+1.  Create a BDC project, or open an existing BDC project. For more information, see [Creating a Business Data Connectivity Model](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
-2.  Добавьте элемент управления **Сущность** из группы **Каталог бизнес\-данных** на **панели элементов** в конструктор.  
+2.  In the **Toolbox**, from the **BusinessDataCatalog** group, add an **Entity** control onto the designer.  
   
-     В конструкторе откроется новая сущность.  Visual Studio добавляет элемент `<Entity>` в XML\-код файла модели подключения к бизнес\-данным соответствующего проекта.  Дополнительные сведения об атрибутах элемента сущности см. в разделе [Entity](http://go.microsoft.com/fwlink/?LinkId=169296).  
+     The new entity appears on the designer. Visual Studio adds an `<Entity>` element to the XML of the BDC model file in your project. For more information about the attributes of an Entity element, see [Entity](http://go.microsoft.com/fwlink/?LinkId=169296).  
   
-3.  В конструкторе откройте контекстное меню сущности, выберите **Добавить**, а затем **Идентификатор**.  
+3.  On the designer, open the shortcut menu for the entity, choose **Add**, and then choose **Identifier**.  
   
-     В сущности отобразится новый идентификатор.  
+     A new identifier appears on the entity.  
   
     > [!NOTE]  
-    >  В окне **Свойства** можно изменить имя сущности и идентификатора.  
+    >  You can change the name of the entity and the identifier in the **Properties** window.  
   
-4.  Определите поля сущности в классе.  Можно либо добавить новый класс в проект, либо использовать существующий класс, созданный с помощью других средств, таких как "Реляционный конструктор объектов".  В следующем примере показан класс сущностей с именем Contact.  
+4.  Define the fields of the entity in a class. You can either add a new class to the project or use an existing class created by using other tools such as the Object Relational Designer (O/R Designer). The following example shows an entity class named Contact.  
   
-     [!code-csharp[SP_BDC_Entity_Data_Class#1](../snippets/csharp/VS_Snippets_OfficeSP/sp_bdc_entity_data_class/cs/bdcmodel1/contact.cs#1)]
-     [!code-vb[SP_BDC_Entity_Data_Class#1](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_bdc_entity_data_class/vb/bdcmodel1/contact.vb#1)]  
+     [!code-csharp[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/CSharp/sp_bdc_entity_data_class/bdcmodel1/contact.cs#1)]  [!code-vb[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/VisualBasic/sp_bdc_entity_data_class/bdcmodel1/contact.vb#1)]  
   
-## См. также  
- [Практическое руководство. Добавление метода Creator](../sharepoint/how-to-add-a-creator-method.md)   
- [Практическое руководство. Добавление метода Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
- [Практическое руководство. Добавление метода Updater](../sharepoint/how-to-add-an-updater-method.md)   
- [Практическое руководство. Добавление метода Finder](../sharepoint/how-to-add-a-finder-method.md)   
- [Практическое руководство. Добавление определенного метода Finder](../sharepoint/how-to-add-a-specific-finder-method.md)  
+## <a name="see-also"></a>See Also  
+ [How to: Add a Creator Method](../sharepoint/how-to-add-a-creator-method.md)   
+ [How to: Add a Deleter Method](../sharepoint/how-to-add-a-deleter-method.md)   
+ [How to: Add an Updater Method](../sharepoint/how-to-add-an-updater-method.md)   
+ [How to: Add a Finder Method](../sharepoint/how-to-add-a-finder-method.md)   
+ [How to: Add a Specific Finder Method](../sharepoint/how-to-add-a-specific-finder-method.md)  
   
   

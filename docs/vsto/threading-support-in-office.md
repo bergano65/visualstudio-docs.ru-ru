@@ -1,83 +1,86 @@
 ---
-title: "Поддержка потока в Office"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "несколько потоков [разработка решений Office в Visual Studio]"
-  - "модели объектов [разработка решений Office в Visual Studio], поддержка потоков"
-  - "Office - приложения [разработка решений Office в Visual Studio], поддержка потоков"
-  - "работа с потоками [разработка решений Office в Visual Studio]"
+title: Threading Support in Office | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- multiple threads [Office development in Visual Studio]
+- threading [Office development in Visual Studio]
+- Office applications [Office development in Visual Studio], threading support
+- object models [Office development in Visual Studio], threading support
 ms.assetid: 810a6648-fece-4b43-9eb6-948d28ed2157
 caps.latest.revision: 33
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 32
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 10df94908366d53a01239bbd2ce9837d2b6780e6
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Поддержка потока в Office
-  Этот раздел предоставляет сведения о поддержке потоков в объектной модели Microsoft Office.  Несмотря на то что модели объектов Office имеют небезопасные потоки, решение Office позволяет работать с различными потоками.  Приложения Office являются моделью серверов Component Object Model \(COM\).  COM дает возможность клиентам осуществить звонок к серверам с произвольными потоками.  Сервера COM, которые не имеют безопасных потоков, предоставляют механизм преобразования параллельных звонков и выполнения одного логического потока на сервере в любое время.  Этот механизм известен как модель однопотокового подразделения \(STA\).  Поскольку звонки обрабатываются, звонки других сторон блокируются на тот период времени, когда сервер занят или принимает другие звонки на фоновом потоке.  
+# <a name="threading-support-in-office"></a>Threading Support in Office
+  This topic provides information about how threading is supported in the Microsoft Office object model. The Office object model is not thread safe, but it is possible to work with multiple threads in an Office solution. Office applications are Component Object Model (COM) servers. COM allows clients to call COM servers on arbitrary threads. For COM servers that are not thread safe, COM provides a mechanism to serialize concurrent calls so that only one logical thread executes on the server at any time. This mechanism is known as the single-threaded apartment (STA) model. Because calls are serialized, callers might be blocked for periods of time while the server is busy or is handling other calls on a background thread.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## Необходимо наличие определенного набора знаний при работе с многочисленными потоками  
- Для того чтобы работать с многочисленными потоками, необходимо иметь по крайней мере базовый набор знаний следующих особенностей многопоточности:  
+## <a name="knowledge-required-when-using-multiple-threads"></a>Knowledge Required When Using Multiple Threads  
+ To work with multiple threads, you must have at least basic knowledge of the following aspects of multithreading:  
   
--   Windows API  
+-   Windows APIs  
   
--   Многопотоковые концепты COM  
+-   COM multithreaded concepts  
   
--   Параллельность  
+-   Concurrency  
   
--   Синхронизация  
+-   Synchronization  
   
--   Маршалинг  
+-   Marshaling  
   
- Общие сведения о многопоточности см. в разделе [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779).  
+ For general information about multithreading, see [Managed Threading](/dotnet/standard/threading/).  
   
- Office выполняется в основном однопотоковом подразделении \(STA\).  Понимание следствий этого позволяет понять способы использования нескольких потоков с Office.  
+ Office runs in the main STA. Understanding the implications of this makes it possible to understand how to use multiple threads with Office.  
   
-## Основной скрипт многопоточности  
- Код в решениях Office всегда выполняется в основном потоке пользовательского интерфейса.  Возможно потребуется добиться более плавного выполнения приложения. Для этого можно выполнять одну из задач в фоновом потоке.  Основной целью является выполнить две задачи не последовательно, а одновременно, для того чтобы отрегулировать работу \(это главная причина выполнения различных задач\).  Например, в основном потоке пользовательского интерфейса Excel можно оставить код событий, а на фоне потоков запустить задачу, которая собирает данные с сервера и обновляет ячейки данных в пользовательском интерфейсе сервера Excel.  
+## <a name="basic-multithreading-scenario"></a>Basic Multithreading Scenario  
+ Code in Office solutions always runs on the main UI thread. You might want to smooth out application performance by running a separate task on a background thread. The goal is to complete two tasks seemingly at once instead of one task followed by the other, which should result in smoother execution (the main reason to use multiple threads). For example, you might have your event code on the main Excel UI thread, and on a background thread you might run a task that gathers data from a server and updates cells in the Excel UI with the data from the server.  
   
-## Фоновые потоки, которые запускают объектные модели Office  
- Когда фоновый поток выполняет запрос приложений Office, звонок автоматически маршалируется в пределах STA.  Однако нет гарантии, что приложение Office может принять звонок во время выполнения фонового потока.  Существует несколько вариантов:  
+## <a name="background-threads-that-call-into-the-office-object-model"></a>Background Threads That Call into the Office Object Model  
+ When a background thread makes a call to the Office application, the call is automatically marshaled across the STA boundary. However, there is no guarantee that the Office application can handle the call at the time the background thread makes it. There are several possibilities:  
   
-1.  Приложение Office должно отказать сообщениям в доступе, для того чтобы звонок был принят.  Если процесс выполняется медленно без торможения, то потребуется некоторое время для осуществления операции.  
+1.  The Office application must pump messages for the call to have the opportunity to enter. If it is doing heavy processing without yielding this could take time.  
   
-2.  Если другой логический поток уже находится в подразделении, к новому потоку доступ будет закрыт.  Часто происходит таким образом, что логический поток поступает в приложение Office и перенаправляет звонок обратно к подразделению вызывающей стороны.  Приложение блокируется в ожидании возвращения звонка.  
+2.  If another logical thread is already in the apartment, the new thread cannot enter. This often happens when a logical thread enters the Office application and then makes a reentrant call back to the caller's apartment. The application is blocked waiting for that call to return.  
   
-3.  Документ Excel должен находится в таком режиме, чтобы не принимать немедленно входящие звонки.  Например, приложение Office должно отображать модальное диалоговое окно.  
+3.  Excel might be in a state such that it cannot immediately handle an incoming call. For example, the Office application might be displaying a modal dialog.  
   
- Для 2 и 3 вариантов COM предоставляет интерфейс [IMessageFilter](http://msdn.microsoft.com/ru-ru/e12d48c0-5033-47a8-bdcd-e94c49857248).  Если на сервере реализован такой интерфейс, все вызовы поступают через метод [HandleIncomingCall](http://msdn.microsoft.com/ru-ru/7e31b518-ef4f-4bdd-b5c7-e1b16383a5be).  Во 2 варианте звонки автоматически блокируются.  В 3 варианте сервер может блокировать звонки в зависимости от обстоятельств.  При блокировке звонка вызывающей стороне необходимо решить, что делать дальше.  Обычно вызывающий код реализует интерфейс [IMessageFilter](http://msdn.microsoft.com/ru-ru/e12d48c0-5033-47a8-bdcd-e94c49857248), и в этом случае он информируется об отклонении методом [RetryRejectedCall](http://msdn.microsoft.com/ru-ru/3f800819-2a21-4e46-ad15-f9594fac1a3d).  
+ For possibilities 2 and 3, COM provides the [IMessageFilter](http://msdn.microsoft.com/en-us/e12d48c0-5033-47a8-bdcd-e94c49857248) interface. If the server implements it, all calls enter through the [HandleIncomingCall](http://msdn.microsoft.com/en-us/7e31b518-ef4f-4bdd-b5c7-e1b16383a5be) method. For possibility 2, calls are automatically rejected. For possibility 3, the server can reject the call, depending on the circumstances. If the call is rejected, the caller must decide what to do. Normally, the caller implements [IMessageFilter](http://msdn.microsoft.com/en-us/e12d48c0-5033-47a8-bdcd-e94c49857248), in which case it would be notified of the rejection by the [RetryRejectedCall](http://msdn.microsoft.com/en-us/3f800819-2a21-4e46-ad15-f9594fac1a3d) method.  
   
- Однако в случае решений, созданных с помощью средств разработки Office в Visual Studio, взаимодействие COM преобразует все отклоненные вызовы в объекты <xref:System.Runtime.InteropServices.COMException> \("Фильтр сообщений выдал диагностику о занятости приложения"\).  При осуществлении звонка объектной модели на фоновом потоке будьте готовы получить предупреждающее сообщение.  Обычно диалоговое окно появляется не сразу. Отображение требует некоторого времени и определенного количества попыток.  Однако в этом случае можно также создать фоновые потоки, такие как STA, а потом зарегистрировать фильтр сообщений для осуществления потока.  
+ However, in the case of solutions created by using the Office development tools in Visual Studio, COM interop converts all rejected calls to a <xref:System.Runtime.InteropServices.COMException> ("The message filter indicated that the application is busy"). Whenever you make an object model call on a background thread, you must to be prepared to handle this exception. Typically, that involves retrying for a certain amount of time and then displaying a dialog. However, you can also create the background thread as STA and then register a message filter for that thread to handle this case.  
   
-## Правильный запуск потока  
- При создании нового потока STA перед запуском потока задайте для состояния подразделения значение STA.  В следующем примере кода показано, как это сделать.  
+## <a name="starting-the-thread-correctly"></a>Starting the Thread Correctly  
+ When you create a new STA thread, set the apartment state to STA before you start the thread. The following code example demonstrates how to do this.  
   
- [!code-csharp[Trin_VstcoreCreatingExcel#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreCreatingExcel/CS/ThisWorkbook.cs#5)]
- [!code-vb[Trin_VstcoreCreatingExcel#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreCreatingExcel/VB/ThisWorkbook.vb#5)]  
+ [!code-csharp[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs#5)] [!code-vb[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb#5)]  
   
- Дополнительные сведения см. в разделе [Managed Threading Best Practices](http://msdn.microsoft.com/library/e51988e7-7f4b-4646-a06d-1416cee8d557).  
+ For more information, see [Managed Threading Best Practices](/dotnet/standard/threading/managed-threading-best-practices).  
   
-## Безрежимные формы  
- Безрежимные формы во время отображения допускают некоторые форм взаимодействий с приложениями.  Пользователь работает с формами, а формы взаимодействуют с открытыми приложениями.  Объектная модель Office поддерживает безрежимные формы, однако их необходимо использовать на фоновом потоке.  
+## <a name="modeless-forms"></a>Modeless Forms  
+ A modeless form allows some type of interaction with the application while the form is displayed. The user interacts with the form, and the form interacts with the application without closing. The Office object model supports managed modeless forms; however, they should not be used on a background thread.  
   
-## См. также  
- [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)   
- [Managed Threading](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)   
- [Работа с потоками &#40;C&#35; и Visual Basic&#41;](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c)   
- [Using Threads and Threading](http://msdn.microsoft.com/library/9b5ec2cd-121b-4d49-b075-222cf26f2344)   
- [Проектирование и создание решений Office](../vsto/designing-and-creating-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Managed Threading](/dotnet/standard/threading/)  
+ [Threading (C#)](/dotnet/csharp/programming-guide/concepts/threading/index) [Threading (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)   
+ [Using Threads and Threading](/dotnet/standard/threading/using-threads-and-threading)   
+ [Designing and Creating Office Solutions](../vsto/designing-and-creating-office-solutions.md)  
   
   

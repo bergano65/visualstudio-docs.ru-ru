@@ -1,198 +1,198 @@
 ---
-title: "Пошаговое руководство. Добавление элементов управления на лист во время выполнения в проекте надстройки VSTO"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "надстройки [разработка решений Office в Visual Studio], добавление элементов управления"
-  - "надстройки уровня приложения [разработка решений Office в Visual Studio], добавление элементов управления"
-  - "элементы управления [разработка решений Office в Visual Studio], добавление листов во время выполнения"
-  - "листы, добавление элементов управления во время выполнения"
+title: 'Walkthrough: Adding Controls to a Worksheet at Run Time in VSTO add-in Project | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- add-ins [Office development in Visual Studio], adding controls
+- controls [Office development in Visual Studio], adding to worksheets at run time
+- application-level add-ins [Office development in Visual Studio], adding controls
+- worksheets, adding controls at run time
 ms.assetid: 4f68677a-4789-4564-b229-02e2d4031a5f
 caps.latest.revision: 38
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 37
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 05ef7ad5662fd9009f082abb01a111e152be4ab4
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Добавление элементов управления на лист во время выполнения в проекте надстройки VSTO
-  Вы можете добавить элементы управления на любой открытый лист с помощью надстройки VSTO для Excel.  В этом пошаговом руководстве показано, как с помощью ленты предоставить пользователям возможность добавлять <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> и <xref:Microsoft.Office.Tools.Excel.ListObject> на лист.  Дополнительные сведения см. в разделе [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+# <a name="walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Walkthrough: Adding Controls to a Worksheet at Run Time in VSTO add-in Project
+  You can add controls to any open worksheet by using an Excel VSTO Add-in. This walkthrough demonstrates how to use the Ribbon to enable users to add a <xref:Microsoft.Office.Tools.Excel.Controls.Button>, a <xref:Microsoft.Office.Tools.Excel.NamedRange>, and a <xref:Microsoft.Office.Tools.Excel.ListObject> to a worksheet. For information, see [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- **Применимость.** Информация в этой статье относится к проектам надстроек VSTO для Excel.  Дополнительные сведения см. в разделе [Доступность функций по типам приложений Office и проектов](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Applies to:** The information in this topic applies to VSTO Add-in projects for Excel. For more information, see [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
   
- В данном пошаговом руководстве рассмотрены следующие задачи:  
+ This walkthrough illustrates the following tasks:  
   
--   предоставление пользовательского интерфейса для добавления элементов управления на лист;  
+-   Providing a user interface (UI) to add controls to the worksheet.  
   
--   добавление элементов управления на лист;  
+-   Adding controls to the worksheet.  
   
--   удаление элементов управления с листа.  
+-   Removing controls from the worksheet.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
 -   Excel  
   
-## Создание проекта надстройки VSTO для Excel  
- Для начала создайте проект надстройки VSTO для Excel.  
+## <a name="creating-a-new-excel-vsto-add-in-project"></a>Creating a New Excel VSTO Add-in Project  
+ Start by creating an Excel VSTO Add-in project.  
   
-#### Создание проекта надстройки VSTO для Excel  
+#### <a name="to-create-a-new-excel-vsto-add-in-project"></a>To create a new Excel VSTO Add-in project  
   
-1.  В [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] создайте проект надстройки VSTO для Excel с именем ExcelDynamicControls.  Дополнительные сведения см. в статье [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], create an Excel VSTO Add-in project with the name **ExcelDynamicControls**. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-2.  Добавьте ссылку на сборку **Microsoft.Office.Tools.Excel.v4.0.Utilities.dll**.  Эта ссылка потребуется для программного добавления элемента управления Windows Forms на лист далее в этом пошаговом руководстве.  
+2.  Add a reference to the **Microsoft.Office.Tools.Excel.v4.0.Utilities.dll** assembly. This reference is required to programmatically add a Windows Forms control to a worksheet later in this walkthrough.  
   
-## Предоставление пользовательского интерфейса для добавления элементов управления на лист  
- Добавьте настраиваемую вкладку на ленту Excel.  Пользователи могут установить флажки на вкладке, чтобы добавить элементы управления на лист.  
+## <a name="providing-a-ui-to-add-controls-to-a-worksheet"></a>Providing a UI to Add Controls to a Worksheet  
+ Add a custom tab to the Excel Ribbon. Users can select check boxes on the tab to add controls to a worksheet.  
   
-#### Предоставление пользовательского интерфейса для добавления элементов управления на лист  
+#### <a name="to-provide-a-ui-to-add-controls-to-a-worksheet"></a>To provide a UI to add controls to a worksheet  
   
-1.  В меню **Проект** выберите пункт **Добавить новый элемент**.  
+1.  On the **Project** menu, click **Add New Item**.  
   
-2.  В диалоговом окне **Добавление нового элемента** выберите элемент **Лента \(визуальный конструктор\)**, а затем нажмите кнопку **Добавить**.  
+2.  In the **Add New Item** dialog box, select **Ribbon (Visual Designer)**, and then click **Add**.  
   
-     В конструкторе лент откроется файл **Ribbon1.cs** или **Ribbon1.vb** и появятся вкладка и группа по умолчанию.  
+     A file named **Ribbon1.cs** or **Ribbon1.vb** opens in the Ribbon Designer and displays a default tab and group.  
   
-3.  Перетащите элемент управления CheckBox с вкладки **Элементы управления ленты Office** в **панели элементов** в группу **group1**.  
+3.  From the **Office Ribbon Controls** tab of the **Toolbox**, drag a CheckBox control onto **group1**.  
   
-4.  Щелкните **CheckBox1**, чтобы выбрать его.  
+4.  Click **CheckBox1** to select it.  
   
-5.  В окне **Свойства** измените следующие свойства.  
+5.  In the **Properties** window, change the following properties.  
   
-    |Свойство|Значение|  
-    |--------------|--------------|  
-    |**Имя**|Кнопка|  
-    |**Метка**|Кнопка|  
+    |Property|Value|  
+    |--------------|-----------|  
+    |**Name**|**Button**|  
+    |**Label**|**Button**|  
   
-6.  Добавьте второй флажок в **group1**, а затем измените следующие свойства.  
+6.  Add a second check box to **group1**, and then change the following properties.  
   
-    |Свойство|Значение|  
-    |--------------|--------------|  
-    |**Имя**|NamedRange|  
-    |**Метка**|NamedRange|  
+    |Property|Value|  
+    |--------------|-----------|  
+    |**Name**|**NamedRange**|  
+    |**Label**|**NamedRange**|  
   
-7.  Добавьте третий флажок в **group1**, а затем измените следующие свойства.  
+7.  Add a third check box to **group1**, and then change the following properties.  
   
-    |Свойство|Значение|  
-    |--------------|--------------|  
-    |**Имя**|ListObject|  
-    |**Метка**|ListObject|  
+    |Property|Value|  
+    |--------------|-----------|  
+    |**Name**|**ListObject**|  
+    |**Label**|**ListObject**|  
   
-## Добавление элементов управления на лист  
- Управляемые элементы управления можно добавить только в ведущие элементы, которые служат контейнерами.  Поскольку проекты надстроек VSTO работают с любой открытой книгой, надстройка VSTO преобразует лист в ведущий элемент или получает существующий ведущий элемент перед добавлением элемента управления.  Добавьте код в обработчик событий нажатием каждого элемента управления, чтобы создать ведущий элемент <xref:Microsoft.Office.Tools.Excel.Worksheet>, основанный на открытом листе.  Затем добавьте <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> и <xref:Microsoft.Office.Tools.Excel.ListObject> в выделенный фрагмент на листе.  
+## <a name="adding-controls-to-the-worksheet"></a>Adding Controls to the Worksheet  
+ Managed controls can only be added to host items, which act as containers. Because VSTO Add-in projects work with any open workbook, the VSTO Add-in converts the worksheet into a host item, or gets an existing host item, before adding the control. Add code to the click event handlers of each control to generate a <xref:Microsoft.Office.Tools.Excel.Worksheet> host item that is based on the open worksheet. Then, add a <xref:Microsoft.Office.Tools.Excel.Controls.Button>, a <xref:Microsoft.Office.Tools.Excel.NamedRange>, and a <xref:Microsoft.Office.Tools.Excel.ListObject> at the current selection in the worksheet.  
   
-#### Добавление элементов управления на лист  
+#### <a name="to-add-controls-to-a-worksheet"></a>To add controls to a worksheet  
   
-1.  В конструкторе лент дважды щелкните **Кнопка**.  
+1.  In the Ribbon Designer, double-click **Button**.  
   
-     Обработчик событий <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> флажка **Кнопка** откроется в редакторе кода.  
+     The <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> event handler of the **Button** check box opens in the Code Editor.  
   
-2.  Замените обработчик событий `Button_Click` следующим кодом.  
+2.  Replace the `Button_Click` event handler with the following code.  
   
-     Этот код использует метод `GetVstoObject` для получения ведущего элемента, представляющего первый лист в книге, а затем добавляет элемент управления <xref:Microsoft.Office.Tools.Excel.Controls.Button> в выбранную ячейку.  
+     This code uses the `GetVstoObject` method to get a host item that represents the first worksheet in the workbook, and then adds a <xref:Microsoft.Office.Tools.Excel.Controls.Button> control to the currently selected cell.  
   
-     [!code-csharp[Trin_Excel_Dynamic_Controls#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Excel_Dynamic_Controls/CS/Ribbon1.cs#2)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Excel_Dynamic_Controls/VB/Ribbon1.vb#2)]  
+     [!code-csharp[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#2)]  [!code-vb[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#2)]  
   
-3.  В **обозревателе решений** выберите файл Ribbon1.cs или Ribbon1.vb.  
+3.  In **Solution Explorer**, select Ribbon1.cs or Ribbon1.vb.  
   
-4.  В меню **Вид** выберите пункт **Конструктор**.  
+4.  On the **View** menu, click **Designer**.  
   
-5.  В конструкторе лент дважды щелкните **NamedRange**.  
+5.  In the Ribbon Designer, double-click **NamedRange**.  
   
-6.  Замените обработчик событий `NamedRange_Click` следующим кодом.  
+6.  Replace the `NamedRange_Click` event handler with the following code.  
   
-     Этот код использует метод `GetVstoObject` для получения ведущего элемента, представляющего первый лист в книге, а затем определяет элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> для выбранных ячеек.  
+     This code uses the `GetVstoObject` method to get a host item that represents the first worksheet in the workbook, and then defines a <xref:Microsoft.Office.Tools.Excel.NamedRange> control for the currently selected cell or cells.  
   
-     [!code-csharp[Trin_Excel_Dynamic_Controls#3](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Excel_Dynamic_Controls/CS/Ribbon1.cs#3)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#3](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Excel_Dynamic_Controls/VB/Ribbon1.vb#3)]  
+     [!code-csharp[Trin_Excel_Dynamic_Controls#3](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#3)]  [!code-vb[Trin_Excel_Dynamic_Controls#3](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#3)]  
   
-7.  В конструкторе лент дважды щелкните **ListObject**.  
+7.  In the Ribbon Designer, double-click **ListObject**.  
   
-8.  Замените обработчик событий `ListObject_Click` следующим кодом.  
+8.  Replace the `ListObject_Click` event handler with the following code.  
   
-     Этот код использует метод `GetVstoObject` для получения ведущего элемента, представляющего первый лист в книге, а затем определяет элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> для выбранных ячеек.  
+     This code uses the `GetVstoObject` method to get a host item that represents the first worksheet in the workbook, and then defines a <xref:Microsoft.Office.Tools.Excel.ListObject> for the currently selected cell or cells.  
   
-     [!code-csharp[Trin_Excel_Dynamic_Controls#4](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Excel_Dynamic_Controls/CS/Ribbon1.cs#4)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#4](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Excel_Dynamic_Controls/VB/Ribbon1.vb#4)]  
+     [!code-csharp[Trin_Excel_Dynamic_Controls#4](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#4)]  [!code-vb[Trin_Excel_Dynamic_Controls#4](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#4)]  
   
-9. Добавьте следующие операторы в начало файла кода ленты.  
+9. Add the following statements to the top of the Ribbon code file.  
   
-     [!code-csharp[Trin_Excel_Dynamic_Controls#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Excel_Dynamic_Controls/CS/Ribbon1.cs#1)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Excel_Dynamic_Controls/VB/Ribbon1.vb#1)]  
+     [!code-csharp[Trin_Excel_Dynamic_Controls#1](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#1)]   [!code-vb[Trin_Excel_Dynamic_Controls#1](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#1)]  
   
-## Удаление элементов управления с листа  
- Элементы управления не сохраняются при сохранении и закрытии листа.  Все созданные элементы управления Windows Forms следует удалить программными средствами до сохранения листа, при этом только контур элемента управления появится при повторном открытии книги.  Добавьте код в событие <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave>, которое удаляет элементы управления Windows Forms из коллекции элементов управления созданного ведущего элемента управления.  Дополнительные сведения см. в разделе [Сохранение динамических элементов управления в документах Office](../vsto/persisting-dynamic-controls-in-office-documents.md).  
+## <a name="removing-controls-from-the-worksheet"></a>Removing Controls from the Worksheet  
+ Controls are not persisted when the worksheet is saved and closed. You should programmatically remove all generated Windows Forms controls before the worksheet is saved, or only an outline of the control will appear when the workbook is opened again. Add code to the <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> event that removes Windows Forms controls from the controls collection of the generated host item. For more information, see [Persisting Dynamic Controls in Office Documents](../vsto/persisting-dynamic-controls-in-office-documents.md).  
   
-#### Удаление элементов управления с листа  
+#### <a name="to-remove-controls-from-the-worksheet"></a>To remove controls from the worksheet  
   
-1.  В **обозревателе решений** выберите файл ThisAddIn.cs или ThisAddIn.vb.  
+1.  In **Solution Explorer**, select ThisAddIn.cs or ThisAddIn.vb.  
   
-2.  В меню **Представление** выберите пункт **Код**.  
+2.  On the **View** menu, click **Code**.  
   
-3.  Добавьте следующий метод в класс ThisAddIn.  Этот код получает первый лист в книге, а затем использует метод `HasVstoObject`, чтобы проверить, содержит ли лист созданный объект листа.  Если созданный объект листа содержит элементы управления, код получает его и проходит по коллекции элементов управления, удаляя элементы управления.  
+3.  Add the following method to the ThisAddIn class. This code gets the first worksheet in the workbook and then uses the `HasVstoObject` method to check whether the worksheet has a generated worksheet object. If the generated worksheet object has controls, the code gets that worksheet object and iterates through the control collection, removing the controls.  
   
-     [!code-csharp[Trin_Excel_Dynamic_Controls#6](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Excel_Dynamic_Controls/CS/ThisAddIn.cs#6)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#6](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Excel_Dynamic_Controls/VB/ThisAddIn.vb#6)]  
+     [!code-csharp[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#6)]  [!code-vb[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#6)]  
   
-4.  В C\# необходимо создать обработчик для события <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave>.  Этот код можно поместить в методе `ThisAddIn_Startup`.  Дополнительные сведения о создании обработчиков событий см. в разделе [Практическое руководство. Создание обработчиков событий в проектах Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  Замените метод `ThisAddIn_Startup` следующим кодом.  
+4.  In C#, you must create an event handler for the <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> event. You can place this code in the `ThisAddIn_Startup` method. For more information about creating event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md). Replace the `ThisAddIn_Startup` method with the following code.  
   
-     [!code-csharp[Trin_Excel_Dynamic_Controls#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Excel_Dynamic_Controls/CS/ThisAddIn.cs#5)]  
+     [!code-csharp[Trin_Excel_Dynamic_Controls#5](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#5)]  
   
-## Тестирование решения  
- Добавьте элементы управления на лист, выбрав их в настраиваемой вкладке на ленте.  При сохранении листа эти элементы управления будут удалены.  
+## <a name="testing-the-solution"></a>Testing the Solution  
+ Add controls to a worksheet by selecting them from a custom tab on the Ribbon. When you save the worksheet, these controls are removed.  
   
-#### Тестирование решения  
+#### <a name="to-test-the-solution"></a>To test the solution.  
   
-1.  Нажмите клавишу F5 для запуска проекта.  
+1.  Press F5 to run your project.  
   
-2.  Выберите любую ячейку на листе Sheet1.  
+2.  Select any cell in Sheet1.  
   
-3.  Перейдите на вкладку **Надстройки**.  
+3.  Click the **Add-Ins** tab.  
   
-4.  В группе **group1** щелкните **Кнопка**.  
+4.  In the **group1** group, click **Button**.  
   
-     В выбранной ячейке появится кнопка.  
+     A button appears in the selected cell.  
   
-5.  Выберите другую ячейку на листе Sheet1.  
+5.  Select a different cell in Sheet1.  
   
-6.  В группе **group1** щелкните **NamedRange**.  
+6.  In the **group1** group, click **NamedRange**.  
   
-     Именованный диапазон будет определен для выбранной ячейки.  
+     A named range is defined for the selected cell.  
   
-7.  Выберите ряд ячеек на листе Sheet1.  
+7.  Select a series of cells in Sheet1.  
   
-8.  В группе **group1** щелкните **ListObject**.  
+8.  In the **group1** group, click **ListObject**.  
   
-     Объект списка будет добавлен для выделенных ячеек.  
+     A list object is added for the selected cells.  
   
-9. Сохраните лист.  
+9. Save the worksheet.  
   
-     Элементы управления, добавленные в Sheet1, больше не отображаются.  
+     The controls that you added to Sheet1 no longer appear.  
   
-## Следующие действия  
- Дополнительные сведения об элементах управления в проектах надстройки VSTO для Excel см. в следующем разделе:  
+## <a name="next-steps"></a>Next Steps  
+ You can learn more about controls in Excel VSTO Add-in projects from this topic:  
   
--   Сведения о сохранении элементов управления на листе см. в примере надстройки VSTO для Excel в разделе [Образцы и пошаговые руководства разработки Office](../vsto/office-development-samples-and-walkthroughs.md).  
+-   To learn about how to save controls to a worksheet, see the Excel VSTO Add-in Dynamic Controls Sample at [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md).  
   
-## См. также  
- [Решения Excel](../vsto/excel-solutions.md)   
- [Общие сведения об использовании элементов управления Windows Forms в документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md)   
- [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)   
- [Элемент управления NamedRange](../vsto/namedrange-control.md)   
- [Элемент управления ListObject](../vsto/listobject-control.md)  
+## <a name="see-also"></a>See Also  
+ [Excel Solutions](../vsto/excel-solutions.md)   
+ [Windows Forms Controls on Office Documents Overview](../vsto/windows-forms-controls-on-office-documents-overview.md)   
+ [Controls on Office Documents](../vsto/controls-on-office-documents.md)   
+ [NamedRange Control](../vsto/namedrange-control.md)   
+ [ListObject Control](../vsto/listobject-control.md)  
   
   

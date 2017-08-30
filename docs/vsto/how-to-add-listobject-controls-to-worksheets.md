@@ -1,101 +1,104 @@
 ---
-title: "Практическое руководство. Добавление элементов управления ListObject на листы"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "элемент управления ListObject control, добавление в листы"
-  - "элементы управления [разработка решений Office в Visual Studio], добавление в листы"
+title: 'How to: Add ListObject Controls to Worksheets | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- ListObject control, adding to worksheets
+- controls [Office development in Visual Studio], adding to worksheets
 ms.assetid: 40788ecb-937f-4d2a-90ba-9c938e495b74
 caps.latest.revision: 44
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 43
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 86c5bef09fb2b40deb5ab914b2e94e23d0ffe91a
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Практическое руководство. Добавление элементов управления ListObject на листы
-  Элементы управления <xref:Microsoft.Office.Tools.Excel.ListObject> можно добавлять в лист Microsoft Office Excel во время разработки и во время выполнения в проектах на уровне документа.  
+# <a name="how-to-add-listobject-controls-to-worksheets"></a>How to: Add ListObject Controls to Worksheets
+  You can add <xref:Microsoft.Office.Tools.Excel.ListObject> controls to a Microsoft Office Excel worksheet at design time and at run time in document-level projects.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Элементы управления <xref:Microsoft.Office.Tools.Excel.ListObject> также можно добавлять во время выполнения в проектах надстроек VSTO.  
+ You can also add <xref:Microsoft.Office.Tools.Excel.ListObject> controls at run time in VSTO Add-in projects.  
   
- В этом разделе описываются следующие задачи.  
+ This topic describes the following tasks:  
   
--   [Добавление элементов управления ListObject во время разработки](#designtime)  
+-   [Adding ListObject controls at design time](#designtime)  
   
--   [Добавление элементов управления ListObject во время выполнения в проекте уровня документа](#runtimedoclevel)  
+-   [Adding ListObject controls at run time in a document-level project](#runtimedoclevel)  
   
--   [Добавление элементов управления ListObject во время выполнения в проекте надстройки VSTO](#runtimeaddin)  
+-   [Adding ListObject controls at run time in an VSTO Add-in project](#runtimeaddin)  
   
- Дополнительные сведения об элементах управления <xref:Microsoft.Office.Tools.Excel.ListObject> см. в разделе [Элемент управления ListObject](../vsto/listobject-control.md).  
+ For more information about <xref:Microsoft.Office.Tools.Excel.ListObject> controls, see [ListObject Control](../vsto/listobject-control.md).  
   
-##  <a name="designtime"></a> Добавление элементов управления ListObject во время разработки  
- Существует несколько способов добавления элементов управления <xref:Microsoft.Office.Tools.Excel.ListObject> на лист в проекте уровня документа во время разработки: из Excel, из **панели элементов** Visual Studio и из окна **Источники данных**.  
+##  <a name="designtime"></a> Adding ListObject Controls at Design Time  
+ There are several ways to add <xref:Microsoft.Office.Tools.Excel.ListObject> controls to a worksheet in a document-level project at design time: From within Excel, from the Visual Studio **Toolbox**, and from the **Data Sources** window.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-#### Использование ленты в Excel  
+#### <a name="to-use-the-ribbon-in-excel"></a>To use the Ribbon in Excel  
   
-1.  На вкладке **Вставка** в группе **Таблицы** щелкните элемент **Таблица**.  
+1.  On the **Insert** tab, in the **Tables** group, click **Table**.  
   
-2.  Выделите ячейки, которые хотите включить в список, и нажмите кнопку **ОК**.  
+2.  Select the cell or cells you want to include in the list and click **OK**.  
   
-#### Использование панели элементов  
+#### <a name="to-use-the-toolbox"></a>To use the Toolbox  
   
-1.  Из вкладки **Элементы управления Excel** на **панели элементов** перетащите <xref:Microsoft.Office.Tools.Excel.ListObject> в лист.  
+1.  From the **Excel Controls** tab of the **Toolbox**, drag a <xref:Microsoft.Office.Tools.Excel.ListObject> to the worksheet.  
   
-     Откроется диалоговое окно **Добавление элемента управления ListObject**.  
+     The **Add ListObject Control** dialog box appears.  
   
-2.  Выделите ячейки, которые хотите включить в список, и нажмите кнопку **ОК**.  
+2.  Select the cell or cells you want to include in the list and click **OK**.  
   
-     Если вы не хотите использовать имя по умолчанию, измените его в окне **Свойства**.  
+     If you do not want to keep the default name, you can change the name in the **Properties** window.  
   
-#### Использование окна "Источники данных".  
+#### <a name="to-use-the-data-sources-window"></a>To use the Data Sources window  
   
-1.  Откройте окно **Источники данных** и создайте источник данных для проекта. Дополнительные сведения см. в разделе [Практическое руководство. Подключение к данным в базе данных](~/data-tools/how-to-connect-to-data-in-a-database.md).  
+1.  Open the **Data Sources** window and create a data source for your project. For more information, see [Add new connections](../data-tools/add-new-connections.md).  
   
-2.  Перетащите таблицу из окна **Источники данных** в лист.  
+2.  Drag a table from the **Data Sources** window to your worksheet.  
   
-     Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> с привязкой к данным добавится в лист. Для получения дополнительной информации см. [Связывание данных и Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27).  
+     A data-bound <xref:Microsoft.Office.Tools.Excel.ListObject> control is added to the worksheet. For more information, see [Data Binding and Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
   
-##  <a name="runtimedoclevel"></a> Добавление элементов управления ListObject во время выполнения в проекте уровня документа  
- Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> можно добавлять динамически во время выполнения. Это позволяет создавать элементы управления ведущего приложения при возникновении определенных событий. При закрытии листа динамически созданные объекты списка не сохраняются на листе как элементы управления ведущего приложения. Для получения дополнительной информации см. [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+##  <a name="runtimedoclevel"></a> Adding ListObject Controls at Run Time in a Document-Level Project  
+ You can add the <xref:Microsoft.Office.Tools.Excel.ListObject> control dynamically at run time. This enables you to create the host controls in response to events. Dynamically created list objects are not persisted in the worksheet as host controls when the worksheet is closed. For more information, see [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
-#### Добавление элемента управления ListObject в лист программными средствами  
+#### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>To add a ListObject control to a worksheet programmatically  
   
-1.  В обработчике событий <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> для `Sheet1` вставьте следующий код, чтобы добавить элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> в ячейки с **A1** до **A4**.  
+1.  In the <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> event handler of `Sheet1`, insert the following code to add a <xref:Microsoft.Office.Tools.Excel.ListObject> control to cells **A1** through **A4**.  
   
-     [!code-csharp[Trin_VstcoreHostControlsExcel#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsExcel/CS/Sheet1.cs#2)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsExcel/VB/Sheet1.vb#2)]  
+     [!code-csharp[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#2)]  [!code-vb[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#2)]  
   
-##  <a name="runtimeaddin"></a> Добавление элементов управления ListObject во время выполнения в проекте надстройки VSTO  
- Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> можно добавить программными средствами в любой открытый лист в проекте надстройки VSTO. При сохранении и закрытии листа динамически созданные объекты списка не сохраняются на листе как элементы управления ведущего приложения. Дополнительные сведения см. в разделе [Расширение документов Word и книг Excel в надстройках VSTO в среде выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+##  <a name="runtimeaddin"></a> Adding ListObject Controls at Run Time in an VSTO Add-in project  
+ You can add a <xref:Microsoft.Office.Tools.Excel.ListObject> control programmatically to any open worksheet in an VSTO Add-in project. Dynamically created list objects are not persisted in the worksheet as host controls when the worksheet is saved and then closed. For more information, see [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
-#### Добавление элемента управления ListObject в лист программными средствами  
+#### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>To add a ListObject control to a worksheet programmatically  
   
-1.  Следующий код создает ведущий элемент листа, который основан на открытом листе, а затем добавляет элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> в ячейки с **A1** до **A4**.  
+1.  The following code generates a worksheet host item that is based on the open worksheet, and then adds a <xref:Microsoft.Office.Tools.Excel.ListObject> control to cells **A1** through **A4**.  
   
-     [!code-csharp[Trin_Excel_Dynamic_Controls#8](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Excel_Dynamic_Controls/CS/ThisAddIn.cs#8)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#8](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Excel_Dynamic_Controls/VB/ThisAddIn.vb#8)]  
+     [!code-csharp[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#8)]  [!code-vb[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#8)]  
   
-## См. также  
- [Расширение документов Word и книг Excel в надстройках VSTO в среде выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
- [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)   
- [Элемент управления ListObject](../vsto/listobject-control.md)   
- [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)   
- [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)   
- [Практическое руководство. Изменение размера элементов управления ListObject](../vsto/how-to-resize-listobject-controls.md)   
- [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+## <a name="see-also"></a>See Also  
+ [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
+ [Controls on Office Documents](../vsto/controls-on-office-documents.md)   
+ [ListObject Control](../vsto/listobject-control.md)   
+ [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md)   
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [How to: Resize ListObject Controls](../vsto/how-to-resize-listobject-controls.md)   
+ [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

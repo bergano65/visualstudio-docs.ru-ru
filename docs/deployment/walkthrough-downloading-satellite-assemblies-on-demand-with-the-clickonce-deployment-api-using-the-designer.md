@@ -1,86 +1,103 @@
 ---
-title: "Пошаговое руководство. Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce с использованием конструктора | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "развертывание ClickOnce, глобализация"
-  - "развертывание ClickOnce, локализация"
-  - "ClickOnce, загрузка по требованию"
-  - "локализация, Windows Forms"
-  - "пошаговые руководства, локализация"
-  - "Windows Forms, глобализация"
-  - "Windows Forms, локализация"
+title: 'Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API Using the Designer | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- Windows Forms, globalization
+- ClickOnce deployment, globalization
+- localization, Windows Forms
+- ClickOnce, on-demand download
+- Windows Forms, localization
+- ClickOnce deployment, localization
+- walkthroughs, localization
 ms.assetid: 82b85a47-b223-4221-a17c-38a52c3fb6e2
 caps.latest.revision: 10
-caps.handback.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# Пошаговое руководство. Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce с использованием конструктора
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 653240e8bb782a99a1f58d16fff0748edea5cab2
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
-Приложения Windows Forms можно настроить для нескольких языков и региональных параметров, воспользовавшись вспомогательными сборками.  *Вспомогательная сборка* — это сборка, содержащая ресурсы приложения для языка, отличного от языка и региональных параметров приложения по умолчанию.  
+---
+# <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API Using the Designer
+Windows Forms applications can be configured for multiple cultures through the use of satellite assemblies. A *satellite assembly* is an assembly that contains application resources for a culture other than the application's default culture.  
   
- Как указано в разделе [Локализация приложений ClickOnce](../deployment/localizing-clickonce-applications.md), одно развертывание [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] может включать несколько вспомогательных сборок для нескольких языков и региональных параметров.  По умолчанию [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] загружает все вспомогательные сборки в развертывание на клиентском компьютере, хотя один клиент, вероятно, потребует только одну вспомогательную сборку.  
+ As discussed in [Localizing ClickOnce Applications](../deployment/localizing-clickonce-applications.md), you can include multiple satellite assemblies for multiple cultures within the same [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] deployment. By default, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] will download all of the satellite assemblies in your deployment to the client machine, although a single client will probably require only one satellite assembly.  
   
- Это пошаговое руководство показывает, как пометить вспомогательные сборки как необязательные и загрузить только сборку, необходимую клиентскому компьютеру для текущих настроек языка и региональных параметров.  
+ This walkthrough demonstrates how to mark your satellite assemblies as optional, and download only the assembly a client machine needs for its current culture settings.  
   
 > [!NOTE]
->  В целях тестирования в следующих примерах кода программным образом задается следующий язык и региональные параметры: `ja-JP`.  В подразделе «Дальнейшие действия» далее в этом разделе приводятся сведения о том, как настроить этот код для производственной среды.  
+>  For testing purposes, the following code examples programmatically set the culture to `ja-JP`. See the "Next Steps" section later in this topic for information on how to adjust this code for a production environment.  
   
-### Как пометить вспомогательные сборки как необязательные  
+### <a name="to-mark-satellite-assemblies-as-optional"></a>To mark satellite assemblies as optional  
   
-1.  Построить проект.  Это позволяет создать вспомогательные сборки для всех языков и региональных параметров, для которых выполняется локализация.  
+1.  Build your project. This will generate satellite assemblies for all of the cultures you are localizing to.  
   
-2.  Щелкните правой кнопкой мыши имя проекта в обозревателе решений и выберите **Свойства**.  
+2.  Right-click on your project name in Solution Explorer, and click **Properties**.  
   
-3.  Перейдите на вкладку **Опубликовать** и нажмите кнопку **Файлы приложения**.  
+3.  Click the **Publish** tab, and then click **Application Files**.  
   
-4.  Установите флажок **Показать все файлы**, чтобы отобразить вспомогательные сборки.  По умолчанию все вспомогательные сборки будут включены в развертывание и будут видны в этом диалоговом окне.  
+4.  Select the **Show all files** check box to display satellite assemblies. By default, all satellite assemblies will be included in your deployment and will be visible in this dialog box.  
   
-     Вспомогательная сборка будет иметь имя в формате *isoCode*\\ApplicationName.resources.dll, где *isoCode* — это идентификатор языка в формате RFC 1766.  
+     A satellite assembly will have a name in the form *isoCode*\ApplicationName.resources.dll, where *isoCode* is a language identifier in RFC 1766 format.  
   
-5.  Щелкните **Создать...** в списке **Группа загрузки** для каждого идентификатора языка.  При появлении запроса имени группы загрузки введите идентификатор языка.  Например, для японской вспомогательной сборки нужно указать имя группы загрузки `ja-JP`.  
+5.  Click **New...** in the **Download Group** list for each language identifier. When prompted for a download group name, enter the language identifier. For example, for a Japanese satellite assembly, you would specify the download group name `ja-JP`.  
   
-6.  Закройте диалоговое окно **Файлы приложения**.  
+6.  Close the **Application Files** dialog box.  
   
-### Загрузка вспомогательных сборок по требованию в C\#  
+### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>To download satellite assemblies on demand in C# #
   
-1.  Откройте файл Program.cs.  Если вы не видите этот файл в обозревателе решений, выберите проект и в меню **Проект** щелкните **Показать все файлы**.  
+1.  Open the Program.cs file. If you do not see this file in Solution Explorer, select your project, and on the **Project** menu, click **Show All Files**.  
   
-2.  Используйте следующий код для загрузки соответствующей вспомогательной сборки и запуска приложения.  
+2.  Use the following code to download the appropriate satellite assembly and start your application.  
   
-     [!code-cs[ClickOnce.SatelliteAssemblies#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.cs)]  
+     [!code-csharp[ClickOnce.SatelliteAssemblies#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.cs)]  
   
-### Загрузка вспомогательных сборок по требованию в Visual Basic  
+### <a name="to-download-satellite-assemblies-on-demand-in-visual-basic"></a>To download satellite assemblies on demand in Visual Basic  
   
-1.  В окне **Свойства** для приложения щелкните вкладку **Приложение**.  
+1.  In the **Properties** window for the application, click the **Application** tab.  
   
-2.  В нижней части вкладки нажмите кнопку **Просмотреть события приложения**.  
+2.  At the bottom of the tab page, click **View Application Events**.  
   
-3.  Добавьте следующие импорты в начало файла ApplicationEvents.VB.  
+3.  Add the following imports to the beginning of the ApplicationEvents.VB file.  
   
      [!code-vb[ClickOnce.SatelliteAssembliesVB#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]  
   
-4.  Добавьте следующий код в класс `MyApplication`.  
+4.  Add the following code to the `MyApplication` class.  
   
      [!code-vb[ClickOnce.SatelliteAssembliesVB#2](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.vb)]  
   
-## Следующие действия  
- В продуктивной среде, скорее всего, потребуется удалить строку в примерах кода, задающую определенное значение для свойства <xref:System.Threading.Thread.CurrentUICulture%2A>, потому что на клиентских компьютерах правильное значение будет задаваться по умолчанию.  Если приложение выполняется на клиентском компьютере с японским языком, например, свойство <xref:System.Threading.Thread.CurrentUICulture%2A> будет по умолчанию равно `ja-JP`.  Программная установка этого значения — хороший способ проверить вспомогательные сборки перед развертыванием приложения.  
+## <a name="next-steps"></a>Next Steps  
+ In a production environment, you will likely need to remove the line in the code examples that sets <xref:System.Threading.Thread.CurrentUICulture%2A> to a specific value, because client machines will have the correct value set by default. When your application runs on a Japanese client machine, for example, <xref:System.Threading.Thread.CurrentUICulture%2A> will be `ja-JP` by default. Setting it programmatically is a good way to test your satellite assemblies before you deploy your application.  
   
-## См. также  
- [Пошаговое руководство. Загрузка вспомогательных сборок по требованию с помощью интерфейса API технологии развертывания ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)   
- [Локализация приложений ClickOnce](../deployment/localizing-clickonce-applications.md)
+## <a name="see-also"></a>See Also  
+ [Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)   
+ [Localizing ClickOnce Applications](../deployment/localizing-clickonce-applications.md)
+

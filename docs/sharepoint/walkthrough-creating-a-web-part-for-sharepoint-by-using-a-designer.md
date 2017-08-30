@@ -1,205 +1,206 @@
 ---
-title: "Пошаговое руководство. Создание веб-части для SharePoint с помощью конструктора"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "веб-части [разработка приложений SharePoint в Visual Studio], создание"
-  - "веб-части [разработка приложений SharePoint в Visual Studio], конструктор"
-  - "веб-части [разработка приложений SharePoint в Visual Studio], разработка"
+title: 'Walkthrough: Creating a Web Part for SharePoint by Using a Designer | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- Web Parts [SharePoint development in Visual Studio], designer
+- Web Parts [SharePoint development in Visual Studio], creating
+- Web Parts [SharePoint development in Visual Studio], designing
 ms.assetid: 3dd62654-ada2-468f-b7da-eb5704a2ff7a
 caps.latest.revision: 34
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 33
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 58ffc130a6b339d101cb24b582420d78f892aaa5
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Создание веб-части для SharePoint с помощью конструктора
-  Создание веб\-частей для сайта SharePoint site позволяет пользователям непосредственно изменять содержимое, внешний вид и поведение страниц на этом сайте с помощью браузера.  В этом пошаговом руководстве показано визуальное создание веб\-части с использованием шаблона проекта SharePoint **Визуальная веб\-часть** в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+# <a name="walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer"></a>Walkthrough: Creating a Web Part for SharePoint by Using a Designer
+  If you create web parts for a SharePoint site, your users can directly modify the content, appearance, and behavior of pages in that site by using a browser. This walkthrough shows you how to create a web part visually by using the SharePoint **Visual Web Part** project template in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
- Веб\-часть, которую вам предстоит создать, отображает представление месячного календаря и флажок для каждого списка календаря на сайте.  Пользователи могут указывать, какие списки календаря включить в представление месячного календаря, устанавливая нужные флажки.  
+ The web part that you'll create displays a monthly calendar view and a check box for each calendar list on the site. Users can specify which calendar lists to include in the monthly calendar view by selecting the check boxes.  
   
- В данном пошаговом руководстве рассмотрены следующие задачи:  
+ This walkthrough illustrates the following tasks:  
   
--   Создание веб\-части с помощью шаблона проекта **Визуальная веб\-часть**.  
+-   Creating a web part by using the **Visual Web Part** project template.  
   
--   Разработка веб\-части с использованием конструктора Visual Web Developer в Visual Studio.  
+-   Designing the web part by using the Visual Web Developer designer in Visual Studio.  
   
--   Добавление кода для обработки событий элементов управления в веб\-части.  
+-   Adding code to handle the events of controls on the web part.  
   
--   Тестирование веб\-части в SharePoint.  
+-   Testing the web part in SharePoint.  
   
     > [!NOTE]  
-    >  Имена и расположения некоторых элементов пользовательского интерфейса Visual Studio на вашем компьютере могут отличающиеся от указанных в следующих инструкциях.  Эти элементы определяются используемой версией Visual Studio и ее параметрами.  См. раздел [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/ru-ru/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+    >  Your computer might show different names or locations for some elements of the user interface for Visual Studio in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. See [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
--   Поддерживаемые версии Windows и SharePoint.  См. раздел [Требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Supported editions of Windows and SharePoint. See [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   [!INCLUDE[vsPro](../sharepoint/includes/vspro-md.md)] или выше.  
+-   [!INCLUDE[vsPro](../sharepoint/includes/vspro-md.md)] or greater.  
   
-## Создание проекта веб\-части  
- Сначала создайте проект веб\-части с использованием шаблона проекта **Визуальная веб\-часть**.  
+## <a name="creating-a-web-part-project"></a>Creating a web part project  
+ First, create a web part project by using the **Visual Web Part** project template.  
   
-#### Создание проекта визуальной веб\-части  
+#### <a name="to-create-a-visual-web-part-project"></a>To create a Visual Web Part project  
   
-1.  Запустите [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], используя параметр **Запуск от имени администратора**.  
+1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] by using the **Run as Administrator** option.  
   
-2.  В строке меню **Файл** выберите пункты **Создать**, **Проект**.  
+2.  On the menu bar, choose **File**, **New**, **Project**.  
   
-     Откроется диалоговое окно **Создание проекта**.  
+     The **New Project** dialog box appears.  
   
-3.  В диалоговом окне **Создать проект** в разделе **Visual C\#** или **Visual Basic** разверните **Office\/SharePoint** и выберите категорию **Решения SharePoint**.  
+3.  In the **New Project** dialog box, under either **Visual C#** or **Visual Basic**, expand **Office/SharePoint**, and then choose the **SharePoint Solutions** category.  
   
-4.  В списке шаблонов выберите шаблон **SharePoint 2013 — визуальная веб\-часть**, а затем нажмите кнопку **ОК**.  
+4.  In the list of templates, choose the **SharePoint 2013 - Visual Web Part** template, and then choose the **OK** button.  
   
-     Появится окно **Мастер настройки SharePoint**.  Этот мастер позволяет указать сайт, который будет использоваться для отладки проекта, и уровень доверия решения.  
+     The **SharePoint Customization Wizard** appears. By using this wizard, you can specify the site that you'll use to debug the project and the trust level of the solution.  
   
-5.  В разделе **Какова степень доверия для этого решения SharePoint?** выберите **Развернуть как решение фермы**.  
+5.  In the **What is the trust level for this SharePoint solution?** section, choose the **Deploy as a farm solution** option button.  
   
-6.  Нажмите кнопку **Готово**, чтобы принять предлагаемый по умолчанию локальный сайт SharePoint.  
+6.  Choose the **Finish** button to accept the default local SharePoint site.  
   
-## Разработка веб\-части  
- Сконструируйте веб\-часть, добавив элементы управления из **области элементов** на поверхность конструктора Visual Web Developer.  
+## <a name="designing-the-web-part"></a>Designing the web part  
+ Design the web part by adding controls from the **Toolbox** to the surface of the Visual Web Developer designer.  
   
-#### Разработка структуры веб\-части  
+#### <a name="to-design-the-layout-of-the-web-part"></a>To design the layout of the web part  
   
-1.  В конструкторе Visual Web Developer выберите вкладку **Конструктор**, чтобы перейти в представление кода.  
+1.  On the Visual Web Developer designer, choose the **Design** tab to switch to Design view.  
   
-2.  В меню **Вид** выберите **Область элементов**.  
+2.  On the menu bar, choose **View**, **Toolbox**.  
   
-3.  В узле **СтандартнаяПанель элементов** выберите элемент управления **CheckBoxList**, а затем выполните одно из следующих действий.  
+3.  In the **Standard** node of the **Toolbox**, choose the **CheckBoxList** control, and then perform one of the following steps:  
   
-    -   Откройте контекстное меню для элемента **CheckBoxList** выберите **Копировать**, чтобы открыть контекстное меню для первой линии в конструкторе и выберите пункт **Вставить**.  
+    -   Open the shortcut menu for the **CheckBoxList** control, choose **Copy**, open the shortcut menu for the first line in the designer, and then choose **Paste**.  
   
-    -   Перетащите элемент управления **CheckBoxList** из **Панели элементов** и соедините элемент управления с первой линией в конструкторе.  
+    -   Drag the **CheckBoxList** control from the **Toolbox**, and connect the control to the first line in the designer.  
   
-4.  Повторяющийся предыдущий шаг, но перемещайте кнопку в следующей линии конструктора.  
+4.  Repeat the previous step, but move a Button to the next line of the designer.  
   
-5.  В конструкторе дважды щелкните кнопку **Button1**.  
+5.  In the designer, choose the **Button1** button.  
   
-6.  В меню **Вид** выберите **Окно свойств**.  
+6.  On the menu bar, choose **View**, **Properties Window**.  
   
-     Будет открыто окно **Свойства**.  
+     The **Properties** window opens.  
   
-7.  В свойстве **Текст** введите кнопки обновления.  
+7.  In the **Text** property of the button, enter **Update**.  
   
-## Обработка событий элементов управления в веб\-части  
- Добавьте код, который позволяет пользователю добавлять календари в представление главного календаря.  
+## <a name="handling-the-events-of-controls-on-the-web-part"></a>Handling the events of controls on the web part  
+ Add code that enables the user to add calendars to the master calendar view.  
   
-#### Обработка событий элементов управления в веб\-части  
+#### <a name="to-handle-events-of-controls-on-the-web-part"></a>To handle events of controls on the web part  
   
-1.  Выполните одно из следующих действий.  
+1.  Perform one of the following sets of steps:  
   
-    -   В конструкторе дважды щелкните кнопку **Update**.  
+    -   In the designer, double-click the **Update** button.  
   
-    -   В окне **Свойства** для кнопки **Обновить**, нажмите кнопку **События**.  В свойстве **Щелчок** введите **Button1\_Click**, а затем нажмите клавишу "Ввод".  
+    -   In the **Properties** window for the **Update** button, choose the **Events** button. In the **Click** property, enter **Button1_Click**, and then choose the Enter key.  
   
-     В редакторе кода откроется файл кода пользовательского элемента управления и появится обработчик событий `Button1_Click`.  Позже в этот обработчик событий нужно будет добавить код.  
+     The user control code file opens in Code Editor and the `Button1_Click` event handler appears. Later, you'll add code to this event handler.  
   
-2.  Добавьте следующие операторы в верхнюю часть файла кода пользовательского элемента управления.  
+2.  Add the following statements to the top of the user control code file.  
   
-     [!code-csharp[SP_VisualWebPart#1](../snippets/csharp/VS_Snippets_OfficeSP/sp_visualwebpart/cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]
-     [!code-vb[SP_VisualWebPart#1](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_visualwebpart/vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]  
+     [!code-vb[SP_VisualWebPart#1](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]  [!code-csharp[SP_VisualWebPart#1](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]  
   
-3.  Добавьте следующую строку кода в класс `VisualWebPart1`.  Этот код объявляет элемент управления представлением месячного календаря.  
+3.  Add the following line of code to the `VisualWebPart1` class. This code declares a monthly calendar view control.  
   
-     [!code-csharp[SP_VisualWebPart#2](../snippets/csharp/VS_Snippets_OfficeSP/sp_visualwebpart/cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#2)]
-     [!code-vb[SP_VisualWebPart#2](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_visualwebpart/vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#2)]  
+     [!code-vb[SP_VisualWebPart#2](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#2)]  [!code-csharp[SP_VisualWebPart#2](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#2)]  
   
-4.  Замените метод `Page_Load` класса `VisualWebPart1` на следующий код.  Этот код выполняет следующие задачи:  
+4.  Replace the `Page_Load` method of the `VisualWebPart1` class with the following code. This code performs the following tasks:  
   
-    -   Добавляет представление месячного календаря в пользовательский элемент управления.  
+    -   Adds a monthly calendar view to the user control.  
   
-    -   Добавляет флажок для каждого списка календаря на сайте.  
+    -   Adds a check box for each calendar list on the site.  
   
-    -   Задает шаблон для каждого типа элемента, отображающегося в представлении календаря.  
+    -   Specifies a template for each type of item that appears in the calendar view.  
   
-     [!code-csharp[SP_VisualWebPart#3](../snippets/csharp/VS_Snippets_OfficeSP/sp_visualwebpart/cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#3)]
-     [!code-vb[SP_VisualWebPart#3](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_visualwebpart/vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#3)]  
+     [!code-vb[SP_VisualWebPart#3](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#3)] [!code-csharp[SP_VisualWebPart#3](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#3)]  
   
-5.  Замените метод `Button1_Click` класса `VisualWebPart1` на следующий код.  Этот код добавляет элементы из каждого выбранного календаря в представление главного календаря.  
+5.  Replace the `Button1_Click` method of the `VisualWebPart1` class with the following code. This code adds items from each selected calendar to the master calendar view.  
   
-     [!code-csharp[SP_VisualWebPart#4](../snippets/csharp/VS_Snippets_OfficeSP/sp_visualwebpart/cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#4)]
-     [!code-vb[SP_VisualWebPart#4](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_visualwebpart/vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#4)]  
+     [!code-vb[SP_VisualWebPart#4](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#4)]  [!code-csharp[SP_VisualWebPart#4](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#4)]  
   
-## Тестирование веб\-части  
- При запуске проекта открывается сайт SharePoint.  Веб\-часть автоматически добавляется в коллекцию веб\-частей в SharePoint.  Чтобы протестировать этот проект, нужно выполнить следующие действия.  
+## <a name="testing-the-web-part"></a>Testing the web part  
+ When you run the project, the SharePoint site opens. The web part is automatically added to the Web Part Gallery in SharePoint. To test this project, you'll perform the following tasks:  
   
--   Добавьте событие в каждый из двух отдельных списков календарей.  
+-   Add an event to each of two separate calendar lists.  
   
--   Добавьте веб\-часть на страницу веб\-части.  
+-   Add the web part to a web part page.  
   
--   Укажите списки для включения в представление месячного календаря.  
+-   Specify the lists to include in the monthly calendar view.  
   
-#### Добавление событий в списки календарей на сайте  
+#### <a name="to-add-events-to-calendar-lists-on-the-site"></a>To add events to calendar lists on the site  
   
-1.  В Visual Studio нажмите клавишу F5.  
+1.  In Visual Studio, choose the F5 key.  
   
-     Открывается сайт SharePoint, и на странице отображается панель быстрого запуска [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)].  
+     The SharePoint site opens, and the [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] Quick Launch bar appears on the page.  
   
-2.  На панели быстрого запуска в разделе **Списки** щелкните ссылку **Календарь**.  
+2.  On the Quick Launch bar, under **Lists**, choose the **Calendar** link.  
   
-     Отобразится страница **Календарь**.  
+     The **Calendar** page appears.  
   
-     Если связь календаря не отображается на панели быстрого запуска, выберите ссылку **Содержимое сайта**.  Если на странице содержимого сайта не показан элемент **Календарь**, создайте его.  
+     If you no Calendar link appears on the Quick Launch bar, choose the **Site Contents** link. If the Site Contents page doesn't show a **Calendar** item, create one.  
   
-3.  На странице "Календарь" выберите день, а затем выберите ссылку **Добавить** в выбранном дне, чтобы добавить событие.  
+3.  On the Calendar page, choose a day, and then choose the **Add** link in the selected day to add an event.  
   
-4.  В поле **Название** введите "Event" в календаре по умолчанию и нажмите **Сохранить**.  
+4.  In the **Title** box, enter **Event in the default calendar**, and then choose the **Save** button.  
   
-5.  Выберите ссылку **Содержимое сайта** и затем выберите плитку **Добавить приложение**.  
+5.  Choose the **Site Contents** link, and then choose the **Add an app** tile.  
   
-6.  На странице **Создать** выберите тип **Календарь**, назовите календарь, а затем нажмите кнопку **Создать**.  
+6.  On the **Create** page, choose the **Calendar** type, name the calendar, and then choose the **Create** button.  
   
-7.  Добавьте событие в новый календарь, назовите событие в пользовательском календаре Event и нажмите кнопку **Сохранить**.  
+7.  Add an event to the new calendar, name the event **Event in the custom calendar**, and then choose the **Save** button.  
   
-#### Добавление веб\-части на страницу веб\-части  
+#### <a name="to-add-the-web-part-to-a-web-part-page"></a>To add the web part to a web part page  
   
-1.  На странице **Содержимое сайта** откройте папку **Страницы сайта**.  
+1.  On the **Site Contents** page, open the **Site Pages** folder.  
   
-2.  На ленте выберите вкладку **Файлы**, откройте меню **Новый документ** и выберите команду **Страница веб\-частей**.  
+2.  On the ribbon, choose the **Files** tab, open the **New Document** menu, and then choose the **Web Part Page** command.  
   
-3.  На странице **Новая страница веб\-части** назовите страницу **SampleWebPartPage.aspx** и нажмите кнопку **Создать**.  
+3.  On the **New Web Part Page** page, name the page **SampleWebPartPage.aspx**, and then choose the **Create** button.  
   
-     Отобразится страница веб\-части.  
+     The web part page appears.  
   
-4.  В верхней части страницы веб\-части выберите вкладку **Вставить**, а затем нажмите кнопку **Веб\-часть**.  
+4.  In the top zone of the web part page, choose the **Insert** tab, and then choose the **Web Part** button.  
   
-5.  Выберите папку **Пользовательские**, щелкните веб\-часть **VisualWebPart1** и нажмите кнопку **Добавить**.  
+5.  Choose the **Custom** folder, choose the **VisualWebPart1** web part, and then choose the **Add** button.  
   
-     Веб\-часть отобразится на странице.  В веб\-части отображаются следующие элементы управления.  
+     The web part appears on the page. The following controls appear on the web part:  
   
-    -   Представление месячного календаря.  
+    -   A monthly calendar view.  
   
-    -   Кнопка **Обновить**.  
+    -   An **Update** button.  
   
-    -   Флажок **Календарь**.  
+    -   A **Calendar** check box.  
   
-    -   Флажок **Пользовательский календарь**.  
+    -   A **Custom Calendar** check box.  
   
-#### Задание списков для включения в представление месячного календаря  
+#### <a name="to-specify-lists-to-include-in-the-monthly-calendar-view"></a>To specify lists to include in the monthly calendar view  
   
-1.  В веб\-части выберите календари, которые необходимо включить в представление месячного календаря и нажмите кнопку **Обновить**.  
+1.  In the web part, specify calendars that you want to include in the monthly calendar view, and then choose the **Update** button.  
   
-     События из всех указанных календарей отображаются в представлении месячного календаря.  
+     Events from all calendars that you specified appear in the monthly calendar view.  
   
-## См. также  
- [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
- [Практическое руководство. Создание веб-части SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)   
- [Практическое руководство. Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
- [Пошаговое руководство. Создание веб-части для SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)  
+## <a name="see-also"></a>See Also  
+ [Creating Web Parts for SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
+ [How to: Create a SharePoint Web Part](../sharepoint/how-to-create-a-sharepoint-web-part.md)   
+ [How to: Create a SharePoint Web Part by Using a Designer](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
+ [Walkthrough: Creating a Web Part for SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)  
   
   

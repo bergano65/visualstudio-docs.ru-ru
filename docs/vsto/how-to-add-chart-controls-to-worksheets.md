@@ -1,96 +1,99 @@
 ---
-title: "Практическое руководство. Добавление элементов управления диаграммой на листы"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Chart - элемент управления [разработка решений Office в Visual Studio], добавление к листам"
-  - "элементы управления [разработка решений Office в Visual Studio], добавление к листам"
+title: 'How to: Add Chart Controls to Worksheets | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Chart control [Office development in Visual Studio], adding to worksheets
+- controls [Office development in Visual Studio], adding to worksheets
 ms.assetid: f02568e7-5caa-45b4-aa2a-4f73b0565d4e
 caps.latest.revision: 44
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 42
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 62810cb2bcb6f03be91f66f3c581fa0798fca3ba
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Практическое руководство. Добавление элементов управления диаграммой на листы
-  Элементы управления <xref:Microsoft.Office.Tools.Excel.Chart> можно добавлять на лист Microsoft Office Excel во время разработки и во время выполнения в настройках на уровне документа.  Элементы управления <xref:Microsoft.Office.Tools.Excel.Chart> также можно добавлять во время выполнения в надстройках VSTO.  
+# <a name="how-to-add-chart-controls-to-worksheets"></a>How to: Add Chart Controls to Worksheets
+  You can add <xref:Microsoft.Office.Tools.Excel.Chart> controls to a Microsoft Office Excel worksheet at design time and at run time in document-level customizations. You can also add <xref:Microsoft.Office.Tools.Excel.Chart> controls at run time in VSTO Add-ins.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- В этом разделе описываются следующие задачи.  
+ This topic describes the following tasks:  
   
--   [Добавление элементов управления «Диаграмма» во время разработки](#designtime)  
+-   [Adding Chart controls at design time](#designtime)  
   
--   [Добавление элементов управления «Диаграмма» во время выполнения в проекте на уровне документа](#runtimedoclevel)  
+-   [Adding Chart controls at run time in a document-level project](#runtimedoclevel)  
   
--   [Добавление элементов управления «Диаграмма» во время выполнения в проекте надстройки VSTO](#runtimeaddin)  
+-   [Adding Chart controls at run time in a VSTO Add-in project](#runtimeaddin)  
   
- Дополнительные сведения об элементах управления <xref:Microsoft.Office.Tools.Excel.Chart> см. в разделе [Элемент управления "диаграмма"](../vsto/chart-control.md).  
+ For more information about <xref:Microsoft.Office.Tools.Excel.Chart> controls, see [Chart Control](../vsto/chart-control.md).  
   
-##  <a name="designtime"></a> Добавление элементов управления «Диаграмма» во время разработки  
- Для добавления элемента управления <xref:Microsoft.Office.Tools.Excel.Chart> на лист можно использовать ту же процедуру, что и для добавления диаграммы в приложении.  
+##  <a name="designtime"></a> Adding Chart Controls at Design Time  
+ You can add the <xref:Microsoft.Office.Tools.Excel.Chart> control to your worksheet in the same manner you would add a chart from within the application.  
   
 > [!NOTE]  
->  Элемент управления <xref:Microsoft.Office.Tools.Excel.Chart> недоступен в окне **Панель элементов** или **Источники данных**.  
+>  The <xref:Microsoft.Office.Tools.Excel.Chart> control is not available from the **Toolbox** or the **Data Sources** window.  
   
-#### Добавление элемента управления ведущего приложения «Диаграмма» на лист в Excel  
+#### <a name="to-add-a-chart-host-control-to-a-worksheet-in-excel"></a>To add a Chart host control to a worksheet in Excel  
   
-1.  На вкладке **Вставка** в группе **Диаграммы** щелкните **Столбец**, затем категорию диаграммы и требуемый тип диаграммы.  
+1.  On the **Insert** tab, in the **Charts** group, click **Column**, click a category of charts, and then click the type of chart you want.  
   
-2.  В диалоговом окне **Вставить диаграмму** нажмите кнопку **ОК**.  
+2.  In the **Insert Chart** dialog box, click **OK**.  
   
-3.  На вкладке **Разработка** в группе **Данные** щелкните **Выбор данных**.  
+3.  On the **Design** tab, in the **Data** group, click **Select Data**.  
   
-4.  В диалоговом окне **Выбор источника данных** в области **Диаграмма** щелкните **диапазон данных** и сбросьте все параметры, выбранные по умолчанию.  
+4.  In the **Select Data Source** dialog box, click in the **Chart** **data range** box and clear any default selection.  
   
-5.  На листе **Данные для диаграммы** выделите диапазон ячеек, содержащий данные для диаграммы \(ячейки с **A5** по **D8**\).  
+5.  In the **Data for Chart** sheet, select the range of cells that contains the data for the chart (cells **A5** through **D8**).  
   
-6.  В диалоговом окне **Выбор источника данных** нажмите кнопку **ОК**.  
+6.  In the **Select Data Source** dialog box, click **OK**.  
   
-##  <a name="runtimedoclevel"></a> Добавление элементов управления «Диаграмма» во время выполнения в проекте на уровне документа  
- Элемент управления <xref:Microsoft.Office.Tools.Excel.Chart> можно добавлять динамически во время выполнения.  При закрытии документа динамически созданные диаграммы не сохраняются в документе как элементы управления ведущего приложения.  Дополнительные сведения см. в разделе [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+##  <a name="runtimedoclevel"></a> Adding Chart Controls at Run Time in a Document-Level Project  
+ You can add the <xref:Microsoft.Office.Tools.Excel.Chart> control dynamically at run time. Dynamically created charts are not persisted in the document as host controls when the document is closed. For more information, see [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
-#### Добавление элемента управления «Диаграмма» на лист программным образом  
+#### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>To add a Chart control to a worksheet programmatically  
   
-1.  В обработчике событий <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> для `Sheet1` вставьте следующий код, чтобы добавить элемент управления <xref:Microsoft.Office.Tools.Excel.Chart>.  
+1.  In the <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> event handler of `Sheet1`, insert the following code to add the <xref:Microsoft.Office.Tools.Excel.Chart> control.  
   
-     [!code-csharp[Trin_VstcoreHostControlsExcel#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsExcel/CS/Sheet1.cs#1)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsExcel/VB/Sheet1.vb#1)]  
+     [!code-csharp[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#1)]  [!code-vb[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#1)]  
   
-##  <a name="runtimeaddin"></a> Добавление элементов управления «Диаграмма» во время выполнения в проекте надстройки VSTO  
- Элемент управления <xref:Microsoft.Office.Tools.Excel.Chart> можно добавить программным образом на любой открытый лист в проекте надстройки VSTO.  Дополнительные сведения см. в статье [Расширение документов Word и книг Excel в надстройках VSTO в среде выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+##  <a name="runtimeaddin"></a> Adding Chart Controls at Run Time in a VSTO Add-in Project  
+ You can add a <xref:Microsoft.Office.Tools.Excel.Chart> control programmatically to any open worksheet in a VSTO Add-in project. For more information, see [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
- При закрытии листа динамически созданные элементы управления «Диаграмма» не сохраняются в листе как элементы управления ведущего приложения.  Дополнительные сведения см. в разделе [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Dynamically created chart controls are not persisted in the worksheet as host controls when the worksheet is closed. For more information, see [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
-#### Добавление элемента управления «Диаграмма» на лист программным образом  
+#### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>To add a Chart control to a worksheet programmatically  
   
-1.  Следующий код создает ведущий элемент листа, который основан на открытом листе, а затем добавляет элемент управления <xref:Microsoft.Office.Tools.Excel.Chart>.  
+1.  The following code generates a worksheet host item that is based on the open worksheet, and then adds a <xref:Microsoft.Office.Tools.Excel.Chart> control.  
   
-     [!code-csharp[Trin_Excel_Dynamic_Controls#9](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Excel_Dynamic_Controls/CS/ThisAddIn.cs#9)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#9](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Excel_Dynamic_Controls/VB/ThisAddIn.vb#9)]  
+     [!code-csharp[Trin_Excel_Dynamic_Controls#9](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#9)]  [!code-vb[Trin_Excel_Dynamic_Controls#9](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#9)]  
   
-## Компиляция кода  
- В этом примере необходимо соблюдать следующие требования.  
+## <a name="compiling-the-code"></a>Compiling the Code  
+ This example has the following requirements:  
   
--   Данные для диаграммы хранятся в диапазоне с A5 по D8 на листе.  
+-   Data to be charted, stored in the range from A5 to D8 in the worksheet.  
   
-## См. также  
- [Расширение документов Word и книг Excel в надстройках VSTO в среде выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
- [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)   
- [Элемент управления "диаграмма"](../vsto/chart-control.md)   
- [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)   
- [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)   
- [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+## <a name="see-also"></a>See Also  
+ [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
+ [Controls on Office Documents](../vsto/controls-on-office-documents.md)   
+ [Chart Control](../vsto/chart-control.md)   
+ [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md)   
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

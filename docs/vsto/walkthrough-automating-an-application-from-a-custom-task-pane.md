@@ -1,151 +1,151 @@
 ---
-title: "Руководство. Автоматизация приложения в настраиваемой области задач"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "области задач [разработка решений Office в Visual Studio], PowerPoint"
-  - "PowerPoint [разработка решений Office в Visual Studio], настраиваемые области задач"
-  - "автоматизация приложений Office"
-  - "настраиваемые области задач [разработка решений Office в Visual Studio], автоматизация приложений"
-  - "настраиваемые области задач [разработка решений Office в Visual Studio], PowerPoint"
-  - "области задач [разработка решений Office в Visual Studio], автоматизация приложений"
+title: 'Walkthrough: Automating an Application from a Custom Task Pane | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- task panes [Office development in Visual Studio], PowerPoint
+- PowerPoint [Office development in Visual Studio], custom task panes
+- automating Office applications
+- custom task panes [Office development in Visual Studio], automating applications
+- custom task panes [Office development in Visual Studio], PowerPoint
+- task panes [Office development in Visual Studio], automating applications
 ms.assetid: 77be5ab5-e330-4564-87ec-9cba564ba8f9
 caps.latest.revision: 37
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 33
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 0b8ae724f9104943782583c523cffb3c1e6836da
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Руководство. Автоматизация приложения в настраиваемой области задач
-  В этом пошаговом руководстве рассматриваются способы создания настраиваемой области задач, которая автоматизирует PowerPoint. Настраиваемая область задач вставляет даты в слайд, когда пользователь нажимает элемент управления <xref:System.Windows.Forms.MonthCalendar> в ней.  
+# <a name="walkthrough-automating-an-application-from-a-custom-task-pane"></a>Walkthrough: Automating an Application from a Custom Task Pane
+  This walkthrough demonstrates how to create a custom task pane that automates PowerPoint. The custom task pane inserts dates into a slide when the user clicks a <xref:System.Windows.Forms.MonthCalendar> control that is on the custom task pane.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
- Хотя в этом пошаговом руководстве используется PowerPoint, рассмотренная процедура применима к любым перечисленным выше приложениям.  
+ Although this walkthrough uses PowerPoint specifically, the concepts demonstrated by the walkthrough are applicable to any applications that are listed above.  
   
- В данном пошаговом руководстве рассмотрены следующие задачи:  
+ This walkthrough illustrates the following tasks:  
   
--   проектирование пользовательского интерфейса настраиваемой области задач;  
+-   Designing the user interface of the custom task pane.  
   
--   автоматизация PowerPoint в настраиваемой области задач;  
+-   Automating PowerPoint from the custom task pane.  
   
--   отображение настраиваемой области задач в PowerPoint.  
+-   Displaying the custom task pane in PowerPoint.  
   
 > [!NOTE]  
->  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/ru-ru/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   Microsoft PowerPoint 2010 или [!INCLUDE[PowerPoint_15_short](../vsto/includes/powerpoint-15-short-md.md)].  
+-   Microsoft PowerPoint 2010 or [!INCLUDE[PowerPoint_15_short](../vsto/includes/powerpoint-15-short-md.md)].  
   
-## Создание проекта надстройки  
- Первым шагом является создание проекта надстройки VSTO для PowerPoint.  
+## <a name="creating-the-add-in-project"></a>Creating the Add-in Project  
+ The first step is to create an VSTO Add-in project for PowerPoint.  
   
-#### Создание нового проекта  
+#### <a name="to-create-a-new-project"></a>To create a new project  
   
-1.  Создайте проект надстройки VSTO для PowerPoint с именем **MyAddIn**, используя шаблон проекта надстройки PowerPoint. Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Create a PowerPoint VSTO Add-in project with the name **MyAddIn**, by using the PowerPoint Add-in project template. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] открывает файл кода **ThisAddIn.cs** или **ThisAddIn.vb** и добавляет проект **MyAddIn** в **обозреватель решений**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] opens the **ThisAddIn.cs** or **ThisAddIn.vb** code file and adds the **MyAddIn** project to **Solution Explorer**.  
   
-## Проектирование пользовательского интерфейса настраиваемой области задач  
- Визуальный конструктор для настраиваемых областей задач не предусмотрен, но вы можете разработать собственный элемент управления с желаемой структурой. Далее в этом пошаговом руководстве вы добавите этот пользовательский элемент управления в настраиваемую область задач.  
+## <a name="designing-the-user-interface-of-the-custom-task-pane"></a>Designing the User Interface of the Custom Task Pane  
+ There is no visual designer for custom task panes, but you can design a user control with the layout you want. Later in this walkthrough, you will add the user control to the custom task pane.  
   
-#### Проектирование пользовательского интерфейса настраиваемой области задач  
+#### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>To design the user interface of the custom task pane  
   
-1.  В меню **Проект** выберите команду **Добавить пользовательский элемент управления**.  
+1.  On the **Project** menu, click **Add User Control**.  
   
-2.  В диалоговом окне **Добавление нового элемента** измените имя пользовательского элемента управления на **MyUserControl** и нажмите кнопку **Добавить**.  
+2.  In the **Add New Item** dialog box, change the name of the user control to **MyUserControl**, and click **Add**.  
   
-     Пользовательский элемент управления откроется в конструкторе.  
+     The user control opens in the designer.  
   
-3.  Перетащите элемент управления **MonthCalendar** со вкладки **Стандартные элементы управления** на **панели элементов** в пользовательский элемент управления.  
+3.  From the **Common Controls** tab of the **Toolbox**, drag a **MonthCalendar** control to the user control.  
   
-     Если элемент управления **MonthCalendar** больше поверхности конструктора пользовательского элемента управления, измените размер пользовательского элемента управления в соответствии с размерами элемента управления **MonthCalendar**.  
+     If the **MonthCalendar** control is larger than the design surface of the user control, resize the user control to fit the **MonthCalendar** control.  
   
-## Автоматизация PowerPoint в настраиваемой области задач  
- Задача надстройки VSTO состоит в том, чтобы разместить выбранную дату на первом слайде активной презентации. Используйте событие <xref:System.Windows.Forms.MonthCalendar.DateChanged> элемента управления, чтобы добавить выбранную дату при ее изменении.  
+## <a name="automating-powerpoint-from-the-custom-task-pane"></a>Automating PowerPoint from the Custom Task Pane  
+ The purpose of the VSTO Add-in is to put a selected date on the first slide of the active presentation. Use the <xref:System.Windows.Forms.MonthCalendar.DateChanged> event of the control to add the selected date whenever it changes.  
   
-#### Автоматизация PowerPoint в настраиваемой области задач  
+#### <a name="to-automate-powerpoint-from-the-custom-task-pane"></a>To automate PowerPoint from the custom task pane  
   
-1.  В конструкторе дважды щелкните элемент управления <xref:System.Windows.Forms.MonthCalendar>.  
+1.  In the designer, double-click the <xref:System.Windows.Forms.MonthCalendar> control.  
   
-     Откроется файл **MyUserControl.cs** или **MyUserControl.vb**, и будет создан обработчик событий <xref:System.Windows.Forms.MonthCalendar.DateChanged>.  
+     The **MyUserControl.cs** or **MyUserControl.vb** file opens, and an event handler for the <xref:System.Windows.Forms.MonthCalendar.DateChanged> event is created.  
   
-2.  Добавьте приведенный ниже код в начало файла. В этом коде создаются псевдонимы для пространств имен <xref:Microsoft.Office.Core> и <xref:Microsoft.Office.Interop.PowerPoint>.  
+2.  Add the following code to the top of the file. This code creates aliases for the <xref:Microsoft.Office.Core> and <xref:Microsoft.Office.Interop.PowerPoint> namespaces.  
   
-     [!code-csharp[Trin_TaskPaneMonthCalendar#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_TaskPaneMonthCalendar/CS/MyUserControl.cs#1)]
-     [!code-vb[Trin_TaskPaneMonthCalendar#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_TaskPaneMonthCalendar/VB/MyUserControl.vb#1)]  
+     [!code-csharp[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#1)]  [!code-vb[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#1)]  
   
-3.  Добавьте следующий код в класс `MyUserControl`. Этот код объявляет объект <xref:Microsoft.Office.Interop.PowerPoint.Shape> как член класса `MyUserControl`. На следующем этапе мы будем использовать этот объект <xref:Microsoft.Office.Interop.PowerPoint.Shape> для добавления текстового поля на слайд активной презентации.  
+3.  Add the following code to the `MyUserControl` class. This code declares a <xref:Microsoft.Office.Interop.PowerPoint.Shape> object as a member of `MyUserControl`. In the following step, you will use this <xref:Microsoft.Office.Interop.PowerPoint.Shape> to add a text box to a slide in the active presentation.  
   
-     [!code-csharp[Trin_TaskPaneMonthCalendar#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_TaskPaneMonthCalendar/CS/MyUserControl.cs#2)]
-     [!code-vb[Trin_TaskPaneMonthCalendar#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_TaskPaneMonthCalendar/VB/MyUserControl.vb#2)]  
+     [!code-csharp[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#2)]  [!code-vb[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#2)]  
   
-4.  Замените обработчик событий `monthCalendar1_DateChanged` следующим кодом. Этот код добавляет текстовое поле на первый слайд активной презентации, а затем вставляет в это поле выбранную дату. Код использует объект `Globals.ThisAddIn` для получения доступа к объектной модели PowerPoint.  
+4.  Replace the `monthCalendar1_DateChanged` event handler with the following code. This code adds a text box to the first slide in the active presentation, and then adds the currently selected date to the text box. This code uses the `Globals.ThisAddIn` object to access the object model of PowerPoint.  
   
-     [!code-csharp[Trin_TaskPaneMonthCalendar#3](../snippets/csharp/VS_Snippets_OfficeSP/Trin_TaskPaneMonthCalendar/CS/MyUserControl.cs#3)]
-     [!code-vb[Trin_TaskPaneMonthCalendar#3](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_TaskPaneMonthCalendar/VB/MyUserControl.vb#3)]  
+     [!code-csharp[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#3)]  [!code-vb[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#3)]  
   
-5.  В **обозревателе решений** щелкните проект **MyAddIn** правой кнопкой мыши и выберите пункт **Сборка**. Убедитесь, что сборка проекта выполняется без ошибок.  
+5.  In **Solution Explorer**, right-click the **MyAddIn** project and then click **Build**. Verify that the project builds without errors.  
   
-## Отображение настраиваемой области задач  
- Для отображения настраиваемой области задач при запуске надстройки VSTO добавьте пользовательский элемент управления в область задач в обработчике событий <xref:Microsoft.Office.Tools.AddIn.Startup> надстройки VSTO.  
+## <a name="displaying-the-custom-task-pane"></a>Displaying the Custom Task Pane  
+ To display the custom task pane when the VSTO Add-in starts, add the user control to the task pane in the <xref:Microsoft.Office.Tools.AddIn.Startup> event handler of the VSTO Add-in.  
   
-#### Отображение настраиваемой области задач  
+#### <a name="to-display-the-custom-task-pane"></a>To display the custom task pane  
   
-1.  В **обозревателе решений** разверните **PowerPoint**.  
+1.  In **Solution Explorer**, expand **PowerPoint**.  
   
-2.  Щелкните правой кнопкой мыши файл **ThisAddIn.cs** или **ThisAddIn.vb** и выберите пункт **Просмотреть код**.  
+2.  Right-click **ThisAddIn.cs** or **ThisAddIn.vb** and click **View Code**.  
   
-3.  Добавьте следующий код в класс `ThisAddIn`. Этот код объявляет экземпляры `MyUserControl` и <xref:Microsoft.Office.Tools.CustomTaskPane> как члены класса `ThisAddIn`.  
+3.  Add the following code to the `ThisAddIn` class. This code declares instances of `MyUserControl` and <xref:Microsoft.Office.Tools.CustomTaskPane> as members of the `ThisAddIn` class.  
   
-     [!code-csharp[Trin_TaskPaneMonthCalendar#4](../snippets/csharp/VS_Snippets_OfficeSP/Trin_TaskPaneMonthCalendar/CS/ThisAddIn.cs#4)]
-     [!code-vb[Trin_TaskPaneMonthCalendar#4](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_TaskPaneMonthCalendar/VB/ThisAddIn.vb#4)]  
+     [!code-vb[Trin_TaskPaneMonthCalendar#4](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb#4)]  [!code-csharp[Trin_TaskPaneMonthCalendar#4](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs#4)]  
   
-4.  Замените обработчик событий `ThisAddIn_Startup` следующим кодом. Этот код создает новый объект <xref:Microsoft.Office.Tools.CustomTaskPane>, добавляя  объект `MyUserControl` в коллекцию `CustomTaskPanes`. Код также отображает область задач.  
+4.  Replace the `ThisAddIn_Startup` event handler with the following code. This code creates a new <xref:Microsoft.Office.Tools.CustomTaskPane> by adding the `MyUserControl` object to the `CustomTaskPanes` collection. The code also displays the task pane.  
   
-     [!code-csharp[Trin_TaskPaneMonthCalendar#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_TaskPaneMonthCalendar/CS/ThisAddIn.cs#5)]
-     [!code-vb[Trin_TaskPaneMonthCalendar#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_TaskPaneMonthCalendar/VB/ThisAddIn.vb#5)]  
+     [!code-vb[Trin_TaskPaneMonthCalendar#5](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb#5)]  [!code-csharp[Trin_TaskPaneMonthCalendar#5](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs#5)]  
   
-## Тестирование надстройки  
- При запуске проекта открывается приложение PowerPoint и надстройка отображает настраиваемую область задач. Чтобы протестировать код, щелкните элемент управления <xref:System.Windows.Forms.MonthCalendar>.  
+## <a name="testing-the-add-in"></a>Testing the Add-In  
+ When you run the project, PowerPoint opens and the VSTO Add-in displays the custom task pane. Click the <xref:System.Windows.Forms.MonthCalendar> control to test the code.  
   
-#### Для тестирования надстройки VSTO выполните следующие действия.  
+#### <a name="to-test-your-vsto-add-in"></a>To test your VSTO Add-in  
   
-1.  Нажмите клавишу F5 для запуска проекта.  
+1.  Press F5 to run your project.  
   
-2.  Убедитесь в том, что настраиваемая область задач видна.  
+2.  Confirm that the custom task pane is visible.  
   
-3.  Щелкните дату в элементе управления <xref:System.Windows.Forms.MonthCalendar> в области задач.  
+3.  Click a date in the <xref:System.Windows.Forms.MonthCalendar> control on the task pane.  
   
-     Дата вставляется на первом слайде активной презентации.  
+     The date is inserted into the first slide in the active presentation.  
   
-## Следующие действия  
- Дополнительные сведения о создании настраиваемых областей задач см. в следующих разделах:  
+## <a name="next-steps"></a>Next Steps  
+ You can learn more about how to create custom task panes from these topics:  
   
--   Создание настраиваемой области задач в надстройке VSTO для другого приложения. Дополнительные сведения о приложениях, поддерживающих настраиваемые области задач, см. в разделе [Настраиваемые области задач](../vsto/custom-task-panes.md).  
+-   Create a custom task pane in an VSTO Add-in for a different application. For more information about the applications that support custom task panes, see [Custom Task Panes](../vsto/custom-task-panes.md).  
   
--   Создание кнопки ленты, которая может использоваться для скрытия или отображения настраиваемой области задач. Дополнительные сведения см. в разделе [Пошаговое руководство. Синхронизация настраиваемой области задач с кнопкой на ленте](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
+-   Create a Ribbon button that can be used to hide or display a custom task pane. For more information, see [Walkthrough: Synchronizing a Custom Task Pane with a Ribbon Button](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
   
--   Создание настраиваемой области задач для каждого сообщения электронной почты, открываемого в Outlook. Для получения дополнительной информации см. [Пошаговое руководство. Отображение в Outlook настраиваемых областей задач с сообщениями электронной почты](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
+-   Create a custom task pane for every e-mail message that is opened in Outlook. For more information, see [Walkthrough: Displaying Custom Task Panes with E-Mail Messages in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
   
-## См. также  
- [Настраиваемые области задач](../vsto/custom-task-panes.md)   
- [Практическое руководство. Добавление настраиваемой панели задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [Пошаговое руководство. Синхронизация настраиваемой области задач с кнопкой на ленте](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
- [Пошаговое руководство. Отображение в Outlook настраиваемых областей задач с сообщениями электронной почты](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
+## <a name="see-also"></a>See Also  
+ [Custom Task Panes](../vsto/custom-task-panes.md)   
+ [How to: Add a Custom Task Pane to an Application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [Walkthrough: Synchronizing a Custom Task Pane with a Ribbon Button](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
+ [Walkthrough: Displaying Custom Task Panes with E-Mail Messages in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
   
   

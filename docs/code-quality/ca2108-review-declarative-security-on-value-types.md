@@ -1,64 +1,80 @@
 ---
-title: "CA2108: проверьте объявляемые параметры безопасности типов значений | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ReviewDeclarativeSecurityOnValueTypes"
-  - "CA2108"
-helpviewer_keywords: 
-  - "CA2108"
-  - "ReviewDeclarativeSecurityOnValueTypes"
+title: 'CA2108: Review declarative security on value types | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- ReviewDeclarativeSecurityOnValueTypes
+- CA2108
+helpviewer_keywords:
+- ReviewDeclarativeSecurityOnValueTypes
+- CA2108
 ms.assetid: d62bffdd-3826-4d52-a708-1c646c5d48c2
 caps.latest.revision: 16
-caps.handback.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA2108: проверьте объявляемые параметры безопасности типов значений
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: a4aa6fa02329c6d82800f3a45f8002bf8a4f10e7
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108: Review declarative security on value types
 |||  
 |-|-|  
 |TypeName|ReviewDeclarativeSecurityOnValueTypes|  
 |CheckId|CA2108|  
-|Категория|Microsoft.Security|  
-|Критическое изменение|Не критическое|  
+|Category|Microsoft.Security|  
+|Breaking Change|Non Breaking|  
   
-## Причина  
- Открытый или защищенный тип значения защищен проверкой [Данные и модели](../Topic/Data%20and%20Modeling%20in%20the%20.NET%20Framework.md) или [Link Demands](../Topic/Link%20Demands.md).  
+## <a name="cause"></a>Cause  
+ A public or protected value type is secured by a [Data and Modeling](/dotnet/framework/data/index) or [Link Demands](/dotnet/framework/misc/link-demands).  
   
-## Описание правила  
- Выделение памяти для типов значения и их инициализация производится конструкторами этих типов до выполнения других конструкторов.  Если тип значения защищен проверкой Demand или LinkDemand и вызывающий объект не имеет разрешений, которые удовлетворяют проверке безопасности, возникает сбой любого конструктора, отличного от конструктора по умолчанию, и создается исключение безопасности.  Память, выделенная типу значения, не освобождается; этот тип остается в состоянии, установленном его конструктором по умолчанию.  Не следует предполагать, что вызывающий объект, который передает экземпляр типа значения, имеет разрешение на создание этого экземпляра или доступ к нему.  
+## <a name="rule-description"></a>Rule Description  
+ Value types are allocated and initialized by their default constructors before other constructors execute. If a value type is secured by a Demand or LinkDemand, and the caller does not have permissions that satisfy the security check, any constructor other than the default will fail, and a security exception will be thrown. The value type is not deallocated; it is left in the state set by its default constructor. Do not assume that a caller that passes an instance of the value type has permission to create or access the instance.  
   
-## Устранение нарушений  
- Нарушение данного правила можно устранить только в том случае, если удалить проверку безопасности из типа и использовать вместо нее проверки безопасности на уровне методов.  Обратите внимание, что данный способ устранения нарушения не запрещает вызывающим объектам, не обладающим соответствующими разрешениями, получать экземпляры типа значения.  Необходимо убедиться, что экземпляр типа значения в своем состоянии по умолчанию не предоставляет доступ к конфиденциальной информации и его нельзя использовать в злонамеренных целях.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ You cannot fix a violation of this rule unless you remove the security check from the type, and use method level security checks in its place. Note that fixing the violation in this manner will not prevent callers with inadequate permissions from obtaining instances of the value type. You must ensure that an instance of the value type, in its default state, does not expose sensitive information, and cannot be used in a harmful manner.  
   
-## Отключение предупреждений  
- Предупреждения о нарушении данного правила можно отключать в том случае, если любой вызывающий объект может получать экземпляры типа значения в его состоянии по умолчанию без создания угроз безопасности.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ You can suppress a warning from this rule if any caller can obtain instances of the value type in its default state without posing a threat to security.  
   
-## Пример  
- В следующем примере показана библиотека, содержащая тип значения, который нарушает данное правило.  Обратите внимание на тип `StructureManager`, который предполагает, что вызывающий объект, передающий экземпляр типа значения, имеет разрешение на создание этого экземпляра или доступ к нему.  
+## <a name="example"></a>Example  
+ The following example shows a library containing a value type that violates this rule. Note that the `StructureManager` type assumes that a caller that passes an instance of the value type has permission to create or access the instance.  
   
- [!code-cs[FxCop.Security.DemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_1.cs)]  
+ [!code-csharp[FxCop.Security.DemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_1.cs)]  
   
-## Пример  
- В следующем приложении демонстрируется уязвимость библиотеки.  
+## <a name="example"></a>Example  
+ The following application demonstrates the library's weakness.  
   
- [!code-cs[FxCop.Security.TestDemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_2.cs)]  
+ [!code-csharp[FxCop.Security.TestDemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_2.cs)]  
   
- В результате выполнения примера получается следующий результат:  
+ This example produces the following output.  
   
-  **Пользовательский конструктор структуры: Сбой при запросе.**  
-**Новые значения SecuredTypeStructure 100 100**  
-**Новые значения SecuredTypeStructure 200 200**   
-## См. также  
- [Link Demands](../Topic/Link%20Demands.md)   
- [Данные и модели](../Topic/Data%20and%20Modeling%20in%20the%20.NET%20Framework.md)
+ **Structure custom constructor: Request failed.**  
+**New values SecuredTypeStructure 100 100**  
+**New values SecuredTypeStructure 200 200**   
+## <a name="see-also"></a>See Also  
+ [Link Demands](/dotnet/framework/misc/link-demands)   
+ [Data and Modeling](/dotnet/framework/data/index)

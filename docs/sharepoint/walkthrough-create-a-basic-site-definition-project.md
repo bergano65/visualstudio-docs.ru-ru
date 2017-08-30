@@ -1,102 +1,107 @@
 ---
-title: "Пошаговое руководство. Создание базового проекта определения сайта"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Разработка приложений SharePoint в Visual Studio, определения сайтов"
-  - "определения сайтов [разработка приложений SharePoint в Visual Studio]"
+title: 'Walkthrough: Create a Basic Site Definition Project | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, site definitions
+- site definitions [SharePoint development in Visual Studio]
 ms.assetid: b0df5b0e-5fa0-43d8-a339-6d92f1276764
 caps.latest.revision: 35
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 34
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: babd72dd748f07020a4480d0e97f7d449479e541
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Создание базового проекта определения сайта
-  В этом пошаговом руководстве демонстрируется создание простейшего определения сайта, содержащего визуальную веб\-часть с некоторыми элементами управления.  Для простоты примера создаваемая визуальная веб\-часть содержит лишь несколько элементов управления.  Впрочем, можно создавать более сложные определения сайтов SharePoint с обширными функциональными возможностями.  
+# <a name="walkthrough-create-a-basic-site-definition-project"></a>Walkthrough: Create a Basic Site Definition Project
+  This walkthrough shows you how to create a basic site definition that contains a visual Web part with some controls on it. For the sake of clarity, the visual Web part that you create has only a few controls. However, you can create more sophisticated SharePoint site definitions that include more functionality.  
   
- В этом пошаговом руководстве показано выполнение следующих задач.  
+ This walkthrough demonstrates the following tasks:  
   
--   Создание определения сайта с помощью шаблона проекта [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+-   Creating a site definition by using the [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] project template.  
   
--   Создание сайта SharePoint с помощью определения сайта в SharePoint.  
+-   Creating a SharePoint site by using a site definition in SharePoint.  
   
--   Добавление визуальной веб\-части в решение.  
+-   Adding a visual Web part to the solution.  
   
--   Настройка страницы сайта default.aspx за счет добавления визуальной веб\-части.  
+-   Customizing the site's default.aspx page by adding the new visual Web part to it.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
--   Поддерживаемые выпуски Microsoft Windows и SharePoint.  Дополнительные сведения см. в разделе "Требования к разработке решений SharePoint".  
+-   Supported editions of Microsoft Windows and SharePoint. For more information, see Requirements for Developing SharePoint Solutions.  
   
 -   Visual Studio.  
   
-## Создание решения определения сайта  
- Сначала необходимо создать проект определения сайта в среде [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+## <a name="creating-a-site-definition-solution"></a>Creating a Site Definition Solution  
+ First, create the site definition project in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-#### Создание проекта определения сайта  
+#### <a name="to-create-a-site-definition-project"></a>To create a site definition project  
   
-1.  В строке меню **Файл** выберите пункты **Создать**, **Проект**.  Если интерфейс IDE настроен для использования параметров разработки Visual Basic, в меню выберите **Файл**, **Создать проект**.  
+1.  On the menu bar, choose **File**, **New**, **Project**. If your IDE is set to use Visual Basic development settings, on the menu bar, choose **File**, **New Project**.  
   
-     Откроется диалоговое окно **Создание проекта**.  
+     The **New Project** dialog box appears.  
   
-2.  Разверните узел **Visual C \#** или узел **Visual Basic**, разверните узел **SharePoint**, затем выберите узел **2010**.  
+2.  Expand the **Visual C#** node or the **Visual Basic** node, expand the **SharePoint** node, and then choose the **2010** node.  
   
-3.  В списке **Шаблоны** выберите шаблон **Проект SharePoint 2010**.  
+3.  In the **Templates** list, choose the **SharePoint 2010 Project** template.  
   
-4.  В поле **Имя** введите TestSiteDef и нажмите кнопку **ОК**.  
+4.  In the **Name** box, enter **TestSiteDef**, and then choose the **OK** button.  
   
-     Появится окно **Мастер настройки SharePoint**.  
+     The **SharePoint Customization Wizard** appears.  
   
-5.  На странице **Укажите сайт и уровень безопасности для отладки** введите URL\-адрес сайта сервера SharePoint, на котором будет выполняться отладка определения сайта, или примите значение по умолчанию \(http:\/\/*System Name*\/\).  
+5.  On the **Specify the site and security level for debugging** page, enter the URL for the SharePoint site where you want to debug the site definition, or use the default location (http://*System Name*/).  
   
-6.  В разделе **Какова степень доверия для этого решения SharePoint?** выберите **Развернуть как решение фермы**.  
+6.  In the **What is the trust level for this SharePoint solution?** section, choose the **Deploy as a farm solution** option button.  
   
-     Все проекты определений сайтов необходимо развертывать как решения фермы.  Дополнительные сведения о сравнительных особенностях обезвреженных решений и решений фермы см. в разделе [Замечания об обезвреженных решениях](../sharepoint/sandboxed-solution-considerations.md).  
+     All site definition projects must be deployed as farm solutions. For more information about sandboxed solutions versus farm solutions, see [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  Нажмите кнопку **Готово**.  
+7.  Choose the **Finish** button.  
   
-     Проект откроется в **обозревателе решений**.  
+     The project appears in **Solution Explorer**.  
   
-8.  В области **Обозреватель Решений** выберите узел проекта, затем в меню **Проект** выберите **Добавить новый элемент**.  
+8.  In **Solution Explorer**, choose the project node, and then, on the menu bar, choose **Project**, **Add New Item**.  
   
-9. Разверните узел **SharePoint**, расположенный в области **Visual C\#** или **Visual Basic**, и выберите узел **2010**.  
+9. Under either **Visual C#** or **Visual Basic**, expand the **SharePoint** node, and then choose the **2010** node.  
   
-10. В области **Шаблоны** выберите шаблон **Определение сайта** оставьте **Имя** как **SiteDefinition1**, а затем нажмите кнопку **Добавить**.  
+10. In the **Templates** pane, choose the **Site Definition** template, leave the **Name** as **SiteDefinition1**, and then choose the **Add** button.  
   
-## Создайте визуальную веб\-часть  
- Теперь необходимо создать визуальную веб\-часть, отображаемую на главной странице определения сайта.  
+## <a name="create-a-visual-web-part"></a>Create a Visual Web Part  
+ Next, create a visual Web part to appear on the site definition's main page.  
   
-#### Создание визуальной веб\-части  
+#### <a name="to-create-a-visual-web-part"></a>To create a visual Web part  
   
-1.  В **Обозревателе Решений** нажмите кнопку **Показать все файлы**.  
+1.  In **Solution Explorer**, choose the **Show All Files** button.  
   
-2.  Выберите узел проекта **SiteDefinition1** и затем в строке меню выберите **Проект**, **Добавить новый элемент**.  
+2.  Choose the **SiteDefinition1** project node, and then, on the menu bar, choose **Project**, **Add New Item**.  
   
-     Откроется диалоговое окно **Добавление нового элемента**.  
+     The **Add New Item** dialog box appears.  
   
-3.  Разверните узел **Visual C \#** или узел **Visual Basic**, разверните узел **SharePoint**, затем выберите узел **2010**.  
+3.  Expand the **Visual C#** node or the **Visual Basic** node, expand the **SharePoint** node, and then choose the **2010** node.  
   
-4.  В списке шаблонов выберите шаблон **Визуальная веб\-часть**, сохраните имя по умолчанию \(VisualWebPart1\), а затем нажмите кнопку **Добавить**.  
+4.  In the list of templates, choose the **Visual Web Part** template, keep the default name VisualWebPart1, and then choose the **Add** button.  
   
-     Файл будет открыт VisualWebPart1.ascx.  
+     The VisualWebPart1.ascx file opens.  
   
-5.  В конце файла VisualWebPart1.ascx добавьте следующую разметку, чтобы добавить в форму три элемента управления: текстовое поле, кнопку и метку:  
+5.  At the bottom of VisualWebPart1.ascx, add the following markup to add three controls to the form: a text box, a button, and a label:  
   
     ```  
     <table>  
@@ -114,27 +119,26 @@ caps.handback.revision: 34
     </table>  
     ```  
   
-6.  Под файл VisualWebPart1.ascx откройте VisualWebPart1.ascx.cs \(для [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)]\) или VisualWebPart1.ascx.vb \(для [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]\) и добавьте следующий код:  
+6.  Under VisualWebPart1.ascx, open the VisualWebPart1.ascx.cs file (for [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)]) or VisualWebPart1.ascx.vb (for [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) , and then add the following code:  
   
-     [!code-csharp[SP_SimpleSiteDef#1](../snippets/csharp/VS_Snippets_OfficeSP/sp_simplesitedef/cs/testsitedef/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]
-     [!code-vb[SP_SimpleSiteDef#1](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_simplesitedef/vb/testsitedefvb/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]  
+     [!code-vb[SP_SimpleSiteDef#1](../sharepoint/codesnippet/VisualBasic/testsitedefvb/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]  [!code-csharp[SP_SimpleSiteDef#1](../sharepoint/codesnippet/CSharp/testsitedef/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]  
   
-     Этот код добавляет функцию нажатия кнопки веб\-части.  
+     This code adds functionality for the web part's button click.  
   
-## Добавьте визуальную веб\-часть на страницу default.aspx.  
- Теперь необходимо добавить визуальную веб\-часть на страницу определения сайта default.aspx.  
+## <a name="add-the-visual-web-part-to-the-default-aspx-page"></a>Add the Visual Web Part to the Default ASPX Page  
+ Next, add the visual Web part to the site definition's default ASPX page.  
   
-#### Добавление визуальной веб\-части на страницу default.aspx.  
+#### <a name="to-add-a-visual-web-part-to-the-default-aspx-page"></a>To add a visual Web part to the default ASPX page  
   
-1.  Откройте страницу default.aspx и добавьте следующую строку после тега `WebPartPages`:  
+1.  Open the default.aspx page, and then add the following line under the `WebPartPages` tag:  
   
     ```  
     <%@ Register Tagprefix="MyWebPartControls" Namespace="TestSiteDef.VisualWebPart1" Assembly="$SharePoint.Project.AssemblyFullName$" %>  
     ```  
   
-     Эта строка связывает имя MyWebPartControls с веб\-частью и ее кодом.  Параметр *Namespace* соответствует пространству имен, которое используется в файле кода VisualWebPart1.ascx.  
+     This line associates the name MyWebPartControls with the Web part and its code. The *Namespace* parameter matches the namespace that's used in the VisualWebPart1.ascx code file.  
   
-2.  После элемента `</asp:Content>` замените весь раздел `ContentPlaceHolderId="PlaceHolderMain"` и его содержимое следующей разметкой:  
+2.  After the `</asp:Content>` element, replace the entire `ContentPlaceHolderId="PlaceHolderMain"` section and its contents with the following code:  
   
     ```  
     <asp:Content ID="Content1" ContentPlaceHolderId="PlaceHolderMain" runat="server">  
@@ -142,51 +146,51 @@ caps.handback.revision: 34
     </asp:Content>  
     ```  
   
-     Этот код создает ссылку на визуальную веб\-часть, созданную ранее.  
+     This code creates a reference to the visual Web part that you created earlier.  
   
-3.  В области **Обозреватель решений** откройте контекстное меню для узла **SiteDefinition1** и выберите команду **Назначить автозапускаемым элементом**.  
+3.  In **Solution Explorer**, open the shortcut menu for the **SiteDefinition1** node, and then choose **Set as Startup Item**.  
   
-## Развертывание и запуск решения определения сайта  
- Далее, разверните проекта в SharePoint, а затем снова запустите проект.  
+## <a name="deploy-and-run-the-site-definition-solution"></a>Deploy and Run the Site Definition Solution  
+ Next, deploy the project to SharePoint, and then run the project.  
   
-#### Развертывание и запуск определения сайта  
+#### <a name="to-deploy-and-run-the-site-definition"></a>To deploy and run the site definition  
   
--   В строке меню последовательно выберите пункты **Сборка** и **Развертывание TestSiteDef**.  
+-   On the menu bar, choose **Build**, **Deploy TestSiteDef**.  
   
--   Нажмите клавишу F5.  
+-   Choose the F5 key.  
   
-     Visual Studio скомпилирует код, добавит его компоненты, поместит все его файлы в WSP\-файл пакета и развернет этот WSP\-файл на сервере SharePoint.  Затем SharePoint установит файлы и активирует компоненты.  
+     Visual Studio compiles the code, adds its features, packages all of the files into a SharePoint solution (WSP) file, and deploys the WSP file to SharePoint Server. SharePoint then installs the files and then activates the features.  
   
-## Создайте сайт на основе определения сайта  
- Теперь создайте сайт, используя новое определение сайта.  
+## <a name="create-a-site-based-on-the-site-definition"></a>Create a Site Based on the Site Definition  
+ Next, create a site by using the new site definition.  
   
-#### Создание сайта с помощью определения сайта  
+#### <a name="to-create-a-site-by-using-the-site-definition"></a>To create a site by using the site definition  
   
-1.  На сайте SharePoint отобразится страница нового сайта SharePoint.  
+1.  On the SharePoint site, the New SharePoint Site page appears.  
   
-2.  В разделе **Название и описание** укажите My New Site в поле названия и введите описание сайта.  
+2.  In the **Title and Description** section, enter **My New Site** for the title and a description of the site.  
   
-3.  В разделе **Адрес веб\-сайта** введите mynewsite в поле **URL\-имя**.  
+3.  In the **Web Site Address** section, enter **mynewsite** in the **URL name** box.  
   
-4.  В разделе **Шаблон** перейдите на вкладку **Пользовательские разработки SharePoint**.  
+4.  In the **Template** section, choose the **SharePoint Customizations** tab.  
   
-5.  В списке **Выбрать шаблон** выберите **SiteDefinition1**.  
+5.  In the **Select a template** list, choose **SiteDefinition1**.  
   
-6.  Для остальных параметров оставьте значения по умолчанию и нажмите кнопку **Создать**.  
+6.  Leave the other settings at their default values, and then choose the **Create** button.  
   
-     Появится новый сайт.  
+     The new site appears.  
   
-## Протестируйте созданный сайт  
- Теперь необходимо протестировать работу созданного сайта.  
+## <a name="test-the-new-site"></a>Test the New Site  
+ Next, test the new site to verify whether it works correctly.  
   
-#### Тестирование созданного сайта  
+#### <a name="to-test-the-new-site"></a>To test the new site  
   
--   В текстовом поле на странице default.aspx введите любой текст и нажмите кнопку **Измените текст надписи** рядом с текстовым полем.  
+-   On the default ASPX page, enter some text, and then choose the **Change Label Text** button next to the text box.  
   
-     Текст отобразится на метке справа от кнопки.  
+     The text appears in the label on the right side of the button.  
   
-## См. также  
- [Практическое руководство. Создание приемника событий](../sharepoint/how-to-create-an-event-receiver.md)   
- [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [How to: Create an Event Receiver](../sharepoint/how-to-create-an-event-receiver.md)   
+ [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
   
   

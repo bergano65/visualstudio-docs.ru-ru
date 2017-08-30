@@ -1,118 +1,122 @@
 ---
-title: "Пошаговое руководство. Создание контекстного меню для закладок"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Bookmark - элемент управления, события"
-  - "контекстные меню, Word"
-  - "меню, создание в приложениях Office"
-  - "контекстные меню, Word"
+title: 'Walkthrough: Creating Shortcut Menus for Bookmarks | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- context menus, Word
+- Bookmark control, events
+- shortcut menus, Word
+- menus, creating in Office applications
 ms.assetid: 86dbf3ff-ba75-42f9-8df6-abfc19b3cf6b
 caps.latest.revision: 57
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 53
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 2479bc8afdf4f02b586e4631d75fcf884bb2271e
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Создание контекстного меню для закладок
-  Это пошаговое руководство демонстрирует, как создавать контекстные меню для элементов управления <xref:Microsoft.Office.Tools.Word.Bookmark> в настройках на уровне документа для Word.  Когда пользователь щелкает правой кнопкой мыши текст в закладке, появляется контекстное меню, содержащее параметры для форматирования текста.  
+# <a name="walkthrough-creating-shortcut-menus-for-bookmarks"></a>Walkthrough: Creating Shortcut Menus for Bookmarks
+  This walkthrough demonstrates how to create shortcut menus for <xref:Microsoft.Office.Tools.Word.Bookmark> controls in a document-level customization for Word. When a user right-clicks the text in a bookmark, a shortcut menu appears and gives the user options for formatting the text.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- В данном пошаговом руководстве рассмотрены следующие задачи:  
+ This walkthrough illustrates the following tasks:  
   
--   [Создание проекта](#BKMK_CreateProject).  
+-   [Creating the Project](#BKMK_CreateProject).  
   
--   [Добавление текста и закладок в документ](#BKMK_addtextandbookmarks).  
+-   [Adding Text and Bookmarks to the Document](#BKMK_addtextandbookmarks).  
   
--   [Добавление команды в контекстное меню](#BKMK_AddCmndsShortMenu).  
+-   [Adding Commands to a Shortcut Menu](#BKMK_AddCmndsShortMenu).  
   
--   [Форматирование текста в закладке](#BKMK_formattextbkmk).  
+-   [Format the Text in the Bookmark](#BKMK_formattextbkmk).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] или [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] or [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]  
   
-##  <a name="BKMK_CreateProject"></a> Создание проекта  
- Сначала следует создать проект документа Word в Visual Studio.  
+##  <a name="BKMK_CreateProject"></a> Creating the Project  
+ The first step is to create a Word document project in Visual Studio.  
   
-#### Создание нового проекта  
+#### <a name="to-create-a-new-project"></a>To create a new project  
   
--   Создайте проект документа Word с именем "Мое контекстное меню закладок".  Выберите в мастере **Создать новый документ**.  Для получения дополнительной информации см. [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+-   Create a Word document project that has the name **My Bookmark Shortcut Menu**. In the wizard, select **Create a new document**. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio откроет новый документ Word в режиме конструктора и добавит проект **Мое контекстное меню закладок** в **Обозреватель решений**.  
+     Visual Studio opens the new Word document in the designer and adds the **My Bookmark Shortcut Menu** project to **Solution Explorer**.  
   
-##  <a name="BKMK_addtextandbookmarks"></a> Добавление текста и закладок в документ  
- Добавьте текст в документ, а затем добавьте 2 перекрывающиеся закладки.  
+##  <a name="BKMK_addtextandbookmarks"></a> Adding Text and Bookmarks to the Document  
+ Add some text to your document and then add two overlapping bookmarks.  
   
-#### Добавление текста в документ  
+#### <a name="to-add-text-to-your-document"></a>To add text to your document  
   
--   В документе, который отображается в конструкторе проекта, введите следующий текст.  
+-   In the document that appears in the designer of your project, type the following text.  
   
-     Это пример создания контекстного меню, появляющегося при щелчке правой кнопкой мыши текста закладки.  
+     **This is an example of creating a shortcut menu when you right-click the text in a bookmark.**  
   
-#### Добавление элемента управления "Закладка" в документ  
+#### <a name="to-add-a-bookmark-control-to-your-document"></a>To add a Bookmark control to your document  
   
-1.  В **Панель элементов**, на вкладке **Элементы управления Word** и перетащите элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark> в документе.  
+1.  In the **Toolbox**, from the **Word Controls** tab, drag a <xref:Microsoft.Office.Tools.Word.Bookmark> control to your document.  
   
-     Откроется диалоговое окно **Добавление элемента управления "Закладка"**.  
+     The **Add Bookmark Control** dialog box appears.  
   
-2.  Выделите слово «создания контекстного меню, если щелкнуть правой кнопкой мыши текст», а затем щелкните **ОК**.  
+2.  Select the words "creating a shortcut menu when you right-click the text", and then click **OK**.  
   
-     В документ добавляется `bookmark1`.  
+     `bookmark1` is added to the document.  
   
-3.  Добавьте другой элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark> к ключевым словам «щелкните правой кнопкой мыши текст в закладке».  
+3.  Add another <xref:Microsoft.Office.Tools.Word.Bookmark> control to the words "right-click the text in a bookmark".  
   
-     В документ добавляется `bookmark2`.  
+     `bookmark2` is added to the document.  
   
     > [!NOTE]  
-    >  Ключевые слова «щелкните правой кнопкой мыши текст» как `bookmark1`, так и в `bookmark2`.  
+    >  The words "right-click the text" are in both `bookmark1` and `bookmark2`.  
   
- При добавлении закладки к документу во время разработки создается элемент управления <xref:Microsoft.Office.Tools.Word.Bookmark>.  Можно запрограммировать несколько событий в закладке.  Можно записать код в событие <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> закладки, чтобы при нажатии пользователем правой кнопкой мыши текста в закладке появлялось контекстное меню.  
+ When you add a bookmark to a document at design time, a <xref:Microsoft.Office.Tools.Word.Bookmark> control is created. You can program against several events of the bookmark. You can write code in the <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> event of the bookmark so that when the user right-clicks the text in the bookmark, a shortcut menu appears.  
   
-##  <a name="BKMK_AddCmndsShortMenu"></a> Добавление команды в контекстное меню  
- Добавьте кнопки в контекстное меню, которое открывается, если щелкнуть правой кнопкой мыши документ.  
+##  <a name="BKMK_AddCmndsShortMenu"></a> Adding Commands to a Shortcut Menu  
+ Add buttons to the shortcut menu that appears when you right-click the document.  
   
-#### Добавление команды в контекстное меню  
+#### <a name="to-add-commands-to-a-shortcut-menu"></a>To add commands to a shortcut menu  
   
-1.  Добавьте элемент **Элемент** в проект.  Для получения дополнительной информации см. [Практическое руководство. Работа с настройкой ленты](../vsto/how-to-get-started-customizing-the-ribbon.md).  
+1.  Add a **Ribbon XML** item to the project. For more information, see [How to: Get Started Customizing the Ribbon](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
-2.  В поле **Обозреватель решений** введите select **ThisDocument.cs** или **ThisDocument.vb**.  
+2.  In **Solution Explorer**, select **ThisDocument.cs** or **ThisDocument.vb**.  
   
-3.  В строке меню выберите **Вид**, **Код**.  
+3.  On the menu bar, choose **View**, **Code**.  
   
-     Файл класса **ThisDocument** будет открыт в редакторе кода.  
+     The **ThisDocument** class file opens in the Code Editor.  
   
-4.  Добавьте следующий код к классу **ThisDocument**.  Этот код переопределяет метод CreateRibbonExtensibilityObject и возвращает класс XML\-ленты приложению Office.  
+4.  Add the following code to the **ThisDocument** class. This code overrides the CreateRibbonExtensibilityObject method and returns the Ribbon XML class to the Office application.  
   
-     [!code-csharp[Trin_Word_Document_Menus#1](../snippets/csharp/VS_Snippets_OfficeSP/trin_word_document_menus/cs/thisdocument.cs#1)]
-     [!code-vb[Trin_Word_Document_Menus#1](../snippets/visualbasic/VS_Snippets_OfficeSP/trin_word_document_menus/vb/thisdocument.vb#1)]  
+     [!code-csharp[Trin_Word_Document_Menus#1](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#1)]  [!code-vb[Trin_Word_Document_Menus#1](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#1)]  
   
-5.  В **Обозреватель решений** выберите файл элемента.  По умолчанию файл имеет имя элемента Ribbon1.xml.  
+5.  In **Solution Explorer**, select the Ribbon XML file. By default, the Ribbon XML file is named Ribbon1.xml.  
   
-6.  В строке меню выберите **Вид**, **Код**.  
+6.  On the menu bar, choose **View**, **Code**.  
   
-     Xml\-файл ленты будет открыт в редакторе кода.  
+     The Ribbon xml file opens in the Code Editor.  
   
-7.  В редакторе кода замените содержимое файла элемента следующим кодом.  
+7.  In the Code Editor, replace the contents of the Ribbon XML file with the following code.  
   
     ```  
-  
+    <?xml version="1.0" encoding="UTF-8"?>  
     <customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">  
       <contextMenus>  
         <contextMenu idMso="ContextMenuText">  
@@ -125,80 +129,76 @@ caps.handback.revision: 53
     </customUI>  
     ```  
   
-     Этот код добавляет 2 кнопки в контекстное меню, которое открывается, если щелкнуть правой кнопкой мыши документ.  
+     This code adds two buttons to the shortcut menu that appears when you right-click the document.  
   
-8.  Правой кнопкой мыши щелкните `ThisDocument` в **Обозревателе решений**, а затем нажмите **Просмотреть код**.  
+8.  In **Solution Explorer**, right-click `ThisDocument`, and then click **View Code**.  
   
-9. Объявите следующие переменные и переменные закладки на уровне класса.  
+9. Declare the following variables and a bookmark variable at the class level.  
   
-     [!code-csharp[Trin_Word_Document_Menus#2](../snippets/csharp/VS_Snippets_OfficeSP/trin_word_document_menus/cs/thisdocument.cs#2)]
-     [!code-vb[Trin_Word_Document_Menus#2](../snippets/visualbasic/VS_Snippets_OfficeSP/trin_word_document_menus/vb/thisdocument.vb#2)]  
+     [!code-csharp[Trin_Word_Document_Menus#2](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#2)]   [!code-vb[Trin_Word_Document_Menus#2](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#2)]  
   
-10. В **Обозреватель решений** выберите файл кода ленты.  По умолчанию файл кода ленты называется **Ribbon1.cs** или **Ribbon1.vb**.  
+10. In **Solution Explorer**, select the Ribbon code file. By default, the Ribbon code file is named **Ribbon1.cs** or **Ribbon1.vb**.  
   
-11. В строке меню выберите **Вид**, **Код**.  
+11. On the menu bar, choose **View**, **Code**.  
   
-     В редакторе кода открывается файл кода ленты.  
+     The Ribbon code file opens in the Code Editor.  
   
-12. В файле кода ленты, добавьте следующий метод.  Это — метод обратного вызова для кнопок 2, добавленных в контекстное меню документа.  Этот метод определяет, отображаются ли эти кнопки в контекстное меню.  Полужирный курсив и кнопки отображаются только при щелчке правой кнопкой мыши текст в пределах закладки.  
+12. In the Ribbon code file, add the following method. This is a callback method for the two buttons that you have added to the shortcut menu of the document. This method determines whether these buttons appear in the shortcut menu. The bold and italic buttons appear only if you right-click text within the bookmark.  
   
-     [!code-csharp[Trin_Word_Document_Menus#5](../snippets/csharp/VS_Snippets_OfficeSP/trin_word_document_menus/cs/ribbon1.cs#5)]
-     [!code-vb[Trin_Word_Document_Menus#5](../snippets/visualbasic/VS_Snippets_OfficeSP/trin_word_document_menus/vb/ribbon1.vb#5)]  
+     [!code-csharp[Trin_Word_Document_Menus#5](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#5)]  [!code-vb[Trin_Word_Document_Menus#5](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#5)]  
   
-##  <a name="BKMK_formattextbkmk"></a> Форматирование текста в закладке  
+##  <a name="BKMK_formattextbkmk"></a> Format the Text in the Bookmark  
   
-#### Форматирование текста в закладке  
+#### <a name="to-format-the-text-in-the-bookmark"></a>To format the text in the bookmark  
   
-1.  В файле кода ленты, добавьте обработчик событий `ButtonClick`, чтобы применить форматирование к закладке.  
+1.  In the Ribbon code file, add a `ButtonClick` event handler to apply formatting to the bookmark.  
   
-     [!code-csharp[Trin_Word_Document_Menus#6](../snippets/csharp/VS_Snippets_OfficeSP/trin_word_document_menus/cs/ribbon1.cs#6)]
-     [!code-vb[Trin_Word_Document_Menus#6](../snippets/visualbasic/VS_Snippets_OfficeSP/trin_word_document_menus/vb/ribbon1.vb#6)]  
+     [!code-csharp[Trin_Word_Document_Menus#6](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#6)]  [!code-vb[Trin_Word_Document_Menus#6](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#6)]  
   
-2.  выберите **Обозреватель решений**, **ThisDocument.cs** или **ThisDocument.vb**.  
+2.  **Solution Explorer**, select **ThisDocument.cs** or **ThisDocument.vb**.  
   
-3.  В строке меню выберите **Вид**, **Код**.  
+3.  On the menu bar, choose **View**, **Code**.  
   
-     Файл класса **ThisDocument** будет открыт в редакторе кода.  
+     The **ThisDocument** class file opens in the Code Editor.  
   
-4.  Добавьте следующий код к классу **ThisDocument**.  
+4.  Add the following code to the **ThisDocument** class.  
   
-     [!code-csharp[Trin_Word_Document_Menus#3](../snippets/csharp/VS_Snippets_OfficeSP/trin_word_document_menus/cs/thisdocument.cs#3)]
-     [!code-vb[Trin_Word_Document_Menus#3](../snippets/visualbasic/VS_Snippets_OfficeSP/trin_word_document_menus/vb/thisdocument.vb#3)]  
+     [!code-csharp[Trin_Word_Document_Menus#3](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#3)]  [!code-vb[Trin_Word_Document_Menus#3](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#3)]  
   
     > [!NOTE]  
-    >  Для работы с перекрывающимися закладками необходимо записать код.   В противном случае по умолчанию код будет вызван для всех выбранных закладок.  
+    >  You must write code to handle the case where bookmarks overlap. If you do not, by default, the code will be called for all bookmarks in the selection.  
   
-5.  В C\# также необходимо добавить обработчики событий для элементов управления закладки в событие <xref:Microsoft.Office.Tools.Word.Document.Startup>.   Дополнительные сведения о создании обработчиков событий см. в разделе [Практическое руководство. Создание обработчиков событий в проектах Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+5.  In C#, you must add event handlers for the bookmark controls to the <xref:Microsoft.Office.Tools.Word.Document.Startup> event. For information about creating event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
-     [!code-csharp[Trin_Word_Document_Menus#4](../snippets/csharp/VS_Snippets_OfficeSP/trin_word_document_menus/cs/thisdocument.cs#4)]  
+     [!code-csharp[Trin_Word_Document_Menus#4](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#4)]  
   
-## Тестирование приложения  
- Запуск документа, чтобы убедиться, что полужирный курсив и пункты меню отображаются в контекстном меню, если щелкнуть правой кнопкой мыши текст в закладке, текст и правильно оформлен.  
+## <a name="testing-the-application"></a>Testing the Application  
+ Test your document to verify that the bold and italic menu items appear in the shortcut menu when you right-click text in a bookmark and that the text is properly formatted.  
   
-#### Проверка документа  
+#### <a name="to-test-your-document"></a>To test your document  
   
-1.  Нажмите клавишу F5 для запуска проекта.  
+1.  Press F5 to run your project.  
   
-2.  Щелкните правой кнопкой мыши в первой закладке и выберите **Полужирный**.  
+2.  Right-click in the first bookmark, and then click **Bold**.  
   
-3.  Убедитесь в том, чтобы весь текст в `bookmark1` был отформатирован полужирным шрифтом.  
+3.  Verify that all of the text in `bookmark1` is formatted as bold.  
   
-4.  Щелкните правой кнопкой мыши текст в том месте, где закладки перекрывают друг друга, и выберите **Курсив**.  
+4.  Right-click the text where the bookmarks overlap, and then click **Italic**.  
   
-5.  Убедитесь в том, что курсивом отображается весь текст в `bookmark2` и только часть текста в `bookmark1`, перекрывающей `bookmark2`.  
+5.  Verify that all of the text in `bookmark2` is italic, and only the part of the text in `bookmark1` that overlaps `bookmark2` is italic.  
   
-## Следующие действия  
- Далее будут рассмотрены следующие задачи:  
+## <a name="next-steps"></a>Next Steps  
+ Here are some tasks that might come next:  
   
--   Написание кода для реагирования на события элементов управления ведущего приложения в Excel.  Для получения дополнительной информации см. [Пошаговое руководство. Программирование реакции на события элементов управления NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
+-   Write code to respond to events of host controls in Excel. For more information, see [Walkthrough: Programming Against Events of a NamedRange Control](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
   
--   Использование флажка для изменения форматирования в закладке.  Для получения дополнительной информации см. [Пошаговое руководство. Изменение форматирования документа с использованием элементов управления CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
+-   Use a check box to change formatting in a bookmark. For more information, see [Walkthrough: Changing Document Formatting Using CheckBox Controls](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
   
-## См. также  
- [Пошаговые руководства с использованием Word](../vsto/walkthroughs-using-word.md)   
- [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)   
- [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)   
- [Элементы управления Bookmark](../vsto/bookmark-control.md)   
- [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Walkthroughs Using Word](../vsto/walkthroughs-using-word.md)   
+ [Office UI Customization](../vsto/office-ui-customization.md)   
+ [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)   
+ [Bookmark Control](../vsto/bookmark-control.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
   
   

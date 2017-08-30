@@ -1,66 +1,70 @@
 ---
-title: "Практическое руководство. Изменение размера внутри ячеек листа Excel"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "элементы управления [разработка решений Office в Visual Studio], изменение размеров"
-  - "управляемые элементы управления, изменение размеров"
-  - "Windows Forms - элементы управления [разработка решений Office в Visual Studio], изменение размеров"
-  - "листы, изменение размеров"
+title: 'How to: Resize Controls Within Worksheet Cells | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- controls [Office development in Visual Studio], resizing
+- managed controls, resizing
+- worksheets, resizing
+- Windows Forms controls [Office development in Visual Studio], resizing
 ms.assetid: 1439db4a-e64b-4381-a6e6-605ba94db3de
 caps.latest.revision: 33
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 32
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 03a56a89259bd1f50be85ea244c97667bad906e1
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Практическое руководство. Изменение размера внутри ячеек листа Excel
-  При изменении размеров столбцов или строк в листе любые размер элементов управления ведущего приложения, содержащиеся в ячейках, автоматически изменяется до высоты или ширины измененной ячейки.  Размер элементов управления Windows Forms по умолчанию не изменяется.  
+# <a name="how-to-resize-controls-within-worksheet-cells"></a>How to: Resize Controls Within Worksheet Cells
+  When you resize columns or rows on a worksheet, any host controls contained in the cells automatically resize to the height or width of the cell that was resized. Windows Forms controls do not resize automatically by default.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- При добавлении элементов управления во время разработки необходимо задать параметры расположения для каждого элемента.  
+ If you add the controls at design time, you must set positioning options for each control.  
   
- При добавлении элемента управления Windows Forms программными средствами с указанием диапазона, размер элемента управления в ячейке автоматически изменяется в пределах указанного диапазона.  Дополнительные сведения см. в разделе [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ If you add a Windows Forms control programmatically and supply a range argument, the control automatically resizes when a cell within the range is resized. For more information, see [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
-## Изменение размеров элементов управления во время разработки  
+## <a name="resizing-controls-at-design-time"></a>Resizing Controls at Design Time  
   
-#### Чтобы изменить размеры элементов управления во время разработки, необходимо выполнить следующие действия.  
+#### <a name="to-make-controls-resize-with-cells-at-design-time"></a>To make controls resize with cells at design time  
   
-1.  Перетащите элемент управления Windows Forms с **панели элементов** на лист.  
+1.  From the **Toolbox**, drag a Windows Forms control to a worksheet.  
   
-2.  Щелкните правой кнопкой мыши элемент управления и выберите пункт **Формат элемента управления**.  
+2.  Right-click the control, and then click **Format Control**.  
   
-3.  В диалоговом окне **Формат элемента управления** щелкните вкладку **Свойства**.  
+3.  In the **Format Control** dialog box, click the **Properties** tab.  
   
-4.  В области **Расположение объекта** выберите параметр **Перемещать и изменять размер с ячейкой**, а затем нажмите кнопку **ОК**.  
+4.  Under **Object Positioning**, select the **Move and size with cells** option, and then click **OK**.  
   
-     После изменения размера ячейки, содержащей элемент управления, размер элемент будет изменен автоматически в соответствии с размером ячейки.  
+     When you resize the cell that contains the control, the control resizes to fit the cell.  
   
-## Изменение размеров элементов управления во время выполнения  
- При добавлении элемента управления Windows Forms во время выполнения с указанием диапазона <xref:Microsoft.Office.Interop.Excel.Range> в качестве расположения элемента, размер элемента управления автоматически изменяется при изменении ячейки, содержащей элемент.  
+## <a name="resizing-controls-at-run-time"></a>Resizing Controls at Run Time  
+ If you add a Windows Forms control at run time and pass in a <xref:Microsoft.Office.Interop.Excel.Range> as the location for the control, the control will automatically resize when the worksheet cell that contains the range is resized.  
   
-#### Чтобы изменить размеры элементов управления во время выполнения, необходимо выполнить следующие действия.  
+#### <a name="to-make-controls-resize-with-cells-at-run-time"></a>To make controls resize with cells at run time  
   
-1.  Добавить элемент управления в диапазон А1.  
+1.  Add a control to range A1.  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsExcel/CS/Sheet1.cs#5)]
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsExcel/VB/Sheet1.vb#5)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#5)]  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#5)]  
   
-     После изменения размера ячейки, содержащей элемент управления, размер элемент будет изменен автоматически в соответствии с размером ячейки.  
+     When you resize the cell that contains the control, the control resizes to fit the cell.  
   
-## Сброс значений расположения элементов управления  
- Можно сбросить значения расположения и параметров изменения размеров элементов управления, присвоив свойству `Placement` одно из следующих значений <xref:Microsoft.Office.Interop.Excel.XlPlacement>:  
+## <a name="resetting-control-placement"></a>Resetting Control Placement  
+ You can reset the placement and resizing of the control by setting the `Placement` property to one of the following <xref:Microsoft.Office.Interop.Excel.XlPlacement> values:  
   
 -   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>  
   
@@ -68,18 +72,16 @@ caps.handback.revision: 32
   
 -   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMoveAndSize>  
   
-#### Чтобы элемент управления не изменял размер и не перемещался вместе с ячейкой, выполните следующие действия.  
+#### <a name="to-change-the-behavior-of-a-control-so-that-it-does-not-resize-or-move-with-the-cell"></a>To change the behavior of a control so that it does not resize or move with the cell  
   
-1.  Вызовите свойство размещения элемента управления и присвойте ему значение <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>.  
+1.  Call the placement property of the control and set the value to <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>.  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsExcel/CS/Sheet1.cs#6)]
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsExcel/VB/Sheet1.vb#6)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#6)]  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#6)]  
   
-## См. также  
- [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)   
- [Практическое руководство. Добавление элементов управления Windows Forms в документы Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Практическое руководство. Скрытие элементов управления на листах при печати](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
- [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Ограничения по использованию элементов управления Windows Forms в документах Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  
+## <a name="see-also"></a>See Also  
+ [Controls on Office Documents](../vsto/controls-on-office-documents.md)   
+ [How to: Add Windows Forms Controls to Office Documents](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [How to: Hide Controls on Worksheets when Printing](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
+ [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)   
+ [Limitations of Windows Forms Controls on Office Documents](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   

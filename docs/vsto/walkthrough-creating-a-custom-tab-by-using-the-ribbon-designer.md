@@ -1,174 +1,176 @@
 ---
-title: "Пошаговое руководство. Создание настраиваемой вкладки с помощью конструктора лент"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "панели действий [разработка решений Office в Visual Studio], управление из ленты"
-  - "настраиваемая лента, вкладки"
-  - "настраиваемая вкладка [разработка решений Office в Visual Studio]"
-  - "настройка ленты, вкладки"
-  - "лента [разработка решений Office в Visual Studio], настройка"
-  - "конструктор ленты [разработка решений Office в Visual Studio]"
+title: 'Walkthrough: Creating a Custom Tab by Using the Ribbon Designer | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- actions panes [Office development in Visual Studio], controlling from Ribbon
+- Ribbon [Office development in Visual Studio], customizing
+- Ribbon Designer [Office development in Visual Studio]
+- customizing the Ribbon, tabs
+- custom Ribbon, tabs
+- Custom tab [Office development in Visual Studio]
 ms.assetid: 312865e6-950f-46ab-88de-fe7eb8036bfe
 caps.latest.revision: 68
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 67
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: f3de58256e8c533b7cd092d056c785c7ad6b60b6
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Создание настраиваемой вкладки с помощью конструктора лент
-  Конструктор лент позволяет создать настраиваемую вкладку, а затем добавить и расположить на ней элементы управления.  
+# <a name="walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer"></a>Walkthrough: Creating a Custom Tab by Using the Ribbon Designer
+  By using the Ribbon Designer, you can create a custom tab and then add and position controls on it.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- В данном пошаговом руководстве рассмотрены следующие задачи:  
+ This walkthrough illustrates the following tasks:  
   
--   [Создание панелей действий](#BKMK_CreateActionsPanes).  
+-   [Creating Actions Panes](#BKMK_CreateActionsPanes).  
   
--   [Создание настраиваемой вкладки](#BKMK_CreateCustomTab).  
+-   [Creating a Custom Tab](#BKMK_CreateCustomTab).  
   
--   [Скрытие и отображение панелей действий при помощи кнопок настраиваемой вкладки](#BKMK_HideShowActionsPane).  
+-   [Hiding and Showing Actions Panes by Using Buttons on the Custom Tab](#BKMK_HideShowActionsPane).  
   
 > [!NOTE]  
->  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях.  Это зависит от имеющегося выпуска Visual Studio и используемых параметров.  Дополнительные сведения см. в разделе [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/ru-ru/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
 -   Microsoft Excel  
   
-## Создание проекта книги Excel  
- Этапы использования конструктора лент практически идентичны для всех приложений Office.  В этом примере используется книга Excel.  
+## <a name="creating-an-excel-workbook-project"></a>Creating an Excel Workbook Project  
+ The steps for using the Ribbon Designer are almost identical for all Office applications. This example uses an Excel workbook.  
   
-#### Создание проекта книги Excel  
+#### <a name="to-create-an-excel-workbook-project"></a>To create an Excel workbook project  
   
--   Создайте проект книги Excel с именем MyExcelRibbon.  Дополнительные сведения см. в статье [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+-   Create an Excel workbook project with the name **MyExcelRibbon**. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Новая книга открывается в конструкторе Visual Studio, а проект **MyExcelRibbon** добавляется в **обозреватель решений**.  
+     Visual Studio opens the new workbook in the designer and adds the **MyExcelRibbon** project to **Solution Explorer**.  
   
-##  <a name="BKMK_CreateActionsPanes"></a> Создание панелей действий  
- Добавьте в проект две настраиваемые панели действий.  Позже на настраиваемой вкладке будут добавлены кнопки для скрытия и отображения этих панелей действий.  
+##  <a name="BKMK_CreateActionsPanes"></a> Creating Actions Panes  
+ Add two custom actions panes to the project. You will later add buttons that show and hide these actions panes to the custom tab.  
   
-#### Создание панелей действий  
+#### <a name="to-create-actions-panes"></a>To create actions panes  
   
-1.  В меню **Проект** выберите пункт **Добавить новый элемент**.  
+1.  On the **Project** menu, choose **Add New Item**.  
   
-2.  В диалоговом окне **Добавление нового элемента** выберите **ActionsPaneControl** и нажмите кнопку **Добавить**.  
+2.  In the **Add New Item** dialog box, select **ActionsPaneControl**, and then choose **Add**.  
   
-     В конструкторе открывается файл **ActionsPaneControl1.cs** или **ActionsPaneControl1.vb**.  
+     The **ActionsPaneControl1.cs** or **ActionsPaneControl1.vb** file opens in the designer.  
   
-3.  Добавьте в рабочую область конструктора метку со вкладки **Стандартные элементы управления** в **панели элементов**.  
+3.  From the **Common Controls** tab of the **Toolbox**, add a label to the designer surface.  
   
-4.  В окне **Свойства** присвойте свойству **Text** метки label1 значение «Панель действий 1».  
+4.  In the **Properties** window, set the **Text** property of label1 to **Actions Pane 1**.  
   
-5.  Повторите этапы 1–5, чтобы создать вторую панель действий и метку.  Присвойте свойству **Text** второй метки значение «Панель действий 2».  
+5.  Repeat steps 1 through 5 to create a second actions pane and label. Set the **Text** property of the second label to **Actions Pane 2**.  
   
-##  <a name="BKMK_CreateCustomTab"></a> Создание настраиваемой вкладки  
- Один из принципов проектирования приложений Office состоит в том, что пользователь всегда должен иметь возможность распоряжаться пользовательским интерфейсом приложения Office.  Чтобы обеспечить такую возможность для панелей действий, можно добавить на настраиваемую вкладку ленты кнопки, скрывающие и отображающие каждую панель.  Чтобы создать настраиваемую вкладку, добавьте в проект элемент **Лента \(визуальный конструктор\)**.  Конструктор помогает добавлять и размещать элементы управления, задавать их свойства и обрабатывать связанные с ними события.  
+##  <a name="BKMK_CreateCustomTab"></a> Creating a Custom Tab  
+ One of the Office application design guidelines is that users should always have control of the Office application UI. To add this capability for the actions panes, you can add buttons that show and hide each actions pane from a custom tab on the ribbon. To create a custom tab, add a **Ribbon (Visual Designer)** item to the project. The designer helps you add and position controls, set control properties, and handle control events.  
   
-#### Создание настраиваемой вкладки  
+#### <a name="to-create-a-custom-tab"></a>To create a custom tab  
   
-1.  В меню **Проект** выберите пункт **Добавить новый элемент**.  
+1.  On the **Project** menu, choose **Add New Item**.  
   
-2.  В диалоговом окне **Добавление нового элемента** выберите элемент **Лента \(визуальный конструктор\)**.  
+2.  In the **Add New Item** dialog box, select **Ribbon (Visual Designer)**.  
   
-3.  Измените имя новой ленты на **MyRibbon** и нажмите кнопку **Добавить**.  
+3.  Change the name of the new ribbon to **MyRibbon**, and choose **Add**.  
   
-     В конструкторе лент откроется файл **MyRibbon.cs** или **MyRibbon.vb**; отобразятся вкладка и группа, используемые по умолчанию.  
+     The **MyRibbon.cs** or **MyRibbon.vb** file opens in the Ribbon Designer and displays a default tab and group.  
   
-4.  В конструкторе лент перейдите на вкладку по умолчанию.  
+4.  In the Ribbon Designer, choose the default tab.  
   
-5.  В окне **Свойства**, разверните свойство **ControlId**, затем присвойте свойству **ControlIdType** значение **Настраиваемый**.  
+5.  In the **Properties** window, expand the **ControlId** property, and then set the **ControlIdType** property to **Custom**.  
   
-6.  Задайте для свойства **Метка** значение My Custom Tab.  
+6.  Set the **Label** property to **My Custom Tab**.  
   
-7.  В конструкторе лент выберите группу **group1**.  
+7.  In the Ribbon Designer, choose **group1**.  
   
-8.  В окне **Свойства** присвойте свойству **Label** значение «Диспетчер панелей действий».  
+8.  In the **Properties** window, set **Label** to **Actions Pane Manager**.  
   
-9. Перетащите кнопку с вкладки **Элементы управления ленты Office** в **панели элементов** в группу **group1**.  
+9. From the **Office Ribbon Controls** tab of the **Toolbox**, drag a button onto **group1**.  
   
-10. Выберите **button1**.  
+10. Select **button1**.  
   
-11. В окне **Свойства** присвойте свойству **Label** значение «Отобразить панель действий 1».  
+11. In the **Properties** window, set **Label** to **Show Actions Pane 1**.  
   
-12. Добавьте вторую кнопку в **group1** и присвойте свойству **Label** значение «Отобразить панель действий 2».  
+12. Add a second button to **group1**, and set the **Label** property to **Show Actions Pane 2**.  
   
-13. Перетащите элемент управления **Выключатель** с вкладки **Элементы управления ленты Office** в **панели элементов** в группу **group1**.  
+13. From the **Office Ribbon Controls** tab of the **Toolbox**, drag a **ToggleButton** control onto **group1**.  
   
-14. Присвойте свойству **Label** значение «Скрыть панель действий».  
+14. Set the **Label** property to **Hide Actions Pane**.  
   
-##  <a name="BKMK_HideShowActionsPane"></a> Скрытие и отображение панелей действий при помощи кнопок настраиваемой вкладки  
- Последним этапом является добавление кода, который взаимодействует с пользователем.  Добавьте обработчики событий для событий <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> обеих кнопок и события <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> выключателя.  Добавьте в эти обработчики событий код для скрытия и отображения панелей действий.  
+##  <a name="BKMK_HideShowActionsPane"></a> Hiding and Showing Actions Panes by Using Buttons on the Custom Tab  
+ The last step is to add code that responds to the user. Add event handlers for the <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> events of the two buttons and the <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> event of the toggle button. Add code to these event handlers to enable hiding and showing the actions panes.  
   
-#### Скрытие и отображение панелей действий при помощи кнопок настраиваемой вкладки  
+#### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>To hide and show actions panes by using buttons in the custom tab  
   
-1.  В **обозревателе решений** откройте контекстное меню для файла MyRibbon.cs или MyRibbon.vb и выберите команду **Просмотреть код**.  
+1.  In **Solution Explorer**, open the shortcut menu for MyRibbon.cs or MyRibbon.vb, and then choose **View Code**.  
   
-2.  Добавьте следующий код в начало класса `MyRibbon`.  Данный код создает два объекта панелей действий.  
+2.  Add the following code to the top of the `MyRibbon` class. This code creates two actions pane objects.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab/CS/MyRibbon.cs#1)]
-     [!code-vb[Trin_Ribbon_Custom_Tab#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab/VB/MyRibbon.vb#1)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#1)]  [!code-vb[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#1)]  
   
-3.  Замените метод `MyRibbon_Load` следующим кодом.  Данный код добавляет объекты панелей действий в коллекцию панелей действий <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> и скрывает объекты.  Кроме того, код Visual C\# присоединяет делегаты к нескольким событиям элементов управления ленты.  
+3.  Replace the `MyRibbon_Load` method with the following code. This code adds the actions pane objects to the <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> collection and hides the objects from view. The Visual C# code also attaches delegates to several ribbon control events.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab/CS/MyRibbon.cs#2)]
-     [!code-vb[Trin_Ribbon_Custom_Tab#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab/VB/MyRibbon.vb#2)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#2)]  [!code-vb[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#2)]  
   
-4.  Добавьте следующие три метода обработчиков событий в класс `MyRibbon`.  Эти методы обрабатывают события <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> обеих кнопок и события <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> выключателя.  Обработчики событий button1 и button2 отображают соответствующие панели действий.  Обработчик событий toggleButton1 отображает и скрывает активную панель действий.  
+4.  Add the following three event handler methods to the `MyRibbon` class. These methods handle the <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> events of the two buttons and the <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> event of the toggle button. The event handlers for button1 and button2 show alternate actions panes. The event handler for toggleButton1 shows and hides the active actions pane.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab#3](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab/CS/MyRibbon.cs#3)]
-     [!code-vb[Trin_Ribbon_Custom_Tab#3](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab/VB/MyRibbon.vb#3)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#3)]  [!code-vb[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#3)]  
   
-## Тестирование настраиваемой вкладки  
- При запуске проекта запускается приложение Excel, на ленте появляется вкладка **My Custom Tab**.  Нажимая кнопки на вкладке **My Custom Tab**, можно скрывать и отображать панели действий.  
+## <a name="testing-the-custom-tab"></a>Testing the Custom Tab  
+ When you run the project, Excel starts, and the **My Custom Tab** tab appears on the ribbon. Choose the buttons on **My Custom Tab** to show and hide the actions panes.  
   
-#### Тестирование настраиваемой вкладки  
+#### <a name="to-test-the-custom-tab"></a>To test the custom tab  
   
-1.  Нажмите клавишу F5 для запуска проекта.  
+1.  Press F5 to run your project.  
   
-2.  Перейдите на вкладку **My Custom Tab**.  
+2.  Choose the **My Custom Tab** tab.  
   
-3.  В группе **Диспетчер настраиваемой панели действий** выберите **Отобразить панель действий 1**.  
+3.  In the **Custom Actions Pane Manager** group, choose **Show Actions Pane 1**.  
   
-     Отобразится панель действий с надписью Панель действий 1.  
+     The actions pane appears and displays the label **Actions Pane 1**.  
   
-4.  Выберите **Отобразить панель действий 2**.  
+4.  Choose **Show Actions Pane 2**.  
   
-     Отобразится панель действий с надписью «Панель действий 2».  
+     The actions pane appears and displays the label **Actions Pane 2**.  
   
-5.  Выберите **Скрыть панель действий**.  
+5.  Choose **Hide Actions Pane**.  
   
-     Панели действий будут скрыты.  
+     The actions panes are no longer visible.  
   
-## Следующие действия  
- Дополнительные сведения о настройке пользовательского интерфейса Office см. в следующих разделах:  
+## <a name="next-steps"></a>Next Steps  
+ You can learn more about how to customize the Office UI from these topics:  
   
--   Добавление пользовательского интерфейса на основе контекста к настройкам уровня документа.  Дополнительные сведения см. в разделе [Общие сведения о панели действий](../vsto/actions-pane-overview.md).  
+-   Add context-based UI to any document-level customization. For more information, see [Actions Pane Overview](../vsto/actions-pane-overview.md).  
   
--   Расширение стандартной или пользовательской формы Microsoft Office Outlook.  Дополнительные сведения см. в разделе [Пошаговое руководство. Разработка области формы Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Extend a standard or custom Microsoft Office Outlook form. For more information, see [Walkthrough: Designing an Outlook Form Region](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
-## См. также  
- [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)   
- [Обзор ленты](../vsto/ribbon-overview.md)   
- [Конструктор лент](../vsto/ribbon-designer.md)   
- [Настройка ленты для Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
- [Практическое руководство. Работа с настройкой ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [Практическое руководство. Изменение положения вкладки на ленте](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
- [Практическое руководство. Настройка встроенной вкладки](../vsto/how-to-customize-a-built-in-tab.md)   
- [Практическое руководство. Добавление элементов управления в представление Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Общие сведения об объектной модели ленты](../vsto/ribbon-object-model-overview.md)  
+## <a name="see-also"></a>See Also  
+ [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Ribbon Overview](../vsto/ribbon-overview.md)   
+ [Ribbon Designer](../vsto/ribbon-designer.md)   
+ [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
+ [How to: Get Started Customizing the Ribbon](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [How to: Change the Position of a Tab on the Ribbon](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
+ [How to: Customize a Built-in Tab](../vsto/how-to-customize-a-built-in-tab.md)   
+ [How to: Add Controls to the Backstage View](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [Ribbon Object Model Overview](../vsto/ribbon-object-model-overview.md)  
   
   

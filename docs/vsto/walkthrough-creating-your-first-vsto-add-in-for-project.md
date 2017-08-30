@@ -1,141 +1,145 @@
 ---
-title: "Пошаговое руководство. Создание первой надстройки VSTO для Project"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "надстройки уровня приложения [разработка решений Office в Visual Studio], создание первого проекта"
-  - "разработка решений Office в Visual Studio, создание первого проекта"
-  - "Project [разработка решений Office в Visual Studio], создание первого проекта"
-  - "надстройки [разработка решений Office в Visual Studio], создание первого проекта"
+title: 'Walkthrough: Creating Your First VSTO Add-in for Project | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- application-level add-ins [Office development in Visual Studio], creating your first project
+- Office development in Visual Studio, creating your first project
+- Project [Office development in Visual Studio], creating your first project
+- add-ins [Office development in Visual Studio], creating your first project
 ms.assetid: da2b727e-6db8-4853-bf00-7afe0ef13213
 caps.latest.revision: 28
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 27
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 466f63c2c93b9ada7218469df3a0abe586becd94
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Создание первой надстройки VSTO для Project
-  В этом пошаговом руководстве показано, как создать надстройку VSTO для Microsoft Office Project. Функции, создаваемые в таком решении, доступны для самого приложения независимо от того, какие проекты открыты. Дополнительные сведения см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
+# <a name="walkthrough-creating-your-first-vsto-add-in-for-project"></a>Walkthrough: Creating Your First VSTO Add-in for Project
+  This walkthrough shows you how to create an VSTO Add-in for Microsoft Office Project. The features that you create in this kind of solution are available to the application itself, regardless of which projects are open. For more information, see [Office Solutions Development Overview &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]  
   
- В данном пошаговом руководстве рассмотрены следующие задачи:  
+ This walkthrough illustrates the following tasks:  
   
--   создание проекта надстройки VSTO для Project;  
+-   Creating a Project VSTO Add-in project.  
   
--   написание кода, использующего объектную модель Project для добавления задачи в новый проект;  
+-   Writing code that uses the object model of Project to add a task to a new project.  
   
--   Построение и запуск проекта для тестирования.  
+-   Building and running the project to test it.  
   
--   Удаление завершенного проекта для прекращения автоматического запуска надстройки VSTO на компьютере разработчика.  
+-   Cleaning up the completed project so that the VSTO Add-in no longer runs automatically on your development computer.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Project_15_short](../vsto/includes/project-15-short-md.md)] или [!INCLUDE[Project_14_short](../vsto/includes/project-14-short-md.md)].  
+-   [!INCLUDE[Project_15_short](../vsto/includes/project-15-short-md.md)] or [!INCLUDE[Project_14_short](../vsto/includes/project-14-short-md.md)].  
   
-## Создание проекта  
+## <a name="creating-the-project"></a>Creating the Project  
   
-#### Создание проекта в Visual Studio  
+#### <a name="to-create-a-new-project-in-visual-studio"></a>To create a new project in Visual Studio  
   
-1.  Запустите [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  В меню **Файл** выберите пункт **Создать**, а затем команду **Проект**.  
+2.  On the **File** menu, point to **New**, and then click **Project**.  
   
-3.  В области шаблонов разверните узел **Visual C\#** или **Visual Basic**, а затем узел **Office\/SharePoint**.  
+3.  In the templates pane, expand **Visual C#** or **Visual Basic**, and then expand **Office/SharePoint**.  
   
-4.  В развернутом узле **Office\/SharePoint** выберите узел **Надстройки Office**.  
+4.  Under the expanded **Office/SharePoint** node, select the **Office Add-ins** node.  
   
-5.  В списке шаблонов проекта выберите шаблон **Надстройка Project 2010** или **Надстройка Project 2013**.  
+5.  In the list of project templates, select **Project 2010 Add-in** or **Project 2013 Add-in**.  
   
-6.  В поле **Имя** введите **FirstProjectAddIn**.  
+6.  In the **Name** box, type **FirstProjectAddIn**.  
   
-7.  Нажмите кнопку **ОК**.  
+7.  Click **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] создает проект **FirstProjectAddIn** и открывает файл кода **ThisAddIn** в редакторе.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] creates the **FirstProjectAddIn** project and opens the **ThisAddIn** code file in the editor.  
   
-## Создание кода, добавляющего новую задачу в проект  
- Добавьте код в файл кода ThisAddIn. В этом коде для добавления новой задачи в проект используется объектная модель Project. По умолчанию файл кода ThisAddIn содержит следующий созданный код:  
+## <a name="writing-code-that-adds-a-new-task-to-a-project"></a>Writing Code that Adds a New Task to a Project  
+ Next, add code to the ThisAddIn code file. The new code uses the object model of Project to add a new task to a project. By default, the ThisAddIn code file contains the following generated code:  
   
--   Частичное определение класса `ThisAddIn`. Этот класс предоставляет точку входа для кода и обеспечивает доступ к объектной модели Project. Для получения дополнительной информации см. [Приступая к программированию надстроек VSTO](../vsto/programming-vsto-add-ins.md). Остальная часть класса `ThisAddIn`определяется в скрытом файле кода, изменять который не следует.  
+-   A partial definition of the `ThisAddIn` class. This class provides an entry point for your code and provides access to the object model of Project. For more information, see [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). The remainder of the `ThisAddIn` class is defined in a hidden code file that you should not modify.  
   
--   Обработчики событий `ThisAddIn_Startup` и `ThisAddIn_Shutdown`. Эти обработчики событий вызываются, когда Project загружает и выгружает надстройку VSTO. Их можно использовать для инициализации надстройки VSTO в процессе ее загрузки, а также для освобождения ресурсов, используемых вашей надстройкой VSTO при ее выгрузке. Для получения дополнительной информации см. [События в проектах Office](../vsto/events-in-office-projects.md).  
+-   The `ThisAddIn_Startup` and `ThisAddIn_Shutdown` event handlers. These event handlers are called when Project loads and unloads your VSTO Add-in. Use these event handlers to initialize your VSTO Add-in when it is loaded, and to clean up resources used by your VSTO Add-in when it is unloaded. For more information, see [Events in Office Projects](../vsto/events-in-office-projects.md).  
   
-#### Добавление задачи в новый проект  
+#### <a name="to-add-a-task-to-a-new-project"></a>To add a task to a new project  
   
-1.  В файл кода ThisAddIn добавьте в класс `ThisAddIn` указанный ниже код. В коде определяется обработчик события NewProject класса Microsoft.Office.Interop.MSProject.Application.  
+1.  In the ThisAddIn code file, add the following code to the `ThisAddIn` class. This code defines an event handler for the NewProject event of the Microsoft.Office.Interop.MSProject.Application class.  
   
-     Когда пользователь создает проект, этот обработчик событий добавляет в него задачу.  
+     When the user creates a new project, this event handler adds a task to the project.  
   
-     [!code-csharp[Trin_ProjectAddInTutorial#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_ProjectAddInTutorial/CS/ThisAddIn.cs#1)]
-     [!code-vb[Trin_ProjectAddInTutorial#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_ProjectAddInTutorial/VB/ThisAddIn.vb#1)]  
+     [!code-vb[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb#1)]  [!code-csharp[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#1)]  
   
- Для изменения проекта в этом примере кода используются указанные ниже объекты.  
+ To modify the project, this code example use the following objects:  
   
--   Поле `Application` класса `ThisAddIn`. Поле `Application` возвращает объект Microsoft.Office.Interop.MSProject.Application, который представляет текущий экземпляр Project.  
+-   The `Application` field of the `ThisAddIn` class. The `Application` field returns an Microsoft.Office.Interop.MSProject.Application object, which represents the current instance of Project.  
   
--   Параметр `pj` обработчика событий для события NewProject. Параметр `pj` — это объект Microsoft.Office.Interop.MSProject.Project, который представляет проект. Дополнительные сведения см. в разделе [Решения Project](../vsto/project-solutions.md).  
+-   The `pj` parameter of the event handler for the NewProject event. The `pj` parameter is a Microsoft.Office.Interop.MSProject.Project object, which represents the project. For more information, see [Project Solutions](../vsto/project-solutions.md).  
   
-1.  Если используется C\#, добавьте в обработчик событий `ThisAddIn_Startup` указанный ниже код. Он подключает обработчик событий `Application_Newproject` к событию NewProject.  
+1.  If you are using C#, add the following code to the `ThisAddIn_Startup` event handler. This code connects the `Application_Newproject` event handler with the NewProject event.  
   
-     [!code-csharp[Trin_ProjectAddInTutorial#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_ProjectAddInTutorial/CS/ThisAddIn.cs#2)]  
+     [!code-csharp[Trin_ProjectAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#2)]  
   
 -  
   
-## Тестирование проекта  
- Во время сборки и выполнения проекта убедитесь в том, что новая задача отображается в новом проекте.  
+## <a name="testing-the-project"></a>Testing the Project  
+ When you build and run the project, verify that the new task appears in the resulting new project.  
   
-#### Тестирование проекта  
+#### <a name="to-test-the-project"></a>To test the project  
   
-1.  Нажмите клавишу **F5** для построения и запуска проекта. Запускается Microsoft Project, и при этом автоматически открывается пустой проект.  
+1.  Press **F5** to build and run your project. Microsoft Project starts and automatically opens a new blank project.  
   
-     При построении проекта код компилируется в сборку, которая включается в выходную папку сборки для проекта. Visual Studio также создает ряд записей реестра, которые позволяют Project обнаружить и загрузить надстройку VSTO, и настраивает параметры безопасности на компьютере разработчика, разрешая запуск надстройки VSTO. Дополнительные сведения см. в разделе [Обзор процесса сборки решения Office](http://msdn.microsoft.com/ru-ru/a9d12e4f-c9ea-4a62-a841-c42b91f831ee).  
+     When you build the project, the code is compiled into an assembly that is included in the build output folder for the project. Visual Studio also creates a set of registry entries that enable Project to discover and load the VSTO Add-in, and it configures the security settings on the development computer to enable the VSTO Add-in to run. For more information, see [Office Solution Build Process Overview](http://msdn.microsoft.com/en-us/a9d12e4f-c9ea-4a62-a841-c42b91f831ee).  
   
-2.  Убедитесь в том, что новая задача добавлена в пустой проект.  
+2.  Verify that a new task is added to the blank project.  
   
-3.  Убедитесь в том, что в поле **Имя задачи** виден следующий текст:  
+3.  Verify that the following text appears in the **Task Name** field of the task.  
   
-     **Этот текст добавляется с помощью кода.**  
+     **This text was added by using code.**  
   
-4.  Закройте Microsoft Project.  
+4.  Close Microsoft Project.  
   
-## Очистка проекта  
- Завершив разработку проекта, удалите с компьютера сборку надстройки VSTO, записи реестра и параметры безопасности. В противном случае надстройка VSTO будет запускаться при каждом открытии Microsoft Project на компьютере разработчика.  
+## <a name="cleaning-up-the-project"></a>Cleaning up the Project  
+ When you finish developing a project, remove the VSTO Add-in assembly, registry entries, and security settings from your development computer. Otherwise, the VSTO Add-in will run every time you open Microsoft Project on the development computer.  
   
-#### Очистка проекта  
+#### <a name="to-clean-up-your-project"></a>To clean up your project  
   
-1.  В Visual Studio в меню **Построение** выберите пункт **Очистить решение**.  
+1.  In Visual Studio, on the **Build** menu, click **Clean Solution**.  
   
-## Следующие действия  
- Теперь, когда вы создали базовую надстройку VSTO для Project, ознакомьтесь с более подробными сведениями о разработке надстроек VSTO в следующих разделах.  
+## <a name="next-steps"></a>Next Steps  
+ Now that you have created a basic VSTO Add-in for Project, you can learn more about how to develop VSTO Add-ins from these topics:  
   
--   Общие задачи программирования, которые можно выполнять в надстройках VSTO для Project: [Приступая к программированию надстроек VSTO](../vsto/programming-vsto-add-ins.md).  
+-   General programming tasks that you can perform in VSTO Add-ins for Project: [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
   
--   Использование объектной модели Project: [Решения Project](../vsto/project-solutions.md).  
+-   Using the object model of Project: [Project Solutions](../vsto/project-solutions.md).  
   
--   Сборка и отладка надстроек VSTO для Project: [Построение решений Office](../vsto/building-office-solutions.md).  
+-   Building and debugging VSTO Add-ins for Project: [Building Office Solutions](../vsto/building-office-solutions.md).  
   
--   Развертывание надстроек VSTO для Project: [Развертывание решения Office](../vsto/deploying-an-office-solution.md).  
+-   Deploying VSTO Add-ins for Project: [Deploying an Office Solution](../vsto/deploying-an-office-solution.md).  
   
-## См. также  
- [Приступая к программированию надстроек VSTO](../vsto/programming-vsto-add-ins.md)   
- [Решения Project](../vsto/project-solutions.md)   
- [Построение решений Office](../vsto/building-office-solutions.md)   
- [Развертывание решения Office](../vsto/deploying-an-office-solution.md)   
- [Общие сведения о шаблонах проектов Office](../vsto/office-project-templates-overview.md)  
+## <a name="see-also"></a>See Also  
+ [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
+ [Project Solutions](../vsto/project-solutions.md)   
+ [Building Office Solutions](../vsto/building-office-solutions.md)   
+ [Deploying an Office Solution](../vsto/deploying-an-office-solution.md)   
+ [Office Project Templates Overview](../vsto/office-project-templates-overview.md)  
   
   

@@ -1,49 +1,53 @@
 ---
-title: "Практическое руководство. Программное закрытие документов Visio"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "документы [разработка решений Office в Visual Studio], закрытие документов Visio"
-  - "Visio [разработка решений Office в Visual Studio], закрытие документов Visio"
+title: 'How to: Programmatically Close Visio Documents | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- documents [Office development in Visual Studio], closing Visio documents
+- Visio [Office development in Visual Studio], closing Visio documents
 ms.assetid: 59c0e215-a4c1-4b39-a491-37534f172705
 caps.latest.revision: 13
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 5005047476f5622391f8a163d71e1f44394d7d7d
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Практическое руководство. Программное закрытие документов Visio
-  Вы можете закрыть активный документ Microsoft Office Visio с помощью метода Microsoft.Office.Interop.Visio.Document.Close.  
+# <a name="how-to-programmatically-close-visio-documents"></a>How to: Programmatically Close Visio Documents
+  You can close the active Microsoft Office Visio document by using the Microsoft.Office.Interop.Visio.Document.Close method.  
   
- Сведения об этом методе см. в справочной документации VBA для метода [Microsoft.Office.Interop.Visio.Documents.Add](HV10070225).  
+ For details about this method, see the VBA reference documentation for the [Microsoft.Office.Interop.Visio.Document.Close](http://msdn.microsoft.com/library/office/ff767415.aspx) method.  
   
-## Закрытие активного документа  
+## <a name="closing-the-active-document"></a>Closing the Active Document  
   
-#### Закрытие активного документа  
+#### <a name="to-close-the-active-document"></a>To close the active document  
   
--   Вызовите метод Microsoft.Office.Interop.Visio.Document.Close, чтобы закрыть активный документ.  
+-   Call the Microsoft.Office.Interop.Visio.Document.Close method to close the active document.  
   
-     Чтобы использовать следующий пример кода, запустите его в классе `ThisAddIn` в проекте надстройки VSTO для Visio.  
+     To use the following code example, run it in the `ThisAddIn` class in an VSTO Add-in project for Visio.  
   
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#7](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreVisioAutomationAddIn/CS/ThisAddIn.cs#7)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#7](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreVisioAutomationAddIn/VB/ThisAddIn.vb#7)]  
+     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#7](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#7)]  [!code-vb[Trin_VstcoreVisioAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#7)]  
   
-## См. также  
- [Решения Visio](../vsto/visio-solutions.md)   
- [Общие сведения об объектной модели Visio](../vsto/visio-object-model-overview.md)   
- [Практическое руководство. Программное создание документов Visio](../vsto/how-to-programmatically-create-new-visio-documents.md)   
- [Практическое руководство. Программное открытие документов Visio](../vsto/how-to-programmatically-open-visio-documents.md)   
- [Практическое руководство. Программное сохранение документов Visio](../vsto/how-to-programmatically-save-visio-documents.md)   
- [Практическое руководство. Программная печать документов Visio](../vsto/how-to-programmatically-print-visio-documents.md)  
+## <a name="see-also"></a>See Also  
+ [Visio Solutions](../vsto/visio-solutions.md)   
+ [Visio Object Model Overview](../vsto/visio-object-model-overview.md)   
+ [How to: Programmatically Create New Visio Documents](../vsto/how-to-programmatically-create-new-visio-documents.md)   
+ [How to: Programmatically Open Visio Documents](../vsto/how-to-programmatically-open-visio-documents.md)   
+ [How to: Programmatically Save Visio Documents](../vsto/how-to-programmatically-save-visio-documents.md)   
+ [How to: Programmatically Print Visio Documents](../vsto/how-to-programmatically-print-visio-documents.md)  
   
   

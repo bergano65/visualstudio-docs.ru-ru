@@ -1,133 +1,137 @@
 ---
-title: "Пошаговое руководство. Создание пользовательского действия рабочего процесса сайта"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "пользовательские действия рабочих процессов [разработка приложений SharePoint в Visual Studio]"
-  - "разработка приложений SharePoint в Visual Studio, пользовательские действия рабочих процессов"
-  - "разработка приложений SharePoint в Visual Studio, рабочие процессы сайта"
-  - "рабочие процессы сайта [разработка приложений SharePoint в Visual Studio]"
-  - "действия рабочих процессов [разработка приложений SharePoint в Visual Studio]"
+title: 'Walkthrough: Create a Custom Site Workflow Activity | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- custom workflow activities [SharePoint development in Visual Studio]
+- SharePoint development in Visual Studio, custom workflow activities
+- site workflows [SharePoint development in Visual Studio]
+- workflow activities [SharePoint development in Visual Studio]
+- SharePoint development in Visual Studio, site workflows
 ms.assetid: 8219a779-c27b-4186-92c9-5bda03328aa9
 caps.latest.revision: 20
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 19
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 794ffdffb96c7b0914c283f13ec8ca7014f425b0
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Создание пользовательского действия рабочего процесса сайта
-  В этом пошаговом руководстве показано, как создать пользовательское действие для рабочего процесса на уровне сайта с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. \(Рабочие процессы на уровне сайта действуют для всего сайта, а не для определенного списка на сайте.\) Пользовательское действие создает резервную копию списка Announcements и копирует в него содержимое списка Announcements.  
+# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Walkthrough: Create a Custom Site Workflow Activity
+  This walkthrough demonstrates how to create a custom activity for a site-level workflow using [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Site-level workflows apply to the whole site, not just a list on the site.) The custom activity creates a backup Announcements list and then copies the contents of the Announcements list into it.  
   
- В этом пошаговом руководстве показано выполнение следующих задач.  
+ This walkthrough demonstrates the following tasks:  
   
--   Создание рабочего процесса на уровне сайта.  
+-   Creating a site-level workflow.  
   
--   Создание пользовательского действия рабочего процесса.  
+-   Creating a custom workflow activity.  
   
--   Создание и удаление списка SharePoint.  
+-   Creating and deleting a SharePoint list.  
   
--   Копирование элементов из одного списка в другой.  
+-   Copying items from one list to another.  
   
--   Отображение списка на панели быстрого запуска.  
+-   Displaying a list on the QuickLaunch bar.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
--   Поддерживаемые выпуски [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] и SharePoint.  Для получения дополнительной информации см. [Требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Supported editions of [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] and SharePoint. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Visual Studio.  
   
-## Создание проекта пользовательского действия рабочего процесса сайта  
- Сначала создайте проект, в котором предстоит разместить и протестировать пользовательское действие рабочего процесса.  
+## <a name="creating-a-site-workflow-custom-activity-project"></a>Creating a Site Workflow Custom Activity Project  
+ First, create a project to hold and test the custom workflow activity.  
   
-#### Создание проекта пользовательского действия рабочего процесса сайта  
+#### <a name="to-create-a-site-workflow-custom-activity-project"></a>To create a site workflow custom activity project  
   
-1.  В строке меню последовательно выберите пункты **Файл**, **Создать**, **Проект**, чтобы открыть диалоговое окно **Новый проект**.  
+1.  On the menu bar, choose **File**, **New**, **Project** to display the **New Project** dialog box.  
   
-2.  Разверните узел **SharePoint**, расположенный в области **Visual C\#** или **Visual Basic**, и выберите узел **2010**.  
+2.  Expand the **SharePoint** node under either **Visual C#** or **Visual Basic**, and then choose the **2010** node.  
   
-3.  На панели **Шаблоны** выберите шаблон **Проект SharePoint 2010**.  
+3.  In the **Templates** pane, choose the **SharePoint 2010 Project** template.  
   
-4.  В поле **Имя** введите AnnouncementBackup и нажмите кнопку **ОК**.  
+4.  In the **Name** box, enter **AnnouncementBackup**, and then choose the **OK** button.  
   
-     Появится окно **Мастер настройки SharePoint**.  
+     The **SharePoint Customization Wizard** appears.  
   
-5.  На странице **Укажите сайт и уровень безопасности для отладки** выберите переключатель **Развернуть как решение фермы**, а затем нажмите кнопку **Готово**, чтобы принять уровень доверия и сайт по умолчанию.  
+5.  On the **Specify the site and security level for debugging** page, choose the **Deploy as a farm solution** option button, and then choose the **Finish** button to accept the trust level and default site.  
   
-     На этом этапе для решения задается уровень доверия "решение фермы" — единственно возможный вариант для проектов рабочего процесса.  
+     This step sets the trust level for the solution as farm solution, the only available option for workflow projects.  
   
-6.  В области **Обозреватель решений** выберите узел проекта, затем в меню **Проект** выберите **Добавить новый элемент**.  
+6.  In **Solution Explorer**, choose the project node, and then, on the menu bar, choose **Project**, **Add New Item**.  
   
-7.  Разверните узел **SharePoint**, расположенный в области **Visual C\#** или **Visual Basic**, и выберите узел **2010**.  
+7.  Under either **Visual C#** or **Visual Basic**, expand the **SharePoint** node, and then choose the **2010** node.  
   
-8.  В области **Шаблоны** выберите шаблон **Последовательный рабочий процесс \(только для решения фермы\)**, а затем нажмите кнопку **Добавить**.  
+8.  In the **Templates** pane, choose the **Sequential Workflow (Farm Solution only)** template, and then choose the **Add** button.  
   
-     Появится окно **Мастер настройки SharePoint**.  
+     The **SharePoint Customization Wizard** appears.  
   
-9. На странице **Имя рабочего процесса для отладки** нажмите кнопку "Далее", чтобы принять имя по умолчанию \(AnnouncementBackup \- Workflow1\).  Измените тип шаблона рабочего процесса на **Рабочий процесс сайта** и нажмите кнопку **Далее**.  
+9. On the **Specify the workflow name for debugging** page, accept the default name (AnnouncementBackup - Workflow1). Change the workflow template type to **Site Workflow**, and then choose the **Next** button.  
   
-10. Нажмите кнопку **Готово**, чтобы принять значения по умолчанию для остальных параметров.  
+10. Choose the **Finish** button to accept the remaining default settings.  
   
-## Добавление класса пользовательского действия рабочего процесса  
- Теперь добавьте в проект класс, в котором будет содержаться код для пользовательского действия рабочего процесса.  
+## <a name="adding-a-custom-workflow-activity-class"></a>Adding a Custom Workflow Activity Class  
+ Next, add a class to the project to contain the code for the custom workflow activity.  
   
-#### Добавление класса пользовательского действия рабочего процесса  
+#### <a name="to-add-a-custom-workflow-activity-class"></a>To add a custom workflow activity class  
   
-1.  Для отображения диалогового окна **Добавление нового элемента** выберите в меню **Проект** команду **Добавить новый элемент**.  
+1.  On the menu bar, choose **Project**, **Add New Item** to display the **Add New Item** dialog box.  
   
-2.  В древовидном представлении **Установленные шаблоны** выберите узел **Код** и выберите шаблон **Класс** в списке шаблонов элементов проектов.  Используйте имя по умолчанию \(Class1\).  Нажмите кнопку **Добавить**.  
+2.  In the **Installed Templates** tree view, choose the **Code** node, and then choose the **Class** template in the list of project item templates. Use the default name Class1. Choose the **Add** button.  
   
-3.  Удалите весь код в шаблоне Class1 на следующий код.  
+3.  Replace all of the code in Class1 with the following:  
   
-     [!code-csharp[SP_AnnBackup#1](../snippets/csharp/VS_Snippets_OfficeSP/sp_annbackup/cs/class1.cs#1)]
-     [!code-vb[SP_AnnBackup#1](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_annbackup/vb/class1.vb#1)]  
+     [!code-csharp[SP_AnnBackup#1](../sharepoint/codesnippet/CSharp/announcementbackup/class1.cs#1)]  [!code-vb[SP_AnnBackup#1](../sharepoint/codesnippet/VisualBasic/announcementbackupvb/class1.vb#1)]  
   
-4.  Сохраните проект и в строке меню выберите **Построение**, **Построить решение**.  
+4.  Save the project, and then, on the menu bar, choose **Build**, **Build Solution**.  
   
-     Class1 отображается как пользовательское действие на **панели элементов** на вкладке **Компоненты AnnouncementBackup**.  
+     Class1 appears as a custom action in the **Toolbox** on the **AnnouncementBackup Components** tab.  
   
-## Добавление пользовательского действия в рабочий процесс сайта  
- Теперь добавьте в рабочий процесс действие, в котором будет содержаться пользовательский код.  
+## <a name="adding-the-custom-activity-to-the-site-workflow"></a>Adding the Custom Activity to the Site Workflow  
+ Next, add an activity to the Workflow to contain the custom code.  
   
-#### Добавление пользовательского действия в рабочий процесс сайта  
+#### <a name="to-add-a-custom-activity-to-the-site-workflow"></a>To add a custom activity to the site Workflow  
   
-1.  Откройте рабочий процесс Workflow1 в конструкторе рабочих процессов.  
+1.  Open Workflow1 in the workflow designer in design view.  
   
-2.  Перетащите Class1 с **панели элементов** под действие `onWorkflowActivated1` или откройте контекстное меню для Class1, выберите **Копировать**, откройте контекстное меню для строки под действием `onWorkflowActivated1` и выберите **Вставить**.  
+2.  Drag Class1 from the **Toolbox** so that it appears under the `onWorkflowActivated1` activity, or open the shortcut menu for Class1, choose **Copy**, open the shortcut menu for the line under the `onWorkflowActivated1` activity, and then choose **Paste**.  
   
-3.  Сохраните проект.  
+3.  Save the project.  
   
-## Тестирование пользовательского действия рабочего процесса сайта  
- Теперь запустите проект и начните рабочий процесс сайта.  Пользовательское действие создает резервную копию списка Announcements и копирует в него содержимое текущего списка Announcements.  Перед созданием резервной копии списка проверяется наличие существующей резервной копии.  Если резервная копия существует, она удаляется.  Кроме того, на панель быстрого запуска сайта SharePoint добавляется ссылка на новый список.  
+## <a name="testing-the-site-workflow-custom-activity"></a>Testing the Site Workflow Custom Activity  
+ Next, run the project and start the site workflow. The custom activity creates a backup Announcements list and copies the contents from the current Announcements list into it. The code also checks whether a backup list already exists before creating one. If a backup list already exists, it is deleted. The code also adds a link to the new list on the SharePoint site's QuickLaunch bar.  
   
-#### Тестирование пользовательского действия рабочего процесса сайта  
+#### <a name="to-test-the-site-workflow-custom-activity"></a>To test the site workflow custom activity  
   
-1.  Нажмите клавишу F5 для запуска проекта и его развертывания в SharePoint.  
+1.  Choose the F5 key to run the project and deploy it to SharePoint.  
   
-2.  На панели быстрого запуска выберите **Списки**, чтобы отобразить все списки, имеющиеся на сайте SharePoint.  Обратите внимание, что имеется только один список объявлений с именем **Announcements**.  
+2.  On the QuickLaunch bar, choose the **Lists** link to display all of the lists that are available in the SharePoint site. Notice there is only one list for announcements named **Announcements**.  
   
-3.  В верхней части веб\-страницы SharePoint выберите ссылку **Рабочие процессы сайта**.  
+3.  At the top of the SharePoint webpage, choose the **Site Workflows** link.  
   
-4.  В разделе "Запуск нового рабочего процесса" выберите ссылку **AnnouncementBackup – Workflow1**.  При этом запустится рабочий процесс сайта и выполнится код в пользовательском действии.  
+4.  Under the Start a New Workflow section, choose the **AnnouncementBackup - Workflow1** link. This starts the site workflow and runs the code in the custom action.  
   
-5.  На панели быстрого запуска выберите ссылку **Резервное копирование списка Announcements**.  Обратите внимание, что в этот список скопированы все объявления, содержавшиеся в списке **Announcements**.  
+5.  On the QuickLaunch bar, choose the **Announcements Backup** link. Notice that all of the announcements that are contained in the **Announcements** list have been copied to this new list.  
   
-## См. также  
- [Практическое руководство. Создание приемника событий](../sharepoint/how-to-create-an-event-receiver.md)   
- [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [How to: Create an Event Receiver](../sharepoint/how-to-create-an-event-receiver.md)   
+ [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
   
   

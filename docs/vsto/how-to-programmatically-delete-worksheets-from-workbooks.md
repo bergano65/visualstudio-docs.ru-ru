@@ -1,79 +1,82 @@
 ---
-title: "Практическое руководство. Программное удаление листов из книг"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "книги, удаление листов"
-  - "листы, удаление"
+title: 'How to: Programmatically Delete Worksheets from Workbooks | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- workbooks, deleting worksheets
+- worksheets, deleting
 ms.assetid: c5ae99f0-806d-4320-a29c-75ad444fb996
 caps.latest.revision: 48
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 47
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: e28e765abd1c7b18bdc0121e12be99db6e87afc1
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Практическое руководство. Программное удаление листов из книг
-  В книге можно удалить любой лист.  Для удаления листа используйте ведущий элемент листа или получите доступ к листу с помощью коллекции листов книги.  
+# <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>How to: Programmatically Delete Worksheets from Workbooks
+  You can delete any worksheet in a workbook. To delete a worksheet, use the worksheet host item or access the worksheet by using the sheets collection of the workbook.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## Использование ведущего элемента листа  
- Если лист был добавлен в настройку на уровне документа во время разработки, для удаления указанного листа используйте метод <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A>.  Следующий код удаляет лист из книги с помощью прямой ссылки на ведущий элемент листа.  
+## <a name="using-the-worksheet-host-item"></a>Using the Worksheet Host Item  
+ If the worksheet was added at design-time in a document-level customization, use the <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> method to delete a specified worksheet. The following code deletes a worksheet from a workbook by referencing the worksheet host item directly.  
   
 > [!IMPORTANT]  
->  Этот код выполняется только в тех проектах, которые создаются с помощью любого из следующих шаблонов проекта:  
+>  This code runs only in projects that you create by using any of the following project templates:  
 >   
->  -   Книга Excel 2013  
-> -   Шаблон Excel 2013  
-> -   Книга Excel 2010  
-> -   Шаблон Excel 2010  
+>  -   Excel 2013 Workbook  
+> -   Excel 2013 Template  
+> -   Excel 2010 Workbook  
+> -   Excel 2010 Template  
 >   
->  Если эту задачу требуется выполнить в проекте любого другого типа, необходимо добавить ссылку на сборку **Microsoft.Office.Interop.Excel**, а затем использовать классы из этой сборки, чтобы открыть книгу и удалить лист.  Дополнительные сведения см. в разделе[Практическое руководство. Обращение к приложениям Office с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) и [Справочник по основной сборке взаимодействия для Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
+>  If you want to perform this task in any other type of project, you must add a reference to the **Microsoft.Office.Interop.Excel** assembly, and then you must use classes from that assembly to open a workbook and delete a worksheet. For more information, see [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) and [Excel 2010 Primary Interop Assembly Reference](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
-#### Удаление листа с помощью ведущего элемента листа  
+#### <a name="to-delete-a-worksheet-by-using-a-worksheet-host-item"></a>To delete a worksheet by using a worksheet host item  
   
-1.  Вызовите метод <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> типа `Sheet1`.  
+1.  Call the <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> method of `Sheet1`.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#17](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#17)]
-     [!code-vb[Trin_VstcoreExcelAutomation#17](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#17)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#17](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#17)]  [!code-vb[Trin_VstcoreExcelAutomation#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#17)]  
   
-## Использование коллекции листов книги Excel  
- Обращайтесь к листам с помощью коллекции <xref:Microsoft.Office.Interop.Excel.Sheets> для Microsoft Office Excel в следующих случаях.  
+## <a name="using-the-sheets-collection-of-the-excel-workbook"></a>Using the Sheets Collection of the Excel Workbook  
+ Access worksheets through the Microsoft Office Excel <xref:Microsoft.Office.Interop.Excel.Sheets> collection in the following cases:  
   
--   Требуется удалить лист в надстройке VSTO.  
+-   You want to delete a worksheet in a VSTO Add-in.  
   
--   Лист, который требуется удалить, был создан во время выполнения в настройке на уровне документа.  
+-   The worksheet that you want to delete was created at run time in a document-level customization.  
   
- Следующий код удаляет лист из книги с помощью ссылки на лист при использовании номера индекса коллекции **Sheets**.  В этом коде предполагается, что новый лист был создан программным образом.  
+ The following code deletes a worksheet from a workbook by referencing the sheet through the index number of the **Sheets** collection. This code assumes that a new worksheet was created programmatically.  
   
 > [!IMPORTANT]  
->  Если эту задачу требуется выполнить в проекте любого другого типа, необходимо добавить ссылку на сборку **Microsoft.Office.Interop.Excel**, а затем использовать классы из этой сборки, чтобы открыть книгу и удалить лист.  Дополнительные сведения см. в разделе[Практическое руководство. Обращение к приложениям Office с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) и [Справочник по основной сборке взаимодействия для Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
+>  If you want to perform this task in any other type of project, you must add a reference to the **Microsoft.Office.Interop.Excel** assembly, and then you must use classes from that assembly to open a workbook and delete a worksheet. For more information, see [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) and [Excel 2010 Primary Interop Assembly Reference](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
-#### Удаление листа с помощью коллекции листов книги Excel  
+#### <a name="to-delete-a-worksheet-by-using-the-sheets-collection-of-the-excel-workbook"></a>To delete a worksheet by using the Sheets collection of the Excel workbook  
   
-1.  Вызовите метод <xref:Microsoft.Office.Interop.Excel._Worksheet.Delete%2A> коллекции <xref:Microsoft.Office.Interop.Excel.Sheets>.  
+1.  Call the <xref:Microsoft.Office.Interop.Excel._Worksheet.Delete%2A> method of the <xref:Microsoft.Office.Interop.Excel.Sheets> collection.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#18](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#18)]
-     [!code-vb[Trin_VstcoreExcelAutomation#18](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#18)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#18](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#18)]  [!code-vb[Trin_VstcoreExcelAutomation#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#18)]  
   
-## См. также  
- [Работа с листами](../vsto/working-with-worksheets.md)   
- [Практическое руководство. Программное скрытие листов Excel](../vsto/how-to-programmatically-hide-worksheets.md)   
- [Практическое руководство. Программное перемещение листов в книгах](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
- [Практическое руководство. Программный выбор листов Excel](../vsto/how-to-programmatically-select-worksheets.md)   
- [Практическое руководство. Программное добавление новых листов в книги Excel](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
- [Ведущие элементы листа](../vsto/worksheet-host-item.md)   
- [Глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md)   
- [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Worksheets](../vsto/working-with-worksheets.md)   
+ [How to: Programmatically Hide Worksheets](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [How to: Programmatically Move Worksheets Within Workbooks](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
+ [How to: Programmatically Select Worksheets](../vsto/how-to-programmatically-select-worksheets.md)   
+ [How to: Programmatically Add New Worksheets to Workbooks](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
+ [Worksheet Host Item](../vsto/worksheet-host-item.md)   
+ [Global Access to Objects in Office Projects](../vsto/global-access-to-objects-in-office-projects.md)   
+ [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

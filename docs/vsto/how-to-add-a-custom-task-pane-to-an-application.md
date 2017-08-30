@@ -1,67 +1,70 @@
 ---
-title: "Практическое руководство. Добавление настраиваемой панели задач в приложение"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "настраиваемые области задач [разработка решений Office в Visual Studio], добавление к приложению"
-  - "области задач [разработка решений Office в Visual Studio], добавление к приложению"
+title: 'How to: Add a Custom Task Pane to an Application | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- task panes [Office development in Visual Studio], adding to application
+- custom task panes [Office development in Visual Studio], adding to application
 ms.assetid: 67b4ed5b-d77e-4630-b851-34bb25bdc9b3
 caps.latest.revision: 28
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 27
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 8efd2746b20fa8a56ef2629cee26be3240c86c99
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Практическое руководство. Добавление настраиваемой панели задач в приложение
-  Вы можете добавить настраиваемую область задач в приложения, перечисленные выше, с помощью надстройки VSTO.  Дополнительные сведения см. в статье [Настраиваемые области задач](../vsto/custom-task-panes.md).  
+# <a name="how-to-add-a-custom-task-pane-to-an-application"></a>How to: Add a Custom Task Pane to an Application
+  You can add a custom task pane to the applications listed above by using VSTO Add-in. For more information, see [Custom Task Panes](../vsto/custom-task-panes.md).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
 > [!NOTE]  
->  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях.  Это зависит от имеющегося выпуска Visual Studio и используемых параметров.  Дополнительные сведения см. в разделе [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/ru-ru/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Добавление настраиваемой панели задач в приложение  
+## <a name="adding-a-custom-task-pane-to-an-application"></a>Adding a Custom Task Pane to an Application  
   
-#### Добавление настраиваемой панели задач в приложение  
+#### <a name="to-add-a-custom-task-pane-to-an-application"></a>To add a custom task pane to an application  
   
-1.  Откройте или создайте проект надстройки VSTO для одного из приложений, указанных выше.  Дополнительные сведения см. в статье [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Open or create a VSTO Add-in project for one of the applications listed above. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-2.  В меню **Проект** выберите команду **Добавить пользовательский элемент управления**.  
+2.  On the **Project** menu, click **Add User Control**.  
   
-3.  В диалоговом окне **Добавление нового элемента** измените имя нового пользовательского элемента управления на **MyUserControl**, а затем нажмите кнопку **Добавить**.  
+3.  In the **Add New Item** dialog box, change the name of the new user control to **MyUserControl**, and then click **Add**.  
   
-     Пользовательский элемент управления откроется в конструкторе.  
+     The user control opens in the designer.  
   
-4.  Добавьте один или несколько элементов управления Windows Forms из **панели элементов** в пользовательский элемент управления.  
+4.  Add one or more Windows Forms controls from the **Toolbox** to the user control.  
   
-5.  Откройте файл кода **ThisAddIn.cs** или **ThisAddIn.vb**.  
+5.  Open the **ThisAddIn.cs** or **ThisAddIn.vb** code file.  
   
-6.  Добавьте следующий код в класс `ThisAddIn`.  Этот код объявляет экземпляры `MyUserControl` и <xref:Microsoft.Office.Tools.CustomTaskPane> как члены класса `ThisAddIn`.  
+6.  Add the following code to the `ThisAddIn` class. This code declares instances of `MyUserControl` and <xref:Microsoft.Office.Tools.CustomTaskPane> as members of the `ThisAddIn` class.  
   
-     [!code-csharp[Trin_TaskPaneBasic#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_TaskPaneBasic/CS/ThisAddIn.cs#1)]
-     [!code-vb[Trin_TaskPaneBasic#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_TaskPaneBasic/VB/ThisAddIn.vb#1)]  
+     [!code-vb[Trin_TaskPaneBasic#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#1)]  [!code-csharp[Trin_TaskPaneBasic#1](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#1)]  
   
-7.  Добавьте следующий код в обработчик событий `ThisAddIn_Startup`.  Этот код создает новый объект <xref:Microsoft.Office.Tools.CustomTaskPane>, добавляя  объект `MyUserControl` в коллекцию `CustomTaskPanes`.  Код также отображает область задач.  
+7.  Add the following code to the `ThisAddIn_Startup` event handler. This code creates a new <xref:Microsoft.Office.Tools.CustomTaskPane> by adding the `MyUserControl` object to the `CustomTaskPanes` collection. The code also displays the task pane.  
   
-     [!code-csharp[Trin_TaskPaneBasic#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_TaskPaneBasic/CS/ThisAddIn.cs#2)]
-     [!code-vb[Trin_TaskPaneBasic#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_TaskPaneBasic/VB/ThisAddIn.vb#2)]  
+     [!code-vb[Trin_TaskPaneBasic#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#2)]  [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]  
   
     > [!NOTE]  
-    >  Этот код связывает настраиваемую область задач с активным окном приложения.  Для некоторых приложений может потребоваться изменить этот код, чтобы убедиться, что область задач отображается с другими документами или элементами в приложении.  Дополнительные сведения см. в разделе [Настраиваемые области задач](../vsto/custom-task-panes.md).  
+    >  This code associates your custom task pane with the active window in the application. For some applications, you might want to modify this code to ensure that the task pane appears with other documents or items in the application. For more information, see [Custom Task Panes](../vsto/custom-task-panes.md).  
   
-## См. также  
- [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)   
- [Настраиваемые области задач](../vsto/custom-task-panes.md)   
- [Руководство. Автоматизация приложения в настраиваемой области задач](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
+## <a name="see-also"></a>See Also  
+ [Office UI Customization](../vsto/office-ui-customization.md)   
+ [Custom Task Panes](../vsto/custom-task-panes.md)   
+ [Walkthrough: Automating an Application from a Custom Task Pane](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
   
   

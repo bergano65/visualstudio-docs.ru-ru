@@ -1,116 +1,122 @@
 ---
-title: "Пошаговое руководство: Отображение парные фигурные скобки | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "редакторы [Visual Studio SDK] новый - парные фигурные скобки"
+title: 'Walkthrough: Displaying Matching Braces | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 27
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 27
----
-# Пошаговое руководство: Отображение парные фигурные скобки
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: c6d35826fafdfe0f5a5b7b99ccbbf63d7bc62d8e
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
-Можно реализовать язык на основе функции, такие как проверка парности фигурных скобок, определив фигурные скобки, необходимо найти и добавляя тег текстовой метки в парные фигурные скобки, когда курсор находится на одном фигурных скобок. Фигурные скобки можно определить в контексте языка, можно определить собственный файл имя расширения или типу содержимого и применить теги только этот тип или можно применить теги к существующий тип содержимого \(например, «текст»\). Следующий пример демонстрируется применение парные теги в тип содержимого «text».  
+---
+# <a name="walkthrough-displaying-matching-braces"></a>Walkthrough: Displaying Matching Braces
+You can implement language-based features such as brace matching by defining the braces you want to match, and then adding a text marker tag to the matching braces when the caret is on one of the braces. You can define braces in the context of a language, or you can define your own file name extension and content type and apply the tags to just that type, or you can apply the tags to an existing content type (such as "text"). The following walkthrough shows how to apply brace matching tags to the "text" content type.  
   
-## Обязательные компоненты  
- Начиная с Visual Studio 2015, не установить пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в установку Visual Studio. VS SDK также можно установить позже. Для получения дополнительной информации см. [Установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Prerequisites  
+ Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## Создание проекта Managed Extensibility Framework \(MEF\)  
+## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Creating a Managed Extensibility Framework (MEF) Project  
   
-#### Создание проекта MEF  
+#### <a name="to-create-a-mef-project"></a>To create a MEF project  
   
-1.  Создайте проект классификатора редактора. Присвойте решению имя `BraceMatchingTest`.  
+1.  Create an Editor Classifier project. Name the solution `BraceMatchingTest`.  
   
-2.  Добавьте в проект шаблон элемента редактор классификатора. Дополнительные сведения см. в разделе [Создание расширения с помощью редактора шаблона элемента](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2.  Add an Editor Classifier item template to the project. For more information, see [Creating an Extension with an Editor Item Template](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Удалите файлы существующих классов.  
+3.  Delete the existing class files.  
   
-## Реализация парные создания тегов  
- Чтобы получить Выделение скобок подсветкой эффект, похожий того, который используется в Visual Studio, можно реализовать средство создания тегов типа <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>. Ниже показано определение создания тегов для пар скобок на любом уровне вложенности. В этом примере \[\] пары скобок. \[\] {} определяются в конструкторе создания тегов, но полной реализацией языка пары соответствующих скобок быть определены в спецификации языка.  
+## <a name="implementing-a-brace-matching-tagger"></a>Implementing a Brace Matching Tagger  
+ To get a brace highlighting effect that resembles the one that is used in Visual Studio, you can implement a tagger of type <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>. The following code shows how to define the tagger for brace pairs at any level of nesting. In this example, the brace pairs []. [], and {} are defined in the tagger constructor, but in a full language implementation the relevant brace pairs would be defined in the language specification.  
   
-#### Для реализации парные создания тегов  
+#### <a name="to-implement-a-brace-matching-tagger"></a>To implement a brace matching tagger  
   
-1.  Добавьте файл класса и назовите его соответствие скобок.  
+1.  Add a class file and name it BraceMatching.  
   
-2.  Импортируйте следующие пространства имен.  
+2.  Import the following namespaces.  
   
-     [!code-cs[VSSDKBraceMatchingTest#1](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_1.cs)]
-     [!code-vb[VSSDKBraceMatchingTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_1.vb)]  
+     [!code-csharp[VSSDKBraceMatchingTest#1](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_1.cs)]  [!code-vb[VSSDKBraceMatchingTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_1.vb)]  
   
-3.  Определите класс `BraceMatchingTagger` наследуемый от <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> типа <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
+3.  Define a class `BraceMatchingTagger` that inherits from <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> of type <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
   
-     [!code-cs[VSSDKBraceMatchingTest#2](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_2.cs)]
-     [!code-vb[VSSDKBraceMatchingTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_2.vb)]  
+     [!code-csharp[VSSDKBraceMatchingTest#2](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_2.cs)]  [!code-vb[VSSDKBraceMatchingTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_2.vb)]  
   
-4.  Добавьте свойства для представления текста, исходного буфера и текущей точки моментальных снимков, а также набор пар скобок.  
+4.  Add properties for the text view, the source buffer, and the current snapshot point, and also a set of brace pairs.  
   
-     [!code-cs[VSSDKBraceMatchingTest#3](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_3.cs)]
-     [!code-vb[VSSDKBraceMatchingTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_3.vb)]  
+     [!code-csharp[VSSDKBraceMatchingTest#3](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_3.cs)]  [!code-vb[VSSDKBraceMatchingTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_3.vb)]  
   
-5.  В конструкторе создания тегов, задайте свойства и подписаться на события изменения представления <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> и <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>. В этом примере для демонстрации, совпадающие пары также определены в конструкторе.  
+5.  In the tagger constructor, set the properties and subscribe to the view change events <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> and <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>. In this example, for illustrative purposes, the matching pairs are also defined in the constructor.  
   
-     [!code-cs[VSSDKBraceMatchingTest#4](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_4.cs)]
-     [!code-vb[VSSDKBraceMatchingTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_4.vb)]  
+     [!code-csharp[VSSDKBraceMatchingTest#4](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_4.cs)]  [!code-vb[VSSDKBraceMatchingTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_4.vb)]  
   
-6.  Как часть <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> реализации объявить событие TagsChanged.  
+6.  As part of the <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> implementation, declare a TagsChanged event.  
   
-     [!code-cs[VSSDKBraceMatchingTest#5](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_5.cs)]
-     [!code-vb[VSSDKBraceMatchingTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_5.vb)]  
+     [!code-csharp[VSSDKBraceMatchingTest#5](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_5.cs)]  [!code-vb[VSSDKBraceMatchingTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_5.vb)]  
   
-7.  Обработчики событий обновить текущую позицию курсора `CurrentChar` Свойства и вызвать событие TagsChanged.  
+7.  The event handlers update the current caret position of the `CurrentChar` property and raise the TagsChanged event.  
   
-     [!code-cs[VSSDKBraceMatchingTest#6](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_6.cs)]
-     [!code-vb[VSSDKBraceMatchingTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_6.vb)]  
+     [!code-csharp[VSSDKBraceMatchingTest#6](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_6.cs)]  [!code-vb[VSSDKBraceMatchingTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_6.vb)]  
   
-8.  Реализация <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> метода соответствуют фигурные скобки, либо когда текущий символ является открывающей скобки или если предыдущий символ закрывающей фигурной скобки, как в Visual Studio. Если совпадение найдено, этот метод создает два тега: для открывающую фигурную скобку и для закрывающей фигурной скобки.  
+8.  Implement the <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> method to match braces either when the current character is an open brace or when the previous character is a close brace, as in Visual Studio. When the match is found, this method instantiates two tags, one for the open brace and one for the close brace.  
   
-     [!code-cs[VSSDKBraceMatchingTest#7](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_7.cs)]
-     [!code-vb[VSSDKBraceMatchingTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_7.vb)]  
+     [!code-csharp[VSSDKBraceMatchingTest#7](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_7.cs)]  [!code-vb[VSSDKBraceMatchingTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_7.vb)]  
   
-9. Следующие закрытые методы Найти парную скобку на любом уровне вложенности. Первый метод находит закрыть символ, который соответствует символу, откройте:  
+9. The following private methods find the matching brace at any level of nesting. The first method finds the close character that matches the open character:  
   
-     [!code-cs[VSSDKBraceMatchingTest#8](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_8.cs)]
-     [!code-vb[VSSDKBraceMatchingTest#8](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_8.vb)]  
+     [!code-csharp[VSSDKBraceMatchingTest#8](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_8.cs)]   [!code-vb[VSSDKBraceMatchingTest#8](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_8.vb)]  
   
-10. Следующий вспомогательный метод находит откройте символ, который соответствует символу закрыть:  
+10. The following helper method finds the open character that matches a close character:  
   
-     [!code-cs[VSSDKBraceMatchingTest#9](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_9.cs)]
-     [!code-vb[VSSDKBraceMatchingTest#9](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_9.vb)]  
+     [!code-csharp[VSSDKBraceMatchingTest#9](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_9.cs)]  [!code-vb[VSSDKBraceMatchingTest#9](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_9.vb)]  
   
-## Реализация поставщика для создания тегов парные  
- Помимо реализации средство создания тегов, необходимо реализовать и экспортировать поставщика создания тегов. В этом случае содержимое поставщика имеет тип «text». Это означает, что парные фигурные скобки будут отображаться для всех типов текстовых файлов, но более полной реализации будет применяться проверка парности фигурных скобок только к определенному типу содержимого.  
+## <a name="implementing-a-brace-matching-tagger-provider"></a>Implementing a Brace Matching Tagger Provider  
+ In addition to implementing a tagger, you must also implement and export a tagger provider. In this case, the content type of the provider is "text". This means that brace matching will appear in all types of text files, but a fuller implementation would apply brace matching only to a specific content type.  
   
-#### Для реализации поставщика сопоставления создания тегов фигурную скобку  
+#### <a name="to-implement-a-brace-matching-tagger-provider"></a>To implement a brace matching tagger provider  
   
-1.  Объявите создания тегов для поставщика, который наследует от <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>, назовите его BraceMatchingTaggerProvider и экспортировать его с <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> «текст» и <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> из <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
+1.  Declare a tagger provider that inherits from <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>, name it BraceMatchingTaggerProvider, and export it with a <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> of "text" and a <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> of <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
   
-     [!code-cs[VSSDKBraceMatchingTest#10](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_10.cs)]
-     [!code-vb[VSSDKBraceMatchingTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_10.vb)]  
+     [!code-csharp[VSSDKBraceMatchingTest#10](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_10.cs)]  [!code-vb[VSSDKBraceMatchingTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_10.vb)]  
   
-2.  Реализуйте <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> метод для создания экземпляра BraceMatchingTagger.  
+2.  Implement the <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> method to instantiate a BraceMatchingTagger.  
   
-     [!code-cs[VSSDKBraceMatchingTest#11](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_11.cs)]
-     [!code-vb[VSSDKBraceMatchingTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_11.vb)]  
+     [!code-csharp[VSSDKBraceMatchingTest#11](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_11.cs)]  [!code-vb[VSSDKBraceMatchingTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_11.vb)]  
   
-## Сборка и тестирование кода  
- Чтобы проверить код, создания BraceMatchingTest решения и запустите его в экспериментальном экземпляре.  
+## <a name="building-and-testing-the-code"></a>Building and Testing the Code  
+ To test this code, build the BraceMatchingTest solution and run it in the experimental instance.  
   
-#### Для построения и тестирования решений BraceMatchingTest  
+#### <a name="to-build-and-test-bracematchingtest-solution"></a>To build and test BraceMatchingTest solution  
   
-1.  Постройте решение.  
+1.  Build the solution.  
   
-2.  При запуске этого проекта в отладчике создается второй экземпляр Visual Studio.  
+2.  When you run this project in the debugger, a second instance of Visual Studio is instantiated.  
   
-3.  Создайте текстовый файл и введите текст, который содержит парные фигурные скобки.  
+3.  Create a text file and type some text that includes matching braces.  
   
     ```  
     hello {  
@@ -121,7 +127,7 @@ caps.handback.revision: 27
     {hello}  
     ```  
   
-4.  Если поместить курсор перед открывающей скобки, будет выделена, скобки и соответствующей закрывающей фигурной скобки. Если курсор находится сразу после закрывающей фигурной скобки, будет выделена, скобки и сопоставления открывающую фигурную скобку.  
+4.  When you position the caret before an open brace, both that brace and the matching close brace should be highlighted. When you position the cursor just after the close brace, both that brace and the matching open brace should be highlighted.  
   
-## См. также  
- [Пошаговое руководство: Связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+## <a name="see-also"></a>See Also  
+ [Walkthrough: Linking a Content Type to a File Name Extension](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

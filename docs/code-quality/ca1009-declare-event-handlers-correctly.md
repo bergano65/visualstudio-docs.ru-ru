@@ -1,61 +1,76 @@
 ---
-title: "CA1009: правильно объявите обработчики событий | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1009"
-  - "DeclareEventHandlersCorrectly"
-helpviewer_keywords: 
-  - "CA1009"
-  - "DeclareEventHandlersCorrectly"
+title: 'CA1009: Declare event handlers correctly | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1009
+- DeclareEventHandlersCorrectly
+helpviewer_keywords:
+- CA1009
+- DeclareEventHandlersCorrectly
 ms.assetid: ab65c471-1449-49d2-9896-7b9af74284b4
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 19
----
-# CA1009: правильно объявите обработчики событий
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: b0f63af127c6e9b11c1d9e468705bbcca14f39bd
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Declare event handlers correctly
 |||  
 |-|-|  
 |TypeName|DeclareEventHandlersCorrectly|  
 |CheckId|CA1009|  
-|Категория|Microsoft.Design|  
-|Критическое изменение|Критическое изменение|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## Причина  
- Делегат, который обрабатывает открытое или защищенное событие, имеет неправильную подпись, тип возвращаемого значения или имена параметров.  
+## <a name="cause"></a>Cause  
+ A delegate that handles a public or protected event does not have the correct signature, return type, or parameter names.  
   
-## Описание правила  
- Методы обработчиков событий принимают два параметра.  Первый параметр принадлежит типу <xref:System.Object?displayProperty=fullName> и называется "sender".  Это объект, вызвавший событие.  Второй параметр принадлежит типу <xref:System.EventArgs?displayProperty=fullName> и называется "e".  Это данные, связанные с событием.  Например, если событие создается при открытии файла, данные события, как правило, содержат имя файла.  
+## <a name="rule-description"></a>Rule Description  
+ Event handler methods take two parameters. The first is of type <xref:System.Object?displayProperty=fullName> and is named 'sender'. This is the object that raised the event. The second parameter is of type <xref:System.EventArgs?displayProperty=fullName> and is named 'e'. This is the data that is associated with the event. For example, if the event is raised whenever a file is opened, the event data typically contains the name of the file.  
   
- Методы обработчиков событий не должны возвращать значение.  В языке программирования C\# это обозначается типом возвращаемого значения `void`.  Обработчик событий может вызывать несколько методов в нескольких объектах.  Если методам разрешено возвращать значения, для каждого события будет возвращаться несколько значений, однако доступным является только значение последнего вызванного метода.  
+ Event handler methods should not return a value. In the C# programming language, this is indicated by the return type `void`. An event handler can invoke multiple methods in multiple objects. If the methods were allowed to return a value, multiple return values would occur for each event, and only the value of the last method that was invoked would be available.  
   
-## Устранение нарушений  
- Чтобы устранить нарушение данного правила, исправьте подпись, тип возвращаемого значения или имена параметров делегата.  Подробные сведения см. в следующем примере.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, correct the signature, return type, or parameter names of the delegate. For details, see the following example.  
   
-## Отключение предупреждений  
- Для этого правила отключать вывод предупреждений не следует.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## Пример  
- В следующем примере показан делегат, который можно использовать в качестве обработчика событий.  Подписи методов, которые могут вызываться данным обработчиком событий, соответствуют правилам разработки.  `AlarmEventHandler` — имя типа делегата.  `AlarmEventArgs` наследует от базового класса <xref:System.EventArgs> для данных события и содержит данные события оповещения.  
+## <a name="example"></a>Example  
+ The following example shows a delegate that is suited to handling events. The methods that can be invoked by this event handler comply with the signature that is specified in the Design Guidelines. `AlarmEventHandler` is the type name of the delegate. `AlarmEventArgs` derives from the base class for event data, <xref:System.EventArgs>, and holds alarm event data.  
   
- [!code-cpp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CPP/ca1009-declare-event-handlers-correctly_1.cpp)]
- [!code-cs[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CSharp/ca1009-declare-event-handlers-correctly_1.cs)]
- [!code-vb[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/VisualBasic/ca1009-declare-event-handlers-correctly_1.vb)]  
+ [!code-cpp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CPP/ca1009-declare-event-handlers-correctly_1.cpp)] [!code-csharp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CSharp/ca1009-declare-event-handlers-correctly_1.cs)] [!code-vb[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/VisualBasic/ca1009-declare-event-handlers-correctly_1.vb)]  
   
-## Связанные правила  
- [CA2109: проверьте видимые обработчики событий](../code-quality/ca2109-review-visible-event-handlers.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA2109: Review visible event handlers](../code-quality/ca2109-review-visible-event-handlers.md)  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  <xref:System.EventArgs?displayProperty=fullName>   
  <xref:System.Object?displayProperty=fullName>   
- [События и делегаты](http://msdn.microsoft.com/ru-ru/d98fd58b-fa4f-4598-8378-addf4355a115)
+ [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115)

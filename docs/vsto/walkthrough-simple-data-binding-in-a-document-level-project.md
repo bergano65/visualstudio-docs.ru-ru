@@ -1,201 +1,201 @@
 ---
-title: "Пошаговое руководство. Простая привязка данных в проекте уровня документа"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "данные [разработка решений Office в Visual Studio], привязка данных"
-  - "привязка данных [разработка решений Office в Visual Studio], ячейки листа к полю базы данных"
-  - "поле базы данных [разработка решений Office в Visual Studio]"
-  - "простая привязка данных [разработка решений Office в Visual Studio]"
-  - "листы [разработка решений Office в Visual Studio], привязка ячейки листа к полю базы данных"
+title: 'Walkthrough: Simple Data Binding in a Document-Level Project | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- data binding [Office development in Visual Studio], worksheet cell to Database field
+- worksheets [Office development in Visual Studio], binding worksheet cell to Database field
+- Database field [Office development in Visual Studio]
+- data [Office development in Visual Studio], binding data
+- simple data binding [Office development in Visual Studio]
 ms.assetid: 6b8fd638-af13-4ea1-b1c0-2763e2d8ae23
 caps.latest.revision: 58
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 57
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: ffe9f48755d77ad09430b08391e1aee10089c973
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Простая привязка данных в проекте уровня документа
-  В этом пошаговом руководстве демонстрируются основные сведения о привязке данных в проекте уровня документа.  Одно поле данных в базе данных SQL Server привязывается к именованному диапазону в Microsoft Office Excel.  В пошаговом руководстве также показано, как добавлять элементы управления, позволяющие прокручивать все записи в таблице.  
+# <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Walkthrough: Simple Data Binding in a Document-Level Project
+  This walkthrough demonstrates the basics of data binding in a document-level project. A single data field in a SQL Server database is bound to a named range in Microsoft Office Excel. The walkthrough also shows how to add controls that enable you to scroll through all the records in the table.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- В данном пошаговом руководстве рассмотрены следующие задачи:  
+ This walkthrough illustrates the following tasks:  
   
--   Создание источника данных для проекта Excel.  
+-   Creating a data source for an Excel project.  
   
--   Добавление элементов управления на лист.  
+-   Adding controls to a worksheet.  
   
--   Прокручивание записей базы данных.  
+-   Scrolling through database records.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] или [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] or [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
--   Доступ к серверу с примером базы данных "Northwind" SQL Server.  
+-   Access to a server with the Northwind SQL Server sample database.  
   
--   Разрешения на чтение из базы данных SQL Server и запись в нее.  
+-   Permissions to read from and write to the SQL Server database.  
   
-## Создание нового проекта  
- На этом шаге создается проект книги Excel.  
+## <a name="creating-a-new-project"></a>Creating a New Project  
+ In this step, you will create an Excel workbook project.  
   
-#### Создание нового проекта  
+#### <a name="to-create-a-new-project"></a>To create a new project  
   
-1.  Создайте проект книги Excel с именем **Простая привязка данных** в Visual Basic или C\#.  Убедитесь, что выбрано **Создать новый документ**.  Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Create an Excel workbook project with the name **My Simple Data Binding**, using either Visual Basic or C#. Make sure that **Create a new document** is selected. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
- Созданная книга Excel открывается в конструкторе Visual Studio. Проект "Простая привязка данных" добавляется в **Обозреватель решений**.  
+ Visual Studio opens the new Excel workbook in the designer and adds the **My Simple Data Binding** project to **Solution Explorer**.  
   
-## Создание источника данных  
- Чтобы добавить типизированный набор данных в проект, следует использовать окно **Источники данных**.  
+## <a name="creating-the-data-source"></a>Creating the Data Source  
+ Use the **Data Sources** window to add a typed dataset to your project.  
   
-#### Создание источника данных  
+#### <a name="to-create-the-data-source"></a>To create the data source  
   
-1.  Если окно **Источники данных** не отображается, его отображение в строке меню, выбирая **Вид**, **Другие окна**, **Источники данных**.  
+1.  If the **Data Sources** window is not visible, display it by, on the menu bar, choosing **View**, **Other Windows**, **Data Sources**.  
   
-2.  Выберите **Добавить новый источник данных**, чтобы запустить **Мастер настройки источника данных**.  
+2.  Choose **Add New Data Source** to start the **Data Source Configuration Wizard**.  
   
-3.  Выберите **База данных** и нажмите **Далее**.  
+3.  Select **Database** and then click **Next**.  
   
-4.  Выберите подключение к базе данных SQL Server "Northwind" или добавьте новое подключение с помощью кнопки **Новое подключение**.  
+4.  Select a data connection to the Northwind sample SQL Server database, or add a new connection using the **New Connection** button.  
   
-5.  После выбора или создания подключения нажмите **Далее**.  
+5.  After a connection has been selected or created, click **Next**.  
   
-6.  Чтобы сохранить подключение, снимите флажок, если он установлен, и нажмите **Далее**.  
+6.  Clear the option to save the connection if it is selected, and then click **Next**.  
   
-7.  В окне **Объекты базы данных** разверните узел **Таблицы**.  
+7.  Expand the **Tables** node in the **Database objects** window.  
   
-8.  Установите флажок возле таблицы **Клиенты**.  
+8.  Select the check box next to the **Customers** table.  
   
-9. Нажмите кнопку **Готово**.  
+9. Click **Finish**.  
   
- Мастер добавит таблицу **Клиенты** в окно **Источники данных**.  Также к проекту добавляется типизированный набор данных, который отображается в **Обозревателе решений**.  
+ The wizard adds the **Customers** table to the **Data Sources** window. It also adds a typed dataset to your project that is visible in **Solution Explorer**.  
   
-## Добавление элементов управления на лист  
- Для выполнения этого пошагового руководства потребуется два именованных диапазона и четыре кнопки на первом листе.  Сначала добавьте два именованных диапазона из окна **Источники данных**, чтобы обеспечить их автоматическое связывание с источником данных.  Далее добавьте кнопки с **Панели элементов**.  
+## <a name="adding-controls-to-the-worksheet"></a>Adding Controls to the Worksheet  
+ For this walkthrough, you need two named ranges and four buttons on the first worksheet. First, add the two named ranges from the **Data Sources** window so that they are automatically bound to the data source. Next, add the buttons from the **Toolbox**.  
   
-#### Добавление двух именованных диапазонов  
+#### <a name="to-add-two-named-ranges"></a>To add two named ranges  
   
-1.  Убедитесь, что книга **Мои простые данные Binding.xlsx** открыта в конструкторе Visual Studio, и отображается **Лист1**.  
+1.  Verify that the **My Simple Data Binding.xlsx** workbook is open in the Visual Studio designer, with **Sheet1** displayed.  
   
-2.  Откройте окно **Источники данных** и разверните узел **Клиенты**.  
+2.  Open the **Data Sources** window and expand the **Customers** node.  
   
-3.  Выберите столбец **Имя компании** и щелкните отображаемую стрелку раскрывающегося списка.  
+3.  Select the **CompanyName** column, and then click the drop-down arrow that appears.  
   
-4.  Выберите в раскрывающемся списке объект **NamedRange** и перетащите его в ячейку **A1** столбца **Имя компании**.  
+4.  Select **NamedRange** in the drop-down list, and then drag the **CompanyName** column to cell **A1**.  
   
-     Элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> с именем `companyNameNamedRange` is created in cell **A1**.  Одновременно в проект добавляются элемент управления <xref:System.Windows.Forms.BindingSource> с именем `customersBindingSource`, адаптер таблиц и экземпляр класса <xref:System.Data.DataSet>.  Элемент управления связан с объектом <xref:System.Windows.Forms.BindingSource>, который в свою очередь связан с экземпляром <xref:System.Data.DataSet>.  
+     A <xref:Microsoft.Office.Tools.Excel.NamedRange> control named `companyNameNamedRange` is created in cell **A1**. At the same time, a <xref:System.Windows.Forms.BindingSource> named `customersBindingSource`, a table adapter, and a <xref:System.Data.DataSet> instance are added to the project. The control is bound to the <xref:System.Windows.Forms.BindingSource>, which in turn is bound to the <xref:System.Data.DataSet> instance.  
   
-5.  Выберите столбец **Идентификатор клиента** в окне **Источники данных** и затем щелкните по стрелке появившегося раскрывающегося списка.  
+5.  Select the **CustomerID** column in the **Data Sources** window, and then click the drop-down arrow that appears.  
   
-6.  Выберите в раскрывающемся списке объект **NamedRange** и перетащите его в ячейку **B1** столбца **Идентификатор клиента**.  
+6.  Click **NamedRange** in the drop-down list, and then drag the **CustomerID** column to cell **B1**.  
   
-7.  Элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> с именем `customerIDNamedRange` создается в ячейке **B1** и привязывается к <xref:System.Windows.Forms.BindingSource>.  
+7.  Another <xref:Microsoft.Office.Tools.Excel.NamedRange> control named `customerIDNamedRange` is created in cell **B1**, and bound to the <xref:System.Windows.Forms.BindingSource>.  
   
-#### Добавление четырех кнопок  
+#### <a name="to-add-four-buttons"></a>To add four buttons  
   
-1.  Со вкладки **Стандартные элементы управленияПанели элементов** перетащите элемент управления <xref:System.Windows.Forms.Button> в ячейку **A3** листа.  
+1.  From the **Common Controls** tab of the **Toolbox**, add a <xref:System.Windows.Forms.Button> control to cell **A3** of the worksheet.  
   
-     Этой кнопке присваивается имя `Button1`.  
+     This button is named `Button1`.  
   
-2.  Добавьте еще три кнопки в следующие ячейки по порядку, их имена будут следующими:  
+2.  Add three more buttons to the following cells in this order, so that the names are as shown:  
   
-    |Ячейка|\(Имя\)|  
-    |------------|-------------|  
+    |Cell|(Name)|  
+    |----------|--------------|  
     |B3|Button2|  
     |C3|Button3|  
     |D3|Button4|  
   
- Далее следует добавить текст для кнопок. В C\# также добавляются обработчики событий.  
+ The next step is to add text to the buttons, and in C# add event handlers.  
   
-## Инициализация элементов управления  
- Установите текст кнопки и добавьте обработчики событий в событии <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>.  
+## <a name="initializing-the-controls"></a>Initializing the Controls  
+ Set the button text and add event handlers during the <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> event.  
   
-#### Инициализация элементов управления  
+#### <a name="to-initialize-the-controls"></a>To initialize the controls  
   
-1.  В **Обозревателе решений** щелкните правой кнопкой мыши **Лист1.vb** или **Лист1.cs** и выберите в контекстном меню команду **Перейти к коду**.  
+1.  In **Solution Explorer**, right-click **Sheet1.vb** or **Sheet1.cs**, and then click **View Code** on the shortcut menu.  
   
-2.  В метод `Sheet1_Startup` добавьте следующий код, в котором задается текст каждой кнопки.  
+2.  Add the following code to the `Sheet1_Startup` method to set the text for each button.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet1.cs#2)]
-     [!code-vb[Trin_VstcoreDataExcel#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet1.vb#2)]  
+     [!code-csharp[Trin_VstcoreDataExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#2)]  [!code-vb[Trin_VstcoreDataExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#2)]  
   
-3.  Добавьте обработчики событий для событий Click кнопок в метод `Sheet1_Startup` \(только для C\#\).  
+3.  For C# only, add event handlers for the button click events to the `Sheet1_Startup` method.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#3](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet1.cs#3)]  
+     [!code-csharp[Trin_VstcoreDataExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#3)]  
   
- Добавьте обработчик событий <xref:System.Windows.Forms.Control.Click> кнопок, чтобы пользователь мог просматривать записи прокруткой.  
+ Now add code to handle the <xref:System.Windows.Forms.Control.Click> events of the buttons so that the user can browse through the records.  
   
-## Добавление кода, включающего прокрутку записей  
- Чтобы включить перемещение по записям, добавьте код в обработчики событий <xref:System.Windows.Forms.Control.Click> для каждой кнопки.  
+## <a name="adding-code-to-enable-scrolling-through-the-records"></a>Adding Code to Enable Scrolling Through the Records  
+ Add code to the <xref:System.Windows.Forms.Control.Click> event handler of each button to move through the records.  
   
-#### Переход к первой записи  
+#### <a name="to-move-to-the-first-record"></a>To move to the first record  
   
-1.  Добавьте обработчик событий <xref:System.Windows.Forms.Control.Click> кнопки `Button1` и добавьте следующий код, чтобы перейти к первой записи:  
+1.  Add an event handler for the <xref:System.Windows.Forms.Control.Click> event of the `Button1` button, and add the following code to move to the first record:  
   
-     [!code-csharp[Trin_VstcoreDataExcel#4](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet1.cs#4)]
-     [!code-vb[Trin_VstcoreDataExcel#4](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet1.vb#4)]  
+     [!code-csharp[Trin_VstcoreDataExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#4)]  [!code-vb[Trin_VstcoreDataExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#4)]  
   
-#### Переход к предыдущей записи  
+#### <a name="to-move-to-the-previous-record"></a>To move to the previous record  
   
-1.  Добавьте обработчик событий <xref:System.Windows.Forms.Control.Click> кнопки `Button2` и добавьте следующий код, чтобы перейти к записи, находящейся на одну позицию раньше:  
+1.  Add an event handler for the <xref:System.Windows.Forms.Control.Click> event of the `Button2` button, and add the following code to move the position back by one:  
   
-     [!code-csharp[Trin_VstcoreDataExcel#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet1.cs#5)]
-     [!code-vb[Trin_VstcoreDataExcel#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet1.vb#5)]  
+     [!code-csharp[Trin_VstcoreDataExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#5)]  [!code-vb[Trin_VstcoreDataExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#5)]  
   
-#### Переход к следующей записи  
+#### <a name="to-move-to-the-next-record"></a>To move to the next record  
   
-1.  Добавьте обработчик событий <xref:System.Windows.Forms.Control.Click> кнопки `Button3` и добавьте следующий код, чтобы перейти к записи, находящейся на одну позицию дальше:  
+1.  Add an event handler for the <xref:System.Windows.Forms.Control.Click> event of the `Button3` button, and add the following code to advance the position by one:  
   
-     [!code-csharp[Trin_VstcoreDataExcel#6](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet1.cs#6)]
-     [!code-vb[Trin_VstcoreDataExcel#6](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet1.vb#6)]  
+     [!code-csharp[Trin_VstcoreDataExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#6)]  [!code-vb[Trin_VstcoreDataExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#6)]  
   
-#### Переход к последней записи  
+#### <a name="to-move-to-the-last-record"></a>To move to the last record  
   
-1.  Добавьте обработчик событий <xref:System.Windows.Forms.Control.Click> кнопки `Button4` и добавьте следующий код, чтобы перейти к последней записи:  
+1.  Add an event handler for the <xref:System.Windows.Forms.Control.Click> event of the `Button4` button, and add the following code to move to the last record:  
   
-     [!code-csharp[Trin_VstcoreDataExcel#7](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet1.cs#7)]
-     [!code-vb[Trin_VstcoreDataExcel#7](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet1.vb#7)]  
+     [!code-csharp[Trin_VstcoreDataExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#7)]  [!code-vb[Trin_VstcoreDataExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#7)]  
   
-## Тестирование приложения  
- Теперь можно выполнить тестирование книги, чтобы проверить возможность просмотра записей в базе данных при помощи прокрутки.  
+## <a name="testing-the-application"></a>Testing the Application  
+ Now you can test your workbook to make sure that you can browse through the records in the database.  
   
-#### Проверка рабочей книги  
+#### <a name="to-test-your-workbook"></a>To test your workbook  
   
-1.  Нажмите клавишу F5 для запуска проекта.  
+1.  Press F5 to run your project.  
   
-2.  Убедитесь, что первая запись появилась в ячейках **A1** и **B1**.  
+2.  Confirm that the first record appears in cells **A1** and **B1**.  
   
-3.  Нажмите кнопку **\>** \(`Button3`\) и убедитесь, что следующая запись появилась в ячейках **A1** и **B1**.  
+3.  Click the **>** (`Button3`) button and confirm that the next record appears in cell **A1** and **B1**.  
   
-4.  Нажмите на другую прокручивающую кнопку и убедитесь, что записи меняются так, как это предполагалось.  
+4.  Click the other scroll buttons to confirm that the record changes as expected.  
   
-## Следующие действия  
- Данное пошаговое руководство демонстрирует основные понятия привязки именованного диапазона к полю в базе данных.  Далее будут рассмотрены следующие задачи:  
+## <a name="next-steps"></a>Next Steps  
+ This walkthrough shows the basics of binding a named range to a field in a database. Here are some tasks that might come next:  
   
--   Кэширование данных для использования в автономном режиме.  Дополнительные сведения см. в разделе [Практическое руководство. Кэширование данных для автономного использования или для использования на сервере](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   Cache the data so that it can be used offline. For more information, see [How to: Cache Data for Use Offline or on a Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
--   Привязка ячейки к нескольким столбцам в таблице вместо одного поля.  Дополнительные сведения см. в разделе [Пошаговое руководство. Сложная привязка данных в проекте уровня документа](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).  
+-   Bind cells to multiple columns in a table, instead of to one field. For more information, see [Walkthrough: Complex Data Binding in a Document-Level Project](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).  
   
--   Использование <xref:System.Windows.Forms.BindingNavigator> для прокрутки записи.  Дополнительные сведения см. в разделе [Практическое руководство. Переход между данными с помощью элемента управления BindingNavigator в Windows Forms](http://msdn.microsoft.com/library/0e5d4f34-bc9b-47cf-9b8d-93acbb1f1dbb).  
+-   Use a <xref:System.Windows.Forms.BindingNavigator> control to scroll through the records. For more information, see [How to: Navigate Data with the Windows Forms BindingNavigator Control](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
   
-## См. также  
- [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Данные в решениях Office](../vsto/data-in-office-solutions.md)   
- [Пошаговое руководство. Сложная привязка данных в проекте уровня документа](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
+## <a name="see-also"></a>See Also  
+ [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Data in Office Solutions](../vsto/data-in-office-solutions.md)   
+ [Walkthrough: Complex Data Binding in a Document-Level Project](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
   
   

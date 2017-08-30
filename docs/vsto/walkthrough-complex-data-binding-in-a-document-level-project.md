@@ -1,233 +1,236 @@
 ---
-title: "Пошаговое руководство. Сложная привязка данных в проекте уровня документа"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "сложные данные [разработка решений Office в Visual Studio]"
-  - "данные [разработка решений Office в Visual Studio], привязка данных"
-  - "привязка данных [разработка решений Office в Visual Studio], несколько столбцов"
-  - "несколько столбцов - привязка данных [разработка решений Office в Visual Studio]"
+title: 'Walkthrough: Complex Data Binding in a Document-Level Project | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- data [Office development in Visual Studio], binding data
+- complex data [Office development in Visual Studio]
+- multiple column data binding [Office development in Visual Studio]
+- data binding [Office development in Visual Studio], multiple columns
 ms.assetid: 32ffad3d-fba4-476a-99b8-ef440434f4e1
 caps.latest.revision: 50
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 49
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: eabb6c71606a980cb0056bd844e93cde6c3a746e
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Сложная привязка данных в проекте уровня документа
-  В этом пошаговом руководстве демонстрируются основные сведения о сложной привязке данных в проекте уровня документа.  Можно связывать множество ячеек в листе Microsoft Office Excel с полями в базе данных Northwind SQL Server.  
+# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Walkthrough: Complex Data Binding in a Document-Level Project
+  This walkthrough demonstrates the basics of complex data binding in a document-level project. You can bind multiple cells in a Microsoft Office Excel worksheet to fields in the Northwind SQL Server database.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- В данном пошаговом руководстве рассмотрены следующие задачи:  
+ This walkthrough illustrates the following tasks:  
   
--   Добавление источника данных к проекту книги.  
+-   Adding a data source to your workbook project.  
   
--   Добавление элементов управления с привязкой к данным на лист.  
+-   Adding data-bound controls to a worksheet.  
   
--   Сохранение измененных данных обратно в базу данных.  
+-   Saving data changes back to the database.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] или [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] or [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
--   Доступ к серверу с примером базы данных "Northwind" SQL Server.  
+-   Access to a server with the Northwind SQL Server sample database.  
   
--   Разрешения на чтение из базы данных SQL Server и запись в нее.  
+-   Permissions to read from and write to the SQL Server database.  
   
-## Создание нового проекта  
- На первом этапе необходимо создать проект книги Excel.  
+## <a name="creating-a-new-project"></a>Creating a New Project  
+ The first step is to create an Excel workbook project.  
   
-#### Создание нового проекта  
+#### <a name="to-create-a-new-project"></a>To create a new project  
   
-1.  Создайте проект книги Excel с именем **Сложная привязка данных**.  Выберите в мастере **Создать новый документ**.  
+1.  Create an Excel workbook project with the name **My Complex Data Binding**. In the wizard, select **Create a new document**.  
   
-     Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Созданная книга Excel открывается в конструкторе Visual Studio. Проект "Сложная привязка данных" добавляется в **Обозреватель решений**.  
+     Visual Studio opens the new Excel workbook in the designer and adds the **My Complex Data Binding** project to **Solution Explorer**.  
   
-## Создание источника данных  
- Чтобы добавить типизированный набор данных в проект, следует использовать окно **Источники данных**.  
+## <a name="creating-the-data-source"></a>Creating the Data Source  
+ Use the **Data Sources** window to add a typed dataset to your project.  
   
-#### Создание источника данных  
+#### <a name="to-create-the-data-source"></a>To create the data source  
   
-1.  Если окно **Источники данных** не отображается, его отображение в строке меню, выбирая **Вид**, **Другие окна**, **Источники данных**.  
+1.  If the **Data Sources** window is not visible, display it by, on the menu bar, choosing **View**, **Other Windows**, **Data Sources**.  
   
-2.  Выберите **Добавить новый источник данных**, чтобы запустить **Мастер настройки источника данных**.  
+2.  Choose **Add New Data Source** to start the **Data Source Configuration Wizard**.  
   
-3.  Выберите **База данных** и нажмите **Далее**.  
+3.  Select **Database** and then click **Next**.  
   
-4.  Выберите подключение к базе данных SQL Server "Northwind" или добавьте новое подключение с помощью кнопки **Новое подключение**.  
+4.  Select a data connection to the Northwind sample SQL Server database, or add a new connection by using the **New Connection** button.  
   
-5.  После выбора или создания подключения нажмите **Далее**.  
+5.  After a connection has been selected or created, click **Next**.  
   
-6.  Чтобы сохранить подключение, снимите флажок, если он установлен, и нажмите **Далее**.  
+6.  Clear the option to save the connection if it is selected, and then click **Next**.  
   
-7.  В окне **Объекты базы данных** разверните узел **Таблицы**.  
+7.  Expand the **Tables** node in the **Database objects** window.  
   
-8.  Установите флажок рядом с таблицей **Сотрудники**.  
+8.  Select the check box next to the **Employees** table.  
   
-9. Нажмите кнопку **Готово**.  
+9. Click **Finish**.  
   
- Мастер добавит таблицу **Сотрудники** в окно **Источники данных**.  Также к проекту добавляется типизированный набор данных, который отображается в **Обозревателе решений**.  
+ The wizard adds the **Employees** table to the **Data Sources** window. It also adds a typed dataset to your project that is visible in **Solution Explorer**.  
   
-## Добавление элементов управления на лист  
- Если книга открыта, на листе отобразится таблица **Сотрудники**.  Пользователи смогут изменять данные и сохранять изменения в базе данных, нажимая кнопку.  
+## <a name="adding-controls-to-the-worksheet"></a>Adding Controls to the Worksheet  
+ A worksheet will display the **Employees** table when the workbook is opened. Users will be able to make changes to the data and then save those changes back to the database by clicking a button.  
   
- Чтобы автоматически привязать лист к таблице, можно добавить на лист элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> из окна **Источники данных**.  Чтобы разрешить пользователям сохранять изменения, нужно добавить элемент управления <xref:System.Windows.Forms.Button> с **панели элементов**.  
+ To bind the worksheet to the table automatically, you can add a <xref:Microsoft.Office.Tools.Excel.ListObject> control to the worksheet from the **Data Sources** window. To give the user the option to save changes, add a <xref:System.Windows.Forms.Button> control from the **Toolbox**.  
   
-#### Добавление объекта списка  
+#### <a name="to-add-a-list-object"></a>To add a list object  
   
-1.  Убедитесь, что книга **Мои сложные данные Binding.xlsx** открыта в конструкторе Visual Studio, и отображается **Лист1**.  
+1.  Verify that the **My Complex Data Binding.xlsx** workbook is open in the Visual Studio designer, with **Sheet1** displayed.  
   
-2.  Откройте окно **Источники данных** и выберите узел **Сотрудники**.  
+2.  Open the **Data Sources** window and select the **Employees** node.  
   
-3.  Щелкните стрелку раскрывающегося списка, которая появляется после выбора элемента.  
+3.  Click the drop-down arrow that appears.  
   
-4.  Выберите в раскрывающемся списке **ListObject**.  
+4.  Select **ListObject** in the drop-down list.  
   
-5.  Перетащите таблицу **Сотрудники** в ячейку **А6**.  
+5.  Drag the **Employees** table to cell **A6**.  
   
-     В ячейке **А6** будет создан элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> с именем `EmployeesListObject`.  Одновременно в проект добавляются элемент управления <xref:System.Windows.Forms.BindingSource> с именем `EmployeesBindingSource`, адаптер таблиц и экземпляр класса <xref:System.Data.DataSet>.  Элемент управления связан с объектом <xref:System.Windows.Forms.BindingSource>, который в свою очередь связан с экземпляром <xref:System.Data.DataSet>.  
+     A <xref:Microsoft.Office.Tools.Excel.ListObject> control named `EmployeesListObject` is created in cell **A6**. At the same time, a <xref:System.Windows.Forms.BindingSource> named `EmployeesBindingSource`, a table adapter, and a <xref:System.Data.DataSet> instance are added to the project. The control is bound to the <xref:System.Windows.Forms.BindingSource>, which in turn is bound to the <xref:System.Data.DataSet> instance.  
   
-#### Добавление кнопки  
+#### <a name="to-add-a-button"></a>To add a button  
   
-1.  Со вкладки **Стандартные элементы управленияПанели элементов** перетащите элемент управления <xref:System.Windows.Forms.Button> в ячейку **A4** листа.  
+1.  From the **Common Controls** tab of the **Toolbox**, add a <xref:System.Windows.Forms.Button> control to cell **A4** of the worksheet.  
   
- Следующим шагом будет добавление текста к кнопке при открытии листа.  
+ The next step is to add text to the button when the worksheet opens.  
   
-## Инициализация элемента управления  
- Добавьте текст к кнопке в обработчике событий <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>.  
+## <a name="initializing-the-control"></a>Initializing the Control  
+ Add text to the button in the <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> event handler.  
   
-#### Инициализация элемента управления  
+#### <a name="to-initialize-the-control"></a>To initialize the control  
   
-1.  В **Обозревателе решений** щелкните правой кнопкой мыши **Лист1.vb** или **Лист1.cs** и выберите в контекстном меню команду **Перейти к коду**.  
+1.  In **Solution Explorer**, right-click **Sheet1.vb** or **Sheet1.cs**, and then click **View Code** on the shortcut menu.  
   
-2.  Добавьте следующий код в метод `Sheet1_Startup`, чтобы задать текст для кнопки b`utton`:  
+2.  Add the following code to the `Sheet1_Startup` method to set the text for the b`utton`.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#8](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet3.cs#8)]
-     [!code-vb[Trin_VstcoreDataExcel#8](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet3.vb#8)]  
+     [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]  [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]  
   
-3.  Добавьте обработчик событий для события <xref:System.Windows.Forms.Control.Click> в метод `Sheet1_Startup` \(только в C\#\).  
+3.  For C# only, add an event handler for the <xref:System.Windows.Forms.Control.Click> event to the `Sheet1_Startup` method.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#9](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet3.cs#9)]  
+     [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]  
   
- Теперь добавьте код, обрабатывающий событие кнопки <xref:System.Windows.Forms.Control.Click>.  
+ Now add code to handle the <xref:System.Windows.Forms.Control.Click> event of the button.  
   
-## Сохранение изменений в базе данных  
- Любые изменения данных существуют только в локальном наборе данных до тех пор, пока они не будут явным образом сохранены обратно в базу данных.  
+## <a name="saving-changes-to-the-database"></a>Saving Changes to the Database  
+ Any changes have been made to the data exist only in the local dataset until they are explicitly saved back to the database.  
   
-#### Сохранение изменений в базе данных  
+#### <a name="to-save-changes-to-the-database"></a>To save changes to the database  
   
-1.  Добавьте обработчик событий для события <xref:System.Windows.Forms.Control.Click> кнопки b`utton`, а затем добавьте следующий код, чтобы зафиксировать изменения в наборе данных в базе данных:  
+1.  Add an event handler for the <xref:System.Windows.Forms.Control.Click> event of the b`utton`, and add the following code to commit all changes that have been made in the dataset back to the database.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#10](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet3.cs#10)]
-     [!code-vb[Trin_VstcoreDataExcel#10](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet3.vb#10)]  
+     [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]  [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]  
   
-## Тестирование приложения  
- Теперь можно приступить к тестированию книги, чтобы проверить корректность отображения данных, а также возможность оперировать данными в объекте списка.  
+## <a name="testing-the-application"></a>Testing the Application  
+ Now you can test your workbook to verify that the data appears as expected, and that you can manipulate the data in the list object.  
   
-#### Тестирование привязки данных  
+#### <a name="to-test-the-data-binding"></a>To test the data binding  
   
--   Нажмите клавишу F5.  
+-   Press F5.  
   
-     При открытии книги необходимо убедиться, что объект списка заполнен данными из таблицы **Сотрудники**.  
+     Verify that when the workbook opens, the list object is filled with data from the **Employees** table.  
   
-#### Изменение данных  
+#### <a name="to-modify-data"></a>To modify data  
   
-1.  Щелкните ячейку **B7**, в которой должна стоять фамилия **Даволио**.  
+1.  Click cell **B7**, which should contain the name **Davolio**.  
   
-2.  Введите фамилию Куликов и нажмите клавишу ВВОД.  
+2.  Type the name **Anderson**, and then press ENTER.  
   
-#### Изменение заголовка столбца  
+#### <a name="to-modify-a-column-header"></a>To modify a column header  
   
-1.  Щелкните ячейку, в которой содержится заголовок столбца **Фамилия**.  
+1.  Click the cell that contains the column header **LastName**.  
   
-2.  Введите "Фамилия сотрудника" с пробелом между двумя словами и нажмите клавишу ВВОД.  
+2.  Type **Last Name**, including a space between the two words, and then press ENTER.  
   
-#### Сохранение данных  
+#### <a name="to-save-data"></a>To save data  
   
-1.  На листе выберите пункт **Сохранить**.  
+1.  Click **Save** on the worksheet.  
   
-2.  Закройте приложение Excel.  Когда отобразится окно с запросом о сохранении изменений, нажмите кнопку **Нет**.  
+2.  Exit Excel. Click **No** when prompted to save the changes you made.  
   
-3.  Нажмите клавишу F5, чтобы повторно запустить проект.  
+3.  Press F5 to run the project again.  
   
-     Объект списка заполняется данными из таблицы **Сотрудники**.  
+     The list object is filled with data from the **Employees** table.  
   
-4.  Обратите внимание, что в ячейке **B7** осталась фамилия Куликов — это изменение, которое было сохранено в базе данных.  Заголовок столбца **Фамилия** был воссоздан в исходном виде, поскольку заголовок столбца не привязан к базе данных, и изменения на листе не были сохранены.  
+4.  Notice that the name in cell **B7** is still **Anderson**, which is the data change that you made and saved back to the database. The column header **LastName** has changed back to its original form with no space, because the column header is not bound to the database and you did not save the changes you made to the worksheet.  
   
-#### Добавление новых строк  
+#### <a name="to-add-new-rows"></a>To add new rows  
   
-1.  Выберите ячейку в объекте списка.  
+1.  Select a cell inside the list object.  
   
-     В нижней части списка появляется новая строка со звездочкой \(**\***\) в первой ячейке.  
+     A new row appears at the bottom of the list, with an asterisk (**\***) in the first cell of the new row.  
   
-2.  Добавьте в пустую строку следующие данные:  
+2.  Add the following information in the empty row.  
   
-    |КодСотрудника|LastName|FirstName|Заголовок|  
-    |-------------------|--------------|---------------|---------------|  
-    |10|Егоров|Вадим|Менеджер по продажам|  
+    |EmployeeID|LastName|FirstName|Title|  
+    |----------------|--------------|---------------|-----------|  
+    |10|Ito|Shu|Sales Manager|  
   
-#### Удаление строк  
+#### <a name="to-delete-rows"></a>To delete rows  
   
--   Щелкните правой кнопкой мыши номер 16 \(строку 16\) с самого левого края листа и выберите команду **Удалить**.  
+-   Right-click the number 16 (row 16) on the far left side of the worksheet, and then click **Delete**.  
   
-#### Сортировка строк в списке  
+#### <a name="to-sort-the-rows-in-the-list"></a>To sort the rows in the List  
   
-1.  Выберите ячейку в списке.  
+1.  Select a cell inside the list.  
   
-     В заголовке каждого столбца появятся кнопки со стрелками.  
+     Arrow buttons appear in each column header.  
   
-2.  Нажмите кнопку со стрелкой в заголовке столбца **LastName**.  
+2.  Click the arrow button in the **Last Name** column header.  
   
-3.  Выберите пункт **Сортировка по возрастанию**.  
+3.  Click **Sort Ascending**.  
   
-     Строки будут отсортированы в алфавитном порядке по фамилии.  
+     The rows are sorted alphabetically by last names.  
   
-#### Фильтр данных  
+#### <a name="to-filter-information"></a>To filter information  
   
-1.  Выберите ячейку в списке.  
+1.  Select a cell inside the list.  
   
-2.  Нажмите кнопку со стрелкой в заголовке столбца **Title**.  
+2.  Click the arrow button in the **Title** column header.  
   
-3.  Выберите пункт **Торговый представитель**.  
+3.  Click **Sales Representative**.  
   
-     В списке будут оставлены только те строки, в которых в столбце **Заголовок** стоит текст **Торговый представитель**.  
+     The list shows only those rows that have **Sales Representative** in the **Title** column.  
   
-4.  Снова нажмите кнопку со стрелкой в заголовке столбца **Title**.  
+4.  Click the arrow button in the **Title** column header again.  
   
-5.  Выберите **\(Все\)**.  
+5.  Click **(All)**.  
   
-     Фильтр удаляется и отображаются все строки.  
+     Filtering is removed and all the rows appear.  
   
-## Следующие действия  
- Данное пошаговое руководство демонстрирует основы привязки таблицы в базе данных к объекту списка.  Далее будут рассмотрены следующие задачи:  
+## <a name="next-steps"></a>Next Steps  
+ This walkthrough shows the basics of binding a table in a database to a list object. Here are some tasks that might come next:  
   
--   Кэширование данных для использования в автономном режиме.  Дополнительные сведения см. в разделе [Практическое руководство. Кэширование данных для автономного использования или для использования на сервере](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   Cache the data so that it can be used offline. For more information, see [How to: Cache Data for Use Offline or on a Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
--   Развертывание решения.  Дополнительные сведения см. в разделе [Развертывание решения Office](../vsto/deploying-an-office-solution.md).  
+-   Deploy the solution. For more information, see [Deploying an Office Solution](../vsto/deploying-an-office-solution.md).  
   
--   Создание отношения "основной\-подробности" между полем и таблицей.  Дополнительные сведения см. в разделе [Пошаговое руководство. Создание иерархического отношения с помощью кэшированного набора данных](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).  
+-   Create a master/detail relation between a field and a table. For more information, see [Walkthrough: Creating a Master Detail Relation Using a Cached Dataset](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).  
   
-## См. также  
- [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Данные в решениях Office](../vsto/data-in-office-solutions.md)   
- [Пошаговое руководство. Простая привязка данных в проекте уровня документа](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
+## <a name="see-also"></a>See Also  
+ [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Data in Office Solutions](../vsto/data-in-office-solutions.md)   
+ [Walkthrough: Simple Data Binding in a Document-Level Project](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
   
   

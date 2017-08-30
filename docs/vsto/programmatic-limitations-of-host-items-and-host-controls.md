@@ -1,100 +1,103 @@
 ---
-title: "Программные ограничения ведущих элементов и элементов управления ведущего приложения"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "документы Office [разработка решений Office в Visual Studio], элементы управления ведущего приложения"
-  - "разработка приложений [разработка решений Office в Visual Studio], ведущие элементы"
-  - "приложения Office [разработка решений Office в Visual Studio], ведущие элементы"
-  - "ведущие элементы [разработка решений Office в Visual Studio], программные ограничения"
-  - "Excel [разработка решений Office в Visual Studio], ведущие элементы"
-  - "элементы управления ведущего приложения [разработка решений Office в Visual Studio], создание"
-  - "настройки уровня документа [разработка решений Office в Visual Studio], элементы управления ведущего приложения"
-  - "приложения Office [разработка решений Office в Visual Studio], элементы управления ведущего приложения"
-  - "документы [разработка решений Office в Visual Studio], элементы управления ведущего приложения"
-  - "элементы управления [разработка решений Office в Visual Studio], элементы управления ведущего приложения"
-  - "элементы управления ведущего приложения [разработка решений Office в Visual Studio], передача методам и свойствам"
-  - "разработка приложений [разработка решений Office в Visual Studio], элементы управления ведущего приложения"
-  - "Excel [разработка решений Office в Visual Studio], элементы управления ведущего приложения"
-  - "элементы управления ведущего приложения [разработка решений Office в Visual Studio], программные ограничения"
-  - "документы [разработка решений Office в Visual Studio], ведущие элементы"
-  - "документы Office [разработка решений Office в Visual Studio], ведущие элементы"
-  - "Word [разработка решений Office в Visual Studio], ведущие элементы"
-  - "настройки уровня документа [разработка решений Office в Visual Studio], ведущие элементы"
-  - "Word [разработка решений Office в Visual Studio], элементы управления ведущего приложения"
+title: Programmatic Limitations of Host Items and Host Controls | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office documents [Office development in Visual Studio, host controls
+- application development [Office development in Visual Studio], host items
+- Office applications [Office development in Visual Studio], host items
+- host items [Office development in Visual Studio], programmatic limitations
+- Excel [Office development in Visual Studio], host items
+- host controls [Office development in Visual Studio], creating
+- document-level customizations [Office development in Visual Studio], host controls
+- Office applications [Office development in Visual Studio], host controls
+- documents [Office development in Visual Studio], host controls
+- controls [Office development in Visual Studio], host controls
+- host controls [Office development in Visual Studio], passing to methods and properties
+- application development [Office development in Visual Studio], host controls
+- Excel [Office development in Visual Studio], host controls
+- host controls [Office development in Visual Studio], programmatic limitations
+- documents [Office development in Visual Studio], host items
+- Office documents [Office development in Visual Studio, host items
+- Word [Office development in Visual Studio], host items
+- document-level customizations [Office development in Visual Studio], host items
+- Word [Office development in Visual Studio], host controls
 ms.assetid: 88487946-6f3d-4ea6-8de0-dd219b8002df
 caps.latest.revision: 67
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 63
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: e75c2a38fab4d8bb0b11846b6f944626e7827768
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Программные ограничения ведущих элементов и элементов управления ведущего приложения
-  Каждый ведущий элемент и элемент управления ведущего приложения создается, чтобы работать аналогично собственному объекту Microsoft Office Word или Microsoft Office Excel с дополнительными функциями. Но есть ряд фундаментальных различий между поведением во время выполнения ведущих элементов и элементов управления ведущего приложения с одной стороны и собственных объектов Office с другой стороны.  
+# <a name="programmatic-limitations-of-host-items-and-host-controls"></a>Programmatic Limitations of Host Items and Host Controls
+  Each host item and host control is designed to behave like a corresponding native Microsoft Office Word or Microsoft Office Excel object, with additional functionality. However, there are some fundamental differences between the behavior of host items and host controls and native Office objects at run time.  
   
- Общие сведения о ведущих элементах и элементах управления ведущего приложения см. в разделе [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md).  
+ For general information about host items and host controls, see [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
-## Программное создание ведущих элементов  
- При программном создании или открытии документа, книги или листа во время выполнения с использованием объектной модели Word или Excel элемент не является ведущим. Вместо этого новый объект является собственным объектом Office. Например, при использовании метода <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> для создания документа Word во время выполнения он будет собственным объектом <xref:Microsoft.Office.Interop.Word.Document>, а не ведущим элементом <xref:Microsoft.Office.Tools.Word.Document>. Аналогично, при создании листа с помощью метода <xref:Microsoft.Office.Interop.Excel.Worksheets.Add%2A> во время выполнения вы получаете собственный объект <xref:Microsoft.Office.Interop.Excel.Worksheet>, а не ведущий элемент <xref:Microsoft.Office.Tools.Excel.Worksheet>.  
+## <a name="programmatically-creating-host-items"></a>Programmatically Creating Host Items  
+ When you programmatically create or open a document, workbook, or worksheet at run time by using the Word or Excel object model, the item is not a host item. Instead, the new object is a native Office object. For example, if you use the <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> method to create a new Word document at run time, it will be a native <xref:Microsoft.Office.Interop.Word.Document> object rather than a <xref:Microsoft.Office.Tools.Word.Document> host item. Similarly, when you create a new worksheet at run time using the <xref:Microsoft.Office.Interop.Excel.Worksheets.Add%2A> method, you get a native <xref:Microsoft.Office.Interop.Excel.Worksheet> object rather than a <xref:Microsoft.Office.Tools.Excel.Worksheet> host item.  
   
- В проектах уровня документа нельзя создавать ведущие элементы во время выполнения. Ведущие элементы можно создавать в проектах уровня документа только во время разработки. Дополнительные сведения см. в разделах [Ведущий элемент документа](../vsto/document-host-item.md), [Ведущий элемент книги](../vsto/workbook-host-item.md) и [Ведущие элементы листа](../vsto/worksheet-host-item.md).  
+ In document-level projects, you cannot create host items at run time. Host items can be created only at design time in document-level projects. For more information, see [Document Host Item](../vsto/document-host-item.md), [Workbook Host Item](../vsto/workbook-host-item.md), and [Worksheet Host Item](../vsto/worksheet-host-item.md).  
   
- В проектах надстроек VSTO можно создавать ведущие элементы <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook> и <xref:Microsoft.Office.Tools.Excel.Worksheet> во время выполнения. Дополнительные сведения см. в разделе [Расширение документов Word и книг Excel в надстройках VSTO в среде выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ In VSTO Add-in projects, you can create <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, or <xref:Microsoft.Office.Tools.Excel.Worksheet> host items at run time. For more information, see [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
-## Программное создание элементов управления ведущего приложения  
- Во время выполнения можно программными средствами добавлять элементы управления ведущего приложения в ведущий элемент <xref:Microsoft.Office.Tools.Word.Document> или <xref:Microsoft.Office.Tools.Excel.Worksheet>. Для получения дополнительной информации см. [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+## <a name="programmatically-creating-host-controls"></a>Programmatically Creating Host Controls  
+ You can programmatically add host controls to a <xref:Microsoft.Office.Tools.Word.Document> or <xref:Microsoft.Office.Tools.Excel.Worksheet> host item at run time. For more information, see [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- Нельзя добавлять элементы управления ведущего приложения в собственный объект <xref:Microsoft.Office.Interop.Word.Document> или <xref:Microsoft.Office.Interop.Excel.Worksheet>.  
+ You cannot add host controls to a native <xref:Microsoft.Office.Interop.Word.Document> or <xref:Microsoft.Office.Interop.Excel.Worksheet>.  
   
 > [!NOTE]  
->  Следующие элементы управления ведущего приложения нельзя добавлять программными средствами в листы и документы: <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode> и <xref:Microsoft.Office.Tools.Word.XMLNodes>.  
+>  The following host controls cannot be added programmatically to worksheets or documents: <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>, and <xref:Microsoft.Office.Tools.Word.XMLNodes>.  
   
-## Основные сведения о различиях между ведущими элементами, элементами управления ведущего приложения и собственными объектами Office  
- Для каждого ведущего элемента и элемента управления ведущего приложения существует собственный объект Microsoft Office Word или Microsoft Office Excel. Для доступа к базовому объекту используется свойство InnerObject ведущего элемента или элемента управления ведущего приложения. Однако невозможно привести собственный объект Office к соответствующему ведущему элементу или элементу управления ведущего приложения. При попытке привести собственный объект Office к типу ведущего элемента или элемента управления ведущего приложения возникает исключение <xref:System.InvalidCastException>.  
+## <a name="understanding-type-differences-between-host-items-host-controls-and-native-office-objects"></a>Understanding Type Differences Between Host Items, Host Controls, and Native Office Objects  
+ For each host item and host control, there is an underlying native Microsoft Office Word or Microsoft Office Excel object. You can access the underlying object by using the InnerObject property of the host item or host control. However, there is no way to cast a native Office object to its corresponding host item or host control. If you try to cast a native Office object into the type of a host item or host control, an <xref:System.InvalidCastException> is thrown.  
   
- Существует несколько сценариев, в которых различия между типами ведущих элементов, элементов управления ведущего приложения и базовых собственных объектов Office могут повлиять на код.  
+ There are several scenarios where the differences between the types of host items and host controls and the underlying native Office objects can affect your code.  
   
-### Передача элементов управления ведущего приложения в методы и свойства  
- В приложении Word невозможно передать элемент управления ведущего приложения в метод или свойство, для которого требуется собственный объект Word в качестве параметра. Чтобы вернуть базовый собственный объект Word, необходимо использовать свойство InnerObject элемента управления ведущего приложения. Например, можно передать объект <xref:Microsoft.Office.Interop.Word.Bookmark> в метод путем передачи в метод свойства <xref:Microsoft.Office.Tools.Word.Bookmark.InnerObject%2A> элемента управления ведущего приложения <xref:Microsoft.Office.Tools.Word.Bookmark>.  
+### <a name="passing-host-controls-to-methods-and-properties"></a>Passing Host Controls to Methods and Properties  
+ In Word, you cannot pass a host control to a method or property that requires a native Word object as a parameter. You must use the InnerObject property of the host control to return the underlying native Word object. For example, you can pass a <xref:Microsoft.Office.Interop.Word.Bookmark> object to a method by passing the <xref:Microsoft.Office.Tools.Word.Bookmark.InnerObject%2A> property of the <xref:Microsoft.Office.Tools.Word.Bookmark> host control to the method.  
   
- В Excel необходимо использовать свойство InnerObject элемента управления ведущего приложения для передачи этого элемента в метод или свойство, если метод или свойство ожидают базовый объект Excel.  
+ In Excel, you must use the InnerObject property of the host control to pass the host control to a method or property when the method or property expects the underlying Excel object.  
   
- В приведенном ниже примере создается элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange>, который затем передается в метод <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>. Код использует свойство <xref:Microsoft.Office.Tools.Excel.NamedRange.InnerObject%2A> именованного диапазона для возврата базового объекта <xref:Microsoft.Office.Interop.Excel.Range> Office, требующегося для метода <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>.  
+ The following example creates a <xref:Microsoft.Office.Tools.Excel.NamedRange> control and passes it to the <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> method. The code uses the <xref:Microsoft.Office.Tools.Excel.NamedRange.InnerObject%2A> property of the named range to return the underlying Office <xref:Microsoft.Office.Interop.Excel.Range> that is required by the <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> method.  
   
- [!code-csharp[Trin_VstcoreHostControlsExcel#28](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsExcel/CS/Sheet1.cs#28)]
- [!code-vb[Trin_VstcoreHostControlsExcel#28](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsExcel/VB/Sheet1.vb#28)]  
+ [!code-csharp[Trin_VstcoreHostControlsExcel#28](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#28)] [!code-vb[Trin_VstcoreHostControlsExcel#28](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#28)]  
   
-### Возвращаемые типы собственных методов и свойств Office  
- Большинство методов и свойств ведущих элементов возвращают собственные объекты Office, на которых основаны ведущие элементы. Например, свойство <xref:Microsoft.Office.Tools.Excel.NamedRange.Parent%2A> элемента управления ведущего приложения <xref:Microsoft.Office.Tools.Excel.NamedRange> в Excel возвращает объект <xref:Microsoft.Office.Interop.Excel.Worksheet>, а не ведущий элемент <xref:Microsoft.Office.Tools.Excel.Worksheet>. Аналогично, свойство <xref:Microsoft.Office.Tools.Word.RichTextContentControl.Parent%2A> элемента управления ведущего приложения <xref:Microsoft.Office.Tools.Word.RichTextContentControl> в Word возвращает объект <xref:Microsoft.Office.Interop.Word.Document>, а не ведущий элемент <xref:Microsoft.Office.Tools.Word.Document>.  
+### <a name="return-types-of-native-office-methods-and-properties"></a>Return Types of Native Office Methods and Properties  
+ Most methods and properties of host items return the underlying native Office object upon which the host item is based. For example, the <xref:Microsoft.Office.Tools.Excel.NamedRange.Parent%2A> property of a <xref:Microsoft.Office.Tools.Excel.NamedRange> host control in Excel returns a <xref:Microsoft.Office.Interop.Excel.Worksheet> object rather than a <xref:Microsoft.Office.Tools.Excel.Worksheet> host item. Similarly, the <xref:Microsoft.Office.Tools.Word.RichTextContentControl.Parent%2A> property of a <xref:Microsoft.Office.Tools.Word.RichTextContentControl> host control in Word returns a <xref:Microsoft.Office.Interop.Word.Document> object rather than a <xref:Microsoft.Office.Tools.Word.Document> host item.  
   
-### Доступ к коллекциям элементов управления ведущего приложения  
- [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] не предоставляет отдельных коллекций для каждого типа элементов управления ведущего приложения. Вместо этого используйте свойство Controls ведущего элемента для перебора всех управляемых элементов управления \(как элементов управления ведущего приложения, так и элементов управления Windows Forms\) в документе или листе, а затем найдите элементы, которые соответствуют типу нужного элемента управления ведущего приложения. В примере кода ниже рассматривается каждый элемент управления в документе Word и определяется, является ли он <xref:Microsoft.Office.Tools.Word.Bookmark>.  
+### <a name="accessing-collections-of-host-controls"></a>Accessing Collections of Host Controls  
+ The [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] does not provide individual collections for each type of host control. Instead, use the Controls property of a host item to iterate through all managed controls (both host controls and Windows Forms controls) on the document or worksheet, and then look for items that match the type of the host control you are interested in. The following code example examines each control on a Word document and determines whether the control is a <xref:Microsoft.Office.Tools.Word.Bookmark>.  
   
- [!code-csharp[Trin_VstcoreHostControlsWord#10](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsWord/CS/ThisDocument.cs#10)]
- [!code-vb[Trin_VstcoreHostControlsWord#10](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsWord/VB/ThisDocument.vb#10)]  
+ [!code-csharp[Trin_VstcoreHostControlsWord#10](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#10)] [!code-vb[Trin_VstcoreHostControlsWord#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#10)]  
   
- Дополнительные сведения о свойстве Controls ведущих элементов см. в разделе [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ For more information about the Controls property of host items, see [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- Объектные модели Word и Excel включают свойства, которые предоставляют коллекции собственных элементов управления для документов и листов. С помощью этих свойств нельзя получить доступ к управляемым элементам управления. Например, невозможно перечислить каждый элемент управления ведущего приложения <xref:Microsoft.Office.Tools.Word.Bookmark> в документе с помощью свойства <xref:Microsoft.Office.Interop.Word._Document.Bookmarks%2A> объекта <xref:Microsoft.Office.Interop.Word.Document> или свойства <xref:Microsoft.Office.Tools.Word.Document.Bookmarks%2A> объекта <xref:Microsoft.Office.Tools.Word.Document>. Эти свойства включают в документ только элементы управления <xref:Microsoft.Office.Interop.Word.Bookmark>; они не включают в документ элементы управления ведущего приложения <xref:Microsoft.Office.Tools.Word.Bookmark>.  
+ The Word and Excel object models include properties that expose collections of native controls on documents and worksheets. You cannot access managed controls by using these properties. For example, it is not possible to enumerate each <xref:Microsoft.Office.Tools.Word.Bookmark> host control in a document by using the <xref:Microsoft.Office.Interop.Word._Document.Bookmarks%2A> property of a <xref:Microsoft.Office.Interop.Word.Document> or the <xref:Microsoft.Office.Tools.Word.Document.Bookmarks%2A> property of a <xref:Microsoft.Office.Tools.Word.Document>. These properties include only the <xref:Microsoft.Office.Interop.Word.Bookmark> controls in the document; they do not contain the <xref:Microsoft.Office.Tools.Word.Bookmark> host controls in the document.  
   
-## См. также  
- [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)   
- [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)   
- [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)   
- [Ведущие элементы листа](../vsto/worksheet-host-item.md)   
- [Ведущий элемент книги](../vsto/workbook-host-item.md)   
- [Ведущий элемент документа](../vsto/document-host-item.md)  
+## <a name="see-also"></a>See Also  
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)   
+ [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md)   
+ [Worksheet Host Item](../vsto/worksheet-host-item.md)   
+ [Workbook Host Item](../vsto/workbook-host-item.md)   
+ [Document Host Item](../vsto/document-host-item.md)  
   
   

@@ -1,306 +1,303 @@
 ---
-title: "Пошаговое руководство. Обновление элементов управления на ленте во время выполнения"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "элементы управления [разработка решений Office в Visual Studio], лента"
-  - "динамические меню [разработка решений Office в Visual Studio]"
-  - "лента [разработка решений Office в Visual Studio], элементы управления"
-  - "лента [разработка решений Office в Visual Studio], динамическое меню"
-  - "лента [разработка решений Office в Visual Studio], обновление"
-  - "обновление элементов управления ленты"
+title: 'Walkthrough: Updating the Controls on a Ribbon at Run Time | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- controls [Office development in Visual Studio], Ribbon
+- Ribbon [Office development in Visual Studio], controls
+- updating Ribbon controls
+- Ribbon [Office development in Visual Studio], dynamic menu
+- dynamic menus [Office development in Visual Studio]
+- Ribbon [Office development in Visual Studio], updating
 ms.assetid: ed80790f-3f95-47e4-8a41-872588a8ca07
 caps.latest.revision: 51
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 50
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: cc34acd219401610dcb936f9dbca59620aab7d71
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Обновление элементов управления на ленте во время выполнения
-  В этом пошаговом руководстве показано, как использовать объектную модель ленты для обновления элементов управления на ленте после загрузки ленты в приложение Office.  
+# <a name="walkthrough-updating-the-controls-on-a-ribbon-at-run-time"></a>Walkthrough: Updating the Controls on a Ribbon at Run Time
+  This walkthrough demonstrates how to use the Ribbon object model to update the controls on a Ribbon after the Ribbon is loaded into the Office application.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
- В данном примере данные извлекаются из примера базы данных Northwind \(Борей\) для заполнения поля со списком и меню в Microsoft Office Outlook.  Элементы, выбираемые в этих элементах управления, автоматически подставляются в поля, например **Кому** и **Тема**, в сообщении электронной почты.  
+ The example pulls data from the Northwind sample database to populate a combo box and menu in Microsoft Office Outlook. Items that you select in these controls automatically populate fields such as **To** and **Subject** in an e-mail message.  
   
- В данном пошаговом руководстве рассмотрены следующие задачи:  
+ This walkthrough illustrates the following tasks:  
   
--   Создание нового проекта надстройки Outlook VSTO  
+-   Creating a new Outlook VSTO Add-in project.  
   
--   Разработка пользовательской группы ленты  
+-   Designing a custom Ribbon group.  
   
--   Добавление пользовательской группы на встроенную вкладку  
+-   Adding the custom group to a built-in tab.  
   
--   Обновление элементов управления на ленте во время выполнения  
+-   Updating controls on the Ribbon at run time.  
   
 > [!NOTE]  
->  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях.  Это зависит от имеющегося выпуска Visual Studio и используемых параметров.  Дополнительные сведения см. в разделе [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/ru-ru/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
 -   Microsoft Outlook  
   
-## Создание нового проекта надстройки Outlook VSTO  
- Сначала создайте проект надстройки Outlook VSTO.  
+## <a name="creating-a-new-outlook-vsto-add-in-project"></a>Creating a New Outlook VSTO Add-in Project  
+ First, create an Outlook VSTO Add-in project.  
   
-#### Порядок создания нового проекта надстройки Outlook VSTO  
+#### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>To create a new Outlook VSTO Add-in project  
   
-1.  В [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] создайте проект надстройки Outlook VSTO с именем Ribbon\_Update\_At\_Runtime.  
+1.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], create an Outlook VSTO Add-in project with the name **Ribbon_Update_At_Runtime**.  
   
-2.  В диалоговом окне **Создание проекта** выберите **Создать каталог для решения**.  
+2.  In the **New Project** dialog box, select **Create directory for solution**.  
   
-3.  Сохраните проект в каталоге проекта по умолчанию.  
+3.  Save the project to the default project directory.  
   
-     Дополнительные сведения см. в статье [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-## Разработка пользовательской группы ленты  
- Лента для этого примера будет отображаться при составлении пользователем нового сообщения электронной почты.  Чтобы создать пользовательскую группу для ленты, сначала добавьте элемент ленты в свой проект, а затем создайте группу в конструкторе лент.  Эта пользовательская группа позволит создавать последующие сообщения электронной почты для пользователей путем подстановки имен и журналов заказов из базы данных.  
+## <a name="designing-a-custom-ribbon-group"></a>Designing a Custom Ribbon Group  
+ The Ribbon for this example will appear when a user composes a new mail message. To create a custom group for the Ribbon, first add a Ribbon item to your project, and then design the group in the Ribbon Designer. This custom group will help you generate follow-up e-mail messages to customers by pulling names and order histories from a database.  
   
-#### Порядок создания пользовательской группы  
+#### <a name="to-design-a-custom-group"></a>To design a custom group  
   
-1.  В меню **Проект** выберите пункт **Добавить новый элемент**.  
+1.  On the **Project** menu, click **Add New Item**.  
   
-2.  В диалоговом окне **Добавление нового элемента** выберите элемент **Лента \(визуальный конструктор\)**.  
+2.  In the **Add New Item** dialog box, select **Ribbon (Visual Designer)**.  
   
-3.  Измените имя новой ленты на **CustomerRibbon**, а затем нажмите кнопку **Добавить**.  
+3.  Change the name of the new Ribbon to **CustomerRibbon**, and then click **Add**.  
   
-     В конструкторе лент открывается файл **CustomerRibbon.cs** или **CustomerRibbon.vb**, а также отображается вкладка и группа, используемые по умолчанию.  
+     The **CustomerRibbon.cs** or **CustomerRibbon.vb** file opens in the Ribbon Designer and displays a default tab and group.  
   
-4.  Щелкните конструктор лент, чтобы выбрать его.  
+4.  Click the Ribbon Designer to select it.  
   
-5.  В окне **Свойства** щелкните стрелку раскрывающегося списка рядом со свойством **RibbonType**, а затем щелкните **Microsoft.Outlook.Mail.Compose**.  
+5.  In the **Properties** window, click the drop-down arrow next to the **RibbonType** property, and then click **Microsoft.Outlook.Mail.Compose**.  
   
-     Это обеспечивает отображение ленты, когда пользователь создает новое сообщение электронной почты в Outlook.  
+     This enables the Ribbon to appear when the user composes a new mail message in Outlook.  
   
-6.  В конструкторе лент щелкните группу **Group1**, чтобы выбрать ее.  
+6.  In the Ribbon Designer, click **Group1** to select it.  
   
-7.  В окне **Свойства** в поле **Метка** установите значение «Покупки клиента».  
+7.  In the **Properties** window, set **Label** to **Customer Purchases**.  
   
-8.  На вкладке **Элементы управления ленты Office** в окне **Панель элементов** перетащите **ComboBox** в группу **Покупки клиента**.  
+8.  From the **Office Ribbon Controls** tab of the **Toolbox**, drag a **ComboBox** onto the **Customer Purchases** group.  
   
-9. Щелкните элемент **ComboBox1**, чтобы выбрать его.  
+9. Click **ComboBox1** to select it.  
   
-10. В окне **Свойства** в поле **Метка** установите значение «Клиенты».  
+10. In the **Properties** window, set **Label** to **Customers**.  
   
-11. На вкладке **Элементы управления ленты Office** в окне **Панель элементов** перетащите **Меню** в группу **Покупки клиента**.  
+11. From the **Office Ribbon Controls** tab of the **Toolbox**, drag a **Menu** onto the **Customer Purchases** group.  
   
-12. В окне **Свойства** в поле **Метка** установите значение «Приобретенный продукт».  
+12. In the **Properties** window, set **Label** to **Product Purchased**.  
   
-13. В поле **Динамический** установите значение **true**.  
+13. Set **Dynamic** to **true**.  
   
-     Это позволит добавлять и удалять элементы управления в меню во время выполнения после загрузки ленты в приложение Office.  
+     This enables you to add and remove controls on the menu at run time after the Ribbon is loaded into the Office application.  
   
-## Добавление пользовательской группы на встроенную вкладку  
- Встроенная вкладка — это вкладка, которая уже имеется на ленте проводника или инспектора Outlook.  В этой процедуре вы сможете добавить пользовательскую группу на встроенную вкладку, а затем указать положение этой группы на вкладке.  
+## <a name="adding-the-custom-group-to-a-built-in-tab"></a>Adding the Custom Group to a Built-in Tab  
+ A built-in tab is a tab that is already on the Ribbon of an Outlook Explorer or Inspector. In this procedure, you will add the custom group to a built-in tab, and then specify the position of the custom group on the tab.  
   
-#### Порядок добавления пользовательской группы на встроенную вкладку  
+#### <a name="to-add-the-custom-group-to-a-built-in-tab"></a>To add the custom group to a built-in tab  
   
-1.  Перейдите на вкладку **TabAddins \(встроенная\)**.  
+1.  Click the **TabAddins (Built-In)** tab to select it.  
   
-2.  В окне **Свойства** разверните свойство **ControlId**, а затем установите для **OfficeId** значение TabNewMailMessage.  
+2.  In the **Properties** window, expand the **ControlId** property, and then set **OfficeId** to **TabNewMailMessage**.  
   
-     При этом группа **Покупки клиента** будет добавлена на вкладку **Сообщения** ленты, которая появляется в новом сообщении электронной почты.  
+     This adds the **Customer Purchases** group to the **Messages** tab of the Ribbon that appears in a new mail message.  
   
-3.  Щелкните группу **Покупки клиента**, чтобы выбрать ее.  
+3.  Click the **Customer Purchases** group to select it.  
   
-4.  В окне **Свойства** разверните свойство **Положение**, щелкните стрелку раскрывающегося списка рядом со свойством **Меню**, а затем щелкните **BeforeOfficeId**.  
+4.  In the **Properties** window, expand the **Position** property, click the drop-down arrow next to the **PositionType** property, and then click **BeforeOfficeId**.  
   
-5.  Для свойства **OfficeId** установите значение GroupClipboard.  
+5.  Set the **OfficeId** property to **GroupClipboard**.  
   
-     При этом группа **Покупки клиента** окажется перед группой **Буфер обмена** на вкладке **Сообщения**.  
+     This positions the **Customer Purchases** group before the **Clipboard** group of the **Messages** tab.  
   
-## Создание источника данных  
- С помощью окна **Источники данных** добавьте типизированный набор данных в свой проект.  
+## <a name="creating-the-data-source"></a>Creating the Data Source  
+ Use the **Data Sources** window to add a typed dataset to your project.  
   
-#### Создание источника данных  
+#### <a name="to-create-the-data-source"></a>To create the data source  
   
-1.  В меню **Данные** выберите команду **Добавить новый источник данных**.  
+1.  On the **Data** menu, click **Add New Data Source**.  
   
-     Запускается **Мастер настройки источника данных**.  
+     This starts the **Data Source Configuration Wizard**.  
   
-2.  Выберите **База данных**, а затем нажмите кнопку **Далее**.  
+2.  Select **Database**, and then click **Next**.  
   
-3.  Выберите **Набор данных**, а затем нажмите кнопку **Далее**.  
+3.  Select **Dataset**, and then click **Next**.  
   
-4.  Выберите подключение к базе данных Microsoft SQL Server Compact 4.0 \(пример Northwind\) или добавьте новое подключение с помощью кнопки **Новое подключение**.  
+4.  Select a data connection to the Northwind sample Microsoft SQL Server Compact 4.0 database, or add a new connection by using the **New Connection** button.  
   
-5.  После выбора или создания подключения нажмите кнопку **Далее**.  
+5.  After a connection has been selected or created, click **Next**.  
   
-6.  Нажмите кнопку **Далее**, чтобы сохранить строку подключения.  
+6.  Click **Next** to save the connection string.  
   
-7.  На странице **Выбор объектов базы данных** разверните узел **Таблицы**.  
+7.  On the **Choose Your Database Objects** page, expand **Tables**.  
   
-8.  Установите флажок рядом с каждой из следующих таблиц.  
+8.  Select the check box next to each of the following tables:  
   
-    1.  **Заказчики**  
+    1.  **Customers**  
   
-    2.  **Сведения о заказе**  
+    2.  **Order Details**  
   
-    3.  **Заказы**  
+    3.  **Orders**  
   
-    4.  **Продукты**  
+    4.  **Products**  
   
-9. Нажмите кнопку **Готово**.  
+9. Click **Finish**.  
   
-## Обновление элементов управления в пользовательской группе во время выполнения  
- Используйте объектную модель ленты для выполнения следующих задач.  
+## <a name="updating-controls-in-the-custom-group-at-run-time"></a>Updating Controls in the Custom Group at Run Time  
+ Use the Ribbon object model to perform the following tasks:  
   
--   Добавление имен клиентов в поле со списком **Клиенты**.  
+-   Add customer names to the **Customers** combo box.  
   
--   Добавление в меню **Приобретенные продукты** элементов управления меню и кнопок, которые представляют заказы на продажу и проданные продукты.  
+-   Add menu and button controls to the **Products Purchased** menu that represent sales orders and products sold.  
   
--   Заполните поля To, Subject и Body новых почтовых сообщений с помощью данных из поля со списком **Клиенты** и меню **Приобретенные продукты**.  
+-   Populate the To, Subject, and Body fields of new mail messages by using data from the **Customers** combo box and **Products Purchased** menu.  
   
-#### Порядок обновления элементов управления в пользовательской группе с помощью объектной модели ленты  
+#### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>To update controls in the custom group by using the Ribbon object model  
   
-1.  В меню **Проект** щелкните команду **Добавить ссылку**.  
+1.  On the **Project** menu, click **Add Reference**.  
   
-2.  В диалоговом окне **Добавление ссылки** перейдите на вкладку **.NET**, выберите сборку **System.Data.Linq**, а затем нажмите кнопку **ОК**.  
+2.  In the **Add Reference** dialog box, click the **.NET** tab, select the **System.Data.Linq** assembly, and then click **OK**.  
   
-     Эта сборка содержит классы для использования запросов LINQ \(Language\-Integrated Queries\).  Запросы LINQ будут использоваться для заполнения элементов управления в пользовательской группе данными из базы данных Northwind.  
+     This assembly contains classes for using Language-Integrated Queries (LINQ). You will use LINQ to populate controls in the custom group with data from the Northwind database.  
   
-3.  В **обозревателе решений** щелкните файл **CustomerRibbon.cs** или **CustomerRibbon.vb**, чтобы выбрать его.  
+3.  In **Solution Explorer**, click **CustomerRibbon.cs** or **CustomerRibbon.vb** to select it.  
   
-4.  В меню **Представление** выберите пункт **Код**.  
+4.  On the **View** menu, click **Code**.  
   
-     Файл кода ленты открывается в редакторе кода.  
+     The Ribbon code file opens in the Code Editor.  
   
-5.  Добавьте следующие операторы в начало файла кода ленты.  Эти операторы обеспечивают легкий доступ к пространствам имен LINQ и к пространству имен основной сборки взаимодействия Outlook.  
+5.  Add the following statements to the top of the Ribbon code file. These statements provide easy access to LINQ namespaces and to the namespace of the Outlook primary interop assembly (PIA).  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/CS/CustomerRibbon.cs#1)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/VB/CustomerRibbon.vb#1)]  
+     [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]  [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]  
   
-6.  Добавьте следующий код в класс CustomerRibbon.  Этот код объявляет таблицу данных и адаптеры таблиц, которые будут использоваться для хранения информации из таблиц «Заказчики», «Заказы», «Сведения о заказе» и «Продукт» базы данных Northwind.  
+6.  Add the following code inside the CustomerRibbon class. This code declares the data table and table adapters that you will use to store information from the Customer, Orders, Order Details, and Product tables of the Northwind database.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/CS/CustomerRibbon.cs#2)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/VB/CustomerRibbon.vb#2)]  
+     [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]  [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]  
   
-7.  Добавьте следующий блок кода в класс `CustomerRibbon`.  Этот код добавляет три вспомогательных метода, создающих элементы управления на ленте во время выполнения.  
+7.  Add the following block of code to the `CustomerRibbon` class. This code adds three helper methods that create controls for the Ribbon at runtime.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#3](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/CS/CustomerRibbon.cs#3)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#3](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/VB/CustomerRibbon.vb#3)]  
+     [!code-csharp[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#3)]  [!code-vb[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#3)]  
   
-8.  Замените обработчик событий `CustomerRibbon_Load` следующим кодом.  Этот код использует запрос LINQ для выполнения следующих задач.  
+8.  Replace the `CustomerRibbon_Load` event handler method with the following code. This code uses a LINQ query to perform the following tasks:  
   
-    -   Заполнение поля со списком **Заказчики** с помощью идентификатора и имени 20 заказчиков в базе данных Northwind.  
+    -   Populate the **Customers** combo box by using the ID and name of 20 customers in the Northwind database.  
   
-    -   Вызов вспомогательного метода `PopulateSalesOrderInfo`.  Этот метод обновляет меню **ProductsPurchased** номерами заказов на продажу, которые относятся к выбранному заказчику.  
+    -   Calls the `PopulateSalesOrderInfo` helper method. This method updates the **ProductsPurchased** menu with sales order numbers that pertain to the currently selected customer.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#4](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/CS/CustomerRibbon.cs#4)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#4](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/VB/CustomerRibbon.vb#4)]  
+     [!code-csharp[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#4)] [!code-vb[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#4)]  
   
-9. Добавьте следующий код в класс `CustomerRibbon`.  Этот код использует запросы LINQ для выполнения следующих задач.  
+9. Add the following code to the `CustomerRibbon` class. This code uses LINQ queries to perform the following tasks:  
   
-    -   Добавление подменю в меню **ProductsPurchased** для каждого заказа на продажу, относящегося к выбранному заказчику.  
+    -   Adds a submenu to the **ProductsPurchased** menu for each sales order related to the selected customer.  
   
-    -   Добавление кнопок в каждое подменю для продуктов, относящихся к заказу на продажу.  
+    -   Adds buttons to each submenu for the products related to the sales order.  
   
-    -   Добавление обработчиков событий для каждой кнопки.  
+    -   Adds event handlers to each button.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#6](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/CS/CustomerRibbon.cs#6)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#6](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/VB/CustomerRibbon.vb#6)]  
+     [!code-csharp[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#6)] [!code-vb[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#6)]  
   
-10. В **обозревателе решений** дважды щелкните файл кода ленты.  
+10. In **Solution Explorer**, double-click the Ribbon code file.  
   
-     Открывается конструктор лент.  
+     The Ribbon Designer opens.  
   
-11. В конструкторе лент дважды щелкните поле со списком **Заказчики**.  
+11. In the Ribbon Designer, double-click the **Customers** combo box.  
   
-     В редакторе кода открывается файл кода ленты и появляется обработчик событий `ComboBox1_TextChanged`.  
+     The Ribbon code file opens in the Code Editor, and the `ComboBox1_TextChanged` event handler appears.  
   
-12. Замените обработчик событий `ComboBox1_TextChanged` следующим кодом.  Этот код выполняет следующие задачи:  
+12. Replace the `ComboBox1_TextChanged` event handler with the following code. This code performs the following tasks:  
   
-    -   Вызов вспомогательного метода `PopulateSalesOrderInfo`.  Этот метод обновляет меню **Приобретенные продукты** заказами на продажу, которые относятся к выбранному заказчику.  
+    -   Calls the `PopulateSalesOrderInfo` helper method. This method updates the **Products Purchased** menu with sales orders that relate to the selected customer.  
   
-    -   Вызов вспомогательного метода `PopulateMailItem` и передача текущего текста, представляющего собой имя выбранного заказчика.  Этот метод заполняет поля To, Subject и Body новых почтовых сообщений.  
+    -   Calls the `PopulateMailItem` helper method and passes in the current text, which is the selected customer name. This method populates the To, Subject, and Body fields of new mail messages.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/CS/CustomerRibbon.cs#5)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/VB/CustomerRibbon.vb#5)]  
+     [!code-csharp[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#5)] [!code-vb[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#5)]  
   
-13. Добавьте следующий обработчик событий нажатия кнопки Click в класс `CustomerRibbon`.  Этот код добавляет имя выбранных продуктов в поле Body новых почтовых сообщений.  
+13. Add the following Click event handler to the `CustomerRibbon` class. This code adds the name of selected products to the Body field of new mail messages.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/CS/CustomerRibbon.cs#8)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/VB/CustomerRibbon.vb#8)]  
+     [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#8)]  [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#8)]  
   
-14. Добавьте следующий код в класс `CustomerRibbon`.  Этот код выполняет следующие задачи:  
+14. Add the following code to the `CustomerRibbon` class. This code performs the following tasks:  
   
-    -   Заполнение строки To новых почтовых сообщений с помощью адреса электронной почты текущего выбранного заказчика.  
+    -   Populates the To line of new mail messages by using the e-mail address of the currently selected customer.  
   
-    -   Добавление текста в поля Subject и Body новых почтовых сообщений.  
+    -   Adds text to the Subject and Body fields of new mail messages.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#7](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/CS/CustomerRibbon.cs#7)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#7](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/VB/CustomerRibbon.vb#7)]  
+     [!code-csharp[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#7)] [!code-vb[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#7)]  
   
-## Тестирование элементов управления в пользовательской группе  
- При открытии новой почтовой формы в Outlook на вкладке **Сообщения** ленты появляется пользовательская группа с именем **Покупки заказчика**.  
+## <a name="testing-the-controls-in-the-custom-group"></a>Testing the Controls in the Custom Group  
+ When you open a new mail form in Outlook, a custom group named **Customer Purchases** appears on the **Messages** tab of the Ribbon.  
   
- Чтобы создать дальнейшее сообщение электронной почты для заказчика, выберите заказчика, а затем приобретенные им продукты.  Элементы управления в группе **Покупки заказчика** обновляются во время выполнения данными из базы данных Northwind.  
+ To create a customer follow-up e-mail message, select a customer, and then select products purchased by the customer. The controls in the **Customer Purchases** group are updated at run time with data from the Northwind database.  
   
-#### Порядок тестирования элементов управления в пользовательской группе  
+#### <a name="to-test-the-controls-in-the-custom-group"></a>To test the controls in the custom group  
   
-1.  Нажмите клавишу F5 для запуска проекта.  
+1.  Press F5 to run your project.  
   
-     Запускается Outlook.  
+     Outlook starts.  
   
-2.  В Outlook в меню **Файл** выберите **Создать** и щелкните **Почтовое сообщение**.  
+2.  In Outlook, on the **File** menu, point to **New**, and then click **Mail Message**.  
   
-     Будут выполнены следующие действия.  
+     The following actions occur:  
   
-    -   Откроется новое окно инспектора сообщений электронной почты.  
+    -   A new mail message Inspector window appears.  
   
-    -   На вкладке **Сообщение** ленты появится группа **Покупки заказчика** перед группой **Буфер обмена**.  
+    -   On the **Message** tab of the Ribbon, the **Customer Purchases** group appears before the **Clipboard** group.  
   
-    -   Поле со списком **Заказчики** в группе обновится именами заказчиков в базе данных Northwind.  
+    -   The **Customers** combo box in the group is updated with the names of customers in the Northwind database.  
   
-3.  На вкладке **Сообщение** ленты в группе **Покупки заказчика** выберите заказчика в поле со списком **Заказчики**.  
+3.  On the **Message** tab of the Ribbon, in the **Customer Purchases** group, select a customer from the **Customers** combo box.  
   
-     Будут выполнены следующие действия.  
+     The following actions occur:  
   
-    -   Меню **Приобретенные продукты** обновится и будет показывать все заказы для выбранного заказчика.  
+    -   The **Products Purchased** menu is updated to show each sales order for the selected customer.  
   
-    -   Каждое подменю заказов на продажу обновится и будет показывать продукты, приобретенные в рамках данного заказа.  
+    -   Each sales order submenu is updated to show the products purchased in that order.  
   
-    -   Адрес электронной почты выбранного заказчика будет добавлен в строку **Кому** сообщения электронной почты, а в поле темы и тело сообщения электронной почты будет подставлен текст.  
+    -   The selected customer's e-mail address is added to the **To** line of the mail message, and the subject and body of the mail message are populated with text.  
   
-4.  Щелкните меню **Покупки продуктов**, выберите любой заказ на продажу и щелкните в нем продукт.  
+4.  Click the **Products Purchases** menu, point to any sales order, and then click a product from the sales order.  
   
-     Имя продукта добавляется в тело сообщения электронной почты.  
+     The product name is added to the body of the mail message.  
   
-## Следующие действия  
- Дополнительные сведения о настройке пользовательского интерфейса Office см. в следующих разделах:  
+## <a name="next-steps"></a>Next Steps  
+ You can learn more about how to customize the Office UI from these topics:  
   
--   Добавление пользовательского интерфейса на основе контекста к настройкам уровня документа.  Дополнительные сведения см. в разделе [Общие сведения о панели действий](../vsto/actions-pane-overview.md).  
+-   Add context-based UI to any document-level customization. For more information, see [Actions Pane Overview](../vsto/actions-pane-overview.md).  
   
--   Расширение стандартной или пользовательской формы Microsoft Office Outlook.  Дополнительные сведения см. в разделе [Пошаговое руководство. Разработка области формы Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Extend a standard or custom Microsoft Office Outlook form. For more information, see [Walkthrough: Designing an Outlook Form Region](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
--   Добавление настраиваемой области задач в Outlook.  Дополнительные сведения см. в разделе [Настраиваемые области задач](../vsto/custom-task-panes.md).  
+-   Add a custom task pane to Outlook. For more information, see [Custom Task Panes](../vsto/custom-task-panes.md).  
   
-## См. также  
- [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)   
- [Обзор ленты](../vsto/ribbon-overview.md)   
- [Интегрированные в язык запросы \(LINQ\)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)   
- [Практическое руководство. Работа с настройкой ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [Конструктор лент](../vsto/ribbon-designer.md)   
- [Пошаговое руководство. Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Общие сведения об объектной модели ленты](../vsto/ribbon-object-model-overview.md)   
- [Настройка ленты для Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
- [Практическое руководство. Изменение положения вкладки на ленте](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
- [Практическое руководство. Настройка встроенной вкладки](../vsto/how-to-customize-a-built-in-tab.md)   
- [Практическое руководство. Добавление элементов управления в представление Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Практическое руководство. Экспорт лент из конструктора лент в XML-ленты](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [Практическое руководство. Просмотр ошибок пользовательского интерфейса надстройки](../vsto/how-to-show-add-in-user-interface-errors.md)  
+## <a name="see-also"></a>See Also  
+ [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Ribbon Overview](../vsto/ribbon-overview.md)   
+ [Language-Integrated Query (LINQ)](/dotnet/csharp/linq/index)   
+ [How to: Get Started Customizing the Ribbon](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [Ribbon Designer](../vsto/ribbon-designer.md)   
+ [Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Ribbon Object Model Overview](../vsto/ribbon-object-model-overview.md)   
+ [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
+ [How to: Change the Position of a Tab on the Ribbon](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
+ [How to: Customize a Built-in Tab](../vsto/how-to-customize-a-built-in-tab.md)   
+ [How to: Add Controls to the Backstage View](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [How to: Export a Ribbon from the Ribbon Designer to Ribbon XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
+ [How to: Show Add-in User Interface Errors](../vsto/how-to-show-add-in-user-interface-errors.md)  
   
   

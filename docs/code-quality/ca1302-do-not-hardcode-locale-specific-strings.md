@@ -1,55 +1,72 @@
 ---
-title: "CA1302: не следует жестко кодировать строки, зависящие от языка | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DoNotHardcodeLocaleSpecificStrings"
-  - "CA1302"
-helpviewer_keywords: 
-  - "DoNotHardcodeLocaleSpecificStrings"
-  - "CA1302"
+title: 'CA1302: Do not hardcode locale specific strings | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DoNotHardcodeLocaleSpecificStrings
+- CA1302
+helpviewer_keywords:
+- DoNotHardcodeLocaleSpecificStrings
+- CA1302
 ms.assetid: 05ed134a-837d-43d7-bf97-906edeac44ce
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 17
----
-# CA1302: не следует жестко кодировать строки, зависящие от языка
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: b723eade12eac5be6959710afc667452d05ac81a
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302: Do not hardcode locale specific strings
 |||  
 |-|-|  
 |TypeName|DoNotHardcodeLocaleSpecificStrings|  
 |CheckId|CA1302|  
-|Категория|Microsoft.Globalization|  
-|Критическое изменение|Не критическое|  
+|Category|Microsoft.Globalization|  
+|Breaking Change|Non-breaking|  
   
-## Причина  
- Метод использует строковый литерал, представляющий часть пути к некоторым системным папкам.  
+## <a name="cause"></a>Cause  
+ A method uses a string literal that represents part of the path of certain system folders.  
   
-## Описание правила  
- Перечисление <xref:System.Environment.SpecialFolder?displayProperty=fullName> содержит члены, ссылающиеся на определенные системные папки.  Расположение этих папок может различаться в разных ОС, пользователь может менять расположение этих папок, их имена могут быть локализованы.  Примером специальной папки является системная папка; это папка "C:\\WINDOWS\\system32" в [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)] или папка "C:\\WINNT\\system32" в [!INCLUDE[win2kfamily](../code-quality/includes/win2kfamily_md.md)].  Метод <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> возвращает расположения, связанные с перечислением <xref:System.Environment.SpecialFolder>.  Расположения, возвращенные методом <xref:System.Environment.GetFolderPath%2A>, локализованы и соответствуют компьютеру, на котором в данный момент выполняется программа.  
+## <a name="rule-description"></a>Rule Description  
+ The <xref:System.Environment.SpecialFolder?displayProperty=fullName> enumeration contains members that refer to special system folders. The locations of these folders can have different values on different operating systems, the user can change some of the locations, and the locations are localized. An example of a special folder is the System folder, which is "C:\WINDOWS\system32" on [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)] but "C:\WINNT\system32" on [!INCLUDE[win2kfamily](../code-quality/includes/win2kfamily_md.md)]. The <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> method returns the locations that are associated with the <xref:System.Environment.SpecialFolder> enumeration. The locations that are returned by <xref:System.Environment.GetFolderPath%2A> are localized and appropriate for the currently running computer.  
   
- Это правило разделяет пути к папкам, извлеченные с помощью метода <xref:System.Environment.GetFolderPath%2A>, на отдельные уровни каталогов.  Каждый строковый литерал сравнивается с маркерами.  При совпадении предполагается, что метод создает строку, ссылающуюся на системное расположение, связанное с маркером.  В целях обеспечения переносимости программ и возможности их локализации используйте метод <xref:System.Environment.GetFolderPath%2A> для извлечения расположений системных папок вместо использования строковых литералов.  
+ This rule tokenizes the folder paths that are retrieved by using the <xref:System.Environment.GetFolderPath%2A> method into separate directory levels. Each string literal is compared to the tokens. If a match is found, it is assumed that the method is building a string that refers to the system location that is associated with the token. For portability and localizability, use the <xref:System.Environment.GetFolderPath%2A> method to retrieve the locations of the special system folders instead of using string literals.  
   
-## Устранение нарушений  
- Чтобы устранить нарушение данного правила, извлеките расположение с помощью метода <xref:System.Environment.GetFolderPath%2A>.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, retrieve the location by using the <xref:System.Environment.GetFolderPath%2A> method.  
   
-## Отключение предупреждений  
- Можно безопасно отключать предупреждения этого правила, если строковый литерал не используется для ссылки на одну из системных папок, связанных с перечислением <xref:System.Environment.SpecialFolder>.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule if the string literal is not used to refer to one of the system locations that is associated with the <xref:System.Environment.SpecialFolder> enumeration.  
   
-## Пример  
- В следующем примере строится путь к общей папке приложений, и правило выдает три предупреждения.  Затем программа извлекает путь с помощью метода <xref:System.Environment.GetFolderPath%2A>.  
+## <a name="example"></a>Example  
+ The following example builds the path of the common application data folder, which generates three warnings from this rule. Next, the example retrieves the path by using the <xref:System.Environment.GetFolderPath%2A> method.  
   
- [!code-cs[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/CSharp/ca1302-do-not-hardcode-locale-specific-strings_1.cs)]
- [!code-vb[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/VisualBasic/ca1302-do-not-hardcode-locale-specific-strings_1.vb)]  
+ [!code-csharp[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/CSharp/ca1302-do-not-hardcode-locale-specific-strings_1.cs)] [!code-vb[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/VisualBasic/ca1302-do-not-hardcode-locale-specific-strings_1.vb)]  
   
-## Связанные правила  
- [CA1303: не следует передавать литералы в виде локализованных параметров](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)
+## <a name="related-rules"></a>Related Rules  
+ [CA1303: Do not pass literals as localized parameters](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)

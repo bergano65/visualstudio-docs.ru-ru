@@ -1,5 +1,5 @@
 ---
-title: "Средства ведения журнала сборки | Документация Майкрософт"
+title: Build Loggers | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,73 +31,74 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b28a3a7d7412a496802a176f6365e961cd7c2673
-ms.lasthandoff: 02/22/2017
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: ee5db285c55dc3969bd21fe722d7e4bacdcb6f3c
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
 ---
-# <a name="build-loggers"></a>Средства ведения журнала построения
-Средства ведения журнала позволяют настраивать выходные данные сборки и отображать сообщения, ошибки или предупреждения в ответ на определенные события сборки. Каждое средство ведения журнала существует в виде класса .NET, который реализует интерфейс <xref:Microsoft.Build.Framework.ILogger>, определенный в сборке Microsoft.Build.Framework.dll.  
+# <a name="build-loggers"></a>Build Loggers
+Loggers provide a way for you to customize the output of your build and display messages, errors, or warnings in response to specific build events. Each logger is implemented as a .NET class that implements the <xref:Microsoft.Build.Framework.ILogger> interface, which is defined in the Microsoft.Build.Framework.dll assembly.  
   
- Для средства ведения журнала можно использовать два подхода к реализации:  
+ There are two approaches you can use when implementing a logger:  
   
--   использование интерфейса <xref:Microsoft.Build.Framework.ILogger> напрямую;  
+-   Implement the <xref:Microsoft.Build.Framework.ILogger> interface directly.  
   
--   наследование класса от вспомогательного класса <xref:Microsoft.Build.Utilities.Logger>, который определен в сборке Microsoft.Build.Utilities.dll. <xref:Microsoft.Build.Utilities.Logger> реализует <xref:Microsoft.Build.Framework.ILogger> и предоставляет реализации по умолчанию для некоторых членов <xref:Microsoft.Build.Framework.ILogger>.  
+-   Derive your class from the helper class, <xref:Microsoft.Build.Utilities.Logger>, which is defined in the Microsoft.Build.Utilities.dll assembly. <xref:Microsoft.Build.Utilities.Logger> implements <xref:Microsoft.Build.Framework.ILogger> and provides default implementations of some <xref:Microsoft.Build.Framework.ILogger> members.  
   
- В этой статье мы расскажем, как создать простое средство ведения журнала, унаследованное от <xref:Microsoft.Build.Utilities.Logger>, которое отображает в консоли сообщения в ответ на определенные события сборки.  
+ This topic will explain how to write a simple logger that derives from <xref:Microsoft.Build.Utilities.Logger>, and displays messages on the console in response to certain build events.  
   
-## <a name="registering-for-events"></a>Регистрация в событиях  
- Средство ведения журнала предназначено для сбора сведений о выполнении сборки, которые поступает от обработчика сборки, и для представления этой информации в полезном формате. Все средства ведения журнала должны переопределять метод <xref:Microsoft.Build.Utilities.Logger.Initialize%2A>, который регистрирует средство ведения журнала в событиях. В этом примере средство ведения журнала регистрируется в событиях <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>, <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted> и <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished>.  
+## <a name="registering-for-events"></a>Registering for Events  
+ The purpose of a logger is to gather information on build progress as it is reported by the build engine, and then report that information in a useful way. All loggers must override the <xref:Microsoft.Build.Utilities.Logger.Initialize%2A> method, which is where the logger registers for events. In this example, the logger registers for the <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>, <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted>, and <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished> events.  
   
- [!code-cs[msbuild_SimpleConsoleLogger#2](../msbuild/codesnippet/CSharp/build-loggers_1.cs)]  
+ [!code-csharp[msbuild_SimpleConsoleLogger#2](../msbuild/codesnippet/CSharp/build-loggers_1.cs)]  
   
-## <a name="responding-to-events"></a>Реагирование на события  
- Теперь, когда средство ведения журнала зарегистрировано для определенных событий, оно будет обрабатывать эти события при их возникновении. Для событий <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted> и <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished> средству ведения журнала достаточно записать короткую фразу и имя файла проекта, который имеет отношение к этому событию. Все сообщения из средства ведения журнала записываются в окно консоли.  
+## <a name="responding-to-events"></a>Responding to Events  
+ Now that the logger is registered for specific events, it needs to handle those events when they occur. For the <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted>, and <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished> events, the logger simply writes a short phrase and the name of the project file involved in the event. All messages from the logger are written to the console window.  
   
- [!code-cs[msbuild_SimpleConsoleLogger#3](../msbuild/codesnippet/CSharp/build-loggers_2.cs)]  
+ [!code-csharp[msbuild_SimpleConsoleLogger#3](../msbuild/codesnippet/CSharp/build-loggers_2.cs)]  
   
-## <a name="responding-to-logger-verbosity-values"></a>Реагирование на значения детализации для средства ведения журнала  
- В некоторых случаях информацию о событии нужно записывать, только если параметр **/verbosity** для MSBuild.exe содержит определенное значение. В этом примере обработчик событий <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> записывает сообщение только тогда, когда свойство <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A>, которое задается параметром **/verbosity**, имеет значение <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`.  
+## <a name="responding-to-logger-verbosity-values"></a>Responding to Logger Verbosity Values  
+ In some cases, you may want to only log information from an event if the MSBuild.exe **/verbosity** switch contains a certain value. In this example, the <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> event handler only logs a message if the <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> property, which is set by the **/verbosity** switch, is equal to <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`.  
   
- [!code-cs[msbuild_SimpleConsoleLogger#4](../msbuild/codesnippet/CSharp/build-loggers_3.cs)]  
+ [!code-csharp[msbuild_SimpleConsoleLogger#4](../msbuild/codesnippet/CSharp/build-loggers_3.cs)]  
   
-## <a name="specifying-a-logger"></a>Выбор средства ведения журнала  
- Когда средство ведения журнала скомпилировано в сборку, нужно передать в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] информацию о том, что это средство ведения журнала следует использовать во время сборки. Для этого используйте параметр **/logger** для MSBuild.exe. Дополнительные сведения о доступных параметрах MSBuild.exe см. в [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).  
+## <a name="specifying-a-logger"></a>Specifying a Logger  
+ Once the logger is compiled into an assembly, you need to tell [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] to use that logger during builds. This is done using the **/logger** switch with MSBuild.exe. For more information on the switches available for MSBuild.exe, see [Command-Line Reference](../msbuild/msbuild-command-line-reference.md).  
   
- Следующая команда выполняет сборку проекта `MyProject.csproj` с использованием класса ведения журнала, который реализован в `SimpleLogger.dll`. Параметр **/nologo** позволяет скрыть баннер и сообщение об авторских правах, а параметр **/noconsolelogger** отключает используемое по умолчанию консольное средство ведения журнала [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
+ The following command line builds the project `MyProject.csproj` and uses the logger class implemented in `SimpleLogger.dll`. The **/nologo** switch hides the banner and copyright message and the **/noconsolelogger** switch disables the default [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] console logger.  
   
 ```  
 MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll  
 ```  
   
- Следующая командная строка выполняет сборку проекта с тем же средством ведения журнала, но уже с уровнем `Verbosity` для `Detailed`.  
+ The following command line builds the project with the same logger, but with a `Verbosity` level of `Detailed`.  
   
 ```  
 MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed  
 ```  
   
-## <a name="example"></a>Пример  
+## <a name="example"></a>Example  
   
-### <a name="description"></a>Описание  
- В следующем примере приведен полный код средства ведения журнала.  
+### <a name="description"></a>Description  
+ The following example contains the complete code for the logger.  
   
-### <a name="code"></a>Код  
- [!code-cs[msbuild_SimpleConsoleLogger#1](../msbuild/codesnippet/CSharp/build-loggers_4.cs)]  
+### <a name="code"></a>Code  
+ [!code-csharp[msbuild_SimpleConsoleLogger#1](../msbuild/codesnippet/CSharp/build-loggers_4.cs)]  
   
-### <a name="comments"></a>Комментарии  
+### <a name="comments"></a>Comments  
   
-## <a name="example"></a>Пример  
+## <a name="example"></a>Example  
   
-### <a name="description"></a>Описание  
- В следующем примере показано, как реализовать средство ведения журнала, которое записывает журнал в файл, а не окно консоли.  
+### <a name="description"></a>Description  
+ The following example shows how to implement a logger that writes the log to a file rather than displaying it in the console window.  
   
-### <a name="code"></a>Код  
- [!code-cs[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]  
+### <a name="code"></a>Code  
+ [!code-csharp[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]  
   
-### <a name="comments"></a>Комментарии  
+### <a name="comments"></a>Comments  
   
-## <a name="see-also"></a>См. также  
- [Получение журналов построения](../msbuild/obtaining-build-logs-with-msbuild.md)   
- [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)
+## <a name="see-also"></a>See Also  
+ [Obtaining Build Logs](../msbuild/obtaining-build-logs-with-msbuild.md)   
+ [MSBuild Concepts](../msbuild/msbuild-concepts.md)
