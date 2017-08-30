@@ -1,84 +1,224 @@
 ---
-title: "Проверка данных в наборах данных | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DataTable.ColumnChanging"
-  - "System.Data.DataTable.ColumnChanging"
-  - "System.Data.DataTable.RowChanging"
-  - "DataTable.RowChanging"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "проверка данных"
-  - "проверка данных, наборы данных"
-  - "обновление наборов данных, проверка данных"
-  - "проверка данных, наборы данных"
+title: Validate data in datasets | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DataTable.ColumnChanging
+- System.Data.DataTable.ColumnChanging
+- System.Data.DataTable.RowChanging
+- DataTable.RowChanging
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- data validation, datasets
+- data validation
+- validating data, datasets
+- updating datasets, validating data
 ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
 caps.latest.revision: 24
-caps.handback.revision: 17
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: fbe50e3f3d4d40544f22a2f91c67197430d3982f
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Проверка данных в наборах данных
-Проверка данных представляет собой процесс подтверждения того, что значения, вводимые в объекты данных, соответствуют ограничениям в схемах наборов данных, а также правилам, установленным для приложения.  Проверка данных до отправки обновлений в основную базу данных является хорошей практикой, которая уменьшает вероятность появления ошибок, а также ожидаемое количество циклов обработки между приложением и базой данных.  Чтобы подтвердить, что данные, записываемые в набор данных, верны, можно выполнить проверки в самом наборе данных.  Набор данных может проверить данные независимо от того, как производится обновление: напрямую, элементами управления в форме, внутри компонента или каким\-либо другим способом.  Поскольку набор данных является частью приложения, логично именно в нем реализовать проверку, учитывающую особенности данного приложения \(в отличие от аналогичных проверок в самой базе данных\).  
+# <a name="validate-data-in-datasets"></a>Validate data in datasets
+Validating data is the process of confirming that the values being entered into data objects conform to the constraints within a dataset's schema. The validation process also confirms that these values are following the rules that have been established for your application. It's a good practice to validate data prior to sending updates to the underlying database. This reduces errors as well as the potential number of round trips between an application and the database.  
   
- Добавить проверки в приложение предлагается в файл частичного класса набора данных.  В [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] или [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] откройте **Конструктор наборов данных** и дважды щелкните столбец или таблицу, для которых необходимо создать проверку.  Это действие автоматически создает обработчик событий <xref:System.Data.DataTable.ColumnChanging> или <xref:System.Data.DataTable.RowChanging>.  Дополнительные сведения см. в разделе [Практическое руководство. Проверка данных в ходе изменения столбцов](../Topic/How%20to:%20Validate%20Data%20During%20Column%20Changes.md) или [Практическое руководство. Проверка данных в ходе изменения строк](../Topic/How%20to:%20Validate%20Data%20During%20Row%20Changes.md).  Полный пример содержится в разделе [Пошаговое руководство. Добавление проверки в набор данных](../Topic/Walkthrough:%20Adding%20Validation%20to%20a%20Dataset.md).  
+ You can confirm that data that's being written to a dataset is valid by building validation checks into the dataset itself. The dataset can check the data no matter how the update is being performed — whether directly by controls in a form, within a component, or in some other way. Because the dataset is part of your application (unlike the database backend), it's a logical place to build application-specific validation.  
   
-## Проверка данных  
- Проверка в наборе данных может быть выполнена следующим образом:  
+ The best place to add validation to your application is in the dataset's partial class file. In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] or [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], open the **Dataset Designer** and double-click the column or table for which you want to create validation. This action automatically creates an <xref:System.Data.DataTable.ColumnChanging> or <xref:System.Data.DataTable.RowChanging> event handler. 
   
--   Путем создания для приложения собственных проверок, которые могут проверять данные во время изменения значений в отдельных столбцах.  Дополнительные сведения см. в разделе [Практическое руководство. Проверка данных в ходе изменения столбцов](../Topic/How%20to:%20Validate%20Data%20During%20Column%20Changes.md).  
+## <a name="validate-data"></a>Validate data  
+ Validation within a dataset can be accomplished in the following ways:  
   
--   Путем создания для приложения собственных проверок, которые могут проверять данные во время изменения значений при изменении строки данных целиком.  Дополнительные сведения см. в разделе [Практическое руководство. Проверка данных в ходе изменения строк](../Topic/How%20to:%20Validate%20Data%20During%20Row%20Changes.md).  
+-   By creating your own application-specific validation that can check values in an individual data column during changes.  For more information, see [How to: Validate Data During Column Changes](validate-data-in-datasets.md).  
   
--   Путем создания ключей, ограничений уникальности и т. д. как части определения действительной схемы набора данных.  Дополнительные сведения о проверке в том числе определение схемы см. в разделе [Ограничения DataColumn содержал уникальные значения](../Topic/How%20to:%20Add%20Columns%20to%20a%20DataTable.md#SpecifyUniqueConstraint).  
+-   By creating your own application-specific validation that can check data to values while an entire data row is changing. For more information, see [How to: Validate Data During Row Changes](validate-data-in-datasets.md).  
   
--   Путем задания свойств объекта <xref:System.Data.DataColumn>, например <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A> и <xref:System.Data.DataColumn.Unique%2A>.  
+-   By creating keys, unique constraints, and so on as part of the actual schema definition of the dataset. 
   
- Есть несколько событий, инициируемых объектом <xref:System.Data.DataTable> при внесении изменений в запись:  
+-   By setting the properties of the <xref:System.Data.DataColumn> object's,  such as <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>, and <xref:System.Data.DataColumn.Unique%2A>.  
   
--   События <xref:System.Data.DataTable.ColumnChanging> и <xref:System.Data.DataTable.ColumnChanged> вызываются во время и после каждого изменения отдельных столбцов.  Событие <xref:System.Data.DataTable.ColumnChanging> полезно, когда нужно проверить изменения в отдельных столбцах.  Сведения о предлагаемом изменении передаются как аргумент с событием.  Дополнительные сведения см. в разделе [Практическое руководство. Проверка данных в ходе изменения столбцов](../Topic/How%20to:%20Validate%20Data%20During%20Column%20Changes.md).  
+ Several events are raised by the <xref:System.Data.DataTable> object when a change is occurring in a record:  
   
--   События <xref:System.Data.DataTable.RowChanging> <xref:System.Data.DataTable.RowChanged> вызываются во время и после любого изменения в строке.  Событие <xref:System.Data.DataTable.RowChanging> является более общим в том смысле, что оно лишь указывает, что где\-то в строке происходит изменение, не указывая на столбец.  Дополнительные сведения см. в разделе [Практическое руководство. Проверка данных в ходе изменения строк](../Topic/How%20to:%20Validate%20Data%20During%20Row%20Changes.md).  
+-   The <xref:System.Data.DataTable.ColumnChanging> and <xref:System.Data.DataTable.ColumnChanged> events are raised during and after each change to an individual column. The <xref:System.Data.DataTable.ColumnChanging> event is useful when you want to validate changes in specific columns. Information about the proposed change is passed as an argument with the event. 
+-   The <xref:System.Data.DataTable.RowChanging> and <xref:System.Data.DataTable.RowChanged> events are raised during and after any change in a row. The <xref:System.Data.DataTable.RowChanging> event is more general. It  indicates that a change is occurring somewhere in the row, but you don't know which column has changed.  
   
- По умолчанию каждое изменение столбца инициирует четыре события: сначала события <xref:System.Data.DataTable.ColumnChanging> и <xref:System.Data.DataTable.ColumnChanged> для отдельного столбца, который в данный момент изменяется, а затем события <xref:System.Data.DataTable.RowChanging> и <xref:System.Data.DataTable.RowChanged>.  Если в строку вносится несколько изменений, события будут инициироваться для каждого изменения.  
+ By default, each change to a column therefore raises four events. The first is the <xref:System.Data.DataTable.ColumnChanging> and <xref:System.Data.DataTable.ColumnChanged> events for the specific column that's being changed. Next are the <xref:System.Data.DataTable.RowChanging> and <xref:System.Data.DataTable.RowChanged> events. If multiple changes are being made to the row, the events will be raised for each change.  
   
 > [!NOTE]
->  Метод <xref:System.Data.DataRow.BeginEdit%2A> строки данных отключает события <xref:System.Data.DataTable.RowChanging> и <xref:System.Data.DataTable.RowChanged> после каждого изменения отдельных столбцов.  В этом случае событие не инициируется до вызова метода <xref:System.Data.DataRow.EndEdit%2A>, когда события <xref:System.Data.DataTable.RowChanging> и <xref:System.Data.DataTable.RowChanged> инициируются только один раз.  Дополнительные сведения см. в разделе [Практическое руководство. Отключение ограничений при заполнении набора данных](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
+>  The data row's <xref:System.Data.DataRow.BeginEdit%2A> method turns off the <xref:System.Data.DataTable.RowChanging> and <xref:System.Data.DataTable.RowChanged> events after each individual column change. In that case, the event is not raised until the <xref:System.Data.DataRow.EndEdit%2A> method has been called, when the <xref:System.Data.DataTable.RowChanging> and <xref:System.Data.DataTable.RowChanged> events are raised just once. For more information, see [Turn off constraints while filling a dataset](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
   
- Выбор события зависит от желаемой степени детализации проверки.  Если важно перехватить ошибку непосредственно при изменении столбца, создайте проверку с помощью события <xref:System.Data.DataTable.ColumnChanging>.  В противном случае используйте событие <xref:System.Data.DataTable.RowChanging>, которое может перехватывать сразу несколько ошибок.  Кроме того, если данные структурированы таким образом, что значение одного столбца проверяется на основе содержимого другого столбца, необходимо выполнять проверку во время события <xref:System.Data.DataTable.RowChanging>.  
+ The event you choose depends on how granular you want the validation to be. If it's important that you catch an error immediately when a column changes, build validation by using the <xref:System.Data.DataTable.ColumnChanging> event. Otherwise, use the <xref:System.Data.DataTable.RowChanging> event, which might result in catching several errors at once. Additionally, if your data is structured  so that the value of one column is validated based on the contents of another column, then perform your validation during the <xref:System.Data.DataTable.RowChanging> event.  
   
- По окончании обновления записей объект <xref:System.Data.DataTable> инициирует события, на которые можно отвечать по мере того, как появляются изменения, и после того, как все изменения уже сделаны.  
+ When records are updated, the <xref:System.Data.DataTable> object raises events that you can respond to as changes are occurring and after changes are made.  
   
- Если приложение использует типизированный набор данных, можно создавать строго типизированные обработчики событий.  Это добавит четыре дополнительных типизированных события, для которых можно создать обработчики; `dataTableNameRowChanging`, `dataTableNameRowChanged`, `dataTableNameRowDeleting` и `dataTableNameRowDeleted`.  Эти обработчики типизированных событий передают аргумент, который включает имена столбцов пользовательской таблицы, упрощающий написание и чтение кода.  
+ If your application uses a typed dataset, you can create strongly typed event handlers. This will add four additional typed events that you can create handlers for: `dataTableNameRowChanging`, `dataTableNameRowChanged`, `dataTableNameRowDeleting`, and `dataTableNameRowDeleted`. These typed event handlers pass an argument that includes the column names of your table that make code easier to write and read.  
   
-## События обновления данных  
+## <a name="data-update-events"></a>Data update events  
   
-|Событие|Описание|  
-|-------------|--------------|  
-|<xref:System.Data.DataTable.ColumnChanging>|Значение в столбце изменяется.  Событие передает строку и столбец, а также предлагаемое новое значение.|  
-|<xref:System.Data.DataTable.ColumnChanged>|Значение в столбце изменено.  Событие передает строку и столбец, а также предлагаемое значение.|  
-|<xref:System.Data.DataTable.RowChanging>|Изменения, внесенные в объект <xref:System.Data.DataRow>, будут зафиксированы в наборе данных.  Если метод <xref:System.Data.DataRow.BeginEdit%2A> не вызывался, событие <xref:System.Data.DataTable.RowChanging> инициируется для каждого изменения в столбце сразу после инициирования события <xref:System.Data.DataTable.ColumnChanging>.  Если же метод <xref:System.Data.DataRow.BeginEdit%2A> вызывался до внесения изменений, событие <xref:System.Data.DataTable.RowChanging> инициируется только при вызове метода <xref:System.Data.DataRow.EndEdit%2A>.<br /><br /> Событие передает строку и значение, указывающее, какое действие выполняется \(изменение, вставка и т. д.\).|  
-|<xref:System.Data.DataTable.RowChanged>|Строка изменена.  Событие передает строку и значение, указывающее, какое действие выполняется \(изменение, вставка и т. д.\).|  
-|<xref:System.Data.DataTable.RowDeleting>|Строка удаляется.  Событие передает строку и значение, указывающее, какое действие выполняется \(удаление\).|  
-|<xref:System.Data.DataTable.RowDeleted>|Строка удалена.  Событие передает строку и значение, указывающее, какое действие выполняется \(удаление\).|  
+|Event|Description|  
+|-----------|-----------------|  
+|<xref:System.Data.DataTable.ColumnChanging>|The value in a column is being changed. The event passes the row and column to you, along with the proposed new value.|  
+|<xref:System.Data.DataTable.ColumnChanged>|The value in a column has been changed. The event passes the row and column to you, along with the proposed value.|  
+|<xref:System.Data.DataTable.RowChanging>|The changes that were made to a <xref:System.Data.DataRow> object are about to be committed back into the dataset. If you have not called the <xref:System.Data.DataRow.BeginEdit%2A> method, the <xref:System.Data.DataTable.RowChanging> event is raised for each change to a column immediately after the <xref:System.Data.DataTable.ColumnChanging> event has been raised. If you called <xref:System.Data.DataRow.BeginEdit%2A> before making changes, the <xref:System.Data.DataTable.RowChanging> event is raised only when you call the <xref:System.Data.DataRow.EndEdit%2A> method.<br /><br /> The event passes the row to you, along with a value indicating what type of action (change, insert, and so on) is being performed.|  
+|<xref:System.Data.DataTable.RowChanged>|A row has been changed. The event passes the row to you, along with a value indicating what type of action (change, insert, and so on) is being performed.|  
+|<xref:System.Data.DataTable.RowDeleting>|A row is being deleted. The event passes the row to you, along with a value indicating what type of action (delete) is being performed.|  
+|<xref:System.Data.DataTable.RowDeleted>|A row has been deleted. The event passes the row to you, along with a value indicating what type of action (delete) is being performed.|  
   
- События <xref:System.Data.DataTable.ColumnChanging>, <xref:System.Data.DataTable.RowChanging> и <xref:System.Data.DataTable.RowDeleting> вызываются во время процесса обновления.  Эти события могут быть использованы для проверки данных или выполнения других операций по обработке данных.  Поскольку обновления выполняются во время работы этих событий, можно отменить обновление с помощью создания исключения, что не позволит изменениям выполниться до конца.  
+ The <xref:System.Data.DataTable.ColumnChanging>, <xref:System.Data.DataTable.RowChanging>, and <xref:System.Data.DataTable.RowDeleting> events are raised during the update process. You can use these events to validate data or perform other types of processing. Because the update is in process during these events, you can cancel it by throwing an exception, which prevents the update from finishing.  
   
- События <xref:System.Data.DataTable.ColumnChanged>, <xref:System.Data.DataTable.RowChanged> и <xref:System.Data.DataTable.RowDeleted> являются уведомляющими событиями, инициируемыми после успешного окончания обновления.  Эти события очень полезны, если в дальнейшем требуется продолжать работу, используя выполненное обновление.  
+ The <xref:System.Data.DataTable.ColumnChanged>, <xref:System.Data.DataTable.RowChanged> and <xref:System.Data.DataTable.RowDeleted> events are notification events that are raised when the update has finished successfully. These events are useful when you want to take further action based on a successful update.  
   
-## См. также  
- [Создание и изменение типизированных наборов данных](../data-tools/creating-and-editing-typed-datasets.md)   
- [Практическое руководство. Подключение к данным в базе данных](../data-tools/how-to-connect-to-data-in-a-database.md)   
- [Практическое руководство. Проверка данных элемента управления DataGridView в Windows Forms](../Topic/How%20to:%20Validate%20Data%20in%20the%20Windows%20Forms%20DataGridView%20Control.md)   
- [Практическое руководство. Отображение значков ошибок при проверке введенных в форму данных с помощью компонента ErrorProvider в Windows Forms](../Topic/How%20to:%20Display%20Error%20Icons%20for%20Form%20Validation%20with%20the%20Windows%20Forms%20ErrorProvider%20Component.md)
+## <a name="validate-data-during-column-changes"></a>Validate data during column changes  
+  
+> [!NOTE]
+>  The **Dataset Designer** creates a partial class in which validation logic can be added to a dataset. The designer-generated dataset doesn't delete or change any code in the partial class.  
+  
+ You can validate data when the value in a data column changes by responding to the <xref:System.Data.DataTable.ColumnChanging> event. When raised, this event passes an event argument (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>) that contains the value that's being proposed for the current column. Based on the contents of `e.ProposedValue`, you can:  
+  
+-   Accept the proposed value by doing nothing.  
+  
+-   Reject the proposed value by setting the column error (<xref:System.Data.DataRow.SetColumnError%2A>) from within the column-changing event handler.  
+  
+-   Optionally use an <xref:System.Windows.Forms.ErrorProvider> control to display an error message to the user. For more information, see [ErrorProvider Component](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).  
+  
+ Validation can also be performed during the <xref:System.Data.DataTable.RowChanging> event. 
+  
+## <a name="validate-data-during-row-changes"></a>Validate data during row changes  
+ You can write code to verify that each column you want to validate contains data that meets the requirements of your application. Do this by setting the column to indicate that it contains an error if a proposed value is unacceptable. The following examples set a column error when the `Quantity` column is 0 or less. The row-changing event handlers should resemble the following examples.  
+  
+#### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>To validate data when a row changes (Visual Basic)  
+  
+1.  Open your dataset in the **Dataset Designer**. For more information, see [Walkthrough: Creating a Dataset in the Dataset Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).  
+  
+2.  Double-click the title bar of the table you want to validate. This action automatically creates the <xref:System.Data.DataTable.RowChanging> event handler of the <xref:System.Data.DataTable> in the dataset's partial-class file.  
+  
+    > [!TIP]
+    >  Double-click to the left of the table name to create the row-changing event handler. If you double-click the table name, you can edit it.  
+  
+     [!code-vb[VbRaddataValidating#3](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_1.vb)]  
+  
+#### <a name="to-validate-data-when-a-row-changes-c"></a>To validate data when a row changes (C#)  
+  
+1.  Open your dataset in the **Dataset Designer**. For more information, see [Walkthrough: Creating a dataset in the dataset designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).  
+  
+2.  Double-click the title bar of the table you want to validate. This action creates a partial-class file for the <xref:System.Data.DataTable>.  
+  
+    > [!NOTE]
+    >  The **Dataset Designer** does not automatically create an event handler for the <xref:System.Data.DataTable.RowChanging> event. You have to create a method to handle the <xref:System.Data.DataTable.RowChanging> event, and run code to hook up the event in the table's initialization method.  
+  
+3.  Copy the following code into the partial class:  
+  
+    ```csharp  
+    public override void EndInit()  
+    {  
+        base.EndInit();  
+        Order_DetailsRowChanging += TestRowChangeEvent;  
+    }  
+  
+    public void TestRowChangeEvent(object sender, Order_DetailsRowChangeEvent e)  
+    {  
+        if ((short)e.Row.Quantity <= 0)  
+        {  
+            e.Row.SetColumnError("Quantity", "Quantity must be greater than 0");  
+        }  
+        else  
+        {  
+            e.Row.SetColumnError("Quantity", "");  
+        }  
+    }  
+    ```  
+  
+## <a name="to-retrieve-changed-rows"></a>To retrieve changed rows  
+ Each row in a data table has a <xref:System.Data.DataRow.RowState%2A> property that keeps track of the current state of that row by using the values in the <xref:System.Data.DataRowState> enumeration. You can return changed rows from a dataset or data table by calling the `GetChanges` method of a <xref:System.Data.DataSet> or <xref:System.Data.DataTable>. You can verify that changes exist prior to calling `GetChanges` by calling the <xref:System.Data.DataSet.HasChanges%2A> method of a dataset. 
+  
+> [!NOTE]
+>  After you commit changes to a dataset or data table (by calling the <xref:System.Data.DataSet.AcceptChanges%2A> method), the `GetChanges` method returns no data. If your application needs to process changed rows, you must process the changes before calling the `AcceptChanges` method.  
+  
+ Calling the <xref:System.Data.DataSet.GetChanges%2A> method of a dataset or data table returns a new dataset or data table that contains only records that have been changed. If you want to get specific records — for example, only new records or only modified records — you can pass a value from the <xref:System.Data.DataRowState> enumeration as a parameter to the `GetChanges` method.  
+  
+ Use the <xref:System.Data.DataRowVersion> enumeration to access the different versions of a row (for example, the original values that were in a row prior to processing it).  
+  
+#### <a name="to-get-all-changed-records-from-a-dataset"></a>To get all changed records from a dataset  
+  
+-   Call the <xref:System.Data.DataSet.GetChanges%2A> method of a dataset.  
+  
+     The following example creates a new dataset called `changedRecords` and populates it with all the changed records from another dataset called `dataSet1`.  
+  
+     [!code-csharp[VbRaddataEditing#14](../data-tools/codesnippet/CSharp/validate-data-in-datasets_2.cs)]  [!code-vb[VbRaddataEditing#14](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_2.vb)]  
+  
+#### <a name="to-get-all-changed-records-from-a-data-table"></a>To get all changed records from a data table  
+  
+-   Call the <xref:System.Data.DataTable.GetChanges%2A> method of a DataTable.  
+  
+     The following example creates a new data table called `changedRecordsTable` and populates it with all the changed records from another data table called `dataTable1`.  
+  
+     [!code-csharp[VbRaddataEditing#15](../data-tools/codesnippet/CSharp/validate-data-in-datasets_3.cs)]  [!code-vb[VbRaddataEditing#15](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_3.vb)]  
+  
+#### <a name="to-get-all-records-that-have-a-specific-row-state"></a>To get all records that have a specific row state  
+  
+-   Call the `GetChanges` method of a dataset or data table and pass a <xref:System.Data.DataRowState> enumeration value as an argument.  
+  
+     The following example shows how to create a new dataset called `addedRecords` and populate it only with records that have been added to the `dataSet1` dataset.  
+  
+     [!code-csharp[VbRaddataEditing#16](../data-tools/codesnippet/CSharp/validate-data-in-datasets_4.cs)]  [!code-vb[VbRaddataEditing#16](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_4.vb)]  
+  
+-   The following example shows how to return all records that were recently added to the `Customers` table:  
+  
+     [!code-csharp[VbRaddataEditing#17](../data-tools/codesnippet/CSharp/validate-data-in-datasets_5.cs)]  [!code-vb[VbRaddataEditing#17](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_5.vb)]  
+  
+## <a name="access-the-original-version-of-a-datarow"></a>Access the original version of a DataRow  
+ When changes are made to data rows, the dataset retains both the original (<xref:System.Data.DataRowVersion>) and new (<xref:System.Data.DataRowVersion>) versions of the row. For example, before calling the `AcceptChanges` method, your application can access the different versions of a record (as defined in the <xref:System.Data.DataRowVersion> enumeration) and process the changes accordingly.  
+  
+> [!NOTE]
+>  Different versions of a row exist only after it has been edited and before it the `AcceptChanges` method has been called. After the `AcceptChanges` method has been called, the current and original versions are the same.  
+  
+ Passing the <xref:System.Data.DataRowVersion> value along with the column index (or column name as a string) returns the value from that column's particular row version. The changed column is identified during the <xref:System.Data.DataTable.ColumnChanging> and <xref:System.Data.DataTable.ColumnChanged> events. This is a good time to inspect the different row versions for validation purposes. However, if you have temporarily suspended constraints, those events won't be raised, and you will need to programmatically identify which columns have changed. You can do this by iterating through the <xref:System.Data.DataTable.Columns%2A> collection and comparing the different <xref:System.Data.DataRowVersion> values.  
+  
+#### <a name="to-get-the-original-version-of-a-record"></a>To get the original version of a record  
+  
+-   Access the value of a column by passing in the <xref:System.Data.DataRowVersion> of the row you want to return.  
+  
+     The following example shows how to use a <xref:System.Data.DataRowVersion> value to get the original value of a `CompanyName` field in a <xref:System.Data.DataRow>:  
+  
+     [!code-csharp[VbRaddataEditing#21](../data-tools/codesnippet/CSharp/validate-data-in-datasets_6.cs)]  [!code-vb[VbRaddataEditing#21](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_6.vb)]  
+  
+## <a name="access-the-current-version-of-a-datarow"></a>Access the current version of a DataRow  
+  
+#### <a name="to-get-the-current-version-of-a-record"></a>To get the current version of a record  
+  
+-   Access the value of a column, and then add a parameter to the index that indicates which version of a row you want to return.  
+  
+     The following example shows how to use a <xref:System.Data.DataRowVersion> value to get the current value of a `CompanyName` field in a <xref:System.Data.DataRow>:  
+  
+     [!code-csharp[VbRaddataEditing#22](../data-tools/codesnippet/CSharp/validate-data-in-datasets_7.cs)]  [!code-vb[VbRaddataEditing#22](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_7.vb)]  
+  
+## <a name="see-also"></a>See Also  
+ [How to: Validate Data in the Windows Forms DataGridView Control](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)   
+ [How to: Display Error Icons for Form Validation with the Windows Forms ErrorProvider Component](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

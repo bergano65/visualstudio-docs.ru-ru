@@ -1,137 +1,152 @@
 ---
-title: "Пошаговое руководство. Передача данных между формами Windows Forms | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "данные [Visual Studio], передача данных между формами"
-  - "формы, передача данных между"
-  - "пошаговые руководства [Visual Studio], данные"
-  - "пошаговые руководства [Windows Forms], данные"
-  - "Windows Forms, пошаговые руководства"
+title: Pass data between forms | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- walkthroughs [Windows Forms], data
+- walkthroughs [Visual Studio], data
+- data [Visual Studio], passing between forms
+- forms, passing data between
+- Windows Forms, walkthroughs
 ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
 caps.latest.revision: 14
-caps.handback.revision: 11
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 61bd455cc0e6aaae1983969e9886fd19ad064bab
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Передача данных между формами Windows Forms
-Это пошаговое руководство содержит инструкции по передаче данных из одной формы в другую.  Использование таблиц заказов и клиентов из одной формы "Борей" позволяет пользователям выбрать клиента, а на второй форме отображаются заказы выбранного клиента.  Это пошаговое руководство описывает создание метода на одной форме, получающего данные из первой формы.  
+# <a name="pass-data-between-forms"></a>Pass data between forms
+This walkthrough provides step-by-step instructions for passing data from one form to another. Using the customers and orders tables from Northwind, one form allows users to select a customer, and a second form displays the selected customer's orders. This walkthrough shows how to create a method on the second form that receives data from the first form.  
   
 > [!NOTE]
->  Здесь демонстрируется всего один способ передачи данных между формами.  Существуют и другие способы передать данные в форму, включая следующие: вы можете создать второй конструктор для приема данных или создать общее свойство, для которого можно задать данные из первой формы.  
+>  This walkthrough demonstrates only one way to pass data between forms. There are other options for passing data to a form, including creating a second constructor to receive data, or creating a public property that can be set with data from the first form.  
   
- В данном пошаговом руководстве представлены следующие задачи.  
+ Tasks illustrated in this walkthrough include:  
   
--   Создание нового проекта **Приложение Windows**.  
+-   Creating a new **Windows Application** project.  
   
--   Создание и настройка набора данных с помощью [мастер настройки источника данных](../data-tools/media/data-source-configuration-wizard.png).  
+-   Creating and configuring a dataset with the [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png).  
   
--   Выбор элемента управления, создаваемого на форме при перетаскивании элементов из окна **Источники данных**.  Для получения дополнительной информации см. [Задание поведения, при котором элемент управления создается при перетаскивании из окна "Источники данных"](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+-   Selecting the control to be created on the form when dragging items from the **Data Sources** window. For more information, see [Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
--   Создание элемента управления с привязкой к данным с помощью перетаскивания элементов из окна **Источники данных** на форму.  
+-   Creating a data-bound control by dragging items from the **Data Sources** window onto a form.  
   
--   Создание второй формы с сеткой для отображения данных.  
+-   Creating a second form with a grid to display data.  
   
--   Создание запроса адаптера таблицы для получения заказов определенного клиента.  
+-   Creating a TableAdapter query to fetch orders for a specific customer.  
   
--   Передача данных между формами.  
+-   Passing data between forms.  
   
-## Обязательные компоненты  
- Для выполнения данного пошагового руководства требуется:  
+## <a name="prerequisites"></a>Prerequisites  
+ In order to complete this walkthrough, you need:  
   
--   Доступ к примеру базы данных "Борей".  Для получения дополнительной информации см. [Практическое руководство. Установка образцов баз данных](../data-tools/how-to-install-sample-databases.md).  
+-   Access to the Northwind sample database. For more information, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
   
-## Создание приложения Windows  
+## <a name="create-the-windows-application"></a>Create the Windows Application  
   
-#### Порядок создания нового проекта Windows  
+#### <a name="to-create-the-new-windows-project"></a>To create the new Windows project  
   
-1.  Перейдите в меню **Файл** и создайте новый проект.  
+1.  From the **File** menu, create a new project.  
   
-2.  Присвойте проекту имя `PassingDataBetweenForms`.  
+2.  Name the project `PassingDataBetweenForms`.  
   
-3.  Выберите **Приложение Windows Forms** и нажмите кнопку **ОК**.  Для получения дополнительной информации см. [Клиентские приложения](../Topic/Developing%20Client%20Applications%20with%20the%20.NET%20Framework.md).  
+3.  Select **Windows Forms Application**, and click **OK**. For more information, see [Client Applications](/dotnet/framework/develop-client-apps).  
   
-     Создается проект **PassingDataBetweenForms**, который добавляется в **Обозреватель решений**.  
+     The **PassingDataBetweenForms** project is created, and added to **Solution Explorer**.  
   
-## Создание источника данных  
+## <a name="create-the-data-source"></a>Create the data source  
   
-#### Создание источника данных  
+#### <a name="to-create-the-data-source"></a>To create the data source  
   
-1.  В меню **Данные** выберите команду **Показать источники данных**.  
+1.  On the **Data** menu, click **Show Data Sources**.  
   
-2.  В окне **Источники данных** выберите **Добавить новый источник данных**, чтобы запустить **Мастер настройки источника данных**.  
+2.  In the **Data Sources** window, select **Add New Data Source** to start the **Data Source Configuration** wizard.  
   
-3.  На странице **Выбор типа источника данных** выберите элемент **База данных** и нажмите **Далее**.  
+3.  Select **Database** on the **Choose a Data Source Type** page, and then click **Next**.  
   
-4.  На странице **Выбор модели базы данных** выберите **Набор данных** и нажмите кнопку **Далее**.  
+4.  On the **Choose a database model** page, verify that **Dataset** is specified, and then click **Next**.  
   
-5.  На странице **Выбор подключения к базе данных** выполните одно из следующих действий.  
+5.  On the **Choose your Data Connection** page, do one of the following:  
   
-    -   Если подключение к учебной базе данных Northwind доступно в раскрывающемся списке, то выберите его.  
+    -   If a data connection to the Northwind sample database is available in the drop-down list, select it.  
   
-         \-или\-  
+    -   Select **New Connection** to launch the **Add/Modify Connection** dialog box.  
   
-    -   Выберите **Новое подключение** для открытия диалогового окна **Добавить\/изменить подключение**.  
+6.  If your database requires a password and if the option to include sensitive data is enabled, select the option and then click **Next**.  
   
-6.  Если базе данных требуется пароль и выбран параметр для включения конфиденциальных данных, выберите параметр и щелкните **Далее**.  
+7.  On the **Save connection string to the Application Configuration file** page, click **Next**.  
   
-7.  На странице **Сохранение подключения в файле конфигурации приложения** нажмите кнопку **Далее**.  
+8.  On the **Choose your Database Objects** page, expand the **Tables** node.  
   
-8.  Разверните узел **Таблицы** на странице **Выбор объектов базы данных**.  
+9. Select the **Customers** and **Orders** tables, and then click **Finish**.  
   
-9. Выберите таблицы **Customers** и **Orders** и нажмите **Готово**.  
+     The **NorthwindDataSet** is added to your project, and the **Customers** and **Orders** tables appear in the **Data Sources** window.  
   
-     **NorthwindDataSet** добавляется в проект, и таблицы **Клиенты** и "Заказы" отображаются в окне **Источники данных**.  
+## <a name="create-the-first-form-form1"></a>Create the first form (Form1)  
+ You can create a data-bound grid (a <xref:System.Windows.Forms.DataGridView> control), by dragging the **Customers** node from the **Data Sources** window onto the form.  
   
-## Создание первой формы \(Form1\)  
- Вы можете создать сетку с привязкой к данным \(элемент управления <xref:System.Windows.Forms.DataGridView>\) с помощью перетаскивания узла **Клиенты** из окна **Источники данных** на форму.  
+#### <a name="to-create-a-data-bound-grid-on-the-form"></a>To create a data-bound grid on the form  
   
-#### Создание сетки с привязкой к данным на форме  
+-   Drag the main **Customers** node from the **Data Sources** window onto **Form1**.  
   
--   Перетащите главный узел **Клиенты** из окна **Источники данных** на **Form1**.  
+     A <xref:System.Windows.Forms.DataGridView> and a tool strip (<xref:System.Windows.Forms.BindingNavigator>) for navigating records appear on **Form1**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray.  
   
-     На форме **Form1** появляется <xref:System.Windows.Forms.DataGridView> и панель инструментов \(<xref:System.Windows.Forms.BindingNavigator>\) для перемещения по записям.  В области компонентов появляется [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource> и <xref:System.Windows.Forms.BindingNavigator>.  
+## <a name="create-the-second-form-form2"></a>Create the second form (Form2)  
   
-## Создание второй формы \(Form2\)  
+#### <a name="to-create-a-second-form-to-pass-the-data-to"></a>To create a second form to pass the data to  
   
-#### Порядок создания второй формы, предназначенной для передачи данных  
+1.  From the **Project** menu, choose **Add Windows Form**.  
   
-1.  В меню **Проект** выберите пункт **Добавить форму Windows**.  
+2.  Leave the default name of **Form2**, and click **Add**.  
   
-2.  Оставьте имя по умолчанию **Form2** и щелкните **Добавить**.  
+3.  Drag the main **Orders** node from the **Data Sources** window onto **Form2**.  
   
-3.  Перетащите главный узел **Заказы** из окна **Источники данных** на **Form2**.  
+     A <xref:System.Windows.Forms.DataGridView> and a tool strip (<xref:System.Windows.Forms.BindingNavigator>) for navigating records appear on **Form2**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray.  
   
-     На форме **Form2** появляется <xref:System.Windows.Forms.DataGridView> и панель инструментов \(<xref:System.Windows.Forms.BindingNavigator>\) для перемещения по записям.  В области компонентов появляется [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource> и <xref:System.Windows.Forms.BindingNavigator>.  
+4.  Delete the **OrdersBindingNavigator** from the component tray.  
   
-4.  Удалите **OrdersBindingNavigator** из области компонентов.  
+     The **OrdersBindingNavigator** disappears from **Form2**.  
   
-     **OrdersBindingNavigator** исчезает из **Form2**.  
+## <a name="add-a-tableadapter-query-to-form2-to-load-orders-for-the-selected-customer-on-form1"></a>Add a TableAdapter query to Form2 to load orders for the selected customer on Form1  
   
-## Добавление запроса адаптера таблицы на форму Form2 для загрузки заказов выбранного клиента на форме Form1  
+#### <a name="to-create-a-tableadapter-query"></a>To create a TableAdapter query  
   
-#### Порядок создания запроса адаптера таблицы  
+1.  Double-click the **NorthwindDataSet.xsd** file in **Solution Explorer**.  
   
-1.  Дважды щелкните файл **NorthwindDataSet.xsd** в **Обозревателе решений**.  
+2.  Right-click the **OrdersTableAdapter**, and select **Add Query**.  
   
-2.  Щелкните правой кнопкой мыши элемент **OrdersTableAdapter** и выберите пункт **Добавить запрос**.  
+3.  Leave the default option of **Use SQL statements**, and then click **Next**.  
   
-3.  Оставьте параметр по умолчанию **Использовать инструкции SQL** и нажмите кнопку **Далее**.  
+4.  Leave the default option of **SELECT which returns rows**, and then click **Next**.  
   
-4.  Оставьте параметр по умолчанию **Инструкция SELECT, возвращающая строки** и нажмите кнопку **Далее**.  
-  
-5.  Добавьте в запрос предложение WHERE, чтобы возвратить `Orders` на основании `CustomerID`.  Запрос должен выглядеть примерно следующим образом:  
+5.  Add a WHERE clause to the query, to return `Orders` based on the `CustomerID`. The query should be similar to the following:  
   
     ```  
     SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipVia, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry  
@@ -140,68 +155,56 @@ manager: "ghogen"
     ```  
   
     > [!NOTE]
-    >  Проверьте правильность синтаксиса параметров для своей базы данных.  Например, в Microsoft Access предложение WHERE должно выглядеть следующим образом: `WHERE CustomerID = ?`.  
+    >  Verify the correct parameter syntax for your database. For example, in Microsoft Access, the WHERE clause would look like: `WHERE CustomerID = ?`.  
   
-6.  Нажмите кнопку **Далее**.  
+6.  Click **Next**.  
   
-7.  Для параметра **Имя метода Заполнить таблицу данных \(DataTable\)** введите `FillByCustomerID`.  
+7.  For the **Fill a DataTableMethod Name**, type `FillByCustomerID`.  
   
-8.  Снимите флажок **Вернуть таблицу данных \(DataTable\)** и нажмите кнопку **Далее**.  
+8.  Clear the **Return a DataTable** option, and then click **Next**.  
   
-9. Нажмите кнопку **Готово**.  
+9. Click **Finish**.  
   
-## Создание метода на форме Form2 для передачи данных  
+## <a name="create-a-method-on-form2-to-pass-data-to"></a>Create a method on Form2 to pass data to  
   
-#### Порядок создания метода, предназначенного для передачи данных  
+#### <a name="to-create-a-method-to-pass-data-to"></a>To create a method to pass data to  
   
-1.  Щелкните правой кнопкой мыши **Form2** и выберите пункт **Просмотреть код**, чтобы открыть **Form2** в **Редакторе кода**.  
+1.  Right-click **Form2**, and select **View Code** to open **Form2** in the **Code Editor**.  
   
-2.  Добавьте следующий код в **Form2** после метода `Form2_Load`:  
+2.  Add the following code to **Form2** after the `Form2_Load` method:  
   
-     [!code-vb[VbRaddataDisplaying#1](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_1.vb)]
-     [!code-cs[VbRaddataDisplaying#1](../data-tools/codesnippet/CSharp/pass-data-between-forms_1.cs)]  
+     [!code-vb[VbRaddataDisplaying#1](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_1.vb)]  [!code-cs[VbRaddataDisplaying#1](../data-tools/codesnippet/CSharp/pass-data-between-forms_1.cs)]  
   
-## Создание метода на форме Form1 для передачи данных и отображения формы Form2  
+## <a name="create-a-method-on-form1-to-pass-data-and-display-form2"></a>Create a method on Form1 to pass data and display Form2  
   
-#### Порядок создания метода, предназначенного для передачи данных в Form2  
+#### <a name="to-create-a-method-to-pass-data-to-form2"></a>To create a method to pass data to Form2  
   
-1.  В **Form1** щелкните правой кнопкой мыши сетку данных клиентов и выберите пункт **Свойства**.  
+1.  In **Form1**, right-click the Customer data grid, and then click **Properties**.  
   
-2.  В окне **Свойства** выберите **События**.  
+2.  In the **Properties** window, click **Events**.  
   
-3.  Дважды щелкните событие **CellDoubleClick**.  
+3.  Double-click the **CellDoubleClick** event.  
   
-     Откроется окно редактора кода.  
+     The code editor appears.  
   
-4.  Обновите определение метода в соответствии со следующим примером:  
+4.  Update the method definition to match the following sample:  
   
-     [!code-cs[VbRaddataDisplaying#2](../data-tools/codesnippet/CSharp/pass-data-between-forms_2.cs)]
-     [!code-vb[VbRaddataDisplaying#2](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_2.vb)]  
+     [!code-cs[VbRaddataDisplaying#2](../data-tools/codesnippet/CSharp/pass-data-between-forms_2.cs)]  [!code-vb[VbRaddataDisplaying#2](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_2.vb)]  
   
-## Запуск приложения  
+## <a name="run-the-application"></a>Run the Application  
   
-#### Запуск приложения  
+#### <a name="to-run-the-application"></a>To run the application  
   
--   Нажмите клавишу F5 для запуска приложения.  
+-   Press F5 to run the application.  
   
--   Дважды щелкните запись клиента в форме **Form1**, чтобы открыть **Form2** с заказами этого клиента.  
+-   Double-click a customer record in **Form1** to open **Form2** with that customer's orders.  
   
-## Следующие действия  
- В зависимости от требований приложения существуют несколько шагов, которые, возможно, потребуется выполнить после передачи данных между формами.  Ниже приводится перечень рекомендаций, позволяющих улучшить полученный результат.  
+## <a name="next-steps"></a>Next Steps  
+ Depending on your application requirements, there are several steps you may want to perform after passing data between forms. Some enhancements you could make to this walkthrough include:  
   
--   Изменение набора данных для добавления или удаления объектов базы данных.  Для получения дополнительной информации см. [Практическое руководство. Редактирование набора данных](../Topic/How%20to:%20Edit%20a%20Dataset.md).  
+-   Editing the dataset, to add or remove database objects. For more information, see [Create and configure datasets](../data-tools/create-and-configure-datasets-in-visual-studio.md).  
   
--   Добавление функциональности для сохранения данных в базу данных.  Для получения дополнительной информации см. [Практическое руководство. Сохранение изменений набора данных в базе данных](../Topic/How%20to:%20Save%20Dataset%20Changes%20to%20a%20Database.md).  
+-   Adding functionality to save data back to the database. For more information, see [Save data back to the database](../data-tools/save-data-back-to-the-database.md).  
   
-## См. также  
- [Пошаговые руководства работы с данными](../Topic/Data%20Walkthroughs.md)   
- [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Общие сведения об источниках данных](../data-tools/add-new-data-sources.md)   
- [Общие сведения об адаптере таблиц](../data-tools/tableadapter-overview.md)   
- [Подключение к данным в Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Подготовка приложения к получению данных](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Выборка данных в приложение](../data-tools/fetching-data-into-your-application.md)   
- [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Редактирование данных в приложении](../data-tools/editing-data-in-your-application.md)   
- [Проверка данных](../Topic/Validating%20Data.md)   
- [Сохранение данных](../data-tools/saving-data.md)
+## <a name="see-also"></a>See Also  
+ [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

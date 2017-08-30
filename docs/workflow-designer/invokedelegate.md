@@ -1,39 +1,58 @@
 ---
-title: "InvokeDelegate | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "InvokeDelegate Designer"
-  - "System.Activities.Statements.InvokeDelegate.UI"
+title: InvokeDelegate | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords:
+- InvokeDelegate Designer
+- System.Activities.Statements.InvokeDelegate.UI
 ms.assetid: 289a7498-5127-453f-beb5-05f05b80d26f
 caps.latest.revision: 3
-ms.author: "sdanie"
-manager: "erikre"
-caps.handback.revision: 3
+ms.author: sdanie
+manager: erikre
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 9ee20847f0ee80ce8aef2800fed1c5a120166cd6
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# InvokeDelegate
-Конструктор **InvokeDelegate** используется для создания и настройки действия <xref:System.Activities.Statements.InvokeDelegate>.  
+# <a name="invokedelegate"></a>InvokeDelegate
+The **InvokeDelegate** designer is used to create and configure an <xref:System.Activities.Statements.InvokeDelegate> activity.  
   
-## Действие InvokeDelegate  
- <xref:System.Activities.Statements.InvokeDelegate> вызывает открытый делегат.  
+## <a name="the-invokedelegate-activity"></a>The InvokeDelegate Activity  
+ The <xref:System.Activities.Statements.InvokeDelegate> calls a public delegate.  
   
-### Использование конструктора действий InvokeDelegate  
- Конструктор операций **InvokeDelegate** можно найти в категории **ПримитивыОбласти элементов**, нажав на вкладку **Область элементов** в [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] \(Иначе выберите **Панель инструментов** из меню **Просмотр** или же CTRL\+ALT\+X.\)  
+### <a name="using-the-invokedelegate-activity-designer"></a>Using the InvokeDelegate Activity Designer  
+ The **InvokeDelegate** activity designer can be found in the **Primitives** category of the **Toolbox**, which is accessed by clicking the **Toolbox** tab [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (Alternatively, select **Toolbar** from the **View** menu, or CRTL+ALT+X.)  
   
- Конструктор операций **InvokeDelegate** можно перетащить из **Области элементов** в область [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] в любое место, куда обычно размещаются действия, например, внутри <xref:System.Activities.Statements.Sequence>.Это создает действие <xref:System.Activities.Statements.InvokeDelegate> с именем по умолчанию <xref:System.Activities.Activity.DisplayName%2A> InvokeDelegate.<xref:System.Activities.Activity.DisplayName%2A> можно изменить в заголовке конструктора операций **InvokeDelegate** либо в поле **DisplayName** сетки свойств.  
+ The **InvokeDelegate** activity designer can be dragged from the **Toolbox** and dropped on to the [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] surface where ever activities are usually placed, such as inside a <xref:System.Activities.Statements.Sequence>. This creates an <xref:System.Activities.Statements.InvokeDelegate> activity with a default <xref:System.Activities.Activity.DisplayName%2A> of InvokeDelegate. The <xref:System.Activities.Activity.DisplayName%2A> can be edited in the header of the **InvokeDelegate** activity designer or in the **DisplayName** box of the property grid.  
   
-### Свойства InvokeDelegate  
- В следующей таблице показаны свойства <xref:System.Activities.Statements.InvokeDelegate> и описано их использование в конструкторе.Эти свойства можно изменить в таблице свойств и некоторые свойства ― в области конструктора [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].  
+### <a name="the-invokedelegate-properties"></a>The InvokeDelegate Properties  
+ The following table shows the <xref:System.Activities.Statements.InvokeDelegate> properties and describes how they are used in the designer. These properties can be edited in property grid and some can be edited on [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]designer surface.  
   
-|Имя свойства|Обязательное|Использование|  
-|------------------|------------------|-------------------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|Нет|Понятное имя действия <xref:System.Activities.Statements.InvokeDelegate>.Значение по умолчанию: InvokeDelegate.<br /><br /> Несмотря на то, что свойство <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же рекомендуется использовать.|  
-|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|Имя метода <xref:System.Activities.Statements.ActivityDelegate>, вызываемого, когда выполняется действие.Это свойство можно изменить в области конструктора.Это свойство обязательное.|  
-|<xref:System.Activities.Statements.InvokeMethod.DelegateArguments%2A>|False|Коллекция аргументов вызванного делегата.Ключи — это имена объектов <xref:System.Activities.Statements.ActivityDelegateParameter> в объекте <xref:System.Activities.Statements.ActivityDelegate> и значения, которые являются аргументами тех выражений, которые вычисляются и присваиваются соответствующим объектам <xref:System.Activities.Statements.ActivityDelegateParameter>.В сетке свойств нажмите кнопку с многоточием в поле **Аргументы делегата**, после чего отобразится диалоговое окно **Аргументы делегата**, в котором можно установить это свойство.Щелкните поле **Создать аргумент**, чтобы добавить аргументы.|  
+|Property Name|Required|Usage|  
+|-------------------|--------------|-----------|  
+|<xref:System.Activities.Activity.DisplayName%2A>|False|The friendly name of the <xref:System.Activities.Statements.InvokeDelegate> activity. The default value is InvokeDelegate.<br /><br /> Although the <xref:System.Activities.Activity.DisplayName%2A> is not strictly required, it is a best practice to use one.|  
+|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|The name of the <xref:System.Activities.ActivityDelegate> to be called when the activity executes. This property can be edited on designer surface. This is a mandatory property.|  
+|<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|The argument collection of the called delegate. The keys are the names of the parameter objects on the <xref:System.Activities.ActivityDelegate> and the values are the arguments whose expressions are evaluated and assigned to the corresponding parameter objects. In the property grid, click the ellipsis button in the **DelegateArguments** field, it displays the **DelegateArguments** dialog to let you set this property. Click the **Create Argument** field to add the arguments.|  
   
-## См. также  
- [Как определить и использовать делегатов действий в конструкторе рабочих процессов](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)
+## <a name="see-also"></a>See Also  
+ [How to: Define and consume activity delegates in the Workflow Designer](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)

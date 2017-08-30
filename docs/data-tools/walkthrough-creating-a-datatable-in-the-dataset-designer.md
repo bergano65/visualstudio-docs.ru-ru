@@ -1,97 +1,107 @@
 ---
-title: "Пошаговое руководство. Создание объекта DataTable с помощью конструктора наборов данных | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "данные [Visual Studio], конструктор наборов данных"
-  - "конструктор наборов данных, создание таблиц с данными"
-  - "DataTable - объекты, создание"
-  - "таблицы [Visual Studio], создание"
+title: 'Walkthrough: Creating a DataTable in the Dataset Designer | Microsoft Docs'
+ms.custom: 
+ms.date: 10/19/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- DataTable objects, creating
+- Dataset Designer, creating data tables
+- tables [Visual Studio], creating
+- data [Visual Studio], Dataset Designer
 ms.assetid: abf0a2b5-e4e5-422e-97ef-55a0e35a82df
 caps.latest.revision: 10
-caps.handback.revision: 10
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
 robots: noindex,nofollow
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 8f8962f122aaa83fc7a3978e896c5e8fd7a85105
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Создание объекта DataTable с помощью конструктора наборов данных
-В этом пошаговом руководстве объясняется, как создать таблицу данных <xref:System.Data.DataTable> \(без TableAdapter\) с помощью  **Конструктора наборов данных**.  Сведения о создании таблиц данных, использующих TableAdapter, содержатся в разделе [Практическое руководство. Создание адаптера таблицы](../data-tools/create-and-configure-tableadapters.md).  
+# <a name="walkthrough-creating-a-datatable-in-the-dataset-designer"></a>Walkthrough: Creating a DataTable in the Dataset Designer
+This walkthrough explains how to create a <xref:System.Data.DataTable> (without a TableAdapter) using the **Dataset Designer**. For information on creating data tables that include TableAdapters, see [Create and configure TableAdapters](../data-tools/create-and-configure-tableadapters.md).  
   
- В этом пошаговом руководстве демонстрируется выполнение следующих задач.  
+ Tasks illustrated in this walkthrough include:  
   
--   Создание нового проекта приложения Windows.  
+-   Creating a new Windows Application project  
   
--   Добавление нового набора данных в приложение.  
+-   Adding a new dataset to the application  
   
--   Добавление новой таблицы в набор данных.  
+-   Adding a new data table to the dataset  
   
--   Добавление столбцов в таблицы данных.  
+-   Adding columns to the data table  
   
--   Задание первичного ключа для таблицы.  
+-   Setting the primary key for the table  
   
-## Создание нового приложения Windows.  
+## <a name="creating-a-new-windows-application"></a>Creating a New Windows Application  
   
-#### Чтобы создать проект приложения Windows:  
+#### <a name="to-create-a-new-windows-application-project"></a>To create a new Windows Application project  
   
-1.  В меню **Файл** создайте новый проект.  
+1.  From the **File** menu, create a new project.  
   
-2.  Выберите язык программирования в области **Типы проектов**.  
+2.  Choose a programming language in the **Project Types** pane.  
   
-3.  Нажмите кнопку **Приложение Windows** в области **Шаблоны**.  
+3.  Click **Windows Application** in the **Templates** pane.  
   
-4.  Назовите проект `DatasetDesignerWalkthrough` и нажмите кнопку **OK**.  
+4.  Name the project `DataTableWalkthrough`, and then click **OK**.  
   
-     Visual Studio добавит проект в **Обозреватель решений** и откроет новую форму **Form1** в конструкторе.  
+     Visual Studio adds the project to **Solution Explorer** and displays **Form1** in the designer.  
   
-## Добавление нового набора данных в приложение  
+## <a name="adding-a-new-dataset-to-the-application"></a>Adding a New Dataset to the Application  
   
-#### Чтобы добавить новый набор данных в проект  
+#### <a name="to-add-a-new-dataset-item-to-the-project"></a>To add a new dataset item to the project  
   
-1.  В меню **Проект** выберите команду **Добавить новый элемент**.  
+1.  On the **Project** menu, click **Add New Item**.  
   
-     Будет открыто диалоговое окно "Добавление нового элемента".  
+     The Add New Item Dialog Box appears.  
   
-2.  В поле **Шаблоны** выберите **Набор данных**.  
+2.  In the **Templates** box, select **DataSet**.  
   
-3.  Нажмите кнопку **Добавить**.  
+3.  Click **Add**.  
   
-     Visual Studio добавит в проект файл с именем **Dataset1.xsd** и откроет его в **Конструкторе наборов данных**.  
+     Visual Studio will add a file called **DataSet1.xsd** to the project and open it in the **Dataset Designer**.  
   
-## Добавление новой таблицы в набор данных  
+## <a name="adding-a-new-datatable-to-the-dataset"></a>Adding a New DataTable to the Dataset  
   
-#### Для добавления новой таблицы данных в набор данных:  
+#### <a name="to-add-a-new-data-table-to-the-dataset"></a>To add a new data table to the dataset  
   
-1.  Перетащите **DataTable** из вкладки **Набор данных Панели элементов** в **Конструктор наборов данных**.  
+1.  Drag a **DataTable** from the **DataSet** tab of the **Toolbox** onto the **Dataset Designer**.  
   
-     К набору данных будет добавлена таблица с именем **DataTable1**.  
+     A table named **DataTable1** is added to the dataset.  
+   
+2.  Click the title bar of **DataTable1** and rename it `Music`.  
   
-    > [!NOTE]
-    >  Информацию о создании таблицы данных, содержащую TableAdapter, см. [Пошаговое руководство. Создание адаптера таблицы с несколькими запросами](../data-tools/walkthrough-creating-a-tableadapter-with-multiple-queries.md).  
+## <a name="adding-columns-to-the-data-table"></a>Adding Columns to the Data Table  
   
-2.  Щелкните полосу заголовка **DataTable1** и переименуйте его, дав ему имя `Music`.  
+#### <a name="to-add-columns-to-the-data-table"></a>To add columns to the data table  
   
-## Добавление столбцов в таблицу данных  
+1.  Right-click the **Music** table. Point to **Add**, and then click **Column**.  
   
-#### Для добавления столбцов в таблицу данных:  
+2.  Name the column `SongID`.  
   
-1.  Щелкните правой кнопкой мыши по таблице **Music**.  В открывшемся контекстном меню выберите **Добавить**, а затем щелкните **Столбец**.  
+3.  In the **Properties** window, set the <xref:System.Data.DataColumn.DataType%2A> property to <xref:System.Int16?displayProperty=fullName>.  
   
-2.  Назовите столбец `SongID`.  
-  
-3.  В окне **Свойства** присвойте свойству <xref:System.Data.DataColumn.DataType%2A> значение <xref:System.Int16?displayProperty=fullName>.  
-  
-4.  Повторите эти действия, чтобы добавить следующие столбцы:  
+4.  Repeat this process and add the following columns:  
   
      `SongTitle`: <xref:System.String?displayProperty=fullName>  
   
@@ -99,38 +109,24 @@ robots: noindex,nofollow
   
      `Genre`: <xref:System.String?displayProperty=fullName>  
   
-## Задание первичного ключа для таблицы  
- Все таблицы данных должны иметь первичный ключ.  Первичный ключ однозначно определяет конкретную запись в таблице данных.  
+## <a name="setting-the-primary-key-for-the-table"></a>Setting the Primary Key for the Table  
+All data tables should have a primary key. A primary key uniquely identifies a specific record in a data table.  
   
-#### Для задания первичного ключа таблицы:  
+#### <a name="to-set-the-primary-key-of-the-data-table"></a>To set the primary key of the data table  
   
--   Щелкните правой кнопкой мыши по столбцу **SongID** и щелкните по пункту **Задать первичный ключ**.  
+-   Right-click the **SongID** column, and then click **Set Primary Key**.  
   
-     Значок ключа появится рядом со столбцом **SongID**.  
+     A key icon appears next to the **SongID** column.  
   
-## Сохранение проекта  
+## <a name="saving-your-project"></a>Saving Your Project  
   
-#### Чтобы сохранить проект DataTableWalkthrough:  
+#### <a name="to-save-the-datatablewalkthrough-project"></a>To save the DataTableWalkthrough project  
   
--   В меню **Файл** выберите команду **Сохранить все**.  
+-   On the **File** menu, click **Save All**.  
   
-## Следующие действия  
- Теперь, после создания таблицы, может понадобиться выполнить одно из следующих действий:  
-  
-|Целевой тип|См.|  
-|-----------------|---------|  
-|Создание формы для ввода данных.|[Пошаговое руководство. Отображение данных на форме в приложении Windows](../data-tools/walkthrough-displaying-data-on-a-windows-form.md).|  
-|Добавление данных в таблицу|[Добавление данных в DataTable](../Topic/Adding%20Data%20to%20a%20DataTable.md).|  
-|Просмотр данных в таблице|[Просмотр данных в DataTable](../Topic/Viewing%20Data%20in%20a%20DataTable.md).|  
-|Редактирование данных|[Изменения объекта DataTable](../Topic/DataTable%20Edits.md)|  
-|Удаление строки из таблицы|[Удаление DataRow](../Topic/DataRow%20Deletion.md)|  
-  
-## См. также  
- [Подключение к данным в Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Подготовка приложения к получению данных](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Выборка данных в приложение](../data-tools/fetching-data-into-your-application.md)   
- [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Редактирование данных в приложении](../data-tools/editing-data-in-your-application.md)   
- [Проверка данных](../Topic/Validating%20Data.md)   
- [Сохранение данных](../data-tools/saving-data.md)   
- [Пошаговые руководства работы с данными](../Topic/Data%20Walkthroughs.md)
+## <a name="see-also"></a>See Also  
+    
+ [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
+ [Validating Data](validate-data-in-datasets.md)   
+ [Saving Data](../data-tools/saving-data.md)   
+
