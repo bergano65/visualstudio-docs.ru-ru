@@ -1,5 +1,5 @@
 ---
-title: "События пользовательской собственной кучи трассировки событий Windows | Документы Майкрософт"
+title: Custom Native ETW Heap Events | Microsoft Docs
 ms.custom: 
 ms.date: 02/24/2017
 ms.reviewer: 
@@ -29,21 +29,21 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 795bf9746c4ae48ac04141a05ba56462ecb90482
-ms.openlocfilehash: afc044be4d63b7a292a6d94e360366913bd28883
+ms.translationtype: HT
+ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
+ms.openlocfilehash: f2a659347823fee4b933463011c0b69c07fa937f
 ms.contentlocale: ru-ru
-ms.lasthandoff: 06/23/2017
+ms.lasthandoff: 08/31/2017
 
 ---
 
-# <a name="custom-native-etw-heap-events"></a>События пользовательской собственной кучи трассировки событий Windows
+# <a name="custom-native-etw-heap-events"></a>Custom Native ETW Heap Events
 
-Visual Studio содержит разнообразные [средства профилирования и диагностики](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools), включая встроенный профилировщик памяти.  Этот профилировщик обрабатывает [события ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) от поставщика кучи и анализирует выделение и использование памяти.  По умолчанию это средство может анализировать только выделения из стандартной кучи Windows, а выделения вне собственной кучи не отображаются.
+Visual Studio contains a variety of [profiling and diagnostic tools](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools), including a native memory profiler.  This profiler hooks [ETW events](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) from the heap provider and provides analysis of how memory is being allocated and used.  By default, this tool can only analyze allocations made from the standard Windows heap, and any allocations outside this native heap would not be displayed.
 
-Во многих случаях может потребоваться использовать пользовательскую кучу и исключить издержки при распределении из стандартной кучи.  Например, можно использовать [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx), чтобы выделить большой объем памяти при запуске приложения или игры, а затем управлять собственными блоками в рамках этого списка.  В этом случае средство профилирования памяти будет видеть только первоначальное выделение, а не пользовательское управление, выполняемые в блоке памяти.  Но с помощью поставщика ETW пользовательской собственной кучи можно указать средству на выделение, осуществляемые вне стандартной кучи.
+There are many cases in which you may want to use your own custom heap and avoid the allocation overhead from the standard heap.  For instance, you could use [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) to allocate a large amount of memory at the start of the app or game, and then manage your own blocks within that list.  In this scenario, the memory profiler tool would only see that initial allocation, and not your custom management done inside the memory chunk.  However, using the Custom Native Heap ETW Provider, you can let the tool know about any allocations you are making outside the standard heap.
 
-Например, в проекте, аналогичном следующему, где `MemoryPool` является пользовательской кучей, будет доступно только одно выделение в куче Windows.
+For example, in a project like the following where `MemoryPool` is a custom heap, you would only see a single allocation on the Windows heap:
 
 ```cpp
 class Foo
@@ -65,117 +65,117 @@ Foo* pFoo2 = (Foo*)mPool.allocate();
 Foo* pFoo3 = (Foo*)mPool.allocate();
 ```
 
-Моментальный снимок из средства [Использование памяти](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) без отслеживания пользовательской кучи будет отображать только одно 8192-байтовое выделение и ни одного из пользовательских выделений, сделанных пулом.
+A snapshot from the [Memory Usage](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) tool without custom heap tracking would show just the single 8192 byte allocation, and none of the custom allocations being made by the pool:
 
-![Выделение кучи Windows](media/heap-example-windows-heap.png)
+![Windows Heap allocation](media/heap-example-windows-heap.png)
 
-Выполнив следующие действия, можно использовать это же средство для отслеживания использования памяти в пользовательской куче.
+By performing the following steps, we can use this same tool to track memory usgae in our custom heap.
 
-## <a name="how-to-use"></a>Использование
+## <a name="how-to-use"></a>How to Use
 
-Эту библиотеку можно легко использовать в C и C++.
+This library can be easily used in C and C++.
 
-1. Включите заголовок для поставщика ETW пользовательской кучи:
+1. Include the header for the custom heap ETW provider:
 
    ```cpp
    #include <VSCustomNativeHeapEtwProvider.h>
    ```
 
-1. Добавьте декоратор `__declspec(allocator)` к любой функции в диспетчере пользовательской кучи, которая вернет указатель на только что выделенную память кучи.  Это декоратора позволяет средству правильно определять возвращаемый тип памяти.  Пример:
+1. Add the `__declspec(allocator)` decorator to any function in your custom heap manager that returns a pointer to newly allocated heap memory.  This decorator allows the tool to correctly identify the type of the memory being returned.  For example:
 
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
    ```
    
    > [!NOTE]
-   > Этот декоратор сообщит компилятору, что данная функция представляет собой вызов распределителя.  В результате каждого вызова функции будет выводиться адрес места вызова, размер инструкции вызова и идентификатор типа нового объекта для нового символа `S_HEAPALLOCSITE`.  После выделения стека вызовов Windows выдаст событие ETW с этими сведениями.  Средство профилирования памяти просматривает стек вызовов, чтобы найти обратный адрес, соответствующий символу `S_HEAPALLOCSITE`. Сведения об ИД типа в символе используются для отображения типа среды выполнения для выделения.
+   > This decorator will tell the compiler that this function is a call to an allocator.  Each call to the function will output the address of the callsite, the size of the call instruction, and the typeId of the new object to a new `S_HEAPALLOCSITE` symbol.  When a callstack is allocated, Windows will emit an ETW event with this information.  The memory profiler tool walks the callstack looking for a return address matching an `S_HEAPALLOCSITE` symbol, and the typeId information in the symbol is used to display the runtime type of the allocation.
    >
-   > Это означает, что вызов, который имеет вид `(B*)(A*)MyMalloc(sizeof(B))`, будет отображаться в средстве как имеющий типа `B`, а не `void` или `A`.
+   > In short, this means a call that looks like `(B*)(A*)MyMalloc(sizeof(B))` will show up in the tool as being of type `B`, not `void` or `A`.
 
-1. Для C++ создайте объект `VSHeapTracker::CHeapTracker`, указав имя для кучи, которое будет отображаться в средстве профилирования.
+1. For C++, create the `VSHeapTracker::CHeapTracker` object, providing a name for the heap, which will show up in the profiling tool:
 
    ```cpp
    auto pHeapTracker = std::make_unique<VSHeapTracker::CHeapTracker>("MyCustomHeap");
    ```
 
-   Если вы работаете с C, используйте функцию `OpenHeapTracker`.  Эта функция возвращает дескриптор, который будет использоваться при вызове других функций отслеживания.
+   If you are using C, use the `OpenHeapTracker` function instead.  This function will return a handle that you will use when calling other tracking functions:
   
    ```C
    VSHeapTrackerHandle hHeapTracker = OpenHeapTracker("MyHeap");
    ```
 
-1. При выделении памяти с помощью настраиваемой функции вызовите метод `AllocateEvent` (C++) или `VSHeapTrackerAllocateEvent` (C), передав указатель на память и ее размер, чтобы отслеживать выделение.
+1. When allocating memory using your custom function, call the `AllocateEvent` (C++) or `VSHeapTrackerAllocateEvent` (C) method, passing in the pointer to the memory and its size, to track the allocation:
 
    ```cpp
    pHeapTracker->AllocateEvent(memPtr, size);
    ```
 
-   или
+   or
 
    ```C
    VSHeapTrackerAllocateEvent(hHeapTracker, memPtr, size);
    ```
 
    > [!IMPORTANT]
-   > Не забудьте пометить пользовательскую функцию распределителя декоратором `__declspec(allocator)`, описанным выше.
+   > Don't forget to tag your custom allocator function with the `__declspec(allocator)` decorator described earlier.
 
-1. При освобождении памяти с помощью настраиваемой функции вызовите метод `DeallocateEvent` (C++) или `VSHeapTracerDeallocateEvent` (C), передав указатель на память и ее размер, чтобы отслеживать выделение.
+1. When deallocating memory using your custom function, call the `DeallocateEvent` (C++) or `VSHeapTracerDeallocateEvent` (C) function, passing in the pointer to the memory, to track the deallocation:
 
    ```cpp
    pHeapTracker->DeallocateEvent(memPtr);
    ```
 
-   или
+   or:
 
    ```C
    VSHeapTrackerDeallocateEvent(hHeapTracker, memPtr);
    ```
 
-1. При перераспределении памяти с помощью настраиваемой функции вызовите метод `ReallocateEvent` (C++) или `VSHeapReallocateEvent` (C), передав указатель на новую память, размер выделения и указатель на старую память.
+1. When reallocating memory using your custom function, call the `ReallocateEvent` (C++) or `VSHeapReallocateEvent` (C) method, passing in a pointer to the new memory, the size of the allocation, and a pointer to the old memory:
 
    ```cpp
    pHeapTracker->ReallocateEvent(memPtrNew, size, memPtrOld);
    ```
 
-   или
+   or:
 
    ```C
    VSHeapTrackerReallocateEvent(hHeapTracker, memPtrNew, size, memPtrOld);
    ```
 
-1. И, наконец, чтобы закрыть и очистить средство отслеживания пользовательской кучи в C++, используйте деструктор `CHeapTracker` вручную или с помощью стандартных правила области видимости либо используйте функцию `CloseHeapTracker` в C.
+1. Finally, to close and clean up the custom heap tracker in C++, use the `CHeapTracker` destructor, either manually or via standard scoping rules, or the `CloseHeapTracker` function in C:
 
    ```cpp
    delete pHeapTracker;
    ```
 
-   или
+   or:
 
    ```C
    CloseHeapTracker(hHeapTracker);
    ```
 
-## <a name="tracking-memory-usage"></a>Отслеживание использования памяти
-При наличии этих вызовов для отслеживания использования пользовательской кучи теперь можно применять стандартное средство **Использование памяти** в Visual Studio.  Дополнительные сведения об использовании этого средства см. в документации по средству [Использование памяти](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage). Убедитесь, что вы включили профилирование кучи с моментальными снимками, в противном случае использование пользовательской кучи отображаться не будет. 
+## <a name="tracking-memory-usage"></a>Tracking Memory Usage
+With these calls in place, your custom heap usage can now be tracked using the standard **Memory Usage** tool in Visual Studio.  For more information on how to use this tool, please see the [Memory Usage](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) documentation. Ensure you have enabled heap profiling with snapshots, otherwise you will not see your custom heap usage displayed. 
 
-![Включение профилирования кучи](media/heap-enable-heap.png)
+![Enable Heap Profiling](media/heap-enable-heap.png)
 
-Чтобы просмотреть отслеживание пользовательской кучи, воспользуйтесь раскрывающимся списком **Куча**, расположенным в правом верхнем углу окна **Моментальный снимок**, для смены представления с *Куча NT* на вашу собственную кучу.
+To view your custom heap tracking, use the **Heap** dropdown located at the upper-right corner of the **Snapshot** window to change the view from *NT Heap* to your own heap as named previously.
 
-![Выбор кучи](media/heap-example-custom-heap.png)
+![Heap Selection](media/heap-example-custom-heap.png)
 
-Используя приведенный выше пример кода с `MemoryPool` для создания объекта `VSHeapTracker::CHeapTracker` и собственным методом `allocate`, вызывающим метод `AllocateEvent`, теперь можно увидеть результат пользовательского выделения — 3 экземпляра общим размером 24 байта с типом `Foo`.
+Using the code example above, with `MemoryPool` creating a `VSHeapTracker::CHeapTracker` object, and our own `allocate` method now calling the `AllocateEvent` method, you can now see the result of that custom allocation, showing 3 instances totaling 24 bytes, all of type `Foo`.
 
-*Куча NT* по умолчанию выглядит так же, как и ранее, но к ней добавлен объект `CHeapTracker`.
+The default *NT Heap* heap looks the same as earlier, with the addition of our `CHeapTracker` object.
 
-![Куча NT со средством отслеживания](media/heap-example-windows-heap.png)
+![NT Heap with Tracker](media/heap-example-windows-heap.png)
 
-Как и для стандартной кучи Windows, это средство можно использовать для сравнения моментальных снимков и поиска утечек и повреждений в пользовательской куче, как описывается в основной документации по средству [Использование памяти](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage).
+As with the standard Windows heap, you can also use this tool to compare snapshots and look for leaks and corruption in your custom heap, which is described in the main [Memory Usage](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) documentation.
 
 > [!TIP]
-> Visual Studio также содержит средство **Использование памяти** в наборе инструментов **Профилирование производительности**, который доступен при выборе пунктов **Отладка > Профилировщик производительности** или при нажатии сочетания клавиш **ALT+F2**.  Эта функция не поддерживает отслеживание кучи и не отображает пользовательскую кучу, как описано здесь.  Эта возможность доступна только в диалоговом окне **Средства диагностики**, которое можно открыть, последовательно выбрав **Отладка > Окна > Показать средства диагностики**, либо нажав сочетание клавиш **CTRL+ALT+F2**.
+> Visual Studio also contains a **Memory Usage** tool in the **Performance Profiling** toolset, which is enabled from the **Debug > Performance Profiler** menu option, or the **Alt+F2** keyboard combination.  This feature does not include heap tracking and will not display your custom heap as described here.  Only the **Diagnostic Tools** window, which can be enabled with the **Debug > Windows > Show Diagnostic Tools** menu, or the **Ctrl+Alt+F2** keyboard combination, contains this functionality.
 
-## <a name="see-also"></a>См. также
-* [Средства профилирования](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)
-* [Использование памяти](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)
+## <a name="see-also"></a>See Also
+* [Profiling Tools](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)
+* [Memory Usage](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)
 
