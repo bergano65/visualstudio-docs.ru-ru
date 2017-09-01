@@ -1,65 +1,79 @@
 ---
-title: "Практическое руководство. Отображение связанных данных в приложениях WPF | Microsoft Docs"
-ms.custom: ""
-ms.date: "09/21/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "данные [WPF], отображение"
-  - "привязка данных, WPF"
-  - "отображение данных, WPF"
-  - "WPF [WPF], данные"
-  - "привязка данных WPF [Visual Studio]"
-  - "конструктор WPF, привязка данных"
-  - "WPF, привязка данных в Visual Studio"
+title: Display related data in WPF applications | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- data [WPF], displaying
+- WPF, data binding in Visual Studio
+- WPF data binding [Visual Studio]
+- displaying data, WPF
+- WPF [WPF], data
+- WPF Designer, data binding
+- data binding, WPF
 ms.assetid: 3aa80194-0191-474d-9d28-5ec05654b426
 caps.latest.revision: 16
-caps.handback.revision: 13
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: b28319fe2bdc885c660ac8e26b1edbc83a1118fa
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Практическое руководство. Отображение связанных данных в приложениях WPF
-В некоторых приложениях может потребоваться работать с данными из нескольких таблиц или сущностей, между которыми существуют родительско\-дочерние отношения.  Например, может потребоваться вывести на экран сетку, в которой отображались бы клиенты из таблицы `Customers`.  Когда пользователь выбирает того или иного клиента, выводится другая сетка, в которой отображаются заказы этого клиента из связанной таблицы `Orders`.  
+# <a name="display-related-data-in-wpf-applications"></a>Display related data in WPF applications
+In some applications, you might want to work with data that comes from multiple tables or entities that are related to each other in a parent-child relationship. For example, you might want to display a grid that displays customers from a `Customers` table. When the user selects a specific customer, another grid displays the orders for that customer from a related `Orders` table.  
   
- Связанные с данными элементы управления, которые отображают связанные данные, можно создавать путем перетаскивания элементов из окна **Источники данных** в конструктор WPF.  
+ You can create data-bound controls that display related data by dragging items from the **Data Sources** window to the WPF Designer.  
   
-### Чтобы создать элементы управления, отображающие связанные записи, выполните следующие действия  
+## <a name="to-create-controls-that-display-related-records"></a>To create controls that display related records  
   
-1.  Чтобы открыть окно **Источники данных**, щелкните пункт **Показать источники данных** в меню **Данные**.  
+1.  On the **Data** menu, click **Show Data Sources** to open the **Data Sources** window.  
   
-2.  Щелкните **Добавить новый источник данных** и выполните все необходимые действия в **Мастере настройки источника данных**.  
+2.  Click **Add New Data Source**, and complete the **Data Source Configuration** wizard.  
   
-3.  Откройте конструктор WPF и удостоверьтесь, что он содержит контейнер, который является допустимым целевым объектом перетаскивания элементов в окне **Источники данных**.  
+3.  Open the WPF designer, and make sure that the designer contains a container that is a valid drop target for the items in the **Data Sources** window.  
   
-     Дополнительные сведения о допустимых целевых объектах перетаскивания см. в разделе [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
+     For more information about valid drop targets, see [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).  
   
-4.  В окне **Источники данных** разверните узел, представляющий родительскую таблицу или родительский объект в существующем отношении.  Родительская таблица или родительский объект находится на стороне "один" в отношении "один ко многим".  
+4.  In the **Data Sources** window, expand the node that represents the parent table or object in the relationship. The parent table or object is on the "one" side of a one-to-many relationship.  
   
-5.  Перетащите родительский узел \(или некие отдельные элементы в родительском узле\) из окна **Источники данных** на допустимый целевой объект перетаскивания в конструкторе.  
+5.  Drag the parent node (or any individual items in the parent node) from the **Data Sources** window onto a valid drop target in the designer.  
   
-     Visual Studio генерирует язык XAML, который создает новые связанные с данными элементы управления для всех перетаскиваемых элементов.  Язык XAML также добавляет к ресурсам целевого объекта перетаскивания новый <xref:System.Windows.Data.CollectionViewSource> для родительской таблицы или родительского объекта.  Для некоторых источников данных Visual Studio также генерирует код для загрузки данных в родительскую таблицу или родительский объект.  Дополнительные сведения см. в разделе [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
+     Visual Studio generates XAML that creates new data-bound controls for each item that you drag. The XAML also adds a new <xref:System.Windows.Data.CollectionViewSource> for the parent table or object to the resources of the drop target. For some data sources, Visual Studio also generates code to load the data into the parent table or object. For more information, see [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).  
   
-6.  В окне **Источники данных** найдите связанную дочернюю таблицу или связанный дочерний объект.  Связанные дочерние таблицы и объекты отображаются в виде разворачиваемых узлов в нижней части списка данных родительского узла.  
+6.  In the **Data Sources** window, locate the related child table or object. Related child tables and objects appear as expandable nodes at the bottom of the parent node's list of data.  
   
-7.  Перетащите дочерний узел \(или некие отдельные элементы в дочернем узле\) из окна **Источники данных** на допустимый целевой объект перетаскивания в конструкторе.  
+7.  Drag the child node (or any individual items in the child node) from the **Data Sources** window onto a valid drop target in the designer.  
   
-     Visual Studio генерирует язык XAML, который создает новые связанные с данными элементы управления для всех перетаскиваемых элементов.  Язык XAML также добавляет к ресурсам целевого объекта перетаскивания новый <xref:System.Windows.Data.CollectionViewSource> для дочерней таблицы или дочернего объекта.  Этот новый <xref:System.Windows.Data.CollectionViewSource> связан со свойством родительской таблицы или родительского объекта, только что помещенных в конструктор.  Для некоторых источников данных Visual Studio также генерирует код для загрузки данных в дочернюю таблицу или дочерний объект.  
+     Visual Studio generates XAML that creates new data-bound controls for each of the items you drag. The XAML also adds a new <xref:System.Windows.Data.CollectionViewSource> for the child table or object to the resources of the drop target. This new <xref:System.Windows.Data.CollectionViewSource> is bound to the property of the parent table or object that you just dragged to the designer. For some data sources, Visual Studio also generates code to load the data into the child table or object.  
   
-     На следующем рисунке показана связанная таблица **Заказы** таблицы **Клиенты** в наборе данных в окне **Источники данных**.  
+     The following figure demonstrates the related **Orders** table of the **Customers** table in a dataset in the **Data Sources** window.  
   
-     ![Окно “Источники данных”, демонстрирующее отношение](~/data-tools/media/datasources2.gif "DataSources2")  
+     ![Data Sources Window showing relation](../data-tools/media/datasources2.gif "DataSources2")  
   
-## См. также  
- [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
- [Практическое руководство. Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
- [Практическое руководство. Создание таблиц подстановки в приложениях WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)   
- [Пошаговое руководство. Отображение связанных данных в приложении WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
+## <a name="see-also"></a>See Also  
+ [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
+ [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
+ [Create lookup tables in WPF applications](../data-tools/create-lookup-tables-in-wpf-applications.md)   
+ [Walkthrough: Displaying Related Data in a WPF Application](../data-tools/display-related-data-in-wpf-applications.md)

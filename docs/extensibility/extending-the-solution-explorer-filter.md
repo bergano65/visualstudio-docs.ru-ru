@@ -1,39 +1,56 @@
 ---
-title: "Расширение фильтра обозревателя решений | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Обозреватель решений, расширение"
-  - "расширяемость [Visual Studio], проектов и решений"
+title: Extending the Solution Explorer Filter | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Solution Explorer, extending
+- extensibility [Visual Studio], projects and solutions
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 caps.latest.revision: 25
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 25
----
-# Расширение фильтра обозревателя решений
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0bbfc6c783a44a6f9aa3254e613781b186e24839
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-Вы можете расширить **обозревателе решений** функции, чтобы показать или скрыть различные файлы фильтра. Например, можно создать фильтр, который показывает только файлы C\# класс фабрики в **обозревателе решений**, как показано в этом пошаговом руководстве.  
+---
+# <a name="extending-the-solution-explorer-filter"></a>Extending the Solution Explorer Filter
+You can extend **Solution Explorer** filter functionality to show or hide different files. For example, you can create a filter that shows only C# class factory files in the **Solution Explorer**, as this walkthrough demonstrates.  
   
-## Обязательные компоненты  
- Начиная с Visual Studio 2015, не установить пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в установку Visual Studio. VS SDK также можно установить позже. Для получения дополнительной информации см. [Установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Prerequisites  
+ Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-### Создайте проект пакета Visual Studio  
+### <a name="create-a-visual-studio-package-project"></a>Create a Visual Studio Package Project  
   
-1.  Создайте проект VSIX с именем `FileFilter`. Добавление шаблона элемента пользовательской команды с именем **FileFilter**. Для получения дополнительной информации см. [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Create a VSIX project named `FileFilter`. Add a custom command item template named **FileFilter**. For more information, see [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Добавьте ссылку на `System.ComponentModel.Composition` и `Microsoft.VisualStudio.Utilities`.  
+2.  Add a reference to `System.ComponentModel.Composition` and `Microsoft.VisualStudio.Utilities`.  
   
-3.  Команда меню отображаются на **обозревателе решений** инструментов. Откройте файл FileFilterPackage.vsct.  
+3.  Make the menu command appear on the **Solution Explorer** toolbar. Open the FileFilterPackage.vsct file.  
   
-4.  Изменение `<Button>` блок следующее:  
+4.  Change the `<Button>` block to the following:  
   
     ```xml  
     <Button guid="guidFileFilterPackageCmdSet" id="FileFilterId" priority="0x0400" type="Button">  
@@ -45,36 +62,36 @@ caps.handback.revision: 25
     </Button>  
     ```  
   
-### Обновление файла манифеста  
+### <a name="update-the-manifest-file"></a>Update the Manifest File  
   
-1.  В файле source.extension.vsixmanifest добавьте актива, компонент MEF.  
+1.  In the source.extension.vsixmanifest file, add an asset that is a MEF component.  
   
-2.  На **активы** выберите **New** кнопки.  
+2.  On the **Assets** tab, choose the **New** button.  
   
-3.  В **тип** выберите **Microsoft.VisualStudio.MefComponent**.  
+3.  In the **Type** field, choose **Microsoft.VisualStudio.MefComponent**.  
   
-4.  В **источника** выберите **проект в текущем решении**.  
+4.  In the **Source** field, choose **A project in current solution**.  
   
-5.  В **проекта** выберите **FileFilter**, а затем выберите **ОК** кнопки.  
+5.  In the **Project** field, choose **FileFilter**, and then choose the **OK** button.  
   
-### Добавьте код фильтр  
+### <a name="add-the-filter-code"></a>Add the Filter Code  
   
-1.  Добавьте в файл FileFilterPackageGuids.cs некоторые идентификаторы GUID:  
+1.  Add some GUIDs to the FileFilterPackageGuids.cs file:  
   
-    ```c#  
+    ```csharp  
     public const string guidFileFilterPackageCmdSetString = "00000000-0000-0000-0000-00000000"; // get your GUID from the .vsct file  
     public const int FileFilterId = 0x100;  
     ```  
   
-2.  Добавьте файл класса в проект FileFilter, с именем FileNameFilter.cs.  
+2.  Add a class file to the FileFilter project named FileNameFilter.cs.  
   
-3.  Замените пустое пространство имен и пустой класс приведенный ниже код.  
+3.  Replace the empty namespace and the empty class with the code below.  
   
-     `Task<IReadOnlyObservableSet> GetIncludedItemsAsync(IEnumerable<IVsHierarchyItem rootItems)` Метод принимает коллекцию, содержащую корень решения \(`rootItems`\) и возвращает коллекцию элементов, включаемых в фильтр.  
+     The `Task<IReadOnlyObservableSet> GetIncludedItemsAsync(IEnumerable<IVsHierarchyItem rootItems)` method takes the collection that contains the root of the solution (`rootItems`) and returns the collection of items to be included in the filter.  
   
-     `ShouldIncludeInFilter` Метод фильтруются элементы в **обозревателе решений** иерархия, основанная на условии, что можно указать.  
+     The `ShouldIncludeInFilter` method filters the items in the **Solution Explorer** hierarchy based on the condition that you specify.  
   
-    ```c#  
+    ```csharp  
     using System;  
     using System.Collections.Generic;  
     using System.ComponentModel.Composition;  
@@ -159,9 +176,9 @@ caps.handback.revision: 25
   
     ```  
   
-4.  В FileFilter.cs удалите код размещения и обработка команды из конструктора FileFilter. Результат должен выглядеть следующим образом:  
+4.  In FileFilter.cs, remove the command placement and handling code from the FileFilter constructor. The result should look like this:  
   
-    ```c#  
+    ```csharp  
     private FileFilter(Package package)  
     {  
         if (package == null)  
@@ -173,11 +190,11 @@ caps.handback.revision: 25
     }  
     ```  
   
-     Удалите метод ShowMessageBox\(\).  
+     Remove the ShowMessageBox() method as well.  
   
-5.  В FileFilterPackage cs, замените код метода Initialize\(\) следующее:  
+5.  In FileFilterPackage,cs, replace the code in the Initialize() method with the following:  
   
-    ```c#  
+    ```csharp  
     protected override void Initialize()  
     {  
         Debug.WriteLine (string.Format(CultureInfo.CurrentCulture, "Entering Initialize() of: {0}", this.ToString()));  
@@ -185,12 +202,12 @@ caps.handback.revision: 25
     }  
     ```  
   
-### Тестирование кода  
+### <a name="test-your-code"></a>Test Your Code  
   
-1.  Постройте и запустите проект. Откроется второй экземпляр Visual Studio. Это называется экспериментальным.  
+1.  Build and run the project. A second instance of Visual Studio appears. This is called the experimental instance.  
   
-2.  В экспериментальном экземпляре Visual Studio откройте проект C\#.  
+2.  In the experimental instance of Visual Studio, open a C# project.  
   
-3.  Найдите кнопку, добавленную на панели инструментов обозревателя решений. Он должен быть Четвертая кнопка слева.  
+3.  Look for the button you added on the Solution Explorer toolbar. It should be the fourth button from the left.  
   
-4.  При нажатии кнопки необходимо отфильтровать все файлы, и вы увидите «все элементы исключены из представления.» в обозревателе решений.
+4.  When you click the button, all the files should be filtered out, and you should see "All items have been filtered from view." in the Solution Explorer.

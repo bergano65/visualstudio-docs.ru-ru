@@ -1,106 +1,109 @@
 ---
-title: "Пошаговое руководство. Создание страницы приложения SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "страницы приложений [разработка приложений SharePoint в Visual Studio], разработка"
-  - "страницы приложений [разработка приложений SharePoint в Visual Studio], создание"
+title: 'Walkthrough: Creating a SharePoint Application Page | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- application pages [SharePoint development in Visual Studio], developing
+- application pages [SharePoint development in Visual Studio], creating
 ms.assetid: 5b6dd941-5c59-4a89-89d0-8e973a00ae9e
 caps.latest.revision: 42
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 41
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 7f3be03c1c3dd5c782c53d116c9a080d11f7d4b9
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Создание страницы приложения SharePoint
-  Страница приложения — это разновидность страницы ASP.NET.  На страницах приложения находится содержимое, объединенное с эталонной страницей SharePoint.  Для получения дополнительной информации см. [Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
+# <a name="walkthrough-creating-a-sharepoint-application-page"></a>Walkthrough: Creating a SharePoint Application Page
+  An application page is a specialized form of an ASP.NET page. Application pages contain content that's merged with a SharePoint master page. For more information, see [Creating Application Pages for SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
- В этом пошаговом руководстве показано, как создать страницу приложения и выполнить отладку этой страницы с помощью локального сайта SharePoint.  На этой странице показаны все элементы, созданные или измененные пользователем на всех сайтах фермы серверов.  
+ This walkthrough shows you how to create an application page and then debug it by using a local SharePoint site. This page shows all items that each user has created or modified in all sites on the server farm.  
   
- В данном пошаговом руководстве рассмотрены следующие задачи:  
+ This walkthrough illustrates the following tasks:  
   
--   Создание проекта SharePoint.  
+-   Creating a SharePoint project.  
   
--   Добавление страницы приложения в проект SharePoint.  
+-   Adding an application page to the SharePoint project.  
   
--   Добавление элементов управления ASP.NET на страницу приложения.  
+-   Adding ASP.NET controls to the application page.  
   
--   Добавление кода, лежащего в основе элементов управления ASP.NET.  
+-   Adding code behind the ASP.NET controls.  
   
--   Тестирование страницы приложения.  
+-   Testing the application page.  
   
 > [!NOTE]  
->  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях.  Эти элементы определяются используемой версией Visual Studio и ее параметрами.  Дополнительные сведения см. в разделе [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/ru-ru/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
--   Поддерживаемые версии Windows и SharePoint.  Для получения дополнительной информации см. [Требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Supported editions of Windows and SharePoint. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   [!INCLUDE[vsPro](../sharepoint/includes/vspro-md.md)] или выпуск Visual Studio Ultimate или Visual Studio Premium.  
+-   [!INCLUDE[vsPro](../sharepoint/includes/vspro-md.md)] or an edition of Visual Studio Ultimate or Visual Studio Premium.  
   
-## Создание проекта SharePoint  
- Создайте **пустой проект SharePoint**.  Впоследствии в этот проект нужно будет добавить элемент **страница приложения**.  
+## <a name="creating-a-sharepoint-project"></a>Creating a SharePoint Project  
+ First, create an **Empty SharePoint Project**. Later, you will add an **Application Page** item to this project.  
   
-#### Создание проекта SharePoint  
+#### <a name="to-create-a-sharepoint-project"></a>To create a SharePoint Project  
   
-1.  Запустите [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Откройте диалоговое окно **Новый проект**, разверните узел **Office\/SharePoint**, относящийся к необходимому языку, и выберите узел **Решения SharePoint**.  
+2.  Open the **New Project** dialog box, expand the **Office/SharePoint** node under the language that you want to use, and then choose the **SharePoint Solutions** node.  
   
-3.  В области **Установленные шаблоны Visual Studio** выберите шаблон **SharePoint 2010 – Пустой проект**.  Назовите проект MySharePointProject и нажмите кнопку **ОК**.  
+3.  In the **Visual Studio Installed Templates** pane, choose the **SharePoint 2010 - Empty Project** template. Name the project **MySharePointProject**, and then choose the **OK** button.  
   
-     Появится окно **Мастер настройки SharePoint**.  Этот мастер позволяет выбрать сайт для отладки проекта и уровень доверия решения.  
+     The **SharePoint Customization Wizard** appears. This wizard enables you to select the site that you will use to debug the project and the trust level of the solution.  
   
-4.  Выберите переключатель **Развернуть как решение фермы** и нажмите кнопку **Готово**, чтобы принять локальный сайт SharePoint по умолчанию.  
+4.  Choose the **Deploy as a farm solution** option button, and then choose the **Finish** button to accept the default local SharePoint site.  
   
-## Создание страницы приложения  
- Чтобы создать страницу приложения, добавьте в проект элемент **Страница приложения**.  
+## <a name="creating-an-application-page"></a>Creating an Application Page  
+ To create an application page, add an **Application Page** item to the project.  
   
-#### Создание страницы приложения  
+#### <a name="to-create-an-application-page"></a>To create an application page  
   
-1.  В **Обозревателе решений** выберите проект **MySharePointProject**.  
+1.  In **Solution Explorer**, choose the **MySharePointProject** project.  
   
-2.  В строке меню выберите **Проект**, **Добавить новый элемент**.  
+2.  On the menu bar, choose **Project**, **Add New Item**.  
   
-3.  В диалоговом окне **Добавить новый элемент** выберите шаблон **Страница приложения \(только для решений фермы\)**.  
+3.  In the **Add New Item** dialog box, choose the **Application Page (Farm Solution Only** template.  
   
-4.  Назовите страницу SearchItems и нажмите кнопку **Добавить**.  
+4.  Name the page **SearchItems**, and then choose the **Add** button.  
   
-     Конструктор Visual Web Developer отображает страницу приложения в представлении **Источник**, где можно видеть HTML\-элементы страницы.  Конструктор отображает разметку для нескольких элементов управления <xref:System.Web.UI.WebControls.Content>.  Каждый элемент управления сопоставляется с элементом управления <xref:System.Web.UI.WebControls.ContentPlaceHolder>, определенным на главной странице приложения по умолчанию.  
+     The Visual Web Developer designer displays the application page in **Source** view where you can see the page's HTML elements. The designer displays the markup for several <xref:System.Web.UI.WebControls.Content> controls. Each control maps to a <xref:System.Web.UI.WebControls.ContentPlaceHolder> control that is defined in the default application master page.  
   
-## Разработка структуры страницы приложения  
- Указанный элемент страницы приложения позволяет использовать конструктор для добавления элементов управления ASP.NET на страницу приложения.  Такой же конструктор используется в Visual Web Developer.  Добавьте метку, список переключателей и таблицу в представление кода **Источник**, а затем задайте свойства точно так же, как при разработке любой стандартной страницы ASP.NET.  
+## <a name="designing-the-layout-of-the-application-page"></a>Designing the Layout of the Application Page  
+ The Application Page item enables you to use a designer to add ASP.NET controls to the application page. This designer is the same designer used in Visual Web Developer. Add a label, a radio button list, and a table to the **Source** view of the designer, and then set properties just as you would when you design any standard ASP.NET page.  
   
- Дополнительные сведения об использовании этого конструктора в Visual Web Developer см. в разделе [Карта содержимого среды веб\-разработки Visual Studio](http://msdn.microsoft.com/ru-ru/9c31f93b-c8fb-4599-9b14-6194ec8c7539).  
+#### <a name="to-design-the-layout-of-the-application-page"></a>To design the layout of the application page  
   
-#### Разработка структуры страницы приложения  
+1.  On the menu bar, choose **View**, **Toolbox**.  
   
-1.  В меню **Вид** выберите **Область элементов**.  
+2.  In the Standard node of the **Toolbox**, perform one of the following steps:  
   
-2.  В стандартном узле **Панель элементов** выполните одно из следующих действий:  
+    -   Open the shortcut menu for the **Label** item, choose **Copy**, open the shortcut menu for the line under the **PlaceHolderMain** content control in the designer, and then choose **Paste**.  
   
-    -   Откройте контекстное меню для элемента **Метка** выберите **Копировать**, откройте контекстное меню для строки под элементом управления содержимым **PlaceHolderMain** в конструкторе и выберите **Вставить**.  
+    -   Drag the **Label** item from the **Toolbox** onto the body of the **PlaceHolderMain** content control.  
   
-    -   Перетащите элемент **Метка** из **Панели элементов** в тело содержимого элемента управления **PlaceHolderMain**.  
+3.  Repeat the previous step to add a **DropDownList** item and a **Table** item to the **PlaceHolderMain** content control.  
   
-3.  Повторяющийся предыдущий шаг, чтобы добавить элемент **DropDownList** и элемент **ТаблицаPlaceHolderMain** в элемент управления содержимым.  
+4.  On the designer, change the value of the `Text` attribute of the label control to **Show All Items**.  
   
-4.  В конструкторе измените значение атрибута `Text` элемента управления метками на "Показать все элементы".  
-  
-5.  В конструкторе замените элемент `<asp:DropDownList>` на следующий XML\-код.  
+5.  On the designer, replace the `<asp:DropDownList>` element with the following XML.  
   
     ```  
     <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true"  
@@ -110,65 +113,61 @@ caps.handback.revision: 41
     </asp:DropDownList>  
     ```  
   
-## Обработка событий элементов управления на странице  
- Обработка элементов управления на странице приложения осуществляется так же, как на любой странице ASP.NET.  В этой процедуре показана обработка события `SelectedIndexChanged` из раскрывающегося списка.  
+## <a name="handling-the-events-of-controls-on-the-page"></a>Handling the Events of Controls on the Page  
+ Handle controls in an application page just as you would any ASP.NET page. In this procedure, you will handle the `SelectedIndexChanged` event of the drop-down list.  
   
-#### Обработка событий элементов управления на странице  
+#### <a name="to-handle-the-events-of-controls-on-the-page"></a>To handle the events of controls on the page  
   
-1.  В меню **Вид** выберите **Код**.  
+1.  On the **View** menu, choose **Code**.  
   
-     В редакторе кода открывается файл кода страницы приложения.  
+     The application page code file opens in the Code Editor.  
   
-2.  Добавьте следующий метод в класс `SearchItems`.  Этот код позволяет обработать событие <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> из списка <xref:System.Web.UI.WebControls.DropDownList> вызовом метода, создание которого описано далее в этом пошаговом руководстве.  
+2.  Add the following method to the `SearchItems` class. This code handles the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event of the <xref:System.Web.UI.WebControls.DropDownList> by calling a method that you will create later in this walkthrough.  
   
-     [!code-csharp[SP_ApplicationPage#5](../snippets/csharp/VS_Snippets_OfficeSP/sp_applicationpage/cs/layouts/sp_applicationpage/SearchItems.aspx.cs#5)]
-     [!code-vb[SP_ApplicationPage#5](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_applicationpage/vb/layouts/sp_applicationpage/SearchItems.aspx.vb#5)]  
+     [!code-vb[SP_ApplicationPage#5](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#5)]  [!code-csharp[SP_ApplicationPage#5](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#5)]  
   
-3.  Добавьте следующие операторы в верхнюю часть файла кода страницы приложения.  
+3.  Add the following statements to the top of the application page code file.  
   
-     [!code-csharp[SP_ApplicationPage#1](../snippets/csharp/VS_Snippets_OfficeSP/sp_applicationpage/cs/layouts/sp_applicationpage/SearchItems.aspx.cs#1)]
-     [!code-vb[SP_ApplicationPage#1](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_applicationpage/vb/layouts/sp_applicationpage/SearchItems.aspx.vb#1)]  
+     [!code-vb[SP_ApplicationPage#1](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#1)]  [!code-csharp[SP_ApplicationPage#1](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#1)]  
   
-4.  Добавьте следующий метод в класс `SearchItems`.  Этот метод выполняет перебор всех сайтов на ферме серверов и осуществляет поиск элементов, созданных или измененных текущим пользователем.  
+4.  Add the following method to the `SearchItems` class. This method iterates through all sites on the server farm and searches for items created or modified by the current user.  
   
-     [!code-csharp[SP_ApplicationPage#2](../snippets/csharp/VS_Snippets_OfficeSP/sp_applicationpage/cs/layouts/sp_applicationpage/SearchItems.aspx.cs#2)]
-     [!code-vb[SP_ApplicationPage#2](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_applicationpage/vb/layouts/sp_applicationpage/SearchItems.aspx.vb#2)]  
+     [!code-vb[SP_ApplicationPage#2](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#2)]  [!code-csharp[SP_ApplicationPage#2](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#2)]  
   
-5.  Добавьте следующий метод в класс `SearchItems`.  Этот метод отображает элементы, созданные или измененные текущим пользователем в таблице.  
+5.  Add the following method to the `SearchItems` class. This method displays items created or modified by the current user in the table.  
   
-     [!code-csharp[SP_ApplicationPage#3](../snippets/csharp/VS_Snippets_OfficeSP/sp_applicationpage/cs/layouts/sp_applicationpage/SearchItems.aspx.cs#3)]
-     [!code-vb[SP_ApplicationPage#3](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_applicationpage/vb/layouts/sp_applicationpage/SearchItems.aspx.vb#3)]  
+     [!code-vb[SP_ApplicationPage#3](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#3)]  [!code-csharp[SP_ApplicationPage#3](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#3)]  
   
-## Тестирование страницы приложения  
- При выполнении проекта открывается сайт SharePoint и отображается страница приложения.  
+## <a name="testing-the-application-page"></a>Testing the Application Page  
+ When you run the project, the SharePoint site opens and the application page appears.  
   
-#### Тестирование страницы приложения  
+#### <a name="to-test-the-application-page"></a>To test the application page  
   
-1.  В **Обозревателе решений** откройте контекстное меню для страницы приложения и выберите **Назначить автозапускаемым проектом**.  
+1.  In **Solution Explorer**, open the shortcut menu for the application page, and then choose **Set as Startup Item**.  
   
-2.  Нажмите клавишу F5.  
+2.  Choose the F5 key.  
   
-     Откроется сайт SharePoint.  
+     The SharePoint site opens.  
   
-3.  На странице приложения выберите **Измененные мной**.  
+3.  On the application page, choose the **Modified by me** option.  
   
-     После обновления страницы приложения на ней отображаются все элементы, которые были изменены на всех сайтах фермы серверов.  
+     The application page refreshes and displays all items that you've modified in all sites on the server farm.  
   
-4.  На странице приложения выберите **Созданные мной** в списке.  
+4.  On the application page, choose **Created by me** in the list.  
   
-     После обновления страницы приложения на ней отображаются все элементы, которые были созданы на всех сайтах фермы серверов.  
+     The application page refreshes and displays all items that you have created in all sites on the server farm.  
   
-## Следующие действия  
- Дополнительные сведения о страницах приложений SharePoint см. в разделе [Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
+## <a name="next-steps"></a>Next Steps  
+ For more information about SharePoint application pages, see [Creating Application Pages for SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
- Дополнительные сведения о разработке содержимого страниц SharePoint с помощью Visual Web Designer см. в следующих разделах.  
+ You can learn more about how to design SharePoint page content by using the Visual Web Designer from these topics:  
   
--   [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).  
+-   [Creating Web Parts for SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).  
   
--   [Создание многократно используемых пользовательских элементов управления для веб-частей или страниц приложений](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).  
+-   [Creating Reusable Controls for Web Parts or Application Pages](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).  
   
-## См. также  
- [Практическое руководство. Создание страницы приложения](../sharepoint/how-to-create-an-application-page.md)   
- [Тип страниц приложений \_layouts](http://go.microsoft.com/fwlink/?LinkID=169274)  
+## <a name="see-also"></a>See Also  
+ [How to: Create an Application Page](../sharepoint/how-to-create-an-application-page.md)   
+ [Application _layouts Page Type](http://go.microsoft.com/fwlink/?LinkID=169274)  
   
   

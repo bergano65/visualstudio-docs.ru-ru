@@ -1,222 +1,221 @@
 ---
-title: "Пошаговое руководство. Обновление диаграммы в документе с помощью переключателей"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "элементы управления [разработка решений Office в Visual Studio], обновление документов"
-  - "документы [разработка решений Office в Visual Studio], обновление с помощью элементов управления"
+title: 'Walkthrough: Updating a Chart in a Document Using Radio Buttons | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- documents [Office development in Visual Studio], updating using controls
+- controls [Office development in Visual Studio], updating documents
 ms.assetid: 56e6d1f2-65a4-41f0-aff5-f0cfd96d7185
 caps.latest.revision: 60
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 59
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: b70182f68576ac9e142f4819ff78c2804c5be907
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Обновление диаграммы в документе с помощью переключателей
-  В данном пошаговом руководстве описывается использование переключателей в настройке уровня документа для Microsoft Office Word, позволяющих пользователям выбирать стили диаграмм в документе.  
+# <a name="walkthrough-updating-a-chart-in-a-document-using-radio-buttons"></a>Walkthrough: Updating a Chart in a Document Using Radio Buttons
+  This walkthrough demonstrates how to use radio buttons in a document-level customization for Microsoft Office Word to give users the option to select chart styles on the document.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- В данном пошаговом руководстве рассмотрены следующие задачи:  
+ This walkthrough illustrates the following tasks:  
   
--   добавление диаграммы в документ проекта на уровне документа во время разработки;  
+-   Adding a chart to the document in a document-level project at design time.  
   
--   группировка переключателей путем их добавления в пользовательский элемент управления;  
+-   Grouping radio buttons by adding them to a user control.  
   
--   изменение стиля диаграммы при выбранном параметре.  
+-   Changing the chart style when an option is selected.  
   
- Результат в виде готового кода см. в примере элементов управления Word в разделе [Образцы и пошаговые руководства разработки Office](../vsto/office-development-samples-and-walkthroughs.md).  
+ To see the result as a completed sample, see the Word Controls Sample at [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] или [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] or [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
-## Создание проекта  
- Первым шагом является создание документа Word.  
+## <a name="creating-the-project"></a>Creating the Project  
+ The first step is to create a Word Document project.  
   
-#### Создание нового проекта  
+#### <a name="to-create-a-new-project"></a>To create a new project  
   
-1.  Создайте документ Word с именем **Параметры моей диаграммы**.  Выберите в мастере элемент **Создать новый документ**.  Для получения дополнительной информации см. [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Create a Word Document project with the name **My Chart Options**. In the wizard, select **Create a new document**. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio откроет в конструкторе новый документ Word и добавит документ **Параметры моей диаграммы** в **Обозреватель решений**.  
+     Visual Studio opens the new Word document in the designer and adds the **My Chart Options** project to **Solution Explorer**.  
   
-## Добавление диаграммы в документ  
+## <a name="adding-a-chart-to-the-document"></a>Adding a Chart to the Document  
   
-#### Добавление диаграммы  
+#### <a name="to-add-a-chart"></a>To add a chart  
   
-1.  В документе Word, размещенном в конструкторе Visual Studio, на ленте выберите вкладку **Вставить**.  
+1.  In the Word document that is hosted in the Visual Studio designer, on the Ribbon, click the **Insert** tab.  
   
-2.  В группе **Текст** щелкните разворачивающуюся кнопку **Вставить объект** и выберите пункт **Объект**.  
+2.  In the **Text** group, click the **Insert Object** drop-down button, and click **Object**.  
   
-     Откроется диалоговое окно **Объект**.  
+     The **Object** dialog box opens.  
   
-3.  В списке **Тип объекта** на вкладке **Создать** выберите **Диаграмма Microsoft Graph** и нажмите кнопку **ОК**.  
+3.  In the **Object type** list on the **Create New** tab, select **Microsoft Graph Chart** and then click **OK**.  
   
-     Диаграмма будет добавлена в документ в точке вставки, а затем появится окно **Таблица** с данными по умолчанию.  
+     A chart is added to the document at the insertion point, and the **Datasheet** window appears with some default data.  
   
-4.  Закройте окно **Таблица**, чтобы принять в диаграмме значения по умолчанию, и щелкните внутри документа, чтобы переместить фокус от диаграммы.  
+4.  Close the **Datasheet** window to accept the default values in the chart and click inside the document to move focus away from the chart.  
   
-5.  Щелкните диаграмму правой кнопкой мыши и выберите пункт **Форматировать объект**.  
+5.  Right-click the chart, and then click **Format Object**.  
   
-6.  На вкладке **Макет** диалогового окна **Форматировать объект** выберите пункт **Квадрат** и нажмите кнопку **ОК**.  
+6.  On the **Layout** tab of the **Format Object** dialog box, select **Square** and click **OK**.  
   
-## Добавление пользовательского элемента управления в проект  
- Переключатели в документе не являются взаимоисключающими по умолчанию.  Их работу можно сделать правильной, добавив их в пользовательский элемент управления и написав код для управления выбором.  
+## <a name="adding-a-user-control-to-the-project"></a>Adding a User Control to the Project  
+ Radio buttons on a document are not mutually exclusive by default. You can make them function correctly by adding them to a user control, and then writing code to control the selection.  
   
-#### Добавление пользовательского элемента управления  
+#### <a name="to-add-a-user-control"></a>To add a user control  
   
-1.  Выберите документ **Параметры моей диаграммы** в **Обозревателе решений**.  
+1.  Select the **My Chart Options** project in **Solution Explorer**.  
   
-2.  В меню **Проект** выберите пункт **Добавить новый элемент**.  
+2.  On the **Project** menu, click **Add New Item**.  
   
-3.  В диалоговом окне **Добавить элемент** щелкните **Пользовательский элемент управления**, укажите имя элемента управления **ChartOptions** и нажмите кнопку **Добавить**.  
+3.  In the **Add New Item** dialog box, click **User Control**, name the control **ChartOptions,** and click **Add**.  
   
-#### Добавление элементов управления формы Windows в пользовательский элемент управления  
+#### <a name="to-add-windows-form-controls-to-the-user-control"></a>To add Windows Form controls to the user control  
   
-1.  Если пользовательский элемент управления не отображается в конструкторе, откройте **ChartOptions** в **Обозревателе решений** двойным щелчком кнопки мыши.  
+1.  If the user control is not visible in the designer, double-click **ChartOptions** in **Solution Explorer**.  
   
-2.  На вкладке **Стандартные элементы управления** в области **Панель элементов** перетащите первый элемент управления **Переключатель** на пользовательский элемент управления и измените следующие свойства.  
+2.  From the **Common Controls** tab of the **Toolbox**, drag the first **Radio Button** control to the user control, and change the following properties.  
   
-    |Свойство|Значение|  
-    |--------------|--------------|  
-    |**Имя**|**columnChart**|  
-    |**Text**|Гистограмма|  
+    |Property|Value|  
+    |--------------|-----------|  
+    |**Name**|**columnChart**|  
+    |**Text**|**Column Chart**|  
   
-3.  Добавьте второй элемент управления **Переключатель** к пользовательскому элементу управления и измените следующие свойства.  
+3.  Add a second **Radio Button** to the user control, and change the following properties.  
   
-    |Свойство|Значение|  
-    |--------------|--------------|  
-    |**Имя**|**barChart**|  
-    |**Text**|Линейчатая диаграмма|  
+    |Property|Value|  
+    |--------------|-----------|  
+    |**Name**|**barChart**|  
+    |**Text**|**Bar Chart**|  
   
-4.  Добавьте третий элемент управления **Переключатель** к пользовательскому элементу управления и измените следующие свойства.  
+4.  Add a third **Radio Button** to the user control, and change the following properties.  
   
-    |Свойство|Значение|  
-    |--------------|--------------|  
-    |**Имя**|**lineChart**|  
-    |**Text**|График|  
+    |Property|Value|  
+    |--------------|-----------|  
+    |**Name**|**lineChart**|  
+    |**Text**|**Line Chart**|  
   
-5.  Добавьте четвертый элемент управления **Переключатель** к пользовательскому элементу управления и измените следующие свойства.  
+5.  Add a fourth **Radio Button** to the user control, and change the following properties.  
   
-    |Свойство|Значение|  
-    |--------------|--------------|  
-    |**Имя**|**areaBlockChart**|  
-    |**Text**|Диаграмма с областями|  
+    |Property|Value|  
+    |--------------|-----------|  
+    |**Name**|**areaBlockChart**|  
+    |**Text**|**Area Block Chart**|  
   
-## Добавление ссылок  
- Чтобы получить доступ к диаграмме из пользовательского элемента управления в документе, в проекте должна присутствовать ссылка на сборку Microsoft.Office.Interop.Graph.  
+## <a name="adding-references"></a>Adding References  
+ To access the chart from the user control on a document, you must have a reference to the Microsoft.Office.Interop.Graph assembly in your project.  
   
-#### Добавление ссылки на сборку Microsoft.Office.Interop.Graph  
+#### <a name="to-add-a-reference-to-the-microsoftofficeinteropgraph-assembly"></a>To add a reference to the Microsoft.Office.Interop.Graph assembly  
   
-1.  В меню **Проект** щелкните команду **Добавить ссылку**.  
+1.  On the **Project** menu, click **Add Reference**.  
   
-     Откроется диалоговое окно **Добавление ссылки**.  
+     The **Add Reference** dialog box appears.  
   
-2.  На вкладке **.NET** выберите **Microsoft.Office.Interop.Graph** и нажмите кнопку **ОК**.  Выберите версию сборки 14.0.0.0.  
+2.  On the **.NET** tab, select **Microsoft.Office.Interop.Graph** and click **OK**. Select the 14.0.0.0 version of the assembly.  
   
-## Изменение стиля диаграммы при выбранном переключателе  
- Чтобы кнопки работали правильно, создайте открытое событие для пользовательского элемента управления, добавьте свойство, чтобы установить тип выбора, и создайте процедуру для события `CheckedChanged` по каждому переключателю.  
+## <a name="changing-the-chart-style-when-a-radio-button-is-selected"></a>Changing the Chart Style when a Radio Button is Selected  
+ To make the buttons work correctly, create a public event on the user control, add a property to set the selection type, and create a procedure for the `CheckedChanged` event of each of the radio buttons.  
   
-#### Создание события и свойства по пользовательскому элементу управления  
+#### <a name="to-create-an-event-and-property-on-a-user-control"></a>To create an event and property on a user control  
   
-1.  В области **Обозреватель решений** щелкните правой кнопкой мыши пользовательский элемент управления и выберите пункт **Исходный текст**.  
+1.  In **Solution Explorer**, right-click the user control, and then click **View Code**.  
   
-2.  Добавьте код, чтобы создать событие `SelectionChanged` и свойство `Selection` в классе `ChartOptions`.  
+2.  Add code to create a `SelectionChanged` event and the `Selection` property to the `ChartOptions` class.  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#9](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/CS/ChartOptions.cs#9)]
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#9](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/VB/ChartOptions.vb#9)]  
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#9)]  [!code-vb[Trin_VstcoreProgrammingControlsWord#9](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#9)]  
   
-#### Обработка события переключателей CheckedChange  
+#### <a name="to-handle-the-checkedchange-event-of-the-radio-buttons"></a>To handle the CheckedChange event of the radio buttons  
   
-1.  Установите тип диаграммы в обработчике событий `CheckedChanged` переключателя `areaBlockChart`, а затем породите событие.  
+1.  Set the chart type in the `CheckedChanged` event handler of the `areaBlockChart` radio button and then raise the event.  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#10](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/CS/ChartOptions.cs#10)]
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#10](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/VB/ChartOptions.vb#10)]  
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#10)]  [!code-vb[Trin_VstcoreProgrammingControlsWord#10](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#10)]  
   
-2.  Установите тип диаграммы в обработчик событий `CheckedChanged` переключателя `barChart`.  
+2.  Set the chart type in the `CheckedChanged` event handler of the `barChart` radio button.  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#11](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/CS/ChartOptions.cs#11)]
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#11](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/VB/ChartOptions.vb#11)]  
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#11](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#11)]  [!code-vb[Trin_VstcoreProgrammingControlsWord#11](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#11)]  
   
-3.  Установите тип диаграммы в обработчик событий `CheckedChanged` переключателя `columnChart`.  
+3.  Set the chart type in the `CheckedChanged` event handler of the `columnChart` radio button.  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#12](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/CS/ChartOptions.cs#12)]
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#12](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/VB/ChartOptions.vb#12)]  
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#12](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#12)]  [!code-vb[Trin_VstcoreProgrammingControlsWord#12](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#12)]  
   
-4.  Установите тип диаграммы в обработчик событий `CheckedChanged` переключателя `lineChart`.  
+4.  Set the chart type in the `CheckedChanged` event handler of the `lineChart` radio button.  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#13](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/CS/ChartOptions.cs#13)]
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#13](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/VB/ChartOptions.vb#13)]  
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#13)]  [!code-vb[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#13)]  
   
-5.  В языке программирования C\# для переключателей должны быть добавлены обработчики событий.  Код можно добавить в конструктор `ChartOptions` под вызовом `InitializeComponent`.  Дополнительные сведения о создании обработчиков событий см. в разделе [Практическое руководство. Создание обработчиков событий в проектах Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+5.  In C#, you must add event handlers for the radio buttons. You can add the code to the `ChartOptions` constructor, beneath the call to `InitializeComponent`. For information about creating event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#14](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/CS/ChartOptions.cs#14)]  
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#14)]  
   
-## Добавление пользовательского элемента управления в документ  
- При построении решения новый пользовательский элемент управления автоматически добавляется в **Панель элементов**.  Затем элемент управления можно перетащить из области **Панель элементов** в документ.  
+## <a name="adding-the-user-control-to-the-document"></a>Adding the User Control to the Document  
+ When you build the solution, the new user control is automatically added to the **Toolbox**. You can then drag the control from the **Toolbox** to your document.  
   
-#### Добавление пользовательского элемента управления в документ  
+#### <a name="to-add-the-user-control-your-document"></a>To add the user control your document  
   
-1.  В меню **Сборка** выберите **Собрать решение**.  
+1.  On the **Build** menu, click **Build Solution**.  
   
-     Пользовательский элемент **ChartOptions** добавлен в **Панель элементов**.  
+     The **ChartOptions** user control is added to the **Toolbox**.  
   
-2.  В области **Обозреватель решений** щелкните правой кнопкой мыши файл **ThisDocument.vb** или **ThisDocument.cs** и нажмите кнопку **Конструктор представлений**.  
+2.  In **Solution Explorer**, right-click **ThisDocument.vb** or **ThisDocument.cs**, and then click **View Designer**.  
   
-3.  Перетащите элемент управления `ChartOptions` из области **Панель элементов** в документ.  
+3.  Drag the `ChartOptions` control from the **Toolbox** to the document.  
   
-     В окне **Свойства** укажите имя элемента управления, только что добавленного в документ `ChartOptions1`.  
+     In the **Properties** window, name the control that you just added to the document  `ChartOptions1`.  
   
-## Изменение типа диаграммы  
- Создайте обработчик событий, чтобы изменить тип диаграммы в соответствии с параметром, выбранным в пользовательском элементе управления.  
+## <a name="changing-the-chart-type"></a>Changing the Chart Type  
+ Create an event handler to change the chart type according to the option that is selected in the user control.  
   
-#### Изменение типа диаграммы, отображаемой в документе  
+#### <a name="to-change-the-type-of-chart-that-is-displayed-in-the-document"></a>To change the type of chart that is displayed in the document  
   
-1.  Добавьте следующий обработчик событий в класс `ThisDocument`.  
+1.  Add the following event handler to the `ThisDocument` class.  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#15](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/CS/ThisDocument.cs#15)]
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#15](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/VB/ThisDocument.vb#15)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsWord#15](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#15)]  [!code-csharp[Trin_VstcoreProgrammingControlsWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#15)]  
   
-2.  В языке программирования C\# в событие <xref:Microsoft.Office.Tools.Word.Document.Startup> должен быть добавлен обработчик события для пользовательского элемента управления.  
+2.  In C#, you must add an event handler for the user control to the <xref:Microsoft.Office.Tools.Word.Document.Startup> event.  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#16](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/CS/ThisDocument.cs#16)]  
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#16](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#16)]  
   
-## Тестирование приложения  
- Теперь можно проверить документ и убедиться, что при выборе переключателя стиль диаграммы обновляется правильно.  
+## <a name="testing-the-application"></a>Testing the Application  
+ You can now test your document to make sure that the chart style is updated correctly when you select a radio button.  
   
-#### Проверка документа  
+#### <a name="to-test-your-document"></a>To test your document  
   
-1.  Нажмите клавишу F5 для запуска проекта.  
+1.  Press F5 to run your project.  
   
-2.  Выберите различные переключатели.  
+2.  Select various radio buttons.  
   
-3.  Подтвердите, что изменения стиля диаграммы соответствуют выбору.  
+3.  Confirm that the chart style changes to match the selection.  
   
-## Следующие действия  
- Ниже приводятся некоторые из возможных последующих задач.  
+## <a name="next-steps"></a>Next Steps  
+ Here are some tasks that might come next:  
   
--   Использование кнопки для заполнения текстового поля.  Для получения дополнительной информации см. [Пошаговое руководство. Отображение текста в текстовом поле документа с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
+-   Using a button to populate a text box. For more information, see [Walkthrough: Displaying Text in a Text Box in a Document Using a Button](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
   
--   Изменение форматирования путем выбора стиля из поля со списком.  Для получения дополнительной информации см. [Пошаговое руководство. Изменение форматирования документа с использованием элементов управления CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
+-   Change formatting by selecting a style from a combo box. For more information, see [Walkthrough: Changing Document Formatting Using CheckBox Controls](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
   
-## См. также  
- [Пошаговые руководства с использованием Word](../vsto/walkthroughs-using-word.md)   
- [Образцы и пошаговые руководства разработки Office](../vsto/office-development-samples-and-walkthroughs.md)   
- [Ограничения по использованию элементов управления Windows Forms в документах Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+## <a name="see-also"></a>See Also  
+ [Walkthroughs Using Word](../vsto/walkthroughs-using-word.md)   
+ [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md)   
+ [Limitations of Windows Forms Controls on Office Documents](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

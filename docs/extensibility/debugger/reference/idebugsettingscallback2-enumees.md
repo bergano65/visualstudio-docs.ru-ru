@@ -1,61 +1,78 @@
 ---
-title: "IDebugSettingsCallback2::EnumEEs | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugSettingsCallback2::EnumEEs"
+title: IDebugSettingsCallback2::EnumEEs | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugSettingsCallback2::EnumEEs
 ms.assetid: 9f884c49-426f-461b-b547-9d909486e73f
 caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
----
-# IDebugSettingsCallback2::EnumEEs
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 352f465ead2af45be120a78b2bea025dd72892dd
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-Перечисляет доступные средства оценки выражений заданных идентификаторов языка и поставщика.  
+---
+# <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
+Enumerates the available expression evaluators given the language and vendor identifiers.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EnumEEs(  
-   DWORD  celtBuffer,  
-   GUID*  rgguidLang,  
-   GUID*  rgguidVendor,  
-   DWORD* pceltEEs  
+   DWORD  celtBuffer,  
+   GUID*  rgguidLang,  
+   GUID*  rgguidVendor,  
+   DWORD* pceltEEs  
 );  
 ```  
   
-```c#  
+```csharp  
 public int EnumEEs(  
-   uint       celtBuffer,  
-   ref Guid   rgguidLang,  
-   ref Guid   rgguidVendor,  
-   ref uint[] pceltEEs  
+   uint       celtBuffer,  
+   ref Guid   rgguidLang,  
+   ref Guid   rgguidVendor,  
+   ref uint[] pceltEEs  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Parameters  
  `celtBuffer`  
- \[in\] количество элементов в `pceltEEs` буфер.  
+ [in] Number of elements in the `pceltEEs` buffer.  
   
  `rgguidLang`  
- \[in, out\] уникальный идентификатор языка программирования.  
+ [in, out] Unique identifier for the programming language.  
   
  `rgguidVendor`  
- \[in, out\] уникальный идентификатор для поставщика.  
+ [in, out] Unique identifier for the vendor.  
   
  `pceltEEs`  
- \[in, out\] массив средства оценки выражений.  
+ [in, out] Array of expression evaluators.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

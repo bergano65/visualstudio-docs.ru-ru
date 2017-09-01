@@ -1,134 +1,76 @@
 ---
-title: "Практическое руководство. Привязка элементов управления Windows Forms к данным | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "данные [Windows Forms], отображение"
-  - "источники данных, отображение"
-  - "отображение данных, элементы управления Windows Forms"
-  - "Windows Forms, отображение данных"
+title: Bind Windows Forms controls to data | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- displaying data, Windows Forms controls
+- Windows Forms, displaying data
+- data sources, displaying
+- data [Windows Forms], displaying
 ms.assetid: 0163a34a-38cb-40b9-8f38-3058a90caf21
 caps.latest.revision: 28
-caps.handback.revision: 17
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 6e4d38cf20e6114b6910759d618802aedf171f84
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Практическое руководство. Привязка элементов управления Windows Forms к данным
-Привяжите данные к элементам управления Windows Forms путем перетаскивания объектов из окна [окно "Источники данных"](../Topic/Data%20Sources%20Window.md).  Перед перетаскиванием элементов из окна **Источники данных** можно задать тип элемента управления таблицей как **Таблица** для отдельных элементов управления или **DataGridView** для объекта <xref:System.Windows.Forms.DataGridView>.  Дополнительные сведения см. в разделе [Задание поведения, при котором элемент управления создается при перетаскивании из окна "Источники данных"](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+# <a name="bind-windows-forms-controls-to-data"></a>Bind Windows Forms controls to data
+You can bind data sources to controls by dragging objects from the **Data Sources** window onto a Windows Form or onto an existing control on a form. Before you drag items, you can set the type of control you want to bind to. Different values appear depending on whether you choose the table itself, or an individual column.  You can also set custom values. For a table, "Details" means that each column is bound to a separate control.  
+
+![Bind data source to DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png "raddata Bind data source to DataGridView")  
   
- Если элемент управления не требуются приложению, недоступны из окна **Источники данных**, то можно добавить элементы управления.  Дополнительные сведения см. в разделе [Добавление пользовательских элементов управления в окно "Источники данных"](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+## <a name="bind-to--data-in-a-datagridview-control"></a>Bind to  data in a DataGridView control  
+For DataGridView, the entire table is bound to that single control. When you drag a DataGridView to the form, a tool strip for navigating records (<xref:System.Windows.Forms.BindingNavigator>) also appears. A [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray. In the following illustration, a TableAdapterManager is also added because the Customers table has a relation to the Orders table. These variables are all declared in the auto-generated code as private members in the form class. The auto-generated code for filling the DataGridView is located in the form_load event handler. The code for saving the data to update the database is located in the Save event handler for the BindingNavigator. You can move or modify this code as needed.  
   
-## Отображение всей таблицы данных в отдельных элементах управления  
- В отдельных элементах управления можно отобразить всю таблицу данных. Для этого перетащите таблицу \(или узел, предоставляющий коллекцию, при использовании объекта источника данных\) из окна **Источники данных** на форму в приложении Windows.  
+ ![GridView with BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "raddata GridView with BindingNavigator")  
   
-#### Для отображения всей таблицы данных  
+ You can customize the behavior of the DataGridView and the BindingNavigator by clicking on the smart tag in the upper right corner of each:  
   
-1.  Откройте окно **Источники данных**.  Дополнительные сведения см. в разделе [Практическое руководство. Открытие окна "Источники данных"](../data-tools/how-to-open-the-data-sources-window.md).  
+ ![DataGridView and Binding Navigator smart tags](../data-tools/media/raddata-datagridview-and-binding-navigator-smart-tags.png "raddata DataGridView and Binding Navigator smart tags")  
   
-    > [!NOTE]
-    >  Если окно **Источники данных** пусто, то добавьте в него источник данных.  Дополнительные сведения см. в разделе [Общие сведения об источниках данных](../data-tools/add-new-data-sources.md).  
+ If the controls your application needs are not available from within the **Data Sources** window, you can add controls. For more information, see [Add custom controls to the Data Sources window](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
-2.  Откройте форму в **конструкторе Windows Forms**.  
+ You can also drag items from the **Data Sources** window onto controls already on a form to bind the control to data. A control that is already bound to data has its data bindings reset to the item most recently dragged onto it. To be valid drop targets, controls must be capable of displaying the underlying data type of the item dragged onto it from the **Data Sources** window. For example, it's not valid to drag an item that has a data type of <xref:System.DateTime> onto a <xref:System.Windows.Forms.CheckBox>, because the <xref:System.Windows.Forms.CheckBox> is not capable of displaying a date.  
   
-3.  Выберите таблицу в окне **Источники данных**, щелкните стрелку раскрывающегося списка и выберите **Сведения**.  
+## <a name="bind-to--data-in-individual-controls"></a>Bind to  data in individual controls  
+ When you bind a data source to "Details," each column in the dataset is bound to a separate control.  
   
-4.  Перетащите таблицу из окна **Источники данных** на форму.  
+ ![Bind data source to details](../data-tools/media/raddata-bind-data-source-to-details.png "raddata Bind data source to details")  
   
-     Для каждого столбца или свойства с привязкой к данным создается отдельный элемент управления на форме, сопровождаемый элементом управления Label с соответствующим названием.  
+> [!IMPORTANT]
+>  Note that in the previous  illustration, you drag from the Orders property of the Customers table, not from the Orders table. By binding to the Customer.Orders property, navigation commands made in the DataGridView are reflected immediately in the details controls. If you dragged from the Orders table, the controls would still be bound to the dataset, but not they would not be synchronized with the DataGridView.  
   
-## Отображение выбранных столбцов данных в отдельных элементах управления  
- Для отображения отдельных столбцов данных в отдельных элементах управления необходимо перетащить отдельные столбцы \(или свойства при использовании объекта источника данных\) из окна **Источники данных** на форму в приложении Windows.  
+ The following illustration shows the default data-bound controls that are added to the form after the Orders property in the Customers table is bound to "Details" in the **Data Sources** window.  
   
-#### Чтобы отобразить выбранные столбцы данных  
+ ![Orders table bound to details](../data-tools/media/raddata-orders-table-bound-to-details.png "raddata Orders table bound to details")  
   
-1.  Откройте окно **Источники данных**.  Дополнительные сведения см. в разделе [Практическое руководство. Открытие окна "Источники данных"](../data-tools/how-to-open-the-data-sources-window.md).  
+ Note also that each control has a smart tag. This tag enables customizations that apply to that control only.  
   
-    > [!NOTE]
-    >  Если окно **Источники данных** пусто, то добавьте в него источник данных.  Дополнительные сведения см. в разделе [Общие сведения об источниках данных](../data-tools/add-new-data-sources.md).  
-  
-2.  Раскройте таблицу для отображения отдельных столбцов.  
-  
-    > [!TIP]
-    >  Чтобы задать элементы управления, которые создаются для каждого столбца, выберите столбец в окне **Источники данных**, щелкните стрелку раскрывающегося списка и выберите элемент из списка доступных элементов управления.  Дополнительные сведения см. в разделе [Задание поведения, при котором элемент управления создается при перетаскивании из окна "Источники данных"](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
-  
-3.  Откройте форму в **конструкторе Windows Forms**.  
-  
-4.  Перетащите нужные столбцы из окна **Источники данных** на форму.  
-  
-     Для каждого перетаскиваемого столбца или свойства на форме создается отдельный элемент управления с привязкой к данным, сопровождаемый элементом управления Label с соответствующим именем.  
-  
- Также можно перетащить элементы из окна **Источники данных** в существующие элементы управления \(элементы управления, которые уже содержатся на форме\) для привязки элемента управления к данным.  Элемент управления, который уже связан с данными, восстанавливает привязку к элементу, который недавно был перенесен на него последним.  
-  
-> [!NOTE]
->  Чтобы быть допустимой целью для перетаскивания, элементы управления должны поддерживать отображение основного типа данных элемента, перенесенного из окна **Источники данных**.  Например, недопустимо перетаскивания элемента, который имеет тип данных <xref:System.DateTime> на элемент управления <xref:System.Windows.Forms.CheckBox>, поскольку элемент <xref:System.Windows.Forms.CheckBox> не способен отображать даты.  
-  
-#### Чтобы привязать существующий элемент управления к данным  
-  
-1.  Откройте окно **Источники данных**.  Дополнительные сведения см. в разделе [Практическое руководство. Открытие окна "Источники данных"](../data-tools/how-to-open-the-data-sources-window.md).  
-  
-2.  Откройте форму в конструкторе форм [Windows Forms Designer](http://msdn.microsoft.com/ru-ru/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
-  
-3.  В окне **Источники данных** разверните нужную таблицу или объект для отображения его свойств или столбцов.  
-  
-4.  Перетащите нужный элемент из окна **Источники данных** на существующий элемент управления.  
-  
-     Элемент управления теперь связан с выбранным элементом.  
-  
-## Отображение данных в элементе управления DataGridView  
-  
-#### Для отображения данных в элементе управления DataGridView Windows Forms:  
-  
-1.  Откройте окно **Источники данных**.  Дополнительные сведения см. в разделе [Практическое руководство. Открытие окна "Источники данных"](../data-tools/how-to-open-the-data-sources-window.md).  
-  
-    > [!NOTE]
-    >  Если окно **Источники данных** пусто, добавьте в него источник данных.  Дополнительные сведения см. в разделе [Общие сведения об источниках данных](../data-tools/add-new-data-sources.md).  
-  
-2.  Откройте форму в **конструкторе Windows Forms**.  
-  
-3.  Выберите таблицу в окне **Источники данных**, щелкните по стрелке раскрывающегося списка и выберите **DataGridView**.  
-  
-4.  Перетащите таблицу из окна **Источники данных** на форму.  
-  
-     На форме появится элемент управления <xref:System.Windows.Forms.DataGridView> и панель инструментов \(<xref:System.Windows.Forms.BindingNavigator>\) для перемещения по записям.  [Набор данных](../data-tools/dataset-tools-in-visual-studio.md), [Адаптер таблиц](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource> и <xref:System.Windows.Forms.BindingNavigator> отображаются в области компонента.  
-  
-#### Для отображения данных в существующем элементе управления DataGridView Windows Forms:  
-  
-1.  Откройте окно **Источники данных**.  Дополнительные сведения см. в разделе [Практическое руководство. Открытие окна "Источники данных"](../data-tools/how-to-open-the-data-sources-window.md).  
-  
-    > [!NOTE]
-    >  Если окно **Источники данных** пусто, добавьте в него источник данных.  Дополнительные сведения см. в разделе [Общие сведения об источниках данных](../data-tools/add-new-data-sources.md).  
-  
-2.  Откройте форму в **Конструкторе Windows Forms**.  
-  
-3.  Выберите таблицу в окне **Источники данных**, щелкните по стрелке раскрывающегося списка и выберите **DataGridView**.  
-  
-4.  Перетащите таблицу из окна **Источники данных** на <xref:System.Windows.Forms.DataGridView> на форме.  
-  
-     Элемент управления <xref:System.Windows.Forms.DataGridView> теперь связан с таблицей, которую перетащили на нее.  Набор данных [адаптер таблиц](../data-tools/dataset-tools-in-visual-studio.md), [и](../data-tools/tableadapter-overview.md)<xref:System.Windows.Forms.BindingSource> отображаются в области компонента.  
-  
-## См. также  
- [Пошаговое руководство. Отображение данных на форме в приложении Windows](../data-tools/walkthrough-displaying-data-on-a-windows-form.md)   
- [Создание и изменение типизированных наборов данных](../data-tools/creating-and-editing-typed-datasets.md)   
- [Общие сведения о компоненте BindingSource](../Topic/BindingSource%20Component%20Overview.md)   
- [Общие сведения об элементе управления BindingNavigator](../Topic/BindingNavigator%20Control%20Overview%20\(Windows%20Forms\).md)   
- [Подключение к данным в Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Подготовка приложения к получению данных](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Выборка данных в приложение](../data-tools/fetching-data-into-your-application.md)   
- [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Редактирование данных в приложении](../data-tools/editing-data-in-your-application.md)   
- [Проверка данных](../Topic/Validating%20Data.md)   
- [Сохранение данных](../data-tools/saving-data.md)   
- [Средства для работы с источниками данных в Visual Studio](../Topic/Tools%20for%20Working%20with%20Data%20Sources%20in%20Visual%20Studio.md)
+## <a name="see-also"></a>See Also  
+ [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

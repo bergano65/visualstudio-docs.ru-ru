@@ -1,117 +1,133 @@
 ---
-title: "CA2233: в операциях не должно быть переполнений | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "OperationsShouldNotOverflow"
-  - "CA2233"
-helpviewer_keywords: 
-  - "CA2233"
-  - "OperationsShouldNotOverflow"
+title: 'CA2233: Operations should not overflow | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- OperationsShouldNotOverflow
+- CA2233
+helpviewer_keywords:
+- OperationsShouldNotOverflow
+- CA2233
 ms.assetid: 3a2b06ba-6d1b-4666-9eaf-e053ef47ffaa
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 19
----
-# CA2233: в операциях не должно быть переполнений
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: f77e3f267d991f4bffbb18c1f69f66c4603d104c
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2233-operations-should-not-overflow"></a>CA2233: Operations should not overflow
 |||  
 |-|-|  
 |TypeName|OperationsShouldNotOverflow|  
 |CheckId|CA2233|  
-|Категория|Microsoft.Usage|  
-|Критическое изменение|Не критическое|  
+|Category|Microsoft.Usage|  
+|Breaking Change|Non Breaking|  
   
-## Причина  
- Метод выполняет арифметическую операцию и предварительно не проверяет операнды для предотвращения переполнения.  
+## <a name="cause"></a>Cause  
+ A method performs an arithmetic operation and does not validate the operands beforehand to prevent overflow.  
   
-## Описание правила  
- Для выполнения арифметических операций сначала должны быть проверены операнды, чтобы удостовериться в том, что результат операции находится в диапазоне возможных значений для используемых типов данных.  В зависимости от контекста выполнения и используемых типов данных, арифметическое переполнение может приводить к <xref:System.OverflowException?displayProperty=fullName> или пропуску старших разрядов результата.  
+## <a name="rule-description"></a>Rule Description  
+ Arithmetic operations should not be performed without first validating the operands to make sure that the result of the operation is not outside the range of possible values for the data types involved. Depending on the execution context and the data types involved, arithmetic overflow can result in either a <xref:System.OverflowException?displayProperty=fullName> or the most significant bits of the result discarded.  
   
-## Устранение нарушений  
- Чтобы исправить нарушение этого правила, перед выполнением операции проверьте операнды.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, validate the operands before you perform the operation.  
   
-## Отключение предупреждений  
- Предупреждение из этого правила можно отключить без последствий, если арифметические значения операндов никогда не приведут к переполнению арифметической операции.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule if the possible values of the operands will never cause the arithmetic operation to overflow.  
   
-## Пример нарушения  
+## <a name="example-of-a-violation"></a>Example of a Violation  
   
-### Описание  
- В следующем примере метод управляет целым числом, нарушающим это правило.  Для срабатывания [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] требуется, чтобы параметр переполнения целого числа **Remove** был отключен.  
+### <a name="description"></a>Description  
+ A method in the following example manipulates an integer that violates this rule. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] requires the **Remove** integer overflow option to be disabled for this to fire.  
   
-### Код  
- [!code-vb[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_1.vb)]
- [!code-cs[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_1.cs)]  
+### <a name="code"></a>Code  
+ [!code-vb[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_1.vb)] [!code-csharp[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_1.cs)]  
   
-### Комментарии  
- Если бы метод в этом примере был передан <xref:System.Int32.MinValue?displayProperty=fullName>, то произошло бы переполнение операции.  В этом случае старшие разряды результата отбрасываются.  В следующем коде показано, как это происходит.  
+### <a name="comments"></a>Comments  
+ If the method in this example is passed <xref:System.Int32.MinValue?displayProperty=fullName>, the operation would underflow. This causes the most significant bit of the result to be discarded. The following code shows how this occurs.  
   
- \[C\#\]  
+ [C#]  
   
 ```  
 public static void Main()  
 {  
-    int value = int.MinValue;    // int.MinValue is -2147483648   
-    value = Calculator.Decrement(value);   
-    Console.WriteLine(value);  
+    int value = int.MinValue;    // int.MinValue is -2147483648   
+    value = Calculator.Decrement(value);   
+    Console.WriteLine(value);  
 }  
 ```  
   
- \[VB\]  
+ [VB]  
   
 ```  
 Public Shared Sub Main()       
-    Dim value = Integer.MinValue    ' Integer.MinValue is -2147483648   
-    value = Calculator.Decrement(value)   
-    Console.WriteLine(value)   
+    Dim value = Integer.MinValue    ' Integer.MinValue is -2147483648   
+    value = Calculator.Decrement(value)   
+    Console.WriteLine(value)   
 End Sub  
 ```  
   
-### Output  
+### <a name="output"></a>Output  
   
 ```  
 2147483647  
 ```  
   
-## Исправление путем проверки входного параметра  
+## <a name="fix-with-input-parameter-validation"></a>Fix with Input Parameter Validation  
   
-### Описание  
- В следующем примере осуществляется исправление ранее возникшего нарушения путем проверки входного значения.  
+### <a name="description"></a>Description  
+ The following example fixes the previous violation by validating the value of input.  
   
-### Код  
- [!CODE [FxCop.Usage.OperationOverflowFixed#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflowFixed#1)]  
+### <a name="code"></a>Code  
+ [!code-csharp[FxCop.Usage.OperationOverflowFixed#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_2.cs)] [!code-vb[FxCop.Usage.OperationOverflowFixed#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_2.vb)]  
   
-## Исправление с помощью проверенного блока  
+## <a name="fix-with-a-checked-block"></a>Fix with a Checked Block  
   
-### Описание  
- В следующем примере осуществляется исправление ранее возникшего нарушения путем заключения операции в проверенный блок.  Если операция вызывает переполнение, возникает <xref:System.OverflowException?displayProperty=fullName>.  
+### <a name="description"></a>Description  
+ The following example fixes the previous violation by wrapping the operation in a checked block. If the operation causes an overflow, a <xref:System.OverflowException?displayProperty=fullName> will be thrown.  
   
- Следует помнить, что проверенные блоки не поддерживаются в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].  
+ Note that checked blocks are not supported in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].  
   
-### Код  
- [!CODE [FxCop.Usage.OperationOverflowChecked#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflowChecked#1)]  
+### <a name="code"></a>Code  
+ [!code-csharp[FxCop.Usage.OperationOverflowChecked#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_3.cs)]  
   
-## Включение проверенного арифметического переполнения\/потери точности  
- Включение проверенного арифметического переполнения\/потери точности в C\# эквивалентно заключению каждой операции с целым числом в проверенный блок.  
+## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Turn on Checked Arithmetic Overflow/Underflow  
+ If you turn on checked arithmetic overflow/underflow in C#, it is equivalent to wrapping every integer operation in a checked block.  
   
- **Чтобы включить проверенное арифметическое переполнение\/потерю точности в C\#**  
+ **To turn on checked arithmetic overflow/underflow in C#**  
   
-1.  В **Обозревателе решений** щелкните правой кнопкой мыши проект и выберите команду **Свойства**.  
+1.  In **Solution Explorer**, right-click your project and choose **Properties**.  
   
-2.  Перейдите на вкладку **Построение** и щелкните **Дополнительно**.  
+2.  Select the **Build** tab and click **Advanced**.  
   
-3.  Измените свойство **Проверять арифметические переполнения и потери точности** и нажмите **ОК**.  
+3.  Select **Check for arithmetic overflow/underflow** and click **OK**.  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  <xref:System.OverflowException?displayProperty=fullName>   
- [Операторы C\#](/dotnet/csharp/language-reference/operators/index)   
- [Checked и Unchecked](/dotnet/csharp/language-reference/keywords/checked-and-unchecked)
+ [C# Operators](/dotnet/csharp/language-reference/operators/index)   
+ [Checked and Unchecked](/dotnet/csharp/language-reference/keywords/checked-and-unchecked)

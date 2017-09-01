@@ -1,72 +1,76 @@
 ---
-title: "Настройка ленты для InfoPath"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "InfoPath [разработка решений Office в Visual Studio], лента"
-  - "лента [разработка решений Office в Visual Studio], InfoPath"
+title: Customizing a Ribbon for InfoPath | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- InfoPath [Office development in Visual Studio], Ribbon
+- Ribbon [Office development in Visual Studio], InfoPath
 ms.assetid: 498c6457-679a-46f2-939f-c0597a17b7ec
 caps.latest.revision: 19
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 18
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: befccdbf740c8ff166cb9d57e1998b07a1c24619
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Настройка ленты для InfoPath
-  При настройке ленты в Microsoft Office InfoPath необходимо знать, где в приложении отображается пользовательская лента.[!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] может отображать ленту в окнах приложения InfoPath следующих трех типов.  
+# <a name="customizing-a-ribbon-for-infopath"></a>Customizing a Ribbon for InfoPath
+  When you customize the Ribbon in Microsoft Office InfoPath, you must consider where your custom Ribbon will appear in the application. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] can display the Ribbon in the following three types of InfoPath application windows:  
   
--   Окна, отображающие шаблон формы, открытый в режиме конструктора.  
+-   Windows that display a form template that is opened in design mode.  
   
--   Окна, отображающие форму, созданную на основе шаблона формы.  
+-   Windows that display a form that is based on a form template.  
   
--   Окно предварительного просмотра перед печатью.  
+-   The Print Preview window.  
   
- **Применимость.** Информация в этой статье относится к проектам надстроек VSTO для InfoPath 2010. Для получения дополнительной информации см. [Доступность функций по типам приложений Office и проектов](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Applies to:** The information in this topic applies to VSTO Add-in projects for InfoPath 2010. For more information, see [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
   
- Пользователи и разработчики открывают шаблон формы в режиме конструктора, чтобы изменить внешний вид и макет шаблона. Пользователи открывают формы, созданные на основе шаблона формы, для добавления содержимого.  
+ Users and designers open a form template in design mode to modify the appearance and layout of the template. Users open forms that are based in a form template to add content.  
   
- Окно предварительного просмотра перед печатью позволяет разработчикам и пользователям просмотреть страницы формы или шаблона формы на экране перед тем, как отправить их на печать.  
+ The Print Preview window enables designers and users to preview the pages of a form or form template before they print them.  
   
 > [!NOTE]  
->  Вкладка **Надстройки** не отображается в окне предварительного просмотра перед печатью. Если вы хотите, чтобы пользовательская вкладка отображалась в окне предварительного просмотра, убедитесь, что для свойства **OfficeId** вкладки не задано значение **TabAddIns**.  
+>  The **AddIns** tab does not appear in the Print Preview window. If you want a custom tab to appear in the Print Preview window, make sure that the **OfficeId** property of the tab is not set to **TabAddIns**.  
   
- Необходимо указать тип ленты для каждого окна, в котором лента должна отображаться.  
+ You must specify the Ribbon type of each window in which you want your Ribbon to appear.  
   
-## Указание типа ленты в конструкторе ленты  
- Если вы используете элемент **Лента \(визуальный конструктор\)**, щелкните свойство **RibbonType** ленты в окне **Свойства** и выберите один из идентификаторов ленты, описанных в следующей таблице.  
+## <a name="specifying-the-ribbon-type-in-the-ribbon-designer"></a>Specifying the Ribbon Type in the Ribbon Designer  
+ If you are using the **Ribbon (Visual Designer)** item, click the **RibbonType** property of the Ribbon in the **Properties** window, and then select any of the Ribbon ID's described in the following table.  
   
-|Идентификатор ленты|Окно, в котором будет отображаться лента при выполнении проекта|  
-|-------------------------|---------------------------------------------------------------------|  
-|**Microsoft.InfoPath.Designer**|Окна, отображающие шаблон формы, открытый в режиме конструктора.|  
-|**Microsoft.InfoPath.Editor**|Окна, отображающие форму, созданную на основе шаблона формы.|  
-|**Microsoft.InfoPath.PrintPreview**|Окно предварительного просмотра перед печатью.|  
+|Ribbon ID|Window in which the Ribbon will appear when you run the project|  
+|---------------|---------------------------------------------------------------------|  
+|**Microsoft.InfoPath.Designer**|Windows that display a form template that is opened in design mode.|  
+|**Microsoft.InfoPath.Editor**|Windows that display a form that is based on a form template.|  
+|**Microsoft.InfoPath.PrintPreview**|The Print Preview window.|  
   
- В проект можно добавить несколько лент. Если несколько лент имеют одинаковый идентификатор, переопределите метод CreateRibbonExtensibilityObject в классе `ThisAddin` проекта, чтобы указать, какую ленту следует отображать во время выполнения. Для получения дополнительной информации см. [Обзор ленты](../vsto/ribbon-overview.md).  
+ You can add more than one Ribbon to a project. If more than one Ribbon share a Ribbon ID, override the CreateRibbonExtensibilityObject method in the `ThisAddin` class of your project to specify which Ribbon to display at run time. For more information, see [Ribbon Overview](../vsto/ribbon-overview.md).  
   
-## Указание типа ленты с помощью XML\-кода ленты  
- Если вы используете элемент **Лента \(XML\)**, проверьте значение параметра *ribbonID* в методе <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> и верните нужную ленту.  
+## <a name="specifying-the-ribbon-type-by-using-ribbon-xml"></a>Specifying the Ribbon Type by Using Ribbon XML  
+ If you are using the **Ribbon (XML)** item, check the value of the *ribbonID* parameter in the <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> method and return the appropriate Ribbon.  
   
- Метод <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> автоматически создается средой Visual Studio в файле кода ленты. Параметр *ribbonID* представляет собой строку, определяющую тип открываемого окна InfoPath.  
+ The <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> method is automatically generated by Visual Studio in the Ribbon code file. The *ribbonID* parameter is a string that identifies the type of InfoPath window that is opening.  
   
- В следующем примере кода показано, как отобразить пользовательскую ленту только в том окне, которое отображает шаблон формы в режиме конструктора. Отображаемая лента указывается в методе `GetResourceText()`, который создается в классе ленты. Дополнительные сведения о классе Ribbon см. в разделе [XML-ленты](../vsto/ribbon-xml.md).  
+ The following code example demonstrates how to display a custom Ribbon only in a window that displays a form template in design mode. The Ribbon to display is specified in the `GetResourceText()` method, which is generated in the Ribbon class. For more information about the Ribbon class, see [Ribbon XML](../vsto/ribbon-xml.md).  
   
- [!code-csharp[Trin_RibbonInfoPathBasic#1](../snippets/csharp/VS_Snippets_OfficeSP/trin_ribboninfopathbasic/cs/ribbon.cs#1)]
- [!code-vb[Trin_RibbonInfoPathBasic#1](../snippets/visualbasic/VS_Snippets_OfficeSP/trin_ribboninfopathbasic/vb/ribbon.vb#1)]  
+ [!code-csharp[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/CSharp/myinfopathproject/ribbon.cs#1)] [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]  
   
-## См. также  
- [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)   
- [Обзор ленты](../vsto/ribbon-overview.md)   
- [Конструктор лент](../vsto/ribbon-designer.md)   
- [XML-ленты](../vsto/ribbon-xml.md)  
+## <a name="see-also"></a>See Also  
+ [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Ribbon Overview](../vsto/ribbon-overview.md)   
+ [Ribbon Designer](../vsto/ribbon-designer.md)   
+ [Ribbon XML](../vsto/ribbon-xml.md)  
   
   

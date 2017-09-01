@@ -1,5 +1,5 @@
 ---
-title: "IDebugSymbolProvider::GetAddressesFromPosition | Документы Microsoft"
+title: IDebugSymbolProvider::GetAddressesFromPosition | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,18 +30,19 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 28c913ca924274c946b3ce52a964a3efbae6dc5c
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 957e917870e4482721b0c32e4551072fb9092044
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
-Этот метод сопоставляет позицию документа в массив адресов отладки.  
+This method maps a document position into an array of debug addresses.  
   
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetAddressesFromPosition(   
    IDebugDocumentPosition2* pDocPos,  
    BOOL                     fStatmentOnly,  
@@ -50,7 +51,7 @@ HRESULT GetAddressesFromPosition(
 );  
 ```  
   
-```c#  
+```csharp  
 int GetAddressesFromPosition(   
    IDebugDocumentPosition2  pDocPos,  
    bool                     fStatmentOnly,  
@@ -59,28 +60,28 @@ int GetAddressesFromPosition(
 );  
 ```  
   
-#### <a name="parameters"></a>Параметры  
+#### <a name="parameters"></a>Parameters  
  `pDocPos`  
- [in] Позиция документа.  
+ [in] The document position.  
   
  `fStatmentOnly`  
- [in] Если значение равно TRUE, ограничивает адреса отладки в одной инструкции.  
+ [in] If TRUE, limits the debug addresses to a single statement.  
   
  `ppEnumBegAddresses`  
- [out] Возвращает перечислитель для начала отладки адресов, связанных с этой инструкции или строке.  
+ [out] Returns an enumerator for the starting debug addresses associated with this statement or line.  
   
  `ppEnumEndAddresses`  
- [out] Возвращает [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) перечислитель для конечного адреса отладки, связанные с этой инструкции или строке.  
+ [out] Returns an [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumerator for the ending debug addresses associated with this statement or line.  
   
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="remarks"></a>Примечания  
- Позиция документа обычно указывает диапазон строк исходного кода. Этот метод предоставляет начальный и конечный адреса отладки связанных с этими строками. В некоторых языках разрешить с помощью инструкций, охватывающих несколько строк или строк, содержащих более одной инструкции. Этот метод обеспечивает флаг для ограничения отладки адреса в одной инструкции.  
+## <a name="remarks"></a>Remarks  
+ A document position typically indicates a range of source lines. This method provides the starting and ending debug addresses associated with these lines. Some languages allow statements that span multiple lines, or lines that contains more than one statement. This method provides a flag to limit the debug addresses to a single statement.  
   
- Можно иметь несколько адресов отладки, как и в случае шаблоны одного оператора.  
+ It is possible for a single statement to have multiple debug addresses, as in the case of templates.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>See Also  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)   
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

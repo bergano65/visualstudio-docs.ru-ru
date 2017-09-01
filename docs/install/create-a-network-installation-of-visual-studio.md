@@ -1,7 +1,7 @@
 ---
-title: "Создание сетевой установки Visual Studio | Документация Майкрософт"
-description: "{{ЗАПОЛНИТЕЛЬ}}"
-ms.date: 05/05/2017
+title: Create a network-based installation of Visual Studio | Microsoft Docs
+description: '{{PLACEHOLDER}}'
+ms.date: 08/29/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -15,129 +15,146 @@ ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
 author: timsneath
 ms.author: tims
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: c8c48a92ba4ba75e87d947364919688032842265
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 54b0b6541764d95bacc8590bdb85c98e2f7681ca
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 
-# <a name="create-a-network-installation-of-visual-studio-2017"></a>Создание сетевой установки Visual Studio 2017
+# <a name="create-a-network-installation-of-visual-studio-2017"></a>Create a network installation of Visual Studio 2017
 
-Обычно администратор предприятия создает точку сетевой установки для развертывания на клиентских рабочих станциях. При разработке Visual Studio 2017 мы предоставили вам возможность собрать все файлы для начальной установки и все обновления продукта в одну папку (этот процесс можно назвать _созданием макета_). Благодаря этому клиентские рабочие станции смогут использовать одно сетевое расположение для управления установками, даже если они не обновлены до последней версии служебного обновления.
+Commonly, an enterprise administrator creates a network install point for deployment to client workstations. We've designed Visual Studio 2017 to enable you to cache the files for the initial installation along with all product updates to a single folder. (This process is also referred to as _creating a layout_.) We've done this so that client workstations can use the same network location to manage their installation even if they haven't yet updated to the latest servicing update.
 
 > [!NOTE]
-> Если вы используете в организации нескольких версий Visual Studio (например, Visual Studio Professional и Visual Studio Enterprise), вам нужно создать отдельную сетевую папку установки для каждого выпуска.
+> If you have multiple editions of Visual Studio in use within your enterprise (for example, both Visual Studio Professional and Visual Studio Enterprise), you must create a separate network install share for each edition.
 
-## <a name="download-the-visual-studio-bootstrapper"></a>Скачивание загрузчика Visual Studio
-**Скачайте** нужный выпуск Visual Studio. После выбора файла нажмите **Сохранить**, а затем **Открыть папку**.
+## <a name="download-the-visual-studio-bootstrapper"></a>Download the Visual Studio bootstrapper
+**Download** the edition of Visual Studio you want. Make sure to click **Save**, and then click **Open folder**.
 
-Это будет один из следующих файлов установки &mdash;а точнее, файлов загрузчика&mdash;.
+Your setup executable&mdash;or to be more specific, a bootstrapper file&mdash;should match one of the following.
 
-|Выпуск | Скачать|
+|Edition | Download|
 |-------------|-----------------------|
 |Visual Studio Enterprise | [**vs_enterprise.exe**](https://aka.ms/vs/15/release/vs_enterprise.exe) |
 |Visual Studio Professional | [**vs_professional.exe**](https://aka.ms/vs/15/release/vs_professional.exe) |
 |Visual Studio Community | [**vs_community.exe**](https://aka.ms/vs/15/release/vs_community.exe) |
 
-Другие поддерживаемые загрузчики: [vs_buildtools.exe](https://aka.ms/vs/15/release/vs_buildtools.exe), [vs_feedbackclient.exe](https://aka.ms/vs/15/release/vs_feedbackclient.exe), [vs_teamexplorer.exe](https://aka.ms/vs/15/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/15/release/vs_testagent.exe), [vs_testcontroller.exe](https://aka.ms/vs/15/release/vs_testcontroller.exe) и [vs_testprofessional.exe](https://aka.ms/vs/15/release/vs_testprofessional.exe).
+Other supported bootstrappers include [vs_buildtools.exe](https://aka.ms/vs/15/release/vs_buildtools.exe), [vs_feedbackclient.exe](https://aka.ms/vs/15/release/vs_feedbackclient.exe), [vs_teamexplorer.exe](https://aka.ms/vs/15/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/15/release/vs_testagent.exe), [vs_testcontroller.exe](https://aka.ms/vs/15/release/vs_testcontroller.exe), and [vs_testprofessional.exe](https://aka.ms/vs/15/release/vs_testprofessional.exe).
 
-## <a name="create-an-offline-installation-folder"></a>Создание папки автономной установки
-Чтобы создать автономную установку со всеми языками и функциями, используйте одну из команд, приведенных в следующих примерах.
+## <a name="create-an-offline-installation-folder"></a>Create an offline installation folder
+To create an offline installation with all languages and all features, use one of the commands from the following examples:
 
-(Эти команды необходимо выполнять из каталога загрузки. На компьютере под управлением Windows 10 это обычно каталог `C:\Users\<username>\Downloads`).
+(Make sure that you run the command from your Download directory. Typically, that's `C:\Users\<username>\Downloads` on a computer running Windows 10).
 
-- Команда для выпуска Visual Studio Enterprise:
+- For Visual Studio Enterprise, run:
   ```
   vs_enterprise.exe --layout c:\vs2017offline
   ```
-- Команда для выпуска Visual Studio Professional:
+
+- For Visual Studio Professional, run:
   ```
   vs_professional.exe --layout c:\vs2017offline
-  ```
-- Команда для выпуска Visual Studio Community:
+    ```
+    
+- For Visual Studio Community, run:
   ```
   vs_community.exe --layout c:\vs2017offline
   ```
 
-## <a name="modify-the-responsejson-file"></a>Редактирование файла response.json
-В файле response.json вы можете задать новые значения по умолчанию, которые будут использоваться при запуске программы установки.  Например, можно настроить файл `response.json` для автоматического выбора конкретного набора рабочих нагрузок.
-Подробнее см. в статье об [автоматизации установки Visual Studio с помощью файла ответов](automated-installation-with-response-file.md).
+> [!IMPORTANT]
+> A complete Visual Studio 2017 layout requires at least 20 GB of disk space and can take some time to download.  See the [Customizing the network layout](#customizing-the-network-layout) section for details on how to create a layout with only the components you want to install.
 
-## <a name="copy-the-layout-to-a-network-share"></a>Копирование макета в общую сетевую папку
+## <a name="modify-the-responsejson-file"></a>Modify the response.json file
+You can modify the response.json to set default values that are used when setup is run.  For example, you can configure the `response.json` file to select a specific set of workloads selected automatically.
+See [Automate Visual Studio installation with a response file](automated-installation-with-response-file.md) for details.
 
-Разместите макет на общем сетевом ресурсе, чтобы запускать его с других компьютеров.
-* Пример<br>
+## <a name="copy-the-layout-to-a-network-share"></a>Copy the layout to a network share
+
+Host the layout on a network share so it can be run from other machines.
+* Example:<br>
 ```xcopy /e c:\vs2017offline \\server\products\VS2017```
-    
-## <a name="customizing-the-network-layout"></a>Настройка сетевого макета
-Для сетевого макета можно настроить несколько параметров. Вы можете создать частичный макет, который содержит только определенный набор [языковых стандартов](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales), [рабочих нагрузок, компонентов, рекомендуемых и дополнительных зависимостей](workload-and-component-ids.md). Это может быть полезно, если вы намерены разворачивать на клиентских рабочих станциях только определенное подмножество рабочих нагрузок. Ниже перечислены самые распространенные параметры командной строки для настройки макета.
 
- - ```--add``` позволяет указать [идентификаторы рабочих нагрузок и компонентов](workload-and-component-ids.md).  Если используется параметр `--add`, будут загружены только те рабочие нагрузки и компоненты, которые заданы с помощью `--add`.  Если параметр `--add` не используется, будут загружены все компоненты и рабочие нагрузки.
- - ```--includeRecommended``` позволяет включить все рекомендованные компоненты для рабочих нагрузок с указанными идентификаторами.
- - ```--includeOptional``` позволяет включить все рекомендованные и дополнительные компоненты для рабочих нагрузок с указанными идентификаторами.
- - ```--lang``` позволяет указать [языковые стандарты](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales).
- 
-Далее приводятся примеры для создания неполного пользовательского макета.
+## <a name="customizing-the-network-layout"></a>Customizing the network layout
+There are several options you can use to customize your network layout. You can create a partial layout that only contains a specific set of [language locales](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales), [workloads, components, and their recommended or optional dependencies](workload-and-component-ids.md). This might be useful if you know that you are going to deploy only a subset of workloads to client workstations. Typical command-line parameters for customizing the layout include:
 
- - Чтобы скачать все рабочие нагрузки и компоненты только для одного языка, выполните: <br>```vs_enterprise.exe --layout C:\vs2017offline --lang en-US```
- - Чтобы скачать все рабочие нагрузки и компоненты для нескольких языков, выполните: <br>```vs_enterprise.exe --layout C:\vs2017offline --lang en-US de-DE ja-JP```
- - Чтобы скачать одну рабочую нагрузку для всех языков, выполните: <br> ```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --includeRecommended```
- - А так вы можете скачать две рабочие нагрузки и один дополнительный компонент для трех языков: <br>```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended --lang en-US de-DE ja-JP ```
- - Чтобы загрузить две рабочие нагрузки со всеми рекомендуемыми компонентами, выполните следующую команду: <br>```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended ```
- - Чтобы загрузить две рабочие нагрузки со всеми рекомендуемыми и дополнительными компонентами, выполните следующую команду: <br>```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional ```
+ * ```--add``` to specify [workload or component IDs](workload-and-component-ids.md).  If `--add` is used, only those workloads and components specified with `--add` are downloaded.  If `--add` is not used, all workload and components are downloaded.
+ * ```--includeRecommended``` to include all the recommended  components for the specified workload IDs
+ * ```--includeOptional``` to include all the recommended and optional components for the specified workload IDs.
+ * ```--lang``` to specify [language locales](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales).
+
+Here are a few examples of how to create a custom partial layout.
+
+ * To download all workloads and components for only one language, run: <br>```vs_enterprise.exe --layout C:\vs2017offline --lang en-US```
+ * To download all workloads and components for multiple languages, run: <br>```vs_enterprise.exe --layout C:\vs2017offline --lang en-US de-DE ja-JP```
+ * To download one workload for all languages, run <br> ```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --includeRecommended```
+ * To download two workloads and one optional component for three languages, run: <br>```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended --lang en-US de-DE ja-JP ```
+ * To download two workloads and all of their recommended components, run: <br>```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended ```
+ * To download two workloads and all of their recommended and optional components, run: <br>```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional ```
+
+### <a name="new-in-153"></a>New in 15.3
+When you run a layout command, the options that you specify are saved (such as the workloads and languages). Subsequent layout commands will include all of the previous options.  Here is an example of a layout with one workload for English only:
+
+```
+vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
+```
+When you want to update that layout to a newer version, you don't have to specify any additional command line parameters. The previous settings are saved and used by any subsequent layout commands in this layout folder.  The following command will update the existing partial layout.  
+
+```
+vs_enterprise.exe --layout c:\VS2017Layout  
+```
+
+When you want to add an additional workload, here's an example of how to do so. In this case, we'll add the Azure workload and a localized language.  Now, both Managed Desktop and Azure are included in this layout.  The language resources for English and German are include for all these workloads. The layout is updated to the latest available version.
+
+```
+vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
+```
+
+If you want to update an existing layout to a full layout, use the --all option, as shown in the following example.
+
+```
+vs_enterprise.exe --layout c:\VS2017Layout --all  
+```
 
 
-## <a name="deploying-from-a-network-installation"></a>Развертывание из сетевой установки
-Администраторы могут разворачивать Visual Studio на клиентских рабочих станциях в рамках сценария установки. Также пользователи с правами администратора могут запустить программу установки непосредственно из общей сетевой папки, чтобы установить Visual Studio на своем компьютере.
+## <a name="deploying-from-a-network-installation"></a>Deploying from a network installation
+Administrators can deploy Visual Studio onto client workstations as part of an installation script. Or, users who have administrator rights can run setup directly from the share to install Visual Studio on their machine.
 
-- Пользователи выполняют следующую команду для установки: <br>```\\server\products\VS2017\vs_enterprise.exe```
-- Администраторы выполняют установку в автоматическом режиме с помощью следующей команды: <br>```\\server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart```
+- Users can install by running: <br>```\\server\products\VS2017\vs_enterprise.exe```
+- Administrators can install in an unattended mode by running: <br>```\\server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart```
 
 > [!TIP]
-> Когда установка выполняется в рамках пакетного файла, параметр `--wait` позволяет гарантировать, что процесс `vs_enterprise.exe` дождется завершения установки, прежде чем возвращать код выхода. Это полезно в тех случаях, когда администратор предприятия хочет выполнить дополнительные действия для завершения установки (например, [применить ключ продукта к успешным установкам](automatically-apply-product-keys-when-deploying-visual-studio.md)). если требуется ожидать завершения установки для обработки ее кода возврата.  Если вы не используете параметр `--wait`, процесс vs_enterprise.exe будет завершен до завершения установки и его код выхода не будет отражать состояние операции установки.
+> When executed as part of a batch file, the `--wait` option ensures that the `vs_enterprise.exe` process waits until the installation is complete before it returns an exit code. This is useful if an enterprise administrator wants to perform further actions on a completed installation (for example, to [apply a product key to a successful installation](automatically-apply-product-keys-when-deploying-visual-studio.md)) but must wait for the installation to finish to handle the return code from that installation.  If you do not use `--wait`, the `vs_enterprise.exe` process exits before the installation is complete and returns an inaccurate exit code that doesn't represent the state of the install operation.
 
-### <a name="error-codes"></a>Коды ошибок
-Если вы используете параметр `--wait`, то в зависимости от результата операции переменная среды `%ERRORLEVEL%` получит одно из следующих значений.
+When you install from a layout, the content that is installed is acquired from the layout.  However, if something that is selected to be installed is missing in the layout, it will be acquired from the Internet.  If you want to prevent Visual Studio setup from downloading any content that is missing in your layout, use the `--noWeb` option.  If `--noWeb` is used and the layout is missing any content selected to be installed, setup fails.  
 
-  | **Значение** | **Результат** |
+### <a name="error-codes"></a>Error codes
+If you used the `--wait` parameter, then depending on the result of the operation, the `%ERRORLEVEL%` environment variable is set to one of the following values:
+
+  | **Value** | **Result** |
   | --------- | ---------- |
-  | 0 | Операция выполнена успешно. |
-  | 3010 | Операция выполнена успешно, но перед началом работы необходимо выполнить перезагрузку. |
-  | Другое | Произошел сбой — проверьте журналы для получения дополнительных сведений |
+  | 0 | Operation completed successfully |
+  | 3010 | Operation completed successfully, but install requires reboot before it can be used |
+  | Other | Failure condition occurred - check the logs for more information |
 
-## <a name="updating-a-network-install-layout"></a>Обновление макета сетевой установки
-По мере выхода обновления продукта может потребоваться [обновить макет сетевой установки](update-a-network-installation-of-visual-studio.md), чтобы включить обновленные пакеты.
+## <a name="updating-a-network-install-layout"></a>Updating a network install layout
+As product updates become available, you might want to [update the network install layout](update-a-network-installation-of-visual-studio.md) to incorporate updated packages.
 
-## <a name="how-to-create-a-layout-for-a-previous-visual-studio-2017-release"></a>Как создать макет для предыдущей версии Visual Studio 2017
-**Примечание.** Загрузчик VS 2017, доступный по адресу http://www.visualstudio.com, загружает и устанавливает последний выпуск VS 2017, доступный на момент очередного запуска. Если вы скачаете загрузчик VS сегодня, но выполните его через 6 месяцев, будет установлен более поздний выпуск VS 2017. Если же вы создадите макет, при установке VS из этого макета будет установлена определенная версии VS, включенная в этот макет. Даже если уже существует новая версия, вы получите только ту версию VS, которая включена в ваш макет.
+## <a name="how-to-create-a-layout-for-a-previous-visual-studio-2017-release"></a>How to create a layout for a previous Visual Studio 2017 release
+> [!NOTE]
+> The Visual Studio 2017 bootstrappers that are available on [VisualStudio.com](http://www.visualstudio.com) download and install the latest Visual Studio 2017 release available whenever they are run. If you download a Visual Studio bootstrapper today and run it six months from now, it installs the Visual Studio 2017 release that is available at that later time. If you create a layout, installing Visual Studio from that layout installs the specific version of Visual Studio that exists in the layout. Even though a newer version might exist online, you get the version of Visual Studio that is in the layout.
 
-Если вам нужно создать макет для более ранней версии Visual Studio 2017, откройте страницу https://my.visualstudio.com и скачайте фиксированную (fixed) версию загрузчике Visual Studio 2017 для любой из поддерживаемых версий. С их помощью вы сможете создать макет сетевой установки, содержащий соответствующую версию. 
+If you need to create a layout for an older version of Visual Studio 2017, you can go to https://my.visualstudio.com to download "fixed" versions of the Visual Studio 2017 bootstrappers for supported versions, which allows you to create a network install layout for that older version.
 
-### <a name="how-to-get-support-for-your-offline-installer"></a>Техническая поддержка по вопросам, связанным с автономным установщиком
-Если что-то во время автономной установки возникнет проблема, мы очень хотим узнать об этом. Передайте нам информацию с помощью средства [сообщения о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Это средство позволяет отправлять нам данные телеметрии и журналы, которые помогут диагностировать и устранить возникшую проблему.
+### <a name="how-to-get-support-for-your-offline-installer"></a>How to get support for your offline installer
+If you experience a problem with your offline installation, we want to know about it. The best way to tell us is by using the [Report a Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) tool. When you use this tool, you can send us the telemetry and logs we need to help us diagnose and fix the problem.
 
-У нас есть и другие возможности технической поддержки. Список доступных вариантов вы найдете в статье [Как сообщить о проблеме с версией-кандидатом Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
+We have other support options available, too. For a list, see our [Talk to us](../ide/how-to-report-a-problem-with-visual-studio-2017.md) page.
 
-## <a name="see-also"></a>См. также
-* [Установка Visual Studio](install-visual-studio.md)
-* [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
-* [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Идентификаторы рабочих нагрузок и компонентов Visual Studio](workload-and-component-ids.md)
+## <a name="see-also"></a>See also
+* [Install Visual Studio](install-visual-studio.md)
+* [Visual Studio administrator guide](visual-studio-administrator-guide.md)
+* [Use command-line parameters to install Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Visual Studio workload and component IDs](workload-and-component-ids.md)
 

@@ -1,5 +1,5 @@
 ---
-title: "Написание текстового шаблона T4 | Документы Microsoft"
+title: Writing a T4 Text Template | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -29,62 +29,63 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: eb2ab9d49cdeb1ed71da8ef67841f7796862dc30
-ms.openlocfilehash: 4585b4f44e3bb81fc0de03c183c3363bcccbd93d
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 97a9b5ce0237d9a06289e52e6db86ca33b901fc6
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="writing-a-t4-text-template"></a>Написание текстового шаблона T4
-Текстовый шаблон содержит текст, который будет создан на его основе. Например, шаблон, создающий веб-страницы будет содержать «\<html настроек...» и все прочие стандартные части HTML-страницы. Вставляемые в шаблон, *блоки управления*, которые являются фрагментами программного кода. Блоки управления обеспечивают варьирующиеся значения и обеспечивают условность и повторяемость текста.  
+# <a name="writing-a-t4-text-template"></a>Writing a T4 Text Template
+A text template contains the text that will be generated from it. For example, a template that creates a web page will contain "\<html>..." and all the other standard parts of an HTML page. Inserted into the template are *control blocks*, which are fragments of program code. Control blocks provide varying values and allow parts of the text to be conditional and repeated.  
   
- Эта структура упрощает разработку шаблона, так как можно начать с прототипа созданного файла и постепенно вставлять блоки управления, которые будут обеспечивать изменение результата.  
+ This structure makes a template easy to develop, because you can start with a prototype of the generated file, and incrementally insert control blocks that vary the result.  
   
- Текстовые шаблоны состоят из следующих частей.  
+ Text templates are composed of the following parts:  
   
--   **Директивы** -элементы, управляющие обработкой шаблона.  
+-   **Directives** - elements that control how the template is processed.  
   
--   **Текстовые блоки** — содержимое, которое копируется непосредственно в вывод.  
+-   **Text blocks** - content that is copied directly to the output.  
   
--   **Блоки управления** -программный код, который вставляет значения переменных в текст и контролирует условные или повторяемые части текста.  
+-   **Control blocks** - program code that inserts variable values into the text, and controls conditional or repeated parts of the text.  
   
- Чтобы проверить примеры в этом разделе, скопируйте их в файл шаблона, как описано в [создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). После редактирования файла шаблона, сохраните его и затем просмотрите выходные данные **.txt** файла.  
+ To try the examples in this topic, copy them into a template file as described in [Design-Time Code Generation by using T4 Text Templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md). After editing the template file, save it, and then inspect the output **.txt** file.  
   
-## <a name="directives"></a>Директивы  
- Директивы текстовых шаблонов предоставляют общие инструкции модулю текстовых шаблонов в отношении порядка создания кода преобразования и выходного файла.  
+## <a name="directives"></a>Directives  
+ Text template directives provide general instructions to the text templating engine about how to generate the transformation code and the output file.  
   
- Например, следующая директива указывает, что выходной файл должен иметь расширение .TXT.  
+ For example, the following directive specifies that the output file should have a .txt extension:  
   
 ```  
   
 <#@ output extension=".txt" #>  
 ```  
   
- Дополнительные сведения о директивах см. в разделе [директивы текстовых шаблонов T4](../modeling/t4-text-template-directives.md).  
+ For more information about directives, see [T4 Text Template Directives](../modeling/t4-text-template-directives.md).  
   
-## <a name="text-blocks"></a>Текстовые блоки  
- Текстовый блок вставляет текст непосредственно в выходной файл. Для текстовых блоков нет особых правил форматирования. Например, следующий текстовый шаблон создаст текстовый файл со словом "Hello":  
+## <a name="text-blocks"></a>Text blocks  
+ A text block inserts text directly into the output file. There is no special formatting for text blocks. For example, the following text template will produce a text file that contains the word "Hello":  
   
 ```  
 <#@ output extension=".txt" #>  
 Hello  
 ```  
   
-## <a name="control-blocks"></a>Блоки управления  
- Блоки управления — это части программного кода, которые используются для преобразования шаблонов. Язык по умолчанию — C#, поэтому для использования [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] можно вставить в начало файла эту директиву:  
+## <a name="control-blocks"></a>Control blocks  
+ Control blocks are sections of program code that are used to transform the templates. The default language is C#, but to use [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], you can write this directive at the beginning of the file:  
   
 ```  
 <#@ template language="VB" #>  
 ```  
   
- Язык, на котором вы будете писать код в блоках управления, не связан с языком создаваемого текста.  
+ The language in which you write the code in the control blocks is unrelated to the language of the text that is generated.  
   
-### <a name="standard-control-blocks"></a>Стандартные блоки управления  
- Стандартный блок управления представляет собой раздел программного кода, который создает часть выходного файла.  
+### <a name="standard-control-blocks"></a>Standard control blocks  
+ A standard control block is a section of program code that generates part of the output file.  
   
- В файле шаблона можно смешивать любое число блоков текста и стандартных блоков управления. При этом нельзя помещать один блок управления в другой. Каждый стандартный блок управления отделяется символами `<# ... #>`.  
+ You can mix any number of text blocks and standard control blocks in a template file. However, you cannot place one control block inside another. Each standard control block is delimited by the symbols `<# ... #>`.  
   
- Например, следующий блок управления и текстовый блок создают выходной файл, который содержит строку "0, 1, 2, 3, 4 Hello!":  
+ For example, the following control block and text block cause the output file to contain the line "0, 1, 2, 3, 4 Hello!":  
   
 ```  
   
@@ -97,7 +98,7 @@ Hello
 #> Hello!  
 ```  
   
- Вместо использования явных операторов `Write()`, можно чередовать текст и код. В следующем примере выводится «Hello!» четыре раза:  
+ Instead of using explicit `Write()` statements, you can interleave text and code. The following example prints "Hello!" four times:  
   
 ```  
 <#  
@@ -110,25 +111,25 @@ Hello!
 #>  
 ```  
   
- Можно вставить блок текста в любое место кода, где допускается вставка оператора `Write();`.  
+ You can insert a text block wherever a `Write();` statement would be allowed in the code.  
   
 > [!NOTE]
->  При встраивании блока текста в составной оператор, такой как цикл или условный, всегда используйте фигурные скобки {...} заключайте блок текста.  
+>  When you embed a text block within a compound statement such as a loop or conditional, always use braces {...} to contain the text block.  
   
-### <a name="expression-control-blocks"></a>Блоки управления выражениями  
- Блок управления выражением оценивает выражение и преобразует его в строку, которая вставляется в выходной файл.  
+### <a name="expression-control-blocks"></a>Expression control blocks  
+ An expression control block evaluates an expression and converts it to a string. This is inserted into the output file.  
   
- Блоки управления выражениями разделяются символами `<#= ... #>`  
+ Expression control blocks are delimited by the symbols `<#= ... #>`  
   
- Например, следующий блок управления задает, что выходной файл будет содержать "5":  
+ For example, the following control block causes the output file to contain "5":  
   
 ```  
 <#= 2 + 3 #>  
 ```  
   
- Обратите внимание, что открывающий символ включает три знака: "<#=".  
+ Notice that the opening symbol has three characters "<#=".  
   
- Это выражение может включать любую переменную в области. Например, этот блок печатает строки цифр:  
+ The expression can include any variable that is in scope. For example, this block prints lines with numbers:  
   
 ```  
 <#@ output extension=".txt" #>  
@@ -142,12 +143,12 @@ This is hello number <#= i+1 #>: Hello!
 #>  
 ```  
   
-### <a name="class-feature-control-blocks"></a>Блоки управления возможностями класса  
- Блок управления возможностями класса определяет свойства, методы или другой код, который не должен включаться в основное преобразование. Блоки возможностей класса часто используются для написания возможностей вспомогательных приложений.  Как правило, блоки возможностей класса помещаются в отдельные файлы, чтобы их можно было [включены](#Include) в несколько текстовых шаблонов.  
+### <a name="class-feature-control-blocks"></a>Class feature control blocks  
+ A class feature control block defines properties, methods, or any other code that should not be included in the main transform. Class feature blocks are frequently used for helper functions.  Typically, class feature blocks are placed in separate files so that they can be [included](#Include) by more than one text template.  
   
- Блоки управления возможностями класса разделяются символами `<#+ ... #>`.  
+ Class feature control blocks are delimited by the symbols `<#+ ... #>`  
   
- Например, следующий файл шаблона объявляет и использует метод:  
+ For example, the following template file declares and uses a method:  
   
 ```  
 <#@ output extension=".txt" #>  
@@ -169,12 +170,12 @@ private int Square(int i)
 #>  
 ```  
   
- Возможности класса необходимо помещать в конец файла, в котором они написаны. Однако можно включить файл (используя `<#@include#>`), содержащий возможность класса, даже если за директивой `include` следует текст и стандартные блоки.  
+ Class features must be placed at the end of the file in which they are written. However, you can `<#@include#>` a file that contains a class feature, even if the `include` directive is followed by standard blocks and text.  
   
- Дополнительные сведения об управляющих блоках см. в разделе [управляющие блоки текстовых шаблонов](../modeling/text-template-control-blocks.md).  
+ For more information about control blocks, see [Text Template Control Blocks](../modeling/text-template-control-blocks.md).  
   
-### <a name="class-feature-blocks-can-contain-text-blocks"></a>Блоки возможностей класса могут содержать текстовые блоки  
- Вы можете написать метод, создающий текст. Например:  
+### <a name="class-feature-blocks-can-contain-text-blocks"></a>Class feature blocks can contain text blocks  
+ You can write a method that generates text. For example:  
   
 ```  
 List of Squares:  
@@ -193,74 +194,74 @@ private void WriteSquareLine(int i)
 #>  
 ```  
   
- Особенно полезным будет поместить метод, создающий текст, в отдельный файл, который можно будет включить в несколько шаблонов.  
+ It is particularly useful to place a method that generates text in a separate file that can be included by more than one template.  
   
-## <a name="using-external-definitions"></a>Использование внешних определений  
+## <a name="using-external-definitions"></a>Using external definitions  
   
-### <a name="assemblies"></a>Сборки  
- Блоки кода шаблона могут использовать типы, определенные в наиболее часто используемых сборках .NET, таких как System.dll. Кроме того, можно добавить ссылку на другие сборки .NET или ваши собственные. Можно предоставить путь или строгое имя сборки:  
+### <a name="assemblies"></a>Assemblies  
+ The code blocks of your template can use types that are defined the most frequently used .NET assemblies such as System.dll. In addition, you can reference other .NET assemblies or your own assemblies. You can provide a pathname, or the strong name of an assembly:  
   
 ```  
 <#@ assembly name="System.Xml" #>  
 ```  
   
- Необходимо использовать абсолютные пути или стандартные имена макросов в пути. Пример:  
+ You should use absolute path names, or use standard macro names in the path name. For example:  
   
 ```  
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>  
 ```  
   
- Директива assembly не оказывает влияния в [предварительно преобразованном текстовом шаблоне](../modeling/run-time-text-generation-with-t4-text-templates.md).  
+ The assembly directive has no effect in a [preprocessed text template](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
- Дополнительные сведения см. в разделе [директива Assembly T4](../modeling/t4-assembly-directive.md).  
+ For more information, see [T4 Assembly Directive](../modeling/t4-assembly-directive.md).  
   
-### <a name="namespaces"></a>Пространства имен  
- Директива import соответствует выражению `using` в C# или выражению `imports` в Visual Basic. Она позволяет ссылаться на типы в коде, не используя полное имя:  
+### <a name="namespaces"></a>Namespaces  
+ The import directive is the same as the `using` clause in C# or the `imports` clause in Visual Basic. It allows you to refer to types in your code without using a fully qualified name:  
   
 ```  
 <#@ import namespace="System.Xml" #>  
 ```  
   
- Число используемых директив `assembly` и `import` не ограничено. Их нужно размещать до блоков управления и текста.  
+ You can use as many `assembly` and `import` directives as you want. You must place them before text and control blocks.  
   
- Дополнительные сведения см. в разделе [директива Import T4](../modeling/t4-import-directive.md).  
+ For more information, see [T4 Import Directive](../modeling/t4-import-directive.md).  
   
-###  <a name="a-nameincludea-including-code-and-text"></a><a name="Include"></a>Включение кода и текста  
- Директива `include` вставляет текст из другого файла шаблона. Например, эта директива вставляет содержимое файла `test.txt`:  
+###  <a name="Include"></a> Including code and text  
+ The `include` directive inserts text from another template file. For example, this directive inserts the content of `test.txt`.  
   
  `<#@ include file="c:\test.txt" #>`  
   
- Включенное содержимое обрабатывается почти так же, как если бы оно было частью включающего текстового шаблона. При этом можно включить файл, содержащий блок возможностей класса `<#+...#>`, даже если за директивой include следуют обычный текст и стандартные блоки управления.  
+ The included content is processed almost as if it were part of the including text template. However, you can include a file that contains a class feature block `<#+...#>` even if the include directive is followed by ordinary text and standard control blocks.  
   
- Дополнительные сведения см. в разделе [директива Include T4](../modeling/t4-include-directive.md).  
+ For more information, see [T4 Include Directive](../modeling/t4-include-directive.md).  
   
-### <a name="utility-methods"></a>Служебные методы  
- Существует несколько методов, таких как `Write()`, которые всегда можно использовать в блоке управления. Они включают методы, помогающие создать отступы для вывода или отчеты об ошибках.  
+### <a name="utility-methods"></a>Utility methods  
+ There are several methods such as `Write()` that are always available to you in a control block. They include methods for helping you indent the output, and for reporting errors.  
   
- Кроме того, вы можете создать собственный набор служебных методов.  
+ You can also write your own set of utility methods.  
   
- Дополнительные сведения см. в разделе [служебные методы для текстовых шаблонов](../modeling/text-template-utility-methods.md).  
+ For more information, see [Text Template Utility Methods](../modeling/text-template-utility-methods.md).  
   
-## <a name="transforming-data-and-models"></a>Преобразование данных и моделей  
- Наиболее полезная сфера применения текстовых шаблонов — создание материалов на основе содержимого источника, такого как модель, база данных или файл данных. Шаблон извлекает данные и изменяет их формат. Коллекция шаблонов может преобразовать подобный источник в несколько файлов.  
+## <a name="transforming-data-and-models"></a>Transforming Data and Models  
+ The most useful application for a text template is to generate material based on the content of a source such as a model, database, or data file. Your template extracts and reformats the data. A collection of templates can transform such a source into multiple files.  
   
- Существует несколько способов считывания исходного файла.  
+ There are several approaches to reading the source file.  
   
- **Чтение файла в текстовом шаблоне**. Это самый простой способ получения данных в шаблоне:  
+ **Read a file in the text template**. This is simplest way to get data into the template:  
   
 ```  
 <#@ import namespace="System.IO" #>  
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...  
 ```  
   
- **Загрузка файла как модели с поддержкой перемещения**. Более эффективный способ — это чтение данных как модели, по которой может перемещаться код текстового шаблона. Например, можно загрузить XML-файл и выполнять навигацию по этому файлу с помощью выражений XPath. Можно также использовать [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765) для создания набора классов, с помощью которых можно считывать XML-данных.  
+ **Load a file as a navigable model**. A more powerful method is to read the data as a model, which your text template code can navigate. For example, you can load an XML file and navigate it with XPath expressions. You could also use [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765) to create a set of classes with which you can read the XML data.  
   
- **Редактирование файла модели в схему или форму.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]предоставляет средства, позволяющие редактировать модель как схему или форму Windows. Это упрощает обсуждение модели с пользователями созданного приложения. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] также создает набор строго типизированных классов, отражающих структуру модели. Дополнительные сведения см. в разделе [создание кода из доменного языка](../modeling/generating-code-from-a-domain-specific-language.md).  
+ **Edit the model file in a diagram or form.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] provides tools that let you edit a model as a diagram or Windows form. This makes it easier to discuss the model with users of the generated application. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] also creates a set of strongly-typed classes that reflect the structure of the model. For more information, see [Generating Code from a Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md).  
   
-### <a name="relative-file-paths-in-design-time-templates"></a>Относительные пути файлов в шаблонах времени разработки  
- В [текстового шаблона времени разработки](../modeling/design-time-code-generation-by-using-t4-text-templates.md), чтобы ссылаться на файл в расположение относительно текстового шаблона, используйте `this.Host.ResolvePath()`. Кроме того, необходимо задать выражение `hostspecific="true"` в директиве `template`:  
+### <a name="relative-file-paths-in-design-time-templates"></a>Relative file paths in design-time templates  
+ In a [design-time text template](../modeling/design-time-code-generation-by-using-t4-text-templates.md), if you want to reference a file in a location relative to the text template, use `this.Host.ResolvePath()`. You must also set `hostspecific="true"` in the `template` directive:  
   
-```c#  
+```csharp  
 <#@ template hostspecific="true" language="C#" #>  
 <#@ output extension=".txt" #>  
 <#@ import namespace="System.IO" #>  
@@ -273,24 +274,24 @@ Content of MyFile.txt is:
   
 ```  
   
- Можно также получить другие службы, предоставляемые узлом. Дополнительные сведения см. в разделе [доступ к Visual Studio или другим основным приложениям из шаблона](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+ You can also obtain other services that are provided by the host. For more information, see [Accessing Visual Studio or other Hosts from a Template](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
   
-### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Текстовые шаблоны времени разработки выполняются в отдельном домене приложения  
- Следует иметь в виду, [текстового шаблона времени разработки](../modeling/design-time-code-generation-by-using-t4-text-templates.md) выполняется в домене приложения, отдельном от основного приложения. В большинстве случаев это неважно, однако вы можете столкнуться с ограничениями в некоторых сложных случаях. Например, если нужно передать данные в шаблон или из него, используя отдельную службу, эта служба должна предоставить сериализуемый API.  
+### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Design-time Text Templates run in a separate AppDomain  
+ You should be aware that a [design-time text template](../modeling/design-time-code-generation-by-using-t4-text-templates.md) runs in an AppDomain that is separate from the main application. In most cases this is not important, but you might discover restrictions in certain complex cases. For example, if you want to pass data in or out of the template from a separate service, then the service must provide a serializable API.  
   
- (Это не касается [текстовый шаблон времени выполнения](../modeling/run-time-text-generation-with-t4-text-templates.md), которые предоставляют код, компилируемый вместе с остальной части кода.)  
+ (This isn't true of a [run-time text template](../modeling/run-time-text-generation-with-t4-text-templates.md), which provides code that is compiled along with the rest of your code.)  
   
-## <a name="editing-templates"></a>Редактирование шаблонов  
- Специализированные редакторы текстовых шаблонов можно загрузить из каталога диспетчера расширений в Интернете. На **средства** меню, щелкните **Диспетчер расширений**. Щелкните **в Интернете**, а затем воспользуйтесь средством поиска.  
+## <a name="editing-templates"></a>Editing Templates  
+ Specialized text template editors can be downloaded from the Extension Manager Online Gallery. On the **Tools** menu, click **Extension Manager**. Click **Online Gallery**, and then use the search tool.  
   
-## <a name="related-topics"></a>См. также  
+## <a name="related-topics"></a>Related topics  
   
-|Задача|Раздел|  
+|Task|Topic|  
 |----------|-----------|  
-|Создание шаблона.|[Рекомендации по написанию текстовых шаблонов T4](../modeling/guidelines-for-writing-t4-text-templates.md)|  
-|Создание текста с помощью программного кода.|[Структура шаблона текста](../modeling/writing-a-t4-text-template.md)|  
-|Создание файлов в решении [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|[Создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|  
-|Запуск создания текста за пределами [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|[Создание файлов с помощью служебной программы TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|  
-|Преобразование данных в форме доменного языка.|[Создание кода из доменного языка](../modeling/generating-code-from-a-domain-specific-language.md)|  
-|Написание процессоров директив для преобразования собственных источников данных.|[Настройка преобразования текста T4](../modeling/customizing-t4-text-transformation.md)|
+|Writing a template.|[Guidelines for Writing T4 Text Templates](../modeling/guidelines-for-writing-t4-text-templates.md)|  
+|Generate text by using program code.|[Text Template Structure](../modeling/writing-a-t4-text-template.md)|  
+|Generate files in a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution.|[Design-Time Code Generation by using T4 Text Templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|  
+|Run text generation outside [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|[Generating Files with the TextTransform Utility](../modeling/generating-files-with-the-texttransform-utility.md)|  
+|Transform your data in the form of a domain-specific language.|[Generating Code from a Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md)|  
+|Write directive processors to transform your own data sources.|[Customizing T4 Text Transformation](../modeling/customizing-t4-text-transformation.md)|
 

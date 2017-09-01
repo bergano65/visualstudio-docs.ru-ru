@@ -1,115 +1,134 @@
 ---
-title: "Средства LINQ to SQL в Visual Studio2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: LINQ to SQL Tools in Visual Studio2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
 caps.latest.revision: 10
-caps.handback.revision: 10
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 38892e37b048f93ed9382a470ea7834d6a105cf0
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/22/2017
+
 ---
-# Средства LINQ to SQL в Visual Studio
-LINQ to SQL была первой технологии объектно реляционного сопоставления, выпускаемых корпорацией Майкрософт. Он хорошо работает в основных сценариях и продолжает поддерживаться в Visual Studio, но он больше не является активной разработке. Использование LINQ to SQL, при обслуживании с устаревшим приложением, оно уже используется, или в простых приложений, использующих SQL Server и не требуют сопоставления нескольких таблиц. В общем случае новые приложения должны использовать Entity Framework, когда необходим уровень объектно реляционного сопоставления.  
+# <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL Tools in Visual Studio
+LINQ to SQL was the first object-relational mapping technology released by Microsoft. It works well in basic scenarios and continues to be supported in Visual Studio, but it is no longer under active development. Use LINQ to SQL when maintaining a legacy application that is already using it, or in simple applications that use SQL Server and do not require multi-table mapping. In general, new applications should use the Entity Framework when an object-relational mapper layer is required.  
   
- В Visual Studio вы создания классов LINQ to SQL, представляющих таблицы SQL с помощью [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
+ In Visual Studio, you create LINQ to SQL classes that represent SQL tables by using the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
   
-  [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Имеет две различные области конструктора: область сущностей слева и область методов справа. Область сущностей является основной областью конструктора, отображающей классы сущностей, ассоциации и иерархии наследования. Область методов это область конструктора, отображающая <xref:System.Data.Linq.DataContext> методов, сопоставленных с хранимыми процедурами и функциями.  
+ The [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] has two distinct areas on its design surface: the entities pane on the left, and the methods pane on the right. The entities pane is the main design surface that displays the entity classes, associations, and inheritance hierarchies. The methods pane is the design surface that displays the <xref:System.Data.Linq.DataContext> methods that are mapped to stored procedures and functions.  
   
-  [!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] ([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]) Предоставляет визуальную область конструктора для создания [LINQ to SQL](../Topic/LINQ%20to%20SQL.md) классов сущностей и ассоциаций (связей), основанных на объектах в базе данных. Другими словами, [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] используется для создания модели объекта в приложении, которая сопоставляется с объектами в базе данных. Он также создает строго типизированный объект <xref:System.Data.Linq.DataContext> используемый для отправки и получения данных между классами сущностей и базой данных.  [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Также предоставляет функциональные возможности для сопоставления хранимых процедур и функций <xref:System.Data.Linq.DataContext> методов для возврата данных и заполнения классов сущностей. Наконец, [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] обеспечивает способность проектировать отношения наследования между классами сущностей.  
+ The [!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] ([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]) provides a visual design surface for creating [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) entity classes and associations (relationships) that are based on objects in a database. In other words, the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] is used to create an object model in an application that maps to objects in a database. It also generates a strongly-typed <xref:System.Data.Linq.DataContext> that is used to send and receive data between the entity classes and the database. The [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] also provides functionality to map stored procedures and functions to <xref:System.Data.Linq.DataContext> methods for returning data and populating entity classes. Finally, the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] provides the ability to design inheritance relationships between entity classes.  
   
-## <a name="opening-the-or-designer"></a>Открытие реляционного конструктора объектов  
- Чтобы добавить LINQ модель entity SQL в проект, выберите **& проекта #124; Добавление нового элемента** и выберите  **LINQ to SQL Classes** в списке элементов проекта:  
+## <a name="opening-the-or-designer"></a>Opening the O/R Designer  
+ To add a LINQ to SQL entity model to your project, choose **Project > Add New Item** and then choose  **LINQ to SQL Classes** from the list of project items:  
   
- ![Классы LINQ-SQL](../data-tools/media/raddata-linq-to-sql-classes.png "raddata LINQ to SQL Classes")  
+ ![LINQ to SQL Classes](../data-tools/media/raddata-linq-to-sql-classes.png "raddata LINQ to SQL Classes")  
   
- Visual Studio создает DBML-файла и добавляет его в решение. Это файл сопоставления XML и файлы связанного кода.  
+ Visual Studio creates a .dbml file and adds it to your solution. This is the XML mapping file and its related code files.  
   
- ![Классы LINQ to SQL в обозревателе решений](../data-tools/media/raddata-linq-to-sql-classes-in-solution-explorer.png "raddata LINQ to SQL classes in Solution Explorer")  
+ ![LINQ to SQL classes in Solution Explorer](../data-tools/media/raddata-linq-to-sql-classes-in-solution-explorer.png "raddata LINQ to SQL classes in Solution Explorer")  
   
- При выборе DBML-файла, Visual Studio отображает область конструктора O/R, который позволяет визуально создавать модели. Ниже показан конструктор после перетащили таблицам Northwind Customers и Orders из обозревателя серверов. Обратите внимание, связи между таблицами.  
+ When you select the .dbml file, Visual Studio shows the O/R designer surface that enables you to visually create the model. The following illustration shows the designer after the Northwind Customers and Orders tables have been dragged from Server Explorer. Note the relationship between the tables.  
   
- ![Конструктор LINQ to SQL](../data-tools/media/raddata-linq-to-sql-designer.png "raddata LINQ to SQL Designer")  
+ ![LINQ to SQL Designer](../data-tools/media/raddata-linq-to-sql-designer.png "raddata LINQ to SQL Designer")  
   
 > [!IMPORTANT]
->   [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Представляет простой реляционный модуль сопоставления, поскольку он поддерживает только сопоставляющие отношения 1:1. Другими словами, класс объекта может иметь сопоставляющее отношение только 1:1 с таблицей базы данных или представлением. Сложные сопоставления, например, сопоставление класса сущностей нескольким таблицам, не поддерживается; Сложные сопоставления, использующих платформу Entity Framework. Кроме того, конструктор является односторонним генератором объектного кода. Это означает, что только изменения, которые вы осуществляете на области конструктора, отражаются в файле кода. Изменения, вносимые в файл кода вручную, не отражаются в [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. Любые изменения, которые вы вручную осуществляете в файле кода принимаются, когда конструктор сохраняется и генерируется код. Сведения о том, как добавить пользовательский код и распространить классы, сгенерированные [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], в разделе [как: расширить код, созданный с помощью реляционного конструктора](../Topic/How%20to:%20Extend%20Code%20Generated%20by%20the%20O-R%20Designer.md).  
+>  The [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] is a simple object relational mapper because it supports only 1:1 mapping relationships. In other words, an entity class can have only a 1:1 mapping relationship with a database table or view. Complex mapping, such as mapping an entity class to a joined table, is not supported; use the Entity Framework for complex mapping. Additionally, the designer is a one-way code generator. This means that only changes that you make to the designer surface are reflected in the code file. Manual changes to the code file are not reflected in the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. Any changes that you make manually in the code file are overwritten when the designer is saved and code is regenerated. For information about how to add user code and extend the classes generated by the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], see [How to: Extend Code Generated by the O/R Designer](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).  
   
-## <a name="creating-and-configuring-the-datacontext"></a>Создание и конфигурирование DataContext  
- После добавления **LINQ to SQL Classes** элемент в проект и откройте [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], пустая область конструктора представляет пустой <xref:System.Data.Linq.DataContext> готовая к настройке.  <xref:System.Data.Linq.DataContext> настраивается с помощью сведений о соединении из первого элемента, который был перетащен в область конструктора... Таким образом <xref:System.Data.Linq.DataContext> настраивается с помощью сведения о подключении из первого перемещенного в область конструктора элемента. Дополнительные сведения о <xref:System.Data.Linq.DataContext> см. класс, [методы DataContext (реляционный конструктор)](../data-tools/datacontext-methods-o-r-designer.md).  
+## <a name="creating-and-configuring-the-datacontext"></a>Creating and Configuring the DataContext  
+ After you add a **LINQ to SQL Classes** item to a project and open the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], the empty design surface represents an empty <xref:System.Data.Linq.DataContext> ready to be configured. the <xref:System.Data.Linq.DataContext> is configured with connection information provided by the first item that is dragged onto the design surface.. Therefore, the <xref:System.Data.Linq.DataContext> is configured by using connection information from the first item dropped onto the design surface. For more information about the <xref:System.Data.Linq.DataContext> class see, [DataContext Methods (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).  
   
-## <a name="creating-entity-classes-that-map-to-database-tables-and-views"></a>Создание классов сущностей, которые сопоставляются таблицам БД или представлениям  
- Можно создать классы сущностей, сопоставляемые с таблицами и представлениями, путем перетаскивания таблиц и представлений из **обозревателя**/**обозревателя базы данных** на [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. Как показано в предыдущем разделе <xref:System.Data.Linq.DataContext> настраивается с помощью сведений о соединении из первого элемента, который был перетащен в область конструктора. Если добавляется элемент, который использует другое подключение [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], можно изменить подключение для <xref:System.Data.Linq.DataContext>. Дополнительные сведения см. в разделе [Практическое руководство: создание классов LINQ to SQL сопоставляется с таблицами и представлениями (реляционный конструктор)](../Topic/How%20to:%20Create%20LINQ%20to%20SQL%20classes%20mapped%20to%20tables%20and%20views%20\(O-R%20Designer\).md).  
+## <a name="creating-entity-classes-that-map-to-database-tables-and-views"></a>Creating Entity Classes That Map to Database Tables and Views  
+ You can create entity classes mapped to tables and views by dragging database tables and views from **Server Explorer**/**Database Explorer** onto the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. As indicated in the previous section the <xref:System.Data.Linq.DataContext> is configured with connection information provided by the first item that is dragged onto the design surface. If a subsequent item that uses a different connection is added to the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], you can change the connection for the <xref:System.Data.Linq.DataContext>. For more information, see [How to: Create LINQ to SQL classes mapped to tables and views (O/R Designer)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).  
   
-## <a name="creating-datacontext-methods-that-call-stored-procedures-and-functions"></a>Создание методов DataContext, которые вызывают сохраненные процедуры и функции  
- Можно создать <xref:System.Data.Linq.DataContext> методы, которые вызывают (сопоставляются) хранимые процедуры и функции путем перетаскивания их из **обозревателя**/**обозревателя базы данных** на [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. Хранимые процедуры и функции добавляются [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] как методы <xref:System.Data.Linq.DataContext>.  
+## <a name="creating-datacontext-methods-that-call-stored-procedures-and-functions"></a>Creating DataContext Methods That Call Stored Procedures and Functions  
+ You can create <xref:System.Data.Linq.DataContext> methods that call (are mapped to) stored procedures and functions by dragging them from **Server Explorer**/**Database Explorer** onto the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. Stored procedures and functions are added to the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] as methods of the <xref:System.Data.Linq.DataContext>.  
   
 > [!NOTE]
->  При перетаскивании хранимых процедур и функций из **обозревателя серверов**/**обозревателя базы данных** на [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], тип возвращаемого значения создаваемого <xref:System.Data.Linq.DataContext> метод отличается в зависимости от того, где завершилось перетаскивание элемента. Дополнительные сведения см. в разделе [методы DataContext (реляционный конструктор)](../data-tools/datacontext-methods-o-r-designer.md).  
+>  When you drag stored procedures and functions from **Server Explorer**/**Database Explorer** onto the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], the return type of the generated <xref:System.Data.Linq.DataContext> method differs depending on where you drop the item. For more information, see [DataContext Methods (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).  
   
-## <a name="configuring-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>Конфигурирование DataContext, чтобы использовать сохраненные процедуры для сохранения данных между классами сущностей и базой данных  
- Как упоминалось ранее, можно создать <xref:System.Data.Linq.DataContext> методы, которые вызывают сохраненные процедуры и функции. Кроме того, можно также назначать сохраненные процедуры, которые могут использоваться для поведения по умолчанию при [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] среды выполнения, которая выполняет Вставки, Обновления и удаления. Дополнительные сведения см. в разделе [Практическое руководство: назначение хранимых процедур для выполнения обновлений, вставок и удалений (реляционный конструктор)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).  
+## <a name="configuring-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>Configuring a DataContext to Use Stored Procedures to Save Data Between Entity Classes and a Database  
+ As stated earlier, you can create <xref:System.Data.Linq.DataContext> methods that call stored procedures and functions. Additionally, you can also assign stored procedures that can be used for the default [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] runtime behavior that performs Inserts, Updates, and Deletes. For more information, see [How to: Assign stored procedures to perform updates, inserts, and deletes (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).  
   
-## <a name="inheritance-and-the-or-designer"></a>Наследование и реляционный конструктор объектов  
- Подобно другим объектам, [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] классы могут использовать наследование и выводиться из других классов. В базе данных, отношения наследования создаются несколькими способами. [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] поддерживает концепцию наследования одиночных таблиц, так как именно она обычно осуществляется в реляционных системах. Дополнительные сведения см. в разделе [Практическое руководство: Настройка наследования с использованием реляционного конструктора объектов](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).  
+## <a name="inheritance-and-the-or-designer"></a>Inheritance and the O/R Designer  
+ Like other objects, [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] classes can use inheritance and be derived from other classes. In a database, inheritance relationships are created in several ways. The [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] supports the concept of single-table inheritance as it is often implemented in relational systems. For more information, see [How to: Configure inheritance by using the O/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).  
   
-## <a name="linq-to-sql-queries"></a>Запросы LINQ to SQL  
- Классы сущностей, созданные [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] предназначены для использования с [LINQ (Language-Integrated Query)](../Topic/LINQ%20\(Language-Integrated%20Query\).md). Дополнительные сведения см. в разделе [как: запрос информации](../Topic/How%20to:%20Query%20for%20Information.md).  
+## <a name="linq-to-sql-queries"></a>LINQ to SQL Queries  
+ The entity classes created by the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] are designed for use with [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d). For more information, see [How to: Query for Information](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).  
   
-## <a name="separating-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>Отделение сгенерированного DataContext и кода класса сущностей в иные пространства имен Namespaces  
-  [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Предоставляет **пространство имен контекста** и **пространство имен сущности** Свойства <xref:System.Data.Linq.DataContext>. Эти свойства определяют, какое пространство имен <xref:System.Data.Linq.DataContext> и кода классов сущностей генерируется в. По умолчанию эти свойства являются пустыми и <xref:System.Data.Linq.DataContext> классы сущностей генерируются в пространстве имен приложения. Чтобы сгенерировать код в пространство имен, отличное от пространства имен приложения, введите значение в **пространство имен контекста** или **пространство имен сущности** Свойства.  
+## <a name="separating-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>Separating the Generated DataContext and Entity Class Code into Different Namespaces  
+ The [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] provides the **Context Namespace** and **Entity Namespace** properties on the <xref:System.Data.Linq.DataContext>. These properties determine what namespace the <xref:System.Data.Linq.DataContext> and entity class code is generated into. By default, these properties are empty and the <xref:System.Data.Linq.DataContext> and entity classes are generated into the application's namespace. To generate the code into a namespace other than the application's namespace, enter a value into the **Context Namespace** and/or **Entity Namespace** properties.  
   
-## <a name="in-this-section"></a>Содержание раздела  
- [Методы DataContext (реляционный конструктор)](../data-tools/datacontext-methods-o-r-designer.md)  
- Объясняет, что <xref:System.Data.Linq.DataContext> методы являются и как их создавать.  
+## <a name="in-this-section"></a>In this section  
+ [DataContext Methods (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)  
+ Explains what <xref:System.Data.Linq.DataContext> methods are and how to create them.  
   
- [Наследование классов данных (конструктор O/R)](../data-tools/data-class-inheritance-o-r-designer.md)  
- Описывает концепцию наследования одиночных таблиц и способы ее реализации в [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
+ [Data class inheritance (O/R Designer)](../data-tools/data-class-inheritance-o-r-designer.md)  
+ Describes the concept of single-table inheritance and how it is implemented in the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
   
- [Практическое руководство: Создание LINQ для классов SQL, сопоставленных с таблицами и представлениями (реляционный конструктор)](../Topic/How%20to:%20Create%20LINQ%20to%20SQL%20classes%20mapped%20to%20tables%20and%20views%20\(O-R%20Designer\).md)  
- Описывает способы создания классов сущностей, которые сопоставляются с таблицами и представлениями в базе данных.  
+ [How to: Create LINQ to SQL classes mapped to tables and views (O/R Designer)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)  
+ Describes how to create entity classes that are mapped to tables and views in a database.  
   
- [Практическое руководство: создание ассоциацию (связь) между классами LINQ to SQL (реляционный конструктор)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)  
- Описывает создание отношений между классами сущностей [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)].  
+ [How to: Create an association (relationship) between LINQ to SQL classes (O/R Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)  
+ Describes how to create a relationship between [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] entity classes.  
   
- [Практическое руководство: создание методов DataContext, сопоставленных с хранимыми процедурами и функциями (реляционный конструктор)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)  
- Описывает создание <xref:System.Data.Linq.DataContext> методов, выполняющих хранимые процедуры или функции при их вызове.  
+ [How to: Create DataContext methods mapped to stored procedures and functions (O/R Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)  
+ Describes how to create <xref:System.Data.Linq.DataContext> methods that run stored procedures or functions when they are called.  
   
- [Практическое руководство: назначение хранимых процедур для выполнения обновлений, вставок и удалений (реляционный конструктор)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)  
- Описывает, как настроить <xref:System.Data.Linq.DataContext> Использование хранимых процедур при сохранении данных из сущности классы обратно в базу данных.  
+ [How to: Assign stored procedures to perform updates, inserts, and deletes (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)  
+ Describes how to configure a <xref:System.Data.Linq.DataContext> to use stored procedures when saving data from entity classes back to a database.  
   
- [Практическое руководство: изменить тип возврата метода DataContext (реляционный конструктор)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)  
- Описывает, как задать тип возвращаемого значения <xref:System.Data.Linq.DataContext> метод был типом класса сущностей или автоматически генерируемым типом, созданные в реляционный конструктор объектов.  
+ [How to: Change the return type of a DataContext method (O/R Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)  
+ Describes how to set the return type of a <xref:System.Data.Linq.DataContext> method to be the type of an entity class or an auto-generated type created by the O/R Designer.  
   
- [Практическое руководство: Добавление проверки к классам сущностей](../data-tools/how-to-add-validation-to-entity-classes.md)  
- Описывает способы генерации частичных методов, которые способны добавлять код в процессе изменений свойств и обновлений классов сущностей.  
+ [How to: Add validation to entity classes](../data-tools/how-to-add-validation-to-entity-classes.md)  
+ Describes how to generate partial methods that enable the addition of code during property changes and entity class updates.  
   
- [Практическое руководство: Включение и выключение (конструктор O/R) плюрализации](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)  
- Описывает включение и отключение автоматического переименования классов, которые добавляются в [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
+ [How to: Turn pluralization on and off (O/R Designer)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)  
+ Describes how to turn on and off the automatic renaming of classes that are added to the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
   
- [Практическое руководство: Настройка наследования с использованием реляционного конструктора объектов](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)  
- Описывает способы конфигурирования классов сущностей, используя наследование одиночной таблицы [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
+ [How to: Configure inheritance by using the O/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)  
+ Describes how to configure entity classes using single-table inheritance with the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
   
- [Практическое руководство: расширить код, созданный с помощью конструктора O/R](../Topic/How%20to:%20Extend%20Code%20Generated%20by%20the%20O-R%20Designer.md)  
- Описывает способы и места добавления кода, который не будет переписан, когда изменения в объектах на реляционном конструкторе объектов регенерируют код.  
+ [How to: Extend Code Generated by the O/R Designer](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md)  
+ Describes how and where to add code that will not be overwritten when changes to objects on the O/R Designer regenerate code.  
   
- [Пошаговое руководство: Создание классов LINQ to SQL с помощью наследование одной таблицы (конструктор O/R)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)  
- Предоставляет пошаговые инструкции по конфигурированию классов сущностей, используя наследование одиночной таблицы [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
+ [Walkthrough: Creating LINQ to SQL Classes by Using Single-Table Inheritance (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)  
+ Provides step-by-step instructions for configuring entity classes using single-table inheritance with the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
   
- [Пошаговое руководство: Настройка вставки, обновления и удаления в классах сущностей](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)  
- Пошаговые инструкции по настройке <xref:System.Data.Linq.DataContext> Использование хранимых процедур при сохранении данных из сущности классы обратно в базу данных.  
+ [Walkthrough: Customizing the insert, update, and delete behavior of entity classes](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)  
+ Provides step-by-step instructions for configuring a <xref:System.Data.Linq.DataContext> to use stored procedures when saving data from entity classes back to a database.  
   
-## <a name="reference-content"></a>Справочные материалы  
+## <a name="reference-content"></a>Reference content  
  <xref:System.Linq>  
   
  <xref:System.Data.Linq>  
   
-## <a name="see-also"></a>См. также раздел  
- [Данные средства Visual Studio для .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)   
- [Часто задаваемые вопросы](../Topic/Frequently%20Asked%20Questions.md)   
- [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)   
- [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+## <a name="see-also"></a>See Also  
+ [Visual Studio data tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)   
+ [Frequently Asked Questions](/dotnet/framework/data/adonet/sql/linq/frequently-asked-questions)   
+ [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
+ [Accessing data in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

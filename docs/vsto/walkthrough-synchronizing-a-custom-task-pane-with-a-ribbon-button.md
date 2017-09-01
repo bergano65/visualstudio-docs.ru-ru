@@ -1,183 +1,183 @@
 ---
-title: "Пошаговое руководство. Синхронизация настраиваемой области задач с кнопкой на ленте"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "настраиваемые области задач [разработка решений Office в Visual Studio], отображение и скрытие"
-  - "отображение - настраиваемые области задач"
-  - "лента [разработка решений Office в Visual Studio], настраиваемые области задач"
-  - "выключатели [разработка решений Office в Visual Studio]"
-  - "настраиваемые области задач [разработка решений Office в Visual Studio], синхронизация с кнопкой ленты"
-  - "пользовательские интерфейсы [разработка решений Office в Visual Studio], настраиваемые области задач"
-  - "синхронизация [разработка решений Office в Visual Studio], настраиваемые области задач"
-  - "области задач [разработка решений Office в Visual Studio], отображение и скрытие"
-  - "настраиваемые области задач [разработка решений Office в Visual Studio], создание"
-  - "скрытие - настраиваемые области задач"
-  - "области задач [разработка решений Office в Visual Studio], создание"
-  - "области задач [разработка решений Office в Visual Studio], синхронизация с кнопкой ленты"
+title: 'Walkthrough: Synchronizing a Custom Task Pane with a Ribbon Button | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- custom task panes [Office development in Visual Studio], showing and hiding
+- showing custom task panes
+- Ribbon [Office development in Visual Studio], custom task panes
+- toggle buttons [Office development in Visual Studio]
+- custom task panes [Office development in Visual Studio], synchronizing with Ribbon button
+- user interfaces [Office development in Visual Studio], custom task panes
+- synchronization [Office development in Visual Studio], custom task panes
+- task panes [Office development in Visual Studio], showing and hiding
+- custom task panes [Office development in Visual Studio], creating
+- hiding custom task panes
+- task panes [Office development in Visual Studio], creating
+- task panes [Office development in Visual Studio], synchronizing with Ribbon button
 ms.assetid: 00ce8b1e-1370-42f2-9dc9-609cada392f1
 caps.latest.revision: 38
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 37
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 091d7614ecf9fa764b9099e3ce6350d48a68eeb8
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Синхронизация настраиваемой области задач с кнопкой на ленте
-  В этом пошаговом руководстве демонстрируется, как создать настраиваемую область задач, которую пользователи могут скрывать и отображать, щелкая выключатель на ленте. Рекомендуется всегда создавать элемент пользовательского интерфейса, например кнопку, который пользователи могут нажать для отображения или скрытия настраиваемой области задач. Это необходимо по той причине, что приложения Microsoft Office не имеют встроенных средств для отображения и скрытия настраиваемых областей задач.  
+# <a name="walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button"></a>Walkthrough: Synchronizing a Custom Task Pane with a Ribbon Button
+  This walkthrough demonstrates how to create a custom task pane that users can hide or display by clicking a toggle button on the Ribbon. You should always create a user interface (UI) element, such as a button, that users can click to display or hide your custom task pane, because Microsoft Office applications do not provide a default way for users to show or hide custom task panes.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
- Хотя в этом пошаговом руководстве используется Excel, рассмотренная процедура применима к любым перечисленным выше приложениям.  
+ Although this walkthrough uses Excel specifically, the concepts demonstrated by the walkthrough are applicable to any applications that are listed above.  
   
- В данном пошаговом руководстве рассмотрены следующие задачи:  
+ This walkthrough illustrates the following tasks:  
   
--   проектирование пользовательского интерфейса настраиваемой области задач;  
+-   Designing the UI of the custom task pane.  
   
--   добавление выключателя на ленту;  
+-   Adding a toggle button to the Ribbon.  
   
--   синхронизация выключателя с настраиваемой областью задач.  
+-   Synchronizing the toggle button with the custom task pane.  
   
 > [!NOTE]  
->  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/ru-ru/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   Microsoft Excel или Microsoft [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)].  
+-   Microsoft Excel or Microsoft [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)].  
   
-## Создание проекта надстройки  
- В этом шаге будет создан проект надстройки VSTO для Excel.  
+## <a name="creating-the-add-in-project"></a>Creating the Add-in Project  
+ In this step, you will create an VSTO Add-in project for Excel.  
   
-#### Создание нового проекта  
+#### <a name="to-create-a-new-project"></a>To create a new project  
   
-1.  Создайте проект надстройки Excel с именем **SynchronizeTaskPaneAndRibbon** с помощью шаблона проекта надстройки Excel. Для получения дополнительной информации см. [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Create an Excel Add-in project with the name **SynchronizeTaskPaneAndRibbon**, using the Excel Add-in project template. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] откроет файл с исходным кодом **ThisAddIn.cs** или **ThisAddIn.vb** и добавит проект **SynchronizeTaskPaneAndRibbon** в **обозреватель решений**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] opens the **ThisAddIn.cs** or **ThisAddIn.vb** code file and adds the **SynchronizeTaskPaneAndRibbon** project to **Solution Explorer**.  
   
-## Добавление выключателя на ленту  
- Один из принципов проектирования приложений Office состоит в том, что пользователь всегда должен иметь возможность распоряжаться пользовательским интерфейсом приложения Office. Чтобы позволить пользователю управлять настраиваемой областью задач, можно добавить на ленту выключатель, который будет отображать и скрывать область задач. Чтобы создать выключатель, добавьте в проект элемент **Лента \(визуальный конструктор\)**. Конструктор помогает добавлять и размещать элементы управления, задавать их свойства и обрабатывать связанные с ними события. Для получения дополнительной информации см. [Конструктор лент](../vsto/ribbon-designer.md).  
+## <a name="adding-a-toggle-button-to-the-ribbon"></a>Adding a Toggle Button to the Ribbon  
+ One of the Office application design guidelines is that users should always have control of the Office application UI. To enable users to control the custom task pane, you can add a Ribbon toggle button that shows and hides the task pane. To create a toggle button, add a **Ribbon (Visual Designer)** item to the project. The designer helps you add and position controls, set control properties, and handle control events. For more information, see [Ribbon Designer](../vsto/ribbon-designer.md).  
   
-#### Добавление выключателя на ленту  
+#### <a name="to-add-a-toggle-button-to-the-ribbon"></a>To add a toggle button to the Ribbon  
   
-1.  В меню **Проект** выберите пункт **Добавить новый элемент**.  
+1.  On the **Project** menu, click **Add New Item**.  
   
-2.  В диалоговом окне **Добавление нового элемента** выберите элемент **Лента \(визуальный конструктор\)**.  
+2.  In the **Add New Item** dialog box, select **Ribbon (Visual Designer)**.  
   
-3.  Измените имя новой ленты на **ManageTaskPaneRibbon** и нажмите кнопку **Добавить**.  
+3.  Change the name of the new Ribbon to **ManageTaskPaneRibbon**, and click **Add**.  
   
-     В конструкторе ленты откроется файл **ManageTaskPaneRibbon.cs** или **ManageTaskPaneRibbon.vb** и отобразятся вкладка и группа, используемые по умолчанию.  
+     The **ManageTaskPaneRibbon.cs** or **ManageTaskPaneRibbon.vb** file opens in the Ribbon Designer and displays a default tab and group.  
   
-4.  В конструкторе ленты щелкните группу **group1**.  
+4.  In the Ribbon Designer, click **group1**.  
   
-5.  В окне **Свойства** задайте для свойства **Label** значение **Диспетчер области задач**.  
+5.  In the **Properties** window, set the **Label** property to **Task Pane Manager**.  
   
-6.  Перетащите элемент управления **ToggleButton** со вкладки **Элементы управления ленты Office** на **панели элементов** в группу **Диспетчер области задач**.  
+6.  From the **Office Ribbon Controls** tab of the **Toolbox**, drag a **ToggleButton** onto the **Task Pane Manager** group.  
   
-7.  Нажмите **toggleButton1**.  
+7.  Click **toggleButton1**.  
   
-8.  В окне **Свойства** задайте для свойства **Label** значение **Показать область задач**.  
+8.  In the **Properties** window, set the **Label** property to **Show Task Pane**.  
   
-## Проектирование пользовательского интерфейса настраиваемой области задач  
- Визуальный конструктор для настраиваемых областей задач не предусмотрен, но вы можете разработать собственный элемент управления с желаемой структурой. Далее в этом пошаговом руководстве вы добавите этот пользовательский элемент управления в настраиваемую область задач.  
+## <a name="designing-the-user-interface-of-the-custom-task-pane"></a>Designing the User Interface of the Custom Task Pane  
+ There is no visual designer for custom task panes, but you can design a user control with the layout you want. Later in this walkthrough, you will add the user control to the custom task pane.  
   
-#### Проектирование пользовательского интерфейса настраиваемой области задач  
+#### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>To design the user interface of the custom task pane  
   
-1.  В меню **Проект** выберите команду **Добавить пользовательский элемент управления**.  
+1.  On the **Project** menu, click **Add User Control**.  
   
-2.  В диалоговом окне **Добавление нового элемента** измените имя пользовательского элемента управления на **TaskPaneControl** и нажмите кнопку **Добавить**.  
+2.  In the **Add New Item** dialog box, change the name of the user control to **TaskPaneControl**, and click **Add**.  
   
-     Пользовательский элемент управления откроется в конструкторе.  
+     The user control opens in the designer.  
   
-3.  Перетащите элемент управления **TextBox** со вкладки **Стандартные элементы управления** на **панели элементов** в пользовательский элемент управления.  
+3.  From the **Common Controls** tab of the **Toolbox**, drag a **TextBox** control to the user control.  
   
-## Создание настраиваемой области задач  
- Для создания настраиваемой области задач при запуске надстройки VSTO добавьте пользовательский элемент управления в область задач в обработчике событий <xref:Microsoft.Office.Tools.AddIn.Startup> надстройки VSTO. По умолчанию настраиваемая область задач не будет видима. Позднее в этом руководстве мы добавим код, который будет отображать и скрывать область задач при нажатии пользователем выключателя, добавленного на ленту.  
+## <a name="creating-the-custom-task-pane"></a>Creating the Custom Task Pane  
+ To create the custom task pane when the VSTO Add-in starts, add the user control to the task pane in the <xref:Microsoft.Office.Tools.AddIn.Startup> event handler of the VSTO Add-in. By default, the custom task pane will not be visible. Later in this walkthrough, you will add code that will display or hide the task pane when the user clicks the toggle button you added to the Ribbon.  
   
-#### Создание настраиваемой области задач  
+#### <a name="to-create-the-custom-task-pane"></a>To create the custom task pane  
   
-1.  В **обозревателе решений** разверните **Excel**.  
+1.  In **Solution Explorer**, expand **Excel**.  
   
-2.  Щелкните правой кнопкой мыши файл **ThisAddIn.cs** или **ThisAddIn.vb** и выберите пункт **Просмотреть код**.  
+2.  Right-click **ThisAddIn.cs** or **ThisAddIn.vb** and click **View Code**.  
   
-3.  Добавьте следующий код в класс `ThisAddIn`. Этот код объявляет экземпляр класса `TaskPaneControl` членом класса `ThisAddIn`.  
+3.  Add the following code to the `ThisAddIn` class. This code declares an instance of `TaskPaneControl` as a member of `ThisAddIn`.  
   
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_TaskPaneRibbonSynchronize/CS/ThisAddIn.cs#1)]
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_TaskPaneRibbonSynchronize/VB/ThisAddIn.vb#1)]  
+     [!code-csharp[Trin_TaskPaneRibbonSynchronize#1](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#1)]  [!code-vb[Trin_TaskPaneRibbonSynchronize#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#1)]  
   
-4.  Замените обработчик событий `ThisAddIn_Startup` следующим кодом. Этот код добавляет объект класса `TaskPaneControl` к полю `CustomTaskPanes`, но он не отображает настраиваемую область задач \(по умолчанию свойство <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A> класса <xref:Microsoft.Office.Tools.CustomTaskPane> имеет значение **false**\). Кроме того, код Visual C\# присоединяет обработчик событий к событию <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>.  
+4.  Replace the `ThisAddIn_Startup` event handler with the following code. This code adds the `TaskPaneControl` object to the `CustomTaskPanes` field, but it does not display the custom task pane (by default, the <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A> property of the <xref:Microsoft.Office.Tools.CustomTaskPane> class is **false**). The Visual C# code also attaches an event handler to the <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> event.  
   
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_TaskPaneRibbonSynchronize/CS/ThisAddIn.cs#2)]
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_TaskPaneRibbonSynchronize/VB/ThisAddIn.vb#2)]  
+     [!code-csharp[Trin_TaskPaneRibbonSynchronize#2](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#2)]  [!code-vb[Trin_TaskPaneRibbonSynchronize#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#2)]  
   
-5.  Добавьте следующий метод в класс `ThisAddIn`. Этот метод обрабатывает событие <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>. Когда пользователь нажимает кнопку **Закрыть** \(X\), чтобы закрыть область задач, этот метод обновляет состояние выключателя на ленте.  
+5.  Add the following method to the `ThisAddIn` class. This method handles the <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> event. When the user closes the task pane by clicking the **Close** button (X), this method updates the state of the toggle button on the Ribbon.  
   
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#3](../snippets/csharp/VS_Snippets_OfficeSP/Trin_TaskPaneRibbonSynchronize/CS/ThisAddIn.cs#3)]
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#3](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_TaskPaneRibbonSynchronize/VB/ThisAddIn.vb#3)]  
+     [!code-csharp[Trin_TaskPaneRibbonSynchronize#3](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#3)]  [!code-vb[Trin_TaskPaneRibbonSynchronize#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#3)]  
   
-6.  Добавьте в класс `ThisAddIn` указанное ниже свойство. Оно предоставляет доступ к закрытому объекту `myCustomTaskPane1` другим классам. Позднее в этом руководстве мы добавим код к классу `MyRibbon`, который использует это свойство.  
+6.  Add the following property to the `ThisAddIn` class. This property exposes the private `myCustomTaskPane1` object to other classes. Later in this walkthrough, you will add code to the `MyRibbon` class that uses this property.  
   
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#4](../snippets/csharp/VS_Snippets_OfficeSP/Trin_TaskPaneRibbonSynchronize/CS/ThisAddIn.cs#4)]
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#4](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_TaskPaneRibbonSynchronize/VB/ThisAddIn.vb#4)]  
+     [!code-csharp[Trin_TaskPaneRibbonSynchronize#4](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#4)]  [!code-vb[Trin_TaskPaneRibbonSynchronize#4](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#4)]  
   
-## Скрытие и отображение настраиваемой области задач с помощью выключателя  
- Заключительный шаг — добавить код, который будет отображать или скрывать настраиваемую область задач, когда пользователь щелкает выключатель на ленте.  
+## <a name="hiding-and-showing-the-custom-task-pane-by-using-the-toggle-button"></a>Hiding and Showing the Custom Task Pane by Using the Toggle Button  
+ The last step is to add code that displays or hides the custom task pane when the user clicks the toggle button on the Ribbon.  
   
-#### Отображение или скрытие настраиваемой области задач с помощью выключателя  
+#### <a name="to-display-and-hide-the-custom-task-pane-by-using-the-toggle-button"></a>To display and hide the custom task pane by using the toggle button  
   
-1.  В конструкторе ленты дважды щелкните выключатель **Показать область задач**.  
+1.  In the Ribbon Designer, double-click the **Show Task Pane** toggle button.  
   
-     Visual Studio автоматически создает обработчик событий с именем `toggleButton1_Click`, который обрабатывает событие <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> выключателя. Visual Studio также открывает файл **MyRibbon.cs** или **MyRibbon.vb** в редакторе кода.  
+     Visual Studio automatically generates an event handler named `toggleButton1_Click`, which handles the <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> event of the toggle button. Visual Studio also opens the **MyRibbon.cs** or **MyRibbon.vb** file in the Code Editor.  
   
-2.  Замените обработчик событий `toggleButton1_Click` следующим кодом. Когда пользователь щелкает выключатель, этот код показывает или скрывает настраиваемую область задач в зависимости от того, нажат ли выключатель.  
+2.  Replace the `toggleButton1_Click` event handler with the following code. When the user clicks the toggle button, this code displays or hides the custom task pane, depending on whether the toggle button is pressed or not pressed.  
   
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_TaskPaneRibbonSynchronize/CS/ManageTaskPaneRibbon.cs#5)]
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_TaskPaneRibbonSynchronize/VB/ManageTaskPaneRibbon.vb#5)]  
+     [!code-vb[Trin_TaskPaneRibbonSynchronize#5](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.vb#5)]  [!code-csharp[Trin_TaskPaneRibbonSynchronize#5](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.cs#5)]  
   
-## Тестирование надстройки  
- При запуске этого проекта откроется приложение Excel. При этом настраиваемая область задач не отображается. Чтобы протестировать код, щелкните выключатель на ленте.  
+## <a name="testing-the-add-in"></a>Testing the Add-In  
+ When you run the project, Excel opens without displaying the custom task pane. Click the toggle button on the Ribbon to test the code.  
   
-#### Для тестирования надстройки VSTO выполните следующие действия.  
+#### <a name="to-test-your-vsto-add-in"></a>To test your VSTO Add-in  
   
-1.  Нажмите клавишу F5 для запуска проекта.  
+1.  Press F5 to run your project.  
   
-     Убедитесь в том, что приложение Excel открылось и на ленте появилась вкладка **Надстройки**.  
+     Confirm that Excel opens, and the **Add-Ins** tab appears on the Ribbon.  
   
-2.  Перейдите на вкладку **Надстройки** на ленте.  
+2.  Click the **Add-Ins** tab on the Ribbon.  
   
-3.  В группе **Диспетчер области задач** щелкните выключатель **Показать область задач**.  
+3.  In the **Task Pane Manager** group, click the **Show Task Pane** toggle button.  
   
-     Убедитесь в том, что область задач попеременно отображается и скрывается при нажатии выключателя.  
+     Verify that the task pane is alternately displayed and hidden when you click the toggle button.  
   
-4.  Когда область задач будет видима, нажмите кнопку **Закрыть** \(X\) в углу области задач.  
+4.  When the task pane is visible, click the **Close** button (X) in the corner of the task pane.  
   
-     Убедитесь в том, что выключатель не нажат.  
+     Verify that the toggle button appears to be not pressed.  
   
-## Следующие действия  
- Дополнительные сведения о создании настраиваемых областей задач см. в следующих разделах:  
+## <a name="next-steps"></a>Next Steps  
+ You can learn more about how to create custom task panes from these topics:  
   
--   Создание настраиваемой области задач в надстройке VSTO для другого приложения. Дополнительные сведения о приложениях, поддерживающих настраиваемые области задач, см. в разделе [Настраиваемые области задач](../vsto/custom-task-panes.md).  
+-   Create a custom task pane in an VSTO Add-in for a different application. For more information about the applications that support custom task panes, see [Custom Task Panes](../vsto/custom-task-panes.md).  
   
--   Автоматизация приложения в настраиваемой области задач. Для получения дополнительной информации см. [Руководство. Автоматизация приложения в настраиваемой области задач](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
+-   Automate an application from a custom task pane. For more information, see [Walkthrough: Automating an Application from a Custom Task Pane](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
   
--   Создание настраиваемой области задач для каждого сообщения электронной почты, открываемого в Outlook. Дополнительные сведения см. в разделе [Пошаговое руководство. Отображение в Outlook настраиваемых областей задач с сообщениями электронной почты](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
+-   Create a custom task pane for every e-mail message that is opened in Outlook. For more information, see [Walkthrough: Displaying Custom Task Panes with E-Mail Messages in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
   
-## См. также  
- [Настраиваемые области задач](../vsto/custom-task-panes.md)   
- [Практическое руководство. Добавление настраиваемой панели задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [Руководство. Автоматизация приложения в настраиваемой области задач](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
- [Пошаговое руководство. Отображение в Outlook настраиваемых областей задач с сообщениями электронной почты](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)   
- [Обзор ленты](../vsto/ribbon-overview.md)  
+## <a name="see-also"></a>See Also  
+ [Custom Task Panes](../vsto/custom-task-panes.md)   
+ [How to: Add a Custom Task Pane to an Application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [Walkthrough: Automating an Application from a Custom Task Pane](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
+ [Walkthrough: Displaying Custom Task Panes with E-Mail Messages in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)   
+ [Ribbon Overview](../vsto/ribbon-overview.md)  
   
   

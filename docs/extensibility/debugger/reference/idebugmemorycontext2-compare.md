@@ -1,68 +1,85 @@
 ---
-title: "IDebugMemoryContext2::Compare | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMemoryContext2::Compare"
-helpviewer_keywords: 
-  - "Метод IDebugMemoryContext2::Compare"
-  - "Compare - метод"
+title: IDebugMemoryContext2::Compare | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugMemoryContext2::Compare
+helpviewer_keywords:
+- IDebugMemoryContext2::Compare method
+- Compare method
 ms.assetid: c51b5128-848e-4d8e-b2e9-1161339763c3
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
----
-# IDebugMemoryContext2::Compare
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 775527fd695283b01878b64eae8a0051a3c7522b
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-Сравнивает контекст памяти на каждый контекст в заданном массиве способом, отображаемом которым следует сравнить флаги, возвращая индекс первого контекста, соответствующего.  
+---
+# <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
+Compares the memory context to each context in the given array in the manner indicated by compare flags, returning an index of the first context that matches.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Compare(   
-   CONTEXT_COMPARE        compare,  
-   IDebugMemoryContext2** rgpMemoryContextSet,  
-   DWORD                  dwMemoryContextSetLen,  
-   DWORD*                 pdwMemoryContext  
+```cpp  
+HRESULT Compare(   
+   CONTEXT_COMPARE        compare,  
+   IDebugMemoryContext2** rgpMemoryContextSet,  
+   DWORD                  dwMemoryContextSetLen,  
+   DWORD*                 pdwMemoryContext  
 );  
 ```  
   
-```c#  
+```csharp  
 int Compare(  
-   enum_CONTEXT_COMPARE   compare,   
-   IDebugMemoryContext2[] rgpMemoryContextSet,   
-   uint                   dwMemoryContextSetLen,   
-   out uint               pdwMemoryContext  
+   enum_CONTEXT_COMPARE   compare,   
+   IDebugMemoryContext2[] rgpMemoryContextSet,   
+   uint                   dwMemoryContextSetLen,   
+   out uint               pdwMemoryContext  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Parameters  
  `compare`  
- \[in\] значение из [CONTEXT\_COMPARE](../../../extensibility/debugger/reference/context-compare.md) перечисление, которое указывает тип сравнения.  
+ [in] A value from the [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md) enumeration that determines the type of comparison.  
   
  `rgpMemoryContextSet`  
- \[in\] массив ссылок на [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) объекты для сравнения с.  
+ [in] An array of references to the [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objects to compare against.  
   
  `dwMemoryContextSetLen`  
- \[in\] число контекстов в `rgpMemoryContextSet` массив.  
+ [in] The number of contexts in the `rgpMemoryContextSet` array.  
   
  `pdwMemoryContext`  
- \[out\] возвращает индекс первого контекста памяти, который выполняет сравнение.  
+ [out] Returns the index of the first memory context that satisfies the comparison.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  Возвращает `E_COMPARE_CANNOT_COMPARE` если 2 контекста нельзя сравнивать.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code. Returns `E_COMPARE_CANNOT_COMPARE` if the two contexts cannot be compared.  
   
-## Заметки  
- Отладчик \(DE\) не должен поддерживать все типы сравнений, но он должен поддерживать хотя бы `CONTEXT_EQUAL`"  `CONTEXT_LESS_THAN`"  `CONTEXT_GREATER_THAN` и  `CONTEXT_SAME_SCOPE`.  
+## <a name="remarks"></a>Remarks  
+ A debug engine (DE) does not have to support all types of comparisons, but it must support at least `CONTEXT_EQUAL`, `CONTEXT_LESS_THAN`, `CONTEXT_GREATER_THAN` and `CONTEXT_SAME_SCOPE`.  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)   
- [CONTEXT\_COMPARE](../../../extensibility/debugger/reference/context-compare.md)
+ [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md)

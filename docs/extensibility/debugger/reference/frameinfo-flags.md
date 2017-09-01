@@ -1,5 +1,5 @@
 ---
-title: "FRAMEINFO_FLAGS | Документы Microsoft"
+title: FRAMEINFO_FLAGS | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,18 +30,19 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 9b06b64244d34552c986c26b5df8131f30ef9d06
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d0b9ae5b6b9139715cd28b40dd8eae2294c507a7
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
-Определяет сведения для получения о кадр стека.  
+Specifies the information to retrieve about a stack frame object.  
   
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_FRAMEINFO_FLAGS {  
    FIF_FUNCNAME              = 0x00000001,  
    FIF_RETURNTYPE            = 0x00000002,  
@@ -78,7 +79,7 @@ enum enum_FRAMEINFO_FLAGS {
 typedef DWORD FRAMEINFO_FLAGS;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_FRAMEINFO_FLAGS {  
    FIF_FUNCNAME              = 0x00000001,  
    FIF_RETURNTYPE            = 0x00000002,  
@@ -114,114 +115,114 @@ public enum enum_FRAMEINFO_FLAGS {
 };  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Members  
  FIF_FUNCNAME  
- Инициализация и использование `m_bstrFuncName` поля.  
+ Initialize/use the `m_bstrFuncName` field.  
   
  FIF_RETURNTYPE  
- Инициализация и использование `m_bstrReturnType` поля.  
+ Initialize/use the `m_bstrReturnType` field.  
   
  FIF_ARGS  
- Инициализация и использование `m_bstrArgs` поля.  
+ Initialize/use the `m_bstrArgs` field.  
   
  FIF_LANGUAGE  
- Инициализация и использование `m_bstrLanguage` поля.  
+ Initialize/use the `m_bstrLanguage` field.  
   
  FIF_MODULE  
- Инициализация и использование `m_bstrModule` поля.  
+ Initialize/use the `m_bstrModule` field.  
   
  FIF_STACKRANGE  
- Инициализация и использование `m_addrMin` и `m_addrMax` поля (стек диапазон).  
+ Initialize/use the `m_addrMin` and `m_addrMax` (stack range) fields.  
   
  FIF_FRAME  
- Инициализация и использование `m_pFrame` поля.  
+ Initialize/use the `m_pFrame` field.  
   
  FIF_DEBUGINFO  
- Инициализация и использование `m_fHasDebugInfo` поля.  
+ Initialize/use the `m_fHasDebugInfo` field.  
   
  FIF_STALECODE  
- Инициализация и использование `m_fStaleCode` поля.  
+ Initialize/use the `m_fStaleCode` field.  
   
  FIF_ANNOTATEDFRAME  
- Инициализация и использование `m_fAnnotatedFrame` поля.  
+ Initialize/use the `m_fAnnotatedFrame` field.  
   
  FIF_DEBUG_MODULEP  
- Инициализация и использование `m_pModule` поля.  
+ Initialize/use the `m_pModule` field.  
   
  FIF_FUNCNAME_FORMAT  
- Форматы имени функции. Результат возвращается в `m_bstrFunName` поля и другие поля не заполнены.  
+ Formats the function name. The result is returned in the `m_bstrFunName` field and no other fields are filled out.  
   
  FIF_FUNCNAME_RETURNTYPE  
- Добавляет тип, возвращаемый для `m_bstrFuncName` поля.  
+ Adds the return type to the `m_bstrFuncName` field.  
   
  FIF_FUNCNAME_ARGS  
- Добавляет аргументы `m_bstrFuncName` поле.  
+ Adds the arguments to the `m_bstrFuncName` field.  
   
  FIF_FUNCNAME_LANGUAGE  
- Язык, который добавляет `m_bstrFuncName` поле.  
+ Adds the language to the `m_bstrFuncName` field.  
   
  FIF_FUNCNAME_MODULE  
- Добавляет имя модуля для `m_bstrFuncName` поля.  
+ Adds the module name to the `m_bstrFuncName` field.  
   
  FIF_FUNCNAME_LINES  
- Добавляет число строк `m_bstrFuncName` поле.  
+ Adds the number of lines to the `m_bstrFuncName` field.  
   
  FIF_FUNCNAME_OFFSET  
- Добавляет `m_bstrFuncName` поле Смещение в байтах от начала строки, если `FIF_FUNCNAME_LINES` указано. Если `FIF_FUNCNAME_LINES` не указан, или если номера строк не будут доступны, добавляет смещение в байтах от начала функции.  
+ Adds to the `m_bstrFuncName` field the offset in bytes from the start of the line if `FIF_FUNCNAME_LINES` is specified. If `FIF_FUNCNAME_LINES` is not specified, or if line numbers are not available, adds the offset in bytes from the start of the function.  
   
  FIF_FUNCNAME_ARGS_TYPES  
- Добавляет тип каждого аргумента в `m_bstrFuncName` поле.  
+ Adds the type of each function argument to the `m_bstrFuncName` field.  
   
  FIF_FUNCNAME_ARGS_NAMES  
- Добавляет имя для каждого аргумента `m_bstrFuncName` поле.  
+ Adds the name of each function argument to the `m_bstrFuncName` field.  
   
  FIF_FUNCNAME_ARGS_VALUES  
- Добавляет значение каждого аргумента в `m_bstrFuncName` поле.  
+ Adds the value of each function argument to the `m_bstrFuncName` field.  
   
  FIF_FUNCNAME_ARGS_ALL  
- Добавляет тип, имя и значение всех аргументов `m_bstrFuncName` поле.  
+ Adds the type, name, and value of all arguments to the `m_bstrFuncName` field.  
   
  FIF_ARGS_TYPES  
- Типы аргументов, извлекаются и формат.  
+ The argument types are retrieved and formatted.  
   
  FIF_ARGS_NAMES  
- Имена аргументов, извлекаются и формат.  
+ The argument names are retrieved and formatted.  
   
  FIF_ARGS_VALUES  
- Значения аргументов, извлекаются и формат.  
+ The argument values are retrieved and formatted.  
   
  FIF_ARGS_ALL  
- Получение и форматирование тип, имя и значение всех аргументов.  
+ Retrieve and format the type, name, and value of all arguments.  
   
  FIF_ARGS_NOFORMAT  
- Указывает, что аргументы не быть отформатированы (например, не Добавьте открывающую и закрывающую скобки вокруг списка аргументов и не добавить разделители между аргументами).  
+ Specifies that the arguments are not be formatted (for example, do not add opening and closing parentheses around the argument list nor add a separator between arguments).  
   
  FIF_ARGS_NO_FUNC_EVAL  
- Указывает, не используется вычисление функции (свойство) при получении значения аргументов.  
+ Specifies that function (property) evaluation should not be used when retrieving argument values.  
   
  FIF_FILTER_NON_USER_CODE  
- Ядро отладки — для фильтрации кадров непользовательском коде, так что они не включены.  
+ The debug engine is to filter non-user code frames so they are not included.  
   
  FIF_ARGS_NO_TOSTRING  
- Не разрешать `ToString()` функции оценки или форматирования при возврате аргументов функции.  
+ Do not allow `ToString()` function evaluation or formatting when returning function arguments.  
   
  FIF_DESIGN_TIME_EXPR_EVAL  
- Сведения о кадре должен полученную со размещенной домена приложения, а не главный процесс.  
+ Frame information should be gotten from the hosted app-domain rather than the hosting process.  
   
-## <a name="remarks"></a>Примечания  
- Эти флаги, передаваемые [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) и [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) методы, чтобы указать, какие поля должны быть инициализированы в [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) структур.  
+## <a name="remarks"></a>Remarks  
+ These flags are passed to the [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) and [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) methods to indicate which fields are to be initialized in the [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) structure or structures.  
   
- Эти флаги также используются для указания поля [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) структуры используются и допустимым при возвращении структуры. Эти значения могут объединяться с помощью побитовой операции `OR`.  
+ These flags are also used to indicate which fields of the [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) structure are used and valid when the structure is returned. These values may be combined with a bitwise `OR`.  
   
-## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>См. также  
- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)   
  [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)

@@ -1,85 +1,86 @@
 ---
-title: "Создание ассоциации между сущностями"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.BDC.Association_Dialog"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "подключение к бизнес-данным [разработка приложений SharePoint в Visual Studio], связывание внешних типов контента"
-  - "подключение к бизнес-данным [разработка приложений SharePoint в Visual Studio], связи между сущностями"
-  - "подключение к бизнес-данным [разработка приложений SharePoint в Visual Studio], создание связи"
-  - "подключение к бизнес-данным [разработка приложений SharePoint в Visual Studio], связывание сущностей"
-  - "служба подключения к бизнес-данным [разработка приложений SharePoint в Visual Studio], связывание внешних типов контента"
-  - "служба подключения к бизнес-данным [разработка приложений SharePoint в Visual Studio], связи между сущностями"
-  - "служба подключения к бизнес-данным [разработка приложений SharePoint в Visual Studio], создание связи"
-  - "служба подключения к бизнес-данным [разработка приложений SharePoint в Visual Studio], связывание сущностей"
+title: Creating an Association Between Entities | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.SharePointTools.BDC.Association_Dialog
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- BDC [SharePoint development in Visual Studio], create an assocation
+- Business Data Connectivity service [SharePoint development in Visual Studio], associations between entities
+- BDC [SharePoint development in Visual Studio], associations between entities
+- Business Data Connectivity service [SharePoint development in Visual Studio], create an assocation
+- Business Data Connectivity service [SharePoint development in Visual Studio], associate external content types
+- Business Data Connectivity service [SharePoint development in Visual Studio], relate entities
+- BDC [SharePoint development in Visual Studio], relate entities
+- BDC [SharePoint development in Visual Studio], associate external content types
 ms.assetid: c908448c-13d3-4d2f-89ad-8d709b2958fb
 caps.latest.revision: 15
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 4ce2395e01f29ab8b3ef836a4b7f9ba7c2c6de7f
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Создание ассоциации между сущностями
-  Чтобы определить отношения между сущностями в модели BDC, можно создать ассоциации.  Visual Studio создает методы, предоставляющие потребителям модели сведения о каждой ассоциации.  Эти методы могут использоваться веб\-частями SharePoint, списками или пользовательскими приложениями для отображения отношений данных в пользовательском интерфейсе.  
+# <a name="creating-an-association-between-entities"></a>Creating an Association Between Entities
+  You can define relationships between entities in your Business Data Connectivity (BDC) model by creating associations. Visual Studio generates methods that provide consumers of the model with information about each association. These methods can be consumed by SharePoint web parts, lists, or custom applications to display data relationships in a user interface (UI).  
   
-## Создание ассоциации  
- Чтобы создать ассоциацию, выберите пункт **Ассоциация** на **панели элементов** Visual Studio, затем последовательно щелкните первую сущность \(исходная сущность\) и вторую сущность \(конечная сущность\).  В **Редакторе ассоциаций** можно определять подробности ассоциации.  Для получения дополнительной информации см. [Практическое руководство. Создание ассоциации между сущностями](../sharepoint/how-to-create-an-association-between-entities.md).  
+## <a name="creating-an-association"></a>Creating an Association  
+ Create an association by choosing the **Association** control in the Visual Studio **Toolbox**, choosing the first entity (called the source entity), and then choosing the second entity (called the destination entity). You can define the details of the association in the **Association Editor**. For more information, see [How to: Create an Association between Entities](../sharepoint/how-to-create-an-association-between-entities.md).  
   
-## Методы связи  
- Приложения, такие как веб\-части бизнес\-данных SharePoint используют ассоциации, вызывая методы в классе службы сущности.  Чтобы добавить методы в класс службы сущности, нужно выбрать их в **Редакторе ассоциаций**.  
+## <a name="association-methods"></a>Association Methods  
+ Applications such as SharePoint business data web parts consume associations by calling methods in the service class of an entity. You can add methods to the service class of an entity by selecting them in the **Association Editor**.  
   
- По умолчанию **Редактор ассоциаций** добавляет метод навигации ассоциаций в исходную и конечную сущности.  Метод навигации ассоциаций в исходной сущности позволяет потребителям извлекать список конечных сущностей.  Метод навигации ассоциаций в конечной сущности позволяет потребителям извлекать исходную сущность, которая соотносится с конечной сущностью.  
+ By default, the **Association Editor** adds an Association Navigation method to the source and destination entities. An Association Navigation method in the source entity enables consumers to retrieve a list of destination entities. An Association Navigation method in the destination entity enables consumers to retrieve the source entity that relates to a destination entity.  
   
- Чтобы возвратить необходимую информацию, необходимо добавить код в каждый из этих методов.  Кроме того, можно добавить другие типы методов, чтобы обеспечить поддержку более сложных сценариев.  Дополнительные сведения о каждом из этих методов см. в разделе [Поддерживаемые операции](http://go.microsoft.com/fwlink/?LinkId=169286).  
+ You must add the code to each of these methods to return the appropriate information. You can also add other types of methods to support more advanced scenarios. For more information about each of these methods, see [Supported Operations](http://go.microsoft.com/fwlink/?LinkId=169286).  
   
-## Типы ассоциаций  
- В конструкторе BDC можно создать два типа ассоциаций: ассоциации на основе внешнего ключа и ассоциации без внешнего ключа.  
+## <a name="types-of-associations"></a>Types of Associations  
+ You can create two types of associations in the BDC designer: foreign key-based associations and foreign keyless associations.  
   
-### Ассоциация на основе внешнего ключа  
- Чтобы создать ассоциацию на основе внешнего ключа, можно связать идентификатор в исходной сущности с дескрипторами типа, определенными в конечной сущности.  Это отношение позволяет потребителям модели предоставлять своим пользователям интерфейс с расширенными возможностями.  Например, форма в приложении Outlook, позволяющая пользователю создавать заказ, в котором клиенты отображаются в раскрывающемся списке; либо список заказов в SharePoint, позволяющий пользователям открывать страницу профиля клиента.  
+### <a name="foreign-key-based-association"></a>Foreign Key-Based Association  
+ You can create a foreign key-based association by relating an identifier in the source entity to type descriptors defined in the destination entity. This relationship enables consumers of the model to provide an enhanced UI for their users. For example, a form in Outlook that enables a user to create a sales order that can display customers in a drop-down list; or a list of sales orders in SharePoint that enables users to open a profile page for a customer.  
   
- Чтобы создать ассоциацию на основе внешнего ключа, необходимо связать идентификаторы и дескрипторы типа, имеющие одни и те же имена и типы.  Например, можно создать ассоциацию на основе внешнего ключа между сущностями `Contact` и `SalesOrder`.  Сущность `SalesOrder` возвращает дескриптор типа `ContactID` как часть возвращаемого параметра метода поиска и конкретного метода поиска.  Оба дескриптора типа отображаются в **Редакторе ассоциаций**.  Чтобы создать отношение на основе внешнего ключа между сущностями `Contact` и `SalesOrder`, нужно выбрать идентификатор `ContactID` рядом с каждым из этих полей.  
+ To create a foreign key-based association, relate identifiers and type descriptors that share the same name and type. For example, you might create a foreign key-based association between a `Contact` entity and a `SalesOrder` entity. The `SalesOrder` entity returns a `ContactID` type descriptor as part of the return parameter of Finder or Specific Finder methods. Both type descriptors appear in the **Association Editor**. To create a foreign key-based relationship between the `Contact` entity and `SalesOrder` entity, choose the `ContactID` identifier next to each of these fields.  
   
- Добавьте код, возвращающий коллекцию конечных сущностей, в метод навигации ассоциаций исходной сущности.  В следующем примере показано возвращение заказа для контакта.  
+ Add code to the Association Navigator method of the source entity that returns a collection of destination entities. The following example returns the sales orders for a contact.  
   
- [!code-csharp[SP_BDC#7](../snippets/csharp/VS_Snippets_OfficeSP/sp_bdc/CS/bdcmodel1/contactservice.cs#7)]
- [!code-vb[SP_BDC#7](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_bdc/VB/bdcmodel1/contactservice.vb#7)]  
+ [!code-csharp[SP_BDC#7](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#7)] [!code-vb[SP_BDC#7](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#7)]  
   
- Добавьте код, возвращающий исходную сущность, в метод навигации ассоциаций конечной сущности.  В следующем примере показано возвращение контакта, связанного с заказом.  
+ Add code to the Association Navigator method of the destination entity that returns a source entity. The following example returns the contact that is related to the sales order.  
   
- [!code-csharp[SP_BDC#8](../snippets/csharp/VS_Snippets_OfficeSP/sp_bdc/CS/bdcmodel1/salesorderservice.cs#8)]
- [!code-vb[SP_BDC#8](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_bdc/VB/bdcmodel1/salesorderservice.vb#8)]  
+ [!code-csharp[SP_BDC#8](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#8)] [!code-vb[SP_BDC#8](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#8)]  
   
-### Ассоциация без внешнего ключа  
- Можно создать ассоциацию, не сопоставляя идентификаторы дескрипторам типа поля.  Этот вид ассоциации создается, если исходная сущность не связана прямыми отношениями с конечной сущностью.  Например, таблица `SalesOrderDetail` не имеет внешнего ключа, сопоставляемого первичному ключу в таблице `Contact`.  
+### <a name="foreign-keyless-association"></a>Foreign Keyless Association  
+ You can create an association without mapping identifiers to field type descriptors. Create this kind of association when the source entity does not have a direct relationship with the destination entity. For example, a `SalesOrderDetail` table does not have a foreign key that maps to a primary key in a `Contact` table.  
   
- Если требуется отобразить сведения в таблице `SalesOrderDetail`, связанные с таблицей `Contact`, можно создать ассоциацию без внешнего ключа между сущностями `Contact` и `SalesOrderDetail`.  
+ If you want to display information in the `SalesOrderDetail` table that relates to a `Contact`, you can create a foreign keyless association between the `Contact` entity and `SalesOrderDetail` entity.  
   
- В методе навигации ассоциаций сущности `Contact` необходимо возвратить сущности `SalesOrderDetail`, объединив таблицы или вызвав хранимую процедуру.  
+ In the Association Navigation method of the `Contact` entity, return the `SalesOrderDetail` entities by joining tables, or by calling a stored procedure.  
   
- В следующем примере показано возвращение сведений обо всех заказах путем объединения таблиц.  
+ The following example returns details of all sales orders by joining tables.  
   
- [!code-csharp[SP_BDC#9](../snippets/csharp/VS_Snippets_OfficeSP/sp_bdc/CS/bdcmodel1/contactservice.cs#9)]
- [!code-vb[SP_BDC#9](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_bdc/VB/bdcmodel1/contactservice.vb#9)]  
+ [!code-csharp[SP_BDC#9](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#9)] [!code-vb[SP_BDC#9](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#9)]  
   
- В методе навигации ассоциаций сущности `SalesOrderDetail` необходимо возвратить связанную сущность `Contact`.  Это показано в приведенном ниже примере.  
+ In the Association Navigation method of the `SalesOrderDetail` entity, return the related `Contact`. The following example demonstrates this.  
   
- [!code-csharp[SP_BDC#10](../snippets/csharp/VS_Snippets_OfficeSP/sp_bdc/CS/bdcmodel1/salesorderdetailservice.cs#10)]
- [!code-vb[SP_BDC#10](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_bdc/VB/bdcmodel1/salesorderdetailservice.vb#10)]  
+ [!code-csharp[SP_BDC#10](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#10)] [!code-vb[SP_BDC#10](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#10)]  
   
-## См. также  
- [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Практическое руководство. Создание ассоциации между сущностями](../sharepoint/how-to-create-an-association-between-entities.md)  
+## <a name="see-also"></a>See Also  
+ [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md)   
+ [How to: Create an Association between Entities](../sharepoint/how-to-create-an-association-between-entities.md)  
   
   

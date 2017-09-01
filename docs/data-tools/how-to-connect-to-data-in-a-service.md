@@ -1,68 +1,81 @@
 ---
-title: "Практическое руководство. Подключение к данным в службе | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "данные [Visual Studio], подключение к веб-службам"
-  - "данные [Visual Studio], чтение из веб-служб"
-  - "источники данных, создание из веб-служб"
-  - "чтение данных, из веб-служб"
-  - "веб-службы, как источники данных"
-  - "веб-службы, подключение"
-  - "веб-службы, чтение данных"
+title: 'How to: Connect to Data in a Service | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- data [Visual Studio], connecting to Web services
+- data sources, creating from Web services
+- data [Visual Studio], reading from Web services
+- reading data, from Web services
+- Web services, reading data
+- Web services, as data sources
+- Web services, connecting
 ms.assetid: a6b54353-05fe-4e5c-8631-90231fc95504
 caps.latest.revision: 32
-caps.handback.revision: 30
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 1d5ac117c835addd202e30a8ad4e1b9692202558
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Практическое руководство. Подключение к данным в службе
-Подключение приложения к данным, возвращаемым службой, происходит путем запуска [мастер настройки источника данных](../data-tools/media/data-source-configuration-wizard.png) и выбора **Службы** на странице **Выбор типа источника данных**.  
+# <a name="how-to-connect-to-data-in-a-service"></a>How to: Connect to Data in a Service
+You connect your application to the data returned from a service by running the [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png) and selecting **Service** on the **Choose a Data Source Type** page.  
   
- После завершения работы мастера ссылка на службу добавляется в проект и немедленно становится доступной в [окно "Источники данных"](../Topic/Data%20Sources%20Window.md).  
+ Upon completion of the wizard, a service reference is added to your project and is immediately available in the [Data Sources Window](add-new-data-sources.md).  
   
 > [!NOTE]
->  Элементы, отображаемые в окне **Источники данных**, зависят от информации, которую возвращает служба.  Некоторые службы могут не предоставлять достаточной информации для **Мастера настройки источника данных** при создании связываемых объектов.  Например, если служба возвращает нетипизированный набор данных, то в окне **Источники данных** после завершения работы мастера не появится ни одного элемента.  Это происходит потому, что нетипизированные наборы данных не предусматривают схемы, поэтому у мастера оказывается недостаточно сведений для создания источника данных.  
+>  The items that appear in the **Data Sources** window are dependent on the information that the service returns. Some services might not provide enough information for the **Data Source Configuration Wizard** to create bindable objects. For example, if the service returns an untyped dataset, then no items appear in the **Data Sources Window** upon completing the wizard. This is because untyped datasets do not provide schema, so the wizard does not have enough information to create the data source.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-### Чтобы подключить приложение к службе  
+### <a name="to-connect-your-application-to-a-service"></a>To connect your application to a service  
   
-1.  В меню **Данные** выберите команду **Добавить новый источник данных**.  
+1.  On the **Data** menu, click **Add New Data Source**.  
   
-2.  На странице **Выбор типа источника данных** выберите **Служба** и нажмите кнопку **Далее**.  
+2.  Select **Service** on the **Choose a Data Source Type** page, and then click **Next**.  
   
-3.  Введите адрес службы, которую следует использовать. или щелкните **Найти**, чтобы найти службы в текущем решении, а затем нажмите кнопку **Перейти**.  
+3.  Enter the address of the service you want to use, or click **Discover** to locate services in the current solution, and then click **Go**.  
   
-4.  Дополнительно можно задать новое **пространство имен** вместо значения по умолчанию.  
+4.  Optionally, a new **Namespace** can be typed in place of the default value.  
   
     > [!NOTE]
-    >  Щелкните пункт **Дополнительно** для открытия диалогового окна [Диалоговое окно "Настроить ссылку на службу"](../data-tools/configure-service-reference-dialog-box.md).  
+    >  Click **Advanced** to open the [Configure Service Reference Dialog Box](../data-tools/configure-service-reference-dialog-box.md).  
   
-5.  Нажмите кнопку **ОК**, чтобы добавить ссылку на службу в проект.  
+5.  Click **OK** to add a service reference to your project.  
   
-6.  Нажмите кнопку **Готово**.  
+6.  Click **Finish**.  
   
-     Источник данных добавится в окно  **Источники данных**.  
+     The data source is added to the **Data Sources** window.  
   
-## Следующие шаги  
+## <a name="next-steps"></a>Next Steps  
   
-#### Добавление функциональных возможностей в приложение  
+#### <a name="to-add-functionality-to-your-application"></a>To add functionality to your application  
   
--   Выберите элемент в окне **Источники данных** и перетащите его в форму для создания присоединенных элементов управления.  Дополнительные сведения см. в разделе [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
+-   Select an item in the **Data Sources** window and drag it onto a form to create bound controls. For more information, see [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   
-## См. также  
- [Пошаговое руководство. Привязка элементов управления WPF к службе данных WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)   
- [Пошаговое руководство. Привязка элементов управления Silverlight к службе данных WCF](../Topic/Walkthrough:%20Binding%20Silverlight%20Controls%20to%20a%20WCF%20Data%20Service.md)   
+## <a name="see-also"></a>See Also  
+ [Bind WPF controls to a WCF data service](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)   
  [Windows Communication Foundation Services and WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

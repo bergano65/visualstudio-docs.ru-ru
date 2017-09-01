@@ -1,314 +1,328 @@
 ---
-title: "Пошаговое руководство. Отладка параллельного приложения | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "отладчик, параллельные задачи - пошаговое руководство"
-  - "отладка, параллельные приложения"
-  - "параллельные приложения, отладка [C#]"
-  - "параллельные приложения, отладка [C++]"
-  - "параллельные приложения, отладка [Visual Basic]"
-  - "окно инструментов параллельных стеков"
-  - "окно инструментов параллельных задач"
+title: 'Walkthrough: Debugging a Parallel Application | Microsoft Docs'
+ms.custom: H1HackMay2017
+ms.date: 05/18/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugger, parallel tasks walkthrough
+- parallel stacks toolwindow
+- parallel tasks toolwindow
+- parallel applications, debugging [C++]
+- debugging, parallel applications
+- parallel applications, debugging [Visual Basic]
+- parallel applications, debugging [C#]
 ms.assetid: 2820ac4c-c893-4d87-8c62-83981d561493
 caps.latest.revision: 28
-caps.handback.revision: 28
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Пошаговое руководство. Отладка параллельного приложения
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 70301ddf35e675d2d187346f4c0e77f034576c14
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
-В этом пошаговом руководстве описывается использование окон **Параллельные задачи** и **Параллельные стеки** для отладки параллельного приложения.  Эти окна помогают понять и проверить поведение во время выполнения кода, который использует [Task Parallel Library \(TPL\)](../Topic/Task%20Parallel%20Library%20\(TPL\).md) или [Среда выполнения с параллелизмом](/visual-cpp/parallel/concrt/concurrency-runtime).  Примеры кода, приведенные в этом пошаговом руководстве, имеют встроенные точки останова.  Возможности диалоговых окон **Параллельные задачи** и **Параллельные стеки** показаны после прерывания выполнения программы.  
+---
+# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Walkthrough: Debugging a Parallel Application in Visual Studio
+This walkthrough shows how to use the **Parallel Tasks** and **Parallel Stacks** windows to debug a parallel application. These windows help you understand and verify the runtime behavior of code that uses the [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) or the [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime). This walkthrough provides sample code that has built-in breakpoints. After the code breaks, the walkthrough shows how to use the **Parallel Tasks** and **Parallel Stacks** windows to examine it.  
   
- В этом пошаговом руководстве рассматриваются следующие задачи:  
+ This walkthrough teaches these tasks:  
   
--   Просмотр стеков вызовов всех потоков в одном представлении.  
+-   How to view the call stacks of all threads in one view.  
   
--   Просмотр списка экземпляров `System.Threading.Tasks.Task`, созданных в приложении.  
+-   How to view the list of `System.Threading.Tasks.Task` instances that are created in your application.  
   
--   Просмотр активных стеков вызовов задач вместо потоков.  
+-   How to view the real call stacks of tasks instead of threads.  
   
--   Переход к коду из окон **Параллельные стеки** и **Параллельные задачи**.  
+-   How to navigate to code from the **Parallel Tasks** and **Parallel Stacks** windows.  
   
--   Работа функций группирования, масштабирования и прочих связанных функций в окнах.  
+-   How the windows cope with scale through grouping, zooming, and other related features.  
   
-## Обязательные компоненты  
- Предполагается, что режим **Только мой код** включен.  В меню **Сервис** выберите пункт **Параметры**, разверните узел **Отладка**, выберите пункт **Общие** и затем установите флажок **Включить режим "Только мой код" \(только управляемый код\)**.  Если эта функция не задана, можно продолжить выполнение инструкций настоящего пошагового руководства, однако полученные результаты могут отличаться от описанных здесь.  
+## <a name="prerequisites"></a>Prerequisites  
+ This walkthrough assumes that **Just My Code** is enabled (it is enabled by default in more recent versions of Visual Studio). On the **Tools** menu, click **Options**, expand the **Debugging** node, select **General**, and then select **Enable Just My Code (Managed only)**. If you do not set this feature, you can still use this walkthrough, but your results may differ from the illustrations.  
   
-## Пример на языке C\#  
- При использовании примера для C\# предполагается, что внешний код является скрытым.  Для переключения между режимами отображения внешнего кода щелкните правой кнопкой мыши заголовок столбца **Имя** окна **Стек вызовов** и затем установите или снимите флажок **Показать внешний код**.  Если эта функция не задана, можно продолжить выполнение инструкций настоящего пошагового руководства, однако полученные результаты могут отличаться от описанных здесь.  
+## <a name="c-sample"></a>C# Sample  
+ If you use the C# sample, this walkthrough also assumes that External Code is hidden. To toggle whether external code is displayed, right-click the **Name** table header of the **Call Stack** window, and then select or clear **Show External Code**. If you do not set this feature, you can still use this walkthrough, but your results may differ from the illustrations.  
   
-## Пример на языке C\+\+  
- При использовании примера для языка C\+\+ можно пропускать ссылки на внешний код, приведенные в данном разделе.  Внешний код применяется только к примеру для языка C\#.  
+## <a name="c-sample"></a>C++ Sample  
+ If you use the C++ sample, you can ignore references to External Code in this topic. External Code only applies to the C# sample.  
   
-## Рисунки  
- Рисунки, приведенные в настоящем разделе, получены на двухъядерном компьютере, на котором выполняется пример C\#.  Для выполнения инструкций настоящего пошагового руководства можно использовать другие конфигурации, однако диалоговые окна могут отличаться от приведенных в руководстве.  
+## <a name="illustrations"></a>Illustrations  
+ The illustrations in this topic recorded on a quad core computer running the C# sample. Although you can use other configurations to complete this walkthrough, the illustrations may differ from what is displayed on your computer.  
   
-## Создание примера проекта  
- Пример кода, приведенный в данном пошаговом руководстве, предназначен для приложения, которое не выполняет никаких действий.  Цель данного примера кода: понять использование окон инструментов для отладки параллельного приложения.  
+## <a name="creating-the-sample-project"></a>Creating the Sample Project  
+ The sample code in this walkthrough is for an application that does nothing. The goal is just to understand how to use the tool windows to debug a parallel application.  
   
-#### Создание примера проекта  
+#### <a name="to-create-the-sample-project"></a>To create the sample project  
   
-1.  В меню **Файл** окна Visual Studio выберите команду **Создать** и щелкните **Проект**.  
+1.  In Visual Studio, on the **File** menu, point to **New** and then click **Project**.  
   
-2.  В области **Установленные шаблоны** выберите Visual C\#, Visual Basic или Visual C\+\+.  При использовании управляемых языков убедитесь, что в окне среды отображается [!INCLUDE[net_v40_short](../debugger/includes/net_v40_short_md.md)].  
+2.  In the **Installed Templates** pane, select either Visual C#, Visual Basic, or Visual C++. For the managed languages, ensure that [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] is displayed in the framework box.  
   
-3.  Выберите **Консольное приложение**, а затем нажмите кнопку **ОК**.  Оставайтесь в конфигурации отладки, которая используется по умолчанию.  
+3.  Select **Console Application** and then click **OK**. Remain in Debug configuration, which is the default.  
   
-4.  Откройте CPP\-файл, CS\-файл или VB\-файл кода в проекте.  Удалите его содержимое, чтобы создать пустой файл кода.  
+4.  Open the .cpp, .cs, or .vb code file in the project. Delete its contents to create an empty code file.  
   
-5.  Вставьте в пустой файл кода следующий код для данного языка.  
+5.  Paste the following code for your chosen language into the empty code file.  
   
- [!code-cs[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
- [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
- [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]  
+ [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)] [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)] [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]  
   
-1.  В меню **Файл** выберите команду **Сохранить все**.  
+1.  On the **File** menu, click **Save All**.  
   
-2.  Выберите пункт **Перестроить решение** в меню **Построение**.  
+2.  On the **Build** menu, click **Rebuild Solution**.  
   
-     Обратите внимание, что имеются четыре вызова `Debugger.Break` \(`DebugBreak` в примере C\+\+\). Следовательно, установка точек останова не требуется. При выполнении приложения отладчик будет вызываться до 4 раз.  
+     Notice that there are four calls to `Debugger.Break` (`DebugBreak` in the C++ sample) Therefore, you do not have to insert breakpoints; just running the application will cause it to break in the debugger up to four times.  
   
-## Использование окна "Параллельные стеки". Представление "Потоки"  
- В меню **Отладка** щелкните **Начать отладку**.  Дождитесь попадания в первую точку останова.  
+## <a name="using-the-parallel-stacks-window-threads-view"></a>Using the Parallel Stacks Window: Threads View  
+ On the **Debug** menu, click **Start Debugging**. Wait for the first breakpoint to be hit.  
   
-#### Просмотр стека вызовов одного потока  
+#### <a name="to-view-the-call-stack-of-a-single-thread"></a>To view the call stack of a single thread  
   
-1.  В меню **Отладка** выберите пункт **Окна** и затем щелкните **Потоки**.  Закрепите окно **Потоки** в верхней части окна Visual Studio.  
+1.  On the **Debug** menu, point to **Windows** and then click **Threads**. Dock the **Threads** window at the bottom of Visual Studio.  
   
-2.  В меню **Отладка** наведите указатель на пункт **Окна** и выберите команду **Стек вызовов**.  Закрепите окно **Стек вызовов** в верхней части окна Visual Studio.  
+2.  On the **Debug** menu, point to **Windows** and then click **Call Stack**. Dock the **Call Stack** window at the bottom Visual Studio.  
   
-3.  Дважды щелкните поток в окне **Потоки**, чтобы сделать его текущим.  Рядом с текущими потоками отображается желтая стрелка.  При изменении текущего потока его стек вызовов отображается в окне **Стек вызовов**.  
+3.  Double-click a thread in the **Threads** window to make it current. Current threads have a yellow arrow. When you change the current thread, its call stack is displayed in the **Call Stack** window.  
   
-#### Изучение окна "Параллельные стеки"  
+#### <a name="to-examine-the-parallel-stacks-window"></a>To examine the Parallel Stacks window  
   
-1.  В меню **Отладка** наведите указатель на пункт **Окна** и затем выберите пункт **Параллельные стеки**.  Убедитесь, что в верхнем левом углу выбрано значение **Потоки**.  
+1.  On the **Debug** menu, point to **Windows** and then click **Parallel Stacks**. Make sure that **Threads** is selected in the box at the upper-left corner.  
   
-     С помощью окна **Параллельные стеки** можно одновременно просматривать несколько стеков вызовов в одном представлении.  На следующем рисунке показано окно **Параллельные стеки** над окном **Стек вызовов**.  
+     By using the **Parallel Stacks** window, you can view multiple call stacks at the same time in one view. The following illustration shows the **Parallel Stacks** window above the **Call Stack** window.  
   
-     ![Представление потоков в окне параллельных стеков](../debugger/media/pdb_walkthrough_1.png "PDB\_Walkthrough\_1")  
+     ![Threads view in Parallel Stacks window](../debugger/media/pdb_walkthrough_1.png "PDB_Walkthrough_1")  
   
-     Стек вызовов главного потока отображается в одном окне, а стеки вызовов для других четырех потоков сгруппированы в другом окне.  Четыре потока сгруппированы вместе, поскольку их кадры стека совместно используют одни и те же контексты методов: `A`, `B` и `C`.  Чтобы просмотреть идентификаторы и имена потоков, которые совместно используют одно окно, наведите указатель мыши на заголовок \(**4 потока**\)  Текущий поток выделен полужирным шрифтом, как показано на следующем рисунке.  
+     The call stack of the Main thread appears in one box and the call stacks for the other four threads are grouped in another box. Four threads are grouped together because their stack frames share the same method contexts; that is, they are in the same methods: `A`, `B`, and `C`. To view the thread IDs and names of the threads that share the same box, hover over the header (**4 Threads**). The current thread is displayed in bold, as shown in the following illustration.  
   
-     ![Подсказка с идентификаторами и именами потоков](~/debugger/media/pdb_walkthrough_1a.png "PDB\_Walkthrough\_1A")  
+     ![Tooltip that shows thread IDs and names](../debugger/media/pdb_walkthrough_1a.png "PDB_Walkthrough_1A")  
   
-     Желтая стрелка указывает активный кадр стека текущего потока.  Чтобы получить более подробные сведения, наведите указатель мыши.  
+     The yellow arrow indicates the active stack frame of the current thread. To get more information, hover over it  
   
-     ![Подсказка в активном кадре стека](../debugger/media/pdb_walkthrough_1b.png "PDB\_Walkthrough\_1B")  
+     ![Tooltip on active stack frame](../debugger/media/pdb_walkthrough_1b.png "PDB_Walkthrough_1B")  
   
-     Чтобы задать объем сведений, отображаемых для кадров стеков \(**Имена модулей**, **Типы параметров**, **Имена параметров**, **Значения параметров**, **Номера строк** и **Смещение в байтах**\), щелкните правой кнопкой мыши в окне **Стек вызовов**.  
+     You can set how much detail to show for the stack frames (**Module Names**, **Parameter Types**, **Parameter Names**, **Parameter Values**, **Line Numbers** and **Byte Offsets**) by right-clicking in the **Call Stack** window.  
   
-     Синяя рамка вокруг окна указывает, что текущий поток является частью этого окна.  Текущий поток также обозначается полужирным шрифтом в подсказке для кадра стека.  Если дважды щелкнуть главный поток в окне "Потоки", синяя рамка в окне **Параллельные стеки** переместится на поле, содержащее этот поток.  
+     A blue highlight around a box indicates that the current thread is part of that box. The current thread is also indicated by the bold stack frame in the tooltip. If you double-click the Main thread in the Threads window, you can observe that the blue highlight in the **Parallel Stacks** window moves accordingly.  
   
-     ![Выделенный главный поток в окне параллельных стеков](~/debugger/media/pdb_walkthrough_1c.png "PDB\_Walkthrough\_1C")  
+     ![Highlighted main thread in Parallel Stacks window](../debugger/media/pdb_walkthrough_1c.png "PDB_Walkthrough_1C")  
   
-#### Возобновление выполнения до второй точки останова  
+#### <a name="to-resume-execution-until-the-second-breakpoint"></a>To resume execution until the second breakpoint  
   
-1.  Чтобы возобновить выполнение до попадания во вторую точку останова, в меню **Отладка** выберите пункт **Продолжить**.  На следующем рисунке показано дерево потоков для второй точки останова.  
+1.  To resume execution until the second breakpoint is hit, on the **Debug** menu, click **Continue**. The following illustration shows the thread tree at the second breakpoint.  
   
-     ![Окно параллельных стеков с несколькими ветвями](../debugger/media/pdb_walkthrough_2.png "PDB\_Walkthrough\_2")  
+     ![Parallel Stacks window that shows many branches](../debugger/media/pdb_walkthrough_2.png "PDB_Walkthrough_2")  
   
-     В первой точке останова все четыре потока были получены от методов S.A, S.B и S.C.  Эти сведения все еще отображаются в окне **Параллельные стеки**, однако четыре потока создали дополнительные потоки.  Один из них продолжает выполнение сначала в S.D, а затем в S.E.  Другой продолжает выполнение в S.F, S.G и S.H.  Два других потока продолжают выполнение в S.I и S.J и один из них перешел в S.K, а другой продолжает выполнение во внешнем коде, не принадлежащем пользователю.  
+     At the first breakpoint, four threads all went from S.A to S.B to S.C methods. That information is still visible in the **Parallel Stacks** window, but the four threads have progressed further. One of them continued to S.D and then S.E. Another continued to S.F, S.G, and S.H. Two others continued to S.I and S.J, and from there one of them went to S.K and the other continued to non-user External Code.  
   
-     Чтобы просмотреть идентификаторы потоков, наведите указатель мыши на заголовок окна, например **1 поток** или **2 потока**.  Чтобы узнать идентификаторы и другие сведения о кадре, наводите указатель мыши на кадры стека.  Синяя рамка указывает текущий поток, а желтая стрелка — активный кадр стека текущего потока.  
+     You can hover over the box header, for example, **1 Thread** or **2 Threads**, to see the thread IDs of the threads. You can hover over stack frames to see thread IDs plus other frame details. The blue highlight indicates the current thread and the yellow arrow indicates the active stack frame of the current thread.  
   
-     Значок с перекрывающейся синей и красной волнистыми линиями указывает активные кадры стека потоков, не являющихся текущими.  В окне **Стек вызовов** дважды щелкните S.B, чтобы переключить кадры.  Текущий кадр стека текущего потока показан в окне **Параллельные стеки** с помощью зеленой круговой стрелки.  
+     The cloth-threads icon (overlapping blue and red waved lines) indicate the active stack frames of the noncurrent threads. In the **Call Stack** window, double-click S.B to switch frames. The **Parallel Stacks** window indicates the current stack frame of the current thread by using a green curved arrow icon.  
   
-     В окне **Потоки** переключитесь между потоками и обратите внимание, что представление в окне **Параллельные стеки** обновилось.  
+     In the **Threads** window, switch between threads and observe that the view in the **Parallel Stacks** window is updated.  
   
-     Для переключения на другой поток или кадр другого потока используйте команды контекстного меню в окне **Параллельные стеки**.  Например, щелкните правой кнопкой мыши S.J, выберите команду **Перейти к кадру** и затем выберите команду.  
+     You can switch to another thread, or to another frame of another thread, by using the shortcut menu in the **Parallel Stacks** window. For example, right-click S.J, point to **Switch To Frame**, and then click a command.  
   
-     ![Путь выполнения параллельных стеков](../debugger/media/pdb_walkthrough_2b.png "PDB\_Walkthrough\_2B")  
+     ![Parallel Stacks Path of Execution](../debugger/media/pdb_walkthrough_2b.png "PDB_Walkthrough_2B")  
   
-     Щелкните правой кнопкой мыши S.C и выберите команду **Перейти к кадру**.  Напротив одной из команд установлен флажок, который указывает кадр стека текущего потока.  Можно переключиться в кадр того же потока \(зеленая стрелка будет перемещена\) или можно переключиться в другой поток \(синяя рамка также будет перемещена\).  На следующем рисунке показаны команды вложенного меню.  
+     Right-click S.C and point to **Switch To Frame**. One of the commands has a check mark that indicates the stack frame of the current thread. You can switch to that frame of the same thread (just the green arrow will move) or you can switch to the other thread (the blue highlight will also move). The following illustration shows the submenu.  
   
-     ![Меню стеков с двумя параметрами в потоке C, в то время как текущим является поток J](../debugger/media/pdb_walkthrough_3.png "PDB\_Walkthrough\_3")  
+     ![Stacks menu with 2 options on C while J is current](../debugger/media/pdb_walkthrough_3.png "PDB_Walkthrough_3")  
   
-     Если контекст метода связан только с одним кадром стека, отображается заголовок окна **1 поток**. Для переключения в кадр стека дважды щелкните его.  При двойном щелчке контекста метода, имеющего более 1 кадра стека, связанного с ним, автоматически откроется всплывающее меню.  При наведении указателя мыши на контексты методов справа отображается черный треугольник.  Контекстное меню также отображается при щелчке этого треугольника.  
+     When a method context is associated with just one stack frame, the box header displays **1 Thread** and you can switch to it by double-clicking. If you double-click a method context that has more than 1 frame associated with it, then the menu automatically pops up. As you hover over the method contexts, notice the black triangle at the right. Clicking that triangle also displays the shortcut menu.  
   
-     В больших приложениях, имеющих множество потоков, можно выделить подмножество потоков.  В окне **Параллельные стеки** могут отображаться стеки вызовов только для отмеченных потоков.  На панели инструментов нажмите кнопку **Показать только отмеченные**, расположенную рядом со списком.  
+     For large applications that have many threads, you may want to focus on just a subset of threads. The **Parallel Stacks** window can display call stacks only for flagged threads. On the toolbar, click the **Show Only Flagged** button next to the list box.  
   
-     ![Окно пустых параллельных стеков и подсказка](../debugger/media/pdb_walkthrough_3a.png "PDB\_Walkthrough\_3A")  
+     ![Empty Parallel Stacks window and tooltip](../debugger/media/pdb_walkthrough_3a.png "PDB_Walkthrough_3A")  
   
-     В окне **Потоки** по очереди отметьте потоки, чтобы просмотреть их стеки вызовов в окне **Параллельные стеки**.  Чтобы отметить потоки, используйте команды контекстного меню или первую ячейку потока.  Чтобы отобразить все потоки, нажмите кнопку **Показать только отмеченные** еще раз.  
+     Next, in the **Threads** window, flag threads one by one to see how their call stacks appear in the **Parallel Stacks** window. To flag threads, use the shortcut menu or the first cell of a thread. Click the **Show Only Flagged** toolbar button again to show all threads.  
   
-#### Возобновление выполнения до третьей точки останова  
+#### <a name="to-resume-execution-until-the-third-breakpoint"></a>To resume execution until the third breakpoint  
   
-1.  Чтобы возобновить выполнение до попадания в третью точку останова, в меню **Отладка** выберите пункт **Продолжить**.  
+1.  To resume execution until the third breakpoint is hit, on the **Debug** menu, click **Continue**.  
   
-     Если в одном методе присутствует несколько потоков, но метод находится не в начале стека вызовов, метод отображается в отдельных окнах.  В примере текущей точкой останова является S.L, которая имеет три потока и отображается в трех окнах.  Дважды щелкните точку останова S.L.  
+     When multiple threads are in the same method but the method was not at the beginning of the call stack, the method appears in different boxes. An example at the current breakpoint is S.L, which has three threads in it and appears in three boxes. Double-click S.L.  
   
-     ![Путь выполнения в окне параллельных стеков](../debugger/media/pdb_walkthrough_3b.png "PDB\_Walkthrough\_3B")  
+     ![Execution path in Parallel Stacks window](../debugger/media/pdb_walkthrough_3b.png "PDB_Walkthrough_3B")  
   
-     Обратите внимание, что S.L выделена полужирным шрифтом в других двух окнах для облегчения поиска.  Если необходимо просмотреть, какие кадры вызываются в S.L, а также какие кадры вызывает она, нажмите кнопку **Представление метода**, расположенную на панели инструментов.  На следующем рисунке показано представление методов окна **Параллельные стеки**.  
+     Notice that S.L is bold in the other two boxes so that you can see where else it appears. If you want to see which frames call into S.L and which frames it calls, click the **Toggle Method View** button on the toolbar. The following illustration shows the method view of The **Parallel Stacks** window.  
   
-     ![Представление методов в окне параллельных стеков](../debugger/media/pdw_walkthrough_4.png "PDW\_Walkthrough\_4")  
+     ![Method view in Parallel Stacks window](../debugger/media/pdw_walkthrough_4.png "PDW_Walkthrough_4")  
   
-     Обратите внимание, как схема расположена на выбранном методе, а также расположение метода в собственном окне схемы в середине представления.  В верхней части окна отображается вызываемый и вызывающий метод.  Нажмите кнопку **Представление метода** еще раз, чтобы отключить этот режим.  
+     Notice how the diagram pivoted on the selected method and positioned it in its own box in the middle of the view. The callees and callers appear on the top and bottom. Click the **Toggle Method View** button again to leave this mode.  
   
-     В контекстном меню окна **Параллельные стеки** также представлены следующие элементы.  
+     The shortcut menu of the **Parallel Stacks** window also has the following other items.  
   
-    -   **Шестнадцатеричный вывод** — переключение между десятичным и шестнадцатеричным представлением чисел в подсказке.  
+    -   **Hexadecimal Display** toggles the numbers in the tooltips between decimal and hexadecimal.  
   
-    -   **Сведения о загрузке символов** и **Параметры символов** — открытие соответствующих диалоговых окон.  
+    -   **Symbol Load Information** and **Symbol Settings** open the respective dialog boxes.  
   
-    -   **К исходному коду** и **К дизассемблированному коду** — переход в редактор для выбранного метода.  
+    -   **Go To Source Code** and **Go To Disassembly** navigate in the editor to the selected method.  
   
-    -   **Показать внешний код** — отображение всех кадров, даже не используемых в пользовательском коде.  Выберите эту команду, чтобы увидеть как расширяется схема для отображения дополнительных кадров \(кадры могут быть затемнены, поскольку для них отсутствуют символы\).  
+    -   **Show External Code** displays all the frames even if they are not in user code. Try it to see the diagram expand to accommodate the additional frames (which may be dimmed because you do not have symbols for them).  
   
-     При наличии объемной схемы и переходе к следующей точке останова может потребоваться автоматическая прокрутка активных кадров стека текущего потока, т. е. просмотр потока, который первым достигает точки останова.  В окне **Параллельные стеки** убедитесь, что кнопка **Автопрокрутка к текущему кадру стека**, расположенная на панели инструментов, нажата.  
+     When you have large diagrams and you step to the next breakpoint, you may want the view to auto scroll to the active stack frame of the current thread; that is, the thread that hit the breakpoint first. In the **Parallel Stacks** window, make sure that the **Auto Scroll to Current Stack Frame** button on the toolbar is on.  
   
-     ![Автоматическая прокрутка в окне параллельных стеков](../debugger/media/pdb_walkthrough_4a.png "PDB\_Walkthrough\_4A")  
+     ![Autoscrolling in the Parallel Stacks window](../debugger/media/pdb_walkthrough_4a.png "PDB_Walkthrough_4A")  
   
-2.  Прежде чем продолжить, в окне **Параллельные стеки** прокрутите схему влево и вниз.  
+2.  Before you continue, in the **Parallel Stacks** window, scroll all the way to the left and all the way down.  
   
-#### Возобновление выполнения до четвертой точки останова  
+#### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>To resume execution until the fourth breakpoint  
   
-1.  Чтобы возобновить выполнение до попадания в четвертую точку останова, в меню **Отладка** выберите пункт **Продолжить**.  
+1.  To resume execution until the fourth breakpoint is hit, on the **Debug** menu, click **Continue**.  
   
-     Обратите внимание, как представление автоматически прокрутило схему в требуемое расположение.  Переключите потоки в окне **Потоки** или переключите кадры стека в окне **Стек вызовов** и обратите внимание, как представление всегда автоматически выполняет прокрутку к требуемому кадру.  Отключите функцию **Автопрокрутка к текущему кадру стека** и просмотрите отличие.  
+     Notice how the view autoscrolled into place. Switch threads in the **Threads** window or switch stack frames in the **Call Stack** window and notice how the view always autoscrolls to the correct frame. Turn off **Auto Scroll to Current Tool Frame** option and view the difference.  
   
-     При наличии больших схем в окне **Параллельные стеки** также удобно воспользоваться функцией **Вид с высоты птичьего полета**.  Для просмотра **Вида с высоты птичьего полета** нажмите кнопку, расположенную между полосами прокрутки в нижнем правом углу окна, как показано на следующем рисунке.  
+     The **Bird's Eye View** also helps with large diagrams in the **Parallel Stacks** window. You can see the **Bird's Eye View** by clicking the button between the scroll bars on the lower-right corner of the window, as shown in the following illustration.  
   
-     ![Вид с высоты птичьего полета в окне параллельных стеков](../debugger/media/pdb_walkthrough_5.png "PDB\_Walkthrough\_5")  
+     ![Bird's&#45;eye view in Parallel Stacks window](../debugger/media/pdb_walkthrough_5.png "PDB_Walkthrough_5")  
   
-     Для быстрого перемещения по схеме переместите прямоугольник в требуемую область.  
+     You can move the rectangle to quickly pan around the diagram.  
   
-     Другой способ перемещения схемы в любом направлении: щелкните по пустой области и перетащите схему в требуемое место.  
+     Another way to move the diagram in any direction is to click a blank area of the diagram and drag it where you want it.  
   
-     Чтобы увеличить или уменьшить схему, нажав и удерживая клавишу CTRL, прокрутите колесико мыши.  Другой способ: на панели инструментов нажмите кнопку "Увеличить" и затем воспользуйтесь средством "Увеличить".  
+     To zoom in and out of the diagram, press and hold CTRL while you move the mouse wheel. Alternatively, click the Zoom button on the toolbar and then use the Zoom tool.  
   
-     ![Увеличенные стеки в окне параллельных стеков](../debugger/media/pdb_walkthrough_5a.png "PDB\_Walkthrough\_5A")  
+     ![Zoomed stacks in Parallel Stacks window](../debugger/media/pdb_walkthrough_5a.png "PDB_Walkthrough_5A")  
   
-     Чтобы просмотреть стеки в направлении сверху вниз вместо направления снизу вверх, в меню **Сервис** выберите пункт **Параметры** и затем установите или снимите флажок в узле **Отладка**.  
+     You can also view the stacks in a top-down direction instead of bottom-up, by clicking the **Tools** menu, clicking **Options**, and then select or clear the option under the **Debugging** node.  
   
-2.  Прежде чем продолжить в меню **Отладка** выберите команду**Остановить отладку**, чтобы завершить выполнение.  
+2.  Before you continue, on the **Debug** menu, click **Stop Debugging** to end execution.  
   
-## Использование окна "Параллельные задачи" и представления "Задачи" окна "Параллельные стеки"  
- Прежде чем продолжить, рекомендуется завершить ранее начатые процедуры.  
+## <a name="using-the-parallel-tasks-window-and-the-tasks-view-of-the-parallel-stacks-window"></a>Using the Parallel Tasks Window and the Tasks View of the Parallel Stacks window  
+ We recommended that you complete the earlier procedures before you continue.  
   
-#### Перезапуск приложения до попадания в первую точку останова  
+#### <a name="to-restart-the-application-until-the-first-breakpoint-is-hit"></a>To restart the application until the first breakpoint is hit  
   
-1.  В меню **Отладка** выберите команду **Начать отладку** и дождитесь попадания в первую точку отладки.  
+1.  On the **Debug** menu, click **Start Debugging** and wait for the first breakpoint to be hit.  
   
-2.  В меню **Отладка** выберите пункт **Окна** и затем щелкните **Потоки**.  Закрепите окно **Потоки** в верхней части окна Visual Studio.  
+2.  On the **Debug** menu, point to **Windows** and then click **Threads**. Dock the **Threads** window at the bottom of Visual Studio.  
   
-3.  В меню **Отладка** наведите указатель на пункт **Окна** и выберите команду **Стек вызовов**.  Закрепите окно **Стек вызовов** в верхней части окна Visual Studio.  
+3.  On the **Debug** menu, point to **Windows** and click **Call Stack**. Dock the **Call Stack** window at the bottom Visual Studio.  
   
-4.  Дважды щелкните поток в окне **Потоки**, чтобы сделать его текущим.  Рядом с текущими потоками должна отображаться желтая стрелка.  При изменении текущего потока сведения в других окнах обновляются.  Далее изучим содержимое окна "Параллельные задачи".  
+4.  Double-click a thread in the **Threads** window to makes it current. Current threads have the yellow arrow. When you change the current thread, the other windows are updated. Next, we will examine tasks.  
   
-5.  В меню **Отладка** наведите указатель на пункт **Окна** и затем выберите пункт **Параллельные задачи**.  На следующем рисунке показано окно **Параллельные задачи**.  
+5.  On the **Debug** menu, point to **Windows** and then click **Parallel Tasks**. The following illustration shows the **Tasks** window.  
   
-     ![Четыре выполняемые задачи в окне параллельных задач](~/debugger/media/pdw_walkthrough_6.png "PDW\_Walkthrough\_6")  
+     ![Four running tasks in Tasks window](../debugger/media/pdw_walkthrough_6.png "PDW_Walkthrough_6")  
   
-     Для каждой запущенной задачи можно увидеть ее идентификатор, который возвращен свойством с тем же самым именем, имя потока, который запускает задача, ее расположение \(при наведении указателя мыши отображается подсказка, у которой есть целый стек вызовов\).  Кроме того, в столбце **Задача** отображается метод, который передан в задачу, или иными словами, точка запуска.  
+     For each running Task, you can read its ID, which is returned by the same-named property, the ID and name of the thread that runs it, its location (hovering over that displays a tooltip that has the whole call stack). Also, under the **Task** column, you can see the method that was passed into the task; in other words, the starting point.  
   
-     Любой столбец можно отсортировать.  Обратите внимание на глиф сортировки, который указывает столбец и направление сортировки.  Расположение столбцов можно изменять, перетаскивая их вправо или влево.  
+     You can sort any column. Notice the sort glyph that indicates the sort column and direction. You can also reorder the columns by dragging them left or right.  
   
-     Рядом с текущей задачей отображается желтая стрелка.  Чтобы переключить задачи, дважды щелкните задачу или воспользуйтесь командной контекстного меню.  При переключении задач потоки, расположенные ниже, становятся текущими, а сведения в других окнах обновляются.  
+     The yellow arrow indicates the current task. You can switch tasks by double-clicking a task or by using the shortcut menu. When you switch tasks, the underlying thread becomes current and the other windows are updated.  
   
-     При переключении с одной задачи на другую вручную желтая стрелка перемещается, но при этом белая стрелка по\-прежнему показывает задачу, которая привела к прерыванию работы отладчика.  
+     When you manually switch from one task to another, the yellow arrow moves, but a white arrow still shows the task that caused the debugger to break.  
   
-#### Возобновление выполнения до второй точки останова  
+#### <a name="to-resume-execution-until-the-second-breakpoint"></a>To resume execution until the second breakpoint  
   
-1.  Чтобы возобновить выполнение до попадания во вторую точку останова, в меню **Отладка** выберите пункт **Продолжить**.  
+1.  To resume execution until the second breakpoint is hit, on the **Debug** menu, click **Continue**.  
   
-     Ранее в столбце **Состояние** все задачи отображались как запущенные, но теперь две задачи отображаются как ожидающие.  Задачи могут быть заблокированы по разным причинам.  Чтобы узнать причину блокирования задачи, наведите указатель мыши на задачу в столбце **Состояние**.  Например, на следующем рисунке задача 3 ожидает задачу 4.  
+     Previously, the **Status** column showed all tasks as Running, but now two of the tasks are Waiting. Tasks can be blocked for many different reasons. In the **Status** column, hover over a waiting task to learn why it is blocked. For example, in the following illustration, task 3 is waiting on task 4.  
   
-     ![Две ожидающие задачи в окне параллельных задач](../debugger/media/pdb_walkthrough_7.png "PDB\_Walkthrough\_7")  
+     ![Two waiting tasks in Tasks window](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")  
   
-     Задача 4, в свою очередь, ожидает монитор, принадлежащий потоку, назначенному задаче 2.  
+     Task 4, in turn, is waiting on a monitor owned by the thread assigned to task 2.  
   
-     ![Ожидающая задача и подсказка в окне "Задачи"](../debugger/media/pdb_walkthrough_7a.png "PDB\_Walkthrough\_7A")  
+     ![Waiting task and tooltip in Tasks window](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")  
   
-     Можно пометить задачу, щелкнув значок флага в первом столбце окна **Параллельные задачи**.  
+     You can flag a task by clicking the flag in the first column of the **Tasks** window.  
   
-     Отметки с помощью флагов можно использовать для отслеживания задач между различными точками останова в одном сеансе отладки или для фильтрации задач, у которых стеки вызовов отображаются в окне **Параллельные стеки**.  
+     You can use flagging to track tasks between different breakpoints in the same debugging session or to filter for tasks whose call stacks are shown in the **Parallel Stacks** window.  
   
-     Ранее в окне **Параллельные стеки** отображались потоки приложения.  Если сейчас открыть окно **Параллельные стеки**, то в нем уже будет отображаться представление времени задач приложения.  В списке, расположенном в верхнем левом углу, выберите пункт **Задачи**.  На следующем рисунке показано представление "Задачи".  
+     When you used the **Parallel Stacks** window earlier, you viewed the application threads. View the **Parallel Stacks** window again, but this time view the application tasks. Do this by selecting **Tasks** in the box on the upper left. The following illustration shows the Tasks View.  
   
-     ![Представление потоков в окне параллельных стеков](~/debugger/media/pdb_walkthrough_8.png "PDB\_Walkthrough\_8")  
+     ![Threads view in Parallel Stacks window](../debugger/media/pdb_walkthrough_8.png "PDB_Walkthrough_8")  
   
-     Потоки, которые в настоящий момент не выполняют задачи, не отображаются в представлении "Задачи" окна **Параллельные стеки**.  Кроме того, для потоков, которые выполняют задачи, некоторые из кадров стека, которые не относятся к задачам, отфильтрованы от верхней и нижней границы стека.  
+     Threads that are not currently executing tasks are not shown in the Tasks View of the **Parallel Stacks** window. Also, for threads that execute tasks, some of the stack frames that are not relevant to tasks are filtered from the top and bottom of the stack.  
   
-     Откройте окно **Параллельные задачи** еще раз.  Щелкните правой кнопкой мыши заголовок любого столбца, чтобы открыть контекстное меню для столбца.  
+     View the **Tasks** window again. Right-click any column header to see a shortcut menu for the column.  
   
-     ![Контекстное меню представлений в окне параллельных стеков](../debugger/media/pdb_walkthrough_8a.png "PDB\_Walkthrough\_8A")  
+     ![Shortcut view menu in Tasks window](../debugger/media/pdb_walkthrough_8a.png "PDB_Walkthrough_8A")  
   
-     Контекстное меню можно использовать для удаления или добавления столбцов.  Например, столбец AppDomain не выбран, поэтому он не отображается в списке.  Щелкните **Родитель**.  В столбце **Родитель** не отображаются значения ни для одной из четырех задач.  
+     You can use the shortcut menu to add or remove columns. For example, the AppDomain column is not selected; therefore, it is not displayed in the list. Click **Parent**. The **Parent** column appears without values for any of the four tasks.  
   
-#### Возобновление выполнения до третьей точки останова  
+#### <a name="to-resume-execution-until-the-third-breakpoint"></a>To resume execution until the third breakpoint  
   
-1.  Чтобы возобновить выполнение до попадания в третью точку останова, выберите пункт **Продолжить** в меню **Отладка**.  
+1.  To resume execution until the third breakpoint is hit, on the **Debug** menu, click **Continue**.  
   
-     Теперь запускается новая задача под номером 5, а задача 4 переходит в режим ожидания.  Для просмотра причины перехода в режим ожидания наведите указатель мыши на задачу в окне **Состояние**.  В столбце **Родитель** обратите внимание, что задача 4 является родительской по отношению к задаче 5.  
+     A new task, task 5, is now running and task 4 is now waiting. You can see why by hovering over the waiting task in the **Status** window. In the **Parent** column, notice that task 4 is the parent of task 5.  
   
-     Чтобы получить более наглядное представление связи "родитель\-потомок", щелкните правой кнопкой мыши заголовок столбца **Родитель** и затем выберите пункт **Представление родительского и дочернего объектов**.  Должно отображаться такое же окно, как на следующем рисунке.  
+     To better visualize the parent-child relationship, right-click the **Parent** column header and then click **Parent Child View**. You should see the following illustration.  
   
-     ![Представление родительского и дочернего объектов в окне параллельных задач](../debugger/media/pdb_walkthrough_9.png "PDB\_Walkthrough\_9")  
+     ![Parent&#45;child view in Tasks window](../debugger/media/pdb_walkthrough_9.png "PDB_Walkthrough_9")  
   
-     Обратите внимание, что задачи 4 и 5 запущены в одном потоке.  Эти сведения отображаются не в окне **Потоки**, а в окне **Параллельные задачи**, что является преимуществом данного окна.  Чтобы проверить это, откройте окно **Параллельные стеки**.  Убедитесь, что в качестве представления выбран пункт **Задачи**.  Определите расположение задач 4 и 5, дважды щелкнув их в окне **Параллельные задачи**.  После выполнения этого действия синяя граница в окне **Параллельные стеки** будет обновлена.  Кроме того, расположение задач 4 и 5 можно определить путем сканирования подсказок в окне**Параллельные стеки**.  
+     Notice that task 4 and task 5 are running on the same thread. This information is not displayed in the **Threads** window; seeing it here is another benefit of the **Tasks** window. To confirm this, view the **Parallel Stacks** window. Make sure that you are viewing **Tasks**. Locate tasks 4 and 5 by double-clicking them in the **Tasks** window. When you do, the blue highlight in the **Parallel Stacks** window is updated. You can also locate tasks 4 and 5 by scanning the tooltips on the **Parallel Stacks** window.  
   
-     ![Представление задач в окне параллельных стеков](../debugger/media/pdb_walkthrough_9a.png "PDB\_Walkthrough\_9A")  
+     ![Task view in Parallel Stacks window](../debugger/media/pdb_walkthrough_9a.png "PDB_Walkthrough_9A")  
   
-     В окне **Параллельные стеки** щелкните правой кнопкой мыши S.P и затем выберите команду **Перейти к потоку**.  Окно переключается в представление "Потоки" и соответствующий кадр в представлении.  В одном потоке можно увидеть обе задачи.  
+     In the **Parallel Stacks** window, right-click S.P, and then click **Go To Thread**. The window switches to Threads View and the corresponding frame is in view. You can see both tasks on the same thread.  
   
-     ![Выделенный поток в представлении потоков](~/debugger/media/pdb_walkthrough_9b.png "PDB\_Walkthrough\_9B")  
+     ![Highlighted thread in threads view](../debugger/media/pdb_walkthrough_9b.png "PDB_Walkthrough_9B")  
   
-     Это является еще одним преимуществом представления "Задачи" в окне **Параллельные стеки** по сравнению с окном **Потоки**.  
+     This is another benefit of the Tasks View in the **Parallel Stacks** window, compared to the **Threads** window.  
   
-#### Возобновление выполнения до четвертой точки останова  
+#### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>To resume execution until the fourth breakpoint  
   
-1.  Чтобы возобновить выполнение до попадания в третью точку останова, выберите пункт **Продолжить** в меню **Отладка**.  Щелкните заголовок столбца **ИД**, чтобы выполнить сортировку по идентификатору.  Должно отображаться такое же окно, как на следующем рисунке.  
+1.  To resume execution until the third breakpoint is hit, on the **Debug** menu, click **Continue**. Click the **ID** column header to sort by ID. You should see the following illustration.  
   
-     ![Четыре состояния задач в окне параллельных стеков](../debugger/media/pdb_walkthrough_10.png "PDB\_Walkthrough\_10")  
+     ![Four task states in Parallel Stacks window](../debugger/media/pdb_walkthrough_10.png "PDB_Walkthrough_10")  
   
-     Поскольку задача 5 уже завершена, она больше не отображается.  Если на экране компьютера не отображается взаимоблокировка, перейдите на другой шаг, нажав клавишу F11.  
+     Because task 5 has completed, it is no longer displayed. If that is not the case on your computer and the deadlock is not shown, step one time by pressing F11.  
   
-     Задачи 3 и 4 ожидают друг друга и являются взаимоблокированными.  5 новых задач являются дочерними по отношению к задаче 2 и в данный момент запланированы.  Запланированными задачами являются задачи, которые были запущены в коде, но еще не запущены на компьютере.  Поэтому для этих задач значения в столбцах **Расположение** и **Назначение потоков** отсутствуют.  
+     Task 3 and task 4 are now waiting on each other and are deadlocked. There are also 5 new tasks that are children of task 2 and are now scheduled. Scheduled tasks are tasks that have been started in code but have not run yet. Therefore, their **Location** and **Thread Assignment** columns are empty.  
   
-     Просмотрите окно **Параллельные стеки** еще раз.  Для заголовка каждого окна есть подсказка, в которой отображаются идентификаторы и имена потоков.  Переключитесь в представление "Задачи" в окне **Параллельные стеки**.  Наведите указатель мыши на заголовок, чтобы просмотреть идентификатор и имя задачи, а также состояние задачи, как показано на следующем рисунке.  
+     View the **Parallel Stacks** window again. The header of each box has a tooltip that shows the thread IDs and names. Switch to Tasks View in the **Parallel Stacks** window. Hover over a header to see the task ID and name, and the status of the task, as shown in the following illustration.  
   
-     ![Подсказка заголовка в окне параллельных стеков](../debugger/media/pdb_walkthrough_11.png "PDB\_Walkthrough\_11")  
+     ![Header tooltip in Parallel Stacks window](../debugger/media/pdb_walkthrough_11.png "PDB_Walkthrough_11")  
   
-     Можно сгруппировать задачи по столбцу.  В окне **Параллельные задачи** щелкните правой кнопкой мыши заголовок столбца **Состояние** и затем выберите команду **Сгруппировать по состоянию**.  На следующем рисунке показано окно **Параллельные задачи**, сгруппированное по состоянию.  
+     You can group the tasks by column. In the **Tasks** window, right-click the **Status** column header and then click **Group by Status**. The following illustration shows the **Tasks** window grouped by status.  
   
-     ![Группированные задачи в окне параллельных задач](~/debugger/media/pdb_walkthrough_12.png "PDB\_Walkthrough\_12")  
+     ![Grouped tasks in Tasks window](../debugger/media/pdb_walkthrough_12.png "PDB_Walkthrough_12")  
   
-     Задачи можно группировать по любому другому столбцу.  Группировка задач позволяет сосредоточиться на подмножестве задач.  Каждая разворачиваемая группа имеет счетчик сгруппированных элементов.  Чтобы быстро снять отметку всех элементов в группе, нажмите кнопку **Отметить**, расположенную справа от кнопки **Свернуть**.  
+     You can also group by any other column. By grouping tasks, you can focus on a subset of tasks. Each collapsible group has a count of the items that are grouped together. You can also quickly flag all items in the group by clicking the **Flag** button to the right of the **Collapse** button.  
   
-     ![Группированные стеки в окне параллельных стеков](../debugger/media/pdb_walkthrough_12a.png "PDB\_Walkthrough\_12A")  
+     ![Grouped stacks in Parallel Stacks window](../debugger/media/pdb_walkthrough_12a.png "PDB_Walkthrough_12A")  
   
-     Последняя изучаемая функция окна **Параллельные задачи** — контекстное меню, которое отображается при щелчке правой кнопкой мыши задачи.  
+     The last feature of the **Tasks** window to examine is the shortcut menu that is displayed when you right-click a task.  
   
-     ![Контекстное меню в окне параллельных задач](../debugger/media/pdb_walkthrough_12b.png "PDB\_Walkthrough\_12B")  
+     ![Shortcut menu in Tasks window](../debugger/media/pdb_walkthrough_12b.png "PDB_Walkthrough_12B")  
   
-     В зависимости от состояния задачи в контекстном меню отображаются различные команды.  В контекстном меню могут отображаться следующие команды: **Копировать**, **Выделить все**, **Шестнадцатеричный вывод**, **Переключение на задачу**, **Зафиксировать назначенный поток**, **Зафиксировать все потоки, кроме этого**, **Поток, назначенный разморозке** и **Отметить**.  
+     The shortcut menu displays different commands, depending on the status of the task. The commands may include **Copy**, **Select All**, **Hexadecimal Display**, **Switch to Task**, **Freeze Assigned Thread**, **Freeze All Threads But This**, and **Thaw Assigned Thread**, and **Flag**.  
   
-     Можно зафиксировать поток задачи или задачи, либо зафиксировать все потоки, за исключением назначенного.  Зафиксированный поток отображается в окне **Параллельные задачи** так же, как в окне **Потоки** с помощью синего значка *пауза*.  
+     You can freeze the underlying thread of a task, or tasks, or you can freeze all threads except the assigned one. A frozen thread is represented in the **Tasks** window as it is in the **Threads** window, by a blue *pause* icon.  
   
-## Сводка  
- В этом пошаговом руководстве описаны окна **Параллельные задачи** и **Параллельные стеки**.  Используйте эти окна в проектах, в которых используется многопоточный код.  Можно проверить параллельный код, написанный на языке C\+\+, C\# или Visual Basic.  
+## <a name="summary"></a>Summary  
+ This walkthrough demonstrated the **Parallel Tasks** and **Parallel Stacks** debugger windows. Use these windows on real projects that use multithreaded code. You can examine parallel code written in C++, C#, or Visual Basic.  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  [Debugging Multithreaded Applications](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Основы отладки](../debugger/debugger-basics.md)   
- [Отладка управляемого кода](../debugger/debugging-managed-code.md)   
- [Parallel Programming](../Topic/Parallel%20Programming%20in%20the%20.NET%20Framework.md)   
- [Среда выполнения с параллелизмом](/visual-cpp/parallel/concrt/concurrency-runtime)   
- [Использование окна "Параллельные стеки"](../debugger/using-the-parallel-stacks-window.md)   
- [Использование окна задач](../debugger/using-the-tasks-window.md)
+ [Debugger Basics](../debugger/debugger-basics.md)   
+ [Debugging Managed Code](../debugger/debugging-managed-code.md)   
+ [Parallel Programming](/dotnet/standard/parallel-programming/index)   
+ [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime)   
+ [Using the Parallel Stacks Window](../debugger/using-the-parallel-stacks-window.md)   
+ [Using the Tasks Window](../debugger/using-the-tasks-window.md)

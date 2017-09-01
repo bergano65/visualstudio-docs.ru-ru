@@ -1,38 +1,55 @@
 ---
-title: "Обновление пользовательского интерфейса | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "интерфейсы пользователя, обновление"
-  - "команды, обновление пользовательского интерфейса"
+title: Updating the User Interface | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- user interfaces, updating
+- commands, updating UI
 ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
 caps.latest.revision: 41
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 41
----
-# Обновление пользовательского интерфейса
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: da33a633ee3f98d2b11ee476fa77e9aaae0e8342
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-После выполнения команды можно добавить код для обновления пользовательского интерфейса с состоянием новой команды.  
+---
+# <a name="updating-the-user-interface"></a>Updating the User Interface
+After you implement a command, you can add code to update the user interface with the state of your new commands.  
   
- В типичном приложении Win32 постоянно опрашивать набор команд и состояния отдельных команд может быть скорректирован пользователь просматривает их. Однако поскольку [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] оболочки можно разместить неограниченное количество VSPackages, обширные опроса может уменьшить время отклика, особенно опроса между сборками взаимодействия между управляемым кодом и COM.  
+ In a typical Win32 application, the command set can be continuously polled and the state of individual commands can be adjusted as the user views them. However, because the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shell can host an unlimited number of VSPackages, extensive polling might decrease responsiveness, especially polling across interop assemblies between managed code and COM.  
   
-### Для обновления пользовательского интерфейса  
+### <a name="to-update-the-ui"></a>To update the UI  
   
-1.  Выполните одно из следующих действий.  
+1.  Perform one of the following steps:  
   
-    -   Вызовите метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A>.  
+    -   Call the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> method.  
   
-         <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> Интерфейс может быть получен из <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> службы, как показано ниже.  
+         An <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interface can be obtained from the <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> service, as follows.  
   
-        ```c#  
+        ```csharp  
         void UpdateUI(Microsoft.VisualStudio.Shell.ServiceProvider sp)  
         {  
             IVsUIShell vsShell = (IVsUIShell)sp.GetService(typeof(IVsUIShell));  
@@ -45,12 +62,12 @@ caps.handback.revision: 41
   
         ```  
   
-         Если параметр <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> не равно нулю \(`TRUE`\), то обновление выполняется синхронно и немедленно. Мы рекомендуем передавать ноль \(`FALSE`\) для этого параметра поддерживать высокую производительность. Если требуется избежать кэширования, применить `DontCache` флаг при создании команды в файл .vsct. Тем не менее, используйте флаг осторожно или может привести к снижению производительности. Дополнительные сведения о флагах командной см [Элемент Command флаг](../extensibility/command-flag-element.md) документации.  
+         If the parameter of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> is non-zero (`TRUE`), then the update is performed synchronously and immediately. We recommend that you pass zero (`FALSE`) for this parameter to help maintain good performance. If you want to avoid caching, apply the `DontCache` flag when you create the command in the .vsct file. Nevertheless, use the flag cautiously or performance might decrease. For more information about command flags, see the [Command Flag Element](../extensibility/command-flag-element.md) documentation.  
   
-    -   В пакеты VSPackage, размещение элемента управления ActiveX с помощью модели активации на месте в окне, возможно, удобнее всего использовать <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> метода.<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> Метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> интерфейс и <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> метод <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> Интерфейс функционально эквивалентны. Оба метода приводят в среде для повторного запроса состояния всех команд. Как правило обновление не выполняется немедленно. Вместо этого обновления откладывается до времени простоя. Оболочка кэширует состояние команды в целях обеспечения высокой производительности. Если требуется избежать кэширования, применить `DontCache` флаг при создании команды в файл .vsct. Тем не менее осторожно используйте флаг потому, что может привести к снижению производительности.  
+    -   In VSPackages that host an ActiveX control by using the in-place activation model in a window, it might be more convenient to use the <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> method. The <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> method in the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interface and the <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> method in the <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> interface are functionally equivalent. Both cause the environment to re-query the state of all commands. Typically, an update is not performed immediately. Instead, an update is delayed until idle time. The shell caches the command state to help maintain good performance. If you want to avoid caching, apply the `DontCache` flag when you create the command in the .vsct file. Nevertheless, use the flag cautiously because performance might decrease.  
   
-         Обратите внимание, что можно получить <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> интерфейс путем вызова `QueryInterface` метод <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> объекта или при получении интерфейс из <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> службы.  
+         Notice that you can obtain the <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> interface by calling the `QueryInterface` method on an <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> object or by obtaining the interface from the <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> service.  
   
-## См. также  
- [Как добавить элементы пользовательского интерфейса в пакеты VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Реализация](../extensibility/internals/command-implementation.md)
+## <a name="see-also"></a>See Also  
+ [How VSPackages Add User Interface Elements](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Implementation](../extensibility/internals/command-implementation.md)

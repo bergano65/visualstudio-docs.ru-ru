@@ -1,182 +1,187 @@
 ---
-title: "Пошаговое руководство. Создание и отладка решения рабочих процессов SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.Workflow.WorkflowConditions"
-  - "VS.SharePointTools.Workflow.WorkflowList"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "разработка приложений SharePoint в Visual Studio, рабочие процессы"
-  - "рабочие процессы [разработка приложений SharePoint в Visual Studio]"
+title: 'Walkthrough: Creating and Debugging a SharePoint Workflow Solution | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.SharePointTools.Workflow.WorkflowConditions
+- VS.SharePointTools.Workflow.WorkflowList
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, workflows
+- workflows [SharePoint development in Visual Studio]
 ms.assetid: 81756490-ab5a-4fa4-96c6-eed2cfbf8374
 caps.latest.revision: 28
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 27
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 7ee27378034bd9c4c8d7cc2700583d22210e4c70
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
+
 ---
-# Пошаговое руководство. Создание и отладка решения рабочих процессов SharePoint
-  В этом пошаговом руководстве демонстрируется создание простого последовательного шаблона рабочего процесса.  Рабочий процесс проверяет одно из свойств библиотеки общих документов, чтобы определить, рецензирован ли документ.  Если документ был рецензирован, рабочий процесс завершается.  
+# <a name="walkthrough-creating-and-debugging-a-sharepoint-workflow-solution"></a>Walkthrough: Creating and Debugging a SharePoint Workflow Solution
+  This walkthrough demonstrates how to create a basic sequential workflow template. The workflow checks a property of a shared document library to determine whether a document has been reviewed. If the document has been reviewed, the workflow finishes.  
   
- В данном пошаговом руководстве рассмотрены следующие задачи:  
+ This walkthrough illustrates the following tasks:  
   
--   Создание проекта определения списка последовательного рабочего процесса SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+-   Creating a SharePoint list definition sequential workflow project in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
--   Создание действий рабочего процесса.  
+-   Creating workflow activities.  
   
--   Обработка событий действий рабочего процесса.  
+-   Handling workflow activity events.  
   
 > [!NOTE]  
->  В этом руководстве рассматривается проект последовательного рабочего процесса, но инструкции для рабочего процесса конечного автомата аналогичны.  
+>  Although this walkthrough uses a sequential workflow project, the process is identical for a state machine workflow project.  
 >   
->  Кроме того, имена и расположения некоторых элементов пользовательского интерфейса Visual Studio, отображаемые на вашем компьютере, могут отличающиеся от указанных в следующих инструкциях.  Эти элементы определяются используемой версией Visual Studio и ее параметрами.  Для получения дополнительной информации см. [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/ru-ru/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Also, your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
--   Поддерживаемые выпуски Microsoft Windows и SharePoint.  Для получения дополнительной информации см. [Требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Supported editions of Microsoft Windows and SharePoint. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Visual Studio.  
   
-## Добавление свойств в библиотеку общих документов SharePoint  
- Чтобы отслеживать состояние рецензирования документов в библиотеке **Общие документы**, создадим три новых свойства для общих документов на сайте SharePoint: `Status`, `Assignee` и `Review Comments`.  Определим эти свойства в библиотеке **Общие документы**.  
+## <a name="adding-properties-to-the-sharepoint-shared-documents-library"></a>Adding Properties to the SharePoint Shared Documents Library  
+ To track the review status of documents in the **Shared Documents** library, we will create three new properties for shared documents on our SharePoint site: `Status`, `Assignee`, and `Review Comments`. We define these properties in the **Shared Documents** library.  
   
-#### Добавление свойств в библиотеку общих документов SharePoint  
+#### <a name="to-add-properties-to-the-sharepoint-shared-documents-library"></a>To add properties to the SharePoint shared documents library  
   
-1.  Откройте в веб\-браузере сайт SharePoint, например http:\/\/\<имя\_системы\>\/SitePages\/Home.aspx.  
+1.  Open a SharePoint site, such as http://\<system name>/SitePages/Home.aspx, in a Web browser.  
   
-2.  На панели быстрого запуска выберите **Общиедокументы**.  
+2.  On the QuickLaunch bar, choose **SharedDocuments**.  
   
-3.  Чтобы создать новый столбец, выберите элемент **Библиотека** на ленте **Инструменты библиотеки** и нажмите кнопку **Создать столбец**.  
+3.  Choose **Library** on the **Library Tools** ribbon and then choose the **Create Column** button on the ribbon to create a new column.  
   
-4.  Присвойте столбцу имя "Статус документа", задайте для него тип **Выбор \(меню\)** и укажите следующие три варианта выбора, после чего нажмите кнопку **ОК**.  
+4.  Name the column **Document Status**, set its type to **Choice (menu to choose from)**, specify the following three choices, and then choose the **OK** button:  
   
-    -   **Требуется рецензирование**  
+    -   **Review Needed**  
   
-    -   **Рецензирование завершено**  
+    -   **Review Complete**  
   
-    -   **Запрос изменений**  
+    -   **Changes Requested**  
   
-5.  Создайте еще два столбца и присвойте им имена Уполномоченный и Комментарии.  Для столбца "Уполномоченный" задайте тип "однострочный текст", а для столбца "Комментарии" — "многострочный текст".  
+5.  Create two more columns and name them **Assignee** and **Review Comments**. Set the Assignee column type as a single line of text, and the Review Comments column type as multiple lines of text.  
   
-## Включение редактирования документов без необходимости их извлечения  
- Протестировать шаблон рабочего процесса проще, если документы можно редактировать без необходимости их извлечения.  В следующей процедуре показано, как настроить эту возможности для сайта SharePoint.  
+## <a name="enabling-documents-to-be-edited-without-requiring-a-check-out"></a>Enabling Documents to be Edited without Requiring a Check Out  
+ It is easier to test the workflow template when you can edit the documents without having to check them out. In the next procedure, you configure the SharePoint site to enable that.  
   
-#### Включение редактирования документов без извлечения  
+#### <a name="to-enable-documents-to-be-edited-without-checking-them-out"></a>To enable documents to be edited without checking them out  
   
-1.  На панели быстрого запуска щелкните ссылку **Общие документы**.  
+1.  On the QuickLaunch bar, choose the **Shared Documents** link.  
   
-2.  Выберите вкладку **Библиотека** на ленте **Инструменты библиотеки** и нажмите кнопку **Параметры библиотеки**, чтобы открыть страницу **Параметры библиотеки документов**.  
+2.  On the **Library Tools** ribbon, choose the **Library** tab, and then choose the **Library Settings** button to display the **Document Library Settings** page.  
   
-3.  В разделе **Общие параметры** выберите **Параметры управления версиями**, чтобы открыть страницу **Параметры управления версиями**.  
+3.  In the **General Settings** section, choose the **Versioning Settings** link to display the **Versioning Settings** page.  
   
-4.  Убедитесь, что в поле **Требовать извлечения документов перед редактированием?** выбрано **Нет**.  Если выбран другой вариант, измените его на **Нет** и нажмите кнопку **ОК**.  
+4.  Verify that the setting for **Require documents to be checked out before they can be edited** is **No**. If it is not, change it to **No** and then choose the **OK** button.  
   
-5.  Закройте браузер.  
+5.  Close the browser.  
   
-## Создание проекта последовательного рабочего процесса SharePoint  
- Последовательный рабочий процесс представляет собой последовательность действий, выполняемых поочередно до завершения последнего действия.  В этой процедуре демонстрируется создание рабочего процесса, применяемого к списку "Общие документы".  Мастер настройки рабочего процесса позволяет связать рабочий процесс либо с определением сайта, либо с определением списка, а также определить точку начала его выполнения.  
+## <a name="creating-a-sharepoint-sequential-workflow-project"></a>Creating a SharePoint Sequential Workflow Project  
+ A sequential workflow is a set of steps that executes in order until the last activity finishes. In this procedure, we create a sequential workflow that will apply to our Shared Documents list. The workflow wizard lets you associate the workflow with either the site definition or the list definition and lets you determine when the workflow will start.  
   
-#### Создание проекта последовательного рабочего процесса SharePoint  
+#### <a name="to-create-a-sharepoint-sequential-workflow-project"></a>To create a SharePoint sequential workflow project  
   
-1.  Запустите [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  В строке меню последовательно выберите пункты **Файл**, **Создать**, **Проект**, чтобы открыть диалоговое окно **Новый проект**.  
+2.  On the menu bar, choose **File**, **New**, **Project** to display the **New Project** dialog box.  
   
-3.  Разверните узел **SharePoint**, расположенный в области **Visual C\#** или **Visual Basic**, и выберите узел **2010**.  
+3.  Expand the **SharePoint** node under either **Visual C#** or **Visual Basic**, and then choose the **2010** node.  
   
-4.  На панели **Шаблоны** выберите шаблон **Проект SharePoint 2010**.  
+4.  In the **Templates** pane, choose the **SharePoint 2010 Project** template.  
   
-5.  В поле **Имя** введите MySharePointWorkflow и нажмите кнопку **ОК**.  
+5.  In the **Name** box, enter **MySharePointWorkflow** and then choose the **OK** button.  
   
-     Появится окно **Мастер настройки SharePoint**.  
+     The **SharePoint Customization Wizard** appears.  
   
-6.  На странице **Укажите сайт и уровень безопасности для отладки** выберите переключатель **Развернуть как решение фермы**, а затем нажмите кнопку **Готово**, чтобы принять уровень доверия и сайт по умолчанию.  
+6.  In the **Specify the site and security level for debugging** page, choose the **Deploy as a farm solution** option button, and then choose the **Finish** button to accept the trust level and default site.  
   
-     На этом этапе для решения задается уровень доверия "решение фермы" — единственно возможный вариант для проектов рабочего процесса.  Для получения дополнительной информации см. [Замечания об обезвреженных решениях](../sharepoint/sandboxed-solution-considerations.md).  
+     This step sets the trust level for the solution as farm solution, the only available option for workflow projects. For more information, see [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  В области **Обозреватель решений** выберите узел проекта, затем в меню **Проект** выберите **Добавить новый элемент**.  
+7.  In **Solution Explorer**, choose the project node, and then, on the menu bar, choose **Project**, **Add New Item**.  
   
-8.  Разверните узел **SharePoint**, расположенный в области **Visual C\#** или **Visual Basic**, и выберите узел **2010**.  
+8.  Under either **Visual C#** or **Visual Basic**, expand the **SharePoint** node, and then choose the **2010** node.  
   
-9. В области **Шаблоны** выберите шаблон **Последовательный рабочий процесс \(только для решения фермы\)**, а затем нажмите кнопку **Добавить**.  
+9. In the **Templates** pane, choose the **Sequential Workflow (Farm Solution only)** template, and then choose the **Add** button.  
   
-     Появится окно **Мастер настройки SharePoint**.  
+     The **SharePoint Customization Wizard** appears.  
   
-10. На странице **Имя рабочего процесса для отладки** нажмите кнопку "Далее", чтобы принять имя по умолчанию \(**MySharePointWorkflow \- Workflow1**\).  Для типа шаблона рабочего процесса оставьте значение по умолчанию \(**Рабочий процесс списка**\) и нажмите кнопку **Далее**.  
+10. In the **Specify the workflow name for debugging** page, accept the default name (**MySharePointWorkflow - Workflow1**). Keep the default workflow template type value, **List Workflow**, and then choose the **Next** button.  
   
-11. На странице **Будет ли Visual Studio автоматически связывать рабочий процесс в сеансе отладки?** нажмите кнопку **Далее**, чтобы принять все настройки по умолчанию.  
+11. In the **Would you like Visual Studio to automatically associate the workflow in a debug session?** page, choose the **Next** button to accept all of the default settings.  
   
-     На этом этапе рабочий процесс автоматически связывается с библиотекой "Общие документы".  
+     This step automatically associates the workflow with the Shared Documents library.  
   
-12. На странице **Укажите условия запуска рабочего процесса** в разделе **Как требуется запускать рабочий процесс?** оставьте выбранными параметры по умолчанию и нажмите кнопку **Готово**.  
+12. In the **Specify the conditions for how your workflow is started** page, leave the default options selected in the **How do you want the workflow to start?** section and choose the **Finish** button.  
   
-     Эта страница позволяет определить, когда стартует рабочий процесс.  По умолчанию рабочий процесс стартует либо после запуска пользователем в SharePoint вручную, либо при создании элемента, с которым ассоциирован рабочий процесс.  
+     This page enables you to specify when your workflow starts. By default, the workflow starts either when a user manually starts it in SharePoint or when an item to which the workflow is associated is created.  
   
-## Создание действий рабочего процесса  
- Рабочие процессы содержат одно или несколько выполняемых *действий*.  Действия в рабочем процессе можно организовать с помощью конструктора рабочих процессов.  В этой процедуре в рабочий процесс будут добавлены два действия: HandleExternalEventActivity и OnWorkFlowItemChanged.  Эти действия отслеживают состояние рецензирования документов в списке **Общие документы**  
+## <a name="creating-workflow-activities"></a>Creating Workflow Activities  
+ Workflows contain one or more *activities* that represent actions to perform. Use the workflow designer to arrange activities for a workflow. In this procedure, we will add two activities to the workflow: HandleExternalEventActivity and OnWorkFlowItemChanged. These activities monitor the review status of documents in the **Shared Documents** list  
   
-#### Создание действий рабочего процесса  
+#### <a name="to-create-workflow-activities"></a>To create workflow activities  
   
-1.  Процесс должен быть открыт в конструкторе рабочих процессов.  Если он не открыт, откройте файл **Workflow1.cs** или **Workflow1.vb** в **обозревателе решений**.  
+1.  The workflow should be displayed in the workflow designer. If it is not, then open either **Workflow1.cs** or **Workflow1.vb** in **Solution Explorer**.  
   
-2.  В конструкторе выберите действие **OnWorkflowActivated1**.  
+2.  In the designer, choose the **OnWorkflowActivated1** activity.  
   
-3.  В окне **Свойства** введите onWorkflowActivated рядом со свойством **Invoked** и нажмите клавишу ВВОД.  
+3.  In the **Properties** window, enter **onWorkflowActivated** next to the **Invoked** property, and then choose the Enter key.  
   
-     Откроется редактор кода, и в файл кода Workflow1 будет добавлен обработчик событий onWorkflowActivated.  
+     The Code Editor opens, and an event handler method named onWorkflowActivated is added to the Workflow1 code file.  
   
-4.  В конструкторе рабочих процессов откройте панель элементов и разверните узел **Рабочий процесс Windows версии 3.0**.  
+4.  Switch back to the workflow designer, open the toolbox, and then expand the **Windows Workflow v3.0** node.  
   
-5.  В узле **Windows Workflow v3.0Панели элементов** выполните одну из указанных ниже последовательностей действий:  
+5.  In the **Windows Workflow v3.0** node of the **Toolbox**, perform one of the following sets of steps:  
   
-    1.  Откройте контекстное меню для действия **While** и выберите **Копировать**.  В конструкторе рабочих процессов откройте контекстное меню для строки, расположенной под действием **onWorkflowActivated1**, и выберите **Вставить**.  
+    1.  Open the shortcut menu for the **While** activity, and then choose **Copy**. In the workflow designer, open the shortcut menu for the line under the **onWorkflowActivated1** activity, and then choose **Paste**.  
   
-    2.  Перетащите действие **While** из **панели элементов** на конструктор рабочих процессов, на линию, расположенную под действием **onWorkflowActivated1**.  
+    2.  Drag the **While** activity from the **Toolbox** to the workflow designer, and connect the activity to the line under the **onWorkflowActivated1** activity.  
   
-6.  Выберите действие **WhileActivity1**.  
+6.  Choose the **WhileActivity1** activity.  
   
-7.  В окне **Свойства** установите для свойства **Условие** значение "Code Condition".  
+7.  In the **Properties** window, set **Condition** to Code Condition.  
   
-8.  Разверните свойство **Условие** и введите isWorkflowPending рядом с дочерним свойством **Условие**, после чего нажмите клавишу ВВОД.  
+8.  Expand the **Condition** property, enter **isWorkflowPending** next to the child **Condition** property, and then choose the Enter key.  
   
-     Откроется редактор кода, и в файл кода Workflow1 будет добавлен метод isWorkflowPending.  
+     The Code Editor opens, and a method named isWorkflowPending is added to the Workflow1 code file.  
   
-9. В конструкторе рабочих процессов откройте панель элементов и разверните узел **Рабочий процесс SharePoint**.  
+9. Switch back to the workflow designer, open the toolbox, and then expand the **SharePoint Workflow** node.  
   
-10. В узле **Рабочий процесс SharePointПанели элементов** выполните одну из указанных ниже последовательностей действий:  
+10. In the **SharePoint Workflow** node of the **Toolbox**, perform one of the following sets of steps:  
   
-    -   Откройте контекстное меню для действия **OnWorkflowItemChanged**, а затем выберите **Копировать**.  В конструкторе рабочих процессов откройте контекстное меню для внутренней строки действия **whileActivity1** и выберите **Вставить**.  
+    -   Open the shortcut menu for the **OnWorkflowItemChanged** activity, and then choose **Copy**. In the workflow designer, open the shortcut menu for the line inside the **whileActivity1** activity, and then choose **Paste**.  
   
-    -   Перетащите действие **OnWorkflowItemChanged** из **панели элементов** на конструктор рабочих процессов, на внутреннюю линию действия **whileActivity1**.  
+    -   Drag the **OnWorkflowItemChanged** activity from the **Toolbox** to the workflow designer, and connect the activity to the line inside the **whileActivity1** activity.  
   
-11. Выберите действие **onWorkflowItemChanged1**.  
+11. Choose the **onWorkflowItemChanged1** activity.  
   
-12. В окне **Свойства** задайте значения свойств, указанные в следующей таблице.  
+12. In the **Properties** window, set the properties as shown in the following table.  
   
-    |Свойство|Значение|  
-    |--------------|--------------|  
+    |Property|Value|  
+    |--------------|-----------|  
     |**CorrelationToken**|**workflowToken**|  
     |**Invoked**|**onWorkflowItemChanged**|  
   
-## Обработка событий действий  
- Последний шаг — проверка состояния документа в каждом действии.  Если документ рецензирован, рабочий процесс завершается.  
+## <a name="handling-activity-events"></a>Handling Activity Events  
+ Finally, check the status of the document from each activity. If the document has been reviewed, then the workflow is finished.  
   
-#### Обработка событий действий  
+#### <a name="to-handle-activity-events"></a>To handle activity events  
   
-1.  В файле Workflow1.cs или Workflow1.vb добавьте следующее поле над классом `Workflow1`.  При выполнении действия с помощью этого поля определяется, завершен ли рабочий процесс.  
+1.  In Workflow1.cs or Workflow1.vb, add the following field to the top of the `Workflow1` class. This field is used in an activity to determine whether the workflow is finished.  
   
     ```vb  
     Dim workflowPending As Boolean = True  
@@ -186,7 +191,7 @@ caps.handback.revision: 27
     Boolean workflowPending = true;  
     ```  
   
-2.  Добавьте приведенный ниже метод в класс `Workflow1`.  Данный метод выполняет проверку значения свойства `Document Status` списка документов, чтобы определить, выполнялось ли рецензирование документа.  Если свойство `Document Status` имеет значение `Review Complete`, метод `checkStatus` присваивает полю `workflowPending` значение **false**, чтобы указать, что рабочий процесс готов к завершению.  
+2.  Add the following method to the `Workflow1` class. This method checks the value of the `Document Status` property of the Documents list to determine whether the document has been reviewed. If the `Document Status` property is set to `Review Complete`, then the `checkStatus` method sets the `workflowPending` field to **false** to indicate that the workflow is ready to finish.  
   
     ```vb  
     Private Sub checkStatus()  
@@ -204,7 +209,7 @@ caps.handback.revision: 27
     }  
     ```  
   
-3.  Для вызова метода `checkStatus` необходимо добавить в методы `onWorkflowActivated` и `onWorkflowItemChanged` приведенный ниже код.  При запуске рабочего процесса метод `onWorkflowActivated` вызывает метод `checkStatus`, чтобы определить, было ли уже выполнено рецензирование документа.  Если рецензирование документа не производилось, рабочий процесс продолжает работу.  При сохранении документа метод `onWorkflowItemChanged` вызывает метод `checkStatus`, чтобы определить, было ли уже выполнено рецензирование документа.  Пока поле `workflowPending` имеет значение **true**, рабочий процесс продолжает работу.  
+3.  Add the following code to the `onWorkflowActivated` and `onWorkflowItemChanged` methods to call the `checkStatus` method. When the workflow starts, the `onWorkflowActivated` method calls the `checkStatus` method to determine whether the document has already been reviewed. If it has not been reviewed, the workflow continues. When the document is saved, the `onWorkflowItemChanged` method calls the `checkStatus` method again to determine whether the document has been reviewed. While the `workflowPending` field is set to **true**, the workflow continues to run.  
   
     ```vb  
     Private Sub onWorkflowActivated(ByVal sender As System.Object, ByVal e As System.Workflow.Activities.ExternalDataEventArgs)  
@@ -230,7 +235,7 @@ caps.handback.revision: 27
     }  
     ```  
   
-4.  Добавьте следующий код в метод `isWorkflowPending`, чтобы проверить состояние свойства `workflowPending`.  При каждом сохранении документа действие **whileActivity1** вызывает метод `isWorkflowPending`.  Этот метод проверяет свойство <xref:System.Workflow.Activities.ConditionalEventArgs.Result%2A> объекта <xref:System.Workflow.Activities.ConditionalEventArgs>, чтобы определить, должно ли действие **WhileActivity1** продолжать работу или завершиться.  Если свойство имеет значение **true**, действие продолжает свою работу.  В противном случае действие завершается; также завершается рабочий процесс.  
+4.  Add the following code to the `isWorkflowPending` method to check the status of the `workflowPending` property. Each time the document is saved, the **whileActivity1** activity calls the `isWorkflowPending` method. This method examines the <xref:System.Workflow.Activities.ConditionalEventArgs.Result%2A> property of the <xref:System.Workflow.Activities.ConditionalEventArgs> object to determine whether the **WhileActivity1** activity should continue or finish. If the property is set to **true**, the activity continues. Otherwise, the activity finishes and the workflow finishes.  
   
     ```vb  
     Private Sub isWorkflowPending(ByVal sender As System.Object, ByVal e As System.Workflow.Activities.ConditionalEventArgs)  
@@ -245,55 +250,55 @@ caps.handback.revision: 27
     }  
     ```  
   
-5.  Сохраните проект.  
+5.  Save the project.  
   
-## Тестирование шаблона рабочего процесса SharePoint  
- При запуске отладчика [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] развертывает шаблон рабочего процесса в сервере SharePoint и связывает рабочий процесс со списком **Общие документы**.  Чтобы протестировать рабочий процесс, запустите экземпляр рабочего процесса из документа в списке **Общие документы**.  
+## <a name="testing-the-sharepoint-workflow-template"></a>Testing the SharePoint Workflow Template  
+ When you start the debugger, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] deploys the workflow template to the SharePoint server and associates the workflow with the **Shared Documents** list. To test the workflow, start an instance of the workflow from a document in the **Shared Documents** list.  
   
-#### Тестирование шаблона рабочего процесса SharePoint  
+#### <a name="to-test-the-sharepoint-workflow-template"></a>To test the SharePoint workflow template  
   
-1.  В файле Workflow1.cs или Workflow1.vb установите точку останова после метода **onWorkflowActivated**.  
+1.  In Workflow1.cs or Workflow1.vb, set a breakpoint next to the **onWorkflowActivated** method.  
   
-2.  Нажмите клавишу F5, чтобы собрать и запустить решение.  
+2.  Choose the F5 key to build and run the solution.  
   
-     Открывается сайт SharePoint.  
+     The SharePoint site appears.  
   
-3.  В области переходов в SharePoint выберите ссылку **Общие документы**.  
+3.  In the navigation pane in SharePoint, choose the **Shared Documents** link.  
   
-4.  На странице **Общие документы** выберите ссылку **Документы** на вкладке **Инструменты библиотеки** и нажмите кнопку **Отправить документ**.  
+4.  In the **Shared Documents** page, choose the **Documents** link on the **Library Tools** tab, and then choose the **Upload Document** button.  
   
-5.  В диалоговом окне **Отправить документ** нажмите кнопку **Обзор**, выберите любой файл документа, нажмите кнопку **Открыть**, а затем нажмите кнопку **ОК**.  
+5.  In the **Upload Document** dialog box, choose the **Browse** button, choose any document file, choose the **Open** button, and then choose the **OK** button.  
   
-     Выбранный документ будет отправлен в список **Общие документы**, и запустится рабочий процесс.  
+     This uploads the selected document into the **Shared Documents** list and starts the workflow.  
   
-6.  В [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] следует убедиться, что отладчик остановился в точке останова рядом с методом `onWorkflowActivated`.  
+6.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], verify that the debugger stops at the breakpoint next to the `onWorkflowActivated` method.  
   
-7.  Нажмите клавишу F5, чтобы возобновить выполнение.  
+7.  Choose the F5 key to continue execution.  
   
-8.  Здесь можно изменять параметры документа, но в данном случае оставьте значения по умолчанию и нажмите кнопку **Сохранить**.  
+8.  You can change the settings for the document here, but leave them at the default values for now by choosing the **Save** button.  
   
-     В результате вы вернетесь на страницу **Общие документы** для веб\-сайта SharePoint по умолчанию.  
+     This returns you to the **Shared Documents** page of the default SharePoint Web site.  
   
-9. На странице **Общие документы** удостоверьтесь, что в столбце **MySharePointWorkflow – Workflow1** указано значение **Выполняется**.  Это означает, что рабочий процесс выполняется, и документ ожидает рецензирования.  
+9. In the **Shared Documents** page, verify that the value underneath the **MySharePointWorkflow - Workflow1** column is set to **In Progress**. This indicates that the workflow is in progress and that the document is awaiting review.  
   
-10. На странице **Общие документы** выберите документ, нажмите на появившуюся стрелку, а затем выберите пункт меню **Изменить свойства**.  
+10. In the **Shared Documents** page, choose the document, choose the arrow that appears, and then choose the **Edit Properties** menu item.  
   
-11. Задайте для свойства **Статус документа** значение **Рецензирование завершено** и нажмите кнопку **Сохранить**.  
+11. Set **Document Status** to **Review Complete**, and then choose the **Save** button.  
   
-     В результате вы вернетесь на страницу **Общие документы** для веб\-сайта SharePoint по умолчанию.  
+     This returns you to the **Shared Documents** page of the default SharePoint Web site.  
   
-12. На странице **Общие документы** удостоверьтесь, что в столбце **Document Status** указано значение **Рецензирование завершено**.  Обновите страницу **Общие документы** и удостоверьтесь, что в столбце **MySharePointWorkflow – Workflow1** указано значение **Завершено**.  Это означает, что рабочий процесс завершился, и рецензирование документа было выполнено.  
+12. In the **Shared Documents** page, verify that the value underneath the **Document Status** column is set to **Review Complete**. Refresh the **Shared Documents** page and verify that the value underneath the **MySharePointWorkflow - Workflow1** column is set to **Completed**. This indicates that workflow is finished and that the document has been reviewed.  
   
-## Следующие действия  
- Дополнительные сведения о создании шаблонов рабочих процессов см. в следующих разделах:  
+## <a name="next-steps"></a>Next Steps  
+ You can learn more about how to create workflow templates from these topics:  
   
--   Дополнительные сведения о действиях рабочих процессов SharePoint см. в разделе [Действия рабочих процессов для SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=178992).  
+-   To learn more about SharePoint workflow activities, see [Workflow Activities for SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=178992).  
   
--   Дополнительные сведения о действиях Windows Workflow Foundation см. в разделе [System.Workflow.Activities \- пространство имен](http://go.microsoft.com/fwlink/?LinkId=178993).  
+-   To learn more about Windows Workflow Foundation activities, see [System.Workflow.Activities Namespace](http://go.microsoft.com/fwlink/?LinkId=178993).  
   
-## См. также  
- [Создание решений рабочих процессов SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)   
- [Шаблоны проектов и элементов проектов SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md)   
- [Построение и отладка решений SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Creating SharePoint Workflow Solutions](../sharepoint/creating-sharepoint-workflow-solutions.md)   
+ [SharePoint Project and Project Item Templates](../sharepoint/sharepoint-project-and-project-item-templates.md)   
+ [Building and Debugging SharePoint Solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   
   

@@ -1,40 +1,45 @@
 ---
-title: "Серверы скриптов Windows | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Сервер скриптов Windows, реализация узлов"
+title: "Серверы скриптов Windows | Документы Майкрософт"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Windows Script Host, implementing hosts
 ms.assetid: 9d5f6471-b318-40f3-be01-d9cd0b1cdd47
 caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
+ms.openlocfilehash: 41fa898c7f0d62cd35cc1cb1c7b35eb2651c8bb6
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/11/2017
+
 ---
-# Серверы скриптов Windows
-При реализации средства обработки сценариев Microsoft Windows можно безопасно высказывать вызывает обработчик скриптов только интерфейс [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) в контексте базового потока до тех пор, пока узел выполняются следующие действия.  
+# <a name="windows-script-hosts"></a>Серверы скриптов Windows
+При реализации сервера скриптов Microsoft Windows можно с уверенностью предположить, что обработчик скриптов вызывает интерфейс [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) только в контексте базового потока при условии, что узел выполняет следующие действия:  
   
--   Выберите базовый поток \(обычно поток, содержащий цикл обработки сообщений\).  
+-   выбирает базовый поток (обычно поток, который содержит цикл обработки сообщений);  
   
--   Создайте обработчик скриптов в основном потоке.  
+-   создает обработчик скриптов в базовом потоке;  
   
--   Вызывает методы обработчика скриптов только из базового потока, за исключением случаев, когда специально разрешено, как в случаях [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) и [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md).  
+-   вызывает методы обработчика скриптов только из базового потока, за исключением того, где специально разрешено, как в случаях [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) и [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md);  
   
--   Вызывает объект диспетчеризации обработчика скриптов только из базового потока.  
+-   вызывает объект диспетчеризации обработчика скриптов только из базового потока;  
   
--   Гарантирует, что цикл обработки сообщений выполняется в основном потоке, если дескриптор окна предоставляется.  
+-   гарантирует, что цикл обработки сообщений выполняется в базовом потоке, если указан дескриптор окна;  
   
--   Гарантирует, что объекты в событиях источника объектной модели узла только в основном потоке.  
+-   гарантирует, что в модели объекта узла только исходные события в базовом потоке.  
   
- Эти правила автоматически следует ни с одними продетыми потоков всеми узлами.  Ограничения модели, описанной выше намеренно свободно достаточно, чтобы разрешить узел, чтобы прервать вставленный скрипт путем вызова [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) из другого потока \(начатого обработчиком CTRL\+BREAK или подобием\) или дублирования скрипт в новом потоке с помощью [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md).  
+ Этим правилам автоматически следуют все однопотоковые узлы. Описанная выше ограниченная модель намеренно является достаточно свободной, чтобы разрешать узлу прерывать зациклившийся скрипт путем вызова [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) из другого потока (инициированного обработчиком CTRL+BREAK или аналогичным) или дублировать скрипт в новый поток с помощью [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md).  
   
-## Заметки  
- Ни один из этих ограничений, которые применяются к узлу, который выбирает реализовать состояние многопоточного интерфейс [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) и состояние продетую в объектной модели.  Такой узел может использовать интерфейс [IActiveScript](../winscript/reference/iactivescript.md) из любого потока, без ограничений.  
+## <a name="remarks"></a>Примечания  
+ Ни одно из этих ограничений не применяется к узлу, который выбирает реализацию свободнопоточного интерфейса [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) и свободнопоточную объектную модель. Такой узел может использовать интерфейс [IActiveScript](../winscript/reference/iactivescript.md) из любого потока без ограничений.  
   
-## См. также  
- [\<PAVE OVER\> Интерфейсы скриптов Microsoft Windows — введение](http://msdn.microsoft.com/library/3d10169f-2984-49ef-90c6-dd89c97f1dd6)
+## <a name="see-also"></a>См. также  
+ [Интерфейсы скриптов Windows](../winscript/windows-script-interfaces.md)

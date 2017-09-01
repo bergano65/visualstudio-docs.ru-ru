@@ -1,132 +1,137 @@
 ---
-title: "Пошаговое руководство. Создание рабочего процесса с формами связывания и запуска"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "формы связывания [разработка приложений SharePoint в Visual Studio]"
-  - "формы запуска [разработка приложений SharePoint в Visual Studio]"
-  - "разработка приложений SharePoint в Visual Studio, формы связывания рабочих процессов"
-  - "разработка приложений SharePoint в Visual Studio, формы запуска рабочих процессов"
-  - "разработка приложений SharePoint в Visual Studio, рабочие процессы"
-  - "рабочие процессы [разработка приложений SharePoint в Visual Studio]"
+title: 'Walkthrough: Creating a Workflow with Association and Initiation Forms | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, workflows
+- SharePoint development in Visual Studio, workflow association forms
+- workflows [SharePoint development in Visual Studio]
+- association forms [SharePoint development in Visual Studio]
+- initiation forms [SharePoint development in Visual Studio]
+- SharePoint development in Visual Studio, workflow initiation forms
 ms.assetid: c8666d8c-b173-4245-8014-9c1cd6acb071
 caps.latest.revision: 38
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 37
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a9a1507cc7c2d98e98858d46563cd691b6ad969d
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
+
 ---
-# Пошаговое руководство. Создание рабочего процесса с формами связывания и запуска
-  В этом пошаговом руководстве демонстрируется создание простейшего последовательного рабочего процесса, в котором используются формы связывания и запуска.  Это ASPX\-формы, позволяющие добавлять в рабочий процесс параметры, когда администратор SharePoint впервые выполняет его связывание \(форма связывания\) и когда пользователь запускает рабочий процесс \(форма запуска\).  
+# <a name="walkthrough-creating-a-workflow-with-association-and-initiation-forms"></a>Walkthrough: Creating a Workflow with Association and Initiation Forms
+  This walkthrough demonstrates how to create a basic sequential workflow that incorporates the use of association and initiation forms. These are ASPX forms that enable parameters to be added to a workflow when it is first associated by the SharePoint administrator (the association form), and when the workflow is started by the user (the initiation form).  
   
- В этом пошаговом руководстве рассматривается сценарий, в котором пользователю требуется создать рабочий процесс утверждения отчетов по затратам с учетом следующих требований.  
+ This walkthrough outlines a scenario where a user wants to create an approval workflow for expense reports that has the following requirements:  
   
--   Когда рабочий процесс связывается со списком, администратору отображается форма связывания, в которой требуется ввести денежный лимит для отчетов о расходах.  
+-   When the workflow is associated with a list, the administrator is prompted with an association form where they enter a dollar limit for expense reports.  
   
--   Сотрудники загружают свои отчеты о затратах в список "Общие документы", запускают рабочий процесс и вводят общую сумму затрат в форме запуска рабочего процесса.  
+-   Employees upload their expense reports to the Shared Documents list, start the workflow, and then enter the expense total in the workflow initiation form.  
   
--   Если общая сумма затрат в отчете сотрудника превышает лимит, заданный администратором, для руководителя этого сотрудника создается задача по утверждению отчета.  Впрочем, если общая сумма затрат не превышает заданный лимит, в списке журнала рабочего процесса создается запись об автоматическом утверждении.  
+-   If an employee expense report total exceeds the administrator's predefined limit, a task is created for the employee's manager to approve the expense report. However, if an employee's expense report total is less than or equal to the expense limit, an auto-approved message is written to the workflow's history list.  
   
- В данном пошаговом руководстве рассмотрены следующие задачи:  
+ This walkthrough illustrates the following tasks:  
   
--   Создание проекта определения списка последовательного рабочего процесса SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+-   Creating a SharePoint list definition sequential workflow project in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
--   Создание расписания рабочего процесса.  
+-   Creating a workflow schedule.  
   
--   Обработка событий действий рабочего процесса.  
+-   Handling workflow activity events.  
   
--   Создание форм связывания и запуска рабочего процесса.  
+-   Creating workflow association and initiation forms.  
   
--   Связывание рабочего процесса.  
+-   Associating the workflow.  
   
--   Запуск рабочего процесса вручную.  
+-   Manually starting the workflow.  
   
 > [!NOTE]  
->  В этом руководстве рассматривается проект последовательного рабочего процесса, однако инструкции для рабочего процесса конечного автомата аналогичны.  
+>  Although this walkthrough uses a sequential workflow project, the process is the same for state machine workflows.  
 >   
->  Кроме того, отображаемые на компьютере имена и расположения некоторых элементов пользовательского интерфейса [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] могут отличаться от указанных в следующих инструкциях.  Эти элементы определяются используемой версией и параметрами настройки [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  Дополнительные сведения см. в разделе [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/ru-ru/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Also, your computer might show different names or locations for some of the [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] user interface elements in the following instructions. The [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
--   Поддерживаемые выпуски [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] и SharePoint.  Для получения дополнительной информации см. [Требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Supported editions of [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] and SharePoint. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Visual Studio.  
   
-## Создание проекта последовательного рабочего процесса SharePoint  
- Сначала необходимо создать проект последовательного рабочего процесса в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  Последовательный рабочий процесс представляет собой последовательность действий, выполняемых поочередно до завершения последнего действия.  В этой процедуре демонстрируется создание рабочего процесса, применяемого к списку "Общие документы" в SharePoint.  Мастер настройки рабочего процесса позволяет связать рабочий процесс либо с определением сайта, либо с определением списка, а также определить точку начала его выполнения.  
+## <a name="creating-a-sharepoint-sequential-workflow-project"></a>Creating a SharePoint Sequential Workflow Project  
+ First, create a sequential workflow project in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. A sequential workflow is a series of steps that executes in order until the last activity finishes. In this procedure, you will create a sequential workflow that applies to the Shared Documents list in SharePoint. The workflow's wizard lets you associate the workflow with either the site or the list definition and lets you determine when the workflow will start.  
   
-#### Создание проекта последовательного рабочего процесса SharePoint  
+#### <a name="to-create-a-sharepoint-sequential-workflow-project"></a>To create a SharePoint sequential workflow project  
   
-1.  В строке меню последовательно выберите пункты **Файл**, **Создать**, **Проект**, чтобы открыть диалоговое окно **Новый проект**.  
+1.  On the menu bar, choose **File**, **New**, **Project** to display the **New Project** dialog box.  
   
-2.  Разверните узел **SharePoint**, расположенный в области **Visual C\#** или **Visual Basic**, и выберите узел **2010**.  
+2.  Expand the **SharePoint** node under either **Visual C#** or **Visual Basic**, and then choose the **2010** node.  
   
-3.  На панели **Шаблоны** выберите шаблон проекта **Проект SharePoint 2010**.  
+3.  In the **Templates** pane, choose the **SharePoint 2010 Project** project template.  
   
-4.  В текстовом поле **Имя** введите ExpenseReport и нажмите кнопку **ОК**.  
+4.  In the **Name** box, enter **ExpenseReport** and then choose the **OK** button.  
   
-     Появится окно **Мастер настройки SharePoint**.  
+     The **SharePoint Customization Wizard** appears.  
   
-5.  На странице **Укажите сайт и уровень безопасности для отладки** выберите переключатель **Развернуть как решение фермы**, а затем нажмите кнопку **Готово**, чтобы принять уровень доверия и сайт по умолчанию.  
+5.  In the **Specify the site and security level for debugging** page, choose the **Deploy as a farm solution** option button, and then choose the **Finish** button to accept the trust level and default site.  
   
-     На этом этапе для решения также задается уровень доверия "решение фермы" — единственно возможный вариант для проектов рабочего процесса.  
+     This step also sets the trust level for the solution as farm solution, which is the only available option for workflow projects.  
   
-6.  В области **Обозреватель решений** выберите узел проекта.  
+6.  In **Solution Explorer**, choose the project node.  
   
-7.  В строке меню выберите **Проект**, **Добавить новый элемент**.  
+7.  On the menu bar, choose **Project**, **Add New Item**.  
   
-8.  Разверните узел **SharePoint**, расположенный в области **Visual C\#** или **Visual Basic**, и выберите узел **2010**.  
+8.  Under either **Visual C#** or **Visual Basic**, expand the **SharePoint** node, and then choose the **2010** node.  
   
-9. В области **Шаблоны** выберите шаблон **Последовательный рабочий процесс \(только для решения фермы\)**, а затем нажмите кнопку **Добавить**.  
+9. In the **Templates** pane, choose **Sequential Workflow (Farm Solution only)** template, and then choose the **Add** button.  
   
-     Появится окно **Мастер настройки SharePoint**.  
+     The **SharePoint Customization Wizard** appears.  
   
-10. На странице **Имя рабочего процесса для отладки** нажмите кнопку "Далее", чтобы принять имя по умолчанию \(**ExpenseReport \- Workflow1**\).  Для типа шаблона рабочего процесса оставьте значение по умолчанию \(**Рабочий процесс списка**\).  Нажмите кнопку **Далее**.  
+10. In the **Specify the workflow name for debugging** page, accept the default name (**ExpenseReport - Workflow1**). Keep the default workflow template type value (**List Workflow)**. Choose the **Next** button.  
   
-11. На странице **Будет ли Visual Studio автоматически связывать рабочий процесс в сеансе отладки?** снимите флажок, который автоматически связывает шаблон рабочего процесса, если установлен.  
+11. In the **Would you like Visual Studio to automatically associate the workflow in a debug session?** page, clear the box that automatically associates your workflow template if it is checked.  
   
-     В результате можно будет вручную связать рабочий процесс со списком "Общие документы" на более позднем этапе \(при этом откроется форма связывания рабочего процесса\).  
+     This step lets you manually associate the workflow with the Shared Documents list later on, which displays the association form.  
   
-12. Нажмите кнопку **Готово**.  
+12. Choose the **Finish** button.  
   
-## Добавление формы связывания в рабочий процесс  
- Теперь создайте форму связывания \(ASPX\-файл\), отображаемую, когда администратор сайта SharePoint впервые связывает рабочий процесс с документом отчета о затратах.  
+## <a name="adding-an-association-form-to-the-workflow"></a>Adding an Association Form to the Workflow  
+ Next, create an .ASPX association form that appears when the SharePoint administrator first associates the workflow with an expense report document.  
   
-#### Добавление формы связывания в рабочий процесс  
+#### <a name="to-add-an-association-form-to-the-workflow"></a>To add an association form to the workflow  
   
-1.  Выберите узел **Workflow1Обозревателе Решений**.  
+1.  Choose the **Workflow1** node in **Solution Explorer**.  
   
-2.  Для отображения диалогового окна **Добавление нового элемента** выберите в меню **Проект** команду **Добавить новый элемент**.  
+2.  On the menu bar, choose **Project**, **Add New Item** to display the **Add New Item** dialog box.  
   
-3.  В древовидном представлении в диалоговом окне разверните узел **Visual C\#** или **Visual Basic** \(в зависимости от языка проекта\), затем узел **SharePoint** и выберите **2010**.  
+3.  In the dialog box tree view, expand either **Visual C#** or **Visual Basic** (depending on your project language), expand the **SharePoint** node, and then choose the **2010** node.  
   
-4.  В списке шаблонов выберите шаблон **Форма сопоставления рабочего процесса**.  
+4.  In the list of templates, choose the **Workflow Association Form** template.  
   
-5.  В текстовом поле **Имя** введите ExpenseReportAssocForm.aspx.  
+5.  In the **Name** text box, enter **ExpenseReportAssocForm.aspx**.  
   
-6.  Нажмите кнопку **Добавить**, чтобы добавить форму в проект.  
+6.  Choose the **Add** button to add the form to the project.  
   
-## Разработка и программирование формы связывания  
- В этой процедуре показана реализация функциональных возможностей формы с помощью элементов управления и кода.  
+## <a name="designing-and-coding-the-association-form"></a>Designing and Coding the Association Form  
+ In this procedure, you introduce functionality to the association form by adding controls and code to it.  
   
-#### Разработка и программирование формы связывания  
+#### <a name="to-design-and-code-the-association-form"></a>To design and code the association form  
   
-1.  В форме связывания \(файл ExpenseReportAssocForm.aspx\) найдите элемент `asp:Content` с `ID="Main"`.  
+1.  In the association form (ExpenseReportAssocForm.aspx), locate the `asp:Content` element that has `ID="Main"`.  
   
-2.  После первой строки этого элемента содержимого добавьте следующий код, обеспечивающий создание метки и вывод текстового поля, в котором запрашивается лимит утверждаемой суммы затрат \(*AutoApproveLimit*\):  
+2.  Directly after the first line in this content element, add the following code to create a label and textbox that prompts for the expense approval limit (*AutoApproveLimit*):  
   
     ```  
     <asp:Label ID="lblAutoApproveLimit" Text="Auto Approval Limit:" runat="server" />  
@@ -135,14 +140,14 @@ caps.handback.revision: 37
     <br /><br />  
     ```  
   
-3.  Разверните файл **ExpenseReportAssocForm.aspx** в **обозревателе решений**, чтобы отобразить для него список зависимых файлов.  
+3.  Expand the **ExpenseReportAssocForm.aspx** file in **Solution Explorer** to display its dependent files.  
   
     > [!NOTE]  
-    >  Если это проект в [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)], необходимо нажать кнопку **Просмотреть все файлы**, чтобы выполнить этот шаг.  
+    >  If your project is in [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)], you must choose the **View All Files** button to perform this step.  
   
-4.  Открыть контекстное меню для файла ExpenseReportAssocForm.aspx и выберите команду **Просмотреть код**.  
+4.  Open the shortcut menu for the ExpenseReportAssocForm.aspx file and choose **View Code**.  
   
-5.  Замените метод `GetAssociationData` следующим кодом.  
+5.  Replace the `GetAssociationData` method with:  
   
     ```vb  
     Private Function GetAssociationData() As String  
@@ -163,31 +168,31 @@ caps.handback.revision: 37
     }  
     ```  
   
-## Добавление формы запуска в рабочий процесс  
- Теперь необходимо создать форму запуска, отображаемую, когда пользователь запускает рабочий процесс для отчета о затратах.  
+## <a name="adding-an-initiation-form-to-the-workflow"></a>Adding an Initiation Form to the Workflow  
+ Next, create the initiation form that appears when users run the workflow against their expense reports.  
   
-#### Создание формы запуска  
+#### <a name="to-create-an-initiation-form"></a>To create an initiation form  
   
-1.  Выберите узел **Workflow1Обозревателе Решений**.  
+1.  Choose the **Workflow1** node in **Solution Explorer**.  
   
-2.  Для отображения диалогового окна **Добавление нового элемента** выберите в меню **Проект** команду **Добавить новый элемент**.  
+2.  On the menu bar, choose **Project**, **Add New Item** display the **Add New Item** dialog box.  
   
-3.  В древовидном представлении в диалоговом окне разверните узел **Visual C\#** или **Visual Basic** \(в зависимости от языка проекта\), затем узел **SharePoint** и выберите **2010**.  
+3.  In the dialog box tree view, expand either **Visual C#** or **Visual Basic**  (depending on your project language), expand the **SharePoint** node, and then choose the **2010** node.  
   
-4.  В списке шаблонов выберите шаблон **Форма запуска рабочего процесса**.  
+4.  In the list of templates, choose the **Workflow Initiation Form** template.  
   
-5.  В текстовом поле **Имя** введите ExpenseReportInitForm.aspx.  
+5.  In the **Name** text box, enter **ExpenseReportInitForm.aspx**.  
   
-6.  Нажмите кнопку **Добавить**, чтобы добавить форму в проект.  
+6.  Choose the **Add** button to add the form to the project.  
   
-## Разработка и программирование формы запуска  
- Теперь необходимо реализовать функциональные возможности формы запуска, добавив в нее элементы управления и код.  
+## <a name="designing-and-coding-the-initiation-form"></a>Designing and Coding the Initiation Form  
+ Next, introduce functionality to the initiation form by adding controls and code to it.  
   
-#### Написание кода для формы запуска  
+#### <a name="to-code-the-initiation-form"></a>To code the initiation form  
   
-1.  В форме запуска \(файл ExpenseReportInitForm.aspx\) найдите элемент `asp:Content` с `ID="Main"`.  
+1.  In the initiation form (ExpenseReportInitForm.aspx), locate the `asp:Content` element that contains `ID="Main"`.  
   
-2.  После первой строки этого элемента содержимого добавьте следующий код, обеспечивающий создание метки и вывод текстового поля, в котором отображается лимит утверждаемой суммы \(*AutoApproveLimit*\), указанный в форме связывания, и еще одну метку и текстовое поле, в котором запрашивается ввод общей суммы расходов \(*ExpenseTotal*\):  
+2.  Directly after the first line in this content element, add the following code to create a label and textbox that displays the expense approval limit (*AutoApproveLimit*) that was entered in the association form, and another label and textbox to prompt for the expense total (*ExpenseTotal*):  
   
     ```  
     <asp:Label ID="lblAutoApproveLimit" Text="Auto Approval Limit:" runat="server" />  
@@ -200,11 +205,11 @@ caps.handback.revision: 37
     <br /><br />  
     ```  
   
-3.  Разверните файл **ExpenseReportInitForm.aspx** в **обозревателе решений**, чтобы отобразить для него список зависимых файлов.  
+3.  Expand the **ExpenseReportInitForm.aspx** file in **Solution Explorer** to display its dependent files.  
   
-4.  Открыть контекстное меню для файла ExpenseReportInitForm.aspx и выберите команду **Просмотреть код**.  
+4.  Open the shortcut menu for the ExpenseReportInitForm.aspx file and choose **View Code**.  
   
-5.  Замените метод `Page_Load` кодом из следующего примера.  
+5.  Replace the `Page_Load` method with the following example:  
   
     ```vb  
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As   
@@ -226,7 +231,7 @@ caps.handback.revision: 37
     }  
     ```  
   
-6.  Замените метод `GetInitiationData` кодом из следующего примера.  
+6.  Replace the `GetInitiationData` method with the following example:  
   
     ```vb  
     ' This method is called when the user clicks the button to start the workflow.  
@@ -250,59 +255,59 @@ caps.handback.revision: 37
     }  
     ```  
   
-## Настройка рабочего процесса  
- Теперь необходимо настроить рабочий процесс.  В дальнейшем предстоит связать с ним две формы.  
+## <a name="customizing-the-workflow"></a>Customizing the Workflow  
+ Next, customize the workflow. Later, you will associate two forms to the workflow.  
   
-#### Настройка рабочего процесса  
+#### <a name="to-customize-the-workflow"></a>To customize the workflow  
   
-1.  Откройте рабочий процесс в конструкторе рабочих процессов, дважды щелкнув элемент Workflow1 в проекте.  
+1.  Display the workflow in the workflow designer by opening Workflow1 in the project.  
   
-2.  На **панели элементов** разверните узел **Рабочий процесс Windows версии 3.0** и найдите действие **IfElse**.  
+2.  In the **Toolbox**, expand the **Windows Workflow v3.0** node and locate the **IfElse** activity.  
   
-3.  Добавьте это действие в рабочий процесс, выполнив одно из следующих действий.  
+3.  Add this activity to the workflow by performing one of the following steps:  
   
-    -   Откройте контекстное меню для элемента **ifElse** выберите **Копировать**, откройте контекстное меню для строки под элементом управления содержимым **onWorkflowActivated1** в конструкторе и выберите **Вставить**.  
+    -   Open the shortcut menu for the **IfElse** activity, choose **Copy**, open the shortcut menu for the line under the **onWorkflowActivated1** activity in the workflow designer, and then choose **Paste**.  
   
-    -   Перетащите действие **IfElse** из узла **панели элементов** на линию, расположенную под действием **onWorkflowActivated1**.  
+    -   Drag the **IfElse** activity from the **Toolbox**, and connect it to the line under the **onWorkflowActiviated1** activity in the workflow designer.  
   
-4.  На панели элементов разверните узел **Рабочий процесс SharePoint** и найдите действие **CreateTask**.  
+4.  In the Toolbox, expand the **SharePoint Workflow** node and locate the **CreateTask** activity.  
   
-5.  Добавьте это действие в рабочий процесс, выполнив одно из следующих действий.  
+5.  Add this activity to the workflow by performing one of the following steps:  
   
-    -   Открыть контекстное меню действия **CreateTask**, выберите **Копировать**, чтобы открыть контекстное меню для одной из двух областей **Перетащите действия сюда** в действии IfElseActivity1 в конструкторе рабочих процессов, а затем выберите **Вставить**.  
+    -   Open the shortcut menu for the **CreateTask** activity, choose **Copy**, open the shortcut menu for one of the two **Drop Activities Here** areas within **IfElseActivity1** in the workflow designer, and then choose **Paste**.  
   
-    -   Перетащите действие **CreateTask** из **Панель элементов** в одну из областей 2 **Перетащите действия сюда** в действии IfElseActivity1.  
+    -   Drag the **CreateTask** activity from the **Toolbox** onto one of the two **Drop Activities Here** areas within **IfElseActivity1**.  
   
-6.  В окне **Свойства** задайте свойству **CorrelationToken** значение *taskToken*.  
+6.  In the **Properties** window, enter a property value of *taskToken* for the **CorrelationToken** property.  
   
-7.  Разверните свойство **CorrelationToken**, щелкнув знак плюса \(![Плюс просмотра дерева](~/sharepoint/media/plus.gif "Плюс просмотра дерева")\) рядом с ним.  
+7.  Expand the **CorrelationToken** property by choosing the plus sign (![TreeView plus](../sharepoint/media/plus.gif "TreeView plus")) next to it.  
   
-8.  Нажмите стрелку раскрывающегося списка в для свойства **OwnerActivityName** и задайте значение *Workflow1*.  
+8.  Choose the drop-down arrow on the **OwnerActivityName** sub property, and set the *Workflow1* value.  
   
-9. Щелкните свойство **TaskId** и нажмите кнопку с многоточием \(![Эллипс конструктора ASP.NET для мобильных устройств](~/sharepoint/media/mwellipsis.gif "Эллипс конструктора ASP.NET для мобильных устройств")\), чтобы открыть диалоговое окно **Привязка свойства**.  
+9. Choose the **TaskId** property, and then choose the ellipsis (![ASP.NET Mobile Designer ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile Designer ellipse")) button to display the **Bind Property** dialog box.  
   
-10. Откройте вкладку **Привязка к новому члену**, выберите переключатель **Создать поле**, а затем нажмите кнопку **ОК**.  
+10. Choose the **Bind to a new member** tab, choose the **Create Field** option button, and then choose the **OK** button.  
   
-11. Щелкните свойство **TaskProperties** и нажмите кнопку с многоточием \(![Эллипс конструктора ASP.NET для мобильных устройств](~/sharepoint/media/mwellipsis.gif "Эллипс конструктора ASP.NET для мобильных устройств")\), чтобы открыть диалоговое окно **Привязка свойства**.  
+11. choose the **TaskProperties** property, and then choose the ellipsis (![ASP.NET Mobile Designer ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile Designer ellipse")) button to display the **Bind Property** dialog box.  
   
-12. Откройте вкладку **Привязка к новому члену**, выберите переключатель **Создать поле**, а затем нажмите кнопку **ОК**.  
+12. Choose the **Bind to a new member** tab, choose the **Create Field** option button, and then choose the **OK** button.  
   
-13. На **панели элементов** разверните узел**Рабочий процесс SharePoint** и найдите действие **LogToHistoryListActivity**.  
+13. In the **Toolbox**, expand the **SharePoint Workflow** node, and locate the **LogToHistoryListActivity** activity.  
   
-14. Добавьте это действие в рабочий процесс, выполнив одно из следующих действий.  
+14. Add this activity to the workflow by performing one of the following steps:  
   
-    -   Открыть контекстное меню действия **LogToHistoryListActivity**, выберите **Копировать**, чтобы открыть контекстное меню для одной из другой области **Перетащите действия сюда** в действии IfElseActivity1 в конструкторе рабочих процессов, а затем выберите **Вставить**.  
+    -   Open the shortcut menu for the **LogToHistoryListActivity** activity, choose **Copy**, open the shortcut menu for the other **Drop Activities Here** area within **IfElseActivity1** in the workflow designer, and then choose **Paste**.  
   
-    -   Перетащите действие **LogToHistoryListActivity** из **Панель элементов** и переместите его в другую область **Действия размещения здесь** в действии IfElseActivity1.  
+    -   Drag the **LogToHistoryListActivity** activity from the **Toolbox**, and drop it onto the other **Drop Activities Here** area within **IfElseActivity1**.  
   
-## Добавление кода в рабочий процесс  
- Теперь добавьте в рабочий процесс код, реализующий функциональные возможности.  
+## <a name="adding-code-to-the-workflow"></a>Adding Code to the Workflow  
+ Next, add code to the workflow to give it functionality.  
   
-#### Добавление кода в рабочий процесс  
+#### <a name="to-add-code-to-the-workflow"></a>To add code to the workflow  
   
-1.  Открыть контекстное меню действия **createTask1** в конструкторе рабочих процессов, а затем выберите **Просмотреть код**.  
+1.  Open the shortcut menu for the **createTask1** activity in the workflow designer, and then choose **View Code**.  
   
-2.  Добавьте следующий метод:  
+2.  Add the following method:  
   
     ```vb  
     Private Sub createTask1_MethodInvoking(ByVal sender As   
@@ -329,9 +334,9 @@ caps.handback.revision: 37
     ```  
   
     > [!NOTE]  
-    >  В этом коде замените `somedomain\\someuser` на имя домена и пользователя, для которых создается задача, например `Office\\JoeSch`.  Для тестирования проще всего использовать учетную запись, используемую при разработке.  
+    >  In the code, replace `somedomain\\someuser` with a domain and user name for which a task will be created, such as, "`Office\\JoeSch`". For testing it is easiest to use the account you are developing with.  
   
-3.  Добавьте следующий пример кода после метода `MethodInvoking`:  
+3.  Below the `MethodInvoking` method, add the following example:  
   
     ```vb  
     Private Sub checkApprovalNeeded(ByVal sender As Object, ByVal e As   
@@ -359,15 +364,15 @@ caps.handback.revision: 37
     }   
     ```  
   
-4.  В конструкторе рабочих процессов щелкните действие **ifElseBranchActivity1**.  
+4.  In the workflow designer, choose the **ifElseBranchActivity1** activity.  
   
-5.  В окне **Свойства** щелкните стрелку раскрывающегося меню на свойстве **Условие** и установите значение *Code Condition*.  
+5.  In the **Properties** window, choose the drop-down arrow of the **Condition** property, and then set the *Code Condition* value.  
   
-6.  Разверните свойство **Условие**, щелкнув знак плюса \(![Плюс просмотра дерева](~/sharepoint/media/plus.gif "Плюс просмотра дерева")\) рядом с ним, и задайте ему значение *checkApprovalNeeded*.  
+6.  Expand the **Condition** property by choosing the plus sign (![TreeView plus](../sharepoint/media/plus.gif "TreeView plus")) next to it, and then set its value to *checkApprovalNeeded*.  
   
-7.  В конструкторе рабочих процессов откройте контекстное меню для **logToHistoryListActivity1** и выберите **Создать обработчики**, чтобы создать пустой метод для события `MethodInvoking`.  
+7.  In the workflow designer, open the shortcut menu for the **logToHistoryListActivity1** activity, and then choose **Generate Handlers** to generate an empty method for the `MethodInvoking` event.  
   
-8.  Замените код `MethodInvoking` следующим.  
+8.  Replace the `MethodInvoking` code with the following:  
   
     ```vb  
     Private Sub logToHistoryListActivity1_MethodInvoking(ByVal sender As   
@@ -386,71 +391,71 @@ caps.handback.revision: 37
     }   
     ```  
   
-9. Нажмите клавишу F5 для отладки программы.  
+9. Choose the F5 key to debug the program.  
   
-     Для приложения будет выполнена компиляция, затем развертывание, активация его компонентов, утилизация пула приложений [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] и запуск веб\-браузера, в котором откроется адрес, заданный в свойстве **URL\-адрес сайта**.  
+     This compiles the application, packages it, deploys it, activates its features, recycles the [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] application pool, and then starts the browser at the location specified in the **Site Url** property.  
   
-## Связывание рабочего процесса со списком документов  
- Затем откройте форму связывания рабочего процесса, связав его со списком **Общиедокументы** на сайте SharePoint.  
+## <a name="associating-the-workflow-to-the-documents-list"></a>Associating the Workflow to the Documents List  
+ Next, display the workflow association form by associating the workflow with the **SharedDocuments** list on the SharePoint site.  
   
-#### Связывание рабочего процесса  
+#### <a name="to-associate-the-workflow"></a>To associate the workflow  
   
-1.  На панели быстрого запуска щелкните ссылку **Общие документы**.  
+1.  Choose the **Shared Documents** link on the QuickLaunch bar.  
   
-2.  Щелкните ссылку **Библиотека** в области **Инструменты библиотеки** и нажмите кнопку **Параметры библиотеки** на ленте.  
+2.  Choose the **Library** link on the **Library Tools** tab and then choose the **Library Settings** ribbon button.  
   
-3.  В разделе **Разрешения и управление** щелкните ссылку **Параметры рабочих процессов**, затем ссылку **Добавить рабочий процесс** на странице **Рабочие процессы**.  
+3.  In the **Permissions and Management** section, choose the **Workflow Settings** link and then choose the **Add a workflow** link on the **Workflows** page.  
   
-4.  В верхнем списке на странице параметров рабочих процессов выберите шаблон **ExpenseReport \- Workflow1**.  
+4.  In the top list in the workflow settings page, choose the **ExpenseReport - Workflow1** template.  
   
-5.  В следующем поле введите ExpenseReportWorkflow и нажмите кнопку **Далее**.  
+5.  In the next field, enter **ExpenseReportWorkflow** and then choose the **Next** button.  
   
-     Рабочий процесс будет связан со списком **Общие документы**, и отобразится форма связывания рабочего процесса.  
+     This associates the workflow with the **Shared Documents** list and displays the workflow association form.  
   
-6.  В текстовом поле **Лимит автоматического утверждения** введите 1200 и нажмите кнопку **Сопоставить рабочий процесс**.  
+6.  In the **Auto Approval Limit** text box, enter **1200** and then choose the **Associate Workflow** button.  
   
-## Запуск рабочего процесса  
- Теперь необходимо связать рабочий процесс с одним из документов в списке **Общие документы**, чтобы открыть форму запуска рабочего процесса.  
+## <a name="starting-the-workflow"></a>Starting the Workflow  
+ Next, associate the workflow to one of the documents in the **Shared Documents** list to display the workflow initiation form.  
   
-#### Запуск рабочего процесса  
+#### <a name="to-start-the-workflow"></a>To start the workflow  
   
-1.  На странице SharePoint нажмите кнопку **Домой**.  
+1.  On the SharePoint page, choose the **Home** button.  
   
-2.  Выберите ссылку **Общие документы** на панели быстрого запуска, чтобы вывести список **Общие документы**.  
+2.  Choose the **Shared Documents** link on the QuickLaunch bar to display the **Shared Documents** list.  
   
-3.  Выберите ссылку **Документы** на вкладке **Средства библиотеки** в верхней части страницы, а затем нажмите кнопку **Отправить документ** на ленте для передачи нового документа в список **Общие документы**.  
+3.  Choose the **Documents** link on the **Library Tools** tab at the top of the page, and then choose the **Upload Document** button on the ribbon to upload a new document into the **Shared Documents** list.  
   
-4.  В диалоговом окне **Отправить документ** нажмите кнопку **Обзор**, выберите любой файл документа, нажмите кнопку **Открыть**, а затем нажмите кнопку **ОК**.  
+4.  In the **Upload Document** dialog box, choose the **Browse** button, choose any document file, choose the **Open** button, and then choose the **OK** button.  
   
-     В этом диалоговом окне можно изменять параметры документа, но в данном случае оставьте значения по умолчанию и нажмите кнопку **Сохранить**.  
+     You can change the settings for the document in this dialog box, but leave them at the default values by choosing the **Save** button.  
   
-5.  Выберите отправленный документ, нажмите появившуюся стрелку раскрывающегося списка, а затем выберите элемент **Рабочие процессы**.  
+5.  Choose the uploaded document, choose the drop-down arrow that appears, and then choose the **Workflows** item.  
   
-6.  Щелкните изображение рядом с рабочим процессом ExpenseReportWorkflow.  
+6.  Choose the image next to ExpenseReportWorkflow.  
   
-     Откроется форма запуска рабочего процесса. \(Обратите внимание, что значение в поле **Лимит автоматического утверждения** доступно только для чтения, поскольку оно введено в форме связывания.\)  
+     This displays the workflow initiation form. (Note that the value displayed in the **Auto Approval Limit** box is read-only because it was entered in the association form.)  
   
-7.  В текстовом поле **Сумма затрат** введите 1600, а затем нажмите кнопку **Запустить рабочий процесс**.  
+7.  In the **Expense Total** text box, enter **1600**, and then choose the **Start Workflow** button.  
   
-     Снова откроется список **Общие документы**.  В элемент, только что запущенный рабочим процессом, добавится столбец **ExpenseReportWorkflow** со значением **Выполнен**.  
+     This displays the **Shared Documents** list again. A new column named **ExpenseReportWorkflow** with the value **Completed** is added to the item the workflow just started.  
   
-8.  Щелкните стрелку раскрывающегося меню рядом с отправленным документом и выберите **Рабочие процессы**, чтобы открыть страницу состояния рабочего процесса.  Щелкните значение **Выполнен** в столбце **Выполненные рабочие процессы**.  Задача указывается в разделе **Задачи**.  
+8.  Choose the drop-down arrow next to the uploaded document and then choose the **Workflows** item to display the workflow status page. Choose the **Completed** value under **Completed Workflows**. The task is listed under the **Tasks** section.  
   
-9. Выберите название задачи, чтобы вывести сведения о ней.  
+9. Choose the title of the task to display its task details.  
   
-10. Вернитесь к списку **Общиедокументы** и перезапустите рабочий процесс, используя тот же документ или любой другой.  
+10. Go back to the **SharedDocuments** list and restart the workflow, using either the same document or a different one.  
   
-11. На странице запуска введите сумму, не превышающую указанную на странице связывания \(1200\).  
+11. Enter an amount on the initiation page that is less than or equal to the amount entered on the association page (**1200**).  
   
-     При этом вместо задачи будет создана запись в списке журнала.  Она отображается на странице состояния рабочего процесса в разделе **Журнал рабочего процесса**.  Обратите внимание на сообщение в столбце **Выходной результат** в событии журнала.  В ней содержится текст, введенный в событии `logToHistoryListActivity1.MethodInvoking`, в котором указана автоматически утвержденная сумма.  
+     When this occurs, an entry in the history list is created instead of a task. The entry displays in the **Workflow History** section of the workflow status page. Note the message in the **Outcome** column of the history event. It contains the text entered in the `logToHistoryListActivity1.MethodInvoking` event that includes the amount which was auto-approved.  
   
-## Следующие действия  
- Дополнительные сведения о создании шаблонов рабочих процессов см. в следующих разделах:  
+## <a name="next-steps"></a>Next Steps  
+ You can learn more about how to create workflow templates from these topics:  
   
--   Дополнительные сведения об рабочих процессах SharePoint см. в разделе [Рабочие процессы в Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkID=166275).  
+-   To learn more about SharePoint workflows, see [Workflows in Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkID=166275).  
   
-## См. также  
- [Создание решений рабочих процессов SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)   
- [Пошаговое руководство. Добавление страницы приложения в рабочий процесс](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  
+## <a name="see-also"></a>See Also  
+ [Creating SharePoint Workflow Solutions](../sharepoint/creating-sharepoint-workflow-solutions.md)   
+ [Walkthrough: Add an Application Page to a Workflow](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  
   
   

@@ -1,104 +1,110 @@
 ---
-title: "Добавление пользовательских элементов управления в окно &quot;Источники данных&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "09/21/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.datasource.howtoaddcustomcontrol"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "Окно "Источники данных", добавление элементов управления"
-  - "элементы управления [Visual Studio], добавление в окно "Источники данных""
-  - "Класс DefaultBindingPropertyAttribute, использование"
-  - "Класс LookupBindingPropertiesAttribute, использование"
-  - "Класс ComplexBindingPropertiesAttribute, использование"
-  - "Окно "Источники данных", выбор элементов управления"
+title: Add custom controls to the Data Sources window | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.datasource.howtoaddcustomcontrol
+helpviewer_keywords:
+- Data Sources Window, adding controls
+- controls [Visual Studio], adding to Data Sources Window
+- DefaultBindingPropertyAttribute class, using
+- LookupBindingPropertiesAttribute class, using
+- ComplexBindingPropertiesAttribute class, using
+- Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 caps.latest.revision: 42
-caps.handback.revision: 39
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: c8980eb2e7724112731e3b9fef75aa2c4521cbc0
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Добавление пользовательских элементов управления в окно &quot;Источники данных&quot;
-При перетаскивании элемента из окна **Источники данных** в рабочую область конструирования для создания элемента управления, связанного с данными, можно выбрать тип создаваемого элемента управления.  Каждый элемент в этом окне содержит раскрывающееся меню, в котором отображаются доступные элементы управления.  Набор элементов управления, связанных с тем или иным элементом, определяется по типу данных этого элемента.  Если создаваемый элемент управления отсутствует в списке, можно выполнить инструкции, приведенные в этом разделе, для добавления этого элемента управления в список.  
+# <a name="add-custom-controls-to-the-data-sources-window"></a>Add custom controls to the Data Sources window
+When you drag an item from the **Data Sources** window to a design surface to create a data-bound control, you can select the type of control that you create. Each item in the window has a drop-down list that displays the controls that you can choose from. The set of controls associated with each item is determined by the data type of the item. If the control that you want to create does not appear in the list, you can follow the instructions in this topic to add the control to the list.  
   
- Дополнительные сведения о выборе элементов управления, связанных с данными, которые следует создавать для объектов окна **Источники данных**, см. в разделе [Задание поведения, при котором элемент управления создается при перетаскивании из окна "Источники данных"](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+ For more information about selecting data-bound controls to create for items in the **Data Sources** window, see [Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
 > [!NOTE]
->  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих настроек или выпуска.  Чтобы изменить параметры, выберите в меню **Сервис** команду **Импорт и экспорт параметров**.  Дополнительные сведения см. в разделе [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/ru-ru/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help, depending on your active settings or edition. To change your settings, on the **Tools** menu, select **Import and Export Settings**. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-##  <a name="customizinglist"></a> Настройка списка элементов управления, доступных для привязки к типу данных  
- Выполните приведенные ниже действия для добавления элементов управления в список доступных элементов управления для объектов в окне **Источники данных** с определенным типом данных или удаления элементов управления из этого списка.  
+##  <a name="customizinglist"></a> Customize the list of bindable controls for a data type  
+ To add or remove controls from the list of available controls for items in the **Data Sources** window that have a specific data type, perform the following steps.  
   
-#### Для выбора элементов управления отображающихся для типа данных  
+#### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>To select the controls to be listed for a data type  
   
-1.  Убедитесь, что открыт конструктор WPF или конструктор Windows Forms.  
+1.  Make sure that the WPF Designer or the Windows Forms Designer is open.  
   
-2.  В окне **Источники данных** щелкните элемент, который является частью добавленного в окно источника данных, затем щелкните раскрывающееся меню для этого элемента.  
+2.  In the **Data Sources** window, click an item that is part of a data source you added to the window, and then click the drop-down menu for the item.  
   
-3.  В раскрывающемся меню щелкните пункт **Настроить**.  Будет открыто одно из перечисленных ниже диалоговых окон:  
+3.  In the drop-down menu, click **Customize**. One of the following dialog boxes opens:  
   
-    -   Если открыт конструктор Windows Forms, будет открыта страница **Настройка данных интерфейса пользователя** диалогового окна  **Параметры**.  
+    -   If the Windows Forms Designer is open, the **Data UI Customization** page of the **Options** dialog box opens.  
   
-    -   Если открыт конструктор WPF, будет открыто диалоговое окно **Настройка привязки элементов управления**.  
+    -   If the WPF Designer is open, the **Customize Control Binding** dialog box opens.  
   
-4.  В раскрывающемся списке **Тип данных** этого диалогового окна выберите тип данных.  
+4.  In the dialog box, select a data type from the **Data type** drop-down list.  
   
-    -   Чтобы настроить список элементов управления для таблицы или объекта, выберите пункт **\[Список\]**.  
+    -   To customize the list of controls for a table or object, select **[List]**.  
   
-    -   Чтобы настроить список элементов управления для столбца таблицы или свойства объекта, выберите тип данных столбца или свойства в базовом хранилище данных.  
+    -   To customize the list of controls for a column of a table or a property of an object, select the data type of the column or property in the underlying data store.  
   
-    -   Чтобы настроить список элементов управления для отображения объектов с пользовательскими типами данных, выберите пункт **\[Другой\]**.  Например, если приложение имеет настраиваемый элемент управления, отображающий данные из нескольких свойств определенного объекта, для элемента управления следует выбрать тип данных **\[Другой\]**.  
+    -   To customize the list of controls to display data objects that have user-defined shapes, select **[Other]**. For example, select **[Other]** if your application has a custom control that displays data from more than one property of a particular object.  
   
-5.  Для каждого элемента управления в поле **Связанные элементы управления**, который должен быть доступен для выбранного типа данных, установите или снимите выделение всех элементов управления, которые требуется удалить из списка.  
-  
-    > [!NOTE]
-    >  Если выбираемый элемент управления не появляется в списке **Связанные элементы управления**, необходимо добавить элемент управления в этот список.  Дополнительные сведения см. в разделе [Добавление элемента управления в список сопоставленных с типом данных элементов управления](#addingcontrols).  
-  
-6.  Нажмите кнопку **ОК**.  
-  
-7.  В окне **Источники данных** щелкните элемент, который имеет тип данных, сопоставленный с одним или несколькими элементами управления, затем щелкните раскрывающееся меню для этого элемента.  
-  
-     Теперь элементы управления, выбранные в поле **Связанные элементы управления**, отображаются в раскрывающемся меню элемента.  
-  
-##  <a name="addingcontrols"></a> Добавление элемента управления в список сопоставленных с типом данных элементов управления  
- Если следует сопоставить элемент управления с типом данных, однако элемент управления не отображается в списке **Связанные элементы управления**, необходимо добавить элемент управления в этот список.  Элемент управления должен быть размещен в текущем решении или в ссылочной сборке, должен быть доступен на **панели элементов** и иметь атрибут, определяющий поведение привязки данных для этого элемента.  
-  
-#### Добавление элементов управления в список связанных элементов управления  
-  
-1.  Добавьте нужный элемент управления на **Панель элементов**, щелкнув правой кнопкой мыши **Панель элементов** и выбрав **Выбрать элементы**.  
-  
-     Элемент управления должен иметь один из перечисленных ниже атрибутов.  
-  
-    |Атрибут|Описание|  
-    |-------------|--------------|  
-    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Реализуйте этот атрибут для простого элемента управления, отображающего один столбец \(или свойство\) данных, например <xref:System.Windows.Forms.TextBox>.|  
-    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Реализуйте этот атрибут в элементе управления, отображающем списки \(или таблицы\) данных, например <xref:System.Windows.Forms.DataGridView>.|  
-    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Реализуйте этот атрибут в элементе управления, отображающем списки \(или таблицы\) данных, но также требующем представления одного столбца или свойства, например <xref:System.Windows.Forms.ComboBox>.|  
-  
-2.  Откройте страницу **Настройка данных интерфейса пользователя** диалогового окна **Параметры** \(для Windows Forms\) или диалоговое окно **Настройка привязки элементов управления** \(для WPF\).  Дополнительные сведения см. в разделе [Настройка списка элементов управления, доступных для привязки к типу данных](#customizinglist).  
-  
-3.  Теперь в поле **Связанные элементы управления** должен отображаться элемент управления, который был добавлен на **панель элементов**.  
+5.  In the **Associated controls** box, select each control that you want to be available for the selected data type, or clear the selection of any controls that you want to remove from the list.  
   
     > [!NOTE]
-    >  Только элементы управления, которые расположены в текущем решении или в указанной ссылочной сборке \(и реализуют один из атрибутов привязки данных в таблице выше\), могут быть добавлены в список связанных элементов.  Чтобы связать пользовательский элемент управления, не доступный в окне **Источники данных**, перетащите элемент управления с **Панели элементов** в рабочую область конструирования, затем перетащите на этот элемент управления из окна **Источники данных** элемент, к которому следует выполнить привязку.  
+    >  If the control that you want to select does not appear in the **Associated controls** box, you must add the control to the list. For more information, see [Adding Controls to the List of Associated Controls for a Data Type](#addingcontrols).  
   
-## См. также  
- [Пошаговое руководство. Отображение данных на форме в приложении Windows](../data-tools/walkthrough-displaying-data-on-a-windows-form.md)   
- [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Создание и изменение типизированных наборов данных](../data-tools/creating-and-editing-typed-datasets.md)   
- [Общие сведения об источниках данных](../data-tools/add-new-data-sources.md)   
- [Задание поведения, при котором элемент управления создается при перетаскивании из окна "Источники данных"](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)   
- [Пошаговое руководство. Создание пользовательского элемента управления Windows Forms с простой привязкой данных](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)   
- [Пошаговое руководство. Создание пользовательского элемента управления Windows Forms со сложной привязкой данных](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)   
- [Пошаговое руководство. Создание пользовательского элемента управления Windows Forms с подстановочной привязкой данных](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)   
- [Диалоговое окно "Настройка привязки элементов управления"](../data-tools/customize-control-binding-dialog-box.md)
+6.  Click **OK**.  
+  
+7.  In the **Data Sources** window, click an item of the data type that you just associated one or more controls, and then click the drop-down menu for the item.  
+  
+     The controls you selected in the **Associated controls** box now appear in the drop-down menu for the item.  
+  
+##  <a name="addingcontrols"></a> Addcontrols to the list of associated controls for a data type  
+ If you want to associate a control with a data type, but the control does not appear in the **Associated controls** box, you must add the control to the list. The control must be located in the current solution or in a referenced assembly. It must also be available in the **Toolbox**, and have an attribute that specifies the control's data binding behavior.  
+  
+#### <a name="to-add-controls-to-the-list-of-associated-controls"></a>To add controls to the list of associated controls  
+  
+1.  Add the desired control to the **Toolbox** by right-clicking the **Toolbox** and selecting **Choose Items**.  
+  
+     The control must have one of the following attributes.  
+  
+    |Attribute|Description|  
+    |---------------|-----------------|  
+    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implement this attribute on simple controls that display a single column (or property) of data, such as a <xref:System.Windows.Forms.TextBox>.|  
+    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implement this attribute on controls that display lists (or tables) of data, such as a <xref:System.Windows.Forms.DataGridView>.|  
+    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Implement this attribute on controls that display lists (or tables) of data, but also need to present a single column or property, such as a <xref:System.Windows.Forms.ComboBox>.|  
+  
+2.  For Windows Forms, on the      **Options** dialog box, open the **Data UI Customization** page. Or, for WPF, open the **Customize Control Binding** dialog box. For more information, see [Customizing the List of Bindable Controls for a Data Type](#customizinglist).  
+  
+3.  In the **Associated controls** box, the control that you just added to the **Toolbox** should now appear.  
+  
+    > [!NOTE]
+    >  Only controls that are located within the current solution or in a referenced assembly can be added to the list of associated controls. (The controls must also implement one of the data-binding attributes in the previous table.) To bind data to a custom control that is not available in the **Data Sources** window, drag the control from the **Toolbox** onto the design surface, and then drag the item to bind to from the **Data Sources** window onto the control.  
+  
+## <a name="see-also"></a>See Also  
+ [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

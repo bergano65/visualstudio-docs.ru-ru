@@ -1,49 +1,54 @@
 ---
-title: "Практическое руководство. Программное использование диалоговых окон Word в скрытом режиме"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "диалоговые окна, скрытый режим в Word"
-  - "скрытые диалоговые окна"
-  - "Word [разработка решений Office в Visual Studio], диалоговые окна"
+title: 'How to: Programmatically Use Word Dialog Boxes in Hidden Mode | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- hidden dialog boxes
+- Word [Office development in Visual Studio], dialog boxes
+- dialog boxes, hidden mode in Word
 ms.assetid: a5619325-8b54-41f1-becb-3f6eae7e4a6b
 caps.latest.revision: 48
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 47
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 527b6c37d87f7a04d93e96692f6d40d4e25e8f39
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Практическое руководство. Программное использование диалоговых окон Word в скрытом режиме
-  Можно выполнять сложные операции на встроенных диалоговых окнах Microsoft Office Word посредством вызова одного метода, не показывая эти окна пользователю.  Используйте для этого метод <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> объекта <xref:Microsoft.Office.Interop.Word.Dialog>, не вызывая метод <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A>.  
+# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>How to: Programmatically Use Word Dialog Boxes in Hidden Mode
+  You can perform complex operations with one method call by invoking the built-in dialog boxes in Microsoft Office Word without displaying them to the user. You can do this by using the <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> method of the <xref:Microsoft.Office.Interop.Word.Dialog> object without calling the <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> method.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## Примеры  
- В следующих примерах кода демонстрируется использование диалогового окна **Настройка страницы** в скрытом режиме для задания свойств нескольких страниц без ввода информации пользователем.  Для настройки пользовательского размера страницы в примерах используется объект <xref:Microsoft.Office.Interop.Word.Dialog>.  Указанные параметры — TopMargin \(верхнее поле\), BottomMargin \(нижнее поле\) и т. д. — доступны в качестве свойств с поздним связыванием объекта <xref:Microsoft.Office.Interop.Word.Dialog>.  Эти свойства динамически создаются приложением Word во время выполнения.  
+## <a name="examples"></a>Examples  
+ The following code examples demonstrate how to use the **Page Setup** dialog box in hidden mode to set multiple page setup properties with no user input. The examples use a <xref:Microsoft.Office.Interop.Word.Dialog> object to configure a custom page size. The specific settings for page setup, such as the top margin, bottom margin, and so on, are available as late-bound properties of the <xref:Microsoft.Office.Interop.Word.Dialog> object. These properties are dynamically created by Word at run time.  
   
- В следующем примере показано выполнение этой задачи в проектах Visual Basic с выключенным параметром **Option Strict** и в проектах Visual C\# для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)].  В этих проектах возможно изменение функций позднего связывания для компиляторов Visual Basic и Visual C\#.  Чтобы использовать следующий пример кода, запустите его в проекте из класса `ThisDocument` или `ThisAddIn`.  
+ The following example demonstrates how to perform this task in Visual Basic projects where **Option Strict** is off and in Visual C# projects that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. In these projects, you can use late binding features in the Visual Basic and Visual C# compilers. To use this example, run it from the `ThisDocument` or `ThisAddIn` class in your project.  
   
- [!code-csharp[Trin_VstcoreWordAutomation#123](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/CS/ThisDocument.cs#123)]
- [!code-vb[Trin_VstcoreWordAutomation#123](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#123)]  
+ [!code-vb[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#123)] [!code-csharp[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#123)]  
   
- В следующем примере показано выполнение этой задачи в проектах Visual Basic, где **Option Strict** on.  В этих проектах для доступа к свойствам с поздним связыванием необходимо использовать отражение.  Чтобы использовать следующий пример кода, запустите его в проекте из класса `ThisDocument` или `ThisAddIn`.  
+ The following example demonstrates how to perform this task in Visual Basic projects where **Option Strict** is on. In these projects, you must use reflection to access the late-bound properties. To use this example, run it from the `ThisDocument` or `ThisAddIn` class in your project.  
   
- [!code-vb[Trin_VstcoreWordAutomation#104](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#104)]  
+ [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]  
   
-## См. также  
- [Практическое руководство. Программное использование встроенных диалоговых окон в Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
- [Общие сведения об объектной модели Word](../vsto/word-object-model-overview.md)   
- [Позднее связывание в решениях Office](../vsto/late-binding-in-office-solutions.md)   
- [Отражение &#40;C&#35; и Visual Basic&#41;](http://msdn.microsoft.com/library/5d1d1bcf-08de-4d0b-97a8-912d17c00f26)  
+## <a name="see-also"></a>See Also  
+ [How to: Programmatically Use Built-In Dialog Boxes in Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
+ [Word Object Model Overview](../vsto/word-object-model-overview.md)   
+ [Late Binding in Office Solutions](../vsto/late-binding-in-office-solutions.md)   
+ [Reflection (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
+ [Reflection (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
   
   

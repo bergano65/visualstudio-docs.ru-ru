@@ -1,29 +1,34 @@
 ---
-title: "How to: Handle Deployment Conflicts"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "SharePoint development in Visual Studio, extending deployment"
+title: 'How to: Handle Deployment Conflicts | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- SharePoint development in Visual Studio, extending deployment
 ms.assetid: 8e545873-3fed-46cf-a95f-27b5fc0d5f83
 caps.latest.revision: 14
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 13
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 2e8f56380651de9c573dea674b26091aec8b0c0b
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# How to: Handle Deployment Conflicts
-  Можно самостоятельно создать код для обработки конфликтов развертывания в элементе проекта SharePoint.  Например, можно определить, существуют ли уже какие\-либо файлы элемента текущего проекта в расположении развертывания, и удалить существующие файлы перед развертыванием элемента текущего проекта.  Дополнительные сведения о конфликтах при развертывании см. в разделе [Extending SharePoint Packaging and Deployment](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  
+# <a name="how-to-handle-deployment-conflicts"></a>How to: Handle Deployment Conflicts
+  You can provide your own code to handle deployment conflicts for a SharePoint project item. For example, you might determine whether any files in the current project item already exist in the deployment location, and then delete the deployed files before the current project item is deployed. For more information about deployment conflicts, see [Extending SharePoint Packaging and Deployment](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  
   
-### Обработка конфликтов развертывания  
+### <a name="to-handle-a-deployment-conflict"></a>To handle a deployment conflict  
   
-1.  Создайте расширение элемента проекта, расширение проекта или определение нового типа элемента проекта.  Дополнительные сведения см. в следующих разделах.  
+1.  Create a project item extension, a project extension, or a definition of a new project item type. For more information, see the following topics:  
   
     -   [How to: Create a SharePoint Project Item Extension](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
   
@@ -31,33 +36,32 @@ caps.handback.revision: 13
   
     -   [How to: Define a SharePoint Project Item Type](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
   
-2.  В расширении обработайте событие <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> объекта <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> \(в расширении элемента проекта или расширении проекта\) либо объекта <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> \(в определении нового типа элемента проекта\).  
+2.  In the extension, handle the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> event of an <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> object (in a project item extension or project extension) or an <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> object (in a definition of a new project item type).  
   
-3.  В обработчике событий поместите код, определяющий, конфликтует ли развертываемый элемент проекта с развернутым решением на сайте SharePoint, по критериям, применимым к данному сценарию.  С помощью свойства <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemEventArgs.ProjectItem%2A> параметра аргументов события можно проанализировать развертываемый элемент проекта, а файлы в расположении развертывания можно проанализировать с помощью команды SharePoint, определенной для этой цели.  
+3.  In the event handler, determine whether there is a conflict between the project item that is being deployed and the deployed solution on the SharePoint site, based on criteria that apply to your scenario. You can use the <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemEventArgs.ProjectItem%2A> property of the event arguments parameter to analyze the project item that is being deployed, and you can analyze the files at the deployment location by calling a SharePoint command that you define for this purpose.  
   
-     При обработке большинства типов конфликтов сначала требуется определить, какой шаг развертывания выполняется.  Это можно сделать при помощи свойства <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs.DeploymentStepInfo%2A> параметра аргументов события.  Как правило, имеет смысл проверять наличие конфликтов во время встроенного шага развертывания <xref:Microsoft.VisualStudio.SharePoint.Deployment.DeploymentStepIds.AddSolution>, однако такую проверку можно выполнять на любом шаге развертывания.  
+     For many types of conflicts, you might first want to determine which deployment step is executing. You can do this by using the <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs.DeploymentStepInfo%2A> property of the event arguments parameter. Although it typically makes sense to detect conflicts during the built-in <xref:Microsoft.VisualStudio.SharePoint.Deployment.DeploymentStepIds.AddSolution> deployment step, you can check for conflicts during any deployment step.  
   
-4.  При наличии конфликта с помощью метода <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> свойства <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs.Conflicts%2A> аргументов события создайте новый объект <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict>.  Этот объект представляет конфликт развертывания.  При вызове метода <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> также укажите метод, вызываемый для разрешения конфликта.  
+4.  If a conflict exists, use the <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> method of the <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs.Conflicts%2A> property of the event arguments to create a new <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> object. This object represents the deployment conflict. In your call to the <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> method, also specify the method that is called to resolve the conflict.  
   
-## Пример  
- В следующем примере кода показан простейший процесс обработки конфликтов развертывания в расширении элемента проекта для элементов проекта определения списка.  Для обработки конфликтов развертывания в другом типе элемента проекта укажите другую строку в атрибуте <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>.  Дополнительные сведения см. в разделе [Extending SharePoint Project Items](../sharepoint/extending-sharepoint-project-items.md).  
+## <a name="example"></a>Example  
+ The following code example demonstrates the basic process for handling a deployment conflict in a project item extension for list definition project items. To handle a deployment conflict for a different type of project item, pass a different string to the <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. For more information, see [Extending SharePoint Project Items](../sharepoint/extending-sharepoint-project-items.md).  
   
- Для простоты в данном примере обработчик событий <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> предполагает, что конфликт в развертывании существует \(т. е. он всегда добавляет новый объект <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict>\), а метод `Resolve` просто возвращает значение **true**, указывающее, что конфликт разрешен.  В реальной практике обработчик событий <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> сначала определяет, существует ли конфликт между файлом в элементе текущего проекта и файлом в расположении развертывания, затем добавляет объект <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> только при наличии конфликта.  Например, с помощью свойства `e.ProjectItem.Files` обработчика событий можно анализировать файлы элемента проекта, а с помощью вызова команды SharePoint — анализировать файлы в расположении развертывания.  Аналогичным образом, в реальной практике метод `Resolve` может вызывать команду SharePoint для разрешения конфликта на сайте SharePoint.  Дополнительные сведения о создании команд SharePoint см. в разделе [How to: Create a SharePoint Command](../sharepoint/how-to-create-a-sharepoint-command.md).  
+ For simplicity, the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> event handler in this example assumes that a deployment conflict exists (that is, it always adds a new <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> object), and the `Resolve` method simply returns **true** to indicate that the conflict was resolved. In a real scenario, your <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> event handler would first determine if a conflict exists between a file in the current project item and a file at the deployment location, and then add an <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> object only if a conflict exists. For example, you might use the `e.ProjectItem.Files` property in the event handler to analyze the files in the project item, and you might call a SharePoint command to analyze the files at the deployment location. Similarly, in a real scenario the `Resolve` method might call a SharePoint command to resolve the conflict on the SharePoint site. For more information about creating SharePoint commands, see [How to: Create a SharePoint Command](../sharepoint/how-to-create-a-sharepoint-command.md).  
   
- [!code-csharp[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectitemextension.deploymentconflict/cs/extension/deploymentconflictextension.cs#1)]
- [!code-vb[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../snippets/visualbasic/VS_Snippets_OfficeSP/spextensibility.projectitemextension.deploymentconflict/vb/extension/deploymentconflictextension.vb#1)]  
+ [!code-vb[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/VisualBasic/deploymentconflict/extension/deploymentconflictextension.vb#1)] [!code-csharp[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/CSharp/deploymentconflict/extension/deploymentconflictextension.cs#1)]  
   
-## Компиляция кода  
- Для этого примера требуются ссылки на следующие сборки:  
+## <a name="compiling-the-code"></a>Compiling the Code  
+ This example requires references to the following assemblies:  
   
 -   Microsoft.VisualStudio.SharePoint  
   
 -   System.ComponentModel.Composition  
   
-## Развертывание расширения  
- Чтобы развернуть расширение, создайте пакет расширения [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] \(VSIX\) для сборки и всех остальных файлов, которые предположительно будут распространяться с расширением.  Дополнительные сведения см. в разделе [Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+## <a name="deploying-the-extension"></a>Deploying the Extension  
+ To deploy the extension, create a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) package for the assembly and any other files that you want to distribute with the extension. For more information, see [Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  [Extending SharePoint Packaging and Deployment](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
  [Extending SharePoint Project Items](../sharepoint/extending-sharepoint-project-items.md)   
  [How to: Run Code When Deployment Steps are Executed](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)   

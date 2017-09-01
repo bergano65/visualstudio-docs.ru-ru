@@ -1,61 +1,65 @@
 ---
-title: "Настройка ленты для Outlook"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "настраиваемая лента, сведения о настройке ленты"
-  - "настройка ленты, сведения о настройке ленты"
-  - "инспекторы [разработка решений Office в Visual Studio]"
-  - "Outlook [разработка решений Office в Visual Studio], лента"
-  - "лента [разработка решений Office в Visual Studio], Outlook - приложение"
+title: Customizing a Ribbon for Outlook | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Inspectors [Office development in Visual Studio]
+- Outlook [Office development in Visual Studio], Ribbon
+- customizing the Ribbon, about customizing the Ribbon
+- custom Ribbon, about customizing the Ribbon
+- Ribbon [Office development in Visual Studio], Outlook
 ms.assetid: 11d10e72-806d-4d5e-b080-139bd8633eaa
 caps.latest.revision: 42
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 41
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: d1c65aa089a66e24b57bab3bcec5e0cf835d0fd4
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Настройка ленты для Outlook
-  При настройке ленты в Microsoft Office Outlook необходимо знать, где в приложении отображается настраиваемая лента.  Outlook показывает ленту в пользовательском интерфейсе основного приложения и в окнах, открывающихся при выполнении пользователем определенных задач, таких как создание сообщений электронной почты.  Эти окна приложения называются инспекторами.  
+# <a name="customizing-a-ribbon-for-outlook"></a>Customizing a Ribbon for Outlook
+  When you customize the ribbon in Microsoft Office Outlook, you must consider where your custom ribbon will appear in the application. Outlook displays the ribbon in the main application user interface (UI) and in windows that open when users perform certain tasks, such as creating e-mail messages. These application windows are named inspectors.  
   
- ![ссылка на видео](~/data-tools/media/playvideo.gif "ссылка на видео") Для просмотра связанных демонстрационных видеороликов перейдите по ссылке [Как использовать конструктор ленты для настройки ленты в Outlook](http://go.microsoft.com/fwlink/?LinkID=130312).  
+ ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [How Do I: Use the Ribbon Designer to Customize the Ribbon in Outlook?](http://go.microsoft.com/fwlink/?LinkID=130312).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## Добавление настраиваемой ленты в пользовательский интерфейс основного приложения  
- Пользовательский интерфейс основного приложения в Outlook называется проводником.  Если вы используете элемент **Лента \(визуальный конструктор\)**, вы можете добавить ленту в проводник, щелкнув свойство **RibbonType** ленты в окне **Свойства** и выбрав **Microsoft.Outlook.Explorer**.  
+## <a name="adding-a-custom-ribbon-to-the-main-application-ui"></a>Adding a Custom Ribbon to the Main Application UI  
+ The main application UI in Outlook is called the Explorer. If you are using the **Ribbon (Visual Designer)** item, you can add a ribbon to the Explorer by clicking the **RibbonType** property of the ribbon in the **Properties** window, and then selecting **Microsoft.Outlook.Explorer**.  
   
-## Назначение ленты инспектору  
- Вы можете указать инспектор, который требуется настроить, выбрав тип ленты, соответствующий классу сообщений для инспектора.  
+## <a name="assigning-a-ribbon-to-an-inspector"></a>Assigning a Ribbon to an Inspector  
+ You identify the inspector you want to customize by specifying the ribbon type that corresponds to the message class for the Inspector.  
   
- Если вы используете элемент **Лента \(визуальный конструктор\)**, щелкните свойство **RibbonType** ленты в окне **Свойства** и выберите один или несколько идентификаторов ленты из списка значений.  
+ If you are using the **Ribbon (Visual Designer)** item, click the **RibbonType** property of the ribbon in the **Properties** window, and then select one or more ribbon IDs from the list of values.  
   
- В проект можно добавить несколько лент.  Если несколько лент имеют одинаковый идентификатор, переопределите метод CreateRibbonExtensibilityObject в классе `ThisAddin` проекта, чтобы указать, какую ленту следует отображать во время выполнения.  Дополнительные сведения см. в разделе [Обзор ленты](../vsto/ribbon-overview.md).  Дополнительные сведения о каждом типе ленты см. в технической статье [Настройка ленты в Outlook 2007](http://msdn.microsoft.com/ru-ru/946e97ea-f556-4e84-8fac-01cd9214e170).  
+ You can add more than one ribbon to a project. If more than one ribbon shares a ribbon ID, override the CreateRibbonExtensibilityObject method in the `ThisAddin` class of your project to specify which ribbon to display at run time. For more information, see [Ribbon Overview](../vsto/ribbon-overview.md). For more information about each ribbon type, see the technical article [Customizing the Ribbon in Outlook 2007](http://msdn.microsoft.com/en-us/946e97ea-f556-4e84-8fac-01cd9214e170).  
   
-## Указание типа ленты с помощью XML\-кода ленты  
- Если вы используете элемент **Лента \(XML\)**, проверьте значение параметра *ribbonID* в методе <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> и верните нужную ленту.  
+## <a name="specifying-the-ribbon-type-by-using-ribbon-xml"></a>Specifying the Ribbon Type by Using Ribbon XML  
+ If you are using the **Ribbon (XML)** item, check the value of the *ribbonID* parameter in the <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> method and return the appropriate ribbon.  
   
- Метод <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> автоматически создается средой Visual Studio в файле кода ленты.  Параметр *ribbonID* представляет собой строку, определяющую проводник или тип инспектора.  Полный список возможных значений параметра *ribbonID* см. в технической статье [Настройка ленты в Outlook 2007](http://msdn.microsoft.com/ru-ru/946e97ea-f556-4e84-8fac-01cd9214e170).  
+ The <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> method is automatically generated by Visual Studio in the ribbon code file. The *ribbonID* parameter is a string that identifies the Explorer or a specific type of inspector. For a complete list of the possible values of the *ribbonID* parameter, see the technical article [Customizing the Ribbon in Outlook 2007](http://msdn.microsoft.com/en-us/946e97ea-f556-4e84-8fac-01cd9214e170).  
   
- В следующем примере кода показано, как показывать настраиваемую ленту только в инспекторе `Microsoft.Outlook.Mail.Compose`.  Этот инспектор открывается, когда пользователь создает сообщение электронной почты.  Отображаемая лента указывается в методе `GetResourceText()`, который создается в классе **Ribbon**.  Дополнительные сведения о классе **Ribbon** см. в разделе [XML-ленты](../vsto/ribbon-xml.md).  
+ The following code example demonstrates how to display a custom ribbon only in the `Microsoft.Outlook.Mail.Compose` inspector. This is the inspector that opens when a user creates a new e-mail message. The ribbon to display is specified in the `GetResourceText()` method, which is generated in the **Ribbon** class. For more information about the **Ribbon** class, see [Ribbon XML](../vsto/ribbon-xml.md).  
   
- [!code-csharp[Trin_RibbonOutlookBasic#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_RibbonOutlookBasic/CS/Ribbon1.cs#1)]
- [!code-vb[Trin_RibbonOutlookBasic#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_RibbonOutlookBasic/VB/Ribbon1.vb#1)]  
+ [!code-csharp[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#1)] [!code-vb[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#1)]  
   
-## См. также  
- [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)   
- [Обзор ленты](../vsto/ribbon-overview.md)   
- [Конструктор лент](../vsto/ribbon-designer.md)   
- [XML-ленты](../vsto/ribbon-xml.md)  
+## <a name="see-also"></a>See Also  
+ [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Ribbon Overview](../vsto/ribbon-overview.md)   
+ [Ribbon Designer](../vsto/ribbon-designer.md)   
+ [Ribbon XML](../vsto/ribbon-xml.md)  
   
   

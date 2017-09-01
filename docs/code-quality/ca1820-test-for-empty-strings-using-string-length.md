@@ -1,51 +1,69 @@
 ---
-title: "CA1820: проверьте наличие пустых строк путем проверки длины строки | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "TestForEmptyStringsUsingStringLength"
-  - "CA1820"
-helpviewer_keywords: 
-  - "TestForEmptyStringsUsingStringLength"
-  - "CA1820"
+title: 'CA1820: Test for empty strings using string length | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- TestForEmptyStringsUsingStringLength
+- CA1820
+helpviewer_keywords:
+- TestForEmptyStringsUsingStringLength
+- CA1820
 ms.assetid: da1e70c8-b1dc-46b9-8b8f-4e6e48339681
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 21
----
-# CA1820: проверьте наличие пустых строк путем проверки длины строки
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: bf4c484e1161b7c6dd3dfbe3917be327003d7414
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820: Test for empty strings using string length
 |||  
 |-|-|  
 |TypeName|TestForEmptyStringsUsingStringLength|  
 |CheckId|CA1820|  
-|Категория|Microsoft.Performance|  
-|Критическое изменение|Не критическое|  
+|Category|Microsoft.Performance|  
+|Breaking Change|Non-breaking|  
   
-## Причина  
- Строка сравнивается с пустой строкой с помощью метода <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+## <a name="cause"></a>Cause  
+ A string is compared to the empty string by using <xref:System.Object.Equals%2A?displayProperty=fullName>.  
   
-## Описание правила  
- Сравнение строк с помощью свойства <xref:System.String.Length%2A?displayProperty=fullName> или метода <xref:System.String.IsNullOrEmpty%2A?displayProperty=fullName> выполняется значительно быстрее, чем сравнение с помощью метода <xref:System.Object.Equals%2A>.  Это происходит потому, что метод <xref:System.Object.Equals%2A> выполняет значительно больше инструкций MSIL, чем метод <xref:System.String.IsNullOrEmpty%2A>. Число инструкций MSIL также превышает количество инструкций, необходимых для извлечения значения свойства <xref:System.String.Length%2A> и сравнения этого значения с нулем.  
+## <a name="rule-description"></a>Rule Description  
+ Comparing strings using the <xref:System.String.Length%2A?displayProperty=fullName> property or the <xref:System.String.IsNullOrEmpty%2A?displayProperty=fullName> method is significantly faster than using <xref:System.Object.Equals%2A>. This is because <xref:System.Object.Equals%2A> executes significantly more MSIL instructions than either <xref:System.String.IsNullOrEmpty%2A> or the number of instructions executed to retrieve the <xref:System.String.Length%2A> property value and compare it to zero.  
   
- Следует принять во внимание, что метод <xref:System.Object.Equals%2A> и выражение <xref:System.String.Length%2A> \=\= 0 ведут себя по\-разному в случае неопределенных строк.  При попытке получить значение свойства <xref:System.String.Length%2A> для неопределенной строки среда CLR создает исключение <xref:System.NullReferenceException?displayProperty=fullName>.  При выполнении сравнения неопределенной строки с пустой строкой среда CLR не создает исключение, а сравнение возвращает значение `false`.  Проверка на наличие значения NULL не оказывает существенного влияния на относительную производительность этих двух подходов.  При разработке кода для среды [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] используйте метод <xref:System.String.IsNullOrEmpty%2A>.  Во всех остальных случаях рекомендуется по возможности использовать сравнение <xref:System.String.Length%2A> \=\=.  
+ You should be aware that <xref:System.Object.Equals%2A> and <xref:System.String.Length%2A> == 0 behave differently for null strings. If you try to get the value of the <xref:System.String.Length%2A> property on a null string, the common language runtime throws a <xref:System.NullReferenceException?displayProperty=fullName>. If you perform a comparison between a null string and the empty string, the common language runtime does not throw an exception; the comparison returns `false`. Testing for null does not significantly affect the relative performance of these two approaches. When targeting [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], use the <xref:System.String.IsNullOrEmpty%2A> method. Otherwise, use the <xref:System.String.Length%2A> == comparison whenever possible.  
   
-## Устранение нарушений  
- Чтобы устранить нарушение данного правила, замените метод сравнения на использование свойства <xref:System.String.Length%2A> и выполните проверку на равенство с неопределенной строкой.  При разработке кода для среды [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] используйте метод <xref:System.String.IsNullOrEmpty%2A>.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, change the comparison to use the <xref:System.String.Length%2A> property and test for the null string. If targeting [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], use the <xref:System.String.IsNullOrEmpty%2A> method.  
   
-## Отключение предупреждений  
- Отключение предупреждений о нарушении этого правила является безопасным в том случае, если вопросы производительности не являются основным приоритетом.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule if performance is not an issue.  
   
-## Пример  
- В следующем примере демонстрируются различные способы поиска пустой строки.  
+## <a name="example"></a>Example  
+ The following example illustrates the different techniques that are used to look for an empty string.  
   
- [!CODE [FxCop.Performance.StringTest#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Performance.StringTest#1)]
+ [!code-csharp[FxCop.Performance.StringTest#1](../code-quality/codesnippet/CSharp/ca1820-test-for-empty-strings-using-string-length_1.cs)]

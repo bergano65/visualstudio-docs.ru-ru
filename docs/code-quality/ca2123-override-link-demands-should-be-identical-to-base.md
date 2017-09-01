@@ -1,56 +1,72 @@
 ---
-title: "CA2123: запросы компоновки переопределения должны быть идентичны базовым | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2123"
-  - "OverrideLinkDemandsShouldBeIdenticalToBase"
-helpviewer_keywords: 
-  - "CA2123"
-  - "OverrideLinkDemandsShouldBeIdenticalToBase"
+title: 'CA2123: Override link demands should be identical to base | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2123
+- OverrideLinkDemandsShouldBeIdenticalToBase
+helpviewer_keywords:
+- OverrideLinkDemandsShouldBeIdenticalToBase
+- CA2123
 ms.assetid: 4538ecd5-fc6f-4480-ab00-90b2ce4730db
 caps.latest.revision: 18
-caps.handback.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA2123: запросы компоновки переопределения должны быть идентичны базовым
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: b5ec358a3f42e8b82240e901cdad6a5201c41e7a
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123: Override link demands should be identical to base
 |||  
 |-|-|  
 |TypeName|OverrideLinkDemandsShouldBeIdenticalToBase|  
 |CheckId|CA2123|  
-|Категория|Microsoft.Security|  
-|Критическое изменение|Критическое изменение|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
-## Причина  
- Открытый или защищенный метод в открытом типе переопределяет метод или реализует интерфейс и не имеет в качестве интерфейса или виртуального метода такого же [Link Demands](../Topic/Link%20Demands.md).  
+## <a name="cause"></a>Cause  
+ A public or protected method in a public type overrides a method or implements an interface, and does not have the same [Link Demands](/dotnet/framework/misc/link-demands) as the interface or virtual method.  
   
-## Описание правила  
- Это правило сравнивает метод с его базовым методом \(который является интерфейсом или виртуальным методом другого типа\), а затем сравнивает запросы ссылок для каждого из них.  Правило считается нарушенным, если у одного из двух элементов \(метода или базового метода\) есть запрос ссылок, а у другого нет.  
+## <a name="rule-description"></a>Rule Description  
+ This rule matches a method to its base method, which is either an interface or a virtual method in another type, and then compares the link demands on each. A violation is reported if either the method or the base method has a link demand and the other does not.  
   
- Если это правило нарушается, то злонамеренный вызывающий объект может обойти запрос ссылок путем вызова небезопасного метода.  
+ If this rule is violated, a malicious caller can bypass the link demand merely by calling the unsecured method.  
   
-## Устранение нарушений  
- Чтобы устранить нарушение этого правила, примените то же требование ссылки к переопределению метода или реализации.  Если это невозможно, следует пометить метод полным требованием или полностью удалить атрибут.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, apply the same link demand to the overide method or implementation. If this is not possible, mark the method with a full demand or remove the attribute altogether.  
   
-## Отключение предупреждений  
- Для этого правила отключать вывод предупреждений не следует.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## Пример  
- В следующем примере показаны различные нарушения этого правила.  
+## <a name="example"></a>Example  
+ The following example shows various violations of this rule.  
   
- [!code-cs[FxCop.Security.OverridesAndSecurity#1](../code-quality/codesnippet/CSharp/ca2123-override-link-demands-should-be-identical-to-base_1.cs)]  
+ [!code-csharp[FxCop.Security.OverridesAndSecurity#1](../code-quality/codesnippet/CSharp/ca2123-override-link-demands-should-be-identical-to-base_1.cs)]  
   
-## См. также  
- [Secure Coding Guidelines](../Topic/Secure%20Coding%20Guidelines.md)   
- [Link Demands](../Topic/Link%20Demands.md)
+## <a name="see-also"></a>See Also  
+ [Secure Coding Guidelines](/dotnet/standard/security/secure-coding-guidelines)   
+ [Link Demands](/dotnet/framework/misc/link-demands)

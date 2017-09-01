@@ -1,165 +1,166 @@
 ---
-title: "Пошаговое руководство. Сохранение данных в базе данных (несколько таблиц) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "данные [Visual Studio], сохранение"
-  - "данные [Visual Studio], обновление"
-  - "сохранение данных, пошаговые руководства"
-  - "обновление наборов данных, пошаговые руководства"
+title: Save data to a database (multiple tables) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- updating datasets, walkthroughs
+- data [Visual Studio], saving
+- saving data, walkthroughs
+- data [Visual Studio], updating
 ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
 caps.latest.revision: 24
-caps.handback.revision: 20
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 828a7800aec528dd90de946de0243b5fb0198225
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Сохранение данных в базе данных (несколько таблиц)
-Одним из наиболее распространенных сценариев в разработке приложений является отображение данных на форме в приложении Windows, изменение этих данных и отправка обновленных данных обратно в базу данных.  Это пошаговое руководство описывает создание формы, отображающей данные из двух связанных таблиц, правку записей и сохранение изменений в базе данных.  В данном примере используются таблицы `Customers` и `Orders` из учебной базы данных "Борей".  
+# <a name="save-data-to-a-database-multiple-tables"></a>Save data to a database (multiple tables)
+One of the most common scenarios in application development is to display data on a form in a Windows application, edit the data, and send the updated data back to the database. This walkthrough creates a form that displays data from two related tables and shows how to edit records and save changes back to the database. This example uses the `Customers` and `Orders` tables from the Northwind sample database.  
   
- Вы можете сохранить данные из приложения в базе данных, вызвав метод `Update` адаптера таблицы.  При перетаскивании элементов из окна **Источники данных** код для сохранения данных автоматически добавляется для первой таблицы, помещенной на форму.  Для добавляемых на форму дополнительных таблиц код для сохранения данных требуется добавлять вручную.  Это пошаговое руководство описывает добавление кода для сохранения обновлений из нескольких таблиц.  
+ You can save data in your application back to the database by calling the `Update` method of a TableAdapter. When you drag tables from the **Data Sources** window onto a form, the code that's required to save data is automatically added.Any additional tables that are added to a form require the manual addition of this code. This walkthrough shows how to add code to save updates from more than one table.  
   
 > [!NOTE]
->  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска.  Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров**.  Для получения дополнительной информации см. [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/ru-ru/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or the edition that you're using. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
- В данном пошаговом руководстве представлены следующие задачи.  
+ Tasks illustrated in this walkthrough include:  
   
--   Создание нового проекта **Приложение Windows**.  
+-   Creating a new **Windows Application** project.  
   
--   Создание и настройка источника данных в приложении с помощью [мастер настройки источника данных](../data-tools/media/data-source-configuration-wizard.png).  
+-   Creating and configuring a data source in your application with the [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png).  
   
--   Настройка элементов управления для элементов в [окно "Источники данных"](../Topic/Data%20Sources%20Window.md).  Для получения дополнительной информации см. [Задание поведения, при котором элемент управления создается при перетаскивании из окна "Источники данных"](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+-   Setting the controls of the items in the [Data Sources Window](add-new-data-sources.md). For more information, see [Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
--   Создание элементов управления с привязкой к данным с помощью перетаскивания элементов из окна **Источники данных** на форму.  
+-   Creating data-bound controls by dragging items from the **Data Sources** window onto your form.  
   
--   Изменение пары записей в каждой таблице набора данных.  
+-   Modifying a few records in each table in the dataset.  
   
--   Изменение кода для отправки обновленных данных в наборе данных обратно в базу данных.  
+-   Modifying the code to send the updated data in the dataset back to the database.  
   
-## Обязательные компоненты  
- Для выполнения данного пошагового руководства требуется:  
+## <a name="prerequisites"></a>Prerequisites  
+ In order to complete this walkthrough, you will need:  
   
--   Доступ к примеру базы данных "Борей".  Для получения дополнительной информации см. [Практическое руководство. Установка образцов баз данных](../data-tools/how-to-install-sample-databases.md).  
+-   Access to the Northwind sample database.  For more information, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
   
-## Создание приложения Windows  
- Первым шагом является создание **Приложения Windows**.  На данном этапе имя проекту можно не назначать, однако мы зададим его, так как позднее планируем сохранить проект.  
+## <a name="create-the-windows-application"></a>Create the Windows application  
+ The first step is to create a **Windows Application**. Assigning a name to the project is optional during this step, but we'll give it a name because we're planning on saving it later.  
   
-#### Порядок создания нового проекта приложения Windows  
+#### <a name="to-create-the-new-windows-application-project"></a>To create the new Windows application project  
   
-1.  Перейдите в меню **Файл** и создайте новый проект.  
+1.  On the **File** menu, create a new project.  
   
-2.  Присвойте проекту имя `UpdateMultipleTablesWalkthrough`.  
+2.  Name the project `UpdateMultipleTablesWalkthrough`.  
   
-3.  Выберите **Приложение Windows** и нажмите кнопку **ОК**.  Для получения дополнительной информации см. [Клиентские приложения](../Topic/Developing%20Client%20Applications%20with%20the%20.NET%20Framework.md).  
+3.  Select **Windows Application**, and then select **OK**. For more information, see [Client Applications](/dotnet/framework/develop-client-apps).  
   
-     Создается проект **UpdateMultipleTablesWalkthroug**, который добавляется в **Обозреватель решений**.  
+     The **UpdateMultipleTablesWalkthrough** project is created and added to **Solution Explorer**.  
   
-## Создание источника данных  
- На этом шаге **Мастер настройки источника данных** используется для создания источника данных из базы данных "Борей".  Для создания подключения необходимо иметь доступ к учебной базе данных "Борей".  Дополнительные сведения о настройке учебной базы данных "Борей" см. в разделе [Практическое руководство. Установка образцов баз данных](../data-tools/how-to-install-sample-databases.md).  
+## <a name="create-the-data-source"></a>Create the data source  
+ This step creates a data source from the Northwind database using the **Data Source Configuration Wizard**. You must have access to the Northwind sample database to create the connection. For information about setting up the Northwind sample database, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
   
-#### Создание источника данных  
+#### <a name="to-create-the-data-source"></a>To create the data source  
   
-1.  В меню **Данные** выберите команду **Показать источники данных**.  
+1.  On the **Data** menu, select **Show Data Sources**.  
   
-2.  В окне **Источники данных** выберите **Добавить новый источник данных**, чтобы запустить **Мастер настройки источника данных**.  
+2.  In the **Data Sources** window, select**Add New Data Source** to start the **Data Source Configuration Wizard**.  
   
-3.  На странице **Выбор типа источника данных** выберите элемент **База данных** и нажмите **Далее**.  
+3.  On the **Choose a Data Source Type** screen, select **Database**, and then select **Next**.  
   
-4.  На странице **Выбор подключения к базе данных** выполните одно из следующих действий.  
+4.  On the **Choose your Data Connection** screen do one of the following:  
   
-    -   Если подключение к учебной базе данных Northwind доступно в раскрывающемся списке, то выберите его.  
+    -   If a data connection to the Northwind sample database is available in the drop-down list, select it.  
   
-         \-или\-  
+         -or-  
   
-    -   Выберите **Новое подключение** для открытия диалогового окна **Добавить\/изменить подключение**.  
+    -   Select **New Connection** to open the **Add/Modify Connection** dialog box.  
   
-5.  Если базе данных требуется пароль, выберите параметр для включения конфиденциальных данных и щелкните **Далее**.  
+5.  If your database requires a password, select the option to include sensitive data, and then select **Next**.  
   
-6.  На странице **Сохранение подключения в файле конфигурации приложения** нажмите кнопку **Далее**.  
+6.  On the **Save connection string to the Application Configuration file**, select **Next**.  
   
-7.  Разверните узел **Таблицы** на странице **Выбор объектов базы данных**.  
+7.  On the **Choose your Database Objects**screen, expand the **Tables** node .  
   
-8.  Выберите таблицы **Customers** и **Orders** и нажмите **Готово**.  
+8.  Select the **Customers** and **Orders** tables, and then select **Finish**.  
   
-     Объект **NorthwindDataSet** добавляется в проект, и таблицы отображаются в окне **Источники данных**.  
+     The **NorthwindDataSet** is added to your project, and the tables appear in the **Data Sources** window.  
   
-## Настройка создаваемых элементов управления  
- В рамках этого пошагового руководства данные из таблицы `Customers` будут находиться в макете **Сведения**, где данные отображаются в отдельных элементах управления.  Данные из таблицы `Orders` будут находиться в макете **Сетка**, отображаясь в элементе управления <xref:System.Windows.Forms.DataGridView>.  
+## <a name="set-the-controls-to-be-created"></a>Set the controls to be created  
+ For this walkthrough, the data in the `Customers` table is in a **Details** layout where data is displayed in individual controls. The data from the `Orders` table is in a **Grid** layout that's displayed in a <xref:System.Windows.Forms.DataGridView> control.  
   
-#### Установка типа удаления для элементов в окне "Источники данных"  
+#### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>To set the drop type for the items in the Data Sources window  
   
-1.  Разверните узел **Клиенты** в окне **Источники данных**.  
+1.  In the **Data Sources** window, expand the **Customers** node.  
   
-2.  Измените элемент управления таблицы **Клиенты** на отдельные элементы управления, выбрав **Сведения** в списке элементов управления в узле **Клиенты**.  Для получения дополнительной информации см. [Задание поведения, при котором элемент управления создается при перетаскивании из окна "Источники данных"](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+2.  On the **Customers** node, select **Details** from the control list to change the control of the **Customers** table to individual controls. For more information, see [Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
-## Создание формы с привязкой к данным  
- Вы можете создавать элементы управления с привязкой к данным с помощью перетаскивания элементов из окна **Источники данных** на форму.  
+## <a name="create-the-data-bound-form"></a>Create the data-bound form  
+ You can create the data-bound controls by dragging items from the **Data Sources** window onto your form.  
   
-#### Создание элементов управления с привязкой к данным на форме  
+#### <a name="to-create-data-bound-controls-on-the-form"></a>To create data-bound controls on the form  
   
-1.  Перетащите главный узел **Клиенты** из окна **Источники данных** на **Form1**.  
+1.  Drag the main **Customers** node from the **Data Sources** window onto **Form1**.  
   
-     Привязанные к данным элементы управления с метками описания отображаются на форме вместе с панелью инструментов \(<xref:System.Windows.Forms.BindingNavigator>\) для перемещения по записям.  В области компонентов появляется [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource> и <xref:System.Windows.Forms.BindingNavigator>.  
+     Data-bound controls with descriptive labels appear on the form, along with a tool strip (<xref:System.Windows.Forms.BindingNavigator>) for navigating records. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray.  
   
-2.  Перетащите связанный узел **Заказы** из окна **Источники данных** на **Form1**.  
+2.  Drag the related **Orders** node from the **Data Sources** window onto **Form1**.  
   
     > [!NOTE]
-    >  Связанный узел **Заказы** расположен под столбцом **Факс** и является дочерним для узла **Клиенты**.  
+    >  The related **Orders** node is located below the **Fax** column and is a child node of the **Customers** node.  
   
-     На форме появляется элемент <xref:System.Windows.Forms.DataGridView> и панель инструментов \(<xref:System.Windows.Forms.BindingNavigator>\) для перемещения по записям.  В области компонентов отображается [OrdersTableAdapter](../data-tools/tableadapter-overview.md) и <xref:System.Windows.Forms.BindingSource>.  
+     A <xref:System.Windows.Forms.DataGridView> control and a tool strip (<xref:System.Windows.Forms.BindingNavigator>) for navigating records appear on the form. An `OrdersTableAdapter` and <xref:System.Windows.Forms.BindingSource> appear in the component tray.  
   
-## Добавление кода для обновления базы данных  
- Вы можете обновить базу данных, вызвав методы `Update` адаптеров таблицы **Клиенты** и **Заказы**.  По умолчанию обработчик событий для кнопки **Сохранить** <xref:System.Windows.Forms.BindingNavigator> добавляется в код формы для отправки обновлений в базу данных.  Данная процедура изменяет этот код для отправки обновлений в нужном порядке, устраняя возможность возникновения ошибок целостности данных.  Этот код также реализует обработку ошибок, упаковывая вызов обновления в блок try\-catch.  Вы можете изменить этот код в соответствии с потребностями своего приложения.  
+## <a name="addcode-to-update-the-database"></a>Addcode to update the database  
+ You can update the database by calling the `Update` methods of the **Customers** and **Orders** TableAdapters. By default, an event handler for the **Save** button of the<xref:System.Windows.Forms.BindingNavigator> is added to the form's code to send updates to the database. This procedure modifies the code to send updates in the correct order.This eliminates the possibility of raising referential integrity errors. The code also implements error handling by wrapping the update call in a try-catch block. You can modify the code to suit the needs of your application.  
   
 > [!NOTE]
->  Для ясности в этом пошаговом руководстве не используется транзакция, однако в случае обновления двух и более связанных таблиц следует включить всю логику обновления в транзакцию.  Транзакция — это процесс, который подтверждает успешное внесение связанных изменений в базу данных перед фиксацией изменений.  Для получения дополнительной информации см. [Транзакции и параллелизм](../Topic/Transactions%20and%20Concurrency.md).  
+>  For clarity, this walkthrough does not use a transaction.However, if you're updating two or more related tables, include all the update logic within a transaction. A transaction is a process that assures that all related changes to a database are successful before any changes are committed. For more information, see [Transactions and Concurrency](/dotnet/framework/data/adonet/transactions-and-concurrency).  
   
-#### Добавление логики обновления в приложение  
+#### <a name="to-add-update-logic-to-the-application"></a>To add update logic to the application  
   
-1.  Дважды нажмите кнопку **Сохранить** на <xref:System.Windows.Forms.BindingNavigator>, чтобы открыть редактор кода с обработчиком событий `bindingNavigatorSaveItem_Click`.  
+1.  Select the **Save** button on the <xref:System.Windows.Forms.BindingNavigator>.This opens the Code Editor to the `bindingNavigatorSaveItem_Click` event handler.  
   
-2.  Замените код в обработчике событий на вызов методов `Update` связанных адаптеров таблицы.  Следующий код сначала создает три временные таблицы данных для хранения обновленной информации для каждого <xref:System.Data.DataRowState> \(<xref:System.Data.DataRowState>, <xref:System.Data.DataRowState> и <xref:System.Data.DataRowState>\).  После этого выполняются обновления в нужном порядке.  Код должен выглядеть следующим образом:  
+2.  Replace the code in the event handler to call the `Update` methods of the related TableAdapters. The following code first creates three temporary data tables to hold the updated information for each <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, and <xref:System.Data.DataRowState>). Then updates are run in the correct order. The code should look like the following:  
   
-     [!code-vb[VbRaddataSaving#10](../data-tools/codesnippet/VisualBasic/save-data-to-a-database-multiple-tables_1.vb)]
-     [!code-cs[VbRaddataSaving#10](../data-tools/codesnippet/CSharp/save-data-to-a-database-multiple-tables_1.cs)]  
+     [!code-vb[VbRaddataSaving#10](../data-tools/codesnippet/VisualBasic/save-data-to-a-database-multiple-tables_1.vb)]  [!code-csharp[VbRaddataSaving#10](../data-tools/codesnippet/CSharp/save-data-to-a-database-multiple-tables_1.cs)]  
   
-## Тестирование приложения  
+## <a name="test-the-application"></a>Test the application  
   
-#### Тестирование приложения  
+#### <a name="to-test-the-application"></a>To test the application  
   
-1.  Нажмите клавишу F5.  
+1.  Select **F5**.  
   
-2.  Внесите изменения в данные одной или нескольких записей в каждой таблице.  
+2.  Make some changes to the data of one or more records in each table.  
   
-3.  Нажмите кнопку **Сохранить**.  
+3.  Select the **Save** button.  
   
-4.  Проверьте значения в базе данных и убедитесь, что изменения были сохранены.  
+4.  Check the values in the database to verify that the changes were saved.  
   
-## Следующие действия  
- В зависимости от требований приложения существуют несколько шагов, которые, возможно, потребуется выполнить после создания формы с привязкой к данным в приложении Windows.  Ниже приводится перечень рекомендаций, позволяющих улучшить полученный результат.  
   
--   Добавление функциональности поиска в форму.  Для получения дополнительной информации см. [Практическое руководство. Добавление параметризованного запроса в приложение Windows Forms](../Topic/How%20to:%20Add%20a%20Parameterized%20Query%20to%20a%20Windows%20Forms%20Application.md).  
-  
--   Изменение источника данных для добавления или удаления объектов базы данных.  Для получения дополнительной информации см. [Практическое руководство. Редактирование набора данных](../Topic/How%20to:%20Edit%20a%20Dataset.md).  
-  
-## См. также  
- [Пошаговые руководства работы с данными](../Topic/Data%20Walkthroughs.md)   
- [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Общие сведения о приложениях для работы с данными в Visual Studio](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [Подключение к данным в Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Подготовка приложения к получению данных](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Выборка данных в приложение](../data-tools/fetching-data-into-your-application.md)   
- [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Редактирование данных в приложении](../data-tools/editing-data-in-your-application.md)   
- [Проверка данных](../Topic/Validating%20Data.md)   
- [Сохранение данных](../data-tools/saving-data.md)
+## <a name="see-also"></a>See Also  
+ [Save data back to the database](../data-tools/save-data-back-to-the-database.md)

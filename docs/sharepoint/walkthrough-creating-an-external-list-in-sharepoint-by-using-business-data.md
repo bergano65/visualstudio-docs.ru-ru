@@ -1,204 +1,209 @@
 ---
-title: "Пошаговое руководство. Создание внешнего списка в SharePoint с помощью бизнес-данных"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "служба подключения к бизнес-данным [разработка приложений SharePoint в Visual Studio], бизнес-данные в веб-части"
-  - "подключение к бизнес-данным [разработка приложений SharePoint в Visual Studio], внешний список"
-  - "служба подключения к бизнес-данным [разработка приложений SharePoint в Visual Studio], бизнес-данные в списке SharePoint"
-  - "подключение к бизнес-данным [разработка приложений SharePoint в Visual Studio], бизнес-данные в списке SharePoint"
-  - "подключение к бизнес-данным [разработка приложений SharePoint в Visual Studio], бизнес-данные в веб-части"
-  - "подключение к бизнес-данным [разработка приложений SharePoint в Visual Studio], список, связанный с сущностями"
-  - "служба подключения к бизнес-данным [разработка приложений SharePoint в Visual Studio], список, связанный с сущностями"
-  - "служба подключения к бизнес-данным [разработка приложений SharePoint в Visual Studio], внешний список"
+title: 'Walkthrough: Creating an External List in SharePoint by Using Business Data | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- Business Data Connectivity service [SharePoint development in Visual Studio], business data in a Web Part
+- BDC [SharePoint development in Visual Studio], external list
+- Business Data Connectivity service [SharePoint development in Visual Studio], business data in a SharePoint list
+- BDC [SharePoint development in Visual Studio], business data in a SharePoint list
+- BDC [SharePoint development in Visual Studio], business data in a Web Part
+- BDC [SharePoint development in Visual Studio], entity backed list
+- Business Data Connectivity service [SharePoint development in Visual Studio], entity backed list
+- Business Data Connectivity service [SharePoint development in Visual Studio], external list
 ms.assetid: 046cf234-705a-4a6f-91f8-c5c569ae0dd0
 caps.latest.revision: 38
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 37
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: a83672695efad46c8205c056f35b841878fc0698
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Создание внешнего списка в SharePoint с помощью бизнес-данных
-  Служба подключения к бизнес\-данным позволяет отображать в SharePoint бизнес\-данные серверных приложений, веб\-служб и баз данных.  
+# <a name="walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data"></a>Walkthrough: Creating an External List in SharePoint by Using Business Data
+  The Business Data Connectivity (BDC) service enables SharePoint to display business data from back-end server applications, Web services, and databases.  
   
- В этом пошаговом руководстве описана процедура создания модели для службы BDC, возвращающая сведения о контактах в примере базы данных.  Затем с использованием этой модели можно будет создавать внешний список в SharePoint.  
+ This walkthrough shows you how to create a model for the BDC service that returns information about contacts in a sample database. You will then create an external list in SharePoint by using this model.  
   
- В данном пошаговом руководстве рассмотрены следующие задачи:  
+ This walkthrough illustrates the following tasks:  
   
--   Создание проекта.  
+-   Creating a project.  
   
--   Добавление сущности в модель.  
+-   Adding an entity to the model.  
   
--   Добавление метода поиска.  
+-   Adding a finder method.  
   
--   Добавление конкретного метода поиска.  
+-   Adding a specific finder method.  
   
--   Проверка проекта.  
+-   Testing the project.  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
--   Поддерживаемые версии Windows и SharePoint.  Для получения дополнительной информации см. [Требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Supported editions of Windows and SharePoint. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   [!INCLUDE[vsPro](../sharepoint/includes/vspro-md.md)], [!INCLUDE[vsUltLong](../sharepoint/includes/vsultlong-md.md)] или [!INCLUDE[vsPreLong](../sharepoint/includes/vsprelong-md.md)].  
+-   [!INCLUDE[vsPro](../sharepoint/includes/vspro-md.md)], [!INCLUDE[vsUltLong](../sharepoint/includes/vsultlong-md.md)], or [!INCLUDE[vsPreLong](../sharepoint/includes/vsprelong-md.md)].  
   
--   Доступ к примеру базы данных AdventureWorks.  Сведения по установке базы данных AdventureWorks см. в разделе [SQL Server Sample Databases](http://go.microsoft.com/fwlink/?LinkID=117483).  
+-   Access to the AdventureWorks sample database. For more information about how to install the AdventureWorks database, see [SQL Server Sample Databases](http://go.microsoft.com/fwlink/?LinkID=117483).  
   
-## Создание проекта, содержащего модель подключения к бизнес\-данным  
+## <a name="creating-a-project-that-contains-a-bdc-model"></a>Creating a Project that Contains a BDC Model  
   
-#### Создание проекта, содержащего модель подключения к бизнес\-данным  
+#### <a name="to-create-a-project-that-contains-a-bdc-model"></a>To create a project that contains a BDC model  
   
-1.  В Visual Studio в строке меню выберите **Файл**, **Создать**, **Проект**.  
+1.  On the menu bar in Visual Studio, choose **File**, **New**, **Project**.  
   
-     Откроется диалоговое окно **Новый проект**.  
+     The **New Project** dialog box opens.  
   
-2.  В области **Visual C\#** или **Visual Basic** разверните узел **SharePoint** и выберите элемент **2010**.  
+2.  Under either **Visual C#** or **Visual Basic**, expand the **SharePoint** node, and then choose the **2010** item.  
   
-3.  В панели **Шаблоны** выберите **Проект SharePoint 2010**, назовите проект AdventureWorksTest, а затем нажмите кнопку **ОК**.  
+3.  In the **Templates** pane, choose **SharePoint 2010 Project**, name the project **AdventureWorksTest**, and then choose the **OK** button.  
   
-     Появится окно **Мастер настройки SharePoint**.  Этот мастер позволяет указать сайт, который будет использоваться для отладки проекта, и установить уровень доверия решения.  
+     The **SharePoint Customization Wizard** appears. In this wizard, you can specify the site that you'll use to debug the project and set the trust level of the solution.  
   
-4.  Выберите переключатель **Развернуть как решение фермы**, чтобы задать уровень доверия.  
+4.  Choose the **Deploy as a farm solution** option button to set the trust level.  
   
-5.  Нажмите кнопку **Готово**, чтобы принять предлагаемый по умолчанию локальный сайт SharePoint.  
+5.  Choose the **Finish** button to accept the default local SharePoint site.  
   
-6.  В области **Обозреватель решений** выберите узел проекта SharePoint.  
+6.  In **Solution Explorer**, choose the SharePoint project node.  
   
-7.  В строке меню выберите **Проект**, **Добавить новый элемент**.  
+7.  On the menu bar, choose **Project**, **Add New Item**.  
   
-     Откроется диалоговое окно **Добавление нового элемента**.  
+     The **Add New Item** dialog box opens.  
   
-8.  В панели **Шаблоны** выберите **Модель подключения к бизнес\-данным \(только для решения фермы\)**, назовите проект AdventureWorksContacts и затем нажмите кнопку **Добавить**.  
+8.  In the **Templates** pane, choose **Business Data Connectivity Model (Farm Solution Only)**, name the project **AdventureWorksContacts**, and then choose the **Add** button.  
   
-## Добавление классов доступа к данным в проект  
+## <a name="adding-data-access-classes-to-the-project"></a>Adding Data Access Classes to the Project  
   
-#### Добавление классов доступа к данным в проект  
+#### <a name="to-add-data-access-classes-to-the-project"></a>To add data access classes to the project  
   
-1.  В строке меню выберите **Сервис**, **Подключиться к базе данных**.  
+1.  On the menu bar, choose **Tools**, **Connect to Database**.  
   
-     Откроется диалоговое окно **Добавление подключения**.  
+     The **Add Connection** dialog box opens.  
   
-2.  Добавьте подключение в пример базы данных SQL Server AdventureWorks.  
+2.  Add a connection to the SQL Server AdventureWorks sample database.  
   
-     Для получения дополнительной информации см. [Add\/Modify Connection \(Microsoft SQL Server\)](http://msdn.microsoft.com/ru-ru/fa400910-26c3-4df7-b9d1-115e688b4ea3).  
+     For more information, see [Add/Modify Connection (Microsoft SQL Server)](http://msdn.microsoft.com/en-us/fa400910-26c3-4df7-b9d1-115e688b4ea3).  
   
-3.  В области **Обозреватель решений** выберите узел проекта.  
+3.  In **Solution Explorer**, choose the project node.  
   
-4.  В строке меню выберите **Проект**, **Добавить новый элемент**.  
+4.  On the menu bar, choose **Project**, **Add New Item**.  
   
-5.  В области **Установленные шаблоны** выберите узел **Данные**.  
+5.  In the **Installed Templates** pane, choose the **Data** node.  
   
-6.  В панели **Шаблоны** выберите **Классы преобразования языка LINQ в язык SQL**.  
+6.  In the **Templates** pane, choose **LINQ to SQL Classes**.  
   
-7.  В поле **Имя** укажите AdventureWorks и нажмите кнопку **Добавить**.  
+7.  In the **Name** box, specify **AdventureWorks**, and then choose the **Add** button.  
   
-     В проект добавится файл .dbml, и откроется реляционный конструктор объектов.  
+     A .dbml file is added to the project, and the Object Relational Designer (O/R Designer) opens.  
   
-8.  В строке меню выберите **Вид**, **Обозреватель серверов**.  
+8.  On the menu bar, choose **View**, **Server Explorer**.  
   
-9. В **обозревателе серверов** последовательно разверните узел, представляющий пример базы данных AdventureWorks, и узел **Таблицы**.  
+9. In **Server Explorer**, expand the node that represents the AdventureWorks sample database, and then expand the **Tables** node.  
   
-10. Добавьте таблицу **Контакты** в реляционный конструктор объектов.  
+10. Add the **Contact (Person)** table onto the O/R Designer.  
   
-     Создается класс сущностей и появляется в области конструктора.  Класс сущностей имеет свойства, которые сопоставляются столбцам в таблице "Контакты".  
+     An entity class is created and appears on the design surface. The entity class has properties that map to the columns in the Contact (Person) table.  
   
-## Удаление сущности по умолчанию из модели BDC  
- Проект **Модель подключения к бизнес\-данным** добавляет в модель сущность по умолчанию с именем Entity1.  Удалите эту сущность.  Позже нужно будет добавить новую сущность.  Для выполнения данного пошагового руководства потребуется выполнить меньше действий, если начать работу с пустой модели.  
+## <a name="removing-the-default-entity-from-the-bdc-model"></a>Removing the Default Entity from the BDC Model  
+ The **Business Data Connectivity Model** project adds a default entity named Entity1 to the model. Remove this entity. Later, you will add a new entity. Starting with an empty model reduces the number of steps required to complete the walkthrough.  
   
-#### Удаление сущности по умолчанию из модели  
+#### <a name="to-remove-the-default-entity-from-the-model"></a>To remove the default entity from the model  
   
-1.  В **обозревателе решений** разверните узел **BdcModel1** и откройте файл BdcModel1.bdcm.  
+1.  In **Solution Explorer**, expand the **BdcModel1** node, and then open the BdcModel1.bdcm file.  
   
-2.  Файл модели подключения к бизнес\-данным откроется в конструкторе BDC.  
+2.  The Business Data Connectivity model file opens in the BDC designer.  
   
-3.  В конструкторе откройте контекстное меню для **Entity1** и выберите **Удалить**.  
+3.  In the designer, open the shortcut menu for **Entity1**, and then choose **Delete**.  
   
-4.  В **Обозревателе решений** откройте контекстное меню для Entity1.vb \(в Visual Basic\) или Entity1.cs \(в C\#\), а затем выберите **Удалить**.  
+4.  In **Solution Explorer**, open the shortcut menu for Entity1.vb (in Visual Basic) or Entity1.cs (in C#), and then choose **Delete**.  
   
-5.  Откройте контекстное меню для Entity1Service.vb \(в Visual Basic\) или Entity1Service.cs \(в C\#\), а затем выберите **Удалить**.  
+5.  Open the shortcut menu for Entity1Service.vb (in Visual Basic) or Entity1Service.cs (in C#), and then choose **Delete**.  
   
-## Добавление сущности в модель  
- Добавьте сущность в модель.  Можно добавлять сущности с **панели элементов** Visual Studio в конструктор BDC.  
+## <a name="adding-an-entity-to-the-model"></a>Adding an Entity to the Model  
+ Add an entity to the model. You can add entities from the Visual Studio **Toolbox** onto the BDC designer.  
   
-#### Добавление сущности в модель  
+#### <a name="to-add-an-entity-to-the-model"></a>To add an Entity to the model  
   
-1.  В меню **Вид** выберите **Область элементов**.  
+1.  On the menu bar, choose **View**, **Toolbox**.  
   
-2.  На **панели элементов** на вкладке **Подключение к бизнес\-данным** добавьте **Сущность** в конструктор BDC.  
+2.  On the **BusinessDataConnectivity** tab of the **Toolbox**, add an **Entity** onto the BDC designer.  
   
-     В конструкторе откроется новая сущность.  Visual Studio добавит файл в проект с именем EntityService.vb \(в Visual Basic\) или EntityService.cs \(в C\#\).  
+     The new entity appears on the designer. Visual Studio adds a file that's named EntityService.vb (in Visual Basic) or EntityService.cs (in C#) to the project.  
   
-3.  В строке меню выберите **Вид**, **Свойства**, **Окно**.  
+3.  On the menu bar, choose **View**, **Properties**, **Window**.  
   
-4.  В окне **Свойства** задайте для свойства **Name** значение "Контакты"  
+4.  In the **Properties** window, set the **Name** property value to **Contact**.  
   
-5.  В конструкторе откройте контекстное меню сущности, выберите **Добавить**, а затем **Идентификатор**.  
+5.  On the designer, open the shortcut menu for the entity, choose **Add**, and then choose **Identifier**.  
   
-     В сущности отобразится новый идентификатор.  
+     A new identifier appears on the entity.  
   
-6.  В окне **Свойства** измените имя идентификатора на ContactID.  
+6.  In the **Properties** window, change the name of the identifier to **ContactID**.  
   
-7.  В списке **Имя типа** выберите **System.Int32**.  
+7.  In the **Type Name** list, choose **System.Int32**.  
   
-## Добавление конкретного метода поиска  
- Чтобы включить отображение конкретных контактов в службе BDC, необходимо добавить конкретный метод поиска.  Служба BDC вызывает конкретный метод поиска, когда пользователь выбирает элемент в списке и нажимает кнопку **Просмотреть элемент** на ленте.  
+## <a name="adding-a-specific-finder-method"></a>Adding a Specific Finder Method  
+ To enable the BDC service to display a specific contact, you must add a Specific Finder method. The BDC service calls the Specific Finder method when a user chooses an item in a list and then chooses the **View Item** button on the Ribbon.  
   
- Добавьте конкретный метод поиска в сущность "Контакты", воспользовавшись окном **Подробности метода BDC**.  Чтобы возвратить конкретную сущность, добавьте код в метод.  
+ Add a Specific Finder method to the Contact entity by using the **BDC Method Details** window. To return a specific entity, add code to the method.  
   
-#### Добавление конкретного метода поиска  
+#### <a name="to-add-a-specific-finder-method"></a>To add a Specific Finder method  
   
-1.  В конструкторе BDC выберите сущность **Контакты**.  
+1.  On the BDC designer, choose the **Contact** entity.  
   
-2.  В строке меню выберите **Вид**, **Другие окна**, **Подробности метода BDC**.  
+2.  On the menu bar, choose **View**, **Other Windows**, **BDC Method Details**.  
   
-     Откроется окно Подробности метода BDC.  
+     The BDC Method Details window opens.  
   
-3.  В списке **Добавить метод** выберите **Создать конкретный метод поиска**.  
+3.  In the **Add a Method** list, choose **Create Specific Finder Method**.  
   
-     Visual Studio добавит в модель следующие элементы.  Следующие элементы отображаются в окне **Подробности метода BDC**.  
+     Visual Studio adds the following elements to the model. These elements appear in the **BDC Method Details** window.  
   
-    -   Метод с именем ReadItem.  
+    -   A method named ReadItem.  
   
-    -   Входной параметр для метода.  
+    -   An input parameter for the method.  
   
-    -   Возвращаемый параметр для метода.  
+    -   A return parameter for the method.  
   
-    -   Дескриптор типа для каждого параметра.  
+    -   A type descriptor for each parameter.  
   
-    -   Экземпляр метода для метода.  
+    -   A method instance for the method.  
   
-4.  В окне **Подробности метода BDC** откройте список, отображаемый для дескриптора типа **Контакты**, и щелкните **Изменить**.  
+4.  In the **BDC Method Details** window, open the list that appears for the **Contact** type descriptor, and then choose **Edit**.  
   
-     **Обозреватель BDC** открывает и предоставляет иерархическое представление модели.  
+     The **BDC Explorer** opens and provides a hierarchical view of the model.  
   
-5.  В окне **Свойства** откройте список рядом со свойством **TypeName** перейдите на вкладку **Текущий проект**, а затем выберите свойство **Контакты**.  
+5.  In the **Properties** window, open the list next to the **TypeName** property, choose the **Current Project** tab, and then choose the **Contact** property.  
   
-6.  В **Обозреватель BDC** откройте контекстное меню **Контакты** и выберите пункт **Добавить дескриптор типа**.  
+6.  In the **BDC Explorer**, open the shortcut menu of the **Contact**, and then choose **Add Type Descriptor**.  
   
-     В **обозревателе BDC** отобразится дескриптор типа с именем **TypeDescriptor1**.  
+     A new type descriptor that's named **TypeDescriptor1** appears in the **BDC Explorer**.  
   
-7.  В окне **Свойства** задайте для свойства **Имя** значение **ContactID**.  
+7.  In the **Properties** window, set the **Name** property value to **ContactID**.  
   
-8.  Откройте список рядом со свойством **TypeName** и выберите пункт **Int32**.  
+8.  Open the list next to the **TypeName** property, and then choose **Int32**.  
   
-9. Откройте список рядом со свойством **Идентификатор** и затем выберите **ContactID**.  
+9. Open the list next to the **Identifier** property, and then choose **ContactID**.  
   
-10. Повторите шаг 6, чтобы создать дескриптор типа для каждого из следующих полей.  
+10. Repeat step 6 to create a type descriptor for each of the following fields.  
   
-    |Имя|Имя типа|  
-    |---------|--------------|  
+    |Name|Type Name|  
+    |----------|---------------|  
     |FirstName|System.String|  
     |LastName|System.String|  
     |Phone|System.String|  
@@ -208,94 +213,92 @@ caps.handback.revision: 37
     |PasswordHash|System.String|  
     |PasswordSalt|System.String|  
   
-11. В конструкторе BDC в сущности **Контакты** откройте метод **ReadItem**.  
+11. In the BDC designer, on the **Contact** entity, open the **ReadItem** method.  
   
-     В редакторе кода открывается файл кода службы контактов.  
+     The Contact service code file opens in Code Editor.  
   
-12. Замените метод `ReadItem` в классе `ContactService` на следующий код.  Этот код выполняет следующие задачи:  
+12. In the `ContactService` class, replace the `ReadItem` method with the following code. This code performs the following tasks:  
   
-    -   Извлечение записи из таблицы "Контакты" базы данных AdventureWorks.  
+    -   Retrieves a record from Contact table of the AdventureWorks database.  
   
-    -   Возвращение сущности "Контакты" в службу BDC.  
-  
-    > [!NOTE]  
-    >  Замените значение поля `ServerName` на имя сервера.  
-  
-     [!code-csharp[SP_BDC#3](../snippets/csharp/VS_Snippets_OfficeSP/sp_bdc/CS/bdcmodel1/contactservice.cs#3)]
-     [!code-vb[SP_BDC#3](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_bdc/VB/bdcmodel1/contactservice.vb#3)]  
-  
-## Добавление метода поиска  
- Чтобы включить отображение контактов списком в службе BDC, необходимо добавить метод поиска.  Добавьте метод поиска в сущность "Контакты", воспользовавшись окном **Подробности метода BDC**.  Чтобы возвратить коллекцию сущностей в службу BDC, добавьте код в метод.  
-  
-#### Добавление метода поиска  
-  
-1.  В конструкторе BDC выберите сущность **Контакты**.  
-  
-2.  В окне **Подробности метода BDC** сверните узел **ReadItem**.  
-  
-3.  В списке **Добавить метод** под методом **ReadList** выберите **Создать метод поиска**.  
-  
-     Visual Studio добавляет метод, возвращаемый параметр и дескриптор типа.  
-  
-4.  В конструкторе BDC в сущности **Контакты** откройте метод **ReadList**.  
-  
-     В редакторе кода открывается файл кода службы контактов.  
-  
-5.  Замените метод `ReadList` в классе `ContactService` на следующий код.  Этот код выполняет следующие задачи:  
-  
-    -   Извлечение данных из таблицы "Контакты" базы данных AdventureWorks.  
-  
-    -   Возвращение списка сущностей "Контакты" в службу BDC.  
+    -   Returns a Contact entity to the BDC service.  
   
     > [!NOTE]  
-    >  Замените значение поля `ServerName` на имя сервера.  
+    >  Replace the value of the `ServerName` field with the name of your server.  
   
-     [!code-csharp[SP_BDC#2](../snippets/csharp/VS_Snippets_OfficeSP/sp_bdc/CS/bdcmodel1/contactservice.cs#2)]
-     [!code-vb[SP_BDC#2](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_bdc/VB/bdcmodel1/contactservice.vb#2)]  
+     [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]  [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]  
   
-## Проверка проекта  
- При запуске проекта открывается сайт SharePoint, и Visual Studio добавляет модель в службу подключения к бизнес\-данным.  Создайте в SharePoint внешний список, который ссылается на сущность "Контакты".  В списке отобразятся данные по контактам в базе данных AdventureWorks.  
+## <a name="adding-a-finder-method"></a>Adding a Finder Method  
+ To enable the BDC service to display the contacts in a list, you must add a Finder method. Add a Finder method to the Contact entity by using the **BDC Method Details** window. To return a collection of entities to the BDC service, add code to the method.  
+  
+#### <a name="to-add-a-finder-method"></a>To add a Finder method  
+  
+1.  In the BDC designer, choose the **Contact** entity.  
+  
+2.  In the **BDC Method Details** window, collapse the **ReadItem** node.  
+  
+3.  In the **Add a Method** list under the **ReadList** method, choose **Create Finder Method**.  
+  
+     Visual Studio adds a method, a return parameter, and a type descriptor.  
+  
+4.  In the BDC designer, on the **Contact** entity, open the **ReadList** method.  
+  
+     The code file for the Contact service opens in Code Editor.  
+  
+5.  In the `ContactService` class, replace the `ReadList` method with the following code. This code performs the following tasks:  
+  
+    -   Retrieves data from the Contacts table of the AdventureWorks database.  
+  
+    -   Returns a list of Contact entities to the BDC service.  
+  
+    > [!NOTE]  
+    >  Replace the value of the `ServerName` field with the name of your server.  
+  
+     [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]  [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]  
+  
+## <a name="testing-the-project"></a>Testing the Project  
+ When you run the project, the SharePoint site opens and Visual Studio adds your model to the Business Data Connectivity service. Create an external list in SharePoint that references the Contact entity. The data for contacts in the AdventureWorks database appear in the list.  
   
 > [!NOTE]  
->  Возможно, для отладки решения потребуется изменить параметры безопасности в SharePoint.  Для получения дополнительной информации см. [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).  
+>  You might have to modify your security settings in SharePoint before you can debug your solution.  For more information, see [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-#### Тестирование проекта  
+#### <a name="to-test-the-project"></a>To test the project  
   
-1.  Нажмите клавишу **F5**.  
+1.  Choose the **F5** key.  
   
-     Откроется сайт SharePoint.  
+     The SharePoint site opens.  
   
-2.  В меню **Действия сайта** выберите команду **Дополнительные параметры**.  
+2.  On the **Site Actions** menu, choose the **More Options** command.  
   
-3.  На странице **Создать** выберите шаблон **Внешний список**, а затем нажмите кнопку **Создать**.  
+3.  On the **Create** page, choose the **External List** template, and then choose the **Create** button.  
   
-4.  Присвойте пользовательскому списку имя Contacts.  
+4.  Name the custom list **Contacts**.  
   
-5.  Выберите кнопку обзора рядом с полем **Внешний тип контента**.  
+5.  Choose the browse button next to the **External Content Type** field.  
   
-6.  В диалоговом окне **Средство выбора внешнего типа контента** выберите элемент **AdventureWorksContacts.BdcModel1.Contact** и нажмите кнопку **Создать**.  
+6.  In the **External Content Type Picker** dialog box, choose the **AdventureWorksContacts.BdcModel1.Contact** item, and then choose the **Create** button.  
   
-     SharePoint создает внешний список, содержащий контакты из базы данных AdventureWorks.  
+     SharePoint creates an external list that contains contacts from the AdventureWorks sample database.  
   
-7.  Чтобы протестировать конкретный метод поиска, выберите контакт в списке.  
+7.  To test the Specific Finder method, choose a contact in the list.  
   
-8.  На ленте выберите вкладку **Элементы**, а затем выберите команду **Просмотр элементов**.  
+8.  On the Ribbon, choose the **Items** tab, and then choose the **View Item** command.  
   
-     В форме отобразятся подробности выбранного контакта.  
+     The details of the contact that you chose appear on a form.  
   
-## Следующие действия  
- Дополнительные сведения о разработке моделей для службы BDC в SharePoint см. в следующих разделах.  
+## <a name="next-steps"></a>Next Steps  
+ You can learn more about how to design models for the BDC service in SharePoint from these topics:  
   
--   [Практическое руководство. Добавление метода Creator](../sharepoint/how-to-add-a-creator-method.md).  
+-   [How to: Add a Creator Method](../sharepoint/how-to-add-a-creator-method.md).  
   
--   [Практическое руководство. Добавление метода Updater](../sharepoint/how-to-add-an-updater-method.md).  
+-   [How to: Add an Updater Method](../sharepoint/how-to-add-an-updater-method.md).  
   
--   [Практическое руководство. Добавление метода Deleter](../sharepoint/how-to-add-a-deleter-method.md).  
+-   [How to: Add a Deleter Method](../sharepoint/how-to-add-a-deleter-method.md).  
   
-## См. также  
- [Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md)   
- [Общие сведения о средствах разработки моделей подключения к бизнес-данным](../sharepoint/bdc-model-design-tools-overview.md)   
- [Интеграция бизнес-данных в SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
+## <a name="see-also"></a>See Also  
+ [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md)   
+ [Creating a Business Data Connectivity Model](../sharepoint/creating-a-business-data-connectivity-model.md)   
+ [BDC Model Design Tools Overview](../sharepoint/bdc-model-design-tools-overview.md)   
+ [Integrating Business Data into SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
   
   

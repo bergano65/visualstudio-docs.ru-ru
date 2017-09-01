@@ -1,109 +1,151 @@
 ---
-title: "Ошибка. Не удается запустить отладку на веб-сервере | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.error.http"
-  - "vwd.nonadmin.error."
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "отладчик, ошибки веб-приложения"
-  - "отладка [Visual Studio], ошибки"
-  - "отладка веб-приложений ASP.NET, не удается запустить отладку - ошибка"
-  - "ошибки [отладчик], не удается запустить отладку"
-  - "HTTP-серверы, ошибка отладки"
-  - "IIS, отладка библиотек DLL"
-  - "удаленная отладка, ошибки"
-  - "безопасность [отладчик], в веб-приложениях"
-  - "параметры безопасности, проверка веб-узлов по умолчанию"
-  - "не удается запустить отладку - ошибка"
+title: 'Error: Unable to Start Debugging on the Web Server | Microsoft Docs'
+ms.custom: 
+ms.date: 05/23/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.error.http
+- vwd.nonadmin.error.
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- IIS, debugging DLLs
+- debugger, Web application errors
+- unable to start debugging error
+- security [debugger], Web applications
+- debugging [Visual Studio], errors
+- HTTP servers, debugging error
+- security settings, checking for default Web sites
+- errors [debugger], unable to start debugging
+- debugging ASP.NET Web applications, unable to start debugging error
+- remote debugging, errors
 ms.assetid: f62e378a-3a99-4f78-9d97-8bb63a4da181
-caps.latest.revision: 31
-caps.handback.revision: 27
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Ошибка. Не удается запустить отладку на веб-сервере
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+caps.latest.revision: 29
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 13122e526d60f7817339f481df8da3eb90354312
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/22/2017
 
-При попытке отладить приложение ASP.NET, запущенное на веб\-сервере, может появиться следующее сообщение об ошибке: "Не удается запустить отладку на веб\-сервере".  
+---
+# <a name="error-unable-to-start-debugging-on-the-web-server"></a>Error: Unable to Start Debugging on the Web Server
+
+When you try to debug an ASP.NET application running on a Web server, you may get this error message: `Unable to start debugging on the Web server`.
+
+Often, this error occurs because an error or configuration change has occurred that requires an update to your Application Pools, an IIS reset, or both.
+
+## <a name="specificerrors"></a>What is the detailed error message?
+
+The `Unable to start debugging on the Web server` message is generic. Usually, a more specific message is included in the error string and that may help you identify the cause of the problem or search for a more exact fix. Here are a few of the more common error messages that are appended to the main error message:
+
+- [IIS does not list a website that matches the launch url](#IISlist)
+- [Unable to connect to the webserver](#unabletoconnect)
+- [The web server did not respond in a timely manner](#webservertimeout)
+- [The microsoft visual studio remote debugging monitor(msvsmon.exe) does not appear to be running on the remote computer](#msvsmon)
+- [Could not start ASP.NET debugging](#aspnet)
+
+## <a name="IISlist"></a> IIS does not list a website that matches the launch url
+
+- Try starting Visual Studio as an Administrator and retry. (Some ASP.NET debugging scenarios require elevated privileges.) You can configure Visual Studio to always run as an Administrator by right-clicking the Visual Studio shortcut icon, choosing **Properties > Advanced**, and then choosing to always run as an Administrator.
+
+## <a name="unabletoconnect"></a> Unable to connect to the webserver
+
+- Are you running Visual Studio and the Web server on the same machine? Open your project properties and make sure that the project is configured to connect to the correct Web server or launch URL. (Open **Properties > Web > Servers** or **Properties > Debug** depending on your project type.)
+
+- If the Web server is remote, try restarting your Application Pools and then reset IIS. For more information, see [Check your IIS Configuration](#vxtbshttpservererrorsthingstocheck).
+
+## <a name="webservertimeout"></a> The web server did not respond in a timely manner
+
+- Try an IIS reset and retry debugging. Multiple debugger instances may be attached to the IIS process; a reset terminates them. For more information, see [Check your IIS Configuration](#vxtbshttpservererrorsthingstocheck).
+
+## <a name="msvsmon"></a> The microsoft visual studio remote debugging monitor(msvsmon.exe) does not appear to be running on the remote computer
+
+- If you are debugging on a remote machine, make sure you have [installed and are running the remote debugger](../debugger/remote-debugging.md). If the message mentions a firewall, make sure the [correct ports in the firewall](../debugger/remote-debugger-port-assignments.md) are open, especially if you are using a third party firewall.
+- If you are using a HOSTS file, make sure it is configured correctly. For example, it needs to include the same project URL as in your project properties, **Web** tab.
+
+## <a name="aspnet"></a> Could not start ASP.NET debugging
+
+- Try restarting the Application Pool and do an IIS reset. For more information, see [Check your IIS Configuration](#vxtbshttpservererrorsthingstocheck).
+- If you are doing URL rewrites, test a basic web.config with no URL rewrites. See the **Note** about the URL Rewrite Module in [Check your IIS Configuration](#vxtbshttpservererrorsthingstocheck).
+
+##  <a name="vxtbshttpservererrorsthingstocheck"></a> Check your IIS configuration
+
+After taking steps to resolve an issue detailed here, and before trying again to debug, you may also need to reset IIS. You can do that by opening an Administrator command prompt and typing `iisreset`, or you can perform a reset  in IIS Manager. 
+
+* Stop and restart your Application Pools, then retry.
+
+    The Application Pool may have stopped as a result of an error. Or, another configuration change that you made may require that you stop and restart your Application Pool.
+    
+    > [!NOTE]
+    > If the Application Pool keeps stopping, you may need to uninstall the URL Rewrite Module from the Control Panel. You can reinstall it using the Web Platform Installer (WPI). This issue may occur after a significant system upgrade.
+
+* Check your Application Pool configuration, correct it if needed, and then retry.
+
+    If password credentials have changed, you may need to update them in your Application Pool. Also, if you have recently installed ASP.NET, the Application Pool may be configured for the wrong version of ASP.NET. Fix the issue and restart the Application Pool.
+    
+* Check that your Web Application folder has the right permissions.
+
+    Make sure that you give IIS_IUSRS, IUSR, or the specific user associated with the Application Pool read and execute rights for the Web Application folder. Fix the issue and restart your Application Pool.
+
+* Make sure that the correct version of ASP.NET is installed on IIS.  See [Host on Windows with IIS](https://docs.asp.net/en/latest/publishing/iis.html).
+
+    Mismatched versions of ASP.NET on IIS and in your Visual Studio project may cause this issue. You may need to set the framework version in web.config.
   
- В большинстве случаев эта ошибка возникает из\-за неправильно настроенных служб IIS.  
-  
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> Убедитесь, что службы IIS настроены правильно  
- Сведения о развертывании в IIS 8 с помощью приложения MVC 5 см. в разделе [Публикация в IIS](https://docs.asp.net/en/latest/publishing/iis.html).  
-  
- Сведения о развертывании в IIS 7.5 см. в разделе [Удаленная отладка ASP.NET на удаленном компьютере IIS 7.5](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).  
-  
-##  <a name="vxtbshttpservererrorswebapplicationsonremoteservers"></a> Убедитесь, что установлены инструменты удаленной отладки Visual Studio  
- При отладке на удаленном веб\-сервере необходимо установить инструменты удаленной отладки Visual Studio. Сведения о скачивании и установке инструментов удаленной отладки см. в разделе [Удаленная отладка](../debugger/remote-debugging.md).  
-  
-##  <a name="vxtbshttpservererrorsanchor2"></a> Убедитесь, что установлен ASP.NET  
- **IIS 8**  
-  
- Для IIS 8 ASP.NET устанавливается в составе IIS.  
-  
-1.  На плитке **Диспетчер серверов** выберите **Панель мониторинга** и щелкните **Добавить роли и компоненты**.  
-  
-2.  На странице **Тип установки** выберите **Установка на основе ролей или компонентов** и нажмите **Далее**.  
-  
-3.  На странице **Выбор целевого сервера** выберите сервер в разделе **Выбор сервера из пула серверов** и нажмите **Далее**.  
-  
-4.  На странице **Выбор ролей сервера** выберите **Веб\-сервер \(IIS\)** и нажмите **Далее**.  
-  
-5.  На странице **Выбор компонентов** нажмите **Далее**.  
-  
-6.  На странице **Роль веб\-сервера \(IIS\)** нажмите **Далее**.  
-  
-7.  На странице **Выбор служб роли** обратите внимание на предустановленные службы роли, которые устанавливаются по умолчанию, разверните последовательно узлы **Сервер приложений** и **.NET Framework 4.5**, а затем выберите **ASP.NET 4.5**. \(Если установлен .NET 3.5, также выберите **ASP.NET 3.5**.\)  
-  
-8.  На странице **Подтверждение параметров установки** выберите **Установить**.  
-  
-9. На странице **Ход установки** подтвердите успешное завершение установки роли веб\-сервера \(IIS\) и необходимых служб ролей, затем нажмите **Закрыть**.  
-  
- **IIS 7.5 и более ранние версии**  
-  
- Для IIS 7.5 и более ранних версий в окне командной строки введите следующую команду:  
-  
-```  
-systemroot\Microsoft.NET\Framework\ versionNumber \aspnet_regiis -i   
-```  
-  
-## Устранение основных неполадок  
- Ниже приведены некоторые действия, которые можно выполнить для обеспечения корректного развертывания приложения ASP.NET.  
-  
-## Откройте страницу "localhost" в браузере  
- Если службы IIS не установлены правильно, должны отобразиться ошибки при вводе `http://localhost` в браузере.  
-  
-## Откройте веб\-страницу в браузере  
- Запустите веб\-браузер и введите URL\-адрес страницы, для которой выполняется отладка \(например `http://localhost/MyWebApplication`\). Если службы IIS настроены неправильно или приложение ASP.NET развернуто некорректно, отобразятся ошибки, которые помогут исправить настройку IIS и развертывание ASP.NET.  
-  
-## Создайте простое приложения ASP.NET на сервере  
- Попробуйте создать простое приложение ASP.NET локально на сервере и попробуйте отладить его.  
-  
-## Устраните ошибки проверки подлинности, если используется только IP\-адрес  
- Для отладки веб\-сервера требуется проверка подлинности NTLM. По умолчанию предполагается, что IP\-адреса являются частью Интернет\-зоны, и проверка подлинности NTLM для них не выполняется. Чтобы устранить эту проблему, укажите имя удаленного компьютера.  
-  
-##  <a name="vxtbshttpservererrorsmanuallyattaching"></a> Присоединение к процессу вручную  
- Если при запуске отладки продолжают возникать сообщения об ошибках, можно попытаться отладить приложение, присоединив отладчик к процессу вручную.  
-  
--   Запустите приложение без отладки. \(в меню **Отладка** выберите команду **Начать без отладки**\).  
-  
--   Нажмите **Отладка \> Присоединить к процессу**.  Когда появится окно, включите **Показать процессы всех пользователей**.  
-  
--   Найдите подходящий процесс и присоединитесь к нему. Для приложений ASP.NET до MVC 5 процесс называется "w3wp.exe". Для MVC 5 см. раздел [Публикация в IIS](https://docs.asp.net/en/latest/publishing/iis.html).  
-  
-## См. также  
- [Отладка веб\-приложений: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+* Resolve authentication errors if you are using only the IP address
+
+     By default, IP addresses are assumed to be part of the Internet, and NTLM authentication is not done over the Internet. If your web site is configured in IIS to require authentication, this authentication fails. To correct this problem, you can specify the name of the remote computer instead of the IP address.
+     
+## <a name="other-causes"></a>Other causes
+
+If the IIS configuration is not causing the issue, try these steps:
+
+- Restart Visual Studio with Administrator privileges and try again.
+
+    Some ASP.NET debugging scenarios such as using Web Deploy require elevated privileges for Visual Studio.
+    
+- If multiple instances of Visual Studio are running, reopen your project in one instance of Visual Studio (with Administrator privileges), and try again.
+
+- If you are using a HOSTS file with local addresses, try using the loopback address instead of the machine's IP address.
+
+    If you are not using local addresses, make sure your HOSTS file includes the same project URL as in your project properties, **Web** tab.
+
+## <a name="more-troubleshooting-steps"></a>More troubleshooting steps
+
+* Bring up the localhost page in the browser on the server.
+
+     If IIS is not installed correctly, you should get errors when you type `http://localhost` in a browser.
+     
+     For more information on deploying to IIS, see [Host on Windows with IIS](https://docs.asp.net/en/latest/publishing/iis.html).
+
+* Create a basic ASP.NET application on the server (or use a basic web.config file).
+
+    If you can't get your app to work with the debugger, try creating a basic ASP.NET application locally on the server, and try to debug the basic app. (You might want to use the default ASP.NET MVC template.) If you can debug a basic app, that may help you identify what's different between the two configurations. Look for differences in settings in the web.config file, such as URL rewrite rules.
+
+## <a name="see-also"></a>See Also  
+ [Debugging Web Applications: Errors and Troubleshooting](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

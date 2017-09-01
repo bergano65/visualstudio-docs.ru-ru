@@ -1,77 +1,94 @@
 ---
-title: "СОСТОЯНИЯ ПОТОКА | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "THREADSTATE"
-helpviewer_keywords: 
-  - "Перечисление состояния ПОТОКА"
+title: THREADSTATE | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- THREADSTATE
+helpviewer_keywords:
+- THREADSTATE enumeration
 ms.assetid: 62efdd7c-25b1-4fd3-9d06-ac1830a418a9
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# СОСТОЯНИЯ ПОТОКА
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 32e6781b57a60ac39fa932ac5df5aea9e36b07b2
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-Задает состояние потока.  
+---
+# <a name="threadstate"></a>THREADSTATE
+Specifies the state of the thread.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-enum enum_THREADSTATE {   
-   THREADSTATE_RUNNING = 0x0001,  
-   THREADSTATE_STOPPED = 0x0002,  
-   THREADSTATE_FRESH   = 0x0003,  
-   THREADSTATE_DEAD    = 0x0004,  
-   THREADSTATE_FROZEN  = 0x0005  
+```cpp  
+enum enum_THREADSTATE {   
+   THREADSTATE_RUNNING = 0x0001,  
+   THREADSTATE_STOPPED = 0x0002,  
+   THREADSTATE_FRESH   = 0x0003,  
+   THREADSTATE_DEAD    = 0x0004,  
+   THREADSTATE_FROZEN  = 0x0005  
 };  
 typedef DWORD THREADSTATE;  
 ```  
   
-```c#  
-public enum enum_THREADSTATE {   
-   THREADSTATE_RUNNING = 0x0001,  
-   THREADSTATE_STOPPED = 0x0002,  
-   THREADSTATE_FRESH   = 0x0003,  
-   THREADSTATE_DEAD    = 0x0004,  
-   THREADSTATE_FROZEN  = 0x0005  
+```csharp  
+public enum enum_THREADSTATE {   
+   THREADSTATE_RUNNING = 0x0001,  
+   THREADSTATE_STOPPED = 0x0002,  
+   THREADSTATE_FRESH   = 0x0003,  
+   THREADSTATE_DEAD    = 0x0004,  
+   THREADSTATE_FROZEN  = 0x0005  
 };  
 ```  
   
-## Члены  
- THREADSTATE\_RUNNING  
- Указывает, что поток выполняется.  
+## <a name="members"></a>Members  
+ THREADSTATE_RUNNING  
+ Indicates that the thread is running.  
   
- THREADSTATE\_STOPPED  
- Указывает, что поток остановлен из\-за точки останова.  
+ THREADSTATE_STOPPED  
+ Indicates that the thread is stopped because of a breakpoint.  
   
- THREADSTATE\_FRESH  
- Указывает, что был создан поток, но еще не выполняется код.  
+ THREADSTATE_FRESH  
+ Indicates that the thread has been created, but is not yet running code.  
   
- THREADSTATE\_DEAD  
- Указывает, что поток мертв.  
+ THREADSTATE_DEAD  
+ Indicates that the thread is dead.  
   
- THREADSTATE\_FROZEN  
- Указывает, что поток заморожен \(отсутствие выполнение может быть выполнена\).  
+ THREADSTATE_FROZEN  
+ Indicates that the thread is frozen (no execution can be performed).  
   
-## Заметки  
- Используется для `dwThreadState` поле   [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) структура.  
+## <a name="remarks"></a>Remarks  
+ Used for the `dwThreadState` field of the [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) structure.  
   
-## Требования  
- Заголовок: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

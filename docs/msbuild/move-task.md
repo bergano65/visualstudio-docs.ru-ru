@@ -1,49 +1,69 @@
 ---
-title: "Задача Move | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "Move - задача [MSBuild]"
-  - "MSBuild, Move - задача"
+title: "Задача Move | Документация Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- MSBuild, Move task
+- Move task [MSBuild]
 ms.assetid: d1405347-1309-4f18-b565-905408093d59
 caps.latest.revision: 4
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 4
----
-# Задача Move
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: deee8db477425c628e214ad1332884f5a5693ea4
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/01/2017
 
-Перемещение файлов в новое расположение.  
+---
+# <a name="move-task"></a>Задача Move
+Перемещает файлы в новое расположение.  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  В следующей таблице описаны параметры задачи `Move`.  
   
 |Параметр|Описание|  
-|--------------|--------------|  
-|`DestinationFiles`|Необязательный выходной параметр типа <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Этот параметр указывает список, в который будут перемещены исходные файлы.  Предполагается, что этот список будет взаимно\-однозначно сопоставляться со списком, заданным параметром `SourceFiles`.  То есть первый файл из списка `SourceFiles` будет перемещен с использованием первого пути, заданного в списке `DestinationFiles`, и т. д.|  
-|`DestinationFolder`|Необязательный параметр типа <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> указывает каталог, в который требуется переместить файлы.|  
-|`MovedFiles`|Необязательный выходной параметр типа <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Этот параметр содержит успешно перемещенные элементы.|  
-|`OverwriteReadOnlyFiles`|Необязательный параметр типа `Boolean`.<br /><br /> Если значение `true`, перезаписываются даже файлы, доступные только для чтения.|  
+|---------------|-----------------|  
+|`DestinationFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает список файлов, в который будут перемещены исходные файлы. Предполагается, что этот список будет взаимно-однозначно сопоставляться со списком, указанным в параметре `SourceFiles`. Для перемещения первого файла из списка `SourceFiles` используется первый путь из списка `DestinationFiles` и т. д.|  
+|`DestinationFolder`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Указывает каталог, в который вы хотите переместить файлы.|  
+|`MovedFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит успешно перемещенные элементы.|  
+|`OverwriteReadOnlyFiles`|Необязательный параметр `Boolean`.<br /><br /> Значение `true` означает, что нужно перезаписывать даже файлы, доступные только для чтения.|  
 |`SourceFiles`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Указывает файлы для перемещения.|  
   
-## Заметки  
- Может быть указан либо параметр `DestinationFolder`, либо `DestinationFiles`, но не оба одновременно.  Если указаны оба параметра, задача прерывает работу и в журнале событий регистрируется ошибка.  
+## <a name="remarks"></a>Примечания  
+ Можно указать либо параметр `DestinationFolder`, либо параметр `DestinationFiles`, но не оба одновременно. В противном случае задача прерывает работу и в журнале регистрируется ошибка.  
+
+ Задача `Move` создает все необходимые папки для указанного целевого расположения файлов.
+
+ Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
- В дополнение к параметры, которые перечислены в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который наследует от класса<xref:Microsoft.Build.Utilities.Task>.  Чтобы получить список этих доп параметров и их описаний, см. [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
-  
-## См. также  
+## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+

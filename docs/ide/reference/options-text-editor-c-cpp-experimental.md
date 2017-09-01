@@ -1,7 +1,7 @@
 ---
-title: "&quot;Параметры&quot;, &quot;Текстовый редактор&quot;, C/C++, &quot;Экспериментальный&quot; | Документы Майкрософт"
+title: "\"Параметры\", \"Текстовый редактор\", C/C++, \"Экспериментальный\" | Документы Майкрософт"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 08/02/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -30,11 +30,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 77c4408fcd93a776468cf5fb23b3807a2b8d594d
+ms.translationtype: HT
+ms.sourcegitcommit: 8a544bd1e1242bb6fabe00f7842ac33ed9d9d444
+ms.openlocfilehash: 1677db7d5af93db8a378d598332e6a6d52f09bdd
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/24/2017
+ms.lasthandoff: 08/14/2017
 
 ---
 # <a name="options-text-editor-cc-experimental"></a>"Параметры", "Текстовый редактор", C/C++, "Экспериментальный"
@@ -50,7 +50,8 @@ ms.lasthandoff: 05/24/2017
 ## <a name="enable-predictive-intellisense"></a>Включить прогнозный IntelliSense
 Прогнозный IntelliSense ограничивает число результатов, отображаемых в раскрывающемся списке IntelliSense, чтобы вы видели лишь результаты, релевантные в данном контексте. Например, если ввести <code>int x =</code> и вызвать раскрывающийся список IntelliSense, вы увидите только целые числа или функции, которые их возвращают. По умолчанию прогнозный IntelliSense отключен.
 
-## <a name="enable-faster-project-load"></a>Ускорение загрузки проекта
+## <a name="enable-faster-project-load"></a>Ускорение загрузки проекта 
+**Visual Studio 2017 версии 15.3 и более поздние версии**. Эта функция теперь называется **Включить кэширование проектов** и перемещена на страницу свойств [Параметры проекта VC++](vcpp-project-settings-projects-and-solutions-options-dialog-box.md).
 Этот параметр позволяет Visual Studio кэшировать данные проекта, чтобы при открытии проекта он мог загрузить эти данные, а не повторно вычислять их из файлов проекта. Использование кэшированных файлов может значительно ускорить время загрузки проектов.  
 
 ## <a name="additional-features-in-the-visual-studio-gallery"></a>Дополнительные функции в галерее Visual Studio

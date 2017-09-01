@@ -1,5 +1,5 @@
 ---
-title: "IDebugDisassemblyStream2::GetScope | Документы Microsoft"
+title: IDebugDisassemblyStream2::GetScope | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,39 +30,40 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 50c48edd512827d79ed1a1a3575cfb0f306f17f2
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a978b214b62ea5bdf3ee5b7109abe289c88f0efa
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugdisassemblystream2getscope"></a>IDebugDisassemblyStream2::GetScope
-Возвращает область потока Дизассемблированный код.  
+Gets the scope of the disassembly stream.  
   
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetScope(   
    DISASSEMBLY_STREAM_SCOPE* pdwScope  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetScope(   
    out enum_ DISASSEMBLY_STREAM_SCOPE pdwScope  
 );  
 ```  
   
-#### <a name="parameters"></a>Параметры  
+#### <a name="parameters"></a>Parameters  
  `pdwScope`  
- [out] Возвращает значение из [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) перечисление, описывающее область действия этого потока Дизассемблированный код.  
+ [out] Returns a value from the [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) enumeration that describes the scope of this disassembly stream.  
   
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="remarks"></a>Примечания  
- Область Дизассемблированный код может быть функции или всего модуля, например.  
+## <a name="remarks"></a>Remarks  
+ The scope of a disassembly could be a function or the whole module, for example.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>See Also  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
  [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)

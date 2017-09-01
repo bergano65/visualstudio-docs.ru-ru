@@ -1,5 +1,5 @@
 ---
-title: "Шаг 3. Добавление таймера с обратным отсчетом | Документы Майкрософт"
+title: 'Step 3: Add a Countdown Timer | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -28,51 +28,51 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 451635681519303b5e85b70788534e22af21707c
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 1719ed1feb1caa38644550322484d2ba519c1be2
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/30/2017
 
 ---
-# <a name="step-3-add-a-countdown-timer"></a>Шаг 3. Добавление таймера с обратным отсчетом
-В третьей части этого учебника вам предстоит добавить таймер обратного отсчета для отслеживания количества секунд, оставшихся у игрока на решение задач викторины.  
+# <a name="step-3-add-a-countdown-timer"></a>Step 3: Add a Countdown Timer
+In the third part of this tutorial, you'll add a countdown timer to track the number of seconds that remain for the quiz taker to finish.  
   
 > [!NOTE]
->  Этот раздел входит в серию учебников, посвященных основам написания кода. Обзор учебника см. в статье [Tutorial 2: Create a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md) (Учебное руководство 2. Создание ограниченной по времени математической головоломки).  
+>  This topic is part of a tutorial series about basic coding concepts. For an overview of the tutorial, see [Tutorial 2: Create a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
-### <a name="to-add-a-countdown-timer"></a>Добавление таймера с обратным отсчетом  
+### <a name="to-add-a-countdown-timer"></a>To add a countdown timer  
   
-1.  Добавьте целочисленную переменную с именем **timeLeft** точно так же, как в предыдущей процедуре. Код должен выглядеть так, как показано ниже.  
+1.  Add an integer variable that's named **timeLeft**, just like you did in the previous procedure. Your code should look like the following.  
   
-     [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)] [!code-cs[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]  
+     [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]  [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]  
   
-     Теперь вам необходим метод-таймер, который будет подсчитывать количество секунд и по истечении указанного времени вызывать событие.  
+     Now you need a method that actually counts the seconds, such as a timer, which raises an event after the amount of time that you specify.  
   
-2.  В окне конструктора переместите элемент управления `Timer` из категории **Компоненты** панели элементов на свою форму.  
+2.  In the design window, move a `Timer` control from the **Components** category of the Toolbox to your form.  
   
-     Элемент управления появляется в серой области в нижней части окна конструктора.  
+     The control appears in the gray area at the bottom of the design window.  
   
-3.  Щелкните в форме только что добавленный значок **timer1** и установите его свойство **Interval** равным **1000**.  
+3.  On the form, choose the **timer1** icon that you just added, and set its **Interval** property to **1000**.  
   
-     Поскольку значение интервала указывается в миллисекундах, при значении 1000 событие Tick будет запускаться каждую секунду.  
+     Because the interval value is milliseconds, a value of 1000 causes the Tick event to fire every second.  
   
-4.  Двойным щелчком выберите в форме элемент управления Timer либо выделите его и нажмите клавишу ВВОД.  
+4.  On the form, double-click the Timer control, or choose it and then choose the Enter key.  
   
-     Появится редактор кода с отображением метода для только что добавленного обработчика событий Tick.  
+     The code editor appears and displays the method for the Tick event handler that you just added.  
   
-5.  Добавьте в новый метод обработчика событий следующие операторы.  
+5.  Add the following statements to the new event handler method.  
   
-     [!code-vb[VbExpressTutorial3Step3#6](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_2.vb)] [!code-cs[VbExpressTutorial3Step3#6](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_2.cs)]  
+     [!code-vb[VbExpressTutorial3Step3#6](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_2.vb)]  [!code-csharp[VbExpressTutorial3Step3#6](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_2.cs)]  
   
-     Основываясь на добавленных операторах, таймер каждую секунду проверяет, истекло ли время, путем проверки того, является ли целочисленная переменная **timeLeft** больше 0. Если она больше 0, время еще осталось. Таймер сначала вычитает 1 из значения переменной timeLeft, а затем обновляет свойство **Text** элемента управления `timeLabel`, чтобы показать игроку, сколько осталось секунд.  
+     Based on what you added, the timer checks each second whether time has run out by determining whether the **timeLeft** integer variable is greater than 0. If it is, time still remains. The timer first subtracts 1 from timeLeft and then updates the **Text** property of the `timeLabel` control to show the quiz taker how many seconds remain.  
   
-     Если времени не осталось, таймер останавливается и изменяет текст в элементе управления `timeLabel` так, чтобы он показывал **Time's up!** (Время вышло!). Появляется окно сообщения о том, что игра закончена, и отображается ответ — в данном случае сумма переменной addend1 и переменной addend2. Свойству **Enabled** элемента управления `startButton` устанавливается значение `true`, чтобы игрок мог заново запустить викторину.  
+     If no time remains, the timer stops and changes the text of the `timeLabel` control so that it shows **Time's up!** A message box announces that the quiz is over, and the answer is revealed—in this case, by adding addend1 and addend2. The **Enabled** property of the `startButton` control is set to `true` so that the quiz taker can start another quiz.  
   
-     Только что был добавлен оператор `if else`, в котором описывается, как программа принимает решение . Оператор `if else` представлен ниже.  
+     You just added an `if else` statement, which is how you tell programs to make decisions. An `if else` statement looks like the following.  
   
     > [!NOTE]
-    >  Следующий пример приведен исключительно для иллюстрации; не добавляйте его в свой проект.  
+    >  The following example is for illustration only-don't add it to your project.  
   
     ```vb  
     If (something that your program will check) Then  
@@ -84,7 +84,7 @@ ms.lasthandoff: 05/13/2017
     End If  
     ```  
   
-    ```c#  
+    ```csharp  
     if (something that your program will check)  
     {  
         // One or more statements that will run  
@@ -97,29 +97,29 @@ ms.lasthandoff: 05/13/2017
     }  
     ```  
   
-     Внимательно рассмотрите оператор, который вы добавили в блок `else`, чтобы отобразить ответ на задачу на сложение.  
+     Look closely at the statement that you added in the `else` block to show the answer to the addition problem.  
   
-     [!code-vb[VbExpressTutorial3Step3#24](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_3.vb)] [!code-cs[VbExpressTutorial3Step3#24](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_3.cs)]  
+     [!code-vb[VbExpressTutorial3Step3#24](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_3.vb)]  [!code-csharp[VbExpressTutorial3Step3#24](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_3.cs)]  
   
-     Оператор `addend1 + addend2` складывает значения двух переменных. Первая часть (`sum.Value`) использует свойство **Value** элемента управления `NumericUpDown` суммы для отображения правильного ответа. Это же свойство позднее используется для проверки ответов на головоломку.  
+     The statement `addend1 + addend2` adds the values in the two variables together. The first part (`sum.Value`) uses the **Value** property of the sum `NumericUpDown` control to display the correct answer. You use the same property later to check the answers for the quiz.  
   
-     Элемент управления `NumericUpDown` позволяет игрокам легко вводить числа; именно поэтому мы используем его для ответов на арифметические задачи. Все возможные ответы представляют собой целые числа в диапазоне от 0 до 100. Оставив для свойств **Minimum**, **Maximum** и **DecimalPlaces** значения по умолчанию, вы гарантируете, что игроки не смогут вводить десятичные знаки, отрицательные числа или слишком большие числа. (Если, например, требуется разрешить игрокам ввести 3,141, но не 3,1415, можно задать для свойства **DecimalPlaces** значение, равное 3.)  
+     Quiz takers can enter numbers more easily by using a `NumericUpDown` control, which is why you use one for the answers to the math problems. All of the potential answers are whole numbers from 0 through 100. By leaving the default values of the **Minimum**, **Maximum**, and **DecimalPlaces** properties, you ensure that quiz takers can't enter decimals, negative numbers, or numbers that are too high. (If you wanted to allow quiz takers to enter 3.141 but not 3.1415, you could set the **DecimalPlaces** property to 3.)  
   
-6.  Добавьте три строки в конец метода `StartTheQuiz()`, чтобы код выглядел так, как показано ниже.  
+6.  Add three lines to the end of the `StartTheQuiz()` method, so the code looks like the following.  
   
-     [!code-vb[VbExpressTutorial3Step3#7](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_4.vb)] [!code-cs[VbExpressTutorial3Step3#7](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_4.cs)]  
+     [!code-vb[VbExpressTutorial3Step3#7](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_4.vb)]  [!code-csharp[VbExpressTutorial3Step3#7](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_4.cs)]  
   
-     Теперь при запуске головоломки переменная **timeLeft** устанавливается равной 30, а свойство **Text** элемента управления `timeLabel` устанавливается равным 30 секундам. После этого метод `Start()` элемента управления `Timer` начинает обратный отсчет. (Ответ пока не проверяется — это делается позже.)  
+     Now, when your quiz starts, the **timeLeft** variable is set to 30 and the **Text** property of the `timeLabel` control is set to 30 seconds. Then the `Start()` method of the `Timer` control starts the countdown. (The quiz doesn't check the answer yet—that comes next.)  
   
-7.  Сохраните программу, запустите ее и нажмите кнопку **Запуск** в форме.  
+7.  Save your program, run it, and then choose the **Start** button on the form.  
   
-     Таймер начинает обратный отсчет. Когда время истечет, игра закончится и появится ответ. На следующем рисунка показана головоломка в процессе игры.  
+     The timer starts to count down. When time runs out, the quiz ends, and the answer appears. The following illustration shows the quiz in progress.  
   
-     ![Математическая головоломка в процессе игры](~/ide/media/express_addcountdown.png "Express_AddCountdown")  
-Математическая головоломка в процессе игры  
+     ![Math quiz in progress](../ide/media/express_addcountdown.png "Express_AddCountdown")  
+Math quiz in progress  
   
-### <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал  
+### <a name="to-continue-or-review"></a>To continue or review  
   
--   Следующий шаг руководства см. в разделе [Step 4: Add the CheckTheAnswer() Method](../ide/step-4-add-the-checktheanswer-parens-method.md) (Шаг 4. Добавление метода CheckTheAnswer()).  
+-   To go to the next tutorial step, see [Step 4: Add the CheckTheAnswer() Method](../ide/step-4-add-the-checktheanswer-parens-method.md).  
   
--   Предыдущий шаг руководства см. в разделе [Step 2: Create a Random Addition Problem](../ide/step-2-create-a-random-addition-problem.md) (Шаг 6. Создание задачи на сложение случайных чисел).
+-   To return to the previous tutorial step, see [Step 2: Create a Random Addition Problem](../ide/step-2-create-a-random-addition-problem.md).

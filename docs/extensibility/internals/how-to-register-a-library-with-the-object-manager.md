@@ -1,54 +1,71 @@
 ---
-title: "Практическое руководство: зарегистрировать библиотеку с помощью диспетчера объектов | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "библиотеки, регистрация диспетчера объектов"
-  - "Интерфейс IVsLibrary2, регистрация библиотеки с помощью диспетчера объектов"
-  - "Интерфейс IVsSimpleLibrary2, регистрация библиотеки с помощью диспетчера объектов"
-  - "Интерфейс IVsObjectManager2, регистрация библиотеки с помощью диспетчера объектов"
-  - "библиотеки, средства обзора символов"
+title: 'How to: Register a Library with the Object Manager | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- libraries, registering with object manager
+- IVsLibrary2 interface, registering library with object manager
+- IVsSimpleLibrary2 interface, registering library with object manager
+- IVsObjectManager2 interface, registering library with object manager
+- libraries, symbol-browsing tools
 ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
 caps.latest.revision: 26
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 26
----
-# Практическое руководство: зарегистрировать библиотеку с помощью диспетчера объектов
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0c9291dec5cf812f2cf2d8807263f1dc2b46e325
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-Символ\-просмотреть инструменты, например **Окно классов**"  **Обозреватель объектов**"  **Обозреватель вызовов** и  **Результаты поиска символа**, позволяют просматривать символы в проекте или во внешних компонентах.  Символы включают пространств имен, классов, интерфейсов, методов и другие элементы языка.  Библиотеки отслеживают эти символы и предоставляют их к [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчер объекта, который заполняет средства работы с данными.  
+---
+# <a name="how-to-register-a-library-with-the-object-manager"></a>How to: Register a Library with the Object Manager
+Symbols-browsing tools, such as **Class View**, **Object Browser**, **Call Browser** and **Find Symbol Results**, enable you to view symbols in your project or in external components. The symbols include namespaces, classes, interfaces, methods, and other language elements. The libraries track these symbols and expose them to the [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] object manager that populates the tools with the data.  
   
- Диспетчер объекта отслеживает всех доступных библиотек.  Каждая библиотека должна зарегистрировать с помощью объекта перед защита символов для символ\-просмотря сервис.  
+ The object manager keeps track of all available libraries. Each library must register with the object manager before providing symbols for the symbol-browsing tools.  
   
- Обычно выполняется регистрация библиотек при загрузке VSPackage.  Однако ее можно сделать на другой раз по мере необходимости.  Для отмены регистрации библиотеки, когда VSPackage завершает работу.  
+ Typically, you register a library when a VSPackage loads. However, it can be done at another time as needed. You unregister the library when the VSPackage shuts down.  
   
- Чтобы зарегистрировать библиотеку, используйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterLibrary%2A> метод.  В случае управляемого кода, используйте библиотеки <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> метод.  
+ To register a library, use the <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterLibrary%2A> method. In the case of managed code library, use the <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> method.  
   
- Регистрировать библиотеку, использующий <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> метод.  
+ To unregister a library, use the <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> method.  
   
- Получить ссылку на него объекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>передайте  <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> идентификатор службы  `GetService` метод.  
+ To obtain a reference to the object manager, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>, pass the <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> service ID to `GetService` method.  
   
-## При регистрации и отмены регистрации библиотеки с диспетчером объектов  
+## <a name="registering-and-unregistering-a-library-with-the-object-manager"></a>Registering and unregistering a Library with the Object Manager  
   
-#### Регистрация библиотеки с диспетчером объектов  
+#### <a name="to-register-a-library-with-the-object-manager"></a>To register a library with the object manager  
   
-1.  Создание библиотеки.  
+1.  Create a library.  
   
-    ```vb#  
+    ```vb  
     Private m_CallBrowserLibrary As CallBrowser.Library = Nothing  
     Private m_nLibraryCookie As UInteger = 0  
     ' Create Library.  
     m_CallBrowserLibrary = New CallBrowser.Library()  
     ```  
   
-    ```c#  
+    ```csharp  
     private CallBrowser.Library m_CallBrowserLibrary = null;  
     private uint m_nLibraryCookie = 0;  
     // Create Library.  
@@ -56,9 +73,9 @@ caps.handback.revision: 26
   
     ```  
   
-2.  Получите ссылку на объект <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> введите и вызовите  <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> метод.  
+2.  Obtain a reference to an object of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> type and call the <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> method.  
   
-    ```vb#  
+    ```vb  
     Private Sub RegisterLibrary()  
         If m_nLibraryCookie <> 0 Then  
             Throw New Exception("Library already registered with Object Manager")  
@@ -81,7 +98,7 @@ caps.handback.revision: 26
     End Sub  
     ```  
   
-    ```c#  
+    ```csharp  
     private void RegisterLibrary()  
     {  
         if (m_nLibraryCookie != 0)  
@@ -110,11 +127,11 @@ caps.handback.revision: 26
   
     ```  
   
-#### Отмена регистрации библиотеки с диспетчером объектов  
+#### <a name="to-unregister-a-library-with-the-object-manager"></a>To unregister a library with the object manager  
   
-1.  Получите ссылку на объект <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> введите и вызовите  <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> метод.  
+1.  Obtain a reference to an object of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> type and call the <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> method.  
   
-    ```vb#  
+    ```vb  
     Private Sub UnregisterLibrary()  
         If m_nLibraryCookie <> 0 Then  
             ' Obtain a reference to IVsObjectManager2 type object.  
@@ -136,7 +153,7 @@ caps.handback.revision: 26
     End Sub  
     ```  
   
-    ```c#  
+    ```csharp  
     private void UnregisterLibrary()  
     {  
         if (m_nLibraryCookie != 0)  
@@ -165,7 +182,7 @@ caps.handback.revision: 26
   
     ```  
   
-## См. также  
- [Расширяемость устаревших языковой службы](../../extensibility/internals/legacy-language-service-extensibility.md)   
- [Вспомогательные средства просмотра символов](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Практическое руководство: предоставлять список символов, предоставленный библиотекой диспетчера объектов](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+## <a name="see-also"></a>See Also  
+ [Legacy Language Service Extensibility](../../extensibility/internals/legacy-language-service-extensibility.md)   
+ [Supporting Symbol-Browsing Tools](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
+ [How to: Expose Lists of Symbols Provided by the Library to the Object Manager](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

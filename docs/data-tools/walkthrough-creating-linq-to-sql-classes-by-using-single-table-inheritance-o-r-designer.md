@@ -1,154 +1,176 @@
 ---
-title: "Пошаговое руководство. Создание классов LINQ to SQL с помощью однотабличного наследования (реляционный конструктор объектов) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'Walkthrough: Creating LINQ to SQL Classes by Using Single-Table Inheritance (O-R Designer) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
 caps.latest.revision: 4
-caps.handback.revision: 1
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 5b98e5ebbcbcbe94b68575d8ceea34fc8ea6fac8
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Создание классов LINQ to SQL с помощью однотабличного наследования (реляционный конструктор объектов)
-[Реляционный конструктор объектов](../data-tools/linq-to-sql-tools-in-visual-studio2.md) поддерживает наследование одиночных таблиц, так как именно обычно осуществляется в реляционных системах.Это пошаговое руководство разворачивается после универсальных шагов, описанных в разделе [Как настроить наследование с использованием реляционного конструктора объектов](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md), обеспечивает некоторые реальные данные, чтобы продемонстрировать использование наследования в [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
+# <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Walkthrough: Creating LINQ to SQL Classes by Using Single-Table Inheritance (O/R Designer)
+The [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) supports single-table inheritance as it is typically implemented in relational systems. This walkthrough expands upon the generic steps provided in the [How to: Configure inheritance by using the O/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) topic and provides some real data to demonstrate the use of inheritance in the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
   
- В этом пошаговом руководстве вы будете выполнять следующие задачи:  
+ During this walkthrough, you will perform the following tasks:  
   
--   Создайте таблицу базы данных и добавьте в нее данные.  
+-   Create a database table and add data to it.  
   
--   Создайте приложение Windows Forms.  
+-   Create a Windows Forms application.  
   
--   Добавление файла [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] в проект.  
+-   Add a [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] file to a project.  
   
--   Создайте новые классы сущностей.  
+-   Create new entity classes.  
   
--   Конфигурируйте классы сущностей на использование наследования.  
+-   Configure the entity classes to use inheritance.  
   
--   Выполните запрос унаследованного класса.  
+-   Query the inherited class.  
   
--   Отобразите данные на Windows Forms  
+-   Display the data on a Windows Form.  
   
-## Создайте таблицу в Наследовать из  
- Чтобы увидеть, как работает наследование, надо создать небольшую таблицу Person, использовать ее как базовый класс, и затем создать объект Employee, который наследует из него.  
+## <a name="create-a-table-to-inherit-from"></a>Create a Table to Inherit From  
+ To see how inheritance works, you will create a small Person table, use it as a base class, and then create an Employee object that inherits from it.  
   
-#### Для создания базовой таблицы, чтобы продемонстрировать наследование  
+#### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>To create a base table to demonstrate inheritance  
   
-1.  В **Обозревателе серверов**\/**Обозревателе баз данных** щелкните правой кнопкой мыши по узлу **Таблицы**, затем щелкните по пункту **Добавить новую таблицу**.  
+1.  In **Server Explorer**/**Database Explorer**, right-click the **Tables** node and click **Add New Table**.  
   
     > [!NOTE]
-    >  Может быть использована база данных Northwind или любая другая, к которой можно добавить таблицу.  
+    >  You can use the Northwind database or any other database that you can add a table to.  
   
-2.  В конструкторе таблиц добавьте в таблицу следующие столбцы:  
+2.  In the Table Designer, add the following columns to the table:  
   
-    |Имя столбца|Тип данных|Разрешить значения null|  
-    |-----------------|----------------|-----------------------------|  
-    |Идентификатор|int|False|  
-    |Тип|int|True|  
-    |FirstName|nvarchar\(200\)|False|  
-    |LastName|nvarchar\(200\)|False|  
-    |Руководитель|int|True|  
+    |Column Name|Data Type|Allow Nulls|  
+    |-----------------|---------------|-----------------|  
+    |**ID**|**int**|**False**|  
+    |**Type**|**int**|**True**|  
+    |**FirstName**|**nvarchar(200)**|**False**|  
+    |**LastName**|**nvarchar(200)**|**False**|  
+    |**Manager**|**int**|**True**|  
   
-3.  Задайте столбец ID в качестве первичного ключа.  
+3.  Set the ID column as the primary key.  
   
-4.  Сохраните таблицу и дайте ей имя Person.  
+4.  Save the table and name it **Person**.  
   
-## Добавление данных в таблицу  
- Чтобы вы могли убедиться, что наследование конфигурировано правильно, в таблицу нужно ввести некоторые данные для каждого класса в наследовании единственной таблицы.  
+## <a name="add-data-to-the-table"></a>Add Data to the Table  
+ So that you can verify that inheritance is configured correctly, the table needs some data for each class in the single-table inheritance.  
   
-#### Для добавления данных в таблицу  
+#### <a name="to-add-data-to-the-table"></a>To add data to the table  
   
-1.  Откройте таблицу в окне просмотра данных.\(Щелкните правой кнопкой мыши таблицу **Person** в **Обозревателе серверов**\/**Обозревателе базы данных** и щелкните по пункту **Показать таблицу данных**.\)  
+1.  Open the table in data view. (Right-click the **Person** table in **Server Explorer**/**Database Explorer** and click **Show Table Data**.)  
   
-2.  Скопируйте в таблицу следующие данные.\(Можно скопировать данные и вставить их в таблицу, выбрав целую строку в таблице [Results Pane](http://msdn.microsoft.com/ru-ru/3c712f20-7c9f-4021-b1ac-fdc6f534c95a).\)  
+2.  Copy the following data into the table. (You can copy it and then paste it into the table by selecting the whole row in the Results Pane.)  
   
     ||||||  
     |-|-|-|-|-|  
-    |Идентификатор|Тип|FirstName|LastName|Руководитель|  
-    |1|1|Anne|Wallace|NULL|  
-    |2|1|Carlos|Grilo|NULL|  
-    |3|1|Yael|Peled|NULL|  
-    |4|2|Gatis|Ozolins|1|  
-    |5|2|Andreas|Hauser|1|  
-    |6|2|Tiffany|Phuvasate|1|  
-    |7|2|Alexey|Orekhov|2|  
-    |8|2|Michał|Poliszkiewicz|2|  
-    |9|2|Tai|Yee|2|  
-    |10|2|Fabricio|Noriega|3|  
-    |11|2|Mindy|Martin|3|  
-    |12|2|Ken|Kwok|3|  
+    |**ID**|**Type**|**FirstName**|**LastName**|**Manager**|  
+    |**1**|**1**|**Anne**|**Wallace**|**NULL**|  
+    |**2**|**1**|**Carlos**|**Grilo**|**NULL**|  
+    |**3**|**1**|**Yael**|**Peled**|**NULL**|  
+    |**4**|**2**|**Gatis**|**Ozolins**|**1**|  
+    |**5**|**2**|**Andreas**|**Hauser**|**1**|  
+    |**6**|**2**|**Tiffany**|**Phuvasate**|**1**|  
+    |**7**|**2**|**Alexey**|**Orekhov**|**2**|  
+    |**8**|**2**|**Michał**|**Poliszkiewicz**|**2**|  
+    |**9**|**2**|**Tai**|**Yee**|**2**|  
+    |**10**|**2**|**Fabricio**|**Noriega**|**3**|  
+    |**11**|**2**|**Mindy**|**Martin**|**3**|  
+    |**12**|**2**|**Ken**|**Kwok**|**3**|  
   
-## Создание нового проекта  
- Теперь, когда таблица создана, создайте новый проект, чтобы продемонстрировать настройку наследования.  
+## <a name="create-a-new-project"></a>Create a New Project  
+ Now that you have created the table, create a new project to demonstrate configuring inheritance.  
   
-#### Для создания нового приложения Windows  
+#### <a name="to-create-the-new-windows-application"></a>To create the new Windows Application  
   
-1.  В меню **Файл** создайте новый проект.  
+1.  From the **File** menu, create a new project.  
   
-2.  Назовите проект InheritanceWalkthrough.  
+2.  Name the project **InheritanceWalkthrough**.  
   
     > [!NOTE]
-    >  [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] поддерживается в проектах Visual Basic и C\#.Создайте новый проект на одном из этих языков.  
+    >  The [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] is supported in Visual Basic and C# projects. Create the new project in one of these languages.  
   
-3.  Выберите шаблон **Приложение Windows Forms** и нажмите кнопку **OK**.Дополнительные сведения см. в разделе [Клиентские приложения](../Topic/Developing%20Client%20Applications%20with%20the%20.NET%20Framework.md).  
+3.  Click the **Windows Forms Application** template and then click **OK**. For more information, see [Client Applications](/dotnet/framework/develop-client-apps).  
   
-4.  Создается проект InheritanceWalkthrough и добавляется в **Обозреватель решений**.  
+4.  The InheritanceWalkthrough project is created and added to **Solution Explorer**.  
   
-## Добавление в проект файла LINQ to SQL Classes  
+## <a name="add-a-linq-to-sql-classes-file-to-the-project"></a>Add a LINQ to SQL Classes File to the Project  
   
-#### Для добавления файла LINQ to SQL в проект  
+#### <a name="to-add-a-linq-to-sql-file-to-the-project"></a>To add a LINQ to SQL File to the project  
   
-1.  В меню **Проект** выберите команду **Добавить новый элемент**.  
+1.  On the **Project** menu, click **Add New Item**.  
   
-2.  Выберите шаблон **LINQ to SQL Classes** и нажмите кнопку **Добавить**.  
+2.  Click the **LINQ to SQL Classes** template and then click **Add**.  
   
-     DBML\-файл добавляется в проект, и [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] открывается.  
+     The .dbml file is added to the project and the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] opens.  
   
-## Создание наследования с использованием реляционного конструктора объектов  
- Сконфигурируйте наследование путем перетаскивания объекта **Наследование** из **Панели элементов** на область конструктора.  
+## <a name="create-the-inheritance-by-using-the-or-designer"></a>Create the Inheritance by Using the O/R Designer  
+ Configure the inheritance by dragging an **Inheritance** object from the **Toolbox** onto the design surface.  
   
-#### Чтобы создать наследование, выполните следующие действия  
+#### <a name="to-create-the-inheritance"></a>To create the inheritance  
   
-1.  В **Обозревателе серверов**\/**Обозревателе базы данных** перейдите к созданной ранее таблице **Person**.  
+1.  In **Server Explorer**/**Database Explorer**, navigate to the **Person** table that you created earlier.  
   
-2.  Перетащите таблицу **Person** на область конструктора [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
+2.  Drag the **Person** table onto the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] design surface.  
   
-3.  Перетащите вторую таблицу **Person** на [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] и измените ее имя на Employee.  
+3.  Drag a second **Person** table onto the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] and change its name to **Employee**.  
   
-4.  Удалите свойство **Менеджер** из объекта **Person**.  
+4.  Delete the **Manager** property from the **Person** object.  
   
-5.  Удалите свойства **Type**, **ID**, **FirstName** и **LastName** из объекта **Employee**.\(Другими словами, удалите все свойства, кроме свойства **Менеджер**.\)  
+5.  Delete the **Type**, **ID**, **FirstName**, and **LastName** properties from the **Employee** object. (In other words, delete all properties except for **Manager**.)  
   
-6.  Из вкладки **Реляционный конструктор объектовПанели элементов** создайте **Наследование** между объектами **Person** и **Employee**.Чтобы выполнить это, щелкните по пункту **Наследование** в **Панели элементов** и отпустите кнопку мыши.Далее щелкните по объекту **Employee** и потом по объекту **Person** в [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].Стрелка на линии наследования будет указывать на объект **Person**.  
+6.  From the **Object Relational Designer** tab of the **Toolbox**, create an **Inheritance** between the **Person** and **Employee** objects. To do this, click the **Inheritance** item in the **Toolbox** and release the mouse button. Next, click the **Employee** object and then the **Person** object in the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. The arrow on the inheritance line will point to the **Person** object.  
   
-7.  Щелкните по линии **Наследование** на области конструктора.  
+7.  Click the **Inheritance** line on the design surface.  
   
-8.  Задайте свойству **Свойство дискриминатора** значение **Type**.  
+8.  Set the **Discriminator Property** property to **Type**.  
   
-9. Задайте свойству **Производное значение дискриминатора класса** значение **2**.  
+9. Set the **Derived Class Discriminator Value** property to **2**.  
   
-10. Задайте свойству **Базовое значение дискриминатора класса** значение **1**.  
+10. Set the **Base Class Discriminator Value** property to **1**.  
   
-11. Задайте свойству **Наследование по умолчанию** значение **Person**.  
+11. Set the **Inheritance Default** property to **Person**.  
   
-12. Выполните построение проекта.  
+12. Build the project.  
   
-## Выполнение запроса наследуемого класса и отображение данных на форме  
- Теперь добавьте некоторый код в форму, которая делает запрос на определенный класс в модели объекта.  
+## <a name="query-the-inherited-class-and-display-the-data-on-the-form"></a>Query the Inherited Class and Display the Data on the Form  
+ You will now add some code to the form that queries for a specific class in the object model.  
   
-#### Для создания запроса LINQ и отображения результатов на форме  
+#### <a name="to-create-a-linq-query-and-display-the-results-on-the-form"></a>To create a LINQ query and display the results on the form  
   
-1.  Перетащите **ListBox** на форму Form1.  
+1.  Drag a **ListBox** onto Form1.  
   
-2.  Дважды щелкните форму, чтобы создать обработчик событий `Form1_Load`.  
+2.  Double-click the form to create a `Form1_Load` event handler.  
   
-3.  В обработчик события `Form1_Load` добавьте следующий код:  
+3.  Add the following code to the `Form1_Load` event handler:  
   
-    ```vb#  
+    ```vb  
     Dim dc As New DataClasses1DataContext  
     Dim results = From emp In dc.Persons _  
         Where TypeOf emp Is Employee _  
@@ -159,7 +181,7 @@ manager: "ghogen"
     Next  
     ```  
   
-    ```c#  
+    ```csharp  
     NorthwindDataContext dc = new DataClasses1DataContext();  
     var results = from emp in dc.Persons  
                   where emp is Employee  
@@ -171,21 +193,20 @@ manager: "ghogen"
     }  
     ```  
   
-## Выполните тестирование приложения  
- Запустите приложение и убедитесь, что записи, отображенные в списке, представляют всех работников \(записи, которые имеют значение 2 в столбце Type\).  
+## <a name="test-the-application"></a>Test the Application  
+ Run the application and verify that the records displayed in the list box are all employees (records that have a value of 2 in their Type column).  
   
-#### Тестирование приложения  
+#### <a name="to-test-the-application"></a>To test the application  
   
-1.  Нажмите клавишу F5.  
+1.  Press F5.  
   
-2.  Убедитесь, что отображаются только записи со значением 2 в их столбце Type.  
+2.  Verify that only records that have a value of 2 in their Type column are displayed.  
   
-3.  Закройте форму.\(В меню **Отладка** щелкните по пункту меню **Прекратить отладку**.\)  
+3.  Close the form. (On the **Debug** menu, click **Stop Debugging**.)  
   
-## См. также  
- [Общие сведения о реляционном конструкторе объектов](../Topic/LINQ%20to%20SQL%20Tools%20in%20Visual%20Studio1.md)   
- [Как добавить классы LINQ to SQL в проект \(реляционный конструктор объектов\)](../Topic/How%20to:%20Add%20LINQ%20to%20SQL%20Classes%20to%20a%20Project%20\(O-R%20Designer\).md)   
- [Пошаговое руководство. Создание классов LINQ to SQL \(реляционный конструктор объектов\)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)   
- [Как назначить хранимые процедуры для выполнения обновлений, вставок и удалений \(реляционный конструктор объектов\)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
- [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)   
- [Как создать модель объектов на языке Visual Basic или C\#](../Topic/How%20to:%20Generate%20the%20Object%20Model%20in%20Visual%20Basic%20or%20C%23.md)
+## <a name="see-also"></a>See Also  
+ [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
+ [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
+ [How to: Assign stored procedures to perform updates, inserts, and deletes (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
+ [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
+ [How to: Generate the Object Model in Visual Basic or C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

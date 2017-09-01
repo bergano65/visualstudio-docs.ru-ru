@@ -1,46 +1,63 @@
 ---
-title: "CA2133: делегаты должны привязываться к методам с согласованной прозрачностью | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2133"
+title: 'CA2133: Delegates must bind to methods with consistent transparency | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2133
 ms.assetid: a09672e2-63cb-4abd-9e8f-dff515e101ce
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 11
----
-# CA2133: делегаты должны привязываться к методам с согласованной прозрачностью
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 473dbf2d6373c59c693a91db804897bfe73b5300
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2133-delegates-must-bind-to-methods-with-consistent-transparency"></a>CA2133: Delegates must bind to methods with consistent transparency
 |||  
 |-|-|  
 |TypeName|DelegatesMustBindWithConsistentTransparency|  
 |CheckId|CA2133|  
-|Категория|Microsoft.Security|  
-|Критическое изменение|Критическое изменение|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
 > [!NOTE]
->  Это предупреждение применяется только для кода, выполняющего CoreCLR \(версию CLR для веб\-приложений Silverlight\).  
+>  This warning is only applied to code that is running the CoreCLR (the version of the CLR that is specific to Silverlight Web applications).  
   
-## Причина  
- Это предупреждение выдается, если метод, привязывающий делегата, отмеченного атрибутом <xref:System.Security.SecurityCriticalAttribute>, с прозрачным методом или методом, отмеченным атрибутом <xref:System.Security.SecuritySafeCriticalAttribute>.  Предупреждение также запускает метод, который привязывает прозрачный или безопасный делегат к критическому методу.  
+## <a name="cause"></a>Cause  
+ This warning fires on a method that binds a delegate that is marked with the <xref:System.Security.SecurityCriticalAttribute> to a method that is transparent or that is marked with the <xref:System.Security.SecuritySafeCriticalAttribute>. The warning also fires a method that binds a delegate that is transparent or safe-critical to a critical method.  
   
-## Описание правила  
- Типы делегатов и методы, к которым они привязаны, должны иметь соответствующую прозрачность.  Прозрачные и критические для безопасности делегаты могут быть привязаны только к другим прозрачным или критическим для безопасности методам.  Точно так же критические делегаты могут быть привязаны только к критическим методам.  Эти правила привязки позволяют гарантировать, что только код, который может вызвать метод через делегат, также может вызвать тот же метод непосредственно.  Например, правила привязки предотвращают вызов прозрачным кодом критичного кода непосредственно через прозрачный делегат.  
+## <a name="rule-description"></a>Rule Description  
+ Delegate types and the methods that they bind to must have consistent transparency. Transparent and safe-critical delegates may only bind to other transparent or safe-critical methods. Similarly, critical delegates may only bind to critical methods. These binding rules ensure that the only code that can invoke a method via a delegate could have also invoked the same method directly. For example, binding rules prevent transparent code from calling critical code directly via a transparent delegate.  
   
-## Устранение нарушений  
- Чтобы устранить нарушение этого предупреждения, измените прозрачность делегата или метода, привязка которого выполняется, чтобы их прозрачность была эквивалентна.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this warning, change the transparency of the delegate or of the method that it binds so that the transparency of the two are equivalent.  
   
-## Отключение предупреждений  
- Для этого правила отключать вывод предупреждений не следует.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-### Код  
- [!code-cs[FxCop.Security.CA2133.DelegatesMustBindWithConsistentTransparency#1](../code-quality/codesnippet/CSharp/ca2133-delegates-must-bind-to-methods-with-consistent-transparency_1.cs)]
+### <a name="code"></a>Code  
+ [!code-csharp[FxCop.Security.CA2133.DelegatesMustBindWithConsistentTransparency#1](../code-quality/codesnippet/CSharp/ca2133-delegates-must-bind-to-methods-with-consistent-transparency_1.cs)]

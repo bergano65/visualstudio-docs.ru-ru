@@ -1,79 +1,96 @@
 ---
-title: "CA2118: обзор использования SuppressUnmanagedCodeSecurityAttribute | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2118"
-  - "ReviewSuppressUnmanagedCodeSecurityUsage"
-helpviewer_keywords: 
-  - "CA2118"
-  - "ReviewSuppressUnmanagedCodeSecurityUsage"
+title: 'CA2118: Review SuppressUnmanagedCodeSecurityAttribute usage | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2118
+- ReviewSuppressUnmanagedCodeSecurityUsage
+helpviewer_keywords:
+- ReviewSuppressUnmanagedCodeSecurityUsage
+- CA2118
 ms.assetid: 4cb8d2fc-4e44-4dc3-9b74-7f5838827d41
 caps.latest.revision: 20
-caps.handback.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA2118: обзор использования SuppressUnmanagedCodeSecurityAttribute
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: cdec0f1446b87f23be8f9da9014cd4fd3d3d05e2
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Review SuppressUnmanagedCodeSecurityAttribute usage
 |||  
 |-|-|  
 |TypeName|ReviewSuppressUnmanagedCodeSecurityUsage|  
 |CheckId|CA2118|  
-|Категория|Microsoft.Security|  
-|Критическое изменение|Критическое изменение|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
-## Причина  
- Открытый или защищенный тип или член имеет атрибут <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>.  
+## <a name="cause"></a>Cause  
+ A public or protected type or member has the <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> attribute.  
   
-## Описание правила  
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> изменяет поведение системы безопасности, определенное по умолчанию, для членов, выполняющих неуправляемый код за счет COM\-взаимодействия или вызова платформы.  Как правило, система открывает [Данные и модели](../Topic/Data%20and%20Modeling%20in%20the%20.NET%20Framework.md) для разрешения неуправляемого кода.  Эта необходимость возникает во время выполнения для каждого вызова члена и проверяется разрешение каждого вызывающего метода в стеке вызова.  Когда атрибут присутствует, система создает [Link Demands](../Topic/Link%20Demands.md) для разрешения: разрешения непосредственно вызывающего метода проверяются во время JIT\-компиляции вызывающего метода.  
+## <a name="rule-description"></a>Rule Description  
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> changes the default security system behavior for members that execute unmanaged code using COM interop or platform invocation. Generally, the system makes a [Data and Modeling](/dotnet/framework/data/index) for unmanaged code permission. This demand occurs at run time for every invocation of the member, and checks every caller in the call stack for permission. When the attribute is present, the system makes a [Link Demands](/dotnet/framework/misc/link-demands) for the permission: the permissions of the immediate caller are checked when the caller is JIT-compiled.  
   
- Этот атрибут служит в основном для повышения производительности; однако, прирост производительности сопряжен со значительными рисками безопасности.  Если атрибут поместить в открытые члены, вызывающие встроенные методы, вызывающему методу в стеке вызова \(только не непосредственно вызывающему методу\) не потребуется разрешение на неуправляемый код для его выполнения.  В зависимости от действий открытого члена и обработки ввода ненадежным вызывающим методам может предоставляться доступ к функциональным возможностям, которые, как правило, недоступны надежному коду.  
+ This attribute is primarily used to increase performance; however, the performance gains come with significant security risks. If you place the attribute on public members that call native methods, the callers in the call stack (other than the immediate caller) do not need unmanaged code permission to execute unmanaged code. Depending on the public member's actions and input handling, it might allow untrustworthy callers to access functionality normally restricted to trustworthy code.  
   
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] основывается на проверках безопасности для предотвращения получения прямого доступа вызывающих методов к текущему адресному пространству процесса.  Поскольку данный атрибут обходит обычную безопасность, код может представлять серьезную угрозу, если с его помощью можно выполнять операции чтения или записи в память процесса.  Следует отметить, что риск не ограничивается только методами, которые преднамеренно предоставляют доступ к памяти процесса; они могут возникать в любой ситуации, когда злонамеренному коду удается получить доступ любыми способами, например, путем подстановки непредвиденных, искаженных или недопустимых входных данных.  
+ The [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] relies on security checks to prevent callers from gaining direct access to the current process's address space. Because this attribute bypasses normal security, your code poses a serious threat if it can be used to read or write to the process's memory. Note that the risk is not limited to methods that intentionally provide access to process memory; it is also present in any scenario where malicious code can achieve access by any means, for example, by providing surprising, malformed, or invalid input.  
   
- Согласно политике безопасности по умолчанию, разрешение неуправляемого кода на сборку не предоставляется, если он не выполняется с локального компьютера или не является членом одной из следующих групп:  
+ The default security policy does not grant unmanaged code permission to an assembly unless it is executing from the local computer or is a member of one of the following groups:  
   
--   Группа кода "My Computer Zone"  
+-   My Computer Zone Code Group  
   
--   Группа кода "Microsoft Strong Name"  
+-   Microsoft Strong Name Code Group  
   
--   Группа кода "ECMA Strong Name"  
+-   ECMA Strong Name Code Group  
   
-## Устранение нарушений  
- Тщательно проанализируйте свой код и убедитесь, что этот атрибут абсолютно необходим.  Если вы не знакомы с задачами обеспечения безопасности неуправляемого кода или вам не известны результаты, к которым может привести использование этого атрибута, удалите его из своего кода.  Если атрибут является обязательным, необходимо обеспечить, чтобы вызывающие методы не смогли использовать код злонамеренно.  Если код не имеет разрешения на выполнение неуправляемого кода, этот атрибут может не действовать и его следует удалить.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ Carefully review your code to ensure that this attribute is absolutely necessary. If you are unfamiliar with managed code security, or do not understand the security implications of using this attribute, remove it from your code. If the attribute is required, you must ensure that callers cannot use your code maliciously. If your code does not have permission to execute unmanaged code, this attribute has no effect and should be removed.  
   
-## Отключение предупреждений  
- Чтобы отключить предупреждение из этого правила без последствий, необходимо обеспечить, чтобы вызывающие методы не предоставляли доступ к встроенным операциям или ресурсам, которые могут использоваться деструктивно.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ To safely suppress a warning from this rule, you must ensure that your code does not provide callers access to native operations or resources that can be used in a destructive manner.  
   
-## Пример  
- В следующем примере нарушается это правило.  
+## <a name="example"></a>Example  
+ The following example violates the rule.  
   
- [!code-cs[FxCop.Security.TypesDoNotSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_1.cs)]  
+ [!code-csharp[FxCop.Security.TypesDoNotSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_1.cs)]  
   
-## Пример  
- В следующем примере метод `DoWork` предоставляет открытый путь кода к методу вызова платформы `FormatHardDisk`.  
+## <a name="example"></a>Example  
+ In the following example, the `DoWork` method provides a publicly accessible code path to the platform invocation method `FormatHardDisk`.  
   
- [!code-cs[FxCop.Security.PInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_2.cs)]  
+ [!code-csharp[FxCop.Security.PInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_2.cs)]  
   
-## Пример  
- В следующем примере открытый метод `DoDangerousThing` вызывает нарушение.  Чтобы устранить это нарушение, `DoDangerousThing` должен быть закрытым и доступ к нему должен предоставляться через открытый метод, защищенный запросом безопасности, как показано в методе `DoWork`.  
+## <a name="example"></a>Example  
+ In the following example, the public method `DoDangerousThing` causes a violation. To resolve the violation, `DoDangerousThing` should be made private, and access to it should be through a public method secured by a security demand, as illustrated by the `DoWork` method.  
   
- [!CODE [FxCop.Security.TypeInvokeAndSuppress#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Security.TypeInvokeAndSuppress#1)]  
+ [!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_3.cs)]  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>   
- [Secure Coding Guidelines](../Topic/Secure%20Coding%20Guidelines.md)   
- [Security Optimizations](http://msdn.microsoft.com/ru-ru/cf255069-d85d-4de3-914a-e4625215a7c0)   
- [Данные и модели](../Topic/Data%20and%20Modeling%20in%20the%20.NET%20Framework.md)   
- [Link Demands](../Topic/Link%20Demands.md)
+ [Secure Coding Guidelines](/dotnet/standard/security/secure-coding-guidelines)   
+ [Security Optimizations](http://msdn.microsoft.com/en-us/cf255069-d85d-4de3-914a-e4625215a7c0)   
+ [Data and Modeling](/dotnet/framework/data/index)  
+ [Link Demands](/dotnet/framework/misc/link-demands)  
+  

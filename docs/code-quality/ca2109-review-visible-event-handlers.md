@@ -1,68 +1,85 @@
 ---
-title: "CA2109: проверьте видимые обработчики событий | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2109"
-  - "ReviewVisibleEventHandlers"
-helpviewer_keywords: 
-  - "CA2109"
-  - "ReviewVisibleEventHandlers"
+title: 'CA2109: Review visible event handlers | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2109
+- ReviewVisibleEventHandlers
+helpviewer_keywords:
+- ReviewVisibleEventHandlers
+- CA2109
 ms.assetid: 8f8fa0ee-e94e-400e-b516-24d8727725d7
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 18
----
-# CA2109: проверьте видимые обработчики событий
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 930c98a6b91eee69c3e145479694a58050dd3d22
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2109-review-visible-event-handlers"></a>CA2109: Review visible event handlers
 |||  
 |-|-|  
 |TypeName|ReviewVisibleEventHandlers|  
 |CheckId|CA2109|  
-|Категория|Microsoft.Security|  
-|Критическое изменение|Критическое изменение|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
-## Причина  
- Обнаружен открытый или защищенный метод обработки событий.  
+## <a name="cause"></a>Cause  
+ A public or protected event-handling method was detected.  
   
-## Описание правила  
- Видимый извне метод обработки событий — это достаточно серьезная проблема безопасности, требующая рассмотрения.  
+## <a name="rule-description"></a>Rule Description  
+ An externally visible event-handling method presents a security issue that requires review.  
   
- Методы обработки событий следует раскрывать только в тех случаях, когда это совершенно необходимо.  Обработчик событий \(тип делегата\), вызывающий раскрытый метод, можно добавить к любому событию при совпадении сигнатур обработчика и события.  События могут возникнуть в любом коде, они часто применяются в высоконадежном системном коде в ответ на действия пользователей, такие как нажатие кнопок.  Добавление проверки безопасности к методу обработки событий не воспретит коду зарегистрировать обработчик событий, вызывающий метод.  
+ Event-handling methods should not be exposed unless absolutely necessary. An event handler, a delegate type, that invokes the exposed method can be added to any event as long as the handler and event signatures match. Events can potentially be raised by any code, and are frequently raised by highly trusted system code in response to user actions such as clicking a button. Adding a security check to an event-handling method does not prevent code from registering an event handler that invokes the method.  
   
- Запрос не может надежно защитить метод, вызываемый обработчиком событий.  Запросы безопасности помогают защитить код от ненадежных вызывающих объектов путем проверки вызывающих объектов в стеке вызова.  Код, добавляющий обработчик событий к событию, не обязательно должен находиться в стеке вызова при выполнении методов обработчика событий.  Поэтому в стеке вызова при вызове метода обработки событий могут находиться только высоконадежные вызывающие объекты.  Из\-за этого запросы, сделанные методом обработчика событий, успешно выполняются.  Кроме того, запрошенное разрешение может быть подтверждено при вызове метода.  Вследствие этого для оценки риска, возникающего при нарушении это правила, требуется проверить метод обработки событий.  При проверке кода обратите внимание на следующие моменты:  
+ A demand cannot reliably protect a method invoked by an event handler. Security demands help protect code from untrusted callers by examining the callers on the call stack. Code that adds an event handler to an event is not necessarily present on the call stack when the event handler's methods run. Therefore, the call stack might have only highly trusted callers when the event handler method is invoked. This causes demands made by the event handler method to succeed. Also, the demanded permission might be asserted when the method is invoked. For these reasons, the risk of not fixing a violation of this rule can only be assessed after reviewing the event-handling method. When you review your code, consider the following issues:  
   
--   Выполняет ли обработчик событий какие\-либо операции, являющиеся опасными или уязвимыми, например подтверждение разрешений или подавление разрешений неуправляемого кода?  
+-   Does your event handler perform any operations that are dangerous or exploitable, such as asserting permissions or suppressing unmanaged code permission?  
   
--   Каковы угрозы безопасности, направленные на ваш код и из него вследствие того, что он может быть запущен в любое время при наличии в стеке только высоконадежных вызывающих объектов?  
+-   What are the security threats to and from your code because it can run at any time with only highly trusted callers on the stack?  
   
-## Устранение нарушений  
- Чтобы устранить нарушение этого правила, проверьте метод и рассмотрите следующие возможности:  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, review the method and evaluate the following:  
   
--   Можно ли сделать метод обработки событий неоткрытым?  
+-   Can you make the event-handling method non-public?  
   
--   Можно ли переместить все опасные функции за пределы обработчика событий?  
+-   Can you move all dangerous functionality out of the event handler?  
   
--   Если накладывается запрос безопасности, можно ли его выполнить как\-либо иначе?  
+-   If a security demand is imposed, can this be accomplished in some other manner?  
   
-## Отключение предупреждений  
- Предупреждения этого правила можно отключать только после тщательной проверки безопасности, убедившись в отсутствии уязвимостей и угроз.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Suppress a warning from this rule only after a careful security review to make sure that your code does not pose a security threat.  
   
-## Пример  
- В следующем примере показан метод обработки событий, который может быть злонамеренно использован вредоносным кодом.  
+## <a name="example"></a>Example  
+ The following code shows an event-handling method that can be misused by malicious code.  
   
- [!code-cs[FxCop.Security.EventSecLib#1](../code-quality/codesnippet/CSharp/ca2109-review-visible-event-handlers_1.cs)]  
+ [!code-csharp[FxCop.Security.EventSecLib#1](../code-quality/codesnippet/CSharp/ca2109-review-visible-event-handlers_1.cs)]  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName>   
  <xref:System.EventArgs?displayProperty=fullName>   
- [Security Demands](http://msdn.microsoft.com/ru-ru/324c14f8-54ff-494d-9fd1-bfd20962c8ba)
+ [Security Demands](http://msdn.microsoft.com/en-us/324c14f8-54ff-494d-9fd1-bfd20962c8ba)

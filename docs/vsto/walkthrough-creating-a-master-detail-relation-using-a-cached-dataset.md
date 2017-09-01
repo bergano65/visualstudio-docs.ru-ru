@@ -1,199 +1,201 @@
 ---
-title: "Пошаговое руководство. Создание иерархического отношения с помощью кэшированного набора данных"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "кэширование данных [разработка решений Office в Visual Studio], отношение главный/подчиненный"
-  - "главные и подчиненные таблицы [разработка решений Office в Visual Studio], пошаговые руководства"
+title: 'Walkthrough: Creating a Master Detail Relation Using a Cached Dataset | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- master-detail tables [Office development in Visual Studio], walkthroughs
+- data caching [Office development in Visual Studio], Master/Detail Relation
 ms.assetid: 419f4e07-c67f-4fc9-973a-bc794f349ac3
 caps.latest.revision: 41
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 40
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: fb02770a5cb607cc13a5db2be2cc7128a699d569
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Создание иерархического отношения с помощью кэшированного набора данных
-  В этом пошаговом руководстве показано создание иерархического отношения на листе и кэширование данных, позволяющее использовать решение в автономном режиме.  
+# <a name="walkthrough-creating-a-master-detail-relation-using-a-cached-dataset"></a>Walkthrough: Creating a Master Detail Relation Using a Cached Dataset
+  This walkthrough demonstrates creating a master/detail relation on a worksheet, and caching the data so that the solution can be used offline.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- В процессе выполнения этого пошагового руководства вы научитесь:  
+ During this walkthrough, you will learn how to:  
   
--   добавление элементов управления на лист;  
+-   Add controls to a worksheet.  
   
--   Настройка кэширования данных на листе.  
+-   Set up a dataset to be cached in a worksheet.  
   
--   Добавление кода, обеспечивающего прокрутку записей.  
+-   Add code to enable scrolling through the records.  
   
--   Тестирование проекта.  
+-   Test your project.  
   
 > [!NOTE]  
->  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях.  Эти элементы определяются используемым выпуском Visual Studio и его параметрами.  Дополнительные сведения см. в разделе [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/ru-ru/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] или [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] or [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
--   Доступ к серверу с примером базы данных SQL Server "Northwind".  База данных может располагаться на компьютере разработчика или на сервере.  
+-   Access to the Northwind SQL Server sample database. The database can be on your development computer or on a server.  
   
--   Разрешения на чтение из базы данных SQL Server и запись в нее.  
+-   Permissions to read from and write to the SQL Server database.  
   
-## Создание нового проекта  
- На этом шаге создается проект книги Excel.  
+## <a name="creating-a-new-project"></a>Creating a New Project  
+ In this step, you will create an Excel Workbook project.  
   
-#### Создание нового проекта  
+#### <a name="to-create-a-new-project"></a>To create a new project  
   
-1.  Создайте проект книги Excel с именем **Иерархическое отношение** в Visual Basic или C\#.  Убедитесь, что выбрано **Создать новый документ**.  Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Create an Excel Workbook project with the name **My Master-Detail**, using either Visual Basic or C#. Make sure that **Create a new document** is selected. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
- Созданная книга Excel открывается в конструкторе Visual Studio. Проект "Иерархическое отношение" добавляется в **обозреватель решений**.  
+ Visual Studio opens the new Excel workbook in the designer and adds the **My Master-Detail** project to **Solution Explorer**.  
   
-## Создание источника данных  
- Чтобы добавить типизированный набор данных в проект, следует использовать окно **Источники данных**.  
+## <a name="creating-the-data-source"></a>Creating the Data Source  
+ Use the **Data Sources** window to add a typed dataset to your project.  
   
-#### Создание источника данных  
+#### <a name="to-create-the-data-source"></a>To create the data source  
   
-1.  Если окно **Источники данных** не отображается, его отображение в строке меню, выбирая **Вид**, **Другие окна**, **Источники данных**.  
+1.  If the **Data Sources** window is not visible, display it by, on the menu bar, choosing **View**, **Other Windows**, **Data Sources**.  
   
-2.  Выберите **Добавить новый источник данных**, чтобы запустить **Мастер настройки источника данных**.  
+2.  Choose **Add New Data Source** to start the **Data Source Configuration Wizard**.  
   
-3.  Выберите **База данных** и нажмите **Далее**.  
+3.  Select **Database** and then click **Next**.  
   
-4.  Выберите подключение к базе данных SQL Server "Northwind" или добавьте новое подключение с помощью кнопки **Новое подключение**.  
+4.  Select a data connection to the Northwind sample SQL Server database, or add a new connection by using the **New Connection** button.  
   
-5.  После выбора или создания подключения нажмите кнопку **Далее**.  
+5.  After selecting or creating a connection, click **Next**.  
   
-6.  Чтобы сохранить подключение, снимите флажок, если он установлен, и нажмите **Далее**.  
+6.  Clear the option to save the connection if it is selected, and then click **Next**.  
   
-7.  В окне **Объекты базы данных** разверните узел **Таблицы**.  
+7.  Expand the **Tables** node in the **Database objects** window.  
   
-8.  Выберите таблицу **Заказы** и затем таблицу **Сведения о заказе**.  
+8.  Select the **Orders** table and the **Order Details** table.  
   
-9. Нажмите кнопку **Готово**.  
+9. Click **Finish**.  
   
- С помощью мастера обе таблицы добавляются в окно **Источники данных**.  Также к проекту добавляется типизированный набор данных, который отображается в **Обозревателе решений**.  
+ The wizard adds the two tables to the **Data Sources** window. It also adds a typed dataset to your project that is visible in **Solution Explorer**.  
   
-## Добавление элементов управления на лист  
- На этом шаге на первый лист выполняется добавление именованного диапазона, объекта списка и двух кнопок.  Сначала добавьте именованный диапазон и объект списка из окна **Источники данных**, чтобы обеспечить их автоматическое связывание с источником данных.  Далее добавьте кнопки с **Панели элементов**.  
+## <a name="adding-controls-to-the-worksheet"></a>Adding Controls to the Worksheet  
+ In this step, you will add a named range, a list object, and two buttons to the first worksheet. First, add the named range and the list object from the **Data Sources** window so that they are automatically bound to the data source. Next, add the buttons from the **Toolbox**.  
   
-#### Добавление именованного диапазона и объекта списка  
+#### <a name="to-add-a-named-range-and-a-list-object"></a>To add a named range and a list object  
   
-1.  Убедитесь, что книга **My Master\-Detail.xlsx** открыта в конструкторе Visual Studio, и отображается **Лист1**.  
+1.  Verify that the **My Master-Detail.xlsx** workbook is open in the Visual Studio designer, with **Sheet1** displayed.  
   
-2.  Откройте окно **Источники данных** и разверните узел **Заказы**.  
+2.  Open the **Data Sources** window and expand the **Orders** node.  
   
-3.  Выберите столбец **Код заказа** и щелкните отображаемую стрелку раскрывающегося списка.  
+3.  Select the **OrderID** column, and then click the drop-down arrow that appears.  
   
-4.  Выберите в раскрывающемся списке объект **NamedRange** и перетащите его в ячейку **A2** столбца **Код заказа**.  
+4.  Click **NamedRange** in the drop-down list, and then drag the **OrderID** column to cell **A2**.  
   
-     В ячейке **A2** создается элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> с именем `OrderIDNamedRange`.  Одновременно в проект добавляются элемент управления <xref:System.Windows.Forms.BindingSource> с именем `OrdersBindingSource`, адаптер таблиц и экземпляр класса <xref:System.Data.DataSet>.  Элемент управления связан с объектом <xref:System.Windows.Forms.BindingSource>, который в свою очередь связан с экземпляром <xref:System.Data.DataSet>.  
+     A <xref:Microsoft.Office.Tools.Excel.NamedRange> control named `OrderIDNamedRange` is created in cell **A2**. At the same time, a <xref:System.Windows.Forms.BindingSource> named `OrdersBindingSource`, a table adapter, and a <xref:System.Data.DataSet> instance are added to the project. The control is bound to the <xref:System.Windows.Forms.BindingSource>, which in turn is bound to the <xref:System.Data.DataSet> instance.  
   
-5.  Прокрутите столбцы таблицы **Заказы**.  В нижней части списка располагается таблица **Сведения о заказе**, которая является дочерней по отношению к таблице **Заказы**.  Выберите дочернюю таблицу **Сведения о заказе** \(не расположенную на одном уровне с таблицей **Заказы**\) и щелкните отображающуюся стрелку раскрывающегося списка.  
+5.  Scroll down past the columns that are under the **Orders** table. At the bottom of the list is the **Order Details** table; it is here because it is a child of the **Orders** table. Select this **Order Details** table, not the one that is at the same level as the **Orders** table, and then click the drop-down arrow that appears.  
   
-6.  Выберите в раскрывающемся списке элемент управления **ListObject** и перетащите таблицу **Сведения озаказе** в ячейку **A6**.  
+6.  Click **ListObject** in the drop-down list, and then drag the **OrderDetails** table to cell **A6**.  
   
-7.  В ячейке **A6** создается элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> с именем **Order\_DetailsListObject**, который привязывается к объекту <xref:System.Windows.Forms.BindingSource>.  
+7.  A <xref:Microsoft.Office.Tools.Excel.ListObject> control named **Order_DetailsListObject** is created in cell **A6**, and bound to the <xref:System.Windows.Forms.BindingSource>.  
   
-#### Добавление двух кнопок  
+#### <a name="to-add-two-buttons"></a>To add two buttons  
   
-1.  Со вкладки **Стандартные элементы управленияПанели элементов** перетащите элемент управления <xref:System.Windows.Forms.Button> в ячейку **A3** листа.  
+1.  From the **Common Controls** tab of the **Toolbox**, add a <xref:System.Windows.Forms.Button> control to cell **A3** of the worksheet.  
   
-     Этой кнопке присваивается имя `Button1`.  
+     This button is named `Button1`.  
   
-2.  Перетащите другой элемент управления <xref:System.Windows.Forms.Button> в ячейку **B3** листа.  
+2.  Add another <xref:System.Windows.Forms.Button> control to cell **B3** of the worksheet.  
   
-     Этой кнопке присваивается имя `Button2`.  
+     This button is named `Button2`.  
   
- Затем пометьте набор данных как кэшируемый в документе.  
+ Next, mark the dataset to be cached in the document.  
   
-## Кэширование набора данных  
- Чтобы пометить набор данных как кэшируемый в документе, определите его с помощью модификатора Public и установите свойство **CacheInDocument**.  
+## <a name="caching-the-dataset"></a>Caching the Dataset  
+ Mark the dataset to be cached in the document by making the dataset public and setting the **CacheInDocument** property.  
   
-#### Кэширование набора данных  
+#### <a name="to-cache-the-dataset"></a>To cache the dataset  
   
-1.  Выберите объект **NorthwindDataSet** в области компонентов.  
+1.  Select **NorthwindDataSet** in the component tray.  
   
-2.  В окне **Свойства** измените значение свойства **Modifiers** на **Public**.  
+2.  In the **Properties** window, change the **Modifiers** property to **Public**.  
   
-     Допускается кэширование только документов, определенных с помощью модификатора Public.  
+     Datasets must be public before caching is enabled.  
   
-3.  Измените значение свойства **CacheInDocument** на **True**.  
+3.  Change the **CacheInDocument** property to **True**.  
   
- Далее следует добавить текст для кнопок. В C\# также добавляется код управления обработчиками событий.  
+ The next step is to add text to the buttons, and in C# add code to hook up the event handlers.  
   
-## Инициализация элементов управления  
- Установите текст кнопки и добавьте обработчики событий в событии <xref:Microsoft.Office.Tools.Excel.Workbook.Startup>.  
+## <a name="initializing-the-controls"></a>Initializing the Controls  
+ Set the button text and add event handlers during the <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> event.  
   
-#### Инициализация данных и элементов управления  
+#### <a name="to-initialize-the-data-and-the-controls"></a>To initialize the data and the controls  
   
-1.  В **Обозревателе решений** щелкните правой кнопкой мыши **Лист1.vb** или **Лист1.cs** и выберите в контекстном меню команду **Перейти к коду**.  
+1.  In **Solution Explorer**, right-click **Sheet1.vb** or **Sheet1.cs**, and then click **View Code** on the shortcut menu.  
   
-2.  В метод `Sheet1_Startup` добавьте следующий код, в котором задается текст кнопок.  
+2.  Add the following code to the `Sheet1_Startup` method to set the text for the buttons.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#15](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet2.cs#15)]
-     [!code-vb[Trin_VstcoreDataExcel#15](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet2.vb#15)]  
+     [!code-vb[Trin_VstcoreDataExcel#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#15)]  [!code-csharp[Trin_VstcoreDataExcel#15](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#15)]  
   
-3.  Добавьте обработчики событий для событий Click кнопок в метод `Sheet1_Startup` \(только для C\#\).  
+3.  For C# only, add event handlers for the button click events to the `Sheet1_Startup` method.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#16](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet2.cs#16)]  
+     [!code-csharp[Trin_VstcoreDataExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#16)]  
   
-## Добавление кода, включающего прокрутку записей  
- Чтобы включить перемещение по записям, добавьте код в обработчики событий <xref:System.Windows.Forms.Control.Click> для каждой кнопки.  
+## <a name="adding-code-to-enable-scrolling-through-the-records"></a>Adding Code to Enable Scrolling Through the Records  
+ Add code to the <xref:System.Windows.Forms.Control.Click> event handler of each button to move through the records.  
   
-#### Прокрутка записей  
+#### <a name="to-scroll-through-the-records"></a>To scroll through the records  
   
-1.  Добавьте обработчик событий <xref:System.Windows.Forms.Control.Click> для элемента управления `Button1`, а также следующий код, обеспечивающий перемещение по записям в обратном направлении:  
+1.  Add an event handler for the <xref:System.Windows.Forms.Control.Click> event of `Button1`, and add the following code to move backwards through the records:  
   
-     [!code-csharp[Trin_VstcoreDataExcel#17](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet2.cs#17)]
-     [!code-vb[Trin_VstcoreDataExcel#17](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet2.vb#17)]  
+     [!code-vb[Trin_VstcoreDataExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#17)]  [!code-csharp[Trin_VstcoreDataExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#17)]  
   
-2.  Добавьте обработчик событий <xref:System.Windows.Forms.Control.Click> для элемента управления `Button2`, а также следующий код, обеспечивающий перемещение по записям в прямом направлении:  
+2.  Add an event handler for the <xref:System.Windows.Forms.Control.Click> event of `Button2`, and add the following code to advance through the records:  
   
-     [!code-csharp[Trin_VstcoreDataExcel#18](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet2.cs#18)]
-     [!code-vb[Trin_VstcoreDataExcel#18](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet2.vb#18)]  
+     [!code-vb[Trin_VstcoreDataExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#18)]  [!code-csharp[Trin_VstcoreDataExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#18)]  
   
-## Тестирование приложения  
- Теперь можно выполнить тестирование книги, чтобы проверить корректность отображения данных, а также возможность использования решения в автономном режиме.  
+## <a name="testing-the-application"></a>Testing the Application  
+ Now you can test your workbook to make sure that the data appears as expected, and that you can use the solution offline.  
   
-#### Тестирование кэширования данных  
+#### <a name="to-test-the-data-caching"></a>To test the data caching  
   
-1.  Нажмите клавишу **F5**.  
+1.  Press **F5**.  
   
-2.  Убедитесь, что именованный диапазон и объект списка заполняются данными из источника данных.  
+2.  Verify that the named range and the list object are filled with data from the data source.  
   
-3.  Выполните прокрутку записей, нажимая соответствующие кнопки.  
+3.  Scroll through some of the records by clicking the buttons.  
   
-4.  Сохраните книгу. Закройте книгу и среду Visual Studio.  
+4.  Save the workbook, and then close the workbook and Visual Studio.  
   
-5.  Закройте подключение к базе данных.  Если база данных располагается на сервере, отключите сетевой кабель. Если база данных располагается на компьютере разработчика, остановите службу SQL Server.  
+5.  Disable the connection to the database. Unplug the network cable from your computer if the database is located on a server, or stop the SQL Server service if the database is on your development computer.  
   
-6.  Откройте Excel, а затем откройте **My Master\-Detail.xlsx** из каталога \\ bin \\ \(моих с отображением вида " главный\-подчиненный " \\ bin в Visual Basic или \\ my Образец\- сведения \\ bin \\ debug в C\-\#\).  
+6.  Open Excel, and then open **My Master-Detail.xlsx** from the \bin directory (\My Master-Detail\bin in Visual Basic or \My Master-Detail\bin\debug in C#).  
   
-7.  Выполните прокрутку записей, чтобы проверить правильность работы листа в автономном режиме.  
+7.  Scroll through some of the records to see that the worksheet operates normally when disconnected.  
   
-8.  Восстановите подключение к базе данных.  Если база данных располагается на сервере, подключите компьютер к сети. Если база данных располагается на компьютере разработчика, запустите службу SQL Server.  
+8.  Reconnect to the database. Connect your computer to the network again if the database is located on a server, or start the SQL Server service if the database is on your development computer.  
   
-## Следующие действия  
- В этом пошаговом руководстве показаны основные принципы создания иерархического отношения на листе, а также кэширования набора данных.  Далее будут рассмотрены следующие задачи:  
+## <a name="next-steps"></a>Next Steps  
+ This walkthrough shows the basics of creating a master/detail data relationship on a worksheet and caching a dataset. Here are some tasks that might come next:  
   
--   Развертывание решения.  Дополнительные сведения см. в разделе [Развертывание решения Office](../vsto/deploying-an-office-solution.md).  
+-   Deploy the solution. For more information, see [Deploying an Office Solution](../vsto/deploying-an-office-solution.md)  
   
-## См. также  
- [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Данные в решениях Office](../vsto/data-in-office-solutions.md)   
- [Кэширование данных](../vsto/caching-data.md)   
- [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)  
+## <a name="see-also"></a>See Also  
+ [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Data in Office Solutions](../vsto/data-in-office-solutions.md)   
+ [Caching Data](../vsto/caching-data.md)   
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)  
   
   

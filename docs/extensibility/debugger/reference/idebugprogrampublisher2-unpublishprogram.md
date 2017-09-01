@@ -1,52 +1,69 @@
 ---
-title: "IDebugProgramPublisher2::UnpublishProgram | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramPublisher2::UnpublishProgram"
-helpviewer_keywords: 
-  - "IDebugProgramPublisher2::UnpublishProgram"
+title: IDebugProgramPublisher2::UnpublishProgram | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProgramPublisher2::UnpublishProgram
+helpviewer_keywords:
+- IDebugProgramPublisher2::UnpublishProgram
 ms.assetid: 627e7d38-b2ac-4873-9a40-37ff7f47cd1d
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugProgramPublisher2::UnpublishProgram
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 85f0287aace939e3d552a6d2c0289cc457c6a3fd
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-Сделать программу недоступной быть отлаживанным.  
+---
+# <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
+Makes a program unavailable to be debugged.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT UnpublishProgram(  
-   IUnknown* pDebuggeeInterface  
+HRESULT UnpublishProgram(  
+   IUnknown* pDebuggeeInterface  
 );  
 ```  
   
-```c#  
-int UnpublishProgram(  
-   object pDebuggeeInterface  
+```csharp  
+int UnpublishProgram(  
+   object pDebuggeeInterface  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Parameters  
  `pDebuggeeInterface`  
- \[in\] `IUnknown` интерфейс для программы.  Это то же значение, передаваемое [PublishProgram](../Topic/IDebugProgramPublisher2::PublishProgram.md) метод и однозначно определяющее удаляемый программы \(т е он используется как cookie\).  
+ [in] An `IUnknown` interface to the program. This is the same value supplied to the [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) method and uniquely identifies the program being removed (that is, it is used as a cookie).  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Заметки  
- Чтобы сделать доступными программы к обработчикам отладки и сеансу отладки, используйте диспетчер [PublishProgram](../Topic/IDebugProgramPublisher2::PublishProgram.md) метод.  
+## <a name="remarks"></a>Remarks  
+ To make a program available to the debug engines and session debug manager, use the [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) method.  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
- [PublishProgram](../Topic/IDebugProgramPublisher2::PublishProgram.md)
+ [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)

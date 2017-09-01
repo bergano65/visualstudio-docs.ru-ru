@@ -1,5 +1,5 @@
 ---
-title: "Анализ использования ЦП в Visual Studio | Документация Майкрософт"
+title: Analyze CPU Usage in Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -28,103 +28,104 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 795bf9746c4ae48ac04141a05ba56462ecb90482
-ms.openlocfilehash: 74e69f0d5d04192eb801f5e56e1a4ee6ca2cc57a
+ms.translationtype: HT
+ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
+ms.openlocfilehash: fc00b770461862a0e577b4ffbe20710227e3b711
 ms.contentlocale: ru-ru
-ms.lasthandoff: 06/23/2017
+ms.lasthandoff: 08/23/2017
 
 ---
-# <a name="analyze-cpu-usage"></a>Анализ использования ЦП
-Если вам нужно проанализировать проблемы с производительностью в своем приложении, следует сначала понять, как оно использует ЦП. Средство **Использование ЦП** показывает, где ЦП тратит время при выполнении кода Visual C++, Visual C#/Visual Basic и JavaScript. Начиная с версии Visual Studio 2015 с обновлением 1 можно просматривать разбивку загрузки ЦП по функциям, не выходя из отладчика. Во время отладки можно включать и выключать профилирование ЦП и просматривать результаты при остановке выполнения, например в точке останова.  
+# <a name="analyze-cpu-usage"></a>Analyze CPU Usage
+When you need to investigate performance issues in your app, a good place to start is understanding how it uses the CPU. The **CPU Usage** tool shows you where the CPU is spending time executing Visual C++, Visual C#/Visual Basic, and JavaScript code. Starting in Visual Studio 2015 Update 1, you can see a per-function breakdown of CPU usage without leaving the debugger. You can turn CPU profiling on and off while debugging, and view the results when execution is stopped, for example at a breakpoint.  
   
-Существует несколько вариантов запуска сеанса диагностики и управления им. Например, средство **Загрузка ЦП** можно запустить на локальном и удаленном компьютерах, в имитаторе или эмуляторе. Можно анализировать производительность открытого в Visual Studio проекта, присоединившись к выполняемому приложению, либо запустить приложение, которое устанавливается из Магазина Windows. См. статью [Running Profiling Tools with or without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) (Выполнение средств профилирования с отладчиком и без него). Пошаговое руководство, которое позволяет анализировать производительность приложения Магазина Windows, см. в разделе [Анализ использования ЦП в приложениях Магазина](analyze-cpu-usage-in-a-windows-universal-app.md). 
+You have several options for running and managing your diagnostics session. For example, you can run the **CPU Usage** tool on local or remote machines, or on in a simulator or emulator. You can analyze the performance of an open project in Visual Studio, attached to a running app, or start an app that is installed from the Windows Store. For more information, see [Run Profiling Tools with or without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). For a walkthrough that analyzes the performance of a Windows Store app, see [Analyze CPU Usage in a Universal Windows App (UWP)](analyze-cpu-usage-in-a-windows-universal-app.md). 
 
-Здесь мы покажем, как собирать и анализировать данные использования ЦП в окончательных сборках. Сведения об анализе данных использования ЦП при отладке см. в статьях [Руководство по профилированию производительности для начинающих](../profiling/beginners-guide-to-performance-profiling.md). 
+Here, we show you how to collect and analyze CPU usage with release builds. To analyze CPU usage while debugging, see [Beginner's Guide to Performance Profiling](../profiling/beginners-guide-to-performance-profiling.md). 
   
-##  <a name="BKMK_Collect_CPU_usage_data"></a> Сбор данных о загрузке ЦП  
+##  <a name="BKMK_Collect_CPU_usage_data"></a> Collect CPU usage data  
   
-1.  В Visual Studio установите для решения конфигурацию **Выпуск** и выберите цель развертывания.  
+1.  In Visual Studio, set the solution configuration to **Release** and choose the deployment target.  
   
-     ![Выбор выпуска и локального компьютера](~/profiling/media/cpuuse_selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
+     ![Select Release and Local Machine](../profiling/media/cpuuse_selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
-    -   Запуск приложения в режиме **Выпуск** обеспечивает более качественное представление фактической производительности приложения.  
+    -   Running the app in **Release** mode gives you a better view of the actual performance of your app.  
   
-    -   Запуск приложения на локальном компьютере лучше отражает выполнение установленного приложения.  
+    -   Running the app on the local machine best replicates the execution of the installed app.  
   
-    -   При сборе данных из удаленного устройства запускайте приложение непосредственно на устройстве, не используя подключение к удаленному рабочему столу.  
+    -   If you are collecting data from a remote device, run the app directly on the device and not by using a Remote Desktop Connection.  
   
-    -   Для приложений Windows Phone сбор данных непосредственно из **Устройства** позволяет получить наиболее точные данные.  
+    -   For Windows Phone apps, collecting data directly from the **Device** provides the most accurate data.  
   
-2.  В меню **Отладка** выберите пункт **Профилировщик производительности...**  
+2.  On the **Debug** menu, choose **Performance Profiler...**.  
   
-3.  Нажмите **Использование ЦП** и **Запуск**.  
+3.  Choose **CPU Usage** and then choose **Start**.  
   
-     ![Выбор загрузки ЦП](~/profiling/media/cpuuse_lib_choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
+     ![Choose CPU Usage](../profiling/media/cpuuse_lib_choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
   
-4.  После запуска приложения нажмите кнопку **Get Max Number**(Получить максимальное количество). После вывода результата подождите примерно одну секунду, а затем нажмите **Get Max Number Async**(Получить максимальное количество асинхронно). Перерыв между нажатиями кнопок облегчает нахождение в диагностическом отчете информации о подпрограммах обработки нажатия кнопок.  
+4.  When the app starts, click **Get Max Number**. Wait about a second after the output is displayed, then choose **Get Max Number Async**. Waiting between button clicks makes it easier to isolate the button click routines in the diagnostic report.  
   
-5.  После вывода второй строки выберите **Остановка сбора** в разделе "Производительность и диагностика".  
+5.  After the second output line appears, choose **Stop Collection** in the Performance and Diagnostic hub.  
   
- ![Остановка сбора данных CpuUsage](~/profiling/media/cpu_use_wt_stopcollection.png "CPU_USE_WT_StopCollection")  
+ ![Stop CpuUsage data collection](../profiling/media/cpu_use_wt_stopcollection.png "CPU_USE_WT_StopCollection")  
   
- Инструмент "Использование ЦП" анализирует данные и отображает отчет.  
+ The CPU Usage tool analyzes the data and displays the report.  
   
- ![Отчет CpuUsage](~/profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
+ ![CpuUsage report](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
   
-## <a name="analyze-the-cpu-usage-report"></a>Анализ отчета об использовании ЦП  
+## <a name="analyze-the-cpu-usage-report"></a>Analyze the CPU Usage report  
   
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a> Дерево вызовов средства "Использование ЦП"  
- Чтобы понять сведения в дереве вызовов, повторно выберите сегмент `GetMaxNumberButton_Click` и просмотрите дерево вызовов.  
+###  <a name="BKMK_The_CPU_Usage_call_tree"></a> The CPU Usage call tree  
+ To get started understanding call tree information, reselect the `GetMaxNumberButton_Click` segment, and look at the call tree details.  
   
-####  <a name="BKMK_Call_tree_structure"></a> Структура дерева вызовов  
- ![Дерево вызовов GetMaxNumberButton_Click](~/profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
-  
-|||  
-|-|-|  
-|![Шаг 1](~/profiling/media/procguid_1.png "ProcGuid_1")|Узел верхнего уровня в деревьях вызовов для использования ЦП представляет собой псевдоузел|  
-|![Шаг 2](~/profiling/media/procguid_2.png "ProcGuid_2")|В большинстве приложений при отключенном параметре **Показать внешний код** узлом второго уровня является узел **[Внешний код]** , который содержит код системы и инфраструктуры, запускающий и останавливающий приложение, отрисовывающий пользовательский интерфейс, управляющий планированием потоков и предоставляющий приложению другие низкоуровневые службы.|  
-|![Шаг 3](~/profiling/media/procguid_3.png "ProcGuid_3")|Дочерними элементами узла второго уровня являются методы пользовательского кода и асинхронные подпрограммы, которые вызываются или создаются кодом системы и инфраструктуры на втором уровне.|  
-|![Шаг 4](~/profiling/media/procguid_4.png "ProcGuid_4")|Дочерние узлы метода содержат данные только для вызова родительского метода. Если параметр **Показать внешний код** отключен, методы приложения также могут содержать узел **[Внешний код]** .|  
-  
-####  <a name="BKMK_External_Code"></a> Внешний код  
- Внешний код — это функции в компонентах системы и платформы, которые исполняются вашим кодом. Внешний код включает функции, которые запускают и останавливают приложение, отрисовывают пользовательский интерфейс, управляют потоками и предоставляют приложению другие низкоуровневые службы. В большинстве случаев внешний код вас интересовать не будет, поэтому дерево вызовов средства "Использование ЦП" собирает внешние функции пользовательского метода в один узел **[Внешний код]**.  
-  
- Если вы захотите посмотреть пути к вызовам внешнего кода, выберите **Показать внешний код** в списке **Представление фильтра** и выберите **Применить**.  
-  
- ![Выбор "Представление фильтра", а затем "Показать внешний код"](~/profiling/media/cpu_use_wt_filterview.png "CPU_USE_WT_FilterView")  
-  
- Помните о том, что многие цепочки вызовов имеют глубокий уровень вложенности, поэтому ширина столбца "Имя функции" может превышать ширину многих мониторов. В этом случае имена функций отображаются в виде **[…]**.  
-  
- ![Вложенный внешний код в дереве вызовов](~/profiling/media/cpu_use_wt_showexternalcodetoowide.png "CPU_USE_WT_ShowExternalCodeTooWide")  
-  
- Используйте поле поиска, чтобы найти требуемый узел, а затем воспользуйтесь горизонтальной полосой прокрутки для отображения данных в представлении:  
-  
- ![Поиск вложенного внешнего кода](~/profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
-  
-###  <a name="BKMK_Call_tree_data_columns"></a> Столбцы данных дерева вызовов  
+####  <a name="BKMK_Call_tree_structure"></a> Call tree structure  
+ ![GetMaxNumberButton&#95;Click call tree](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
 |||  
 |-|-|  
-|**Общая активность ЦП (%)**|![Уравнение для общего процента](~/profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Процент активности ЦП приложения за выбранный период времени, потраченной на вызовы функции и функций, которые вызывала данная функция. Обратите внимание, что это отличается от графика временной шкалы **Использование ЦП** , который сравнивает общую активность приложения за период времени с общей доступной емкостью ЦП.|  
-|**Собственная активность ЦП (%)**|![Уравнение для процента собственной активности](~/profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Процент активности ЦП приложения за выбранный период времени, потраченной на вызовы функции, исключая выполнение функций, которые вызывала данная функция.|  
-|**Общее время ЦП (мс)**|Время в миллисекундах, затраченное на вызовы функции в выбранном временном интервале, и функций, которые были вызваны этой функцией.|  
-|**Собственное время ЦП (мс)**|Время в миллисекундах, затраченное на вызовы функции в выбранном временном интервале, и функций, которые были вызваны этой функцией.|  
-|**Модуль**|Имя модуля, содержащего функцию, или количество модулей, содержащих функции в узле [Внешний код].|  
+|![Step 1](../profiling/media/procguid_1.png "ProcGuid_1")|The top-level node in CPU Usage call trees is a pseudo-node|  
+|![Step 2](../profiling/media/procguid_2.png "ProcGuid_2")|In most apps, when the **Show External Code** option is disabled, the second-level node is an **[External Code]** node that contains the system and framework code that starts and stops the app, draws the UI, controls thread scheduling, and provides other low-level services to the app.|  
+|![Step 3](../profiling/media/procguid_3.png "ProcGuid_3")|The children of the second-level node are the user-code methods and asynchronous routines that are called or created by the second-level system and framework code.|  
+|![Step 4](../profiling/media/procguid_4.png "ProcGuid_4")|Child nodes of a method contain data only for the calls of the parent method. When **Show External Code** is disabled, app methods can also contain an **[External Code]** node.|  
   
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Асинхронные функции в дереве вызовов средства "Использование ЦП"  
- Если компилятор обнаруживает асинхронный метод, он создает скрытый класс для контроля выполнения этого метода. По существу, класс представляет собой конечный автомат, содержащий список функций, созданных компилятором, которые асинхронно вызывают операции исходного метода. Также класс включает обратные вызовы, планировщик и итераторы, необходимые для его правильной работы. При вызове исходного метода родительским методом среда выполнения удаляет метод из контекста выполнения родительского метода и выполняет методы скрытого класса в контексте кода системы и инфраструктуры, который управляет выполнением приложения. Асинхронные методы часто, но не всегда выполняются в отдельном потоке (или в нескольких потоках). Этот код отображается в дереве вызовов средства "Использование ЦП" в виде дочерних элементов узла **[Внешний код]** сразу под верхним узлом дерева.  
+####  <a name="BKMK_External_Code"></a> External Code  
+ External code are functions in system and framework components that executed by the code you write. External code include functions that start and stop the app, draw the UI, control threading, and provide other low-level services to the app. In most cases, you won't be interested in external code, and so the CPU Usage call tree gathers the external functions of a user method into one **[External Code]** node.  
   
- Чтобы увидеть его в нашем примере, снова выберите период `GetMaxNumberAsyncButton_Click` на временной шкале.  
+ When you want to view the call paths of external code, choose **Show External Code** from the **Filter view** list and then choose **Apply**.  
   
- ![Выбор отчета GetMaxNumberAsyncButton_Click](~/profiling/media/cpu_use_wt_getmaxnumberasync_selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
+ ![Choose Filter View, then Show External Code](../profiling/media/cpu_use_wt_filterview.png "CPU_USE_WT_FilterView")  
   
- Два первых узла в узле **[Внешний код]** представляют собой созданные компилятором методы класса конечного автомата. Третий узел является вызовом исходного метода. Развернув созданные методы, можно понять, как это работает.  
+ Be aware that many external code call chains are deeply nested, so that the width of the Function Name column can exceed the display width of all but the largest of computer monitors. When this happens, function names are shown as **[...]**:  
   
- ![Развернутое дерево вызовов GetMaxNumberAsyncButton_Click](~/profiling/media/cpu_use_wt_getmaxnumberasync_expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
+ ![Nested external code in the call tree](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "CPU_USE_WT_ShowExternalCodeTooWide")  
   
--   `MainPage::GetMaxNumberAsyncButton_Click` выполняет немного функций: управляет списком значений задач, вычисляет максимальное значение на основе результатов и отображает выходные данные.  
+ Use the search box to find a node that you are looking for, then use the horizontal scroll bar to bring the data into view:  
   
--   `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` показывает время ЦП, затраченное на планирование и запуск 48 задач, которые являются оболочкой вызова `GetNumberAsync`.  
+ ![Search for nested external code](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
   
--   `MainPage::<GetNumberAsync>b__b` показывает время ЦП, затраченное на выполнение задач, которые вызывают `GetNumber`.
+###  <a name="BKMK_Call_tree_data_columns"></a> Call tree data columns  
+  
+|||  
+|-|-|  
+|**Total CPU (%)**|![Total % data equation](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> The percentage of the app's CPU activity in the selected time range that was used by calls to the function and the functions called by the function. Note that this is different from the **CPU Utilization** timeline graph, which compares the total activity of the app in a time range to the total available CPU capacity.|  
+|**Self CPU (%)**|![Self % equation](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> The percentage of the app's CPU activity in the selected time range that was used by the calls to the function, excluding the activity of functions called by the function.|  
+|**Total CPU (ms)**|The number of milliseconds spent in calls to the function in the selected time range and the functions that were called by the function.|  
+|**Self CPU (ms)**|The number of milliseconds spent in calls to the function in the selected time range and the functions that were called by the function.|  
+|**Module**|The name of the module containing the function, or the number of modules containing the functions in an [External Code] node.|  
+  
+###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Asynchronous functions in the CPU Usage call tree  
+ When the compiler encounters an asynchronous method, it creates a hidden class to control the method's execution. Conceptually, the class is a state machine that includes a list of compiler-generated functions that call operations of the original method asynchronously, and the callbacks, scheduler, and iterators required to execute them correctly. When the original method is called by a parent method, the runtime removes the method from the execution context of the parent, and runs the methods of the hidden class in the context of the system and framework code that control the app's execution. The asynchronous methods are often, but not always, executed on one or more different threads. This code is shown in the CPU Usage call tree as children of the **[External Code]** node immediately below the top node of the tree.  
+  
+ To see this in our example, re-select the `GetMaxNumberAsyncButton_Click` segment in the timeline.  
+  
+ ![GetMaxNumberAsyncButton&#95;Click report selection](../profiling/media/cpu_use_wt_getmaxnumberasync_selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
+  
+ The first two nodes under **[External Code]** are the compiler-generated methods of the state machine class. The third is the call to original method. Expanding the generated methods shows you what's going on.  
+  
+ ![Expanded GetMaxNumberAsyncButton&#95;Click call tree](../profiling/media/cpu_use_wt_getmaxnumberasync_expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
+  
+-   `MainPage::GetMaxNumberAsyncButton_Click` does very little; it manages a list of the task values, computes the maximum of the results, and displays the output.  
+  
+-   `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` shows you the activity required to schedule and launch the 48 tasks that wrap the call to `GetNumberAsync`.  
+  
+-   `MainPage::<GetNumberAsync>b__b` shows you the activity of the tasks that call `GetNumber`.
+

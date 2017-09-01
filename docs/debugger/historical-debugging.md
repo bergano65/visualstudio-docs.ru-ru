@@ -1,41 +1,58 @@
 ---
-title: "Отладка с ведением журнала | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Historical Debugging | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 7cc5ddf2-2f7c-4f83-b7ca-58e92e9bfdd2
 caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
----
-# Отладка с ведением журнала
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 9f73ccc235c3b893b2ad8d2ddb07dd1848414734
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/22/2017
 
-Отладка с ведением журнала — это режим отладки, который зависит от сведений, собранных IntelliTrace.  В этом режиме можно переходить назад и вперед по выполнению приложения и проверять его состояние.  
+---
+# <a name="historical-debugging"></a>Historical Debugging
+Historical debugging is a mode of debugging that depends on the information collected by IntelliTrace. It allows you to move backward and forward through the execution of your application and inspect its state.  
   
- IntelliTrace можно использовать в выпуске Visual Studio Enterprise \(но не в выпусках Professional или Community\).  
+ You can use IntelliTrace in Visual Studio Enterprise edition (but not the Professional or Community editions).  
   
-## Для чего используется отладка с ведением журнала?  
- Задание точек останова для поиска ошибок может быть выполняемой наугад задачей.  Точка останова устанавливается в коде ближе к месту, где предполагается возникновение ошибки. Затем приложение запускается в отладчике с надеждой достижения этой точки. В месте прерывания выполнения можно обнаружить источник ошибки.  В противном случае придется попробовать установить точку останова в другом месте в коде, повторно запустить отладчик и выполнять тестирование до тех пор, пока проблема не будет найдена.  
+## <a name="why-use-historical-debugging"></a>Why use Historical Debugging?  
+ Setting breakpoints to find bugs can be a rather hit-or-miss affair. You set a breakpoint close to the place in your code where you suspect the bug to be, then run the application in the debugger and hope your breakpoint gets hit, and that the place where execution breaks can reveal the source of the bug. If not, you'll have to try setting a breakpoint somewhere else in the code and rerun the debugger, executing your test steps over and over until you find the problem.  
   
- ![задание точки останова](~/debugger/media/breakpointprocesa.png "BreakpointProcesa")  
+ ![setting a breakpoint](../debugger/media/breakpointprocesa.png "BreakpointProcesa")  
   
- IntelliTrace и режим отладки с ведением журнала позволяют перемещаться по приложению и проверять его состояние \(стек вызовов и локальные переменные\) без необходимости задания точек останова, перезапуска отладки и многократного выполнения действий по тестированию.  Это позволяет сэкономить много времени, особенно если ошибка обнаружена практически в центре тестового сценария, выполнение которого является продолжительным.  
+ You can use IntelliTrace and Historical Debugging to roam around in your application and inspect its state (call stack and local variables) without having to set breakpoints, restart debugging, and repeat test steps. This can save you a lot of time, especially when the bug is located deep in a test scenario that takes a long time to execute.  
   
-## Как приступить к использованию отладки с ведением журнала?  
- Инструмент IntelliTrace включен по умолчанию.  Все, что нужно сделать — решить, какие события и вызовы функций представляют интерес.  Дополнительные сведения об определении нужных компонентов см. в разделе [Функции IntelliTrace](../debugger/intellitrace-features.md).  Пошаговые действия по отладки с помощью IntelliTrace см. в разделе [Пошаговое руководство. Использование IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
+## <a name="how-do-i-start-using-historical-debugging"></a>How do I start using Historical Debugging?  
+ IntelliTrace is on by default. All you have to do is decide which events and function calls are of interest to you. For more information about defining what you want to look for, see [IntelliTrace Features](../debugger/intellitrace-features.md). For a step-by-step account of debugging with IntelliTrace, see [Walkthrough: Using IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
   
-## Перемещение по коду с помощью отладки с ведением журнала  
- Начнем с простой программы, содержащей ошибку.  В консольном приложении C\# добавьте следующий код:  
+## <a name="navigating-your-code-with-historical-debugging"></a>Navigating your code with Historical Debugging  
+ Let's start with a simple program that has a bug. In a C# console application, add the following code:  
   
-```c#  
+```CSharp  
 static void Main(string[] args)  
 {  
     int testInt = 0;  
@@ -61,28 +78,28 @@ private static int AddInt(int add)
 }  
 ```  
   
- Предположим, что ожидаемое значение `resultInt` после вызова `AddAll()` — 20 \(результат увеличения `testInt` в 20 раз\).  \(Также предположим, что ошибка не отображается в `AddInt()`\). Но фактическим результатом будет 44.  Как можно найти ошибку без обращения к `AddAll()` 10 раз?  Отладка с ведением журнала позволяет находить ошибки быстро и просто.  Ниже описана процедура записи действий.  
+ We'll assume that the expected value of `resultInt` after calling `AddAll()` is 20 (the result of incrementing `testInt` 20 times). (We'll also assume that you can't see the bug in `AddInt()`).But the result is actually 44. How can we find the bug without stepping through `AddAll()` 10 times? We can use Historical Debugging to find the bug faster and more easily. Here's how:  
   
-1.  Последовательно выбрав «Сервис\/Параметры\/IntelliTrace\/Общие», убедитесь, что инструмент IntelliTrace включен, выберите события IntelliTrace и вызовите параметр информирования.  Если этот параметр не выбран, область навигации отображаться не будет \(как описано ниже\).  
+1.  In Tools > Options > IntelliTrace > General, make sure that IntelliTrace is enabled, and select the IntelliTrace events and call information option. If you do not select this option, you will not be able to see the navigation gutter (as explained below).  
   
-2.  Установите точку останова на строке `Console.WriteLine(resultInt);`.  
+2.  Set a breakpoint on the `Console.WriteLine(resultInt);` line.  
   
-3.  Приступите к отладке.  Код выполняется до точки останова.  В окне **Локальные** можно увидеть, что значение `resultInt` равно 44.  
+3.  Start debugging. The code executes to the breakpoint. In the **Locals** window, you can see that the value of `resultInt` is 44.  
   
-4.  Откройте окно **Средства диагностики** \(**Отладка\/Показать средства диагностики**\).  Окно кода должно выглядеть следующим образом.  
+4.  Open the **Diagnostic Tools** window (**Debug > Show Diagnostic Tools**). The code window should look like this:  
   
-     ![Окно кода в точке останова](~/debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
+     ![Code window at the breakpoint](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
   
-5.  Рядом с левым полем непосредственно над точкой останова отображается двойная стрелка.  Эта область называется областью навигации и используется для отладки с ведением журнала.  Щелкните стрелку.  
+5.  You should see a double arrow next to the left margin, just above the breakpoint. This area is called the navigation gutter, and is used for Historical Debugging. Click the arrow.  
   
-     В окне кода предыдущая строка кода \(`int resultInt = AddIterative(testInt);`\) выделена розовым цветом.  Над окном отображается сообщение, информирующее о включенном режиме отладки с ведением журнала.  
+     In the code window, you should see that the preceding line of code (`int resultInt = AddIterative(testInt);`) is colored pink. Above the window, you should see a message that you are now in Historical Debugging.  
   
-     Теперь окно кода выглядит следующим образом.  
+     The code window now looks like this:  
   
-     ![окно кода в режиме отладки с ведением журнала](~/debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
+     ![code window in historical debugging mode](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
-6.  Теперь можно выполнить шаг с заходом в метод `AddAll()` \(**F11** или нажмите кнопку **Шаг с заходом** в области навигации\).  Выполните шаг вперед \(**F10** или нажмите кнопку **Перейти к следующему вызову** в области навигации\).  Теперь розовая строка находится на строке `j = AddInt(j);`.  Нажатие клавиши **F10** в этом случае выполняет переход к следующей строке кода.  Вместо этого осуществляется вызов следующей функции.  Отладка с ведением журнала переходит от вызова к вызову и пропускает строки кода, которые не включают вызов функции.  
+6.  Now you can step into the `AddAll()` method (**F11**, or the **Step Into** button in the navigation gutter. Step forward (**F10**, or **Go to Next Call** in the navigation gutter. The pink line is now on the `j = AddInt(j);` line. **F10** in this case does not step to the next line of code. Instead, it steps to the next function call. Historical debugging navigates from call to call, and it skips lines of code that do not include a function call.  
   
-7.  Выполните шаг с заходом в метод `AddInt()`.  Вы сразу же увидите ошибку в этом коде.  
+7.  Now step into the `AddInt()` method. You should see the bug in this code immediately.  
   
- В этой процедуре приведен лишь краткий обзор всех действий, выполняемых в рамках отладки с ведением журнала.  Дополнительные сведения о различных параметрах и действиях кнопок в области навигации см. в разделе [Функции IntelliTrace](../debugger/intellitrace-features.md).
+ This procedure just scratched the surface of what you can do with Historical Debugging. To find out more about the different settings and the effects of the different buttons in the navigation gutter, see [IntelliTrace Features](../debugger/intellitrace-features.md).

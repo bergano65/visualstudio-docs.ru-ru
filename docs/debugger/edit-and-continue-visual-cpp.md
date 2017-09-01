@@ -1,81 +1,103 @@
 ---
-title: "Режим &quot;Изменить и продолжить&quot; (Visual C++) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "C/C++, Изменить и продолжить"
-  - "отладка [C++], Изменить и продолжить"
-  - "Изменить и продолжить [C++]"
+title: Edit and Continue (Visual C++) | Microsoft Docs
+ms.custom: 
+ms.date: 05/31/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- Edit and Continue [C++]
+- debugging [C++], Edit and Continue
+- C/C++, Edit and Continue
 ms.assetid: 1815251e-a877-433e-9e5e-69bd9ba254c7
 caps.latest.revision: 25
-caps.handback.revision: 25
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Режим &quot;Изменить и продолжить&quot; (Visual C++)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: d5d795da17e8446bc86417dc302e1df4935a92f4
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/22/2017
 
-Вы можете использовать функцию "Изменить и продолжить" в проектах Visual C\+\+. Сведения об ограничениях "Изменить и продолжить" см. в разделе [Поддерживаемые изменения и ограничения кода \(C\+\+\)](../debugger/supported-code-changes-cpp.md).  
+---
+# <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
+You can use Edit and Continue in Visual C++ projects. See [Supported Code Changes (C++)](../debugger/supported-code-changes-cpp.md) for information about the limitations of Edit and Continue.
   
- Начиная с Visual Studio 2015 с обновлением 1, можно использовать функцию "Изменить и продолжить" в приложениях C\+\+ для Магазина Windows и в приложениях DirectX, поскольку она теперь поддерживает параметр **\/Zi** компилятора с параметром **\/bigobj**. Также можно использовать "Изменить и продолжить" с двоичными файлами, скомпилированными с параметром **\/FASTLINK**.  
+For more information about Visual Studio 2015 Update 3 improvements, see [C++ Edit and Continue in Visual Studio 2015 Update 3](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/).  
   
- Кроме того, в обновлении 1 присутствуют такие усовершенствования, как новый диалог ожидания с возможностью отмены и уведомление, если файл не поддерживает "Изменить и продолжить". Дополнительные сведения об усовершенствованиях в обновлении 1 см. в разделе [Усовершенствования "Изменить и продолжить" C\+\+ в Visual Studio 2015 с обновлением 1](http://blogs.msdn.com/b/vcblog/archive/2015/11/30/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1.aspx).  
+ The [/Zo (Enhance Optimized Debugging)](/cpp/build/reference/zo-enhance-optimized-debugging) compiler option that was introduced in Visual Studio 2013 Update 3 adds additional information to .pdb (symbol) files for binaries compiled without the [/Od (Disable (Debug))](http://msdn.microsoft.com/library/aafb762y.aspx) option.  
   
-Параметр компилятора [\/Zo \(Enhance Optimized Debugging\)](/visual-cpp/build/reference/zo-enhance-optimized-debugging), который появился в Visual Studio 2013 с обновлением 3, добавляет дополнительные сведения в PDB\-файлы для двоичных файлов, скомпилированных без параметра [\/Od \(Отключить \(отладку\)\)](http://msdn.microsoft.com/library/aafb762y.aspx).  
+ **/Zo** disables Edit and Continue. See [How to: Debug Optimized Code](../debugger/how-to-debug-optimized-code.md).  
   
-**\/Zo** отключает "Изменить и продолжить". См. раздел [Практическое руководство. Отладка оптимизированного кода](../debugger/how-to-debug-optimized-code.md).  
+##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Enable or disable Edit and Continue  
+ You may want to  disable the automatic invocation of Edit and Continue if you are making edits to the code that you do not want applied during the current debugging session. You can also re-enable automatic Edit and Continue.
+
+> [!IMPORTANT]
+> For required build settings and other information about feature compatibility, see [C++ Edit and Continue in Visual Studio 2015 Update 3](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/.
   
-## <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a>Включение и отключение возможности "Изменить и продолжить".  
-Можно отключить автоматический вызов возможности "Изменить и продолжить" при внесении изменений в код, которые не следует применять в текущем сеансе отладки. Можно также повторно включить автоматическую возможность "Изменить и продолжить".  
+1.  If you are in a debugging session, stop debugging (**Shift + F5**).
+
+2. On the **Tools** menu, choose **Options**.
   
-1.  В меню **Сервис** выберите пункт **Параметры**.  
+3.  In the **Options** dialog box, select **Debugging > General**.
+
+4.  To enable, select **Enable Edit and Continue**. To disable, clear the checkbox.
   
-2.  В окне **Параметры** выберите папку **Отладка \-\> Общие**.  
+5.  In the **Edit and Continue** group, select or clear the **Enable Native Edit and Continue** check box.  
   
-3.  В группе **Изменить и продолжить** установите или снимите флажок **Включить собственную операцию "Изменить и продолжить"**.  
+ Altering this setting affects all projects you work on. You do not need to rebuild your application after changing this setting. If you build your application from the command line or from a makefile, but you debug in the Visual Studio environment, you can still use Edit and Continue if you set the **/ZI** option.  
   
-Изменение этого параметра влияет на все проекты, над которыми вы работаете. После изменения этого параметра не требуется производить повторную сборку приложения. Этот параметр можно изменять даже во время отладки. Если сборка приложения осуществляется из командной строки или из Makefile, а его отладка происходит в окружении Visual Studio, возможность "Изменить и продолжить" можно по\-прежнему использовать, если задать параметр **\/ZI**.  
+##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> How to apply code changes explicitly  
+ In Visual C++, Edit and Continue can apply code changes in two ways. Code changes can be applied implicitly, when you choose an execution command, or explicitly, using the **Apply Code Changes** command.  
   
-## <a name="BKMK_How_to_apply_code_changes_explicitly"></a>Применение изменений кода явным образом  
-В Visual C\+\+ возможность "Изменить и продолжить" может применять изменения кода двумя способами. Изменения кода могут быть применены неявно \(при выборе команды выполнения\) или явно \(при использовании команды **Применить изменения кода**\).  
+ When you apply code changes explicitly, your program remains in break mode - no execution occurs.  
   
-При явном применении изменений кода программа остается в режиме приостановки — выполнение не продолжается.  
+-   To apply code changes explicitly, on the **Debug** menu, choose **Apply Code Changes**.  
   
--   Для применения изменений кода явным образом в меню **Отладка** выберите **Применить изменения кода**.  
+##  <a name="BKMK_How_to_stop_code_changes"></a> How to stop code changes  
+ While Edit and Continue is in the process of applying code changes, you can stop the operation.  
   
-## <a name="BKMK_How_to_stop_code_changes"></a>Остановка внесения изменений в код  
-Пока режим "Изменить и продолжить" находится в процессе внесения изменений в код, можно остановить эту операцию.  
+ To stop applying code changes:  
   
-Для остановки внесения изменений в код:  
+-   On the **Debug** menu, choose **Stop Applying Code Changes**.  
   
--   В меню **Отладка** выберите команду **Остановить применение изменений кода**.  
+ This menu item is visible only when code changes are being applied.  
   
-Этот пункт меню становится видимым только в процессе внесения изменений в код.  
+ If you choose this option, none of the code changes are committed.  
   
-При выборе этого параметра никакие изменения в коде не фиксируются.  
+##  <a name="BKMK_How_to_reset_the_point_of_execution"></a> How to reset the point of execution  
+ Some code changes can cause the point of execution to move to a new location when Edit and Continue applies the changes. Edit and Continue places the point of execution as accurately as possible, but the results may not be correct in all cases.  
   
-## <a name="BKMK_How_to_reset_the_point_of_execution"></a>Сброс точки выполнения  
-Некоторые изменения в коде могут вызвать перемещение точки выполнения в новое расположение, после того как эти изменения будут применены операцией "Изменить и продолжить". Операция "Изменить и продолжить" стремится разместить точку выполнения с максимально возможной точностью, однако в некоторых случаях результаты могут быть неверными.  
+ In Visual C++, a dialog box informs you when the point of execution changes. You should verify that the location is correct before you continue debugging. If it is not correct, use the **Set Next Statement** command. For more information, see [Set the next statement to execute](http://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).  
   
-В Visual C\+\+ о перемещении точки выполнения сообщает диалоговое окно. Прежде чем продолжить процесс отладки, необходимо проверить, что точка установлена правильно. Если это не так, необходимо использовать команду **Задать следующий оператор**. Дополнительные сведения см. в разделе [Задание следующего оператора для выполнения](http://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).  
+##  <a name="BKMK_How_to_work_with_stale_code"></a> How to work with stale code  
+ In some cases, Edit and Continue cannot apply code changes to the executable immediately, but might be able to apply the code changes later if you continue debugging. This happens if you edit a function that calls the current function or if you add more than 64 bytes of new variables to a function on the call stack  
   
-## <a name="BKMK_How_to_work_with_stale_code"></a>Работа с устаревшим кодом  
-В некоторых случаях операция "Изменить и продолжить" не может немедленно внести изменения в исполняемый код, но может внести их позже, если отладка будет продолжена. Это происходит при изменении функции, вызвавшей текущую выполняемую функцию, или при добавлении новых переменных объемом более 64 байт в функцию, которая находится в стеке вызовов.  
+ In such cases, the debugger continues executing the original code until the changes can be applied. The stale code appears as a temporary source file window in a separate source window, with a title such as `enc25.tmp`. The edited source continues to appear in the original source window. If you try to edit the stale code, a warning message appears.  
   
-В таких случаях отладчик продолжает выполнение исходного кода до тех пор, пока эти изменения не вступят в силу. Устаревший код отображается в качестве временного исходного файла в отдельном окне исходного кода. Заголовок этого окна имеет вид наподобие `enc25.tmp`. При этом отредактированный исходный код остается в своем окне. При попытке редактирования устаревшего кода появляется предупреждение.  
-  
-## См. также  
-[Поддерживаемые изменения и ограничения кода \(C\+\+\)](../debugger/supported-code-changes-cpp.md)
+## <a name="see-also"></a>See Also  
+ [Supported Code Changes (C++)](../debugger/supported-code-changes-cpp.md)

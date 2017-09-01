@@ -1,101 +1,120 @@
 ---
-title: "Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "средства профилирования, VSPerfASPNETCmd"
-  - "VSPerfASPNETCmd"
+title: Rapid Web Site Profiling with VSPerfASPNETCmd | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- proflilng tools,VSPerfASPNETCmd
+- VSPerfASPNETCmd
 ms.assetid: 9a9d62a6-549a-45ac-a948-76eb98586ac5
 caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
----
-# Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
+ms.openlocfilehash: 09e86315466ac4de07ee1a6d2545e17b0d14bf9a
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/31/2017
 
-Программа командной строки **VSPerfASPNETCmd** позволяет без труда профилировать веб\-приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  У этой программы меньше параметров по сравнению с программой командной строки [VSPerfCmd](../profiling/vsperfcmd.md), в ней не нужно задавать переменные среды и не требуется перезагрузка компьютера.  Программу **VSPerfASPNETCmd** предпочтительнее использовать для профилирования с помощью отдельного профилировщика.  Для получения дополнительной информации см. [Практическое руководство. Установка изолированного профилировщика](../profiling/how-to-install-the-stand-alone-profiler.md).  
+---
+# <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Rapid Web Site Profiling with VSPerfASPNETCmd
+The **VSPerfASPNETCmd** command line tool enables you to easily profile [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web applications. In comparison to the [VSPerfCmd](../profiling/vsperfcmd.md) command line tool, options are reduced, no environment variables have to be set, and rebooting the computer is not required. Using **VSPerfASPNETCmd** is the preferred method for profiling with the standalone profiler. For more information, see [How to: Install the Stand-Alone Profiler](../profiling/how-to-install-the-stand-alone-profiler.md).  
   
 > [!NOTE]
->  Функции усиленной безопасности в Windows 8 и Windows Server 2012 требуют значительных изменений в способе сбора данных профилировщиком Visual Studio на этих платформах.  Для Приложений Магазина Windows также требуются новые методы сбора.  См. раздел [Профилирование приложений для Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Enhanced security features in Windows 8 and Windows Server 2012 required significant changes in the way the Visual Studio profiler collects data on these platforms. Windows Store apps also require new collection techniques. See [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
- В некоторых сценариях, например при сборе данных о параллелизме или в случае приостановки и возобновления профилирования, более предпочтительным методом профилирования является использование **VSPerfCmd**.  
-  
-> [!NOTE]
->  Программы командной строки средств профилирования расположены в подкаталоге \\Team Tools\\Performance Tools каталога установки [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].  На 64\-разрядных компьютерах следует использовать программу VSPerfASPNETCmd, расположенную в 32\-битном каталоге \\Team Tools\\Performance Tools.  Для использования программ командной строки профилировщика необходимо добавить путь к этим программам в переменную среды PATH окна командной строки или указать этот путь при вызове команды.  Для получения дополнительной информации см. [Указание пути к средствам командной строки](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
-  
-## Профилирование приложения ASP.NET  
- Для профилирования веб\-приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] введите одну из команд, описанных в следующих разделах.  Будет запущен веб\-сайт, и профилировщик начнет собирать данные.  Запустите приложение, а затем закройте браузер.  Чтобы остановить профилирование, нажмите клавишу Enter в окне командной строки.  
+ In some scenarios, such as collecting concurrency data or pausing and resuming profiling, using **VSPerfCmd** is the preferred profiling method.  
   
 > [!NOTE]
->  По умолчанию командная строка после команды **vsperfaspnetcmd** не возвращается.  Для принудительного возврата командной строки можно воспользоваться командой **\/nowait**.  См. [Использование параметра /NoWait](#UsingNoWait).  
+>  Command-line tools of the Profiling Tools are located in the \Team Tools\Performance Tools subdirectory of the [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] installation directory. On 64 bit computers, use the VSPerfASPNETCmd tool located in the 32 bit \Team Tools\Performance Tools directory. To use the profiler command-line tools, you must add the tools path to the PATH environment variable of the command prompt window or add it to the command itself. For more information, see [Specifying the Path to Command Line Tools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
-## Сбор статистики приложения с помощью метода выборки  
- Выборка – это метод профилирования, используемый по умолчанию в программе **VSPerfASPNETCmd**, который не нужно задавать в командной строке.  Следующая командная строка позволяет собрать статистику для заданного веб\-приложения:  
+## <a name="profiling-an-aspnet-application"></a>Profiling an ASP.NET Application  
+ To profile an [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application, type one of the commands described in the following sections. The Web site is started and the profiler starts to collect data. Exercise your application and then close the browser. To stop profiling, press the Enter key in the command prompt window.  
+  
+> [!NOTE]
+>  By default, the command prompt does not return after a **vsperfaspnetcmd** command. You can use the **/nowait** option to force the command prompt to return. See [Using the /NoWait option](#UsingNoWait).  
+  
+## <a name="to-collect-application-statistics-by-using-the-sampling-method"></a>To collect application statistics by using the sampling method  
+ Sampling is the default profiling method of **VSPerfASPNETCmd** tool and does not have to be specified on the command line. The following command line collects application statistics from the specified Web application:  
   
  **vsperfaspnetcmd**  *websiteUrl*  
   
-## Сбор подробных данных о времени с помощью метода инструментирования  
- С помощью следующей командой строки можно собрать подробные данные о времени в динамически компилируемом веб\-приложении [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]:  
+## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>To collect detailed timing data by using the instrumentation method  
+ Use the following command line to collect detailed timing data from a dynamically compiled [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application:  
   
- **vsperfaspnetcmd \/trace**  *websiteUrl*  
+ **vsperfaspnetcmd /trace**  *websiteUrl*  
   
- Для профилирования статически скомпилированных DLL\-файлов в веб\-приложении следует инструментировать файлы с помощью программы командной строки [VSInstr](../profiling/vsinstr.md).  Команда vsperfaspnetcmd \/trace позволяет включить данные из инструментированных файлов.  
+ If you want to profile statically compiled .dll files in your Web application, you must instrument the files by using the [VSInstr](../profiling/vsinstr.md) command-line tool. The vsperfaspnetcmd /trace command will include data from the instrumented files.  
   
-## Сбор данных памяти .NET  
- Параметр **\/Memory** позволяет собирать данные о выделении объектов в памяти .NET, а также сведения о времени существования этих объектов.  Сбор данных о выделении – это режим, используемый по умолчанию для параметра данных **\/Memory**, который не нужно задавать в командной строке.  
+## <a name="to-collect-net-memory-data"></a>To collect .NET memory data  
+ The **/Memory** option collects data about the allocation of objects in .NET memory and can collect data about the lifetime of those objects. Allocation data collection is the default mode of the **/Memory** data option and does not have to be specified on the command line.  
   
- **vsperfaspnetcmd \/memory** *websiteUrl*  
+ **vsperfaspnetcmd /memory** *websiteUrl*  
   
- Чтобы в дополнение к данным о выделении собрать данные о времени существования объекта, воспользуйтесь параметром **Lifetime**:  
+ Use the **Lifetime** parameter to collect object lifetime data in addition to the allocation data:  
   
- **vsperfaspnetcmd \/memory:lifetime** *websiteUrl*  
+ **vsperfaspnetcmd /memory:lifetime** *websiteUrl*  
   
- Кроме того, можно воспользоваться параметром **\/Trace** для включения подробных данных о времени вместе с данными о памяти .NET:  
+ You can also use the **/Trace** option to include detailed timing information with the .NET memory data:  
   
- **vsperfaspnetcmd \/memory**\[**:lifetime**\] **\/trace** `websiteUrl`  
+ **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`  
   
-## Сбор данных об уровневом взаимодействии  
+## <a name="to-collect-tier-interaction-data"></a>To collect tier interaction data  
   
 > [!WARNING]
->  Данные профилирования уровневого взаимодействия \(TIP\) можно собирать с помощью [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] или [!INCLUDE[vs_pro_current_short](../profiling/includes/vs_pro_current_short_md.md)].  Однако данные профилирования уровневого взаимодействия можно просматривать только в [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] и [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)].  
+>  Tier interaction profiling (TIP) data can be collected using [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], or [!INCLUDE[vs_pro_current_short](../profiling/includes/vs_pro_current_short_md.md)]. However, tier interaction profiling data can be viewed only in [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] and [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)].  
 >   
->  Для сбора данных TIP в Windows 8 или Windows Server 2012 необходимо использовать параметр инструментирования \(**\/trace**\).  
+>  To collect TIP data on Windows 8 or Windows Server 2012, you must use the instrumentation (**/trace**) option.  
   
- Чтобы собрать данные об уровневом взаимодействии вместе с данными выборки, воспользуйтесь командной строкой:  
+ To collect tier interaction data with sampling data:  
   
- **vsperfaspnetcmd \/tip** `websiteUrl`  
+ **vsperfaspnetcmd /tip** `websiteUrl`  
   
- Чтобы собрать данные об уровневом взаимодействии вместе с данными инструментирования, воспользуйтесь командной строкой:  
+ To collect tier interaction data with instrumentation data:  
   
- **vsperfaspnetcmd \/trace \/tip** *websiteUrl*  
+ **vsperfaspnetcmd /trace /tip** *websiteUrl*  
   
- Чтобы собрать данные об уровневом взаимодействии вместе с данными о памяти .NET, воспользуйтесь командной строкой:  
+ To collect tier interaction data with .NET memory data:  
   
- **vsperfaspnetcmd \/memory**\[**:lifetime**\] **\/tip** *websiteUrl*  
+ **vsperfaspnetcmd /memory**[**:lifetime**] **/tip***websiteUrl*  
   
-##  <a name="UsingNoWait"></a> Использование параметра \/NoWait  
- По умолчанию командная строка после команды **vsperfaspnetcmd** не возвращается.  Для принудительного возврата командной строки можно воспользоваться следующим синтаксисом.  Затем в окне командной строки можно выполнить другие операции.  Для завершения профилирования воспользуйтесь параметром **\/shutdown** в отдельной команде **vsperfaspnetcmd**.  
+##  <a name="UsingNoWait"></a> Using the /NoWait option  
+ By default, the command prompt does not return after a **vsperfaspnetcmd** command. You can use the following syntax option to force the command prompt to return. You can then perform other operations in the command prompt window. To end profiling, use the **/shutdown** option in a separate **vsperfaspnetcmd** command.  
   
- Чтобы начать профилирование, воспользуйтесь следующей командной строкой:  
+ To begin profiling:  
   
- **vsperfaspnetcmd** \[*\/Options*\] **\/nowait** *websiteUrl*  
+ **vsperfaspnetcmd** [*/Options*] **/nowait***websiteUrl*  
   
- Для завершения профилирования воспользуйтесь следующей командной строкой:  
+ To end profiling:  
   
- **vsperfaspnetcmd \/shutdown** *websiteUrl*  
+ **vsperfaspnetcmd /shutdown** *websiteUrl*  
   
-## Дополнительные параметры  
- Во все команды, перечисленные ранее в этом разделе, за исключением команды **vsperfaspnetcmd \/shutdown**, можно добавить любой из следующих параметров.  
+## <a name="additional-options"></a>Additional Options  
+ You can add any of the following options to the commands listed earlier in this section, except the **vsperfaspnetcmd /shutdown** command.  
   
-|Команда|Описание|  
-|-------------|--------------|  
-|**\/Output:** `VspFile`|По умолчанию файл данных профилирования \(VSP\) создается в текущем каталоге с именем файла **PerformanceReport.vsp**.  Параметр \/output позволяет задать другое расположение, имя файла или и то, и другое.|  
-|**\/PackSymbols:Off**|По умолчанию VsPerfASPNETCmd встраивает символы \(имена функций и параметров и т. п.\) в VSP\-файл.  Встраивание символов может привести к существенному увеличению файла данных профилирования.  При обращении к PDB\-файлам, содержащим такие символы, в процессе анализа данных следует воспользоваться параметром \/packsymbols:off, чтобы отключить встраивание символов.|
+|Option|Description|  
+|------------|-----------------|  
+|**/Output:** `VspFile`|By default, the profiling data (.vsp) file is created in the current directory with the file name **PerformanceReport.vsp**. Use the /output option to specify a different location, file name, or both.|  
+|**/PackSymbols:Off**|By default, VsPerfASPNETCmd embeds symbols (function and parameter names, etc) in the .vsp file. Embedding the symbols can make the profiling data file very large. If you will have access to the .pdb files that contain the symbols when you analyze the data, use the /packsymbols:off option to disable the embedding of the symbols.|
+

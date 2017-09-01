@@ -1,58 +1,53 @@
----
-title: "Практическое руководство. Отладка веб-приложений | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
+-- title: "How to: Debug Web Applications | Microsoft Docs" ms.custom: "" ms.date: "11/04/2016" ms.reviewer: "" ms.suite: "" ms.technology: 
+  - "vs-ide-debug" ms.tgt_pltfrm: "" ms.topic: "article" dev_langs: 
   - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Веб-формы ASP.NET, отладка"
-  - "ASP.NET, отладка веб-приложений"
-  - "отладка веб-приложений ASP.NET, во время разработки"
-  - "веб-службы, отладка"
-ms.assetid: 6440d12e-6b29-42c5-a958-99aeaaff480f
-caps.latest.revision: 37
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 37
+  - "VB"
+  - "FSharp"
+  - "C++" helpviewer_keywords: 
+  - "Web services, debugging"
+  - "ASP.NET Web Forms, debugging"
+  - "ASP.NET, debugging Web applications"
+  - "debugging ASP.NET Web applications, during development" ms.assetid: 6440d12e-6b29-42c5-a958-99aeaaff480f caps.latest.revision: 37 author: "mikejo5000" ms.author: "mikejo" manager: "ghogen" translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
 ---
-# Практическое руководство. Отладка веб-приложений
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] – это основная технология разработки веб\-приложений в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Отладчик [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] предоставляет мощные средства для локальной отладки веб\-приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] или их отладки на удаленном сервере.  В этом разделе описано, как выполнить отладку проекта [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] во время разработки.  Сведения об отладке веб\-приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], развертывание которого выполнено на рабочем сервере, см. в разделе [Отладка развернутых веб\-приложений](../debugger/debugging-deployed-web-applications.md).  
+# <a name="how-to-debug-web-applications"></a>How to: Debug Web Applications
+[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] is the primary technology for developing Web applications in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. The [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugger provides powerful tools for debugging [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web applications locally or on a remote server. This topic describes how to debug a [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] project during development. For information about how to debug a [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application already deployed on a production server, see [Debugging Deployed Web Applications](../debugger/debugging-deployed-web-applications.md).  
   
- Чтобы выполнить отладку приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]:  
+ To debug a [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] application:  
   
--   Необходимо иметь требуемые разрешения.  Дополнительные сведения см. в разделе [Требования к системе](../debugger/aspnet-debugging-system-requirements.md).  
+-   You must have required permissions. For more information, see [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
   
--   Отладка [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] должна быть включена в окне **Свойства проекта**.  
+-   [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] debugging must be enabled in **Project Properties**.  
   
--   В файле конфигурации данного приложения \(Web.config\) необходимо установить режим отладки.  В режиме отладки [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] генерирует символы для динамически сгенерированных файлов и включает присоединение отладчика к приложению [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] устанавливает это автоматически при запуске отладки, если проект создан на основе шаблона веб\-проектов.  
+-   The configuration file of your application (Web.config) must be set to debug mode. Debug mode causes [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] to generate symbols for dynamically generated files and enables the debugger to attach to the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] application. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sets this automatically when you start to debug, if you created your project from the Web projects template.  
   
--   Дополнительные сведения см. в разделе [Практическое руководство. Включение отладки для приложений ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
+-   For more information, see [How to: Enable Debugging for ASP.NET Applications](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
   
-### Отладка веб\-приложения во время разработки  
+### <a name="to-debug-a-web-application-during-development"></a>To debug a Web application during development  
   
-1.  В меню **Отладка** выберите команду **Пуск**, чтобы начать отладку веб\-приложения.  
+1.  On the **Debug** menu, click **Start** to begin debugging the Web application.  
   
-     С помощью [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] выполняется построение проекта веб\-приложения, развертывание \(если необходимо\), запуск сервера разработки ASP.NET при локальной отладке и присоединение к рабочему процессу [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
+     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] builds the Web application project, deploys the application if necessary, starts the ASP.NET Development Server if you are debugging locally, and attaches to the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] worker process.  
   
-2.  Используйте отладчик, чтобы создавать и снимать точки останова, переходить и выполнять другие операции отладки, как и для любого другого приложения.  
+2.  Use the Debugger to set and clear breakpoints, step, and perform other debugging operations, as you would for any application.  
   
-     Дополнительные сведения см. в разделе [Основы отладки](../debugger/debugger-basics.md).  
+     For more information, see [Debugger Basics](../debugger/debugger-basics.md).  
   
-3.  В меню **Отладка** щелкните команду **Остановить отладку**, чтобы остановить сеанс отладки или в меню **Файл** в Internet Explorer выполните команду **Закрыть**.  
+3.  On the **Debug** menu, click **Stop Debugging** to end the debugging session or on the **File** menu in Internet Explorer, click **Close**.  
   
-## См. также  
- [Отладка веб\-приложений и скриптов](../debugger/debugging-web-applications-and-script.md)   
- [Отладка приложений ASP.NET и AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
- [Практическое руководство. Включение отладки для приложений ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
+## <a name="see-also"></a>See Also  
+ [Debugging Web Applications and Script](../debugger/debugging-web-applications-and-script.md)   
+ [Debugging ASP.NET and AJAX Applications](../debugger/debugging-aspnet-and-ajax-applications.md)   
+ [How to: Enable Debugging for ASP.NET Applications](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

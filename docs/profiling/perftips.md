@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 65bceca75b87aaf187926ebbed1a54ce4f0e8eec
-ms.openlocfilehash: db7c9121beea3b6a27a435680dfe01cbc8cba8b6
-ms.lasthandoff: 02/22/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 8a544bd1e1242bb6fabe00f7842ac33ed9d9d444
+ms.openlocfilehash: b19a309f403daa0a3881ec154aa4cd3f5e4d97dc
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/14/2017
 
 ---
 # <a name="perftips"></a>PerfTips
@@ -42,14 +43,14 @@ ms.lasthandoff: 02/22/2017
 ## <a name="perftips"></a>PerfTips  
  При остановке выполнения отладчика на точке останова или при завершения шага в окне редактора отображается время, прошедшее от предыдущей точки останова до прерывания. Дополнительные сведения см. в записи блога [PerfTips: информация о производительности при отладке с помощью Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx).  
   
- ![PerfTip](~/profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
+ ![PerfTip](../profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
   
 ## <a name="diagnostics-tools-window"></a>Окно "Средства диагностики"  
  Точки останова и связанные с ними данные о времени отображаются в окне "Средства диагностики".  
   
  На рисунке ниже показано окно "Средства диагностики в Visual Studio 2015 с обновлением 1.  
   
- ![DiagnosticTools: обновление&1;](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+ ![DiagnosticTools: обновление 1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
 -   На временной шкале **События прерывания** отмечаются точки останова, достигнутые за сеанс отладки. Щелкните событие, чтобы выбрать его в списке сведений **отладчика** .  
   
@@ -72,3 +73,7 @@ ms.lasthandoff: 02/22/2017
 1.  В меню **Отладка** выберите пункт **Параметры**.  
   
 2.  Установите или снимите флажок **Включить средства диагностики при отладке**.
+
+## <a name="see-also"></a>См. также
+ [Профилирование в Visual Studio](../profiling/index.md) [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md)
+

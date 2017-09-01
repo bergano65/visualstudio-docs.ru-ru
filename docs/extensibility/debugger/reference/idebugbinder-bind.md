@@ -1,60 +1,77 @@
 ---
-title: "IDebugBinder::Bind | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBinder::Bind"
-helpviewer_keywords: 
-  - "Метод IDebugBinder::Bind"
+title: IDebugBinder::Bind | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugBinder::Bind
+helpviewer_keywords:
+- IDebugBinder::Bind method
 ms.assetid: 15a11ad7-0fcc-4e80-ae34-8a7dd7bae3c3
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# IDebugBinder::Bind
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 98eee69282ce74b6870404b86159e40007354b9d
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-Этот метод получает контекст или объекта памяти, содержащий текущее значение символа.  
+---
+# <a name="idebugbinderbind"></a>IDebugBinder::Bind
+This method gets the memory context or object that contains the symbol's current value.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Bind(   
-   IDebugObject*  pContainer,  
-   IDebugField*   pField,  
-   IDebugObject** ppObject  
+```cpp  
+HRESULT Bind(   
+   IDebugObject*  pContainer,  
+   IDebugField*   pField,  
+   IDebugObject** ppObject  
 );  
 ```  
   
-```c#  
+```csharp  
 int Bind(  
-   IDebugObject     pContainer,  
-   IDebugField      pField,  
-   out IDebugObject ppObject  
+   IDebugObject     pContainer,  
+   IDebugField      pField,  
+   out IDebugObject ppObject  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Parameters  
  `pContainer`  
- \[in\] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) он содержит дочерний элемент, на который ссылается by  `pField`.  
+ [in] The [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) that contains the child referenced by `pField`.  
   
  `pField`  
- \[in\] IDebugField представляет символ.  
+ [in] The [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) that represents the symbol.  
   
  `ppObject`  
- \[out\] возвращает `IDebugObject` представляет экземпляр символа.  
+ [out] Returns the `IDebugObject` that represents the instance of the symbol.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

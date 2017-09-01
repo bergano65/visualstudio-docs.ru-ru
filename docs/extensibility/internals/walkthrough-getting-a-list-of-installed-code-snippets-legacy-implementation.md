@@ -1,5 +1,5 @@
 ---
-title: "Получение списка установлен фрагменты кода (устаревшая версия) | Документы Microsoft"
+title: Getting a List of Installed Code Snippets (Legacy) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,24 +30,25 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: d5bc147592bfc36247c35f23ac2885055d096af3
-ms.openlocfilehash: d49d5eb1a6a2e045d477dd03fba9372123cae83a
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 50d5343d98bba8df79628d9bfdfa838aea9e27d8
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Пошаговое руководство: Получение списка установленных текстов (реализация прежних версий)
-Фрагмент кода — это часть кода, могут быть вставлены в исходный буфер с помощью команды меню (что позволяет, задав список фрагментов кода установленных) или путем выбора из списка завершения IntelliSense ярлык фрагмента.  
+# <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Walkthrough: Getting a List of Installed Code Snippets (Legacy Implementation)
+A code snippet is a piece of code that can be inserted into the source buffer either with a menu command (which allows choosing among a list of installed code snippets) or by selecting a snippet shortcut from an IntelliSense completion list.  
   
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A>Метод возвращает все фрагменты кода для конкретного языка GUID.</xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A> Ярлыки для этих фрагментов могут быть вставлены в списке завершения IntelliSense.  
+ The <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A> method gets all code snippets for a specific language GUID. The shortcuts for those snippets can be inserted into an IntelliSense completion list.  
   
- В разделе [поддержка фрагментов кода в языковую службу для прежних версий](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md) подробные сведения о реализации фрагменты кода в управляемых пакетов языковую службу framework (MPF).  
+ See [Support for Code Snippets in a Legacy Language Service](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md) for details about implementing code snippets in a managed package framework (MPF) language service.  
   
-### <a name="to-retrieve-a-list-of-code-snippets"></a>Чтобы получить список фрагментов кода  
+### <a name="to-retrieve-a-list-of-code-snippets"></a>To retrieve a list of code snippets  
   
-1.  Следующий код показывает, как получить список фрагментов кода для данного языка. Результаты сохраняются в массив <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion>структуры.</xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> Этот метод использует статический <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>метод, чтобы получить <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>интерфейс из <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>службы.</xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> </xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> </xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> Тем не менее, можно использовать поставщик службы VSPackage и вызов <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>метод.</xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>  
+1.  The following code shows how to get a list of code snippets for a given language. The results are stored in an array of <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> structures. This method uses the static <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> method to get the <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> interface from the <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> service. However, you can also use the service provider given to your VSPackage and call the <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> method.  
   
-    ```c#  
+    ```csharp  
     using System;  
     using System.Collections;  
     using System.Runtime.InteropServices;  
@@ -118,14 +119,14 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-### <a name="to-call-the-getsnippets-method"></a>Для вызова метода GetSnippets  
+### <a name="to-call-the-getsnippets-method"></a>To call the GetSnippets method  
   
-1.  Следующий метод показан порядок вызова `GetSnippets` метод по завершении выполнения операции синтаксического анализа. <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A>Метод вызывается после операции синтаксического анализа, который был запущен с Причина <xref:Microsoft.VisualStudio.Package.ParseReason>.</xref:Microsoft.VisualStudio.Package.ParseReason> </xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A>  
+1.  The following method shows how to call the `GetSnippets` method at the completion of a parsing operation. The <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> method is called after a parsing operation that was started with the reason <xref:Microsoft.VisualStudio.Package.ParseReason>.  
   
 > [!NOTE]
->  `expansionsList` Массив listis кэширования для повышения производительности. Изменения фрагменты не отражаются в списке, пока не будет остановлена и перезагружена языковую службу (например, путем остановки и перезапуска [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).  
+>  The `expansionsList` array listis cached for performance reasons. Changes to the snippets are not reflected in the list until the language service is stopped and reloaded (for example, by stopping and restarting [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).  
   
-```c#  
+```csharp  
 class TestLanguageService : LanguageService  
 {  
     private ArrayList expansionsList;  
@@ -142,15 +143,15 @@ class TestLanguageService : LanguageService
 }  
 ```  
   
-### <a name="to-use-the-snippet-information"></a>Чтобы использовать фрагмент информацию  
+### <a name="to-use-the-snippet-information"></a>To use the snippet information  
   
-1.  Ниже показано использование фрагмента информацию, возвращаемую `GetSnippets` метод. `AddSnippets` Метод вызывается из средства синтаксического анализа в ответ на какой-либо причине синтаксического анализа, который используется для заполнения списка фрагментов кода. Это должно выполняться после завершения полной обработки в первый раз.  
+1.  The following code shows how to use the snippet information returned by the `GetSnippets` method. The `AddSnippets` method is called from the parser in response to any parse reason that is used to populate a list of code snippets. This should take place after the full parse has been done for the first time.  
   
-     `AddDeclaration` Метод формирует список объявлений, отображается в списке завершения позже.  
+     The `AddDeclaration` method builds a list of declarations that is later displayed in a completion list.  
   
-     `TestDeclaration` Класс содержит все сведения, которые могут отображаться в список завершения, а также тип объявления.  
+     The `TestDeclaration` class contains all the information that can be displayed in a completion list as well as the type of declaration.  
   
-    ```c#  
+    ```csharp  
     class TestAuthoringScope : AuthoringScope  
     {  
         public void AddDeclarations(TestDeclaration declaration)  
@@ -193,5 +194,5 @@ class TestLanguageService : LanguageService
   
     ```  
   
-## <a name="see-also"></a>См. также  
- [Поддержка фрагментов кода в языковую службу для прежних версий](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)
+## <a name="see-also"></a>See Also  
+ [Support for Code Snippets in a Legacy Language Service](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)

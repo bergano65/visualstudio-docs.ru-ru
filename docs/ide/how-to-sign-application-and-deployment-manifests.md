@@ -36,10 +36,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: b59b417eb16674ff8c6c5223d790ae174ba20e09
-ms.lasthandoff: 02/22/2017
+ms.translationtype: HT
+ms.sourcegitcommit: a3c0f4d3bde8bb03d3766383eba01665e58458be
+ms.openlocfilehash: 18f1ea2f5ee76f4f8457b7254ff3dd3b7b3e4901
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Практическое руководство. Подписание манифестов приложения и развертывания
@@ -49,7 +50,7 @@ ms.lasthandoff: 02/22/2017
   
  Подписывание манифестов ClickOnce для приложений на базе EXE является необязательным. Дополнительные сведения см. в разделе "Создание неподписанных манифестов" этого документа.  
   
- Дополнительные сведения о создании файлов ключей см. в разделе [Практическое руководство. Создание пары открытого и закрытого ключей](http://msdn.microsoft.com/Library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
+ Дополнительные сведения о создании файлов ключей см. в разделе [Практическое руководство. Создание пары открытого и закрытого ключей](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).  
   
 > [!NOTE]
 >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] поддерживает только файлы ключей для обмена личной информацией (PFX). Тем не менее, можно выбрать другие типы сертификатов из хранилища сертификатов текущего пользователя Windows, щелкнув **Выбрать из хранилища** на странице **Подписывание** свойств проекта.  
@@ -124,7 +125,7 @@ ms.lasthandoff: 02/22/2017
 3.  Опубликуйте приложение.  
   
 ## <a name="see-also"></a>См. также  
- [Сборки со строгими именами](http://msdn.microsoft.com/Library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [Практическое руководство. Создание пары открытого и закрытого ключей](http://msdn.microsoft.com/Library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
+ [Сборки со строгими именами](/dotnet/framework/app-domains/strong-named-assemblies)   
+ [Практическое руководство. Создание пары открытого и закрытого ключей](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)   
  [Страница "Подписывание" в конструкторе проектов](../ide/reference/signing-page-project-designer.md)   
  [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)

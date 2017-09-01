@@ -1,56 +1,130 @@
 ---
-title: "Пример реализации вычисление выражений | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "вычислители выражений"
-  - "отладка [отладка SDK] вычислители выражений"
-  - "вычисление выражений, примеры"
+title: Sample Implementation of Expression Evaluation | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- expression evaluators
+- debugging [Debugging SDK], expression evaluators
+- expression evaluation, examples
 ms.assetid: 2a5f04b8-6c65-4232-bddd-9093653a22c4
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# Пример реализации вычисление выражений
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: ca872421d20d1d1a85cb2c5db621de28adee356d
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
+---
+# <a name="sample-implementation-of-expression-evaluation"></a>Sample Implementation of Expression Evaluation
 > [!IMPORTANT]
->  В Visual Studio 2015 этот способ реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  In Visual Studio 2015, this way of implementing expression evaluators is deprecated. For information about implementing CLR expression evaluators, please see [CLR Expression Evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) and [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Для **Контрольные значения** окно выражение, Visual Studio вызывает [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) для создания [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) объекта.`IDebugExpressionContext2::ParseText` Создает средство оценки выражений \(EE\) и вызывает метод [Анализ](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) для получения [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) объекта.  
+ For a **Watch** window expression, Visual Studio calls [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) to produce an [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) object. `IDebugExpressionContext2::ParseText` instantiates an expression evaluator (EE) and calls [Parse](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) to obtain an [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) object.  
   
- Эта реализация `IDebugExpressionEvaluator::Parse` выполняет следующие задачи:  
+ This implementation of `IDebugExpressionEvaluator::Parse` performs the following tasks:  
   
-1.  \[C\+\+\] Выполняет синтаксический анализ выражения для поиска ошибок.  
+1.  [C++ only] Parses the expression to look for errors.  
   
-2.  Создает экземпляр класса \(называется `CParsedExpression` в этом примере\), реализующий `IDebugParsedExpression` интерфейса и сохраняет в классе выражение для синтаксического анализа.  
+2.  Instantiates a class (called `CParsedExpression` in this example) that implements the `IDebugParsedExpression` interface and stores in the class the expression to be parsed.  
   
-3.  Возвращает `IDebugParsedExpression` интерфейс из `CParsedExpression` объекта.  
+3.  Returns the `IDebugParsedExpression` interface from the `CParsedExpression` object.  
   
 > [!NOTE]
->  В приведенных ниже примерах в образце MyCEE, средство оценки выражений не разделения синтаксический анализ на основе оценки.  
+>  In the examples that follow and in the MyCEE sample, the expression evaluator does not separate the parsing from the evaluation.  
   
-## Управляемый код  
- Это реализация `IDebugExpressionEvaluator::Parse` в управляемом коде. Обратите внимание, что эта версия метода откладывает для синтаксического анализа [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) код для синтаксического анализа, оценке и в то же время \(см. [Вычисление выражения Контрольное значение](../../extensibility/debugger/evaluating-a-watch-expression.md)\).  
+## <a name="managed-code"></a>Managed Code  
+ This is an implementation of `IDebugExpressionEvaluator::Parse` in managed code. Note that this version of the method defers the parsing to [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) as the code for parsing also evaluates at the same time (see [Evaluating a Watch Expression](../../extensibility/debugger/evaluating-a-watch-expression.md)).  
   
-```c#  
-namespace EEMC { public class CParsedExpression : IDebugParsedExpression { public HRESULT Parse( string                 expression, uint                   parseFlags, uint                   radix, out string                 errorMessage, out uint                   errorPosition, out IDebugParsedExpression parsedExpression) { errorMessage = ""; errorPosition = 0; parsedExpression = new CParsedExpression(parseFlags, radix, expression); return COM.S_OK; } } }  
+```csharp  
+namespace EEMC  
+{  
+    public class CParsedExpression : IDebugParsedExpression  
+    {  
+        public HRESULT Parse(  
+                string                 expression,   
+                uint                   parseFlags,  
+                uint                   radix,  
+            out string                 errorMessage,   
+            out uint                   errorPosition,   
+            out IDebugParsedExpression parsedExpression)  
+        {   
+            errorMessage = "";  
+            errorPosition = 0;  
+  
+            parsedExpression =  
+                new CParsedExpression(parseFlags, radix, expression);  
+            return COM.S_OK;  
+        }  
+    }  
+}  
 ```  
   
-## Неуправляемый код  
- Это реализация `IDebugExpressionEvaluator::Parse` в неуправляемом коде. Этот метод вызывает вспомогательную функцию `Parse`, выполнить синтаксический анализ выражения и проверка на наличие ошибок, но этот метод не учитывает результирующее значение. Формальные оценки будет отложен до [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) где синтаксический анализ выражения во время его оценки \(см. [Вычисление выражения Контрольное значение](../../extensibility/debugger/evaluating-a-watch-expression.md)\).  
+## <a name="unmanaged-code"></a>Unmanaged Code  
+ This is an implementation of `IDebugExpressionEvaluator::Parse` in unmanaged code. This method calls a helper function, `Parse`, to parse the expression and check for errors but this method ignores the resulting value. The formal evaluation is deferred to [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) where the expression is parsed while it is evaluated (see [Evaluating a Watch Expression](../../extensibility/debugger/evaluating-a-watch-expression.md)).  
   
-```cpp#  
-STDMETHODIMP CExpressionEvaluator::Parse( in    LPCOLESTR                 pszExpression, in    PARSEFLAGS                flags, in    UINT                      radix, out   BSTR                     *pbstrErrorMessages, inout UINT                     *perrorCount, out   IDebugParsedExpression  **ppparsedExpression ) { if (pbstrErrorMessages == NULL) return E_INVALIDARG; else *pbstrErrormessages = 0; if (pparsedExpression == NULL) return E_INVALIDARG; else *pparsedExpression = 0; if (perrorCount == NULL) return E_INVALIDARG; HRESULT hr; // Look for errors in the expression but ignore results hr = ::Parse( pszExpression, pbstrErrorMessages ); if (hr != S_OK) return hr; CParsedExpression* pparsedExpr = new CParsedExpression( radix, flags, pszExpression ); if (!pparsedExpr) return E_OUTOFMEMORY; hr = pparsedExpr->QueryInterface( IID_IDebugParsedExpression, reinterpret_cast<void**>(ppparsedExpression) ); pparsedExpr->Release(); return hr; }  
+```cpp  
+STDMETHODIMP CExpressionEvaluator::Parse(  
+        in    LPCOLESTR                 pszExpression,  
+        in    PARSEFLAGS                flags,  
+        in    UINT                      radix,  
+        out   BSTR                     *pbstrErrorMessages,  
+        inout UINT                     *perrorCount,  
+        out   IDebugParsedExpression  **ppparsedExpression  
+    )  
+{  
+    if (pbstrErrorMessages == NULL)  
+        return E_INVALIDARG;  
+    else  
+        *pbstrErrormessages = 0;  
+  
+    if (pparsedExpression == NULL)  
+        return E_INVALIDARG;  
+    else  
+        *pparsedExpression = 0;  
+  
+    if (perrorCount == NULL)  
+        return E_INVALIDARG;  
+  
+    HRESULT hr;  
+    // Look for errors in the expression but ignore results  
+    hr = ::Parse( pszExpression, pbstrErrorMessages );  
+    if (hr != S_OK)  
+        return hr;  
+  
+    CParsedExpression* pparsedExpr = new CParsedExpression( radix, flags, pszExpression );  
+    if (!pparsedExpr)  
+        return E_OUTOFMEMORY;  
+  
+    hr = pparsedExpr->QueryInterface( IID_IDebugParsedExpression,  
+                                      reinterpret_cast<void**>(ppparsedExpression) );  
+    pparsedExpr->Release();  
+  
+    return hr;  
+}  
 ```  
   
-## См. также  
- [Оценки выражения окна контрольных значений](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
- [Вычисление выражения Контрольное значение](../../extensibility/debugger/evaluating-a-watch-expression.md)
+## <a name="see-also"></a>See Also  
+ [Evaluating a Watch Window Expression](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
+ [Evaluating a Watch Expression](../../extensibility/debugger/evaluating-a-watch-expression.md)

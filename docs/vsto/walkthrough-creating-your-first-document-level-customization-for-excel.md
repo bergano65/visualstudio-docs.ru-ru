@@ -1,182 +1,186 @@
 ---
-title: "Пошаговое руководство. Создание первой настройки уровня документа для Excel"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "настройки уровня документа [разработка решений Office в Visual Studio], создание первого проекта"
-  - "Excel [разработка решений Office в Visual Studio], создание первого проекта"
-  - "Office - разработка решений в Visual Studio, создание первого проекта"
+title: 'Walkthrough: Creating Your First Document-Level Customization for Excel | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office development in Visual Studio, creating your first project
+- Excel [Office development in Visual Studio], creating your first project
+- document-level customizations [Office development in Visual Studio], creating your first project
 ms.assetid: 785d3b86-5ed5-4e0d-b5ee-896b6b1330ac
 caps.latest.revision: 28
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 27
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 65318510dd4aa9fdfb78fcb21b74c72b2ddacf18
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Создание первой настройки уровня документа для Excel
-  В этом вводном пошаговом руководстве показано, как создавать настройку на уровне документа для Microsoft Office Excel.  Функциональные возможности, создаваемые в таком решения, доступны только в том случае, когда открыта конкретная книга.  Для внесения изменений в приложение настройки на уровне документа использовать нельзя \(например, для отображения новой вкладки ленты, когда открыта любая книга\).  
+# <a name="walkthrough-creating-your-first-document-level-customization-for-excel"></a>Walkthrough: Creating Your First Document-Level Customization for Excel
+  This introductory walkthrough shows you how to create a document-level customization for Microsoft Office Excel. The features that you create in this kind of solution are available only when a specific workbook is open. You cannot use a document-level customization to make application-wide changes, for example, displaying a new Ribbon tab when any workbook is open.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- В данном пошаговом руководстве рассмотрены следующие задачи:  
+ This walkthrough illustrates the following tasks:  
   
--   создание проекта книги Excel;  
+-   Creating an Excel workbook project.  
   
--   добавление текста в книгу, которая размещена в конструкторе Visual Studio;  
+-   Adding text to a worksheet that is hosted in the Visual Studio designer.  
   
--   написание кода, использующего объектную модель Excel для добавления текста в настраиваемую книгу при ее открытии;  
+-   Writing code that uses the object model of Excel to add text to the customized worksheet when it is opened.  
   
--   построение и запуск проекта для тестирования;  
+-   Building and running the project to test it.  
   
--   очистка готового проекта для удаления ненужных файлов построения и параметров безопасности на компьютере разработчика.  
+-   Cleaning up the completed project to remove unnecessary build files and security settings from your development computer.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] или [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] or [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
-## Создание проекта  
+## <a name="creating-the-project"></a>Creating the Project  
   
-#### Создание проекта книги Excel в Visual Studio  
+#### <a name="to-create-a-new-excel-workbook-project-in-visual-studio"></a>To create a new Excel workbook project in Visual Studio  
   
-1.  Запустите [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  В меню **Файл** выберите пункт **Создать**, а затем команду **Проект**.  
+2.  On the **File** menu, point to **New**, and then click **Project**.  
   
-3.  В области шаблонов разверните узел **Visual C\#** или **Visual Basic**, а затем узел **Office\/SharePoint**.  
+3.  In the templates pane, expand **Visual C#** or **Visual Basic**, and then expand **Office/SharePoint**.  
   
-4.  В развернутом узле **Office\/SharePoint** выберите узел **Надстройки Office**.  
+4.  Under the expanded **Office/SharePoint** node, select the **Office Add-ins** node.  
   
-5.  В списке шаблонов проектов выберите шаблон проекта надстройки VSTO для Excel.  
+5.  In the list of project templates, choose an Excel VSTO Add-in project.  
   
-6.  В поле **Имя** введите **FirstWorkbookCustomization**.  
+6.  In the **Name** box, type **FirstWorkbookCustomization**.  
   
-7.  Нажмите кнопку **ОК**.  
+7.  Click **OK**.  
   
-     Откроется **Мастер проектов набора средств Visual Studio для Office**.  
+     The **Visual Studio Tools for Office Project Wizard** opens.  
   
-8.  Выберите **Создание нового документа** и нажмите кнопку **ОК**.  
+8.  Select **Create a new document**, and click **OK**.  
   
-    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] создает проект **FirstWorkbookCustomization** и добавляет в него следующие файлы.  
+    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] creates the **FirstWorkbookCustomization** project, and adds the following files to the project.  
   
-    -   Файл *FirstWorkbookCustomization*.xlsx представляет книгу Excel в проекте.  Содержит все листы и диаграммы.  
+    -   *FirstWorkbookCustomization*.xlsx - Represents the Excel workbook in the project. Contains all the worksheets and charts.  
   
-    -   Sheet1 \(VB\-файл для Visual Basic или CS\-файл для Visual C\#\) — лист, предоставляющий рабочую область конструирования и код для первого листа в книге.  Дополнительные сведения см. в разделе [Ведущие элементы листа](../vsto/worksheet-host-item.md).  
+    -   Sheet1 (.vb file for Visual Basic or .cs file for Visual C#) - A worksheet that provides the design surface and the code for the first worksheet in the workbook. For more information, see [Worksheet Host Item](../vsto/worksheet-host-item.md).  
   
-    -   Sheet2 \(VB\-файл для Visual Basic или CS\-файл для Visual C\#\) — лист, предоставляющий рабочую область конструирования и код для второго листа в книге.  
+    -   Sheet2 (.vb file for Visual Basic or .cs file for Visual C#) - A worksheet that provides the design surface and the code for the second worksheet in the workbook.  
   
-    -   Sheet3 \(VB\-файл для Visual Basic или CS\-файл для Visual C\#\) — лист, предоставляющий рабочую область конструирования и код для третьего листа в книге.  
+    -   Sheet3 (.vb file for Visual Basic or .cs file for Visual C#) - A worksheet that provides the design surface and the code for the third worksheet in the workbook.  
   
-    -   ThisWorkbook \(VB\-файл для Visual Basic или CS\-файл для Visual C\#\) — содержит рабочую область конструирования и код для настройки на уровне книги.  Дополнительные сведения см. в разделе [Ведущий элемент книги](../vsto/workbook-host-item.md).  
+    -   ThisWorkbook (.vb file for Visual Basic or .cs file for Visual C#) - Contains the design surface and the code for workbook-level customizations. For more information, see [Workbook Host Item](../vsto/workbook-host-item.md).  
   
-     Файл кода Sheet1 автоматически открывается в конструкторе.  
+     The Sheet1 code file is opened automatically in the designer.  
   
-## Закрытие и повторное открытие листов в конструкторе  
- Если вы случайно или преднамеренно закрыли книгу или лист в конструкторе во время разработки проекта, их можно снова открыть.  
+## <a name="closing-and-reopening-worksheets-in-the-designer"></a>Closing and Reopening Worksheets in the Designer  
+ If you deliberately or accidentally close a workbook or a worksheet in the designer while you are developing your project, you can reopen it.  
   
-#### Закрытие и повторное открытие листа в конструкторе  
+#### <a name="to-close-and-reopen-a-worksheet-in-the-designer"></a>To close and reopen a worksheet in the designer  
   
-1.  Чтобы закрыть книгу, нажмите кнопку **Закрыть** \(X\) в окне конструктора.  
+1.  Close the workbook by clicking the **Close** button (X) for the designer window.  
   
-2.  В **обозревателе решений** щелкните правой кнопкой мыши файл кода **Sheet1** и щелкните **Конструктор представлений**.  
+2.  In **Solution Explorer**, right-click the **Sheet1** code file, and click **View Designer**.  
   
-     \-или\-  
+     \- or -  
   
-     В **обозревателе решений** дважды щелкните файл кода **Sheet1**.  
+     In **Solution Explorer**, double-click the **Sheet1** code file.  
   
-## Добавление текста на лист в конструкторе  
- Для разработки пользовательского интерфейса \(UI\) настройки можно изменить лист, который открыт в конструкторе.  Например, можно добавить текст в ячейки, применить формулы или добавить элементы управления Excel.  Дополнительные сведения об использовании конструктора см. в разделе [Проекты Office в среде Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).  
+## <a name="adding-text-to-a-worksheet-in-the-designer"></a>Adding Text to a Worksheet in the Designer  
+ You can design the user interface (UI) of your customization by modifying the worksheet that is open in the designer. For example, you can add text to cells, apply formulas, or add Excel controls. For more information about how to use the designer, see [Office Projects in the Visual Studio Environment](../vsto/office-projects-in-the-visual-studio-environment.md).  
   
-#### Добавление текста на лист с помощью конструктора  
+#### <a name="to-add-text-to-a-worksheet-by-using-the-designer"></a>To add text to a worksheet by using the designer  
   
-1.  На листе, открытом в конструкторе, выделите ячейку **A1**, а затем введите следующий текст.  
+1.  In the worksheet that is open in the designer, select cell **A1**, and then type the following text.  
   
-     **Этот текст был добавлен с помощью конструктора.**  
+     **This text was added by using the designer.**  
   
 > [!WARNING]  
->  Если добавить эту строку текста в ячейку **A2**, она будет перезаписана другим кодом в этом примере.  
+>  If you add this line of text to cell **A2**, it will be overwritten by other code in this example.  
   
-## Добавление текста на лист программными средствами  
- Затем добавьте код в файл кода Sheet1.  Новый код использует объектную модель Excel для добавления второй строки текста в книгу.  По умолчанию файл кода Sheet1 содержит следующий созданный код:  
+## <a name="adding-text-to-a-worksheet-programmatically"></a>Adding Text to a Worksheet Programmatically  
+ Next, add code to the Sheet1 code file. The new code uses the object model of Excel to add a second line of text to the workbook. By default, the Sheet1 code file contains the following generated code:  
   
--   Частичное определение класса `Sheet1`, который представляет модель программирования листа и предоставляет доступ к объектной модели Excel.  Дополнительные сведения см. в разделах [Ведущие элементы листа](../vsto/worksheet-host-item.md) и [Общие сведения об объектной модели Word](../vsto/word-object-model-overview.md).  Остальная часть класса `Sheet1` определяется в скрытом файле кода, изменять который не следует.  
+-   A partial definition of the `Sheet1` class, which represents the programming model of the worksheet and provides access to the object model of Excel. For more information, [Worksheet Host Item](../vsto/worksheet-host-item.md) and [Word Object Model Overview](../vsto/word-object-model-overview.md). The remainder of the `Sheet1` class is defined in a hidden code file that you should not modify.  
   
--   Обработчики событий `Sheet1_Startup` и `Sheet1_Shutdown`.  Эти обработчики событий вызываются, когда Excel загружает и выгружает настройку.  Их можно использовать для инициализации настройки в процессе ее загрузки, а также для освобождения используемых настройкой ресурсов при ее выгрузке.  Дополнительные сведения см. в разделе [События в проектах Office](../vsto/events-in-office-projects.md).  
+-   The `Sheet1_Startup` and `Sheet1_Shutdown` event handlers. These event handlers are called when Excel loads and unloads your customization. Use these event handlers to initialize your customization when it is loaded, and to clean up resources used by your customization when it is unloaded. For more information, see [Events in Office Projects](../vsto/events-in-office-projects.md).  
   
-#### Добавление второй строки текста на лист с помощью кода  
+#### <a name="to-add-a-second-line-of-text-to-the-worksheet-by-using-code"></a>To add a second line of text to the worksheet by using code  
   
-1.  В **обозревателе решений** щелкните правой кнопкой мыши файл **Sheet1** и нажмите **Просмотр кода**.  
+1.  In **Solution Explorer**, right-click **Sheet1**, and then click **View Code**.  
   
-     Файл кода открывается в Visual Studio.  
+     The code file opens in Visual Studio.  
   
-2.  Замените обработчик событий `Sheet1_Startup` следующим кодом.  Когда Sheet1 открывается, этот код добавляет вторую строку текста на лист.  
+2.  Replace the `Sheet1_Startup` event handler with the following code. When Sheet1 is opened, this code adds a second line of text to the worksheet.  
   
-     [!code-csharp[Trin_ExcelWorkbookTutorial#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_ExcelWorkbookTutorial/CS/Sheet1.cs#1)]
-     [!code-vb[Trin_ExcelWorkbookTutorial#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_ExcelWorkbookTutorial/VB/Sheet1.vb#1)]  
+     [!code-csharp[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelWorkbookTutorial/Sheet1.cs#1)]  [!code-vb[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelWorkbookTutorial/Sheet1.vb#1)]  
   
-## Тестирование проекта  
+## <a name="testing-the-project"></a>Testing the Project  
   
-#### Проверка книги  
+#### <a name="to-test-your-workbook"></a>To test your workbook  
   
-1.  Нажмите клавишу **F5** для построения и запуска проекта.  
+1.  Press **F5** to build and run your project.  
   
-     При построении проекта код компилируется в сборку, которая связана с книгой.  Visual Studio помещает копию книги и сборку в выходную папку построения для проекта и настраивает параметры безопасности на компьютере разработчика, чтобы разрешить выполнение настройки.  Дополнительные сведения см. в разделе [Построение решений Office](../vsto/building-office-solutions.md).  
+     When you build the project, the code is compiled into an assembly that is associated with the workbook. Visual Studio puts a copy of the workbook and the assembly in the build output folder for the project, and it configures the security settings on the development computer to enable the customization to run. For more information, see [Building Office Solutions](../vsto/building-office-solutions.md).  
   
-2.  Убедитесь, что в книге отображается следующий текст.  
+2.  In the workbook, verify that you see the following text.  
   
-     **Этот текст был добавлен с помощью конструктора.**  
+     **This text was added by using the designer.**  
   
-     **Этот текст добавляется с помощью кода.**  
+     **This text was added by using code.**  
   
-3.  Закройте книгу.  
+3.  Close the workbook.  
   
-## Очистка проекта  
- После завершения разработки проекта следует удалить файлы в выходной папке сборки и параметры безопасности, созданные в процессе построения.  
+## <a name="cleaning-up-the-project"></a>Cleaning up the Project  
+ When you finish developing a project, you should remove the files in the build output folder and the security settings created by the build process.  
   
-#### Очистка завершенного проекта на компьютере разработчика  
+#### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>To clean up the completed project on your development computer  
   
-1.  В Visual Studio в меню **Построение** выберите пункт **Очистить решение**.  
+1.  In Visual Studio, on the **Build** menu, click **Clean Solution**.  
   
-## Следующие действия  
- Теперь после создания базовой настройки на уровне документа для Excel в следующих разделах можно ознакомиться с процессом разработки настроек:  
+## <a name="next-steps"></a>Next Steps  
+ Now that you have created a basic document-level customization for Excel, you can learn more about how to develop customizations from these topics:  
   
--   Общие задачи программирования, которые можно выполнять в настройках на уровне документа: [Настройки программирования уровня документа](../vsto/programming-document-level-customizations.md).  
+-   General programming tasks that you can perform in document-level customizations: [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md).  
   
--   Задачи программирования, характерные для настроек на уровне документа для Excel: [Решения Excel](../vsto/excel-solutions.md).  
+-   Programming tasks that are specific to document-level customizations for Excel: [Excel Solutions](../vsto/excel-solutions.md).  
   
--   Использование объектной модели Excel: [Общие сведения об объектной модели Excel](../vsto/excel-object-model-overview.md).  
+-   Using the object model of Excel: [Excel Object Model Overview](../vsto/excel-object-model-overview.md).  
   
--   Настройка пользовательского интерфейса Excel, например, путем добавления настраиваемой вкладки на ленту или создания собственной панели действий: [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md).  
+-   Customizing the UI of Excel, for example, by adding a custom tab to the Ribbon or creating your own actions pane: [Office UI Customization](../vsto/office-ui-customization.md).  
   
--   Использование расширенных объектов Excel, предоставляемых решениями Office в Visual Studio для выполнения задач, которые невозможно выполнить с помощью объектной модели Excel \(например, размещение управляемых элементов управления в документах и привязка элементов управления Excel к данным с помощью модели привязки данных Windows Forms\): [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md).  
+-   Using extended Excel objects provided by Office development tools in Visual Studio to perform tasks that are not possible by using the Excel object model (for example, hosting managed controls on documents and binding Excel controls to data by using the Windows Forms data binding model): [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md).  
   
--   Построение и отладка настроек на уровне документа для Excel: [Построение решений Office](../vsto/building-office-solutions.md).  
+-   Building and debugging document-level customizations for Excel: [Building Office Solutions](../vsto/building-office-solutions.md).  
   
--   Развертывание настроек на уровне документа для Excel: [Развертывание решения Office](../vsto/deploying-an-office-solution.md).  
+-   Deploying document-level customizations for Excel: [Deploying an Office Solution](../vsto/deploying-an-office-solution.md).  
   
-## См. также  
- [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
- [Решения Excel](../vsto/excel-solutions.md)   
- [Настройки программирования уровня документа](../vsto/programming-document-level-customizations.md)   
- [Общие сведения об объектной модели Excel](../vsto/excel-object-model-overview.md)   
- [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)   
- [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)   
- [Построение решений Office](../vsto/building-office-solutions.md)   
- [Развертывание решения Office](../vsto/deploying-an-office-solution.md)   
- [Общие сведения о шаблонах проектов Office](../vsto/office-project-templates-overview.md)  
+## <a name="see-also"></a>See Also  
+ [Office Solutions Development Overview &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Excel Solutions](../vsto/excel-solutions.md)   
+ [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)   
+ [Excel Object Model Overview](../vsto/excel-object-model-overview.md)   
+ [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md)   
+ [Office UI Customization](../vsto/office-ui-customization.md)   
+ [Building Office Solutions](../vsto/building-office-solutions.md)   
+ [Deploying an Office Solution](../vsto/deploying-an-office-solution.md)   
+ [Office Project Templates Overview](../vsto/office-project-templates-overview.md)  
   
   

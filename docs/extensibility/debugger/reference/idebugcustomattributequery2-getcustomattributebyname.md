@@ -1,5 +1,5 @@
 ---
-title: "IDebugCustomAttributeQuery2::GetCustomAttributeByName | Документы Microsoft"
+title: IDebugCustomAttributeQuery2::GetCustomAttributeByName | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,18 +30,19 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: bc1b59d4f13029a765f11dfd4fe3dbe12778d00c
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4d3b06a21b70934863403289fc549815ed515883
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
-Получает настраиваемые атрибуты байт, назначается имя настраиваемого атрибута.  
+Obtains the custom attributes bytes given the name of the custom attribute.  
   
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetCustomAttributeByName(   
    LPCOLESTR pszCustomAttributeName,  
    BYTE*     ppBlob,  
@@ -49,7 +50,7 @@ HRESULT GetCustomAttributeByName(
 );  
 ```  
   
-```c#  
+```csharp  
 int GetCustomAttributeByName(  
    [In] string        pszCustomAttributeName,   
    [In, Out] byte[]   ppBlob,   
@@ -57,26 +58,26 @@ int GetCustomAttributeByName(
 );  
 ```  
   
-#### <a name="parameters"></a>Параметры  
+#### <a name="parameters"></a>Parameters  
  `pszCustomAttributeName`  
- [in] Строка, содержащая имя настраиваемого атрибута для поиска.  
+ [in] A string containing the name of the custom attribute to look for.  
   
  `ppBlob`  
- [in, out] Массив, который заполняется байт настраиваемого атрибута.  
+ [in, out] An array that is filled in with the custom attribute bytes.  
   
  `pdwLen`  
- [in, out] Указывает максимальное число байтов для возврата в `ppBlob` массива и возвращает число байтов, записанных в массив.  
+ [in, out] Specifies the maximum number of bytes to return in the `ppBlob` array and returns the number of bytes actually written to the array.  
   
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает значение S_OK, или возвращает значение S_FALSE, если пользовательский атрибут не существует. В противном случае возвращается код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK or returns S_FALSE if the custom attribute does not exist. Otherwise, returns an error code.  
   
-## <a name="remarks"></a>Примечания  
- Задайте `ppBlob` атрибуты параметра значение null для возврата числа доступных байтов. Затем выделите массив и передайте массив в для `ppBlob` параметр.  
+## <a name="remarks"></a>Remarks  
+ Set the `ppBlob` parameter to a null value to return the number of attributes bytes available. Then allocate an array and pass that array in for the `ppBlob` parameter.  
   
- Атрибут байты представляют необработанные данные настраиваемого атрибута.  
+ The attribute bytes represent the raw data of the custom attribute.  
   
- Если `ppBlob` и `pdwLen` параметры устанавливаются в значение null, этот метод можно использовать для определения, существует ли просто пользовательский атрибут. Альтернативы проще, тем не менее, заключается в вызове [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md) метод.  
+ If the `ppBlob` and `pdwLen` parameters are set to a null value, this method can be used to determine if the custom attribute merely exists. An easier alternative, however, is to call the [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md) method.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>See Also  
  [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)   
  [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)

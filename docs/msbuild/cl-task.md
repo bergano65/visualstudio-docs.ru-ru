@@ -40,10 +40,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: bde2b08fb3cc1b183d224ab3282e44f21a094403
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 0e6777ed52cb1695c90ae42d7795de57f9c62169
+ms.contentlocale: ru-ru
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="cl-task"></a>Задача CL
@@ -366,7 +367,7 @@ ms.lasthandoff: 04/05/2017
   
      Если он имеет значение `true`, то реализуется стандартное поведение C++ в для циклов [for](/cpp/cpp/for-statement-cpp), использующих расширения Майкрософт ([/Ze](/cpp/build/reference/za-ze-disable-language-extensions)).  
   
-     Дополнительные сведения см. в разделе [/Zc:forScope (принудительное обеспечение соответствия в области видимости оператора for)](http://msdn.microsoft.com/Library/3031f02d-3b14-4ad0-869e-22b0110c3aed).  
+     Дополнительные сведения см. в разделе [/Zc:forScope (принудительное обеспечение соответствия в области видимости оператора for)](/cpp/build/reference/zc-forscope-force-conformance-in-for-loop-scope).  
   
 -   **ForcedIncludeFiles**  
   
@@ -714,7 +715,7 @@ ms.lasthandoff: 04/05/2017
   
      Если он имеет значение `true`, то тип `wchar_t` трактуется как собственный тип.  
   
-     Дополнительные сведения см. в разделе [/Zc:wchar_t (wchar_t — это собственный тип)](http://msdn.microsoft.com/Library/b0de5a84-da72-4e5a-9a4e-541099f939e0).  
+     Дополнительные сведения см. в разделе [/Zc:wchar_t (wchar_t — это собственный тип)](/cpp/build/reference/zc-wchar-t-wchar-t-is-native-type).  
   
 -   **UndefineAllPreprocessorDefinitions**  
   

@@ -1,28 +1,45 @@
 ---
-title: "Практическое руководство: определение символов в библиотеке | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Средство обозревателя, определение символов в библиотеке"
-  - "Средство обозревателя вызовов"
+title: 'How to: Identify Symbols in a Library | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Call Browser tool, identifying symbols in the library
+- Call Browser tool
 ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
 caps.latest.revision: 21
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 21
----
-# Практическое руководство: определение символов в библиотеке
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 099af7cc3e5f77041f95f72e7b42fd6bfb324fdc
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-Символ\-просмотреть иерархические представления отображения средств символов.  Символы, представляющие объекты пространства имен, классы, члены класса и другие элементы языка.  
+---
+# <a name="how-to-identify-symbols-in-a-library"></a>How to: Identify Symbols in a Library
+Symbol-browsing tools display hierarchical views of symbols. The symbols represent namespaces, objects, classes, class members, and other language elements.  
   
- Каждый символ в иерархии может определяться данными о навигации передаваемых символов с библиотекой [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчер объекта через следующие интерфейсы:  
+ Each symbol in the hierarchy can be identified by the navigation information passed by the symbol library to the [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] object manager through the following interfaces:  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo>  
   
@@ -30,11 +47,11 @@ caps.handback.revision: 21
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes>.  
   
- Положение символа в иерархии отличает символ.  Он позволяет символ\-просмотреть средства для перехода к определенному символу.  Уникальные полный путь к символу, указывающее местоположение.  Каждый элемент в пути узел.  Пути начинается с узлом верхнего уровня и заканчивается с определенным символом.  Например, если метод M1 член класса C1 и C1 в пространстве имен N1, то полный путь метода M1 N1.C1.M1.  Этот путь содержит 3 узла: N1, C1 и M1.  
+ The location of the symbol in the hierarchy distinguishes a symbol. It allows symbol-browsing tools to navigate to a specific symbol. The unique, fully qualified path to the symbol determines the location. Each element in the path is a node. The path starts with the top-level node and ends with the specific symbol. For example, if the M1 method is a member of the C1 class and C1 is in N1 namespace, the full path of the M1 method is N1.C1.M1. This path contains three nodes: N1, C1, and M1.  
   
- Сведения о навигации предоставляют [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчер объекта, который нужно найти, выбрав и сохранить выбрал символы в иерархии.  Она позволяет переходить от одного к другому. средства просмотра  При использовании **Обозреватель объектов** просмотр символов в выражении  [!INCLUDE[vcprvc](../../debugger/includes/vcprvc_md.md)] проект можно щелкнуть правой кнопкой мыши метод и начать  **Обозреватель вызовов** средство отображения диаграммы при вызове метода.  
+ The navigation information allows the [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] object manager to locate, select and keep selected the symbols in the hierarchy. It allows navigating from one browsing tool to another. While using **Object Browser** to browse symbols in a [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] project, you can right click a method and start the **Call Browser** tool to display the method in a call graph.  
   
- 2 Формы описывается расположение символа.  Каноническая форма основана на полный путь к символам.  Она представляет уникальную положение символа в иерархии.  Это независимый символ\-просмотря средства.  Получить сведения о канонической формы <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> вызовы диспетчера объектов  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] метод.  Форма представления описывает расположение символа в указанное средство символ\-просмотря.  Позиция символа относительно позиции других символов в hierarchicy.  Заданный символ может иметь несколько путей представления, но только одного канонического пути.  Например, если класс наследуется от класса C1 и C2 оба класса в пространстве имен N1, **Обозреватель объектов** отображает иерархическое дерево следующее:  
+ Two forms describe the symbol location. The canonical form is based on the fully qualified path of the symbol. It represents a unique position of the symbol in the hierarchy. It is independent of the symbol-browsing tool. To obtain the canonical form information, the [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] object manager calls <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> method. The presentation form describes the location of the symbol within a specific symbol-browsing tool. The position of the symbol is relative to the position of other symbols in the hierarchicy. A given symbol may have several presentation paths, but only one canonical path. For example, if C1 class is inherited from C2 class and both classes are in N1 namespace, the **Object Browser** displays the following hierarchical tree:  
   
 ```  
 N1  
@@ -47,19 +64,19 @@ N1
   
 ```  
   
- Канонического пути класса C2 в этом примере N1 \+ C2.  Путь представления включает узлы C1 и C2 "базовых объектов и интерфейсов": N1 \+ C1 \+ "базовые классы и интерфейсы" \+ C2.  
+ The canonical path of C2 class, in this example, is N1 + C2. The presentation path of C2 includes C1 and "Bases and Interfaces" nodes: N1 + C1 + "Bases and Interfaces" + C2.  
   
- Получить сведения о формы представления, вызовы диспетчера объектов <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> метод.  
+ To obtain the presentation form information, the object manager calls <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> method.  
   
-## Указание символ в иерархии  
+## <a name="identifying-a-symbol-in-the-hierarchy"></a>Identifying a Symbol in the Hierarchy  
   
-#### Получить сведения о канонических и представления с помощью форм  
+#### <a name="to-obtain-canonical-and-presentation-forms-information"></a>To obtain canonical and presentation forms information  
   
-1.  Реализуйте метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A>.  
+1.  Implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> method.  
   
-     Диспетчер объекта вызывает этот метод для получения списка узлов, содержащихся в каноническом путь к символам.  
+     The object manager calls this method to obtain the list of nodes contained in the canonical path of the symbol.  
   
-    ```vb#  
+    ```vb  
     Public Function EnumCanonicalNodes(ByRef ppEnum As Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes) As Integer  
         Dim EnumNavInfoNodes As CallBrowserEnumNavInfoNodes = _New CallBrowserEnumNavInfoNodes(m_strMethod)  
         ppEnum = CType(EnumNavInfoNodes, IVsEnumNavInfoNodes)  
@@ -67,7 +84,7 @@ N1
     End Function  
     ```  
   
-    ```c#  
+    ```csharp  
     public int EnumCanonicalNodes(out Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes ppEnum)  
     {  
         CallBrowserEnumNavInfoNodes EnumNavInfoNodes =  
@@ -78,11 +95,11 @@ N1
   
     ```  
   
-2.  Реализуйте метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A>.  
+2.  Implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> method.  
   
-     Диспетчер объекта вызывает этот метод для получения списка узлов, содержащихся в пути представления символа.  
+     The object manager calls this method to obtain the list of nodes contained in the presentation path of the symbol.  
   
-## См. также  
- [Вспомогательные средства просмотра символов](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Практическое руководство: зарегистрировать библиотеку с помощью диспетчера объектов](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [Практическое руководство: предоставлять список символов, предоставленный библиотекой диспетчера объектов](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+## <a name="see-also"></a>See Also  
+ [Supporting Symbol-Browsing Tools](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
+ [How to: Register a Library with the Object Manager](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [How to: Expose Lists of Symbols Provided by the Library to the Object Manager](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

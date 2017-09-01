@@ -1,257 +1,269 @@
 ---
-title: "Использование точек останова | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/08/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "hero-article"
-f1_keywords: 
-  - "vs.debug.breakpointswin"
-  - "vs.debug.disassembly.insert"
-  - "vs.debug.sourcewin.edit"
-  - "vs.debug.file"
-  - "vs.debug.breakpt.new"
-  - "vs.debug.whenbreakpointishit"
-  - "vs.debug.breakpt.choose"
-  - "vs.debug.breakpt.location.address"
-  - "vs.debug.breakpt.constraints"
-  - "vs.debug.breakpoints.delete"
-  - "vs.debug.breakpt.location.data"
-  - "vc.breakpoints"
-  - "vs.debug.breakpt.condition"
-  - "vs.debug.breakpt.location.function"
-  - "vs.debug.breakpoints"
-  - "vs.debug.menu.insert"
-  - "vs.debug.filenames"
-  - "vs.debug.breakpt.action"
-  - "vs.debug.sourcewin.insert"
-  - "vs.debug.address"
-  - "vs.debug.data"
-  - "vs.debug.func"
-  - "vs.debug.breakpt.location.file"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-helpviewer_keywords: 
-  - "точки останова, сведения о точках останова"
+title: Use Breakpoints in the Debugger in Visual Studio | Microsoft Docs
+ms.custom: H1Hack27Feb2017
+ms.date: 02/07/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.breakpointswin
+- vs.debug.disassembly.insert
+- vs.debug.sourcewin.edit
+- vs.debug.file
+- vs.debug.breakpt.new
+- vs.debug.whenbreakpointishit
+- vs.debug.breakpt.choose
+- vs.debug.breakpt.location.address
+- vs.debug.breakpt.constraints
+- vs.debug.breakpoints.delete
+- vs.debug.breakpt.location.data
+- vc.breakpoints
+- vs.debug.breakpt.condition
+- vs.debug.breakpt.location.function
+- vs.debug.breakpoints
+- vs.debug.menu.insert
+- vs.debug.filenames
+- vs.debug.breakpt.action
+- vs.debug.sourcewin.insert
+- vs.debug.address
+- vs.debug.data
+- vs.debug.func
+- vs.debug.breakpt.location.file
+helpviewer_keywords:
+- breakpoints, about breakpoints
 ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
 caps.latest.revision: 57
-caps.handback.revision: 56
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Использование точек останова
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
+ms.openlocfilehash: e88ab5f146507f4a3c1c28f2a3496fa5f01f6180
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/23/2017
 
-Если необходимо остановить выполнение отладчика, например, чтобы увидеть состояние переменных кода или просмотреть стек вызовов, можно установить точки останова. Точка останова — один из важнейших инструментов разработчика для выполнения отладки.  
+---
+# <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Use Breakpoints in the Visual Studio Debugger
+You can set breakpoints when you want to stop debugger execution, perhaps to see the state of code variables or to look at the call stack. They are one of the most important debugging techniques in a developer's toolbox.  
   
-##  <a name="BKMK_Overview"></a> Задание точки останова в функции в исходном коде  
- Можно установить точку останова функции в исходном коде, щелкнув в левом поле файла исходного кода или поместив курсор на строку кода и нажав клавишу F9. Точка останова отображается в виде красной точки в левом поле. Строка кода также окрашивается цветом:  
+##  <a name="BKMK_Overview"></a> Setting a line breakpoint in source code  
+ You set a line breakpoint in source code by clicking in the left margin of a source code file, or by putting your cursor on a line of code and pressing F9. The breakpoint appears as a red dot in the left margin, and the line of code is colored as well:  
   
- ![Задание точки останова](~/debugger/media/basicbreakpoint.png "BasicBreakpoint")  
+ ![Set a breakpoint](../debugger/media/basicbreakpoint.png "BasicBreakpoint")  
   
- При выполнении этого кода в отладчике выполнение останавливается при достижении точки останова перед выполнением кода в этой строке. Строка исходного кода имеет желтый цвет:  
+ When you run this code in the debugger, execution stops whenever the breakpoint is hit, before the code on that line is executed. The line of source code is colored yellow:  
   
- ![Выполнение точки останова остановлено](~/debugger/media/breakpointexecution.png "BreakpointExecution")  
+ ![Breakpoint execution stopped](../debugger/media/breakpointexecution.png "BreakpointExecution")  
   
- На этом этапе значение `testInt` равно 1.  
+ At this point the value of `testInt` is still 1.  
   
- Можно просмотреть текущее состояние приложения, включая значения переменных и стека вызова. Более подробную информацию о стеке вызовов см. в разделе [Практическое руководство. Использование окна стека вызова](../debugger/how-to-use-the-call-stack-window.md).  
+ You can look at the current state of the application, including variable values and the call stack. For more information about the call stack, see [How to: Use the Call Stack Window](../debugger/how-to-use-the-call-stack-window.md).  
   
- Можно установить точку останова в любой строке исполняемого кода. Например, в коде C\# выше можно установить точку останова для объявления переменной, цикла `for` или  всего кода внутри цикла `for`, но нельзя задать точку останова для объявления пространства имен или класса или сигнатуры метода.  
+ You can set a breakpoint on any line of executable code. For example, in the C# code above you can set a breakpoint on the variable declaration, the `for` loop, or any code inside the `for` loop, but you cannot set a breakpoint on the namespace or class declarations or the method signature.  
   
-##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Установка других видов точек останова  
- Также можно установить точки останова в стеке вызовов, в окне дизассемблирования и в машинном коде C\+\+ в условии данных или адресе памяти.  
+##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Setting Other Kinds of Breakpoints  
+ You can also set breakpoints in the call stack, in the Disassembly window, and, in native C++ code, at a data condition or a memory address.  
   
-## Задание точки останова в окне стека вызовов  
- Можно прервать выполнение на инструкции или строке, к которой возвращается вызывающая функция, установив соответствующую точку останова в окне **Стек вызовов**. Более подробную информацию о стеке вызовов см. в разделе [Практическое руководство. Использование окна стека вызова](../debugger/how-to-use-the-call-stack-window.md). Отладчик должен был остановить выполнение.  
+## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> Setting a Breakpoint in the Call Stack Window  
+ You can break execution at the instruction or line that a calling function returns to by setting a breakpoint in the **Call Stack** window. For more information about the call stack, see [How to: Use the Call Stack Window](../debugger/how-to-use-the-call-stack-window.md). The debugger must have stopped executing.  
   
-1.  Начните отладку приложения и ожидайте остановки выполнения, например в точке останова. Откройте окно **Стек вызовов** \(выберите **Отладка \> Окна \> Стек вызовов** или нажмите клавиши **CTRL\+ALT\+C**\).  
+1.  Start debugging the application, and wait execution is stopped (for example, at a breakpoint). Open the **Call Stack** window (**Debug > Windows > Call Stack**, or **CTRL + ALT + C**).  
   
-2.  Щелкните правой кнопкой мыши вызывающую функцию, затем выберите **Точка останова \/ Вставить точку останова**, или просто нажмите клавишу **F9**.  
+2.  Right-click the calling function and then select **Breakpoint > Insert Breakpoint**, or just use the shortcut key **F9**.  
   
-3.  В левом поле рядом с именем вызова функции появится символ точки останова.  
+3.  A breakpoint symbol appears in the left margin of the call stack, next to the function call name.  
   
- В окне **Точки останова** точка останова стека вызова будет представлена как адрес с областью памяти, который  соответствует следующей исполняемой инструкции в функции. Отладчик приостанавливает выполнение на этой инструкции.  
+ In the **Breakpoints** window, the call stack breakpoint appears as an address with a memory location that corresponds to the next executable instruction in the function. The debugger breaks execution at the instruction.  
   
- Визуальное отслеживание точек останова во время выполнения кода описано в разделе [Сопоставление методов в визуализации стека вызовов при отладке](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
+ To visually trace breakpoints during code execution, see [Map methods on the call stack while debugging](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
-## Задание точки останова в окне дизассемблирования  
- Чтобы установить точку останова на инструкции ассемблера, отладчик должен находиться в режиме приостановки выполнения.  
+## <a name="setting-a-breakpoint-in-the-disassembly-window"></a>Setting a Breakpoint in the Disassembly Window  
+ To set a breakpoint at an assembly instruction, the debugger must be in break mode.  
   
-1.  Начните отладку приложения и ожидайте остановки выполнения, например в точке останова. Откройте окно **Дизассемблирование** \(выберите **Отладка \> Окна \> Дизассемблирование** или нажмите клавиши **CTRL\+ALT\+D**\).  
+1.  Start debugging the application, and wait execution is stopped (for example, at a breakpoint). Open the **Disassembly** window (**Debug > Windows > Disassembly**, or **Ctrl + Alt + D**).  
   
-2.  Щелкните в левом поле инструкцию, на которой необходимо прервать выполнение, или установите курсор в инструкции и нажмите клавишу **F9**.  
+2.  Click in the left margin at the instruction that you want to break at, or set your cursor at the instruction and press **F9**.  
   
-## Установка точки останова по данным \(только для машинного кода C\+\+\)  
- Точки останова по данным приостанавливают выполнение, когда изменяется указанный адрес памяти. Если значение только считывается, но не изменяется, выполнение программы не прерывается. Чтобы установить точку останова для данных, отладчик должен находиться в режиме приостановки выполнения.  
+## <a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a>Setting a Data Breakpoint (native C++ only)  
+ Data breakpoints break execution when a value that is stored at a specified memory address changes. If the value is read but not changed, execution doesn't break. To set data breakpoints, the debugger must be in break mode.  
   
-1.  Начните отладку приложения и подождите, пока не будет достигнута точка останова. В меню **Отладка** выберите пункт **Новая точка останова \/ Точка останова по данным** \(или откройте окно **Точки останова** и выберите **Создать \/ Точка останова по данным**.  
+1.  Start debugging the application, and wait until a breakpoint is reached. On the **Debug** menu, choose **New Breakpoint > Data Breakpoint** (or open the **Breakpoints** window and choose **New > Data Breakpoint**.  
   
-2.  В поле **Адрес** введите адрес памяти или выражение, результатом вычисления которого будет адрес памяти. Например, для прерывания при изменении содержимого переменной `avar` введите `&avar`.  
+2.  In the **Address** box, type a memory address or an expression that evaluates to a memory address. For example, type `&avar` to break when the contents of the variable `avar` changes.  
   
-3.  В раскрывающемся списке **Счетчик байтов** введите количество байтов, за которыми должен наблюдать отладчик. Например, если выбрать **4**, отладчик будет наблюдать за четырьмя байтами начиная с `&avar` и выполнит прерывание, если какой\-либо из этих байтов изменит значение.  
+3.  In the **Byte Count** dropdown, select the number of bytes you want the debugger to watch. For example, if you select **4**, the debugger will watch the four bytes starting at `&avar` and break if any of those bytes change value.  
   
- Имейте в виду, что точки останова по данным зависят от применимости определенных адресов памяти.  
+ Keep in mind that data breakpoints depend on the applicability of specific memory addresses.  
   
--   Адреса переменных меняются в разных сеансах отладки. Точки останова по данным автоматически отключаются в конце каждого сеанса отладки.  
+-   The address of a variable changes from one debugging session to the next. Data breakpoints are automatically disabled at the end of each debugging session.  
   
--   Если установить точку останова по данным на локальную переменную, точка останова остается включенной при завершении выполнения функции, но адрес памяти больше не применяется и поведение точки останова будет непредсказуемым. Если установить точку останова по данным на локальную переменную, рекомендуется удалить или отключить точку останова до окончания функции.  
+-   If you set a data breakpoint on a local variable, the breakpoint remains enabled when the function ends, but the memory address is no longer applicable, and the behavior of the breakpoint is unpredictable. If you set a data breakpoint on a local variable, you should remove or disable the breakpoint before the function ends.  
   
- Точки останова в данных не работают при следующих условиях:  
+ Data breakpoints don't work under these conditions:  
   
--   Процесс, для которого не выполняется отладка, производит запись в область памяти  
+-   A process that is not being debugged writes to the memory location  
   
--   Область памяти совместно используется двумя или более процессами  
+-   The memory location is shared between two or more processes  
   
--   Область памяти обновляется в ядре. Например, если память передается в функцию `ReadFile` 32\-разрядной версии Windows, память будет обновляться из режима ядра и отладчик не будет прерывать выполнение по записи в память.  
+-   The memory location is updated within the kernel. For example, if memory is passed to the 32-bit Windows `ReadFile` function, the memory will be updated from kernel mode and the debugger doesn't break on the memory write.  
   
-## Задание точки останова по адресу памяти \(только в машинном коде C\+\+\)  
- Вы также можете использовать адрес объекта, чтобы установить точку останова в методе, вызываемом для конкретного экземпляра класса.  Ниже приведен пример:  
+## <a name="setting-a-breakpoint-with-a-memory-address-native-c-only"></a>Setting a Breakpoint with a Memory Address (native C++ only)  
+ You can also use the address of an object to set a breakpoint on a method called on a specific instance of a class.  Here's an example:  
   
- Например, если имеется объект типа `my_class` с адресом, вы можете задать точку останова функции в методе с именем  `my_method`, вызываемом из этого экземпляра.  
+ For example, given an object of type `my_class` with the address, you can set a function breakpoint on a method named `my_method` called from that instance.  
   
-1.  Установите точку останова в каком\-либо месте после создания экземпляра класса.  
+1.  Set a breakpoint somewhere after that instance of the class is instantiated.  
   
-2.  Найдите адрес экземпляра \(допустим, что это `0xcccccccc`\).  
+2.  Find the address of the instance (we'll say it's `0xcccccccc`).  
   
-3.  Выберите **Отладка \> Создать точку останова \> Точка останова в функции** \(или нажмите клавиши **ALT\+F9, B**\).  
+3.  Click **Debug > New Breakpoint > Function Breakpoint** (or **ALT + F9, B**).  
   
-4.  В поле **Имя функции** добавьте следующий текст:  
+4.  Add the following text to the **Function Name** box:  
   
-    ```cpp  
+    ```C++  
     ((my_class *) 0xcccccccc)->my_method  
     ```  
   
-##  <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Управление точками останова  
- Окно **Точки останова** \(**Отладка \> Окна \> Точки останова** или **CTRL\+ALT\+B**\) можно использовать для просмотра всех точек останова, заданных в решении:  
+##  <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Managing Breakpoints  
+ You can use the **Breakpoints** window (**Debug > Windows > Breakpoints**, or **CTRL + ALT + B**) to see all the breakpoints you have set in your solution:  
   
- ![Точки останова &#45; окно](~/debugger/media/breakpointswindow.png "BreakpointsWindow")  
+ ![Breakpoints window](../debugger/media/breakpointswindow.png "BreakpointsWindow")  
   
- Окно **Точки останова** дает возможность централизованно управлять сразу всеми точками останова, что особенно удобно при работе с программой большого объема или в сложных сценариях отладки, где точки останова имеют принципиально важное значение. Кроме того, если требуется сохранить или предоставить другим пользователям состояние и расположение набора точек останова, функция экспорта точек останова и их импорта доступна только в окне **Точки останова**.  
+ The **Breakpoints** window gives you a central place to manage all your breakpoints, which can be especially helpful in a large solution or a complex debugging scenario where breakpoints are critical. If you need to save or share the state and location of a set of breakpoints, you can export and import breakpoints only from the **Breakpoints** window.  
   
-##  <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a> Улучшенные точки останова  
+##  <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a> Advanced Breakpoints  
   
-## Условия точки останова  
- Можно управлять тем, где и когда выполняется точка останова, задавая условия.  
+## <a name="breakpoint-conditions"></a>Breakpoint conditions  
+ You can control when and where a breakpoint executes by setting conditions.  
   
-1.  Щелкните правой кнопкой мыши точку останова или наведите указатель мыши на точку останова и выберите значок "Параметры".  
+1.  Right-click the breakpoint, or hover over the breakpoint and choose the settings icon.  
   
-2.  В контекстном меню выберите **Условия**. Откроется окно **Параметры точки останова**:  
+2.  In the context menu, select **Conditions**. This opens the **Breakpoint Settings** window:  
   
- ![Параметры точки останова](../debugger/media/breakpointsettings.png "BreakpointSettings")  
+ ![Breakpoint settings](../debugger/media/breakpointsettings.png "BreakpointSettings")  
   
- Если установить флажок **Условия**, откроется окно с различными видами условий.  
+ When you check the **Conditions** box, the window expands to show the different kinds of conditions.  
   
- **Условные выражения.** При выборе условного выражения можно выбрать два условия: **Является true** и **При изменении**. Выберите значение **Является true**, если требуется прервать выполнение при истинности выражения, или значение **При изменении**, если требуется прервать выполнение при изменении значения выражения.  
+ **Conditional Expression:** When you select Conditional Expression, you can then choose two conditions: **Is true** and **When changed**. Choose **Is true** if you want to break when the expression is satisfied, or choose **When changed** if you want to break when the value of the expression has changed.  
   
- В следующем примере задается применение точки останова, только если значение `testInt` равно **4**:  
+ In the following example we set the breakpoint to hit only when the value of `testInt` is **4**:  
   
- ![Условие для точки останова выполнено](../debugger/media/breakpointconditionistrue.png "BreakpointConditionIsTrue")  
+ ![Breakpoint condition is true](../debugger/media/breakpointconditionistrue.png "BreakpointConditionIsTrue")  
   
- В следующем примере задается применение точки останова, только если значение `testInt` изменено:  
+ In the following example we set the breakpoint to hit only when the value of `testInt` changes:  
   
- ![Точка останова при изменении](../debugger/media/breakpointwhenchanged.png "BreakpointWhenChanged")  
+ ![Breakpoint when changed](../debugger/media/breakpointwhenchanged.png "BreakpointWhenChanged")  
   
- Поведение поля "При изменении" отличается для различных языков программирования. Если значение **При изменении** выбрано для машинного кода, отладчик не рассматривает первое вычисление условия как изменение, поэтому при первом вычислении выражения точка останова не сработает. Если значение **При изменении** выбрано для управляемого кода, точка останова срабатывает при первом вычислении после выбора условия **При изменении**.  
+ The behavior of the When changed field is different for different programming languages. If you choose **When changed** for native code, the debugger doesn't consider the first evaluation of the condition to be a change, so the breakpoint won't be hit on the first evaluation. If you choose **When changed** for managed code, he breakpoint is hit on the first evaluation after **When changed** is selected.  
   
- Если условие точки останова имеет недопустимый синтаксис, появится предупреждающее сообщение. Если указать условие для точки останова с недопустимой семантикой, но допустимым синтаксисом, предупреждающее сообщение появится при достижении точки останова в первый раз. В любом случае, отладчик прерывает выполнение при попадании на недопустимую точку останова. Точка останова пропускается, только если условие допустимо и принимает значение `false`.  
+ If you set a breakpoint condition with invalid syntax, a warning message appears. If you specify a breakpoint condition with valid syntax but invalid semantics, a warning message appears the first time the breakpoint is hit. In either case, the debugger breaks execution when the invalid breakpoint is hit. The breakpoint is skipped only if the condition is valid and evaluates to `false`.  
   
- Условие может быть любым допустимым выражением, которое распознает отладчик. Более подробную информацию о допустимых выражениях см. в разделе [Выражения в отладчике](../debugger/expressions-in-the-debugger.md).  
+ The condition can be any valid expression that is recognized by the debugger. For more information about valid expressions, see [Expressions in the Debugger](../debugger/expressions-in-the-debugger.md).  
   
-## Использование идентификаторов объектов в условиях точек останова \(C\# и F\#\)  
- Бывают случаи, когда необходимо посмотреть поведение конкретного объекта; например, может потребоваться узнать, почему объект был вставлен в коллекцию больше одного раза. В C\# и F\# можно создавать идентификаторы объектов для определенных экземпляров [ссылочных типов](/dotnet/csharp/language-reference/keywords/reference-types) и использовать их в условиях точек останова. Идентификатор объекта создается службами отладки среды CLR и связан с объектом.  Чтобы создать идентификатор объекта, выполните следующее.  
+## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Using Object IDs in Breakpoint Conditions (C# and F#)  
+ There are times when you want to observe the behavior of a specific object; for example, you might want to find out why an object was inserted more than once into a collection. In C# and F#, you can create object IDs for specific instances of [reference types](/dotnet/csharp/language-reference/keywords/reference-types) and use them in breakpoint conditions. The object ID is generated by the common language runtime (CLR) debugging services and associated with the object.  To create an object ID, do the following:  
   
-1.  Установите точку останова в коде после создания объекта.  
+1.  Set a breakpoint in the code some time after the object has been created.  
   
-2.  Начните отладку и, когда выполнение остановится в точке останова, найдите точку останова в окне **Локальные**, щелкните ее правой кнопкой мыши и выберите пункт **Создать идентификатор объекта**.  
+2.  Start debugging, and when execution stops in the breakpoint, find the breakpoint in the **Locals** window, right-click it, and select **Make Object ID**.  
   
-     В окне **Локальные** вы должны увидеть символ **$** и число. Это и есть идентификатор объекта.  
+     You should see a **$** plus a number in the **Locals** window. This is the object ID.  
   
-3.  Добавьте новую точку останова в точке, которую нужно исследовать, например в точке добавления объекта в коллекцию.  
+3.  Add a new conditional breakpoint at the point you want to investigate, for example when the object is to be added to the collection.  
   
-4.  Используйте идентификатор объекта в поле "Условное выражение". Например, если есть переменная `item`, ссылающаяся на объект, который должен быть добавлен в коллекцию, задайте  **item \=\= $n**, где **n** — номер идентификатора объекта.  
+4.  Use the Object ID in the Conditional Expression field. For example, if there is a variable `item` referring to the object that is to be added to the collection, you would put **item == $n**, where **n** is the object ID number.  
   
-     Выполнение прервется в точке добавления объекта в коллекцию.  
+     Execution will break at the point when that object is to be added to the collection.  
   
- Если позже потребуется удалить идентификатор объекта, щелкните правой кнопкой мыши переменную в окне **Локальные** и выберите пункт **Удалить идентификатор объекта**.  
+ If you later want to delete the object ID, you can right-click the variable in the **Locals** window and select **Delete Object ID**.  
   
- Обратите внимание, что идентификаторы объектов создают слабые ссылки и не предотвращают сборку мусора для объекта. Они действительны только в рамках текущего сеанса отладки.  
+ Note that Object IDs create weak references, and do not prevent the object from being garbage collected. They are valid only for the current debugging session.  
   
-## Число попаданий  
- Если есть подозрение, что цикл в коде начинает неправильно вести себя после определенного числа итераций, можно установить точку останова для остановки выполнения после указанного числа попаданий в соответствующую строку кода, вместо того чтобы многократно нажимать клавишу **F5** для достижения нужного уровня итерации.  
+## <a name="hit-count"></a>Hit Count  
+ If you suspect that a loop in your code starts misbehaving after a certain number of iterations, you can set a breakpoint to stop execution after a specified number of hits to the to the associated line of code, rather than being forced to repeatedly press **F5** to reach the iteration level.  
   
- В окне **Параметры точки останова** задайте в качестве условия **Количество обращений**. Затем можно указать число итераций. В следующем примере задается выполнение точки останова при каждой итерации:  
+ In the **Breakpoint Settings** window, set the condition to **Hit Count**. You can then specify the number of iterations. In the following example, we set the breakpoint to hit on every other iteration:  
   
- ![Число попаданий в точку останова](../debugger/media/breakpointhitcount.png "BreakpointHitCount")  
+ ![Breakpoint hit count](../debugger/media/breakpointhitcount.png "BreakpointHitCount")  
   
-## Фильтр  
- Вы можете ограничить точку останова, сделав ее срабатывание возможным лишь на определенных устройствах или в определенных процессах или потоках.  
+## <a name="filter"></a>Filter  
+ You can restrict a breakpoint to fire only on specified devices, or in specified processes and threads.  
   
- В окне **Параметры точки останова** задайте в качестве условия **Фильтр**. Задайте одно или несколько выражений, приведенных ниже.  
+ In the **Breakpoint Setting**s window, set the condition to **Filter**. Enter one or more of the following expressions.  
   
--   MachineName \= "имя"  
+-   MachineName = "name"  
   
--   ProcessId \= значение  
+-   ProcessId = value  
   
--   ProcessName \= "имя"  
+-   ProcessName = "name"  
   
--   ThreadId \= значение  
+-   ThreadId = value  
   
--   ThreadName \= "имя"  
+-   ThreadName = "name"  
   
- Значения строк следует заключить в двойные кавычки. Для комбинации условий можно использовать знаки `&` \(И\), `||` \(ИЛИ\), `!` \(НЕ\) и скобки.  
+ Enclose string values in double quotes. You can combine clauses using `&` (AND), `||` (OR), `!` (NOT), and parentheses.  
   
-##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Действия точки останова и точки отслеживания  
- Точка трассировки — это точка останова, которая выводит сообщение в окно вывода. Точка трассировки может играть роль временного оператора трассировки в языке программирования.  
+##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Breakpoint Actions and Tracepoints  
+ A tracepoint is a breakpoint that prints a message to the Output window. A tracepoint can act like a temporary trace statement in the programming language.  
   
- В окне **Параметры точки останова** установите флажок **Действия**. В группе **Действие** выберите пункт **Запись сообщения в окне вывода**. Можно вывести универсальную строку, например **это тест**. Чтобы включить в сообщение значение переменной или выражение, используйте фигурные скобки.  
+ In the **Breakpoint Settings** window, check the **Actions** box. Choose **Log a message to Output window** in the **Action** group. You can print a generic string, such as **this is a test**. To include the value of a variable or expression, enclose it in curly braces.  
   
- Чтобы приостановить выполнение при достижении точки трассировки, снимите флажок **Продолжить выполнение**. Если флажок **Продолжить выполнение** установлен, выполнение не останавливается. В обоих случаях выводится сообщение.  
+ To break execution when the tracepoint is hit, clear the **Continue Execution** check box. When **Continue Execution** is checked, execution is not halted. In both cases, the message is printed.  
   
- В поле **Сообщение** можно использовать приведенные ниже ключевые слова.  
+ You can use the following special keywords in the **Message**.  
   
 |||  
 |-|-|  
-|**$ADDRESS**|Текущая инструкция|  
-|**$CALLER**|Имя вызывающей функции|  
-|**$CALLSTACK**|Стек вызовов|  
-|**$FUNCTION**|Имя текущей функции|  
-|**$PID**|Идентификатор процесса|  
-|**$PNAME**|Имя процесса|  
-|**$TID**|Идентификатор потока|  
-|**$TNAME**|Имя потока|  
+|**$ADDRESS**|Current instruction|  
+|**$CALLER**|Calling function name|  
+|**$CALLSTACK**|Call stack|  
+|**$FUNCTION**|Current function name|  
+|**$PID**|Process id|  
+|**$PNAME**|Process name|  
+|**$TID**|Thread id|  
+|**$TNAME**|Thread name|  
 |**$TICK**||  
 |**$TNAME**||  
   
-##  <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Метки точки останова  
- Метки точек останова используются только в окне **Точки останова**. Они служат для сортировки и фильтрации списка точек останова. Для добавления метки к точке останова выберите строку точки останова, затем в контекстном меню выберите команду **Метка**.  
+##  <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Breakpoint labels  
+ Breakpoint labels are used only in the **Breakpoints** window to sort and filter the list of breakpoints. To add a label to a breakpoint, choose the breakpoint row and then choose **Label** on the context menu.  
   
-## Экспорт и импорт точек останова  
- Чтобы экспортировать точки останова в XML\-файл, щелкните правой кнопкой мыши на точке останова и выберите **Экспорт**. По умолчанию файл сохраняется в каталоге решения. Чтобы импортировать точки останова, откройте окно **Точки останова** \(**CTRL\+ALT\+B**\) и на панели инструментов щелкните стрелку вправо \(подсказка — **Импорт точек останова из файла**\).  
+## <a name="export-and-import-breakpoints"></a>Export and Import Breakpoints  
+ You can export a breakpoint to an XML file by right-clicking on the breakpoint and selecting **Export**. The file is saved by default in the solution directory. To import breakpoints, open the **Breakpoints** window (**CTRL + ALT + B**) and on the toolbar click the right-pointing arrow (the tooltip is **Import breakpoints from a file**).  
   
-## Устранение неполадок точек останова  
+## <a name="troubleshoot-breakpoints"></a>Troubleshoot breakpoints  
   
-### После удаления точки останова она по\-прежнему применяется при запуске отладки  
- Если удалить точку останова во время отладки, в некоторых случаях точка останова может снова применяться при очередном запуске отладки. Чтобы прекратить применение этой точки останова, убедитесь, что все ее экземпляры удалены из окна **Точки останова**.  
+### <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>I deleted a breakpoint, but I continue to hit it when I start debugging again  
+ If you deleted a breakpoint while debugging, in some cases you may hit the breakpoint again the next time you start debugging. To stop hitting this breakpoint, make sure all the instances of the breakpoint are removed from the **Breakpoints** window.  
   
-### Отладчик не может найти правильную версию исходного файла для точки останова  
- Если исходный файл изменился и исходный код больше не соответствует отлаживаемому коду, отладчик может найти исходный файл, который соответствует точке останова, даже если исходный файл существует.  
+### <a name="the-debugger-cant-locate-the-correct-version-of-the-source-file-for-a-breakpoint"></a>The debugger can't locate the correct version of the source file for a breakpoint  
+ If a source file has changed and the source no longer matches the code you are debugging, the debugger might locate the source file that corresponds to a breakpoint, even though the source file exists.  
   
-1.  Если требуется, чтобы в Visual Studio отображался исходный код, не соответствующий отлаживаемой версии, выберите **Отладка \/ Параметры и настройки**. На странице **Отладка \/ Общие** снимите флажок **Требовать точного соответствия исходной версии файлов**.  
+1.  If you want Visual Studio to display source code that doesn't match the version you are debugging, choose **Debug > Options and Settings**. On the **Debugging/General** page, clear the **Require source files that exactly match the original version** option.  
   
-2.  Также можно выполнять привязку точки останова к исходному файлу. Выделите точку останова и в контекстном меню выберите пункт **Условия**. Установите флажок **Разрешить наличие отличий в исходном коде от первоначальной версии** в окне **Параметры точки останова**.  
+2.  You can also bind the breakpoint to the source file. Select the breakpoint and choose **Conditions** on the context menu. Check **Allow the source code to be different from the original** in the **Breakpoint Settings** window.  
   
-### Точки останова не работают в библиотеке DLL  
- Невозможно установить точку останова в исходном файле, если отладчик не загрузил отладочную информацию для модуля, в котором находится код. Признаком такой ситуации может быть, например, сообщение **Точка останова не будет задана**. На месте точки останова появляется глиф предупреждения о точке останова. Эти глифы предупреждений о точке останова, однако, становятся фактическими точками останова после загрузки кода. Более подробную информацию о загрузке символов см. в разделе [Указание файлов символов \(.pdb\) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+### <a name="breakpoints-dont-work-in-a-dll"></a>Breakpoints don't work in a DLL  
+ You cannot set a breakpoint in a source file when the debugger hasn't loaded the debug information for the module where the code is located. Symptoms may include messages such as **the breakpoint will not be set**. The Warning breakpoint glyph appears at the breakpoint location. However, these Warning breakpoints become actual breakpoints when the code is loaded. For more information about loading symbols, see [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
-## См. также  
- [Навигация по коду с помощью отладчика](../debugger/navigating-through-code-with-the-debugger.md)
+## <a name="see-also"></a>See Also  
+ [Navigating through Code with the Debugger](../debugger/navigating-through-code-with-the-debugger.md)
+

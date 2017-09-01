@@ -1,171 +1,173 @@
 ---
-title: "Пошаговое руководство. Изменение форматирования листа с использованием элементов управления CheckBox"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "элементы управления [разработка решений Office в Visual Studio], добавление к листам"
-  - "листы, изменение форматирования с помощью управляемых элементов управления"
-  - "листы, элементы управления "флажок""
+title: 'Walkthrough: Changing Worksheet Formatting Using CheckBox Controls | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- worksheets, changing formatting using managed controls
+- worksheets, check box controls
+- controls [Office development in Visual Studio], adding to worksheets
 ms.assetid: 4be79613-50a0-428e-9816-aadbc098272a
 caps.latest.revision: 70
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 69
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 6afc0a002671d0a5ae91908e5b0ed3b100c36c54
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Изменение форматирования листа с использованием элементов управления CheckBox
-  В этом пошаговом руководстве описываются основные принципы использования флажков для изменения форматирования листа Microsoft Office Excel.  Для создания кода и добавления его в проект будут использоваться средства разработки Office в Visual Studio.  Для просмотра результатов в готовом примере обратитесь к примеру элементов управления Excel в разделе [Образцы и пошаговые руководства разработки Office](../vsto/office-development-samples-and-walkthroughs.md).  
+# <a name="walkthrough-changing-worksheet-formatting-using-checkbox-controls"></a>Walkthrough: Changing Worksheet Formatting Using CheckBox Controls
+  This walkthrough shows the basics of using check boxes on a Microsoft Office Excel worksheet to change formatting. You will use Office development tools in Visual Studio to create and add code to your project. To see the result as a completed sample, see the Excel Controls Sample at [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- В процессе выполнения этого пошагового руководства вы научитесь:  
+ During this walkthrough, you will learn how to:  
   
--   Добавление текста и элементов управления на лист.  
+-   Add text and controls to a worksheet.  
   
--   Форматирование текста при выборе определенного параметра.  
+-   Format the text when an option is selected.  
   
--   Тестирование проекта.  
+-   Test your project.  
   
 > [!NOTE]  
->  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях.  Эти элементы определяются используемым выпуском Visual Studio и его параметрами.  Дополнительные сведения см. в разделе [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/ru-ru/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] или [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] or [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
-## Создание проекта  
- На данном этапе с помощью Visual Studio создается проект книги Excel.  
+## <a name="creating-the-project"></a>Creating the Project  
+ In this step, you will create an Excel Workbook project by using Visual Studio.  
   
-#### Создание нового проекта  
+#### <a name="to-create-a-new-project"></a>To create a new project  
   
-1.  Создайте проект книги Excel с именем Форматирование Excel.  Убедитесь, что выбрано **Создать новый документ**.  Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Create an Excel Workbook project with the name **My Excel Formatting**. Make sure that **Create a new document** is selected. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Созданная книга Excel открывается в конструкторе Visual Studio. Проект **Форматирование Excel** добавляется в **обозреватель решений**.  
+     Visual Studio opens the new Excel workbook in the designer and adds the **My Excel Formatting** project to **Solution Explorer**.  
   
-## Добавление текста и элементов управления на лист  
- В этом пошаговом руководстве выполняется добавление трех элементов управления <xref:Microsoft.Office.Tools.Excel.Controls.CheckBox> и текстового содержимого к элементу управления <xref:Microsoft.Office.Tools.Excel.NamedRange>.  
+## <a name="adding-text-and-controls-to-the-worksheet"></a>Adding Text and Controls to the Worksheet  
+ For this walkthrough, you will need three <xref:Microsoft.Office.Tools.Excel.Controls.CheckBox> controls and some text in a <xref:Microsoft.Office.Tools.Excel.NamedRange> control.  
   
-#### Добавление трех флажков  
+#### <a name="to-add-three-check-boxes"></a>To add three check boxes  
   
-1.  Убедитесь, что в конструкторе Visual Studio открыт лист `Sheet1` книги.  
+1.  Verify that the workbook is open in the Visual Studio designer and that `Sheet1` is open.  
   
-2.  Со вкладки **Общие элементы управленияпанели элементов** перетащите элемент управления <xref:Microsoft.Office.Tools.Excel.Controls.CheckBox> в ячейку **B2** на листе **Лист1** \(или рядом с ней\).  
+2.  From the **Common Controls** tab of the **Toolbox**, drag a <xref:Microsoft.Office.Tools.Excel.Controls.CheckBox> control to or near cell **B2** in **Sheet1**.  
   
-3.  В меню **Вид** выберите команду **Окно свойств**.  
+3.  From the **View** menu, select **Properties** window.  
   
-4.  Убедитесь, что в поле со списком имен объектов окна **Свойства** отображается элемент **Checkbox1**, после чего измените следующие свойства:  
+4.  Be sure that **Checkbox1** is visible in the object name list box of the **Properties** window, and change the following properties:  
   
-    |Свойство|Значение|  
-    |--------------|--------------|  
-    |**Имя**|**applyBoldFont**|  
-    |**Текст.**|Полужирный|  
+    |Property|Value|  
+    |--------------|-----------|  
+    |**Name**|**applyBoldFont**|  
+    |**Text**|**Bold**|  
   
-5.  Перетащите второй флажок в ячейку **B4** \(или рядом с ней\) и измените следующие свойства:  
+5.  Drag a second check box on or near cell **B4** and change the following properties:  
   
-    |Свойство|Значение|  
-    |--------------|--------------|  
-    |**Имя**|**applyItalicFont**|  
-    |**Текст.**|Курсив|  
+    |Property|Value|  
+    |--------------|-----------|  
+    |**Name**|**applyItalicFont**|  
+    |**Text**|**Italic**|  
   
-6.  Перетащите третий флажок в ячейку **B6** \(или рядом с ней\) и измените следующие свойства:  
+6.  Drag a third check box on or near cell **B6** and change the following properties:  
   
-    |Свойство|Значение|  
-    |--------------|--------------|  
-    |**Имя**|**applyUnderlineFont**|  
-    |**Текст.**|Подчеркивание|  
+    |Property|Value|  
+    |--------------|-----------|  
+    |**Name**|**applyUnderlineFont**|  
+    |**Text**|**Underline**|  
   
-7.  Выберите все три флажка, удерживая нажатой клавишу CTRL.  
+7.  Select all three check box controls while holding the CTRL key.  
   
-8.  В группе в составе размещения на вкладку формата в Excel щелкните **Выровнять**, а затем нажмите кнопку **Выровнять по левому краю**.  
+8.  In the Arrange Group of the Format tab in Excel, click **Align**, and then click **Align Left**.  
   
-     3 Элементов управления checkbox выравнены слева на позиции первого элемента управления.  
+     The three check box controls are aligned on the left side, at the position of the first control you selected.  
   
-     После этого перетащите на лист элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange>.  
+     Next, you will drag a <xref:Microsoft.Office.Tools.Excel.NamedRange> control to the worksheet.  
   
     > [!NOTE]  
-    >  Чтобы добавить элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange>, также можно ввести **textFont** в поле **Имя**.  
+    >  You can also add the <xref:Microsoft.Office.Tools.Excel.NamedRange> control by typing **textFont** into the **Name** box.  
   
-#### Добавление текста в элемент управления NamedRange  
+#### <a name="to-add-text-to-a-namedrange-control"></a>To add text to a NamedRange control  
   
-1.  Со вкладки **Элементы управления Excel** панели элементов перетащите элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> в ячейку **B9**.  
+1.  From the **Excel Controls** tab of the toolbox, drag a <xref:Microsoft.Office.Tools.Excel.NamedRange> control to cell **B9**.  
   
-2.  Убедитесь, что в редактируемом текстовом поле отображается **$B$9**, и ячейка **B9** выбрана.  Если ячейка **B9** не выбрана, щелкните ее.  
+2.  Verify that **$B$9** appears in the editable text box, and that cell **B9** is selected. If it is not, click cell **B9** to select it.  
   
-3.  Нажмите кнопку **ОК**.  
+3.  Click **OK**.  
   
-4.  В ячейке **B9** создается диапазон `NamedRange1`.  
+4.  Cell **B9** becomes a range named `NamedRange1`.  
   
-     Видимых изменений на листе не происходит, однако при выборе ячейки **B9** в поле **Имя** в левом верхнем углу листа отображается `NamedRange1`.  
+     There is no visible indication on the worksheet, but `NamedRange1` appears in the **Name box** (just above the worksheet on the left side) when cell **B9** is selected.  
   
-5.  Убедитесь, что в поле со списком имен объектов окна **Свойства** отображается элемент **NamedRange1**, после чего измените следующие свойства:  
+5.  Be sure that **NamedRange1** is visible in the object name list box of the **Properties** window, and change the following properties:  
   
-    |Свойство|Значение|  
-    |--------------|--------------|  
-    |**Имя**|**textFont**|  
-    |**Value2**|Установите соответствующий флажок, чтобы изменить форматирование текста.|  
+    |Property|Value|  
+    |--------------|-----------|  
+    |**Name**|**textFont**|  
+    |**Value2**|**Click a check box to change the formatting of this text.**|  
   
- Далее напишите код для форматирования текста при выборе определенного параметра.  
+ Next, write the code to format the text when an option is selected.  
   
-## Форматирование текста при выборе определенного параметра  
- В этом разделе создается код, определяющий изменение форматирования текста на листе при выборе соответствующего параметра форматирования.  
+## <a name="formatting-the-text-when-an-option-is-selected"></a>Formatting the Text When an Option is Selected  
+ In this section, you will write code so that when the user selects a formatting option, the format of the text in the worksheet is changed.  
   
-#### Изменение форматирования при установке флажка  
+#### <a name="to-change-formatting-when-a-check-box-is-selected"></a>To change formatting when a check box is selected  
   
-1.  Щелкните правой кнопкой мыши лист **Лист1**, затем в появившемся контекстном меню выберите команду **Перейти к коду**.  
+1.  Right-click **Sheet1**, and then click **View Code** on the shortcut menu.  
   
-2.  В обработчике событий <xref:System.Windows.Forms.Control.Click> для флажка `applyBoldFont` добавьте следующий код:  
+2.  Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler of the `applyBoldFont` check box:  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#7](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsExcel/CS/Sheet1.cs#7)]
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#7](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsExcel/VB/Sheet1.vb#7)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsExcel#7](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#7)]  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#7)]  
   
-3.  В обработчике событий <xref:System.Windows.Forms.Control.Click> для флажка `applyItalicFont` добавьте следующий код:  
+3.  Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler of the `applyItalicFont` check box:  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#8](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsExcel/CS/Sheet1.cs#8)]
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#8](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsExcel/VB/Sheet1.vb#8)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsExcel#8](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#8)]  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#8)]  
   
-4.  В обработчике событий <xref:System.Windows.Forms.Control.Click> для флажка `applyUnderlineFont` добавьте следующий код:  
+4.  Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler of the `applyUnderlineFont` check box:  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#9](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsExcel/CS/Sheet1.cs#9)]
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#9](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsExcel/VB/Sheet1.vb#9)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsExcel#9](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#9)]  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#9)]  
   
-5.  В C\# следует добавить обработчики событий для флажков к событию <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>, как показано ниже.  Сведения о создании обработчиков событий см. в разделе [Практическое руководство. Создание обработчиков событий в проектах Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+5.  In C#, you must add event handlers for the check boxes to the <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> event as shown below. For information on creating event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#10](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsExcel/CS/Sheet1.cs#10)]  
+     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#10)]  
   
-## Тестирование приложения  
- Теперь можно правильность форматирования текста книги при установке или снятии флажков.  
+## <a name="testing-the-application"></a>Testing the Application  
+ You can now test your workbook to make sure that the text is formatted correctly when you select or clear a check box.  
   
-#### Проверка рабочей книги  
+#### <a name="to-test-your-workbook"></a>To test your workbook  
   
-1.  Нажмите клавишу F5 для запуска проекта.  
+1.  Press F5 to run your project.  
   
-2.  Установите или снимите флажок.  
+2.  Select or clear a check box.  
   
-3.  Убедитесь, что применяется правильное форматирование текста.  
+3.  Confirm that the text is formatted correctly.  
   
-## Следующие действия  
- В этом пошаговом руководстве описываются основные принципы использования флажков и форматирования текста на листах Microsoft Office Excel.  Далее будут рассмотрены следующие задачи:  
+## <a name="next-steps"></a>Next Steps  
+ This walkthrough shows the basics of using check boxes and formatting text on Excel worksheets. Here are some tasks that might come next:  
   
--   Развертывание проекта.  Дополнительные сведения см. в разделе [Развертывание решения Office с помощью ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
+-   Deploying the project. For more information, see [Deploying an Office Solution by Using ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
   
--   Заполнение текстового поля с помощью кнопки.  Дополнительные сведения см. в разделе [Пошаговое руководство. Отображение текста в текстовом поле рабочего листа с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).  
+-   Using a button to populate a text box. For more information, see [Walkthrough: Displaying Text in a Text Box in a Worksheet Using a Button](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).  
   
-## См. также  
- [Пошаговые руководства с использованием Excel](../vsto/walkthroughs-using-excel.md)   
- [Элемент управления NamedRange](../vsto/namedrange-control.md)   
- [Ограничения по использованию элементов управления Windows Forms в документах Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+## <a name="see-also"></a>See Also  
+ [Walkthroughs Using Excel](../vsto/walkthroughs-using-excel.md)   
+ [NamedRange Control](../vsto/namedrange-control.md)   
+ [Limitations of Windows Forms Controls on Office Documents](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

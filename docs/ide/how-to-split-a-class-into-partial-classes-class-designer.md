@@ -1,5 +1,5 @@
 ---
-title: "Практическое руководство. Разделение класса на разделяемые классы (конструктор классов) | Документы Майкрософт"
+title: 'How to: Split a Class into Partial Classes (Class Designer) | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,32 +31,32 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
-ms.openlocfilehash: 9d74565f8e7e5b89e1716e9e2d88e2e18e077124
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a92d03bca26e1e3eceacb3b611d81e344b656393
 ms.contentlocale: ru-ru
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Практическое руководство. Разделение класса в разделяемые классы (конструктор классов)
-Объявление класса или структуры можно распределить по нескольким объявлениям с помощью ключевого слова `Partial` в Visual Basic или `partial` в Visual C#. Можно использовать столько частичных объявлений, сколько необходимо, как сразу в нескольких исходных файлах, так и только в одном. Однако все объявления должны находиться в одной сборке и одном пространстве имен.  
+# <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>How to: Split a Class into Partial Classes (Class Designer)
+You can divide the declaration of a class or structure among several declarations by using the `Partial` keyword in Visual Basic or the `partial` keyword in Visual C#. You can use as many partial declarations as you want, in as many different source files as you want, or in one source file. However, all the declarations must be in the same assembly and the same namespace.  
   
- Разделяемые классы могут быть очень полезны. Например, при работе над большими проектами разделение класса на несколько файлов позволяет работать с ним сразу нескольким разработчикам. При работе с кодом, созданным Visual Studio, класс можно изменить без повторного создания исходного файла. (Примеры кода, создаваемого Visual Studio: Windows Forms и программы-оболочки веб-служб.) Это позволяет составить код с использованием автоматически генерируемых классов, не изменяя файл, созданный Visual Studio.  
+ Partial classes are useful in several situations. For example, when you are working on large projects, separating a class into more than one file enables more than one programmer to work on it at the same time. When you are working with code that Visual Studio generates, you can change the class without having to re-create the source file. (Examples of code that Visual Studio generates include Windows Forms and Web Service wrapper code.) You can thus create code that uses auto-generated classes without having to modify the file that Visual Studio creates.  
   
- Частичные методы бывают двух типов. Они называются объявлением и реализацией.  
+ There are two kinds of partial methods. In Visual C#, they are called declaring and implementing; in Visual Basic, they are called declaration and implementation.  
   
- Конструктор классов поддерживает разделяемые классы и методы. Фигура типа в схеме классов относится к расположению отдельного объявления для разделяемого класса. Если разделяемый класс определен сразу в нескольких файлах, можно указать, какое расположение объявления будет использовать конструктор классов, настроив свойство **Расположение нового члена** в окне **Свойства**. В результате при двойном щелчке фигуры класса конструктор классов переходит в исходный файл, который содержит объявление класса, заданное свойством **Расположение нового члена**. При двойном щелчке разделяемого метода в фигуре класса конструктор классов переходит к объявлению разделяемого метода. Свойство **Имя файла** в окне **Свойства** также относится к расположению объявления. Для разделяемых классов в свойстве **Имя файла** перечисляются все файлы, содержащие код объявления и реализации для этого класса. При этом для разделяемых методов свойство **Имя файла** содержит только файл, содержащий объявление разделяемого метода.  
+ Class Designer supports partial classes and methods. The type shape in the class diagram refers to a single declaration location for the partial class. If the partial class is defined in multiple files, you can specify which declaration location Class Designer will use by setting the **New Member Location** property in the **Properties** window. That is, when you double-click a class shape, Class Designer goes to the source file that contains the class declaration identified by the **New Member Location** property. When you double-click a partial method in a class shape, Class Designer goes to the partial method declaration. Also, in the **Properties** window, the **File Name** property refers to the declaration location. For partial classes, **File Name** lists all of the files that contain declaration and implementation code for that class. However, for partial methods, **File Name** lists only the file that contains the partial method declaration.  
   
- Следующий пример разделяет определение класса `Employee` на два объявления, в каждом из которых определяется отдельная процедура. Два частичных определения в предыдущих примерах могут находиться в одном или двух исходных файлах.  
+ The following examples split the definition of class `Employee` into two declarations, each of which defines a different procedure. The two partial definitions in the examples could be in one source file or in two different source files.  
   
 > [!NOTE]
->  Visual Basic использует определения разделяемых классов для отделения автоматически созданного кода от кода, созданного пользователем. Этот код разбивается на отдельные исходные файлы. Например, **конструктор форм Windows Forms** определяет разделяемые классы для элементов управления, таких как `Form`. Не следует изменять код, созданный в этих элементах управления.  
+>  Visual Basic uses partial-class definitions to separate Visual Studio—generated code from user-authored code. The code is separated into discrete source files. For example, the **Windows Form Designer** defines partial classes for controls such as `Form`. You should not modify the generated code in these controls.  
   
- Дополнительные сведения о разделяемых типах в Visual Basic см. в статье [Partial](/dotnet/visual-basic/language-reference/modifiers/partial).  
+ For more information about partial types in Visual Basic, see [Partial](/dotnet/visual-basic/language-reference/modifiers/partial).  
   
-## <a name="example"></a>Пример  
- Чтобы разделить определение класса в Visual Basic, используйте ключевое слово `Partial`, как показано в следующем примере.  
+## <a name="example"></a>Example  
+ To split a class definition in Visual Basic, use the `Partial` keyword, as shown in the following example.  
   
-```vb#  
+```vb  
 ' First part of class definition.  
 Partial Public Class Employee  
     Public Sub CalculateWorkHours()  
@@ -70,10 +70,10 @@ Partial Public Class Employee
 End Class  
 ```  
   
-## <a name="example"></a>Пример  
- Чтобы разделить определение класса в Visual C#, используйте ключевое слово `partial`, как показано в следующем примере.  
+## <a name="example"></a>Example  
+ To split a class definition in Visual C#, use the `partial` keyword, as shown in the following example.  
   
-```c#  
+```csharp  
 // First part of class definition.  
 public partial class Employee  
 {  
@@ -91,8 +91,8 @@ public partial class Employee
 }  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Разделяемые классы и методы](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)   
- [Разделяемый (тип)](/dotnet/csharp/language-reference/keywords/partial-type)   
- [Разделяемый (метод) (справочник по C#)](/dotnet/csharp/language-reference/keywords/partial-method)   
+## <a name="see-also"></a>See Also  
+ [Partial Classes and Methods](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)   
+ [partial (Type)](/dotnet/csharp/language-reference/keywords/partial-type)   
+ [partial (Method) (C# Reference)](/dotnet/csharp/language-reference/keywords/partial-method)   
  [Partial](/dotnet/visual-basic/language-reference/modifiers/partial)

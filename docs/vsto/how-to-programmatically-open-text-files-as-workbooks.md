@@ -1,50 +1,54 @@
 ---
-title: "Практическое руководство. Программное открытие текстовых файлов как книг Excel"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "текст [разработка решений Office в Visual Studio], текстовые файлы"
-  - "текстовые файлы, открытие как книг Excel"
-  - "книги, открытие текстовых файлов как"
+title: 'How to: Programmatically Open Text Files as Workbooks | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- workbooks, opening text files as
+- text [Office development in Visual Studio], text files
+- text files, opening as workbooks
 ms.assetid: 056ae3d0-7fe7-4c28-a2a5-5a948baee0e6
 caps.latest.revision: 47
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 46
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 9966164165f768f438516ba9df993c09a6197b5b
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Практическое руководство. Программное открытие текстовых файлов как книг Excel
-  Можно открыть текстовый файл как книгу.  Обязательным параметром является имя открываемого текстового файла.  Необязательными параметрами являются, например, номер первой строки для синтаксического анализа и формат столбцов данных в файле.  
+# <a name="how-to-programmatically-open-text-files-as-workbooks"></a>How to: Programmatically Open Text Files as Workbooks
+  You can open a text file as a workbook. You must pass in the name of the text file you want to open. You can specify several optional parameters, such as which row number to start parsing on and the column format of the data in the file.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## Пример  
- [!code-csharp[Trin_VstcoreExcelAutomation#80](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#80)]
- [!code-vb[Trin_VstcoreExcelAutomation#80](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#80)]  
+## <a name="example"></a>Example  
+ [!code-csharp[Trin_VstcoreExcelAutomation#80](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#80)] [!code-vb[Trin_VstcoreExcelAutomation#80](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#80)]  
   
-## Компиляция кода  
- Для этого примера требуются следующие компоненты.  
+## <a name="compiling-the-code"></a>Compiling the Code  
+ This example requires the following components:  
   
--   Текстовый файл с разделителями\-запятыми `Test.txt`, содержащий не менее трех строк.  
+-   A comma-delimited text file named `Test.txt` that contains at least three lines of text.  
   
--   Текстовый файл `Test.txt` должен находиться на диске C.  
+-   The text file `Test.txt` to be stored on drive C.  
   
-## См. также  
- [Работа с книгами](../vsto/working-with-workbooks.md)   
- [Практическое руководство. Программное открытие книг Excel](../vsto/how-to-programmatically-open-workbooks.md)   
- [Практическое руководство. Программное создание книг Excel](../vsto/how-to-programmatically-create-new-workbooks.md)   
- [Практическое руководство. Программное сохранение книг Excel](../vsto/how-to-programmatically-save-workbooks.md)   
- [Практическое руководство. Программное закрытие книг Excel](../vsto/how-to-programmatically-close-workbooks.md)   
- [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Workbooks](../vsto/working-with-workbooks.md)   
+ [How to: Programmatically Open Workbooks](../vsto/how-to-programmatically-open-workbooks.md)   
+ [How to: Programmatically Create New Workbooks](../vsto/how-to-programmatically-create-new-workbooks.md)   
+ [How to: Programmatically Save Workbooks](../vsto/how-to-programmatically-save-workbooks.md)   
+ [How to: Programmatically Close Workbooks](../vsto/how-to-programmatically-close-workbooks.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
   
   

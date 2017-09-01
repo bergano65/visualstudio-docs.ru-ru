@@ -1,34 +1,51 @@
 ---
-title: "CA2151. Поля с критическими типами должны быть критическими с точки зрения безопасности | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'CA2151: Fields with critical types should be security critical | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 09db9d25-7d58-4725-a252-4a07baadf046
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 4
----
-# CA2151. Поля с критическими типами должны быть критическими с точки зрения безопасности
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: c312bf4cd90dff17ff10063ab8a293161e2fa328
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151: Fields with critical types should be security critical
 |||  
 |-|-|  
 |TypeName||  
 |CheckId|CA2151|  
-|Категория|Microsoft.Security|  
-|Критическое изменение|Критическое|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
-## Причина  
- Объявлено прозрачное для безопасности поле или поле, надежное с точки зрения безопасности.  Его тип определяется как критический с точки зрения безопасности.  Например:  
+## <a name="cause"></a>Cause  
+ A security transparent field or a safe critical field is declared. Its type is specified as security critical. For example:  
   
-```c#  
+```csharp  
 [assembly: AllowPartiallyTrustedCallers]  
   
    [SecurityCritical]  
@@ -41,15 +58,15 @@ caps.handback.revision: 4
   
 ```  
   
- В этом примере `m_field` — это прозрачное для безопасности поле критического с точки зрения безопасности типа.  
+ In this example, `m_field` is a security transparent field of a type that is security critical.  
   
-## Описание правила  
- Для использования критических с точки зрения безопасности типов код, который ссылается на тип, должен быть либо критическим с точки зрения безопасности, либо надежным с точки зрения безопасности.  Это верно даже в случае косвенной ссылки.  Например, при ссылке на прозрачное поле критического для безопасности типа код должен быть либо критическим с точки зрения безопасности, либо надежным с точки зрения безопасности.  Поэтому применять прозрачное для безопасности поле или поле, надежное с точки зрения безопасности, не рекомендуется, поскольку прозрачный код по\-прежнему не сможет получить доступ к полю.  
+## <a name="rule-description"></a>Rule Description  
+ To use security critical types, the code that references the type must be either security critical or security safe critical. This is true even if the reference is indirect. For example, when you reference a transparent field that has a critical type, your code must be either security critical or security safe. Therefore, having a security transparent or security safe critical field is misleading because transparent code will still be unable to access the field.  
   
-## Устранение нарушений  
- Чтобы устранить нарушение этого правила, отметьте поле атрибутом <xref:System.Security.SecurityCriticalAttribute> или сделайте тип, на который ссылается поле, прозрачным с точки зрения безопасности либо надежным с точки зрения безопасности.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, mark the field with the <xref:System.Security.SecurityCriticalAttribute> attribute, or make the type that is referenced by the field eith security transparent or safe critical.  
   
-```c#  
+```csharp  
 // Fix 1: Make the referencing field security critical  
 [assembly: AllowPartiallyTrustedCallers]  
   
@@ -75,10 +92,10 @@ caps.handback.revision: 4
   
 ```  
   
-## Отключение предупреждений  
- Для этого правила отключать вывод предупреждений не следует.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-### Код  
- [!code-cs[FxCop.Security.CA2145.TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity#1](../code-quality/codesnippet/CSharp/ca2151-fields-with-critical-types-should-be-security-critical_1.cs)]  
+### <a name="code"></a>Code  
+ [!code-csharp[FxCop.Security.CA2145.TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity#1](../code-quality/codesnippet/CSharp/ca2151-fields-with-critical-types-should-be-security-critical_1.cs)]  
   
-### Комментарии
+### <a name="comments"></a>Comments

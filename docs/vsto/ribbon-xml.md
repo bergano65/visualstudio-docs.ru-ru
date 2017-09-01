@@ -1,142 +1,156 @@
 ---
-title: "XML-ленты"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VSTO.Ribbon.RibbonXMLItem"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "настраиваемая лента, XML"
-  - "настройка ленты, XML"
-  - "лента [разработка решений Office в Visual Studio], XML"
-  - "методы обратного вызова"
-  - "настраиваемая лента, отображение"
-  - "настраиваемая лента, определение поведения"
-  - "XML [разработка решений Office в Visual Studio], лента"
-  - "настройка ленты, определение поведения"
-  - "лента [разработка решений Office в Visual Studio], настройка"
-  - "настройка ленты, отображение"
+title: Ribbon XML | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VSTO.Ribbon.RibbonXMLItem
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- custom Ribbon, XML
+- customizing the Ribbon, XML
+- Ribbon [Office development in Visual Studio], XML
+- callback methods
+- custom Ribbon, displaying
+- custom Ribbon, defining behavior
+- XML [Office development in Visual Studio], Ribbon
+- customizing the Ribbon, defining behavior
+- Ribbon [Office development in Visual Studio], customizing
+- customizing the Ribbon, displaying
 ms.assetid: a5945667-40e8-4191-9f1e-71c18ec30a2e
 caps.latest.revision: 35
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 34
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 6b0eb5783aa5a58a1292f52bb50cb765673deddb
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# XML-ленты
-  Элемент «Лента \(XML\)» позволяет настраивать ленту с помощью XML\-кода. Элемент «Лента \(XML\)» следует использовать, если ленту нужно настроить специальным образом, который не поддерживается элементом «Лента \(визуальный конструктор\)». Сравнение возможностей каждого элемента см. в разделе [Обзор ленты](../vsto/ribbon-overview.md).  
+# <a name="ribbon-xml"></a>Ribbon XML
+  The Ribbon (XML) item enables you to customize a Ribbon by using XML. Use the Ribbon (XML) item if you want to customize the Ribbon in a way that is not supported by the Ribbon (Visual Designer) item. For a comparison of what you can do with each item, see [Ribbon Overview](../vsto/ribbon-overview.md).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-## Добавление элемента «Лента \(XML\)» в проект  
- Элемент **Лента \(XML\)** можно добавить в любой проект Office из диалогового окна **Добавить новый элемент**. Visual Studio автоматически добавляет в проект следующие файлы.  
+## <a name="adding-a-ribbon-xml-item-to-a-project"></a>Adding a Ribbon (XML) Item to a Project  
+ You can add a **Ribbon (XML)** item to any Office project from the **Add New Item** dialog box. Visual Studio automatically adds the following files to your project:  
   
--   XML\-файл ленты. Этот файл определяет пользовательский интерфейс ленты. Данный файл можно использовать для добавления элементов пользовательского интерфейса — вкладок, групп и элементов управления. Дополнительные сведения см. в подразделе [Справочник по XML\-файлу ленты](#RibbonDescriptorFile) ниже в этом разделе.  
+-   A Ribbon XML file. This file defines the Ribbon user interface (UI). Use this file to add UI elements such as tabs, groups, and controls. For details, see [Ribbon XML File Reference](#RibbonDescriptorFile) later in this topic.  
   
--   Файл кода ленты. Этот файл содержит *класс ленты*. Класс имеет имя, указанное для элемента **Лента \(XML\)** в диалоговом окне **Добавить новый элемент**. Экземпляр этого класса используется приложениями Microsoft Office для загрузки настраиваемой ленты. Дополнительные сведения см. в подразделе [Справочник по классу ленты](#RibbonExtensionClass) ниже в этом разделе.  
+-   A Ribbon code file. This file contains the *Ribbon class*. This class has the name that you specified for the **Ribbon (XML)** item in the **Add New Item** dialog box. Microsoft Office applications use an instance of this class to load the custom Ribbon. For details, see [Ribbon Class Reference](#RibbonExtensionClass) later in this topic.  
   
- По умолчанию эти файлы добавляют пользовательскую группу на вкладку **Надстройки** ленты.  
+ By default, these files add a custom group to the **Add-Ins** tab in the Ribbon.  
   
-## Отображение настраиваемой ленты в приложении Microsoft Office  
- После добавления элемента **Лента \(XML\)** в проект необходимо добавить код в класс **ThisAddin**, **ThisWorkbook** или **ThisDocument**, который переопределяет метод CreateRibbonExtensibilityObject и возвращает XML\-класс ленты в приложение Office.  
+## <a name="displaying-the-custom-ribbon-in-a-microsoft-office-application"></a>Displaying the Custom Ribbon in a Microsoft Office Application  
+ After you add a **Ribbon (XML)** item to your project, you must add code to the **ThisAddin**, **ThisWorkbook**, or **ThisDocument** class that overrides the CreateRibbonExtensibilityObject method and returns the Ribbon XML class to the Office application.  
   
- В следующем примере кода переопределяется метод CreateRibbonExtensibilityObject и возвращается XML\-класс ленты с именем MyRibbon.  
+ The following code example overrides the CreateRibbonExtensibilityObject method and returns a Ribbon XML class named MyRibbon.  
   
- [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab_XML/CS/ThisAddIn.cs#1)]
- [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab_XML/VB/ThisAddIn.vb#1)]  
+ [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)] [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
   
-## Определение поведения настраиваемой ленты  
- Для реагирования на действия пользователя, например на нажатие кнопки на ленте, можно создать *методы обратного вызова*. Методы обратного вызова похожи на события в элементах управления Windows Forms, но они идентифицируются атрибутом в XML\-коде элемента пользовательского интерфейса. Вы записываете методы в классе ленты, а элемент управления вызывает метод, который имеет то же имя, что и значение атрибута. Например, можно создать метод обратного вызова, который будет вызываться при нажатии пользователем кнопки на ленте. Для создания метода обратного вызова необходимо выполнить два действия.  
+## <a name="defining-the-behavior-of-the-custom-ribbon"></a>Defining the Behavior of the Custom Ribbon  
+ You can respond to user actions, such as clicking a button on the Ribbon, by creating *callback methods*. Callback methods resemble events in Windows Forms controls, but they are identified by an attribute in the XML of the UI element. You write methods in the Ribbon class, and a control calls the method that has the same name as the attribute value. For example, you can create a callback method that is called when a user clicks a button on the Ribbon. Two steps are required to create a callback method:  
   
--   Назначьте атрибут элементу управления в XML\-файле ленты, который идентифицирует метод обратного вызова в коде.  
+-   Assign an attribute to a control in the Ribbon XML file that identifies a callback method in your code.  
   
--   Определите метод обратного вызова в классе ленты.  
+-   Define the callback method in the Ribbon class.  
   
 > [!NOTE]  
->  Для Outlook необходимо будет выполнить еще одно действие. Для получения дополнительной информации см. [Настройка ленты для Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
+>  Outlook requires an additional step. For more information, see [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
   
- Процедуру автоматизации приложения с помощью ленты см. в разделе [Пошаговое руководство. Создание настраиваемой вкладки с помощью XML-лент](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).  
+ For a walkthrough that demonstrates how to automate an application from the Ribbon, see [Walkthrough: Creating a Custom Tab by Using Ribbon XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).  
   
-### Назначение методов обратного вызова элементам управления  
- Для назначения метода обратного вызова элементу управления в XML\-файле ленты добавьте атрибут, который указывает тип метода обратного вызова и имя данного метода. Например, следующий элемент определяет выключатель, который имеет метод обратного вызова **onAction** с именем `OnToggleButton1`.  
+### <a name="assigning-callback-methods-to-controls"></a>Assigning Callback Methods to Controls  
+ To assign a callback method to a control in the Ribbon XML file, add an attribute that specifies the type of the callback method and the name of the method. For example, the following element defines a toggle button that has an **onAction** callback method named `OnToggleButton1`.  
   
 ```  
 <toggleButton id="toggleButton1" onAction="OnToggleButton1" />  
 ```  
   
- **onAction** вызывается, когда пользователь выполняет основную задачу, связанную с конкретным элементом управления. Например, метод обратного вызова **onAction** выключателя вызывается, когда пользователь нажимает кнопку.  
+ **onAction** is called when the user performs the main task associated with a particular control. For example, the **onAction** callback method of a toggle button is called when the user clicks the button.  
   
- Метод, указываемый в атрибуте, может иметь любое имя. Тем не менее данное имя должно соответствовать имени метода, который определяется в файле кода ленты.  
+ The method that you specify in the attribute can have any name. However, it must match the name of the method that you define in the Ribbon code file.  
   
- Элементам управления ленты можно назначать методы обратного вызова различного типа. Полный список методов обратного вызова, доступных для каждого элемента управления, см. в технической статье [Настройка пользовательского интерфейса ленты Office \(2007\) для разработчиков \(часть 3 из 3\)](http://msdn.microsoft.com/ru-ru/a16c7df5-93f3-4920-baa8-7b7290794c15).  
+ There are many different types of callback methods that you can assign to Ribbon controls. For a complete list of the callback methods available for each control, see the technical article [Customizing the Office (2007) Ribbon User Interface for Developers (Part 3 of 3)](http://msdn.microsoft.com/en-us/a16c7df5-93f3-4920-baa8-7b7290794c15).  
   
-###  <a name="CallBackMethods"></a> Определение методов обратного вызова  
- Определите методы обратного вызова в классе ленты в файле кода ленты. Метод обратного вызова должен удовлетворять ряду требований.  
+###  <a name="CallBackMethods"></a> Defining Callback Methods  
+ Define your callback methods in the Ribbon class in the Ribbon code file. A callback method has several requirements:  
   
--   Он должен быть объявлен как открытый.  
+-   It must be declared as public.  
   
--   Его имя должно соответствовать имени метода обратного вызова, которое назначено элементу управления в XML\-файле ленты.  
+-   Its name must match the name of a callback method that you assigned to a control in the Ribbon XML file.  
   
--   Его сигнатура должна соответствовать сигнатуре метода обратного вызова, доступного для связанного элемента управления ленты.  
+-   Its signature must match the signature of a type of callback method that is available for the associated Ribbon control.  
   
- Полный список сигнатур методов обратного вызова для элементов управления см. в технической статье [Настройка пользовательского интерфейса ленты Office \(2007\) для разработчиков \(часть 3 из 3\)](http://msdn.microsoft.com/ru-ru/a16c7df5-93f3-4920-baa8-7b7290794c15). Visual Studio не поддерживает IntelliSense для методов обратного вызова, которые создаются в файле кода ленты. Если создать метод обратного вызова, который не соответствует допустимой сигнатуре, код будет скомпилирован, но, когда пользователь щелкнет элемент управления, ничего не произойдет.  
+ For a complete list of the callback method signatures for Ribbon controls, see the technical article [Customizing the Office (2007) Ribbon User Interface for Developers (Part 3 of 3)](http://msdn.microsoft.com/en-us/a16c7df5-93f3-4920-baa8-7b7290794c15). Visual Studio does not provide IntelliSense support for callback methods that you create in the Ribbon code file. If you create a callback method that does not match a valid signature, the code will compile, but nothing will occur when the user clicks the control.  
   
- Все методы обратного вызова имеют параметр <xref:Microsoft.Office.Core.IRibbonControl>, который представляет элемент управления, вызвавший метод. Этот параметр позволяет повторно использовать один и тот же метод обратного вызова для нескольких элементов управления. В следующем примере кода демонстрируется метод обратного вызова **onAction**, который выполняет различные задачи в зависимости от того, какой элемент управления щелкает пользователь.  
+ All callback methods have a <xref:Microsoft.Office.Core.IRibbonControl> parameter that represents the control that called the method. You can use this parameter to reuse the same callback method for multiple controls. The following code example demonstrates an **onAction** callback method that performs different tasks depending on which control the user clicks.  
   
- [!code-csharp[Trin_RibbonOutlookBasic#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_RibbonOutlookBasic/CS/Ribbon1.cs#2)]
- [!code-vb[Trin_RibbonOutlookBasic#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_RibbonOutlookBasic/VB/Ribbon1.vb#2)]  
+ [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)] [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]  
   
-##  <a name="RibbonDescriptorFile"></a> Справочник по XML\-файлу ленты  
- Для определения настраиваемой ленты в XML\-файл ленты можно добавить элементы и атрибуты. По умолчанию XML\-файл ленты содержит следующий XML\-код.  
+##  <a name="RibbonDescriptorFile"></a> Ribbon XML File Reference  
+ You can define your custom Ribbon by adding elements and attributes to the Ribbon XML file. By default, the Ribbon XML file contains the following XML.  
   
 ```  
-<?xml version="1.0" encoding="UTF-8"?> <customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="OnLoad"> <ribbon> <tabs> <tab idMso="TabAddIns"> <group id="MyGroup" label="My Group"> </group> </tab> </tabs> </ribbon> </customUI>  
+<?xml version="1.0" encoding="UTF-8"?>  
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="OnLoad">  
+  <ribbon>  
+    <tabs>  
+      <tab idMso="TabAddIns">  
+        <group id="MyGroup"  
+               label="My Group">  
+        </group>  
+      </tab>  
+    </tabs>  
+  </ribbon>  
+</customUI>  
 ```  
   
- В следующей таблице указаны элементы по умолчанию в XML\-файле ленты.  
+ The following table describes the default elements in the Ribbon XML file.  
   
-|Элемент|Описание|  
-|-------------|--------------|  
-|**customUI**|Представляет настраиваемую ленту в проекте надстройки VSTO.|  
-|**ribbon**|Представляет ленту.|  
-|**tabs**|Представляет набор вкладок на ленте.|  
-|**tab**|Представляет одну вкладку на ленте.|  
-|**group**|Представляет группу элементов управления на вкладке ленты.|  
+|Element|Description|  
+|-------------|-----------------|  
+|**customUI**|Represents the custom Ribbon in the VSTO Add-in project.|  
+|**ribbon**|Represents the Ribbon.|  
+|**tabs**|Represents a set of Ribbon tabs.|  
+|**tab**|Represents a single Ribbon tab.|  
+|**group**|Represents a group of controls on the Ribbon tab.|  
   
- Эти элементы имеют атрибуты, определяющие внешний вид и поведение настраиваемой ленты. В следующей таблице указаны атрибуты по умолчанию в XML\-файле ленты.  
+ These elements have attributes that specify the appearance and behavior of the custom Ribbon. The following table describes the default attributes in the Ribbon XML file.  
   
-|Атрибут|Родительский элемент|Описание|  
-|-------------|--------------------------|--------------|  
-|**onLoad**|**customUI**|Идентифицирует метод, вызываемый при загрузке ленты приложением.|  
-|**idMso**|**tab**|Идентифицирует встроенную вкладку для отображения на ленте.|  
-|**id**|**group**|Идентифицирует группу.|  
-|**label**|**group**|Указывает текст, отображаемый в группе.|  
+|Attribute|Parent element|Description|  
+|---------------|--------------------|-----------------|  
+|**onLoad**|**customUI**|Identifies a method that is called when the application loads the Ribbon.|  
+|**idMso**|**tab**|Identifies a built-in tab to display in the Ribbon.|  
+|**id**|**group**|Identifies the group.|  
+|**label**|**group**|Specifies the text that appears on the group.|  
   
- Элементы и атрибуты по умолчанию в XML\-файле ленты представляют собой небольшое подмножество доступных элементов и атрибутов. Полный список доступных элементов и атрибутов см. в технической статье [Настройка пользовательского интерфейса ленты Office \(2007\) для разработчиков \(часть 2 из 3\)](http://msdn.microsoft.com/ru-ru/6b904f55-525f-4520-9b81-a017db65657b).  
+ The default elements and attributes in the Ribbon XML file are a small subset of the elements and attributes that are available. For a complete list of the available elements and attributes, see the technical article [Customizing the Office (2007) Ribbon User Interface for Developers (Part 2 of 3)](http://msdn.microsoft.com/en-us/6b904f55-525f-4520-9b81-a017db65657b).  
   
-##  <a name="RibbonExtensionClass"></a> Справочник по классу ленты  
- Visual Studio создает класс ленты в файле кода ленты. Добавьте в этот класс методы обратного вызова для элементов управления на ленте. Этот класс реализует интерфейс <xref:Microsoft.Office.Core.IRibbonExtensibility>.  
+##  <a name="RibbonExtensionClass"></a> Ribbon Class Reference  
+ Visual Studio generates the Ribbon class in the Ribbon code file. Add the callback methods for controls on the Ribbon to this class. This class implements the <xref:Microsoft.Office.Core.IRibbonExtensibility> interface.  
   
- В следующей таблице указаны методы по умолчанию в этом классе.  
+ The following table describes the default methods in this class.  
   
-|Метод|Описание|  
-|-----------|--------------|  
-|`GetCustomUI`|Возвращает содержимое XML\-файла ленты. Приложения Microsoft Office вызывают этот метод, чтобы получить XML\-строку, которая определяет пользовательский интерфейс настраиваемой ленты. Этот метод реализует метод <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A>. **Note:**  `GetCustomUI` необходимо реализовывать только для возврата содержимого XML\-файла ленты. Его не следует использовать для инициализации надстройки VSTO. В частности, не пытайтесь отображать диалоговые или прочие окна в своей реализации `GetCustomUI`. В противном случае настраиваемая лента может работать некорректно. Если необходимо запускать код, который инициализирует надстройку VSTO, добавьте этот код в обработчик событий `ThisAddIn_Startup`.|  
-|`OnLoad`|Назначает параметр <xref:Microsoft.Office.Core.IRibbonControl> полю `ribbon`. Приложения Microsoft Office вызывают этот метод при загрузке настраиваемой ленты. Это поле можно использовать для динамического обновления настраиваемой ленты. Дополнительные сведения см. в технической статье [Настройка пользовательского интерфейса ленты Office \(2007\) для разработчиков \(часть 1 из 3\)](http://msdn.microsoft.com/ru-ru/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
-|`GetResourceText`|Вызывается методом `GetCustomUI` для получения содержимого XML\-файла ленты.|  
+|Method|Description|  
+|------------|-----------------|  
+|`GetCustomUI`|Returns the contents of the Ribbon XML file. Microsoft Office applications call this method to obtain an XML string that defines the user interface of your custom Ribbon. This method implements the <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> method. **Note:**  `GetCustomUI` should be implemented only to return the contents of the Ribbon XML file; it should not be used to initialize your VSTO Add-in. In particular, you should not try to display dialog boxes or other windows in your `GetCustomUI` implementation. Otherwise, the custom Ribbon might not behave correctly. If you have to run code that initializes your VSTO Add-in, add the code to the `ThisAddIn_Startup` event handler.|  
+|`OnLoad`|Assigns the <xref:Microsoft.Office.Core.IRibbonControl> parameter to the `ribbon` field. Microsoft Office applications call this method when they load the custom Ribbon. You can use this field to dynamically update the custom Ribbon. For more information, see the technical article [Customizing the Office (2007) Ribbon User Interface for Developers (Part 1 of 3)](http://msdn.microsoft.com/en-us/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
+|`GetResourceText`|Called by the `GetCustomUI` method to obtain the contents of the Ribbon XML file.|  
   
-## См. также  
- [Обзор ленты](../vsto/ribbon-overview.md)   
- [Пошаговое руководство. Создание настраиваемой вкладки с помощью XML-лент](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)   
- [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)  
+## <a name="see-also"></a>See Also  
+ [Ribbon Overview](../vsto/ribbon-overview.md)   
+ [Walkthrough: Creating a Custom Tab by Using Ribbon XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)   
+ [Office UI Customization](../vsto/office-ui-customization.md)  
   
   

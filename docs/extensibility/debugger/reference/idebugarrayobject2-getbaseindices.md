@@ -1,5 +1,5 @@
 ---
-title: "IDebugArrayObject2::GetBaseIndices | Документы Microsoft"
+title: IDebugArrayObject2::GetBaseIndices | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -29,43 +29,44 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: a4d56a4d6173f1efc648792f3e00c74757044a4b
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3aa9ad51de0f929083457eed86d69cf23f99d10d
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
-Получает базовый индексы (нижней границы) для каждого индекса, учитывая количество измерений в массиве.  
+Retrieves the base indices (lower bounds) for each index given the number of dimensions in the array.  
   
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetBaseIndices (  
    DWORD  dwRank,  
    DWORD* dwIndices  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetBaseIndices (  
    uint       dwRank,  
    out uint[] dwIndices  
 );  
 ```  
   
-#### <a name="parameters"></a>Параметры  
+#### <a name="parameters"></a>Parameters  
  `dwRank`  
- [in] Число измерений массива (ранг).  
+ [in] The number of dimensions (rank) of the array.  
   
  `dwIndices`  
- [out] Базовые индексы (нижней границы) для массива.  
+ [out] The base indices (lower bounds) for the array.  
   
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="remarks"></a>Примечания  
- Например эта функция возвращает "5" для массива, создаваемого с помощью следующего кода C#:  
+## <a name="remarks"></a>Remarks  
+ As an example, this function would return '5' for the array created by the following C# code:  
   
 ```  
 int[] lengths = { 12 };  
@@ -73,5 +74,5 @@ int[] lowerbounds = { 5 };
 Array.CreateInstance(typeof(int), lengths, lowerbounds);  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>See Also  
  [IDebugArrayObject2](../../../extensibility/debugger/reference/idebugarrayobject2.md)

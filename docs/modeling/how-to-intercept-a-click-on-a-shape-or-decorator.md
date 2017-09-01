@@ -1,5 +1,5 @@
 ---
-title: "Практическое руководство: перехват щелчка фигуры или декоратора | Документы Microsoft"
+title: 'How to: Intercept a Click on a Shape or Decorator | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -13,17 +13,18 @@ caps.latest.revision: 21
 author: alancameronwills
 ms.author: awills
 manager: douge
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c6edcb51e3de083ff2a8c3ee7998a64f091fe176
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3eb235ec6c38b4995460308c0ac8b104b76f8492
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Практическое руководство. Перехват щелчка фигуры или декоратора
-Следующие процедуры демонстрируют перехват щелчка фигуры или декоратора значок. Может перехватывать щелчки, двойные щелчки, перетаскивает, и другими жесты или сделать элемент ответа.  
+# <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>How to: Intercept a Click on a Shape or Decorator
+The following procedures demonstrate how to intercept a click on a shape or an icon decorator. You can intercept clicks, double-clicks, drags, and other gestures, and make the element respond.  
   
-## <a name="to-intercept-clicks-on-shapes"></a>Для перехвата щелкает фигур  
- В проекте Dsl в файле кода, который отделен от созданных файлах кода напишите определение разделяемого класса для класса shape. Переопределение `OnDoubleClick()` или одного из других методов, имя которого начинается с `On...`. Пример:  
+## <a name="to-intercept-clicks-on-shapes"></a>To Intercept Clicks on Shapes  
+ In the Dsl project, in a code file that is separate from the generated code files, write a partial class definition for the shape class. Override `OnDoubleClick()` or one of the other methods that has a name beginning with `On...`. For example:  
   
 ```  
 public partial class MyShape // change  
@@ -37,20 +38,20 @@ public partial class MyShape // change
 ```  
   
 > [!NOTE]
->  Задайте `e.Handled` в `true`, если не нужно события должны быть переданы содержащего фигура или схема.  
+>  Set `e.Handled` to `true`, unless you want the event to be passed to the containing shape or diagram.  
   
-## <a name="to-intercept-clicks-on-decorators"></a>Для перехвата щелкает декораторов  
- В экземпляре класса ImageField, который содержит метод OnDoubleClick переносятся декораторы изображения. При создании подкласса ImageField, может перехватывать щелчков. Поля определяются в метод InitializeShapeFields. Таким образом необходимо изменить этот метод, чтобы создать экземпляр подкласса вместо обычных ImageField. Метод InitializeShapeFields находится в созданный код класса shape. Можно переопределить класс shape, если задать его `Generates Double Derived` свойства, как описано в следующей процедуре.  
+## <a name="to-intercept-clicks-on-decorators"></a>To Intercept Clicks on Decorators  
+ Image decorators are carried on an instance of ImageField class, which has an OnDoubleClick method. You can intercept the clicks if you write an ImageField subclass. The fields are set up in the InitializeShapeFields method. Therefore, you must change that method to instantiate your subclass instead of the regular ImageField. The InitializeShapeFields method is in the generated code of the shape class. You can override the shape class if you set its `Generates Double Derived` property as described in the following procedure.  
   
- Несмотря на то, что InitializeShapeFields является методом экземпляра, он вызывается только один раз для каждого класса. Таким образом существует только один экземпляр ClickableImageField для каждого поля в каждом классе, а не одного экземпляра для каждой фигуры на схеме. Когда пользователь дважды щелкает экземпляр, необходимо определить, достиг какой экземпляр как показано в примере кода.  
+ Although InitializeShapeFields is an instance method, it is called only once for each class. Therefore, only one instance of ClickableImageField exists for each field in each class, not one instance for each shape in the diagram. When the user double-clicks an instance, you must identify which instance has been hit, as the code in the example demonstrates.  
   
-#### <a name="to-intercept-a-click-on-an-icon-decorator"></a>Для перехвата щелкнуть значок декоратора  
+#### <a name="to-intercept-a-click-on-an-icon-decorator"></a>To intercept a click on an icon decorator  
   
-1.  Откройте или создайте решение DSL.  
+1.  Open or create a DSL solution.  
   
-2.  Выберите или создайте фигуры декоратора значок и сопоставляется с классом домена.  
+2.  Choose or create a shape that has an icon decorator, and map it to a domain class.  
   
-3.  В файле кода отдельно от файлов в `GeneratedCode` папке создайте новый подкласс ImageField:  
+3.  In a code file that is separate from the files in the `GeneratedCode` folder, create the new subclass of ImageField:  
   
     ```  
     using Microsoft.VisualStudio.Modeling;  
@@ -86,9 +87,9 @@ public partial class MyShape // change
     }  
     ```  
   
-     Необходимо задать Handled на true, если событие передается содержащего фигуры не требуется.  
+     You should set Handled to true if you do not want the event to be passed to the containing shape.  
   
-4.  Переопределите метод InitializeShapeFields в вашей classs фигуры, добавив следующие определения разделяемого класса.  
+4.  Override the InitializeShapeFields method in your shape classs by adding the following partial class definition.  
   
     ```  
     public partial class MyShape // change  
@@ -115,40 +116,40 @@ public partial class MyShape // change
     }  
     ```  
   
-1.  Постройте и запустите это решение.  
+1.  Build and run the solution.  
   
-2.  Дважды щелкните значок в экземпляре фигуры. Появится тестового сообщения.  
+2.  Double-click the icon on an instance of the shape. Your test message should appear.  
   
-## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Перехват щелкает и перетаскивает CompartmentShape списков  
- Следующий пример позволяет пользователям изменять порядок элементов в фигуры секции, перетаскивая их. Для выполнения этого кода:  
+## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Intercepting clicks and drags on CompartmentShape lists  
+ The following sample allows users to re-order items in a compartment shape by dragging them. To run this code:  
   
-1.  Создание нового решения DSL с помощью **схемы классов** шаблона решения.  
+1.  Create a new DSL solution by using the **Class Diagrams** solution template.  
   
-     Можно также работать с собственные решения, содержащего фигуры секций. Предполагается, что существует отношение внедрения между элементами модели, представленной фигуры и элементов, представленных в список элементов секций.  
+     You can also work with a solution of your own that contains compartment shapes. This code assumes that there is an embedding relationship between the model elements represented by the shape, and the elements represented in the compartment list items.  
   
-2.  Задайте **создает двойную производную** свойство фигуры секции.  
+2.  Set the **Generates Double Derived** property of the compartment shape.  
   
-3.  Добавьте следующий код в файл в **Dsl** проекта.  
+3.  Add this code in a file in the **Dsl** project.  
   
-4.  Измените имена класса и формы доменов в этот код, чтобы соответствовать собственный DSL.  
+4.  Adjust the domain class and shape names in this code to match your own DSL.  
   
- Таким образом код работает следующим образом. В этом примере `ClassShape` имя фигуры секции.  
+ In summary, the code works as follows. In this example, `ClassShape` is the name of the compartment shape.  
   
--   Набор обработчиков событий мыши присоединяется к каждому экземпляру секции при его создании.  
+-   A set of mouse event handlers is attached to each compartment instance when it is created.  
   
--   `ClassShape.MouseDown` Событий сохраняет текущий элемент.  
+-   The `ClassShape.MouseDown` event stores the current item.  
   
--   При перемещении указателя мыши из текущего элемента, создается экземпляр MouseAction, который задает курсор и захвате мыши до освобождения.  
+-   When the mouse moves out of the current item, an instance of MouseAction is created, which sets the cursor and captures the mouse until it is released.  
   
-     Чтобы не помешать выполнению других действия с мышью, например выделение текста элемента, MouseAction не создается, пока указатель мыши покинул исходного элемента.  
+     To avoid interfering with other mouse actions, such as selecting the text of an item, the MouseAction is not created until the mouse has left the original item.  
   
-     Альтернативой созданию MouseAction будет просто ожидать MouseUp. Тем не менее это будет работать неправильно, если пользователь отпускает кнопку мыши после перетаскивания его за пределами секции. MouseAction возможность выполнять соответствующие действия, независимо от того, где кнопка мыши отпущена.  
+     An alternative to creating a MouseAction would be simply to listen for MouseUp. However, this would not work properly if the user releases the mouse after dragging it outside the compartment. The MouseAction is able to perform the appropriate action no matter where the mouse is released.  
   
--   Когда кнопка мыши отпущена, MouseAction.MouseUp изменит порядок ссылок между элементами модели.  
+-   When the mouse is released, MouseAction.MouseUp rearranges the order of the links between the model elements.  
   
--   Изменение порядка роли срабатывает правило, которое обновляет изображение. Это поведение уже определены, и без дополнительного кода не требуется.  
+-   The change of role order fires a rule that updates the display. This behavior is already defined, and no additional code is required.  
   
-```c#  
+```csharp  
 using Microsoft.VisualStudio.Modeling;  
 using Microsoft.VisualStudio.Modeling.Design;  
 using Microsoft.VisualStudio.Modeling.Diagrams;  
@@ -397,6 +398,6 @@ namespace Company.CompartmentDrag
   
 ```  
   
-## <a name="see-also"></a>См. также  
- [Реагирование на изменения и их распространение](../modeling/responding-to-and-propagating-changes.md)   
- [Свойства декораторов](../modeling/properties-of-decorators.md)
+## <a name="see-also"></a>See Also  
+ [Responding to and Propagating Changes](../modeling/responding-to-and-propagating-changes.md)   
+ [Properties of Decorators](../modeling/properties-of-decorators.md)

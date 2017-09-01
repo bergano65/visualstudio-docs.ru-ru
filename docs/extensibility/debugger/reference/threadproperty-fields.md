@@ -1,92 +1,109 @@
 ---
-title: "THREADPROPERTY_FIELDS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "THREADPROPERTY_FIELDS"
-helpviewer_keywords: 
-  - "Перечисление THREADPROPERTY_FIELDS"
+title: THREADPROPERTY_FIELDS | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- THREADPROPERTY_FIELDS
+helpviewer_keywords:
+- THREADPROPERTY_FIELDS enumeration
 ms.assetid: 5b88acb9-03ea-4c29-a788-f0087dccbe23
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# THREADPROPERTY_FIELDS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f92f2e749cbba7431d1be2daa3ada0c26bd7157c
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-Определяет, какие сведения о потоке требуется извлечь.  
+---
+# <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
+Specifies what information about a thread is to be retrieved.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-enum enum_THREADPROPERTY_FIELDS {   
-   TPF_ID           = 0x0001,  
-   TPF_SUSPENDCOUNT = 0x0002,  
-   TPF_STATE        = 0x0004,  
-   TPF_PRIORITY     = 0x0008,  
-   TPF_NAME         = 0x0010,  
-   TPF_LOCATION     = 0x0020,  
-   TPF_ALLFIELDS    = 0xffffffff  
+```cpp  
+enum enum_THREADPROPERTY_FIELDS {   
+   TPF_ID           = 0x0001,  
+   TPF_SUSPENDCOUNT = 0x0002,  
+   TPF_STATE        = 0x0004,  
+   TPF_PRIORITY     = 0x0008,  
+   TPF_NAME         = 0x0010,  
+   TPF_LOCATION     = 0x0020,  
+   TPF_ALLFIELDS    = 0xffffffff  
 };  
 typedef DWORD THREADPROPERTY_FIELDS;  
 ```  
   
-```c#  
-public enum enum_THREADPROPERTY_FIELDS {   
-   TPF_ID           = 0x0001,  
-   TPF_SUSPENDCOUNT = 0x0002,  
-   TPF_STATE        = 0x0004,  
-   TPF_PRIORITY     = 0x0008,  
-   TPF_NAME         = 0x0010,  
-   TPF_LOCATION     = 0x0020,  
-   TPF_ALLFIELDS    = 0xffffffff  
+```csharp  
+public enum enum_THREADPROPERTY_FIELDS {   
+   TPF_ID           = 0x0001,  
+   TPF_SUSPENDCOUNT = 0x0002,  
+   TPF_STATE        = 0x0004,  
+   TPF_PRIORITY     = 0x0008,  
+   TPF_NAME         = 0x0010,  
+   TPF_LOCATION     = 0x0020,  
+   TPF_ALLFIELDS    = 0xffffffff  
 };  
 ```  
   
-## Члены  
- TPF\_ID  
- Инициализируйте и использование `dwThreadId` поле   [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) структура.  
+## <a name="members"></a>Members  
+ TPF_ID  
+ Initialize/use the `dwThreadId` field of the [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) structure.  
   
- TPF\_SUSPENDCOUNT  
- Инициализируйте и использование `dwSuspendCount` поле   `THREADPROPERTIE`структура s.  
+ TPF_SUSPENDCOUNT  
+ Initialize/use the `dwSuspendCount` field of the `THREADPROPERTIE`S structure.  
   
- TPF\_STATE  
- Инициализируйте и использование `dwThreadState` поле   `THREADPROPERTIE`структура s.  
+ TPF_STATE  
+ Initialize/use the `dwThreadState` field of the `THREADPROPERTIE`S structure.  
   
- TPF\_PRIORITY  
- Инициализируйте и использование `bstrPriority` поле   `THREADPROPERTIE`структура s.  
+ TPF_PRIORITY  
+ Initialize/use the `bstrPriority` field of the `THREADPROPERTIE`S structure.  
   
- TPF\_NAME  
- Инициализируйте и использование `bstrName` поле   `THREADPROPERTIE`структура s.  
+ TPF_NAME  
+ Initialize/use the `bstrName` field of the `THREADPROPERTIE`S structure.  
   
- TPF\_LOCATION  
- Инициализируйте и использование `bstrLocation` поле   `THREADPROPERTIE`структура s.  
+ TPF_LOCATION  
+ Initialize/use the `bstrLocation` field of the `THREADPROPERTIE`S structure.  
   
- TPF\_ALLFIELDS  
- Указывает все поля.  
+ TPF_ALLFIELDS  
+ Specifies all fields.  
   
-## Заметки  
- Эти значения передаются в качестве аргумента [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) метод, чтобы показать, какие поля  [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) структура быть инициализированным.  
+## <a name="remarks"></a>Remarks  
+ These values are passed as an argument to the [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) method to indicate which fields of the [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) structure are to be initialized.  
   
- Эти значения используются также in `dwFields` элемент  `THREADPROPERTIES` структура для указания того, какие поля используются и допустимы.  
+ These values are also used in `dwFields` member of the `THREADPROPERTIES` structure to indicate which fields are used and valid.  
   
- Эти флаги могут объединяться с побитовый оператор `OR`.  
+ These flags may be combined with a bitwise `OR`.  
   
-## Требования  
- Заголовок: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)   
  [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)

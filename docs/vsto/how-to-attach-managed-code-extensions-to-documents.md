@@ -1,60 +1,62 @@
 ---
-title: "Практическое руководство. Вложение расширений управляемого кода в документы"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "документы [разработка решений Office в Visual Studio], расширение управляемого кода"
-  - "расширения управляемого кода [разработка решений Office в Visual Studio], присоединение"
+title: 'How to: Attach Managed Code Extensions to Documents | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- managed code extensions [Office development in Visual Studio], attaching
+- documents [Office development in Visual Studio], managed code extensions
 ms.assetid: b38c3a35-8b4a-4e86-8475-88fa8a873a5d
 caps.latest.revision: 33
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 32
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 826004fdbcd73e109db008773a4bc8988f8e18b1
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Практическое руководство. Вложение расширений управляемого кода в документы
-  Сборку настройки можно вложить в существующий документ Microsoft Office Word или в книгу Microsoft Office Excel.  Документ или книга могут иметь любой формат файла, поддерживаемый проектами и средствами разработки Microsoft Office в Visual Studio.  Дополнительные сведения см. в разделе [Архитектура настроек на уровне документа](../vsto/architecture-of-document-level-customizations.md).  
+# <a name="how-to-attach-managed-code-extensions-to-documents"></a>How to: Attach Managed Code Extensions to Documents
+  You can attach a customization assembly to an existing Microsoft Office Word document or Microsoft Office Excel workbook. The document or workbook can be in any file format that is supported by the Microsoft Office projects and development tools in Visual Studio. For more information, see [Architecture of Document-Level Customizations](../vsto/architecture-of-document-level-customizations.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Для вложения настройки в документ Word или Excel используйте метод <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> класса <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>.  Поскольку класс <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> разработан для выполнения на компьютере, на котором не установлен Microsoft Office, этот метод можно использовать в решениях, которые не связаны с разработкой Microsoft Office напрямую \(например, в консоли или приложении Windows Forms\).  
+ To attach a customization to a Word or Excel document, use the <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> method of the <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> class. Because the <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> class is designed to be run on a computer that does not have Microsoft Office installed, you can use this method in solutions that are not directly related to Microsoft Office development (such as a console or Windows Forms application).  
   
 > [!NOTE]  
->  Загрузка настройки прекратится, если в коде ожидаются элементы управления, отсутствующие в указанном документе.  
+>  The customization will fail to load if the code expects controls that the specified document does not have.  
   
- ![ссылка на видео](~/data-tools/media/playvideo.gif "ссылка на видео") Для просмотра связанных демонстрационных видеороликов перейдите по ссылке [How Do I: Attach or Detach a VSTO Assembly from a Word Document?](http://go.microsoft.com/fwlink/?LinkId=136782).  
+ ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [How Do I: Attach or Detach a VSTO Assembly from a Word Document?](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
-### Вложение расширений управляемого кода в документ  
+### <a name="to-attach-managed-code-extensions-to-a-document"></a>To attach managed code extensions to a document  
   
-1.  В проекте, который не требует Microsoft Office, например консольное приложение или проект Windows Forms добавьте ссылку на сборки Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll и Microsoft.VisualStudio.Tools.Applications.Runtime.dll.  
+1.  In a project that does not require Microsoft Office, such as a console application or Windows Forms project, add a reference to the Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll and Microsoft.VisualStudio.Tools.Applications.Runtime.dll assemblies.  
   
-2.  Добавьте следующие операторы **Imports** или **using** в верхнюю часть файла кода.  
+2.  Add the following **Imports** or **using** statements to the top of your code file.  
   
-     [!code-csharp[Trin_VstcoreDeployment#4](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDeployment/CS/Program.cs#4)]
-     [!code-vb[Trin_VstcoreDeployment#4](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDeployment/VB/Program.vb#4)]  
+     [!code-csharp[Trin_VstcoreDeployment#4](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#4)]  [!code-vb[Trin_VstcoreDeployment#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#4)]  
   
-3.  Вызовите статический метод <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>.  
+3.  Call the static <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> method.  
   
-     В следующем примере кода используется перегрузка <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>.  Эта перегрузка принимает полный путь документа и <xref:System.Uri>, задающий расположение манифеста развертывания для настройки, которая включается в документ.  В этом примере предполагается, что документ Word с именем **ДокументWord1.docx** находится на рабочем столе, а манифест развертывания расположен в папке рабочего стола **Публикация**.  
+     The following code example uses the <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> overload. This overload takes the full path of the document and a <xref:System.Uri> that specifies the location of the deployment manifest for the customization you want to attach to the document. This example assumes that a Word document named **WordDocument1.docx** is on the desktop, and that the deployment manifest is located in a folder that is named **Publish** that is also on the desktop.  
   
-     [!code-csharp[Trin_VstcoreDeployment#3](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDeployment/CS/Program.cs#3)]
-     [!code-vb[Trin_VstcoreDeployment#3](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDeployment/VB/Program.vb#3)]  
+     [!code-csharp[Trin_VstcoreDeployment#3](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#3)]  [!code-vb[Trin_VstcoreDeployment#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#3)]  
   
-4.  Выполните построение проекта и запустите приложение на компьютере, на котором нужно применить настройки.  Компьютер должен иметь Visual Studio tools для office 2010 установлена среда выполнения.  
+4.  Build the project and run the application on the computer where you want to attach the customization. The computer must have the Visual Studio 2010 Tools for Office Runtime installed.  
   
-## См. также  
- [Управление документами на сервере с помощью класса ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [Практическое руководство. Удаление расширений управляемого кода из документов](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
- [Манифесты приложения и развертывания в решениях Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
-  
+## <a name="see-also"></a>See Also  
+ [Managing Documents on a Server by Using the ServerDocument Class](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
+ [How to: Remove Managed Code Extensions from Documents](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
+ [Application and Deployment Manifests in Office Solutions](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
   

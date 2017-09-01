@@ -1,126 +1,130 @@
 ---
-title: "Пошаговое руководство. Добавление приемников событий компонентов"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "разработка приложений SharePoint в Visual Studio, расширенные средства создания пакетов"
-  - "разработка приложений SharePoint в Visual Studio, приемники событий"
-  - "разработка приложений SharePoint в Visual Studio, приемники событий компонента"
+title: 'Walkthrough: Add Feature Event Receivers | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, advanced packaging tools
+- SharePoint development in Visual Studio, event receivers
+- SharePoint development in Visual Studio, feature event receivers
 ms.assetid: fbd44c33-2c27-4d57-abca-21cddc16fbc3
 caps.latest.revision: 24
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 23
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 5509743aa0d815bb2b3a7eece6c5822ac189ed14
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Добавление приемников событий компонентов
-  Приемники событий компонентов — это методы, выполняемые при возникновении следующих событий в SharePoint, связанных с компонентами:  
+# <a name="walkthrough-add-feature-event-receivers"></a>Walkthrough: Add Feature Event Receivers
+  Feature event receivers are methods that execute when one of the following feature-related events occurs in SharePoint:  
   
--   установка компонента;  
+-   A feature is installed.  
   
--   включение компонента;  
+-   A feature is activated.  
   
--   отключение компонента;  
+-   A feature is deactivated.  
   
--   удаление компонента.  
+-   A feature is removed.  
   
- В этом пошаговом руководстве показано, как добавить приемник событий в компонент проекта SharePoint.  В этом примере демонстрируются следующие задачи.  
+ This walkthrough demonstrates how to add an event receiver to a feature in a SharePoint project. It demonstrates the following tasks:  
   
--   Создание пустого проекта с приемником событий компонента.  
+-   Creating an empty project with a feature event receiver.  
   
--   Работа с методом **FeatureDeactivating**.  
+-   Handling the **FeatureDeactivating** method.  
   
--   Добавление объявлений в список Announcements с помощью объектной модели проекта SharePoint.  
+-   Using the SharePoint project object model to add an announcement to the Announcements list.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
--   Поддерживаемые выпуски Microsoft Windows и SharePoint.  Для получения дополнительной информации см. [Требования по разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Supported editions of Microsoft Windows and SharePoint. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Visual Studio.  
   
-## Создание проекта приемника событий компонента  
- Сначала необходимо создать проект, в котором будет содержаться приемник событий компонента.  
+## <a name="creating-a-feature-event-receiver-project"></a>Creating a Feature Event Receiver Project  
+ First, create a project to contain the feature event receiver.  
   
-#### Создание проекта с приемником событий компонента  
+#### <a name="to-create-a-project-with-a-feature-event-receiver"></a>To create a project with a feature event receiver  
   
-1.  В строке меню последовательно выберите пункты **Файл**, **Создать**, **Проект**, чтобы открыть диалоговое окно **Новый проект**.  
+1.  On the menu bar, choose **File**, **New**, **Project** to display the **New Project** dialog box.  
   
-2.  Разверните узел **SharePoint**, расположенный в области **Visual C\#** или **Visual Basic**, и выберите узел **2010**.  
+2.  Expand the **SharePoint** node under either **Visual C#** or **Visual Basic**, and then choose the **2010** node.  
   
-3.  На панели **Шаблоны** выберите шаблон **Проект SharePoint 2010**.  
+3.  In the **Templates** pane, choose the **SharePoint 2010 Project** template.  
   
-     Этот тип проекта предназначен для приемников событий компонентов, поскольку для них нет шаблона проекта.  
+     You use this project type for feature event receivers because they have no project template.  
   
-4.  В поле **Имя** введите FeatureEvtTest и нажмите кнопку **ОК**, чтобы открыть **Мастер настройки SharePoint**.  
+4.  In the **Name** box, enter **FeatureEvtTest**, and then choose the **OK** button to display the **SharePoint Customization Wizard**.  
   
-5.  На странице **Укажите сайт и уровень безопасности для отладки** введите URL\-адрес сайта сервера SharePoint, в который требуется добавить пользовательский элемент поля, или примите расположение по умолчанию \(http:\/\/\<*system name*\>\/\).  
+5.  On the **Specify the site and security level for debugging** page, enter the URL for the SharePoint server site to which you want to add the new custom field item, or use the default location (http://\<*system name*>/).  
   
-6.  В разделе **Какова степень доверия для этого решения SharePoint?** выберите **Развернуть как решение фермы**.  
+6.  In the **What is the trust level for this SharePoint solution?** section, choose the **Deploy as a farm solution** option button.  
   
-     Дополнительные сведения о сравнительных особенностях обезвреженных решений и решений фермы см. в разделе [Замечания об обезвреженных решениях](../sharepoint/sandboxed-solution-considerations.md).  
+     For more information about sandboxed solutions versus farm solutions, see [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  Нажмите кнопку **Готово**, а затем обратите внимание, что компонент с именем Feature1 находится в узле **Компоненты**.  
+7.  Choose the **Finish** button, and then notice that a feature that's named Feature1 appears under the **Features** node.  
   
-## Добавление приемника событий в компонент  
- Теперь добавьте в компонент приемник событий и добавьте код, выполняемый при отключении этого компонента.  
+## <a name="adding-an-event-receiver-to-the-feature"></a>Adding an Event Receiver to the Feature  
+ Next, add an event receiver to the feature and add code that executes when the feature is deactivated.  
   
-#### Добавление приемника событий в компонент  
+#### <a name="to-add-an-event-receiver-to-the-feature"></a>To add an event receiver to the feature  
   
-1.  Откройте контекстное меню для узла компонентов, а затем выберите **Добавить компонент**, чтобы создать компонент.  
+1.  Open the shortcut menu for the Features node, and then choose **Add Feature** to create a feature.  
   
-2.  В узле **Компоненты** откройте контекстное меню для **Feature1**, а затем выберите **Добавить приемник событий**, чтобы добавить приемник событий в компонент.  
+2.  Under the **Features** node, open the shortcut menu for **Feature1**, and then choose **Add Event Receiver** to add an event receiver to the feature.  
   
-     В компонент Feature1 добавится файл кода.  В данном случае он будет иметь имя Feature1.EventReceiver.cs или Feature1.EventReceiver.vb, в зависимости от языка программирования, используемого в проекте.  
+     This adds a code file under Feature1. In this case, it is named either Feature1.EventReceiver.cs or Feature1.EventReceiver.vb, depending on your project's development language.  
   
-3.  Если проект написан на [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)], добавьте следующий код в начало приемника событий, если он еще не находится там:,  
+3.  If your project is written in [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)], add the following code at the top of the event receiver if it is not already there:  
   
-     [!code-csharp[SP_FeatureEvt#1](../snippets/csharp/VS_Snippets_OfficeSP/sp_featureevt/cs/features/feature1/feature1.eventreceiver.cs#1)]  
+     [!code-csharp[SP_FeatureEvt#1](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#1)]  
   
-4.  Класс приемника событий содержит несколько закомментированных методов, действующих как события.  Замените метод **FeatureDeactivating** следующим кодом.  
+4.  The event receiver class contains several commented-out methods that act as events. Replace the **FeatureDeactivating** method with the following:  
   
-     [!code-csharp[SP_FeatureEvt#2](../snippets/csharp/VS_Snippets_OfficeSP/sp_featureevt/cs/features/feature1/feature1.eventreceiver.cs#2)]
-     [!code-vb[SP_FeatureEvt#2](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_featureevt/vb/features/feature1/feature1.eventreceiver.vb#2)]  
+     [!code-vb[SP_FeatureEvt#2](../sharepoint/codesnippet/VisualBasic/featureevt2vb/features/feature1/feature1.eventreceiver.vb#2)]  [!code-csharp[SP_FeatureEvt#2](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#2)]  
   
-## Тестирование приемника событий компонента  
- Затем отключите компонент, чтобы проверить, выдаст ли метод **FeatureDeactivating** объявление в список объявлений в SharePoint.  
+## <a name="testing-the-feature-event-receiver"></a>Testing the Feature Event Receiver  
+ Next, deactivate the feature to test whether the **FeatureDeactivating** method outputs an announcement to the SharePoint Announcements list.  
   
-#### Тестирование приемника событий компонента  
+#### <a name="to-test-the-feature-event-receiver"></a>To test the feature event receiver  
   
-1.  Задайте для свойства **Активная конфигурация развертывания** проекта значение **Без активации**.  
+1.  Set the value of the project's **Active Deployment Configuration** property to **No Activation**.  
   
-     Это предотвратит активацию компонента в SharePoint и позволит выполнить отладку приемников событий компонентов.  Дополнительные сведения см. в разделе [Отладка решений SharePoint](../sharepoint/debugging-sharepoint-solutions.md).  
+     Setting this property prevents the feature from activating in SharePoint and lets you debug feature event receivers. For more information, see [Debugging SharePoint Solutions](../sharepoint/debugging-sharepoint-solutions.md).  
   
-2.  Нажмите клавишу **F5** для запуска проекта и его развертывания в SharePoint.  
+2.  Choose the **F5** key to run the project and deploy it to SharePoint.  
   
-3.  В верхней части веб\-страницы SharePoint откройте меню **Действия сайта**, а затем выберите **Параметры сайта**.  
+3.  At the top of the SharePoint Web page, open the **Site Actions** menu, and then choose **Site Settings**.  
   
-4.  В разделе **Действия сайта** на странице **Параметры сайта** выберите ссылку **Управление компонентами сайта**.  
+4.  Under the **Site Actions** section of the **Site Settings** page, choose the **Manage site features** link.  
   
-5.  На странице **Компоненты** нажмите кнопку **Включить** рядом с компонентом **FeatureEvtTest Feature1**.  
+5.  On the **Features** page, choose the **Activate** button next to the **FeatureEvtTest Feature1** Feature.  
   
-6.  На странице **Компоненты**, нажмите кнопку **Деактивировать** рядом с компонентом **FeatureEvtTest Feature1**, а затем выберите ссылку **Деактивировать этот компонент**, подтверждающую отключения компонента.  
+6.  On the **Features** page, choose the **Deactivate** button next to the **FeatureEvtTest Feature1** Feature, and then choose the **Deactivate this feature** confirmation link to deactivate the Feature.  
   
-7.  Нажмите кнопку **Домой**.  
+7.  Choose the **Home** button.  
   
-     Обратите внимание, что после отключения компонента появилось объявление в списке **Announcements**.  
+     Notice that an announcement appears in the **Announcements** list after the feature is deactivated.  
   
-## См. также  
- [Практическое руководство. Создание приемника событий](../sharepoint/how-to-create-an-event-receiver.md)   
- [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [How to: Create an Event Receiver](../sharepoint/how-to-create-an-event-receiver.md)   
+ [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
   
   

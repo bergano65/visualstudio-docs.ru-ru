@@ -1,64 +1,68 @@
 ---
-title: "Практическое руководство. Расширение функциональных возможностей адаптера таблицы | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/17/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "данные [Visual Studio], расширение TableAdapters"
-  - "данные [Visual Studio], адаптеры таблиц TableAdapter"
-  - "адаптеры таблиц TableAdapter, добавление функциональных возможностей"
+title: Extend the functionality of a TableAdapter | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- data [Visual Studio], TableAdapters
+- data [Visual Studio], extending TableAdapters
+- TableAdapters, adding functionality
 ms.assetid: 418249c8-c7f3-47ef-a94c-744cb6fe6aaf
 caps.latest.revision: 11
-caps.handback.revision: 7
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 96fbd4dd36ea375eb8928b4cdd42c5371f74503f
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Практическое руководство. Расширение функциональных возможностей адаптера таблицы
-Функциональные возможности адаптера таблиц можно расширить путем добавления кода в файл разделяемого класса адаптера таблицы.  
+# <a name="extend-the-functionality-of-a-tableadapter"></a>Extend the functionality of a TableAdapter
+You can extend the functionality of a TableAdapter by adding code to the TableAdapter's partial class file.  
   
- Код, определяющий адаптер таблицы, генерируется повторно при внесении любых изменений в адаптер таблицы \(в **Конструкторе наборов данных** \) или во время выполнения мастеров, изменяющих конфигурацию адаптера таблицы.  Чтобы избежать удаления кода при повторной генерации адаптера таблицы, добавьте код в файл разделяемого класса адаптера таблицы.  
+ The code that defines a TableAdapter is regenerated when any changes are made to the TableAdapter in the **Dataset Designer**, or when a wizard  modifies the configuration of a TableAdapter. To prevent your code from being deleted during the regeneration of a TableAdapter, add code to the TableAdapter's partial class file.  
   
- \(Разделяемые классы позволяют коду определенного класса разделяться между несколькими физическими файлами.  Дополнительные сведения см. в разделе [Partial](/dotnet/visual-basic/language-reference/modifiers/partial) или [partial \(тип\)](/dotnet/csharp/language-reference/keywords/partial-type).\)  
+ Partial classes allow code for a specific class to be divided among multiple physical files. For more information, see [Partial](/dotnet/visual-basic/language-reference/modifiers/partial) or [partial (Type)](/dotnet/csharp/language-reference/keywords/partial-type).  
   
-## Поиск адаптеров таблиц в коде  
- Если адаптеры таблиц создаются с помощью **Конструктора наборов данных**, созданные классы адаптеров таблиц не создаются как вложенные классы <xref:System.Data.DataSet>.  Адаптеры таблиц находятся в пространстве имен, основанном на имени набора данных, связанного с адаптером таблицы.  Например, если приложение содержит набор данных с именем `HRDataSet`, адаптеры таблиц должны быть расположены в пространстве имен `HRDataSetTableAdapters`.  \(Именование соответствует следующему шаблону: *ИмяНабораДанных* \+ `TableAdapters`\).  
+## <a name="locate-tableadapters-in-code"></a>Locate TableAdapters in code  
+ While TableAdapters are designed with the **Dataset Designer**, the TableAdapter classes that are generated are not  nested classes of <xref:System.Data.DataSet>. TableAdapters are located in a namespace based on the name of the TableAdapter's associated dataset. For example, if your application contains a dataset named `HRDataSet`, the TableAdapters would be located in the `HRDataSetTableAdapters` namespace. (The naming convention follows this pattern: *DatasetName* + `TableAdapters`).  
   
- В следующем примере предполагается наличие адаптера таблицы с именем `CustomersTableAdapter` в проекте с `NorthwindDataSet`.  
+ The following example assumes a TableAdapter named `CustomersTableAdapter`is in a project with `NorthwindDataSet`.  
   
-#### Для создания разделяемого класса адаптера таблиц  
+#### <a name="to-create-a-partial-class-for-a-tableadapter"></a>To create a partial class for a TableAdapter  
   
-1.  Добавьте новый класс в проект, выбрав команду **Добавить класс** в меню **Проект**.  
+1.  Add a new class to your project by going to the **Project** menu and selecting **Add Class**.  
   
-2.  Назовите класс `CustomersTableAdapterExtended`.  
+2.  Name the class `CustomersTableAdapterExtended`.  
   
-3.  Нажмите кнопку **Добавить**.  
+3.  Select **Add**.  
   
-4.  Замените код правильным пространством имен и именем разделяемого класса для проекта.  Примеры.  
+4.  Replace the code with the correct namespace and partial class name for your project as follows:  
   
-     [!CODE [VbRaddataTableAdapters#2](../CodeSnippet/VS_Snippets_VBCSharp/VbRaddataTableAdapters#2)]  
+     [!code-csharp[VbRaddataTableAdapters#2](../data-tools/codesnippet/CSharp/extend-the-functionality-of-a-tableadapter_1.cs)]  [!code-vb[VbRaddataTableAdapters#2](../data-tools/codesnippet/VisualBasic/extend-the-functionality-of-a-tableadapter_1.vb)]  
   
-## См. также  
- [Общие сведения об адаптере таблиц](../data-tools/tableadapter-overview.md)   
- [Практическое руководство. Создание адаптера таблицы](../data-tools/create-and-configure-tableadapters.md)   
- [Практическое руководство. Создание запросов TableAdapter](../data-tools/how-to-create-tableadapter-queries.md)   
- [Практическое руководство. Расширение функциональных возможностей набора данных](../Topic/How%20to:%20Extend%20the%20Functionality%20of%20a%20Dataset.md)   
- [Пошаговые руководства работы с данными](../Topic/Data%20Walkthroughs.md)   
- [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Общие сведения о приложениях для работы с данными в Visual Studio](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [Подключение к данным в Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Подготовка приложения к получению данных](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Выборка данных в приложение](../data-tools/fetching-data-into-your-application.md)   
- [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Редактирование данных в приложении](../data-tools/editing-data-in-your-application.md)   
- [Проверка данных](../Topic/Validating%20Data.md)   
- [Сохранение данных](../data-tools/saving-data.md)
+## <a name="see-also"></a>See Also  
+ [Fill datasets by using TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)

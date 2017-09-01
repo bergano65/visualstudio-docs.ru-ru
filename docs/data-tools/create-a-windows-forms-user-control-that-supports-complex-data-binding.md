@@ -1,181 +1,189 @@
 ---
-title: "Пошаговое руководство. Создание пользовательского элемента управления Windows Forms со сложной привязкой данных | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "привязка данных, сложный"
-  - "привязка данных, пользовательские элементы управления"
-  - "пользовательские элементы управления [Visual Studio], сложная привязка данных"
+title: Create a Windows Forms user control with data binding | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- data binding, user controls
+- data binding, complex
+- user controls [Visual Studio], complex data binding
 ms.assetid: c8f29c2b-b49b-4618-88aa-33b6105880b5
 caps.latest.revision: 13
-caps.handback.revision: 10
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 084f2031588c9d364ac01f0869943401239fdaa4
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Создание пользовательского элемента управления Windows Forms со сложной привязкой данных
-При отображении данных на формах в приложениях Windows вы можете выбрать имеющиеся элементы управления в **Области элементов** или создать пользовательские элементы управления, если вашему приложению требуется функциональность, отсутствующая в стандартных элементах управления.  В этом пошаговом руководстве демонстрируется создание элемента управления, реализующего <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>.  Элементы управления, реализующие <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>, содержат свойство `DataSource` и `DataMember`, которое можно привязать к данным.  Такие элементы управления похожи на <xref:System.Windows.Forms.DataGridView> или <xref:System.Windows.Forms.ListBox>.  
+# <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Create a Windows Forms user control that supports complex data binding
+When displaying data on forms in Windows applications, you can choose existing controls from the **Toolbox**, or you can author custom controls if your application requires functionality that is not available in the standard controls. This walkthrough shows how to create a control that implements the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>. Controls that implement the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> contain a `DataSource` and `DataMember` property that can be bound to data. Such controls are similar to a <xref:System.Windows.Forms.DataGridView> or <xref:System.Windows.Forms.ListBox>.  
   
- Дополнительные сведения о создании элементов управления см. в разделе [Создание элементов управления Windows Forms во время разработки](../Topic/Developing%20Windows%20Forms%20Controls%20at%20Design%20Time.md).  
+ For more information on control authoring, see [Developing Windows Forms Controls at Design Time](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).  
   
- При создании элементов управления для использования в сценариях привязки к данным необходимо реализовать один из следующих атрибутов привязки к данным.  
+ When authoring controls for use in data-binding scenarios you need to implement one of the following data-binding attributes:  
   
-|Использование атрибута привязки к данным|  
-|----------------------------------------------|  
-|Реализуйте <xref:System.ComponentModel.DefaultBindingPropertyAttribute> на простых элементах управления, таких как <xref:System.Windows.Forms.TextBox>, которые отображают отдельный столбец \(или свойство\) данных.  Для получения дополнительной информации см. [Пошаговое руководство. Создание пользовательского элемента управления Windows Forms с простой привязкой данных](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).|  
-|Реализуйте <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> на элементах управления, таких как <xref:System.Windows.Forms.DataGridView>, которые отображают списки \(или таблицы\) данных.  \(Этот процесс описан в данном пошаговом руководстве.\)|  
-|Реализуйте <xref:System.ComponentModel.LookupBindingPropertiesAttribute> на элементах управления, таких как <xref:System.Windows.Forms.ComboBox>, которые отображают списки \(или таблицы\) данных, но также должны представлять отдельный столбец или отдельное свойство.  Для получения дополнительной информации см. [Пошаговое руководство. Создание пользовательского элемента управления Windows Forms с подстановочной привязкой данных](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|  
+|Data-binding attribute usage|  
+|-----------------------------------|  
+|Implement the <xref:System.ComponentModel.DefaultBindingPropertyAttribute> on simple controls, like a <xref:System.Windows.Forms.TextBox>, that display a single column (or property) of data. For more information, see [Create a Windows Forms user control that supports simple data binding](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).|  
+|Implement the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> on controls, like a <xref:System.Windows.Forms.DataGridView>, that display lists (or tables) of data. (This process is described in this walkthrough page.)|  
+|Implement the <xref:System.ComponentModel.LookupBindingPropertiesAttribute> on controls, like a <xref:System.Windows.Forms.ComboBox>, that display lists (or tables) of data but also need to present a single column or property. For more information, see [Create a Windows Forms user control that supports lookup data binding](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|  
   
- В этом пошаговом руководстве создается сложный элемент управления, отображающий строки данных из таблицы.  В данном примере используется таблица `Customers` из учебной базы данных "Борей".  Сложный элемент управления отображает таблицу клиентов в <xref:System.Windows.Forms.DataGridView> в пользовательском элементе управления.  
+ This walkthrough creates a complex control that displays rows of data from a table. This example uses the `Customers` table from the Northwind sample database. The complex user control will display the customers table in a <xref:System.Windows.Forms.DataGridView> in the custom control.  
   
- В этом пошаговом руководстве описаны следующие процедуры.  
+ During this walkthrough, you will learn how to:  
   
--   Создание нового проекта **Приложение Windows**.  
+-   Create a new **Windows Application**.  
   
--   Добавление нового **Пользовательского элемента управления** в проект.  
+-   Add a new **User Control** to your project.  
   
--   Визуальное проектирование пользовательского элемента управления.  
+-   Visually design the user control.  
   
--   Реализация атрибута `ComplexBindingProperty`.  
+-   Implement the `ComplexBindingProperty` attribute.  
   
--   Создание набора данных с помощью [мастер настройки источника данных](../data-tools/media/data-source-configuration-wizard.png).  
+-   Create a dataset with the [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png).  
   
--   Настройка таблицы **Клиенты** в [окно "Источники данных"](../Topic/Data%20Sources%20Window.md) для использования нового сложного элемента управления.  
+-   Set the **Customers** table in the [Data Sources Window](add-new-data-sources.md) to use the new complex control.  
   
--   Добавьте новый элемент управления, перетащив его из окна **Источники данных** на **Form1**.  
+-   Add the new control by dragging it from the **Data Sources Window** onto **Form1**.  
   
-## Обязательные компоненты  
- Для выполнения данного пошагового руководства требуется:  
+## <a name="prerequisites"></a>Prerequisites  
+ In order to complete this walkthrough, you will need:  
   
--   Доступ к примеру базы данных "Борей".  Для получения дополнительной информации см. [Практическое руководство. Установка образцов баз данных](../data-tools/how-to-install-sample-databases.md).  
+-   Access to the Northwind sample database. For more information, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
   
-## Создание приложения Windows  
- Первым шагом является создание **Приложения Windows**.  
+## <a name="create-a-windows-application"></a>Create a Windows Application  
+ The first step is to create a **Windows Application**.  
   
-#### Порядок создания нового проекта Windows  
+#### <a name="to-create-the-new-windows-project"></a>To create the new Windows project  
   
-1.  В меню **Файл** Visual Studio создайте новый **Проект**.  
+1.  In Visual Studio, from the **File** menu, create a new **Project**.  
   
-2.  Присвойте проекту имя "ComplexControlWalkthrough".  
+2.  Name the project **ComplexControlWalkthrough**.  
   
-3.  Выберите **Приложение Windows** и нажмите кнопку **ОК**.  Для получения дополнительной информации см. [Клиентские приложения](../Topic/Developing%20Client%20Applications%20with%20the%20.NET%20Framework.md).  
+3.  Select **Windows Application**, and click **OK**. For more information, see [Client Applications](/dotnet/framework/develop-client-apps).  
   
-     Создается проект **ComplexControlWalkthrough**, который добавляется в **Обозреватель решений**.  
+     The **ComplexControlWalkthrough** project is created, and added to **Solution Explorer**.  
   
-## Добавление пользовательского элемента управления в проект  
- Поскольку в данном руководстве сложный и привязываемый к данным элемент управления создается из **Пользовательского элемента управления**, вам следует добавить в проект элемент **Пользовательский элемент управления**.  
+## <a name="add-a-user-control-to-the-project"></a>Add a user control to the project  
+ Because this walkthrough creates a complex data-bindable control from a **User Control**, you must add a **User Control** item to the project.  
   
-#### Добавление пользовательского элемента управления в проект  
+#### <a name="to-add-a-user-control-to-the-project"></a>To add a user control to the project  
   
-1.  В меню **Проект** выберите пункт **Добавить пользовательский элемент управления**.  
+1.  From the **Project** menu, choose **Add User Control**.  
   
-2.  Введите ComplexDataGridView в области **Имя** и нажмите кнопку **Добавить**.  
+2.  Type **ComplexDataGridView** in the **Name** area, and then click **Add**.  
   
-     Элемент управления **ComplexDataGridView** добавляется в **Обозреватель решений** и открывается в конструкторе.  
+     The **ComplexDataGridView** control is added to **Solution Explorer**, and opens in the designer.  
   
-## Проектирование элемента управления ComplexDataGridView  
- Этот этап добавляет <xref:System.Windows.Forms.DataGridView> в пользовательский элемент управления.  
+## <a name="design-the-complexdatagridview-control"></a>Design the ComplexDataGridView control  
+ This step adds a <xref:System.Windows.Forms.DataGridView> to the user control.  
   
-#### Порядок проектирования элемента управления ComplexDataGridView  
+#### <a name="to-design-the-complexdatagridview-control"></a>To design the ComplexDataGridView control  
   
--   Перетащите <xref:System.Windows.Forms.DataGridView> из **Области элементов** на рабочую область конструирования пользовательского элемента управления.  
+-   Drag a <xref:System.Windows.Forms.DataGridView> from the **Toolbox** onto the user control's design surface.  
   
-## Добавление необходимого атрибута привязки к данным  
- Для сложных элементов управления, поддерживающих привязку к данным, можно реализовать <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>.  
+## <a name="add-the-required-data-binding-attribute"></a>Add the required data-binding attribute  
+ For complex controls that support data binding, you can implement the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>.  
   
-#### Реализация атрибута ComplexBindingProperties  
+#### <a name="to-implement-the-complexbindingproperties-attribute"></a>To implement the ComplexBindingProperties attribute  
   
-1.  Переключите элемент управления **ComplexDataGridView** в представление кода.  \(В меню **Вид** выберите **Код**.\)  
+1.  Switch the **ComplexDataGridView** control to code view. (On the **View** menu, select **Code**.)  
   
-2.  Замените код в `ComplexDataGridView` следующим кодом:  
+2.  Replace the code in the `ComplexDataGridView` with the following:  
   
-     [!code-cs[VbRaddataDisplaying#4](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-complex-data-binding_1.cs)]
-     [!code-vb[VbRaddataDisplaying#4](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-complex-data-binding_1.vb)]  
+     [!code-csharp[VbRaddataDisplaying#4](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-complex-data-binding_1.cs)]  [!code-vb[VbRaddataDisplaying#4](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-complex-data-binding_1.vb)]  
   
-3.  В меню **Построение** выберите пункт **Построить решение**.  
+3.  From the **Build** menu, choose **Build Solution**.  
   
-## Создание источника данных из вашей базы данных  
- В этом шаге **Мастер настройки источника данных** используется для создания источника данных на основе таблицы `Customers` в учебной базе данных "Борей".  Для создания подключения необходимо иметь доступ к учебной базе данных "Борей".  Дополнительные сведения о настройке учебной базы данных "Борей" см. в разделе [Практическое руководство. Установка образцов баз данных](../data-tools/how-to-install-sample-databases.md).  
+## <a name="creating-a-data-source-from-your-database"></a>Creating a data source from your database  
+ This step uses the **Data Source Configuration** wizard to create a data source based on the `Customers` table in the Northwind sample database. You must have access to the Northwind sample database to create the connection. For information on setting up the Northwind sample database, see [Install SQL Server sample databases](../data-tools/install-sql-server-sample-databases.md).  
   
-#### Создание источника данных  
+#### <a name="to-create-the-data-source"></a>To create the data source  
   
-1.  В меню **Данные** выберите команду **Показать источники данных**.  
+1.  On the **Data** menu, click **Show Data Sources**.  
   
-2.  В окне **Источники данных** выберите **Добавить новый источник данных**, чтобы запустить **Мастер настройки источника данных**.  
+2.  In the **Data Sources** window, select **Add New Data Source** to start the **Data Source Configuration** wizard.  
   
-3.  На странице **Выбор типа источника данных** выберите элемент **База данных** и нажмите **Далее**.  
+3.  Select **Database** on the **Choose a Data Source Type** page, and then click **Next**.  
   
-4.  На странице **Выбор подключения к базе данных** выполните одно из следующих действий.  
+4.  On the **Choose your Data Connection** page do one of the following:  
   
-    -   Если подключение к учебной базе данных Northwind доступно в раскрывающемся списке, то выберите его.  
+    -   If a data connection to the Northwind sample database is available in the drop-down list, select it.  
   
-         \-или\-  
+    -   Select **New Connection** to launch the **Add/Modify Connection** dialog box.  
   
-    -   Выберите **Новое подключение** для открытия диалогового окна **Добавить\/изменить подключение**.  
+5.  If your database requires a password, select the option to include sensitive data, and then click **Next**.  
   
-5.  Если базе данных требуется пароль, выберите параметр для включения конфиденциальных данных и щелкните **Далее**.  
+6.  On the **Save connection string to the Application Configuration file** page, click **Next**.  
   
-6.  На странице **Сохранение подключения в файле конфигурации приложения** нажмите кнопку **Далее**.  
+7.  On the **Choose your Database Objects** page, expand the **Tables** node.  
   
-7.  Разверните узел **Таблицы** на странице **Выбор объектов базы данных**.  
+8.  Select the `Customers` table, and then click **Finish**.  
   
-8.  Выберите таблицу `Customers` и нажмите **Готово**.  
+     The **NorthwindDataSet** is added to your project, and the `Customers` table appears in the **Data Sources** window.  
   
-     Объект **NorthwindDataSet** добавляется в проект, и таблица `Customers` отображается в окне **Источники данных**.  
+## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>Set the Customers table to use the ComplexDataGridView control  
+ Within the **Data Sources** window, you can set the control to be created prior to dragging items onto your form.  
   
-## Настройка таблицы клиентов на использование элемента управления ComplexDataGridView  
- Вы можете задать создаваемый элемент управления в окне **Источники данных** перед перетаскиванием элементов на форму.  
+#### <a name="to-set-the-customers-table-to-bind-to-the-complexdatagridview-control"></a>To set the Customers table to bind to the ComplexDataGridView control  
   
-#### Порядок настройки таблицы клиентов на привязку к элементу управления ComplexDataGridView  
+1.  Open **Form1** in the designer.  
   
-1.  Откройте **Form1** в конструкторе.  
+2.  Expand the **Customers** node in the **Data Sources** window.  
   
-2.  Разверните узел **Клиенты** в окне **Источники данных**.  
+3.  Click the drop-down arrow on the **Customers** node, and choose **Customize**.  
   
-3.  Щелкните стрелку раскрывающегося списка в узле **Клиенты** и выберите **Настройка**.  
+4.  Select the **ComplexDataGridView** from the list of **Associated Controls** in the **Data UI Customization Options** dialog box.  
   
-4.  Выберите **ComplexDataGridView** в списке **Связанные элементы управления** диалогового окна **Настройка данных интерфейса пользователя**.  
+5.  Click the drop-down arrow on the `Customers` table, and choose **ComplexDataGridView** from the control list.  
   
-5.  Щелкните стрелку раскрывающегося списка в таблице `Customers` и выберите **ComplexDataGridView** в списке элементов управления.  
+## <a name="add-controls-to-the-form"></a>Add controls to the form  
+ You can create the data-bound controls by dragging items from the **Data Sources** window onto your form.  
   
-## Добавление элементов управления на форму  
- Вы можете создавать элементы управления с привязкой к данным с помощью перетаскивания элементов из окна **Источники данных** на форму.  
+#### <a name="to-create-data-bound-controls-on-the-form"></a>To create data-bound controls on the form  
   
-#### Создание элементов управления с привязкой к данным на форме  
+-   Drag the main **Customers** node from the **Data Sources** window onto the form.Verify that the **ComplexDataGridView** control is used to display the table's data.  
   
--   Перетащите главный узел **Клиенты** из окна **Источники данных** на форму и убедитесь, что элемент управления **ComplexDataGridView** используется для отображения данных таблицы.  
+## <a name="running-the-application"></a>Running the application  
   
-## Запуск приложения  
+#### <a name="to-run-the-application"></a>To run the application  
   
-#### Запуск приложения  
+-   Press F5 to run the application.  
   
--   Нажмите клавишу F5 для запуска приложения.  
+## <a name="next-steps"></a>Next Steps  
+ Depending on your application requirements, there are several steps you may want to perform after creating a control that supports databinding. Some typical next steps include:  
   
-## Следующие действия  
- В зависимости от требований приложения существуют несколько шагов, которые, возможно, потребуется выполнить после создания элемента управления, поддерживающего привязку к данным.  Некоторые типичные дальнейшие действия.  
+-   Placing your custom controls in a control library so you can reuse them in other applications.  
   
--   Помещение пользовательских элементов управления в библиотеку элементов управления, чтобы их можно было повторно использовать в других приложениях.  
+-   Creating controls that support lookup scenarios. For more information, see [Create a Windows Forms user control that supports lookup data binding](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).  
   
--   Создание элементов управления, поддерживающих сценарии поиска.  Для получения дополнительной информации см. [Пошаговое руководство. Создание пользовательского элемента управления Windows Forms с подстановочной привязкой данных](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).  
-  
-## См. также  
- [Задание поведения, при котором элемент управления создается при перетаскивании из окна "Источники данных"](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)   
- [Элементы управления Windows Forms](../Topic/Windows%20Forms%20Controls.md)   
- [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Подключение к данным в Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Подготовка приложения к получению данных](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Выборка данных в приложение](../data-tools/fetching-data-into-your-application.md)   
- [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Редактирование данных в приложении](../data-tools/editing-data-in-your-application.md)   
- [Проверка данных](../Topic/Validating%20Data.md)   
- [Сохранение данных](../data-tools/saving-data.md)
+## <a name="see-also"></a>See Also  
+ [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
+ [Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)   
+ [Windows Forms Controls](/dotnet/framework/winforms/controls/index)
+

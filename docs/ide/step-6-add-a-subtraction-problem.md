@@ -1,87 +1,100 @@
 ---
-title: "Шаг 6. Добавление задачи на вычитание | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'Step 6: Add a Subtraction Problem | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
 caps.latest.revision: 25
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 25
----
-# Шаг 6. Добавление задачи на вычитание
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: d5323f8d6518992ebdb06c86c5931a556b7622a7
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
-В шестой части этого учебника вам предстоит добавить задачу на вычитание и научиться выполнять следующие задачи:  
+---
+# <a name="step-6-add-a-subtraction-problem"></a>Step 6: Add a Subtraction Problem
+In the sixth part of this tutorial, you'll add a subtraction problem and learn how to perform the following tasks:  
   
--   Хранение значений, которые участвуют в операции вычитания.  
+-   Store the subtraction values.  
   
--   Создание случайных чисел для задачи \(а также гарантия, что ответ лежит в диапазоне от 0 до 100\).  
+-   Generate random numbers for the problem (and be sure that the answer is between 0 and 100).  
   
--   Обновление метода, который проверяет ответы, таким образом, чтобы он также проверял новую задачу на вычитание.  
+-   Update the method that checks the answers so that it checks the new subtraction problem too.  
   
--   Обновление обработчика событий таймера Tick таким образом, чтобы этот обработчик событий заполнял корректный ответ после истечения времени.  
+-   Update your timer's Tick event handler so that the event handler fills in the correct answer when time runs out.  
   
-### Добавление задачи на вычитание  
+### <a name="to-add-a-subtraction-problem"></a>To add a subtraction problem  
   
-1.  Добавьте в форму две целочисленные переменные для задачи на вычитание — между целочисленными переменными для задачи на сложение и для таймера.  Код должен выглядеть следующим образом.  
+1.  Add two integer variables for the subtraction problem to your form, between the integer variables for the addition problem and the timer. The code should look like the following.  
   
-     [!code-vb[VbExpressTutorial3Step5_6#12](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_1.vb)]
-     [!code-cs[VbExpressTutorial3Step5_6#12](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_1.cs)]  
+     [!code-vb[VbExpressTutorial3Step5_6#12](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_1.vb)]  [!code-csharp[VbExpressTutorial3Step5_6#12](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_1.cs)]  
   
-     Имена новых целочисленных переменных — **minuend** и **subtrahend** — не являются терминами программирования.  Это принятые в арифметике обозначения для числа, которое вычитается из другого числа \(subtrahend — вычитаемое\), и числа, из которого производится вычитание \(minuend — уменьшаемое\).  Остаток — это уменьшаемое за минусом вычитаемого.  Можно использовать другие имена, так как программа не требует определенных имен для переменных, элементов управления, компонентов или методов.  Необходимо соблюдать правила — например, не начинать имена с цифр — но вообще можно использовать такие имена, как x1, x2, x3 и x4.  Однако универсальные имена ухудшают читабельность кода, и при возникновении проблем отследить их источник становится практически невозможно.  Чтобы имена переменных были уникальными и информативными, для умножения и деления далее в этом учебнике мы также будем использовать традиционные имена: multiplicand \(множимое\) × multiplier \(множитель\) \= product \(произведение\); dividend \(делимое\) ÷ divisor \(делитель\) \= quotient \(частное\).  
+     The names of the new integer variables—**minuend** and **subtrahend**—aren't programming terms. They're the traditional names in arithmetic for the number that's being subtracted (the subtrahend) and the number from which the subtrahend is being subtracted (the minuend). The difference is the minuend minus the subtrahend. You could use other names, because your program doesn't require specific names for variables, controls, components, or methods. You must follow rules such as not starting names with digits, but you can generally use names such as x1, x2, x3, and x4. However, generic names make code difficult to read and problems nearly impossible to track down. To keep variable names unique and helpful, you'll use the traditional names for multiplication (multiplicand × multiplier = product) and division (dividend ÷ divisor = quotient) later in this tutorial.  
   
-     Затем необходимо изменить метод `StartTheQuiz()`, чтобы получить случайные значения для задачи на вычитание.  
+     Next, you'll modify the `StartTheQuiz()` method to provide random values for the subtraction problem.  
   
-2.  Добавьте после комментария "Fill in the subtraction problem" \(Заполнение задачи на вычитание\) следующий код.  
+2.  Add the following code after the "Fill in the subtraction problem" comment.  
   
-     [!code-vb[VbExpressTutorial3Step5_6#13](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_2.vb)]
-     [!code-cs[VbExpressTutorial3Step5_6#13](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_2.cs)]  
+     [!code-vb[VbExpressTutorial3Step5_6#13](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_2.vb)]  [!code-csharp[VbExpressTutorial3Step5_6#13](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_2.cs)]  
   
-     Чтобы в задаче на вычитание не было отрицательных ответов, метод `Next()` класса `Random` в этом коде используется несколько иначе, чем в задаче на сложение.  Когда методу `Next()` передается два значения, он выбирает случайное число, которое больше первого значения или равно ему и меньше второго значения.  Следующий код выбирает случайное число в диапазоне от 1 до 100 и сохраняет его в переменной minuend.  
+     To prevent negative answers for the subtraction problem, this code uses the `Next()` method of the `Random` class a little differently from how the addition problem does. When you give the `Next()` method two values, it picks a random number that's greater than or equal to the first value and less than the second one. The following code chooses a random number from 1 through 100 and stores it in the minuend variable.  
   
-     [!code-vb[VbExpressTutorial3Step5_6#21](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_3.vb)]
-     [!code-cs[VbExpressTutorial3Step5_6#21](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_3.cs)]  
+     [!code-vb[VbExpressTutorial3Step5_6#21](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_3.vb)]  [!code-csharp[VbExpressTutorial3Step5_6#21](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_3.cs)]  
   
-     Вызвать метод `Next()` класса `Random`, который мы ранее в этом руководстве назвали "randomizer", можно различными способами.  Методы, которые можно вызывать несколькими способами, называются перегруженными. Для их изучения можно использовать IntelliSense.  Посмотрите еще раз на всплывающую подсказку окна IntelliSense для метода `Next()`.  
+     You can call the `Next()` method of the `Random` class, which you named "randomizer" earlier  in this tutorial, in multiple ways. Methods that you can call in more than one way are referred to as overloaded, and you can use IntelliSense to explore them. Look again at the tooltip of the IntelliSense window for the `Next()` method.  
   
-     ![Подсказка окна Intellisense](~/ide/media/express_overloads.png "Express\_Overloads")  
-Подсказка окна Intellisense  
+     ![Intellisense window tooltip](../ide/media/express_overloads.png "Express_Overloads")  
+Intellisense window tooltip  
   
-     В подсказке сказано **\(\+2 перегрузки\)**, что означает, что вызвать метод `Next()` можно еще двумя способами.  Перегрузки методов содержат разное количество или типы аргументов, поэтому работают слегка по\-разному.  Например, метод может принимать один целочисленный аргумент, тогда как одна из его перегрузок может принимать целое число и строку.  Выбирайте подходящую перегрузку в зависимости от того, что требуется сделать.  При добавлении кода в метод `StartTheQuiz()` в окне Intellisense появляется дополнительная информация, как только вы введете `randomizer.Next(`.  Нажимайте клавиши СТРЕЛКА ВВЕРХ и СТРЕЛКА ВНИЗ для перебора перегрузок, как показано на следующем рисунке.  
+     The tooltip shows **(+ 2 overload(s))**, which means that you can call the `Next()` method in two other ways. Overloads contain different numbers or types of arguments, so that they work slightly differently from one another. For example, a method might take a single integer argument, whereas one of its overloads might take an integer and a string. You choose the correct overload based on what you want it to do. When you add the code to the `StartTheQuiz()` method, more information appears in the Intellisense window as soon as you enter `randomizer.Next(`. Choose the Up Arrow and Down Arrow keys to cycle through the overloads, as the following illustration shows.  
   
-     ![Перегрузка метода Next&#40;&#41; в IntelliSense](~/ide/media/express_nextoverload.png "Express\_NextOverload")  
-Перегрузка метода Next\(\) в IntelliSense  
+     ![Overload for Next&#40;&#41; method in IntelliSense](../ide/media/express_nextoverload.png "Express_NextOverload")  
+Overload for Next() method in IntelliSense  
   
-     В данном случае необходимо выбрать последнюю перегрузку, чтобы можно было задать минимальное и максимальное значения.  
+     In this case, you want to choose the last overload, because you can specify minimum and maximum values.  
   
-3.  Для проверки правильного ответа для задачи на вычитание, измените метод `CheckTheAnswer()`.  
+3.  Modify the `CheckTheAnswer()` method to check for the correct subtraction answer.  
   
-     [!code-vb[VbExpressTutorial3Step5_6#14](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_4.vb)]
-     [!code-cs[VbExpressTutorial3Step5_6#14](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_4.cs)]  
+     [!code-vb[VbExpressTutorial3Step5_6#14](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_4.vb)]  [!code-csharp[VbExpressTutorial3Step5_6#14](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_4.cs)]  
   
-     В Visual C\# `&&` — это оператор `logical and` .  Эквивалентный оператор в языке Visual Basic — `AndAlso`.  Эти операторы означают, что "Если addend1 плюс addend2 равно значению NumericUpDown с именем sum и если minuend минус subtrahend равно значению NumericUpDown с именем difference". Метод `CheckTheAnswer()` возвращает значение `true`, только если игрок дал правильные ответы и на задачу на сложение, и на задачу на вычитание.  
+     In Visual C#, `&&` is the `logical and` operator. In Visual Basic, the equivalent operator is `AndAlso`. These operators indicate "If the sum of addend1 and addend2 equals the value of the sum NumericUpDown and if minuend minus subtrahend equals the value of the difference NumericUpDown." The `CheckTheAnswer()` method returns `true` only if the answers to the addition and the subtraction problems are both correct.  
   
-4.  Замените последнюю часть обработчика событий таймера Tick следующим кодом, чтобы по истечении времени этот обработчик событий проставлял правильный ответ.  
+4.  Replace the last part of the timer's Tick event handler with the following code so that it fills in the correct answer when time runs out.  
   
-     [!code-vb[VbExpressTutorial3Step5_6#22](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_5.vb)]
-     [!code-cs[VbExpressTutorial3Step5_6#22](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_5.cs)]  
+     [!code-vb[VbExpressTutorial3Step5_6#22](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_5.vb)]  [!code-csharp[VbExpressTutorial3Step5_6#22](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_5.cs)]  
   
-5.  Сохраните и выполните код.  
+5.  Save and run your code.  
   
-     Теперь программа включает в себя задачу на вычитание, как показано на следующем рисунке.  
+     Your program includes a subtraction problem, as the following illustration shows.  
   
-     ![Математическая головоломка с задачей на вычитание](../ide/media/express_addsubtract.png "Express\_AddSubtract")  
-Математическая головоломка с задачей на вычитание  
+     ![Math quiz with subtraction problem](../ide/media/express_addsubtract.png "Express_AddSubtract")  
+Math quiz with subtraction problem  
   
-### Продолжить или повторить пройденный материал  
+### <a name="to-continue-or-review"></a>To continue or review  
   
--   Следующий шаг руководства см. в разделе [Шаг 7. Добавление задач на умножение и деление](../Topic/Step%207:%20Add%20Multiplication%20and%20Division%20Problems.md).  
+-   To go to the next tutorial step, see [Step 7: Add Multiplication and Division Problems](../ide/step-7-add-multiplication-and-division-problems.md).  
   
--   Предыдущий шаг руководства см. в разделе [Шаг 5. Добавление обработчиков событий входа для элементов управления NumericUpDown](../Topic/Step%205:%20Add%20Enter%20Event%20Handlers%20for%20the%20NumericUpDown%20Controls.md).
+-   To return to the previous tutorial step, see [Step 5: Add Enter Event Handlers for the NumericUpDown Controls](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

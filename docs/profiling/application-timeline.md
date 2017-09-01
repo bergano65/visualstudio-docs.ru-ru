@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 0c850e9be6f05bac6c312ef8d746b92754eb3e6c
+ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
+ms.openlocfilehash: 254f2d9121566ef14c5470c3d940e4f781a0f5e2
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/30/2017
 
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Анализ потребления ресурсов и активности потоков пользовательского интерфейса (XAML)
@@ -120,7 +120,7 @@ ms.lasthandoff: 05/13/2017
 |**Макет**|В больших приложениях на экране могут одновременно отображаться тысячи элементов. Это может привести к низкой частоте кадров пользовательского интерфейса и, соответственно, низкой скорости ответа приложения. Событие макета (Layout) точно определяет затраты на размещение каждого элемента (например, время затраченное на Arrange, Measure, ApplyTemplate, ArrangeOverride и ArrangeOverride) и выполняет сборку визуальных деревьев, которые участвуют в передаче макета. Вы можете использовать эту визуализацию, чтобы определить, какие логические деревья требуют очистки, а также для оценки других механизмов отсрочки для оптимизации передачи макета.|  
 |**Прорисовка**|Время, затраченное на прорисовку элементов XAML на экране.|  
 |**Операции ввода-вывода**|Время, затраченное на получение данных с локального диска или из сетевых ресурсов, доступ к которым выполняется через [Microsoft Windows Internet (WinINet) API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx).|  
-|**App Code**|Время, затраченное на выполнение (пользовательского) кода приложения, который не связан с синтаксическим анализом и созданием макета.|  
+|**Код приложения**|Время, затраченное на выполнение (пользовательского) кода приложения, который не связан с синтаксическим анализом и созданием макета.|  
 |**Другие данные XAML**|Время, потраченное на исполнение кода среды выполнения XAML.|  
   
 > [!TIP]
@@ -137,6 +137,6 @@ ms.lasthandoff: 05/13/2017
 |![Настройка сведений о временной шкале](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Позволяет указать заметки для событий.|  
   
 ## <a name="see-also"></a>См. также  
- [Блог группы разработчиков WPF. Новое средство анализа производительности пользовательского интерфейса для приложений WPF](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)   
+ [Блог группы разработчиков WPF. Новое средство анализа производительности пользовательского интерфейса для приложений WPF](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)  
  [Рекомендации по повышению производительности приложений Магазина Windows на C++, C# и Visual Basic](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
- [Улучшение производительности приложений WPF](http://msdn.microsoft.com/Library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)
+ [Улучшение производительности приложений WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance) [Профилирование в Visual Studio](../profiling/index.md) [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md)

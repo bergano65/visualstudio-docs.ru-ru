@@ -1,48 +1,65 @@
 ---
-title: "CA1013: перегружайте оператор равенства при перегрузке сложения и вычитания | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "OverrideOperatorEqualsOnOverridingAddAndSubtract"
-  - "OverrideOperatorEqualsOnOverloadingAddAndSubtract"
-  - "CA1013"
-  - "OverloadOperatorEqualsOnOverloadingAddAndSubtract"
-helpviewer_keywords: 
-  - "OverrideOperatorEqualsOnOverloadingAddAndSubtract"
-  - "OverrideOperatorEqualsOnOverridingAddAndSubtract"
-  - "CA1013"
-  - "OverloadOperatorEqualsOnOverloadingAddAndSubtract"
+title: 'CA1013: Overload operator equals on overloading add and subtract | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- OverrideOperatorEqualsOnOverridingAddAndSubtract
+- OverrideOperatorEqualsOnOverloadingAddAndSubtract
+- CA1013
+- OverloadOperatorEqualsOnOverloadingAddAndSubtract
+helpviewer_keywords:
+- OverrideOperatorEqualsOnOverloadingAddAndSubtract
+- OverrideOperatorEqualsOnOverridingAddAndSubtract
+- CA1013
+- OverloadOperatorEqualsOnOverloadingAddAndSubtract
 ms.assetid: 5bd28d68-c179-49ff-af47-5250b8b18a10
 caps.latest.revision: 22
-caps.handback.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA1013: перегружайте оператор равенства при перегрузке сложения и вычитания
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 5d5f17ca16cc28e4b0c583755f87069836a9422b
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Overload operator equals on overloading add and subtract
 |||  
 |-|-|  
 |TypeName|OverloadOperatorEqualsOnOverloadingAddAndSubtract|  
 |CheckId|CA1013|  
-|Категория|Microsoft.Design|  
-|Критическое изменение|Не критическое|  
+|Category|Microsoft.Design|  
+|Breaking Change|Non-breaking|  
   
-## Причина  
- Открытый или защищенный тип реализует операторы сложения или вычитания без реализации оператора равенства.  
+## <a name="cause"></a>Cause  
+ A public or protected type implements the addition or subtraction operators without implementing the equality operator.  
   
-## Описание правила  
- Если экземпляры типа можно сочетать при помощи таких операций как сложение и вычитание, нужно почти всегда определять операцию равенства, которая должна возвращать значение `true` для любых двух экземпляров с одинаковыми составляющими значениями.  
+## <a name="rule-description"></a>Rule Description  
+ When instances of a type can be combined by using operations such as addition and subtraction, you should almost always define equality to return `true` for any two instances that have the same constituent values.  
   
- Заданный по умолчанию оператор равенства нельзя использовать в перегруженной реализации оператора равенства.  Это может привести к переполнению стека.  Для реализации оператора равенства воспользуйтесь методом Object.Equals.  См. следующий пример.  
+ You cannot use the default equality operator in an overloaded implementation of the equality operator. Doing so will cause a stack overflow. To implement the equality operator, use the Object.Equals method in your implementation. See the following example.  
   
 ```vb  
 If (Object.ReferenceEquals(left, Nothing)) Then  
@@ -52,34 +69,34 @@ Else
 End If  
 ```  
   
-```c#  
+```csharp  
 if (Object.ReferenceEquals(left, null))   
     return Object.ReferenceEquals(right, null);  
 return left.Equals(right);  
 ```  
   
-## Устранение нарушений  
- Чтобы исправить нарушение этого правила, реализуйте оператор равенства, чтобы он был математически однородным с операторами сложения и вычитания.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, implement the equality operator so that it is mathematically consistent with the addition and subtraction operators.  
   
-## Отключение предупреждений  
- Можно безопасно отключать предупреждения этого правила, если заданная по умолчанию реализация оператора равенства обеспечивает его правильную работу для заданного типа.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule when the default implementation of the equality operator provides the correct behavior for the type.  
   
-## Пример  
- В следующем примере определяется тип \(`BadAddableType`\), нарушающий это правило.  Этот тип должен реализовать оператор равенства, чтобы любые два экземпляра с одинаковыми значениями полей выдавали значение `true` для равенства.  Тип `GoodAddableType` демонстрирует исправленную реализацию.  Обратите внимание, что этот тип также реализует оператор неравенства и переопределяет <xref:System.Object.Equals%2A> для выполнения других правил.  При полной реализации также потребуется реализовать <xref:System.Object.GetHashCode%2A>.  
+## <a name="example"></a>Example  
+ The following example defines a type (`BadAddableType`) that violates this rule. This type should implement the equality operator to make any two instances that have the same field values test `true` for equality. The type `GoodAddableType` shows the corrected implementation. Note that this type also implements the inequality operator and overrides <xref:System.Object.Equals%2A> to satisfy other rules. A complete implementation would also implement <xref:System.Object.GetHashCode%2A>.  
   
- [!code-cs[FxCop.Design.AddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_1.cs)]  
+ [!code-csharp[FxCop.Design.AddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_1.cs)]  
   
-## Пример  
- В следующем примере проверяется равенство с помощью экземпляров типов, которые были определены раннее в этом разделе, для демонстрации правильного поведения оператора равенства.  
+## <a name="example"></a>Example  
+ The following example tests for equality by using instances of the types that were previously defined in this topic to illustrate the default and correct behavior for the equality operator.  
   
- [!code-cs[FxCop.Design.TestAddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_2.cs)]  
+ [!code-csharp[FxCop.Design.TestAddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_2.cs)]  
   
- В результате выполнения примера получается следующий результат:  
+ This example produces the following output.  
   
-  **Неверный тип:  {2,2} {2,2} равны?  Нет**  
-**Верный тип: {3,3} {3,3} равны?  Да**  
-**Верный тип: {3,3} {3,3} \=\= ?   Да**  
-**Неверный тип:  {2,2} {9,9} равны?  Нет**  
-**Верный тип: {3,3} {9,9} \=\= ?   Нет**    
-## См. также  
- [Операторы равенства](../Topic/Equality%20Operators.md)
+ **Bad type:  {2,2} {2,2} are equal? No**  
+**Good type: {3,3} {3,3} are equal? Yes**  
+**Good type: {3,3} {3,3} are == ?   Yes**  
+**Bad type:  {2,2} {9,9} are equal? No**  
+**Good type: {3,3} {9,9} are == ?   No**   
+## <a name="see-also"></a>See Also  
+ [Equality Operators](/dotnet/standard/design-guidelines/equality-operators)

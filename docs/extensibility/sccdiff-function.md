@@ -1,87 +1,104 @@
 ---
-title: "Функция SccDiff | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccDiff"
-helpviewer_keywords: 
-  - "Функция SccDiff"
+title: SccDiff Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccDiff
+helpviewer_keywords:
+- SccDiff function
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
----
-# Функция SccDiff
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: de66dd1f5bb36ac60c145d481f4d46722dc1ca59
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-Эта функция отображает \(или при необходимости просто проверяет\) различия текущего файла \(на локальном диске\) и его последней возвращенной версии в источнике системы управления.  
+---
+# <a name="sccdiff-function"></a>SccDiff Function
+This function displays (or optionally just checks for) the differences between the current file (on the local disk) and its last checked-in version in the source control system.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccDiff(  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LPCSTR    lpFileName,  
-   LONG      fOptions,  
-   LPCMDOPTS pvOptions  
+   LPVOID    pvContext,  
+   HWND      hWnd,  
+   LPCSTR    lpFileName,  
+   LONG      fOptions,  
+   LPCMDOPTS pvOptions  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Parameters  
  pvContext  
- \[in\] Структура подключаемого модуля контекста исходного элемента управления.  
+ [in] The source control plug-in context structure.  
   
  hWnd  
- \[in\] Дескриптор окна интегрированной среды разработки, подключаемый модуль системы управления версиями можно использовать в качестве родительского для все диалоговые окна, которые он предоставляет.  
+ [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
   
  lpFileName  
- \[in\] Имя файла, для которого запрашивается разницу.  
+ [in] File name for which the difference is requested.  
   
- Возможности  
- \[in\] Команда флаги. Дополнительные сведения см.  
+ fOptions  
+ [in] Command flags. See Remarks for details.  
   
  pvOptions  
- \[in\] Параметры конкретного подключаемого модуля системы управления версиями.  
+ [in] Source control plug-in-specific options.  
   
-## Возвращаемое значение  
- Реализации подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Значение|Описание|  
-|--------------|--------------|  
-|SCC\_OK|Версия рабочей копии и сервера совпадают.|  
-|SCC\_I\_FILESDIFFERS|Рабочая копия отличается от версии в системе управления версиями.|  
-|SCC\_I\_RELOADFILE|Файл или проект должен быть перезагружен.|  
-|SCC\_E\_FILENOTCONTROLLED|Файл не существует в системе управления версиями.|  
-|SCC\_E\_NOTAUTHORIZED|Для выполнения этой операции не разрешено пользователю.|  
-|SCC\_E\_ACCESSFAILURE|Произошла ошибка при доступе к системе управления версиями, вероятно, из\-за проблемы с сетью или конфликтов. Рекомендуется повторить операцию.|  
-|SCC\_E\_NONSPECIFICERROR|Неспецифическая ошибка; различия между файлами, не было получено.|  
-|SCC\_E\_FILENOTEXIST|Локальный файл не найден.|  
+|Value|Description|  
+|-----------|-----------------|  
+|SCC_OK|The working copy and server version are identical.|  
+|SCC_I_FILESDIFFERS|The working copy differs from the version under source control.|  
+|SCC_I_RELOADFILE|A file or project needs to be reloaded.|  
+|SCC_E_FILENOTCONTROLLED|The file is not under source control.|  
+|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
+|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
+|SCC_E_NONSPECIFICERROR|Nonspecific failure; file difference was not obtained.|  
+|SCC_E_FILENOTEXIST|The local file was not found.|  
   
-## Заметки  
- Эта функция выступает в двух различных целей. По умолчанию он отображает список изменений в файл. Подключаемый модуль системы управления версиями откроется отдельное окно, в том формате, он выбирает для отображения различий между пользовательским файлом на диске и последнюю версию файла в системе управления версиями.  
+## <a name="remarks"></a>Remarks  
+ This function serves two different purposes. By default, it displays a list of changes to a file. The source control plug-in opens its own window, in whatever format it chooses, to display the differences between the user's file on disk and the latest version of the file under source control.  
   
- Кроме того интегрированной среды разработки просто необходимо определить, является ли файл был изменен. Например интегрированной среды разработки может потребоваться определить, является ли безопасного извлечения файла без уведомления пользователя. В этом случае передает IDE `SCC_DIFF_CONTENTS` флаг. Подключаемый модуль системы управления версиями необходимо проверить файл на диске, байт за байтом, с версиями файла и возвращает значение, указывающее, различаются ли два файла не отображаются для пользователя.  
+ Alternatively, the IDE may simply need to determine whether a file has changed. For example, the IDE may need to determine whether it is safe to check out a file without informing the user. In that case, the IDE passes in the `SCC_DIFF_CONTENTS` flag. The source control plug-in must check the file on disk, byte by byte, against the source-controlled file and return a value indicating whether the two files are different without displaying anything to the user.  
   
- Для оптимизации производительности, подключаемый модуль системы управления версиями может использовать альтернативное, на основе контрольной суммы или метку времени вместо сравнения байт за байтом, вызываемые для `SCC_DIFF_CONTENTS`: эти формы сравнения очевидно быстрее, но менее надежной. Не все системы управления версиями может поддерживать эти методы альтернативные сравнения и подключаемый модуль может потребоваться переключиться на сравнение содержимого. Все источника подключаемые модули управления должен как минимум, поддерживать сравнение содержимого.  
+ As a performance optimization, the source control plug-in may use an alternative based on a checksum or a timestamp instead of the byte-by-byte comparison called for by `SCC_DIFF_CONTENTS`: these forms of comparison are obviously faster but less reliable. Not all source control systems may support these alternative comparison methods, and the plug-in may have to fall back to a contents comparison. All source control plug-ins must, at a minimum, support a contents comparison.  
   
 > [!NOTE]
->  Флаги быстрого различие являются взаимоисключающими. Передать флаги не допускается, но одновременно передавать несколько недопустимо.`SCC_DIFF_QUICK_DIFF`, являющийся маской, объединяющее все флаги можно использовать для тестирования, но никогда не должны передаваться как параметр.  
+>  The quick difference flags are mutually exclusive. It is valid to pass no flags, but it is not valid to simultaneously pass more than one. `SCC_DIFF_QUICK_DIFF`, which is a mask that combines all flags, can be used to test, but it should never be passed as a parameter.  
   
-|`fOption`|Смысл|  
-|---------------|-----------|  
-|SCC\_DIFF\_IGNORECASE|Сравнение без учета регистра \(может использоваться для быстрого либо visual разницы\).|  
-|SCC\_DIFF\_IGNORESPACE|Игнорирует пробелы \(может использоваться для быстрого либо visual разницы\).|  
-|SCC\_DIFF\_QD\_CONTENTS|Автоматически сравнивает файла байт за байтом.|  
-|SCC\_DIFF\_QD\_CHECKSUM|Автоматически сравнивает файл с помощью контрольной суммы, когда это возможно. Если не поддерживается, возвращается к сравнения содержимого.|  
-|SCC\_DIFF\_QD\_TIME|Автоматически сравнивает файл с помощью его отметки времени, когда это возможно. Если не поддерживается, возвращается к сравнения содержимого.|  
+|`fOption`|Meaning|  
+|---------------|-------------|  
+|SCC_DIFF_IGNORECASE|Case-insensitive comparison (may be used for either quick or visual difference).|  
+|SCC_DIFF_IGNORESPACE|Ignores white space (may be used for either quick or visual difference).|  
+|SCC_DIFF_QD_CONTENTS|Silently compares the file, byte by byte.|  
+|SCC_DIFF_QD_CHECKSUM|Silently compares the file via a checksum when supported. If not supported, falls back to a comparison of contents.|  
+|SCC_DIFF_QD_TIME|Silently compares the file via its timestamp when supported. If not supported, falls back to a comparison of contents.|  
   
-## См. также  
- [Функции API подключаемого модуля источника элемента управления](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)

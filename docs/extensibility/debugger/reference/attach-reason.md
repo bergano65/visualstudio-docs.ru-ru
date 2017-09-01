@@ -1,68 +1,85 @@
 ---
-title: "ATTACH_REASON | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ATTACH_REASON"
-helpviewer_keywords: 
-  - "Перечисление ATTACH_REASON"
+title: ATTACH_REASON | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- ATTACH_REASON
+helpviewer_keywords:
+- ATTACH_REASON enumeration
 ms.assetid: 159fb70b-a344-4ba6-9115-b7eaa16e228f
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# ATTACH_REASON
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 918c276f4a15a36bdaa54a64670a77da953440b4
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-Указывает причину для обработчика отладки \(DE\) вложение к узлу программы.  
+---
+# <a name="attachreason"></a>ATTACH_REASON
+Specifies the reason for the debug engine (DE) to attach to a program node.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-enum enum_ATTACH_REASON {   
-   ATTACH_REASON_LAUNCH = 0x0001,  
-   ATTACH_REASON_USER   = 0x0002,  
-   ATTACH_REASON_AUTO   = 0x0003  
+```cpp  
+enum enum_ATTACH_REASON {   
+   ATTACH_REASON_LAUNCH = 0x0001,  
+   ATTACH_REASON_USER   = 0x0002,  
+   ATTACH_REASON_AUTO   = 0x0003  
 };  
 typedef DWORD ATTACH_REASON;  
 ```  
   
-```c#  
-public enum enum_ATTACH_REASON {   
-   ATTACH_REASON_LAUNCH = 0x0001,  
-   ATTACH_REASON_USER   = 0x0002,  
-   ATTACH_REASON_AUTO   = 0x0003  
+```csharp  
+public enum enum_ATTACH_REASON {   
+   ATTACH_REASON_LAUNCH = 0x0001,  
+   ATTACH_REASON_USER   = 0x0002,  
+   ATTACH_REASON_AUTO   = 0x0003  
 };  
 ```  
   
-## Члены  
- ATTACH\_REASON\_AUTO  
- Вложите поскольку процесс в данный момент в режиме отладки.  
+## <a name="members"></a>Members  
+ ATTACH_REASON_AUTO  
+ Attach because the process is currently in debug mode.  
   
- ATTACH\_REASON\_LAUNCH  
- Вложите потому, что процесс запущен.  
+ ATTACH_REASON_LAUNCH  
+ Attach because the process has been launched.  
   
- ATTACH\_REASON\_USER  
- Вложение в результате запроса пользователя.  
+ ATTACH_REASON_USER  
+ Attach because of a user request.  
   
-## Заметки  
- Эти значения используются в качестве параметра [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) и  [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) методы.  
+## <a name="remarks"></a>Remarks  
+ These values are used as a parameter to the [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) and [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) methods.  
   
-## Требования  
- Заголовок: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
- [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
  [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)

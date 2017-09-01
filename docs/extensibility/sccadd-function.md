@@ -1,98 +1,115 @@
 ---
-title: "Функция SccAdd | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccAdd"
-helpviewer_keywords: 
-  - "Функция SccAdd"
+title: SccAdd Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccAdd
+helpviewer_keywords:
+- SccAdd function
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
 caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
----
-# Функция SccAdd
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 25b3dbc61b4fb57471737e41d3904effa9ed87be
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-Эта функция добавляет новые файлы системы управления версиями.  
+---
+# <a name="sccadd-function"></a>SccAdd Function
+This function adds new files to the source control system.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccAdd(  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LONG      nFiles,  
-   LPCSTR*   lpFileNames,  
-   LPCSTR    lpComment,  
-   LONG*     pfOptions,  
-   LPCMDOPTS pvOptions  
+   LPVOID    pvContext,  
+   HWND      hWnd,  
+   LONG      nFiles,  
+   LPCSTR*   lpFileNames,  
+   LPCSTR    lpComment,  
+   LONG*     pfOptions,  
+   LPCMDOPTS pvOptions  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Parameters  
  pvContext  
- \[in\] Структура подключаемого модуля контекста исходного элемента управления.  
+ [in] The source control plug-in context structure.  
   
  hWnd  
- \[in\] Дескриптор окна интегрированной среды разработки, подключаемый модуль системы управления версиями можно использовать в качестве родительского для все диалоговые окна, которые он предоставляет.  
+ [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
   
  nFiles  
- \[in\] Число файлов, выбранных для добавления в текущий проект, как оно указано в `lpFileNames` массива.  
+ [in] Number of files selected to be added to the current project as given in the `lpFileNames` array.  
   
  lpFileNames  
- \[in\] Массив полных имен локальных файлов для добавления.  
+ [in] Array of fully qualified local names of files to be added.  
   
  lpComment  
- \[in\] Комментарий, который применяется для всех файлов, для добавления.  
+ [in] The comment to be applied to all of the files being added.  
   
  pfOptions  
- \[in\] Массив из командной строки на каждого файла.  
+ [in] Array of command flags, provided on a per-file basis.  
   
  pvOptions  
- \[in\] Параметры конкретного подключаемого модуля системы управления версиями.  
+ [in] Source control plug-in-specific options.  
   
-## Возвращаемое значение  
- Реализации подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Значение|Описание|  
-|--------------|--------------|  
-|SCC\_OK|Добавить операция выполнена успешно.|  
-|SCC\_E\_FILEALREADYEXISTS|Указанный файл уже существует в системе управления версиями.|  
-|SCC\_E\_TYPENOTSUPPORTED|Тип файла \(например, двоичные\), системы управления версиями не поддерживается.|  
-|SCC\_E\_OPNOTSUPPORTED|Система управления версиями не поддерживает эту операцию.|  
-|SCC\_E\_ACCESSFAILURE|Произошла ошибка при доступе к системе управления версиями, вероятно, из\-за проблемы с сетью или конфликтов. Рекомендуется повторить операцию.|  
-|SCC\_E\_NOTAUTHORIZED|Для выполнения этой операции не разрешено пользователю.|  
-|SCC\_E\_NONSPECIFICERROR|Неспецифическая ошибка; Добавление не выполняется.|  
-|SCC\_I\_OPERATIONCANCELED|Операция была отменена до завершения.|  
-|SCC\_I\_RELOADFILE|Файл или проект должен быть перезагружен.|  
-|SCC\_E\_FILENOTEXIST|Локальный файл не найден.|  
+|Value|Description|  
+|-----------|-----------------|  
+|SCC_OK|The add operation was successful.|  
+|SCC_E_FILEALREADYEXISTS|The selected file is already under source control.|  
+|SCC_E_TYPENOTSUPPORTED|The type of the file (for example, binary) is not supported by the source control system.|  
+|SCC_E_OPNOTSUPPORTED|The source control system does not support this operation.|  
+|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
+|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
+|SCC_E_NONSPECIFICERROR|Nonspecific failure; add not performed.|  
+|SCC_I_OPERATIONCANCELED|The operation was cancelled before completion.|  
+|SCC_I_RELOADFILE|A file or project needs to be reloaded.|  
+|SCC_E_FILENOTEXIST|Local file was not found.|  
   
-## Заметки  
- Обычные `fOptions` здесь заменяются массивом, `pfOptions`, с одним `LONG` параметр спецификации каждого файла. Это потому, что тип файла зависит от файла к файлу.  
+## <a name="remarks"></a>Remarks  
+ The usual `fOptions` are replaced here by an array, `pfOptions`, with one `LONG` option specification per file. This is because the file type may vary from file to file.  
   
 > [!NOTE]
->  Нельзя указать оба `SCC_FILETYPE_TEXT` и `SCC_FILETYPE_BINARY` Параметры для одного файла, но не указывать ни одного. Задание не является таким же, как параметр `SCC_FILETYPE_AUTO`, в этом случае подключаемый модуль autodetects тип файлов управления версиями.  
+>  It is invalid to specify both `SCC_FILETYPE_TEXT` and `SCC_FILETYPE_BINARY` options for the same file, but it is valid to specify neither. Setting neither is the same as setting `SCC_FILETYPE_AUTO`, in which case the source control plug-in autodetects the file type.  
   
- Ниже приведен список флагов, используемых в `pfOptions` массива:  
+ Below is the list of flags used in the `pfOptions` array:  
   
-|Параметр|Значение|Смысл|  
-|--------------|--------------|-----------|  
-|SCC\_FILETYPE\_AUTO|0x00|Подключаемый модуль системы управления версиями следует определить тип файла.|  
-|SCC\_FILETYPE\_TEXT|0x01|Указывает текстовый файл ASCII.|  
-|SCC\_FILETYPE\_BINARY|0x02|Указывает тип файла, кроме текста ASCII.|  
-|SCC\_ADD\_STORELATEST|0x04|Сохраняет последнюю копию файла, а не разности.|  
-|SCC\_FILETYPE\_TEXT\_ANSI|0x08|Обрабатывает файл как текст ANSI.|  
-|SCC\_FILETYPE\_UTF8|0x10|Обрабатывает файл как текст в Юникоде в формат UTF8.|  
-|SCC\_FILETYPE\_UTF16LE|0x20|Обрабатывает файл как текст в кодировке Юникод в UTF16 Little Endian формата.|  
-|SCC\_FILETYPE\_UTF16BE|0x40|Обрабатывает файл как текст в кодировке Юникод в UTF16 Big Endian формате.|  
+|Option|Value|Meaning|  
+|------------|-----------|-------------|  
+|SCC_FILETYPE_AUTO|0x00|The source control plug-in should detect the file type.|  
+|SCC_FILETYPE_TEXT|0x01|Indicates an ASCII text file.|  
+|SCC_FILETYPE_BINARY|0x02|Indicates a file type other than ASCII text.|  
+|SCC_ADD_STORELATEST|0x04|Stores only the latest copy of the file, no deltas.|  
+|SCC_FILETYPE_TEXT_ANSI|0x08|Treats the file as ANSI text.|  
+|SCC_FILETYPE_UTF8|0x10|Treats the file as Unicode text in UTF8 format.|  
+|SCC_FILETYPE_UTF16LE|0x20|Treats the file as Unicode text in UTF16 Little Endian format.|  
+|SCC_FILETYPE_UTF16BE|0x40|Treats the file as Unicode text in UTF16 Big Endian format.|  
   
-## См. также  
- [Функции API подключаемого модуля источника элемента управления](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)

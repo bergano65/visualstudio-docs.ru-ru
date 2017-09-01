@@ -1,55 +1,72 @@
 ---
-title: "Добавление меню в строке меню Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "меню, Создание верхнего уровня"
-  - "меню верхнего уровня"
+title: Adding a Menu to the Visual Studio Menu Bar | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- menus, creating top level
+- top-level menus
 ms.assetid: 58fc1a31-2aeb-441c-8e48-c7d5cbcfe501
 caps.latest.revision: 51
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 51
----
-# Добавление меню в строке меню Visual Studio
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3e187603315224cdd73dbfaa53ea5cc7d4b0b7df
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-В этом пошаговом руководстве показано, как добавлять меню в строку меню среды разработки Visual Studio \(IDE\). Интегрированная среда разработки меню содержит меню категории, такие как **файл**, **Изменить**, **представление**, **окна**, и **помочь**.  
+---
+# <a name="adding-a-menu-to-the-visual-studio-menu-bar"></a>Adding a Menu to the Visual Studio Menu Bar
+This walkthrough shows how to add a menu to the menu bar of the Visual Studio integrated development environment (IDE). The IDE menu bar contains menu categories such as **File**, **Edit**, **View**, **Window**, and **Help**.  
   
- Перед добавлением нового меню в строке меню Visual Studio, рекомендуется ли команды должен помещаться в существующее меню. Дополнительные сведения о размещении команды в разделе [Меню и команд для Visual Studio](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md).  
+ Before adding a new menu to the Visual Studio menu bar, consider whether your commands should be placed within an existing menu. For more information about command placement, see [Menus and Commands for Visual Studio](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md).  
   
- Меню объявляются в файле .vsct проекте. Дополнительные сведения о меню и vsct\-файлах см. в разделе [Команды, меню и панелей инструментов](../extensibility/internals/commands-menus-and-toolbars.md).  
+ Menus are declared in the .vsct file of the project. For more information about menus and .vsct files, see [Commands, Menus, and Toolbars](../extensibility/internals/commands-menus-and-toolbars.md).  
   
- Выполняя данное пошаговое руководство, можно создать меню с именем **TestMenu** содержащий одну команду.  
+ By completing this walkthrough, you can create a menu named **TestMenu** that contains one command.  
   
-## Обязательные компоненты  
- Начиная с Visual Studio 2015, не установить пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в установку Visual Studio. VS SDK также можно установить позже. Для получения дополнительной информации см. [Установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Prerequisites  
+ Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## Создание проекта VSIX с шаблоном элемента настраиваемой команды  
+## <a name="creating-a-vsix-project-that-has-a-custom-command-item-template"></a>Creating a VSIX Project that has a Custom Command item template  
   
-1.  Создайте проект VSIX с именем `TopLevelMenu`. Можно найти шаблон проекта VSIX в **Новый проект** диалоговом окне под **Visual C\#** или **расширения**.  Дополнительные сведения см. в разделе [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Create a VSIX project named `TopLevelMenu`. You can find the VSIX project template in the **New Project** dialog under **Visual C#** / **Extensibility**.  For more information, see [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  При открытии проекта, Добавление пользовательской команды элемента шаблона с именем **TestCommand**. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **Добавить или создать элемент**. В **Добавление нового элемента** диалоговое окно, последовательно выберите пункты **Visual C\# и расширяемость** и выберите **настраиваемой команды**. В **имя** в нижней части окна, измените имя файла команд для **TestCommand.cs**.  
+2.  When the project opens, add a custom command item template named **TestCommand**. In the **Solution Explorer**, right-click the project node and select **Add / New Item**. In the **Add New Item** dialog, go to **Visual C# / Extensibility** and select **Custom Command**. In the **Name** field at the bottom of the window, change the command file name to **TestCommand.cs**.  
   
-## Создание меню в строке меню интегрированной среды разработки  
+## <a name="creating-a-menu-on-the-ide-menu-bar"></a>Creating a Menu on the IDE Menu Bar  
   
-#### Создание меню  
+#### <a name="to-create-a-menu"></a>To create a menu  
   
-1.  В **обозревателе решений**, откройте TestCommandPackage.vsct.  
+1.  In **Solution Explorer**, open TestCommandPackage.vsct.  
   
-     В конце файла имеется узел \< символы \>, который содержит несколько узлов \< GuidSymbol \>. В узле с именем guidTestCommandPackageCmdSet добавьте новый символ, следующим образом.  
+     At the end of the file, there is a \<Symbols> node that contains several \<GuidSymbol> nodes. In the node named guidTestCommandPackageCmdSet, add a new symbol, as follows:  
   
     ```xml  
     <IDSymbol name="TopLevelMenu" value="0x1021"/>  
     ```  
   
-2.  Создайте пустой узел \< меню \> узле \< команды \> непосредственно перед \< группы \>. В узле \< меню \> добавьте узел \< меню \> следующим образом:  
+2.  Create an empty \<Menus> node in the \<Commands> node, just before \<Groups>. In the \<Menus> node, add a \<Menu> node , as follows:  
   
     ```xml  
     <Menus>  
@@ -64,15 +81,15 @@ caps.handback.revision: 51
     </Menus>  
     ```  
   
-     `guid` И `id` значения меню указать набор команд и меню в набор команд.  
+     The `guid` and `id` values of the menu specify the command set and the specific menu in the command set.  
   
-     `guid` И `id` значения родительского объекта размещения меню в разделе меню Visual Studio, содержащий меню средства и надстройки.  
+     The `guid` and `id` values of the parent position the menu on the section of the Visual Studio menu bar that contains the Tools and Add-ins menus.  
   
-     Значение `CommandName` строка указывает, что текст должен отображаться в элементе меню.  
+     The value of the `CommandName` string specifies that the text should appear in the menu item.  
   
-3.  В разделе \< группы \> найдите \< группы \> и измените элемент \< родительского \> пункты меню, который мы только что добавили.  
+3.  In the \<Groups> section, find the \<Group> and change the \<Parent> element to point to the menu we just added:  
   
-    ```c#  
+    ```csharp  
     <Groups>  
           <Group guid="guidTestCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">  
             <Parent guid="guidTestCommandPackageCmdSet" id="TopLevelMenu"/>  
@@ -80,19 +97,19 @@ caps.handback.revision: 51
         </Groups>  
     ```  
   
-     Это делает группу часть новое меню.  
+     This makes the group part of the new menu.  
   
-4.  Найти `Buttons` раздел. Обратите внимание, что [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] создала шаблон пакета `Button` элемент, имеющий родительского равным `MyMenuGroup`. В результате этой команды появится в меню.  
+4.  Find the `Buttons` section. Notice that the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Package template has generated a `Button` element that has its parent set to `MyMenuGroup`. As a result, this command will appear on your menu.  
   
-## Построение и тестирование расширения  
+## <a name="building-and-testing-the-extension"></a>Building and Testing the Extension  
   
-1.  Выполните сборку решения и запустите отладку. Экземпляр экспериментальный экземпляр должен отображаться.  
+1.  Build the project and start debugging. An instance of the experimental instance should appear.  
   
-2.  Меню в экспериментальном экземпляре должен содержать **TestMenu** меню.  
+2.  The menu bar in the experimental instance should contain a **TestMenu** menu.  
   
-3.  На **TestMenu** меню, щелкните **вызвать команду проверки**.  
+3.  On the **TestMenu** menu, click **Invoke Test Command**.  
   
-     Окно сообщения должен присутствовать и отображения сообщения «TestCommand пакет внутри TopLevelMenu.TestCommand.MenuItemCallback\(\)». Это означает, что новая команда работает.  
+     A message box should appear and display the message "TestCommand Package Inside TopLevelMenu.TestCommand.MenuItemCallback()". This indicates that the new command works.  
   
-## См. также  
- [Команды, меню и панелей инструментов](../extensibility/internals/commands-menus-and-toolbars.md)
+## <a name="see-also"></a>See Also  
+ [Commands, Menus, and Toolbars](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -1,90 +1,70 @@
 ---
-title: "Практическое руководство. Обновление данных с помощью адаптера таблицы | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "данные [Visual Studio], сохранение"
-  - "данные [Visual Studio], адаптеры таблиц TableAdapter"
-  - "данные [Visual Studio], обновление"
-  - "сохранение данных"
-  - "адаптеры таблиц TableAdapter, обновление данных"
-  - "обновление данных, адаптеры таблиц TableAdapter"
+title: Update data by using a TableAdapter | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- data [Visual Studio], saving
+- data [Visual Studio], TableAdapters
+- updating data, TableAdapters
+- TableAdapters, updating data
+- data [Visual Studio], updating
+- saving data
 ms.assetid: 5e32e10e-9bac-4969-9bdd-b8f6919d3516
 caps.latest.revision: 15
-caps.handback.revision: 11
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 130c127cb0787e3f13f90adfef72de072300fcf3
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Практическое руководство. Обновление данных с помощью адаптера таблицы
-После того, как данные в наборе данных были изменены и проверены, возможно, потребуется отправить обновленные данные обратно в базу данных.  Для отправки измененных данных в базу данных вызовите метод `Update` объекта [TableAdapter](../data-tools/tableadapter-overview.md).  Метод `Update` адаптера обновит одну таблицу с данными и выполнит корректную команду \(INSERT, UPDATE или DELETE\) в зависимости от свойства <xref:System.Data.DataRow.RowState%2A> каждой строки данных в таблице.  При сохранении данных в связанных таблицах Visual Studio предоставляет новый компонент TableAdapterManager, который помогает выполнять сохранение в правильном порядке в зависимости от ограничений внешнего ключа, определенных в базе данных.  Дополнительные сведения см. в разделе [Общие сведения об иерархическом обновлении](../Topic/Hierarchical%20Update%20Overview.md).  
+# <a name="update-data-by-using-a-tableadapter"></a>Update data by using a TableAdapter
+After the data in your dataset has been modified and validated, you can send the updated data back to a database by calling the `Update` method of a [TableAdapter](../data-tools/create-and-configure-tableadapters.md). The `Update` method updates a single data table and runs the correct command (INSERT, UPDATE, or DELETE) based on the <xref:System.Data.DataRow.RowState%2A> of each data row in the table. When a dataset has related tables, Visual Studio generates a TableAdapterManager class that you  use to do the updates. The TableAdapterManager class ensures that updates are made in the correct order based on the foreign-key constraints that are defined in the database. When you use data-bound controls, the databinding architecture creates a member variable of the TableAdapterManager class called tableAdapterManager. 
   
 > [!NOTE]
->  Так как попытка обновления источника данных содержимым набора данных может вызвать ошибки, следует вставлять код, который вызывает метод `Update` адаптера внутри блока `try`\/`catch`.  
+>  When you try to update a data source with the contents of a dataset, you can get errors.To avoid errors, we recommend that you put the code that calls the adapter's `Update` method inside a `try`/`catch` block.  
   
- Сама процедура обновления источника данных может варьироваться в зависимости от поставленных задач, но в любом случае приложение должно включать следующие этапы.  
+ The exact procedure for updating a data source can vary depending on business needs, but  includes the following steps:  
   
-1.  Вызовите метод `Update` адаптера внутри блока `try`\/`catch`.  
+1.  Call the adapter's `Update` method in a `try`/`catch` block.  
   
-2.  При возникновении исключения найдите строку данных, которая его вызвала.  Дополнительные сведения см. в разделе [Практическое руководство. Поиск строк с ошибками](../Topic/How%20to:%20Locate%20Rows%20that%20Have%20Errors.md).  
+2.  If an exception is caught, locate the data row that caused the error. 
   
-3.  Устраните ошибку в строке данных \(по возможности программно, или путем предложения пользователю отредактировать ошибочную строку\), затем повторите попытку обновления \(<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>\).  
+3.  Reconcile the problem in the data row (programmatically if you can, or by presenting the invalid row to the user for modification), and then try the update again (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).  
   
-## Сохранение данных в базе данных  
- Вызовите метод `Update` объекта TableAdapter, передав имя таблицы, которая содержит значения для записи в базу данных.  
+## <a name="save-data-to-a-database"></a>Save data to a database  
+ Call the `Update` method of a TableAdapter. Pass the name of the data table that contains the values to be written to the database.  
   
-#### Чтобы обновить базу данных, которая содержит набор данных, с помощью TableAdapter  
+#### <a name="to-update-a-database-by-using-a-tableadapter"></a>To update a database by using a TableAdapter  
   
--   Заключите метод `Update` адаптера в блок `try`\/`catch`.  В следующем примере демонстрируется попытка обновления внутри блока `try`\/`catch` содержимым таблицы `Customers` в `NorthwindDataSet`.  
+-   Enclose the TableAdapter's`Update` method in a `try`/`catch` block. The following example shows how to  update  the contents of the `Customers` table in `NorthwindDataSet` from within a `try`/`catch` block .  
   
-     [!code-cs[VbRaddataSaving#9](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_1.cs)]
-     [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]  
+     [!code-csharp[VbRaddataSaving#9](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_1.cs)]  [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]  
   
-## Обновление двух связанных таблиц в наборе данных с помощью TableAdapter  
- При обновлении связанных таблиц в наборе данных необходимо обновлять их в правильной последовательности, чтобы уменьшить вероятность нарушения ограничений целостности данных.  Порядок выполнения команды будет также зависеть от индексов <xref:System.Data.DataRowCollection> в наборе данных.  Чтобы предотвратить возникновение ошибок, связанных с целостностью данных, рекомендуется обновлять базу данных в следующей последовательности:  
-  
-1.  Дочерняя таблица: удаление записей.  
-  
-2.  Родительская таблица: вставка, обновление и удаление записей.  
-  
-3.  Дочерняя таблица: вставка и обновление записей.  
-  
-    > [!NOTE]
-    >  При обновлении двух или более связанных таблиц следует включить всю логику обновления в транзакцию.  Транзакция — это процесс, гарантирующий, что все взаимосвязанные изменения в базе данных будут успешными вплоть до фиксации изменений.  Дополнительные сведения см. в разделе [Транзакции и параллелизм](../Topic/Transactions%20and%20Concurrency.md).  
-  
-#### Для обновления двух связанных таблиц с помощью TableAdapter:  
-  
-1.  Создайте три временных таблицы данных для хранения различных записей.  
-  
-2.  Вызовите метод `Update` для каждого подмножества строк из блока `try`\/`catch`.  При возникновении ошибок обновления следует остановиться и устранить их.  
-  
-3.  Зафиксируйте изменения в базе данных.  
-  
-4.  Удалите временные таблицы данных для освобождения системных ресурсов.  
-  
-     Следующий пример показывает, как обновить источник данных с помощью набора данных, содержащего связанные таблицы.  
-  
-     [!code-vb[VbRaddataSaving#27](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_2.vb)]
-     [!code-cs[VbRaddataSaving#27](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_2.cs)]  
-  
-## См. также  
- [Общие сведения об адаптере таблиц](../data-tools/tableadapter-overview.md)   
- [Пошаговые руководства работы с данными](../Topic/Data%20Walkthroughs.md)   
- [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Подключение к данным в Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Подготовка приложения к получению данных](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Выборка данных в приложение](../data-tools/fetching-data-into-your-application.md)   
- [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Редактирование данных в приложении](../data-tools/editing-data-in-your-application.md)   
- [Проверка данных](../Topic/Validating%20Data.md)   
- [Сохранение данных](../data-tools/saving-data.md)
+## <a name="see-also"></a>See Also  
+ [Save data back to the database](../data-tools/save-data-back-to-the-database.md)

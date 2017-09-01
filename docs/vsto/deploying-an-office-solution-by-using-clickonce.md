@@ -1,267 +1,271 @@
 ---
-title: "Развертывание решения Office с помощью ClickOnce"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "ClickOnce - развертывание [разработка решений Office в Visual Studio], развертывание решений"
-  - "Office - разработка решений в Visual Studio, развертывание решений"
+title: Deploying an Office Solution by Using ClickOnce | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office development in Visual Studio, deploying solutions
+- ClickOnce deployment [Office development in Visual Studio], deploying solutions
 ms.assetid: feb516b3-5e4d-449a-9fd2-347d08d90252
 caps.latest.revision: 59
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 58
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: a8430c32a7d9352554a9fc940eabe3b4ef0428c4
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Развертывание решения Office с помощью ClickOnce
-  Решение Office можно развернуть быстрее, если использовать ClickOnce.  При публикации обновлений решение автоматически обнаруживает и устанавливает их.  Однако для использования ClickOnce необходимо устанавливать решение отдельно для каждого пользователя компьютера.  Поэтому следует рассмотреть возможность использования установщика Windows \(MSI\), если несколько пользователей будут запускать решение на одном и том же компьютере.  
+# <a name="deploying-an-office-solution-by-using-clickonce"></a>Deploying an Office Solution by Using ClickOnce
+  You can deploy your Office solution in fewer steps if you use ClickOnce. If you publish updates, your solution will automatically detect and install them. However, ClickOnce requires that you install your solution separately for each user of a computer. Therefore, you should consider using Windows Installer (.msi) if more than one user will run your solution on the same computer.  
   
-## Содержание раздела  
+## <a name="in-this-topic"></a>In this topic  
   
--   [Публикация решения](#Publish)  
+-   [Publish the solution](#Publish)  
   
--   [Выбор способа предоставления доверия решению](#Trust)  
+-   [Decide how you want to grant trust to the solution](#Trust)  
   
--   [Помощь пользователям при установке решения](#Helping)  
+-   [Help users install the solution](#Helping)  
   
--   [Размещение документа решения на компьютере пользователя (настройки только уровня документа)](#Put)  
+-   [Put the document of a solution onto the end user's computer (document-level customizations only)](#Put)  
   
--   [Размещение документа решения на сервере с SharePoint (настройки только уровня документа)](#SharePoint)  
+-   [Put the document of a solution onto a server that's running SharePoint (document-level customizations only)](#SharePoint)  
   
--   [Создание пользовательского установщика](#Custom)  
+-   [Create a custom installer](#Custom)  
   
--   [Публикация обновления](#Update)  
+-   [Publish an update](#Update)  
   
--   [Изменение расположения установки решения](#Location)  
+-   [Change the installation location of a solution](#Location)  
   
--   [Откат решения к более ранней версии](#Roll)  
+-   [Roll back a solution to an earlier version](#Roll)  
   
- Дополнительные сведения о развертывании решения Office путем создания файла установщика Windows см. в разделе [Развертывание решения Office с помощью установщика Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
+ For more information about how to deploy an Office solution by creating a Windows Installer file, see [Deploying an Office Solution by Using Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
   
-##  <a name="Publish"></a> Публикация решения  
- Для публикации решения можно использовать **Мастер публикации** или **Конструктор проектов**.  В описываемой ниже процедуре мы будем использовать **Конструктор проектов**, поскольку он поддерживает полный набор параметров публикации.  См. раздел [Мастер публикации &#40;разработка для Office в Visual Studio&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).  
+##  <a name="Publish"></a> Publish the solution  
+ You can publish your solution by using the **Publish Wizard** or the **Project Designer**. In this procedure, you'll use the **Project Designer** because it provides the complete set of publishing options. See [Publish Wizard &#40;Office Development in Visual Studio&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).  
   
-#### Публикация решения  
+#### <a name="to-publish-the-solution"></a>To publish the solution  
   
-1.  В **Обозревателе решений** выберите узел с именем проекта.  
+1.  In **Solution Explorer**, choose the node that's named for your project.  
   
-2.  В меню выберите **Проект**, *ProjectName*, **Свойства**.  
+2.  On the menu bar, choose **Project**, *ProjectName* **Properties**.  
   
-3.  В **Конструкторе проектов** перейдите на вкладку **Публикация**, показанную на следующем рисунке.  
+3.  In the **Project Designer**, choose the **Publish** tab, which the following illustration shows.  
   
-     ![Вкладка публикации в конструкторе проектов](../vsto/media/vsto-publishtab.png "Вкладка публикации в конструкторе проектов")  
+     ![The publish tab of the Project Designer](../vsto/media/vsto-publishtab.png "The publish tab of the Project Designer")  
   
-4.  В поле **Расположение каталога публикации \(веб\-сайт, ftp\-сервер или путь к файлу\)** введите путь к папке, в которую **Конструктор проектов** скопирует файлы решения.  
+4.  In the **Publishing Folder Location (ftp server, or file path)** box, enter the path of the folder where you want the **Project Designer** to copy the solution files.  
   
-     Можно ввести путь любого из следующих типов.  
+     You can enter any of the following types of paths.  
   
-    -   Локальный путь \(например, *C:\\FolderName\\FolderName*\).  
+    -   A local path (for example, *C:\FolderName\FolderName*).  
   
-    -   Путь UNC к папке в сети \(например, *\\ServerName\\FolderName*\).  
+    -   A Uniform Naming Convention (UNC) path to a folder on your network (for example, *\\\ServerName\FolderName*).  
   
-    -   Относительный путь \(например, *PublishFolder\\* — это папка, в которую происходит публикация проекта по умолчанию\).  
+    -   A relative path (for example, *PublishFolder\\*, which is the folder into which the project is published by default).  
   
-5.  В поле **URL\-адрес папки установки** ведите полный путь к расположению, в котором пользователи смогут найти решение.  
+5.  In the **Installation Folder URL** box, enter the fully qualified path of the location where end users will find your solution.  
   
-     Если это расположение еще неизвестно, ничего не вводите в это поле.  По умолчанию ClickOnce ищет обновления в папке, из которой пользователи устанавливают решение.  
+     If you don't know the location yet, don't enter anything into this field. By default, ClickOnce looks for updates in the folder from which your users install the solution.  
   
-6.  Нажмите кнопку **Необходимые компоненты**.  
+6.  Choose the **Prerequisites** button.  
   
-7.  Убедитесь, что в диалоговом окне **Необходимые компоненты** установлен флажок **Создать программу установки для необходимых компонентов**.  
+7.  In the **Prerequisites** dialog box, ensure that the **Create setup program to install prerequisite components** check box is selected.  
   
-8.  В списке **Выберите устанавливаемые необходимые компоненты** установите флажки **Установщик Windows 4.5** и соответствующий пакет .NET Framework.  
+8.  In the **Choose which prerequisites to install** list, select the check boxes for **Windows Installer 4.5** and the appropriate .NET Framework package.  
   
-     Например, если решение предназначено для [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], установите флажки **установщик Windows 4.5** и **Microsoft .NET Framework 4.5 Full**.  
+     For example, if your solution targets the [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], select the check boxes for **Windows Installer 4.5** and **Microsoft .NET Framework 4.5 Full**.  
   
-9. Если решение предназначено для .NET Framework 4.5, также установите флажок **Среда выполнения средств Microsoft Visual Studio 2010 для Office**.  
-  
-    > [!NOTE]  
-    >  По умолчанию этот флажок не отображается.  Чтобы отобразить этот флажок, необходимо создать пакет начального загрузчика.  В разделе [Создание пакета начального загрузчика для дополнения Office 2013 VSTO в Visual Studio 2012](http://blogs.msdn.com/b/vsto/archive/2012/12/21/creating-a-bootstrapper-package-for-an-office-2013-vsto-add-in-with-visual-studio-2012.aspx).  
-  
-10. В области **Укажите место установки для необходимых компонентов** выберите один из отображаемых параметров, а затем нажмите кнопку **ОК**.  
-  
-     В таблице ниже представлено описание каждого из этих параметров.  
-  
-    |Параметр|Описание|  
-    |--------------|--------------|  
-    |**Загрузить необходимые компоненты с веб\-сайта поставщика компонентов**|Пользователю будет предложено загрузить и установить эти необходимые компоненты у поставщика.|  
-    |**Загрузить необходимые компоненты с местоположения моего приложения**|Необходимое программное обеспечение устанавливается вместе с решением.  Если выбран этот параметр, Visual Studio копирует все пакеты необходимых компонентов в расположение публикации автоматически.  Чтобы этот параметр действовал, пакеты необходимых компонентов должны находиться на компьютере разработки.|  
-    |**Скачать необходимые компоненты из следующего места**|Visual Studio скопирует все пакеты необходимых компонентов в указанное расположение и установит их вместе с решением.|  
-  
-     См. раздел [Диалоговое окно «Необходимые компоненты»](../ide/reference/prerequisites-dialog-box.md).  
-  
-11. Нажмите кнопку **Обновления**, укажите, как часто необходимо проверять наличие обновлений для надстроек VSTO и настроек каждого пользователя, а затем нажмите кнопку **ОК**.  
+9. If your solution targets the .NET Framework 4.5, also select the **Visual Studio 2010 Tools for Office Runtime** check box.  
   
     > [!NOTE]  
-    >  При развертывании с использованием компакт\-диска или съемного носителя следует выбрать параметр **Никогда не проверять обновления**.  
+    >  By default, this check box doesn't appear. To show this check box, you must create a Bootstrapper package. See [Creating a Bootstrapper package for an Office 2013 VSTO Add-in with Visual Studio 2012](http://blogs.msdn.com/b/vsto/archive/2012/12/21/creating-a-bootstrapper-package-for-an-office-2013-vsto-add-in-with-visual-studio-2012.aspx).  
   
-     Сведения о том, как опубликовать обновление, см. в разделе [Публикация обновления](#Update).  
+10. Under **Specify the install location for prerequisites**, choose one of the options that appear, and then choose the **OK** button.  
   
-12. Нажмите кнопку **Параметры**, проверьте параметры в диалоговом окне **Параметры**, а затем нажмите кнопку **ОК**.  
+     The following table describes each option.  
   
-13. Нажмите кнопку **Опубликовать сейчас**.  
+    |Option|Description|  
+    |------------|-----------------|  
+    |**Download prerequisites from the component vendor's web site**|The user is prompted to download and install these prerequisites from the vendor.|  
+    |**Download prerequisites from the same location as my application**|The prerequisite software is installed with the solution. If you choose this option, Visual Studio copies all of the prerequisite packages to the publish location for you. For this option to work, the prerequisite packages must be on the development computer.|  
+    |**Download prerequisites from the following location**|Visual Studio copies all of the prerequisite packages to the location that you specify and installs them with the solution.|  
   
-     Visual Studio добавить следующие папки и файлы в папку публикации, указанную ранее в этой процедуре.  
+     See [Prerequisites Dialog Box](/visualstudio/ide/reference/prerequisites-dialog-box).  
   
-    -   Папка **Application Files**.  
-  
-    -   Программа установки.  
-  
-    -   Манифест развертывания, указывающий на манифест развертывания для последней версии.  
-  
-     Папка **Application Files** содержит вложенную папку для каждой публикуемой версии.  Каждая вложенная папка для конкретной версии содержит следующие файлы.  
-  
-    -   Манифест приложения.  
-  
-    -   Манифест развертывания.  
-  
-    -   Сборки настройки.  
-  
-     На следующем рисунке показана структура папки публикации для надстройки VSTO Outlook.  
-  
-     ![Структура папки публикации](~/vsto/media/publishfolderstructure.png "Структура папки публикации")  
+11. Choose the **Updates** button, specify how often you want each end user's VSTO Add-in or customization to check for updates, and then choose the **OK** button.  
   
     > [!NOTE]  
-    >  ClickOnce добавляет к сборкам расширение .deploy, чтобы защищенная установка служб IIS не блокировала файлы из\-за небезопасного расширения.  Когда пользователь установит решение, ClickOnce удалит расширение .deploy.  
+    >  If you're deploying by using a CD or a removable drive, choose the **Never check for updates** option button.  
   
-14. Скопируйте файлы решения в папку установки, указанную ранее в этой процедуре.  
+     For information about how to publish an update, see [Publish an update](#Update).  
   
-##  <a name="Trust"></a> Выбор способа предоставления доверия решению  
- Прежде чем решение можно будет запускать на компьютерах пользователей, необходимо предоставить доверие. В противном случае пользователи должны будут ответить на запрос о доверии при установке решения.  Чтобы предоставить доверие решению, подпишите манифест с помощью сертификата, который определяет известного и надежного издателя.  См. раздел [Доверяющ решение, подписав приложений и манифестов развертывания](../vsto/granting-trust-to-office-solutions.md#Signing).  
+12. Choose the **Options** button, review the options in the **Options** dialog box, and then choose the **OK** button.  
   
- При развертывании настроек уровня документа и размещении документа в папке на компьютере пользователя или предоставлении доступа к документу на сайте SharePoint, убедитесь, что Office доверяет расположению документа.  См. раздел [Присвоение уровня доверия документам](../vsto/granting-trust-to-documents.md).  
+13. Choose the **Publish Now** button.  
   
-##  <a name="Helping"></a> Помощь пользователям при установке решения  
- Чтобы установить решение, пользователи могут запустить программу установки, открыть манифест развертывания или, в случае настройки уровня документа, открыть документ напрямую.  Рекомендуемым способом является установка решения пользователями с помощью программы установки.  Другие два способа не гарантируют установки необходимых программных компонентов.  Если пользователям необходимо открывать документ из расположения установки, они должны добавить это расположение в список надежных расположений в центре управления безопасностью приложения Office.  
+     Visual Studio adds the following folders and files to the publishing folder that you specified earlier in this procedure.  
   
-### Открытие документа настройки уровня документа  
- Пользователи могут открывать документы настройки уровня документа непосредственно из папки установки или путем копирования документа на локальный компьютер и открытия этой копии.  
+    -   The **Application Files** folder.  
   
- Рекомендуется открывать копии документов на компьютерах пользователей, чтобы несколько пользователей не пытались открывать один и тот же экземпляр документа одновременно.  Чтобы обеспечить выполнение этого правила, можно настроить программу установки таким образом, чтобы она копировала документ на компьютеры пользователей.  См. раздел [Размещение документа решения на компьютере пользователя (настройки только уровня документа)](#Put).  
+    -   The setup program.  
   
-### Установка решения путем открытия манифеста развертывания с веб\-сайта IIS  
- Пользователи могут установить решение Office путем открытия манифеста развертывания из Интернета.  Однако защищенная установка IIS будет блокировать файлы с расширением .vsto.  Тип MIME должен быть определен в IIS перед развертыванием решения Office с использованием IIS.  
+    -   A deployment manifest that points to the deployment manifest of the most recent version.  
   
-##### Добавление типа MIME .vsto в IIS 6.0  
+     The **Application Files** folder contains a subfolder for each version that you publish. Each version-specific subfolder contains the following files.  
   
-1.  На сервере, на котором запущены службы IIS 6.0, нажмите кнопку **Пуск** и выберите пункты **Все программы**, **Администрирование** и **Диспетчер служб IIS**.  
+    -   An application manifest.  
   
-2.  Выберите имя компьютера, папку **Веб\-сайты** или настраиваемый веб\-сайт.  
+    -   A deployment manifest.  
   
-3.  В строке меню выберите **Действие**, **Свойства**.  
+    -   Customization assemblies.  
   
-4.  На вкладке **Заголовки HTTP** нажмите кнопку **Типы MIME**.  
+     The following illustration shows the structure of the publish folder for an Outlook VSTO Add-in.  
   
-5.  В окне **Типы MIME** нажмите кнопку **Создать**.  
-  
-6.  В окне **Типы MIME** введите **.vsto** в качестве расширения и введите **application\/x\-ms\-vsto** в качестве типа MIME, после чего примените новые параметры.  
+     ![Publish Folder Structure](../vsto/media/publishfolderstructure.png "Publish Folder Structure")  
   
     > [!NOTE]  
-    >  Чтобы изменения вступили в силу, необходимо перезапустить службу веб\-публикаций или подождать, пока рабочий процесс будет перезапущен.  После этого нужно очистить кэш диска браузера и снова попытаться открыть файл .vsto.  
+    >  ClickOnce appends the .deploy extension to assemblies so that a secured installation of Internet Information Services (IIS) won't block the files because of an unsafe extension. When the user installs the solution, ClickOnce removes the .deploy extension.  
   
-##### Добавление типа MIME .vsto в IIS 7,0  
+14. Copy the solution files to the installation location that you specified earlier in this procedure.  
   
-1.  На сервере с IIS 7.0 выберите **Пуск**, **Все программы**, **Стандартные**.  
+##  <a name="Trust"></a> Decide how you want to grant trust to the solution  
+ Before a solution can run on user computers, either you must grant trust or users must respond to a trust prompt when they install the solution. To grant trust to the solution, sign the manifests by using a certificate that identifies a known and trusted publisher. See [Trusting the Solution by Signing the Application and Deployment Manifests](../vsto/granting-trust-to-office-solutions.md#Signing).  
   
-2.  Откройте контекстное меню пункта **Командная строка** и выберите команду **Запуск от имени администратора**.  
+ If you're deploying a document-level customization and you want to put the document into a folder on the user's computer or make the document available on a SharePoint site, ensure that Office trusts the location of the document. See [Granting Trust to Documents](../vsto/granting-trust-to-documents.md).  
   
-3.  В поле **Открыть** введите следующий путь и нажмите кнопку **ОК**.  
+##  <a name="Helping"></a> Help users install the solution  
+ Users can install the solution by running the setup program, opening the deployment manifest, or in the case of a document-level customization, opening the document directly. As a best practice, users should install your solution by using the setup program. The other two approaches don't ensure that the prerequisite software is installed. If users want to open the document from the installation location, they must add it to the list of trusted locations in the Trust Center of the Office application.  
+  
+### <a name="opening-the-document-of-a-document-level-customization"></a>Opening the document of a document-level customization  
+ Users can open the document of a document-level customization directly from the installation location or by copying the document to their local computer and then opening the copy.  
+  
+ As a best practice, users should open a copy of the document on their computers so that multiple users won't try to open the same copy at the same time. To enforce this practice, you can configure your setup program to copy the document to user computers. See [Put the document of a solution onto the end user's computer (document-level customizations only)](#Put).  
+  
+### <a name="installing-the-solution-by-opening-the-deployment-manifest-from-an-iis-website"></a>Installing the solution by opening the deployment manifest from an IIS website  
+ Users can install an Office solution by opening the deployment manifest from the web. However, a secured installation of Internet Information Services (IIS) will block files that have the .vsto extension. The MIME type must be defined in IIS before you can deploy an Office solution by using IIS.  
+  
+##### <a name="to-add-the-vsto-mime-type-to-iis-60"></a>To add the .vsto MIME type to IIS 6.0  
+  
+1.  On the server that's running IIS 6.0, choose **Start**, **All Programs**, **Administrative Tools**,  **Internet Information Services (IIS) Manager**.  
+  
+2.  Choose the computer name, the **Web Sites** folder, or the web site that you're configuring.  
+  
+3.  On the menu bar, choose **Action**, **Properties**.  
+  
+4.  On the **HTTP Headers** tab, choose the **MIME Types** button.  
+  
+5.  In the **MIME Types** window, choose the **New** button.  
+  
+6.  In the **MIME Type** window, enter **.vsto** as the extension, enter **application/x-ms-vsto** as the MIME type, and then apply the new settings.  
+  
+    > [!NOTE]  
+    >  For the changes to take effect, you must restart the World Wide Web Publishing Service or wait for the worker process to recycle. You must then flush the browser's disk cache and then try to open the .vsto file again.  
+  
+##### <a name="to-add-the-vsto-mime-type-to-iis-70"></a>To add the .vsto MIME type to IIS 7.0  
+  
+1.  On the server that's running IIS 7.0, choose **Start**, **All Programs**, **Accessories**.  
+  
+2.  Open the shortcut menu for **Command Prompt**, and then choose  **Run as administrator.**  
+  
+3.  In the **Open** box, enter the following path, and then choose the **OK** button.  
   
     ```  
     %windir%\system32\inetsrv   
     ```  
   
-4.  Введите следующую команду, а затем примените новые параметры.  
+4.  Enter the following command, and then apply the new settings.  
   
     ```  
     set config /section:staticContent /+[fileExtension='.vsto',mimeType='application/x-ms-vsto']  
     ```  
   
     > [!NOTE]  
-    >  Чтобы изменения вступили в силу, необходимо перезапустить службу веб\-публикаций или подождать, пока рабочий процесс будет перезапущен.  После этого нужно очистить кэш диска браузера и снова попытаться открыть файл .vsto.  
+    >  For the changes to take effect, you must restart the World Wide Web Publishing Service, or you must wait for the worker process to recycle. You must then flush the browser's disk cache and then try to open the .vsto file again.  
   
-##  <a name="Put"></a> Размещение документа решения на компьютере пользователя \(настройки только уровня документа\)  
- Документ решения можно скопировать на компьютер пользователя путем создания действия, выполняемого после развертывания.  В этом случае пользователю не потребуется вручную копировать документ из расположения установки на свой компьютер после установки решения.  При этом необходимо будет создать класс, определяющий действие, выполняемое после развертывания, собрать и опубликовать решение, изменить манифест приложения, и повторно подписать приложение и манифест развертывания.  
+##  <a name="Put"></a> Put the document of a solution onto the end user's computer (document-level customizations only)  
+ You can copy the document of your solution onto the end user's computer for them by creating a post-deployment action. That way, the user doesn't have to manually copy the document from the installation location to their computer after they install your solution. You'll have to create a class that defines the post-deployment action, build and publish the solution, modify the application manifest, and re-sign the application and deployment manifest.  
   
- При выполнение следующих процедур предполагается, что проект имеет имя **ExcelWorkbook** и что решение публикуется в папке **C: \\publish** на локальном компьютере.  
+ The following procedures assume that your project name is **ExcelWorkbook** and that you publish the solution to the **C:\publish** directory on your computer.  
   
-### Создание класса, определяющего действие, выполняемое после развертывания  
+### <a name="create-a-class-that-defines-the-post-deployment-action"></a>Create a class that defines the post-deployment action  
   
-1.  В строке меню выберите **Файл**, **Добавить**, **Новый проект**.  
+1.  On the menu bar, choose **File**, **Add**, **New Project**.  
   
-2.  В диалоговом окне **Добавление нового проекта** в области **Установленные шаблоны** выберите папку **Windows**.  
+2.  In the **Add New Project** dialog box, in the **Installed Templates** pane, choose the **Windows** folder.  
   
-3.  В области **Шаблоны** выберите шаблон **Библиотека классов**.  
+3.  In the **Templates** pane, choose the **Class Library** template.  
   
-4.  В поле **Имя** введите **FileCopyPDA** и нажмите кнопку **ОК**.  
+4.  In the **Name** field, enter **FileCopyPDA**, and then choose the **OK** button.  
   
-5.  В **Обозревателе решений** выберите проект **FileCopyPDA**.  
+5.  In **Solution Explorer**, choose the **FileCopyPDA** project.  
   
-6.  В меню **Проект** выберите **Добавить ссылку**.  
+6.  On the menu bar, choose **Project**, **Add Reference**.  
   
-7.  На вкладке **.NET** добавьте ссылки на Microsoft.VisualStudio.Tools.Applications.Runtime и Microsoft.VisualStudio.Tools.Applications.ServerDocument.  
+7.  On the **.NET** tab, add references to Microsoft.VisualStudio.Tools.Applications.Runtime and Microsoft.VisualStudio.Tools.Applications.ServerDocument.  
   
-8.  Переименуйте класс в `FileCopyPDA`, а затем замените содержимое файла следующим кодом.  Этот код выполняет следующие задачи:  
+8.  Rename the class to `FileCopyPDA`, and then replace the contents of the file with the code. This code performs the following tasks:  
   
-    -   Копирует документ на рабочий стол пользователя.  
+    -   Copies the document to the user's desktop.  
   
-    -   Меняет значение свойства \_AssemblyLocation с относительного на абсолютный путь к манифесту развертывания.  
+    -   Changes the _AssemblyLocation property from a relative path to a fully qualified path for the deployment manifest.  
   
-    -   Удаляет файл, когда пользователь удаляет решение.  
+    -   Deletes the file if the user uninstalls the solution.  
   
-     [!code-csharp[Trin_ExcelWorkbookPDA#7](../snippets/csharp/VS_Snippets_OfficeSP/trin_excelworkbookpda/cs/filecopypda/class1.cs#7)]
-     [!code-vb[Trin_ExcelWorkbookPDA#7](../snippets/visualbasic/VS_Snippets_OfficeSP/trin_excelworkbookpda/vb/filecopypda/class1.vb#7)]  
+     [!code-vb[Trin_ExcelWorkbookPDA#7](../vsto/codesnippet/VisualBasic/trin_excelworkbookpda/filecopypda/class1.vb#7)] [!code-csharp[Trin_ExcelWorkbookPDA#7](../vsto/codesnippet/CSharp/trin_excelworkbookpda/filecopypda/class1.cs#7)]  
   
-### Сборка и публикация решения  
+### <a name="build-and-publish-the-solution"></a>Build and publish the solution  
   
-1.  В **Обозревателе решений** откройте контекстное меню проекта **FileCopyPDA** и выберите команду **Сборка**.  
+1.  In **Solution Explorer**, open the shortcut menu for the **FileCopyPDA** project, and then choose **Build**.  
   
-2.  Откройте контекстное меню проекта **ExcelWorkbook** и выберите команду **Сборка**.  
+2.  Open the shortcut menu for the **ExcelWorkbook** project, and then choose **Build**.  
   
-3.  Откройте контекстное меню проекта **ExcelWorkbook** и выберите команду **Добавить ссылку**.  
+3.  Open the shortcut menu for the **ExcelWorkbook** project, and then choose **Add Reference**.  
   
-4.  В диалоговом окне **Добавить ссылку** откройте вкладку **Проекты**, выберите **FileCopyPDA**, а затем нажмите кнопку **ОК**.  
+4.  In the **Add Reference** dialog box, choose the **Projects** tab, choose **FileCopyPDA**, and then choose the **OK** button.  
   
-5.  В **Обозревателе решений** выберите проект **ExcelWorkbook**.  
+5.  In **Solution Explorer**, choose the **ExcelWorkbook** project.  
   
-6.  В строке меню выберите **Проект**, **Создать папку**.  
+6.  On menu bar, choose **Project**, **New Folder**.  
   
-7.  Введите имя Data и нажмите клавишу ВВОД.  
+7.  Enter **Data**, and then choose the Enter key.  
   
-8.  В **Обозревателе решений** выберите папку **Data**.  
+8.  In **Solution Explorer**, choose the **Data** folder.  
   
-9. В меню **Проект** выберите **Добавить существующий элемент**.  
+9. On the menu bar, choose **Project**, **Add Existing Item**.  
   
-10. В диалоговом окне **Добавление существующего элемента** перейдите в выходной каталог проекта **ExcelWorkbook**, выберите файл **ExcelWorkbook.xlsx**, а затем нажмите кнопку **Добавить**.  
+10. In the **Add Existing Item** dialog box, browse to the output directory for the **ExcelWorkbook** project, choose the **ExcelWorkbook.xlsx** file, and then choose the **Add** button.  
   
-11. В **Обозревателе решений** выберите файл **ExcelWorkbook.xlsx**.  
+11. In **Solution Explorer** choose the **ExcelWorkbook.xlsx** file.  
   
-12. В окне **Свойства** измените значение свойства **Действие сборки** на **Содержание**, а значение свойства **Копировать в выходной каталог** на **Копировать, если новее**.  
+12. In the **Properties** window, change the **Build Action** property to **Content** and the **Copy to Output Directory** property to **Copy if newer**.  
   
-     По завершении этих шагов проект будет выглядеть примерно так, как показано на следующем рисунке.  
+     When you've completed these steps, your project will resemble the following illustration.  
   
-     ![Структура проекта в действии после развертывания.](../vsto/media/vsto-postdeployment.png "Структура проекта в действии после развертывания.")  
+     ![Project structure of the post deployment action.](../vsto/media/vsto-postdeployment.png "Project structure of the post deployment action.")  
   
-13. Опубликуйте проект **ExcelWorkbook**.  
+13. Publish the **ExcelWorkbook** project.  
   
-### Изменение манифеста приложения  
+### <a name="modify-the-application-manifest"></a>Modify the application manifest  
   
-1.  Откройте каталог **c:\\publish** в **проводнике**.  
+1.  Open the **c:\publish** directory by using **File Explorer**.  
   
-2.  Откройте папку **Application Files**, а затем откройте папку, соответствующую последней опубликованной версии решения.  
+2.  Open the **Application Files** folder, and then open the folder that corresponds to the most recent published version of your solution.  
   
-3.  Откройте файл **ExcelWorkbook.dll.manifest** в текстовом редакторе, например в "Блокноте".  
+3.  Open the **ExcelWorkbook.dll.manifest** file in a text editor such as Notepad.  
   
-4.  После элемента `</vstav3:update>` добавьте следующий код.  Для атрибута класса элемента `<vstav3:entryPoint>` используйте следующий синтаксис: *NamespaceName.ClassName*.  В следующем примере имя класса совпадает с именем пространства имен, поэтому имя точки входа будет иметь вид `FileCopyPDA.FileCopyPDA`.  
+4.  After the `</vstav3:update>` element, add following code. For the class attribute of the `<vstav3:entryPoint>` element, use the following syntax: *NamespaceName.ClassName*. In the following example, the namespace and class names are the same, so the resulting entry point name is `FileCopyPDA.FileCopyPDA`.  
   
     ```  
     <vstav3:postActions>  
@@ -280,21 +284,25 @@ caps.handback.revision: 58
     </vstav3:postActions>  
     ```  
   
-### Повторное подписывание манифестов приложения и развертывания  
+### <a name="re-sign-the-application-and-deployment-manifests"></a>Re-sign the application and deployment manifests  
   
-1.  В папке **%USERPROFILE%\\Documents\\Visual Studio 2013\\Projects\\ExcelWorkbook\\ExcelWorkbook** скопируйте файл сертификата **ExcelWorkbook\_TemporaryKey.pfx** и вставьте его в папку *PublishFolder* **\\Application Files\\ExcelWorkbook***MostRecentPublishedVersion*.  
+1.  In the **%USERPROFILE%\Documents\Visual Studio 2013\Projects\ExcelWorkbook\ExcelWorkbook** folder, copy the **ExcelWorkbook_TemporaryKey.pfx** certificate file, and then paste it into the *PublishFolder* **\Application Files\ExcelWorkbook***MostRecentPublishedVersion* folder.  
   
-2.  Откройте командную строку Visual Studio, а затем измените папки на **c:\\publish\\Application Files\\ExcelWorkbook** *MostRecentPublishedVersion*, \(например, **c:\\publish\\Файлы приложения\\ExcelWorkbook\_1\_0\_0\_4**\).  
+2.  
   
-3.  Подпишите обновленный манифест приложения с помощью следующей команды:  
+3.  Open the Visual Studio command prompt, and then change directories to the **c:\publish\Application Files\ExcelWorkbook***MostRecentPublishedVersion* folder (for example, **c:\publish\Application Files\ExcelWorkbook_1_0_0_4**).  
+  
+4.  Sign the modified application manifest by running the following command:  
   
     ```  
     mage -sign ExcelWorkbook.dll.manifest -certfile ExcelWorkbook_TemporaryKey.pfx  
     ```  
   
-     Появится сообщение "ExcelWorkbook.dll.manifest успешно подписан".  
+     The message "ExcelWorkbook.dll.manifest successfully signed" appears.  
   
-4.  Перейдите в папку **c:\\publish**, а затем обновите и подпишите манифест развертывания, выполнив следующую команду:  
+5.  
+  
+6.  Change to the **c:\publish** folder, and then update and sign the deployment manifest by running the following command:  
   
     ```  
     mage -update ExcelWorkbook.vsto -appmanifest "Application Files\Ex  
@@ -302,168 +310,168 @@ caps.handback.revision: 58
     ```  
   
     > [!NOTE]  
-    >  В предыдущем примере замените MostRecentVersionNumber на номер последней опубликованной версии решения \(например, **1\_0\_0\_4**\).  
+    >  In the previous example, replace MostRecentVersionNumber with the version number of the most recently published version of your solution (for example, **1_0_0_4**).  
   
-     Появится сообщение "ExcelWorkbook.vsto успешно подписан".  
+     The message "ExcelWorkbook.vsto successfully signed" appears.  
   
-5.  Скопируйте файл ExcelWorkbook.vsto в каталог **c:\\publish\\Application Files\\ExcelWorkbook***MostRecentVersionNumber*.  
+7.  Copy the ExcelWorkbook.vsto file to the **c:\publish\Application Files\ExcelWorkbook***MostRecentVersionNumber* directory.  
   
-##  <a name="SharePoint"></a> Размещение документа решения на сервере с SharePoint \(настройки только уровня документа\)  
- Настройки уровня документа можно публиковать для пользователей с помощью SharePoint.  Когда пользователь открывает документ с сайта SharePoint, среда выполнения автоматически устанавливает решение на локальном компьютере пользователя из общей сетевой папки.  После локальной установки решения настройка продолжит работать, даже если документ будет скопирован в другое место, например на рабочий стол.  
+##  <a name="SharePoint"></a> Put the document of a solution onto a server that's running SharePoint (document-level customizations only)  
+ You can publish your document-level customization to end users by using SharePoint. When users go to the SharePoint site and open the document, the runtime automatically installs the solution from the shared network folder to the user's local computer. After the solution is installed locally, the customization will still function even if the document is copied elsewhere, such as the desktop.  
   
-#### Размещение документа на сервере с SharePoint  
+#### <a name="to-put-the-document-on-a-server-thats-running-sharepoint"></a>To put the document on a server that's running SharePoint  
   
-1.  Добавьте документ решения в библиотеку документов на сайте SharePoint.  
+1.  Add the solution document to a document library on a SharePoint site.  
   
-2.  Воспользуйтесь одним из следующих подходов, выполнив соответствующие инструкции.  
+2.  Perform the steps for one of the following approaches:  
   
-    -   С помощью средства настройки Office добавьте сервер с SharePoint в центр управления безопасностью в Word или Excel на всех компьютерах пользователей.  
+    -   Use the Office Configuration Tool to add the server that's running SharePoint to the Trust Center in Word or Excel on all user computers.  
   
-         См. раздел [Политики безопасности и параметры в Office 2010](http://go.microsoft.com/fwlink/?LinkId=99227).  
+         See [Security policies and settings in Office 2010](http://go.microsoft.com/fwlink/?LinkId=99227).  
   
-    -   Убедитесь, что каждый пользователь выполнил следующие действия.  
+    -   Ensure that each user performs the following steps.  
   
-        1.  На локальном компьютере откройте Word или Excel, перейдите на вкладку **Файл** и нажмите кнопку **Параметры**.  
+        1.  On the local computer, open Word or Excel, choose the **File** tab, and then choose the **Options** button.  
   
-        2.  В диалоговом окне **Центр управления безопасностью** нажмите кнопку **Надежные расположения**.  
+        2.  In the **Trust Center** dialog box, choose the **Trusted Locations** button.  
   
-        3.  Установите флажок **Разрешить надежные расположения в моей сети \(не рекомендуется\)**, а затем нажмите кнопку **Добавить новое расположение**.  
+        3.  Select the **Allow Trusted Locations on my network (not recommended)** check box, and then choose the **Add new location** button.  
   
-        4.  В поле **Путь** введите URL\-адрес библиотеки документов SharePoint, которая содержит загруженный документ \(например, *http:\/\/SharePointServerName\/TeamName\/ProjectName\/DocumentLibraryName*\).  
+        4.  In the **Path** box, enter the URL of the SharePoint document library that contains the document that you uploaded (for example, *http://SharePointServerName/TeamName/ProjectName/DocumentLibraryName*).  
   
-             Не следует добавлять имя веб\-страницы по умолчанию, например default.aspx или AllItems.aspx.  
+             Don't add the name of the default Web page, such as default.aspx or AllItems.aspx.  
   
-        5.  Установите флажок **Также доверять всем вложенным папкам**, а затем нажмите кнопку **ОК**.  
+        5.  Select the **Subfolders of this location are also trusted** check box, and then choose the **OK** button.  
   
-             Когда пользователь откроет документ с сайта SharePoint, будут установлены настройки.  Пользователь может скопировать документ себе на рабочий стол.  Настройка все равно будет работать, поскольку свойства в документе указывают на сетевое расположение документа.  
+             When users open the document from the SharePoint site, the document opens, and the customization is installed. Users can copy the document to their desktop. The customization will still run because properties in the document point to the network location of the document.  
   
-##  <a name="Custom"></a> Создание пользовательского установщика  
- Для решения Office можно создать пользовательский установщик, вместо того чтобы использовать программу установки, которая создается автоматически при публикации решения.  Например, можно запустить установку с помощью скрипта входа или устанавливать решение с помощью пакетного файла без взаимодействия с пользователем.  Эти сценарии оптимальны, если все необходимые компоненты уже установлены на компьютерах пользователей.  
+##  <a name="Custom"></a> Create a custom installer  
+ You can create a custom installer for your Office solution, instead of using the setup program that's created for you when you publish the solution. For example, you could use a logon script to start the installation, or you could use a batch file to install the solution without user interaction. These scenarios work best if the prerequisites are already installed on end-user computers.  
   
- В рамках пользовательского процесса установки вызовите средство установки решений Office \(VSTOInstaller.exe\), которое по умолчанию установлено в следующем расположении:  
+ As part of your custom installation process, call the installer tool for Office solutions (VSTOInstaller.exe), which is installed in the following location by default:  
   
- %commonprogramfiles%\\microsoft shared\\VSTO\\10.0\\VSTOInstaller.exe  
+ %commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe  
   
- Если это средство находится в другой папке, воспользуйтесь разделом реестра HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\VSTO Runtime Setup\\v4\\InstallerPath или HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\VSTO Runtime Setup\\v4\\InstallerPath, чтобы найти путь к нему.  
+ If the tool isn't in that location, you can use the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath or HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4\InstallerPath registry key to find the path to that tool.  
   
- При запуске VSTOinstaller.exe можно использовать следующие параметры.  
+ You can use the following parameters with VSTOinstaller.exe.  
   
-|Параметр|Определение|  
-|--------------|-----------------|  
-|\/Install или \/I|Установка решения.  За данным параметром должен следовать путь к манифесту развертывания.  Можно указать путь на локальном компьютере, в общей папке с именем по универсальным правилам именования \(UNC\).  Можно указать локальный путь \(*C:\\FolderName\\PublishFolder*\), относительный путь \(*Publish\\* или полный путь \(*\\\\ServerName\\FolderName* или http:\/\/*ServerName\/FolderName*\).|  
-|\/Uninstall или \/U|Удаление решения.  За данным параметром должен следовать путь к манифесту развертывания.  Можно указать путь на локальном компьютере к общей папке UNC.  Можно указать локальный путь \(*C:\\FolderName\\PublishFolder*\), относительный путь \(*Publish\\* или полный путь \(*\\\\ServerName\\FolderName* или http:\/\/*ServerName\/FolderName*\).|  
-|\/Silent или \/S|Установка или удаление без запроса ввода данных пользователем и без отображения сообщений.  Если требуется запрос о доверии, настройка не устанавливается и не обновляется.|  
-|\/Help или \/?|Отображение справочных сведений.|  
+|Parameter|Definition|  
+|---------------|----------------|  
+|/Install or /I|Install the solution. You must follow this option with the path of a deployment manifest. You can specify a path on the local computer, a universal naming convention (UNC) file share. You can specify a local path (*C:\FolderName\PublishFolder*), a relative path (*Publish\\*), or a fully qualified location (*\\\ServerName\FolderName* or http://*ServerName/FolderName*).|  
+|/Uninstall or /U|Uninstall the solution. You must follow this option with the path of a deployment manifest. You can specify a path can be on the local computer, a UNC file share. You can specify a local path (*c:\FolderName\PublishFolder*), a relative path (*Publish\\*), or a fully qualified location (*\\\ServerName\FolderName* or http://*ServerName/FolderName*).|  
+|/Silent or /S|Install or uninstall without prompting the user for input or displaying any messages. If a trust prompt is required, the customization isn't installed or updated.|  
+|/Help or /?|Display the Help information.|  
   
- При запуске VSTOinstaller.exe могут появляться следующие коды ошибок.  
+ When you run VSTOinstaller.exe, the following error codes might appear.  
   
-|Код ошибки|Определение|  
-|----------------|-----------------|  
-|0|Решение было успешно установлено или удалено, или появилась справка VSTOInstaller.|  
-|\-100|Один или несколько параметров командной строки недопустимы или заданы более одного раза.  Для получения дополнительных сведений, введите «vstoinstaller \/?» или обратитесь к разделу [Создание пользовательского установщика для решения Office, устанавливаемого с помощью ClickOnce](http://msdn.microsoft.com/ru-ru/3e5887ed-155f-485d-b8f6-3c02c074085e).|  
-|\-101|Один или несколько параметров командной строки недопустимы.  Для получения дополнительных сведений введите команду "vstoinstaller \/?".|  
-|\-200|URI\-адрес манифеста развертывания недействителен.  Для получения дополнительных сведений введите команду "vstoinstaller \/?".|  
-|\-201|Не удалось установить решение, так как манифест развертывания недействителен.  См. раздел [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md).|  
-|\-202|Решение не может быть установлено, поскольку раздел Visual Studio Tools for Office манифеста приложения является недопустимым.  См. раздел [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).|  
-|\-203|Не удалось установить решение из\-за ошибки загрузки.  Проверьте URI\-адрес манифеста развертывания или расположение файла в сети и повторите попытку.|  
-|\-300|Не удалось установить решение из\-за исключения безопасности.  См. раздел [Обеспечение безопасности решений Office](../vsto/securing-office-solutions.md).|  
-|\-400|Не удалось установить решение.|  
-|\-401|Не удалось удалить решение.|  
-|\-500|Операция была отменена, поскольку решение не может быть установлено или удалено или не удалось загрузить манифест развертывания.|  
+|Error Code|Definition|  
+|----------------|----------------|  
+|0|The solution was successfully installed or uninstalled, or the VSTOInstaller Help appeared.|  
+|-100|One or more command-line options isn't valid or was set more than once. For more information, enter "vstoinstaller /?" or see [Creating a Custom Installer for a ClickOnce Office Solution](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e).|  
+|-101|One or more command-line options isn't valid. For more information, enter "vstoinstaller /?".|  
+|-200|The deployment manifest URI isn't valid. For more information, enter "vstoinstaller /?".|  
+|-201|The solution couldn't be installed because the deployment manifest isn't valid. See [Deployment Manifests for Office Solutions](../vsto/deployment-manifests-for-office-solutions.md).|  
+|-202|The solution couldn't be installed because the Visual Studio Tools for Office section of the application manifest isn't valid. See [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).|  
+|-203|The solution couldn't be installed because a download error occurred. Check the URI or network file location of the deployment manifest, and then try again.|  
+|-300|The solution couldn't be installed because a security exception occurred. See [Securing Office Solutions](../vsto/securing-office-solutions.md).|  
+|-400|The solution couldn't be installed.|  
+|-401|The solution couldn't be uninstalled.|  
+|-500|The operation has been canceled because the solution couldn't be installed or uninstalled or the deployment manifest couldn't be downloaded.|  
   
-##  <a name="Update"></a> Публикация обновления  
- Чтобы обновить решение, опубликуйте его раз с использованием **Конструктора проектов** или **Мастера публикации**, а затем скопируйте обновленное решение в папку установки.  При копировании файлов в папку установки убедитесь, что предыдущие файлы перезаписываются.  
+##  <a name="Update"></a> Publish an update  
+ To update a solution, you publish it again by using the **Project Designer** or **Publish Wizard**, and then you copy the updated solution to the installation location. When you copy the files to the installation location, make sure that you overwrite the previous files.  
   
- Во время следующей проверки обновлений решения поиск и загрузка новой версии будут выполнены автоматически.  
+ The next time that the solution checks for an update, it'll find and load the new version automatically.  
   
-##  <a name="Location"></a> Изменение расположения установки решения  
- Путь установки можно добавлять и изменять после публикации решения.  При необходимости можно изменить путь установки по одной из следующих причин:  
+##  <a name="Location"></a> Change the installation location of a solution  
+ You can add or change the installation path after a solution is published. You might want to change the installation path for one or more of the following reasons:  
   
--   путь установки неизвестен на момент компиляции программы установки;  
+-   The setup program was compiled before the installation path was known.  
   
--   файлы решения копируются в другое расположение;  
+-   The solution files have been copied to a different location.  
   
--   изменились имя или адрес сервера, на котором размещены файлы установки.  
+-   The server that hosts the installation files has a new name or location.  
   
- Чтобы изменить путь установки решения, необходимо обновить программу установки, после чего пользователи должны запустить ее.  Для настроек уровня документа пользователи должны также обновить свойство в своем документе, чтобы оно указывало на новое расположение.  
+ To change the installation path of a solution, you must update the setup program, and then users must run it. For document-level customizations, users must also update a property in their document to point to the new location.  
   
 > [!NOTE]  
->  Если вы не хотите просить пользователей обновлять свойства в своих документах, можно предложить им получить обновленный документ из папки установки.  
+>  If you don't want to ask users to update their document properties, you can ask users to get the updated document from the installation location.  
   
-#### Изменение пути установки в программе установки  
+#### <a name="to-change-the-installation-path-in-the-setup-program"></a>To change the installation path in the setup program  
   
-1.  Откройте окно **командной строки** и перейдите в папку установки.  
+1.  Open a **Command Prompt** window, and then change directories to the installation folder.  
   
-2.  Запустите программу установки с параметром `/url`, который принимает новый путь установки в строковом формате.  
+2.  Run the setup program, and include the `/url` parameter, which takes the new installation path as a string.  
   
-     В следующем примере показано, как изменить путь к папке установки на расположение на веб\-сайте компании Fabrikam, но вместо URL\-адреса можно подставить любой путь:  
+     The following example shows how to change the installation path to a location on the Fabrikam website, but you can replace that URL with the path that you want:  
   
     ```  
     setup.exe /url="http://www.fabrikam.com/newlocation"  
     ```  
   
     > [!NOTE]  
-    >  Если появляется сообщение о том, что подпись исполняемого файла станет недействительной, это означает, что сертификат, с помощью которого было подписано решение, стал недействительным, а издатель неизвестен.  В результате пользователям необходимо будет подтвердить, что они доверяют источнику решения, прежде чем они смогут установить его.  
+    >  If a message appears and state that the signature of the executable will be invalidated, the certificate that was used to sign the solution is no longer valid, and the publisher is unknown. As a result, users will need to confirm that they trust the source of the solution before they can install it.  
   
     > [!NOTE]  
-    >  Чтобы просмотреть текущее значение URL\-адреса, выполните команду `setup.exe /url`.  
+    >  To display the current value of the URL, run `setup.exe /url`.  
   
- Для настроек уровня документа пользователь должен открыть документ и обновить значение свойства \_AssemblyLocation.  Ниже описано, как пользователи могут выполнить эту задачу.  
+ For document-level customizations, users must open the document and then update its _AssemblyLocation property. The following steps describe how users can perform this task.  
   
-#### Обновление свойства \_AssemblyLocation в документе  
+#### <a name="to-update-the-assemblylocation-property-in-a-document"></a>To update the _AssemblyLocation property in a document  
   
-1.  На вкладке **Файл** выберите пункт **Сведения**, как показано на следующем рисунке.  
+1.  On the **File** tab, choose **Info**, which the following illustration shows.  
   
-     ![Вкладка сведений в Excel](../vsto/media/vsto-infotab.png "Вкладка сведений в Excel")  
+     ![Info tab in Excel](../vsto/media/vsto-infotab.png "Info tab in Excel")  
   
-2.  В списке **Свойства** выберите **Дополнительные свойства**, как показано на следующем рисунке.  
+2.  In the **Properties** list, choose **Advanced Properties**, which the following illustration shows.  
   
-     ![Дополнительные свойства в Excel.](../vsto/media/vsto-advanceddocumentproperties.png "Дополнительные свойства в Excel.")  
+     ![Advanced Properties in Excel.](../vsto/media/vsto-advanceddocumentproperties.png "Advanced Properties in Excel.")  
   
-3.  На вкладке **Настраиваемые** в списке **Свойства** выберите \_AssemblyLocation, как показано на следующем рисунке.  
+3.  On the **Custom** tab in the **Properties** list, choose _AssemblyLocation, as the following illustration shows.  
   
-     ![Свойство AssemblyLocation.](../vsto/media/vsto-assemblylocationproperty.png "Свойство AssemblyLocation.")  
+     ![The AssemblyLocation property.](../vsto/media/vsto-assemblylocationproperty.png "The AssemblyLocation property.")  
   
-     Окно **Значение** содержит идентификатор манифеста развертывания.  
+     The **Value** box contains the deployment manifest identifier.  
   
-4.  Перед идентификатором введите полный путь к документу и вертикальную черту в формате *Путь* |*Идентификатор* \(например, *File:\/\/ServerName\/FolderName\/FileName |74744e4b\-e4d6\-41eb\-84f7\-ad20346fe2d9*.  
+4.  Before the identifier, enter the fully qualified path of the document, followed by a bar, in the format *Path*|*Identifier* (for example, *File://ServerName/FolderName/FileName|74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.  
   
-     Дополнительные сведения о формате идентификатора см. в разделе [Общие сведения о настраиваемых свойствах документа](../vsto/custom-document-properties-overview.md).  
+     For more information about how to format this identifier, see [Custom Document Properties Overview](../vsto/custom-document-properties-overview.md).  
   
-5.  Нажмите кнопку **ОК**, а затем сохраните и закройте документ.  
+5.  Choose the **OK** button, and then save and close the document.  
   
-6.  Чтобы установить решение в указанном расположении, запустите программу установки без параметра "\/url".  
+6.  Run the setup program without the /url parameter to install the solution in the specified location.  
   
-##  <a name="Roll"></a> Откат решения к более ранней версии  
- При откате решения пользователи возвращаются к более ранней версии этого решения.  
+##  <a name="Roll"></a> Roll back a solution to an earlier version  
+ When you roll back a solution, you revert users back to an earlier version of that solution.  
   
-#### Откат решения  
+#### <a name="to-roll-back-a-solution"></a>To roll back a solution  
   
-1.  Откройте расположение установки решения.  
+1.  Open the installation location of the solution.  
   
-2.  В папке публикации верхнего уровня удалите манифест развертывания \(VSTO\-файл\).  
+2.  In the top-level publish folder, delete the deployment manifest (the .vsto file).  
   
-3.  Найдите вложенную папку версии, к которой требуется вернуться.  
+3.  Find the subfolder for the version to which you want to roll back.  
   
-4.  Скопируйте манифест развертывания из этой папки в папку публикации верхнего уровня.  
+4.  Copy the deployment manifest from that subfolder to the top-level publish folder.  
   
-     Например чтобы вернуться от версии 1.0.0.1 решения **OutlookAddIn1** к версии 1.0.0.0, скопируйте файл **OutlookAddIn1.vsto** из папки **OutlookAddIn1\_1\_0\_0\_0**.  Вставьте файл в папку публикации верхнего уровня, перезаписав имеющийся манифест развертывания для версии **OutlookAddIn1\_1\_0\_0\_1**.  
+     For example, to roll back a solution that's called **OutlookAddIn1** from version 1.0.0.1 to version 1.0.0.0, copy the file **OutlookAddIn1.vsto** from the **OutlookAddIn1_1_0_0_0** folder. Paste the file into the top-level publish folder, overwriting the version-specific deployment manifest for **OutlookAddIn1_1_0_0_1** that was already there.  
   
-     На следующем рисунке показана структура папок публикации для данного примера.  
+     The following illustration shows the publish folder structure in this example.  
   
-     ![Структура папки публикации](~/vsto/media/publishfolderstructure.png "Структура папки публикации")  
+     ![Publish Folder Structure](../vsto/media/publishfolderstructure.png "Publish Folder Structure")  
   
-     Когда пользователь в следующий раз откроет приложение или настроенный документ, будет обнаружено изменение манифеста развертывания.  Предыдущая версия решения Office будет запущена из кэша ClickOnce.  
+     The next time that a user opens the application or customized document, the deployment manifest change is detected. The earlier version of the Office solution runs from the ClickOnce cache.  
   
 > [!NOTE]  
->  Локальные данные сохраняются только для одной предыдущей версии решения.  При откате на две версии локальные данные не сохраняются.  Дополнительные сведения о локальных данных см. в разделе [Доступ к локальным и удаленным данным в приложениях ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  
+>  Local data is saved for only one previous version of a solution. If you roll back two versions, local data isn't retained. For more information about local data, see [Accessing Local and Remote Data in ClickOnce Applications](/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications).  
   
-## См. также  
- [Развертывание решения Office](../vsto/deploying-an-office-solution.md)   
- [Публикация решений Office](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Практическое руководство. Публикация решения Office с помощью ClickOnce](http://msdn.microsoft.com/ru-ru/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
- [Практическое руководство. Установка решения Office ClickOnce](http://msdn.microsoft.com/ru-ru/14702f48-9161-4190-994c-78211fe18065)   
- [Практическое руководство. Публикация решения Office уровня документа на сервере SharePoint Server с помощью ClickOnce](http://msdn.microsoft.com/ru-ru/2408e809-fb78-42a1-9152-00afa1522e58)   
- [Создание пользовательского установщика для решения Office, устанавливаемого с помощью ClickOnce](http://msdn.microsoft.com/ru-ru/3e5887ed-155f-485d-b8f6-3c02c074085e)  
+## <a name="see-also"></a>See Also  
+ [Deploying an Office Solution](../vsto/deploying-an-office-solution.md)   
+ [Publishing Office Solutions](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
+ [How to: Publish an Office Solution by Using ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
+ [How to: Install a ClickOnce Office Solution](http://msdn.microsoft.com/en-us/14702f48-9161-4190-994c-78211fe18065)   
+ [How to: Publish a Document-Level Office Solution to a SharePoint Server by Using ClickOnce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58)   
+ [Creating a Custom Installer for a ClickOnce Office Solution](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e)  
   
   

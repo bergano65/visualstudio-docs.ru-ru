@@ -1,5 +1,5 @@
 ---
-title: "Страница &quot;Подписывание&quot; в конструкторе проектов | Документы Майкрософт"
+title: "Страница \"Подписывание\" в конструкторе проектов | Документы Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -38,11 +38,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: e4abacb0286de16c148076572e73043daed4d567
+ms.translationtype: HT
+ms.sourcegitcommit: a3c0f4d3bde8bb03d3766383eba01665e58458be
+ms.openlocfilehash: 4ec9e4acb1cd859ca96498db42c1cab4473c4c83
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/30/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="signing-page-project-designer"></a>Страница "Подписывание" в конструкторе проектов
@@ -82,7 +82,7 @@ ms.lasthandoff: 05/30/2017
   
 ## <a name="assembly-signing"></a>Подпись сборки  
  Флажок **Подписать сборку**  
- Установите этот флажок, чтобы подписать сборку и создать файл ключа со строгим именем. Дополнительные сведения о подписи сборки с помощью **конструктора проектов** см. в разделе [Практическое руководство. Подписывание сборки (Visual Studio)](http://msdn.microsoft.com/en-us/f468a7d3-234c-4353-924d-8e0ae5896564).  
+ Установите этот флажок, чтобы подписать сборку и создать файл ключа со строгим именем. Дополнительные сведения о подписи сборки с помощью **конструктора проектов** см. в разделе [Практическое руководство. Подписывание сборки (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).  
   
  Этот параметр использует средство Al.exe, предоставляемое [!INCLUDE[winsdklong](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).  
   
@@ -109,6 +109,6 @@ ms.lasthandoff: 05/30/2017
  [Управление сборками и подписывание манифестов](../../ide/managing-assembly-and-manifest-signing.md)   
  [Подписывание управляемых приложений с использованием строгого имени](http://msdn.microsoft.com/en-us/5fef3490-c519-4363-94fd-8b1ad260dab5)   
  [Практическое руководство. Подписание манифестов приложения и развертывания](../../ide/how-to-sign-application-and-deployment-manifests.md)   
- [Практическое руководство. Подписывание сборки (Visual Studio)](http://msdn.microsoft.com/en-us/f468a7d3-234c-4353-924d-8e0ae5896564)   
+ [Практическое руководство. Подписывание сборки (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)   
  [Практическое руководство. Подписание сборки строгим именем](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)   
- [Сборки со строгими именами](http://msdn.microsoft.com/Library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)
+ [Сборки со строгими именами](/dotnet/framework/app-domains/strong-named-assemblies)   

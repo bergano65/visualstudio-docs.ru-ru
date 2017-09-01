@@ -1,12 +1,13 @@
 ---
 title: "Установка поддержки Python в Visual Studio | Документация Майкрософт"
 ms.custom: 
-ms.date: 5/8/2017
+ms.date: 7/13/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ce3d3656-7ba2-490d-92df-0bb3e3badf92
@@ -14,29 +15,15 @@ caps.latest.revision: 11
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: 9cdd87d81f0b0f4748a25c7bb87fb840e246854c
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 613af31a2e44cc447980b68de4b0b5642dde1262
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="installing-python-support-in-visual-studio"></a>Установка поддержки Python в Visual Studio
+# <a name="installing-python-support-in-visual-studio-on-windows"></a>Установка поддержки Python в Visual Studio под управлением Windows
 
 Чтобы установить поддержку Python для Visual Studio, выполните инструкции из раздела, который соответствует вашей версии Visual Studio.
 
@@ -44,12 +31,15 @@ ms.lasthandoff: 05/09/2017
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 и более ранние версии](#visual-studio-2013-and-earlier)
 
-Обратите внимание, что для Visual Studio 2015 и более ранних версий необходимо отдельно установить любой интерпретатор Python на ваш выбор. Дополнительные сведения см. в статье [Среды Python](python-environments.md).
+Для Visual Studio 2015 и более ранних версий требуется отдельно установить любой интерпретатор Python на ваш выбор. Дополнительные сведения см. в статье [Окружения Python](python-environments.md).
 
 Чтобы быстро проверить поддержку Python после установки, откройте интерактивное окно Python. Для этого нажмите клавиши Alt + I и введите `2+2`. Если вы не увидите результат `4`, проверьте выполненные действия.
 
 > [!Tip]
 > Рабочая нагрузка Python содержит полезное расширение Cookiecutter, которое предоставляет графический пользовательский интерфейс для поиска шаблонов, ввода параметров шаблонов и создания проектов и файлов. Дополнительные сведения см. в статье [Использование расширения Cookiecutter](cookiecutter.md).
+
+> [!Note]
+> Сейчас Python не поддерживается в Visual Studio для Mac, однако доступен в Mac и Linux посредством Visual Studio Code. См. [Вопросы и ответы](python-in-visual-studio.md#questions-and-answers).
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
@@ -57,14 +47,16 @@ ms.lasthandoff: 05/09/2017
 
 1. В установщике Visual Studio выберите рабочую нагрузку **Web & Cloud > Python Development** (Облачная и веб-разработка > Разработка Python).
 
-    ![Рабочая нагрузка разработки Python в установщике Visual Studio](~/python/media/installation-python-workload.png)
+    ![Рабочая нагрузка разработки Python в установщике Visual Studio](media/installation-python-workload.png)
 
     > [!Note]
     > Также Python входит в рабочую нагрузку **Приложения для обработки и анализа данных и аналитические приложения**.
 
 1. В правой части окна установщика выберите интерпретатор Python и все дополнительные средства, которые вам нужны. Например, если планируется разработать расширения C++ для Python, включите параметр **Собственные средства разработки Python**.
 
-    ![Параметры разработки Python в установщике Visual Studio](~/python/media/installation-python-options.png)
+    ![Параметры разработки Python в установщике Visual Studio](media/installation-python-options.png)
+
+1. Если на компьютере уже установлены интерпретаторы, см. раздел [Создание окружения для существующего интерпретатора](python-environments.md#creating-an-environment-for-an-existing-interpreter).
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 
@@ -74,9 +66,9 @@ ms.lasthandoff: 05/09/2017
 
 1. Выберите **Языки программирования > Инструменты Python для Visual Studio** и нажмите **Далее**:
 
-    ![Выбор PTVS в установщике Visual Studio 2015](~/python/media/installation-vs2015.png)    
+    ![Выбор PTVS в установщике Visual Studio 2015](media/installation-vs2015.png)    
 
-1. Когда завершится работа установщика Visual Studio, [установите любой интерпретатор Python на свой выбор](python-environments.md#selecting-and-installing-python-interpreters).
+1. Когда завершится работа установщика Visual Studio, [установите любой интерпретатор Python на свой выбор](python-environments.md#selecting-and-installing-python-interpreters). Если интерпретатор уже установлен, см. раздел [Создание окружения для существующего интерпретатора](python-environments.md#creating-an-environment-for-an-existing-interpreter).
 
 ## <a name="visual-studio-2013-and-earlier"></a>Visual Studio 2013 и более ранние версии
 
@@ -86,7 +78,7 @@ ms.lasthandoff: 05/09/2017
     - Visual Studio 2012: [PTVS 2.1 для Visual Studio 2012](https://pytools.codeplex.com/downloads/get/920478)
     - Visual Studio 2010: [PTVS 2.1 для Visual Studio 2010](https://pytools.codeplex.com/downloads/get/920479)
 
-1. [Selecting and installing Python interpreters](python-environments.md#selecting-and-installing-python-interpreters) (Установка и настройка интерпретаторов Python).
+1. [Selecting and installing Python interpreters](python-environments.md#selecting-and-installing-python-interpreters) (Установка и настройка интерпретаторов Python). Если интерпретатор уже установлен, см. раздел [Создание окружения для существующего интерпретатора](python-environments.md#creating-an-environment-for-an-existing-interpreter).
 
 ## <a name="install-locations"></a>Расположения установки
 

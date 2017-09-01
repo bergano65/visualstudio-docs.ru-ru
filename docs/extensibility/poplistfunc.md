@@ -1,65 +1,87 @@
 ---
-title: "POPLISTFUNC | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "POPDIRLISTFUNC"
-helpviewer_keywords: 
-  - "Функция обратного вызова POPLISTFUNC"
+title: POPLISTFUNC | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- POPDIRLISTFUNC
+helpviewer_keywords:
+- POPLISTFUNC callback function
 ms.assetid: b2199fd5-d707-4628-92dd-e2a01e2f507a
 caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
----
-# POPLISTFUNC
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 034bf39f44d8e3684e553ea5e60c68c041cefafe
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-Этот обратный вызов передается [SccPopulateList](../extensibility/sccpopulatelist-function.md) Интегрированной средой разработки и используется подключаемый модуль системы управления версиями для обновления списка файлов и каталогов \(также указан для `SccPopulateList` функция\).  
+---
+# <a name="poplistfunc"></a>POPLISTFUNC
+This callback is supplied to the [SccPopulateList](../extensibility/sccpopulatelist-function.md) by the IDE and is used by the source control plug-in to update a list of files or directories (also supplied to the `SccPopulateList` function).  
   
- Когда пользователь выбирает **получить** команды в Интегрированной среде разработки, среда интегрированной разработки отобразит список всех файлов, которые пользователь может получить. К сожалению интегрированной среды разработки не знает точный список всех файлов, которые пользователь может получить; только подключаемый модуль содержит этот список. Если другие пользователи добавлены файлы проект управления исходным кодом, эти файлы должны отображаться в списке, но интегрированной среды разработки не знает о них. IDE формирует список файлов, которые он считал, пользователь может получить. Прежде чем этот список отображается для пользователя, он вызывает [SccPopulateList](../extensibility/sccpopulatelist-function.md)`,` Предоставление подключаемый модуль системы управления версиями возможность добавлять и удалять файлы из списка.  
+ When a user chooses the **Get** command in the IDE, the IDE displays a list box of all files that the user can get. Unfortunately, the IDE does not know the exact list of all the files that the user might get; only the plug-in has this list. If other users have added files to the source code control project, these files should appear in the list, but the IDE does not know about them. The IDE builds a list of the files that it thinks the user can get. Before it displays this list to the user, it calls the [SccPopulateList](../extensibility/sccpopulatelist-function.md)`,` giving the source control plug-in a chance to add and delete files from the list.  
   
-## Подпись  
- Подключаемый модуль системы управления версиями изменяет список путем вызова функции IDE реализован с следующий прототип:  
+## <a name="signature"></a>Signature  
+ The source control plug-in modifies the list by calling an IDE-implemented function with the following prototype:  
   
-```cpp#  
-typedef BOOL (*POPLISTFUNC) ( LPVOID pvCallerData, BOOL fAddRemove, LONG nStatus, LPSTR lpFileName );  
+```cpp  
+typedef BOOL (*POPLISTFUNC) (  
+   LPVOID pvCallerData,  
+   BOOL fAddRemove,  
+   LONG nStatus,  
+   LPSTR lpFileName  
+);  
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Parameters  
  pvCallerData  
- `pvCallerData` Параметр, передаваемый в вызывающем объекте \(IDE\) [SccPopulateList](../extensibility/sccpopulatelist-function.md). Подключаемый модуль системы управления версиями следует предполагать о содержимом данного параметра.  
+ The `pvCallerData` parameter passed by the caller (the IDE) to the [SccPopulateList](../extensibility/sccpopulatelist-function.md). The source control plug-in should assume nothing about the contents of this parameter.  
   
  fAddRemove  
- Если `TRUE`, `lpFileName` — это файл, который должен быть добавлен в список файлов. Если `FALSE`, `lpFileName` — файл, который должен быть удален из списка файлов.  
+ If `TRUE`, `lpFileName` is a file that should be added to the file list. If `FALSE`, `lpFileName` is a file that should be deleted from the file list.  
   
  nStatus  
- Состояние `lpFileName` \(сочетание `SCC_STATUS` bits, см. в разделе [Код состояния файла](../extensibility/file-status-code-enumerator.md) Подробные сведения\).  
+ Status of `lpFileName` (a combination of the `SCC_STATUS` bits; see [File Status Code](../extensibility/file-status-code-enumerator.md) for details).  
   
  lpFileName  
- Полный путь к каталогу имя файла, чтобы добавить или удалить из списка.  
+ Full directory path of the file name to add or delete from the list.  
   
-## Возвращаемое значение  
+## <a name="return-value"></a>Return Value  
   
-|Значение|Описание|  
-|--------------|--------------|  
-|`TRUE`|Подключаемый модуль можно продолжить вызов этой функции.|  
-|`FALSE`|Возникла проблема со стороны интегрированной среды разработки \(например, нехватки памяти\). Подключаемый модуль должен остановить операцию.|  
+|Value|Description|  
+|-----------|-----------------|  
+|`TRUE`|The plug-in can continue calling this function.|  
+|`FALSE`|There has been a problem on the IDE side (such as an out of memory situation). The plug-in should stop operation.|  
   
-## Заметки  
- Для каждого файла, который требуется добавить или удалить из списка файлов подключаемого модуля системы управления версиями, он вызывает эту функцию, передавая `lpFileName`.`fAddRemove` Флаг указывает новый файл для добавления в список или удалить старый файл.`nStatus` Дает состояние файла. После завершения добавления и удаления файлов SCC подключаемого модуля, он возвращает из [SccPopulateList](../extensibility/sccpopulatelist-function.md) вызова.  
+## <a name="remarks"></a>Remarks  
+ For each file that the source control plug-in wants to add to or delete from the file list, it calls this function, passing in the `lpFileName`. The `fAddRemove` flag indicates a new file to add to the list or an old file to delete. The `nStatus` parameter gives the status of the file. When the SCC plug-in has finished adding and deleting files, it returns from the [SccPopulateList](../extensibility/sccpopulatelist-function.md) call.  
   
 > [!NOTE]
->  `SCC_CAP_POPULATELIST` Бит функции не требуется для Visual Studio.  
+>  The `SCC_CAP_POPULATELIST` capability bit is required for Visual Studio.  
   
-## См. также  
- [Функции обратного вызова, реализуемый интегрированной среды разработки](../extensibility/callback-functions-implemented-by-the-ide.md)   
- [Подключаемые модули управления версиями](../extensibility/source-control-plug-ins.md)   
+## <a name="see-also"></a>See Also  
+ [Callback Functions Implemented by the IDE](../extensibility/callback-functions-implemented-by-the-ide.md)   
+ [Source Control Plug-ins](../extensibility/source-control-plug-ins.md)   
  [SccPopulateList](../extensibility/sccpopulatelist-function.md)   
- [Код состояния файла](../extensibility/file-status-code-enumerator.md)
+ [File Status Code](../extensibility/file-status-code-enumerator.md)

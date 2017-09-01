@@ -1,64 +1,81 @@
 ---
-title: "Практическое руководство. Добавление кода для объектов TableAdapter в многоуровневых приложениях | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "многоуровные приложения, расширение TableAdapters"
-  - "адаптеры таблиц TableAdapter, многоуровные приложения"
+title: Add code to TableAdapters in n-tier applications | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- TableAdapters, n-tier applications
+- n-tier applications, extending TableAdapters
 ms.assetid: dafac00e-df9d-4d4a-95a6-e34b4d099425
 caps.latest.revision: 19
-caps.handback.revision: 16
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 6f0fe07b55ae0eeb57c0cc11fed047f31966cb6e
+ms.openlocfilehash: d4b7dc8128d34b3252a20ab5f34c1765dcf0f118
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
+
 ---
-# Практическое руководство. Добавление кода для объектов TableAdapter в многоуровневых приложениях
-Можно расширить функциональные возможности `TableAdapter` путем создания файла разделяемого класса для `TableAdapter` и добавления к нему кода \(вместо добавления кода к файлу *DatasetName*. DataSet.Designer\).  \(Разделяемые классы позволяют разделять код для определенного класса между несколькими физическими файлами.  Дополнительные сведения см. в разделе [Partial](/dotnet/visual-basic/language-reference/modifiers/partial) или [partial \(тип\)](/dotnet/csharp/language-reference/keywords/partial-type).\)  
+# <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Add code to TableAdapters in n-tier applications
+You can extend the functionality of a TableAdapter by creating a partial class file for the TableAdapter and adding code to it (instead of adding code to the *DatasetName*.DataSet.Designer file). Partial classes enable code for a specific class to be divided among multiple physical files. For more information, see [Partial](/dotnet/visual-basic/language-reference/modifiers/partial) or [partial (Type)](/dotnet/csharp/language-reference/keywords/partial-type).  
   
- Код, определяющий `TableAdapter`, создается при каждом внесении изменений в `TableAdapter` \(в [Создание и изменение типизированных наборов данных](../data-tools/creating-and-editing-typed-datasets.md)\).  Этот код также создается при внесении изменений во время выполнения мастеров, изменяющих конфигурацию `TableAdapter`.  Чтобы предотвратить удаление кода во время повторного формирования `TableAdapter`, добавьте код в файл разделяемого класса `TableAdapter`.  
+ The code that defines a TableAdapter is generated every time changes are made to the TableAdapter in the dataset. This code is also generated when changes are made during the running of any wizard that modifies the configuration of the TableAdapter. To prevent your code from being deleted during the regeneration of a TableAdapter, add code to the partial class file of the TableAdapter.  
   
- По умолчанию результатом разделения кода набора данных и кода `TableAdapter` являются отдельные файлы классов в каждом проекте.  Исходный проект включает файл с именем *DatasetName*.Designer.vb \(или *DatasetName*.Designer.cs\), содержащий код `TableAdapter`.  Проект, указанный в свойстве **Проект набора данных**, включает файл с именем *DatasetName*.DataSet.Designer.vb \(или *DatasetName*.DataSet.Designer.cs\), содержащий код набора данных.  
-  
-> [!NOTE]
->  После разделения наборов данных и `TableAdapter` \(путем установки свойства **Проект набора данных**\) существующие в проекте разделяемые классы наборов данных не будут перемещаться автоматически.  Существующие разделяемые классы наборов данных должны быть вручную перемещены в проект набора данных.  
+ By default, after you separate the dataset and TableAdapter code, the result is a discrete class file in each project. The original project has a file named *DatasetName*.Designer.vb (or *DatasetName*.Designer.cs) that contains the TableAdapter code. The project that's designated in the **Dataset Project** property has a file named *DatasetName*.DataSet.Designer.vb (or *DatasetName*.DataSet.Designer.cs) that contains the dataset code.  
   
 > [!NOTE]
->  [Создание и изменение типизированных наборов данных](../data-tools/creating-and-editing-typed-datasets.md) также предоставляет функциональные возможности для создания обработчиков событий <xref:System.Data.DataTable.ColumnChanging> и <xref:System.Data.DataTable.RowChanging> при добавлении кода проверки.  Дополнительные сведения см. в разделе [Практическое руководство. Добавление проверки в N\-уровневом наборе данных](../data-tools/add-validation-to-an-n-tier-dataset.md).  
+>  When you separate datasets and TableAdapters (by setting the **DataSet Project** property), existing partial dataset classes in the project will not be moved automatically. Existing partial dataset classes must be moved manually to the dataset project.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+> [!NOTE]
+>  The dataset provides functionality for generating <xref:System.Data.DataTable.ColumnChanging> and <xref:System.Data.DataTable.RowChanging> event handlers when validation is needed. For more information, see [Add validation to an n-tier dataset](../data-tools/add-validation-to-an-n-tier-dataset.md).  
   
-### Чтобы добавить пользовательский код к TableAdapter в многоуровневом приложении:  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-1.  Найдите проект, который содержит XSD\-файл \([Создание и изменение типизированных наборов данных](../data-tools/creating-and-editing-typed-datasets.md)\).  
+### <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>To add user code to a TableAdapter in an n-tier application  
   
-2.  Дважды щелкните файл **.xsd**, чтобы открыть [Создание и изменение типизированных наборов данных](../data-tools/creating-and-editing-typed-datasets.md).  
+1.  Locate the project that contains the .xsd file.
   
-3.  Щелкните правой кнопкой мыши `TableAdapter`, в который требуется добавить код, и нажмите кнопку **Просмотреть код**.  
+2.  Double click the **.xsd** file to open the **Dataset Designer**.  
   
-     Созданный разделяемый класс открывается в редакторе кода.  
+3.  Right-click the TableAdapter that you want to add code to, and then select **View Code**.  
   
-4.  Добавьте код внутри объявления разделяемого класса.  
+     A partial class is created and opens in the Code Editor.  
   
-5.  В следующем примере показано место для добавления кода в `CustomersTableAdapter` в `NorthwindDataSet`:  
+4.  Add code inside the partial class declaration.  
   
-    ```vb#  
+5.  The following example shows where to add code to the `CustomersTableAdapter` in the `NorthwindDataSet`:  
+  
+    ```vb  
     Partial Public Class CustomersTableAdapter  
         ' Add code here to add functionality   
         ' to the CustomersTableAdapter.  
     End Class  
     ```  
   
-    ```c#  
+    ```csharp  
     public partial class CustomersTableAdapter  
     {  
         // Add code here to add functionality  
@@ -66,10 +83,10 @@ manager: "ghogen"
     }  
     ```  
   
-## См. также  
- [Общие сведения о N\-уровневых приложениях для работы с данными](../data-tools/n-tier-data-applications-overview.md)   
- [Практическое руководство. Добавление кода для наборов данных в многоуровневых приложениях](../data-tools/add-code-to-datasets-in-n-tier-applications.md)   
- [адаптеры таблиц TableAdapter](../Topic/TableAdapters.md)   
- [Общие сведения о компоненте TableAdapterManager](../Topic/TableAdapterManager%20Overview.md)   
- [Общие сведения об иерархическом обновлении](../Topic/Hierarchical%20Update%20Overview.md)   
- [Создание приложений для работы с данными](../data-tools/creating-data-applications.md)
+## <a name="see-also"></a>See Also  
+ [N-Tier Data Applications Overview](../data-tools/n-tier-data-applications-overview.md)   
+ [Add code to datasets in n-tier applications](../data-tools/add-code-to-datasets-in-n-tier-applications.md)   
+ [Create and Configure TableAdapters](create-and-configure-tableadapters.md)   
+ [Create and Configure TableAdapters](create-and-configure-tableadapters.md)   
+ [Hierarchical Update Overview](hierarchical-update.md)   
+

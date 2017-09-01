@@ -1,230 +1,246 @@
 ---
-title: "Пошаговое руководство. Создание многоуровневого приложения для работы с данными | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "многоуровные приложения, создание"
-  - "многоуровные приложения, пошаговые руководства"
+title: 'Walkthrough: Creating an N-Tier Data Application | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- n-tier applications, creating
+- n-tier applications, walkthroughs
 ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
 caps.latest.revision: 48
-caps.handback.revision: 48
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: c3148acaacbd77d10c2729384130267a55d5231a
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Создание многоуровневого приложения для работы с данными
-*N\-уровневые* приложения для обработки данных — это приложения, которые осуществляют доступ к данным и разделены на несколько логических слоев или *уровней*.  Разделение компонентов приложения на несколько отдельных уровней повышает удобство обслуживания и масштабируемость приложения.  Это обеспечивается за счет упрощения внедрения новых технологий, которые можно применить к отдельному уровню без пересмотра всего решения.  N\-уровневая архитектура включает в себя уровень представления, средний уровень и уровень данных.  Средний уровень обычно содержит слой доступа к данным, слой бизнес\-логики и общие компоненты, такие как аутентификация и проверка.  Уровень данных содержит реляционную базу данных.  N\-уровневые приложения обычно хранят конфиденциальную информацию на слое доступа к данным среднего уровня, чтобы обеспечить изоляцию от конечных пользователей, работающих с уровнем представления.  Для получения дополнительной информации см. [Общие сведения о N\-уровневых приложениях для работы с данными](../data-tools/n-tier-data-applications-overview.md).  
+# <a name="walkthrough-creating-an-n-tier-data-application"></a>Walkthrough: Creating an N-Tier Data Application
+*N-tier* data applications are applications that access data and are separated into multiple logical layers, or *tiers*. Separating application components into discrete tiers increases the maintainability and scalability of the application. It does this by enabling easier adoption of new technologies that can be applied to a single tier without requiring you to redesign the whole solution. N-tier architecture includes a presentation tier, a middle-tier, and a data tier. The middle tier typically includes a data access layer, a business logic layer, and shared components such as authentication and validation. The data tier includes a relational database. N-tier applications usually store sensitive information in the data access layer of the middle-tier to maintain isolation from end users who access the presentation tier. For more information, see [N-Tier Data Applications Overview](../data-tools/n-tier-data-applications-overview.md).  
   
- Один из способов разделения разных уровней в n\-уровневом приложении заключается в создании отдельных проектов для каждого уровня, который требуется включить в приложение.  Типизированные наборы данных содержат свойство `DataSet Project`, определяющее, в какие проекты следует передать созданный набор данных и код `TableAdapter`.  
+ One way to separate the various tiers in an n-tier application is to create discrete projects for each tier that you want to include in your application. Typed datasets contain a `DataSet Project` property that determines which projects the generated dataset and `TableAdapter` code should go into.  
   
- В данном пошаговом руководстве демонстрируется, как разделить набор данных и код `TableAdapter` по отдельным проектам библиотеки классов с помощью **Конструктора наборов данных**.  После разделения набора данных и кода адаптера таблицы вы создадите службу [Windows Communication Foundation Services and WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) для вызова уровня доступа к данным.  Наконец, вы создадите приложение Windows Forms в качестве уровня представления.  Этот уровень осуществляет доступ к данным из службы данных.  
+ This walkthrough demonstrates how to separate dataset and `TableAdapter` code into discrete class library projects by using the **Dataset Designer**. After you separate the dataset and TableAdapter code, you will create a [Windows Communication Foundation Services and WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) service to call into the data access tier. Finally, you will create a Windows Forms application as the presentation tier. This tier accesses data from the data service.  
   
- В этом пошаговом руководстве выполняются следующие задачи.  
+ During this walkthrough, you will perform the following steps:  
   
--   Создание нового n\-уровневого решения, содержащего несколько проектов.  
+-   Create a new n-tier solution that will contain multiple projects.  
   
--   Добавление в n\-уровневое решение двух проектов библиотеки классов.  
+-   Add two class library projects to the n-tier solution.  
   
--   Создание типизированного набора данных с помощью **Мастера настройки источника данных**.  
+-   Create a typed dataset by using the **Data Source Configuration Wizard**.  
   
--   Разделение созданного [адаптеры таблиц TableAdapter](../Topic/TableAdapters.md) и кода набора данных по отдельным проектам.  
+-   Separate the generated [TableAdapters](create-and-configure-tableadapters.md) and dataset code into discrete projects.  
   
--   Создание службы WCF для вызова уровня доступа к данным.  
+-   Create a Windows Communication Foundation (WCF) service to call into the data access tier.  
   
--   Создание функций в службе для извлечения данных из уровня доступа к данным.  
+-   Create functions in the service to retrieve data from the data access tier.  
   
--   Создание приложения Windows Forms для использования в качестве уровня представления.  
+-   Create a Windows Forms application to serve as the presentation tier.  
   
--   Создание элементов управления Windows Forms с привязкой к источнику данных.  
+-   Create Windows Forms controls that are bound to the data source.  
   
--   Написание кода для заполнения таблиц данных.  
+-   Write code to populate the data tables.  
   
- ![ссылка на видео](~/data-tools/media/playvideo.gif "PlayVideo") Видеоверсию этого раздела см. на странице [Видео: создание N\-уровневого приложения для работы с данными](http://go.microsoft.com/fwlink/?LinkId=115188).  
+ ![link to video](../data-tools/media/playvideo.gif "PlayVideo") For a video version of this topic, see [Video How to: Creating an N-Tier Data Application](http://go.microsoft.com/fwlink/?LinkId=115188).  
   
-## Обязательные компоненты  
- Для выполнения данного пошагового руководства требуется:  
+## <a name="prerequisites"></a>Prerequisites  
+ To complete this walkthrough, you need:  
   
--   Доступ к примеру базы данных "Борей".  Для получения дополнительной информации см. [Практическое руководство. Установка образцов баз данных](../data-tools/how-to-install-sample-databases.md).  
+-   Access to the Northwind sample database. For more information, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
   
-## Создание N\-уровневого решения и библиотеки классов для хранения набора данных \(DataEntityTier\)  
- Первым шагом данного руководства является создание решения и двух проектов библиотеки классов.  Первая библиотека классов будет содержать набор данных \(сформированный класс типизированного набора данных и таблицы данных, которые будут содержать данные приложения\).  Этот проект используется в качестве слоя сущностей данных приложения и обычно находится в среднем уровне.  [Создание и изменение типизированных наборов данных](../data-tools/creating-and-editing-typed-datasets.md) используется для создания начального набора данных и автоматического разделения кода по двум библиотекам классов.  
+## <a name="creating-the-n-tier-solution-and-class-library-to-hold-the-dataset-dataentitytier"></a>Creating the N-Tier Solution and Class Library to Hold the Dataset (DataEntityTier)  
+ The first step of this walkthrough is to create a solution and two class library projects. The first class library will hold the dataset (the generated typed DataSet class and DataTables that will hold the application's data). This project is used as the data entity layer of the application and is typically located in the middle tier. The datasetis used to create the initial dataset and automatically separate the code into the two class libraries.  
   
 > [!NOTE]
->  Обязательно присвойте проекту и решению правильные имена перед нажатием кнопки **ОК**.  Это облегчит выполнение данного пошагового руководства.  
+>  Be sure to name the project and solution correctly before you click **OK**. Doing so will make it easier for you to complete this walkthrough.  
   
-#### Создание n\-уровневого решения и библиотеки классов DataEntityTier  
+#### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>To create the n-tier solution and DataEntityTier class library  
   
-1.  Перейдите в меню **Файл** и создайте новый проект.  
+1.  From the **File** menu, create a new project.  
   
     > [!NOTE]
-    >  **Конструктор наборов данных** поддерживается в проектах [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] и C\#.  Создайте новый проект на одном из этих языков.  
+    >  The **Dataset Designer** is supported in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] and C# projects. Create the new project in one of these languages.  
   
-2.  В диалоговом окне **Создание проекта** в области **Типы проектов** выберите **Windows**.  
+2.  In the **New Project** dialog box, in the **Project types** pane, click **Windows**.  
   
-3.  Щелкните шаблон **Библиотека классов**.  
+3.  Click the **Class Library** template.  
   
-4.  Присвойте проекту имя "DataEntityTier".  
+4.  Name the project **DataEntityTier**.  
   
-5.  Присвойте решению имя "NTierWalkthrough".  
+5.  Name the solution **NTierWalkthrough**.  
   
-6.  Нажмите кнопку **ОК**.  
+6.  Click **OK**.  
   
-     Создается решение NTierWalkthrough, содержащее проект DataEntityTier, которое добавляется в **Обозреватель решений**.  
+     An NTierWalkthrough solution that contains the DataEntityTier project is created and added to **Solution Explorer**.  
   
-## Создание библиотеки классов для хранения адаптеров таблицы \(DataAccessTier\)  
- Следующий наг после создания проекта DataEntityTier заключается в создании другого проекта библиотеки классов.  Этот проект будет содержать созданные `TableAdapter` и называется *уровнем доступа к данным* приложения.  Уровень доступа к данным содержит информацию, необходимую для подключения к базе данных, и обычно находится на среднем уровне.  
+## <a name="creating-the-class-library-to-hold-the-tableadapters-dataaccesstier"></a>Creating the Class Library to Hold the TableAdapters (DataAccessTier)  
+ The next step after you create the DataEntityTier project is to create another class library project. This project will hold the generated `TableAdapter`s and is called the *data access tier* of the application. The data access tier contains the information that is required to connect to the database and is typically located in the middle tier.  
   
-#### Создание новой библиотеки классов для адаптеров таблиц  
+#### <a name="to-create-the-new-class-library-for-the-tableadapters"></a>To create the new class library for the TableAdapters  
   
-1.  В меню **Файл** добавьте новый проект в решение NTierWalkthrough.  
+1.  From the **File** menu, add a new project to the NTierWalkthrough solution.  
   
-2.  В диалоговом окне **Новый проект** в области **Шаблоны** выберите **Библиотека классов**.  
+2.  In the **New Project** dialog box, in the **Templates** pane, click **Class Library**.  
   
-3.  Присвойте проекту имя "DataAccessTier" и нажмите кнопку **ОК**.  
+3.  Name the project **DataAccessTier** and click **OK**.  
   
-     Создается проект DataAccessTier, который добавляется в решение NTierWalkthrough.  
+     The DataAccessTier project is created and added to the NTierWalkthrough solution.  
   
-## Создание набора данных  
- Следующим шагом является создание типизированного набора данных.  Типизированные наборы данных создаются с классом набора данных \(включая классы таблиц данных\) и классами `TableAdapter` в одном проекте.  \(Все классы формируются в одном файле.\) При разделении набора данных и адаптеров `TableAdapter` по разным проектам именно класс набора данных перемещается в другой проект, оставляя классы `TableAdapter` в исходном проекте.  Таким образом, создайте набор данных в проекте, который в конечном итоге будет содержать `TableAdapter` \(проект DataAccessTier\).  Набор данных создается с помощью **Мастера настройки источника данных**.  
+## <a name="creating-the-dataset"></a>Creating the Dataset  
+ The next step is to create a typed dataset. Typed datasets are created with both the dataset class (including DataTables classes) and the `TableAdapter` classes in a single project. (All classes are generated into a single file.) When you separate the dataset and `TableAdapter`s into different projects, it is the dataset class that is moved to the other project, leaving the `TableAdapter` classes in the original project. Therefore, create the dataset in the project that will ultimately contain the `TableAdapter`s (the DataAccessTier project). You will create the dataset by using the **Data Source Configuration Wizard**.  
   
 > [!NOTE]
->  Для создания подключения необходимо иметь доступ к учебной базе данных "Борей".  Дополнительные сведения о настройке учебной базы данных "Борей" см. в разделе [Практическое руководство. Установка образцов баз данных](../data-tools/how-to-install-sample-databases.md).  
+>  You must have access to the Northwind sample database to create the connection. For information about how to set up the Northwind sample database, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
   
-#### Создание набора данных  
+#### <a name="to-create-the-dataset"></a>To create the dataset  
   
-1.  Щелкните DataAccessTier в **Обозревателе решений**.  
+1.  Click DataAccessTier in **Solution Explorer**.  
   
-2.  В меню **Данные** выберите команду **Показать источники данных**.  
+2.  On the **Data** menu, click **Show Data Sources**.  
   
-3.  В окне **Источники данных** выберите **Добавить новый источник данных**, чтобы запустить **Мастер настройки источника данных**.  
+3.  In the **Data Sources** window, click **Add New Data Source** to start the **Data Source Configuration Wizard**.  
   
-4.  На странице **Выбор типа источника данных** выберите **База данных** и нажмите кнопку **Далее**.  
+4.  On the **Choose a Data Source Type** page, click **Database** and then click **Next**.  
   
-5.  На странице **Выбор подключения к базе данных** выполните одно из следующих действий.  
+5.  On the **Choose Your Data Connection** page, perform one of the following actions:  
   
-     Если подключение к учебной базе данных "Борей" доступно в раскрывающемся списке, то выберите его.  
+     If a data connection to the Northwind sample database is available in the drop-down list, click it.  
   
-     \-или\-  
+     -or-  
   
-     Выберите **Новое подключение** для открытия диалогового окна **Добавить подключение**.  
+     Click **New Connection** to open the **Add Connection** dialog box.  
   
-6.  Если базе данных требуется пароль, выберите параметр для включения конфиденциальных данных и щелкните **Далее**.  
+6.  If the database requires a password, select the option to include sensitive data, and then click **Next**.  
   
     > [!NOTE]
-    >  Если вы выбрали файл локальной базы данных \(вместо подключения к SQL Server\), может отображаться запрос о том, требуется ли включить этот файл в проект.  Выберите **Да**, чтобы включить файл базы данных в проект.  
+    >  If you selected a local database file (instead of connecting to SQL Server) you might be asked if you want to add the file to the project. Click **Yes** to add the database file to the project.  
   
-7.  Нажмите кнопку **Далее** на странице **Сохранить строку подключения в файл конфигурации приложения**.  
+7.  Click **Next** on the **Save the Connection String to the Application Configuration File** page.  
   
-8.  Разверните узел **Таблицы** на странице **Выбор объектов базы данных**.  
+8.  Expand the **Tables** node on the **Choose Your Database Objects** page.  
   
-9. Установите флажки для таблиц **Клиенты** и **Заказы**, а затем нажмите кнопку **Готово**.  
+9. Click the check boxes for the **Customers** and **Orders** tables, and then click **Finish**.  
   
-     NorthwindDataSet добавляется в проект DataAccessTier и отображается в окне **Источники данных**.  
+     NorthwindDataSet is added to the DataAccessTier project and appears in the **Data Sources** window.  
   
-## Отделение адаптеров таблиц от набора данных  
- После создания набора данных отделите сформированный класс набора данных от адаптеров таблицы.  Для этого задайте для свойства **Проект DataSet** имя проекта, в котором требуется хранить отделенный класс набора данных.  
+## <a name="separating-the-tableadapters-from-the-dataset"></a>Separating the TableAdapters from the Dataset  
+ After you create the dataset, separate the generated dataset class from the TableAdapters. You do this by setting the **DataSet Project** property to the name of the project in which to store the separated out dataset class.  
   
-#### Порядок отделения адаптеров таблиц от набора данных  
+#### <a name="to-separate-the-tableadapters-from-the-dataset"></a>To separate the TableAdapters from the Dataset  
   
-1.  Дважды щелкните **NorthwindDataSet.xsd** в **Обозревателе решений**, чтобы открыть набор данных в **Конструкторе наборов данных**.  
+1.  Double-click **NorthwindDataSet.xsd** in **Solution Explorer** to open the dataset in the **Dataset Designer**.  
   
-2.  Щелкните пустое пространство в конструкторе.  
+2.  Click an empty area on the designer.  
   
-3.  Найдите узел **Проект DataSet** в окне **Свойства**.  
+3.  Locate the **DataSet Project** node in the **Properties** window.  
   
-4.  В списке **Проект DataSet** щелкните **DataEntityTier**.  
+4.  In the **DataSet Project** list, click **DataEntityTier**.  
   
-5.  В меню **Сборка** выберите **Собрать решение**.  
+5.  On the **Build** menu, click **Build Solution**.  
   
- Набор данных и адаптеры таблицы делятся на два проекта библиотеки классов.  Проект, который изначально содержал весь набор данных \(DataAccessTier\), теперь содержит только адаптеры таблицы.  Проект, предназначенный для свойства **Проект DataSet** \(DataEntityTier\), содержит типизированный набор данных: NorthwindDataSet.Dataset.Designer.vb \(или NorthwindDataSet.Dataset.Designer.cs\).  
-  
-> [!NOTE]
->  При разделении наборов данных и адаптеров таблиц \(посредством установки свойства **Проект DataSet**\), существующие разделяемые классы наборов данных в проекте не перемещаются автоматически.  Их необходимо переместить в проект набора данных вручную.  
-  
-## Создание нового приложения службы  
- Поскольку это пошаговое руководство демонстрирует, как получить доступ к уровню доступа к данным с помощью службы WCF, создайте новое приложение службы WCF.  
-  
-#### Создание нового приложения службы WCF  
-  
-1.  В меню **Файл** добавьте новый проект в решение NTierWalkthrough.  
-  
-2.  В диалоговом окне **Создание проекта** в области **Типы проектов** выберите **WCF**.  В области **Шаблоны** выберите **Библиотека службы WCF**.  
-  
-3.  Присвойте проекту имя "DataService " и нажмите кнопку **ОК**.  
-  
-     Создается проект DataService, который добавляется в решение NTierWalkthrough.  
-  
-## Создание методов на уровне доступа к данным для возврата данных о клиентах и заказах  
- Служба данных должна вызывать два метода на уровне доступа к данным: GetCustomers и GetOrders.  Эти методы возвращают таблицы клиентов и заказов базы данных "Борей".  Создайте методы GetCustomers и GetOrders в проекте DataAccessTier.  
-  
-#### Создание метода на уровне доступа к данным, возвращающего таблицу клиентов  
-  
-1.  В области **Обозреватель решений** дважды щелкните NorthwindDataset.xsd, чтобы открыть набор данных в [Создание и изменение типизированных наборов данных](../data-tools/creating-and-editing-typed-datasets.md).  
-  
-2.  Щелкните правой кнопкой мыши CustomersTableAdapter и выберите пункт **Добавить запрос**, чтобы открыть [мастер настройки запроса TableAdapter](../data-tools/editing-tableadapters.md).  
-  
-3.  На странице **Выбор типа команды** оставьте значение по умолчанию для параметра **Использовать инструкции SQL** и нажмите кнопку **Далее**.  
-  
-4.  На странице **Выбор типа запроса** оставьте значение по умолчанию для параметра **Инструкция SELECT, возвращающая строки** и нажмите кнопку **Далее**.  
-  
-5.  На странице **Укажите SQL\-инструкцию SELECT** оставьте запрос по умолчанию и нажмите кнопку **Далее**.  
-  
-6.  На странице **Выбор методов для автоматического создания** введите GetCustomers для параметра **Имя метода** в разделе **Вернуть таблицу данных \(DataTable\)**.  
-  
-7.  Нажмите кнопку **Готово**.  
-  
-#### Создание метода на уровне доступа к данным, возвращающего таблицу заказов  
-  
-1.  Щелкните правой кнопкой мыши элемент OrdersTableAdapter и выберите пункт **Добавить запрос**.  
-  
-2.  На странице **Выбор типа команды** оставьте значение по умолчанию для параметра **Использовать инструкции SQL** и нажмите кнопку **Далее**.  
-  
-3.  На странице **Выбор типа запроса** оставьте значение по умолчанию для параметра **Инструкция SELECT, возвращающая строки** и нажмите кнопку **Далее**.  
-  
-4.  На странице **Укажите SQL\-инструкцию SELECT** оставьте запрос по умолчанию и нажмите кнопку **Далее**.  
-  
-5.  На странице **Выбор методов для автоматического создания** введите GetOrders для параметра **Имя метода** в разделе **Вернуть таблицу данных \(DataTable\)**.  
-  
-6.  Нажмите кнопку **Готово**.  
-  
-7.  В меню **Сборка** выберите **Собрать решение**.  
-  
-## Добавление в службу данных ссылки на уровни сущностей данных и доступа к данным  
- Поскольку службе данных необходима информация из набора данных и адаптеров таблицы, добавьте ссылки на проекты DataEntityTier и DataAccessTier.  
-  
-#### Добавление ссылок в службу данных  
-  
-1.  Щелкните правой кнопкой мыши службу данных в **Обозревателе решений** и выберите команду **Добавить ссылку**.  
-  
-2.  Откройте вкладку **Проекты** в диалоговом окне **Добавление ссылки**.  
-  
-3.  Выберите проекты **DataAccessTier** и **DataEntityTier**.  
-  
-4.  Нажмите кнопку **ОК**.  
-  
-## Добавление функций в службу для вызова методов GetCustomers и GetOrders на уровне доступа к данным  
- Теперь, когда уровень доступа к данным содержит методы для возврата данных, создайте в службе данных методы для вызова методов на уровне доступа к данным.  
+ The dataset and TableAdapters are separated into the two class library projects. The project that originally contained the whole dataset (DataAccessTier) now contains only the TableAdapters. The project designated in the **DataSet Project** property (DataEntityTier) contains the typed dataset: NorthwindDataSet.Dataset.Designer.vb (or NorthwindDataSet.Dataset.Designer.cs).  
   
 > [!NOTE]
->  Для проектов C\# необходимо добавить ссылку на сборку `System.Data.DataSetExtensions`, чтобы следующий код прошел компиляцию.  
+>  When you separate datasets and TableAdapters (by setting the **DataSet Project** property), existing partial dataset classes in the project will not be moved automatically. Existing dataset partial classes must be manually moved to the dataset project.  
   
-#### Создание функций GetCustomers и GetOrders в службе данных  
+## <a name="creating-a-new-service-application"></a>Creating a New Service Application  
+ Because this walkthrough demonstrates how to access the data access tier by using a WCF service, create a new WCF service application.  
   
-1.  В проекте **DataService** дважды щелкните IService1.vb или IService1.cs.  
+#### <a name="to-create-a-new-wcf-service-application"></a>To create a new WCF Service application  
   
-2.  Добавьте следующий код под комментарием **Добавьте здесь операции служб**:  
+1.  From the **File** menu, add a new project to the NTierWalkthrough solution.  
   
-    ```vb#  
+2.  In the **New Project** dialog box, in the **Project types** pane, click **WCF**. In the **Templates** pane, click **WCF Service Library**.  
+  
+3.  Name the project **DataService** and click **OK**.  
+  
+     The DataService project is created and added to the NTierWalkthrough solution.  
+  
+## <a name="creating-methods-in-the-data-access-tier-to-return-the-customers-and-orders-data"></a>Creating Methods in the Data Access Tier to Return the Customers and Orders Data  
+ The data service has to call two methods in the data access tier: GetCustomers and GetOrders. These methods will return the Northwind Customers and Orders tables. Create the GetCustomers and GetOrders methods in the DataAccessTier project.  
+  
+#### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-customers-table"></a>To create a method in the data access tier that returns the Customers table  
+  
+1.  In **Solution Explorer**, double-click NorthwindDataset.xsd to open the dataset.
+  
+2.  Right-click CustomersTableAdapter and click **Add Query**.  
+  
+3.  On the **Choose a Command Type** page, leave the default value of **Use SQL statements** and click **Next**.  
+  
+4.  On the **Choose a Query Type** page, leave the default value of **SELECT which returns rows** and click **Next**.  
+  
+5.  On the **Specify a SQL SELECT statement** page, leave the default query and click **Next**.  
+  
+6.  On the **Choose Methods to Generate** page, type **GetCustomers** for the **Method name** in the **Return a DataTable** section.  
+  
+7.  Click **Finish**.  
+  
+#### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-orders-table"></a>To create a method in the data access tier that returns the Orders table  
+  
+1.  Right-click OrdersTableAdapter and click **Add Query**.  
+  
+2.  On the **Choose a Command Type** page, leave the default value of **Use SQL statements** and click **Next**.  
+  
+3.  On the **Choose a Query Type** page, leave the default value of **SELECT which returns rows** and click **Next**.  
+  
+4.  On the **Specify a SQL SELECT statement** page, leave the default query and click **Next**.  
+  
+5.  On the **Choose Methods to Generate** page, type **GetOrders** for the **Method name** in the **Return a DataTable** section.  
+  
+6.  Click **Finish**.  
+  
+7.  On the **Build** menu, click **Build Solution**.  
+  
+## <a name="adding-a-reference-to-the-data-entity-and-data-access-tiers-to-the-data-service"></a>Adding a Reference to the Data Entity and Data Access Tiers to the Data Service  
+ Because the data service requires information from the dataset and TableAdapters, add references to the DataEntityTier and DataAccessTier projects.  
+  
+#### <a name="to-add-references-to-the-data-service"></a>To add references to the data service  
+  
+1.  Right-click DataService in **Solution Explorer** and click **Add Reference**.  
+  
+2.  Click the **Projects** tab in the **Add Reference** dialog box.  
+  
+3.  Select both the **DataAccessTier** and **DataEntityTier** projects.  
+  
+4.  Click **OK**.  
+  
+## <a name="adding-functions-to-the-service-to-call-the-getcustomers-and-getorders-methods-in-the-data-access-tier"></a>Adding Functions to the Service to Call the GetCustomers and GetOrders Methods in the Data Access Tier  
+ Now that the data access tier contains the methods to return data, create methods in the data service to call the methods in the data access tier.  
+  
+> [!NOTE]
+>  For C# projects, you must add a reference to the `System.Data.DataSetExtensions` assembly for the following code to compile.  
+  
+#### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>To create the GetCustomers and GetOrders functions in the data service  
+  
+1.  In the **DataService** project, double-click IService1.vb or IService1.cs.  
+  
+2.  Add the following code under the **Add your service operations here** comment:  
+  
+    ```vb  
     <OperationContract()> _  
     Function GetCustomers() As DataEntityTier.NorthwindDataSet.CustomersDataTable  
   
@@ -232,20 +248,19 @@ manager: "ghogen"
     Function GetOrders() As DataEntityTier.NorthwindDataSet.OrdersDataTable  
     ```  
   
-    ```c#  
+    ```csharp  
     [OperationContract]  
     DataEntityTier.NorthwindDataSet.CustomersDataTable GetCustomers();  
   
     [OperationContract]  
     DataEntityTier.NorthwindDataSet.OrdersDataTable GetOrders();  
-  
     ```  
   
-3.  В проекте DataService дважды щелкните Service1.vb \(или Service1.cs\).  
+3.  In the DataService project, double-click Service1.vb (or Service1.cs).  
   
-4.  Добавьте следующий код в класс Service1:  
+4.  Add the following code to the Service1 class:  
   
-    ```vb#  
+    ```vb  
     Public Function GetCustomers() As DataEntityTier.NorthwindDataSet.CustomersDataTable Implements IService1.GetCustomers  
         Dim CustomersTableAdapter1 As New DataAccessTier.NorthwindDataSetTableAdapters.CustomersTableAdapter  
         Return CustomersTableAdapter1.GetCustomers()  
@@ -257,14 +272,13 @@ manager: "ghogen"
     End Function  
     ```  
   
-    ```c#  
+    ```csharp  
     public DataEntityTier.NorthwindDataSet.CustomersDataTable GetCustomers()  
     {  
         DataAccessTier.NorthwindDataSetTableAdapters.CustomersTableAdapter  
              CustomersTableAdapter1  
             = new DataAccessTier.NorthwindDataSetTableAdapters.CustomersTableAdapter();  
         return CustomersTableAdapter1.GetCustomers();  
-  
     }  
     public DataEntityTier.NorthwindDataSet.OrdersDataTable GetOrders()  
     {  
@@ -272,116 +286,114 @@ manager: "ghogen"
              OrdersTableAdapter1  
             = new DataAccessTier.NorthwindDataSetTableAdapters.OrdersTableAdapter();  
         return OrdersTableAdapter1.GetOrders();  
-  
     }  
     ```  
   
-5.  В меню **Сборка** выберите **Собрать решение**.  
+5.  On the **Build** menu, click **Build Solution**.  
   
-## Создание уровня представления для отображения данных из службы данных  
- Теперь, когда решение содержит службу данных с методами для выполнения вызовов на уровне доступа к данным, создайте еще один проект, который будет вызывать службу данных и представлять данные пользователям.  В рамках данного руководства создайте приложение Windows Forms — это уровень представления n\-уровневого приложения.  
+## <a name="creating-a-presentation-tier-to-display-data-from-the-data-service"></a>Creating a Presentation Tier to Display Data from the Data Service  
+ Now that the solution contains the data service that has methods that call into the data access tier, create another project that will call into the data service and present the data to users. For this walkthrough, create a Windows Forms application; this is the presentation tier of the n-tier application.  
   
-#### Создание проекта уровня представления  
+#### <a name="to-create-the-presentation-tier-project"></a>To create the presentation tier project  
   
-1.  В меню **Файл** добавьте новый проект в решение NTierWalkthrough.  
+1.  From the **File** menu, add a new project to the NTierWalkthrough solution.  
   
-2.  В диалоговом окне **Создание проекта** в области **Типы проектов** выберите **Windows**.  Выберите **Приложение Windows Forms** в области **Шаблоны**.  
+2.  In the **New Project** dialog box, in the **Project types** pane, click **Windows**. In the **Templates** pane, click **Windows Forms Application**.  
   
-3.  Присвойте проекту имя "PresentationTier" и нажмите кнопку **ОК**.  
+3.  Name the project **PresentationTier** and click **OK**.  
   
-4.  Создается проект PresentationTier, который добавляется в решение NTierWalkthrough.  
+4.  The PresentationTier project is created and added to the NTierWalkthrough solution.  
   
-## Настройка проекта PresentationTier в качестве запускаемого  
- Поскольку уровень представления фактически является клиентским приложением, используемым для представления данных и взаимодействия с ними, вам следует настроить проект PresentationTier в качестве запускаемого проекта.  
+## <a name="setting-the-presentationtier-project-as-the-startup-project"></a>Setting the PresentationTier Project as the Startup Project  
+ Because the presentation tier is the actual client application that is used to present and interact with the data, you must set the PresentationTier project to be the Startup project.  
   
-#### Порядок настройки нового проекта уровня представления в качестве запускаемого  
+#### <a name="to-set-the-new-presentation-tier-project-as-the-startup-project"></a>To set the new presentation tier project as the Startup project  
   
--   В **Обозревателе решений** щелкните правой кнопкой мыши **PresentationTier** и выберите команду **Назначить запускаемым проектом**.  
+-   In **Solution Explorer**, right-click **PresentationTier** and click **Set as StartUp Project**.  
   
-## Добавление ссылок на уровень представления  
- Клиентскому приложению PresentationTier требуется ссылка на службу в службе данных для получения доступа к методам в этой службе.  Кроме того, требуется ссылка на набор данных для обеспечения совместного использования типов службой WCF.  До включения совместного использования типов с помощью службы данных код, добавленный в разделяемый класс наборов данных, будет недоступен для уровня представления.  Поскольку вы обычно добавляете код, например код проверки, в события таблицы данных, изменяющие строку и столбец, вполне вероятно, что вы хотите получить доступ к этому коду из клиента.  
+## <a name="adding-references-to-the-presentation-tier"></a>Adding References to the Presentation Tier  
+ The client application PresentationTier requires a service reference to the data service in order to access the methods in the service. In addition, a reference to the dataset is required to enable type sharing by the WCF service. Until you enable type sharing through the data service, code added to the partial dataset class will not be available to the presentation tier. Because you typically add code such as validation to the row and column changing events of a data table, it is likely that you will want to access this code from the client.  
   
-#### Добавление ссылки на уровень представления  
+#### <a name="to-add-a-reference-to-the-presentation-tier"></a>To add a reference to the presentation tier  
   
-1.  В **Обозревателе решений** щелкните PresentationTier правой кнопкой мыши и выберите пункт **Добавить ссылку**.  
+1.  In **Solution Explorer**, right-click PresentationTier and click **Add Reference**.  
   
-2.  В диалоговом окне **Добавление ссылки** перейдите на вкладку **Проекты**.  
+2.  In the **Add Reference** dialog box, click the **Projects** tab.  
   
-3.  Выберите **DataEntityTier** и нажмите кнопку **ОК**.  
+3.  Select **DataEntityTier** and click **OK**.  
   
-#### Добавление ссылки на службу на уровень представления  
+#### <a name="to-add-a-service-reference-to-the-presentation-tier"></a>To add a service reference to the presentation tier  
   
-1.  В **Обозревателе решений** щелкните PresentationTier правой кнопкой мыши и выберите пункт **Добавление ссылки на службу**.  
+1.  In **Solution Explorer**, right-click PresentationTier and click **Add Service Reference**.  
   
-2.  В диалоговом окне **Добавление ссылки на службу** щелкните элемент **Найти**.  
+2.  In the **Add Service Reference** dialog box, click **Discover**.  
   
-3.  Выберите **Service1** и нажмите кнопку **ОК**.  
+3.  Select **Service1** and click **OK**.  
   
     > [!NOTE]
-    >  Если на текущем компьютере имеется несколько служб, выберите службу, созданную ранее в рамках работы с этим руководством \(эта служба содержит методы GetCustomers и GetOrders\).  
+    >  If you have multiple services on the current computer, select the service that you created previously in this walkthrough (the service that contains the GetCustomers and GetOrders methods).  
   
-## Добавление элементов DataGridView в форму для отображения данных, возвращаемых службой данных  
- После добавления ссылки на службу в службу данных окно **Источники данных** автоматически заполняется возвращенными службой данными.  
+## <a name="adding-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>Adding DataGridViews to the Form to Display the Data Returned by the Data Service  
+ After you add the service reference to the data service, the **Data Sources** window is automatically populated with the data that is returned by the service.  
   
-#### Создание двух элементов DataGridView с привязкой к данным на форме  
+#### <a name="to-add-two-data-bound-datagridviews-to-the-form"></a>To add two data bound DataGridViews to the form  
   
-1.  Выберите проект PresentationTier в **Обозревателе решений**.  
+1.  In **Solution Explorer**, select the PresentationTier project.  
   
-2.  В окне **Источники данных** разверните **NorthwindDataSet** и найдите узел **Клиенты**.  
+2.  In the **Data Sources** window, expand **NorthwindDataSet** and locate the **Customers** node.  
   
-3.  Перетащите узел **Клиенты** на Form1.  
+3.  Drag the **Customers** node onto Form1.  
   
-4.  В окне **Источники данных** разверните узел **Клиенты** и найдите связанный узел **Заказы** \(узел **Заказы** вложен в узел **Клиенты**\).  
+4.  In the **Data Sources** window, expand the **Customers** node and locate the related **Orders** node (the **Orders** node nested in the **Customers** node).  
   
-5.  Перетащите связанный узел **Заказы** на Form1.  
+5.  Drag the related **Orders** node onto Form1.  
   
-6.  Создайте обработчик событий `Form1_Load`, дважды щелкнув пустую область на форме.  
+6.  Create a `Form1_Load` event handler by double-clicking an empty area of the form.  
   
-7.  Добавьте следующий код в обработчик событий `Form1_Load`.  
+7.  Add the following code to the `Form1_Load` event handler.  
   
-    ```vb#  
+    ```vb  
     Dim DataSvc As New ServiceReference1.Service1Client  
     NorthwindDataSet.Customers.Merge(DataSvc.GetCustomers)  
     NorthwindDataSet.Orders.Merge(DataSvc.GetOrders)  
     ```  
   
-    ```c#  
+    ```csharp  
     ServiceReference1.Service1Client DataSvc =   
         new ServiceReference1.Service1Client();  
     northwindDataSet.Customers.Merge(DataSvc.GetCustomers());  
     northwindDataSet.Orders.Merge(DataSvc.GetOrders());  
-  
     ```  
   
-## Увеличение максимально допустимого размера сообщения для службы  
- Поскольку служба возвращает данные из таблиц "Клиенты" и "Заказы", значение по умолчанию для maxReceivedMessageSize слишком мало для хранения данных, поэтому его следует увеличить.  В этом пошаговом руководстве вы измените это значение на 6553600.  Вы измените это значение в клиенте, после чего будет автоматически обновлена ссылка на службу.  
+## <a name="increasing-the-maximum-message-size-allowed-by-the-service"></a>Increasing the Maximum Message Size Allowed by the Service  
+ Because the service returns data from the Customers and Orders tables, the default value for maxReceivedMessageSize is not large enough to hold the data and must be increased. For this walkthrough, you will change the value to 6553600. You will change the value on the client, and this will automatically update the service reference.  
   
 > [!NOTE]
->  Меньший размер по умолчанию призван ограничить уязвимость для атак типа "отказ в обслуживании" \(DoS\).  Для получения дополнительной информации см. <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.  
+>  The lower default size is intended to limit exposure to denial of service (DoS) attacks. For more information, see <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.  
   
-#### Увеличение значения maxReceivedMessageSize  
+#### <a name="to-increase-the-maxreceivedmessagesize-value"></a>To increase the maxReceivedMessageSize value  
   
-1.  В **Обозревателе решений** дважды щелкните файл app.config в проекте PresentationTier.  
+1.  In **Solution Explorer**, double-click the app.config file in the PresentationTier project.  
   
-2.  Найдите атрибут размера **maxReceivedMessage** и измените его значение на `6553600`.  
+2.  Locate the **maxReceivedMessage** size attribute and change the value to `6553600`.  
   
-## Тестирование приложения  
- Запустите приложение.  Данные извлекаются из службы данных и отображаются на форме.  
+## <a name="testing-the-application"></a>Testing the Application  
+ Run the application. The data is retrieved from the data service and displayed on the form.  
   
-#### Тестирование приложения  
+#### <a name="to-test-the-application"></a>To test the application  
   
-1.  Нажмите клавишу F5.  
+1.  Press F5.  
   
-2.  Данные из таблиц клиентов и заказов извлекаются из службы данных и отображаются на форме.  
+2.  The data from the Customers and Orders tables is retrieved from the data service and displayed on the form.  
   
-## Следующие действия  
- В зависимости от требований приложения существуют несколько шагов, которые, возможно, потребуется выполнить после сохранения связанных данных в приложении Windows.  Ниже приводится перечень рекомендаций, позволяющих улучшить данное приложение.  
+## <a name="next-steps"></a>Next Steps  
+ Depending on your application requirements, there are several steps that you may want to perform after you save related data in the Windows-based application. For example, you could make the following enhancements to this application:  
   
--   Добавьте проверку в набор данных.  Сведения см. в разделе [Пошаговое руководство. Добавление проверки данных в многоуровневое приложение](../Topic/Walkthrough:%20Adding%20Validation%20to%20an%20N-Tier%20Data%20Application.md).\)  
+-   Add validation to the dataset. 
   
--   Добавьте в службу дополнительные методы для обновления данных в базе данных.  
+-   Add additional methods to the service for updating data back to the database.  
   
-## См. также  
- [Работа с наборами данных в N\-уровневых приложениях](../data-tools/work-with-datasets-in-n-tier-applications.md)   
- [Иерархическое обновление](../data-tools/hierarchical-update.md)   
- [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+## <a name="see-also"></a>See Also  
+ [Work with datasets in n-tier applications](../data-tools/work-with-datasets-in-n-tier-applications.md)   
+ [Hierarchical update](../data-tools/hierarchical-update.md)   
+ [Accessing data in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

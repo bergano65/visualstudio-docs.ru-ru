@@ -1,144 +1,134 @@
 ---
-title: "Использование файлов дампа для отладки сбоев и зависаний приложения в Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.crashdump"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "аварийные дампы"
-  - "файлы дампа"
-  - "дампы"
-  - "дампы, сведения о дампах"
+title: Use Dump Files | Microsoft Docs
+ms.custom: H1HackMay2017
+ms.date: 03/08/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.crashdump
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+helpviewer_keywords:
+- dumps, about dumps
+- crash dumps
+- dump files
+- dumps
 ms.assetid: b71be6dc-57e0-4730-99d2-b540a0863e49
 caps.latest.revision: 53
-caps.handback.revision: 53
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Использование файлов дампа для отладки сбоев и зависаний приложения в Visual Studio
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 16bde940901ea4e807b0975412082449c0df96f0
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/22/2017
 
-Файлы дампа с кучами или без куч; создание файла дампа; открытие файла дампа; поиск двоичных файлов, PDB\-файлов и исходных файлов для файла дампа.  
+---
+# <a name="use-dump-files-with-visual-studio"></a>Use Dump Files with Visual Studio
+Dump files with or without heaps; create a dump file; open a dump file; find the binaries, pdb's, and source file for a dump file.
   
-##  <a name="BKMK_Contents"></a> Содержание  
- [Что такое файл дампа?](#BKMK_What_is_a_dump_file_)  
+##  <a name="BKMK_What_is_a_dump_file_"></a> What is a dump file?  
+ A *dump file* is a snapshot of an app at the point in time the dump is taken. It shows what process was executing and what modules were loaded. If the dump was saved with heap information, the dump file contains a snapshot of what was in the app's memory at that point in time. Opening a dump file with a heap in Visual Studio is like stopping at a breakpoint in a debug session. Although you cannot continue execution, you can examine the stacks, threads, and variable values of the app at the time the dump occurred.  
   
- [Файлы дампа, с кучами или без куч](#BKMK_Dump_files__with_or_without_heaps)  
+ Dumps are primarily used for debugging issues that occur on machines that the developer doesn't have access to. For example, you can use a dump file from a customer's machine when you can't reproduce the customer's crash or hang on your machine. Dumps are also created by testers to save crash or hang data so that the test machine can be used for more testing. The Visual Studio debugger can save dump files for managed or native code. The debugger can load dump files that were created by Visual Studio or by other programs that save files in the *minidump* format.  
   
- [Требования и ограничения](#BKMK_Requirements_and_limitations)  
+##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> Dump files, with or without heaps  
+ You can create dump files with or without heap information.  
   
- [Создание файла дампа](#BKMK_Create_a_dump_file)  
+-   **Dump files with heaps** contain a snapshot of the app's memory. This includes the values of variables at the time the dump was created. If you load a dump file that was saved with a heap, Visual Studio can load the symbols even if the application binary is not found. Visual Studio also saves the binaries of loaded native modules in the dump file, which can make debugging much easier.  
   
- [Открытие файла дампа](#BKMK_Open_a_dump_file)  
+-   **Dump files without heaps** are much smaller than dumps with heap information. However, the debugger has to load the app binaries to find the symbol information. The binaries must be an exact match of the binaries that were used when the dump was created. Only the values of stack variables are saved in dump files without heap data.  
   
- [Поиск двоичных файлов, файлов символов (.pdb) и исходных файлов](#BKMK_Find_binaries__symbol___pdb__files__and_source_files)  
+##  <a name="BKMK_Requirements_and_limitations"></a> Requirements and limitations  
   
-##  <a name="BKMK_What_is_a_dump_file_"></a> Что такое файл дампа?  
- *Файл дампа* — это снимок приложения.  Он показывает, какой процесс исполнялся и какие модули были загружены в момент создания дампа.  Если дамп был сохранен с данными кучи, файл дампа содержит снимок того, что находилось в памяти приложения в тот момент времени.  Открытие файла дампа с кучей в Visual Studio похоже на остановку в точке останова в сеансе отладки.  Хотя выполнение продолжить невозможно, можно просмотреть стеки, потоки и значения переменных приложения, соответствующие моменту времени создания дампа.  
+-   Debugging dump files of optimized code can be confusing. For example, compiler inlining of functions can result in unexpected call stacks and other optimizations might change the lifetime of variables.  
   
- Дампы в основном используются для отладки в тех случаях, когда у разработчика нет доступа к компьютерам, на которых возникли проблемы.  Предположим, к примеру, что вы не можете воспроизвести на своем компьютере сбой или зависание, произошедшие на компьютере клиента. В этом случае можно воспользоваться файлом дампа, созданным на компьютере клиента.  Дампы также создаются тест\-инженерами с целью сохранения данных сбоя или зависания, чтобы можно было продолжить использовать тестовый компьютер для других операций тестирования.  Отладчик Visual Studio может сохранять файлы дампа для управляемого и машинного кода.  Отладчик может загружать файлы дампа, созданные Visual Studio или другими программами, способными сохранять файлы в формате *минидампа*.  
+-   Dump files from 64-bit machines must be debugged on an instance of Visual Studio that is running on a 64-bit computer.  
   
- ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents)  
+-   In versions of Visual Studio before VS 2013, dumps of 32-bit apps that were run on 64-bit machines that were collected by some tools (such as Task Manager and 64-bit WinDbg) could not be opened in Visual Studio. This limitation has been removed in VS 2013.  
   
-##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> Файлы дампа, с кучами или без куч  
- Можно создавать файлы дампа со сведениями кучи или без них.  
+-   Visual Studio can debug dump files of native apps from ARM devices. Visual Studio can also debug apps dump files of managed apps from ARM devices, but only in the native debugger.  
   
--   **Файлы дампа с кучами** содержат снимок памяти приложения.  Сюда входят значения переменных в момент создания дампа.  После загрузки файла дампа, сохраненного с кучей, Visual Studio может загружать символы, даже если двоичный файл приложения не найден.  Visual Studio также сохраняет в файле дампа двоичные файлы загруженных модулей машинного кода, что может значительно упростить отладку.  
+-   To debug [kernel-mode](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) dump files in Visual Studio 2013, download the [Windows 8.1 Version of Debugging Tools for Windows](http://msdn.microsoft.com/windows/hardware/gg463009). See [Kernel Debugging in Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
   
--   **Файлы дампа без куч** гораздо меньше по размеру, чем дампы со сведениями кучи.  Однако в этом случае для поиска сведений о символах отладчик должен загружать двоичные файлы приложения.  Двоичные файлы должны в точности соответствовать двоичным файлам, которые использовались при создании дампа.  В файлах дампа без данных кучи хранятся только значения переменных стека.  
+-   Visual Studio can't debug dump files saved in the older dump format known as a [full user-mode dump](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Note that a full user-mode dump is not the same a dump with heap.  
   
- ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents)  
+-   To debug with the [SOS.dll (SOS Debugging Extension)](/dotnet/framework/tools/sos-dll-sos-debugging-extension) in Visual Studio, you must install the Debugging Tools for Windows that is part of the Windows Driver Kit (WDK). See [Windows 8.1 Preview: Download kits, bits, and tools](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
   
-##  <a name="BKMK_Requirements_and_limitations"></a> Требования и ограничения  
+##  <a name="BKMK_Create_a_dump_file"></a> Create a dump file  
+ To create a dump file with Visual Studio:  
   
--   Отладка с использованием файлов дампа оптимизированного кода может сопровождаться ложной информацией.  К примеру, встраивание компилятором функций может приводить к непредвиденным стекам вызовов, а другие виды оптимизации могут изменять время существования переменных.  
+-   While you are debugging a process in Visual Studio, you can save a dump file when the debugger has stopped at an exception or at a breakpoint. Choose **Debug**, then **Save Dump As**, then **Debug**. In the **Save Dump As** dialog box, in the **Save as type** list, you can select **Minidump** or **Minidump with Heap** (the default).  
   
--   Отладка с использованием файла дампа, созданного на 64\-разрядном компьютере, должна производиться в экземпляре Visual Studio, работающем на 64\-разрядном компьютере.  
+-   With [Just-In-Time Debugging](../debugger/just-in-time-debugging-in-visual-studio.md) enabled, you can attach the debugger to a crashed process that is running outside the debugger, and then save a dump file. See [Attach to Running Processes](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
   
--   В версиях Visual Studio до VS 2013 невозможно открыть дампы 32\-битных приложений, выполняющихся на 64\-разрядных компьютерах, которые были собраны определенными средствами \(например, диспетчером задач и 64\-битной версией WinDbg\).  В VS 2013 это ограничение снято.  
+ You can also create dump files with any program that supports the Windows minidump format. For example, the **Procdump** command-line utility from [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) can create process crash dump files based on triggers or on-demand. See [Requirements and limitations](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) in this topic for additional information about using other tools to create dump files. 
   
--   Visual Studio поддерживает отладку файлов дампа, создаваемых приложениями в машинных кодах на устройствах ARM.  Visual Studio также поддерживает отладку файлов дампа, создаваемых управляемыми приложениями на устройствах ARM, но только в отладчике машинного кода.  
+##  <a name="BKMK_Open_a_dump_file"></a> Open a dump file  
   
--   Для отладки файлов дампа [режима ядра](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) в Visual Studio 2013 загрузите [средство отладки для Windows 8.1](http://msdn.microsoft.com/windows/hardware/gg463009).  Дополнительные сведения см. в разделе [Отладка на уровне ядра в Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
+1.  In Visual Studio, choose **File**, **Open**, **File**.  
   
--   Visual Studio не поддерживает отладку с использованием файлов дампа, сохраненных в старом формате, известном как [полный дамп в режиме пользователя](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx).  Обратите внимание, что "полный дамп в режиме пользователя" и "дамп с кучей" — это не одно и то же.  
+2.  In the **Open File** dialog box, locate and select the dump file. It will usually have a .dmp extension. Then choose **OK**.  
   
--   Для отладки с [SOS.dll \(SOS Debugging Extension\)](../Topic/SOS.dll%20\(SOS%20Debugging%20Extension\).md) в Visual Studio необходимо установить средства отладки для Windows, являющиеся частью комплекта разработки драйверов для Windows \(WDK\).  См. раздел [Предварительная версия Windows 8.1: комплекты для скачивания, инструменты и средства](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+3.  The **Dump File Summary** window appears. In this window, you can view debugging summary information for the dump file, set the symbol path, start debugging, and copy the summary information to the clipboard.  
   
- ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents)  
+     ![Minidump summary page](../debugger/media/dbg_dump_summarypage.png "DBG_DUMP_SummaryPage")  
   
-##  <a name="BKMK_Create_a_dump_file"></a> Создание файла дампа  
- Создание файла дампа с использованием Visual Studio:  
+4.  To start debugging, go to the **Actions** section, and choose either **Debug with Managed Only**, **Debug with Native Only** or **Debug with Mixed**.  
   
--   При отладке процесса в Visual Studio можно сохранить файл дампа, когда отладчик останавливает выполнение в точке останова или при возникновении исключения.  Выберите **Сохранение дампа**, **Отладка**.  В диалоговом окне **Сохранение дампа** в списке **Тип файла** можно выбрать **Минидамп** или **Минидамп с кучей** \(по умолчанию\).  
+##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Find binaries, symbol (.pdb) files, and source files  
+ To use the full features of Visual Studio to debug a dump file, you need access to:  
   
--   Если включена [JIT\-отладка](../debugger/just-in-time-debugging-in-visual-studio.md), можно подключить отладчик к аварийному процессу, который выполняется вне отладчика, а затем сохранить файл дампа.  См. раздел [Присоединение к выполняемым процессам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
+-   The .exe file for which the dump was taken and other binaries (DLLs, etc.) that were used in the dump process.  
   
- Файлы дампа также можно создавать с помощью любой программы, которая поддерживает формат минидампов Windows.  Такой программой, например, может быть программа командной строки **Procdump** из [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default), которая может создавать файлы аварийного дампа процесса на основе триггеров или по требованию.  Дополнительные сведения об использовании других средств для создания файлов дампа см. в подразделе [Требования и ограничения](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) в этом разделе.  
+     If you are debugging a dump with heap data, Visual Studio can cope with missing binaries for some modules, but it must have binaries for enough modules to generate valid call stacks. Visual Studio includes the native modules in a dump file with heap.  
   
- ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents)  
+-   Symbol (.pdb) files for the .exe and other binaries.  
   
-##  <a name="BKMK_Open_a_dump_file"></a> Открытие файла дампа  
+-   Source files for the modules that you are interested in.  
   
-1.  В Visual Studio последовательно выберите **Файл**, **Открыть**, **Файл**.  
+     The executable and the .pdb files must match exactly the version and build of the files used when the dump was created.  
   
-2.  В диалоговом окне **Открытие файла** найдите и выберите файл дампа.  Обычно они имеют расширение DMP.  Затем нажмите **ОК**.  
+     You can debug using the disassembly of the modules if you can't find the source files,  
   
-3.  Появляется окно **Сводка файла дампа**.  В этом окне можно просмотреть сведения об отладке для файла дампа, установить путь символов, запустить отладку и скопировать сводку в буфер.  
+ **Default search paths for executable files**  
   
-     ![Страница сводки минидампа](../debugger/media/dbg_dump_summarypage.png "DBG\_DUMP\_SummaryPage")  
+ Visual Studio automatically searches these locations for executable files that aren't included in the dump file:  
   
-4.  Чтобы начать отладку, перейдите в раздел **Действия** и выберите **Только машинный код** или **Отладка в смешанном режиме**.  
+1.  The directory that contains the dump file.  
   
-##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Поиск двоичных файлов, файлов символов \(.pdb\) и исходных файлов  
- Чтобы можно было использовать все функции Visual Studio для отладки файла дампа, необходимо иметь доступ к следующим файлам:  
+2.  The path of the module that is specified in the dump file. This is the module path on the machine where the dump was collected.  
   
--   EXE\-файл, для которого был получен дамп, и другие двоичные файлы \(DLL и т. п.\), которые использовались в процессе, для которого был создан дамп.  
+3.  The symbol paths specified in the **Debugging**, **Options**, **Symbols** page of the Visual Studio **Tools**, **Options** dialog box. You can add more locations to search on this page.  
   
-     Если для отладки используется дамп с данными кучи, Visual Studio может справиться с отсутствием двоичных файлов для некоторых модулей, но должен иметь двоичные файлы для достаточного количества модулей, чтобы создавать допустимые стеки вызовов.  Visual Studio включает модули машинного кода в файл дампа с кучей.  
+ **Using the No Binary > Symbol > Source pages**  
   
--   Файлы символов \(.pdb\) для EXE\-файлов и других двоичных файлов.  
+ If Visual Studio can't find the files needed to debug a module in the dump, it displays an appropriate page (**No Binary Found**, **No Symbols Found**, or **No Source Found**). These pages provide detailed information about the cause of the issue and provide action links that can help you identify the correct location of the files. See [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
--   Исходные файлы для нужных модулей.  
-  
-     Исполняемый файл и PDB\-файлы должны точно соответствовать версии и сборке файлов, которые использовались при создании дампа.  
-  
-     Если не удается найти исходные файлы, для отладки можно использовать дизассемблированный код модулей.  
-  
- **Пути поиска по умолчанию для исполняемых файлов**  
-  
- Visual Studio автоматически ищет исполняемые файлы, не включенные в файл дампа, в следующих расположениях:  
-  
-1.  Каталог, содержащий файл дампа.  
-  
-2.  Путь к модулю, указанный в файле дампа.  Это путь к модулю на компьютере, на котором был создан дамп.  
-  
-3.  Пути к символам, указанные на странице **Отладка**, **Параметры**, **Символы** диалогового окна **Сервис**, **Параметры** Visual Studio.  При необходимости на этой странице можно добавить другие расположения для поиска.  
-  
- **Использование страниц "Двоичные файлы не найдены" \/ "Символы не найдены" \/ "Исходный код не найден"**  
-  
- Если Visual Studio не может найти файлы, необходимые для отладки модуля в дампе, отображается соответствующая страница \(**Двоичные файлы не найдены**, **Символы не найдены** или **Исходный код не найден**\).  Эти страницы предоставляют подробные сведения о причине проблемы, а также ссылки на действия, которые могут помочь определить правильное расположение файлов.  Дополнительные сведения см. в разделе [Указание файлов символов \(.pdb\) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
-  
- ![К началу](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Содержание](#BKMK_Contents)  
-  
-## См. также  
- [JIT\-отладка](../debugger/just-in-time-debugging-in-visual-studio.md)   
- [Указание файлов символов \(.pdb\) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
- [Использование IntelliTrace](../debugger/intellitrace.md)
+## <a name="see-also"></a>See Also  
+ [Just-In-Time Debugging](../debugger/just-in-time-debugging-in-visual-studio.md)   
+ [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [IntelliTrace](../debugger/intellitrace.md)

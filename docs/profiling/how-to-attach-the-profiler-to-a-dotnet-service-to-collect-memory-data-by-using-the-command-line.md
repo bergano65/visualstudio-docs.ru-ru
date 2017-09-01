@@ -1,133 +1,149 @@
 ---
-title: "Практическое руководство. Присоединение профилировщика к службе .NET для сбора данных об использовании памяти с помощью командной строки | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'How to: Attach the Profiler to a .NET Service to Collect Memory Data by Using the Command Line | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: aeac39af-ad99-479f-aa36-4104356ca512
 caps.latest.revision: 28
-caps.handback.revision: 28
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Практическое руководство. Присоединение профилировщика к службе .NET для сбора данных об использовании памяти с помощью командной строки
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
+ms.openlocfilehash: 1553b1c2d52aad2694ddd41861a0d4358dab3699
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/31/2017
 
-В этом разделе описывается использование программ командной строки средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для присоединения профилировщика к службе [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] и сбора данных об использовании памяти.  С помощью этой программы можно собирать данные о количестве выделений памяти и объемах выделяемой памяти, а также сведения о времени существования объектов памяти.  
+---
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>How to: Attach the Profiler to a .NET Service to Collect Memory Data by Using the Command Line
+This topic describes how to use [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools command-line tools to attach the profiler to a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] service and collect memory data. You can collect data about the number and size of memory allocations, and you can also collect data about the lifetime of memory objects.  
   
 > [!NOTE]
->  Функции усиленной безопасности в Windows 8 и Windows Server 2012 требуют значительных изменений в способе сбора данных профилировщиком Visual Studio на этих платформах.  Для Приложений Магазина Windows также требуются новые методы сбора.  См. раздел [Профилирование приложений для Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Enhanced security features in Windows 8 and Windows Server 2012 required significant changes in the way the Visual Studio profiler collects data on these platforms. Windows Store apps also require new collection techniques. See [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 > [!NOTE]
->  Программы командной строки средств профилирования расположены в подкаталоге \\Team Tools\\Performance Tools каталога установки [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].  На 64\-разрядных компьютерах доступны 64\-разрядные и 32\-разрядные версии программ.  Для использования программ командной строки профилировщика необходимо добавить путь к этим программам в переменную среды PATH окна командной строки или указать этот путь при вызове команды.  Для получения дополнительной информации см. [Указание пути к средствам командной строки](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Command-line tools of the Profiling Tools are located in the \Team Tools\Performance Tools subdirectory of the [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] installation directory. On 64 bit computers, both 64 bit and 32 bit versions of the tools are available. To use the profiler command-line tools, you must add the tools path to the PATH environment variable of the command prompt window or add it to the command itself. For more information, see [Specifying the Path to Command Line Tools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
- Для сбора данных об использовании памяти, полученных от службы [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], нужно воспользоваться программой [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md), чтобы инициализировать соответствующие переменные среды на том компьютере, где запущена служба.  Чтобы настроить компьютер для профилирования, его нужно перезагрузить.  
+ To collect memory data from a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] service, you use the [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) tool to initialize the appropriate environment variables on the computer that hosts the service. The computer must be restarted to configure it for profiling.  
   
- Затем следует воспользоваться программой [VSPerfCmd](../profiling/vsperfcmd.md) для присоединения профилировщика к процессу службы.  Пока профилировщик присоединен к службе, можно приостанавливать и возобновлять сбор данных.  
+ You then use the [VSPerfCmd](../profiling/vsperfcmd.md) tool to attach the profiler to the service process. While the profiler is attached to the service, you can pause and resume data collection.  
   
- Чтобы завершить сеанс профилирования, необходимо отсоединить профилировщик от службы и явным образом завершить его работу.  В большинстве случаев рекомендуется удалять в конце сеанса значения переменных среды, используемые для профилирования.  
+ To end a profiling session, the profiler must be detached from the service and the profiler must be explicitly shut down. In most cases, we recommend clearing the profiling environment variables at the end of a session.  
   
-## Присоединение профилировщика  
+## <a name="attaching-the-profiler"></a>Attaching the Profiler  
   
-#### Присоединение профилировщика к службе .NET Framework  
+#### <a name="to-attach-the-profiler-to-a-net-framework-service"></a>To attach the Profiler to a .NET Framework service  
   
-1.  Если необходимо, установите службу.  
+1.  If necessary, install the service.  
   
-2.  Откройте окно командной строки.  
+2.  Open a command prompt window.  
   
-3.  Инициализируйте переменные среды, используемые для профилирования.  Type:  
+3.  Initialize the profiling environment variables. Type:  
   
-     **VSPerfClrEnv** {**\/globalsamplegc \/globalsamplegclife**}\[**\/samplelineoff**\]  
+     **VSPerfClrEnv** {**/globalsamplegc /globalsamplegclife**}[**/samplelineoff**]  
   
-    -   Параметры **\/globalsamplegclife** и **\/globalsamplegclife** задают тип памяти для сбора данных.  Задайте один и только один из следующих объектов.  
+    -   The options **/globalsamplegclife** and **/globalsamplegclife** specify the type of memory data to collect. Specify one and only one of the following options.  
   
-     **\/globalsamplegc**  
-     Включает сбор данных о выделении памяти.  
+     **/globalsamplegc**  
+     Enables the collection of memory allocation data.  
   
-     **\/globalsamplegclife**  
-     Включает сбор данных о выделении памяти и времени существования объекта.  
+     **/globalsamplegclife**  
+     Enables the collection of both memory allocation data and object lifetime data.  
   
-    -   Параметр **\/samplelineoff** отключает сбор данных о номерах строк исходного кода.  
+    -   The **/samplelineoff** option disables the collection of source code line number data.  
   
-4.  Перезагрузите компьютер, чтобы задать новую конфигурацию среды.  
+4.  Restart the computer to set the new environment configuration.  
   
-5.  Если необходимо, запустите службу.  
+5.  If necessary, start the service.  
   
-6.  Откройте окно командной строки.  Если необходимо, добавьте путь к профилировщику в переменную среды PATH.  
+6.  Open a command prompt window. If necessary, add the profiler path to the PATH environment variable.  
   
-7.  Запустите профилировщик.  Type:  
+7.  Start the profiler. Type:  
   
-     **VSPerfCmd**  [\/start](../profiling/start.md) **:sample**  [\/output](../profiling/output.md) **:** `OutputFile` \[`Options`\]  
+     **VSPerfCmd**  [/start](../profiling/start.md) **:sample**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]  
   
-    -   Параметр **\/start:sample** обеспечивает инициализацию профилировщика.  
+    -   The **/start:sample** option initializes the profiler.  
   
-    -   Параметр **\/output:**`OutputFile` является обязательным при использовании параметра **\/start**.  Параметр `OutputFile` задает имя и расположение файла с данными профилирования \(VSP\-файла\).  
+    -   The **/output:**`OutputFile` option is required with **/start**. `OutputFile` specifies the name and location of the profiling data (.vsp) file.  
   
-     С параметром **\/start:sample** можно использовать один или несколько следующих параметров.  
+     You can use one or more of the following options with the **/start:sample** option.  
   
     > [!NOTE]
-    >  Обычно параметры **\/user** и **\/crosssession** являются обязательными для служб.  
+    >  The **/user** and **/crosssession** options are usually required for services.  
   
-    |Команда|Описание|  
-    |-------------|--------------|  
-    |[\/user](../profiling/user-vsperfcmd.md) **:**\[`Domain`**\\**\]`UserName`|Задает домен и имя пользователя учетной записи, которая является владельцем процесса.  Этот параметр является обязательным, если процесс выполняется от имени пользователя, отличного от пользователя, который выполнил вход в систему.  Имя владельца процесса отображается в столбце "Имя пользователя" на вкладке "Процессы" диспетчера задач Windows.|  
-    |[\/crosssession](../profiling/crosssession.md)|Включает профилирование процессов в других сеансах входа в систему.  Этот параметр является обязательным, если приложение ASP.NET выполняется в рамках другого сеанса.  Идентификатор сеанса отображается в столбце "Код сеанса" на вкладке "Процессы" диспетчера задач Windows.  Для **\/crosssession** может быть задано сокращение **\/CS**.|  
-    |[\/user](../profiling/user-vsperfcmd.md) **:**\[`Domain`**\\**\]`UserName`|Задает необязательный домен и имя пользователя учетной записи для входа в систему, от имени которой запускается служба.  Учетная запись для входа указана в столбце службы "Вход от имени" в диспетчере служб Windows.|  
-    |[\/crosssession&#124;cs](../profiling/crosssession.md)|Включает профилирование процессов в других сеансах входа в систему.|  
-    |[\/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Задает счетчик производительности Windows, данные которого следует собирать в процессе профилирования.|  
-    |[\/automark](../profiling/automark.md) **:** `Interval`|Используйте только с **\/wincounter**.  Задает интервал времени \(в миллисекундах\) между событиями сбора данных счетчика производительности Windows.  Значение по умолчанию — 500 мс.|  
-    |[\/events](../profiling/events-vsperfcmd.md) **:** `Config`|Задает событие трассировки событий Windows, данные которого следует собирать в процессе профилирования.  События трассировки событий Windows собираются в отдельный ETL\-файл.|  
+    |Option|Description|  
+    |------------|-----------------|  
+    |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Specifies the domain and user name of the account that owns the process. This option is required if the process is running as a user other than the logged on user. The process owner is listed in the User Name column on the Processes tab of Windows Task Manager.|  
+    |[/crosssession](../profiling/crosssession.md)|Enables profiling of processes in other logon sessions. This option is required if the ASP.NET application is running in a different session. The session id is listed in the Session ID column on the Processes tab of Windows Task Manager. **/CS** can be specified as an abbreviation for **/crosssession**.|  
+    |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Specifies the optional domain and user name of the logon account under which the service runs. The logon account is listed in the Log On As column of the service in the Windows Service Control Manager.|  
+    |[/crosssession&#124;cs](../profiling/crosssession.md)|Enables profiling of processes in other logon sessions.|  
+    |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Specifies a Windows performance counter to be collected during profiling.|  
+    |[/automark](../profiling/automark.md) **:** `Interval`|Use with **/wincounter** only. Specifies the number of milliseconds between Windows performance counter collection events. Default is 500 ms.|  
+    |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|Specifies an Event Tracing for Windows (ETW) event to be collected during profiling. ETW events are collected in a separate (.etl) file.|  
   
-8.  Присоедините профилировщик к службе.  Type:  
+8.  Attach the profiler to the service. Type:  
   
-     **VSPerfCmd**  [\/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} \[[\/targetclr](../profiling/targetclr.md)**:**`Version`\]  
+     **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
   
-    -   Задайте идентификатор процесса или имя процесса службы.  Диспетчер задач Windows позволяет просмотреть идентификаторы и имена всех запущенных процессов.  
+    -   Specify either the process ID or the process name of the service. You can view the process IDs and names of all running processes in Windows Task Manager.  
   
-    -   **targetclr:** `Version` задает версию среды CLR для профилирования, если в приложении загружено несколько версий среды выполнения.  Необязательно.  
+    -   **targetclr:** `Version` specifies the version of the common language runtime (CLR) to profile when more than one version of the runtime is loaded in an application. Optional.  
   
-## Управление сбором данных  
- Пока служба запущена, с помощью параметров программы **VSPerfCmd.exe** можно останавливать и начинать запись данных в файл данных профилировщика.  Управление сбором данных позволяет собирать данные на различных этапах выполнения программы, например, при запуске или завершении работы приложения.  
+## <a name="controlling-data-collection"></a>Controlling Data Collection  
+ While the service is running, you can use **VSPerfCmd.exe** options to stop and start the writing of data to the profiler data file. Controlling data collection enables you to collect data for a specific part of the program execution, such as starting or shutting down the application.  
   
-#### Запуск и остановка сбора данных  
+#### <a name="to-start-and-stop-data-collection"></a>To start and stop data collection  
   
--   Следующие пары параметров **VSPerfCmd** используются для запуска и остановки сбора данных.  Задайте каждый параметр в отдельной строке командной строки.  Запуск и приостановка сбора данных могут выполняться неоднократно.  
+-   The following pairs of **VSPerfCmd** options start and stop data collection. Specify each option on a separate command line. You can turn data collection on and off multiple times.  
   
-    |Команда|Описание|  
-    |-------------|--------------|  
-    |[\/globalon \/globaloff](../profiling/globalon-and-globaloff.md)|Запускает \(**\/globalon**\) или останавливает \(**\/globaloff**\) сбор данных для всех процессов.|  
-    |[\/processon](../profiling/processon-and-processoff.md) **:** `PID`  [\/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает \(**\/processon**\) или останавливает \(**\/processoff**\) сбор данных для процесса с указанным идентификатором процесса \(`PID`\).|  
-    |**\/attach:**{`PID`&#124;`ProcName`} [\/detach](../profiling/detach.md)\[:{`PID`&#124;`ProcName`}\]|**\/attach** запускает сбор данных для процесса, определяемого идентификатором или именем процесса.  **\/detach** останавливает сбор данных для указанного процесса или, если он не задан, для всех процессов.|  
+    |Option|Description|  
+    |------------|-----------------|  
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Starts (**/globalon**) or stops (**/globaloff**) data collection for all processes.|  
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Starts (**/processon**) or stops (**/processoff**) data collection for the process specified by the process ID (`PID`).|  
+    |**/attach:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[:{`PID`&#124;`ProcName`}]|**/attach** starts to collect data for the process specified by the process ID or process name. **/detach** stops data collection for the specified process, or for all processes if a specific process is not specified.|  
   
-## Завершение сеанса профилирования  
- При завершении сеанса профилирования профилировщик не должен собирать данные.  Чтобы остановить сбор данных в приложении, для которого выполняется профилирование методом параллелизма, можно остановить службу или вызвать параметр **VSPerfCmd \/detach**.  Затем, чтобы завершить работу профилировщика и закрыть файл данных профилирования, вызовите команду **VSPerfCmd** [\/shutdown](../profiling/shutdown.md).  Команда **VSPerfClrEnv \/globaloff** удаляет переменные среды, используемые для профилирования, но конфигурация системы не изменяется до перезагрузки компьютера.  
+## <a name="ending-the-profiling-session"></a>Ending the Profiling Session  
+ To end a profiling session, the profiler must not be collecting data. You can stop the collection of data from an application profiled with the sampling method by stopping the service or by calling the **VSPerfCmd /detach** option. You then call the **VSPerfCmd** [/shutdown](../profiling/shutdown.md) option to turn the profiler off and close the profiling data file. The **VSPerfClrEnv /globaloff** command clears the profiling environment variables, but the system configuration is not reset until the computer is restarted.  
   
-#### Завершение сеанса профилирования  
+#### <a name="to-end-a-profiling-session"></a>To end a profiling session  
   
-1.  Для отключения профилировщика от целевого приложения выполните одно из следующих действий.  
+1.  Do one of the following to detach the profiler from the target application:  
   
-    -   Остановите службу.  
+    -   Stop the service.  
   
-         – или –  
+         -or-  
   
-    -   Введите **VSPerfCmd \/detach**.  
+    -   Type **VSPerfCmd /detach**  
   
-2.  Завершите работу профилировщика.  Type:  
+2.  Shut down the profiler. Type:  
   
-     **VSPerfCmd \/shutdown**  
+     **VSPerfCmd /shutdown**  
   
-3.  \(Необязательно.\) Удалите переменные среды, используемые для профилирования.  Type:  
+3.  (Optional) Clear the profiling environment variables. Type:  
   
-     **VSPerfClrEnv \/globaloff**  
+     **VSPerfClrEnv /globaloff**  
   
-4.  Перезагрузите компьютер.  
+4.  Restart the computer.  
   
-## См. также  
- [Службы профилирования](../profiling/command-line-profiling-of-services.md)   
- [Представления данных в памяти .NET](../profiling/dotnet-memory-data-views.md)
+## <a name="see-also"></a>See Also  
+ [Profiling Services](../profiling/command-line-profiling-of-services.md)   
+ [.NET Memory Data Views](../profiling/dotnet-memory-data-views.md)

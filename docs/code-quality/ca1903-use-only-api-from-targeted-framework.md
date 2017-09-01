@@ -1,70 +1,87 @@
 ---
-title: "CA1903: использовать API-интерфейс только из целевой исполняющей среды | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "UseOnlyAPIFromTargetedFramework"
-  - "CA1903"
-helpviewer_keywords: 
-  - "CA1903"
-  - "UseOnlyApiFromTargetedFramework"
+title: 'CA1903: Use only API from targeted framework | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- UseOnlyAPIFromTargetedFramework
+- CA1903
+helpviewer_keywords:
+- UseOnlyApiFromTargetedFramework
+- CA1903
 ms.assetid: efdb5cc7-bbd8-4fa7-9fff-02b91e59350e
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 8
----
-# CA1903: использовать API-интерфейс только из целевой исполняющей среды
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: ec60623b651e990d77895d3c4eeef90cd69222a1
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Use only API from targeted framework
 |||  
 |-|-|  
 |TypeName|UseOnlyApiFromTargetedFramework|  
 |CheckId|CA1903|  
-|Категория|Microsoft.Portability|  
-|Критическое изменение|Критическое — если нарушение происходит при соответствии сигнатуре видимого для внешнего кода члена или типа.<br /><br /> Некритическое — если нарушение происходит в теле метода.|  
+|Category|Microsoft.Portability|  
+|Breaking Change|Breaking - when fired against the signature of an externally visible member or type.<br /><br /> Non breaking - when fired in the body of a method.|  
   
-## Причина  
- Член или тип использует член или тип, который был впервые представлен в пакете обновления, не включенном в целевую среду проекта.  
+## <a name="cause"></a>Cause  
+ A member or type is using a member or type that was introduced in a service pack that was not included with the project's targeted framework.  
   
-## Описание правила  
- В .NET Framework 2.0 с пакетами обновлений 1 и 2, .NET Framework 3.0 с пакетами обновлений 1 и 2, а также в .NET Framework 3.5 с пакетом обновлений 1 были включены новые члены и типы.  Проекты, предназначенные для основных версий платформы .NET Framework, могут непреднамеренно иметь зависимости от этих новых API.  Чтобы предотвратить возникновения таких зависимостей, данное правило выполняется при обнаружении новых членов и типов, которые по умолчанию не входят в целевую среду проекта.  
+## <a name="rule-description"></a>Rule Description  
+ New members and types were included in .NET Framework 2.0 Service Pack 1 and 2, .NET Framework 3.0 Service Pack 1 and 2, and .NET Framework 3.5 Service Pack 1. Projects that target the major versions of the .NET Framework can unintentionally take dependencies on these new APIs. To prevent this dependency, this rule fires on usages of any new members and types that were not included by default with the project's target framework.  
   
- **Зависимости целевой платформы и пакета обновления**  
+ **Target Framework and Service Pack Dependencies**  
   
 |||  
 |-|-|  
-|Целевая платформа|Правило выполняется при обнаружении членов, введенных в|  
-|.NET Framework 2.0|Платформа .NET Framework 2.0 с пакетом обновления 1 \(SP1\), платформа .NET Framework 2.0 с пакетом обновления 2 \(SP2\)|  
-|.NET Framework 3.0|Платформа .NET Framework 2.0 с пакетом обновления 1 \(SP1\), платформа .NET Framework 2.0 с пакетом обновления 2 \(SP2\), платформа .NET Framework 3.0 с пакетом обновления 1 \(SP1\), платформа .NET Framework 3.0 с пакетом обновления 2 \(SP2\)|  
-|.NET Framework 3.5|.NET Framework 3.5 с пакетом обновления 1 \(SP1\)|  
-|.NET Framework 4|Недоступно|  
+|When target framework is|Fires on usages of members introduced in|  
+|.NET Framework 2.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2|  
+|.NET Framework 3.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2, .NET Framework 3.0 SP1, .NET Framework 3.0 SP2|  
+|.NET Framework 3.5|.NET Framework 3.5 SP1|  
+|.NET Framework 4|N/A|  
   
- Дополнительные сведения об изменении целевой платформы проекта см. в разделе [Настройка конкретной версии платформы .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).  
+ To change a project's target framework, see [Targeting a Specific .NET Framework Version](../ide/targeting-a-specific-dotnet-framework-version.md).  
   
-## Устранение нарушений  
- Чтобы удалить зависимость от пакета обновления, устраните все случаи использования нового члена или типа.  Если зависимость добавлена специально, отключите вывод предупреждений или само правило.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To remove the dependency on the service pack, remove all usages of the new member or type. If this is a deliberate dependency, either suppress the warning or turn this rule off.  
   
-## Отключение предупреждений  
- Не отключайте предупреждения этого правила, если зависимость от указанного пакета обновления не была добавлена намеренно.  В этом случае приложение может не работать в системах, в которых не установлен необходимый пакет обновления.  Если зависимость добавлена специально, отключите вывод предупреждений или само правило.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule if this was not a deliberate dependency on the specified service pack. In this situation, your application might fail to run on systems without this service pack installed. Suppress the warning or turn this rule off if this was a deliberate dependency.  
   
-## Пример  
- В следующем примере показан класс, который использует тип DateTimeOffset, доступный только в .NET 2.0 с пакетом обновления 1 \(SP1\).  В этом примере необходимо выбрать в раскрывающемся списке требуемых версий .NET Framework окна свойств проекта версию .NET Framework 2.0.  
+## <a name="example"></a>Example  
+ The following example shows a class that uses the type DateTimeOffset that is only available in .NET 2.0 Service Pack 1. This example requires that .NET Framework 2.0 has been selected in the Target Framework drop-down list in the Project properties.  
   
- [!code-cs[FxCop.Portability.UseOnlyApiFromTargetedFramework#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_1.cs)]  
+ [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_1.cs)]  
   
-## Пример  
- В следующем примере нарушение, описанное выше, устраняется посредством добавления замены типа DateTimeOffset типом DateTime.  
+## <a name="example"></a>Example  
+ The following example fixes the previously described violation by replacing usages of the DateTimeOffset type with the DateTime type.  
   
- [!code-cs[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_2.cs)]  
+ [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_2.cs)]  
   
-## См. также  
- [Предупреждения переносимости](../code-quality/portability-warnings.md)   
- [Настройка конкретной версии платформы .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
+## <a name="see-also"></a>See Also  
+ [Portability Warnings](../code-quality/portability-warnings.md)   
+ [Targeting a Specific .NET Framework Version](../ide/targeting-a-specific-dotnet-framework-version.md)

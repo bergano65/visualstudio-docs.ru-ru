@@ -7,6 +7,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d30fddae-8e2f-4f50-90d3-8ed2cd35c7a6
@@ -14,24 +15,11 @@ caps.latest.revision: 11
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: dfc1cc163f44a12984800882d4ac880493c0ed0b
-ms.lasthandoff: 03/10/2017
+ms.translationtype: HT
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: 89de0d11791dbf13b9d4fcfcea8168b443d2777b
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -57,7 +45,7 @@ pip install azure
 
 [Раздел пакета Azure SDK в Центре разработчиков для языка Python](http://azure.microsoft.com/develop/python/) также имеет ряд полезных ресурсов, включая учебные материалы.
 
-  - Создание веб-приложений с помощью [Django](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions) [Flask](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-flask-app) и [Bottle](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
+  - Создание веб-приложений с помощью [Django](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-django-app) [Flask](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-flask-app) и [Bottle](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
   - [Хранилище BLOB-объектов](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-blob-storage)
   - [Хранилище таблиц](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-table-storage)
   - [Хранилище очередей](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-queue-storage)
@@ -78,3 +66,4 @@ pip install azure
 Репозиторий для пакета SDK находится по адресу [https://github.com/Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python).
 
 Если при использовании пакета SDK у вас возникнут любые проблемы или вопросы, [оставьте в репозитории описание проблем](https://github.com/Azure/azure-sdk-for-python/issues).
+

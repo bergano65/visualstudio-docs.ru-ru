@@ -1,32 +1,37 @@
 ---
-title: "Прототипы и их наследование | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "прототип [JavaScript]"
-  - "наследование прототипов [JavaScript]"
+title: "Прототипы и наследование прототипов | Документы Майкрософт"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- prototype [JavaScript]
+- prototype inheritance [JavaScript]
 ms.assetid: 1e1d0631-2a9f-4011-b9fe-fa338e1ef34c
 caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 3fb5627d2cc92c36e9dcf34f4b94796b6620321f
+ms.openlocfilehash: ade60bcbbfad166bae18b650daa6906f9983d4cd
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/11/2017
+
 ---
-# Прототипы и их наследование
-В JavaScript `prototype` — это свойство функций и объектов, создаваемых функциями конструктора.  Прототипом функции является объект.  В основном он применяется тогда, когда функция используется в качестве конструктора.  
+# <a name="prototypes-and-prototype-inheritance"></a>Прототипы и наследование прототипов
+В JavaScript `prototype` — это свойство функций и объектов, создаваемых функциями конструктора. Прототипом функции является объект. В основном он применяется тогда, когда функция используется в качестве конструктора.  
   
-```javascript  
+```JavaScript  
 function Vehicle(wheels, engine) {  
     this.wheels = wheels;  
     this.engine = engine;  
@@ -35,20 +40,20 @@ function Vehicle(wheels, engine) {
   
  В приведенном выше примере прототип функции `Vehicle` является прототипом любого объекта, экземпляр которого создается с помощью конструктора `Vehicle`.  
   
-## Использование прототипов для добавления свойств и методов  
+## <a name="using-prototypes-to-add-properties-and-methods"></a>Использование прототипов для добавления свойств и методов  
  Свойство `prototype` можно использовать для добавления свойств и методов в объекты — даже в те, которые уже созданы:  
   
-```javascript  
+```JavaScript  
 var testVehicle = new Vehicle(2, false);  
 Vehicle.prototype.color = "red";  
 var testColor = testVehicle.color;  
 ```  
   
- Значение переменной `testColor` — red.  
+ Значение переменной `testColor` — red.  
   
- Добавлять свойства и методы можно даже в предопределенные объекты.  Например, можно определить метод `Trim` в объекте\-прототипе `String`, и все строки будут скрипта наследовать этот метод.  
+ Добавлять свойства и методы можно даже в предопределенные объекты. Например, можно определить метод `Trim` в объекте-прототипе `String`, и все строки будут скрипта наследовать этот метод.  
   
-```javascript  
+```JavaScript  
 String.prototype.trim = function()  
 {  
     // Replace leading and trailing spaces with the empty string  
@@ -63,24 +68,25 @@ s = s.trim();
 window.alert(s + " (" + s.length + ")");  
 ```  
   
-### Использование прототипов для наследования одного объекта от другого с помощью Object.create  
- Объект `prototype` можно использовать для наследования одного объекта от другого.  Например, можно использовать функцию [Object.create](../../javascript/reference/object-create-function-javascript.md) для наследования нового объекта `Bicycle` на основе ранее определенного прототипа объекта `Vehicle` \(а также каких\-либо новых необходимых свойств\).  
+### <a name="using-prototypes-to-derive-one-object-from-another-with-objectcreate"></a>Использование прототипов для наследования одного объекта от другого с помощью Object.create  
+
+Прототип `Object` можно использовать для наследования одного объекта от другого. Например, можно использовать функцию [Object.create](../../javascript/reference/object-create-function-javascript.md) для наследования нового объекта `Bicycle` на основе ранее определенного прототипа объекта `Vehicle` (а также каких-либо новых необходимых свойств).  
   
-```javascript  
-var Bicycle = Object.create(Object.getPrototypeOf(Vehicle), {  
+```JavaScript  
+var bicycle = Object.create(Object.getPrototypeOf(Vehicle), {  
     "pedals" :{value: true}  
 });  
   
 ```  
   
- Объект `Bicycle` имеет свойства `wheels`, `engine`, `color` и `pedals`, и его прототипом является `Vehicle.prototype`.  Обработчик скриптов JavaScript находит свойство `pedals` в объекте `Bicycle` и просматривает цепочку прототипов, чтобы найти свойства `wheels`, `engine` и `color` в объекте `Vehicle`.  
+ Объект `bicycle` имеет свойства `wheels`, `engine`, `color` и `pedals`, и его прототипом является `Vehicle.prototype`. Обработчик скриптов JavaScript находит свойство `pedals` в объекте `bicycle` и просматривает цепочку прототипов, чтобы найти свойства `wheels`, `engine` и `color` в объекте `Vehicle`.  
   
-### Изменение прототипа объекта  
- В Internet Explorer 11 внутренний прототип объекта или функции можно заменить новым прототипом с помощью свойства [\_\_proto](../../javascript/reference/proto-property-object-javascript.md).  При использовании этого свойства наследуются свойства и методы нового прототипа вместе с другими свойствами и методами в его цепочке прототипов.  
+### <a name="changing-an-objects-prototype"></a>Изменение прототипа объекта  
+ В Internet Explorer 11 внутренний прототип объекта или функции можно заменить новым прототипом с помощью свойства [__proto\_\_](../../javascript/reference/proto-property-object-javascript.md). При использовании этого свойства наследуются свойства и методы нового прототипа вместе с другими свойствами и методами в его цепочке прототипов.  
   
- В следующем примере показано изменение прототипа объекта.  В нем демонстрируется изменение наследуемых свойств объекта при изменении его прототипа.  
+ В следующем примере показано изменение прототипа объекта. В нем демонстрируется изменение наследуемых свойств объекта при изменении его прототипа.  
   
-```javascript  
+```JavaScript  
 function Friend() {  
     this.demeanor = "happy";  
 }  
@@ -108,3 +114,4 @@ if (console && console.log) {
     console.log(player.ally === "Tom");             // Returns true  
 }  
 ```
+

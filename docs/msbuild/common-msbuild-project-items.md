@@ -1,145 +1,163 @@
 ---
-title: "Общие элементы проектов MSBuild | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MSBuild, типичные элементы проекта"
+title: Common MSBuild Project Items | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- MSBuild, common project items
 ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
 caps.latest.revision: 17
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 17
----
-# Общие элементы проектов MSBuild
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
+ms.openlocfilehash: 95cc68dfeb1005913198f9eb4564b2237818a5da
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/23/2017
 
-В [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] элемент представляет собой именованную ссылку на один или несколько файлов.  Элементы содержат метаданные, такие как имена файлов, пути и номера версий.  Все типы проектов в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] имеют по несколько общих элементов.  Эти элементы определены в файле в microsoft.build.commontypes.xsd.  
+---
+# <a name="common-msbuild-project-items"></a>Common MSBuild Project Items
+In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], an item is a named reference to one or more files. Items contain metadata such as file names, paths, and version numbers. All project types in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] have several items in common. These items are defined in the file microsoft.build.commontypes.xsd.  
   
-## Общие элементы  
- Ниже приведен список общих элементов проекта.  
+## <a name="common-items"></a>Common Items  
+ The following is a list of all the common project items.  
   
-### Ссылки  
- Представляет ссылку на сборку \(управляемую\) в проекте.  
+### <a name="reference"></a>Reference  
+ Represents an assembly (managed) reference in the project.  
   
-|Имя элемента|Описание|  
-|------------------|--------------|  
-|УказаниеПути|Необязательная строка.  Относительный или абсолютный путь к сборке.|  
-|Имя|Необязательная строка.  Отображаемое имя сборки, например "System.Windows.Forms".|  
-|FusionИмя|Необязательная строка.  Задает простое или строгое fusion\-имя элемента.<br /><br /> Если этот атрибут присутствует, экономится время, поскольку для получения fusion\-имени не нужно открывать файл сборки.|  
-|УказаннаяВерсия|Необязательный логический атрибут.  Указывает, дается ли ссылка только на версию в fusion\-имени.|  
-|Псевдонимы|Необязательная строка.  Любые псевдонимы для ссылки.|  
-|Закрытый|Необязательный логический атрибут.  Указывает, будет ли ссылка скопирована в папку выходных данных.  Этот атрибут соответствует свойству **Копировать локально** ссылки, находящейся в интегрированной среде разработки Visual Studio.|  
+|Item Name|Description|  
+|---------------|-----------------|  
+|HintPath|Optional string. Relative or absolute path of the assembly.|  
+|Name|Optional string. The display name of the assembly, for example, "System.Windows.Forms."|  
+|FusionName|Optional string. Specifies the simple or strong fusion name for the item.<br /><br /> When this attribute is present, it can save time because the assembly file does not have to be opened to obtain the fusion name.|  
+|SpecificVersion|Optional boolean. Specifies whether only the version in the fusion name should be referenced.|  
+|Aliases|Optional string. Any aliases for the reference.|  
+|Private|Optional boolean. Specifies whether the reference should be copied to the output folder. This attribute matches the **Copy Local** property of the reference that's in the Visual Studio IDE.|  
   
-### СсылкаНаCOM  
- Представляет ссылку на COM\-компонент \(неуправляемый\) в проекте.  
+### <a name="comreference"></a>COMReference  
+ Represents a COM (unmanaged) component reference in the project.  
   
-|Имя элемента|Описание|  
-|------------------|--------------|  
-|Имя|Необязательная строка.  Отображаемое имя компонента.|  
-|Guid|Необязательная строка.  Идентификатор GUID для компонента в формате {12345678\-1234\-1234\-1234\-1234567891234}.|  
-|VersionMajor|Необязательная строка.  Основная часть номера версии компонента.  Например "5", если полный номер версии — "5.46".|  
-|VersionMinor|Необязательная строка.  Вспомогательная часть номера версии компонента.  Например "46", если полный номер версии — "5.46".|  
-|Код языка|Необязательная строка.  Код языка для компонента.|  
-|ИнструментОбертки|Необязательная строка.  Имя инструмента обертки, используемое в компоненте, например "tlbimp".|  
-|Изолированные|Необязательный логический атрибут.  Указывает, является ли компонент компонентом, для которого не требуется регистрация.|  
+|Item Name|Description|  
+|---------------|-----------------|  
+|Name|Optional string. The display name of the component.|  
+|Guid|Optional string. A GUID for the component, in the form {12345678-1234-1234-1234-1234567891234}.|  
+|VersionMajor|Optional string. The major part of the version number of the component. For example, "5" if the full version number is "5.46."|  
+|VersionMinor|Optional string. The minor part of the version number of the component. For example, "46" if the full version number is "5.46."|  
+|LCID|Optional string. The LocaleID for the component.|  
+|WrapperTool|Optional string. The name of the wrapper tool that is used on the component, for example, "tlbimp."|  
+|Isolated|Optional boolean. Specifies whether the component is a reg-free component.|  
   
-### СсылкаНаCOMФайл  
- Представляет список библиотек типов, которые загружаются в целевой объект РазрешеннаяСсылкаНаCom.  
+### <a name="comfilereference"></a>COMFileReference  
+ Represents a list of type libraries that feed into the ResolvedComreference target.  
   
-|Имя элемента|Описание|  
-|------------------|--------------|  
-|ИнструментОбертки|Необязательная строка.  Имя инструмента обертки, используемое в компоненте, например "tlbimp".|  
+|Item Name|Description|  
+|---------------|-----------------|  
+|WrapperTool|Optional string. The name of the wrapper tool that is used on the component, for example, "tlbimp."|  
   
-### СобственнаяСсылка  
- Представляет машинный файл манифеста или ссылку на такой файл.  
+### <a name="nativereference"></a>NativeReference  
+ Represents a native manifest file or a reference to such a file.  
   
-|Имя элемента|Описание|  
-|------------------|--------------|  
-|Имя|Обязательная строка.  Базовое имя файла манифеста.|  
-|УказаниеПути|Обязательная строка.  Относительный путь к файлу манифеста.|  
+|Item Name|Description|  
+|---------------|-----------------|  
+|Name|Required string. The base name of the manifest file.|  
+|HintPath|Required string. The relative path of the manifest file.|  
   
-### СсылкаНаПроект  
- Представляет ссылку на другой проект.  
+### <a name="projectreference"></a>ProjectReference  
+ Represents a reference to another project.  
   
-|Имя элемента|Описание|  
-|------------------|--------------|  
-|Имя|Необязательная строка.  Отображаемое имя ссылки.|  
-|Project|Необязательная строка.  Идентификатор GUID для ссылки в формате {12345678\-1234\-1234\-1234\-1234567891234}.|  
-|Пакет|Необязательная строка.  Путь к файлу проекта, на который указывает ссылка.|  
+|Item Name|Description|  
+|---------------|-----------------|  
+|Name|Optional string. The display name of the reference.|  
+|Project|Optional string. A GUID for the reference, in the form {12345678-1234-1234-1234-1234567891234}.|  
+|Package|Optional string. The path of the project file that is being referenced.|  
   
-### Компилятор  
- Представляет исходные файлы для компилятора.  
+### <a name="compile"></a>Compile  
+ Represents the source files for the compiler.  
   
-|Имя элемента|Описание|  
-|------------------|--------------|  
-|ЗависимостьОт|Необязательная строка.  Указывает файл, от которого зависит этот файл, для правильной компиляции.|  
-|АвтоСоздание|Необязательный логический атрибут.  Указывает, был ли файл проекта создан интегрированной средой разработки \(IDE\) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-|Ссылка|Необязательная строка.  Отображаемый путь к обозначениям, если файл физически расположен вне зоны влияния файла проекта.|  
-|Показывается|Необязательный логический атрибут.  Указывает, следует ли отображать файл в **Обозревателе решений** в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-|КопироватьВВыходнойКаталог|Необязательная строка.  Определяет, следует ли копировать файл в выходной каталог.  Доступны следующие значения:<br /><br /> 1.  Никогда<br />2.  Всегда<br />3.  СохранятьНовейшие|  
+|Item Name|Description|  
+|---------------|-----------------|  
+|DependentUpon|Optional string. Specifies the file this file depends on to compile correctly.|  
+|AutoGen|Optional boolean. Indicates whether the file was generated for the project by the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrated development environment (IDE).|  
+|Link|Optional string. The notational path to be displayed when the file is physically located outside the influence of the project file.|  
+|Visible|Optional boolean. Indicates whether to display the file in **Solution Explorer** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
+|CopyToOutputDirectory|Optional string. Determines whether to copy the file to the output directory. Values are:<br /><br /> 1.  Never<br />2.  Always<br />3.  PreserveNewest|  
   
-### ВнедренныйРесурс  
- Представляет ресурсы для внедрения в созданную сборку.  
+### <a name="embeddedresource"></a>EmbeddedResource  
+ Represents resources to be embedded in the generated assembly.  
   
-|Имя элемента|Описание|  
-|------------------|--------------|  
-|ЗависимостьОт|Необязательная строка.  Указывает файл, от которого зависит этот файл для правильной компиляции.|  
-|Generator|Обязательная строка.  Имя любого генератора файлов, который запущен на этом элементе.|  
-|ПоследниеВыходныеДанныеГенератора|Обязательная строка.  Имя файла, который был создан любым генератором файлов, запущенным на этом элементе.|  
-|НастраиваемоеПространствоИменСредства|Обязательная строка.  Пространство имен, в котором любой генератор файлов, запущенный на этом элементе, должен создать код.|  
-|Ссылка|Необязательная строка.  Путь к обозначениям отображается в том случае, если файл физически расположен вне зоны влияния проекта.|  
-|Показывается|Необязательный логический атрибут.  Указывает, следует ли отображать файл в **Обозревателе решений** в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-|КопироватьВВыходнойКаталог|Необязательная строка.  Определяет, следует ли копировать файл в выходной каталог.  Доступны следующие значения:<br /><br /> 1.  Никогда<br />2.  Всегда<br />3.  СохранятьНовейшие|  
-|ЛогическоеИмя|Обязательная строка.  Логическое имя внедренного ресурса.|  
+|Item Name|Description|  
+|---------------|-----------------|  
+|DependentUpon|Optional string. Specifies the file this file depends on to compile correctly|  
+|Generator|Required string. The name of any file generator that is run on this item.|  
+|LastGenOutput|Required string. The name of the file that was created by any file generator that ran on this item.|  
+|CustomToolNamespace|Required string. The namespace in which any file generator that runs on this item should create code.|  
+|Link|Optional string. The notational path is displayed if the file is physically located outside the influence of the project.|  
+|Visible|Optional boolean. Indicates whether to display the file in **Solution Explorer** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
+|CopyToOutputDirectory|Optional string. Determines whether to copy the file to the output directory. Values are:<br /><br /> 1.  Never<br />2.  Always<br />3.  PreserveNewest|  
+|LogicalName|Required string. The logical name of the embedded resource.|  
   
-### Content  
- Представляет файлы, которые не компилируются в проект, но могут быть внедрены или опубликованы вместе с ним.  
+### <a name="content"></a>Content  
+ Represents files that are not compiled into the project, but may be embedded or published together with it.  
   
-|Имя элемента|Описание|  
-|------------------|--------------|  
-|ЗависимостьОт|Необязательная строка.  Указывает файл, от которого зависит этот файл, для правильной компиляции.|  
-|Generator|Обязательная строка.  Имя любого генератора файлов, который запущен на этом элементе.|  
-|ПоследниеВыходныеДанныеГенератора|Обязательная строка.  Имя файла, который был создан любым генератором файлов, запущенным на этом элементе.|  
-|НастраиваемоеПространствоИменСредства|Обязательная строка.  Пространство имен, в котором любой генератор файлов, запущенный на этом элементе, должен создать код.|  
-|Ссылка|Необязательный логический атрибут.  Указывает, следует ли отображать файл в **Обозревателе решений** в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-|СостояниеПубликации|Обязательная строка.  Состояние публикации содержимого либо:<br /><br /> -   По умолчанию<br />-   Включено<br />-   Исключено<br />-   ФайлДанных<br />-   Предварительные требования|  
-|ЯвляетсяСборкой|Необязательный логический атрибут.  Указывает, является ли файл сборкой.|  
-|Показывается|Необязательный логический атрибут.  Указывает, следует ли отображать файл в **Обозревателе решений** в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-|КопироватьВВыходнойКаталог|Необязательная строка.  Определяет, следует ли копировать файл в выходной каталог.  Доступны следующие значения:<br /><br /> 1.  Никогда<br />2.  Всегда<br />3.  СохранятьНовейшие|  
+|Item Name|Description|  
+|---------------|-----------------|  
+|DependentUpon|Optional string. Specifies the file this file depends on to compile correctly.|  
+|Generator|Required string. The name of any file generator that runs on this item.|  
+|LastGenOutput|Required string. The name of the file that was created by any file generator that was run on this item.|  
+|CustomToolNamespace|Required string. The namespace in which any file generator that runs on this item should create code.|  
+|Link|Optional string. The notational path to be displayed if the file is physically located outside the influence of the project.|  
+|PublishState|Required string. The publish state of the content, either:<br /><br /> -   Default<br />-   Included<br />-   Excluded<br />-   DataFile<br />-   Prerequisite|  
+|IsAssembly|Optional boolean. Specifies whether the file is an assembly.|  
+|Visible|Optional boolean. Indicates whether to display the file in **Solution Explorer** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
+|CopyToOutputDirectory|Optional string. Determines whether to copy the file to the output directory. Values are:<br /><br /> 1.  Never<br />2.  Always<br />3.  PreserveNewest|  
   
-### Нет  
- Представляет файлы, которые не должны иметь никакой роли в процессе создания.  
+### <a name="none"></a>None  
+ Represents files that should have no role in the build process.  
   
-|Имя элемента|Описание|  
-|------------------|--------------|  
-|ЗависимостьОт|Необязательная строка.  Указывает файл, от которого зависит этот файл, для правильной компиляции.|  
-|Generator|Обязательная строка.  Имя любого генератора файлов, который запущен на этом элементе.|  
-|ПоследниеВыходныеДанныеГенератора|Обязательная строка.  Имя файла, который был создан любым генератором файлов, запущенным на этом элементе.|  
-|НастраиваемоеПространствоИменСредства|Обязательная строка.  Пространство имен, в котором любой генератор файлов, запущенный на этом элементе, должен создать код.|  
-|Ссылка|Необязательная строка.  Путь к обозначениям, который отображается в том случае, если файл физически расположен вне зоны влияния проекта.|  
-|Показывается|Необязательный логический атрибут.  Указывает, следует ли отображать файл в **Обозревателе решений** в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-|КопироватьВВыходнойКаталог|Необязательная строка.  Определяет, следует ли копировать файл в выходной каталог.  Доступны следующие значения:<br /><br /> 1.  Никогда<br />2.  Всегда<br />3.  СохранятьНовейшие|  
+|Item Name|Description|  
+|---------------|-----------------|  
+|DependentUpon|Optional string. Specifies the file this file depends on to compile correctly.|  
+|Generator|Required string. The name of any file generator that is run on this item.|  
+|LastGenOutput|Required string. The name of the file that was created by any file generator that ran on this item.|  
+|CustomToolNamespace|Required string. The namespace in which any file generator that runs on this item should create code.|  
+|Link|Optional string. The notational path to be displayed if the file is physically located outside the influence of the project.|  
+|Visible|Optional boolean. Indicates whether to display the file in **Solution Explorer** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
+|CopyToOutputDirectory|Optional string. Determines whether to copy the file to the output directory. Values are:<br /><br /> 1.  Never<br />2.  Always<br />3.  PreserveNewest|  
   
-### БазовыйМанифестПриложения  
- Представляет базовый манифест приложения для сборки и содержит сведения о безопасности развертывания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
+### <a name="baseapplicationmanifest"></a>BaseApplicationManifest  
+ Represents the base application manifest for the build, and contains [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] deployment security information.  
   
-### ИмпортАнализаКода  
- Представляет проект FxCop для импорта.  
+### <a name="codeanalysisimport"></a>CodeAnalysisImport  
+ Represents the FxCop project to import.  
   
-### Импорт  
- Представляет сборки, пространства имен которых должен импортировать компилятор [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].  
+### <a name="import"></a>Import  
+ Represents assemblies whose namespaces should be imported by the [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] compiler.  
   
-## См. также  
- [Общие свойства проектов MSBuild](../msbuild/common-msbuild-project-properties.md)
+## <a name="see-also"></a>See Also  
+ [Common MSBuild Project Properties](../msbuild/common-msbuild-project-properties.md)
+

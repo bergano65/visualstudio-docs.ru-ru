@@ -1,45 +1,62 @@
 ---
-title: "Задача GetReferenceAssemblyPaths | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
+title: "Задача GetReferenceAssemblyPaths | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
 ms.assetid: 178ef49c-5dee-405b-a14b-a37f41dc0609
 caps.latest.revision: 4
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 4
----
-# Задача GetReferenceAssemblyPaths
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
+ms.openlocfilehash: 6009ccb21696e207facfe6c172d4c131f13f8bc0
+ms.contentlocale: ru-ru
+ms.lasthandoff: 06/03/2017
 
-Возвращает пути к базовым сборкам для различных версий .NET Framework.  
+---
+# <a name="getreferenceassemblypaths-task"></a>Задача GetReferenceAssemblyPaths
+Возвращает пути к эталонным сборкам для различных версий .NET Framework.  
   
-## Параметры  
- В следующей таблице описаны параметры задачи `GetReferenceAssemblyPaths`.  
+## <a name="parameters"></a>Параметры  
+ В следующей таблице приводятся параметры задачи `GetReferenceAssemblyPaths`.  
   
 |Параметр|Описание|  
-|--------------|--------------|  
-|`ReferenceAssemblyPaths`|Необязательный выходной параметр `String[]`.<br /><br /> Возвращает путь, основанный на параметре `TargetFrameworkMoniker` .  Если `TargetFrameworkMoniker` равен null или является пустым, этот путь будет `String.Empty`.|  
-|`FullFrameworkReferenceAssemblyPaths`|Необязательный выходной параметр `String[]`.<br /><br /> Возвращает путь на основе параметра `TargetFrameworkMoniker`, без учета профильной части моникера.  Если `TargetFrameworkMoniker` равен null или является пустым, этот путь будет `String.Empty`.|  
-|`TargetFrameworkMoniker`|Необязательный параметр типа `String`.<br /><br /> Указывает моникер требуемой версии .NET Framework, связанный с путями к базовой сборке.|  
-|`RootPath`|Необязательный параметр типа `String`.<br /><br /> Задает Корневой путь, который необходимо использовать для создания пути к базовой сборке|  
-|`BypassFrameworkInstallChecks`|Необязательный параметр типа [Boolean](assetId:///Boolean?qualifyHint=False&autoUpgrade=True).<br /><br /> Если `true`, пропускает основные проверки, которые по умолчанию проводит `GetReferenceAssemblyPaths`, чтобы убедиться, что установлены нужные платформы среды выполнения в зависимости от целевой платформы.|  
-|`TargetFrameworkMonikerDisplayName`|Необязательный выходной параметр типа `String`.<br /><br /> Задает отображаемое имя для моникера требуемой версии .NET Framework.|  
+|---------------|-----------------|  
+|`ReferenceAssemblyPaths`|Необязательный выходной параметр `String[]`.<br /><br /> Возвращает путь на основе параметра `TargetFrameworkMoniker`. Если `TargetFrameworkMoniker` равен NULL или пуст, этот путь имеет значение `String.Empty`.|  
+|`FullFrameworkReferenceAssemblyPaths`|Необязательный выходной параметр `String[]`.<br /><br /> Возвращает путь на основе параметра `TargetFrameworkMoniker` без учета профильной части моникера. Если `TargetFrameworkMoniker` равен NULL или пуст, этот путь имеет значение `String.Empty`.|  
+|`TargetFrameworkMoniker`|Необязательный параметр `String` .<br /><br /> Указывает моникер целевой платформы, связанный с путями базовых сборок.|  
+|`RootPath`|Необязательный параметр `String` .<br /><br /> Указывает корневой путь, используемый для создания пути базовой сборки.|  
+|`BypassFrameworkInstallChecks`|Необязательный параметр <xref:System.Boolean> .<br /><br /> Если задано значение `true`, обходит основные проверки, которые `GetReferenceAssemblyPaths` выполняет по умолчанию, чтобы убедиться в установке определенных платформ среды выполнения, в зависимости от целевой платформы.|  
+|`TargetFrameworkMonikerDisplayName`|Необязательный выходной параметр `String`.<br /><br /> Задает отображаемое имя для моникера целевой платформы.|  
   
-## Заметки  
- В дополнение к параметры, которые перечислены в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который наследует от класса<xref:Microsoft.Build.Utilities.Task>.  Чтобы получить список этих доп параметров и их описаний, см. [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
+## <a name="remarks"></a>Примечания  
+ Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

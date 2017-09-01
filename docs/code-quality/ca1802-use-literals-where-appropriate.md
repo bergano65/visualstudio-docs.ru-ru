@@ -1,53 +1,71 @@
 ---
-title: "CA1802. Используйте литералы там, где возможно | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "UseLiteralsWhereAppropriate"
-  - "CA1802"
-helpviewer_keywords: 
-  - "UseLiteralsWhereAppropriate"
-  - "CA1802"
+title: 'CA1802: Use Literals Where Appropriate | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- UseLiteralsWhereAppropriate
+- CA1802
+helpviewer_keywords:
+- UseLiteralsWhereAppropriate
+- CA1802
 ms.assetid: 2515e4cd-9e61-486d-b067-58ba1a743ce4
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 17
----
-# CA1802. Используйте литералы там, где возможно
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 542d38ffef6008d3bd9605466f23f0cc35014c3e
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1802-use-literals-where-appropriate"></a>CA1802: Use Literals Where Appropriate
 |||  
 |-|-|  
 |TypeName|UseLiteralsWhereAppropriate|  
 |CheckId|CA1802|  
-|Категория|Microsoft.Performance|  
-|Критическое изменение|Не критическое|  
+|Category|Microsoft.Performance|  
+|Breaking Change|Non-breaking|  
   
-## Причина  
- Поле объявлено `static` и `readonly` \(`Shared` и `ReadOnly` в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\) и инициализировано со значением, вычисляемым во время компиляции.  
+## <a name="cause"></a>Cause  
+ A field is declared `static` and `readonly` (`Shared` and `ReadOnly` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]), and is initialized with a value that is computable at compile time.  
   
-## Описание правила  
- Значение поля `static` `readonly` вычисляется во время выполнения при вызове статического конструктора для объявляющего типа.  Если поле `static` `readonly` инициализируется во время своего объявления и статический конструктор не объявлен явно, компилятор выдает статический конструктор для инициализации поля.  
+## <a name="rule-description"></a>Rule Description  
+ The value of a `static``readonly` field is computed at runtime when the static constructor for the declaring type is called. If the `static``readonly` field is initialized when it is declared and a static constructor is not declared explicitly, the compiler emits a static constructor to initialize the field.  
   
- Значение поля `const` вычисляется во время компиляции и хранится в метаданных, что приводит к повышению производительности среды выполнения по сравнению с полем `static` `readonly`.  
+ The value of a `const` field is computed at compile time and stored in the metadata, which increases runtime performance when it is compared to a `static``readonly` field.  
   
- Поскольку значение, назначенное целевому полю, вычисляется во время компиляции, измените объявление на поле `const`, чтобы значение вычислялось не во время выполнения, а во время компиляции.  
+ Because the value assigned to the targeted field is computable at compile time, change the declaration to a `const` field so that the value is computed at compile time instead of at runtime.  
   
-## Устранение нарушений  
- Чтобы устранить нарушение данного правила, замените модификаторы `static` и `readonly` на модификатор `const`.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, replace the `static` and `readonly` modifiers with the `const` modifier.  
   
-## Отключение предупреждений  
- Если вопрос производительности не критичен, можно отключить вывод предупреждения для данного правила или полностью отключить само правило.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule, or disable the rule, if performance is not of concern.  
   
-## Пример  
- В следующем примере показан тип `UseReadOnly`, который нарушает данное правило, и тип `UseConstant`, удовлетворяющий ему.  
+## <a name="example"></a>Example  
+ The following example shows a type, `UseReadOnly`, that violates the rule and a type, `UseConstant`, that satisfies the rule.  
   
- [!CODE [FxCop.Performance.UseLiterals#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Performance.UseLiterals#1)]
+ [!code-vb[FxCop.Performance.UseLiterals#1](../code-quality/codesnippet/VisualBasic/ca1802-use-literals-where-appropriate_1.vb)] [!code-csharp[FxCop.Performance.UseLiterals#1](../code-quality/codesnippet/CSharp/ca1802-use-literals-where-appropriate_1.cs)]

@@ -1,65 +1,82 @@
 ---
-title: "Создание категория параметров | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "параметры профиля, создания категорий"
+title: Creating a Settings Category | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 39
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 39
----
-# Создание категория параметров
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 6a5d6b839eb021bded2627241b6f7cbfdbfcbac3
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-В этом пошаговом руководстве создать категорию параметров Visual Studio и использовать его для сохранения значений и восстановить значения из файла параметров. Категория параметров — это группа связанных свойств, которые отображаются в виде «пользовательские параметры точки»; то есть как флажок в **Импорт и экспорт параметров** мастера. \(Его можно найти на **средства** меню.\) Сохранить или восстановить как категория параметры и параметры не отображаются в мастере. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/ru-ru/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+---
+# <a name="creating-a-settings-category"></a>Creating a Settings Category
+In this walkthrough you create a Visual Studio settings category and use it to save values to and restore values from a settings file. A settings category is a group of related properties that appear as a "custom settings point"; that is, as a check box in the **Import and Exports Settings** Wizard. (You can find it on the **Tools** menu.) Settings are saved or restored as a category, and individual settings are not displayed in the wizard. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
- Создать категорию параметров, производный от класса <xref:Microsoft.VisualStudio.Shell.DialogPage> класса.  
+ You create a settings category by deriving it from the <xref:Microsoft.VisualStudio.Shell.DialogPage> class.  
   
- Для этого пошагового выполнения первого раздела [Создание страницы параметров](../extensibility/creating-an-options-page.md). Полученный сетка свойств параметров позволяет просматривать и изменять свойства в категории. После сохранения категории свойств в файле параметров, вы проверяете файл, чтобы увидеть, как хранятся значения свойств.  
+ To start this walkthrough, you must first complete the first section of [Creating an Options Page](../extensibility/creating-an-options-page.md). The resulting Options property grid lets you examine and change the properties in the category. After you save the property category in a settings file, you examine the file to see how the property values are stored.  
   
-## Обязательные компоненты  
- Начиная с Visual Studio 2015, не установить пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в установку Visual Studio. VS SDK также можно установить позже. Для получения дополнительной информации см. [Установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Prerequisites  
+ Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## Создание категория параметров  
- В этом разделе использования точки настраиваемые параметры для сохранения и восстановления значений параметров категории.  
+## <a name="creating-a-settings-category"></a>Creating a Settings Category  
+ In this section, you use a custom settings point to save and restore the values of the settings category.  
   
-#### Чтобы создать категорию параметров  
+#### <a name="to-create-a-settings-category"></a>To create a settings category  
   
-1.  Завершить [Создание страницы параметров](../extensibility/creating-an-options-page.md).  
+1.  Complete the [Creating an Options Page](../extensibility/creating-an-options-page.md).  
   
-2.  Откройте файл VSPackage.resx и добавьте эти три строковых ресурсов:  
+2.  Open the VSPackage.resx file and add these three string resources:  
   
-    |Имя|Значение|  
-    |---------|--------------|  
-    |106|Мои категории|  
-    |107|Мои параметры|  
-    |108|OptionInteger и OptionFloat|  
+    |Name|Value|  
+    |----------|-----------|  
+    |106|My Category|  
+    |107|My Settings|  
+    |108|OptionInteger and OptionFloat|  
   
-     Это создает ресурсы, имя категории «My Category» объекта «мои параметры» и описание категории «OptionInteger и OptionFloat».  
+     This creates resources that name the category "My Category", the object "My Settings", and the category description "OptionInteger and OptionFloat".  
   
     > [!NOTE]
-    >  Из этих трех имя категории не отображается в мастере импорта и экспорта параметров.  
+    >  Of these three, only the category name does not appear in the Import and Export Settings wizard.  
   
-3.  Добавьте в MyToolsOptionsPackage.cs, `float` свойство с именем `OptionFloat` для `OptionPageGrid` класса, как показано в следующем примере.  
+3.  In MyToolsOptionsPackage.cs, add a `float` property named `OptionFloat` to the `OptionPageGrid` class, as shown in the following example.  
   
-    ```c#  
-    public class OptionPageGrid : DialogPage  
+    ```csharp  
+    public class OptionPageGrid : DialogPage  
     {  
-        private int optionInt = 256;  
-        private float optionFloat = 3.14F;  
+        private int optionInt = 256;  
+        private float optionFloat = 3.14F;  
   
         [Category("My Options")]  
         [DisplayName("My Integer option")]  
         [Description("My integer option")]  
-        public int OptionInteger  
+        public int OptionInteger  
         {  
             get { return optionInt; }  
             set { optionInt = value; }  
@@ -67,7 +84,7 @@ caps.handback.revision: 39
         [Category("My Options")]  
         [DisplayName("My Float option")]  
         [Description("My float option")]  
-        public float OptionFloat  
+        public float OptionFloat  
         {  
             get { return optionFloat; }  
             set { optionFloat = value; }  
@@ -76,81 +93,81 @@ caps.handback.revision: 39
     ```  
   
     > [!NOTE]
-    >  `OptionPageGrid` Категорию с именем «My Category» теперь состоит из двух свойств `OptionInteger` и `OptionFloat`.  
+    >  The `OptionPageGrid` category named "My Category" now consists of the two properties, `OptionInteger` and `OptionFloat`.  
   
-4.  Добавить <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> к `MyToolsOptionsPackage` класса ему «My Category», «категория», присвойте ему имя объекта «Мои параметры» и isToolsOptionPage присвоено значение true. Значение categoryResourceID, objectNameResourceID и DescriptionResourceID соответствующий строковый ресурс, который ранее созданные идентификаторы.  
+4.  Add a <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> to the `MyToolsOptionsPackage` class and give it the CategoryName "My Category", give it the ObjectName "My Settings", and set isToolsOptionPage to true. Set the categoryResourceID, objectNameResourceID, and DescriptionResourceID to the corresponding string resource IDs created earlier.  
   
-    ```c#  
+    ```csharp  
     [ProvideProfileAttribute(typeof(OptionPageGrid),   
         "My Category", "My Settings", 106, 107, isToolsOptionPage:true, DescriptionResourceID = 108)]  
     ```  
   
-5.  Выполните сборку решения и запустите отладку. В экспериментальном экземпляре вы увидите, что **мою страницу сетки** теперь имеет целые и десятичные значения.  
+5.  Build the project and start debugging. In the experimental instance you should see that **My Grid Page** now has both integer and float values.  
   
-## Проверка файла параметров  
- В этом разделе вы экспортируете значения категории свойств в файл параметров. Просмотрите файл и затем импортировать обратно в категории свойств значения.  
+## <a name="examining-the-settings-file"></a>Examining the Settings File  
+ In this section, you export property category values to a settings file. You examine the file and then import the values back into the property category.  
   
-1.  Запустите проект в режиме отладки, нажав клавишу F5. Запустится экспериментальный экземпляр.  
+1.  Start the project in debug mode by pressing F5. This starts the experimental instance.  
   
-2.  Откройте **инструменты и параметры** диалогового окна.  
+2.  Open the **Tools / Options** dialog.  
   
-3.  В представлении дерева в левой области разверните **Мои категории** и нажмите кнопку **мою страницу сетки**.  
+3.  In the tree view in the left pane, expand **My Category** and then click **My Grid Page**.  
   
-4.  Измените значение **OptionFloat** для 3.1416 и **OptionInteger** до 12. Нажмите кнопку **ОК**.  
+4.  Change the value of **OptionFloat** to 3.1416 and **OptionInteger** to 12. Click **OK**.  
   
-5.  В меню **Сервис** выберите команду **Импорт и экспорт параметров**.  
+5.  On the **Tools** menu, click **Import and Export Settings**.  
   
-     **Импорт и экспорт параметров** откроется окно мастера.  
+     The **Import and Export Settings** wizard appears.  
   
-6.  Убедитесь, что **Экспортировать выбранные параметры среды** выбран и нажмите кнопку **Далее**.  
+6.  Make sure **Export selected environment settings** is selected, and then click **Next**.  
   
-     **Выбор параметров для экспорта** появится страница.  
+     The **Choose Settings to Export** page appears.  
   
-7.  Щелкните **Мои параметры**.  
+7.  Click **My Settings**.  
   
-     **Описание** примет **OptionInteger и OptionFloat**.  
+     The **Description** changes to **OptionInteger and OptionFloat**.  
   
-8.  Убедитесь, что **Мои параметры** только категорией выбран и нажмите кнопку **Далее**.  
+8.  Make sure that **My Settings** is the only category that is selected, and then click **Next**.  
   
-     **Имя файла параметров** появится страница.  
+     The **Name Your Settings File** page appears.  
   
-9. Имя нового файла параметров `MySettings.vssettings` и сохраните его в соответствующий каталог. Нажмите кнопку **Готово**.  
+9. Name the new settings file `MySettings.vssettings` and save it in an appropriate directory. Click **Finish**.  
   
-     **Экспорт завершен** страница сообщает, что ваши параметры успешно экспортированы.  
+     The **Export Complete** page reports that your settings were successfully exported.  
   
-10. На **файл** наведите указатель мыши на **Откройте**, а затем нажмите кнопку **файл**. Найдите `MySettings.vssettings` и откройте его.  
+10. On the **File** menu, point to **Open**, and then click **File**. Locate `MySettings.vssettings` and open it.  
   
-     Можно найти категории свойств, экспортированный в следующем разделе файла \(ваш GUID будет отличаться\).  
+     You can find the property category you exported in the following section of the file (your GUIDs will differ).  
   
     ```  
     <Category name="My Category_My Settings"   
-          Category="{4802bc3e-3d9d-4591-8201-23d1a05216a6}"   
-          Package="{6bb6942e-014c-489e-a612-a935680f703d}"   
-          RegisteredName="My Category_My Settings">  
-          PackageName="MyToolsOptionsPackage">  
-       <PropertyValue name="OptionFloat">3.1416</PropertyValue>   
-       <PropertyValue name="OptionInteger">12</PropertyValue>   
+          Category="{4802bc3e-3d9d-4591-8201-23d1a05216a6}"   
+          Package="{6bb6942e-014c-489e-a612-a935680f703d}"   
+          RegisteredName="My Category_My Settings">  
+          PackageName="MyToolsOptionsPackage">  
+       <PropertyValue name="OptionFloat">3.1416</PropertyValue>   
+       <PropertyValue name="OptionInteger">12</PropertyValue>   
     </Category>  
     ```  
   
-     Обратите внимание, что имя полного категории образуется путем добавления символа подчеркивания в имени категории, за которым следует имя объекта. OptionFloat и OptionInteger появляются в категории, вместе с их экспортированный значения.  
+     Notice that the full category name is formed by the addition of an underscore to the category name followed by the object name. OptionFloat and OptionInteger appear in the category, together with their exported values.  
   
-11. Закройте файл параметров без изменений.  
+11. Close the settings file without changing it.  
   
-12. На **средства** меню, щелкните **Параметры**, разверните **Мои категории**, нажмите кнопку **мою страницу сетки** и измените значение **OptionFloat** 1.0 и **OptionInteger** 1. Нажмите кнопку **ОК**.  
+12. On the **Tools** menu, click **Options**, expand **My Category**, click **My Grid Page** and then change the value of **OptionFloat** to 1.0 and **OptionInteger** to 1. Click **OK**.  
   
-13. На **средства** меню, щелкните **Импорт и экспорт параметров**, выберите **Импортировать выбранные параметры среды**, и нажмите кнопку **Далее**.  
+13. On the **Tools** menu, click **Import and Export Settings**, select **Import selected environment settings**, and then click **Next**.  
   
-     **Сохранить текущие параметры** появится страница.  
+     The **Save Current Settings** page appears.  
   
-14. Выберите **Нет, импортировать новые параметры** и нажмите кнопку **Далее**.  
+14. Select **No, just import new settings** and then click **Next**.  
   
-     **Выбор набора параметров для импорта** появится страница.  
+     The **Choose a Collection of Settings to Import** page appears.  
   
-15. Выберите `MySettings.vssettings` файл в **Мои параметры** узла дерева. Если файл не отображается в представлении в виде дерева, щелкните **Обзор** его найти. Нажмите кнопку **Далее**.  
+15. Select the `MySettings.vssettings` file in the **My Settings** node of the tree view. If the file does not appear in the tree view, click **Browse** and find it. Click **Next**.  
   
-     **Выбор параметров для импорта** откроется диалоговое окно.  
+     The **Choose Settings to Import** dialog box appears.  
   
-16. Убедитесь, что **Мои параметры** выбран и нажмите кнопку **Готово**. Когда **Импорт завершен** страницу, нажмите кнопку **Закрыть**.  
+16. Make sure that **My Settings** is selected, and then click **Finish**. When the **Import Complete** page appears, click **Close**.  
   
-17. На **средства** меню, щелкните **Параметры**, разверните **Мои категории**, нажмите кнопку **мою страницу сетки** и проверить, восстановлены значения категории свойств.
+17. On the **Tools** menu, click **Options**, expand **My Category**, click **My Grid Page** and verify that the property category values have been restored.

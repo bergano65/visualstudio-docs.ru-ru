@@ -1,5 +1,5 @@
 ---
-title: "Практическое руководство: Добавление обработчика и перетащите | Документы Microsoft"
+title: 'How to: Add a Drag-and-Drop Handler | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -16,45 +16,46 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Machine Translation
-ms.sourcegitcommit: 3d07f82ea737449fee6dfa04a61e195654ba35fa
-ms.openlocfilehash: a36c296ff4377397b732a1af98e4747e24f600b6
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b773c9339949066c7d1837b7bc687403731e2bb8
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="how-to-add-a-drag-and-drop-handler"></a>Практическое руководство. Добавление обработчика перетаскивания
-Чтобы пользователи могли перетаскивать элементы в схему из других схем или других частей [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], можно добавить в доменный язык обработчики событий перетаскивания. Кроме того, можно добавить обработчики для таких событий, как двойной щелчок кнопки мыши. Вместе называются обработчики и перетащите и дважды щелкните *обработчики жестов*.  
+# <a name="how-to-add-a-drag-and-drop-handler"></a>How to: Add a Drag-and-Drop Handler
+You can add handlers for drag-and-drop events to your DSL, so that users can drag items onto your diagram from other diagrams or from other parts of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. You can also add handlers for events such as double-clicks. Together, drag-and-drop and double-click handlers are known as *gesture handlers*.  
   
- В этом разделе описываются жесты перетаскивания, которые происходят из других схем. Для событий перемещения и копирования в рамках одной схемы предпочтительнее определить подкласс `ElementOperations`. Дополнительные сведения см. в разделе [Настройка поведения копирования](../modeling/customizing-copy-behavior.md). Также может быть доступна настройка определения DSL.  
+ This topic discusses drag-and-drop gestures that originate on other diagrams. For move and copy events within a single diagram, consider the alternative of defining a subclass of `ElementOperations`. For more information, see [Customizing Copy Behavior](../modeling/customizing-copy-behavior.md). You might also be able to customize the DSL definition.  
   
-## <a name="in-this-topic"></a>Содержание раздела  
+## <a name="in-this-topic"></a>In this topic  
   
--   В первых двух частях описываются альтернативные методы определения обработчика жестов.  
+-   The first two sections describe alternative methods of defining a gesture handler:  
   
-    -   [Определение обработчиков жестов путем переопределения методов ShapeElement](#overrideShapeElement). `OnDragDrop`, `OnDoubleClick`, `OnDragOver`, и другие методы можно переопределять.  
+    -   [Defining Gesture Handlers by Overriding ShapeElement methods](#overrideShapeElement). `OnDragDrop`, `OnDoubleClick`, `OnDragOver`, and other methods can be overridden.  
   
-    -   [Определение обработчиков жестов с помощью MEF](#MEF). Используйте этот метод, чтобы разрешить сторонним разработчикам определять собственные обработчики в вашем DSL. В этом случае после установки вашего DSL пользователи смогут установить сторонние расширения.  
+    -   [Defining Gesture Handlers by using MEF](#MEF). Use this method if you want third-party developers to be able to define their own handlers to your DSL. Users can choose to install the third-party extensions after they have installed your DSL.  
   
--   [Декодирование перетаскиваемого элемента](#extracting). Элементы можно перетаскивать из любого окна, рабочего стола и даже доменного языка.  
+-   [How to Decode the Dragged Item](#extracting). Elements can be dragged from any window or from the desktop, as well as from a DSL.  
   
--   [Как получить исходного перетаскиваемого элемента](#getOriginal). Если перетаскиваемый элемент является элементом DSL, можно открыть исходную модель и получить доступ к элементу.  
+-   [How to Get the Original Dragged Item](#getOriginal). If the dragged item is a DSL element, you can open the source model and access the element.  
   
--   [Использование действий мыши: Перетаскивание элементов секций](#mouseActions). В этом примере демонстрируется низкоуровневый обработчик, который перехватывает действия мыши в областях фигуры. Пример позволяет пользователю перегруппировывать элементы в секции, перетаскивая их с помощью мыши.  
+-   [Using Mouse Actions: Dragging Compartment Items](#mouseActions). This sample demonstrates a lower-level handler that intercepts mouse actions on a shape's fields. The example lets the user re-order the items in a compartment by dragging with the mouse.  
   
-##  <a name="a-nameoverrideshapeelementa-defining-gesture-handlers-by-overriding-shapeelement-methods"></a><a name="overrideShapeElement"></a>Определение обработчиков жестов путем переопределения методов ShapeElement  
- Добавьте новый файл кода в проект DSL. Обычно для обработчика жестов требуются как минимум следующие операторы `using`:  
+##  <a name="overrideShapeElement"></a> Defining Gesture Handlers by Overriding ShapeElement Methods  
+ Add a new code file to your DSL project. For a gesture handler, you usually must have at least the following `using` statements:  
   
-```c#  
+```csharp  
 using Microsoft.VisualStudio.Modeling;  
 using Microsoft.VisualStudio.Modeling.Diagrams;  
 using System.Linq;  
 ```  
   
- В новом файле определите частичный класс для класса фигуры или схемы, который должен отвечать на операцию перетаскивания. Переопределите следующие методы.  
+ In the new file, define a partial class for the shape or diagram class that should respond to the drag operation. Override the following methods:  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>— Этот метод вызывается, когда указатель мыши входит в фигуру во время операции перетаскивания.</xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A> Ваш метод должен проверить перетаскиваемый пользователем элемент и задать свойство Effect, определяющее возможность перетаскивания элемента на эту фигуру. Свойство Effect определяет отображение указателя мыши, когда он находится на этой фигуре, а также возможность вызова `OnDragDrop()`, когда пользователь отпускает кнопку мыши.  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>- This method is called when the mouse pointer enters the shape during a drag operation. Your method should inspect the item that the user is dragging, and set the Effect property to indicate whether the user can drop the item on this shape. The Effect property determines the appearance of the cursor while it is over this shape, and also determines whether `OnDragDrop()` will be called when the user releases the mouse button.  
   
-    ```c#  
+    ```csharp  
     partial class MyShape // MyShape generated from DSL Definition.  
     {  
         public override void OnDragOver(DiagramDragEventArgs e)  
@@ -69,9 +70,9 @@ using System.Linq;
   
     ```  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>— Этот метод вызывается, если пользователь отпускает кнопку мыши при наведении указателя мыши над фигурой или схема, если `OnDragOver(DiagramDragEventArgs e)` , заданные ранее `e.Effect` в значение, отличное от `None`.</xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> - This method is called if the user releases the mouse button while the mouse pointer rests over this shape or diagram, if `OnDragOver(DiagramDragEventArgs e)` previously set `e.Effect` to a value other than `None`.  
   
-    ```c#  
+    ```csharp  
     public override void OnDragDrop(DiagramDragEventArgs e)  
         {  
           if (!IsAcceptableDropItem(e))  
@@ -86,20 +87,20 @@ using System.Linq;
   
     ```  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A>— Этот метод вызывается, когда пользователь дважды щелкает фигуру или схему.</xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A>  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> - This method is called when the user double-clicks the shape or diagram.  
   
-     Дополнительные сведения см. в разделе [как: перехват щелчка фигуры или декоратора](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
+     For more information, see [How to: Intercept a Click on a Shape or Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
   
- Определите `IsAcceptableDropItem(e)`, чтобы задать допустимость перетаскиваемого элемента, и ProcessDragDropItem(e), чтобы обновить модель после перетаскивания элемента. Прежде всего, эти методы должны извлечь элемент из аргументов события. Сведения о том, как это сделать, см. в разделе [как для получения ссылки на перетаскиваемый элемент](#extracting).  
+ Define `IsAcceptableDropItem(e)` to determine whether the dragged item is acceptable, and ProcessDragDropItem(e) to update your model when the item is dropped. These methods must first extract the item from the event arguments. For information about how to do that, see [How to get a reference to the dragged item](#extracting).  
   
-##  <a name="a-namemefa-defining-gesture-handlers-by-using-mef"></a><a name="MEF"></a>Определение обработчиков жестов с помощью MEF  
- MEF (Managed Extensibility Framework) позволяет определять компоненты, которые можно установить с минимальной конфигурацией. Дополнительные сведения см. в разделе [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/Library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+##  <a name="MEF"></a> Defining Gesture Handlers by using MEF  
+ MEF (Managed Extensibility Framework) lets you define components that can be installed with minimal configuration. For more information, see [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).  
   
-#### <a name="to-define-a-mef-gesture-handler"></a>Определение обработчика жестов MEF  
+#### <a name="to-define-a-mef-gesture-handler"></a>To define a MEF gesture handler  
   
-1.  Добавить к **Dsl** и **DslPackage** проекты **MefExtension** файлы, которые описаны в [расширение Доменного языка с помощью MEF](../modeling/extend-your-dsl-by-using-mef.md).  
+1.  Add to your **Dsl** and **DslPackage** projects the **MefExtension** files that are described in [Extend your DSL by using MEF](../modeling/extend-your-dsl-by-using-mef.md).  
   
-2.  Теперь можно определить обработчик жестов в качестве компонента MEF.  
+2.  You can now define a gesture handler as a MEF component:  
   
     ```  
   
@@ -131,28 +132,28 @@ using System.Linq;
   
     ```  
   
-     При наличии различных типов перетаскиваемых объектов можно создать еще один компонент обработчика жестов.  
+     You can create more than one gesture handler component, such as when you have different types of dragged objects.  
   
-3.  Добавьте определения разделяемого класса для классов целевой фигуры, соединителя или схемы и определите методы `IsAcceptableDropItem()` и `ProcessDragDropItem()`. Эти методы должны начинаться с извлечения перетаскиваемого элемента из аргументов события. Дополнительные сведения см. в разделе [как для получения ссылки на перетаскиваемый элемент](#extracting).  
+3.  Add partial class definitions for the target shape, connector or diagram classes, and define the methods `IsAcceptableDropItem()` and `ProcessDragDropItem()`. These methods must begin by extracting the dragged item from the event arguments. For more information, see [How to get a reference to the dragged item](#extracting).  
   
-##  <a name="a-nameextractinga-how-to-decode-the-dragged-item"></a><a name="extracting"></a>Декодирование перетаскиваемого элемента  
- Когда пользователь перетаскивает элемент на вашу схему или из одной части схему в другую, сведения о перетаскиваемом элементе появляются в `DiagramDragEventArgs`. Так как операция перетаскивания может начаться на любом объекте экрана, данные могут быть доступны в любом формате. Код должен распознавать форматы, с которыми он может работать.  
+##  <a name="extracting"></a> How to decode the dragged item  
+ When the user drags an item onto your diagram, or from one part of your diagram to another, information about the item that is being dragged is available in `DiagramDragEventArgs`. Because the drag operation could have started at any object on the screen, the data can be available in any one of a variety of formats. Your code must recognize the formats with which it is capable of dealing.  
   
- Для поиска форматов, в которых доступны сведения об источнике перетаскивания, запустите код в режиме отладки, задав точку останова на входе в `OnDragOver()` или `CanDragDrop()`. Проверьте значения параметра `DiagramDragEventArgs`. Сведения предоставляются в двух формах.  
+ To discover the formats in which your drag source information is available, run your code in debugging mode, setting a breakpoint at the entry to `OnDragOver()` or `CanDragDrop()`. Inspect the values of the `DiagramDragEventArgs` parameter. The information is provided in two forms:  
   
--   <xref:System.Windows.Forms.IDataObject>  `Data`— Это свойство содержит сериализованные версии исходных объектов, обычно в нескольких форматах.</xref:System.Windows.Forms.IDataObject> Наиболее полезные функции:  
+-   <xref:System.Windows.Forms.IDataObject>  `Data` - This property carries serialized versions of the source objects, usually in more than one format. Its most useful functions are:  
   
-    -   diagramEventArgs.Data.GetDataFormats() — перечисление форматов, в которых можно декодировать перетаскиваемый объект. Например, если пользователь перетаскивает файл с рабочего стола, доступные форматы включают имя файла ("`FileNameW`").  
+    -   diagramEventArgs.Data.GetDataFormats() - Lists the formats in which you can decode the dragged object. For example, if the user drags a file from the desktop, the available formats include the file name ("`FileNameW`").  
   
-    -   `diagramEventArgs.Data.GetData(format)`— Декодирование перетаскиваемого объекта в указанном формате. Приведите объект в соответствующий тип. Например:  
+    -   `diagramEventArgs.Data.GetData(format)` - Decodes the dragged object in the specified format. Cast the object to the appropriate type. For example:  
   
          `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`  
   
-         Также можно передавать такие объекты, как ссылки шины модели от источника в собственный пользовательский формат. Дополнительные сведения см. в разделе [способы отправки ссылок шины модели при перетаскивании](#mbr).  
+         You can also transmit objects such as model bus references from the source in your own custom format. For more information, see [How to Send Model Bus References in a Drag and Drop](#mbr).  
   
--   <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>`Prototype` – Это свойство используется, если требуется пользователям перетаскивать элементы из доменного языка или модели UML.</xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> Прототип группы элементов содержит один или несколько объектов, ссылок и их значений свойств. Он также используется в операции вставки и при добавлении элемента из панели элементов. В прототипе объекты и их типы обозначаются идентификаторами GUID. Например, этот код позволяет пользователю перетаскивать элементы классов из схемы UML или Обозревателя моделей UML:  
+-   <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` - Use this property if you want users to drag items from a DSL or a UML model. An element group prototype contains one or more objects, links, and their property values. It is also used in paste operations and when you are adding an element from the toolbox. In a prototype, objects and their types are identified by Guid. For example, this code allows the user to drag class elements from a UML diagram or UML Model Explorer:  
   
-    ```c#  
+    ```csharp  
     private bool IsAcceptableDropItem(DiagramDragEventArgs e)  
     {  
       return e.Prototype != null && e.Prototype.RootProtoElements.Any(element =>   
@@ -163,26 +164,26 @@ using System.Linq;
   
     ```  
   
-     Чтобы принять фигуры UML, определите GUID классов фигур UML экспериментальным способом. Помните, что на любой схеме обычно бывает больше одного типа элементов. Кроме того, объект, перетаскиваемый из доменного языка или схемы UML, является фигурой, а не элементом модели.  
+     To accept UML shapes, determine the Guids of the UML shape classes by experiment. Remember that there is usually more than one type of element on any diagram. Remember also that an object dragged from a DSL or UML diagram is the shape, not the model element.  
   
- `DiagramDragEventArgs`также имеет свойства, которые указывают текущее положение указателя мыши и ли пользователь клавиши CTRL, ALT или SHIFT.  
+ `DiagramDragEventArgs` also has properties that indicate the current mouse pointer position and whether the user is pressing the CTRL, ALT, or SHIFT keys.  
   
-##  <a name="a-namegetoriginala-how-to-get-the-original-of-a-dragged-element"></a><a name="getOriginal"></a>Как получить оригинала перетаскиваемого элемента  
- Свойства `Data` и `Prototype` аргументов событий содержат только ссылку на перетаскиваемую фигуру. Обычно, чтобы создать объект в целевом DSL, созданном на основе прототипа, необходимо получить доступ к оригиналу, например прочитать содержимое файла или перейти к элементу модели, представленному фигурой.  Для этого можно использовать шину модели Visual Studio.  
+##  <a name="getOriginal"></a> How to get the original of a dragged element  
+ The `Data` and `Prototype` properties of the event arguments contain only a reference to the dragged shape. Usually, if you want to create an object in the target DSL that is derived from the prototype in some way, you need to obtain access to the original, for example, reading the file contents, or navigating to the model element represented by a shape.  You can use Visual Studio Model Bus to help with this.  
   
-### <a name="to-prepare-a-dsl-project-for-model-bus"></a>Подготовка проекта доменного языка для шины модели  
+### <a name="to-prepare-a-dsl-project-for-model-bus"></a>To prepare a DSL project for Model Bus  
   
-1.  Обеспечьте доступ шины модели [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] к исходному DSL.  
+1.  Make the source DSL accessible by [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Model Bus:  
   
-    1.  Скачайте и установите расширение Visual Studio ModelBus, если оно еще не установлено. Дополнительные сведения см. в разделе [визуализации и моделирования SDK](http://go.microsoft.com/fwlink/?LinkID=185579).  
+    1.  Download and install the Visual Studio Model Bus extension, if it is not already installed. For more information, see [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).  
   
-    2.  Откройте файл определения исходного доменного языка в Конструкторе DSL. Щелкните правой кнопкой мыши область конструктора и выберите **включить Modelbus**. В диалоговом окне выберите один или оба указанных параметра.  Нажмите кнопку **ОК**. В решение DSL будет добавлен новый проект ModelBus.  
+    2.  Open the DSL definition file of the source DSL in DSL Designer. Right-click the design surface and then click **Enable Modelbus**. In the dialog box, choose one or both of the options.  Click **OK**. A new project "ModelBus" is added to the DSL solution.  
   
-    3.  Щелкните **преобразовать все шаблоны** и перестройте решение.  
+    3.  Click **Transform All Templates** and rebuild the solution.  
   
-###  <a name="a-namembra-to-send-an-object-from-a-source-dsl"></a><a name="mbr"></a>Чтобы переместить объект из исходного DSL  
+###  <a name="mbr"></a> To send an object from a source DSL  
   
-1.  В подклассе ElementOperations переопределите `Copy()` таким образом, чтобы кодировать ссылку ModelBus в IDataObject. Этот метод будет вызываться, когда пользователь начнет перетаскивание из исходной схемы. Теперь кодированная ссылка ModelBus будет появляться в IDataObject при перетаскивании объекта в целевую схему.  
+1.  In your ElementOperations subclass, override `Copy()` so that it encodes a Model Bus Reference (MBR) into the IDataObject. This method will be called when the user starts to drag from the source diagram. The encoded MBR will then be available in the IDataObject when the user drops in the target diagram.  
   
     ```  
   
@@ -222,17 +223,17 @@ using System.Linq;
   
     ```  
   
-### <a name="to-receive-a-model-bus-reference-from-a-dsl-in-a-target-dsl-or-uml-project"></a>Получение ссылки ModelBus из доменного языка в целевом DSL или проекте UML  
+### <a name="to-receive-a-model-bus-reference-from-a-dsl-in-a-target-dsl-or-uml-project"></a>To receive a Model Bus Reference from a DSL in a target DSL or UML project  
   
-1.  В проекте целевого DSL добавьте ссылки на проект в:  
+1.  In the target DSL project, add project references to:  
   
-    -   исходный проект доменного языка;  
+    -   The source Dsl project.  
   
-    -   исходный проект ModelBus.  
+    -   The source ModelBus project.  
   
-2.  В файле кода обработчика жестов добавьте следующие ссылки на пространство имен:  
+2.  In the gesture handler code file, add the following namespace references:  
   
-    ```c#  
+    ```csharp  
     using Microsoft.VisualStudio.Modeling;  
     using Microsoft.VisualStudio.Modeling.ExtensionEnablement;  
     using Microsoft.VisualStudio.Modeling.Diagrams;  
@@ -243,7 +244,7 @@ using System.Linq;
   
     ```  
   
-3.  В следующем примере показано, как получить доступ к исходному элементу модели.  
+3.  The following sample illustrates how to get access to the source model element:  
   
     ```  
     partial class MyTargetShape // or diagram or connector   
@@ -289,11 +290,11 @@ using System.Linq;
   
     ```  
   
-### <a name="to-accept-an-element-sourced-from-a-uml-model"></a>Принятие элемента, полученного из модели UML  
+### <a name="to-accept-an-element-sourced-from-a-uml-model"></a>To accept an element sourced from a UML model  
   
--   В следующем примере кода принимается объект, перетащенный из схемы UML.  
+-   The following code sample accepts an object dropped from a UML diagram.  
   
-    ```c#  
+    ```csharp  
   
       using Microsoft.VisualStudio.ArchitectureTools.Extensibility;  
       using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;  
@@ -340,12 +341,12 @@ using System.Linq;
   
     ```  
   
-##  <a name="a-namemouseactionsa-using-mouse-actions-dragging-compartment-items"></a><a name="mouseActions"></a>Использование действий мыши: Перетаскивание элементов секций  
- Можно написать обработчик, перехватывающий действия мыши в областях фигуры. Следующий пример позволяет пользователю перегруппировывать элементы в секции, перетаскивая их с помощью мыши.  
+##  <a name="mouseActions"></a> Using Mouse Actions: Dragging Compartment Items  
+ You can write a handler that intercepts mouse actions on a shape's fields. The following example lets the user re-order the items in a compartment by dragging with the mouse.  
   
- Для построения этого примера создайте решение с помощью **схемы классов** шаблона решения. Добавьте файл кода и включите в него следующий код. Настройте пространство имен, чтобы оно было таким же, как ваше.  
+ To build this example, create a solution by using the **Class Diagrams** solution template. Add a code file and add the following code. Adjust the namespace to be the same as your own.  
   
-```c#  
+```csharp  
 using Microsoft.VisualStudio.Modeling;  
 using Microsoft.VisualStudio.Modeling.Design;  
 using Microsoft.VisualStudio.Modeling.Diagrams;  
@@ -591,9 +592,9 @@ namespace Company.CompartmentDrag  // EDIT.
   
 ```  
   
-## <a name="see-also"></a>См. также  
- [Настройка функции копирования](../modeling/customizing-copy-behavior.md)   
- [Развертывание решений на доменных языках](../modeling/deploying-domain-specific-language-solutions.md)
+## <a name="see-also"></a>See Also  
+ [Customizing Copy Behavior](../modeling/customizing-copy-behavior.md)   
+ [Deploying Domain-Specific Language Solutions](../modeling/deploying-domain-specific-language-solutions.md)
  
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
  

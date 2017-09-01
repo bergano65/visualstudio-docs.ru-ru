@@ -1,99 +1,116 @@
 ---
-title: "Design-Time Code Generation by using T4 Text Templates | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "text templates, guidelines for code generation"
-  - "text templates, data source model"
-  - "TextTemplatingFileGenerator custom tool"
-  - "Transform All Templates"
-  - "text templates, getting started"
-  - "Text Template project item"
-  - "text templates, generating code for your application"
+title: Design-Time Code Generation by using T4 Text Templates | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- text templates, guidelines for code generation
+- text templates, data source model
+- TextTemplatingFileGenerator custom tool
+- Transform All Templates
+- text templates, getting started
+- Text Template project item
+- text templates, generating code for your application
 ms.assetid: 2774b83d-1adb-4c66-a607-746e019b80c0
 caps.latest.revision: 38
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 38
----
-# Design-Time Code Generation by using T4 Text Templates
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: alancameronwills
+ms.author: awills
+manager: douge
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 8ff212816453d257829c7c1a802cf8669f0482c0
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-Текстовые шаблоны времени разработки T4 позволяют создавать программный код и другие файлы в проекте [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Как правило, шаблоны пишутся с той целью, чтобы использовать разный создаваемый ими код в соответствии с данными, полученными из *модели*.  Модель — это файл или база данных, которая содержит основные сведения о требованиях приложения.  
+---
+# <a name="design-time-code-generation-by-using-t4-text-templates"></a>Design-Time Code Generation by using T4 Text Templates
+Design-time T4 text templates let you generate program code and other files in your [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] project. Typically, you write the templates so that they vary the code that they generate according to data from a *model*. A model is a file or database that contains key information about your application's requirements.  
   
- Например, можно создать модель, которая определяет рабочий процесс как таблицу или схему.  На основе модели можно создать программу, выполняющую рабочий процесс.  При изменении потребностей пользователей вы сможете обсудить с ними характеристики нового рабочего процесса.  Повторное создание кода на основе рабочего процесса надежнее, чем обновление кода вручную.  
+ For example, you could have a model that defines a workflow, either as a table or a diagram. From the model, you can generate the software that executes the workflow. When your users' requirements change, it is easy to discuss the new workflow with the users. Regenerating the code from the workflow is more reliable than updating the code by hand.  
   
 > [!NOTE]
->  *Модель* — это источник данных, который описывает определенный аспект приложения.  Она может быть представлена в любой форме, в виде файла или базы данных.  Она не должна соответствовать определенной форме, например как модель UML или модель для доменного языка \(DSL\).  Типичные модели создаются в форме таблиц или XML\-файлов.  
+>  A *model* is a data source that describes a particular aspect of an application. It can be any form, in any kind of file or database. It does not have to be in any particular form, such as a UML model or Domain-Specific Language model. Typical models are in the form of tables or XML files.  
   
- Вероятно, вы уже знакомы с созданием кода.  При определении ресурсов в файле **.resx** в решении [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] автоматически создается набор классов и методов.  Файл ресурсов обеспечивает более простое и надежное редактирование ресурсов по сравнению с внесением изменений в классы и методы.  Используя текстовые шаблоны, можно создавать код таким же образом на основе вашего собственного источника.  
+ You are probably already familiar with code generation. When you define resources in a **.resx** file in your [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution, a set of classes and methods is generated automatically. The resources file makes it much easier and more reliable to edit the resources than it would be if you had to edit the classes and methods. With text templates, you can generate code in the same manner from a source of your own design.  
   
- Текстовый шаблон содержит сочетание текста, который требуется создать, и программного кода, создающего переменные части текста.  Программный код позволяет повторять или, при определенных условиях, пропускать части созданного текста.  Созданный текст сам по себе может быть программным кодом, который формирует часть вашего приложения.  
+ A text template contains a mixture of the text that you want to generate, and program code that generates variable parts of the text. The program code and allows you to repeat or conditionally omit parts of the generated text. The generated text can itself be program code that will form part of your application.  
   
-## Создание текстового шаблона времени разработки T4  
+## <a name="creating-a-design-time-t4-text-template"></a>Creating a Design-Time T4 Text Template  
   
-#### Создание шаблона времени разработки T4 в Visual Studio  
+#### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>To create a design-time T4 template in Visual Studio  
   
-1.  Создайте проект [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] или откройте уже имеющийся.  
+1.  Create a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] project, or open an existing one.  
   
-     Например, в меню **Файл** выберите **Создать**, **Проект**.  
+     For example, on the **File** menu, choose **New**, **Project**.  
   
-2.  Добавьте файл текстового шаблона в проект и присвойте ему имя с расширением .TT.  
+2.  Add a text template file to your project and give it a name that has the extension **.tt**.  
   
-     Для этого в **Обозревателе решений** в контекстном меню вашего проекта выберите **Добавить**, **Новый элемент**.  В диалоговом окне **Добавление нового элемента** выберите в средней области элемент **Текстовый шаблон**.  
+     To do this, in **Solution Explorer**, on the shortcut menu of your project, choose **Add**, **New Item**. In the **Add New Item** dialog box select **Text Template** from the middle pane.  
   
-     Обратите внимание, что свойство **Пользовательский инструмент** файла имеет значение **TextTemplatingFileGenerator**.  
+     Notice that the **Custom Tool** property of the file is **TextTemplatingFileGenerator**.  
   
-3.  Откройте файл.  Он будет содержать следующие директивы:  
+3.  Open the file. It will already contain the following directives:  
   
     ```  
     <#@ template hostspecific="false" language="C#" #>  
     <#@ output extension=".txt" #>  
     ```  
   
-     Если вы добавили шаблон в проект [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], для атрибута языка будет задано значение `VB`.  
+     If you added the template to a [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] project, the language attribute will be "`VB`".  
   
-4.  Добавьте любой текст в конец файла.  Например:  
+4.  Add some text at the end of the file. For example:  
   
     ```  
     Hello, world!  
     ```  
   
-5.  Сохраните файл.  
+5.  Save the file.  
   
-     На экран может быть выведено окно **Предупреждение о безопасности** с запросом подтверждения запуска шаблона.  Нажмите кнопку **ОК**.  
+     You might see a **Security Warning** message box that asks you to confirm that you want to run the template. Click **OK**.  
   
-6.  В **Обозревателе решений** разверните узел файла шаблона. В нем будет содержаться файл с расширением .TXT.  Файл содержит текст, созданный на основе шаблона.  
+6.  In **Solution Explorer**, expand the template file node and you will find a file that has the extension **.txt**. The file contains the text generated from the template.  
   
     > [!NOTE]
-    >  Если вы работаете с проектом Visual Basic, чтобы увидеть выходной файл, нужно нажать кнопку **Показать все файлы**.  
+    >  If your project is a Visual Basic project, you must click **Show All Files** in order to see the output file.  
   
-### Повторное создание кода  
- Шаблон выполняется, создавая дочерний файл, в следующих случаях:  
+### <a name="regenerating-the-code"></a>Regenerating the code  
+ A template will be executed, generating the subsidiary file, in any of the following cases:  
   
--   при редактировании шаблона и перемещении фокуса в другое окно [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)];  
+-   Edit the template and then change focus to a different [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] window.  
   
--   при сохранении шаблона;  
+-   Save the template.  
   
--   при выборе пункта **Преобразовать все шаблоны** в меню **Сборка** \(это приведет к преобразованию всех шаблонов в решении [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\);  
+-   Click **Transform All Templates** in the **Build** menu. This will transform all the templates in the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution.  
   
--   при выборе в **Обозревателе решений** пункта **Запустить пользовательский инструмент** в контекстном меню любого файла.  Используйте этот метод для преобразования выбранного набора шаблонов.  
+-   In **Solution Explorer**, on the shortcut menu of any file, choose **Run Custom Tool**. Use this method to transform a selected subset of templates.  
   
- Вы также можете настроить проект [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] так, чтобы шаблоны выполнялись при изменении считываемых ими файлов данных.  Дополнительные сведения см. в разделе [Автоматическое повторное создание кода](#Regenerating).  
+ You can also set up a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] project so that the templates are executed when the data files that they read have changed. For more information, see [Regenerating the code automatically](#Regenerating).  
   
-## Создание переменного текста  
- Текстовые шаблоны позволяют программному коду изменять содержимое созданного файла.  
+## <a name="generating-variable-text"></a>Generating Variable Text  
+ Text templates let you use program code to vary the content of the generated file.  
   
-#### Создание текста с помощью программного кода  
+#### <a name="to-generate-text-by-using-program-code"></a>To generate text by using program code  
   
-1.  Измените содержимое файла `.tt`:  
+1.  Change the content of the `.tt` file:  
   
-    ```c#  
+    ```csharp  
     <#@ template hostspecific="false" language="C#" #>  
     <#@ output extension=".txt" #>  
     <#int top = 10;  
@@ -104,7 +121,7 @@ caps.handback.revision: 38
     <# } #>  
     ```  
   
-    ```vb#  
+    ```vb  
     <#@ template hostspecific="false" language="VB" #>  
     <#@ output extension=".txt" #>  
     <#Dim top As Integer = 10  
@@ -118,55 +135,55 @@ caps.handback.revision: 38
   
     ```  
   
-2.  Сохраните TT\-файл и снова проверьте созданный TXT\-файл.  В нем перечисляются квадратные корни чисел от 0 до 10.  
+2.  Save the .tt file, and inspect the generated .txt file again. It lists the squares of the numbers from 0 to 10.  
   
- Обратите внимание, что операторы заключены в символы `<#...#>`, а отдельные выражения — в символы `<#=...#>`.  Дополнительные сведения см. в разделе [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md).  
+ Notice that statements are enclosed within `<#...#>`, and single expressions within `<#=...#>`. For more information, see [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md).  
   
- Если вы записываете созданный код в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], директива `template` должна содержать атрибут `language="VB"`.  Значение по умолчанию — `"C#"`.  
+ If you write the generating code in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], the `template` directive should contain `language="VB"`. `"C#"` is the default.  
   
-## Отладка текстового шаблона времени разработки T4  
- Отладка текстового шаблона  
+## <a name="debugging-a-design-time-t4-text-template"></a>Debugging a Design-Time T4 Text Template  
+ To debug a text template:  
   
--   Вставьте строку `debug="true"` в директиву `template`.  Пример:  
+-   Insert `debug="true"` into the `template` directive. For example:  
   
      `<#@ template debug="true" hostspecific="false" language="C#" #>`  
   
--   Задайте точки останова в шаблоне таким же образом, как для обычного кода.  
+-   Set breakpoints in the template, in the same way that you would for ordinary code.  
   
--   В Обозревателе решений выберите в контекстном меню файла текстового шаблона пункт **Отладить шаблон T4**.  
+-   Choose **Debug T4 Template** from the shortcut menu of the text template file in Solution Explorer.  
   
- Шаблон запустится и будет останавливаться в точках останова.  Вы можете проверить переменные и выполнить код пошагово в обычном режиме.  
+ The template will run and stop at the breakpoints. You can examine variables and step through the code in the usual way.  
   
 > [!TIP]
->  `debug="true"` более точно сопоставляет созданный код с текстовым шаблоном, вставляя в созданный код дополнительные директивы нумерации строк.  Если опустить эту строку, точки останова могут останавливать выполнение в неверном состоянии.  
+>  `debug="true"` makes the generated code map more accurately to the text template, by inserting more line numbering directives into the generated code. If you leave it out, breakpoints might stop the run in the wrong state.  
 >   
->  Однако это выражение можно оставить в директиве шаблона, даже если вы не выполняете отладку.  Это приведет к незначительному снижению производительности.  
+>  But you can leave the clause in the template directive even when you are not debugging. This causes only a very small drop in performance.  
   
-## Создание кода или ресурсов для решения  
- Можно создать различающиеся файлы программ в зависимости от модели.  Модель представляет собой источник входных данных, такой как база данных, файл конфигурации, модель UML, модель DSL или другой источник.  Как правило, на основе одной модели создается несколько файлов программ.  Для этого вы создаете файл шаблона для каждого создаваемого файла программы; для всех шаблонов задается чтение одной модели.  
+## <a name="generating-code-or-resources-for-your-solution"></a>Generating Code or Resources for Your Solution  
+ You can generate program files that vary, depending on a model. A model is an input such as a database, configuration file, UML model, DSL model, or other source. You usually generate several program files are from the same model. To achieve this, you create a template file for each generated program file, and have all the templates read the same model.  
   
-#### Создание программного кода или ресурсов  
+#### <a name="to-generate-program-code-or-resources"></a>To generate program code or resources  
   
-1.  Измените директиву output, чтобы создать файл нужного типа, например .CS, .VB, .RESX или .XML.  
+1.  Change the output directive to generate a file of the appropriate type, such as .cs, .vb, .resx, or .xml.  
   
-2.  Вставьте код, который создаст нужный вам код решения.  Например, если требуется создать три объявления поля Integer в классе, используйте код:  
+2.  Insert code that will generate the solution code that you require. For example, if you want to generate three integer field declarations in a class:  
   
-    ```c#  
+    ```csharp  
   
-                      <#@ template debug="false" hostspecific="false" language="C#" #>  
+              <#@ template debug="false" hostspecific="false" language="C#" #>  
     <#@ output extension=".cs" #>  
     <# var properties = new string [] {"P1", "P2", "P3"}; #>  
     // This is generated code:  
     class MyGeneratedClass {  
     <# // This code runs in the text template:  
-      foreach (string propertyName in properties)   { #>  
+      foreach (string propertyName in properties)  { #>  
       // Generated code:  
       private int <#= propertyName #> = 0;  
     <# } #>  
     }  
     ```  
   
-    ```vb#  
+    ```vb  
     <#@ template debug="false" hostspecific="false" language="VB" #>  
     <#@ output extension=".cs" #>  
     <# Dim properties = {"P1", "P2", "P3"} #>  
@@ -182,7 +199,7 @@ caps.handback.revision: 38
   
     ```  
   
-3.  Сохраните файл и проверьте созданный файл, который теперь содержит следующий код:  
+3.  Save the file and inspect the generated file, which now contains the following code:  
   
     ```  
     class MyGeneratedClass {  
@@ -192,26 +209,26 @@ caps.handback.revision: 38
     }  
     ```  
   
-### Создающий код и созданный текст  
- При создании программного кода самое важное — не путать создающий код, который выполняется в шаблоне, и создаваемый код, который становится частью вашего решения.  Языки этих двух частей не обязательно должны совпадать.  
+### <a name="generating-code-and-generated-text"></a>Generating Code and Generated Text  
+ When you generate program code, it is most important to avoid confusing the generating code that executes in your template, and the resulting generated code that becomes part of your solution. The two languages do not have to be the same.  
   
- Предыдущий пример имеет две версии.  В одной версии создающий код написан на языке C\#.  В другой версии создающий код написан на языке Visual Basic.  Однако создаваемый ими текст одинаков и является классом C\#.  
+ The previous example has two versions. In one version, the generating code is in C#. In the other version, the generating code is Visual Basic. But the text generated by both of them is the same, and it is a C# class.  
   
- Точно так же можно использовать шаблон [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] для создания кода на любом языке.  Созданный текст не обязательно должен быть на определенном языке и вообще может не быть программным кодом.  
+ In the same way, you could use a [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] template to generate code in any language. The generated text does not have to be in any particular language, and it does not have to be program code.  
   
-### Структура текстовых шаблонов  
- Как правило, рекомендуется разделять код шаблонов на две части.  
+### <a name="structuring-text-templates"></a>Structuring text templates  
+ As a matter of good practice, we tend to separate the template code into two parts:  
   
--   Конфигурация или часть, отвечающая за сбор данных, которая задает значения переменных, но не содержит текстовые блоки.  В предыдущем примере эта часть представлена кодом, инициализирующим `properties`.  
+-   A configuration or data-gathering part, which sets values in variables, but does not contain text blocks. In the previous example, this part is the initialization of `properties`.  
   
-     Ее иногда называют частью "модели", так как она создает хранимую модель и обычно считывает файл модели.  
+     This is sometimes called the "model" section, because it constructs an in-store model, and typically reads a model file.  
   
--   Часть, создающая текст, \(`foreach(...){...}` в примере\), которая использует значения переменных.  
+-   The text-generation part (`foreach(...){...}` in the example), which uses the values of the variables.  
   
- Это разделение необязательно, однако оно упрощает чтение шаблона, делая менее сложной часть, которая включает текст.  
+ This is not a necessary separation, but it is a style which makes it easier to read the template by reducing the complexity of the part that includes text.  
   
-## Чтение файлов или других источников  
- Чтобы получить доступ к файлу модели или базе данных, код шаблона может использовать сборки, такие как System.XML.  Чтобы получить доступ к этим сборкам, необходимо вставить директивы, такие как следующие:  
+## <a name="reading-files-or-other-sources"></a>Reading files or other sources  
+ To access a model file or database, your template code can use assemblies such as System.XML. To gain access to these assemblies, you must insert directives such as these:  
   
 ```  
 <#@ assembly name="System.Xml.dll" #>  
@@ -219,36 +236,36 @@ caps.handback.revision: 38
 <#@ import namespace="System.IO" #>  
 ```  
   
- Директива `assembly` предоставляет коду шаблона доступ к указанной сборке тем же способом, который используется в разделе "Ссылки" проекта [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Ссылку не требуется включать в System.dll, так как она создается автоматически.  Директива `import` позволяет использовать типы, не используя полные имена, тем же способом, что и директива `using` в обычном файле программы.  
+ The `assembly` directive makes the specified assembly available to your template code, in the same manner as the References section of a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] project. You do not need to include a reference to System.dll, which is referenced automatically. The `import` directive lets you use types without using their fully qualified names, in the same manner as the `using` directive in an ordinary program file.  
   
- Например, после импорта **System.IO** можно написать следующий код:  
+ For example, after importing **System.IO**, you could write:  
   
-```c#  
+```csharp  
   
-          <# var properties = File.ReadLines("C:\\propertyList.txt");#>  
+      <# var properties = File.ReadLines("C:\\propertyList.txt");#>  
 ...  
 <# foreach (string propertyName in properties) { #>  
 ...  
 ```  
   
-```vb#  
+```vb  
 <# For Each propertyName As String In   
              File.ReadLines("C:\\propertyList.txt")  
 #>  
   
 ```  
   
-### Открытие файла с относительным путем  
- Чтобы загрузить файл из расположения, относительного для текстового шаблона, можно использовать `this.Host.ResolvePath()`.  Для использования this.Host необходимо задать выражение `hostspecific="true"` в `template`:  
+### <a name="opening-a-file-with-a-relative-pathname"></a>Opening a file with a relative pathname  
+ To load a file from a location relative to the text template, you can use `this.Host.ResolvePath()`. To use this.Host, you must set `hostspecific="true"` in the `template`:  
   
 ```  
 <#@ template debug="false" hostspecific="true" language="C#" #>  
   
 ```  
   
- Затем можно написать код, например:  
+ Then you can write, for example:  
   
-```c#  
+```csharp  
 <# string fileName = this.Host.ResolvePath("filename.txt");  
   string [] properties = File.ReadLines(filename);  
 #>  
@@ -258,7 +275,7 @@ caps.handback.revision: 38
   
 ```  
   
-```vb#  
+```vb  
 <# Dim fileName = Me.Host.ResolvePath("propertyList.txt")  
    Dim properties = File.ReadLines(filename)  
 #>  
@@ -269,12 +286,12 @@ caps.handback.revision: 38
   
 ```  
   
- Кроме того, можно использовать `this.Host.TemplateFile`, определяющий имя текущего файла шаблона.  
+ You can also use `this.Host.TemplateFile`, which identifies the name of the current template file.  
   
- Тип `this.Host` \(в VB, `Me.Host`\) — `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`.  
+ The type of `this.Host` (in VB, `Me.Host`) is `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`.  
   
-### Получение данных из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
- Для использования служб, предоставляемых в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], задайте атрибут `hostSpecific` и загрузите сборку `EnvDTE`.  Затем можно использовать метод IServiceProvider.GetCOMService\(\) для получения доступа к DTE и другим службам.  Например:  
+### <a name="getting-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Getting data from [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
+ To use services provided in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], set the `hostSpecific` attribute and load the `EnvDTE` assembly. You can then use IServiceProvider.GetCOMService() to access DTE and other services. For example:  
   
 ```scr  
 <#@ template hostspecific="true" language="C#" #>  
@@ -290,14 +307,18 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 ```  
   
 > [!TIP]
->  Текстовый шаблон выполняется в собственном домене приложений; доступ к службам предоставляется путем маршалинга.  В этих обстоятельствах метод GetCOMService\(\) надежнее, чем GetService\(\).  
+>  A text template runs in its own app domain, and services are accessed by marshaling. In this circumstance, GetCOMService() is more reliable than GetService().  
   
-##  <a name="Regenerating"></a> Автоматическое повторное создание кода  
- Как правило, несколько файлов в решении [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] создаются с помощью одной модели ввода.  Каждый файл создается на основе своего собственного шаблона, но все шаблоны относятся к одной модели.  
+##  <a name="Regenerating"></a> Regenerating the code automatically  
+ Typically, several files in a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution are generated with one input model. Each file is generated from its own template, but the templates all refer to the same model.  
   
- Если изменяется исходная модель, необходимо перезапустить все шаблоны в решении.  Чтобы сделать это вручную, в меню **Сборка** выберите пункт **Преобразовать все шаблоны**.  
+ If the source model changes, you should re-run all the templates in the solution. To do this manually, choose **Transform All Templates** on the **Build** menu.  
   
- Если установлен пакет SDK визуализации и моделирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], все шаблоны можно преобразовывать автоматически при выполнении сборки.  Для этого внесите изменения в файл проекта \(CSPROJ или VBPROJ\) в текстовом редакторе и добавьте следующие строки ближе к концу файла после любых других операторов `<import>`:  
+ If you have installed [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK, you can have all the templates transformed automatically whenever you perform a build. To do this, edit your project file (.csproj or .vbproj) in a text editor and add the following lines near the end of the file, after any other `<import>` statements:  
+
+
+[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
+
   
 ```  
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v11.0\TextTemplating\Microsoft.TextTemplating.targets" />  
@@ -307,65 +328,66 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 </PropertyGroup>  
 ```  
   
- Дополнительные сведения см. в разделе [Code Generation in a Build Process](../modeling/code-generation-in-a-build-process.md).  
+ For more information, see [Code Generation in a Build Process](../modeling/code-generation-in-a-build-process.md).  
   
-## Создание отчетов об ошибке  
- Чтобы поместить сообщения об ошибках и предупреждения в окно ошибок [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], можно использовать следующие методы:  
+## <a name="error-reporting"></a>Error reporting  
+ To place error and warning messages in the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] error window, you can use these methods:  
   
 ```  
 Error("An error message");  
 Warning("A warning message");  
 ```  
   
-##  <a name="Converting"></a> Преобразование существующего файла в шаблон  
- Полезной функцией шаблонов является то, что они очень похожи на создаваемые им файлы и включают некоторую часть программного кода.  Это предполагает удобный способ создания шаблона.  Сначала создайте обычный файл в качестве прототипа, например файл [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], а затем постепенно вводите создающий код, изменяющий созданный файл.  
+##  <a name="Converting"></a> Converting an existing file to a template  
+ A useful feature of templates is that they look very much like the files that they generate, together with some inserted program code. This suggests a useful method of creating a template. First create an ordinary file as a prototype, such as a [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] file, and then gradually introduce generation code that varies the resulting file.  
   
-#### Преобразование существующего файла в шаблон времени разработки  
+#### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>To convert an existing file to a design-time template  
   
-1.  Добавьте в проект [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] файл того типа, который требуется создать, например `.cs` `.vb` или `.resx`.  
+1.  To your [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] project, add a file of the type that you want to generate, such as a `.cs`, `.vb`, or `.resx` file.  
   
-2.  Проверьте созданный файл, чтобы убедиться, что он работает.  
+2.  Test the new file to make sure that it works.  
   
-3.  В Обозревателе решений измените расширение файла на **.tt**.  
+3.  In Solution Explorer, change the file name extension to **.tt**.  
   
-4.  Проверьте следующие свойства файла **.tt**.  
+4.  Verify the following properties of the **.tt** file:  
   
     |||  
     |-|-|  
-    |**Пользовательский инструмент \=**|**TextTemplatingFileGenerator**|  
-    |**Действие построения \=**|**Нет**|  
+    |**Custom Tool =**|**TextTemplatingFileGenerator**|  
+    |**Build Action =**|**None**|  
   
-5.  Вставьте следующие строки в начало файла:  
+5.  Insert the following lines at the beginning of the file:  
   
     ```  
     <#@ template debug="false" hostspecific="false" language="C#" #>  
     <#@ output extension=".cs" #>  
     ```  
   
-     Чтобы написать создающий код шаблона в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], задайте для атрибута `language` значение `"VB"` вместо `"C#"`.  
+     If you want to write the generating code of your template in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], set the `language` attribute to `"VB"` instead of `"C#"`.  
   
-     Задайте для атрибута `extension` значение расширения файла того типа, который требуется создать, например `.cs` `.resx` или `.xml`.  
+     Set the `extension` attribute to the file name extension for the type of file that you want to generate, for example `.cs`, `.resx`, or `.xml`.  
   
-6.  Сохраните файл.  
+6.  Save the file.  
   
-     Создается дочерний файл с заданным расширением.  Его свойства будут правильными для данного типа файла.  Например, значением свойства **Действие построения** для CS\-файла будет значение **Компилировать**.  
+     A subsidiary file is created, with the specified extension. Its properties are correct for the type of file. For example, the **Build Action** property of a .cs file would be **Compile**.  
   
-     Убедитесь, что созданный файл содержит то же содержимое, что и исходный.  
+     Verify that the generated file contains the same content as the original file.  
   
-7.  Определите часть файла, которую требуется изменять.  Например часть, которая отображается только при соблюдении определенных условий, или повторяемая часть, или часть, в которой варьируются определенные значения.  Вставьте создающий код.  Сохраните файл и убедитесь, что дочерний файл создается правильно.  Повторите этот шаг.  
+7.  Identify a part of the file that you want to vary. For example, a part that appears only under certain conditions, or a part that is repeated, or where the specific values vary. Insert generating code. Save the file and verify that the subsidiary file is correctly generated. Repeat this step.  
   
-## Рекомендации по созданию кода  
- См. раздел [Guidelines for Writing T4 Text Templates](../modeling/guidelines-for-writing-t4-text-templates.md).  
+## <a name="guidelines-for-code-generation"></a>Guidelines for Code Generation  
+ Please see [Guidelines for Writing T4 Text Templates](../modeling/guidelines-for-writing-t4-text-templates.md).  
   
-## Следующие шаги  
+## <a name="next-steps"></a>Next steps  
   
-|Следующий шаг|Раздел|  
-|-------------------|------------|  
-|Написание и отладка расширенного текстового шаблона с помощью кода, который использует вспомогательные функции, включенные файлы и внешние данные.|[Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md)|  
-|Создание документов на основе шаблонов во время выполнения.|[Run\-Time Text Generation with T4 Text Templates](../modeling/run-time-text-generation-with-t4-text-templates.md)|  
-|Запуск создания текста за пределами [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|[Generating Files with the TextTransform Utility](../modeling/generating-files-with-the-texttransform-utility.md)|  
-|Преобразование данных в форме доменного языка.|[Создание кода из доменного языка](../modeling/generating-code-from-a-domain-specific-language.md)|  
-|Написание процессоров директив для преобразования собственных источников данных.|[Customizing T4 Text Transformation](../modeling/customizing-t4-text-transformation.md)|  
+|Next step|Topic|  
+|---------------|-----------|  
+|Write and debug a more advanced text template, with code that uses auxiliary functions, included files, and external data.|[Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md)|  
+|Generate documents from templates at run time.|[Run-Time Text Generation with T4 Text Templates](../modeling/run-time-text-generation-with-t4-text-templates.md)|  
+|Run text generation outside [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|[Generating Files with the TextTransform Utility](../modeling/generating-files-with-the-texttransform-utility.md)|  
+|Transform your data in the form of a domain-specific language.|[Generating Code from a Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md)|  
+|Write directive processors to transform your own data sources.|[Customizing T4 Text Transformation](../modeling/customizing-t4-text-transformation.md)|  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  [Guidelines for Writing T4 Text Templates](../modeling/guidelines-for-writing-t4-text-templates.md)
+

@@ -1,63 +1,79 @@
 ---
-title: "CA1712: не добавляйте имя типа перед перечисляемыми значениями | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1712"
-  - "DoNotPrefixEnumValuesWithTypeName"
-helpviewer_keywords: 
-  - "CA1712"
-  - "DoNotPrefixEnumValuesWithTypeName"
+title: 'CA1712: Do not prefix enum values with type name | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1712
+- DoNotPrefixEnumValuesWithTypeName
+helpviewer_keywords:
+- CA1712
+- DoNotPrefixEnumValuesWithTypeName
 ms.assetid: df0e3a12-67bf-48f1-a10b-2ef60484a5c7
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
----
-# CA1712: не добавляйте имя типа перед перечисляемыми значениями
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 771fe3536bbf9a47962f6219ce249a168b6b3215
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712: Do not prefix enum values with type name
 |||  
 |-|-|  
 |TypeName|DoNotPrefixEnumValuesWithTypeName|  
 |CheckId|CA1712|  
-|Категория|Microsoft.Naming|  
-|Критическое изменение|Критическое изменение|  
+|Category|Microsoft.Naming|  
+|Breaking Change|Breaking|  
   
-## Причина  
- Перечисление содержит член, имя которого начинается с имени типа перечисления.  
+## <a name="cause"></a>Cause  
+ An enumeration contains a member whose name starts with the type name of the enumeration.  
   
-## Описание правила  
- Имена членов перечисления не должны содержать префиксов в виде имени типа, поскольку предполагается, что сведения о типе предоставляются средствами разработки.  
+## <a name="rule-description"></a>Rule Description  
+ Names of enumeration members are not prefixed with the type name because type information is expected to be provided by development tools.  
   
- Соглашения об именах обеспечивают единообразие библиотек, предназначенных для выполнения в среде CLR.  Это позволяет сократить время обучения, необходимое для освоения новой библиотеки программного обеспечения, и укрепить уверенность клиента в том, что библиотека была разработана опытным разработчиком управляемого кода.  
+ Naming conventions provide a common look for libraries that target the common language runtime. This reduces the time that is required for to learn a new software library, and increases customer confidence that the library was developed by someone who has expertise in developing managed code.  
   
-## Устранение нарушений  
- Чтобы устранить нарушение данного правила, удалите префикс в виде имени типа из имени члена перечисления.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, remove the type name prefix from the enumeration member.  
   
-## Отключение предупреждений  
- Для этого правила отключать вывод предупреждений не следует.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## Пример  
- В следующем примере показано перечисление с неправильным именем и его исправленная версия.  
+## <a name="example"></a>Example  
+ The following example shows an incorrectly named enumeration followed by the corrected version.  
   
- [!code-cs[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/CSharp/ca1712-do-not-prefix-enum-values-with-type-name_1.cs)]
- [!code-cpp[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/CPP/ca1712-do-not-prefix-enum-values-with-type-name_1.cpp)]
- [!code-vb[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/VisualBasic/ca1712-do-not-prefix-enum-values-with-type-name_1.vb)]  
+ [!code-csharp[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/CSharp/ca1712-do-not-prefix-enum-values-with-type-name_1.cs)] [!code-cpp[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/CPP/ca1712-do-not-prefix-enum-values-with-type-name_1.cpp)] [!code-vb[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/VisualBasic/ca1712-do-not-prefix-enum-values-with-type-name_1.vb)]  
   
-## Связанные правила  
- [CA1711: идентификаторы не должны иметь неверных суффиксов](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA1711: Identifiers should not have incorrect suffix](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)  
   
- [CA1027: следует помечать перечисления атрибутом FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)  
+ [CA1027: Mark enums with FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)  
   
- [CA2217: не следует помечать перечисления атрибутом FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
+ [CA2217: Do not mark enums with FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  <xref:System.Enum?displayProperty=fullName>

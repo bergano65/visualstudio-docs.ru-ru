@@ -1,55 +1,71 @@
 ---
-title: "CA2104: не объявляйте изменяемые ссылочные типы, доступные только для чтения | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DoNotDeclareReadOnlyMutableReferenceTypes"
-  - "CA2104"
-helpviewer_keywords: 
-  - "CA2104"
-  - "DoNotDeclareReadOnlyMutableReferenceTypes"
+title: 'CA2104: Do not declare read only mutable reference types | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DoNotDeclareReadOnlyMutableReferenceTypes
+- CA2104
+helpviewer_keywords:
+- CA2104
+- DoNotDeclareReadOnlyMutableReferenceTypes
 ms.assetid: 81b83ee5-4db5-4be0-9f8d-90b53894ec3b
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 18
----
-# CA2104: не объявляйте изменяемые ссылочные типы, доступные только для чтения
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: e1bc151825ea8d640e37de9ba068da716e0726bd
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: Do not declare read only mutable reference types
 |||  
 |-|-|  
 |TypeName|DoNotDeclareReadOnlyMutableReferenceTypes|  
 |CheckId|CA2104|  
-|Категория|Microsoft.Security|  
-|Критическое изменение|Не критическое|  
+|Category|Microsoft.Security|  
+|Breaking Change|Non-breaking|  
   
-## Причина  
- Видимый извне тип содержит видимое извне и доступное только для чтение поле, являющееся изменяемым ссылочным типом.  
+## <a name="cause"></a>Cause  
+ An externally visible type contains an externally visible read-only field that is a mutable reference type.  
   
-## Описание правила  
- Изменяемый тип — это тип, экземпляр которого может быть изменен.  Примером изменяемого ссылочного типа может служить класс <xref:System.Text.StringBuilder?displayProperty=fullName>.  Он содержит члены, которые могут изменять значение экземпляра класса.  Примером неизменяемого ссылочного типа может служить класс <xref:System.String?displayProperty=fullName>.  После создания экземпляра его значение изменить нельзя.  
+## <a name="rule-description"></a>Rule Description  
+ A mutable type is a type whose instance data can be modified. The <xref:System.Text.StringBuilder?displayProperty=fullName> class is an example of a mutable reference type. It contains members that can change the value of an instance of the class. An example of an immutable reference type is the <xref:System.String?displayProperty=fullName> class. After it has been instantiated, its value can never change.  
   
- Модификатор доступа только для чтения \([readonly](/dotnet/csharp/language-reference/keywords/readonly) в C\#, [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly) в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], и [const](/visual-cpp/cpp/const-cpp) в C\+\+\) по ссылке на поле типа \(указателя в C\+\+\) препятствует замене поля на другой экземпляр типа ссылки.  Тем не менее модификатор не запрещает, чтобы данные экземпляра этого поля изменялись посредством ссылочного типа.  
+ The read-only modifier ([readonly](/dotnet/csharp/language-reference/keywords/readonly) in C#, [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly) in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], and [const](/cpp/cpp/const-cpp) in C++) on a reference type field (pointer in C++) prevents the field from being replaced by a different instance of the reference type. However, the modifier does not prevent the instance data of the field from being modified through the reference type.  
   
- Это правило не касается доступных только для чтения полей массива; они вызывают нарушение правила [CA2105: поля массивов не должны быть доступны только для чтения](../code-quality/ca2105-array-fields-should-not-be-read-only.md).  
+ Read-only array fields are exempt from this rule but instead cause a violation of the [CA2105: Array fields should not be read only](../code-quality/ca2105-array-fields-should-not-be-read-only.md) rule.  
   
-## Устранение нарушений  
- Чтобы устранить нарушение этого правила, удалите модификатор доступа только для чтения, или, если возможно критическое изменение, замените поле, используя неизменяемый тип.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, remove the read-only modifier or, if a breaking change is acceptable, replace the field with an immutable type.  
   
-## Отключение предупреждений  
- Можно отключать предупреждения этого правила, если тип поля является неизменяемым.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule if the field type is immutable.  
   
-## Пример  
- В следующем примере показано объявление поля, нарушающее это правило.  
+## <a name="example"></a>Example  
+ The following example shows a field declaration that causes a violation of this rule.  
   
- [!code-cpp[FxCop.Security.MutableReferenceTypes#1](../code-quality/codesnippet/CPP/ca2104-do-not-declare-read-only-mutable-reference-types_1.cpp)]
- [!code-cs[FxCop.Security.MutableReferenceTypes#1](../code-quality/codesnippet/CSharp/ca2104-do-not-declare-read-only-mutable-reference-types_1.cs)]
- [!code-vb[FxCop.Security.MutableReferenceTypes#1](../code-quality/codesnippet/VisualBasic/ca2104-do-not-declare-read-only-mutable-reference-types_1.vb)]
+ [!code-cpp[FxCop.Security.MutableReferenceTypes#1](../code-quality/codesnippet/CPP/ca2104-do-not-declare-read-only-mutable-reference-types_1.cpp)] [!code-csharp[FxCop.Security.MutableReferenceTypes#1](../code-quality/codesnippet/CSharp/ca2104-do-not-declare-read-only-mutable-reference-types_1.cs)] [!code-vb[FxCop.Security.MutableReferenceTypes#1](../code-quality/codesnippet/VisualBasic/ca2104-do-not-declare-read-only-mutable-reference-types_1.vb)]

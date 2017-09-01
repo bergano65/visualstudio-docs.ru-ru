@@ -29,14 +29,14 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 44110390bcddc67d86dcfcc81c2d5961e346ccf7
+ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
+ms.openlocfilehash: a8d9473804b42169b5b33795b023832b753837d0
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/30/2017
 
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Анализ использования сети для приложений UWP
-Средство диагностики **Сеть** в Visual Studio собирает данные о сетевых операциях, выполняемых с помощью [Windows.Web.Http API](https://msdn.microsoft.com/library/windows/apps/windows.web.http.aspx). Анализ данных может помочь при устранении проблем, например, при доступе и проверке подлинности, при неправильном использовании кэша, при низкой производительности процесса отображения и загрузки.  
+Средство диагностики **Сеть** в Visual Studio собирает данные о сетевых операциях, выполняемых с помощью [Windows.Web.Http API](/uwp/api/windows.web.http). Анализ данных может помочь при устранении проблем, например, при доступе и проверке подлинности, при неправильном использовании кэша, при низкой производительности процесса отображения и загрузки.  
   
  Средство «Сеть» поддерживает только приложения универсальной платформы для Windows. Другие платформы в настоящее время не поддерживаются.  
   
@@ -58,7 +58,7 @@ ms.lasthandoff: 05/13/2017
   
  Окно отчета должно выглядеть следующим образом:  
   
- ![Окно средства "Сеть"](~/profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
+ ![Окно средства "Сеть"](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyzing-data"></a>Анализ данных  
  Вы можете проанализировать записанный HTTP-трафик во время выполнения приложения и даже после того, как приложение будет закрыто, выбрав любую из сетевых операций, отображенных в представлении сводки.  
@@ -91,6 +91,5 @@ ms.lasthandoff: 05/13/2017
 3.  Ответ кнопки «Качественная печать» (на вкладке «Текст») поможет проанализировать полезные данные ответов JSON, XML, HTML, CSS, JavaScript и TypeScript и повысит удобочитаемость содержимого.  
   
 ## <a name="see-also"></a>См. также  
- [Running Profiling Tools With or Without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
- [Visual Studio blog: Introducing Visual Studio’s network inspector](http://go.microsoft.com/fwlink/?LinkId=535022)  (Запуск средств профилирования с отладчиком или без него) (Блог Visual Studio: знакомство с инспектором сети Visual Studio)  
- [Channel 9 Video: VS Diagnostics tools – New Network Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206) (Видео на Channel 9: средства диагностики VS — новый профилировщик сети)
+ [Запуск средств профилирования с отладчиком или без него](../profiling/running-profiling-tools-with-or-without-the-debugger.md) [Visual Studio blog: Introducing Visual Studio's network inspector](http://go.microsoft.com/fwlink/?LinkId=535022)  (Блог Visual Studio: знакомство с инспектором сети Visual Studio)  
+ [Channel 9 Video: VS Diagnostics tools – New Network Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206) (Видео на Channel 9: средства диагностики VS — новый профилировщик сети) [Профилирование в Visual Studio](../profiling/index.md) [Обзор возможностей профилирования](../profiling/profiling-feature-tour.md)

@@ -1,115 +1,115 @@
 ---
-title: "Практическое руководство. Защита частей документов с помощью элементов управления содержимым"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "элементы управления содержимым [разработка решений Office в Visual Studio], защита документов"
-  - "защита документов [разработка решений Office в Visual Studio]"
-  - "GroupContentControl"
-  - "частичная защита документов [разработка решений Office в Visual Studio]"
-  - "ограниченные разрешения [разработка решений Office в Visual Studio]"
-  - "Word [разработка решений Office в Visual Studio], частичная защита документов"
-  - "Word [разработка решений Office в Visual Studio], ограниченные разрешения"
+title: 'How to: Protect Parts of Documents by Using Content Controls | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- restricted permissions [Office development in Visual Studio]
+- partial document protection [Office development in Visual Studio]
+- content controls [Office development in Visual Studio], protecting documents
+- Word [Office development in Visual Studio], partial document protection
+- document protection [Office development in Visual Studio]
+- Word [Office development in Visual Studio], restricted permissions
+- GroupContentControl
 ms.assetid: 50d7286a-7746-446f-8eef-06ceeadc94d0
 caps.latest.revision: 28
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 27
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: e12f7b04a28ddfe5bd8a312d08a82e290bb0a9ce
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Практическое руководство. Защита частей документов с помощью элементов управления содержимым
-  При защите части документа вы запрещаете пользователям изменять или удалять содержимое в ней.  Для защиты частей документа Microsoft Office с помощью элементов управления содержимым можно использовать несколько способов:  
+# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>How to: Protect Parts of Documents by Using Content Controls
+  When you protect part of a document, you prevent users from changing or deleting the content in that part of the document. There are several ways you can protect parts of a Microsoft Office Word document by using content controls:  
   
--   можно защитить элемент управления содержимым;  
+-   You can protect a content control.  
   
--   можно защитить часть документа, расположенного вне элемента управления содержимым.  
+-   You can protect a part of a document that is not in a content control.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-##  <a name="EditDeleteControl"></a> Защита элемента управления содержимым  
- Вы можете запретить пользователям изменять или удалять элемент управления содержимым, задав свойства элемента управления в проекте уровня документа во время разработки или во время выполнения.  
+##  <a name="EditDeleteControl"></a> Protecting a Content Control  
+ You can prevent users from editing or deleting a content control by setting properties of the control in a document-level project at design time or at run time.  
   
- Также можно защитить элементы управления содержимым, которые вы добавляете в документ во время выполнения с помощью проекта надстройки VSTO.  Дополнительные сведения см. в разделе [Практическое руководство. Добавление элементов управления содержимым в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
+ You can also protect content controls that you add to a document at run time by using a VSTO Add-in project. For more information, see [How to: Add Content Controls to Word Documents](../vsto/how-to-add-content-controls-to-word-documents.md).  
   
-#### Защита элемента управления содержимым во время разработки  
+#### <a name="to-protect-a-content-control-at-design-time"></a>To protect a content control at design time  
   
-1.  В документе, размещенном в конструкторе [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], выберите элемент управления содержимым, который необходимо защитить.  
+1.  In the document that is hosted in the [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, select the content control that you want to protect.  
   
-2.  В окне **Свойства** задайте одно или оба следующих свойства.  
+2.  In the **Properties** window, set one or both of the following properties:  
   
-    -   Чтобы запретить пользователям изменять элемент управления, установите для свойства **LockContents** значение **True**.  
+    -   To prevent users from editing the control, set **LockContents** to **True**.  
   
-    -   Чтобы запретить пользователям удалять элемент управления, установите для свойства **LockContentControl** значение **True**.  
+    -   To prevent users from deleting the control, set **LockContentControl** to **True**.  
   
-3.  Нажмите кнопку **ОК**.  
+3.  Click **OK**.  
   
-#### Защита элемента управления содержимым во время выполнения  
+#### <a name="to-protect-a-content-control-at-run-time"></a>To protect a content control at run time  
   
-1.  Задайте для свойства `LockContents` элемента управления содержимым значение **true**, чтобы запретить пользователям изменять элемент управления, и задайте для свойства `LockContentControl` значение **true**, чтобы запретить пользователям удалять элемент управления.  
+1.  Set the `LockContents` property of the content control to **true** to prevent users from editing the control, and set the `LockContentControl` property to **true** to prevent users from deleting the control.  
   
-     В следующем примере кода показано использование свойств <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> и <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> двух разных объектов <xref:Microsoft.Office.Tools.Word.RichTextContentControl> в проекте на уровне документа.  Для выполнения этого кода добавьте код в класс `ThisDocument` в проекте и вызовите метод `AddProtectedContentControls` обработчика событий `ThisDocument_Startup`.  
+     The following code example demonstrates using the <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> and <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> properties of two different <xref:Microsoft.Office.Tools.Word.RichTextContentControl> objects in a document-level project. To run this code, add the code to the `ThisDocument` class in your project, and call the `AddProtectedContentControls` method from the `ThisDocument_Startup` event handler.  
   
-     [!code-csharp[Trin_ContentControlHowToProtect#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_ContentControlHowToProtect/CS/ThisDocument.cs#2)]
-     [!code-vb[Trin_ContentControlHowToProtect#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_ContentControlHowToProtect/VB/ThisDocument.vb#2)]  
+     [!code-csharp[Trin_ContentControlHowToProtect#2](../vsto/codesnippet/CSharp/Trin_ContentControlHowToProtect/ThisDocument.cs#2)]  [!code-vb[Trin_ContentControlHowToProtect#2](../vsto/codesnippet/VisualBasic/Trin_ContentControlHowToProtect/ThisDocument.vb#2)]  
   
-     В следующем примере кода показано использование свойств <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> и <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> двух разных объектов <xref:Microsoft.Office.Tools.Word.RichTextContentControl> в проекте надстройки VSTO.  Для выполнения этого кода добавьте код в класс `ThisAddIn` в проекте и вызовите метод `AddProtectedContentControls` обработчика событий `ThisAddIn_Startup`.  
+     The following code example demonstrates using the <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> and <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> properties of two different <xref:Microsoft.Office.Tools.Word.RichTextContentControl> objects in a VSTO Add-in project. To run this code, add the code to the `ThisAddIn` class in your project, and call the `AddProtectedContentControls` method from the `ThisAddIn_Startup` event handler.  
   
-     [!code-csharp[Trin_WordAddInDynamicControls#14](../snippets/csharp/VS_Snippets_OfficeSP/Trin_WordAddInDynamicControls/CS/ThisAddIn.cs#14)]
-     [!code-vb[Trin_WordAddInDynamicControls#14](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_WordAddInDynamicControls/VB/ThisAddIn.vb#14)]  
+     [!code-vb[Trin_WordAddInDynamicControls#14](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#14)]  [!code-csharp[Trin_WordAddInDynamicControls#14](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#14)]  
   
-## Защита части документа, расположенной вне элемента управления содержимым  
- Вы можете запретить пользователям изменять часть документа, поместив ее в <xref:Microsoft.Office.Tools.Word.GroupContentControl>.  Это полезно в следующих случаях:  
+## <a name="protecting-a-part-of-a-document-that-is-not-in-a-content-control"></a>Protecting a Part of a Document That Is Not in a Content Control  
+ You can prevent users from changing an area of a document by putting the area in a <xref:Microsoft.Office.Tools.Word.GroupContentControl>. This is useful in the following scenarios:  
   
--   вы хотите защитить область, которая не содержит элементов управления содержимым;  
+-   You want to protect an area that does not contain content controls.  
   
--   вы хотите защитить область, в которой уже есть элементы управления содержимым, но текст или другие элементы, которые необходимо защитить, расположены вне элементов управления содержимым.  
+-   You want to protect an area that already contains content controls, but the text or other items that you want to protect are not in the content controls.  
   
 > [!NOTE]  
->  При создании элемента <xref:Microsoft.Office.Tools.Word.GroupContentControl>, который содержит внедренные элементы управления содержимым, такие элементы автоматически не защищаются.  Чтобы запретить пользователям изменять внедренный элемент управления, необходимо использовать свойство **LockContents** элемента управления.  
+>  If you create a <xref:Microsoft.Office.Tools.Word.GroupContentControl> that contains embedded content controls, the embedded content controls are not automatically protected. To prevent users from editing an embedded content control, use the **LockContents** property of the control.  
   
-#### Защита области документа во время разработки  
+#### <a name="to-protect-an-area-of-a-document-at-design-time"></a>To protect an area of a document at design time  
   
-1.  В документе, размещенном в конструкторе [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], выберите область, которую необходимо защитить.  
+1.  In the document that is hosted in the [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, select the area that you want to protect.  
   
-2.  На ленте перейдите на вкладку **Разработчик**.  
+2.  On the Ribbon, click the **Developer** tab.  
   
     > [!NOTE]  
-    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой.  Дополнительные сведения см. в разделе [Практическое руководство. Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  If the **Developer** tab is not visible, you must first show it. For more information, see [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-3.  В группе **Элементы управления** нажмите кнопку раскрывающегося списка **группы** и щелкните **Группа**.  
+3.  In the **Controls** group, click the **Group** drop-down button, and then click **Group**.  
   
-     Объект <xref:Microsoft.Office.Tools.Word.GroupContentControl>, содержащий защищенную область, создается автоматически в классе `ThisDocument` в проекте.  Граница, представляющая элемент управления группы, видна во время разработки, но не во время выполнения.  
+     A <xref:Microsoft.Office.Tools.Word.GroupContentControl> that contains the protected region is automatically generated in the `ThisDocument` class in your project. A border that represents the group control is visible at design time, but there is no visible border at run time.  
   
-#### Защита области документа во время выполнения  
+#### <a name="to-protect-an-area-of-a-document-at-run-time"></a>To protect an area of a document at run time  
   
-1.  Программными средствами выберите область, которую требуется защитить, а затем вызовите метод <xref:Microsoft.Office.Tools.Word.ControlCollection.AddGroupContentControl%2A> для создания <xref:Microsoft.Office.Tools.Word.GroupContentControl>.  
+1.  Programmatically select the area that you want to protect, and then call the <xref:Microsoft.Office.Tools.Word.ControlCollection.AddGroupContentControl%2A> method to create a <xref:Microsoft.Office.Tools.Word.GroupContentControl>.  
   
-     Следующий пример кода для проекта уровня документа добавляет текст в первый абзац документа, выделяет первый абзац и создает экземпляр <xref:Microsoft.Office.Tools.Word.GroupContentControl>.  Для выполнения этого кода добавьте код в класс `ThisDocument` в проекте и вызовите метод `ProtectFirstParagraph` обработчика событий `ThisDocument_Startup`.  
+     The following code example for a document-level project adds text to the first paragraph in the document, selects the first paragraph, and then instantiates a <xref:Microsoft.Office.Tools.Word.GroupContentControl>. To run this code, add the code to the `ThisDocument` class in your project, and call the `ProtectFirstParagraph` method from the `ThisDocument_Startup` event handler.  
   
-     [!code-csharp[Trin_ContentControlHowToProtect#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_ContentControlHowToProtect/CS/ThisDocument.cs#1)]
-     [!code-vb[Trin_ContentControlHowToProtect#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_ContentControlHowToProtect/VB/ThisDocument.vb#1)]  
+     [!code-csharp[Trin_ContentControlHowToProtect#1](../vsto/codesnippet/CSharp/Trin_ContentControlHowToProtect/ThisDocument.cs#1)]  [!code-vb[Trin_ContentControlHowToProtect#1](../vsto/codesnippet/VisualBasic/Trin_ContentControlHowToProtect/ThisDocument.vb#1)]  
   
-     Следующий пример кода для проекта надстройки VSTO добавляет текст в первый абзац активного документа, выделяет первый абзац и создает экземпляр <xref:Microsoft.Office.Tools.Word.GroupContentControl>.  Для выполнения этого кода добавьте код в класс `ThisAddIn` в проекте и вызовите метод `ProtectFirstParagraph` обработчика событий `ThisAddIn_Startup`.  
+     The following code example for a VSTO Add-in project adds text to the first paragraph in the active document, selects the first paragraph, and then instantiates a <xref:Microsoft.Office.Tools.Word.GroupContentControl>. To run this code, add the code to the `ThisAddIn` class in your project, and call the `ProtectFirstParagraph` method from the `ThisAddIn_Startup` event handler.  
   
-     [!code-csharp[Trin_WordAddInDynamicControls#15](../snippets/csharp/VS_Snippets_OfficeSP/Trin_WordAddInDynamicControls/CS/ThisAddIn.cs#15)]
-     [!code-vb[Trin_WordAddInDynamicControls#15](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_WordAddInDynamicControls/VB/ThisAddIn.vb#15)]  
+     [!code-vb[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#15)]  [!code-csharp[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#15)]  
   
-## См. также  
- [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)   
- [Элементы управления содержимым](../vsto/content-controls.md)   
- [Практическое руководство. Добавление элементов управления содержимым в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)   
- [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)  
-  
-  
+## <a name="see-also"></a>See Also  
+ [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)   
+ [Content Controls](../vsto/content-controls.md)   
+ [How to: Add Content Controls to Word Documents](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)  
+   

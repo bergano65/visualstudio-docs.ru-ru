@@ -1,89 +1,106 @@
 ---
-title: "Поддерживаемые изменения кода (C#) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Изменить и продолжить [C#], поддерживаемые изменения кода"
+title: Supported Code Changes (C#) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- Edit and Continue [C#], supported code changes
 ms.assetid: c7a48ea9-5a7f-4328-a9d7-f0e76fac399d
 caps.latest.revision: 27
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 27
----
-# Поддерживаемые изменения кода (C#)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 6c870acd2a1a2339e66ef8e960657a44036057aa
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/22/2017
 
-Операция "Изменить и продолжить" обрабатывает большинство типов изменений, вносимых в код внутри тела метода.  Однако большинство изменений за пределами тела метода и некоторые изменения в теле метода во время отладки применены быть не могут.  Чтобы такие неподдерживаемые изменения вступили в силу, необходимо остановить отладку и заново запустить ее для обновленной версии кода.  
+---
+# <a name="supported-code-changes-c"></a>Supported Code Changes (C#)
+Edit and Continue handles most types of code changes within method bodies. Most changes outside method bodies, and a few changes within method bodies, cannot be applied during debugging, however. To apply those unsupported changes, you must stop debugging and restart with a fresh version of the code.  
   
- Следующие изменения в коде C\# не могут быть применены во время сеанса отладки.  
+ The following changes cannot be applied to C# code during a debugging session:  
   
--   Изменения в текущем или любом другом активном операторе.  
+-   Changes to the current statement or any other active statement.  
   
-     К активным операторам относятся любые операторы внутри функций из стека вызовов, которые были вызваны для перехода к текущему оператору.  
+     Active statements include any statements, in functions on the call stack, that were called to get to the current statement.  
   
-     Текущий оператор выделяется в окне исходного кода желтым фоном.  Остальные активные операторы выделяются затенением и доступны только для чтения.  Эти используемые по умолчанию цвета можно изменить в диалоговом окне **Параметры**.  
+     The current statement is marked by a yellow background in the source window. Other active statements are marked by a shaded background and are read-only. These default colors can be changed in the **Options** dialog box.  
   
--   изменение сигнатуры типа;  
+-   Changing the signature of a type.  
   
--   Добавление анонимного метода, записывающего переменную, которая не была записана ранее.  
+-   Adding an anonymous method that captures a variable that hasn't been captured before.  
   
--   Добавление, удаление или изменение атрибутов.  
+-   Adding, removing, or changing attributes.  
   
--   Добавление, удаление или изменение директив `using`.  
+-   Adding, removing, or changing `using` directives.  
   
--   Включение активного оператора в блоки `foreach`, `using` или `lock`.  
+-   Adding a `foreach`, `using`, or `lock` around the active statement.  
   
-## Небезопасный код  
- Для изменений небезопасного кода действуют те же ограничения, что и для безопасного кода, и одно дополнительное ограничение: операция "Изменить и продолжить" не поддерживает изменения небезопасного кода, подразумевающие выход из метода, содержащего оператор `stackalloc`.  
+## <a name="unsafe-code"></a>Unsafe Code  
+ Changes to unsafe code have the same limitations as changes to safe code, with one additional restriction: Edit and Continue does not support changes to unsafe code that exits within a method that contains the `stackalloc` operator.  
   
-## Исключения  
- Операция "Изменить и продолжить" поддерживает внесение изменений в блоки `catch` и `finally`, за исключением того, что добавление блока `catch` или `finally` вокруг активного оператора не допускается.  
+## <a name="exceptions"></a>Exceptions  
+ Edit and Continue supports changes to `catch` and `finally` blocks, except that adding a `catch` or `finally` block around the active statement is not allowed.  
   
-## Неподдерживаемые сценарии  
- Режим "Изменить и продолжить" не доступен при следующих скриптах отладки:  
+## <a name="unsupported-scenarios"></a>Unsupported Scenarios  
+ Edit and Continue is not available in the following debugging scenarios:  
   
--   отладка кода LINQ в определенных обстоятельствах;  Дополнительные сведения см. в разделе [Отладка LINQ](../debugger/debugging-linq.md).  
+-   Debugging LINQ code in certain circumstances. For more information, see [Debugging LINQ](../debugger/debugging-linq.md).  
   
-    -   запись переменной, которая не была записана ранее;  
+    -   Capturing a variable that hasn't been captured before.  
   
-    -   изменение типа выражения запроса \(например, select a \=\> select new { A \= a };\);  
+    -   Changing the type of query expression. (e.g., select a => select new { A = a };)  
   
-    -   удаление `where` с активным оператором;  
+    -   Removing a `where` that contains an active statement.  
   
-    -   удаление `let` с активным оператором;  
+    -   Removing a `let` that contains an active statement.  
   
-    -   удаление `join` с активным оператором;  
+    -   Removing a `join` that contains an active statement.  
   
-    -   удаление `orderby` с активным оператором.  
+    -   Removing an `orderby` that contains an active statement.  
   
--   отладка в смешанном режиме \(машинный код\/управляемый код\);  
+-   Mixed-mode (native/managed) debugging.  
   
--   отладка SQL;  
+-   SQL debugging.  
   
--   отладка дампа Dr.  Watson;  
+-   Debugging a Dr. Watson dump.  
   
--   изменение кода после необработанного исключения, когда не включен параметр **Очищать стек вызовов от кадров необработанных исключений**;  
+-   Editing code after an unhandled exception, when the "**Unwind the call stack on unhandled exceptions**" option is not selected.  
   
--   отладка вложенного приложения времени выполнения;  
+-   Debugging an embedded runtime application.  
   
--   отладка приложения, для которого была выполнена команда **Присоединиться к** вместо запуска приложения с помощью команды **Пуск** в меню **Отладка**;  
+-   Debugging an application that has **Attach to** instead of running the application by choosing **Start** from the **Debug** menu.  
   
--   отладка оптимизированного кода;  
+-   Debugging optimized code.  
   
--   отладка старой версии кода после того, как новую версию не удалось собрать из\-за ошибок сборки.  
+-   Debugging an old version of your code after a new version failed to build because of build errors.  
   
-## См. также  
- [Режим "Изменить и продолжить" \(Visual C\#\)](../debugger/edit-and-continue-visual-csharp.md)   
- [Практическое руководство. Использование режима "Изменить и продолжить" \(C\#\)](../debugger/how-to-use-edit-and-continue-csharp.md)
+## <a name="see-also"></a>See Also  
+ [Edit and Continue (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
+ [How to: Use Edit and Continue (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

@@ -1,93 +1,97 @@
 ---
-title: "Пошаговое руководство. Создание настраиваемой вкладки с помощью XML-лент"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "настраиваемая вкладка [разработка решений Office в Visual Studio]"
-  - "настройка ленты, tabscustom - лента, вкладки"
-  - "лента [разработка решений Office в Visual Studio], настройка"
-  - "лента [разработка решений Office в Visual Studio], вкладки"
-  - "лента [разработка решений Office в Visual Studio], XML"
-  - "XML [разработка решений Office в Visual Studio], лента"
+title: 'Walkthrough: Creating a Custom Tab by Using Ribbon XML | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Ribbon [Office development in Visual Studio], tabs
+- customizing the Ribbon, tabscustom Ribbon, tabs
+- Ribbon [Office development in Visual Studio], XML
+- XML [Office development in Visual Studio], Ribbon
+- Ribbon [Office development in Visual Studio], customizing
+- Custom tab [Office development in Visual Studio]
 ms.assetid: f6391a01-df1a-4a0f-bfbb-a9526c73b2b3
 caps.latest.revision: 35
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 34
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: c244548c3c890e449d785473fed9b55935163a9e
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Создание настраиваемой вкладки с помощью XML-лент
-  В этом пошаговом руководстве показано, как создать вкладку на настраиваемой ленте с помощью элемента **Лента \(XML\)**.  
+# <a name="walkthrough-creating-a-custom-tab-by-using-ribbon-xml"></a>Walkthrough: Creating a Custom Tab by Using Ribbon XML
+  This walkthrough demonstrates how to create a custom Ribbon tab by using the **Ribbon (XML)** item.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
- В данном пошаговом руководстве рассмотрены следующие задачи:  
+ This walkthrough illustrates the following tasks:  
   
--   Добавление кнопок на вкладку **Надстройки**.  Вкладка **Надстройки** — это вкладка по умолчанию, которая определена в XML\-файле ленты.  
+-   Adding buttons to the **Add-Ins** tab. The **Add-Ins** tab is the default tab that is defined in the Ribbon XML file.  
   
--   Автоматизация Microsoft Office Word с помощью кнопок на вкладке **Надстройки**.  
+-   Automating Microsoft Office Word by using the buttons on the **Add-Ins** tab.  
   
 > [!NOTE]  
->  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях.  Это зависит от имеющегося выпуска Visual Studio и используемых параметров.  Дополнительные сведения см. в разделе [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/ru-ru/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
 -   Microsoft Word.  
   
-## Создание проекта  
- Первым шагом является создание проекта надстройки Word VSTO.  После этого следует настроить вкладку **Надстройки** этого документа.  
+## <a name="creating-the-project"></a>Creating the Project  
+ The first step is to create a Word VSTO Add-in project. You will later customize the **Add-Ins** tab of this document.  
   
-#### Создание нового проекта  
+#### <a name="to-create-a-new-project"></a>To create a new project  
   
-1.  Создайте проект **Надстройка Word** с именем MyRibbonAddIn.  
+1.  Create a **Word Add-in** project with the name **MyRibbonAddIn**.  
   
-     Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] открывает файл кода **ThisAddIn.cs** или **ThisAddIn.vb** и добавляет проект **MyRibbonAddIn** в **обозреватель решений**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] opens the **ThisAddIn.cs** or **ThisAddIn.vb** code file and adds the **MyRibbonAddIn** project to **Solution Explorer**.  
   
-## Создание вкладки надстройки VSTO  
- Для создания вкладки **Надстройка** добавьте элемент **Лента \(XML\)** в свой проект.  Далее в этом пошаговом руководстве мы добавим некоторые кнопки на эту вкладку.  
+## <a name="creating-the-vsto-add-ins-tab"></a>Creating the VSTO Add-ins Tab  
+ To create the **Add-Ins** tab, add a **Ribbon (XML)** item to your project. Later in this walkthrough, you will add some buttons to this tab.  
   
-#### Создание вкладки «Надстройки»  
+#### <a name="to-create-the-add-ins-tab"></a>To create the Add-Ins tab  
   
-1.  В меню **Проект** выберите пункт **Добавить новый элемент**.  
+1.  On the **Project** menu, click **Add New Item**.  
   
-2.  В диалоговом окне **Добавление нового элемента** выберите элемент **Лента \(XML\)**.  
+2.  In the **Add New Item** dialog box, select **Ribbon (XML)**.  
   
-3.  Измените имя новой ленты на **MyRibbon** и нажмите кнопку **Добавить**.  
+3.  Change the name of the new Ribbon to **MyRibbon**, and click **Add**.  
   
-     В конструкторе открывается файл **MyRibbon.cs** или **MyRibbon.vb**.  В проект также добавляется XML\-файл с именем **MyRibbon.xml**.  
+     The **MyRibbon.cs** or **MyRibbon.vb** file opens in the designer. An XML file that is named **MyRibbon.xml** is also added to your project.  
   
-4.  В **обозревателе решений** щелкните правой кнопкой мыши файл **ThisAddin.cs** или **ThisAddin.vb** и выберите в контекстном меню команду **Просмотреть код**.  
+4.  In **Solution Explorer**, right-click **ThisAddin.cs** or **ThisAddin.vb**, and then click **View Code**.  
   
-5.  Добавьте следующий код в класс **ThisAddin**.  Этот код переопределяет метод CreateRibbonExtensibilityObject и возвращает XML\-класс ленты в приложение Office.  
+5.  Add the following code to the **ThisAddin** class. This code overrides the CreateRibbonExtensibilityObject method and returns the Ribbon XML class to the Office application.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab_XML/CS/ThisAddIn.cs#1)]
-     [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab_XML/VB/ThisAddIn.vb#1)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]  [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
   
-6.  В **обозревателе решений** щелкните проект **MyRibbonAddIn** правой кнопкой мыши проект и выберите пункт **Сборка**.  Убедитесь, что сборка проекта выполняется без ошибок.  
+6.  In **Solution Explorer**, right-click the **MyRibbonAddIn** project and then click **Build**. Verify that the project builds without errors.  
   
-## Добавление кнопок на вкладку «Надстройки»  
- Данная надстройка VSTO предназначена для того, чтобы пользователи могли добавлять стандартный текст и конкретную таблицу в активный документ.  Для предоставления пользовательского интерфейса добавьте две кнопки на вкладку **Надстройки** путем внесения изменений в XML\-файл ленты.  Далее в этом пошаговом руководстве мы определим методы обратного вызова для кнопок.  Дополнительные сведения об XML\-файле ленты см. в разделе [XML-ленты](../vsto/ribbon-xml.md).  
+## <a name="adding-buttons-to-the-add-ins-tab"></a>Adding Buttons to the Add-Ins Tab  
+ The goal for this VSTO Add-in is to give users a way to add boilerplate text and a specific table to the active document. To provide the user interface, add two buttons to the **Add-Ins** tab by modifying the Ribbon XML file. Later in this walkthrough, you will define callback methods for the buttons. For more information about the Ribbon XML file, see [Ribbon XML](../vsto/ribbon-xml.md).  
   
-#### Добавление кнопок на вкладку «Надстройки»  
+#### <a name="to-add-buttons-to-the-add-ins-tab"></a>To add buttons to the Add-Ins tab  
   
-1.  В **обозревателе решений** щелкните правой кнопкой мыши файл **MyRibbon.xml** и выберите команду **Открыть**.  
+1.  In **Solution Explorer**, right-click **MyRibbon.xml** and then click **Open**.  
   
-2.  Замените содержимое элемента **tab** следующим кодом XML.  Этот XML\-код изменяет метку группы элементов управления по умолчанию на **Содержимое**, а также добавляет две новые кнопки с метками **Вставить текст** и **Вставить таблицу**.  
+2.  Replace the contents of the **tab** element with the following XML. This XML changes the label of the default control group to **Content**, and it adds two new buttons with the labels **Insert Text** and **Insert Table**.  
   
     ```  
     <tab idMso="TabAddIns">  
@@ -102,63 +106,60 @@ caps.handback.revision: 34
     </tab>  
     ```  
   
-## Автоматизация документа с помощью кнопок  
- Необходимо добавить методы обратного вызова `onAction` для кнопок **Вставить текст** и **Вставить таблицу**, чтобы выполнять действия при нажатии их пользователем.  Дополнительные сведения о методах обратного вызова для элементов управления ленты см. в разделе [XML-ленты](../vsto/ribbon-xml.md).  
+## <a name="automating-the-document-by-using-the-buttons"></a>Automating the Document by Using the Buttons  
+ You must add `onAction` callback methods for the **Insert Text** and **Insert Table** buttons to perform actions when the user clicks them. For more information about callback methods for Ribbon controls, see [Ribbon XML](../vsto/ribbon-xml.md).  
   
-#### Добавление методов обратного вызова для кнопок  
+#### <a name="to-add-callback-methods-for-the-buttons"></a>To add callback methods for the buttons  
   
-1.  В **обозревателе решений** щелкните правой кнопкой мыши файл **MyRibbon.cs** или **MyRibbon.vb** и выберите команду **Открыть**.  
+1.  In **Solution Explorer**, right-click **MyRibbon.cs** or **MyRibbon.vb**, and then click **Open**.  
   
-2.  Добавьте следующий код в начало файла **MyRibbon.cs** или **MyRibbon.vb**.  Этот код создает псевдоним для пространства имен <xref:Microsoft.Office.Interop.Word>.  
+2.  Add the following code to the top of the **MyRibbon.cs** or **MyRibbon.vb** file. This code creates an alias for the <xref:Microsoft.Office.Interop.Word> namespace.  
   
-     [!code-csharp[Trin_RibbonButtons#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_RibbonButtons/CS/MyRibbon.cs#1)]
-     [!code-vb[Trin_RibbonButtons#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_RibbonButtons/VB/MyRibbon.vb#1)]  
+     [!code-csharp[Trin_RibbonButtons#1](../vsto/codesnippet/CSharp/Trin_RibbonButtons/MyRibbon.cs#1)]  [!code-vb[Trin_RibbonButtons#1](../vsto/codesnippet/VisualBasic/Trin_RibbonButtons/MyRibbon.vb#1)]  
   
-3.  Добавьте следующий метод в класс `MyRibbon`.  Это метод обратного вызова для кнопки **Вставить текст**, которая добавляет строку в активный документ в текущем положении курсора.  
+3.  Add the following method to the `MyRibbon` class. This is a callback method for the **Insert Text** button that adds a string to the active document at the current location of the cursor.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab_XML/CS/MyRibbon.cs#2)]
-     [!code-vb[Trin_Ribbon_Custom_Tab_XML#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab_XML/VB/MyRibbon.vb#2)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#2)]  [!code-vb[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#2)]  
   
-4.  Добавьте следующий метод в класс `MyRibbon`.  Это метод обратного вызова для кнопки **Вставить таблицу**, которая добавляет таблицу в активный документ в текущем положении курсора.  
+4.  Add the following method to the `MyRibbon` class. This is a callback method for the **Insert Table** button that adds a table to the active document at the current location of the cursor.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#3](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab_XML/CS/MyRibbon.cs#3)]
-     [!code-vb[Trin_Ribbon_Custom_Tab_XML#3](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab_XML/VB/MyRibbon.vb#3)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#3)]  [!code-vb[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#3)]  
   
-## Тестирование надстройки VSTO  
- При запуске проекта открывается Word и на ленте появляется вкладка с именем **Надстройки**.  Для тестирования кода нажмите кнопки **Вставить текст** и **Вставить таблицу** на вкладке **Надстройки**.  
+## <a name="testing-the-vsto-add-in"></a>Testing the VSTO Add-In  
+ When you run the project, Word opens and the tab named **Add-Ins** appears on the Ribbon. Click the **Insert Text** and **Insert Table** buttons on the **Add-Ins** tab to test the code.  
   
-#### Тестирование надстройки VSTO  
+#### <a name="to-test-your-vsto-add-in"></a>To test your VSTO Add-in  
   
-1.  Нажмите клавишу F5 для запуска проекта.  
+1.  Press F5 to run your project.  
   
-2.  Убедитесь, что вкладка **Надстройки** отображается на ленте.  
+2.  Confirm that the **Add-Ins** tab is visible on the Ribbon.  
   
-3.  Перейдите на вкладку **Надстройки**.  
+3.  Click the **Add-Ins** tab.  
   
-4.  Убедитесь, что группа **Содержимое** отображается на ленте.  
+4.  Confirm that the **Content** group is visible on the Ribbon.  
   
-5.  Нажмите кнопку **Вставить текст** в группе **Содержимое**.  
+5.  Click the **Insert Text** button in the **Content** group.  
   
-     Строка добавляется в документ в текущем положении курсора.  
+     A string is added to the document at the current location of the cursor.  
   
-6.  Нажмите кнопку **Вставить таблицу** в группе **Содержимое**.  
+6.  Click the **Insert Table** button in the **Content** group.  
   
-     Таблица добавляется в документ в текущем положении курсора.  
+     A table is added to the document at the current location of the cursor.  
   
-## Следующие действия  
- Дополнительные сведения о настройке пользовательского интерфейса Office см. в следующих разделах:  
+## <a name="next-steps"></a>Next Steps  
+ You can learn more about how to customize the Office UI from these topics:  
   
--   Настройка ленты другого приложения Office.  Дополнительные сведения о приложениях, поддерживающих настройку ленты, см. в разделе [Обзор ленты](../vsto/ribbon-overview.md).  
+-   Customize the Ribbon of a different Office application. For more information about the applications that support customizing the Ribbon, see [Ribbon Overview](../vsto/ribbon-overview.md).  
   
--   Настройка ленты приложения Office с помощью конструктора лент.  Дополнительные сведения см. в разделе [Конструктор лент](../vsto/ribbon-designer.md).  
+-   Customize the Ribbon of an Office application by using the Ribbon Designer. For more information, see [Ribbon Designer](../vsto/ribbon-designer.md).  
   
--   Создание настраиваемой панели действий.  Дополнительные сведения см. в разделе [Общие сведения о панели действий](../vsto/actions-pane-overview.md).  
+-   Create a custom actions pane. For more information, see [Actions Pane Overview](../vsto/actions-pane-overview.md).  
   
--   Настройка пользовательского интерфейса для Microsoft Office Outlook с помощью областей формы Outlook.  Дополнительные сведения см. в разделе [Пошаговое руководство. Разработка области формы Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Customize the UI of Microsoft Office Outlook by using Outlook Form Regions. For more information, see [Walkthrough: Designing an Outlook Form Region](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
-## См. также  
- [Обзор ленты](../vsto/ribbon-overview.md)   
- [XML-ленты](../vsto/ribbon-xml.md)   
- [Пошаговое руководство. Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
+## <a name="see-also"></a>See Also  
+ [Ribbon Overview](../vsto/ribbon-overview.md)   
+ [Ribbon XML](../vsto/ribbon-xml.md)   
+ [Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
   
   

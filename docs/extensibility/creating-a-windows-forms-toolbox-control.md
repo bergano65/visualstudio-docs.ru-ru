@@ -1,5 +1,5 @@
 ---
-title: "Создание элементов управления Windows Forms | Документы Microsoft"
+title: Creating a Windows Forms Toolbox Control | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,67 +30,68 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 770963e06655c0d4da2946fa7981fd1e4496b7f0
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 028ad27e35d3174e4588550acf52b13e2c5599a5
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="creating-a-windows-forms-toolbox-control"></a>Создание элементов управления Windows Forms
-Шаблон элемента панели элементов управления Windows Forms, состава средств расширения Visual Studio (VS SDK) позволяет создать элемент управления, автоматически добавляется в **элементов** при установке расширения. В этом разделе показано, как использовать шаблон для создания простой счетчик элемента управления, который можно передавать другим пользователям.  
+# <a name="creating-a-windows-forms-toolbox-control"></a>Creating a Windows Forms Toolbox Control
+The Windows Forms Toolbox Control item template that is included in the Visual Studio Extensibility Tools (VS SDK) lets you create a control that is automatically added to the **Toolbox** when the extension is installed. This topic shows how to use the template to create a simple counter control that you can distribute to other users.  
   
-## <a name="prerequisites"></a>Предварительные требования  
- Начиная с Visual Studio 2015, не установить пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в установку Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Prerequisites  
+ Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-windows-forms-toolbox-control"></a>Создание элементов управления Windows Forms  
- Создает не определен пользовательский элемент управления шаблона элементов управления Windows Forms и предоставляет все функциональные возможности, необходимые для добавления элемента управления для **элементов**.  
+## <a name="creating-a-windows-forms-toolbox-control"></a>Creating a Windows Forms Toolbox Control  
+ The Windows Forms Toolbox Control template creates an undefined user control and provides all of the functionality that is required to add the control to the **Toolbox**.  
   
-#### <a name="create-an-extension-with-a-windows-forms-toolbox-control"></a>Создайте расширение с помощью элементов управления Windows Forms  
+#### <a name="create-an-extension-with-a-windows-forms-toolbox-control"></a>Create an extension with a Windows Forms Toolbox Control  
   
-1.  Создайте проект VSIX с именем `MyWinFormsControl`. Можно найти шаблон проекта VSIX в **новый проект** диалоговом окне под **Visual C# и расширяемость**.  
+1.  Create a VSIX project named `MyWinFormsControl`. You can find the VSIX project template in the **New Project** dialog under **Visual C# / Extensibility**.  
   
-2.  При открытии проекта, добавить **элементов управления Windows Forms** шаблон элемента с именем `Counter`. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить или создать элемент**. В **Добавление нового элемента** диалоговое окно, последовательно выберите пункты **Visual C# и расширяемость** и выберите **элементов управления Windows Forms**  
+2.  When the project opens, add a **Windows Forms Toolbox Control** item template named `Counter`. In the **Solution Explorer**, right-click the project node and select **Add / New Item**. In the **Add New Item** dialog, go to **Visual C# / Extensibility** and select **Windows Forms Toolbox Control**  
   
-3.  Это добавляет пользовательский элемент управления `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>для размещения элемента управления в **элементов**и **Microsoft.VisualStudio.ToolboxControl** запись ресурса в манифест VSIX для развертывания.</xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>  
+3.  This adds a user control, a `ProvideToolboxControlAttribute`<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> to place the control in the **Toolbox**, and a **Microsoft.VisualStudio.ToolboxControl** Asset entry in the VSIX manifest for deployment.  
   
-### <a name="building-a-user-interface-for-the-control"></a>Создание пользовательского интерфейса для элемента управления  
- `Counter` Управления требует два дочерних элемента управления: <xref:System.Windows.Forms.Label>для отображения текущего счетчика и <xref:System.Windows.Forms.Button>Сброс счетчика на 0.</xref:System.Windows.Forms.Button> </xref:System.Windows.Forms.Label> Другие дочерние элементы управления не являются необходимыми, поскольку вызывающих увеличивает значение счетчика программным способом.  
+### <a name="building-a-user-interface-for-the-control"></a>Building a User Interface for the Control  
+ The `Counter` control requires two child controls: a <xref:System.Windows.Forms.Label> to display the current count, and a <xref:System.Windows.Forms.Button> to reset the count to 0. No other child controls are required because callers will increment the counter programmatically.  
   
-##### <a name="to-build-the-user-interface"></a>Создание пользовательского интерфейса  
+##### <a name="to-build-the-user-interface"></a>To build the user interface  
   
-1.  В **обозревателе**, дважды щелкните файл Counter.cs, чтобы открыть его в конструкторе.  
+1.  In **Solution Explorer**, double-click Counter.cs to open it in the designer.  
   
-2.  Удалите «щелкните здесь!» **Кнопка** включается по умолчанию при добавлении шаблона элемента панели элементов управления Windows Forms.  
+2.  Remove the "Click Here !" **Button** that is included by default when you add the Windows Forms Toolbox Control item template.  
   
-3.  От **элементов**, перетащите `Label` управления и затем `Button` управления под его на поверхность разработки.  
+3.  From the **Toolbox**, drag a `Label` control and then a `Button` control below it to the design surface.  
   
-4.  Измените общий элемент управления на 150, 50 пикселей и изменение размера кнопки элемента управления значение 50, 20 пикселей.  
+4.  Resize the overall user control to 150, 50 pixels, and resize the button control to 50, 20 pixels.  
   
-5.  В **свойства** установите следующие значения для элементов управления на поверхности разработки.  
+5.  In the **Properties** window, set the following values for the controls on the design surface.  
   
-    |Control|Свойство|Значение|  
+    |Control|Property|Value|  
     |-------------|--------------|-----------|  
-    |`Label1`|**Текст**|""|  
-    |`Button1`|**Имя**|btnReset|  
-    |`Button1`|**Текст**|Сбросить|  
+    |`Label1`|**Text**|""|  
+    |`Button1`|**Name**|btnReset|  
+    |`Button1`|**Text**|Reset|  
   
-### <a name="coding-the-user-control"></a>Написание кода пользовательского элемента управления  
- Элемент управления `Counter` будет предоставлять метод для увеличения значения счетчика, событие, которое будет наступать всякий раз, когда значение счетчика увеличивается, кнопку `Reset` и три свойства для хранения текущего значения счетчика, отображаемого текста и значения, определяющего, должна ли кнопка `Reset` отображаться или скрываться. `ProvideToolboxControl` Атрибут определяет, где в **элементов** `Counter` появится элемент управления.  
+### <a name="coding-the-user-control"></a>Coding the User Control  
+ The `Counter` control will expose a method to increment the counter, an event to be raised whenever the counter is incremented, a `Reset` button, and three properties to store the current count, the display text, and whether to show or hide the `Reset` button. The `ProvideToolboxControl` attribute determines where in the **Toolbox** the `Counter` control will appear.  
   
-##### <a name="to-code-the-user-control"></a>Код пользовательского элемента управления  
+##### <a name="to-code-the-user-control"></a>To code the user control  
   
-1.  Дважды щелкните форму, чтобы открыть его загрузки обработчика событий в окне кода.  
+1.  Double-click the form to open its load event handler in the code window.  
   
-2.  Выше метод обработчика событий в классе элемента управления создайте целое число для хранения значения счетчика и строки для хранения текста, отображения, как показано в следующем примере.  
+2.  Above the event handler method, in the control class create an integer to store the counter value and a string to store the display text as shown in the following example.  
   
-    ```c#  
+    ```csharp  
     int currentValue;  
     string displayText;  
     ```  
   
-3.  Создайте следующие объявления открытого свойства.  
+3.  Create the following public property declarations.  
   
-    ```c#  
+    ```csharp  
     public int Value {  
         get { return currentValue; }   
     }  
@@ -107,11 +108,11 @@ ms.lasthandoff: 02/22/2017
   
     ```  
   
-     Вызывающие объекты могут обращаться к этим свойствам get и set счетчика отображаемый текст для отображения или скрытия `Reset` кнопки. Вызывающие объекты могут получить текущее значение только для чтения `Value` свойство, но они не удается задать значение напрямую.  
+     Callers can access these properties to get and set the display text of the counter and to show or hide the `Reset` button. Callers can obtain the current value of the read-only `Value` property, but they cannot set the value directly.  
   
-4.  Поместите следующий код `Load` событий для элемента управления.  
+4.  Put the following code in the `Load` event for the control.  
   
-    ```c#  
+    ```csharp  
     private void Counter_Load(object sender, EventArgs e)  
     {  
         currentValue = 0;  
@@ -120,11 +121,11 @@ ms.lasthandoff: 02/22/2017
   
     ```  
   
-     Установка **метка** текст в <xref:System.Windows.Forms.UserControl.Load>событий включает свойства целевого объекта для загрузки, прежде чем их значения применяются.</xref:System.Windows.Forms.UserControl.Load> Установка **метка** текста в конструкторе приведет к появлению пустой **метка**.  
+     Setting the **Label** text in the <xref:System.Windows.Forms.UserControl.Load> event enables the target properties to load before their values are applied. Setting the **Label** text in the constructor would result in an empty **Label**.  
   
-5.  Создайте следующий открытый метод для увеличения значения счетчика.  
+5.  Create the following public method to increment the counter.  
   
-    ```c#  
+    ```csharp  
     public void Increment()  
     {  
         currentValue++;  
@@ -134,17 +135,17 @@ ms.lasthandoff: 02/22/2017
   
     ```  
   
-6.  Добавьте объявление для `Incremented` событий в класс элемента управления.  
+6.  Add a declaration for the `Incremented` event to the control class.  
   
-    ```c#  
+    ```csharp  
     public event EventHandler Incremented;  
     ```  
   
-     Вызывающие объекты можно добавить обработчики для этого события и реагировать на изменения значения счетчика.  
+     Callers can add handlers to this event to respond to changes in the value of the counter.  
   
-7.  Возврат в режим конструктора и дважды щелкните `Reset` кнопку, чтобы создать `btnReset_Click` обработчик событий и заполнить его в, как показано в следующем примере.  
+7.  Return to design view and double-click the `Reset` button to generate the `btnReset_Click` event handler, and then fill it in as shown in the following example.  
   
-    ```c#  
+    ```csharp  
     private void btnReset_Click(object sender, EventArgs e)  
     {  
         currentValue = 0;  
@@ -153,80 +154,80 @@ ms.lasthandoff: 02/22/2017
   
     ```  
   
-8.  Непосредственно над определением класса в `ProvideToolboxControl` объявление атрибута, измените значение параметра из `"MyWinFormsControl.Counter"` в `"General"`. Таким образом задается имя группы элементов, в которой будет размещаться элемент управления на **панели элементов**.  
+8.  Immediately above the class definition, in the `ProvideToolboxControl` attribute declaration, change the value of the first parameter from `"MyWinFormsControl.Counter"` to `"General"`. This sets the name of the item group that will host the control in the **Toolbox**.  
   
-     В приведенном ниже примере показаны атрибут `ProvideToolboxControl` и скорректированное определение класса.  
+     The following example shows the `ProvideToolboxControl` attribute and the adjusted class definition.  
   
-    ```c#  
+    ```csharp  
     [ProvideToolboxControl("General", false)]  
     public partial class Counter : UserControl  
     ```  
   
-### <a name="testing-the-control"></a>Тестирование элемента управления  
- Чтобы проверить **элементов** управления, сначала проверить ее в среде разработки и его тестирование в скомпилированном приложении.  
+### <a name="testing-the-control"></a>Testing the Control  
+ To test a **Toolbox** control, first test it in the development environment and then test it in a compiled application.  
   
-##### <a name="to-test-the-control"></a>Тестирование элемента управления  
+##### <a name="to-test-the-control"></a>To test the control  
   
-1.  Нажмите клавишу F5.  
+1.  Press F5.  
   
-     Это создает проект и открывает второй экспериментальный экземпляр Visual Studio с элементом управления установлен.  
+     This builds the project and opens a second Experimental instance of Visual Studio that has the control installed.  
   
-2.  В экспериментальном экземпляре Visual Studio создайте **приложение Windows Forms** проекта.  
+2.  In the Experimental instance of Visual Studio, create a **Windows Forms Application** project.  
   
-3.  В **обозревателе**, дважды щелкните файл Form1.cs, чтобы открыть его в конструкторе, если он еще не открыт.  
+3.  In **Solution Explorer**, double-click Form1.cs to open it in the designer if it is not already open.  
   
-4.  В **элементов**, `Counter` элемент должен отображаться в **Общие** раздел.  
+4.  In the **Toolbox**, the `Counter` control should be displayed in the **General** section.  
   
-5.  Перетащите `Counter` управления в форму, а затем выберите его. `Value`, `Message`, И `ShowReset` свойства будут отображены в **свойства** окна, а также свойства, унаследованные от <xref:System.Windows.Forms.UserControl>.</xref:System.Windows.Forms.UserControl>  
+5.  Drag a `Counter` control to your form, and then select it. The `Value`, `Message`, and `ShowReset` properties will be displayed in the **Properties** window, together with the properties that are inherited from <xref:System.Windows.Forms.UserControl>.  
   
-6.  Задайте для свойства `Message` значение `Count:`.  
+6.  Set the `Message` property to `Count:`.  
   
-7.  Перетащите <xref:System.Windows.Forms.Button>управления на форму и задайте свойства name и text кнопки `Test`.</xref:System.Windows.Forms.Button>  
+7.  Drag a <xref:System.Windows.Forms.Button> control to the form, and then set the name and text properties of the button to `Test`.  
   
-8.  Дважды щелкните кнопку откройте Form1.cs в представлении кода и создать обработчик щелчка.  
+8.  Double-click the button to open Form1.cs in code view and create a click handler.  
   
-9. В обработчик щелчка вызвать `counter1.Increment()`.  
+9. In the click handler, call `counter1.Increment()`.  
   
-10. В функции конструктора, после вызова `InitializeComponent`, введите `counter1``.``Incremented +=` и нажмите клавишу TAB дважды.  
+10. In the constructor function, after the call to `InitializeComponent`, type `counter1``.``Incremented +=` and then press TAB twice.  
   
-     Visual Studio создает уровне формы обработчик `counter1.Incremented` событий.  
+     Visual Studio generates a form-level handler for the `counter1.Incremented` event.  
   
-11. Выделите `Throw` оператора в обработчике событий типа `mbox`, и нажмите клавишу TAB дважды, чтобы создать окно сообщения с mbox фрагмента кода.  
+11. Highlight the `Throw` statement in the event handler, type `mbox`, and then press TAB twice to generate a message box from the mbox code snippet.  
   
-12. На следующей строке, добавьте следующий `if` / `else` блок, чтобы задать видимость `Reset` кнопки.  
+12. On the next line, add the following `if`/`else` block to set the visibility of the `Reset` button.  
   
-    ```c#  
+    ```csharp  
     if (counter1.Value < 5) counter1.ShowReset = false;  
     else counter1.ShowReset = true;  
     ```  
   
-13. Нажмите клавишу F5.  
+13. Press F5.  
   
-     Форма будет открыта. `Counter` Управления отображается следующий текст.  
+     The form opens. The `Counter` control displays the following text.  
   
-     **Число: 0**  
+     **Count: 0**  
   
-14. Нажмите кнопку **Test**.  
+14. Click **Test**.  
   
-     Увеличивает счетчик и Visual Studio отображает окно сообщения.  
+     The counter increments and Visual Studio displays a message box.  
   
-15. Закройте окно сообщения.  
+15. Close the message box.  
   
-     **Сброс** исчезает кнопки.  
+     The **Reset** button disappears.  
   
-16. Щелкните **тест** пока не достигнет счетчика **5** Закрытие сообщения поля каждый раз.  
+16. Click **Test** until the counter reaches **5** closing the message boxes each time.  
   
-     **Сброс** кнопки появляется вновь.  
+     The **Reset** button re-appears.  
   
-17. Нажмите кнопку **Reset**.  
+17. Click **Reset**.  
   
-     Сбрасывает счетчик **0**.  
+     The counter resets to **0**.  
   
-## <a name="next-steps"></a>Дальнейшие действия  
- При создании элемента управления **панели элементов** Visual Studio создает файл с именем *Имя_проекта*.vsix в папке \bin\debug\ проекта. Чтобы развернуть элемент управления, можно отправить VSIX-файл в сеть или на веб-сайт. Когда пользователь открывает VSIX-файл, элемент управления установлена и добавлена в Visual Studio **элементов** на компьютере пользователя. Кроме того, можно загрузить VSIX-файл для [коллекции Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) веб-узел, чтобы пользователи могли его найти, перейдя в **средства-расширения и обновления** диалогового окна.  
+## <a name="next-steps"></a>Next Steps  
+ When you build a **Toolbox** control, Visual Studio creates a file named *ProjectName*.vsix in the \bin\debug\ folder of your project. You can deploy the control by uploading the .vsix file to a network or to a Web site. When a user opens the .vsix file, the control is installed and added to the Visual Studio **Toolbox** on the user's computer. Alternatively, you can upload the .vsix file to the [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) Web site so that users can find it by browsing in the **Tools / Extension and Updates** dialog.  
   
-## <a name="see-also"></a>См. также  
- [Расширение панели элементов](../misc/extending-the-toolbox.md)   
- [Создание элементов управления WPF](../extensibility/creating-a-wpf-toolbox-control.md)   
- [Расширение других частей Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
- [Основы разработки элементов управления Windows Forms](http://msdn.microsoft.com/Library/6277bb81-90f7-4c5b-9f4b-b02bb42dd316)
+## <a name="see-also"></a>See Also  
+ [Extending other parts of Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
+ [Creating a WPF Toolbox Control](../extensibility/creating-a-wpf-toolbox-control.md)   
+ [Extending Other Parts of Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
+ [Windows Forms Control Development Basics](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)

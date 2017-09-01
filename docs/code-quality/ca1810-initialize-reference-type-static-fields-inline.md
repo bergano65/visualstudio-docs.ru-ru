@@ -1,70 +1,88 @@
 ---
-title: "CA1810: инициализируйте статические поля ссылочного типа встроенными средствами | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "InitializeReferenceTypeStaticFieldsInline"
-  - "CA1810"
-helpviewer_keywords: 
-  - "InitializeReferenceTypeStaticFieldsInline"
-  - "CA1810"
+title: 'CA1810: Initialize reference type static fields inline | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- InitializeReferenceTypeStaticFieldsInline
+- CA1810
+helpviewer_keywords:
+- InitializeReferenceTypeStaticFieldsInline
+- CA1810
 ms.assetid: e9693118-a914-4efb-9550-ec659d8d97d2
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 21
----
-# CA1810: инициализируйте статические поля ссылочного типа встроенными средствами
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: f3660a31f03daaf278453dddd46a1e73cb7b200d
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Initialize reference type static fields inline
 |||  
 |-|-|  
 |TypeName|InitializeReferenceTypeStaticFieldsInline|  
 |CheckId|CA1810|  
-|Категория|Microsoft.Performance|  
-|Критическое изменение|Не критическое|  
+|Category|Microsoft.Performance|  
+|Breaking Change|Non-breaking|  
   
-## Причина  
- Ссылочный тип объявляет явный статический конструктор.  
+## <a name="cause"></a>Cause  
+ A reference type declares an explicit static constructor.  
   
-## Описание правила  
- Если в типе объявляется явный статический конструктор, компилятор JIT добавляет проверку в каждый статический метод и конструктор экземпляров этого типа, чтобы убедиться, что статический конструктор уже вызывался ранее.  Статическая инициализация выполняется при доступе к статическому члену или создании экземпляра типа.  Однако, если объявляется переменная типа, которая не используется, статическая инициализация не выполняется. Это может быть важным, если инициализация изменяет глобальное состояние.  
+## <a name="rule-description"></a>Rule Description  
+ When a type declares an explicit static constructor, the just-in-time (JIT) compiler adds a check to each static method and instance constructor of the type to make sure that the static constructor was previously called. Static initialization is triggered when any static member is accessed or when an instance of the type is created. However, static initialization is not triggered if you declare a variable of the type but do not use it, which can be important if the initialization changes global state.  
   
- Если инициализация всех статических данных реализуется встроенными средствами и явный статический конструктор не объявляется, то компиляторы MSIL добавляют к определению типа MSIL флаг `beforefieldinit` и неявный статический конструктор, который инициализирует статические данные.  Если компилятор JIT обнаруживает флаг `beforefieldinit`, то обычно проверки статических конструкторов не добавляются.  Статическая инициализация будет обязательно выполнена перед доступом к любому статическому полю, но после вызова статического метода или конструктора экземпляров.  Обратите внимание, что статическая инициализация может выполняться в любое время после объявления переменной типа.  
+ When all static data is initialized inline and an explicit static constructor is not declared, Microsoft intermediate language (MSIL) compilers add the `beforefieldinit` flag and an implicit static constructor, which initializes the static data, to the MSIL type definition. When the JIT compiler encounters the `beforefieldinit` flag, most of the time the static constructor checks are not added. Static initialization is guaranteed to occur at some time before any static fields are accessed but not before a static method or instance constructor is invoked. Note that static initialization can occur at any time after a variable of the type is declared.  
   
- Проверки статических конструкторов могут привести к снижению производительности.  Статический конструктор, как правило, используется только для инициализации статических полей. В таком случае требуется лишь проверить, что статическая инициализация происходит перед первым доступом к статическому полю.  Для этой и многих других целей прекрасно подходит флаг `beforefieldinit`.  Его нельзя использовать только в том случае, если статическая инициализация влияет на глобальное состояние и выполняется одно из перечисленных ниже условий.  
+ Static constructor checks can decrease performance. Often a static constructor is used only to initialize static fields, in which case you must only make sure that static initialization occurs before the first access of a static field. The `beforefieldinit` behavior is appropriate for these and most other types. It is only inappropriate when static initialization affects global state and one of the following is true:  
   
--   Изменение глобального состояния сопряжено с большими затратами, оно не требуется, если тип не используется.  
+-   The effect on global state is expensive and is not required if the type is not used.  
   
--   Изменение глобального состояния можно осуществить без доступа к какому\-либо статическому полю типа.  
+-   The global state effects can be accessed without accessing any static fields of the type.  
   
-## Устранение нарушений  
- Чтобы устранить нарушение данного правила, выполните инициализацию всех статических данных при их объявлении и удалите статический конструктор.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, initialize all static data when it is declared and remove the static constructor.  
   
-## Отключение предупреждений  
- Отключение предупреждений о нарушении этого правила является безопасным в том случае, если не требуется высокая производительность, либо изменения глобального состояния за счет статической инициализации приводят к большим затратам, или необходимо обеспечить выполнение статической инициализации до вызова статического метода типа или создания экземпляра типа.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule if performance is not a concern; or if global state changes that are caused by static initialization are expensive or must be guaranteed to occur before a static method of the type is called or an instance of the type is created.  
   
-## Пример  
- В следующем примере показан тип `StaticConstructor`, нарушающий данное правило, и тип `NoStaticConstructor`, который для устранения нарушения заменяет статический конструктор на встроенную инициализацию.  
+## <a name="example"></a>Example  
+ The following example shows a type, `StaticConstructor`, that violates the rule and a type, `NoStaticConstructor`, that replaces the static constructor with inline initialization to satisfy the rule.  
   
- [!CODE [FxCop.Performance.RefTypeStaticCtor#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Performance.RefTypeStaticCtor#1)]  
+ [!code-csharp[FxCop.Performance.RefTypeStaticCtor#1](../code-quality/codesnippet/CSharp/ca1810-initialize-reference-type-static-fields-inline_1.cs)] [!code-vb[FxCop.Performance.RefTypeStaticCtor#1](../code-quality/codesnippet/VisualBasic/ca1810-initialize-reference-type-static-fields-inline_1.vb)]  
   
- Обратите внимание на добавление флага `beforefieldinit` в определении MSIL для класса `NoStaticConstructor`.  
+ Note the addition of the `beforefieldinit` flag on the MSIL definition for the `NoStaticConstructor` class.  
   
-  **.class public auto ansi StaticConstructor**  
- **расширяет \[mscorlib\]System.Object**  
+ **.class public auto ansi StaticConstructor**  
+ **extends [mscorlib]System.Object**  
 **{**  
-**} \/\/ окончание класса StaticConstructor**  
+**} // end of class StaticConstructor**  
 **.class public auto ansi beforefieldinit NoStaticConstructor**  
- **расширяет \[mscorlib\]System.Object**  
+ **extends [mscorlib]System.Object**  
 **{**  
-**} \/\/ окончание класса NoStaticConstructor**   
-## Связанные правила  
- [CA2207: инициализируйте статические поля типа значений встроенными средствами](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)
+**} // end of class NoStaticConstructor**   
+## <a name="related-rules"></a>Related Rules  
+ [CA2207: Initialize value type static fields inline](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)

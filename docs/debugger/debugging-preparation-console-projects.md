@@ -1,67 +1,84 @@
 ---
-title: "Подготовка к отладке: консольные проекты | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "консольные приложения, отладка"
-  - "отладка [Visual Studio], консольные приложения"
-  - "отладка текстовых приложений"
+title: 'Debugging Preparation: Console Projects | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugging [Visual Studio], console applications
+- debugging console applications
+- console applications, debugging
 ms.assetid: 9641f1d9-2d5a-48b1-8731-6525e8f67892
 caps.latest.revision: 26
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 26
----
-# Подготовка к отладке: консольные проекты
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 5cb0008579e05b4b6f6281057106547c647734db
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/22/2017
 
-Подготовка к отладке консольного проекта аналогична подготовке к отладке проекта Windows, с некоторыми дополнительными соображениями.  Дополнительные сведения см. в разделах [Приложения Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md) и [Debugging Preparation: Windows Forms Applications \(.NET\)](http://msdn.microsoft.com/ru-ru/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5).  Из\-за схожести всех консольных приложений в этом разделе описываются следующие типы проектов:  
+---
+# <a name="debugging-preparation-console-projects"></a>Debugging Preparation: Console Projects
+Preparing to debug a Console project is similar to preparing to debug a Windows project, with some additional considerations. For more information, see [Windows Forms Applications](../debugger/debugging-preparation-windows-forms-applications.md), and [Debugging Preparation: Windows Forms Applications (.NET)](http://msdn.microsoft.com/en-us/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5). Because of the similarity of all console applications, this topic covers the following project types:  
   
--   консольное приложение C\#;  
+-   C# Console Application  
   
--   консольное приложение Visual Basic;  
+-   Visual Basic Console Application  
   
--   консольное приложение C\+\+ \(.NET\);  
+-   C++ Console Application (.NET)  
   
--   консольное приложение С\+\+ \(Win32\).  
+-   C++ Console Application (Win32)  
   
- Может потребоваться задание аргументов командной строки для консольного приложения.  Дополнительные сведения см. в разделах [Параметры проекта для конфигурации отладки C\+\+](../debugger/project-settings-for-a-cpp-debug-configuration.md), [Параметры проекта для конфигурации отладки Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) и [Параметры проекта для конфигураций отладки C\#](../debugger/project-settings-for-csharp-debug-configurations.md).  
+ You might have to specify command-line arguments for your console application. For more information, see [Project Settings for a C++ Debug Configuration](../debugger/project-settings-for-a-cpp-debug-configuration.md), [Project Settings for a Visual Basic Debug Configuration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), or [Project Settings for  C# Debug Configurations](../debugger/project-settings-for-csharp-debug-configurations.md).  
   
- Подобно всем свойствам проекта, эти аргументы сохраняются в интервале между сеансами \(как отладки, так и Visual Studio\).  Поэтому необходимо учитывать, что если предыдущий сеанс был посвящен отладке консольного приложения, в диалоговом окне **\<Проект\> Страницы свойств** могут присутствовать аргументы, сохранившиеся от предыдущих сеансов отладки.  
+ Like all project properties, these arguments persist between debug sessions and between  Visual Studio sessions. Therefore, if the console application is one that you have debugged previously, remember that there might be arguments from previous sessions entered in the **\<Project> Property Pages** dialog box.  
   
- Консольное приложение использует окно **Консоль** для получения входных данных и отображения выходных сообщений.  Для записи в окно **Консоль** приложение должно использовать объект **Console** вместо объекта Debug.  Для записи в окно **Вывод Visual Studio** используется, как обычно, объект Debug.  Необходимо убедиться в какое место приложение записывает данные, иначе может оказаться, что поиск сообщений ведется не в том месте.  Дополнительные сведения см. в разделах [Класс Console](https://msdn.microsoft.com/en-us/library/system.console.aspx), [Класс Debug](https://msdn.microsoft.com/en-us/library/system.diagnostics.debug.aspx) и [Окно вывода](../ide/reference/output-window.md).  
+ A console application uses the **Console** window to accept input and to display output messages. To write to the **Console** window, your application must use the **Console** object instead of the Debug object. To write to the **Visual Studio Output** window, use the Debug object, as usual. Be sure that you know where your application is writing or you might be looking for messages in the wrong place. For more information, see [Console Class](/dotnet/api/system.console), [Debug Class](/dotnet/api/system.diagnostics.debug), and [Output Window](../ide/reference/output-window.md).  
   
-## Запуск приложения  
- Некоторые консольные приложения после запуска выполняются до полного завершения, после чего сразу закрываются.  Если это происходит быстро, то можно не успеть прервать выполнение приложения и выполнить отладку.  Чтобы можно было выполнить отладку такого приложения, необходимо использовать один из следующих приемов для запуска приложения.  
+## <a name="starting-the-application"></a>Starting the application  
+ When some console applications start, they run to completion and then exit. This behavior might not give you enough time to break execution and debug. To be able to debug an application, use one of the following procedures to start the application:  
   
--   После запуска приложение выполняется до достижения точки останова.  
+-   Your application starts executing and runs until it reaches the breakpoint.  
   
--   После запуска выполнение приложения сразу же приостанавливается на первой строке исходного кода.  
+-   Your application starts and immediately breaks at the first line of source code.  
   
--   В окне исходного кода щелкните правой кнопкой мыши строку кода и выберите команду **Выполнить до текущей позиции**.  
+-   In a source code window, right-click a line and select **Run to cursor**.  
   
-     После запуска приложение выполняется до достижения выделенной строки или до точки останова, если та встречается раньше.  
+     Your application starts and runs to the selected line, or to a breakpoint, if the breakpoint is hit before the line.  
   
- При отладке консольного приложения может потребоваться запуск приложения из командной строки, а не из Visual Studio.  В этом случае можно запустить приложение из командной строки и присоединить к нему отладчик Visual Studio.  Дополнительные сведения см. в разделе [Присоединение к выполняемым процессам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+ When you debug a console application, you might want to start the application from the command prompt rather than from Visual Studio. In that case, you can start the application from the command prompt and attach the Visual Studio debugger to it. For more information, see [Attach to Running Processes](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
- При запуске консольного приложения из Visual Studio окно **Консоль** иногда отображается позади окна Visual Studio.  Если при попытке запустить консольное приложение из Visual Studio кажется, что ничего не происходит, попробуйте переместить окно Visual Studio.  
+ When you start a console application from Visual Studio, the **Console** window sometimes appears behind the Visual Studio window. If you try to start your console application from Visual Studio and nothing seems to happen, try to move the Visual Studio window.  
   
-## См. также  
- [Отладка машинного кода](../debugger/debugging-native-code.md)   
- [Отладка управляемого кода](../debugger/debugging-managed-code.md)   
- [Типы проектов Visual C\+\+](../debugger/debugging-preparation-visual-cpp-project-types.md)   
- [Типы проектов C\#, F\# и Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Параметры проекта для конфигурации отладки C\+\+](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [Безопасность отладчика](../debugger/debugger-security.md)
+## <a name="see-also"></a>See Also  
+ [Debugging Native Code](../debugger/debugging-native-code.md)   
+ [Debugging Managed Code](../debugger/debugging-managed-code.md)   
+ [Visual C++ Project Types](../debugger/debugging-preparation-visual-cpp-project-types.md)   
+ [C#, F#, and Visual Basic Project Types](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [Project Settings for a C++ Debug Configuration](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
+ [Debugger Security](../debugger/debugger-security.md)

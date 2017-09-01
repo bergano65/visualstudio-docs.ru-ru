@@ -1,132 +1,139 @@
 ---
-title: "Практическое руководство. Настройка способа создания подписи для элемента управления с привязкой к данным в Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "надписи, привязка к данным"
-  - "окно "Источники данных", заголовки метки"
-  - "Заголовки метки, Источники данных - окно"
-  - "smart-заголовки"
+title: Customize how Visual Studio creates captions for data-bound controls | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Label captions, Data Sources window
+- smart captions
+- captions, data-bound
+- Data Sources Window, label captions
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
 caps.latest.revision: 12
-caps.handback.revision: 9
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 3eef3e43fda971e82208cb447b261ffa82e6aac9
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Практическое руководство. Настройка способа создания подписи для элемента управления с привязкой к данным в Visual Studio
-При перетаскивании элементов из окна [окно "Источники данных"](../Topic/Data%20Sources%20Window.md) в конструктор Windows Forms необходимо учесть следующую особенность: если два слова или более оказываются объединенными последовательно, имена столбцов в названиях переформатируются в строку, более удобную для чтения.  Можно настроить способ создания этих меток, установив значения **SmartCaptionExpression**, **SmartCaptionReplacement** и **SmartCaptionSuffix** в разделе реестра **HKEY\_CURRENT\_USER\\Software\\Microsoft\\VisualStudio\\10.0\\Data Designers**.  
+# <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Customize how Visual Studio creates captions for data-bound controls
+When you drag items from the [Data Sources Window](add-new-data-sources.md) onto the Windows Forms Designer, a special consideration comes into play: the column names in the caption labels are reformatted into a more readable string when two or more words are found to be concatenated together. You can customize the way in which these labels are created, by setting the **SmartCaptionExpression**, **SmartCaptionReplacement**, and **SmartCaptionSuffix** values in the **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Data Designers** registry key.  
   
 > [!NOTE]
->  Этот раздел реестра не существует, пока не будет создан.  
+>  This registry key does not exist until you create it.  
   
- Интеллектуальное создание подписей управляется регулярным выражением, вводимым в качестве значения **SmartCaptionExpression**.  Добавление раздела реестра **Data Designers** переопределяет регулярное выражение по умолчанию, которое управляет названиями элементов управления.  Дополнительные сведения о регулярных выражениях см. в разделе [Использование регулярных выражений в Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).  
+ Smart captioning is controlled by the regular expression entered into the value of the **SmartCaptionExpression** value. Adding the **Data Designers** registry key overrides the default regular expression that controls caption labels. For more information about regular expressions, see [Using Regular Expressions in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).  
   
- В следующей таблице описываются значения реестра, которые управляют названиями элементов управления.  
+ The following table describes the registry values that control caption labels.  
   
-|Элемент реестра|Описание|  
-|---------------------|--------------|  
-|SmartCaptionExpression|Регулярное выражение, используемое для формирования шаблонов.|  
-|SmartCaptionReplacement|Формат отображения всех групп, определенных в **SmartCaptionExpression**.|  
-|SmartCaptionSuffix|Необязательная строка, добавляемая в конец заголовка.|  
+|Registry item|Description|  
+|-------------------|-----------------|  
+|**SmartCaptionExpression**|The regular expression used to match your patterns.|  
+|**SmartCaptionReplacement**|The format to display any groups matched in the **SmartCaptionExpression**.|  
+|**SmartCaptionSuffix**|An optional string to append to the end of the caption.|  
   
- В следующих таблицах приведены внутренние параметры по умолчанию для этих значений реестра.  
+ The following table lists the internal default settings for these registry values.  
   
-|Элемент|Значение по умолчанию|Объяснение|  
-|-------------|---------------------------|----------------|  
-|**SmartCaptionExpression**|\(\\\\p{Ll}\)\(\\\\p{Lu}\)&#124;\_\+|Соответствует символу нижнего регистра, за которым следует символ верхнего регистра или символ подчеркивания.|  
-|**SmartCaptionReplacement**|$1 $2|$1 представляет любой символ, соответствующий выражению в первых скобках, а $2 — любой символ, соответствующий выражению во вторых скобках.  Замена — первое совпадение, пробел и затем второе совпадение.|  
-|**SmartCaptionSuffix**|:|Представляет собой знак, добавляемый к возвращаемой строке.  Например, если используется подпись `Company Name`, суффикс превращает ее в `Company Name:`|  
+|Registry item|Default value|Explanation|  
+|-------------------|-------------------|-----------------|  
+|**SmartCaptionExpression**|(\\\p{Ll})(\\\p{Lu})&#124;_+|Matches a lowercase character followed by an uppercase character or an underscore.|  
+|**SmartCaptionReplacement**|$1 $2|The $1 represents any characters matched in the first parentheses of the expression, and the $2 represents any characters matched in the second parentheses. The replacement is the first match, a space, and then the second match.|  
+|**SmartCaptionSuffix**|:|Represents a character appended to the returned string. For example, if the caption is `Company Name`, the suffix makes it `Company Name:`|  
   
 > [!CAUTION]
->  Следует быть очень осторожным при выполнении действий в редакторе реестра.  Создайте резервную копию реестра перед его редактированием.  Неправильная работа с редактором реестра может привести к серьезным проблемам, которые могут потребовать переустановки операционной системы.  Microsoft не гарантирует возможности решения проблем, которые могут быть вызваны неправильным использованием редактора реестра.  Ответственность за использование редактора реестра лежит на пользователе.  
+>  You should be very careful when doing anything in the Registry Editor. Back up the registry before editing it. If you use the Registry Editor incorrectly, you can cause serious problems that may require you to reinstall your operating system. Microsoft does not guarantee that problems that you cause by using the Registry Editor incorrectly can be resolved. Use the Registry Editor at your own risk.  
 >   
->  Эта статья из базы знаний содержит инструкции по резервному копированию, редактированию и восстановлению реестра: [Описание системного реестра Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986).  
+>  The following KnowledgeBase article contains instructions for backing up, editing, and restoring the registry: [Description of the Microsoft Windows registry](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb;en-us;256986)  
   
-### Чтобы изменить режим работы интеллектуального создания подписей окна "Источники данных"  
+### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>To modify the smart captioning behavior of the Data Sources window  
   
-1.  Откройте окно командной строки, нажав **Пуск** и затем **Выполнить**.  
+1.  Open a command window by clicking **Start** and then **Run**.  
   
-2.  Наберите `regedit` в диалоговом окне **Запуск программы** и нажмите кнопку **OK**.  
+2.  Type `regedit` in the **Run** dialog box, and click **OK**.  
   
-3.  Разверните узел **HKEY\_CURRENT\_USER**.  
+3.  Expand the **HKEY_CURRENT_USER** node.  
   
-4.  Разверните узел **Software**.  
+4.  Expand the **Software** node.  
   
-5.  Разверните узел **Microsoft**.  
+5.  Expand the **Microsoft** node.  
   
-6.  Разверните узел **VisualStudio**.  
+6.  Expand the **VisualStudio** node.  
   
-7.  Щелкните правой кнопкой мыши узел **10.0** и создайте новый **Раздел** с именем `Data Designers`.  
+7.  Right-click the **10.0** node, and create a new **Key** named `Data Designers`.  
   
-8.  Щелкните правой кнопкой мыши узел **Data Designers** и создайте новый **Строковый параметр** с именем `SmartCaptionExpression`.  
+8.  Right-click the **Data Designers** node, and create a new **String Value** named `SmartCaptionExpression`.  
   
-9. Щелкните правой кнопкой мыши узел **Data Designers** и создайте новый **Строковый параметр** с именем `SmartCaptionReplacement`.  
+9. Right-click the **Data Designers** node, and create a new **String Value** named `SmartCaptionReplacement`.  
   
-10. Щелкните правой кнопкой мыши узел **Data Designers** и создайте новый **Строковый параметр** с именем `SmartCaptionSuffix`.  
+10. Right-click the **Data Designers** node, and create a new **String Value** named `SmartCaptionSuffix`.  
   
-11. Щелкните правой кнопкой мыши элемент **SmartCaptionExpression** и выберите команду **Изменить**.  
+11. Right-click the **SmartCaptionExpression** item, and select **Modify**.  
   
-12. Введите регулярное выражение, которое должно использовать окно **Источники данных**.  
+12. Enter the regular expression you want the **Data Sources** window to use.  
   
-13. Щелкните правой кнопкой мыши элемент **SmartCaptionReplacement** и выберите команду **Изменить**.  
+13. Right-click the **SmartCaptionReplacement** item, and select **Modify**.  
   
-14. Введите строку для замены, отформатированную так, как должны отображаться шаблоны, соответствующие заданному регулярному выражению.  
+14. Enter the replacement string formatted the way you want to display the patterns matched in your regular expression.  
   
-15. Щелкните правой кнопкой мыши элемент **SmartCaptionSuffix** и выберите команду **Изменить**.  
+15. Right-click the **SmartCaptionSuffix** item, and select **Modify**.  
   
-16. Введите любые символы, которые должны появиться в конце заголовка.  
+16. Enter any characters you want to appear at the end of the caption.  
   
-     В следующий раз при перетаскивании элементов из окна **Источники данных** названия создадутся с использованием новых значений реестра.  
+     The next time you drag items from the **Data Sources** window, the caption labels are created using the new registry values provided.  
   
-### Чтобы отключить функцию интеллектуального создания подписей  
+### <a name="to-turn-off-the-smart-captioning-feature"></a>To turn off the smart captioning feature  
   
-1.  Откройте окно командной строки, нажав **Пуск** и затем **Выполнить**.  
+1.  Open a command window by clicking **Start** and then **Run**.  
   
-2.  Наберите `regedit` в диалоговом окне **Запуск программы** и нажмите кнопку **OK**.  
+2.  Type `regedit` in the **Run** dialog box, and click **OK**.  
   
-3.  Разверните узел **HKEY\_CURRENT\_USER**.  
+3.  Expand the **HKEY_CURRENT_USER** node.  
   
-4.  Разверните узел **Software**.  
+4.  Expand the **Software** node.  
   
-5.  Разверните узел **Microsoft**.  
+5.  Expand the **Microsoft** node.  
   
-6.  Разверните узел **VisualStudio**.  
+6.  Expand the **VisualStudio** node.  
   
-7.  Щелкните правой кнопкой мыши узел **10.0** и создайте новый **Раздел** с именем `Data Designers`.  
+7.  Right-click the **10.0** node, and create a new **Key** named `Data Designers`.  
   
-8.  Щелкните правой кнопкой мыши узел **Data Designers** и создайте новый **Строковый параметр** с именем `SmartCaptionExpression`.  
+8.  Right-click the **Data Designers** node, and create a new **String Value** named `SmartCaptionExpression`.  
   
-9. Щелкните правой кнопкой мыши узел **Data Designers** и создайте новый **Строковый параметр** с именем `SmartCaptionReplacement`.  
+9. Right-click the **Data Designers** node, and create a new **String Value** named `SmartCaptionReplacement`.  
   
-10. Щелкните правой кнопкой мыши узел **Data Designers** и создайте новый **Строковый параметр** с именем `SmartCaptionSuffix`.  
+10. Right-click the **Data Designers** node, and create a new **String Value** named `SmartCaptionSuffix`.  
   
-11. Щелкните правой кнопкой мыши элемент **SmartCaptionExpression** и выберите команду **Изменить**.  
+11. Right-click the **SmartCaptionExpression** item, and select **Modify**.  
   
-12. Введите `(.*)` в качестве значения.  Это будет соответствовать всей строке.  
+12. Enter `(.*)` for the value. This will match the entire string.  
   
-13. Щелкните правой кнопкой мыши элемент **SmartCaptionReplacement** и выберите команду **Изменить**.  
+13. Right-click the **SmartCaptionReplacement** item, and select **Modify**.  
   
-14. Введите `$1` в качестве значения.  Это заменит строку соответствующим значением, являющимся всей строкой; таким образом, она останется неизменной.  
+14. Enter `$1` for the value. This replaces the string with the matched value, which is the entire string so that it will remain unchanged.  
   
-     В следующий раз при перетаскивании элементов из окна **Источники данных** названия будут создаваться с немодифицированными подписями.  
+     The next time you drag items from the **Data Sources** window, the caption labels are created with unmodified captions.  
   
-## См. также  
- [Регулярные выражения в .NET Framework](../Topic/.NET%20Framework%20Regular%20Expressions.md)   
- [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Подготовка приложения к получению данных](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Выборка данных в приложение](../data-tools/fetching-data-into-your-application.md)   
- [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Редактирование данных в приложении](../data-tools/editing-data-in-your-application.md)   
- [Проверка данных](../Topic/Validating%20Data.md)   
- [Сохранение данных](../data-tools/saving-data.md)
+## <a name="see-also"></a>See Also  
+ [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

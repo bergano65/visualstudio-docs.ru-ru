@@ -1,59 +1,76 @@
 ---
-title: "IPropertyProxyProvider::GetPropertyProxy | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IPropertyProxyProvider::GetPropertyProxy"
-helpviewer_keywords: 
-  - "IPropertyProxyProvider::GetPropertyProxy"
+title: IPropertyProxyProvider::GetPropertyProxy | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IPropertyProxyProvider::GetPropertyProxy
+helpviewer_keywords:
+- IPropertyProxyProvider::GetPropertyProxy
 ms.assetid: 3ebb7515-5bfe-48f4-9b8d-721b8f664eb6
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
----
-# IPropertyProxyProvider::GetPropertyProxy
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: cc96cc987f9a754590e91107d8c252acc0427ef4
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
-Извлекает интерфейс прокси свойства для указанного идентификатора учетной записи\-посредника  
+---
+# <a name="ipropertyproxyprovidergetpropertyproxy"></a>IPropertyProxyProvider::GetPropertyProxy
+Retrieves the property proxy interface for the specified proxy ID.  
   
-## Синтаксис  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetPropertyProxy(  
-   DWORD                  dwID,  
-   IPropertyProxyEESide** proxy  
+   DWORD                  dwID,  
+   IPropertyProxyEESide** proxy  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetPropertyProxy(  
-   uint                     dwID,  
-   out IPropertyProxyEESide proxy  
+   uint                     dwID,  
+   out IPropertyProxyEESide proxy  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Parameters  
  `dwID`  
- \[in\] идентификатор требуемого прокси свойства.  
+ [in] ID of the desired property proxy.  
   
  `proxy`  
- \[out\] возвращает [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) объект.  
+ [out] Returns an [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) object.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Заметки  
- Чтобы поддерживать внешние визуализаторы типа, этот метод обычно переадресует вызов [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md) метод.  См. [Визуализация и просмотр данных](../../../extensibility/debugger/visualizing-and-viewing-data.md) дополнительные сведения о том, как IEEVisualizerService получено.  
+## <a name="remarks"></a>Remarks  
+ To support external type visualizers, this method typically forwards the call to the [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md) method. See [Visualizing and Viewing Data](../../../extensibility/debugger/visualizing-and-viewing-data.md) for details on how the IEEVisualizerService is obtained.  
   
-## См. также  
+## <a name="see-also"></a>See Also  
  [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)   
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)   
- [Визуализация и просмотр данных](../../../extensibility/debugger/visualizing-and-viewing-data.md)
+ [Visualizing and Viewing Data](../../../extensibility/debugger/visualizing-and-viewing-data.md)

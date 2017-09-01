@@ -1,107 +1,109 @@
 ---
-title: "Сохранение динамических элементов управления в документах Office"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Документы Office [разработка решений Office в Visual Studio], элементы управления Windows Forms"
-  - "документы Office [разработка решений Office в Visual Studio], элементы управления ведущего приложения"
-  - "Элементы управления [разработка решений Office в Visual Studio], сохранение в документе"
-  - "Элементы управления Windows Forms [разработка решений Office в Visual Studio], сохранение в документе"
-  - "документы [разработка решений Office в Visual Studio], элементы управления Windows Forms"
-  - "документы [разработка решений Office в Visual Studio], элементы управления ведущего приложения"
-  - "Элементы управления ведущего приложения [разработка решений Office в Visual Studio], сохранение в документе"
+title: Persisting Dynamic Controls in Office Documents | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office documents [Office development in Visual Studio, Windows Forms controls
+- Office documents [Office development in Visual Studio, host controls
+- controls [Office development in Visual Studio], persisting in the document
+- Windows Forms controls [Office development in Visual Studio], persisting in the document
+- documents [Office development in Visual Studio], Windows Forms controls
+- documents [Office development in Visual Studio], host controls
+- host controls [Office development in Visual Studio], persisting in the document
 ms.assetid: 200352d1-66aa-4156-9ecd-6fd8792974cd
 caps.latest.revision: 38
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 37
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: e33183f43b6ac1df1f2ae9b4fd4de9ceefeedf88
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Сохранение динамических элементов управления в документах Office
-  Элементы управления, добавленные во время выполнения, не сохраняются при сохранении и закрытии документа или книги. Точное поведение элементов управления ведущего приложения и Windows Forms различается. В обоих случаях можно добавить в решение код для повторного создания элементов управления при повторном открытии документа.  
+# <a name="persisting-dynamic-controls-in-office-documents"></a>Persisting Dynamic Controls in Office Documents
+  Controls that are added at run time are not persisted when the document or workbook is saved and closed. The exact behavior is different for host controls and Windows Forms controls. In both cases, you can add code to your solution to re-create the controls when the user reopens the document.  
   
- Элементы управления, добавляемые в документы во время выполнения, называются *динамическими элементами управления*. Дополнительные сведения о динамических элементах управления см. в разделе [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Controls that you add to documents at run time are called *dynamic controls*. For more information about dynamic controls, see [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
-## Сохранение элементов управления ведущего приложения в документе  
- Если сохранить и закрыть документ, все динамические элементы управления ведущего приложения будут удалены из документа. Останутся только базовые собственные объекты Office. Например, элемент управления ведущего приложения <xref:Microsoft.Office.Tools.Excel.ListObject> превращается в <xref:Microsoft.Office.Interop.Excel.ListObject>. Собственные объекты Office не подключены к событиям элементов управления ведущего приложения и не имеют функций привязки к данным элемента управления ведущего приложения.  
+## <a name="persisting-host-controls-in-the-document"></a>Persisting Host Controls in the Document  
+ When a document is saved and then closed, all dynamic host controls are removed from the document. Only the underlying native Office objects remain behind. For example, a <xref:Microsoft.Office.Tools.Excel.ListObject> host control becomes a <xref:Microsoft.Office.Interop.Excel.ListObject>. The native Office objects are not connected to the host control events, and they do not have the data binding functionality of the host control.  
   
- В следующей таблице перечислены собственные объекты Office, которые остаются в документе после всех типов элементов управления ведущего приложения.  
+ The following table lists the native Office object that is left behind in a document for each type of host control.  
   
-|Тип элемента управления ведущего приложения|Тип собственного объекта Office|  
-|-------------------------------------------------|-------------------------------------|  
+|Host control type|Native Office object type|  
+|-----------------------|-------------------------------|  
 |<xref:Microsoft.Office.Tools.Excel.Chart>|<xref:Microsoft.Office.Interop.Excel.Chart>|  
 |<xref:Microsoft.Office.Tools.Excel.ListObject>|<xref:Microsoft.Office.Interop.Excel.ListObject>|  
 |<xref:Microsoft.Office.Tools.Excel.NamedRange>|<xref:Microsoft.Office.Interop.Excel.Range>|  
 |<xref:Microsoft.Office.Tools.Word.Bookmark>|<xref:Microsoft.Office.Interop.Word.Bookmark>|  
 |<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.DatePickerContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.DropDownListContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.GroupContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PictureContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|<xref:Microsoft.Office.Interop.Word.ContentControl>|  
   
-### Повторное создание динамических элементов управления ведущего приложения при открытии документов  
- Динамические элементы управления ведущего приложения можно повторно создавать вместо существующих собственных элементов управления при каждом открытии документа пользователем. Создание элементов управления ведущего приложения при открытии документа имитирует поведение, на которое могут рассчитывать пользователи.  
+### <a name="re-creating-dynamic-host-controls-when-documents-are-opened"></a>Re-Creating Dynamic Host Controls When Documents Are Opened  
+ You can re-create dynamic host controls in place of existing native controls every time a user opens the document. Creating host controls in this manner when a document is opened simulates the experience that users might expect.  
   
- Для повторного создания элемента управления ведущего приложения в Word или Excel \(<xref:Microsoft.Office.Tools.Excel.NamedRange> или <xref:Microsoft.Office.Tools.Excel.ListObject> соответственно\) используйте метод `Add`\<*класс\_элемента\_управления*\> для объекта <xref:Microsoft.Office.Tools.Excel.ControlCollection> или <xref:Microsoft.Office.Tools.Word.ControlCollection>. Используйте метод, имеющий параметр для собственного объекта Office.  
+ To re-create a host control for Word, or a <xref:Microsoft.Office.Tools.Excel.NamedRange> or <xref:Microsoft.Office.Tools.Excel.ListObject> host control for Excel, use an `Add`\<*control class*> method of an <xref:Microsoft.Office.Tools.Excel.ControlCollection> or <xref:Microsoft.Office.Tools.Word.ControlCollection> object. Use a method that has a parameter for the native Office object.  
   
- Например, если вы хотите создать элемент управления ведущего приложения <xref:Microsoft.Office.Tools.Excel.ListObject> из существующего собственного <xref:Microsoft.Office.Interop.Excel.ListObject> при открытии документа, используйте метод <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> и передайте существующий <xref:Microsoft.Office.Interop.Excel.ListObject>. В следующем примере кода показано, как сделать это в проекте уровня документа для Excel. Код повторно создает динамический <xref:Microsoft.Office.Tools.Excel.ListObject>, основанный на существующем <xref:Microsoft.Office.Interop.Excel.ListObject> с именем `MyListObject` в классе `Sheet1`.  
+ For example, if you want to create a <xref:Microsoft.Office.Tools.Excel.ListObject> host control from an existing native <xref:Microsoft.Office.Interop.Excel.ListObject> when the document is opened, use the <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> method and pass in the existing <xref:Microsoft.Office.Interop.Excel.ListObject>. The following code example demonstrates this in a document-level project for Excel. The code re-creates a dynamic <xref:Microsoft.Office.Tools.Excel.ListObject> that is based on an existing <xref:Microsoft.Office.Interop.Excel.ListObject> named `MyListObject` in the `Sheet1` class.  
   
- [!code-csharp[Trin_ExcelWorkbookDynamicControls#6](../snippets/csharp/VS_Snippets_OfficeSP/Trin_ExcelWorkbookDynamicControls/CS/Sheet1.cs#6)]
- [!code-vb[Trin_ExcelWorkbookDynamicControls#6](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_ExcelWorkbookDynamicControls/VB/Sheet1.vb#6)]  
+ [!code-csharp[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/Sheet1.cs#6)] [!code-vb[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/Sheet1.vb#6)]  
   
-### Повторное создание диаграмм  
- Для повторного создания элемента управления ведущего приложения <xref:Microsoft.Office.Tools.Excel.Chart> необходимо сначала удалить собственный <xref:Microsoft.Office.Interop.Excel.Chart>, а затем повторно создать <xref:Microsoft.Office.Tools.Excel.Chart> с помощью метода <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddChart%2A> или <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddChart%2A>. Не существует метода `Add`\<*класс\_элемента\_управления*\>, который бы позволял создать новый <xref:Microsoft.Office.Tools.Excel.Chart> на основе существующего <xref:Microsoft.Office.Interop.Excel.Chart>.  
+### <a name="re-creating-charts"></a>Re-Creating Charts  
+ To re-create a <xref:Microsoft.Office.Tools.Excel.Chart> host control, you must first delete the native <xref:Microsoft.Office.Interop.Excel.Chart>, and then re-create the <xref:Microsoft.Office.Tools.Excel.Chart> by using the <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddChart%2A> or <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddChart%2A> method. There is no `Add`\<*control class*> method that enables you to create a new <xref:Microsoft.Office.Tools.Excel.Chart> based on an existing <xref:Microsoft.Office.Interop.Excel.Chart>.  
   
- Если сначала не удалить собственный <xref:Microsoft.Office.Interop.Excel.Chart>, при повторном создании <xref:Microsoft.Office.Tools.Excel.Chart> будет создана вторая диаграмма\-дубликат.  
+ If you do not first delete the native <xref:Microsoft.Office.Interop.Excel.Chart>, then you will create a second, duplicate chart when you re-create the <xref:Microsoft.Office.Tools.Excel.Chart>.  
   
-## Сохранение элементов управления Windows Forms в документах  
- Если сохранить и закрыть документ, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] автоматически удалит все динамически созданные элементы управления Windows Forms из документа. При этом на уровне проектов уровня документа и надстроек VSTO поведение отличается.  
+## <a name="persisting-windows-forms-controls-in-documents"></a>Persisting Windows Forms Controls in Documents  
+ When a document is saved and then closed, the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] automatically removes all dynamically created Windows Forms controls from the document. However, the behavior is different for document-level and VSTO Add-in projects.  
   
- В настройках уровня документа элементы управления и их базовые оболочки ActiveX \(которые используются для размещения элементов управления в документе\) удаляются при следующем открытии документа. Признаков присутствия элементов управления не остается.  
+ In document-level customizations, the controls and their underlying ActiveX wrappers (which are used to host the controls on the document) are removed the next time the document is opened. There is no indication that the controls were ever there.  
   
- В надстройках VSTO элементы управления удаляются, но оболочки ActiveX остаются в документе. Когда пользователь откроет документ в следующий раз, оболочки ActiveX останутся видны. В Excel оболочки ActiveX содержат изображения элементов управления в том виде, как они выглядели в момент последнего сохранения документа. В Word оболочки ActiveX невидимы, пока пользователь не щелкнет их. После этого в них отображается пунктирная линия, представляющая границы элементов управления. Существует несколько способов удаления оболочек ActiveX. Дополнительные сведения см. в разделе [Удаление оболочек ActiveX в надстройке](#removingActiveX).  
+ In VSTO Add-ins, the controls are removed, but the ActiveX wrappers remain in the document. The next time the user opens the document, the ActiveX wrappers are visible. In Excel, the ActiveX wrappers display images of the controls as they appeared the last time the document was saved. In Word, the ActiveX wrappers are invisible unless the user clicks on them, in which case they display a dotted line that represents the border of the controls. There are several ways you can remove the ActiveX wrappers. For more information, see [Removing ActiveX Wrappers in an Add-in](#removingActiveX).  
   
-### Повторное создание динамических элементов управления Windows Forms при открытии документов  
- Удаленные элементы управления Windows Forms можно повторно создать при повторном открытии документа. Для этого в решении следует выполнять следующие задачи.  
+### <a name="re-creating-windows-forms-controls-when-documents-are-opened"></a>Re-Creating Windows Forms Controls When Documents Are Opened  
+ You can re-create deleted Windows Forms controls when the user reopens the document. To do this, your solution must perform the following tasks:  
   
-1.  Сохранять информацию о размере, расположении и состоянии элементов управления при сохранении или закрытии документа. В настройке уровня документа эти данные можно сохранить в кэше данных в документе. В надстройке VSTO эти данные можно сохранить в пользовательской XML\-части документа.  
+1.  Store information about the size, location, and state of the controls when the document is saved or closed. In a document-level customization, you can save this data to the data cache in the document. In an VSTO Add-in, you can save this data to a custom XML part in the document.  
   
-2.  Повторно создавать элементы управления в событии, которое возникает при открытии документа. В проекте уровня документа это можно сделать в обработчиках `Sheet`*n*`_Startup` или `ThisDocument_Startup`. В проекте надстройки VSTO это можно сделать в обработчиках событий <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> или <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>.  
+2.  Re-create the controls in an event that is raised when the document is opened. In document-level projects, you can do this in the `Sheet`*n*`_Startup` or `ThisDocument_Startup` event handlers. In VSTO Add-in projects, you can do this in the event handlers for the <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> or <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> events.  
   
-###  <a name="removingActiveX"></a> Удаление оболочек ActiveX в надстройке  
- Если динамические элементы управления Windows Forms добавляются в документы с помощью надстройки VSTO, появление оболочек ActiveX для элементов управления при следующем открытии документа можно предотвратить следующими способами.  
+###  <a name="removingActiveX"></a> Removing ActiveX Wrappers in an Add-in  
+ When you add dynamic Windows Forms controls to documents by using an VSTO Add-in, you can prevent the ActiveX wrappers for the controls from appearing in the document the next time it is opened in the following ways.  
   
-#### Удаление оболочек ActiveX при открытии документа  
- Чтобы удалить все оболочки ActiveX, вызовите метод GetVstoObject для создания ведущего элемента <xref:Microsoft.Office.Interop.Word.Document> или <xref:Microsoft.Office.Interop.Excel.Workbook>, который представляет открытый документ. Например, чтобы удалить все оболочки ActiveX из документа Word, можно вызвать метод GetVstoObject для создания ведущего элемента объекта <xref:Microsoft.Office.Interop.Word.Document>, который передается в обработчик событий для события <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>.  
+#### <a name="removing-activex-wrappers-when-the-document-is-opened"></a>Removing ActiveX Wrappers When the Document Is Opened  
+ To remove all ActiveX wrappers, call the GetVstoObject method to generate a host item for the <xref:Microsoft.Office.Interop.Word.Document> or <xref:Microsoft.Office.Interop.Excel.Workbook> that represents the newly opened document. For example, to remove all ActiveX wrappers from a Word document, you can call the GetVstoObject method to generate a host item for the <xref:Microsoft.Office.Interop.Word.Document> object that is passed to the event handler for the <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> event.  
   
- Эта процедура полезна, когда известно, что документ будет открываться только на компьютерах, где установлена надстройка VSTO. Если документ может быть передан другим пользователям, у которых не установлена надстройка VSTO, рекомендуется удалять элементы управления перед закрытием документа.  
+ This procedure is useful when you know that the document will be opened only on computers that have the VSTO Add-in installed. If the document might be passed to other users who do not have the VSTO Add-in installed, consider removing the controls before closing the document instead.  
   
- В следующем примере кода показано, как вызвать метод GetVstoObject при открытии документа.  
+ The following code example demonstrates how to call the GetVstoObject method when the document is opened.  
   
- [!code-csharp[Trin_WordAddInDynamicControls#11](../snippets/csharp/VS_Snippets_OfficeSP/Trin_WordAddInDynamicControls/CS/ThisAddIn.cs#11)]
- [!code-vb[Trin_WordAddInDynamicControls#11](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_WordAddInDynamicControls/VB/ThisAddIn.vb#11)]  
+ [!code-vb[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#11)] [!code-csharp[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#11)]  
   
- Хотя метод GetVstoObject в основном используется для создания нового ведущего элемента во время выполнения, этот метод также удаляет все оболочки ActiveX из документа при первом вызове для определенного документа. Дополнительные сведения об использовании метода GetVstoObject см. в разделе [Расширение документов Word и книг Excel в надстройках VSTO в среде выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Although the GetVstoObject method is used primarily to generate a new host item at run time, this method also clears all ActiveX wrappers from the document the first time it is called for a specific document. For more information about how to use the GetVstoObject method, see [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
- Обратите внимание, что если надстройка VSTO создает динамические элементы управления при открытии документа, она уже вызвала метод GetVstoObject в ходе создания элементов управления. В этом случае не нужно добавлять отдельный вызов метода GetVstoObject, чтобы удалить все оболочки ActiveX.  
+ Note that if your VSTO Add-in creates dynamic controls when the document is opened, your VSTO Add-in will already call the GetVstoObject method as part of the process to create the controls. You do not need to add a separate call to the GetVstoObject method to remove the ActiveX wrappers in this scenario.  
   
-#### Удаление динамических элементов управления до закрытия документа  
- Надстройка VSTO может явным образом удалить все динамические элементы управления из документа до его закрытия. Эта процедура полезна для документов, передаваемых другим пользователям, у которых не установлена надстройка VSTO.  
+#### <a name="removing-the-dynamic-controls-before-the-document-is-closed"></a>Removing the Dynamic Controls Before the Document Is Closed  
+ Your VSTO Add-in can explicitly remove each dynamic control from the document before the document is closed. This procedure is useful for documents that might be passed to other users who do not have the VSTO Add-in installed.  
   
- В следующем примере кода демонстрируется удаление всех элементов управления Windows Forms из документа Word при его закрытии.  
+ The following code example demonstrates how to remove all of the Windows Forms controls from a Word document when the document is closed.  
   
- [!code-csharp[Trin_WordAddInDynamicControls#10](../snippets/csharp/VS_Snippets_OfficeSP/Trin_WordAddInDynamicControls/CS/ThisAddIn.cs#10)]
- [!code-vb[Trin_WordAddInDynamicControls#10](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_WordAddInDynamicControls/VB/ThisAddIn.vb#10)]  
+ [!code-vb[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#10)] [!code-csharp[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#10)]  
   
-## См. также  
- [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)  
+## <a name="see-also"></a>See Also  
+ [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)  
   
   

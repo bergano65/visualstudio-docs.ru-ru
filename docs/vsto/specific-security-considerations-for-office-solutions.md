@@ -1,123 +1,126 @@
 ---
-title: "Рекомендации по обеспечению безопасности для решений Office"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "устранение неполадок при разработке решений Office в Visual Studio, безопасность"
-  - "доверенный код [разработка решений Office в Visual Studio]"
-  - "заблокированный код [разработка решений Office в Visual Studio]"
-  - "Outlook [разработка решений Office в Visual Studio], система безопасности объектной модели"
-  - "вредоносный код [разработка решений Office в Visual Studio]"
-  - "Outlook - система безопасности объектной модели [разработка решений Office в Visual Studio]"
-  - "безопасность [разработка решений Office в Visual Studio], устранение неполадок"
+title: Specific Security Considerations for Office Solutions | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- troubleshooting Office development in Visual Studio, security
+- trusted code [Office development in Visual Studio]
+- blocked code [Office development in Visual Studio]
+- Outlook [Office development in Visual Studio], object model guard
+- malicious code [Office development in Visual Studio]
+- Outlook object model guard [Office development in Visual Studio]
+- security [Office development in Visual Studio], troubleshooting
 ms.assetid: 6a8b3e12-26c6-4ee2-a37e-d5bc8df9c5d1
 caps.latest.revision: 51
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 50
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: dc32486a654a47acc3c341d4b625c4c3d4efcaa7
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Рекомендации по обеспечению безопасности для решений Office
-  Средства безопасности, предоставляемые Microsoft .NET Framework и Microsoft Office, помогают защитить решения Office от различных угроз безопасности. В этом разделе описываются некоторые из этих угроз и даются рекомендации по защите от них. Здесь также приводятся сведения о влиянии параметров безопасности Microsoft Office на решения Office.  
+# <a name="specific-security-considerations-for-office-solutions"></a>Specific Security Considerations for Office Solutions
+  The security features provided by the Microsoft .NET Framework and Microsoft Office can help to protect your Office solutions against possible security threats. This topic explains some of those threats and provides recommendations to help protect against them. It also includes information about how Microsoft Office security settings affect Office solutions.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## Доверенный код переориентируется на новый, вредоносный документ  
- Злоумышленник может получить доверенный код, предназначенный для одной конкретной цели, например для загрузки личных сведений в заявление о приеме на работу, и использовать его в другом документе, например в учетной ведомости. Код не знает, что исходный документ не запущен, и может открыть доступ к другим процессам, таким как раскрытие личных сведений или выполнение кода с повышенными правами, при открытии другим пользователем. Кроме того, злоумышленник может просто изменить данные в листе таким образом, что при отправке жертве он ведет себя неожиданно. Изменяя значения, формулы или характеристики представления листа, связанного с кодом, злоумышленник может атаковать другого пользователя путем отправки измененного файла. Также возможно получение пользователями доступа к сведениям, которые они не должны видеть, в результате изменений значений в листе.  
+## <a name="trusted-code-is-repurposed-in-a-new-malicious-document"></a>Trusted Code Is Repurposed in a New, Malicious Document  
+ An attacker could take trusted code that is meant for one particular purpose, for example, downloading personal information for an employment application, and reuse it in another document, such as a worksheet. The code does not know that the original document is not running, and may open up other threats, such as revealing personal information or executing code with increased privileges, when opened by a different user. Alternatively, the attacker can simply modify the data in the worksheet such that, when sent to the victim, it behaves unexpectedly. By changing the values, formulas, or presentation characteristics of a worksheet linked to code, it is possible for a malicious user to attack another user by sending a modified file. It may also be possible for users to access information they are not supposed to see by modifying values in the worksheet.  
   
- Поскольку расположение сборки и расположение документа должны иметь достаточные основания для выполнения, такую атаку непросто осуществить. Например, документы во вложениях электронной почты или на ненадежных серверах интрасети не имеют достаточных разрешений на выполнение.  
+ Since both the assembly location and the document location must have sufficient evidence to execute, this attack is not easy to mount. For example, documents in e-mail attachments or on untrusted intranet servers do not have enough permissions to run.  
   
- Чтобы такая атака была возможна, сам код должен быть написан таким образом, чтобы он мог принимать решения на основе потенциально ненадежных данных. Примером является создания листа со скрытой ячейкой, содержащей имя сервера базы данных. Пользователь преобразует лист в ASPX\-страницу, которая пытается подключиться к серверу с помощью проверки подлинности SQL и жестко заданного пароля SA. Злоумышленник может заменить содержимое скрытой ячейки именем другого компьютера и получить пароль SA. Чтобы избежать этой проблемы, не следует жестко кодировать пароли; кроме того, перед получением доступа к серверу следует всегда проверять идентификаторы серверов по внутреннему списку серверов, которые заведомо правильные.  
+ To make this attack possible, the code itself must be written in such a way that it makes decisions based on potentially untrustworthy data. An example is creating a worksheet that has a hidden cell that contains the name of a database server. The user submits the worksheet to an ASPX page, which attempts to connect to that server using SQL authentication and a hard-coded SA password. An attacker could replace the contents of the hidden cell with a different computer name and get the SA password. To avoid this problem, never hard-code passwords, and always check server IDs against an internal list of servers that are known to be good before accessing the server.  
   
-### Рекомендации  
+### <a name="recommendations"></a>Recommendations  
   
--   Всегда проверяйте ввод и данные, поступили ли они от пользователя, документа, базы данных, веб\-службы или любого другого источника.  
+-   Always validate input and data, whether it comes from the user, the document, a database, a web service, or any other source.  
   
--   С осторожностью предоставляйте некоторые типы функциональности, такие как получение привилегированных данных от имени пользователя и помещение их на незащищенные листы.  
+-   Be careful about exposing particular types of functionality, such as getting privileged data on behalf of the user and putting it into an unprotected worksheet.  
   
--   В зависимости от типа приложения может быть целесообразно удостоверяться, что исходный документ запущен, до выполнения любого кода. Например, проверяйте, выполняется ли код из документа, хранящегося в известном, безопасном расположении.  
+-   Depending on the type of application, it might make sense to verify that the original document is running before executing any code. For example, verify that it is running from a document stored at a known, secure location.  
   
--   Может быть полезно отображать предупреждение при открытии документа, если приложение выполняет какие\-либо привилегированные действия. Например, можно создать экран\-заставку или окно запуска, сообщающее, что приложение получит доступ к личным сведениям, и пользователь должен будет выбрать продолжение или отмену. Если конечный пользователь получит такое предупреждение из кажущегося безобидным документа, он сможет выйти из приложения, прежде чем что\-либо будет повреждено.  
+-   It might be a good idea to display a warning when the document opens if your application performs any privileged actions. For example, you might create a splash screen or a startup dialog box saying that the application will access personal information, and have the user choose to continue or cancel. If an end user gets such a warning from a seemingly innocent document, he or she will be able to quit the application before anything is compromised.  
   
-## Код, блокируемый системой безопасности объектной модели Outlook  
- Microsoft Office может запретить коду использовать определенные свойства, методы и объекты в объектной модели. Ограничивая доступ к этим объектам, Outlook помогает предотвратить злонамеренное использование объектной модели вирусами и червями электронной почты. Эта функция безопасности называется системой безопасности объектной модели Outlook. Если надстройка VSTO пытается использовать запрещенное свойство или метод при включенной системе безопасности объектной модели, Outlook отображает предупреждение системы безопасности, с помощью которого пользователь может остановить операцию или предоставить доступ к свойству или методу на ограниченный период времени. Если пользователь останавливает операцию, надстройки VSTO Outlook, созданные с помощью решений Office в Visual Studio, будут создавать исключение <xref:System.Runtime.InteropServices.COMException>.  
+## <a name="code-is-blocked-by-the-outlook-object-model-guard"></a>Code Is Blocked by the Outlook Object Model Guard  
+ Microsoft Office can restrict code from using certain properties, methods, and objects in the object model. By restricting access to these objects, Outlook helps to prevent e-mail worms and viruses from using the object model for malicious purposes. This security feature is known as the Outlook object model guard. If an VSTO Add-in attempts to use a restricted property or method while the object model guard is enabled, Outlook displays a security warning that enables the user to stop the operation, or enables the user to grant access to the property or method for a limited period of time. If the user stops the operation, Outlook VSTO Add-ins created by using Office solutions in Visual Studio will throw a <xref:System.Runtime.InteropServices.COMException>.  
   
- Система безопасности объектной модели может по\-разному влиять на надстройки VSTO, в зависимости от того, используется ли Outlook с Microsoft Exchange Server.  
+ The object model guard can affect VSTO Add-ins in different ways, depending on whether Outlook is used with Microsoft Exchange Server:  
   
--   Если Outlook не используется с Exchange, администратор может включать или отключать систему безопасности объектной модели для всех надстроек VSTO на компьютере.  
+-   If Outlook is not used with Exchange, an administrator can enable or disable the object model guard for all VSTO Add-ins on the computer.  
   
--   Если Outlook используется с Exchange, администратор может включать или отключать систему безопасности объектной модели для всех надстроек VSTO на компьютере, а также может указать, что определенные надстройки VSTO могут выполняться без задействования системы безопасности объектной модели. Администраторы также могут изменять поведение системы безопасности объектной модели в некоторых областях объектной модели. Например, администраторы могут автоматически разрешать надстройкам VSTO отправку электронной почты программными средствами, даже если система безопасности объектной модели включена.  
+-   If Outlook is used with Exchange, an administrator can enable or disable the object model guard for all VSTO Add-ins on the computer, or the administrator can specify that certain VSTO Add-ins can run without encountering the object model guard. Administrators can also modify the behavior of the object model guard for certain areas of the object model. For example, administrators can automatically allow VSTO Add-ins to send e-mail programmatically, even if the object model guard is enabled.  
   
- Начиная с Outlook 2007 поведение объектной модели было изменено, чтобы улучшить взаимодействие с пользователем и разработчиком, продолжая поддерживать безопасность Outlook. Дополнительные сведения см. в разделе [Изменения в области безопасности кода в Outlook 2007](http://go.microsoft.com/fwlink/?LinkId=73429).  
+ Starting in Outlook 2007, the behavior of the object model guard has been changed to improve the developer and user experience while helping to keep Outlook secure. For more information, see [Code Security Changes in Outlook 2007](http://go.microsoft.com/fwlink/?LinkId=73429).  
   
-### Минимизация предупреждений системы безопасности объектной модели  
- Чтобы избежать излишних предупреждений системы безопасности при использовании ограниченных свойств и методов, убедитесь, что ваша надстройка VSTO получает объекты Outlook из поля `Application` класса `ThisAddIn` в проекте. Дополнительные сведения об этом поле см. в разделе [Приступая к программированию надстроек VSTO](../vsto/programming-vsto-add-ins.md).  
+### <a name="minimizing-object-model-guard-warnings"></a>Minimizing Object Model Guard Warnings  
+ To help avoid security warnings when you use restricted properties and methods, make sure that your VSTO Add-in obtains Outlook objects from the `Application` field of the `ThisAddIn` class in your project. For more information about this field, see [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
   
- Система безопасности объектной модели считает надежными только объекты Outlook, полученные из этого объекта. Напротив, объекты, полученные из нового объекта Microsoft.Office.Interop.Outlook.Application, не считаются надежными, и ограниченные свойства и методы будут вызывать появление предупреждений системы безопасности объектной модели, если она включена.  
+ Only Outlook objects obtained from this object can be trusted by the object model guard. In contrast, objects that are obtained from a new Microsoft.Office.Interop.Outlook.Application object are not trusted, and the restricted properties and methods will raise security warnings if the object model guard is enabled.  
   
- Следующий пример кода отображает предупреждение системы безопасности, если система безопасности объектной модели включена. Свойство To класса Microsoft.Office.Interop.Outlook.MailItem ограничивается системой безопасности объектной модели. Объект Microsoft.Office.Interop.Outlook.MailItem не является доверенным, поскольку код получает его из объекта Microsoft.Office.Interop.Outlook.Application, созданного при помощи оператора **new**, вместо получения его из поля `Application`.  
+ The following code example displays a security warning if the object model guard is enabled. The To property of the Microsoft.Office.Interop.Outlook.MailItem class is restricted by the object model guard. The Microsoft.Office.Interop.Outlook.MailItem object is untrusted because the code gets it from a Microsoft.Office.Interop.Outlook.Application that is created using the **new** operator, instead of obtaining it from the `Application` field.  
   
- [!code-csharp[Trin_VstcoreOutlookSecurity#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreOutlookSecurity/CS/ThisAddIn.cs#1)]
- [!code-vb[Trin_VstcoreOutlookSecurity#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreOutlookSecurity/VB/ThisAddIn.vb#1)]  
+ [!code-csharp[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#1)] [!code-vb[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#1)]  
   
- В следующем примере кода демонстрируется использование ограниченного свойства To объекта Microsoft.Office.Interop.Outlook.MailItem, который является доверенным для системы безопасности объектной модели. Код использует доверенное поле `Application` для получения Microsoft.Office.Interop.Outlook.MailItem.  
+ The following code example demonstrates how to use the restricted To property of a Microsoft.Office.Interop.Outlook.MailItem object that is trusted by the object model guard. The code uses the trusted `Application` field to get the Microsoft.Office.Interop.Outlook.MailItem.  
   
- [!code-csharp[Trin_VstcoreOutlookSecurity#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreOutlookSecurity/CS/ThisAddIn.cs#2)]
- [!code-vb[Trin_VstcoreOutlookSecurity#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreOutlookSecurity/VB/ThisAddIn.vb#2)]  
+ [!code-csharp[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#2)] [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]  
   
 > [!NOTE]  
->  Если Outlook используется с Exchange, получение всех объектов Outlook из `ThisAddIn.Application` не гарантирует, что надстройка VSTO будет иметь доступ ко всей объектной модели Outlook. Например, если администратор Exchange установил в Outlook автоматический запрет на все попытки доступа к сведениям об адресах при помощи объектной модели Outlook, то Outlook не разрешит коду из предыдущего примера доступа к свойству To, даже если этот код использует доверенное поле `ThisAddIn.Application`.  
+>  If Outlook is used with Exchange, then obtaining all Outlook objects from `ThisAddIn.Application` does not guarantee that your VSTO Add-in will be able to access the entire Outlook object model. For example, if an Exchange administrator sets Outlook to automatically deny all attempts to access address information using the Outlook object model, then Outlook will not allow the previous code example to access the To property, even though the code example uses the trusted `ThisAddIn.Application` field.  
   
-### Указание доверенных надстроек при использовании Exchange  
- При использовании Outlook с Exchange администраторы могут указать, что определенные надстройки VSTO могут выполняться без участия системы безопасности объектной модели. Надстройки VSTO Outlook, созданные с помощью решений Office в Visual Studio, не могут быть доверенными по отдельности; они могут быть доверенными только как группа.  
+### <a name="specifying-which-add-ins-to-trust-when-using-exchange"></a>Specifying Which Add-ins to Trust When Using Exchange  
+ When Outlook is used with Exchange, administrators can specify that certain VSTO Add-ins can run without encountering the object model guard. Outlook VSTO Add-ins created by using Office solutions in Visual Studio cannot be trusted individually; they can only be trusted as a group.  
   
- Outlook доверяет надстройке VSTO на основе хэш\-кода DLL точки входа этой надстройки VSTO. Все надстройки VSTO Outlook, указывающие [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], используют одну и ту же DLL точки входа \(VSTOLoader.dll\). Это означает, что если администратор доверяет какой\-либо надстройке VSTO, указывающей [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], запускаться без системы безопасности объектной модели, то все другие надстройки VSTO, указывающие [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], также являются доверенными. Дополнительные сведения об указании конкретных доверенных надстроек VSTO, которым разрешается выполняться без системы безопасности объектной модели, см. в разделе [Выбор метода, используемого Outlook для управления функциями антивирусной защиты](http://go.microsoft.com/fwlink/?LinkId=128773).  
+ Outlook trusts an VSTO Add-in based on a hash code of the entry point DLL of the VSTO Add-in. All Outlook VSTO Add-ins that target the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] use the same entry point DLL (VSTOLoader.dll). This means that if an administrator trusts any VSTO Add-in that targets the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] to run without encountering the object model guard, then all other VSTO Add-ins that targets the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] are also trusted. For more information about trusting specific VSTO Add-ins to run without encountering the object model guard, see [Specify the method Outlook uses to manage virus prevention features](http://go.microsoft.com/fwlink/?LinkId=128773).  
   
-## Изменения разрешений не вступают в силу немедленно.  
- Если администратор настраивает разрешения для документа или сборки, пользователи должны закрыть и перезапустить все приложения Office, чтобы изменения вступили в силу.  
+## <a name="permission-changes-do-not-take-effect-immediately"></a>Permission Changes Do Not Take Effect Immediately  
+ If the administrator adjusts permissions for a document or assembly, users must quit and then restart all Office applications for those changes to be enforced.  
   
- Кроме того, применение новых разрешений могут запрещать другие приложения, размещающие приложения Microsoft Office. При изменении политик безопасности пользователи должны выйти из всех приложений, использующих Office, как размещенных, так и автономных.  
+ Other applications that host Microsoft Office applications can also prevent the new permissions from being enforced. Users should quit all applications that use Office, hosted or stand-alone, when security policies are changed.  
   
-## Параметры центра управления безопасностью в системе Microsoft Office не влияют на надстройки и на настройки уровня документа  
- Пользователи могут запретить загрузку надстроек VSTO, установив соответствующий параметр в **центре управления безопасностью**. Тем не менее эти параметры доверия не влияют на надстройки VSTO и настройки уровня документа, созданные с помощью решений Office в Visual Studio.  
+## <a name="trust-center-settings-in-the-microsoft-office-system-do-not-affect-add-ins-or-document-level-customizations"></a>Trust Center Settings in the Microsoft Office System Do Not Affect Add-ins or Document-Level Customizations  
+ Users can prevent VSTO Add-ins from loading by setting an option in the **Trust Center**. However, VSTO Add-ins and document-level customizations created by using Office solutions in Visual Studio are not affected by these trust settings.  
   
- Если пользователь запрещает загрузку настройки VSTO с помощью **центра управления безопасностью**, не будут загружаться следующие типы надстроек VSTO:  
+ If the user prevents VSTO Add-ins from loading by using the **Trust Center**, the following types of VSTO Add-ins will not load:  
   
--   управляемые и неуправляемые надстройки VSTO модели COM;  
+-   Managed and unmanaged COM VSTO Add-ins.  
   
--   управляемые и неуправляемые смарт\-документы;  
+-   Managed and unmanaged smart documents.  
   
--   управляемые и неуправляемые надстройки VSTO автоматизации;  
+-   Managed and unmanaged Automation VSTO Add-ins.  
   
--   управляемые и неуправляемые компоненты данных в режиме реального времени.  
+-   Managed and unmanaged real-time data components.  
   
- Следующие процедуры показывают, каким образом пользователи могут использовать **центр управления безопасностью** для ограничения загрузки надстроек VSTO в Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] и Microsoft Office 2010. Эти процедуры не влияют на надстройки VSTO и настройки, созданные с помощью средств разработки Office в Visual Studio.  
+ The following procedures describe how users can use the **Trust Center** to restrict VSTO Add-ins from loading in Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] and Microsoft Office 2010. These procedures do not affect VSTO Add-ins or customizations created by using Office development tools in Visual Studio.  
   
-#### Отключение надстроек VSTO в приложениях Microsoft Office 2010 и Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]  
+#### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-includeoffice15shortvstoincludesoffice-15-short-mdmd-applications"></a>To disable VSTO Add-ins in Microsoft Office 2010 and Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] applications  
   
-1.  Перейдите на вкладку **Файл**.  
+1.  Choose the **File** tab.  
   
-2.  Нажмите кнопку *Параметры* **имя\_приложения**.  
+2.  Choose the *ApplicationName* **Options** button.  
   
-3.  В области категорий нажмите **Центр управления безопасностью**.  
+3.  In the categories pane, choose **Trust Center**.  
   
-4.  В области сведений нажмите **Параметры центра управления безопасностью**.  
+4.  In the details pane, choose **Trust Center Settings**.  
   
-5.  В области категорий нажмите **Надстройки**.  
+5.  In the categories pane, choose **Add-ins**.  
   
-6.  В области сведений установите флажок **Все надстройки приложений должны быть подписаны надежными издателями** или **Отключить все надстройки приложений**.  
+6.  In the details pane, select **Require Application Add-ins to be Signed by Trusted Publisher** or **Disable all Application Add-ins**.  
   
-## См. также  
- [Обеспечение безопасности решений Office](../vsto/securing-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Securing Office Solutions](../vsto/securing-office-solutions.md)  
   
   

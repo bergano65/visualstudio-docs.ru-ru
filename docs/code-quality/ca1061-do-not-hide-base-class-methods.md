@@ -1,49 +1,66 @@
 ---
-title: "CA1061: не следует скрывать методы базового класса | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1061"
-  - "DoNotHideBaseClassMethods"
-helpviewer_keywords: 
-  - "CA1061"
-  - "DoNotHideBaseClassMethods"
+title: 'CA1061: Do not hide base class methods | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1061
+- DoNotHideBaseClassMethods
+helpviewer_keywords:
+- DoNotHideBaseClassMethods
+- CA1061
 ms.assetid: 0bda9dc8-87b4-4038-ab9d-563298387466
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 9
----
-# CA1061: не следует скрывать методы базового класса
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: b16bc49bf9206ebbbcc0b0be8397c01d6cbec6e9
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061: Do not hide base class methods
 |||  
 |-|-|  
 |TypeName|DoNotHideBaseClassMethods|  
 |CheckId|CA1061|  
-|Категория|Microsoft.Design|  
-|Критическое изменение|Критическое изменение|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## Причина  
- Производный тип объявляет метод с таким же именем и числом параметров, как у одного из базовых методов; один или несколько параметров являются базовым типом соответствующего параметра в базовом методе; остальные параметры имеют типы, идентичные соответствующим параметрам в базовом методе.  
+## <a name="cause"></a>Cause  
+ A derived type declares a method with the same name and with the same number of parameters as one of its base methods; one or more of the parameters is a base type of the corresponding parameter in the base method; and any remaining parameters have types that are identical to the corresponding parameters in the base method.  
   
-## Описание правила  
- Метод в базовом типе скрыт методом с таким же именем в производном типе. Подпись параметра производного метода отличается только типами, которые являются более слабыми, чем соответствующие типы в подписи параметра базового типа.  
+## <a name="rule-description"></a>Rule Description  
+ A method in a base type is hidden by an identically named method in a derived type when the parameter signature of the derived method differs only by types that are more weakly derived than the corresponding types in the parameter signature of the base method.  
   
-## Устранение нарушений  
- Чтобы устранить нарушение этого правила, удалите или переименуйте метод или измените подпись параметра, чтобы метод не скрывал базовый метод.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, remove or rename the method, or change the parameter signature so that the method does not hide the base method.  
   
-## Отключение предупреждений  
- Для этого правила отключать вывод предупреждений не следует.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## Пример  
- В следующем примере демонстрируется метод, нарушающий это правило.  
+## <a name="example"></a>Example  
+ The following example shows a method that violates the rule.  
   
- [!code-cs[FxCop.Design.HideBaseMethod#1](../code-quality/codesnippet/CSharp/ca1061-do-not-hide-base-class-methods_1.cs)]
+ [!code-csharp[FxCop.Design.HideBaseMethod#1](../code-quality/codesnippet/CSharp/ca1061-do-not-hide-base-class-methods_1.cs)]

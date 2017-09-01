@@ -1,5 +1,5 @@
 ---
-title: "Создание доменного языка Windows на основе форм | Документы Microsoft"
+title: Creating a Windows Forms-Based Domain-Specific Language | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -11,178 +11,179 @@ caps.latest.revision: 17
 author: alancameronwills
 ms.author: awills
 manager: douge
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c9caf1da3e6e9d065a94e6b12b7699cd5a381ea2
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 17652a19df04d016db54429ab7bc7d407768df87
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="creating-a-windows-forms-based-domain-specific-language"></a>Создание доменного языка на основе Windows Forms
-Windows Forms можно использовать для отображения состояния модели доменного языка (DSL), вместо использования на схеме DSL. В этом разделе рассматриваются привязки формы Windows Forms для DSL, используя [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] визуализации и моделирования SDK.  
+# <a name="creating-a-windows-forms-based-domain-specific-language"></a>Creating a Windows Forms-Based Domain-Specific Language
+You can use Windows Forms to display the state of a domain-specific language (DSL) model, instead of using a DSL diagram. This topic walks you through binding a Windows Form to a DSL, using the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK.  
   
- ![DSL-Wpf-2](~/modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
-Экземпляр DSL, показывая пользовательский Интерфейс формы Windows и обозреватель моделей.  
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
+A DSL instance, showing a Windows Form UI and the model explorer.  
   
-## <a name="creating-a-windows-forms-dsl"></a>Создание Windows Forms DSL  
- **Минимальный конструктор WinForm** DSL шаблон создает минимальный DSL, который можно изменить в соответствии с вашими требованиями.  
+## <a name="creating-a-windows-forms-dsl"></a>Creating a Windows Forms DSL  
+ The **Minimal WinForm Designer** DSL template creates a minimal DSL that you can modify to suit your own requirements.  
   
-#### <a name="to-create-a-minimal-winforms-dsl"></a>Чтобы создать минимальный WinForms DSL  
+#### <a name="to-create-a-minimal-winforms-dsl"></a>To create a minimal WinForms DSL  
   
-1.  Создайте DSL из **минимальный конструктор WinForm** шаблона.  
+1.  Create a DSL from the **Minimal WinForm Designer** template.  
   
-     В этом пошаговом руководстве считаются следующие имена:  
+     In this walkthrough, the following names are assumed:  
   
     |||  
     |-|-|  
-    |Имя решения и DSL|FarmApp|  
-    |Пространство имен|Company.FarmApp|  
+    |Solution and DSL name|FarmApp|  
+    |Namespace|Company.FarmApp|  
   
-2.  Поэкспериментируйте с исходный пример, который предоставляет шаблон:  
+2.  Experiment with the initial example that the template provides:  
   
-    1.  Преобразовать все шаблоны.  
+    1.  Transform All Templates.  
   
-    2.  Построение и запуск образца (**CTRL + F5**).  
+    2.  Build and run the sample (**CTRL+F5**).  
   
-    3.  В экспериментальном экземпляре Visual Studio, откройте `Sample` файл отладки проекта.  
+    3.  In the experimental instance of Visual Studio, open the `Sample` file in the debugging project.  
   
-         Обратите внимание, что он отображается в элементе управления Windows Forms.  
+         Notice that it is displayed in a Windows Forms control.  
   
-         Также можно видеть элементы модели, отображаемое в обозревателе.  
+         You can also see the elements of the model displayed in the Explorer.  
   
-         Добавить некоторые элементы в форме или обозревателя и обратите внимание на то, что они отображаются в других отображения.  
+         Add some elements either in the form or the Explorer, and notice that they appear in the other display.  
   
- В основном экземпляре [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], обратите внимание на следующие аспекты решения DSL:  
+ In the main instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], notice the following points about the DSL solution:  
   
--   `DslDefinition.dsl`не содержит схему элементов. Это вызвано DSL схемы не будет использовать для просмотра моделей экземпляр этого DSL. Вместо этого выполняется привязка к модели в Windows Forms и элементы в форме отображаются модели.  
+-   `DslDefinition.dsl` contains no diagram elements. This is because you will not use DSL diagrams to view instance models of this DSL. Instead, you will bind a Windows Form to the model, and the elements on the form will display the model.  
   
--   В дополнение к `Dsl` и `DslPackage` проекты, решения содержит третий проект с именем `UI.` **пользовательского интерфейса** проект содержит определение элемента управления Windows Forms. `DslPackage`зависит от `UI`, и `UI` зависит от `Dsl`.  
+-   In addition to the `Dsl` and `DslPackage` projects, the solution contains a third project named `UI.`**UI** project contains the definition of a Windows Forms control. `DslPackage` depends on `UI`, and `UI` depends on `Dsl`.  
   
--   В `DslPackage` проекта, `UI\DocView.cs` содержит код, который отображает элемент управления Windows Forms, которая определена в `UI` проекта.  
+-   In the `DslPackage` project, `UI\DocView.cs` contains the code that displays the Windows Forms control that is defined in the `UI` project.  
   
--   `UI` Проект содержит рабочий пример элемента управления формы привязаны к линии DSL. Тем не менее он не будет работать при изменении определения DSL. `UI` Проект содержит:  
+-   The `UI` project contains a working sample of a form control bound to the DSL. However, it will not work when you have changed the DSL Definition. The `UI` project contains:  
   
-    -   Класс Windows Forms с именем `ModelViewControl`.  
+    -   A Windows Forms class named `ModelViewControl`.  
   
-    -   Файл с именем `DataBinding.cs` , содержащий дополнительные частичное определение класса `ModelViewControl`. Чтобы просмотреть его содержимое в **обозревателе решений**, откройте контекстное меню для файла и выберите **Просмотр кода**.  
+    -   A file named `DataBinding.cs` that contains an additional partial definition of `ModelViewControl`. To see its content, in **Solution Explorer**, open the shortcut menu for the file and choose **View Code**.  
   
-### <a name="about-the-ui-project"></a>О проекте пользовательского интерфейса  
- При обновлении файла определения DSL для определения собственных DSL, необходимо обновить элемент управления в `UI` проект, чтобы отобразить DSL. В отличие от `Dsl` и `DslPackage` проектов образца `UI` проект не был создан из `DslDefinitionl.dsl`. Можно добавить файлы для создания кода, если необходимо, несмотря на то, что не рассматривается в этом пошаговом руководстве.  
+### <a name="about-the-ui-project"></a>About the UI Project  
+ When you update the DSL Definition file to define your own DSL, you will have to update the control in the `UI` project to display your DSL. Unlike the `Dsl` and `DslPackage` projects, the sample `UI` project is not generated from `DslDefinitionl.dsl`. You can add .tt files to generate the code if you want, although that is not covered in this walkthrough.  
   
-## <a name="updating-the-dsl-definition"></a>Обновление определения DSL  
- Следующие определения DSL используется в этом пошаговом руководстве.  
+## <a name="updating-the-dsl-definition"></a>Updating the DSL Definition  
+ The following the DSL definition is used in this walkthrough.  
   
- ![DSL-Wpf-1](~/modeling/media/dsl-wpf-1.png "DSL-Wpf-1")  
+ ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")  
   
-#### <a name="to-update-the-dsl-definition"></a>Для обновления определения доменного языка  
+#### <a name="to-update-the-dsl-definition"></a>To update the DSL definition  
   
-1.  Откройте DslDefinition.dsl в конструкторе DSL.  
+1.  Open DslDefinition.dsl in the DSL designer.  
   
-2.  Удалить **ExampleElement**  
+2.  Delete **ExampleElement**  
   
-3.  Переименуйте **ExampleModel** класс домена для `Farm`.  
+3.  Rename the **ExampleModel** domain class to `Farm`.  
   
-     Присвойте ему свойства дополнительного домена с именем `Size` типа **Int32**, и `IsOrganic` типа **логическое**.  
+     Give it additional domain properties named `Size` of type **Int32**, and `IsOrganic` of type **Boolean**.  
   
     > [!NOTE]
-    >  Если удалить корневой класс домена, а затем создать новый корневой каталог, необходимо сбросить свойство редактор корневой класс. В **обозреватель DSL**выберите **редактор**. В окне «Свойства» задайте **корневой класс** в `Farm`.  
+    >  If you delete the root domain class and then create a new root, you will have to reset the Editor Root Class property. In **DSL Explorer**, select **Editor**. Then in the Properties window, set **Root Class** to `Farm`.  
   
-4.  Используйте **именованный класс домена** инструмент для создания следующих классов доменов:  
+4.  Use the **Named Domain Class** tool to create the following domain classes:  
   
-    -   `Field`— Предоставить это свойство домена с именем `Size`.  
+    -   `Field` - Give this an additional domain property named `Size`.  
   
-    -   `Animal`— В окне «Свойства» задайте **модификатор наследования** для **абстрактный**.  
+    -   `Animal` - In the Properties window, set **Inheritance Modifier** to **Abstract**.  
   
-5.  Используйте **класс домена** инструмент для создания следующих классов:  
+5.  Use the **Domain Class** tool to create the following classes:  
   
     -   `Sheep`  
   
     -   `Goat`  
   
-6.  Используйте **наследования** средство `Goat` и `Sheep` наследовать `Animal`.  
+6.  Use the **Inheritance** tool to make `Goat` and `Sheep` inherit from `Animal`.  
   
-7.  Используйте **Embedding** средство для внедрения `Field` и `Animal` в `Farm`.  
+7.  Use the **Embedding** tool to embed `Field` and `Animal` under `Farm`.  
   
-8.  Может потребоваться очистка на схеме. Чтобы уменьшить количество повторяющихся элементов, используйте **перенести сюда поддерево** команду контекстного меню конечных элементов.  
+8.  You might want to tidy the diagram. To reduce the number of duplicate elements, use the **Bring Subtree Here** command on the shortcut menu of leaf elements.  
   
-9. **Преобразовать все шаблоны** на панели инструментов обозревателя решений.  
+9. **Transform All Templates** in the toolbar of Solution Explorer.  
   
-10. Построение **Dsl** проекта.  
-  
-    > [!NOTE]
-    >  На этом этапе другие проекты будут компилироваться без ошибок. Тем не менее мы хотим построить проект Dsl, чтобы его сборка была доступна в мастере источников данных.  
-  
-## <a name="updating-the-ui-project"></a>Обновление проекта пользовательского интерфейса  
- Теперь можно создать новый пользовательский элемент управления, который будет отображать данные, хранящиеся в модели DSL. — Самый простой способ подключения к модели пользовательского элемента управления привязки данных. Привязка с именем типа адаптера данных **ModelingBindingSource** разработан специально для подключения к интерфейсы не VMSDK DSL.  
-  
-#### <a name="to-define-your-dsl-model-as-a-data-source"></a>Для определения модели DSL в качестве источника данных  
-  
-1.  На **данные** меню, выберите **Показать источники данных**.  
-  
-     **Источников данных** откроется окно.  
-  
-     Выберите **добавить новый источник данных**. **Data Source Configuration Wizard** открывает.  
-  
-2.  Выберите **объект**, **Далее**.  
-  
-     Разверните **Dsl**, **Company.FarmApp**и выберите **фермы**, который является корневой класс модели. Выберите **Готово**.  
-  
-     В обозревателе решений **пользовательского интерфейса** проекта теперь содержит **Properties\DataSources\Farm.datasource**  
-  
-     Свойства и связи класс модели отображаются в окне «Источники данных».  
-  
-     ![DslWpf&3;](~/modeling/media/dslwpf-3.png "DslWpf-3")  
-  
-#### <a name="to-connect-your-model-to-a-form"></a>Для подключения к модели в форму  
-  
-1.  В **пользовательского интерфейса** проектов, удалите все существующие файлы .cs.  
-  
-2.  Добавить новую **пользовательский элемент управления** файл с именем `FarmControl` для **пользовательский Интерфейс** проекта.  
-  
-3.  В **источников данных** окна в раскрывающемся меню **фермы**, выберите **сведения о**.  
-  
-     Оставьте настройки по умолчанию для других свойств.  
-  
-4.  Откройте FarmControl.cs в режиме конструктора.  
-  
-     Перетащите **фермы** из окна источников данных на FarmControl.  
-  
-     Набор элементов управления отображается, одной для каждого свойства. Свойства связи не создают элементы управления.  
-  
-5.  Удалить **farmBindingNavigator**. Это также создается автоматически в `FarmControl` конструктор, но он не является полезным для этого приложения.  
-  
-6.  С помощью панели элементов, создайте два экземпляра **DataGridView**и назовите их `AnimalGridView` и `FieldGridView`.  
+10. Build the **Dsl** project.  
   
     > [!NOTE]
-    >  Альтернативные делом необходимо перетащить элементы животных и поля из окна источников данных на элемент управления. Это действие автоматически создает таблицы данных и привязки между представлением сетки и источника данных. Тем не менее эта привязка не работает правильно для DSL. Поэтому лучше создать таблицы данных и привязки вручную.  
+    >  At this stage, the other projects will not build without errors. However, we want to build the Dsl project so that its assembly is available to the Data Source Wizard.  
   
-7.  Если панель элементов не содержит **ModelingBindingSource** инструмент, добавьте его. В контекстном меню **данные** выберите **выбрать элементы**. В **Выбор элементов панели элементов** диалогового окна выберите **ModelingBindingSource** из **вкладку .NET Framework**.  
+## <a name="updating-the-ui-project"></a>Updating the UI Project  
+ Now you can create a new user control that will display the information that is stored in the DSL model. The easiest way to connect the user control to the model is through data bindings. The data binding adaptor type named **ModelingBindingSource** is specifically designed to connect DSLs to non-VMSDK interfaces.  
   
-8.  С помощью панели элементов, создайте два экземпляра **ModelingBindingSource**и назовите их `AnimalBinding` и `FieldBinding`.  
+#### <a name="to-define-your-dsl-model-as-a-data-source"></a>To define your DSL model as a data source  
   
-9. Задайте **источник данных** каждого экземпляра **ModelingBindingSource** для **farmBindingSource**.  
+1.  On the **Data** menu, choose **Show Data Sources**.  
   
-     Задайте **DataMember** свойства **животных** или **поля**.  
+     The **Data Sources** window opens.  
   
-10. Задайте **источник данных** свойства `AnimalGridView` для `AnimalBinding`и `FieldGridView` в `FieldBinding`.  
+     Choose **Add New Data Source**. The **Data Source Configuration Wizard** opens.  
   
-11. Измените макет элемента управления на свой вкус фермы.  
+2.  Choose **Object**, **Next**.  
   
- **ModelingBindingSource** — это адаптер, выполняет несколько функций, которые относятся к DSL:  
+     Expand **Dsl**, **Company.FarmApp**, and select **Farm**, which is the root class of your model. Choose **Finish**.  
   
--   Поиск обновлений в хранилище VMSDK транзакции.  
+     In Solution Explorer, the **UI** project now contains **Properties\DataSources\Farm.datasource**  
   
-     Например когда пользователь удаляет строку из представления сетки данных, регулярных привязки приведет к исключение транзакции.  
+     The properties and relationships of your model class appear in the Data Sources window.  
   
--   Это гарантирует, что, когда пользователь выбирает строку, окна «Свойства» отображает свойства соответствующий элемент модели, а не строку сетки данных.  
+     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png "DslWpf-3")  
   
- ![DslWpf4](~/modeling/media/dslwpf4.png "DslWpf4")  
-Схема связей между источники данных и представления.  
+#### <a name="to-connect-your-model-to-a-form"></a>To connect your model to a form  
   
-#### <a name="to-complete-the-bindings-to-the-dsl"></a>Для выполнения привязки к линии DSL  
+1.  In the **UI** project, delete all the existing .cs files.  
   
-1.  Добавьте следующий код в отдельном файле кода в **пользовательский Интерфейс** проекта:  
+2.  Add a new **User Control** file named `FarmControl` to the **UI** project.  
   
-    ```c#  
+3.  In the **Data Sources** window, on the drop-down menu on **Farm**, choose **Details**.  
+  
+     Leave the default settings for the other properties.  
+  
+4.  Open FarmControl.cs in the design view.  
+  
+     Drag **Farm** from the Data Sources window onto FarmControl.  
+  
+     A set of controls appears, one for each property. The relationship properties do not generate controls.  
+  
+5.  Delete **farmBindingNavigator**. This is also automatically generated in the `FarmControl` designer, but it is not useful for this application.  
+  
+6.  Using the toolbox, create two instances of **DataGridView**, and name them `AnimalGridView` and `FieldGridView`.  
+  
+    > [!NOTE]
+    >  An alternative step is to drag the Animals and Fields items from the Data Sources window onto the control. This action automatically creates data grids and bindings between the grid view and the data source. However, this binding does not work correctly for DSLs. Therefore it is better to create the data grids and bindings manually.  
+  
+7.  If the Toolbox does not contain the **ModelingBindingSource** tool, add it. On the shortcut menu of the **Data** tab, choose **Choose Items**. In the **Choose Toolbox Items** dialog, select **ModelingBindingSource** from the **.NET Framework Tab**.  
+  
+8.  Using the Toolbox, create two instances of **ModelingBindingSource**, and name them `AnimalBinding` and `FieldBinding`.  
+  
+9. Set the **DataSource** property of each **ModelingBindingSource** to **farmBindingSource**.  
+  
+     Set the **DataMember** property to **Animals** or **Fields**.  
+  
+10. Set the **DataSource** properties of `AnimalGridView` to `AnimalBinding`, and of  `FieldGridView` to `FieldBinding`.  
+  
+11. Adjust the layout of the Farm control to your taste.  
+  
+ The **ModelingBindingSource** is an adapter that performs several functions that are specific to DSLs:  
+  
+-   It wraps updates in a VMSDK Store Transaction.  
+  
+     For example, when the user deletes a row from the data view grid, a regular binding would result in a transaction exception.  
+  
+-   It ensures that, when the user selects a row, the Properties window displays the properties of the corresponding model element, instead of the data grid row.  
+  
+ ![DslWpf4](../modeling/media/dslwpf4.png "DslWpf4")  
+Schema of links between data sources and views.  
+  
+#### <a name="to-complete-the-bindings-to-the-dsl"></a>To complete the bindings to the DSL  
+  
+1.  Add the following code in a separate code file in the **UI** project:  
+  
+    ```csharp  
     using System.ComponentModel;  
     using Microsoft.VisualStudio.Modeling;  
     using Microsoft.VisualStudio.Modeling.Design;  
@@ -206,59 +207,59 @@ Windows Forms можно использовать для отображения 
     }  
     ```  
   
-2.  В **DslPackage** проекта, изменение **DslPackage\DocView.tt** обновление следующие определения переменных:  
+2.  In the **DslPackage** project, edit **DslPackage\DocView.tt** to update the following variable definition:  
   
-    ```c#  
+    ```csharp  
     string viewControlTypeName = "FarmControl";  
     ```  
   
-## <a name="testing-the-dsl"></a>Тестирование DSL  
- Теперь решение DSL можно создать и запустить, несмотря на то, что может потребоваться добавление дополнительных улучшений позже.  
+## <a name="testing-the-dsl"></a>Testing the DSL  
+ The DSL solution can now build and run, although you might want to add further improvements later.  
   
-#### <a name="to-test-the-dsl"></a>Чтобы проверить DSL  
+#### <a name="to-test-the-dsl"></a>To test the DSL  
   
-1.  Постройте и запустите это решение.  
+1.  Build and run the solution.  
   
-2.  В экспериментальном экземпляре Visual Studio, откройте **пример** файла.  
+2.  In the experimental instance of Visual Studio, open the **Sample** file.  
   
-3.  В **FarmApp Explorer**, откройте контекстное меню на **фермы** корневой узел и выберите **добавьте новый Goat**.  
+3.  In the **FarmApp Explorer**, open the shortcut menu on the **Farm** root node, and choose **Add New Goat**.  
   
-     `Goat1`отображается в **животных** представления.  
+     `Goat1` appears in the **Animals** view.  
   
     > [!WARNING]
-    >  Необходимо использовать контекстное меню на **фермы** узел, не **животных** узла.  
+    >  You must use the shortcut menu on the **Farm** node, not the **Animals** node.  
   
-4.  Выберите **фермы** корневой узел и просмотрите его свойства.  
+4.  Select the **Farm** root node and view its properties.  
   
-     В представлении формы измените **имя** или **размер** фермы.  
+     In the form view, change the **Name** or **Size** of the farm.  
   
-     При переходе от каждого поля в форме, соответствующие изменения свойств в окне свойств.  
+     When you navigate away from each field in the form, the corresponding property changes in the Properties window.  
   
-## <a name="enhancing-the-dsl"></a>Улучшение DSL  
+## <a name="enhancing-the-dsl"></a>Enhancing the DSL  
   
-#### <a name="to-make-the-properties-update-immediately"></a>Чтобы немедленно обновить свойства  
+#### <a name="to-make-the-properties-update-immediately"></a>To make the properties update immediately  
   
-1.  В представлении конструктора FarmControl.cs выберите простой поля, такие как имя, размер или IsOrganic.  
+1.  In the design view of FarmControl.cs, select a simple field such as Name, Size or IsOrganic.  
   
-2.  В окне «Свойства» разверните узел **DataBindings** и откройте **(Дополнительно)**.  
+2.  In the Properties window, expand **DataBindings** and open **(Advanced)**.  
   
-     В **форматирование и дополнительная привязка** диалогового окна в разделе **режим обновления источника данных**, выберите **OnPropertyChanged**.  
+     In the **Formatting and Advanced Binding** dialog, under **Data Source Update Mode**, choose **OnPropertyChanged**.  
   
-3.  Постройте и запустите это решение.  
+3.  Build and run the solution.  
   
-     Убедитесь, что при изменении содержимого поля, соответствующего свойства фермы модели изменения немедленно.  
+     Verify that when you change the content of the field, the corresponding property of the Farm model changes immediately.  
   
-#### <a name="to-provide-add-buttons"></a>Для предоставления добавить кнопки  
+#### <a name="to-provide-add-buttons"></a>To provide Add buttons  
   
-1.  В представлении конструктора FarmControl.cs используйте панели элементов для создания кнопки на форме.  
+1.  In the design view of FarmControl.cs, use the toolbox to create a button on the form.  
   
-     Изменить имя и текст кнопки, например для `New Sheep`.  
+     Edit the name and text of the button, for example to `New Sheep`.  
   
-2.  Откройте кода программной части кнопки (например, дважды щелкнув его).  
+2.  Open the code behind the button (for example by double-clicking it).  
   
-     Внесите следующие изменения:  
+     Edit it as follows:  
   
-    ```c#  
+    ```csharp  
     private void NewSheepButton_Click(object sender, EventArgs e)  
     {  
       using (Transaction t = farm.Store.TransactionManager.BeginTransaction("Add sheep"))  
@@ -289,28 +290,28 @@ Windows Forms можно использовать для отображения 
   
     ```  
   
-     Также необходимо вставить следующую директиву:  
+     You will also need to insert the following directive:  
   
-    ```c#  
+    ```csharp  
   
     using Microsoft.VisualStudio.Modeling;  
   
     ```  
   
-3.  Добавьте сходные кнопки для полей и Goats.  
+3.  Add similar buttons for Goats and Fields.  
   
-4.  Постройте и запустите это решение.  
+4.  Build and run the solution.  
   
-5.  Убедитесь, что для новой кнопки добавляет элемент. Новый элемент появится в обозревателе FarmApp и в представлении сетки данных.  
+5.  Verify that the new button adds an item. The new item should appear in both the FarmApp Explorer and in the appropriate data grid view.  
   
-     Вы сможете изменить имя элемента в представлении сетки данных. Можно также удалить из него.  
+     You should be able to edit the name of the element in the data grid view. You can also delete it from there.  
   
- ![DSL-Wpf-2](~/modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
   
-### <a name="about-the-code-to-add-an-element"></a>О коде, чтобы добавить элемент  
- Для новых кнопок элемент следующий альтернативный код немного проще.  
+### <a name="about-the-code-to-add-an-element"></a>About the code to add an element  
+ For the new element buttons, the following alternative code is slightly simpler.  
   
-```c#  
+```csharp  
 private void NewSheepButton_Click(object sender, EventArgs e)  
 {  
   using (Transaction t = farm.Store.TransactionManager.BeginTransaction("Add sheep"))  
@@ -322,11 +323,11 @@ private void NewSheepButton_Click(object sender, EventArgs e)
   
 ```  
   
- Тем не менее этот код не задано имя по умолчанию для нового элемента. Он не выполняет все настроенные слияния, которые определены в **директивы слияния элементов** доменного, и ее нельзя запустить любой код настраиваемого объединения, который был определен.  
+ However, this code does not set a default name for the new item. It does not run any customized merge that you might have defined in the **Element Merge Directives** of the DSL, and it does not run any custom merge code that might have been defined.  
   
- Корпорация Майкрософт рекомендует использовать <xref:Microsoft.VisualStudio.Modeling.ElementOperations>для создания новых элементов.</xref:Microsoft.VisualStudio.Modeling.ElementOperations> Дополнительные сведения см. в разделе [Настройка создания и перемещения элементов](../modeling/customizing-element-creation-and-movement.md).  
+ Therefore we recommend that you use <xref:Microsoft.VisualStudio.Modeling.ElementOperations> to create new elements. For more information, see [Customizing Element Creation and Movement](../modeling/customizing-element-creation-and-movement.md).  
   
-## <a name="see-also"></a>См. также  
- [Способ определения доменного языка](../modeling/how-to-define-a-domain-specific-language.md)   
- [Написание кода для настройки доменного языка](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [SDK моделирования для Visual Studio — доменные языки](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
+## <a name="see-also"></a>See Also  
+ [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md)   
+ [Writing Code to Customise a Domain-Specific Language](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
+ [Modeling SDK for Visual Studio - Domain-Specific Languages](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)

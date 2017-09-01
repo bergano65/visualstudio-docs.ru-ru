@@ -1,267 +1,267 @@
 ---
-title: "Пошаговое руководство. Импорт области формы, созданной в Outlook"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "импорт области формы"
-  - "области формы [разработка решений Office в Visual Studio], импорт"
+title: 'Walkthrough: Importing a Form Region That Is Designed in Outlook | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- importing form regions
+- form regions [Office development in Visual Studio], importing
 ms.assetid: 86b0ef1a-6d7e-4ea5-b90e-458ffe4e1d10
 caps.latest.revision: 35
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 31
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 5029c259d892b8848eae80d73751dd4be1d5d245
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
+
 ---
-# Пошаговое руководство. Импорт области формы, созданной в Outlook
-  В этом пошаговом руководстве демонстрируется создание области формы в Microsoft Office Outlook, а также ее импорт в проект надстройки Outlook VSTO с помощью мастера **Создать область формы**. Создание области формы в Outlook позволяет добавить собственные элементы управления Outlook в область формы, связанную с данными Outlook. После импорта области формы можно обрабатывать события каждого элемента управления.  
+# <a name="walkthrough-importing-a-form-region-that-is-designed-in-outlook"></a>Walkthrough: Importing a Form Region That Is Designed in Outlook
+  This walkthrough demonstrates how to design a form region in Microsoft Office Outlook, and then import the form region into an Outlook VSTO Add-in project by using the **New Form Region** wizard. Designing the form region in Outlook makes it possible for you to add native Outlook controls to the form region that bind to Outlook data. After you import the form region, you can handle the events of each control.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
- В данном пошаговом руководстве рассмотрены следующие задачи:  
+ This walkthrough illustrates the following tasks:  
   
--   создание области формы с помощью конструктора областей формы Outlook;  
+-   Designing a form region by using the form region designer in Outlook.  
   
--   импорт области формы в проект надстройки Outlook VSTO;  
+-   Importing a form region into an Outlook VSTO Add-in project.  
   
--   обработка событий элементов управления в области формы.  
+-   Handling the events of controls on the form region.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## Обязательные компоненты  
- Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] или [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
+-   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] or [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
   
 > [!NOTE]  
->  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/ru-ru/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
- ![ссылка на видео](~/data-tools/media/playvideo.gif "ссылка на видео") Для просмотра связанных демонстрационных видеороликов перейдите на страницу [Как создавать области формы Outlook с помощью Visual Studio 2008?](http://go.microsoft.com/fwlink/?LinkID=130305).  
+ ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [How Do I: Create Outlook Form Regions Using Visual Studio 2008?](http://go.microsoft.com/fwlink/?LinkID=130305).  
   
-## Создание области формы с помощью конструктора областей формы Outlook  
- На этом этапе создается область формы в Outlook. Затем необходимо сохранить область формы в доступном месте, чтобы ее можно было импортировать в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+## <a name="designing-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Designing a Form Region by Using the Form Region Designer in Outlook  
+ In this step you will design a form region in Outlook. You will then the save the form region to an easy-to-find location so that you can import it into [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
- Эта область формы полностью заменяет обычную форму задач. Она дает возможность отслеживать ход выполнения всех задач, которые должны быть завершены перед выполнением главной задачи \(обязательные задачи\). В области формы приводится список обязательных задач, а также состояние завершения каждой задачи в списке. Пользователи могут добавлять задачи в список и удалять их. Также можно обновлять состояние завершения каждой задачи.  
+ This example form region completely replaces the usual Task form. It provides a way to track the progress of all tasks that must be completed before the main task can be performed (prerequisite tasks). The form region displays a list of the prerequisite tasks, and shows the completion status for each task in the list. Users can add tasks to the list and remove them. They can also refresh the completion status of each task.  
   
-#### Создание области формы с помощью конструктора областей формы Outlook  
+#### <a name="to-design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>To design a form region by using the form region designer in Outlook  
   
-1.  Запустите приложение Microsoft Office Outlook.  
+1.  Start Microsoft Office Outlook.  
   
-2.  В Outlook на вкладке **Разработчик** нажмите кнопку **Создать форму**. Дополнительные сведения см. в разделе [Практическое руководство. Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+2.  In Outlook, on the **Developer** tab, click **Design a Form**. For more information, see [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-3.  В окне **Создать форму** выберите **Задача**, затем нажмите кнопку **Открыть**.  
+3.  In the **Design Form** box, click **Task**, and then click **Open**.  
   
-4.  В Outlook на вкладке **Разработчик** в группе **Разработка** нажмите кнопку **Создать область формы**.  
+4.  In Outlook, on the **Developer** tab, in the **Design** group, click **New Form Region**.  
   
-     Откроется новая область формы. Если не появится окно **Выбор полей**, нажмите **Выбор полей** в группе **Средства**.  
+     A new form region opens. If the **Field Chooser** does not appear, click **Field Chooser** in the **Tools** group.  
   
-5.  Перетащите поля **Тема** и **% завершено** из окна **Выбор полей** в область формы.  
+5.  Drag the **Subject** field and the **% Complete** field from the **Field Chooser** to the form region.  
   
-6.  В группе **Средства** нажмите **Набор элементов управления**, чтобы открыть **Панель элементов**.  
+6.  In the **Tools** group, click **Control Toolbox** to open the **Toolbox**.  
   
-7.  Перетащите метку с **панели элементов** в область формы. Разместите метку под полями **Тема** и **% завершено**.  
+7.  Drag a Label from the **Toolbox** to the form region. Position the label beneath the **Subject** and **% Complete** fields.  
   
-8.  Щелкните метку правой кнопкой мыши и выберите пункт **Дополнительные свойства**.  
+8.  Right-click the label, and then click **Advanced Properties**.  
   
-9. В окне **Свойства** для свойства **Заголовок** задайте значение **Эта задача зависит от следующих задач**, установите для свойства **Ширина** значение **200** и нажмите кнопку **Применить**.  
+9. In the **Properties** window, set the **Caption** property to **This task depends on the following tasks**, set the **Width** property to **200**, and then click **Apply**.  
   
-10. Перетащите элемент управления ListBox с **панели элементов** в область формы. Разместите список под меткой **Эта задача зависит от следующих задач**.  
+10. Drag a ListBox control from the **Toolbox** to the form region. Position the list box beneath the **This task depends on the following tasks** label.  
   
-11. Выберите только что добавленный список.  
+11. Select the list box that you just added.  
   
-12. В окне **Свойства** установите для свойства **Ширина** значение **300** и нажмите кнопку **Применить**.  
+12. In the **Properties** window, set **Width** to **300**, and then click **Apply**.  
   
-13. Перетащите метку с **панели элементов** в область формы. Разместите метку под списком.  
+13. Drag a Label from the **Toolbox** to the form region. Position the label beneath the list box.  
   
-14. Выберите только что добавленную метку.  
+14. Select the label that you just added.  
   
-15. В окне **Свойства** задайте для свойства **Заголовок** значение **Выберите задачу, которую нужно добавить в список зависимых задач**, установите для свойства **Ширина** значение **200** и нажмите кнопку **Применить**.  
+15. In the **Properties** window, set the **Caption** property to **Select a task to add to the list of dependent tasks**, set the **Width** property to **200**, and then click **Apply**.  
   
-16. Перетащите элемент управления ComboBox с **панели элементов** в область формы. Разместите поле со списком под меткой **Выберите задачу, которую нужно добавить в список зависимых задач**.  
+16. Drag a ComboBox control from the **Toolbox** to the form region. Position the combo box beneath the **Select a task to add to the list of dependent tasks** label.  
   
-17. Выберите только что добавленное поле со списком.  
+17. Select the combo box that you just added.  
   
-18. В окне **Свойства** установите для свойства **Ширина** значение **300** и нажмите кнопку **Применить**.  
+18. In the **Properties** window, set the **Width** property to **300**, and then click **Apply**.  
   
-19. Перетащите элемент управления CommandButton с **панели элементов** в область формы. Разместите кнопку рядом с полем со списком.  
+19. Drag a CommandButton control from the **Toolbox** to the form region. Position the command button next to the combo box.  
   
-20. Выберите только что добавленную кнопку.  
+20. Select the command button that you just added.  
   
-21. В окне **Свойства** установите для свойства **Имя** значение **AddDependentTask**, для свойства **Заголовок** — значение **Добавить зависимую задачу**, а для свойства **Ширина** — значение **100**, после чего нажмите кнопку **Применить**.  
+21. In the **Properties** window, set **Name** to **AddDependentTask**, set **Caption** to **Add Dependent Task**, set **Width** to **100**, and then click **Apply**.  
   
-22. В окне **Выбор полей** нажмите **Создать**.  
+22. In the **Field Chooser**, click **New**.  
   
-23. В диалоговом окне **Новое поле** в поле **Имя** введите **hiddenField** и нажмите кнопку **ОК**.  
+23. In the **New Field** dialog box, type **hiddenField** in the **Name** field, and then click **OK**.  
   
-24. Перетащите поле **hiddenField** из окна **Выбор полей** в область формы.  
+24. Drag the **hiddenField** field from the **Field Chooser** to the form region.  
   
-25. В окне **Свойства** установите для свойства **Видимый** значение **0 — False** и нажмите кнопку **Применить**.  
+25. In the **Properties** window, set **Visible** to **0 - False**, and then click **Apply**.  
   
-26. В Outlook на вкладке **Разработчик** в группе **Разработка** нажмите кнопку **Сохранить**, а затем нажмите кнопку **Сохранить область формы как**.  
+26. In Outlook, on the **Developer** tab, in the **Design** group, click the **Save** button, and then click **Save Form Region As**.  
   
-     Назовите область формы **TaskFormRegion** и сохраните в каталог локального компьютера.  
+     Name the form region **TaskFormRegion** and save it to a local directory on your computer.  
   
-     В Outlook область формы сохраняется в виде файла хранилища форм Outlook \(OFS\). Область формы сохранится под именем TaskFormRegion.ofs.  
+     Outlook saves the form region as an Outlook Form Storage (.ofs) file. The form region is saved with the name TaskFormRegion.ofs.  
   
-27. Закройте Outlook.  
+27. Exit Outlook.  
   
-## Создание проекта надстройки Outlook  
- В этом шаге будет создан проект надстройки VSTO для Outlook. Далее в пошаговом руководстве описывается процедура импорта области формы в проект.  
+## <a name="creating-a-new-outlook-add-in-project"></a>Creating a New Outlook Add-in Project  
+ In this step, you will create an Outlook VSTO Add-in project. Later in this walkthrough, you will import the form region into to the project.  
   
-#### Порядок создания нового проекта надстройки Outlook VSTO  
+#### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>To create a new Outlook VSTO Add-in project  
   
-1.  В [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] создайте проект надстройки VSTO для Outlook с именем **TaskAddIn**.  
+1.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], create an Outlook VSTO Add-in project with the name **TaskAddIn**.  
   
-2.  В диалоговом окне **Создание проекта** выберите **Создать каталог для решения**.  
+2.  In the **New Project** dialog box, select **Create directory for solution**.  
   
-3.  Сохраните проект в каталоге проекта по умолчанию.  
+3.  Save the project to the default project directory.  
   
-     Для получения дополнительной информации см. [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-## Импорт области формы  
- Мастер **Новая область формы Outlook** позволяет импортировать область формы, созданную в Outlook, в проект надстройки VSTO для Outlook.  
+## <a name="importing-the-form-region"></a>Importing the Form Region  
+ You can import the form region that you designed in Outlook into the Outlook VSTO Add-in project by using the **New Outlook Form Region** wizard.  
   
-#### Импорт области формы в проект надстройки VSTO для Outlook  
+#### <a name="to-import-the-form-region-into-the-outlook-vsto-add-in-project"></a>To import the form region into the Outlook VSTO Add-in project  
   
-1.  В **обозревателе решений** щелкните правой кнопкой мыши проект **TaskAddIn**, наведите указатель на пункт **Добавить**, а затем выберите пункт **Новый элемент**.  
+1.  In **Solution Explorer**, right-click the **TaskAddIn** project, point to **Add**, and then click **New Item**.  
   
-2.  В области **Шаблоны** выберите шаблон **Область формы Outlook**, назовите файл **TaskFormRegion** и нажмите кнопку **Добавить**.  
+2.  In the **Templates** pane, select **Outlook Form Region**, name the file **TaskFormRegion**, and then click **Add**.  
   
-     Запустится мастер **Новаяобласть формы Outlook**.  
+     The **NewOutlook Form Region** wizard starts.  
   
-3.  На странице **Выберите способ создания области формы** нажмите **Импортировать файл хранилища форм Outlook \(.ofs\)**, а затем кнопку **Обзор**.  
+3.  On the **Select how you want to create the form region** page, click **Import an Outlook Form Storage (.ofs) File**, and then click **Browse**.  
   
-4.  В диалоговом окне **Расположение существующих файлов области формы Outlook** найдите размещение файла **TaskFormRegion.ofs**, выберите файл **TaskFormRegion.ofs**, нажмите кнопку **Открыть**, а затем кнопку **Далее**.  
+4.  In the **Existing Outlook Form Region File Location** dialog box, browse to the location of **TaskFormRegion.ofs**, select **TaskFormRegion.ofs**, click **Open**, and then click **Next**.  
   
-5.  На странице **Выберите тип области формы, которую следует создать** выберите **Заменить все** и нажмите кнопку **Далее**.  
+5.  On the **Select the type of form region you want to create** page, click **Replace-all**, and then click **Next**.  
   
-     Область формы *Заменить все* заменяет всю форму Outlook. Дополнительные сведения о типах областей форм см. в разделе [Создание областей форм Outlook](../vsto/creating-outlook-form-regions.md).  
+     A *replace-all* form region replaces the entire Outlook form. For more information about form region types, see [Creating Outlook Form Regions](../vsto/creating-outlook-form-regions.md).  
   
-6.  На странице **Введите текст описания и выберите параметры отображения** нажмите кнопку **Далее**.  
+6.  On the **Supply descriptive text and select your display preferences** page, click **Next**.  
   
-7.  На странице **Укажите классы сообщений, в которых будет отображаться эта область формы** в поле **В каких классах пользовательских сообщений будет отображаться эта область формы?** введите **IPM.Task.TaskFormRegion**, а затем нажмите кнопку **Готово**.  
+7.  On the **Identify the message classes that will display this form region** page, in the **Which custom message classes will display this form region** field, type **IPM.Task.TaskFormRegion**, and then click **Finish**.  
   
-     В проект добавится файл TaskFormRegion.cs или TaskFormRegion.vb.  
+     A TaskFormRegion.cs or TaskFormRegion.vb file is added to your project.  
   
-## Обработка событий элементов управления в области формы  
- После импорта области формы в проект можно добавить код, который обрабатывает событие Microsoft.Office.Interop.Outlook.OlkCommandButton.Click кнопки, добавленной в область формы в Outlook.  
+## <a name="handling-the-events-of-controls-on-the-form-region"></a>Handling the Events of Controls on the Form Region  
+ Now that you have the form region in the project, you can add code that handles the Microsoft.Office.Interop.Outlook.OlkCommandButton.Click event of the button that you added to the form region in Outlook.  
   
- Кроме того, можно добавить в событие <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> код, который обновляет элементы управления в области формы при ее появлении.  
+ Also, add code to the <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> event that updates controls on the form region when the form region appears.  
   
-#### Обработка событий элементов управления в области формы  
+#### <a name="to-handle-the-events-of-controls-on-the-form-region"></a>To handle the events of controls on the form region  
   
-1.  В **обозревателе решений** щелкните правой кнопкой мыши файл TaskFormRegion.cs или TaskFormRegion.vb и выберите команду **Просмотреть код**.  
+1.  In **Solution Explorer**, right-click TaskFormRegion.cs or TaskFormRegion.vb, and then click **View Code**.  
   
-     Файл TaskFormRegion.cs или TaskFormRegion.vb откроется в редакторе кода.  
+     TaskFormRegion.cs or TaskFormRegion.vb opens in the Code Editor.  
   
-2.  Добавьте следующий код в класс `TaskFormRegion`. Этот код заполняет поле со списком в области формы строкой темы каждой задачи из папки задач Outlook.  
+2.  Add the following code to the `TaskFormRegion` class. This code populates the combo box on the form region with the subject line of each task from the Outlook Tasks folder.  
   
-     [!code-csharp[Trin_Outlook_FR_Import#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Outlook_FR_Import/CS/TaskFormRegion.cs#1)]
-     [!code-vb[Trin_Outlook_FR_Import#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Outlook_FR_Import/VB/TaskFormRegion.vb#1)]  
+     [!code-csharp[Trin_Outlook_FR_Import#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#1)]  [!code-vb[Trin_Outlook_FR_Import#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#1)]  
   
-3.  Добавьте следующий код в класс `TaskFormRegion`. Этот код выполняет следующие задачи:  
+3.  Add the following code to the `TaskFormRegion` class. This code performs the following tasks:  
   
-    -   находит объект Microsoft.Office.Interop.Outlook.TaskItem в папке "Задачи" путем вызова вспомогательного метода `FindTaskBySubjectName` и передачи темы необходимой задачи; вспомогательный метод `FindTaskBySubjectName` будет добавлен позже;  
+    -   Locates the Microsoft.Office.Interop.Outlook.TaskItem in the Tasks folder by calling the `FindTaskBySubjectName` helper method and passing the subject of the desired task. You will add the `FindTaskBySubjectName` helper method in the next step.  
   
-    -   добавляет значения Microsoft.Office.Interop.Outlook.TaskItem.Subject и Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete в список зависимых задач;  
+    -   Adds the Microsoft.Office.Interop.Outlook.TaskItem.Subject and Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete values to the dependent task list box.  
   
-    -   добавляет тему задачи в скрытое поле области формы. Значения в скрытом поле сохраняются как часть элемента Outlook.  
+    -   Adds the subject of the task to the hidden field on the form region. The hidden field stores these values as part of the Outlook item.  
   
-     [!code-csharp[Trin_Outlook_FR_Import#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Outlook_FR_Import/CS/TaskFormRegion.cs#2)]
-     [!code-vb[Trin_Outlook_FR_Import#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Outlook_FR_Import/VB/TaskFormRegion.vb#2)]  
+     [!code-csharp[Trin_Outlook_FR_Import#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#2)] [!code-vb[Trin_Outlook_FR_Import#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#2)]  
   
-4.  Добавьте следующий код в класс `TaskFormRegion`. В этом коде представлен вспомогательный метод `FindTaskBySubjectName`, описанный в предыдущем шаге.  
+4.  Add the following code to the `TaskFormRegion` class. This code provides the helper method `FindTaskBySubjectName` that was described in the preceding step.  
   
-     [!code-csharp[Trin_Outlook_FR_Import#3](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Outlook_FR_Import/CS/TaskFormRegion.cs#3)]
-     [!code-vb[Trin_Outlook_FR_Import#3](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Outlook_FR_Import/VB/TaskFormRegion.vb#3)]  
+     [!code-csharp[Trin_Outlook_FR_Import#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#3)]  [!code-vb[Trin_Outlook_FR_Import#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#3)]  
   
-5.  Добавьте следующий код в класс `TaskFormRegion`. Этот код выполняет следующие задачи:  
+5.  Add the following code to the `TaskFormRegion` class. This code performs the following tasks:  
   
-    -   обновляет список в области формы, используя текущее состояние завершения каждой зависимой задачи;  
+    -   Refreshes the list box on the form region with the current completion status of each dependent task.  
   
-    -   выполняет синтаксический анализ скрытого текстового поля, чтобы получить тему каждой зависимой задачи; находит каждый объект Microsoft.Office.Interop.Outlook.TaskItem в папке "Задачи" путем вызова вспомогательного метода `FindTaskBySubjectName` и передачи темы каждой задачи;  
+    -   Parses the hidden text field to obtain the subject of each dependent task. It then locates each Microsoft.Office.Interop.Outlook.TaskItem in the Tasks folder by calling the `FindTaskBySubjectName` helper method and passing the subject of each task.  
   
-    -   добавляет значения Microsoft.Office.Interop.Outlook.TaskItem.Subject и Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete в список зависимых задач.  
+    -   Adds the Microsoft.Office.Interop.Outlook.TaskItem.Subject and Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete values to the dependent task list box.  
   
-     [!code-csharp[Trin_Outlook_FR_Import#4](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Outlook_FR_Import/CS/TaskFormRegion.cs#4)]
-     [!code-vb[Trin_Outlook_FR_Import#4](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Outlook_FR_Import/VB/TaskFormRegion.vb#4)]  
+     [!code-csharp[Trin_Outlook_FR_Import#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#4)] [!code-vb[Trin_Outlook_FR_Import#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#4)]  
   
-6.  Замените обработчик событий `TaskFormRegion_FormRegionShowing` следующим кодом. Этот код выполняет следующие задачи:  
+6.  Replace the `TaskFormRegion_FormRegionShowing` event handler with the following code. This code performs the following tasks:  
   
-    -   заполняет поле со списком области формы темами задач при появлении области формы;  
+    -   Populates the combo box on the form region with task subjects when the form region appears.  
   
-    -   вызывает вспомогательный метод `RefreshTaskListBox` при появлении области формы. В этом случае отображаются зависимые задачи, добавленные в список во время предыдущего открытия элемента.  
+    -   Calls the `RefreshTaskListBox` helper method when the form region appears. This displays any dependent tasks that were added to the list box when the item was previously opened.  
   
-     [!code-csharp[Trin_Outlook_FR_Import#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Outlook_FR_Import/CS/TaskFormRegion.cs#5)]
-     [!code-vb[Trin_Outlook_FR_Import#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Outlook_FR_Import/VB/TaskFormRegion.vb#5)]  
+     [!code-csharp[Trin_Outlook_FR_Import#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#5)] [!code-vb[Trin_Outlook_FR_Import#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#5)]  
   
-## Тестирование области формы Outlook  
- Чтобы протестировать область формы, добавьте в нее задачи из списка обязательных задач. Обновите состояние завершения обязательной задачи, а затем просмотрите обновленное состояние завершения задачи в списке обязательных задач.  
+## <a name="testing-the-outlook-form-region"></a>Testing the Outlook Form Region  
+ To test the form region, add tasks to the list of prerequisite tasks on the form region. Update the completion status of a prerequisite task, and then view the updated completion status of the task in the prerequisite task list.  
   
-#### Тестирование области формы  
+#### <a name="to-test-the-form-region"></a>To test the form region  
   
-1.  Нажмите клавишу F5, чтобы запустить проект.  
+1.  Press F5 to run the project.  
   
-     Запускается Outlook.  
+     Outlook starts.  
   
-2.  В Outlook на вкладке **Главная** нажмите кнопку **Новые элементы** и щелкните **Задача**.  
+2.  In Outlook, on the **Home** tab, click **New Items**, and then click **Task**.  
   
-3.  В поле **Тема** формы задач введите **Зависимая задача**.  
+3.  In the task form, type **Dependent Task** in the **Subject** field.  
   
-4.  На вкладке **Задача** ленты в группе **Действия** нажмите кнопку **Сохранить и закрыть**.  
+4.  On the **Task** tab of the Ribbon, in the **Actions** group, click **Save & Close**.  
   
-5.  В Outlook на вкладке **Главная** нажмите кнопку **Новые элементы**, щелкните **Другие элементы** и нажмите кнопку **Выбрать форму**.  
+5.  In Outlook, on the **Home** tab, click **New Items**, click **More Items**, and then click **Choose Form**.  
   
-6.  В диалоговом окне **Выбор формы** выберите форму **TaskFormRegion** и нажмите кнопку **Открыть**.  
+6.  In the **Choose Form** dialog box, click **TaskFormRegion**, and then click **Open**.  
   
-     Появится область формы **TaskFormRegion**. Эта форма полностью заменяет всю форму задач. Поле со списком **Выберите задачу, которую нужно добавить в список зависимых задач** заполняется другими задачами из папки "Задачи".  
+     The **TaskFormRegion** form region appears. This form replaces the entire task form. The **Select a task to add to the list of dependent tasks** combo box is populated with other tasks in the Tasks folder.  
   
-7.  В поле **Тема** формы задач введите **Основная задача**.  
+7.  On the task form, in the **Subject** field, type **Primary Task**.  
   
-8.  В поле со списком **Выберите задачу, которую нужно добавить в список зависимых задач** выберите пункт **Зависимая задача**, а затем нажмите кнопку **Добавить зависимую задачу**.  
+8.  In the **Select a task to add to the list of dependent tasks** combo box, select **Dependent Task**, and then click **Add Dependent Task**.  
   
-     В списке **Эта задача зависит от следующих задач** появится пункт **0% завершено — Зависимая задача**. Это означает, что обработка события Microsoft.Office.Interop.Outlook.OlkCommandButton.Click кнопки успешно выполнена.  
+     **0% Complete -- Dependent Task** appears in the **This task depends on the following tasks** list box. This demonstrates that you successfully handled the Microsoft.Office.Interop.Outlook.OlkCommandButton.Click event of the button.  
   
-9. Сохраните и закройте элемент **Основная задача**.  
+9. Save and close the **Primary Task** item.  
   
-10. Повторно откройте элемент "Зависимая задача" в Outlook.  
+10. Reopen the Dependent Task item in Outlook.  
   
-11. В форме "Зависимая задача" измените значение поля **% завершено** на **50 %**.  
+11. On the Dependent Task form, change the **% Complete** field to **50%**.  
   
-12. На вкладке **Задача** ленты зависимой задачи в группе **Действия** нажмите кнопку **Сохранить и закрыть**.  
+12. On the **Task** tab of the Dependent Task Ribbon, in the **Actions** group, click **Save & Close**.  
   
-13. Повторно откройте элемент **Основная задача** в Outlook.  
+13. Reopen the **Primary Task** item in Outlook.  
   
-     В списке **Эта задача зависит от следующих задач** появится пункт **50 % завершено — Зависимая задача**.  
+     **50% Complete -- Dependent Task** now appears in the **This task depends on the following tasks** list box.  
   
-## Следующие действия  
- Дополнительные сведения о настройке пользовательского интерфейса приложения Outlook см. в следующих разделах.  
+## <a name="next-steps"></a>Next Steps  
+ You can learn more about how to customize the UI of an Outlook application from these topics:  
   
--   Дополнительные сведения о настройке внешнего вида области формы путем перетаскивания элементов управления в визуальный конструктор см. в разделе [Пошаговое руководство. Разработка области формы Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   To learn more about how to design the appearance of a form region by dragging managed controls onto a visual designer, see [Walkthrough: Designing an Outlook Form Region](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
--   Дополнительные сведения о настройке ленты элемента Outlook см. в разделе [Настройка ленты для Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
+-   To learn about how to customize the Ribbon of an Outlook item, see [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
   
--   Дополнительные сведения о добавлении настраиваемой области задач в приложение Outlook см. в разделе [Настраиваемые области задач](../vsto/custom-task-panes.md).  
+-   To learn more about how to add a custom task pane to Outlook, see [Custom Task Panes](../vsto/custom-task-panes.md).  
   
-## См. также  
- [Доступ к области формы во время выполнения](../vsto/accessing-a-form-region-at-run-time.md)   
- [Создание областей форм Outlook](../vsto/creating-outlook-form-regions.md)   
- [Рекомендации по созданию областей формы Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
- [Пошаговое руководство. Разработка области формы Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Практическое руководство. Добавление области формы в проект надстройки Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
- [Связывание области формы с классом сообщений Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
- [Пользовательские действия в областях форм Outlook](../vsto/custom-actions-in-outlook-form-regions.md)   
- [Практическое руководство. Отсутствие отображения области формы в Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
+## <a name="see-also"></a>See Also  
+ [Accessing a Form Region at Run Time](../vsto/accessing-a-form-region-at-run-time.md)   
+ [Creating Outlook Form Regions](../vsto/creating-outlook-form-regions.md)   
+ [Guidelines for Creating Outlook Form Regions](../vsto/guidelines-for-creating-outlook-form-regions.md)   
+ [Walkthrough: Designing an Outlook Form Region](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [How to: Add a Form Region to an Outlook Add-in Project](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [Associating a Form Region with an Outlook Message Class](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
+ [Custom Actions in Outlook Form Regions](../vsto/custom-actions-in-outlook-form-regions.md)   
+ [How to: Prevent Outlook from Displaying a Form Region](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
   
   

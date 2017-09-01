@@ -1,50 +1,66 @@
 ---
-title: "CA1044: свойства не должны быть доступны только на запись | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "PropertiesShouldNotBeWriteOnly"
-  - "CA1044"
-helpviewer_keywords: 
-  - "CA1044"
-  - "PropertiesShouldNotBeWriteOnly"
+title: 'CA1044: Properties should not be write only | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- PropertiesShouldNotBeWriteOnly
+- CA1044
+helpviewer_keywords:
+- CA1044
+- PropertiesShouldNotBeWriteOnly
 ms.assetid: 8386bf3a-b161-4841-bf8b-92591595aea9
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
----
-# CA1044: свойства не должны быть доступны только на запись
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 129c2ded7f18a21c97f95869fa385f897e12125a
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1044-properties-should-not-be-write-only"></a>CA1044: Properties should not be write only
 |||  
 |-|-|  
 |TypeName|PropertiesShouldNotBeWriteOnly|  
 |CheckId|CA1044|  
-|Категория|Microsoft.Design|  
-|Критическое изменение|Критическое изменение|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## Причина  
- Открытое или защищенное свойство имеет метод доступа set, но не имеет метода доступа get.  
+## <a name="cause"></a>Cause  
+ The public or protected property has a set accessor but does not have a get accessor.  
   
-## Описание правила  
- Методы доступа get предоставляют доступ на чтение свойства, а методы доступа set — на запись свойства.  Несмотря на то, что допустимо, а часто и необходимо иметь свойство, доступное только на чтение, рекомендации по разработке запрещают использование свойств, доступных только на запись.  Это обусловлено тем, что запрет на просмотр заданного пользователем значения не обеспечивает безопасность.  Кроме того, при отсутствии доступа на чтение нельзя просмотреть состояние общих объектов, что снижает их полезность.  
+## <a name="rule-description"></a>Rule Description  
+ Get accessors provide read access to a property and set accessors provide write access. Although it is acceptable and often necessary to have a read-only property, the design guidelines prohibit the use of write-only properties. This is because letting a user set a value and then preventing the user from viewing the value does not provide any security. Also, without read access, the state of shared objects cannot be viewed, which limits their usefulness.  
   
-## Устранение нарушений  
- Чтобы устранить нарушение этого правило, добавьте для свойства метод доступа get.  Кроме того, если все же требуется свойство, доступное только для записи, можно преобразовать это свойство в метод.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, add a get accessor to the property. Alternatively, if the behavior of a write-only property is necessary, consider converting this property to a method.  
   
-## Отключение предупреждений  
- Настоятельно рекомендуется не отключать предупреждение этого правила.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is strongly recommended that you do not suppress a warning from this rule.  
   
-## Пример  
- В следующем примере `BadClassWithWriteOnlyProperty` является типом со свойством только для записи.  Метод `GoodClassWithReadWriteProperty` содержит исправленный код.  
+## <a name="example"></a>Example  
+ In the following example, `BadClassWithWriteOnlyProperty` is a type with a write-only property. `GoodClassWithReadWriteProperty` contains the corrected code.  
   
- [!code-vb[FxCop.Design.PropertiesNotWriteOnly#1](../code-quality/codesnippet/VisualBasic/ca1044-properties-should-not-be-write-only_1.vb)]
- [!code-cs[FxCop.Design.PropertiesNotWriteOnly#1](../code-quality/codesnippet/CSharp/ca1044-properties-should-not-be-write-only_1.cs)]
+ [!code-vb[FxCop.Design.PropertiesNotWriteOnly#1](../code-quality/codesnippet/VisualBasic/ca1044-properties-should-not-be-write-only_1.vb)] [!code-csharp[FxCop.Design.PropertiesNotWriteOnly#1](../code-quality/codesnippet/CSharp/ca1044-properties-should-not-be-write-only_1.cs)]

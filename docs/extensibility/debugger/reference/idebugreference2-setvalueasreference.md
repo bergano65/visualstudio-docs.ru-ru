@@ -1,5 +1,5 @@
 ---
-title: "IDebugReference2::SetValueAsReference | Документы Microsoft"
+title: IDebugReference2::SetValueAsReference | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,18 +30,19 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 36c017b6579d5f6fa1e99f44470836e68640321f
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e295ad3fd09a8b5dbaa17cdd6f10f3cb8a9ff1b9
+ms.contentlocale: ru-ru
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
-Задает значение ссылки из другой ссылки. Зарезервировано для будущего использования.  
+Sets the value of a reference from another reference. Reserved for future use.  
   
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT SetValueAsReference (   
    IDebugReference2** rgpArgs,  
    DWORD              dwArgCount,  
@@ -50,7 +51,7 @@ HRESULT SetValueAsReference (
 );  
 ```  
   
-```cpp#  
+```cpp  
 int SetValueAsReference (   
    IDebugReference2[] rgpArgs,  
    uint               dwArgCount,  
@@ -59,21 +60,21 @@ int SetValueAsReference (
 );  
 ```  
   
-#### <a name="parameters"></a>Параметры  
+#### <a name="parameters"></a>Parameters  
  `rgpArgs`  
- [in] Массив [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) объектов, используемых для определения способа установки значения ссылки.  
+ [in] An array of [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objects used to determine how to set the reference value.  
   
  `dwArgCount`  
- [in] Число ссылок в массиве.  
+ [in] The number of references in the array.  
   
  `pValue`  
- [in] [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) объект, из которого можно задать значение свойства.  
+ [in] An [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) object from which to set the property value.  
   
  `dwTimeout`  
- [in] Максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного ожидания.  
+ [in] Maximum time, in milliseconds, to wait before returning from this method. Use `INFINITE` to wait indefinitely.  
   
-## <a name="return-value"></a>Возвращаемое значение  
- Всегда возвращает значение `E_NOTIMPL`.  
+## <a name="return-value"></a>Return Value  
+ Always returns `E_NOTIMPL`.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>See Also  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

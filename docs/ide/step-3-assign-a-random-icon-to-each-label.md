@@ -1,5 +1,5 @@
 ---
-title: "Шаг 3. Назначение каждой метке случайного значка | Документы Майкрософт"
+title: 'Step 3: Assign a Random Icon to Each Label | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -27,46 +27,46 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9044821c2bfee0dba8ffa91f3d91afd565b8d957
-ms.openlocfilehash: 75c899caa3b620899bb2bd8107c63386dd4f40d9
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 9a8c18c2d8e313154aa0c72fe5fd5f047cc1780d
 ms.contentlocale: ru-ru
-ms.lasthandoff: 05/19/2017
+ms.lasthandoff: 08/30/2017
 
 ---
-# <a name="step-3-assign-a-random-icon-to-each-label"></a>Шаг 3. Назначение каждой метке случайного значка
-Если значки оказываются в одной и той же ячейке каждую игру, игра становится слишком простой. Чтобы избежать этого, назначайте значки меткам случайным образом, используя для этого метод `AssignIconsToSquares()`.  
+# <a name="step-3-assign-a-random-icon-to-each-label"></a>Step 3: Assign a Random Icon to Each Label
+If the icons show up in the same cells every game, it's not very challenging. To avoid this, assign the icons randomly to the label controls on your form by using an `AssignIconsToSquares()` method.  
   
-### <a name="to-assign-a-random-icon-to-each-label"></a>Назначение каждой метке случайного значка  
+### <a name="to-assign-a-random-icon-to-each-label"></a>To assign a random icon to each label  
   
-1.  Перед добавлением следующего кода разберитесь в принципе его работы. В C# есть новое ключевое слово `foreach`, а в Visual Basic — `For Each`. (Одна из строк закомментирована по причине, описанной в конце этой процедуры.)  
+1.  Before adding the following code, consider how the method works. There's a new keyword: `foreach` in Visual C# and `For Each` in Visual Basic. (One of the lines is commented out on purpose, which is explained at the end of this procedure.)  
   
-     [!code-cs[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_1.cs)] [!code-vb[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_1.vb)]  
+     [!code-csharp[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_1.cs)]  [!code-vb[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_1.vb)]  
   
-2.  Добавьте метод `AssignIconsToSquares()`, как показано в предыдущем шаге. Вы можете поместить его сразу же после кода, добавленного в разделе [Шаг 2. Добавление случайного объекта и списка значков](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).  
+2.  Add the `AssignIconsToSquares()` method as shown in the previous step. You can put it just below the code you added in [Step 2: Add a Random Object and a List of Icons](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).  
   
-     Как было сказано выше, в методе `AssignIconsToSquares()` имеется определенное нововведение: цикл `foreach` в Visual C# и `For Each` в Visual Basic. Цикл `For Each` можно использовать в любое время для выполнения одного и того же действия несколько раз. В данном случае требуется выполнять одни и те же операторы для каждой метки в TableLayoutPanel, как показано в следующем коде. Первая строка создает переменную с именем `control`, которая хранит каждый элемент управления по одному, пока у этого элемента управления есть инструкции в цикле, выполняемом для него.  
+     As mentioned earlier, there's something new in your `AssignIconsToSquares()` method: a `foreach` loop in Visual C# and `For Each` in Visual Basic. You can use a `For Each` loop any time you want to do the same action multiple times. In this case, you want to execute the same statements for every label on your TableLayoutPanel, as explained by the following code. The first line creates a variable named `control` that stores each control one at a time while that control has the statements in the loop executed on it.  
   
-     [!code-cs[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_2.cs)] [!code-vb[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_2.vb)]  
+     [!code-csharp[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_2.cs)]  [!code-vb[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_2.vb)]  
   
     > [!NOTE]
-    >  Используются имена iconLabel и control, поскольку они являются описательными. Можно заменить эти имена на любые другие и это не повлияет на работу кода (при условии, что имена будут изменены имена в каждом операторе внутри цикла).  
+    >  The names "iconLabel" and "control" are used because they are descriptive. You can replace these names with any names, and the code will work exactly the same as long as you change the name in each statement inside the loop.  
   
-     Метод `AssignIconsToSquares()` перебирает все элементы управления Label в TableLayoutPanel и выполняет одни и те же операторы для каждого из них. Эти операторы запрашивают случайные значки из списка, добавленного в процедуре [Шаг 2. Добавление случайного объекта и списка значков](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). (Вот почему в список включено по два значка. Это позволяет назначить пару значков случайным элементам управления Label.)  
+     The `AssignIconsToSquares()` method iterates through each label control in the TableLayoutPanel and executes the same statements for each of them. Those statements pull a random icon from the list that you added in [Step 2: Add a Random Object and a List of Icons](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). (That's why you included two of each icon in the list, so there would be a pair of icons assigned to random label controls.)  
   
-     Внимательнее рассмотрите код, выполняемый внутри цикла `foreach` или `For Each`. Этот код воспроизведен здесь.  
+     Look more closely at the code that runs inside the `foreach` or `For Each` loop. This code is reproduced here.  
   
-     [!code-cs[VbExpressTutorial4Step2_3_4#16](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_3.cs)] [!code-vb[VbExpressTutorial4Step2_3_4#16](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_3.vb)]  
+     [!code-csharp[VbExpressTutorial4Step2_3_4#16](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_3.cs)]  [!code-vb[VbExpressTutorial4Step2_3_4#16](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_3.vb)]  
   
-     Первая строка преобразует переменную `control` в метку с именем `iconLabel`. Следующая строка представляет собой оператор `if`, проверяющий и обеспечивающий успешное выполнение преобразования. Если преобразование выполняется, выполняются операторы в операторе `if`. (Как можно вспомнить из предыдущих занятий, оператор `if` используется для проверки заданного условия). Первая строка в операторе `if` создает переменную с именем `randomNumber`, содержащую случайное число, соответствующее одному из элементов списка значков. Для этого используется метод `Next` объекта `Random`, созданного ранее. Метод `Next` возвращает случайное число. Эта строка также использует свойство `Count` списка `icons` для определения диапазона, из которого выбирается случайное число. В следующей строке один из элементов списка значков присваивается свойству `Text` этой метки. Пояснения относительно строки с комментариям приводятся далее в этом разделе. Наконец, последняя строка в операторе `if` удаляет из списка значок, добавленный в форму.  
+     The first line converts the `control` variable to a label named `iconLabel`. The line after that is an `if` statement that checks to make sure the conversion worked. If the conversion does work, the statements in the `if` statement run. (As you may recall from the previous tutorials, the `if` statement is used to evaluate whatever condition you specify.) The first line in the `if` statement creates a variable named `randomNumber` that contains a random number that corresponds to one of the items in the icons list. To do this, it uses the `Next` method of the `Random` object that you created earlier. The `Next` method returns the random number. This line also uses the `Count` property of the `icons` list to determine the range from which to choose the random number. The next line assigns one of the icon list items to the `Text` property of the label. The commented-out line is explained later in this topic. Finally, the last line in the `if` statement removes from the list the icon that has been added to the form.  
   
-     Помните, если вы не уверены, что делает какая-либо часть кода, можно навести указатель мыши на элемент кода и посмотреть отображаемую подсказку. Можно также выполнять каждую строку кода пошагово после запуска программы, воспользовавшись отладчиком Visual Studio. Дополнительные сведения см. в разделе [Практические советы. Пошаговая работа с отладчиком в Visual Studio](http://msdn.microsoft.com/vstudio/ee672313.aspx) или [Навигация по коду с помощью отладчика](../debugger/navigating-through-code-with-the-debugger.md).  
+     Remember, if you're not sure about what some part of the code does, you can position the mouse pointer over a code element and review the resulting tooltip. You can also step through each line of code while the program is running by using the Visual Studio debugger. See [How Do I: Step with The Debugger in Visual Studio?](http://msdn.microsoft.com/vstudio/ee672313.aspx) or [Navigating through Code with the Debugger](../debugger/navigating-through-code-with-the-debugger.md) for more information.  
   
-3.  Чтобы быстро заполнить игровое поле значками, необходимо вызвать метод `AssignIconsToSquares()` сразу после запуска программы. При написании кода на языке Visual C# добавьте оператор после вызова метода `InitializeComponent()` в *конструкторе* `Form1`. В этом случае форма будет вызывать новый метод для ее настройки перед отображением. Конструкторы вызываются при создании нового объекта, такого как класс или структура. Дополнительные сведения см. в разделах [Конструкторы (руководство по программированию на C#)](http://msdn.microsoft.com/library/ace5hbzh.aspx) и [Использование конструкторов и деструкторов](http://msdn.microsoft.com/library/2z08e49e.aspx) в Visual Basic.  
+3.  To fill up the game board with icons, you need to call the `AssignIconsToSquares()` method as soon as the program starts. If you're using Visual C#, add a statement just below the call to the `InitializeComponent()` method in the `Form1`*constructor*, so your form calls your new method to set itself up before it's shown. Constructors are called when you create a new object, such as a class or struct. See [Constructors (C# Programming Guide)](http://msdn.microsoft.com/library/ace5hbzh.aspx) or [Using Constructors and Destructors](http://msdn.microsoft.com/library/2z08e49e.aspx) in Visual Basic for more information.  
   
-     [!code-cs[VbExpressTutorial4Step2_3_4#13](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_4.cs)]  
+     [!code-csharp[VbExpressTutorial4Step2_3_4#13](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_4.cs)]  
   
-     В Visual Basic добавьте вызов метода `AssignIconsToSquares()` в метод `Form1_Load`, чтобы код выглядел следующим образом.  
+     For Visual Basic, add the `AssignIconsToSquares()` method call to the `Form1_Load` method so that the code looks like the following.  
   
     ```vb  
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load  
@@ -74,26 +74,26 @@ ms.lasthandoff: 05/19/2017
     End Sub  
     ```  
   
-4.  Сохраните и выполните программу. Должна отобразиться форма со случайными значками, которые назначены каждой метке.  
+4.  Save your program and run it. It should show a form with random icons assigned to each label.  
   
-5.  Закройте программу, а затем снова запустите ее. Обратите внимание, что теперь каждой метке назначены другие значки, как показано на следующем рисунке.  
+5.  Close your program, and then run it again. Notice that different icons are assigned to each label, as shown in the following picture.  
   
-     ![Игра "Подбери пару!" со случайными значками](~/ide/media/express_tut4step3.png "Express_Tut4Step3")  
-Игра "Подбери пару!" со случайными значками  
+     ![Matching game with random icons](../ide/media/express_tut4step3.png "Express_Tut4Step3")  
+Matching game with random icons  
   
-     Значки видимы, поскольку они не были скрыты. Чтобы скрыть их из игрока, можно задать для свойства `Forecolor` каждой метки тот же цвет, что и у свойства `BackColor`.  
+     The icons are visible now because you haven't hidden them. To hide them from the player, you can set each label's `Forecolor` property to the same color as its `BackColor` property.  
   
     > [!TIP]
-    >  Другой способ скрывать элементы управления, например метки, — задать для свойства **Visible** значение `False`.  
+    >  Another way to hide controls like labels is to set their **Visible** property to `False`.  
   
-6.  Чтобы скрыть значки, остановите программу и удалите метки комментариев с соответствующей строки кода в цикле `For Each`.  
+6.  To hide the icons, stop the program and remove the comment marks for the commented line of code inside the `For Each` loop.  
   
-     [!code-cs[VbExpressTutorial4Step2_3_4#15](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_5.cs)] [!code-vb[VbExpressTutorial4Step2_3_4#15](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_5.vb)]  
+     [!code-csharp[VbExpressTutorial4Step2_3_4#15](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_5.cs)]  [!code-vb[VbExpressTutorial4Step2_3_4#15](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_5.vb)]  
   
-7.  На панели меню нажмите кнопку **Сохранить все**, чтобы сохранить программу, а затем запустите программу. Похоже, что значки исчезли. Отображается только голубой фон. Однако значки назначены случайным образом и по-прежнему существуют. Поскольку значки имеют тот же цвет, что и фон, они невидимы, т. е. скрыты от игрока. Наконец, игра станет неинтересной, если игрок будет сразу видеть все значки!  
+7.  On the menu bar, choose the **Save All** button to save your program, and then run it. The icons seem to have disappeared—only a blue background appears. However, the icons are randomly assigned and are still there. Because the icons are the same color as the background, it hides them from the player. After all, it wouldn't be a very challenging game if the player could see all of the icons right away!  
   
-### <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал  
+### <a name="to-continue-or-review"></a>To continue or review  
   
--   Следующий шаг руководства: [Шаг 4. Добавление к каждой метке обработчика событий щелчка мышью](../ide/step-4-add-a-click-event-handler-to-each-label.md).  
+-   To go to the next tutorial step, see [Step 4: Add a Click Event Handler to Each Label](../ide/step-4-add-a-click-event-handler-to-each-label.md).  
   
--   Предыдущий шаг руководства: [Шаг 2. Добавление случайного объекта и списка значков](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+-   To return to the previous tutorial step, see [Step 2: Add a Random Object and a List of Icons](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
