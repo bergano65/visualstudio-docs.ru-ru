@@ -1,6 +1,6 @@
 ---
-title: "Советы и рекомендации по улучшению работы Visual Studio | Документы Майкрософт"
-ms.date: 08/07/2017
+title: Visual Studio Performance Tips and Tricks | Microsoft Docs
+ms.date: 08/31/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -30,126 +30,126 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: fe6d864baf518cba882cea8e985fdacbfdf5b8b2
-ms.openlocfilehash: 53c31da02b643114d9b152a0cde180ff5f6a5b7e
+ms.sourcegitcommit: 4306111cd49a5299bfa5d4e5e22b212bc7799fe2
+ms.openlocfilehash: fbaa543564506a99d3ed6833ec4d1f692fae43f7
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/02/2017
 
 ---
-# <a name="visual-studio-performance-tips-and-tricks"></a>Советы и рекомендации по улучшению работы Visual Studio
+# <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio Performance Tips and Tricks
 
-Рекомендации по повышению производительности Visual Studio предназначены для редких ситуаций, когда может возникать нехватка памяти. В таких случаях можно оптимизировать определенные компоненты Visual Studio, которые могут не использоваться. Приведенные ниже советы не следует рассматривать как общие рекомендации.
+Visual Studio performance recommendations are intended for low memory situations, which may occur in rare cases. In these situations, you can optimize certain Visual Studio features that you may not be using. The following tips are not intended as general recommendations.
 
 > [!NOTE]
-> Если при работе с продуктом у вас возникают затруднения из-за проблем с памятью, свяжитесь с нами через средство обратной связи.
+> If you’re having difficulty using the product because of memory issues, let us know through the feedback tool.
 
-## <a name="optimize-your-environment"></a>Оптимизация окружения
+## <a name="optimize-your-environment"></a>Optimize your environment
 
-- **Использование 64-разрядной ОС**
+- **Use a 64bit OS**
 
-    При переходе с 32-разрядной на 64-разрядную версию Windows вы увеличиваете объем виртуальной памяти, доступной Visual Studio, с 2 до 4 ГБ. Это позволяет Visual Studio обрабатывать значительно большие рабочие нагрузки, даже если это 32-разрядный процесс.
+    If you upgrade your system from a 32-bit version of Windows to a 64-bit version, you expand the amount of virtual memory available to Visual Studio from 2 GB to 4 GB. This enables Visual Studio to handle significantly larger workloads even though it is 32-bit process.
 
-    Дополнительные сведения см. в разделах [Ограничения памяти](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) и [Использование /LARGEADDRESSAWARE в 64-разрядной версии Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+    For more information, see [Memory limits](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) and [Using /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
-## <a name="configure-solution-and-projects"></a>Настройка решения и проектов
+## <a name="configure-solution-and-projects"></a>Configure solution and projects
 
-При наличии очень большого решения с множеством проектов можно попытаться осуществить следующие оптимизации:
+If you have a very large solution with many projects, you may benefit by making the following optimizations:
 
-- **Включение загрузки упрощенного решения**
+- **Enable Lightweight Solution Load**
 
-    Использование функции **Загрузка упрощенного решения** может повысить производительность памяти и ЦП за счет отсрочки загрузки некоторых проектов в решении. Вы также можете попытаться включать эту функцию для отдельных решений. По умолчанию она отключена.
+    Using **Lightweight Solution Load** may improve memory and CPU performance by deferring the load of some projects within your solution. You can also enable this feature per-solution. This option is off by default.
 
-    Чтобы включить функцию **Загрузка упрощенного решения**, выберите **Сервис > Параметры > Проекты и решения > Загрузка упрощенного решения**.
+    To enable **Lightweight Solution Load**, choose **Tools > Options > Projects and Solutions > Lightweight Solution Load**.
 
-    В этом режиме не работают некоторые возможности IDE. Чтобы определить, поможет ли вам этот вариант, см. разделы [Сокращение времени загрузки решения](https://blogs.msdn.microsoft.com/visualstudio/2016/10/11/shorter-solution-load-time-in-visual-studio-15/) и [Оптимизация времени запуска Visual Studio](https://docs.microsoft.com/en-us/visualstudio/ide/optimize-visual-studio-startup-time#speed-up-solution-load).
+    Some IDE features are not enabled in this mode. To determine whether this choice may help, see [Shorter solution load time](https://blogs.msdn.microsoft.com/visualstudio/2016/10/11/shorter-solution-load-time-in-visual-studio-15/) and [Optimize solution loading](../ide/optimize-solution-loading-in-visual-studio).
 
-- **Выгрузка проектов**
+- **Unload Projects**
 
-    Вы можете вручную выгрузить отдельные редко используемые проекты в обозревателе решений с помощью контекстного меню.
+    You can manually unload rarely used individual projects from Solution Explorer using the right-click context menu.
 
-- **Рефакторинг решения**
+- **Refactor the solution**
 
-    Решение можно разделить на несколько файлов меньшего размера с часто используемыми проектами. Такой рефакторинг должен существенно сократить использование памяти для рабочего процесса. Кроме того, более мелкие решения загружаются быстрее.
+    You can split your solution into several smaller solution files with commonly used projects. This refactoring should significantly reduce memory usage for your workflow. Smaller solutions also load faster.
 
-## <a name="configure-debugging-options"></a>Настройка параметров отладки
-Если вы часто сталкиваетесь с нехваткой памяти во время сеансов отладки, можно оптимизировать производительность, внеся одно или несколько изменений в конфигурацию.
+## <a name="configure-debugging-options"></a>Configure debugging options
+If you are typically running low on memory during debugging sessions, you can optimize performance by making one or more configuration changes.
 
-- **Включение функции "Только мой код"**
+- **Enable Just My Code**
 
-    Простейшая оптимизация заключается в том, чтобы включить функцию **Только мой код**, которая загружает только символы для проекта. Включение этой функции может привести к значительной экономии памяти при отладке управляемых приложений (.NET). Для некоторых типов проектов этот параметр уже включен по умолчанию.
+    The simplest optimization is to enable the **Just My Code** feature, which only loads symbols for your project. Enabling this feature can result in a significant memory saving for debugging managed applications (.NET). This option is already enabled by default in some project types.
 
-    Чтобы включить функцию **Только мой код**, выберите **Сервис > Параметры > Отладка > Общие** и затем **Включить только мой код**.
+    To enable **Just My Code**, choose **Tools > Options > Debugging > General**, and then select **Enable Just My Code**.
 
-- **Указание символов для загрузки**
+- **Specify symbols to load**
 
-    При отладке машинного кода для загрузки файлов символов (PDB) требуется большой объем памяти. Вы можете настроить параметры отладочных символов для экономии памяти. Как правило, решение настраивается для загрузки только модулей из проекта.
+    For native debugging, loading symbol files (.pdb) is expensive in terms of memory resources. You can configure your debugger symbol settings to conserve memory. Typically, you configure the solution to only load modules from your project.
 
-    Чтобы указать загрузку символов, выберите **Сервис > Параметры > Отладка > Символы**.
+    To specify symbol loading, choose **Tools > Options > Debugging > Symbols**.
 
-    Задайте параметр **Только указанные модули** вместо **Все модули** и затем укажите, какие модули нужно загружать. Во время отладки также можно щелкнуть определенные модули правой кнопкой мыши в окне **Модули**, чтобы явно включить модуль в загрузку символов. (Чтобы открыть окно во время отладки, выберите **Отладка > Окна > Модули**.)
+    Set the options to **Only specified modules** instead of **All modules** and then specify which modules you care to load. While debugging, you can also right-click specific modules in the **Modules** window to explicitly include a module in the symbol load. (To open the window while debugging, choose **Debug > Windows > Modules**.)
 
-    Дополнительные сведения см. в разделе [Общие сведения о файлах символов](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/).
+    For more information, see [Understanding symbol files](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/).
 
-- **Отключение средств диагностики**
+- **Disable Diagnostic Tools**
 
-    Рекомендуется отключить профилирование ЦП после использования. Эта функция может потреблять очень много ресурсов. После включения профилирования ЦП это состояние распространяется и на все последующие сеансы отладки, поэтому его следует отключать явным образом. Вы можете сэкономить ресурсы, отключив средства диагностики при отладке, если некоторые предоставляемые функции вам не нужны.
+    It is recommended that you disable CPU profiling after use. This feature can consume large amounts of resources. Once CPU profiling is enabled, this state is persisted across subsequent debug sessions, so it’s worth explicitly turning it off when done. You may save some resources by disabling the diagnostic tools while debugging if you do not need the provided features.
 
-    Чтобы отключить средства диагностики, запустите сеанс отладки, выберите **Сервис > Параметры > Включить средства диагностики**  и отмените выбор соответствующего параметра.
+    To disable the Diagnostic Tools, start a debugging session, choose **Tools > Options > Enable Diagnostic Tools**, and deselect the option.
 
-    Дополнительные сведения см. в статье [Средства профилирования](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools).
+    For more information, see [Profiling Tools](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools).
 
-## <a name="disable-tools-and-extensions"></a>Отключение инструментов и расширений
-Для повышения производительности можно отключить некоторые инструменты или расширения.
+## <a name="disable-tools-and-extensions"></a>Disable tools and extensions
+Some tools or extensions may to turned off to improve performance.
 
 > [!TIP]
-> Часто проблемы производительности можно выявить, отключая расширения по одному и проверяя уровень производительности.
+> You can often isolate performance issues by turning off extensions one at a time and rechecking performance.
 
-### <a name="managed-language-services-roslyn"></a>Управляемые службы языка (Roslyn)
+### <a name="managed-language-services-roslyn"></a>Managed Language Services (Roslyn)
 
-Сведения о производительности Roslyn см. в статье [Особенности производительности для крупных решений] (https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+For information about Roslyn performance considerations, see [Performance considerations for large solutions] (https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
-- **Отключение полного анализа решения**
+- **Disable Full Solution Analysis**
 
-    Visual Studio проводит анализ всего решения, чтобы предоставить более полную информацию об ошибках перед началом сборки. Эта функция полезна для максимально быстрого выявления ошибок. Однако для очень крупных решений она может потреблять значительный объем ресурсов. При возникновении нехватки памяти или аналогичных проблем можно отключить эту функцию, чтобы освободить ресурсы. По умолчанию этот параметр включен для Visual Basic и отключен для C#.
+    Visual Studio performs analysis on your entire solution in order to provide a rich experience about errors before invoking a build. This feature is useful to identify errors as soon as possible. However, for very large solutions, this feature can consume significant memory resources. If you’re experiencing memory pressure or similar issues, you can disable this experience to free up these resources. By default, this option is enabled for Visual Basic and disabled for C#.
 
-    Чтобы отключить **Полный анализ решения**, выберите **Сервис > Параметры > Текстовый редактор > Visual Basic или C#**. Выберите **Дополнительно** и отмените выбор параметра **Включить полный анализ решения**.
+    To disable **Full Solution Analysis**, choose **Tools > Options > Text Editor > <Visual Basic or C#>**. Then choose **Advanced** and deselect **Enable full solution analysis**.
 
-- **Отключение CodeLens**
+- **Disable CodeLens**
 
-    Visual Studio выполняет задачу **Найти все ссылки** для каждого метода при его отображении. CodeLens предоставляет такие функции, как встроенное отображение числа ссылок. Эта работа выполняется в отдельном процессе (например, ServiceHub.RoslynCodeAnalysisService32). В очень крупных решениях или системах с небольшим объемом ресурсов эта функция может оказывать значительное негативное влияние на производительность, хотя она и выполняется с низким приоритетом. В случае возникновения высокой загрузки ЦП при выполнении этого процесса или проблем с памятью (например, при загрузке большого решения на компьютере с 4 ГБ памяти) попробуйте отключить эту функцию для высвобождения ресурсов.
+    Visual Studio performs a **Find All References** task on each method as it is displayed. CodeLens provides features such as the inline display of the number of references. The work is performed in a separate process (for example, ServiceHub.RoslynCodeAnalysisService32). In very large solutions or on resource constrained systems, this feature can have significant impact on performance even though it is run at a low priority. If you’re experiencing high CPU in this process, or memory issues (for example, when loading a large solution on a 4-GB machine), you can try disabling this feature to free up resources.
 
-    Чтобы отключить CodeLens, выберите **Сервис > Параметры > Текстовый редактор > Все языки > CodeLens** и отмените выбор данной функции.
+    To disable CodeLens, choose **Tools > Options > Text Editor > All Languages > CodeLens**, and deselect the feature.
 
-    Эта функция доступна в Visual Studio Professional и Visual Studio Enterprise.
+    This feature is available in Visual Studio Professional and Visual Studio Enterprise.
 
-### <a name="other-tools-and-extensions"></a>Другие инструменты и расширения
+### <a name="other-tools-and-extensions"></a>Other tools and extensions
 
-- **Отключение расширений**
+- **Disable Extensions**
 
-    Расширения — это дополнительные программные компоненты в Visual Studio, которые предоставляют новые или расширяют имеющиеся функциональные возможности. Расширения часто могут выступать источником проблем с памятью. При возникновении подобных проблем попробуйте отключать расширения по одному за раз, чтобы оценить, как это влияет на сценарий или рабочий процесс.
+    Extensions are additional software components added to Visual Studio that provide new functionality or extend existing functionality. Extensions can often be a source of memory resource issues. If you’re experiencing memory resource problems, try disabling extensions one at a time to see how it impacts the scenario or workflow.
 
-    Чтобы отключить расширения, перейдите в раздел **Сервис | Расширения и обновления** и отключите нужное расширение.
+    To disable extensions, go to **Tools | Extensions and Updates**, and disable a particular extension.
 
-- **Отключение конструктора XAML**
+- **Disable XAML Designer**
 
-    Конструктор XAML по умолчанию включен, но потребляет ресурсы только при открытии XAML-файла. Если вы работаете с XAML-файлами, но не хотите использовать функциональные возможности конструктора, отключите его, чтобы освободить память.
+    The XAML designer is enabled by default, but only consumes resources if you open a .XAML file. If you work with XAML files but do not wish to use the designer functionality, disable this feature to free up some memory.
 
-    Чтобы отключить конструктор XAML, перейдите в раздел **Сервис > Параметры > Конструктор XAML > Включить конструктор XAML**  и отключите эту функцию.
+    To disable XAML Designer, go to **Tools > Options > XAML Designer > Enable XAML Designer**, and deselect the option.
 
-- **Удаление рабочих нагрузок**
+- **Remove workloads**
 
-    Если вы не собираетесь использовать определенные рабочие нагрузки, удалите их с помощью установщика Visual Studio. Это позволяет оптимизировать расходы ресурсов при запуске и выполнении за счет пропуска ненужных пакетов и сборок.
+    You can use the Visual Studio Installer to remove workloads that are no longer used. This action can streamline the startup and runtime cost by skipping packages and assemblies that aren’t needed anymore.
 
-## <a name="force-a-garbage-collection"></a>Принудительная сборка мусора
+## <a name="force-a-garbage-collection"></a>Force a garbage collection
 
-Среда CLR использует систему управления памятью, подразумевающую сборку мусора. В этой системе память иногда используется объектами, которые больше не нужны. Это временное состояние — сборщик мусора освободит эту память, основываясь на своей эвристике производительности и использования ресурсов. Вы можете заставить среду CLR собрать всю неиспользуемую память, используя сочетание клавиш в Visual Studio. Если имеется значительный объем мусора, ожидающего сборки, то принудительная сборка мусора позволяет снизить использование памяти процессом devenv.exe в диспетчере задач. Потребность в этом методе возникает довольно редко. Тем не менее после завершения операции, потребляющей много ресурсов (такой как полная сборка, сеанс отладки или событие открытия решения), он может помочь определить объем памяти, действительно используемый процессом. Так как среда Visual Studio является смешанной (управляемый и машинный код), собственный распределитель и сборщик мусора могут конкурировать за ограниченные ресурсы памяти. В условиях высокого использования памяти это может помочь принудительно запустить сборщик мусора.
+The CLR uses a garbage collection memory management system. In this system, sometimes memory is used by objects that are no longer needed. This state is temporary; the garbage collector will release this memory based on its performance and resource usage heuristics. You can force the CLR to collect any unused memory by using a hotkey in Visual Studio. If there is a significant amount of garbage waiting for collection and you force a garbage collection, you should see the memory usage of the devenv.exe process drop in Task Manager. It’s rarely necessary to use this method. However, after an expensive operation has completed (such as a full build, debug session, or a solution open event), it can help you determine how much memory is really being used by the process. Because Visual Studio is mixed (managed & native), it’s occasionally possible for the native allocator and the garbage collector to compete for limited memory resources. Under conditions of high memory usage, it may help to force the garbage collector to run.
 
-Чтобы принудительно запустить сборку мусора, используйте сочетание клавиш: **CTRL+ALT+SHIFT+F12**, **CTRL+ALT+SHIFT+F12** (нажмите два раза).
+To force a garbage collection, use the hotkey: **Ctrl+Alt+Shift+F12**, **Ctrl+Alt+Shift+F12** (press it twice).
 
-Если принудительная сборка мусора обеспечивает работоспособность сценария, направьте отчет с помощью средства обратной связи Visual Studio, так как подобное поведение, скорее всего, указывает на ошибку.
+If forcing garbage collection reliably makes your scenario work, file a report through the Visual Studio feedback tool as this behavior is likely to be a bug.
 
-Подробное описание сборщика мусора CLR см. в разделе [Основные сведения о сборке мусора](https://msdn.microsoft.com/en-us/library/ee787088(v=vs.110).aspx).
+For a detailed description of the CLR garbage collector, see [Fundamental of Garbage Collection](https://msdn.microsoft.com/en-us/library/ee787088(v=vs.110).aspx).
 
-## <a name="see-also"></a>См. также  
- [Интегрированная среда разработки Visual Studio](../ide/index.md)
+## <a name="see-also"></a>See Also  
+ [Visual Studio IDE](../ide/index.md)
 
