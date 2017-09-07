@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPortSuppliers2::Clone | Microsoft Docs
+title: "IEnumDebugPortSuppliers2::Clone | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: b1ca15613da3ddf666f86c78b54212a799a7fa40
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="ienumdebugportsuppliers2clone"></a>IEnumDebugPortSuppliers2::Clone
-Returns a copy of the current enumeration as a separate object.  
+Возвращает копию текущего перечисления в виде отдельного объекта.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
 HRESULT Clone(  
@@ -54,15 +54,15 @@ int Clone(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Параметры  
  `ppEnum`  
- [out] Returns a copy of this enumeration as a separate object.  
+ [out] Возвращает копию этого перечисления в виде отдельного объекта.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- The copy of the enumeration has the same state as the original at the time this method is called. However, the copy's and the original's states are separate and can be changed individually.  
+## <a name="remarks"></a>Примечания  
+ Копия перечисления имеет том же состоянии, что и исходный во время вызова этого метода. Тем не менее копирования и исходного состояния отделены и могут изменяться по отдельности.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>См. также  
  [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::CreateAlias | Microsoft Docs
+title: "IDebugObject2::CreateAlias | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 97bf05023ab5e97ae845ff6d62f873719e997e43
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
-Creates a unique ID or alias for this object or returns an existing alias.  
+Создает уникальный идентификатор или псевдоним для этого объекта или возвращает существующего псевдонима.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
 HRESULT CreateAlias(  
@@ -54,16 +54,16 @@ int CreateAlias(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Параметры  
  `ppAlias`  
- [out] The new (or existing) alias.  
+ [out] Псевдоним новой (или существующей).  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise, returns an error code.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- An alias is a label that represents a particular object while the object is in memory.  
+## <a name="remarks"></a>Примечания  
+ Псевдоним является меткой, которая представляет определенный объект, пока объект находится в памяти.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>См. также  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)   
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

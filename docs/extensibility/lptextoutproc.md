@@ -1,5 +1,5 @@
 ---
-title: LPTEXTOUTPROC | Microsoft Docs
+title: "LPTEXTOUTPROC | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -38,16 +38,16 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 658193f526123d237ef9b90a05861492b9f007c9
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
-When the user executes a source control operation from inside the integrated development environment (IDE), the source control plug-in might want to convey error or status messages relating to the operation. The plug-in can display its own message boxes for this purpose. However, for more seamless integration, the plug-in can pass strings to the IDE, which then displays them in its native way of displaying status information. The mechanism for this is the `LPTEXTOUTPROC` function pointer. The IDE implements this function (described in more detail below) for displaying error and status.  
+Когда пользователь выполняет операцию системы управления версиями из внутри интегрированной среды разработки (IDE), подключаемый модуль системы управления версиями может потребоваться передачи ошибка или состояние сообщения, относящиеся к работе. Подключаемый модуль может отображать свой собственный окон сообщений, для этой цели. Однако для более прозрачную интеграцию, подключаемый модуль можно передать строки в интегрированную среду разработки, которая затем отображает их в его собственном способ отображения сведений о состоянии. — Это механизм `LPTEXTOUTPROC` указатель функции. IDE реализует эту функцию, (более подробно ниже) для отображения ошибок и состояний.  
   
- The IDE passes to the source control plug-in a function pointer to this function, as the `lpTextOutProc` parameter, when calling the [SccOpenProject](../extensibility/sccopenproject-function.md). During an SCC operation, for example, in the middle of a call to the [SccGet](../extensibility/sccget-function.md) involving many files, the plug-in can call the `LPTEXTOUTPROC` function, periodically passing strings to display. The IDE may display these strings on a status bar, in an output window, or in a separate message box, as appropriate. Optionally, the IDE may be able to display certain messages with a **Cancel** button. This enables the user to cancel the operation, and it gives the IDE the ability to pass this information back to the plug-in.  
+ IDE передает в систему управления версиями подключаемого модуля указатель на функцию в эту функцию как `lpTextOutProc` параметра при вызове [SccOpenProject](../extensibility/sccopenproject-function.md). Во время операции SCC, например, во время вызова [SccGet](../extensibility/sccget-function.md) включающих много файлов, подключаемый модуль может вызывать `LPTEXTOUTPROC` функции, периодически передачи строк для отображения. Интегрированной среды разработки может отображать эти строки в строку состояния в окне вывода или в отдельном окне сообщений, в зависимости. При необходимости интегрированной среды разработки может сможет отображать некоторые сообщения с **отменить** кнопки. Это дает пользователю возможность отменить операцию, и он дает возможность передавать эти сведения подключаемый модуль интегрированной среды разработки.  
   
-## <a name="signature"></a>Signature  
- The IDE's output function has the following signature:  
+## <a name="signature"></a>Подпись  
+ IDE выходных данных объекта функция имеет следующую сигнатуру:  
   
 ```cpp  
 typedef LONG (*LPTEXTOUTPROC) (  
@@ -56,38 +56,38 @@ typedef LONG (*LPTEXTOUTPROC) (
 );  
 ```  
   
-## <a name="parameters"></a>Parameters  
+## <a name="parameters"></a>Параметры  
  display_string  
- A text string to display. This string should not be terminated with a carriage return or a line feed.  
+ Текстовая строка для отображения. Эта строка не должно заканчиваться каретки возврата и перевода строки.  
   
  mesg_type  
- The type of message. The following table lists the supported values for this parameter.  
+ Тип сообщения. В следующей таблице перечислены поддерживаемые значения для этого параметра.  
   
-|Value|Description|  
+|Значение|Описание|  
 |-----------|-----------------|  
-|`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|The message is considered Information, Warning, or Error.|  
-|`SCC_MSG_STATUS`|The message shows status and can be displayed in the status bar.|  
-|`SCC_MSG_DOCANCEL`|Sent with no message string.|  
-|`SCC_MSG_STARTCANCEL`|Begins displaying a **Cancel** button.|  
-|`SCC_MSG_STOPCANCEL`|Stops displaying a **Cancel** button.|  
-|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Asks IDE if the background operation is to be cancelled: IDE returns `SCC_MSG_RTN_CANCEL` if operation was cancelled; otherwise, returns `SCC_MSG_RTN_OK`. The `display_string` parameter is cast as an [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) structure, which is supplied by the source control plug-in.|  
-|`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|Tells the IDE about a file before it is retrieved from version control. The `display_string` parameter is cast as an [SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile) structure, which is supplied by the source control plug-in.|  
-|`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|Tells the IDE about a file after it has been retrieved from version control. The `display_string` parameter is cast as an [SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile) structure, which is supplied by the source control plug-in.|  
-|`SCC_MSG_BACKGROUND_ON_MESSAGE`|Tells the IDE of the current status of a background operation. The `display_string` parameter is cast as an [SccMsgDataOnMessage](#LinkSccMsgDataOnMessage) structure, which is supplied by the source control plug-in.|  
+|`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|Сообщение считается сведения, предупреждение или ошибка.|  
+|`SCC_MSG_STATUS`|Сообщение отображается состояние и могут отображаться в строке состояния.|  
+|`SCC_MSG_DOCANCEL`|Отправляет строку без сообщений.|  
+|`SCC_MSG_STARTCANCEL`|Начинается отображение **отменить** кнопки.|  
+|`SCC_MSG_STOPCANCEL`|Останавливает отображение **отменить** кнопки.|  
+|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Запрашивает IDE при фоновой операции будут отменены: возвращает IDE `SCC_MSG_RTN_CANCEL` Если операция была отменена; в противном случае возвращает `SCC_MSG_RTN_OK`. `display_string` Параметр приводится к [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) структуру, которая поставляется с подключаемым модулем системы управления версиями.|  
+|`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|Среда интегрированной разработки о файле до их извлечения из системы управления версиями. `display_string` Параметр приводится к [SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile) структуру, которая поставляется с подключаемым модулем системы управления версиями.|  
+|`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|После извлечения из системы управления версиями, среда интегрированной разработки о файле. `display_string` Параметр приводится к [SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile) структуру, которая поставляется с подключаемым модулем системы управления версиями.|  
+|`SCC_MSG_BACKGROUND_ON_MESSAGE`|Среда интегрированной разработки текущего состояния фоновой операции. `display_string` Параметр приводится к [SccMsgDataOnMessage](#LinkSccMsgDataOnMessage) структуру, которая поставляется с подключаемым модулем системы управления версиями.|  
   
-## <a name="return-value"></a>Return Value  
+## <a name="return-value"></a>Возвращаемое значение  
   
-|Value|Description|  
+|Значение|Описание|  
 |-----------|-----------------|  
-|SCC_MSG_RTN_OK|The string was displayed or the operation was completed successfully.|  
-|SCC_MSG_RTN_CANCEL|The user wants to cancel the operation.|  
+|SCC_MSG_RTN_OK|Отображается строка или операция выполнена успешно.|  
+|SCC_MSG_RTN_CANCEL|Пользователю необходимо отменить операцию.|  
   
-## <a name="example"></a>Example  
- Suppose the IDE calls the [SccGet](../extensibility/sccget-function.md) with twenty file names. The source control plug-in wants to prevent canceling the operation in the middle of a file get. After getting each file, it calls `lpTextOutProc`, passing it the status information on each file, and sends a `SCC_MSG_DOCANCEL` message if it has no status to report. If at any time the plug-in receives a return value of `SCC_MSG_RTN_CANCEL` from the IDE, it cancels the get operation immediately, so that no more files are retrieved.  
+## <a name="example"></a>Пример  
+ Предположим, что вызовы IDE [SccGet](../extensibility/sccget-function.md) с двадцать имена файлов. Подключаемый модуль системы управления версиями хочет предотвратить отмену операции середине get файла. После получения каждого файла, он вызывает `lpTextOutProc`, передавая сведения о состоянии для каждого файла и отправляет `SCC_MSG_DOCANCEL` сообщение, если он не имеет статуса отчет. Если в любой момент подключаемый модуль получает возвращаемое значение `SCC_MSG_RTN_CANCEL` интегрированной среде разработки, он отменяет операцию получения немедленно, чтобы получить дополнительные файлы не будут.  
   
-## <a name="structures"></a>Structures  
+## <a name="structures"></a>Структуры  
   
-###  <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled  
+###  <a name="LinkSccMsgDataIsCancelled"></a>SccMsgDataIsCancelled  
   
 ```cpp  
 typedef struct {  
@@ -95,9 +95,9 @@ typedef struct {
 } SccMsgDataIsCancelled;  
 ```  
   
- This structure is sent with the `SCC_MSG_BACKGROUND_IS_CANCELLED` message. It is used to communicate the ID of the background operation that was canceled.  
+ Эта структура передается со `SCC_MSG_BACKGROUND_IS_CANCELLED` сообщения. Он используется для связи ID фоновых операций, который был отменен.  
   
-###  <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile  
+###  <a name="LinkSccMsgDataOnBeforeGetFile"></a>SccMsgDataOnBeforeGetFile  
   
 ```cpp  
 typedef struct {  
@@ -106,9 +106,9 @@ typedef struct {
 } SccMsgDataOnBeforeGetFile;  
 ```  
   
- This structure is sent with the `SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE` message. It is used to communicate the name of the file about to be retrieved and the ID of the background operation that is doing the retrieving.  
+ Эта структура передается со `SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE` сообщения. Он используется для связи, имя файла будет извлекаться и идентификатор фоновых операций, который выполняет извлечение.  
   
-###  <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile  
+###  <a name="LinkSccMsgDataOnAfterGetFile"></a>SccMsgDataOnAfterGetFile  
   
 ```cpp  
 typedef struct {  
@@ -118,9 +118,9 @@ typedef struct {
 } SccMsgDataOnAfterGetFile;  
 ```  
   
- This structure is sent with the `SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE` message. It is used to communicate the result of retrieving the specified file as well as the ID of the background operation that did the retrieving. See the return values for the [SccGet](../extensibility/sccget-function.md) for what can be given as a result.  
+ Эта структура передается со `SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE` сообщения. Он используется для обмена данными результат извлечения указанного файла, а также идентификатор фоновых операций, который выполнял извлечение. Увидеть возвращаемые значения для [SccGet](../extensibility/sccget-function.md) для учитывая то, что в результате.  
   
-###  <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage  
+###  <a name="LinkSccMsgDataOnMessage"></a>SccMsgDataOnMessage  
  [C++]  
   
 ```  
@@ -131,10 +131,10 @@ typedef struct {
 } SccMsgDataOnMessage;  
 ```  
   
- This structure is sent with the `SCC_MSG_BACKGROUND_ON_MESSAGE` message. It is used to communicate the current status of a background operation. The status is expressed as a string to be displayed by the IDE, and `bIsError` indicates the severity of the message (`TRUE` for an error message; `FALSE` for a warning or for an informational message). The ID of the background operation sending the status is also given.  
+ Эта структура передается со `SCC_MSG_BACKGROUND_ON_MESSAGE` сообщения. Он используется для передачи текущего состояния фоновой операции. Состояние выражается как строка, отображаемая в интегрированной среде разработки и `bIsError` указывает серьезность сообщения (`TRUE` для сообщения об ошибке; `FALSE` предупреждение или информационное сообщение). Кроме того, предоставляется идентификатор фоновая операция отправки состояния.  
   
-## <a name="code-example"></a>Code Example  
- Here is a brief example of calling `LPTEXTOUTPROC` to send the `SCC_MSG_BACKGROUND_ON_MESSAGE` message, showing how to cast the structure for the call.  
+## <a name="code-example"></a>Пример кода  
+ Ниже приведен краткий пример вызова `LPTEXTOUTPROC` для отправки `SCC_MSG_BACKGROUND_ON_MESSAGE` сообщения, показывающий, как выполнить приведение структуру для вызова.  
   
 ```cpp  
 LONG SendStatusMessage(  
@@ -155,6 +155,6 @@ LONG SendStatusMessage(
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
- [Callback Functions Implemented by the IDE](../extensibility/callback-functions-implemented-by-the-ide.md)   
- [Source Control Plug-ins](../extensibility/source-control-plug-ins.md)
+## <a name="see-also"></a>См. также  
+ [Функции обратного вызова, реализуемый интегрированной среды разработки](../extensibility/callback-functions-implemented-by-the-ide.md)   
+ [Подключаемые модули системы управления версиями](../extensibility/source-control-plug-ins.md)

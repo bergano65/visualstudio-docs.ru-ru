@@ -1,5 +1,5 @@
 ---
-title: Adding a Shortcut Menu in a Tool Window | Microsoft Docs
+title: "Добавление контекстного меню в окне инструментов | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -35,29 +35,29 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 661e31f32f176e48ea69ae92f23ecdde7911456b
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Adding a Shortcut Menu in a Tool Window
-This walkthrough puts a shortcut menu in a tool window. A shortcut menu is a menu that appears when a user right-clicks a button, text box, or window background. Commands on a shortcut menu behave the same as commands on other menus or toolbars. To support a shortcut menu, specify it in the .vsct file and display it in response to the right-click of the mouse.  
+# <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Добавление контекстного меню в окне инструментов
+В этом пошаговом руководстве помещает контекстное меню в окне инструментов. Контекстное меню — меню, которое открывается при щелчке кнопки, текстовое поле или фона окна. Команды контекстного меню работают так же, как команды на других меню или панели инструментов. Для поддержки контекстное меню, укажите его в vsct-файле и отобразить их в ответ на правой кнопки мыши.  
   
- A tool window consists of a WPF user control in a custom tool window class that inherits from <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>.  
+ Окно инструментов состоит из пользовательского элемента управления WPF в класс окна пользовательский инструмент, который наследует от <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>.  
   
- This walkthrough shows how to create a shortcut menu as a Visual Studio menu, by declaring menu items in the .vsct file, and then using the Managed Package Framework to implement them in the class that defines the tool window. This approach facilitates access to Visual Studio commands, UI elements, and the Automation object model.  
+ В этом пошаговом руководстве демонстрируется создание контекстное меню в меню Visual Studio, путем объявления элементов меню в vsct-файле и затем с помощью Managed Package Framework для их реализации в классе, который определяет окно инструментов. Такой подход упрощает доступ к командам Visual Studio, элементы пользовательского интерфейса и объектная модель автоматизации.  
   
- Alternatively, if your shortcut menu will not access Visual Studio functionality, you can use the <xref:System.Windows.FrameworkElement.ContextMenu%2A> property of a XAML element in the user control. For more information, see [ContextMenu](/dotnet/framework/wpf/controls/contextmenu).  
+ Кроме того, если контекстное меню не будет доступа к функциям Visual Studio, можно использовать <xref:System.Windows.FrameworkElement.ContextMenu%2A> свойства элемента XAML в элементе управления. Дополнительные сведения см. в разделе [ContextMenu](/dotnet/framework/wpf/controls/contextmenu).  
   
-## <a name="prerequisites"></a>Prerequisites  
- Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Предварительные требования  
+ Начиная с Visual Studio 2015, не установить пакет SDK для Visual Studio из центра загрузки Майкрософт. Он включен в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-the-tool-window-shortcut-menu-package"></a>Creating the Tool Window Shortcut Menu Package  
+## <a name="creating-the-tool-window-shortcut-menu-package"></a>Создание контекстного меню средства окна пакета  
   
-1.  Create a VSIX project named `TWShortcutMenu` and add a tool window template named **ShortCutMenu** to it. For more information about creating a tool window, see [Creating an Extension with a Tool Window](../extensibility/creating-an-extension-with-a-tool-window.md).  
+1.  Создайте проект VSIX с именем `TWShortcutMenu` и добавьте шаблон окно инструментов с именем **контекстномменю** к нему. Дополнительные сведения о создании окно инструментов см. в разделе [создания расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-## <a name="specifying-the-shortcut-menu"></a>Specifying the Shortcut Menu  
- A shortcut menu such as the one shown in this walkthrough lets the user select from a list of colors that are used to fill the background of the tool window.  
+## <a name="specifying-the-shortcut-menu"></a>Указание в контекстном меню  
+ Контекстное меню, таких как показано в этом пошаговом руководстве дает пользователю возможность выбрать из списка цветов, которые используются для заполнения фона окна инструментов.  
   
-1.  In ShortcutMenuPackage.vsct, find in the GuidSymbol element named guidShortcutMenuPackageCmdSet, and declare the shortcut menu, shortcut menu group, and menu options. The GuidSymbol element should now look like this:  
+1.  В ShortcutMenuPackage.vsct найдите в элементе GuidSymbol с именем guidShortcutMenuPackageCmdSet и объявления контекстное меню, контекстное меню группы и параметры меню. Элемент GuidSymbol теперь должна выглядеть следующим образом:  
   
     ```xml  
     <GuidSymbol name="guidShortcutMenuPackageCmdSet" value="{00000000-0000-0000-0000-0000}"> // your GUID here  
@@ -70,7 +70,7 @@ This walkthrough puts a shortcut menu in a tool window. A shortcut menu is a men
     </GuidSymbol>  
     ```  
   
-2.  Just before the Buttons element, create a Menus element and then define the shortcut menu in it.  
+2.  Непосредственно перед элементом кнопки создайте элемент меню, а затем определите контекстное меню в нем.  
   
     ```vb  
     <Menus>  
@@ -83,9 +83,9 @@ This walkthrough puts a shortcut menu in a tool window. A shortcut menu is a men
     </Menus>  
     ```  
   
-     A shortcut menu does not have a parent because it is not part of a menu or toolbar.  
+     Контекстное меню не имеет родительский элемент, так как он не является частью меню или панели инструментов.  
   
-3.  Create a Groups element with a Group element that contains the shortcut menu items, and associate the group with the shortcut menu.  
+3.  Создайте элемент группы с элементом группы, содержащий элементы контекстного меню и свяжите группу с помощью контекстного меню.  
   
     ```xml  
     <Groups>  
@@ -95,7 +95,7 @@ This walkthrough puts a shortcut menu in a tool window. A shortcut menu is a men
     </Groups>  
     ```  
   
-4.  In the Buttons element, define the individual commands that will appear on the shortcut menu. The Buttons element should look like this:  
+4.  В элементе кнопки определяют отдельных команд, которые будут отображаться в контекстном меню. Элемент кнопки должен выглядеть следующим образом:  
   
     ```xml  
     <Buttons>  
@@ -130,7 +130,7 @@ This walkthrough puts a shortcut menu in a tool window. A shortcut menu is a men
     </Buttons>  
     ```  
   
-5.  In ShortcutMenuPackageGuids.cs, add the definitions for the command set GUID, the shortcut menu, and the menu items.  
+5.  В ShortcutMenuPackageGuids.cs добавьте набор определений для команды GUID, в контекстном меню и элементов меню.  
   
     ```csharp  
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ  
@@ -140,21 +140,21 @@ This walkthrough puts a shortcut menu in a tool window. A shortcut menu is a men
     public const int cmdidBlue = 0x104;  
     ```  
   
-     These are the same command IDs that are defined in the Symbols section of the ShortcutMenuPackage.vsct file. The context group is not included here because it is required only in the .vsct file.  
+     Это же идентификаторы команд, определенных в разделе символы ShortcutMenuPackage.vsct файла. Контекст группы не включается здесь так как он необходим только в vsct-файле.  
   
-## <a name="implementing-the-shortcut-menu"></a>Implementing the Shortcut Menu  
- This section implements the shortcut menu and its commands.  
+## <a name="implementing-the-shortcut-menu"></a>Реализация в контекстном меню  
+ В этом разделе реализует контекстное меню и команд.  
   
-1.  In ShortcutMenu.cs, the tool window can get the menu command service, but the control it contains cannot. The following steps show how to make the menu command service available to the user control.  
+1.  В ShortcutMenu.cs окна инструментов можно получить службу команд меню, но элемент управления, содержащихся в нем нельзя. Ниже показано, как сделать службу команд меню, доступными в пользовательский элемент управления.  
   
-2.  In ShortcutMenu.cs, add the following using statements:  
+2.  В ShortcutMenu.cs, добавьте следующие операторы using:  
   
     ```csharp  
     using Microsoft.VisualStudio.Shell;  
     using System.ComponentModel.Design;  
     ```  
   
-3.  Override the tool window's Initialize() method to get the menu command service and add the control, passing the menu command service to the contructor:  
+3.  Переопределите метод Initialize() окна инструментов, чтобы получить службу команд меню и добавить элемент управления, передача службу команд меню в конструктор:  
   
     ```csharp  
     protected override void Initialize()  
@@ -164,7 +164,7 @@ This walkthrough puts a shortcut menu in a tool window. A shortcut menu is a men
     }  
     ```  
   
-4.  In the ShortcutMenu tool window constructor, remove the line that adds the control. The constructor should now look like this:  
+4.  В конструкторе окно инструмента контекстномменю удалите строку, который добавляет элемент управления. Конструктор должен выглядеть следующим образом:  
   
     ```csharp  
     public ShortcutMenu() : base(null)  
@@ -175,7 +175,7 @@ This walkthrough puts a shortcut menu in a tool window. A shortcut menu is a men
     }  
     ```  
   
-5.  In ShortcutMenuControl.xaml.cs, add a private field for the menu command service and change the control constructor to take the menu command service. Then use the menu command service to add the context menu commands. The ShortcutMenuControl constructor should now look like the following code. The command handler will be defined later.  
+5.  В ShortcutMenuControl.xaml.cs добавьте закрытое поле для службы команды меню и измените конструктор элемента управления для использования службу команд меню. Затем можно используйте службу команд меню для добавления команд контекстного меню. Конструктор ShortcutMenuControl должен выглядеть как следующий код. Обработчик команд будут определены позже.  
   
     ```csharp  
     public ShortcutMenuControl(OleMenuCommandService service)  
@@ -201,7 +201,7 @@ This walkthrough puts a shortcut menu in a tool window. A shortcut menu is a men
     }  
     ```  
   
-6.  In ShortcutMenuControl.xaml, add a <xref:System.Windows.UIElement.MouseRightButtonDown> event to the top level <xref:System.Windows.Controls.UserControl> element. The XAML file should now look like this:  
+6.  Добавьте в ShortcutMenuControl.xaml, <xref:System.Windows.UIElement.MouseRightButtonDown> событий на верхний уровень <xref:System.Windows.Controls.UserControl> элемента. Файл XAML должен выглядеть следующим образом:  
   
     ```vb  
     <UserControl x:Class="TWShortcutMenu.ShortcutMenuControl"  
@@ -223,7 +223,7 @@ This walkthrough puts a shortcut menu in a tool window. A shortcut menu is a men
     </UserControl>  
     ```  
   
-7.  In ShortcutMenuControl.xaml.cs, add a stub for the event handler.  
+7.  В ShortcutMenuControl.xaml.cs добавьте заглушку для обработчика событий.  
   
     ```csharp  
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
@@ -232,7 +232,7 @@ This walkthrough puts a shortcut menu in a tool window. A shortcut menu is a men
     }  
     ```  
   
-8.  Add the following using statements to the same file:  
+8.  Добавьте следующие инструкции using и тот же файл:  
   
     ```csharp  
     using Microsoft.VisualStudio.Shell;  
@@ -242,7 +242,7 @@ This walkthrough puts a shortcut menu in a tool window. A shortcut menu is a men
     using System.Windows.Media;  
     ```  
   
-9. Implement the `MyToolWindowMouseRightButtonDown` event as follows.  
+9. Реализуйте `MyToolWindowMouseRightButtonDown` событие следующим образом.  
   
     ```csharp  
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
@@ -258,9 +258,9 @@ This walkthrough puts a shortcut menu in a tool window. A shortcut menu is a men
     }  
     ```  
   
-     This creates a <xref:System.ComponentModel.Design.CommandID> object for the shortcut menu, identifies the location of the mouse click, and opens the shortcut menu in that location by using the <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService.ShowContextMenu%2A> method.  
+     При этом создается <xref:System.ComponentModel.Design.CommandID> объекта для контекстного меню, определяет положение щелчка мыши и открывается контекстное меню в этом расположении с помощью <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService.ShowContextMenu%2A> метод.  
   
-10. Implement the command handler.  
+10. Реализуйте обработчик команд.  
   
     ```csharp  
     private void ChangeColor(object sender, EventArgs e)  
@@ -282,18 +282,18 @@ This walkthrough puts a shortcut menu in a tool window. A shortcut menu is a men
     }  
     ```  
   
-     In this case, just one method handles events for all of the menu items by identifying the <xref:System.ComponentModel.Design.CommandID> and setting the background color accordingly. If the menu items had contained unrelated commands, you would have created a separate event handler for each command.  
+     В этом случае только один метод обработки событий для всех элементов меню путем выявления <xref:System.ComponentModel.Design.CommandID> и соответствующим образом задание цвета фона. Если элементы меню содержит несвязанных команд, будет создан отдельный обработчик для каждой команды.  
   
-## <a name="testing-the-tool-window-features"></a>Testing the Tool Window Features  
+## <a name="testing-the-tool-window-features"></a>Тестирование функций окна инструментов  
   
-1.  Build the project and start debugging. The experimental instance appears.  
+1.  Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.  
   
-2.  In the experimental instance, click **View / Other Windows**, and then click **ShortcutMenu**. Doing this should display your tool window.  
+2.  В экспериментальном экземпляре выберите **представления и другие окна**, а затем нажмите кнопку **контекстномменю**. Таким образом отображать окна инструментов.  
   
-3.  Right-click in the body of the tool window. A shortcut menu that has a list of colors should be displayed.  
+3.  Щелкните правой кнопкой мыши тело окна инструментов. Появится контекстное меню, которое содержит список цветов.  
   
-4.  Click a color on the shortcut menu. The tool window background color should be changed to the selected color.  
+4.  Выберите цвет из контекстного меню. Цвет фона окна инструментов должны изменяться для выбранного цвета.  
   
-## <a name="see-also"></a>See Also  
- [Commands, Menus, and Toolbars](../extensibility/internals/commands-menus-and-toolbars.md)   
- [Using and Providing Services](../extensibility/using-and-providing-services.md)
+## <a name="see-also"></a>См. также  
+ [Команды, меню и панелей инструментов](../extensibility/internals/commands-menus-and-toolbars.md)   
+ [Использование и предоставление служб](../extensibility/using-and-providing-services.md)

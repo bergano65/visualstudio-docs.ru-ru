@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: Connecting a Host to a Generated Directive Processor | Microsoft Docs'
+title: "Пошаговое руководство: Подключение узла созданный процессора директив | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -23,84 +23,84 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 5bfeb8ea94b457114d7ba6ab74b783972e64350c
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Walkthrough: Connecting a Host to a Generated Directive Processor
-You can write your own host that processes text templates. A basic custom host is demonstrated in [Walkthrough: Creating a Custom Text Template Host](../modeling/walkthrough-creating-a-custom-text-template-host.md). You could extend that host to add functions such as generating multiple output files.  
+# <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Пошаговое руководство. Связывание основного приложения с генерируемым обработчиком директив
+Можно написать собственный узел, который обрабатывает текстовые шаблоны. Демонстрируется базовый пользовательский узел [Пошаговое руководство: создание пользовательское основное приложение текстового шаблона](../modeling/walkthrough-creating-a-custom-text-template-host.md). Вы можете расширить для добавления функций, таких как создание несколько выходных файлов, на которых размещены.  
   
- In this walkthrough, you expand your custom host so that it supports text templates that call directive processors. When you define a domain-specific language, it generates a *directive processor* for the domain model. The directive processor makes it easier for users to write templates that access the model, reducing the need to write assembly and import directives in the templates.  
+ В этом пошаговом руководстве вы развернуть пользовательское основное приложение так, чтобы она поддерживала текстовые шаблоны, которые вызывают процессоры директив. При определении доменный язык, он создает *процессора директив* для модели домена. Процессор директив упрощает создавать шаблоны, которые обращаются к модели, избавляя от необходимости писать сборки и импортировать директивы в шаблонах.  
   
 > [!WARNING]
->  This walkthrough builds on [Walkthrough: Creating a Custom Text Template Host](../modeling/walkthrough-creating-a-custom-text-template-host.md). Perform that walkthrough first.  
+>  Это пошаговое руководство построено [Пошаговое руководство: Создание пользовательского хост-класса шаблона текста](../modeling/walkthrough-creating-a-custom-text-template-host.md). Сначала выполните для этого пошагового руководства.  
   
- This walkthrough includes the following tasks:  
+ В этом пошаговом руководстве рассматриваются следующие задачи:  
   
--   Using [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] to generate a directive processor that is based on a domain model.  
+-   С помощью [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] для создания процессор директив, который основан на модели домена.  
   
--   Connecting a custom text template host to the generated directive processor.  
+-   Подключение основное приложение текстового шаблона созданный процессора директив.  
   
--   Testing the custom host with the generated directive processor.  
+-   Тестирование пользовательского основного приложения с помощью созданного процессора директив.  
   
-## <a name="prerequisites"></a>Prerequisites  
- To define a DSL, you must have installed the following components:  
+## <a name="prerequisites"></a>Предварительные требования  
+ Для определения доменного языка необходимо установить следующие компоненты.  
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
-|Visual Studio Visualization and Modeling SDK||  
+|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.Microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
+|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.Microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
+|Пакет SDK для визуализации и моделирования в Visual Studio||  
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   
- In addition, you must have the custom text template transformation created in [Walkthrough: Creating a Custom Text Template Host](../modeling/walkthrough-creating-a-custom-text-template-host.md).  
+ Кроме того, необходимо иметь преобразования пользовательских текстовых шаблонов, созданных в [Пошаговое руководство: создание пользовательское основное приложение текстового шаблона](../modeling/walkthrough-creating-a-custom-text-template-host.md).  
   
-## <a name="using-domain-specific-language-tools-to-generate-a-directive-processor"></a>Using Domain-Specific Language Tools to Generate a Directive Processor  
- In this walkthrough, you use the Domain-Specific Language Designer Wizard to create a domain-specific language for the solution DSLMinimalTest.  
+## <a name="using-domain-specific-language-tools-to-generate-a-directive-processor"></a>С помощью средств доменного языка для создания процессора директив  
+ В этом пошаговом руководстве используется мастер конструктора доменного языка для создания доменного языка для решения DSLMinimalTest.  
   
-#### <a name="to-use-domain-specific-language-tools-to-generate-a-directive-processor-that-is-based-on-a-domain-model"></a>To use Domain-Specific Language Tools to generate a directive processor that is based on a domain model  
+#### <a name="to-use-domain-specific-language-tools-to-generate-a-directive-processor-that-is-based-on-a-domain-model"></a>Для использования средства для доменных языков для формирования процессор директив, который основан на модели домена  
   
-1.  Create a domain-specific language solution that has the following characteristics:  
+1.  Создайте решение доменный язык, имеет следующие характеристики:  
   
-    -   Name: DSLMinimalTest  
+    -   Имя: DSLMinimalTest  
   
-    -   Solution template: Minimal Language  
+    -   Шаблон решения: минимальный языка  
   
-    -   File extension: min  
+    -   Расширение файла: мин.  
   
-    -   Company name: Fabrikam  
+    -   Название организации: Fabrikam  
   
-     For more information about creating a domain-specific language solution, see [How to: Create a Domain-Specific Language Solution](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+     Дополнительные сведения о создании решений доменного языка см. в разделе [как: создание решения доменный язык](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
-2.  On the **Build** menu, click **Build Solution**.  
+2.  В меню **Сборка** выберите **Собрать решение**.  
   
     > [!IMPORTANT]
-    >  This step generates the directive processor and adds the key for it in the registry.  
+    >  Этот шаг приводит к возникновению ошибки процессора директив и добавляет ключ в реестре.  
   
-3.  On the **Debug** menu, click **Start Debugging**.  
+3.  В меню **Отладка** щелкните **Начать отладку**.  
   
-     A second instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] opens.  
+     Второй экземпляр [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] открывается.  
   
-4.  In the experimental build, in **Solution Explorer**, double-click the file **sample.min**.  
+4.  В экспериментальном построении в **обозревателе решений**, дважды щелкните файл **sample.min**.  
   
-     The file opens in the designer. Notice that the model has two elements, ExampleElement1 and ExampleElement2, and a link between them.  
+     Файл откроется в конструкторе. Обратите внимание, что модель имеет два элемента, ExampleElement1 и ExampleElement2 и связь между ними.  
   
-5.  Close the second instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+5.  Закройте второй экземпляр [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-6.  Save the solution, and then close the Domain-Specific Language Designer.  
+6.  Сохраните решение, а затем закройте конструктор доменного языка.  
   
-## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>Connecting a Custom Text Template Host to a Directive Processor  
- After you generate the directive processor, you connect the directive processor and the custom text template host that you created in [Walkthrough: Creating a Custom Text Template Host](../modeling/walkthrough-creating-a-custom-text-template-host.md).  
+## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>Подключение основное приложение текстового шаблона для процессора директив  
+ После создания процессора директив подключении процессора директив и основное приложение текстового шаблона, созданную в [Пошаговое руководство: создание пользовательское основное приложение текстового шаблона](../modeling/walkthrough-creating-a-custom-text-template-host.md).  
   
-#### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>To connect a custom text template host to the generated directive processor  
+#### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>Для подключения основное приложение текстового шаблона созданный процессора директив  
   
-1.  Open the CustomHost solution.  
+1.  Откройте решение CustomHost.  
   
-2.  On the **Project** menu, click **Add Reference**.  
+2.  На **проекта** меню, нажмите кнопку **добавить ссылку**.  
   
-     The **Add Reference** dialog box opens with the **.NET** tab displayed.  
+     **Добавить ссылку** откроется диалоговое окно с **.NET** отображается вкладка.  
   
-3.  Add the following references:  
+3.  Добавьте следующие ссылки:  
   
     -   Microsoft.VisualStudio.Modeling.Sdk.11.0  
   
@@ -114,7 +114,7 @@ You can write your own host that processes text templates. A basic custom host i
   
     -   Microsoft.VisualStudio.TextTemplating.VSHost.11.0  
   
-4.  At the top of Program.cs or Module1.vb, add the following line of code:  
+4.  В верхней части Program.cs или Module1.vb добавьте следующую строку кода:  
   
     ```csharp  
     using Microsoft.Win32;  
@@ -124,10 +124,10 @@ You can write your own host that processes text templates. A basic custom host i
     Imports Microsoft.Win32  
     ```  
   
-5.  Locate the code for the property `StandardAssemblyReferences`, and replace it with the following code:  
+5.  Поиск кода для свойства `StandardAssemblyReferences`и замените его следующим кодом:  
   
     > [!NOTE]
-    >  In this step, you add references to the assemblies that are required by the generated directive processor that your host will support.  
+    >  На этом шаге добавьте ссылки на сборки, необходимых для созданного процессор директив, которое будет поддерживать вашего узла.  
   
     ```csharp  
     //the host can provide standard assembly references  
@@ -160,10 +160,10 @@ You can write your own host that processes text templates. A basic custom host i
     }  
     ```  
   
-6.  Locate the code for the function `ResolveDirectiveProcessor`, and replace it with the following code:  
+6.  Найдите код для функции `ResolveDirectiveProcessor`и замените его следующим кодом:  
   
     > [!IMPORTANT]
-    >  This code contains hard-coded references to the name of the generated directive processor to which you want to connect. You could easily make this more general, in which case it looks for all directive processors listed in the registry and tries to find a match. In that case, the host would work with any generated directive processor.  
+    >  Этот код содержит жестко запрограммированные ссылки на имя созданного процессора директив, к которому необходимо подключиться. Можно легко сделать это более общие, в этом случае он ищет все процессоры директив, перечисленных в реестре и пытается найти совпадения. В этом случае узел будет работать с любой созданный процессора директив.  
   
     ```csharp  
     //the engine calls this method based on the directives the user has   
@@ -234,21 +234,21 @@ You can write your own host that processes text templates. A basic custom host i
             }  
     ```  
   
-7.  On the **File** menu, click **Save All**.  
+7.  На **файл** меню, нажмите кнопку **сохранить все**.  
   
-8.  On the **Build** menu, click **Build Solution**.  
+8.  В меню **Сборка** выберите **Собрать решение**.  
   
-## <a name="testing-the-custom-host-with-the-directive-processor"></a>Testing the Custom Host with the Directive Processor  
- To test the custom text template host, first you must write a text template that calls the generated directive processor. Then you run the custom host, pass to it the name of the text template, and verify that the directive is processed correctly.  
+## <a name="testing-the-custom-host-with-the-directive-processor"></a>Тестирование пользовательского основного приложения с процессора директив  
+ Чтобы проверить основное приложение текстового шаблона, необходимо написать текстовый шаблон, вызывает созданный процессора директив. Затем вы запустите пользовательское основное приложение, передать ему имя этого шаблона и убедитесь, что директиве правильно обработан.  
   
-#### <a name="to-create-a-text-template-to-test-the-custom-host"></a>To create a text template to test the custom host  
+#### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Создание текстового шаблона для тестирования пользовательского ведущего приложения  
   
-1.  Create a text file, and name it `TestTemplateWithDP.tt`. You can use any text editor, such as Notepad, to create the file.  
+1.  Создайте текстовый файл и назовите его `TestTemplateWithDP.tt`. Можно использовать любой текстовый редактор, например Блокнот, чтобы создать файл.  
   
-2.  Add the following to the text file:  
+2.  Добавьте в текстовый файл следующий текст:  
   
     > [!NOTE]
-    >  The programming language of the text template does not need to match that of the custom host.  
+    >  Язык программирования текстового шаблона не требуется соответствовал пользовательского ведущего приложения.  
   
     ```csharp  
     Text Template Host Test  
@@ -317,43 +317,43 @@ You can write your own host that processes text templates. A basic custom host i
     #>  
     ```  
   
-3.  In the code, replace \<YOUR PATH> with the path of the Sample.min file from the design-specific language you created in the first procedure.  
+3.  В коде, замените \<ВАШ путь > путь файла Sample.min из конструктора ориентированный язык, созданный в первой процедуре.  
   
-4.  Save and close the file.  
+4.  Сохраните и закройте файл.  
   
-#### <a name="to-test-the-custom-host"></a>To test the custom host  
+#### <a name="to-test-the-custom-host"></a>Тестирование пользовательского ведущего приложения  
   
-1.  Open a Command Prompt window.  
+1.  Откройте окно командной строки.  
   
-2.  Type the path of the executable file for the custom host, but do not press ENTER yet.  
+2.  Введите путь к исполняемому файлу пользовательского ведущего приложения, но пока не нажимайте клавишу ВВОД.  
   
-     For example, type:  
+     Например, введите:  
   
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  Instead of typing the address, you can browse to the file CustomHost.exe in **Windows Explorer**, and then drag the file into the Command Prompt window.  
+    >  Вместо того чтобы вводить адрес, можно просмотреть файл CustomHost.exe в **Проводник**, а затем перетащите файл в окне командной строки.  
   
-3.  Type a space.  
+3.  Введите пробел.  
   
-4.  Type the path of the text template file, and then press ENTER.  
+4.  Введите путь к файлу текстового шаблона и нажмите клавишу ВВОД.  
   
-     For example, type:  
+     Например, введите:  
   
      `<YOUR PATH>TestTemplateWithDP.txt`  
   
     > [!NOTE]
-    >  Instead of typing the address, you can browse to the file TestTemplateWithDP.txt in **Windows Explorer**, and then drag the file into the Command Prompt window.  
+    >  Вместо того чтобы вводить адрес, можно просмотреть в файле TestTemplateWithDP.txt в **проводника Windows**, а затем перетащите файл в окне командной строки.  
   
-     The custom host application runs and starts the text template transformation process.  
+     Пользовательское основное приложение выполняет и запускает процесс преобразования текстового шаблона.  
   
-5.  In **Windows Explorer**, browse to the folder that contains the file TestTemplateWithDP.txt.  
+5.  В **Проводник**, перейдите к папке, содержащей файл TestTemplateWithDP.txt.  
   
-     The folder also contains the file TestTemplateWithDP1.txt.  
+     Папка также содержит файл TestTemplateWithDP1.txt.  
   
-6.  Open this file to see the results of the text template transformation.  
+6.  Откройте этот файл, чтобы увидеть результаты преобразования текстового шаблона.  
   
-     The results of the generated text output appears and should look like this:  
+     Результаты сгенерированный текстовый вывод отображается и должен выглядеть следующим образом:  
   
     ```  
     Text Template Host Test  
@@ -365,6 +365,6 @@ You can write your own host that processes text templates. A basic custom host i
     Linked from: ExampleElement1  
     ```  
   
-## <a name="see-also"></a>See Also  
- [Walkthrough: Creating a Custom Text Template Host](../modeling/walkthrough-creating-a-custom-text-template-host.md)
+## <a name="see-also"></a>См. также  
+ [Пошаговое руководство. Создание пользовательского хост-класса для текстовых шаблонов](../modeling/walkthrough-creating-a-custom-text-template-host.md)
 

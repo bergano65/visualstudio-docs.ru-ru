@@ -1,4 +1,5 @@
 # [Средства R для Visual Studio](index.md)
+## [Рабочая нагрузка "Приложения для обработки и анализа данных и аналитические приложения"](data-science-workload.md)
 ## [Установка](installation.md)
 ## [Начало работы с R](getting-started-with-r.md)
 ### [Примеры](getting-started-samples.md)

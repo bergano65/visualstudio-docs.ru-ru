@@ -1,5 +1,5 @@
 ---
-title: Unit Test Basics | Microsoft Docs
+title: "Основные сведения о модульных тестах | Документы Майкрософт"
 ms.custom: 
 ms.date: 2016-01-07
 ms.reviewer: 
@@ -33,63 +33,63 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: ff2a1dc934083bb237189a1ebdfa25d42612433e
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="unit-test-basics"></a>Unit Test Basics
-Check that your code is working as expected by creating and running unit tests. It's called unit testing because you break down the functionality of your program into discrete testable behaviors that you can test as individual *units*. Visual Studio Test Explorer provides a flexible and efficient way to run your unit tests and view their results in Visual Studio. Visual Studio installs the Microsoft unit testing frameworks for managed and native code. Use a *unit testing framework* to create unit tests, run them, and report the results of these tests. Rerun unit tests when you make changes to test that your code is still working correctly. When you use Visual Studio Enterprise, you can run tests automatically after every build.  
+# <a name="unit-test-basics"></a>Основные сведения о модульных тестах
+Убедитесь, что код работает, как ожидалось, создав и выполнив модульные тесты. Модульное тестирование получило такое название, так как функции программы разбиваются на отдельные тестируемые участки поведения, которые можно протестировать в качестве отдельных *модулей*. Обозреватель тестов Visual Studio предоставляет гибкий и эффективный способ запуска модульных тестов и просмотра результатов в Visual Studio. Visual Studio устанавливает платформы модульного тестирования Microsoft для управляемого и машинного кода. *Платформа модульного тестирования* используется для создания модульных тестов, их запуска и создания отчетов о результатах таких тестов. Завершив внесение изменений, запустите модульные тесты повторно, чтобы убедиться, что код по-прежнему работает правильно. При использовании выпуска Visual Studio Enterprise можно настроить автоматический запуск тестов после каждой сборки.  
   
- Unit testing has the greatest effect on the quality of your code when it's an integral part of your software development workflow. As soon as you write a function or other block of application code, create unit tests that verify the behavior of the code in response to standard, boundary, and incorrect cases of input data, and that check any explicit or implicit assumptions made by the code. With *test driven development*, you create the unit tests before you write the code, so you use the unit tests as both design documentation and functional specifications.  
+ Модульное тестирование максимально влияет на качество кода, когда оно является неотъемлемой частью рабочего процесса разработки ПО. После написания функции или другого блока кода приложения создаются модульные тесты, которые проверяют поведение кода в ответ на стандартные, граничные и некорректные случаи ввода данных; также проверяются любые явные или предполагаемые допущения, сделанные кодом. При *разработке, управляемой тестами*, модульные тесты создаются перед написанием кода, поэтому модульные тесты используются в качестве технической документации и спецификации функциональности.  
   
- You can quickly generate test projects and test methods from your code, or manually create the tests as you need them. When you use IntelliTest to explore your .NET code, you can generate test data and a suite of unit tests. For every statement in the code, a test input is generated that will execute that statement. Find out how to [generate unit tests for your code](http://msdn.microsoft.com/library/dn823749.aspx).  
+ Можно быстро создавать тестовые проекты и методы теста из кода или создавать тесты вручную при необходимости. При использовании компонента IntelliTest для изучения кода .NET можно создавать тестовые данные и наборы модульных тестов. Для каждого оператора в коде создаются входные данные теста, которые будут выполнять этот оператор. Узнайте, как [создавать модульные тесты для своего кода](http://msdn.microsoft.com/library/dn823749.aspx).  
   
- Test Explorer can also run third-party and open source unit test frameworks that have implemented Test Explorer add-on interfaces. You can add many of these frameworks through the Visual Studio Extension Manager and the Visual Studio gallery. See [Install third-party unit test frameworks](../test/install-third-party-unit-test-frameworks.md)  
+ Обозреватель тестов также может запускать тесты c платформ модульных тестов стороннего производителя и платформ на основе открытого кода, имеющих дополнительные интерфейсы для Обозревателя тестов. Многие из этих платформ могут быть добавлены при помощи Менеджера расширений Visual Studio и Галереи Visual Studio. См. раздел [Установка платформ модульного тестирования сторонних поставщиков](../test/install-third-party-unit-test-frameworks.md)  
   
--   [Quick starts](#BKMK_Quick_starts)  
+-   [Краткие руководства](#BKMK_Quick_starts)  
   
--   [The MyBank Solution example](#BKMK_The_MyBank_Solution_example)  
+-   [Пример решения MyBank](#BKMK_The_MyBank_Solution_example)  
   
--   [Create unit test projects and test methods](#BKMK_Creating_the_unit_test_projects)  
+-   [Создание проектов модульных тестов и методов теста](#BKMK_Creating_the_unit_test_projects)  
   
--   [Write your tests](#BKMK_Writing_your_tests)  
+-   [Написание тестов](#BKMK_Writing_your_tests)  
   
--   [Run tests in Test Explorer](#BKMK_Running_tests_in_Test_Explorer)  
+-   [Выполнение тестов в обозревателе тестов](#BKMK_Running_tests_in_Test_Explorer)  
   
--   [Run and view tests](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)  
+-   [Выполнение и просмотр тестов](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)  
   
-##  <a name="BKMK_Unit_testing_overview"></a> Unit testing overview  
+##  <a name="BKMK_Unit_testing_overview"></a> Обзор модульного тестирования  
   
-###  <a name="BKMK_Quick_starts"></a> Quick starts  
- For an introduction to unit testing that takes you directly into coding, see one of these topics:  
+###  <a name="BKMK_Quick_starts"></a> Краткие руководства  
+ Для получения информации по введению в модульное тестирование, которое знакомит вас сразу с созданием кода, см. один из следующих разделов.  
   
--   [Walkthrough: Creating and Running Unit Tests for Managed Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
+-   [Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
   
--   [Quick Start: Test Driven Development with Test Explorer](../test/quick-start-test-driven-development-with-test-explorer.md)  
+-   [Краткое руководство. Разработка на основе тестирования с использованием обозревателя тестов](../test/quick-start-test-driven-development-with-test-explorer.md)  
   
--   [Unit testing native code with Test Explorer](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
+-   [Модульное тестирование машинного кода с использованием обозревателя тестов](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
   
-##  <a name="BKMK_The_MyBank_Solution_example"></a> The MyBank Solution example  
- In this topic, we use the development of a fictional application called `MyBank` as an example. You don't need the actual code to follow the explanations in this topic. Test methods are written in C# and presented by using the Microsoft Unit Testing Framework for Managed Code, However, the concepts are easily transferred to other languages and frameworks.  
+##  <a name="BKMK_The_MyBank_Solution_example"></a> Пример решения MyBank  
+ В данном разделе в качестве примера используется разработка ненастоящего приложения, которое называется `MyBank` . Чтобы следовать разъяснениям в данном разделе, действительного кодирования не потребуется. Методы тестирования написаны на C# и представлены при помощи платформы модульного тестирования Microsoft для управляемого кода, однако концепции легко переносятся на другие языки и платформы.  
   
- ![MyBank Solution](../test/media/ute_mybanksolution.png "UTE_MyBankSolution")  
+ ![Решение MyBank](../test/media/ute_mybanksolution.png "UTE_MyBankSolution")  
   
- Our first attempt at a design for the `MyBank` application includes an accounts component that represents an individual account and its transactions with the bank, and a database component that represents the functionality to aggregate and manage the individual accounts.  
+ Первая попытка проектирования приложения `MyBank` включает в себя компонент счетов, который представляет собой лицевой счет и его транзакции с банком, а также компонент базы данных, который включает в себя функции объединения лицевых счетов и управления ими.  
   
- We create a `MyBank` solution that contains two projects:  
+ Создается решение `MyBank` , которое содержит два проекта.  
   
 -   `Accounts`  
   
 -   `BankDb`  
   
- Our first attempt at designing the `Accounts` project contain a class to hold basic information about an account, an interface that specifies the common functionality of any type of account, like depositing and withdrawing assets from the account, and a class derived from the interface that represents a checking account. We begin the Accounts projects by creating the following source files:  
+ Первая попытка создания проекта `Accounts` содержит класс для хранения базовой информации о счете, интерфейс, который определяет функции счета любого типа, например, для внесения и снятия средств со счета и класс, производный от интерфейса, который представляет собой текущий счет. Проект Счета начинается с создания следующих исходных файлов:  
   
--   `AccountInfo.cs` defines the basic information for an account.  
+-   `AccountInfo.cs` , определяющего основную информацию о счете;  
   
--   `IAccount.cs` defines a standard `IAccount` interface for an account, including methods to deposit and withdraw assets from an account and to retrieve the account balance.  
+-   `IAccount.cs` , определяющего стандартный интерфейс `IAccount` для счета, включая методы внесения и снятия средств со счета и получения баланса счета;  
   
--   `CheckingAccount.cs` contains the `CheckingAccount` class that implements the `IAccounts` interface for a checking account.  
+-   `CheckingAccount.cs` , содержащего класс `CheckingAccount` , который реализует интерфейс `IAccounts` для чекового счета.  
   
- We know from experience that one thing a withdrawal from a checking account must do is to make sure that the amount withdrawn is less than the account balance. So we override the `IAccount.Withdaw` method in `CheckingAccount` with a method that checks for this condition. The method might look like this:  
+ Из опыта известно, что при снятии средств с текущего счета необходимо убедиться, что количество снимаемых средств меньше, чем размер баланса счета. Поэтому метод `IAccount.Withdaw` в `CheckingAccount` перекрывается методом, который проверяет данное условие. Метод может выглядеть следующим образом.  
   
 ```csharp  
   
@@ -107,70 +107,70 @@ public void Withdraw(double amount)
   
 ```  
   
- Now that we have some code, it's time for testing.  
+ Теперь, когда есть немного кода, можно провести тестирование.  
   
-##  <a name="BKMK_Creating_the_unit_test_projects"></a> Create unit test projects and test methods  
- It is often quicker to generate the unit test project and unit test stubs from your code. Or you can choose to create the unit test project and tests manually depending on your requirements.  
+##  <a name="BKMK_Creating_the_unit_test_projects"></a> Создание проектов модульных тестов и методов теста  
+ Как правило, создавать проект модульного теста и заглушки модульных тестов проще и быстрее из кода. Кроме того, можно создать проект модульных тестов и тесты вручную в зависимости от потребностей.  
   
- **Generate unit test project and unit test stubs**  
+ **Создание проекта модульного теста и заглушек модульных тестов**  
   
-1.  From the code editor window, right-click and choose **Create Unit Tests** from the context menu.  
+1.  В окне редактора кода щелкните правой кнопкой мыши и выберите в контекстном меню команду **Создать модульные тесты** .  
   
-     ![From the editor window, view the context menu](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")  
+     ![В окне редактора просмотрите контекстное меню](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")  
   
-2.  Click OK to accept the defaults to create your unit tests, or change the values used to create and name the unit test project and the unit tests. You can select the code that is added by default to the unit test methods.  
+2.  Нажмите кнопку "ОК", чтобы принять значения по умолчанию для создания модульных тестов, или измените значения, которые использовались для создания и назначения имени проекта модульного теста и модульных тестов. Можно выбрать код, который добавляется по умолчанию в методы модульных тестов.  
   
-     ![Right&#45;click in editor and choose Create Unit Tests](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")  
+     ![Щелкните правой кнопкой мыши в редакторе и выберите пункт "Создать модульные тесты"](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")  
   
-3.  The unit test stubs are created in a new unit test project for all the methods in the class.  
+3.  Заглушки модульных тестов создаются в новом проекте модульного теста для всех методов в классе.  
   
-     ![The unit tests are created](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")  
+     ![Модульные тесты создаются](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")  
   
-4.  Now jump ahead to learn how to [add code to the unit test methods](#BKMK_Writing_your_tests) to make your unit test meaningful, and any extra unit tests that you might want to add to thoroughly test your code.  
+4.  Теперь рассмотрим [добавление кода в методы модульных тестов](#BKMK_Writing_your_tests) (чтобы сделать модульный тест значимым), а также дополнительных модульных тестов, которые могут потребоваться для тщательного тестирования кода.  
   
- **Create your unit test project and unit tests manually**  
+ **Создание проекта модульного теста и модульных тестов вручную**  
   
- A unit test project usually mirrors the structure of a single code project. In the MyBank example, you add two unit test projects named `AccountsTests` and `BankDbTests` to the `MyBanks` solution. The test project names are arbitrary, but adopting a standard naming convention is a good idea.  
+ Проект модульного теста отражает структуру проекта кода. В примере MyBank добавляются два проекта модульного тестирования с именами `AccountsTests` и `BankDbTests` в решение `MyBanks` . Имена проекта теста произвольны, но рекомендуется принять концепцию стандартного именования.  
   
- **To add a unit test project to a solution:**  
+ **Добавление нового проекта модульного тестирование в решение**  
   
-1.  On the **File** menu, choose **New** and then choose **Project** (Keyboard Ctrl + Shift + N).  
+1.  В меню **Файл** выберите **Новый** , затем выберите **Проект** (Сочетание клавиш Ctrl + Shift + N).  
   
-2.  On the New Project dialog box, expand the **Installed** node, choose the language that you want to use for your test project, and then choose **Test**.  
+2.  В диалоговом окне нового проекта разверните узел **Установлено** , выберите требуемый язык для проекта тестирования, затем выберите **Тест**.  
   
-3.  To use one of the Microsoft unit test frameworks, choose **Unit Test Project** from the list of project templates. Otherwise, choose the project template of the unit test framework that you want to use. To test the `Accounts` project of our example, you would name the project `AccountsTests`.  
+3.  Чтобы использовать одну из платформ модульного тестирования Microsoft выберите **Проект модульного тестирования** из списка шаблонов проекта. В иных случаях выберите шаблон проекта платформы модульного тестирования, который необходимо использовать. Для тестирования проекта `Accounts` в нашем примере проект будет назван `AccountsTests`.  
   
     > [!WARNING]
-    >  Not all third-party and open source unit test frameworks provide a Visual Studio project template. Consult the framework document for information about creating a project.  
+    >  Не все платформы модульного тестирования сторонних разработчиков и на основе открытого кода предоставляют шаблоны проекта Visual Studio. Просмотрите информацию в документе платформы по созданию проекта.  
   
-4.  In your unit test project, add a reference to the code project under test, in our example to the Accounts project.  
+4.  В проекте модульного тестирования добавьте ссылку на проект кода в тесте, а в данном примере — на проект Счета.  
   
-     To create the reference to the code project:  
+     Создание ссылки на проект кода  
   
-    1.  Select the project in Solution Explorer.  
+    1.  Выберите проект в обозревателе решений.  
   
-    2.  On the **Project** menu, choose **Add Reference**.  
+    2.  В меню **Проект** выберите **Добавить ссылку**.  
   
-    3.  On the Reference Manager dialog box, open the **Solution** node and choose **Projects**. Select the code project name and close the dialog box.  
+    3.  В диалоговом окне диспетчера ссылок откройте узел **Решение** и выберите **Проекты**. Выберите наименование проекта кода и закройте диалоговое окно.  
   
- Each unit test project contains classes that mirror the names of the classes in the code project. In our example, the `AccountsTests` project would contain the following classes:  
+ Каждый проект модульного тестирования содержит классы, которые отражают имена классов в проекте кода. В данном примере проект `AccountsTests` будет содержать следующие классы.  
   
--   `AccountInfoTests` class contains the unit test methods for the `AccountInfo` class in the `BankAccount` project  
+-   Класс`AccountInfoTests` содержит методы модульного тестирования для класса `AccountInfo` в проекте `BankAccount` .  
   
--   `CheckingAccountTests` class contains the unit test methods for `CheckingAccount` class.  
+-   Класс`CheckingAccountTests` содержит методы модульного тестирования для класса `CheckingAccount` .  
   
-##  <a name="BKMK_Writing_your_tests"></a> Write your tests  
- The unit test framework that you use and Visual Studio IntelliSense will guide you through writing the code for your unit tests for a code project. To run in Test Explorer, most frameworks require that you add specific attributes to identify unit test methods. The frameworks also provide a way—usually through assert statements or method attributes—to indicate whether the test method has passed or failed. Other attributes identify optional setup methods that are at class initialization and before each test method and teardown methods that are run after each test method and before the class is destroyed.  
+##  <a name="BKMK_Writing_your_tests"></a> Написание тестов  
+ Платформа модульного тестирования и Visual Studio IntelliSense помогут вам в написании кода модульных тестов для проекта кода. Для запуска в Обозревателе тестов многие платформы требуют добавления особых атрибутов для определения методов модульного тестирования. Платформы также предоставляют способ — обычно при помощи оператора контроля или атрибутов метода -— для определения успешности или не успешности теста. Другие атрибуты определяют необязательные методы установки, которые выполняются при инициализации класса и перед каждым методом тестирования, а также методы разборки, которые запускаются после каждого метода тестирования и после уничтожения класса.  
   
- The AAA (Arrange, Act, Assert) pattern is a common way of writing unit tests for a method under test.  
+ Модель AAA (размещение, действие, утверждение) является стандартным способом написания модульных тестов для метода тестирования.  
   
--   The **Arrange** section of a unit test method initializes objects and sets the value of the data that is passed to the method under test.  
+-   Подраздел **Размещение** метода модульного тестирования инициализирует объекты и устанавливает значение данных, которые переданы методу для теста.  
   
--   The **Act** section invokes the method under test with the arranged parameters.  
+-   Подраздел **Действие** вызывает метод для теста с размещенными параметрами.  
   
--   The **Assert** section verifies that the action of the method under test behaves as expected.  
+-   Подраздел **Утверждение** проверяет, чтобы метод для теста действовал, как ожидается.  
   
- To test the `CheckingAccount.Withdraw` method of our example, we can write two tests: one that verifies the standard behavior of the method, and one that verifies that a withdrawal of more than the balance will fail. In the `CheckingAccountTests` class, we add the following methods:  
+ Для тестирования метода `CheckingAccount.Withdraw` в нашем примере можно написать два теста: один проверит стандартное поведение метода, а другой проверит, что снятие средств в количестве большем, чем указано в балансе, не будет успешным. В классе `CheckingAccountTests` добавьте следующие методы.  
   
 ```csharp  
 [TestMethod]  
@@ -201,16 +201,16 @@ public void Withdraw_AmountMoreThanBalance_Throws()
   
 ```  
   
- Note that `Withdraw_ValidAmount_ChangesBalance` uses an explicit `Assert` statement to determine whether the test method passes or fails, while `Withdraw_AmountMoreThanBalance_Throws` uses the `ExpectedException` attribute to determine the success of the test method. Under the covers, a unit test framework wraps test methods in try/catch statements. In most cases, if an exception is caught, the test method fails and the exception is ignored. The `ExpectedException` attribute causes the test method to pass if the specified exception is thrown.  
+ Заметьте, что `Withdraw_ValidAmount_ChangesBalance` использует явное утверждение `Assert` для определения успешности или неуспешности метода тестирования, в то время как `Withdraw_AmountMoreThanBalance_Throws` использует атрибут `ExpectedException` для определения успешности метода тестирования. Под прикрытием платформа модульного тестирования возвращает методы тестирования в утверждения try/catch. В большинстве случаев, если захвачено исключение, то метод тестирования оказывается неудачным и исключение игнорируется. Атрибут `ExpectedException` успешно завершает метод тестирования, если появляется заданное исключение.  
   
- For more information about the Microsoft Unit Testing Frameworks, see one of the following topics:  
+ Дополнительные сведения о Платформах модульного тестирования Microsoft см. в одном из следующих разделов.  
   
--   [Writing Unit Tests for the .NET Framework with the Microsoft Unit Test Framework for Managed Code](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
+-   [Написание модульных тестов для платформы .NET Framework с использованием платформы модульного тестирования Майкрософт для управляемого кода](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
   
--   [Writing Unit tests for C/C++ with the Microsoft Unit Testing Framework for C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)  
+-   [Написание модульных тестов для языка C/C++ с использованием платформы модульного тестирования Майкрософт для C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)  
   
-## <a name="set-timeouts-for-unit-tests"></a>Set timeouts for unit tests  
- To set a timeout on an individual test method:  
+## <a name="set-timeouts-for-unit-tests"></a>Настройка времени ожидания для модульных тестов  
+ Задание лимита времени на отдельный метод тестирования  
   
 ```csharp  
 [TestMethod]  
@@ -224,7 +224,7 @@ public void My_Test()
   
 ```  
   
- To set the timeout to the maximum allowed:  
+ Задние лимита времени на максимально разрешенный  
   
 ```csharp  
 [TestMethod]  
@@ -234,74 +234,74 @@ public void My_Test ()
 }  
 ```  
   
-##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Run tests in Test Explorer  
- When you build the test project, the tests appear in Test Explorer. If Test Explorer is not visible, choose **Test** on the Visual Studio menu, choose **Windows**, and then choose **Test Explorer**.  
+##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Выполнение тестов в обозревателе тестов  
+ При построении проекта тестирования тесты появляются в Обозревателе тестов. Если Обозреватель тестов не виден, выберите **Тест** в меню Visual Studio, выберите **Windows**, затем выберите **Обозреватель тестов**.  
   
- ![Unit Test Explorer](../ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
+ ![Обозреватель модульных тестов](../ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
   
- As you run, write, and rerun your tests, the default view of Test Explorer displays the results in groups of **Failed Tests**, **Passed Tests**, **Skipped Tests** and **Not Run Tests**. You can choose a group heading to open the view that displays all them tests in that group.  
+ При запуске, написании и повторном запуске тестов вид по умолчанию Обозревателя тестов отображает результаты в группах **Неудачные тесты**, **Пройденные тесты**, **Пропущенные тесты** и **Не запущенные тесты**. Можно выбрать заголовок группы, чтобы открыть окно, в котором отображаются все тесты группы.  
   
- You can also filter the tests in any view by matching text in the search box at the global level or by selecting one of the pre-defined filters. You can run any selection of the tests at any time. The results of a test run are immediately apparent in the pass/fail bar at the top of the explorer window. Details of a test method result are displayed when you select the test.  
+ Кроме того, можно фильтровать тесты по совпадению текста в поле поиска на глобальном уровне или с помощью одного из предустановленных фильтров. Можно запустить любую выборку тестов в любое время. Результаты запущенного теста появляются сразу же в строке "успешно/не успешно" наверху окна обозревателя. Детальная информация результата метода тестирования отображается при выборе теста.  
   
-###  <a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a> Run and view tests  
- The Test Explorer toolbar helps you discover, organize, and run the tests that you are interested in.  
+###  <a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a> Выполнение и просмотр тестов  
+ Панель инструментов Обозревателя тестов помогает найти, организовать и запустить необходимые тесты.  
   
- ![Run tests from the Test Explorer toolbar](../test/media/ute_toolbar.png "UTE_ToolBar")  
+ ![Запуск тестов на панели инструментов в обозревателе тестов](../test/media/ute_toolbar.png "UTE_ToolBar")  
   
- You can choose **Run All** to run all your tests, or choose **Run** to choose a subset of tests to run. After you run a set of tests, a summary of the test run appears at the bottom of the Test Explorer window. Select a test to view the details of that test in the bottom pane. Choose **Open Test** from the context menu (Keyboard: F12) to display the source code for the selected test.  
+ Можно выбрать **Запустить все** , чтобы запустить все тесты, или выбрать **Запустить** , чтобы выбрать подмножество тестов для запуска. После запуска набора тестов появляется сводка запущенных тестов внизу окна Обозревателя тестов. Выберите тест, чтобы просмотреть детальную информацию по данному тесту в нижней панели. Чтобы открыть исходный код выбранного теста, выберите в контекстном меню пункт **Открыть тест** (или нажмите клавишу F12).  
   
- If individual tests have no dependencies that prevent them from being run in any order, turn on parallel test execution with the ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") toggle button on the toolbar. This can noticeably reduce the time taken to run all the tests.  
+ Если у отдельных тестов нет зависимостей, предотвращающих выполнение этих тестов в любом порядке, включите параллельное тестирование с помощью переключателя ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") на панели инструментов. Это может заметно сократить время, необходимое для выполнения всех тестов.  
   
-###  <a name="BKMK_Running_tests_after_every_build"></a> Run tests after every build  
+###  <a name="BKMK_Running_tests_after_every_build"></a> Запуск тестов после каждой сборки  
   
 > [!WARNING]
->  Running unit tests after every build is supported only in Visual Studio Enterprise.  
+>  Запуск модульных тестов после каждой сборки поддерживается только в Visual Studio Enterprise.  
   
 |||  
 |-|-|  
-|![Run after build](../test/media/ute_runafterbuild_btn.png "UTE_RunAfterBuild_btn")|To run your unit tests after each local build, choose **Test** on the standard menu, choose **Run Tests After Build** on the Test Explorer toolbar.|  
+|![Запуск после построения](../test/media/ute_runafterbuild_btn.png "UTE_RunAfterBuild_btn")|Чтобы запустить модульные тесты после каждого локального построения, в стандартном меню выберите **Тест** , затем выберите **Запустить тесты после построения** в панели инструментов Обозревателя тестов.|  
   
-###  <a name="BKMK_Filtering_and_grouping_the_test_list"></a> Filter and group the test list  
- When you have a large number of tests, you can Type in Test Explorer search box to filter the list by the specified string. You can restrict your filter event more by choosing from the filter list.  
+###  <a name="BKMK_Filtering_and_grouping_the_test_list"></a> Фильтрация и группировка списка тестов  
+ Если существует много тестов, можно ввести текст в панели поиска Обозревателя тестов, чтобы отфильтровать список по указанной строке. Можно ограничить фильтр при помощи выбора фильтров из списка.  
   
- ![Search filter categories](../test/media/ute_searchfilter.png "UTE_SearchFilter")  
+ ![Категории фильтров поиска](../test/media/ute_searchfilter.png "UTE_SearchFilter")  
   
 |||  
 |-|-|  
-|![Test Explorer group button](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|To group your tests by category, choose the **Group By** button.|  
+|![Кнопка группы обозревателя тестов](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Для группировки тестов по категории, нажмите кнопку **Группировать по** .|  
   
- For more information, see [Run unit tests with Test Explorer](../test/run-unit-tests-with-test-explorer.md)  
+ Дополнительные сведения см. в разделе [Выполнение модульных тестов с помощью обозревателя тестов](../test/run-unit-tests-with-test-explorer.md)  
   
-## <a name="qa"></a>Q&A  
- **Q: How do I debug unit tests?**  
+## <a name="qa"></a>Вопросы и ответы  
+ **Вопрос. Как выполнять отладку модульных тестов?**  
   
- **A:** Use Test Explorer to start a debugging session for your tests. Stepping through your code with the Visual Studio debugger seamlessly takes you back and forth between the unit tests and the project under test. To start debugging:  
+ **Ответ.** Чтобы запустить сеанс отладки для тестов, можно использовать обозреватель тестов. Пошагово выполняя код, отладчик Visual Studio плавно переключается назад и вперед между модульными тестами и проектом для тестирования. Начало отладки  
   
-1.  In the Visual Studio editor, set a breakpoint in one or more test methods that you want to debug.  
+1.  В редакторе Visual Studio установите точку останова в одном или нескольких методах тестирования, которые вы хотите проверить.  
   
     > [!NOTE]
-    >  Because test methods can run in any order, set breakpoints in all the test methods that you want to debug.  
+    >  Так как методы тестирования могут запускаться в любом порядке, необходимо устанавливать точки останова во всех методах тестирования, которые необходимо проверить.  
   
-2.  In Test Explorer, select the test methods and then choose **Debug Selected Tests** from the shortcut menu.  
+2.  В Обозревателе тестов выберите методы тестирования и затем выберите **Отладить выбранные тесты** из меню быстрого запуска.  
   
- Learn more details about [debugging unit tests](../debugger/debugging-in-visual-studio.md).  
+ См. дополнительные сведения об [отладке модульных тестов](../debugger/debugging-in-visual-studio.md).  
   
- **Q: If I'm using TDD, how do I generate code from my tests?**  
+ **В. Если я использую TDD, как я могу создать код из тестов?**  
   
- **A:** Use IntelliSense to generate classes and methods in your project code. Write a statement in a test method that calls the class or method that you want to generate, then open the IntelliSense menu under the call. If the call is to a constructor of the new class, choose **Generate new type** from the menu and follow the wizard to insert the class in your code project. If the call is to a method, choose **Generate new method** from the IntelliSense menu.  
+ **Ответ.** Используйте IntelliSense для создания классов и методов в коде проекта. Напишите утверждение в методе тестирования, которое вызывает класс или метод, который необходимо создать, затем откройте меню IntelliSense во время вызова. Если вызов предназначен для конструктора нового класса, выберите **Сформировать новый тип** из меню и следуйте подсказкам мастера, чтобы вставить класс в проект кода. Если вызов предназначен для метода, то выберите **Сформировать новый метод** из меню IntelliSense.  
   
- ![Generate Method Stub Intellisense Menu](../test/media/ute_generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")  
+ ![Меню Intellisense "Сформировать заглушку метода"](../test/media/ute_generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")  
   
- **Q: Can I create unit tests that take multiple sets of data as input to run the test?**  
+ **Вопрос. Можно ли создать модульные тесты, которые принимают несколько наборов данных в качестве входных данных для выполнения теста?**  
   
- **A:** Yes. *Data-driven test methods* let you test a range of values with a single unit test method. Use a `DataSource` attribute for the test method that specifies the data source and table that contains the variable values that you want to test.  In the method body, you assign the row values to variables using the `TestContext.DataRow[`*ColumnName*`]` indexer.  
+ **О.** Да. *Управляемые данными методы тестирования* позволяют тестировать диапазон значений с помощью одного метода модульного теста. Примените к методу теста атрибут `DataSource` , который определяет источник данных и таблицу, в которых содержатся подлежащие тестированию значения переменных.  В теле метода назначьте ряд значений для переменных при помощи индексатора `TestContext.DataRow[`*ColumnName*`]` .  
   
 > [!NOTE]
->  These procedures apply only to test methods that you write by using the Microsoft unit test framework for managed code. If you're using a different framework, consult the framework documentation for equivalent functionality.  
+>  Эти процедуры применяются только к методам тестирования, которые пишутся при помощи платформы модульного тестирования Microsoft для управляемого кода. Если используется другая платформа, проконсультируйтесь с документацией по платформе для эквивалентного функционала.  
   
- For example, assume we add an unnecessary method to the `CheckingAccount` class that is named `AddIntegerHelper`. `AddIntegerHelper` adds two integers.  
+ Например, предположим, что был добавлен ненужный метод в класс `CheckingAccount` , который называется `AddIntegerHelper`. `AddIntegerHelper` добавляет два целочисленных значения.  
   
- To create a data-driven test for the `AddIntegerHelper` method, we first create an Access database named `AccountsTest.accdb` and a table named `AddIntegerHelperData`. The `AddIntegerHelperData` table defines columns to specify the first and second operands of the addition and a column to specify the expected result. We fill a number of rows with appropriate values.  
+ Для создания управляемого данными теста для метода `AddIntegerHelper` сначала создается база данных доступа с именем `AccountsTest.accdb` и таблица с именем `AddIntegerHelperData`. Таблица `AddIntegerHelperData` определяет колонки для указания первого и второго операнда сложения и колонку, указывающую ожидаемый результат. Заполняем несколько рядов соответствующими значениями.  
   
 ```csharp  
   
@@ -322,43 +322,43 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
   
 ```  
   
- The attributed method runs once for each row in the table. Test Explorer reports a test failure for the method if any of the iterations fail. The test results detail pane for the method shows you the pass/fail status method for each row of data.  
+ Метод с атрибутом запускается один раз для каждого ряда в таблице. Обозреватель тестов оповещает о неудачном тесте для метода, если одна из итераций не была успешной. Панель подробных результатов теста для метода показывает статус "прошел/неудачен" для каждого ряда данных.  
   
- Learn more about [data-driven unit tests](../test/how-to-create-a-data-driven-unit-test.md).  
+ Дополнительные сведения о [модульных тестах, управляемых данными](../test/how-to-create-a-data-driven-unit-test.md).  
   
- **Q: Can I view how much of my code is tested by my unit tests?**  
+ **Вопрос. Можно ли узнать, какой объем кода проверяется модульными тестами?**  
   
- **A:** Yes. You can determine the amount of your code that is actually being tested by your unit tests by using the Visual Studio code coverage tool. Native and managed languages and all unit test frameworks that can be run by the Unit Test Framework are supported.  
+ **О.** Да. Можно определить объем кода, который был фактически проверен модульными тестами, с помощью средства покрытия кода Visual Studio. Поддерживаются машинные и управляемые языки и все платформы модульного тестирования, которые могут быть запущены платформой модульного тестирования.  
   
- You can run code coverage on selected tests or on all tests in a solution. The Code Coverage Results window displays the percentage of the blocks of product code that were exercised by line, function, class, namespace and module.  
+ Можно запустить покрытие кода на выбранных тестах или на всех тестах решения. Окно результатов покрытия кода отображает процент блоков кода продукта, которые были задействованы по строке, функции, классу, пространству имен и модулю.  
   
- To run code coverage for test methods in a solution, choose **Tests** on the Visual Studio menu and then choose **Analyze code coverage**.  
+ Для запуска покрытия кода для методов теста в решении выберите в меню Visual Studio пункт **Тесты** , а затем **Анализ покрытия кода**.  
   
- Coverage results appear in the Code Coverage Results window.  
+ Результаты покрытия появляются в окне "Результаты покрытия кода".  
   
- ![Code coverage results](../test/media/ute_codecoverageresults.png "UTE_CodeCoverageResults")  
+ ![Результаты покрытия кода](../test/media/ute_codecoverageresults.png "UTE_CodeCoverageResults")  
   
- Learn more about [code coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .  
+ Дополнительные сведения о [покрытии кода](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .  
   
- **Q: How can I test methods in my code that have external dependencies?**  
+ **Вопрос. Можно ли протестировать методы в коде, которые имеют внешние зависимости?**  
   
- **A:** Yes. If you have Visual Studio Enterprise, Microsoft Fakes can be used with test methods that you write by using unit test frameworks for managed code.  
+ **О.** Да. В выпуске Visual Studio Enterprise компонент Microsoft Fakes можно использовать с методами тестов, которые были написаны с помощью платформ модульного тестирования для управляемого кода.  
   
- Microsoft Fakes uses two approaches to create substitute classes for external dependencies.  
+ Microsoft Fakes использует два подхода при создании классов-заменителей для внешних зависимостей.  
   
-1.  *Stubs* generate substitute classes derived from the parent interface of the target dependency class. Stub methods can be substituted for public virtual methods of the target class.  
+1.  *Заглушки* создают классы на замену, которые являются производными от родительского интерфейса класса зависимости цели. Методы заглушек могут быть заменены на публичные виртуальные методы класса цели.  
   
-2.  *Shims* use runtime instrumentation to divert calls to a target method to a substitute shim method for non-virtual methods.  
+2.  *Оболочки* используют инструментарий среды выполнения для перевода вызовов целевого метода на метод заменяющей оболочки для невиртуальных методов.  
   
- In both approaches, you use the generated delegates of calls to the dependency method to specify the behavior that you want in the test method.  
+ При обоих подходах используются созданные делегаты вызовов для метода зависимости для определения требуемого поведения в данном методе тестирования.  
   
- Learn more about [isolating unit test methods with Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
+ Дополнительные сведения об [изоляции методов модульного тестирования с помощью Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
   
- **Q: Can I use other unit test frameworks to create unit tests?**  
+ **В. Можно ли использовать другие платформы модульного тестирования для создания модульных тестов?**  
   
- **A:** Yes, follow these steps to [find and install other frameworks](../test/install-third-party-unit-test-frameworks.md). After you restart Visual Studio, reopen your solution to create your unit tests, and then select your installed frameworks here:  
+ **О** . Да, выполните инструкции по [поиску и установке других платформ](../test/install-third-party-unit-test-frameworks.md). Перезапустив Visual Studio, повторно откройте решение, чтобы создать модульные тесты, и выберите установленные платформы здесь:  
   
- ![Select other installed unit test framework](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
+ ![Выбор других установленных платформ модульного тестирования](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
   
- Your unit test stubs will be created using the selected framework.
+ Заглушки модульных тестов будут созданы с помощью выбранной платформы.
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition | Microsoft Docs
+title: "IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -33,13 +33,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 8f7e77903d98943b1f1d0d5b879656c67b1ac223
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
-Maps a document position in the specified module to an array of debug addresses.  
+Сопоставляет позицию документ в указанном модуле массив адресов отладки.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 [C++]  
@@ -65,30 +65,30 @@ int GetAddressesInModuleFromPosition(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Параметры  
  `ulAppDomainID`  
- [in] Application domain identifier.  
+ [in] Идентификатор домена приложения.  
   
  `guidModule`  
- [in] Unique identifier of the module.  
+ [in] Уникальный идентификатор модуля.  
   
  `pDocPos`  
- [in] The document position.  
+ [in] Позиция документа.  
   
  `fStatmentOnly`  
- [in] If `TRUE`, limits the debug addresses to a single statement.  
+ [in] Если `TRUE`, ограничивает отладки адреса для одной инструкции.  
   
  `ppEnumBegAddresses`  
- [out] Returns an enumerator for the starting debug addresses that are associated with this statement or line.  
+ [out] Возвращает перечислитель для начала отладки адресов, которые связаны с этой инструкции или строке.  
   
  `ppEnumEndAddresses`  
- [out] Returns an enumerator for the ending debug addresses that are associated with this statement or line.  
+ [out] Возвращает перечислитель для окончания отладки адресов, которые связаны с этой инструкции или строке.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейса.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetAddressesInModuleFromPosition(  
@@ -239,5 +239,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>См. также  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

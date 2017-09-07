@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCustomAttributes::Clone | Microsoft Docs
+title: "IEnumDebugCustomAttributes::Clone | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 58aae975ea79bdfa448ab91b55ae3191e072ac05
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="ienumdebugcustomattributesclone"></a>IEnumDebugCustomAttributes::Clone
-Creates an enumerator that contains the same enumeration state as the current enumerator.  
+Создает перечислитель, с тем же состоянием, как у текущего перечислителя.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
 HRESULT Clone (   
@@ -54,15 +54,15 @@ int Clone(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Параметры  
  ppEnum  
- [out] Returns a copy of this enumeration as a separate object.  
+ [out] Возвращает копию этого перечисления в виде отдельного объекта.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- The copy of the enumeration has the same state as the original at the time this method is called. However, the copy's and the original's states are separate and can be changed individually.  
+## <a name="remarks"></a>Примечания  
+ Копия перечисления имеет том же состоянии, что и исходный во время вызова этого метода. Тем не менее копирования и исходного состояния отделены и могут изменяться по отдельности.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>См. также  
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

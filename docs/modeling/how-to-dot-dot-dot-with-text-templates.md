@@ -1,5 +1,5 @@
 ---
-title: How to ... with Text Templates | Microsoft Docs
+title: "Практическое руководство по текстовым шаблонам | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -29,73 +29,73 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 6e6841e77556d9ae8b8ce76bff01537d5f45e855
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="how-to--with-text-templates"></a>How to ... with Text Templates
-Text templates in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] provide a useful way of generating text of any kind. You can use text templates to generate text at run time as part of your application and at design time to generate some of your project code. This topic summarizes the most frequently asked "How do I ...?" questions.  
+# <a name="how-to--with-text-templates"></a>Практическое руководство по текстовым шаблонам
+Текстовые шаблоны в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] предоставляют удобный способ создания текстом любого типа. Текстовые шаблоны можно использовать для создания текста во время выполнения как часть приложения, а также во время разработки для создания часть кода проекта. Этот раздел содержит описание наиболее часто задаваемые «Как?...» вопросы.  
   
- In this topic, multiple answers that are preceded by bullets are alternative suggestions.  
+ В этом разделе несколько ответов, которым предшествует маркеры являются альтернативными предложениями.  
   
- For a general introduction to text templates, read [Code Generation and T4 Text Templates](../modeling/code-generation-and-t4-text-templates.md).  
+ Общие сведения о текстовых шаблонах см. в статье [создание кода и текстовые шаблоны T4](../modeling/code-generation-and-t4-text-templates.md).  
   
-## <a name="how-to-"></a>How to ...  
+## <a name="how-to-"></a>Инструкции...  
   
-### <a name="generate-part-of-my-application-code"></a>Generate part of my application code  
- I have a configuration or *model* in a file or a database. One or more parts of my code depend on that model.  
+### <a name="generate-part-of-my-application-code"></a>Создание части код моего приложения  
+ У меня есть конфигурации или *модель* в файл или базу данных. Один или несколько частей кода зависят от этой модели.  
   
--   Generate some of your code files from text templates. For more information, see [Design-Time Code Generation by using T4 Text Templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md) and [What is the best way to start writing a template?](#starting).  
+-   Создайте несколько файлов кода из текстовых шаблонов. Дополнительные сведения см. в разделе [создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md) и [возможности лучше всего начать написание шаблона?](#starting).  
   
-### <a name="generate-files-at-run-time-passing-data-into-the-template"></a>Generate files at run time, passing data into the template  
- At run time, my application generates text files, such as reports, that contain a mixture of standard text and data. I want to avoid writing hundreds of `write` statements.  
+### <a name="generate-files-at-run-time-passing-data-into-the-template"></a>Создание файлов во время выполнения, передачи данных в шаблон  
+ Во время выполнения приложение создает текстовые файлы, такие как отчеты, которые представляют собой сочетание стандартного текста и данных. Я хочу написать сотни `write` инструкции.  
   
--   Add a runtime text template to your project. This template creates a class in your code, which you can instantiate and use to generate text. You can pass data to it in the constructor parameters. For more information, see [Run-Time Text Generation with T4 Text Templates](../modeling/run-time-text-generation-with-t4-text-templates.md).  
+-   Добавьте текстовый шаблон времени выполнения в проект. Этот шаблон создает класс в коде, который можно создать и использовать для создания текста. В параметрах конструктора, можно передавать в нее данные. Дополнительные сведения см. в разделе [Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
--   If you want to generate from templates that are available only at run time, you can use standard text templates. If you are writing a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extension, you can invoke the text templating service. For more information, see [Invoking Text Transformation in a VS Extension](../modeling/invoking-text-transformation-in-a-vs-extension.md). In other contexts, you can use the text templating engine. For more information, see <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.  
+-   Если вы хотите сформировать на основе шаблонов, которые доступны только во время выполнения, можно использовать стандартные текстовые шаблоны. При создании [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] расширения, можно вызвать службы текстовых шаблонов. Дополнительные сведения см. в разделе [вызов преобразования текста в расширении VS](../modeling/invoking-text-transformation-in-a-vs-extension.md). В других контекстах можно использовать модуль создания текстовых шаблонов. Для получения дополнительной информации см. <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.  
   
-     Use the \<#@parameter#> directive to pass parameters to these templates. For more information, see [T4 Parameter Directive](../modeling/t4-parameter-directive.md).  
+     Используйте \<#@parameter#> директивы для передачи параметров в эти шаблоны. Дополнительные сведения см. в разделе [директива Parameter T4](../modeling/t4-parameter-directive.md).  
   
-### <a name="read-another-project-file-from-a-template"></a>Read another project file from a template  
- To read a file from the same [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] project as the template:  
+### <a name="read-another-project-file-from-a-template"></a>Чтение другого файла проекта из шаблона  
+ Для считывания файла из того же [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проекта в качестве шаблона:  
   
--   Insert `hostSpecific="true"` into the `<#@template#>` directive.  
+-   Вставьте строку `hostSpecific="true"` в директиву `<#@template#>`.  
   
-     In your code, use `this.Host.ResolvePath(filename)` to obtain the full path of the file.  
+     В коде, используйте `this.Host.ResolvePath(filename)` получить полный путь к файлу.  
   
-### <a name="invoke-methods-from-a-template"></a>Invoke methods from a template  
- If the methods already exist, for example, in standard [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] classes:  
+### <a name="invoke-methods-from-a-template"></a>Вызов методов из шаблона  
+ Если методы уже существуют, например, в стандартном [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] классы:  
   
--   Use the \<#@assembly#> directive to load the assembly, and use \<#@import#> to set the namespace context. For more information, see [T4 Import Directive](../modeling/t4-import-directive.md).  
+-   Используйте \<#@assembly#> директивы для загрузки сборки и \<#@import#> для задания контекста пространства имен. Дополнительные сведения см. в разделе [директива Import T4](../modeling/t4-import-directive.md).  
   
-     If you frequently use the same set of assembly and import directives, consider writing a directive processor. In each template, you can invoke the directive processor, which can load the assemblies and the model files and set the namespace context. For more information, see [Creating Custom T4 Text Template Directive Processors](../modeling/creating-custom-t4-text-template-directive-processors.md).  
+     Если часто приходится использовать тот же набор сборок и импортировать директивы, рекомендуется написать процессора директив. В каждом шаблоне можно вызвать процессор директив может загружать сборки и файлы модели и задавать контекст пространства имен. Дополнительные сведения см. в разделе [Создание настраиваемых T4 процессорами текстового шаблона директива](../modeling/creating-custom-t4-text-template-directive-processors.md).  
   
- If you are writing the methods yourself:  
+ При создании методов самостоятельно:  
   
--   If you are writing a runtime text template, write a partial class definition that has the same name as your runtime text template. Add the additional methods into this class.  
+-   При написании текстовом шаблоне времени выполнения, запись определение разделяемого класса, который имеет имя, совпадающее с именем текстовый шаблон времени выполнения. Добавьте дополнительные методы в этот класс.  
   
--   Write a class feature control block `<#+ ... #>` in which you can declare methods, properties, and private classes. When the text template is compiled, it is transformed to a class. The standard control blocks `<#...#>` and text are transformed to a single method, and class feature blocks are inserted as separate members. For more information, see [Text Template Control Blocks](../modeling/text-template-control-blocks.md).  
+-   Записать блок управления возможностями класса `<#+ ... #>` , в котором можно объявлять, методы, свойства и закрытых классов. При компиляции текстового шаблона, он преобразуется в класс. Стандартные управляющие блоки `<#...#>` текст преобразуются в один метод и блоки возможностей класса вставляются как отдельные члены. Дополнительные сведения см. в разделе [управляющие блоки текстовых шаблонов](../modeling/text-template-control-blocks.md).  
   
-     Methods defined as class features can also include embedded text blocks.  
+     Методы, определенные как компоненты класса также может содержать встроенные блоки текста.  
   
-     Consider placing class features in a separate file which you can `<#@include#>` into one or more template files.  
+     Рекомендуется поместить возможности класса в отдельный файл, который затем можно `<#@include#>` в одной или нескольких файлов шаблонов.  
   
--   Write the methods in a separate assembly (class library) and call them from your template. Use the `<#@assembly#>` directive to load the assembly, and `<#@import#>` to set the namespace context. Note that in order to rebuild the assembly while you are debugging it, you might have to stop and restart [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. For more information, see [T4 Text Template Directives](../modeling/t4-text-template-directives.md).  
+-   Создайте методы в отдельной сборке (библиотека классов) и вызывать их из шаблона. Используйте `<#@assembly#>` директивы для загрузки сборки, и `<#@import#>` для задания контекста пространства имен. Обратите внимание, что для перестроения сборки в процессе его отладки, может потребоваться остановить и перезапустить [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Дополнительные сведения см. в разделе [директивы текстовых шаблонов T4](../modeling/t4-text-template-directives.md).  
   
-### <a name="generate-many-files-from-one-model-schema"></a>Generate many files from one model schema  
- If you often generate files from models that have the same XML or database schema:  
+### <a name="generate-many-files-from-one-model-schema"></a>Создание нескольких файлов из одной схемы модели  
+ Если часто создаются файлы из моделей, которые имеют одинаковую схему XML или базы данных:  
   
--   Consider writing a directive processor. This enables you to replace multiple assembly statements and import statements in each template with a single custom directive. The directive processor can also load and parse the model file. For more information, see [Creating Custom T4 Text Template Directive Processors](../modeling/creating-custom-t4-text-template-directive-processors.md).  
+-   Рекомендуется написать процессора директив. Это позволяет заменять несколько инструкций сборки и импортировать инструкции в каждый шаблон с одной пользовательской директивы. Процессор директив можно также загрузить и проанализировать файл модели. Дополнительные сведения см. в разделе [Создание настраиваемых T4 процессорами текстового шаблона директива](../modeling/creating-custom-t4-text-template-directive-processors.md).  
   
-### <a name="generate-files-from-a-complex-model"></a>Generate files from a complex model  
+### <a name="generate-files-from-a-complex-model"></a>Создание файлов из сложной модели  
   
--   Consider creating a domain-specific language (DSL) to represent the model. This makes it much easier to write the templates, because you use types and properties that reflect the names of the elements in your model. You do not have to parse the file or navigate XML nodes. For example:  
+-   Рассмотрите возможность создания доменного языка (DSL) для представления модели. Это делает его гораздо проще создавать шаблоны, поскольку использовать типы и свойства, которые отражают имена элементов в модели. Не нужно проанализировать файл или навигации по узлам XML. Пример:  
   
      `foreach (Book book in this.Library) { ... }`  
   
-     For more information, see [Getting Started with Domain-Specific Languages](../modeling/getting-started-with-domain-specific-languages.md) and [Generating Code from a Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md).  
+     Дополнительные сведения см. в разделе [Приступая к работе с доменными языками](../modeling/getting-started-with-domain-specific-languages.md) и [формирование кода из доменного языка](../modeling/generating-code-from-a-domain-specific-language.md).  
   
-### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Get data from [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
- To use services provided in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], by set the `hostSpecific` attribute and load the `EnvDTE` assembly. For example:  
+### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Получение данных из[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
+ Для использования служб, предоставляемых в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], набором `hostSpecific` атрибут и нагрузки `EnvDTE` сборки. Например:  
   
 ```csharp  
 <#@ template hostspecific="true" language="C#" #>  
@@ -110,36 +110,36 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
   
 ```  
   
-### <a name="execute-text-templates-in-the-build-process"></a>Execute text templates in the build process  
+### <a name="execute-text-templates-in-the-build-process"></a>Выполнение текстовых шаблонов в процессе построения  
   
--   For more information, see [Code Generation in a Build Process](../modeling/code-generation-in-a-build-process.md).  
+-   Дополнительные сведения см. в разделе [создание кода в процессе сборки](../modeling/code-generation-in-a-build-process.md).  
   
-## <a name="more-general-questions"></a>More general questions  
+## <a name="more-general-questions"></a>Более общие вопросы  
   
-###  <a name="starting"></a> What is the best way to start writing a text template?  
+###  <a name="starting"></a>Что такое лучший способ начать создание текстового шаблона  
   
-1.  Write a specific example of the generated file.  
+1.  Создайте конкретный пример созданного файла.  
   
-2.  Turn it into a text template by inserting the `<#@template #>` directive, and the directives and code that are required to load the input file or model.  
+2.  Преобразуйте его в текстовый шаблон, вставив `<#@template #>` директивы и директивы и код, необходимые для загрузки входного файла или модели.  
   
-3.  Progressively replace parts of the file with expression and code blocks.  
+3.  Последовательно замените части файла с выражением и блоков кода.  
   
-### <a name="what-is-a-model"></a>What is a "model"?  
+### <a name="what-is-a-model"></a>Что такое «модель»  
   
--   The input read by your template. It could be in a file or in a database. It might be XML, or a Visio drawing, or a domain-specific language (DSL), or a UML model, or it could be plain text. It could be spread across several files. Typically more than one template reads one model.  
+-   Входные данные, считываемые с помощью шаблона. Это может быть в файле или в базе данных. Он может быть XML, или документа Visio, доменный язык (DSL) или модель UML или это может быть обычный текст. Он может быть распределены между несколькими файлами. Обычно более одного шаблона считывает одну модель.  
   
-     The implication of the term "model" is that it represents some aspect of your business more directly than the generated program code or other files. For example, it might represent the plan of a communications network that your generated software will supervise.  
+     Термин «модель» имеет, чтобы он представлял некоторых аспектов деятельности более непосредственно, чем сгенерированного программного кода или других файлов. Например она может представлять план сети обмена данными, созданной программы будет контролировать.  
   
-### <a name="what-is-the-benefit-of-using-text-templates"></a>What is the benefit of using text templates?  
- Typically, you generate multiple code or other files from one model. The model represents the requirements more directly than the generated code. It omits implementation detail and is written in terms of the requirements, rather than the code. When the requirements change - as they usually do - you can update the model more easily and more reliably than the different parts of the program code.  
+### <a name="what-is-the-benefit-of-using-text-templates"></a>Что такое преимущество использования текстовых шаблонов?  
+ Как правило создается несколько кода или других файлов из одной модели. Модель представляет требования более непосредственно, чем сформированный код. Он пропускает сведения о реализации и предназначена для описания требований, а не код. При изменении требований — для них действия - можно обновить модель проще и надежнее, чем разные части программного кода.  
   
- Code generation is therefore a valuable tool from the perspective of agile development methods.  
+ Создание кода полезна, поэтому с точки зрения методов гибкой разработки.  
   
-### <a name="what-best-practices-are-there-for-text-templates"></a>What "best practices" are there for text templates?  
+### <a name="what-best-practices-are-there-for-text-templates"></a>Какие «рекомендации» существуют для текстовых шаблонов?  
   
--   For more information, see [Guidelines for Writing T4 Text Templates](../modeling/guidelines-for-writing-t4-text-templates.md).  
+-   Дополнительные сведения см. в разделе [правила для текстовых шаблонов T4 записи](../modeling/guidelines-for-writing-t4-text-templates.md).  
   
-### <a name="what-is-t4"></a>What is "T4"?  
+### <a name="what-is-t4"></a>Что такое «T4»?  
   
--   Another name for the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] text template capabilities described here. The previous version, which was not published, was an abbreviation for "Text Template Transformation".
+-   Другое имя для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] возможностей текстовых шаблонов, описанных здесь. Предыдущая версия, не опубликован, был сокращенное обозначение «Преобразования текстовых шаблонов».
 

@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: Creating, Editing and Maintaining a Coded UI Test | Microsoft Docs'
+title: "Пошаговое руководство. Создание, изменение и обслуживание закодированного теста пользовательского интерфейса | Документация Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,54 +30,54 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 63dd3f809e472bea8f558bff15e17bbfa0421a2c
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Walkthrough: Creating, Editing and Maintaining a Coded UI Test
-In this walkthrough, you will create a simple Windows Presentation Foundation (WPF) application to demonstrate how to create, edit, and maintain a coded UI test. The walkthrough provides solutions for correcting tests that have been broken by various timing issues and control refactoring.  
+# <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Пошаговое руководство. Создание, изменение и обслуживание закодированного теста пользовательского интерфейса
+В этом пошаговом руководстве создается простое приложение Windows Presentation Foundation (WPF), чтобы с его помощью продемонстрировать создание, редактирование и обслуживание закодированного теста пользовательского интерфейса. В этом пошаговом руководстве приведены решения для корректировки тестов с проблемами, связанными со временем и рефакторингом элементов управления.  
   
-## <a name="prerequisites"></a>Prerequisites  
- For this walkthrough you will need:  
+## <a name="prerequisites"></a>Предварительные требования  
+ Для этого пошагового руководства требуется следующее:  
   
 -   Visual Studio Enterprise  
   
-### <a name="create-a-simple-wpf-application"></a>Create a Simple WPF Application  
+### <a name="create-a-simple-wpf-application"></a>Создание простого приложения WPF  
   
-1.  On the **FILE** menu, point to **New**, and then select **Project**.  
+1.  В меню **Файл** наведите указатель мыши на элемент **Создать** и выберите **Проект**.  
   
-     The **New Project** dialog box appears.  
+     Откроется диалоговое окно **Новый проект** .  
   
-2.  In the **Installed** pane, expand **Visual C#**, and then select **Windows Desktop**.  
+2.  В области **Установленные** разверните узел **Visual C#** и выберите **Рабочий стол Windows**.  
   
-3.  Above the middle pane, verify that the target framework drop-down list is set to **.NET Framework 4.5**.  
+3.  Убедитесь, что над средней областью в раскрывающемся списке требуемой версии .NET Framework выбрано значение **.NET Framework 4.5**.  
   
-4.  In the middle pane, select the **WPF Application** template.  
+4.  В средней области выберите шаблон **Приложение WPF**.  
   
-5.  In the **Name** text box, type **SimpleWPFApp**.  
+5.  В текстовом поле **Имя** введите **SimpleWPFApp**.  
   
-6.  Choose a folder where you will save the project. In the **Location** text box, type the name of the folder.  
+6.  Выберите папку для хранения проекта. В текстовом поле **Расположение** введите имя папки.  
   
-7.  Choose **OK**.  
+7.  Нажмите кнопку **ОК**.  
   
-     The WPF Designer for Visual Studio opens and displays MainWindow of the project.  
+     Откроется конструктор WPF для Visual Studio, где будет открыто окно MainWindow проекта.  
   
-8.  If the toolbox is not currently open, open it. Choose the **VIEW** menu, and then choose **Toolbox**.  
+8.  Если панель элементов еще не открыта, откройте ее. Откройте меню **Вид** и щелкните **Панель элементов**.  
   
-9. Under the **All WPF Controls** section, drag a **Button**, **CheckBox** and **ProgressBar** control onto the MainWindow in the design surface.  
+9. В разделе **Все элементы управления WPF** перетащите элементы управления **Кнопка**, **CheckBox** и **ProgressBar** в окно MainWindow в рабочей области конструирования.  
   
-10. Select the Button control. In the Properties window, change the value for the **Name** property from \<No Name> to button1. Then change the value for the **Content** property from Button to Start.  
+10. Выберите элемент управления "Кнопка". В окне "Свойства" измените значение свойства **Имя** с \<No Name> на button1. Затем измените значение свойства **Содержимое** с "Button" на "Start".  
   
-11. Select the ProgressBar control. In the Properties window, change the value for the value for the **Name** property from \<No Name> to progressBar1. Then change the value for the **Maximum** property from **100** to **10000**.  
+11. Выберите элемент управления ProgressBar. В окне "Свойства" измените значение свойства **Имя** с \<No Name> на progressBar1. Затем измените значение свойства **Максимум** с **100** на **10000**.  
   
-12. Select the Checkbox control. In the Properties window, change the value for the **Name** property from \<No Name> to checkBox1 and clear the **IsEnabled** property.  
+12. Выберите элемент управления Checkbox. В окне "Свойства" измените значение свойства **Имя** с \<No Name> на checkBox1 и очистите свойство **IsEnabled**.  
   
-     ![Simple WPF Application](../test/media/codedui_wpfapp.png "CodedUI_WPFApp")  
+     ![Простое приложение WPF](../test/media/codedui_wpfapp.png "CodedUI_WPFApp")  
   
-13. Double-click the button control to add a click event handler.  
+13. Дважды щелкните элемент управления "Кнопка", чтобы добавить обработчик события щелчка.  
   
-     The MainWindow.xmal.cs is displayed in the Code Editor with the cursor in the new button1_Click method.  
+     В редакторе кода откроется файл MainWindow.xmal.cs, курсор будет установлен на новом методе button1_Click.  
   
-14. At the top of the MainWindow class, add a delegate. The delegate will be used for the progress bar. To add the delegate, add the following code:  
+14. В начале класса MainWindow добавьте делегат. Этот делегат будет использоваться для индикатора выполнения. Чтобы добавить делегат, добавьте следующий код.  
   
     ```csharp  
     public partial class MainWindow : Window  
@@ -92,7 +92,7 @@ In this walkthrough, you will create a simple Windows Presentation Foundation (W
   
     ```  
   
-15. In the button1_Click method, add the following code:  
+15. В метод button1_Click добавьте следующий код.  
   
     ```csharp  
     private void button1_Click(object sender, RoutedEventArgs e)  
@@ -118,97 +118,97 @@ In this walkthrough, you will create a simple Windows Presentation Foundation (W
   
     ```  
   
-16. Save the file.  
+16. Сохраните файл.  
   
-### <a name="verify-the-wpf-application-runs-correctly"></a>Verify the WPF Application Runs Correctly  
+### <a name="verify-the-wpf-application-runs-correctly"></a>Проверка корректной работы приложения WPF  
   
-1.  On the **DEBUG** menu, select **Start Debugging** or press **F5**.  
+1.  В меню **Отладка** выберите **Начать отладку** или нажмите клавишу **F5**.  
   
-2.  Notice that the check box control is disabled. Choose **Start**.  
+2.  Обратите внимание, что элемент управления флажком отключен. Щелкните **Start**.  
   
-     In a few seconds, the progress bar should be 100% complete.  
+     Через несколько секунд индикатор выполнения должен дойти до 100%.  
   
-3.  You can now select the check box control.  
+3.  Теперь вы можете выбрать элемент управления.  
   
-4.  Close SimpleWPFApp.  
+4.  Закройте приложение SimpleWPFApp.  
   
-### <a name="create-and-run-a-coded-ui-test-for-simplewpfapp"></a>Create and Run a Coded UI Test for SimpleWPFApp  
+### <a name="create-and-run-a-coded-ui-test-for-simplewpfapp"></a>Создание и запуск закодированного теста пользовательского интерфейса для приложения SimpleWPFApp  
   
-1.  Locate the SimpleWPFApp application that you created earlier. By default, the application will be located at C:\Users\\<username\>\Documents\Visual Studio \<version>\Projects\SimpleWPFApp\SimpleWPFApp\bin\Debug\SimpleWPFApp.exe  
+1.  Найдите созданное ранее приложение SimpleWPFApp. По умолчанию приложение расположено по следующему пути: C:\Users\\<username\>\Documents\Visual Studio \<version>\Projects\SimpleWPFApp\SimpleWPFApp\bin\Debug\SimpleWPFApp.exe.  
   
-2.  Create a desktop shortcut to the SimpleWPFApp application. Right-click SimpleWPFApp.exe and choose **Copy**. On your desktop, right-click and choose **Paste shortcut**.  
+2.  Создайте на рабочем столе ярлык для приложения SimpleWPFApp. Щелкните правой кнопкой мыши файл SimpleWPFApp.exe и выберите команду **Копировать**. Щелкните правой кнопкой мыши на рабочем столе и выберите **Вставить ярлык**.  
   
     > [!TIP]
-    >  A shortcut to the application makes it easier to add or modify Coded UI tests for your application because it lets you start the application quickly.  
+    >  Ярлык облегчает добавление и изменение закодированных тестов пользовательского интерфейса для приложения, так как позволяет быстро запустить приложение.  
   
-3.  In Solution Explorer, right-click the solution, choose **Add** and then select **New Project**.  
+3.  В обозревателе решений щелкните правой кнопкой мыши решение, выберите команду **Добавить** и пункт **Новый проект**.  
   
-     The **Add New Project** dialog box appears.  
+     Откроется диалоговое окно **Добавление нового проекта** .  
   
-4.  In the **Installed** pane, expand **Visual C#**, and then select **Test**.  
+4.  В области **Установленные** разверните узел **Visual C#** и выберите **Тест**.  
   
-5.  In the middle pane, select the **Coded UI Test Project** template.  
+5.  В средней области выберите шаблон **Проект закодированных тестов пользовательского интерфейса**.  
   
-6.  Choose **OK**.  
+6.  Нажмите кнопку **ОК**.  
   
-     In Solution Explorer, the new coded UI test project named **CodedUITestProject1** is added to your solution.  
+     В обозреватель решений добавится новый проект закодированных тестов пользовательского интерфейса с именем **CodedUITestProject1**.  
   
-     The **Generate Code for Coded UI Test** dialog box appears.  
+     Откроется диалоговое окно **Формирование кода для кодированного теста пользовательского интерфейса**.  
   
-7.  Select the **Record actions, edit UI map or add assertions** option and choose **OK**.  
+7.  Выберите параметр **Записать действия, изменить карту ИП или добавить утверждения** и нажмите кнопку **ОК**.  
   
-     The UIMap - Coded UI Test Builder appears, and the Visual Studio window is minimized.  
+     Откроется окно "UIMap — построитель кодированных тестов ИП", а окно Visual Studio свернется.  
   
-     For more information about the options in the dialog box, see [Creating Coded UI Tests](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
+     Дополнительные сведения о параметрах в этом диалоговом окне см. в разделе [Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
   
-8.  Choose **Start Recording** on the UIMap - Coded UI Test Builder.  
+8.  Щелкните **Начать запись** в окне "UIMap — построитель кодированных тестов ИП".  
   
-     ![Start recording](../test/media/cuit_builder_record.png "CUIT_Builder_Record")  
+     ![Начать запись](../test/media/cuit_builder_record.png "CUIT_Builder_Record")  
   
-     You can pause the recording if needed, for example if you have to deal with incoming mail.  
+     Вы можете приостановить запись, например если вы работаете с входящей почтой.  
   
-     ![Pause the recording](../test/media/cuit_.png "CUIT_")  
+     ![Приостановка записи](../test/media/cuit_.png "CUIT_")  
   
     > [!WARNING]
-    >  All actions performed on the desktop will be recorded. Pause the recording if you are performing actions that may lead to sensitive data being included in the recording.  
+    >  Все действия, выполненные на рабочем столе, будут записаны. Приостановите запись, если вы выполняете действия, которые могут привести к записи конфиденциальных данных.  
   
-9. Launch the SimpleWPFApp using the desktop shortcut.  
+9. Запустите приложение SimpleWPFApp с помощью ярлыка на рабочем столе.  
   
-     As before, notice that the check box control is disabled.  
+     Обратите внимание, что, как и ранее, элемент управления флажком отключен.  
   
-10. On the SimpleWPFApp, choose **Start**.  
+10. В SimpleWPFApp щелкните **Запуск**.  
   
-     In a few seconds, the progress bar should be 100% complete.  
+     Через несколько секунд индикатор выполнения должен дойти до 100%.  
   
-11. Check the check box control which is now enabled.  
+11. Установите флажок, который теперь включен.  
   
-12. Close the SimpleWPFApp application.  
+12. Закройте приложение SimpleWPFApp.  
   
-13. On the UIMap - Coded UI Test Builder, choose **Generate Code**.  
+13. В окне "UIMap — Построитель кодированных тестов ИП" щелкните **Создать код**.  
   
-14. In the Method Name type **SimpleAppTest** and choose **Add and Generate**. In a few seconds, the Coded UI test appears and is added to the Solution.  
+14. В поле "Имя метода" введите **SimpleAppTest** и щелкните **Добавить и сформировать**. Через несколько секунд закодированный тест пользовательского интерфейса будет сформирован и добавлен в решение.  
   
-15. Close the UIMap - Coded UI Test Builder.  
+15. Закройте окно "UIMap — построитель кодированных тестов ИП".  
   
-     The CodedUITest1.cs file appears in the Code Editor.  
+     В редакторе кода откроется файл CodedUITest1.cs.  
   
-16. Save your project.  
+16. Сохраните проект.  
   
-### <a name="run-the-coded-ui-test"></a>Run the Coded UI Test  
+### <a name="run-the-coded-ui-test"></a>Запустите закодированный тест пользовательского интерфейса.  
   
-1.  From the **TEST** menu, choose **Windows** and then choose **Test Explorer**.  
+1.  В меню **Тест** выберите **Windows**, а затем выберите **Обозреватель тестов**.  
   
-2.  From the **BUILD** menu, choose **Build Solution**.  
+2.  В меню **Сборка** выберите пункт **Собрать решение**.  
   
-3.  In the CodedUITest1.cs file, locate the **CodedUITestMethod** method, right-click and select **Run Tests**, or run the test from Test Explorer.  
+3.  В файле CodedUITest1.cs найдите метод **CodedUITestMethod**, щелкните его правой кнопкой мыши и выберите **Выполнить тесты** или запустите тест в обозревателе тестов.  
   
-     While the coded UI test runs, the SimpleWPFApp is visible. It conducts the steps that you did in the previous procedure. However, when the test tries to select the check box for the check box control, the Test Results window shows that the test failed. This is because the test tries to select the check box but is not aware that the check box control is disabled until the progress bar is 100% complete. You can correct this and similar issues by using the various `UITestControl.WaitForControlXXX()` methods that are available for coded UI testing. The next procedure will demonstrate using the `WaitForControlEnabled()` method to correct the issue that caused this test to fail. For more information, see [Making Coded UI Tests Wait For Specific Events During Playback](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
+     Пока выполняется закодированный тест пользовательского интерфейса, открыто приложение SimpleWPFApp. Выполняются шаги, которые вы выполняли в предыдущей процедуре. Однако когда тест попытается установить флажок для элемента управления флажком, в окне результатов теста появится сообщение, что тест не пройден. Это происходит потому, что тест пытается установить флажок, но не учитывает, что элемент управления флажком недоступен, пока индикатор выполнения не дойдет до 100 %. Эту и аналогичные проблемы можно решить с помощью различных методов `UITestControl.WaitForControlXXX()`, которые доступны для кодированных тестов пользовательского интерфейса. В следующей процедуре демонстрируется использование метода `WaitForControlEnabled()` для исправления ошибки, в результате которой тест выполнен неудачно. Дополнительные сведения см. в разделе [Настройка закодированного теста пользовательского интерфейса таким образом, чтобы во время воспроизведения он дожидался определенных событий](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
   
-### <a name="edit-and-rerun-the-coded-ui-test"></a>Edit and Rerun the Coded UI Test  
+### <a name="edit-and-rerun-the-coded-ui-test"></a>Редактирование и повторный запуск закодированного теста пользовательского интерфейса  
   
-1.  In the Test Explorer window, select the failed test and in the **StackTrace** section, choose the first link to **UIMap.SimpleAppTest()**.  
+1.  В окне обозревателя тестов выберите завершившийся неудачей тест и в разделе **StackTrace** выберите первую ссылку на **UIMap.SimpleAppTest()**.  
   
-2.  The UIMap.Designer.cs file opens with the point of error highlighted in the code:  
+2.  Откроется файл UIMap.Designer.cs, где в коде будет выделено место ошибки.  
   
     ```csharp  
   
@@ -216,35 +216,35 @@ In this walkthrough, you will create a simple Windows Presentation Foundation (W
     uICheckBoxCheckBox.Checked = this.SimpleAppTestParams.UICheckBoxCheckBoxChecked;  
     ```  
   
-3.  To correct this problem, you can make the coded UI test wait for the CheckBox control to be enabled before continuing on to this line using the `WaitForControlEnabled()` method.  
+3.  Для исправления ошибки можно с помощью метода `WaitForControlEnabled()` сделать так, чтобы закодированный тест пользовательского интерфейса ждал включения элемента управления CheckBox перед переходом к этой строке.  
   
     > [!WARNING]
-    >  Do not modify the UIMap.Designer.cs file. Any code changes you make in the UIMapDesigner.cs file will be overwritten every time you generate code using the UIMap - Coded UI Test Builder. If you have to modify a recorded method, you must copy it to UIMap.cs file and rename it. The UIMap.cs file can be used to override methods and properties in the UIMapDesigner.cs file. You must remove the reference to the original method in the Coded UITest.cs file and replace it with the renamed method name.  
+    >  Не изменяйте файл UIMap.Designer.cs. Любые изменения кода, внесенные в файл UIMapDesigner.cs, будут перезаписываться каждый раз при создании кода с помощью построителя кодированных тестов ИП. Если требуется изменить записанный метод, необходимо скопировать его в файл UIMap.cs и переименовать. Файл UIMap.cs можно использовать для переопределения методов и свойств в файле UIMapDesigner.cs. Необходимо удалить ссылку на исходный метод в файле CodedUITest.cs и заменить ее именем переименованного метода.  
   
-4.  In Solution Explorer, locate **UIMap.uitest** in your coded UI test project.  
+4.  В обозревателе решений найдите **UIMap.uitest** в проекте с закодированными тестами пользовательского интерфейса.  
   
-5.  Open the shortcut menu for **UIMap.uitest** and choose **Open**.  
+5.  Откройте контекстное меню **UIMap.uitest** и нажмите кнопку **Открыть**.  
   
-     The coded UI test is displayed in the Coded UI Test Editor. You can now view and edit the coded UI test.  
+     Закодированный тест пользовательского интерфейса откроется в редакторе закодированных тестов пользовательского интерфейса. Теперь закодированный тест пользовательского интерфейса можно просматривать и редактировать.  
   
-6.  In the **UI Action** pane, select the test method (SimpleAppTest) that you want to move to the UIMap.cs or UIMap.vb file to facilitate custom code functionality which won't be overwritten when the test code is recompiled.  
+6.  В области **Действие с ИП** выберите метод теста (SimpleAppTest), который требуется переместить в файл UIMap.cs или UIMap.vb, чтобы повысить функциональность пользовательского кода. Теперь файл не будет переписываться при каждой компиляции кода теста.  
   
-7.  Choose the **Move Code** button on the Coded UI Test Editor toolbar.  
+7.  На панели инструментов редактора закодированных тестов пользовательского интерфейса нажмите кнопку **Переместить код**.  
   
-8.  A Microsoft Visual Studio dialog box is displayed. It warns you that the method will be moved from the UIMap.uitest file to the UIMap.cs file and that you will no longer be able to edit the method using the Coded UI Test Editor. Choose **Yes**.  
+8.  Откроется диалоговое окно Microsoft Visual Studio. В нем отобразится предупреждение о том, что метод будет перемещен из файла UIMap.uitest в файл UIMap.cs, после чего метод нельзя будет изменять в редакторе закодированных тестов пользовательского интерфейса. Выберите **Да**.  
   
-     The test method is removed from the UIMap.uitest file and no longer is displayed in the UI Actions pane. To edit the moved test file, open the UIMap.cs file from Solution Explorer.  
+     Метод теста удаляется из файла UIMap.uitest и перестает отображаться в области "Действия с ИП". Чтобы внести изменения в перемещенный тестовый файл, откройте файл UIMap.cs в обозревателе решений.  
   
-9. On the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] toolbar, choose **Save**.  
+9. На панели инструментов [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] щелкните **Сохранить**.  
   
-     The updates to the test method are saved in the UIMap.Designer file.  
+     Изменения метода теста сохраняются в файле UIMap.Designer.  
   
     > [!CAUTION]
-    >  Once you have moved the method, you can no longer edit it using the Coded UI Test Editor. You must add your custom code and maintain it using the Code Editor.  
+    >  После того как метод перемещен, его нельзя редактировать в редакторе закодированных тестов пользовательского интерфейса. Для добавления и обслуживания пользовательского кода следует использовать редактор кода.  
   
-10. Rename the method from `SimpleAppTest()` to `ModifiedSimpleAppTest()`  
+10. Переименуйте метод из `SimpleAppTest()` в `ModifiedSimpleAppTest()`.  
   
-11. Add the following using statement to the file:  
+11. Добавьте в файл следующую инструкцию.  
   
     ```csharp  
   
@@ -252,7 +252,7 @@ In this walkthrough, you will create a simple Windows Presentation Foundation (W
   
     ```  
   
-12. Add the following `WaitForControlEnabled()` method before the offending line of code identified previously:  
+12. Перед найденной ранее строкой кода с ошибкой добавьте следующий метод `WaitForControlEnabled()`.  
   
     ```csharp  
   
@@ -263,7 +263,7 @@ In this walkthrough, you will create a simple Windows Presentation Foundation (W
   
     ```  
   
-13. In the CodedUITest1.cs file, locate the **CodedUITestMethod** method and either comment out or rename the reference to the original SimpleAppTest() method and then replace it with the new ModifiedSimpleAppTest():  
+13. В файле CodedUITest1.cs найдите метод **CodedUITestMethod** и закомментируйте его, либо переименуйте ссылку на исходный метод SimpleAppTest(), указав в ней новый метод ModifiedSimpleAppTest().  
   
     ```csharp  
     [TestMethod]  
@@ -277,27 +277,27 @@ In this walkthrough, you will create a simple Windows Presentation Foundation (W
   
     ```  
   
-14. On the **BUILD** menu, choose **Build Solution**.  
+14. В меню **Сборка** выберите **Собрать решение**.  
   
-15. Right-click the **CodedUITestMethod** method and select **Run Tests**.  
+15. Щелкните правой кнопкой мыши метод **CodedUITestMethod** и выберите команду **Выполнить тесты**.  
   
-16. This time the coded UI test successfully completes all the steps in the test and **Passed** is displayed in the Test Explorer window.  
+16. Теперь закодированный тест пользовательского интерфейса успешно выполнит все этапы тестирования, и в окне обозревателя тестов отобразится сообщение **Тест пройден**.  
   
-### <a name="refactor-a-control-in-the-simplewpfapp"></a>Refactor a Control in the SimpleWPFApp  
+### <a name="refactor-a-control-in-the-simplewpfapp"></a>Рефакторинг элемента управления в приложении SimpleWPFApp  
   
-1.  In the MainWindow.xaml file, in the Designer, select the button control.  
+1.  В конструкторе в файле MainWindow.xaml выберите элемент управления "Кнопка".  
   
-2.  At the top of the Properties window, change the **Name** property value from button1 to buttonA.  
+2.  В верхней части окна "Свойства" измените значение свойства **Имя** с button1 на buttonA.  
   
-3.  On the **BUILD** menu, choose **Build Solution**.  
+3.  В меню **Сборка** выберите **Собрать решение**.  
   
-4.  In Test Explorer, run **CodedUITestMethod1**.  
+4.  В обозревателе тестов выполните **CodedUITestMethod1**.  
   
-     The test fails because the coded UI test cannot locate the button control that was originally mapped in the UIMap as button1. Refactoring can impact coded UI tests in this manner.  
+     Тест не был пройден, поскольку закодированный тест пользовательского интерфейса не смог обнаружить кнопку, которая раньше была сопоставлена в UIMap как button1. Таким образом рефакторинг может влиять на закодированные тесты пользовательского интерфейса.  
   
-5.  In the Test Explorer window, in the **StackTrace** section, choose the first link next to **UIMpa.ModifiedSimpleAppTest()**.  
+5.  В окне обозревателя тестов в разделе **StackTrace** щелкните первую ссылку рядом с **UIMpa.ModifiedSimpleAppTest()**.  
   
-     The UIMap.cs file opens. The point of error is highlighted in the code:  
+     Откроется файл UIMap.cs. В коде выделено место, где произошла ошибка.  
   
     ```csharp  
   
@@ -305,43 +305,43 @@ In this walkthrough, you will create a simple Windows Presentation Foundation (W
     Mouse.Click(uIStartButton, new Point(27, 10));  
     ```  
   
-     Notice that the line of code earlier in this procedure is using `UiStartButton`, which is the UIMap name before it was refactored.  
+     Обратите внимание, что в строке кода, приведенной ранее в этой процедуре, используется имя `UiStartButton` — имя UIMap до рефакторинга.  
   
-     To correct the issue, you can add the refactored control to the UIMap by using the Coded UI Test Builder. You can update the test's code to use the code, as demonstrated in the next procedure.  
+     Чтобы исправить ошибку, можно добавить элемент управления, для которого был выполнен рефакторинг, в UIMap с помощью построителя кодированных тестов ИП. Можно обновить код теста для использования кода, как показано в следующей процедуре.  
   
-### <a name="map-refactored-control-and-edit-and-rerun-the-coded-ui-test"></a>Map Refactored Control and Edit and Rerun the Coded UI Test  
+### <a name="map-refactored-control-and-edit-and-rerun-the-coded-ui-test"></a>Сопоставление элемента управления, для которого был выполнен рефакторинг; редактирование и повторный запуск закодированного теста пользовательского интерфейса  
   
-1.  In the CodedUITest1.cs file, in the **CodedUITestMethod1()** method, right-click, select **Generate Code for Coded UI Test** and then choose **Use Coded UI Test Builder**.  
+1.  В файле CodedUITest1.cs в методе **CodedUITestMethod1()** щелкните правой кнопкой мыши, выберите **Сформировать код для кодированного теста пользовательского интерфейса** и щелкните **Использовать построитель закодированных тестов пользовательского интерфейса**.  
   
-     The UIMap - Coded UI Test Builder appears.  
+     Откроется окно "UIMap — построитель кодированных тестов ИП".  
   
-2.  Using the desktop shortcut you created earlier, run the SimpleWPFApp application that you created earlier.  
+2.  В помощью созданного ранее ярлыка на рабочем столе запустите созданное ранее приложение SimpleWPFApp.  
   
-3.  On the UIMap - Coded UI Test Builder, drag the crosshair tool to the **Start** button on the SimpleWPFApp.  
+3.  В окне "UIMap — построитель закодированных тестов пользовательского интерфейса" переместите инструмент в виде перекрестия на кнопку **Пуск** приложения SimpleWPFApp.  
   
-     The **Start** button is enclosed in a blue box and the Coded UI Test Builder takes a few seconds to process the data for the selected control and displays the controls properties. Notice that the **AutomationUId** is named **buttonA**.  
+     Кнопка **Пуск** будет заключена в голубую рамку, построитель закодированных тестов пользовательского интерфейса обработает данные для выбранного элемента управления и через несколько секунд отобразит его свойства. Обратите внимание, что **AutomationUId** называется **buttonA**.  
   
-4.  In the properties for the control, choose the arrow at the upper-left corner to expand the UI Control Map. Notice that **UIStartButton1** is selected.  
+4.  В окне свойств элемента управления щелкните стрелку в левом верхнем углу, чтобы развернуть карту элементов управления ИП. Обратите внимание, что выбран элемент **UIStartButton1**.  
   
-5.  In the toolbar, choose the **Add control to UI Control Map**.  
+5.  На панели инструментов щелкните **Добавить элемент управления на карту элементов управления ИП**.  
   
-     The status at the bottom of the window verifies the action by displaying **Selected control has been added to the UI control map**.  
+     Сообщение о состоянии в нижней части окна подтвердит действие следующим сообщением: **Выбранный элемент управления добавлен на карту элементов управления ИП**.  
   
-6.  On the UIMap - Coded UI Test Builder, choose **Generate Code**.  
+6.  В окне "UIMap — Построитель кодированных тестов ИП" щелкните **Создать код**.  
   
-     The Coded UI Test Builder - Generate Code appears with a note indicating that no new method is required and that code will only be generated for the changes to the UI control map.  
+     Отобразится окно "Построитель кодированных тестов ИП — формирование кода" с примечанием, что новый метод не требуется и что код будет сформирован только для изменений карты элементов управления ИП.  
   
-7.  Choose **Generate**.  
+7.  Щелкните **Создать**.  
   
-8.  Close SimpleWPFApp.exe.  
+8.  Закройте приложение SimpleWPFApp.exe.  
   
-9. Close UIMap - Coded UI Test Builder.  
+9. Закройте диалоговое окно "UIMap — построитель кодированных тестов ИП".  
   
-     The UIMap - Coded UI Test Builder takes a few seconds to process the UI control map changes.  
+     Обработка изменений в карте элементов управления ИП в окне "UIMap — построитель кодированных тестов ИП" займет несколько секунд.  
   
-10. In Solution Explorer, open the UIMap.Designer.cs file.  
+10. В обозревателе решений откройте файл UIMap.Designer.cs.  
   
-11. In the UIMap.Designer.cs file, locate the UIStartButton1 property. Notice the `SearchProperties` is set to `"buttonA"`:  
+11. В файле UIMap.Designer.cs найдите свойство UIStartButton1. Обратите внимание, что `SearchProperties` имеет значение `"buttonA"`:  
   
     ```csharp  
   
@@ -363,9 +363,9 @@ In this walkthrough, you will create a simple Windows Presentation Foundation (W
   
     ```  
   
-     Now you can modify the coded UI test to use the newly mapped control. As pointed out in the previous procedure if you want to override any methods or properties in the coded UI test, you must do so in the UIMap.cs file.  
+     Теперь закодированный тест пользовательского интерфейса можно изменить, чтобы использовать только что сопоставленный элемент управления. Как указано в предыдущей процедуре, если требуется переопределить какие-либо методы или свойства в закодированном тесте пользовательского интерфейса, это нужно делать в файле UIMap.cs.  
   
-12. In the UIMap.cs file, add a constructor and specify the `SearchProperties` property of the `UIStartButton` property to use the `AutomationID` property with a value of `"buttonA":`  
+12. В файле UIMap.cs добавьте конструктор и задайте свойство `SearchProperties` свойства `UIStartButton`, чтобы использовать свойство `AutomationID` со значением `"buttonA":`  
   
     ```csharp  
   
@@ -376,35 +376,35 @@ In this walkthrough, you will create a simple Windows Presentation Foundation (W
   
     ```  
   
-13. On the **BUILD** menu, choose **Build Solution**.  
+13. В меню **Сборка** выберите **Собрать решение**.  
   
-14. In Test Explorer, run CodedUITestMethod1.  
+14. В обозревателе тестов выполните CodedUITestMethod1.  
   
-     This time, the coded UI test successfully completes all the steps in the test.  In the Test Results Window, you will see a status of **Passed**.  
+     Теперь закодированный тест пользовательского интерфейса успешно пройдет все этапы тестирования.  В окне результатов теста отобразится состояние **Тест пройден**.  
   
-## <a name="external-resources"></a>External Resources  
+## <a name="external-resources"></a>Внешние ресурсы  
   
-### <a name="videos"></a>Videos  
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode1-GettingStarted](http://go.microsoft.com/fwlink/?LinkID=230573)  
+### <a name="videos"></a>Видеоролики  
+ ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode1-GettingStarted](http://go.microsoft.com/fwlink/?LinkID=230573)  
   
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode2-MaintainenceAndDebugging](http://go.microsoft.com/fwlink/?LinkID=230574)  
+ ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode2-MaintainenceAndDebugging](http://go.microsoft.com/fwlink/?LinkID=230574)  
   
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode3-HandCoding](http://go.microsoft.com/fwlink/?LinkID=230575)  
+ ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode3-HandCoding](http://go.microsoft.com/fwlink/?LinkID=230575)  
   
-### <a name="hands-on-lab"></a>Hands on lab  
- [MSDN Virtual Lab: Introduction to Creating Coded UI Tests with Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=22508)  
+### <a name="hands-on-lab"></a>Практическое лабораторное занятие  
+ [Виртуальная лаборатория MSDN. Введение в создание тестов пользовательского интерфейса с помощью Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=22508)  
   
-### <a name="faq"></a>FAQ  
- [Coded UI Tests FAQ - 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
+### <a name="faq"></a>часто задаваемые вопросы  
+ [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
   
- [Coded UI Tests FAQ -2](http://go.microsoft.com/fwlink/?LinkID=230578)  
+ [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 2](http://go.microsoft.com/fwlink/?LinkID=230578)  
   
-### <a name="forum"></a>Forum  
- [Visual Studio UI Automation Testing (includes CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)  
+### <a name="forum"></a>Форум  
+ [Тестирование автоматизации пользовательского интерфейса в Visual Studio (включает CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)  
   
-## <a name="see-also"></a>See Also  
- [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md)   
- [Getting Started with the WPF Designer](http://msdn.microsoft.com/en-us/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
- [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [Editing Coded UI Tests Using the Coded UI Test Editor](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
+## <a name="see-also"></a>См. также  
+ [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)   
+ [Начало работы с конструктором WPF](http://msdn.microsoft.com/en-us/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
+ [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
+ [Изменение закодированных тестов пользовательского интерфейса с помощью редактора закодированных тестов пользовательского интерфейса](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
 

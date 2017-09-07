@@ -1,5 +1,5 @@
 ---
-title: Benefits of Visual Studio for Mac over Xamarin Studio
+title: "Преимущества Visual Studio для Mac по сравнению с Xamarin Studio"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
@@ -9,162 +9,162 @@ ms.translationtype: HT
 ms.sourcegitcommit: f6c7e290f0abc2c32456e076420a7695ae868ba6
 ms.openlocfilehash: 655795fd64958805e0137d7e231391c59f676776
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 
-# <a name="benefits-of-visual-studio-for-mac-over-xamarin-studio"></a>Benefits of Visual Studio for Mac over Xamarin Studio 
+# <a name="benefits-of-visual-studio-for-mac-over-xamarin-studio"></a>Преимущества Visual Studio для Mac по сравнению с Xamarin Studio 
  
-Visual Studio for Mac has replaced Xamarin Studio as a full-featured IDE on Mac. It provides features that allow you to develop web applications and services, cross-platform mobile and desktop apps, and games. Additionally, it makes integrating with Azure a breeze, whether that means publishing to Azure or creating Azure Functions. It has everything you would expect from a modern IDE, including a full-featured source editor, a powerful debugger, a customizable workspace, git integration, and a rich extension system, all designed natively for the Mac. 
+Система Visual Studio для Mac заменила Xamarin Studio в качестве полнофункциональной интегрированной среды разработки на Mac. Она предоставляет возможности для разработки веб-приложений и служб, кроссплатформенных мобильных и классических приложений, а также игр. Кроме того, она упрощает интеграцию с Azure при публикации в Azure или создании функций Azure. Она содержит все компоненты и возможности, характерные для современной интегрированной среды разработки, включая полнофункциональный редактор исходного кода, эффективный отладчик, настраиваемую рабочую область, интеграцию с Git и обширную систему расширений, которые разработаны специально для Mac. 
 
-Other features include: 
+В число других функций входят указанные далее: 
 
-* Roslyn-based C# IntelliSense, refactoring, analyzers, and code fixes 
-* NuGet-based package management 
-* Visual Studio compatible project format 
-* MSBuild build engine 
-* Integrated unit testing 
-* Support for F# out-of-the-box 
+* основанная на Roslyn технология C# IntelliSense, рефакторинг, анализаторы и исправления кода; 
+* управление пакетами NuGet; 
+* формат проектов, совместимый с Visual Studio; 
+* подсистема сборки MSBuild; 
+* интегрированное модульное тестирование; 
+* встроенная поддержка языка F#. 
 
-Benefits listed in this guide that are marked as **Preview** are only available in the [Alpha channel](https://docs.microsoft.com/en-us/visualstudio/mac/update#Changing_the_Updater_channel). 
+Преимущества, перечисленные в данном руководстве, помечены как относящиеся к **предварительной версии**, и доступны только в рамках [альфа-канала](https://docs.microsoft.com/en-us/visualstudio/mac/update#Changing_the_Updater_channel). 
 
-## <a name="language-support"></a>Language Support 
+## <a name="language-support"></a>Языковая поддержка 
 
-Writing C# 7 code on your Mac is offered only on Visual Studio for Mac.
+Написание кода C# 7 на Mac возможно только в Visual Studio для Mac.
 
 ## <a name="net-core"></a>.NET Core  
 
-[.NET Core](https://www.microsoft.com/net/core#macos) is a platform for creating applications that run on Windows, Linux, and Mac. Visual Studio for Mac has support for loading, creating, running, and debugging .NET Core projects. 
+[.NET Core](https://www.microsoft.com/net/core#macos) — это платформа для создания приложений, работающих в ОС Windows, Linux и Mac. Visual Studio для Mac поддерживает операции загрузки, создания, запуска и отладки проектов .NET Core. 
 
-.NET Core is installed with the Visual Studio for Mac and works out of the box.
+.NET Core устанавливается вместе с Visual Studio для Mac и работает без дополнительной настройки.
 
-.NET Core support includes: 
+.NET Core поддерживает указанные далее компоненты. 
 
-* C# and F# IntelliSense. 
-* .NET Core project templates for console, library, and web applications. 
-* Full debugging support, including breakpoints, call stack, watch window, etc. 
-* NuGet Package References and MSBuild-based restore. 
-* Integrated unit testing support for running and debugging tests with the Visual Studio Test Platform that is included with the .NET Core SDK. 
-* Migration from the old project.json format. 
-* .NET standard project support.
+* C# и F # IntelliSense. 
+* Шаблоны проектов .NET Core для консоли, библиотеки и веб-приложений. 
+* Полная поддержка отладки, включая точки останова, стек вызовов, окно контрольных значений и т. д. 
+* Восстановление ссылок на пакеты NuGet и восстановление на основе MSBuild. 
+* Встроенная поддержка модульного тестирования для запуска и отладки тестов на платформе тестирования Visual Studio, входящей в пакет SDK для .NET Core. 
+* Миграция со старого формата project.json. 
+* Поддержка стандартных проектов .NET Standard.
 
-## <a name="web-development"></a>Web Development  
+## <a name="web-development"></a>Веб-разработка  
 
 ### <a name="aspnet-core"></a>ASP.NET Core 
 
-Visual Studio for Mac includes ASP.NET Core templates for MVC and Web API projects out of the box.
+Visual Studio для Mac включает шаблоны ASP.NET Core для проектов MVC и веб-API, не требующие дополнительной настройки.
  
-![HTML Intellisense](media/benefits-vsmac-over-xs-image3.png)
+![Технология HTML IntelliSense](media/benefits-vsmac-over-xs-image3.png)
 
-Visual Studio for Mac also adds new web tooling support for HTML, CSS, and JSON files. 
+В Visual Studio для Mac также добавлена поддержка новых веб-инструментов для файлов HTML, CSS и JSON. 
 
 ### <a name="html"></a>HTML 
 
-* New HTML template. 
-* Improved smart indent and formatting. 
-* Improved colorization. 
-* Improved IntelliSense. 
-* Code folding (must be enabled). 
-* Unminify command. 
-* Improved Code Templates (snippets). 
-* Surround selection with `<div>`. 
-* Option up/down moves selected text up/down. 
+* Новый шаблон HTML. 
+* Улучшены функции интеллектуального отступа и форматирования. 
+* Усовершенствована раскраска. 
+* Усовершенствования IntelliSense. 
+* Свертывание кода (функция должна быть включена). 
+* Команда отмены уменьшения. 
+* Улучшенные шаблоны кода (фрагменты). 
+* Размещение выделения в `<div>`. 
+* Параметр "Вверх или вниз" перемещает выделенный текст вверх или вниз. 
 
 ### <a name="css"></a>CSS 
 
-* Improved smart indent and formatting. 
-* Improved colorization. 
-* Improved IntelliSense. 
-* Code folding. 
-* Many Code Templates (snippets). 
-* Option up/down moves selected text up/down. 
+* Улучшены функции интеллектуального отступа и форматирования. 
+* Усовершенствована раскраска. 
+* Усовершенствования IntelliSense. 
+* Свертывание кода. 
+* Множество шаблонов кода (фрагментов). 
+* Параметр "Вверх или вниз" перемещает выделенный текст вверх или вниз. 
 
 ### <a name="json"></a>JSON 
-* Schema picker with access to schemastore.org. 
-* Validation from schema. 
-* IntelliSense from schema. 
-* Improved smart indent and formatting. 
-* Improved colorization. 
-* Comment/uncomment. 
-* Quote injection and brace matching. 
-* Option up/down moves selected text up/down. 
+* Средство выбора схемы с доступом к schemastore.org. 
+* Проверка из схемы. 
+* IntelliSense из схемы. 
+* Улучшены функции интеллектуального отступа и форматирования. 
+* Усовершенствована раскраска. 
+* Добавление и удаление комментариев. 
+* Внедрение цитат и согласование скобок. 
+* Параметр "Вверх или вниз" перемещает выделенный текст вверх или вниз. 
 
-## <a name="publishing-to-azure"></a>Publishing to Azure
+## <a name="publishing-to-azure"></a>Публикация в Azure
 
-With Visual Studio for Mac it's possible to publish your ASP.NET Core web apps and services to Azure App Service. 
+С помощью Visual Studio для Mac можно публиковать службы и веб-приложения ASP.NET Core в службе приложений Azure. 
 
-![Publish to Azure](media/benefits-vsmac-over-xs-image1.png)
+![Публикация в Azure](media/benefits-vsmac-over-xs-image1.png)
 
-### <a name="azure-functions-preview"></a>Azure Functions (**Preview**)
+### <a name="azure-functions-preview"></a>Функции Azure (**предварительная версия**)
 
-Azure Functions is a solution for easily running small pieces of code, or functions, in the cloud. Visual Studio for Mac allows you to code and locally debug your Azure Functions. To get started look for Azure Functions under Cloud in the New Project dialog. 
+Функции Azure — это решение для легкого выполнения небольших фрагментов кода — или "функций" — в облаке. Visual Studio для Mac позволяет писать код для функций Azure и выполнять их локальную отладку. Для начала работы найдите элемент "Функции Azure" в разделе "Облако" диалогового окна "Новый проект". 
 
-### <a name="docker-support-preview"></a>Docker Support (**Preview**)
+### <a name="docker-support-preview"></a>Поддержка Docker (**предварительная версия**)
 
-You can now publish ASP.NET Core apps to Docker containers and run them from an Azure App Service. 
+Теперь вы можете публиковать приложения ASP.NET Core в контейнерах Docker и запускать их из службы приложений Azure. 
 
-To enable Docker support in your project, right-click on your ASP.NET Core web app and select **Add > Add Docker Support**. 
+Чтобы включить поддержку Docker в проекте, щелкните веб-приложение ASP.NET Core правой кнопкой мыши и выберите **Добавить > Add Docker Support** (Добавить поддержку Docker). 
 
-To publish your web app to a Docker container, use the **Publish > Publish to Azure** workflow introduced in Visual Studio for Mac.
+Чтобы опубликовать веб-приложение в контейнере Docker, используйте рабочий процесс **Опубликовать > Публикация в Azure**, появившийся в Visual Studio для Mac.
 
-## <a name="source-editor-improvements"></a>Source Editor Improvements 
+## <a name="source-editor-improvements"></a>Усовершенствования редактора исходного кода 
 
-In addition to Roslyn-based C# IntelliSense, refactoring, analyzers and code fixes, the Visual Studio for Mac source editor provides the following improvements over Xamarin Studio: 
+Кроме IntelliSense для C#, рефакторинга, анализаторов и исправлений кода на базе Roslyn, редактор исходного кода Visual Studio для Mac предоставляет следующие улучшения по сравнению с Xamarin Studio: 
 
-### <a name="language-bundles"></a>Language Bundles 
+### <a name="language-bundles"></a>Языковые пакеты 
 
-Visual Studio for Mac has support for TextMate (`.tmBundle`) and sublime 3 (`.sublime`) language bundles, which you can use to add: 
+Visual Studio для Mac обеспечивает поддержку языковых пакетов TextMate (`.tmBundle`) и Sublime 3 (`.sublime`), которые можно использовать для добавления следующих компонентов: 
 
-* Editor color themes 
-* Code snippets 
-* Grammars for new languages, enabling highlighting, and basic IntelliSense 
+* цветовые темы редактора; 
+* Фрагменты кода 
+* грамматики для новых языков, включение выделения и базовые функции IntelliSense. 
 
-You can add these bundles in **Preferences > Text Editor > Language Bundles**. 
+Чтобы добавить эти пакеты, последовательно выберите **Настройки > Текстовый редактор > Языковые пакеты**. 
 
-### <a name="color-theme-support"></a>Color Theme Support 
+### <a name="color-theme-support"></a>Поддержка цветовых тем 
 
-The following color theme formats are supported in Visual Studio for Mac: 
+Visual Studio для Mac поддерживает следующие форматы цветовых тем: 
 
 * Visual Studio (`.vssettings`) 
-* Xamarin studio (`.json`) 
+* Xamarin Studio (`.json`) 
 * TextMate (`tmTheme`) 
 
 ## <a name="unity"></a>Unity 
 
-[Unity](https://unity3d.com/) is a game creation tool you can use to create high-quality cross-platform 2D and 3D games for all the major platforms: mobiles, desktops, consoles, AR, and VR devices and even the web. 
+[Unity](https://unity3d.com/) — это инструмент для разработки игр, который позволяет создавать высококачественные кроссплатформенные 2D- и 3D-игры для всех основных платформ: мобильных телефонов, ПК, консолей, устройств дополненной и виртуальной реальности и даже веб-сайтов. 
 
-Starting with Unity 5.6.1, you can use Visual Studio for Mac to write and debug your Unity game. To get started, set Visual Studio to be Unity’s 5.6.1 script editor. 
+Начиная с Unity 5.6.1, можно использовать Visual Studio для Mac для написания и отладки кода игры Unity. Для начала работы настройте Visual Studio в качестве редактора скриптов для Unity 5.6.1. 
 
-The Tools for Unity include: 
+К инструментам для Unity относятся: 
 
-* Support for scripts written in C#. 
-* Unity solution pad. 
-* One click debugging of the Unity Editor. 
-* IntelliSense for Unity messages. 
-* Code coloration for Unity’s shaders. 
-* Access to the Unity documentation. 
+* Поддержка скриптов, написанных на языке C#. 
+* Панель решения Unity. 
+* Отладка одним щелчком для редактора Unity. 
+* IntelliSense для сообщений Unity. 
+* Разметка кода для шейдеров Unity. 
+* Доступ к документации по Unity. 
 
 ## <a name="xamarin"></a>Xamarin 
 
-While Xamarin cross-platform features have always been a first-class feature of Xamarin Studio, there are Xamarin features that are only available in Visual Studio for Mac 
+Хотя кроссплатформенные функции Xamarin всегда входили в число первоклассных компонентов Xamarin Studio, существуют функции Xamarin, которые доступны только в Visual Studio для Mac. 
 
 ### <a name="android"></a>Android 
 
-* [Android SDK manager](https://developer.xamarin.com/guides/android/application_fundamentals/using-the-sdk-manager/)  
-* Android O will only be supported in Visual Studio for Mac, not Xamarin Studio 
+* [Диспетчер Android SDK](https://developer.xamarin.com/guides/android/application_fundamentals/using-the-sdk-manager/)  
+* Android O будет поддерживаться только в Visual Studio для Mac, но не в Xamarin Studio. 
 
-### <a name="ios-and-mac"></a>iOS and Mac 
+### <a name="ios-and-mac"></a>iOS и Mac 
 
-* [iOS signing workflow updates ](https://developer.xamarin.com/guides/cross-platform/macios/apple-account-management/) 
-    * Create signing identities and install them to the local Keychain. 
-    * Create Provisioning Profiles. 
-    * Add a signing identity to an existing profile.
-    *  Provision devices: register a device in the Apple Developer Portal and add them to a provisioning profile.
-* iOS 11, watchOS 4, and tvOS 2 will only be supported in Visual Studio for Mac, not Xamarin Studio 
-* MacOS High Sierra will only be supported in Visual Studio for Mac, not Xamarin Studio 
+* [Обновления рабочего процесса подписывания iOS](https://developer.xamarin.com/guides/cross-platform/macios/apple-account-management/) 
+    * Создавайте удостоверения подписывания и устанавливайте их в локальную цепочку ключей. 
+    * Создавайте профили подготовки. 
+    * Добавляйте удостоверение подписывания в существующий профиль.
+    *  Подготавливайте устройства: регистрируйте устройства на портале разработчика Apple и добавляйте их в профиль подготовки.
+* iOS 11, watchOS 4 и tvOS 2 будут поддерживаться только в Visual Studio для Mac, но не в Xamarin Studio. 
+* MacOS High Sierra будет поддерживаться только в Visual Studio для Mac, но не в Xamarin Studio. 
 
-### <a name="cross-platform"></a>Cross Platform 
+### <a name="cross-platform"></a>Кроссплатформенные 
 
-* [Xamarin Live Player](https://developer.xamarin.com/guides/cross-platform/live/) (**Preview**) 
-* [Xamarin IoT](https://developer.xamarin.com/guides/cross-platform/iot/) (**Preview**) 
+* [Xamarin Live Player](https://developer.xamarin.com/guides/cross-platform/live/) (**предварительная версия**) 
+* [Xamarin IoT](https://developer.xamarin.com/guides/cross-platform/iot/) (**предварительная версия**) 
  

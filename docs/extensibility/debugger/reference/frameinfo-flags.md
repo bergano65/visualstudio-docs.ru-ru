@@ -1,5 +1,5 @@
 ---
-title: FRAMEINFO_FLAGS | Microsoft Docs
+title: "FRAMEINFO_FLAGS | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: d0b9ae5b6b9139715cd28b40dd8eae2294c507a7
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
-Specifies the information to retrieve about a stack frame object.  
+Указывает, какую информацию необходимо вернуть о кадр стека.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
 enum enum_FRAMEINFO_FLAGS {  
@@ -115,114 +115,114 @@ public enum enum_FRAMEINFO_FLAGS {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Члены  
  FIF_FUNCNAME  
- Initialize/use the `m_bstrFuncName` field.  
+ Инициализация или использовать `m_bstrFuncName` поле.  
   
  FIF_RETURNTYPE  
- Initialize/use the `m_bstrReturnType` field.  
+ Инициализация или использовать `m_bstrReturnType` поле.  
   
  FIF_ARGS  
- Initialize/use the `m_bstrArgs` field.  
+ Инициализация или использовать `m_bstrArgs` поле.  
   
  FIF_LANGUAGE  
- Initialize/use the `m_bstrLanguage` field.  
+ Инициализация или использовать `m_bstrLanguage` поле.  
   
  FIF_MODULE  
- Initialize/use the `m_bstrModule` field.  
+ Инициализация или использовать `m_bstrModule` поле.  
   
  FIF_STACKRANGE  
- Initialize/use the `m_addrMin` and `m_addrMax` (stack range) fields.  
+ Инициализация или использовать `m_addrMin` и `m_addrMax` поля (стек диапазона).  
   
  FIF_FRAME  
- Initialize/use the `m_pFrame` field.  
+ Инициализация или использовать `m_pFrame` поле.  
   
  FIF_DEBUGINFO  
- Initialize/use the `m_fHasDebugInfo` field.  
+ Инициализация или использовать `m_fHasDebugInfo` поле.  
   
  FIF_STALECODE  
- Initialize/use the `m_fStaleCode` field.  
+ Инициализация или использовать `m_fStaleCode` поле.  
   
  FIF_ANNOTATEDFRAME  
- Initialize/use the `m_fAnnotatedFrame` field.  
+ Инициализация или использовать `m_fAnnotatedFrame` поле.  
   
  FIF_DEBUG_MODULEP  
- Initialize/use the `m_pModule` field.  
+ Инициализация или использовать `m_pModule` поле.  
   
  FIF_FUNCNAME_FORMAT  
- Formats the function name. The result is returned in the `m_bstrFunName` field and no other fields are filled out.  
+ Форматирует имя функции. Результат возвращается в `m_bstrFunName` поле и никакие другие поля не заполнены.  
   
  FIF_FUNCNAME_RETURNTYPE  
- Adds the return type to the `m_bstrFuncName` field.  
+ Добавляет тип возвращаемого значения для `m_bstrFuncName` поля.  
   
  FIF_FUNCNAME_ARGS  
- Adds the arguments to the `m_bstrFuncName` field.  
+ Добавляет аргументы `m_bstrFuncName` поля.  
   
  FIF_FUNCNAME_LANGUAGE  
- Adds the language to the `m_bstrFuncName` field.  
+ Язык, который добавляет `m_bstrFuncName` поля.  
   
  FIF_FUNCNAME_MODULE  
- Adds the module name to the `m_bstrFuncName` field.  
+ Добавляет имя модуля для `m_bstrFuncName` поля.  
   
  FIF_FUNCNAME_LINES  
- Adds the number of lines to the `m_bstrFuncName` field.  
+ Добавляет число строк для `m_bstrFuncName` поля.  
   
  FIF_FUNCNAME_OFFSET  
- Adds to the `m_bstrFuncName` field the offset in bytes from the start of the line if `FIF_FUNCNAME_LINES` is specified. If `FIF_FUNCNAME_LINES` is not specified, or if line numbers are not available, adds the offset in bytes from the start of the function.  
+ Добавляет `m_bstrFuncName` поле Смещение в байтах от начала строки, если `FIF_FUNCNAME_LINES` указано. Если `FIF_FUNCNAME_LINES` не указан, или если номера строк недоступны, добавляет смещение в байтах от начала функции.  
   
  FIF_FUNCNAME_ARGS_TYPES  
- Adds the type of each function argument to the `m_bstrFuncName` field.  
+ Добавляет тип каждого аргумента в `m_bstrFuncName` поле.  
   
  FIF_FUNCNAME_ARGS_NAMES  
- Adds the name of each function argument to the `m_bstrFuncName` field.  
+ Добавляет имя для каждого аргумента `m_bstrFuncName` поля.  
   
  FIF_FUNCNAME_ARGS_VALUES  
- Adds the value of each function argument to the `m_bstrFuncName` field.  
+ Добавляет значение каждого аргумента в `m_bstrFuncName` поле.  
   
  FIF_FUNCNAME_ARGS_ALL  
- Adds the type, name, and value of all arguments to the `m_bstrFuncName` field.  
+ Добавляет тип, имя и значение всех аргументов `m_bstrFuncName` поля.  
   
  FIF_ARGS_TYPES  
- The argument types are retrieved and formatted.  
+ Типы аргументов, извлекаются и формат.  
   
  FIF_ARGS_NAMES  
- The argument names are retrieved and formatted.  
+ Имена аргументов, извлекаются и формат.  
   
  FIF_ARGS_VALUES  
- The argument values are retrieved and formatted.  
+ Значения аргументов, извлекаются и формат.  
   
  FIF_ARGS_ALL  
- Retrieve and format the type, name, and value of all arguments.  
+ Получение и форматирование тип, имя и значение всех аргументов.  
   
  FIF_ARGS_NOFORMAT  
- Specifies that the arguments are not be formatted (for example, do not add opening and closing parentheses around the argument list nor add a separator between arguments).  
+ Указывает, что аргументы имеют формат (например, не добавлять открывающей и закрывающей скобки списка аргументов и не добавить разделители между аргументами).  
   
  FIF_ARGS_NO_FUNC_EVAL  
- Specifies that function (property) evaluation should not be used when retrieving argument values.  
+ Указывает, не используется вычисление функций (свойство) при получении значения аргументов.  
   
  FIF_FILTER_NON_USER_CODE  
- The debug engine is to filter non-user code frames so they are not included.  
+ Модуль отладки — отфильтровать фреймы кода, не написанный пользователем, чтобы они не включаются.  
   
  FIF_ARGS_NO_TOSTRING  
- Do not allow `ToString()` function evaluation or formatting when returning function arguments.  
+ Не разрешать `ToString()` функции оценки или форматирование при возврате аргументов функции.  
   
  FIF_DESIGN_TIME_EXPR_EVAL  
- Frame information should be gotten from the hosted app-domain rather than the hosting process.  
+ Сведения о кадре следует принял из размещенного домена приложения, а не процесс размещения.  
   
-## <a name="remarks"></a>Remarks  
- These flags are passed to the [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) and [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) methods to indicate which fields are to be initialized in the [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) structure or structures.  
+## <a name="remarks"></a>Примечания  
+ Эти флаги будут переданы [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) и [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) методах, чтобы указать, какие поля должны быть инициализированы в [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) структур.  
   
- These flags are also used to indicate which fields of the [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) structure are used and valid when the structure is returned. These values may be combined with a bitwise `OR`.  
+ Эти флаги также используются для указания поля [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) структуры не используются и допустимым при возврате структуры. Эти значения могут объединяться с помощью битового оператора `OR`.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Требования  
+ Заголовок: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>См. также  
+ [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)   
  [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Quick Start: Test Driven Development with Test Explorer | Microsoft Docs'
+title: "Краткое руководство. Разработка на основе тестирования с использованием обозревателя тестов | Документы Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,73 +31,73 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: af65c4f502cd36d00b031784dcda275abec3630a
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="quick-start-test-driven-development-with-test-explorer"></a>Quick Start: Test Driven Development with Test Explorer
-We recommend that you create unit tests to help keep your code working correctly through many incremental steps of development. There are several frameworks that you can use to write unit tests, including some developed by third parties. Some test frameworks are   specialized to testing in different languages or platforms. Test Explorer provides a single interface for unit tests in any of these frameworks. Adapters are available for the most commonly-used frameworks, and you can write your own adapters for other frameworks.  
+# <a name="quick-start-test-driven-development-with-test-explorer"></a>Краткое руководство. Разработка на основе тестирования с использованием обозревателя тестов
+Рекомендуется создать модульные тесты, чтобы помочь обеспечивать правильность работы кода при многошаговой разработке. Существует несколько платформ, которые можно использовать для написания модульных тестов, в том числе разработанные третьими сторонами. Некоторые тестовые среды специализируются на тестировании на различных языках или платформах. Обозреватель тестов предоставляет единый интерфейс модульных тестов для любых таких платформ. Доступны адаптеры для наиболее часто используемых платформ, при этом можно написать собственные адаптеры для других платформ.  
   
- Test Explorer supersedes the unit test windows found in earlier editions of Visual Studio. Its benefits include:  
+ Обозреватель тестов замещает окна модульных тестов предыдущих выпусков Visual Studio. Преимущества:  
   
--   Run .NET, unmanaged, database and other kinds of tests using a single interface.  
+-   Возможность запуска .NET, базы данных и других типов тестов с использованием единого интерфейса.  
   
--   Use the unit test framework of your choice, such as NUnit or MSTest frameworks.  
+-   Возможность использовать платформу модульных тестов, например NUnit или MSTest.  
   
--   See in one window all the information that you need.  
+-   Возможность увидеть всю требуемую информацию в одном окне.  
   
-## <a name="using-test-explorer"></a>Using Test Explorer  
- ![Unit Test Explorer showing Run All button](../test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")  
+## <a name="using-test-explorer"></a>Использование обозревателя тестов  
+ ![Обозреватель модульных тестов с кнопкой "Запустить все"](../test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")  
   
-#### <a name="to-run-unit-tests-by-using-test-explorer"></a>To Run Unit Tests by using Test Explorer  
+#### <a name="to-run-unit-tests-by-using-test-explorer"></a>Запуск модульных тестов с помощью обозревателя тестов  
   
-1.  Create unit tests that use the test frameworks of your choice.  
+1.  Создайте модульные тесты, которые используют выбранные тестовые среды.  
   
-     For example, to create a test that uses the MSTest Framework:  
+     Например, для создания теста, использующего платформу MSTest:  
   
-    1.  Create a test project.  
+    1.  Создайте тестовый проект.  
   
-         In the **New Project** dialog box, expand **Visual Basic**, **Visual C#**, or **Visual C++**, and then choose **Test**.  
+         В диалоговом окне **Создать проект** разверните **Visual Basic**, **Visual C#**или **Visual C++**, а затем выберите **Тест**.  
   
-         Select **Unit Test Project**.  
+         Выберите **Проект модульного теста**.  
   
-    2.  Write each unit test as a method. Prefix each test method with the `[TestMethod]` attribute.  
+    2.  Напишите каждый модульный тест в виде метода. Добавьте каждый тестовый метод к атрибуту `[TestMethod]`.  
   
-2.  If individual tests have no dependencies that prevent them from being run in any order, turn on parallel test execution with the ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") toggle button on the toolbar. This can noticeably reduce the time taken to run all the tests.  
+2.  Если у отдельных тестов нет зависимостей, предотвращающих выполнение этих тестов в любом порядке, включите параллельное тестирование с помощью переключателя ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") на панели инструментов. Это может заметно сократить время, необходимое для выполнения всех тестов.  
   
-3.  On the menu bar, choose **Test**, **Run Unit Tests**, **All Tests**.  
+3.  В строке меню выберите **Тест**, **Выполнение модульных тестов**, **Все тесты**.  
   
-     The solution builds and the tests run.  
+     Выполняется сборка решения, запускаются тесты.  
   
-     Test Explorer opens and displays a summary of the results.  
+     Обозреватель тестов откроет и отобразит сводку результатов.  
   
- **To see a full list of tests:** Choose **Show All** in any category.  
+ **Отображение полного списка тестов:** выберите **Показать все** в любой категории.  
   
- **To see the details of a test result:** Select the test in Test Explorer to view details such as exception messages in the details pane.  
+ **Для просмотра сведений о результатах теста:** для просмотра подробных сведений, например сообщений об исключениях, в области подробных сведений выберите тест в обозревателе тестов.  
   
- **To navigate to the code of a test:** Double-click the test in Test Explorer, or choose **Open Test** on the shortcut menu.  
+ **Для перехода к коду теста:** дважды щелкните тест в обозревателе тестов или выберите **Открыть тест** в контекстном меню.  
   
- **To debug a test:** Open the shortcut menu for one or more tests, and then choose **Debug Selected Tests**.  
+ **Для отладки теста:** откройте контекстное меню одного или нескольких тестов, а затем выберите **Отладить выбранные тесты**.  
   
 > [!IMPORTANT]
->  The results that are displayed are for the most recent run. The colored results bar shows only the results for the tests that ran. For example, if you run several tests and some of them fail, and then run only the successful tests, then the results bar will show all green.  
+>  Отобразятся результаты для самого последнего запуска. Выделенная цветом панель результатов отображает только результаты тестов, которые были запущены. Например, если были запущены тесты, некоторые из которых завершились неудачей, а затем запущены только успешно завершенные тесты, панель результатов будет выделена зеленым цветом.  
   
 > [!NOTE]
->  If no test appears, make sure that you have installed an adapter to connect Test Explorer to the test framework that you are using. For more information, see [Using Different Test Frameworks with Test Explorer](#frameworks).  
+>  Если тест не отображается, убедитесь в том, что установлен адаптер для связи обозревателя тестов с используемой для тестов платформой. Дополнительные сведения см. в разделе [Использование различных сред тестов с обозревателем тестов](#frameworks).  
   
-##  <a name="walkthrough"></a> Walkthrough: Using Unit Tests to Develop a Method  
- This walkthrough demonstrates how to develop a tested method in C# using the Microsoft Unit Test framework. You can easily adapt it for other languages, and to use other test frameworks such as NUnit. For more information, see [Using Different Test Frameworks](#frameworks).  
+##  <a name="walkthrough"></a> Пошаговое руководство. Использование модульных тестов для разработки метода  
+ В данном пошаговом руководстве показано, как разработать тестируемый метод в C# с помощью платформы для выполнения модульных тестов Microsoft. Можно легко адаптировать его для других языков, а также использовать другие тестовые платформы, например NUnit. Для получения дополнительных сведений см. [Использование различных тестовых платформ](#frameworks).  
   
-#### <a name="creating-the-test-and-method"></a>Creating the Test and Method  
+#### <a name="creating-the-test-and-method"></a>Создание теста и метода  
   
-1.  Create a Visual C# Class Library project. This project will contain the code that we want to deliver. In this example, it is named `MyMath`.  
+1.  Создайте проект библиотеки классов Visual C#. Данный проект будет содержать код, который необходимо предоставить. В этом примере именем является `MyMath`.  
   
-2.  Create a Test project.  
+2.  Создайте тестовый проект.  
   
-    -   In the **New Project** dialog, choose **Visual C#**, **Test** and then choose **Unit Test Project**.  
+    -   В диалоговом окне **Создать проект** выберите **Visual C#**, **Тест** , а затем выберите **Проект модульного теста**.  
   
-         ![New code and test projects](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
+         ![Новые проекты кода и тестирования](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
   
-3.  Write a basic test method. Verify the result obtained for a specific input:  
+3.  Напишите основной тестовый метод. Проверьте результат, полученный для определенных входных данных:  
   
     ```csharp  
   
@@ -117,37 +117,37 @@ We recommend that you create unit tests to help keep your code working correctly
     }  
     ```  
   
-4.  Generate the method from the test.  
+4.  Создайте метод из теста.  
   
-    1.  Place the cursor on `Rooter`, and then on the shortcut menu choose **Generate**, **New Type**.  
+    1.  Поместите курсор на `Rooter`, и в контекстном меню выберите пункт **Сформировать**, **Создать тип**.  
   
-    2.  In the **Generate New Type** dialog box, set **Project** to the class library project. In this example, it is `MyMath`.  
+    2.  В диалоговом окне **Сформировать новый тип** установите **Проект** в проект библиотеки классов. В этом примере это `MyMath`.  
   
-    3.  Place the cursor on `SquareRoot`, and then on the shortcut menu choose **Generate**, **Method Stub**.  
+    3.  Поместите курсор на `SquareRoot`и в контекстном меню выберите пункт **Сформировать**, **Заглушка метода**.  
   
-5.  Run the unit test.  
+5.  Выполните модульный тест.  
   
-    1.  On the **Test** menu, choose **Run Unit Tests**, **All Tests**.  
+    1.  В меню **Тест** выберите **Выполнение модульных тестов**, **Все тесты**.  
   
-         The solution builds and runs.  
+         Выполняется сборка и запуск решения.  
   
-         Test Explorer opens and displays the results.  
+         Открывается обозреватель тестов, в котором отображаются результаты.  
   
-         The test appears under **Failed Tests**.  
+         Данный тест отобразится в разделе **Неудачные тесты**.  
   
-6.  Select the name of the test.  
+6.  Выберите имя теста.  
   
-     The details of the test appear in the lower part of Test Explorer.  
+     Дополнительные сведения о тесте появятся в нижней части обозревателя тестов.  
   
-7.  Select the items under **Stack Trace** to see where the test failed.  
+7.  Выберите элементы в разделе **Трассировка стека** , чтобы увидеть, где тест не пройден.  
   
- ![Unit Test Explorer showing failed test.](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
+ ![Обозреватель модульных тестов с непройденным тестом.](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
   
- At this point, you have created a test and a stub that you will modify so that the test passes.  
+ На данном этапе создан тест и заглушка, которые будут изменены таким образом, что тест будет успешно пройден.  
   
-#### <a name="after-every-change-make-all-the-tests-pass"></a>After every change, make all the tests pass  
+#### <a name="after-every-change-make-all-the-tests-pass"></a>После каждого изменения все тесты должны быть успешно пройдены  
   
-1.  In `MyMath\Rooter.cs`, improve the code of `SquareRoot`:  
+1.  В разделе `MyMath\Rooter.cs`улучшите код `SquareRoot`:  
   
     ```csharp  
     public double SquareRoot(double input)  
@@ -156,22 +156,22 @@ We recommend that you create unit tests to help keep your code working correctly
      }  
     ```  
   
-2.  In Test Explorer, choose **Run All**.  
+2.  В разделе "Обозреватель тестов" выберите **Запустить все**.  
   
-     The code builds and the test runs.  
+     Выполняется сборка кода и запуск тестов.  
   
-     The test passes.  
+     Тест проходит.  
   
-     ![Unit Test Explorer showing a passing test.](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")  
+     ![Обозреватель модульных тестов с пройденным тестом.](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")  
   
-#### <a name="add-tests-to-extend-the-range-of-inputs"></a>Add tests to extend the range of inputs  
+#### <a name="add-tests-to-extend-the-range-of-inputs"></a>Добавьте тесты, чтобы расширить диапазон входных данных  
   
-1.  To improve your confidence that your code works in all cases, add tests that try a broader range of input values.  
+1.  Для уверенности, что код работает во всех случаях, добавьте тесты, которые используют более широкий диапазон входных значений.  
   
     > [!TIP]
-    >  Avoid altering existing tests that pass. Instead, add new tests. Change existing tests only when the user requirements change. This policy helps ensure that you don't lose existing functionality as you work to extend the code.  
+    >  Избегайте изменения существующих успешно выполненных тестов. Вместо этого добавьте новые тесты. Изменяйте существующие тесты только в тех случаях, когда меняются пользовательские требования. Такой подход позволяет не потерять существующие функциональные возможности при работе с расширенным кодом.  
   
-     In your test class, add the following test, which tries a range of input values:  
+     В тестовом классе добавьте следующий тест, который использует диапазон входных значений:  
   
     ```csharp  
     [TestMethod]  
@@ -197,13 +197,13 @@ We recommend that you create unit tests to help keep your code working correctly
     }  
     ```  
   
-2.  In Test Explorer, choose **Run All**.  
+2.  В разделе "Обозреватель тестов" выберите **Запустить все**.  
   
-     The new test fails, although the first test still passes.  
+     Новый тест завершается неудачей несмотря на то, что первый тест по-прежнему завершается успешно.  
   
-     To find the point of failure, select the failing test and then in the lower part of Test Explorer, select the top item of the **Stack Trace**.  
+     Для нахождения точки сбоя выберите завершенный неудачей тест в нижней части обозревателя тестов и выберите верхний элемент **Трассировка стека**.  
   
-3.  Inspect the method under test to see what might be wrong. In the `MyMath.Rooter` class, rewrite the code:  
+3.  Проверьте тестируемый метод, чтобы узнать, что не так. В классе `MyMath.Rooter` перепишите код:  
   
     ```  
     public double SquareRoot(double input)  
@@ -219,13 +219,13 @@ We recommend that you create unit tests to help keep your code working correctly
     }  
     ```  
   
-4.  In Test Explorer, choose **Run All**.  
+4.  В разделе "Обозреватель тестов" выберите **Запустить все**.  
   
-     Both tests now pass.  
+     Теперь оба теста завершаются успешно.  
   
-#### <a name="add-tests-for-exceptional-cases"></a>Add tests for exceptional cases  
+#### <a name="add-tests-for-exceptional-cases"></a>Добавление тестов для исключительных случаев  
   
-1.  Add a test for negative inputs:  
+1.  Добавьте тест для отрицательных входных значений:  
   
     ```csharp  
     [TestMethod]  
@@ -244,15 +244,15 @@ We recommend that you create unit tests to help keep your code working correctly
      }  
     ```  
   
-2.  In Test Explorer, choose **Run All**.  
+2.  В разделе "Обозреватель тестов" выберите **Запустить все**.  
   
-     The method under test loops, and must be canceled manually.  
+     Тестируемый метод зацикливается, его необходимо отменить вручную.  
   
-3.  Choose **Cancel**.  
+3.  Выберите **Отмена**.  
   
-     The test stops after 10 seconds.  
+     Тест останавливается через 10 секунд.  
   
-4.  Fix the method code:  
+4.  Исправьте код метода:  
   
     ```csharp  
   
@@ -265,18 +265,18 @@ We recommend that you create unit tests to help keep your code working correctly
     ...  
     ```  
   
-5.  In Test Explorer, choose **Run All**.  
+5.  В разделе "Обозреватель тестов" выберите **Запустить все**.  
   
-     All the tests pass.  
+     Все тесты завершаются успешно.  
   
-#### <a name="refactor-without-changing-tests"></a>Refactor without changing tests  
+#### <a name="refactor-without-changing-tests"></a>Рефакторинг без изменения тестов  
   
-1.  Simplify the code, but do not change the tests.  
+1.  Упростите код, но не изменяйте тесты.  
   
     > [!TIP]
-    >  A *refactoring* is a change that is intended to make the code perform better or to make the code easier to understand. It is not intended to alter the behavior of the code, and therefore the tests are not changed.  
+    >  *Рефакторинг* — это изменение, которое делает код более производительным или более понятным. Это действие не предназначено для изменения поведения кода, поэтому тесты не изменяются.  
     >   
-    >  We recommend that you perform refactoring steps separately from steps that extend functionality. Keeping the tests unchanged gives you confidence that you have not accidentally introduced bugs while refactoring.  
+    >  Рекомендуется выполнять рефакторинг отдельно от расширения функциональности. Неизменяемость тестов уменьшает шансы случайных ошибок во время рефакторинга.  
   
     ```csharp  
     public class Rooter  
@@ -300,9 +300,9 @@ We recommend that you create unit tests to help keep your code working correctly
     }  
     ```  
   
-2.  Choose **Run All**.  
+2.  Выберите **Запустить все**.  
   
-     All the tests still pass.  
+     Все тесты по-прежнему завершаются успехом.  
   
-     ![Unit Test Explorer showing 3 passed tests.](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![Обозреватель модульных тестов с тремя пройденными тестами.](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
 

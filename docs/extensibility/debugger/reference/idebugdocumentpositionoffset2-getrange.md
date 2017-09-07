@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPositionOffset2::GetRange | Microsoft Docs
+title: "IDebugDocumentPositionOffset2::GetRange | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,13 +32,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 501acf49bec28092c7a41fee83f6dfd9fe9d11c9
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
-Retrieves the range for the current document position.  
+Получает текущую позицию в документе диапазон.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
 HRESULT GetRange(  
@@ -54,26 +54,26 @@ public int GetRange(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Параметры  
  `pdwBegOffset`  
- [in, out] Offset for the start position of the range. Set this parameter to a null value if this information is not needed.  
+ [in, out] Смещение для начальную позицию диапазона. Установите этот параметр в значение null, если эта информация не требуется.  
   
  `pdwEndOffset`  
- [in, out] Offset for the end position of the range. Set this parameter to a null value if this information is not needed.  
+ [in, out] Смещение для конечную позицию диапазона. Установите этот параметр в значение null, если эта информация не требуется.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- The range specified in a document position for a location breakpoint is used by the debug engine (DE) to search ahead for a statement that actually contributes code. For example, consider the following code:  
+## <a name="remarks"></a>Примечания  
+ Диапазон, указанный в документе должности точку останова используется подсистема отладки (DE) для поиска вперед для инструкции, которая фактически участвует кода. Рассмотрим следующий пример кода:  
   
 ```  
 Line 5: // comment  
 Line 6: x = 1;  
 ```  
   
- Line 5 contributes no code to the program being debugged. If the debugger that sets the breakpoint on line 5 wants the DE to search forward a certain amount for the first line that contributes code, the debugger would specify a range that includes additional candidate lines where a breakpoint might be correctly placed. The DE would then search forward through those lines until it found a line that could accept a breakpoint.  
+ Строка 5 вносит без кода для отлаживаемой программы. Отладчик, который задает точку останова в строке 5 DE поиска в прямом направлении отведенного для первой строки, содержащей код, отладчик будет указать диапазон, включающий дополнительный кандидат строки, где может правильно разместить точки останова. DE будет затем осуществлять поиск вперед по те строки, пока его найти строку, которая могла бы принять точки останова.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>См. также  
  [IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)   
  [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)

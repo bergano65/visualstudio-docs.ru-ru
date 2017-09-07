@@ -1,5 +1,5 @@
 ---
-title: SccQueryInfo Function | Microsoft Docs
+title: "Функция SccQueryInfo | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 4efd9b29a89bc490255c35558e5862ebc14b7fec
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="sccqueryinfo-function"></a>SccQueryInfo Function
-This function obtains status information for a set of selected files under source control.  
+# <a name="sccqueryinfo-function"></a>Функция SccQueryInfo
+Эта функция получает сведения о состоянии для набора выбранных файлов в системе управления версиями.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
 SCCRTN SccQueryInfo(  
@@ -51,44 +51,44 @@ SCCRTN SccQueryInfo(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Параметры  
  pvContext  
- [in] The source control plug-in context structure.  
+ [in] Исходная структура подключаемого модуля контекста элемента управления.  
   
  nFiles  
- [in] Number of files specified in the `lpFileNames` array and the length of the `lpStatus` array.  
+ [in] Число файлов, указанных в `lpFileNames` массива и длина `lpStatus` массива.  
   
  lpFileNames  
- [in] An array of names of files to be queried.  
+ [in] Массив имен файлов, которые будут запрашиваться.  
   
  lpStatus  
- [in, out] An array in which the source control plug-in returns the status flags for each file. For more information, see [File Status Code](../extensibility/file-status-code-enumerator.md).  
+ [in, out] Массив, в котором подключаемый модуль системы управления версиями Возвращает флаги состояния для каждого файла. Дополнительные сведения см. в разделе [код состояния файла](../extensibility/file-status-code-enumerator.md).  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## <a name="return-value"></a>Возвращаемое значение  
+ Реализация подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Value|Description|  
+|Значение|Описание|  
 |-----------|-----------------|  
-|SCC_OK|Query was successful.|  
-|SCC_E_ACCESSFAILURE|There was a problem with accessing the source control system, probably caused by network or contention issues. A retry is recommended.|  
-|SCC_E_PROJNOTOPEN|The project is not open under source control.|  
-|SCC_E_NONSPECIFICERROR|Nonspecific failure.|  
+|SCC_OK|Запрос успешно выполнен.|  
+|SCC_E_ACCESSFAILURE|Возникла проблема с доступом к системе управления версиями, возможно, причиной проблемы с сетью или конфликтов. Рекомендуется повторить операцию.|  
+|SCC_E_PROJNOTOPEN|Проект не открыт в системе управления версиями.|  
+|SCC_E_NONSPECIFICERROR|Неспецифичную сбоя.|  
   
-## <a name="remarks"></a>Remarks  
- If `lpFileName` is an empty string, there is currently no status information to update. Otherwise, it is the full path name of the file for which the status information may have changed.  
+## <a name="remarks"></a>Примечания  
+ Если `lpFileName` является пустой строкой, в настоящее время нет сведений о состоянии для обновления. В противном случае — это полный путь имя файла, для которого были изменены сведения о состоянии.  
   
- The return array can be a bitmask of `SCC_STATUS_xxxx` bits. For more information, see [File Status Code](../extensibility/file-status-code-enumerator.md). A source control system may not support all bit types. For example, if `SCC_STATUS_OUTOFDATE` is not offered, the bit is just not set.  
+ Возвращаемый массив может быть Битовая маска `SCC_STATUS_xxxx` bits. Дополнительные сведения см. в разделе [код состояния файла](../extensibility/file-status-code-enumerator.md). Система управления версиями могут не поддерживать все типы бит. Например если `SCC_STATUS_OUTOFDATE` не будет предлагаться, просто не бита.  
   
- When using this function to check out files, note the following `MSSCCI` status requirements:  
+ При использовании этой функции для извлечения файлов, обратите внимание на следующие `MSSCCI` состояние требований:  
   
--   `SCC_STATUS_OUTBYUSER` is set when the current user has checked out the file.  
+-   `SCC_STATUS_OUTBYUSER`будет установлен, если файл извлечен текущим пользователем.  
   
--   `SCC_STATUS_CHECKEDOUT` cannot be set unless `SCC_STATUS_OUTBYUSER` is set.  
+-   `SCC_STATUS_CHECKEDOUT`Нельзя задавать, если `SCC_STATUS_OUTBYUSER` имеет значение.  
   
--   `SCC_STATUS_CHECKEDOUT` is only set when the file is checked-out into the designated working directory.  
+-   `SCC_STATUS_CHECKEDOUT`устанавливается только если файл извлечен в указанный рабочий каталог.  
   
--   If the file is checked-out by the current user into a directory other than the working directory, `SCC_STATUS_OUTBYUSER` is set but `SCC_STATUS_CHECKEDOUT` is not.  
+-   Если файл извлечен текущим пользователем в папке, отличной от рабочий каталог `SCC_STATUS_OUTBYUSER` устанавливается, но `SCC_STATUS_CHECKEDOUT` не является.  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
- [File Status Code](../extensibility/file-status-code-enumerator.md)
+## <a name="see-also"></a>См. также  
+ [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)   
+ [Код состояния файла](../extensibility/file-status-code-enumerator.md)
