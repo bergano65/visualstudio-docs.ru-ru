@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo2::GetCount | Microsoft Docs
+title: "IEnumDebugPropertyInfo2::GetCount | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 63159a1a2b40bf62c8a56d3df941192f1ca8e7e9
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="ienumdebugpropertyinfo2getcount"></a>IEnumDebugPropertyInfo2::GetCount
-Returns the number of elements in the enumeration.  
+Возвращает число элементов в перечислении.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
 HRESULT GetCount(  
@@ -54,15 +54,15 @@ int GetCount(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Параметры  
  `pcelt`  
- [out] Returns the number of elements in the enumeration.  
+ [out] Возвращает число элементов в перечислении.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- This method is not part of the customary COM enumeration interface which specifies that only the `Next`, `Clone`, `Skip`, and `Reset` methods need to be implemented.  
+## <a name="remarks"></a>Примечания  
+ Этот метод не является частью обычной интерфейс перечисления COM, который указывает, что только `Next`, `Clone`, `Skip`, и `Reset` методы должны быть реализованы.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>См. также  
  [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)

@@ -1,5 +1,5 @@
 ---
-title: Culture-Specific Classes for Global Windows Forms and Web Forms | Microsoft Docs
+title: "Классы, соответствующие определенному языку и региональным параметрам, для глобальных форм Windows Forms и Web Forms | Документы Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -48,16 +48,16 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 7eae24ec725509b2a2a6a276ad7f474a079bd952
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>Culture-Specific Classes for Global Windows Forms and Web Forms
-Each culture has different conventions for displaying dates, time, numbers, currency, and other information. The <xref:System.Globalization> namespace contains classes that can be used to modify how culture-specific values are displayed, such as <xref:System.Globalization.DateTimeFormatInfo>, **Calendar**, and <xref:System.Globalization.NumberFormatInfo>.  
+# <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>Классы, соответствующие определенному языку и региональным параметрам, для глобальных форм Windows Forms и Web Forms
+Для каждого языка и региональных параметров есть отдельное соглашение об отображении дат, времени, чисел, валюты и других сведений. Пространство имен <xref:System.Globalization> содержит классы, с помощью которых можно изменить отображение значений, зависящих от языка и региональных параметров, таких как <xref:System.Globalization.DateTimeFormatInfo>, **Calendar**, <xref:System.Globalization.NumberFormatInfo>.  
   
-## <a name="using-the-culture-setting"></a>Using the Culture Setting  
- But most of the time you will use the culture setting, stored either in the application or in the **Regional Options** control panel, to automatically determine the conventions at run time and format the information accordingly. For more information on setting the culture, see [How to: Set the Culture and UI Culture for Windows Forms Globalization](http://msdn.microsoft.com/en-us/694e049f-0b91-474a-9789-d35124f248f0) or [How to: Set the Culture and UI Culture for ASP.NET Web Page Globalization](http://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0). Classes that automatically format information according to the culture setting are called culture-specific. Some culture-specific methods are <xref:System.IFormattable.ToString%2A?displayProperty=fullName>, <xref:System.Console.WriteLine%2A?displayProperty=fullName>, and <xref:System.String.Format%2A?displayProperty=fullName>. Some culture-specific functions (in the Visual Basic language) are `MonthName` and `WeekDayName`.  
+## <a name="using-the-culture-setting"></a>Использование параметра языка и региональных параметров  
+ Но в большинстве случаев вы будете использовать параметр языка и региональные параметров, который можно хранится либо в приложении, либо в панели управления **Региональные параметры**. С его помощью можно автоматически определить соглашения во время выполнения и форматировать сведения соответствующим образом. Дополнительные сведения о настройке языка и региональных параметров см. в практических руководствах по [настройке языка и региональных параметров, а также языка и региональных параметров пользовательского интерфейса для глобализации Windows Forms](http://msdn.microsoft.com/en-us/694e049f-0b91-474a-9789-d35124f248f0) и [настройке языка и региональных параметров, а также языка и региональных параметров пользовательского интерфейса для глобализации веб-страниц ASP.NET](http://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0). Классы, автоматически форматирующие сведения в соответствии с настройками языка и региональных параметров, называются классами, зависящими от языка и региональных параметров. К некоторым методам, определяемым языком и региональными параметрами, относятся <xref:System.IFormattable.ToString%2A?displayProperty=fullName>, <xref:System.Console.WriteLine%2A?displayProperty=fullName> и <xref:System.String.Format%2A?displayProperty=fullName>. Некоторые функции, зависящие от языка и региональных параметров (в языке Visual Basic): `MonthName` и `WeekDayName`.  
   
- For example, the following code shows how you can use the <xref:System.IFormattable.ToString%2A> method to format currency for the current culture:  
+ Например, в следующем коде показано, как с помощью метода <xref:System.IFormattable.ToString%2A> форматировать денежные единицы для выбранного языка и региональных параметров.  
   
 ```vb  
 ' Put the Imports statements at the beginning of the code module  
@@ -78,19 +78,19 @@ int myInt = 100;
 Console.WriteLine(myInt.ToString("C", Thread.CurrentThread.CurrentCulture));  
 ```  
   
- If the culture is set to "fr-FR", you will see this in the output window:  
+ Если для языка и региональных параметров задано значение fr-FR, в окне вывода появится следующее:  
   
  `100,00`  
   
- If the culture is set to "en-US", you will see this in the output window:  
+ Если для языка и региональных параметров задано значение en-US, в окне вывода появится следующее:  
   
  `$100.00`  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>См. также  
  <xref:System.IFormattable.ToString%2A?displayProperty=fullName>   
  <xref:System.Globalization.DateTimeFormatInfo>   
  <xref:System.Globalization.NumberFormatInfo>   
  <xref:System.Globalization.Calendar>   
  <xref:System.Console.WriteLine%2A?displayProperty=fullName>   
  <xref:System.String.Format%2A?displayProperty=fullName>   
- [Globalizing and Localizing Applications](../ide/globalizing-and-localizing-applications.md)
+ [Глобализация и локализация приложений](../ide/globalizing-and-localizing-applications.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::GetCustomAttributeByName | Microsoft Docs
+title: "IDebugCustomAttributeQuery2::GetCustomAttributeByName | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 4d3b06a21b70934863403289fc549815ed515883
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
-Obtains the custom attributes bytes given the name of the custom attribute.  
+Получает настраиваемые атрибуты байтов по заданному имени настраиваемого атрибута.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
 HRESULT GetCustomAttributeByName(   
@@ -58,26 +58,26 @@ int GetCustomAttributeByName(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Параметры  
  `pszCustomAttributeName`  
- [in] A string containing the name of the custom attribute to look for.  
+ [in] Строка, содержащая имя искомого настраиваемого атрибута.  
   
  `ppBlob`  
- [in, out] An array that is filled in with the custom attribute bytes.  
+ [in, out] Массив, который содержит байты настраиваемого атрибута.  
   
  `pdwLen`  
- [in, out] Specifies the maximum number of bytes to return in the `ppBlob` array and returns the number of bytes actually written to the array.  
+ [in, out] Указывает максимальное число байтов для возврата в `ppBlob` массива и возвращает количество байтов, фактически записанных в массив.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK or returns S_FALSE if the custom attribute does not exist. Otherwise, returns an error code.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK, или возвращает значение S_FALSE, если настраиваемый атрибут не существует. В противном случае возвращается код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- Set the `ppBlob` parameter to a null value to return the number of attributes bytes available. Then allocate an array and pass that array in for the `ppBlob` parameter.  
+## <a name="remarks"></a>Примечания  
+ Задать `ppBlob` параметр в значение null для возврата количества атрибутов доступных байтов. Затем выделить память для массива и передать этот массив в для `ppBlob` параметра.  
   
- The attribute bytes represent the raw data of the custom attribute.  
+ Байты атрибута представляют необработанные данные настраиваемого атрибута.  
   
- If the `ppBlob` and `pdwLen` parameters are set to a null value, this method can be used to determine if the custom attribute merely exists. An easier alternative, however, is to call the [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md) method.  
+ Если `ppBlob` и `pdwLen` параметры устанавливаются в значение null, этот метод можно использовать для определения, существует ли просто настраиваемого атрибута. Альтернативы проще, однако является вызов [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md) метод.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>См. также  
  [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)   
  [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)

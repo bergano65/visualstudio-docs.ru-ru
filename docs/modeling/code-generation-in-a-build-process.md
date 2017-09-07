@@ -1,5 +1,5 @@
 ---
-title: Code Generation in a Build Process | Microsoft Docs
+title: "Формирование кода в процессе построения | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,22 +32,22 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 6cfdd28afbfb88f83d7931b57adbedfb88bf93bf
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="code-generation-in-a-build-process"></a>Code Generation in a Build Process
-[Text transformation](../modeling/code-generation-and-t4-text-templates.md) can be invoked as part of the [build process](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) of a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution. There are build tasks that are specialized for text transformation. The T4 build tasks run design-time text templates, and they also compile run-time (preprocessed) text templates.  
+# <a name="code-generation-in-a-build-process"></a>Создание кода в процессе построения
+[Преобразование текста](../modeling/code-generation-and-t4-text-templates.md) может вызываться в рамках [процесс построения](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] решения. Имеются задачи сборки, которые специализируются на преобразовании текста. Задачи сборки T4 запускают выполнение текстовых шаблонов времени разработки, а также компилируют текстовые шаблоны времени выполнения (предварительно обработанные).  
   
- There are some differences in what the build tasks can do, depending on which build engine you use. When you build the solution in Visual Studio, a text template can access the Visual Studio API (EnvDTE) if the [hostspecific="true"](../modeling/t4-template-directive.md) attribute is set. But that isn't true when you build the solution from the command line or when you initiate a server build through Visual Studio. In those cases, the build is performed by MSBuild and a different T4 host is used.  
+ Возможности задач построения несколько отличаются в зависимости от используемого обработчика сборки. При построении решения в Visual Studio текстовый шаблон можно получить доступ к API Visual Studio (EnvDTE) Если [hostspecific = «true»](../modeling/t4-template-directive.md) атрибут имеет значение. Однако это не так при сборке решения из командной строки или при запуске сборки сервера через Visual Studio. В таких случаях сборка выполняется в MSBuild и используется другой узел T4.  
   
- This means that you can't access things like project file names in the same way when you build a text template in MSBuild. However, you can [pass environment information into text templates and directive processors by using build parameters](#parameters).  
+ Это означает, что таких вещей, как имена файлов проекта невозможен доступ таким же образом при сборке текстового шаблона в MSBuild. Тем не менее, вы можете [передать данные среды в текстовые шаблоны и процессоры директив с помощью параметров сборки](#parameters).  
   
-##  <a name="buildserver"></a> Configure your machines  
- To enable build tasks on your development computer, install Modeling SDK for Visual Studio.
+##  <a name="buildserver"></a>Настройка компьютеров  
+ Чтобы включить задачи сборки на компьютере разработчика, необходимо установите пакет SDK моделирования для Visual Studio.
  
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
- If [your build server](http://msdn.microsoft.com/Library/788443c3-0547-452e-959c-4805573813a9) runs on a computer on which [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] is not installed, copy the following files to the build computer from your development machine. Substitute the most recent version numbers for '*'.  
+ Если [ваш сервер сборки](http://msdn.microsoft.com/Library/788443c3-0547-452e-959c-4805573813a9) выполняется на компьютере, на котором [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] — не установлена, скопируйте следующие файлы на компьютер построения с компьютера разработки. Замените номером последней версии для "*".  
   
 -   $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating  
   
@@ -69,23 +69,23 @@ ms.lasthandoff: 08/28/2017
   
     -   Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll  
   
-## <a name="to-edit-the-project-file"></a>To edit the project file  
- You'll have to edit your project file to configure some of the features in MSBuild.  
+## <a name="to-edit-the-project-file"></a>Изменение файла проекта  
+ Вам придется изменить файл проекта для настройки некоторых функций в MSBuild.  
   
- In solution explorer, choose **Unload** from the context menu of your project. That allows you to edit the .csproj or .vbproj file in the XML editor.  
+ В обозревателе решений выберите **выгрузить** в контекстном меню проекта. Это позволит изменить CSPROJ- или VBPROJ-файл в редакторе XML.  
   
- When you've finished editing, choose **Reload**.  
+ Закончив редактирование, выберите **перезагрузить**.  
   
-## <a name="import-the-text-transformation-targets"></a>Import the Text Transformation Targets  
- In the .vbproj or .csproj file, find a line like this:  
+## <a name="import-the-text-transformation-targets"></a>Импорт целевых объектов преобразования текста  
+ В VBPROJ- или CSPROJ-файле найдите строку, аналогичную следующей:  
   
  `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`  
   
- \- or -  
+ \- или -  
   
  `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`  
   
- After that line, insert the Text Templating import:  
+ После этой строки вставьте директиву импорта текстового шаблона:  
   
 ```xml  
 <!-- Optionally make the import portable across VS versions -->  
@@ -100,10 +100,10 @@ ms.lasthandoff: 08/28/2017
   <Import Project="$(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets" />  
 ```  
   
-## <a name="transforming-templates-in-a-build"></a>Transforming templates in a build  
- There are some properties that you can insert into your project file to control the transformation task:  
+## <a name="transforming-templates-in-a-build"></a>Преобразование шаблонов в сборке  
+ Предусмотрено несколько свойств, которые можно вставлять в файл проекта для управления задачей преобразования.  
   
--   Run the Transform task at the start of every build:  
+-   Выполнять задачу преобразования в начале каждой сборки:  
   
     ```xml  
     <PropertyGroup>  
@@ -111,7 +111,7 @@ ms.lasthandoff: 08/28/2017
     </PropertyGroup>  
     ```  
   
--   Overwrite files that are read-only, for example because they are not checked out:  
+-   Перезаписывать файлы, доступные только для чтения (например, потому что они не извлечены):  
   
     ```xml  
     <PropertyGroup>  
@@ -119,7 +119,7 @@ ms.lasthandoff: 08/28/2017
     </PropertyGroup>  
     ```  
   
--   Transform every template every time:  
+-   Каждый раз преобразовывать все шаблоны:  
   
     ```xml  
     <PropertyGroup>  
@@ -127,31 +127,31 @@ ms.lasthandoff: 08/28/2017
     </PropertyGroup>  
     ```  
   
-     By default, the T4 MSBuild task regenerates an output file if it is older than its template file, or any files that are included, or any files that have previously been read by the template or by a directive processor that it uses. Notice that this is a much more powerful dependency test than is used by the Transform All Templates command in Visual Studio, which only compares the dates of the template and output file.  
+     По умолчанию задача MSBuild T4 заново генерирует выходной файл, если он старше своего файла шаблона, любого из включенных файлов или любого файла, который ранее считывался шаблоном или используемым им процессором директив. Обратите внимание, что это намного более мощная проверка зависимостей, чем используемая в команде "Преобразовать все шаблоны" в Visual Studio, которая только сравнивает даты шаблона и выходного файла.  
   
- To perform just the text transformations in your project, invoke the TransformAll task:  
+ Чтобы выполнить только преобразования текста в проекте, вызовите задачу TransformAll:  
   
  `msbuild myProject.csproj /t:TransformAll`  
   
- To transform a specific text template:  
+ Чтобы преобразовать определенный текстовый шаблон:  
   
  `msbuild myProject.csproj /t:Transform /p:TransformFile="Template1.tt"`  
   
- You can use wildcards in TransformFile:  
+ В команде TransformFile можно использовать символы подстановки:  
   
  `msbuild dsl.csproj /t:Transform /p:TransformFile="GeneratedCode\**\*.tt"`  
   
-## <a name="source-control"></a>Source Control  
- There is no specific built-in integration with a source control system. However, you can add your own extensions, for example to check out and check in a generated file.By default, the text transform task avoids overwriting a file that is marked as read- only, and when such a file is encountered, an error is logged in the Visual Studio error list, and the task fails.  
+## <a name="source-control"></a>Система управления версиями  
+ Не существует специальной встроенной интеграции с системой управления версиями. Однако можно добавить собственные расширения, например, для извлечения и возврата созданного файла. По умолчанию задача преобразования текста избегает перезаписи файла, помеченного как доступный только для чтения, и если такой файл встречается, в список ошибок Visual Studio записывается информация об ошибке и выполнение задачи завершается неудачей.  
   
- To specify that read-only files should be overwritten, insert this property:  
+ Чтобы указать, что доступные только для чтения файлы следует перезаписывать, вставьте такое свойство:  
   
  `<OverwriteReadOnlyOuputFiles>true</OverwriteReadOnlyOuputFiles>`  
   
- Unless you customize the postprocessing step, a warning will be logged in the error list when a file is overwritten.  
+ Если не настроить шаг постобработки, при перезаписи файла в список ошибок будет записываться информация об ошибке.  
   
-## <a name="customizing-the-build-process"></a>Customizing the build process  
- Text transformation happens before other tasks in the build process. You can define tasks that are invoked before and after transformation, by setting the properties `$(BeforeTransform)` and `$(AfterTransform)`:  
+## <a name="customizing-the-build-process"></a>Настройка процесса построения  
+ Преобразование текста производится перед выполнением других задач в процессе сборки. Задачи, которые вызываются до и после преобразования, можно задавать, устанавливая свойства `$(BeforeTransform)` и `$(AfterTransform)`.  
   
 ```  
 <PropertyGroup>  
@@ -166,16 +166,16 @@ ms.lasthandoff: 08/28/2017
   </Target>  
 ```  
   
- In `AfterTransform`, you can reference lists of files:  
+ В свойстве `AfterTransform` можно указывать списки файлов:  
   
--   GeneratedFiles - a list of files written by the process. For those files that overwrote existing read-only files, %(GeneratedFiles.ReadOnlyFileOverwritten) will be true. These files can be checked out of source control.  
+-   GeneratedFiles – список файлов, сгенерированных данным процессом. Для тех файлов, которые перезаписывают имеющиеся доступные только для чтения файлы, свойство %(GeneratedFiles.ReadOnlyFileOverwritten) будет иметь значение true. Эти файлы можно извлекать из системы управления версиями.  
   
--   NonGeneratedFiles - a list of read-only files that were not overwritten.  
+-   NonGeneratedFiles – список доступных только для чтения файлов, которые не были перезаписаны.  
   
- For example, you define a task to check out GeneratedFiles.  
+ Например, можно определить задачу для извлечения GeneratedFiles.  
   
-## <a name="outputfilepath-and-outputfilename"></a>OutputFilePath and OutputFileName  
- These properties are used only by MSBuild. They do not affect code generation in Visual Studio. They redirect the generated output file to a different folder or file. The target folder must already exist.  
+## <a name="outputfilepath-and-outputfilename"></a>OutputFilePath и OutputFileName  
+ Эти свойства используются только в MSBuild. Они не влияют на создание кода в Visual Studio. Они перенаправляют созданный выходной файл в другую папку или файл. Целевая папка должна уже существовать.  
   
 ```xml  
 <ItemGroup>  
@@ -187,9 +187,9 @@ ms.lasthandoff: 08/28/2017
 </ItemGroup>  
 ```  
   
- A useful folder to redirect to is `$(IntermediateOutputPath).`  
+ Для перенаправления может быть полезна папка `$(IntermediateOutputPath).`  
   
- If you specify and output filename, it will take precedence over the extension specified in the output directive in the templates.  
+ Если указано имя выходного файла, оно получает приоритет над расширением, определенным в директиве output в шаблонах.  
   
 ```xml  
 <ItemGroup>  
@@ -201,10 +201,10 @@ ms.lasthandoff: 08/28/2017
 </ItemGroup>  
 ```  
   
- Specifying an OutputFileName or OutputFilePath isn't recommended if you are also transforming templates inside VS using Transform All, or running the single file generator. You will end up with different file paths depending on how you triggered the transformation. This can be very confusing.  
+ Указывать свойства OutputFileName или OutputFilePath не рекомендуется, если вы преобразование шаблонов также выполняется в VS с помощью преобразовать все или при запуске генератора единственного файла. В результате путь к файлу будет зависеть от способа запуска преобразования. Это может быть очень неудобно.  
   
-## <a name="adding-reference-and-include-paths"></a>Adding reference and include paths  
- The host has a default set of paths where it searches for assemblies referenced in templates. To add to this set:  
+## <a name="adding-reference-and-include-paths"></a>Добавление путей для ссылок и включаемых файлов  
+ Узел имеет набор путей по умолчанию, по которым производится поиск сборок, указанных в шаблонах. Для добавления в этот набор:  
   
 ```  
 <ItemGroup>  
@@ -213,7 +213,7 @@ ms.lasthandoff: 08/28/2017
 </ItemGroup>  
 ```  
   
- To set the folders that will be searched for include files, provide a semicolon-separated list. Usually you add to the existing folder list.  
+ Чтобы задать папки, в которых будет производиться поиск включаемых файлов, укажите список через точку с запятой. Обычно производится добавление в существующий список папок.  
   
 ```  
 <PropertyGroup>  
@@ -223,8 +223,8 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
   
 ```  
   
-##  <a name="parameters"></a> Pass build context data into the templates  
- You can set parameter values in the project file. For example, you can pass [build](../msbuild/msbuild-properties.md) properties and [environment variables](../msbuild/how-to-use-environment-variables-in-a-build.md):  
+##  <a name="parameters"></a>Передача данных контекста сборки в шаблоны  
+ Можно задать значения параметров в файле проекта. Например, можно передать [построения](../msbuild/msbuild-properties.md) свойства и [переменных среды](../msbuild/how-to-use-environment-variables-in-a-build.md):  
   
 ```xml  
 <ItemGroup>  
@@ -235,7 +235,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </ItemGroup>  
 ```  
   
- In a text template, set `hostspecific` in the template directive. Use the [parameter](../modeling/t4-parameter-directive.md) directive to get values:  
+ В текстовом шаблоне задайте атрибут `hostspecific` в директиве template. Используйте [параметр](../modeling/t4-parameter-directive.md) директиву, чтобы получить значения:  
   
 ```  
 <#@template language="c#" hostspecific="true"#>  
@@ -244,7 +244,7 @@ The project folder is: <#= ProjectFolder #>
   
 ```  
   
- In a directive processor, you can call <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost.ResolveParameterValue%2A>:  
+ В процессоре директив можно вызвать <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost.ResolveParameterValue%2A>:  
   
 ```csharp  
 string value = Host.ResolveParameterValue("-", "-", "parameterName");  
@@ -255,12 +255,12 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 ```  
   
 > [!NOTE]
->  `ResolveParameterValue` gets data from `T4ParameterValues` only when you use MSBuild. When you transform the template using Visual Studio, the parameters will have default values.  
+>  `ResolveParameterValue` получает данные из `T4ParameterValues` только при использовании MSBuild. При преобразовании шаблона с помощью Visual Studio параметры будут иметь значения по умолчанию.  
   
-##  <a name="msbuild"></a> Using project properties in assembly and include directives  
- Visual Studio macros like $(SolutionDir) don't work in MSBuild. You can use project properties instead.  
+##  <a name="msbuild"></a>Использование свойств проекта в сборке и директив #include  
+ Макросы Visual Studio, такие как $ (solutiondir) не работают в MSBuild. Вместо этого можно использовать свойства проекта.  
   
- Edit your .csproj or .vbproj file to define a project property. This example defines a property named `myLibFolder`:  
+ Измените CSPROJ- или VBPROJ-файл для определения свойства проекта. В этом примере определяется свойство с именем `myLibFolder`.  
   
 ```xml  
 <!-- Define a project property, myLibFolder: -->  
@@ -277,36 +277,36 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
   
 ```  
   
- Now you can use your project property in assembly and include directives:  
+ Теперь можно использовать ваше свойство проекта в директивах assembly и include:  
   
 ```  
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>  
 <#@ include file="$(myLibFolder)\MyIncludeFile.t4" #>  
 ```  
   
- These directives get values from T4parameterValues both in MSBuild and in Visual Studio hosts.  
+ Эти директивы получают значения из T4parameterValues как в узлах MSBuild, так и в узлах Visual Studio.  
   
-## <a name="q--a"></a>Q & A  
- **Why would I want to transform templates in the build server? I already transformed templates in Visual Studio before I checked in my code.**  
+## <a name="q--a"></a>Вопросы и ответы  
+ **Зачем мне нужно преобразовывать шаблоны на сервере сборки? Я уже преобразовал шаблоны в Visual Studio до возврата своего кода.**  
   
- If you update an included file, or another file read by the template, Visual Studio doesn't transform the file automatically. Transforming templates as part of the build makes sure that everything's up to date.  
+ При обновлении включенного файла или другой файл, считываемого шаблоном, Visual Studio не преобразует файл автоматически. Преобразование шаблонов в процессе сборки гарантирует обновление всех актуален.  
   
- **What other options are there for transforming text templates?**  
+ **Что имеют ли другие варианты преобразования текстовых шаблонов?**  
   
--   The [TextTransform utility](../modeling/generating-files-with-the-texttransform-utility.md) can be used in command scripts. In most cases, it's easier to use MSBuild.  
+-   [TextTransform-служебная программа](../modeling/generating-files-with-the-texttransform-utility.md) может использоваться в скриптах команда. В большинстве случаев удобнее в использовании MSBuild.  
   
--   [Invoking Text Transformation in a VS Extension](../modeling/invoking-text-transformation-in-a-vs-extension.md)  
+-   [Вызов преобразования текста в расширении VS](../modeling/invoking-text-transformation-in-a-vs-extension.md)  
   
--   [Design-time text templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md) are transformed by Visual Studio.  
+-   [Во время разработки текстовые шаблоны](../modeling/design-time-code-generation-by-using-t4-text-templates.md) преобразуются в Visual Studio.  
   
--   [Run time text templates](../modeling/run-time-text-generation-with-t4-text-templates.md) are transformed at run time in your application.  
+-   [Текстовые шаблоны времени выполнения](../modeling/run-time-text-generation-with-t4-text-templates.md) преобразуется во время выполнения в приложении.  
   
-## <a name="read-more"></a>Read more  
- There is good guidance in the T4 MSbuild template, $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets  
+## <a name="read-more"></a>Дополнительные сведения  
+ Хорошее руководство содержится в шаблоне MSbuild T4, $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets  
   
- [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md)  
+ [Написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md)  
   
- [Oleg Sych: Understanding T4:MSBuild Integration](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
+ [Oleg Sych: Основные сведения об интеграции T4:MSBuild](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

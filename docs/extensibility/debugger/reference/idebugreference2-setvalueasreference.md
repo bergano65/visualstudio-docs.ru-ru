@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::SetValueAsReference | Microsoft Docs
+title: "IDebugReference2::SetValueAsReference | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: e295ad3fd09a8b5dbaa17cdd6f10f3cb8a9ff1b9
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
-Sets the value of a reference from another reference. Reserved for future use.  
+Задает значение ссылки из другой ссылки. Зарезервировано для будущего использования.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
 HRESULT SetValueAsReference (   
@@ -60,21 +60,21 @@ int SetValueAsReference (
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Параметры  
  `rgpArgs`  
- [in] An array of [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objects used to determine how to set the reference value.  
+ [in] Массив [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) позволяет определить, как присвоить значение ссылки на объекты.  
   
  `dwArgCount`  
- [in] The number of references in the array.  
+ [in] Количество ссылок в массиве.  
   
  `pValue`  
- [in] An [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) object from which to set the property value.  
+ [in] [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) объект, из которого требуется задать значение свойства.  
   
  `dwTimeout`  
- [in] Maximum time, in milliseconds, to wait before returning from this method. Use `INFINITE` to wait indefinitely.  
+ [in] Максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.  
   
-## <a name="return-value"></a>Return Value  
- Always returns `E_NOTIMPL`.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Всегда возвращает значение `E_NOTIMPL`.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>См. также  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

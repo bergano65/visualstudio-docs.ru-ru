@@ -1,5 +1,5 @@
 ---
-title: Adding a Toolbar to a Tool Window | Microsoft Docs
+title: "Добавление панели инструментов в окне инструментов | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -33,33 +33,33 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: b094a04a9d2e273418edaa7cc4bc2d36f89e9d29
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="adding-a-toolbar-to-a-tool-window"></a>Adding a Toolbar to a Tool Window
-This walkthrough shows how to add a toolbar to a tool window.  
+# <a name="adding-a-toolbar-to-a-tool-window"></a>Добавление панели инструментов в окне инструментов
+В этом пошаговом руководстве показано, как добавить панель инструментов в окно инструментов.  
   
- A toolbar is a horizontal or vertical strip that contains buttons bound to commands. The length of a toolbar in a tool window is always the same as the width or height of the tool window, depending on where the toolbar is docked.  
+ Панель инструментов представляет содержит кнопки, привязанный к командам полосу горизонтальной или вертикальной. Длина панели инструментов в окне инструментов всегда является то же, что ширина или высота окна инструментов в зависимости от того, место закрепления панели инструментов.  
   
- Unlike toolbars in the IDE, a toolbar in a tool window must be docked and cannot be moved or customized. If the VSPackage is written in umanaged code, the toolbar can be docked on any edge.  
+ В отличие от панели инструментов в Интегрированной среде разработки панели инструментов в окне инструментов должны закрепляться и нельзя переместить или настроить. Если в коде umanaged написан VSPackage, панели инструментов можно закрепить на любую границу.  
   
- For more information about how to add a toolbar, see [Adding a Toolbar](../extensibility/adding-a-toolbar.md).  
+ Дополнительные сведения о том, как добавить панель инструментов см. в разделе [Добавление панели инструментов](../extensibility/adding-a-toolbar.md).  
   
-## <a name="prerequisites"></a>Prerequisites  
- Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Предварительные требования  
+ Начиная с Visual Studio 2015, не установить пакет SDK для Visual Studio из центра загрузки Майкрософт. Он включен в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-toolbar-for-a-tool-window"></a>Creating a Toolbar for a Tool Window  
+## <a name="creating-a-toolbar-for-a-tool-window"></a>Создание панели инструментов для окна инструментов  
   
-1.  Create a VSIX project named `TWToolbar` that has both a menu command named **TWTestCommand** and a tool window named **TestToolWindow**. For more information, see [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md) and [Creating an Extension with a Tool Window](../extensibility/creating-an-extension-with-a-tool-window.md). You need to add the command item template before adding the tool window template.  
+1.  Создайте проект VSIX с именем `TWToolbar` с обе команды меню с именем **TWTestCommand** и окно инструментов с именем **TestToolWindow**. Дополнительные сведения см. в разделе [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md) и [создания расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md). Необходимо добавить шаблон элемента команды перед добавлением шаблон окно инструмента.  
   
-2.  In TWTestCommandPackage.vsct, look for the Symbols section. In the GuidSymbol node named guidTWTestCommandPackageCmdSet declare a toolbar and a toolbar group, as follows.  
+2.  В TWTestCommandPackage.vsct найдите раздел символы. В узле GuidSymbol с именем guidTWTestCommandPackageCmdSet объявите панель инструментов и панель инструментов группы, следующим образом.  
   
     ```xml  
     <IDSymbol name="TWToolbar" value="0x1000" />  
     <IDSymbol name="TWToolbarGroup" value="0x1050" />  
     ```  
   
-3.  At the top of the `Commands` section, create a `Menus` section. Add a `Menu` element to define the toolbar.  
+3.  В верхней части `Commands` создайте `Menus` раздела. Добавить `Menu` для определения панели инструментов.  
   
     ```xml  
     <Menus>  
@@ -73,9 +73,9 @@ This walkthrough shows how to add a toolbar to a tool window.
     </Menus>  
     ```  
   
-     Toolbars cannot be nested like submenus. Therefore, you do not have to assign a parent. Also, you do not have to set a priority, because the user can move toolbars. Typically, initial placement of a toolbar is defined programmatically, but subsequent changes by the user are persisted.  
+     Панели инструментов не могут располагаться как подменю. Таким образом не нужно назначить родительский элемент. Кроме того у вас установить приоритет, поскольку пользователь может перемещать панели инструментов. Как правило исходное размещение панели инструментов определяется программным путем, но последующие изменения пользователем, сохраняются.  
   
-4.  In the Groups section, define a group to contain the commands for the toolbar.  
+4.  В разделе "группы" определите группу для хранения команд для панели инструментов.  
   
     ```xml  
   
@@ -84,7 +84,7 @@ This walkthrough shows how to add a toolbar to a tool window.
     </Group>  
     ```  
   
-5.  In the Buttons section, change the parent of the existing Button element to the toolbar group so that the toolbar will be displayed.  
+5.  В разделе кнопки сменить родительскую существующий элемент Button группа панели инструментов, чтобы будет отображаться на панели инструментов.  
   
     ```xml  
     <Button guid="guidTWTestCommandPackageCmdSet" id="TWTestCommandId" priority="0x0100" type="Button">  
@@ -96,40 +96,40 @@ This walkthrough shows how to add a toolbar to a tool window.
     </Button>  
     ```  
   
-     By default, if a toolbar has no commands, it does not appear.  
+     По умолчанию если на панели инструментов нет команд, он не отображается.  
   
-     Because the new toolbar is not automatically added to the tool window, the toolbar must be added explicitly. This is discussed in the next section.  
+     Поскольку новая панель инструментов не добавляется автоматически в окна инструментов, панели инструментов должны добавляться явным образом. Этот метод будет рассмотрен в следующем разделе.  
   
-## <a name="adding-the-toolbar-to-the-tool-window"></a>Adding the Toolbar to the Tool Window  
+## <a name="adding-the-toolbar-to-the-tool-window"></a>Добавление панели инструментов окна инструментов  
   
-1.  In TWTestCommandPackageGuids.cs add the following lines.  
+1.  TWTestCommandPackageGuids.cs добавьте следующие строки.  
   
     ```csharp  
     public const string guidTWTestCommandPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file  
     public const int TWToolbar = 0x1000;  
     ```  
   
-2.  In TestToolWindow.cs add the following using statement.  
+2.  Добавьте следующие строки в TestToolWindow.cs с помощью инструкции.  
   
     ```csharp  
     using System.ComponentModel.Design;  
     ```  
   
-3.  In the TestToolWindow constructor add the following line.  
+3.  В конструкторе TestToolWindow добавьте следующую строку.  
   
     ```csharp  
     this.ToolBar = new CommandID(new Guid(TWTestCommandPackageGuids.guidTWTestCommandPackageCmdSet), TWTestCommandPackageGuids.TWToolbar);  
     ```  
   
-## <a name="testing-the-toolbar-in-the-tool-window"></a>Testing the Toolbar in the Tool Window  
+## <a name="testing-the-toolbar-in-the-tool-window"></a>Тестирование панели инструментов в окне инструментов  
   
-1.  Build the project and start debugging. The Visual Studio experimental instance should appear.  
+1.  Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр Visual Studio.  
   
-2.  On the **View / Other Windows** menu, click **Test ToolWindow** to display the tool window.  
+2.  На **представления и другие окна** меню, нажмите кнопку **окно инструментов тестирования** для отображения в окне инструментов.  
   
-     You should see a toolbar (it looks like the default icon) at the top left of the tool window, just below the title.  
+     Вы увидите, что инструментов (он выглядит как значок по умолчанию) в верхней левой части окна инструментов под заголовок.  
   
-3.  On the toolbar, click the icon to display the message **TWTestCommandPackage Inside TWToolbar.TWTestCommand.MenuItemCallback()**.  
+3.  На панели инструментов щелкните значок для отображения сообщений о **TWTestCommandPackage внутри TWToolbar.TWTestCommand.MenuItemCallback()**.  
   
-## <a name="see-also"></a>See Also  
- [Adding a Toolbar](../extensibility/adding-a-toolbar.md)
+## <a name="see-also"></a>См. также  
+ [Добавление панели инструментов](../extensibility/adding-a-toolbar.md)

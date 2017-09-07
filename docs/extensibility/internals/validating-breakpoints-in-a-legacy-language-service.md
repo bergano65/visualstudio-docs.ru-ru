@@ -1,5 +1,5 @@
 ---
-title: Validating Breakpoints in a Legacy Language Service | Microsoft Docs
+title: "Проверка точек останова в языковую службу прежних версий | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -33,28 +33,28 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 2a87c22948e710a3b95ee7f79b31626794dc7708
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="validating-breakpoints-in-a-legacy-language-service"></a>Validating Breakpoints in a Legacy Language Service
-A breakpoint indicates that program execution should stop at a particular point while it is being run in a debugger. A user can place a breakpoint on any line in the source file, since the editor has no knowledge of what constitutes a valid location for a breakpoint. When the debugger is launched, all of the marked breakpoints (called pending breakpoints) are bound to the appropriate location in the running program. At the same time the breakpoints are validated to ensure that they mark valid code  locations. For example, a breakpoint on a comment is not valid, because there is no code at that location in the source code. The debugger disables invalid breakpoints.  
+# <a name="validating-breakpoints-in-a-legacy-language-service"></a>Проверка точек останова в языковую службу прежних версий
+Точка останова указывает, что остановки выполнения программы в определенный момент во время выполнения в отладчике. Пользователя можно установить точку останова в любой строке в исходном файле, поскольку редактор не имеет сведений о том, что такое является допустимым расположением точки останова. При запуске отладчика все помеченные точки останова (называемые ожидающих точек останова) привязаны соответствующее место в выполняемой программы. В то же время, которые проверяются точки останова, чтобы убедиться, что они указывают допустимый код расположения. Например точки останова на комментарий является недопустимым, поскольку нет кода в этом расположении в исходном коде. Отладчик отключает недопустимые точки останова.  
   
- Since the language service knows about the source code being displayed, it can validate breakpoints before the debugger is launched. You can override the <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> method to return a span specifying a valid location for a breakpoint. The breakpoint location is still validated when the debugger is launched, but the user is notified of invalid breakpoints without waiting for the debugger to load.  
+ Поскольку служба языка знает об отображаемых исходный код, он может проверять точки останова перед запуском отладчика. Можно переопределить <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> метод для возврата диапазон, указав допустимое расположение для точки останова. Положение точки останова по-прежнему проверяется при запуске отладчика, но пользователь получает уведомление недопустимый точек останова, не ожидая отладчика для загрузки.  
   
-## <a name="implementing-support-for-validating-breakpoints"></a>Implementing Support for Validating Breakpoints  
+## <a name="implementing-support-for-validating-breakpoints"></a>Реализация поддержки для проверки точки останова  
   
--   The <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> method is given the position of the breakpoint. Your implementation must decide whether or not the location is valid, and indicate this by returning a text span that identifies the code associated with the line position the breakpoint.  
+-   <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Метод получает позицию точки останова. Такой реализации необходимо решить ли расположение является допустимым и указать это, возвращая фрагмент текста, идентифицирующее код, связанный с номер строки точки останова.  
   
--   Return <xref:Microsoft.VisualStudio.VSConstants.S_OK> if the location is valid, or <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> if it is not valid.  
+-   Вернуть <xref:Microsoft.VisualStudio.VSConstants.S_OK> Если расположение является допустимым, или <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> , если оно является недопустимым.  
   
--   If the breakpoint is valid the text span is highlighted along with the breakpoint.  
+-   Если точка останова задана в допустимый диапазон текста выделяются точки останова.  
   
--   If the breakpoint is invalid, an error message appears in the status bar.  
+-   Если точка останова является недопустимым, появится сообщение об ошибке в строке состояния.  
   
-### <a name="example"></a>Example  
- This example shows an implementation of the <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> method that calls the parser to obtain the span of code (if any) at the specified location.  
+### <a name="example"></a>Пример  
+ В этом примере показана реализация <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> метод, который вызывает средство синтаксического анализа, чтобы получить фрагмент кода (если таковые имеются) в указанном месте.  
   
- This example assumes that you have added a `GetCodeSpan` method to the <xref:Microsoft.VisualStudio.Package.AuthoringSink> class that validates the text span and returns `true` if it is a valid breakpoint location.  
+ В этом примере предполагается, что вы добавили `GetCodeSpan` метод <xref:Microsoft.VisualStudio.Package.AuthoringSink> класс, который проверяет диапазон текста и возвращает `true` Если это расположение действительной точке останова.  
   
 ```csharp  
 using Microsoft VisualStudio;  
@@ -116,5 +116,5 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
- [Legacy Language Service Features](../../extensibility/internals/legacy-language-service-features1.md)
+## <a name="see-also"></a>См. также  
+ [Возможности службы прежних версий языка](../../extensibility/internals/legacy-language-service-features1.md)

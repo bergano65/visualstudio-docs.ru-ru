@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringChars | Microsoft Docs
+title: "IDebugProperty3::GetStringChars | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: f84c744eef8dab863ec9a91aec621764dfa3c266
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
-Retrieves the string associated with this property and stores it in a user-supplied buffer.  
+Извлекает строку, связанную с этим свойством и сохраняет его в буфер, предоставленный пользователем.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
 HRESULT GetStringChars(  
@@ -58,28 +58,28 @@ int GetStringChars(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Параметры  
  `buflen`  
- [in] Maximum number of characters the user-supplied buffer can hold.  
+ [in] Максимальное число символов, которые пользователь ввел может содержаться в буфере.  
   
  `rgString`  
- [out] Returns the string.  
+ [out] Возвращает строку.  
   
- [C++ only], `rgString` is a pointer to a buffer that receives the Unicode characters of the string. This buffer must be at least `buflen` characters (not bytes) in size.  
+ [Только в C++], `rgString` указатель на буфер, получающий строки символы Юникода. Этот буфер должен быть по крайней мере `buflen` символов (не байтов).  
   
  `pceltFetched`  
- [out] Where the number of characters actually stored in the buffer is returned. (Can be `NULL` in C++.)  
+ [out] Где возвращается число символов, фактически хранятся в буфере. (Может быть `NULL` в C++.)  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise returns an error code.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- In C++, care must be taken to insure that the buffer is at least `buflen` Unicode characters long. Note that a Unicode character is 2 bytes long.  
+## <a name="remarks"></a>Примечания  
+ В C++, необходимо соблюдать осторожность, чтобы убедиться, что размер буфера составляет не менее `buflen` символов Юникода. Обратите внимание, что символ Юникода длину 2 байта.  
   
 > [!NOTE]
->  In C++, the returned string does not include a terminating null character. If given, `pceltFetched` will specify the number of characters in the string.  
+>  В C++ возвращаемая строка отсутствует завершающий символ null. Если задано, `pceltFetched` указывается число символов в строке.  
   
-## <a name="example"></a>Example  
+## <a name="example"></a>Пример  
  
 ```cpp  
 CStringW RetrievePropertyString(IDebugProperty2 *pPropInfo)  
@@ -102,7 +102,7 @@ CStringW RetrievePropertyString(IDebugProperty2 *pPropInfo)
 }
 ```    
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>См. также  
  [GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

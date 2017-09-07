@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetConnectionProtocol | Microsoft Docs
+title: "IDebugCoreServer3::GetConnectionProtocol | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 8901f9fff01ecdfe21e3731df8b2d155fe250ac2
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # IDebugCoreServer3::GetConnectionProtocol
-Returns a value indicating the protocol that is being used to communicate between the server and the debug package.  
+Возвращает значение, указывающее протокол, используемый для обмена данными между сервером и отладочный пакет.  
   
-## Syntax  
+## Синтаксис  
   
 ```cpp  
 HRESULT GetConnectionProtocol(  
@@ -54,13 +54,13 @@ int GetConnectionProtocol(
 );  
 ```  
   
-#### Parameters  
+#### Параметры  
  `pProtocol`  
- [out] Returns one of the values from the [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md) enumeration.  
+ [out] Возвращает одно из значений из [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md) перечисления.  
   
-## Return Value  
- If successful, returns `S_OK`; otherwise, returns error code.  
+## Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
-## See Also  
+## См. также  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   
  [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md)

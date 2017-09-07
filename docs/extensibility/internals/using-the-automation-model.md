@@ -1,5 +1,5 @@
 ---
-title: Using the Automation Model | Microsoft Docs
+title: "С помощью модели автоматизации | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,14 +32,14 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 82a9c2068bdd3e234bcc53ffa870ca289289d690
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="using-the-automation-model"></a>Using the Automation Model
-After you have connected your VSPackage to automation, you can obtain the properties and methods by calling the <xref:EnvDTE.DTEClass.GetObject%2A> method on the <xref:EnvDTE._DTE> object, passing a string representing the object you wish to retrieve.  
+# <a name="using-the-automation-model"></a>С помощью модели автоматизации
+После подключения к автоматизации VSPackage, можно получить свойства и методы, вызвав <xref:EnvDTE.DTEClass.GetObject%2A> метод <xref:EnvDTE._DTE> объекта, передавая строка, представляющая объект, который нужно получить.  
   
-## <a name="obtaining-project-objects"></a>Obtaining Project Objects  
- The following are two code examples that show how an automation consumer obtains the project automation objects. For information about how to get the DTE object, see [How to: Get References to the DTE and DTE2 Objects](http://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4).  
+## <a name="obtaining-project-objects"></a>Получение объектов проекта  
+ Ниже приведены два примера кода, которые показывают, как потребитель автоматизации получает проекта объекты автоматизации. Сведения о том, как получить объект DTE см. в разделе [как: получение ссылки на DTE и DTE2 объектов](http://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4).  
   
 ```vb  
 Sub DoAutomation()  
@@ -61,9 +61,9 @@ void DoAutomation(void)
   
 ```  
   
- At this point, you can use the standard project objects that are part of a specific VSPackage to move down the hierarchy model.  
+ На этом этапе можно использовать объекты для стандартного проекта, которые являются частью конкретных VSPackage для перемещения вниз в иерархии модели.  
   
- The following code example shows how to get a custom object that is a property of a custom project type.:  
+ В следующем примере кода показано, как получить пользовательский объект, который является свойством пользовательского типа проектов.:  
   
 ```vb  
 Dim MyPrj As Project  
@@ -76,7 +76,7 @@ objMyObject = MyPrj.Object 'You call .Object to get to special Project
 objMyObject.MySpecialMethodOrProperty  
 ```  
   
- The following code lists the names of all of the properties in the [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environment **General** option on the **Tools** menu:  
+ В следующем коде перечислены имена всех свойств в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] среды **Общие** параметр **средства** меню:  
   
 ```vb  
 dim objDTE  
@@ -89,5 +89,5 @@ Next
   
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>См. также  
  <xref:EnvDTE.DTEClass.GetObject%2A>

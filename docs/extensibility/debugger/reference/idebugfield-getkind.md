@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetKind | Microsoft Docs
+title: "IDebugField::GetKind | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: a4d5f5f96ee4d2121ed4fa8f7fc6f4504a418575
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
-This method gets the kind of field.  
+Этот метод возвращает тип поля.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
 HRESULT GetKind(   
@@ -54,13 +54,13 @@ int GetKind(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Параметры  
  `pdwKind`  
- [out] Returns the kind of field as a combination of [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) constants.  
+ [out] Возвращает тип поля, как сочетание [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) константы.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>См. также  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)

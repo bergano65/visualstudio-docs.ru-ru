@@ -1,5 +1,5 @@
 ---
-title: SccGetCommandOptions Function | Microsoft Docs
+title: "Функция SccGetCommandOptions | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: df497de98463d728b5cd040415924a40fb6717b8
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions Function
-This function prompts the user for advanced options for a given command.  
+# <a name="sccgetcommandoptions-function"></a>Функция SccGetCommandOptions
+Эта функция пользователю для настройки дополнительных параметров для данной команды.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
 SCCRTN SccGetCommandOptions(  
@@ -51,48 +51,48 @@ SCCRTN SccGetCommandOptions(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Параметры  
  pvContext  
- [in] The source control plug-in context structure.  
+ [in] Исходная структура подключаемого модуля контекста элемента управления.  
   
  hWnd  
- [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
+ [in] Дескриптор окна интегрированной среды разработки, подключаемый модуль системы управления версиями можно использовать в качестве родительского для все диалоговые окна, которые он предоставляет.  
   
  iCommand  
- [in] The command for which advanced options are requested (see [Command Code](../extensibility/command-code-enumerator.md) for possible values).  
+ [in] Команда, для которого запрашиваются Дополнительные параметры (в разделе [код команды](../extensibility/command-code-enumerator.md) возможные значения).  
   
  ppvOptions  
- [in] The option structure (can also be `NULL`).  
+ [in] Структура параметров (также может быть `NULL`).  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## <a name="return-value"></a>Возвращаемое значение  
+ Реализация подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Value|Description|  
+|Значение|Описание|  
 |-----------|-----------------|  
-|SCC_OK|Success.|  
-|SCC_I_ADV_SUPPORT|The source control plug-in supports advanced options for the command.|  
-|SCC_I_OPERATIONCANCELED|The user cancelled the source control plug-in's **Options** dialog box.|  
-|SCC_E_OPTNOTSUPPORTED|The source control plug-in does not support this operation.|  
-|SCC_E_ISCHECKEDOUT|Cannot perform this operation on a file that is currently checked out.|  
-|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
-|SCC_E_NONSPECIFICERROR|Nonspecific failure.|  
+|SCC_OK|Выполнено.|  
+|SCC_I_ADV_SUPPORT|Подключаемый модуль системы управления версиями поддерживает дополнительные параметры для команды.|  
+|SCC_I_OPERATIONCANCELED|Пользователь отменил соответствующей источника управления подключаемые в **параметры** диалоговое окно.|  
+|SCC_E_OPTNOTSUPPORTED|Подключаемый модуль системы управления версиями не поддерживает эту операцию.|  
+|SCC_E_ISCHECKEDOUT|Невозможно выполнить эту операцию с файлом, который в данный момент извлечен.|  
+|SCC_E_ACCESSFAILURE|Возникла проблема с доступом к системе управления версиями, возможно, из-за проблемы с сетью или конфликтов. Рекомендуется повторить операцию.|  
+|SCC_E_NONSPECIFICERROR|Неспецифичную сбоя.|  
   
-## <a name="remarks"></a>Remarks  
- The IDE calls this function for the first time with `ppvOptions`=`NULL` to determine if the source control plug-in supports the advanced options feature for the specified command. If the plug-in does support the feature for that command, the IDE calls this function again when the user requests advanced options (usually implemented as an **Advanced** button in a dialog box) and supplies a non-NULL pointer for `ppvOptions` that points to a `NULL` pointer. The plug-in stores any advanced options specified by the user in a private structure and returns a pointer to that structure in `ppvOptions`. This structure is then passed to all other Source Control Plug-in API functions that need to know about it, including subsequent calls to the `SccGetCommandOptions` function.  
+## <a name="remarks"></a>Примечания  
+ IDE вызывает эту функцию в первый раз с `ppvOptions` = `NULL` для определения, если подключаемый модуль системы управления версиями поддерживает функцию Дополнительные параметры для заданной команды. Если подключаемый модуль поддерживает компонент, для этой команды, интегрированной среды разработки вызывает эту функцию снова при запросе дополнительных параметров (обычно реализуются как **Дополнительно** кнопку в диалоговом окне) и предоставляет НЕНУЛЕВОЙ указатель для `ppvOptions` , указывающий `NULL` указателя. Подключаемый модуль сохраняет любые дополнительные параметры, заданные пользователем в Закрытая структура и возвращает указатель на этой структуре в `ppvOptions`. Эта структура передается ко всем функциям API подключаемых модулей исходного элемента управления, необходимо знать о нем, включая последующие вызовы `SccGetCommandOptions` функции.  
   
- An example may help clarify this situation.  
+ Пример может прояснить этой ситуации.  
   
- A user chooses the **Get** command and the IDE displays a **Get** dialog box. The IDE calls the `SccGetCommandOptions` function with `iCommand` set to `SCC_COMMAND_GET` and `ppvOptions` set to `NULL`. This is interpreted by the source control plug-in as the question, "Do you have any advanced options for this command?" If the plug-in returns `SCC_I_ADV_SUPPORT`, the IDE displays an **Advanced** button in its **Get** dialog box.  
+ Пользователь выбирает **получить** команда и интегрированной среды разработки отображаются **получить** диалоговое окно. Вызовы IDE `SccGetCommandOptions` функционировать с `iCommand` значение `SCC_COMMAND_GET` и `ppvOptions` значение `NULL`. Это значение интерпретируется системой управления версиями, подключаемый модуль в виде вопроса, «У вас есть любые дополнительные параметры для этой команды?» Если подключаемый модуль возвращает `SCC_I_ADV_SUPPORT`, интегрированная среда разработки отображает **Дополнительно** кнопку в его **получить** диалоговое окно.  
   
- The first time the user clicks the **Advanced** button, the IDE again calls the `SccGetCommandOptions` function, this time with a non-`NULL``ppvOptions` that points to a `NULL` pointer. The plug-in displays its own **Get Options** dialog box, prompts the user for information, puts that information into its own structure, and returns a pointer to that structure in `ppvOptions`.  
+ При первом щелчке **Дополнительно** кнопки, интегрированной среды разработки снова вызывает `SccGetCommandOptions` функции этого времени, отличным от`NULL``ppvOptions` , указывающий `NULL` указателя. Подключаемый модуль отображает собственную **параметры получения** диалоговом запросит у пользователя сведения помещает эти сведения в отдельную структуру и возвращает указатель на этой структуре в `ppvOptions`.  
   
- If the user clicks **Advanced** again in the same dialog box, the IDE calls the `SccGetCommandOptions` function again without changing `ppvOptions`, so that the structure is passed back to the plug-in. This enables the plug-in to reinitialize its dialog box to the values that the user had previously set. The plug-in modifies the structure in place before returning.  
+ При нажатии кнопки **Дополнительно** снова вызывает интегрированной среды разработки в диалоговом окне же `SccGetCommandOptions` функции еще раз без изменения `ppvOptions`, после чего структуры передается обратно подключаемого модуля. Это позволяет подключаемого модуля, чтобы повторно инициализировать диалоговое окно его значениями, которые пользователь ранее было задано. Подключаемый модуль изменяет структуру на месте перед возвратом.  
   
- Finally, when the user clicks **OK** in the IDE's **Get** dialog box, the IDE calls the [SccGet](../extensibility/sccget-function.md), passing the structure returned in `ppvOptions` that contains the advanced options.  
+ Наконец, когда пользователь щелкает **ОК** в среде разработки **получить** диалоговое окно, вызовы интегрированной среды разработки [SccGet](../extensibility/sccget-function.md), передачи структуры, возвращаемых в `ppvOptions` , содержащий Дополнительные параметры.  
   
 > [!NOTE]
->  The command `SCC_COMMAND_OPTIONS` is used when the IDE displays an **Options** dialog box that lets the user set preferences that control how the integration works. If the source control plug-in wants to supply its own preferences dialog box, it can display it from an **Advanced** button in the IDE's preferences dialog box. The plug-in is solely responsible for getting and persisting this information; the IDE does not use it or modify it.  
+>  Команда `SCC_COMMAND_OPTIONS` используется, когда интегрированная среда разработки отображает **параметры** диалоговым окном, которое позволяет пользователю задать установки, которые управляют работой интеграции. Если подключаемый модуль системы управления версиями хочет предоставить собственное диалоговое окно настроек, он может отображать из **Дополнительно** кнопку в диалоговом окне Настройка интегрированной среды разработки. Подключаемый модуль не отвечает за получение и сохранять эти сведения; IDE не использовать его или изменить его.  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
- [Command Code](../extensibility/command-code-enumerator.md)
+## <a name="see-also"></a>См. также  
+ [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)   
+ [Код команды](../extensibility/command-code-enumerator.md)

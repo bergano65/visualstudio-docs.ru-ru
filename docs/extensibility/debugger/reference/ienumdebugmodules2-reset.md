@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugModules2::Reset | Microsoft Docs
+title: "IEnumDebugModules2::Reset | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 689421f4b3b8ba7259643737479b60f7afcfdcb7
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="ienumdebugmodules2reset"></a>IEnumDebugModules2::Reset
-Resets the enumeration to the first element.  
+Сбрасывает перечисления на первый элемент.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
 HRESULT Reset(  
@@ -52,11 +52,11 @@ HRESULT Reset(
 int Reset();  
 ```  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- After this method is called, the next call to the [Next](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) method returns the first element of the enumeration.  
+## <a name="remarks"></a>Примечания  
+ После вызова этого метода, при следующем вызове [Далее](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) метод возвращает первый элемент перечисления.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>См. также  
  [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

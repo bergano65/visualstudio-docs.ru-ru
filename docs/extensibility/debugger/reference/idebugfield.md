@@ -1,5 +1,5 @@
 ---
-title: IDebugField | Microsoft Docs
+title: "IDebugField | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,43 +34,43 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 1e978ece2ecf56735dc538324b5c148f7f85b9bb
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugfield"></a>IDebugField
-This interface represents a field, that is, a description of a symbol or type.  
+Этот интерфейс представляет поле, то есть описание символа или типа.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IDebugField : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes for Implementers  
- A symbol provider implements this interface as the base class for all fields.  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
+ Символ поставщик реализует этот интерфейс как базовый класс для всех полей.  
   
-## <a name="notes-for-callers"></a>Notes for Callers  
- This interface is the base class for all fields. Based on the return value of [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md), this interface may return more specialized interfaces by using [QueryInterface](/cpp/atl/queryinterface). In addition, many interfaces return `IDebugField` objects from various methods.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Этот интерфейс является базовым классом для всех полей. На основе возвращаемого значения [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md), этот интерфейс может возвращать более специализированных интерфейсов с помощью [QueryInterface](/cpp/atl/queryinterface). Кроме того, многие интерфейсы возвращают `IDebugField` объекты из различных методов.  
   
-## <a name="methods-in-vtable-order"></a>Methods in Vtable Order  
- The following table shows the methods of `IDebugField`.  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
+ В следующей таблице показаны методы `IDebugField`.  
   
-|Method|Description|  
+|Метод|Описание|  
 |------------|-----------------|  
-|[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)|Gets displayable information about the symbol or type.|  
-|[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)|Gets the kind of field.|  
-|[GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)|Gets the type of field.|  
-|[GetContainer](../../../extensibility/debugger/reference/idebugfield-getcontainer.md)|Gets the container of the field.|  
-|[GetAddress](../../../extensibility/debugger/reference/idebugfield-getaddress.md)|Gets the address of the field.|  
-|[GetSize](../../../extensibility/debugger/reference/idebugfield-getsize.md)|Gets the size of a field, in bytes.|  
-|[GetExtendedInfo](../../../extensibility/debugger/reference/idebugfield-getextendedinfo.md)|Gets extended information about a field.|  
-|[Equal](../../../extensibility/debugger/reference/idebugfield-equal.md)|Compares two fields.|  
-|[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|Gets type-independent information about the symbol or type.|  
+|[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)|Возвращает отображаемую информацию о символов или типа.|  
+|[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)|Возвращает тип поля.|  
+|[GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)|Возвращает тип поля.|  
+|[GetContainer](../../../extensibility/debugger/reference/idebugfield-getcontainer.md)|Получает контейнер поля.|  
+|[GetAddress](../../../extensibility/debugger/reference/idebugfield-getaddress.md)|Получает адрес поля.|  
+|[GetSize](../../../extensibility/debugger/reference/idebugfield-getsize.md)|Получает размер поля в байтах.|  
+|[GetExtendedInfo](../../../extensibility/debugger/reference/idebugfield-getextendedinfo.md)|Возвращает расширенные сведения о поле.|  
+|[Равно](../../../extensibility/debugger/reference/idebugfield-equal.md)|Сравнивает два поля.|  
+|[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|Получает сведения зависят от типов о символа или типа.|  
   
-## <a name="remarks"></a>Remarks  
- A type is equivalent to a C language `typedef`.  
+## <a name="remarks"></a>Примечания  
+ Тип эквивалентен языка C `typedef`.  
   
- In the following C++ language example, `weather` is a class type, and `sunny` and `stormy` are symbols:  
+ В следующем примере язык C++ `weather` является типом класса и `sunny` и `stormy` являются символами:  
   
 ```cpp  
 class weather;  
@@ -78,14 +78,14 @@ weather sunny;
 weather stormy;  
 ```  
   
- Whether a field represents a symbol or type can be determined by calling [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) and examining the [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) result. If the `FIELD_KIND_TYPE` bit is set, the field is a type, and if the `FIELD_KIND_SYMBOL` bit is set, it is a symbol.  
+ Можно определить тип путем вызова ли поле представляет символ [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) и проверив [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) результат. Если `FIELD_KIND_TYPE` установлен бит, поле имеет тип и если `FIELD_KIND_SYMBOL` установлен бит, это символ.  
   
-## <a name="requirements"></a>Requirements  
- Header: sh.h  
+## <a name="requirements"></a>Требования  
+ Заголовок: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+## <a name="see-also"></a>См. также  
+ [Интерфейсы поставщика символов](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

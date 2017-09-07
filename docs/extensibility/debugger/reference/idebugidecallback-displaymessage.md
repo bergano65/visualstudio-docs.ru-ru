@@ -1,5 +1,5 @@
 ---
-title: IDebugIDECallback::DisplayMessage | Microsoft Docs
+title: "IDebugIDECallback::DisplayMessage | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,13 +32,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 7b3f7e5fde160bc9d1e5ece61b810090c5dd7d9b
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugidecallbackdisplaymessage"></a>IDebugIDECallback::DisplayMessage
-Sends the specified message string to the debugger's output window.  
+Отправляет указанное сообщение строку в окне вывода.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
 HRESULT DisplayMessage (  
@@ -52,12 +52,12 @@ int DisplayMessage (
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Параметры  
  `szMessage`  
- [in] Message string to display in the debugger's output window.  
+ [in] Строка сообщения для отображения в окне вывода.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>См. также  
  [IDebugIDECallback](../../../extensibility/debugger/reference/idebugidecallback.md)

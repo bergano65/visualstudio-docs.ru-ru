@@ -1,5 +1,5 @@
 ---
-title: Projects and Solutions, Options Dialog Box | Microsoft Docs
+title: "\"Проекты и решения\", диалоговое окно \"Параметры\" | Документы Майкрософт"
 ms.custom: 
 ms.date: 7/14/2017
 ms.reviewer: 
@@ -23,68 +23,68 @@ ms.translationtype: HT
 ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
 ms.openlocfilehash: 2778964a6d5e4f478422727b02e15a058868e644
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="projects-and-solutions-options-dialog-box"></a>Projects and Solutions, Options Dialog Box
+# <a name="projects-and-solutions-options-dialog-box"></a>«Проекты и решения», «Диалоговое окно параметров»
 
-Sets [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] behavior related to projects and solutions. To access these options, select **Tools > Options** expand **Projects and Solutions**, and click **General**.
+Устанавливает поведение [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] для проектов и решений. Чтобы открыть эти параметры, выберите пункты меню **Сервис > Параметры**, разверните **Проекты и решения** и выберите **Общие**.
 
-The default paths for project and template folders are set through the **Locations** tab in the same dialog box.
+Пути по умолчанию для папки проекта и папки шаблона задаются на вкладке **Расположение** в том же диалоговом окне.
   
 > [!NOTE]
->  The options available in dialog boxes, and the names and locations of menu commands you see, might differ from what is described in Help depending on your active settings or edition. This Help page was written with the **General Development settings** in mind. To view or change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md).  
+>  Доступные в диалоговых окнах параметры, а также названия и расположение команд меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. При написании этой страницы справки имелось в виду окно **Обычные параметры среды разработки**. Чтобы просмотреть или изменить настройки, выберите **Настройки импорта и экспорта** в меню **Сервис**. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="general-tab-options"></a>General tab options  
+## <a name="general-tab-options"></a>Параметры вкладки "Общие"  
  
-**Lightweight Solution Load** Reduces the amount of time and memory required to load large solutions in the IDE. Large solutions containing many C#, Visual Basic, or C++ projects are likely to see a substantial performance benefit using lightweight solution load.
+**Загрузка упрощенного решения**. Сокращает время и объем памяти, необходимые для загрузки больших решений в интегрированной среде разработки. При наличии больших решений, содержащих множество проектов C#, Visual Basic или C++, включение этой функции, скорее всего, позволит существенно повысить производительность.
 
-- **Let Visual Studio choose what's best for my solution**: Lets Visual Studio automatically determine whether to apply Lightweight solution load based on the characteristics of the solution.
-- **Enabled**: Always applies Lightweight solution load when loading solutions.
-- **Disabled**: Never applies Lightweight solution load.
+- **Позволить Visual Studio выбрать, что лучше подходит для моего решения**. Позволяет Visual Studio автоматически определять, следует ли применять упрощенное решение, на основе параметров вашего решения.
+- **Включено**. При загрузке решений всегда используется загрузка упрощенного решения.
+- **Отключено**. Загрузка упрощенного решения не применяется.
 
-For more information, see [Optimize Visual Studio Startup Time](../optimize-visual-studio-startup-time.md#speed_up_solution_load)
+Дополнительные сведения см. в разделе [Оптимизация времени запуска Visual Studio](../optimize-visual-studio-startup-time.md#speed_up_solution_load).
 
-**Always show Error List if build finishes with errors**  
-Opens the **Error List** window on build completion, only if a project failed to build. Errors that occur during the build process are displayed. When this option is cleared, the errors still occur but the window does not open when the build is complete. This option is enabled by default.  
+**Показывать окно ошибок при завершении сборки с ошибками**  
+Открывает окно **Список ошибок** по завершении сборки только в том случае, если не удалось выполнить сборку проекта. Отображаются ошибки, возникающие во время сборки. Если этот флажок снят, ошибки по-прежнему отображаются, но окно по завершении сборки не открывается. Этот параметр по умолчанию включен.  
 
-**Track Active Item in Solution Explorer**  
-When selected, **Solution Explorer** automatically opens and the active item is selected. The selected item changes as you work with different files in a project or solution, or different components in a designer. When this option is cleared, the selection in **Solution Explorer** does not change automatically. This option is enabled by default.  
+**Отслеживать активный элемент в обозревателе решений**  
+Если этот флажок установлен, **Обозреватель решений** открывается автоматически, и в нем выбирается активный элемент. Выбранный элемент изменяется в процессе работы с различными файлами проекта или решения или с разными компонентами в конструкторе. Если этот флажок снят, выбранный элемент в **обозревателе решений** автоматически не изменяется. Этот параметр по умолчанию включен.  
 
-**Show advanced build configurations**  
-When selected, the build configuration options appear on the **Project Property Pages** dialog box and the **Solution Property Pages** dialog box. When cleared, the build configuration options do not appear on the **Project Property Pages** dialog box and the **Solution Property Pages** dialog box for [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] and [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] projects that contain one configuration or the two configurations debug and release. If a project has a user-defined configuration, the build configuration options are shown.  
+**Показывать дополнительные конфигурации построения**  
+Если этот флажок установлен, параметры конфигурации сборки будут отображаться в диалоговом окне **Страницы свойств проекта** и в диалоговом окне **Страницы свойств решения**. Если флажок снят, параметры конфигурации сборки не отображаются в диалоговом окне **Страницы свойств проекта** и в диалоговом окне **Страницы свойств решения** для проектов [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] и [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], содержащих одну конфигурацию или две конфигурации отладки и выпуска. Если проект содержит определяемую пользователем конфигурацию, отображаются параметры конфигурации сборки.  
 
-When unselected, the commands on the **Build** menu, such as **Build Solution**, **Rebuild Solution**, and **Clean Solution**, are performed on the Release configuration and the commands on the **Debug** menu, such as **Start Debugging** and **Start Without Debugging**, are performed on the Debug configuration.  
+Если флажок снят, команды в меню **Сборка**, такие как **Собрать решение**, **Перестроить решение** и **Очистить решение**, выполняются для конфигурации "Выпуск", а команды в меню **Отладка**, такие как **Начать отладку** и **Запуск без отладки**, выполняются для конфигурации "Отладка".  
 
-**Always show solution**  
-When selected, the solution and all commands that act on solutions are always shown in the IDE. When cleared, all projects are created as stand-alone projects and you do not see the solution in Solution Explorer or commands that act on solutions in the IDE if the solution contains only one project.  
+**Всегда показывать решение**  
+Если флажок установлен, решение и все команды, влияющие на решения, всегда отображаются в интегрированной среде разработки. Если флажок снят, все проекты создаются как автономные, и если решение содержит только один проект, в интегрированной среде разработки не отображаются ни решения в обозревателе решений, ни команды, влияющие на решения.  
 
-**Save new projects when created**  
-When selected, you can specify a location for your project in the **New Project** dialog box. When cleared, all new projects are created as temporary projects. When you are working with temporary projects, you can create and experiment with a project without having to specify a disk location.  
+**Сохранять новые проекты в момент создания**  
+Если флажок установлен, пользователь может указать расположение проекта в диалоговом окне **Новый проект**. Если флажок снят, все новые проекты создаются как временные проекты. При работе с временными проектами можно создать и поэкспериментировать с проектом без указания его расположения на диске.  
 
-**Warn user when the project location is not trusted**  
-If you attempt to create a new project or open an existing project in a location that is not fully trusted (for example, on a UNC path or an HTTP path), a message is displayed. Use this option to specify whether the message is displayed each time that you attempt to create or open a project in a location that is not fully trusted.  
+**Предупреждать, если расположение проекта не является доверенным**  
+При попытке создать новый проект или открыть существующий проект в расположении, которое не является полностью доверенным (например, путь UNC или путь HTTP), будет отображено сообщение. Используйте этот флажок, чтобы указать, отображать ли сообщение каждый раз при попытке создать или открыть проект в расположении, которое не является полностью доверенным.  
 
-**Show Output window when build starts**  
-Automatically displays the Output Window in the IDE at the outset of solution builds. For more information, see [How to: Control the Output Window](http://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858).
+**Показывать окно вывода при запуске построения**  
+Автоматически отображает окно вывода в интегрированной среде разработки с самого начала построения решения. Дополнительные сведения см. в разделе [Практическое руководство. Управление динамическим окном вывода](http://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858).
 
-**Prompt for symbolic renaming when renaming files**  
-When selected, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] displays a message box asking whether or not it should also rename all references in the project to the code element.  
+**Запрашивать переименование символов при переименовании файлов**  
+Если этот флажок установлен, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отображает окно с подтверждением переименования всех ссылок в проекте на кодовые точки.  
 
-**Prompt before moving files to a new location**  
-When selected, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] displays a confirmation message box before the locations of files are changed by actions in Solution Explorer. 
+**Запрашивать подтверждение перед перемещением файлов в новое расположение**  
+Если этот флажок установлен, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отображает окно подтверждения перед изменением расположения файлов в результате действий в обозревателе решений. 
 
-## <a name="locations-tab-options"></a>Locations tab options
+## <a name="locations-tab-options"></a>Параметры вкладки "Расположения"
 
-**Projects location**  
-Specifies the default location where [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] creates new projects and solution folders. Several dialog boxes also use the location set in this option for folder starting points. For example, the Open Project dialog box uses this location for the My Projects shortcut.  
+**Размещение проектов**  
+Задает расположение по умолчанию, в котором [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] создает папки для новых проектов и решений. Также в некоторых диалоговых окнах расположение, заданное в этом параметре, используется как отправная точка для папок. Например, диалоговое окно «Открыть проект» использует это расположение для ярлыка «Мои проекты».  
 
-**User project templates location**  
-Specifies the default location that the **New Project** dialog box uses to create the list of **My Templates**. For more information, see [How to: Locate and Organize Templates](../../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+**Размещение пользовательских шаблонов проектов**  
+Задает расположение по умолчанию, которое используется в диалоговом окне **Новый проект** для создания списка **Мои шаблоны**. Дополнительные сведения см. в разделе [Практическое руководство. Размещение и упорядочение шаблонов и элементов](../../ide/how-to-locate-and-organize-project-and-item-templates.md).  
 
-**User item templates location**  
-Specifies the default location that the **Add New Item** dialog box uses to create the list of **My Templates**. For more information, see [How to: Locate and Organize Templates](../../ide/how-to-locate-and-organize-project-and-item-templates.md). 
+**Размещение пользовательских шаблонов элементов**  
+Задает расположение по умолчанию, которое используется в диалоговом окне **Добавление нового элемента** для создания списка **Мои шаблоны**. Дополнительные сведения см. в разделе [Практическое руководство. Размещение и упорядочение шаблонов и элементов](../../ide/how-to-locate-and-organize-project-and-item-templates.md). 
 
-## <a name="see-also"></a>See Also  
-- [Options Dialog Box,  Projects and Solutions, Build and Run](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
-- - [Options Dialog Box,  Projects and Solutions, Web Projects](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)
+## <a name="see-also"></a>См. также  
+- [Диалоговое окно "Параметры", "Проекты и решения", "Сборка и запуск"](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
+- - [Диалоговое окно "Параметры", "Проекты и решения", "Веб-проекты"](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)

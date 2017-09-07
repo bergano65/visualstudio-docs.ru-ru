@@ -1,5 +1,5 @@
 ---
-title: LAUNCH_FLAGS | Microsoft Docs
+title: "LAUNCH_FLAGS | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 2f838e559d4c33a7bb807d5b0360a51ea7ff0d74
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
-Specifies the debug launch flags.  
+Задает флаги запуска отладки.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
 enum enum_LAUNCH_FLAGS {   
@@ -61,31 +61,31 @@ public enum enum_LAUNCH_FLAGS {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Члены  
  LAUNCH_DEBUG  
- Launches the process for debugging.  
+ Запускает процесс для отладки.  
   
  LAUNCH_NODEBUG  
- Launches the process without debugging it.  
+ Запускает процесс без его отладки.  
   
  LAUNCH_ENABLE_ENC  
- DEPRECATED, DO NOT USE.  
+ РЕКОМЕНДУЕТСЯ ИСПОЛЬЗОВАТЬ, НЕ СЛЕДУЕТ ИСПОЛЬЗОВАТЬ.  
   
  LAUNCH_MERGE_ENV  
- Launches the process and merges the environment with the launching host.  
+ Запускает процесс и объединяет среды с помощью при запуске сервера.  
   
-## <a name="remarks"></a>Remarks  
- These values are passed as an argument to the [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) method.  
+## <a name="remarks"></a>Примечания  
+ Эти значения передаются в качестве аргумента для [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) метод.  
   
- These flags may be combined with a bitwise `OR`.  
+ Эти флаги могут объединяться с битовой `OR`.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Требования  
+ Заголовок: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>См. также  
+ [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

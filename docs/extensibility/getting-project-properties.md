@@ -1,5 +1,5 @@
 ---
-title: Getting Project Properties | Microsoft Docs
+title: "Получение свойств проекта | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -33,26 +33,26 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 2384e27a9bb4f0aabf483bbbe0c14911e1380e32
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="getting-project-properties"></a>Getting Project Properties
-This walkthrough shows how to displays project properties in a tool window.  
+# <a name="getting-project-properties"></a>Получение свойств проекта
+В этом пошаговом руководстве показано, как свойства проекта отображается в окне инструментов.  
   
-## <a name="prerequisites"></a>Prerequisites  
- Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Предварительные требования  
+ Начиная с Visual Studio 2015, не установить пакет SDK для Visual Studio из центра загрузки Майкрософт. Он включен в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-### <a name="to-create-a-vsix-project-and-add-a-tool-window"></a>To create a VSIX Project and add a Tool Window  
+### <a name="to-create-a-vsix-project-and-add-a-tool-window"></a>Создайте проект VSIX и добавление окна инструментов  
   
-1.  Every Visual Studio extension starts with a VSIX deployment project which will contain the extension assets. Create a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX project named `ProjectPropertiesExtension`. You can find the VSIX project template in the **New Project** dialog under **Visual C# / Extensibility**.  
+1.  Все расширения Visual Studio начинается с проект развертывания VSIX, который будет содержать средств расширения. Создание [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проект VSIX с именем `ProjectPropertiesExtension`. Шаблон проекта VSIX в можно найти **новый проект** диалогового окна в разделе **Visual C# / Extensibility**.  
   
-2.  Add a tool window by adding a Custom Tool Window item template named `ProjectPropertiesToolWindow`. In the **Solution Explorer**, right-click the project node and select **Add / New Item**. In the **Add New Item dialog**, go to **Visual C# Items / Extensibility** and select **Custom Tool Window**. In the **Name** field at the bottom of the dialog, change the file name to `ProjectPropertiesToolWindow.cs`. For more information about how to create a custom tool window, see [Creating an Extension with a Tool Window](../extensibility/creating-an-extension-with-a-tool-window.md).  
+2.  Добавить окно инструментов, добавив шаблон элемента пользовательского окна инструментов с именем `ProjectPropertiesToolWindow`. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить / новый элемент**. В **диалоговое окно добавления нового элемента**, перейдите в меню **элементы Visual C# / расширяемости** и выберите **окно инструментов настраиваемый**. В **имя** в нижней части диалогового окна, измените имя файла для `ProjectPropertiesToolWindow.cs`. Дополнительные сведения о создании пользовательского окна инструментов см. в разделе [создания расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-3.  Build the solution and verify that it compiles without errors.  
+3.  Выполните сборку решения и убедитесь в том, что оно компилируется без ошибок.  
   
-### <a name="to-display-project-properties-in-a-tool-window"></a>To display project properties in a tool window  
+### <a name="to-display-project-properties-in-a-tool-window"></a>Для отображения свойств проекта в окне инструментов  
   
-1.  In the ProjectPropertiesToolWindowCommand.cs file add the following using statements.  
+1.  В файле ProjectPropertiesToolWindowCommand.cs добавьте следующие операторы using.  
   
     ```csharp  
     using EnvDTE;  
@@ -60,9 +60,9 @@ This walkthrough shows how to displays project properties in a tool window.
   
     ```  
   
-2.  In ProjectPropertiesToolWindowControl.xaml, remove the existing button and add a TreeView from the Toolbox. You can also remove the click event handler from the ProjectPropertiesToolWindowControl.xaml.cs file.  
+2.  В ProjectPropertiesToolWindowControl.xaml удалите существующую кнопку и добавьте TreeView из области элементов. Можно также удалить из файла ProjectPropertiesToolWindowControl.xaml.cs обработчик события нажатия кнопки.  
   
-3.  In ProjectPropertiesToolWindowCommand.cs, use the ShowToolWindow() method to open the project and read its properties, then add the properties to the TreeView. The code for ShowToolWindow should look like the following:  
+3.  В ProjectPropertiesToolWindowCommand.cs используйте метод ShowToolWindow() для открытия проекта и чтения его свойства, а затем добавьте свойства для TreeView. Код для ShowToolWindow должен выглядеть следующим образом:  
   
     ```csharp  
     private void ShowToolWindow(object sender, EventArgs e)  
@@ -109,10 +109,10 @@ This walkthrough shows how to displays project properties in a tool window.
     }  
     ```  
   
-4.  Build the project and start debugging. The experimental instance should appear.  
+4.  Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.  
   
-5.  In the experimental instance open a project.  
+5.  В экспериментальном экземпляре откройте проект.  
   
-6.  In the **View / Other Windows** click **ProjectPropertiesToolWindow**.  
+6.  В **представления и другие окна** щелкните **ProjectPropertiesToolWindow**.  
   
-     You should see the tree control in the tool window together with the name of the first project and of all its project properties.
+     Вы увидите дерево в окне инструментов вместе с именем первого проекта и всех его свойств проекта.
