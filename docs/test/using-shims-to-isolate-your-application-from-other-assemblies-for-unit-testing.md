@@ -1,5 +1,5 @@
 ---
-title: Using shims to isolate your application from other assemblies for unit testing | Microsoft Docs
+title: "Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании | Документы Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,67 +30,67 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 9e27f528abfa41621b840756f11bc139e82708d0
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Using shims to isolate your application from other assemblies for unit testing
-**Shim types** are one of two technologies that the Microsoft Fakes Framework uses to let you easily isolate components under test from the environment. Shims divert calls to specific methods to code that you write as part of your test. Many methods return different results dependent on external conditions, but a shim is under the control of your test and can return consistent results at every call. This makes your tests much easier to write.  
+# <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании
+**Типы оболочек** — одна из двух технологий Microsoft Fakes Framework, используемых для простой изоляции тестируемых компонентов от окружения. Оболочки отвлекают вызовы к отдельным методам в коде, написанным в рамках теста. Множество методов возвращает различные результаты в зависимости от внешних условиях, но оболочка находится под контролем теста и может возвращать последовательные результаты при каждом вызове. Это позволяет создавать тесты намного проще.  
   
- Use shims to isolate your code from assemblies that are not part of your solution. To isolate components of your solution from each other, we recommend that you use stubs.  
+ Используйте оболочки, чтобы изолировать код из сборок, которые не входят в состав решения. Чтобы изолировать компоненты решения друг от друга, рекомендуется использовать заглушки.  
   
- For an overview and quick start guidance, see [Isolating Code Under Test with Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)  
+ Обзор и рекомендации по быстрому началу работы см. в разделе [Изоляция тестируемого кода с помощью Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)  
   
  **Requirements**  
   
 -   Visual Studio Enterprise  
   
- See [Video (1h16): Testing Un-testable Code with Fakes in Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)  
+ См. видео (1 ч. 16 мин.): [Тестирование нетестируемого кода с помощью Fakes в Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)  
   
-## <a name="in-this-topic"></a>In this topic  
- Here's what you'll learn in this topic:  
+## <a name="in-this-topic"></a>Содержание раздела  
+ Ниже перечислены темы, рассматриваемые в этом разделе.  
   
- [Example: The Y2K bug](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Example__The_Y2K_bug)  
+ [Пример. Ошибка 2000 года](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Example__The_Y2K_bug)  
   
- [How to use Shims](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Fakes_requirements)  
+ [Использование оболочек](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Fakes_requirements)  
   
--   [Add Fakes Assemblies](#AddFakes)  
+-   [Добавление сборки Fakes](#AddFakes)  
   
--   [Use ShimsContext](#ShimsContext)  
+-   [Использование ShimsContext](#ShimsContext)  
   
--   [Write Tests with Shims](#WriteTests)  
+-   [Создание тестов с оболочками](#WriteTests)  
   
- [Shims for different kinds of methods](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Shim_basics)  
+ [Оболочки для методов различных типов](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Shim_basics)  
   
--   [Static methods](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Static_methods)  
+-   [Статические методы](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Static_methods)  
   
--   [Instance methods (for all instances)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Instance_methods__for_all_instances_)  
+-   [Методы экземпляра (для всех экземпляров)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Instance_methods__for_all_instances_)  
   
--   [Instance methods (for one runtime instance)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Instance_methods__for_one_instance_)  
+-   [Методы экземпляра (для одного экземпляра)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Instance_methods__for_one_instance_)  
   
--   [Constructors](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Constructors)  
+-   [Конструкторы](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Constructors)  
   
--   [Base members](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Base_members)  
+-   [Базовые члены](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Base_members)  
   
--   [Static constructors](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Static_constructors)  
+-   [Статические конструкторы](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Static_constructors)  
   
--   [Finalizers](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Finalizers)  
+-   [Методы завершения](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Finalizers)  
   
--   [Private methods](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Private_methods)  
+-   [Закрытые методы](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Private_methods)  
   
--   [Binding interfaces](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Binding_interfaces)  
+-   [Привязка интерфейсов](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Binding_interfaces)  
   
- [Changing the default behavior](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Changing_the_default_behavior)  
+ [Изменение поведения по умолчанию](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Changing_the_default_behavior)  
   
- [Detecting environment accesses](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Detecting_environment_accesses)  
+ [Обнаружение событий доступа к среде](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Detecting_environment_accesses)  
   
- [Concurrency](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Concurrency)  
+ [Параллелизм](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Concurrency)  
   
- [Calling the original method from the shim method](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Calling_the_original_method_from_the_shim_method)  
+ [Вызов исходного метода из метода оболочки совместимости](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Calling_the_original_method_from_the_shim_method)  
   
- [Limitations](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Limitations)  
+ [Ограничения](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Limitations)  
   
-##  <a name="BKMK_Example__The_Y2K_bug"></a> Example: The Y2K bug  
- Let's consider a method that throws an exception on January 1st of 2000:  
+##  <a name="BKMK_Example__The_Y2K_bug"></a> Пример. Ошибка 2000 года  
+ Рассмотрим метод, который создает исключение 1 января 2000 г.  
   
 ```csharp  
 // code under test  
@@ -103,11 +103,11 @@ public static class Y2KChecker {
   
 ```  
   
- Testing this method is particularly problematic because the program depends on `DateTime.Now`, a method that depends on the computer's clock, an environment-dependent, non-deterministic method. Furthermore, the `DateTime.Now` is a static property so a stub type can't be used here. This problem is symptomatic of the isolation issue in unit testing: programs that directly call into database APIs, communicate with web services, and so on are hard to unit test because their logic depends on the environment.  
+ Тестирование этого метода является особенно проблематичным, поскольку программа зависит от `DateTime.Now`, зависимого от часов компьютера и среды, недетерминированного метода. Кроме того, `DateTime.Now` является статическим свойством, поэтому здесь нельзя использовать тип заглушки. Эта проблема является признаком проблемы изоляции в модульных тестах: программы, которые непосредственно вызывают API базы данных, взаимодействуют с веб-службами и т. д., трудно тестировать с помощью модульных тестов, так как их логика зависит от среды.  
   
- This is where shim types should be used. Shim types provide a mechanism to detour any .NET method to a user defined delegate. Shim types are code-generated by the Fakes generator, and they use delegates, which we call shim types, to specify the new method implementations.  
+ В этом случае необходимо использовать типы оболочек совместимости. Типы оболочек совместимости обеспечивают механизм использования любым методом .NET определяемого пользователем делегата. Типы оболочек программно создаются генератором Fakes и используют делегаты, которые мы называем типами оболочек совместимости, для указания новых реализаций метода.  
   
- The following test shows how to use the shim type, `ShimDateTime`, to provide a custom implementation of DateTime.Now:  
+ В следующем примере теста показано, как использовать тип оболочки совместимости `ShimDateTime` для предоставления настраиваемой реализации метода DateTime.Now.  
   
 ```csharp  
 //unit test code  
@@ -121,20 +121,20 @@ using (ShimsContext.Create()
   
 ```  
   
-##  <a name="BKMK_Fakes_requirements"></a> How to use Shims  
+##  <a name="BKMK_Fakes_requirements"></a> Использование оболочек  
   
-###  <a name="AddFakes"></a> Add Fakes Assemblies  
+###  <a name="AddFakes"></a> Добавление сборок Fakes  
   
-1.  In Solution Explorer, expand your unit test project's **References**.  
+1.  В обозревателе решений разверните список **Ссылки** проекта модульного теста.  
   
-    -   If you are working in Visual Basic, you must select **Show All Files** in the Solution Explorer toolbar, in order to see the References list.  
+    -   При работе в Visual Basic необходимо выбрать **Показать все файлы** на панели инструментов обозревателя решений, чтобы просмотреть список "Ссылки".  
   
-2.  Select the assembly that contains the classes definitions for which you want to create shims. For example, if you want to shim DateTime, select System.dll  
+2.  Выделите сборку, которая содержит определения классов, для которых необходимо создать оболочки. Например, если требуется создать оболочку для DateTime, выберите System.dll  
   
-3.  On the shortcut menu, choose **Add Fakes Assembly**.  
+3.  В контекстном меню щелкните **Добавить сборку имитаций**.  
   
-###  <a name="ShimsContext"></a> Use ShimsContext  
- When using shim types in a unit test framework, you must wrap the test code in a `ShimsContext` to control the lifetime of your shims. If we didn't require this, your shims would last until the AppDomain shut down. The easiest way to create a `ShimsContext` is by using the static `Create()` method as shown in the following code:  
+###  <a name="ShimsContext"></a> Использование ShimsContext  
+ При использовании типов оболочек в среде модульного тестирования необходимо заключить код теста в контекст `ShimsContext` для управления временем существования оболочек совместимости. Если это не требуется, оболочки будут существовать до завершения работы домена приложения. Самый простой способ создания `ShimsContext` — использование статического метода `Create()`, как показано в следующем коде.  
   
 ```csharp  
 //unit test code  
@@ -147,10 +147,10 @@ public void Y2kCheckerTest() {
   
 ```  
   
- It is critical to properly dispose each shim context. As a rule of thumb, always call the `ShimsContext.Create` inside of a `using` statement to ensure proper clearing of the registered shims. For example, you might register a shim for a test method that replaces the `DateTime.Now` method with a delegate that always returns the first of January 2000. If you forget to clear the registered shim in the test method, the rest of the test run would always return the first of January 2000 as the DateTime.Now value. This might be suprising and confusing.  
+ Очень важно правильно ликвидировать каждый контекст оболочки. Как правило, следует всегда вызывать `ShimsContext.Create` внутри оператора `using`, чтобы гарантировать правильный сброс зарегистрированных оболочек. Например, можно зарегистрировать оболочку для метода теста, заменяющего метод `DateTime.Now` делегатом, который всегда возвращает 1 января 2000 г. Если вы забудете сбросить зарегистрированную оболочку в методе теста, остальная часть тестового запуска всегда будет возвращать в качестве значения DateTime.Now 1 января 2000 г. Это может быть неожиданно и неудобно.  
   
-###  <a name="WriteShims"></a> Write a test with shims  
- In your test code, insert a *detour* for the method you want to fake. For example:  
+###  <a name="WriteShims"></a> Создание теста с оболочками  
+ В коде теста вставьте *обход* для метода, который требуется имитировать. Пример:  
   
 ```csharp  
 [TestClass]  
@@ -210,19 +210,19 @@ Public Class TestClass1
 End Class  
 ```  
   
- Shim class names are made up by prefixing `Fakes.Shim` to the original type name.  
+ Имена классов оболочки создаются путем добавления префикса `Fakes.Shim` к имени исходного типа.  
   
- Shims work by inserting *detours* into the code of the application under test. Wherever a call to the original method occurs, the Fakes system performs a detour, so that instead of calling the real method, your shim code is called.  
+ Оболочки работают путем вставки *обходов* в код тестируемого приложения. Где бы ни возникал вызов исходного метода, система Fakes выполняет обход, чтобы вместо вызова настоящего метода происходил вызов кода оболочки.  
   
- Notice that detours are created and deleted at run time. You must always create a detour within the life of a `ShimsContext`. When it is disposed, any shims you created while it was active are removed. The best way to do this is inside a `using` statement.  
+ Обратите внимание, что обходы создаются и удаляются во время выполнения. Всегда следует создавать обходы в течение существования `ShimsContext`. После его удаления все оболочки, созданные во время его активности, удаляются. Лучшего всего сделать это внутри оператора `using`.  
   
- You might see a build error stating that the Fakes namespace does not exist. This error sometimes appears when there are other compilation errors. Fix the other errors and it will vanish.  
+ Можно увидеть ошибку сборки, утверждающую, что пространство имен Fakes не существует. Иногда эта ошибка появляется, когда есть другие ошибки компиляции. Устраните остальные ошибки, и она исчезнет.  
   
-##  <a name="BKMK_Shim_basics"></a> Shims for different kinds of methods  
- Shim types allow you to replace any .NET method, including static methods or non-virtual methods, with your own delegates.  
+##  <a name="BKMK_Shim_basics"></a> Оболочки для методов различных типов  
+ Типы оболочки позволяют заменить любой метод .NET, включая статические методы или невиртуальные методы собственными делегатами.  
   
-###  <a name="BKMK_Static_methods"></a> Static methods  
- The properties to attach shims to static methods are placed in a shim type. Each property has only a setter that can be used to attach a delegate to the target method. For example, given a class `MyClass` with a static method `MyMethod`:  
+###  <a name="BKMK_Static_methods"></a> Статические методы  
+ Свойства для присоединения оболочек совместимости к статическим методам помещаются в тип оболочки. Каждое свойство имеет только метод задания, который можно использовать для присоединения делегата к целевому методу. Например, имеется класс `MyClass` со статическим методом `MyMethod`.  
   
 ```csharp  
 //code under test  
@@ -233,15 +233,15 @@ public static class MyClass {
 }  
 ```  
   
- We can attach a shim to `MyMethod` that always returns 5:  
+ Мы можем присоединить оболочку к методу `MyMethod`, который всегда возвращает значение 5.  
   
 ```csharp  
 // unit test code  
 ShimMyClass.MyMethod = () =>5;  
 ```  
   
-###  <a name="BKMK_Instance_methods__for_all_instances_"></a> Instance methods (for all instances)  
- Similarly to static methods, instance methods can be shimmed for all instances. The properties to attach those shims are placed in a nested type named AllInstances to avoid confusion. For example, given a class `MyClass` with an instance method `MyMethod`:  
+###  <a name="BKMK_Instance_methods__for_all_instances_"></a> Методы экземпляра (для всех экземпляров)  
+ Аналогично статическим методам для методов экземпляра можно создать оболочки для всех экземпляров. Свойства для присоединения этих оболочек помещаются во вложенный тип с именем AllInstances, чтобы избежать путаницы. Например, имеется класс `MyClass` с методом экземпляра `MyMethod`.  
   
 ```csharp  
 // code under test  
@@ -252,14 +252,14 @@ public class MyClass {
 }  
 ```  
   
- You can attach a shim to `MyMethod` that always returns 5, regardless of the instance:  
+ Можно присоединить оболочку к `MyMethod`, которая всегда возвращает 5, независимо от экземпляра:  
   
 ```csharp  
 // unit test code  
 ShimMyClass.AllInstances.MyMethod = () => 5;  
 ```  
   
- The generated type structure of ShimMyClass looks like the following code:  
+ Структура созданного типа ShimMyClass похожа на следующий код.  
   
 ```csharp  
 // Fakes generated code  
@@ -274,12 +274,12 @@ public class ShimMyClass : ShimBase<MyClass> {
 }  
 ```  
   
- Notice that Fakes passes the runtime instance as the first argument of the delegate in this case.  
+ Обратите внимание, что Fakes в этом случае передает экземпляр среды выполнения в качестве первого аргумента делегата.  
   
-###  <a name="BKMK_Instance_methods__for_one_instance_"></a> Instance methods (for one runtime instance)  
- Instance methods can also be shimmed by different delegates, based on the receiver of the call. This enables the same instance method to have different behaviors per instance of the type. The properties to set up those shims are instance methods of the shim type itself. Each instantiated shim type is also associated with a raw instance of a shimmed type.  
+###  <a name="BKMK_Instance_methods__for_one_instance_"></a> Методы экземпляра (для одного экземпляра)  
+ Для методов экземпляра можно также создать оболочки совместимости, используя разные делегаты в зависимости от получателя вызова. Это позволяет задать для одного метода экземпляра разные варианты поведения в зависимости от экземпляра типа. Свойства для настройки этих оболочек являются методами экземпляра самого типа оболочки. Каждый экземпляр типа оболочки также связан с необработанным экземпляром типа с оболочкой совместимости.  
   
- For example, given a class `MyClass` with an instance method `MyMethod`:  
+ Например, имеется класс `MyClass` с методом экземпляра `MyMethod`.  
   
 ```csharp  
 // code under test  
@@ -290,7 +290,7 @@ public class MyClass {
 }  
 ```  
   
- We can set up two shim types of MyMethod such that the first one always returns 5 and the second always returns 10:  
+ Мы можем настроить два типа оболочки MyMethod таким образом, что первый тип будет всегда возвращать значение 5, а второй — 10.  
   
 ```csharp  
 // unit test code  
@@ -301,7 +301,7 @@ var myClass1 = new ShimMyClass()
 var myClass2 = new ShimMyClass { MyMethod = () => 10 };  
 ```  
   
- The generated type structure of ShimMyClass looks like the following code:  
+ Структура созданного типа ShimMyClass похожа на следующий код.  
   
 ```csharp  
 // Fakes generated code  
@@ -319,7 +319,7 @@ public class ShimMyClass : ShimBase<MyClass> {
 }  
 ```  
   
- The actual shimmed type instance can be accessed through the Instance property:  
+ Доступ к фактическому экземпляру типа с оболочкой совместимости можно получить с помощью свойства Instance.  
   
 ```csharp  
 // unit test code  
@@ -327,7 +327,7 @@ var shim = new ShimMyClass();
 var instance = shim.Instance;  
 ```  
   
- The shim type also has an implicit conversion to the shimmed type, so you can usually simply use the shim type as is:  
+ Тип оболочки совместимости также имеет неявное преобразование в тип с оболочкой, поэтому, как правило, тип оболочки можно просто использовать как есть.  
   
 ```csharp  
 // unit test code  
@@ -336,8 +336,8 @@ MyClass instance = shim; // implicit cast retrieves the runtime
                          // instance  
 ```  
   
-###  <a name="BKMK_Constructors"></a> Constructors  
- Constructors can also be shimmed in order to attach shim types to future objects. Each constructor is exposed as a static method Constructor in the shim type. For example, given a class `MyClass` with a constructor taking an integer:  
+###  <a name="BKMK_Constructors"></a> Конструкторы  
+ Для конструкторов также можно создать оболочки совместимости для присоединения типов оболочки к будущим объектам. Каждый конструктор предоставляется как статический метод конструктора в типе оболочки совместимости. Например, имеется класс `MyClass` с конструктором, принимающим целое число.  
   
 ```csharp  
 // code under test  
@@ -349,7 +349,7 @@ public class MyClass {
 }  
 ```  
   
- We set up the shim type of the constructor so that every future instance returns -5 when the Value getter is invoked, regardless of the value in the constructor:  
+ Мы настраиваем тип оболочки совместимости конструктора так, чтобы каждый будущий экземпляр возвращал -5, если вызывается метод получения значения, независимо от значения в конструкторе.  
   
 ```csharp  
 // unit test code  
@@ -360,7 +360,7 @@ ShimMyClass.ConstructorInt32 = (@this, value) => {
 };  
 ```  
   
- Note that each shim type exposes two constructors. The default constructor should be used when a fresh instance is needed, while the constructor taking a shimmed instance as argument should be used in constructor shims only:  
+ Обратите внимание, что каждый тип оболочки предоставляет два конструктора. Конструктор по умолчанию следует использовать при необходимости создания нового экземпляра, тогда как конструктор, принимающий экземпляр с оболочкой в качестве аргумента, следует использовать только в оболочках совместимости конструктора.  
   
 ```csharp  
 // unit test code  
@@ -368,7 +368,7 @@ public ShimMyClass() { }
 public ShimMyClass(MyClass instance) : base(instance) { }  
 ```  
   
- The generated type structure of ShimMyClass resembles the followoing code:  
+ Структура созданного типа ShimMyClass похожа на следующий код.  
   
 ```csharp  
 // Fakes generated code  
@@ -386,10 +386,10 @@ public class ShimMyClass : ShimBase<MyClass>
 }  
 ```  
   
-###  <a name="BKMK_Base_members"></a> Base members  
- The shim properties of base members can be accessed by creating a shim for the base type and passing the child instance as a parameter to the constructor of the base shim class.  
+###  <a name="BKMK_Base_members"></a> Базовые члены  
+ Доступ к свойствам оболочки совместимости базовых членов может осуществляться путем создания оболочки для базового типа и передачи дочернего экземпляра в качестве параметра в конструктор базового класса оболочки.  
   
- For example, given a class `MyBase` with an instance method `MyMethod` and a subtype `MyChild`:  
+ Например, имеется класс `MyBase` с методом экземпляра `MyMethod` и подтипом `MyChild`.  
   
 ```csharp  
 public abstract class MyBase {  
@@ -403,7 +403,7 @@ public class MyChild : MyBase {
   
 ```  
   
- We can set up a shim of `MyBase` by creating a new `ShimMyBase` shim:  
+ Мы можем настроить оболочку совместимости `MyBase`, создав новую оболочку `ShimMyBase`.  
   
 ```csharp  
 // unit test code  
@@ -411,9 +411,9 @@ var child = new ShimMyChild();
 new ShimMyBase(child) { MyMethod = () => 5 };  
 ```  
   
- Note that the child shim type is implicitly converted to the child instance when passed as a parameter to the base shim constructor.  
+ Обратите внимание, что дочерний тип оболочки неявно преобразуется в дочерний экземпляр при передаче в качестве параметра в конструктор базовой оболочки совместимости.  
   
- The generated type structure of ShimMyChild and ShimMyBase resembles the following code:  
+ Структура созданного типа ShimMyChild и ShimMyBase похожа на следующий код.  
   
 ```csharp  
 // Fakes generated code  
@@ -429,19 +429,19 @@ public class ShimMyBase : ShimBase<MyBase> {
 }  
 ```  
   
-###  <a name="BKMK_Static_constructors"></a> Static constructors  
- Shim types expose a static method `StaticConstructor` to shim the static constructor of a type. Since static constructors are executed once only, you need to ensure that the shim is configured before any member of the type is accessed.  
+###  <a name="BKMK_Static_constructors"></a> Статические конструкторы  
+ Типы оболочек совместимости предоставляют статический метод `StaticConstructor`, чтобы создать оболочку для статического конструктора типа. Поскольку статические конструкторы выполняются только один раз, необходимо убедиться, что оболочка настроена перед получением доступа к любому члену типа.  
   
-###  <a name="BKMK_Finalizers"></a> Finalizers  
- Finalizers are not supported in Fakes.  
+###  <a name="BKMK_Finalizers"></a> Методы завершения  
+ Методы завершения не поддерживаются в Fakes.  
   
-###  <a name="BKMK_Private_methods"></a> Private methods  
- The Fakes code generator will create shim properties for private methods that only have visible types in the signature, i.e. parameter types and return type visible.  
+###  <a name="BKMK_Private_methods"></a> Закрытые методы  
+ Генератор кода Fakes создает свойства оболочки для закрытых методов, которые имеют только видимые типы в сигнатуре, например видимые типы параметров и типы возвращаемого значения.  
   
-###  <a name="BKMK_Binding_interfaces"></a> Binding interfaces  
- When a shimmed type implements an interface, the code generator emits a method that allows it to bind all the members from that interface at once.  
+###  <a name="BKMK_Binding_interfaces"></a> Привязка интерфейсов  
+ Когда тип с оболочкой совместимости реализует интерфейс, генератор кода создает метод, позволяющий ему привязать все члены из этого интерфейса за один раз.  
   
- For example, given a class `MyClass` that implements `IEnumerable<int>`:  
+ Например, имеется класс `MyClass`, реализующий интерфейс `IEnumerable<int>`.  
   
 ```csharp  
 public class MyClass : IEnumerable<int> {  
@@ -453,7 +453,7 @@ public class MyClass : IEnumerable<int> {
   
 ```  
   
- We can shim the implementations of `IEnumerable<int>` in MyClass by calling the Bind method:  
+ Мы можем создать оболочки для реализаций `IEnumerable<int>` в MyClass путем вызова метода привязки.  
   
 ```csharp  
 // unit test code  
@@ -462,7 +462,7 @@ shimMyClass.Bind(new List<int> { 1, 2, 3 });
   
 ```  
   
- The generated type structure of ShimMyClass resembles the following code:  
+ Структура созданного типа ShimMyClass похожа на следующий код.  
   
 ```csharp  
 // Fakes generated code  
@@ -474,12 +474,12 @@ public class ShimMyClass : ShimBase<MyClass> {
   
 ```  
   
-##  <a name="BKMK_Changing_the_default_behavior"></a> Changing the default behavior  
- Each generated shim type holds an instance of the `IShimBehavior` interface, through the `ShimBase<T>.InstanceBehavior` property. The behavior is used whenever a client calls an instance member that was not explicitly shimmed.  
+##  <a name="BKMK_Changing_the_default_behavior"></a> Изменение поведения по умолчанию  
+ Каждый созданный тип оболочки содержит экземпляр интерфейса `IShimBehavior` через свойство `ShimBase<T>.InstanceBehavior`. Это поведение используется, когда клиент вызывает член экземпляра, для которого оболочка не создана явно.  
   
- If the behavior has not been explicitly set, it will use the instance returned by the static `ShimsBehaviors.Current` property. By default, this property returns a behavior that throws a `NotImplementedException` exception.  
+ Если поведение не задано явно, будет использоваться экземпляр, возвращаемый статическим свойством `ShimsBehaviors.Current`. По умолчанию это свойство возвращает поведение, вызывающее исключение `NotImplementedException`.  
   
- This behavior can be changed at any time by setting the `InstanceBehavior` property on any shim instance. For example, the following snippet changes the shim to a behavior that does nothing or returns the default value of the return type—that is, default(T):  
+ Это поведение можно изменить в любой момент, задав свойство `InstanceBehavior` для любого экземпляра оболочки совместимости. Например, в следующем фрагменте кода изменяется поведение оболочки, которое ничего не делает или возвращает значение по умолчанию возвращаемого типа, то есть default(T).  
   
 ```csharp  
 // unit test code  
@@ -489,7 +489,7 @@ shim.InstanceBehavior = ShimsBehaviors.DefaultValue;
   
 ```  
   
- The behavior can also be changed globally for all shimmed instances for which the `InstanceBehavior` property was not explicitly set by setting the static `ShimsBehaviors.Current` property:  
+ Поведение также можно изменить глобально для всех экземпляров с оболочками совместимости, для которых свойство `InstanceBehavior` не было задано явно, путем задания статического свойства `ShimsBehaviors.Current`.  
   
 ```csharp  
 // unit test code  
@@ -500,8 +500,8 @@ ShimsBehaviors.Current =
   
 ```  
   
-##  <a name="BKMK_Detecting_environment_accesses"></a> Detecting environment accesses  
- It is possible to attach a behavior to all the members, including static methods, of a particular type by assigning the `ShimsBehaviors.NotImplemented` behavior to the static property `Behavior` of the corresponding shim type:  
+##  <a name="BKMK_Detecting_environment_accesses"></a> Обнаружение событий доступа к среде  
+ Можно назначить поведение всем членам (включая статические методы) определенного типа, назначив поведение `ShimsBehaviors.NotImplemented` статическому свойству `Behavior` соответствующего типа оболочки.  
   
 ```csharp  
 // unit test code  
@@ -512,13 +512,13 @@ ShimMyClass.BehaveAsNotImplemented();
   
 ```  
   
-##  <a name="BKMK_Concurrency"></a> Concurrency  
- Shim types apply to all threads in the AppDomain and don't have thread affinity. This is an important fact if you plan to use a test runner that support concurrency: tests involving shim types cannot run concurrently. This property is not enfored by the Fakes runtime.  
+##  <a name="BKMK_Concurrency"></a> Параллелизм  
+ Типы оболочек совместимости применяются ко всем потокам в домене приложения, и к ним не применяется сходство потоков. Это важный аспект, если вы планируете использовать средства выполнения тестов, которые поддерживают параллельность: тесты, включающие типы оболочек, нельзя запускать одновременно. Это свойство не применяется средой выполнения Fakes принудительно.  
   
-##  <a name="BKMK_Calling_the_original_method_from_the_shim_method"></a> Calling the original method from the shim method  
- Imagine that we wanted to actually write the text to the file system after validating the file name passed to the method. In that case, we would want to call the original method in the middle of the shim method.  
+##  <a name="BKMK_Calling_the_original_method_from_the_shim_method"></a> Вызов исходного метода из метода оболочки совместимости  
+ Предположим, мы хотим фактически записать текст в файловую систему после проверки имени файла, переданного в метод. В этом случае нам потребуется вызвать исходный метод в середине метода оболочки.  
   
- The first approach to solve this problem is to wrap a call to the original method using a delegate and `ShimsContext.ExecuteWithoutShims()` as in the following code:  
+ Первый подход для решения этой проблемы — заключить вызов исходного метода в оболочку с помощью делегата и `ShimsContext.ExecuteWithoutShims()`, как показано в следующем примере кода.  
   
 ```csharp  
 // unit test code  
@@ -533,7 +533,7 @@ ShimFile.WriteAllTextStringString = (fileName, content) => {
   
 ```  
   
- Another approach is to set the shim to null, call the original method and restore the shim.  
+ Другой подход заключается в задании для оболочки совместимости значения null, вызове исходного метода и восстановлении оболочки.  
   
 ```csharp  
 // unit test code  
@@ -557,16 +557,16 @@ ShimFile.WriteAllTextStringString = shim;
   
 ```  
   
-##  <a name="BKMK_Limitations"></a> Limitations  
- Shims cannot be used on all types from the .NET base class library **mscorlib** and **System**.  
+##  <a name="BKMK_Limitations"></a> Ограничения  
+ Оболочки совместимости нельзя использовать для всех типов из библиотеки базовых классов .NET **mscorlib** и **System**.  
   
-## <a name="external-resources"></a>External resources  
+## <a name="external-resources"></a>Внешние ресурсы  
   
-### <a name="guidance"></a>Guidance  
- [Testing for Continuous Delivery with Visual Studio 2012 - Chapter 2: Unit Testing: Testing the Inside](http://go.microsoft.com/fwlink/?LinkID=255188)  
+### <a name="guidance"></a>Руководство  
+ [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>See Also  
- [Isolating Code Under Test with Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)   
- [Peter Provost's blog: Visual Studio 2012 Shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)   
- [Video (1h16): Testing Un-testable Code with Fakes in Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
+## <a name="see-also"></a>См. также  
+ [Изоляция тестируемого кода с помощью Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)   
+ [Блог Питера Провоста (Peter Provost): оболочки Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)   
+ [Видео (1 ч. 16 мин.): тестирование нетестируемого кода с помощью Fakes в Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
 

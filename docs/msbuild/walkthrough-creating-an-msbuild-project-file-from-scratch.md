@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: Creating an MSBuild Project File from Scratch | Microsoft Docs'
+title: "Пошаговое руководство. Создание файла проекта MSBuild с нуля | Документы Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -33,50 +33,50 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 346c00891913ea2050f3e6790d738cccc5136c0a
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Walkthrough: Creating an MSBuild Project File from Scratch
-Programming languages that target the .NET Framework use MSBuild project files to describe and control the application build process. When you use Visual Studio to create an MSBuild project file, the appropriate XML is added to the file automatically. However, you may find it helpful to understand how the XML is organized and how you can change it to control a build.  
+# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Пошаговое руководство. Создание файла проекта MSBuild с нуля
+Языки программирования, предназначенные для платформы .NET Framework, используют файлы проекта MSBuild для описания и контроля процесса построения приложения. Если для создания файла проекта MSBuild используется Visual Studio, соответствующий XML добавляется в файл автоматически. Тем не менее, понимание принципов организации XML и способов его изменения, позволяющих контролировать построение, может вам пригодиться.  
   
- For information about creating a project file for a C++ project, see [MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp).  
+ Сведения о создании файла проекта для проекта C++ см. в разделе [MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp).  
   
- This walkthrough shows how to create a basic project file incrementally, by using only a text editor. The walkthrough follows these steps:  
+ Это пошаговое руководство содержит описание способов создания основного файла с использованием только текстового редактора. Руководство включает следующие шаги.  
   
--   Create a minimal application source file.  
+-   Создание минимального исходного файла приложения.  
   
--   Create a minimal MSBuild project file.  
+-   Создание минимального файла проекта MSBuild.  
   
--   Extend the PATH environment variable to include MSBuild.  
+-   Расширение переменной среды PATH для включения MSBuild.  
   
--   Build the application by using the project file.  
+-   Построение приложения с помощью файла проекта.  
   
--   Add properties to control the build.  
+-   Добавление свойств для управления построением.  
   
--   Control the build by changing property values.  
+-   Управление построением с помощью изменений значений свойства.  
   
--   Add targets to the build.  
+-   Добавление целей к построению.  
   
--   Control the build by specifying targets.  
+-   Управление построением путем указания целей.  
   
--   Build incrementally.  
+-   Последовательное построение.  
   
- This walkthrough shows how to build the project at the command prompt and examine the results. For more information about MSBuild and how to run MSBuild at the command prompt, see [Walkthrough: Using MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+ В этом пошаговом руководстве показан способ построения проекта в командной строке и проверка результатов. Дополнительные сведения о платформе MSBuild и ее запуске из командной строки см. в статье [Пошаговое руководство. Использование MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
- To complete the walkthrough, you must have the .NET Framework (version 2.0, 3.5, 4.0, or 4.5) installed because it includes MSBuild and the Visual C# compiler, which are required for the walkthrough.  
+ Для выполнения пошагового руководства необходимо установить платформу .NET Framework версии 2.0, 3.5, 4.0 или 4.5 — она включает MSBuild и компилятор Visual C#.  
   
-## <a name="creating-a-minimal-application"></a>Creating a Minimal Application  
- This section shows how to create a minimal Visual C# application source file by using a text editor.  
+## <a name="creating-a-minimal-application"></a>Создание минимального приложения  
+ Этот раздел описывает процедуру создания исходного файла минимального приложения Visual C# с помощью текстового редактора.  
   
-#### <a name="to-create-the-minimal-application"></a>To create the minimal application  
+#### <a name="to-create-the-minimal-application"></a>Создание минимального приложения  
   
-1.  At the command prompt, browse to the folder where you want to create the application, for example, \My Documents\ or \Desktop\\.  
+1.  В командной строке перейдите к папке, в которой необходимо создать приложение, например \Мои документы\ или \Рабочий стол\\.  
   
-2.  Type **md HelloWorld** to create a subfolder named \HelloWorld\\.  
+2.  Введите **md HelloWorld**, чтобы создать подпапку \Helloworld\\.  
   
-3.  Type **cd HelloWorld** to change to the new folder.  
+3.  Введите **cd HelloWorld**, чтобы изменить новую папку.  
   
-4.  Start Notepad or another text editor, and then type the following code.  
+4.  Запустите "Блокнот" или другой текстовый редактор и введите следующий код.  
   
     ```csharp
     using System;  
@@ -94,39 +94,39 @@ Programming languages that target the .NET Framework use MSBuild project files t
     }  
     ```  
   
-5.  Save this source code file and name it Helloworld.cs.  
+5.  Сохраните файл исходного кода и назовите его Helloworld.cs.  
   
-6.  Build the application by typing **csc helloworld.cs** at the command prompt.  
+6.  Создайте приложение, указав в командной строке **csc helloworld.cs**.  
   
-7.  Test the application by typing **helloworld** at the command prompt.  
+7.  Проверьте приложение, указав в командной строке **helloworld**.  
   
-     The **Hello, world!** message should be displayed.  
+     Должно появиться сообщение **Hello, world!** .  
   
-8.  Delete the application by typing **del helloworld.exe** at the command prompt.  
+8.  Удалите приложение, указав в командной строке **del helloworld.exe**.  
   
-## <a name="creating-a-minimal-msbuild-project-file"></a>Creating a Minimal MSBuild Project File  
- Now that you have a minimal application source file, you can create a minimal project file to build the application. This project file contains the following elements:  
+## <a name="creating-a-minimal-msbuild-project-file"></a>Создание минимального файла проекта MSBuild  
+ Теперь, когда у вас есть минимальный исходный файл приложения, вы можете создать минимальный файл проекта для построения приложения. Такой файл проекта содержит следующие элементы.  
   
--   The required root `Project` node.  
+-   Необходимый корневой узел `Project`.  
   
--   An `ItemGroup` node to contain item elements.  
+-   Узел `ItemGroup` для хранения элементов.  
   
--   An item element that refers to the application source file.  
+-   Элемент, который ссылается на исходный файл приложения.  
   
--   A `Target` node to contain tasks that are required to build the application.  
+-   Узел `Target` для хранения задач, которые требуются для построения приложения.  
   
--   A `Task` element to start the Visual C# compiler to build the application.  
+-   Элемент `Task` для запуска компилятора Visual C# для построения приложения.  
   
-#### <a name="to-create-a-minimal-msbuild-project-file"></a>To create a minimal MSBuild project file  
+#### <a name="to-create-a-minimal-msbuild-project-file"></a>Создание файла минимального проекта MSBuild  
   
-1.  In the text editor, replace the existing text by using these two lines:  
+1.  В текстовом редакторе замените существующий текст с помощью следующих двух строк:  
   
     ```xml  
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     </Project>  
     ```  
   
-2.  Insert this `ItemGroup` node as a child element of the `Project` node:  
+2.  Вставьте следующий узел `ItemGroup` в качестве дочернего элемента узла `Project`:  
   
     ```xml  
     <ItemGroup>  
@@ -134,24 +134,24 @@ Programming languages that target the .NET Framework use MSBuild project files t
     </ItemGroup>  
     ```  
   
-     Notice that this `ItemGroup` already contains an item element.  
+     Обратите внимание, что узел `ItemGroup` уже содержит элемент.  
   
-3.  Add a `Target` node as a child element of the `Project` node. Name the node `Build`.  
+3.  Добавьте узел `Target` в качестве дочернего элемента узла `Project`. Назовите узел `Build`.  
   
     ```xml  
     <Target Name="Build">  
     </Target>  
     ```  
   
-4.  Insert this task element as a child element of the `Target` node:  
+4.  Вставьте следующий элемент задачи в качестве дочернего элемента узла `Target`.  
   
     ```xml  
     <Csc Sources="@(Compile)"/>  
     ```  
   
-5.  Save this project file and name it Helloworld.csproj.  
+5.  Сохраните этот файл проекта и назовите его Helloworld.csproj.  
   
- Your minimal project file should resemble the following code:  
+ Минимальный файл проекта должен выглядеть следующим образом:  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -164,56 +164,56 @@ Programming languages that target the .NET Framework use MSBuild project files t
 </Project>  
 ```  
   
- Tasks in the Build target are executed sequentially. In this case, the Visual C# compiler `Csc` task is the only task. It expects a list of source files to compile, and this is given by the value of the `Compile` item. The `Compile` item references just one source file, Helloworld.cs.  
+ Задачи в целевом объекте сборки выполняются последовательно. В этом случае задача `Csc` компилятора Visual C# является единственной. Она ожидает список исходных файлов для компилирования, который задается значением элемента `Compile`. Элемент `Compile` ссылается на единственный исходный файл Helloworld.cs.  
   
 > [!NOTE]
->  In the item element, you can use the asterisk wildcard character (*) to reference all files that have the .cs file name extension, as follows:  
+>  В элементе можно использовать подстановочный знак (*) для ссылки на все файлы, которые имеют расширение имени файла .CS:  
 >   
 >  `<Compile Include="*.cs" />`  
 >   
->  However, we do not recommend the use of wildcard characters because it makes debugging and selective targeting more difficult if source files are added or deleted.  
+>  Тем не менее мы не рекомендуем использовать подстановочные знаки, так как это создает сложности при отладке и постановке выборочных задач в случае добавления или удаления исходных файлов.  
   
-## <a name="extending-the-path-to-include-msbuild"></a>Extending the Path to Include MSBuild  
- Before you can access MSBuild, you must extend the PATH environment variable to include the .NET Framework folder.  
+## <a name="extending-the-path-to-include-msbuild"></a>Расширение пути для включения MSBuild  
+ Прежде чем получить доступ к MSBuild, необходимо расширить переменную среду PATH для включения папки .NET Framework.  
   
-#### <a name="to-add-msbuild-to-your-path"></a>To add MSBuild to your path  
+#### <a name="to-add-msbuild-to-your-path"></a>Добавление MSBuild к пути  
   
--   Starting in Visual Studio 2013, you can find MSBuild.exe in the MSBuild folder (`%ProgramFiles%\MSBuild` on a 32-bit operating system, or `%ProgramFiles(x86)%\MSBuild` on a 64-bit operating system).  
+-   Начиная с Visual Studio 2013, файл MSBuild.exe находится в папке MSBuild (`%ProgramFiles%\MSBuild` 32-разрядной операционной системы или `%ProgramFiles(x86)%\MSBuild` 64-разрядной операционной системы).  
   
-     At the command prompt, type **set PATH=%PATH%;%ProgramFiles%\MSBuild** or **set PATH=%PATH%;%ProgramFiles(x86)%\MSBuild**.  
+     В командной строке введите **set PATH= %PATH %; %ProgramFiles %\MSBuild** или **set PATH= %PATH %; %ProgramFiles(x86) %\MSBuild**.  
   
-     Alternatively, if you have Visual Studio installed, you can use the **Visual Studio Command Prompt**, which has a path that includes the MSBuild folder.  
+     Если на вашем компьютере установлено ПО Visual Studio, воспользуйтесь **командной строкой Visual Studio**, где имеется путь с указанием папки MSBuild.  
   
-## <a name="using-the-project-file-to-build-the-application"></a>Using the Project File to Build the Application  
- Now, to build the application, use the project file that you just created.  
+## <a name="using-the-project-file-to-build-the-application"></a>Использование файла проекта для построения приложения  
+ Теперь используйте только что созданный файл проекта для построения приложения.  
   
-#### <a name="to-build-the-application"></a>To build the application  
+#### <a name="to-build-the-application"></a>Построение приложения  
   
-1.  At the command prompt, type **msbuild helloworld.csproj /t:Build**.  
+1.  В командной строке введите **msbuild helloworld.csproj /t:Build**.  
   
-     This builds the Build target of the Helloworld project file by invoking the Visual C# compiler to create the Helloworld application.  
+     После этого для создания приложения "Helloworld" будет вызван компилятор Visual C# и построен целевой объект построения файла проекта Helloworld.  
   
-2.  Test the application by typing **helloworld**.  
+2.  Протестируйте приложение, указав в командной строке **helloworld**.  
   
-     The **Hello, world!** message should be displayed.  
+     Должно появиться сообщение **Hello, world!** .  
   
 > [!NOTE]
->  You can see more details about the build by increasing the verbosity level. To set the verbosity level to "detailed", type either of these commands at the command prompt:  
+>  Чтобы получить более подробную информацию о построении, увеличьте уровень детализации. Чтобы изменить уровень детализации на "подробный", введите в командную строку одну из следующих команд:  
 >   
 >  **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
   
-## <a name="adding-build-properties"></a>Adding Build Properties  
- You can add build properties to the project file to further control the build. Now add these properties:  
+## <a name="adding-build-properties"></a>Добавление свойств сборки  
+ Для дальнейшего управления построением можно добавлять свойства построения к файлу проекта. Добавьте следующие свойства.  
   
--   An `AssemblyName` property to specify the name of the application.  
+-   Свойство `AssemblyName`, чтобы указать имя приложения.  
   
--   An `OutputPath` property to specify a folder to contain the application.  
+-   Свойство `OutputPath`, чтобы указать папку для хранения приложения.  
   
-#### <a name="to-add-build-properties"></a>To add build properties  
+#### <a name="to-add-build-properties"></a>Добавление свойств построения  
   
-1.  Delete the existing application by typing **del helloworld.exe** at the command prompt.  
+1.  Удалите существующее приложение, указав в командной строке **del helloworld.exe**.  
   
-2.  In the project file, insert this `PropertyGroup` element just after the opening `Project` element:  
+2.  В файле проекта вставьте этот элемент `PropertyGroup` сразу после начала элемента `Project`:  
   
     ```xml  
     <PropertyGroup>  
@@ -222,25 +222,25 @@ Programming languages that target the .NET Framework use MSBuild project files t
     </PropertyGroup>  
     ```  
   
-3.  Add this task to the Build target, just before the `Csc` task:  
+3.  Добавьте задачу в целевой объект построения непосредственно перед задачей `Csc`:  
   
     ```xml  
     <MakeDir Directories="$(OutputPath)"      Condition="!Exists('$(OutputPath)')" />  
     ```  
   
-     The `MakeDir` task creates a folder that is named by the `OutputPath` property, provided that no folder by that name currently exists.  
+     Задача `MakeDir` создает папку, которой присваивается имя свойства `OutputPath`, при условии, что папка с таким именем не существует.  
   
-4.  Add this `OutputAssembly` attribute to the `Csc` task:  
+4.  Добавьте следующий атрибут `OutputAssembly` к задаче `Csc`:  
   
     ```xml  
     <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)$(AssemblyName).exe" />  
     ```  
   
-     This instructs the Visual C# compiler to produce an assembly that is named by the `AssemblyName` property and to put it in the folder that is named by the `OutputPath` property.  
+     Он поручает компилятору Visual C# создать сборку, присвоить ей имя свойства `AssemblyName` и вставить в папку, которой присвоено имя свойства `OutputPath`.  
   
-5.  Save your changes.  
+5.  Сохраните изменения.  
   
- Your project file should now resemble the following code:  
+ Файл проекта должен выглядеть следующим образом:  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -259,45 +259,45 @@ Programming languages that target the .NET Framework use MSBuild project files t
 ```  
   
 > [!NOTE]
->  We recommend that you add the backslash (\\) path delimiter at the end of the folder name when you specify it in the `OutputPath` element, instead of adding it in the `OutputAssembly` attribute of the `Csc` task. Therefore,  
+>  Мы рекомендуем добавить разделитель пути в виде обратной косой черты (\\) в конце имени папки при его указании в элементе `OutputPath`, вместо добавления его в атрибут `OutputAssembly` задачи `Csc`. Поэтому  
 >   
 >  `<OutputPath>Bin\</OutputPath>`  
 >   
 >  `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`  
 >   
->  is better than  
+>  лучше, чем   
 >   
 >  `<OutputPath>Bin</OutputPath>`  
 >   
 >  `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`  
   
-## <a name="testing-the-build-properties"></a>Testing the Build Properties  
- Now you can build the application by using the project file in which you used build properties to specify the output folder and application name.  
+## <a name="testing-the-build-properties"></a>Тестирование свойств построения  
+ Теперь вы можете построить приложение с использованием файла проекта, в котором использовались свойства построения, и указать папку вывода и имя приложения.  
   
-#### <a name="to-test-the-build-properties"></a>To test the build properties  
+#### <a name="to-test-the-build-properties"></a>Тестирование свойств построения  
   
-1.  At the command prompt, type **msbuild helloworld.csproj /t:Build**.  
+1.  В командной строке введите **msbuild helloworld.csproj /t:Build**.  
   
-     This creates the \Bin\ folder and then invokes the Visual C# compiler to create the MSBuildSample application and puts it in the \Bin\ folder.  
+     После этого программа создаст папку \Bin\, вызовет компилятор Visual C# для создания приложения MSBuildSample и разместит его в папку \Bin\.  
   
-2.  To verify that the \Bin\ folder has been created, and that it contains the MSBuildSample application, type **dir Bin**.  
+2.  Чтобы убедиться, что папка \Bin\ создана и содержит приложение MSBuildSample, введите **dir Bin**.  
   
-3.  Test the application by typing **Bin\MSBuildSample**.  
+3.  Протестируйте приложение, указав в командной строке **Bin\MSBuildSample**.  
   
-     The **Hello, world!** message should be displayed.  
+     Должно появиться сообщение **Hello, world!** .  
   
-## <a name="adding-build-targets"></a>Adding Build Targets  
- Next, add two more targets to the project file, as follows:  
+## <a name="adding-build-targets"></a>Добавление целей сборки  
+ Теперь добавьте к файлу проекта еще две цели.  
   
--   A Clean target that deletes old files.  
+-   Цель "Очистить", которая удаляет старые файлы.  
   
--   A Rebuild target that uses the `DependsOnTargets` attribute to force the Clean task to run before the Build task.  
+-   Цель "Перестроить", которая использует атрибут `DependsOnTargets` для принудительного запуска задачи "Очистить" перед выполнением задачи "Построение".  
   
- Now that you have multiple targets, you can set the Build target as the default target.  
+ Теперь, когда целей несколько, можно задать в качестве цели по умолчанию цель "Построение".  
   
-#### <a name="to-add-build-targets"></a>To add build targets  
+#### <a name="to-add-build-targets"></a>Добавление целей построения  
   
-1.  In the project file, add these two targets just after the Build target:  
+1.  В файле проекта добавьте эти две цели сразу после цели "Построение":  
   
     ```xml  
     <Target Name="Clean" >  
@@ -306,17 +306,17 @@ Programming languages that target the .NET Framework use MSBuild project files t
     <Target Name="Rebuild" DependsOnTargets="Clean;Build" />  
     ```  
   
-     The Clean target invokes the Delete task to delete the application. The Rebuild target does not run until both the Clean target and the Build target have run. Although the Rebuild target has no tasks, it causes the Clean target to run before the Build target.  
+     Цель "Очистить" вызывает задачу "Удалить", чтобы удалить приложение. Цель "Перестроить" не запускается, пока не будут выполнены цели "Очистить" и "Построение". Несмотря на то, что цель "Перестроить" не имеет задач, она вызывает выполнение цели "Очистить" до выполнения цели "Построение".  
   
-2.  Add this `DefaultTargets` attribute to the opening `Project` element:  
+2.  Добавьте следующий атрибут `DefaultTargets` в начало элемента `Project`:  
   
     ```xml  
     <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     ```  
   
-     This sets the Build target as the default target.  
+     Это сделает цель "Построение" целью по умолчанию.  
   
- Your project file should now resemble the following code:  
+ Файл проекта должен выглядеть следующим образом:  
   
 ```xml  
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -338,59 +338,59 @@ Programming languages that target the .NET Framework use MSBuild project files t
 </Project>  
 ```  
   
-## <a name="testing-the-build-targets"></a>Testing the Build Targets  
- You can exercise the new build targets to test these features of the project file:  
+## <a name="testing-the-build-targets"></a>Тестирование целей построения  
+ Для тестирования этих функций файла проекта можно запустить новые цели построения.  
   
--   Building the default build.  
+-   Построение по умолчанию.  
   
--   Setting the application name at the command prompt.  
+-   Задание имени приложения в командной строке.  
   
--   Deleting the application before another application is built.  
+-   Удаление приложения перед построением другого приложения.  
   
--   Deleting the application without building another application.  
+-   Удаление приложения без построения другого приложения.  
   
-#### <a name="to-test-the-build-targets"></a>To test the build targets  
+#### <a name="to-test-the-build-targets"></a>Тестирование целей построения  
   
-1.  At the command prompt, type **msbuild helloworld.csproj /p:AssemblyName=Greetings**.  
+1.  В командной строке введите **msbuild helloworld.csproj /p:AssemblyName=Greetings**.  
   
-     Because you did not use the **/t** switch to explicitly set the target, MSBuild runs the default Build target. The **/p** switch overrides the `AssemblyName` property and gives it the new value, `Greetings`. This causes a new application, Greetings.exe, to be created in the \Bin\ folder.  
+     Так как параметр **/t** для задания цели напрямую не использовался, MSBuild запускает цель "Сборка" по умолчанию. Параметр **/p** переопределяет свойство `AssemblyName` и присваивает ему новое значение `Greetings`. В результате в папке \Bin\ создается новое приложение Greetings.exe.  
   
-2.  To verify that the \Bin\ folder contains both the MSBuildSample application and the new Greetings application, type **dir Bin**.  
+2.  Чтобы убедиться, что в папке \Bin\ находится приложение MSBuildSample и новое приложение Greetings, введите **dir Bin**.  
   
-3.  Test the Greetings application by typing **Bin\Greetings**.  
+3.  Протестируйте приложение Greetings, указав в командной строке **Bin\Greetings**.  
   
-     The **Hello, world!** message should be displayed.  
+     Должно появиться сообщение **Hello, world!** .  
   
-4.  Delete the MSBuildSample application by typing **msbuild helloworld.csproj /t:clean**.  
+4.  Удалите приложение MSBuildSample, указав **msbuild helloworld.csproj /t:clean**.  
   
-     This runs the Clean task to remove the application that has the default `AssemblyName` property value, `MSBuildSample`.  
+     Это запустит задачу "Очистить" и позволит удалить приложение со значением свойства `AssemblyName` по умолчанию — `MSBuildSample`.  
   
-5.  Delete the Greetings application by typing **msbuild helloworld.csproj /t:clean /p:AssemblyName=Greetings**.  
+5.  Удалите приложение Greetings, указав **msbuild helloworld.csproj /t:clean /p:AssemblyName=Greetings**.  
   
-     This runs the Clean task to remove the application that has the given **AssemblyName** property value, `Greetings`.  
+     Это запустит задачу "Очистить" и позволит удалить приложение с заданным значением свойства **AssemblyName** по умолчанию — `Greetings`.  
   
-6.  To verify that the \Bin\ folder is now empty, type **dir Bin**.  
+6.  Чтобы убедиться, что папка \Bin\ пуста, введите **dir Bin**.  
   
-7.  Type **msbuild**.  
+7.  Введите команду **msbuild**.  
   
-     Although a project file is not specified, MSBuild builds the helloworld.csproj file because there is only one project file in the current folder. This causes the MSBuildSample application to be created in the \Bin\ folder.  
+     Несмотря на то что файл проекта не указан, MSBuild строит файл helloworld.csproj, поскольку в текущей папке присутствует только один файл проекта. В результате в папке \Bin\ создается новое приложение MSBuildSample.  
   
-     To verify that the \Bin\ folder contains the MSBuildSample application, type **dir Bin**.  
+     Чтобы убедиться, что в папке \Bin\ появилось приложение MSBuildSample, введите **dir Bin**.  
   
-## <a name="building-incrementally"></a>Building Incrementally  
- You can tell MSBuild to build a target only if the source files or target files that the target depends on have changed. MSBuild uses the time stamp of a file to determine whether it has changed.  
+## <a name="building-incrementally"></a>Последовательное построение  
+ MSBuild можно настроить таким образом, чтобы цель строилась только в случае изменения исходного файла или целевых файлов, от которых зависит цель. MSBuild определяет факт изменения файла по отметке времени.  
   
-#### <a name="to-build-incrementally"></a>To build incrementally  
+#### <a name="to-build-incrementally"></a>Последовательное построение  
   
-1.  In the project file, add these attributes to the opening Build target:  
+1.  В файле проекта добавьте к открытой цели "Построение" следующие два атрибута:  
   
     ```  
     Inputs="@(Compile)" Outputs="$(OutputPath)$(AssemblyName).exe"  
     ```  
   
-     This specifies that the Build target depends on the input files that are specified in the `Compile` item group, and that the output target is the application file.  
+     Они показывают, что цель "Построение" зависит от входных файлов, указанных в группе элементов `Compile`, и что цель вывода является файлом приложения.  
   
-     The resulting Build target should resemble the following code:  
+     Полученная цель "Построение" должна выглядеть следующим образом:  
   
     ```xml  
     <Target Name="Build" Inputs="@(Compile)" Outputs="$(OutputPath)$(AssemblyName).exe">  
@@ -399,28 +399,28 @@ Programming languages that target the .NET Framework use MSBuild project files t
     </Target>  
     ```  
   
-2.  Test the Build target by typing **msbuild /v:d** at the command prompt.  
+2.  Протестируйте цель "Сборка", указав в командной строке **msbuild /v:d**.  
   
-     Remember that helloworld.csproj is the default project file, and that Build is the default target.  
+     Помните, что helloworld.csproj является файлом проекта по умолчанию, а построение — целью по умолчанию.  
   
-     The **/v:d** switch specifies a verbose description for the build process.  
+     Параметр **/v:d** указывает подробное описание для процесса сборки.  
   
-     These lines should be displayed:  
+     На экране должны появиться следующие строки:  
   
-     **Skipping target "Build" because all output files are up-to-date with respect to the input files.**  
+     **Целевой объект "Сборка" пропускается, так как все выходные файлы актуальны по отношению к входным.**  
   
-     **Input files: HelloWorld.cs**  
+     **Входные файлы: HelloWorld.cs**  
   
-     **Output files: BinMSBuildSample.exe**  
+     **Выходные файлы: BinMSBuildSample.exe**  
   
-     MSBuild skips the Build target because none of the source files have changed since the application was last built.  
+     MSBuild пропускает цель "Построение", так как с последнего построения приложения ни один из исходных файлов не изменился.  
   
-## <a name="example"></a>Example  
+## <a name="example"></a>Пример  
   
-### <a name="description"></a>Description  
- The following example shows a project file that compiles a [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application and logs a message that contains the output file name.  
+### <a name="description"></a>Описание  
+ В следующем примере показан файл проекта, который компилирует приложение [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] и записывает сообщение, содержащее имя файла вывода.  
   
-### <a name="code"></a>Code  
+### <a name="code"></a>Код  
   
 ```xml
 <Project DefaultTargets = "Compile"  
@@ -453,14 +453,14 @@ Programming languages that target the .NET Framework use MSBuild project files t
 </Project>  
 ```  
   
-### <a name="comments"></a>Comments  
+### <a name="comments"></a>Комментарии  
   
-## <a name="example"></a>Example  
+## <a name="example"></a>Пример  
   
-### <a name="description"></a>Description  
- The following example shows a project file that compiles a [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] application and logs a message that contains the output file name.  
+### <a name="description"></a>Описание  
+ В следующем примере показан файл проекта, который компилирует приложение [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] и записывает сообщение, содержащее имя файла вывода.  
   
-### <a name="code"></a>Code  
+### <a name="code"></a>Код  
   
 ```xml  
 <Project DefaultTargets = "Compile"  
@@ -493,9 +493,9 @@ Programming languages that target the .NET Framework use MSBuild project files t
 </Project>  
 ```  
   
-## <a name="whats-next"></a>What's Next?  
- Visual Studio can automatically do much of the work that is shown in this walkthrough. To learn how to use Visual Studio to create, edit, build, and test MSBuild project files, see [Walkthrough: Using MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+## <a name="whats-next"></a>Что дальше?  
+ Visual Studio может выполнять большую часть работы, описанной в этом пошаговом руководстве, автоматически. Сведения об использовании Visual Studio для создания, изменения, сборки и тестирования файлов проекта MSBuild см. в разделе [Пошаговое руководство. Использование MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
-## <a name="see-also"></a>See Also  
-[MSBuild Overview](../msbuild/msbuild.md)  
- [MSBuild Reference](../msbuild/msbuild-reference.md)
+## <a name="see-also"></a>См. также  
+[MSBuild Overview](../msbuild/msbuild.md) (Общие сведения о MSBuild)  
+ [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: Use UI Automation To Test Your Code | Microsoft Docs
+title: "Использование модели автоматизации пользовательского интерфейса для тестирования кода | Документы Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -40,103 +40,103 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 745908c5c5f8f4844ea6bbe80111bb32bf4dbac3
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="use-ui-automation-to-test-your-code"></a>Use UI Automation To Test Your Code
-Automated tests that drive your application through its user interface (UI) are known as *coded UI tests* (CUITs). These tests include functional testing of the UI controls. They let you verify that the whole application, including its user interface, is functioning correctly. Coded UI Tests are particularly useful where there is validation or other logic in the user interface, for example in a web page. They are also frequently used to automate an existing manual test.  
+# <a name="use-ui-automation-to-test-your-code"></a>Использование модели автоматизации пользовательского интерфейса для тестирования кода
+Автоматизированные тесты пользовательского интерфейса приложений называются *закодированными тестами пользовательского интерфейса*. Эти тесты обеспечивают функциональное тестирование элементов управления ИП. Они позволяют убедиться, что все приложение, в том числе интерфейс, работает правильно. Закодированные тесты ИП, в частности, полезны, если интерфейс содержит логику проверки или другую логику, например на веб-странице. Они также часто используются для автоматизации существующих ручных тестов.  
   
- As shown in the following illustration, a typical development experience might be one where, initially, you simply build your application (F5) and click through the UI controls to verify that things are working correctly. You then might decide to create a coded test so that you don't need to continue to test the application manually. Depending on the particular functionality being tested in your application, you can write code for either a functional test, or for an integration test that might or might not include testing at the UI level. If you simply want to directly access some business logic, you might code a unit test. However, under certain circumstances, it can be beneficial to include testing of the various UI controls in your application. A coded UI test can automate the initial (F5) scenario, verifying that code churn does not impact the functionality of your application.  
+ Как показано на следующем рисунке, обычный процесс тестирования во время разработки может состоять из построения приложения (F5) и поочередной проверки элементов управления. Затем вы можете создать закодированный тест, чтобы не проверять приложение вручную. В зависимости от конкретной тестируемой функции можно написать код для функционального теста или интеграционного теста, который может содержать проверку на уровне ИП (или нет). Если вы хотите просто получить доступ к бизнес-логике, вы можете написать модульный тест. Однако в некоторых ситуациях может быть полезно включить тестирование различных элементов управления в приложение. Закодированный тест ИП может автоматизировать изначальный сценарий (F5), подтверждая, что обработка кода не влияет на работу приложения.  
   
- ![Testing during application development](../test/media/cuit_overview.png "CUIT_Overview")  
+ ![Тестирование во время разработки приложения](../test/media/cuit_overview.png "CUIT_Overview")  
   
- Creating a coded UI test is easy. You simply perform the test manually while the CUIT Test Builder runs in the background. You can also specify what values should appear in specific fields. The CUIT Test Builder records your actions and generates code from them. After the test is created, you can edit it in a specialized editor that lets you modify the sequence of actions.  
+ Создать закодированный тест ИП легко. Просто выполните тест вручную, пока построитель кодированных тестов ИП работает в фоновом режиме. Вы также можете указать, какие значения должны быть в определенных полях. Построитель кодированных тестов ИП записывает ваши действия и создает на их основе код. После создания теста вы можете изменить последовательность действий в специальном редакторе.  
   
- Alternatively, if you have a test case that was recorded in Microsoft Test Manager, you can generate code from that. For more information, see [Record and play back manual tests](/devops-test-docs/test/record-and-play-back-manual-tests).  
+ Если у вас есть тестовый случай, записанный в Microsoft Test Manager, вы можете создать код на его основе. Дополнительные сведения см. в разделе [Запись и воспроизведение ручных тестов](/devops-test-docs/test/record-and-play-back-manual-tests).  
   
- The specialized CUIT Test Builder and editor make it easy to create and edit coded UI tests even if your main skills are concentrated in testing rather than coding. But if you are a developer and you want to extend the test in a more advanced way, the code is structured so that it is straightforward to copy and adapt. For example, you might record a test to buy something at a website, and then edit the generated code to add a loop that buys many items.  
+ Специализированные построитель кодированных тестов ИП и редактор упрощают создание и изменение закодированных тестов ИП, даже если вы больше разбираетесь в тестировании, а не программировании. Но если вы разработчик и хотите расширить возможности теста, вы легко сможете скопировать и адаптировать код, потому что он структурирован. Например, можно записать тест покупки какого-либо продукта на веб-сайте, а затем добавить в созданный код цикл для покупки множества продуктов.  
   
  **Requirements**  
   
 -   Visual Studio Enterprise  
   
- For more information about which platforms and configurations are supported by coded UI tests, see [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).  
+ Дополнительные сведения о платформах и конфигурациях, поддерживаемых закодированными тестами пользовательского интерфейса, см. в разделе [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).  
   
- **In this topic**  
+ **Содержание раздела**  
   
--   [Creating Coded UI Tests](#VerifyingCodeUsingCUITCreate)  
+-   [Создание закодированных тестов пользовательского интерфейса](#VerifyingCodeUsingCUITCreate)  
   
-    -   [Main procedure](#VerifyingCodeUsingCUITCreate)  
+    -   [Основная процедура](#VerifyingCodeUsingCUITCreate)  
   
-    -   [Starting and stopping the application](#starting)  
+    -   [Запуск и остановка приложения](#starting)  
   
-    -   [Validating the properties of UI Controls](#VerifyingCodeUsingCUITGenerateAssertions)  
+    -   [Проверка свойства элементов управления пользовательского интерфейса](#VerifyingCodeUsingCUITGenerateAssertions)  
   
--   [Customizing your coded UI test](#VerifyingCodeCUITModify)  
+-   [Настройка закодированного теста пользовательского интерфейса](#VerifyingCodeCUITModify)  
   
-    -   [The Generated Code](#generatedCode)  
+    -   [Сформированный код](#generatedCode)  
   
-    -   [Coding UI control actions and properties](#actions)  
+    -   [Программирование действий и свойств элементов управления пользовательского интерфейса](#actions)  
   
-    -   [Debugging](#debugging)  
+    -   [Отладка](#debugging)  
   
--   [What's Next](#VerifyCodeUsingCUITWhatsNext)  
+-   [Дальнейшие действия](#VerifyCodeUsingCUITWhatsNext)  
   
-##  <a name="VerifyingCodeUsingCUITCreate"></a> Creating Coded UI Tests  
+##  <a name="VerifyingCodeUsingCUITCreate"></a> Создание закодированных тестов пользовательского интерфейса  
   
-1.  **Create a Coded UI Test project.**  
+1.  **Создание проекта закодированного теста пользовательского интерфейса**  
   
-     Coded UI tests must be contained in a coded UI test project. If you don't already have a coded UI test project, create one. In **Solution Explorer**, on the shortcut menu of the solution, choose **Add**, **New Project** and then select either **Visual Basic** or **Visual C#**. Next, choose **Test**, **Coded UI Test**.  
+     Закодированные тесты ИП должны размещаться в проекте закодированного теста. Если вы не сделали этого ранее, создайте такой проект. В **обозревателе решений** в контекстном меню решения выберите команду **Добавить**, щелкните **Новый проект** и выберите **Visual Basic** или **Visual C#**. Затем выберите **Тест** **Закодированный тест пользовательского интерфейса**.  
   
-    -   *I don't see the **Coded UI Test** project templates.*  
+    -   *Я не вижу шаблоны проектов **закодированных тестов пользовательского интерфейса**.*  
   
-         You might be using a version of Visual Studio that does not support coded UI tests. To create coded UI tests, you must use Visual Studio Enterprise.  
+         Возможно, вы используете версию Visual Studio, которая не поддерживает закодированные тесты пользовательского интерфейса. Для создания закодированных тестов пользовательского интерфейса необходимо использовать Visual Studio Enterprise.  
   
-2.  **Add a coded UI test file.**  
+2.  **Добавьте файл закодированного теста пользовательского интерфейса.**  
   
-     If you just created a Coded UI project, the first CUIT file is added automatically. To add another test file, open the shortcut menu on the coded UI test project, point to **Add**, and then choose **Coded UI Test**.  
+     Если вы только что создали проект, первый файл CUIT добавляется автоматически. Чтобы добавить другой файл теста, откройте контекстное меню проекта закодированного теста пользовательского интерфейса, выберите команду **Добавить** и щелкните **Закодированный тест пользовательского интерфейса**.  
   
-     ![Create a coded UI test](../test/media/codedui_create.png "CodedUI_Create")  
+     ![Создание закодированного теста пользовательского интерфейса](../test/media/codedui_create.png "CodedUI_Create")  
   
-     In the **Generate Code for Coded UI Test** dialog box, choose **Record actions, edit UI map or add assertions**.  
+     В диалоговом окне **Формирование кода для кодированного теста пользовательского интерфейса** выберите пункт **Записать действия, изменить карту ИП или добавить утверждения**.  
   
-     ![Select record actions](../test/media/codedui_codegendialogb.png "CodedUI_CodeGenDialogB")  
+     ![Выбор действия для записей](../test/media/codedui_codegendialogb.png "CodedUI_CodeGenDialogB")  
   
-     The Coded UI Test Builder appears and Visual Studio is minimized.  
+     Откроется построитель кодированных тестов, а окно Visual Studio свернется.  
   
-     ![Coded UI Test Builder](../test/media/codedui_testbuilder.png "CodedUI_TestBuilder")  
+     ![Построитель закодированных тестов пользовательского интерфейса](../test/media/codedui_testbuilder.png "CodedUI_TestBuilder")  
   
-3.  **Record a sequence of actions**.  
+3.  **Запись последовательности действий**.  
   
-     **To start recording**, choose the **Record** icon. Perform the actions that you want to test in your application, including starting the application if that is required.  
+     **Чтобы начать запись**, щелкните значок **Запись**. Выполните действия, которые необходимо протестировать в приложении, в том числе запустите приложение, если это необходимо.  
   
-     For example, if you are testing a web application, you might start a browser, navigate to the web site, and log in to the application.  
+     Например, если вы тестируете веб-приложение, можно запустить браузер, перейти к веб-сайту и войти в приложение.  
   
-     **To pause recording**, for example if you have to deal with incoming mail, choose **Pause**.  
+     **Чтобы приостановить запись**, например если вы работаете с входящей почтой, выберите **Приостановить**.  
   
     > [!WARNING]
-    >  All actions performed on the desktop will be recorded. Pause the recording if you are performing actions that may lead to sensitive data being included in the recording.  
+    >  Все действия, выполненные на рабочем столе, будут записаны. Приостановите запись, если вы выполняете действия, которые могут привести к записи конфиденциальных данных.  
   
-     **To delete actions** that you recorded by mistake, choose **Edit Actions**.  
+     **Чтобы удалить действия**, записанные по ошибке, нажмите кнопку **Изменить действия**.  
   
-     **To generate code** that will replicate your actions, choose the **Generate Code** icon and type a name and description for your coded UI test method.  
+     **Чтобы создать код**, который будет повторять ваши действия, щелкните значок **Создать код** и введите имя и описание метода закодированного теста пользовательского интерфейса.  
   
-4.  **Verify the values in UI fields such as text boxes**.  
+4.  **Проверьте значения в полях пользовательского интерфейса, например в текстовых полях**.  
   
-     Choose **Add Assertions** in the Coded UI Test Builder, and then choose a UI control in your running application. In the list of properties that appears, select a property, for example, **Text** in a text box. On the shortcut menu, choose **Add Assertion**. In the dialog box, select the comparison operator, the comparison value, and the error message.  
+     Щелкните **Добавить утверждения** в построителе закодированных тестов пользовательского интерфейса, а затем выберите элемент управления в запущенном приложении. В списке свойств выберите свойство, например **Текст** в текстовом поле. В контекстном меню щелкните **Добавить утверждение**. В диалоговом окне выберите оператор сравнения, значение сравнения и сообщение об ошибке.  
   
-     Close the assertion window and choose **Generate Code**.  
+     Закройте окно утверждения и щелкните **Создать код**.  
   
-     ![Coded UI test targeting element](../test/media/codedui_1.png "CodedUI_1")  
+     ![Целевой элемент закодированного теста пользовательского интерфейса](../test/media/codedui_1.png "CodedUI_1")  
   
     > [!TIP]
-    >  Alternate between recording actions and verifying values. Generate code at the end of each sequence of actions or verifications. If you want, you will be able to insert new actions and verifications later.  
+    >  Переключайтесь между записью действий и проверкой значений. Создайте код в конце каждой последовательности действий или проверок. При необходимости вы сможете вставить новые действия и проверки позже.  
   
-     For more details, see [Validating Properties of Controls](#VerifyingCodeUsingCUITGenerateAssertions).  
+     Дополнительные сведения см. в разделе [Проверка свойств элементов управления](#VerifyingCodeUsingCUITGenerateAssertions).  
   
-5.  **View the generated test code**.  
+5.  **Просмотр созданного кода теста**.  
   
-     To view the generated code, close the UI Test Builder window. In the code, you can see the names that you gave to each step. The code is in the CUIT file that you created:  
+     Для просмотра созданного кода закройте окно построителя кодированных тестов ИП. В коде можно увидеть имена, которые вы присвоили каждому шагу. Код содержится в созданном файле CUIT:  
   
     ```csharp  
     [CodedUITest]  
@@ -153,63 +153,63 @@ Automated tests that drive your application through its user interface (UI) are 
     }  
     ```  
   
-6.  **Add more actions and assertions**.  
+6.  **Добавление действий и утверждений**.  
   
-     Place the cursor at the appropriate point in the test method and then, on the shortcut menu, choose **Generate Code for Coded UI Test**. New code will be inserted at that point.  
+     Наведите указатель на соответствующую точку в методе теста и затем в контекстном меню выберите команду **Сформировать код для закодированного теста пользовательского интерфейса**. В этой точке будет вставлен новый код.  
   
-7.  **Edit the detail of the test actions and the assertions**.  
+7.  **Изменение действий и утверждений теста**.  
   
-     Open UIMap.uitest. This file opens in the Coded UI Test Editor, where you can edit any sequence of actions that you recorded as well as edit your assertions.  
+     Откройте файл UIMap.uitest. Он откроется в редакторе закодированных тестов ИП, где вы сможете изменить любую записанную последовательность действий, а также утверждения.  
   
-     ![Coded UI Test Editor](../test/media/cuit_editor_edit.png "CUIT_Editor_edit")  
+     ![Редактор закодированных тестов пользовательского интерфейса](../test/media/cuit_editor_edit.png "CUIT_Editor_edit")  
   
-     For more information, see [Editing Coded UI Tests Using the Coded UI Test Editor](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
+     Дополнительные сведения см. в разделе [Изменение закодированных тестов пользовательского интерфейса с помощью редактора закодированных тестов пользовательского интерфейса](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
   
-8.  **Run the test**.  
+8.  **Запуск теста**.  
   
-     Use Test Explorer, or open the shortcut menu in the test method, and then choose **Run Tests**. For more information about how to run tests, see [Run unit tests with Test Explorer](../test/run-unit-tests-with-test-explorer.md) and *Additional options for running coded UI tests* in the [What's next?](#VerifyCodeUsingCUITWhatsNext) section at the end of this topic.  
+     Откройте обозреватель тестов или контекстное меню в методе теста и выберите пункт **Выполнить тесты**. Дополнительные сведения о запуске тестов см. в подразделах [Выполнение модульных тестов с помощью обозревателя тестов](../test/run-unit-tests-with-test-explorer.md) и *Дополнительные параметры для запуска закодированных тестов пользовательского интерфейса* раздела [Дальнейшие действия](#VerifyCodeUsingCUITWhatsNext) в конце этой статьи.  
   
- The remaining sections in this topic provide more detail about the steps in this procedure.  
+ Эта процедура более подробно описывается в следующих разделах.  
   
- For a more detailed example, see  [Walkthrough: Creating, Editing and Maintaining a Coded UI Test](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). In the walkthrough, you will create a simple Windows Presentation Foundation (WPF) application to demonstrate how to create, edit, and maintain a coded UI test. The walkthrough provides solutions for correcting tests that have been broken by various timing issues and control refactoring.  
+ Более подробный пример см. в разделе [Пошаговое руководство. Создание, изменение и обслуживание закодированного теста пользовательского интерфейса](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). В этом пошаговом руководстве создается простое приложение Windows Presentation Foundation (WPF), чтобы с его помощью продемонстрировать создание, редактирование и обслуживание закодированного теста ИП. В этом пошаговом руководстве приведены решения для корректировки тестов с проблемами, связанными со временем и рефакторингом элементов управления.  
   
-###  <a name="starting"></a> Starting and stopping the application under test  
- *I don't want to start and stop my application, browser, or database separately for each test. How do I avoid that?*  
+###  <a name="starting"></a> Запуск и остановка тестируемого приложения  
+ *Я не хочу запускать и останавливать приложение, браузер или базу данных отдельно для каждого теста. Как этого избежать?*  
   
--   ![Prerequsite](../test/media/prereq.png "Prereq") If you do not want to record the actions to start your application under test, you must start your application before you choose the **Record** icon.  
+-   ![Предварительное требование](../test/media/prereq.png "Prereq") Если вы не хотите записывать действия, чтобы запускать приложение во время тестирования, необходимо запустить приложение до нажатия значка **Запись**.  
   
--   ![Prerequsite](../test/media/prereq.png "Prereq")At the end of a test, the process in which the test runs is terminated. If you started your application in the test, the application usually closes.  If you do not want the test to close your application when it exits, you must add a .runsettings file to your solution and use the `KeepExecutorAliveAfterLegacyRun` option. For more information, see [Configure unit tests by using a .runsettings file](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).  
+-   ![Предварительное требование](../test/media/prereq.png "Prereq")В конце теста процесс, в котором тест выполняется, завершается. Если вы запустили приложение во время теста, оно обычно закрывается.  Если вы не хотите закрывать приложение, добавьте RUNSETTINGS-файл в решение и используйте параметр `KeepExecutorAliveAfterLegacyRun`. Дополнительные сведения см. в разделе [Настройка модульных тестов с помощью файла .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).  
   
--   ![Prerequsite](../test/media/prereq.png "Prereq") You can add a test initialize method, identified by a [TestInitialize] attribute, which runs code at the start of each test method. For example, you could start the application from the TestInitialize method.  
+-   ![Предварительное требование](../test/media/prereq.png "Prereq") Вы можете добавить метод инициализации теста, который определяется атрибутом [TestInitialize], для запуска кода в начале каждого метода теста. Например, в методе TestInitialize можно запустить приложение.  
   
--   ![Prerequsite](../test/media/prereq.png "Prereq") You can add a test cleanup method, identified by a [TestCleanup] attribute, that runs code at the end of each test method. For example, the method to close the application could be called from the TestCleanup method.  
+-   ![Предварительное требование](../test/media/prereq.png "Prereq") Вы можете добавить метод очистки теста, который определяется атрибутом [TestCleanup], для запуска кода в конце каждого метода теста. Например, метод для закрытия приложения можно вызвать в методе TestCleanup.  
   
-###  <a name="VerifyingCodeUsingCUITGenerateAssertions"></a> Validating the properties of UI controls  
- You can use the **Coded UI Test Builder** to add a user interface (UI) control to the <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> for your test, or to generate code for a validation method that uses an assertion for a UI control.  
+###  <a name="VerifyingCodeUsingCUITGenerateAssertions"></a> Проверка свойства элементов управления пользовательского интерфейса  
+ С помощью **построителя закодированных тестов пользовательского интерфейса** можно добавить элемент управления пользовательского интерфейса в <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> для вашего теста или создать код метода проверки, который использует утверждение для элемента управления.  
   
- To generate assertions for your UI controls, choose the **Add Assertions** tool in the Coded UI Test Builder and drag it to the control on the application under test that you want to verify is correct. When the box outlines your control, release the mouse. The control class code is immediately created in the `UIMap.Designer.cs` file.  
+ Чтобы создать утверждения для элементов управления, выберите средство **Добавить утверждения** в построителе закодированных тестов пользовательского интерфейса и перетащите его в тестируемое приложение. Когда вокруг элемента управления появится рамка, отпустите кнопку мыши. Код класса элемента управления будет создан в файле `UIMap.Designer.cs`.  
   
- ![Coded UI test targeting element](../test/media/codedui_1.png "CodedUI_1")  
+ ![Целевой элемент закодированного теста пользовательского интерфейса](../test/media/codedui_1.png "CodedUI_1")  
   
- The properties for this control are now listed in the **Add Assertions** dialog box.  
+ Свойства этого элемента управления появятся в диалоговом окне **Добавление утверждений**.  
   
- Another way of navigating to a particular control is to choose the arrow **(<<)** to expand the view for the **UI Control Map**. To find a parent, sibling, or child control, you can click anywhere on the map and use the arrow keys to move around the tree.  
+ Еще один способ перейти к определенному элементу управления — выбрать стрелку **(<<)**, чтобы развернуть представление **карты элементов управления пользовательского интерфейса**. Чтобы найти родительский, дочерний элемент управления или элемент управления с определенным родительским элементом, щелкните в любой точке на карте и с помощью стрелок перемещайтесь по дереву.  
   
- ![Coded UI test properties](../test/media/codedui_2.png "CodedUI_2")  
+ ![Свойства закодированного теста пользовательского интерфейса](../test/media/codedui_2.png "CodedUI_2")  
   
--   *I don't see any properties when I select a control in my application, or I don't see the control in the UI Control Map.*  
+-   *Я не вижу свойств при выборе элемента управления в приложении или не вижу элемент управления в карте элементов управления пользовательского интерфейса.*  
   
-     In the application code, the control that you want to verify must have a unique ID, such as an HTML ID attribute, or a WPF UId. You might need to update the application code to add these IDs.  
+     У элемента управления в коде приложения должен быть уникальный идентификатор, например атрибут ID в HTML или UID в WPF. Возможно, вам потребуется обновить код приложения, чтобы добавить эти идентификаторы.  
   
- Next, open the shortcut menu on the property for the UI control that you want to verify, and then point to **Add Assertion**. In the **Add Assertion** dialog box, select the **Comparator** for your assertion, for example <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A>, and type the value for your assertion in **Comparison Value**.  
+ Затем откройте контекстное меню свойства элемента управления, который следует проверить, и наведите указатель на пункт **Добавить утверждение**. В диалоговом окне **Добавление утверждения** выберите **Средство сравнения** для утверждения, например <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A>, и введите значение для утверждения в поле **Значение сравнения**.  
   
- ![Coded UI test assertions](../test/media/codedui_3.png "CodedUI_3")  
+ ![Утверждения закодированного теста пользовательского интерфейса](../test/media/codedui_3.png "CodedUI_3")  
   
- When you have added all your assertions for your test, choose **OK**.  
+ После добавления всех утверждений нажмите кнопку **ОК**.  
   
- To generate the code for your assertions and add the control to the UI map, choose the **Generate Code** icon. Type a name for your coded UI test method and a description for the method, which will be added as comments for the method. Choose **Add and Generate**. Next, choose the **Close** icon to close the **Coded UI Test Builder**. This generates code similar to the following code. For example, if the name you entered is `AssertForAddTwoNumbers`, the code will look like this example:  
+ Чтобы создать код для утверждений и добавить элемент управления на карту пользовательского интерфейса, щелкните значок **Создать код**. Введите имя закодированного метода теста ИП и описание метода, которое будет добавлено как комментарий. Нажмите кнопку **Добавить и создать**. Затем щелкните значок **Закрыть**, чтобы закрыть **построитель закодированных тестов пользовательского интерфейса**. После этого будет создан код, аналогичный следующему. Например, если вы ввели имя `AssertForAddTwoNumbers`, код будет выглядеть, как в этом примере:  
   
--   Adds a call to the assert method AssertForAddTwoNumbers to the test method in your coded UI test file:  
+-   Добавляет вызов метода утверждения AssertForAddTwoNumbers в метод теста в файле закодированного теста ИП:  
   
     ```  
     [TestMethod]  
@@ -220,15 +220,15 @@ Automated tests that drive your application through its user interface (UI) are 
     }  
     ```  
   
-     You can edit this file to change the order of the steps and assertions, or to create new test methods. To add more code, place the cursor on the test method and on the shortcut menu choose **Generate Code for Coded UI Test**.  
+     Вы можете изменить этот файл, чтобы поменять порядок шагов и утверждений или создать новые методы теста. Чтобы добавить другой код, наведите указатель на метод теста и в контекстном меню выберите команду **Сформировать код для закодированного теста пользовательского интерфейса**.  
   
--   Adds a method called `AssertForAddTwoNumbers` to your UI map (UIMap.uitest). This file opens in the Coded UI Test Editor, where you can edit the assertions.  
+-   Добавляет метод `AssertForAddTwoNumbers` на карту ИП (UIMap.uitest). Этот файл открывается в редакторе закодированных тестов ИП, где можно изменить утверждения.  
   
-     ![Edit assert using Coded UI Test Editor](../test/media/cuit_editor_assert.png "CUIT_Editor_assert")  
+     ![Редактирование утверждения с помощью редактора закодированных тестов пользовательского интерфейса](../test/media/cuit_editor_assert.png "CUIT_Editor_assert")  
   
-     For more information, see [Editing Coded UI Tests Using the Coded UI Test Editor](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
+     Дополнительные сведения см. в разделе [Изменение закодированных тестов пользовательского интерфейса с помощью редактора закодированных тестов пользовательского интерфейса](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
   
-     You can also view the generated code of the assertion method in UIMap.Designer.cs. However, you should not edit this file. If you want to make an adapted version of the code, copy the methods to another file such as UIMap.cs, rename the methods, and edit them there.  
+     Вы также можете просмотреть сформированный код метода утверждения в файле UIMap.Designer.cs. Однако изменять этот файл не следует. Если вы хотите создать адаптированную версию кода, скопируйте методы в другой файл, например UIMap.cs, переименуйте методы и измените их.  
   
     ```  
     public void AssertForAddTwoNumbers()  
@@ -237,28 +237,28 @@ Automated tests that drive your application through its user interface (UI) are 
     }  
     ```  
   
- *The control I want to select loses focus and disappears when I try to select the Add Assertions tool from the Coded UI Test Builder. How do I select the control?*  
- **Selecting a hidden control using the keyboard**  
+ *Элемент управления, который я хочу выбрать, теряет фокус и исчезает, когда я пытаюсь выбрать средство добавления утверждений в построителе закодированных тестов ИП. Как выбрать этот элемент управления?*  
+ **Выбор скрытого элемента управления с помощью клавиатуры**  
   
- Sometimes, when [adding controls and validating their properties](#VerifyingCodeUsingCUITGenerateAssertions), you might have to use the keyboard. For example, when you try to record a coded UI test that uses a context menu control, the list of menu items in the control will lose focus and disappear when you try to select the Add Assertions tool from the Coded UI Test Builder. This is demonstrated in the following illustration, where the context menu in Internet Explorer will lose focus and disappear if you try to select it with the Add Assertions tool.  
+ Иногда при [добавлении элементов управления и проверке их свойств](#VerifyingCodeUsingCUITGenerateAssertions) может потребоваться использовать клавиатуру. Например, при попытке записать закодированный тест ИП, который использует элемент управления контекстным меню, список пунктов меню в элементе управления потеряет фокус и исчезнет при попытке выбрать средство добавления утверждений в построителе закодированных тестов ИП. Это демонстрируется на следующем рисунке, где контекстное меню в Internet Explorer теряет фокус и исчезает при попытке выбрать его с помощью средства добавления утверждений.  
   
  ![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png "CodedUITest_SelectControlKeyboard")  
   
- To use the keyboard to select a UI control, hover over the control with the mouse. Then hold down the **Ctrl** key and the **I** key at the same time. Release the keys. The control is recorded by the Coded UT Test Builder.  
+ Чтобы выбрать элемент управления клавиатурой, наведите на него указатель мыши. Затем нажмите и удерживайте клавиши **CTRL** и **I** одновременно. Отпустите клавиши. Элемент управления будет записан построителем закодированных тестов ИП.  
   
 > [!WARNING]
->  If you use Microsoft Lync, you must close Lync before you start the Coded UI Test Builder. Microsoft Lync interferes with the **Ctrl+I** keyboard shortcut.  
+>  Если вы используете Microsoft Lync, закройте это приложение перед запуском построителя закодированных тестов ИП. Microsoft Lync перехватывает сочетание клавиш **CTRL+I**.  
   
- *I can't record a mouse hover on a control. Is there a way around this?*  
- **Manually recording mouse hovers**  
+ *Не удается записать наведение указателя мыши на элемент управления. Можно ли это исправить?*  
+ **Ручная запись наведений указателя мыши**  
   
- Under some circumstances, a particular control that's being used in a coded UI test might require you to use the keyboard to manually record mouse hover events. For example, when you test a Windows Form or a Windows Presentation Foundation (WPF) application, there might be custom code. Or, there might be special behavior defined for hovering over a control, such as a tree node expanding when a user hovers over it. To test circumstances like these, you have to manually notify the Coded UI Test Builder that you are hovering over the control by pressing predefined keyboard keys.  
+ В некоторых случаях для ручной записи наведения указателя мыши на определенный элемент управления, используемый в закодированном тесте пользовательского интерфейса, может потребоваться использовать клавиатуру. Например, при в приложении Windows Form или Windows Presentation Foundation (WPF) может использоваться настраиваемый код. Или для наведения указателя мыши на элемент управления может быть задано специальное поведение, например разворачивание узла. Чтобы протестировать подобные ситуации, следует вручную указать в построителе закодированных тестов ИП, что вы наводите указатель мыши на элемент управления, нажав соответствующие клавиши.  
   
- When you perform your coded UI test, hover over the control. Then press and hold Ctrl, while you press and hold the Shift and R keys on your keyboard. Release the keys. A mouse hover event is recorded by the Coded UT Test Builder.  
+ При выполнении закодированного теста ИП наведите указатель на элемент управления. Затем одновременно нажмите и удерживайте клавиши CTRL, SHIFT и R. Отпустите клавиши. События наведения указателя будет записано построителем закодированных тестов ИП.  
   
  ![CodedUI&#95;Hover](../test/media/codedui_hover.png "CodedUI_Hover")  
   
- After you generate the test method, code similar to the following example will be added to the UIMap.Desinger.cs file:  
+ После создания метода теста в файл UIMap.Desinger.cs будет добавлен код, как в следующем примере:  
   
 ```csharp  
 // Mouse hover '1' label at (87, 9)  
@@ -266,19 +266,19 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
 ```  
   
- *The key assignment for capturing mouse hover events is being used elsewhere in my environment. Can I change the default key assignment?*  
- **Configuring mouse hover keyboard assignments**  
+ *Сочетание клавиш для записи событий наведения указателя мыши используется другим процессом. Можно ли изменить его?*  
+ **Настройка сочетаний клавиш для записи наведения указателя мыши**  
   
- If necessary, the default keyboard assignment of Ctrl+Shift+R that is used to apply mouse hovering events in your coded UI tests can be configured to use different keys.  
+ При необходимости сочетание клавиш CTRL+SHIFT+R по умолчанию, используемое для записи событий наведения указателя мыши в закодированных тестах ИП, можно изменить.  
   
 > [!WARNING]
->  You should not have to change the keyboard assignments for mouse hover events under ordinary circumstances. Use caution when reassigning the keyboard assignment. Your choice might already be in use elsewhere within Visual Studio or the application being tested.  
+>  В целом, изменять это сочетание клавиш следует только, если это действительно необходимо. Будьте осторожны при изменении назначенных сочетаний клавиш. Возможно, выбранное вами сочетание уже используется в Visual Studio или тестируемом приложении.  
   
- To change the keyboard assignments, you must modify the following configuration file:  
+ Чтобы изменить сочетание клавиш, отредактируйте следующий файл конфигурации:  
   
  `<drive letter:>\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\CodedUITestBuilder.exe.config`  
   
- In the configuration file, change the values for the `HoverKeyModifier` and `HoverKey` keys to modify the keyboard assignments:  
+ В файле конфигурации измените значения клавиш `HoverKeyModifier` и `HoverKey`, чтобы поменять сочетание клавиш:  
   
 ```  
 <!-- Begin : Background Recorder Settings -->  
@@ -288,16 +288,16 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
 ```  
   
- *I'm having issues with recording mouse hovers on a website. Is there a fix for this, too?*  
- **Setting implicit mouse hovers for the web browser**  
+ *Возникают проблемы с записью наведения указателя мыши для веб-сайта. Можно ли это исправить?*  
+ **Настройка явных наведений указателя мыши для браузера**  
   
- In many websites, when you hover over a particular control, it expands to show additional details. Generally, these look like menus in desktop applications. Because this is a common pattern, coded UI tests enable implicit hovers for Web browsing. For example, if you record hovers in Internet Explorer, an event is fired. These events can lead to redundant hovers getting recorded. Because of this, implicit hovers are recorded with `ContinueOnError` set to `true` in the UI test configuration file. This allows playback to continue if a hover event fails.  
+ На многих веб-сайтах при наведении указателя на определенный элемент управления он разворачивается для отображения дополнительных сведений. В целом, это похоже на меню в приложениях для настольных ПК. Так как такое поведение встречается часто, закодированные тесты ИП поддерживают неявное наведение указателя для веб-сайтов. Например, если вы записываете наведение указателя в Internet Explorer, инициируется событие. Из-за этих событий могут быть записаны избыточные наведения указателя мыши. Поэтому неявные наведения записываются в файл конфигурации теста ИП с параметром `ContinueOnError`, имеющим значение `true`. Это позволяет продолжить воспроизведение при ошибке события наведения указателя.  
   
- To enable the recording of implicit hovers in a Web browser, open the configuration file:  
+ Чтобы включить запись неявных наведений указателя в браузере, откройте файл конфигурации:  
   
  `<drive letter:>\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\CodedUITestBuilder.exe.config`  
   
- Verify that the configuration file has the key `RecordImplicitiHovers` set to a to a value of `true` as shown in the following sample:  
+ Убедитесь, что в файле конфигурации для раздела `RecordImplicitiHovers` задано значение `true`, как показано в следующем примере:  
   
 ```  
 <!--Use this to enable/disable recording of implicit hovers.-->  
@@ -305,37 +305,37 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
 ```  
   
-##  <a name="VerifyingCodeCUITModify"></a> Customizing your coded UI test  
- After you've created your coded UI test, you can edit it by using any of the following tools in Visual Studio:  
+##  <a name="VerifyingCodeCUITModify"></a> Настройка закодированного теста пользовательского интерфейса  
+ После создания закодированного теста пользовательского интерфейса его можно изменить с помощью следующих средств в Visual Studio.  
   
--   **Coded UI Test Builder:** Use the Coded UI Test Builder to add additional controls and validation to your tests. See the section [Adding controls and validating their properties](#VerifyingCodeUsingCUITGenerateAssertions) in this topic.  
+-   **Построитель закодированных тестов пользовательского интерфейса** используется для добавления элементов управления и проверок в тесты. См. подраздел [Добавление элементов управления и проверка их свойств](#VerifyingCodeUsingCUITGenerateAssertions) в этом разделе.  
   
--   **Coded UI Test Editor:** The Coded UI Test Editor lets you easily modify your coded UI tests. Using the Coded UI Test Editor, you can locate, view, and edit your test methods. You can also edit UI actions and their associated controls in the UI control map. For more information, see [Editing Coded UI Tests Using the Coded UI Test Editor](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
+-   **Редактор закодированных тестов пользовательского интерфейса** позволяет легко изменять закодированные тесты пользовательского интерфейса. С помощью редактора вы можете найти, просмотреть и изменить методы теста. Вы также можете редактировать действия ИП и связанные элементы управления на карте элементов управления ИП. Дополнительные сведения см. в разделе [Изменение закодированных тестов пользовательского интерфейса с помощью редактора закодированных тестов пользовательского интерфейса](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
   
--   **Code Editor:**  
+-   **Редактор кода:**  
   
-    -   Manually add code for the controls in your test as described in the [Coding UI control actions and properties](#VerifyingCodeCUITActionsandProperties) section in this topic.  
+    -   позволяет вручную добавить код элементов управления в тест, как описано в подразделе [Программирование действий и свойств элементов управления пользовательского интерфейса](#VerifyingCodeCUITActionsandProperties) в этом разделе.  
   
-    -   After you create a coded UI test, you can modify it to be data-driven. For more information, see [Creating a Data-Driven Coded UI Test](../test/creating-a-data-driven-coded-ui-test.md).  
+    -   После создания закодированного теста ИП вы можете изменить его, чтобы его работа зависела от данных. Дополнительные сведения см. в разделе [Создание управляемого данными закодированного теста пользовательского интерфейса](../test/creating-a-data-driven-coded-ui-test.md).  
   
-    -   In a coded UI test playback, you can instruct the test to wait for certain events to occur, such as a window to appear, the progress bar to disappear, and so on. To do this, add the appropriate UITestControl.WaitForControlXXX() method. For a complete list of the available methods, see [Making Coded UI Tests Wait For Specific Events During Playback](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). For an example of a coded UI test that waits for a control to be enabled using the WaitForControlEnabled method, see [Walkthrough: Creating, Editing and Maintaining a Coded UI Test](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).  
+    -   При воспроизведении закодированного теста ИП вы можете подождать возникновения определенных событий, например открытия окна, исчезновения строки хода выполнения и т. д. Для этого добавьте соответствующий метод UITestControl.WaitForControlXXX(). Полный список доступных методов см. в разделе [Настройка закодированного теста пользовательского интерфейса таким образом, чтобы во время воспроизведения он дожидался определенных событий](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Пример закодированного теста пользовательского интерфейса, который ожидает включения элемента управления с помощью метода WaitForControlEnabled, см. в разделе [Пошаговое руководство. Создание, изменение и обслуживание закодированного теста пользовательского интерфейса](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).  
   
-    -   Coded UI tests include support for some of the HTML5 controls that are included in Internet Explorer 9 and Internet Explorer 10. For more information, see [Using HTML5 Controls in Coded UI Tests](../test/using-html5-controls-in-coded-ui-tests.md).  
+    -   Закодированные тесты ИП поддерживают некоторые элементы управления HTML5 в Internet Explorer 9 и Internet Explorer 10. Дополнительные сведения см. в разделе [Использование элементов управления HTML5 в закодированных тестах пользовательского интерфейса](../test/using-html5-controls-in-coded-ui-tests.md).  
   
-    -   **Coded UI test coding guidance:**  
+    -   **Руководство по кодированию тестов пользовательского интерфейса:**  
   
-        -   [Anatomy of a Coded UI Test](../test/anatomy-of-a-coded-ui-test.md)  
+        -   [Составляющие закодированного теста пользовательского интерфейса](../test/anatomy-of-a-coded-ui-test.md)  
   
-        -   [Best Practices for Coded UI Tests](../test/best-practices-for-coded-ui-tests.md)  
+        -   [Рекомендации по выполнению закодированных тестов пользовательского интерфейса](../test/best-practices-for-coded-ui-tests.md)  
   
-        -   [Testing a Large Application with Multiple UI Maps](../test/testing-a-large-application-with-multiple-ui-maps.md)  
+        -   [Тестирование крупного приложения с несколькими картами пользовательского интерфейса](../test/testing-a-large-application-with-multiple-ui-maps.md)  
   
-        -   [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)  
+        -   [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)  
   
-###  <a name="generatedCode"></a> The Generated Code  
- When you choose **Generate Code**, several pieces of code are created:  
+###  <a name="generatedCode"></a> Сформированный код  
+ Если нажать кнопку **Создать код**, создается несколько фрагментов кода:  
   
--   **A line in the test method.**  
+-   **Строка в методе теста.**  
   
     ```csharp  
     [CodedUITest]  
@@ -350,15 +350,15 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
     }  
     ```  
   
-     You can right-click in this method to add more recorded actions and verifications. You can also edit it manually to extend or modify the code. For example, you could enclose some of the code in a loop.  
+     Вы можете щелкнуть метод правой кнопкой, чтобы добавить записанные действия и проверки. Вы также можете изменить его вручную, чтобы расширить или поменять код. Например, можно часть кода заключить в цикл.  
   
-     You can also add new test methods and add code to them in the same way. Each test method must have the `[TestMethod]` attribute.  
+     Кроме того, можно добавить новые методы теста и добавить в них код аналогичным способом. У каждого метода теста должен быть атрибут `[TestMethod]`.  
   
--   **A method in UIMap.uitest**  
+-   **Метод в файле UIMap.uitest**  
   
-     This method includes the detail of the actions you recorded or the value that you verified. You can edit this code by opening UIMap.uitest. It opens in a specialized editor in which you can delete or refactor the recorded actions.  
+     Он содержит сведения о записанных действиях или проверенном значении. Этот код можно изменить в файле UIMap.uitest. Он открывается в специальном редакторе, где можно удалить или изменить записанные действия.  
   
-     Youcan also view the generated method in UIMap.Designer.cs. This method performs the actions that you recorded when you run the test.  
+     Вы также можете просмотреть сформированный код метода в файле UIMap.Designer.cs. Этот метод выполняет действия, записанные во время запуска теста.  
   
     ```csharp  
     // File: UIMap.Designer.cs  
@@ -373,9 +373,9 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
     ```  
   
     > [!WARNING]
-    >  You should not edit this file, because it will be regenerated when you create more tests.  
+    >  Не следует редактировать этот файл, так как он будет повторно сформирован при создании других тестов.  
   
-     You can make adapted versions of these methods by copying them to UIMap.cs. For example, you could make a parameterized version that you could call from a test method:  
+     Можно создать адаптированные версии этих методов, скопировав их в файл UIMap.cs. Например, можно создать параметризированную версию, которую можно вызывать из метода теста:  
   
     ```csharp  
     // File: UIMap.cs  
@@ -390,125 +390,125 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
     }  
     ```  
   
--   **Declarations in UIMap.uitest**  
+-   **Объявления в файле UIMap.uitest**  
   
-     These declarations represent the UI controls of the application that are used by your test. They are used by the generated code to operate the controls and access their properties.  
+     Эти объявления представляют элементы управления ИП приложения, используемые тестом. Созданный код их применяет для работы с элементами управления и доступа к их свойствам.  
   
-     You can also use them if you write your own code. For example, you can have your test method choose a hyperlink in a Web application, type a value in a text box, or branch off and take different testing actions based on a value in a field.  
+     Их также можно использовать при написании собственного кода. Например, метод теста может выбрать гиперссылку в веб-приложении, ввести значение в текстовом поле или выполнить другие действия на основе значения в поле.  
   
-     You can add multiple coded UI tests and multiple UI map objects and files to facilitate testing a large application. For more information, see [Testing a Large Application with Multiple UI Maps](../test/testing-a-large-application-with-multiple-ui-maps.md).  
+     Вы можете добавить несколько закодированных тестов ИП и несколько объектов карты ИП и файлов для тестирования более сложного приложения. Дополнительные сведения см. в разделе [Тестирование крупного приложения с несколькими картами пользовательского интерфейса](../test/testing-a-large-application-with-multiple-ui-maps.md).  
   
- For more information about the generated code, see [Anatomy of a Coded UI Test](../test/anatomy-of-a-coded-ui-test.md).  
+ Дополнительные сведения о созданном коде см. в разделе [Составляющие закодированного теста пользовательского интерфейса](../test/anatomy-of-a-coded-ui-test.md).  
   
-###  <a name="actions"></a> Coding UI control actions and properties  
- When you work with UI test controls in coded UI tests they are separated into two parts: actions and properties.  
+###  <a name="actions"></a> Программирование действий и свойств элементов управления пользовательского интерфейса  
+ При работе с элементами управления закодированные тесты ИП разделены на две части: действия и свойства.  
   
--   The first part consists of actions that you can perform on UI test controls. For example, coded UI tests can simulate mouse clicks on a UI test control, or simulate keys typed on the keyboard to affect a UI test control.  
+-   Первая часть состоит из действий, которые можно выполнить с элементами управления. Например, закодированные тесты ИП могут симулировать щелчок элемента управления или нажатие клавиш для изменения элемента управления.  
   
--   The second part consists of enabling you to get and set properties on a UI test control. For example, coded UI tests can get the count of items in a `ListBox`, or set a `CheckBox` to the selected state.  
+-   Вторая часть позволяет получать и задавать свойства элемента управления. Например, закодированные тесты ИП могут получать число элементов в `ListBox` или переводить элемент управления `CheckBox` в выбранное состояние.  
   
- **Accessing Actions of UI Test Control**  
+ **Доступ к действиям элемента управления теста пользовательского интерфейса**  
   
- To perform actions on UI test controls, such as mouse clicks or keyboard actions, use the methods in the <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse> and <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard> classes:  
+ Для выполнения действий с элементами управления теста ИП, таких как щелчок мыши или нажатие клавиши, используйте методы классов <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse> и <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard>:  
   
--   To perform a mouse-oriented action, such as a mouse click, on a UI test control, use <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse.Click%2A>.  
+-   Для выполнения действия, связанного с мышью, например щелчка, с элементом управления теста ИП используйте <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse.Click%2A>.  
   
      `Mouse.Click(buttonCancel);`  
   
--   To perform a keyboard-oriented action, such as typing into an edit control, use <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A>.  
+-   Для выполнения действия, связанного с клавиатурой, например ввод текста в элемент управления, используйте <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A>.  
   
      `Keyboard.SendKeys(textBoxDestination, @"C:\Temp\Output.txt");`  
   
- **Accessing Properties of UI Test Control**  
+ **Доступ к свойствам элемента управления теста пользовательского интерфейса**  
   
- To get and set UI control specific property values, you can directly get or set the values the properties of a control, or you can use the  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A?displayProperty=fullName> and <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A?displayProperty=fullName> methods with the name of the specific property that you want you get or set.  
+ Чтобы получить или задать значения определенных свойств элемента управления, можно напрямую извлечь или установить свойства элемента управления или использовать методы <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A?displayProperty=fullName> и <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A?displayProperty=fullName> с именем нужного свойства.  
   
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> returns an object, which can then be cast to the appropriate <xref:System.Type>. <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A> accepts an object for the value of the property.  
+ <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> возвращает объект, который можно привести к соответствующему типу <xref:System.Type>. <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A> принимает объект в качестве значения свойства.  
   
-##### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>To get or set properties from UI test controls directly  
+##### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>Получение и установка свойств из элементов управления теста ИП напрямую  
   
--   With controls that derive from T:Microsoft.VisualStudio.TestTools.UITesting.UITestControl, such as T:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList or T:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox, you can get or set their property values directly, as follows:  
+-   Для элементов управления, производных от T:Microsoft.VisualStudio.TestTools.UITesting.UITestControl, таких как T:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList или T:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox, значения свойства можно получать и задавать напрямую следующим образом:  
   
     ```  
     int i = myHtmlList.ItemCount;  
     myWinCheckBox.Checked = true;  
     ```  
   
-##### <a name="to-get-properties-from-ui-test-controls"></a>To get properties from UI test controls  
+##### <a name="to-get-properties-from-ui-test-controls"></a>Получение свойств из элементов управления ИП  
   
--   To get a property value from a control, use <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>.  
+-   Для получения значения свойства элемента управления используйте метод <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>.  
   
--   To specify the property of the control to get, use the appropriate string from the `PropertyNames` class in each control as the parameter to <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>.  
+-   Чтобы указать свойство, которое необходимо получить, используйте соответствующую строку из класса `PropertyNames` в каждом элементе управления как параметр для <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>.  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> returns the appropriate data type, but this return value is cast as an <xref:System.Object>. The return <xref:System.Object> must then be cast as the appropriate type.  
+-   <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> возвращает соответствующий тип данных, после чего это значение преобразуется в тип <xref:System.Object>. Возвращенное значение <xref:System.Object> необходимо преобразовать в соответствующий тип.  
   
-     Example:  
+     Пример.  
   
      `int i = (int)GetProperty(myHtmlList.PropertyNames.ItemCount);`  
   
-##### <a name="to-set-properties-for-ui-test-controls"></a>To set properties for UI test controls  
+##### <a name="to-set-properties-for-ui-test-controls"></a>Установка свойств элементов управления ИП  
   
--   To set a property in a control, use <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>.  
+-   Для установки значения свойства элемента управления используйте метод <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>.  
   
--   To specify the property of the control to set, use the appropriate string from the  `PropertyNames` class as the first parameter to <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>, with the property value as the second parameter.  
+-   Чтобы указать свойство, которое необходимо установить, используйте соответствующую строку из класса `PropertyNames` как первый параметр для <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>, а значение свойства — как второй параметр.  
   
-     Example:  
+     Пример  
   
      `SetProperty(myWinCheckBox.PropertyNames.Checked, true);`  
   
-###  <a name="debugging"></a> Debugging  
- You can analyze Coded UI tests using coded UI test logs. Coded UI test logs filter and record important information about your coded UI test runs. The format of the logs lets you debug issues quickly. For more information, see [Analyzing Coded UI Tests Using Coded UI Test Logs](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).  
+###  <a name="debugging"></a> Отладка  
+ Вы можете анализировать закодированные тесты ИП с помощью журналов. Журналы закодированных тестов ИП фильтруют и записывают важную информацию о запуске тестов. Формат журналов позволяет быстро находить и исправлять ошибки. Дополнительные сведения см. в разделе [Анализ закодированных тестов пользовательского интерфейса с помощью журналов закодированных тестов пользовательского интерфейса](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).  
   
-##  <a name="VerifyCodeUsingCUITWhatsNext"></a> What's next?  
- **Additional options for running coded UI tests:** You can run coded UI tests directly from Visual Studio, as described earlier in this topic. Additionally, you can run automated UI tests from [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], or from [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)]. When coded UI tests are automated, they have to interact with the desktop when you run them, unlike other automated tests.  
+##  <a name="VerifyCodeUsingCUITWhatsNext"></a> Что дальше?  
+ **Дополнительные параметры для выполнения закодированных тестов пользовательского интерфейса**. Вы можете выполнять закодированные тесты пользовательского интерфейса напрямую из Visual Studio, как было сказано ранее. Кроме того, автоматизированные тесты ИП можно запускать в [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] или [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)]. Если закодированные тесты ИП автоматизированы, они, в отличие от других автоматических тестов, должны взаимодействовать с рабочим столом при их выполнении.  
   
--   [How to: Run Tests from Microsoft Visual Studio](http://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)  
+-   [Практическое руководство. Запуск тестов из Microsoft Visual Studio](http://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)  
   
--   [Running Automated Tests in Microsoft Test Manager](http://msdn.microsoft.com/en-us/0632f265-63fe-4859-a413-9bb934c66835)  
+-   [Запуск автоматических тестов в Microsoft Test Manager](http://msdn.microsoft.com/en-us/0632f265-63fe-4859-a413-9bb934c66835)  
   
--   [How to: Configure and Run Scheduled Tests After Building Your Application](http://msdn.microsoft.com/en-us/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)  
+-   [Практическое руководство. Настройка и запуск запланированных тестов после построения приложения](http://msdn.microsoft.com/en-us/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)  
   
--   [Run tests in your build process](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38)  
+-   [Выполнение тестов в процессе сборки](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38)  
   
--   [Running automated tests from the command line](/devops-test-docs/test/running-automated-tests-from-the-command-line)  
+-   [Запуск автоматических тестов из командной строки](/devops-test-docs/test/running-automated-tests-from-the-command-line)  
   
--   [How to: Set Up Your Test Agent to Run Tests that Interact with the Desktop](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)  
+-   [Практическое руководство. Настройка агента тестирования для выполнения тестов, взаимодействующих с рабочим столом](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)  
   
--   [&#91;retired&#93; Using Coded UI Tests in Load Tests](/devops-test-docs/test_notintoc/using-coded-ui-tests-in-load-tests)  
+-   [&#91;удалено&#93; Использование закодированных тестов пользовательского интерфейса в нагрузочных тестах](/devops-test-docs/test_notintoc/using-coded-ui-tests-in-load-tests)  
   
- **Adding support for custom controls:**  The coded UI testing framework does not support every possible UI and might not support the UI you want to test. For example, you cannot immediately create a coded UI test of the UI for [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]. However, you can create an extension to the coded UI testing framework that will support a custom control.  
+ **Добавление поддержки пользовательских элементов управления**. Платформа закодированных тестов пользовательского интерфейса поддерживает не все возможные пользовательские интерфейсы, в частности она может не поддерживать тестируемый пользовательский интерфейс. Например, невозможно напрямую создать закодированный тест пользовательского интерфейса приложения [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]. Однако можно создать расширение среды обработки закодированных тестов пользовательского интерфейса, которое будет поддерживать пользовательский элемент управления.  
   
--   [Enable Coded UI Testing of Your Controls](../test/enable-coded-ui-testing-of-your-controls.md)  
+-   [Включение закодированных тестов пользовательского интерфейса для элементов управления](../test/enable-coded-ui-testing-of-your-controls.md)  
   
--   [Extending Coded UI Tests and Action Recordings to Support Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)  
+-   [Расширение закодированных тестов пользовательского интерфейса и записей действий для поддержки Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)  
   
- Coded UI Tests are often used to automate manual tests. For additional guidance, see [Testing for Continuous Delivery with Visual Studio 2012 - Chapter 5: Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196). For more information about manual tests, see [&#91;retired&#93; Creating Manual Test Cases Using Microsoft Test Manager](/devops-test-docs/test_notintoc/creating-manual-test-cases-using-microsoft-test-manager). For more information about automated system tests, see [Creating Automated Tests Using Microsoft Test Manager](http://msdn.microsoft.com/en-us/7b5075ee-ddfe-411d-b1d4-94283550a5d0).  
+ Закодированные тесты ИП часто используются для автоматизации ручных тестов. Дополнительные сведения см. на странице [Книга "Шаблоны и приемы. Тестирование непрерывной доставки с использованием Visual Studio 2012", глава 5 "Автоматизация системных тестов"](http://go.microsoft.com/fwlink/?LinkID=255196). Дополнительные сведения о ручных тестах см. в разделе [&#91;удалено&#93; Создание ручных тестовых случаев с помощью Microsoft Test Manager](/devops-test-docs/test_notintoc/creating-manual-test-cases-using-microsoft-test-manager). Дополнительные сведения об автоматизированных тестах см. в разделе [Создание автоматических системных тестов](http://msdn.microsoft.com/en-us/7b5075ee-ddfe-411d-b1d4-94283550a5d0).  
   
-## <a name="external-resources"></a>External Resources  
+## <a name="external-resources"></a>Внешние ресурсы  
   
-### <a name="guidance"></a>Guidance  
- [Testing for Continuous Delivery with Visual Studio 2012 - Chapter 2: Unit Testing: Testing the Inside](http://go.microsoft.com/fwlink/?LinkID=255188)  
+### <a name="guidance"></a>Руководство  
+ [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
- [Testing for Continuous Delivery with Visual Studio 2012 - Chapter 5: Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196)  
+ [Тестирование непрерывной доставки с Visual Studio 2012 — глава 5. Автоматизация системных тестов](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
-### <a name="faq"></a>FAQ  
- [Coded UI Tests FAQ - 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
+### <a name="faq"></a>часто задаваемые вопросы  
+ [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
   
- [Coded UI Tests FAQ -2](http://go.microsoft.com/fwlink/?LinkID=230578)  
+ [Часто задаваемые вопросы о закодированных тестах пользовательского интерфейса. Часть 2](http://go.microsoft.com/fwlink/?LinkID=230578)  
   
-### <a name="forum"></a>Forum  
- [Visual Studio UI Automation Testing (includes CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)  
+### <a name="forum"></a>Форум  
+ [Тестирование автоматизации пользовательского интерфейса в Visual Studio (включает CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>   
- [Improve Code Quality](../test/improve-code-quality.md)   
- [Walkthrough: Creating, Editing and Maintaining a Coded UI Test](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)   
- [Anatomy of a Coded UI Test](../test/anatomy-of-a-coded-ui-test.md)   
- [Best Practices for Coded UI Tests](../test/best-practices-for-coded-ui-tests.md)   
- [Testing a Large Application with Multiple UI Maps](../test/testing-a-large-application-with-multiple-ui-maps.md)   
- [Editing Coded UI Tests Using the Coded UI Test Editor](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)   
- [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [Upgrading Coded UI Tests from Visual Studio 2010](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)   
- [Generating a Coded UI Test from an Existing Action Recording](/devops-test-docs/test/generating-a-coded-ui-test-from-an-existing-action-recording)
+ [Улучшение качества кода](../test/improve-code-quality.md)   
+ [Пошаговое руководство. Создание, изменение и обслуживание закодированного теста пользовательского интерфейса](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)   
+ [Составляющие закодированного теста пользовательского интерфейса](../test/anatomy-of-a-coded-ui-test.md)   
+ [Рекомендации по выполнению закодированных тестов пользовательского интерфейса](../test/best-practices-for-coded-ui-tests.md)   
+ [Тестирование крупного приложения с несколькими картами пользовательского интерфейса](../test/testing-a-large-application-with-multiple-ui-maps.md)   
+ [Изменение закодированных тестов пользовательского интерфейса с помощью редактора закодированных тестов пользовательского интерфейса](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)   
+ [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
+ [Обновление закодированных тестов пользовательского интерфейса с версии Visual Studio 2010](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)   
+ [Создание закодированного теста пользовательского интерфейса из существующей записи действий](/devops-test-docs/test/generating-a-coded-ui-test-from-an-existing-action-recording)
 

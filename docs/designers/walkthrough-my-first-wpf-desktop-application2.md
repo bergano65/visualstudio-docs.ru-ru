@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: My First WPF Desktop Application2 | Microsoft Docs'
+title: "Пошаговое руководство. Создание первого классического приложения WPF 2 | Документы Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,53 +32,53 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: d823714b04af8afc7c8b7d988ab746f41dc4ba68
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="walkthrough-my-first-wpf-desktop-application"></a>Walkthrough: My First WPF Desktop Application
-<a name="introduction"></a> This walkthrough provides an introduction to Windows Presentation Foundation (WPF) development. You'll create a basic application that includes the elements that are common to most WPF desktop applications: XAML markup, code-behind, application definitions, controls, layout, data binding, and styles.  
+# <a name="walkthrough-my-first-wpf-desktop-application"></a>Пошаговое руководство. Создание первого классического приложения WPF
+<a name="introduction"></a> В этом пошаговом руководстве содержатся вводные сведения о разработке на основе платформы Windows Presentation Foundation (WPF). Вы создадите простейшее приложение, содержащее элементы, используемые в большинстве классических приложений WPF: разметку XAML, код программной части, определения приложения, элементы управления, макет, привязку данных и стили.  
   
-##  <a name="Create_The_Application_Code_Files"></a> Creating the Application Project  
- In this section, you'll create the application infrastructure, which includes the project and a main window or form.  
+##  <a name="Create_The_Application_Code_Files"></a> Создание проекта приложения  
+ В этом разделе вы создадите инфраструктуру приложения, включающую в себя проект и главное окно или форму.  
   
-#### <a name="to-create-the-project"></a>To create the project  
+#### <a name="to-create-the-project"></a>Создание проекта  
   
-1.  On the menu bar, choose **File**, **New**, **Project**.  
+1.  В строке меню выберите **Файл**, **Создать**, **Проект**.  
   
-2.  In the **New Project** dialog, expand either the **Visual C#** or **Visual Basic** node and choose the **Windows** node, and then expand the **Windows** node and choose the **Classic Desktop** node.  
+2.  В диалоговом окне **Новый проект** разверните узел **Visual C#** или **Visual Basic** и выберите узел **Окна** , а затем разверните узел **Окна** и выберите узел **Классический рабочий стол** .  
   
-3.  In the template list, choose the **WPF Application** template.  
+3.  В списке шаблонов выберите шаблон **Приложение WPF** .  
   
-4.  In the **Name** textbox enter `ExpenseIt`, and then choose the **OK** button.  
+4.  В диалоговом окне **Имя** введите `ExpenseIt`и нажмите кнопку **ОК** .  
   
-     The project is created and the project files are added to **Solution Explorer**, and the designer for the default application window named **MainWindow.xaml** is displayed.  
+     Будет создан проект, файлы проекта добавятся в **обозреватель решений**, и откроется конструктор окна приложения по умолчанию с именем **MainWindow.xaml** .  
   
-#### <a name="to-modify-the-main-window"></a>To modify the main window  
+#### <a name="to-modify-the-main-window"></a>Изменение главного окна  
   
-1.  In the designer, choose the **MainWindow.xaml** tab if it isn't already the active designer tab.  
+1.  В конструкторе перейдите на вкладку **MainWindow.xaml**, если она еще не является активной вкладкой конструктора.  
   
-2.  If you're using C#, find the line `<Window x:Class="ExpenseIt.MainWindow"` and replace it with `<NavigationWindow x:Class="ExpenseIt.MainWindow"`.  
+2.  Если вы используете C#, найдите строку `<Window x:Class="ExpenseIt.MainWindow"` и замените ее строкой `<NavigationWindow x:Class="ExpenseIt.MainWindow"`.  
   
-     If you're using Visual Basic, find the line `<Window x:Class=" MainWindow"` and replace it with `<NavigationWindow x:Class="MainWindow"`.  
+     Если вы используете Visual Basic, найдите строку `<Window x:Class=" MainWindow"` и замените ее строкой `<NavigationWindow x:Class="MainWindow"`.  
   
-     Notice that when you change the `<Window` tag to `<NavigationWindow`, Intellisense automatically changes the closing tag to `</NavigationWindow>` as well.  
+     Обратите внимание на то, что при замене тега `<Window` на `<NavigationWindow`Intellisense автоматически также заменяет закрывающий тег на `</NavigationWindow>` .  
   
     > [!NOTE]
-    >  After changing the tag, if the **Error List** window is open you may notice several errors. Don't worry, the changes you make in the next few steps will make these go away.  
+    >  Если после замены тега окно **Список ошибок** открыто, вы можете заметить несколько ошибок. Не беспокойтесь: после внесения изменений в следующих шагах они исчезнут.  
   
-3.  Choose the `<Grid>` and `</Grid>` tags and delete them.  
+3.  Выберите теги `<Grid>` и `</Grid>` и удалите их.  
   
-     A **NavigationWindow** can't contain other UI elements such as a **Grid**.  
+     **NavigationWindow** не может содержать другие элементы пользовательского интерфейса, например **Grid**.  
   
-4.  In the **Properties** window, expand the **Common** category node and choose the **Title** property, and then enter `ExpenseIt` and press the **Enter** key.  
+4.  В диалоговом окне **Свойства** разверните узел категории **Общие** и выберите свойство **Заголовок** , а затем введите значение `ExpenseIt` и нажмите клавишу **ВВОД** .  
   
-     Notice that the **Title** element in the XAML window changes to match the new value. You can modify XAML properties in either the XAML window or the **Properties** window, and the changes are synchronized.  
+     Обратите внимание на то, что элемент **Title** в окне XAML изменится в соответствии с новым значением. Свойства XAML можно изменять как в окне XAML, так и в окне **Свойства** . При этом изменения синхронизируются.  
   
-5.  In the XAML window, set the value of the **Height** element to `375`, and set the value of the **Width** property to `500`.  
+5.  В окне XAML задайте для элемента **Height** значение `375`, а для свойства **Width** — значение `500`.  
   
-     These elements correspond to the **Height** and **Width** properties, found in the **Layout** category in the **Properties** window.  
+     Эти элементы соответствуют свойствам **Высота** и **Ширина** в категории **Макет** в окне **Свойства** .  
   
-     Your **MainWindow.xaml** file should now look like this in C#:  
+     Файл **MainWindow.xaml** на C# теперь должен выглядеть так:  
   
     ```xaml  
     <NavigationWindow x:Class="ExpenseIt.MainWindow"  
@@ -93,7 +93,7 @@ ms.lasthandoff: 08/28/2017
     </NavigationWindow>  
     ```  
   
-     Or like this in Visual Basic:  
+     Или так на Visual Basic:  
   
     ```xaml  
     <NavigationWindow x:Class="MainWindow"  
@@ -108,30 +108,30 @@ ms.lasthandoff: 08/28/2017
     </NavigationWindow>  
     ```  
   
-#### <a name="to-modify-the-code-behind-file-c"></a>To modify the code-behind file (C#)  
+#### <a name="to-modify-the-code-behind-file-c"></a>Изменение файла с кодом программной части (C#)  
   
-1.  In **Solution Explorer**, expand the **MainWindow.xaml** node and open the **MainWindow.xaml.cs** file.  
+1.  В **обозревателе решений**разверните узел **MainWindow.xaml** и откройте файл **MainWindow.xaml.cs** .  
   
-2.  Find the line `public partial class MainWindow : Window` and replace it with `public partial class MainWindow : NavigationWindow`.  
+2.  Найдите строку `public partial class MainWindow : Window` и замените ее на `public partial class MainWindow : NavigationWindow`.  
   
-     This changes the `MainWindow` class to derive from `NavigationWindow`. In Visual Basic, this happens automatically when you change the window in XAML, so no code changes are necessary.  
+     Это приведет к тому, что класс `MainWindow` будет наследоваться от `NavigationWindow`. В Visual Basic это происходит автоматически при изменении окна в XAML, поэтому изменять код не нужно.  
   
-##  <a name="add_files_to_the_application"></a> Adding Files to the Application  
- In this section, you'll add two pages and an image to the application.  
+##  <a name="add_files_to_the_application"></a> Добавление файлов в приложение  
+ В этом разделе вы добавите в приложение две страницы и изображение.  
   
-#### <a name="to-add-a-home-screen"></a>To add a home screen  
+#### <a name="to-add-a-home-screen"></a>Добавление начального экрана  
   
-1.  In **Solution Explorer**, open the shortcut menu for the **ExpenseIt** node and choose **Add**, **Page**.  
+1.  В **обозревателе решений**откройте контекстное меню узла **ExpenseIt** и выберите команду **Добавить**, **Страница**.  
   
-2.  In the **Add New Item** dialog, choose the **Name** text box and enter `ExpenseItHome`, and then choose the **Add** button.  
+2.  В диалоговом окне **Добавление нового элемента** выберите текстовое поле **Имя** и введите значение `ExpenseItHome`, а затем нажмите кнопку **Добавить** .  
   
-     This page is the first window that is displayed when the application is launched.  
+     Эта страница представляет собой первое окно, которое будет открываться при запуске приложения.  
   
-3.  In the designer, choose the **ExpenseItHome.xaml** tab if it isn't already the active designer tab.  
+3.  В конструкторе перейдите на вкладку **ExpenseItHome.xaml**, если она еще не является активной вкладкой конструктора.  
   
-4.  Choose the `<Title>` element and change the title to **ExpenseIt - Home**.  
+4.  Выберите элемент `<Title>` и измените заголовок на **ExpenseIt — домашняя страница**.  
   
-     Your **ExpenseItHome.xaml** file should now look like this in C#:  
+     Файл **ExpenseItHome.xaml** на C# теперь должен выглядеть так:  
   
     ```xaml  
     <Page x:Class="ExpenseIt.ExpenseItHome"  
@@ -150,7 +150,7 @@ ms.lasthandoff: 08/28/2017
     </Page>  
     ```  
   
-     Or like this in Visual Basic:  
+     Или так на Visual Basic:  
   
     ```xaml  
     <Page x:Class="ExpenseItHome"  
@@ -168,11 +168,11 @@ ms.lasthandoff: 08/28/2017
     </Page>  
     ```  
   
-5.  In the designer, choose the **MainWindow.xaml** tab.  
+5.  В конструкторе откройте вкладку **MainWindow.xaml** .  
   
-6.  Find the line `Title="ExpenseIt" Height="375" Width="500">` element and add a `Source="ExpenseItHome.xaml"` property.  
+6.  Найдите элемент `Title="ExpenseIt" Height="375" Width="500">` строки и добавьте свойство `Source="ExpenseItHome.xaml"` .  
   
-     This sets **ExpenseItHome.xaml** to be the first page opened when the application starts. Your **MainWindow.xaml** file should now look like this in C#:  
+     Таким образом **ExpenseItHome.xaml** устанавливается в качестве первой страницы, открываемой при запуске приложения. Файл **MainWindow.xaml** на C# теперь должен выглядеть так:  
   
     ```xaml  
     <NavigationWindow x:Class="ExpenseIt.MainWindow"  
@@ -187,7 +187,7 @@ ms.lasthandoff: 08/28/2017
     </NavigationWindow>  
     ```  
   
-     Or like this in Visual Basic:  
+     Или так на Visual Basic:  
   
     ```xaml  
     NavigationWindow x:Class="MainWindow"  
@@ -202,21 +202,21 @@ ms.lasthandoff: 08/28/2017
     </NavigationWindow>  
     ```  
   
-     As with the properties that you set earlier, you could have set the `Source` property in the **Miscellaneous** category of the **Properties** window.  
+     Так же как и в случае с ранее заданными свойствами, вы могли задать свойство `Source` в категории **Прочие** в окне **Свойства** .  
   
-#### <a name="to-add-a-details-window"></a>To add a details window  
+#### <a name="to-add-a-details-window"></a>Добавление окна сведений  
   
-1.  In **Solution Explorer**, open the shortcut menu for the **ExpenseIt** node and choose **Add**, **Page**.  
+1.  В **обозревателе решений**откройте контекстное меню узла **ExpenseIt** и выберите команду **Добавить**, **Страница**.  
   
-2.  In the **Add New Item** dialog, choose the **Name** text box and enter `ExpenseReportPage`, and then choose the **Add** button.  
+2.  В диалоговом окне **Добавление нового элемента** выберите текстовое поле **Имя** и введите значение `ExpenseReportPage`, а затем нажмите кнопку **Добавить** .  
   
-     This window will display an individual expense report.  
+     В этом окне будет выводиться отдельный отчет по расходам.  
   
-3.  In the designer, choose the **ExpenseReportPage.xaml** tab if it isn't already the active designer tab.  
+3.  В конструкторе перейдите на вкладку **ExpenseReportPage.xaml**, если она еще не является активной вкладкой конструктора.  
   
-4.  Choose the `<Title>` element and change the title to **ExpenseIt - View Expense**.  
+4.  Выберите элемент `<Title>` и измените заголовок на **ExpenseIt — просмотр расходов**.  
   
-     Your ExpenseReportPage.xaml file should now look like this in C#:  
+     Файл ExpenseReportPage.xaml на C# теперь должен выглядеть так:  
   
     ```xaml  
     Page x:Class="ExpenseIt.ExpenseReportPage"  
@@ -235,7 +235,7 @@ ms.lasthandoff: 08/28/2017
     </Page>  
     ```  
   
-     Or like this in Visual Basic:  
+     Или так на Visual Basic:  
   
     ```xaml  
     <Page x:Class="ExpenseReportPage"  
@@ -253,26 +253,26 @@ ms.lasthandoff: 08/28/2017
     </Page>  
     ```  
   
-5.  On the menu bar, choose **Debug**, **Start Debugging** (or press F5) to run the application.  
+5.  Чтобы запустить приложение, в меню **Отладка**выберите команду **Начать отладку** (или нажмите клавишу F5).  
   
-     The following illustration shows the application with the navigation window buttons.  
+     На рисунке ниже показано приложение с кнопками навигации по окну.  
   
-     ![ExpenseIt sample screen shot](../designers/media/gettingstartedfigure1.png "GettingStartedFigure1")  
+     ![Снимок экрана примера ExpenseIt](../designers/media/gettingstartedfigure1.png "GettingStartedFigure1")  
   
-6.  Close the application to return to design mode.  
+6.  Закройте приложение, чтобы вернуться в режим конструктора.  
   
-##  <a name="Add_Layout"></a> Creating the User Interface  
- Layout provides an ordered way to place elements, and also manages the size and position of those elements when a form is resized. In this section, you'll create a single-column grid with three rows. You'll add controls to the two pages, add some code, and finally define reusable styles for the controls.  
+##  <a name="Add_Layout"></a> Создание пользовательского интерфейса  
+ Макет позволяет упорядочивать размещение элементов, а также управлять их размером и положением при изменении размеров формы. В этом разделе вы создадите сетку с одним столбцом и тремя строками. Вы добавите элементы управления на две страницы, добавите код и, наконец, определите повторно используемые стили для элементов управления.  
   
-#### <a name="to-create-the-layout"></a>To create the layout  
+#### <a name="to-create-the-layout"></a>Создание макета  
   
-1.  Open **ExpenseItHome.xaml** and choose the `<Grid>` element.  
+1.  Откройте файл **ExpenseItHome.xaml** и выберите элемент `<Grid>` .  
   
-2.  In the **Properties** window, expand the **Layout** category node and set the **Margin** values to `10`, `10`, `0`, and `10`, which corresponds to left, right, top and bottom margins.  
+2.  В диалоговом окне **Свойства** разверните узел категории **Макет** и задайте для свойств **Поле** значения `10`, `10`, `0`и `10`, которые соответствуют левому, правому, верхнему и нижнему полям.  
   
-     The element `Margin="10,0,10,10"` is added to the `<Grid>` element in the XAML. Once again, you could have entered these values directly in the XAML code instead of in the **Properties** window with the same result.  
+     Элемент `Margin="10,0,10,10"` будет добавлен в элемент `<Grid>` в коде XAML. Эти значения можно было бы также ввести непосредственно в коде XAML, а не в окне **Свойства** , — результат был бы тем же.  
   
-3.  Add the following XAML code to the `Grid` element to create the row and column definitions:  
+3.  Добавьте следующий код XAML в элемент `Grid` , чтобы создать определения строк и столбцов:  
   
     ```xaml  
     <Grid.ColumnDefinitions>  
@@ -285,11 +285,11 @@ ms.lasthandoff: 08/28/2017
     </Grid.RowDefinitions>  
     ```  
   
-#### <a name="to-add-controls"></a>To add controls  
+#### <a name="to-add-controls"></a>Добавление элементов управления  
   
-1.  Open **ExpenseItHome.xaml**.  
+1.  Откройте файл **ExpenseItHome.xaml**.  
   
-2.  Add the following XAML code just above the `</Grid>` tag to create the `Border`, `ListBox` and `Button` controls.  
+2.  Добавьте приведенный ниже код XAML непосредственно над тегом `</Grid>` , чтобы создать элементы управления `Border`, `ListBox` и `Button` .  
   
     ```xaml  
     <!-- People list -->  
@@ -309,31 +309,31 @@ ms.lasthandoff: 08/28/2017
   
     ```  
   
-     Notice that the controls appear in the design window. You could also have created the controls by dragging them from the **Toolbox** window onto the design window and setting their properties in the **Properties** window.  
+     Обратите внимание на то, что элементы управления появятся в окне разработки. Элементы управления можно было бы также создать, перетащив их из окна **Панель элементов** в окно разработки и задав их свойства в окне **Свойства** .  
   
-3.  Build and run the application. The following illustration shows the run time appearance of the controls that are created by the XAML in this procedure.  
+3.  Выполните сборку и запуск приложения. На рисунке ниже показано, как выглядят элементы управления, созданные с помощью кода XAML в этой процедуре, во время выполнения.  
   
-     ![ExpenseIt sample screen shot](../designers/media/gettingstartedfigure2.png "GettingStartedFigure2")  
+     ![Снимок экрана примера ExpenseIt](../designers/media/gettingstartedfigure2.png "GettingStartedFigure2")  
   
-4.  Close the application to return to design mode.  
+4.  Закройте приложение, чтобы вернуться в режим конструктора.  
   
-#### <a name="to-add-a-background-image"></a>To add a background image  
+#### <a name="to-add-a-background-image"></a>Добавление фонового изображения  
   
-1.  Choose the following image and save it as `watermark.png`.  
+1.  Выберите приведенное ниже изображение и сохраните его с именем `watermark.png`.  
   
-     ![Watermark image for walkthrough](../designers/media/wpf_watermark.png "WPF_watermark")  
-  
-    > [!NOTE]
-    >  Alternatively you can create your own image and save it as `watermark.png`.  
-  
-2.  In **Solution Explorer**, open the shortcut menu for the **ExpenseIt** node and choose **Add**, **Existing Item**.  
-  
-3.  In the **Add Existing Item** dialog, find the **watermark.png** image that you just added, choose it and then choose the **Add** button.  
+     ![Изображение водяного знака для пошагового руководства](../designers/media/wpf_watermark.png "WPF_watermark")  
   
     > [!NOTE]
-    >  You may need to expand the **File Types** list and choose **Image Files**.  
+    >  Вы также можете создать собственное изображение и сохранить его с именем `watermark.png`.  
   
-4.  Open the **ExpenseItHome.xaml** file and add the following XAML code just above the `</Grid>` tag to create a background image:  
+2.  В **обозревателе решений**откройте контекстное меню узла **ExpenseIt** и выберите команду **Добавить**, **Существующий элемент**.  
+  
+3.  В диалоговом окне **Добавление существующего элемента** найдите только что добавленное изображение **watermark.png** , выберите его, а затем нажмите кнопку **Добавить** .  
+  
+    > [!NOTE]
+    >  Может потребоваться развернуть список **Типы файлов** и выбрать пункт **Файлы изображений**.  
+  
+4.  Откройте файл **ExpenseItHome.xaml** и добавьте следующий код XAML непосредственно над тегом `</Grid>` , чтобы создать фоновое изображение:  
   
     ```xaml  
     <Grid.Background>  
@@ -342,37 +342,37 @@ ms.lasthandoff: 08/28/2017
   
     ```  
   
-#### <a name="to-add-a-title"></a>To add a title  
+#### <a name="to-add-a-title"></a>Добавление заголовка  
   
-1.  Open **ExpenseItHome.xaml**.  
+1.  Откройте файл **ExpenseItHome.xaml**.  
   
-2.  Find the line `<Grid.ColumnDefinitions>` and add the following just below it:  
+2.  Найдите строку `<Grid.ColumnDefinitions>` и добавьте следующий код сразу под ней:  
   
     ```xaml  
     <ColumnDefinition Width="230" />  
   
     ```  
   
-     This creates an additional column to the left of the other columns with a fixed width of 230 pixels.  
+     Слева от существующих столбцов будет создан дополнительный столбец фиксированной ширины в 230 пикселей.  
   
-3.  Find the line `<Grid.RowDefinitions>` and add the following just below it:  
+3.  Найдите строку `<Grid.RowDefinitions>` и добавьте следующий код сразу под ней:  
   
     ```xaml  
     <RowDefinition />  
   
     ```  
   
-     This adds a row to the top of the grid.  
+     В начало сетки будет добавлена строка.  
   
-4.  Move the controls to the second column by setting the `Grid.Column` value to 1. Move each control down a row, by increasing each `Grid.Row` value by 1.  
+4.  Переместите элементы управления во второй столбец, присвоив `Grid.Column` значение 1. Переместите каждый элемент управления на одну строку вниз, увеличив значение каждого свойства `Grid.Row` на 1.  
   
-    1.  Find the line `<Border Grid.Column="0" Grid.Row="0" Height="35" Padding="5" Background="#4E87D4">`. Change `Grid.Column="0"` to `Grid.Column="1"` and change `Grid.Row="0"` to `Grid.Row="1"`.  
+    1.  Найдите строку `<Border Grid.Column="0" Grid.Row="0" Height="35" Padding="5" Background="#4E87D4">`. Измените `Grid.Column="0"` на `Grid.Column="1"` , а `Grid.Row="0"` — на `Grid.Row="1"`.  
   
-    2.  Find the line `<ListBox Name="peopleListBox" Grid.Column="0" Grid.Row="1"`. Change `Grid.Column="0"` to `Grid.Column="1"` and change `Grid.Row="1"` to `Grid.Row="2"`.  
+    2.  Найдите строку `<ListBox Name="peopleListBox" Grid.Column="0" Grid.Row="1"`. Измените `Grid.Column="0"` на `Grid.Column="1"` , а `Grid.Row="1"` — на `Grid.Row="2"`.  
   
-    3.  Find the line `<Button Grid.Column="0" Grid.Row="2" Margin="0,10,0,0" Width="125"`. Change `Grid.Column="0"` to `Grid.Column="1"` and change `Grid.Row="2"` to `Grid.Row="3"`.  
+    3.  Найдите строку `<Button Grid.Column="0" Grid.Row="2" Margin="0,10,0,0" Width="125"`. Измените `Grid.Column="0"` на `Grid.Column="1"` , а `Grid.Row="2"` — на `Grid.Row="3"`.  
   
-5.  Just before the `<Border` element add the following XAML code to display the title:  
+5.  Непосредственно перед элементом `<Border` добавьте следующий код XAML для вывода заголовка:  
   
     ```xaml  
     <Label Grid.Column="1" VerticalAlignment="Center" FontFamily="Trebuchet MS"   
@@ -382,7 +382,7 @@ ms.lasthandoff: 08/28/2017
   
     ```  
   
-     The contents of **ExpenseItHome.xaml** should now look like this in C#:  
+     Содержимое файла **ExpenseItHome.xaml** на C# теперь должно выглядеть так:  
   
     ```xaml  
     <Page x:Class="ExpenseIt.ExpenseItHome"  
@@ -430,7 +430,7 @@ ms.lasthandoff: 08/28/2017
     </Page>  
     ```  
   
-     Or like this in Visual Basic:  
+     Или так на Visual Basic:  
   
     ```xaml  
     <Page x:Class="ExpenseItHome"  
@@ -478,17 +478,17 @@ ms.lasthandoff: 08/28/2017
     </Page>  
     ```  
   
-6.  If you build and run the application at this point, it should look like the following illustration:  
+6.  Если сейчас выполнить сборку и запуск приложения, оно должно выглядеть, как показано на рисунке ниже.  
   
-     ![ExpenseIt sample screen shot](../designers/media/gettingstartedfigure3.png "GettingStartedFigure3")  
+     ![Снимок экрана примера ExpenseIt](../designers/media/gettingstartedfigure3.png "GettingStartedFigure3")  
   
-#### <a name="to-add-code-to-the-button"></a>To add code to the button  
+#### <a name="to-add-code-to-the-button"></a>Добавление кода в кнопку  
   
-1.  Open **ExpenseItHome.xaml**.  
+1.  Откройте файл **ExpenseItHome.xaml**.  
   
-2.  Chose the `<Button` element and add the following XAML code immediately after the **HorizontalAlignment="Right"** element: `Click="Button_Click"`.  
+2.  Выберите элемент `<Button` и добавьте следующий код XAML сразу же после элемента **HorizontalAlignment="Right"** : `Click="Button_Click"`.  
   
-     This adds an event handler for the button's `Click` event. The **<Button** element code should now look like this:  
+     Будет добавлен обработчик событий `Click` кнопки. Код элемента **<Button** теперь должен выглядеть так:  
   
     ```  
     <!-- View report button -->  
@@ -496,9 +496,9 @@ ms.lasthandoff: 08/28/2017
     Height="25" HorizontalAlignment="Right" Click="Button_Click">View</Button>  
     ```  
   
-3.  Open the **ExpenseItHome.xaml.cs** or **ExpenseItHome.xaml.vb** file.  
+3.  Откройте файл **ExpenseItHome.xaml.cs** или **ExpenseItHome.xaml.vb** .  
   
-4.  Add the following code to the `ExpenseItHome` class:  
+4.  Добавьте следующий код в класс `ExpenseItHome` :  
   
     ```csharp  
     private void Button_Click(object sender, RoutedEventArgs e)  
@@ -518,15 +518,15 @@ ms.lasthandoff: 08/28/2017
     End Sub  
     ```  
   
-     This event handler opens the Expense Report Page when the button is clicked.  
+     Этот обработчик событий открывает страницу отчета по расходам при нажатии кнопки.  
   
-#### <a name="to-create-the-ui-for-the-report-page"></a>To create the UI for the report page  
+#### <a name="to-create-the-ui-for-the-report-page"></a>Создание пользовательского интерфейса для страницы отчета  
   
-1.  Open **ExpenseReportPage.xaml**.  
+1.  Откройте файл **ExpenseReportPage.xaml**.  
   
-     This page will display the expense report for the person that is selected on the Home page.  
+     На этой странице будет выводиться отчет по расходам для человека, выбранного на домашней странице.  
   
-2.  Add the following XAML code between the `<Grid>` and `</Grid>` tags:  
+2.  Добавьте следующий код XAML между тегами `<Grid>` и `</Grid>` :  
   
     ```xaml  
     <Grid.Background>  
@@ -590,23 +590,23 @@ ms.lasthandoff: 08/28/2017
     </Grid>  
     ```  
   
-     This UI is similar to the UI created for the home page, but the report data is displayed in a **DataGrid** control.  
+     Этот пользовательский интерфейс похож на созданный для домашней страницы, но данные отчета выводятся в элементе управления **DataGrid** .  
   
-3.  Build and run the application.  
+3.  Выполните сборку и запуск приложения.  
   
-4.  Choose the **View** button.  
+4.  Нажмите кнопку **Просмотр** .  
   
-     The expense report page appears.  
+     Появится страница отчета по расходам.  
   
-     The following illustration shows the Expense Report Page. Notice that the back navigation button is enabled.  
+     На рисунке ниже показана страница отчета по расходам. Обратите внимание на то, что кнопка возврата активна.  
   
-     ![ExpenseIt sample screen shot](../designers/media/gettingstartedfigure4.png "GettingStartedFigure4")  
+     ![Снимок экрана примера ExpenseIt](../designers/media/gettingstartedfigure4.png "GettingStartedFigure4")  
   
-#### <a name="to-style-controls"></a>To style controls  
+#### <a name="to-style-controls"></a>Определение стиля элементов управления  
   
-1.  Open the **App.xaml** file (C#) or **Application.xaml** file (Visual Basic).  
+1.  Откройте файл **App.xaml** (C#) или **Application.xaml** (Visual Basic).  
   
-2.  Add the following XAML between the `<Application.Resources>` and `</Application.Resources>` tags:  
+2.  Добавьте следующий код XAML между тегами `<Application.Resources>` и `</Application.Resources>` :  
   
     ```xaml  
     <!-- Header text style -->  
@@ -657,21 +657,21 @@ ms.lasthandoff: 08/28/2017
     </Style>  
     ```  
   
-     This XAML adds the following styles:  
+     Этот код XAML добавляет следующие стили:  
   
-    -   `headerTextStyle`: To format the page title `Label`.  
+    -   `headerTextStyle`для форматирования заголовка страницы `Label`;  
   
-    -   `labelStyle`: To format the `Label` controls.  
+    -   `labelStyle`для форматирования элементов управления `Label` ;  
   
-    -   `columnHeaderStyle`: To format the `DataGridColumnHeader`.  
+    -   `columnHeaderStyle`для форматирования `DataGridColumnHeader`;  
   
-    -   `listHeaderStyle`: To format the list header `Border` controls.  
+    -   `listHeaderStyle`для форматирования элементов управления `Border` заголовков списка;  
   
-    -   `listHeaderTextStyle`: To format the list header **Label**.  
+    -   `listHeaderTextStyle`для форматирования элементов управления **Label**заголовков списка;  
   
-    -   `buttonStyle`: To format the `Button` on the **ExpenseItHome.xaml** pppage.  
+    -   `buttonStyle`для форматирования элемента управления `Button` на странице **ExpenseItHome.xaml** .  
   
-3.  Open **ExpenseItHome.xaml** and replace everything between the `<Grid>` and `</Grid>` elements with the following XAML  
+3.  Откройте файл **ExpenseItHome.xaml** и замените весь код между элементами `<Grid>` и `</Grid>` на приведенный ниже код XAML.  
   
     ```xaml  
     <Grid.ColumnDefinitions>  
@@ -706,9 +706,9 @@ ms.lasthandoff: 08/28/2017
             </Grid.Background>  
     ```  
   
-     The properties such as `VerticalAlignment` and `FontFamily` that define the look of each control are removed and replaced by applying the styles.  
+     Свойства, определяющие внешний вид элементов управления, такие как `VerticalAlignment` и `FontFamily` , при применении стилей удаляются и заменяются.  
   
-4.  Open **ExpenseReportPage.xaml** and replace everything between the `<Grid>` and final `</Grid>` elements with the following XAML  
+4.  Откройте файл **ExpenseReportPage.xaml** и замените весь код между элементом `<Grid>` и последним элементом `</Grid>` на приведенный ниже код XAML.  
   
     ```xaml  
     <Grid.Background>  
@@ -764,16 +764,16 @@ ms.lasthandoff: 08/28/2017
   
     ```  
   
-     This adds styles to the `<Label>` and `<Border>` elements.  
+     В элементы `<Label>` и `<Border>` будут добавлены стили.  
   
-## <a name="connecting-to-data"></a>Connecting to Data  
- In this section, you'll create a data provider and a data template, and then connect the controls to display the data.  
+## <a name="connecting-to-data"></a>Подключение к данным  
+ В этом разделе вы создадите поставщик данных и шаблон данных, а затем подключите элементы управления для вывода данных.  
   
-#### <a name="to-bind-data-to-a-control"></a>To bind data to a control  
+#### <a name="to-bind-data-to-a-control"></a>Привязка данных к элементу управления  
   
-1.  Open **ExpenseItHome.xaml** and choose the `<Grid>` element..  
+1.  Откройте файл **ExpenseItHome.xaml** и выберите элемент `<Grid>` .  
   
-2.  Add the following XAML code:  
+2.  Добавьте следующий код XAML:  
   
     ```xaml  
   
@@ -806,9 +806,9 @@ ms.lasthandoff: 08/28/2017
     </Grid.Resources>  
     ```  
   
-     This code creates an `XmlDataProvider` class that contains the data for each person. Normally this would be loaded as a file, but for simplicity the data is added inline.  
+     Этот код создает класс `XmlDataProvider` , который содержит данные для каждого человека. Обычно такие данные загружаются в виде файла, но для простоты в этом примере они добавляются в коде.  
   
-3.  Inside the `<Grid.Resources>` element, add the following XAML code:  
+3.  Внутри элемента `<Grid.Resources>` добавьте следующий код XAML:  
   
     ```xaml  
     <!-- Name item template -->  
@@ -817,9 +817,9 @@ ms.lasthandoff: 08/28/2017
     </DataTemplate>  
     ```  
   
-     This adds a `Data Template` which defines how to display the data in the **ListBox**.  
+     Будет добавлен `Data Template` , который определяет способ вывода данных в элементе управления **ListBox**.  
   
-4.  Replace the existing `<ListBox>` element with the following XAML.  
+4.  Замените существующий элемент `<ListBox>` следующим кодом XAML:  
   
     ```xaml  
     <ListBox Name="peopleListBox" Grid.Column="1" Grid.Row="2"   
@@ -828,13 +828,13 @@ ms.lasthandoff: 08/28/2017
     </ListBox>  
     ```  
   
-     This code binds the `ItemsSource` property of the `ListBox` to the data source and applies the data template as the `ItemTemplate`.  
+     Этот код привязывает свойство `ItemsSource` элемента управления `ListBox` к источнику данных, а затем применяет шаблон данных как `ItemTemplate`.  
   
-#### <a name="to-connect-data-to-controls"></a>To connect data to controls  
+#### <a name="to-connect-data-to-controls"></a>Подключение данных к элементам управления  
   
-1.  Open **ExpenseReportPage.xaml.vb** or **ExpenseReportPage.xaml.cs**.  
+1.  Откройте файл **ExpenseReportPage.xaml.vb** или **ExpenseReportPage.xaml.cs**.  
   
-2.  In C#, add the following constructor to the **ExpenseReportPage** class, or in Visual Basic replace the existing class with the following:  
+2.  Если вы используете C#, добавьте в класс **ExpenseReportPage** приведенный ниже конструктор. Если вы используете Visual Basic, замените существующий класс на следующий:  
   
     ```csharp  
     // Custom constructor to pass expense report data  
@@ -862,11 +862,11 @@ ms.lasthandoff: 08/28/2017
     End Class  
     ```  
   
-     This constructor takes a data object as a parameter. In this case the data object will contain the name of the selected person.  
+     Этот конструктор принимает объект данных в качестве параметра. В этом случае объект данных будет содержать имя выбранного человека.  
   
-3.  Open **ExpenseItHome.xaml.vb** or **ExpenseItHome.xaml.cs**.  
+3.  Откройте файл **ExpenseItHome.xaml.vb** или **ExpenseItHome.xaml.cs**.  
   
-4.  Replace the `Click` event handler code with the following:  
+4.  Замените код обработчика событий `Click` следующим кодом:  
   
     ```csharp  
     private void Button_Click(object sender, RoutedEventArgs e)  
@@ -886,13 +886,13 @@ ms.lasthandoff: 08/28/2017
     End Sub  
     ```  
   
-     This code calls the new constructor.  
+     Этот код вызывает новый конструктор.  
   
-#### <a name="to-update-the-ui-with-data-templates"></a>To update the UI with data templates  
+#### <a name="to-update-the-ui-with-data-templates"></a>Обновление пользовательского интерфейса с помощью шаблонов данных  
   
-1.  Open **ExpenseReportPage.xaml**.  
+1.  Откройте файл **ExpenseReportPage.xaml**.  
   
-2.  Replace the XAML code for the **Name** and **Department**`<StackPanel` elements with the following:  
+2.  Замените код XAML элементов **Имя** и **и**`<StackPanel` следующим кодом:  
   
     ```xaml  
     <!-- Name -->  
@@ -909,9 +909,9 @@ ms.lasthandoff: 08/28/2017
   
     ```  
   
-     This binds the **Label** controls to the appropriate data source properties.  
+     Этот код привязывает элементы управления **Label** к соответствующим свойствам источника данных.  
   
-3.  Add the following XAML code inside the `<Grid>` element:  
+3.  Внутри элемента `<Grid>` добавьте следующий код XAML:  
   
     ```xaml  
     <!--Templates to display expense report data-->  
@@ -928,9 +928,9 @@ ms.lasthandoff: 08/28/2017
   
     ```  
   
-     This defines how to display the expense report data.  
+     Он определяет способ вывода данных отчета по расходам.  
   
-4.  Replace the `<DataGrid>` element with the following:  
+4.  Замените элемент `<DataGrid>` следующим кодом:  
   
     ```xaml  
     <!-- Expense type and Amount table -->  
@@ -944,54 +944,54 @@ ms.lasthandoff: 08/28/2017
     </DataGrid>  
     ```  
   
-     This adds an **ItemSource** and defines the bindings for the expense items.  
+     Этот код добавляет объект **ItemSource** и определяет привязки для элементов расходов.  
   
-5.  Build and run the application.  
+5.  Выполните сборку и запуск приложения.  
   
-6.  Choose a person and then choose the **View** button.  
+6.  Выберите человека и нажмите кнопку **Просмотр** .  
   
-     The following illustration shows both pages of the ExpenseIt application with controls, layout, styles, data binding, and data templates applied.  
+     На рисунке ниже показаны обе страницы приложения ExpenseIt с элементами управления, макетом, стилями, привязкой данных и примененными шаблонами данных.  
   
-     ![ExpenseIt sample screen shots](../designers/media/gettingstartedfigure5.png "GettingStartedFigure5")  
+     ![Снимки экрана примера ExpenseIt](../designers/media/gettingstartedfigure5.png "GettingStartedFigure5")  
   
-##  <a name="Best_Practices"></a> Best Practices  
- This sample demonstrates the basics of WPF and, consequently, does not follow application development best practices. For comprehensive coverage of WPF and .NET Framework application development best practices, see the following topics as appropriate:  
+##  <a name="Best_Practices"></a> Рекомендации  
+ В этом примере продемонстрированы основные принципы разработки на основе WPF, поэтому в нем не соблюдаются рекомендации по разработке приложений. Полное описание рекомендаций по разработке приложений с помощью WPF и .NET Framework см. в следующих разделах:  
   
--   Accessibility - [Accessibility Best Practices](https://msdn.microsoft.com/en-us/library/aa350483\(v=vs.100\).aspx)  
+-   Специальные возможности: [Рекомендации по специальным возможностям](https://msdn.microsoft.com/en-us/library/aa350483\(v=vs.100\).aspx)  
   
--   Security - [Windows Presentation Foundation Security](https://msdn.microsoft.com/en-us/library/aa970906\(v=vs.100\).aspx)  
+-   Безопасность: [Безопасность платформы Windows Presentation Foundation](https://msdn.microsoft.com/en-us/library/aa970906\(v=vs.100\).aspx)  
   
--   Localization - [WPF Globalization and Localization Overview](https://msdn.microsoft.com/en-us/library/ms788718\(v=vs.100\).aspx)  
+-   Локализация: [Общие сведения о глобализации и локализации WPF](https://msdn.microsoft.com/en-us/library/ms788718\(v=vs.100\).aspx)  
   
--   Performance - [Optimizing WPF Application Performance](https://msdn.microsoft.com/en-us/library/aa970683\(v=vs.100\).aspx)  
+-   Производительность [Улучшение производительности приложений WPF](https://msdn.microsoft.com/en-us/library/aa970683\(v=vs.100\).aspx)  
   
-##  <a name="Whats_Next"></a> What's Next  
- You now have a number of techniques at your disposal for creating a desktop application by using WPF. You should now have a basic understanding of the building blocks of a data-bound WPF application. This topic is by no means exhaustive, but hopefully you also now have a sense of some of the possibilities you might discover on your own beyond the techniques in this topic.  
+##  <a name="Whats_Next"></a> Что дальше?  
+ Вы освоили ряд приемов создания классических приложений с помощью WPF. У вас должно было сложиться общее представление о составных элементах приложения WPF, привязанного к данным. Информация в этом разделе ни в коем случае не является исчерпывающей, но мы надеемся, что у вас также есть теперь некоторое представление о возможностях, которые вы можете изучить самостоятельно, помимо рассмотренных в этом разделе.  
   
- For more information about the WPF architecture and programming models, see the following topics:  
+ Более подробную информацию об архитектуре и моделях программирования WPF см. в следующих разделах:  
   
--   [WPF Architecture](https://msdn.microsoft.com/en-us/library/ms750441\(v=vs.100\).aspx)  
+-   [Архитектура WPF](https://msdn.microsoft.com/en-us/library/ms750441\(v=vs.100\).aspx)  
   
--   [XAML Overview](https://msdn.microsoft.com/en-us/library/ms752059\(v=vs.100\).aspx)  
+-   [Обзор XAML](https://msdn.microsoft.com/en-us/library/ms752059\(v=vs.100\).aspx)  
   
--   [Dependency Properties Overview](https://msdn.microsoft.com/en-us/library/ms752914\(v=vs.100\).aspx)  
+-   [Общие сведения о свойствах зависимости](https://msdn.microsoft.com/en-us/library/ms752914\(v=vs.100\).aspx)  
   
--   [Layout System](https://msdn.microsoft.com/en-us/library/ms745058\(v=vs.100\).aspx)  
+-   [Система макета](https://msdn.microsoft.com/en-us/library/ms745058\(v=vs.100\).aspx)  
   
--   [Styles and Templates](https://msdn.microsoft.com/en-us/library/bb613570\(v=vs.100\).aspx)  
+-   [Стили и шаблоны](https://msdn.microsoft.com/en-us/library/bb613570\(v=vs.100\).aspx)  
   
- For more information about creating applications, see the following topics:  
+ Более подробную информацию о создании приложений см. в следующих разделах:  
   
--   [Application Development Overview](https://msdn.microsoft.com/en-us/library/bb613549\(v=vs.100\).aspx)  
+-   [Обзор разработки приложений](https://msdn.microsoft.com/en-us/library/bb613549\(v=vs.100\).aspx)  
   
--   [Controls Overview](https://msdn.microsoft.com/en-us/library/bb613551\(v=vs.100\).aspx)  
+-   [Обзор элементов управления](https://msdn.microsoft.com/en-us/library/bb613551\(v=vs.100\).aspx)  
   
--   [Data Binding Overview](https://msdn.microsoft.com/en-us/library/ms752347\(v=vs.100\).aspx)  
+-   [Общие сведения о привязке данных](https://msdn.microsoft.com/en-us/library/ms752347\(v=vs.100\).aspx)  
   
--   [WPF Graphics, Animation, and Media Overview](https://msdn.microsoft.com/en-us/library/ms742562\(v=vs.100\).aspx)  
+-   [Общие сведения о графике, анимации и мультимедиа в WPF](https://msdn.microsoft.com/en-us/library/ms742562\(v=vs.100\).aspx)  
   
--   [Documents in WPF](https://msdn.microsoft.com/en-us/library/ms748388\(v=vs.100\).aspx)  
+-   [Документы в WPF](https://msdn.microsoft.com/en-us/library/ms748388\(v=vs.100\).aspx)  
   
-## <a name="see-also"></a>See Also  
- [Walkthrough: Create a WPF Desktop Application connected to an Azure Mobile Service](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
- [Create Modern Desktop Applications with Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+## <a name="see-also"></a>См. также  
+ [Пошаговое руководство. Создание классического приложения WPF, подключенного к мобильной службе Azure](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
+ [Создание современных приложений для настольных систем с помощью Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

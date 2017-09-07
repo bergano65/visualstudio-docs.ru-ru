@@ -1,38 +1,57 @@
 ---
-title: "Этот связанный метод является базовым методом для следующих методов вставки, обновления и удаления по умолчанию | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: This related method is the backing method for the following default insert, update, or delete methods | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 62afa6da-97cf-48b9-8de3-33e4d72a0377
 caps.latest.revision: 3
-caps.handback.revision: 1
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: f90d8ff4184e8c3686f40e86d31eca39865a87c0
+ms.contentlocale: ru-ru
+ms.lasthandoff: 09/07/2017
+
 ---
-# Этот связанный метод является базовым методом для следующих методов вставки, обновления и удаления по умолчанию
-Этот связанный метод является базовым методом для следующих методов вставки, обновления или удаления по умолчанию.Если он удаляется, то эти методы также удаляются.Продолжить?  
+# <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>This related method is the backing method for the following default insert, update, or delete methods
+This related method is the backing method for the following default insert, update, or delete methods. If it is deleted, these methods will be deleted as well. Do you wish to continue?  
   
- Выбранный метод `DataContext` сейчас используется как один из методов удаления, обновления или удаления для одного из классов сущностей на реляционном конструкторе объектов.Удаление выбранного метода вызовет класс объекта, который использовал этот метод для возврата к заданному по умолчанию поведению во время выполнения для выполнения Вставки, обновления или Удаления во время обновления.  
+ The selected `DataContext` method is currently used as one of the Insert, Update, or Delete methods for one of the entity classes on the O/R Designer. Deleting the selected method will cause the entity class that was using this method to revert to the default run-time behavior for performing the Insert, Update, or Delete during an update.  
   
-### Для удаления выбранного метода, вынуждая класс сущностей использовать обновления среды выполнения  
+### <a name="to-delete-the-selected-method-causing-the-entity-class-to-use-runtime-updates"></a>To delete the selected method, causing the entity class to use runtime updates  
   
--   Нажмите кнопку **Да**.  
+-   Click **Yes**.  
   
-     Выбранный метод удаляется, и любые классы, которые использовали этот метод для переопределения поведения обновления, возвращаются к использованию поведения LINQ to SQL по умолчанию во время выполнения.  
+     The selected method is deleted and any classes that used this method for overriding update behavior are reverted to using the default LINQ to SQL runtime behavior.  
   
-### Для закрытия окна сообщения, оставляя выбранный метод неизмененным  
+### <a name="to-close-the-message-box-leaving-the-selected-method-unchanged"></a>To close the message box, leaving the selected method unchanged  
   
--   Нажмите кнопку **Нет**.  
+-   Click **No**.  
   
-     Окно сообщения закрывается без сохранения изменений.  
+     The message box closes and no changes are made.  
   
-## См. также  
- [Методы DataContext \(реляционный конструктор объектов\)](../data-tools/datacontext-methods-o-r-designer.md)   
- [Как назначить хранимые процедуры для выполнения обновлений, вставок и удалений \(реляционный конструктор объектов\)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
- [Общие сведения о реляционном конструкторе объектов](../Topic/LINQ%20to%20SQL%20Tools%20in%20Visual%20Studio1.md)   
- [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)
+## <a name="see-also"></a>See Also  
+ [DataContext Methods (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
+ [How to: Assign stored procedures to perform updates, inserts, and deletes (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
+ [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
+ [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
