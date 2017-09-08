@@ -1,100 +1,121 @@
 ---
-title: "Настройка репозитория Git в Visual Studio для Mac"
-description: "Использование Git и Subversion в Visual Studio для Mac."
+title: Setting up a Git Repository in Visual Studio for Mac
+description: Using Git and Subversion in Visual Studio for Mac.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 9f25eda17648ba7eb3c264660ee0eb3b8eee166c
+ms.sourcegitcommit: d4e4258ae5cd0bb564a9d9b8b731256bb39ada11
+ms.openlocfilehash: d52f3bd9684ae3ee531e21a63ff9a10d0ab6a6b2
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 09/08/2017
 
 ---
 
-# <a name="setting-up-a-git-repository"></a>Настройка репозитория Git
+# <a name="setting-up-a-git-repository"></a>Setting up a Git repository
 
-Git — это распределенная система управления версиями, которая позволяет командам одновременно работать с одним документом. Это означает, что все файлы хранятся на одном сервере, однако при каждом извлечении репозитория из этого центрального источника весь репозиторий клонируется локально на ваш компьютер.
+Git is a distributed version control system that allows teams to work on the same documents simultaneously. This means that there is a single server that contains all the files, but whenever a repository is checked out from this central source, the entire repository is cloned locally to your machine.
 
-Существует много удаленных узлов, которые позволяют работать с Git для управления версиями, однако наиболее распространенным из них является GitHub. Приведенный ниже пример использует узел GitHub, но в Visual Studio для Mac можно использовать любой узел Git для управления версиями.
+There are many remote hosts that allow you to work with Git for version control, however the most common of these is GitHub. The example below uses a GitHub host, but you can use any Git host for version control in Visual Studio for Mac.
 
-Если вы хотите использовать GitHub, создайте и настройте учетную запись перед выполнением описанных ниже действий. 
+If you wish to use GitHub, ensure that you have an account created and configured before following the steps below. 
 
-## <a name="creating-a-remote-repo-on-github"></a>Создание удаленного репозитория в GitHub
+## <a name="creating-a-remote-repo-on-github"></a>Creating a remote repo on GitHub
 
-Приведенный ниже пример использует узел GitHub, но в Visual Studio для Mac можно использовать любой узел Git для управления версиями.
+The example below uses a GitHub host, but you can use any Git host for version control in Visual Studio for Mac.
 
-Чтобы настроить репозиторий Git, выполните следующие действия:
+To set up a Git repository, execute the following steps:
 
-1. Создайте репозиторий Git на сайте github.com:
+1. Create a new Git repo at github.com:
 
-    ![Создание репозитория Git](media/version-control-git1-sml.png)
+    ![Create new git repo](media/version-control-git1-sml.png)
 
-2. Задайте имя, описание и конфиденциальность для репозитория. **Не** инициализируйте репозиторий. Задайте для файла GITIGNORE и лицензии значение "Нет":
+2. Set Repo Name, description, and privacy. Do **not** initialize Repo. Set .gitignore and license to None:
 
-    ![Настройка сведений о репозитории Git](media/version-control-git2.png)
+    ![Set details of git repo](media/version-control-git2.png)
 
-3. Далее вы можете отобразить и скопировать SSH- или HTTPS-адрес в созданный репозиторий:
+3. The next place will give you an option to display and copy either the HTTPS or SSH address to the repo you have just created:
 
-    ![Просмотр и копирование адреса](media/version-control-git3.png). Вам потребуется HTTPS-адрес, чтобы указать Visual Studio для Mac на этот репозиторий.
+    ![view and copy address](media/version-control-git3.png) You will need the HTTPS address to point Visual Studio for Mac to this repo.
 
 
-## <a name="publishing-an-existing-project"></a>Публикация существующего проекта
+## <a name="publishing-an-existing-project"></a>Publishing an existing project
 
-4. Вернитесь к открытому проекту в Visual Studio для Mac. 
+4. Return to your open Project in Visual Studio for Mac. 
 
-5. В строке меню выберите **Управление версиями > Publish in Version Control...** (Опубликовать в системе управления версиями):
+5. In the Menu bar, select **Version Control > Publish in Version Control…**:
 
-    ![Запуск извлечения в Visual Studio для Mac](media/version-control-git4-sml.png)
+    ![Start checkout in Visual Studio for Mac](media/version-control-git4-sml.png)
 
-6. При этом открывается диалоговое окно **Выбор репозитория**. Откройте вкладку **Зарегистрированные репозитории** и нажмите кнопку **Добавить**:
+6. This will display the **Select Repository** dialog. Choose the **Registered Repositories** tab and press the **Add** button:
 
     ![](media/version-control-git5.png)
 
-7. Введите имя репозитория, которое требуется отображать локально, и вставьте URL-адрес из шага 3. Диалоговое окно "Конфигурация репозитория" должно выглядеть следующим образом. Нажмите кнопку "ОК": 
+7. Enter the name of the repository as you would like it to display locally, and paste in the URL from step #3. Your Repository Configuration dialog should look similar to the following. Press OK: 
 
-    ![Диалоговое окно для ввода сведений Git](media/version-control-git6.png)
+    ![Enter git details dialog](media/version-control-git6.png)
 
-    Обратите внимание, что для подключения к Git также можно использовать SSH.
+    Note that it is also possible to use SSH to connect to Git.
 
-8. Чтобы попытаться опубликовать приложение в Git, выберите созданный репозиторий и убедитесь, что поля **Имя модуля** и **Сообщение** заполнены:
+8. To attempt to publish the app to Git, select the repository just created,  and ensure that both **Module Name** and **Message** text fields are completed:
 
-    ![Попытка публикации проекта в Git](media/version-control-git7.png)
+    ![Attempt to publish project to git](media/version-control-git7.png)
 
-9. Нажмите кнопку **ОК**, а затем кнопку **Опубликовать** в диалоговом окне оповещения.
+9. Click **Okay**, and then **Publish** from the alert dialog.
 
-10. Если вы еще не вводили учетные данные Git в настройках Visual Studio для Mac, введите их. Прежде всего, нужно создать токен доступа, используемый вместо пароля. Для этого следуйте указаниям в документации по [токену доступа](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) Git.
+10. If you have not already entered your Git credentials in Visual Studio for Mac preferences, enter them now. First, you need to create an Access Token, which is used in place of a password. Follow the steps in the Git [Access Token](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) documentation to do this.
 
-11. Введите имя пользователя и личный маркер доступа и нажмите клавишу **ОК**:
+11. Enter the username and Personal Access Token, and press **Okay**:
 
-    ![Ввод имени пользователя и пароля для Git](media/version-control-git9-sml.png)
+    ![Enter username and password for git](media/version-control-git9-sml.png)
 
-12. Через несколько секунд решение должно опубликоваться с начальной фиксацией. Подтвердите это, просмотрев элемент меню "Управление версиями", который теперь должен быть заполнен множеством параметров: 
+12. After a few seconds, the Solution should be published with its inital commit. Confirm this by browsing the Version Control menu item, which should now be populated with many options: 
 
-    ![Меню "Управление версиями"](media/version-control-git10.png)
+    ![Version Control Menu](media/version-control-git10.png)
 
-13. Начав вносить дополнительные изменения, выберите **Отправить изменения...**, чтобы отправить изменения в **удаленный** репозиторий. Это позволит всем соответствующим пользователям просмотреть их на сайте github.com: 
+13. Once you start to make additional changes select **Push Changes...** to push the changes to the **remote** repository. This will allow all appropriate users to view it on github.com: 
 
-    ![Отправка изменений в удаленный репозиторий](media/version-control-git11.png)
+    ![Push Changes to remote repository](media/version-control-git11.png)
 
-## <a name="publishing-a-new-project"></a>Публикация нового проекта
+## <a name="publishing-a-new-project"></a>Publishing a new project
 
-Диалоговое окно создания проекта можно использовать для публикации нового проекта с помощью Git. Для этого установите флажок **Использовать Git для управления версиями**, как показано на следующем снимке экрана. Это действие инициализирует репозиторий и добавит необязательный GITIGNORE-файл:
+The new project dialog can be used to publish a new project using git. To enable it, select the **Use git for version control.** checkbox, as illustrated in the following screenshot. This will initialize your repo and add an optional .gitignore file:
 
-![Отправка изменений в удаленный репозиторий](media/version-control-git12.png)
+![Push Changes to remote repository](media/version-control-git12.png)
 
-## <a name="troubleshooting"></a>Устранение неполадок
+## <a name="checkout-an-existing-repository"></a>Checkout an existing repository
 
-При наличии проблем с инициализацией проекта с пустым удаленным репозиторием попробуйте выполнить следующие действия:
+It's very likely that you'll have to work with a GitHub repo that exists only on the remote, not on your local machine. Visual Studio for Mac allows you to checkout this repo quickly. Follow the steps below to clone it to your machine:
 
-- Перейдите в папку решения.
-- Нажмите клавиши `Command + Shift + . `, чтобы отобразить скрытые файлы и папки.
-- При наличии папки `.git` удалите ее.
-- При наличии файла `gitignore` удалите его.
-- Нажмите клавиши `Command + Shift + . `, чтобы скрыть файлы и папки.
-- Откройте решение в Visual Studio для Mac.
-- На панели решения выберите узел решения.
-- Перейдите в меню "Управление версиями" и выберите **Publish in Version Control** (Опубликовать в системе управления версиями).
-- Выполните действия из приведенного выше руководства, начиная с шага 6.
+1. In the Menu bar, select **Version Control > Checkout…**:
+
+2. This displays the **Connect to Repository** tab:
+
+    ![Connect to Repository tab with details entered](media/version-control-git13.png)
+
+3. On the GitHub page of the remote repository, press the **Clone or Download** button and copy the URL provided:
+
+    ![github url displayed](media/version-control-git14.png)
+
+4. Replace all the text in the **URL** entry field in the **Connect to Repository** tab. This will populate most other fields in this tab for you, as illustrated in the image in step #2.
+
+5. Enter the directory that you want to clone the repo into and press **Checkout**.
+
+> [!NOTE]
+You may experience issues if the repo is over 4GB in size.
+
+## <a name="troubleshooting"></a>Troubleshooting
+
+If you have issues with initializing your project with an empty remote repository, you can try the following steps:
+
+- Go to your solution folder.
+- Press `Command + Shift + . ` To show the hidden files and folders.
+- If there's a **.git** folder, delete it.
+- If there's a **gitignore** file, delete it.
+- Press `Command + Shift + . ` To hide the files and folders.
+- Open your solution in VS for Mac.
+- On the solution pad, select your solution node.
+- Browse to the Version Control menu and choose **Publish in Version Control**.
+- Follow the steps of the above tutorial starting from the step 6.

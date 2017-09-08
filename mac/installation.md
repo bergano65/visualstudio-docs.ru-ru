@@ -1,6 +1,6 @@
 ---
-title: "Установка Visual Studio для Mac"
-description: "Инструкции по установке Visual Studio для Mac и дополнительных компонентов, которые требуются для кроссплатформенной разработки."
+title: Install Visual Studio for Mac
+description: Instructions on how to install Visual Studio for Mac and additional components required for cross-platform development.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
@@ -8,71 +8,82 @@ ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 24d2fa5f9054e621cd5167692a2571e9275c2bae
+ms.sourcegitcommit: d4e4258ae5cd0bb564a9d9b8b731256bb39ada11
+ms.openlocfilehash: 5a89260b405ad655d331425d65a14985f4c46c11
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 09/08/2017
 
 ---
 
-# <a name="setup-and-install-visual-studio-for-mac"></a>Настройка и установка Visual Studio для Mac
+# <a name="setup-and-install-visual-studio-for-mac"></a>Setup and Install Visual Studio for Mac
 
-## <a name="setup"></a>Установка
+## <a name="setup"></a>Setup
 
-Чтобы приступить к разработке собственных кроссплатформенных приложений, нужно установить и настроить несколько компонентов при скачивании Visual Studio для Mac.
+To start developing native, cross-platform apps when you download Visual Studio for Mac there are a couple of things that you must install and set up in preparation.
 
-Для работы с iOS в Visual Studio необходимы следующие компоненты:
+For working with iOS in Visual Studio you need the following pieces:
 
-* Компьютер Mac с macOS Sierra 10.12 или более поздней версии
-* Xcode 8.3
-* Идентификатор Apple ID. Если у вас нет идентификатора Apple ID, его можно создать на сайте https://appleid.apple.com. Он необходим для установки приложения Xcode и входа в него.
+* a Mac with macOS Sierra 10.12 or above
+* Xcode 8.3
+* An Apple ID. If you don't have an Apple ID already you can create a new one at https://appleid.apple.com. It's necessary to have an Apple ID for installing and signing into Xcode.
 
-## <a name="install"></a>Установка
+## <a name="install"></a>Install
 
-1. Скачайте Visual Studio для Mac с сайта [https://www.visualstudio.com/](https://www.visualstudio.com/).
+1. Download Visual Studio for Mac from [https://www.visualstudio.com/](https://www.visualstudio.com/)
 
-2. После скачивания пакета установщика щелкните файл **VisualStudioInstaller.dmg**, чтобы подключить установщик, а затем запустите его, дважды щелкнув логотип, как показано на следующем рисунке:
+2. Once the installer package is downloaded, click the **VisualStudioInstaller.dmg** file to mount the installer and then run it by double-clicking the logo, as illustrated by the following image:
 
-  ![Диалоговое окно установщика](media/installer-image1.png)
+  ![Installer dialog](media/installer-image1.png)
 
-3. Может отобразиться диалоговое окно оповещения, как на следующем рисунке. В этом случае нажмите кнопку **Открыть**:
+3. You might be prompted with an alert dialog similar to the following image. In this case, click **Open**:
 
-  ![диалоговое окно оповещения](media/installer-image2.png)
+  ![alert dialog](media/installer-image2.png)
 
-4. Установщик проверяет вашу систему, чтобы определить, какие компоненты требуется установить или обновить:
+4. The installer inspects your system to verify which components need to be installed or updated:
 
-  ![Оценка системы](media/installer-image3.png)
+  ![Assessing your system](media/installer-image3.png)
 
-5. После этого отображается диалоговое окно оповещения, предлагающее принять условия соглашения о конфиденциальности и лицензионного соглашения. Нажмите кнопку **Продолжить**, чтобы подтвердить условия:
+5. You'll then be presented with an alert dialog asking you to acknowledge the Privacy and License terms. Press the **Continue** button to acknowledge the terms:
 
-  ![Диалоговое окно лицензии](media/installer-image4.png)
+  ![License dialog](media/installer-image4.png)
 
-6. Установщик выводит список отсутствующих необходимых компонентов, которые нужно скачать и установить. Выберите продукты, которые хотите скачать:
+6. The installer presents a list of required components that are missing and that need to be downloaded and installed. Select the products you wish to download here:
 
-  ![Выбор элементов](media/installer-image5.png)
+  ![Select Items](media/installer-image5.png)
 
-  На этом экране установки отображается версия и размер каждого компонента. Вы можете щелкнуть каждый из компонентов, чтобы отобразить список его зависимостей (для Android), просмотреть скачиваемые им дополнительные пакеты (для .NET Core) или просмотреть обязательные дополнительные приложения (для iOS и macOS):
+  This installation screen displays the version and size of each individual component. You can click each component to display a list of dependencies for that component (for Android), see additional packages that it downloads (for .NET Core), or view any additional applications required (for iOS and macOS):
 
-  ![Дополнительные зависимости для Android](media/installer-image6.png)
+  ![Android additional dependencies](media/installer-image6.png)
 
-7. Выбрав требуемые параметры, нажмите кнопку **Установить и обновить** для запуска процесса установки.
+7. Once you are happy with your selection, select the **Install and Update** button to start the installation process.
 
-8. Установщик начинает скачивать и устанавливать выбранные элементы:
+8. The installer starts the download and install process of the selected items:
 
-  ![Запуск установки](media/installer-image7.png)
+  ![Starting Installation](media/installer-image7.png)
 
-  ![Скачивание Xamarin.Mac](media/installer-image8.png)
+  ![Downloading Xamarin.Mac](media/installer-image8.png)
 
-  ![Завершение установки](media/installer-image9.png)
+  ![Finishing Installation](media/installer-image9.png)
 
-9. Вам может потребоваться повысить уровень разрешений для отдельных компонентов, которые необходимы для завершения установки. Чтобы продолжить процесс установки, введите учетные данные администратора:
+9. You might be prompted to elevate the permissions necessary for individual components that are needed to complete installation. Enter your administrator credentials here to continue the installation process:
 
-  ![Предоставление разрешений для продолжения установки](media/installer-image10.png)
+  ![Enter permissions to continue with installer](media/installer-image10.png)
 
-10. После успешной установки можно запустить приложения разработки в Visual Studio, нажав кнопку **Запустить**:
+10. Once the installation is successful, you can start developing apps in Visual Studio by pressing **Start**:
 
-  ![Открытие Visual Studio](media/installer-image11.png)
+  ![Open Visual Studio](media/installer-image11.png)
 
 > [!NOTE]
-Если вы решили не устанавливать платформу или инструмент в рамках исходной установки (отменив выбор этого элемента на шаге 6), позже для установки этих компонентов потребуется снова запустить [установщик](https://www.visualstudio.com/vs/).
+If you chose not install a platform or tool during the original installation (by unselecting it in step #6), you must run the [installer](https://www.visualstudio.com/vs/) again if you wish to add the components later.
 
+## <a name="manual-installation"></a>Manual Installation
+
+If your installation fails or any single component of your installation fails, you may be able to resolve the issue through manual installation. To view the required components and download each one, take the following steps:
+
+1. On the second screen on the Visual Studio Installer, go to the menu bar and select **View Manual Installation Instructions**:
+
+    ![Option showing manual install menu item](media/installer-image12.png)
+
+2. Follow the instructions to download and install the components manually:
+
+  ![Manual installation dialog](media/installer-image13.png)
