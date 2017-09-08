@@ -1,5 +1,5 @@
 ---
-title: 'Step 7: Add Multiplication and Division Problems | Microsoft Docs'
+title: "Шаг 7. Добавление задач на умножение и деление | Документы Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,41 +32,41 @@ ms.translationtype: HT
 ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
 ms.openlocfilehash: 481d1ad8050a0b028a7cbf23f9385c9920feb1a2
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="step-7-add-multiplication-and-division-problems"></a>Step 7: Add Multiplication and Division Problems
-In the seventh part of this tutorial, you'll add multiplication and division problems, but first think about how to make that change. Consider the initial step, which involves storing values.  
+# <a name="step-7-add-multiplication-and-division-problems"></a>Шаг 7. Добавление задач на умножение и деление
+В седьмой части этого учебника вам предстоит добавить задачи на умножение и деление. Сначала, однако, необходимо подумать, как внести это изменение. Рассмотрим начальный шаг, который предполагает сохранение значений.  
   
-### <a name="to-add-multiplication-and-division-problems"></a>To add multiplication and division problems  
+### <a name="to-add-multiplication-and-division-problems"></a>Добавление задач на умножение и деление  
   
-1.  Add four more integer variables to the form.  
+1.  Добавьте в форму еще четыре целочисленные переменные.  
   
-     [!code-vb[VbExpressTutorial3Step7#15](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_1.vb)]  [!code-csharp[VbExpressTutorial3Step7#15](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_1.cs)]  
+     [!code-vb[VbExpressTutorial3Step7#15](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_1.vb)] [!code-csharp[VbExpressTutorial3Step7#15](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_1.cs)]  
   
-2.  As you did before, modify the `StartTheQuiz()` method to fill in random numbers for the multiplication and division problems.  
+2.  Как вы делали раньше, внесите изменения в метод `StartTheQuiz()`, чтобы он подставлял случайные числа для задач на умножение и деление.  
   
-     [!code-vb[VbExpressTutorial3Step7#16](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_2.vb)]  [!code-csharp[VbExpressTutorial3Step7#16](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_2.cs)]  
+     [!code-vb[VbExpressTutorial3Step7#16](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_2.vb)] [!code-csharp[VbExpressTutorial3Step7#16](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_2.cs)]  
   
-3.  Modify the `CheckTheAnswer()` method so that it also checks the multiplication and division problems.  
+3.  Измените метод `CheckTheAnswer()` таким образом, чтобы он также проверял задачи на умножение и деление.  
   
-     [!code-vb[VbExpressTutorial3Step7#17](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_3.vb)]  [!code-csharp[VbExpressTutorial3Step7#17](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_3.cs)]  
+     [!code-vb[VbExpressTutorial3Step7#17](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_3.vb)] [!code-csharp[VbExpressTutorial3Step7#17](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_3.cs)]  
   
-     You can't easily enter the multiplication sign (×) and the division sign (÷) using the keyboard, so Visual C# and Visual Basic accept an asterisk (*) for multiplication and a slash mark (/) for division.  
+     Так как простого способа ввести знак умножения (×) и знак деления (÷) с клавиатуры нет, в языках Visual C# и Visual Basic используется знак звездочка (*) для умножения и знак косой черты (/) для деления.  
   
-4.  Change the last part of the timer's Tick event handler so that it fills in the correct answer when time runs out.  
+4.  Измените последнюю часть обработчика событий таймера Tick таким образом, чтобы по истечении времени этот обработчик событий проставлял правильный ответ.  
   
-     [!code-vb[VbExpressTutorial3Step7#23](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_4.vb)]  [!code-csharp[VbExpressTutorial3Step7#23](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_4.cs)]  
+     [!code-vb[VbExpressTutorial3Step7#23](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_4.vb)] [!code-csharp[VbExpressTutorial3Step7#23](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_4.cs)]  
   
-5.  Save and run your program.  
+5.  Сохраните и выполните программу.  
   
-     Quiz takers must answer four problems to complete the quiz, as the following illustration shows.  
+     Игроки должны решить четыре задачи, чтобы пройти головоломку, как показано на следующем рисунке.  
   
-     ![Math quiz with four problems](../ide/media/express_finishedquiz.png "Express_FinishedQuiz")  
-Math quiz with four problems  
+     ![Математическая головоломка с четырьмя задачами](../ide/media/express_finishedquiz.png "Express_FinishedQuiz")  
+Математическая головоломка с четырьмя задачами  
   
-### <a name="to-continue-or-review"></a>To continue or review  
+### <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал  
   
--   To go to the next tutorial step, see [Step 8: Customize the Quiz](../ide/step-8-customize-the-quiz.md).  
+-   Следующий шаг руководства см. в разделе [Step 8: Customize the Quiz](../ide/step-8-customize-the-quiz.md) (Шаг 8. Настройка головоломки).  
   
--   To return to the previous tutorial step, see [Step 6: Add a Subtraction Problem](../ide/step-6-add-a-subtraction-problem.md).
+-   Предыдущий шаг руководства см. в разделе [Step 6: Add a Subtraction Problem](../ide/step-6-add-a-subtraction-problem.md) (Шаг 6. Добавление задачи на вычитание).
