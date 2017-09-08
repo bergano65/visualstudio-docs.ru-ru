@@ -1,6 +1,6 @@
 ---
-title: Visual Studio Feedback Client 2017 workload and component IDs | Microsoft Docs
-description: Use Visual Studio workload and component IDs to provide rich feedback for Visual Studio Team Services or Team Foundation Server
+title: "Идентификаторы рабочих нагрузок и компонентов для Visual Studio Feedback Client 2017 | Документация Майкрософт"
+description: "Идентификаторы рабочих нагрузок и компонентов Visual Studio можно использовать для предоставления подробных отзывов о Visual Studio Team Services или Team Foundation Server"
 keywords: 
 author: TerryGLee
 ms.author: tglee
@@ -35,48 +35,48 @@ ms.translationtype: HT
 ms.sourcegitcommit: 96018963278cd1d53b226473baade41da1e98111
 ms.openlocfilehash: 9bc2b7440f61e4940b4ef0b1396724a716f34e84
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 
-# <a name="visual-studio-feedback-client-2017-component-directory"></a>Visual Studio Feedback Client 2017 component directory
+# <a name="visual-studio-feedback-client-2017-component-directory"></a>Каталог компонентов для Visual Studio Feedback Client 2017
 
-The tables on this page list the IDs that you can use to install Visual Studio by using the command line. Note that we will add additional components as we release updates to Visual Studio.
+В таблицах на этой странице перечислены идентификаторы, которые можно использовать для установки Visual Studio с помощью командной строки. Обратите внимание, что по мере выхода обновлений для Visual Studio здесь будут появляться новые компоненты.
 
-Also note the following about the page:
+Также обратите внимание на следующие моменты:
 
-* Each workload has its own section, followed by the workload ID and a table of the components that are available for the workload.
-* By default, the **Required** components will be installed when you install the workload. If you choose to, you can also install the **Recommended** and **Optional** components.
-* We've also added a section that lists the additional components that are not affiliated with any workload.
+* Каждая рабочая нагрузка имеет свой раздел, за которым приводится идентификатор рабочей нагрузки и таблица компонентов, доступных для этой рабочей нагрузки.
+* По умолчанию при установке рабочей нагрузки устанавливаются только **обязательные** компоненты. По вашему желанию вы можете включить в установку **рекомендованные** и (или) **дополнительные** компоненты.
+* Мы также добавили отдельный раздел для дополнительных компонентов, которые не связаны с конкретными рабочими нагрузками.
 
-For more information about how to use these IDs, see [Use Command-Line Parameters to Install Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) page. And, for a list of workload and component IDs for other products, see [Visual Studio 2017 Workload and Component IDs](workload-and-component-ids.md) page.
+Дополнительные сведения об использовании идентификаторов см. в статье [Использование параметров командной строки для установки версии-кандидата Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Список идентификаторов рабочих нагрузок и компонентов для других продуктов вы найдете в статье [Идентификаторы рабочих нагрузок и компонентов Visual Studio 2017](workload-and-component-ids.md).
 
-## <a name="feedback-client"></a>Feedback Client
+## <a name="feedback-client"></a>клиент Feedback Client
 
-**ID:** Microsoft.VisualStudio.Workload.FeedbackClient
+**Идентификатор.** Microsoft.VisualStudio.Workload.FeedbackClient
 
-**Description:** Feedback client allows Stakeholders to provide rich feedback for Visual Studio Team Services or Team Foundation Server.
+**Описание.** Feedback Client позволяет заинтересованным лицам предоставлять подробные отзывы о Visual Studio Team Services или Team Foundation Server.
 
-### <a name="components-included-by-this-workload"></a>Components included by this workload
+### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Component ID | Name | Version | Dependency type
+Идентификатор компонента | Имя | Версия | Тип зависимости
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.0.26711.1 | Required
+Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.0.26711.1 | Обязательно
 
-## <a name="unaffiliated-components"></a>Unaffiliated components
+## <a name="unaffiliated-components"></a>Самостоятельные компоненты
 
-These are components that are not included with any workload, but may be selected as an individual component.
+Здесь перечислены компоненты, которые не используются рабочими нагрузками, но могут быть выбраны в качестве отдельного компонента.
 
-Component ID | Name | Version
+Идентификатор компонента | Имя | Версия
 --- | --- | ---
-n/a | n/a | n/a
+Н/Д | Н/Д | Н/Д
 
 
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>См. также
 
-* [Visual Studio workload and component IDs](workload-and-component-ids.md)
-* [Visual Studio administrator guide](visual-studio-administrator-guide.md)
-* [Use command-line parameters to install Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-  * [Command-line parameter examples](command-line-parameter-examples.md)
-* [Create an offline installation of Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Идентификаторы рабочих нагрузок и компонентов Visual Studio](workload-and-component-ids.md)
+* [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
+* [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+  * [Примеры параметров командной строки](command-line-parameter-examples.md)
+* [Создание автономной установки Visual Studio](create-an-offline-installation-of-visual-studio.md)
 

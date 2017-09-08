@@ -1,5 +1,5 @@
 ---
-title: 'How to: Collect Performance Data for a Web Site | Microsoft Docs'
+title: "Практическое руководство. Сбор данных о производительности для веб-сайта | Документация Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -42,86 +42,86 @@ ms.translationtype: HT
 ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
 ms.openlocfilehash: 7fe6230d86e79b6540b35d358ac9af2a3b4760a7
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>How to: Collect Performance Data for a Web Site
-You can use the **Performance Wizard** to collect performance data for an [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application. You can profile a Web application that is open in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], or you can profile an [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web site that is located on your local computer and not open in the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.  
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>Практическое руководство. Сбор данных о производительности для веб-сайта
+В целях сбора данных о производительности для веб-приложения **можно использовать** Мастер производительности [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] . Можно профилировать веб-приложение, которое было открыто в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], или веб-сайт [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] , который находится на локальном компьютере и не открыт в интегрированной среде разработки [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .  
   
 > [!NOTE]
->  The **Performance Wizard** enables you to add tier interaction (TIP) data, JScript performance data, or both to the collected profiling data. The TIP option collects data from server-side processes. The JScript profiling collects data from scripts that are running on a local or  remote Web site. In most cases, you should choose only one of the options.  
+>  **Мастер производительности** позволяет добавлять данные об уровневом взаимодействии (TIP) и/или данные о производительности JScript в собранные данные профилирования. TIP собирает данные из процессов на стороне сервера. Профилирование JScript собирает данные из скриптов, выполняющихся на локальном или удаленном веб-сайте. В большинстве случаев следует выбрать только один из этих параметров.  
   
- Depending on User Access Permissions settings that an administrator has made available, an individual user might or might not have security permission to create a profiler session on the computer that hosts the ASP.NET process. The following examples illustrate possible differences among users:  
+ В зависимости от параметров разрешений на доступ пользователей, предоставленных администратором, отдельный пользователь может как обладать, так и не обладать разрешением для создания сеанса профилировщика на компьютере, где размещен процесс ASP.NET. Возможные различия между пользователями проиллюстрированы в следующих примерах:  
   
--   Some users might access advanced profiling features when the Administrator has set the driver and service to start.  
+-   Некоторые пользователи могут воспользоваться расширенными возможностями профилирования, если администратор настроил драйвер и запускаемую службу.  
   
--   Domain users might access sample profiling only.  
+-   Пользователям домена доступны только профилирование выборки.  
   
--   Some users might deny access to profiling to all other users.  
+-   Некоторые пользователи могут запрещать доступ к профилированию всем остальным пользователям.  
   
- For more information, see [Profiling and Windows Vista Security](../profiling/profiling-and-windows-vista-security.md) and the ADMIN options in [VSPerfCmd](../profiling/vsperfcmd.md).  
+ Дополнительные сведения см. в разделе [Профилирование и безопасность Windows Vista](../profiling/profiling-and-windows-vista-security.md) и в описании параметров ADMIN раздела [VSPerfCmd](../profiling/vsperfcmd.md).  
   
-### <a name="to-profile-a-web-site-project"></a>To profile a Web site project  
+### <a name="to-profile-a-web-site-project"></a>Профилирование проекта веб-сайта  
   
-1.  Open the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web project in [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] or [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)].  
+1.  Откройте веб-проект [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] в [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] или [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)].  
   
-2.  On the **Analyze** menu, select **Performance Profiler**, select **Performance Explorer**, and then select **Start**.  
+2.  В меню **Анализ** выберите пункт **Профилировщик производительности**, затем **Обозреватель производительности** и нажмите **Запустить**.  
   
-3.  On the first page of the wizard, select a profiling method, and then click **Next**. For more information about profiling methods, see [Understanding Performance Collection Methods](../profiling/understanding-performance-collection-methods.md). Note that the concurrency visualizer profiling method is not available for web applications.  
+3.  На первой странице мастера выберите метод профилирования и нажмите кнопку **Далее**. Дополнительные сведения о методах профилирования см. в статье [Общие сведения о методах сбора данных по производительности](../profiling/understanding-performance-collection-methods.md). Обратите внимание, что метод профилирования визуализатора параллелизма недоступен для веб-приложений.  
   
-4.  In the **Which application would you like to target for profiling?** drop-down list, make sure that the current project is selected, and then click **Next**.  
+4.  Убедитесь, что в раскрывающемся списке **Какое приложение выбрано для профилирования?** выбран текущий проект, и нажмите кнопку **Далее**.  
   
-5.  On the third page of the wizard, you can choose to add tier interaction profiling (TIP) data, data from the JavaScript running in the Web pages, or both.  
+5.  На третьей странице мастера можно добавить данные профилирования уровневого взаимодействия (TIP) и/или данных из скриптов JavaScript, выполняющихся на веб-страницах.  
   
-    -   To collect tier interaction, select the **Enable Tier Interaction Profiling** check box.  
+    -   Чтобы собрать данные об уровневом взаимодействии, установите флажок **Включить профилирование уровневого взаимодействия** .  
   
-    -   To collect data from the JavaScript running in the Web pages, select the **Profile JavaScript** check box.  
+    -   Для сбора данных из скриптов JavaScript, выполняющихся на веб-страницах, установите флажок **Профилировать JavaScript** .  
   
-6.  Click **Next**.  
+6.  Нажмите кнопку **Далее**.  
   
-7.  On the fourth page of the wizard, click **Finish**.  
+7.  На четвертой странице мастера нажмите кнопку **Готово**.  
   
-8.  A performance session is created for the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] application, and the Web site is started in the browser. Exercise the functionality that you want to profile, and then close the browser.  
+8.  Для приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] создается сеанс производительности, а в браузере запускается веб-сайт. Воспользуйтесь функциями, которые вы хотите профилировать, и закройте браузер.  
   
-     The profiler generates the data file and displays the Summary view of the data in the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] main window.  
+     Профилировщик создает файл данных и отображает сводное представление данных в главном окне [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .  
   
-### <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>To profile a Web site without opening a project in Visual Studio  
+### <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>Профилирование веб-сайта без открытия проекта в Visual Studio  
   
-1.  Open [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] or [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)].  
+1.  Откройте [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] или [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)].  
   
-2.  On the **Analyze** menu, select **Performance Profiler**, select **Performance Explorer**, and then select **Start**.  
+2.  В меню **Анализ** выберите пункт **Профилировщик производительности**, затем **Обозреватель производительности** и нажмите **Запустить**.  
   
-3.  On the first page of the wizard, select a profiling method, and then click **Next**. For more information, see [Understanding Performance Collection Methods](../profiling/understanding-performance-collection-methods.md).  
+3.  На первой странице мастера выберите метод профилирования и нажмите кнопку **Далее**. Дополнительные сведения см. в статье [Общие сведения о методах сбора данных по производительности](../profiling/understanding-performance-collection-methods.md).  
   
-4.  On the second page of the wizard, select the **Profile an ASP.NET or JavaScript application** option, and then click **Next**.  
+4.  На второй странице мастера выберите параметр **Профилировать приложение ASP.NET или JavaScript** и нажмите кнопку **Далее**.  
   
-5.  In the **What URL or Path will run your web application** box on the third page of the wizard, enter the URL to the application home page, and then click **Next**.  
+5.  В поле **С какого локального URL-адреса или пути будет выполняться веб-приложение?** на третьей странице мастера введите URL-адрес для домашней страницы приложения и нажмите кнопку **Далее**.  
   
-    -   For a server (IIS) based Web site, type a URL such as **http://localhost/MySite/default.aspx**. This causes the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] application on the local computer at the application root of MySite to be profiled, and the page default.aspx on that site to be started in Internet Explorer to start the session.  
+    -   Для веб-сайта на основе сервера (IIS) введите URL-адрес, например **http://localhost/MySite/default.aspx**. В результате профилируется приложение [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] на локальном компьютере в корне приложения MySite, а страница default.aspx на этом сайте открывается в Internet Explorer для запуска сеанса.  
   
-    -   For a file based Web site, type a path such as file///**c:\WebSites\MySite\default.aspx**. This causes the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] application located at c:\webSites\MySite to be profiled and the page http://localhost:nnnn/MySite/default.aspx to be started in Internet Explorer to start the session.  
+    -   Для веб-сайта на основе файлов введите путь, например file///**c:\WebSites\MySite\default.aspx**. В результате приложение [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] , расположенное в папке c:\webSites\MySite, профилируется, а страница http://localhost:nnnn/MySite/default.aspx открывается в Internet Explorer для запуска сеанса.  
   
-    -   For external sites that you wish to collect JavaScript data on, type the URL, for example http://www.contoso.com.  
+    -   Для внешних сайтов, где требуется собирать данные о JavaScript, введите URL-адрес, например http://www.contoso.com.  
   
-     For more information, view the property pages for an [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] target binary.  
+     Дополнительные сведения см. в страницах свойств для целевого двоичного файла [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] .  
   
-6.  On the third page of the wizard, you can choose to add tier interaction profiling (TIP) data, data from the JavaScript running in the Web pages, or both.  
+6.  На третьей странице мастера можно добавить данные профилирования уровневого взаимодействия (TIP) и/или данных из скриптов JavaScript, выполняющихся на веб-страницах.  
   
-    -   To collect tier interaction, select the **Enable Tier Interaction Profiling** check box.  
+    -   Чтобы собрать данные об уровневом взаимодействии, установите флажок **Включить профилирование уровневого взаимодействия** .  
   
-    -   To collect data from the JavaScript running in the Web pages, select the **Profile JavaScript** check box.  
+    -   Для сбора данных из скриптов JavaScript, выполняющихся на веб-страницах, установите флажок **Профилировать JavaScript** .  
   
-7.  Click **Next**.  
+7.  Нажмите кнопку **Далее**.  
   
-8.  On the fourth page of the wizard, click **Finish**.  
+8.  На четвертой странице мастера нажмите кнопку **Готово**.  
   
-9. A performance session is created for the ASP.NET application, and the Web site is started in the browser. Exercise the functionality that you want to profile, and then close the browser.  
+9. Для приложения ASP.NET создается сеанс производительности, а в браузере запускается веб-сайт. Воспользуйтесь функциями, которые вы хотите профилировать, и закройте браузер.  
   
-     The profiler generates the data file and displays the Summary view of the data in the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] main window.  
+     Профилировщик создает файл данных и отображает сводное представление данных в главном окне [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-## <a name="see-also"></a>See Also  
- [Overviews](../profiling/overviews-performance-tools.md)   
- [Configuring Performance Sessions](../profiling/configuring-performance-sessions.md)   
- [Understanding Instrumentation Data Values](../profiling/understanding-instrumentation-data-values.md)   
- [Understanding Sampling Data Values](../profiling/understanding-sampling-data-values.md)
+## <a name="see-also"></a>См. также  
+ [Разделы общих сведений](../profiling/overviews-performance-tools.md)   
+ [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
+ [Общие сведения о значениях данных инструментирования](../profiling/understanding-instrumentation-data-values.md)   
+ [Общие сведения о значениях выборочных данных](../profiling/understanding-sampling-data-values.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Accessibility tips and tricks | Microsoft Docs
+title: "Специальные возможности. Советы и рекомендации | Microsoft Docs"
 ms.custom: 
 ms.date: 08/22/2017
 ms.reviewer: 
@@ -19,47 +19,47 @@ ms.translationtype: HT
 ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
 ms.openlocfilehash: 906e8c70df502245001f87795cab9f5efe808c83
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="accessibility-tips-and-tricks"></a>Accessibility tips and tricks
+# <a name="accessibility-tips-and-tricks"></a>Специальные возможности. Советы и рекомендации
 > [!TIP]
-> To learn more about recent accessibility updates, see the [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog post.
+> Дополнительные сведения о новых специальных возможностях см. в записи блога [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Улучшения специальных возможностей в Visual Studio 2017 версии 15.3).
 
-Visual Studio includes built-in accessibility features so you can easily work from the keyboard and use screen readers or other assistive technology devices. The topic includes some suggestions for optimizing Visual Studio for accessibility as well as some useful shortcut key combinations. Shortcut key combinations enable you to perform tasks in Visual Studio by using the keyboard.
+В Visual Studio встроена поддержка специальных возможностей, что позволяет облегчить работу с клавиатурой, использовать программы чтения с экрана или другие вспомогательные технологические устройства. Раздел включает в себя ряд предложений по оптимизации Visual Studio для специальных возможностей, а также некоторые полезные сочетания клавиш. Сочетания клавиш позволяют выполнять различные задачи в Visual Studio с помощью клавиатуры.
 
-## <a name="save-your-ide-settings"></a>Save your IDE settings  
- You can customize your IDE experience by saving your window layout, keyboard mapping scheme, and other preferences. For more information, see [Personalize the Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md).  
+## <a name="save-your-ide-settings"></a>Сохранение параметров интегрированной среды разработки  
+ Вы можете настроить интегрированную среду разработки на своем компьютере, сохранив макет окна, схему назначений клавиш и другие настройки. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
 
-## <a name="accessing-toolbars"></a>Accessing toolbars
-The Visual Studio IDE has toolbars as do many tool windows. The following shortcut key combinations help you access them.
+## <a name="accessing-toolbars"></a>Доступ к панелям инструментов
+Интегрированная среда разработки Visual Studio включает панели инструментов, как и многие другие окна инструментов. Следующие сочетания клавиш позволяют обращаться к ним.
 
-|Feature|Description|Key Combination|  
+|Функция|Описание|Сочетание клавиш|  
 |-------------|-----------------|---------------------|  
-|IDE toolbars|Select the first button on the Standard toolbar.|**ALT**, **CTRL** + **TAB**|  
-|Tool window toolbars|Move focus to the toolbars in a tool window. <br> <br> **NOTE:** This works for most tool windows, but only when the focus is in a tool window. Also, you must choose the SHIFT key before the ALT key. In some tool windows, such as Team Explorer, you must hold the SHIFT key for a moment before choosing the ALT key.|**SHIFT** + **ALT**|
-|Toolbars|Go to the first item in the next toolbar (when a toolbar has focus).|**CTRL** + **TAB**|
+|Панели инструментов IDE|Выбор первой кнопки на панели инструментов "Стандартная".|**ALT**, **CTRL** + **TAB**|  
+|Панели инструментов окна инструментов|Перемещение фокуса на панели инструментов в окне инструментов. <br> <br> **ПРИМЕЧАНИЕ**. Это сочетание работает для большинства окон инструментов, но только в том случае, если фокус находится в окне инструментов. Кроме того, необходимо нажать клавишу SHIFT прежде, чем клавишу ALT. В некоторых окнах инструментов, например Team Explorer, клавишу SHIFT необходимо некоторое время удерживать нажатой перед выбором клавиши ALT.|**SHIFT** + **ALT**|
+|Панели инструментов|Переход к первому элементу в следующей панели инструментов (когда панель инструментов находится в фокусе)|**CTRL** + **TAB**|
 
-## <a name="other-useful-shortcut-key-combinations"></a>Other useful shortcut key combinations  
-Some other useful shortcut key combinations include the following.
+## <a name="other-useful-shortcut-key-combinations"></a>Другие полезные сочетания клавиш  
+Далее представлен список некоторых других полезных сочетаний клавиш.
 
-|Feature|Description|Key Combination|  
+|Функция|Описание|Сочетание клавиш|  
 |-------------|-----------------|---------------------|  
-|IDE|Switch High Contrast on and off. <br> <br> **NOTE:** Standard Windows shortcut|**Left ALT + Left SHIFT + PRINT SCREEN**|  
-|Dialog box|Select or clear the check box option in a dialog box. <br> <br> **NOTE:** Standard Windows shortcut|**SPACEBAR**|  
-|Context menus|Open a context (right-click) menu. <br> <br> **NOTE:** Standard Windows shortcut|**SHIFT** + **F10**|
-|Menus|Quickly access a menu item by using its accelerator keys. Choose the **ALT** key followed by the underlined letters in a menu to activate the command. For example, to view the Open Project dialog box in Visual Studio, you would choose **ALT** + **F** + **O** + **P**.  <br><br> **NOTE:** Standard Windows shortcut|**ALT** + **[letter]**|
-|Toolbox window|Move among Toolbox tabs.|**CTRL** + **UPARROW**<br /><br /> and<br /><br /> **CTRL** + **DOWNARROW**|  
-|Toolbox window|Add a control from the Toolbox to a form or designer.|**ENTER**|  
-|Keyboard, Environment, Options dialog box|Delete a key combination entered in the **Press shortcut keys** option.|**BACKSPACE**|  
+|IDE|Включение и выключение режима высокой контрастности <br> <br> **ПРИМЕЧАНИЕ**. Стандартное сочетание клавиш Windows|Левая клавиша **ALT + левая клавиша SHIFT + PRINT SCREEN**|  
+|Диалоговое окно|Установка или снятие флажка в диалоговом окне <br> <br> **ПРИМЕЧАНИЕ**. Стандартное сочетание клавиш Windows|**ПРОБЕЛ**|  
+|Контекстные меню|Открытие контекстного меню <br> <br> **ПРИМЕЧАНИЕ**. Стандартное сочетание клавиш Windows|**SHIFT** + **F10**|
+|Меню|Быстрый доступ к пункту меню с помощью соответствующей клавиши вызова Нажмите клавишу **ALT**, а затем подчеркнутые буквы в меню, чтобы выполнить команду. Например, чтобы открыть диалоговое окно "Открыть проект" в Visual Studio, выберите **ALT** + **F** + **O** + **P**.  <br><br> **ПРИМЕЧАНИЕ**. Стандартное сочетание клавиш Windows|**ALT** + **[буква]**|
+|Окно "Панель элементов"|Перемещение между вкладками панели элементов|**CTRL** + **СТРЕЛКА ВВЕРХ**<br /><br /> и<br /><br /> **CTRL** + **СТРЕЛКА ВНИЗ**|  
+|Окно "Панель элементов"|Добавление элемента управления из панели элементов в форму или конструктор|**ВВОД**|  
+|Страница "Клавиатура", папка "Среда", диалоговое окно "Параметры"|Удаление сочетания клавиш в параметре **Введите сочетание клавиш**|**BACKSPACE**|  
 
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition.  
+>  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска.  
 
-## <a name="see-also"></a>See also  
- [Accessibility Features of Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+## <a name="see-also"></a>См. также  
+ [Специальные возможности Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
 
- [How to: Customize Menus and Toolbars in Visual Studio](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+ [Практическое руководство. Настройка меню и панелей инструментов в Visual Studio](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 
- [Personalize the Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)
+ [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Accessibility Features of Visual Studio | Microsoft Docs
+title: "Специальные возможности Visual Studio | Документация Майкрософт"
 ms.custom: 
 ms.date: 08/22/2017
 ms.reviewer: 
@@ -19,40 +19,40 @@ ms.translationtype: HT
 ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
 ms.openlocfilehash: 2f74439a5814d9939d9a4a3cd76cb430194375a6
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="accessibility-features-of-visual-studio"></a>Accessibility Features of Visual Studio
+# <a name="accessibility-features-of-visual-studio"></a>Специальные возможности Visual Studio
 > [!TIP]
-> To learn more about recent accessibility updates, see the [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog post.
+> Дополнительные сведения о новых специальных возможностях см. в записи блога [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Улучшения специальных возможностей в Visual Studio 2017 версии 15.3).
 
-In addition to accessibility features and utilities in Windows, the following features make Visual Studio more accessible for people with disabilities:  
+Помимо специальных возможностей и служебных программ Windows, следующие функции повышают удобство работы с Visual Studio для людей с ограниченными возможностями:  
 
--   Toolbar button and text enlargement  
+-   увеличение кнопок на панели инструментов и текста;  
 
--   Text size options in the editors  
+-   настройка размера текста в редакторах;  
 
--   Color customization in the editors  
+-   настройка цвета в редакторах;  
 
--   Keyboard shortcut customization  
+-   настройка сочетаний клавиш;  
 
--   Auto-completion for methods and parameters  
+-   автозавершение методов и параметров.  
 
 > [!IMPORTANT]
->  The information in this section applies only to users who license Microsoft products in the United States. If you obtained this product outside of the United States, you can use the subsidiary-information card that came with your software package, or you can visit the [Contact Us page for Microsoft Support](http://support.microsoft.com/ContactUs) and click the **Locate Microsoft Offices Worldwide** link (near the bottom of the page). This page provides a list of telephone numbers and addresses for Microsoft support services. You can contact your subsidiary to find out whether the types of products and services that are described in this section are available in your area. Information about accessibility is available in other languages, including Japanese and French.  
+>  Информация в этом разделе предназначена только для пользователей, которые приобрели лицензию на продукты корпорации Майкрософт в США. Если вы приобрели продукт за пределами США, то можете ознакомиться с информационной карточкой подразделения, которая входит в пакет программного обеспечения, или перейти на [страницу "Свяжитесь с нами" службы поддержки Майкрософт](http://support.microsoft.com/ContactUs) и щелкнуть ссылку **Найти офисы Майкрософт по всему миру** (внизу страницы). На открывшейся странице приводится список номеров телефонов и адресов подразделений службы поддержки Майкрософт. Вы можете обратиться в свое представительство, чтобы узнать, доступны ли типы продуктов и услуг, описанные в этом разделе, в вашем регионе. Информация о специальных возможностях доступна на других языках, включая японский и французский.  
 
- For more information, see the following topics:  
+ Дополнительные сведения см. в следующих разделах:  
 
--   [How to: Set IDE Accessibility Options](../../ide/reference/how-to-set-ide-accessibility-options.md)  
+-   [Практическое руководство. Настройка параметров доступа в интегрированной среде разработки](../../ide/reference/how-to-set-ide-accessibility-options.md)  
 
--   [How to: Use the Keyboard Exclusively](../../ide/reference/how-to-use-the-keyboard-exclusively.md)  
+-   [Практическое руководство. Использование только клавиатуры](../../ide/reference/how-to-use-the-keyboard-exclusively.md)  
 
--   [Default Keyboard Shortcuts](../../ide/default-keyboard-shortcuts-in-visual-studio.md)  
+-   [Сочетания клавиш по умолчанию](../../ide/default-keyboard-shortcuts-in-visual-studio.md)  
 
--   [Accessibility Tips and Tricks](../../ide/reference/accessibility-tips-and-tricks.md)  
+-   [Специальные возможности. Советы и рекомендации](../../ide/reference/accessibility-tips-and-tricks.md)  
 
--   [How to: Change Fonts and Colors](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)  
+-   [Практическое руководство. Изменение шрифтов и цветов](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)  
 
-## <a name="see-also"></a>See Also  
- [Accessibility Products and Services from Microsoft](../../ide/reference/accessibility-products-and-services-from-microsoft.md)
+## <a name="see-also"></a>См. также  
+ [Продукты и службы корпорации Майкрософт, поддерживающие специальные возможности](../../ide/reference/accessibility-products-and-services-from-microsoft.md)
 

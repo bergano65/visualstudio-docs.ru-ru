@@ -1,5 +1,5 @@
 ---
-title: 'Step 6: Add a Timer | Microsoft Docs'
+title: "Шаг 6. Добавление таймера | Документы Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,47 +31,47 @@ ms.translationtype: HT
 ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
 ms.openlocfilehash: 0ab82e9962871d6dd5da724a7a72677c387e9a53
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="step-6-add-a-timer"></a>Step 6: Add a Timer
-Next, you add a **Timer** control to the matching game. A timer waits a specified number of milliseconds, and then fires an event, referred to as a *tick*. This is useful for starting an action, or repeating an action on a regular basis. In this case, you'll use a timer to enable players to choose two icons, and if the icons don't match, hide the two icons again after a short period of time.  
+# <a name="step-6-add-a-timer"></a>Шаг 6. Добавление таймера
+Затем добавьте в игру "Подбери пару" элемент управления **Таймер**. Таймер ожидает заданное число миллисекунд, а затем вызывает событие, называемое *тактом*. Это бывает удобно для запуска действия или повтора действия с определенной периодичностью. В этом случае таймер нужен для того, чтобы игроки могли выбрать два значка, а если они не совпадают, скрыть их через небольшой отрезок времени.  
   
-### <a name="to-add-a-timer"></a>To add a timer  
+### <a name="to-add-a-timer"></a>Добавление таймера  
   
-1.  From the toolbox in Windows Forms Designer, choose **Timer** (in the **Components** category) and then choose the ENTER key, or double-click the timer to add a timer control to the form. The timer's icon, called **Timer1**, should appear in a space below the form, as shown in the following picture.  
+1.  На панели элементов в конструкторе Windows Forms выберите **Таймер** (в категории **Компоненты**), а затем нажмите клавишу ВВОД или дважды щелкните таймер, чтобы добавить его в форму. Значок с именем таймера **Timer1** должен появиться в пространстве под формой, как показано на следующем рисунке.  
   
-     ![Timer](../ide/media/express_timer.png "Express_Timer")  
-Timer  
-  
-    > [!NOTE]
-    >  If the toolbox is empty, be sure to select the form designer, and not the code behind the form, before opening the toolbox.  
-  
-2.  Choose the **Timer1** icon to select the timer. In the **Properties** window, switch from viewing events to viewing properties. Then, set the timer's **Interval** property to **750**, but leave its **Enabled** property set to **False**. The **Interval** property tells the timer how long to wait between *ticks*, or when it triggers its Tick event. A value of 750 tells the timer to wait three quarters of a second (750 milliseconds) before it fires its Tick event. You'll call the `Start()` method to start the timer only after the player chooses the second label.  
-  
-3.  Choose the timer control icon in Windows Forms Designer and then choose the ENTER key, or double-click the timer, to add an empty **Tick** event handler. Either replace the code with the following code, or manually enter the following code into the event handler.  
-  
-     [!code-csharp[VbExpressTutorial4Step6#7](../ide/codesnippet/CSharp/step-6-add-a-timer_1.cs)]  [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]  
-  
-     The Tick event handler does three things: First, it makes sure the timer isn't running by calling the `Stop()` method. Then it uses two reference variables, `firstClicked` and `secondClicked`, to make the icons of the two labels that the player chose invisible again. Finally, it resets the `firstClicked` and `secondClicked` reference variables to `null` in Visual C# and `Nothing` in Visual Basic. This step is important because it's how the program resets itself. Now it's not keeping track of any `Label` controls, and it's ready for the player to choose a label again.  
+     ![Таймер](../ide/media/express_timer.png "Express_Timer")  
+Таймер  
   
     > [!NOTE]
-    >  A `Timer` object has a `Start()` method that starts the timer, and a `Stop()` method that stops it. When you set the timer's **Enabled** property to **True** in the **Properties** window, it starts ticking as soon as the program begins. But when you leave it set to **False**, it doesn't start ticking until its `Start()` method is called. Normally, a timer fires its Tick event over and over again, using the **Interval** property to determine how many milliseconds to wait between ticks. You may have noticed how the timer's `Stop()` method is called inside the Tick event. That puts the timer into *one shot mode*, meaning that when the `Start()` method is called, it waits for the specified interval, triggers a single Tick event, and then stops.  
+    >  Если панель элементов пуста, проверьте, что перед ее открытием был выбран конструктор форм, а не код формы.  
   
-4.  To see the new timer in action, go to the code editor and add the following code to the top and bottom of the `label_Click()` event handler method. (You're adding an `if` statement to the top, and three statements to the bottom; the rest of the method stays the same.)  
+2.  Щелкните значок **Timer1**, чтобы выбрать таймер. В окне **Свойства** переключитесь с просмотра событий на просмотр свойств. Затем задайте для свойства **Interval** значение **750**, но оставьте для свойства **Enabled** значение **False**. Свойство **Interval** задает время ожидания между *тактами* таймера или время активации события Tick. Значение 750 соответствует трем четвертям секунды (750 миллисекунд), по истечении которых происходит событие Tick. Метод `Start()` для запуска таймера будет вызван только после того, как игрок выберет вторую метку.  
   
-     [!code-csharp[VbExpressTutorial4Step6#8](../ide/codesnippet/CSharp/step-6-add-a-timer_2.cs)]  [!code-vb[VbExpressTutorial4Step6#8](../ide/codesnippet/VisualBasic/step-6-add-a-timer_2.vb)]  
+3.  Выберите значок элемента управления "Таймер" в конструкторе Windows Forms, а затем нажмите клавишу ВВОД или дважды щелкните таймер, чтобы добавить пустой обработчик событий **Tick**. Замените код следующим кодом или вручную введите следующий код в обработчик событий.  
   
-     The code at the top of the method checks whether the timer was started by checking the value of the **Enabled** property. That way, if the player chooses the first and second `Label` controls and the timer starts, choosing a third label won't do anything.  
+     [!code-csharp[VbExpressTutorial4Step6#7](../ide/codesnippet/CSharp/step-6-add-a-timer_1.cs)] [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]  
   
-     The code at the bottom of the method sets the `secondClicked` reference variable to track the second `Label` control that the player chose, and then it sets that label's icon color to black to make it visible. Then, it starts the timer in one shot mode, so that it waits 750 milliseconds and then fires a single Tick event. The timer's Tick event handler hides the two icons and resets the `firstClicked` and `secondClicked` reference variables so the form is ready for the player to choose another pair of icons.  
+     Обработчик события Tick выполняет три действия. Сначала он останавливает таймер, вызывая метод `Stop()`. Затем он использует две ссылочные переменные, `firstClicked` и `secondClicked`, чтобы снова сделать невидимыми значки двух меток, которые выбрал игрок. Наконец, он сбрасывает значения ссылочных переменных `firstClicked` и `secondClicked` на `null` в Visual C# и `Nothing` в Visual Basic. Это важный шаг, поскольку таким образом программа сбрасывает себя. Теперь она не отслеживает какие-либо элементы управления `Label` и снова готова к выбору метки игроком.  
   
-5.  Save and run your program. Choose an icon, and it becomes visible.  
+    > [!NOTE]
+    >  У объекта `Timer` есть метод `Start()`, который запускает таймер, и метод `Stop()`, который останавливает его. Если в окне **Свойства** свойству таймера **Enabled** задать значение **True**, он начнет отсчет сразу же, как только запустится программа. Но если в этом свойстве оставить значение **False**, отсчет не начнется, пока не будет вызван метод `Start()`. Как правило, таймер запускает событие Tick снова и снова, используя свойство **Interval**, чтобы определить, сколько миллисекунд ждать между тактами. Обратите внимание на вызов метода таймера `Stop()` внутри события Tick. Таймер переходит в *режим однократного действия*, означающий, что при вызове метода `Start()` он ожидает в течение заданного интервала, запускает одно событие Tick, а затем останавливается.  
   
-6.  Choose another icon. It appears briefly, and then both icons disappear. Repeat this numerous times. The form now keeps track of the first and second icons that you choose, and uses the timer to pause before making the icons disappear.  
+4.  Чтобы увидеть работу нового таймера, перейдите к редактору кода и добавьте следующий код в начало и конец метода обработчика событий `label_Click()`. (Добавляется оператор `if` в начало метода и три оператора в конец. Остальная часть метода остается неизменной.)  
   
-### <a name="to-continue-or-review"></a>To continue or review  
+     [!code-csharp[VbExpressTutorial4Step6#8](../ide/codesnippet/CSharp/step-6-add-a-timer_2.cs)] [!code-vb[VbExpressTutorial4Step6#8](../ide/codesnippet/VisualBasic/step-6-add-a-timer_2.vb)]  
   
--   To go to the next tutorial step, see [Step 7: Keep Pairs Visible](../ide/step-7-keep-pairs-visible.md).  
+     Код в начале метода проверяет, запущен ли таймер, обращаясь к значению свойству **Enabled**. Таким образом, если игрок выбирает первый и второй элемент управления `Label` и таймер запускается, выбор третьего элемента управления Label ни к чему не приведет.  
   
--   To return to the previous tutorial step, see [Step 5: Add Label References](../ide/step-5-add-label-references.md).
+     Код в конце метода задает ссылочную переменную `secondClicked` таким образом, чтобы она отслеживала второй элемент управления `Label`, который щелкнул игрок, и задает этой метке черный цвет значка, чтобы сделать ее видимой. Затем таймер запускается в однократном режиме, то есть ожидает 750 миллисекунд и после этого вызывает одно событие Tick. Обработчик событий Tick таймера скрывает два значка и сбрасывает значения ссылочных переменных `firstClicked` и `secondClicked`; в результате форма будет снова готова к выбору игроком пары значков.  
+  
+5.  Сохраните и выполните программу. Выберите значок, и он станет видимым.  
+  
+6.  Выберите другой значок. Он появляется на короткое время, а затем оба значка исчезают. Повторите это несколько раз. В форме отслеживаются первый и второй значки, которые вы выбрали, и используется таймер, задающий время задержки до исчезновения значков.  
+  
+### <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал  
+  
+-   Следующий шаг руководства см. в разделе [Шаг 7. Отмена исчезновения пар значков](../ide/step-7-keep-pairs-visible.md).  
+  
+-   Предыдущий шаг руководства см. в разделе [Шаг 5. Добавление ссылок на метки](../ide/step-5-add-label-references.md).
