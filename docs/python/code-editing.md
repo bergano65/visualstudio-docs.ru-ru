@@ -1,5 +1,5 @@
 ---
-title: "Редактирование кода Python в Visual Studio | Документы Майкрософт"
+title: Editing Python Code in Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 7/10/2017
 ms.prod: visual-studio-dev15
@@ -16,148 +16,147 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: d16b8fcae5b7d1a14c8f6068dfd7103115cba291
+ms.sourcegitcommit: 4013eb0b251985b0984d0cbf2a723175fe91aad5
+ms.openlocfilehash: f4d594297359c0b79d1ad64bbc5682de916899b8
 ms.contentlocale: ru-ru
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/09/2017
 
 ---
 
-# <a name="editing-python-code"></a>Редактирование кода Python
+# <a name="editing-python-code"></a>Editing Python code
 
-Разработчики много времени работают с редактором кода. Чтобы повысить эффективность этой работы, [поддержка Python в Visual Studio](installation.md) предоставляет соответствующие функции. К ним относится выделение синтаксиса IntelliSense, автозавершение, справка по сигнатурам, переопределения методов, а также поиск и навигация. 
+Developers spend much of their time in the code editor, so [Python support in Visual Studio](installation.md) provides functionality to help you be more productive. Features include IntelliSense syntax highlighting, auto-completion, signature help, method overrides, search, and navigation. 
 
-Содержание раздела
+In this topic:
 
-- Технология [IntelliSense](#intellisense), включающая следующие возможности: автозавершения, справка по сигнатурам, вывод кратких сведений и цветовая маркировка синтаксиса.
-- [Фрагменты кода](#code-snippets)
-- [Навигация по коду](#navigating-your-code)
+- [IntelliSense](#intellisense) including completions, signature help, quick info, and code coloring.
+- [Code snippets](#code-snippets)
+- [Navigating your code](#navigating-your-code)
 
-Общие сведения о редактировании кода в Visual Studio см. в статье [Создание кода в редакторе кода и текста](../ide/writing-code-in-the-code-and-text-editor.md). Ознакомьтесь также со статьей [Структура](../ide/outlining.md), чтобы узнать, как сконцентрироваться на определенных разделах кода. Поддержка Python позволяет проверять классы, определенные в каждом модуле, и функции, определенные в этих классах, с помощью обозревателя объектов Visual Studio (**Просмотр > Другие окна > Обозреватель объектов** или клавиши CTRL+W, J). 
+For general documentation on editing code in Visual Studio, see [Writing Code in the Code and Text Editor](../ide/writing-code-in-the-code-and-text-editor.md). Also see [Outlining in Visual Studio](../ide/outlining.md), which helps you stay focused on particular sections of your code. Python support includes using the Visual Studio Object Browser (**View > Other Windows > Object Browser** or Ctrl+W,J) for inspecting classes defined in each module and the functions defined in those classes. 
 
-Редактор также интегрируется с интерактивным окном в Visual Studio, упрощая обмен кодом между ними. Сведения см. в разделах [Начало работы. Использование интерактивного окна REPL])(getting-started.md#using-the-interactive-repl-window) и [Работа с интерактивным окном Python. Команда "Send code to interactive" (Отправить код в интерактивное окно)](interactive-repl.md#send-code-to-interactive-command).
+The editor is also integrated with the interactive window in Visual Studio, making it easy to exchange code between the two. See [Getting Started - Using the interactive REPL window](getting-started.md#using-the-interactive-repl-window) and [Using the interactive window - Send code to interactive command](interactive-repl.md#send-code-to-interactive-command) for details.
 
-Вводный обзор редактирования кода Python представлен в видео [Getting Started with Python in Visual Studio, Part 3: Editing](https://youtu.be/uZGZNEyyeKs?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Начало работы с Python в Visual Studio, часть 3. Редактирование) длительностью 3 мин 48 с, размещенном на сайте youtube.com.
+For an introduction to editing Python code, see [Getting Started with Python in Visual Studio, Part 3: Editing](https://youtu.be/uZGZNEyyeKs?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (youtube.com, 3m48s):
 
 > [!VIDEO https://www.youtube.com/embed/uZGZNEyyeKs]
 
 ## <a name="intellisense"></a>IntelliSense
 
-Технология IntelliSense предоставляет следующие возможности: [автозавершения](#completions), [справка по сигнатурам](#signature-help), [вывод кратких сведений](#quick-info) и [цветовая маркировка синтаксиса](#code-coloring). В целях повышения производительности функция IntelliSense зависит от базы данных завершения, которая создается для каждой среды Python в проекте. После добавления, удаления или обновления пакетов может потребоваться обновить базы данных. Их состояние отображается в окне **Окружения Python** (элемент того же уровня, что и обозреватель решений) на вкладке **IntelliSense** (дополнительные сведения см. в статье [Окружения Python](python-environments.md)). 
+IntelliSense provides [completions](#completions), [signature help](#signature-help), [quick info](#quick-info), and [code coloring](#code-coloring). To improve performance, IntelliSense depends on the completion database that's generated for each Python environment in your project. Databases may need refreshing if you add, remove, or update packages. Database status is shown in the **Python Environments** window (a sibling of Solution Explorer) on the **IntelliSense** tab (see [Python Environments](python-environments.md)). 
 
-### <a name="completions"></a>Автозавершения
+### <a name="completions"></a>Completions
 
-Автозавершения отображаются как операторы, идентификаторы и другие атрибуты, которые можно ввести в текущее расположение в редакторе. Автозавершения, отображаемые в списке, основываются на контексте, а также фильтруются для пропуска неправильных или ненужных параметров. Они часто инициируются при вводе различных инструкций (например, `import`) и операторов (включая точку). Но их также можно отобразить в любое время, нажав клавиши CTRL+J, ПРОБЕЛ.
+Completions appear as statements, identifiers, and other words that may be appropriately entered at the current location in the editor. What's shown in the list is based on context and is filtered to omit incorrect or distracting options. Completions are often triggered by typing different statements (such as `import`) and operators (including a period), but you can have them appear at anytime by typing Ctrl-J, Space.
 
-![Автозавершение элементов](media/code-editing-completions-simple.png)
+![Member completion](media/code-editing-completions-simple.png)
 
-В открытом списке автозавершений можно выполнить поиск необходимого автозавершения с помощью клавиш со стрелками, мыши или путем ввода. Чем больше букв вы вводите, чем точнее фильтруется список для отображения возможных автозавершений. Кроме того, можно использовать следующие ярлыки:
+When a completion list is open, you can search for the completion you want using the arrow keys, the mouse, or by continuing to type. As you type more letters, the list is further filtered to show likely completions. You can also use shortcuts such as:
 
-- ввод букв, которые находятся не в начале имени, например parse для поиска argparse;
-- ввод букв, которые находятся только в начале слов, например abc для поиска AbstractBaseClass или air для поиска as_integer_ratio;
-- пропуск букв, например b64 для поиска base64.
+- Typing letters that are not at the start of the name, such as 'parse' to find 'argparse'
+- Typing only letters that are at the start of words, such as 'abc' to find 'AbstractBaseClass' or 'air' to find 'as_integer_ratio'
+- Skipping letters, such as 'b64' to find 'base64'
 
-Ниже представлено несколько примеров.
+Some examples:
 
-![Автозавершение элементов с использованием фильтрации](media/code-editing-completion-filtering.png)
+![Member completion with filtering](media/code-editing-completion-filtering.png)
 
-Завершения элементов автоматически отображаются при вводе точки после переменной или значения. Вместе с ними отображаются методы и атрибуты потенциальных типов. Если переменная может быть нескольких типов, в списке содержатся все возможные варианты для всех типов с дополнительными сведениями для указания типов, поддерживающих каждое автозавершение. Если автозавершение поддерживается всеми возможными типами, оно отображается без заметки.
+Member completions appear automatically when you type a period after a variable or value, along with the methods and attributes of the potential types. If a variable could be more than one type, the list includes all possibilities from all types, with extra information to indicate which types support each completion. Where a completion is supported by all possible types, it is shown without annotation.
 
-![Автозавершение элементов при наличии нескольких типов](media/code-editing-completion-types.png)
+![Member completion on multiple types](media/code-editing-completion-types.png)
 
-Элементы, которые начинаются и заканчиваются двумя символами подчеркивания, не отображаются по умолчанию. В общем случае к таким элементам не следует обращаться напрямую. Если же элемент нужен, введя два начальных символа подчеркивания, можно добавить эти завершения в список:
+By default, "dunder" members (members beginning and ending with a double underscore) are not shown. In general, such members should not be accessed directly. If you need one, however, typing the leading double underscore adds these completions to the list:
 
-![Автозавершение закрытых элементов](media/code-editing-completion-dunder.png)
+![Private member completion](media/code-editing-completion-dunder.png)
 
-Операторы `import` и `from ... import` отображают список модулей, которые можно импортировать. При использовании `from ... import` список содержит элементы, которые можно импортировать из указанного модуля.
+The `import` and `from ... import` statements display a list of modules that can be imported. With `from ... import`, the list includes members that can be imported from the specified module.
 
-![Автозавершение импорта](media/code-editing-completion-import.png)
+![Import completion](media/code-editing-completion-import.png)
 
-При использовании операторов `raise` и `except` отображаются списки классов, которые могут быть типами ошибок. При этом необязательно выводятся все определяемые пользователем исключения, но с их помощью можно быстро найти подходящие встроенные исключения.
+The `raise` and `except` statements display lists of classes likely to be error types. The list may not include all user-defined exceptions, but helps you find suitable built-in exceptions quickly:
 
-![Автозавершение исключений](media/code-editing-completion-exception.png)
+![Exception completion](media/code-editing-completion-exception.png)
 
-При вводе символа @ запускается декоратор и отображаются потенциальные декораторы. Многие из этих элементов невозможно использовать в качестве декораторов. Чтобы определить, какие именно из них следует использовать, обратитесь к документации по библиотеке.
+Typing @ starts a decorator and shows potential decorators. Many of these items aren't usable as decorators; check the library documentation to determine which to use.
 
-![Автозавершение декораторов](media/code-editing-completion-decorator.png)
-
-> [!Tip]
-> Вы можете настроить поведение автозавершений, выбрав **Инструменты > Параметры > Текстовый редактор > Python > Дополнительно**. Параметр **Filter list based on search string** (Отфильтровать список по строке поиска) позволяет применить фильтрацию предложений автозавершения при вводе (флажок установлен по умолчанию), а **Member completion displays intersection of members** (Автозавершение элементов отображает пересечение элементов) отображает только те автозавершения, которые поддерживают все возможные типы (флажок снят по умолчанию). См. раздел [Параметры. Результаты завершения](options.md#completion-results).
-
-### <a name="signature-help"></a>Справка по сигнатурам
-
-Во время написания кода, вызывающего функцию, при вводе открывающейся скобки `(` отображается справка по сигнатурам, а также доступные сведения о параметрах и документации. Ее также можно отобразить внутри вызова функции, нажав клавиши CTRL+SHIFT+ПРОБЕЛ. Хотя отображаемые сведения определяются строками документации в исходном коде функции, они содержат любые значения по умолчанию.
-
-![Справка по сигнатурам](media/code-editing-signature-help.png)
+![Decorator completion](media/code-editing-completion-decorator.png)
 
 > [!Tip]
-> Чтобы отключить справку по сигнатурам, выберите **Инструменты > Параметры > Текстовый редактор > Python > Общие** и снимите флажок **Завершение операторов > Cведения о параметрах**.
+> You can configure the behavior of completions through **Tools > Options > Text Editor > Python > Advanced"**. Among these, **Filter list based on search string**: applies filtering of completion suggestions as you type (default is checked), and **Member completion displays intersection of members** shows only completions that are supported by all possible types (default is unchecked). See [Options - completion results](options.md#completion-results).
 
-### <a name="quick-info"></a>Вывод кратких сведений
+### <a name="signature-help"></a>Signature help
 
-При наведении указателя мыши на идентификатор отображается подсказка. В зависимости от идентификатора в кратких сведениях могут отображаться потенциальные значения или типы, доступная документация, возвращаемые типы и расположения определений:
+When writing code that calls a function, signature help appears when you type the opening `(` and displays available documentation and parameter information. You can also make it appear with Ctrl+Shift+Space inside a function call. The information displayed depends on the documentation strings in the function's source code, but includes any default values.
 
-![Краткие сведения](media/code-editing-quick-info.png)
-
-### <a name="code-coloring"></a>Цветовая маркировка синтаксиса
-
-Цветовая маркировка синтаксиса — это функция, которая использует сведения, основанные на анализе кода, для выделения цветом переменных, операторов и других частей кода. Например, переменные, которые относятся к модулям или классам, могут выделяться другим цветом, нежели функции и остальные значения, а имена параметров могут отличаться цветом от локальных или глобальных переменных. (По умолчанию функции не выделяются полужирным шрифтом.)
-
-![Цветовая маркировка синтаксиса](media/code-editing-code-coloring.png)
-
-Чтобы настроить цвета, выберите **Инструменты > Параметры > Среда > Шрифты и цвета** и измените записи Python в списке **Отображение элементов**.
-
-![Параметр "Шрифты и цвета"](media/code-editing-customize-colors.png)
+![Signature help](media/code-editing-signature-help.png)
 
 > [!Tip]
-> Чтобы отключить цветовую маркировку синтаксиса, выберите **Инструменты > Параметры > Текстовый редактор > Python > Дополнительно** и снимите флажок **Miscellaneous Options (Другие параметры) > Color names based on type (Названия цветов на основе типа)**. См. раздел [Параметры. Прочие параметры](options.md#miscellaneous-options).
+> To disable signature help, go to **Tools > Options > Text Editor > Python > General** and clear **Statement completion > Parameter information**.
 
+### <a name="quick-info"></a>Quick info
 
-## <a name="code-snippets"></a>Фрагменты кода
+Hovering the mouse pointer over an identifier displays a Quick Info tooltip. Depending on the identifier, Quick Info may display the potential values or types, any available documentation, return types and, definition locations:
 
-Фрагменты кода — это блоки, которые можно вставлять в файлы, введя сочетание клавиш и нажав клавишу TAB или выбрав команду **Изменить > IntelliSense > Вставить фрагмент кода** и **Разместить во фрагменте**. Например, при вводе `class` с последующим нажатием клавиши TAB создается остальная часть класса. Вы можете ввести имя и список базовых классов, перемещаясь между выделенными полями с помощью клавиши TAB, а затем нажав клавишу ВВОД, чтобы начать ввод текста.
+![Quick Info](media/code-editing-quick-info.png)
 
-![Фрагменты кода](media/code-editing-code-snippets.png)
+### <a name="code-coloring"></a>Code coloring
 
-Доступные фрагменты кода можно просмотреть в диспетчере фрагментов кода (**Инструменты > Диспетчер фрагментов кода**), выбрав **Python** в качестве языка.
+Code coloring uses information from code analysis to colors variables, statements, and other parts of your code. For example, variables that refer to modules or classes may be shown in a different color than functions or other values, and parameter names appear in a different color than local or global variables. (By default, functions are not shown in bold):
 
-![Диспетчер фрагментов кода](media/code-editing-code-snippets-manager.png)
+![Code coloring](media/code-editing-code-coloring.png)
 
-Сведения о том, как создать собственные фрагменты кода, см. в статье [Пошаговое руководство. Создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md).
-Чтобы настроить фрагмент кода, [создайте его](https://msdn.microsoft.com/library/ms165394.aspx) и импортируйте с помощью диспетчера фрагментов кода. 
+To customize the colors, go to **Tools > Options > Environment > Fonts and Colors** and modify the Python entries in the **Display items** list:
 
-Если вы написали качественный фрагмент кода, к которому вы хотите предоставить общий доступ, разместите его в репозитории и [сообщите нам](https://github.com/Microsoft/PTVS/issues). Возможно, мы сможем включить его в следующий выпуск Visual Studio.
-
-
-## <a name="navigating-your-code"></a>Навигация по коду
-
-Поддержка Python предоставляет несколько вариантов для быстрой навигации по коду, а также по библиотекам, которым доступен исходный код: [Панель навигации](#navigation-bar), [Перейти к определению](#go-to-definition), [Перейти к](#navigate-to) и [Найти все ссылки](#find-all-references). Можно также использовать [обозреватель объектов](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser) Visual Studio.
-
-### <a name="navigation-bar"></a>Панель навигации
-
-Панель навигации отображается в верхней части каждого окна редактора и содержит двухуровневый список определений. Раскрывающийся список слева содержит определения классов и функций верхнего уровня в текущем файле. Раскрывающийся список справа отображает список определений в области, расположенной слева. При перемещении курсора в редакторе эти списки обновляются для отображения текущего контекста, при этом из них можно напрямую перейти к нужной записи.
-
-![Панель переходов](media/code-editing-navigation-bar.png)
+![Fonts and Colors options](media/code-editing-customize-colors.png)
 
 > [!Tip]
-> Чтобы скрыть панель навигации, выберите **Инструменты > Параметры > Текстовый редактор > Python > Общие** и снимите флажок **Параметры > Панель навигации**.
+> To disable code coloring, go to **Tools > Options > Text Editor > Python > Advanced** and clear **Miscellaneous Options > Color names based on type**. See [Options - Miscellaneous Options](options.md#miscellaneous-options).
 
-### <a name="go-to-definition"></a>Перейти к определению
 
-Команда **Перейти к определению** позволяет быстро перейти от использования идентификатора (например, имени функции, класса или переменной) к определению в исходном коде. Ее можно вызвать, щелкнув правой кнопкой мыши идентификатор и выбрав **Перейти к определению** или поместив курсор внутрь этого идентификатора и нажав клавишу F12. Эта команда работает в коде и внешних библиотеках, если исходный код доступен. Если исходный код библиотеки недоступен, команда **Перейти к определению** переходит к соответствующему оператору `import` для ссылки на модуль или отображает ошибку.
+## <a name="code-snippets"></a>Code snippets
 
-![Перейти к определению](media/code-editing-go-to-definition.png)
+Code snippets are fragments of code that can be inserted into your files by typing a shortcut and pressing Tab, or using the **Edit > IntelliSense > Insert Code Snippet** **Surround With** commands. For example, typing `class` followed by the Tab key generates the rest of the class. You can type over the name and bases list, moving between the highlighted fields with Tab, then press Enter to begin typing the body.
 
-### <a name="navigate-to"></a>Перейти к
+![Code Snippets](media/code-editing-code-snippets.png)
 
-Команда **Изменить > Перейти к** (CTRL+, (запятая)) позволяет отобразить поле поиска в редакторе, где можно ввести любую строку и увидеть возможные совпадения в коде, определяющем функцию, класс или переменную. Она обеспечивает те же возможности, что и команда **Перейти к определению**, но без необходимости искать, где используется идентификатор.
+You can see the available code snippets in the Code Snippets Manager (**Tools > Code Snippets Manager**), selecting **Python** as the language:
 
-Чтобы перейти к определению этого идентификатора, дважды щелкните любое имя или выберите его с помощью клавиш со стрелками и клавиши ВВОД.
+![Code Snippets Manager](media/code-editing-code-snippets-manager.png)
 
-![Перейти к](media/code-editing-navigate-to.png)
+To create your own snippets, see [Walkthrough: Creating a Code Snippet](../ide/walkthrough-creating-a-code-snippet.md). 
 
-### <a name="find-all-references"></a>Найти все ссылки
+If you write a great code snippet that you'd like to share, feel free to post it in a gist and [let us know](https://github.com/Microsoft/PTVS/issues). We may be able to include it in a future release of Visual Studio.
 
-**Найти все ссылки** — это удобная команда для обнаружения, где используется и определен нужный идентификатор, включая операции импорта и назначения. Ее можно вызвать, щелкнув правой кнопкой мыши идентификатор и выбрав **Найти все ссылки** или поместив курсор внутри этого идентификатора и нажав клавиши SHIFT+F12. Чтобы перейти к расположению элемента, нужно дважды щелкнуть его в списке.
 
-![Результаты выполнения команды "Найти все ссылки"](media/code-editing-find-all-references.png)
+## <a name="navigating-your-code"></a>Navigating your code
+
+Python support in Visual Studio provides several means to quickly navigate within your code, including libraries for which source code is available: the [navigation bar](#navigation-bar), [Go To Definition](#go-to-definition), [Navigate To](#navigate-to), and [Find All References](#find-all-references). You can also use the Visual Studio [Object Browser](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser).
+
+### <a name="navigation-bar"></a>Navigation bar
+
+The navigation bar is displayed at the top of each editor window and includes a two-level list of definitions. The left drop-down contains top-level class and function definitions in the current file; the right drop-down displays a list of definitions within the scope shown in the left. As you move around in the editor, the lists update to show your current context, and you can also select an entry from these lists to jump directly to in.
+
+![Navigation Bar](media/code-editing-navigation-bar.png)
+
+> [!Tip]
+> To hide the navigation bar, go to **Tools > Options > Text Editor > Python > General** and clear **Settings > Navigation bar**.
+
+### <a name="go-to-definition"></a>Go To Definition
+
+**Go To Definition** quickly jumps from the use of an identifier (such as a function name, class, or variable), to the source code where it's defined. You invoke it by right-clicking an identifier and selecting **Go To Definition** or, by placing the caret in the identifier and pressing F12. It works across your code and external libraries provided that source code is available. If library source code is not available, **Go To Definition** jumps to the relevant `import` statement for a module reference, or display an error.
+
+![Go To Definition](media/code-editing-go-to-definition.png)
+
+### <a name="navigate-to"></a>Navigate To
+
+The **Edit > Navigate To...** command (Ctrl-comma) displays a search box in the editor where you can type any string and see possible matches in your code that defines a function, class, or variable containing that string. This feature provides a similar capability as **Go To Definition** but without having to locate a use of an identifier.
+
+Double-clicking any name, or selecting with arrow keys and Enter, navigates to the definition of that identifier.
+
+![Navigate To](media/code-editing-navigate-to.png)
+
+### <a name="find-all-references"></a>Find All References
+
+**Find All References** is a helpful way of discovering where any given identifier is both defined and used, including imports and assignments. You invoke it by right-clicking an identifier and selecting **Find All References**, or by placing the caret in the identifier and pressing Shift+F12. Double-clicking an item in the list navigates to its location.
+
+![Find All References results](media/code-editing-find-all-references.png)
