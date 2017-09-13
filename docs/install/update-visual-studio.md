@@ -1,6 +1,6 @@
 ---
-title: "Обновление Visual Studio 2017 | Документы Майкрософт"
-description: "Сведения о поэтапном обновлении среды Visual Studio."
+title: Update Visual Studio 2017 | Microsoft Docs
+description: Learn how to update Visual Studio, step-by-step.
 ms.date: 04/06/2017
 ms.reviewer: 
 ms.suite: 
@@ -31,52 +31,53 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
-ms.openlocfilehash: d97358681ba486d75b30d59da1aba8b460c6f757
-ms.lasthandoff: 04/06/2017
+ms.translationtype: HT
+ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
+ms.openlocfilehash: 2b776e9567fd48bc91bf507cab5a1efb9d984a25
+ms.contentlocale: ru-ru
+ms.lasthandoff: 09/13/2017
 
 ---
-# <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Обновление до последнего выпуска Visual Studio 2017
-Регулярные обновления Visual Studio служат для добавления новых функций и исправления ошибок, о которых сообщают наши пользователи. Чтобы всегда иметь под рукой [последний оптимизированный выпуск Visual Studio](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#release-history), следует выполнить обновление. Ниже описывается порядок действий.
+# <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Update Visual Studio 2017 to the most recent release
+We update Visual Studio often to extend its functionality and to fix customer-reported issues. To make sure you have the most [current, optimized release of Visual Studio](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#release-history), you'll want to update it. Here's how.
 
-## <a name="update-by-using-the-notifications-hub"></a>Обновление с помощью центра уведомлений
-1. При наличии доступных обновлений в Visual Studio появится флажок уведомления.
+## <a name="update-by-using-the-notifications-hub"></a>Update by using the Notifications hub
+1. When there are updates, you will see a notification flag in Visual Studio.
 
-  ![Обновление Visual Studio 2017 с помощью центра уведомлений](~/install/media/notification-flag.png "Флажок уведомления в Visual Studio")
+  ![Update Visual Studio 2017 by using the Notification hub](media/notification-flag.png "The Notification flag in Visual Studio")
 
-  Щелкните или выберите флажок уведомления, чтобы открыть **центр уведомлений**.
+  Click or tap the notification flag to open the **Notifications** hub.
 
-  ![Обновление Visual Studio 2017 с помощью центра уведомлений](~/install/media/notifications-hub.png "Центр уведомлений в Visual Studio")
+  ![Update Visual Studio 2017 by using the Notification hub](media/notifications-hub.png "The Notifications hub in Visual Studio")
 
-2. Выберите уведомление **Доступно обновление Visual Studio**, чтобы открыть диалоговое окно **Расширения и обновления**.
+2. Click or tap **"Visual Studio Update" is available**, which opens the **Extensions and Updates** dialog box.
 
-  ![Обновление Visual Studio 2017 с помощью центра уведомлений](~/install/media/notifications-hub-select.png "Центр уведомлений в Visual Studio")
+  ![Update Visual Studio 2017 by using the Notifications hub](media/notifications-hub-select.png "The Notifications hub in Visual Studio")
 
-3. В диалоговом окне **Расширения и обновления** нажмите кнопку **Обновить**.
+3. In the **Extensions and Updates** dialog box, click or tap the **Update** button.
 
-  ![Обновление Visual Studio 2017 с помощью центра уведомлений](~/install/media/notifications-extensions-and-updates.png "Диалоговое окно "Расширения и обновления" в Visual Studio")
+  ![Update Visual Studio 2017 by using the Notifications hub](media/notifications-extensions-and-updates.png "The Extensions and Updates dialog in Visual Studio")
 
-## <a name="update-by-using-the-visual-studio-installer"></a>Обновление с помощью установщика Visual Studio
-1.    Запустите установщик. Для продолжения работы может потребоваться обновление самого установщика. В этом случае появится соответствующий запрос.
+## <a name="update-by-using-the-visual-studio-installer"></a>Update by using the Visual Studio Installer
+1.  Open the installer. You might need to update the installer before continuing. If this is the case, you'll be prompted to do so.
  >[!NOTE]
- > На компьютере под управлением Windows 10 установщик можно найти в списке под буквой **V** (**Установщик Visual Studio**) или под буквой **M** (**Установщик Microsoft Visual Studio**).
+ > On a computer running Windows 10, you'll find the installer under the letter **V** as the **Visual Studio Installer**, or under the letter **M** as the **Microsoft Visual Studio Installer**.
 
-2.    На странице **Продукт** установщика найдите установленный у вас выпуск Visual Studio.
+2.  On the **Product** page in the installer, look for the edition of Visual Studio that you have installed.
 
-3.    Если доступно обновление, вы увидите кнопку **Обновить**. (Поиск доступных обновлений может занять несколько секунд.)
+3.  If an update is available, you'll see an **Update** button. (It might take a few seconds for the installer to determine whether an update is available.)
 
-  Чтобы установить обновления, нажмите кнопку **Обновить**.
+  Click or tap the **Update** button to install the updates.
 
-     ![Обновление Visual Studio 2017 с помощью установщика Visual Studio](~/install/media/update-visual-studio.png "Обновление Visual Studio 2017 с помощью установщика Visual Studio")
+     ![Update Visual Studio 2017 by using the Visual Studio Installer](media/update-visual-studio.png "Update Visual Studio 2017 by using the Visual Studio Installer")
 
-## <a name="get-support"></a>Техническая поддержка
-Иногда возникают проблемы. При сбое установки Visual Studio ознакомьтесь с советами, приведенными в статье базы знаний [Устранение неполадок и исправление ошибок установки и обновления Visual Studio 2017](https://support.microsoft.com/help/4015967/troubleshooting-visual-studio-2017-installation-and-upgrade-failures).
+## <a name="get-support"></a>Get support
+Sometimes, things can go wrong. If your Visual Studio installation fails, see the [Troubleshooting Visual Studio 2017 installation and upgrade failures](https://support.microsoft.com/help/4015967/troubleshooting-visual-studio-2017-installation-and-upgrade-failures) KB article for troubleshooting tips.
 
-## <a name="see-also"></a>См. также
-* [Установка Visual Studio 2017](https://go.microsoft.com/fwlink/?linkid=833223)
-* [Изменение Visual Studio 2017](modify-visual-studio.md)
-* [Удаление Visual Studio 2017](uninstall-visual-studio.md)
-* [Руководство администратора Visual Studio 2017](visual-studio-administrator-guide.md)
-* [Сообщение о проблеме с помощью Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
+## <a name="see-also"></a>See also
+* [Install Visual Studio 2017](install-visual-studio.md)
+* [Modify Visual Studio 2017](modify-visual-studio.md)
+* [Uninstall Visual Studio 2017](uninstall-visual-studio.md)
+* [Administrator guide for Visual Studio 2017](visual-studio-administrator-guide.md)
+* [Report a problem with Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
 
