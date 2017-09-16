@@ -1,6 +1,6 @@
 ---
-title: "Изменение Visual Studio 2017 | Документация Майкрософт"
-description: "Сведения о поэтапном изменении среды Visual Studio."
+title: Modify Visual Studio 2017 | Microsoft Docs
+description: Learn how to modify Visual Studio, step-by-step.
 ms.custom: H1Hack27Feb2017
 ms.date: 04/06/2017
 ms.reviewer: 
@@ -19,51 +19,51 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 89f86a5935ad283ef5c0e29ea2db0ae22cf603a8
-ms.openlocfilehash: 3899b139066dddf0b39acaabe2874e0a7d9ad3d3
+ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
+ms.openlocfilehash: a63ddb23b0cc5b7e9a7978da90f0e3f5a3b70892
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/13/2017
 
 ---
-# <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Изменение Visual Studio 2017 путем добавления или удаления рабочих нагрузок и компонентов
-Мы упростили не только персонализацию Visual Studio в соответствии с выполняемыми задачами, но и настройку самой среды Visual Studio. Теперь больше не нужно обращаться к панели управления. Вместо этого запустите Visual Studio Installer и внесите нужные изменения.
+# <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Modify Visual Studio 2017 by adding or removing workloads and components
+Not only have we made is easier for you to personalize Visual Studio to match the tasks you want to accomplish, we've also made it easier to customize Visual Studio, too. No more looking in Control Panel to do so; instead, start the new Visual Studio Installer and make the changes you want.
 
-Ниже описывается порядок действий.  
+Here's how.  
 
-## <a name="modify-workloads"></a>Изменение рабочих нагрузок  
- Рабочие нагрузки содержат функции, которые требуются для используемого языка программирования или платформы. С помощью рабочих нагрузок можно изменить среду Visual Studio так, чтобы она поддерживала выполнение нужных задач в любое время.  
+## <a name="modify-workloads"></a>Modify workloads  
+ Workloads contain the features you need for the programming language or platform that you are using. Use workloads to modify Visual Studio so that it supports the work you want to do, when you want to do it.  
 
-1.  Найдите установщик Visual Studio на своем компьютере.  
+1.  Find the Visual Studio Installer on your computer.  
 
-     Например, на компьютере с юбилейным обновлением Windows 10 нажмите кнопку **Пуск** и прокрутите список до буквы **V**, где расположен пункт **Visual Studio Installer**.  
+     For example, on a computer running Windows 10 Anniversary Update, select **Start**, and then scroll to the letter **V**, where it's listed as **Visual Studio Installer**.  
 
-     ![Установщик Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Поиск установщика Microsoft Visual Studio")
+     ![Visual Studio Installer](media/vs2017-locate-the-visual-studio-installer.PNG "Locate the Microsoft Visual Studio Installer")
 
      >[!NOTE]
-     На некоторых компьютерах установщик Visual Studio может быть указан под буквой **"M"** — для **Microsoft Visual Studio**.<br/><br/> Кроме того, Visual Studio Installer можно найти в следующем расположении: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+     On some computers, the Visual Studio Installer might be listed under the letter **"M"** as the **Microsoft Visual Studio Installer**.<br/><br/> Alternatively, you can find the Visual Studio Installer in the following location: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-2.  Щелкните установщик (или коснитесь его) и выберите действие **Изменить**.  
+2.  Click or tap to start the installer, and then select **Modify**.  
 
-     ![Запустите или измените Visual Studio](media/vs2017-modify.PNG "Изменение Visual Studio 2017")  
+     ![Launch or modify Visual Studio](media/vs2017-modify.PNG "Modify Visual Studio 2017")  
 
-3.  На экране **Рабочие нагрузки** выберите рабочие нагрузки, которые нужно установить, или отмените выбор тех, которые нужно удалить.  
+3.  From the **Workloads** screen, select or deselect the workloads that you want to install or uninstall.  
 
-    ![Диалоговое окно программы установки Visual Studio 2017](media/vs2017-modify-workloads.PNG "Выбор рабочей нагрузки в Visual Studio 2017")
+    ![Visual Studio 2017 Setup Dialog](media/vs2017-modify-workloads.PNG "Choose a workload in Visual Studio 2017")
 
-4. Еще раз щелкните или коснитесь **Изменить**.  
+4. Click or tap **Modify** again.  
 
-5. После установки новых рабочих нагрузок и компонентов нажмите кнопку **Запуск**.
+5. After the new workloads and components are installed, click **Launch**.
 
-## <a name="modify-individual-components"></a>Изменение отдельных компонентов
+## <a name="modify-individual-components"></a>Modify individual components
 
-Если вы не хотите пользоваться удобной функцией рабочих нагрузок для настройки установленного экземпляра Visual Studio, выберите в установщике Visual Studio вариант **Отдельные компоненты**, выберите нужные компоненты и следуйте указаниям.  
+If you don't want to use the handy Workloads feature to customize your Visual Studio installation, choose the **Individual Components** option from the Visual Studio Installer, select what you want, and then follow the prompts.  
 
-## <a name="get-support"></a>Техническая поддержка
-Иногда возникают проблемы. При сбое установки Visual Studio ознакомьтесь с советами, приведенными на странице [Устранение неполадок и исправление ошибок установки и обновления Visual Studio 2017](troubleshooting-installation-issues.md).
+## <a name="get-support"></a>Get support
+Sometimes, things can go wrong. If your Visual Studio installation fails, see the [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) page for troubleshooting tips.
 
-## <a name="see-also"></a>См. также  
-* [Установка Visual Studio 2017](https://go.microsoft.com/fwlink/?linkid=833223)
-* [Обновление Visual Studio](update-visual-studio.md)
-* [Удаление Visual Studio 2017](uninstall-visual-studio.md)
-* [Как сообщить о проблеме с Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
+## <a name="see-also"></a>See also
+* [Install Visual Studio 2017](install-visual-studio.md)
+* [Update Visual Studio 2017](update-visual-studio.md)
+* [Uninstall Visual Studio 2017](uninstall-visual-studio.md)
+* [How to Report a Problem with Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
 

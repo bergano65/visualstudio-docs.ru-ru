@@ -1,7 +1,7 @@
 ---
-title: "Работа с Python в службе приложений Azure | Документы Майкрософт"
+title: Managing Python on Azure App Service | Microsoft Docs
 ms.custom: 
-ms.date: 7/12/2017
+ms.date: 9/6/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -16,33 +16,33 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
-ms.openlocfilehash: 56fccdd5e103cf29c8ea4a93ab80de7187275642
+ms.sourcegitcommit: 4013eb0b251985b0984d0cbf2a723175fe91aad5
+ms.openlocfilehash: a8f76fce826911d9f35adc2c6a0960d0b6ffa034
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/01/2017
+ms.lasthandoff: 09/09/2017
 
 ---
 
-# <a name="managing-python-on-azure-app-service"></a>Работа с Python в службе приложений Azure
+# <a name="managing-python-on-azure-app-service"></a>Managing Python on Azure App Service
 
-[Служба приложений Azure](https://azure.microsoft.com/services/app-service/) — это предложение вида "платформа как услуга" для веб-приложений, представлены ли они сайтами, к которым обращаются через браузер, REST API, используемыми вашими собственными клиентами, либо обработкой с активацией по событиям. Служба приложений полностью поддерживает использование Python для реализации приложений.
+[Azure App Service](https://azure.microsoft.com/services/app-service/) is a platform-as-a-service offering for web apps, whether they are sites accessed through a browser, REST APIs used by your own clients, or event-triggered processing. App Service fully supports using Python to implement apps.
 
-Поддержка Python в службе приложений Azure представлена набором расширений сайтов, каждое из которых содержит определенную версию среды выполнения Python. Рекомендуется последняя версия Python 3, но в случае необходимости можно использовать и более старую. Этот раздел описывает установку и настройку расширения сайта, а также всех нужных пакетов.
+Python support on Azure App Service is provided as a set of App Service site extensions that each contain a specific version of the Python runtime. The latest Python 3 version is recommended, obviously, but you can choose an older version when necessary. This topic explains how to install and configure a site extension along with any desired packages.
 
 > [!Note]
-> Представленные здесь процедуры могут изменяться, в частности, для их улучшения. Сведения об изменениях публикуются в [блоге Python Engineering at Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/).
+> The processes described here are subject to change, and especially to improvement. Changes are announced on the [Python Engineering at Microsoft blog](https://blogs.msdn.microsoft.com/pythonengineering/).
 
-## <a name="choosing-a-python-version-through-the-azure-portal"></a>Выбор версии Python с помощью портала Azure
+## <a name="choosing-a-python-version-through-the-azure-portal"></a>Choosing a Python version through the Azure portal
 
-Если ваш сайт уже развернут и запущен в службе приложений Azure, перейдите в раздел **Инструменты разработчика** колонки "Служба приложений" и выберите **Расширения > Добавить**. Прокрутите список и найдите конкретные расширения для нужной версии Python (к сожалению, этот список не поддерживает сортировку, поэтому различные версии часто разнесены по списку):
+If your site is already deployed and running on Azure App Service, navigate to your App Service in the Azure portal, scroll to the **Development Tools** section, and select **Extensions > Add**. Scroll through the list to find the specific extensions for the version of Python you want:
 
-![Портал Azure с расширениями Python](media/python-on-azure-extensions.png)
+![Azure portal showing Python extensions](media/python-on-azure-extensions.png)
 
-## <a name="choosing-a-python-version-through-the-azure-resource-manager"></a>Выбор версии Python с помощью Azure Resource Manager
+## <a name="choosing-a-python-version-through-the-azure-resource-manager"></a>Choosing a Python version through the Azure Resource Manager
 
-Если вы развертываете сайт с помощью шаблона Azure Resource Manager, добавьте расширение сайта в качестве ресурса. Это расширение отображается в виде вложенного ресурса сайта с типом `siteextensions` и именем из [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22).
+If you are deploying your site with an Azure Resource Manager template, add the site extension as a resource. The extension appears as a nested resource of your site with the type `siteextensions` and the name from [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22).
 
-Например, после добавления ссылки на `python361x64` (Python 3.6.1 x64) шаблон может выглядеть следующим образом:
+For example, after adding a reference to `python361x64` (Python 3.6.1 x64), your template may look like the following:
 
 ```json
   "resources": [
@@ -64,19 +64,25 @@ ms.lasthandoff: 08/01/2017
       ...
 ```
 
-## <a name="configuring-your-site"></a>Настройка сайта
+## <a name="configuring-your-site"></a>Configuring your site
 
-После установки расширения сайта (с помощью портала или шаблона Azure Resource Manager) путь установки Python будет похож на `d:\home\python361x64\python.exe`. Для просмотра конкретного пути выберите расширение в списке, отображаемом для службы приложений, чтобы открыть страницу с описанием, где указан путь:
+After installing the site extension (through either the portal or an Azure Resource Manager template), the Python installation path will be something like `d:\home\python361x64\python.exe`. To see the specific path, select the extension in the list shown for your App Service to open its description page containing the path:
 
-![Список расширений в службе приложений Azure](media/python-on-azure-extension-list.png)
+![Extension list on Azure App Service](media/python-on-azure-extension-list.png)
 
-![Сведения о расширении в службе приложений Azure](media/python-on-azure-extension-detail.png)
+![Extension details on Azure App Service](media/python-on-azure-extension-detail.png)
 
-Следующий шаг заключается в указании ссылки на установку Python в файле `web.config` сайта для обработчиков запросов платформы HTTP и FastCGI.
+If you have trouble seeing the path for the extension, you can find it manually using the console:
 
-### <a name="using-the-fastcgi-handler"></a>Использование обработчика FastCGI
+1. In your App Service on the Azure portal, select the **Development Tools > Console**.
+2. Enter the command `ls ../home` to see the top-level extensions folders, such as `Python361x64`.
+3. Enter a command like `ls ../home/python361x64` using one of the Python folders to verify that it contains `python.exe` and other interpreter files.
 
-FastCGI — это интерфейс, работающий на уровне запроса. Службы IIS принимают входящие подключения и перенаправляют каждый запрос в приложение WSGI, работающее в одном или нескольких сохраняемых процессах Python. [Пакет wfastcgi](https://pypi.io/project/wfastcgi) предварительно установлен и настроен для каждого расширения сайта Python, поэтому вы можете легко включить его, добавив следующий код в `web.config`:
+Note that the full path to `python.exe` is important in the next step, which is to reference that path in the site's `web.config` file for either the FastCGI and Http Platform request handlers.
+
+### <a name="using-the-fastcgi-handler"></a>Using the FastCGI handler
+
+FastCGI is an interface that works at the request level. IIS receives incoming connections and forwards each request to a WSGI app running in one or more persistent Python processes. The [wfastcgi package](https://pypi.io/project/wfastcgi) is pre-installed and configured with each Python site extension, so you can easily enable it by including the following code in `web.config`:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -94,16 +100,16 @@ FastCGI — это интерфейс, работающий на уровне �
 </configuration>
 ```
 
-`<appSettings>` доступны для вашего приложения в качестве переменных среды:
-- Значение для `PYTHONPATH` можно свободно расширить, однако оно должно включать корень сайта.
-- `WSGI_HANDLER` должен указывать на приложение WSGI, импортируемое с сайта.
-- `WSGI_LOG` является необязательным, но рекомендуется для отладки сайта. 
+The `<appSettings>` are available to your app as environment variables:
+- The value for `PYTHONPATH` may be freely extended but must include the root of your site.
+- `WSGI_HANDLER` must point to a WSGI app importable from your site.
+- `WSGI_LOG` is optional but recommended for debugging your site. 
 
-В разделе `<handlers>` включите в атрибут `scriptProcessor` элемента `<add>` правильные пути к конкретной установке. Путь снова отображается в колонке сведений о расширении.
+Under `<handlers>`, make sure the `scriptProcessor` attribute in the `<add>` element contains the proper paths to your specific installation. The path is again shown on the extension's details.
 
-### <a name="using-the-http-platform-handler"></a>Использование обработчика платформы HTTP
+### <a name="using-the-http-platform-handler"></a>Using the Http Platform handler
 
-Модуль HttpPlatform передает подключения через сокет напрямую в автономный процесс Python. Такая сквозная передача позволяет запускать нужный веб-сервер, но требует выполнения скрипта запуска на локальном веб-сервере. Укажите скрипт в элементе `<httpPlatform>`, где атрибут `processPath` указывает на Python, а атрибут `arguments` — на скрипт и все нужные аргументы:
+The HttpPlatform module passes the socket connections directly to a standalone Python process. This pass-through allows you to run any web server you like, but requires a startup script that runs a local web server. You specify the script in the `<httpPlatform>` element of `web.config`, where the `processPath` attribute points to Python and the `arguments` attribute points to your script and any arguments you want to provide:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -126,48 +132,50 @@ FastCGI — это интерфейс, работающий на уровне �
 </configuration>
 ```
 
-Конечно же, путь к `python.exe` в вашей конфигурации зависит от установленной версии.
+The path to `python.exe` in your configuration is, of course, specific to the version you installed.
 
-Показанная в коде переменная среды `HTTP_PLATFORM_PORT` содержит порт, который должен прослушивать локальный сервер для соединений от localhost. Этот пример также показывает, как при необходимости создать другую переменную среды, в данном случае это `SERVER_PORT`.
+The `HTTP_PLATFORM_PORT` environment variable shown in the code contains the port your local server should listen on for connections from localhost. This example also shows how to create another environment variable, if desired, in this case `SERVER_PORT`.
 
-## <a name="installing-packages"></a>Установка пакетов
+## <a name="installing-packages"></a>Installing packages
 
-Так как приложение, скорее всего, зависит от множества пакетов, вам нужно установить эти пакеты для своего окружения Python в службе приложений с помощью одного из трех способов:
+The Python interpreter installed through a site extension is only one piece of your Python environment. You likely need to install different packages in that environment as well, which can be done through one of three methods:
 
-- Консоль службы приложений Azure на портале Azure
-- REST API Kudu
-- Копирование каждой библиотеки в исходный код приложения
+- The [Azure App Service Kudu console](#kudu-console).
+- The [Kudu REST API](#kudu-rest-api)
+- [Copying libraries into app source code](#copying-libraries-into-app-source-code)
 
-### <a name="kudu-console"></a>Консоль Kudu
+### <a name="kudu-console"></a>Kudu console
 
-[Консоль Kudu](https://github.com/projectkudu/kudu/wiki/Kudu-console) предоставляет вам прямой доступ к серверу службы приложений и его файловой системе из командной строки с повышенными привилегиями. Этот инструмент удобно использовать при отладке, а также можно применять для конфигураций на основе интерфейса командной строки.
+The [Kudu console](https://github.com/projectkudu/kudu/wiki/Kudu-console) gives you direct, elevated command-line access to the App Service server and its file system. In addition to being a valuable debugging tool, it can also be used for CLI-based configurations such as installing packages.
 
-Откройте Kudu из колонки службы приложений, выбрав **Инструменты разработчика > Дополнительные инструменты**, а затем выберите **Перейти** для перехода по URL-адресу, который совпадает с вашим базовым URL-адресом службы приложений, за исключением вставленного элемента `.scm`. Например, если базовый URL-адрес имеет вид `https://vspython-test.azurewebsites.net/`, то для Kudu используется `https://vspython-test.scm.azurewebsites.net/`:
+To open Kudu, go to your App Service on the Azure portal, select **Development Tools > Advanced Tools**, then select **Go**. This action navigates to a URL that's the same as your base App Service URL except with `.scm` inserted. For example, if your base URL is `https://vspython-test.azurewebsites.net/` then Kudu is on `https://vspython-test.scm.azurewebsites.net/`:
 
-![Консоль Kudu для службы приложений Azure](media/python-on-azure-console01.png)
+![The Kudu console for Azure App Service](media/python-on-azure-console01.png)
 
-Выберите **Консоль отладки > CMD**, чтобы открыть консоль, где можно перейти к установке Python и узнать, какие библиотеки уже доступны.
+You can bookmark this URL for future use, fo course.
 
-Установка отдельного пакета:
+Select **Debug console > CMD** to open the console, in which you can navigate into your Python installation and see what libraries are already there.
 
-1. Перейдите в папку установки Python, куда хотите установить пакет, например `d:\home\python361x64`.
-1. Используйте команду `python.exe -m pip install <package_name>` для установки пакета.
+To install a single package:
 
-![Пример установки matplotlib через консоль Kudu для службы приложений Azure](media/python-on-azure-console02.png)
+1. Navigate to the folder of the Python installation where you want to install the package, such as `d:\home\python361x64`.
+1. Use `python.exe -m pip install <package_name>` to install a package.
 
-Установка пакетов из файла `requirements.txt` (рекомендуется):
+![Example of installing matplotlib through the Kudu console for Azure App Service](media/python-on-azure-console02.png)
 
-1. Перейдите в папку установки Python, куда хотите установить пакет, например `d:\home\python361x64`.
-1. Используйте команду `python.exe -m pip install --upgrade -r d:\home\site\wwwroot\requirements.txt` для установки пакета.
+If you've deployed a `requirements.txt` for your application to the server already, install all those requirements as follows:
 
-Файл requirements.txt рекомендуется использовать, так как он позволяет легко воспроизвести точный набор пакетов как в локальной среде, так и на сервере.
+1. Navigate to the folder of the Python installation where you want to install the package, such as `d:\home\python361x64`.
+1. Enter the command `python.exe -m pip install --upgrade -r d:\home\site\wwwroot\requirements.txt`.
+
+Using requirements.txt is recommended because it's easy to reproduce your exact package set both locally and on the server. Just remember to visit the console after deploying any changes to `requirements.txt` and run the command again.
 
 > [!Note]
-> На веб-сервере нет компилятора C, поэтому нужно установить "колесо" (wheel) для всех пакетов с собственными модулями расширения. Многие популярные пакеты имеют свои собственные колеса. В противном случае используйте `pip wheel <package_name>` на локальном компьютере разработки, после чего отправьте колесо на сайт. Пример см. в разделе [Управление необходимыми пакетами](python-environments.md#managing-required-packages)
+> There's no C compiler on your web server, so you need to install the wheel for any packages with native extension modules. Many popular packages provide their own wheels. For packages that don't, use `pip wheel <package_name>` on your local development computer and then upload the wheel to your site. For an example, see [Managing required packages](python-environments.md#managing-required-packages)
 
-### <a name="kudu-rest-api"></a>REST API Kudu
+### <a name="kudu-rest-api"></a>Kudu REST API
 
-Вместо использования консоли Kudu на портале Azure можно выполнять команды удаленно через REST API Kudu, публикуя их по адресу `https://yoursite.scm.azurewebsites.net/api/command`. Например, чтобы установить пакет `matplotlib`, опубликуйте следующую JSON по адресу `/api/command`:
+Instead of using the Kudu console through the Azure portal, you can run commands remotely through the Kudu REST API by posting the command to `https://yoursite.scm.azurewebsites.net/api/command`. For example, to install the `matplotlib` package, post the following JSON to `/api/command`:
 
 ```json
 {
@@ -176,16 +184,17 @@ FastCGI — это интерфейс, работающий на уровне �
 }
 ```
 
-Сведения о командах и проверке подлинности см. в [документации по Kudu](https://github.com/projectkudu/kudu/wiki/REST-API). Вы также можете просмотреть учетные данные с помощью [`az webapp deployment list-publishing-profiles command`](https://docs.microsoft.com/cli/azure/webapp/deployment#list-publishing-profiles) из Azure CLI. Вспомогательную библиотеку для отправки команд Kudu можно найти [на сайте GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).
+For information about commands and authentication, see the [Kudu documentation](https://github.com/projectkudu/kudu/wiki/REST-API). You can also see credentials using the [`az webapp deployment list-publishing-profiles command`](https://docs.microsoft.com/cli/azure/webapp/deployment#list-publishing-profiles) from the Azure CLI. A helper library for posting Kudu commands is also [available on GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).
 
 
-### <a name="copying-libraries-into-app-source-code"></a>Копирование библиотек в исходный код приложения
+### <a name="copying-libraries-into-app-source-code"></a>Copying libraries into app source code
 
-Вместо установки пакетов непосредственно на сервере можно скопировать библиотеки в свой исходный код и развернуть их, как если бы они были частью приложения. В зависимости от числа имеющихся зависимостей и частоты их обновления этот метод может оказаться самым простым для получения рабочего развертывания.
+Instead of installing packages directly on the server, you can instead copy libraries into your own source code and deploy them as if they were part of your app. Depending on how many dependencies you have and how frequently you update them, this method may be the easiest way to get a working deployment going.
 
-Особенностью этого способа является то, что эти библиотеки должны точно соответствовать версии Python на сервере, в противном случае после развертывания возникнут непонятные ошибки. Однако так как версии Python в расширениях сайтов службы приложений полностью аналогичны тем, которые опубликованы на сайте python.org, вы легко можете получить совместимую версию для локальной разработки.
+The caveat is that these libraries must precisely match the version of Python on the server, otherwise you'll see obscure errors after deployment. However, because the versions of Python in the App Service site extensions are exactly the same as those versions released on python.org, you can easily obtain a compatible version for local development.
 
-### <a name="avoiding-virtual-environments"></a>Отказ от виртуальных окружений
+### <a name="avoiding-virtual-environments"></a>Avoiding virtual environments
 
-Хотя локальная работа в виртуальном окружении может помочь вам полноценно изучить нужные сайту зависимости, использовать виртуальные окружения в службе приложений не рекомендуется. Вместо этого просто установите библиотеки в основную папку Python и разверните их вместе с приложением, чтобы предотвратить конфликты зависимостей.
+Although working in a virtual environment locally can help you fully understand the dependencies needed by your site, using virtual environments on App Service is not recommended. Instead, just install libraries into your main Python folder and deploy them with your app to avoid conflicting dependencies.
+
 
