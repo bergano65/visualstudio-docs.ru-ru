@@ -1,85 +1,77 @@
 ---
-title: Set the control to be created when dragging from the Data Sources window | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- Data Sources Window, select controls
-- Windows Forms, displaying data
-- data [Visual Studio], displaying on Windows Forms
-- data [Visual Studio], Data Sources window
+title: "Задание поведения, при котором элемент управления создается при перетаскивании из окна &quot;Источники данных&quot; | Microsoft Docs"
+ms.custom: ""
+ms.date: "09/21/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "VB"
+  - "CSharp"
+  - "C++"
+  - "aspx"
+helpviewer_keywords: 
+  - "Окно "Источники данных", выбор элементов управления"
+  - "Windows Forms, отображение данных"
+  - "данные [Visual Studio], отображение в Windows Forms"
+  - "данные [Visual Studio], окно "Источники данных""
 ms.assetid: 20597ff8-0c98-43ec-8fb1-05376804ba48
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 1d4298d60886d8fe8b402b59b1838a4171532ab1
-ms.openlocfilehash: d67fd06767fc8160a1a433f5e37826eeae5750fe
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/07/2017
-
+caps.handback.revision: 28
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
 ---
-# <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Set the control to be created when dragging from the Data Sources window
-You can create data-bound controls by dragging items from the **Data Sources** window onto the WPF designer or Windows Forms designer. Each item in the **Data Sources** window has a default control that is created when you drag it to the designer. However, you can choose to create a different control.  
+# Задание поведения, при котором элемент управления создается при перетаскивании из окна &quot;Источники данных&quot;
+Связанные с данными элементы управления, которые отображают связанные данные, можно создавать путем перетаскивания элементов из окна **Источники данных** в конструктор WPF или Windows Forms.  У каждого элемента в окне **Источники данных** имеется заданный по умолчанию элемент управления, который создается при перетаскивании элемента в конструктор.  Однако можно создать другой элемент управления.  
   
-## <a name="set-the-controls-to-be-created-for-data-tables-or-objects"></a>Set the controls to be created for data tables or objects  
- Before you drag items that represent data tables or objects from the **Data Sources** window, you can choose to display all the data in one control, or to display each column or property in a separate control.  
+## Задание элементов управления, которые должны быть созданы для таблиц или объектов данных  
+ Прежде чем перетащить элементы, представляющие таблицы или объекты данных из окна **Источники данных**, можно выбрать, как следует отображать данные: в одном элементе управления или каждый столбец или свойство в отдельном элементе управления.  
   
- In this context, the term *object* refers to a custom business object, an entity (in an Entity Data Model), or an object returned by a service.  
+ В этом контексте термин *объект* означает пользовательский бизнес\-объект или сущность \(в модели EDM\) или объект, возвращенный службой.  
   
-#### <a name="to-set-the-controls-to-be-created-for-data-tables-or-objects"></a>To set the controls to be created for data tables or objects  
+#### Чтобы задать создание элементов управления для таблиц или объектов данных  
   
-1.  Make sure that the WPF designer or the Windows Forms designer is open.  
+1.  Убедитесь, что открыт конструктор WPF или конструктор Windows Forms.  
   
-2.  In the **Data Sources** window, select the item that represents the data table or object you want to set.  
+2.  В окне **Источники данных** выберите элемент, представляющий таблицу или объект данных, который следует задать.  
   
-3.  Click the drop-down menu for the item, and then click one of the following items in the menu:  
+3.  Щелкните раскрывающееся меню для этого элемента, затем щелкните один из следующих элементов в меню:  
   
-    -   To display each data field in a separate control, click **Details**. When you drag the data item to the designer, this action will create a different data-bound control for each column or property of the parent data table or object, along with labels for each control.  
+    -   Чтобы отобразить каждое поле данных в отдельном элементе управления, щелкните **Таблица**.  При перетаскивании элемента данных в конструктор для каждого столбца или свойства родительской таблицы или объекта данных будет создан отдельный элемент управления, привязанный к данным, в месте с метками для каждого элемента управления.  
   
-    -   To display all of the data in a single control, select a different control in the list, such as **DataGrid** or **List** in a WPF application, or **DataGridView** in a Windows Forms application.  
+    -   Чтобы отобразить все данные в одном элементе управления, выберите другой элемент управления в списке, например **Сетка данных** или **Список** в приложении WPF или **DataGridView** в приложении Windows Forms.  
   
-     The list of available controls depends on which designer you have open, which version of the .NET Framework your project targets, and whether you have added custom controls that support data binding to the **Toolbox**. If the control you want to create is not in the list of available controls, you can add the control to the list. For more information, see [Add custom controls to the Data Sources window](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+     Список доступных элементов управления зависит от открытого конструктора, версии .NET Framework, используемой для проекта, и добавления пользовательских элементов управления, поддерживающих привязку к данным, на **панель инструментов**.  Если создаваемый элемент управления присутствует в списке доступных элементов управления, можно добавить элемент управления в список.  Для получения дополнительной информации см. [Добавление пользовательских элементов управления в окно "Источники данных"](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
-     To learn how to create a custom Windows Forms control that can be added to the list of controls for data tables or objects in the **Data Sources** window, see [Create a Windows Forms user control that supports complex data binding](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).  
+     Сведения о создании пользовательского элемента управления Windows Forms, который может быть добавлен в список элементов управления таблицы или объекта данных, расположенный в окне **Источники данных**, см. в разделе [Пошаговое руководство. Создание пользовательского элемента управления Windows Forms со сложной привязкой данных](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).  
   
-## <a name="set-the-controls-to-be-created-for-data-columns-or-properties"></a>Set the controls to be created for data columns or properties  
- Before you drag an item that represents a column or a property of an object from the **Data Sources** window to the designer, you can set the control to be created.  
+## Задание элементов управления, которые должны быть созданы для столбцов или свойств данных  
+ Прежде чем перетащить элемент, представляющий столбец или свойство объекта, из окна **Источники данных** в конструктор, можно задать создание такого элемента управления.  
   
-#### <a name="to-set-the-controls-to-be-created-for-columns-or-properties"></a>To set the controls to be created for columns or properties  
+#### Чтобы задать создание элементов управления для столбцов и свойств  
   
-1.  Make sure that the WPF designer or the Windows Forms designer is open.  
+1.  Убедитесь, что открыт конструктор WPF или конструктор Windows Forms.  
   
-2.  In the **Data Sources** window, expand the desired table or object to display its columns or properties.  
+2.  В окне **Источники данных** разверните нужную таблицу или объект для отображения его свойств или столбцов.  
   
-3.  Select each column or property for which you want to set the control to be created.  
+3.  Выберите каждый столбец или свойство, для которых следует создать элементы управления.  
   
-4.  Click the drop-down menu for the column or property, and then select the control you want to create when the item is dragged to the designer.  
+4.  Щелкните раскрывающееся меню для этого столбца или свойства, затем выберите элемент управления, который следует создать, во время перетаскивания элемента в конструктор.  
   
-     The list of available controls depends on which designer you have open, which version of the .NET Framework your project targets, and which custom controls that support data binding you have added to the **Toolbox**. If the control you want to create is in the list of available controls, you can add the control to the list. For more information, see [Add custom controls to the Data Sources window](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+     Список доступных элементов управления зависит от открытого конструктора, версии .NET Framework, используемой для проекта, и добавления пользовательских элементов управления, поддерживающих привязку к данным, на **панель инструментов**.  Если создаваемый элемент управления присутствует в списке доступных элементов управления, можно добавить элемент управления в список.  Для получения дополнительной информации см. [Добавление пользовательских элементов управления в окно "Источники данных"](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
-     To learn how to create a custom control that can be added to the list of controls for data columns or properties in the **Data Sources** window, see [Create a Windows Forms user control that supports simple data binding](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).  
+     Сведения о создании пользовательского элемента управления Windows Forms, который может быть добавлен в список элементов управления столбцов или свойств данных, расположенный в окне **Источники данных**, см. в разделе [Пошаговое руководство. Создание пользовательского элемента управления Windows Forms с простой привязкой данных](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).  
   
-     If you don't want to create a control for the column or property, select **None** in the drop-down menu. This is useful if you want to drag the parent table or object to the designer, but you do not want to include the specific column or property.  
+     В раскрывающемся списке выберите пункт **Нет**, если не следует создавать элемент управления для столбца или свойства.  Это полезно, если следует перетащить в конструктор родительскую таблицу или объект, но нет необходимости добавлять определенный столбец или свойство.  
   
-## <a name="see-also"></a>See Also  
- [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
+## См. также  
+ [Пошаговые руководства работы с данными](../Topic/Data%20Walkthroughs.md)   
+ [Пошаговое руководство. Отображение данных на форме в приложении Windows](../data-tools/walkthrough-displaying-data-on-a-windows-form.md)   
+ [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
+ [Создание и изменение типизированных наборов данных](../data-tools/creating-and-editing-typed-datasets.md)   
+ [Общие сведения об источниках данных](../data-tools/add-new-data-sources.md)   
+ [окно "Источники данных"](../Topic/Data%20Sources%20Window.md)   
+ [Добавление пользовательских элементов управления в окно "Источники данных"](../data-tools/add-custom-controls-to-the-data-sources-window.md)

@@ -1,107 +1,90 @@
 ---
-title: SccPopulateList Function | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- SccPopulateList
-helpviewer_keywords:
-- SccPopulateList function
+title: "Функция SccPopulateList | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "SccPopulateList"
+helpviewer_keywords: 
+  - "Функция SccPopulateList"
 ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 caps.latest.revision: 13
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 8d335f9853531f25bd5c7d137248e3b03297a3d5
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 13
 ---
-# <a name="sccpopulatelist-function"></a>SccPopulateList Function
-This function updates a list of files for a particular source control command and supplies source control status on all given files.  
+# Функция SccPopulateList
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Эта функция обновляет список файлов для определенного источника команды управления и предоставляет состояние системы управления версиями для всех файлов данного.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
+```cpp#  
 SCCRTN SccPopulateList (  
-   LPVOID          pvContext,  
-   enum SCCCOMMAND nCommand,  
-   LONG            nFiles,  
-   LPCSTR*         lpFileNames,  
-   POPLISTFUNC     pfnPopulate,  
-   LPVOID          pvCallerData,  
-   LPLONG          lpStatus,  
-   LONG            fOptions  
+   LPVOID          pvContext,  
+   enum SCCCOMMAND nCommand,  
+   LONG            nFiles,  
+   LPCSTR*         lpFileNames,  
+   POPLISTFUNC     pfnPopulate,  
+   LPVOID          pvCallerData,  
+   LPLONG          lpStatus,  
+   LONG            fOptions  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  pvContext  
- [in] The source control plug-in context structure.  
+ \[in\] Структура подключаемого модуля контекста исходного элемента управления.  
   
  nCommand  
- [in] The source control command that will be applied to all files in the `lpFileNames` array (see [Command Code](../extensibility/command-code-enumerator.md) for a list of possible commands).  
+ \[in\] Команда управления версиями, который будет применяться ко всем файлам в `lpFileNames` массива \(см. [Код команды](../extensibility/command-code-enumerator.md) список команд\).  
   
  nFiles  
- [in] Number of files in the `lpFileNames` array.  
+ \[in\] Число файлов в `lpFileNames` массива.  
   
  lpFileNames  
- [in] An array of file names known to the IDE.  
+ \[in\] Массив имен файлов в Интегрированной среде разработки.  
   
  pfnPopulate  
- [in] The IDE callback function to call to add and remove files (see [POPLISTFUNC](../extensibility/poplistfunc.md) for details).  
+ \[in\] Функции обратного вызова интегрированной среды разработки для добавления и удаления файлов \(в разделе [POPLISTFUNC](../extensibility/poplistfunc.md) Подробные сведения\).  
   
  pvCallerData  
- [in] Value that is to be passed unchanged to the callback function.  
+ \[in\] Без изменений значение, передаваемое функции обратного вызова.  
   
  lpStatus  
- [in, out] An array for the source control plug-in to return the status flags for each file.  
+ \[in, out\] Массив для системы управления версиями, подключаемый модуль Возвращает флаги состояния для каждого файла.  
   
- fOptions  
- [in] Command flags (see the "PopulateList flag" section of [Bitflags Used by Specific Commands](../extensibility/bitflags-used-by-specific-commands.md) for details).  
+ Возможности  
+ \[in\] Команда флаги \(в разделе «PopulateList флаг» [Битовые флаги, используемые команды](../extensibility/bitflags-used-by-specific-commands.md) Подробные сведения\).  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## Возвращаемое значение  
+ Реализации подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Value|Description|  
-|-----------|-----------------|  
-|SCC_OK|Success.|  
-|SCC_E_NONSPECIFICERROR|Nonspecific failure.|  
+|Значение|Описание|  
+|--------------|--------------|  
+|SCC\_OK|Выполнено.|  
+|SCC\_E\_NONSPECIFICERROR|Неспецифическая ошибка.|  
   
-## <a name="remarks"></a>Remarks  
- This function examines the list of files for its current status. It uses the `pfnPopulate` callback function to notify the caller when a file does not match the criteria for the `nCommand`. For example, if the command is `SCC_COMMAND_CHECKIN` and a file in the list is not checked out, then the callback is used to inform the caller. Occasionally, the source control plug-in may find other files that could be part of the command and add them. This allows, for example, a Visual Basic user to check out a .bmp file that is used by his or her project but does not appear in the Visual Basic project file. A user chooses the **Get** command in the IDE. The IDE will display a list of all files that it thinks the user can get, but before the list is shown, the `SccPopulateList` function is called to make sure the list to be displayed is up to date.  
+## Заметки  
+ Эта функция проверяет список файлов текущего состояния. Он использует `pfnPopulate` функцию обратного вызова для уведомления вызывающей стороны, если файл не соответствует критериям для `nCommand`. Например, если команда является `SCC_COMMAND_CHECKIN` и не извлечен файл в списке, а затем используется для информирования вызывающий объект обратного вызова. Иногда подключаемый модуль системы управления версиями может найти другие файлы, которые могут быть частью команды и добавить их. Это позволяет, например, Visual Basic пользователю извлекать BMP\-файл, который используется в свой проект, но не отображается в файле проекта Visual Basic. Пользователь выбирает **получить** в Интегрированной среде разработки. Отображает список всех файлов, которые он считает, что пользователь может получить, интегрированной среды разработки, но перед отображением списка `SccPopulateList` функция вызывается для убедитесь, что список, отображаемый в актуальном состоянии.  
   
-## <a name="example"></a>Example  
- The IDE builds a list of files that it thinks the user can get. Before it displays this list, it calls the `SccPopulateList` function, giving the source control plug-in the opportunity to add and delete files from the list. The plug-in modifies the list by calling the given callback function (see [POPLISTFUNC](../extensibility/poplistfunc.md) for more details).  
+## Пример  
+ IDE формирует список файлов, которые он считал, пользователь может получить. Перед отображением этого списка, он вызывает `SccPopulateList` функции, давая возможность модуль управления версиями, добавлять и удалять файлы из списка. Подключаемый модуль изменяет список путем вызова функции данного обратного вызова \(см. [POPLISTFUNC](../extensibility/poplistfunc.md) Дополнительные сведения\).  
   
- The plug-in continues to call the `pfnPopulate` function, which adds and deletes files, until it is finished and then returns from the `SccPopulateList` function. The IDE can then display its list. The `lpStatus` array represents all files in the original list passed in by the IDE. The plug-in fills in the status of all these files in addition to making use of the callback function.  
+ Подключаемый модуль по\-прежнему вызывать `pfnPopulate` функцию, которая добавляет и удаляет файлы, до его завершения, а затем возвращает из `SccPopulateList` функции. IDE можно затем отобразить его список.`lpStatus` Массив представляет все файлы в исходном списке, переданный в интегрированной среде разработки. Подключаемый модуль заполняет состояние все эти файлы в дополнение к этому, чтобы сделать использование функции обратного вызова.  
   
 > [!NOTE]
->  A source control plug-in always has the option to simply return immediately from this function, leaving the list as it is. If a plug-in implements this function, it can indicate this by setting the `SCC_CAP_POPULATELIST` capability bitflag in the first call to the [SccInitialize](../extensibility/sccinitialize-function.md). By default, the plug-in should always assume that all items being passed in are files. However, if the IDE sets the `SCC_PL_DIR` flag in the `fOptions` parameter, all the items being passed in are to be considered directories. The plug-in should add all the files that belong in the directories. The IDE will never pass in a mixture of files and directories.  
+>  Подключаемый модуль системы управления версиями всегда имеет возможность просто немедленно возвращать управление этой функцией, оставляя в списке как. Если подключаемый модуль реализует эту функцию, он может указать, задав `SCC_CAP_POPULATELIST` битов флагов возможность в первый вызов [SccInitialize](../extensibility/sccinitialize-function.md). По умолчанию подключаемый модуль должен всегда предполагать наличие всех элементов, передаваемых в файлы. Однако если задает IDE `SCC_PL_DIR` флаг в `fOptions` параметр, все элементы, передаваемого в должны считаться каталоги. Подключаемый модуль следует добавить все файлы, которые принадлежат, в каталогах. Сочетание файлов и каталогов никогда не передают интегрированной среды разработки.  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
+## См. также  
+ [Функции API подключаемого модуля источника элемента управления](../extensibility/source-control-plug-in-api-functions.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)   
  [POPLISTFUNC](../extensibility/poplistfunc.md)   
- [Bitflags Used by Specific Commands](../extensibility/bitflags-used-by-specific-commands.md)   
- [Command Code](../extensibility/command-code-enumerator.md)
+ [Битовые флаги, используемые команды](../extensibility/bitflags-used-by-specific-commands.md)   
+ [Код команды](../extensibility/command-code-enumerator.md)

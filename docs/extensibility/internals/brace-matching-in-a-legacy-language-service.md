@@ -1,76 +1,59 @@
 ---
-title: Brace Matching in a Legacy Language Service | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- brace matching
-- language services [managed package framework], brace matching
+title: "Проверка парности фигурных скобок в языковую службу для прежних версий | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "парные фигурные скобки"
+  - "языковые службы [платформа управляемых пакетов] парные фигурные скобки"
 ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
 caps.latest.revision: 27
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: b4685246ee6e511b849f346fc080982afaec42a4
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 27
 ---
-# <a name="brace-matching-in-a-legacy-language-service"></a>Brace Matching in a Legacy Language Service
-Brace matching helps the developer track language elements that need to occur together, such as parentheses and curly braces. When a developer enters a closing brace, the opening brace is highlighted.  
+# Проверка парности фигурных скобок в языковую службу для прежних версий
+[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+
+Парные фигурные скобки позволяет разработчику отслеживать языковые элементы, которые необходимо осуществить вместе, таких как круглые скобки и фигурные скобки. Когда разработчик вводит закрывающую фигурную скобку, открывающая фигурная скобка будет выделен.  
   
- You can match two or three co-occurring elements, called pairs and triples. Triples are sets of three co-occurring elements. For example, in C#, the `foreach` statement forms a triple: "`foreach()`", "`{`", and "`}`". All three elements are highlighted when the closing brace is typed.  
+ Можно сопоставить два или три встречающиеся элементов, называемых пары и тройки. Тройки представляют собой наборы три встречающиеся элементы. Например, в C\# `foreach` инструкции forms тройку:»`foreach()`«,»`{`», и «`}`». Все три элемента выделяются при вводе закрывающей фигурной скобки.  
   
- Legacy language services are implemented as part of a VSPackage, but the newer way to implement language service features is to use MEF extensions. To find out more about the new way to implement brace matching, see [Walkthrough: Displaying Matching Braces](../../extensibility/walkthrough-displaying-matching-braces.md).  
+ Устаревший языковые службы реализуются как частью VSPackage, но это использование расширений MEF новый способ реализации возможностей службы языка. Чтобы узнать больше о новый способ реализовать парные фигурные скобки, в разделе [Пошаговое руководство: Отображение парные фигурные скобки](../../extensibility/walkthrough-displaying-matching-braces.md).  
   
 > [!NOTE]
->  We recommend that you begin to use the new editor API as soon as possible. This will improve the performance of your language service and let you take advantage of new editor features.  
+>  Мы рекомендуем начать использовать новый редактор API как можно быстрее. Это улучшает производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.  
   
- The <xref:Microsoft.VisualStudio.Package.AuthoringSink> class supports both pairs and triples with the <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> and <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> methods.  
+ <xref:Microsoft.VisualStudio.Package.AuthoringSink> Класс поддерживает обе пары и позволяющая утроить с <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> и <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> методы.  
   
-## <a name="implementation"></a>Implementation  
- The language service needs to identify all matched elements in the language and then locate all matching pairs. This is typically accomplished by implementing <xref:Microsoft.VisualStudio.Package.IScanner> to detect a matched language and then using the <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> method to match the elements.  
+## Реализация  
+ Служба языка необходимо определить все соответствующие элементы в язык и найдите все совпадающие пары. Обычно это выполняется путем реализации <xref:Microsoft.VisualStudio.Package.IScanner> для определения соответствия языка и затем с помощью <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> способа для сравнения элементов.  
   
- The <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> method calls the scanner to tokenize the line and return the token just before the caret. The scanner indicates that a language element pair has been found by setting a token trigger value of <xref:Microsoft.VisualStudio.Package.TokenTriggers> on the current token. The <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> method calls the <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> method that in turn calls the <xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A> method with the parse reason value of <xref:Microsoft.VisualStudio.Package.ParseReason> to locate the matching language element. When the matching language element is found, both elements are highlighted.  
+ <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Метод вызывает сканер для маркировки строки и возвращают маркер прямо перед курсором. Сканер указывает, что найден пары элементов языка, задав значение маркера триггер <xref:Microsoft.VisualStudio.Package.TokenTriggers> на текущий маркер.<xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Вызовы метода <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> в свою очередь вызывает метод <xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A> метод со значением анализа причин <xref:Microsoft.VisualStudio.Package.ParseReason> для поиска соответствующего элемента языка. Если соответствующий элемент языка найден, выделяются оба элемента.  
   
- For a complete description of how typing a brace triggers the brace highlighting, see the "Example Parse Operation" section in the topic [Legacy Language Service Parser and Scanner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).  
+ Полное описание как ввод фигурную скобку запускает Выделение скобок, см. в разделе «Пример анализа операция» в разделе [Средство синтаксического анализа языка прежних версий службы и сканера](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).  
   
-## <a name="enabling-support-for-brace-matching"></a>Enabling Support for Brace Matching  
- The <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> attribute can set the `MatchBraces`, `MatchBracesAtCaret`, and `ShowMatchingBrace` named parameters that set the corresponding properties of the <xref:Microsoft.VisualStudio.Package.LanguagePreferences> class. Language preference properties can also be set by the user.  
+## Включение поддержки парные фигурные скобки  
+ <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> Можно задать атрибут `MatchBraces`, `MatchBracesAtCaret`, и `ShowMatchingBrace` именованные параметры, которые заданы соответствующие свойства <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса. Свойства предпочтения языка также могут задаваться пользователем.  
   
-|Registry Entry|Property|Description|  
-|--------------------|--------------|-----------------|  
-|`MatchBraces`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|Enables brace matching|  
-|`MatchBracesAtCaret`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|Enables brace matching as the caret moves.|  
-|`ShowMatchingBrace`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A>|Highlights the matching brace.|  
+|Запись реестра|Свойство|Описание|  
+|--------------------|--------------|--------------|  
+|`MatchBraces`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|Включает парные фигурные скобки|  
+|`MatchBracesAtCaret`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|Включает парные фигурные скобки как курсор перемещается.|  
+|`ShowMatchingBrace`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A>|Выделяет парную скобку.|  
   
-## <a name="matching-conditional-statements"></a>Matching Conditional Statements  
- You can match conditional statements, such as `if`, `else if`, and `else`, or `#if`, `#elif`, `#else`, `#endif`, in the same way as matching delimiters. You can subclass the <xref:Microsoft.VisualStudio.Package.AuthoringSink> class and provide a method that can add text spans as well as delimiters to the internal array of matching elements.  
+## Сопоставление условные операторы  
+ Можно сопоставить условные операторы, такие как `if`, `else if`, и `else`, или `#if`, `#elif`, `#else`, `#endif`, таким же образом, как соответствующие разделители. Можно создать подкласс <xref:Microsoft.VisualStudio.Package.AuthoringSink> класса и предоставить охватывает метод, который можно добавить текст, а также разделители для внутреннего массива соответствующих элементов.  
   
-## <a name="setting-the-trigger"></a>Setting the Trigger  
- The following example shows how to detect matching parentheses, curly braces and square braces, and setting the trigger for it in the scanner. The <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> method on the <xref:Microsoft.VisualStudio.Package.Source> class detects the trigger and calls the parser to find the matching pair (see the "Finding the Match" section in this topic). This example is for illustrative purposes only. It assumes that your scanner contains a method `GetNextToken` that identifies and returns tokens from a line of text.  
+## Установка триггера  
+ Приведенный ниже показано, как определить сопоставления скобок, фигурных скобок и квадратные скобки и задание триггера для него в сканер.<xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Метод <xref:Microsoft.VisualStudio.Package.Source> класса определяет триггер и вызывает средство синтаксического анализа для поиска соответствующей пары \(см. раздел «Поиск совпадения» этого раздела\). Данный пример является только для иллюстративных целей. Предполагается, что сканер содержит метод `GetNextToken` определяет и возвращает маркеры из строки текста.  
   
-```csharp  
+```c#  
 using Microsoft.VisualStudio.Package;  
 using Microsoft.VisualStudio.TextManager.Interop;  
   
@@ -102,10 +85,10 @@ namespace TestLanguagePackage
         }  
 ```  
   
-## <a name="matching-the-braces"></a>Matching the Braces  
- Here is a simplified example for matching the language elements { }, ( ), and [ ], and adding their spans to the <xref:Microsoft.VisualStudio.Package.AuthoringSink> object. This approach is not a recommended approach to parsing source code; it is for illustrative purposes only.  
+## Согласование скобок  
+ Ниже приведен упрощенный пример для совпадения {} элементы языка, \(\) и \[\] и добавления их диапазоны для <xref:Microsoft.VisualStudio.Package.AuthoringSink> объекта. Этот подход не является рекомендуемым подходом для анализа исходного кода; Это только в иллюстративных целях.  
   
-```csharp  
+```c#  
 using Microsoft.VisualStudio.Package;  
 using Microsoft.VisualStudio.TextManager.Interop;  
   
@@ -153,6 +136,6 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
- [Legacy Language Service Features](../../extensibility/internals/legacy-language-service-features1.md)   
- [Legacy Language Service Parser and Scanner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
+## См. также  
+ [Компоненты прежних версий языка службы](../../extensibility/internals/legacy-language-service-features1.md)   
+ [Средство синтаксического анализа языка прежних версий службы и сканера](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)

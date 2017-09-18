@@ -1,73 +1,56 @@
 ---
-title: UNMANAGED_ADDRESS_PHYSICAL | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- UNMANAGED_ADDRESS_PHYSICAL
-helpviewer_keywords:
-- UNMANAGED_ADDRESS_PHYSICAL structure
+title: "UNMANAGED_ADDRESS_PHYSICAL | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "UNMANAGED_ADDRESS_PHYSICAL"
+helpviewer_keywords: 
+  - "Структура UNMANAGED_ADDRESS_PHYSICAL"
 ms.assetid: fed09686-caa6-4efc-851e-a0432019e9d0
 caps.latest.revision: 6
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 4995ebde9cd99732bb02f0711c9af8c9c023cbad
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 6
 ---
-# <a name="unmanagedaddressphysical"></a>UNMANAGED_ADDRESS_PHYSICAL
-This structure represents a physical address.  
+# UNMANAGED_ADDRESS_PHYSICAL
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Эта структура представляет физический адрес.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
 ```cpp  
 typedef struct _tagUNMANAGED_ADDRESS_PHYSICAL {  
-   ULONGLONG offset;  
+   ULONGLONG offset;  
 } UNMANAGED_ADDRESS_PHYSICAL;  
 ```  
   
-```csharp  
+```c#  
 public struct UNMANAGED_ADDRESS_PHYSICAL {  
-   public ulong offset;  
+   public ulong offset;  
 }  
 ```  
   
-## <a name="terms"></a>Terms  
+## Термины  
  offset  
- A 64-bit offset into a physical address space.  
+ 64 \- Смещение в физическое адресное пространство.  
   
-## <a name="remarks"></a>Remarks  
- This structure is part of the union in the [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) structure when the `dwKind` field of the `DEBUG_ADDRESS_UNION` structure is set to `ADDRESS_KIND_UNMANAGED_PHYSICAL` (a value from the [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeration).  
+## Заметки  
+ Эта структура является частью соединения в [DEBUG\_ADDRESS\_UNION](../../../extensibility/debugger/reference/debug-address-union.md) когда структура  `dwKind` поле   `DEBUG_ADDRESS_UNION` структура имеет значение  `ADDRESS_KIND_UNMANAGED_PHYSICAL` \(значение  [ADDRESS\_KIND](../../../extensibility/debugger/reference/address-kind.md) перечисление\).  
   
-## <a name="requirements"></a>Requirements  
- Header: sh.h  
+## Требования  
+ Заголовок: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
+## См. также  
+ [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [DEBUG\_ADDRESS\_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

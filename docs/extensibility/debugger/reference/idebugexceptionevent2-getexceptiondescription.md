@@ -1,68 +1,51 @@
 ---
-title: IDebugExceptionEvent2::GetExceptionDescription | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugExceptionEvent2::GetExceptionDescription
-helpviewer_keywords:
-- IDebugExceptionEvent2::GetExceptionDescription
+title: "IDebugExceptionEvent2::GetExceptionDescription | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugExceptionEvent2::GetExceptionDescription"
+helpviewer_keywords: 
+  - "IDebugExceptionEvent2::GetExceptionDescription"
 ms.assetid: d07d458f-5729-47e4-9b77-1bd59c61a75a
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: c7279e8aef6d903e2836a3f6025f550eb89e1bab
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugexceptionevent2getexceptiondescription"></a>IDebugExceptionEvent2::GetExceptionDescription
-Gets a displayable description of the exception.  
+# IDebugExceptionEvent2::GetExceptionDescription
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Возвращает displayable описание исключения.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
-HRESULT GetExceptionDescription(   
-   BSTR* pbstrDescription  
+```cpp#  
+HRESULT GetExceptionDescription(   
+   BSTR* pbstrDescription  
 );  
 ```  
   
-```csharp  
-int GetExceptionDescription(   
-   out string pbstrDescription  
+```c#  
+int GetExceptionDescription(   
+   out string pbstrDescription  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  `pbstrDescription`  
- [out] Returns a displayable description of the exception.  
+ \[out\] возвращает displayable описание исключения.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- The string returned from this method is typically the name of the exception and is shown in the **Output** window when the exception occurs.  
+## Заметки  
+ Строка, возвращаемая этим методом, обычно имя исключения и отображается в **Вывод** окно при возникновении исключения.  
   
-## <a name="see-also"></a>See Also  
+## См. также  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

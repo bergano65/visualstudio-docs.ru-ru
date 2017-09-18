@@ -1,69 +1,52 @@
 ---
-title: IDebugPointerField::GetDereferencedField | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugPointerField::GetDereferencedField
-helpviewer_keywords:
-- IDebugPointerField::GetDereferencedField method
+title: "IDebugPointerField::GetDereferencedField | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugPointerField::GetDereferencedField"
+helpviewer_keywords: 
+  - "Метод IDebugPointerField::GetDereferencedField"
 ms.assetid: 8de988ab-cd79-4287-be72-3c900f2fe407
 caps.latest.revision: 7
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 3c431a56f1a678dc79bdfefeedf4bb65d1d93d36
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 7
 ---
-# <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
-This method returns the type of object to which this pointer object points.  
+# IDebugPointerField::GetDereferencedField
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Этот метод возвращает тип объекта, к которому точки этого объекта указателя.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
+```cpp#  
 HRESULT GetDereferencedField(  
-   IDebugField** ppField  
+   IDebugField** ppField  
 );  
 ```  
   
-```csharp  
+```c#  
 int GetDereferencedField(  
-   out IDebugField ppField  
+   out IDebugField ppField  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  `ppField`  
- [out] Returns an [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) describing the type of target object.  
+ \[out\] возвращает IDebugField описание типа целевого объекта.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- If, for example, the [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) object points to an integer, the [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) type returned by this method describes that integer type.  
+## Заметки  
+ Если, например, [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) элементы объекта к целому числу,  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) тип, возвращаемый этим методом, описывающий тип целого числа.  
   
-## <a name="see-also"></a>See Also  
+## См. также  
  [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

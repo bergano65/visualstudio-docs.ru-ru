@@ -1,95 +1,78 @@
 ---
-title: IDebugProgram2::EnumCodePaths | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugProgram2::EnumCodePaths
-helpviewer_keywords:
-- IDebugProgram2::EnumCodePaths
+title: "IDebugProgram2::EnumCodePaths | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugProgram2::EnumCodePaths"
+helpviewer_keywords: 
+  - "IDebugProgram2::EnumCodePaths"
 ms.assetid: fb100c3c-9c29-4d63-bd1f-a3e531cb395f
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: a70dc85a37f593fc56751a2890b85422b0d193d0
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
-Retrieves a list of the code paths for a given position in a source file.  
+# IDebugProgram2::EnumCodePaths
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Извлекает список путей кода для заданной позиции в файле источника.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
-HRESULT EnumCodePaths(   
-   LPCOLESTR            pszHint,  
-   IDebugCodeContext2*  pStart,  
-   IDebugStackFrame2*   pFrame,  
-   BOOL                 fSource,  
-   IEnumCodePaths2**    ppEnum,  
-   IDebugCodeContext2** ppSafety  
+```cpp#  
+HRESULT EnumCodePaths(   
+   LPCOLESTR            pszHint,  
+   IDebugCodeContext2*  pStart,  
+   IDebugStackFrame2*   pFrame,  
+   BOOL                 fSource,  
+   IEnumCodePaths2**    ppEnum,  
+   IDebugCodeContext2** ppSafety  
 );  
 ```  
   
-```csharp  
-int EnumCodePaths(   
-   string                 pszHint,  
-   IDebugCodeContext2     pStart,  
-   IDebugStackFrame2      pFrame,  
-   Int                    fSource,  
-   out IEnumCodePaths2    ppEnum,  
-   out IDebugCodeContext2 ppSafety  
+```c#  
+int EnumCodePaths(   
+   string                 pszHint,  
+   IDebugCodeContext2     pStart,  
+   IDebugStackFrame2      pFrame,  
+   Int                    fSource,  
+   out IEnumCodePaths2    ppEnum,  
+   out IDebugCodeContext2 ppSafety  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  `pszHint`  
- [in] The word under the cursor in the **Source** or **Disassembly** view in the IDE.  
+ \[in\] машинное слово под курсором в **Источник** OR  **Дизассемблированный код** представление в интегрированной среде разработки.  
   
  `pStart`  
- [in] An [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) object representing the current code context.  
+ \[in\] IDebugCodeContext2 объект, представляющий текущий контекст кода.  
   
  `pFrame`  
- [in] An [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) object representing the stack frame associated with the current breakpoint.  
+ \[in\] [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) объект, представляющий кадр стека, связанный с текущей точкой останова.  
   
  `fSource`  
- [in] Nonzero (`TRUE`) if in the **Source** view, or zero (`FALSE`) if in the **Disassembly** view.  
+ \[in\] ненулевое значение \(`TRUE`если в\)  **Источник** представление или нуль \(`FALSE`если в\)  **Дизассемблированный код** представление.  
   
  `ppEnum`  
- [out] Returns an [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) object containing a list of the code paths.  
+ \[out\] возвращает [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) объект, содержащий список путей кода.  
   
  `ppSafety`  
- [out] Returns an [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) object representing an additional code context to be set as a breakpoint in case the chosen code path is skipped. This can happen in the case of a short-circuited Boolean expression, for example.  
+ \[out\] возвращает IDebugCodeContext2 объект, представляющий контекст дополнительного кода для быть установлены в качестве точки останова в случае, если выбранный путь кода пропущен.  Это может произойти в случае закороченного логического выражения, например.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- A code path describes the name of a method or function that was called to get to the current point in the execution of the program. A list of code paths represents the call stack.  
+## Заметки  
+ Путь к коду описываются имя метода или функции, вызванный для доступа к текущему моменту выполнения программы.  Список путей кода представляет собой стек вызовов.  
   
-## <a name="see-also"></a>See Also  
+## См. также  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   

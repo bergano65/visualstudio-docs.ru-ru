@@ -1,127 +1,111 @@
 ---
-title: 'How to: Attach the Profiler to a Native Service to Collect Application Statistics by Using the Command Line | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+title: "Практическое руководство. Присоединение профилировщика к собственной службе для сбора статистики приложения при помощи командной строки | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/15/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
 ms.assetid: f783817f-77a0-4eb8-985b-ec3b77eadc42
 caps.latest.revision: 25
-author: mikejo5000
-ms.author: mikejo
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
-ms.openlocfilehash: e2e07d92de6f9fa3f15a2ebe1b87b495c3f85515
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/31/2017
-
+caps.handback.revision: 25
+author: "mikejo5000"
+ms.author: "mikejo"
+manager: "ghogen"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>How to: Attach the Profiler to a Native Service to Collect Application Statistics by Using the Command Line
-This topic describes how to use the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools command-line tools to attach the profiler to a native service and collect performance statistics by using the sampling method.  
+# Практическое руководство. Присоединение профилировщика к собственной службе для сбора статистики приложения при помощи командной строки
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+В этом разделе описано, как с помощью программ командной строки средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] присоединить профилировщик к собственной службе и собрать статистику производительности с помощью метода выборки.  
   
 > [!NOTE]
->  Enhanced security features in Windows 8 and Windows Server 2012 required significant changes in the way the Visual Studio profiler collects data on these platforms. Windows Store apps also require new collection techniques. See [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Функции усиленной безопасности в Windows 8 и Windows Server 2012 требуют значительных изменений в способе сбора данных профилировщиком Visual Studio на этих платформах.  Для Приложений Магазина Windows также требуются новые методы сбора.  См. раздел [Профилирование приложений для Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 > [!NOTE]
->  Command-line tools of the Profiling Tools are located in the \Team Tools\Performance Tools subdirectory of the [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] installation directory. On 64 bit computers, both 64 bit and 32 bit versions of the tools are available. To use the profiler command-line tools, you must add the tools path to the PATH environment variable of the command prompt window or add it to the command itself. For more information, see [Specifying the Path to Command Line Tools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Программы командной строки средств профилирования расположены в подкаталоге \\Team Tools\\Performance Tools каталога установки [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].  На 64\-разрядных компьютерах доступны 64\-разрядные и 32\-разрядные версии программ.  Для использования программ командной строки профилировщика необходимо добавить путь к этим программам в переменную среды PATH окна командной строки или указать этот путь при вызове команды.  Для получения дополнительной информации см. [Указание пути к средствам командной строки](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
- While the profiler is attached to the service, you can pause and resume data collection.  
+ Пока профилировщик присоединен к службе, можно приостанавливать и возобновлять сбор данных.  
   
- To end a profiling session, the profiler must be detached from the service and the profiler must be explicitly shut down.  
+ Чтобы завершить сеанс профилирования, необходимо отсоединить профилировщик от службы и явным образом завершить его работу.  
   
-## <a name="starting-the-application-with-the-profiler"></a>Starting the Application with the Profiler  
- To attach the profiler to a native service, you use the **VSPerfCmd.exe**[/start](../profiling/start.md) and [/attach](../profiling/attach.md) options to initialize the profiler and attach it to the target application. You can specify **/start** and **/attach** and their respective options on a single command line. You can also add the [/globaloff](../profiling/globalon-and-globaloff.md) option to pause data collection at the start of the target application. You can then use [/globalon](../profiling/globalon-and-globaloff.md) to begin collecting data.  
+## Запуск приложения с профилировщиком  
+ Чтобы присоединить профилировщик к собственной службе, следует использовать параметры **VSPerfCmd.exe** [\/start](../profiling/start.md) и [\/attach](../profiling/attach.md) для инициализации профилировщика и прикрепления его к целевому приложению.  Команды **\/start** и **\/attach** с соответствующими параметрами можно указать в одной командной строке.  Для приостановки сбора данных при запуске целевого приложения можно также добавить параметр [\/globaloff](../profiling/globalon-and-globaloff.md).  Затем можно воспользоваться параметром [\/globalon](../profiling/globalon-and-globaloff.md) для начала сбора данных.  
   
-#### <a name="to-attach-the-profiler-to-a-native-service"></a>To attach the Profiler to a native service  
+#### Присоединение профилировщика к собственной службе  
   
-1.  If necessary, start the service.  
+1.  Если необходимо, запустите службу.  
   
-2.  Open a command prompt window.  
+2.  Откройте окно командной строки.  
   
-3.  Start the profiler. Type:  
+3.  Запустите профилировщик.  Type:  
   
-     **VSPerfCmd /start:sample**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]  
+     **VSPerfCmd \/start:sample**  [\/output](../profiling/output.md) **:** `OutputFile` \[`Options`\]  
   
-    -   The **/start:sample** option initializes the profiler.  
+    -   Параметр **\/start:sample** обеспечивает инициализацию профилировщика.  
   
-    -   The **/output:**`OutputFile` option is required with **/start**. `OutputFile` specifies the name and location of the profiling data (.vsp) file.  
+    -   Параметр **\/output:**`OutputFile` является обязательным при использовании параметра **\/start**.  Параметр `OutputFile` задает имя и расположение файла с данными профилирования \(VSP\-файла\).  
   
-     You can use any of the following options with the **/start:sample** option.  
+     С параметром **\/start:sample** можно использовать любые из следующих параметров.  
   
     > [!NOTE]
-    >  The **/user** and **/crosssession** options are usually required for services.  
+    >  Обычно параметры **\/user** и **\/crosssession** являются обязательными для служб.  
   
-    |Option|Description|  
-    |------------|-----------------|  
-    |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Specifies the domain and user name of the account that owns the profiled process. This option is required only if the process is running as a user other than the logged on user. The process owner is listed in the User Name column on the Processes tab of Windows Task Manager.|  
-    |[/crosssession](../profiling/crosssession.md)|Enables profiling of processes in other sessions. This option is required if the application is running in a different session. The session id is listed in the Session ID column on the Processes tab of Windows Task Manager. **/CS** can be specified as an abbreviation for **/crosssession**.|  
-    |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Specifies a Windows performance counter to be collected during profiling.|  
-    |[/automark](../profiling/automark.md) **:** `Interval`|Use with **/wincounter** only. Specifies the number of milliseconds between Windows performance counter collection events. Default is 500 ms.|  
-    |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|Specifies an Event Tracing for Windows (ETW) event to be collected during profiling. ETW events are collected in a separate (.etl) file.|  
+    |Команда|Описание|  
+    |-------------|--------------|  
+    |[\/user](../profiling/user-vsperfcmd.md) **:**\[`Domain`**\\**\]`UserName`|Задает домен и имя пользователя учетной записи, которая является владельцем профилируемого процесса.  Этот параметр является обязательным только в том случае, если процесс выполняется от имени пользователя, отличного от пользователя, который выполнил вход в систему.  Имя владельца процесса отображается в столбце "Имя пользователя" на вкладке "Процессы" диспетчера задач Windows.|  
+    |[\/crosssession](../profiling/crosssession.md)|Включает профилирование процессов в других сеансах.  Этот параметр является обязательным, если приложение выполняется в рамках другого сеанса.  Идентификатор сеанса отображается в столбце "Код сеанса" на вкладке "Процессы" диспетчера задач Windows.  Для **\/crosssession** может быть задано сокращение **\/CS**.|  
+    |[\/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Задает счетчик производительности Windows, данные которого следует собирать в процессе профилирования.|  
+    |[\/automark](../profiling/automark.md) **:** `Interval`|Используйте только с **\/wincounter**.  Задает интервал времени \(в миллисекундах\) между событиями сбора данных счетчика производительности Windows.  Значение по умолчанию — 500 мс.|  
+    |[\/events](../profiling/events-vsperfcmd.md) **:** `Config`|Задает событие трассировки событий Windows, данные которого следует собирать в процессе профилирования.  События трассировки событий Windows собираются в отдельный ETL\-файл.|  
   
-4.  Attach the profiler to the service. Type:  
+4.  Присоедините профилировщик к службе.  Type:  
   
-     **VSPerfCmd /attach:** `PID` [`Sample Event`]  
+     **VSPerfCmd \/attach:** `PID` \[`Sample Event`\]  
   
-     `PID` specifies the process ID of the target application. You can view the process IDs of all running processes in Windows Task Manager.  
+     `PID` определяет идентификатор процесса целевого приложения.  Диспетчер задач Windows позволяет просмотреть идентификаторы всех запущенных процессов.  
   
-     By default, performance data is sampled every 10,000,000 non-halted processor clock cycles. This is approximately once every 10 seconds on a 1GH processor. You can specify one of the following options to change the clock cycle interval or to specify a different sampling event.  
+     По умолчанию данные о производительности собираются каждые 10 000 000 циклов тактовой частоты процессора без остановок.  Для процессора с частотой 1 ГГц это приблизительно каждые 10 секунд.  Чтобы изменить длительность цикла тактовой частоты или задать другое событие выборки, можно воспользоваться одним из следующих параметров.  
   
-    |Sample Event|Description|  
-    |------------------|-----------------|  
-    |[/timer](../profiling/timer.md) **:** `Interval`|Changes the sampling interval to the number of non-halted clock cycles specified by `Interval`.|  
-    |[/pf](../profiling/pf.md)[**:**`Interval`]|Changes the sampling event to page faults. If `Interval` is specified, sets the number of page faults between samples. Default is 10.|  
-    |[/sys](../profiling/sys-vsperfcmd.md) [**:**`Interval`]|Changes the sampling event to system calls from the process to the operating system kernel (syscalls). If `Interval` is specified, sets the number of calls between samples. Default is 10.|  
-    |[/counter](../profiling/counter.md) **:** `Config`|Changes the sampling event and interval to the processor performance counter and interval specified in `Config`.|  
+    |Пример события|Описание|  
+    |--------------------|--------------|  
+    |[\/timer](../profiling/timer.md) **:** `Interval`|Изменяет интервал выборки на число циклов тактовой частоты без остановок, заданное параметром `Interval`.|  
+    |[\/pf](../profiling/pf.md)\[**:**`Interval`\]|Изменяет событие выборки на ошибки страниц.  Если указано значение `Interval`, задает количество ошибок страниц между выборками.  По умолчанию используется значение 10.|  
+    |[\/sys](../profiling/sys-vsperfcmd.md) \[**:**`Interval`\]|Изменяет событие выборки на системные вызовы ядра операционной системы из процесса \(syscall\).  Если указано значение `Interval`, задает количество вызовов между выборками.  По умолчанию используется значение 10.|  
+    |[\/counter](../profiling/counter.md) **:** `Config`|Изменяет событие выборки, интервал для счетчика производительности процессора и интервал, заданный параметром `Config`.|  
   
-## <a name="controlling-data-collection"></a>Controlling Data Collection  
- While the target application is running, you can use **VSPerfCmd.exe** options to start and stop the writing of data to the profiler data file. Controlling data collection enables you to collect data for a specific part of program execution, such as starting or shutting down the application.  
+## Управление сбором данных  
+ Во время выполнения целевого приложения, с помощью параметров программы **VSPerfCmd.exe** можно запускать и останавливать запись данных в файл данных профилировщика.  Управление сбором данных позволяет собирать данные на различных этапах выполнения программы, например, при запуске или завершении работы приложения.  
   
-#### <a name="to-start-and-stop-data-collection"></a>To start and stop data collection  
+#### Запуск и остановка сбора данных  
   
--   The following pairs of **VSPerfCmd** options start and stop data collection. Specify each option on a separate command line. You can turn data collection on and off multiple times.  
+-   Следующие пары параметров **VSPerfCmd** используются для запуска и остановки сбора данных.  Задайте каждый параметр в отдельной строке командной строки.  Запуск и приостановка сбора данных могут выполняться неоднократно.  
   
-    |Option|Description|  
-    |------------|-----------------|  
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Starts (**/globalon**) or stops (**/globaloff**) data collection for all processes.|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Starts (**/processon**) or stops (**/processoff**) data collection for the process specified by the process ID (`PID`).|  
-    |**/attach:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[:{`PID`&#124;`ProcName`}]|**/attach** starts to collect data for the process specified by the process ID or process name. **/detach** stops data collection for the specified process, or for all processes if a process is not specified.|  
+    |Команда|Описание|  
+    |-------------|--------------|  
+    |[\/globalon \/globaloff](../profiling/globalon-and-globaloff.md)|Запускает \(**\/globalon**\) или останавливает \(**\/globaloff**\) сбор данных для всех процессов.|  
+    |[\/processon](../profiling/processon-and-processoff.md) **:** `PID` [\/processoff](../profiling/processon-and-processoff.md)**:**`PID`|Запускает \(**\/processon**\) или останавливает \(**\/processoff**\) сбор данных для процесса с указанным идентификатором процесса \(`PID`\).|  
+    |**\/attach:** {`PID`&#124;`ProcName`} [\/detach](../profiling/detach.md)\[:{`PID`&#124;`ProcName`}\]|**\/attach** запускает сбор данных для процесса, определяемого идентификатором или именем процесса.  **\/detach** останавливает сбор данных для указанного процесса или, если процесс не указан, для всех процессов.|  
   
-## <a name="ending-the-profiling-session"></a>Ending the Profiling Session  
- To end a profiling session, the profiler must be detached from the service and then explicitly shut down. You can detach native service that is being profiled with the sampling method by stopping the service or by calling the **VSPerfCmd /detach** option. You then call the **VSPerfCmd** [/shutdown](../profiling/shutdown.md) option to turn the profiler off and close the profiling data file.  
+## Завершение сеанса профилирования  
+ Чтобы завершить сеанс профилирования, необходимо отсоединить профилировщик от службы, а затем явным образом завершить его работу.  Отсоединить собственную службу, профилируемую методом выборки, можно путем остановки службы или вызова параметра **VSPerfCmd \/detach**.  Затем, чтобы завершить работу профилировщика и закрыть файл данных профилирования, вызовите команду **VSPerfCmd** [\/shutdown](../profiling/shutdown.md).  
   
-#### <a name="to-end-a-profiling-session"></a>To end a profiling session  
+#### Завершение сеанса профилирования  
   
-1.  Do one of the following to detach the profiler from the target application:  
+1.  Для отключения профилировщика от целевого приложения выполните одно из следующих действий.  
   
-    -   Stop the service.  
+    -   Остановите службу.  
   
-         -or-  
+         – или –  
   
-    -   Type **VSPerfCmd /detach**  
+    -   Введите **VSPerfCmd \/detach**.  
   
-2.  Shut down the profiler. Type:  
+2.  Завершите работу профилировщика.  Type:  
   
-     **VSPerfCmd /shutdown**  
+     **VSPerfCmd \/shutdown**  
   
-## <a name="see-also"></a>See Also  
- [Profiling Services](../profiling/command-line-profiling-of-services.md)   
- [Sampling Method Data Views](../profiling/profiler-sampling-method-data-views.md)
+## См. также  
+ [Службы профилирования](../profiling/command-line-profiling-of-services.md)   
+ [Представления данных метода выборки](../profiling/profiler-sampling-method-data-views.md)

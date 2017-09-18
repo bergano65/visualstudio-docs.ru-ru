@@ -1,99 +1,82 @@
 ---
-title: SccHistory Function | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- SccHistory
-helpviewer_keywords:
-- SccHistory function
+title: "Функция SccHistory | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "SccHistory"
+helpviewer_keywords: 
+  - "Функция SccHistory"
 ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
 caps.latest.revision: 16
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 0efb8505fa59957f8178214d64c7ac0d979a3359
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 16
 ---
-# <a name="scchistory-function"></a>SccHistory Function
-This function displays the history of the specified files.  
+# Функция SccHistory
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Эта функция отображает журнал указанных файлов.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
+```cpp#  
 SCCRTN SccHistory(  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LONG      nFiles,  
-   LPCSTR*   lpFileNames,  
-   LONG      fOptions,  
-   LPCMDOPTS pvOptions  
+   LPVOID    pvContext,  
+   HWND      hWnd,  
+   LONG      nFiles,  
+   LPCSTR*   lpFileNames,  
+   LONG      fOptions,  
+   LPCMDOPTS pvOptions  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  `pvContext`  
- [in] The source control plug-in context structure.  
+ \[in\] Структура подключаемого модуля контекста исходного элемента управления.  
   
  `hWnd`  
- [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
+ \[in\] Дескриптор окна интегрированной среды разработки, подключаемый модуль системы управления версиями можно использовать в качестве родительского для все диалоговые окна, которые он предоставляет.  
   
  `nFiles`  
- [in] Number of files specified in the `lpFileName` array.  
+ \[in\] Число файлов, указанных в `lpFileName` массива.  
   
  `lpFileName`  
- [in] Array of fully qualified names of files.  
+ \[in\] Массив полных имен файлов.  
   
  `fOptions`  
- [in] Command flags (currently not used).  
+ \[in\] Команда флаги \(в настоящее время не используется\).  
   
  `pvOptions`  
- [in] Source control plug-in-specific options.  
+ \[in\] Параметры конкретного подключаемого модуля системы управления версиями.  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## Возвращаемое значение  
+ Реализации подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Value|Description|  
-|-----------|-----------------|  
-|SCC_OK|Version history was successfully obtained.|  
-|SCC_I_RELOADFILE|The source control system actually modified the file on disk while fetching the history (for instance, by getting an old version of it), so the IDE should reload this file.|  
-|SCC_E_FILENOTCONTROLLED|The file is not under source control.|  
-|SCC_E_OPNOTSUPPORTED|The source control system does not support this operation.|  
-|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
-|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
-|SCC_E_PROJNOTOPEN|The project is has not been opened.|  
-|SCC_E_NONSPECIFICERROR|Nonspecific failure. File history could not be obtained.|  
+|Значение|Описание|  
+|--------------|--------------|  
+|SCC\_OK|Журнал версий был успешно получен.|  
+|SCC\_I\_RELOADFILE|Система управления версиями на самом деле изменения файла на диске при получении журнала \(например, путем получения более старые версии\), поэтому интегрированной среды разработки следует перезагрузить этот файл.|  
+|SCC\_E\_FILENOTCONTROLLED|Файл не существует в системе управления версиями.|  
+|SCC\_E\_OPNOTSUPPORTED|Система управления версиями не поддерживает эту операцию.|  
+|SCC\_E\_NOTAUTHORIZED|Для выполнения этой операции не разрешено пользователю.|  
+|SCC\_E\_ACCESSFAILURE|Произошла ошибка при доступе к системе управления версиями, вероятно, из\-за проблемы с сетью или конфликтов. Рекомендуется повторить операцию.|  
+|SCC\_E\_PROJNOTOPEN|Проект не был открыт.|  
+|SCC\_E\_NONSPECIFICERROR|Неспецифическая ошибка. Не удалось получить файл журнала.|  
   
-## <a name="remarks"></a>Remarks  
- The source control plug-in can display its own dialog box to show the history of each file, using `hWnd` as the parent window. Alternatively, the optional text output callback function supplied to the [SccOpenProject](../extensibility/sccopenproject-function.md) can be used, if it is supported.  
+## Заметки  
+ Подключаемый модуль системы управления версиями можно отобразить свое собственное диалоговое окно для отображения каждого файла журнала с помощью `hWnd` как родительского окна. Кроме того, необязательный текст выходного обратного вызова передается функции [SccOpenProject](../extensibility/sccopenproject-function.md) может использоваться, если оно поддерживается.  
   
- Note that under certain circumstances, the file being examined may change during the execution of this call. For example, the [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] history command gives the user a chance to get an old version of the file. In such a case, the source control plug-in returns `SCC_I_RELOAD` to warn the IDE that it needs to reload the file.  
+ Обратите внимание, что при определенных обстоятельствах анализируемому файлу могут измениться во время выполнения этого вызова. Например [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] команда history дает пользователю шанс получить старую версию файла. В этом случае возвращает подключаемого модуля управления версиями `SCC_I_RELOAD` предупредить интегрированной среды разработки, что необходимо перезагрузить файл.  
   
 > [!NOTE]
->  If the source control plug-in does not support this function for an array of files, only the file history for the first file can be displayed.  
+>  Если подключаемый модуль системы управления версиями не поддерживает эту функцию для массив файлов, могут отображаться только данные файла журнала для первого файла.  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
+## См. также  
+ [Функции API подключаемого модуля источника элемента управления](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)

@@ -1,83 +1,66 @@
 ---
-title: IDebugFunctionObject::Evaluate | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugFunctionObject::Evaluate
-helpviewer_keywords:
-- IDebugFunctionObject::Evaluate method
+title: "IDebugFunctionObject::Evaluate | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugFunctionObject::Evaluate"
+helpviewer_keywords: 
+  - "Метод IDebugFunctionObject::Evaluate"
 ms.assetid: 29349ea3-d5c1-4135-aa76-ced073ab9683
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: c803032cdeef8f2effaec810db9e42db87428e1f
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
-Calls the function and returns the resulting value as an object.  
+# IDebugFunctionObject::Evaluate
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Вызывает функцию и возвращает результат в виде объекта.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
-HRESULT Evaluate(   
-   IDebugObject** ppParams,  
-   DWORD          dwParams,  
-   DWORD          dwTimeout,  
-   IDebugObject** ppResult  
+```cpp#  
+HRESULT Evaluate(   
+   IDebugObject** ppParams,  
+   DWORD          dwParams,  
+   DWORD          dwTimeout,  
+   IDebugObject** ppResult  
 );  
 ```  
   
-```csharp  
+```c#  
 int Evaluate(  
-   IDebugObject[]   ppParams,   
-   IntPtr           dwParams,   
-   uint             dwTimeout,   
-   out IDebugObject ppResult  
+   IDebugObject[]   ppParams,   
+   IntPtr           dwParams,   
+   uint             dwTimeout,   
+   out IDebugObject ppResult  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  `ppParams`  
- [in] An array of [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objects representing the input parameters. Each of these parameters was created with one of the `Create` methods in the [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface.  
+ \[in\] массив IDebugObject объекты, представляющих входные параметры.  Каждый из этих параметров не был создан с одним из `Create` методы  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) интерфейс.  
   
  `dwParams`  
- [in] The number of parameters in the `ppParams` array.  
+ \[in\] количество параметров `ppParams` массив.  
   
  `dwTimeout`  
- [in] Specifies the maximum time, in milliseconds, to wait before returning from this method. Use `INFINITE` to wait indefinitely.  
+ \[in\] задает максимальное время, в миллисекундах, ожидания возврата из этого метода.  Используйте `INFINITE` ждать бесконечно.  
   
  `ppResult`  
- [out] Returns an [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) representing the value of the function as an object.  
+ \[out\] возвращает IDebugObject представления значения функции как объект.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise, returns an error code.  
+## Возвращаемое значение  
+ В случае успеха возвращает значение S\_OK; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- This method sets up and executes a call to the function represented by the [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) object.  
+## Заметки  
+ Этот метод настраивает и выполняет вызов функции, представленной IDebugFunctionObject объект.  
   
-## <a name="see-also"></a>See Also  
+## См. также  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

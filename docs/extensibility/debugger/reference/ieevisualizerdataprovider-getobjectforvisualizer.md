@@ -1,70 +1,53 @@
 ---
-title: IEEVisualizerDataProvider::GetObjectForVisualizer | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IEEVisualizerDataProvider::GetObjectForVisualizer
-helpviewer_keywords:
-- IEEVisualizerDataProvider::GetObjectForVisualizer method
+title: "IEEVisualizerDataProvider::GetObjectForVisualizer | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IEEVisualizerDataProvider::GetObjectForVisualizer"
+helpviewer_keywords: 
+  - "Метод IEEVisualizerDataProvider::GetObjectForVisualizer"
 ms.assetid: bd5376fc-13b4-40b7-9a5d-7ba8289f1b24
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: b5786b88fba5ced1011d4a0874905331883aac24
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
-This method gets the object that this visualizer represents.  
+# IEEVisualizerDataProvider::GetObjectForVisualizer
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Этот метод возвращает объект, который представляет этот визуализатора.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
 ```cpp  
-HRESULT GetObjectForVisualizer(  
-   IDebugObject** ppObject  
+HRESULT GetObjectForVisualizer(  
+   IDebugObject** ppObject  
 );  
 ```  
   
-```csharp  
-int GetObjectForVisualizer(  
-   out IDebugObject ppObject  
+```c#  
+int GetObjectForVisualizer(  
+   out IDebugObject ppObject  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  `ppObject`  
- [out] The object being represented by this visualizer  
+ \[out\] объект, представленного данным визуализатором  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- `GetObjectForVisualizer` is allowed to return a cached version of the object. If the caller wants to make sure that the object is up to date, then it will call [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md).  
+## Заметки  
+ `GetObjectForVisualizer` позволяет вернуть кэшированную версию объекта.  Если вызывающий объект должен убедиться, что объект актуален, затем оно вызывает [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md).  
   
-## <a name="see-also"></a>See Also  
+## См. также  
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   
  [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

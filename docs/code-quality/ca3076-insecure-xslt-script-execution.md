@@ -1,70 +1,52 @@
 ---
-title: 'CA3076: Insecure XSLT Script Execution | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: 
-ms.topic: article
+title: "CA3076: выполнение небезопасного скрипта XSLT | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-devops-test"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
 ms.assetid: 53cb7a46-c564-488f-bc51-0e210a7853c9
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 5203c83fb8d9f4fb1dcc729ff6cd95937da1dead
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+caps.handback.revision: 5
 ---
-# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Insecure XSLT Script Execution
+# CA3076: выполнение небезопасного скрипта XSLT
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
 |||  
 |-|-|  
 |TypeName|InsecureXSLTScriptExecution|  
 |CheckId|CA3076|  
-|Category|Microsoft.Security|  
-|Breaking Change|Non Breaking|  
+|Категория|Microsoft.Security|  
+|Критическое изменение|Не критическое|  
   
-## <a name="cause"></a>Cause  
- If you execute [Extensible Stylesheets Language Transformations (XSLT)](https://support.microsoft.com/en-us/kb/313997) in .NET applications insecurely, the processor may [resolve untrusted URI references](http://msdn.microsoft.com/en-us/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a) that could disclose sensitive information to attackers, leading to Denial of Service and Cross-Site attacks.  
+## Причина  
+ При небезопасном выполнении [XSLT](https://support.microsoft.com/en-us/kb/313997) в приложениях .NET обработчик может [разрешить недоверенные ссылки URI](http://msdn.microsoft.com/ru-ru/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a), раскрывающие конфиденциальную информацию злоумышленникам, что приведет к атакам типа "отказ в обслуживании" и межсайтовым атакам.  
   
-## <a name="rule-description"></a>Rule Description  
- [XSLT](http://msdn.microsoft.com/en-us/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) is a World Wide Web Consortium (W3C) standard for transforming XML data. XSLT is typically used to write style sheets to transform XML data to other formats such as HTML, fixed length text, comma-separated text, or a different XML format. Although prohibited by default, you may choose to enable it for your project.  
+## Описание правила  
+ [XSLT](http://msdn.microsoft.com/ru-ru/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) — это стандарт консорциума W3C для преобразования данных XML. XSLT обычно используется для записи таблиц стилей в целях преобразования данных XML в другие форматы, такие как HTML, текст фиксированной длины, текст с разделителями\-запятыми или другой формат XML. Хотя эта возможность по умолчанию запрещена, вы можете включить ее для проекта.  
   
- To ensure you're not exposing an attack surface, this rule triggers whenever the XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> receives insecure combination instances of <xref:System.Xml.Xsl.XsltSettings> and <xref:System.Xml.XmlResolver>, which allows malicious script processing.  
+ Чтобы обезопасить вас от атак, это правило активируется каждый раз, когда XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> получает небезопасную комбинацию экземпляров <xref:System.Xml.Xsl.XsltSettings> и <xref:System.Xml.XmlResolver>, которая допускает обработку вредоносных скриптов.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
+## Устранение нарушений  
   
--   Replace the insecure XsltSettings argument with XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> or with an instance that has disabled document function and script execution.  
+-   Замените небезопасный аргумент XsltSettings на XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> или на экземпляр с отключенными функциями документов и выполнением скриптов.  
   
--   Replace the <xref:System.Xml.XmlResolver> argument with null or an <xref:System.Xml.XmlSecureResolver> instance.  
+-   Замените аргумент <xref:System.Xml.XmlResolver> на NULL или экземпляр <xref:System.Xml.XmlSecureResolver>.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Unless you're sure that the input is known to be from a trusted source, do not suppress a rule from this warning.  
+## Отключение предупреждений  
+ Отключайте правило этого предупреждения, только если уверены, что входные данные получены из доверенного источника.  
   
-## <a name="pseudo-code-examples"></a>Pseudo-code Examples  
+## Примеры псевдокода  
   
-### <a name="violation"></a>Violation  
+### Нарушение  
   
-```csharp  
+```c#  
 using System.Xml;  
 using System.Xml.Xsl;  
   
@@ -80,12 +62,12 @@ namespace TestNamespace
              xslCompiledTransform.Load("testStylesheet", settings, resolver); // warn   
         }  
     }   
-}   
+}   
 ```  
   
-### <a name="solution"></a>Solution  
+### Решение  
   
-```csharp  
+```c#  
 using System.Xml;   
 using System.Xml.Xsl;   
   
@@ -104,9 +86,9 @@ namespace TestNamespace
 }  
 ```  
   
-### <a name="violation"></a>Violation  
+### Нарушение  
   
-```csharp  
+```c#  
 using System.Xml;   
 using System.Xml.Xsl;   
   
@@ -129,9 +111,9 @@ namespace TestNamespace
 }  
 ```  
   
-### <a name="solution"></a>Solution  
+### Решение  
   
-```csharp  
+```c#  
 using System.Xml;   
 using System.Xml.Xsl;   
   

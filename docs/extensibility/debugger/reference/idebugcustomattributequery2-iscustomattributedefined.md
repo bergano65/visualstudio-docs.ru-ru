@@ -1,68 +1,51 @@
 ---
-title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugCustomAttributeQuery2::IsCustomAttributeDefined
-helpviewer_keywords:
-- IDebugCustomAttributeQuery2::IsCustomAttributeDefined
+title: "IDebugCustomAttributeQuery2::IsCustomAttributeDefined | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugCustomAttributeQuery2::IsCustomAttributeDefined"
+helpviewer_keywords: 
+  - "IDebugCustomAttributeQuery2::IsCustomAttributeDefined"
 ms.assetid: 5c07cc52-6d2d-42df-9d76-9f1f769641db
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 4ba562b125d9a619957c460a32ce00b8c2698e30
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
-Determines whether a custom attribute exists by name.  
+# IDebugCustomAttributeQuery2::IsCustomAttributeDefined
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Определяет, существует ли настраиваемый атрибут по имени.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
-HRESULT IsCustomAttributeDefined(   
-   LPCOLESTR pszCustomAttributeName  
+```cpp#  
+HRESULT IsCustomAttributeDefined(   
+   LPCOLESTR pszCustomAttributeName  
 );  
 ```  
   
-```csharp  
+```c#  
 int IsCustomAttributeDefined(  
-   [In] string pszCustomAttributeName  
+   [In] string pszCustomAttributeName  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  `pszCustomAttributeName`  
- [in] A string containing the name of the custom attribute to find.  
+ \[in\] строка, содержащая а имя настраиваемого атрибута для поиска.  
   
-## <a name="return-value"></a>Return Value  
- Returns S_OK if the custom attribute is defined on this field, otherwise returns S_FALSE.  
+## Возвращаемое значение  
+ Возвращает значение S\_OK, если настраиваемый атрибут задан в этом поле, то в противном случае возвращает значение S\_FALSE.  
   
-## <a name="remarks"></a>Remarks  
- To obtain the attribute bytes associated with the custom attribute, call the [GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) method.  
+## Заметки  
+ Для получения байты атрибутов, связанных с пользовательским атрибутом, вызовите [GetCustomAttributeByName](../Topic/IDebugCustomAttributeQuery2::GetCustomAttributeByName.md) метод.  
   
-## <a name="see-also"></a>See Also  
+## См. также  
  [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

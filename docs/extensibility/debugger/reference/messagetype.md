@@ -1,102 +1,85 @@
 ---
-title: MESSAGETYPE | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- MESSAGETYPE
-helpviewer_keywords:
-- MESSAGETYPE enumeration
+title: "MESSAGETYPE | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "MESSAGETYPE"
+helpviewer_keywords: 
+  - "Перечисления MESSAGETYPE"
 ms.assetid: 800cc77d-3c27-4763-a9df-552a9384bd49
 caps.latest.revision: 11
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 2df884c0e6e6945ff22da6ff38dfef2cc0d63d29
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 11
 ---
-# <a name="messagetype"></a>MESSAGETYPE
-Specifies the message type and reason.  
+# MESSAGETYPE
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Указывает тип сообщений и причину.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
-enum enum_MESSAGETYPE {   
-   MT_OUTPUTSTRING      = 0x0000001,  
-   MT_MESSAGEBOX        = 0x00000002,  
-   MT_TYPE_MASK         = 0x000000FF,  
-   MT_REASON_EXCEPTION  = 0x00000100,  
-   MT_REASON_TRACEPOINT = 0x00000200,  
-   MT_REASON_MASK       = 0x0000FF00  
+```cpp#  
+enum enum_MESSAGETYPE {   
+   MT_OUTPUTSTRING      = 0x0000001,  
+   MT_MESSAGEBOX        = 0x00000002,  
+   MT_TYPE_MASK         = 0x000000FF,  
+   MT_REASON_EXCEPTION  = 0x00000100,  
+   MT_REASON_TRACEPOINT = 0x00000200,  
+   MT_REASON_MASK       = 0x0000FF00  
 };  
 typedef DWORD MESSAGETYPE;  
 ```  
   
-```csharp  
-public enum enum_MESSAGETYPE {   
-   MT_OUTPUTSTRING      = 0x0000001,  
-   MT_MESSAGEBOX        = 0x00000002,  
-   MT_TYPE_MASK         = 0x000000FF,  
-   MT_REASON_EXCEPTION  = 0x00000100,  
-   MT_REASON_TRACEPOINT = 0x00000200,  
-   MT_REASON_MASK       = 0x0000FF00  
+```c#  
+public enum enum_MESSAGETYPE {   
+   MT_OUTPUTSTRING      = 0x0000001,  
+   MT_MESSAGEBOX        = 0x00000002,  
+   MT_TYPE_MASK         = 0x000000FF,  
+   MT_REASON_EXCEPTION  = 0x00000100,  
+   MT_REASON_TRACEPOINT = 0x00000200,  
+   MT_REASON_MASK       = 0x0000FF00  
 };  
 ```  
   
-## <a name="members"></a>Members  
- MT_OUTPUTSTRING  
- Indicates that the message should be sent to the output window. This is mutually exclusive from `MT_MESSAGEBOX`.  
+## Члены  
+ MT\_OUTPUTSTRING  
+ Указывает, что сообщение должно быть отправлено в окно вывода.  Это является взаимоисключающим из `MT_MESSAGEBOX`.  
   
- MT_MESSAGEBOX  
- Indicates that the message should be shown in a message box. This is mutually exclusive from `MT_OUTPUTSTRING`.  
+ MT\_MESSAGEBOX  
+ Указывает, что сообщение должно отображаться в окне сообщения.  Это является взаимоисключающим из `MT_OUTPUTSTRING`.  
   
- MT_TYPE_MASK  
- A mask value to isolate the destination for the message.  
+ MT\_TYPE\_MASK  
+ Значение маски для выявления назначение сообщения.  
   
- MT_REASON_EXCEPTION  
- Indicates that a message box is being shown as a result of an exception. This is mutually exclusive from `MT_REASON_TRACEPOINT`.  
+ MT\_REASON\_EXCEPTION  
+ Указывает, что окно сообщения, в котором отображается в результате исключения.  Это является взаимоисключающим из `MT_REASON_TRACEPOINT`.  
   
- MT_REASON_TRACEPOINT  
- Indicates that a message box is being shown as a result of hitting a tracepoint. This is mutually exclusive to `MT_REASON_EXCEPTION`.  
+ MT\_REASON\_TRACEPOINT  
+ Указывает, что окно сообщения, в котором отображается в результате обращение к точку трассировки.  Это является взаимоисключающим с `MT_REASON_EXCEPTION`.  
   
- MT_REASON_MASK  
- A mask value to isolate the reason for the message being shown.  
+ MT\_REASON\_MASK  
+ Значение маски, чтобы выявить причину, показыванным сообщения.  
   
-## <a name="remarks"></a>Remarks  
- These values are returned from the [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) and [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) methods.  
+## Заметки  
+ Эти значения возвращаются из [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) и  [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) методы.  
   
- One of the reason values can be combined with one of the output destination values using a bitwise `OR`.  
+ Одно из значений причины могут быть объединены с одним из значений назначения выхода, используя побитовую `OR`.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## Требования  
+ Заголовок: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## См. также  
+ [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)   
  [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md)

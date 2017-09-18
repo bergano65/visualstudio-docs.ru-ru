@@ -1,91 +1,74 @@
 ---
-title: IDebugSymbolProvider | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugSymbolProvider
-helpviewer_keywords:
-- IDebugSymbolProvider interface
+title: "IDebugSymbolProvider | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugSymbolProvider"
+helpviewer_keywords: 
+  - "Интерфейс IDebugSymbolProvider"
 ms.assetid: df5f095f-1dee-46f9-84cf-92417c71d5fb
 caps.latest.revision: 14
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 0dd5d0f5b58a9ea7ae60abf11e9b25eb24bca8ee
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 14
 ---
-# <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
-This interface represents a symbol provider that provides symbols and types, returning them as fields.  
+# IDebugSymbolProvider
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Этот интерфейс представляет поставщик, предоставляющий символы и типы символов, возвращая их как поля.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
 ```  
 IDebugSymbolProvider : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes for Implementers  
- A symbol provider must implement this interface to supply symbol and type information to an expression evaluator.  
+## Примечания по реализации  
+ Поставщик символов, должен реализовать этот интерфейс, чтобы указать символ и сведения о типе к средству оценки выражений.  
   
-## <a name="notes-for-callers"></a>Notes for Callers  
- This interface is obtained by using COM's `CoCreateInstance` function (for unmanaged symbol providers) or by loading the appropriate managed code assembly and instantiating the symbol provider based on the information found in that assembly. The debug engine instantiates the symbol provider to work in coordination with the expression evaluator. See the Example for one approach to instantiating this interface.  
+## Замечания для вызывающих объектов  
+ Этот интерфейс можно получить с помощью модели COM `CoCreateInstance` функция \(для неуправляемых поставщиков символов\) или путем загрузки соответствующую сборку управляемого кода и создание экземпляра поставщика символов на основе сведений найдено в этой сборке.  Создает обработчика отладки поставщика символа, который требуется работать в координации со средством оценки выражений.  См. пример для одного подхода к того, этот интерфейс.  
   
-## <a name="methods-in-vtable-order"></a>Methods in Vtable Order  
- The following table shows the methods of `IDebugSymbolProvider`.  
+## Методы в том порядке Vtable  
+ В следующей таблице показаны методы `IDebugSymbolProvider`.  
   
-|Method|Description|  
-|------------|-----------------|  
-|`Initialize`|Deprecated. Do not use.|  
-|`Uninitialize`|Deprecated. Do not use.|  
-|[GetContainerField](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)|Gets the field that contains the debug address.|  
-|`GetField`|Deprecated. Do not use.|  
-|[GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)|Maps a document position into an array of debug addresses.|  
-|[GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)|Maps a document context into an array of debug addresses.|  
-|[GetContextFromAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontextfromaddress.md)|Maps a debug address into a document context.|  
-|[GetLanguage](../../../extensibility/debugger/reference/idebugsymbolprovider-getlanguage.md)|Gets the language used to compile the code at the debug address.|  
-|`GetGlobalContainer`|Deprecated. Do not use.|  
-|[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|Gets the field representing a fully qualified method name.|  
-|[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|Gets the class field type representing a fully qualified class name.|  
-|[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)|Creates an enumerator for namespaces associated with the debug address.|  
-|[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|Maps a symbol name to a symbol type.|  
-|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|Gets the debug address that follows a given debug address in a method.|  
+|Метод|Описание|  
+|-----------|--------------|  
+|`Initialize`|Устаревший.  Не используется.|  
+|`Uninitialize`|Устаревший.  Не используется.|  
+|[GetContainerField](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)|Возвращает поле, содержащее адрес отладки.|  
+|`GetField`|Устаревший.  Не используется.|  
+|[GetAddressesFromPosition](../Topic/IDebugSymbolProvider::GetAddressesFromPosition.md)|Сопоставляет позиции документа в массив адресов отладки.|  
+|[GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)|Сопоставляет контекст рисования в массив адресов отладки.|  
+|[GetContextFromAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontextfromaddress.md)|Сопоставляет адреса отладки в контекст рисования.|  
+|[GetLanguage](../../../extensibility/debugger/reference/idebugsymbolprovider-getlanguage.md)|Возвращает язык, используемый компилировать код по адресу отладки.|  
+|`GetGlobalContainer`|Устаревший.  Не используется.|  
+|[GetMethodFieldsByName](../Topic/IDebugSymbolProvider::GetMethodFieldsByName.md)|Возвращает поле, представляющее полное имя метода.|  
+|[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|Получает тип поля класса, представляющего полное имя класса.|  
+|[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)|Создает перечислитель для пространств имен, связанных с адресом отладки.|  
+|[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|Сопоставляет имя символа в тип символа.|  
+|[GetNextAddress](../Topic/IDebugSymbolProvider::GetNextAddress.md)|Возвращает адрес отладки, который следует за заданным адресом отладки в методе.|  
   
-## <a name="remarks"></a>Remarks  
- This interface maps document positions into debug addresses and vice versa.  
+## Заметки  
+ Этот интерфейс сопоставляет позиции документа в отладочной адреса и наоборот.  
   
-## <a name="requirements"></a>Requirements  
- Header: sh.h  
+## Требования  
+ Заголовок: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="example"></a>Example  
- This example shows how to instantiate the symbol provider, given its GUID (a debug engine must know this value).  
+## Пример  
+ В этом примере показано, как создать экземпляр поставщика символов, задавая его GUID \(отладчик должен знать это значение\).  
   
-```cpp  
+```cpp#  
 // A debug engine uses its own symbol provider and would know the GUID  
 // of that provider.  
 IDebugSymbolProvider *GetSymbolProvider(GUID *pSymbolProviderGuid)  
@@ -121,5 +104,5 @@ IDebugSymbolProvider *GetSymbolProvider(GUID *pSymbolProviderGuid)
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
- [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+## См. также  
+ [Интерфейсы поставщика символов](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

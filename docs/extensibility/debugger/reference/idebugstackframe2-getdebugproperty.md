@@ -1,69 +1,52 @@
 ---
-title: IDebugStackFrame2::GetDebugProperty | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugStackFrame2::GetDebugProperty
-helpviewer_keywords:
-- IDebugStackFrame2::GetDebugProperty
+title: "IDebugStackFrame2::GetDebugProperty | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugStackFrame2::GetDebugProperty"
+helpviewer_keywords: 
+  - "IDebugStackFrame2::GetDebugProperty"
 ms.assetid: 02c2fa04-1424-4bca-9936-feaecd2afab6
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: ddd242ae3bd789bd90edf995fe00946e5050aedf
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugstackframe2getdebugproperty"></a>IDebugStackFrame2::GetDebugProperty
-Gets a description of the properties of a stack frame.  
+# IDebugStackFrame2::GetDebugProperty
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Возвращает описание свойства кадра стека.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
-HRESULT GetDebugProperty (   
-   IDebugProperty2** ppDebugProp  
+```cpp#  
+HRESULT GetDebugProperty (   
+   IDebugProperty2** ppDebugProp  
 );  
 ```  
   
-```csharp  
-int GetDebugProperty (   
-   out IDebugProperty2 ppDebugProp  
+```c#  
+int GetDebugProperty (   
+   out IDebugProperty2 ppDebugProp  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  `ppDebugProp`  
- [out] Returns an [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) object that describes the properties of this stack frame.  
+ \[out\] возвращает IDebugProperty2 объект, описывающий свойства этого кадра стека.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- Calling the [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) method with appropriate filters can retrieve the local variables, method parameters, registers, and "this" pointer associated with the stack frame.  
+## Заметки  
+ Вызов [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) метод соответствующими фильтрами может получать локальные переменные, параметры метода, регистры и "это" указатель, связанный с данным кадром стека.  
   
-## <a name="see-also"></a>See Also  
+## См. также  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

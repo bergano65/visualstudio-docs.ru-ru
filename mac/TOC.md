@@ -12,6 +12,7 @@
 
 # [Настройка интегрированной среды разработки](customizing-the-ide.md)
 ## [Расширение Visual Studio для Mac](extending-visual-studio-mac.md)
+### [Пошаговое руководство по расширению Visual Studio для Mac](extending-visual-studio-mac-walkthrough.md)
 
 
 # [Проекты и решения](projects-and-solutions.md)
@@ -53,8 +54,6 @@
 ## [Разработка игр на Unity](unity-tools.md)
 ### [Установка](setup-vsmac-tools-unity.md)
 ### [Использование инструментов Unity](using-vsmac-tools-unity.md)
-
-# [Специальные возможности](accessibility.md)
 
 # [Устранение неполадок](troubleshooting.md)
 ## [Сообщить о проблеме](report-a-problem.md)

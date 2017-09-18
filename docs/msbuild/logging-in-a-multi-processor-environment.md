@@ -1,72 +1,55 @@
 ---
-title: Logging in a Multi-Processor Environment | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- MSBuild, multi-processor logging
-- MSBuild, logging
+title: "Ведение журнала в многопроцессорной среде | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "MSBuild, ведение журналов"
+  - "MSBuild, ведение журналов в многопроцессорной среде"
 ms.assetid: dd4dae65-ed04-4883-b48d-59bcb891c4dc
 caps.latest.revision: 9
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: e78d6c35fa294d2f1a39c91af5e278e9e4519d2d
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+author: "kempb"
+ms.author: "kempb"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="logging-in-a-multi-processor-environment"></a>Logging in a Multi-Processor Environment
-The ability of MSBuild to use multiple processors can greatly decrease project building time, but it also adds complexity to logging. In a single-processor environment, the logger can handle incoming events, messages, warnings, and errors in a predictable, sequential manner. However, in a multi-processor environment, events from several sources can arrive simultaneously or out of sequence. MSBuild provides a new multi-processor-aware logger and enables the creation of custom "forwarding loggers."  
+# Ведение журнала в многопроцессорной среде
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+MSBuild возможность использования нескольких процессоров позволяет значительно сократить время построения проекта, но усложняет ведение журнала.  В среде с одним процессором средство ведения журнала может обрабатывать входящие события, сообщения, предупреждения и ошибки последовательно и вполне предсказуемо.  Но в многопроцессорной среде события из разных источников могут поступать одновременно или не по порядку.  MSBuild предоставляет новое решения в приложении ведение журнала и обеспечивает создание пользовательских «ведений журнала препровождения».  
   
-## <a name="logging-multiple-processor-builds"></a>Logging Multiple-Processor Builds  
- When you build one or more projects in a multi-processor or multi-core system, MSBuild build events for all the projects are generated simultaneously. An avalanche of event data may arrive at the logger at the same time or out of sequence. This can overwhelm the logger and cause increased build times, incorrect logger output, or even a broken build. To address these issues, the MSBuild logger can process out-of-sequence events and correlate events and their sources.  
+## Ведение журнала при многопроцессорных построениях  
+ При построении один или несколько проектов в многопроцессорной или многоядерной системе, события построения MSBuild для всех проектов создаются одновременно.  Лавина данных событий может приехать в средство ведения журнала в то же время или из последовательности.  Это может произойти переполнение средства ведения журнала, что повлечет за собой увеличение времени построения, неверный результат ведения журнала или даже повреждение построения.  Для устранения этих проблем ведение журнала MSBuild может процесс события выхода последовательности и события коррелата и их источников.  
   
- You can improve logging efficiency even more by creating a custom forwarding logger. A custom-forwarding logger acts as a filter by letting you choose, before you build, the events you want to monitor. When you use a custom forwarding logger, unwanted events do not overwhelm the logger, clutter your logs, or slow build times.  
+ Чтобы повысить эффективность функции ведения журнала, создайте пользовательское средство ведения журнала переадресации.  Созданное пользователем средство ведения журнала переадресации действует как фильтр, позволяя перед построением выбрать события, за которыми нужно вести наблюдение.  Благодаря пользовательскому средству ведения журнала переадресации можно предотвратить переполнение средства ведения журнала ненужными событиями, загромождение журналов или замедление построения.  
   
-### <a name="central-logging-model"></a>Central Logging Model  
- For multi-processor builds, MSBuild uses a "central logging model." In the central logging model, an instance of MSBuild.exe acts as the primary build process, or "central node." Secondary instances of MSBuild.exe, or "secondary nodes," are attached to the central node. Any ILogger-based loggers attached to the central node are known as "central loggers" and loggers attached to secondary nodes are known as "secondary loggers."  
+### Централизованная модель ведения журнала  
+ Для многопроцессорных построений в MSBuild используется "централизованная модель ведения журнала". В этой централизованной модели один экземпляр MSBuild.exe действует в качестве основного процесса построения, или "центрального узла". К центральному узлу подключены дополнительные экземпляры MSBuild.exe, или "дополнительные узлы".  Все средства ведения журнала, поддерживающие ILogger и подключенные к центральному узлу, называются "центральными средствами ведения журнала", а средства ведения журнала, подключенные к дополнительным узлам, называются "дополнительными средствами ведения журнала".  
   
- When a build occurs, the secondary loggers route their event traffic to the central loggers. Because events originate at several secondary nodes, the data arrives at the central node simultaneously but interleaved. To resolve event-to-project and event-to-target references, the event arguments include additional build event context information.  
+ При построении дополнительные средства ведения журнала осуществляют переадресацию своего трафика событий в центральные средства ведения журнала.  Поскольку события исходят из нескольких дополнительных узлов, данные поступают в центральный узел одновременно, но при этом чередуются.  Для разрешения ссылок типа "событие\-проект" и "событие\-целевой объект" в аргументы события включается добавочная контекстная информация о событии построения.  
   
- Although only <xref:Microsoft.Build.Framework.ILogger> is required to be implemented by the central logger, we recommend that you also implement <xref:Microsoft.Build.Framework.INodeLogger> if you want the central logger to initialize with the number of nodes that are participating in the build. The following overload of the <xref:Microsoft.Build.Framework.ILogger.Initialize%2A> method is invoked when the engine initializes the logger:  
+ Несмотря на то, что центральным средством ведения журнала должна быть реализована только задача <xref:Microsoft.Build.Framework.ILogger>, рекомендуется также реализовать задачу <xref:Microsoft.Build.Framework.INodeLogger> для инициализации центрального средства ведения журнала с учетом числа узлов, участвующих в построении.  При инициализации средства ведения журнала в системе вызывается следующая перегрузка метода <xref:Microsoft.Build.Framework.ILogger.Initialize%2A>:  
   
-```csharp
+```  
 public interface INodeLogger: ILogger  
 {  
     public void Initialize(IEventSource eventSource, int nodeCount);  
 }  
 ```  
   
-### <a name="distributed-logging-model"></a>Distributed Logging Model  
- In the central logging model, too much incoming message traffic, such as when many projects build at once, can overwhelm the central node, which stresses the system and lowers build performance.  
+### Распределенная модель ведения журнала  
+ В централизованной модели ведения журнала такой большой трафик входящих сообщений, что при одновременном построении множества проектов может произойти переполнение центрального узла, в результате чего увеличивается нагрузка на систему и снижается производительность построения.  
   
- To reduce this problem, MSBuild also enables a "distributed logging model" that extends the central logging model by letting you create forwarding loggers. A forwarding logger is attached to a secondary node and receives incoming build events from that node. The forwarding logger is just like a regular logger except that it can filter the events and then forward only the desired ones to the central node. This reduces the message traffic at the central node and therefore enables better performance.  
+ Чтобы снизить вероятность появления этой проблемы в MSBuild поддерживается также "распределенная модель ведения журналов", которая расширяет централизованную модель за счет создания средств ведения журналов переадресации.  Средство ведения журнала переадресации подключается к дополнительному узлу и принимает входящие события построения от этого узла.  Средство ведения журнала переадресации похоже на обычное средство ведения журнала, но, в отличие от обычного средства, может фильтровать события и переадресовывать только нужные в центральный узел.  В результате уменьшается трафик сообщений в центральном узле и, соответственно, повышается производительность.  
   
- You can create a forwarding logger by implementing the <xref:Microsoft.Build.Framework.IForwardingLogger> interface, which derives from <xref:Microsoft.Build.Framework.ILogger>. The interface is defined as:  
+ Чтобы создать средство ведения журнала переадресации, выполните реализацию интерфейса <xref:Microsoft.Build.Framework.IForwardingLogger>, получаемого из <xref:Microsoft.Build.Framework.ILogger>.  Интерфейс определяется следующим образом:  
   
-```csharp
+```  
 public interface IForwardingLogger: INodeLogger  
 {  
     public IEventRedirector EventRedirector { get; set; }  
@@ -74,12 +57,12 @@ public interface IForwardingLogger: INodeLogger
 }  
 ```  
   
- To forward events in a forwarding logger, call the <xref:Microsoft.Build.Framework.IEventRedirector.ForwardEvent%2A> method of the <xref:Microsoft.Build.Framework.IEventRedirector> interface. Pass the appropriate <xref:Microsoft.Build.Framework.BuildEventArgs>, or a derivative, as the parameter.  
+ Для переадресации событий в средстве ведения журнала переадресации вызовите метод <xref:Microsoft.Build.Framework.IEventRedirector.ForwardEvent%2A> интерфейса <xref:Microsoft.Build.Framework.IEventRedirector>.  В качестве параметра передайте <xref:Microsoft.Build.Framework.BuildEventArgs> или производную.  
   
- For more information, see [Creating Forwarding Loggers](../msbuild/creating-forwarding-loggers.md).  
+ Для получения дополнительной информации см. [Создание средства ведения журнала переадресации](../msbuild/creating-forwarding-loggers.md).  
   
-### <a name="attaching-a-distributed-logger"></a>Attaching a Distributed Logger  
- To attaching a distributed logger on a command line build, use the `/distributedlogger` (or, `/dl` for short) switch. The format for specifying the names of the logger types and classes are the same as those for the `/logger` switch, except that a distributed logger is comprised of two logging classes: a forwarding logger and a central logger. Following is an example of attaching a distributed logger:  
+### Подключение распределенного средства ведения журнала  
+ Чтобы подключить распределенное средство ведения журнала в построении с использованием командной строки, используйте ключ `/distributedlogger` \(сокращенно `/dl`\).  Для указания имен типов и классов средства ведения журнала используется тот же формат, что и для ключа `/logger`, с той лишь разницей, что распределенное средство ведения журнала включает два класса: средство ведения журнала переадресации и центральное средство ведения журнала.  Пример подключения распределенного средства ведения журнала:  
   
 ```  
 msbuild.exe *.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,  
@@ -87,8 +70,8 @@ Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,
 Culture=neutral  
 ```  
   
- An asterisk (*) separates the two logger names in the `/dl` switch.  
+ В ключе `/dl` имена двух средств ведения журнала отделяются звездочкой \(\*\).  
   
-## <a name="see-also"></a>See Also  
- [Build Loggers](../msbuild/build-loggers.md)   
- [Creating Forwarding Loggers](../msbuild/creating-forwarding-loggers.md)
+## См. также  
+ [Средства ведения журнала построения](../msbuild/build-loggers.md)   
+ [Создание средства ведения журнала переадресации](../msbuild/creating-forwarding-loggers.md)

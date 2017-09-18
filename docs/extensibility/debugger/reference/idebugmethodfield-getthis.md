@@ -1,69 +1,52 @@
 ---
-title: IDebugMethodField::GetThis | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugMethodField::GetThis
-helpviewer_keywords:
-- IDebugMethodField::GetThis method
+title: "IDebugMethodField::GetThis | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugMethodField::GetThis"
+helpviewer_keywords: 
+  - "Метод IDebugMethodField::GetThis"
 ms.assetid: cc235bea-e909-4d8c-ab54-936736c803fc
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 8ae9558b7ee164f8c4c9c6b977ac7ca39d21c45c
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
-Gets the `this` (`Me` in [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]) pointer of the object containing the method.  
+# IDebugMethodField::GetThis
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Возвращает `this` \(`Me` IN  [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]указатель объекта, содержащий метод.\)  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
-HRESULT GetThis(   
-   IDebugClassField** ppClass  
+```cpp#  
+HRESULT GetThis(   
+   IDebugClassField** ppClass  
 );  
 ```  
   
-```csharp  
+```c#  
 int GetThis(  
-   out IDebugClassField ppClass  
+   out IDebugClassField ppClass  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  `ppClass`  
- [out] Returns an [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) object representing the "this" pointer.  
+ \[out\] возвращает [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) объект, представляющий этот указатель "".  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise, returns an error code.  
+## Возвращаемое значение  
+ В случае успеха возвращает значение S\_OK; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- In object-oriented languages, there is typically an implied pointer to the current instantiation of a class. This is known as `this` in C#/C++ and as `Me` in [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)].  
+## Заметки  
+ В объект\-ориентированных языках, обычно неявный указатель на текущий экземпляр класса.  Как `this` в C\#\/C\+\+ и как  `Me` IN  [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)].  
   
-## <a name="see-also"></a>See Also  
+## См. также  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

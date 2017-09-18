@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::GetManagedViewerCreationData | Microsoft Docs
+title: "IPropertyProxyEESide::GetManagedViewerCreationData | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,19 +30,18 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: a20a02b948bb1ee15011f99fe7071ae6af7df6b5
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
+translationtype: Machine Translation
+ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
+ms.openlocfilehash: 221d26b43f57c5519747ef04e9ccc17fc9fad10e
+ms.lasthandoff: 02/22/2017
 
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
-Retrieves information about the viewer for this property type in order to instantiate that viewer.  
+Извлекает сведения о средстве просмотра для этого типа свойства для создания экземпляра этого просмотра.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp  
+```cpp#  
 HRESULT GetManagedViewerCreationData(  
    BSTR*                  assemName,  
    IEEDataStorage**       assemBytes,  
@@ -53,7 +52,7 @@ HRESULT GetManagedViewerCreationData(
 );  
 ```  
   
-```csharp  
+```c#  
 int GetManagedViewerCreationData(  
    out string                     assemName,  
    out IEEDataStorage             assemBytes,  
@@ -64,32 +63,32 @@ int GetManagedViewerCreationData(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Параметры  
  `assemName`  
- [out] Returns the name of the assembly holding this object.  
+ [out] Возвращает имя сборки, содержащий этот объект.  
   
  `assemBytes`  
- [out] Returns an [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) object containing the assembly bytes of this object (this is a null value if no bytes are available).  
+ [out] Возвращает [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект, содержащий байты сборки этого объекта (это значение null, если байты не доступны).  
   
  `assemPdb`  
- [out] Returns an `IEEDataStorage` object containing the symbol store information for this object (this is a null value if no symbol store is available).  
+ [out] Возвращает `IEEDataStorage` объект, содержащий символ хранить сведения для этого объекта (это значение null при наличии не хранилище символов).  
   
  `className`  
- [out] Returns the class name containing this object.  
+ [out] Возвращает имя класса, содержащего этот объект.  
   
  `alr`  
- [out] Returns a value from the [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) enumeration indicating the location of the assembly.  
+ [out] Возвращает значение из [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) перечисление, указывающее расположение сборки.  
   
  `replacementOk`  
- [out] Returns nonzero (`TRUE`) if this object's value can be changed; zero (`FALSE`) if the object is read-only.  
+ [out] Возвращает ненулевое значение (`TRUE`), если значение этого объекта можно изменить; ноль (`FALSE`), если объект доступен только для чтения.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- This method is used by type visualizers to instantiate a managed viewer.  
+## <a name="remarks"></a>Примечания  
+ Этот метод используется тип визуализаторы для создания управляемого средства просмотра.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>См. также  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)   
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

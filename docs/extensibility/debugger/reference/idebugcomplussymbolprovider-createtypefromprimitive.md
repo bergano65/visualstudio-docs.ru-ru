@@ -1,45 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::CreateTypeFromPrimitive | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
-- CreateTypeFromPrimitive
+title: "IDebugComPlusSymbolProvider::CreateTypeFromPrimitive | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "IDebugComPlusSymbolProvider::CreateTypeFromPrimitive"
+  - "CreateTypeFromPrimitive"
 ms.assetid: 37213cc2-a038-42ea-9b28-3ae40d4cfe69
 caps.latest.revision: 13
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: d067ac586be6439b6ec4f3c018d5bc9d9f9e94fa
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 13
 ---
-# <a name="idebugcomplussymbolprovidercreatetypefromprimitive"></a>IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
-Creates a type from the specified primitive type.  
+# IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Создает тип из указанного примитивного типа.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 [C++]  
@@ -59,23 +42,23 @@ int CreateTypeFromPrimitive(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Параметры  
  `dwPrimType`  
- [in] Value from the [CorElementType Enumeration](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) that represents the primitive type.  
+ [in] Значение из [перечисление CorElementType](CorElementType%20Enumeration.xml) представляющий тип-примитив.  
   
  `pAddress`  
- [in] An address object represented by an [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
+ [in] Адрес объекта, представленного параметром [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейса.  
   
  `ppType`  
- [in] Returns an [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) object that describes the type.  
+ [in] Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) описывающий тип объекта.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейса.  
   
-```cpp  
+```cpp#  
 HRESULT CDebugSymbolProvider::CreateTypeFromPrimitive(  
     DWORD dwPrimType,  
     IDebugAddress* pAddress,  
@@ -112,5 +95,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>См. также  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

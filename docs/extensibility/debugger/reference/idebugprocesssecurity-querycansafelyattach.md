@@ -1,61 +1,44 @@
 ---
-title: IDebugProcessSecurity::QueryCanSafelyAttach | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- IDebugProcessSecurity::QueryCanSafelyAttach
+title: "IDebugProcessSecurity::QueryCanSafelyAttach | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "IDebugProcessSecurity::QueryCanSafelyAttach"
 ms.assetid: 63ec1ae8-27da-4574-aa15-1c986fe9fe58
 caps.latest.revision: 4
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 8f0e6f4942a9151bb95d4f14e074355562016096
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 4
 ---
-# <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
-This method allows the port supplier to display a warning before the user attaches to an unsafe process.  
+# IDebugProcessSecurity::QueryCanSafelyAttach
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Этот метод позволяет поставщику порта для отображения предупреждения, прежде чем пользователю опасному вложение в процесс.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
+```cpp#  
 HRESULT QueryCanSafelyAttach();  
 ```  
   
-```csharp  
+```c#  
 int QueryCanSafelyAttach();  
 ```  
   
-## <a name="return-value"></a>Return Value  
- The return values are as follows:  
+## Возвращаемое значение  
+ Возвращаемые значения следующим образом:  
   
--   `S_OK`: Attaching to process is safe and no warning dialog box is shown.  
+-   `S_OK`. Вложение для обработки является безопасным и никакое диалоговое окно предупреждения не отображается.  
   
--   `S_FALSE`: Attaching could be a security problem and a dialog box with a warning is shown.  
+-   `S_FALSE`. Вложение может быть проблемой, безопасности и отображается диалоговое окно с предупреждением.  
   
--   `FAILURE`: Attaching to process fails.  
+-   `FAILURE`. Вложение для обработки fail.  
   
-## <a name="see-also"></a>See Also  
+## См. также  
  [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

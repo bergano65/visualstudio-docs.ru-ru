@@ -1,55 +1,36 @@
 ---
-title: The property &lt;property name&gt; cannot be deleted because it is participating in the association &lt;association name&gt; | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+title: "Нельзя удалить свойство &lt;имя свойства&gt;, поскольку оно участвует в ассоциации &lt;имя ассоциации&gt; | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/14/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
 ms.assetid: 389873cc-92dd-48da-bfca-0f6c8e0ae3c2
 caps.latest.revision: 3
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: ba52151c1d92a648a3392507721a164b669071ea
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/07/2017
-
+caps.handback.revision: 1
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
 ---
-# <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>The property &lt;property name&gt; cannot be deleted because it is participating in the association &lt;association name&gt;
-The selected property is set as the **Association Property** for the association between the classes indicated in the error message. Properties cannot be deleted if they are participating in an association between data classes.  
+# Нельзя удалить свойство &lt;имя свойства&gt;, поскольку оно участвует в ассоциации &lt;имя ассоциации&gt;
+Выбранное свойство имеет значение **Свойство ассоциации** для ассоциации между классами, указанными в сообщении об ошибке.Свойства не могут быть удалены, если они участвуют в ассоциации между классами данных.  
   
- Set the **Association Property** to a different property of the data class to enable successful deletion of the desired property.  
+ Установите **Свойство ассоциации** на другое свойство класса данных, чтобы дать возможность успешного удаления нужного свойства.  
   
-### <a name="to-correct-this-error"></a>To correct this error  
+### Исправление этой ошибки  
   
-1.  Select the association line on the O/R Designer that connects the data classes indicated in the error message.  
+1.  В реляционном конструкторе объектов выберите линию связи, которая соединяет классы данных, указанные в сообщении об ошибке.  
   
-2.  Double-click the line to open the **Association Editor** dialog box.  
+2.  Дважды щелкните по линии ассоциации, чтобы открыть диалоговое окно **Редактор ассоциаций**.  
   
-3.  Remove the property from the **Association Properties**.  
+3.  Удалите свойство из **Свойств ассоциации**.  
   
-4.  Try to delete the property again.  
+4.  Попытайтесь снова удалить свойство.  
   
-## <a name="see-also"></a>See Also  
- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [How to: Create an association (relationship) between LINQ to SQL classes (O/R Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   
- [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
+## См. также  
+ [Общие сведения о реляционном конструкторе объектов](../Topic/LINQ%20to%20SQL%20Tools%20in%20Visual%20Studio1.md)   
+ [Как создать ассоциацию \(связь\) между классами LINQ to SQL \(реляционный конструктор объектов\)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   
+ [Пошаговое руководство. Создание классов LINQ to SQL \(реляционный конструктор объектов\)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)   
+ [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)

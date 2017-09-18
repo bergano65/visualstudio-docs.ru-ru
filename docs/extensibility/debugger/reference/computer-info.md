@@ -1,83 +1,66 @@
 ---
-title: COMPUTER_INFO | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- COMPUTER_INFO structure
+title: "COMPUTER_INFO | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "Структура COMPUTER_INFO"
 ms.assetid: 943085b2-f165-462d-9a4e-2086f0cdfff4
 caps.latest.revision: 6
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 1f6ed5f6ebe9b846dcb5789bd58c31df8b075749
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 6
 ---
-# <a name="computerinfo"></a>COMPUTER_INFO
-Describes the computer on which the debugger is running.  
+# COMPUTER_INFO
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Описывает компьютер, на котором отладчик работает.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
+```cpp#  
 typedef struct tagCOMPUTER_INFO  
 {  
-    WORD wProcessorArchitecture;  
-    WORD wSuiteMask;  
-    DWORD dwOperatingSystemVersion;  
+    WORD wProcessorArchitecture;  
+    WORD wSuiteMask;  
+    DWORD dwOperatingSystemVersion;  
 } COMPUTER_INFO;  
 ```  
   
-```csharp  
+```c#  
 public struct COMPUTER_INFO  
 {  
-    public ushort wProcessorArchitecture;  
-    public ushort wSuiteMask;  
-    public uint dwOperatingSystemVersion;  
+    public ushort wProcessorArchitecture;  
+    public ushort wSuiteMask;  
+    public uint dwOperatingSystemVersion;  
 }  
 ```  
   
-## <a name="terms"></a>Terms  
+## Термины  
  wProcessorArchitecture  
- Identifies the architecture of the microprocessor.  
+ Определяет архитектуру микропроцессора.  
   
  wSuiteMask  
- Identifies the suite mask.  
+ Задает маску набора.  
   
  dwOperatingSystemVersion  
- Operating system version number.  
+ Номер версии операционной системы.  
   
-## <a name="remarks"></a>Remarks  
- This structure is returned by the [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) method.  
+## Заметки  
+ Эта структура возвращается [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) метод.  
   
-## <a name="requirements"></a>Requirements  
- Header: Msdbg.h  
+## Требования  
+ Заголовок: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## См. также  
+ [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)

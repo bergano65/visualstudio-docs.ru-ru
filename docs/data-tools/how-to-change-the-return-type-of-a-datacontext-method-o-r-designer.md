@@ -1,64 +1,45 @@
 ---
-title: 'How to: Change the return type of a DataContext method (O-R Designer) | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+title: "Как изменить тип возвращаемого значения метода DataContext (реляционный конструктор объектов) | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/15/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
 caps.latest.revision: 2
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: b130e051a4c7a312b2be952c1ef27e97c101cd1b
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/07/2017
-
+caps.handback.revision: 2
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
 ---
-# <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>How to: Change the return type of a DataContext method (O/R Designer)
-The return type of a <xref:System.Data.Linq.DataContext> method (created based on a stored procedure or function) differs depending on where you drop the stored procedure or function in the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. If you drop an item directly onto an existing entity class, a <xref:System.Data.Linq.DataContext> method that has the return type of the entity class is created (if the schema of the data returned by the stored procedure or function matches the shape of the entity class). If you drop an item onto an empty area of the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], a <xref:System.Data.Linq.DataContext> method that returns an automatically generated type is created. You can change the return type of a <xref:System.Data.Linq.DataContext> method after you add it to the methods pane. To inspect or change the return type of a <xref:System.Data.Linq.DataContext> method, select it and click the **Return Type** property in the **Properties** window.  
+# Как изменить тип возвращаемого значения метода DataContext (реляционный конструктор объектов)
+Тип возврата метода <xref:System.Data.Linq.DataContext> \(созданного на основе сохраненных процедур или функций\) различен в зависимости от того, куда вы переместили сохраненную процедуру или функцию в [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].Если вы переместили элемент прямо на существующий класс сущностей, то создается метод <xref:System.Data.Linq.DataContext>, который имеет тип возврата создаваемого класса сущностей \(если схема данных, возвращенная сохраненной процедурой или функцией совпадает с формой класса сущностей\).Если вы сбрасываете элемент на пустую область конструктора [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], то создается метод <xref:System.Data.Linq.DataContext>, который возвращает автоматически сгенерированный тип.Можно изменить тип возврата метода <xref:System.Data.Linq.DataContext> после его добавления в область методов.Чтобы проверить или изменить тип возврата метода <xref:System.Data.Linq.DataContext>, выберите его и щелкните по свойству **Тип возврата** в окне **Свойства**.  
   
 > [!NOTE]
->  You cannot revert <xref:System.Data.Linq.DataContext> methods that have a return type set to an entity class to return the auto-generated type by using the **Properties** window. To revert a <xref:System.Data.Linq.DataContext> method to return an auto-generated type, you must drag the original database object onto the O/R Designer again.  
+>  Нельзя восстановить методы <xref:System.Data.Linq.DataContext> \(для которых в качестве типа возвращаемого значения задан класс сущности\) таким образом, чтобы они возвращали автоматически созданный тип в окне **Свойства**.Для возврата метода <xref:System.Data.Linq.DataContext>, сконфигурированного на возврат автоматически сгенерированного типа необходимо снова перетащить исходный объект базы данных в реляционный конструктор объектов.  
   
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+ [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-### <a name="to-change-the-return-type-of-a-datacontext-method-from-the-auto-generated-type-to-an-entity-class"></a>To change the return type of a DataContext method from the auto-generated type to an entity class  
+### Чтобы изменить тип возврата метода DataContext от автоматически сгенерированного типа к классу сущностей  
   
-1.  Select the <xref:System.Data.Linq.DataContext> method in the methods pane.  
+1.  Выберите метод <xref:System.Data.Linq.DataContext> в области методов.  
   
-2.  Select **Return Type** in the **Properties** window and then select an available entity class in the **Return Type** list. If the desired entity class is not in the list, add it to or create it in the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] to add it to the list.  
+2.  Выберите **Тип возврата** в окне **Свойства** и потом выберите доступный класс сущностей в списке **Типов возврата**.Если нужного класса сущностей нет в списке, добавьте или создайте его в [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], чтобы добавить его в список.  
   
-3.  Save the .dbml file.  
+3.  Сохраните DBML\-файл.  
   
-### <a name="to-change-the-return-type-of-a-datacontext-method-from-an-entity-class-back-to-the-auto-generated-type"></a>To change the return type of a DataContext method from an entity class back to the auto-generated type  
+### Чтобы изменить тип возврата метода DataContext от класса сущностей обратно к автоматически сгенерированному типу  
   
-1.  Select the <xref:System.Data.Linq.DataContext> method in the methods pane and delete it.  
+1.  Выберите метод <xref:System.Data.Linq.DataContext> в области методов и удалите его.  
   
-2.  Drag the database object from **Server Explorer**/**Database Explorer** onto an empty area of the O/R Designer.  
+2.  Перетащите объект базы данных из **Обозревателя серверов**\/**Обозревателя базы данных** на пустую область реляционного конструктора объектов.  
   
-3.  Save the .dbml file.  
+3.  Сохраните DBML\-файл.  
   
-## <a name="see-also"></a>See Also  
- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
- [DataContext Methods (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
- [How to: Create DataContext methods mapped to stored procedures and functions (O/R Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
+## См. также  
+ [Реляционный конструктор объектов](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
+ [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)   
+ [Методы DataContext \(реляционный конструктор объектов\)](../data-tools/datacontext-methods-o-r-designer.md)   
+ [Как создать методы DataContext, сопоставленные с хранимыми процедурами и функциями \(реляционный конструктор объектов\)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)

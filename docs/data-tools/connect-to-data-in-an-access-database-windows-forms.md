@@ -1,146 +1,138 @@
 ---
-title: Connect to data in an Access database (Windows Forms) | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- databases, connecting to
-- databases, Access
-- data [Visual Studio], connecting
-- connecting to data, from Access databases
-- Access databases, connecting
+title: "Пошаговое руководство. Подключение к данным в базе данных Access (Windows Forms) | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/15/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "VB"
+  - "CSharp"
+  - "C++"
+  - "aspx"
+helpviewer_keywords: 
+  - "базы данных Access, подключение"
+  - "подключение к данным, из баз данных Access"
+  - "данные [Visual Studio], подключение"
+  - "базы данных, Access"
+  - "базы данных, подключение к"
 ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
 caps.latest.revision: 29
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 3f11055b41e6fd5ca19b44ccf817ae0b1644a76b
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/07/2017
-
+caps.handback.revision: 24
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
 ---
-# <a name="connect-to-data-in-an-access-database-windows-forms"></a>Connect to data in an Access database (Windows Forms)
-You can connect to an Access database (either an .mdf file or an .accdb file) by using Visual Studio. After you define the connection, the data appears in the **Data Sources** window. From there, you can drag tables or views onto your forms.   
+# Пошаговое руководство. Подключение к данным в базе данных Access (Windows Forms)
+Можно подключиться к базе данных Access \(к MDF\-файлу или ACCDB\-файлу\) с помощью Visual Studio.  После того как определено подключение, источник данных отображается в окне **Источник данных**.  Здесь можно перетаскивать таблицы и представления на формы.  О том, как система проектов в Visual Studio управляет локальными файлами баз данных, см. в разделе [Практическое руководство. Управление локальными файлами данных в проекте](../data-tools/how-to-manage-local-data-files-in-your-project.md).  
   
-## <a name="prerequisites"></a>Prerequisites  
- To use these procedures, you need a Windows Forms application project, and either an Access database (.accdb file) or an Access 2000-2003 database (.mdb file). Follow the procedure that corresponds to your file type.  
+## Обязательные компоненты  
+ Для работы с этими процедурами требуется проект приложения Windows Forms и база данных Access \(ACCDB\-файл\) или база данных Access 2000—2003 \(MDB\-файл\).  Выполните процедуру, соответствующую типу файла.  
   
-## <a name="creating-the-dataset-for-an-accdb-file"></a>Creating the dataset for an .accdb file  
- You can connect to databases created through Access 2013, Office 365, Access 2010, or Access 2007 by using the following procedure.  
+## Создание набора данных для ACCDB\-файла  
+ Следующая процедура позволяет подключиться к базам данных, созданным с помощью Access 2013, Office 365, Access 2010 или Access 2007.  
   
-#### <a name="to-create-the-dataset"></a>To create the dataset  
+#### Создание набора данных  
   
-1.  Open the Windows Forms application to which you want to connect data.  
+1.  Откройте приложение Windows Forms, к которому требуется подключить данные.  
   
-2.  On the **View** menu, select **Other Windows** > **Data Sources**.  
+2.  В меню **Вид** выберите **Другие окна** \> **Источники данных**.  
   
-     ![View Other Windows Data Sources](../data-tools/media/viewdatasources.png "ViewDataSources")  
+     ![Просмотр других окон "Источники данных"](~/data-tools/media/viewdatasources.png "ViewDataSources")  
   
-3.  In the **Data Sources** window, click **Add New Data Source**.  
+3.  В окне **Источники данных** выберите **Добавить новый источник данных**.  
   
-     ![Add New Data Source](../data-tools/media/dataaddnewdatasource.png "dataAddNewDataSource")  
+     ![Добавить новый источник данных](~/data-tools/media/dataaddnewdatasource.png "dataAddNewDataSource")  
   
-4.  Select **Database** on the **Choose a Data Source Type** page, and then select **Next**.  
+4.  На странице **Выбор типа источника данных** выберите **База данных** и нажмите кнопку **Далее**.  
   
-5.  Select **Dataset** on the **Choose a Database Model** page, and then select **Next**.  
+5.  На странице **Выбор модели базы данных** выберите **Набор данных** и нажмите кнопку **Далее**.  
   
-6.  On the **Choose your Data Connection** page, select **New Connection** to configure a new data connection.  
+6.  На странице **Выбор подключения базы данных** выберите **Новое подключение** для настройки нового подключения к данным.  
   
-7.  Change the **Data source** to **.NET Framework Data Provider for OLE DB**.  
+7.  Задайте параметру **Источник данных** значение **Поставщик данных .NET Framework для OLE DB**.  
   
-     ![Change Data Provider to OLE DB](../data-tools/media/datachangedatasourceoledb.png "dataChangeDataSourceOLEDB")  
+     ![Изменить поставщика данных на OLE DB](../data-tools/media/datachangedatasourceoledb.png "dataChangeDataSourceOLEDB")  
   
     > [!IMPORTANT]
-    >  Although a data source of **Microsoft Access Database File (OLE DB)** might seem like the right choice, you use that data-source type only for .mdb database files.  
+    >  Хотя на первый взгляд подходящим источником данных является **Файл базы данных Microsoft Access \(OLE DB\)**, этот тип источника используется только для MDB\-файлов.  
   
-8.  In **OLE DB Provider**, select **Microsoft Office 12.0 Access Database Engine OLE DB Provider**.  
+8.  В списке **Поставщик OLE DB** выберите **Поставщик OLE DB для ядра СУБД Microsoft Office 12.0 Access**.  
   
-     ![OLE DB Provider Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png "dataOLEDBProviderOffice12Access")  
+     ![Поставщик OLE DB Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png "dataOLEDBProviderOffice12Access")  
   
-9. In **Server or file name**, specify the path and name of the .accdb file to which you want to connect, and then select **OK**.  
+9. В поле **Имя сервера или файла** укажите путь и имя ACCDB\-файла, к которому требуется подключиться, и нажмите кнопку **ОК**.  
   
     > [!NOTE]
-    >  If the database file has a user name and password, specify them before you select **OK**.  
+    >  При необходимости укажите имя пользователя и пароль, а затем нажмите **ОК**.  
   
-10. Select **Next** on the **Choose your Data Connection** page.  
+10. На странице **Выбор подключения базы данных** нажмите кнопку **Далее**.  
   
-11. Select **Next** on the **Save connection string to the Application Configuration file** page.  
+11. На странице **Сохранить строку подключения в файле конфигурации приложения** нажмите кнопку **Далее**.  
   
-12. Expand the **Tables** node on the **Choose your Database Objects** page.  
+12. Разверните узел **Таблицы** на странице **Выбор объектов базы данных**.  
   
-13. Select whatever tables or views you want in your dataset, and then select **Finish**.  
+13. Выберите необходимые таблицы и представления объекта DataSet и нажмите кнопку **Готово**.  
   
-     The dataset is added to your project, and the tables and views appear in the **Data Sources** window.  
+     Объект DataSet добавляется в проект, и таблицы и представления отображаются в окне **Источники данных**.  
   
-## <a name="creating-the-dataset-for-an-mdb-file"></a>Creating the dataset for an .mdb file  
- You create the dataset by running the **Data Source Configuration Wizard**.  
+## Создание набора данных для MDB\-файла  
+ Набор данных создается при помощи **Мастера настройки источника данных**.  
   
-#### <a name="to-create-the-dataset"></a>To create the dataset  
+#### Создание набора данных  
   
-1.  Open the Windows Forms application to which you want to connect data.  
+1.  Откройте приложение Windows Forms, к которому требуется подключить данные.  
   
-2.  On the **View** menu, select **Other Windows** > **Data Sources**.  
+2.  В меню **Вид** выберите **Другие окна** \> **Источники данных**.  
   
-     ![View Other Windows Data Sources](../data-tools/media/viewdatasources.png "ViewDataSources")  
+     ![Просмотр других окон "Источники данных"](~/data-tools/media/viewdatasources.png "ViewDataSources")  
   
-3.  In the **Data Sources** window, click **Add New Data Source**.  
+3.  В окне **Источники данных** выберите **Добавить новый источник данных**.  
   
-4.  Select **Database** on the **Choose a Data Source Type** page, and then select **Next**.  
+     ![Добавить новый источник данных](~/data-tools/media/dataaddnewdatasource.png "dataAddNewDataSource")  
   
-5.  Select **Dataset** on the **Choose a Database Model** page, and then select **Next**.  
+4.  На странице **Выбор типа источника данных** выберите **База данных** и нажмите кнопку **Далее**.  
   
-6.  On the **Choose your Data Connection** page, select **New Connection** to configure a new data connection.  
+5.  На странице **Выбор модели базы данных** выберите **Набор данных** и нажмите кнопку **Далее**.  
   
-7.  If the data source is not **Microsoft Access Database File (OLE DB)**, select **Change** to open the **Change Data Source** dialog box and select **Microsoft Access Database File**, and then select **OK**.  
+6.  На странице **Выбор подключения базы данных** выберите **Новое подключение** для настройки нового подключения к данным.  
   
-8.  In the **Database file name**, specify the path and name of the .mdb file to which you want to connect, and then select **OK**.  
+7.  Если параметру **Источник данных** не задано значение **Файл базы данных Microsoft Access \(OLE DB\)**, выберите **Изменить** и в диалоговом окне **Сменить источник данных** выберите **Файл базы данных Microsoft Access**, затем нажмите кнопку **ОК**.  
   
-     ![Add Connection Access Database File](../data-tools/media/dataaddconnectionaccessmdb.png "dataAddConnectionAccessMDB")  
+8.  В поле **Имя файла базы данных** укажите путь и имя MDB\-файла, к которому требуется подключиться, и нажмите кнопку **ОК**.  
   
-9. Select **Next** on the **Choose your Data Connection** page.  
+     ![Добавление файла базы данных Access для подключения](../data-tools/media/dataaddconnectionaccessmdb.png "dataAddConnectionAccessMDB")  
   
-10. Select **Next** on the **Save connection string to the Application Configuration file** page.  
+9. На странице **Выбор подключения базы данных** нажмите кнопку **Далее**.  
   
-11. Expand the **Tables** node on the **Choose your Database Objects** page.  
+10. На странице **Сохранить строку подключения в файле конфигурации приложения** нажмите кнопку **Далее**.  
   
-12. Select whatever tables or views you want in your dataset, and then select **Finish**.  
+11. Разверните узел **Таблицы** на странице **Выбор объектов базы данных**.  
   
-     The dataset is added to your project, and the tables and views appear in the **Data Sources** window.  
+12. Выберите необходимые таблицы и представления объекта DataSet и нажмите кнопку **Готово**.  
   
-## <a name="security"></a>Security  
- Storing sensitive information (such as a password) can affect the security of your application. Using Windows Authentication (also known as integrated security) is a more secure way to control access to a database. For more information, see [Protecting Connection Information](/dotnet/framework/data/adonet/protecting-connection-information).  
+     Объект DataSet добавляется в проект, и таблицы и представления отображаются в окне **Источники данных**.  
   
-## <a name="next-steps"></a>Next Steps  
- The dataset that you just created is now available in the **Data Sources** window. You can now perform any of the following tasks:  
+## Безопасность  
+ Хранение конфиденциальных сведений \(например, пароля\) может повлиять на безопасность приложений.  Использование проверки подлинности Windows \(также называемой встроенными средствами безопасности\) — более безопасный способ управления доступом к базе данных.  Дополнительные сведения см. в разделе [Защита сведений о соединении](../Topic/Protecting%20Connection%20Information.md).  
   
--   Select items in the **Data Sources** window and drag them onto your form (see [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)).  
+## Следующие действия  
+ Только что созданный набор данных станет доступным в окне **Источники данных**.  Теперь можно выполнить любую из следующих задач  
   
--   Open the data source in the **Dataset Designer** to add or edit the objects that make up the dataset.  
+-   Выберите элементы в окне **Источники данных** и перетащите их на форму \(см. раздел [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)\).  
   
--   Add validation logic to the <xref:System.Data.DataTable.ColumnChanging> or <xref:System.Data.DataTable.RowChanging> event of the data tables in the dataset (see [Validate data in datasets](../data-tools/validate-data-in-datasets.md)).  
+-   Откройте источник данных в [Конструкторе набора данных](../data-tools/creating-and-editing-typed-datasets.md) для добавления или изменения объектов, составляющих набор данных.  
   
-## <a name="see-also"></a>See Also  
-
- [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Validating Data](validate-data-in-datasets.md)   
- [Saving Data](../data-tools/saving-data.md)   
-
+-   Добавьте логику проверки данных в событие <xref:System.Data.DataTable.ColumnChanging> или <xref:System.Data.DataTable.RowChanging> таблиц набора данных \(см. раздел [Проверка данных в наборах данных](../data-tools/validate-data-in-datasets.md)\).  
+  
+## См. также  
+ [Подключение к данным в Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
+ [Подготовка приложения к получению данных](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
+ [Выборка данных в приложение](../data-tools/fetching-data-into-your-application.md)   
+ [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
+ [Редактирование данных в приложении](../data-tools/editing-data-in-your-application.md)   
+ [Проверка данных](../Topic/Validating%20Data.md)   
+ [Сохранение данных](../data-tools/saving-data.md)   
+ [Пошаговые руководства работы с данными](../Topic/Data%20Walkthroughs.md)

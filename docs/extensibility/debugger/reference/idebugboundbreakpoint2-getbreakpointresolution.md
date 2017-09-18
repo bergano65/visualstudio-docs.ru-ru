@@ -1,76 +1,59 @@
 ---
-title: IDebugBoundBreakpoint2::GetBreakpointResolution | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugBoundBreakpoint2::GetBreakpointResolution
-helpviewer_keywords:
-- GetBreakpointResolution method
-- IDebugBoundBreakpoint2::GetBreakpointResolution method
+title: "IDebugBoundBreakpoint2::GetBreakpointResolution | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugBoundBreakpoint2::GetBreakpointResolution"
+helpviewer_keywords: 
+  - "Метод GetBreakpointResolution"
+  - "Метод IDebugBoundBreakpoint2::GetBreakpointResolution"
 ms.assetid: 4479ac61-18a9-4a30-b213-9921c5af9a26
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: e4e4edb5a36241423466cacbc7baed5711249655
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
-Gets the breakpoint resolution that describes this breakpoint.  
+# IDebugBoundBreakpoint2::GetBreakpointResolution
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Возвращает разрешение точки останова, описывающий эту точку останова.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
-HRESULT GetBreakpointResolution(   
-   IDebugBreakpointResolution2** ppBPResolution  
+```cpp#  
+HRESULT GetBreakpointResolution(   
+   IDebugBreakpointResolution2** ppBPResolution  
 );  
 ```  
   
-```csharp  
-int GetBreakpointResolution(   
-   out IDebugBreakpointResolution2 ppBPResolution  
+```c#  
+int GetBreakpointResolution(   
+   out IDebugBreakpointResolution2 ppBPResolution  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  `ppBPResolution`  
- [out] Returns the [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interface that represents one of the following:  
+ \[out\] возвращает IDebugBreakpointResolution2 интерфейс, представляющий одно из следующих действий:  
   
--   The breakpoint resolution object that describes the location in code where a code breakpoint has been bound.  
+-   Объект разрешений точки останова, описывающий расположение кода, где была точка останова кода привязана.  
   
--   The data location where a data breakpoint has bound.  
+-   Доверенного данных, где точка останова данных привязала.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code. Returns `E_BP_DELETED` if the state of the bound breakpoint object is set to `BPS_DELETED` (part of the [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeration).  
+## Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  Возвращает `E_BP_DELETED` если состояние связанного объекта точки останова равно  `BPS_DELETED` \(часть   [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md) перечисление\).  
   
-## <a name="remarks"></a>Remarks  
- Call the [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) method to determine if the breakpoint resolution is for code or data.  
+## Заметки  
+ Вызовите [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) метод позволяет определить, если разрешение точек останова для кода или данных.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a simple `CBoundBreakpoint` object that exposes the [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interface.  
+## Пример  
+ В следующем примере показано, как реализовать этот метод для простого `CBoundBreakpoint` объект, предоставляющий  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) интерфейс.  
   
 ```  
 HRESULT CBoundBreakpoint::GetBreakpointResolution(  
@@ -103,7 +86,7 @@ HRESULT CBoundBreakpoint::GetBreakpointResolution(
 }    
 ```  
   
-## <a name="see-also"></a>See Also  
+## См. также  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
  [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)   
  [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)

@@ -1,108 +1,91 @@
 ---
-title: IDebugPortEx2::LaunchSuspended | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugPortEx2::LaunchSuspended
-helpviewer_keywords:
-- IDebugPortEx2::LaunchSuspended
+title: "IDebugPortEx2::LaunchSuspended | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugPortEx2::LaunchSuspended"
+helpviewer_keywords: 
+  - "IDebugPortEx2::LaunchSuspended"
 ms.assetid: 34b2cf99-2e52-4757-8969-1d12ac517ec0
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: a8d1faea09d72130b737fb9c64d4cfb03afbcf77
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
-Launches an executable file.  
+# IDebugPortEx2::LaunchSuspended
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Запустит исполняемый файл.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
-HRESULT LaunchSuspended(   
-   LPCOLESTR        pszExe,  
-   LPCOLESTR        pszArgs,  
-   LPCOLESTR        pszDir,  
-   BSTR             bstrEnv,  
-   DWORD            hStdInput,  
-   DWORD            hStdOutput,  
-   DWORD            hStdError,  
-   IDebugProcess2** ppPortProcess  
+```cpp#  
+HRESULT LaunchSuspended(   
+   LPCOLESTR        pszExe,  
+   LPCOLESTR        pszArgs,  
+   LPCOLESTR        pszDir,  
+   BSTR             bstrEnv,  
+   DWORD            hStdInput,  
+   DWORD            hStdOutput,  
+   DWORD            hStdError,  
+   IDebugProcess2** ppPortProcess  
 );  
 ```  
   
-```csharp  
-int LaunchSuspended(   
-   string             pszExe,  
-   string             pszArgs,  
-   string             pszDir,  
-   string             bstrEnv,  
-   uint               hStdInput,  
-   uint               hStdOutput,  
-   uint               hStdError,  
-   out IDebugProcess2 ppPortProcess  
+```c#  
+int LaunchSuspended(   
+   string             pszExe,  
+   string             pszArgs,  
+   string             pszDir,  
+   string             bstrEnv,  
+   uint               hStdInput,  
+   uint               hStdOutput,  
+   uint               hStdError,  
+   out IDebugProcess2 ppPortProcess  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  `pszExe`  
- [in] The name of the executable to be launched. This can be a full path or relative to the working directory specified in the `pszDir` parameter.  
+ \[in\] имя исполняемого файла для запуска.  Это может быть полный путь или по отношению к рабочей папке, указанной в `pszDir` параметр.  
   
  `pszArgs`  
- [in] The arguments to pass to the executable. May be a null value if there are no arguments.  
+ \[in\] аргументы для передачи в исполняемый файл.  Может иметь значение NULL, если аргументов.  
   
  `pszDir`  
- [in] The name of the working directory used by the executable. May be a null value if no working directory is required.  
+ \[in\] имя рабочей папки, используемой исполняемым файлом.  Может иметь значение NULL, если ни одна рабочая папка не требуется.  
   
  `bstrEnv`  
- [in] Environment block of null-terminated strings, followed by an additional NULL terminator.  
+ \[in\] фрагмент среды null\-завершенных строк, следуйте дополнительным терминатором NULL.  
   
  `hStdInput`  
- [in] Handle to an alternate input stream. May be 0 if redirection is not required.  
+ \[in\] дескриптор другой входной поток.  Может принимать значение 0, если перенаправление является обязательным.  
   
  `hStdOutput`  
- [in] Handle to an alternate output stream. May be 0 if redirection is not required.  
+ \[in\] дескриптор другой поток вывода.  Может принимать значение 0, если перенаправление является обязательным.  
   
  `hStdError`  
- [in] Handle to an alternate error output stream. May be 0 if redirection is not required.  
+ \[in\] дескриптор другой поток вывода ошибок.  Может принимать значение 0, если перенаправление является обязательным.  
   
  `ppPortProcess`  
- [out] Returns an [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) object that represents the launched process.  
+ \[out\] возвращает IDebugProcess2 объект, представляющий запущен процесс.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- This method should launch the process so that it is suspended and not running any code. The [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) method is called to resume the process.  
+## Заметки  
+ Этот метод должен запускаться процесс таким образом, чтобы он будет приостановлен и не выполняется никакой код.  [ResumeProcess для](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) метод вызывается, чтобы продолжить процесс.  
   
- A program can also be launched from a debug engine. For details, see [Launching a Program](../../../extensibility/debugger/launching-a-program.md).  
+ Программу можно запустить из обработчика отладки.  Дополнительные сведения см. в разделе [Запуск программы](../../../extensibility/debugger/launching-a-program.md).  
   
-## <a name="see-also"></a>See Also  
+## См. также  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
- [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md)   
- [Launching a Program](../../../extensibility/debugger/launching-a-program.md)
+ [ResumeProcess для](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md)   
+ [Запуск программы](../../../extensibility/debugger/launching-a-program.md)

@@ -1,108 +1,91 @@
 ---
-title: Validation in a Domain-Specific Language | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- Domain-Specific Language, constraints
-- Domain-Specific Language, validation
+title: "Проверка в доменных языках | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "Доменный язык, ограничения"
+  - "доменный язык, проверка"
 ms.assetid: 65b93df8-af3c-462b-904c-60292f8ed381
 caps.latest.revision: 33
-author: alancameronwills
-ms.author: awills
-manager: douge
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 47db59100786e362d37447f07df16a13c92a4f74
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+author: "alancameronwills"
+ms.author: "awills"
+manager: "douge"
+caps.handback.revision: 33
 ---
-# <a name="validation-in-a-domain-specific-language"></a>Validation in a Domain-Specific Language
-As the author of a domain-specific language (DSL), you can define validation constraints to verify that the model created by the user is meaningful. For example, if your DSL allows users to draw a family tree of people and their ancestors, you could write a constraint that ensures that children have birth dates after their parents.  
+# Проверка в доменных языках
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Автор доменного языка может определить ограничения проверки, позволяющие контролировать полноценность созданной пользователем модели. Например, если доменный язык позволяет рисовать генеалогическое дерево людей и их предков, можно написать ограничения, согласно которым даты рождения детей должны быть позже дат рождения родителей.  
   
- You can have the validation constraints execute when the model is saved, when it is opened, and when the user explicitly runs the **Validate** menu command. You can also execute validation under program control. For example, you could execute validation in response to a change in a property value or relationship.  
+ Может иметь ограничения проверки при сохранении модели, когда он открыт, и когда пользователь запускает **проверки** команды меню. Также можно выполнять проверку с помощью другого элемента управления программы. Например, можно выполнять проверку в ответ на изменение в значении или отношении свойства.  
   
- Validation is particularly important if you are writing text templates or other tools that process your users' models. Validation ensures that the models fulfill the preconditions assumed by those tools.  
+ Проверка особенно важна, если вы пишете шаблоны текста или другие инструменты, обрабатывающие модели пользователя. Проверка гарантирует, что модели удовлетворяют предусловиям, указанным в этих инструментах.  
   
 > [!WARNING]
->  You can also allow validation constraints to be defined in separate extensions to your DSL, along with extension menu commands and gesture handlers. Users can choose to install these extensions in addition to your DSL. For more information, see [Extend your DSL by using MEF](../modeling/extend-your-dsl-by-using-mef.md).  
+>  Также можно определить ограничения проверки в отдельных расширениях доменного языка вместе с командами меню расширения и обработчиками жестов. Пользователи могут выбрать установку таких расширений в дополнение к доменному языку. Дополнительные сведения см. в разделе [расширение Доменного языка с помощью MEF](../modeling/extend-your-dsl-by-using-mef.md).  
   
-## <a name="running-validation"></a>Running Validation  
- When a user is editing a model, that is, an instance of your domain-specific language, the following actions can run validation:  
+## <a name="running-validation"></a>Запуск проверки  
+ Когда пользователь редактирует модель, т. е. экземпляр доменного языка, запустить проверку могут следующие действия.  
   
--   Right-click the diagram and select **Validate All**.  
+-   Щелкните правой кнопкой мыши на диаграмме и выберите **Проверить все**.  
   
--   Right-click the top node in the Explorer of your DSL and select **Validate All**  
+-   Щелкните правой кнопкой мыши верхний узел в обозревателе DSL и выберите **Проверить все**  
   
--   Save the model.  
+-   Сохранение модели.  
   
--   Open the model.  
+-   Открытие модели.  
   
--   In addition, you can write program code that runs validation, for example, as part of a menu command or in response to a change.  
+-   Кроме этого, можно написать программный код, который запускает проверку, например как часть команды меню или в ответ на изменения.  
   
- Any validation errors will appear in the **Error List** window. The user can double-click an error message to select the model elements that are the cause of the error.  
+ Любые ошибки проверки будут отображаться в **Список ошибок** окна. Пользователь может дважды щелкнуть сообщение об ошибке, чтобы выбрать элементы модели, вызвавшие ошибку.  
   
-## <a name="defining-validation-constraints"></a>Defining Validation Constraints  
- You define validation constraints by adding validation methods to the domain classes or relationships of your DSL. When validation is run, either by the user or under program control, some or all of the validation methods are executed. Each method is applied to each instance of its class, and there can be several validation methods in each class.  
+## <a name="defining-validation-constraints"></a>Определение ограничений проверки  
+ Можно определить ограничения проверки, добавив методы проверки к классам доменов или отношениям DSL. Когда проверка запускается пользователем или с помощью элемента управления программой, выполняются некоторые или все методы проверки. Каждый метод применяется к каждому экземпляру своего класса, причем в каждом классе может быть несколько методов проверки.  
   
- Each validation method reports any errors that it finds.  
+ Для каждого метода проверки создается отчет об обнаруженных ошибках.  
   
 > [!NOTE]
->  Validation methods report errors, but do not change the model. If you want to adjust or prevent certain changes, see [Alternatives to Validation](#alternatives).  
+>  Методы проверки создают отчеты об ошибках, но не изменяют модель. Если вы хотите настроить или предотвратить внесение определенных изменений см. в разделе [альтернативы проверке](#alternatives).  
   
-#### <a name="to-define-a-validation-constraint"></a>To define a validation constraint  
+#### <a name="to-define-a-validation-constraint"></a>Определение ограничений проверки  
   
-1.  Enable validation in the **Editor\Validation** node:  
+1.  Включите проверку в **Editor\Validation** узла:  
   
-    1.  Open **Dsl\DslDefinition.dsl**.  
+    1.  Откройте **Dsl\DslDefinition.dsl**.  
   
-    2.  In DSL Explorer, expand the **Editor** node and select **Validation**.  
+    2.  В обозревателе DSL разверните **редактор** и выберите команду **проверки**.  
   
-    3.  In the Properties window, set the **Uses**  properties to `true`. It is most convenient to set all these properties.  
+    3.  В окне «Свойства» задайте **использует**  Свойства `true`. Лучше всего задать все эти свойства.  
   
-    4.  Click **Transform All Templates** in the Solution Explorer toolbar.  
+    4.  Щелкните **Преобразовать все шаблоны** в панели инструментов обозревателя решений.  
   
-2.  Write partial class definitions for one or more of your domain classes or domain relationships. Write these definitions in a new code file in the **Dsl** project.  
+2.  Напишите определения разделяемого класса для одного или нескольких классов доменов или доменных связей. Напишите определения в файле кода в **Dsl** проекта.  
   
-3.  Prefix each class with this attribute:  
+3.  Снабдите каждый класс префиксом в виде следующего атрибута:  
   
-    ```csharp  
+    ```c#  
     [ValidationState(ValidationState.Enabled)]  
     ```  
   
-    -   By default, this attribute will also enable validation for derived classes. If you want to disable validation for a specific derived class, you can use `ValidationState.Disabled`.  
+    -   По умолчанию этот атрибут будет включать проверку для производных классов. Если требуется отключить проверку для определенного производного класса, можно использовать `ValidationState.Disabled`.  
   
-4.  Add validation methods to the classes. Each validation method can have any name, but have one parameter of type <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.  
+4.  Добавьте методы проверки к классам. Каждый метод проверки может иметь любое имя, но есть один параметр типа <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.  
   
-     It must be prefixed with one or more `ValidationMethod` attributes:  
+     Ему должен предшествовать один или несколько атрибутов `ValidationMethod`:  
   
-    ```csharp  
+    ```c#  
     [ValidationMethod (ValidationCategories.Open | ValidationCategories.Save | ValidationCategories.Menu ) ]  
     ```  
   
-     The ValidationCategories specify when the method is executed.  
+     ValidationCategories указывается, когда метод выполняется.  
   
- For example:  
+ Например:  
   
-```csharp  
+```c#  
 using Microsoft.VisualStudio.Modeling;  
 using Microsoft.VisualStudio.Modeling.Validation;  
   
@@ -141,37 +124,37 @@ public partial class ParentsHaveChildren
   }  
 ```  
   
- Notice the following points about this code:  
+ Об этом коде необходимо помнить следующее.  
   
--   You can add validation methods to domain classes or domain relationships. The code for these types is in **Dsl\Generated Code\Domain\*.cs**.  
+-   Можно добавлять методы проверки к классам доменов или доменным связям. Код для этих типов находится в **Dsl\Generated Code\Domain\*.cs**.  
   
--   Each validation method is applied to every instance of its class and its subclasses. In the case of a domain relationship, each instance is a link between two model elements.  
+-   Каждый метод проверки применяется к каждому экземпляру его класса и подклассов. В случае доменной связи каждый экземпляр является связью между двумя элементами модели.  
   
--   Validation methods are not applied in any specified order, and each method is not applied to the instances of its class in any predictable order.  
+-   Методы проверки применяются без соблюдения какого-либо порядка. То же самое относится и к применению каждого метода к экземплярам его класса.  
   
--   It is usually bad practice for a validation method to update the store content, because this would lead to inconsistent results. Instead, the method should report any error by calling `context.LogError`, `LogWarning` or `LogInfo`.  
+-   Не рекомендуется обновлять содержимое хранилища с помощью метода проверки, так как это может привести к недостоверным результатам. Вместо этого метод должен создать отчет об ошибке с помощью вызова `context.LogError`, `LogWarning` или `LogInfo`.  
   
--   In the LogError call, you can provide a list of model elements or relationship links that will be selected when the user double-clicks the error message.  
+-   В вызове LogError можно предоставить список элементов модели или ссылок отношений, которые будут выбраны, когда пользователь дважды щелкнет сообщение об ошибке.  
   
--   For information about how to read the model in program code, see [Navigating and Updating a Model in Program Code](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+-   Сведения о том, как чтение модели в программном коде, в разделе [Перемещение и обновление модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
- The example applies to the following domain model. The ParentsHaveChildren relationship has roles that are named Child and Parent.  
+ Пример применяется к представленной ниже модели домена. Отношение ParentsHaveChildren имеет роли, которые называются Child и Parent.  
   
- ![DSL Definition diagram &#45; family tree model](../modeling/media/familyt_person.png "FamilyT_Person")  
+ ![Схема определения DSL &#45; Модель семейного дерева](~/modeling/media/familyt_person.png "FamilyT_Person")  
   
-## <a name="validation-categories"></a>Validation Categories  
- In the <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> attribute, you specify when the validation method should be executed.  
+## <a name="validation-categories"></a>Категории проверки  
+ В <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> атрибут, указать выполнение метода проверки.  
   
-|Category|Execution|  
+|Категория|Выполнение|  
 |--------------|---------------|  
-|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|When the user invokes the Validate menu command.|  
-|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|When the model file is opened.|  
-|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|When the file is saved. If there are validation errors, the user will be given the option of canceling the save operation.|  
-|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|When the file is saved. If there are errors from methods in this category, the user is warned that it might not be possible to re-open the file.<br /><br /> Use this category for validation methods that test for duplicated names or IDs, or other conditions that might cause loading errors.|  
-|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|When the ValidateCustom method is called. Validations in this category can be invoked only from program code.<br /><br /> For more information, see [Custom Validation Categories](#custom).|  
+|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Когда пользователь вызывает команду меню "Проверка".|  
+|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Когда открывается файл модели.|  
+|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Когда сохраняется файл модели. При наличии ошибок проверки пользователю предлагается отменить или сохранить операцию.|  
+|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Когда сохраняется файл модели. При наличии ошибок из-за методов в этой категории пользователь предупреждается о том, что повторное открытие файла может быть невозможно.<br /><br /> Используйте данную категорию для методов проверки, которые проверяют дубликаты имен или идентификаторов или другие условия, способные вызвать ошибки загрузки.|  
+|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Когда вызывается метод ValidateCustom. Проверки в этой категории могут быть вызваны только из кода программы.<br /><br /> Дополнительные сведения см. в разделе [пользовательские категории проверки](#custom).|  
   
-## <a name="where-to-place-validation-methods"></a>Where to Place Validation Methods  
- You can often achieve the same effect by placing a validation method on a different type. For example, you could add a method to the Person class instead of the ParentsHaveChildren relationship, and have it iterate through the links:  
+## <a name="where-to-place-validation-methods"></a>Размещение методов проверки  
+ Зачастую того же эффекта можно достичь, разместив метод проверки в другом типе. Например, можно добавить метод к классу Person вместо отношения ParentsHaveChildren и выполнить его итерацию через связи:  
   
 ```  
 [ValidationState(ValidationState.Enabled)]  
@@ -192,13 +175,13 @@ public partial class Person
   
 ```  
   
- **Aggregating validation constraints.** To apply validation in a predictable order, define a single validation method on an owner class, such the root element of your model. This technique also lets you aggregate multiple error reports into a single message.  
+ **Агрегация ограничений проверки.** Для применения проверки в предсказуемом порядке определите единый метод проверки в классе владельца, таком как корневой элемент модели. Эта технология также позволяет объединять несколько отчетов об ошибках в одно сообщение.  
   
- Drawbacks are that the combined method is less easy to manage, and that the constraints must all have the same `ValidationCategories`. We therefore recommend that you keep each constraint in a separate method if possible.  
+ Недостатком является то, что объединенным методом сложнее управлять, а все ограничения должны иметь один и тот же `ValidationCategories`. В связи с этим рекомендуется по возможности хранить каждое ограничение в отдельном методе.  
   
- **Passing values in the context cache.** The context parameter has a dictionary into which you can place arbitrary values. The dictionary persists for the life of the validation run. A particular validation method could, for example, keep an error count in the context, and use it to avoid flooding the error window with repeated messages. For example:  
+ **Передача значений в кэш контекста.** Параметр контекста имеет словарь, в который можно поместить произвольные значения. Словарь существует в течение времени работы проверки. Определенный метод проверки может, например, хранить счетчик ошибок в контексте и использовать его во избежание переполнения окна ошибок повторяющимися сообщениями. Например:  
   
-```csharp  
+```c#  
 List<ParentsHaveChildren> erroneousLinks;  
 if (!context.TryGetCacheValue("erroneousLinks", out erroneousLinks))  
 erroneousLinks = new List<ParentsHaveChildren>();  
@@ -208,17 +191,17 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
   
 ```  
   
-## <a name="validation-of-multiplicities"></a>Validation of Multiplicities  
- Validation methods for checking minimum multiplicity are automatically generated for your DSL. The code is written to **Dsl\Generated Code\MultiplicityValidation.cs**. These methods take effect when you enable validation in the **Editor\Validation** node in DSL Explorer.  
+## <a name="validation-of-multiplicities"></a>Проверка кратностей  
+ Методы проверки минимальной кратности создаются для доменного языка автоматически. Код записывается в **Dsl\Generated Code\MultiplicityValidation.cs**. Эти методы вступают в силу при включении проверки в **Editor\Validation** узел в обозревателе DSL.  
   
- If you set the multiplicity of a role of a domain relationship to be 1..* or 1..1, but the user does not create a link of this relationship, a validation error message will appear.  
+ Если кратность роли доменного отношения равна 1..* или 1..1, но пользователь не создает ссылку на это отношение, появляется сообщение об ошибке.  
   
- For example, if your DSL has classes Person and Town, and a relationship PersonLivesInTown with a relationship **1..\*** at the Town role, then for each Person that has no Town, an error message will appear.  
+ Например, если доменный ЯЗЫК имеет классы Person и Town и отношение PersonLivesInTown с отношением **1...\*** в роли Town то для каждого пользователя, не имеющего класса Town, появится сообщение об ошибке.  
   
-## <a name="running-validation-from-program-code"></a>Running Validation from Program Code  
- You can run validation by accessing or creating a ValidationController. If you want the errors to be displayed to the user in the error window, use the ValidationController that is attached to your diagram's DocData. For example, if you are writing a menu command, `CurrentDocData.ValidationController` is available in the command set class:  
+## <a name="running-validation-from-program-code"></a>Запуск проверки из кода программы  
+ Можно запустить проверку, имея доступ к ValidationController или создав его. Если требуется, чтобы ошибки отображались для пользователя в окне ошибок, используйте ValidationController, вложенный в DocData схемы. Например, при написании команды меню `CurrentDocData.ValidationController` доступен в классе наборов команд:  
   
-```csharp  
+```c#  
 using Microsoft.VisualStudio.Modeling;  
 using Microsoft.VisualStudio.Modeling.Validation;  
 using Microsoft.VisualStudio.Modeling.Shell;  
@@ -232,11 +215,11 @@ partial class MyLanguageCommandSet
   
 ```  
   
- For more information, see [How to: Add a Command to the Shortcut Menu](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+ Дополнительные сведения см. в разделе [Практическое руководство: Добавление команды в контекстное меню](../Topic/How%20to:%20Add%20a%20Command%20to%20the%20Shortcut%20Menu.md).  
   
- You can also create a separate validation controller, and manage the errors yourself. For example:  
+ Также можно создать отдельный контроллер проверки и управлять ошибками самостоятельно. Например:  
   
-```csharp  
+```c#  
 using Microsoft.VisualStudio.Modeling;  
 using Microsoft.VisualStudio.Modeling.Validation;  
 using Microsoft.VisualStudio.Modeling.Shell;  
@@ -252,12 +235,12 @@ if (!validator.Validate(store, ValidationCategories.Save))
   
 ```  
   
-## <a name="running-validation-when-a-change-occurs"></a>Running validation when a change occurs  
- If you want to make sure that the user is warned immediately if the model becomes invalid, you can define a store event that runs validation. For more information about store events, see [Event Handlers Propagate Changes Outside the Model](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
+## <a name="running-validation-when-a-change-occurs"></a>Запуск проверки при внесении изменений  
+ Если нужно, чтобы пользователь получал уведомление сразу, как только модель станет недействительной, можно определить событие хранения, которое запускает проверку. Дополнительные сведения о событиях хранения см. в разделе [обработчики распространения изменений за пределами модели событий](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
- In addition to the validation code, add a custom code file to your **DslPackage** project, with content similar to the following example. This code uses the `ValidationController` that is attached to the document. This controller displays the validation errors in the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] error list.  
+ В дополнение к коду проверки добавьте файл пользовательского кода в вашей **DslPackage** проекта с текст, похожий на приведенный ниже. В этом коде используется `ValidationController`, который вложен в документ. Этот контроллер отображает ошибки проверки в списке ошибок [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-```csharp  
+```c#  
 using System;  
 using System.Linq;  
 using Microsoft.VisualStudio.Modeling;  
@@ -316,16 +299,16 @@ namespace Company.FamilyTree
   
 ```  
   
- The handlers are also called after Undo or Redo operations that affect the links or elements.  
+ Обработчики также вызываются после операций "Отменить" или "Повторить", влияющие на ссылки или элементы.  
   
-##  <a name="custom"></a> Custom Validation Categories  
- In addition to the standard validation categories, such as Menu and Open, you can define your own categories. You can invoke these categories from program code. The user cannot invoke them directly.  
+##  <a name="a-namecustoma-custom-validation-categories"></a><a name="custom"></a> Пользовательские категории проверки  
+ В дополнение к категориям стандартной проверки, например "Меню" и "Открыть", можно определить собственные категории. Эти категории могут вызываться из кода программы. Пользователь не может вызвать их напрямую.  
   
- A typical use for custom categories is to define a category that tests whether the model satisfies the preconditions of a particular tool.  
+ Обычно пользовательские категории используются для определения категории, которая проверяет, удовлетворяет ли модель предусловиям конкретного устройства.  
   
- To add a validation method to a particular category, prefix it with an attribute like this:  
+ Чтобы добавить метод проверки к определенному инструменту, установите для него атрибут в качестве следующего префикса:  
   
-```csharp  
+```c#  
 [ValidationMethod(CustomCategory = "PreconditionsForGeneratePartsList")]  
 [ValidationMethod(ValidationCategory.Menu)]   
 private void TestForCircularLinks(ValidationContext context)   
@@ -334,11 +317,11 @@ private void TestForCircularLinks(ValidationContext context)
 ```  
   
 > [!NOTE]
->  You can prefix a method with as many `[ValidationMethod()]` attributes as you want. You can add a method to both custom and standard categories.  
+>  Можно установить в качестве префикса метод с нужным количеством атрибутов `[ValidationMethod()]`. Можно добавить метод как в пользовательские, так и в стандартные категории.  
   
- To invoke a custom validation:  
+ Вызов пользовательской проверки:  
   
-```csharp  
+```c#  
   
 // Invoke all validation methods in a custom category:   
 validationController.ValidateCustom  
@@ -346,18 +329,18 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");  
 ```  
   
-##  <a name="alternatives"></a> Alternatives to Validation  
- Validation constraints report errors, but do not change the model. If, instead, you want to prevent the model becoming invalid, you can use other techniques.  
+##  <a name="a-namealternativesa-alternatives-to-validation"></a><a name="alternatives"></a> Альтернативные варианты проверки  
+ Ограничения проверки создают отчеты об ошибках, но не изменяют модель. Если вместо этого требуется избежать недопустимости модели, можно использовать другие технологии.  
   
- However, these techniques are not recommended. It is usually better to let the user decide how to correct an invalid model.  
+ Однако эти технологии не рекомендуются. Как правило, лучше разрешить пользователю самому решать, как исправить недопустимую модель.  
   
- **Adjust the change to restore the model to validity.** For example, if the user sets a property above the allowed maximum, you could reset the property to the maximum value. To do this, define a rule. For more information, see [Rules Propagate Changes Within the Model](../modeling/rules-propagate-changes-within-the-model.md).  
+ **Отрегулируйте изменение для восстановления модели до допустимого состояния.** Например, если пользователь задает свойства выше разрешенного максимума, можно сбросить свойство до максимального значения. Для этого определите правило. Дополнительные сведения см. в разделе [Распространение изменений в модели правил](../modeling/rules-propagate-changes-within-the-model.md).  
   
- **Roll back the transaction if an invalid change is attempted.** You could also define a rule for this purpose, but in some cases it is possible to override a property handler **OnValueChanging()**, or to override a method such as `OnDeleted().` To roll back a transaction, use `this.Store.TransactionManager.CurrentTransaction.Rollback().` For more information, see [Domain Property Value Change Handlers](../modeling/domain-property-value-change-handlers.md).  
+ **Откат транзакции при попытке недопустимого изменения.** Можно также определить правило для этой цели, но в некоторых случаях можно переопределить обработчика свойства **OnValueChanging()**, или переопределить метод, такие как `OnDeleted().` для отката транзакции, используйте `this.Store.TransactionManager.CurrentTransaction.Rollback().` Дополнительные сведения см. в разделе [обработчики изменений значений свойств доменов](../modeling/domain-property-value-change-handlers.md).  
   
 > [!WARNING]
->  Make sure that the user knows that the change has been adjusted or rolled back. For example, use `System.Windows.Forms.MessageBox.Show("message").`  
+>  Обеспечьте уведомление пользователя о том, что изменения были отрегулированы и произведен откат. Например использование `System.Windows.Forms.MessageBox.Show("message").`  
   
-## <a name="see-also"></a>See Also  
- [Navigating and Updating a Model in Program Code](../modeling/navigating-and-updating-a-model-in-program-code.md)   
- [Event Handlers Propagate Changes Outside the Model](../modeling/event-handlers-propagate-changes-outside-the-model.md)
+## <a name="see-also"></a>См. также  
+ [Перемещение и обновление модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md)   
+ [Обработчики событий распространяют изменения за пределы модели](../modeling/event-handlers-propagate-changes-outside-the-model.md)

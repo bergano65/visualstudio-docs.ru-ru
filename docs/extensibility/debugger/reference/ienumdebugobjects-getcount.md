@@ -1,68 +1,51 @@
 ---
-title: IEnumDebugObjects::GetCount | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IEnumDebugObjects::GetCount
-helpviewer_keywords:
-- IEnumDebugObjects::GetCount method
+title: "IEnumDebugObjects::GetCount | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IEnumDebugObjects::GetCount"
+helpviewer_keywords: 
+  - "Метод IEnumDebugObjects::GetCount"
 ms.assetid: 9cbc5db4-03ae-479f-a664-13cad66ad210
 caps.latest.revision: 5
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 8dcdce2a48f5146f306513975a6a8accc7686b0d
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 5
 ---
-# <a name="ienumdebugobjectsgetcount"></a>IEnumDebugObjects::GetCount
-This method returns the number of elements in the enumeration.  
+# IEnumDebugObjects::GetCount
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Этот метод получает число элементов в перечислении.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
+```cpp#  
 HRESULT GetCount(  
-   [out] ULONG* pcelt  
+   [out] ULONG* pcelt  
 );  
 ```  
   
-```csharp  
+```c#  
 int GetCount(  
-   out uint pcelt  
+   out uint pcelt  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  `pcelt`  
- [out] Returns the number of elements in the enumeration.  
+ \[out\] возвращает число элементов в перечислении.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- This method is not part of the customary COM enumeration interface which specifies that only Next, Clone, Skip, and Reset need to be implemented.  
+## Заметки  
+ Этот метод не является частью привычного интерфейса перечисления модели COM, который указывает на то, что только необходимость далее, чтобы пропустить clone, и возврата ссылкой его.  
   
-## <a name="see-also"></a>See Also  
+## См. также  
  [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)

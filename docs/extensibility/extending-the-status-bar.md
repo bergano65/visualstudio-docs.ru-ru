@@ -1,60 +1,43 @@
 ---
-title: Extending the Status Bar | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- status bars, about status bars
-- status bars, overview
+title: "Расширение строки состояния | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "строки состояния, сведения о строках состояния"
+  - "строки состояния, общие сведения"
 ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
 caps.latest.revision: 23
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 350703e1b6de2c43ecabd1d86d719aa6bf62cb11
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 23
 ---
-# <a name="extending-the-status-bar"></a>Extending the Status Bar
-You can use the Visual Studio status bar at the bottom of the IDE to display information.  
+# Расширение строки состояния
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Строка состояния Visual Studio в нижней части интегрированной среды разработки можно использовать для отображения информации.  
   
- When you extend the status bar, you can display information and UI in four regions: the feedback region, the progress bar, the animation region, and the designer region. The feedback region allows you to display text and highlight the displayed text. The progress bar shows incremental progress for short-running operations such as saving a file. The animation region displays a continuously-looped animation for long-running operations or operation of undetermined length, such as building multiple projects in a solution. And the designer region shows the line and column number of the cursor location.  
+ При расширении строка состояния может отображать сведения и пользовательского интерфейса в четыре области: область отзывов, индикатор, область анимации и область конструктора. Региона обратной связи позволяет отображать текст и выделите текст. Индикатор показывает хода для краткосрочных операции, такие как сохранение файла. Область анимации отображает постоянно зациклен анимации, длительные операции или операции неопределенные длины, такие как построение нескольких проектов в решении. И область конструктора номер строки и столбца до текущего положения курсора.  
   
- You can get the status bar by using the <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> interface (from the <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> service). In addition, any object sited on a window frame can register as a status bar client object by implementing the <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> interface. Whenever a window is activated, Visual Studio queries the object sited on that window for the `IVsStatusbarUser` interface. If found, it calls the <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> method on the returned interface and the object can update the status bar from within that method. Document windows, for example, can use the <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> method to update information in the designer region when they become active.  
+ В строке состояния можно получить с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> интерфейса \(из <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> службы\). Кроме того, любой объект, размещенные на фрейм окна можно зарегистрировать как строка клиентский объект состояния, реализовав <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> интерфейса. При активации окна Visual Studio запрашивает у объекта, находящегося в этом окне для `IVsStatusbarUser` интерфейса. Если найден, он вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> метод на возвращенный интерфейс и объект можно обновить в строке состояния в этом методе. Документирование windows, например, можно использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> метод для обновления сведений в области конструктора, когда они становятся активными.  
   
- The following procedures assume that you understand how to create a VSIX project and add a custom menu command. For information, see [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md).  
+ В следующих процедурах предполагается, что вы знаете, как создавать проект VSIX и добавлять команды пользовательского меню. Сведения см. в разделе [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).\)  
   
-## <a name="modifying-the-status-bar"></a>Modifying the Status Bar  
- This procedure shows you how to set and get text, display static text, and highlight the displayed text in the feedback region of the status bar.  
+## Изменение строки состояния  
+ Эта процедура показано, как задать и получить текст, отображения статического текста и выделите текст отображается в области отзывы в строке состояния.  
   
-#### <a name="reading-and-writing-to-the-status-bar"></a>Reading and writing to the status bar  
+#### Чтение и запись в строке состояния  
   
-1.  Create a VSIX project named **TestStatusBarExtension** and add a menu command named **TestStatusBarCommand**.  
+1.  Создайте проект VSIX с именем **TestStatusBarExtension** и добавить команду меню с именем **TestStatusBarCommand**.  
   
-2.  In TestStatusBarCommand.cs, replace the command handler method code (MenuItemCallback) with the following:  
+2.  В TestStatusBarCommand.cs замените код метода обработчика команды \(MenuItemCallback\) следующие:  
   
-    ```csharp  
+    ```c#  
     private void MenuItemCallback(object sender, EventArgs e)  
     {  
         IVsStatusbar statusBar = (IVsStatusbar)ServiceProvider.GetService(typeof(SVsStatusbar));  
@@ -86,19 +69,19 @@ You can use the Visual Studio status bar at the bottom of the IDE to display inf
     }  
     ```  
   
-3.  Compile the code and start debugging.  
+3.  Скомпилируйте код и запустить отладку.  
   
-4.  Open the **Tools** menu in the experimental instance of Visual Studio. Click the **Invoke TestStatusBarCommand** button.  
+4.  Откройте **средства** меню в экспериментальном экземпляре Visual Studio. Щелкните **вызова TestStatusBarCommand** кнопки.  
   
-     You should see that the text in the status bar now reads **"We just wrote to the status bar."** and the message box that appears has the same text.  
+     Вы должны увидеть текст в строке теперь чтения состояния **«Мы только что записал панели состояния»** и в появившемся сообщении имеет тот же текст.  
   
-#### <a name="updating-the-progress-bar"></a>Updating the progress bar  
+#### Обновление индикатора хода выполнения  
   
-1.  In this procedure we will show how to initialize and update the progress bar.  
+1.  В этой процедуре будет показано, как инициализировать и обновлять индикатор хода выполнения.  
   
-2.  Open the TestStatusBarCommand.cs file and replace the MenuItemCallback method with the following code:  
+2.  Откройте файл TestStatusBarCommand.cs и замените метод MenuItemCallback следующим кодом:  
   
-    ```csharp  
+    ```c#  
     private void MenuItemCallback(object sender, EventArgs e)  
     {  
         IVsStatusbar statusBar = (IVsStatusbar)ServiceProvider.GetService(typeof(SVsStatusbar));  
@@ -120,23 +103,23 @@ You can use the Visual Studio status bar at the bottom of the IDE to display inf
     }  
     ```  
   
-3.  Compile the code and start debugging.  
+3.  Скомпилируйте код и запустить отладку.  
   
-4.  Open the **Tools** menu in the experimental instance of Visual Studio. Click **Invoke TestStatusBarCommand** button.  
+4.  Откройте **средства** меню в экспериментальном экземпляре Visual Studio. Щелкните **вызова TestStatusBarCommand** кнопки.  
   
-     You should see that the text in the status bar now reads **"Writing to the progress bar."** You should also see the progress bar get updated every second for 20 seconds. After that the status bar and the progress bar are cleared.  
+     Вы должны увидеть текст в строке теперь чтения состояния **«Записи индикатора выполнения.»** Вы также увидите индикатор обновляется каждую секунду в течение 20 секунд. После этого строка состояния индикатора очищаются.  
   
-#### <a name="displaying-an-animation"></a>Displaying an animation  
+#### Отображение анимации  
   
-1.  The status bar displays a looping animation that indicates either a long-running operation (for example, building multiple projects in a solution). If you do not see this animation, make sure you have the correct **Tools / Options** settings:  
+1.  В строке состояния отображается цикла анимации, которая указывает либо длительной операции \(например, построение нескольких проектов в решении\). Если эта анимация не отображается, убедитесь, что указан правильный **инструменты и параметры** параметры:  
   
-     Go to the **Tools/Options / General** tab and uncheck **Automatically adjust visual experience based on client performance**. Then check the sub-option **Enable rich client visual experience**. You should now be able to see the animation when you build the project in your experimental instance of Visual Studio.  
+     Последовательно выберите пункты **Сервис\/Параметры \/ Общие** вкладку и снимите флажок **автоматически регулировать изображение в соответствии с производительностью клиента**. Затем установите флажок вложенных **Включить расширенное визуальное представление клиента**. Теперь вы сможете просмотреть анимацию при построении проекта в экспериментальном экземпляре Visual Studio.  
   
-     In this procedure we display the standard Visual Studio animation which represents building a project or solution.  
+     В этой процедуре мы отображения стандартных анимации Visual Studio, который представляет создание проекта или решения.  
   
-2.  Open the TestStatusBarCommand.cs file and replace the MenuItemCallback method with the following code:  
+2.  Откройте файл TestStatusBarCommand.cs и замените метод MenuItemCallback следующим кодом:  
   
-    ```csharp  
+    ```c#  
     private void MenuItemCallback(object sender, EventArgs e)  
     {  
         IVsStatusbar statusBar =(IVsStatusbar)ServiceProvider.GetService(typeof(SVsStatusbar));  
@@ -155,8 +138,8 @@ You can use the Visual Studio status bar at the bottom of the IDE to display inf
     }  
     ```  
   
-3.  Compile the code and start debugging.  
+3.  Скомпилируйте код и запустить отладку.  
   
-4.  Open the **Tools** menu in the experimental instance of Visual Studio and click **Invoke TestStatusBarCommand**.  
+4.  Откройте **средства** в экспериментальном экземпляре Visual Studio и щелкните меню **вызова TestStatusBarCommand**.  
   
-     When you see the message box, you should also see the animation in the status bar on the far right. When you dismiss the message box, the animation disappears.
+     Когда появится окно сообщения, вы увидите также анимации в строке состояния в правом углу. Если закрыть окно сообщения, исчезает анимации.

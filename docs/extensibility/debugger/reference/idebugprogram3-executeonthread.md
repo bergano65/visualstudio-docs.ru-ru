@@ -1,74 +1,57 @@
 ---
-title: IDebugProgram3::ExecuteOnThread | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- IDebugProgram3::ExecuteOnThread
+title: "IDebugProgram3::ExecuteOnThread | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "IDebugProgram3::ExecuteOnThread"
 ms.assetid: 2f5211e3-7a3f-47bf-9595-dfc8b4895d0d
 caps.latest.revision: 6
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 0df298d6291db40b9a333b9b8711a73620b44987
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 6
 ---
-# <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
-Executes the debugger program. The thread is returned to give the debugger information on which thread the user is viewing when executing the program.  
+# IDebugProgram3::ExecuteOnThread
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Выполняет программу отладчика.  Поток возвращается для предоставления сведений отладчика, на которых поток пользователь просматривает выполнение программы.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
+```cpp#  
 HRESULT ExecuteOnThread(  
-   [in] IDebugThread2* pThread)  
+   [in] IDebugThread2* pThread)  
 ```  
   
-```csharp  
+```c#  
 int ExecuteOnThread(  
-   IDebugThread2 pThread  
+   IDebugThread2 pThread  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  `pThread`  
- [in] An [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) object.  
+ \[in\] IDebugThread2 объект.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- There are three different ways that a debugger can resume execution after stopping:  
+## Заметки  
+ 3 Различными способами, что отладчик может возобновить выполнение после остановки.  
   
--   Execute: Cancel any previous step, and run until the next breakpoint and so on.  
+-   Выполните: Не смогут отменять любой предыдущий шаг, и запускается до следующей точки останова и т д  
   
--   Step: Cancel any old step, and run until the new step completes.  
+-   Шаг: Отмена любой старый шаг и запуск нового шага до завершения.  
   
--   Continue: Run again, and leave any old step active.  
+-   Продолжайте: Запустите снова и оставить старый активный любого этапа.  
   
- The thread passed to `ExecuteOnThread` is useful when deciding which step to cancel. If you do not know the thread, running execute cancels all steps. With knowledge of the thread, you only need to cancel the step on the active thread.  
+ Поток, передаваемый `ExecuteOnThread` удобно использовать при решении того, авторизирован, шаг, который требуется отменить.  Если неизвестно, то при выполнении потока выполнения отменяет все шаги.  С набором знаний потока, нужно только отмены шага на активном потоке.  
   
-## <a name="see-also"></a>See Also  
- [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)   
+## См. также  
+ [Выполнение](../../../extensibility/debugger/reference/idebugprogram2-execute.md)   
  [IDebugProgram3](../../../extensibility/debugger/reference/idebugprogram3.md)

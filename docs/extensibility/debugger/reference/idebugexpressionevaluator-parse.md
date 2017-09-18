@@ -1,95 +1,78 @@
 ---
-title: IDebugExpressionEvaluator::Parse | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugExpressionEvaluator::Parse
-helpviewer_keywords:
-- IDebugExpressionEvaluator::Parse method
+title: "IDebugExpressionEvaluator::Parse | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugExpressionEvaluator::Parse"
+helpviewer_keywords: 
+  - "Метод IDebugExpressionEvaluator::Parse"
 ms.assetid: e6e31b3a-63a7-4293-bcda-267eb78dffb6
 caps.latest.revision: 12
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 3fc2616f840a79bbda012f943f40c4744a39bf35
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 12
 ---
-# <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
-This method converts an expression string to a parsed expression.  
+# IDebugExpressionEvaluator::Parse
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Этот метод преобразует строку выражения в анализированному выражению.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
-HRESULT Parse(   
-   LPCOLESTR                upstrExpression,  
-   PARSEFLAGS               dwFlags,  
-   UINT                     nRadix,  
-   BSTR*                    pbstrError,  
-   UINT*                    pichError,  
-   IDebugParsedExpression** ppParsedExpression  
+```cpp#  
+HRESULT Parse(   
+   LPCOLESTR                upstrExpression,  
+   PARSEFLAGS               dwFlags,  
+   UINT                     nRadix,  
+   BSTR*                    pbstrError,  
+   UINT*                    pichError,  
+   IDebugParsedExpression** ppParsedExpression  
 );  
 ```  
   
-```csharp  
+```c#  
 int Parse(  
-   string                     upstrExpression,   
-   enum_PARSEFLAGS            dwFlags,   
-   uint                       nRadix,   
-   out string                 pbstrError,   
-   out uint                   pichError,   
-   out IDebugParsedExpression ppParsedExpression  
+   string                     upstrExpression,   
+   enum_PARSEFLAGS            dwFlags,   
+   uint                       nRadix,   
+   out string                 pbstrError,   
+   out uint                   pichError,   
+   out IDebugParsedExpression ppParsedExpression  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  `upstrExpression`  
- [in] The expression string to be parsed.  
+ \[in\] строка выражения, которое необходимо проанализировать.  
   
  `dwFlags`  
- [in] A collection of [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) constants that determine how the expression is to be parsed.  
+ \[in\] коллекция [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) константы, определяющие, как выражение анализируется.  
   
  `nRadix`  
- [in] Radix to be used to interpret any numerical information.  
+ \[in\] корневой каталог, используемый для интерпретации любое числовое сведения.  
   
  `pbstrError`  
- [out] Returns the  error as human-readable text.  
+ \[out\] возвращает ошибку в виде удобочитаемого текста.  
   
  `pichError`  
- [out] Returns the character position of the start of the error in the expression string.  
+ \[out\] возвращает позицию знака начала ошибки в строке выражения.  
   
  `ppParsedExpression`  
- [out] Returns the parsed expression in an [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) object.  
+ \[out\] возвращает прошедшее синтаксический анализ выражения в [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) объект.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- This method produces a parsed expression, not an actual value. A parsed expression is ready to be evaluated, that is, converted to a value.  
+## Заметки  
+ Этот метод создает проанализированное выражение, не фактическое значение.  Проанализированное выражение готово должен вычисляться, т е преобразовать в значение.  
   
-## <a name="see-also"></a>See Also  
+## См. также  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)   
  [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)   
  [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)

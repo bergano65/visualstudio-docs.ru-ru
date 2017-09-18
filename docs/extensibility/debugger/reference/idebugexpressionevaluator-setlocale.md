@@ -1,68 +1,51 @@
 ---
-title: IDebugExpressionEvaluator::SetLocale | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugExpressionEvaluator::SetLocale
-helpviewer_keywords:
-- IDebugExpressionEvaluator::SetLocale method
+title: "IDebugExpressionEvaluator::SetLocale | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugExpressionEvaluator::SetLocale"
+helpviewer_keywords: 
+  - "Метод IDebugExpressionEvaluator::SetLocale"
 ms.assetid: d3d2027d-74e2-4ae6-bcc7-59d12f873b7c
 caps.latest.revision: 11
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 24df28acbaed1b946983aa32d75f4692e0177f21
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 11
 ---
-# <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
-This method sets the language to use to create printable results.  
+# IDebugExpressionEvaluator::SetLocale
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Этот метод устанавливает язык для использования создания печатных результаты.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
-HRESULT SetLocale(   
-   WORD wLangID  
+```cpp#  
+HRESULT SetLocale(   
+   WORD wLangID  
 );  
 ```  
   
-```csharp  
+```c#  
 int SetLocale(  
-   ushort wLangID  
+   ushort wLangID  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  `wLangID`  
- [in] The language identifier.  
+ \[in\] идентификатор языка.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- This method may be called many times while the expression evaluator (EE) is loaded, so the EE must be able to switch languages on the fly. The EE uses this locale to return error messages and strings in the appropriate language.  
+## Заметки  
+ Этот метод может быть вызван несколько раз, пока средство оценки выражений \(EE\) загружается, поэтому EE должен иметь возможность переключаться языки во время работы.  EE использует этот языковой стандарт для возвращения сообщений об ошибках и строк в соответствующем языке.  
   
-## <a name="see-also"></a>See Also  
+## См. также  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

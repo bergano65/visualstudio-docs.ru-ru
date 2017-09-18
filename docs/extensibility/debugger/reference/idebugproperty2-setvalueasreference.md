@@ -1,88 +1,71 @@
 ---
-title: IDebugProperty2::SetValueAsReference | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugProperty2::SetValueAsReference
-helpviewer_keywords:
-- IDebugProperty2::SetValueAsReference method
+title: "IDebugProperty2::SetValueAsReference | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugProperty2::SetValueAsReference"
+helpviewer_keywords: 
+  - "Метод IDebugProperty2::SetValueAsReference"
 ms.assetid: 341b1b89-4ab8-4e1c-abe2-fb955df5c6b0
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 58cc520d773d65cc3eba0588c2b8763079019018
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
-Sets the value of this property to the value of the given reference.  
+# IDebugProperty2::SetValueAsReference
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Устанавливает значение данного свойства в значение заданной ссылки.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
+```cpp#  
 HRESULT SetValueAsReference(  
-   IDebugReference2** rgpArgs,  
-   DWORD              dwArgCount,  
-   IDebugReference2*  pValue,  
-   DWORD              dwTimeout  
+   IDebugReference2** rgpArgs,  
+   DWORD              dwArgCount,  
+   IDebugReference2*  pValue,  
+   DWORD              dwTimeout  
 );  
 ```  
   
-```csharp  
+```c#  
 int SetValueAsReference(  
-   IDebugReference2[] rgpArgs,  
-   uint               dwArgCount,  
-   IDebugReference2   pValue,  
-   uint               dwTimeout  
+   IDebugReference2[] rgpArgs,  
+   uint               dwArgCount,  
+   IDebugReference2   pValue,  
+   uint               dwTimeout  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  `rgpArgs`  
- [in] An array of arguments to pass to the managed code property setter. If the property setter does not take arguments or if this [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) object does not refer to such a property setter, `rgpArgs` should be a null value. This parameter is typically a null value.  
+ \[in\] массив аргументов, передаваемых в сеттеру свойства управляемого кода.  Если задает значение свойства или если это не принимает аргументы [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) объект не ссылается на тот сеттеру свойства  `rgpArgs` должен иметь значение NULL.  Этот параметр обычно значение NULL.  
   
  `dwArgCount`  
- [in] The number of arguments in the `rgpArgs` array.  
+ \[in\] количество аргументов в `rgpArgs` массив.  
   
  `pValue`  
- [in] A reference, in the form of an [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) object, to the value to use to set this property.  
+ \[in\] ссылка в форме [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) объект, к значению для использования задать это свойство.  
   
  `dwTimeout`  
- [in] How long to take to set the value, in milliseconds. A typical value is `INFINITE`. This affects the length of time that any possible evaluation can take.  
+ \[in\] количество времени, выполняемое для задания значения в миллисекундах.  Типичное значение `INFINITE`.  Это влияет на продолжительность времени, любую допустимую вычисление может выполняться.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise returns an error code, typically one of the following:  
+## Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки, обычно одно из следующих действий:  
   
-|Error|Description|  
-|-----------|-----------------|  
-|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|Setting the value from a reference is not supported.|  
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|The value cannot be set, as this property refers to a method.|  
-|`E_SETVALUE_VALUE_IS_READONLY`|The value is read-only and cannot be set.|  
-|`E_NOTIMPL`|The method is not implemented.|  
+|Ошибка|Описание|  
+|------------|--------------|  
+|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|Устанавливать значение из ссылки не поддерживается.|  
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Значение не может быть задано как это свойство относится к методу.|  
+|`E_SETVALUE_VALUE_IS_READONLY`|Значение только для чтения и не может быть задано.|  
+|`E_NOTIMPL`|Метод не реализован.|  
   
-## <a name="see-also"></a>See Also  
+## См. также  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

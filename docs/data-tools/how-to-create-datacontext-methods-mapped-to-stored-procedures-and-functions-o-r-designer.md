@@ -1,75 +1,56 @@
 ---
-title: 'How to: Create DataContext methods mapped to stored procedures and functions (O-R Designer) | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+title: "Как создать методы DataContext, сопоставленные с хранимыми процедурами и функциями (реляционный конструктор объектов) | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/15/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
 ms.assetid: e7ca32f1-50b3-48af-ad92-ceafd749296a
 caps.latest.revision: 2
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 8b6b989c26a7d773803f62db1042ad9bf68ce946
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/07/2017
-
+caps.handback.revision: 2
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
 ---
-# <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>How to: Create DataContext methods mapped to stored procedures and functions (O/R Designer)
-Stored procedures and functions can be added to the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] as <xref:System.Data.Linq.DataContext> methods. Calling the method and passing in the required parameters runs the stored procedure or function on the database and returns the data in the return type of the <xref:System.Data.Linq.DataContext> method. For detailed information about <xref:System.Data.Linq.DataContext> methods, see [DataContext Methods (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).  
+# Как создать методы DataContext, сопоставленные с хранимыми процедурами и функциями (реляционный конструктор объектов)
+Сохраненные процедуры и функции можно добавить в конструктор [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] как методы <xref:System.Data.Linq.DataContext>.Вызов метода и передача в обязательные параметры запускает сохраненную процедуру или функцию на базе данных и возвращает данные в тип возврата метода <xref:System.Data.Linq.DataContext>.Дополнительные сведения о методах <xref:System.Data.Linq.DataContext> см. в [Методы DataContext \(реляционный конструктор объектов\)](../data-tools/datacontext-methods-o-r-designer.md).  
   
 > [!NOTE]
->  Stored procedures can also be used to override the default [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] runtime behavior that performs Inserts, Updates, and Deletes when changes are saved from entity classes to a database. For more information, see [How to: Assign stored procedures to perform updates, inserts, and deletes (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).  
+>  Хранимые процедуры также используются для переопределения действий, которые [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] выполняет для операций вставки, обновления и удаления при сохранении изменений из классов сущностей в базе данных.Дополнительные сведения см. в разделе [Как назначить хранимые процедуры для выполнения обновлений, вставок и удалений \(реляционный конструктор объектов\)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).  
   
-## <a name="creating-datacontext-methods"></a>Creating DataContext Methods  
- You can create <xref:System.Data.Linq.DataContext> methods by dragging stored procedures or functions from **Server Explorer/Database Explorer** onto the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
-  
-> [!NOTE]
->  The return type of the generated <xref:System.Data.Linq.DataContext> method differs depending on where you drop the stored procedure or function on the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. Dropping items directly onto an existing entity class creates a <xref:System.Data.Linq.DataContext> method with the return type of the entity class. Dropping items onto an empty area of the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] creates a <xref:System.Data.Linq.DataContext> method that returns an automatically generated type. You can change the return type of a <xref:System.Data.Linq.DataContext> method after adding it to the methods pane. To inspect or change the return type of a <xref:System.Data.Linq.DataContext> method, select it and inspect the **Return Type** property in the **Properties** window. For more information, see [How to: Change the return type of a DataContext method (O/R Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).  
-  
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
-  
-#### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>To create DataContext methods that return automatically generated types  
-  
-1.  In **Server Explorer**/**Database Explorer**, expand the **Stored Procedures** node of the database you are working with.  
-  
-2.  Locate the desired stored procedure and drag it onto an empty area of the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
-  
-     The <xref:System.Data.Linq.DataContext> method is created with an automatically generated return type and appears in the **Methods** pane.  
-  
-#### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>To create DataContext methods that have the return type of an entity class  
-  
-1.  In **Server Explorer**/**Database Explorer**, expand the **Stored Procedures** node of the database you are working with.  
-  
-2.  Locate the desired stored procedure and drag it onto an existing entity class in the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
-  
-     The <xref:System.Data.Linq.DataContext> method is created with the return type of the selected entity class and appears in the **Methods** pane.  
+## Создание методов DataContext  
+ Можно создать методы <xref:System.Data.Linq.DataContext> путем перетаскивания сохраненных процедур или функций из **Обозревателя серверов\/Обозревателя базы данных** область конструктора [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
   
 > [!NOTE]
->  For information about changing the return type of existing <xref:System.Data.Linq.DataContext> methods, see [How to: Change the return type of a DataContext method (O/R Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).  
+>  Возвращаемый тип сформированного метода <xref:System.Data.Linq.DataContext> будет зависеть от места, в котором завершается перетаскивание хранимой процедуры или функции в [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].Если сбрасываете элемент прямо на существующий класс сущностей, то создается метод <xref:System.Data.Linq.DataContext>, который имеет тип возврата класса сущностей.Если вы сбрасываете элементы на пустую область конструктора [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], то создается метод <xref:System.Data.Linq.DataContext>, который возвращает автоматически сгенерированный тип.Можно изменить тип возврата метода <xref:System.Data.Linq.DataContext> после его добавления в область методов.Чтобы просмотреть или изменить тип возвращаемого значения метода <xref:System.Data.Linq.DataContext>, выберите его и проверьте свойство **Тип возвращаемых данных** в окне **Свойства**.Дополнительные сведения см. в разделе [Как изменить тип возвращаемого значения метода DataContext \(реляционный конструктор объектов\)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).  
   
-## <a name="see-also"></a>See Also  
- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [DataContext Methods (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
- [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
- [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
- [How to: Write LINQ Queries in C#](http://msdn.microsoft.com/Library/45e47fcc-cfa1-4b72-b161-d038ae87bd23)
+ [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+  
+#### Для создания методов DataContext, которые возвращают автоматически сгенерированные типы  
+  
+1.  В **Обозревателе серверов**\/**Обозревателе базы данных** разверните узел **Сохраненные процедуры** базы данных, с которой вы работаете.  
+  
+2.  Найдите нужную сохраненную процедуру и перетащите ее на пустую область конструктора [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
+  
+     Метод <xref:System.Data.Linq.DataContext> создается с автоматически сгенерированным типом возврата и появляется в области **Методы**.  
+  
+#### Чтобы создать методы DataContext, которые имеют тип возврата класса сущностей  
+  
+1.  В **Обозревателе серверов**\/**Обозревателе базы данных** разверните узел **Сохраненные процедуры** базы данных, с которой вы работаете.  
+  
+2.  Найдите нужную сохраненную процедуру и перетащите ее на существующий класс сущностей в конструкторе [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
+  
+     Метод <xref:System.Data.Linq.DataContext> создается с типом возврата выбранного класса сущностей и появляется в области **Методы**.  
+  
+> [!NOTE]
+>  Дополнительные сведения об изменении возвращаемых типов существующих методов <xref:System.Data.Linq.DataContext> см. в разделе [Как изменить тип возвращаемого значения метода DataContext \(реляционный конструктор объектов\)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).  
+  
+## См. также  
+ [Реляционный конструктор объектов](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
+ [Методы DataContext \(реляционный конструктор объектов\)](../data-tools/datacontext-methods-o-r-designer.md)   
+ [Пошаговое руководство. Создание классов LINQ to SQL \(реляционный конструктор объектов\)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)   
+ [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)   
+ [Знакомство с LINQ в Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [Практическое руководство. Создание запросов LINQ на языке C\#](../Topic/How%20to:%20Write%20LINQ%20Queries%20in%20C%23.md)

@@ -1,92 +1,75 @@
 ---
-title: IDebugFunctionObject2::CreateObject | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- IDebugFunctionObject2::CreateObject
-- CreateObject
+title: "IDebugFunctionObject2::CreateObject | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "IDebugFunctionObject2::CreateObject"
+  - "CreateObject"
 ms.assetid: 148de615-941e-4b64-ab11-75b692aae465
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 172505cacab24c6212e875f678b5ace283567382
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
-Creates an object that uses a constructor given evaluation flag settings and a timeout value.  
+# IDebugFunctionObject2::CreateObject
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Создает объект, который использует конструктор заданным параметры вычислений и пометить значение времени ожидания.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
+```cpp#  
 HRESULT CreateObject (  
-   IDebugFunctionObject* pConstructor,  
-   DWORD                 dwArgs,  
-   IDebugObject*         pArgs[],  
-   DWORD                 dwEvalFlags,  
-   DWORD                 dwTimeout,  
-   IDebugObject**        ppObject  
+   IDebugFunctionObject* pConstructor,  
+   DWORD                 dwArgs,  
+   IDebugObject*         pArgs[],  
+   DWORD                 dwEvalFlags,  
+   DWORD                 dwTimeout,  
+   IDebugObject**        ppObject  
 );  
 ```  
   
-```csharp  
+```c#  
 int CreateObject (  
-   IDebugFunctionObject pConstructor,  
-   uint                 dwArgs,  
-   IDebugObject[]       pArgs,  
-   uint                 dwEvalFlags,  
-   uint                 dwTimeout,  
-   out IDebugObject**   ppObject  
+   IDebugFunctionObject pConstructor,  
+   uint                 dwArgs,  
+   IDebugObject[]       pArgs,  
+   uint                 dwEvalFlags,  
+   uint                 dwTimeout,  
+   out IDebugObject**   ppObject  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  `pConstructor`  
- [in] An [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) object that represents the constructor of the object to be created.  
+ \[in\] IDebugFunctionObject объект, представляющий конструктор объекта, который необходимо создать.  
   
  `dwArgs`  
- [in] The number of parameters in the `pArg` array. Represents the number of parameters passed to the constructor.  
+ \[in\] количество параметров `pArg` массив.  Представляет количество параметров, передаваемых в конструктор.  
   
  `pArgs`  
- [in] An array of [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objects that represents the parameters passed to the constructor.  
+ \[in\] массив IDebugObject объекты, которое представляет параметры, передаваемые конструктору.  
   
  `dwEvalFlags`  
- [in] A combination of flags from the [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumeration that specify how the evaluation is to be performed.  
+ \[in\] сочетание пометит из [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) перечисление, указывающее как вычисление, которое нужно выполнить.  
   
  `dwTimeout`  
- [in] Maximum time, in milliseconds, to wait before returning from this method. Use **INFINITE** to wait indefinitely.  
+ \[in\] максимальное время, в миллисекундах, ожидания возврата из этого метода.  Используйте **Бесконечно** ждать бесконечно.  
   
  `ppObject`  
- [out] Returns an **IDebugObject** representing the newly created object.  
+ \[out\] возвращает IDebugObject представления вновь созданный объект.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- Call this method to create an object that represents an instance of a class, or other complex type that requires a constructor, that is a parameter.  
+## Заметки  
+ Вызовите этот метод, чтобы создать объект, представляющий экземпляр класса или другой сложный тип, который требуется конструктор, параметр.  
   
-## <a name="see-also"></a>See Also  
+## См. также  
  [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

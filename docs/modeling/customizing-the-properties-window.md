@@ -1,143 +1,135 @@
 ---
-title: Customizing the Properties Window | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- Domain-Specific Language, Properties window
+title: "Настройка окна свойств | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "Доменный язык, окно свойств"
 ms.assetid: b6658de5-4e85-4628-93b2-5cc12f63d25b
 caps.latest.revision: 20
-author: alancameronwills
-ms.author: awills
-manager: douge
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 82a3e26ffcc0bfaa25efcdc5b57976733fe2af05
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+author: "alancameronwills"
+ms.author: "awills"
+manager: "douge"
+caps.handback.revision: 20
 ---
-# <a name="customizing-the-properties-window"></a>Customizing the Properties Window
-You can customize the appearance and behavior of the properties window in your domain-specific language (DSL) in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In your DSL Definition, you define domain properties on each domain class. By default, when you select an instance of the class, either on a diagram or in Model Explorer, every domain property is listed in the properties window. This lets you see and edit the values of domain properties, even if you have not mapped them to shape fields on the diagram.  
+# Настройка окна свойств
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Можно настраивать внешний вид и функциональности окна свойства в доменном языке DSL, in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  В определении DSL, можно задать свойства домена для каждого доменном классе.  По умолчанию при выборе экземпляр класса или на схеме или в обозревателе модели домена, каждое свойство отображается в окне свойств.  Это позволяет просматривать и редактировать значения свойств домена, даже если они не сопоставления для формирования поля на схеме.  
   
-## <a name="names-descriptions-and-categories"></a>Names, Descriptions, and Categories  
- **Name and Display Name**. In your definition of a domain property, the Display Name of the property is the name that appears at runtime in the properties window. By contrast, the Name is used when you write program code to update the property. The Name must be a correct CLR alphanumeric name, but the Display Name can contain spaces.  
+## Имена, описания и категории  
+ **имя и отображаемое имя**.  В определении свойства домена отображаемое имя свойства имя, которое отображается во время выполнения в окне свойства.  Напротив, имя используется при написании программного кода, чтобы обновить свойство.  Имя должно быть именем правильного среды CLR цифробуквенным, но отображаемое имя может содержать пробелы.  
   
- When you set the Name of a property in the DSL Definition, its Display Name is automatically set to a copy of the Name. If you write a Pascal cased name such as "FuelGauge", the Display Name will automatically contain a space: "Fuel Gauge". However, you can set the Display Name explicitly to another value.  
+ При задании имени свойства в определении DSL, отображаемым именем автоматически устанавливается на копию имени.  При написании имя покрыванное Паскалем как "FuelGauge", то отображаемое имя автоматически будет содержать пространство: Горючего уровня "датчик".  Однако можно задать отображаемое имя явно к другому значению.  
   
- **Description**. The Description of a domain property appears in two places:  
+ **Описание**.  Описание свойства домена отображается в 2 размещения:  
   
--   In the bottom of the properties window when the user selects the property. You can use it to explain to the user what the property represents.  
+-   В нижней части окна свойства, когда пользователь выбирает свойство.  Можно использовать его для объяснения пользователю, что свойство представляет.  
   
--   In the generated program code. If you use the documentation facilities to extract API documentation, it will appear as the description of this property in the API.  
+-   В созданном коде программы.  При использовании средства документации для извлечения в документации по API, то оно появится в виде описание этого свойства в API.  
   
- **Category**. A category is a heading in the Properties window.  
+ **Категория** Категория заголовок в окне свойства.  
   
-## <a name="exposing-style-features"></a>Exposing Style Features  
- Some of the dynamic features of graphical elements can be represented or *exposed* as domain properties. A feature that has been exposed in this manner can be updated by the user and can more easily be updated by program code.  
+## Предоставление доступа к функции стиля  
+ Некоторые динамических функций могут быть представлены или графических элементов *предоставляется* как свойства домена.  Функция, которая была обеспечена таким образом может быть обновлена пользователем и более легко может быть обновлена идентификатором программы.  
   
- Right-click a shape class in DSL Definition, point to **Add Exposed**, and then choose a feature.  
+ Щелкните правой кнопкой мыши класс формы, укажите в определении DSL **Добавьте предоставляется**, а затем выберите функцию.  
   
- On shapes you can expose the **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** and **FillGradientMode** properties. On connectors you can expose the **Color**`,`**TextColor**, **DashStyle**, and **Thickness** properties. On diagrams you can expose the **FillColor** and **TextColor** properties.  
+ Можно предоставлять на фигурах **FillColor**"  **OutlineColor**"  **TextColor**"  **OutlineDashStyle**"  **OutlineThickness** и  **FillGradientMode** свойства.  Можно предоставлять на соединителях **Цвет**`,`**TextColor**"  **DashStyle**и  **Толщина** свойства.  Можно предоставлять на схемах **FillColor** и  **TextColor** свойства.  
   
-## <a name="forwarding-displaying-properties-of-related-elements"></a>Forwarding: Displaying Properties of Related Elements  
- When the user of your DSL selects an element in a model, that element's properties are displayed in the properties window. However, you can also display the properties of specified related elements. This is useful if you have defined a group of elements that works together. For example, you might define a main element and an optional plug-in element. If the main element is mapped to a shape and the other is not, it is useful to see all their properties as if they were on one element.  
+## Переадресованы: Свойства отображения связанных элементов  
+ Когда пользователь выбирает элемент в модели DSL пользовательского свойства элемента отображаются в окне свойства.  Однако можно также указать свойства, определенных связанных элементов.  Это полезно, если вы определили группу в составе элементы, которая работает вместе.  Например, можно указать основной элемент и необязательный элемент подключаемого модуля.  Если главный элемент сопоставляется к фигуре, а другое нет, то полезно посмотреть все их свойства, как если бы они находились в одном элементе.  
   
- This effect is named *property forwarding*, and it happens automatically in several cases. In other cases, you can achieve property forwarding by defining a domain type descriptor.  
+ Этот результат называется *переадресованы свойства*и вызываются автоматически в нескольких случаях.  В других случаях можно добиться свойства переадресуя путем указания дескриптора типа домена.  
   
-### <a name="default-property-forwarding-cases"></a>Default Property Forwarding Cases  
- When the user selects a shape or connector, or an element in the Explorer, the following properties are displayed in the Properties window:  
+### Свойство по умолчанию переадресуя case  
+ Когда пользователь выбирает фигуры или соединитель или элемент в обозревателе следующие свойства отображаются в окне свойства:  
   
--   The domain properties that are defined on the domain class of the model element, including those that are defined in base classes. An exception is domain properties for which you have set **Is Browsable** to `False`.  
+-   Свойства домена, определенные на доменном классе элемента модели, включая те, которые определены в базовых классах.  Исключение свойства домена, для которых имеется набор **Отображается** В  `False`.  
   
--   The names of elements that are linked through relationships that have a multiplicity of 0..1. This provides a convenient method of seeing optionally linked elements, even if you have not defined a connector mapping for the relationship.  
+-   Имена элементов, связанных в связи с количеством элементов 0..1.  Это обеспечивает удобный метод видеть при необходимости связанные элементы, даже если не указанные сопоставление соединителя для связи.  
   
--   Domain properties of the embedding relationship that targets the element. Because embedding relationships are usually not displayed explicitly, this lets the user see their properties.  
+-   Содержит свойства домена связи, предназначен для элемента.  Поскольку внедрение связи обычно не указывает явно, это позволяет пользователю видеть их свойства.  
   
--   Domain properties that are defined on the selected shape or connector.  
+-   Свойства домена, определенные для выбранных фигуры или соединителе.  
   
-### <a name="adding-property-forwarding"></a>Adding Property Forwarding  
- To forward a property, you define a domain type descriptor. If you have a domain relationship between two domain classes, you can use a domain type descriptor to set a domain property in the first class to the value of a domain property in the second domain class. For example, if you have a relationship between a **Book** domain class and an **Author** domain class, you can use a domain type descriptor to make the **Name** property of a Book's **Author** appear in the Properties window when the user selects the Book.  
+### Добавление переадресованы свойства  
+ Чтобы переадресованы свойство можно указать дескриптор типа домена.  При наличии доменную связь между 2 доменными классами, можно использовать дескриптор типа домена для задания свойства домена в первом классе свойства домена в доменном классе.  Например, если существует отношение между классом и доменным классом доменным книги автора, можно использовать дескриптор типа домена для свойства имя автора книги отображаться в окне свойств при выборе пользователем книги.  
   
 > [!NOTE]
->  Property forwarding affects only the Properties window when the user is editing a model. It does not define a domain property on the receiving class. If you want to access the forwarded domain property in other parts of the DSL Definition or in program code, you must access the forwarding element.  
+>  Переадресованы свойства затрагивает только окно свойств, когда пользователь изменяет модели.  Оно не задает свойство домена на принимающей классе.  Если необходимо получить доступ к переадресованное свойство домена в других частях определения DSL либо в коде программы, необходимо получить доступ к элементу препровождения.  
   
- The following procedure assumes that you have created a DSL. The first few steps summarize the prerequisites.  
+ В следующей процедуре предполагается, что вы создали DSL.  В первых шагах объединяют условия.  
   
-##### <a name="to-forward-a-property-from-another-element"></a>To forward a property from another element  
+##### Переадресованы свойство из другого элемента  
   
-1.  Create a [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solution that contains at least two classes, which in this example are called **Book** and **Author**. There should be a relationship of either kind between **Book** and **Author**.  
+1.  Create a [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] решения, содержащего не менее 2 класса, который в данном примере вызываются Книгой и автором.  Должно быть любого типа связи между книгой и автором.  
   
-     The multiplicity of the source role (the role at the **Book** side) should be 0..1 or 1..1, so that each **Book** has one **Author**.  
+     Количество элементов в роли источника \(роли на стороне книги\) должно быть 0..1 или 1..1, так что каждая книга будет иметь одного автора.  
   
-2.  In **DSL Explorer**, right-click the **Book** domain class, and then click **Add New DomainTypeDescriptor**.  
+2.  IN **Обозреватель DSL**щелкните правой кнопкой мыши доменный класс книги, а затем выберите команду  **Добавьте новое DomainTypeDescriptor**.  
   
-     A node named **Paths of Custom Property Descriptors** appears under the **Custom Type Descriptor** node.  
+     Узел с именем **Пути дескрипторов пользовательских свойств** отображается под  **Настраиваемый дескриптор типа** узел.  
   
-3.  Right-click the **Custom Type Descriptor** node, and then click **Add New PropertyPath**.  
+3.  Щелкните правой кнопкой мыши **Настраиваемый дескриптор типа** узел и нажмите кнопку  **Добавьте новое PropertyPath**.  
   
-     A new property path appears under the **Paths Of Custom Property Descriptors** node.  
+     Новый путь свойства отображается под **Пути дескрипторов пользовательских свойств** узел.  
   
-4.  Select the new property path, and in the **Properties** window, set **Path to Property** to the path of the appropriate model element.  
+4.  Выберите новый путь свойства и в **Свойства** окно, набор  **Путь к свойству** в пути соответствующего элемента модели.  
   
-     You can edit the path in a tree view by clicking the down arrow to the right of this property. For more information about domain paths, see [Domain Path Syntax](../modeling/domain-path-syntax.md). When you have edited it, the path should resemble **BookReferencesAuthor.Author/!Author**.  
+     Можно изменить путь в представлении в виде дерева, щелкните стрелку вниз справа от этого свойства.  Дополнительные сведения о путях домена см. в разделе [Синтаксис пути домена](../modeling/domain-path-syntax.md).  После редактирования его путь должен напоминать **BookReferencesAuthor.Author\/\! Автор**.  
   
-5.  Set **Property** to the **Name** domain property of **Author**.  
+5.  Установка **Свойство** к  **Name** свойство author домена.  
   
-6.  Set **Display Name** to **Author Name**.  
+6.  Установка **Отображаемое имя** имя автора.  
   
-7.  Transform All Templates, build and run the DSL.  
+7.  Преобразовать все шаблоны, построение и выполнение DSL.  
   
-8.  In a model diagram, create a book, an author, and link them using the reference relationship. Select the book element, and in the Properties window you should see Author Name in addition to the properties of the book. Change the name of the linked author, or link the book to a different author, and observe that the Author Name of the book changes.  
+8.  В схеме модели, создание книги автора и свяжите их с помощью связи ссылки.  Выберите элемент книги, и в окне свойств появится имя автора в дополнение к свойствам книги.  Измените имя связанного автора или автору книги ссылку на другой, и убедитесь, что имя автора книги.  
   
-## <a name="custom-property-editors"></a>Custom Property Editors  
- The property window provides an appropriate default editing experience for the type of each domain property. For example, for an enumerated type, the user sees a drop-down list, and for a numeric property, the user can enter digits. This is only true for the built-in types. If you specify an external type, the user will be able to see the property's values, but not edit it.  
+## Редакторы пользовательских свойств  
+ Окно свойства предоставляет соответствующее редактирования по умолчанию для типа каждого свойства домена.  Например, для перечислимого типа, пользователь видит раскрывающегося списка, а для числового свойства, пользователь может вводить цифры.  Это верно только для встроенных типов.  Если указать внешний тип, то у пользователя будет видеть значения свойства, но нельзя изменять их.  
   
- However, you can specify the following editors and types:  
+ Однако можно задать следующие редакторы и типы:  
   
-1.  Another editor that is used with a standard type. For example, you could specify a file path editor for a string property.  
+1.  Другой редактор, используемый с стандартным типом.  Например, можно указать редактор пути к файлу для строкового свойства.  
   
-2.  An external type for the domain property, and an editor for it.  
+2.  Внешний тип для свойства домена и редактор.  
   
-3.  A .NET editor such as the file path editor, or you can create your own custom property editor.  
+3.  Редактор .NET, таких как редактор пути к файлу или можно создать собственный редактор настраиваемых свойств.  
   
-     A conversion between an external type and an type such as String, which has a default editor.  
+     Преобразование между внешним типом и типом в виде строки, которой принадлежит редактор по умолчанию.  
   
- In a DSL, an *external type* is any type that is not one of the simple types (such as Boolean or Int32) or String.  
+ в DSL, *внешний вид* любой тип, который не является одной из простых типов \(в качестве логического или Int32\) или строки.  
   
-#### <a name="to-define-a-domain-property-that-has-an-external-type"></a>To define a domain property that has an external type  
+#### Определить свойство домена, имеющую внешний вид  
   
-1.  In **Solution Explorer**, add a reference to the assembly (DLL) that contains the external type, in the **Dsl** project.  
+1.  IN **Обозреватель решений**добавьте ссылку на сборку \(DLL\), содержащей внешний тип в  **Dsl** этот проект.  
   
-     The assembly can be a .NET assembly, or an assembly supplied by you.  
+     Сборка может быть сборкой .NET или сборкой предоставленной пользователем.  
   
-2.  Add the type to the **Domain Types** list, unless you have already done so.  
+2.  Добавьте тип **Типы домена** перечислите, если это уже не будет.  
   
-    1.  Open DslDefinition.dsl, and in **DSL Explorer**, right-click the root node, and then click **Add New External Type**.  
+    1.  Откройте DslDefinition.dsl и in **Обозреватель DSL**щелкните правой кнопкой мыши корневой узел, а затем выберите команду  **Добавьте новый внешний вид**.  
   
-         A new entry appears under the **Domain Types** node.  
+         Новая запись отображается под **Типы домена** узел.  
   
         > [!WARNING]
-        >  The menu item is on the DSL root node, not the **Domain Types** node.  
+        >  Пункт меню не в корневом узле DSL **Типы домена** узел.  
   
-    2.  Set the name and the namespace of the new type in the Properties window.  
+    2.  Задайте имя и пространство имен в окне свойства.  
   
-3.  Add a domain property to a domain class in the usual manner.  
+3.  Добавьте свойство к классу домена доменному обычным способом.  
   
-     In the Properties window, select the external type from the drop-down list in the **Type** field.  
+     В окне свойства выберите внешний тип из раскрывающегося списка в **тип** поле.  
   
- At this stage, users can view the values of the property, but they cannot edit it. The displayed values are obtained from the `ToString()` function. You could write program code that sets the value of the property, for example in a command or rule.  
+ В этот момент пользователи могут просматривать значения свойств, но они не могут изменять его.  Показанные значения получаются из `ToString()` функция.  Можно написать программный код, который устанавливает значение свойства, например в команде или правило.  
   
-### <a name="setting-a-property-editor"></a>Setting a Property Editor  
- Add a CLR attribute to the domain property, in the following form:  
+### Установка редактор свойств  
+ Добавьте атрибут среды CLR к свойству домена, в следующей форме:  
   
 ```  
 [System.ComponentModel.Editor (  
@@ -146,17 +138,17 @@ You can customize the appearance and behavior of the properties window in your d
   
 ```  
   
- You can set the attribute on a property by using the **Custom Attribute** entry in the Properties window.  
+ Можно установить свойства, используя атрибут **Настраиваемый атрибут** записи в окне свойства.  
   
- The type of `AnEditor` must be derived from the type specified in the second parameter. The second parameter should be either <xref:System.Drawing.Design.UITypeEditor> or <xref:System.ComponentModel.ComponentEditor>. For more information, see <xref:System.ComponentModel.EditorAttribute>.  
+ Тип  `AnEditor` быть производным от типа, заданного во втором параметре.  Второй параметр должен быть одним <xref:System.Drawing.Design.UITypeEditor> OR  <xref:System.ComponentModel.ComponentEditor>.  Дополнительные сведения см. в разделе <xref:System.ComponentModel.EditorAttribute>.  
   
- You can specify either your own editor, or an editor supplied in the [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], such as <xref:System.Windows.Forms.Design.FileNameEditor> or <xref:System.Drawing.Design.ImageEditor>. For example, use the following procedure to have a property in which the user can enter a file name.  
+ Можно указать собственный редактор или редактор в предоставленный [!INCLUDE[.net framework]()]как  <xref:System.Windows.Forms.Design.FileNameEditor> OR  <xref:System.Drawing.Design.ImageEditor>.  Например, используйте следующую процедуру для иметь свойство, в котором пользователь может ввести имя файла.  
   
-##### <a name="to-define-a-file-name-domain-property"></a>To define a file name domain property  
+##### Определить свойство домена имени файла  
   
-1.  Add a domain property to a domain class in your DSL Definition.  
+1.  Добавьте свойство к классу доменному домена DSL в своем определении.  
   
-2.  Select the new property. In the **Custom Attribute** field in the Properties window, enter the following attribute. To enter this attribute, click the ellipsis **[...]** and then enter the attribute name and the parameters separately:  
+2.  Выберите новое свойство.  в **Настраиваемый атрибут** поле в окне свойства введите следующий атрибут.  Чтобы ввести этот атрибут, нажмите кнопку с многоточием \[...\] затем введите имя атрибута и параметры отдельно.  
   
     ```  
     [System.ComponentModel.Editor (  
@@ -165,31 +157,31 @@ You can customize the appearance and behavior of the properties window in your d
   
     ```  
   
-3.  Leave the Type of the domain property at its default setting of **String**.  
+3.  Оставьте тип свойства домена в качестве параметра по умолчанию **Строка**.  
   
-4.  To test the editor, verify that users can open the file name editor to edit your domain property.  
+4.  Чтобы тестирование редактора, убедитесь в том, что пользователи могут открыть редактор имени файла для редактирования свойство домена.  
   
-    1.  Press CTRL+F5 or F5. In the debugging solution, open a test file. Create an element of the domain class and select it.  
+    1.  Нажмите клавиши CTRL\+F5 или F5.  В решении отладки, откройте тестовый файл.  Создайте элемент доменного класса и выберите его.  
   
-    2.  In the Properties window, select the domain property. The value field shows an ellipsis **[...]**.  
+    2.  В окне свойства выберите свойство домена.  Поле значение отображается многоточие \[...\].  
   
-    3.  Click the ellipsis. A file dialog box appears. Select a file and close the dialog box. The file path is now the value of the domain property.  
+    3.  Нажмите кнопку с многоточием \(...\).  Диалоговое окно файла.  Выберите файл и закрыть диалоговое окно.  Путь к файлу теперь значение свойства домена.  
   
-### <a name="defining-your-own-property-editor"></a>Defining your own property editor  
- You can define your own editor. You would do this to  allow the user either to edit a type that you have defined, or to edit a standard type in a special way. For example, you could allow the user to input a string that represents a formula.  
+### Указание собственный редактор свойств  
+ Можно указать собственный редактор.  Необходимо выполнить это, чтобы разрешить пользователю, чтобы изменить тип, который вы определили или изменять стандартное введите особым образом.  Например, можно разрешить пользователю вход строка, представляющая формулу.  
   
- You define an editor by writing a class that is derived from <xref:System.Drawing.Design.UITypeEditor>. Your class must override:  
+ Указать редактор написать класс, производный от <xref:System.Drawing.Design.UITypeEditor>.  Класс должен переопределять:  
   
--   <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, to interact with the user and update the property value.  
+-   <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>взаимодействие с пользователем, и обновить значение свойства.  
   
--   <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, to specify whether your editor will open a dialog or provide a drop-down menu.  
+-   <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>определить, является ли редактор, будет открыто диалоговое окно или обеспечит раскрывающееся меню.  
   
- You can also provide a graphical representation of the property's value that will be displayed in the property grid. To do this, override `GetPaintValueSupported`, and `PaintValue`.  For more information, see <xref:System.Drawing.Design.UITypeEditor>.  
+ Можно также предоставить графическое представление значения свойства, которая будет отображаться в сетке свойств.  Это сделать, переопределение `GetPaintValueSupported`и  `PaintValue`.  Дополнительные сведения см. в разделе <xref:System.Drawing.Design.UITypeEditor>.  
   
 > [!NOTE]
->  Add the code in a separate code file in the **Dsl** project.  
+>  Добавьте код в отдельном файле кода **Dsl** этот проект.  
   
- For example:  
+ Примеры.  
   
 ```  
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor  
@@ -204,7 +196,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
   
 ```  
   
- To use this editor, set the **Custom Attribute** of a domain property to:  
+ Чтобы использовать этот редактор, установите **Настраиваемый атрибут** свойства домена.  
   
 ```  
 [System.ComponentModel.Editor (  
@@ -213,15 +205,15 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
   
 ```  
   
- For more information, see <xref:System.Drawing.Design.UITypeEditor>.  
+ Дополнительные сведения см. в разделе <xref:System.Drawing.Design.UITypeEditor>.  
   
-## <a name="providing-a-drop-down-list-of-values"></a>Providing a drop-down list of values  
- You can provide a list of values for a user to choose from.  
+## Защита раскрывающегося списка значений  
+ Можно предоставить список значений для пользователя для выбора.  
   
 > [!NOTE]
->  This technique provides a list of values that can change at runtime. If you want to provide a list that does not change, consider instead using an enumerated type as the type of your domain property.  
+>  Этот метод предоставляет список значений, которые могут изменяться во время выполнения.  Если требуется предоставить список, который не меняется, попробуйте вместо этого использовать перечислимый тип как тип своего свойства домена.  
   
- To define a list of standard values, you add to your domain property a CLR attribute that has the following form:  
+ Чтобы указать список стандартных значений, добавляемые к пользовательскому свойству домена атрибут среды CLR, который имеет следующую форму:  
   
 ```  
 [System.ComponentModel.TypeConverter   
@@ -229,9 +221,9 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
   
 ```  
   
- Define a class that derives from <xref:System.ComponentModel.TypeConverter>. Add the code in a separate file in the **Dsl** project. For example:  
+ Определите класс, производный от класса <xref:System.ComponentModel.TypeConverter>.  Добавьте код в отдельном файле в **Dsl** этот проект.  Примеры.  
   
-```csharp  
+```c#  
 /// <summary>  
 /// Type converter that provides a list of values   
 /// to be displayed in the property grid.  
@@ -323,5 +315,5 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
   
 ```  
   
-## <a name="see-also"></a>See Also  
- [Navigating and Updating a Model in Program Code](../modeling/navigating-and-updating-a-model-in-program-code.md)
+## См. также  
+ [Перемещение по модели и обновление модели в коде программы](../modeling/navigating-and-updating-a-model-in-program-code.md)

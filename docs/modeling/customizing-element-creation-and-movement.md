@@ -1,172 +1,169 @@
 ---
-title: Customizing Element Creation and Movement | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- vs.dsltools.dsldesigner.elementmergedirective
-helpviewer_keywords:
-- Domain-Specific Language, element merge directives
+title: "Настройка создания и перемещения элементов | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vs.dsltools.dsldesigner.elementmergedirective"
+helpviewer_keywords: 
+  - "Доменный язык, директивы слияния элементов"
 ms.assetid: cbd28f15-dfd7-46bd-ab79-5430e3ed83c8
 caps.latest.revision: 36
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: d678e05046a367a722a586d13a50ef7bf0aabc79
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+author: "alancameronwills"
+ms.author: "awills"
+manager: "douge"
+caps.handback.revision: 36
 ---
-# <a name="customizing-element-creation-and-movement"></a>Customizing Element Creation and Movement
-You can allow an element to be dragged onto another, either from the toolbox or in a paste or move operation. You can have the moved elements linked to the target elements, using the relationships that you specify.  
+# Настройка создания и перемещения элементов
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Можно разрешить элемент перетащить на другой, с панели инструментов или в вставить или переместить операции. Может иметь перемещенный элементов, связанных с целевыми элементами с помощью связей, которые можно задать.  
   
- An element merge directive (EMD) specifies what happens when one model element is *merged* into another model element. This happens when:  
+ Директива слияния элементов (EMD) указывает, что происходит, если один элемент модели *объединенные* в другой элемент модели. Это происходит, когда:  
   
--   The user drags from the toolbox onto the diagram or a shape.  
+-   Пользователь перетаскивает из панели элементов на схему или форму.  
   
--   The user creates an element by using an Add menu in the explorer or a compartment shape.  
+-   Пользователь создает элемент с помощью меню "Добавить" в обозревателе или фигуры секции.  
   
--   The user moves an item from one swimlane to another.  
+-   Пользователь перемещает элемент из одной дорожки в другую.  
   
--   The user pastes an element.  
+-   Пользователь вставляет элемент.  
   
--   Your program code calls the element merge directive.  
+-   Программный код вызывает директива слияния элементов.  
   
- Although the creation operations might seem to be different from the copy operations, they actually work in the same way. When an element is added, for example from the toolbox, a prototype of it is replicated. The prototype is merged into the model in the same manner as elements that have been copied from another part of the model.  
+ Несмотря на то, что операции создания может показаться должно отличаться от операций копирования, на самом деле работают таким же образом. При добавлении элемента, например из панели элементов прототип его реплицируется. Так же, как элементы, которые были скопированы из другой части модели прототипа объединяются в модель.  
   
- The responsibility of an EMD is to decide how an object or group of objects should be merged into a particular location in the model. In particular, it decides what relationships should be instantiated to link the merged group into the model. You can also customize it to set properties and to create additional objects.  
+ Ответственность за EMD является определение того, как следует объединить объект или группу объектов в определенном месте в модели. В частности он решает, какие связи должен создаваться для связывания группы объединенных в модель. Также можно настроить его для задания свойств и создания дополнительных объектов.  
   
- ![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png "DSL-EMD_Merge")  
-The role of an Element Merge Directive  
+ ![DSL &#45; EMD &#95; Слияние](../modeling/media/dsl-emd_merge.png "DSL-EMD_Merge")  
+Роль директива слияния элементов  
   
- An EMD is generated automatically when you define an embedding relationship. This default EMD creates an instance of the relationship when users add new child instances to the parent. You can modify these default EMDs, for example by adding custom code.  
+ EMD создается автоматически при определении отношения внедрения. Это значение по умолчанию EMD экземпляра связи при добавлении новых экземпляров дочернего к родительскому элементу. Можно изменить эти EMDs по умолчанию, например, путем добавления пользовательского кода.  
   
- You can also add your own EMDs in the DSL definition, to let users drag or paste different combinations of merged and receiving classes.  
+ Можно также добавить собственные EMDs в определении DSL, позволяющим перетаскивать или вставить различные сочетания объединенных и принимающий классов.  
   
-## <a name="defining-an-element-merge-directive"></a>Defining an Element Merge Directive  
- You can add element merge directives to domain classes, domain relationships, shapes, connectors, and diagrams. You can add or find them in DSL Explorer under the receiving domain class. The receiving class is the domain class of the element that is already in the model, and onto which the new or copied element will be merged.  
+## <a name="defining-an-element-merge-directive"></a>Определение директиву слияния элементов  
+ Директивы слияния элементов можно добавить классы доменов доменных связей, фигуры, соединители и схемы. Можно добавить или найти их в обозревателе DSL под принимающего класса домена. Принимающего класса является класс домена элемента, который уже находится в модели и на которой будут объединены нового или скопированного элемента.  
   
- ![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png "DSL-EMD_Details")  
+ ![DSL &#45; EMD &#95; подробные сведения](~/modeling/media/dsl-emd_details.png "DSL-EMD_Details")  
   
- The **Indexing Class** is the domain class of elements that can be merged into members of the receiving class. Instances of subclasses of the Indexing Class will also be merged by this EMD, unless you set **Applies to subclasses** to False.  
+  **Индексирование класс** — это класс домена элементов, которые могут быть объединены в члены, принимающего класса. Экземпляры подклассы класса индексирования также объединяются по этой EMD, если не задать **применяется в подклассы** значение False.  
   
- There are two kinds of merge directive:  
+ Существует два вида директива слияния.  
   
--   A **Process Merge** directive specifies the relationships by which the new element should be linked into the tree.  
+-   A **процесс слияния** директива указывает связи, по которым необходимо связать новый элемент в дерево.  
   
--   A **Forward Merge** directive redirects the new element to another receiving element, typically a parent.  
+-   A **вперед слияния** директива перенаправляет нового элемента к другому элементу приемки, обычно родительского.  
   
- You can add custom code to merge directives:  
+ Можно добавить пользовательский код для директивы слияния:  
   
--   Set **Uses custom accept** to add your own code to determine whether a particular instance of the indexing element should be merged into the target element. When the user drags from the toolbox, the "invalid" pointer shows if your code disallows the merge.  
+-   Задайте **использует настраиваемое принятие** Добавление кода для определения, является ли конкретный экземпляр элемента индексирования следует объединить в целевой элемент. При перетаскивании из панели элементов, указатель «недопустимый» показывает, если код запрещает слияния.  
   
-     For example, you could allow the merge only when the receiving element is in a particular state.  
+     Например можно разрешить слияние только в том случае, если принимающее элемент находится в определенном состоянии.  
   
--   Set **Uses custom merge** to add provide own code to define the changes that are made to the model when the merge is performed.  
+-   Задайте **использует настраиваемого объединения** Добавление предоставить собственный код, чтобы определить изменения, внесенные в модель при выполнении слияния.  
   
-     For example, you could set properties in the merged element by using data from its new location in the model.  
+     Например в элементе объединенных удалось задать свойства, используя данные из нового местоположения в модели.  
   
 > [!NOTE]
->  If you write custom merge code, it affects only merges that are performed by using this EMD. If there are other EMDs that merge the same type of object, or if there is other custom code that creates these objects without using the EMD, then they will not be affected by your custom merge code.  
+>  При написании кода настраиваемого объединения, он влияет только слияния, которые выполняются с использованием этого EMD. При отсутствии других EMDs, объединяемых тому же типу объектов, или если есть другой пользовательский код, который создает эти объекты без использования EMD, затем они не затрагиваются код настраиваемого объединения.  
 >   
->  If you want to make sure that a new element or new relationship is always processed by your custom code, consider defining an `AddRule` on the embedding relationship and a `DeleteRule` on the element's domain class. For more information, see [Rules Propagate Changes Within the Model](../modeling/rules-propagate-changes-within-the-model.md).  
+>  Если требуется, чтобы убедиться в том, что новый элемент или создать связь всегда обрабатывается пользовательский код, подумайте об определении `AddRule` на отношение внедрения и `DeleteRule` на класс домена этого элемента. Дополнительные сведения см. в разделе [Распространение изменений в модели правил](../modeling/rules-propagate-changes-within-the-model.md).  
   
-## <a name="example-defining-an-emd-without-custom-code"></a>Example: Defining an EMD without custom code  
- The following example lets users create an element and a connector at the same time by dragging from the toolbox onto an existing shape. The example adds an EMD to the DSL Definition. Before this modification, users can drag tools onto the diagram, but not onto existing shapes.  
+## <a name="example-defining-an-emd-without-custom-code"></a>Пример: Определение EMD без пользовательского кода  
+ Следующий пример разрешает пользователям создавать элемент и соединитель одновременно путем перетаскивания с панели элементов на существующей фигуры. В примере добавляется EMD определения DSL. До этого изменения пользователи смогут перетаскивать средства на схему, но не на существующие фигуры.  
   
- Users can also paste elements onto other elements.  
+ Пользователи также можно вставить элементы в других элементов.  
   
-#### <a name="to-let-users-create-an-element-and-a-connector-at-the-same-time"></a>To let users create an element and a connector at the same time  
+#### <a name="to-let-users-create-an-element-and-a-connector-at-the-same-time"></a>Чтобы разрешить пользователям создавать элемент и соединитель в то же время  
   
-1.  Create a new DSL by using the **Minimal Language** solution template.  
+1.  Создайте новый DSL с помощью **Минимальный язык** шаблона решения.  
   
-     When you run this DSL, it lets you create shapes and connectors between the shapes. You cannot drag a new **ExampleElement** shape from the toolbox onto an existing shape.  
+     При запуске этот DSL, он позволяет создавать фигур и соединителей между фигурами. Нельзя перетащить новый **ExampleElement** фигуры с панели элементов на существующей фигуры.  
   
-2.  To let users merge elements onto `ExampleElement` shapes, create a new EMD in the `ExampleElement` domain class:  
+2.  Чтобы позволить пользователям объединять элементы на `ExampleElement` фигур, создание новых EMD в `ExampleElement` класса домена:  
   
-    1.  In **DSL Explorer**, expand **Domain Classes**. Right-click `ExampleElement` and then click **Add New Element Merge Directive**.  
+    1.  В **Обозреватель DSL**, разверните **классов доменов**. Щелкните правой кнопкой мыши `ExampleElement` и нажмите кнопку **добавьте директивы слияния новый элемент**.  
   
-    2.  Make sure that the **DSL Details** window is open, so that you can see the details of the new EMD. (Menu: **View**, **Other Windows**, **DSL Details**.)  
+    2.  Убедитесь, что **Подробные сведения о DSL** окно открыт, таким образом, можно просмотреть сведения о новых EMD. (Меню: **Просмотр**, **других окон**, **Подробные сведения о DSL**.)  
   
-3.  Set the **Indexing class** in the DSL Details window, to define what class of elements can be merged onto `ExampleElement` objects.  
+3.  Задайте **индексирования класс** в окне сведений DSL, чтобы определить, какой класс элементов могут быть объединены в `ExampleElement` объектов.  
   
-     For this example, select `ExampleElements`, so that the user can drag new elements onto existing elements.  
+     В этом примере выберите `ExampleElements`, так что пользователь может перетащить новые элементы на существующих элементов.  
   
-     Notice that the Indexing class becomes the name of the EMD in DSL Explorer.  
+     Обратите внимание, что класс индексирования становится именем EMD в обозревателе DSL.  
   
-4.  Under **Process merge by creating links**, add two paths:  
+4.  В разделе **процесс слияния создаются ссылки**, добавьте два пути:  
   
-    1.  One path links the new element to the parent model. The path expression that you need to enter navigates from the existing element, up through the embedding relationship to the parent model. Finally, it specifies the role in the new link to which the new element will be assigned. The path is as follows:  
+    1.  Один путь связывает новый элемент родительской модели. Выражение пути, необходимо ввести переходит из существующего элемента вверх через отношение внедрения родительской модели. Наконец он указывает роль в новой ссылке, к которому будет назначен новый элемент. Путь выглядит следующим образом:  
   
          `ExampleModelHasElements.ExampleModel/!ExampleModel/.Elements`  
   
-    2.  The other path links the new element to the existing element. The path expression specifies the reference relationship and the role to which the new element will be assigned. This path is as follows:  
+    2.  Другой путь связывает новый элемент на существующий элемент. Выражение пути задает ссылочная связь и роли, к которому будет назначен новый элемент. Этот путь выглядит следующим образом:  
   
          `ExampleElementReferencesTargets.Sources`  
   
-     You can use the path navigation tool to create each path:  
+     Для создания каждого пути можно использовать средство путь навигации:  
   
-    1.  Under **Process merge by creating links at paths**, click **\<add path>**.  
+    1.  В разделе **процесс слияния путем создания ссылки на пути**, нажмите кнопку **\< Добавить путь>**.  
   
-    2.  Click the drop-down arrow to the right of the list item. A tree view appears.  
+    2.  Щелкните стрелку раскрывающегося списка справа от элемента списка. Откроется представление в виде дерева.  
   
-    3.  Expand the nodes in the tree to form the path that you want to specify.  
+    3.  Разверните узлы в дереве к форме, чтобы указать путь.  
   
-5.  Test the DSL:  
+5.  Проверьте DSL:  
   
-    1.  Press F5 to rebuild and run the solution.  
+    1.  Нажмите клавишу F5, чтобы построить и запустить решение.  
   
-         Rebuilding will take longer than usual because the generated code will be updated from text templates to conform to the new DSL Definition.  
+         Перестроение займет больше времени чем обычно, поскольку созданный код будет обновляться из текстовых шаблонов для обеспечения соответствия нового определения DSL.  
   
-    2.  When the experimental instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] has started, open a model file of your DSL. Create some example elements.  
+    2.  Когда экспериментальный экземпляр [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] был запущен, откройте файл модели DSL. Создайте некоторые элементы примера.  
   
-    3.  Drag from the **Example Element** tool onto an existing shape.  
+    3.  Перетащите из **Пример элемента** средство на существующей фигуры.  
   
-         A new shape appears, and it is linked to the existing shape with a connector.  
+         Появится новая фигура, и он связан с существующей фигуры с помощью соединителя.  
   
-    4.  Copy an existing shape. Select another shape and paste.  
+    4.  Копирование существующей фигуры. Выберите другую форму и вставьте.  
   
-         A copy of the first shape is created.  It has a new name and it is linked to the second shape with a connector.  
+         Создается копия первой фигуры.  Он имеет новое имя и связывается второй формы с помощью соединителя.  
   
- Notice the following points from this procedure:  
+ Обратите внимание на следующие моменты, из этой процедуры:  
   
--   By creating Element Merge Directives, you can allow any class of element to accept any other. The EMD is created in the receiving domain class, and the accepted domain class is specified in the **Index class** field.  
+-   Создавая директивы слияния элементов, можно разрешить любой класс элемента, чтобы принимать другие. EMD создается в классе домена принимающей и класс обслуживаемый домен, указанный в **класс Index** поле.  
   
--   By defining paths, you can specify what links should be used to connect the new element to the existing model.  
+-   Определение путей, можно указать, какие ссылки следует использовать для подключения нового элемента к существующей модели.  
   
-     The links that you specify should include one embedding relationship.  
+     Ссылки, можно указать, должен включать одного отношения внедрения.  
   
--   The EMD affects both creation from the toolbox and also paste operations.  
+-   EMD влияет на создание и из элементов, а также операции вставки.  
   
-     If you write custom code that creates new elements, you can explicitly invoke the EMD by using the `ElementOperations.Merge` method. This makes sure that your code links new elements into the model in the same way as other operations. For more information, see [Customizing Copy Behavior](../modeling/customizing-copy-behavior.md).  
+     Если написать пользовательский код, который создает новые элементы, можно явно вызывать EMD с помощью `ElementOperations.Merge` метод. Это гарантирует, что код связывает новые элементы в модель так же, как другие операции. Дополнительные сведения см. в разделе [Настройка поведения копирования](../modeling/customizing-copy-behavior.md).  
   
-## <a name="example-adding-custom-accept-code-to-an-emd"></a>Example: Adding Custom Accept code to an EMD  
- By adding custom code to an EMD, you can define more complex merge behavior. This simple example prevents the user from adding more than a fixed number of elements to the diagram. The example modifies the default EMD that accompanies an embedding relationship.  
+## <a name="example-adding-custom-accept-code-to-an-emd"></a>Пример: Добавление кода настраиваемое принятие EMD  
+ Путем добавления пользовательского кода для EMD, можно определить более сложное поведение слияния. В этом простом примере запрещает пользователю добавлять более фиксированное число элементов в схеме. В примере изменяется значение по умолчанию EMD, сопровождающий отношение внедрения.  
   
-#### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>To write Custom Accept code to restrict what the user can add  
+#### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>В коде настраиваемое принятие ограничения, пользователь может добавить  
   
-1.  Create a DSL by using the **Minimal Language** solution template. Open the DSL Definition diagram.  
+1.  Создать DSL с помощью **Минимальный язык** шаблона решения. Откройте схему определения DSL.  
   
-2.  In DSL Explorer, expand **Domain Classes**, `ExampleModel`, **Element Merge Directives**. Select the element merge directive that is named `ExampleElement`.  
+2.  В обозревателе DSL разверните **классов доменов**, `ExampleModel`, **директивы слияния элементов**. Выберите директива слияния элементов с именем `ExampleElement`.  
   
-     This EMD controls how the user can create new `ExampleElement` objects in the model, for example by dragging from the toolbox.  
+     Это EMD определяет, как пользователь может создать `ExampleElement` объекты модели, например путем перетаскивания с панели инструментов.  
   
-3.  In the **DSL Details** window, select **Uses custom accept**.  
+3.  В **Подробные сведения о DSL** выберите **использует настраиваемое принятие**.  
   
-4.  Rebuild the solution. This will take longer than usual because the generated code will be updated from the model.  
+4.  Выполните повторную сборку решения. Это займет больше времени, чем обычно, поскольку созданный код будет обновляться из модели.  
   
-     A build error will be reported, similar to: "Company.ElementMergeSample.ExampleElement does not contain a definition for CanMergeExampleElement..."  
+     Ошибка построения будет отчета, как: «Company.ElementMergeSample.ExampleElement содержит определения для CanMergeExampleElement...»  
   
-     You must implement the method `CanMergeExampleElement`.  
+     Необходимо реализовать метод `CanMergeExampleElement`.  
   
-5.  Create a new code file in the **Dsl** project. Replace its content with the following code and change the namespace to the namespace of your project.  
+5.  Создайте новый файл кода в **Dsl** проекта. Замените его содержимое следующим кодом и измените пространство имен своего проекта.  
   
-    ```csharp  
+    ```c#  
     using Microsoft.VisualStudio.Modeling;  
   
     namespace Company.ElementMergeSample // EDIT.  
@@ -192,48 +189,48 @@ The role of an Element Merge Directive
   
     ```  
   
-     This simple example restricts the number of elements that can be merged into the parent model. For more interesting conditions, the method can inspect any of the properties and links of the receiving object. It can also inspect the properties of the merging elements, which are carried in a <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. For more information about `ElementGroupPrototypes`, see [Customizing Copy Behavior](../modeling/customizing-copy-behavior.md). For more information about how to write code that reads a model, see [Navigating and Updating a Model in Program Code](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+     В этом простом примере ограничивает количество элементов, которые могут быть объединены в родительской модели. Условия, более интересным метод можно проверить свойства и ссылки для получения объекта. Он также может проверять свойства слияния элементов, которые передаются в <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Дополнительные сведения о `ElementGroupPrototypes`, в разделе [Настройка поведения копирования](../modeling/customizing-copy-behavior.md). Дополнительные сведения о том, как написать код, выполняющий считывание модели см. в разделе [Перемещение и обновление модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
-6.  Test the DSL:  
+6.  Проверьте DSL:  
   
-    1.  Press F5 to rebuild the solution. When the experimental instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] opens, open an instance of your DSL.  
+    1.  Нажмите клавишу F5, чтобы перестроить решение. Когда экспериментальный экземпляр [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] откроется, откройте экземпляр DSL.  
   
-    2.  Create new elements in several ways:  
+    2.  Создание новых элементов несколькими способами:  
   
-        1.  Drag from the **Example Element** tool onto the diagram.  
+        1.  Перетащите из **Пример элемента** средство на схему.  
   
-        2.  In the **Example Model Explorer**, right-click the root node and then click **Add New Example Element**.  
+        2.  В **примере обозревателя моделей**, щелкните правой кнопкой мыши корневой узел и нажмите кнопку **Добавьте пример элемента**.  
   
-        3.  Copy and paste an element on the diagram.  
+        3.  Скопируйте и вставьте элемент на схеме.  
   
-    3.  Verify that you cannot use any of these ways to add more than four elements to the model. This is because they all use the Element Merge Directive.  
+    3.  Убедитесь, что нельзя использовать любой из этих способов добавления более четырех элементов модели. Это потому, что их директива слияния элементов.  
   
-## <a name="example-adding-custom-merge-code-to-an-emd"></a>Example: Adding Custom Merge code to an EMD  
- In custom merge code, you can define what happens when the user drags a tool or pastes onto an element. There are two ways to define a custom merge:  
+## <a name="example-adding-custom-merge-code-to-an-emd"></a>Пример: Добавление EMD слияния пользовательского кода  
+ В коде для настраиваемого объединения можно определить, что происходит, когда пользователь перетаскивает средство или вставляет данные в элемент. Существует два способа определения настраиваемого объединения:  
   
-1.  Set **Uses Custom Merge** and supply the required code. Your code replaces the generated merge code. Use this option if you want to completely redefine what the merge does.  
+1.  Задайте **слияния использует настраиваемый** и укажите требуемый код. Код заменяет слияния созданного кода. Используйте этот параметр, если требуется полностью переопределить назначение слияния.  
   
-2.  Override the `MergeRelate` method, and optionally the `MergeDisconnect` method. To do this, you must set the **Generates Double Derived** property of the domain class. Your code can call the generated merge code in the base class. Use this option if you want to perform additional operations after the merge has been performed.  
+2.  Переопределение `MergeRelate` метод и при необходимости `MergeDisconnect` метод. Для этого необходимо задать **создает двойную производную** Свойства класса домена. Код может вызвать слияния созданный код в базовом классе. Используйте этот параметр, если требуется выполнить дополнительные операции после выполнения слияния.  
   
- These approaches only affect merges that are performed by using this EMD. If you want to affect all ways in which the merged element can be created, an alternative is to define an `AddRule` on the embedding relationship and a `DeleteRule` on the merged domain class. For more information, see [Rules Propagate Changes Within the Model](../modeling/rules-propagate-changes-within-the-model.md).  
+ Эти подходы влияют только на слияния, которые выполняются с использованием этого EMD. Если вы хотите повлиять на все средства, в которых можно создать объединенный элемент, альтернативой является определение `AddRule` на отношение внедрения и `DeleteRule` в классе объединенных домена. Дополнительные сведения см. в разделе [Распространение изменений в модели правил](../modeling/rules-propagate-changes-within-the-model.md).  
   
-#### <a name="to-override-mergerelate"></a>To override MergeRelate  
+#### <a name="to-override-mergerelate"></a>Чтобы переопределить MergeRelate  
   
-1.  In the DSL definition, make sure that you have defined the EMD to which you want to add code. If you want, you can add paths and define custom accept code as described in the previous sections.  
+1.  В определении DSL убедитесь, что вы определили EMD, к которому требуется добавить код. Если требуется, можно добавить пути и определить настраиваемое принятие кода, как описано в предыдущих разделах.  
   
-2.  In the DslDefinition diagram, select the receiving class of the merge. Typically it is the class at the source end of an embedding relationship.  
+2.  В схеме DslDefinition выберите принимающего класса слияния. Обычно это класс в конце исходного отношения внедрения.  
   
-     For example, in a DSL generated from the Minimal Language solution, select `ExampleModel`.  
+     Например, в DSL, созданном из решения минимальный язык, выберите `ExampleModel`.  
   
-3.  In the **Properties** window, set **Generates Double Derived** to **true**.  
+3.  В **Свойства** установите **создает двойную производную** для **true**.  
   
-4.  Rebuild the solution.  
+4.  Выполните повторную сборку решения.  
   
-5.  Inspect the content of **Dsl\Generated Files\DomainClasses.cs**. Search for methods named `MergeRelate` and examine their contents. This will help you write your own versions.  
+5.  Проверить содержимое **Dsl\Generated Files\DomainClasses.cs**. Поиск методов с именами `MergeRelate` и просматривать их содержимое. Это поможет вам создавать собственные версии.  
   
-6.  In a new code file, write a partial class for the receiving class, and override the `MergeRelate` method. Remember to call the base method. For example:  
+6.  В новый файл кода, написать разделяемый класс для принимающего класса и переопределить `MergeRelate` метод. Не забудьте вызвать базовый метод. Например:  
   
-    ```csharp  
+    ```c#  
     partial class ExampleModel  
     {  
       /// <summary>  
@@ -258,66 +255,66 @@ The role of an Element Merge Directive
   
     ```  
   
-#### <a name="to-write-custom-merge-code"></a>To write Custom Merge code  
+#### <a name="to-write-custom-merge-code"></a>Написание кода пользовательского слияния  
   
-1.  In **Dsl\Generated Code\DomainClasses.cs**, inspect methods named `MergeRelate`. These methods create links between a new element and the existing model.  
+1.  В **Dsl\Generated Code\DomainClasses.cs**, проверки методов с именем `MergeRelate`. Эти методы создают связи между новый элемент и существующей модели.  
   
-     Also, inspect methods named `MergeDisconnect`. These methods unlink an element from the model when it is to be deleted.  
+     Проверьте, методы с именами `MergeDisconnect`. Эти методы разорвать связь элемента из модели, когда удаляется.  
   
-2.  In **DSL Explorer**, select or create the Element Merge Directive that you want to customize. In the **DSL Details** window, set **Uses Custom Merge**.  
+2.  В **Обозреватель DSL**, Выберите или создайте директива слияния элементов, которую нужно настроить. В **Подробные сведения о DSL** установите **слияния использует настраиваемый**.  
   
-     When you set this option, the **Process Merge** and **Forward Merge** options are ignored. Your code is used instead.  
+     При выборе этого параметра **процесс слияния** и **вперед слияния** параметры учитываются. Вместо этого используется код.  
   
-3.  Rebuild the solution. It will take longer than usual because the generated code files will be updated from the model.  
+3.  Выполните повторную сборку решения. Займет больше времени, чем обычно, так как созданные файлы кода будет обновляться из модели.  
   
-     Error messages will appear. Double-click the error messages to see the instructions in the generated code. These instructions ask you to supply two methods, `MergeRelate`*YourDomainClass* and `MergeDisconnect`*YourDomainClass*  
+     Будут отображаться сообщения об ошибках. Дважды щелкните сообщения об ошибках для получения инструкций в созданном коде. Эти инструкции предложит указать два метода `MergeRelate`*YourDomainClass* и `MergeDisconnect`*YourDomainClass*  
   
-4.  Write the methods in a partial class definition in a separate code file. The examples you inspected earlier should suggest what you need.  
+4.  Создайте методы в определение разделяемого класса в отдельном файле кода. Примеры можно проверить ранее должна предлагать вам требуется.  
   
- Custom merge code will not affect code that creates objects and relationships directly, and it will not affect other EMDs. To make sure that your additional changes are implemented regardless of how the element is created, consider writing an `AddRule` and a `DeleteRule` instead. For more information, see [Rules Propagate Changes Within the Model](../modeling/rules-propagate-changes-within-the-model.md).  
+ Код настраиваемого объединения не влияют на код, который создает объекты и отношения напрямую и не влияет на другие EMDs. Чтобы убедиться в том, что независимо от способа создания элемента реализованы дополнительные изменения, рассмотрите возможность записи `AddRule` и `DeleteRule` вместо. Дополнительные сведения см. в разделе [Распространение изменений в модели правил](../modeling/rules-propagate-changes-within-the-model.md).  
   
-## <a name="redirecting-a-merge-operation"></a>Redirecting a Merge Operation  
- A forward merge directive redirects the target of a merge operation. Typically, the new target is the embedding parent of the initial target.  
+## <a name="redirecting-a-merge-operation"></a>Перенаправление операции объединения  
+ Директива слияния прямой перенаправляет целевой объект операции слияния. Как правило новую цель является внедрение родительским исходного целевого объекта.  
   
- For example, in a DSL that was created with the component diagram template, Ports are embedded in Components. Ports are displayed as small shapes on the edge of a component shape. The user creates ports by dragging the Port tool onto a Component shape. But sometimes, the user mistakenly drags the Port tool onto an existing port, instead of the component, and the operation fails. This is an easy mistake when there are several existing ports. To help the user to avoid this nuisance, you can allow ports to be dragged onto an existing port, but have the action redirected to the parent component. The operation works as if the target element were the component.  
+ Например в DSL, который был создан с помощью шаблона схемы компонентов, порты встроены в компоненты. Порты, отображаются как небольшие фигуры на краю фигуры компонента. Пользователь создает порты перетаскиванием инструмента порта на форму компонента. Но иногда ошибочно перетаскиваемые пользователем средство Port существующий порт, вместо компонента, и операция завершится ошибкой. Это простой ошибки, когда существует несколько существующих портов. Чтобы помочь пользователю, чтобы избежать это неудобство, можно разрешить порты перетащить существующего порта, но действие перенаправляется родительского компонента. Операция работает так, будто целевой элемент компонента.  
   
- You can create a forward merge directive in the Component Model solution. If you compile and run the original solution, you should see that users can drag any number of **Input Port** or **Output Port** elements from the **Toolbox** to a **Component** element. However, they cannot drag a port to an existing port. The Unavailable pointer alerts them that this move is not enabled. However, you can create a forward merge directive so that a port that is unintentionally dropped on an existing **Input Port** is forwarded to the **Component** element.  
+ Можно создать директива слияния вперед в решении модели компонентов. Если скомпилировать и запустить исходного решения, вы увидите, что пользователи могут перетаскивать любое количество **входной порт** или **выходной порт** элементы из **элементов** для **компонент** элемента. Тем не менее они не смогут перетаскивать порта существующего порта. Указатель недоступен оповещения их не включен этот переход. Тем не менее, можно создать директива прямой слияния таким образом, порт, непреднамеренно удалены на существующем **входного порта** перенаправляется **компонент** элемента.  
   
-#### <a name="to-create-a-forward-merge-directive"></a>To create a forward merge directive  
+#### <a name="to-create-a-forward-merge-directive"></a>Чтобы создать директива слияния вперед  
   
-1.  Create a [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solution by using the Component Model template.  
+1.  Создание [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] решения с помощью шаблона модели компонентов.  
   
-2.  Display the **DSL Explorer** by opening DslDefinition.dsl.  
+2.  Отображение **Обозреватель DSL** открыв DslDefinition.dsl.  
   
-3.  In the **DSL Explorer**, expand **Domain Classes**.  
+3.  В **Обозреватель DSL**, разверните **классов доменов**.  
   
-4.  The **ComponentPort** abstract domain class is the base class of both **InPort** and **OutPort**. Right-click **ComponentPort** and then click **Add New Element Merge Directive**.  
+4.   **ComponentPort** абстрактного класса домена является базовым классом обоих **InPort** и **OutPort**. Щелкните правой кнопкой мыши **ComponentPort** и нажмите кнопку **добавьте директивы слияния новый элемент**.  
   
-     A new **Element Merge Directive** node appears under the **Element Merge Directives** node.  
+     Новый **директива слияния элементов** узел отображается в узле **директивы слияния элементов** узла.  
   
-5.  Select the **Element Merge Directive** node and open the **DSL Details** window.  
+5.  Выберите **директива слияния элементов** узел и откройте **Подробные сведения о DSL** окна.  
   
-6.  In the Indexing class list, select **ComponentPort**.  
+6.  Выберите в списке класса индексирования **ComponentPort**.  
   
-7.  Select **Forward merge to a different domain class**.  
+7.  Выберите **вперед слияния в другом домене класс**.  
   
-8.  In the path selection list, expand **ComponentPort**, expand **ComponentHasPorts**, and then select **Component**.  
+8.  В списке выбора пути, разверните **ComponentPort**, разверните **ComponentHasPorts**, а затем выберите **компонента**.  
   
-     The new path should resemble this one:  
+     Новый путь должен иметь примерно такой:  
   
      **ComponentHasPorts.Component/!Component**  
   
-9. Save the solution, and then transform the templates by clicking the rightmost button on the **Solution Explorer** toolbar.  
+9. Сохраните решение, а затем преобразует шаблоны, щелкнув правой кнопкой **обозревателе решений** инструментов.  
   
-10. Build and run the solution. A new instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] appears.  
+10. Постройте и запустите это решение. Новый экземпляр [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] отображается.  
   
-11. In **Solution Explorer**, open Sample.mydsl. The diagram and the **ComponentLanguage Toolbox** appear.  
+11. В **обозревателе**, откройте Sample.mydsl. Схемы и **элементов ComponentLanguage** отображаются.  
   
-12. Drag an **Input Port** from the **Toolbox** to another **Input Port.** Next, drag an **OutputPort** to an **InputPort** and then to another **OutputPort**.  
+12. Перетащите **входного порта** из **элементов** в другой **входного порта.** Затем перетащите **OutputPort** для **InputPort** и затем на другой **OutputPort**.  
   
-     You should not see the Unavailable pointer, and you should be able to drop the new **Input Port** on the existing one. Select the new **Input Port** and drag it to another point on the **Component**.  
+     Не должны видеть указатель недоступен, и можно будет удалить новый **входного порта** на существующую. Выберите новый **входного порта** и перетащите его на другую точку **компонента**.  
   
-## <a name="see-also"></a>See Also  
- [Navigating and Updating a Model in Program Code](../modeling/navigating-and-updating-a-model-in-program-code.md)   
- [Customizing Tools and the Toolbox](../modeling/customizing-tools-and-the-toolbox.md)   
- [Circuit Diagrams sample DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+## <a name="see-also"></a>См. также  
+ [Перемещение и обновление модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md)   
+ [Настройка элементов и панели элементов](../modeling/customizing-tools-and-the-toolbox.md)   
+ [Пример принципиальной схемы DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

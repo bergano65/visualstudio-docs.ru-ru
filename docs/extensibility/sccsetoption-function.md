@@ -1,105 +1,88 @@
 ---
-title: SccSetOption Function | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- SccSetOption
-helpviewer_keywords:
-- SccSetOption function
+title: "Функция SccSetOption | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "SccSetOption"
+helpviewer_keywords: 
+  - "Функция SccSetOption"
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
 caps.latest.revision: 13
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 66161c3f6de473b51f18b2318d96953c6705e7ef
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 13
 ---
-# <a name="sccsetoption-function"></a>SccSetOption Function
-This function sets options that control the behavior of the source control plug-in.  
+# Функция SccSetOption
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Эта функция задает параметры, которые управляют поведением подключаемый модуль системы управления версиями.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
+```cpp#  
 SCCRTN SccSetOption(  
-   LPVOID pvContext,  
-   LONG   nOption,  
-   LONG   dwVal  
+   LPVOID pvContext,  
+   LONG   nOption,  
+   LONG   dwVal  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  pvContext  
- [in] The source control plug-in context structure.  
+ \[in\] Структура подключаемого модуля контекста исходного элемента управления.  
   
  nOption  
- [in] The option that is being set.  
+ \[in\] Параметр, который устанавливается.  
   
  dwVal  
- [in] Settings for the option.  
+ \[in\] Настройки для параметра.  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## Возвращаемое значение  
+ Реализации подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Value|Description|  
-|-----------|-----------------|  
-|SCC_OK|The option was successfully set.|  
-|SCC_I_SHARESUBPROJOK|Returned if `nOption` was `SCC_OPT_SHARESUBPROJ` and the source control plug-in allows the IDE to set the destination folder.|  
-|SCC_E_OPNOTSUPPORTED|The option was not set and should not be relied upon.|  
+|Значение|Описание|  
+|--------------|--------------|  
+|SCC\_OK|Параметр был успешно установлен.|  
+|SCC\_I\_SHARESUBPROJOK|Если возвращенный `nOption` был `SCC_OPT_SHARESUBPROJ` и подключаемый модуль системы управления версиями обеспечивает интегрированную среду разработки задать папку назначения.|  
+|SCC\_E\_OPNOTSUPPORTED|Параметр не установлен и не следует полагаться на.|  
   
-## <a name="remarks"></a>Remarks  
- The IDE calls this function to control the behavior of the source control plug-in. The first parameter, `nOption`, indicates the value that is being set, while the second, `dwVal`, indicates what to do with that value. The plug-in stores this information associated with a `pvContext``,` so the IDE must call this function after calling the [SccInitialize](../extensibility/sccinitialize-function.md) (but not necessarily after each call to the [SccOpenProject](../extensibility/sccopenproject-function.md)).  
+## Заметки  
+ IDE вызывает эту функцию для управления поведением подключаемый модуль системы управления версиями. Первый параметр, `nOption`, указывает значение, которое задается, а для второго `dwVal`, указывает, что делать с этим значением. Подключаемый модуль сохраняет эти сведения, связанные с `pvContext``,` эту функцию необходимо вызывать в Интегрированной среде разработки после вызова метода [SccInitialize](../extensibility/sccinitialize-function.md) \(но не обязательно после каждого вызова [SccOpenProject](../extensibility/sccopenproject-function.md)\).  
   
- Summary of the options and their values:  
+ Сводка параметров и их значений.  
   
-|`nOption`|`dwValue`|Description|  
-|---------------|---------------|-----------------|  
-|`SCC_OPT_EVENTQUEUE`|`SCC_OPT_EQ_DISABLE`<br /><br /> `SCC_OPT_EQ_ENABLE`|Enables/disables background event queuing.|  
-|`SCC_OPT_USERDATA`|Arbitrary value|Specifies a user value to be passed to the [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) callback function.|  
-|`SCC_OPT_HASCANCELMODE`|`SCC_OPT_HCM_NO`<br /><br /> `SCC_OPT_HCM_YES`|Indicates whether the IDE currently supports canceling an operation.|  
-|`SCC_OPT_NAMECHANGEPFN`|Pointer to the [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) callback function|Sets a pointer to a name-change callback function.|  
-|`SCC_OPT_SCCCHECKOUTONLY`|`SCC_OPT_SCO_NO`<br /><br /> `SCC_OPT_SCO_YES`|Indicates whether the IDE allows the checking out of its files manually (through the source control user interface) or whether they must be checked out only through the source control plug-in.|  
-|`SCC_OPT_SHARESUBPROJ`|N/A|If the source control plug-in allows the IDE to specify the local project folder, the plug-in returns `SCC_I_SHARESUBPROJOK`.|  
+|`nOption`|`dwValue`|Описание|  
+|---------------|---------------|--------------|  
+|`SCC_OPT_EVENTQUEUE`|`SCC_OPT_EQ_DISABLE`<br /><br /> `SCC_OPT_EQ_ENABLE`|Включает или отключает фоновую очереди событий.|  
+|`SCC_OPT_USERDATA`|Произвольное значение|Указывает значение пользователя должны быть переданы [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) функции обратного вызова.|  
+|`SCC_OPT_HASCANCELMODE`|`SCC_OPT_HCM_NO`<br /><br /> `SCC_OPT_HCM_YES`|Указывает, Интегрированной в настоящее время поддерживает отмену операции.|  
+|`SCC_OPT_NAMECHANGEPFN`|Указатель на [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) функции обратного вызова|Задает указатель на функцию обратного вызова для изменения имени.|  
+|`SCC_OPT_SCCCHECKOUTONLY`|`SCC_OPT_SCO_NO`<br /><br /> `SCC_OPT_SCO_YES`|Указывает, разрешено ли Интегрированной проверки из его файлов вручную \(через пользовательский интерфейс управления источника\) или ли они должны быть извлечены только с помощью подключаемого модуля системы управления версиями.|  
+|`SCC_OPT_SHARESUBPROJ`|Н\/Д|Если подключаемый модуль системы управления версиями позволяет интегрированной среды разработки указать папку локального проекта, подключаемый модуль возвращает `SCC_I_SHARESUBPROJOK`.|  
   
-## <a name="sccopteventqueue"></a>SCC_OPT_EVENTQUEUE  
- If `nOption` is `SCC_OPT_EVENTQUEUE`, the IDE is disabling (or re-enabling) background processing. For instance, during a compile, the IDE might instruct the source control plug-in to stop on-idle processing of any kind. After the compile, it would re-enable background processing to keep the plug-in's event queue up to date. Corresponding to the `SCC_OPT_EVENTQUEUE` value of `nOption`, there are two possible values for `dwVal`, namely, `SCC_OPT_EQ_ENABLE` and `SCC_OPT_EQ_DISABLE`.  
+## SCC\_OPT\_EVENTQUEUE  
+ Если `nOption` является `SCC_OPT_EVENTQUEUE`, IDE отключения \(или повторного включения\) фоновой обработки. Например во время компиляции, системы управления версиями, подключаемый модуль для остановки обработки при простое каких дать интегрированной среды разработки. После компиляции он бы включить фоновую обработку обновления подключаемых в очередь событий. Соответствующий `SCC_OPT_EVENTQUEUE` значение `nOption`, существует два возможных значения `dwVal`, а именно, `SCC_OPT_EQ_ENABLE` и `SCC_OPT_EQ_DISABLE`.  
   
-## <a name="sccopthascancelmode"></a>SCC_OPT_HASCANCELMODE  
- If the value for `nOption` is `SCC_OPT_HASCANCELMODE`, the IDE allows users to cancel long operations. Setting `dwVal` to `SCC_OPT_HCM_NO` (the default) indicates that the IDE has no cancel mode. The source control plug-in must offer its own Cancel button if it wants the user to be able to cancel. `SCC_OPT_HCM_YES` indicates that the IDE provides the ability to cancel an operation, so the SCC plug-in does not need to display its own Cancel button. If the IDE sets `dwVal` to `SCC_OPT_HCM_YES`, it is prepared to respond to `SCC_MSG_STATUS` and `DOCANCEL` messages sent to the `lpTextOutProc` callback function (see [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)). If the IDE does not set this variable, the plug-in should not send these two messages.  
+## SCC\_OPT\_HASCANCELMODE  
+ Если значение `nOption` является `SCC_OPT_HASCANCELMODE`, интегрированная среда разработки позволяет пользователям отменить длительных операций. Параметр `dwVal` для `SCC_OPT_HCM_NO` \(по умолчанию\) означает, что IDE режим без отмены. Подключаемый модуль системы управления версиями должна предлагать кнопку "Отмена", если ему, чтобы пользователь имел возможность отменить.`SCC_OPT_HCM_YES` Указывает, что интегрированная среда разработки предоставляет возможность отменить операцию, поэтому SCC подключаемого модуля не нужно отображать кнопку "Отмена". Если задает интегрированной среды разработки `dwVal` для `SCC_OPT_HCM_YES`, он готов реагировать на `SCC_MSG_STATUS` и `DOCANCEL` сообщения, отправляемые `lpTextOutProc` функции обратного вызова \(см. [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)\). Если интегрированная среда разработки не этой переменной, подключаемый модуль не следует отправлять эти два сообщения.  
   
-## <a name="sccoptnamechangepfn"></a>SCC_OPT_NAMECHANGEPFN  
- If nOption is set to `SCC_OPT_NAMECHANGEPFN`, and both the source control plug-in and the IDE allow it, the plug-in can actually rename or move a file during a source control operation. The `dwVal` will be set to a function pointer of type [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md). During a source control operation, the plug-in can call this function, passing in three parameters. These are the old name (with fully qualified path) of a file, the new name (with fully qualified path) of that file, and a pointer to information that has relevance to the IDE. The IDE sends in this last pointer by calling `SccSetOption` with `nOption` set to `SCC_OPT_USERDATA`, with `dwVal` pointing to the data. Support for this function is optional. A VSSCI plug-that uses this ability must initialize its function pointer and user data variables to `NULL`, and it must not call a rename function unless it has been given one. It should also be prepared to hold the value it was given or to change it in response to a new call to `SccSetOption`. This will not happen in the middle of a source control command operation, but it may happen between commands.  
+## SCC\_OPT\_NAMECHANGEPFN  
+ Если значение nOption `SCC_OPT_NAMECHANGEPFN`, и в исходном разрешить подключаемый модуль системы управления и интегрированной среды разработки, подключаемый модуль можно действительно переименовать или переместить файл во время операции системы управления версиями.`dwVal` Значение указателя функции типа [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md). Во время операции управления версиями подключаемый модуль можно вызвать эту функцию, передавая три параметра. Это старое имя файла, новое имя \(с полным путем\), этот файл и указатель на данные, имеет отношение к Интегрированной среде разработки \(с полным путем\). Отправляет интегрированной среды разработки, вызвав этот последний указатель `SccSetOption` с `nOption` значение `SCC_OPT_USERDATA`, с `dwVal` указывающий на данные. Поддержка этой функции является необязательным. Подключаемые VSSCI\-что использует эту возможность необходимо инициализировать его функция указателя и пользовательские данные переменные для `NULL`, и его не следует вызывать функцией переименования, если он присвоен один. Оно также должно быть готово для хранения значения, переданного или изменить его в ответ на вызов нового `SccSetOption`. Это не будет происходить в середине операции команды управления версиями, но это может произойти между командами.  
   
-## <a name="sccoptscccheckoutonly"></a>SCC_OPT_SCCCHECKOUTONLY  
- If nOption is set to `SCC_OPT_SCCCHECKOUTONLY`, the IDE is indicating that the files in the currently open project should never be checked out manually through the source control system's user interface. Instead, the files should be checked out only through the source control plug-in under IDE control. If `dwValue` is set to `SCC_OPT_SCO_NO`, it means that the files should be treated normally by the plug-in and can be checked out through the source control UI. If `dwValue` is set to `SCC_OPT_SCO_YES`, then only the plug-in is allowed to check out files, and the source control system's UI should not be invoked. This is for situations where the IDE might have "pseudo-files" that make sense to check out only through the IDE.  
+## SCC\_OPT\_SCCCHECKOUTONLY  
+ Если значение nOption `SCC_OPT_SCCCHECKOUTONLY`, интегрированной среды разработки указывает, что файлы в текущем открытом проекте следует никогда не извлечь вручную через пользовательский интерфейс системы управления версиями. Вместо этого файлы должны быть извлечен только с помощью системы управления версиями, подключаемый модуль под контролем интегрированной среды разработки. Если `dwValue` имеет значение `SCC_OPT_SCO_NO`, это означает, что файлы должны рассматриваться обычно подключаемым модулем и может быть извлечен через пользовательский Интерфейс системы управления версиями. Если `dwValue` имеет значение `SCC_OPT_SCO_YES`, затем только подключаемый модуль может извлекать файлы и не должны вызываться пользовательского интерфейса системы управления версиями. Это предназначено для ситуаций, где интегрированной среды разработки может быть «псевдо файлы», которые имеют смысл для извлечения только с помощью интегрированной среды разработки.  
   
-## <a name="sccoptsharesubproj"></a>SCC_OPT_SHARESUBPROJ  
- If`nOption` is set to `SCC_OPT_SHARESUBPROJ`, the IDE is testing whether the source control plug-in can use a specified local folder when adding files from source control. The value of the `dwVal` parameter does not matter in this case. If the plug-in allows the IDE to specify the local destination folder where the files will be added from source control when the [SccAddFromScc](../extensibility/sccaddfromscc-function.md) is called, then the plug-in must return `SCC_I_SHARESUBPROJOK` when the `SccSetOption` function is called. The IDE then uses the `lplpFileNames` parameter of the `SccAddFromScc` function to pass in the destination folder. The plug-in uses that destination folder to place the files added from source control. If the plug-in does not return `SCC_I_SHARESUBPROJOK` when the `SCC_OPT_SHARESUBPROJ` option is set, the IDE assumes that the plug-in is able to add files only in the current local folder.  
+## SCC\_OPT\_SHARESUBPROJ  
+ Если`nOption` имеет значение `SCC_OPT_SHARESUBPROJ`, интегрированной среды разработки тестирование ли подключаемый модуль системы управления версиями можно использовать указанную локальную папку при добавлении файлов из системы управления версиями. Значение `dwVal` параметр не имеет значения, в этом случае. Если подключаемый модуль позволяет интегрированной среды разработки указать локальную целевую папку, куда будут добавлены файлы из источника элемент управления, когда [SccAddFromScc](../extensibility/sccaddfromscc-function.md) вызывается, а затем подключаемый модуль должен возвращать `SCC_I_SHARESUBPROJOK` при `SccSetOption` вызове функции. Интегрированная среда разработки использует `lplpFileNames` параметр `SccAddFromScc` функции для передачи в конечную папку. Подключаемый модуль использует конечной папки для размещения файлов, добавленных в системе управления версиями. Если подключаемый модуль не возвращает `SCC_I_SHARESUBPROJOK` при `SCC_OPT_SHARESUBPROJ` был установлен, интегрированной среды разработки предполагает, что подключаемый модуль является возможность добавлять файлы только в локальной папке текущей.  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
+## См. также  
+ [Функции API подключаемого модуля источника элемента управления](../extensibility/source-control-plug-in-api-functions.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)   
  [SccAddFromScc](../extensibility/sccaddfromscc-function.md)   

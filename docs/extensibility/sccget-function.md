@@ -1,123 +1,106 @@
 ---
-title: SccGet Function | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- SccGet
-helpviewer_keywords:
-- SccGet function
+title: "Функция SccGet | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "SccGet"
+helpviewer_keywords: 
+  - "Функция SccGet"
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 14
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 2c761f90eaf4882407122336827e2d95f3edf2ac
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 14
 ---
-# <a name="sccget-function"></a>SccGet Function
-This function retrieves a copy of one or more files for viewing and compiling but not for editing. In most systems, the files are tagged as read-only.  
+# Функция SccGet
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Эта функция извлекает копию один или несколько файлов для просмотра и компиляции, но не для изменения. В большинстве систем файлы помечены как доступные только для чтения.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
+```cpp#  
 SCCRTN SccGet(  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LONG      nFiles,  
-   LPCSTR*   lpFileNames,  
-   LONG      fOptions,  
-   LPCMDOPTS pvOptions  
+   LPVOID    pvContext,  
+   HWND      hWnd,  
+   LONG      nFiles,  
+   LPCSTR*   lpFileNames,  
+   LONG      fOptions,  
+   LPCMDOPTS pvOptions  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  pvContext  
- [in] The context structure of the source control plug-in.  
+ \[in\] Структура контекста подключаемый модуль системы управления версиями.  
   
  hWnd  
- [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
+ \[in\] Дескриптор окна интегрированной среды разработки, подключаемый модуль системы управления версиями можно использовать в качестве родительского для все диалоговые окна, которые он предоставляет.  
   
  nFiles  
- [in] Number of files specified in the `lpFileNames` array.  
+ \[in\] Число файлов, указанных в `lpFileNames` массива.  
   
  lpFileNames  
- [in] Array of fully qualified names of files to be retrieved.  
+ \[in\] Массив полных имен файлов для извлечения.  
   
- fOptions  
- [in] Command flags (`SCC_GET_ALL`, `SCC_GET_RECURSIVE`).  
+ Возможности  
+ \[in\] Команда флаги \(`SCC_GET_ALL`, `SCC_GET_RECURSIVE`\).  
   
  pvOptions  
- [in] Source control plug-in-specific options.  
+ \[in\] Параметры конкретного подключаемого модуля системы управления версиями.  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## Возвращаемое значение  
+ Реализации подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Value|Description|  
-|-----------|-----------------|  
-|SCC_OK|Success of get operation.|  
-|SCC_E_FILENOTCONTROLLED|The file is not under source control.|  
-|SCC_E_OPNOTSUPPORTED|The source control system does not support this operation.|  
-|SCC_E_FILEISCHECKEDOUT|Cannot get the file that the user currently has checked out.|  
-|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
-|SCC_E_NOSPECIFIEDVERSION|Specified an invalid version or date/time.|  
-|SCC_E_NONSPECIFICERROR|Nonspecific failure; file was not synchronized.|  
-|SCC_I_OPERATIONCANCELED|Operation cancelled before completion.|  
-|SCC_E_NOTAUTHORIZED|The user is not authorized to perform this operation.|  
+|Значение|Описание|  
+|--------------|--------------|  
+|SCC\_OK|Успешное выполнение операции получения.|  
+|SCC\_E\_FILENOTCONTROLLED|Файл не существует в системе управления версиями.|  
+|SCC\_E\_OPNOTSUPPORTED|Система управления версиями не поддерживает эту операцию.|  
+|SCC\_E\_FILEISCHECKEDOUT|Не удалось получить файл, который пользователь в данный момент извлечен.|  
+|SCC\_E\_ACCESSFAILURE|Произошла ошибка при доступе к системе управления версиями, вероятно, из\-за проблемы с сетью или конфликтов. Рекомендуется повторить операцию.|  
+|SCC\_E\_NOSPECIFIEDVERSION|Задана недопустимая версия или даты и времени.|  
+|SCC\_E\_NONSPECIFICERROR|Неспецифическая ошибка; файл не был синхронизирован.|  
+|SCC\_I\_OPERATIONCANCELED|Операция отменена до завершения.|  
+|SCC\_E\_NOTAUTHORIZED|Пользователь не авторизован для выполнения этой операции.|  
   
-## <a name="remarks"></a>Remarks  
- This function is called with a count and an array of names of the files to be retrieved. If the IDE passes the flag `SCC_GET_ALL`, this means that the items in `lpFileNames` are not files but directories, and that all files under source control in the given directories are to be retrieved.  
+## Заметки  
+ Эта функция вызывается с числом и массив имен файлов для извлечения. Если флаг передает IDE `SCC_GET_ALL`, это означает, что элементы в `lpFileNames` не файлы, но каталоги, и все файлы в системе управления версиями в заданной каталоги должны быть получены.  
   
- The `SCC_GET_ALL` flag can be combined with the `SCC_GET_RECURSIVE` flag to retrieve all files in the given directories and all subdirectories as well.  
+ `SCC_GET_ALL` Флаг может сочетаться с `SCC_GET_RECURSIVE` для получения всех файлов в данной каталоги и все подкаталоги.  
   
 > [!NOTE]
->  `SCC_GET_RECURSIVE` should never be passed without `SCC_GET_ALL`. Also, note that if directories C:\A and C:\A\B are both passed on a recursive get, C:\A\B and all its subdirectories will actually be retrieved twice. It is the IDE's responsibility—and not the source control plug-in's—to make sure that duplicates such as this are kept out of the array.  
+>  `SCC_GET_RECURSIVE` никогда не должны быть переданы без `SCC_GET_ALL`. Обратите внимание, что если каталоги C:\\A и C:\\A\\B, переданный на рекурсивное get C:\\A\\B и всех его подкаталогах фактически извлекается дважды. Ответственность IDE — и не системы управления версиями подключаемого модуля, чтобы убедиться в том, что дубликаты такие исключены из массива.  
   
- Finally, even if a source control plug-in specified the `SCC_CAP_GET_NOUI` flag on initialization, indicating that it does not have a user interface for a Get command, this function may still be called by the IDE to retrieve files. The flag simply means that the IDE does not display a Get menu item and that the plug-in is not expected to provide any UI.  
+ Наконец, даже если из системы управления версиями подключаемого модуля указан `SCC_CAP_GET_NOUI` флаг инициализации, указывающее, что не имеет пользовательский интерфейс для команды Get, эта функция может вызываться в интегрированной среде разработки для извлечения файлов. Флаг просто означает, что IDE не отображается пункт меню Get и что подключаемый модуль не должен предоставлять никаких элементов пользовательского интерфейса.  
   
-## <a name="renaming-and-sccget"></a>Renaming and SccGet  
- Situation: a user checks out a file, for example, a.txt, and modifies it. Before a.txt can be checked in, a second user renames a.txt to b.txt in the source control database, checks out b.txt, makes some modifications to the file, and checks the file in. The first user wants the changes made by the second user so the first user renames their local version of a.txt file to b.txt and does a get on the file. However, the local cache that keeps track of version numbers still thinks the first version of a.txt is stored locally and so source control cannot resolve the differences.  
+## Переименование и SccGet  
+ Ситуация: пользователь извлекает файл, например, a.txt и изменяет его. Перед возвратом a.txt, второй пользователь переименовывает a.txt в b.txt в базе данных управления версиями, извлекает b.txt, вносит некоторые изменения в файл и проверяет файле. Первый пользователь хочет изменения, сделанные вторым пользователем, первый пользователь переименовывает их локальной версии файла a.txt в b.txt и выполняет запрос get для файла. Тем не менее локальный кэш, который хранит номер версии по\-прежнему считает первой версии a.txt сохраняются на локальном компьютере и поэтому системы управления версиями не может устранить различия.  
   
- There are two ways to resolve this situation where the local cache of source control versions becomes out of sync with the source control database:  
+ Существует два способа разрешить эту ситуацию, когда локальный кэш версии элемента управления исходным кодом становится синхронизирован с базы данных управления версиями:  
   
-1.  Do not allow renaming a file in the source control database that is currently checked out.  
+1.  Не разрешать переименование файла в базы данных управления версиями, который в данный момент извлечен.  
   
-2.  Do the equivalent of "delete old" followed by "add new". The following algorithm is one way to accomplish this.  
+2.  Сделать эквивалент «удалить старые» а затем «добавить». Следующий алгоритм — один из способов это сделать.  
   
-    1.  Call the [SccQueryChanges](../extensibility/sccquerychanges-function.md) function to learn about the renaming of a.txt to b.txt in the source control database.  
+    1.  Вызов [SccQueryChanges](../extensibility/sccquerychanges-function.md) функции, чтобы узнать о переименовании a.txt в b.txt в базе данных управления версиями.  
   
-    2.  Rename the local a.txt to b.txt.  
+    2.  Переименование локальной a.txt в b.txt.  
   
-    3.  Call the `SccGet` function for both a.txt and b.txt.  
+    3.  Вызов `SccGet` для a.txt и b.txt функцию.  
   
-    4.  Because a.txt does not exist in the source control database, the local version cache is purged of the missing a.txt version information.  
+    4.  Поскольку a.txt не существует в базе данных управления версиями, кэш локальная версия удаляется отсутствует a.txt сведений о версии.  
   
-    5.  The b.txt file being checked out is merged with the contents of the local b.txt file.  
+    5.  Извлеченного файла b.txt объединяется с содержимым файла локального b.txt.  
   
-    6.  The updated b.txt file can now be checked in.  
+    6.  Теперь могут быть возвращены b.txt обновленный файл.  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
- [Bitflags Used by Specific Commands](../extensibility/bitflags-used-by-specific-commands.md)
+## См. также  
+ [Функции API подключаемого модуля источника элемента управления](../extensibility/source-control-plug-in-api-functions.md)   
+ [Битовые флаги, используемые команды](../extensibility/bitflags-used-by-specific-commands.md)

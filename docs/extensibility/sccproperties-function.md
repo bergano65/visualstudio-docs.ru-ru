@@ -1,81 +1,64 @@
 ---
-title: SccProperties Function | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- SccProperties
-helpviewer_keywords:
-- SccProperties function
+title: "Функция SccProperties | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "SccProperties"
+helpviewer_keywords: 
+  - "Функция SccProperties"
 ms.assetid: 1bed38c9-73d2-4474-9717-f9dc26a89cbe
 caps.latest.revision: 14
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: ce333ce31ffb7f265677837dc7fc27b0ac502c0b
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 14
 ---
-# <a name="sccproperties-function"></a>SccProperties Function
-This function displays source control properties for a file or project.  
+# Функция SccProperties
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Эта функция отображает свойства системы управления версиями для файла или проекта.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
+```cpp#  
 SCCRTN SccProperties (  
-   LPVOID pvContext,  
-   HWND   hWnd,  
-   LPCSTR lpFileName  
+   LPVOID pvContext,  
+   HWND   hWnd,  
+   LPCSTR lpFileName  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  pvContext  
- [in] The source control plug-in context structure.  
+ \[in\] Структура подключаемого модуля контекста исходного элемента управления.  
   
  hWnd  
- [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
+ \[in\] Дескриптор окна интегрированной среды разработки, подключаемый модуль системы управления версиями можно использовать в качестве родительского для все диалоговые окна, которые он предоставляет.  
   
  lpFileName  
- [in] The fully qualified path name of the file or project.  
+ \[in\] Полное имя файла или проекта.  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## Возвращаемое значение  
+ Реализации подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Value|Description|  
-|-----------|-----------------|  
-|SCC_OK|Properties were successfully displayed.|  
-|SCC_I_RELOADFILE|The version control system has modified the file properties, so the IDE should reload this file.|  
-|SCC_E_PROJNOTOPEN|The specified project has not been opened in source control.|  
-|SCC_E_NOTAUTHORIZED|The user is not authorized to view properties of this file or project.|  
-|SCC_E_FILENOTCONTROLLED|The specified file or project is not under source control.|  
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|An unknown or general error occurred.|  
+|Значение|Описание|  
+|--------------|--------------|  
+|SCC\_OK|Отобразить свойства были успешно.|  
+|SCC\_I\_RELOADFILE|Системы управления версиями изменил свойства файла, поэтому интегрированной среды разработки следует перезагрузить этот файл.|  
+|SCC\_E\_PROJNOTOPEN|Указанный проект не был открыт в системе управления версиями.|  
+|SCC\_E\_NOTAUTHORIZED|Пользователь не авторизован для просмотра свойств файла или проекта.|  
+|SCC\_E\_FILENOTCONTROLLED|Указанный файл или проект не в системе управления версиями.|  
+|SCC\_E\_NONSPECIFICERROR<br /><br /> SCC\_E\_UNKNOWNERROR|Произошла ошибка неизвестного или Общие.|  
   
-## <a name="remarks"></a>Remarks  
- The source control plug-in displays the properties in its own dialog box.  
+## Заметки  
+ Подключаемый модуль системы управления версиями отображаются свойства в диалоговом окне свои собственные.  
   
- The properties are defined by the source control plug-in and may differ from plug-in to plug-in. If the plug-in allows the user to change the source control properties of a file, it should return `SCC_I_RELOAD` to signal the IDE that this file or project needs to be reloaded.  
+ Свойства определяются посредством подключаемого модуля системы управления версиями и может отличаться от подключаемого модуля для подключаемого модуля. Если подключаемый модуль позволяет пользователю изменить свойства элемента управления источника файла, он должен вернуть `SCC_I_RELOAD` сигнала Интегрированной среде разработки, этот файл или проект необходимо перезагрузить.  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)
+## См. также  
+ [Функции API подключаемого модуля источника элемента управления](../extensibility/source-control-plug-in-api-functions.md)
