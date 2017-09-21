@@ -1,105 +1,88 @@
 ---
-title: THREADPROPERTIES | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- THREADPROPERTIES
-helpviewer_keywords:
-- THREADPROPERTIES structure
+title: "THREADPROPERTIES | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "THREADPROPERTIES"
+helpviewer_keywords: 
+  - "Структура THREADPROPERTIES"
 ms.assetid: 7d397207-db03-4ec0-9f79-3794056ed89f
 caps.latest.revision: 8
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: a759b577e9b1af18773744dd2f391a570683876f
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 8
 ---
-# <a name="threadproperties"></a>THREADPROPERTIES
-Describes the properties of a thread.  
+# THREADPROPERTIES
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Описывает свойства потока.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
-typedef struct _tagTHREADPROPERTIES {   
-   THREADPROPERTY_FIELDS dwFields;  
-   DWORD                 dwThreadId;  
-   DWORD                 dwSuspendCount;  
-   DWORD                 dwThreadState;  
-   BSTR                  bstrPriority;  
-   BSTR                  bstrName;  
-   BSTR                  bstrLocation;  
+```cpp#  
+typedef struct _tagTHREADPROPERTIES {   
+   THREADPROPERTY_FIELDS dwFields;  
+   DWORD                 dwThreadId;  
+   DWORD                 dwSuspendCount;  
+   DWORD                 dwThreadState;  
+   BSTR                  bstrPriority;  
+   BSTR                  bstrName;  
+   BSTR                  bstrLocation;  
 } THREADPROPERTIES;  
 ```  
   
-```csharp  
-public struct THREADPROPERTIES {   
-   public uint   dwFields;  
-   public uint   dwThreadId;  
-   public uint   dwSuspendCount;  
-   public uint   dwThreadState;  
-   public string bstrPriority;  
-   public string bstrName;  
-   public string bstrLocation;  
+```c#  
+public struct THREADPROPERTIES {   
+   public uint   dwFields;  
+   public uint   dwThreadId;  
+   public uint   dwSuspendCount;  
+   public uint   dwThreadState;  
+   public string bstrPriority;  
+   public string bstrName;  
+   public string bstrLocation;  
 };  
 ```  
   
-## <a name="members"></a>Members  
+## Члены  
  dwFields  
- A combination of flags from the [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumeration, describing which fields in this structure are valid.  
+ Комбинация из пометит [THREADPROPERTY\_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) перечисление, описывающее, какие поля в этой структуре допустимым.  
   
  dwThreadId  
- The thread ID.  
+ Идентификатор потока.  
   
  dwSuspendCount  
- The thread suspend count.  
+ Поток приостанавливается число.  
   
  dwThreadState  
- A value from the [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) enumeration indicating the state of the operating thread.  
+ Значение [СОСТОЯНИЯ ПОТОКА](../../../extensibility/debugger/reference/threadstate.md) перечисление, указывающее состояние потока operating.  
   
  bstrPriority  
- A string specifying the thread priority; for example, "Above Normal", "Normal", or "Time Critical".  
+ Строка, указывающая приоритет потока. например, "для обычного", "Обычным" или "время" критическим.  
   
  bstName  
- The thread name.  
+ Имя потока.  
   
  bstrLocation  
- The thread location (usually the topmost stack frame), typically expressed as the name of the method where execution is currently halted.  
+ Расположение потока \(обычно является самым верхним кадром стека\), обычно выраженное как имя метода, где выполнение в данный момент прерывании работы.  
   
-## <a name="remarks"></a>Remarks  
- This structure is filled in by a call to the [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) method. The information so returned is typically used in populating the **Threads** window.  
+## Заметки  
+ Эта структура заполняемую вызовом [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) метод.  Таким образом, возвращаемые сведения обычно используется для заполнения **потоки** окна.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## Требования  
+ Заголовок: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## См. также  
+ [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)   
- [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)   
- [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md)
+ [THREADPROPERTY\_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)   
+ [СОСТОЯНИЯ ПОТОКА](../../../extensibility/debugger/reference/threadstate.md)

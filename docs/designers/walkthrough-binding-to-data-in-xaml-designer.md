@@ -1,55 +1,38 @@
 ---
-title: 'Walkthrough: Binding to data in XAML Designer | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- VS.XamlDesigner.DataBinding
+title: "Пошаговое руководство. Привязка к данным в конструкторе XAML | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "VS.XamlDesigner.DataBinding"
 ms.assetid: 1a99aeae-c3ef-407d-ba79-b8055489a43d
 caps.latest.revision: 20
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: bcbe5e55c766a9e66af06590c86760173f32fbea
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+author: "kempb"
+ms.author: "kempb"
+manager: "ghogen"
+caps.handback.revision: 20
 ---
-# <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Walkthrough: Binding to data in XAML Designer
-In XAML Designer, you can set data binding properties by using the artboard and the Properties window. The example in this walkthrough shows how to bind data to a control. Specifically, the walkthrough shows how to create a simple shopping cart class that has a [DependencyProperty](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) named `ItemCount`, and then bind the `ItemCount` property to the **Text** property of a [TextBlock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) control.  
+# Пошаговое руководство. Привязка к данным в конструкторе XAML
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+В конструкторе XAML можно задать свойства привязки данных с помощью области рисования и в окне "Свойства".  В примере в этом пошаговом руководстве показано, как привязать данные к элементу управления.  В частности, здесь демонстрируется, как создать простой класс покупательской корзины со свойством типа [DependencyProperty](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) с именем `ItemCount`, и затем привязать свойство `ItemCount` к свойству **Text** элемента управления [TextBlock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx).  
   
-### <a name="to-create-a-class-to-use-as-a-data-source"></a>To create a class to use as a data source  
+### Создание класса для использования в качестве источника данных  
   
-1.  On the **File** menu, choose **New**, **Project**.  
+1.  В меню **Файл** последовательно выберите пункты **Создать** и **Проект**.  
   
-2.  In the **New Project** dialog box, choose either the **Visual C#** or **Visual Basic** node, expand the **Windows Desktop** node, and then choose the **WPF Application** template.  
+2.  В диалоговом окне **Новый проект** разверните узел **Visual C\#** или **Visual Basic**, разверните узел **Настольный компьютер Windows** и выберите шаблон **Приложение WPF**.  
   
-3.  Name the project **BindingTest**, and then choose the **OK** button.  
+3.  Укажите BindingTest в качестве имени проекта и нажмите кнопку **ОК**.  
   
-4.  Open the MainWindow.xaml.cs (or MainWindow.xaml.vb) file and add the following code. In C#, add the code in the `BindingTest` namespace (before the final closing parenthesis in the file). In Visual Basic, just add the new class.  
+4.  Откройте файл MainWindow.xaml.cs \(или MainWindow.xaml.vb\) и добавьте следующий код.  В C\# добавьте код в пространстве имен `BindingTest` \(перед последней закрывающей скобкой в файле\).  В Visual Basic просто добавьте новый класс.  
   
-    ```csharp  
+    ```c#  
     public class ShoppingCart : DependencyObject  
     {  
         public int ItemCount  
@@ -82,38 +65,38 @@ In XAML Designer, you can set data binding properties by using the artboard and 
     End Class  
     ```  
   
-     This code sets a value of 0 as the default item count by using the [PropertyMetadata](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.propertymetadata.aspx) object.  
+     Этот код задает значение 0 как число элементов по умолчанию с помощью объекта [PropertyMetadata](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.propertymetadata.aspx).  
   
-5.  On the **File** menu, choose **Build**, **Build Solution**.  
+5.  В меню **Файл** выберите **Построение** и **Построить решение**.  
   
-### <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>To bind the ItemCount property to a TextBlock control  
+### Привязка свойства ItemCount к элементу управления TextBlock  
   
-1.  In Solution Explorer, open the shortcut menu for MainWindow.xaml and choose **View Designer**.  
+1.  В обозревателе решений откройте контекстное меню файла MainWindow.xaml и выберите **Конструктор представлений**.  
   
-2.  In the Toolbox, choose a [Grid](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) control and add it to the form.  
+2.  В области элементов выберите элемент управления [Сетка](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) и добавьте его на форму.  
   
-3.  With the `Grid` selected, in the Properties window, choose the **New** button next to the **DataContext** property.  
+3.  Выбрав `Grid`, в окне "Свойства" нажмите кнопку **Создать** рядом со свойством **DataContext**.  
   
-4.  In the **Select Object** dialog box, make sure that **Show all assemblies** checkbox is cleared, choose **ShoppingCart** under the **BindingTest** namespace, and then choose the **OK** button.  
+4.  В диалоговом окне **Выбор объекта** убедитесь, что флажок **Показать все сборки** снят, выберите **ShoppingCart** в пространстве имен **BindingTest** и нажмите кнопку **ОК**.  
   
-     The following illustration shows the **Select Object** dialog box with **ShoppingCart** selected.  
+     На следующем рисунке показано диалоговое окно **Выбор объекта** с выбранным объектом **ShoppingCart**.  
   
-     ![The Select Object dialog box](../designers/media/blendselectobject.PNG "BlendSelectObject")  
+     ![Диалоговое окно "Выбор объекта"](../designers/media/blendselectobject.PNG "BlendSelectObject")  
   
-5.  In the **Toolbox**, choose a `TextBlock` control to add it to the form.  
+5.  В **области элементов** выберите элемент управления `TextBlock`, чтобы добавить его на форму.  
   
-6.  With the `TextBlock` control selected, in the Properties window, choose the property marker to the right of the **Text** property, and then choose **Create Data Binding**. (The property marker looks like a small box.)  
+6.  После выбора элемента управления `TextBlock` в окне "Свойства" выберите метку свойства справа от свойства **Text**, а затем выберите **Создать привязку данных**.  \(Метка свойства выглядит как небольшой квадрат.\)  
   
-7.  In the Create Data Binding dialog box, in the **Path** box, choose the **ItemCount : (int32)** property and then choose the **OK** button.  
+7.  В диалоговом окне "Создание привязки данных" в поле **Путь** выберите свойство **ItemCount: \(int32\)** и нажмите кнопку **ОК**.  
   
-     The following illustration shows the **Create Data Binding** dialog box with the **ItemCount** property selected.  
+     На следующем рисунке показано диалоговое окно **Создание привязки данных** с выбранным свойством **ItemCount**.  
   
-     ![Create Data Binding dialog box](../designers/media/xaml_create_data_binding.png "xaml_create_data_binding")  
+     ![Диалоговое окно "Создание привязки данных"](../designers/media/xaml_create_data_binding.png "xaml\_create\_data\_binding")  
   
-8.  Press F5 to run the app.  
+8.  Нажмите клавишу F5 для запуска приложения.  
   
-     The `TextBlock` control should show the default value of 0 as text.  
+     Элемент управления `TextBlock` должен показать значение по умолчанию 0 в виде текста.  
   
-## <a name="see-also"></a>See Also  
- [Creating a UI by using XAML Designer](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)   
- [NIB: Add Value Converter dialog box](http://msdn.microsoft.com/en-us/c5f3d110-a541-4b55-8bca-928f77778af8)
+## См. также  
+ [Создание пользовательского интерфейса с помощью конструктора XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)   
+ [NIB: Add Value Converter dialog box](http://msdn.microsoft.com/ru-ru/c5f3d110-a541-4b55-8bca-928f77778af8)

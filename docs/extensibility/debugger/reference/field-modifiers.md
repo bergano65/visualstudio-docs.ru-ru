@@ -1,216 +1,199 @@
 ---
-title: FIELD_MODIFIERS | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- FIELD_MODIFIERS
-helpviewer_keywords:
-- FIELD_MODIFIERS enumeration
+title: "FIELD_MODIFIERS | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "FIELD_MODIFIERS"
+helpviewer_keywords: 
+  - "Перечисление FIELD_MODIFIERS"
 ms.assetid: 1e44681c-1f03-41a9-9c04-b79f231b0822
 caps.latest.revision: 15
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 4275e135e4be176a0f182f0d8b374861b93af845
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 15
 ---
-# <a name="fieldmodifiers"></a>FIELD_MODIFIERS
-Specifies modifiers for a field type.  
+# FIELD_MODIFIERS
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Задает модификаторы для типа поля.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
-enum enum_FIELD_MODIFIERS {   
-   FIELD_MOD_NONE             = 0x00000000,  
+```cpp#  
+enum enum_FIELD_MODIFIERS {   
+   FIELD_MOD_NONE             = 0x00000000,  
   
-   // Modifier of the field  
-   FIELD_MOD_ACCESS_NONE      = 0x00000001,  
-   FIELD_MOD_ACCESS_PUBLIC    = 0x00000002,  
-   FIELD_MOD_ACCESS_PROTECTED = 0x00000004,  
-   FIELD_MOD_ACCESS_PRIVATE   = 0x00000008,  
+   // Modifier of the field  
+   FIELD_MOD_ACCESS_NONE      = 0x00000001,  
+   FIELD_MOD_ACCESS_PUBLIC    = 0x00000002,  
+   FIELD_MOD_ACCESS_PROTECTED = 0x00000004,  
+   FIELD_MOD_ACCESS_PRIVATE   = 0x00000008,  
   
-   // Storage modifier of the field  
-   FIELD_MOD_NOMODIFIERS      = 0x00000010,  
-   FIELD_MOD_STATIC           = 0x00000020,  
-   FIELD_MOD_CONSTANT         = 0x00000040,  
-   FIELD_MOD_TRANSIENT        = 0x00000080,  
-   FIELD_MOD_VOLATILE         = 0x00000100,  
-   FIELD_MOD_ABSTRACT         = 0x00000200,  
-   FIELD_MOD_NATIVE           = 0x00000400,  
-   FIELD_MOD_SYNCHRONIZED     = 0x00000800,  
-   FIELD_MOD_VIRTUAL          = 0x00001000,  
-   FIELD_MOD_INTERFACE        = 0x00002000,  
-   FIELD_MOD_FINAL            = 0x00004000,  
-   FIELD_MOD_SENTINEL         = 0x00008000,  
-   FIELD_MOD_INNERCLASS       = 0x00010000,  
-   FIELD_TYPE_OPTIONAL        = 0x00020000,  
-   FIELD_MOD_BYREF            = 0x00040000,  
-   FIELD_MOD_HIDDEN           = 0x00080000,  
-   FIELD_MOD_MARSHALASOBJECT  = 0x00100000,  
-   FIELD_MOD_SPECIAL_NAME     = 0x00200000,  
-   FIELD_MOD_HIDEBYSIG        = 0x00400000,  
+   // Storage modifier of the field  
+   FIELD_MOD_NOMODIFIERS      = 0x00000010,  
+   FIELD_MOD_STATIC           = 0x00000020,  
+   FIELD_MOD_CONSTANT         = 0x00000040,  
+   FIELD_MOD_TRANSIENT        = 0x00000080,  
+   FIELD_MOD_VOLATILE         = 0x00000100,  
+   FIELD_MOD_ABSTRACT         = 0x00000200,  
+   FIELD_MOD_NATIVE           = 0x00000400,  
+   FIELD_MOD_SYNCHRONIZED     = 0x00000800,  
+   FIELD_MOD_VIRTUAL          = 0x00001000,  
+   FIELD_MOD_INTERFACE        = 0x00002000,  
+   FIELD_MOD_FINAL            = 0x00004000,  
+   FIELD_MOD_SENTINEL         = 0x00008000,  
+   FIELD_MOD_INNERCLASS       = 0x00010000,  
+   FIELD_TYPE_OPTIONAL        = 0x00020000,  
+   FIELD_MOD_BYREF            = 0x00040000,  
+   FIELD_MOD_HIDDEN           = 0x00080000,  
+   FIELD_MOD_MARSHALASOBJECT  = 0x00100000,  
+   FIELD_MOD_SPECIAL_NAME     = 0x00200000,  
+   FIELD_MOD_HIDEBYSIG        = 0x00400000,  
   
-   FIELD_MOD_WRITEONLY        = 0x80000000,  
-   FIELD_MOD_ACCESS_MASK      = 0x000000ff,  
-   FIELD_MOD_MASK             = 0xffffff00,  
-   FIELD_MOD_ALL              = 0x7fffffff  
+   FIELD_MOD_WRITEONLY        = 0x80000000,  
+   FIELD_MOD_ACCESS_MASK      = 0x000000ff,  
+   FIELD_MOD_MASK             = 0xffffff00,  
+   FIELD_MOD_ALL              = 0x7fffffff  
 };  
 typedef DWORD FIELD_MODIFIERS;  
 ```  
   
-```csharp  
+```c#  
 public enum enum_FIELD_MODIFIERS {  
-   FIELD_MOD_NONE             = 0x00000000,  
+   FIELD_MOD_NONE             = 0x00000000,  
   
-   // Modifier of the field  
-   FIELD_MOD_ACCESS_NONE      = 0x00000001,  
-   FIELD_MOD_ACCESS_PUBLIC    = 0x00000002,  
-   FIELD_MOD_ACCESS_PROTECTED = 0x00000004,  
-   FIELD_MOD_ACCESS_PRIVATE   = 0x00000008,  
+   // Modifier of the field  
+   FIELD_MOD_ACCESS_NONE      = 0x00000001,  
+   FIELD_MOD_ACCESS_PUBLIC    = 0x00000002,  
+   FIELD_MOD_ACCESS_PROTECTED = 0x00000004,  
+   FIELD_MOD_ACCESS_PRIVATE   = 0x00000008,  
   
-   // Storage modifier of the field  
-   FIELD_MOD_NOMODIFIERS      = 0x00000010,  
-   FIELD_MOD_STATIC           = 0x00000020,  
-   FIELD_MOD_CONSTANT         = 0x00000040,  
-   FIELD_MOD_TRANSIENT        = 0x00000080,  
-   FIELD_MOD_VOLATILE         = 0x00000100,  
-   FIELD_MOD_ABSTRACT         = 0x00000200,  
-   FIELD_MOD_NATIVE           = 0x00000400,  
-   FIELD_MOD_SYNCHRONIZED     = 0x00000800,  
-   FIELD_MOD_VIRTUAL          = 0x00001000,  
-   FIELD_MOD_INTERFACE        = 0x00002000,  
-   FIELD_MOD_FINAL            = 0x00004000,  
-   FIELD_MOD_SENTINEL         = 0x00008000,  
-   FIELD_MOD_INNERCLASS       = 0x00010000,  
-   FIELD_TYPE_OPTIONAL        = 0x00020000,  
-   FIELD_MOD_BYREF            = 0x00040000,  
-   FIELD_MOD_HIDDEN           = 0x00080000,  
-   FIELD_MOD_MARSHALASOBJECT  = 0x00100000,  
-   FIELD_MOD_SPECIAL_NAME     = 0x00200000,  
-   FIELD_MOD_HIDEBYSIG        = 0x00400000,  
+   // Storage modifier of the field  
+   FIELD_MOD_NOMODIFIERS      = 0x00000010,  
+   FIELD_MOD_STATIC           = 0x00000020,  
+   FIELD_MOD_CONSTANT         = 0x00000040,  
+   FIELD_MOD_TRANSIENT        = 0x00000080,  
+   FIELD_MOD_VOLATILE         = 0x00000100,  
+   FIELD_MOD_ABSTRACT         = 0x00000200,  
+   FIELD_MOD_NATIVE           = 0x00000400,  
+   FIELD_MOD_SYNCHRONIZED     = 0x00000800,  
+   FIELD_MOD_VIRTUAL          = 0x00001000,  
+   FIELD_MOD_INTERFACE        = 0x00002000,  
+   FIELD_MOD_FINAL            = 0x00004000,  
+   FIELD_MOD_SENTINEL         = 0x00008000,  
+   FIELD_MOD_INNERCLASS       = 0x00010000,  
+   FIELD_TYPE_OPTIONAL        = 0x00020000,  
+   FIELD_MOD_BYREF            = 0x00040000,  
+   FIELD_MOD_HIDDEN           = 0x00080000,  
+   FIELD_MOD_MARSHALASOBJECT  = 0x00100000,  
+   FIELD_MOD_SPECIAL_NAME     = 0x00200000,  
+   FIELD_MOD_HIDEBYSIG        = 0x00400000,  
   
-   FIELD_MOD_WRITEONLY        = 0x80000000,  
-   FIELD_MOD_ACCESS_MASK      = 0x000000ff,  
-   FIELD_MOD_MASK             = 0xffffff00,  
-   FIELD_MOD_ALL              = 0x7fffffff  
+   FIELD_MOD_WRITEONLY        = 0x80000000,  
+   FIELD_MOD_ACCESS_MASK      = 0x000000ff,  
+   FIELD_MOD_MASK             = 0xffffff00,  
+   FIELD_MOD_ALL              = 0x7fffffff  
 };  
 ```  
   
-## <a name="members"></a>Members  
- FIELD_MOD_ACCESS_TYPE  
- Indicates that the field cannot be accessed.  
+## Члены  
+ FIELD\_MOD\_ACCESS\_TYPE  
+ Указывает, что поле нельзя получить доступ.  
   
- FIELD_MOD_ACCESS_PUBLIC  
- Indicates that the field has public access.  
+ FIELD\_MOD\_ACCESS\_PUBLIC  
+ Указывает, что поле имеет открытый доступ.  
   
- FIELD_MOD_ACCESS_PROTECTED  
- Indicates that the field has protected access.  
+ FIELD\_MOD\_ACCESS\_PROTECTED  
+ Указывает, что поле защищало доступ.  
   
- FIELD_MOD_ACCESS_PRIVATE  
- Indicates that the field has private access.  
+ FIELD\_MOD\_ACCESS\_PRIVATE  
+ Указывает, что для поля задан закрытый доступ.  
   
- FIELD_MOD_NOMODIFIERS  
- Indicates that the field has no modifiers.  
+ FIELD\_MOD\_NOMODIFIERS  
+ Указывает, что поле отсутствуют модификаторы.  
   
- FIELD_MOD_STATIC  
- Indicates that the field is static.  
+ FIELD\_MOD\_STATIC  
+ Указывает, что поле является статическим.  
   
- FIELD_MOD_CONSTANT  
- Indicates that the field is a constant.  
+ FIELD\_MOD\_CONSTANT  
+ Указывает, что поле является константой.  
   
- FIELD_MOD_TRANSIENT  
- Indicates that the field is transient.  
+ FIELD\_MOD\_TRANSIENT  
+ Указывает, что поле переходно.  
   
- FIELD_MOD_VOLATILE  
- Indicates that the field is volatile.  
+ FIELD\_MOD\_VOLATILE  
+ Указывает, что поле испаряюще.  
   
- FIELD_MOD_ABSTRACT  
- Indicates that the field is abstract.  
+ FIELD\_MOD\_ABSTRACT  
+ Указывает, что поле является абстрактным.  
   
- FIELD_MOD_NATIVE  
- Indicates that the field is native.  
+ FIELD\_MOD\_NATIVE  
+ Указывает, что поле собственно.  
   
- FIELD_MOD_SYNCHRONIZED  
- Indicates that the field is synchronized.  
+ FIELD\_MOD\_SYNCHRONIZED  
+ Указывает, что поле синхронизирована.  
   
- FIELD_MOD_VIRTUAL  
- Indicates that the field is virtual.  
+ FIELD\_MOD\_VIRTUAL  
+ Указывает, что поле является виртуальным.  
   
- FIELD_MOD_INTERFACE  
- Indicates that the field is an interface.  
+ FIELD\_MOD\_INTERFACE  
+ Указывает, что поле интерфейс.  
   
- FIELD_MOD_FINAL  
- Indicates that the field is final.  
+ FIELD\_MOD\_FINAL  
+ Указывает, что поле окончательное.  
   
- FIELD_MOD_SENTINEL  
- Indicates that the field is a sentinel.  
+ FIELD\_MOD\_SENTINEL  
+ Указывает, что поле часовой.  
   
- FIELD_MOD_INNERCLASS  
- Indicates that the field is an inner class.  
+ FIELD\_MOD\_INNERCLASS  
+ Указывает, что поле внутренний класс.  
   
- FIELD_TYPE_OPTIONAL  
- Indicates that the field is optional.  
+ FIELD\_TYPE\_OPTIONAL  
+ Указывает, что поле является необязательным.  
   
- FIELD_MOD_BYREF  
- Indicates that the field is a reference argument. This is specifically for method arguments.  
+ FIELD\_MOD\_BYREF  
+ Указывает, что поле аргумент ссылки.  Это специально для аргументов метода.  
   
- FIELD_MOD_HIDDEN  
- Indicates that the field must be hidden or presented in another context; for example, [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] static locals.  
+ FIELD\_MOD\_HIDDEN  
+ Указывает, что поле должно скрывать или представить в другом контексте. например, [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] статические локальные переменные.  
   
- FIELD_MOD_MARSHALASOBJECT  
- Indicates that the field represents an object with an `IUnknown` interface.  
+ FIELD\_MOD\_MARSHALASOBJECT  
+ Указывает, что поле представляет объект с `IUnknown` интерфейс.  
   
- FIELD_MOD_SPECIAL_NAME  
- Indicates that the field has a special name, for example, `.ctor` for a constructor ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] only).  
+ FIELD\_MOD\_SPECIAL\_NAME  
+ Указывает, что поле имеет специальное имя, например `.ctor` для конструктора \([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] только\).  
   
- FIELD_MOD_HIDEBYSIG  
- Indicates that the field has the `Overloads` keyword applied to it ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] only).  
+ FIELD\_MOD\_HIDEBYSIG  
+ Указывает, что для поля задан `Overloads` ключевое слово, примененное к нему \([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] только\).  
   
- FIELD_MOD_WRITEONLY  
- Indicates that the field is write-only. This value is not included in `FIELD_MOD_ALL`, as the only use of such write-only fields is for function evaluation. A user must explicitly ask for `FIELD_MOD_WRITEONLY` fields.  
+ FIELD\_MOD\_WRITEONLY  
+ Указывает, что поле доступно только на запись.  Это значение не включается в пределах `FIELD_MOD_ALL`использование таких как линия, доступных только на запись полей для вычисления функции.  Пользователь должен явно запросить `FIELD_MOD_WRITEONLY` поля.  
   
- FIELD_MOD_ACCESS_MASK  
- Indicates a mask for field access.  
+ FIELD\_MOD\_ACCESS\_MASK  
+ Указывает маску для доступа к полю.  
   
- FIELD_MOD_MASK  
- Indicates a mask for field modifiers.  
+ FIELD\_MOD\_MASK  
+ Указывает маску модификаторы для поля.  
   
-## <a name="remarks"></a>Remarks  
- Used for the `dwModifiers` member of the [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) structure.  
+## Заметки  
+ Используется для `dwModifiers` элемент  [FIELD\_INFO](../../../extensibility/debugger/reference/field-info.md) структура.  
   
- These values are also passed to the [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) method to filter for specific fields.  
+ Эти значения также передаются [EnumFields](../Topic/IDebugContainerField::EnumFields.md) метод, для которого следует выполнить фильтрацию определенных полей.  
   
-## <a name="requirements"></a>Requirements  
- Header: sh.h  
+## Требования  
+ Заголовок: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)   
- [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)
+## См. также  
+ [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [FIELD\_INFO](../../../extensibility/debugger/reference/field-info.md)   
+ [EnumFields](../Topic/IDebugContainerField::EnumFields.md)

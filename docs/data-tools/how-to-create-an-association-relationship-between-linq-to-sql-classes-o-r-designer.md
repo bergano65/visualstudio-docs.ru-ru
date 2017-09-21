@@ -1,71 +1,52 @@
 ---
-title: 'How to: Create an association (relationship) between LINQ to SQL classes (O-R Designer) | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+title: "Как создать ассоциацию (связь) между классами LINQ to SQL (реляционный конструктор объектов) | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/15/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
 caps.latest.revision: 3
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 5d7e9a7e4552cccfddef0f3d7a0b110aa1baf3ec
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/07/2017
-
+caps.handback.revision: 1
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
 ---
-# <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>How to: Create an association (relationship) between LINQ to SQL classes (O/R Designer)
-Associations between entity classes in [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] are analogous to relationships between tables in a database. You can create associations between entity classes by using the **Association Editor** dialog box.  
+# Как создать ассоциацию (связь) между классами LINQ to SQL (реляционный конструктор объектов)
+Ассоциации между классами сущностей в [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] аналогичны отношениям между таблицами в базе данных.Ассоциации между классами сущностей можно создавать, используя диалоговое окно **Редактор ассоциаций**.  
   
- You must select a parent class and child class when you use the **Association Editor** dialog box to create an association. The parent class is the entity class that contains the primary key; the child class is the entity class that contains the foreign-key. For example, if entity classes were created that map to the Northwind Customers and Orders tables, the Customer class would be the parent class and the Order class would be the child class.  
+ Можно выбирать родительский класс и дочерний класс, когда диалоговое окно **Редактор ассоциаций** используется для создания ассоциации.Родительский класс представляет собой класс сущностей, который содержит первичный ключ; дочерний класс представляет собой класс сущностей, который содержит внешний ключ.Например, если были созданы классы сущностей, которые сопоставляются таблицам Northwind Customers и Orders, то класс Customer будет родительским классом, а класс Order будет дочерним классом.  
   
 > [!NOTE]
->  When you drag tables from **Server Explorer**/**Database Explorer** onto the [!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] ([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]), associations are automatically created based on the existing foreign-key relationships in the database.  
+>  При перетаскивании таблиц из **обозревателя серверов** или **обозревателя баз данных** в [!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] \([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]\) ассоциации создаются автоматически на основе связей по внешнему ключу, существующих в базе данных.  
   
- After you create an association, when you select the association in the O/R Designer, there are some configurable properties in the **Properties** window. (The association is the line between the related classes.) The following table provides descriptions for the properties of an association.  
+ После создания ассоциации при выборе ассоциации в реляционном конструкторе объектов имеются некоторые конфигурируемые свойства в окне **Свойства**.\(Ассоциация представляет собой линию между связанными классами\). В следующей таблице представлены описания свойств ассоциации.  
   
-|Property|Description|  
-|--------------|-----------------|  
-|**Cardinality**|Controls whether the association is one-to-many or one-to-one.|  
-|**Child Property**|Specifies whether to create a property on the parent that is a collection or reference to the child records on the foreign-key side of the association. For example, in the association between Customer and Order, if the **Child Property** is set to **True**, a property named Orders is created on the parent class.|  
-|**Parent Property**|The property on the child class that references the associated parent class. For example, in the association between Customer and Order, a property named Customer that references the associated customer for an order is created on the Order class.|  
-|**Participating Properties**|Displays the association properties and provides an **ellipsis** button (...) that re-opens the **Association Editor** dialog box.|  
-|**Unique**|Specifies whether the foreign target columns have a uniqueness constraint.|  
+|Свойство|Описание|  
+|--------------|--------------|  
+|**Количество элементов**|Контролирует, представляет ли ассоциация отношение "один\-ко\-многим" или отношение "один\-к\-одному".|  
+|**Дочернее свойство**|Определяет, создавать ли свойство на основе родителя, который является коллекцией, или на основе ссылки на дочерние записи на стороне внешнего ключа ассоциации.Например, в ассоциации между таблицами Customer и Order, если **Дочернее свойство** установлено на значение **True**, то свойство с именем Orders создается на основе родительского класса.|  
+|**Родительское свойство**|Свойство на основе дочернего класса, который ссылается на связанный родительский класс.Например, в ассоциации между таблицами Customer и Order на основе класса Order создается свойство с именем Customer, которое ссылается на связанного с заказом клиента.|  
+|**Свойства участия**|Отображает свойства ассоциации и выводит кнопку с **многоточием** \(...\), которая заново открывает диалоговое окно **Редактор ассоциаций**.|  
+|**Уникальный**|Указывает, имеют ли внешние целевые столбцы ограничение уникальности.|  
   
-### <a name="to-create-an-association-between-entity-classes"></a>To create an association between entity classes  
+### Для создания ассоциации между классами сущностей  
   
-1.  Right-click the entity class that represents the parent class in the association, point to **Add**, and then click **Association**.  
+1.  Щелкните правой кнопкой мыши по классу сущностей, который представляет родительский класс в ассоциации, укажите пункт **Добавить**, и потом щелкните **Ассоциация**.  
   
-2.  Verify that the correct **Parent Class** is selected in the **Association Editor** dialog box.  
+2.  Убедитесь, что выбран правильный **Родительский класс** в диалоговом окне **Редактор ассоциации**.  
   
-3.  Select the **Child Class** in the combo box.  
+3.  Выберите **Дочерний класс** в поле со списком.  
   
-4.  Select the **Association Properties** that relate the classes. Typically, this maps to the foreign-key relationship defined in the database. For example, in the Customers and Orders association, the **Association Properties** are the CustomerID for each class.  
+4.  Выберите **Свойства ассоциации**, которые связывают классы.Обычно, это сопоставляется с отношением внешнего ключа, определенным в базе данных.Например, в ассоциации между таблицами Customer и Order **Свойствами ассоциации** являются CustomerID для каждого класса.  
   
-5.  Click **OK** to create the association.  
+5.  Нажмите кнопку **OK** для создания ассоциации.  
   
-## <a name="see-also"></a>See Also  
- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
- [DataContext Methods (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
- [How to: Represent Primary Keys](/dotnet/framework/data/adonet/sql/linq/how-to-represent-primary-keys)
+## См. также  
+ [Общие сведения о реляционном конструкторе объектов](../Topic/LINQ%20to%20SQL%20Tools%20in%20Visual%20Studio1.md)   
+ [Пошаговое руководство. Создание классов LINQ to SQL \(реляционный конструктор объектов\)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)   
+ [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)   
+ [Методы DataContext \(реляционный конструктор объектов\)](../data-tools/datacontext-methods-o-r-designer.md)   
+ [Как представить первичные ключи](../Topic/How%20to:%20Represent%20Primary%20Keys.md)

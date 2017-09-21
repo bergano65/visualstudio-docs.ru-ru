@@ -1,112 +1,93 @@
 ---
-title: 'How to: Add, Update, or Remove a WCF Data Service Reference | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- service references [Visual Studio]
-- WCF Data Service reference
-- WCF data service references
-- ADO.NET service references
-- ADO.NET Data Service reference
+title: "How to: Add, Update, or Remove a WCF Data Service Reference | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/15/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "service references [Visual Studio]"
+  - "WCF Data Service reference"
+  - "WCF data service references"
+  - "ADO.NET service references"
+  - "ADO.NET Data Service reference"
 ms.assetid: 892ebf37-3af4-472e-8744-92837677d611
 caps.latest.revision: 11
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: ce2393f57e1d843682e48e931349747ac0e30e0a
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/07/2017
-
+caps.handback.revision: 9
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
 ---
-# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>How to: Add, Update, or Remove a WCF Data Service Reference
-A *service reference* enables a project to access one or more [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Use the **Add Service Reference** dialog box to search for [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] in the current solution, locally, on a local area network, or on the Internet.  
+# How to: Add, Update, or Remove a WCF Data Service Reference
+*Ссылки на службу* позволяют проекту использовать одну или несколько служб [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].  В диалоговом окне **Добавить ссылку на службу** можно выполнять поиск [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] в текущем решении, локально, в локальной сети или в Интернете.  
   
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+ [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-## <a name="adding-a-service-reference"></a>Adding a Service Reference  
+## Добавление ссылки на службу  
   
-#### <a name="to-add-a-reference-to-an-external-service"></a>To add a reference to an external service  
+#### Чтобы добавить ссылку на внешнюю службу  
   
-1.  In **Solution Explorer**, right-click the name of the project that you want to add the service to, and then click **Add Service Reference**.  
+1.  В **обозревателе решений** щелкните правой кнопкой мыши имя проекта, к которому требуется добавить службу, а затем щелкните **Добавить ссылку на службу**.  
   
-     The **Add Service Reference** dialog box appears.  
+     Появится диалоговое окно **Добавить ссылку на службу**.  
   
-2.  In the **Address** box, enter the URL for the service, and then click **Go** to search for the service. If the service implements user name and password security, you may be prompted for a user name and password.  
-  
-    > [!NOTE]
-    >  You should only reference services from a trusted source. Adding references from an untrusted source may compromise security.  
-  
-     You can also select the URL from the **Address** list, which stores the previous 15 URLs at which valid service metadata was found.  
-  
-     A progress bar is displayed when the search is being performed. You can stop the search at any time by clicking **Stop**.  
-  
-3.  In the **Services** list, expand the node for the service that you want to use and select an entity set.  
-  
-4.  In the **Namespace** box, enter the namespace that you want to use for the reference.  
-  
-5.  Click **OK** to add the reference to the project.  
-  
-     A service client (proxy) is generated, and metadata that describes the service is added to the app.config file.  
-  
-#### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>To add a reference to a service in the current solution  
-  
-1.  In **Solution Explorer**, right-click the name of the project that you want to add the service to, and then click **Add Service Reference**.  
-  
-     The **Add Service Reference** dialog box appears.  
-  
-2.  Click **Discover**.  
-  
-     All services (both [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] and WCF services) in the current solution are added to the **Services** list.  
-  
-3.  In the **Services** list, expand the node for the service that you want to use and select an entity set.  
-  
-4.  In the **Namespace** box, enter the namespace that you want to use for the reference.  
-  
-5.  Click **OK** to add the reference to the project.  
-  
-     A service client (proxy) is generated, and metadata that describes the service is added to the app.config file.  
-  
-## <a name="updating-a-service-reference"></a>Updating a Service Reference  
- The Entity Data Model for a [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] will sometimes change. When this happens, the service reference must be updated.  
-  
-#### <a name="to-update-a-service-reference"></a>To update a service reference  
-  
--   In **Solution Explorer**, right-click the service reference and then click **Update Service Reference**.  
-  
-     A progress dialog box is displayed while the reference is updated from its original location, and the service client is regenerated to reflect any changes in the metadata.  
-  
-## <a name="removing-a-service-reference"></a>Removing a Service Reference  
- If a service reference is no longer being used, you can remove it from your solution.  
-  
-#### <a name="to-remove-a-service-reference"></a>To remove a service reference  
-  
--   In **Solution Explorer**, right-click the service reference and then click **Delete**.  
-  
-     The service client will be removed from the solution, and the metadata that describes the service will be removed from the app.config file.  
+2.  В поле **Address** введите URL\-адрес для службы и нажмите кнопку **Перейти**, чтобы выполнить поиск этой службы.  Если эта служба защищена именем пользователя и паролем, то, возможно, будет предложено ввести имя пользователя и пароль.  
   
     > [!NOTE]
-    >  Any code that references the service reference will have to be removed manually.  
+    >  Необходимо ссылаться только на службы из надежного источника.  Добавление ссылок из ненадежного источника может привести к нарушениям безопасности.  
   
-## <a name="see-also"></a>See Also  
- [Windows Communication Foundation Services and WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+     Можно также выбрать URL\-адрес из списка **Адрес** , в котором хранятся последние 15 URL\-адресов, по которым были найдены допустимые метаданные служб.  
+  
+     Во время выполнения поиска отображается индикатор выполнения.  Процесс поиска можно остановить в любое время, щелкнув кнопку **Остановить**.  
+  
+3.  В списке **Службы** разверните узел нужной службы и выберите набор сущностей.  
+  
+4.  В поле **Пространство имен** введите пространство имен, которое следует использовать для службы.  
+  
+5.  Нажмите кнопку **ОК**, чтобы добавить службу к проекту.  
+  
+     Будет создан клиент службы \(прокси\), и метаданные, описывающие эту службу, добавятся в файл app.config.  
+  
+#### Чтобы добавить ссылку на службу в текущее решение  
+  
+1.  В **обозревателе решений** щелкните правой кнопкой мыши имя проекта, к которому требуется добавить службу, а затем щелкните **Добавить ссылку на службу**.  
+  
+     Появится диалоговое окно **Добавить ссылку на службу**.  
+  
+2.  Щелкните **Найти**.  
+  
+     Все службы \([!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] и WCF\) в текущем решении добавятся в список **Службы**.  
+  
+3.  В списке **Службы** разверните узел нужной службы и выберите набор сущностей.  
+  
+4.  В поле **Пространство имен** введите пространство имен, которое следует использовать для службы.  
+  
+5.  Нажмите кнопку **ОК**, чтобы добавить службу к проекту.  
+  
+     Будет создан клиент службы \(прокси\), и метаданные, описывающие эту службу, добавятся в файл app.config.  
+  
+## Обновление ссылки на службу  
+ Модель EDM для [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] в некоторых случаях изменяется.  В таком случае потребуется обновить ссылки на службу.  
+  
+#### Чтобы обновить ссылку на службу  
+  
+-   В **Обозревателе решений** щелкните правой кнопкой мыши нужную ссылку на службу, а затем нажмите **Обновить ссылку на службу**.  
+  
+     Во время обновления ссылки из исходного расположения и повторной генерации клиента службы для отражения всех изменений метаданных выводится диалоговое окно хода выполнения.  
+  
+## Удаление ссылки на службу  
+ Если ссылка на службу больше не будет использоваться, ее можно удалить из решения.  
+  
+#### Чтобы удалить ссылку на службу  
+  
+-   В **Обозревателе решений** щелкните правой кнопкой мыши нужную ссылку на службу, а затем нажмите **Удалить**.  
+  
+     Клиент службы будет удален из решения, и метаданные, описывающие эту службу, будут удалены из файла app.config.  
+  
+    > [!NOTE]
+    >  Весь код, использующий эту ссылку на службу, необходимо удалить вручную.  
+  
+## См. также  
+ [Add Service Reference Dialog Box](../Topic/Add%20Service%20Reference%20Dialog%20Box.md)

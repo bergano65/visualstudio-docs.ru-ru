@@ -1,71 +1,54 @@
 ---
-title: SccCloseProject Function | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- SccCloseProject
-helpviewer_keywords:
-- SccCloseProject function
+title: "Функция SccCloseProject | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "SccCloseProject"
+helpviewer_keywords: 
+  - "Функция SccCloseProject"
 ms.assetid: 259c2069-d349-4814-810f-1c3151b7fb84
 caps.latest.revision: 15
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: bcdc0cbc2916c9efa6224a26abae94b75832c33a
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 15
 ---
-# <a name="scccloseproject-function"></a>SccCloseProject Function
-This function closes a project, marking the end of a particular session.  
+# Функция SccCloseProject
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Эта функция закрывает проект, отмечающую конец определенного сеанса.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
+```cpp#  
 SCCRTN SccCloseProject (  
-   LPVOID pvContext  
+   LPVOID pvContext  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  pvContext  
- The source control plug-in context structure.  
+ Структура подключаемого модуля контекста исходного элемента управления.  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## Возвращаемое значение  
+ Реализации подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Value|Description|  
-|-----------|-----------------|  
-|SCC_OK|The project was successfully closed.|  
-|SCC_E_PROJNOTOPEN|No project is currently open.|  
-|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
-|SCC_E_NONSPECIFICERROR|Nonspecific failure.|  
+|Значение|Описание|  
+|--------------|--------------|  
+|SCC\_OK|Проект успешно закрыт.|  
+|SCC\_E\_PROJNOTOPEN|Проект не открыт.|  
+|SCC\_E\_NOTAUTHORIZED|Для выполнения этой операции не разрешено пользователю.|  
+|SCC\_E\_NONSPECIFICERROR|Неспецифическая ошибка.|  
   
-## <a name="remarks"></a>Remarks  
- The [SccOpenProject](../extensibility/sccopenproject-function.md) is always called before this function. A call to this function is then followed by a call to either the `SccOpenProject` function or the [SccUninitialize](../extensibility/sccuninitialize-function.md), which ends the connection to the source control system completely.  
+## Заметки  
+ [SccOpenProject](../extensibility/sccopenproject-function.md) Всегда вызывается перед этой функции. Вызов этой функции выполняется путем вызова либо `SccOpenProject` функции или [SccUninitialize](../extensibility/sccuninitialize-function.md), который полностью завершает подключение к системе управления версиями.  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
+## См. также  
+ [Функции API подключаемого модуля источника элемента управления](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)

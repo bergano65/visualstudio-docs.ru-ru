@@ -1,102 +1,85 @@
 ---
-title: SccDirDiff Function | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- SccDirDiff
-helpviewer_keywords:
-- SccDirDiff function
+title: "Функция SccDirDiff | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "SccDirDiff"
+helpviewer_keywords: 
+  - "Функция SccDirDiff"
 ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
 caps.latest.revision: 15
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 8dd2e57fc177f726cc08226df9f7e1e0a520b74b
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 15
 ---
-# <a name="sccdirdiff-function"></a>SccDirDiff Function
-This function displays the differences between the current local directory on the client disk and the corresponding project under source control.  
+# Функция SccDirDiff
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Эта функция отображает различия между текущий локальный каталог на диске клиента и соответствующий проект в системе управления версиями.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
+```cpp#  
 SCCRTN SccDirDiff(  
-   LPVOID    pContext,  
-   HWND      hWnd,  
-   LPCSTR    lpDirName,  
-   LONG      dwFlags,  
-   LPCMDOPTS pvOptions  
+   LPVOID    pContext,  
+   HWND      hWnd,  
+   LPCSTR    lpDirName,  
+   LONG      dwFlags,  
+   LPCMDOPTS pvOptions  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  pContext  
- [in] The source control plug-in context structure.  
+ \[in\] Структура подключаемого модуля контекста исходного элемента управления.  
   
  hWnd  
- [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
+ \[in\] Дескриптор окна интегрированной среды разработки, подключаемый модуль системы управления версиями можно использовать в качестве родительского для все диалоговые окна, которые он предоставляет.  
   
  lpDirName  
- [in] Fully qualified path to the local directory for which to show a visual difference.  
+ \[in\] Полный путь к локальному каталогу, для которого необходимо отобразить visual различие.  
   
  dwFlags  
- [in] Command flags (see Remarks section).  
+ \[in\] Команда флагов \(см. Примечания раздела\).  
   
  pvOptions  
- [in] Source control plug-in-specific options.  
+ \[in\] Параметры конкретного подключаемого модуля системы управления версиями.  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## Возвращаемое значение  
+ Реализации подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Value|Description|  
-|-----------|-----------------|  
-|SCC_OK|The directory on disk is the same as the project in source code control.|  
-|SCC_I_FILESDIFFER|The directory on disk is different from the project in source code control.|  
-|SCC_I_RELOADFILE|A file or project needs to be reloaded.|  
-|SCC_E_FILENOTCONTROLLED|The directory is not under source code control.|  
-|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
-|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Nonspecific failure.|  
-|SCC_E_FILENOTEXIST|Local directory could not be found.|  
+|Значение|Описание|  
+|--------------|--------------|  
+|SCC\_OK|В каталоге на диске совпадает проекта в системе управления версиями.|  
+|SCC\_I\_FILESDIFFER|В каталоге на диске отличается от проекта в системе управления версиями.|  
+|SCC\_I\_RELOADFILE|Файл или проект должен быть перезагружен.|  
+|SCC\_E\_FILENOTCONTROLLED|Каталог не существует в системе управления версиями.|  
+|SCC\_E\_NOTAUTHORIZED|Для выполнения этой операции не разрешено пользователю.|  
+|SCC\_E\_ACCESSFAILURE|Произошла ошибка при доступе к системе управления версиями, вероятно, из\-за проблемы с сетью или конфликтов. Рекомендуется повторить операцию.|  
+|SCC\_E\_NONSPECIFICERROR<br /><br /> SCC\_E\_UNKNOWNERROR|Неспецифическая ошибка.|  
+|SCC\_E\_FILENOTEXIST|Не удалось найти локальный каталог.|  
   
-## <a name="remarks"></a>Remarks  
- This function is used to instruct the source control plug-in to display to the user a list of changes to a specified directory. The plug-in opens its own window, in a format of its choice, to display the differences between the user's directory on disk and the corresponding project under version control.  
+## Заметки  
+ Эта функция используется для указания системы управления версиями, подключаемый модуль для отображения пользователю список изменений в указанном каталоге. Подключаемый модуль открывается отдельное окно, в формате его выбор, чтобы отобразить различия между пользователя каталог на диске и соответствующий проект в системе управления версиями.  
   
- If a plug-in supports comparison of directories at all, it must support comparison of directories on a file-name basis even if the "quick-diff" options are not supported.  
+ Если подключаемый модуль поддерживает сравнение каталоги вообще, он должен поддерживать сравнение каталогов на основе имени файла, даже если параметры «быстрое diff», не поддерживаются.  
   
-|`dwFlags`|Interpretation|  
-|---------------|--------------------|  
-|SCC_DIFF_IGNORECASE|Case-insensitive comparison (may be used for either quick diff or visual).|  
-|SCC_DIFF_IGNORESPACE|Ignores white space (may be used for either quick-diff or visual).|  
-|SCC_DIFF_QD_CONTENTS|If supported by the source control plug-in, silently compares the directory, byte by byte.|  
-|SCC_DIFF_QD_CHECKSUM|If supported by plug-in, silently compares the directory via a checksum, or, if not supported, falls back to SCC_DIFF_QD_CONTENTS.|  
-|SCC_DIFF_QD_TIME|If supported by plug-in, silently compares the directory via its timestamp, or, if not supported, falls back on SCC_DIFF_QD_CHECKSUM or SCC_DIFF_QD_CONTENTS.|  
+|`dwFlags`|Интерпретация|  
+|---------------|-------------------|  
+|SCC\_DIFF\_IGNORECASE|Сравнение без учета регистра \(может использоваться для быстрого копирования или визуального\).|  
+|SCC\_DIFF\_IGNORESPACE|Игнорирует пробелы \(может использоваться для быстрого копирования или визуального\).|  
+|SCC\_DIFF\_QD\_CONTENTS|Если поддерживается подключаемый модуль системы управления версиями, автоматически сравнивает каталоге байт за байтом.|  
+|SCC\_DIFF\_QD\_CHECKSUM|Если поддерживается подключаемый модуль, автоматически сравнивает каталогу через контрольной суммы или, если не поддерживается, возвращается к SCC\_DIFF\_QD\_CONTENTS.|  
+|SCC\_DIFF\_QD\_TIME|Если поддерживается подключаемый модуль, автоматически сравнивает каталогу через его отметки времени или, если не поддерживается, возвращается на SCC\_DIFF\_QD\_CHECKSUM или SCC\_DIFF\_QD\_CONTENTS.|  
   
 > [!NOTE]
->  This function uses the same command flags as the [SccDiff](../extensibility/sccdiff-function.md). However, a source control plug-in may choose to not support the "quick-diff" operation for directories.  
+>  Эта функция использует те же флаги команды, как [SccDiff](../extensibility/sccdiff-function.md). Тем не менее подключаемый модуль системы управления версиями, можно не поддерживают операции «быстрое diff» для каталогов.  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)
+## См. также  
+ [Функции API подключаемого модуля источника элемента управления](../extensibility/source-control-plug-in-api-functions.md)

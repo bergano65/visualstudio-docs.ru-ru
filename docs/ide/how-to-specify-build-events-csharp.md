@@ -1,5 +1,5 @@
 ---
-title: 'How to: Specify Build Events (C#) | Microsoft Docs'
+title: "Практическое руководство. Указание событий сборки (C#) | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -33,51 +33,51 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
-ms.openlocfilehash: 7c99b10f4bb238e8aca1b96f6990307ee5eec640
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 3058bf7c6714f18291353224a192218c1b59a480
 ms.contentlocale: ru-ru
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 05/13/2017
 
 ---
-# <a name="how-to-specify-build-events-c"></a>How to: Specify Build Events (C#)
-Use build events to specify commands that run before the build starts or after the build finishes. Build events are executed only if the build successfully reaches those points in the build process.  
+# <a name="how-to-specify-build-events-c"></a>Практическое руководство. Назначение событий построения (C#)
+Используйте события сборки для указания команд, которые выполняются до начала сборки или после ее завершения. События сборки выполняются, только если сборка успешно достигает этих точек в процессе сборки.  
   
- When a project is built, pre-build events are added to a file that is named PreBuildEvent.bat and post-build events are added to a file that is named PostBuildEvent.bat. If you want to ensure error checking, add your own error-checking commands to the build steps.  
+ При сборке проекта события перед сборкой добавляются в файл с именем PreBuildEvent.bat, а события после сборки — в файл с именем PostBuildEvent.bat. Если вы хотите обеспечить проверку ошибок, добавьте собственные команды проверки ошибок в шаги сборки.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-## <a name="how-to-specify-pre-build-and-post-build-events"></a>How to Specify Pre-Build and Post-Build Events  
+## <a name="how-to-specify-pre-build-and-post-build-events"></a>Как указать события перед сборкой и после нее  
   
-#### <a name="to-specify-a-build-event"></a>To specify a build event  
+#### <a name="to-specify-a-build-event"></a>Чтобы указать событие сборки  
   
-1.  In **Solution Explorer**, select the project for which you want to specify the build event.  
+1.  В **обозревателе решений** выберите проект, для которого необходимо задать событие сборки.  
   
-2.  On the **Project** menu, click **Properties**.  
+2.  В меню **Проект** выберите пункт **Свойства**.  
   
-3.  Select the **Build Events** tab.  
+3.  Откройте вкладку **События построения**.  
   
-4.  In the **Pre-build event command line** box, specify the syntax of the build event.  
-  
-    > [!NOTE]
-    >  Pre-build events do not run if the project is up to date and no build is triggered.  
-  
-5.  In the **Post-build event command line** box, specify the syntax of the build event.  
+4.  В поле **Командная строка события перед сборкой** укажите синтаксис события сборки.  
   
     > [!NOTE]
-    >  Add a `call` statement before all post-build commands that run .bat files. For example, `call C:\MyFile.bat` or `call C:\MyFile.bat call C:\MyFile2.bat`.  
+    >  События перед сборкой не выполняются, если проект актуален и сборка не запускается.  
   
-6.  In the **Run the post-build event** box, specify under what conditions to run the post-build event.  
+5.  В поле **Командная строка события после сборки** укажите синтаксис события сборки.  
   
     > [!NOTE]
-    >  To add lengthy syntax, or to select any build macros from the [Pre-build Event/Post-build Event Command Line Dialog Box](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), click the Ellipsis button (**...**) to display an edit box.  
+    >  Добавьте оператор `call` перед всеми командами после сборки, запускающими BAT-файлы. Например, `call C:\MyFile.bat` или `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
-     The build event syntax can include any command that is valid at a command prompt or in a .bat file. The name of a batch file should be preceded by `call` to ensure that all subsequent commands are executed.  
+6.  В поле **Выполнить событие после сборки** укажите при каких условиях должно выполняться событие после сборки.  
   
-     **Note** If your pre-build or post-build event does not complete successfully, you can terminate the build by having your event action exit with a code other than zero (0), which indicates a successful action.  
+    > [!NOTE]
+    >  Чтобы добавить длинный синтаксис или выбрать макросы сборки из [диалогового окна «Командная строка события "После построения"» или «Командная строка события "До построения"»](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), нажмите кнопку с многоточием (**...**) для отображения поля редактирования.  
   
-## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>Example: How to Change Manifest Information by Using a Post-Build Event  
- The following procedure shows how to set the minimum operating system version in the application manifest by using an .exe command that is called from a post-build event (the .exe.manifest file in the project directory). The minimum operating system version is a four-part number such as 4.10.0.0. To do this, the command will change the `<dependentOS>` section of the manifest:  
+     Синтаксис события сборки может включать любую команду, допустимую в командной строке или в BAT-файле. Для имени пакетного файла необходимо указать префикс `call`, чтобы гарантировать выполнение всех последующих команд.  
+  
+     **Примечание**. Если событие перед сборкой или после сборки завершается ошибкой, можно прервать сборку, задав завершение действия события с кодом, отличным от нуля (0), что означает успешное выполнение действия.  
+  
+## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>Пример: изменение данных манифеста с помощью события после сборки  
+ В следующей процедуре демонстрируется, как задать минимальную версию операционной системы в манифесте приложения с помощью команды EXE, вызываемой из события после сборки (файл exe.manifest в каталоге проекта). Минимальная версия операционной системы — число из четырех частей, например 4.10.0.0. Чтобы это сделать, команда изменит раздел `<dependentOS>` манифеста:  
   
 ```  
 <dependentOS>  
@@ -87,19 +87,19 @@ Use build events to specify commands that run before the build starts or after t
 </dependentOS>  
 ```  
   
-#### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>To create an .exe command to change the application manifest  
+#### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Чтобы создать команду EXE для изменения манифеста приложения  
   
-1.  Create a console application for the command. From the **File** menu, point to **New**, and then click **Project**.  
+1.  Создайте консольное приложение для команды. В меню **Файл** выберите пункт **Создать**, а затем команду **Проект**.  
   
-2.  In the **New Project** dialog box, expand **Visual C#**, click **Windows**, and then click the **Console Application** template. Name the project `ChangeOSVersionCS`.  
+2.  В диалоговом окне **Новый проект** разверните узел **Visual C#**, выберите **Windows**, а затем шаблон **Консольное приложение**. Задайте для проекта имя `ChangeOSVersionCS`.  
   
-3.  In Program.cs, add the following line to the other `using` statements at the top of the file:  
+3.  В Program.cs добавьте следующую строку для других инструкций `using` в верхней части файла:  
   
     ```  
     using System.Xml;  
     ```  
   
-4.  In the `ChangeOSVersionCS` namespace, replace the `Program` class implementation with the following code:  
+4.  В пространстве имен `ChangeOSVersionCS` замените реализацию класса `Program` следующим кодом:  
   
     ```  
     class Program  
@@ -151,56 +151,56 @@ Use build events to specify commands that run before the build starts or after t
     }  
     ```  
   
-     The command takes two arguments: the path of the application manifest (that is, the folder in which the build process creates the manifest, typically Projectname.publish), and the new operating system version.  
+     Команда принимает два аргумента: путь к манифесту приложения (то есть папка, в которой в процессе сборки создается манифест, обычно Projectname.publish), и новую версию операционной системы.  
   
-5.  Build the project. On the **Build** menu, click **Build Solution**.  
+5.  Выполните построение проекта. В меню **Сборка** выберите **Собрать решение**.  
   
-6.  Copy the .exe file to a directory such as `C:\TEMP\ChangeOSVersionVB.exe`.  
+6.  Скопируйте EXE-файл в каталог, например `C:\TEMP\ChangeOSVersionVB.exe`.  
   
- Next, invoke this command in a post-build event to modify the application manifest.  
+ Затем вызовите эту команду в событии после сборки для изменения манифеста приложения.  
   
-#### <a name="to-invoke-a-post-build-event-to-modify-the-application-manifest"></a>To invoke a post-build event to modify the application manifest  
+#### <a name="to-invoke-a-post-build-event-to-modify-the-application-manifest"></a>Вызов события после сборки для изменения манифеста приложения  
   
-1.  Create a Windows application for the project to be published. From the **File** menu, point to **New**, and then click **Project**.  
+1.  Создайте приложение Windows для проекта, который должен быть опубликован. В меню **Файл** выберите пункт **Создать**, а затем команду **Проект**.  
   
-2.  In the **New Project** dialog box, expand **Visual C#**, click **Windows Classic Desktop**, and then click the **Windows Forms App** template. Name the project `CSWinApp`.  
+2.  В диалоговом окне **Новый проект** разверните узел **Visual C#**, выберите **Windows**, а затем шаблон **Приложение Windows Forms**. Задайте для проекта имя `CSWinApp`.  
   
-3.  With the project selected in **Solution Explorer**, on the **Project** menu, click **Properties**.  
+3.  Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните пункт **Свойства**.  
   
-4.  In the Project Designer, locate the **Publish** page and set **Publishing location** to `C:\TEMP\`.  
+4.  В конструкторе проектов найдите страницу **Публикация** и для параметра **Расположение публикации** задайте значение `C:\TEMP\`.  
   
-5.  Publish the project by clicking **Publish Now**.  
+5.  Опубликуйте проект, щелкнув **Опубликовать сейчас**.  
   
-     The manifest file will be built and put in `C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest`. To view the manifest, right-click the file, click **Open with**, select **Select the program from a list**, and then click **Notepad**.  
+     Файл манифеста будет построен и размещен в `C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest`. Чтобы просмотреть манифест, щелкните правой кнопкой мыши файл и выберите пункт **Открыть с помощью**, затем выберите **Выбрать программу из списка** и щелкните **Блокнот**.  
   
-     Search in the file for the `<osVersionInfo>` element. For example, the version might be:  
+     Найдите в файле элемент `<osVersionInfo>`. Например, версия может быть следующей:  
   
     ```  
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />  
     ```  
   
-6.  In the Project Designer, click the **Build Events** tab and click the **Edit Post-build** button.  
+6.  В конструкторе проектов перейдите на вкладку **События построения** и нажмите кнопку **Изменить событие после построения**.  
   
-7.  In the **Post-build Event Command Line** box, type the following command:  
+7.  В **командной строке события после сборки** введите следующую команду:  
   
      `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`  
   
-     When you build the project, this command will change the minimum operating system version in the application manifest to 5.1.2600.0.  
+     При сборке проекта выполнение этой команды приведет к изменению минимальной версии операционной системы в манифесте приложения на 5.1.2600.0.  
   
-     Because the `$(TargetPath)` macro expresses the full path for the executable being created,  the `$(TargetPath)`.manifest will specify the application manifest created in the bin directory. Publishing will copy this manifest to the publishing location that you set earlier.  
+     Так как макрос `$(TargetPath)` выражает полный путь к создаваемому исполняемому файлу, файл `$(TargetPath)`.manifest будет указывать манифест приложения, созданный в каталог bin. При публикации этот манифест будет скопирован в расположение публикаций, которое было задано ранее.  
   
-8.  Publish the project again. Go to the **Publish** page and click **Publish Now**.  
+8.  Опубликуйте проект еще раз. Откройте страницу **Публикация** и нажмите кнопку **Опубликовать сейчас**.  
   
-     View the manifest again. To view the manifest, open the publish directory, right-click the file, click **Open with**, select **Select the program from a list**, and then click **Notepad**.  
+     Еще раз просмотрите манифест. Чтобы просмотреть манифест, откройте каталог публикации, щелкните файл правой кнопкой мыши и выберите пункт **Открыть с помощью**, затем выберите **Выбрать программу из списка** и щелкните **Блокнот**.  
   
-     The version should now read:  
+     Версия должна иметь следующий вид:  
   
     ```  
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />  
     ```  
   
-## <a name="see-also"></a>See Also  
- [Build Events Page, Project Designer (C#)](../ide/reference/build-events-page-project-designer-csharp.md)   
- [Pre-build Event/Post-build Event Command Line Dialog Box](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
- [How to: Specify Build Events (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)   
- [Compiling and Building](../ide/compiling-and-building-in-visual-studio.md)
+## <a name="see-also"></a>См. также  
+ [Страница "События построения" в конструкторе проектов (C#)](../ide/reference/build-events-page-project-designer-csharp.md)   
+ [Диалоговое окно «Командная строка события "До сборки" или "После сборки"»](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
+ [Практическое руководство. Указание событий сборки (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)   
+ [Компилирование и сборка](../ide/compiling-and-building-in-visual-studio.md)

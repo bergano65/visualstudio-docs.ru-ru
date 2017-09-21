@@ -1,84 +1,67 @@
 ---
-title: IDebugPointerObject::GetBytes | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugPointerObject::GetBytes
-helpviewer_keywords:
-- IDebugPointerObject::GetBytes method
+title: "IDebugPointerObject::GetBytes | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugPointerObject::GetBytes"
+helpviewer_keywords: 
+  - "Метод IDebugPointerObject::GetBytes"
 ms.assetid: e986c188-87fb-4b51-86e9-ee6a0035bdab
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: be7648362f250dfba00a244e3d21aff2824eb325
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
-Gets the value pointed to as a series of consecutive bytes.  
+# IDebugPointerObject::GetBytes
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Получает значение указанно на ряд последовательных как байтов.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
-HRESULT GetBytes(   
-   DWORD  dwStart,  
-   DWORD  dwCount,  
-   BYTE*  pBytes,  
-   DWORD* pdwBytes  
+```cpp#  
+HRESULT GetBytes(   
+   DWORD  dwStart,  
+   DWORD  dwCount,  
+   BYTE*  pBytes,  
+   DWORD* pdwBytes  
 );  
 ```  
   
-```csharp  
+```c#  
 int GetBytes(  
-   uint       dwStart,   
-   uint       dwCount,   
-   out byte[] pBytes,   
-   out uint   pdwBytes  
+   uint       dwStart,   
+   uint       dwCount,   
+   out byte[] pBytes,   
+   out uint   pdwBytes  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  `dwStart`  
- [in] An offset, in bytes, from the start of the object pointed to.  
+ \[in\] смещение в байтах от начала объекта указало.  
   
  `dwCount`  
- [in] The number of bytes to retrieve.  
+ \[in\] количество байтов, которое необходимо извлечь.  
   
  `pBytes`  
- [in, out] An array that is filled in with the value as a series of consecutive bytes, starting at the given offset from the object pointed to.  
+ \[in, out\] массив, который заполняется с значением ряд последовательных байтов, начиная с заданного смещения из объекта указал значение.  
   
  `pdwBytes`  
- [out] Returns the number of bytes actually retrieved.  
+ \[out\] возвращает число фактически полученных байтов.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise, returns an error code.  
+## Возвращаемое значение  
+ В случае успеха возвращает значение S\_OK; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- This method is used if the pointer as represented by this [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) points to a primitive type or a simple array of primitive types (that is, an array that can be represented by a simple sequence of bytes).  
+## Заметки  
+ Этот метод используется, если указатель в виде данным IDebugPointerObject указывает на тип\-примитиву или простой массив простых типов \(то есть массива, который может быть представлен простой последовательностью байтов\).  
   
-## <a name="see-also"></a>See Also  
+## См. также  
  [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)   
  [SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)

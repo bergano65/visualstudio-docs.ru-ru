@@ -1,61 +1,46 @@
 ---
-title: 'Step 8: Add a Method to Verify Whether the Player Won | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+title: "Шаг 8. Добавление метода для проверки, выиграл ли игрок | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
 ms.assetid: 6e317f6e-ba4c-4306-8924-300b0c2f65c6
 caps.latest.revision: 17
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: ae7a07c3ecf77764907a58e8c5f87a73b22df80b
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+author: "kempb"
+ms.author: "kempb"
+manager: "ghogen"
+caps.handback.revision: 17
 ---
-# <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Step 8: Add a Method to Verify Whether the Player Won
-You've created a fun game, but it needs an additional item to finish it. The game should end when the player wins, so you need to add a `CheckForWinner()` method to verify whether the player won.  
+# Шаг 8. Добавление метода для проверки, выиграл ли игрок
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Вы создали интересную игру, но требуется еще один элемент, чтобы завершить ее.  Игра должна заканчиваться победой игрока, поэтому необходимо добавить метод `CheckForWinner()` для проверки, выиграл ли игрок.  
   
-### <a name="to-add-a-method-to-verify-whether-the-player-won"></a>To add a method to verify whether the player won  
+### Добавление метода для проверки, выиграл ли игрок  
   
-1.  Add a `CheckForWinner()` method to the bottom of your code, below the `timer1_Tick()` event handler, as shown in the following code.  
+1.  Добавьте метод `CheckForWinner()` в нижнюю часть кода, под обработчиком событий `timer1_Tick()`, как показано в следующем коде.  
   
-     [!code-csharp[VbExpressTutorial4Step8#10](../ide/codesnippet/CSharp/step-8-add-a-method-to-verify-whether-the-player-won_1.cs)]  [!code-vb[VbExpressTutorial4Step8#10](../ide/codesnippet/VisualBasic/step-8-add-a-method-to-verify-whether-the-player-won_1.vb)]  
+     [!code-cs[VbExpressTutorial4Step8#10](../ide/codesnippet/CSharp/step-8-add-a-method-to-verify-whether-the-player-won_1.cs)]
+     [!code-vb[VbExpressTutorial4Step8#10](../ide/codesnippet/VisualBasic/step-8-add-a-method-to-verify-whether-the-player-won_1.vb)]  
   
-     The method uses another `foreach` loop in Visual C# or `For Each` loop in Visual Basic to go through each label in the TableLayoutPanel. It uses the equality operator (`==` in Visual C# and `=` in Visual Basic) to check each label's icon color to verify whether it matches the background. If the colors match, the icon remains invisible, and the player hasn't matched all of the icons remaining. In that case, the program uses a `return` statement to skip the rest of the method. If the loop gets through all of the labels without executing the `return` statement, that means that all of the icons on the form were matched. The program shows a MessageBox to congratulate the player on winning, and then calls the form's `Close()` method to end the game.  
+     В этом методе используется еще один цикл `foreach` для C\# или цикл `For Each` для Visual Basic, чтобы пройти по каждой метке в TableLayoutPanel.  Он использует оператор равенства \(`==` в Visual C\# и `=` в Visual Basic\) для проверки цвета значка каждой метки на соответствие цвету фона.  Если цвета совпадают, значок остается невидимым, а значит игрок не подобрал пару оставшимся значкам.  В этом случае программа использует оператор `return`, чтобы пропустить оставшуюся часть метода.  Если цикл прошел через все метки без выполнения оператора `return`, значит, всем значкам в форме была подобрана пара.  Программа отображает окно MessageBox с поздравлением победителя, а затем вызывает метод формы `Close()` для завершения игры.  
   
-2.  Next, have the label's Click event handler call the new `CheckForWinner()` method. Be sure that your program checks for a winner immediately after it shows the second icon that the player chooses. Look for the line where you set the second chosen icon's color, and then call the `CheckForWinner()` method right after that, as shown in the following code.  
+2.  После этого обработчик событий Click метки вызывает новый метод `CheckForWinner()`.  Убедитесь, что программа проверяет наличие победителя сразу после отображения второго значка, который выбирает игрок.  Найдите строку, где задается цвет второму значку, который вы выбрали, и после этой операции вызовите метод `CheckForWinner()`, как показано в следующем коде.  
   
-     [!code-csharp[VbExpressTutorial4Step8#11](../ide/codesnippet/CSharp/step-8-add-a-method-to-verify-whether-the-player-won_2.cs)]  [!code-vb[VbExpressTutorial4Step8#11](../ide/codesnippet/VisualBasic/step-8-add-a-method-to-verify-whether-the-player-won_2.vb)]  
+     [!code-cs[VbExpressTutorial4Step8#11](../ide/codesnippet/CSharp/step-8-add-a-method-to-verify-whether-the-player-won_2.cs)]
+     [!code-vb[VbExpressTutorial4Step8#11](../ide/codesnippet/VisualBasic/step-8-add-a-method-to-verify-whether-the-player-won_2.vb)]  
   
-3.  Save and run the program. Play the game and match all of the icons. When you win, the program displays a congratulatory MessageBox (as shown in the following picture), and then closes the box.  
+3.  Сохраните и выполните программу.  Сыграйте в игру и подберите пару всем значкам.  Если вы победили, программа отображает сообщение MessageBox с поздравлением \(как показано на следующем рисунке\) и закрывает окно.  
   
-     ![Matching game with MessageBox](../ide/media/express_tut4step8.png "Express_Tut4Step8")  
-Matching game with MessageBox  
+     ![Игра "Подбери пару&#33;" с MessageBox](../ide/media/express_tut4step8.png "Express\_Tut4Step8")  
+Игра "Подбери пару\!" с MessageBox  
   
-### <a name="to-continue-or-review"></a>To continue or review  
+### Продолжить или повторить пройденный материал  
   
--   To go to the next tutorial step, see [Step 9: Try Other Features](../ide/step-9-try-other-features.md).  
+-   Следующий шаг руководства см. в разделе [Шаг 9. Изучение других функций](../ide/step-9-try-other-features.md).  
   
--   To return to the previous tutorial step, see [Step 7: Keep Pairs Visible](../ide/step-7-keep-pairs-visible.md).
+-   Предыдущий шаг руководства см. в разделе [Шаг 7. Отмена исчезновения пар значков](../Topic/Step%207:%20Keep%20Pairs%20Visible.md).

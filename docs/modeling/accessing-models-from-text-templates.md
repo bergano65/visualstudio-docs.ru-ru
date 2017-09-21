@@ -1,38 +1,35 @@
 ---
-title: Accessing Models from Text Templates | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- text templates, accessing models
+title: "Обращение к моделям из текстовых шаблонов | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "текстовые шаблоны, доступ к моделям"
 ms.assetid: cf65395a-0ca3-4826-89c7-b1869562685c
 caps.latest.revision: 33
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 741fc8ac1ed4e0cc449c8010b71bd13a484933a8
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+author: "alancameronwills"
+ms.author: "awills"
+manager: "douge"
+caps.handback.revision: 33
 ---
-# <a name="accessing-models-from-text-templates"></a>Accessing Models from Text Templates
-By using text templates, you can create report files, source code files, and other text files that are based on domain-specific language models. For basic information about text templates, see [Code Generation and T4 Text Templates](../modeling/code-generation-and-t4-text-templates.md). The text templates will work in the experimental mode when you are debugging your DSL, and will also work on a computer on which you have deployed the DSL.  
+# Обращение к моделям из текстовых шаблонов
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+С помощью текстовых шаблонов, можно создать файлы отчетов, файлы исходного кода и другие текстовые файлы, основанные на моделях доменного языка.  Основные сведения о текстовых шаблонах см. в разделе [Code Generation and T4 Text Templates](../modeling/code-generation-and-t4-text-templates.md).  Текстовые шаблоны будут работать в экспериментальном режиме при отладке в DSL, а также будут работать на компьютере, на котором выполняется развертывание DSL.  
   
 > [!NOTE]
->  When you create a DSL solution, sample text template **\*.tt** files are generated in the debugging project. When you change the names of the domain classes, these templates will no longer work. Nevertheless, they include the basic directives that you need, and provide examples that you can update to match your DSL.  
+>  При создании решения DSL, текстовый шаблон образца **\*.tt** файлы создаются в проекте отладки.  При изменении доменных имен классов, эти шаблоны больше не будут работать.  Однако они включают основные рекомендации, которые необходимы, а также приведены примеры, которые можно обновлять, чтобы он соответствовал свой DSL.  
   
- To access a model from a text template:  
+ Доступ к модели из текстового шаблона:  
   
--   Set the inherit property of the template directive to <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. This provides access to the Store.  
+-   Задайте свойству наследование директивы шаблона <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>.  Это обеспечивает доступ к хранилищу.  
   
--   Specify directive processors for the DSL that you want to access. This loads the assemblies for your DSL so that you can use its domain classes, properties, and relationships in the code of your text template. It also loads the model file that you specify.  
+-   Укажите процессоры директив для DSL, который требуется получить доступ.  Это загружает сборки для DSL, что позволяет использовать его доменных классы, свойства и связи в коде данного текстового шаблона.  Он также загружает файл модели.  
   
- A `.tt` file similar to the following example is created in the Debugging project when you create a new [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution from the DSL Minimal Language template.  
+ A `.tt` файл, аналогичный следующему примеру создан в проекте отладки при создании новой  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] решение из шаблона язык DSL минимального.  
   
 ```  
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>  
@@ -55,57 +52,57 @@ Here is a list of elements in the model:
   
 ```  
   
- Notice the following points about this template:  
+ Обратите внимание на следующие моменты об этом шаблоне:  
   
--   The template can use the domain classes, properties, and relationships that you defined in the DSL Definition.  
+-   Шаблон может использовать доменных классы, свойства и связи, определенные в определении DSL.  
   
--   The template loads the model file that you specify in the `requires` property.  
+-   Шаблон загружает файл, указанный в модели `requires` свойство.  
   
--   A property in `this` contains the root element. From there, your code can navigate to other elements of the model. The name of the property is usually the same as the root domain class of your DSL. In this example, it is `this.ExampleModel`.  
+-   Свойство in `this` содержит корневой элемент.  Оттуда, код может переходить к другим элементам модели.  Имя свойства обычно такая же, как и класс для корневого домена DSL.  В этом примере он `this.ExampleModel`.  
   
--   Although the language in which the code fragments are written is C#, you can generate text of any kind. You can alternatively write the code in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] by adding the property `language="VB"` to the `template` directive.  
+-   Хотя язык, на котором фрагменты кода записываются c\#, можно создать текст любого типа.  Можно также написать код в пределах [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] за счет добавления свойства  `language="VB"` к  `template` директива.  
   
--   To debug the template, add `debug="true"` to the `template` directive. The template will open in another instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] if an exception occurs. If you want to break into the debugger at a specific point in the code, insert the statement `System.Diagnostics.Debugger.Break();`  
+-   Чтобы отладить шаблон, добавление `debug="true"` к  `template` директива.  Шаблон будет открыто в другом экземпляре [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] при возникновении исключения.  Если необходимо переключиться в режим отладчика на конкретный шаг в коде, вставьте выписку `System.Diagnostics.Debugger.Break();`  
   
-     For more information, see [Debugging a T4 Text Template](../modeling/debugging-a-t4-text-template.md).  
+     Дополнительные сведения см. в разделе [Debugging a T4 Text Template](../modeling/debugging-a-t4-text-template.md).  
   
-## <a name="about-the-dsl-directive-processor"></a>About the DSL directive processor  
- The template can use the domain classes that you defined in your DSL Definition. This is brought about by a directive that usually appears near the start of the template. In the previous example, it is the following.  
+## О процессора директив DSL  
+ Шаблон может использовать доменных классы, указанные в определении DSL.  Это принесено рядом с директивой, обычно отображается в начале шаблона.  В предыдущем примере, следующие.  
   
 ```  
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1'" #>  
 ```  
   
- The name of the directive ( `MyLanguage`, in this example) is derived from the name of your DSL. It invokes a *directive processor* that is generated as part of your DSL. You can find its source code in **Dsl\GeneratedCode\DirectiveProcessor.cs**.  
+ Имя директивы \( `MyLanguage`в этом примере\) является производным от имени имеющегося DSL.  Он вызывает a *процессор директив* будет создано как часть DSL.  Можно найти его в исходный код **Dsl\\GeneratedCode\\DirectiveProcessor.cs**.  
   
- The DSL directive processor performs two principal tasks:  
+ Процессор директив DSL выполняет 2 основных задач.  
   
--   It effectively inserts assembly and import directives into the template that references your DSL. This lets you use your domain classes in the template code.  
+-   Он фактически вставляет директивы сборки и импорта в шаблон, который ссылается на свой DSL.  Это позволяет использовать классы доменных в коде шаблона.  
   
--   It loads the file that you specify in the `requires` parameter, and sets a property in `this` that refers to the root element of the loaded model.  
+-   Он загружает файл, указанный в `requires` параметр, а для свойства in  `this` это относится к корневому элементу, загружаемой модели.  
   
-## <a name="validating-the-model-before-running-the-template"></a>Validating the model before running the template  
- You can cause the model to be validated before the template is executed.  
+## Проверка модели перед выполнением шаблон  
+ Можно заставить модели необходимо проверить перед шаблон выполняется.  
   
 ```  
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1';validation='open|load|save|menu'" #>  
   
 ```  
   
- Notice that:  
+ Обратите внимание, что:  
   
-1.  The `filename` and `validation` parameters are separated with ";" and there must be no other separators or spaces.  
+1.  `filename` и  `validation` параметры разделяются знаком "; должно быть" и другие разделители или пробелы.  
   
-2.  The list of validation categories determines which validation methods will be executed. Multiple categories should be separated with "&#124;" and there must be no other separators or spaces.  
+2.  Список категорий проверки определяет, какие методы проверки выполняются.  Несколько категорий должны быть разделены с "&#124;должно быть" и другие разделители или пробелы.  
   
- If an error is found, it will be reported in the errors window, and the result file will contain an error message.  
+ Если обнаружена ошибка, то будет отмечено в окне ошибок и файл результата будет содержать сообщение об ошибке.  
   
-##  <a name="Multiple"></a> Accessing multiple models from a text template  
+##  <a name="Multiple"></a> Доступ к несколько моделей из текстового шаблона  
   
 > [!NOTE]
->  This method lets you read multiple models in the same template but does not support ModelBus references. To read models that are interlinked by ModelBus References, see [Using Visual Studio ModelBus in a Text Template](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
+>  Этот метод позволяет считывать нескольких моделей в том же шаблоне, но не поддерживает ссылки ModelBus.  Для считывания модели, interlinked ссылка ModelBus см. в разделе [Использование Visual Studio ModelBus в текстовом шаблоне](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
   
- If you want to access more than one model from the same text template, you must call the generated directive processor one time for each model. You must specify the file name of each model in the `requires` parameter. You must specify the names that you want to use for the root domain class in the `provides` parameter. You must specify different values for the `provides` parameters in each of the directive calls. For example, assume that you have three model files called Library.xyz, School.xyz, and Work.xyz. To access them from the same text template, you must write three directive calls that resemble the following ones.  
+ Если необходимо получить доступ к более одной модели на основе одного и того же текстового шаблона, необходимо вызвать, созданный процессор директив один раз для каждой модели.  Необходимо указать имя файла в каждой модели `requires` параметр.  Необходимо указать имена, которые необходимо использовать для класса корневого домена `provides` параметр.  Необходимо указать различные значения `provides` параметры в каждом из директивных вызовов.  Например, предположим, что имеется 3 Library.xyz с именем файла модели, School.xyz и Work.xyz.  Для обращения к ним из одного и того же текстового шаблона, необходимо написать 3 директивных вызова, который будет аналогична разметке, которая приведена ниже один.  
   
 ```  
 <#@ ExampleModel processor="<YourLanguageName>DirectiveProcessor" requires="fileName='Library.xyz'" provides="ExampleModel=LibraryModel" #>  
@@ -114,11 +111,11 @@ Here is a list of elements in the model:
 ```  
   
 > [!NOTE]
->  This example code is for a language that is based on the Minimal Language solution template.  
+>  Этот пример кода для языка, который основан на шаблоне решения подобие уровень минимального языка.  
   
- To access the models in your text template, you can now write code similar to the code in the following example.  
+ Чтобы получить доступ к модели в текстовом шаблоне, теперь можно написать код, аналогичный код в следующем примере.  
   
-```csharp  
+```c#  
 <#  
 foreach (ExampleElement element in this.LibraryModel.Elements)  
 ...  
@@ -129,7 +126,7 @@ foreach (ExampleElement element in this.WorkModel.Elements)
 #>  
 ```  
   
-```vb  
+```vb#  
 <#  
 For Each element As ExampleElement In Me.LibraryModel.Elements  
 ...  
@@ -140,22 +137,22 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 #>  
 ```  
   
-## <a name="loading-models-dynamically"></a>Loading models dynamically  
- If you want to determine at runtime which models to load, you can load a model file dynamically in your program code, instead of using the DSL-specific directive.  
+## Модель динамической загрузки  
+ Если необходимо указать во время выполнения, которая моделирует для загрузки, можно загружать динамически файл модели в программном коде, вместо директивы DSL\-специфического.  
   
- However, one of the functions of the DSL-specific directive is to import the DSL namespace, so that the template code can use the domain classes defined in that DSL. Because you are not using the directive, you must add **\<assembly>** and **\<import>** directives for all the models that you might load. This is easy if the different models that you might load are all instances of the same DSL.  
+ Однако одной из функций рекомендации DSL\-специфического импортировать пространство имен DSL, поэтому код шаблона мог использовать указанные доменных классы в этом DSL.  Так как не использовать директиву, необходимо добавить **\<assembly\>** и  **\<import\>** рекомендации для всех моделей, которые могут загрузить.  Это легко если различные модели, можно загружать все экземпляры одного и того же DSL.  
   
- To load the file, the most effective method is by using [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus. In a typical scenario, your text template will use a DSL-specific directive to load the first model in the usual way. That model would contain ModelBus References to another model. You can use ModelBus to open the referenced model and access a particular element. For more information, see [Using Visual Studio ModelBus in a Text Template](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
+ Чтобы загрузить файл, наиболее эффективный метод с помощью [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus.  В типичном сценарии, пользовательский текстовый шаблон будет использовать директиву DSL\-специфического для загрузки первую модель обычным способом.  Модель содержит ссылки ModelBus на другой модели.  Можно использовать ModelBus, чтобы открыть связанную модель и доступа к указанный элемент.  Дополнительные сведения см. в разделе [Использование Visual Studio ModelBus в текстовом шаблоне](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
   
- In a less usual scenario, you might want to open a model file for which you have only a filename, and which might not be in the current [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] project. In this case, you can open the file by using the technique described in [How to: Open a Model from File in Program Code](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
+ В менее обычном сценарии, может понадобиться открыть файл модели, для которого имеется только имя файла и который не может находиться в любом месте [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] этот проект.  В этом случае файл можно открыть с помощью метода, описанного в пределах [Практическое руководство. Открытие модели из файла в коде программы](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
   
-## <a name="generating-multiple-files-from-a-template"></a>Generating multiple files from a template  
- If you want to generate a several files - for example, to generate a separate file for each element in a model, there are several possible approaches. By default, only one file is produced from each template file.  
+## Создание нескольких файлов из шаблона  
+ Если требуется создать несколько файлов \- например, создать отдельный файл для каждого элемента модели, несколько возможных подходов.  По умолчанию только один файл, созданный из каждого файла шаблона.  
   
-### <a name="splitting-a-long-file"></a>Splitting a long file  
- In this method, you use a template to generate a single file, separated by a delimiter. Then you split the file into its parts. There are two templates, one to generate the single file, and the other to split it.  
+### Разбейте файл long  
+ В этом методе используется шаблон для создания одного файла, разделенных разделителями.  Затем следует разделить файл в его части.  2 Одного шаблона, чтобы создать один файл, а другой для разделения его.  
   
- **LoopTemplate.t4** generates the long single file. Notice that its file extension is ".t4", because it should not be processed directly when you click **Transform All Templates**. This template takes a parameter, which specifies the delimiter string that separates the segments:  
+ **LoopTemplate.t4** создает long отдельный файл.  Обратите внимание, что его расширение файла ".t4", так как они не должны обрабатываться непосредственно при щелчке **Преобразовать все шаблоны**.  Этот шаблон принимает параметр, который определяет строку разделителя, разделяющая сегменты:  
   
 ```  
 <#@ template ninherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>  
@@ -178,7 +175,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
   
 ```  
   
- `LoopSplitter.tt` invokes `LoopTemplate.t4`, and then splits the resulting file into its segments. Notice that this template does not have to be a modeling template, because it does not read the model.  
+ `LoopSplitter.tt` вызывает  `LoopTemplate.t4`, а затем разделяет результирующий файл в его сегменты.  Обратите внимание, что этот шаблон не может быть шаблоном моделирования, поскольку он не выполняет чтение модели.  
   
 ```  
 <#@ template hostspecific="true" language="C#" #>  

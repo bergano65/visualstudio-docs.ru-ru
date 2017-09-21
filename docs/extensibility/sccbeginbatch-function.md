@@ -1,67 +1,50 @@
 ---
-title: SccBeginBatch Function | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- SccBeginBatch
-helpviewer_keywords:
-- SccBeginBatch function
+title: "Функция SccBeginBatch | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "SccBeginBatch"
+helpviewer_keywords: 
+  - "Функция SccBeginBatch"
 ms.assetid: 33968183-2e15-4e0d-955b-ca12212d1c25
 caps.latest.revision: 14
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: f4b6b0f30b639ff660534511563b78aa1dc14f8e
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 14
 ---
-# <a name="sccbeginbatch-function"></a>SccBeginBatch Function
-This function starts a batch sequence of source control operations. The [SccEndBatch](../extensibility/sccendbatch-function.md) will be called to end the batch. These batches may not be nested.  
+# Функция SccBeginBatch
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Эта функция запускает последовательность операций системы управления версиями пакета.[SccEndBatch](../extensibility/sccendbatch-function.md) Будет вызываться до конца пакета. Эти пакеты не могут быть вложенными.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
+```cpp#  
 SCCRTN SccBeginBatch(void);  
 ```  
   
-#### <a name="parameters"></a>Parameters  
- None.  
+#### Параметры  
+ Отсутствует.  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## Возвращаемое значение  
+ Реализации подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Value|Description|  
-|-----------|-----------------|  
-|SCC_OK|Batch of operations successfully began.|  
-|SCC_E_UNKNOWNERROR|Nonspecific failure.|  
+|Значение|Описание|  
+|--------------|--------------|  
+|SCC\_OK|Пакет операций успешно начата.|  
+|SCC\_E\_UNKNOWNERROR|Неспецифическая ошибка.|  
   
-## <a name="remarks"></a>Remarks  
- Source control batches are used to execute the same operations across multiple projects or multiple contexts. Batches can be used to eliminate redundant per-project dialog boxes from the user experience during a batched operation. The `SccBeginBatch` function and the [SccEndBatch](../extensibility/sccendbatch-function.md) are used as a function pair to indicate the beginning and end of an operation. They cannot be nested. `SccBeginBatch` sets a flag indicating that a batch operation is in progress.  
+## Заметки  
+ Пакеты управления источника используются выполнять те же операции в нескольких проектов или нескольких контекстов. Пакеты можно использовать во избежание избыточных проекта диалоговых окнах работу пользователей во время пакетной операции.`SccBeginBatch` Функции и [SccEndBatch](../extensibility/sccendbatch-function.md) используются как пара функций для определения начала и окончания операции. Они не могут быть вложенными.`SccBeginBatch` Задает флаг, указывающий, что пакетная операция находится в разработке.  
   
- While a batch operation is in effect, the source control plug-in should present at most one dialog box for any question to the user and apply the response from that dialog box on all subsequent operations.  
+ Когда действует пакетной операции, подключаемый модуль системы управления версиями следует не более одного диалогового окна для каких\-либо вопросов пользователь видит и применить ответ в этом диалоговом для всех последующих операций.  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
+## См. также  
+ [Функции API подключаемого модуля источника элемента управления](../extensibility/source-control-plug-in-api-functions.md)   
  [SccEndBatch](../extensibility/sccendbatch-function.md)

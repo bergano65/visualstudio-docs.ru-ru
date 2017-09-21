@@ -1,5 +1,5 @@
 ---
-title: Getting Started with Visual C# and Visual Basic using Visual Studio | Microsoft Docs
+title: "Начало работы с Visual C# и Visual Basic | Документация Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -35,27 +35,28 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: 3ce2d22a82f81db35575275a99d193066068e127
-ms.openlocfilehash: 562e94fb9881bc1844b78466d52611fc51a90a27
+ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
+ms.openlocfilehash: e493d170def8951fe08f9024af28c79db3980779
 ms.contentlocale: ru-ru
-ms.lasthandoff: 09/07/2017
+ms.lasthandoff: 07/10/2017
 
 ---
-# <a name="getting-started-with-visual-c-and-visual-basic-using-visual-studio"></a>Getting Started with Visual C# and Visual Basic using Visual Studio
-Whether you are new to Visual C# or Microsoft Visual Basic, this is the place to start. Getting Started Help is a series of sequential lessons that introduces you to Visual C# and Visual Basic. Have fun, and write some great software.  
+# Начало работы с Visual C# и Visual Basic
+<a id="getting-started-with-visual-c-and-visual-basic" class="xliff"></a>
+Этот раздел хорошо подходит для тех, кто начинает изучать Visual C# или Microsoft Visual Basic. Набор документации "Приступая к работе" содержит ссылки на набор последовательных занятий для ознакомления с языками Visual C# и Visual Basic. Желаем успехов в создании первоклассных программ!  
   
- To learn about Visual C++, see [Visual C++ resources](http://msdn.microsoft.com/vstudio/hh386302.aspx).  
+ Дополнительные сведения по Visual C++ см. в разделе [Ресурсы, посвященные Visual C++](http://msdn.microsoft.com/vstudio/hh386302.aspx).  
   
-## <a name="in-this-section"></a>In This Section  
- [Walkthrough: Create a Simple Application](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
- Identify the basic windows in the Visual Studio IDE, optimize your development experience by configuring a setting, and then build a simple program.  
+## Содержание
+<a id="in-this-section" class="xliff"></a>  
+ [Пошаговое руководство. Создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
+ Изучите основные окна интегрированной среды разработки Visual Studio, оптимизируйте среду разработки с помощью параметров и создайте простую программу.  
   
- [Tutorial 1: Create a Picture Viewer](../ide/tutorial-1-create-a-picture-viewer.md)  
- Build a program that loads a picture from a file and displays it in a window. Learn how to drag controls like buttons and picture boxes on your form, set their properties, and use containers to smoothly resize the form. Get started writing code.  
+ [Учебник 1. Создание приложения для просмотра рисунков](../ide/tutorial-1-create-a-picture-viewer.md)  
+ Создайте программу, которая загружает изображение из файла и отображает его в окне. Изучите процесс добавления в форму таких элементов управления, как кнопки, полей для изображений. Ознакомьтесь с настройкой свойств элементов управления, как использовать контейнеры для согласованного изменения размеров формы. Начните создавать код.  
   
- [Tutorial 2: Create a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md)  
- Build a timed math quiz game, where the player must answer four random arithmetic problems within a specified time. Learn how to generate random numbers using the `Random` class, trigger events using a `Timer` control, control program flow using `if else` statements, and perform basic arithmetic operations.  
+ [Учебное руководство 2. Создание математической головоломки с ограничением по времени](../ide/tutorial-2-create-a-timed-math-quiz.md)  
+ Создайте ограниченную по времени математическую головоломку, в которой игрок должен решить четыре арифметические задачи со случайными числами за определенное время. Изучите как создавать случайные числа с помощью класса `Random`; как вызывать события с помощью элемента управления `Timer`; как управлять поведением программы с помощью операторов `if else`; как выполнять основные арифметические операции.  
   
- [Tutorial 3: Create a Matching Game](../ide/tutorial-3-create-a-matching-game.md)  
- Build a matching game, where the player must match pairs of hidden icons. Learn how to hold objects using a `List` object, use a `foreach` loop, keep track of a form's state using reference variables, build an event handler that you can use with multiple objects, and make a timer fire exactly once when started.
-
+ [Учебное руководство 3. Создание игры "Подбери пару!"](../ide/tutorial-3-create-a-matching-game.md)  
+ Создайте игру "Подбери пару!", в которой игрок должен подобрать пару скрытым значкам. Изучите как хранить объекты с помощью объекта `List`; как использовать цикл `foreach`; как отслеживать состояние формы с помощью ссылочных переменных; как создавать обработчики событий, которые могут использовать несколько объектов; как создавать однократное срабатывание таймера при запуске.

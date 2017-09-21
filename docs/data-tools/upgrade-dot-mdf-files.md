@@ -1,133 +1,114 @@
 ---
-title: Upgrade .mdf files | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- SQL Server Express
-- SQL Server LocalDB
-- LocalDB
-- SQLEXPRESS
-- upgrading SQLExpress to SQLExpress
-- upgrading to LocalDB
+title: "Практическое руководство. Обновление до локальной базы данных или продолжение работы с SQL Server Express | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/16/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "VB"
+  - "CSharp"
+  - "C++"
+  - "aspx"
+helpviewer_keywords: 
+  - "LocalDB"
+  - "SQL Server, экспресс-выпуск"
+  - "SQL Server LocalDB"
+  - "SQLEXPRESS"
+  - "обновление SQLExpress до SQLExpress"
+  - "обновление до LocalDB"
 ms.assetid: 14ca6f76-f80e-4926-8020-3fee2d802b75
 caps.latest.revision: 33
-author: gewarren
-ms.author: gewarren
-manager: ghogen
+caps.handback.revision: 23
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
 robots: noindex,nofollow
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 6b5cafd570df333da80d76d95dfc152ec6c1fb2b
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/07/2017
-
 ---
-# <a name="upgrade-mdf-files"></a>Upgrade .mdf files
-This topic describes your options for upgrading your database file (.mdf) after you install a newer version of Visual Studio. It includes instructions for the following tasks:  
+# Практическое руководство. Обновление до локальной базы данных или продолжение работы с SQL Server Express
+В этом подразделе описываются параметры для обновления файла базы данных \(mdf\) после установите [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] и содержит инструкции для выполнения следующих задач:  
   
--   Upgrade a database file to use a newer version of SQL Server Express LocalDB  
+-   Обновление файла базы данных для использования LocalDB  
   
--   Upgrade a database file to use a newer version of SQL Server Express  
+-   Обновление файла базы данных для использования новой версии SQL Server Express  
   
--   Work with a database file in Visual Studio but retain compatibility with an older version of SQL Server Express or LocalDB  
+-   Работа с файлом базы данных, в [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], но сохраняет совместимость с [!INCLUDE[ssKatmai_exp](../data-tools/includes/sskatmai_exp_md.md)]  
   
--   Make SQL Server Express the default database engine  
+-   Сделайте SQL Server Express обработчик базы данных по умолчанию  
   
- You can use Visual Studio to open a  project that contains a database file (.mdf) that was created by using an older version of SQL Server Express or LocalDB. However, to continue to develop your project in Visual Studio, you must have that version of SQL Server Express or LocalDB  installed on the same machine as Visual Studio, or you must upgrade the database file. If you upgrade the database file, you won't be able to access it by using older versions of SQL Server Express or LocalDB.  
+ Можно использовать [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] чтобы открыть проект, содержащий файл базы данных \(mdf\), который был создан с использованием более старой версии SQL Server Express.  Однако продолжения разработки проекта в [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], необходимо иметь то, что версия SQL Server Express установлена на одном механической обработке подвергает как Visual Studio или необходимо обновить файл базы данных SQL Server Express LocalDB.  При обновлении файла базы данных, невозможно будет получить доступ к его с предыдущими версиями SQL Server Express.  
   
- You may also be prompted to upgrade a database file that was created through an earlier version of SQL Server Express or LocalDB if the version of the file isn't compatible with the instance of SQL Server Express or LocalDB that's currently installed. To resolve the issue, Visual Studio will prompt you to upgrade the file.  
+ Можно также быть предложено обновить файл базы данных, созданный с помощью [!INCLUDE[sql_Denali_exp](../data-tools/includes/sql_denali_exp_md.md)] если версия файла не совместима с экземпляром SQL Server Express, который в данный момент установленно.  Чтобы разрешить проблему, Visual Studio предложит обновить файл до более новой версии SQL Server Express.  
   
 > [!IMPORTANT]
->  We recommend that you back up the database file before you upgrade it.  
+>  Рекомендуется создать резервную копию файла базы данных перед обновлением.  
   
-> [!WARNING]
->  If you upgrade an .mdf file that was created in LocalDB 2014 (V12) 32 bit to LocalDB 2016 (V13), you will not be able to open the file again in the 32-bit version of LocalDB.  In Update 2, LocalDB V13 is 64 bit only.  
+ Перед обновлением базы данных нужно учесть следующие условия:  
   
- Before you upgrade a database, consider the following criteria:  
+-   Обновление если требуется работать в проекте как в [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)], так и в [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
   
--   Don't upgrade if you want to work on your project in both an older version and a newer version of Visual Studio.  
+-   Обновление если приложение будет использоваться в средах, которые используют SQL Server Express, а не LocalDB.  
   
--   Don't upgrade if your application will be used in environments that use SQL Server Express rather than LocalDB.  
+-   Обновление если приложение использует удаленные соединения, поскольку LocalDB не поддерживает их.  
   
--   Don't upgrade if your application uses remote connections, because LocalDB doesn't accept them.  
+-   Обновление если приложение полагается на службы IIS \(IIS\).  
   
--   Don't upgrade if your application relies on Internet Information Services (IIS).  
+-   Попробуйте обновить если требуется приложениям тестовой базы данных среды, " песочницы ", но не те управления базой данных.  
   
--   Consider upgrading if you want to test database applications in a sandbox environment but don't want to administer a database.  
+### Обновление файла базы данных для использования LocalDB  
   
-### <a name="to-upgrade-a-database-file"></a>To upgrade a database file  
+1.  В **Обозреватель серверов**, нажмите кнопку **\*\*\* подключение к базе данных \*\*\***.  
   
-1.  In **Server Explorer**, select the **Connect to Database** button.  
+2.  В диалоговом окне **Добавить подключение** укажите следующие сведения:  
   
-2.  In the **Add Connection** dialog box, specify the following information:  
+    -   **\*\*\* источник данных: \*\*\*** Microsoft SQL Server \(SqlClient\)  
   
-    -   **Data Source**: `Microsoft SQL Server (SqlClient)`  
+    -   **\*\*\* имя сервера: \*\*\*** \) \(LocalDB \\ v11.0  
   
-    -   **Server Name**:  
+    -   **\*\*\* Вложение файла базы данных. \*\*\*** *путь*, где *путь* физический путь первичного файла mdf.  
   
-        -   To use the default version: `(localdb)\MSSQLLocalDB`.  This will specify either ProjectV12 or ProjectV13, depending on which version of Visual Studio  is installed and when the first LocalDB instance was created. The **MSSQLLocalDB** node in **SQL Server Object Explorer** shows which version it is pointing to.  
+    -   **Logical Name:** *имя*, где *имя* имя, которое необходимо использовать с файлом.  
   
-        -   To use a specific version: `(localdb)\ProjectsV12` or `(localdb)\ProjectsV13`, where V12 is LocalDB 2014 and V13 is LocalDB 2016.  
+3.  Нажмите кнопку **ОК**.  
   
-    -   **Attach a database file**: The physical path of the primary .mdf file.  
+4.  Получив приглашение, нажмите кнопку **\*\*\* да \*\*\*** для обновления файла.  
   
-    -   **Logical Name**: The name that you want to use with the file.  
+ Обновить базу данных, вложенный к компоненту database engine LocalDB и больше не совместимый с [!INCLUDE[ssKatmai_exp](../data-tools/includes/sskatmai_exp_md.md)].  
   
-3.  Select the **OK** button.  
+ Можно также изменить подключение SQLExpress для использования LocalDB путем открытия контекстного меню для подключения, а затем выбрать **Изменение подключения**.  В **Изменение подключения** диалогового окна, измените имя сервера в LocalDB\) \(\\ v11.0.  В диалоговом окне **Дополнительные свойства**, убедитесь, что **\*\*\* пользовательский экземпляр \*\*\*** установлено в значение false.  
   
-4.  When you're prompted, select the **Yes** button to upgrade the file.  
+### Обновление до более новой версии SQL Server Express  
   
- The database is upgraded, is attached to the LocalDB database engine, and is no longer compatible with  the older version of LocalDB.  
+1.  В контекстном меню для подключения к базе данных выберите **Изменение подключения**.  
   
- You can also modify a SQL Server Express connection to use LocalDB by opening the shortcut menu for the connection and then selecting **Modify Connection**. In the **Modify Connection** dialog box, change the server name to `(LocalDB)\MSSQLLocalDB`. In the **Advanced Properties** dialog box, make sure that **User Instance** is set to **False**.  
+2.  В диалоговом окне **Изменение подключения**, нажмите кнопку **Дополнительно**.  
   
-### <a name="to-upgrade-to-a-newer-version-of-sql-server-express"></a>To upgrade to a newer version of SQL Server Express  
+3.  В диалоговом окне **Дополнительные свойства**, нажмите кнопку **ОК**, не изменяя имя сервера.  
   
-1.  On the shortcut menu for the connection to the database, select **Modify Connection**.  
+ Файл базы данных обновляется, чтобы соответствовать текущей версии [!INCLUDE[sql_Denali_exp](../data-tools/includes/sql_denali_exp_md.md)].  
   
-2.  In the **Modify Connection** dialog box, select the **Advanced** button.  
+### Работать с базой данных в [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], но сохранить совместимость с [!INCLUDE[ssKatmai_exp](../data-tools/includes/sskatmai_exp_md.md)]  
   
-3.  In the **Advanced Properties** dialog box, select the **OK** button without changing the server name.  
+1.  В [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], откройте проект, не обновляя ее.  
   
- The database file is upgraded to match the current version of SQL Server Express.  
+    -   Чтобы запустить проект, выберите ключ F5.  
   
-### <a name="to-work-with-the-database-in-visual-studio-but-retain-compatibility-with-sql-server-express"></a>To work with the database in Visual Studio but retain compatibility with SQL Server Express  
+    -   Чтобы изменить базу данных, откройте файл mdf в **Обозреватель решений** и разверните узел в **Обозреватель серверов** для работы с базой данных так же, как и в [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)].  
   
--   In Visual Studio, open the project without upgrading it.  
+### Сделать SQL Server Express обработчик базы данных по умолчанию  
   
-    -   To run the project, select the F5 key.  
+1.  В строке меню выберите **Сервис**, **Параметры**.  
   
-    -   To edit the database, open the .mdf file in **Solution Explorer**, and expand the node in **Server Explorer** to work with your database.  
+2.  В диалоговом окне **Параметры** " разверните узел параметры **\*\*\* средства данных \*\*\***, а затем выберите узел **\*\*\* подключения к данным \*\*\***.  
   
-### <a name="to-make-sql-server-express-the-default-database-engine"></a>To make SQL Server Express the default database engine  
+3.  В текстовом поле **\*\*\* имя экземпляра SQL Server \*\*\*** укажите имя экземпляра SQL Server Express, который необходимо использовать.  Если экземпляр не имеет имя, укажите `. \ SQLEXPRESS`.  
   
-1.  On the menu bar, select **Tools** > **Options**.  
+4.  Нажмите кнопку **ОК**.  
   
-2.  In the **Options** dialog box, expand the **Data Tools** options, and then select the **Data Connections** node.  
+ SQL Server Express является обработчиком базы данных по умолчанию для приложений.  
   
-3.  In the **SQL Server Instance Name** text box, specify the name of the instance of SQL Server Express or LocalDB that you want to use. If the instance isn't named, specify `.\SQLEXPRESS or (localdb)\MSSQLLocalDB`.  
-  
-4.  Select the **OK** button.  
-  
- SQL Server Express will be the default database engine for your applications.  
-  
-
+## См. также  
+ [Общие сведения о локальных данных](../data-tools/local-data-overview.md)   
+ [Пошаговое руководство. Подключение к данным в локальном файле базе данных \(Windows Forms\)](../Topic/Walkthrough:%20Connecting%20to%20Data%20in%20a%20Local%20Database%20File%20\(Windows%20Forms\).md)

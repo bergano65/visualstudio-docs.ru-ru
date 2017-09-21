@@ -1,80 +1,63 @@
 ---
-title: Loading VSPackages | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- VSPackages, autoloading
-- VSPackages, loading
+title: "Загрузка пакетов VSPackages | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "Пакеты VSPackage Автозагрузка"
+  - "пакеты VSPackage, загрузка"
 ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
 caps.latest.revision: 17
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 9808bce5f41519f87499de0ace2eaa8350021f79
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 17
 ---
-# <a name="loading-vspackages"></a>Loading VSPackages
-VSPackages are loaded into Visual Studio only when their functionality is required. For example, a VSPackage is loaded when Visual Studio uses a project factory or a service that the VSPackage implements. This feature is called delayed loading, which is used whenever possible to improve performance.  
+# Загрузка пакетов VSPackages
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Пакеты VSPackage загружаются в Visual Studio только в том случае, если требуется их функциональность. Например VSPackage загружается, когда Visual Studio использует фабрики проекта или служба, которая реализует VSPackage. Эта возможность называется отложенной загрузки, которая используется при любой возможности для повышения производительности.  
   
 > [!NOTE]
->  Visual Studio can determine certain VSPackage information, such as the commands that a VSPackage offers, without loading the VSPackage.  
+>  Visual Studio можно определять некоторые сведения VSPackage, такие как команды, доступные в VSPackage, без загрузки VSPackage.  
   
- VSPackages can be set to autoload in a particular user interface (UI) context, for example, when a solution is open. The <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> attribute sets this context.  
+ Пакеты VSPackage может быть присвоено автозагрузки в контексте определенного пользователя пользовательского интерфейса, например, при открытом решении.<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> Атрибут задает этот контекст.  
   
-### <a name="autoloading-a-vspackage-in-a-specific-context"></a>Autoloading a VSPackage in a specific context  
+### Автозагрузка VSPackage в определенном контексте  
   
--   Add the `ProvideAutoLoad` attribute to the VSPackage attributes:  
+-   Добавление `ProvideAutoLoad` атрибут VSPackage атрибуты:  
   
-    ```csharp  
+    ```c#  
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
     [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
     [Guid("00000000-0000-0000-0000-000000000000")] // your specific package GUID  
-    public class MyAutoloadedPackage : Package  
+    public class MyAutoloadedPackage : Package  
     {. . .}  
     ```  
   
-     See the enumerated fields of <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> for a list of the UI contexts and their GUID values.  
+     Перечислимый поля в разделе <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> список контексты пользовательского интерфейса и их значения GUID.  
   
--   Set a breakpoint in the <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> method.  
+-   Установите точку останова в <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> метод.  
   
--   Build the VSPackage and start debugging.  
+-   Построение VSPackage и начать отладку.  
   
--   Load a solution or create one.  
+-   Загрузите решение или создайте новый.  
   
-     The VSPackage loads and stops at the breakpoint.  
+     VSPackage загружает и останавливается в точке останова.  
   
-## <a name="forcing-a-vspackage-to-load"></a>Forcing a VSPackage to load  
- Under some circumstances a VSPackage may have to force another VSPackage to be loaded. For example, a lightweight VSPackage might load a larger VSPackage in a context that is not available as a CMDUIContext.  
+## Принудительная загрузка VSPackage  
+ В некоторых случаях VSPackage может потребоваться принудительно другой VSPackage для загрузки. Например упрощенный VSPackage может загрузить больше VSPackage в контексте, который не доступен как CMDUIContext.  
   
- You can use the <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> method to force a VSPackage to load.  
+ Можно использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> метод, чтобы принудительно VSPackage для загрузки.  
   
--   Insert this code into the <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> method of the VSPackage that forces another VSPackage to load:  
+-   Вставьте этот код в <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> метод VSPackage, который вызывает другой VSPackage для загрузки:  
   
-    ```csharp  
+    ```c#  
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;  
     if (shell == null) return;  
   
@@ -85,17 +68,17 @@ VSPackages are loaded into Visual Studio only when their functionality is requir
   
     ```  
   
-     When the VSPackage is initialized, it will force `PackageToBeLoaded` to load.  
+     При инициализации VSPackage вынудит `PackageToBeLoaded` для загрузки.  
   
-     Force loading should not be used for VSPackage communication. Use [Using and Providing Services](../extensibility/using-and-providing-services.md) instead.  
+     Загрузка FORCE следует использовать не обмена VSPackage. Взамен рекомендуется использовать [Использование и предоставления услуг](../extensibility/using-and-providing-services.md).  
   
-## <a name="using-a-custom-attribute-to-register-a-vspackage"></a>Using a custom attribute to register a VSPackage  
- In certain cases you may need to create a new registration attribute for your extension. You can use registration attributes to add new registry keys or to add new values to existing keys. The new attribute must derive from <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>, and it must override the <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> and <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> methods.  
+## Использование настраиваемого атрибута для регистрации VSPackage  
+ В некоторых случаях может потребоваться создание нового атрибута регистрации расширения. Атрибуты регистрации можно использовать для добавления новых разделов реестра или добавить новые значения для существующих разделов. Новый атрибут должен быть производным от <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>, и его необходимо переопределить <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> и <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> методы.  
   
-## <a name="creating-a-registry-key"></a>Creating a Registry Key  
- In the following code, the custom attribute creates a **Custom** subkey under the key for the VSPackage that is being registered.  
+## Создание раздела реестра  
+ В следующем коде создается пользовательский атрибут **пользовательские** подраздела в разделе для VSPackage, который регистрируется.  
   
-```csharp  
+```c#  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
 {  
     Key packageKey = null;  
@@ -118,10 +101,10 @@ public override void Unregister(RegistrationContext context)
   
 ```  
   
-## <a name="creating-a-new-value-under-an-existing-registry-key"></a>Creating a New Value Under an Existing Registry Key  
- You can add custom values to an existing key. The following code shows how to add a new value to a VSPackage registration key.  
+## Создание нового значения существующего раздела реестра  
+ Можно добавить пользовательские значения для существующего ключа. Ниже показано, как добавить новое значение для ключа регистрации VSPackage.  
   
-```csharp  
+```c#  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
 {  
     Key packageKey = null;  
@@ -143,5 +126,5 @@ public override void Unregister(RegistrationContext context)
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
- [VSPackages](../extensibility/internals/vspackages.md)
+## См. также  
+ [Пакеты VSPackage](../extensibility/internals/vspackages.md)

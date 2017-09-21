@@ -1,54 +1,36 @@
 ---
-title: Utilization Navigator | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- vs.cv.performance.utilizationnavigator
+title: "Навигатор использования | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vs.cv.performance.utilizationnavigator"
 ms.assetid: 522a981a-37ef-4cdd-a04c-f1e7525a2aab
 caps.latest.revision: 9
-author: mikejo5000
-ms.author: mikejo
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
-ms.openlocfilehash: 49fde5b95e12d40af4778d182058f0ae3204e3b8
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/31/2017
-
+author: "mikejo5000"
+ms.author: "mikejo"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="utilization-navigator"></a>Utilization Navigator
-You can use the Utilization Navigator in the Concurrency Visualizer to select an interval of time in a trace. The Concurrency Visualizer shows the utilization of CPU cores by the target process over time. This makes it easier to examine CPU utilization patterns and also enables comparison between the utilization data and the data in other views. The Utilization Navigator appears at the top of every view in the Concurrency Visualizer. The following illustration shows the Utilization Navigator.  
+# Навигатор использования
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Можно использовать навигатор загруженности в визуализаторе параллелизма для выбора интервала времени в трассировке.  Визуализатор параллелизма показывает загруженность ядер ЦП целевым процессом во времени.  Это облегчает просмотр шаблонов загруженности ЦП, а также позволяет сравнить используемые данные и данные в других представлениях.  Навигатор загруженности отображается в верхней части каждого представления в визуализаторе параллелизма.  На следующем рисунке показано использование навигатора загруженности.  
   
- ![Utilization Navigator showing selected timeframe](../profiling/media/cvutilizationnavigator.png "CVUtilizationNavigator")  
-Utilization Navigator and a selected time frame  
+ ![Навигатор использования с выбранным отрезком времени](~/profiling/media/cvutilizationnavigator.png "CVUtilizationNavigator")  
+Навигатор загруженности и выбранный интервал времени  
   
- In the illustration, the selected interval is defined by a red rectangle, known as the *thumb*.  
+ На рисунке выбранный интервал выделен красным прямоугольником, называемый *бегунком*.  
   
- Here's how you can use the Utilization Navigator to manipulate the displayed time range:  
+ Вот как можно использовать навигатор загруженности для управления отображаемым диапазоном времени:  
   
--   You can pan by dragging the thumb left or right. (Keyboard: Move the focus to the thumb and then press the left or right arrow key.)  
+-   Можно произвести сдвиг при помощи перетаскивания бегунка влево или вправо. \(Клавиатура: Перейдите на бегунок и затем нажмите на стрелку влево или вправо.\)  
   
--   You can change the extent of the interval by dragging one of the handles. (Keyboard: Move the focus to a handle and then press the right or left arrow key.)  
+-   Можно изменить размер интервала перетащив один из маркеров. \(Клавиатура: Перейдите на маркер, а затем нажмите стрелку влево или вправо\).  
   
- If you change the interval by using a different Concurrency Visualizer zoom control, the Utilization Navigator updates to reflect the change.
+ Если изменить интервал с помощью другого элемента управления масштабирования визуализатора параллелизма, навигатор загруженности произведет обновление для отражения изменения.

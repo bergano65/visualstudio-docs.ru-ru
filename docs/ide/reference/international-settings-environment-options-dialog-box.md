@@ -1,5 +1,5 @@
 ---
-title: International Settings, Environment, Options Dialog Box | Microsoft Docs
+title: "Страница \"Выбор языка\", папка \"Среда\", диалоговое окно \"Параметры\" | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -20,8 +20,8 @@ helpviewer_keywords:
 - languages, specifying default
 ms.assetid: e3a8815c-6995-4099-8e88-34f91fad55b2
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: kempb
+ms.author: kempb
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -38,24 +38,24 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
-ms.openlocfilehash: dda6acacf373d56b133b0847b6ae53e404cd1672
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: b92985ecd674fe750504c3aa85634b8c09fcdd5a
 ms.contentlocale: ru-ru
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 07/14/2017
 
 ---
-# <a name="international-settings-environment-options-dialog-box"></a>International Settings, Environment, Options Dialog Box
-The International Settings page allows you to change the default language when you have more than one language version of the integrated development environment (IDE) installed on your machine. You can access this dialog box by selecting **Options** from the **Tools** menu and then choosing **International Settings** from the **Environment** folder. If this page does not appear in the list, select **Show all settings** in the **Options** dialog box.  
+# <a name="international-settings-environment-options-dialog-box"></a>Страница "Язык интерфейса", папка "Среда", диалоговое окно "Параметры"
+На странице «Выбор языка» можно изменить язык по умолчанию, если на компьютере установлено несколько языковых версий интегрированной среды разработки (IDE). Чтобы открыть это диалоговое окно, выберите **Параметры** в меню **Сервис**, а затем выберите **Выбор языка** в папке **Среда**. Если эта страница отсутствует в списке, выберите **Показать все параметры** в диалоговом окне **Параметры**.  
   
 > [!NOTE]
->  The options available in dialog boxes, and the names and locations of menu commands you see, might differ from what is described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md).  
+>  Доступные в диалоговых окнах параметры, а также названия и расположение команд меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
- **Language**  
- Lists the available languages for the installed product language versions. This option is unavailable unless you have more than one language version installed on your machine. If multiple languages of products or a mixed language installation of products share the environment, the language selection is changed to **Same as Microsoft Windows**.  
+ **Язык**  
+ Содержит список доступных языков для языковых версий установленного продукта. Этот параметр недоступен, если на компьютере не установлено несколько языковых версий. Если среда разработки является общей для продуктов на разных языках, язык меняется на **такой же, как в Microsoft Windows**.  
   
 > [!CAUTION]
->  In a system with multiple languages installed, the Visual C++ build tools (cl.exe, link.exe, nmake.exe, bscmake.exe and related files) are not affected by this setting. These tools use the version for the last language installed. The build tools for the previously installed language are overwritten, because the Visual C++ build tools do not use the satellite DLL model.  
+>  В системе с несколькими установленными языками средства построения Visual C++ (cl.exe, link.exe, nmake.exe, bscmake.exe и связанные файлы) не зависят от этого параметра. Эти средства используют версию для самого последнего установленного языка. Средства для ранее установленных языков перезаписываются, поскольку средства построения Visual C++ не используют модель вспомогательных библиотек DLL.  
   
-## <a name="see-also"></a>See Also  
- [Install language packs](../../install/install-visual-studio.md#step-6---install-language-packs-optional)   
- [Environment Options Dialog Box](../../ide/reference/environment-options-dialog-box.md)
+## <a name="see-also"></a>См. также  
+ [Установка языковых пакетов](../../install/install-visual-studio.md#install-language-packs)   
+ [Диалоговое окно "Параметры среды"](../../ide/reference/environment-options-dialog-box.md)

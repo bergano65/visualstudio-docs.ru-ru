@@ -1,74 +1,57 @@
 ---
-title: BP_LOCATION_CODE_FUNC_OFFSET | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- BP_LOCATION_CODE_FUNC_OFFSET
-helpviewer_keywords:
-- BP_LOCATION_CODE_FUNC_OFFSET structure
+title: "BP_LOCATION_CODE_FUNC_OFFSET | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "BP_LOCATION_CODE_FUNC_OFFSET"
+helpviewer_keywords: 
+  - "Структура BP_LOCATION_CODE_FUNC_OFFSET"
 ms.assetid: ab38f7ca-fa01-4cf3-a06c-56cbb7207617
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 142a6ad44d0c505ff45491b13c686e77ffd95bec
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="bplocationcodefuncoffset"></a>BP_LOCATION_CODE_FUNC_OFFSET
-Describes the offset location of a breakpoint in a function in code.  
+# BP_LOCATION_CODE_FUNC_OFFSET
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Описывает расположение смещения точки останова в функции в коде.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
-typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {   
-   BSTR                     bstrContext;  
-   IDebugFunctionPosition2* pFuncPos;  
+```cpp#  
+typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {   
+   BSTR                     bstrContext;  
+   IDebugFunctionPosition2* pFuncPos;  
 } BP_LOCATION_CODE_FUNC_OFFSET;  
 ```  
   
-## <a name="members"></a>Members  
+## Члены  
  `bstrContext`  
- The context of the breakpoint, typically a method or function name as seen on a call stack.  
+ Контекст точки останова, как правило, имя метода или функции, как показано в стеке вызова.  
   
  `pFuncPos`  
- The [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) object that describes the name of the function and the relative position from the beginning of the function.  
+ [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) объект, описывающий имя функции и относительное положение с начала функции.  
   
-## <a name="remarks"></a>Remarks  
- This structure is a member of the [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) structure as part of a union.  
+## Заметки  
+ Эта структура элемент [BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структура как часть соединения.  
   
- The `pFuncPos` member indicates where to set the function breakpoint.  
+ `pFuncPos` элемент показано, как установить точку останова в функции.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## Требования  
+ Заголовок: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
+## См. также  
+ [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
  [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)

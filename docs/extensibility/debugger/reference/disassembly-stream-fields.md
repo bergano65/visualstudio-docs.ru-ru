@@ -1,140 +1,123 @@
 ---
-title: DISASSEMBLY_STREAM_FIELDS | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- DISASSEMBLY_STREAM_FIELDS
-helpviewer_keywords:
-- DISASSEMBLY_STREAM_FIELDS enumeration
+title: "DISASSEMBLY_STREAM_FIELDS | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "DISASSEMBLY_STREAM_FIELDS"
+helpviewer_keywords: 
+  - "Перечисление DISASSEMBLY_STREAM_FIELDS"
 ms.assetid: cfc9b4de-c756-4844-bea7-d9f186a51d1b
 caps.latest.revision: 11
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: c1681a66953db211dba3f9cc93235b15083a73a4
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 11
 ---
-# <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
-Specifies what information to retrieve about a disassembly field.  
+# DISASSEMBLY_STREAM_FIELDS
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Указывает, какую информацию, которую необходимо извлечь о поле дизассемблированный код.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
-enum enum_DISASSEMBLY_STREAM_FIELDS {   
-   DSF_ADDRESS          = 0x00000001,  
-   DSF_ADDRESSOFFSET    = 0x00000002,  
-   DSF_CODEBYTES        = 0x00000004,  
-   DSF_OPCODE           = 0x00000008,  
-   DSF_OPERANDS         = 0x00000010,  
-   DSF_SYMBOL           = 0x00000020,  
-   DSF_CODELOCATIONID   = 0x00000040,  
-   DSF_POSITION         = 0x00000080,  
-   DSF_DOCUMENTURL      = 0x00000100,  
-   DSF_BYTEOFFSET       = 0x00000200,  
-   DSF_FLAGS            = 0x00000400,  
-   DSF_OPERANDS_SYMBOLS = 0x00010000,  
-   DSF_ALL              = 0x000107ff  
+```cpp#  
+enum enum_DISASSEMBLY_STREAM_FIELDS {   
+   DSF_ADDRESS          = 0x00000001,  
+   DSF_ADDRESSOFFSET    = 0x00000002,  
+   DSF_CODEBYTES        = 0x00000004,  
+   DSF_OPCODE           = 0x00000008,  
+   DSF_OPERANDS         = 0x00000010,  
+   DSF_SYMBOL           = 0x00000020,  
+   DSF_CODELOCATIONID   = 0x00000040,  
+   DSF_POSITION         = 0x00000080,  
+   DSF_DOCUMENTURL      = 0x00000100,  
+   DSF_BYTEOFFSET       = 0x00000200,  
+   DSF_FLAGS            = 0x00000400,  
+   DSF_OPERANDS_SYMBOLS = 0x00010000,  
+   DSF_ALL              = 0x000107ff  
 };  
 typedef DWORD DISASSEMBLY_STREAM_FIELDS;  
 ```  
   
-```csharp  
-public enum enum_DISASSEMBLY_STREAM_FIELDS {   
-   DSF_ADDRESS          = 0x00000001,  
-   DSF_ADDRESSOFFSET    = 0x00000002,  
-   DSF_CODEBYTES        = 0x00000004,  
-   DSF_OPCODE           = 0x00000008,  
-   DSF_OPERANDS         = 0x00000010,  
-   DSF_SYMBOL           = 0x00000020,  
-   DSF_CODELOCATIONID   = 0x00000040,  
-   DSF_POSITION         = 0x00000080,  
-   DSF_DOCUMENTURL      = 0x00000100,  
-   DSF_BYTEOFFSET       = 0x00000200,  
-   DSF_FLAGS            = 0x00000400,  
-   DSF_OPERANDS_SYMBOLS = 0x00010000,  
-   DSF_ALL              = 0x000107ff  
+```c#  
+public enum enum_DISASSEMBLY_STREAM_FIELDS {   
+   DSF_ADDRESS          = 0x00000001,  
+   DSF_ADDRESSOFFSET    = 0x00000002,  
+   DSF_CODEBYTES        = 0x00000004,  
+   DSF_OPCODE           = 0x00000008,  
+   DSF_OPERANDS         = 0x00000010,  
+   DSF_SYMBOL           = 0x00000020,  
+   DSF_CODELOCATIONID   = 0x00000040,  
+   DSF_POSITION         = 0x00000080,  
+   DSF_DOCUMENTURL      = 0x00000100,  
+   DSF_BYTEOFFSET       = 0x00000200,  
+   DSF_FLAGS            = 0x00000400,  
+   DSF_OPERANDS_SYMBOLS = 0x00010000,  
+   DSF_ALL              = 0x000107ff  
 };  
 ```  
   
-## <a name="members"></a>Members  
- DSF_ADDRESS  
- Initialize/use the `bstrAddress` field.  
+## Члены  
+ DSF\_ADDRESS  
+ Инициализируйте и использование `bstrAddress` поле.  
   
- DSF_ADDRESSOFFSET  
- Initialize/use the `bstrAddressOffset` field.  
+ DSF\_ADDRESSOFFSET  
+ Инициализируйте и использование `bstrAddressOffset` поле.  
   
- DSF_CODEBYTES  
- Initialize/use the `bstrCodeBytes` field.  
+ DSF\_CODEBYTES  
+ Инициализируйте и использование `bstrCodeBytes` поле.  
   
- DSF_OPCODE  
- Initialize/use the `bstrOpCode` field.  
+ DSF\_OPCODE  
+ Инициализируйте и использование `bstrOpCode` поле.  
   
- DSF_OPERANDS  
- Initialize/use the `bstrOperands` field.  
+ DSF\_OPERANDS  
+ Инициализируйте и использование `bstrOperands` поле.  
   
- DSF_SYMBOL  
- Initialize/use the `bstrSymbol` field.  
+ DSF\_SYMBOL  
+ Инициализируйте и использование `bstrSymbol` поле.  
   
- DSF_CODELOCATIONID  
- Initialize/use the `uCodeLocationId` field.  
+ DSF\_CODELOCATIONID  
+ Инициализируйте и использование `uCodeLocationId` поле.  
   
- DSF_POSITION  
- Initialize/use the `posBeg` and `posEnd` fields.  
+ DSF\_POSITION  
+ Инициализируйте и использование `posBeg` и  `posEnd` поля.  
   
- DSF_DOCUMENTURL  
- Initialize/use the `bstrDocumentUrl` field.  
+ DSF\_DOCUMENTURL  
+ Инициализируйте и использование `bstrDocumentUrl` поле.  
   
- DSF_BYTEOFFSET  
- Initialize/use the `dwByteOffset` field.  
+ DSF\_BYTEOFFSET  
+ Инициализируйте и использование `dwByteOffset` поле.  
   
- DSF_FLAGS  
- Initialize/use the `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) field.  
+ DSF\_FLAGS  
+ Инициализируйте и использование `dwFlags` \([DISASSEMBLY\_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)поле\).  
   
- DSF_OPERANDS_SYMBOLS  
- Include symbol names in the `bstrOperands` field.  
+ DSF\_OPERANDS\_SYMBOLS  
+ Включить имена символов в `bstrOperands` поле.  
   
- DSF_ALL  
- Specifies all fields for the disassembly stream.  
+ DSF\_ALL  
+ Указывает все поля для потока дизассемблированный код.  
   
-## <a name="remarks"></a>Remarks  
- Passed as a parameter to the [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) method to indicate which fields of the [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) structure are to be initialized.  
+## Заметки  
+ Передается как параметр [Чтение](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) метод, чтобы показать, какие поля  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) структура быть инициализированным.  
   
- Used for the `dwFields` member of the `DisassemblyData` structure to indicate which fields are used and valid when the structure is returned.  
+ Используется для `dwFields` элемент  `DisassemblyData` структура, чтобы показать, какие поля используются и допустимы, если структура возвращается.  
   
- These values may be combined with a bitwise `OR`.  
+ Эти значения могут объединяться с побитовый оператор `OR`.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## Требования  
+ Заголовок: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## См. также  
+ [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)   
- [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)   
- [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)
+ [Чтение](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)   
+ [DISASSEMBLY\_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)

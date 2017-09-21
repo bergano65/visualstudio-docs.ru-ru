@@ -1,101 +1,84 @@
 ---
-title: IDebugProgramProvider2::GetProviderProcessData | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugProgramProvider2::GetProviderProcessData
-helpviewer_keywords:
-- IDebugProgramProvider2::GetProviderProcessData
+title: "IDebugProgramProvider2::GetProviderProcessData | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugProgramProvider2::GetProviderProcessData"
+helpviewer_keywords: 
+  - "IDebugProgramProvider2::GetProviderProcessData"
 ms.assetid: 90cf7b7f-53d2-487e-b793-94501a6e24dd
 caps.latest.revision: 12
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 8ccb246ee73119f063f1d92059bfdb938fe483d4
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 12
 ---
-# <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
-Retrieves a list of running programs from a specified process.  
+# IDebugProgramProvider2::GetProviderProcessData
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Извлекает список выполняющихся программ из указанного процесса.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
 ```cpp  
-HRESULT GetProviderProcessData(  
-   PROVIDER_FLAGS         Flags,  
-   IDebugDefaultPort2*    pPort,  
-   AD_PROCESS_ID          processId,  
-   CONST_GUID_ARRAY       EngineFilter,  
-   PROVIDER_PROCESS_DATA* pProcess  
+HRESULT GetProviderProcessData(  
+   PROVIDER_FLAGS         Flags,  
+   IDebugDefaultPort2*    pPort,  
+   AD_PROCESS_ID          processId,  
+   CONST_GUID_ARRAY       EngineFilter,  
+   PROVIDER_PROCESS_DATA* pProcess  
 );  
 ```  
   
-```csharp  
-int GetProviderProcessData(  
-   enum_PROVIDER_FLAGS     Flags,  
-   IDebugDefaultPort2      pPort,  
-   AD_PROCESS_ID           ProcessId,  
-   CONST_GUID_ARRAY        EngineFilter,  
-   PROVIDER_PROCESS_DATA[] pProcess  
+```c#  
+int GetProviderProcessData(  
+   enum_PROVIDER_FLAGS     Flags,  
+   IDebugDefaultPort2      pPort,  
+   AD_PROCESS_ID           ProcessId,  
+   CONST_GUID_ARRAY        EngineFilter,  
+   PROVIDER_PROCESS_DATA[] pProcess  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  `Flags`  
- [in] A combination of flags from the [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) enumeration. The following flags are typical for this call:  
+ \[in\] сочетание пометит из [PROVIDER\_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) перечисление.  Следующие флаги типичны для данного вызова.  
   
-|Flag|Description|  
-|----------|-----------------|  
-|`PFLAG_REMOTE_PORT`|Caller is running on remote machine.|  
-|`PFLAG_DEBUGGEE`|Caller is currently being debugged (additional information about marshalling will be returned for each node).|  
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|Caller was attached to but not launched by the debugger.|  
-|`PFLAG_GET_PROGRAM_NODES`|Caller is asking for a list of program nodes to be returned.|  
+|Flag|Описание|  
+|----------|--------------|  
+|`PFLAG_REMOTE_PORT`|Вызывающий код выполняется на удаленном компьютере.|  
+|`PFLAG_DEBUGGEE`|Вызывающий объект в настоящее время отладки \(дополнительные сведения о выстраивать будет возвращена для каждого узла\).|  
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|Вызывающий объект был вложен в но не был запущен отладчиком.|  
+|`PFLAG_GET_PROGRAM_NODES`|Вызывающий объект запрашивает список узлов программы должен быть возвращен.|  
   
  `pPort`  
- [in] The port the calling process is running on.  
+ \[in\] порт вызывающий процесс запущен.  
   
  `processId`  
- [in] An [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) structure holding the ID of the process that contains the program in question.  
+ \[in\] [AD\_PROCESS\_ID](../../../extensibility/debugger/reference/ad-process-id.md) структура, содержащая идентификатор процесса, содержащего программу в вопросе.  
   
  `EngineFilter`  
- [in] An array of GUIDs for debug engines assigned to debug this process (these will be used to filter the programs that are actually returned based on what the supplied engines support; if no engines are specified, then all programs will be returned).  
+ \[in\] массив GUID для отладки отладчиков присвоенные для отладки этот процесс \(они будут использоваться для фильтрации программы, которые фактически возвращенных в зависимости от того, предоставляемая поддержка обработчиков; если обработчики не заданы, то будут возвращены все программы\).  
   
  `pProcess`  
- [out] A [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) structure that is filled in with the requested information.  
+ \[out\] a [PROVIDER\_PROCESS\_DATA](../../../extensibility/debugger/reference/provider-process-data.md) структура, заполняемую с данными.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- This method is normally called by a process to obtain a list of programs running in that process. The returned information is a list of [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objects.  
+## Заметки  
+ Этот метод обычно вызывается процессом, чтобы получить список программ, запущенных в этом процессе.  Возвращают сведения список IDebugProgramNode2 объекты.  
   
-## <a name="see-also"></a>See Also  
+## См. также  
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)   
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)   
- [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)   
- [CONST_GUID_ARRAY](../../../extensibility/debugger/reference/const-guid-array.md)   
- [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)   
- [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)   
+ [AD\_PROCESS\_ID](../../../extensibility/debugger/reference/ad-process-id.md)   
+ [CONST\_GUID\_ARRAY](../../../extensibility/debugger/reference/const-guid-array.md)   
+ [PROVIDER\_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)   
+ [PROVIDER\_PROCESS\_DATA](../../../extensibility/debugger/reference/provider-process-data.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

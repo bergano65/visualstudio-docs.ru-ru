@@ -1,82 +1,65 @@
 ---
-title: REFERENCE_TYPE | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- REFERENCE_TYPE
-helpviewer_keywords:
-- REFERENCE_TYPE enumeration
+title: "REFERENCE_TYPE | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "REFERENCE_TYPE"
+helpviewer_keywords: 
+  - "Перечисление REFERENCE_TYPE"
 ms.assetid: b1ffba10-eb9d-48ba-bf48-6d8b71d6f270
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: fb9725ad4f75414c74a60cd952e457710591ebb2
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="referencetype"></a>REFERENCE_TYPE
-Specifies the reference type.  
+# REFERENCE_TYPE
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Определяет ссылочный тип.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
-enum enum_REFERENCE_TYPE {   
-   REF_TYPE_WEAK   = 0x0001,  
-   REF_TYPE_STRONG = 0x0002  
+```cpp#  
+enum enum_REFERENCE_TYPE {   
+   REF_TYPE_WEAK   = 0x0001,  
+   REF_TYPE_STRONG = 0x0002  
 };  
 typedef DWORD REFERENCE_TYPE;  
 ```  
   
-```csharp  
-public enum enum_REFERENCE_TYPE {   
-   REF_TYPE_WEAK   = 0x0001,  
-   REF_TYPE_STRONG = 0x0002  
+```c#  
+public enum enum_REFERENCE_TYPE {   
+   REF_TYPE_WEAK   = 0x0001,  
+   REF_TYPE_STRONG = 0x0002  
 };  
 ```  
   
-## <a name="members"></a>Members  
- REF_TYPE_WEAK  
- Specifies a weak reference. Cannot be combined with `REF_TYPE_STRONG`.  
+## Члены  
+ REF\_TYPE\_WEAK  
+ Определяет слабую ссылку.  Не может быть совмещено с `REF_TYPE_STRONG`.  
   
- REF_TYPE_STRONG  
- Specifies a strong reference. Cannot be combined with `REF_TYPE_WEAK`.  
+ REF\_TYPE\_STRONG  
+ Определяет строгую ссылку.  Не может быть совмещено с `REF_TYPE_WEAK`.  
   
-## <a name="remarks"></a>Remarks  
- Used as the `dwRefType` member of the [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) structure.  
+## Заметки  
+ Используется как `dwRefType` элемент  [DEBUG\_REFERENCE\_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структура.  
   
- Passed as a parameter to the [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) method.  
+ Передается как параметр [SetReferenceType](../Topic/IDebugReference2::SetReferenceType.md) метод.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## Требования  
+ Заголовок: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)   
- [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)
+## См. также  
+ [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [DEBUG\_REFERENCE\_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)   
+ [SetReferenceType](../Topic/IDebugReference2::SetReferenceType.md)

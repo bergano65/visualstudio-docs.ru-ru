@@ -1,91 +1,74 @@
 ---
-title: SccRunScc Function | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- SccRunScc
-helpviewer_keywords:
-- SccRunScc function
+title: "Функция SccRunScc | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "SccRunScc"
+helpviewer_keywords: 
+  - "Функция SccRunScc"
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
 caps.latest.revision: 14
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: db173b2a22556c360808b93049f39fca7f95656f
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 14
 ---
-# <a name="sccrunscc-function"></a>SccRunScc Function
-This function invokes the source control administration tool.  
+# Функция SccRunScc
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Эта функция вызывает инструментом администрирования системы управления версиями.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
+```cpp#  
 SCCRTN SccRunScc(  
-   LPVOID  pvContext,  
-   HWND    hWnd,  
-   LONG    nFiles,  
-   LPCSTR* lpFileNames  
+   LPVOID  pvContext,  
+   HWND    hWnd,  
+   LONG    nFiles,  
+   LPCSTR* lpFileNames  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  pvContext  
- [in] The source control plug-in context structure.  
+ \[in\] Структура подключаемого модуля контекста исходного элемента управления.  
   
  hWnd  
- [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
+ \[in\] Дескриптор окна интегрированной среды разработки, подключаемый модуль системы управления версиями можно использовать в качестве родительского для все диалоговые окна, которые он предоставляет.  
   
  nFiles  
- [in] Number of files specified in the `lpFileNames` array.  
+ \[in\] Число файлов, указанных в `lpFileNames` массива.  
   
  lpFileNames  
- [in] Array of selected file names.  
+ \[in\] Массив имен выбранного файла.  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## Возвращаемое значение  
+ Реализации подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Value|Description|  
-|-----------|-----------------|  
-|SCC_OK|The source control administration tool was successfully invoked.|  
-|SCC_I_OPERATIONCANCELED|The operation was cancelled.|  
-|SCC_E_INITIALIZEFAILED|Failed to initialize the source control system.|  
-|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues.|  
-|SCC_E_CONNECTIONFAILURE|Failed to connect to the source control system.|  
-|SCC_E_FILENOTCONTROLLED|The selected file is not under source control.|  
-|SCC_E_NONSPECIFICERROR|Nonspecific failure.|  
+|Значение|Описание|  
+|--------------|--------------|  
+|SCC\_OK|Инструментом администрирования системы управления версиями успешно был вызван.|  
+|SCC\_I\_OPERATIONCANCELED|Операция была отменена.|  
+|SCC\_E\_INITIALIZEFAILED|Сбой при инициализации системы управления версиями.|  
+|SCC\_E\_ACCESSFAILURE|Произошла ошибка при доступе к системе управления версиями, вероятно, из\-за проблемы с сетью или конфликтов.|  
+|SCC\_E\_CONNECTIONFAILURE|Не удается подключиться к системе управления версиями.|  
+|SCC\_E\_FILENOTCONTROLLED|Выбранный файл не существует в системе управления версиями.|  
+|SCC\_E\_NONSPECIFICERROR|Неспецифическая ошибка.|  
   
-## <a name="remarks"></a>Remarks  
- This function allows the caller to access the full range of features of the source control system through an external administration tool. If the source control system has no user interface, the source control plug-in can implement an interface to perform necessary administration functions.  
+## Заметки  
+ Эта функция позволяет вызывающему объекту полного доступа к функции системы управления версиями с помощью средства администрирования внешних. Если отсутствует пользовательский интерфейс системы управления версиями, подключаемый модуль системы управления версиями можно реализовать интерфейс для выполнения необходимые административные функции.  
   
- This function is called with a count and an array of file names for the currently selected files. If the administration tool supports it, the list of files can be used to preselect files in the administration interface; otherwise, the list can be ignored.  
+ Эта функция вызывается с числом и массив имен файлов для выбранных файлов. Если его поддерживает средства администрирования, список файлов может использоваться отбор файлов в интерфейсе администрирования; в противном случае — список можно пропустить.  
   
- This function is typically invoked when the user selects the **Launch \<Source Control Server>** from the **File** -> **Source Control** menu. This **Launch** menu option can be always disabled or even hidden by setting a registry entry. See [How to: Install a Source Control Plug-in](../extensibility/internals/how-to-install-a-source-control-plug-in.md) for details. This function is called only if [SccInitialize](../extensibility/sccinitialize-function.md) returns the `SCC_CAP_RUNSCC` capability bit (see [Capability Flags](../extensibility/capability-flags.md) for details on this and other capability bits).  
+ Эта функция обычно вызывается, когда пользователь выбирает **запуска \< сервер \>** из **файл** \-\> **системы управления версиями** меню. Это **запуска** меню можно всегда отключен или даже скрыть параметру реестра. Подробные сведения см. в разделе [Практическое руководство: Установка подключаемого модуля системы управления версиями](../extensibility/internals/how-to-install-a-source-control-plug-in.md). Эта функция вызывается только в том случае, если [SccInitialize](../extensibility/sccinitialize-function.md) возвращает `SCC_CAP_RUNSCC` бит функции \(см. [Флаги возможностей](../extensibility/capability-flags.md) Подробные сведения об этом и других возможностей бит\).  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
- [How to: Install a Source Control Plug-in](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
- [Capability Flags](../extensibility/capability-flags.md)   
+## См. также  
+ [Функции API подключаемого модуля источника элемента управления](../extensibility/source-control-plug-in-api-functions.md)   
+ [Практическое руководство: Установка подключаемого модуля системы управления версиями](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
+ [Флаги возможностей](../extensibility/capability-flags.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)

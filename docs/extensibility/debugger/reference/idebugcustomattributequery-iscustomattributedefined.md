@@ -1,69 +1,52 @@
 ---
-title: IDebugCustomAttributeQuery::IsCustomAttributeDefined | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- IDebugCustomAttributeQuery::IsCustomAttributeDefined
-- IsCustomAttributeDefined
+title: "IDebugCustomAttributeQuery::IsCustomAttributeDefined | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "IDebugCustomAttributeQuery::IsCustomAttributeDefined"
+  - "IsCustomAttributeDefined"
 ms.assetid: c7425db6-4347-4f69-8f88-337ddaa34fa6
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 015b4918d9e7be0c777b4d5ff346798e58c63192
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
-Determines if the specified custom attribute is defined.  
+# IDebugCustomAttributeQuery::IsCustomAttributeDefined
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Определяет, находится ли указанный настраиваемый атрибут определен.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
+```cpp#  
 HRESULT IsCustomAttributeDefined(  
-   LPCOLESTR pszCustomAttributeName  
+   LPCOLESTR pszCustomAttributeName  
 );  
 ```  
   
-```csharp  
+```c#  
 int IsCustomAttributeDefined(  
-   string pszCustomAttributeName  
+   string pszCustomAttributeName  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  `pszCustomAttributeName`  
- [in] Name of the custom attribute.  
+ \[in\] имя настраиваемого атрибута.  
   
-## <a name="return-value"></a>Return Value  
- If the custom attribute is defined, returns `S_OK`; otherwise, returns `S_FALSE`.  
+## Возвращаемое значение  
+ Если настраиваемый атрибут не задан, возвращает `S_OK`; в противном случае возвращает  `S_FALSE`.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CDebugClassFieldSymbol** object that exposes the [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) interface.  
+## Пример  
+ В следующем примере показано, как реализовать этот метод, a **CDebugClassFieldSymbol** объект, предоставляющий  [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) интерфейс.  
   
-```cpp  
+```cpp#  
 HRESULT CDebugClassFieldSymbol::IsCustomAttributeDefined(  
     LPCOLESTR pszCustomAttribute  
 )  
@@ -100,5 +83,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## См. также  
  [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

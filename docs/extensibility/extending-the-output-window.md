@@ -1,203 +1,104 @@
 ---
-title: Extending the Output Window | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- Output window, about Output window
+title: "Расширение в окне вывода | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "Окно вывода, сведения об окне выходных данных"
 ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
 caps.latest.revision: 13
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: f32501870f3e5be41c8960233202b4147d09bc43
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 13
 ---
-# <a name="extending-the-output-window"></a>Extending the Output Window
-The **Output** window is a set of read/write text panes. Visual Studio has these built-in panes: **Build**, in which projects communicate messages about builds, and **General**, in which [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] communicates messages about the IDE. Projects get a reference to the **Build** pane automatically through the <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> interface methods, and Visual Studio offers direct access to the **General** pane through the <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> service. In addition to the built-in panes, you can create and manage your own custom panes.  
+# Расширение в окне вывода
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+**Выходной** окно — это набор областей текста, чтение и запись. Visual Studio содержит следующие встроенные панели: **построения**, в какие проекты обмена сообщениями о построениях, и **Общие**, в котором [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] передает сообщения об Интегрированной среде разработки. Проекты получить ссылку на **построения** области автоматически посредством <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> методов интерфейса, а Visual Studio предлагает прямой доступ к **Общие** области через <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> службы. Помимо встроенных панелей можно создать и управлять собственных пользовательских панелей.  
   
- You can control the **Output** window directly through the <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> and <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> interfaces. The <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> interface, which is offered by the <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> service, defines methods for creating, retrieving, and destroying **Output** window panes. The <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> interface defines methods for showing panes, hiding panes, and manipulating their text. An alternative way of controlling the **Output** window is through the <xref:EnvDTE.OutputWindow> and <xref:EnvDTE.OutputWindowPane> objects in the Visual Studio Automation object model. These objects encapsulate nearly all of the functionality of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> and <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> interfaces. In addition, the <xref:EnvDTE.OutputWindow> and <xref:EnvDTE.OutputWindowPane> objects add some higher-level functionality to make it easier to enumerate the **Output** window panes and to retrieve text from the panes.  
+ Можно управлять **вывода** напрямую с помощью окна <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> интерфейсов.<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> Интерфейс, который предлагается в <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> службы, определяет методы для создания, извлечения и уничтожение **вывода** области окна.<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> Интерфейс определяет методы для отображения панелей, скрытие панелей и управление им текста. Альтернативным способом управления **вывода** окна – <xref:EnvDTE.OutputWindow> и <xref:EnvDTE.OutputWindowPane> объекты в объектной модели автоматизации Visual Studio. Эти объекты инкапсулируют практически все функциональные возможности <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> интерфейсов. Кроме того <xref:EnvDTE.OutputWindow> и <xref:EnvDTE.OutputWindowPane> объекты добавить некоторые функции более высокого уровня для облегчения перечисления **вывода** области окна и извлечение текста из области.  
   
-## <a name="creating-an-extension-that-uses-the-output-pane"></a>Creating an Extension that uses the Output Pane  
- You can make an extension that exercises different aspects of the Output pane.  
+## Создание расширения, который используется в области вывода  
+ Можно создать расширение, которое выполняет различные аспекты области вывода.  
   
-1.  Create a VSIX project named `TestOutput` with a menu command named **TestOutput**. For more information, see [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Создайте проект VSIX с именем `TestOutput` с командой меню с именем **TestOutput**. Для получения дополнительной информации см. [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Add the following references:  
+2.  Добавьте следующие ссылки:  
   
     1.  EnvDTE  
   
     2.  EnvDTE80  
   
-3.  In TestOutput.cs, add the following using statement:  
+3.  В TestOutput.cs, добавьте следующий оператор using:  
   
     ```f#  
-    using EnvDTE;  
-    using EnvDTE80;  
+    using EnvDTE; using EnvDTE80;  
     ```  
   
-4.  In TestOutput.cs, delete the ShowMessageBox method. Add the following method stub:  
+4.  В TestOutput.cs удалите метод ShowMessageBox. Добавьте следующий метод заглушки:  
   
-    ```csharp  
-    private void OutputCommandHandler(object sender, EventArgs e)  
-    {  
-    }  
+    ```c#  
+    private void OutputCommandHandler(object sender, EventArgs e) { }  
     ```  
   
-5.  In the TestOutput constructor, change the command handler to OutputCommandHandler. Here is the part that adds the commands:  
+5.  В конструкторе TestOutput измените обработчик команды на OutputCommandHandler. Вот часть, которая добавляет команды:  
   
-    ```csharp  
-    OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
-    if (commandService != null)  
-    {  
-        CommandID menuCommandID = new CommandID(MenuGroup, CommandId);  
-        EventHandler eventHandler = OutputCommandHandler;  
-        MenuCommand menuItem = new MenuCommand(eventHandler, menuCommandID);  
-        commandService.AddCommand(menuItem);  
-    }  
+    ```c#  
+    OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService; if (commandService != null) { CommandID menuCommandID = new CommandID(MenuGroup, CommandId); EventHandler eventHandler = OutputCommandHandler; MenuCommand menuItem = new MenuCommand(eventHandler, menuCommandID); commandService.AddCommand(menuItem); }  
     ```  
   
-6.  The sections below have different methods that show different ways of dealing with the Output pane. You can call these methods to body of the OutputCommandHandler() method. For example, the following code adds the CreatePane() method given in the next section.  
+6.  В приведенных ниже разделах существуют различные методы, которые демонстрируют различные способы работы с области вывода. Может вызывать эти методы в теле метода OutputCommandHandler\(\). Например следующий код добавляет метод CreatePane\(\), приведенные в следующем разделе.  
   
-    ```csharp  
-    private void OutputCommandHandler(object sender, EventArgs e)  
-    {  
-        CreatePane(new Guid(), "Created Pane", true, false);  
-    }  
+    ```c#  
+    private void OutputCommandHandler(object sender, EventArgs e) { CreatePane(new Guid(), "Created Pane", true, false); }  
     ```  
   
-## <a name="creating-an-output-window-with-ivsoutputwindow"></a>Creating an Output Window with IVsOutputWindow  
- This example shows how to create a new **Output** window pane by using the <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> interface.  
+## Создание окно вывода с IVsOutputWindow  
+ В этом примере показано, как создать новую **вывода** область окна с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> интерфейса.  
   
-```csharp  
-void CreatePane(Guid paneGuid, string title,   
-    bool visible, bool clearWithSolution)  
-{  
-    IVsOutputWindow output =   
-        (IVsOutputWindow)GetService(typeof(SVsOutputWindow));  
-    IVsOutputWindowPane pane;  
-  
-    // Create a new pane.  
-    output.CreatePane(  
-        ref paneGuid,   
-        title,   
-        Convert.ToInt32(visible),   
-        Convert.ToInt32(clearWithSolution));  
-  
-    // Retrieve the new pane.  
-    output.GetPane(ref paneGuid, out pane);  
-  
-     pane.OutputString("This is the Created Pane \n");  
-}  
+```c#  
+void CreatePane(Guid paneGuid, string title, bool visible, bool clearWithSolution) { IVsOutputWindow output = (IVsOutputWindow)GetService(typeof(SVsOutputWindow)); IVsOutputWindowPane pane; // Create a new pane. output.CreatePane( ref paneGuid, title, Convert.ToInt32(visible), Convert.ToInt32(clearWithSolution)); // Retrieve the new pane. output.GetPane(ref paneGuid, out pane); pane.OutputString("This is the Created Pane \n"); }  
 ```  
   
- If you add this method to the extension given in the preceding section, when you click the **Invoke TestOutput** command you should see the **Output** window with a header that says **Show output from: CreatedPane** and the words **This is the Created Pane** in the pane itself.  
+ Если добавить этот метод расширения, указанного в предыдущем разделе, при нажатии кнопки **вызова TestOutput** команды вы должны увидеть **Выходные данные** окно с заголовком, — говорит **Показать выходные данные от: CreatedPane** и слова **это область создана** в саму область.  
   
-## <a name="creating-an-output-window-with-outputwindow"></a>Creating an Output Window with OutputWindow  
- This example shows how to create an **Output** window pane by using the <xref:EnvDTE.OutputWindow> object.  
+## Создание окно вывода с OutputWindow  
+ В этом примере показано, как создать **вывода** область окна с помощью <xref:EnvDTE.OutputWindow> объекта.  
   
-```csharp  
-void CreatePane(string title)  
-{  
-    DTE2 dte = (DTE2)GetService(typeof(DTE));  
-    OutputWindowPanes panes =  
-        dte.ToolWindows.OutputWindow.OutputWindowPanes;  
-  
-    try  
-    {  
-        // If the pane exists already, write to it.  
-        panes.Item(title);  
-    }  
-    catch (ArgumentException)  
-    {  
-        // Create a new pane and write to it.  
-        return panes.Add(title);  
-    }  
-}  
+```c#  
+void CreatePane(string title) { DTE2 dte = (DTE2)GetService(typeof(DTE)); OutputWindowPanes panes = dte.ToolWindows.OutputWindow.OutputWindowPanes; try { // If the pane exists already, write to it. panes.Item(title); } catch (ArgumentException) { // Create a new pane and write to it. return panes.Add(title); } }  
 ```  
   
- Although the <xref:EnvDTE.OutputWindowPanes> collection lets you retrieve an **Output** window pane by its title, pane titles are not guaranteed to be unique. When you doubt the uniqueness of a title, use the <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow.GetPane%2A> method to retrieve the correct pane by its GUID.  
+ Хотя <xref:EnvDTE.OutputWindowPanes> коллекции позволяет извлекать **вывода** область окна по его названию, области заголовков не гарантируется уникальность. Когда сомневаюсь уникальность заголовок, используйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow.GetPane%2A> метод для получения правильного панели по его идентификатору GUID.  
   
- If you add this method to the extension given in the preceding section, when you click the **Invoke TestOutput** command you should see the Output window with a header that says **Show output from: DTEPane** and the words **Added DTE Pane** in the pane itself.  
+ Если добавить этот метод расширения, указанного в предыдущем разделе, при нажатии кнопки **вызова TestOutput** команды, вы увидите в окне вывода с заголовком, — говорит **Показать выходные данные от: DTEPane** и слова **добавлены панели DTE** в самой области.  
   
-## <a name="deleting-an-output-window"></a>Deleting an Output Window  
- This example shows how to delete an **Output** window pane.  
+## Удаление окно вывода  
+ В этом примере показано, как удалить **вывода** область окна.  
   
-```csharp  
-void DeletePane(Guid paneGuid)  
-{  
-    IVsOutputWindow output =  
-    (IVsOutputWindow)ServiceProvider.GetService(typeof(SVsOutputWindow));  
-  
-    IVsOutputWindowPane pane;  
-    output.GetPane(ref paneGuid, out pane);  
-  
-    if (pane == null)  
-    {  
-        CreatePane(paneGuid, "New Pane\n", true, true);  
-    }  
-     else  
-    {  
-        output.DeletePane(ref paneGuid);  
-    }  
-}  
+```c#  
+void DeletePane(Guid paneGuid) { IVsOutputWindow output = (IVsOutputWindow)ServiceProvider.GetService(typeof(SVsOutputWindow)); IVsOutputWindowPane pane; output.GetPane(ref paneGuid, out pane); if (pane == null) { CreatePane(paneGuid, "New Pane\n", true, true); } else { output.DeletePane(ref paneGuid); } }  
 ```  
   
- If you add this method to the extension given in the preceding section, when you click the **Invoke TestOutput** command you should see the Output window with a header that says **Show output from: New Pane** and the words **Added Created Pane** in the pane itself. If you click the **Invoke TestOutput** command again, the pane is deleted.  
+ Если добавить этот метод расширения, указанного в предыдущем разделе, при нажатии кнопки **вызова TestOutput** команды, вы увидите в окне вывода с заголовком, — говорит **Показать выходные данные от: Новая область** и слова **добавлены созданные панели** в саму область. При нажатии кнопки **вызова TestOutput** команду еще раз, область удаляется.  
   
-## <a name="getting-the-general-pane-of-the-output-window"></a>Getting the General Pane of the Output Window  
- This example shows how to get the built-in **General** pane of the **Output** window.  
+## Начало области Общие окна вывода  
+ В этом примере показано, как получить встроенной **Общие** области **вывода** окна.  
   
-```csharp  
-void GetGeneralPane()  
-{  
-    return (IVsOutputWindowPane)GetService(  
-        typeof(SVsGeneralOutputWindowPane));  
-}  
+```c#  
+void GetGeneralPane() { return (IVsOutputWindowPane)GetService( typeof(SVsGeneralOutputWindowPane)); }  
 ```  
   
- If you add this method to the extension given in the preceding section, when you click the **Invoke TestOutput** command you should see that the **Output** window shows the words **Found General pane** in the pane.  
+ Если добавить этот метод расширения, указанного в предыдущем разделе, при нажатии кнопки **вызова TestOutput** команды, вы увидите, **вывода** окне отображаются слова **Найти общие области** в области.  
   
-## <a name="getting-the-build-pane-of-the-output-window"></a>Getting the Build Pane of the Output Window  
- This example shows how to find the Build pane and write to it. Since the Build pane isn't activated by default, it activates it also.  
+## Начало области построения окна вывода  
+ В этом примере показано, как найти области построения и записи в файл. Поскольку области построения не активирован по умолчанию, она активируется также.  
   
-```csharp  
-void OutputTaskItemStringExExample(string buildMessage)  
-{  
-    EnvDTE80.DTE2 dte = (EnvDTE80.DTE2)ServiceProvider.GetService(typeof(EnvDTE.DTE));  
-  
-    EnvDTE.OutputWindowPanes panes =  
-        dte.ToolWindows.OutputWindow.OutputWindowPanes;  
-    foreach (EnvDTE.OutputWindowPane pane in panes)  
-        {  
-            if (pane.Name.Contains("Build"))  
-            {  
-                pane.OutputString(buildMessage + "\n");  
-                pane.Activate();  
-                return;  
-             }  
-        }  
-}  
+```c#  
+void OutputTaskItemStringExExample(string buildMessage) { EnvDTE80.DTE2 dte = (EnvDTE80.DTE2)ServiceProvider.GetService(typeof(EnvDTE.DTE)); EnvDTE.OutputWindowPanes panes = dte.ToolWindows.OutputWindow.OutputWindowPanes; foreach (EnvDTE.OutputWindowPane pane in panes) { if (pane.Name.Contains("Build")) { pane.OutputString(buildMessage + "\n"); pane.Activate(); return; } } }  
 ```

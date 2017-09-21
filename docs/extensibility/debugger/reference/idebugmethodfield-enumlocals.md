@@ -1,77 +1,60 @@
 ---
-title: IDebugMethodField::EnumLocals | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugMethodField::EnumLocals
-helpviewer_keywords:
-- IDebugMethodField::EnumLocals method
+title: "IDebugMethodField::EnumLocals | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugMethodField::EnumLocals"
+helpviewer_keywords: 
+  - "Метод IDebugMethodField::EnumLocals"
 ms.assetid: b0456a6d-2b96-49e2-a871-516571b4f6a5
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 2b0a7f080e26a6c55fa9ba759ed93e6b1eb09156
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
-Creates an enumerator for selected local variables of the method.  
+# IDebugMethodField::EnumLocals
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Создает перечислитель для выбранных локальных переменных метода.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
-HRESULT EnumLocals(   
-   IDebugAddress*     pAddress,  
-   IEnumDebugFields** ppLocals  
+```cpp#  
+HRESULT EnumLocals(   
+   IDebugAddress*     pAddress,  
+   IEnumDebugFields** ppLocals  
 );  
 ```  
   
-```csharp  
+```c#  
 int EnumLocals(  
-   IDebugAddress        pAddress,   
-   out IEnumDebugFields ppLocals  
+   IDebugAddress        pAddress,   
+   out IEnumDebugFields ppLocals  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  `pAddress`  
- [in] An [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) object representing the debug address that selects the context or scope from which to get the locals.  
+ \[in\] [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) объект, представляющий адрес отладки, который выбирает контекст или область, из которого следует получать локальные переменные.  
   
  `ppLocals`  
- [out] Returns an [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) object representing a list of the locals; otherwise, returns a null value if there are no locals.  
+ \[out\] возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список локальных; в противном случае возвращает значение NULL, если локальные переменные.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK or returns S_FALSE if there are no locals. Otherwise, returns an error code.  
+## Возвращаемое значение  
+ В случае успеха возвращает значение S\_OK и возвращает значение S\_FALSE, если локальные переменные.  В противном случае возвращает код ошибки.  
   
-## <a name="remarks"></a>Remarks  
- Only the variables defined within the block that contains the given debug address are enumerated. If all locals including any compiler-generated locals are needed, call the [EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md) method.  
+## Заметки  
+ Только перечисляются переменные, определенные внутри блока, содержащий отладочные заданным адресом.  Если все локальные включая любые локальные значения, создаваемые компилятором требуются, вызовите [EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md) метод.  
   
- A method can contain multiple scoping contexts or blocks. For example, the following contrived method contains three scopes, the two inner blocks and the method body itself.  
+ Метод может содержать несколько блоков контекстов или области.  Например, следующий ухитренный метод содержит саму 3 области, 2 внутренних и тело блока метода.  
   
-```csharp  
+```c#  
 public void func(int index)  
 {  
     // Method body scope  
@@ -89,9 +72,9 @@ public void func(int index)
 }  
 ```  
   
- The [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) object represents the `func` method itself. Calling the `EnumLocals` method with an [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) set to the `Inner Scope 1` address returns an enumeration containing the `temp1` variable, for example.  
+ [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) представляет объект  `func` сам метод.  Вызов `EnumLocals` метод с  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) значение  `Inner Scope 1` адрес возвращает содержать перечисления  `temp1` переменная, например.  
   
-## <a name="see-also"></a>See Also  
+## См. также  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   

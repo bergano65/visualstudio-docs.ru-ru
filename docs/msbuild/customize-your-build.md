@@ -1,5 +1,5 @@
 ---
-title: Customize your build | Microsoft Docs
+title: "Настройка сборки | Документы Майкрософт"
 ms.custom: 
 ms.date: 06/14/2017
 ms.reviewer: 
@@ -30,23 +30,23 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 3ce2d22a82f81db35575275a99d193066068e127
-ms.openlocfilehash: 999b5d081a36d21caa917bce2523cb00a1770754
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3fb5627d2cc92c36e9dcf34f4b94796b6620321f
+ms.openlocfilehash: 86f7fef0365a47e8ea88bc3fc46cb0016efd4628
 ms.contentlocale: ru-ru
-ms.lasthandoff: 09/07/2017
+ms.lasthandoff: 06/15/2017
 
 ---
-# <a name="customize-your-build"></a>Customize your build
-In versions of MSBuild prior to version 15, if you wanted to provide a new, custom property to projects in your solution, you had to manually add a reference to that property to every project file in the solution. Or, you had to define the property in a .props file and then explicitly import the .props file in every project in the solution, among other things.
+# <a name="customize-your-build"></a>Настройка сборки
+Чтобы указать новое настраиваемое свойство для проектов в решении, в версиях MSBuild, предшествующих версии 15, приходилось вручную добавлять ссылку на это свойство в каждый файл проекта в решении. Либо приходилось определять свойство в файле PROPS и затем явно импортировать файл PROPS в каждый проект в решении.
 
-However, now you can add a new property to every project in one step by defining it in a single file called Directory.Build.props at the root of your repo. When MSBuild runs, Microsoft.Common.props searches your directory structure for the Directory.Build.props file (and Microsoft.Common.targets looks for Directory.Build.targets). If it finds one, it imports the property. Directory.Build.props is a user-defined file that provides customizations to projects under a directory.
+Однако теперь можно добавить новое свойство в каждый проект за один шаг, определив его в единственном файле Directory.Build.props в корне репозитория. При запуске MSBuild Microsoft.Common.props ищет файл Directory.Build.props в структуре каталогов (а Microsoft.Common.targets ищет Directory.Build.targets). Если он его находит, то импортирует свойство. Directory.Build.props является определяемым пользователем файлом, который содержит настройки для проектов в каталоге.
 
-## <a name="directorybuildprops-example"></a>Directory.Build.props example
-For example, if you wanted to enable all of your projects to access the new Roslyn **/deterministic** feature (which is exposed in the Roslyn CoreCompile target by the property `$(Deterministic)`), you could do the following.
+## <a name="directorybuildprops-example"></a>Пример Directory.Build.props
+Например, если нужно разрешить всем проектам доступ к новой функции Roslyn **/deterministic** (предоставляемой свойством `$(Deterministic)` в целевом объекте Roslyn CoreCompile), можно сделать следующее:
 
-1. Create a new file in the root of your repo called Directory.Build.props.
-2. Add the following XML to the file.
+1. Создайте в корне репозитория файл с именем Directory.Build.props.
+2. Добавьте в этот файл приведенный ниже XML-код.
 
   ```xml
   <Project>
@@ -55,10 +55,10 @@ For example, if you wanted to enable all of your projects to access the new Rosl
     </PropertyGroup>
   </Project>
   ```
-3. Run MSBuild. Your project’s existing imports of Microsoft.Common.props and Microsoft.Common.targets find the file and import it.
+3. Запустите MSBuild. Существующие импорты Microsoft.Common.props и Microsoft.Common.targets в проекте находят файл и импортируют его.
 
-## <a name="search-scope"></a>Search scope
-When searching for a Directory.Build.props file, MSBuild walks the directory structure upwards from your project location ($(MSBuildProjectFullPath)), stopping after it locates a Directory.Build.props file. For example, if your $(MSBuildProjectFullPath) was c:\users\username\code\test\case1, MSBuild would start searching there and then search the directory structure upward until it located a Directory.Build.props file, as in the following directory structure.
+## <a name="search-scope"></a>Область поиска
+При поиске файла Directory.Build.props MSBuild обходит структуру каталогов вверх от расположения проекта ($(MSBuildProjectFullPath)), а после его нахождения останавливается. Например, если ваш $(MSBuildProjectFullPath) имел значение c:\users\username\code\test\case1, MSBuild начнет поиск там, а затем будет переходить вверх по структуре каталогов, пока не найдет файл Directory.Build.props file, как показано в следующей структуре каталогов.
 
 ```
 c:\users\username\code\test\case1
@@ -68,48 +68,15 @@ c:\users\username
 c:\users
 c:\
 ```
-The location of the solution file is irrelevant to Directory.Build.props.
+Расположение файла решения не зависит от Directory.Build.props.
 
-## <a name="import-order"></a>Import order
+## <a name="import-order"></a>Порядок импорта
 
-Directory.Build.props is imported very early in Microsoft.Common.props, so properties defined later are unavailable to it. So, avoid referring to properties that are not yet defined (and will thus evaluate to empty).
+Directory.Build.props импортируется в Microsoft.Common.props очень рано, и определенные позднее свойства ему недоступны. Поэтому не ссылайтесь на свойства, которые еще не определены (и в связи с этим оцениваются как пустые).
 
-Directory.Build.targets is imported from Microsoft.Common.targets after importing .targets files from NuGet packages. So, it can be used to override properties and targets defined in most of the build logic, but at times it may be necessary to do customizations within the project file after the final import.
+Directory.Build.targets импортируется из Microsoft.Common.targets после импорта файлов TARGETS из пакетов NuGet. Таким образом, его можно использовать для переопределения свойств и целевых объектов, определенных в большей части логики сборки, когда может потребоваться настройка файла проекта после окончательного импорта.
 
-## <a name="use-case-multi-level-merging"></a>Use case: multi-level merging
-
-Suppose you have this standard solution structure:
-
-````
-\
-  MySolution.sln
-  Directory.Build.props     (1)
-  \src
-    Directory.Build.props   (2-src)
-    \Project1
-    \Project2
-  \test
-    Directory.Build.props   (2-test)
-    \Project1Tests
-    \Project2Tests
-````
-
-It might be desirable to have common properties for all projects `(1)`, common properties for `src` projects `(2-src)`, and common properties for `test` projects `(2-test)`.
-
-For msbuild to correctly merge the "inner" files (`2-src` and `2-test`) with the "outer" file (`1`), you must take into account that once msbuild finds a `Directory.Build.props` file, it stops further scanning. To continue scanning, and merge into the outer file, place this into both inner files:
-
-`<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props'))" />`
-
-A summary of msbuild's general approach is as follows:
-
-- For any given project, msbuild finds the first `Directory.Build.props` upward in the solution structure, merges it with defaults, and stops scanning for more
-- If you want multiple levels to be found and merged, then [`<Import...>`](http://docs.microsoft.com/en-us/visualstudio/msbuild/property-functions#msbuild-getpathoffileabove) (shown above) the "outer" file from the "inner" file
-- If the "outer" file does not itself also import something above it, then scanning stops there
-- To control the scanning/merging process, use `$(DirectoryBuildPropsPath)` and `$(ImportDirectoryBuildProps)`
-
-Or more simply: the first `Directory.Build.props` which doesn't import anything, is where msbuild stops.
-
-## <a name="see-also"></a>See Also  
- [MSBuild Concepts](../msbuild/msbuild-concepts.md)   
- [MSBuild Reference](../msbuild/msbuild-reference.md)   
+## <a name="see-also"></a>См. также  
+ [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   
+ [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   
 

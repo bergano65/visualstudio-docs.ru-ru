@@ -1,97 +1,80 @@
 ---
-title: SccRemove Function | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- SccRemove
-helpviewer_keywords:
-- SccRemove function
+title: "Функция SccRemove | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "SccRemove"
+helpviewer_keywords: 
+  - "Функция SccRemove"
 ms.assetid: 20830fdc-c0e9-4a5f-bf60-33f28874442f
 caps.latest.revision: 13
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 02a6aedc192bed7dbe0947ceae1ea55d9f50e3ed
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 13
 ---
-# <a name="sccremove-function"></a>SccRemove Function
-This function deletes files from the source control system.  
+# Функция SccRemove
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Эта функция удаляет файлы из системы управления версиями.  
   
-## <a name="syntax"></a>Syntax  
+## Синтаксис  
   
-```cpp  
+```cpp#  
 SCCRTN SccRemove(  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LONG      nFiles,  
-   LPCSTR*   lpFileNames,  
-   LPCSTR    lpComment,  
-   LONG      fOptions,  
-   LPCMDOPTS pvOptions  
+   LPVOID    pvContext,  
+   HWND      hWnd,  
+   LONG      nFiles,  
+   LPCSTR*   lpFileNames,  
+   LPCSTR    lpComment,  
+   LONG      fOptions,  
+   LPCMDOPTS pvOptions  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Параметры  
  pvContext  
- [in] The source control plug-in context structure.  
+ \[in\] Структура подключаемого модуля контекста исходного элемента управления.  
   
  hWnd  
- [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
+ \[in\] Дескриптор окна интегрированной среды разработки, подключаемый модуль системы управления версиями можно использовать в качестве родительского для все диалоговые окна, которые он предоставляет.  
   
  nFiles  
- [in] Number of files specified in the `lpFileNames` array.  
+ \[in\] Число файлов, указанных в `lpFileNames` массива.  
   
  lpFileNames  
- [in] Array of fully qualified local path names of files to be removed.  
+ \[in\] Массив имен файлов для удаления полный локальный путь.  
   
  lpComment  
- [in] The comment to be applied to each file being removed.  
+ \[in\] Комментарий, применяемый к каждой удаления файла.  
   
- fOptions  
- [in] Command flags (unused).  
+ Возможности  
+ \[in\] Команда флаги \(не используется\).  
   
  pvOptions  
- [in] Source control plug-in-specific options.  
+ \[in\] Параметры конкретного подключаемого модуля системы управления версиями.  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## Возвращаемое значение  
+ Реализации подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Value|Description|  
-|-----------|-----------------|  
-|SCC_OK|Removal was successful.|  
-|SCC_E_FILENOTCONTROLLED|The selected file is not under source control.|  
-|SCC_E_OPNOTSUPPORTED|The source control system does not support this operation.|  
-|SCC_E_ISCHECKEDOUT|Cannot remove a file because a user currently has it checked out.|  
-|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues.|  
-|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
-|SCC_E_NONSPECIFICERROR|Nonspecific failure; file was not removed.|  
-|SCC_I_OPERATIONCANCELED|The operation was cancelled before completion.|  
+|Значение|Описание|  
+|--------------|--------------|  
+|SCC\_OK|Удаление выполнено успешно.|  
+|SCC\_E\_FILENOTCONTROLLED|Выбранный файл не существует в системе управления версиями.|  
+|SCC\_E\_OPNOTSUPPORTED|Система управления версиями не поддерживает эту операцию.|  
+|SCC\_E\_ISCHECKEDOUT|Не удается удалить файл, так как пользователь в настоящее время он извлечен.|  
+|SCC\_E\_ACCESSFAILURE|Произошла ошибка при доступе к системе управления версиями, вероятно, из\-за проблемы с сетью или конфликтов.|  
+|SCC\_E\_NOTAUTHORIZED|Для выполнения этой операции не разрешено пользователю.|  
+|SCC\_E\_NONSPECIFICERROR|Неспецифическая ошибка; файл не был удален.|  
+|SCC\_I\_OPERATIONCANCELED|Операция была отменена до завершения.|  
   
-## <a name="remarks"></a>Remarks  
- This function removes the files from the source control system but does not delete them from the user's local hard drive.  
+## Заметки  
+ Эта функция удаляет файлы из системы управления версиями, но они не удаляются с локального жесткого диска пользователя.  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)
+## См. также  
+ [Функции API подключаемого модуля источника элемента управления](../extensibility/source-control-plug-in-api-functions.md)

@@ -1,53 +1,36 @@
 ---
-title: Starting a Build from within the IDE | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- build
+title: "Запуск построения из интегрированной среды разработки | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "построение"
 ms.assetid: 936317aa-63b7-4eb0-b9db-b260a0306196
 caps.latest.revision: 5
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 4480985bdbca5225703d5efafc87c553e02f4b22
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+author: "kempb"
+ms.author: "kempb"
+manager: "ghogen"
+caps.handback.revision: 5
 ---
-# <a name="starting-a-build-from-within-the-ide"></a>Starting a Build from within the IDE
-Custom project systems must use <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> to start builds. This topic describes the reasons for this and outlines the procedure.  
+# Запуск построения из интегрированной среды разработки
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Пользовательские системы проектов должны использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> для запуска сборок.  В этом разделе объясняется необходимость соблюдения этого требования, а также общие принципы для этого действия.  
   
-## <a name="parallel-builds-and-threads"></a>Parallel Builds and Threads  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] allows parallel builds which requires mediation for access to common resources. Project systems can run builds asynchronously, but such systems must not call build functions from within call backs is provided to the build manager.  
+## Параллельные построения и потоки  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] допускает наличие параллельных сборок, которым для доступа к общим ресурсам требуется посредник.  Системы проектов могут асинхронным образом запускать построения, но не должны вызывать функции построения из обратных вызовов, предоставленных в диспетчере построений.  
   
- If the project system modifies environment variables, it must set the NodeAffinity of the build to OutOfProc. This means that you cannot use host objects, since they require the in-proc node.  
+ Если система проектов изменяет переменные среды, то свойство построения NodeAffinity должно иметь значение OutOfProc.  Из\-за этого использование объектов узла невозможно, так как они требуют наличия внутрипроцессного узла.  
   
-## <a name="using-ivsbuildmanageraccessor"></a>Using IVSBuildManagerAccessor  
- The code below outlines a method that a project system can use to start a build:  
+## Использование IVSBuildManagerAccessor  
+ Следующий код представляет метод, который используется системой проектов для запуска построения:  
   
-```csharp
+```  
   
 public bool Build(Project project, bool isDesignTimeBuild)  
 {  

@@ -1,65 +1,48 @@
 ---
-title: Adding a Menu Controller to a Toolbar | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- toolbars [Visual Studio], adding menu controllers
-- menus, adding menu controllers to toolbars
-- menu controllers, adding to toolbars
+title: "Добавление контроллера меню панели инструментов | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "Добавление контроллеров меню панели инструментов [Visual Studio]"
+  - "меню, Добавление контроллеров меню панели инструментов"
+  - "контроллеры меню, добавление в панель инструментов"
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 38
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 998583202afcbf9c99f87d6bbdfcbb5747718bfa
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 38
 ---
-# <a name="adding-a-menu-controller-to-a-toolbar"></a>Adding a Menu Controller to a Toolbar
-This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibility/adding-a-toolbar-to-a-tool-window.md) walkthrough and shows how to add a menu controller to the tool window toolbar. The steps shown here also can be applied to the toolbar that is created in the [Adding a Toolbar](../extensibility/adding-a-toolbar.md) walkthrough.  
+# Добавление контроллера меню панели инструментов
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+В этом пошаговом руководстве основано руководство [Добавление панели инструментов в окне инструментов](../extensibility/adding-a-toolbar-to-a-tool-window.md) пошаговом руководстве демонстрируется добавление контроллера меню на панели инструментов окна. Приведенные ниже действия также могут применяться к панели инструментов, которая создается в [Добавление панели инструментов](../extensibility/adding-a-toolbar.md) Пошаговое руководство.  
   
- A menu controller is a split control. The left side of the menu controller shows the last-used command, and it can be run by clicking it. The right side of the menu controller is an arrow that, when clicked, opens a list of additional commands. When you click a command on the list, the command runs, and it replaces the command on the left side of the menu controller. In this way, the menu controller operates like a command button that always shows the last-used command from a list.  
+ Контроллер меню является элементом управления разбиения. В левой части меню контроллера показаны последние использованные команды, и его можно запустить, щелкнув его. В правой части меню контроллер является стрелки, при нажатии открывается список дополнительных команд. При выборе команды в списке, и выполнения команды и заменяет команды слева от контроллера меню. Таким образом контроллер меню работает, как кнопки, всегда отображает последние использованные команды из списка.  
   
- Menu controllers can appear on menus but they are most often used on toolbars.  
+ Контроллеры меню может отображаться в меню, но чаще всего используются на панели инструментов.  
   
-## <a name="prerequisites"></a>Prerequisites  
- Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## Обязательные компоненты  
+ Начиная с Visual Studio 2015, не установить пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в установку Visual Studio. VS SDK также можно установить позже. Для получения дополнительной информации см. [Установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-menu-controller"></a>Creating a Menu Controller  
+## Создание контроллера меню  
   
-#### <a name="to-create-a-menu-controller"></a>To create a menu controller  
+#### Чтобы создать контроллер меню  
   
-1.  Follow the procedures described in [Adding a Toolbar to a Tool Window](../extensibility/adding-a-toolbar-to-a-tool-window.md) to create a tool window that has a toolbar.  
+1.  Следуйте процедурам, описанным в [Добавление панели инструментов в окне инструментов](../extensibility/adding-a-toolbar-to-a-tool-window.md) для создания окна инструментов, которое содержит панель инструментов.  
   
-2.  In TWTestCommandPackage.vsct, go to the Symbols section. In the GuidSymbol element named **guidTWTestCommandPackageCmdSet**, declare your menu controller, menu controller group, and three menu items.  
+2.  В TWTestCommandPackage.vsct перейдите к разделу символы. В элементе GuidSymbol с именем **guidTWTestCommandPackageCmdSet**, объявлять контроллер меню, группы меню контроллера и три элемента меню.  
   
     ```xml  
     <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
     ```  
   
-3.  In the Menus section, after the last menu entry, define the menu controller as a menu.  
+3.  В разделе меню после последнего элемента меню, определите контроллер меню как меню.  
   
     ```xml  
     <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
@@ -74,9 +57,9 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
     </Menu>  
     ```  
   
-     The `TextChanges` and `TextIsAnchorCommand` flags must be included to enable the menu controller to reflect the last selected command.  
+     `TextChanges` И `TextIsAnchorCommand` флаги должен быть включен, чтобы разрешить в контроллере меню в соответствии с последней выбранной команды.  
   
-4.  In the Groups section, after the last group entry, add the menu controller group.  
+4.  В группах статьи после последней группы записи, добавьте группу меню контроллера.  
   
     ```xml  
     <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
@@ -84,9 +67,9 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
     </Group>  
     ```  
   
-     By setting the menu controller as the parent, any commands placed in this group will appear in the menu controller. The `priority` attribute is omitted, which sets it to the default value of 0, because it will be the only group on the menu controller.  
+     Задавая контроллер меню как родительский, все команды, помещаются в эту группу будут отображаться в меню контроллера.`priority` Атрибут опущен, который задает значение по умолчанию 0, так как они будут только группы на контроллере меню.  
   
-5.  In the Buttons section, after the last button entry, add a Button element for each of your menu items.  
+5.  В разделе кнопки после последнего элемента button, добавьте элемент кнопки для каждого из элементов меню.  
   
     ```xml  
     <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
@@ -118,35 +101,35 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
     </Button>  
     ```  
   
-6.  At this point, you can look at the menu controller. Build the project and start debugging. You should see the experimental instance.  
+6.  На этом этапе можно взглянуть на контроллере меню. Выполните сборку решения и запустите отладку. Вы должны увидеть экспериментальный экземпляр.  
   
-    1.  On the **View / Other Windows** menu, open **Test ToolWindow**.  
+    1.  На **представления и другие окна** откройте в меню **окно инструментов тестирования**.  
   
-    2.  The menu controller appears on the toolbar in the tool window.  
+    2.  Контроллер меню появляется на панели инструментов в окне инструментов.  
   
-    3.  Click the arrow on the right-hand side of the menu controller to see the three possible commands.  
+    3.  Щелкните стрелку справа контроллера для отображения три возможных команд меню.  
   
-     Notice that when you click a command, the title of the menu controller changes to display that command. In the next section, we will add the code to activate these commands.  
+     Обратите внимание, при выборе команды title контроллера меню изменяется для отображения этой команды. В следующем разделе мы добавим код, чтобы активировать эти команды.  
   
-## <a name="implementing-the-menu-controller-commands"></a>Implementing the Menu Controller Commands  
+## Реализация команды меню контроллера  
   
-1.  In TWTestCommandPackageGuids.cs, add command IDs for your three menu items after the existing command IDs.  
+1.  Добавьте в TWTestCommandPackageGuids.cs, идентификаторы команд для элементов меню три после идентификаторы существующих команд.  
   
-    ```csharp  
-    public const int cmdidMCItem1 = 0x130;  
-    public const int cmdidMCItem2 = 0x131;  
-    public const int cmdidMCItem3 = 0x132;  
+    ```c#  
+    public const int cmdidMCItem1 = 0x130;  
+    public const int cmdidMCItem2 = 0x131;  
+    public const int cmdidMCItem3 = 0x132;  
     ```  
   
-2.  In TWTestCommand.cs, add the following code at the top of the TWTestCommand class.  
+2.  В TWTestCommand.cs добавьте следующий код в начало класса TWTestCommand.  
   
-    ```csharp  
-    private int currentMCCommand; // The currently selected menu controller command  
+    ```c#  
+    private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
-3.  In the TWTestCommand constructor, after the last call to the `AddCommand` method, add code to route the events for each command through the same handlers.  
+3.  В конструкторе TWTestCommand после последнего вызова метода `AddCommand` метод, добавьте код для маршрутизации для каждой команды с помощью тех же обработчиков событий.  
   
-    ```csharp  
+    ```c#  
     for (int i = TWTestCommandPackageGuids.cmdidMCItem1; i <=  
         TWTestCommandPackageGuids.cmdidMCItem3; i++)  
     {  
@@ -156,7 +139,7 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
           EventHandler(OnMCItemClicked), cmdID);  
         mc.BeforeQueryStatus += new EventHandler(OnMCItemQueryStatus);  
         commandService.AddCommand(mc);  
-        // The first item is, by default, checked.   
+        // The first item is, by default, checked.   
         if (TWTestCommandPackageGuids.cmdidMCItem1 == i)  
         {  
             mc.Checked = true;  
@@ -165,10 +148,10 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
     }  
     ```  
   
-4.  Add an event handler to the TWTestCommand class to mark the selected command as checked.  
+4.  Добавьте обработчик событий в класс TWTestCommand, чтобы пометить выбранную команду как checked.  
   
-    ```csharp  
-    private void OnMCItemQueryStatus(object sender, EventArgs e)  
+    ```c#  
+    private void OnMCItemQueryStatus(object sender, EventArgs e)  
     {  
         OleMenuCommand mc = sender as OleMenuCommand;  
         if (null != mc)  
@@ -178,10 +161,10 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
     }  
     ```  
   
-5.  Add an event handler that displays a MessageBox when the user selects a command on the menu controller:  
+5.  Добавьте обработчик событий, который отображает MessageBox, когда пользователь выбирает команду меню контроллера:  
   
-    ```csharp  
-    private void OnMCItemClicked(object sender, EventArgs e)  
+    ```c#  
+    private void OnMCItemClicked(object sender, EventArgs e)  
     {  
         OleMenuCommand mc = sender as OleMenuCommand;  
         if (null != mc)  
@@ -228,20 +211,20 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
     }  
     ```  
   
-## <a name="testing-the-menu-controller"></a>Testing the Menu Controller  
+## Тестирование контроллера меню  
   
-1.  Build the project and start debugging. You should see the experimental instance.  
+1.  Выполните сборку решения и запустите отладку. Вы должны увидеть экспериментальный экземпляр.  
   
-2.  Open the **Test ToolWindow** on the **View / Other Windows** menu.  
+2.  Откройте **окно инструментов тестирования** на **представления и другие окна** меню.  
   
-     The menu controller appears in the toolbar in the tool window and displays **MC Item 1**.  
+     Контроллер меню появляется на панели инструментов в окне инструментов и отображает **MC элемент 1**.  
   
-3.  Click the menu controller button to the left of the arrow.  
+3.  Нажмите кнопку контроллера слева от стрелки.  
   
-     You should see three items, the first of which is selected and has a highlight box around its icon. Click **MC Item 3**.  
+     Вы должны увидеть три элемента, первый из которых установлен и имеется поле выделения вокруг его значок. Щелкните **MC элемент 3**.  
   
-     A dialog box appears with the message **You selected Menu controller Item 3**. Notice that the message corresponds to the text on the menu controller button. The menu controller button now displays **MC Item 3**.  
+     Появится диалоговое окно с сообщением **Выбранные контроллера меню элемента 3**. Обратите внимание, что сообщение соответствует текст на кнопке меню контроллера. Теперь отображает кнопки меню контроллера **MC элемента 3**.  
   
-## <a name="see-also"></a>See Also  
- [Adding a Toolbar to a Tool Window](../extensibility/adding-a-toolbar-to-a-tool-window.md)   
- [Adding a Toolbar](../extensibility/adding-a-toolbar.md)
+## См. также  
+ [Добавление панели инструментов в окне инструментов](../extensibility/adding-a-toolbar-to-a-tool-window.md)   
+ [Добавление панели инструментов](../extensibility/adding-a-toolbar.md)
