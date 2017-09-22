@@ -14,8 +14,8 @@ helpviewer_keywords:
 - Visual C#, international applications
 ms.assetid: 8e1b9920-e1ac-4691-928e-cd95bfc6550b
 caps.latest.revision: 9
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -38,17 +38,14 @@ ms.contentlocale: ru-ru
 ms.lasthandoff: 05/30/2017
 
 ---
-# Глобализация приложений
-<a id="globalizing-applications" class="xliff"></a>
+# <a name="globalizing-applications"></a>Глобализация приложений
 Глобализация — это процесс проектирования и разработки программных продуктов, которые работают в средах с различными языками и региональными параметрами. Этот раздел относится к страницам Windows Forms и Web Forms.  
   
-## Содержание
-<a id="in-this-section" class="xliff"></a>  
+## <a name="in-this-section"></a>Содержание  
  [Классы, соответствующие определенному языку и региональным параметрам, для глобальных форм Windows Forms и Web Forms](../ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md)  
  Описывает классы, которые используются для форматирования дат, времени, чисел, валют и других сведений в соответствии с параметрами языка и региональных параметров.  
   
-## Связанные разделы
-<a id="related-sections" class="xliff"></a>  
+## <a name="related-sections"></a>Связанные разделы  
  [Глобализация Windows Forms](/dotnet/framework/winforms/advanced/globalizing-windows-forms)  
  Ссылки на страницы справки о глобализации форм Windows Forms.  
   

@@ -5,13 +5,13 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology:
-- vs-ide-general
+- vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
 caps.latest.revision: 15
-author: BrianPeek
-ms.author: brpeek
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -28,9 +28,10 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: e8455a68a2be88e177746433ad3b41e412c8de38
+ms.contentlocale: ru-ru
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -54,7 +55,7 @@ ms.lasthandoff: 02/22/2017
   
  В следующей процедуре показано, как создать текстуру, представляющую цель "яблочко". По завершении работы текстура должна выглядеть так, как показано на следующем рисунке. Для лучшей демонстрации прозрачности в текстуре редактор изображений был настроен на использование зеленого клетчатого шаблона для ее отображения.  
   
- ![Целевой объект bullseye с зеленой прозрачной областью](~/designers/media/digit-bullseye-texture-in-editor.png "Digit-Bullseye-Texture-In-Editor")  
+ ![Целевой объект bullseye с зеленой прозрачной областью](../designers/media/digit-bullseye-texture-in-editor.png "Digit-Bullseye-Texture-In-Editor")  
   
  Перед началом убедитесь, что отображается окно **Свойства**. В окне **Свойства** можно задать размер изображения, а также изменять свойства инструментов и задавать цвета в процессе работы.  
   
@@ -102,7 +103,7 @@ ms.lasthandoff: 02/22/2017
   
  Текстура цели "яблочко" закончена. Ниже показано готовое изображение с прозрачностью:  
   
- ![Полная текстура целевого объекта bullseye](~/designers/media/gfx_image_demo_bullseye.png "gfx_image_demo_bullseye")  
+ ![Полная текстура целевого объекта bullseye](../designers/media/gfx_image_demo_bullseye.png "gfx_image_demo_bullseye")  
   
  В качестве следующего шага можно создать уровни MIP для этой текстуры. Дополнительные сведения см. в разделе [Практическое руководство. Создание и изменение MIP-уровней](../designers/how-to-create-and-modify-mip-levels.md).  
   

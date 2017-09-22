@@ -13,8 +13,8 @@ helpviewer_keywords:
 - projects [Visual Studio], user interface
 ms.assetid: eec49aec-5474-48a7-889d-709045b9a475
 caps.latest.revision: 18
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -37,12 +37,10 @@ ms.contentlocale: ru-ru
 ms.lasthandoff: 05/24/2017
 
 ---
-# Справочник по свойствам проектов
-<a id="project-properties-reference" class="xliff"></a>
+# <a name="project-properties-reference"></a>Справочник по свойствам проектов
 Вы можете ознакомиться с дополнительными сведениями о способах настройки и изменения свойств проекта.  
   
-## Страницы свойств проекта
-<a id="project-properties-pages" class="xliff"></a>  
+## <a name="project-properties-pages"></a>Страницы свойств проекта  
   
 |Заголовок|Описание|  
 |-----------|-----------------|  
@@ -59,9 +57,7 @@ ms.lasthandoff: 05/24/2017
 |[Страница "Ссылки" в конструкторе проектов (Visual Basic)](../../ide/reference/references-page-project-designer-visual-basic.md)|Эта страница используется для управления ссылками в проекте.|  
 |[Страница "Безопасность" в конструкторе проектов](../../ide/reference/security-page-project-designer.md)|Эта страница позволяет настроить параметры управления доступом для кода для приложений, развертываемых с помощью развертывания [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)].|  
 |[Страница "Подписывание" в конструкторе проектов](../../ide/reference/signing-page-project-designer.md)|Эта страница позволяет подписывать манифесты приложения и развертывания, а также подписывать сборки.|  
-|||  
-|||  
   
-## См. также
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>См. также  
  [Решения и проекты](../../ide/solutions-and-projects-in-visual-studio.md)
+

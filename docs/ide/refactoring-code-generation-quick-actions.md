@@ -9,8 +9,8 @@ ms.technology:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: fc929a81-b20c-4802-92a7-388fd15aec3c
-author: BrianPeek
-ms.author: brpeek
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -26,9 +26,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 46846db26bee30841e6cb35913d533b512d01ba0
 ms.openlocfilehash: 59ed01aa24468dd7b08a10389f91580321fe9b82
+ms.contentlocale: ru-ru
 ms.lasthandoff: 03/27/2017
 
 ---
@@ -51,7 +52,7 @@ Visual Studio помогает создавать блоки исходного 
 
 <a name="#quick-actions"></a>
 ## <a name="quick-actions"></a>Быстрые действия
-Быстрые действия позволяют легко создавать и изменять код, а также выполнять его рефакторинг одним действием.  Их можно применять, используя значок лампочки ![маленький значок лампочки](~/ide/media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") или сочетание клавиш **CTRL+.**, когда курсор находится на подходящей строке кода.
+Быстрые действия позволяют легко создавать и изменять код, а также выполнять его рефакторинг одним действием.  Их можно применять, используя значок лампочки ![маленький значок лампочки](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") или сочетание клавиш **CTRL+.**, когда курсор находится на подходящей строке кода.
 
 * [Быстрые действия](quick-actions.md)
 * [Стили кода и быстрые действия](code-styles-and-quick-actions.md)

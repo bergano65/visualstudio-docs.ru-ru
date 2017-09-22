@@ -17,8 +17,8 @@ helpviewer_keywords:
 - international applications [Visual Studio]
 ms.assetid: 4d9815ae-3e80-4b4d-933d-f8309aee18d5
 caps.latest.revision: 18
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -41,14 +41,12 @@ ms.contentlocale: ru-ru
 ms.lasthandoff: 05/30/2017
 
 ---
-# Глобализация и локализация приложений
-<a id="globalizing-and-localizing-applications" class="xliff"></a>
+# <a name="globalizing-and-localizing-applications"></a>Глобализация и локализация приложений
 Если вы планируете распространять приложения для международного использования, следует учесть несколько аспектов на этапах проектирования и разработки. Даже если пока у вас нет подобных планов, небольшие заблаговременные приготовления помогут значительно облегчить смену курса в будущих версиях приложения. Службы, встроенные в [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], упрощают разработку отдельного приложения, которое можно адаптировать для разных языков и региональных параметров с помощью управляемой разработки в Visual Studio.  
   
  Система Visual Studio изначально ориентирована на упрощение разработки международных версий за счет применения служб, встроенных в [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. На следующих страницах описаны доступные в Visual Studio возможности по интернационализации.  
   
-## Содержание
-<a id="in-this-section" class="xliff"></a>  
+## <a name="in-this-section"></a>Содержание  
  [Знакомство с международными приложениями на платформе .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Представляет основные концепции, связанные с разработкой программного обеспечения для международного рынка в Visual Studio и [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
@@ -58,8 +56,7 @@ ms.lasthandoff: 05/30/2017
  [Глобализация приложений](../ide/globalizing-applications.md)  
  Содержит ссылки на страницы, посвященные созданию приложений, которые поддерживают несколько языков и региональных параметров.  
   
-## Связанные разделы
-<a id="related-sections" class="xliff"></a>  
+## <a name="related-sections"></a>Связанные разделы  
  [Глобализация приложения (приложения для Магазина Windows на JavaScript и HTML)](http://go.microsoft.com/fwlink/?LinkId=258266)  
  Содержит инструкции и рекомендации по глобализации и локализации вашего приложения [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], созданного с помощью JavaScript и HTML.  
   

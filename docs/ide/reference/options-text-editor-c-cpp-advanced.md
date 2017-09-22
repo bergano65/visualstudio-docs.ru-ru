@@ -1,5 +1,5 @@
 ---
-title: "&quot;Параметры&quot;, &quot;Текстовый редактор&quot;, C/C++, &quot;Дополнительно&quot; | Документы Майкрософт"
+title: "\"Параметры\", \"Текстовый редактор\", C/C++, \"Дополнительно\" | Документы Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
 - Text Editor Options dialog box, advanced
 ms.assetid: 67c82ae5-fddd-49df-baec-8e7498b156f3
 caps.latest.revision: 19
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz

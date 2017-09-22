@@ -15,8 +15,8 @@ helpviewer_keywords:
 - projects [Visual Studio], multi-targeting
 ms.assetid: 91e77ad4-4da3-419d-85fb-9036f0e5c330
 caps.latest.revision: 26
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -39,22 +39,19 @@ ms.contentlocale: ru-ru
 ms.lasthandoff: 05/30/2017
 
 ---
-# Настройка конкретной версии платформы .NET Framework
-<a id="targeting-a-specific-net-framework-version" class="xliff"></a>
+# <a name="targeting-a-specific-net-framework-version"></a>Настройка конкретной версии платформы .NET Framework
 В Visual Studio можно указать версию или профиль платформы .NET Framework, которая будет предназначена для проекта. Для запуска приложения на другом компьютере версия платформы для приложения должна быть совместима с версией платформы, установленной на компьютере.  
   
  Этот раздел содержит подразделы с описанием указания конкретных целевых версий [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] в проектах.  
   
-## Содержание
-<a id="in-this-section" class="xliff"></a>  
+## <a name="in-this-section"></a>Содержание  
  [Обзор настройки для различных версий в Visual Studio](../ide/visual-studio-multi-targeting-overview.md)  
  Содержит обзор возможностей многоплатформенного нацеливания в Visual Studio.  
   
  [Практическое руководство. Определение целевой версии .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)  
  Содержит сведения об указании конкретной версии [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] для проекта Visual Basic, Visual C# или Visual F#.  
   
-## Связанные разделы
-<a id="related-sections" class="xliff"></a>  
+## <a name="related-sections"></a>Связанные разделы  
  [Настройка веб-проектов ASP.NET для различных версий .NET Framework](http://msdn.microsoft.com/Library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
  Описание использования этой версии Visual Studio для разработки веб-приложений, выполняемых в более ранних версиях платформы .NET Framework.  
   

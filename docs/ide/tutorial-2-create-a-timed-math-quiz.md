@@ -5,13 +5,13 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology:
-- vs-ide-general
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 caps.latest.revision: 17
-author: kempb
-ms.author: kempb
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -35,9 +35,7 @@ ms.contentlocale: ru-ru
 ms.lasthandoff: 07/11/2017
 
 ---
-<a id="tutorial-2-create-a-timed-math-quiz" class="xliff"></a>
-
-# Учебное руководство 2. Создание математической головоломки с ограничением по времени
+# <a name="tutorial-2-create-a-timed-math-quiz"></a>Учебное руководство 2. Создание математической головоломки с ограничением по времени
 В этом учебнике вам предстоит создать головоломку, в которой игрок должен решить четыре арифметические задачи со случайными числами за определенное время. Вы научитесь:  
   
 -   Создавать случайные числа с помощью класса `Random`.  
@@ -58,9 +56,7 @@ ms.lasthandoff: 07/11/2017
 > [!NOTE]
 >  В этом учебнике приведены примеры как на Visual C#, так и на Visual Basic, поэтому обращайте внимание на информацию, которая относится к используемому вами языку программирования.  
   
-<a id="related-topics" class="xliff"></a>
-
-## Связанные разделы  
+## <a name="related-topics"></a>Связанные разделы  
   
 |Заголовок|Описание|  
 |-----------|-----------------|  

@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology:
-- vs-ide-general
+- vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,8 +13,8 @@ f1_keywords:
 - vs.graphics.shaderdesigner
 ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
 caps.latest.revision: 32
-author: BrianPeek
-ms.author: brpeek
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -79,7 +79,7 @@ ms.lasthandoff: 05/13/2017
   
  Ниже приведена панель инструментов **Режим конструктора шейдеров**:  
   
- ![Модальная панель инструментов конструктора шейдеров.](~/designers/media/digit-dsd-modal-toolbar.png "Digit-DSD-Modal-Toolbar")  
+ ![Модальная панель инструментов конструктора шейдеров.](../designers/media/digit-dsd-modal-toolbar.png "Digit-DSD-Modal-Toolbar")  
   
  Эта таблица описывает элементы на панели инструментов **Режим конструктора шейдеров**, перечисленные в порядке отображения, слева направо:  
   
