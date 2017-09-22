@@ -3,7 +3,6 @@ title: "Руководство администратора Visual Studio | До
 description: "Дополнительные сведения о способах развертывания Visual Studio в корпоративной среде."
 ms.custom: 
 ms.date: 05/15/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:

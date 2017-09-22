@@ -2,7 +2,6 @@
 title: "Начало работы с инструментами R для Visual Studio | Документы Майкрософт"
 ms.custom: 
 ms.date: 6/29/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:

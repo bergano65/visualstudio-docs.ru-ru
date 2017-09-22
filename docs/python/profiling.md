@@ -2,7 +2,6 @@
 title: "Измерение производительности кода Python в Visual Studio | Документация Майкрософт"
 ms.custom: 
 ms.date: 7/13/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:

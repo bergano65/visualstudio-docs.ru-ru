@@ -2,7 +2,6 @@
 title: "Актуальная версия инструментов R для Visual Studio | Документация Майкрософт"
 ms.custom: 
 ms.date: 7/25/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:

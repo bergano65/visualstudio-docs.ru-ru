@@ -2,7 +2,6 @@
 title: "Интеграция SQL Server с инструментами R для Visual Studio | Документация Майкрософт"
 ms.custom: 
 ms.date: 6/30/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
