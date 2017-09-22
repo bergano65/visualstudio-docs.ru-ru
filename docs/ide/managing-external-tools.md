@@ -58,8 +58,8 @@ helpviewer_keywords:
 - Resource Compiler
 ms.assetid: f382fd40-a98f-4934-8c9a-5aeae881acde
 caps.latest.revision: 38
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -82,12 +82,10 @@ ms.contentlocale: ru-ru
 ms.lasthandoff: 05/24/2017
 
 ---
-# Управление внешними инструментами
-<a id="manage-external-tools" class="xliff"></a>
+# <a name="manage-external-tools"></a>Управление внешними инструментами
 Внешние инструменты можно вызвать прямо из Visual Studio с помощью меню **Сервис**. Несколько инструментов по умолчанию доступны в меню **Сервис**, однако вы можете самостоятельно добавлять другие исполняемые файлы.  
 
-## Инструменты, доступные в меню "Сервис" Visual Studio
-<a id="tools-available-on-the-visual-studio-tools-menu" class="xliff"></a>
+## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Инструменты, доступные в меню "Сервис" Visual Studio
  В меню **Сервис** содержится несколько встроенных команд:
 
 *  **Расширения и обновления** для [управления расширениями Visual Studio](finding-and-using-visual-studio-extensions.md).
@@ -96,8 +94,7 @@ ms.lasthandoff: 05/24/2017
 *  **Настройка...** для [настройки меню и панелей инструментов](how-to-customize-menus-and-toolbars-in-visual-studio.md).
 *  **Параметры...** для [установки различных параметров интегрированной среды разработки Visual Studio и других инструментов](reference/options-dialog-box-visual-studio.md).
 
-## Добавление новых инструментов в меню "Сервис"
-<a id="add-new-tools-to-the-tools-menu" class="xliff"></a> 
+## <a name="add-new-tools-to-the-tools-menu"></a>Добавление новых инструментов в меню "Сервис" 
  Вы можете добавить внешний инструмент в меню **Сервис**. Откройте диалоговое окно **Внешние инструменты...**, нажмите кнопку **Добавить**, а затем введите данные. Например, следующая запись вызывает открытие проводника Windows в каталоге с файлом, который в настоящий момент открыт в Visual Studio:  
   
 1.  Заголовок: *Открыть расположение файла*
@@ -130,7 +127,6 @@ ms.lasthandoff: 05/24/2017
 |Каталог решения|$(SolutionDir)|Каталог текущего решения (диск + путь).|  
 |Имя файла решения|$(SolutionFileName)|Имя файла текущего решения (диск + путь + имя файла).|  
 
-## См. также
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>См. также  
  [Средства сборки С/C++](/cpp/build/reference/c-cpp-build-tools)
 

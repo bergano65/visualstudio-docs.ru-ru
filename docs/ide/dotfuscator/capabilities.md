@@ -1,14 +1,13 @@
 ---
 title: "Возможности Dotfuscator | Документы Майкрософт"
 ms.date: 2017-06-22
-ms.prod: visual-studio-dev15
 ms.devlang: dotnet
 ms.technology:
-- dotfuscator
+- vs-ide-general
 ms.topic: article
 keywords: "Dotfuscator, Dotfuscator CE, PreEmptive, решения PreEmptive, защита PreEmptive, защита, community edition, обфускация, .NET, бесплатно, Visual Studio 2017"
 helpviewer_keywords:
-- PreEmptive Protection - Dotfuscator
+- PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
 - Dotfuscator CE
 - Dotfuscator

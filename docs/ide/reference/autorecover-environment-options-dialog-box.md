@@ -1,5 +1,5 @@
 ---
-title: "Страница &quot;Автовосстановление&quot;, папка &quot;Среда&quot;, диалоговое окно &quot;Параметры&quot; | Microsoft Docs"
+title: "Страница \"Автовосстановление\", папка \"Среда\", диалоговое окно \"Параметры\" | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -20,8 +20,8 @@ helpviewer_keywords:
 - files, saving automatically
 ms.assetid: 397e5e44-4bbe-4289-94d1-642b466c9111
 caps.latest.revision: 14
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz

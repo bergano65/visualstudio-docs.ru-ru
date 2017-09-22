@@ -5,13 +5,13 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology:
-- vs-ide-general
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 caps.latest.revision: 12
-author: kempb
-ms.author: kempb
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -28,9 +28,10 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
 ms.openlocfilehash: 019d72fece70586013455bbe74f09b990c9fac80
+ms.contentlocale: ru-ru
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -39,7 +40,7 @@ ms.lasthandoff: 02/22/2017
   
  Загрузить готовую версию примера можно на странице [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) (Полный пример учебного руководства по созданию приложения для просмотра рисунков).  
   
- ![ссылка на видео](~/data-tools/media/playvideo.gif "воспроизвести_видео")Видеоверсию этой статьи см. на следующих страницах: [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 5](http://go.microsoft.com/fwlink/?LinkId=205216) (Учебное руководство 1. Создание приложения для просмотра рисунков на Visual Basic — видео 5) или [Tutorial 1: Create a Picture Viewer in C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205206) (Учебное руководство 1. Создание приложения для просмотра рисунков на C# — видео 5). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.  
+ ![ссылка на видео](../data-tools/media/playvideo.gif "воспроизвести_видео")Видеоверсию этой статьи см. на следующих страницах: [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 5](http://go.microsoft.com/fwlink/?LinkId=205216) (Учебное руководство 1. Создание приложения для просмотра рисунков на Visual Basic — видео 5) или [Tutorial 1: Create a Picture Viewer in C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205206) (Учебное руководство 1. Создание приложения для просмотра рисунков на C# — видео 5). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.  
   
 ### <a name="to-run-your-program-and-set-the-background-color"></a>Запуск программы и настройка цвета фона  
   
@@ -47,7 +48,7 @@ ms.lasthandoff: 02/22/2017
   
 2.  Прежде чем открыть изображение, нажмите кнопку **Установить цвет фона**. Откроется диалоговое окно **Цвет**.  
   
-     ![Диалоговое окно "Цвет"](~/ide/media/express_colordialog.png "Express_ColorDialog")  
+     ![Диалоговое окно "Цвет"](../ide/media/express_colordialog.png "Express_ColorDialog")  
 Диалоговое окно "Цвет"  
   
 3.  Выберите цвет фона для элемента управления PictureBox. Внимательно просмотрите метод `backgroundButton_Click()`, чтобы понять, как он работает.  

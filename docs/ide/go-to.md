@@ -9,8 +9,8 @@ ms.technology:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 509b2107-23d1-4fb3-987f-ab99ef45b72e
-author: BrianPeek
-ms.author: brpeek
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -26,9 +26,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 3b812629bf0f655f39c35a56eb1b3ca9113303a6
 ms.openlocfilehash: 8bf6d49b21d128d15f5312fb230d4a8e7a8195af
+ms.contentlocale: ru-ru
 ms.lasthandoff: 03/01/2017
 
 ---
@@ -48,35 +49,35 @@ ms.lasthandoff: 03/01/2017
 
 По умолчанию в верхней правой части интегрированной среды разработки откроется небольшое окно.
 
-![Перейти ко всем](~/ide/media/gotoall.png)
+![Перейти ко всем](media/gotoall.png)
 
 Здесь можно выполнить следующие задачи.
 * Введите текст без префикса для поиска с помощью [значков фильтров](#filtered-searches), выбранных под текстовым полем.
 * Введите [префикс](#filtered-searches), за которым следует искомый текст.
 * Введите знак вопроса (?), чтобы получить дополнительную справку.
-  ![Справка по команде "Перейти ко всем"](~/ide/media/gotoall_help.png)
+  ![Справка по команде "Перейти ко всем"](media/gotoall_help.png)
 
 ### <a name="filtered-searches"></a>Отфильтрованные поиски
 Чтобы сузить область поиска до определенного типа, можно либо использовать префикс при вводе, либо воспользоваться значками под окном поиска, как показано ниже.
 
 Префикс | Значок | Сочетание клавиш | Описание
 :----: | ---- | -------- | ---
-#      | ![Значок символа](~/ide/media/gotoall_symbolicon.png) | CTRL+1, Ctrl+S | Поиск совпадающих символов
-f      | ![Значок файла](~/ide/media/gotoall_fileicon.png)     | CTRL+1, Ctrl+F | Поиск совпадающих имен файлов
-m      | ![Значок члена](~/ide/media/gotoall_membericon.png) | Ctrl+1, Ctrl+M | Поиск совпадающих членов
-т      | ![Значок типа](~/ide/media/gotoall_typeicon.png)     | Ctrl+1, Ctrl+T | Поиск совпадающих типов
-:      | ![Значок строки](~/ide/media/gotoall_lineicon.png)     | CTRL+G         | Переход к введенному номеру строки
+#      | ![Значок символа](media/gotoall_symbolicon.png) | CTRL+1, Ctrl+S | Поиск совпадающих символов
+f      | ![Значок файла](media/gotoall_fileicon.png)     | CTRL+1, Ctrl+F | Поиск совпадающих имен файлов
+m      | ![Значок члена](media/gotoall_membericon.png) | Ctrl+1, Ctrl+M | Поиск совпадающих членов
+т      | ![Значок типа](media/gotoall_typeicon.png)     | Ctrl+1, Ctrl+T | Поиск совпадающих типов
+:      | ![Значок строки](media/gotoall_lineicon.png)     | CTRL+G         | Переход к введенному номеру строки
 
 ### <a name="search-locations"></a>Расположения для поиска
 Чтобы сузить область поиска определенными расположениями, используйте два значка документов.
 
 Значок | Описание
 ---- | ---
-![Текущий документ](~/ide/media/gotoall_currentdocument.png) | Поиск только в текущем документе
-![Внешние документы](~/ide/media/gotoall_external.png) | Поиск во внешних документах наряду с документами, находящимися в проекте или решении
+![Текущий документ](media/gotoall_currentdocument.png) | Поиск только в текущем документе
+![Внешние документы](media/gotoall_external.png) | Поиск во внешних документах наряду с документами, находящимися в проекте или решении
 
 ### <a name="settings"></a>Параметры
-Щелкните значок шестеренки ![Значок шестеренки](~/ide/media/gotoall_gear.png) в правом нижнем углу, чтобы изменить порядок работы этой функции.
+Щелкните значок шестеренки ![Значок шестеренки](media/gotoall_gear.png) в правом нижнем углу, чтобы изменить порядок работы этой функции.
 
 Параметр | Описание
 ------- | ---

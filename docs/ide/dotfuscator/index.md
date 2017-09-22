@@ -1,14 +1,13 @@
 ---
 title: "Dotfuscator Community Edition (CE) | Документация Майкрософт"
 ms.date: 2017-06-22
-ms.prod: visual-studio-dev15
 ms.devlang: dotnet
 ms.technology:
-- dotfuscator
+- vs-ide-general
 ms.topic: article
 keywords: "Dotfuscator, Dotfuscator CE, PreEmptive, решения PreEmptive, защита PreEmptive, защита, community edition, обфускация, .NET, бесплатно, Visual Studio 2017"
 helpviewer_keywords:
-- PreEmptive Protection - Dotfuscator
+- PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
 - Dotfuscator CE
 - Dotfuscator
@@ -46,7 +45,7 @@ ms.lasthandoff: 06/23/2017
 Используйте его, чтобы обеспечить усиленную безопасность и настроить очистку рабочего стола, мобильных устройств, сервера и встроенных приложений. Так вы сможете защитить коммерческие тайны и другую интеллектуальную собственность от пиратства, подделки, изменения данных и несанкционированной отладки.
 Решение Dotfuscator выполняется на скомпилированных сборках. Вам не нужно писать дополнительный код или иметь доступ к исходному коду.
 
-![](~/ide/dotfuscator/media/header.svg)
+![](media/header.svg)
 
 ## <a name="why-protection-matters"></a>Почему важна защита
 

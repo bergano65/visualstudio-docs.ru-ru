@@ -5,13 +5,13 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology:
-- vs-ide-general
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 caps.latest.revision: 20
-author: kempb
-ms.author: kempb
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -28,16 +28,17 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 07048d1ab89599609d7ece1e69056e6dd1dd7eea
+ms.contentlocale: ru-ru
 ms.lasthandoff: 02/22/2017
 
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Шаг 5. Добавление элементов управления в форму
 На данном шаге производится добавление в форму элемента управления `PictureBox` и элемента управления `CheckBox`. Затем на форму добавляются кнопки.  
   
- ![ссылка на видео](~/data-tools/media/playvideo.gif "воспроизвести_видео")Видеоверсию этой статьи см. на следующих страницах: [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 2](http://go.microsoft.com/fwlink/?LinkId=205211) (Учебное руководство 1. Создание приложения для просмотра рисунков на Visual Basic — видео 2) или [Tutorial 1: Create a Picture Viewer in C# - Video 2](http://go.microsoft.com/fwlink/?LinkId=205200) (Учебное руководство 1. Создание приложения для просмотра рисунков на C# — видео 2). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.  
+ ![ссылка на видео](../data-tools/media/playvideo.gif "воспроизвести_видео")Видеоверсию этой статьи см. на следующих страницах: [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 2](http://go.microsoft.com/fwlink/?LinkId=205211) (Учебное руководство 1. Создание приложения для просмотра рисунков на Visual Basic — видео 2) или [Tutorial 1: Create a Picture Viewer in C# - Video 2](http://go.microsoft.com/fwlink/?LinkId=205200) (Учебное руководство 1. Создание приложения для просмотра рисунков на C# — видео 2). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.  
   
 ### <a name="to-add-controls-to-your-form"></a>Добавление элементов управления в форму  
   
@@ -49,7 +50,7 @@ ms.lasthandoff: 02/22/2017
   
 4.  Щелкните новый элемент управления PictureBox, чтобы выбрать его, а затем щелкните черный треугольник на новом элементе управления PictureBox, чтобы отобразить его список задач, как показано на следующем рисунке.  
   
-     ![Задачи элемента управления PictureBox](~/ide/media/express_pictureboxtasks.png "Express_PictureBoxTasks")  
+     ![Задачи элемента управления PictureBox](../ide/media/express_pictureboxtasks.png "Express_PictureBoxTasks")  
 Задачи элемента управления PictureBox  
   
     > [!NOTE]
@@ -64,7 +65,7 @@ ms.lasthandoff: 02/22/2017
   
 7.  Выберите элемент управления TableLayoutPanel в форме и добавьте в нее элемент управления **CheckBox**. Двойным щелчком выберите элемент **CheckBox** на панели элементов, чтобы добавить новый элемент управления CheckBox в следующую свободную ячейку таблицы. Поскольку элемент управления PictureBox занимает первые две ячейки в TableLayoutPanel, элемент управления CheckBox добавляется в нижнюю левую ячейку. Выберите свойство **Text** и введите слово **Stretch**, как показано на следующем рисунке.  
   
-     ![Элемент управления TextBox со свойством Stretch](~/ide/media/express_pictureviewercheckbox.png "Express_PictureViewerCheckbox")  
+     ![Элемент управления TextBox со свойством Stretch](../ide/media/express_pictureviewercheckbox.png "Express_PictureViewerCheckbox")  
 Элемент управления TextBox со свойством Stretch  
   
 8.  Выберите в форме элемент управления TableLayoutPanel, а затем на панели элементов перейдите к группе **Контейнеры** (из которой был взят элемент управления TableLayoutPanel) и дважды щелкните элемент управления **FlowLayoutPanel**, чтобы добавить новый элемент управления в последнюю ячейку в элементе управления PictureBox (справа внизу). Затем закрепите FlowLayoutPanel в TableLayoutPanel (выбрав **Закрепить в родительском контейнере** в списке задач FlowLayoutPanel, раскрываемом с помощью черного треугольника, или установив свойству **Dock** FlowLayoutPanel значение **Fill**).  
@@ -90,7 +91,7 @@ ms.lasthandoff: 02/22/2017
   
 5.  Щелкните кнопку **Закрыть**, чтобы выбрать ее. Удерживая клавишу CTRL, щелкните три другие кнопки, чтобы все они были выбраны. При выделенных кнопках перейдите к окну **Свойства** и прокрутите его вверх до свойства **AutoSize**. Это свойство указывает кнопке автоматически изменять свой размер так, чтобы весь текст мог разместиться на ней. Задайте значение **true**. Кнопки теперь должны иметь соответствующий размер и быть расположены в правильном порядке. (Пока выделены все четыре кнопки, можно одновременно изменить все четыре свойства **AutoSize**.) На следующем рисунке показаны эти четыре кнопки.  
   
-     ![Программа просмотра изображений с четырьмя кнопками](~/ide/media/express_autosize.png "Express_AutoSize")  
+     ![Программа просмотра изображений с четырьмя кнопками](../ide/media/express_autosize.png "Express_AutoSize")  
 Программа просмотра изображений с четырьмя кнопками  
   
 6.  Теперь снова запустите программу, чтобы увидеть обновленную компоновку формы. При нажатии кнопок и установке флажка пока ничего не происходит, однако вскоре все заработает.  

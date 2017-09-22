@@ -1,5 +1,5 @@
 ---
-title: "Сочетания клавиш и кнопок мыши в схеме классов и окне &quot;Сведения о классах&quot; (конструктор классов) | Microsoft Docs"
+title: "Сочетания клавиш и кнопок мыши в схеме классов и окне \"Сведения о классах\" (конструктор классов) | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
 - class diagrams, mouse shortcuts
 ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
 caps.latest.revision: 8
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz

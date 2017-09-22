@@ -9,8 +9,8 @@ ms.technology:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: e15c00f6-3e22-49b8-8269-69e4c8be8040
-author: BrianPeek
-ms.author: brpeek
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 f1_keywords:
 - vs.codefix.previewchanges
@@ -28,9 +28,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 14e6961d6db557e77687eef17aae9b16f5a4d706
 ms.openlocfilehash: eb49815ed120ee4ff65dfc04764282f1ac6d1ff8
+ms.contentlocale: ru-ru
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -39,7 +40,7 @@ ms.lasthandoff: 02/22/2017
 
 При использовании в Visual Studio различных *быстрых действий* или инструментов *рефакторинга* зачастую можно просматривать изменения, которые будут внесены в проект, до их принятия.  Для этого используется окно **Просмотр изменений**.  Например, здесь показано окно **Просмотр изменений**, отображающее изменения, которые будут внесены во время рефакторинга при переименовании в проекте C#.
 
-![Просмотреть изменения](~/ide/media/previewchanges.png)
+![Просмотреть изменения](media/previewchanges.png)
 
 В верхней части окна показаны конкретные строки, которые будут изменены. Для каждой установлен флажок.  Можно установить или снять флажок, чтобы выборочно применить рефакторинг только к определенным строкам.
 

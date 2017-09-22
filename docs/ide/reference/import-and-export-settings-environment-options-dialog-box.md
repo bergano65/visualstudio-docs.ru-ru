@@ -1,5 +1,5 @@
 ---
-title: "Страница &quot;Параметры импорта и экспорта&quot;, папка &quot;Среда&quot;, диалоговое окно &quot;Параметры&quot; | Microsoft Docs"
+title: "Страница \"Параметры импорта и экспорта\", папка \"Среда\", диалоговое окно \"Параметры\" | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -12,8 +12,8 @@ f1_keywords:
 - VS.ToolsOptionsPages.Environment.Profiles
 ms.assetid: 4e69f97b-2bd2-4619-a5f9-92ca2e814de3
 caps.latest.revision: 3
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz

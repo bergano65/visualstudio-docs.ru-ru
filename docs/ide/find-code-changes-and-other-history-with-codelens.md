@@ -10,8 +10,8 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: f697d7b4-704e-4cac-b13a-bc57d2ff8318
 caps.latest.revision: 131
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -64,7 +64,7 @@ ms.lasthandoff: 05/13/2017
   
  Чтобы просмотреть код ссылки, наведите указатель мыши на ссылку.  
   
- ![CodeLens: просмотр ссылки](~/ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")  
+ ![CodeLens: просмотр ссылки](../ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")  
   
  Чтобы открыть файл, на который указывает ссылка, дважды щелкните эту ссылку.  
   
@@ -85,34 +85,34 @@ ms.lasthandoff: 05/13/2017
   
  Для кода на Visual C# .NET или Visual Basic .NET, который хранится вместе с системой управления версиями Team Foundation (TFVC) или Git, сведения CodeLens предоставляются на уровнях класса и метода (индикаторы*уровня кода элемента* ). Если репозиторий Git находится в TfGit, можно также получить ссылки на рабочие элементы TFS.  
   
- ![Индикаторы кода уровня элемента кода](~/ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
+ ![Индикаторы кода уровня элемента кода](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
   
  Для всех других типов файлов, которые можно открыть в редакторе Visual Studio, сведения о CodeLens по всему файлу приводятся в одном месте — в нижней части окна (индикаторы*уровня файла* ).  
   
- ![Индикаторы CodeLens уровня файла](~/ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
+ ![Индикаторы CodeLens уровня файла](../ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
   
  Чтобы выбрать индикатор с помощью клавиатуры, нажмите и удерживайте клавишу **ALT** для отображения назначенных клавиш с цифрами.  
   
- ![Нажмите клавишу ALT для просмотра клавиш с цифрами](~/ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
+ ![Нажмите клавишу ALT для просмотра клавиш с цифрами](../ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
   
 ### <a name="find-changes-in-your-code"></a>Поиск изменений в коде  
  Узнайте, кто изменил ваш код на C# или Visual Basic, и просмотрите внесенные в код изменения на индикаторах уровня кода элемента. При использовании системы управления версиями Team Foundation (TFVC) в Team Foundation Server или Visual Studio Team Services отображается следующее.  
   
- ![CodeLens: получение журнала изменений для кода в TFVC](~/ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
+ ![CodeLens: получение журнала изменений для кода в TFVC](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
   
  Период времени по умолчанию — последние 12 месяцев. Если код хранится в Team Foundation Server, это ограничение можно изменить, выполнив [команду TFSConfig](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62) вместе с [командой CodeIndex](../ide/codeindex-command.md) и флагом **/indexHistoryPeriod** .  
   
  Чтобы просмотреть подробный журнал всех изменений, включая сделанные более года назад, выберите параметр **Показать все изменения файла**.  
   
- ![Показать все изменения кода](~/ide/media/codelensshowsallchanges.png "CodeLensShowsAllChanges")  
+ ![Показать все изменения кода](../ide/media/codelensshowsallchanges.png "CodeLensShowsAllChanges")  
   
  Откроется окно журнала с наборами изменений.  
   
- ![Окно журнала для всех изменений кода](~/ide/media/codelenscodechangeshistory.png "CodeLensCodeChangesHistory")  
+ ![Окно журнала для всех изменений кода](../ide/media/codelenscodechangeshistory.png "CodeLensCodeChangesHistory")  
   
  Если ваши файлы хранятся в репозитории Git и вы выбираете индикатор изменений на уровне элемента кода, отображается следующее:  
   
- ![CodeLens: получение журнала изменений для кода в Git](~/ide/media/codelenscodechangesgit.png "CodeLensCodeChangesGit")  
+ ![CodeLens: получение журнала изменений для кода в Git](../ide/media/codelenscodechangesgit.png "CodeLensCodeChangesGit")  
   
  Просмотрите изменения для всего файла (кроме файлов C# и Visual Basic) на индикаторах уровня файла в нижней части окна.  
   
@@ -122,7 +122,7 @@ ms.lasthandoff: 05/13/2017
   
  Также можно узнать, кто вносил изменения в код в течение определенного времени. Это поможет обнаружить закономерности во вносимых рабочей группой изменениях и оценить их влияние.  
   
- ![CodeLens: просмотр журнала изменений кода в виде графа](~/ide/media/codelens.png "CodeLens")  
+ ![CodeLens: просмотр журнала изменений кода в виде графа](../ide/media/codelens.png "CodeLens")  
   
 #### <a name="find-changes-in-your-current-branch"></a>Поиск изменений в текущем подразделении  
  Предположим, что ваша группа работает в нескольких подразделениях, основном и дочернем, для снижения риска нарушения стабильности кода:  
@@ -139,7 +139,7 @@ ms.lasthandoff: 05/13/2017
  ![CodeLens: узнайте, когда ваш код был разветвлен](../ide/media/codelensfirstbranchscreenshot.png "CodeLensFirstBranchScreenshot")  
   
 #### <a name="find-incoming-changes-from-other-branches"></a>Поиск входящих изменений от других подразделений  
- ![CodeLens: поиск изменений кода в других ветвях](~/ide/media/codelensbranchchangecheckinconceptual.png "CodeLensBranchChangeCheckinConceptual")  
+ ![CodeLens: поиск изменений кода в других ветвях](../ide/media/codelensbranchchangecheckinconceptual.png "CodeLensBranchChangeCheckinConceptual")  
   
  …как это исправление ошибки в подразделении Dev:  
   
@@ -167,14 +167,14 @@ ms.lasthandoff: 05/13/2017
   
 |**Значок**|**Откуда поступило изменение?**|  
 |--------------|-----------------------------------------|  
-|![CodeLens: значок "Изменение от текущей ветви"](~/ide/media/codelensbranchcurrenticon.png "CodeLensBranchCurrentIcon")|Текущее подразделение|  
-|![CodeLens: значок "Изменение от родительской ветви"](~/ide/media/codelensbranchparenticon.png "CodeLensBranchParentIcon")|Родительское подразделение|  
-|![CodeLens: значок "Изменение от дочерней ветви"](~/ide/media/codelensbranchchildicon.png "CodeLensBranchChildIcon")|Дочернее подразделение|  
-|![CodeLens: значок "Изменение от одноранговой ветви"](~/ide/media/codelensbranchpeericon.png "CodeLensBranchPeerIcon")|Одноранговое подразделение|  
-|![CodeLens: значок "Изменение от другой ветви"](~/ide/media/codelensbranchfurtherawayicon.png "CodeLensBranchFurtherAwayIcon")|Подразделение, отличное от родительского, дочернего или однорангового|  
-|![CodeLens: значок "Слияние от родительской ветви"](~/ide/media/codelensbranchmergefromparenticon.png "CodeLensBranchMergeFromParentIcon")|Слияние с данными от родительского подразделения с дочерним подразделением|  
-|![CodeLens: значок "Слияние от дочерней ветви"](~/ide/media/codelensbranchmergefromchildicon.png "CodeLensBranchMergeFromChildIcon")|Слияние с данными от дочернего подразделения с родительским подразделением|  
-|![CodeLens: значок "Слияние от несвязанной ветви"](~/ide/media/codelensbranchmergefromunrelatedicon.png "CodeLensBranchMergeFromUnrelatedIcon")|Слияние с данными от несвязанного подразделения (слияние без базовой версии)|  
+|![CodeLens: значок "Изменение от текущей ветви"](../ide/media/codelensbranchcurrenticon.png "CodeLensBranchCurrentIcon")|Текущее подразделение|  
+|![CodeLens: значок "Изменение от родительской ветви"](../ide/media/codelensbranchparenticon.png "CodeLensBranchParentIcon")|Родительское подразделение|  
+|![CodeLens: значок "Изменение от дочерней ветви"](../ide/media/codelensbranchchildicon.png "CodeLensBranchChildIcon")|Дочернее подразделение|  
+|![CodeLens: значок "Изменение от одноранговой ветви"](../ide/media/codelensbranchpeericon.png "CodeLensBranchPeerIcon")|Одноранговое подразделение|  
+|![CodeLens: значок "Изменение от другой ветви"](../ide/media/codelensbranchfurtherawayicon.png "CodeLensBranchFurtherAwayIcon")|Подразделение, отличное от родительского, дочернего или однорангового|  
+|![CodeLens: значок "Слияние от родительской ветви"](../ide/media/codelensbranchmergefromparenticon.png "CodeLensBranchMergeFromParentIcon")|Слияние с данными от родительского подразделения с дочерним подразделением|  
+|![CodeLens: значок "Слияние от дочерней ветви"](../ide/media/codelensbranchmergefromchildicon.png "CodeLensBranchMergeFromChildIcon")|Слияние с данными от дочернего подразделения с родительским подразделением|  
+|![CodeLens: значок "Слияние от несвязанной ветви"](../ide/media/codelensbranchmergefromunrelatedicon.png "CodeLensBranchMergeFromUnrelatedIcon")|Слияние с данными от несвязанного подразделения (слияние без базовой версии)|  
   
 ### <a name="find-linked-work-items"></a>Поиск связанных рабочих элементов  
  ![CodeLens: поиск рабочих элементов для конкретного кода](../ide/media/codelensworkitems.png "CodeLensWorkItems")  
@@ -186,11 +186,11 @@ ms.lasthandoff: 05/13/2017
  ![CodeLens: поиск ошибок, связанных с наборами изменений](../ide/media/codelensbugschangesets.png "CodeLensBugsChangesets")  
   
 ### <a name="contact-the-owner-of-an-item"></a>Обращение к владельцу элемента  
- ![Обращение к владельцу элемента](~/ide/media/codelenscontactitemowner.png "CodeLensContactItemOwner")  
+ ![Обращение к владельцу элемента](../ide/media/codelenscontactitemowner.png "CodeLensContactItemOwner")  
   
  Откройте контекстное меню элемента, чтобы увидеть параметры контакта. Если на компьютере установлено приложение Lync или Skype для бизнеса, отобразятся следующие параметры:  
   
- ![Параметры контакта для элемента](~/ide/media/codelensitemcontactmenu.png "CodeLensItemContactMenu")  
+ ![Параметры контакта для элемента](../ide/media/codelensitemcontactmenu.png "CodeLensItemContactMenu")  
   
 ##  <a name="FindRunUnitTests"></a> Поиск модульных тестов для кода  
  Узнайте больше об имеющихся модульных тестах для кода, не открывая обозреватель тестов. Требуется:  
@@ -207,7 +207,7 @@ ms.lasthandoff: 05/13/2017
   
      ![CodeLens: выбор состояния тестирования в редакторе кода](../ide/media/codelenschoosetestindicator.png "CodeLensChooseTestIndicator")  
   
-3.  Если отображается значок предупреждения ![CodeLens: предупреждение о том, что модульные тесты еще не запускались](~/ide/media/codelenstestwarningicon.png "CodeLensTestWarningIcon"), выполните тесты.  
+3.  Если отображается значок предупреждения ![CodeLens: предупреждение о том, что модульные тесты еще не запускались](../ide/media/codelenstestwarningicon.png "CodeLensTestWarningIcon"), выполните тесты.  
   
      ![CodeLens: просмотр еще не запускавшихся модульных тестов](../ide/media/codelenstestsnotyetrun.png "CodeLensTestsNotYetRun")  
   
@@ -215,7 +215,7 @@ ms.lasthandoff: 05/13/2017
   
      ![CodeLens: переход к определению модульного теста](../ide/media/codelensunittestdefinition.png "CodeLensUnitTestDefinition")  
   
-5.  Просмотрите результаты теста. Выберите индикатор состояния теста (![CodeLens: значок непройденного модульного теста](~/ide/media/codelenstestfailedicon.png "CodeLensTestFailedIcon") или ![CodeLens: значок пройденного модульного теста](~/ide/media/codelenstestpassedicon.png "CodeLensTestPassedIcon")) или нажмите сочетание клавиш **ALT+1**.  
+5.  Просмотрите результаты теста. Выберите индикатор состояния теста (![CodeLens: значок непройденного модульного теста](../ide/media/codelenstestfailedicon.png "CodeLensTestFailedIcon") или ![CodeLens: значок пройденного модульного теста](../ide/media/codelenstestpassedicon.png "CodeLensTestPassedIcon")) или нажмите сочетание клавиш **ALT+1**.  
   
      ![CodeLens: просмотр результат модульного теста](../ide/media/codelensunittestresult.png "CodeLensUnitTestResult")  
   
@@ -232,7 +232,7 @@ ms.lasthandoff: 05/13/2017
   
  Индикаторы CodeLens уровня файла включаются и отключаются с помощью значка шеврона в нижней части окна редактора.  
   
- ![Включение и отключение индикаторов уровня файла](~/ide/media/codelensfilelevelonandoff.png "CodeLensFileLevelOnAndOff")  
+ ![Включение и отключение индикаторов уровня файла](../ide/media/codelensfilelevelonandoff.png "CodeLensFileLevelOnAndOff")  
   
 ###  <a name="NoIndicators"></a> Вопрос. Где находится CodeLens?  
  **Ответ.** CodeLens отображается в коде Visual C# .NET и Visual Basic .NET на уровне метода, класса, индексатора и свойства. Для всех других типов файлов CodeLens отображается на уровне файла.  
@@ -277,11 +277,11 @@ ms.lasthandoff: 05/13/2017
 4.  Нажмите клавишу **TAB** , чтобы перейти к списку **Параметры для** , после чего нажмите клавишу **СТРЕЛКА ВНИЗ** , чтобы выбрать **CodeLens**.  
   
 ### <a name="q-can-i-move-the-codelens-heads-up-display"></a>В. Можно ли переместить HUD-элемент CodeLens?  
- **Ответ.** Да, щелкните ![CodeLens: закрепление в виде окна](~/ide/media/codelensdockwindow.png "CodeLensDockWindow"), чтобы закрепить CodeLens как окно.  
+ **Ответ.** Да, щелкните ![CodeLens: закрепление в виде окна](../ide/media/codelensdockwindow.png "CodeLensDockWindow"), чтобы закрепить CodeLens как окно.  
   
- ![Закрепить окно индикаторов CodeLens](~/ide/media/codelensselectdockwindow.png "CodeLensSelectDockWindow")  
+ ![Закрепить окно индикаторов CodeLens](../ide/media/codelensselectdockwindow.png "CodeLensSelectDockWindow")  
   
- ![Закрепленное окно ссылок CodeLens](~/ide/media/codelensreferencesdockedwindow.png "CodeLensReferencesDockedWindow")  
+ ![Закрепленное окно ссылок CodeLens](../ide/media/codelensreferencesdockedwindow.png "CodeLensReferencesDockedWindow")  
   
 ### <a name="q-how-do-i-refresh-the-indicators"></a>В. Как обновить индикаторы?  
  **Ответ.** Это зависит от индикатора.  
