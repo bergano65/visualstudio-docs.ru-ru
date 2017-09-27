@@ -7,10 +7,10 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 836c4995feb8f24214eac81cc50836863a6931da
+ms.sourcegitcommit: f6c7e290f0abc2c32456e076420a7695ae868ba6
+ms.openlocfilehash: ffbd08a4a6765c2cc38329325e91f4aed12d88d5
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 
@@ -20,11 +20,11 @@ Visual Studio для Mac — это современная и сложная 
 
 * мобильных приложений с .NET для Android, iOS, tvOS и watchOS;
 * классических приложений Mac;
-* приложений .NET Core;
-* веб-приложений ASP.NET Core;
-* кроссплатформенных игр Unity.
+* Приложения .NET Core
+* Веб-приложения ASP.NET Core
+* Кроссплатформенные игры Unity
 
-Среда включает полнофункциональный редактор, возможности отладки, встроенную интеграцию с платформами iOS, Mac и Android, а также интегрированную систему управления версиями и многое другое.
+Среда включает полнофункциональный редактор, возможности отладки, встроенную интеграцию с платформами iOS, Mac и Android, а также интегрированную систему управления версиями и многое другое.
 
 В этой статье рассматриваются различные разделы Visual Studio для Mac и некоторые мощные компоненты для создания кроссплатформенных приложений.
 

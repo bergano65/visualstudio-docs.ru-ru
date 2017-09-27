@@ -32,7 +32,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: e743915718ae035e8fbe804076552f10f2682dfd
 ms.contentlocale: ru-ru
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Создание приложений с нативным пользовательским интерфейсом с использованием Xamarin в Visual Studio
@@ -93,7 +93,7 @@ ms.lasthandoff: 09/06/2017
   
 3.  Добавьте **Newtonsoft.Json** и пакет NuGet в проект PCL. Они будут использоваться для обработки информации, полученной от службы данных о погоде.  
   
-    -   Щелкните правой кнопкой на **решении WeatherApp** в обозревателе решений и выберите **Управление пакетами NuGet для решения...** .  
+    -   Щелкните правой кнопкой на **решении WeatherApp** в обозревателе решений и выберите **Управление пакетами NuGet для решения... **.  
   
          В окне NuGet перейдите на вкладку **Обзор** и наберите **Newtonsoft** в строке поиска.  
   

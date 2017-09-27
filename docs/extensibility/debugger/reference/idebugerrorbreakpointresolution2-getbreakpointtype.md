@@ -1,54 +1,71 @@
 ---
-title: "IDebugErrorBreakpointResolution2::GetBreakpointType | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugErrorBreakpointResolution2::GetBreakpointType"
-helpviewer_keywords: 
-  - "IDebugErrorBreakpointResolution2::GetBreakpointType"
+title: "IDebugErrorBreakpointResolution2::GetBreakpointType | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugErrorBreakpointResolution2::GetBreakpointType
+helpviewer_keywords:
+- IDebugErrorBreakpointResolution2::GetBreakpointType
 ms.assetid: 0bdb1152-4752-4464-ae7c-6d666dc293b7
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugErrorBreakpointResolution2::GetBreakpointType
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: ca89ded5a6d66f000525941671ffeee8365961d8
+ms.contentlocale: ru-ru
+ms.lasthandoff: 09/26/2017
 
-Возвращает тип точки останова.  
+---
+# <a name="idebugerrorbreakpointresolution2getbreakpointtype"></a>IDebugErrorBreakpointResolution2::GetBreakpointType
+Получает тип точки останова.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetBreakpointType(   
-   BP_TYPE* pBPType  
+```cpp  
+HRESULT GetBreakpointType(   
+   BP_TYPE* pBPType  
 );  
 ```  
   
-```c#  
-int GetBreakpointType(   
-   out enum_BP_TYPE pBPType  
+```csharp  
+int GetBreakpointType(   
+   out enum_BP_TYPE pBPType  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pBPType`  
- \[out\] возвращает значение [BP\_TYPE](../../../extensibility/debugger/reference/bp-type.md) перечисление, описывающее тип точки останова.  
+ [out] Возвращает значение из [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) перечисление, описывающее тип точки останова.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Этот метод возвращает тип точки останова, которую не удалось привязать, таким образом, требующих события точки останова ошибки.  
+## <a name="remarks"></a>Примечания  
+ Этот метод возвращает тип точки останова, которые не удалось выполнить привязку, что требует событие ошибки точки останова.  
   
-## Пример  
- В следующем примере показано, как реализовать этот метод для простого `CDebugErrorBreakpointResolution` объект, предоставляющий  [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) интерфейс.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как реализовать этот метод для простой `CDebugErrorBreakpointResolution` объекта, который предоставляет [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) интерфейса.  
   
 ```  
 HRESULT CDebugErrorBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)    
@@ -81,6 +98,6 @@ HRESULT CDebugErrorBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
 }    
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)   
- [BP\_TYPE](../../../extensibility/debugger/reference/bp-type.md)
+ [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)

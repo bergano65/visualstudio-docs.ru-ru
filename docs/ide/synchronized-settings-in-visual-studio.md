@@ -1,4 +1,3 @@
-
 ---
 title: "Синхронизация параметров в Visual Studio | Документы Майкрософт"
 ms.custom: 
@@ -13,8 +12,8 @@ f1_keywords:
 - VS.ToolsOptionsPages.Environment.RoamingSettings
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
 caps.latest.revision: 10
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -31,10 +30,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: cc949cae43fe524771f43fe7e9261de3b4325649
-ms.openlocfilehash: 8b8a7587687579e074d1b9ea1c9ae52a5f857fce
+ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
+ms.openlocfilehash: 1882e191caa027e7a6e2b52c766135b240b309a1
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="synchronize-your-settings-in-visual-studio"></a>Синхронизация параметров в Visual Studio
@@ -82,7 +81,7 @@ ms.lasthandoff: 08/15/2017
 **Примечание.** Чтобы использовать новые индивидуальные параметры для установки, необходимо обновить установку. При обновлении уже установленной системы Visual Studio 2017 до последней версии будет использоваться предыдущее общее расположение. Если у вас есть параллельно установленные версии Visual Studio 2017 и вы хотите, чтобы в обновленной версии использовалось собственное расположение файла параметров, сделайте следующее:
 
 1. После обновления экспортируйте все существующие параметры в папку, расположенную за пределами папки `%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx`, с помощью мастера параметров импорта и экспорта.
-2. Откройте **командную строку разработчика в VS 2017** в обновленной версии Visual Studio и выполните команду "run devenv resetuserdata".
+2. Откройте **командную строку разработчика для VS2017** в обновленной версии Visual Studio и выполните команду `devenv /resetuserdata`.
 3. Запустите Visual Studio и импортируйте сохраненные параметры из экспортированного файла параметров.
 
 ## <a name="see-also"></a>См. также

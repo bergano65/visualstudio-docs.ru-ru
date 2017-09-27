@@ -15,10 +15,10 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 6dbf4f2bfabbfe5dc780eb4e973c6fae7ca6b1d9
+ms.sourcegitcommit: d0a5b44962b0cfbe549453b1760a38237de7e6ab
+ms.openlocfilehash: 420af3d78a514a7e6b6ded186c204ad8301c4c85
 ms.contentlocale: ru-ru
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 07/18/2017
 1. Выберите шаблон Python Application (Приложение Python), укажите папку для проекта и нажмите кнопку **ОК**. (Если вы хотите создать локальный репозиторий для вашего проекта прямо сейчас, также установите флажок **Добавить в систему управления версиями**.)
 
     > [!Tip]
-    > Шаблон From existing Python Code (Из существующего кода Python) позволяет быстро создать проект Visual Studio из папки, которая уже содержит код Python, вместо того чтобы создавать новый пустой проект и импортировать в него существующий код.
+    > Шаблон "From existing Python Code" (Из существующего кода Python) позволяет быстро создать проект Visual Studio из папки, которая уже содержит код Python, вместо того чтобы создавать пустой проект и импортировать в него существующий код.
 
 1. Через несколько секунд проект откроется в окне обозревателя решений Visual Studio. Здесь можно просматривать файлы и папки в проекте, а также управлять средами.
 

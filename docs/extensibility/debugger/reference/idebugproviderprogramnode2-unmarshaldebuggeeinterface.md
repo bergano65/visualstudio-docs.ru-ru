@@ -1,56 +1,73 @@
 ---
-title: "IDebugProviderProgramNode2::UnmarshalDebuggeeInterface | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProviderProgramNode2::UnmarshalDebuggeeInterface"
-helpviewer_keywords: 
-  - "IDebugProviderProgramNode2::UnmarshalDebuggeeInterface"
+title: "IDebugProviderProgramNode2::UnmarshalDebuggeeInterface | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
+helpviewer_keywords:
+- IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 ms.assetid: 2e4653c5-10f1-493c-9973-f31d266c5d48
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 1801f2df2dfff7667e8a9991892b3218dc3bb71a
+ms.contentlocale: ru-ru
+ms.lasthandoff: 09/26/2017
 
-Возвращает указанный интерфейс через границы процессов.  
+---
+# <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
+Получает указанный интерфейс через границы процессов.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-HRESULT UnmarshalDebuggeeInterface(  
-   REFIID riid,  
-   void** ppvObject  
+HRESULT UnmarshalDebuggeeInterface(  
+   REFIID riid,  
+   void** ppvObject  
 );  
 ```  
   
-```c#  
-int UnmarshalDebuggeeInterface(  
-   ref Guid   riid,  
-   out IntPtr ppvObject  
+```csharp  
+int UnmarshalDebuggeeInterface(  
+   ref Guid   riid,  
+   out IntPtr ppvObject  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `riid`  
- \[in\] идентификатор GUID интерфейса, который необходимо получить.  
+ [in] Идентификатор GUID интерфейса, для получения.  
   
  `ppvObject`  
- \[out\] возвращает объект, реализующий необходимый интерфейс.  \[C\+\+\] это может быть приведен непосредственно к необходимому типу интерфейса.  Используйте \[c\#\] <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> метод, чтобы получить нужный интерфейс.  
+ [out] Возвращает объект, реализующий нужного интерфейса. [C++] это может быть приведен типу нужного интерфейса. [C#] используйте <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> метод для получения нужного интерфейса.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Этот метод используется, когда отладчик запускается в [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] пространство процесса и отлаживанными программы работают в своей собственной пространстве процесса.  
+## <a name="remarks"></a>Примечания  
+ Этот метод используется, когда отладчик работает в [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] пространство процесса и отлаживаемая программа выполняется в свое собственное пространство процесса.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)

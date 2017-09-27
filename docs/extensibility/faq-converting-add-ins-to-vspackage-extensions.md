@@ -30,7 +30,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 8db7d203b599c11ce8fea07ed3647771c879a256
 ms.contentlocale: ru-ru
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Часто задаваемые вопросы. Преобразование надстроек в расширения VSPackage
@@ -83,7 +83,7 @@ ms.lasthandoff: 09/06/2017
   
 1.  Создайте VSPackage с командой меню. (Дополнительные сведения см. в разделе [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).)  
   
-2.  Откройте файл, содержащий определение VSPackage. (В проекте C# имеет  *\<имя проекта >*Package.cs.)  
+2.  Откройте файл, содержащий определение VSPackage. (В проекте C# имеет * \<имя проекта >*Package.cs.)  
   
 3.  Добавьте в файл следующие операторы `using`:  
   
@@ -145,7 +145,7 @@ ms.lasthandoff: 09/06/2017
   
 #### <a name="to-get-the-dte-object-from-a-vspackage"></a>Получение объекта DTE из VSPackage  
   
-1.  В проект VSIX с помощью шаблона пакета Visual Studio элемент искать  *\<имя проекта >*Package.cs файл. Это класс, который извлекается из <xref:Microsoft.VisualStudio.Shell.Package> и может помочь при взаимодействии с Visual Studio. В данном случае используйте <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>, чтобы получить объект <xref:EnvDTE80.DTE2>.  
+1.  В проект VSIX с помощью шаблона пакета Visual Studio элемент искать * \<имя проекта >*Package.cs файл. Это класс, который извлекается из <xref:Microsoft.VisualStudio.Shell.Package> и может помочь при взаимодействии с Visual Studio. В данном случае используйте <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>, чтобы получить объект <xref:EnvDTE80.DTE2>.  
   
 2.  Добавьте следующие операторы `using`:  
   
@@ -177,7 +177,7 @@ ms.lasthandoff: 09/06/2017
   
 1.  Создать пакет VSPackage, имеющий команды меню, как и в [как приступить к разработке расширений VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) раздела.  
   
-2.  Откройте файл, содержащий определение VSPackage. (В проекте C# имеет  *\<имя проекта >*Package.cs.)  
+2.  Откройте файл, содержащий определение VSPackage. (В проекте C# имеет * \<имя проекта >*Package.cs.)  
   
 3.  Добавьте следующие операторы `using`:  
   
@@ -225,7 +225,7 @@ ms.lasthandoff: 09/06/2017
   
 1.  Создать пакет VSPackage, имеющий команды меню, как и в [как приступить к разработке расширений VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) раздела.  
   
-2.  Откройте файл, содержащий определение VSPackage. (В проекте C# имеет  *\<имя проекта >*Package.cs.)  
+2.  Откройте файл, содержащий определение VSPackage. (В проекте C# имеет * \<имя проекта >*Package.cs.)  
   
 3.  Добавьте следующие операторы `using`:  
   

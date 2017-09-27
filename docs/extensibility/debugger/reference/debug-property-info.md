@@ -30,10 +30,11 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: fe8f51fb1d5100fbefc0982157498f5772847c30
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3c1ce8a931ca8687056fcf161d78b7e40260e15f
+ms.contentlocale: ru-ru
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
@@ -41,7 +42,7 @@ ms.lasthandoff: 02/22/2017
   
 ## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 typedef struct tagDEBUG_PROPERTY_INFO {   
    DEBUGPROP_INFO_FLAGS dwValidFields;  
    BSTR                 bstrFullName;  
@@ -53,7 +54,7 @@ typedef struct tagDEBUG_PROPERTY_INFO {
 } DEBUG_PROPERTY_INFO;  
 ```  
   
-```c#  
+```csharp  
 public struct DEBUG_PROPERTY_INFO {   
    public uint            dwValidFields;  
    public string          bstrFullName;  
@@ -76,7 +77,7 @@ public struct DEBUG_PROPERTY_INFO {
  Имя свойства в контексте.  
   
  bstrType  
- Тип свойства, как отформатированную строку.  
+ Тип свойства как отформатированную строку.  
   
  bstrValue  
  Значение свойства как отформатированную строку.  
@@ -88,9 +89,9 @@ public struct DEBUG_PROPERTY_INFO {
  Сочетание флагов из [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) перечисление, описывающее атрибуты данного свойства.  
   
 ## <a name="remarks"></a>Примечания  
- Свойство представляет объект иерархическую природу, имеет имя, тип и значение. Например свойство можно описать локальные переменные, параметры, переменные контрольных значений и выражений и регистров.  
+ Свойство является объектом иерархический характер, который имеет имя, тип и значение. Например свойство можно описать локальных переменных, параметров, Контрольные значения переменных и выражений и регистры.  
   
- Эта структура передается [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) метод, где оно будет заполнено. Эта структура также возвращается как часть списка из этой структуры [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) интерфейс, который, в свою очередь, возвращается из вызова [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) и [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) методы.  
+ Эта структура передается [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) метод, где он заполняется. Эта структура также возвращается как часть списка из этой структуры [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) интерфейс, который в свою очередь, возвращается из вызова [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) и [ EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) методы.  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

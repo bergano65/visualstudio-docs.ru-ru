@@ -1,61 +1,78 @@
 ---
-title: "IDebugSettingsCallback2::GetEELocalObject | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugSettingsCallback2::GetEELocalObject"
+title: "IDebugSettingsCallback2::GetEELocalObject | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugSettingsCallback2::GetEELocalObject
 ms.assetid: e69a3469-a049-420c-b918-c48a1e7b9baf
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugSettingsCallback2::GetEELocalObject
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0a1e7f1f257a8bed2d11d5ebf819cdf45b3612c6
+ms.contentlocale: ru-ru
+ms.lasthandoff: 09/26/2017
 
-Возвращает локальный объект средства оценки выражений заданной метрики имя.  
+---
+# <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
+Возвращает выражение оценки локальный объект, которому передан имя метрики.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT GetEELocalObject(  
-   REFGUID     guidLang,  
-   REFGUID     guidVendor,  
-   LPCWSTR     pszMetric,  
-   IUnknown ** ppUnk  
+   REFGUID     guidLang,  
+   REFGUID     guidVendor,  
+   LPCWSTR     pszMetric,  
+   IUnknown ** ppUnk  
 );  
 ```  
   
-```c#  
+```csharp  
 private int GetEELocalObject(  
-   ref Guid          guidLang,  
-   ref Guid          guidVendor,  
-   string            pszMetric,  
-   out System.Object ppUnk  
+   ref Guid          guidLang,  
+   ref Guid          guidVendor,  
+   string            pszMetric,  
+   out System.Object ppUnk  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `guidLang`  
- \[in\] уникальный идентификатор языка программирования.  
+ [in] Уникальный идентификатор языка программирования.  
   
  `guidVendor`  
- \[in\] уникальный идентификатор поставщика.  
+ [in] Уникальный идентификатор поставщика.  
   
  `pszMetric`  
- \[in\] имя метрики.  
+ [in] Имя метрики.  
   
  `ppUnk`  
- \[out\] возвращает локальный объект средства оценки выражений.  
+ [out] Возвращает выражение оценки локального объекта.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)
