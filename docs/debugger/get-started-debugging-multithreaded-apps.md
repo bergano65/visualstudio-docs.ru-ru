@@ -1,5 +1,5 @@
 ---
-title: Get started debugging multithreaded applications | Microsoft Docs
+title: "Начало отладки многопоточных приложений | Документы Microsoft"
 ms.custom: H1HackMay2017
 ms.date: 06/02/2017
 ms.reviewer: 
@@ -36,46 +36,46 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 5c5aa0df75451fe829b0d6849d8c9d1672e677b0
+ms.sourcegitcommit: 1d4298d60886d8fe8b402b59b1838a4171532ab1
+ms.openlocfilehash: 3ffb550707280d76756cbd144ed03f4143ce144b
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 09/26/2017
 
 ---
-# <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Get started debugging a multithreaded application in Visual Studio
-Visual Studio provides several tools and user interface elements to help you debug multithreaded applications. This tutorial shows how to use conditional breakpoints and filter breakpoints, the **Parallel Stacks** window, and **Parallel Watch** window. This tutorial takes only a few minutes, but completing it will familiarize you with the features for debugging multithreaded applications.
+# <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Начало отладки многопоточных приложений в Visual Studio
+Visual Studio предоставляет несколько средств и элементы пользовательского интерфейса для отладки многопоточных приложений. Этого учебника показано, как использовать маркеры потоков **Параллельные стеки** окне **контроль параллельных данных** окна, условные точки останова и точки останова фильтра. Этот учебник занимает всего несколько минут, но оно позволит ознакомиться со средствами для отладки многопоточных приложений.
 
 |         |         |
 |---------|---------|
-| ![Watch a video](../install/media/video-icon.png "WatchVideo") | [Watch a video](#video) on multithreaded debugging that shows similar steps. |
+| ![Посмотреть видео](../install/media/video-icon.png "WatchVideo") | [Посмотреть видео](#video) на многопотоковая отладка, показывающий аналогичные действия. |
 
-Other topics provide additional information on using other multithreaded debugging tools:
+Другие разделы предоставляют дополнительные сведения об использовании других многопоточных средства отладки.
 
-- For a similar topic that shows how to use the **Debug Location** toolbar and the **Threads** window, see [Walkthrough: Debug a Multithreaded Application](../debugger/how-to-use-the-threads-window.md).
+- Аналогичные темы, показано, как использовать **место отладки** инструментов и **потоков** окна, в разделе [Пошаговое руководство: Отладка многопоточных приложений](../debugger/how-to-use-the-threads-window.md).
 
-- For a similar topic with a sample that uses <xref:System.Threading.Tasks.Task> (managed code) and the concurrency runtime (C++), see [Walkthrough: Debugging a Parallel Application](../debugger/walkthrough-debugging-a-parallel-application.md). For general debugging tips that apply to most multithreaded application types, read both this topic and the linked topic.
+- Аналогичные раздел с примером, который использует <xref:System.Threading.Tasks.Task> (управляемый код) и среда выполнения с параллелизмом (C++), в разделе [Пошаговое руководство: отладка параллельного приложения](../debugger/walkthrough-debugging-a-parallel-application.md). Общие советы по отладке, применяемые в типы наиболее многопоточных приложений, прочитать этот раздел и связанный раздел.
   
-To begin this tutorial, you need a multithreaded application project. Follow the steps listed here to create that project.  
+Чтобы начать работу с учебником, необходим проект многопоточного приложения. Выполните следующие действия для создания этого проекта.  
   
-#### <a name="to-create-the-multithreaded-app-project"></a>To create the multithreaded app project  
+#### <a name="to-create-the-multithreaded-app-project"></a>Чтобы создать проект многопоточного приложения  
   
-1.  On the **File** menu, choose **New** and then click **Project**.  
+1.  На **файл** меню, выберите **New** и нажмите кнопку **проекта**.  
   
-     The **New Project** dialog box appears.  
+     Откроется диалоговое окно **Новый проект** .  
   
-2.  In the **Project Type**s box, click the language of your choice: **Visual C#**, **Visual C++**, or **Visual Basic**.  
+2.  В **тип проекта**s выберите язык: **Visual C#**, **Visual C++**, или **Visual Basic**.  
   
-3.  In the **Templates** box, choose **Console App**.  
+3.  В **шаблоны** выберите **консольного приложения**.  
   
-4.  In the **Name** box, type the name MyThreadWalkthroughApp.  
+4.  В **имя** введите имя MyThreadWalkthroughApp.  
   
-5.  Click **OK**.  
+5.  Нажмите кнопку **ОК**.  
   
-     A new console project appears. When the project has been created, a source file appears. Depending on the language you have chosen, the source file might be called Program.cs, MyThreadWalkthroughApp.cpp, or Module1.vb.  
+     Появится новый проект консольного приложения. Когда проект будет создан, откроется файл исходного кода. В зависимости от языка, которую вы выбрали может вызывать исходный файл Program.cs, MyThreadWalkthroughApp.cpp или Module1.vb.  
   
-6.  Delete the code that appears in the source file and replace it with the example code shown here.
+6.  Удалите код, который отображается в исходном файле и замените его на пример кода, показано ниже.
 
-    ```C#
+    ```csharp
     using System;
     using System.Threading;
 
@@ -208,11 +208,11 @@ To begin this tutorial, you need a multithreaded application project. Follow the
     End Class
     ```
   
-7.  On the **File** menu, click **Save All**.  
+7.  На **файл** меню, нажмите кнопку **сохранить все**.  
   
-#### <a name="to-begin-the-tutorial"></a>To begin the tutorial  
+#### <a name="to-begin-the-tutorial"></a>Чтобы приступить к изучению учебника  
   
--   In the source code editor, look for the following code: 
+-   В редакторе исходного кода найдите следующий код: 
   
     ```CSharp  
     Thread.Sleep(3000);  
@@ -228,20 +228,20 @@ To begin this tutorial, you need a multithreaded application project. Follow the
     Console.WriteLine()
     ```
   
-#### <a name="to-start-debugging"></a>To start debugging  
+#### <a name="to-start-debugging"></a>Начало отладки  
   
-1.  Click in the left gutter of the `Thread.Sleep` or `Thread::Sleep` statement to insert a new breakpoint.  
+1.  Щелкните в левом поле `Thread.Sleep` или `Thread::Sleep` инструкцию, чтобы добавить новую точку останова.  
   
-     In the gutter on the left side of the source code editor, a red circle appears. This indicates that a breakpoint is now set at this location. 
+     Во внутренней области левой части редактора исходного кода появится красный кружок. Это означает, что точка останова установлена в этом месте. 
   
-2.  On the **Debug** menu, click **Start Debugging** (**F5**).  
+2.  На **отладки** меню, нажмите кнопку **начать отладку** (**F5**).  
   
-     Visual Studio builds the solution, the app starts to run with the debugger attached, and then the app stops at the breakpoint.  
+     Visual Studio создает решение, приложение начинает выполняться с подключенным отладчиком и затем приложение останавливается в точке останова.  
   
     > [!NOTE]
-    > If you switch focus to the console window, click in the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] window to return focus to [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+    > При переключении фокуса в окно консоли, нажмите кнопку в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] окно для возвращения фокуса в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-4.  In the source code editor, locate the line that contains the breakpoint:  
+4.  В редакторе исходного кода найдите строку, которая содержит точку останова:  
   
     ```CSharp  
     Thread.Sleep(3000);  
@@ -255,153 +255,153 @@ To begin this tutorial, you need a multithreaded application project. Follow the
     Thread.Sleep(3000)
     ```    
   
-#### <a name="ShowThreadsInSource"></a>To discover the thread marker  
+#### <a name="ShowThreadsInSource"></a>Чтобы обнаружить маркер потока  
 
-1.  In the Debug Toolbar, click the **Show Threads in Source** button ![Show Threads in Source](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
+1.  В панели инструментов отладки нажмите **Показать потоки в исходном коде** кнопку ![Показать потоки в исходном коде](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
 
-2. Press **F11** once to advance the debugger one line of code.
+2. Нажмите клавишу **F11** один раз, чтобы переместить отладчик одной строки кода.
   
-3.  Look at the gutter on the left side of the window. On this line, you will see a *thread marker* icon  ![Thread Marker](../debugger/media/dbg-thread-marker.png "ThreadMarker") that resembles two cloth threads. The thread marker indicates that a thread is stopped at this location.
+3.  Посмотрите на переплет в левой части окна. В этой строке, вы увидите *маркер потока* значок ![маркер потока](../debugger/media/dbg-thread-marker.png "ThreadMarker") имеет вид 2 тряпичных нити. маркер потока указывает, что некий поток остановлен в этом месте.
 
-    Notice that a thread marker may be partially concealed by a breakpoint. 
+    Обратите внимание, что маркер потока может частично скрыты с помощью точки останова. 
   
-4.  Hover the pointer over the thread marker. A DataTip appears. The DataTip tells you the name and thread ID number for each stopped thread. In this case, the name is probably `<noname>`. 
+4.  Наведите указатель мыши на маркер потока. Появится подсказка. Подсказка сообщает имя и идентификационный номер каждого остановившегося тут потока. В этом случае оно, скорее всего, `<noname>`. 
   
-5.  Right-click the thread marker to see the available options on the shortcut menu.
+5.  Щелкните правой кнопкой мыши маркер потока, чтобы просмотреть доступные параметры контекстного меню.
     
-## <a name="ParallelStacks"></a>View the Location of Threads
+## <a name="ParallelStacks"></a>Просмотр расположения потоков
 
-In the **Parallel Stacks** window, you can switch between a Threads view and (for task-based programming) Tasks view, and you can view call stack information for each thread. In this app, we can use the Threads view.
+В **Параллельные стеки** окна, можно переключаться между представление "Потоки", а также (для программирования на основе задач) представление "задачи" и просмотреть стек вызовов для каждого потока. В этом приложении можно использовать представление "Потоки".
 
-1. Open the **Parallel Stacks** window by choosing **Debug > Windows > Parallel Stacks**. You should see something similar to this (the exact information will be different depending on the current location of each thread, your hardware, and your programming language).
+1. Откройте **Параллельные стеки** окно, выбрав **Отладка > Windows > Параллельные стеки**. Оно будет выглядеть примерно так (точные данные будут отличаться в зависимости от текущего расположения, каждый поток, оборудования и используемого языка программирования).
 
-    ![Parallel Stacks Window](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
+    ![Параллельных стеков окна](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
 
-    In this example, from left to right we get this information:
+    В этом примере слева направо мы получаем эти сведения:
     
-    - The Main thread (left side) has stopped on `Thread.Start` (the stop point is indicated by the thread marker icon ![Thread Marker](../debugger/media/dbg-thread-marker.png "ThreadMarker")).
-    - Two threads have entered the `ServerClass.InstanceMethod`, one of which is the current thread (yellow arrow), while the other thread has stopped in `Thread.Sleep`.
-    - A new thread (on the right) is also starting (stopped on `ThreadHelper.ThreadStart`).
+    - Основной поток (слева) остановлена на `Thread.Start` (точка останова обозначается значком маркер потока ![маркер потока](../debugger/media/dbg-thread-marker.png "ThreadMarker")).
+    - Были введены два потока `ServerClass.InstanceMethod`, один из которых является текущий поток (желтая стрелка), а другой поток остановлен в `Thread.Sleep`.
+    - Новый поток (справа) также запускается (остановлена на `ThreadHelper.ThreadStart`).
 
-2.  Right-click entries in the **Parallel Stacks** window to see the available options on the shortcut menu.
+2.  Щелкните правой кнопкой мыши записи в **Параллельные стеки** окна, чтобы отобразить доступные параметры контекстного меню.
 
-    You can take various actions from these right-click menus, but for this tutorial we will show more of these details in the **Parallel Watch** window (next sections).
+    Можно выполнять различные действия из эти контекстные меню, но в этом учебнике мы рассмотрим несколько из этих сведений в **контроль параллельных данных** окна (в следующем разделе).
 
     > [!NOTE]
-    > If you are more interested in seeing a list view with information on each thread, use the **Threads** window instead. See [Walkthrough: Debug a Multithreaded Application](../debugger/how-to-use-the-threads-window.md).
+    > Если вы более заинтересованы в просмотре списка просмотра со сведениями о каждом потоке, используйте **потоков** окна вместо него. В разделе [Пошаговое руководство: Отладка многопоточных приложений](../debugger/how-to-use-the-threads-window.md).
 
-## <a name="set-a-watch-on-a-variable"></a>Set a Watch on a Variable
+## <a name="set-a-watch-on-a-variable"></a>Значение контрольного значения для переменной
 
-1. Open the **Parallel Watch** window by choosing **Debug > Windows > Parallel Watch > Parallel Watch 1**.
+1. Откройте **контроль параллельных данных** окно, выбрав **Отладка > Windows > контроль параллельных данных > контроль параллельных данных 1**.
 
-2. Click in the cell where you see the `<Add Watch>` text (or the empty header cell in the 4th column), type `data`, and press Enter.
+2. Щелкните ячейку, в котором имеются `<Add Watch>` текста (или пустой заголовок ячейки в четвертом столбце), тип `data`, и нажмите клавишу ВВОД.
 
-    The values for the data variable for each thread appear in the window.
+    В окне отображаются значения для переменной для каждого потока данных.
 
-3. Click again in the cell where you see the `<Add Watch>` text (or the empty header cell in the 5th column), type `count`, and press Enter.
+3. Снова щелкните ячейку, в которой отображаются `<Add Watch>` текста (или пустой заголовок ячейки в столбце 5-й) типа `count`, и нажмите клавишу ВВОД.
 
-    The values for the count variable for each thread appear in the window. (If you don't see this much information yet, try pressing F11 a few more times to advance the execution of the threads in the debugger.)
+    В окне отображаются значения для переменной счетчика для каждого потока. (Если вы не видите еще такой большой объем информации, попробуйте еще несколько раз нажав клавишу F11, чтобы переместить выполнение потоков в отладчике.)
 
-    ![Parallel Watch Window](../debugger/media/dbg-multithreaded-parallel-watch.png "ParallelWatchWindow")
+    ![Окно контрольных значений параллельных](../debugger/media/dbg-multithreaded-parallel-watch.png "ParallelWatchWindow")
 
-4. Right-click one of the rows in the window to see available options.
+4. Щелкните правой кнопкой мыши одну из строк в окне, чтобы просмотреть доступные параметры.
 
-## <a name="flagging-and-unflagging-threads"></a>Flagging and Unflagging Threads  
-You can flag threads that you want to give special attention. Flagging threads is a good way to keep track of important threads and to ignore threads that you do not care about.  
+## <a name="flagging-and-unflagging-threads"></a>Пометка потоков и ее снятие  
+Можно пометить поток, требуется уделить особое внимание. Пометка потоков — хороший способ, чтобы отслеживать важные потоки и игнорировать потоков, которые не важна.  
   
-#### <a name="to-flag-threads"></a>To flag threads  
+#### <a name="to-flag-threads"></a>Чтобы пометить потоки  
 
-1. In the **Parallel Watch** window, hold down the SHIFT key and select multiple rows.
+1. В **контроль параллельных данных** окна, удерживая нажатой клавишу SHIFT и выбрать несколько строк.
 
-2. Right-click and choose **Flag**.
+2. Щелкните правой кнопкой мыши и выберите **флаг**.
 
-    Now, all the selected threads are flagged. Now, you can filter to show only flagged threads.
+    Теперь помечаются все выбранные потоки. Теперь можно фильтровать на показ только помеченных потоков.
   
-3.  In the **Parallel Watch** window, find the **Show Only Flagged Threads** button ![Show Flagged Threads](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").  
+3.  В **контроль параллельных данных** окна, найдите **Показывать только отмеченные потоки** кнопку ![Показывать отмеченные потоки](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").  
   
-4.  Click the **Show Only Flagged Threads** button.  
+4.  Нажмите кнопку **Показывать только отмеченные потоки** кнопки.  
   
-    Only the flagged thread appears in the list now.
+    Теперь в списке отображаются только отмеченные потоки.
 
     > [!TIP]
-    > When you have flagged some threads, you can right-click a line of code in the code editor and choose **Run Flagged Threads to Cursor** (make sure that you choose code that all flagged threads will reach). This will pause threads on the selected line of code, making it easier to control the order of execution by [freezing and thawing threads](#bkmk_freeze).
+    > Когда отметкой некоторые потоки можно правой кнопкой мыши строку кода в редакторе кода и выбрать **запуска отмеченные потоки до курсора** (не забудьте выбрать код, что все отмеченные потоки достигнет). Это приостанавливает потоки в выбранной строке кода, упрощая процесс для управления порядком выполнения по [Замораживание и размораживание потоков](#bkmk_freeze).
 
-5.  Click the **Show Only Flagged Threads** button to toggle back to **Show All Threads** mode.
+5.  Нажмите кнопку **Показывать только отмеченные потоки** кнопку для переключения обратно в **Показывать все потоки** режим.
     
-#### <a name="to-unflag-threads"></a>To unflag threads
+#### <a name="to-unflag-threads"></a>Чтобы снять отметку с потока
 
-To unflag threads, you can right-click one or more flagged threads in the **Parallel Watch** window and choose **Unflag**.
+Чтобы снять отметку с потока, щелкнуть правой кнопкой мыши один или несколько отмеченных потоков в **контроль параллельных данных** окна и выберите **снять отметку**.
 
-## <a name="bkmk_freeze"></a> Freezing and thawing thread execution 
+## <a name="bkmk_freeze"></a>Замораживание и размораживание потоков 
 
 > [!TIP]
-> You can freeze and thaw (suspend and resume) threads to control the order in which threads perform work. This can help you resolve concurrency issues such as deadlocks and race conditions.
+> Можно заморозить или разморозить (приостанавливать и возобновлять) потоки для управления порядком, в котором потоки выполнения работы. Это может помочь при устранении проблем параллелизма, например взаимоблокировки и состояние гонки.
   
-#### <a name="to-freeze-and-unfreeze-threads"></a>To freeze and unfreeze threads  
+#### <a name="to-freeze-and-unfreeze-threads"></a>Чтобы заморозить и разморозить потоки  
   
-1.  In the **Parallel Watch** window, with all the rows selected, right-click and select **Freeze**.
+1.  В **контроль параллельных данных** окна со всех выбранных строк, щелкните правой кнопкой мыши и выберите **закрепить**.
 
-    In the second column, a pause icon now appears for each row. The pause icon indicates that the thread is frozen.
+    Во втором столбце значок паузы теперь отображается для каждой строки. Значок паузы указывает, что поток заморожен.
 
-2.  Deselect the rows by clicking one row only.
+2.  Отменить выбор строки, щелкнув только одну строку.
 
-3.  Right-click a row and select **Thaw**.
+3.  Щелкните правой кнопкой мыши строку и выберите **Разморозить**.
 
-    The pause icon goes away on this row, indicating that the thread is no longer frozen.
+    Значок паузы исчезает в этой строке, указывающее, что поток больше не зафиксировано.
 
-4.  Switch to the code editor and click **F11**. Only the unfrozen thread runs.
+4.  В редакторе кода и нажмите кнопку **F11**. Только нефиксированного поток выполняется.
 
-    The app may also instantiate some new threads. Notice that any new threads are unflagged and are not frozen.
+    Экземпляр приложения также можно создать несколько новых потоков. Обратите внимание, что все новые потоки непомеченные заморожены.
 
-## <a name="bkmk_follow_a_thread"></a> Follow a Single Thread by using Conditional Breakpoints
+## <a name="bkmk_follow_a_thread"></a>Выполните один поток, используя условные точки останова
 
-Sometimes, it can be helpful to follow the execution of a single thread in the debugger. One way you can do that is by freezing threads that you are not interested in, but in some scenarios you may wish to follow a single thread without freezing other threads (to repro a particular bug, for example). To follow a thread without freezing other threads, you must avoid breaking into code except on the thread that you are interested in. You can do this by setting a [conditional breakpoint](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
+В некоторых случаях может быть полезно следить за выполнением из одного потока в отладчике. Это можно сделать в том числе путем закрепления потоков, которые вас не интересуют, но в некоторых сценариях может потребоваться следовать один поток не замораживание других потоков (для воспроизведения определенной ошибки, например). Для выполнения в потоке без замораживание других потоков, можно избежать, приостановка выполнения кода, за исключением того, в том потоке, которые вас интересуют. Это можно сделать, задав [условную точку останова](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
 
-You can set breakpoints on different conditions, such as the thread name or the thread ID. Another method that may be helpful is to set the condition on data that you know will be unique to each thread. This is a common debugging scenario, in which you are more interested in some particular data value than in any particular thread.
+Можно установить точки останова в различных условиях, например имя или идентификатор потока. Другой метод, который может оказаться полезным является задайте условие для данных, которые будут уникальными для каждого потока. Это распространенный сценарий отладки, в котором больше интересует некоторые конкретного значения данных чем в любом определенном потоке.
 
-#### <a name="to-follow-a-single-thread"></a>To follow a single thread
+#### <a name="to-follow-a-single-thread"></a>Для выполнения одного потока
 
-1. Right-click the breakpoint you previously created and choose **Conditions**.
+1. Щелкните правой кнопкой мыши созданную ранее точку останова и выберите **условия**.
 
-2. In the **Breakpoint Settings** window, type `data == 5` for the conditional expression.
+2. В **параметры точки останова** введите `data == 5` для условного выражения.
 
-    ![Conditional Breakpoint](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
+    ![Условную точку останова](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
 
     > [!TIP]
-    > If you are more interested in a specific thread, then use a thread name or thread ID for the condition. To do this in the **Breakpoint Settings** window, select **Filter** instead of **Conditional expression**, and follow the filter tips. You may want to name your threads in your app code (since threads IDs change when you restart the debugger).
+    > Если вас интересуют более определенного потока, используйте имя или идентификатор потока для условия. Для этого в **параметры точки останова** выберите **фильтра** вместо **условное выражение**и следуйте советам фильтра. Требуется имя потоков в коде приложения (поскольку потоки идентификаторы изменить при перезапуске отладчик).
 
-3. Close the **Breakpoint Settings** window.
+3. Закрыть **параметры точки останова** окна.
 
-4. Click the Restart ![Restart App](../debugger/media/dbg-tour-restart.png "RestartApp") button to restart your debugging session.
+4. Нажмите "перезапустить" ![перезапустить приложение](../debugger/media/dbg-tour-restart.png "RestartApp") кнопку, чтобы перезапустить сеанс отладки.
 
-    You will break into code on the thread for which the data variable is 5. Look for the yellow arrow (current debugger context) in the **Parallel Watch** window to verify that.
+    Произойдет останов в коде в потоке, для которого переменной данных — 5. Желтая стрелка (текущий контекст отладчика) следует искать в **контроль параллельных данных** окна, чтобы убедиться, что.
 
-5. Now, you can step over code (F10) and step into code (F11) and follow the execution of the single thread.
+5. Теперь можно шаг с обходом кода (F10) и шаг с заходом в код (F11) и следить за выполнением один поток.
 
-    As long as the breakpoint condition is unique to the thread, and the debugger doesn't hit any other breakpoints on other threads (you may need to disable them), you can step over code and step into code without switching to other threads.
+    Пока условие точки останова является уникальным для потока, и отладчик не попадает в другие точки останова в других потоках (может потребоваться отключить их), вы выполните шаг с обходом кода и пошаговое выполнение кода без переключения на другие потоки.
 
     > [!NOTE]
-    > When you advance the debugger, all threads will run. However, the debugger won't break into code on other threads unless one of the other threads hits a breakpoint. 
+    > При переходе отладчик все потоки будут выполняться. Тем не менее отладчик не будет Приостановка выполнения кода в других потоках, если только один из других потоков попадает на точку останова. 
   
-## <a name="more-about-the-multithreaded-debugging-windows"></a>More about the multithreaded debugging windows 
+## <a name="more-about-the-multithreaded-debugging-windows"></a>Дополнительные сведения о диалоговых окон отладки многопоточных 
 
-#### <a name="to-switch-to-another-thread"></a>To switch to another thread 
+#### <a name="to-switch-to-another-thread"></a>Для переключения на другой поток 
 
-- To switch to another thread, see [How to: Switch to Another Thread While Debugging](../debugger/how-to-switch-to-another-thread-while-debugging.md) 
+- Чтобы переключиться в другой поток, в разделе [как: переключиться в другой поток во время отладки](../debugger/how-to-switch-to-another-thread-while-debugging.md) 
 
-## <a name="video"></a> Watch a video on multithreaded debugging
+## <a name="video"></a>Видео на многопотоковая Отладка
 
 <div style="padding-top: 56.25%; position: relative; width: 100%;">
 <iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171" frameborder="0" allowfullscreen></iframe>
 </div>
 
-#### <a name="to-learn-more-about-the-parallel-stack-and-parallel-watch-windows"></a>To learn more about the Parallel Stack and Parallel Watch windows  
+#### <a name="to-learn-more-about-the-parallel-stack-and-parallel-watch-windows"></a>Для получения дополнительных сведений о окна параллельных стека и контроль параллельных данных  
   
-- See [How to: Use the Parallel Stack Window](../debugger/using-the-parallel-stacks-window.md) 
+- В разделе [как: использование окна параллельных стека](../debugger/using-the-parallel-stacks-window.md) 
 
-- See [How to: Use the Parallel Watch Window](../debugger/how-to-use-the-parallel-watch-window.md) 
+- В разделе [как: использование окна параллельных контрольных значений](../debugger/how-to-use-the-parallel-watch-window.md) 
   
-## <a name="see-also"></a>See Also  
- [Debug Multithreaded Applications](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [How to: Switch to Another Thread While Debugging](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+## <a name="see-also"></a>См. также  
+ [Отладка многопоточных приложений](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Практическое руководство. Переключение на другой поток при отладке](../debugger/how-to-switch-to-another-thread-while-debugging.md)
 

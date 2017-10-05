@@ -34,7 +34,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: ed511fa58ca0d98d38ed2ab1ed3bc24bed642170
 ms.contentlocale: ru-ru
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Добавление пользовательского элемента управления на начальную страницу
@@ -190,7 +190,7 @@ ms.lasthandoff: 09/06/2017
   
 ## <a name="testing-a-manually-created-custom-start-page"></a>Тестирование созданного вручную настраиваемой начальной страницы  
   
-1.  Скопируйте файл XAML и все вспомогательные текстовые файлы или разметки файлы, к **%USERPROFILE%\My документы\Visual Studio 2015\StartPages\\**  папки.  
+1.  Скопируйте файл XAML и все вспомогательные текстовые файлы или разметки файлы, к **%USERPROFILE%\My документы\Visual Studio 2015\StartPages\\ ** папки.  
   
 2.  Если начальная страница ссылается на все элементы или типы в сборках, которые не установлены в Visual Studio, скопируйте сборки, а затем вставьте их в *папка установки Visual Studio***\Common7\IDE\ PrivateAssemblies\\**.  
   

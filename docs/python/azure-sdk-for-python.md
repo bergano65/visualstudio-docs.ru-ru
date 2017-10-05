@@ -2,7 +2,6 @@
 title: "Пакет Azure SDK для Python | Документация Майкрософт"
 ms.custom: 
 ms.date: 3/7/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:

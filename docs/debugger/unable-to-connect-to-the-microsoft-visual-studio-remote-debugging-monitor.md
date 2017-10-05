@@ -1,7 +1,7 @@
 ---
-title: Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor | Microsoft Docs
+title: "Не удается подключиться к Microsoft Visual Studio монитора удаленной отладки | Документы Microsoft"
 ms.custom: 
-ms.date: 07/18/2017
+ms.date: 08/24/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -37,137 +37,154 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 7770ff0cbb4ebfbb2a5c58635de24c662ee9231a
+ms.sourcegitcommit: 1d4298d60886d8fe8b402b59b1838a4171532ab1
+ms.openlocfilehash: 454e6919c2f2bcd56153eb222fbf59b1ddc1080e
 ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
-This message may occur because the remote debugging monitor is not properly set up on the remote machine or the remote machine is inaccessible due to network problems or the presence of a firewall.
+Это сообщение может возникать, если монитор удаленной отладки не настроен должным образом на удаленном компьютере или удаленный компьютер недоступен из-за проблем с сетью или наличия межсетевого экрана.
   
 > [!IMPORTANT]
->  If you believe you have received this message because of a product bug, please [report this issue](../ide/how-to-report-a-problem-with-visual-studio-2017.md) to Visual Studio. If you need more help, see [Talk to Us](../ide/talk-to-us.md) for ways to contact Microsoft.
+>  Если вы считаете, что получили это сообщение из-за ошибки продукта, обратитесь за помощью [сообщите об этой проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md) в Visual Studio. Если вам нужна дополнительная помощь, обратитесь к разделу [Talk to Us](../ide/talk-to-us.md) , чтобы узнать, как связаться с корпорацией Майкрософт.
 
-## <a name="specificerrors"></a>What is the detailed error message?
+## <a name="specificerrors"></a>Что такое сообщение об ошибке?
 
-The `Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor` message is generic. Usually, a more specific message is included in the error string and that may help you identify the cause of the problem or search for a more exact fix. Here are a few of the more common error messages that are appended to the main error message:
+`Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor` Сообщения является универсальным. Как правило более конкретное сообщение включается в строку ошибки и, могут помочь определить причину проблемы или поиска для более точного исправления. Вот несколько наиболее распространенных сообщений об ошибках, добавляется к главной сообщение:
 
-- [The debugger cannot connect to the remote computer. The debugger was unable to resolve the specified computer name](#cannot_connect)
-- [Connection request was rejected by the remote debugger](#rejected)
-- [There is no server by the specified name running on the remote computer](#no_server)
-- [The requested name was valid, but no data of the requested type was found](#valid_name)
-- [The Visual Studio Remote Debugger on the target computer cannot connect back to this computer](#cant_connect_back)
-- [Invalid access to memory location](#invalid_access)
-- [Access denied](#access_denied)
-- [A security package specific error occurred](#security_package)
+- [Отладчику не удается подключиться к удаленному компьютеру. Отладчику не удалось разрешить указанное имя компьютера](#cannot_connect)
+- [Запрос на подключение был отклонен удаленного отладчика](#rejected)
+- [Недопустимый доступ к памяти](#invalid_access)
+- [Нет ни одного сервера с указанным именем, запущенного на удаленном компьютере](#no_server)
+- [Указанное имя является допустимым, но данные запрошенного типа не найден](#valid_name)
+- [Удаленный отладчик Visual Studio на целевом компьютере не удается подключиться к этому компьютеру](#cant_connect_back)
+- [Отказано в доступе](#access_denied)
+- [Безопасность ошибка в пакете](#security_package)
 
-## <a name="cannot_connect"></a> The debugger cannot connect to the remote computer. The debugger was unable to resolve the specified computer name
+## <a name="cannot_connect"></a>Отладчику не удается подключиться к удаленному компьютеру. Отладчику не удалось разрешить указанное имя компьютера
 
-An invalid computer name was entered in the **Attach to Process** dialog box or in the project properties (To set properties, see [these steps](#local)).
+Попробуйте выполнить следующие действия:
 
-If correcting the computer name does not resolve this error, see [The remote machine is not reachable](#dns).
+1. Убедитесь, что введите допустимое имя компьютера и номер порта в **присоединиться к процессу** диалоговое окно или в свойствах проекта (для задания свойств в разделе [эти действия](#server_incorrect)). Имя компьютера, должно иметь следующий формат:
 
-## <a name="rejected"></a> Connection request was rejected by the remote debugger
-
-In the **Attach to Process** dialog box or in the project properties, make sure that the remote computer name and the port number matches the name and port number shown in the remote debugger window. If incorrect, fix and try again.
-
-If these values are correct and the message mentions **Windows Authentication** mode, check that the remote debugger is in the correct authentication mode (**Tools > Options**).
-
-## <a name="no_server"></a> There is no server by the specified name running on the remote computer
-
-Visual Studio could not connect to the remote debugger. This message may occur for several reasons:
-
-1. The remote debugger may be running under a different user account. See [these steps](#user_accounts)
-
-2. The port is blocked on the firewall. Make sure the firewall is [not blocking your request](#firewall), especially if you are using a third-party firewall.
-
-3. The remote debugger version does not match Visual Studio. To get the correct version of the remote debugger, see [Remote Debugging](../debugger/remote-debugging.md)
-
-
-## <a name="#valid_name"></a> The requested name was valid, but no data of the requested type was found
-
-The remote computer exists, but Visual Studio could not connect to the remote debugger. This message may occur for several reasons:
-
-1. A DNS issue is preventing the connection. See [these steps](#dns).
-
-2. The remote debugger may be running under a different user account. Follow [these steps](#user_accounts).
-
-3. The port is blocked on the firewall. Make sure the firewall is [not blocking your request](#firewall), especially if you are using a third-party firewall.
-
-4. The remote debugger version does not match Visual Studio. To get the correct version of the remote debugger, see [Remote Debugging](../debugger/remote-debugging.md).
-
-## <a name="cant_connect_back"></a> The Visual Studio Remote Debugger on the target computer cannot connect back to this computer
-
-The remote debugger may be running under a different user account. In the remote debugger, open **Tools > Permissions** to add the user to the remote debugger's permissions. For more information, see [The remote debugger is running under a different user account](#user_accounts).
-
-If the error message also mentions a firewall, the firewall on the local machine may be preventing communication from the remote computer back to Visual Studio. See [these steps](#firewall).
-
-## <a name="invalid_access"></a> Invalid access to memory location
-
-An internal error occurred. Restart Visual Studio and try again.
-
-## <a name="access_denied"></a> Access denied
-
-You may see this error if you try to debug on a 64-bit remote computer from a 32-bit computer (not supported).
-
-## <a name="security_package"></a> A security package specific error occurred
-
-This may be a legacy issue specific to Windows XP and Windows 7. See this [information](https://stackoverflow.com/questions/4786016/unable-to-connect-to-the-microsoft-remote-debugging-monitor-a-security-package). 
-
-## <a name="other-causes"></a>Other causes
-
-### <a name="dns"></a> The remote machine is not reachable 
-
-If DNS is not able to resolve the remote computer name, try using the IP address instead. You can use `ipconfig` in a command line on the remote computer to get the IPv4 address. If you are using a HOSTS file, verify that it is configured correctly.
-
-If that fails, verify that the remote computer is accessible on the network ([ping](https://technet.microsoft.com/en-us/library/cc732509(v=ws.10).aspx) the remote machine). Remote debugging over the Internet is not supported, except in some Microsoft Azure scenarios.
-  
-### <a name="local"></a> (local debugging) The server name is incorrect or third-party software is interfering with the remote debugger
-
-In Visual Studio, look at the project properties and make sure the server name is correct. See topics for [C# and Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp) and [C++](../debugger/remote-debugging-cpp.md#remote_cplusplus). For ASP.NET, open **Properties > Web > Servers** or **Properties > Debug** depending on your project type. (If you are attaching to the process, you don't need to set the project properties.)
-
-If the server name is correct, your anti-virus software or a third-party firewall may be blocking the remote debugger. When debugging locally, this can happen because Visual Studio is a 32-bit application, so it uses the 64-bit version of the remote debugger to debug 64-bit applications. The 32-bit and 64-bit processes communicate using the local network within the local computer. No network traffic leaves the computer, but it is possible that third party security software may block the communication.
-
-### <a name="user_accounts"></a> The remote debugger is running under a different user account 
-
-The remote debugger will, by default, only accept connections from the user who launched the remote debugger and members of the Administrators group. Additional users must be explicitly granted permissions. 
- 
-You can solve this in one of the following ways:  
-
--   Add the Visual Studio user to the remote debugger's permissions (in the remote debugger window, choose **Tools > Permissions**).
-
--   On the remote computer, restart the remote debugger under the same user account and password that you are using on the Visual Studio computer.
+    `computername:port`
 
     > [!NOTE]
-    > If you are running the remote debugger on a remote server, right-click the Remote Debugger app and choose **Run as administrator** (Or, you can run the remote debugger as a service). If you are not running it on a remote server, just start it normally.
-  
--   You can start the remote debugger from the command line with the **/allow \<username>** parameter: `msvsmon /allow <username@computer>`. 
-  
--   Alternatively, you can allow any user to do remote debugging. In the remote debugger window, go to the **Tools > Options** dialog. When you select   **No Authentication**, you can then check **Allow any user to debug**. However, you should try this option only if the other options fail, or if you are on a private network.
+    > Номер порта должен соответствовать [номер_порта удаленного отладчика](../debugger/remote-debugger-port-assignments.md), который *должен работать под управлением* на конечном компьютере.
 
-### <a name="firewall"></a> The firewall on the remote machine doesn't allow incoming connections to the remote debugger  
- The firewall on the Visual Studio machine and the firewall on the remote machine must be configured to allow communication between Visual Studio and the remote debugger. For information about the ports the remote debugger is using, see [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md). For information about configuring the Windows firewall, see [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
+2. Если имя компьютера не работает, попробуйте IP-адрес и номер порта.
+
+3. Убедитесь в том, что версия удаленного отладчика на целевом компьютере соответствует вашей версии Visual Studio. Чтобы получить правильную версию удаленного отладчика, в разделе [удаленной отладки](../debugger/remote-debugging.md).
+
+    > [!TIP]
+    > Если для присоединения к процессу и успешного подключения, но не вижу процесс, который требуется, установите **Показать процессы всех пользователей флажок**. Это будет отображать процессы, если вы подключены в учетной записи другого пользователя.
+
+4. Если эти шаги не устранить эту ошибку, см. раздел [удаленный компьютер недоступен](#dns).
+
+## <a name="rejected"></a>Запрос на подключение был отклонен удаленного отладчика
+
+В **присоединиться к процессу** диалогового окна поле или в свойствах проекта, убедитесь, что имя удаленного компьютера и номер порта совпадает имя и номер порта отображаются в окне удаленного отладчика. Если неправильными, исправьте и повторите попытку.
+
+Если эти значения верны, а в сообщении упоминаются **проверки подлинности Windows** режима, убедитесь, что удаленный отладчик находится в режиме проверку подлинности пользователя (**Сервис > Параметры**).
+
+## <a name="invalid_access"></a>Недопустимый доступ к памяти
+
+Произошла внутренняя ошибка. Перезапустите Visual Studio и повторите попытку.
+
+## <a name="no_server"></a>Нет ни одного сервера с указанным именем, запущенного на удаленном компьютере
+
+Visual Studio не удалось подключиться к удаленному отладчику. Это сообщение может возникать по нескольким причинам:
+
+- Удаленный отладчик может выполняться под другой учетной записью. В разделе [следующие действия](#user_accounts)
+
+- Порт заблокирован на брандмауэре. Убедитесь, что брандмауэр [не блокирует запрос](#firewall), особенно в том случае, если вы используете брандмауэр сторонних разработчиков.
+
+- Версия удаленного отладчика не соответствует Visual Studio. Чтобы получить правильную версию удаленного отладчика, в разделе [удаленной отладки](../debugger/remote-debugging.md)
+
+
+## <a name="#valid_name"></a>Указанное имя является допустимым, но данные запрошенного типа не найден
+
+Существует на удаленном компьютере, но Visual Studio не удалось подключиться к удаленному отладчику. Это сообщение может возникать по нескольким причинам:
+
+- Проблема DNS препятствует подключению. В разделе [эти действия](#dns).
+
+- Удаленный отладчик может выполняться под другой учетной записью. Выполните [эти действия](#user_accounts).
+
+- Порт заблокирован на брандмауэре. Убедитесь, что брандмауэр [не блокирует запрос](#firewall), особенно в том случае, если вы используете брандмауэр сторонних разработчиков.
+
+- Версия удаленного отладчика не соответствует Visual Studio. Чтобы получить правильную версию удаленного отладчика, в разделе [удаленной отладки](../debugger/remote-debugging.md).
+
+## <a name="cant_connect_back"></a>Удаленный отладчик Visual Studio на целевом компьютере не удается подключиться к этому компьютеру
+
+Удаленный отладчик может выполняться под другой учетной записью. Удаленный отладчик, откройте **Сервис > разрешения** Добавление пользователя разрешений удаленного отладчика. Дополнительные сведения см. в разделе [удаленный отладчик выполняется под другой учетной записью](#user_accounts).
+
+Если сообщение об ошибке также говорится о брандмауэром, брандмауэр на локальном компьютере возможно взаимодействие с удаленного компьютера, вернитесь в Visual Studio. В разделе [эти действия](#firewall).
+
+## <a name="access_denied"></a>Отказано в доступе
+
+Эта ошибка может отображаться, если предпринята попытка отладки на удаленном компьютере x 64 с 32-разрядного компьютера (не поддерживается).
+
+## <a name="security_package"></a>Безопасность ошибка в пакете
+
+Это может быть устаревший проблемы, связанные с Windows XP и Windows 7. Это статье [сведения](https://stackoverflow.com/questions/4786016/unable-to-connect-to-the-microsoft-remote-debugging-monitor-a-security-package). 
+
+## <a name="causes-and-recommendations"></a>Причины и рекомендации
+
+### <a name="dns"></a>Удаленный компьютер недоступен 
+
+Если не удается подключиться, используя имя удаленного компьютера, попробуйте вместо этого использовать IP-адрес. Можно использовать `ipconfig` в командной строке на удаленном компьютере, чтобы получить адрес IPv4. Если вы используете файл HOSTS, проверьте, правильно ли настроен.
+
+Если это не удается, убедитесь, что удаленный компьютер доступен в сети ([ping](https://technet.microsoft.com/en-us/library/cc732509(v=ws.10).aspx) удаленный компьютер). Удаленная отладка через Интернет не поддерживается, только в некоторых сценариях Microsoft Azure.
   
-### <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>The version of the remote debugger doesn't match the version of Visual Studio  
- The version of Visual Studio that you are running locally needs to match the version of the remote debugging monitor that is running on the remote machine. To fix this, download and install the matching version of the remote debugging monitor. To get the correct version of the remote debugger, see [Remote Debugging](../debugger/remote-debugging.md).
+### <a name="server_incorrect"></a>Указано неверное имя сервера или стороннее программное обеспечение мешает работе удаленного отладчика
+
+В Visual Studio просмотрите свойства проекта и убедитесь, что имя сервера указано правильно. В следующих разделах для [C# и Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp) и [C++](../debugger/remote-debugging-cpp.md#remote_cplusplus). ASP.NET, откройте **свойства / Web / серверов** или **свойства / Debug** в зависимости от типа проекта.
+
+> [!NOTE]
+> Для присоединения к процессу, не используются параметры удаленного в свойствах проекта.
+
+Если имя сервера указано правильно, антивирусная программа или брандмауэр сторонних разработчиков может блокировать удаленный отладчик. При локальной отладке, это может произойти, так как Visual Studio является 32-разрядным приложением, поэтому используется 64-разрядной версии удаленного отладчика для отладки 64-разрядных приложений. 32-разрядных и 64-разрядные процессы обмениваться данными по локальной сети на локальном компьютере. Сетевой трафик не отправляется с компьютера, но приложение для обеспечения безопасности от сторонних разработчиков может блокировать обмен данными.
+
+### <a name="user_accounts"></a>Удаленный отладчик запущен под учетной записью другого пользователя 
+
+Удаленный отладчик будет по умолчанию принимать подключения только от пользователя, выполнившего запуск удаленного отладчика и члены группы «Администраторы». Дополнительные пользователи должны быть явно предоставлены разрешения. 
+ 
+Решить эту проблему можно одним из указанных ниже способов.  
+
+-   Добавить разрешения удаленного отладчика Visual Studio пользователя (в окне удаленного отладчика, выберите **Сервис > разрешения**).
+
+-   На удаленном компьютере перезапустите удаленного отладчика под учетной записью пользователя и пароль, который используется на компьютере с Visual Studio.
+
+    > [!NOTE]
+    > Если вы используете удаленный отладчик на удаленном сервере, щелкните правой кнопкой мыши приложение удаленного отладчика и выберите команду **Запуск от имени администратора** (или запуска удаленного отладчика в качестве службы). Если вы не используете его на удаленном сервере, запустите его обычным образом.
   
-### <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>The local and remote machines have different authentication modes  
- The local and remote machines need to use the same authentication mode. To fix this, make sure that both machines are using the same authentication mode. You can change the authentication mode. In the remote debugger window, go to the **Tools > Options** dialog box.
+-   Удаленный отладчик можно запустить из командной строки с **/ allow \<имя пользователя >** параметр: `msvsmon /allow <username@computer>`. 
   
- For more information about authentication modes, see [Windows Authentication Overview](https://technet.microsoft.com/en-us/library/hh831472.aspx).   
+-   Кроме того можно разрешить любому пользователю выполнять удаленную отладку. В окне удаленного отладчика, перейдите к **Сервис > Параметры** диалогового окна. Если выбрать   **Без аутентификации**, то затем можно установить флажок **Разрешить отладку любому пользователю**. Тем не менее вначале следует проверить этот параметр только в том случае, если другие варианты не сработают или если вы находитесь в частной сети.
+
+### <a name="firewall"></a>Брандмауэр на удаленном компьютере запрещает входящие подключения к удаленному отладчику  
+ Брандмауэры на компьютере Visual Studio и на удаленном компьютере нужно настроить так, чтобы разрешить обмен данными между Visual Studio и удаленным отладчиком. Информацию о портах, используемых удаленным отладчиком, см. в разделе [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md). Информацию о настройке брандмауэра Windows см. в разделе [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
   
-### <a name="anti-virus-software-is-blocking-the-connections"></a>Anti-virus software is blocking the connections  
- Windows anti-virus software allows remote debugger connections, but some third-party anti-virus software may block them. Check the documentation for your anti-virus software to find out how to allow these connections.  
+### <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>Версия удаленного отладчика не соответствует версии Visual Studio  
+ Запущенная локально версия Visual Studio должна совпадать с версией монитора удаленной отладки, запущенного на удаленном компьютере. Чтобы устранить эту проблему, скачайте и установите соответствующую версию монитора удаленной отладки. Чтобы получить правильную версию удаленного отладчика, в разделе [удаленной отладки](../debugger/remote-debugging.md).
   
-### <a name="network-security-policy-is-blocking-communication-between-the-remote-machine-and-visual-studio"></a>Network security policy is blocking communication between the remote machine and Visual Studio  
- Review your network security to make sure that it is not blocking communication. For more information about Windows network security policy, see [Security policy settings](/windows/device-security/security-policy-settings/security-policy-settings).  
+### <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>На локальном и удаленном компьютерах используются разные режимы аутентификации  
+ На локальном и удаленном компьютерах должен использоваться один и тот же режим аутентификации. Чтобы устранить эту проблему, настройте на обоих компьютерах один и тот же режим аутентификации. Можно изменить режим проверки подлинности. В окне удаленного отладчика, перейдите к **Сервис > Параметры** диалоговое окно.
   
-### <a name="the-network-is-too-busy-to-support-remote-debugging"></a>The network is too busy to support remote debugging  
- You may need to do remote debugging at a different time, or reschedule work on the network for a different time.  
+ Более подробную информацию о режимах аутентификации см. в статье [Обзор аутентификации Windows](https://technet.microsoft.com/en-us/library/hh831472.aspx).   
   
-## <a name="more-help"></a>More help  
- To get more remote debugger help, open the remote debugger's Help page (**Help > Usage** in the remote debugger).
+### <a name="anti-virus-software-is-blocking-the-connections"></a>Антивирусная программа блокирует подключения.  
+ Антивирусная программа Windows разрешает подключения к удаленному отладчику, но некоторые антивирусные программы сторонних разработчиков могут блокировать их. Чтобы узнать, как разрешить эти подключения, см. документацию по используемой антивирусной программе.  
   
-## <a name="see-also"></a>See Also  
- [Remote Debugging](../debugger/remote-debugging.md)
+### <a name="network-security-policy-is-blocking-communication-between-the-remote-machine-and-visual-studio"></a>Политика сетевой безопасности блокирует обмен данными между удаленным компьютером и Visual Studio.  
+ Проверьте, не блокирует ли политика сетевой безопасности обмен данными. Дополнительные сведения о политике сетевой безопасности Windows см. в разделе [параметров политики безопасности](/windows/device-security/security-policy-settings/security-policy-settings).  
+  
+### <a name="the-network-is-too-busy-to-support-remote-debugging"></a>Удаленная отладка невозможна из-за слишком высокой загрузки сети.  
+ Попробуйте выполнить удаленную отладку в другое время или перепланировать работу в сети на другое время.  
+  
+## <a name="more-help"></a>Дополнительная справка  
+ Чтобы получить справку более удаленный отладчик, откройте страницу справки удаленный отладчик (**Справка > использование** удаленного отладчика).
+  
+## <a name="see-also"></a>См. также  
+ [Удаленная отладка](../debugger/remote-debugging.md)

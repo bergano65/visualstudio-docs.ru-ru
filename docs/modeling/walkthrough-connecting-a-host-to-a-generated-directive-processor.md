@@ -23,7 +23,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 5bfeb8ea94b457114d7ba6ab74b783972e64350c
 ms.contentlocale: ru-ru
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Пошаговое руководство. Связывание основного приложения с генерируемым обработчиком директив
@@ -96,7 +96,7 @@ ms.lasthandoff: 09/06/2017
   
 1.  Откройте решение CustomHost.  
   
-2.  На **проекта** меню, нажмите кнопку **добавить ссылку**.  
+2.  В меню **Проект** щелкните команду **Добавить ссылку**.  
   
      **Добавить ссылку** откроется диалоговое окно с **.NET** отображается вкладка.  
   

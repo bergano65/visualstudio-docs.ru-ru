@@ -1,49 +1,66 @@
 ---
-title: "IDebugProcessSecurity::GetUserName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugProcessSecurity::GetUserName"
+title: "IDebugProcessSecurity::GetUserName | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugProcessSecurity::GetUserName
 ms.assetid: c73c60ac-da6e-45ae-8f04-95353a24ca3e
 caps.latest.revision: 4
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 4
----
-# IDebugProcessSecurity::GetUserName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 081f073ba59021ca56dd084bd2cef0fde6c5c32e
+ms.contentlocale: ru-ru
+ms.lasthandoff: 09/26/2017
 
-Возвращает имя пользователя от поставщика порта.  
+---
+# <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
+Возвращает имя пользователя из поставщика порта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT GetUserName(  
-    BSTR *pbstrUserName  
+    BSTR *pbstrUserName  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetUserName (  
-    string pbstrUserName  
+    string pbstrUserName  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pbstrUserName`  
- \[out\] строка, содержащая a имя пользователя.  
+ [out] Строка, содержащая имя пользователя.  
   
-## Возвращаемое значение  
- Если метод завершается успешно, возвращается `S_OK`.  В противном случае функция возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Если метод выполнен успешно, возвращается значение `S_OK`. В противном случае возвращается код ошибки.  
   
-## Заметки  
- `GetUserName` возвращает имя пользователя, которое отображается в  **Имя пользователя** столбец   **Присоединение к процессу** диалоговое окно.  Просмотр **Присоединение к процессу** откроется диалоговое окно, нажмите кнопку  **Присоединение к процессу** на  **Сервис** в меню  [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] интегрированная среда разработки \(ide\).  
+## <a name="remarks"></a>Примечания  
+ `GetUserName`Возвращает имя пользователя, который отображается в **имя пользователя** столбец **присоединиться к процессу** диалоговое окно. Чтобы просмотреть **присоединиться к процессу** диалоговое окно, нажмите кнопку **присоединиться к процессу** на **средства** меню в [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

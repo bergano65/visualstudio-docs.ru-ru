@@ -1,74 +1,91 @@
 ---
-title: "DOCCONTEXT_COMPARE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DOCCONTEXT_COMPARE"
-helpviewer_keywords: 
-  - "Перечисление DOCCONTEXT_COMPARE"
+title: "DOCCONTEXT_COMPARE | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DOCCONTEXT_COMPARE
+helpviewer_keywords:
+- DOCCONTEXT_COMPARE enumeration
 ms.assetid: ed947c34-b07e-4b69-8381-b6e7cb842862
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# DOCCONTEXT_COMPARE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 77c810bb6e4791fbc0c3cf787f340a8d996ce037
+ms.contentlocale: ru-ru
+ms.lasthandoff: 09/26/2017
 
-Указывает условие для сравнения 2 контекста документа.  
+---
+# <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
+Указывает критерии для сравнения двух контекстов документа.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-enum enum_DOCCONTEXT_COMPARE {   
-   DOCCONTEXT_EQUAL         = 0x0001,  
-   DOCCONTEXT_LESS_THAN     = 0x0002,  
-   DOCCONTEXT_GREATER_THAN  = 0x0003,  
-   DOCCONTEXT_SAME_DOCUMENT = 0x0004  
+```cpp  
+enum enum_DOCCONTEXT_COMPARE {   
+   DOCCONTEXT_EQUAL         = 0x0001,  
+   DOCCONTEXT_LESS_THAN     = 0x0002,  
+   DOCCONTEXT_GREATER_THAN  = 0x0003,  
+   DOCCONTEXT_SAME_DOCUMENT = 0x0004  
 };  
 typedef DWORD DOCCONTEXT_COMPARE;  
 ```  
   
-```c#  
-enum enum_DOCCONTEXT_COMPARE {   
-   DOCCONTEXT_EQUAL         = 0x0001,  
-   DOCCONTEXT_LESS_THAN     = 0x0002,  
-   DOCCONTEXT_GREATER_THAN  = 0x0003,  
-   DOCCONTEXT_SAME_DOCUMENT = 0x0004  
+```csharp  
+enum enum_DOCCONTEXT_COMPARE {   
+   DOCCONTEXT_EQUAL         = 0x0001,  
+   DOCCONTEXT_LESS_THAN     = 0x0002,  
+   DOCCONTEXT_GREATER_THAN  = 0x0003,  
+   DOCCONTEXT_SAME_DOCUMENT = 0x0004  
 };  
 ```  
   
-## Члены  
- DOCCONTEXT\_EQUAL  
- Найдите первый контекст рисования в списке, равный контексту документа целевого объекта.  
+## <a name="members"></a>Члены  
+ DOCCONTEXT_EQUAL  
+ Найти первый контекст документа в списке, равное целевой контекст документа.  
   
- DOCCONTEXT\_LESS\_THAN  
- Найдите первый контекст рисования в списке, чем контекст рисования целевого объекта.  
+ DOCCONTEXT_LESS_THAN  
+ Найти первый контекст документа из списка, меньше, чем целевой контекст документа.  
   
- DOCCONTEXT\_GREATER\_THAN  
- Найдите первый контекст рисования в списке, больше контекст рисования целевого объекта.  
+ DOCCONTEXT_GREATER_THAN  
+ Найти первый контекст документа в списке, который больше, чем целевой контекст документа.  
   
- DOCCONTEXT\_SAME\_DOCUMENT  
- Найдите первый контекст рисования в списке, в том же документе, что контекст рисования целевого объекта.  
+ DOCCONTEXT_SAME_DOCUMENT  
+ Найти первый контекст документа в списке, который находится в том же документе целевой контекст документа.  
   
-## Заметки  
- Передается в качестве аргумента [Сравнение](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) метод.  
+## <a name="remarks"></a>Примечания  
+ Передается в качестве аргумента для [сравнения](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) метод.  
   
- Эти значения используются для указания условия сравнения для поиска первый контекст рисования в списке.  Получает контекст рисования список контекстов документа для сравнения с посредством `IDebugDocumentContext2::Compare` метод.  Первый контекст рисования в списке, для которого оператор сравнения `true` затем возвращается.  
+ Эти значения используются для указания условия сравнения для поиска первого контексту документа в список. К контексту документа предоставляется список контекстов документа сравнивать себя с помощью `IDebugDocumentContext2::Compare` метод. Первый контекст документа в списке, для которого является оператором сравнения `true` затем возвращается.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Сравнение](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)
+ [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)

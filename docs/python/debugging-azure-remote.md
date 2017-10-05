@@ -2,7 +2,6 @@
 title: "Удаленная отладка Azure для Python в Visual Studio | Документация Майкрософт"
 ms.custom: 
 ms.date: 7/12/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:

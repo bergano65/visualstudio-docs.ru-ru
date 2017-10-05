@@ -1,58 +1,75 @@
 ---
-title: "IDebugPortSupplier2::AddPort | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPortSupplier2::AddPort"
-helpviewer_keywords: 
-  - "IDebugPortSupplier2::AddPort"
+title: "IDebugPortSupplier2::AddPort | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugPortSupplier2::AddPort
+helpviewer_keywords:
+- IDebugPortSupplier2::AddPort
 ms.assetid: df491161-6bf3-4fcc-b478-b9ec88ec995f
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugPortSupplier2::AddPort
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2845b7c3d10b62c268843f934cf3730019afd657
+ms.contentlocale: ru-ru
+ms.lasthandoff: 09/26/2017
 
-Добавить порт.  
+---
+# <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
+Добавление порта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT AddPort(   
-   IDebugPortRequest2* pRequest,  
-   IDebugPort2**       ppPort  
+```cpp  
+HRESULT AddPort(   
+   IDebugPortRequest2* pRequest,  
+   IDebugPort2**       ppPort  
 );  
 ```  
   
-```c#  
-int AddPort(   
-   IDebugPortRequest2 pRequest,  
-   out IDebugPort2    ppPort  
+```csharp  
+int AddPort(   
+   IDebugPortRequest2 pRequest,  
+   out IDebugPort2    ppPort  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pRequest`  
- \[in\] [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) объект, описывающий службу, которую нужно добавить.  
+ [in] [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) , описывающий порт для добавления.  
   
  `ppPort`  
- \[out\] возвращает IDebugPort2 объект, представляющий службу.  
+ [out] Возвращает [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) объект, который представляет порт.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Этот метод является виртуальным создает запрашиваемый порт, так же как и добавление его в список поставщиков портов внутреннему активных портов.  [CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) метод может быть вызван раньше, чтобы избежать возможных длительной задержки.  
+## <a name="remarks"></a>Примечания  
+ Этот метод фактически создает запрошенный порт, а также добавление поставщика порта внутренний список активных портов. [CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) метод может вызываться сначала Чтобы избежать возможных длительных задержек.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
  [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)   
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   
