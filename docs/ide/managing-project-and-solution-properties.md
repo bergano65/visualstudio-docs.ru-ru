@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d727efc0-1096-4ede-84b6-31a65da22ac0
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: d1f725429e1b63be097a4563ab9e26d1f374cc61
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 359e1eb5df8f19774d352ace631802367b6dd8c9
-ms.openlocfilehash: 481153e7f3d609c56f313ff5ee9f3f1b511dc5ef
-ms.contentlocale: ru-ru
-ms.lasthandoff: 07/11/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="managing-project-and-solution-properties"></a>Управление свойствами проекта и решения
 У проектов есть свойства, которые определяют различные аспекты компиляции, отладки, тестирования и развертывания. Некоторые свойства являются общими для всех типов проектов, а некоторые — уникальными для конкретных языков или платформ. Чтобы получить доступ к свойствам проекта, щелкните правой кнопкой мыши узел проекта в обозревателе решений и выберите пункт "Свойства". Либо введите свойства в поле **быстрого запуска** в строке меню.  
@@ -68,4 +52,3 @@ ms.lasthandoff: 07/11/2017
   
 ## <a name="see-also"></a>См. также  
  [Решения и проекты в Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
-

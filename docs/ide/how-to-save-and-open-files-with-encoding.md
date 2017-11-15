@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,37 +13,20 @@ helpviewer_keywords:
 - bi-directional language support, encoded files
 - file encoding, bi-directional languages
 ms.assetid: cb52b732-b395-4ba1-a3ef-104b3942a12a
-caps.latest.revision: 8
-author: kempb
-ms.author: kempb
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: 83faa2ad32073c4133295953afa6259e88eee2d5
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: c9dca526f53c59b8db35b50378e4bf280d5e0a1e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Сохранение и открытие файлов с использованием определенной кодировки
-<a id="how-to-save-and-open-files-with-encoding" class="xliff"></a>
+# <a name="how-to-save-and-open-files-with-encoding"></a>Практическое руководство. Сохранение и открытие файлов с использованием определенной кодировки
 Вы можете сохранять файлы с определенной кодировкой для поддержки языков с двунаправленным письмом. Можно также указать кодировку при открытии файла, чтобы система Visual Studio отобразила его правильно.  
   
-### Сохранение файла с кодировкой
-<a id="to-save-a-file-with-encoding" class="xliff"></a>  
+### <a name="to-save-a-file-with-encoding"></a>Сохранение файла с кодировкой  
   
 1.  В меню **Файл** выберите **Сохранить файл как** и затем нажмите кнопку раскрывающегося списка рядом с кнопкой **Сохранить**.  
   
@@ -58,8 +40,7 @@ ms.lasthandoff: 05/30/2017
   
      Если вы хотите работать с файлом, имеющим определенную кодировку, можно сообщить Visual Studio использовать эту кодировку при открытии файла. Конкретный метод зависит от того, является ли файл частью проекта.  
   
-### Открытие файла с кодировкой, являющегося частью проекта
-<a id="to-open-an-encoded-file-that-is-part-of-a-project" class="xliff"></a>  
+### <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>Открытие файла с кодировкой, являющегося частью проекта  
   
 1.  В **обозревателе решений** щелкните файл правой кнопкой мыши и выберите команду **Открыть с помощью**.  
   
@@ -69,8 +50,7 @@ ms.lasthandoff: 05/30/2017
   
 3.  В диалоговом окне **Кодировка** выберите кодировку, которую должен использовать редактор.  
   
-### Открытие файла с кодировкой, не являющегося частью проекта
-<a id="to-open-an-encoded-file-that-is-not-part-of-a-project" class="xliff"></a>  
+### <a name="to-open-an-encoded-file-that-is-not-part-of-a-project"></a>Открытие файла с кодировкой, не являющегося частью проекта  
   
 1.  В меню **Файл** наведите указатель мыши на пункт **Открыть**, выберите элемент **Файл** или **Файл из Интернета**, а затем выберите нужный файл.  
   
@@ -78,7 +58,6 @@ ms.lasthandoff: 05/30/2017
   
 3.  Выполните шаги 2 и 3 из предыдущей процедуры.  
   
-## См. также
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>См. также  
  [Кодировка и глобализация Windows Forms](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)   
  [Глобализация и локализация приложений](../ide/globalizing-and-localizing-applications.md)

@@ -7,20 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c71a4d7c-120e-4559-a114-3a99c4b860a9
-caps.latest.revision: 7
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "7"
+author: corob-msft
+ms.author: corob
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 0bb84ea6c47764aa0429fdebf160dae0fd47e570
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: c2a665a397e89edf80f62d0150a98c1941afcd1d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>Изменения в синхронизации между XCode и Visual Studio
 Компонент Microsoft Visual C++ для разработки мобильных приложений включает в себя функции удаленного взаимодействия для синхронизации работы между ПК и Mac. Когда компьютеры с Visual Studio и Mac связаны, для проектов приложений iOS в Visual Studio доступны новые возможности, позволяющие открыть проект в XCode, перемещать код между XCode и Visual Studio и очистить временный каталог проекта XCode.  
@@ -37,7 +32,7 @@ ms.lasthandoff: 02/22/2017
 ### <a name="open-in-xcode"></a>Открыть в XCode  
  Чтобы открыть проект из Visual Studio в XCode, в подменю **Удаленный компьютер** выберите **Открыть в XCode** для открытия выбранного проекта на связанном удаленном компьютере. Сервер vcremote используется для открытия XCode на компьютере Mac и перехода во временную папку с копией проекта. Visual Studio выводит диалоговое окно с временным каталогом для проекта. Действия, выполняемые на удаленном компьютере, также отображаются в окне **Вывод** Visual Studio. Чтобы увидеть их, может потребоваться выбрать элемент **Удаленный компьютер Visual C++** в раскрывающемся списке **Показать выходные данные из** в верхней части окна **Вывод**.  
   
- ![В окне вывода отображаются действия на удаленном компьютере.](~/cross-platform/media/cppmdd_u2_remotemachine_output.png "CPPMDD_U2_RemoteMachine_Output")  
+ ![В окне вывода отображаются действия на удаленном компьютере.](../cross-platform/media/cppmdd_u2_remotemachine_output.png "CPPMDD_U2_RemoteMachine_Output")  
   
  На Mac можно использовать любые средства XCode для изменения кода, а также ресурсов, раскадровки и действий. В Visual Studio проект приложения iOS помечается как "Открыто в XCode", чтобы указать, что на удаленном компьютере могут вноситься изменения. После внесения изменений вы можете воспользоваться командой "Принудительное извлечение с удаленного компьютера" или "Инкрементное принудительное извлечение с удаленного компьютера", чтобы скопировать их обратно в проект Visual Studio.  
   

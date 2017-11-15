@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -33,30 +32,15 @@ helpviewer_keywords:
 - warnings, files changed
 - Solution Explorer, displaying files in
 ms.assetid: 4e3ccf1b-cd68-4db6-9470-710c911b47fc
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: c7d9f7cef6c0dfa35a4a718c0918fbc55409af04
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: e98661157ec1168c2aa19717c626a82f5e0a1975
-ms.contentlocale: ru-ru
-ms.lasthandoff: 07/14/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="documents-environment-options-dialog-box"></a>Страница "Документы", папка "Среда", диалоговое окно "Параметры"
 Используйте эту страницу диалогового окна **Параметры** для управления отображением документов в интегрированной среде разработки (IDE), а также внешними изменениями, вносимыми в документы и файлы. Чтобы перейти к этому диалоговому окну, щелкните пункт **Параметры** в меню **Сервис**, а затем разверните узел **Среда** и выберите пункт **Документы**. Если страница **Документы** отсутствует в списке, выберите **Показать все параметры** в диалоговом окне **Параметры**.  
