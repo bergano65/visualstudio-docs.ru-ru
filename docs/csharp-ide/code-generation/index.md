@@ -1,8 +1,8 @@
 ---
 redirect_url: /visualstudio/csharp-ide/code-generation-csharp
-translationtype: Human Translation
-ms.sourcegitcommit: 708ace5a567a4bbe85843e2df6342dcb61ff5195
 ms.openlocfilehash: 49f82d390abd76e85f284a7deecadf2a8c884190
-ms.lasthandoff: 05/02/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---

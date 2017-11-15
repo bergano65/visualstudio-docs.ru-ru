@@ -1,9 +1,8 @@
 ---
 redirect_url: /visualstudio/code-quality/analyzing-application-quality-by-using-code-analysis-tools
-translationtype: Human Translation
-ms.sourcegitcommit: d23a994db632ae2c0f79de862298cb479e35d36d
 ms.openlocfilehash: 3587e2a6bfdbc93ffe244a0adf5fd59d5038fc7f
-ms.lasthandoff: 05/02/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-

@@ -1,9 +1,8 @@
 ---
 redirect_url: /visualstudio/xml-tools/xml-tools-in-visual-studio
-translationtype: Human Translation
-ms.sourcegitcommit: ecde7a4a12265f3cc656cb56259848e7246df2fd
 ms.openlocfilehash: dde1285f4aa884b6226088b1bb5f5b4a9fa72020
-ms.lasthandoff: 05/02/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-

@@ -1,9 +1,8 @@
 ---
 redirect_url: /script/javascript/advanced/advanced-javascript
-ms.translationtype: Human Translation
-ms.sourcegitcommit: af92b825b9a2b342571e8aa84c36a17bfe4aa464
 ms.openlocfilehash: a673b42c52e3038d0bb34ffed0f0ad08fe797e4c
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
