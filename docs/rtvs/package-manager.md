@@ -1,27 +1,24 @@
 ---
 title: "Диспетчер пакетов в инструментах R для Visual Studio | Документация Майкрософт"
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 93accb9a-1ef8-4806-baa4-02477c2d7ef0
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 87f4c97941a55bd378a72681200748f28e8dd236
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 5170c170f8d087319a8240831237965ca4d252db
-ms.contentlocale: ru-ru
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="package-manager"></a>Диспетчер пакетов
 
 Диспетчер пакетов в инструментах R для Visual Studio (RTVS) — это пользовательский интерфейс для управления пакетами R. Чтобы открыть его, выберите **Инструменты R > Окна > Пакеты** или нажмите клавиши CTRL + 7.
@@ -49,4 +46,3 @@ ms.lasthandoff: 07/12/2017
 
 - Основные пакеты, которые входят в состав RTVS, устанавливаются в каталог `C:\Program Files\Microsoft\R Client\R_SERVER\library`
 - Дополнительные пакеты устанавливаются в каталог `%userprofile%\Documents\R\win-library\3.3`
-

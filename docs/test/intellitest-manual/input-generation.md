@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 05/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IntelliTest, Dynamic symbolic execution
+helpviewer_keywords: IntelliTest, Dynamic symbolic execution
 ms.assetid: B938E2D2-7B7C-4D76-B26C-2616F5B4A9F5
-caps.latest.revision: 56
+caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 45d36934cf1c46902cac566203cddf4a118b7fe4
-ms.openlocfilehash: f5b061b77d5abe977d12d400534c6ac80842aded
-ms.contentlocale: ru-ru
-ms.lasthandoff: 06/02/2017
-
+ms.openlocfilehash: 7739a7fd1d802150ecf6cdc3e364423598ff090c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="input-generatation-using-dynamic-symbolic-execution"></a>Создание входных данных с помощью динамического символического выполнения
 
@@ -164,4 +147,3 @@ IntelliTest пытается минимизировать размер масс�
 ## <a name="got-feedback"></a>Хотите оставить отзыв?
 
 Публикуйте свои идеи и запросы функций на сайте **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
-

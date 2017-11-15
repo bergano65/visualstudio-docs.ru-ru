@@ -4,42 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 2cb4836ae868d56147a82fcefa0c5546bfcf8cad
-ms.contentlocale: ru-ru
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 92d133d688ad009dae1b4e518bdd8c749ebc329f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="working-with-textures-and-images"></a>Работа с текстурами и изображениями
 Редактор изображений в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] можно использовать для создания и редактирования текстур и изображений. Редактор изображений поддерживает широкий диапазон форматов изображений и текстур, аналогичных тем, которые используются при разработке приложений DirectX.  
   
 > [!NOTE]
->  Редактор изображений не поддерживает изображения с малым количеством цветов, такие как значки и курсоры. Для создания или редактирования таких изображений используйте [редактор изображений для значков](/cpp/windows/image-editor-for-icons).  
+>  Редактор изображений не поддерживает изображения с малым количеством цветов, такие как значки и курсоры. Для создания или редактирования таких изображений используйте [Image Editor for Icons](/cpp/windows/image-editor-for-icons).  
   
 ## <a name="textures-and-images"></a>Текстуры и изображения  
  Текстуры и изображения по сути являются просто таблицами данных, которые используются для представления визуальной информации в графических приложениях. Данные, представляемые текстурой или изображением, зависят от способа использования, однако к типичным примерам можно отнести образцы цветов, значения альфа-канала (прозрачности), нормали к поверхности и значения высоты. Основное различие между текстурой и изображением заключается в том, что текстура должна использоваться вместе с представлением фигуры (как правило, трехмерной модели) для выражения полного объекта или сцены, тогда как изображение обычно является автономным представлением объекта или сцены.  

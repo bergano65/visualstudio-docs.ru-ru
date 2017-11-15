@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,31 +12,17 @@ helpviewer_keywords:
 - unit tests, walkthrough
 - data sources, defining with configuration files
 ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
-caps.latest.revision: 32
+caps.latest.revision: "32"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 212b8bd6e6c6e695bcc7a4486cbcde59e7309446
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: 3f7ea8032efa4b35603568afd8b17107c293f2e6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Пошаговое руководство. Использование файла конфигурации для определения источника данных
-В данном пошаговом руководстве демонстрируется использование источника данных, определенного в файле app.config, для модульного тестирования. Из этой статьи вы узнаете, как создать файл app.config, где определяется источник данных, который может использоваться в классе <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. В данном пошаговом руководстве представлены следующие задачи:  
+В данном пошаговом руководстве демонстрируется использование источника данных, определенного в файле app.config, для модульного тестирования. Вы узнаете, как создать файл app.config, определяющий источник данных, который может использоваться классом <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. В данном пошаговом руководстве представлены следующие задачи:  
   
 -   создание файла app.config;  
   
@@ -127,7 +112,7 @@ ms.lasthandoff: 04/04/2017
 ## <a name="define-data-sources"></a>Определение источников данных  
  Раздел источников данных содержит четыре атрибута, которые используются тестовой подсистемой для получения данных из источника данных.  
   
--   `name` задает идентификатор, используемый в <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> для определения используемого источника данных.  
+-   `name` определяет удостоверение, используемое <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> для указания источника данных для использования.  
   
 -   `connectionString` определяет строку подключения, созданную в предыдущем разделе "Определение строк подключения".  
   
@@ -288,4 +273,3 @@ ms.lasthandoff: 04/04/2017
  [Создание и запуск модульных тестов для существующего кода](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
  [Тестирование приложения](/devops-test-docs/test/test-apps-early-and-often)   
  [Практическое руководство. Создание модульного теста, управляемого данными](../test/how-to-create-a-data-driven-unit-test.md)
-

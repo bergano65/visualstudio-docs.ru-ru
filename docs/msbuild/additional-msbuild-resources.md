@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 06/06/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -599,31 +598,16 @@ helpviewer_keywords:
 - MSB3102
 - MSB3284
 ms.assetid: 29dd85ee-1530-43c1-b085-bb2330ac5a48
-caps.latest.revision: 17
+caps.latest.revision: "17"
 author: kempb
 ms.author: kempb
 manager: ghogen
 redirect_url: https://social.msdn.microsoft.com/Forums/vstudio/home?forum=msbuild
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c559290c8e88c8b4e37feabc7014188fad15434d
-ms.openlocfilehash: b4d933c8c0f84ca72913b507dea9c1d11f34e6ee
-ms.contentlocale: ru-ru
-ms.lasthandoff: 06/08/2017
-
+ms.openlocfilehash: bf172e3a2f2098d72db5e56d54c598d656650c88
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="additional-msbuild-resources"></a>Дополнительные ресурсы MSBuild
 Если вы пытаетесь решить проблему, и вам не удалось найти нужные сведения в документации, можете обратиться к другим ресурсам, таким как статьи базы знаний, сообщество разработчиков или служба технической поддержки.  
@@ -641,4 +625,3 @@ ms.lasthandoff: 06/08/2017
 
 ## <a name="see-also"></a>См. также  
  [Устранение неполадок, связанных с настройкой для определенных версий платформы .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)
-

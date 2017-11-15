@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
-caps.latest.revision: 14
+caps.latest.revision: "14"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
-ms.openlocfilehash: e5ed1f9b6771b489218d2c6118454f1070535b6d
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/26/2017
-
+ms.openlocfilehash: 41fe8afba19939dfbbbd5c055f5ebd53e9fc2e04
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Управление жизненным циклом приложений (ALM) для приложений Xamarin
 Платформа Xamarin позволяет создавать кроссплатформенные мобильные приложения, предназначенные для Android, iOS и Windows, с помощью C#, .NET и Visual Studio. Платформа Xamarin дает возможность совместного использования большей части кода разными платформами, при этом лишь небольшая его часть должна соответствовать конкретной платформе. Дополнительные сведения о самой платформе Xamarin см. в разделе [Visual Studio и Xamarin](../cross-platform/visual-studio-and-xamarin.md).  

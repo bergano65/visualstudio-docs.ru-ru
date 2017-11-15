@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 03/10/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.devlang: csharp
@@ -16,28 +15,12 @@ manager: ghogen
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 46846db26bee30841e6cb35913d533b512d01ba0
-ms.openlocfilehash: acc01617fffd7465cee01267482112aac5e352fc
-ms.contentlocale: ru-ru
-ms.lasthandoff: 03/27/2017
-
+ms.openlocfilehash: d42bb9165748b7282aa42f062b545add62ad1c93
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="code-styles-and-quick-actions"></a>Стили кода и быстрые действия
 Параметры стиля кода можно задать для проектов C# и Visual Basic, открыв окно **Сервис > Параметры**, а затем выбрав **Текстовый редактор > C# / Basic > Стиль кода > Общие**.  Параметры, заданные в этом окне, применяются к локальному компьютеру.  При выборе для каждого из элементов в списке выводится окно предварительного просмотра, как показано ниже.
 
@@ -47,5 +30,5 @@ ms.lasthandoff: 03/27/2017
 
 Параметрами стиля кода для .NET также можно управлять с помощью файла [EditorConfig](editorconfig-code-style-settings-reference.md).  В этом случае параметры, выбранные в окне параметров, будут резервными, а приоритет будет иметь файл EditorConfig.  Этот файл можно использовать для применения и настройки стиля кода для всего репозитория или команды.
 
-# <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также
 * [Быстрые действия](quick-actions.md)

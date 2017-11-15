@@ -5,14 +5,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: a00b4a38c0e1aeaf520ba84278109feb1758f2f0
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="editor-themes"></a>Темы редактора
 Вы можете задать любую из десяти цветовых схем, предоставляемых по умолчанию в Visual Studio для Mac, с помощью параметров меню **Visual Studio > Параметры... > Текстовый редактор > Цветовые темы**:
 
@@ -35,4 +33,3 @@ ms.lasthandoff: 08/11/2017
 2. Перейдите к теме на локальном компьютере и нажмите кнопку **Открыть**.
 3. Тема добавляется в конец списка предустановленных тем. Для просмотра темы выберите ее. Это приведет к обновлению редактора в фоновом режиме: ![предварительный просмотр цветовой темы](media/source-editor-image21.png)
 4. Чтобы применить ее, нажмите кнопку **ОК**. 
-

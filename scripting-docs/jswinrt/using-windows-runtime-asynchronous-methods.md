@@ -5,23 +5,20 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- javascript
+ms.technology: javascript
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- JavaScript, Windows Runtime asynchronous methods
+helpviewer_keywords: JavaScript, Windows Runtime asynchronous methods
 ms.assetid: 70756833-44f7-4383-827f-2ac781558082
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 215a04a2f3f875743a7fbf910a3a565cf34fb558
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="using-windows-runtime-asynchronous-methods"></a>Использование асинхронных методов среды выполнения Windows
 Многие методы среды выполнения Windows, особенно те методы, выполнение которых может занимать много времени, являются асинхронными. Обычно эти методы возвращают асинхронное действие или асинхронную операцию (например, `Windows.Foundation.IAsyncAction`, `Windows.Foundation.IAsyncOperation`, `Windows.Foundation.IAsyncActionWithProgress` или `Windows.Foundation.IAsyncOperationWithProgress`). Эти методы представлены в JavaScript шаблоном [CommonJS/Promises/A](http://go.microsoft.com/fwlink/p/?LinkId=244434). Они возвращают объект Promise с функцией [then](https://msdn.microsoft.com/en-us/library/windows/apps/br229728.aspx), для которой требуется указать функцию `completed`, обрабатывающую результат в случае успешного выполнения операции. Если вы не хотите задавать обработчик ошибок, используйте функцию [done](https://msdn.microsoft.com/en-us/library/windows/apps/hh701079.aspx) вместо функции `then`.  

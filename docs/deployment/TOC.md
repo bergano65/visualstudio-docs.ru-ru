@@ -103,4 +103,3 @@
 #### [Элемент <PackageFiles> (загрузчик)](packagefiles-element-bootstrapper.md)
 #### [Элемент <Strings> (загрузчик)](strings-element-bootstrapper.md)
 #### [Элемент <Schedules> (загрузчик)](schedules-element-bootstrapper.md)
-## [InstallShield Limited Edition](installshield-limited-edition.md)

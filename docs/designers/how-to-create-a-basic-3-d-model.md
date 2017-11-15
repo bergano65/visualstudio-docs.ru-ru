@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
-caps.latest.revision: 18
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e060cc2d6d66d63dceeb2480b43dd9421106ce88
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 4bba90206a428ae9bb782e7eac408b872721351f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-create-a-basic-3-d-model"></a>Практическое руководство. Создание простейшей трехмерной модели
 В этом документе рассматривается, как с помощью редактора моделей создать простую трехмерную модель.  
@@ -54,7 +38,7 @@ ms.lasthandoff: 02/22/2017
   
  В итоге модель должна выглядеть так:  
   
- ![Полная модель упрощенного дома](~/designers/media/gfx_model_demo_house_final.png "gfx_model_demo_house_final")  
+ ![Полная модель упрощенного дома](../designers/media/gfx_model_demo_house_final.png "gfx_model_demo_house_final")  
   
  Перед началом убедитесь, что отображаются окно **Свойства** и **Панель элементов**.  
   
@@ -68,27 +52,27 @@ ms.lasthandoff: 02/22/2017
   
 4.  Разделите верхнюю часть куба. В режиме выбора граней выберите куб один раз, чтобы активировать его для выделения, после чего выберите верхнюю часть куба, чтобы выделить верхнюю грань. На панели инструментов редактора моделей выберите **Разделить поверхность**. В верхней части куба будут добавлены четыре новые вершины, разбивающие грань на четыре одинаковые по размеру части.  
   
-     ![Верхняя грань куба разделена](~/designers/media/gfx_model_demo_house_subdiv.png "gfx_model_demo_house_subdiv")  
+     ![Верхняя грань куба разделена](../designers/media/gfx_model_demo_house_subdiv.png "gfx_model_demo_house_subdiv")  
   
 5.  Выдавите две смежные стороны куба — например, переднюю и правую стороны куба. В режиме выбора граней выберите куб один раз, чтобы активировать его для выделения, затем выберите одну сторону куба. Нажав и удерживая клавишу CTRL, выберите другую сторону куба, смежную с уже выбранной, а затем на панели инструментов редактора моделей выберите **Выдавливание грани**.  
   
-     ![Стороны куба выдавлены](~/designers/media/gfx_model_demo_house_extrude.png "gfx_model_demo_house_extrude")  
+     ![Стороны куба выдавлены](../designers/media/gfx_model_demo_house_extrude.png "gfx_model_demo_house_extrude")  
   
 6.  Удлините одну из выдавленных граней. Выберите одну из только что выдавленных граней, затем на панели инструментов редактора моделей выберите инструмент **Перенести** и переместите манипулятор переноса в направлении выдавливания.  
   
-     ![Дополнительное выдавливание одной стороны куба.](~/designers/media/gfx_model_demo_house_extend.png "gfx_model_demo_house_extend")  
+     ![Дополнительное выдавливание одной стороны куба.](../designers/media/gfx_model_demo_house_extend.png "gfx_model_demo_house_extend")  
   
 7.  Выполните триангуляцию модели. На панели инструментов редактора моделей выберите **Дополнительно**, **Инструменты**, **Выполнить триангуляцию**.  
   
 8.  Создайте крышу дома. Перейдите в режим выбора ребер, выбрав **Выбор границы** на панели инструментов редактора моделей, а затем выберите куб, чтобы активировать его. Нажмите и удерживайте клавишу CTRL во время выбора ребер, как показано ниже:  
   
-     ![Края, образующие конек крыши](~/designers/media/gfx_model_demo_house_edges.png "gfx_model_demo_house_edges")  
+     ![Края, образующие конек крыши](../designers/media/gfx_model_demo_house_edges.png "gfx_model_demo_house_edges")  
   
      Выбрав ребра, на панели инструментов редактора моделей выберите инструмент **Перенести** и переместите манипулятор переноса вверх, чтобы создать крышу дома.  
   
  Упрощенная модель дома готова. Ниже показана окончательная версия модели с примененной к ней плоской тенью:  
   
- ![Полная модель упрощенного дома](~/designers/media/gfx_model_demo_house_final.png "gfx_model_demo_house_final")  
+ ![Полная модель упрощенного дома](../designers/media/gfx_model_demo_house_final.png "gfx_model_demo_house_final")  
   
  Следующим шагом может быть применение к этой трехмерной модели шейдера. Дополнительные сведения см. в разделе [Практическое руководство. Применение шейдера к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   

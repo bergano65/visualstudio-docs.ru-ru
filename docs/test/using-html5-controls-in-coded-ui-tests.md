@@ -4,33 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
-caps.latest.revision: 17
+caps.latest.revision: "17"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 834f53c8d75a06de69f1afe682a0a0b1863dfde0
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: 3e2e14748e27d965762b3245908382b278e6e132
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Использование элементов управления HTML5 в закодированных тестах пользовательского интерфейса
 Закодированные тесты ИП поддерживают некоторые элементы управления HTML5 в Internet Explorer 9 и Internet Explorer 10.  
@@ -59,7 +44,7 @@ ms.lasthandoff: 04/04/2017
 ###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> Элемент управления звуком  
  Действия **элемента управления звуком** на элементе управления звуком HTML5 правильно записываются и воспроизводятся.  
   
- ![Элемент управления звуком HTML5](~/test/media/codedui_html5_audio.png "CodedUI_HTML5_Audio")  
+ ![Элемент управления звуком HTML5](../test/media/codedui_html5_audio.png "CodedUI_HTML5_Audio")  
   
 |Действие|Запись|Созданный код|  
 |------------|---------------|--------------------|  
@@ -102,7 +87,7 @@ string Volume
 ###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Элемент управления видео  
  Действия **элемента управления видео** на элементе управления видео HTML5 правильно записываются и воспроизводятся.  
   
- ![Элемент управления видео HTML5](~/test/media/codedui_html5_video.png "CodedUI_HTML5_Video")  
+ ![Элемент управления видео HTML5](../test/media/codedui_html5_video.png "CodedUI_HTML5_Video")  
   
 |Действие|Запись|Созданный код|  
 |------------|---------------|--------------------|  
@@ -132,7 +117,7 @@ string VideoWidth
 ###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Slider  
  Действия **элемента управления Slider** на элементе управления Slider HTML5 правильно записываются и воспроизводятся.  
   
- ![Элемент управления Slider HTML5](~/test/media/codedui_html5_slider.png "CodedUI_HTML5_Slider")  
+ ![Элемент управления Slider HTML5](../test/media/codedui_html5_slider.png "CodedUI_HTML5_Slider")  
   
 |Действие|Запись|Созданный код|  
 |------------|---------------|--------------------|  
@@ -152,7 +137,7 @@ string ValueAsNumber
 ###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> ProgressBar  
  **Элемент управления ProgreesBar:** с элементом управления ProgressBar нельзя взаимодействовать. Вы можете добавить утверждения о свойствах `Value` и `Max` этого элемента управления.  
   
- ![Элемент управления HTML5 ProgressBar](~/test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")  
+ ![Элемент управления HTML5 ProgressBar](../test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")  
   
 ## <a name="see-also"></a>См. также  
  [Элементы HTML](http://go.microsoft.com/fwlink/?LinkID=232441)   
@@ -160,4 +145,3 @@ string ValueAsNumber
  [Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Настройка закодированного теста пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
  [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-

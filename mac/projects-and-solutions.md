@@ -6,12 +6,11 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 366e2c0df83a3e04f5f226a2a24ddced8c85dd2b
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="projects-and-solutions"></a>Проекты и решения
 
@@ -24,7 +23,6 @@ Visual Studio для Mac предоставляет _Панель решения
 ## <a name="project-and-solution-options"></a>Параметры проектов и решений
 
 Вы можете управлять свойствами проектов и решений, дважды щелкнув имя проекта или решения или щелкнув правой кнопкой мыши и выбрав пункт **Параметры**. Дополнительные сведения об этих параметрах см. в разделе [Управление свойствами решений и проектов](~/managing-solutions-and-project-properties.md).
-
 
 
 

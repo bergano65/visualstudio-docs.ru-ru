@@ -4,38 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- C++
+dev_langs: C++
 ms.assetid: 76a67886-df57-4a81-accb-2e3c2eaf607b
-caps.latest.revision: 5
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "5"
+author: corob-msft
+ms.author: corob
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 148a64927d78db8ccf473fc0cc74c5a8df953c03
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 80463925da89165a569b1e6317ef8b1b22c77514
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Build an OpenGL ES Application on Android and iOS
 Установив компонент Visual C++ для разработки кроссплатформенных мобильных приложений, вы можете создавать решения и проекты Visual Studio для приложений iOS и Android с общим кодом. В этом пошаговом руководстве показано, как разработать шаблон приложения, который служит для создания как простейшего приложения iOS, так и приложения Android Native Activity. Приложения имеют общий код C++, который использует технологию OpenGL ES для отображения одинакового анимированного вращающегося куба на обеих платформах. OpenGL ES (GLES) — это интерфейс API двухмерной и трехмерной графики, который поддерживается многими мобильными устройствами.  
@@ -109,7 +91,7 @@ ms.lasthandoff: 05/13/2017
   
      Visual Studio запускает эмулятор, который за несколько секунд загружает и развертывает код. Ниже показано, как приложение выглядит в эмуляторе Visual Studio для Android.  
   
-     ![Приложение, работающее в эмуляторе Android](~/cross-platform/media/cppmdd_opengles_andemulator.png "CPPMDD_OpenGLES_AndEmulator")  
+     ![Приложение, работающее в эмуляторе Android](../cross-platform/media/cppmdd_opengles_andemulator.png "CPPMDD_OpenGLES_AndEmulator")  
   
      После запуска приложения можно задать точки останова и использовать отладчик для проверки кода, языковых стандартов и контрольных значений.  
   
@@ -150,7 +132,7 @@ ms.lasthandoff: 05/13/2017
   
      После запуска приложения можно задать точки останова и использовать отладчик Visual Studio для проверки локальных значений, стека вызовов и контрольных значений.  
   
-     ![Отладчик в точке останова в приложении iOS](~/cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")  
+     ![Отладчик в точке останова в приложении iOS](../cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")  
   
 5.  Для останова процесса отладки нажмите Shift + F5.  
   

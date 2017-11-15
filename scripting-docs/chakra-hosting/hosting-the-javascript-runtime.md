@@ -8,16 +8,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 30ec744e-57cc-4ef5-8fe1-d2c27b946548
-caps.latest.revision: 14
+caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
 ms.openlocfilehash: 2bf213bf262ede7642e05c66e424b860238dc57f
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="hosting-the-javascript-runtime"></a>Размещение среды выполнения JavaScript
 API среды выполнения JavaScript (JsRT) предоставляют настольным приложениям, приложениям Магазина Windows и серверным приложениям, выполняемым в ОС Windows, способ добавления возможностей создания сценариев в приложение с использованием стандартизированного ядра JavaScript Chakra, которое также используется Microsoft Edge и Internet Explorer. Эти API доступны в Windows 10 и любой версии ОС Windows, если на компьютере установлен Internet Explorer версии 11.0. Дополнительные сведения см. в разделе [Reference (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md). Сведения об использовании JsRT в приложениях для Магазина Windows см. в разделе [JsRT and the Universal Windows Platform](#Windows).  

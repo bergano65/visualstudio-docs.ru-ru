@@ -7,14 +7,12 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 5f1eda5ccf6f308c626d525bbe7069a84ce3154b
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="data-visualizations"></a>Визуализации данных
 
 Visual Studio для Mac имеет поддержку пользовательского интерфейса для отладчика, позволяя визуализировать значения переменных, полей или свойств во время отладки. Эти визуализаторы данных показывают расширенную версию данных и позволяют разработчикам проверять известные структуры, например отобразить цвет цветной структуры.
@@ -106,4 +104,3 @@ IEnumerable перечисляет все значения, каждое из к
     *   Отображает активную гиперссылку.
 *   **IntPtr**
     *   Отображает шестнадцатеричное представление IntPtr.
-

@@ -5,8 +5,7 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -26,16 +25,15 @@ helpviewer_keywords:
 - strict mode
 - use strict
 ms.assetid: 0f27022a-f41c-4504-965c-5a2701f342cd
-caps.latest.revision: 14
+caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 77ee7d54dd265026b2bf4c9af52a71cccf9a7675
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="strict-mode-javascript"></a>Строгий режим (JavaScript)
 Строгий режим — это способ обеспечения более тщательной проверки ошибок в коде. В строгом режиме нельзя, например, использовать неявно объявляемые переменные, присваивать значения свойствам, доступным только для чтения, и добавлять свойства в объекты, которые не являются расширяемыми. Ограничения перечислены ниже в подразделе [Ограничения, налагаемые на код в строгом режиме](../../javascript/advanced/strict-mode-javascript.md#rest). Дополнительные сведения о строгом режиме см. в документе [Спецификация языка ECMAScript, 5-й выпуск](http://www.ecma-international.org/publications/standards/Ecma-262.htm).  

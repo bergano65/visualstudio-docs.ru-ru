@@ -4,35 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 59c07d15-511e-4fd0-b398-bde9d5ed00d9
-caps.latest.revision: 8
+caps.latest.revision: "8"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 351ec5b60e84ed1633c26751173a4b7e4af663dd
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 3dab1fb335bf1fa7a51faf8f298208c18ec87dc5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="analyzing-code-coverage-in-build-verification-tests"></a>Анализ покрытия кода в тестах проверки построения
 Анализ объема протестированного кода в Microsoft Visual Studio показывает, какое количество кода работает с автоматическими тестами. Дополнительные сведения см. в разделе [Использование покрытия кода для определения объема протестированного кода](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
@@ -49,10 +32,9 @@ ms.lasthandoff: 05/13/2017
   
          В разделе **Автоматизированные тесты** щелкните **Тестовая сборка** и нажмите кнопку с многоточием **[...]** в конце строки. В диалоговом окне **Добавление/изменение тестового запуска** в разделе **Средство выполнения тестов** щелкните **Средство выполнения тестов Visual Studio**.  
   
- ![Задание определения сборки для объема протестированного кода](~/test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")  
+ ![Задание определения сборки для объема протестированного кода](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")  
   
  После выполнения сборки результаты анализа объема протестированного кода отображаются в сводке сборки.  
   
 ## <a name="see-also"></a>См. также  
  [Использование покрытия кода для определения объема протестированного кода](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-

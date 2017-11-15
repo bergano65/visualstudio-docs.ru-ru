@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: b4ed14f43316dc02ef8d039c590cd2f93b3060e5
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 469a8298122abdc96c69f13ed96a893b02575fc9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 Эмулятор Visual Studio для Android выполняется в виде виртуальной машины в Hyper-V, технологии виртуализации для Windows 8 и более поздних версий. Чтобы запустить эмулятор, компьютер должен удовлетворять требованиям для запуска Hyper-V, как описано в этом разделе.  
@@ -101,7 +84,7 @@ ms.lasthandoff: 05/13/2017
   
  Чтобы проверить требования к оперативной памяти и Windows, в панели управления выберите "Система и безопасность", а затем — "Система".  
   
- ![Проверьте требования к системе](~/cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")  
+ ![Проверьте требования к системе](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")  
   
 ##  <a name="Network"></a> Требования к сети  
  Сеть должна удовлетворять следующим требованиям.  
@@ -147,7 +130,7 @@ ms.lasthandoff: 05/13/2017
 > [!IMPORTANT]
 >  После входа в группу выйдите из системы или выполните перезагрузку, чтобы изменения вступили в силу.  
   
- ![Присоединение к группе безопасности администраторов Hyper&#45;V](~/cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")  
+ ![Присоединение к группе безопасности администраторов Hyper&#45;V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")  
   
  Чтобы добавить себя в группу вручную, откройте оснастку "Локальные пользователи и группы". Более подробную информацию см. в разделе [Добавление учетной записи пользователя в группу](http://windows.microsoft.com/en-us/windows/add-user-account-to-group#1TC=windows-7). (Сведения в этом разделе для Windows 7 также применимы к Windows 8.)  
   

@@ -6,14 +6,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 46338778813b73dbc87458f90cfe0548bd8ccb8a
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="managing-app-resources"></a>Управление ресурсами приложений
 
 Файлы ресурсов приложения, такие как изображения, звуковые и текстовые файлы. являются неотъемлемой частью приложения и не компилируются вместе с ним. Каждая платформа, поддерживаемая Visual Studio для Mac, обрабатывает эти типы файлов по-разному. Дополнительные сведения о работе с ресурсами приложения в Visual Studio для Mac см. в приведенных ниже руководствах.
@@ -40,6 +38,5 @@ ms.lasthandoff: 08/11/2017
 ## <a name="xamarinmac"></a>Xamarin.Mac
 
 * [Работа с образами](https://developer.xamarin.com/guides/mac/application_fundamentals/working-with-images/)
-
 
 

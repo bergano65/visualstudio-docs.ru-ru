@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
-caps.latest.revision: 23
+caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 2b73f62b59c2106cdda090133013603e3dc887c6
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 6794bf2bbf53df5648c595d7a4ec47b30a974359
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Troubleshooting the Visual Studio Emulator for Android
 В этом разделе содержатся сведения об устранении неполадок, которые могут возникать при использовании эмулятора Visual Studio для Android.  
@@ -227,11 +210,11 @@ ms.lasthandoff: 05/13/2017
   
     2.  Для адаптера vEthernet (Внутренний порт Ethernet —  эмулятор Windows Phone, внутренний коммутатор) выберите **Свойства** в контекстном меню.  
   
-         ![Виртуальный адаптер, используемый Hyper&#45;V](~/cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")  
+         ![Виртуальный адаптер, используемый Hyper&#45;V](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")  
   
          Здесь показаны свойства адаптера.  
   
-         ![Свойства виртуального адаптера](~/cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")  
+         ![Свойства виртуального адаптера](../cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")  
   
     3.  Для этого адаптера в списке **Это подключение использует следующие компоненты** необходимо выбрать только следующие элементы:  
   
@@ -259,7 +242,7 @@ ms.lasthandoff: 05/13/2017
   
     -   Откройте Hyper-V и перейдите в диспетчер виртуальных коммутаторов. Создайте виртуальный коммутатор с именем «Внутренний коммутатор эмулятора Windows Phone» и для типа соединения установите значение **Внутренняя сеть**.  
   
-         ![Диспетчер виртуальных коммутаторов](~/cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")  
+         ![Диспетчер виртуальных коммутаторов](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")  
   
      Теперь запустите эмулятор. Он должен работать.  
   

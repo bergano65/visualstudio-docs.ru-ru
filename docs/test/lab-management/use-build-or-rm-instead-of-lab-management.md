@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 05/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- automated testing, lab management, test lab
+helpviewer_keywords: automated testing, lab management, test lab
 ms.assetid: F34B0D19-B430-4C01-B402-62A861007E71
-caps.latest.revision: 56
+caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 45d36934cf1c46902cac566203cddf4a118b7fe4
-ms.openlocfilehash: 77a0339e1aae3036990f0d9d133a1fcb68844486
-ms.contentlocale: ru-ru
-ms.lasthandoff: 06/02/2017
-
+ms.openlocfilehash: 8d843800666ae53a686a18fcab28d02eb4c16743
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Использование управления сборками и выпусками вместо Lab Management для автоматического тестирования
 
@@ -102,4 +85,3 @@ MTM и Lab Management используют определение сборки X
 * Одним из преимуществ сетевой изоляции является простота настройки нескольких клонов. Так как каждый клон является точной репликой оригинала, имена компьютеров и параметры конфигурации сохраняются в исходном виде, что и упрощает настройку новых окружений. Однако то же самое преимущество становится источником проблем на более позднем этапе жизненного цикла (например, в рабочей среде), так как отличается способ окончательного развертывания приложений. **Вместо этого** рекомендуется настроить новые окружения аналогично рабочей среде, чтобы не использовать сетевую изоляцию.
 
 * Используйте общедоступную облачную инфраструктуру, например [Microsoft Azure](https://azure.microsoft.com/), для тестирования. Вы можете легко использовать [шаблоны Azure Resource Manager](https://azure.microsoft.com/documentation/templates/) из [Azure Marketplace](https://azure.microsoft.com/marketplace/) или из перечня [шаблонов быстрого запуска Azure](https://azure.microsoft.com/documentation/templates/), чтобы настраивать группы виртуальных машин, которые подключены через частную сеть и имеют доступ к общедоступной сети только через прокси-сервер или сервер переходов.
-

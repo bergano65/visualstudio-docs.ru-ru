@@ -4,38 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- C++
+dev_langs: C++
 ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
-caps.latest.revision: 11
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "11"
+author: corob-msft
+ms.author: corob
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 53224c67d6778ea51e1cf055a0c4c0db34940ada
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 368481d0a38b7b8f721aa18be0ecda7d35a42aba
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 Visual C++ для разработки кроссплатформенных мобильных приложений можно использовать для редактирования, отладки и развертывания кода iOS в симуляторе iOS или на устройстве iOS, но из-за ограничений, связанных с лицензированием, выполнять сборку и запуск кода необходимо удаленно на компьютере Mac. Для сборки и запуска приложений iOS с помощью Visual Studio необходимо установить и настроить удаленный агент [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)на компьютере Mac. Удаленный агент обрабатывает запросы на сборку, поступающие из Visual Studio, и запускает приложение на устройстве iOS, подключенном к компьютеру Mac, или в эмуляторе iOS на компьютере Mac.  
@@ -127,7 +109,7 @@ Visual C++ для разработки кроссплатформенных мо
   
  При первом запуске агента и каждый раз при создании сертификата клиента вам будут предоставлены данные, необходимые для настройки агента в Visual Studio, включая имя узла, порт и ПИН-код.  
   
- ![Использование vcremote для создания безопасного ПИН-кода](~/cross-platform/media/cppmdd_vcremote_generateclientcert.png "CPPMDD_vcremote_generateClientCert")  
+ ![Использование vcremote для создания безопасного ПИН-кода](../cross-platform/media/cppmdd_vcremote_generateclientcert.png "CPPMDD_vcremote_generateClientCert")  
   
  Если вы намерены настроить удаленный агент в Visual Studio, используя имя узла, выполните проверку связи с компьютером Mac из Windows, используя это имя узла, чтобы убедиться в том, что он доступен. В противном случае может потребоваться использовать вместо имени узла IP-адрес.  
   
@@ -177,7 +159,7 @@ Visual C++ для разработки кроссплатформенных мо
   
 7.  Выберите **Связать**, чтобы активировать сопряжение.  
   
-     ![Настройка подключения vcremote для сборок iOS](~/cross-platform/media/cppmdd_options_ios.PNG "CPPMDD_Options_iOS")  
+     ![Настройка подключения vcremote для сборок iOS](../cross-platform/media/cppmdd_options_ios.PNG "CPPMDD_Options_iOS")  
   
      Сопряжение сохраняется до тех пор, пока не изменится имя узла или порт. Если вы изменили имя узла или порт в диалоговом окне **Параметры** , для отмены изменения нажмите кнопку **Восстановить** , чтобы восстановить прежнее сопряжение.  
   

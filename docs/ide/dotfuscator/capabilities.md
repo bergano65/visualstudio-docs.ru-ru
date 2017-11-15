@@ -1,9 +1,8 @@
 ---
 title: "Возможности Dotfuscator | Документы Майкрософт"
-ms.date: 2017-06-22
+ms.date: 2017-10-10
 ms.devlang: dotnet
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.topic: article
 keywords: "Dotfuscator, Dotfuscator CE, PreEmptive, решения PreEmptive, защита PreEmptive, защита, community edition, обфускация, .NET, бесплатно, Visual Studio 2017"
 helpviewer_keywords:
@@ -17,28 +16,12 @@ description: "Узнайте о возможностях бесплатного 
 ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8ce85525f6af336682f6f8547c2f6c13dde73c8c
-ms.openlocfilehash: 9193020b9031b5e1a5637fd4ec207d0449ec85ae
-ms.contentlocale: ru-ru
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: 2c2c7decf192f11c12b52b64374719c8ef5edece
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="capabilities-of-dotfuscator"></a>Возможности Dotfuscator
 
 Эта страница посвящена возможностям Dotfuscator Community Edition (Dotfuscator CE), а также содержит несколько ссылок на дополнительные параметры, доступные посредством [обновлений][upgrades].
@@ -96,8 +79,8 @@ Dotfuscator CE позволяет внедрить в приложение ко�
 [obfuscation]: https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_overview.html
 [renaming]: https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_renaming.html
 
-[analytics]: https://www.preemptive.com/dotfuscator/ce/docs/help/analytics_overview.html
-[endpoints]: https://www.preemptive.com/dotfuscator/ce/docs/help/analytics_overview.html#endpoints
+[analytics]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_overview.html
+[endpoints]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_overview.html#endpoints
 
 [checks]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html
 [check-app]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html#app-notification
@@ -106,10 +89,9 @@ Dotfuscator CE позволяет внедрить в приложение ко�
 [tamper]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_tamper.html
 [debug]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
 [shelflife]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
-[exceptions]: https://www.preemptive.com/dotfuscator/ce/docs/help/analytics_exceptions.html
-[sessions]: https://www.preemptive.com/dotfuscator/ce/docs/help/analytics_sessions.html
-[features]: https://www.preemptive.com/dotfuscator/ce/docs/help/analytics_features.html
-[check-telemetry]: https://www.preemptive.com/dotfuscator/ce/docs/help/analytics_checks.html
+[exceptions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
+[sessions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
+[features]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
+[check-telemetry]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_checks.html
 
 [full]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_capabilities.html
-

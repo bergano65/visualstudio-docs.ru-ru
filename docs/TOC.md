@@ -1,36 +1,18 @@
 # [Добро пожаловать в Visual Studio 2017!](welcome-to-visual-studio.md)
-
 # [Новые возможности](ide/whats-new-in-visual-studio.md)
-
 # [Установка](install/TOC.md)
-
 # [Интегрированная среда разработки Visual Studio](ide/visual-studio-ide.md)
-
 # [Visual Basic](/dotnet/visual-basic)
-
 # [Visual C#](/dotnet/csharp)
-
 # [Visual C++](/cpp/top/visual-cpp-in-visual-studio)
-
 # [JavaScript](/scripting/javascript)
-
 # [Python](python/getting-started-with-python.md)
-
 # [R](rtvs/index.md)
-
 # [Visual F#](/dotnet/fsharp/)
-
-# [Доступ к данным](data-tools/TOC.md)
-
+# [Доступ к данным](data-tools/accessing-data-in-visual-studio.md)
 # [Разработка кроссплатформенных мобильных приложений](cross-platform/cross-platform-mobile-development-in-visual-studio.md)
-
 # [Разработка приложений Office и SharePoint](vsto/office-and-sharepoint-development-in-visual-studio.md)
-
-# [Перенос, миграция и обновление кода](porting\port-migrate-and-upgrade-visual-studio-projects.md)
-
-# [Расширяемость](extensibility/extensibility-in-visual-studio.md)
-
+# [Перенос, миграция и обновление кода](porting/TOC.md)
+# [Расширяемость](extensibility/)
 # [Обращайтесь к нам](ide/talk-to-us.md)
-
 ## [Как сообщить о проблеме с Visual Studio 2017](ide/how-to-report-a-problem-with-visual-studio-2017.md)
-
