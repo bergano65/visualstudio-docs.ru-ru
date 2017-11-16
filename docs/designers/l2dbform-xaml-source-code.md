@@ -4,73 +4,57 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-csharp
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 624e96d4-6d27-4195-8ac2-2f3835f6c57e
-caps.latest.revision: 2
-author: kempb
-ms.author: kempb
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b62eac5ab4b057e26ed4a0a34551655984449cf1
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: c3ccc6fcfa8471d767356f1e30d1e5f8b0ed15d0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="l2dbformxaml-source-code"></a>Исходный код L2DBForm.xaml
-Этот раздел содержит исходный код и описание XAML-файла L2DBForm.xaml для [привязки данных WPF с использованием примера LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md).  
+Этот раздел содержит и описывает исходный XAML-файл для [WPF Data Binding Using LINQ to XML Example](../designers/wpf-data-binding-using-linq-to-xml-example.md), L2DBForm.xaml.  
   
 ## <a name="overall-ui-structure"></a>Общая структура интерфейса  
- Как любой типичный проекта WPF, этот файл содержит один родительский XML-элемент <xref:System.Windows.Window>, связанный с производным классом `L2XDBFrom` в пространстве имен `LinqToXmlDataBinding`.  
+ Что является типичным для проекта WPF, данный файл содержит один родительский элемент, XML-элемент <xref:System.Windows.Window> , связанный с производным классом `L2XDBFrom` в пространстве имен `LinqToXmlDataBinding` .  
   
- Клиентская область располагается в окне <xref:System.Windows.Controls.StackPanel> с голубым фоном. Эта панель содержит четыре раздела <xref:System.Windows.Controls.DockPanel>, разделенных полосами <xref:System.Windows.Controls.Separator>. Назначение этих разделов описывается в подразделе **Примечания** в [предыдущем разделе](../designers/walkthrough-linqtoxmldatabinding-example.md).  
+ Клиентская область располагается в окне <xref:System.Windows.Controls.StackPanel> , имеющем светло-синий фон. Эта панель содержит четыре раздела пользовательского интерфейса <xref:System.Windows.Controls.DockPanel> , разделенные панелями <xref:System.Windows.Controls.Separator> . Назначение этих разделов описывается в подразделе **Примечания** из [предыдущего раздела](../designers/walkthrough-linqtoxmldatabinding-example.md).  
   
- Каждый раздел содержит идентифицирующую его метку. В двух первых разделах эта метка повернута на 90 градусов с помощью <xref:System.Windows.FrameworkElement.LayoutTransform%2A>. Остальная часть раздела содержит элементы пользовательского интерфейса, соответствующие назначению данного раздела: текстовые поля, блоки текста, кнопки и т. д. Иногда для выравнивания этих дочерних элементов управления используется дочерний элемент <xref:System.Windows.Controls.StackPanel>.  
+ Каждый раздел содержит идентифицирующую его метку. В двух первых разделах данная метка повернута на 90 градусов с помощью <xref:System.Windows.FrameworkElement.LayoutTransform%2A>. Остальная часть раздела содержит элементы пользовательского интерфейса, соответствующие назначению данного раздела: текстовые поля, блоки текста, кнопки и т. д. Иногда для выравнивания этих дочерних элементов управления используется дочерний элемент <xref:System.Windows.Controls.StackPanel> .  
   
 ## <a name="window-resource-section"></a>Раздел оконных ресурсов  
  Открывающий тег `<Window.Resources>` в строке 9 определяет начало раздела оконных ресурсов. Он оканчивается закрывающим тегом в строке 35.  
   
- Тег `<ObjectDataProvider>`, который охватывает строки с 11 по 25, объявляет объект <xref:System.Windows.Data.ObjectDataProvider> с именем `LoadedBooks`, использующий в качестве источника элемент <xref:System.Xml.Linq.XElement>. Для инициализации этого <xref:System.Xml.Linq.XElement> проводится анализ встроенного XML-документа (элемент `CDATA`). Обратите внимание, что при объявлении и синтаксическом анализе внедренного XML-документа пробелы сохраняются. Это нужно потому, что элемент управления <xref:System.Windows.Controls.TextBlock>, используемый для отображения необработанного XML, не располагает возможностями для форматирования XML.  
+ В теге `<ObjectDataProvider>` , который охватывает строки с 11 по 25, объявляется поставщик <xref:System.Windows.Data.ObjectDataProvider>с именем `LoadedBooks`, использующий в качестве источника <xref:System.Xml.Linq.XElement> . Этот объект <xref:System.Xml.Linq.XElement> инициализируется путем проведения синтаксического анализа XML-документа (элемент `CDATA` ). Обратите внимание, что при объявлении и синтаксическом анализе внедренного XML-документа пробелы сохраняются. Такая организация работы применяется в связи с тем, что в элементе управления <xref:System.Windows.Controls.TextBlock> , используемом для отображения необработанного XML, не предусмотрены специальные возможности форматирования XML.  
   
- Наконец, в строках с 28 по 34 определяется <xref:System.Windows.DataTemplate> с именем `BookTemplate`. Он предназначен для отображения записей в разделе пользовательского интерфейса **Список книг** . В нем используются привязка данных и динамические свойства LINQ to XML для получения идентификатора книги с помощью следующих присваиваний.  
+ Наконец, в строках с 28 по 34 определен шаблон <xref:System.Windows.DataTemplate> под именем `BookTemplate` . Он предназначен для отображения записей в разделе пользовательского интерфейса **Список книг** . В нем используются привязка данных и динамические свойства LINQ to XML для получения идентификатора книги с помощью следующих присваиваний.  
   
 ```  
 Text="{Binding Path=Attribute[id].Value}"Text="{Binding Path=Value}"  
 ```  
   
 ## <a name="data-binding-code"></a>Код привязки данных  
- Помимо элемента <xref:System.Windows.DataTemplate>, привязка данных используется во многих других местах файла.  
+ Кроме элемента <xref:System.Windows.DataTemplate> , привязка данных используется во многих других местах данного файла.  
   
- В открывающем теге `<StackPanel>` в строке 38 для свойства <xref:System.Windows.FrameworkElement.DataContext%2A> этой панели устанавливается значение поставщика данных `LoadedBooks`.  
+ В открывающем теге `<StackPanel>` в строке 38 свойство данной панели <xref:System.Windows.FrameworkElement.DataContext%2A> устанавливается на поставщика данных `LoadedBooks` .  
   
 ```  
 DataContext="{Binding Source={StaticResource LoadedBooks}}  
 ```  
   
- Это позволяет далее (в строке 46) отобразить необработанный XML в объекте <xref:System.Windows.Controls.TextBlock> с именем `tbRawXml`, выполнив привязку к этому свойству поставщика данных `Xml`.  
+ Это позволяет (в строке 46) <xref:System.Windows.Controls.TextBlock> с именем `tbRawXml` отображать необработанный XML путем привязки к свойству `Xml` этого поставщика данных.  
   
 ```  
 Text="{Binding Path=Xml}"   
 ```  
   
- Объект <xref:System.Windows.Controls.ListBox>, расположенный в разделе интерфейса **Список книг**, для своих отображаемых элементов задает в строках с 58 по 62 шаблон `BookTemplate`, определенный в разделе ресурсов окна.  
+ Объект <xref:System.Windows.Controls.ListBox> в разделе интерфейса **Список книг** задает в строках с 58 по 62 для своих отображаемых элементов шаблон `BookTemplate` , определенный в разделе ресурсов окна.  
   
 ```  
 ItemTemplate ="{StaticResource BookTemplate}"   
@@ -84,7 +68,7 @@ ItemTemplate ="{StaticResource BookTemplate}"
 </ListBox.ItemsSource>  
 ```  
   
- Третий раздел пользовательского интерфейса с названием **Редактировать выбранную книгу** прежде всего выполняет привязку элемента <xref:System.Windows.FrameworkElement.DataContext%2A> из родительского раздела <xref:System.Windows.Controls.StackPanel> к элементу, выбранному в разделе **Список книг** (строка 82).  
+ В третьем разделе интерфейса, **Редактировать выбранную книгу**, сначала происходит привязка свойства <xref:System.Windows.FrameworkElement.DataContext%2A> дочернего элемента <xref:System.Windows.Controls.StackPanel> к текущему элементу, выбранному из раздела пользовательского интерфейса **Список книг** (строка 82).  
   
 ```  
 DataContext="{Binding ElementName=lbBooks, Path=SelectedItem}"  

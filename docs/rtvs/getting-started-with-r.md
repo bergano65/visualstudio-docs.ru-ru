@@ -1,27 +1,24 @@
 ---
 title: "Начало работы с инструментами R для Visual Studio | Документы Майкрософт"
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 39228cf0-8d21-43bb-a2ce-5e5fdc81ec41
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 616b39cdd355e6a795a4b4e2929586ba233ab8da
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: b9fb38bf7e21924d7fbece72978e99d298a42b74
-ms.contentlocale: ru-ru
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="getting-started-with-r-tools-for-visual-studio"></a>Начало работы с инструментами R для Visual Studio
 
 После установки инструментов R для Visual Studio (RTVS) (см. раздел [Установка](installation.md)) можно сразу же приступить к работе с этими инструментами. В разделах ниже представлен краткий обзор возможностей:
@@ -183,4 +180,3 @@ ms.lasthandoff: 07/12/2017
 - [Отладка](debugging.md)
 - [Рабочие области](workspaces.md)
 - [Визуализация данных](visualizing-data.md)
-

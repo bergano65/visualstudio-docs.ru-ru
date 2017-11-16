@@ -1,27 +1,24 @@
 ---
 title: "Удаленная отладка Azure для Python в Visual Studio | Документация Майкрософт"
 ms.custom: 
-ms.date: 7/12/2017
+ms.date: 07/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d68fdc53-65a1-423c-8964-9815dbb3387e
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 1ce80ecdc38075b048c8ae0a7f5773de965355f5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: a4ddd2d52aa1a1e4437c0d1f7821761700c2a91e
-ms.contentlocale: ru-ru
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="remotely-debugging-python-code-on-azure"></a>Удаленная отладка кода Python а Azure
 
 [Поддержка Python в Visual Studio](installation.md) включает возможность удаленной отладки кода Python, который выполняется в службе приложений Azure. В отличие от обычной удаленной отладки, в этом сценарии нет прямого доступа к целевому компьютеру по протоколу TCP. Поэтому в Visual Studio есть прокси-сервер для предоставления доступа к протоколу отладчика по HTTP. В проектах, созданных с использованием веб-шаблона, этот прокси-сервер автоматически настраивается в созданном файле `web.debug.config`. Также удаленная отладка активируется при публикации проекта с конфигурацией отладки. Этот процесс описан в разделе [Publishing to Azure App Service](template-web.md#publishing-to-azure-app-service) (Публикации в службе приложений Azure).
@@ -55,4 +52,3 @@ ms.lasthandoff: 07/18/2017
 Чтобы подключить отладчик, выберите действие **Отладка > Присоединиться к процессу**, затем выберите значение **Удаленная отладка Python** в раскрывающемся списке **Транспорт**, введите полученный URL-адрес в текстовое поле **Квалификатор** и нажмите клавишу ВВОД. Если Visual Studio успешно подключится к службе приложений, вы увидите в списке один процесс Python. Выберите его и нажмите **Присоединить**, чтобы запустить отладку:
 
 ![Диалоговое окно "Присоединение к процессу" для присоединения к веб-сайту Azure](media/azure-remote-debugging-manual-attach.png)
-

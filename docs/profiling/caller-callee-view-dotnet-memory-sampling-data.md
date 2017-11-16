@@ -4,41 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Caller/Callee view
+helpviewer_keywords: Caller/Callee view
 ms.assetid: 36f5b4de-5686-4f40-9e72-f4aee27d833c
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: a7e3d7541075642d3aaa417874aa51f7f3f7faa7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
-ms.openlocfilehash: 1944efb30ac0852a362894239e5b8219b0b92e8a
-ms.contentlocale: ru-ru
-ms.lasthandoff: 07/14/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Представление "Вызывающий/вызываемый" — данные выборки памяти .NET
-<a id="callercallee-view---net-memory-sampling-data" class="xliff"></a>
+# <a name="callercallee-view---net-memory-sampling-data"></a>Представление "Вызывающий/вызываемый" — данные выборки памяти .NET
 В представлении "Вызывающий/вызываемый" отображаются данные профилирования памяти .NET для выбранной функции и ее родительских и дочерних функций. Представление "Вызывающий/вызываемый" содержит три таблицы.  
   
  **Текущая функция** отображается в средней таблице, в которой указываются данные профилирования памяти выбранной функции. Значения включают все вызовы функции, попавшие в выборку.  
@@ -70,8 +51,7 @@ ms.lasthandoff: 07/14/2017
 |**Исключающие байты**|- Для текущей функции — число байтов памяти, которые были выделены функцией в ходе сеанса профилирования. Это значение не включает память, которая была выделена функциями, вызванными текущей функцией.<br />- Для вызывающей функции — число эксклюзивных байтов текущей функции, созданных в результате вызовов из вызывающей функцией.<br />- Для вызываемой функции — число байтов, выделенных для экземпляров этой функции, созданных при вызовах из текущей функции. Это значение не включает байты, которые были выделены функциями, вызванными вызываемой функцией.|  
 |**Исключающие байты %**|Процент от общего числа байтов памяти, выделенных при профилировании, при котором выполняется эксклюзивное выделение для данной функции.|  
   
-## См. также
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>См. также  
  [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)   
  [Представление "Вызывающий/вызываемый" — данные инструментирования памяти .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [Представление "Вызывающий/вызываемый" — данные выборки](../profiling/caller-callee-view-sampling-data.md)   

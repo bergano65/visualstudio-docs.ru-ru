@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
-caps.latest.revision: 18
-author: kempb
-ms.author: kempb
+caps.latest.revision: "18"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: f3cf117116f5da70391f5252e3d1bde4e2416b69
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: b5f12c71a894937ad452a31bf53e19e4fbb2d7a2
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Шаг 5. Добавление обработчиков событий входа для элементов управления NumericUpDown
 В пятой части этого учебника вам предстоит добавить обработчики событий "Ввод", чтобы сделать ввод ответов на задачи головоломки немного удобнее. Этот код будет выделять и удалять текущее значение в каждом элементе управления NumericUpDown, как только игрок выберет элемент управления и начнет вводить другое значение.  
@@ -70,7 +53,8 @@ ms.lasthandoff: 09/06/2017
   
 3.  В методе для обработчика событий **answer_Enter** введите следующий код.  
   
-     [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)] [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]  
+     [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
+     [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]  
   
      Этот код может показаться сложным, однако в нем легко разобраться, если просмотреть его шаг за шагом. Сначала посмотрите на верхнюю часть метода — `object sender` в C# или `sender As System.Object` в Visual Basic. Этот параметр ссылается на объект, событие которого срабатывает. Он называется отправителем. В данном случае объектом-отправителем является элемент управления NumericUpDown. Поэтому в первой строке метода указывается, что отправителем является не просто какой-либо объект, а именно элемент управления NumericUpDown. (каждый элемент управления NumericUpDown это объект, но не каждый объект, это элемент управления NumericUpDown). Элемент управления NumericUpDown в этом методе называется **answerBox**, поскольку он будет использоваться для всех элементов управления NumericUpDown в форме, а не только для элемента управления NumericUpDown с именем "sum". Поскольку переменная answerBox объявлена в этом методе, ее область действия ограничена этим методом. Иными словами, эту переменную можно использовать только внутри этого метода.  
   

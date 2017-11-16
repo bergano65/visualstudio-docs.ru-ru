@@ -1,27 +1,24 @@
 ---
 title: "Интерактивная среда REPL с инструментами R для Visual Studio | Документация Майкрософт"
 ms.custom: 
-ms.date: 6/28/2017
+ms.date: 06/28/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 45d7c6ff-abd3-42a4-8376-0e9c8f7226d5
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: f6dc59ef35c468e746ce183aaf131eed14e56038
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 50d5a1e4ae1eaf5bd680a1709876962feeeb3548
-ms.contentlocale: ru-ru
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="working-with-the-r-interactive-window"></a>Работа с интерактивным окном R
 
 В состав инструментов R для Visual Studio (RTVS) входит интерактивное окно R, которое также называется средой **REPL** (Read-Evaluate-Print-Loop, чтение — оценка — печать — цикл), в которой можно ввести код R и сразу видеть результаты. В интерактивном окне доступны все модули, синтаксис и переменные, а также IntelliSense.

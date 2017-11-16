@@ -1,32 +1,33 @@
 ---
-title: "Функция CvCreateMarkerSeries | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkers/CvCreateMarkerSeriesA"
-  - "cvmarkers/CvCreateMarkerSeriesW"
-helpviewer_keywords: 
-  - "CvCreateMarkerSeriesA - метод"
-  - "CvCreateMarkerSeriesW - метод"
+title: "Функция CvCreateMarkerSeries | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- cvmarkers/CvCreateMarkerSeriesA
+- cvmarkers/CvCreateMarkerSeriesW
+helpviewer_keywords:
+- CvCreateMarkerSeriesA method
+- CvCreateMarkerSeriesW method
 ms.assetid: e280530b-137a-43a7-8643-aa514ab86ed7
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5eccac7a0b139b830121add61518c23fa055ca23
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Функция CvCreateMarkerSeries
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Создает набор меток для данного поставщика.  
+# <a name="cvcreatemarkerseries-function"></a>Функция CvCreateMarkerSeries
+Создает набор маркеров для данного поставщика.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 _Check_return_ HRESULT CvCreateMarkerSeriesW(  
@@ -40,25 +41,25 @@ _Check_return_ HRESULT CvCreateMarkerSeriesA(
     _Out_ PCV_MARKERSERIES* ppMarkerSeries);  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pProvider`  
- Объект поставщика, уже инициализированный функцией CvInitProvider.  Не может принимать значение NULL.  
+ Объект поставщика, уже инициализированный функцией CvInitProvider. Не может принимать значение NULL.  
   
  `pSeriesName`  
- Имя набора маркеров.  Не может принимать значение null, но пустая строка разрешена.  
+ Имя набора маркеров. Не может принимать значение NULL, но пустая строка разрешена.  
   
  `ppMarkerSeries`  
- Адрес выходной переменной, в которой будет храниться контекст набора маркеров.  Не может принимать значение NULL.  
+ Адрес выходной переменной, в которой будет храниться контекст набора маркеров. Не может принимать значение NULL.  
   
-## Возвращаемое значение  
- S\_ОК, если набор маркеров успешно создан, или код ошибки, если они были.  Используйте макрос SUCCEEDED\/FAILED для проверки условия ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Значение S_OK, если набор маркеров успешно создан, или код ошибки, если были какие-либо ошибки. Для проверки условия ошибки используйте макрос SUCCEEDED/FAILED.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** cvmarkers.h  
   
  **Юникод:** CvCreateMarkerSeriesW  
   
  **ANSI:** CvCreateMarkerSeriesA  
   
-## См. также  
- [Справочник по библиотеке C\+\+](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>См. также  
+ [Справочник по библиотеке C++](../profiling/cpp-library-reference.md)

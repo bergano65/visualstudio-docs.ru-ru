@@ -1,56 +1,35 @@
 ---
-title: "Диалоговое окно &quot;Необходимые компоненты&quot; | Документы Майкрософт"
+title: "Диалоговое окно \"Необходимые компоненты\" | Документы Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
+f1_keywords: Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
 dev_langs:
 - VB
 - CSharp
 - C++
-helpviewer_keywords:
-- Prerequisites dialog box
+helpviewer_keywords: Prerequisites dialog box
 ms.assetid: 53ac863c-77a0-409b-91e5-7a4bd8b8474e
-caps.latest.revision: 75
-author: kempb
-ms.author: kempb
+caps.latest.revision: "75"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8bf0b097be929b30627e0f1139c6e0b145933ab4
-ms.openlocfilehash: 5a8237e5c437878b22bd3c67a3a4ba2cdc3fa126
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/26/2017
-
+ms.openlocfilehash: 68e326d8045733fc4f491c51405ed51414a92afd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Prerequisites Dialog Box
-<a id="prerequisites-dialog-box" class="xliff"></a>
+# <a name="prerequisites-dialog-box"></a>Prerequisites Dialog Box
 В этом диалоговом окне определяются устанавливаемые необходимые компоненты, способ их установки, а также порядок установки пакетов.  
   
  Чтобы открыть это диалоговое окно, выберите узел проекта в **обозревателе решений** и затем в меню **Проект** щелкните команду **Свойства**. После того как откроется окно **Конструктор проектов** , перейдите на вкладку **Публикация** . На странице **Публикация** щелкните **Необходимые компоненты**. Чтобы открыть проекты установки, в меню **Проект** выберите пункт **Свойства**. В открывшемся диалоговом окне **Окна свойств** щелкните **Необходимые компоненты**.  
   
-## Список элементов пользовательского интерфейса
-<a id="uielement-list" class="xliff"></a>  
+## <a name="uielement-list"></a>Список элементов пользовательского интерфейса  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
@@ -61,8 +40,7 @@ ms.lasthandoff: 05/26/2017
 |**Скачать необходимые компоненты с местоположения моего приложения**|Указывает, что необходимые компоненты должны устанавливаться из расположения приложения. При этом все пакеты необходимых компонентов копируются в место публикации. Чтобы этот параметр действовал, пакеты необходимых компонентов должны находиться на компьютере разработки.|  
 |**Скачать необходимые компоненты из следующего места**|Указывает, что необходимые компоненты должны устанавливаться из выбранного расположения. Для выбора расположения можно использовать кнопку **Обзор**.|  
   
-## Информация о необходимых компонентах
-<a id="prerequisites-information" class="xliff"></a>  
+## <a name="prerequisites-information"></a>Информация о необходимых компонентах  
  Необходимые компоненты, отображаемые в диалоговом окне **Необходимые компоненты**, могут отличаться от показанных в следующем списке. Пакеты необходимых компонентов, перечисленные в диалоговом окне **Необходимые компоненты**, устанавливаются автоматически при первом открытии этого диалогового окна. В случае последующего изменения целевой платформы проекта следует выбрать пакеты необходимых компонентов вручную, чтобы они соответствовали новой целевой платформе.  
   
 |Элемент|Описание|  
@@ -85,8 +63,7 @@ ms.lasthandoff: 05/26/2017
 |**Установщик Windows версии 3.1**|Этот пакет устанавливает распространяемый установщик Microsoft Windows 3.1, позволяющий устанавливать проекты установки установщика Windows. Пакет предварительно установлен в системе Windows Server 2003 с пакетом обновления 1 (SP1) и более поздних версий.<br /><br /> Этот элемент выбран по умолчанию.|  
 |**Установщик Windows версии 4.5**|Этот пакет устанавливает распространяемый установщик Microsoft Windows 4.5, позволяющий устанавливать проекты установки установщика Windows.|  
   
-## См. также
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>См. также  
  [Страница "Публикация" в конструкторе проектов](../../ide/reference/publish-page-project-designer.md)   
  [Обязательные требования к развертыванию приложений](../../deployment/application-deployment-prerequisites.md)   
  [Повторное распространение .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287)   

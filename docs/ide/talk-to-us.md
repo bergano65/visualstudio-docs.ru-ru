@@ -13,29 +13,12 @@ ms.assetid: e0846d4d-2ce1-48e3-b219-674ff070bf4e
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.technology:
-- vs-acquisition
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 99d1cfc816d5fd64367ff4524de89776ef25a4b8
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
-
+ms.technology: vs-acquisition
+ms.openlocfilehash: 7759e67a4ce886388b9a7afea531448edeefac54
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="talk-to-us"></a>Talk to Us
 Нас интересуют ваши идеи по улучшению наших продуктов и документации. Мы не всегда можем ответить вам лично, но обязательно передадим ваши отзывы нужному специалисту или группе.  
@@ -71,4 +54,3 @@ ms.lasthandoff: 05/13/2017
 
 ## <a name="see-also"></a>См. также  
  [How to Report a Problem with Visual Studio](how-to-report-a-problem-with-visual-studio-2017.md) (Как сообщить о проблеме с Visual Studio)
-

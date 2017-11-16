@@ -4,59 +4,36 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.performance.view.resourcedetails
-helpviewer_keywords:
-- Resource Details view
+f1_keywords: vs.performance.view.resourcedetails
+helpviewer_keywords: Resource Details view
 ms.assetid: a4ecfe1c-abbc-4fb3-9ab2-34de50486901
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: eaf87be0e921d0e86818c29c078d8b214591418d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
-ms.openlocfilehash: 2ddf9406e27214e15ba74adf2c2264712dfc93ef
-ms.contentlocale: ru-ru
-ms.lasthandoff: 07/14/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Представление "Сведения о ресурсах" — сведения о состязаниях
-<a id="resource-details-view---contention-data" class="xliff"></a>
+# <a name="resource-details-view---contention-data"></a>Представление "Сведения о ресурсах" — сведения о состязаниях
 Представление "Сведения о ресурсах" представляет собой временную шкалу событий блокировки, вызванных состязаниями за выбранный ресурс. Событие блокировки возникает, когда поток вынужден приостановить выполнение, так как другой поток заблокировал доступ к ресурсу.  
   
  В этом представлении выполнение каждого потока во времени представлено в виде горизонтальной полосы, а событие блокировки — в виде вертикальной полосы на временной шкале потока. При необходимости можно увеличить отрезок временной шкалы для просмотра отдельных событий. Чтобы просмотреть путь выполнения (стек вызовов) функций, который привел к событию, щелкните событие на полосе. В окне **Стек вызовов** отобразятся функции. Если исходный код функции доступен, можно щелкнуть имя функции и отредактировать исходный файл в интерфейсе [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-## Процедуры
-<a id="procedures" class="xliff"></a>  
+## <a name="procedures"></a>Процедуры  
   
-#### Увеличение отрезка временной шкалы
-<a id="to-magnify-a-timeline-segment" class="xliff"></a>  
+#### <a name="to-magnify-a-timeline-segment"></a>Увеличение отрезка временной шкалы  
   
 -   Перетащите указатель мыши по области временной шкалы.  
   
      Отпустите кнопку мыши, чтобы изменить соответствующим образом масштаб выбранных в представлении отрезков времени. Для дополнительного увеличения отрезка можно повторить процесс. Ползунок полосы прокрутки времени указывает относительный размер отрезка времени, отображаемого в представлении.  
   
-#### Уменьшение масштаба временной шкалы
-<a id="to-zoom-out-on-a-timeline" class="xliff"></a>  
+#### <a name="to-zoom-out-on-a-timeline"></a>Уменьшение масштаба временной шкалы  
   
 -   Выполните одно из следующих действий.  
   
@@ -64,27 +41,23 @@ ms.lasthandoff: 07/14/2017
   
     -   Чтобы в представлении отобразилась вся временная шкала, щелкните **Сброс масштаба**.  
   
-#### Просмотр стека вызовов события
-<a id="to-view-the-call-stack-of-an-event" class="xliff"></a>  
+#### <a name="to-view-the-call-stack-of-an-event"></a>Просмотр стека вызовов события  
   
 -   На временной шкале щелкните полосу события.  
   
-#### Просмотр или правка исходного кода функции в стеке вызовов
-<a id="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack" class="xliff"></a>  
+#### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Просмотр или правка исходного кода функции в стеке вызовов  
   
 -   В окне **Стек вызовов** щелкните имя функции.  
   
  Исходный код функции должен быть частью текущего проекта.  
   
-#### Просмотр дерева вызовов событий состязания для ресурса
-<a id="to-view-the-call-tree-of-contention-events-for-the-resource" class="xliff"></a>  
+#### <a name="to-view-the-call-tree-of-contention-events-for-the-resource"></a>Просмотр дерева вызовов событий состязания для ресурса  
   
 -   На временной шкале щелкните **Итого**.  
   
      Для ресурса отобразится представление "Состязания". Дополнительные сведения см. в разделе [Представление "Конфликты обращения к ресурсам"](../profiling/resource-contentions-view-contention-data.md).  
   
-#### Просмотр всех событий состязания в потоке
-<a id="to-view-all-the-contention-events-of-a-thread" class="xliff"></a>  
+#### <a name="to-view-all-the-contention-events-of-a-thread"></a>Просмотр всех событий состязания в потоке  
   
 -   На временной шкале щелкните имя или идентификатор потока.  
   

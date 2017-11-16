@@ -4,43 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.performance.view.tierinteraction
-helpviewer_keywords:
-- Tier Interactions view
+f1_keywords: vs.performance.view.tierinteraction
+helpviewer_keywords: Tier Interactions view
 ms.assetid: bb4fb21c-f3f7-473a-8b5e-442da4c2c445
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 9aac5f9ac8886bef61d700209f77b4b1852fe2bf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
-ms.openlocfilehash: 941d4e6d48d1e61804266b0fb334368145986eb1
-ms.contentlocale: ru-ru
-ms.lasthandoff: 07/14/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Представление "Взаимодействие между уровнями"
-<a id="tier-interactions-view" class="xliff"></a>
+# <a name="tier-interactions-view"></a>Представление "Взаимодействие между уровнями"
 Профилирование уровневого взаимодействия позволяет получить дополнительные сведения о времени выполнения в функциях многоуровневых приложений, взаимодействующих с базой данных посредством [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]. Данные собираются только для синхронных вызовов функций.  
   
  **Requirements**  
@@ -55,8 +35,7 @@ ms.lasthandoff: 07/14/2017
   
  Время отображается в виде числа миллисекунд или числа тактов процессора. Для изменения отображаемой единицы времени откройте меню **Сервис**, выберите пункт **Параметры**, а затем выберите одно из значений параметра **Показывать значения времени как**.  
   
-## Главная область
-<a id="master-pane" class="xliff"></a>  
+## <a name="master-pane"></a>Главная область  
   
 |Столбец|Описание|  
 |------------|-----------------|  
@@ -68,8 +47,7 @@ ms.lasthandoff: 07/14/2017
 |**Минимальное затраченное время**|Минимальное количество времени, затраченного на выполнение любого запроса из процесса, веб-страницы или подключения базы данных.|  
 |**Среднее затраченное время**|Среднее количество времени, затраченного на выполнение запроса из процесса, веб-страницы или подключения базы данных.|  
   
-## Область сведений о подключении к базе данных
-<a id="database-connection-details-pane" class="xliff"></a>  
+## <a name="database-connection-details-pane"></a>Область сведений о подключении к базе данных  
   
 |Столбец|Описание|  
 |------------|-----------------|  

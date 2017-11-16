@@ -1,53 +1,53 @@
 ---
-title: "Сбор данных об использовании памяти, полученных из служб .NET Framework, с помощью командной строки профилировщика | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Сбор данных об использовании памяти, полученных из служб .NET Framework, с помощью командной строки профилировщика | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: b1361333-8a09-4a65-87a9-4ac94ceb2d9f
-caps.latest.revision: 13
-caps.handback.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7d94a31fbb1c0fca649f53496ff39fe36527c013
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Сбор данных об использовании памяти, полученных из служб .NET Framework, с помощью командной строки профилировщика
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-В этом разделе описаны процедуры и параметры сбора данных о выделении памяти и времени существования объектов для службы [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] с помощью метода выборки из командной строки.  
+# <a name="collecting-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Сбор данных об использовании памяти, полученных из служб .NET Framework, с помощью командной строки профилировщика
+В этом разделе описываются процедуры и параметры сбора данных о выделении памяти и времени существования для службы [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] с использованием метода выборки в командной строке.  
   
-## Общие задачи  
+## <a name="common-tasks"></a>Общие задачи  
   
 |Задача|Связанное содержимое|  
-|------------|--------------------------|  
+|----------|---------------------|  
 |**Присоединение профилировщика к службе .NET**|-   [Практическое руководство. Присоединение профилировщика к службе .NET для сбора данных об использовании памяти](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
 |**Инструментирование службы .NET и сбор данных об использовании памяти .NET**|-   [Практическое руководство. Инструментирование службы .NET Framework и сбор данных об использовании памяти](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
 |**Добавление данных взаимодействия между уровнями**|-   [Сбор данных взаимодействия уровней](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
-## Связанные задачи  
+## <a name="related-tasks"></a>Связанные задачи  
   
-### Службы профилирования  
+### <a name="profiling-services"></a>Службы профилирования  
   
 |Задача|Связанное содержимое|  
-|------------|--------------------------|  
+|----------|---------------------|  
 |**Профилирование с помощью метода выборки**|-   [Использование метода выборки для сбора статистики приложения](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|  
 |**Профилирование с помощью метода инструментирования**|-   [Сбор подробных сведений о времени с помощью инструментирования](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line.md)|  
 |**Профилирование конфликтов ресурсов и действий потока**|-   [Сбор данных параллелизма](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  
   
-### Профилирование данных об использовании памяти .NET Framework  
+### <a name="profiling-net-framework-memory-data"></a>Профилирование данных об использовании памяти .NET Framework  
   
 |Задача|Связанное содержимое|  
-|------------|--------------------------|  
-|**Профилирование автономных \(клиентских\) приложений**|-   [Сбор данных об использовании памяти .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
-|**Профилирование веб\-приложений ASP.NET**|-   [Сбор данных об использовании памяти](../profiling/collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line.md)|  
+|----------|---------------------|  
+|**Профилирование автономных (клиентских) приложений**|-   [Сбор данных об использовании памяти .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
+|**Профилирование веб-приложений ASP.NET**|-   [Сбор данных об использовании памяти](../profiling/collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line.md)|  
   
-### Анализ представлений и отчетов по данным об использовании памяти .NET  
+### <a name="analyzing-net-memory-data-views-and-reports"></a>Анализ представлений и отчетов данных об использовании памяти .NET  
  [Представления данных в памяти .NET](../profiling/dotnet-memory-data-views.md)  
   
-## Справочные сведения  
+## <a name="reference"></a>Ссылка  
  [Справочник по средствам профилирования из командной строки](../profiling/command-line-profiling-tools-reference.md)

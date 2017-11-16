@@ -1,120 +1,116 @@
 ---
-title: 'How to: Set IDE Accessibility Options | Microsoft Docs'
+title: "Практическое руководство. Настройка специальных возможностей в интегрированной среде разработки | Microsoft Docs"
 ms.custom: 
 ms.date: 08/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- accessibility [Visual Studio]
+helpviewer_keywords: accessibility [Visual Studio]
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
+ms.openlocfilehash: 402d59b80c5765447468468c9aa7def8c14f079c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
-ms.openlocfilehash: 0bf8db1f5cd1d163edffc7f3673d5b74c40ef8ec
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/23/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-set-ide-accessibility-options"></a>How to: Set IDE Accessibility Options
+# <a name="how-to-set-ide-accessibility-options"></a>Практическое руководство. Настройка параметров доступа в интегрированной среде разработки
 > [!TIP]
-> To learn more about recent accessibility updates, see the [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog post.
+> Дополнительные сведения о новых специальных возможностях см. в записи блога [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Улучшения специальных возможностей в Visual Studio 2017 версии 15.3).
 
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] contains features that make it easier for people who have low vision to read and for people who have limited dexterity to write. These features include changing the size and color of text in editors, changing the size of text and buttons on toolbars, and auto-completion for methods and parameters, to name a few.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] содержит функции, которые упрощают работу для людей с нарушениями зрения, а также для пользователей с ограниченной подвижностью. Например, они позволяют изменять размер и цвет текста в редакторах, размер текста и кнопок на панелях инструментов и включать автозавершение для методов и параметров.  
 
- In addition, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supports Dvorak keyboard layouts, which make the most frequently typed characters more accessible. You can also customize the default shortcut keys available with [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. For more information, see [Identifying and Customizing Keyboard Shortcuts](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
+ Кроме того, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] поддерживает раскладки клавиатуры по Двораку, делающие наиболее часто вводимые символы более доступным. Вы также можете настроить сочетания клавиш по умолчанию, доступные в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Дополнительные сведения см. в разделе [Определение и настройка сочетаний клавиш в Visual Studio](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
 
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md).  
+>  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
 
-## <a name="editors-dialogs-and-tool-windows"></a>Editors, Dialogs, and Tool Windows  
- By default, dialog boxes and tool windows in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] use the same font size and colors as the operating system. The color settings for the frame of the IDE, dialog boxes, toolbars, and tool windows are based a color scheme: light or dark. You can change the current color theme in the [General, Environment, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md).  
+## <a name="editors-dialogs-and-tool-windows"></a>Редакторы, диалоговые окна и окна инструментов  
+ По умолчанию диалоговые окна и окна инструментов в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] используют те же размеры и цвета шрифтов, что и операционная система. Цвета рамок интегрированной среды разработки, диалоговых окон, панелей инструментов и окон инструментов определяются цветовой схемой: светлой или темной. Текущую цветовую тему можно изменить на [странице "Общие" папки "Среда" диалогового окна "Параметры"](../../ide/reference/general-environment-options-dialog-box.md).  
 
- You can also display pop-up windows in the Code view of the editor. These windows can prompt you with available members on the current object and the parameters to complete a function or statement. These windows can be helpful if you have difficulty typing. However, they interfere with focus in the code editor, which can be problematic for some users. You can turn off these windows by opening the Options dialog box and clearing **Auto list members** and **Parameter information** in the **Text Editor**, **All Languages**, **General** page in the **Options** dialog box. For more information, see [How to: Set General Editor Options](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
+ Кроме того, в представлении кода в редакторе можно настроить отображение всплывающих окон. Эти окна могут предлагать доступные члены для текущего объекта или параметры для завершения функции или оператора. Такие окна могут быть удобны для лиц, испытывающих затруднения при вводе с клавиатуры. Тем не менее, они перехватывают фокус в редакторе кода, что может быть неудобно некоторым пользователям. Эти окна можно отключить, открыв диалоговое окно "Параметры" и сняв флажки **Автоматически отображать список членов** и **Сведения о параметрах** в разделе **Текстовый редактор**, **Все языки**, **Общие** диалогового окна **Параметры**. Дополнительные сведения см. в разделе [Практическое руководство. Настройка общих параметров редактора](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
 
- You can rearrange the windows in the integrated development environment (IDE) to best suit the way you work. You can dock, float, hide, or automatically hide each tool window.  
+ Вы можете изменить порядок окон в интегрированной среде разработки (IDE) так, как вам удобно. Любое окно инструментов можно закрепить, сделать плавающим, скрыть или скрывать автоматически.  
 
- For more information about how to change window layouts, see [Customizing window layouts](../../ide/customizing-window-layouts-in-visual-studio.md).  
+ Дополнительные сведения об изменении макетов окон см. в разделе [Настройка макетов окон](../../ide/customizing-window-layouts-in-visual-studio.md).  
 
-### <a name="changing-the-size-of-text"></a>Changing the Size of Text  
- You can change the settings for text-based tool windows, such as the **Command** window, **Immediate** window, and **Output** window, in the **Fonts and Colors** pane of the **Environment** options in the **Tools** dialog box. When **[All Text Tool Windows]** is selected in the **Show settings for** drop-down list, the default setting is listed as **Default** in the **Item foreground** and **Item background** drop-down lists. You can also change the settings for how text is displayed in the editor.  
+### <a name="changing-the-size-of-text"></a>Изменение размера текста  
+ Вы можете изменить параметры для текстовых окон инструментов, таких как **командное окно**, окно **Интерпретация** и **окно вывода**, в области **Шрифты и цвета** страницы **Среда** в диалоговом окне **Параметры**. Если в раскрывающемся списке **Показать параметры для** выбран пункт **[Все окна текстовых инструментов]**, значение по умолчанию указано как **По умолчанию** в раскрывающихся списках **Основной цвет элемента** и **Цвет фона элемента**. Вы также можете изменить параметры отображения текста в редакторе.  
 
-##### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>To change the size of text in text-based tool windows and editors  
+##### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>Изменение размера текста в текстовых окнах инструментов и редакторов  
 
-1.  From the **Tools** menu, choose **Options**.  
+1.  В меню **Сервис** выберите пункт **Параметры**.  
 
-2.  Choose **Fonts and Colors** on the **Environment** folder.  
+2.  В папке **Среда** выберите **Шрифты и цвета**.  
 
-3.  Select an option on the **Show settings for** drop-down menu.  
+3.  Выберите нужный пункт в раскрывающемся списке **Показать параметры для**.  
 
-     To change the font size for text in an editor, choose **Text Editor**.  
+     Чтобы изменить размер шрифта для текста в редакторе, выберите **Текстовый редактор**.  
 
-     To change the font size for text in text-based tool windows, choose **[All Text Tool Windows]**.  
+     Чтобы изменить размер шрифта для текста в текстовых окнах инструментов, выберите **[Все окна текстовых инструментов]**.  
 
-     To change the font size for ToolTip text in an editor, choose **Editor Tooltip**.  
+     Чтобы изменить размер шрифта для текста в подсказках, выберите **Всплывающая подсказка редактора**.  
 
-     To change the font size for text in statement completion pop-ups, choose **Statement Completion**.  
+     Чтобы изменить размер шрифта для текста во всплывающих окнах завершения операторов, выберите **Завершение операторов**.  
 
-4.  From **Display items**, select **Plain Text**.  
+4.  В списке **Отображаемые элементы** выберите **Обычный текст**.  
 
-5.  In **Font**, select a new font type.  
+5.  В поле **Шрифт** выберите новый тип шрифта.  
 
-6.  In **Size**, select a new font size.  
+6.  В поле **Размер** выберите новый размер шрифта.  
 
     > [!NOTE]
-    >  To reset the text size for text-based tool windows and editors, choose **Use Defaults**.  
+    >  Чтобы сбросить размер шрифта для текстовых окон инструментов и редакторов, выберите **По умолчанию**.  
 
-7.  Choose **OK**.  
+7.  Нажмите кнопку **ОК**.  
 
-### <a name="changing-the-colors-used-in-the-ide"></a>Changing the Colors used in the IDE  
- You can also choose to change the default colors for text, margin indicators, white space, and code elements in the editor.  
+### <a name="changing-the-colors-used-in-the-ide"></a>Изменение цветов, используемых в интегрированной среде разработки  
+ Вы можете изменить цвета по умолчанию для текста, индикаторов полей, пустого пространства и элементов кода в редакторе.  
 
 > [!NOTE]
->  To use high contrast colors for all application windows on your operating system, press Left **ALT+**Left **SHIFT+PRINT SCREEN**. If [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] is open, close and reopen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] to fully implement high contrast colors.  
+>  Чтобы задать высокую контрастность цветов для всех окон приложений в операционной системе, нажмите левую клавишу **ALT +** левую клавишу **SHIFT + PRINT SCREEN**. Если окно [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] открыто, закройте и снова откройте [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], чтобы режим высокой контрастности вступил в силу.  
 
-##### <a name="to-change-the-color-of-items-in-the-editor"></a>To change the color of items in the editor  
+##### <a name="to-change-the-color-of-items-in-the-editor"></a>Изменение цвета элементов в редакторе  
 
-1.  From the **Tools** menu, choose **Options**.  
+1.  В меню **Сервис** выберите пункт **Параметры**.  
 
-2.  Choose **Fonts and Colors** from the **Environment** folder.  
+2.  В папке **Среда** выберите **Шрифты и цвета**.  
 
-3.  In **Show settings for**, choose **Text Editor**.  
+3.  В поле **Показать параметры для** выберите **Текстовый редактор**.  
 
-4.  From **Display items**, select an item whose display you need to change, such as **Plain Text**, **Indicator Margin**, **Visible White Space**, **HTML Attribute Name**, or **XML Attribute**.  
+4.  В списке **Отображаемые элементы** выберите элемент, отображение которого необходимо изменить, например **Обычный текст**, **Поле индикаторов**, **Видимое пустое пространство**, **Имя атрибута HTML** или **XML-атрибут**.  
 
-5.  Select display settings from the following options: **Item foreground**, **Item background**, and **Bold**.  
+5.  Выберите настройки отображения в следующих полях: **Основной цвет элемента**, **Фоновый цвет элемента** и **Полужирный**.  
 
-6.  Choose **OK**.  
+6.  Нажмите кнопку **ОК**.  
 
-## <a name="toolbars"></a>Toolbars  
- To improve toolbar usability and accessibility, you can add text to toolbar buttons.  
+## <a name="toolbars"></a>Панели инструментов  
+ Для повышения удобства панели инструментов можно добавить текст для кнопок панели.  
 
-#### <a name="to-assign-text-to-toolbar-buttons"></a>To assign text to toolbar buttons  
+#### <a name="to-assign-text-to-toolbar-buttons"></a>Назначение текста кнопкам панели инструментов  
 
-1.  From the **Tools** menu, choose **Customize**.  
+1.  В меню **Сервис** выберите пункт **Настроить**.  
 
-2.  In the **Customize** dialog box, select the **Commands** tab.  
+2.  В диалоговом окне **Настройка** выберите вкладку **Команды**.  
 
-3.  Select **Toolbar** and then choose the toolbar name that contains the button you intend to display text for.  
+3.  Выберите **Панель инструментов**, а затем — имя панели инструментов, которая содержит нужные вам кнопки.  
 
-4.  In the list, select the command you intend to change.  
+4.  В списке выберите команду, которую требуется изменить.  
 
-5.  Choose **Modify Selection**.  
+5.  Выберите **Изменить выделенный объект**.  
 
-6.  Choose **Image and Text**.  
+6.  Выберите **Изображение и текст**.  
 
-#### <a name="to-modify-the-buttons-displayed-text"></a>To modify the button's displayed text  
+#### <a name="to-modify-the-buttons-displayed-text"></a>Изменение отображаемого текста кнопки  
 
-1.  Re-select **Modify Selection**.  
+1.  Еще раз выберите **Изменить выделенный объект**.  
 
-2.  Adjacent to In **Name**, insert provide a new caption for the selected button.  
+2.  Во вставке рядом с полем **Имя** добавьте новый заголовок для выбранной кнопки.  
 
-## <a name="see-also"></a>See Also  
- [Accessibility Features of Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)   
- [Resources for Designing Accessible Applications](../../ide/reference/resources-for-designing-accessible-applications.md)
-
+## <a name="see-also"></a>См. также  
+ [Специальные возможности Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)   
+ [Ресурсы для создания приложений со специальными возможностями](../../ide/reference/resources-for-designing-accessible-applications.md)

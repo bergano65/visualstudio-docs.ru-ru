@@ -4,42 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
-caps.latest.revision: 4
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 795bf9746c4ae48ac04141a05ba56462ecb90482
-ms.openlocfilehash: 7b69cc5d96a1b51a3d58f688a53bb0156ec3b713
-ms.contentlocale: ru-ru
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: f2c265fde65ae20012e2846d99b86c71254d5b44
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="gpu-usage"></a>Использование GPU
 Используйте инструмент учета использования GPU в концентраторе производительности и диагностики Visual Studio, чтобы получить более полное представление о высокоуровневом использовании оборудования в вашем приложении Direct3D. С его помощью можно определить, привязана ли производительность приложения к ЦП или GPU, и понять, как более эффективно использовать оборудование платформы. Инструмент учета использования GPU поддерживает приложения, использующие Direct3D 12, Direct3D 11 и Direct3D 10 и не поддерживает другие графические API, например Direct2D или OpenGL.  
   
  Это окно **GPU Usage Report** (Отчет об использовании GPU):  
   
- ![Отчет об использовании GPU с временными шкалами ЦП и GPU](~/profiling/media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")  
+ ![Отчет об использовании GPU с временными шкалами ЦП и GPU](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")  
   
 ## <a name="requirements"></a>Требования  
  Ниже приведены требования по использованию инструмента учета использования GPU, дополняющие требования по диагностике графики.  
@@ -60,7 +44,7 @@ ms.lasthandoff: 06/23/2017
   
 2.  В концентраторе "Производительность и диагностика" установите флажок **Использование GPU**. При необходимости установите флажки для других интересующих вас инструментов. Можно одновременно запустить несколько инструментов производительности и диагностики, чтобы получить более полное представление о производительности приложения.  
   
-     ![Выбор требуемых средств диагностики.](~/profiling/media/gfx_diag_diagsession_tools.png "gfx_diag_diagsession_tools")  
+     ![Выбор требуемых средств диагностики.](media/gfx_diag_diagsession_tools.png "gfx_diag_diagsession_tools")  
   
     > [!NOTE]
     >  Не все инструменты производительности и диагностики можно использовать одновременно.  
@@ -79,15 +63,15 @@ ms.lasthandoff: 06/23/2017
   
 1.  В нижней части окна сеанса диагностики выберите ссылку **Остановка сбора** или нажмите кнопку **Остановить** в верхнем левом углу.  
   
-     ![Сбор данных о времени работы GPU и ЦП.](~/profiling/media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")  
+     ![Сбор данных о времени работы GPU и ЦП.](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")  
   
 2.  В верхней части отчета выберите часть одного из графиков, где изображена соответствующая проблема. Выбранный фрагмент может иметь длину до 3 секунд, более длинные фрагменты усекаются с конца.  
   
-     ![Событие после сбора, выбор диапазона для просмотра сведений](~/profiling/media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")  
+     ![Событие после сбора, выбор диапазона для просмотра сведений](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")  
   
 3.  В нижней части отчета выберите ссылку **view details** (Просмотр сведений) в сообщении **…click here to view details of GPU usage for that range** (Щелкните для просмотра сведений об использовании GPU для этого диапазона) для просмотра подробной временной шкалы выделенного фрагмента.  
   
-     ![Событие после сбора, с выбранным диапазоном](~/profiling/media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
+     ![Событие после сбора, с выбранным диапазоном](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
   
  Открывается новый документ с вкладками, содержащий отчет. Отчет об использовании GPU помогает определить, когда событие графики было запущено на ЦП, когда оно достигло GPU и сколько времени потребовалось GPU для его выполнения. Эти сведения помогают выявить узкие места и возможности для повышения уровня параллелизма в коде.  
 
@@ -95,7 +79,7 @@ ms.lasthandoff: 06/23/2017
 ## <a name="export-to-gpuview-or-windows-performance-analyzer"></a>Экспорт в GPUView или Windows Performance Analyzer
 Начиная с Visual Studio 2017 эти данные можно открыть с помощью [GPUView](/windows-hardware/drivers/display/using-gpuview) и [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer), щелкнув ссылку **Открыть в GpuView** или **Открыть в WPA** в нижней правой части диагностического сеанса.
 
-![Открыть в...](~/profiling/media/gfx_diag_open_in.png)
+![Открыть в...](media/gfx_diag_open_in.png)
 <!-- /VERSIONLESS -->
 
 ## <a name="using-the-gpu-usage-report"></a>Работа с отчетом об использовании GPU  
@@ -105,7 +89,7 @@ ms.lasthandoff: 06/23/2017
   
  Это окно **отчета об использовании GPU**.  
   
- ![Отчет об использовании GPU с временными шкалами ЦП и GPU](~/profiling/media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")  
+ ![Отчет об использовании GPU с временными шкалами ЦП и GPU](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")  
   
  При выборе одного из событий в нижней части отчета маркер помещается на связанные события соответствующих временных шкал, обычно это одно событие в потоке ЦП, которые представляет вызов API, и другое событие на одной из временных шкал GPU, представляющее выполнение задачи GPU. Аналогичным образом, при выборе одного из событий на временной шкале выделяется соответствующее событие в нижней части отчета. При уменьшении масштаба временных шкал в верхней части отчета остаются видимыми только наиболее продолжительные события. Чтобы просмотреть более кратковременные события, увеличьте масштаб временных шкал, нажав клавишу CTRL и вращая колесико указывающего устройства либо воспользовавшись элементом управления масштабирования в левом нижнем углу верхней панели. Можно также перетаскивать содержимое панели временных шкал для перемещения по записанным событиям.  
   
@@ -146,7 +130,7 @@ ms.lasthandoff: 06/23/2017
   
 3.  В области **GPU Profiling Configuration** (Конфигурация профилирования GPU) страницы свойств **Общие** снимите флажок **Begin profiling at app start** (Начать профилирование с момента запуска приложения), чтобы отложить профилирование.  
   
-     ![Настройка времени запуска сбора данных об использовании GPU](~/profiling/media/gfx_diag_gpu_usage_config.png "gfx_diag_gpu_usage_config")  
+     ![Настройка времени запуска сбора данных об использовании GPU](media/gfx_diag_gpu_usage_config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
 >  В настоящее время откладывание профилирования не поддерживается для приложений Direct3D 12.  

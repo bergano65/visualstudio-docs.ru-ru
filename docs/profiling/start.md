@@ -1,80 +1,81 @@
 ---
-title: "Запуск | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Start | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f7da3855a699ae350c24646386d3b1a7e39520b4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Запуск
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-**Start** — это параметр программы VSPerfCmd.exe, который инициализирует профилировщик для использования указанного метода профилирования.  
+# <a name="start"></a>Запуск
+**Start** — это параметр программы VSPerfCmd.exe, который инициализирует профилировщик для использования указанного метода профилирования.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 VSPerfCmd.exe /Start:Method /Output:FileName [Options]  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `Method`  
- Должен быть равным одному из следующих ключевых слов:  
+ Должен иметь в качестве значения одно из следующих ключевых слов:  
   
--   **TRACE** — задает метод инструментирования;  
+-   **TRACE** — задает метод инструментирования;  
   
--   **SAMPLE** — задает метод выборки;  
+-   **SAMPLE** — задает метод выборки;  
   
--   **COVERAGE** — задает покрытие кода.  
+-   **COVERAGE** — задает объем протестированного кода;  
   
--   **CONCURRENCY** — определяет метод конфликтов ресурсов.  
+-   **CONCURRENCY** — задает метод состязания за ресурсы.  
   
-## Обязательные параметры  
+## <a name="required-options"></a>Обязательные параметры  
  Если в командной строке задан параметр **Start**, необходимо указать параметр **Output**.  
   
  **Output:** `filename`  
  Задает имя выходного файла.  
   
-## Монопольные параметры  
- Следующие параметры могут использоваться только с параметром **Start** в командной строке.  
+## <a name="exclusive-options"></a>Монопольные параметры  
+ Указанные ниже параметры могут использоваться только с параметром **Start** в командной строке.  
   
  **CrossSession**&#124;**CS**  
- Включает профилирование в нескольких процессах.  Поддерживаются оба имени параметра — **CrossSession** и **CS**.  
+ Включает профилирование в нескольких процессах. Поддерживаются оба имени параметра: **CrossSession** и **CS**.  
   
- **User:**\[`domain\`\]`username`  
+ **User:**[`domain\`]`username`  
  Позволяет клиентам получать доступ к монитору с помощью указанной учетной записи.  
   
- **WinCounter:** `Path` \[**Automark**:`n`\]  
- **WinCounter** задает счетчик производительности Windows, который включается в файл данных профилирования в виде метки.  **AutoMark** задает интервал в миллисекундах между сборами файла данных.  
+ **WinCounter:** `Path` [**Automark**:`n`]  
+ **WinCounter** задает счетчик производительности Windows, который включается в файл данных профилирования в виде метки. **AutoMark** задает интервал в миллисекундах между сборами файла данных.  
   
-## Недопустимые параметры  
- Следующие параметры не могут использоваться с параметром **Start** в командной строке.  
+## <a name="invalid-options"></a>Недопустимые параметры  
+ Указанные ниже параметры не могут использоваться с параметром **Start** в командной строке.  
   
  **Status**  
- Параметр **Status** применяется к процессам, для которых выполняется профилирование.  Этот параметр перечисляет процессы и потоки и их текущее состояние профилирования \(On\/Off\).  Например, если процесс остановлен, параметр **Status** не отразит это в отчете.  **Status** показывает, выполняется ли профилирование для процесса или нет.  
+ Параметр **Status** применяется к процессам, для которых выполняется профилирование. Этот параметр перечисляет процессы и потоки и их текущее состояние профилирования (On/Off). Например, если процесс остановлен, параметр **Status** не отразит это в отчете. **Status** показывает, выполняется ли профилирование для процесса или нет.  
   
- **Shutdown**\[**:**`Timeout`\]  
+ **Shutdown**[**:**`Timeout`]  
  Отключает профилировщик.  
   
-## Пример  
- В следующем примере кода показано, как с помощью параметра VSPerfCmd.exe **Start** инициализировать профилировщик.  
+## <a name="example"></a>Пример  
+ В приведенном ниже примере кода показано, как с помощью параметра **Start** программы VSPerfCmd.exe инициализировать профилировщик.  
   
 ```  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Launch:TestApp.exe  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Профилирование веб\-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Службы профилирования](../profiling/command-line-profiling-of-services.md)
+ [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Профилирование служб](../profiling/command-line-profiling-of-services.md)

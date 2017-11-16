@@ -1,30 +1,29 @@
 ---
-title: "Метод marker_series::write_alert | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkersobj/Concurrency::diagnostic:marker_series::write_alert"
-helpviewer_keywords: 
-  - "Concurrency::diagnostic:marker_series::write_alert - метод"
+title: "Метод marker_series::write_alert | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: cvmarkersobj/Concurrency::diagnostic:marker_series::write_alert
+helpviewer_keywords: Concurrency::diagnostic:marker_series::write_alert method
 ms.assetid: 9d5465c7-f862-47a7-b249-4116605075a6
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7265ae383d87da73f97bcf29438a842df5dda3cb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Метод marker_series::write_alert
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="markerserieswritealert-method"></a>Метод marker_series::write_alert
 Записывает оповещение в файл трассировки визуализатора параллелизма.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 void write_alert(  
@@ -33,14 +32,14 @@ void write_alert(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `_Format`  
- Строка составного формата, содержащая текст, который перемежается несколькими элементами форматирования \(или ни одним из них\), соответствующими объектам в списке аргументов.  
+ Строка составного формата, содержащая текст, перемежаемый нулями или другими элементами форматирования, которые соответствуют объектам в списке аргументов.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** cvmarkersobj.h  
   
  **Пространство имен:** Concurrency::diagnostic  
   
-## См. также  
- [Класс marker\_series](../profiling/marker-series-class.md)
+## <a name="see-also"></a>См. также  
+ [Класс marker_series](../profiling/marker-series-class.md)

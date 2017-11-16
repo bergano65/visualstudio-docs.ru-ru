@@ -1,48 +1,29 @@
 ---
-title: "&quot;Параметры&quot;, &quot;Текстовый редактор&quot;, &quot;C/C++&quot;, &quot;Форматирование&quot; | Документация Майкрософт"
+title: "\"Параметры\", \"Текстовый редактор\", \"C/C++\", \"Форматирование\" | Документация Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.C%2fC%2b%2b.Formatting.General
-dev_langs:
-- C++
-helpviewer_keywords:
-- Text Editor Options dialog box, formatting
+dev_langs: C++
+helpviewer_keywords: Text Editor Options dialog box, formatting
 ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
-caps.latest.revision: 16
-author: kempb
-ms.author: kempb
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 41cca3051eaf1bfdc90f6616900699b8996033b0
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 081dc1215b0e8ac026455a5449761ce103c35551
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# "Параметры", "Текстовый редактор", C/C++, "Форматирование"
-<a id="options-text-editor-cc-formatting" class="xliff"></a>
+# <a name="options-text-editor-cc-formatting"></a>"Параметры", "Текстовый редактор", C/C++, "Форматирование"
 Позволяет изменять поведение по умолчанию редактора кода при написании программ на языках C и C++.  
   
  Чтобы открыть эту страницу, в диалоговом окне **Параметры** в левой области разверните **Текстовый редактор**, **C/C++** и щелкните **Форматирование**.  
@@ -50,13 +31,11 @@ ms.lasthandoff: 05/24/2017
 > [!NOTE]
 >  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## Параметры C/C++
-<a id="cc-options" class="xliff"></a>  
+## <a name="cc-options"></a>Параметры C/C++  
  **Включить автоматические подсказки с краткими сведениями**  
  Включение или отключение возможности кратких сведений IntelliSense.  
   
-## Неактивный код
-<a id="inactive-code" class="xliff"></a>  
+## <a name="inactive-code"></a>Неактивный код  
  **Показывать неактивные блоки кода**  
  Код, который является неактивным по причине объявлений `#ifdef`, окрашивается в другой цвет, что помогает отличать его.  
   
@@ -66,24 +45,21 @@ ms.lasthandoff: 05/24/2017
  **Процент прозрачности неактивного кода**  
  Степень непрозрачности неактивных блоков кода можно настраивать.  
   
-## Indentation;
-<a id="indentation" class="xliff"></a>  
+## <a name="indentation"></a>Indentation;  
  **Отступ для фигурных скобок**  
  Выравнивание фигурных скобок при нажатии клавиши ВВОД после начала блока кода, например для функции или цикла `for`, можно настраивать. Фигурные скобки можно выровнять по первому знаку блока кода или с отступом.  
   
  **Автоматический отступ при нажатии Tab**  
  Можно настроить, что происходит в текущей строке кода при нажатии клавиши TAB. Строка смещается на шаг отступа или вставляется знак табуляции.  
   
-## Прочее
-<a id="miscellaneous" class="xliff"></a>  
+## <a name="miscellaneous"></a>Прочее  
  **Перечисление комментариев в окне "Список задач"**  
  Редактор может проверять открытые исходные файлы на наличие определенных слов в комментариях. Он создает запись в окне **Список задач** для любых обнаруженных ключевых слов.  
   
  **Выделение совпадающих лексем**  
  Когда курсор находится рядом с фигурной скобкой, редактор может выделить парную скобку, что позволяет более удобным образом просматривать содержащийся внутри код.  
   
-## Структура
-<a id="outlining" class="xliff"></a>  
+## <a name="outlining"></a>Структура  
  **Переходить в режим структурирования после открытия файлов**  
  При помещении файла в текстовый редактор можно включить возможность структурирования. Дополнительные сведения см. в разделе [Структура](../../ide/outlining.md). Если выбран этот параметр, возможность структурирования будет включаться при открытии файла.  
   
@@ -99,7 +75,6 @@ ms.lasthandoff: 05/24/2017
   
 -   [Оператор while (C++)](/cpp/cpp/while-statement-cpp)  
   
-## См. также
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>См. также  
  [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)   
  [Использование технологии IntelliSense](../../ide/using-intellisense.md)

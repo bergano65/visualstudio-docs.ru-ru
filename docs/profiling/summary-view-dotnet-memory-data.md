@@ -4,49 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Summary view
+helpviewer_keywords: Summary view
 ms.assetid: 0cb317c3-0ae6-4531-aaa8-447576eec037
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 968d46c4fe771229647282c719815982d81bf416
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
-ms.openlocfilehash: a9d4792cc3f248b7772a81182f54233da8a35e9a
-ms.contentlocale: ru-ru
-ms.lasthandoff: 07/14/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Представление "Сводка" — данные в памяти .NET
-<a id="summary-view---net-memory-data" class="xliff"></a>
+# <a name="summary-view---net-memory-data"></a>Представление "Сводка" — данные в памяти .NET
 В представлении "Сводка" приводится информация о функциях .NET и типах, которым была выделена наибольшая часть памяти, а также о типах, созданных наибольшее число раз в течение сеанса профилирования. Дополнительные сведения, включая описание ссылок на уведомления и списков отчетов, см. в разделе [Представление "Сводка"](../profiling/summary-view.md).  
   
-## Временная шкала
-<a id="timeline-graph" class="xliff"></a>  
+## <a name="timeline-graph"></a>Временная шкала  
  Временная шкала представления "Сводка" показывает загрузку ЦП профилируемым приложением за время профилирования. Временная шкала позволяет фильтровать представление в соответствии с заданным интервалом времени. Дополнительные сведения см. в разделе [Практическое руководство. Фильтрация представлений отчетов на сводной временной шкале](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
   
-## Функции с выделением наибольшей памяти
-<a id="functions-allocating-most-memory" class="xliff"></a>  
+## <a name="functions-allocating-most-memory"></a>Функции с выделением наибольшей памяти  
  Указываются функции, для которых в ходе сеанса профилирования было выделено больше всего байтов памяти.  
   
 |Столбец|Описание|  
@@ -54,8 +33,7 @@ ms.lasthandoff: 07/14/2017
 |**Имя**|Имя функции.|  
 |**Байт %**|Процент всех байтов, выделенных в ходе сеанса профилирования данной функцией или вызванной ей дочерней функцией.|  
   
-## Типы с наибольшим выделением памяти
-<a id="types-with-most-memory-allocated" class="xliff"></a>  
+## <a name="types-with-most-memory-allocated"></a>Типы с наибольшим выделением памяти  
  Указываются типы, для которых в ходе сеанса профилирования было выделено больше всего байтов памяти.  
   
 |Столбец|Описание|  
@@ -63,8 +41,7 @@ ms.lasthandoff: 07/14/2017
 |**Имя**|Имя типа.|  
 |**Байт %**|Процент всех байтов, выделенных в ходе сеанса профилирования данному типу.|  
   
-## Типы с наибольшим числом экземпляров
-<a id="types-with-most-instances" class="xliff"></a>  
+## <a name="types-with-most-instances"></a>Типы с наибольшим числом экземпляров  
  Перечислены типы, созданные в ходе сеанса профилирования наиболее часто. было  
   
 |Столбец|Описание|  
@@ -72,7 +49,6 @@ ms.lasthandoff: 07/14/2017
 |**Имя**|Имя типа.|  
 |**Экземпляры в %**|Процент общего числа объектов .NET, созданных во время сеанса профилирования, которые являются экземплярами этого типа.|  
   
-## См. также
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>См. также  
  [Представление "Сводка"](../profiling/summary-view-sampling-data.md)   
  [Представление "Сводка"](../profiling/summary-view-instrumentation-data.md)

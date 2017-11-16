@@ -7,31 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 138f318b84044a1ed8a92f9b2ee7b47b2211cdb7
-ms.contentlocale: ru-ru
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 6bf9220205e35a0c72d3812e1943154c6fedeacd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Отладка или отключение кода проекта в конструкторе XAML
 Во многих случаях необработанные исключения в конструкторе XAML могут вызываться попыткой кода проекта получить доступ к свойствам или методам, которые возвращают другие значения или работают по-другому, если приложение выполняется в конструкторе. Можно устранить эти исключения, отладив код проекта в другом экземпляре Visual Studio, или временно предотвратить их путем отключения кода проекта в конструкторе.  

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,30 +13,15 @@ helpviewer_keywords:
 - multi-targeting [Visual Studio]
 - multitargeting [Visual Studio]
 ms.assetid: b1702c33-0672-4ebc-b779-2b324d6ea880
-caps.latest.revision: 36
-author: kempb
-ms.author: kempb
+caps.latest.revision: "36"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8bf0b097be929b30627e0f1139c6e0b145933ab4
-ms.openlocfilehash: 93e0c6676d48a0164dcf3b184bcb886934372787
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/26/2017
-
+ms.openlocfilehash: ad2917a1cf0a620f2e228828a152d91ec8948734
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Обзор настройки для различных версий в Visual Studio
 В этой версии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] можно указать версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], необходимую для вашего приложения. Таким образом, если вы хотите использовать эту версию [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для продолжения разработки проекта, работу над которым начали в более ранней версии, вам не нужно изменять целевую версию платформы .NET Framework. Можно также создать решение, содержащее проекты, ориентированные на разные версии платформы. Нацеливание платформы также помогает гарантировать, что приложение использует только те функциональные возможности, которые доступны в указанной версии платформы.  

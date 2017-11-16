@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,29 +15,15 @@ helpviewer_keywords:
 - command line, tools
 - instrumentation, VSPerfReporttool
 ms.assetid: dbfd8d91-4430-4b82-81b9-97ac61412a6c
-caps.latest.revision: 32
+caps.latest.revision: "32"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: bdb5906338c03bee32c3dc62e42000491dfeb704
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 7fceff125460ad5dc9896226458b1c7dddb077a2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 Программа командной строки VSPerfReport используется для создания отчетов с помощью файлов данных профилирования средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. CSV-файл — формат отчета по умолчанию.  
@@ -101,8 +86,8 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
   
 |Параметры|Описание|  
 |-------------|-----------------|  
-|**Diff**  `vspfile1 vspfile2`|Сравнивает два файла отчетов (формата VSP или VSPS). При использовании параметра Diff будут игнорироваться параметры сводки.|  
-|**Diff:**[*значение*]|Разница между двумя значениями ниже этого порогового значения будет игнорироваться. Кроме того, не будут показаны новые данные со значениями ниже порогового.|  
+|**Инструмент сравнения**`vspfile1 vspfile2`|Сравнивает два файла отчетов (формата VSP или VSPS). При использовании параметра Diff будут игнорироваться параметры сводки.|  
+|**Инструмент сравнения:**[*значение*]|Разница между двумя значениями ниже этого порогового значения будет игнорироваться. Кроме того, не будут показаны новые данные со значениями ниже порогового.|  
 |**DiffTable:**[*имя_таблицы*]|Данная таблица используется для сравнения файлов. По умолчанию используется таблица функций.|  
 |**DiffColumn:**[*имя_столбца*]|Данный столбец используется для сравнения значений. По умолчанию используется столбец процента исключающих выборок.|  
 |**QueryDiffTables**|Перечисляет допустимые таблицы и столбцы для двух предоставленных файлов отчетов.|  

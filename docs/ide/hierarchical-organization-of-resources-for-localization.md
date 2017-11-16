@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -19,29 +18,15 @@ helpviewer_keywords:
 - resources [Visual Studio], fallback system
 - resource files, fallback processes
 ms.assetid: dadf8f2c-f74c-44d7-bec0-a1e956d8d38d
-caps.latest.revision: 8
-author: kempb
-ms.author: kempb
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: a8bc841364ce5fd7c2bd9f3e4ff68257bdc35165
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 7f52d57d45c0f78a5bd64b16f10c9bb7c2256cd7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Иерархическая организация ресурсов для локализации
 В Visual Studio локализованные ресурсы (такие данные, как строки и изображения, относящиеся к определенным языкам и региональным параметрам) хранятся в отдельных файлах. Они загружаются в соответствии с языком и региональными параметрами пользовательского интерфейса. Чтобы понять, как загружаются локализованные ресурсы, их можно представить в виде упорядоченной иерархии.  
@@ -58,7 +43,7 @@ ms.lasthandoff: 02/22/2017
   
  Для хранения ресурсы рекомендуется максимально обобщить. Это означает, что по возможности локализованные строки, изображения и т. д. следует хранить в файлах ресурсов для нейтральных языков и региональных параметров (но не специальных). Например, у вас могут быть ресурсы для языка и региональных параметров fr-BE (французский — Бельгия), а ресурсы, которые находятся в иерархии выше, представляют исходные ресурсы en (английский). В таком случае при работе с вашим приложением в системе, настроенной для использования fr-CA (французский — Канада), могут возникнуть проблемы. Система будет искать вспомогательную сборку для fr-CA — и не найдет ее. Следовательно, будет загружена основная сборка с исходными ресурсами на английском языке, а не ресурсы для французского языка. На рисунке ниже показан этот нежелательный сценарий.  
   
- ![Только определенные ресурсы](~/ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")  
+ ![Только определенные ресурсы](../ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")  
   
  Если вы последуете рекомендациям и включите максимально возможное число ресурсов в файл нейтральных ресурсов для языка и региональных параметров fr, пользователь из Канады не увидит ресурсы, отмеченные для языка и региональных параметров fr-BE. Вместо этого он увидит строки на французском языке. Этот оптимальный сценарий показан на рисунке ниже.  
   

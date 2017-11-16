@@ -1,28 +1,27 @@
 ---
-title: "Копирование выбранного | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.threads.selection.copy"
-helpviewer_keywords: 
-  - "визуализатор параллелизма, копирование выбранного"
+title: "Копирование выбранного | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.cv.threads.selection.copy
+helpviewer_keywords: Concurrency Visualizer, Copy Selection
 ms.assetid: 645d9bd3-0a17-4a09-9b25-b37ae3ff484a
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ad53ee70cd4f1c47ab4df2a9df822c5f5be3f713
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Копирование выбранного
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Чтобы скопировать весь стек вызова на вкладке отчета, щелкните **Копировать**.  Затем стек вызова можно вставить в любой программе, поддерживающей это действие.  
+# <a name="copy-selection"></a>Копирование выбранного
+Чтобы скопировать весь стек вызовов на вкладке отчета, щелкните **Копировать**. Затем стек вызовов можно вставить в любую программу, поддерживающую это действие.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Представление потоков](../profiling/threads-view-parallel-performance.md)

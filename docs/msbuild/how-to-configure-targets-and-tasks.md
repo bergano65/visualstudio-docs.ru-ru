@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ce1142acf4acb0e44e85b7e9ab313136d7ed7727
-ms.openlocfilehash: 0ef80ff90b0182405f72f9413de13b699aed971d
-ms.lasthandoff: 03/28/2017
-
+ms.openlocfilehash: 69669acc9cc0815dc8df0c88172213ad3e3698f9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Практическое руководство. Настройка целевых платформ и задач
 Некоторые задачи MSBuild можно настроить так, чтобы они выполнялись в целевой среде, независимо от среды на компьютере разработчика. Например, если вы выполняете на 64-разрядном компьютере сборку приложения, предназначенного для 32-разрядной архитектуры, такие задачи можно выполнять в 32-разрядном процессе.  
@@ -118,7 +103,7 @@ ms.lasthandoff: 03/28/2017
  В отличие от других параметров задач, `MSBuildRuntime` и `MSBuildArchitecture` не очевидны для самой задачи.  Чтобы написать задачу, учитывающую контекст, в котором она выполняется, нужно проверить контекст, вызвав платформу .NET Framework, либо использовать свойства сборки для передачи сведений о контексте через другие параметры задачи.  
   
 > [!NOTE]
-> Атрибуты  `UsingTask` можно задать из набора инструментов и свойств среды.  
+>  Атрибуты `UsingTask` можно задать из набора инструментов и свойств среды.  
   
  Параметры `MSBuildRuntime` и `MSBuildArchitecture` предоставляют самый гибкий способ задать целевой контекст, но при этом имеют наиболее ограниченную область действия.  С одной стороны, так как они задаются для самого экземпляра задачи и не вычисляются до выполнения задачи, они могут наследовать свои значения от полного набора свойств, доступных во время вычисления и построения.  С другой стороны, эти параметры применяются только к определенному экземпляру задачи в конкретном целевом объекте.  
   
@@ -127,4 +112,3 @@ ms.lasthandoff: 03/28/2017
   
 ## <a name="see-also"></a>См. также  
  [Настройка целевых платформ и задач](../msbuild/configuring-targets-and-tasks.md)
-

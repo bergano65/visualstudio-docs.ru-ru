@@ -4,39 +4,21 @@ ms.custom:
 ms.date: 03/09/2017
 ms.reviewer: riande
 ms.suite: 
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- ASP.NET, web applications, deployment, publishing
+helpviewer_keywords: ASP.NET, web applications, deployment, publishing
 ms.assetid: 3A13F685-531C-457D-A98E-631888011E4B
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5951e9c6b61e1cb868d792a5aee9389235cfef30
-ms.openlocfilehash: 6bc4d5116517402825317611c44d4b594ee79b2a
-ms.contentlocale: ru-ru
-ms.lasthandoff: 03/10/2017
-
+ms.openlocfilehash: 16bc087e6c4a12d3f70e2e71ba644faab9567fee
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-
 # Выбор подходящих вариантов публикации
 
 Из среды Visual Studio веб-приложения можно публиковать напрямую в следующие целевые объекты:
@@ -121,4 +103,3 @@ ms.lasthandoff: 03/10/2017
 - Вы используете облачные службы на платформе, отличной от Azure, доступ к которой возможен через URL-адреса.
 - Вы хотите использовать для развертывания учетные данные, отличные от используемых в Visual Studio, или напрямую связанные с вашими учетными записями Azure.
 - Вы хотите удалять файлы из целевого объекта при каждом развертывании.
-

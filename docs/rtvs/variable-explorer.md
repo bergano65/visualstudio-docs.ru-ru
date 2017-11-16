@@ -1,27 +1,24 @@
 ---
 title: "Обозреватель переменных в инструментах R для Visual Studio | Документация Майкрософт"
 ms.custom: 
-ms.date: 6/30/2017
+ms.date: 06/30/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 6c669434-40d8-4970-92cc-502a98c8b5ab
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 1d86bca24d9e8d4d1bde8d62cd0be25c485b9253
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 92396808161886cf3b15f7e8e0ab23a0a35e26b9
-ms.contentlocale: ru-ru
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="variable-explorer"></a>Обозреватель переменных
 
 В окне **Обозреватель переменных**, для открытия которого используется команда **Инструменты R > Окна > Обозреватель переменных** (или клавиши CTRL + 8, если использовалась команда **Инструменты R > Параметры обработки и анализа данных**), представлены все переменные в заданной области для текущего сеанса R. Например, если открыть обозреватель переменных и ввести в [интерактивном окне](interactive-repl.md) следующие строки:
@@ -82,4 +79,3 @@ n <- c(1,2,3,5,8,13)
 После определения импортируемого файла CSV Visual Studio отображает диалоговое окно **Импорт набора данных**, в котором имеются параметры управления синтаксическим анализом этого файла данных (то есть какой разделитель полей следует использовать и как обрабатывать кавычки). Можно также просмотреть импортированный кадр данных и исходный файл данных.
 
 ![Диалоговое окно импорта набора данных](media/variable-explorer-import-dataset-dialog.png)
-

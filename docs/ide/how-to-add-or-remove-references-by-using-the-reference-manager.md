@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.ReferenceManager
+f1_keywords: VS.ReferenceManager
 helpviewer_keywords:
 - Visual C# projects, references
 - references [Visual Studio], adding
@@ -23,30 +21,15 @@ helpviewer_keywords:
 - references [Visual Studio], removing
 - referencing components, assemblies not listed
 ms.assetid: 1aabb520-99b0-46c6-9368-21b4d84793eb
-caps.latest.revision: 45
-author: kempb
-ms.author: kempb
+caps.latest.revision: "45"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: b2141a16d27725c54b3407e92151e0ed7afd745e
-ms.contentlocale: ru-ru
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: 3c5e414ab56641171e9d3f5cddf758b6a13a6458
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Практическое руководство. Добавление и удаление ссылок с помощью диспетчера ссылок
 Диалоговое окно **Диспетчер ссылок** позволяет добавлять ссылки на компоненты, которые разработали вы, корпорация Майкрософт или другая организация, а также управлять этими ссылками. При разработке универсального приложения Windows ваш проект автоматически ссылается на все правильные библиотеки DLL пакета SDK Windows. При разработке приложения .NET ваш проект автоматически ссылается на mscorlib.dll. Некоторые API .NET представлены в компонентах, которые необходимо добавить вручную. Ссылки на компоненты COM или пользовательские компоненты необходимо добавить вручную.  
@@ -233,4 +216,3 @@ ms.lasthandoff: 06/23/2017
 
 ## <a name="see-also"></a>См. также  
  [Управление ссылками в проекте](../ide/managing-references-in-a-project.md)
-

@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 04/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 66b5b4eb-13b5-4071-98d2-87fafa4598a8
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: a923d3fa962ee826d86a1c6946ae87a469b728d6
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 03fd3a4cc84852ad922dec417850a0f4a0b1ea1c
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Начало работы с набором средств Visual Studio для Unity
 В этом разделе вы узнаете, как установить инструменты Visual Studio для Unity и настроить проект Unity для работы с Visual Studio.  
@@ -91,9 +74,9 @@ ms.lasthandoff: 05/13/2017
  [Учебники – страница "Изучение Unity"](http://unity3d.com/learn/tutorials/modules)  
 
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2. Настройка редактора Unity для использования набора средств Visual Studio для Unity  
- Чтобы в проекте можно было использовать инструменты Visual Studio для Unity, просто задайте Visual Studio в качестве внешнего редактора скриптов. В редакторе Unity в главном меню выберите пункт **Edit > Preferences**(Правка > Настройки), а затем в диалоговом окне **Unity Preferences** (Настройки Unity) выберите **External Tools**(Внешние средства). Далее укажите в качестве значения свойства **External Script Editor** (Внешний редактор скриптов) версию Visual Studio, которую нужно использовать (для этой версии Visual Studio должны быть установлены инструменты Visual Studio для Unity), и убедитесь в том, что задано свойство **Editor Attaching** (Присоединение редактора).  
+ Чтобы в проекте можно было использовать инструменты Visual Studio для Unity, просто задайте Visual Studio в качестве внешнего редактора скриптов. В редакторе Unity в главном меню выберите пункт **Edit &gt; Preferences**(Правка &gt; Настройки), а затем в диалоговом окне **Unity Preferences** (Настройки Unity) выберите **External Tools**(Внешние средства). Далее укажите в качестве значения свойства **External Script Editor** (Внешний редактор скриптов) версию Visual Studio, которую нужно использовать (для этой версии Visual Studio должны быть установлены инструменты Visual Studio для Unity), и убедитесь в том, что задано свойство **Editor Attaching** (Присоединение редактора).  
 
- Чтобы проверить, включена ли встроенная поддержка инструментов Visual Studio для Unity, воспользуйтесь диалоговым окном **About Unity** (Сведения о Unity). In the Unity editor, on the main menu, choose **Help > About Unity** (Справка > Сведения о Unity). Если инструменты Visual Studio для Unity установлены и правильно настроены, в левом нижнем углу диалогового окна **About Unity** (Сведения о Unity).  
+ Чтобы проверить, включена ли встроенная поддержка инструментов Visual Studio для Unity, воспользуйтесь диалоговым окном **About Unity** (Сведения о Unity). In the Unity editor, on the main menu, choose **Help &gt; About Unity** (Справка &gt; Сведения о Unity). Если инструменты Visual Studio для Unity установлены и правильно настроены, в левом нижнем углу диалогового окна **About Unity** (Сведения о Unity).  
 
  Наконец, убедитесь в том, что вы установили целевой объект сборки на странице **Build Settings** (Параметры сборки) и что функция **Script Debugging** (Отладка скриптов) включена.  
 
@@ -129,8 +112,8 @@ ms.lasthandoff: 05/13/2017
  ![Открытие проекта Unity в Visual Studio.](../cross-platform/media/vstu_configure_open_in_visual_studio.png "vstu_configure_open_in_visual_studio")  
 
 ## <a name="next-steps"></a>Дальнейшие действия  
+
  Сведения о работе с проектом Unity и его отладке в Visual Studio см. в разделе [Использование инструментов Visual Studio для Unity](../cross-platform/using-visual-studio-tools-for-unity.md).  
 
 ## <a name="see-also"></a>См. также  
  [Главная страница Unity](http://unity3d.com)
-

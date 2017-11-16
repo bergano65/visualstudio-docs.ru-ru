@@ -1,11 +1,10 @@
 ---
 title: "Инструменты R для Visual Studio. Параметры | Документация Майкрософт"
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 f1_keywords:
@@ -14,18 +13,16 @@ f1_keywords:
 - vs.toolsoptionspages.r_tools.#150
 ms.topic: article
 ms.assetid: 554dc602-ecad-4cd0-8e6f-a60bb8a2328f
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 82e17109ff595ae566ea326dae9237274ee5ad15
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 1e017806ca7bf3d23410ba3a2f999dca0b78f240
-ms.openlocfilehash: 5777be7df1256d4fe4d34be41fb10eb546d4a0ac
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="r-tools-for-visual-studio-options"></a>Инструменты R для Visual Studio. Параметры
  
 Параметры доступны в меню **Инструменты R > Параметры**, а также в меню **Сервис > Параметры** в разделе **Инструменты R**.
@@ -112,4 +109,3 @@ ms.lasthandoff: 09/26/2017
 | Сохранять рабочую область при закрытии проекта | `No` | Если выбрано значение `Yes`, при закрытии проекта глобальная среда сохраняется в файл `.RData`. |
 | Показать диалоговое окно подтверждения перед переключением рабочих областей | `Yes` | Если выбрано значение `No`, при переключении между различными рабочими областями не отображается запрос на подтверждение. См. раздел [Переключение между рабочими областями](workspaces.md#switching-between-workspaces) |
  
-

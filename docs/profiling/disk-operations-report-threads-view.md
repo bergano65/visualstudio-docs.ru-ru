@@ -1,48 +1,47 @@
 ---
-title: "Отчет операций диска (представление потоков) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.threads.report.diskoperations"
-helpviewer_keywords: 
-  - "визуализатор параллелизма, отчет «Операции с файлами» (представление «Потоки»)"
+title: "Отчет операций диска (представление \"Потоки\") | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.cv.threads.report.diskoperations
+helpviewer_keywords: Concurrency Visualizer, File Operations Report (Threads View)
 ms.assetid: e352f4f3-f654-45eb-96ed-417863487ddc
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a30a37f5003d407edb46ab3d4475b99f5bbe54ab
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Отчет операций диска (представление потоков)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Отчет операций диска отображает операции дискового ввода\-вывода в каналах диска.  
+# <a name="disk-operations-report-threads-view"></a>Отчет операций диска (представление потоков)
+В отчете операций диска показаны дисковые операции ввода-вывода в каналах диска.  
   
- Для каждого доступа к диску, происходящего на стороне процесса, который в данный момент профилируется в отображаемом в данный момент промежутке времени, отмечены следующие сведения:  
+ Для каждого типа доступа к диску, выполняемого от имени процесса, профилируемого в текущем периоде, выводятся следующие сведения:  
   
--   Имя и PID процесса, выполнившего доступ к диску  
+-   имя и идентификатор процесса, который обращался к диску;  
   
--   Идентификатор потока, который получил доступ диск  
+-   идентификатор потока, который обращался к диску;  
   
--   Имя файла, к которому был доступ  
+-   имя файла, к которому был получен доступ;  
   
--   Количество чтений на файл  
+-   число операций чтения на файл;  
   
--   Число прочитанных байтов  
+-   количество считанных байтов;  
   
--   Задержка чтения \(мс\)  
+-   задержка чтения в миллисекундах;  
   
--   Количество записей  
+-   число операций записи;  
   
--   Число записанных байтов  
+-   число записанных байтов;  
   
--   Задержка записи \(мс\)  
+-   задержка записи в миллисекундах.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Представление потоков](../profiling/threads-view-parallel-performance.md)

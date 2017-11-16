@@ -1,30 +1,29 @@
 ---
-title: "Функция CvInitProvider | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkers/CvInitProvider"
-helpviewer_keywords: 
-  - "CvInitProvider - метод"
+title: "Функция CvInitProvider | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: cvmarkers/CvInitProvider
+helpviewer_keywords: CvInitProvider method
 ms.assetid: ba1863ad-e35f-4d34-a2f2-5e68957d1915
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f0ddb249c825048b5bb98dd5b648902663ccd85a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Функция CvInitProvider
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Инициализирует поставщика маркера.  Должен быть вызван перед любой другой функцией пакета SDK визуализатора параллелизма.  
+# <a name="cvinitprovider-function"></a>Функция CvInitProvider
+Инициализирует поставщик маркеров. Должна быть вызвана до любой другой функции пакета SDK визуализатора параллелизма.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT CvInitProvider(  
@@ -33,18 +32,18 @@ HRESULT CvInitProvider(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pGuid`  
- GUID поставщика.  Не может принимать значение NULL.  
+ GUID поставщика. Не может принимать значение NULL.  
   
  `ppProvider`  
- Адрес выходной переменной, в которой будет храниться контекст поставщика.  Не может принимать значение NULL.  
+ Адрес выходной переменной, в которой будет храниться контекст поставщика. Не может принимать значение NULL.  
   
-## Возвращаемое значение  
- S\_ОК в случае, если поставщик будет успешно инициализирован, или код ошибки в случае, если возникла какая\-либо ошибка.  Используйте макрос SUCCEEDED\/FAILED для проверки условия ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Значение S_OK, если поставщик успешно инициализирован, или код ошибки, если были какие-либо ошибки. Для проверки условия ошибки используйте макрос SUCCEEDED/FAILED.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** cvmarkers.h  
   
-## См. также  
- [Справочник по библиотеке C\+\+](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>См. также  
+ [Справочник по библиотеке C++](../profiling/cpp-library-reference.md)

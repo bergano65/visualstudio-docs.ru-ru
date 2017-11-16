@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -37,30 +36,15 @@ helpviewer_keywords:
 - find text
 - replacing text
 ms.assetid: a62545c3-1570-4d12-99fb-a82607eb35a1
-caps.latest.revision: 31
+caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 7e63a74cbc1155cb81bc3f726506a2374b9ee72d
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: a2b925e32711e1624a4dfbe74fb5614ee6e0b062
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
 С помощью элементов управления **Поиск и замена** или **Поиск и замена в файлах** можно найти и заменить текст в редакторе кода Visual Studio и некоторых текстовых окнах вывода, таких как **Результаты поиска**. Также можно искать и заменять текст в некоторых окнах конструктора, таких как конструктор XAML и конструктор Windows Forms, а также окнах инструментов.  

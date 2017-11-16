@@ -4,66 +4,41 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.performance.view.resourcecontention
-helpviewer_keywords:
-- Resource Contentions view
+f1_keywords: vs.performance.view.resourcecontention
+helpviewer_keywords: Resource Contentions view
 ms.assetid: 14a7f774-211f-4ef8-af05-94d1c8f65d2f
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 0e763d37cecb35bee3d6b4ace9d5e4f9bf4e3173
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
-ms.openlocfilehash: 5a2db682fb86b36d86e117791fb88a299fe71732
-ms.contentlocale: ru-ru
-ms.lasthandoff: 07/14/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Представление "Состязание за ресурсы" — данные по состязаниям
-<a id="resource-contentions-view---contention-data" class="xliff"></a>
+# <a name="resource-contentions-view---contention-data"></a>Представление "Состязание за ресурсы" — данные по состязаниям
 В представлении "Состязание за ресурсы" приводятся данные по состязаниям за ресурсы, являющиеся источниками событий состязания. Событие состязания возникает, когда функция в потоке вынуждена ожидать доступа к ресурсу из-за того, что функции в другом потоке предоставлен монопольный доступ к ресурсу. Каждый из ресурсов является корневым узлом дерева вызовов, в котором представлены пути выполнения функций, приведшие к созданию событий состязания.  
   
-## Значения данных
-<a id="data-values" class="xliff"></a>  
+## <a name="data-values"></a>Значения данных  
   
-### Значения ресурсов
-<a id="resource-values" class="xliff"></a>  
+### <a name="resource-values"></a>Значения ресурсов  
  Данные в строке ресурса отражают общее время блокирования доступа к ресурсу в данных профилирования, а также общее число событий состязания, созданных по причине конфликта доступа к данному ресурсу. Инклюзивные и эксклюзивные значения для ресурса всегда совпадают.  
   
-### Значения функции
-<a id="function-values" class="xliff"></a>  
+### <a name="function-values"></a>Значения функции  
  Значения функции основаны на экземплярах функции, имеющих место в представленном в дереве вызове пути выполнения.  
   
 -   Эксклюзивные значения основаны на событиях, происходящих при выполнении функцией операторов в теле функции. События, произошедшие в функциях, вызванных данной функцией, не включаются в эксклюзивное время.  
   
 -   Инклюзивные значения основаны на событиях, происходящих при выполнении данной функции или вызванной ею функции.  
   
-### Значения в процентах
-<a id="percentage-values" class="xliff"></a>  
+### <a name="percentage-values"></a>Значения в процентах  
  Значения в процентах основаны на суммарном времени или общем количестве событий состязания в данных профилирования. Если к отчету или представлению сеанса профилирования применить фильтр, то в качестве суммарных значений будут использоваться только данные по времени блокировки и количестве состязаний.  
   
-## Навигация по представлению "Выделение ресурсов"
-<a id="navigating-the-resource-allocation-view" class="xliff"></a>  
+## <a name="navigating-the-resource-allocation-view"></a>Навигация по представлению "Выделение ресурсов"  
   
 |Столбец|Описание|  
 |------------|-----------------|  

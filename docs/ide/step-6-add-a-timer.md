@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
-caps.latest.revision: 21
-author: kempb
-ms.author: kempb
+caps.latest.revision: "21"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: d4a31cd461f470c7b510be02c33dd1744f7ed616
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 0ab82e9962871d6dd5da724a7a72677c387e9a53
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-6-add-a-timer"></a>Шаг 6. Добавление таймера
 Затем добавьте в игру "Подбери пару" элемент управления **Таймер**. Таймер ожидает заданное число миллисекунд, а затем вызывает событие, называемое *тактом*. Это бывает удобно для запуска действия или повтора действия с определенной периодичностью. В этом случае таймер нужен для того, чтобы игроки могли выбрать два значка, а если они не совпадают, скрыть их через небольшой отрезок времени.  
@@ -51,7 +35,8 @@ ms.lasthandoff: 09/06/2017
   
 3.  Выберите значок элемента управления "Таймер" в конструкторе Windows Forms, а затем нажмите клавишу ВВОД или дважды щелкните таймер, чтобы добавить пустой обработчик событий **Tick**. Замените код следующим кодом или вручную введите следующий код в обработчик событий.  
   
-     [!code-csharp[VbExpressTutorial4Step6#7](../ide/codesnippet/CSharp/step-6-add-a-timer_1.cs)] [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]  
+     [!code-csharp[VbExpressTutorial4Step6#7](../ide/codesnippet/CSharp/step-6-add-a-timer_1.cs)]
+     [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]  
   
      Обработчик события Tick выполняет три действия. Сначала он останавливает таймер, вызывая метод `Stop()`. Затем он использует две ссылочные переменные, `firstClicked` и `secondClicked`, чтобы снова сделать невидимыми значки двух меток, которые выбрал игрок. Наконец, он сбрасывает значения ссылочных переменных `firstClicked` и `secondClicked` на `null` в Visual C# и `Nothing` в Visual Basic. Это важный шаг, поскольку таким образом программа сбрасывает себя. Теперь она не отслеживает какие-либо элементы управления `Label` и снова готова к выбору метки игроком.  
   
@@ -60,7 +45,8 @@ ms.lasthandoff: 09/06/2017
   
 4.  Чтобы увидеть работу нового таймера, перейдите к редактору кода и добавьте следующий код в начало и конец метода обработчика событий `label_Click()`. (Добавляется оператор `if` в начало метода и три оператора в конец. Остальная часть метода остается неизменной.)  
   
-     [!code-csharp[VbExpressTutorial4Step6#8](../ide/codesnippet/CSharp/step-6-add-a-timer_2.cs)] [!code-vb[VbExpressTutorial4Step6#8](../ide/codesnippet/VisualBasic/step-6-add-a-timer_2.vb)]  
+     [!code-csharp[VbExpressTutorial4Step6#8](../ide/codesnippet/CSharp/step-6-add-a-timer_2.cs)]
+     [!code-vb[VbExpressTutorial4Step6#8](../ide/codesnippet/VisualBasic/step-6-add-a-timer_2.vb)]  
   
      Код в начале метода проверяет, запущен ли таймер, обращаясь к значению свойству **Enabled**. Таким образом, если игрок выбирает первый и второй элемент управления `Label` и таймер запускается, выбор третьего элемента управления Label ни к чему не приведет.  
   

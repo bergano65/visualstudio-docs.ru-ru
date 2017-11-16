@@ -1,30 +1,29 @@
 ---
-title: "Метод marker_series::write_message | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkersobj/Concurrency::diagnostic::marker_series::write_message"
-helpviewer_keywords: 
-  - "Concurrency::diagnostic::marker_series::write_message - метод"
+title: "Метод marker_series::write_message | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: cvmarkersobj/Concurrency::diagnostic::marker_series::write_message
+helpviewer_keywords: Concurrency::diagnostic::marker_series::write_message method
 ms.assetid: 546121bc-67e0-4a5a-a456-12bd78fd6de2
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c322fb6f4419aad732db3aa02940edeab6850f10
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Метод marker_series::write_message
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="markerserieswritemessage-method"></a>Метод marker_series::write_message
 Записывает сообщение в файл трассировки визуализатора параллелизма.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 void write_message(  
@@ -49,20 +48,20 @@ void write_message(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `_Format`  
- Строка составного формата, содержащая текст, который перемежается несколькими элементами форматирования \(или ни одним из них\), соответствующими объектам в списке аргументов.  
+ Строка составного формата, содержащая текст, перемежаемый нулями или другими элементами форматирования, которые соответствуют объектам в списке аргументов.  
   
  `_Importance`  
  Уровень важности.  
   
  `_Category`  
- Уровень Category.Importance.  
+ Категория.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** cvmarkersobj.h  
   
  **Пространство имен:** Concurrency::diagnostic  
   
-## См. также  
- [Класс marker\_series](../profiling/marker-series-class.md)
+## <a name="see-also"></a>См. также  
+ [Класс marker_series](../profiling/marker-series-class.md)

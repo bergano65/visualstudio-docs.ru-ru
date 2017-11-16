@@ -1,27 +1,24 @@
 ---
 title: "Визуализация данных с помощью инструментов R для Visual Studio | Документация Майкрософт"
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 496619c9-4005-4c20-baf6-80b4bb1ceb56
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 48aaf1c8e02c1de84c36d8bff7d9b73eb4bd3af7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: af9627ba4eb245f4c4947b5d365449fce76c166c
-ms.contentlocale: ru-ru
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="creating-visual-data-plots-with-r"></a>Создание визуальных графиков данных с помощью R
 
 Построение графиков является ключевой частью рабочего процесса обработки и анализа данных. В инструментах R для Visual Studio (RTVS) все действия по построению графиков сосредоточены в одном или нескольких окнах графиков, которые призваны повысить эффективность работы специалистов по анализу и обработке данных с помощью этого ключевого действия.
@@ -103,4 +100,3 @@ ms.lasthandoff: 07/12/2017
 - `dev.new()`: создание нового графического устройства (нового окна графиков).
 - `dev.set(<device number>)`: задание активного графического устройства.
 - `dev.off()`: удаление активного устройства.
-

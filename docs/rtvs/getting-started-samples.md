@@ -1,27 +1,24 @@
 ---
 title: "Примеры проектов для инструментов R для Visual Studio | Документация Майкрософт"
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: aa52ed0e-cdb5-4fb2-814c-c94cac2ffc6f
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 6ceedfff067f245de4b159728bd34a3a849fe9dc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: ec9862f9e7fcbd084d5e12c0467c8b608a5b4956
-ms.contentlocale: ru-ru
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Инструменты R для Visual Studio. Примеры проектов
 
 Эта коллекция примеров поможет вам приступить к работе с R, инструментами R для Visual Studio (RTVS) и Microsoft R Server.
@@ -93,4 +90,3 @@ ms.lasthandoff: 07/12/2017
 На графике ниже представлено сравнение затраченного времени в секундах, которое потребовалось для создания модели логистической регрессии для прогнозирования того, будет ли задержка авиарейсов составлять более 15 минут.  Время, затраченное при использовании CRAN R, значительно увеличивается при небольшом увеличении числа строк, тогда как при использовании MRS время увеличивается лишь примерно в два раза. Сведения об этом тесте производительности см. в примере `Benchmarks/rxGlm_benchmark.R`.
 
 ![Тест производительности rxGlm](media/samples-rxGLM-benchmark.png)
-

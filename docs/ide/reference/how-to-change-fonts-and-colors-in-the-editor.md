@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,33 +14,17 @@ helpviewer_keywords:
 - text, fonts
 - editors, text color
 ms.assetid: 3f7629d1-1cdf-4046-9a31-0632517f234d
-caps.latest.revision: 11
-author: kempb
-ms.author: kempb
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 7ee0bae36003baff806dc010082668bec019a837
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 300ca6d9a3fd633b9cd20ad0436901e4080560e0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Изменение шрифтов и цветов в редакторе
-<a id="how-to-change-fonts-and-colors-in-the-editor" class="xliff"></a>
+# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Практическое руководство. Изменение шрифтов и цветов в редакторе
 Вы можете изменить начертание, размер шрифта, а также цвет его переднего плана и фона для текстовых **отображаемых элементов** в редакторе кода. При изменении параметров шрифта учитывайте следующее:  
   
 -   Значения для параметров **Шрифт** и **Размер** применяются глобально для всех текстовых элементов во всех редакторах [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -53,8 +36,7 @@ ms.lasthandoff: 05/24/2017
 > [!NOTE]
 >  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в **справке** в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-### Изменение начертания, размера и цвета шрифта по умолчанию
-<a id="to-change-the-default-font-face-size-and-colors" class="xliff"></a>  
+### <a name="to-change-the-default-font-face-size-and-colors"></a>Изменение начертания, размера и цвета шрифта по умолчанию  
   
 1.  Выберите **Параметры** в меню **Сервис**, а затем в папке **Среда** выберите **Шрифты и цвета**.  
   
@@ -71,8 +53,7 @@ ms.lasthandoff: 05/24/2017
   
 5.  Нажмите кнопку **ОК**.  
   
-## См. также
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>См. также  
  [Настройка редактора](../../ide/customizing-the-editor.md)   
  [Диалоговое окно "Параметры текстового редактора"](../../ide/reference/text-editor-options-dialog-box.md)   
  [Создание кода](../../ide/writing-code-in-the-code-and-text-editor.md)   

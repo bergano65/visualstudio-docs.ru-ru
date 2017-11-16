@@ -1,32 +1,33 @@
 ---
-title: "Функция CvIsEnabled | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkers/CvIsEnabledEx"
-  - "cvmarkers/CvIsEnabled"
-helpviewer_keywords: 
-  - "CvIsEnabled - метод"
-  - "CvIsEnabledEx - метод"
+title: "Функция CvIsEnabled | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- cvmarkers/CvIsEnabledEx
+- cvmarkers/CvIsEnabled
+helpviewer_keywords:
+- CvIsEnabled method
+- CvIsEnabledEx method
 ms.assetid: 2e4fea6d-758d-4150-8744-6102a1d58c1c
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 50dc5727ab98f09ada660c2d92c07d908f71c548
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Функция CvIsEnabled
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Определяет, любому ли сеансу доступен указанный поставщик трассировки событий Windows.  
+# <a name="cvisenabled-function"></a>Функция CvIsEnabled
+Определяет, любому ли сеансу доступен указанный поставщик ETW.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT CvIsEnabled(  
@@ -39,7 +40,7 @@ HRESULT CvIsEnabledEx(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `category`  
  Категория.  
   
@@ -47,13 +48,13 @@ HRESULT CvIsEnabledEx(
  Уровень важности.  
   
  `pProvider`  
- Допустимый объект поставщика.  Не может принимать значение NULL.  
+ Допустимый объект поставщика. Не может принимать значение NULL.  
   
-## Возвращаемое значение  
- S\_ОК, если в данный момент поставщик доступен.  S\_FALSE, если в настоящее время поставщик недоступен.  Код ошибки в том случае, если были какие\-либо ошибки.  Используйте макрос FAILED для проверки условия ошибки, а затем проверьте S\_ОК\/S\_FALSE.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Значение S_OK, если в данный момент поставщик доступен. Значение S_OK, если в данный момент поставщик недоступен. Код ошибки в том случае, если были какие-либо ошибки. Используйте макрос FAILED для проверки условия ошибки, а затем проверьте S_ОК/S_FALSE.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** cvmarkers.h  
   
-## См. также  
- [Справочник по библиотеке C\+\+](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>См. также  
+ [Справочник по библиотеке C++](../profiling/cpp-library-reference.md)

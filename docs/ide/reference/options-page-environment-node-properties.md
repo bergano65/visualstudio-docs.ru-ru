@@ -1,40 +1,25 @@
 ---
-title: "Страница &quot;Параметры&quot;, свойства узла &quot;Среда&quot; | Документы Майкрософт"
+title: "Страница \"Параметры\", свойства узла \"Среда\" | Документы Майкрософт"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - automation [Visual Studio], controlling Tools Options
 - Tools Options settings, Environment node properties
 ms.assetid: 26dca41f-91fc-4ca7-9103-3da402baa1d5
-caps.latest.revision: 18
-author: kempb
-ms.author: kempb
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: ac450b7e414596632d56117813907ee4406ad69d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ae50f2d537836501ec4c9c29e50d86aa3e325661
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="options-page-environment-node-properties"></a>Страница “Параметры”, свойства узла “Среда”
 В этом документе описываются некоторые из страниц (или коллекций свойств) диалогового окна **Параметры**, связанных с `DTE.Properties("Environment", <Property Page>)`, категорией **Среда**. Заголовок каждого из подразделов представляет собой вызов, используемый для доступа к коллекции свойств, а таблицы содержат списки свойств в коллекции.  
@@ -50,7 +35,7 @@ ms.lasthandoff: 02/22/2017
 |Анимации|Get/Set (Boolean)|Определяет, использует ли интегрированная среда разработки (IDE) анимацию в строке состояния.|  
 |AnimationSpeed|Get/Set (Short)||  
 |AutoAdjustExperience|Get/Set (Boolean)|Автоматически настраивает визуальное представление в зависимости от производительности клиента.|  
-|RichClientExperienceOptions|Get/Set (Enum)|Обеспечивает расширенное визуальное представление клиента со значениями в <xref:EnvDTE100.vsRichClientExperienceOptions>.|  
+|RichClientExperienceOptions|Get/Set (Enum)|Включает расширенное визуальное представление клиента, используя значения в <xref:EnvDTE100.vsRichClientExperienceOptions>.|  
 |CloseButtonActiveTabOnly|Get/Set (Boolean)|Определяет, отображается ли кнопка **Закрыть** только на активной вкладке.|  
 |AutohidePinActiveTabOnly|Get/Set (Boolean)|Определяет, применяется ли действие кнопки **Автоматически скрывать** только к активной вкладке.|  
   
@@ -163,7 +148,7 @@ ms.lasthandoff: 02/22/2017
 |ConfirmTaskDeletion|Get/Set (Boolean)|Указывает, запрашивать ли подтверждение при удалении задач из **списка задач**.|  
 |WarnOnAddingHiddenItem|Get/Set (Boolean)|Указывает, выводить ли предупреждение при добавлении пользовательской задачи, которая не будет отображаться.|  
 |DontShowFilePaths|Get/Set (Boolean)|Указывает, следует ли отображать полные пути к файлам в списке задач.|  
-|CommentTokens|SafeArray|Возвращает SafeArray значений маркера комментариев. Каждое имеет поля, `Name` (string) и `Priority` (<xref:EnvDTE.vsTaskPriority> — высокий, средний или низкий).|  
+|CommentTokens|SafeArray|Возвращает SafeArray значений маркера комментариев. Каждое имеет поля,`Name`(string) и`Priority` (<xref:EnvDTE.vsTaskPriority>, высокий, средний или низкий).|  
   
 ## <a name="web-browser"></a>Веб-браузер  
  `DTE.Properties("Environment", "WebBrowser")`  

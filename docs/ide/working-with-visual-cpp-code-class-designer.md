@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.classdesigner.cpplimitation
+f1_keywords: vs.classdesigner.cpplimitation
 helpviewer_keywords:
 - Visual C++, Class Designer
 - Class Designer, Visual C++ support
@@ -19,33 +17,17 @@ helpviewer_keywords:
 - C++, class diagrams
 - C++, Class Designer
 ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
-caps.latest.revision: 23
-author: kempb
-ms.author: kempb
+caps.latest.revision: "23"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: 0d974e9af7d22c5d02b1313cb2e46c873592f4d3
-ms.contentlocale: ru-ru
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: ef75c8108b7d86367e69ab7eead8a3a282596560
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Работа с кодом Visual C++ (конструктор классов)
-<a id="working-with-visual-c-code-class-designer" class="xliff"></a>
+# <a name="working-with-visual-c-code-class-designer"></a>Работа с кодом Visual C++ (конструктор классов)
 Конструктор классов отображает визуальную область конструктора, которая называется *схемой классов* и предоставляет визуальное преставление элементов кода в проекте. Схемы классов можно использовать для разработки и визуализации классов и других типов в проекте.  
 
  Конструктор классов поддерживает следующие элементы кода C++:  
@@ -67,21 +49,17 @@ ms.lasthandoff: 06/23/2017
 > [!NOTE]
 >  Это не аналог схемы классов UML, которую можно создать в проекте моделирования. Дополнительные сведения см. в разделе [UML-схемы классов: справочник](../modeling/uml-class-diagrams-reference.md).  
 
-## Устранение неполадок при разрешении типов и отображение проблем
-<a id="troubleshooting-type-resolution-and-display-issues" class="xliff"></a>  
+## <a name="troubleshooting-type-resolution-and-display-issues"></a>Устранение неполадок при разрешении типов и отображение проблем  
 
-### Расположение исходных файлов
-<a id="location-of-source-files" class="xliff"></a>  
+### <a name="location-of-source-files"></a>Расположение исходных файлов  
  Конструктор классов не отслеживает расположение исходных файлов. Таким образом, при изменении структуры проекта или перемещении исходных файлов в проекте конструктор классов может потерять тип (особенно исходный тип определения типа, базовых классов или типов связи). Может возникнуть ошибка, например **Конструктору классов не удалось отобразить этот тип**. В этом случае перетащите измененный или перемещенный исходный код в схему классов и повторно отобразите ее.  
 
-### Проблемы с обновлением и производительностью
-<a id="update-and-performance-issues" class="xliff"></a>  
+### <a name="update-and-performance-issues"></a>Проблемы с обновлением и производительностью  
  Для проектов Visual C++ для отображения изменения в исходном файле на схеме классов может потребоваться от 30 до 60 секунд. Из-за такой задержки конструктор классов может выдать ошибку **В выбранном блоке не найдены типы**. После возникновения подобной ошибки нажмите кнопку **Отмена** в сообщение об ошибке и дождитесь отображения элемента кода в представлении классов. После этого конструктор классов должен быть в состоянии отобразить этот тип.  
 
  Если схема классов не обновляется для вывода внесенных в код изменений, может потребоваться закрыть схему и снова открыть ее.  
 
-### Проблемы разрешения типа
-<a id="type-resolution-issues" class="xliff"></a>  
+### <a name="type-resolution-issues"></a>Проблемы разрешения типа  
  Конструктор классов может оказаться не в состоянии разрешить типы по следующим причинам:  
   
 -   Тип находится в проекте или сборке, на которые нет ссылок из проекта, содержащего эту схему классов. Чтобы исправить эту ошибку, добавьте ссылку на проект или сборку, содержащие данный тип. Дополнительные сведения см. в статье [Управление ссылками в проекте](managing-references-in-a-project.md).  
@@ -104,8 +82,7 @@ ms.lasthandoff: 06/23/2017
   
 -   Убедитесь, что тип находится в правильной области действия, чтобы конструктор классов мог его найти. Убедитесь, что в коде присутствует оператор `using`, `imports` или `#include`. Убедитесь также, что этот тип (или связанный тип) не был перемещен из пространства имен, в котором он находился изначально.  
 
-### Диагностика других сообщений об ошибках
-<a id="troubleshooting-other-error-messages" class="xliff"></a>  
+### <a name="troubleshooting-other-error-messages"></a>Диагностика других сообщений об ошибках  
  На открытых форумах Microsoft Developer Network (MSDN) можно получить помощь в устранении ошибок и предупреждений. См. [Форум по конструкторам классов Visual Studio](http://go.microsoft.com/fwlink/?linkid=160754).  
 
 ##  <a name="limitations"></a> Ограничения для элементов кода C++  
@@ -130,8 +107,7 @@ ms.lasthandoff: 06/23/2017
 
 -   Конструктор классов не может отобразить типы, которые относятся к void или являются производными от типа void.  
 
-## См. также
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>См. также  
  [Разработка и просмотр классов и типов](../ide/designing-and-viewing-classes-and-types.md)   
  [Работа с классами и другими типами (конструктор классов)](../ide/working-with-classes-and-other-types-class-designer.md)   
  [Работа со схемами классов (конструктор классов)](../ide/working-with-class-diagrams-class-designer.md)   
@@ -141,4 +117,3 @@ ms.lasthandoff: 06/23/2017
  [Структуры Visual C++ в конструкторе классов](../ide/visual-cpp-structures-in-class-designer.md)   
  [Перечисления Visual C++ в конструкторе классов](../ide/visual-cpp-enumerations-in-class-designer.md)   
  [Операторы typedef языка Visual C++ в конструкторе классов](../ide/visual-cpp-typedefs-in-class-designer.md)
-

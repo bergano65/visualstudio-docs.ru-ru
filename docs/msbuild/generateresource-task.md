@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
 dev_langs:
 - VB
 - CSharp
@@ -19,36 +17,21 @@ helpviewer_keywords:
 - MSBuild, GenerateResource task
 - GenerateResource task [MSBuild]
 ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: b3004b780400d2fac46866ac4ad02bda18ada9f7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
-ms.openlocfilehash: d1e2efc557f90d01a955710d53a1f2724b5f5f7d
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/01/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="generateresource-task"></a>Задача GenerateResource
 Преобразовывает файлы формата TXT и RESX (файлы ресурсов на основе XML) и двоичные RESOURCES-файлы среды CLR, которые могут быть внедрены в двоичный исполняемый файл среды выполнения или скомпилированы во вспомогательные сборки. Обычно эта задача используется для преобразования файлов формата TXT и RESX в RESOURCES-файлы. Задача `GenerateResource` функционально аналогична [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  
   
 ## <a name="parameters"></a>Параметры  
- В следующей таблице приводятся параметры задачи `GenerateResource`.  
+ В следующей таблице приводятся параметры задачи `GenerateResource` .  
   
 |Параметр|Описание|  
 |---------------|-----------------|  
@@ -112,4 +95,3 @@ ms.lasthandoff: 08/01/2017
 ## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
-

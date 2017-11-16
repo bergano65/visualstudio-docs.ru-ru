@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -26,29 +25,15 @@ helpviewer_keywords:
 - projects [Visual Studio], build configuration
 - solutions [Visual Studio], build configuration
 ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
-caps.latest.revision: 21
-author: kempb
-ms.author: kempb
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: e0f2cecb0a2152ca99ce4b1dfb62ef28166a07ee
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 003e4abaf5e6fbabead604c495b2018402cf74ec
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="understanding-build-configurations"></a>Общие сведения о конфигурациях построения
 Вы можете сохранять разные конфигурации решения и свойства проекта для использования разных типов сборок. Чтобы создать, выбрать, изменить или удалить конфигурацию, можно использовать **Configuration Manager**. Чтобы открыть его, выберите в строке меню **Сборка**, **Configuration Manager** или просто введите **Configuration** в поле **Быстрый запуск**. Можно также использовать список **Конфигурации решения** на панели инструментов **Стандартные**, чтобы выбрать конфигурацию или открыть **Configuration Manager**.  

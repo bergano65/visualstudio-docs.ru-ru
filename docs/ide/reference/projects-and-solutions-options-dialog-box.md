@@ -1,11 +1,10 @@
 ---
 title: "\"Проекты и решения\", диалоговое окно \"Параметры\" | Документы Майкрософт"
 ms.custom: 
-ms.date: 7/14/2017
+ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,19 +14,17 @@ helpviewer_keywords:
 - Projects and Solutions Options dialog box
 - Options dialog box, Projects and Solutions
 ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+ms.openlocfilehash: f912a0aa6588895fb99da83396e2e5caf976e223
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
-ms.openlocfilehash: 2778964a6d5e4f478422727b02e15a058868e644
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>«Проекты и решения», «Диалоговое окно параметров»
-
 Устанавливает поведение [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] для проектов и решений. Чтобы открыть эти параметры, выберите пункты меню **Сервис > Параметры**, разверните **Проекты и решения** и выберите **Общие**.
 
 Пути по умолчанию для папки проекта и папки шаблона задаются на вкладке **Расположение** в том же диалоговом окне.
@@ -86,5 +83,5 @@ ms.lasthandoff: 09/06/2017
 Задает расположение по умолчанию, которое используется в диалоговом окне **Добавление нового элемента** для создания списка **Мои шаблоны**. Дополнительные сведения см. в разделе [Практическое руководство. Размещение и упорядочение шаблонов и элементов](../../ide/how-to-locate-and-organize-project-and-item-templates.md). 
 
 ## <a name="see-also"></a>См. также  
-- [Диалоговое окно "Параметры", "Проекты и решения", "Сборка и запуск"](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
-- - [Диалоговое окно "Параметры", "Проекты и решения", "Веб-проекты"](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)
+- [Диалоговое окно "Параметры", "Проекты и решения", "Сборка и запуск"](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)  
+- [Диалоговое окно "Параметры", "Проекты и решения", "Веб-проекты"](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)

@@ -4,49 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Summary view
+helpviewer_keywords: Summary view
 ms.assetid: 0a3b3a1f-e22b-4ac8-b46e-71694e9b2cf1
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 296faf330e23d65ae0ab7e9f434ab831ee520ac5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
-ms.openlocfilehash: 90bcf3f94fce74a020b56d8eaf38072d55e8f1fb
-ms.contentlocale: ru-ru
-ms.lasthandoff: 07/14/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Представление "Сводка" — данные инструментирования
-<a id="summary-view---instrumentation-data" class="xliff"></a>
+# <a name="summary-view---instrumentation-data"></a>Представление "Сводка" — данные инструментирования
 В представлении "Сводка" приводится информация о создающих наибольшую нагрузку функциях в ходе сеанса профилирования. Дополнительные сведения, включая описание ссылок на уведомления и списков отчетов, см. в разделе [Представление "Сводка"](../profiling/summary-view.md).  
   
-## Временная шкала
-<a id="timeline-graph" class="xliff"></a>  
+## <a name="timeline-graph"></a>Временная шкала  
  Временная шкала представления "Сводка" показывает загрузку ЦП профилируемым приложением за время профилирования. Временная шкала позволяет фильтровать представление в соответствии с заданным интервалом времени. Дополнительные сведения см. в разделе [Практическое руководство. Фильтрация представлений отчетов на сводной временной шкале](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
   
-## Горячий путь
-<a id="hot-path" class="xliff"></a>  
+## <a name="hot-path"></a>Горячий путь  
  **Горячий путь** показывает путь выполнения, потребовавший наибольшего времени. Чтобы отобразить представление сведений о функции, щелкните функцию. Для просмотра других представлений щелкните функцию правой кнопкой мыши и выберите представление из списка.  
   
  **Горячий путь** включает следующие данные для каждой функции:  
@@ -57,8 +36,7 @@ ms.lasthandoff: 07/14/2017
 |**% затраченного инклюзивного времени**|Процент всего времени в данных профилирования, затраченного функцией на выполнение кода в теле самой функции и в вызванных ею функциях.|  
 |**% затраченного эксклюзивного времени**|Процент всего времени в данных профилирования, затраченного функцией на выполнение кода в теле самой функции. Не включается время выполнения функций, вызванных выбранной функцией.|  
   
-## Функции с максимальной индивидуальной работой
-<a id="functions-with-most-individual-work" class="xliff"></a>  
+## <a name="functions-with-most-individual-work"></a>Функции с максимальной индивидуальной работой  
  Список функций, потребовавших наибольшего времени на выполнение кода в теле функции, но не в вызываемых функциях.  
   
  Раздел **Функции с максимальной индивидуальной работой** включает указанные ниже данные по каждой функции.  
@@ -68,7 +46,6 @@ ms.lasthandoff: 07/14/2017
 |**Имя**|Имя функции.|  
 |**Эксклюзивное время %**|Процент всего времени в данных профилирования, затраченного функцией на выполнение кода в теле самой функции. Не включается время выполнения функций, вызванных выбранной функцией.|  
   
-## См. также
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>См. также  
  [Представление "Сводка"](../profiling/summary-view-sampling-data.md)   
  [Представление "Сводка"](../profiling/summary-view-dotnet-memory-data.md)

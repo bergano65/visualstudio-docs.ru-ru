@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -19,48 +18,33 @@ helpviewer_keywords:
 - MSBuild, in-process compilers
 - MSBuild, design-time target execution
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 0a5cf4b0d4d6bb3b66814554c349238ab63a4b41
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 5aff5914d9b278b206f81abd4f28ce9f4dfa409c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-studio-integration-msbuild"></a>Интеграция Visual Studio (MSBuild)
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] размещается в Visual Studio для загрузки и сборки управляемых проектов. Поскольку [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] отвечает за проект, в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] можно успешно использовать практически любой проект в формате [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], даже если проект был создан с помощью другого инструмента и участвует в процессе пользовательского построения.  
   
- В данном разделе рассматриваются специфические аспекты размещения [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] продуктом [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], которые необходимо учитывать при настройке проектов и файлов в формате .targets, которые требуется загрузить и создать построение в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Это поможет вам обеспечить наличие в настраиваемом проекте таких функций [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], как IntelliSense и отладка.  
+ В данном разделе рассматриваются специфические аспекты размещения [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]продуктом [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , которые необходимо учитывать при настройке проектов и файлов в формате .targets, которые требуется загрузить и создать построение в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Это поможет вам обеспечить наличие в настраиваемом проекте таких функций [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , как IntelliSense и отладка.  
   
- Дополнительные сведения о проектах C++ см. в разделе [Файлы проекта](/cpp/ide/project-files).  
+ Дополнительные сведения о проектах C++ см. в разделе [Project Files](/cpp/ide/project-files).  
   
 ## <a name="project-file-name-extensions"></a>Расширения имени файла проекта  
- Файл MSBuild.exe распознает любое расширение имени файла проекта, если оно соответствует шаблону .*proj. Однако [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] распознает только подмножество расширений этих имен файлов проекта, определяющее языковую систему проекта, которая будет загружать проект. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] не имеет не зависящей от языка системы проекта, основанной на использовании [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
+ Файл MSBuild.exe распознает любое расширение имени файла проекта, если оно соответствует шаблону .*proj. Однако [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] распознает только подмножество расширений этих имен файлов проекта, определяющее языковую систему проекта, которая будет загружать проект. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] не имеет не зависящей от языка системы проекта, основанной на использовании [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .  
   
- Например, система проекта [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] загружает файлы формата .csproj, но [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] не может загрузить файл формата .xxproj. Файл проекта для исходных файлов на любом языке должен использовать то же самое расширение, что и файлы проектов [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] или [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], чтобы их можно было загрузить в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Например, система проекта [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] загружает файлы формата .csproj, но [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] не может загрузить файл формата .xxproj. Файл проекта для исходных файлов на любом языке должен использовать то же самое расширение, что и файлы проектов [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] или [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] , чтобы их можно было загрузить в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="well-known-target-names"></a>Известные имена целевых файлов  
- При выборе команды **Построить** в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] происходит выполнение целевого файла, который используется в проекте по умолчанию. Этот целевой объект часто называется также `Build`. При выборе команды **Перестроить** или **Очистить** делается попытка выполнить целевой файл с тем же именем в проекте. При выборе команды **Опубликовать** происходит выполнение целевого файла с именем `PublishOnly` в проекте.  
+ При выборе команды **Build** в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] происходит выполнение целевого файла, который используется в проекте по умолчанию. Этот целевой объект часто называется также `Build`. При выборе команды **Перестроить** или **Очистить** делается попытка выполнить целевой файл с тем же именем в проекте. При выборе команды **Опубликовать** происходит выполнение целевого файла с именем `PublishOnly` в проекте.  
   
 ## <a name="configurations-and-platforms"></a>Конфигурации и платформы  
- Конфигурации представлены в проектах [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] свойствами, сгруппированными в элемент `PropertyGroup`, который имеет атрибут `Condition`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] анализирует эти условия, чтобы создать отображаемый список конфигураций и платформ проекта. Чтобы можно было успешно получить этот список, соответствующие условия должны иметь формат, аналогичный следующему:  
+ Конфигурации представлены в проектах [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] свойствами, сгруппированными в элемент `PropertyGroup` , который имеет атрибут `Condition` . [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] анализирует эти условия, чтобы создать отображаемый список конфигураций и платформ проекта. Чтобы можно было успешно получить этот список, соответствующие условия должны иметь формат, аналогичный следующему:  
   
 ```  
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "  
@@ -68,10 +52,10 @@ Condition=" '$(Configuration)' == 'Release' "
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  
 ```  
   
- С этой целью [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проверяет условия в `PropertyGroup`, `ItemGroup`, `Import`, свойствах и элементах объекта.  
+ С этой целью[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проверяет условия в `PropertyGroup`, `ItemGroup`, `Import`, свойствах и элементах объекта.  
   
 ## <a name="additional-build-actions"></a>Дополнительные действия при построении  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] дает возможность изменить имя типа элемента файла в проекте с помощью свойства **Действие при построении** в окне [Свойства файла](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959). В этом меню всегда приводятся имена типов элементов `Compile`, `EmbeddedResource`, `Content` и `None` наряду со всеми другими именами типов элементов, которые уже используются в проекте. Чтобы быть уверенным в том, что в этом меню всегда будут доступны все пользовательские имена типов элементов, эти имена можно добавлять к типу элемента под названием `AvailableItemName`. Например, при добавлении следующих имен к файлу проекта одновременно будет добавлен пользовательский тип `JScript` к этому меню для всех проектов, которые его импортируют:  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] дает возможность изменить имя типа элемента файла в проекте с помощью свойства **Действие при построении** в окне [Свойства файла](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959) . В этом меню всегда приводятся имена типов элементов`Compile`, `EmbeddedResource`, `Content`и `None` наряду со всеми другими именами типов элементов, которые уже используются в проекте. Чтобы быть уверенным в том, что в этом меню всегда будут доступны все пользовательские имена типов элементов, эти имена можно добавлять к типу элемента под названием `AvailableItemName`. Например, при добавлении следующих имен к файлу проекта одновременно будет добавлен пользовательский тип `JScript` к этому меню для всех проектов, которые его импортируют:  
   
 ```xml  
 <ItemGroup>  
@@ -80,7 +64,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ```  
   
 > [!NOTE]
->  Некоторые имена типов элементов являются особыми для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], но они не приводятся в раскрывающемся меню.  
+>  Некоторые имена типов элементов являются особыми для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , но они не приводятся в раскрывающемся меню.  
   
 ## <a name="in-process-compilers"></a>Внутрипроцессные компиляторы  
  Если возможно, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] будет пытаться использовать внутрипроцессную версию компилятора [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] для повышения производительности. (Неприменимо к [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].) Чтобы при этом была обеспечена правильная работа, должны быть выполнены следующие условия:  
@@ -94,14 +78,14 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
 -   Должен существовать целевой объект с именем `Compile`.  
   
--   Либо целевой объект `Compile`, либо одна из его зависимостей должны вызывать задачу компилятора для проекта, например `Csc` или `Vbc`.  
+-   Либо целевой объект `Compile` , либо одна из его зависимостей должны вызывать задачу компилятора для проекта, например `Csc` или `Vbc`.  
   
--   Либо целевой объект `Compile`, либо одна из его зависимостей должны инициировать получение компилятором всех необходимых параметров для IntelliSense, особенно всех ссылок.  
+-   Либо целевой объект `Compile` , либо одна из его зависимостей должны инициировать получение компилятором всех необходимых параметров для IntelliSense, особенно всех ссылок.  
   
 -   Должны удовлетворяться условия, указанные в разделе "Внутрипроцессные компиляторы".  
   
 ## <a name="building-solutions"></a>Построение решений  
- В пределах [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] управление файлом решения и заказом на построение проекта осуществляется самим продуктом [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Если построение решения осуществляется с помощью msbuild.exe в командной строке, то [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] выполняет синтаксический разбор файла решения и дает указание на выполнение построения проекта. В обоих случаях проекты строятся по отдельности в порядке зависимости, и взаимные ссылки между проектами не отслеживаются. В противоположность этому, при построении отдельных проектов с помощью msbuild.exe взаимные ссылки между проектами отслеживаются.  
+ В пределах [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]управление файлом решения и заказом на построение проекта осуществляется самим продуктом [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Если построение решения осуществляется с помощью msbuild.exe в командной строке, то [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] выполняет синтаксический разбор файла решения и дает указание на выполнение построения проекта. В обоих случаях проекты строятся по отдельности в порядке зависимости, и взаимные ссылки между проектами не отслеживаются. В противоположность этому, при построении отдельных проектов с помощью msbuild.exe взаимные ссылки между проектами отслеживаются.  
   
  Если построение осуществляется внутри [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], свойству `$(BuildingInsideVisualStudio)` назначается значение `true`. Это можно использовать при работе с файлами проекта или с файлами в формате .targets, если нужно, чтобы построения вели себя по-разному.  
   
@@ -138,13 +122,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Условные выражения с участием элементов всегда игнорируются, если надо решить, следует ли отображать данный элемент в обозревателе решений.  
   
 ## <a name="debugging"></a>Отладка  
- Чтобы найти и запустить выходную сборку с присоединением отладчика, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] требуется, чтобы были правильно заданы свойства `OutputPath`, `AssemblyName` и `OutputType`. Присоединение отладчика невозможно, если в процессе построения компилятор не создал файл .pdb.  
+ Чтобы найти и запустить выходную сборку с присоединением отладчика, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] требуется, чтобы были правильно заданы свойства `OutputPath`, `AssemblyName`и `OutputType` . Присоединение отладчика невозможно, если в процессе построения компилятор не создал файл .pdb.  
   
 ## <a name="design-time-target-execution"></a>Выполнение целевых объектов в режиме разработки  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] пытается запустить выполнение целевых объектов с определенными именами при загрузке проекта. Эти целевые объекты включают в себя `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths` и `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] запускает эти целевые объекты, что позволяет инициализировать компилятор, который обеспечивает функционирование IntelliSense. Возможна также инициализация отладчика и разрешение ссылок, отображаемых в обозревателе решений. Если эти целевые объекты отсутствуют, то загрузка и построение проекта будут выполняться правильно, но работа в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] в режиме разработки будет иметь функциональные ограничения.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] пытается запустить выполнение целевых объектов с определенными именами при загрузке проекта. Эти целевые объекты включают в себя `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths`и `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] запускает эти целевые объекты, что позволяет инициализировать компилятор, который обеспечивает функционирование IntelliSense. Возможна также инициализация отладчика и разрешение ссылок, отображаемых в обозревателе решений. Если эти целевые объекты отсутствуют, то загрузка и построение проекта будут выполняться правильно, но работа в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] в режиме разработки будет иметь функциональные ограничения.  
   
-##  <a name="BKMK_EditingProjects"></a> Изменение файлов проектов в Visual Studio  
- Чтобы изменить непосредственно проект [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], можно открыть файл проекта в XML-редакторе Visual Studio.  
+##  <a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
+ Чтобы изменить непосредственно проект [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , можно открыть файл проекта в XML-редакторе Visual Studio.  
   
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Выгрузка и изменение файла проекта в Visual Studio  
   
@@ -172,7 +156,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Имена некоторых целевых объектов, определенных в Microsoft.Common.targets, оканчиваются на `OutputGroups` или `OutputGroupDependencies`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] вызывает эти целевые объекты, чтобы они получили особые списки выходных данных проекта. Например, целевой объект `SatelliteDllsProjectOutputGroup` создает список всех сопутствующих сборок, которые будут созданы в процессе построения. Эти выходные группы используются, например, такими функциями, как опубликование, развертывание и взаимные ссылки между проектами. Проекты, в которых они не определены, будут загружать и строить их в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], но при этом отдельные функции могут работать неправильно.  
   
 ## <a name="reference-resolution"></a>Разрешение ссылок  
- Разрешение ссылок — это процесс использования элементов ссылки, которые хранятся в файле проекта, для определения местоположения реальных сборок. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] должен инициировать разрешение ссылок, чтобы можно было отобразить подробные свойства для каждой ссылки в окне **Свойства**. В следующем списке описаны три типа ссылок и способы их разрешения.  
+ Разрешение ссылок — это процесс использования элементов ссылки, которые хранятся в файле проекта, для определения местоположения реальных сборок. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] должен инициировать разрешение ссылок, чтобы можно было отобразить подробные свойства для каждой ссылки в окне **Свойства** . В следующем списке описаны три типа ссылок и способы их разрешения.  
   
 -   Ссылки на сборку:  
   
@@ -182,7 +166,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
     -   `OriginalItemSpec`, содержащую исходную спецификацию элемента ссылки.  
   
-    -   `ResolvedFrom`, значение которого установлено "{TargetFrameworkDirectory}", если он был разрешен из каталога [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+    -   `ResolvedFrom`, значение которого установлено "{TargetFrameworkDirectory}", если он был разрешен из каталога [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] .  
   
 -   Ссылки COM:  
   

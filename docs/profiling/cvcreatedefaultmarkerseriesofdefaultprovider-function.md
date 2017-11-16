@@ -1,30 +1,29 @@
 ---
-title: "Функция CvCreateDefaultMarkerSeriesOfDefaultProvider | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkers/CvCreateDefaultMarkerSeriesOfDefaultProvider"
-helpviewer_keywords: 
-  - "CvCreateDefaultMarkerSeriesOfDefaultProvider - метод"
+title: "Функция CvCreateDefaultMarkerSeriesOfDefaultProvider | Документы Майкрософт"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: cvmarkers/CvCreateDefaultMarkerSeriesOfDefaultProvider
+helpviewer_keywords: CvCreateDefaultMarkerSeriesOfDefaultProvider method
 ms.assetid: 24eb80f8-8fca-4c47-93b5-bb1eb8ffdffd
-caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 076a815be9a900b45fffee95856caa003d8155d2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Функция CvCreateDefaultMarkerSeriesOfDefaultProvider
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Создает серии маркеров по умолчанию для поставщика по умолчанию.  
+# <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>Функция CvCreateDefaultMarkerSeriesOfDefaultProvider
+Создает наборы маркеров по умолчанию поставщика по умолчанию.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT CvCreateDefaultMarkerSeriesOfDefaultProvider(  
@@ -33,18 +32,18 @@ HRESULT CvCreateDefaultMarkerSeriesOfDefaultProvider(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppProvider`  
- Адрес переменной объекта поставщика.  Адрес не может принимать значение NULL, переменная может содержать любое значение.  
+ Адрес переменной объекта поставщика. Адрес не может принимать значение NULL, переменная может содержать любое значение.  
   
  `ppMarkerSeries`  
- Адрес переменной объекта серии маркеров.  Адрес не может принимать значение NULL, переменная может содержать любое значение.  
+ Адрес переменной объекта набора маркеров. Адрес не может принимать значение NULL, переменная может содержать любое значение.  
   
-## Возвращаемое значение  
- S\_ОК, если провайдер и серия маркеров были успешно созданы или код ошибки в том случае, если какие\-либо ошибки были обнаружены.  Используйте макрос SUCCEEDED\/FAILED для проверки условия ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Значение S_OK, если поставщик и набор маркеров были успешно созданы, или код ошибки в том случае, если были какие-либо ошибки. Для проверки условия ошибки используйте макрос SUCCEEDED/FAILED.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** cvmarkers.h  
   
-## См. также  
- [Справочник по библиотеке C\+\+](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>См. также  
+ [Справочник по библиотеке C++](../profiling/cpp-library-reference.md)

@@ -4,39 +4,24 @@ ms.custom:
 ms.date: 03/02/2017
 ms.reviewer: 
 ms.suite: 
+ms.technology:
+- vs-ide-general
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- msdnstart
+f1_keywords: msdnstart
 helpviewer_keywords:
 - Visual Studio
 - Visual Studio 2017
 ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
-caps.latest.revision: 125
-author: kempb
-ms.author: kempb
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8bf0b097be929b30627e0f1139c6e0b145933ab4
-ms.openlocfilehash: 2cf7d1e79ccf79b652dbb730e7ac7fd6a9c984b5
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/26/2017
-
+ms.openlocfilehash: 81942228cd8ee30ac8ea990af072ace0ce626c5b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="welcome-to-visual-studio-2017"></a>Вас приветствует Visual Studio 2017.
 У нас есть все необходимое для создания отличных приложений для устройств, настольных приложений, веб-приложений и облачных решений. Создавайте код для iOS, Android, Linux, Windows и других ОС в одной интегрированной среде разработки (IDE). Воспользуйтесь великолепной интерактивной системой помощи *IntelliSense*, удобными средствами для навигации по коду и отладки, важными преимуществами быстрой сборки и развертывания. Visual Studio повышает продуктивность и позволяет удобно работать самостоятельно и в составе команды.  
@@ -120,4 +105,3 @@ ms.lasthandoff: 05/26/2017
 Для создания анализаторов и генераторов кода можно воспользоваться платформой компилятора .NET (Roslyn). Все необходимое вы найдете на сайте [Roslyn](https://github.com/dotnet/Roslyn).  
 
 Вы также можете найти [существующие расширения для интегрированной среды разработки VS](https://visualstudiogallery.msdn.microsoft.com/) , созданные разработчиками Майкрософт и участниками нашего сообщества разработчиков.  
-

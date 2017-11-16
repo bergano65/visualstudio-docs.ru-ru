@@ -4,37 +4,20 @@ ms.custom:
 ms.date: 03/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.ToolsOptionsPages.XAMLDesigner
+f1_keywords: VS.ToolsOptionsPages.XAMLDesigner
 ms.assetid: ad3820b2-0d95-4807-a75c-c3467ed973a3
-caps.latest.revision: 1
-author: kempb
-ms.author: kempb
+caps.latest.revision: "1"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: bda254d18dc391f3c10e3544ee09fd09171d0938
-ms.contentlocale: ru-ru
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: 3058e19d4ac6211c741efd973344a1af14238d10
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="xaml-designer-options-page"></a>Страница параметров конструктора XAML
 На странице параметров **конструктора XAML** можно настроить форматирование элементов и атрибутов в документах XAML. Чтобы открыть эту страницу, выберите меню **Сервис** а затем пункт **Параметры**. Чтобы открыть страницу свойств **конструктора XAML**, выберите узел **Конструктор XAML**. Параметры конструктора XAML применяются при открытии документа. То есть если вы изменили параметры, необходимо закрыть и повторно открыть Visual Studio, чтобы изменения вступили в силу.
@@ -120,4 +103,3 @@ ms.lasthandoff: 05/30/2017
  [XAML в WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)   
  [Практическое руководство. Изменение параметров представления XAML](http://msdn.microsoft.com/en-us/aee87c79-ca01-4f84-8fb7-a9e47048ee47)   
  [Пошаговые руководства по XAML и коду](http://msdn.microsoft.com/en-us/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
-
