@@ -1,43 +1,28 @@
 ---
-title: "Пакет SDK моделирования для Visual Studio — доменные языки | Документы Microsoft"
+title: "Пакет SDK для моделирования для Visual Studio — доменные языки | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-techdebt
+ms.technology: vs-devops-techdebt
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools
 - Domain-Specific Language
 ms.assetid: 17a531e2-1964-4a9d-84fd-6fb1b4aee662
-caps.latest.revision: 77
+caps.latest.revision: "77"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 3d07f82ea737449fee6dfa04a61e195654ba35fa
-ms.openlocfilehash: 86e70eb82260cdced1ee4d74965832fbc7fa56ab
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 48cb7e5a274092a3ed82d2e41137633d12c3be01
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>SDK моделирования для Visual Studio — доменные языки
-С помощью пакета SDK моделирования для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], созданием средств разработки мощных на основе моделей, которые можно интегрировать в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Таким же образом можно создать одно или несколько определений моделей и интегрировать их в набор средств.  
+Используя пакет SDK моделирования для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], можно создать средств разработки мощных на основе моделей, которые можно интегрировать в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Таким же образом можно создать одно или несколько определений моделей и интегрировать их в набор средств.  
   
  Ключевой элемент MSDK — определение модели, которая создается для представления концепций в бизнес-сфере. Для модели можно предусмотреть различные дополнительные средства и возможности, например схематическое представление, возможность создания кода и других артефактов, команды преобразования модели и возможность взаимодействия с кодом и другими объектами в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. При разработке модели ее можно объединить с другими моделями и средствами для создания эффективного набора инструментов, предназначенных для разработки.  
   
@@ -59,7 +44,7 @@ ms.lasthandoff: 02/22/2017
  
  [Связанные сообщения в блогах](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
   
- Руководство по передовым технологиям и устранению неполадок, обратитесь к [форум Visual Studio DSL & средств расширения моделей](http://go.microsoft.com/fwlink/?LinkID=186074).  
+ Рекомендации о дополнительных возможностях и устранение неполадок на сайте [форум по Visual Studio DSL & расширяемость средств моделирования](http://go.microsoft.com/fwlink/?LinkID=186074).  
   
 ## <a name="in-this-section"></a>Содержание  
  [Начало работы с доменными языками](../modeling/getting-started-with-domain-specific-languages.md)  
@@ -93,4 +78,3 @@ ms.lasthandoff: 02/22/2017
  [Практическое руководство. Перенос доменного языка в новую версию](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)  
   
  [Справка по API SDK моделирования для Visual Studio](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)
-

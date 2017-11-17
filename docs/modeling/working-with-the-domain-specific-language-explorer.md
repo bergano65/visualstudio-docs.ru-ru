@@ -6,21 +6,20 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Domain-Specific Language Tools, DSL Explorer
+helpviewer_keywords: Domain-Specific Language Tools, DSL Explorer
 ms.assetid: ca0e8550-bb55-4218-92e2-f79ab5308d4f
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translationtype: Machine Translation
-ms.sourcegitcommit: eb2ab9d49cdeb1ed71da8ef67841f7796862dc30
 ms.openlocfilehash: 6297c5643de30331b8cf6a807df637d5cc043518
-ms.lasthandoff: 02/22/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Работа с обозревателем доменного языка
-**Обозреватель DSL** отображает несколько типов данных в виде дерева. Дополнительные сведения о большинстве элементов в обозревателе DSL в разделе [способ определения доменного языка](../modeling/how-to-define-a-domain-specific-language.md).  
+**Обозреватель DSL** отображает несколько типов данных в виде дерева. Дополнительные сведения о большинство элементов в обозреватель DSL. в разделе [способ определения доменного языка](../modeling/how-to-define-a-domain-specific-language.md).  
   
  Он имеет следующие узлы.  
   
@@ -30,20 +29,19 @@ ms.lasthandoff: 02/22/2017
   
 -   **Схема**. Набор свойств, которые определяют схему, список карт соединителей и карт фигур.  
   
--   **Классы доменов**. Список классов доменов в модели.  
+-   **Доменные классы**. Список классов доменов в модели.  
   
--   **Доменные связи**. Список доменных связей в модели.  
+-   **Доменная связь**. Список доменных связей в модели.  
   
 -   **Типы доменов**. Список встроенных и внешних типов, используемых в модели.  
   
--   **Редактор**. Список **элементов** вкладки и элементы, они содержат и параметры проверки для модели. Дополнительные сведения о проверке см. в разделе [проверки в доменном языке](../modeling/validation-in-a-domain-specific-language.md).  
+-   **Редактор**. Список **элементов** вкладки и элементы, они содержат и параметры проверки для модели. Дополнительные сведения о проверке см. в разделе [проверка доменного языка](../modeling/validation-in-a-domain-specific-language.md).  
   
 -   **Поведение обозревателя**. Настройки, определяющие поведение обозревателя в созданном конструкторе. Дополнительные сведения о настройке обозревателя см. в разделе [Настройка обозревателя моделей](../modeling/customizing-the-model-explorer.md).  
   
 -   **Фигуры**. Список элементов фигур схемы в модели.  
   
--   **Поведение XML-сериализации**. Настройки сериализации для модели. Дополнительные сведения о сериализации см. в разделе [Настройка хранилища файлов и XML-сериализация](../modeling/customizing-file-storage-and-xml-serialization.md).  
+-   **Поведение сериализации XML**. Настройки сериализации для модели. Дополнительные сведения о сериализации см. в разделе [Настройка хранения файлов и XML-сериализация](../modeling/customizing-file-storage-and-xml-serialization.md).  
   
 ## <a name="see-also"></a>См. также  
- [Глоссарий по средствам доменного языка](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
+ [Глоссарий инструменты доменного языка](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

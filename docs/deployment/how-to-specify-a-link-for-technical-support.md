@@ -1,51 +1,52 @@
 ---
-title: "Практическое руководство. Задание ссылки на веб-страницу технической поддержки | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "развертывание ClickOnce, указание адреса веб-страницы поддержки"
-  - "служба поддержки, приложения ClickOnce"
-  - "техническая поддержка, указание URL-адреса для приложений ClickOnce"
-  - "URL-адрес поддержки - свойство"
-  - "URL-адреса, приложения ClickOnce"
-  - "веб-страницы, ClickOnce"
-  - "веб-сайты, создание для поддержки ClickOnce"
+title: "Как: укажите ссылку для получения технической поддержки | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- Support URL property
+- product support, specifying URL for ClickOnce applications
+- Web pages, ClickOnce
+- Web sites, creating for ClickOnce support
+- ClickOnce deployment, specifying support Web page address
+- customer support, ClickOnce applications
+- URLs, ClickOnce applications
 ms.assetid: 500aebee-545e-4831-a78b-b8671a008015
-caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 1c7a60993666ac485f72099fef9df930aacdaa25
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Практическое руководство. Задание ссылки на веб-страницу технической поддержки
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-При публикации приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] свойство **URL\-адрес поддержки** определяет веб\-страницу или общую папку, куда пользователи могут перейти для получения сведений о приложении.  Это свойство является необязательным; если оно предоставляется, URL\-адрес отображается в диалоговом окне **Установка и удаление программ** для элемента приложения.  
+# <a name="how-to-specify-a-link-for-technical-support"></a>Практическое руководство. Задание ссылки на веб-страницу технической поддержки
+При публикации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, **URL-адрес поддержки** свойство идентифицирует веб-страницу или общую папку, где пользователи могут перейти для получения сведений о приложении. Это свойство является необязательным. Если указано, URL-адрес будет отображаться в запись приложения **Установка и удаление программ** диалоговое окно.  
   
- Свойство **URL\-адрес технической поддержки** может устанавливаться на странице **Публикация** в **конструкторе проектов**.  
+ **URL-адрес поддержки** может быть установлено на **публикации** страница **конструктора проектов**.  
   
-### Задание URL\-адреса поддержки  
+### <a name="to-specify-a-support-url"></a>Чтобы указать URL-адрес поддержки  
   
-1.  Выбрав проект в **обозревателе решений**, в меню **Проект** выберите пункт **Свойства**.  
+1.  Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.  
   
-2.  Выберите вкладку **Публикация**.  
+2.  Нажмите кнопку **публикации** вкладки.  
   
-3.  Нажмите кнопку **Параметры**, чтобы открыть диалоговое окно **Параметры публикации**.  
+3.  Нажмите кнопку **параметры** кнопку, чтобы открыть **параметры публикации** диалоговое окно.  
   
-4.  Нажмите кнопку **Описание**.  
+4.  Нажмите кнопку **описание**.  
   
-5.  В поле **URL\-адрес технической поддержки** введите полный путь к веб\-узлу, веб\-странице или UNC\-папке.  
+5.  В **URL-адрес поддержки** введите полный путь к веб-сайта, веб-странице или UNC-папки.  
   
-## См. также  
- [Публикация ClickOnce\-приложений](../deployment/publishing-clickonce-applications.md)   
- [Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации](../Topic/How%20to:%20Publish%20a%20ClickOnce%20Application%20using%20the%20Publish%20Wizard.md)
+## <a name="see-also"></a>См. также  
+ [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)   
+ [Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

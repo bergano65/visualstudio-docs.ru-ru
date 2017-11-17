@@ -6,38 +6,23 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- dependency diagrams, adding custom properties
+helpviewer_keywords: dependency diagrams, adding custom properties
 ms.assetid: 52b3ac25-d10b-4507-a1fe-209ccb4d2777
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 8f84f22444a5df5b9f4f4af44cd8ee9136403467
-ms.openlocfilehash: 6c7e43c180ac5210d9c29961ed7330b370a99075
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 130222ef3a603576f02961979e64b0c8160430af
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Добавление пользовательских свойств в схемы зависимостей
-При написании кода расширения для схем зависимостей можно хранить значения с любым элементом на схеме зависимостей. Значения сохраняются при сохранении и повторном открытии схемы. Вы также можете эти свойства отображаются в **свойства** окна, чтобы пользователи могли просматривать и редактировать их. Например, можно позволить пользователям задать регулярное выражение для каждого слоя и написать код для проверки того, соответствуют ли имена классов в каждом слое шаблону, заданному пользователем.  
+При написании кода расширения для схем зависимостей можно хранить значения с любым элементом на схеме зависимостей. Значения сохраняются при сохранении и повторном открытии схемы. Вы также можете эти свойства отображаются в **свойства** окна, чтобы пользователи могли просматривать и изменять их. Например, можно позволить пользователям задать регулярное выражение для каждого слоя и написать код для проверки того, соответствуют ли имена классов в каждом слое шаблону, заданному пользователем.  
   
 ## <a name="properties-not-visible-to-the-user"></a>Свойства, не видимые пользователю  
- Если просто нужно присваивать значения любого элемента на схеме зависимостей кода не нужно определять компонент MEF. Есть словарь с именем `Properties` <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>.</xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> Просто добавьте маршалируемые значения в словарь любого элемента слоя. Они будут сохранены как часть диаграммы зависимостей. Дополнительные сведения см. в разделе [перехода и обновления слоев модели в программном коде](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+ Если необходимо просто код, чтобы присоединить значения на любой элемент в схеме зависимостей, не нужно определять компонент MEF. В `Properties` есть словарь <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Просто добавьте маршалируемые значения в словарь любого элемента слоя. Они будут сохранены как часть диаграммы зависимостей. Дополнительные сведения см. в разделе [перехода и обновления уровня модели в программном коде](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
 ## <a name="properties-that-the-user-can-edit"></a>Свойства, которые пользователь может изменять  
  **Предварительная подготовка**  
@@ -51,7 +36,7 @@ ms.lasthandoff: 02/22/2017
 >     ```xml  
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
 >     ```  
-> 3.  В разделе **средств Visual Studio** части Visual Studio приложения меню «Пуск» откройте **Командная строка разработчика**.  
+> 3.  В разделе **набора средств Visual Studio** части Visual Studio приложения меню «Пуск» откройте **Командная строка разработчика**.  
 >   
 >      Введите следующие команды:  
 >   
@@ -60,11 +45,11 @@ ms.lasthandoff: 02/22/2017
 >      `devenv /rootSuffix Exp /updateConfiguration`  
 > 4.  Перезапустите Visual Studio.  
   
- **Убедитесь, что код находится в проекте VSIX**  
+ **Убедитесь, что ваш код в проект VSIX**  
   
- Если свойство является частью команды, жеста или проекта проверки, ничего добавлять не нужно. Код пользовательского свойства должен быть определен в проекте расширения Visual Studio как компонент MEF. Дополнительные сведения см. в разделе [Добавление команд и жестов в схемы зависимостей](../modeling/add-commands-and-gestures-to-layer-diagrams.md) или [Добавление пользовательской проверки архитектуры в схемы зависимостей](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
+ Если свойство является частью команд, жестов или проверки проекта, добавьте ничего не нужно. Код пользовательского свойства должен быть определен в проекте расширения Visual Studio как компонент MEF. Дополнительные сведения см. в разделе [Добавление команд и жестов в схемы зависимостей](../modeling/add-commands-and-gestures-to-layer-diagrams.md) или [Добавление пользовательской проверки архитектуры в схемы зависимостей](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
   
- **Определение пользовательского свойства**  
+ **Определение пользовательских свойств**  
   
  Чтобы создать пользовательское свойство, определите класс, как показано ниже.  
   
@@ -77,7 +62,7 @@ public class MyProperty
 }  
 ```  
   
- Можно определить свойства <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>или любого из его производных классов, которые включают:</xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>  
+ Свойства можно определить для класса <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> или любого из его производных классов, которые включают следующие классы:  
   
 -   `ILayerModel` — модель  
   
@@ -176,5 +161,4 @@ namespace MyNamespace
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Расширение схемы зависимостей](../modeling/extend-layer-diagrams.md)
-
+ [Расширение схем зависимостей](../modeling/extend-layer-diagrams.md)

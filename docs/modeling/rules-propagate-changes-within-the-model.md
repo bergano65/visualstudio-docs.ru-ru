@@ -10,30 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, rules
 ms.assetid: 1690a38a-c8f5-4bc6-aab9-015771ec6647
-caps.latest.revision: 30
+caps.latest.revision: "30"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 8ec9540fb68ecb09dc592f9b05a56291c2a8c80d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: cbdf006fecb00139eda95cf3e9f2726430888ce7
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Правила распространяют изменения в пределах модели
 Можно создать правило хранилища для распространения изменений от одного элемента к другому в визуализации и моделирования SDK (VMSDK). При изменении любого элемента в хранилище правил планируются для выполнения, обычно в том случае, если внешняя транзакция фиксируется. Существуют различные типы правил для различных типов событий, таких как элемент добавляется или удаляется. Правила можно присоединить к определенным типам элементов, фигуры или схемы. Многие встроенные функции определяются правилами: например, правила обеспечивают, диаграммы обновляются при изменении модели. Доменный язык можно настроить путем добавления собственных правил.  

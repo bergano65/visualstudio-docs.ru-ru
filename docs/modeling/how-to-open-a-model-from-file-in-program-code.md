@@ -1,61 +1,63 @@
 ---
-title: "Практическое руководство. Открытие модели из файла в коде программы | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Как: открытие модели из файла в программном коде | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: d7d68697-5418-4263-bdb2-48401924ea71
-caps.latest.revision: 8
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: d225f991d7d0160f261c4a7c25c1251564a8b97b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Практическое руководство. Открытие модели из файла в коде программы
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Можно открыть модели DSL в любом приложении.  
+# <a name="how-to-open-a-model-from-file-in-program-code"></a>Практическое руководство. Открытие модели из файла в коде программы
+В любом приложении, можно открыть модели DSL.  
   
- From a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] расширение, можно использовать ModelBus для этой цели.  ModelBus предоставляет стандартный механизм для ссылок на элементы в модель или модели, а также для поиска переместила модель при ее.  Дополнительные сведения см. в разделе [Интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).  
+ Из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] расширение ModelBus можно использовать для этой цели. ModelBus предоставляет стандартный механизм для ссылки на модель или элементов в модели, а также для поиска модели, если он перемещен. Дополнительные сведения см. в разделе [интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).  
   
-## Требуемая версия .NET Framework  
- Установка **Целевая рабочая среда** проекта приложения  **.NET Framework 4**.  
+## <a name="target-framework"></a>Требуемая версия .NET Framework  
+ Задать **требуемой версии .NET framework** проекта приложения для **.NET Framework 4**.  
   
-#### Установка требуемая версия .NET Framework  
+#### <a name="to-set-the-target-framework"></a>Для установки требуемой версии .NET framework  
   
-1.  Открытие [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проект приложения, в котором необходимо считать модели DSL.  
+1.  Откройте [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проект для приложения, в котором требуется прочитать модели DSL.  
   
-2.  В **обозревателе решений** щелкните правой кнопкой мыши проект и выберите пункт **Свойства**.  
+2.  В **обозревателе решений**, щелкните правой кнопкой мыши проект и нажмите кнопку **свойства**.  
   
-3.  В окне свойства проекта на **Приложение** вкладка ", присвойте  **Целевая рабочая среда** поле  **.NET Framework 4**.  
+3.  В окне свойств проекта на **приложения** установите **требуемой версии .NET framework** на **.NET Framework 4**.  
   
 > [!NOTE]
->  Это можно сделать, даже если выбрана .NET Framework 4 в диалоговом окне создание проекта.  Требуемая версия .NET Framework не обязательно **Клиентский профиль .NET Framework 4**.  
+>  Может потребоваться сделать это, даже если вы выбрали **.NET Framework 4** в диалоговом окне создания проекта. Требуемая версия .NET framework не должно быть **клиентский профиль .NET Framework 4**.  
   
-## Ссылки  
- Необходимо добавить эти ссылки к вашему [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проект приложения:  
+## <a name="references"></a>Ссылки  
+ Необходимо добавить эти ссылки для вашего [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проект приложения:  
   
 -   `Microsoft.VisualStudio.Modeling.Sdk.11.0`  
   
-    -   Если это не отображается под **.NET** вкладка в  **Добавление ссылок** откроется диалоговое окно выберите  **Обзор** вкладка и перейдите к  `общее VisualStudioIntegration \ SDK \ %Program Files% \ assemblies \ Microsoft Visual Studio 2010 \`.  
+    -   Если вы не видите этот под **.NET** вкладку в **Добавление ссылок** диалоговое окно, нажмите кнопку **Обзор** вкладку и перейдите к `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.  
   
--   Сборка DSL, которой вы будете поиска в папке bin проекта DSL.  Имя его обычно формы: *YourCompany*.*YourProject*`. Dsl.dll`.  
+-   DSL сборки, который находится в папке bin проекта DSL. Обычно имеет имя вида: *YourCompany*. *Ваш_проект*`.Dsl.dll`.  
   
-## Важные классы в DSL  
- Перед тем, как можно будет написать код, который считывает свой DSL, необходимо знать имена некоторых из классов, созданных в DSL.  В решении DSL, открытие **DSL** проект и выглядит в  **GeneratedCode** папка.  Можно также дважды щелкните сборку в проекте DSL **Ссылки**и откройте пространство имен внутри DSL  **Обозреватель объектов**.  
+## <a name="important-classes-in-the-dsl"></a>Важных классов в DSL  
+ Перед написанием кода, который считывает доменного языка нужно знать имена некоторых классы, создаваемые доменного языка. Откройте в решении DSL **Dsl** проекта и найдите в **GeneratedCode** папки. Можно также дважды щелкнуть DSL сборки в проекте **ссылки**и открыть пространство имен DSL в **обозревателя объектов**.  
   
- Эти классы, необходимо указать:  
+ Они относятся к классам, которые необходимо определить:  
   
--   *YourDslRootClass* \- Это имя класса корневого действия в вашем  `DslDefinition.dsl`.  
+-   *YourDslRootClass* -это имя класса корневого в вашей `DslDefinition.dsl`.  
   
--   *YourDslName* `SerializationHelper` \- Этот класс определен в пределах  `SerializationHelper.cs` в проекте DSL.  
+-   *YourDslName* `SerializationHelper` -этот класс определен в `SerializationHelper.cs` в проекте DSL.  
   
--   *YourDslName* `DomainModel` \- Этот класс определен в пределах  `DomainModel.cs` в проекте DSL.  
+-   *YourDslName* `DomainModel` -этот класс определен в `DomainModel.cs` в проекте DSL.  
   
-## Чтение из файла  
- Следующий пример предназначен для считывания DSL, в котором важные классы:  
+## <a name="reading-from-a-file"></a>Чтение из файла  
+ Следующий пример предназначен для чтения DSL, в которой важные классы, следующим образом:  
   
 -   FamilyTreeModel  
   
@@ -63,7 +65,7 @@ caps.handback.revision: 8
   
 -   FamilyTreeDomainModel  
   
- Другой доменный класс в этом DSL person.  
+ Другой класс домена этого DSL — лицо.  
   
 ```  
 using System;  
@@ -101,8 +103,8 @@ namespace StandaloneReadDslConsole
 } } } }  
 ```  
   
-## Сохранение в файл  
- Следующее дополнение к предыдущему коду изменяет модели, а затем сохраняет его в файл.  
+## <a name="saving-to-a-file"></a>Сохранение в файл  
+ Следующего дополнения в приведенном выше коде вносит изменения в модель и сохраняет его в файл.  
   
 ```  
 using (Transaction t =  

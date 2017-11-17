@@ -1,33 +1,33 @@
 ---
-title: "Элемент &lt;Schedules&gt; (загрузчик) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<Schedules> - элемент [загрузчик]"
+title: "&lt;Расписания&gt; элемент (загрузчик) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <Schedules> element [bootstrapper]
 ms.assetid: 28d094cf-64f5-42b1-bd8a-3697082aab4f
-caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 104c187d373113e8e5dafe589af3995bef5c8cdc
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Элемент &lt;Schedules&gt; (загрузчик)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Элемент `Schedules` содержит элементы `Schedule`, которые определяют времена запуска команд, определенных в элементе `Command`.  
+# <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Расписания&gt; элемент (загрузчик)
+`Schedules` Элемент содержит `Schedule` элементы, которые определяют времена команд, определенных с `Command` элемент должен выполняться.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <Schedules>  
@@ -41,29 +41,29 @@ caps.handback.revision: 5
 </Schedules>  
 ```  
   
-## Элементы и атрибуты  
- Элемент `Schedules` является дочерним для элемента `Product`.  Каждый элемент `Product` может содержать не более одного элемента `Schedules`.  У элемента `Schedules` отсутствуют атрибуты.  
+## <a name="elements-and-attributes"></a>Элементы и атрибуты  
+ `Schedules` Элемент является дочерним элементом `Product` элемента. Каждый `Product` элемент может иметь не более одного `Schedules` элемента. `Schedules` Элемент не имеет атрибутов.  
   
-## Schedule  
- Элемент `Schedule` является дочерним для элемента `Schedules`.  Элемент `Schedules` должен иметь по крайней мере один элемент `Schedule`.  
+## <a name="schedule"></a>Расписание  
+ `Schedule` Элемент является дочерним элементом `Schedules` элемента. Объект `Schedules` элемент должен иметь по крайней мере один `Schedule` элемента.  
   
- Элемент `Schedule` имеет следующий атрибут.  
+ `Schedule`имеет следующий атрибут.  
   
 |Атрибут|Описание|  
-|-------------|--------------|  
-|`Name`|Обязательный.  Имя элемента Schedule.  Соответствует свойству `ScheduleName` элемента `Command`.  Если элемент `Command` ссылается на именованное расписание, он будет выполняться только во время, определенное в элементе `Schedule`.  Расписания также могут быть связаны с элементами `FailIf` и `BypassIf`, которые ограничивают эти условия выполнения по определенному расписанию.  Дополнительные сведения см. в разделе [Элемент \<Commands\>](../deployment/commands-element-bootstrapper.md).|  
+|---------------|-----------------|  
+|`Name`|Обязательный. Имя элемента расписания. Это соответствует `ScheduleName` свойство `Command` элемента. Когда `Command` ссылается на именованное расписание, он будет выполняться только во времени, указанного в этом `Schedule` элемента. Расписания также могут быть связаны с `FailIf` и `BypassIf` элементы, которые ограничивают эти условия выполнения по определенному расписанию. Дополнительные сведения см. в разделе [ \<команды > элемент](../deployment/commands-element-bootstrapper.md).|  
   
- Данный элемент `Schedule` может иметь только один из следующих дочерних элементов.  
+ Данный `Schedule` элемент может иметь только один из следующих дочерних элементов.  
   
-## BuildList  
- Элемент `BuildList` дает указания установщику выполнять команду немедленно после запуска загрузочного приложения.  
+## <a name="buildlist"></a>BuildList  
+ `BuildList` Элемент указывает, что программа установки для выполнения команды, сразу после запуска приложение начальной загрузки.  
   
-## BeforePackage  
- Элемент `BeforePackage` дает указания установщику выполнять команду перед установкой указанного пакета.  
+## <a name="beforepackage"></a>BeforePackage  
+ `BeforePackage` Элемент указывает, что программа установки для выполнения команды перед установкой указанного пакета.  
   
-## AfterPackage  
- Элемент `AfterPackage` дает указания установщику выполнять команду после установки указанного пакета.  
+## <a name="afterpackage"></a>AfterPackage  
+ `AfterPackage` Элемент указывает, что программа установки для выполнения команды после установки указанного пакета.  
   
-## См. также  
- [Элемент \<Product\>](../deployment/product-element-bootstrapper.md)   
+## <a name="see-also"></a>См. также  
+ [\<Продукта > элемент](../deployment/product-element-bootstrapper.md)   
  [Справочные сведения о схеме пакетов и продуктов](../deployment/product-and-package-schema-reference.md)

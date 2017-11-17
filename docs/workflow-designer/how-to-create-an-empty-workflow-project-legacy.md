@@ -1,49 +1,53 @@
 ---
-title: "Как создать пустой проект рабочего процесса (для прежних версий) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "проекты пустых рабочих процессов"
-  - "проекты, пустой рабочий процесс"
-  - "рабочие процессы, проекты пустых рабочих процессов"
+title: "Как: создать пустой проект рабочего процесса (для прежних версий) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords:
+- projects, empty workflow
+- empty workflow projects
+- workflows, empty workflow projects
 ms.assetid: f81b9cf2-9adb-47a2-936b-cb1851614e19
-caps.latest.revision: 5
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 43e3da62c78ebead3d13b1a41e7b1fff92fcfc80
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Как создать пустой проект рабочего процесса (для прежних версий)
-Выполните следующие шаги для создания проекта пустого рабочего процесса с помощью средства [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] прежних версий, предоставленного средой [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)].[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
+# <a name="how-to-create-an-empty-workflow-project-legacy"></a>Как создать пустой проект рабочего процесса (для прежних версий)
+Выполните следующие шаги для создания проекта пустого рабочего процесса с помощью средства [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] прежних версий, предоставленного средой [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
   
-### Создание пустого проекта рабочего процесса  
+### <a name="to-create-an-empty-workflow-project"></a>Создание пустого проекта рабочего процесса  
   
 1.  Запустите Visual Studio.  
   
-2.  В меню **Файл** последовательно выберите команды **Создать** и **Проект**.  
+2.  На **файл** последовательно выберите пункты **New**, а затем выберите **проекта**.  
   
-     Откроется диалоговое окно **Новый проект**.  
+     Откроется диалоговое окно **Новый проект** .  
   
-3.  Чтобы открыть конструктор прежних версий, выберите пункт **.NET Framework 3.0** или **.NET Framework 3.5** в раскрывающемся списке в верхней части окна **Создание проекта**.  
+3.  Выберите либо **.NET Framework 3.0** параметр или **.NET Framework 3.5** вариант в раскрывающемся списке в верхней части **новый проект** окно, чтобы открыть конструктор прежних версий.  
   
     > [!NOTE]
-    >  В [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)] по умолчанию выбран пункт **.NET Framework 4**.Он предназначен для создания приложений [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)], работающих на платформе [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)], и не использует конструктор прежних версий.  
+    >  Параметр по умолчанию в [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] — **.NET Framework 4**. Он предназначен для создания приложений [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)], работающих на платформе [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)], и не использует конструктор прежних версий.  
   
-4.  В области **Типы проектов** выберите Visual C\# или Visual Basic \(в области **Другие языки**\), далее выберите **Рабочий процесс**.  
+4.  В **типы проектов** области, выберите Visual C# или Visual Basic (в разделе **другие языки**), а затем выберите **рабочего процесса**.  
   
-5.  Затем в области **Шаблоны** выберите **Пустой проект рабочего процесса**.  
+5.  В **шаблоны** выберите **пустой проект рабочего процесса**.  
   
-6.  В поле **Имя** введите описательное имя проекта, чтобы облегчить его определение.  
+6.  В **имя** введите описательное имя проекта облегчить его определение.  
   
-7.  В поле **Расположение** введите путь к папке, где будет сохранен проект, или нажмите кнопку **Обзор**, чтобы перейти в эту папку.  
+7.  В **расположение** введите каталог, в котором требуется сохранить проект, или **Обзор** для перехода к нему.  
   
-     Если необходимо создать для проекта каталог решения, установите флажок **Создать каталог для решения** и введите имя в поле **Имя решения**.  
+     Если требуется создать для проекта каталог решения, выберите **создать каталог для решения** флажок и введите имя в **имя решения** поле.  
   
 8.  Нажмите кнопку **ОК**.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Создание проектов рабочих процессов для прежних версий](../workflow-designer/creating-legacy-workflow-projects.md)

@@ -1,32 +1,35 @@
 ---
-title: "Конструктор действия While | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "System.Activities.Statements.While.UI"
+title: "Конструктор действия While | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: System.Activities.Statements.While.UI
 ms.assetid: ea008091-2e4c-4f64-bfa5-afb919552446
-caps.latest.revision: 5
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: b70e0c66813c474d5711538843da93a669df88d1
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Конструктор действия While
-Действие <xref:System.Activities.Statements.While> выполняет действие, которое содержится в его <xref:System.Activities.Statements.While.Body%2A>, пока результат вычисления указанного <xref:System.Activities.Statements.Condition%2A> равен **true**.Вложенное действие может быть не выполнено ни разу.Если вложенное действие должно быть выполнено хотя бы один раз, пользуйтесь вместо этого действием <xref:System.Activities.Statements.DoWhile>.  
+# <a name="while-activity-designer"></a>Конструктор действия While
+<xref:System.Activities.Statements.While> Действия выполняет действие, содержащееся в его <xref:System.Activities.Statements.While.Body%2A> пока результат вычисления указанного <xref:System.Activities.Statements.While.Condition%2A> равен **true**. Вложенное действие может быть не выполнено ни разу. Если вложенное действие должно быть выполнено хотя бы один раз, пользуйтесь вместо этого действием <xref:System.Activities.Statements.DoWhile>.  
   
-## Свойства While в конструкторе рабочих процессов  
+## <a name="while-properties-in-workflow-designer"></a>Свойства While в конструкторе рабочих процессов  
  В следующей таблице показаны свойства действия <xref:System.Activities.Statements.While>, которые применяются чаще всего, а также приводится описание их использования в конструкторе.  
   
-|Имя свойства|Обязательное|Использование|  
-|------------------|------------------|-------------------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|Нет|Указывает дополнительное понятное имя конструктора действия <xref:System.Activities.Statements.While> в заголовке.Значение по умолчанию — While.Это значение можно изменить в окне **Свойства** или напрямую в заголовке конструктора действий.<br /><br /> Несмотря на то, что значения <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же рекомендуется использовать.|  
-|<xref:System.Activities.Statements.While.Body%2A>|Нет|Содержит действие, которое выполняется, пока результат вычисления <xref:System.Activities.Statements.Condition%2A> равен **true**.|  
-|<xref:System.Activities.Statements.Condition%2A>|Да|Содержит выражение [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], значение которого определяет, будет ли выполнено действие в <xref:System.Activities.Statements.While.Body%2A>.|  
+|Имя свойства|Обязательно|Использование|  
+|-------------------|--------------|-----------|  
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Указывает дополнительное понятное имя конструктора действия <xref:System.Activities.Statements.While> в заголовке. Значение по умолчанию - While. Значение можно изменить в **свойства** окна или напрямую в заголовке конструктора действий.<br /><br /> Несмотря на то что свойство <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же рекомендуется использовать.|  
+|<xref:System.Activities.Statements.While.Body%2A>|False|Содержит действие, выполняемое при <xref:System.Activities.Statements.While.Condition%2A> равен **true**.|  
+|<xref:System.Activities.Statements.While.Condition%2A>|True|Содержит выражение [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], значение которого определяет, будет ли выполнено действие в <xref:System.Activities.Statements.While.Body%2A>.|  
   
-## См. также  
- [Управление потоком](../workflow-designer/control-flow-activity-designers.md)   
+## <a name="see-also"></a>См. также  
+ [Поток управления](../workflow-designer/control-flow-activity-designers.md)   
  [DoWhile](../workflow-designer/dowhile-activity-designer.md)

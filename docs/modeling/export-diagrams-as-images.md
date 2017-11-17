@@ -1,5 +1,5 @@
 ---
-title: "Экспорт схем в виде изображений | Документы Microsoft"
+title: "Экспорт схемы как изображения | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -11,34 +11,20 @@ helpviewer_keywords:
 - diagrams - modeling, saving modeling diagrams
 - UML diagrams, saving
 ms.assetid: 0df68943-4c60-4f00-b1e8-b1cdee13762e
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 8f84f22444a5df5b9f4f4af44cd8ee9136403467
-ms.openlocfilehash: 861aa139eeec3577497bfd1d34957bd19bba31b7
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: b4eb0abb91ee8cfb5e3406c6211ef5934b4db0ef
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="export-diagrams-as-images"></a>Экспорт схем в виде изображений
-В Visual Studio можно сохранить схемы моделирования в форматах только для чтения, чтобы совместно использовать их с заинтересованными лицами, пользователями или участниками группы проекта, не используется та же версия Visual Studio.  
+В Visual Studio можно сохранить схем моделирования в форматах только для чтения, чтобы совместно использовать их с заинтересованными лицами, пользователями или участниками группы проекта, не используйте ту же версию Visual Studio.  
   
- Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Копирование схемы или ее части в другое приложение  
   
@@ -50,11 +36,11 @@ ms.lasthandoff: 02/22/2017
   
 ### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>Сохранение схемы моделирования в виде XPS-файла  
   
-1.  На **файл** меню, щелкните **печати** открыть **печати** диалоговое окно.  
+1.  На **файл** меню, нажмите кнопку **печати** Открытие **печати** диалоговое окно.  
   
 2.  В **имя** выберите **записи XPS-документов Microsoft**, а затем нажмите кнопку **ОК**.  
   
-3.  В **сохранить файл как** диалоговом сохранить файл как **документ XPS (\*.xps)** файла.  
+3.  В **сохраните файл как** диалоговое окно, сохраните файл под именем **документа XPS (\*расширением XPS)** файла.  
   
 ## <a name="net-framework-security"></a>Безопасность платформы .NET Framework  
   

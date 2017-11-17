@@ -1,32 +1,34 @@
 ---
-title: "Работа с листами"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Excel [разработка решений Office в Visual Studio], листы"
-  - "листы [разработка решений Office в Visual Studio], общие задачи"
+title: "Работа с листами | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Excel [Office development in Visual Studio], worksheets
+- worksheets [Office development in Visual Studio], common tasks
 ms.assetid: d9204916-6471-4cf0-89a1-d46dae0e2599
-caps.latest.revision: 13
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: bc188299dbc5fe6f8f048b4971fa4973ba2f72f2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Работа с листами
+# <a name="working-with-worksheets"></a>Работа с листами
   Классы <xref:Microsoft.Office.Tools.Excel.Worksheet> и <xref:Microsoft.Office.Interop.Excel.Worksheet> содержат методы и свойства, применяемые для выполнения задач с листами.  
   
 |Задача|Процедура|  
-|------------|---------------|  
+|----------|---------------|  
 |Добавление нового листа в книгу.|[Практическое руководство. Программное добавление новых листов в книги Excel](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)|  
 |Создание копии листа в указанном месте в книге.|[Практическое руководство. Программное копирование листов Excel](../vsto/how-to-programmatically-copy-worksheets.md)|  
 |Удаление указанного листа.|[Практическое руководство. Программное удаление листов из книг](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)|  
@@ -45,11 +47,11 @@ caps.handback.revision: 12
 |Проверка орфографии на листах.|[Практическое руководство. Программная проверка орфографии на листах](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)|  
 |Сортировка данных в именованных диапазонах и объектах списка.|[Практическое руководство. Программная сортировка данных на листах](../vsto/how-to-programmatically-sort-data-in-worksheets.md)|  
   
- Дополнительные сведения о задачах и объектной модели Excel см. в разделе [Общие сведения об объектной модели Excel](../vsto/excel-object-model-overview.md).  
+ Дополнительные сведения о задачах и объектной модели Excel см. в разделе [Excel Object Model Overview](../vsto/excel-object-model-overview.md).  
   
- В некоторых случаях способы выполнения этих задач в надстройках VSTO отличаются от способов, которые применялись в настройках на уровне документа.  
+ В некоторых случаях способы выполнения этих задач в надстройках VSTO отличаются от способов, которые применяются в настройках на уровне документа.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)   
  [Работа с книгами](../vsto/working-with-workbooks.md)   
  [Работа с диапазонами](../vsto/working-with-ranges.md)   

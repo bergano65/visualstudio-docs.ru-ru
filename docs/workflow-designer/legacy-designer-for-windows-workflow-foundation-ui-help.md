@@ -1,40 +1,44 @@
 ---
-title: "Справка по интерфейсу пользователя конструктора прежних версий для Windows Workflow Foundation | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "справочник по пользовательскому интерфейсу"
-  - "справочник по пользовательскому интерфейсу"
-  - "оснастки расширения Visual Studio 2005 для Windows Workflow Foundation, справочник по пользовательскому интерфейсу"
+title: "Конструктор прежних версий для Windows Workflow Foundation Справка по пользовательскому Интерфейсу | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords:
+- UI reference
+- Visual Studio 2005 Extensions for Windows Workflow Foundation, UI reference
+- user interface reference
 ms.assetid: b3a0104f-4485-45ac-9794-82d54e45fb09
-caps.latest.revision: 6
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: ec5ec49c01fd4efb67991def2904a99304821cdd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Справка по интерфейсу пользователя конструктора прежних версий для Windows Workflow Foundation
-В этом разделе содержатся разделы контекстной Справки, относящиеся к средству [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] прежних версий в [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)].Используйте конструктор прежних версий, если приложение ориентируется на [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
+# <a name="legacy-designer-for-windows-workflow-foundation-ui-help"></a>Справка по интерфейсу пользователя конструктора прежних версий для Windows Workflow Foundation
+В этом разделе содержатся разделы контекстной Справки, относящиеся к средству [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] прежних версий в [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. Используйте конструктор прежних версий, если приложение ориентируется на [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
   
- Доступ к этим разделам возможен и через пользовательский интерфейс [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)], если нажать клавишу **F1**, когда открыто диалоговое окно [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].  
+ Можно открыть эти разделы [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] пользовательского интерфейса, нажав клавишу **F1** при прежних версий [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] используется диалоговое окно открытым.  
   
-## В этом подразделе  
- [Диалоговое окно «Привязка к свойству действия» \(для прежних версий\)](../workflow-designer/bind-to-an-activity-s-property-dialog-box-legacy.md)  
+## <a name="in-this-section"></a>Содержание  
+ [Диалоговое окно "Привязка к свойству действия" (для прежних версий)](../workflow-designer/bind-to-an-activity-s-property-dialog-box-legacy.md)  
   
- [Диалоговое окно «Выбор набора правил» \(для прежних версий\)](../workflow-designer/select-rule-set-dialog-box-legacy.md)  
+ [Диалоговое окно "Выбор набора правил" (для прежних версий)](../workflow-designer/select-rule-set-dialog-box-legacy.md)  
   
- [Диалоговое окно «Редактор набора правил» \(для прежних версий\)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)  
+ [Диалоговое окно "Редактор набора правил" (для прежних версий)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)  
   
- [Диалоговое окно «Выбор условия» \(для прежних версий\)](../workflow-designer/select-condition-dialog-box-legacy.md)  
+ [Диалоговое окно "Выбор условия" (для прежних версий)](../workflow-designer/select-condition-dialog-box-legacy.md)  
   
- [Диалоговое окно «Редактор условий для правила» \(для прежних версий\)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)  
+ [Диалоговое окно "Редактор условий для правила" (для прежних версий)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)  
   
- [Диалоговое окно «Обзор и выбор типа .NET» \(для прежних версий\)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md)  
+ [Диалоговое окно "Обзор и выбор типа .NET" (для прежних версий)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md)  
   
- [Диалоговое окно «Конфигурация темы» \(для прежних версий\)](../workflow-designer/theme-configuration-dialog-box-legacy.md)  
+ [Диалоговое окно "Конфигурация темы" (для прежних версий)](../workflow-designer/theme-configuration-dialog-box-legacy.md)  
   
- [Диалоговое окно «Темы, конструктор рабочих процессов, параметры» \(для прежних версий\)](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md)
+ [Диалоговое окно "Темы, конструктор рабочих процессов, параметры" (для прежних версий)](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md)

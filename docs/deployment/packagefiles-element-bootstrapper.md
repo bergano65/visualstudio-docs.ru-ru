@@ -1,33 +1,33 @@
 ---
-title: "Элемент &lt;PackageFiles&gt; (загрузчик) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<PackageFiles> - элемент [загрузчик]"
+title: "&lt;PackageFiles&gt; элемент (загрузчик) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <PackageFiles> element [bootstrapper]
 ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
-caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: a85b06bfc5c82e7d4bd08bef8f768ad2e28a2ab0
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Элемент &lt;PackageFiles&gt; (загрузчик)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Элемент `PackageFiles` содержит элементы `PackageFile`, которые определяют установочные пакеты, выполняемые в результате использования элемента `Command`.  
+# <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; элемент (загрузчик)
+`PackageFiles` Элемент содержит `PackageFile` элементы, которые определяют установочные пакеты, выполняемые в результате использования `Command` элемента.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <PackageFiles  
@@ -43,28 +43,28 @@ caps.handback.revision: 16
 </PackageFiles>  
 ```  
   
-## Элементы и атрибуты  
- Элемент `PackageFiles` имеет следующий атрибут.  
+## <a name="elements-and-attributes"></a>Элементы и атрибуты  
+ `PackageFiles` Элемент имеет указанный ниже атрибут.  
   
 |Атрибут|Описание|  
-|-------------|--------------|  
-|`CopyAllPackageFiles`|Необязательный.  При значении `false` установщик будет загружать только те файлы, на которые есть ссылка в элементе `Command`.  При значении `true` будут загружены все файлы.<br /><br /> При значении `IfNotHomesite` установщик будет работать так же, как при значении `False`, если для `ComponentsLocation` задано значение `HomeSite`; в противном случае программа установки будет работать так же, как при значении `True`.  Это значение полезно при необходимости разрешить пакетам, которые сами являются загрузчиками, выполнить свою задачу в сценарии HomeSite.<br /><br /> Значение по умолчанию — `true`.|  
+|---------------|-----------------|  
+|`CopyAllPackageFiles`|Необязательно. Если значение `false`, программа установки будет загружать только файлы, на которые ссылается `Command` элемента. Если значение `true`, все файлы будут загружены.<br /><br /> Если значение `IfNotHomesite`, программа установки будет функционировать так же, как если бы `False` Если `ComponentsLocation` задано значение `HomeSite`и в противном случае будет функционировать так же, как если бы `True`. Этот параметр можно использовать разрешить пакетам, которые сами являются начальных загрузчиков, сделайте выполнить свою в сценарии HomeSite.<br /><br /> Значение по умолчанию — `true`.|  
   
-## PackageFile  
- Элемент `PackageFile` является дочерним для элемента `PackageFiles`.  Элемент `PackageFiles` должен иметь по крайней мере один элемент `PackageFile`.  
+## <a name="packagefile"></a>PackageFile  
+ `PackageFile` Элемент является дочерним элементом `PackageFiles` элемента. Объект `PackageFiles` элемент должен иметь по крайней мере один `PackageFile` элемента.  
   
- `PackageFile` имеет следующие атрибуты.  
+ `PackageFile`имеет следующие атрибуты.  
   
 |Атрибут|Описание|  
-|-------------|--------------|  
-|`Name`|Обязательный.  Имя файла пакета.  На это имя элемент `Command` будет ссылаться при определении условий для установки пакета.  Это значение также используется как ключ в таблице `Strings` для извлечения локализованного имени, используемого такими инструментами, как [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], для описания пакета.|  
-|`HomeSite`|Необязательный.  Расположение пакета на удаленном сервере, если оно не включено в установщик.|  
-|`CopyOnBuild`|Необязательный.  Указывает загрузчику на необходимость копирования файла пакета на диск при построении.  Значение по умолчанию — true.|  
-|`PublicKey`|Зашифрованный открытый ключ заверителя сертификата пакета.  Обязателен при использовании `HomeSite`; в противном случае необязателен.|  
-|`Hash`|Необязательный.  Хэш SHA1 для файла пакета.  Используется для проверки целостности файла во время установки.  Если идентичный хэш не удается вычислить из файла пакета, пакет не будет установлен.|  
+|---------------|-----------------|  
+|`Name`|Обязательный. Имя файла пакета. Это имя, `Command` элемент будет ссылаться при определении условий для установки пакета. Это значение также используется как ключ в `Strings` таблицы, чтобы получить локализованное имя, средства, такие как [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] будет использовать для описания пакета.|  
+|`HomeSite`|Необязательно. Расположение пакета на удаленном сервере, если не включено в установщик.|  
+|`CopyOnBuild`|Необязательно. Указывает, является ли начальный загрузчик должен копировать файл пакета на диск во время построения. Значение по умолчанию — true.|  
+|`PublicKey`|Зашифрованный открытый ключ заверителя сертификата пакета. Обязателен, если `HomeSite` используется; в противном случае — необязательно.|  
+|`Hash`|Необязательно. Хэш SHA1 файла пакета. Используется для проверки целостности файла во время установки. Если идентичный хэш не удается вычислить из файла пакета, пакет не устанавливается.|  
   
-## Пример  
- Следующий пример кода определяет пакеты для распространяемого пакета [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] и его зависимостей, таких как установщик Windows.  
+## <a name="example"></a>Пример  
+ В следующем примере кода определяет пакеты для [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] распространяемый пакет и его зависимостей, таких как установщик Windows.  
   
 ```  
 <PackageFiles>  
@@ -75,7 +75,7 @@ caps.handback.revision: 16
 </PackageFiles>  
 ```  
   
-## См. также  
- [Элемент \<Product\>](../deployment/product-element-bootstrapper.md)   
- [Элемент \<Package\>](../deployment/package-element-bootstrapper.md)   
+## <a name="see-also"></a>См. также  
+ [\<Продукта > элемент](../deployment/product-element-bootstrapper.md)   
+ [\<Пакет > элемент](../deployment/package-element-bootstrapper.md)   
  [Справочные сведения о схеме пакетов и продуктов](../deployment/product-and-package-schema-reference.md)

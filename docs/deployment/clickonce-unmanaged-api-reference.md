@@ -1,85 +1,86 @@
 ---
-title: "Справочник по неуправляемым интерфейсам API ClickOnce | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "CleanOnlineAppCache [неуправляемое ClickOnce]"
-  - "CleanOnlineAppCacheW - интерфейс [неуправляемое ClickOnce]"
-  - "ClickOnce, неуправляемые API"
-  - "GetDeploymentDataFromManifest [неуправляемое ClickOnce]"
-  - "LaunchApplication [неуправляемое ClickOnce]"
+title: "Справочник по API неуправляемым ClickOnce | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- LaunchApplication [ClickOnce unmanaged]
+- ClickOnce, unmanaged APIs
+- CleanOnlineAppCache [ClickOnce unmanaged]
+- CleanOnlineAppCacheW interface [ClickOnce unmanaged]
+- GetDeploymentDataFromManifest [ClickOnce unmanaged]
 ms.assetid: ec002138-4054-456d-bcc1-79ac2f4a4fd7
-caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 11e10800ff51abd6f95447d85204a44f8367f551
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Справочник по неуправляемым интерфейсам API ClickOnce
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Неуправляемые открытые API [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] из библиотеки dfshim.dll.  
+# <a name="clickonce-unmanaged-api-reference"></a>Справочник по неуправляемым интерфейсам API ClickOnce
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]неуправляемых открытых API из библиотеки dfshim.dll.  
   
-## CleanOnlineAppCache  
- Вызывает очистку или удаление всех подключенных приложений из кэша приложений [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
+## <a name="cleanonlineappcache"></a>CleanOnlineAppCache  
+ Очищает или удаление всех подключенных приложений из [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] кэш приложения.  
   
-### Возвращаемое значение  
- В случае успеха возвращает значение S\_OK; в противном случае возвращает значение типа HRESULT, представляющее тип сбоя.  При возникновении управляемого исключения возвращает значение 0x80020009 \(DISP\_E\_EXCEPTION\).  
+### <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает значение HRESULT, представляющее тип сбоя. При возникновении управляемого исключения, возвращает значение 0x80020009 (DISP_E_EXCEPTION).  
   
-### Заметки  
- Вызов CleanOnlineAppCache приводит к запуску службы [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], если она еще не запущена.  
+### <a name="remarks"></a>Примечания  
+ Вызов CleanOnlineAppCache начнет [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] службы, если он еще не запущен.  
   
-## GetDeploymentDataFromManifest  
- Возвращает информацию о развертывании из манифеста и URL\-адрес активации.  
+## <a name="getdeploymentdatafrommanifest"></a>GetDeploymentDataFromManifest  
+ Извлекает сведения о развертывании из манифеста и активации URL-адрес.  
   
-### Параметры  
+### <a name="parameters"></a>Параметры  
   
 |Параметр|Описание|Тип|  
-|--------------|--------------|---------|  
-|`pcwzActivationUrl`|Указатель на объект `ActivationURL`.|LPCWSTR|  
-|`pcwzPathToDeploymentManifest`|Указатель на объект `PathToDeploymentManifest`.|LPCWSTR|  
-|`pwzApplicationIdentity`|Указатель на буфер для приема строки с завершающим нулем, которая задает возвращаемую полную идентификацию приложения.|LPWSTR|  
-|`pdwIdentityBufferLength`|Указатель на значение типа DWORD, представляющее длину буфера `pwzApplicationIdentity` в элементах WCHAR.  с учетом места для завершающего нуля.|LPDWORD|  
-|`pwzProcessorArchitecture`|Указатель на буфер для приема строки с завершающим нулем, которая задает архитектуру процессора для развертывания приложения из манифеста.|LPWSTR|  
-|`pdwArchitectureBufferLength`|Указатель на значение типа DWORD, представляющее длину буфера `pwzProcessorArchitecture` в элементах WCHAR.|LPDWORD|  
-|`pwzApplicationManifestCodebase`|Указатель на буфер для приема строки с завершающим нулем, которая задает базу кода манифеста приложения из манифеста.|LPWSTR|  
-|`pdwCodebaseBufferLength`|Указатель на значение типа DWORD, представляющее длину буфера `pwzApplicationManifestCodebase` в элементах WCHAR.|LPDWORD|  
-|`pwzDeploymentProvider`|Указатель на буфер для приема строки с завершающим нулем, которая задает поставщик развертывания из манифеста, если таковой имеется.  В противном случае возвращается пустая строка.|LPWSTR|  
-|`pdwProviderBufferLength`|Указатель на значение типа DWORD, представляющее длину `pwzProviderBufferLength`.|LPDWORD|  
+|---------------|-----------------|----------|  
+|`pcwzActivationUrl`|Указатель на `ActivationURL`.|LPCWSTR|  
+|`pcwzPathToDeploymentManifest`|Указатель на `PathToDeploymentManifest`.|LPCWSTR|  
+|`pwzApplicationIdentity`|Указатель на буфер для получения нулем строка, указывающая, возвращаемую полную идентификацию приложения.|LPWSTR|  
+|`pdwIdentityBufferLength`|Указатель на значение DWORD, длина `pwzApplicationIdentity` буфера в WCHARs. Это включает место для завершающего нуля.|LPDWORD|  
+|`pwzProcessorArchitecture`|Указатель на буфер для приема нулем строки, которая задает архитектуру процессора для развертывания приложения из манифеста.|LPWSTR|  
+|`pdwArchitectureBufferLength`|Указатель на значение DWORD, длина `pwzProcessorArchitecture` буфера в WCHARs.|LPDWORD|  
+|`pwzApplicationManifestCodebase`|Указатель на буфер для получения нулем строка, указывающая codebase манифест приложения из манифеста.|LPWSTR|  
+|`pdwCodebaseBufferLength`|Указатель на значение DWORD, длина `pwzApplicationManifestCodebase` буфера в WCHARs.|LPDWORD|  
+|`pwzDeploymentProvider`|Указатель на буфер для приема строки с завершающим нулем, которая указывает поставщик развертывания из манифеста, при его наличии. В противном случае возвращается пустая строка.|LPWSTR|  
+|`pdwProviderBufferLength`|Указатель на значение DWORD, длина `pwzProviderBufferLength`.|LPDWORD|  
   
-### Возвращаемое значение  
- В случае успеха возвращает значение S\_OK; в противном случае возвращает значение типа HRESULT, представляющее тип сбоя.  Возвращает HRESULTFROMWIN32 \(ERROR\_INSUFFICIENT\_BUFFER\), если буфер слишком мал.  
+### <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает значение HRESULT, представляющее тип сбоя. Возвращает HRESULTFROMWIN32(ERROR_INSUFFICIENT_BUFFER), если буфер слишком мал.  
   
-### Заметки  
- Указатели не должны принимать значение NULL.  `pcwzActivationUrl` и `pcwzPathToDeploymentManifest` не должны быть пустыми.  
+### <a name="remarks"></a>Примечания  
+ Указатели не должны иметь значение null. `pcwzActivationUrl`и `pcwzPathToDeploymentManifest` не может быть пустым.  
   
- Очистка URL\-адреса активации должна производиться вызывающим кодом.  В частности, это касается добавления escape\-символов там, где они необходимы, или удаления строки запроса.  
+ Это вызывающим Очистка URL-адрес активации. Например это касается добавления escape-символов где они нужны или удаления строки запроса.  
   
- Проверка длины входных данных должна производиться вызывающим кодом.  Например, максимальная длина URL\-адреса составляет 2 КБ.  
+ Вызывающий объект несет длины входных данных. Например Максимальная длина URL-адреса составляет 2 КБ.  
   
-## LaunchApplication  
- Вызывает запуск или установку приложения с использованием URL\-адреса развертывания.  
+## <a name="launchapplication"></a>LaunchApplication  
+ Запуск или установка приложения с помощью URL-адрес развертывания.  
   
-### Параметры  
+### <a name="parameters"></a>Параметры  
   
 |Параметр|Описание|Тип|  
-|--------------|--------------|---------|  
-|`deploymentUrl`|Указатель на строку с завершающим нулем, содержащую URL\-адрес манифеста развертывания.|LPCWSTR|  
-|`data`|Зарезервировано для использования в будущем.  Должно иметь значение NULL.|LPVOID|  
-|`flags`|Зарезервировано для использования в будущем.  Должно быть равно 0.|DWORD|  
+|---------------|-----------------|----------|  
+|`deploymentUrl`|Указатель NULL нулевым байтом строка, содержащая URL-адрес манифеста развертывания.|LPCWSTR|  
+|`data`|Зарезервировано для будущего использования. Должен иметь значение NULL.|LPVOID|  
+|`flags`|Зарезервировано для будущего использования. Должно быть 0.|DWORD|  
   
-### Возвращаемое значение  
- В случае успеха возвращает значение S\_OK; в противном случае возвращает значение типа HRESULT, представляющее тип сбоя.  При возникновении управляемого исключения возвращает значение 0x80020009 \(DISP\_E\_EXCEPTION\).  
+### <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает значение HRESULT, представляющее тип сбоя. При возникновении управляемого исключения, возвращает значение 0x80020009 (DISP_E_EXCEPTION).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  <xref:System.Deployment.Application.DeploymentServiceCom.CleanOnlineAppCache%2A>

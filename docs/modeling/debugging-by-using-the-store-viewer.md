@@ -10,16 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, store viewer
 - Domain-Specific Language, store
 ms.assetid: 0178db2e-ae99-4ed3-9b87-8620fa9fa8e4
-caps.latest.revision: 17
+caps.latest.revision: "17"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.translationtype: MT
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
 ms.openlocfilehash: 6fde5dfc012b43d71f6d8db2519607724eeeadc9
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/06/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>Отладка с использованием средства просмотра хранилища
 С помощью средства просмотра хранения можно проверить состояние *хранения* используемые [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Средство просмотра, хранения отображает всех элементов модели домена, которые находятся в конкретном магазине, и свойства элемента и ссылки между элементами.  

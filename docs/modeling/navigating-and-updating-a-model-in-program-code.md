@@ -6,33 +6,17 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Domain-Specific Language, programming domain models
+helpviewer_keywords: Domain-Specific Language, programming domain models
 ms.assetid: 1427ae91-be8a-4ce7-85df-00038faa2cbb
-caps.latest.revision: 26
+caps.latest.revision: "26"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 5c7571cbb4950f91c1b69ae88241c799577f79da
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 40f3a1d56019a8bcab4a11ffaf3aa7d37b02d262
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>Перемещение по модели и обновление модели в коде программы
 Можно написать код для создания и удаления элементов модели, задавать их свойства и создания и удаления связи между элементами. Все изменения должны выполняться в рамках транзакции. Если элементы будут просмотрены в диаграмме, диаграмме будет «корректировке» автоматически в конце транзакции.  
@@ -537,4 +521,3 @@ partial class MyDiagram
  [Как: использовать транзакции для обновления модели](../modeling/how-to-use-transactions-to-update-the-model.md)   
  [Интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
  [Реагирование на изменения и их распространение](../modeling/responding-to-and-propagating-changes.md)
-

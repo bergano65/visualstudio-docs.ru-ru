@@ -1,24 +1,26 @@
 ---
-title: "Пошаговое руководство. Создание кода с помощью текстовых шаблонов | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "пошаговые руководства [текстовые шаблоны], создание кода приложений"
-  - "пошаговые руководства [текстовые шаблоны]"
+title: "Пошаговое руководство: Создание кода с помощью текстовых шаблонов | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- walkthroughs [text templates], generating application code
+- walkthroughs [text templates]
 ms.assetid: 24602ade-baca-425e-a6ce-be09a2c7f7e1
-caps.latest.revision: 11
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: b39d142a44a99cc0fde362249d5717ee75c09323
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Пошаговое руководство. Создание кода с помощью текстовых шаблонов
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="walkthrough-generating-code-by-using-text-templates"></a>Пошаговое руководство. Создание кода с помощью текстовых шаблонов
 Создание кода позволяет создавать программный код, который является строго типизированным, но при этом может быть легко изменен при изменении исходной модели. Сравните это с альтернативным методом написания полностью универсальной программы, принимающей файл конфигурации. Он является более гибким, однако в результате получается код, который труден для чтения и редактирования, а также не отличается высокой производительностью. Данное преимущество рассматривается в этом пошаговом руководстве.  
   
 ## <a name="typed-code-for-reading-xml"></a>Типизированный код для чтения XML-файла  
@@ -102,7 +104,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 4.  В рамках данного пошагового руководства назовите файл `exampleXml.xml`. Используйте в качестве содержимого файла XML-код, приведенный в предыдущем разделе.  
   
- ..  
+ .  
   
 ### <a name="add-a-test-code-file"></a>Добавление файла кода тестирования  
  Добавьте в проект файл C# и напишите в нем пример кода, который вы хотите иметь возможность записать. Например:  

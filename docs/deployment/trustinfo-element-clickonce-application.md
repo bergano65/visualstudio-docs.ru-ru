@@ -1,44 +1,45 @@
 ---
-title: "Элемент &lt;trustInfo&gt; (приложение ClickOnce) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "urn:schemas-microsoft-com:asm.v2#IPermission"
-  - "urn:schemas-microsoft-com:asm.v2#PermissionSet"
-  - "urn:schemas-microsoft-com:asm.v2#assemblyRequest"
-  - "urn:schemas-microsoft-com:asm.v2#trustInfo"
-  - "urn:schemas-microsoft-com:asm.v2#defaultAssemblyRequest"
-  - "urn:schemas-microsoft-com:asm.v2#security"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "манифесты [ClickOnce], элемент trustInfo"
-  - "Элемент <trustInfo> [манифест приложения ClickOnce]"
+title: "&lt;trustInfo&gt; элемент (приложение ClickOnce) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- urn:schemas-microsoft-com:asm.v2#IPermission
+- urn:schemas-microsoft-com:asm.v2#PermissionSet
+- urn:schemas-microsoft-com:asm.v2#assemblyRequest
+- urn:schemas-microsoft-com:asm.v2#trustInfo
+- urn:schemas-microsoft-com:asm.v2#defaultAssemblyRequest
+- urn:schemas-microsoft-com:asm.v2#security
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- manifests [ClickOnce], trustInfo element
+- <trustInfo> element [ClickOnce application manifest]
 ms.assetid: 8a813a74-e158-4308-be78-565937f6af83
-caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 645d4252dd13f4e4629d1ab636ad8b85142242c2
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Элемент &lt;trustInfo&gt; (приложение ClickOnce)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; элемент (приложение ClickOnce)
 Описывает минимальные разрешения безопасности, необходимые для запуска приложения на клиентском компьютере.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
-<trustInfo>  
+      <trustInfo>  
    <security>  
       <applicationRequestMinimum>  
          <PermissionSet  
@@ -66,35 +67,34 @@ caps.handback.revision: 16
       </requestedPrivileges>  
    </security>  
 </trustInfo>  
-  
 ```  
   
-## Элементы и атрибуты  
- Элемент `trustInfo` обязателен и находится в пространстве имен `asm.v2`. Он не содержит атрибуты, но содержит следующие элементы.  
+## <a name="elements-and-attributes"></a>Элементы и атрибуты  
+ Элемент `trustInfo` обязателен и находится в пространстве имен `asm.v2` . Он не содержит атрибуты, но содержит следующие элементы.  
   
-## безопасность  
- Обязательный. Этот элемент является дочерним по отношению к элементу `trustInfo`. Он содержит элемент `applicationRequestMinimum` и не содержит атрибуты.  
+## <a name="security"></a>безопасность  
+ Обязательный. Этот элемент является дочерним по отношению к элементу `trustInfo` . Он содержит элемент `applicationRequestMinimum` и не содержит атрибуты.  
   
-## applicationRequestMinimum  
- Обязательный. Этот элемент является дочерним по отношению к элементу `security` и содержит элементы `PermissionSet`, `assemblyRequest` и `defaultAssemblyRequest`. Этот элемент не содержит атрибуты.  
+## <a name="applicationrequestminimum"></a>applicationRequestMinimum  
+ Обязательный. Этот элемент является дочерним по отношению к элементу `security` и содержит элементы `PermissionSet`, `assemblyRequest`и `defaultAssemblyRequest`. Этот элемент не содержит атрибуты.  
   
-## PermissionSet  
- Обязательный. Этот элемент является дочерним по отношению к элементу `applicationRequestMinimum` и содержит элемент `IPermission`. Этот элемент содержит следующие атрибуты.  
+## <a name="permissionset"></a>PermissionSet  
+ Обязательный. Этот элемент является дочерним по отношению к элементу `applicationRequestMinimum` и содержит элемент `IPermission` . Этот элемент содержит следующие атрибуты.  
   
 -   `ID`  
   
-     Обязательный. Обозначает набор разрешений. Этот атрибут может быть любым значением. На идентификатор указывается ссылка в атрибутах `defaultAssemblyRequest` и `assemblyRequest`.  
+     Обязательный. Обозначает набор разрешений. Этот атрибут может быть любым значением. На идентификатор указывается ссылка в атрибутах `defaultAssemblyRequest` и `assemblyRequest` .  
   
 -   `version`  
   
      Обязательный. Обозначает версию разрешения. Обычное значение — `1`.  
   
-## IPermission  
- Необязательно. Этот элемент является дочерним по отношению к элементу `PermissionSet`. Элемент `IPermission` полностью обозначает класс разрешений в [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Элемент `IPermission` содержит следующие атрибуты, но может иметь и атрибуты дополнительные, соответствующие свойствам в классе разрешений. Чтобы узнать синтаксис конкретного разрешения, см. примеры, перечисленные в файле Security.config.  
+## <a name="ipermission"></a>IPermission  
+ Необязательно. Этот элемент является дочерним по отношению к элементу `PermissionSet` . Элемент `IPermission` полностью обозначает класс разрешений в [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Элемент `IPermission` содержит следующие атрибуты, но может иметь и атрибуты дополнительные, соответствующие свойствам в классе разрешений. Чтобы узнать синтаксис конкретного разрешения, см. примеры, перечисленные в файле Security.config.  
   
 -   `class`  
   
-     Обязательный. Обозначает класс разрешений по строгому имени. Например, следующий код обозначает тип `FileDialogPermission`.  
+     Обязательный. Обозначает класс разрешений по строгому имени. Например, следующий код обозначает тип `FileDialogPermission` .  
   
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
@@ -104,7 +104,7 @@ caps.handback.revision: 16
   
 -   `Unrestricted`  
   
-     Обязательный. Определяет, требуется ли приложению неограниченная версия конкретного разрешения. Если значение равно `true`, неограниченная версия разрешения строго обязательна. Если значение равно `false` или этот атрибут не определен, на него распространяются ограничения в соответствии с атрибутами конкретного разрешения, заданными в теге `IPermission`. Примите следующие разрешения:  
+     Обязательный. Определяет, требуется ли приложению неограниченная версия конкретного разрешения. Если значение равно `true`, неограниченная версия разрешения строго обязательна. Если значение равно `false`или этот атрибут не определен, на него распространяются ограничения в соответствии с атрибутами конкретного разрешения, заданными в теге `IPermission` . Примите следующие разрешения:  
   
     ```  
     <IPermission  
@@ -117,16 +117,16 @@ caps.handback.revision: 16
       Unrestricted="true" />  
     ```  
   
-     В этом примере объявление для <xref:System.Security.Permissions.EnvironmentPermission> разрешает приложению только чтение переменной среды USERNAME, тогда как объявление для <xref:System.Security.Permissions.FileDialogPermission> предоставляет приложению неограниченное право на использование всех классов <xref:System.Windows.Forms.FileDialog>.  
+     В этом примере объявление для <xref:System.Security.Permissions.EnvironmentPermission> разрешает приложению только чтение переменной среды USERNAME, тогда как объявление для <xref:System.Security.Permissions.FileDialogPermission> предоставляет приложению неограниченное право на использование всех классов <xref:System.Windows.Forms.FileDialog> .  
   
-## defaultAssemblyRequest  
+## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest  
  Необязательно. Обозначает набор разрешений, предоставленных всем сборкам. Этот элемент является дочерним по отношению к элементу `applicationRequestMinimum` и содержит следующий атрибут.  
   
 -   `permissionSetReference`  
   
-     Обязательный. Определяет идентификатор набора разрешений, который является разрешением по умолчанию. Набор разрешений объявляется в элементе `PermissionSet`.  
+     Обязательный. Определяет идентификатор набора разрешений, который является разрешением по умолчанию. Набор разрешений объявляется в элементе `PermissionSet` .  
   
-## assemblyRequest  
+## <a name="assemblyrequest"></a>assemblyRequest  
  Необязательно. Обозначает разрешения для конкретной сборки. Этот элемент является дочерним по отношению к элементу `applicationRequestMinimum` и содержит следующие атрибуты.  
   
 -   `Name`  
@@ -135,12 +135,12 @@ caps.handback.revision: 16
   
 -   `permissionSetReference`  
   
-     Обязательный. Определяет идентификатор набора разрешений, требующийся для этой сборки. Набор разрешений объявляется в элементе `PermissionSet`.  
+     Обязательный. Определяет идентификатор набора разрешений, требующийся для этой сборки. Набор разрешений объявляется в элементе `PermissionSet` .  
   
-## requestedPrivileges  
- Необязательно. Этот элемент является дочерним по отношению к элементу `security` и содержит элемент `requestedExecutionLevel`. Этот элемент не содержит атрибуты.  
+## <a name="requestedprivileges"></a>requestedPrivileges  
+ Необязательно. Этот элемент является дочерним по отношению к элементу `security` и содержит элемент `requestedExecutionLevel` . Этот элемент не содержит атрибуты.  
   
-## requestedExecutionLevel  
+## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
  Необязательно. Определяет уровень безопасности, в рамках которого приложение запрашивает выполнение. Этот элемент не содержит дочерние элементы и содержит следующие атрибуты.  
   
 -   `Level`  
@@ -153,21 +153,21 @@ caps.handback.revision: 16
   
      `requireAdministrator`: запрашиваются полные права администратора.  
   
-     Приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] могут устанавливаться только при указании значения `asInvoker`. Установка с другим значением завершится сбоем.  
+     Приложения[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] могут устанавливаться только при указании значения `asInvoker`. Установка с другим значением завершится сбоем.  
   
 -   `uiAccess`  
   
-     Необязательный. Указывает, требуется ли приложению доступ к защищенным элементам пользовательского интерфейса. Доступные значения: `true` или `false`; значение по умолчанию — false. Только для подписанных приложений требуется значение true.  
+     Необязательно. Указывает, требуется ли приложению доступ к защищенным элементам пользовательского интерфейса. Доступные значения: `true` или `false`; значение по умолчанию — false. Только для подписанных приложений требуется значение true.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
  Если приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] запрашивает больше разрешений, чем клиентский компьютер предоставит по умолчанию, диспетчер доверия среды CLR спросит пользователя, следует ли предоставить приложению повышенный уровень доверия. Если ответ — "нет", приложение не будет запущено; в противном случае оно будет запущено с запрошенными разрешениями.  
   
- Все разрешения, запрошенные через `defaultAssemblyRequest` и `assemblyRequest`, будут предоставлены без вывода запросов пользователям, если манифест развертывания содержит действительную лицензию доверия.  
+ Все разрешения, запрошенные через `defaultAssemblyRequest` и `assemblyRequest` , будут предоставлены без вывода запросов пользователям, если манифест развертывания содержит действительную лицензию доверия.  
   
- Дополнительные сведения о повышении уровня разрешений см. в статье [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md). Дополнительные сведения о развертывании политик см. в статье [Общие сведения о развертывании доверенных приложений](../deployment/trusted-application-deployment-overview.md).  
+ Дополнительные сведения о повышении уровня разрешений см. в разделе [защита приложений ClickOnce](../deployment/securing-clickonce-applications.md). Дополнительные сведения о развертывании политик см. в статье [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
-## Примеры  
- В следующих трех примерах кода показаны элементы `trustInfo` для зон безопасности, именованных по умолчанию — Internet, LocalIntranet и FullTrust. Их можно использовать в манифесте приложения развертывания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
+## <a name="examples"></a>Примеры  
+ В следующих трех примерах кода показаны элементы `trustInfo` для зон безопасности, именованных по умолчанию — Internet, LocalIntranet и FullTrust. Их можно использовать в манифесте приложения развертывания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .  
   
  В первом примере показан элемент `trustInfo` для разрешений по умолчанию, доступных в зоне безопасности Internet.  
   
@@ -270,6 +270,6 @@ caps.handback.revision: 16
 </trustInfo>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Общие сведения о развертывании доверенных приложений](../deployment/trusted-application-deployment-overview.md)   
  [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)

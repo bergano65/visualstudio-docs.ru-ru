@@ -1,33 +1,33 @@
 ---
-title: "Элемент &lt;Package&gt; (загрузчик) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<package> - элемент [загрузчик]"
+title: "&lt;Пакет&gt; элемент (загрузчик) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <package> element [bootstrapper]
 ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
-caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 469024d48b1c145210aa518f10647d04315a0471
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Элемент &lt;Package&gt; (загрузчик)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Элемент `Package` представляет собой XML\-элемент верхнего уровня в файле пакета.  
+# <a name="ltpackagegt-element-bootstrapper"></a>&lt;Пакет&gt; элемент (загрузчик)
+`Package` Элемент является элементом верхнего уровня XML в файле пакета.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <Package  
@@ -142,17 +142,17 @@ caps.handback.revision: 9
 </Package>  
 ```  
   
-## Элементы и атрибуты  
- Элемент `Package` является обязательным.  Он имеет следующие атрибуты.  
+## <a name="elements-and-attributes"></a>Элементы и атрибуты  
+ `Package` Элемент является обязательным. Он имеет следующие атрибуты.  
   
 |Атрибут|Описание|  
-|-------------|--------------|  
-|`Culture`|Обязательный.  Определяет язык и региональные параметры для данного пакета.  Этот атрибут служит также ключом для элемента `Strings`, содержащего список зависимых от языка строк названий продуктов и сообщений об ошибках, выводимых в ходе установки.|  
-|`Name`|Обязательный.  Имя пакета, отображаемого для разработчика в таких средствах как [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Этот атрибут служит ключом для элемента `Strings`, который должен содержать элемент `String` со свойствами `Name` и `Culture`, установленными в соответствии со свойствами `Name` и `Culture` атрибута `Package`.|  
-|`LicenseAgreement`|Необязательный.  Задает имя файла в распространяемом пакете, содержащего лицензионное соглашение конечного пользователя \(EULA\).  Этот файл может иметь формат TXT или  RTF.|  
+|---------------|-----------------|  
+|`Culture`|Обязательный. Определяет язык и региональные параметры для этого пакета, который определяет язык, который будет использоваться. Этот атрибут является ключом в `Strings` элемент, который содержит список строк, связанных с языком и региональными параметрами для названий продуктов и сообщений об ошибках во время установки.|  
+|`Name`|Обязательный. Имя пакета, отображаемого для разработчика в инструменте, такие как [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Этот атрибут является ключом в `Strings` элемент, который должен содержать `String` элемент с `Name` и `Culture` значение свойства, чтобы соответствовать `Name` и `Culture` свойства `Package`.|  
+|`LicenseAgreement`|Необязательно. Задает имя файла в распространяемом пакете, который содержит лицензионное соглашение (EULA).  Этот файл может быть обычного текста (txt) или в формате RTF. (.rtf)|  
   
-## Пример  
- В следующем примере полностью приведено содержимое файла пакета для распространения [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].  
+## <a name="example"></a>Пример  
+ В следующем примере кода показан полный пакет файл перераспределения [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -189,5 +189,5 @@ caps.handback.revision: 9
 </Package>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Справочные сведения о схеме пакетов и продуктов](../deployment/product-and-package-schema-reference.md)

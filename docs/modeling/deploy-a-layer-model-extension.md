@@ -10,29 +10,15 @@ helpviewer_keywords:
 - dependency diagrams, deploying extensions
 - layer models, deploying extensions
 ms.assetid: 00a4675b-d20e-487e-8fd5-be2b1e0ba238
-caps.latest.revision: 27
+caps.latest.revision: "27"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 8f84f22444a5df5b9f4f4af44cd8ee9136403467
-ms.openlocfilehash: 03164fe80a0b8f4dbc321a7e57b7db9e38e405d5
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d019e602c5bf198df03a50034c2ed29519d16e53
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="deploy-a-layer-model-extension"></a>Развертывание расширения модели слоев
 Другие пользователи Visual Studio могут устанавливать расширения моделирования слоев, созданные вами с помощью Visual Studio.  
@@ -42,9 +28,9 @@ ms.lasthandoff: 02/22/2017
   
 #### <a name="to-install-the-extension"></a>Установка расширения  
   
-1.  В проекте, который содержит **source.vsix.manifest**откройте **bin\\ \* ** в проводнике.  
+1.  В проекте, который содержит **source.vsix.manifest**откройте **bin\\ \***  в проводнике.  
   
-2.  Копировать ** \*.vsix** файл на компьютер, на котором необходимо установить расширение.  
+2.  Копировать  **\*.vsix** файл на компьютер, на котором требуется установить расширение.  
   
 3.  На конечном компьютере дважды щелкните VSIX-файл в проводнике.  
   
@@ -52,16 +38,16 @@ ms.lasthandoff: 02/22/2017
   
 #### <a name="to-uninstall-the-extension"></a>Удаление расширения  
   
-1.  В Visual Studio на **средства** меню, щелкните **расширения и обновления**.  
+1.  В Visual Studio на **средства** меню, нажмите кнопку **расширения и обновления**.  
   
-2.  Выберите имя расширения и нажмите кнопку **удаление**.  
+2.  Выберите имя расширения и нажмите кнопку **удаления**.  
   
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Установка расширения на сервере Team Foundation Build  
  Как правило, на серверах [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] не установлена среда Visual Studio, поэтому установить VSIX двойным щелчком мыши невозможно. Установка [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] включает несколько компонентов для запуска расширения VSIX, но установка расширения выполняется вручную.  
   
 #### <a name="to-install-your-layer-extension-on-a-includeesprbuildmiscincludesesprbuildmdmd-server"></a>Установка расширения слоев на сервере [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)]  
   
-1.  Копировать **.vsix** файлы с компьютера разработки на [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] компьютере.  
+1.  Копировать **.vsix** файлы с компьютера разработчика для [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] компьютера.  
   
      Поместите VSIX-файл в одно из указанных ниже мест.  
   
@@ -78,7 +64,7 @@ ms.lasthandoff: 02/22/2017
          %LocalAppData%\Microsoft\VisualStudio\\\Extensions\Microsoft [версия]  
   
         > [!NOTE]
-        >  % LocalAppData % — *DriveName*: пользователи*пользователя*AppDataLocal.  
+        >  % LocalAppData % — *DriveName*: пользователи*UserName*AppDataLocal.  
   
 2.  Разверните каждый VSIX-файл в папке в том же местоположении.  
   
@@ -89,4 +75,3 @@ ms.lasthandoff: 02/22/2017
     3.  Удалите ZIP-файл.  
   
 3.  Перезапустите [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)].
-

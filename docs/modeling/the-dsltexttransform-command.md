@@ -1,35 +1,36 @@
 ---
-title: "Команда DslTextTransform | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Доменный язык, команды"
+title: "Команда DslTextTransform | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Domain-Specific Language, commands
 ms.assetid: 7d025d0b-6543-4a49-9f6b-8b8cfcad77ee
-caps.latest.revision: 30
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 30
+caps.latest.revision: "30"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: fd45a33b421e889b05fd78eceddc0b05126e4a21
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Команда DslTextTransform
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-DslTextTransform.cmd — это сценарий, который вызывает TextTransform.exe и запускает его с помощью общих параметров. DslTextTransformation.cmd можно использовать для автоматизации Ночные построения вашей [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] проектов. Дополнительные сведения см. в разделе [Создание файлов с помощью служебной программы TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).  
+# <a name="the-dsltexttransform-command"></a>Команда DslTextTransform
+DslTextTransform.cmd — это сценарий, который вызывает TextTransform.exe и запускает его с помощью общих параметров. DslTextTransformation.cmd можно использовать для автоматизации Ночные построения из вашего [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] проектов. Дополнительные сведения см. в разделе [создания файлов с помощью служебной программы TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).  
   
  DslTextTransform.cmd находится в следующем каталоге:  
   
- **\< путь установки пакета SDK ДЛЯ visual Studio>\VisualStudioIntegration\Tools\Bin**  
+ **\<Путь установки пакета SDK для Visual Studio > \VisualStudioIntegration\Tools\Bin**  
   
- Можно указать следующие аргументы в качестве входных данных для DslTextTransform.cmd:  
+ В качестве входного для DslTextTransform.cmd можно указать следующие аргументы:  
   
 -   Выходной каталог проекта модели домена.  
   
--   Выходной каталог проекта определение конструктора.  
+-   Выходной каталог проекта, определение конструктора.  
   
--   Расположение файла текстового шаблона.  
+-   Расположение текстового файла шаблона.  
   
- DslTextTransform.cmd обрабатывает шаблон в указанный текстовый файл, используя процессоры директив по умолчанию и сборки. Если создать пользовательские процессоры директив, можно создать собственный пакетный файл, вызывающий TextTransform.exe. В этом пакетном файле можно указать сборки и связанные пользовательские процессоры директив.
+ DslTextTransform.cmd обрабатывает указанный текстовый файл шаблона, с помощью процессоров директив по умолчанию и сборки. При создании пользовательского процессора директив, можно создать собственные пакетный файл, который вызывает TextTransform.exe. В этом пакетном файле можно указать сборки и связанные пользовательские процессоры директив.

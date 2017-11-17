@@ -1,33 +1,33 @@
 ---
-title: "Элемент &lt;Product&gt; (загрузчик) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<product> - элемент [загрузчик]"
+title: "&lt;Продукт&gt; элемент (загрузчик) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <product> element [bootstrapper]
 ms.assetid: 52b414af-ec80-4d2f-ad14-902543cd268e
-caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: c115fa5cb7191ab1edcff3005620d9ac7835f8a0
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Элемент &lt;Product&gt; (загрузчик)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Элемент `Product` представляет XML\-элемент верхнего уровня в файле продукта.  
+# <a name="ltproductgt-element-bootstrapper"></a>&lt;Продукт&gt; элемент (загрузчик)
+`Product` Элемент является элементом верхнего уровня XML в файле продукта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <Product  
@@ -139,15 +139,15 @@ ProductCode
 </Package>  
 ```  
   
-## Элементы и атрибуты  
- Элемент `Product` является обязательным в файле продукта.  Он имеет следующий атрибут.  
+## <a name="elements-and-attributes"></a>Элементы и атрибуты  
+ `Product` Элемент является обязательным в файле продукта. Он имеет следующий атрибут.  
   
 |Атрибут|Описание|  
-|-------------|--------------|  
+|---------------|-----------------|  
 |`ProductCode`|Уникальный идентификатор продукта.|  
   
-## Пример  
- В следующем примере кода показан полный файл продукта для установки [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+## <a name="example"></a>Пример  
+ В следующем примере кода показано создание файла продукта для установки [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -251,5 +251,5 @@ ProductCode
 </Product>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Справочные сведения о схеме пакетов и продуктов](../deployment/product-and-package-schema-reference.md)

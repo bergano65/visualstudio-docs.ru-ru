@@ -1,28 +1,30 @@
 ---
-title: "T4 Text Template Directives | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "text templates, import directive"
-  - "text templates, include directive"
-  - "text templates, assembly directive"
-  - "text templates, output directive"
-  - "text templates, directives"
-  - "text templates, template directive"
+title: "T4 Директивы текстовых шаблонов | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- text templates, import directive
+- text templates, include directive
+- text templates, assembly directive
+- text templates, output directive
+- text templates, directives
+- text templates, template directive
 ms.assetid: 6898ee02-ebb2-4635-a4e9-350774c13cf2
-caps.latest.revision: 81
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 81
+caps.latest.revision: "81"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: e4f3dd4d84e52c8ae98cd5ae2dd8b93ac1e69c59
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# T4 Text Template Directives
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="t4-text-template-directives"></a>Директивы текстовых шаблонов T4
 Директивы представляют собой инструкции для процессора преобразования текстового шаблона.  
   
  Синтаксис директив таков:  
@@ -31,36 +33,36 @@ caps.handback.revision: 81
 <#@ DirectiveName [AttributeName = "AttributeValue"] ... #>  
 ```  
   
- Все значения атрибутов должны заключаться в двойные кавычки.  Если значение само содержит двойные кавычки, их нужно предварять знаком \\.  
+ Все значения атрибутов должны заключаться в двойные кавычки. Если значение само содержит двойные кавычки, их нужно предварять знаком \.  
   
- Как правило, директивы — это первый элемент файла шаблона или включенного файла.  Их не следует помещать внутри блока кода `<#...#>` или после блока функции класса `<#+...#>`.  
+ Как правило, директивы — это первый элемент файла шаблона или включенного файла. Их не следует помещать внутри блока кода `<#...#>` или после блока функции класса `<#+...#>`.  
   
- [T4 Template Directive](../modeling/t4-template-directive.md)  
+ [Директива Template T4](../modeling/t4-template-directive.md)  
  ```  
 <#@ template [language="VB"] [hostspecific="true|TrueFromBase"] [debug="true"] [inherits="templateBaseClass"] [culture="code"] [compilerOptions="options"] [visibility="internal"] [linePragmas="false"] #>  
 ```  
   
- [T4 Parameter Directive](../modeling/t4-parameter-directive.md)  
+ [Директива Parameter T4](../modeling/t4-parameter-directive.md)  
  ```  
 <#@ parameter type="Full.TypeName" name="ParameterName" #>  
 ```  
   
- [T4 Output Directive](../modeling/t4-output-directive.md)  
+ [Директива Output T4](../modeling/t4-output-directive.md)  
  ```  
 <#@ output extension=".fileNameExtension" [encoding="encoding"] #>  
 ```  
   
- [T4 Assembly Directive](../modeling/t4-assembly-directive.md)  
+ [Директива Assembly T4](../modeling/t4-assembly-directive.md)  
  ```  
 <#@ assembly name="[assembly strong name|assembly file name]" #>  
 ```  
   
- [T4 Import Directive](../modeling/t4-import-directive.md)  
+ [Директива Import T4](../modeling/t4-import-directive.md)  
  ```  
 <#@ import namespace="namespace" #>  
 ```  
   
- [T4 Include Directive](../modeling/t4-include-directive.md)  
+ [Директива Include T4](../modeling/t4-include-directive.md)  
  ```  
 <#@ include file="filePath" #>  
 ```  
@@ -70,4 +72,4 @@ caps.handback.revision: 81
 <#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>  
 ```  
   
- Кроме того, можно создавать собственные директивы.  Дополнительные сведения см. в разделе [Creating Custom T4 Text Template Directive Processors](../modeling/creating-custom-t4-text-template-directive-processors.md).  При использовании пакета SDK визуализации и моделирования для создания доменного языка \(SDL\) в составе доменного языка будет создан обработчик директив.
+ Кроме того, можно создавать собственные директивы. Дополнительные сведения см. в разделе [Создание настраиваемых T4 процессорами текстового шаблона директива](../modeling/creating-custom-t4-text-template-directive-processors.md). При использовании пакета SDK визуализации и моделирования для создания доменного языка в составе доменного языка будет создан обработчик директив.

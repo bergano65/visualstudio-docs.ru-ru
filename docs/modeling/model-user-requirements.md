@@ -10,35 +10,20 @@ helpviewer_keywords:
 - requirements
 - stories
 ms.assetid: 359900f8-6d69-493d-bfdf-2c9069c74a26
-caps.latest.revision: 28
+caps.latest.revision: "28"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Machine Translation
-ms.sourcegitcommit: 08aabdfe0e268f93ef7723076375b7f65b15ccf3
-ms.openlocfilehash: 60866c46920bb85927498992082763f9e34b4137
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 064d2819a9a7bd3e72539ff7624299e3619f4e94
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="model-user-requirements"></a>Моделирование требований пользователей
 Visual Studio помогает понимать и обсуждать потребности пользователей, а также информировать о них других. Для этого можно составлять схемы о деятельности пользователей и о том, как система помогает им в достижении целей. Модель требований — это набор этих схем, каждая из которых иллюстрирует отдельный аспект потребностей пользователей. Демонстрационные видеоматериалы см. в разделе [Моделирование бизнес-среды](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  
   
- Чтобы узнать, какие версии Visual Studio поддерживают каждый тип модели, см. раздел [поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Чтобы узнать, какие версии Visual Studio поддерживают каждый тип модели, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Модель требований помогает:  
   
@@ -70,9 +55,9 @@ Visual Studio помогает понимать и обсуждать потре
 |Дополнительные документы или рабочие элементы|Критерии производительности, безопасности, полезности и надежности.|[Описание требований к качеству обслуживания](#QoSRequirements)|  
 |Дополнительные документы или рабочие элементы|Ограничения и правила, не относящиеся к конкретному варианту использования.|[Отображение бизнес-правил](#BusinessRules)|  
   
- Обратите внимание, что большинство типов схем можно использовать и для других целей. Общие сведения о типах схем см. [создания моделей для приложения](../modeling/create-models-for-your-app.md).
+ Обратите внимание, что большинство типов схем можно использовать и для других целей. Обзор типов диаграмм см. в разделе [создания моделей для приложения](../modeling/create-models-for-your-app.md).
   
-##  <a name="a-namebusinessrulesa-showing-business-rules"></a><a name="BusinessRules"></a>Отображение бизнес-правил  
+##  <a name="BusinessRules"></a> Showing Business Rules  
  Бизнес-правило — это требование, не связанное с определенным вариантом использования, которое необходимо соблюдать во всех частях системы.  
   
  Многие бизнес-правила представляют собой ограничения отношений между концептуальными классами. Можно написать эти *статических**бизнес-правил* как комментарии, связанные с соответствующими классами на концептуальной схеме классов. Пример:  
@@ -91,7 +76,7 @@ Visual Studio помогает понимать и обсуждать потре
 |--------------------|----------|  
 |Разработка кода в соответствии с бизнес-правилами|[Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="a-nameqosrequirementsa-describing-quality-of-service-requirements"></a><a name="QoSRequirements"></a>Описание требований к качеству обслуживания  
+##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
  Существует несколько категорий требований к качеству обслуживания. В их число входят следующие.  
   
 -   Производительность  
@@ -118,4 +103,3 @@ Visual Studio помогает понимать и обсуждать потре
 ## <a name="see-also"></a>См. также  
  [Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)   
  [Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md)   
-

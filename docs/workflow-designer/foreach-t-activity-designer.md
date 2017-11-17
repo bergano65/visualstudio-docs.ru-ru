@@ -1,34 +1,37 @@
 ---
-title: "Конструктор действия ForEach&lt;T&gt; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "System.Activities.Statements.ForEach`1.UI"
+title: "ForEach&lt;T&gt; конструктора | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: System.Activities.Statements.ForEach`1.UI
 ms.assetid: 67097b3a-fcf5-4a72-beb1-2c7784151a86
-caps.latest.revision: 5
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: ecfdc4d736f2be4ba4a8810b039ac11c88228160
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Конструктор действия ForEach&lt;T&gt;
+# <a name="foreachlttgt-activity-designer"></a>ForEach&lt;T&gt; конструктора действий
 Действие <xref:System.Activities.Statements.ForEach%601> выполняет действие, содержащееся в его теле <xref:System.Activities.Statements.ForEach%601.Body%2A> для каждого элемента указанной коллекции <xref:System.Activities.Statements.ForEach%601.Values%2A>.  
   
-## Свойства ForEach\<T\> в конструкторе рабочих процессов  
+## <a name="foreacht-properties-in-the-workflow-designer"></a>ForEach < T\> свойств в конструкторе рабочих процессов  
  В следующей таблице показаны свойства действия <xref:System.Activities.Statements.ForEach%601>, которые применяются чаще всего, и описано их использование в конструкторе.  
   
 |Имя свойства|Обязательно|Использование|  
-|------------------|-----------------|-------------------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.ForEach%601>.По умолчанию ― ForEach\<Int32\>.Несмотря на то, что значение <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же лучше использовать.|  
-|<xref:System.Activities.Statements.ForEach%601.Values%2A>|True|Коллекция элементов для итерации.Для установки <xref:System.Activities.Statements.ForEach%601.Values%2A> введите выражение [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] в поле **Значения** конструктора операций **ForEach\<T\>** или в сетку свойств.|  
-|*TypeArgument*|Да|Тип элементов в коллекции <xref:System.Activities.Statements.ForEach%601.Values%2A>, указанный общим параметром *T*.По умолчанию свойство *TypeArgument* имеет значение **Int32**.Чтобы изменить тип, измените значение *TypeArgument* в поле со списком в таблице свойств.|  
+|-------------------|--------------|-----------|  
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.ForEach%601>. Значение по умолчанию — ForEach < Int32\>. Несмотря на то, что значение <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же лучше использовать.|  
+|<xref:System.Activities.Statements.ForEach%601.Values%2A>|True|Коллекция элементов для итерации. Для задания <xref:System.Activities.Statements.ForEach%601.Values%2A>, введите команду [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] выражения в **значения** поле на **ForEach < T\>**  действия конструктора или в сетке свойств.|  
+|*TypeArgument*|True|Тип элементов в <xref:System.Activities.Statements.ForEach%601.Values%2A> коллекции, указанное в универсальном параметре *T*. По умолчанию *TypeArgument* равно **Int32**. Чтобы изменить тип, измените значение *TypeArgument* поле со списком в сетке свойств.|  
   
- По умолчанию именем итератора цикла является **item**.Можно изменить имя переменной итератора в конструкторе операций <xref:System.Activities.Statements.ForEach%601>.Цикличный итератор можно использовать в выражениях в дочерних действиях действия <xref:System.Activities.Statements.ForEach%601>.  
+ По умолчанию именем итератора цикла является **элемент**. Можно изменить имя переменной итератора в конструкторе операций <xref:System.Activities.Statements.ForEach%601>. Цикличный итератор можно использовать в выражениях в дочерних действиях действия <xref:System.Activities.Statements.ForEach%601>.  
   
-## См. также  
- [ParallelForEach\<T\>](../workflow-designer/parallelforeach-t-activity-designer.md)   
- [Управление потоком](../workflow-designer/control-flow-activity-designers.md)
+## <a name="see-also"></a>См. также  
+ [ParallelForEach\<T >](../workflow-designer/parallelforeach-t-activity-designer.md)   
+ [Поток управления](../workflow-designer/control-flow-activity-designers.md)

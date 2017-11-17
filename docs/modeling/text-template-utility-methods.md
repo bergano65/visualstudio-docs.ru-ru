@@ -1,32 +1,33 @@
 ---
-title: "Text Template Utility Methods | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "text templates, utility methods"
+title: "Служебные методы для текстовых шаблонов | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: text templates, utility methods
 ms.assetid: 8c11f9f7-678b-4f0c-b634-dc78fda699d1
-caps.latest.revision: 50
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 50
+caps.latest.revision: "50"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 534a7317b4bca2abe559c028d025a52997a9f508
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Text Template Utility Methods
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Существует несколько методов, которые всегда доступны при написании кода в текстовом шаблоне [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Эти методы определены в <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
+# <a name="text-template-utility-methods"></a>Служебные методы для текстовых шаблонов
+Существует несколько методов, всегда будут доступны пользователю при написании кода [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] текстового шаблона. Эти методы определяются в <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
   
 > [!TIP]
->  Кроме того, в обычном \(без предварительной обработки\) текстовом шаблоне можно использовать и другие методы и службы, предоставляемые средой размещения.  Например, можно разрешать пути к файлам, заносить ошибки в журнал и использовать службы, предоставленные [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и любыми загруженными пакетами.  Дополнительные сведения см. в разделе [Accessing Visual Studio from a Text Template](http://msdn.microsoft.com/ru-ru/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+>  Можно также использовать другие методы и службы, предоставляемые средой размещения в шаблоне обычный текст (без предварительной обработки). Например, разрешения путей к файлам, журнал ошибок и получения служб, предоставляемых [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и любыми загруженными пакетами.  Дополнительные сведения см. в разделе [доступ к Visual Studio из текстового шаблона](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
   
-## Методы Write  
- С помощью методов `Write()` и `WriteLine()` можно добавлять текст в стандартный блок кода вместо использования блока кода выражения.  Приведенные далее два блока кода функционально эквивалентны.  
+## <a name="write-methods"></a>Написать методы  
+ Можно использовать `Write()` и `WriteLine()` методы можно добавлять текст в стандартный блок кода, вместо использования блока кода выражения. Следующие два блока кода функционально эквивалентны.  
   
-##### Блок кода с блоком выражения  
+##### <a name="code-block-with-an-expression-block"></a>Блок кода с блоком выражения  
   
 ```  
 <#  
@@ -38,7 +39,7 @@ while (i-- > 0)
 #>  
 ```  
   
-##### Блок кода с использованием WriteLine\(\)  
+##### <a name="code-block-using-writeline"></a>Блок кода, с помощью WriteLine()  
   
 ```  
 <#   
@@ -52,7 +53,7 @@ while (i-- > 0)
   
  Может оказаться полезным использовать один из этих служебных методов вместо блока выражения в длинном блоке кода с вложенными управляющими структурами.  
   
- Методы `Write()` и `WriteLine()` имеют две перегруженные версии, одна из которых принимает один строковый параметр, а другая – строку сложного формата плюс массив объектов для включения в строку \(подобно методу `Console.WriteLine()`\).  Следующие два применения `WriteLine()` функционально эквивалентны:  
+ `Write()` И `WriteLine()` методы имеют две перегруженные версии, одна из которых принимает один строковый параметр и одно принимает строки составного формата, а также массив объектов для включения в строку (например `Console.WriteLine()` метода). Следующие два применения `WriteLine()` функционально эквивалентны:  
   
 ```  
 <#  
@@ -66,8 +67,8 @@ while (i-- > 0)
 #>   
 ```  
   
-## Методы для отступов  
- С помощью методов, предназначенных для создания отступов, можно форматировать вывод текстового шаблона.  Класс <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> имеет строковое свойство `CurrentIndent`, которое отображает текущий отступ в текстовом шаблоне, и поле `indentLengths`, представляющее собой список добавленных отступов.  Можно добавить отступ с помощью метода `PushIndent()` и удалить отступ с помощью метода `PopIndent()`.  Для удаления всех отступов пользуйтесь методом `ClearIndent()`.  В следующем коде демонстрируется применение этих методов:  
+## <a name="indentation-methods"></a>Методы для отступов  
+ Отступ методы можно использовать для форматирования выходных данных текстовый шаблон. <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> Класс имеет `CurrentIndent` строковое свойство, которое отображает текущий отступ в текстовом шаблоне и `indentLengths` поле, список отступы, которые были добавлены. Можно добавить отступ с `PushIndent()` метод и удалить отступ с `PopIndent()` метод. Для удаления всех отступов, используйте `ClearIndent()` метод. Следующий блок кода показано использование этих методов.  
   
 ```  
 <#  
@@ -83,7 +84,7 @@ while (i-- > 0)
 #>  
 ```  
   
- В результате выполнения данного блока кода получены следующие выходные данные.  
+ Этот блок кода выводятся следующие данные:  
   
 ```  
 Hello  
@@ -93,8 +94,8 @@ Hello
         Hello  
 ```  
   
-## Методы ошибок и предупреждений  
- Используя служебные методы ошибок и предупреждений, можно добавлять сообщения в список ошибок [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Например, следующий код добавляет в список ошибок сообщение об ошибке:  
+## <a name="error-and-warning-methods"></a>Методы ошибок и предупреждений  
+ Ошибки и предупреждения служебные методы можно использовать для добавления сообщений в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] список ошибок. Например следующий код будет добавлен сообщение об ошибке в списке ошибок.  
   
 ```  
 <#  
@@ -110,23 +111,23 @@ Hello
 #>    
 ```  
   
-## Доступ к основному приложений и поставщику услуг  
- Свойство `this.Host` может предоставлять доступ к свойствам. предоставляемым основным приложением, которое выполняет шаблон.  Для использования свойства `this.Host` необходимо установить атрибут `hostspecific` в директиве `<@template#>`:  
+## <a name="access-to-host-and-service-provider"></a>Доступ к узла и поставщик услуг  
+ Свойство `this.Host` позволяют осуществлять доступ к свойствам узла, выполняющего шаблона. Для использования `this.Host`, необходимо задать `hostspecific` атрибута в `<@template#>` директиву:  
   
- `<#@template ...  hostspecific="true" #>`  
+ `<#@template ... hostspecific="true" #>`  
   
- Тип свойства `this.Host` зависит от типа основного приложения, в котором выполняется шаблон.  В шаблоне, который выполняется в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], можно привести `this.Host` к типу `IServiceProvider`, чтобы получить доступ к таким службам, как интерфейс IDE.  Примеры.  
+ Тип `this.Host` зависит от типа узла, в котором выполняется шаблон. В шаблоне, который выполняется в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], можно привести `this.Host` для `IServiceProvider` для получения доступа к службам, например интегрированной среды разработки. Например:  
   
 ```  
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)  
                        .GetService(typeof(EnvDTE.DTE));  
 ```  
   
-## Использование другого набора служебных методов  
- В процессе генерирования текста файл шаблона преобразуется в класс, который всегда носит имя `GeneratedTextTransformation` и наследует <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  Если требуется использовать другой набор методов, можно написать собственный класс и задать его в директиве template.  Используемый класс должен наследовать <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
+## <a name="using-a-different-set-of-utility-methods"></a>С помощью другой набор служебных методов  
+ В рамках процесса создания текстового файла шаблона преобразуется в класс, который всегда имеет имя `GeneratedTextTransformation`и наследует от <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>. Если вы хотите использовать другой набор методов, можно написать собственный класс и укажите его в директиве template. Этот класс должен наследовать из <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
   
 ```  
 <#@ template inherits="MyUtilityClass" #>  
 ```  
   
- Используйте директиву `assembly` для ссылки на сборку, в которой находится откомпилированный класс.
+ Используйте `assembly` директивы для ссылки на сборку, где можно найти скомпилированного класса.
