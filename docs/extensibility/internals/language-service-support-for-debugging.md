@@ -1,34 +1,36 @@
 ---
-title: "Поддержка службы языка для отладки | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "отладчик, языковая поддержка"
-  - "языковые службы, поддержка отладки"
+title: "Поддержка службы языка для отладки | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debugger, language support
+- language services, debugging support
 ms.assetid: 7a44067f-a410-4a6a-84d2-bda5184140bc
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: cb57f7efa13a31ee4c68340936955624189e285d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Поддержка службы языка для отладки
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Служба языка может предоставлять функции, которые поддерживает отладчик через <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo> интерфейса. Эти возможности включают проверку точки останова и указания списка выражений для **Видимые** окна.  
+# <a name="language-service-support-for-debugging"></a>Поддержка службы языка для отладки
+Языковая служба может предоставлять функции, поддерживающие отладчика через <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo> интерфейса. Их число входят проверка точек останова и указания списка выражений для **видимые** окна.  
   
- Тем не менее необходимо иметь вычислитель выражений для отладки вашего языка. Средство оценки выражений отвечает за оценку выражений и получения значений во время отладки. Сведения о реализации вычислители выражений CLR см. в разделе:  
+ Тем не менее необходимо иметь вычислитель выражений для отладки вашего языка. Средство оценки выражений отвечает за вычисление выражений для получения значений во время отладки. Сведения о реализации вычислители выражений CLR см. в разделе:  
   
 -   [Вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)  
   
--   [Образец вычислитель управляемых выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)  
+-   [Образец вычислитель выражений управляемого](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)  
   
-## Сообщения компилятора  
- Тип компилятор определяет, что необходимо сделать для выполнения отладки для вашего языка. Если компилятор предназначен для операционной системы Windows и записывает в PDB\-файле, можно отлаживать программы с машинным кодом отладки ядра, который интегрирован в Visual Studio. Если компилятор создает промежуточный язык Microsoft \(MSIL\), с помощью управляемого кода, отладка механизм, который интегрирован в Visual Studio также можно отлаживать программы. Если компилятор предназначен для собственных операционной системы или другой среды, необходимо написать собственный ядро отладки.  
+## <a name="compiler-output"></a>Сообщения компилятора  
+ Тип компилятор определяет, что необходимо сделать для выполнения отладки для выбранного языка. Если компилятор предназначен для операционной системы Windows и записывает в PDB-файле, можно отлаживать программы с машинным кодом, отладка ядра, который интегрирован в Visual Studio. Если компилятор создает промежуточный язык Майкрософт (MSIL), можно отлаживать программы с использованием управляемого кода, отладка механизм, который также интегрируется в Visual Studio. Если компилятор предназначен для собственных операционной системы или другой среды, необходимо написать собственный ядро отладки.  
   
- Дополнительные сведения о реализации отладки для вашего языка. в разделе [Начало работы](../../extensibility/debugger/getting-started-with-debugger-extensibility.md) в Visual Studio отладка SDK.
+ Дополнительные сведения о реализации отладки для конкретного языка см. в разделе [Приступая к работе](../../extensibility/debugger/getting-started-with-debugger-extensibility.md) в Visual Studio пакет SDK для отладки.

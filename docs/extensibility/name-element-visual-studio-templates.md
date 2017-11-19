@@ -1,29 +1,33 @@
 ---
-title: "Элемент Name (шаблоны Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#Name"
-helpviewer_keywords: 
-  - "Name - элемент [шаблоны проектов Visual Studio]"
+title: "Назовите элемент (шаблоны Visual Studio) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Name
+helpviewer_keywords: Name element [Visual Studio project templates]
 ms.assetid: 48788dbf-7da0-4443-8061-aab966fc22c8
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 919244051df838861816279513f14e8e98f3e34f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Элемент Name (шаблоны Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Задает имя шаблона в том виде, в котором оно будет отображаться в диалоговом окне **Создать проект** или **Добавить новый элемент**.  
+# <a name="name-element-visual-studio-templates"></a>Элемент Name (шаблоны Visual Studio)
+Задает имя шаблона, он отображается в **новый проект** или **Добавление нового элемента** диалоговое окно.  
   
-## Синтаксис  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<Имя >  
+  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <Name> Template Name </Name>  
@@ -33,35 +37,35 @@ caps.handback.revision: 17
 <Name Package="{PackageID}" ID="ResourceID" />  
 ```  
   
-## Атрибуты и элементы  
- В следующих разделах описаны атрибуты, дочерние элементы и родительские элементы.  
+## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
-### Атрибуты  
+### <a name="attributes"></a>Атрибуты  
   
 |Атрибут|Описание|  
-|-------------|--------------|  
-|`Package`|Необязательный атрибут, предназначенный для сложных пользовательских скриптов.<br /><br /> GUID, который определяет идентификатор пакета Visual Studio.|  
-|`ID`|Необязательный атрибут, предназначенный для сложных пользовательских скриптов.<br /><br /> Определяет идентификатор ресурса Visual Studio.|  
+|---------------|-----------------|  
+|`Package`|Необязательный атрибут для сложных пользовательских скриптов.<br /><br /> Идентификатор GUID, который определяет пакет Visual Studio.|  
+|`ID`|Необязательный атрибут для сложных пользовательских скриптов.<br /><br /> Указывает идентификатор ресурса Visual Studio.|  
   
-### Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
   
-### Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Относит шаблон проекта к какой\-либо категории и определяет характеристики его отображения для диалоговых окон **Создать проект** или **Добавить новый элемент**.|  
+|-------------|-----------------|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
-## Текстовое значение  
- Текстовое значение является обязательным, если не используются атрибуты `Package` и `ID`.  
+## <a name="text-value"></a>Текстовое значение  
+ Текстовое значение является обязательным, если `Package` и `ID` используются атрибуты.  
   
  Текст предоставляет имя шаблона.  
   
-## Заметки  
- `Name` является обязательным дочерним элементом элемента `TemplateData`.  
+## <a name="remarks"></a>Примечания  
+ `Name` — обязательный дочерний элемент элемента `TemplateData`.  
   
-## Пример  
- В следующем примере демонстрируются метаданные для шаблона проекта приложения [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
+## <a name="example"></a>Пример  
+ В следующем примере показано метаданные для шаблона проекта [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -87,6 +91,6 @@ caps.handback.revision: 17
 </VSTemplate>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Создание пользовательских шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
+ [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

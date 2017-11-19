@@ -1,29 +1,30 @@
 ---
-title: "FIELD_KIND_EX | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Перечисление FIELD_KIND_EX"
+title: "FIELD_KIND_EX | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: FIELD_KIND_EX enumeration
 ms.assetid: 922c3208-1e94-485f-b70a-3bc96affeff8
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 700eae83a53cf9ef88c81d33a07f9a79bd77a4b8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# FIELD_KIND_EX
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Перечисляет дополнительные типы полей, IDebugField объект может содержать.  Это перечисление расширяет [FIELD\_KIND](../../../extensibility/debugger/reference/field-kind.md) перечисление.  
+# <a name="fieldkindex"></a>FIELD_KIND_EX
+Перечисляет дополнительных типов полей, [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) может содержаться в объекте. Это перечисление расширяет [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) перечисления.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 enum enum_FIELD_KIND_EX  
 {  
    FIELD_KIND_EX_NONE = 0,  
@@ -33,7 +34,7 @@ enum enum_FIELD_KIND_EX
 typedef DWORD FIELD_KIND_EX;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_FIELD_KIND_EX  
 {  
    FIELD_KIND_EX_NONE = 0,  
@@ -42,23 +43,23 @@ public enum enum_FIELD_KIND_EX
 };  
 ```  
   
-## Члены  
- FIELD\_KIND\_EX\_NONE  
+## <a name="members"></a>Члены  
+ FIELD_KIND_EX_NONE  
  Поле не содержит расширенный тип.  
   
- FIELD\_TYPE\_EX\_METHODVAR  
- Поле содержит переменную метода.  
+ FIELD_TYPE_EX_METHODVAR  
+ Поле содержит метод переменной.  
   
- FIELD\_TYPE\_EX\_CLASSVAR  
- Поле содержит переменную класса.  
+ FIELD_TYPE_EX_CLASSVAR  
+ Поле содержит переменной класса.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: Sh.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)

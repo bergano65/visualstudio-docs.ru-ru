@@ -1,30 +1,31 @@
 ---
-title: "ProjectItemFile Element"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "ProjectItemFile element"
+title: "Projectitemfile-элемент | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: ProjectItemFile element
 ms.assetid: 68d44d31-625a-4f02-b998-463ac0ffb2ef
-caps.latest.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 023d2f64dc3f05d518add1cd4bf6c3415f435985
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# ProjectItemFile Element
-  Представляет файл SharePoint, например, файл элемента "Компонент", включаемый в элемент проекта при развертывании в SharePoint.  
+# <a name="projectitemfile-element"></a>Элемент ProjectItemFile
+  Представляет файл SharePoint, таких как файл элемента компонента, для включения с элементом проекта при его развертывании в SharePoint.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <ProjectItemFile Source = "Name of the file"  
@@ -32,42 +33,42 @@ caps.handback.revision: 9
     Type = "Type of deployment for the file" />  
 ```  
   
-## Тип  
+## <a name="type"></a>Тип  
  **ProjectItemFileType**  
   
-## Атрибуты и элементы  
- В следующих разделах описаны атрибуты, дочерние элементы и родительские элементы.  
+## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
-### Атрибуты  
+### <a name="attributes"></a>Атрибуты  
   
 |Атрибут|Описание|  
-|-------------|--------------|  
-|**Source**|Обязательный атрибут элемента **xs:string**.<br /><br /> Имя файла, который развертывается с элементом проекта.|  
-|**Target**|Необязательный атрибут элемента **xs:string**.<br /><br /> Путь для развертывания файла на сервере SharePoint Server, который задается относительно корневой папки развертывания.  Корневая папка развертывания определяется типом развертывания, заданным атрибутом **Type**.  Если атрибут **Target** не указан, файл будет развернут в папку с именем, указанным в атрибуте **Source**.<br /><br /> Дополнительные сведения см. в описаниях свойств **Deployment Path** и **Deployment Root** элементов проекта SharePoint в разделе [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
-|**Type**|Обязательный атрибут элемента **xs:string**.<br /><br /> Тип развертывания файла.  Дополнительные сведения о возможных значениях см. в описании свойства **Deployment Type** элементов проекта SharePoint в разделе [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
+|---------------|-----------------|  
+|**Источник**|Требуется **xs: String** атрибута.<br /><br /> Имя файла, который развертывается с элементом проекта.|  
+|**Целевой объект**|Необязательный **xs: String** атрибута.<br /><br /> Путь, где будет развернут файл на сайте SharePoint, относительно корневой папки развертывания. Корневой папки развертывания определяется типом развертывания, заданные **тип** атрибута. Если **целевой** атрибут не указан, файл будет развернут в папку с именем, указанным в **источника** атрибута.<br /><br /> Дополнительные сведения см. в разделе описания **путь развертывания** и **корневого каталога развертывания** свойства SharePoint элементами проекта в [разработке решений SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
+|**Тип**|Требуется **xs: String** атрибута.<br /><br /> Тип развертывания файла. Дополнительные сведения о возможных значениях см. в описании для **тип развертывания** свойства элементов проекта SharePoint в [разработке решений SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
   
-### Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
   
-### Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
-|[Файлы](../sharepoint/files-element.md)|Задает файлы для включения с элементом проекта SharePoint при его развертывании в SharePoint.|  
+|-------------|-----------------|  
+|[Файлы](../sharepoint/files-element.md)|Указывает файлы, включаемые в элемент проекта SharePoint при его развертывании в SharePoint.|  
   
-## Заметки  
- Файлы SharePoint, на которые обычно имеются ссылки в элементах **ProjectItemFile**, включают файлы элементов компонента \(Elements.xml\), файлы схемы для определений списков \(Schema.xml\) и файлы определения веб\-части для веб\-части \(файлы с расширением WEBPART\).  
+## <a name="remarks"></a>Примечания  
+ Файлы SharePoint, которые обычно используются в **ProjectItemFile** элементы включают элементов компонента файлов (Elements.xml), файлы схемы для определения списков (Schema.xml) и файлы определений веб-части для веб-части (.webpart).  
   
-## Сведения об элементе  
+## <a name="element-information"></a>Сведения об элементе  
   
 |||  
 |-|-|  
-|**Пространство имен**|http:\/\/schemas.microsoft.com\/VisualStudio\/2010\/SharePointTools\/SharePointProjectItemModel|  
+|**Namespace**|http://schemas.Microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
 |**Имя схемы**|Схема элемента проекта SharePoint|  
 |**Файл проверки**|ProjectItemModelSchema.xsd|  
-|**Может быть пустым**|Нет|  
+|**Может быть пустым.**|Нет|  
   
-## См. также  
- [SharePoint Project Item Schema Reference](../sharepoint/sharepoint-project-item-schema-reference.md)  
+## <a name="see-also"></a>См. также  
+ [Справочные материалы по схеме элементов для проектов SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

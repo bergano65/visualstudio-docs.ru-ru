@@ -1,11 +1,10 @@
 ---
-title: Tips and Tricks in the Visual Studio Debugger | Microsoft Docs
+title: "Советы и рекомендации в отладчике Visual Studio | Документы Microsoft"
 ms.custom: 
 ms.date: 06/15/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,173 +12,159 @@ helpviewer_keywords:
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 5262d8b1-2648-429e-85d5-90fcaadfb362
-caps.latest.revision: 2
+caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 9790ba50b7198fcec7ed5e5eb53ec4906a515249
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
-
+ms.openlocfilehash: 26993da79249d1706dc8609cfcd5b0ceb66e1ec4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Learn Productivity Tips and Tricks for the Debugger in Visual Studio
+# <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Познакомьтесь с советами производительности в отладчике в Visual Studio
 
-Read this topic to learn a few productivity tips and tricks for the Visual Studio debugger. For a look at the basic features of the debugger, see [Debugger Feature Tour](../debugger/debugger-feature-tour.md). In this topic, we cover some areas that are not included in the feature tour.
+Прочитайте эту статью, чтобы узнать несколько советы по повышению производительности и рекомендации для отладчика Visual Studio. Рассмотрим основные возможности отладчика, в разделе [Обзор возможностей отладчика](../debugger/debugger-feature-tour.md). В этом разделе мы рассмотрим некоторые области, которые не включены в обзор возможностей.
 
-## <a name="pin-data-tips"></a>Pin data tips
+## <a name="pin-data-tips"></a>Подсказки данных ПИН-кода
 
-If you frequently hover over data tips while debugging, you may want to pin the data tip for the variable to give yourself quick access. The variable stays pinned even after restarting. To pin the data tip, click the pin icon while hovering over it. You can pin multiple variables.
+Если часто навести подсказки данных во время отладки, можно закрепить в подсказке по данным для переменной обеспечить быстрый доступ. Переменная остается закрепленных даже после перезагрузки. Чтобы закрепить подсказке по данным, щелкните значок ПИН-код при наведении на него. Вы можете закрепить несколько переменных.
 
-![Pinning a Data Tip](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
+![Закрепление подсказке](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
 
-## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Edit your code and continue debugging (C#, VB, C++)
+## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Изменения кода и продолжить отладку (C#, VB, C++)
 
-In most languages supported by Visual Studio, you can edit your code in the middle of a debugging session and continue debugging. To use this feature, click into your code with your cursor while paused in the debugger, make edits, and press **F5**, **F10**, or **F11** to continue debugging.
+В большинстве языков, поддерживаемых средой Visual Studio можно изменить код во время сеанса отладки и продолжить отладку. Чтобы использовать эту функцию, щелкните значок кода установите курсор после приостановки в отладчике, внести изменения и нажмите клавишу **F5**, **F10**, или **F11** продолжить отладку.
 
-![Edit and continue debugging](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
+![Изменить и продолжить отладку](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
 
-For more information on using the feature and on feature limitations, see [Edit and Continue](../debugger/edit-and-continue.md).
+Дополнительные сведения об использовании функции и функциональные ограничения в разделе [изменить и продолжить](../debugger/edit-and-continue.md).
 
-## <a name="debug-issues-that-are-hard-to-reproduce"></a>Debug issues that are hard to reproduce
+## <a name="debug-issues-that-are-hard-to-reproduce"></a>Отладка проблем, которые трудно воспроизвести
 
-If it is difficult or time-consuming to recreate a particular state in your app, consider whether the use of a conditional breakpoint can help. You can use [conditional breakpoints](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) and filter breakpoints to avoid breaking into your app code until the app enters a desired state (such as a state in which a variable is storing bad data). You can set conditions using expressions, filters, hit counts, and so on.
+Если это сложных или длительных для повторного создания одного определенного состояния в приложении, рассмотрите возможность ли использование условную точку останова может помочь. Можно использовать [условные точки останова](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) и фильтра точки останова, чтобы избежать нарушения в коде приложения, пока приложение входит в нужном состоянии (например, состояние, в котором переменная хранит неверные данные). Можно задать условия, с помощью выражения, фильтры, число попаданий и т. д.
 
-#### <a name="to-create-a-conditional-breakpoint"></a>To create a conditional breakpoint
+#### <a name="to-create-a-conditional-breakpoint"></a>Чтобы создать условную точку останова
 
-1. Right-click a breakpoint icon (the red ball) and choose **Conditions**.
+1. Щелкните правой кнопкой мыши значок точки останова (красный шар) и выберите **условия**.
 
-2. In the **Breakpoint Settings** window, type an expression.
+2. В **параметры точки останова** окна введите выражение.
 
-    ![Conditional Breakpoint](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
+    ![Условную точку останова](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
 
-3. If you are interested in another type of condition, select **Filter** instead of **Conditional expression** in the **Breakpoint Settings** dialog box, and then follow the filter tips.
+3. Если вы заинтересованы в другой тип условия, выберите **фильтра** вместо **условное выражение** в **параметры точки останова** диалоговое окно, а затем следуйте Советы по фильтра.
 
-## <a name="change-the-execution-flow"></a>Change the execution flow
+## <a name="change-the-execution-flow"></a>Изменения хода выполнения
 
-With the debugger paused on a line of code, use the mouse to grab the yellow arrow pointer on the left. Move the yellow arrow pointer to a different point in the code execution path. Then you use F5 or a step command to continue running the app.
+С помощью отладчика остановлено на строке кода, с помощью мыши удерживая указатель желтой стрелкой в левой части экрана. Переместите указатель желтая стрелка с другого места в пути выполнения кода. Затем с помощью F5 или команда шага для продолжения выполнения приложения.
 
-![Move the Execution Pointer](../debugger/media/dbg-tour-move-the-execution-pointer.gif "Move the Execution Pointer")
+![Переместите указатель выполнения](../debugger/media/dbg-tour-move-the-execution-pointer.gif "переместить указатель выполнения")
 
-By changing the execution flow, you can do things like test different code execution paths or rerun code without restarting the debugger.
+Изменяя ход выполнения, можно сделать, например, различные кодовые пути выполнения тестов или повторно выполнить код без перезапуска отладчика.
 
 > [!WARNING]
-> Often you need to be careful with this feature, and you see a warning in the tooltip. You may see other warnings, too. Moving the pointer cannot revert your app to an earlier application state.
+> Часто необходимо внимательно отнестись к этой функции и появляется в подсказке. Вы можете увидеть слишком другие предупреждения. При перемещении указателя невозможно вернуть в предыдущее состояние приложения приложения.
 
-## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Track an out-of-scope object (C#, Visual Basic)
+## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Отслеживать объект вне области видимости (C#, Visual Basic)
 
-It's easy to view variables using debugger windows like the **Watch** window. However, when a variable goes out of scope in the **Watch** window, you may notice that it is grayed out. In some app scenarios, the value of a variable may change even when the variable is out of scope, and you might want to watch it closely (for example, a variable may get garbage collected). You can track the variable by creating an Object ID for it in the **Watch** window.
+Можно легко просматривать с помощью окна отладчика, такие как переменные **Контрольные значения** окна. Тем не менее, когда переменная выходит за пределы области, в **Контрольные значения** окна, можно заметить, что он выделен серым. В некоторых сценариях приложение может изменить значение переменной, даже когда переменная выходит за пределы области, и может потребоваться просмотреть тесно (например, переменная может сборщиком мусора). Можно отслеживать путем создания идентификатор объекта для его в переменной **Контрольные значения** окна.
 
-#### <a name="to-create-an-object-id"></a>To create an object ID
+#### <a name="to-create-an-object-id"></a>Чтобы создать идентификатор объекта
 
-1.  Set a breakpoint near a variable that you want to track.
+1.  Установите точку останова рядом с переменной, которую нужно отслеживать.
 
-2.  Start the debugger (**F5**) and stop at the breakpoint.
+2.  Запустите отладчик (**F5**) и остановку в точке останова.
 
-3. Find the variable in the **Locals** window (**Debug > Windows > Locals**), right-click the variable, and select **Make Object ID**.
+3. Найдите переменную в **локальные** окна (**Отладка > Windows > локальные**), щелкните правой кнопкой мыши переменную и выберите **создать идентификатор объекта**.
 
-    ![Create an Object ID](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
+    ![Создать идентификатор объекта](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
   
-4.  You should see a **$** plus a number in the **Locals** window. This variable is the object ID.
+4.  В окне **$** вы должны увидеть символ **Локальные** . Эта переменная содержит идентификатор объекта.
   
-5.  Right-click the object ID variable and choose **Add Watch**.
+5.  Щелкните правой кнопкой мыши переменную идентификатор объекта и выберите **Добавить контрольное значение**.
 
-For more information, see [Create an Object ID](https://docs.microsoft.com/en-us/visualstudio/debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
+Дополнительные сведения см. в разделе [создать идентификатор объекта](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
 
-## <a name="view-return-values-for-functions"></a>View return values for functions
+## <a name="view-return-values-for-functions"></a>Просмотр значений, возвращаемых для функций
 
-To view return values for your functions, look at the functions that appear in the **Autos** window while you are stepping through your code. To see the return value for a function, make sure that the function you are interested in has already executed (press **F10** once if you are currently stopped on the function call). If the window is closed, use **Debug > Windows > Autos** to open the **Autos** window.
+Чтобы просмотреть возвращаемые значения для функций, взгляните на функции, которые отображаются в **видимые** окна во время при пошаговой отладке кода. Для просмотра возвращаемого значения для функции, убедитесь, что функции, которые вас интересуют уже выполнена (нажмите клавишу **F10** один раз, если в настоящее время остановлены для вызова функции). Если окно закрыто, используйте **Отладка > Windows > видимые** Открытие **видимые** окна.
 
-![Autos Window](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
+![Видимые окна](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
 
-In addition, you can enter functions in the **Immediate** window to view return values. (Open it using **Debug > Windows > Immediate**.)
+Кроме того, можно ввести функций в **Интерпретация** окно для просмотра возвращаемых значений. (Откройте его с помощью **Отладка > Windows > Интерпретация**.)
 
-![Immediate Window](../debugger/media/dbg-tips-immediate-window.png "ImmediateWindow")
+![Окно интерпретации](../debugger/media/dbg-tips-immediate-window.png "ImmediateWindow")
 
-You can also use [pseudovariables](../debugger/pseudovariables.md) in the **Watch** and **Immediate** window, such as `$ReturnValue`.
+Можно также использовать [псевдопеременные](../debugger/pseudovariables.md) в **Контрольные значения** и **Интерпретация** окна, такие как `$ReturnValue`.
 
-## <a name="string_visualizer"></a>Inspect strings in a visualizer
+## <a name="string_visualizer"></a>Просмотреть строки в средстве визуализации
 
-When working with strings, it can be helpful to view the entire formatted string. To view a plain text, XML, HTML, or JSON string, click the magnifying glass icon ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Visualizer icon") while hovering over a variable containing a string value.
+При работе со строками, бывает полезно просмотреть весь форматируемой строки. Чтобы просмотреть обычного текста, XML, HTML или JSON строку, щелкните значок лупы ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "значок визуализатор") при наведении указателя мыши на переменную, содержащий строковое значение.
 
-![Open a String Visualizer](../debugger/media/dbg-tips-string-visualizers.png "OpenStringVisualizer")
+![Открыть визуализатор строки](../debugger/media/dbg-tips-string-visualizers.png "OpenStringVisualizer")
 
-A string visualizer may help you find out whether a string is malformed, depending on the string type. For example, a blank **Value** field indicates the string is not recognized by the visualizer type. For more information, see [String Visualizer Dialog Box](../debugger/string-visualizer-dialog-box.md).
+Визуализатор строки может помочь определить, является ли строка имеет неправильный формат, в зависимости от типа string. Например, пустое **значение** поле указывает строку не удается распознать тип визуализатора. Дополнительные сведения см. в разделе [диалоговое окно визуализатора строки](../debugger/string-visualizer-dialog-box.md).
 
-![JSON String Visualizer](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
+![Визуализатор строки JSON](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
-For a few other types such as WPF objects that appear in the debugger windows, you can also open visualizers.
+Для некоторых других типов например WPF для объектов в окнах отладчика можно также открыть визуализаторов.
 
-## <a name="break-into-code-on-handled-exceptions"></a>Break into code on handled exceptions
+## <a name="break-into-code-on-handled-exceptions"></a>Приостановка выполнения кода на обработанные исключения
 
-The debugger breaks into your code on unhandled exceptions. However, handled exceptions (such as exceptions that occur within a `try/catch` block) can also be a source of bugs and you may want to investigate when they occur. You can configure the debugger to break into code for handled exceptions as well by configuring options in the **Exception Settings** dialog box. Open this dialog box by choosing **Debug > Windows > Exception Settings**.
+Отладчик прерывает выполнение кода от кадров необработанных исключений. Тем не менее, обработки исключений (например исключений, возникающих в `try/catch` блок) может быть источником ошибок и не может появиться необходимость исследования, если они получены. Можно настроить отладчик на прерывание в код для обработанных исключений, а также путем настройки параметров в **параметры исключений** диалоговое окно. Открыть это диалоговое окно, выбрав **Отладка > Windows > параметры исключений**.
 
-The **Exception Settings** dialog box allows you to tell the debugger to break into code on specific exceptions. In the illustration below, the debugger breaks into your code whenever a `System.NullReferenceException` occurs. For more information, see [Managing exceptions](../debugger/managing-exceptions-with-the-debugger.md).
+**Параметры исключений** диалоговое окно позволяет указать отладчику Приостановка выполнения кода на конкретных исключений. На следующем рисунке, отладчик прерывает выполнение кода при каждом `System.NullReferenceException` происходит. Дополнительные сведения см. в разделе [Управление исключениями](../debugger/managing-exceptions-with-the-debugger.md).
 
-![Exception Settings Dialog Box](../debugger/media/dbg-tips-exception-settings.png "ExceptionSettingsDialogBox")
+![Диалоговое окно параметров исключение](../debugger/media/dbg-tips-exception-settings.png "ExceptionSettingsDialogBox")
 
-## <a name="debug-deadlocks-and-race-conditions"></a>Debug deadlocks and race conditions
+## <a name="debug-deadlocks-and-race-conditions"></a>Отладка взаимоблокировки и состояния гонки
 
-If you need to debug the kinds of issues that are common to multithreaded apps, it often helps to view the location of threads while debugging. You can do this easily using the **Show Threads in Source** button.
+Если требуется отладить возможных проблемах, которые являются общими для многопоточных приложений, часто полезно просмотреть расположение потоков во время отладки. Это можно сделать с помощью **Показать потоки в исходном коде** кнопки.
 
-#### <a name="to-show-threads-in-your-source-code"></a>To show threads in your source code
+#### <a name="to-show-threads-in-your-source-code"></a>Чтобы показать потоки в исходном коде
 
-1.  While debugging, click the **Show Threads in Source** button ![Show Threads in Source](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") in the **Debug** toolbar.
+1.  Во время отладки, нажмите кнопку **Показать потоки в исходном коде** кнопку ![Показать потоки в исходном коде](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") в **отладки** инструментов.
   
-2.  Look at the gutter on the left side of the window. On this line, you see a *thread marker* icon  ![Thread Marker](../debugger/media/dbg-thread-marker.png "ThreadMarker") that resembles two cloth threads. The thread marker indicates that a thread is stopped at this location.
+2.  Посмотрите на переплет в левой части окна. В этой строке, вы видите *маркер потока* значок ![маркер потока](../debugger/media/dbg-thread-marker.png "ThreadMarker") имеет вид 2 тряпичных нити. маркер потока указывает, что некий поток остановлен в этом месте.
 
-    Notice that a thread marker may be partially concealed by a breakpoint.
+    Обратите внимание, что маркер потока может частично скрыты с помощью точки останова.
   
-3.  Hover the pointer over the thread marker. A DataTip appears. The DataTip tells you the name and thread ID number for each stopped thread.
+3.  Наведите указатель мыши на маркер потока. Появится подсказка. Подсказка сообщает имя и идентификационный номер каждого остановившегося тут потока.
 
-    You can also view the location of threads in the [Parallel Stacks window](../debugger/get-started-debugging-multithreaded-apps.md).
+    Вы также можете просмотреть расположение потоков в [окна "Параллельные стеки"](../debugger/get-started-debugging-multithreaded-apps.md).
 
-## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>Examine payloads for web services and network resources (UWP)
+## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>Изучите полезных данных для веб-служб и сетевых ресурсов (UWP)
 
-In UWP apps, you can analyze network operations performed using the `Windows.Web.Http` API. You can use this tool to help debug web services and network resources. To use the tool, select **Debug > Performance Profiler**. Select **Network**, and then choose **Start**. In your app, go through the scenario that uses `Windows.Web.Http`, and then choose **Stop collection** to generate the report.
+В приложениях UWP, можно анализировать сетевые операции, выполняемые с помощью `Windows.Web.Http` API. Это средство можно использовать для отладки веб-служб и сетевых ресурсов. Чтобы использовать средство, выберите **Отладка > профилировщик производительности**. Выберите **сети**, а затем выберите **запустить**. В приложении выполните нужные действия, где используется `Windows.Web.Http`, а затем щелкните **Остановка сбора**, чтобы создать отчет.
 
-![Network Usage profiling tool](../profiling/media/prof-tour-network-usage.png "NetworkUsageProfTool")
+![Использование средства профилирования сети](../profiling/media/prof-tour-network-usage.png "NetworkUsageProfTool")
 
-Select an operation in the summary view to view more details.
+Выберите операцию в представлении "Сводка", чтобы просмотреть более подробные сведения.
 
-![Detailed information in the Network Usage tool](../profiling/media/prof-tour-network-usage-details.png "DetailedViewNetworkUsage")
+![Подробные сведения в средстве использования сети](../profiling/media/prof-tour-network-usage-details.png "DetailedViewNetworkUsage")
 
-For more information, see [Network Usage](../profiling/network-usage.md).
+Дополнительные сведения см. в разделе [Использование сети](../profiling/network-usage.md).
 
-## <a name="get-more-familiar-with-how-the-debugger-attaches-to-your-app"></a>Get more familiar with how the debugger attaches to your app
+## <a name="get-more-familiar-with-how-the-debugger-attaches-to-your-app"></a>Получить более знакома как отладчик подключается к приложению
 
-To attach to your running app, the debugger loads symbol (.pdb) files generated for the exact same build of the app you are trying to debug. In some scenarios, a little knowledge of symbol files can be helpful. You can examine how Visual Studio loads symbol files using the **Modules** window.
+Присоединение к выполняемому приложению отладчик загружает файлы символов (PDB), созданные для таким же номером сборки для приложения, которое вы пытаетесь отладить. В некоторых сценариях немного знаний файлы символов могут оказаться полезными. Можно проверить, как Visual Studio загружает файлы символов с помощью **модули** окна.
 
-Open the **Modules** window while debugging by selecting **Debug > Windows > Modules**. The **Modules** window can tell you what modules the debugger is treating as user code, or [*My Code*](../debugger/just-my-code.md), and the symbol loading status for the module. In most scenarios, the debugger automatically finds symbol files for user code, but if you want to step into (or debug) .NET framework code, system code, or third-party library code, extra steps are required to obtain the correct symbol files.
+Откройте **модули** окна во время отладки, выбрав **Отладка > Windows > модули**. **Модули** окна подскажет, какие модули отладчика, обработке как пользовательский код или [ *мой код*](../debugger/just-my-code.md)и загрузка состояния для модуля символов. В большинстве случаев отладчик автоматически находит файлы символов для пользовательского кода, но при необходимости шаг с заходом (или debug) кода .NET framework, системного кода или кода сторонних библиотек для получения файлы символов правильный требуются дополнительные действия.
 
-![View symbol information in the Modules window](../debugger/media/dbg-tips-modules-window.png "ViewSymbolInformation")
+![Просмотр сведений о символах в окне Модули](../debugger/media/dbg-tips-modules-window.png "ViewSymbolInformation")
 
-You can load symbol information directly from the **Modules** window by right-clicking and choosing **Load Symbols**.
+Можно загрузить символьные данные непосредственно из **модули** окно, щелкните правой кнопкой мыши и выбрав **загрузить символы**.
 
-Sometimes, app developers ship apps without the matching symbol files (to reduce the footprint), but keep a copy of the matching symbol files for the build so that they can debug a released version later.
+Иногда разработчики приложений поставлен приложений без соответствующий файлам символов (чтобы сократить использование), но сохранить копию сопоставления символов файлов для сборки, чтобы их можно было отлаживать окончательной версии.
 
-To find out how the debugger classifies code as user code, see [Just My Code](../debugger/just-my-code.md). To find out more about symbol files, see [Specify symbol (.pdb) and source files in the Visual Studio debugger](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+Чтобы узнать, как отладчик классифицирует код как код пользователя, в разделе [только мой код](../debugger/just-my-code.md). Чтобы больше узнать о файлы символов, в разделе [укажите символов (.pdb) и исходных файлов в отладчике Visual Studio](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-## <a name="learn-more"></a>Learn more
+## <a name="learn-more"></a>Дополнительные сведения
 
-See this visual studio [blog post](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/) that describes some lesser known tips and tricks.
+Дополнительные советы и рекомендации и более подробные сведения см. Эти записи блога:
 
-## <a name="see-also"></a>See Also
-[Keyboard Shortcuts](../ide/tips-and-tricks-for-visual-studio.md)
+- [7 меньшее известных взлома для отладки в Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
+- [7 скрытые gems в Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
 
+## <a name="see-also"></a>См. также
+[Сочетания клавиш](../ide/tips-and-tricks-for-visual-studio.md)

@@ -1,25 +1,29 @@
 ---
-title: "Метод IJsEnumDebugProperty::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Метод IJsEnumDebugProperty::Next | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IJsEnumDebugProperty.Next
 apilocation: jscript9diag.dll
 ms.assetid: 9fad1893-483a-440c-88c1-469494212300
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b8c85601709bb727549152ffdb01e15dbd84e510
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод IJsEnumDebugProperty::Next
-Читает свойства для этого объекта.  
+# <a name="ijsenumdebugpropertynext-method"></a>Метод IJsEnumDebugProperty::Next
+Считывает свойства для этого объекта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT Next(  
@@ -29,20 +33,20 @@ HRESULT Next(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `count`  
- \[in\] Количество свойств для чтения.  
+ [in] Число свойств для чтения.  
   
  `ppDebugProperty`  
- \[out\] Объект, представляющий обозреватель свойств.  
+ [out] Объект, представляющий свойства браузера.  
   
  `pActualCount`  
- \[out\] Фактическое число свойств объекта.  
+ [out] Фактическое число свойств объекта.  
   
-## Возвращаемое значение  
+## <a name="return-value"></a>Возвращаемое значение  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** jscript9diag.h  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IJsEnumDebugProperty](../../winscript/reference/ijsenumdebugproperty-interface.md)

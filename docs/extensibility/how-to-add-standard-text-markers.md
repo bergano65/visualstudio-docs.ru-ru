@@ -1,54 +1,55 @@
 ---
-title: "Практическое руководство: Добавление маркеров стандартный текст | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "редакторы [Visual Studio SDK] прежних версий - маркеры стандартный текст"
+title: "Как: Добавление маркеров стандартный текст | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - standard text markers
 ms.assetid: a39fca69-0014-474c-933f-51f0e9b9617e
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1fb92185dd2efee7f42ce1ba4d97435e0b2e8a68
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство: Добавление маркеров стандартный текст
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Используйте следующую процедуру для создания одного из типов маркеров по умолчанию текст, предоставленных с [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] редактор.  
+# <a name="how-to-add-standard-text-markers"></a>Как: Добавление маркеров стандартного текста
+Используйте следующую процедуру для создания одного из типов маркеров текст по умолчанию, в состав [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] базового редактора.  
   
-### Создание метка текста  
+### <a name="to-create-a-text-marker"></a>Для создания маркера текста  
   
-1.  В зависимости от того, используется ли одно или плоскую систему координат, вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> метод или  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> метод, чтобы создать новую метку текста.  
+1.  В зависимости от того, используется ли один или два - измерений системы координат, вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> метода или <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> метод для создания нового текстовой метки.  
   
-     В этом методе определите тип маркера, диапазон текста, чтобы создать заново, и метка <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> интерфейс.  Затем этот метод возвращает указатель на созданную метке текста.  Типы маркеров берутся из <xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE> перечисление.  Определение <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> интерфейс если необходимо быть после событий метки.  
+     При вызове этого метода, укажите тип маркера, диапазон текста для создания маркера по и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> интерфейса. Затем этот метод возвращает указатель на только что созданный текстовая метка. Типы маркеров, взяты из <xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE> перечисления. Укажите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> интерфейс, чтобы быть в курсе событий маркера.  
   
     > [!NOTE]
-    >  Создайте текстовой метки в основном потоке пользовательского интерфейса.  Редактор core полагается на содержимом текстового буфера для создания текстового маркера и текстовый буфер не safe потока.  
+    >  Создание текстовых меток в основном потоке пользовательского интерфейса только. Базовый редактор зависит от содержимое текстового буфера для создания текстовых маркеров: и текстовый буфер не является потокобезопасным.  
   
-## Добавление пользовательской команды  
- Реализация `IVsTextMarkerClient` интерфейс и предоставление указатель его из меток расширяют поведение метки несколькими способами.  Во\-первых, это позволяет предоставить рекомендации для меток и выполнения команды.  Это также позволяет получать уведомления о событиях для отдельных меток и создание пользовательского контекстного меню с меткой.  Следующая процедура используется для добавления пользовательской команды в контекстное меню маркера.  
+## <a name="adding-a-custom-command"></a>Добавление пользовательской команды  
+ Реализация `IVsTextMarkerClient` интерфейс и предоставление указатель из маркера расширяет поведение маркера несколькими способами. Во-первых это позволяет в целях обеспечения советы метку и для выполнения команд. Это также позволяет получать уведомления о событиях для отдельных маркеров и для создания пользовательского контекстного меню над маркера. Используйте следующую процедуру для добавления пользовательской команды в контекстное меню маркера.  
   
-#### Добавление пользовательской команды в контекстное меню  
+#### <a name="to-add-a-custom-command-to-the-context-menu"></a>Добавление пользовательской команды в контекстное меню  
   
-1.  Прежде чем контекстное меню отображается, среда вызывает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A> метод и передает собой указатель на повлиянной метки текст и номер элемента в контекстном меню.  
+1.  Вызывается перед отображением контекстного меню среды <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A> метод и передает проблема указатель на текст маркера и количества элемента команды в контекстном меню.  
   
-     Например, команды точка останова\-специфического в контекстном меню: **Удалить точку останова** via  **Создать точку останова**как показано в следующей съемкой экрана.  
+     Примеры: характерные для точки останова команды в контекстном меню **удалить точку останова** через **новую точку останова**, как показано на следующем снимке экрана.  
   
-     ![Маркер контекстного меню](~/extensibility/media/vsmarkercontextmenu.gif "vsMarkercontextmenu")  
+     ![Маркер контекстного меню](../extensibility/media/vsmarkercontextmenu.gif "vsMarkercontextmenu")  
   
-2.  Передайте назад текст, определяющий имя пользовательской команды.  Например, **Удалить точку останова** может быть пользовательской команды если среда не обеспечила ее.  Также передается обратно, поддерживается ли команда доступна и включать или включеный\-выключеный переключателя.  Среда использует эти сведения для отображения пользовательской команды в контекстном меню в правильном образом.  
+2.  Передайте часть текста, идентифицирующее имя пользовательской команды. Например **удалить точку останова** может быть пользовательской команды, если среда не уже предоставил его. Можно также передать обратно ли команда поддерживается, доступна и включена, и/или включения или выключения переключателя. В среде эти сведения используется для отображения пользовательской команды в контекстном меню в правильный способ.  
   
-3.  Для выполнения команды, среда вызывает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> метод передачи собой указатель на метке текст и номер группы, выбранной из контекстного меню.  
+3.  Для выполнения команды, среда вызывает метод <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> метод, передавая указатель в текстовой метки и выбрать в контекстном меню команду.  
   
-     Используйте эти сведения из этого вызова, чтобы выполнить какие\-либо действия текстовой метки пользовательская команда указывает.  
+     Используйте эту информацию из этого вызова для выполнения определяет, какие бы действия текстовой метки вашей пользовательской команды.  
   
-## См. также  
- [С помощью текстовых маркеров с API прежних версий](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Практическое руководство: реализации маркеры ошибки](../extensibility/how-to-implement-error-markers.md)   
- [Практическое руководство: Создание пользовательского текста маркеры](../extensibility/how-to-create-custom-text-markers.md)   
- [Практическое руководство: использование текстовых меток](../extensibility/how-to-use-text-markers.md)
+## <a name="see-also"></a>См. также  
+ [С помощью текстовых маркеров с помощью API прежних версий](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [Как: реализовать маркеры ошибки](../extensibility/how-to-implement-error-markers.md)   
+ [Как: Создание настраиваемых текстовых маркеров](../extensibility/how-to-create-custom-text-markers.md)   
+ [Как: использовать маркеры текста](../extensibility/how-to-use-text-markers.md)

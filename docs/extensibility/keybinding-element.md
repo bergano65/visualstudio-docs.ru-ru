@@ -1,71 +1,78 @@
 ---
-title: "Элемент соответствующие клавиши | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Элементы схемы VSCT XML, сочетания клавиш"
-  - "Элемент соответствующие клавиши (VSCT XML-схемы)"
+title: "Элемент соответствующие клавиши | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- VSCT XML schema elements, KeyBindings
+- KeyBinding element (VSCT XML schema)
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2f620d895defbeeb3317f4a977db454a14ce3adc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Элемент соответствующие клавиши
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Элемент соответствующие клавиши задает сочетания клавиш для команд.  
+# <a name="keybinding-element"></a>Элемент соответствующие клавиши
+Элемент соответствующие клавиши указывает сочетания клавиш для команд.  
   
- Команды могут иметь одной или двух привязок клавиш, связанных с ними. Пример одной привязки клавиш: CTRL \+ S для **Сохранить** команды. Два ключа привязки требуют двух последовательных сочетаний клавиш для запуска команды. Пример двух привязки клавиш: CTRL \+ K,CTRL \+ K, чтобы установить закладку.  
+ Команды могут иметь одного и обоих сочетания клавиш, связанных с ними. Пример одной привязки ключей — CTRL + S для **Сохранить** команды. Двойная сочетания клавиш требуют двух последовательных сочетаний клавиш для запуска команды. Пример двойного привязки ключей — CTRL + K, CTRL + K, чтобы установить закладку.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <Keybinding guid="MyGuid" id="MyId" Editor="MyEditor" key1="B" key2="x" mod1="Control" mod2="Alt" />  
 ```  
   
-## Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Атрибуты и элементы  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
-### Атрибуты  
+### <a name="attributes"></a>Атрибуты  
   
 |Атрибут|Описание|  
-|-------------|--------------|  
-|Идентификатор GUID|Обязательный.|  
+|---------------|-----------------|  
+|guid|Обязательный.|  
 |id|Обязательный.|  
-|редактор|Обязательный. Редактор GUID указывает контекст редактирования, для которого это сочетание клавиш будет активным. Область глобального привязки значение «guidVSStd97».|  
-|key1|Обязательный. Допустимые значения включают все прочтения буквы и цифры, а также предшествует 0 x и VK\_constants шестнадцатеричных значений двух цифр.|  
-|MOD1|Необязательный. Любое сочетание CTRL, ALT или SHIFT, разделенных пробелами.|  
-|key2|Необязательный. Допустимые значения включают все прочтения буквы и цифры, а также предшествует 0 x и VK\_constants шестнадцатеричных значений двух цифр.|  
-|MOD2|Необязательный. Любое сочетание CTRL, ALT или SHIFT, разделенных пробелами.|  
-|эмулятор|Необязательный.|  
-|Условие|Необязательный. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|редактор|Обязательный. Редактор GUID показывает контекст редактирования, для которого это сочетание клавиш будет активным. Значение области действия глобальные привязки — «guidVSStd97».|  
+|key1|Обязательный. Допустимые значения включают все прочтения буквы и цифры, а также шестнадцатеричные значения двух цифр, знаком 0 x и [VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx).|  
+|MOD1|Необязательно. Любое сочетание CTRL, ALT и клавишу SHIFT, через пробел.|  
+|key2|Необязательно. Допустимые значения включают все прочтения буквы и цифры, а также шестнадцатеричные значения двух цифр, знаком 0 x и [VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx).|  
+|MOD2|Необязательно. Любое сочетание CTRL, ALT и клавишу SHIFT, через пробел.|  
+|эмулятор|Необязательно.|  
+|Условие|Необязательно. В разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
-### Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
+|-------------|-----------------|  
 |Родительский||  
 |Комментарий||  
   
-### Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
-|[Элемент привязки клавиш](../extensibility/keybindings-element.md)|Группирует элементы соответствующие клавиши и других группирований сочетания клавиш.|  
+|-------------|-----------------|  
+|[Элемент KeyBindings](../extensibility/keybindings-element.md)|Группирует элементы соответствующие клавиши и других группирований сочетания клавиш.|  
   
-## Пример  
+## <a name="example"></a>Пример  
   
 ```  
-<KeyBindings> <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget" editor="guidWidgetEditor" key1="VK_F5"/> <KeyBinding guid="guidWidgetPackage" id="cmdidRunWidget" editor="guidWidgetEditor" key1="VK_F5" mod1="Control"/> </KeyBindings>  
+<KeyBindings>  
+  <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget"   
+    editor="guidWidgetEditor" key1="VK_F5"/>  
+  <KeyBinding guid="guidWidgetPackage" id="cmdidRunWidget"   
+    editor="guidWidgetEditor" key1="VK_F5" mod1="Control"/>  
+</KeyBindings>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Элемент привязки клавиш](../extensibility/keybindings-element.md)   
- [Таблицы команд Visual Studio \(. Файлы Vsct\)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

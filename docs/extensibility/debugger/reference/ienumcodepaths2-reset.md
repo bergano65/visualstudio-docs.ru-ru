@@ -1,45 +1,45 @@
 ---
-title: "IEnumCodePaths2::Reset | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumCodePaths2::Reset"
-helpviewer_keywords: 
-  - "IEnumCodePaths2::Reset"
+title: "IEnumCodePaths2::Reset | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumCodePaths2::Reset
+helpviewer_keywords: IEnumCodePaths2::Reset
 ms.assetid: 490c0e19-ff4b-4673-bd06-cdee996ac226
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6de0a9cc46664718fbcb5dc455158df3ceabc6ea
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumCodePaths2::Reset
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Сбросит перечисление к первому элементу.  
+# <a name="ienumcodepaths2reset"></a>IEnumCodePaths2::Reset
+Сбрасывает перечисления на первый элемент.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT Reset(  
-   void  
+   void  
 );  
 ```  
   
-```c#  
+```csharp  
 int Reset();  
 ```  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- После вызова этого метода, следующий вызов [Далее](../../../extensibility/debugger/reference/ienumcodepaths2-next.md) метод возвращает первый элемент перечисления.  
+## <a name="remarks"></a>Примечания  
+ После вызова этого метода, при следующем вызове [Далее](../../../extensibility/debugger/reference/ienumcodepaths2-next.md) метод возвращает первый элемент перечисления.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)

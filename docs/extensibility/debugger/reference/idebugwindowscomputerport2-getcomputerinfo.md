@@ -1,48 +1,50 @@
 ---
-title: "IDebugWindowsComputerPort2::GetComputerInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetComputerInfo"
-  - "IDebugWindowsComputerPort2::GetComputerInfo"
+title: "IDebugWindowsComputerPort2::GetComputerInfo | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- GetComputerInfo
+- IDebugWindowsComputerPort2::GetComputerInfo
 ms.assetid: 654910b2-c239-44c8-92fc-317680a5672f
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: aedefe4ce91840759d9289dc35c71fece7b60af6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugWindowsComputerPort2::GetComputerInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Извлекает сведения о компьютере, на котором отладчик находится в запущенном.  
+# <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
+Извлекает сведения о компьютере, на котором отладчик в работе.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT GetComputerInfo(  
-   COMPUTER_INFO * pInfo  
+   COMPUTER_INFO * pInfo  
 );  
 ```  
   
-```c#  
+```csharp  
 public int GetComputerInfo(  
-   out COMPUTER_INFO[] pInfo  
+   out COMPUTER_INFO[] pInfo  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pInfo`  
- \[out\] ссылка на структуру, содержащую сведения о компьютере.  
+ [out] Ссылка на структуру, содержащую сведения о компьютере.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugWindowsComputerPort2](../../../extensibility/debugger/reference/idebugwindowscomputerport2.md)   
- [COMPUTER\_INFO](../../../extensibility/debugger/reference/computer-info.md)
+ [COMPUTER_INFO](../../../extensibility/debugger/reference/computer-info.md)

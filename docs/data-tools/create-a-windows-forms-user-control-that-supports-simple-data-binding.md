@@ -1,5 +1,5 @@
 ---
-title: Create a user control that supports simple data binding | Microsoft Docs
+title: "Создать пользовательский элемент управления, который поддерживает простую привязку данных | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -13,186 +13,182 @@ helpviewer_keywords:
 - custom controls [Visual Studio], Data Sources Window
 - Data Sources Window, controls
 ms.assetid: b1488366-6dfb-454e-9751-f42fd3f3ddfb
-caps.latest.revision: 14
+caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
-ms.openlocfilehash: 555cfdd530c8c72a14651c77eb48c039d8b081fd
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/13/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 5f8638a915abe222e5676e0f1aed5134ae00a8e4
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Create a Windows Forms user control that supports simple data binding
-When displaying data on forms in Windows applications, you can choose existing controls from the **Toolbox**, or you can author custom controls if your application requires functionality that is not available in the standard controls. This walkthrough shows how to create a control that implements the <xref:System.ComponentModel.DefaultBindingPropertyAttribute>. Controls that implement the <xref:System.ComponentModel.DefaultBindingPropertyAttribute> can contain one property that can be bound to data. Such controls are similar to a <xref:System.Windows.Forms.TextBox> or <xref:System.Windows.Forms.CheckBox>.  
+# <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Создать пользовательский элемент управления Windows Forms, который поддерживает простую привязку данных
+При отображении данных на формах в приложениях Windows, можно выбрать существующие элементы управления из **элементов**, или можно создать пользовательские элементы управления, если приложение требует функциональные возможности, недоступные в стандартных элементах управления. В этом пошаговом руководстве демонстрируется создание элемента управления, реализующего <xref:System.ComponentModel.DefaultBindingPropertyAttribute>. Элементы управления, реализующие <xref:System.ComponentModel.DefaultBindingPropertyAttribute>, могут содержать одно свойство, которое можно привязать к данным. Такие элементы управления похожи на <xref:System.Windows.Forms.TextBox> или <xref:System.Windows.Forms.CheckBox>.  
   
- For more information on control authoring, see [Developing Windows Forms Controls at Design Time](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).  
+ Дополнительные сведения о разработке элементов управления см. в разделе [разработке элементов управления Windows Forms во время разработки](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).  
   
- When authoring controls for use in data-binding scenarios, you should implement one of the following data-binding attributes:  
+ При создании элементов управления для использования в сценариях привязки данных, должны реализовывать один из следующих атрибутов привязки к данным:  
   
-|Data-binding attribute usage|  
+|Использование атрибута привязки к данным|  
 |-----------------------------------|  
-|Implement the <xref:System.ComponentModel.DefaultBindingPropertyAttribute> on simple controls, like a <xref:System.Windows.Forms.TextBox>, that display a single column (or property) of data. (This process is described in this walkthrough page.)|  
-|Implement the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> on controls, like a <xref:System.Windows.Forms.DataGridView>, that display lists (or tables) of data. For more information, see [Create a Windows Forms user control that supports complex data binding](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|  
-|Implement the <xref:System.ComponentModel.LookupBindingPropertiesAttribute> on controls, like a <xref:System.Windows.Forms.ComboBox>, that display lists (or tables) of data but also need to present a single column or property. For more information, see [Create a Windows Forms user control that supports lookup data binding](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|  
+|Реализуйте <xref:System.ComponentModel.DefaultBindingPropertyAttribute> на простых элементах управления, таких как <xref:System.Windows.Forms.TextBox>, которые отображают отдельный столбец (или свойство) данных. (Этот процесс описан в данном пошаговом руководстве.)|  
+|Реализуйте <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> на элементах управления, таких как <xref:System.Windows.Forms.DataGridView>, которые отображают списки (или таблицы) данных. Дополнительные сведения см. в разделе [создать пользовательский элемент управления Windows Forms, который поддерживает сложную привязку данных](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|  
+|Реализуйте <xref:System.ComponentModel.LookupBindingPropertiesAttribute> на элементах управления, таких как <xref:System.Windows.Forms.ComboBox>, которые отображают списки (или таблицы) данных, но также должны представлять отдельный столбец или отдельное свойство. Дополнительные сведения см. в разделе [создать пользовательский элемент управления Windows Forms, поддерживающих привязку данных подстановки](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|  
   
- This walkthrough creates a simple control that displays data from a single column in a table. This example uses the `Phone` column of the `Customers` table from the Northwind sample database. The simple user control will display customers' phone numbers in a standard phone-number format, by using a <xref:System.Windows.Forms.MaskedTextBox> and setting the mask to a phone number.  
+ В этом пошаговом руководстве создается простой элемент управления, отображающий данные из одного столбца в таблице. В данном примере используется столбец `Phone` таблицы `Customers` из учебной базы данных "Борей". Простой пользовательский элемент управления отображает номера телефонов клиентов в стандартном формате номер телефона, с помощью <xref:System.Windows.Forms.MaskedTextBox> и задавая маску для номера телефона.  
   
- During this walkthrough, you will learn how to:  
+ В этом пошаговом руководстве описаны следующие процедуры.  
   
--   Create a new **Windows Forms Application**.  
+-   Создайте новый **приложение Windows Forms**.  
   
--   Add a new **User Control** to your project.  
+-   Добавьте новый **пользовательский элемент управления** в проект.  
   
--   Visually design the user control.  
+-   Визуальное проектирование пользовательского элемента управления.  
   
--   Implement the `DefaultBindingProperty` attribute.  
+-   Реализация атрибута `DefaultBindingProperty`.  
   
--   Create a dataset with the **Data Source Configuration** wizard.  
+-   Создать набор данных с **конфигурации источника данных** мастера.  
   
--   Set the **Phone** column in the **Data Sources** window to use the new control.  
+-   Задать **Phone** столбца в **источники данных** на использование нового элемента управления.  
   
--   Create a form to display data in the new control.  
+-   Создание формы для отображения данных в новом элементе управления.  
   
-## <a name="prerequisites"></a>Prerequisites  
- In order to complete this walkthrough, you will need:  
+## <a name="prerequisites"></a>Предварительные требования  
+В этом пошаговом руководстве используется SQL Server Express LocalDB и базе данных Northwind.  
   
--   Access to the Northwind sample database. For more information, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
+1.  Если у вас нет SQL Server Express LocalDB, установите его из [страница загрузки выпуски SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), либо с помощью **установщик Visual Studio**. Установщик Visual Studio можно установить SQL Server Express LocalDB в рамках **хранения и обработки данных** рабочей нагрузки, или в отдельных компонентов.  
   
-## <a name="create-a-windows-forms-application"></a>Create a Windows Forms Application  
- The first step is to create a **Windows Forms Application**.  
-  
-#### <a name="to-create-the-new-windows-project"></a>To create the new Windows project  
-  
-1. In Visual Studio, on the **File** menu, select **New**, **Project...**.  
-  
-2. Expand either **Visual C#** or **Visual Basic** in the left-hand pane, then select **Windows Classic Desktop**.  
+2.  Установка образца базы данных Northwind, выполните следующие действия:  
 
-3. In the middle pane, select the **Windows Forms App** project type.  
+    1. В Visual Studio откройте **обозреватель объектов SQL Server** окна. (Обозреватель объектов SQL Server устанавливается как часть **хранения и обработки данных** рабочей нагрузки в установщик Visual Studio.) Разверните **SQL Server** узла. Щелкните правой кнопкой мыши на экземпляре LocalDB и выберите **нового запроса...** .  
 
-4. Name the project **SimpleControlWalkthrough**, and then choose **OK**. 
+       Откроется окно редактора запросов.  
+
+    2. Копировать [сценарий Northwind Transact-SQL](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) в буфер обмена. Этот скрипт T-SQL создает базу данных Northwind с нуля и заполняет ее данными.  
+
+    3. Вставьте скрипт T-SQL в редакторе запросов, а затем выберите **Execute** кнопки.  
+
+       Через некоторое время завершения выполнения запроса и создания базы данных "Борей".  
   
-     The **SimpleControlWalkthrough** project is created, and added to **Solution Explorer**.  
+## <a name="create-a-windows-forms-application"></a>Создайте приложение Windows Forms  
+ Первым шагом является создание **приложение Windows Forms**.  
   
-## <a name="add-a-user-control-to-the-project"></a>Add a user control to the project  
- This walkthrough creates a simple data-bindable control from a **User Control**, so add a **User Control** item to the **SimpleControlWalkthrough** project.  
+#### <a name="to-create-the-new-windows-project"></a>Порядок создания нового проекта Windows  
   
-#### <a name="to-add-a-user-control-to-the-project"></a>To add a user control to the project  
+1. В Visual Studio на **файл** последовательно выберите пункты **New**, **проекта...** .  
   
-1.  From the **Project** menu, choose **Add User Control**.  
+2. Разверните **Visual C#** или **Visual Basic** на левой панели, затем выберите **классического Windows**.  
+
+3. В средней области выберите **приложение Windows Forms** тип проекта.  
+
+4. Назовите проект **SimpleControlWalkthrough**, а затем выберите **ОК**. 
   
-2.  Type `PhoneNumberBox` in the Name area, and click **Add**.  
+     **SimpleControlWalkthrough** создается проект и добавить **обозревателе решений**.  
   
-     The **PhoneNumberBox** control is added to **Solution Explorer**, and opens in the designer.  
+## <a name="add-a-user-control-to-the-project"></a>Добавьте в проект пользовательский элемент управления  
+ В этом пошаговом руководстве создается простой элемент управления можно привязать к данным из **пользовательский элемент управления**, поэтому добавьте **пользовательский элемент управления** элемент **SimpleControlWalkthrough** проекта.  
   
-## <a name="design-the-phonenumberbox-control"></a>Design the PhoneNumberBox control  
- This walkthrough expands upon the existing <xref:System.Windows.Forms.MaskedTextBox> to create the `PhoneNumberBox` control.  
+#### <a name="to-add-a-user-control-to-the-project"></a>Добавление пользовательского элемента управления в проект  
   
-#### <a name="to-design-the-phonenumberbox-control"></a>To design the PhoneNumberBox control  
+1.  Из **проекта** меню, выберите **добавить пользовательский элемент управления**.  
   
-1.  Drag a <xref:System.Windows.Forms.MaskedTextBox> from the **Toolbox** onto the user control's design surface.  
+2.  Тип `PhoneNumberBox` в имя области, а затем выберите **добавить**.  
   
-2.  Select the smart tag on the <xref:System.Windows.Forms.MaskedTextBox> you just dragged, and choose **Set Mask**.  
+     **PhoneNumberBox** добавления элемента управления **обозревателе решений**и откроется в конструкторе.  
   
-3.  Select **Phone number** in the **Input Mask** dialog box, and click **OK** to set the mask.  
+## <a name="design-the-phonenumberbox-control"></a>Конструктор элемента управления PhoneNumberBox  
+ В этом пошаговом руководстве расширяется существующий <xref:System.Windows.Forms.MaskedTextBox> для создания элемента управления `PhoneNumberBox`.  
   
-## <a name="add-the-required-data-binding-attribute"></a>Add the required data-binding attribute  
- For simple controls that support databinding, implement the <xref:System.ComponentModel.DefaultBindingPropertyAttribute>.  
+#### <a name="to-design-the-phonenumberbox-control"></a>Порядок проектирования элемента управления PhoneNumberBox  
   
-#### <a name="to-implement-the-defaultbindingproperty-attribute"></a>To implement the DefaultBindingProperty attribute  
+1.  Перетащите <xref:System.Windows.Forms.MaskedTextBox> из **элементов** рабочую область конструирования пользовательского элемента управления.  
   
-1.  Switch the `PhoneNumberBox` control to code view. (On the **View** menu, choose **Code**.)  
+2.  Выберите смарт-тег на <xref:System.Windows.Forms.MaskedTextBox> можно просто перетащить и выберите **Установка маски**.  
   
-2.  Replace the code in the `PhoneNumberBox` with the following:  
+3.  Выберите **номер телефона** в **маска ввода** диалоговое окно и нажмите кнопку **ОК** для задания маски.  
+  
+## <a name="add-the-required-data-binding-attribute"></a>Добавление необходимого атрибута привязки данных  
+ Для простых элементов управления, поддерживающих привязку к данным, реализуйте <xref:System.ComponentModel.DefaultBindingPropertyAttribute>.  
+  
+#### <a name="to-implement-the-defaultbindingproperty-attribute"></a>Реализация атрибута DefaultBindingProperty  
+  
+1.  Переключите элемент управления `PhoneNumberBox` в представление кода. (На **представление** меню, выберите **кода**.)  
+  
+2.  Замените код в `PhoneNumberBox` следующим кодом:  
   
      [!code-csharp[VbRaddataDisplaying#3](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.cs)]
      [!code-vb[VbRaddataDisplaying#3](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.vb)]  
   
-3.  From the **Build** menu, choose **Build Solution**.  
+3.  В меню **Построение** выберите пункт **Построить решение**.  
   
-## <a name="create-a-data-source-from-your-database"></a>Create a data source from your database  
- This step uses the **Data Source Configuration**wizard to create a data source based on the `Customers` table in the Northwind sample database. You must have access to the Northwind sample database to create the connection. For information on setting up the Northwind sample database, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
+## <a name="create-a-data-source-from-your-database"></a>Создать источник данных из базы данных  
+ Этот шаг использует **конфигурации источника данных**мастер для создания источника данных на основе `Customers` таблицы в базе данных Northwind. Для создания подключения необходимо иметь доступ к учебной базе данных "Борей". Сведения о настройке образца базы данных "Борей" см. в разделе [как: установить образцы баз данных](../data-tools/installing-database-systems-tools-and-samples.md).  
   
-#### <a name="to-create-the-data-source"></a>To create the data source  
+#### <a name="to-create-the-data-source"></a>Создание источника данных  
   
-1.  On the **Data** menu, click **Show Data Sources**.  
+1.  В меню **Данные** выберите команду **Показать источники данных**.  
   
-2.  In the **Data Sources** window, select **Add New Data Source** to start the **Data Source Configuration** wizard.  
+2.  В **источники данных** выберите **добавить новый источник данных** запуск **конфигурации источника данных** мастера.  
   
-3.  On the **Choose a Data Source Type** page, select **Database**, and then click **Next**.  
+3.  На **Выбор типа источника данных** выберите **базы данных**, а затем нажмите кнопку **Далее**.  
   
-4.  On the **Choose your Data Connection** page, do one of the following:  
+4.  На **Выбор подключения базы данных** выполните одно из следующих действий:  
   
-    -   If a data connection to the Northwind sample database is available in the drop-down list, select it.  
+    -   Если подключение к учебной базе данных Northwind доступно в раскрывающемся списке, то выберите его.  
   
-    -   Select **New Connection** to launch the **Add/Modify Connection** dialog box.  
+    -   Выберите **новое подключение** для запуска **Добавить/изменить подключение** диалоговое окно.  
   
-5.  If your database requires a password, select the option to include sensitive data, and then click **Next**.  
+5.  Если базе данных требуется пароль, выберите параметр для включения конфиденциальных данных и нажмите кнопку **Далее**.  
   
-6.  On the **Save connection string to the Application Configuration file** page, click **Next**.  
+6.  На **Сохранение строки подключения в файле конфигурации приложения** щелкните **Далее**.  
   
-7.  On the **Choose your Database Objects** page, expand the **Tables** node.  
+7.  На **Выбор объектов базы данных** разверните **таблиц** узла.  
   
-8.  Select the `Customers` table, and then click **Finish**.  
+8.  Выберите `Customers` , а затем выберите пункт **Готово**.  
   
-     The **NorthwindDataSet** is added to your project, and the `Customers` table appears in the **Data Sources** window.  
+     **NorthwindDataSet** добавляется в проект и `Customers` таблица появляется в **источники данных** окна.  
   
-## <a name="set-the-phone-column-to-use-the-phonenumberbox-control"></a>Set the phone column to use the PhoneNumberBox control  
- Within the **Data Sources** window, you can set the control to be created prior to dragging items onto your form.  
+## <a name="set-the-phone-column-to-use-the-phonenumberbox-control"></a>Значение столбца телефона на использование элемента управления PhoneNumberBox  
+ В пределах **источники данных** окна, можно задать для элемента управления перед перетаскиванием элементов на форму.  
   
-#### <a name="to-set-the-phone-column-to-bind-to-the-phonenumberbox-control"></a>To set the phone column to bind to the PhoneNumberBox control  
+#### <a name="to-set-the-phone-column-to-bind-to-the-phonenumberbox-control"></a>Порядок настройки столбца телефона на привязку к элементу управления PhoneNumberBox  
   
-1.  Open **Form1** in the designer.  
+1.  Откройте **Form1** в конструкторе.  
   
-2.  Expand the **Customers** node in the **Data Sources** window.  
+2.  Разверните **клиентов** узел в **источники данных** окна.  
   
-3.  Click the drop-down arrow on the **Customers** node, and choose **Details** from the control list.  
+3.  Щелкните стрелку раскрывающегося списка в **клиентов** узел и выберите **сведений** в списке элементов управления.  
   
-4.  Click the drop-down arrow on the **Phone** column, and choose **Customize**.  
+4.  Щелкните стрелку раскрывающегося списка в **Phone** столбец и выберите **Настройка**.  
   
-5.  Select the **PhoneNumberBox** from the list of **Associated Controls** in the **Data UI Customization Options** dialog box.  
+5.  Выберите **PhoneNumberBox** из списка **связанные элементы управления** в **Настройка данных интерфейса** диалоговое окно.  
   
-6.  Click the drop-down arrow on the **Phone** column, and choose **PhoneNumberBox**.  
+6.  Щелкните стрелку раскрывающегося списка в **Phone** столбец и выберите **PhoneNumberBox**.  
   
-## <a name="add-controls-to-the-form"></a>Add controls to the form  
- You can create the data-bound controls by dragging items from the **Data Sources** window onto the form.  
+## <a name="add-controls-to-the-form"></a>Добавление элементов управления в форму  
+ Можно создать элементы управления с привязкой к данным путем перетаскивания элементов из **источники данных** на форму.  
   
-#### <a name="to-create-data-bound-controls-on-the-form"></a>To create data-bound controls on the form  
+#### <a name="to-create-data-bound-controls-on-the-form"></a>Создание элементов управления с привязкой к данным на форме  
   
--   Drag the main **Customers** node from the **Data Sources** window onto the form, and verify that the `PhoneNumberBox` control is used to display the data in the `Phone` column.  
+-   Перетащите главный **клиентов** узел из **источники данных** окна в форму и убедитесь, что `PhoneNumberBox` управления используется для отображения данных в `Phone` столбца.  
   
-     Data-bound controls with descriptive labels appear on the form, along with a tool strip (<xref:System.Windows.Forms.BindingNavigator>) for navigating records. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray.  
+     Привязанные к данным элементы управления с метками описания отображаются на форме вместе с панелью инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям. Объект [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, и <xref:System.Windows.Forms.BindingNavigator> отображаются в области компонентов.  
   
-## <a name="run-the-application"></a>Run the application  
+## <a name="run-the-application"></a>Запуск приложения  
   
-#### <a name="to-run-the-application"></a>To run the application  
+#### <a name="to-run-the-application"></a>Запуск приложения  
   
--   Press F5 to run the application.  
+-   Нажмите клавишу F5 для запуска приложения.  
   
-## <a name="next-steps"></a>Next Steps  
- Depending on your application requirements, there are several steps you may want to perform after creating a control that supports data binding. Some typical next steps include:  
+## <a name="next-steps"></a>Дальнейшие действия  
+ В зависимости от требований приложения существуют несколько шагов, которые, возможно, потребуется выполнить после создания элемента управления, поддерживающего привязку к данным. Некоторые типичные дальнейшие действия.  
   
--   Placing your custom controls in a control library so you can reuse them in other applications.  
+-   Помещение пользовательских элементов управления в библиотеку элементов управления, чтобы их можно было повторно использовать в других приложениях.  
   
--   Creating controls that support more complex data-binding scenarios. For more information, see [Create a Windows Forms user control that supports complex data binding](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) and [Create a Windows Forms user control that supports lookup data binding](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).  
+-   Создание элементов управления, поддерживающих более сложных сценариев привязки к данным. Дополнительные сведения см. в разделе [создать пользовательский элемент управления Windows Forms, который поддерживает сложную привязку данных](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) и [создать пользовательский элемент управления Windows Forms, поддерживающих привязку данных подстановки](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).  
   
-## <a name="see-also"></a>See Also  
- [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
-
+## <a name="see-also"></a>См. также  
+ [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
+ [Задание поведения, при котором элемент управления создается при перетаскивании из окна "Источники данных"](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

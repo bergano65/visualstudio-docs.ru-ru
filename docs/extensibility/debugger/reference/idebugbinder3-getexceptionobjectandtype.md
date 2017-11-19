@@ -1,56 +1,56 @@
 ---
-title: "IDebugBinder3::GetExceptionObjectAndType | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBinder3::GetExceptionObjectAndType"
-helpviewer_keywords: 
-  - "Метод IDebugBinder3::GetExceptionObjectAndType"
+title: "IDebugBinder3::GetExceptionObjectAndType | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBinder3::GetExceptionObjectAndType
+helpviewer_keywords: IDebugBinder3::GetExceptionObjectAndType method
 ms.assetid: 2a313fe1-4ee1-4f01-af86-382d6c661a8f
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b533423da8152dd23df6d32da3361c99ad032b7e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBinder3::GetExceptionObjectAndType
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Этот метод возвращает исключение, связанное с объектом, если таковые имеются.  
+# <a name="idebugbinder3getexceptionobjectandtype"></a>IDebugBinder3::GetExceptionObjectAndType
+Этот метод получает исключение, связанное с объектом, если таковые имеются.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-HRESULT GetExceptionObjectAndType(  
-   IDebugObject** ppException,  
-   IDebugField**  ppField  
+HRESULT GetExceptionObjectAndType(  
+   IDebugObject** ppException,  
+   IDebugField**  ppField  
 );  
 ```  
   
-```c#  
-int GetExceptionObjectAndType(  
-   out IDebugObject ppException,  
-   out IDebugField  ppField  
+```csharp  
+int GetExceptionObjectAndType(  
+   out IDebugObject ppException,  
+   out IDebugField  ppField  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppException`  
- \[out\] возвращает объект, представляющий исключение.  
+ [out] Возвращает объект, представляющий исключение.  
   
  `ppField`  
- \[out\] возвращает объект, представляющий указанное поле, которое может вызвать исключение \(это может быть значение NULL\).  
+ [out] Возвращает объект, представляющий указанное поле, которая может вызвать исключение (может иметь значение null).  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
 > [!NOTE]
->  Для проверки, является ли исключение, проверьте значение, возвращаемое оператором `ppException`. если задано значение NULL, то исключение не связанное с этим объектом.  
+>  Чтобы проверить, существует ли исключение, проверьте значения, возвращенного `ppException`: если он имеет значение null, то исключение не связан с этим объектом.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

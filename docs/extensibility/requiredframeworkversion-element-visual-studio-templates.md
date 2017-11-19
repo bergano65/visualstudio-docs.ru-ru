@@ -1,57 +1,63 @@
 ---
-title: "Элемент RequiredFrameworkVersion (шаблоны Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "<RequiredFrameworkVersion> (шаблоны Visual Studio)"
-  - "RequiredFrameworkVersion (шаблоны Visual Studio)"
+title: "Элемент RequiredFrameworkVersion (шаблоны Visual Studio) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- <RequiredFrameworkVersion> (Visual Studio Templates)
+- RequiredFrameworkVersion (Visual Studio Templates)
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: dfbcc45198381cb111714dfdd52d8846f019e741
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Элемент RequiredFrameworkVersion (шаблоны Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Задает минимальную версию платформы .NET Framework, которая требуется для иерархии схемы шаблона.  
+# <a name="requiredframeworkversion-element-visual-studio-templates"></a>Элемент RequiredFrameworkVersion (шаблоны Visual Studio)
+Указывает минимальную версию .NET Framework, которые требуются для шаблона. Схема иерархии.  
   
-## Синтаксис  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<RequiredFrameworkVersion >  
+  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <RequiredFrameworkVersion> .... </RequiredFrameworkVersion>  
 ```  
   
-## Атрибуты и элементы  
- В следующих разделах описаны атрибуты, дочерние элементы и родительские элементы.  
+## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
-### Атрибуты  
+### <a name="attributes"></a>Атрибуты  
  Отсутствует.  
   
-### Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
   
-### Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Относит шаблон к какой\-либо категории и определяет, как он отображается в диалоговом окне **Создать проект** или **Добавить новый элемент**.|  
+|-------------|-----------------|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Относит шаблон и определяет способ отображения либо **новый проект** или **Добавление нового элемента** диалоговое окно.|  
   
-## Текстовое значение  
+## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- В тексте необходимо указать самую низкую версию платформы .NET Framework, подходящую для этого шаблона.  
+ Этот текст должен быть минимальный номер версии платформы .NET Framework, необходимой для шаблона.  
   
-## Заметки  
- Элемент `RequiredFrameworkVersion` является необязательным.  Этот элемент используется, если шаблон поддерживает только определенную минимальную версию и более поздние версии .NET Framework, если таковые имеются.  
+## <a name="remarks"></a>Примечания  
+ `RequiredFrameworkVersion` — это необязательный элемент. Этот элемент используется в том случае, если шаблон поддерживает только определенную минимальную версию и более поздних версиях, если таковая имеется, платформы .NET Framework.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Создание пользовательских шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
+ [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
  [Настройка конкретной версии платформы .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)

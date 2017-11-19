@@ -1,38 +1,40 @@
 ---
-title: "Порты | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "порты"
-  - "отладка [пакет SDK для отладки], порты"
+title: "Порты | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- ports
+- debugging [Debugging SDK], ports
 ms.assetid: 1d7f3aa7-7eff-4cab-bc53-0a566b1a9363
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 926f5e9a80a91da57d843c11175865f78775e38c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Порты
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-В терминах архитектуры отладчика, a **Порт**.  
+# <a name="ports"></a>Порты
+С точки зрения архитектуры отладчик **порт**:  
   
--   Контейнер для набора процессов, выполняющихся на сервере.  Например, порт может представлять подключения к устройству CE\-основанному окнами серийного хвостом или в сетевых компьютер non\-DCOM.  Один специальный локальный порт с именем порта, содержащую всех процессов, запущенных на локальном компьютере.  
+-   Контейнер для процессов, выполняющемся на сервере. Например порт может представлять соединение на устройстве под управлением Windows CE с помощью последовательного кабеля или компьютер сети без DCOM. Один особый порт, локальный порт, содержит все процессы, запущенные на локальном компьютере.  
   
--   Можно указать по имени или идентификатору.  
+-   Могут идентифицироваться по имени или идентификатора.  
   
--   Может перечислить все процессы запуска на порту и запустить и завершить эти процессы.  
+-   Можно перечислить все процессы, запущенные на порт и запуска и завершения этих процессов.  
   
--   Представляет  [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) интерфейс, который создается путем передачи  [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) аргумент  [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md).  
+-   Представленный [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) интерфейс, который создается путем передачи [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) аргумент [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md).  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] предоставляет по умолчанию порт, который обрабатывает все процессы Windows, собственный и управляемый код.  Нестандартный порт должен быть реализован для соединений с внешними механизмами, не на базе Windows.  Чтобы предоставить такие пользовательские порты, настраиваемому поставщику порта также требуется реализовывать.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]предоставляет порт по умолчанию, который обрабатывает все на основе Windows процессы, машинного и управляемого. Другой номер порта должен быть реализован для подключений с внешнего устройства, не под управлением Windows. Для предоставления таких Настраиваемые порты, supplier нестандартного порта также необходимо реализовать.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Серверы](../../extensibility/debugger/servers-visual-studio-sdk.md)   
  [Процессы](../../extensibility/debugger/processes.md)   
  [Основные понятия отладчика](../../extensibility/debugger/debugger-concepts.md)   

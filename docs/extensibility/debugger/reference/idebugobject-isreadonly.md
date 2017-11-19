@@ -1,51 +1,51 @@
 ---
-title: "IDebugObject::IsReadOnly | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugObject::IsReadOnly"
-helpviewer_keywords: 
-  - "Метод IDebugObject::IsReadOnly"
+title: "IDebugObject::IsReadOnly | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugObject::IsReadOnly
+helpviewer_keywords: IDebugObject::IsReadOnly method
 ms.assetid: c460f772-d08a-4b36-81f3-dff6a51a93fd
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 973e3b2b85012157d90fb09e9be669f83b7c9147
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugObject::IsReadOnly
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Определяет, является ли данный объект только для чтения.  
+# <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
+Определяет, является ли этот объект только для чтения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT IsReadOnly(   
-   BOOL* pfIsReadOnly  
+```cpp  
+HRESULT IsReadOnly(   
+   BOOL* pfIsReadOnly  
 );  
 ```  
   
-```c#  
+```csharp  
 int IsReadOnly(  
-   out int pfIsReadOnly  
+   out int pfIsReadOnly  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pfIsReadOnly`  
- \[out\] возвращает ненулевое \(`TRUE`если этот объект доступен только для чтения. в противном случае, возвращает нуль \(`FALSE`\).  
+ [out] Возвращает ненулевое значение (`TRUE`) Если этот объект только для чтения; в противном случае возвращает ноль (`FALSE`).  
   
-## Возвращаемое значение  
- В случае успеха возвращает значение S\_OK; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Доступный только для чтения объект не может иметь свое измененное значение, после того как он был создан.  
+## <a name="remarks"></a>Примечания  
+ Объект только для чтения не может быть изменен после его создания.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

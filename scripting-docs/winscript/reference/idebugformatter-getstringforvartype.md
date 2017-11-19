@@ -1,27 +1,30 @@
 ---
-title: "IDebugFormatter::GetStringForVarType | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugFormatter::GetStringForVarType | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugFormatter.GetStringForVarType
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IDebugFormatter::GetStringForVarType"
+helpviewer_keywords: IDebugFormatter::GetStringForVarType
 ms.assetid: 1c1a0499-ca57-47e0-8367-fdb4c902bca3
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9e056fa2ef9613c1af776840d1dae61078e26f83
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugFormatter::GetStringForVarType
-Возвращает строку, которая представляет заданное значение VARTYPE.  
+# <a name="idebugformattergetstringforvartype"></a>IDebugFormatter::GetStringForVarType
+Возвращает строку, представляющую указанное значение VARTYPE.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT GetStringForVarType(  
@@ -31,25 +34,25 @@ HRESULT GetStringForVarType(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `vt`  
- \[in\] VARTYPE, которые необходимо представить в виде строки.  
+ [in] VARTYPE для представления в виде строки.  
   
  `ptdescArrayType`  
- \[in\] массив структур, который описывает типы.  
+ [in] Массив структур, описывающих типы.  
   
  `pbstr`  
- \[out\] строка `vt`.  
+ [out] Строка, представляющая `vt`.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
- Метод возвращает строку, которая представляет заданное значение VARTYPE.  
+## <a name="remarks"></a>Примечания  
+ Метод возвращает строку, представляющую указанное значение VARTYPE.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IDebugFormatter](../../winscript/reference/idebugformatter-interface.md)

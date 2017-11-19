@@ -1,51 +1,53 @@
 ---
-title: "Практическое руководство. Прокрутка записей базы данных на листе"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "данные [разработка решений Office в Visual Studio], прокрутка записей базы данных"
-  - "базы данных [разработка решений Office в Visual Studio], прокрутка записей"
-  - "записи [разработка решений Office в Visual Studio], прокрутка"
-  - "листы [разработка решений Office в Visual Studio], прокрутка записей"
+title: "Как: прокрутка записей базы данных на листе | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- databases [Office development in Visual Studio], scrolling records
+- records [Office development in Visual Studio], scrolling
+- data [Office development in Visual Studio], scrolling database records
+- worksheets [Office development in Visual Studio], scrolling records
 ms.assetid: aea4c86c-9d6d-47dd-8977-066e21945dab
-caps.latest.revision: 33
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 32
+caps.latest.revision: "33"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 78ccd24a262863a4d6f844d624ef9996d09d568f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Прокрутка записей базы данных на листе
-  Следующая процедура поясняет, как с помощью конструктора отобразить на листе Microsoft Office Excel одно поле из таблицы базы данных, используя элементы управления, позволяющие конечному пользователю просматривать все записи в базе данных.  
+# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Практическое руководство. Прокрутка записей базы данных на листе
+  Ниже показано, как использовать конструктор для отображения одного поля из таблицы базы данных в лист Microsoft Office Excel, с помощью элементов управления, позволяющие конечным пользователям прокручивать все записи.  
   
- Конструктор можно использовать только в проектах уровня документа.  Добавление элементов управления и их программная привязка к данным может также выполняться во время выполнения.  Дополнительные сведения см. в разделе [Пошаговое руководство. Простая привязка данных в проекте надстройки VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).  
+ Конструктор можно использовать только в проектах уровня документа. Тем не менее можно добавить элементы управления и привязать их к данным программными средствами во время выполнения. Дополнительные сведения см. в разделе [Пошаговое руководство: простая привязка данных в VSTO надстройки проекта](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
-### Чтобы прокрутить записи базы данных на листе, выполните следующие действия:  
+### <a name="to-scroll-through-database-records-in-a-worksheet"></a>Прокрутка записей базы данных на листе  
   
-1.  Откройте в Visual Studio проект приложения Excel.  
+1.  Откройте проект приложения Excel в Visual Studio.  
   
-2.  Откройте окно **Источники данных** и создайте из базы данных источник данных.  Дополнительные сведения см. в разделе [Практическое руководство. Подключение к данным в базе данных](~/data-tools/how-to-connect-to-data-in-a-database.md).  
+2.  Откройте **источники данных** окно и создать источник данных из базы данных. Дополнительные сведения см. в разделе [Добавление новых подключений](../data-tools/add-new-connections.md).  
   
-3.  Разверните таблицу, содержащую данные, которые требуется отобразить, и выберите нужный столбец.  
+3.  Разверните таблицу, которая содержит данные, которые требуется отобразить и выберите нужный столбец.  
   
 4.  Откройте список элементов управления и выберите **NamedRange**.  
   
-5.  Перетащите элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> на ячейку, в которой должны находиться данные.  
+5.  Перетащите <xref:Microsoft.Office.Tools.Excel.NamedRange> управления на ячейку, в котором должны отображаться данные.  
   
-6.  На вкладке **Windows Forms** окна **Панель элементов** добавьте на лист элемент управления <xref:System.Windows.Forms.BindingNavigator> и настройте элементы управления, которые необходимо использовать.  Дополнительные сведения см. в разделе [Общие сведения об элементе управления BindingNavigator &#40;Windows Forms&#41;](http://msdn.microsoft.com/library/4423eede-f8d1-4d02-822f-5bf8432680d0).  
+6.  Из **Windows Forms** вкладке **элементов**, добавьте <xref:System.Windows.Forms.BindingNavigator> управления на лист и настроить элементы управления, которые вы хотите использовать. Дополнительные сведения см. в разделе [Обзор элемента управления BindingNavigator &#40; Windows Forms &#41; ](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

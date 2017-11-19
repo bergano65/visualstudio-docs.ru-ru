@@ -1,25 +1,29 @@
 ---
-title: "Метод IJsDebugFrame::GetStackRange | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Метод IJsDebugFrame::GetStackRange | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IJsDebugFrame.GetStackRange
 apilocation: jscript9diag.dll
 ms.assetid: a6d1d8be-efc0-442d-9756-1959c8f102bd
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: cce4d4542f4f76657475636ad6d8e430e1909181
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод IJsDebugFrame::GetStackRange
-Возвращает диапазон абсолютных адресов логического фрейма стеков JavaScript.  
+# <a name="ijsdebugframegetstackrange-method"></a>Метод IJsDebugFrame::GetStackRange
+Возвращает диапазон абсолютных адресов кадра стека логических JavaScript.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT GetStackRange(  
@@ -28,20 +32,20 @@ HRESULT GetStackRange(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pStart`  
- \[out\] Самый нижний указатель на кадр стека.  
+ [out] Нижняя большинство указатель стека для фрейма.  
   
  `pEnd`  
- \[out\] Самый верхний указатель на кадр стека.  
+ [out] Первые большинство устройство для раскладки указатель кадра.  
   
-## Возвращаемое значение  
+## <a name="return-value"></a>Возвращаемое значение  
   
-## Заметки  
- Этот метод полезен для соединения вместе перемежаемых трассировок стека вместе с множественными средами выполнения.  Начальные и конечные указатели стека могут включать несколько кадров стека физического компьютера \(для интерпретированных кадров среды выполнения JavaScript\). Начальный и конечный стеки\> меняются от максимальных к минимальным адресам.  
+## <a name="remarks"></a>Примечания  
+ Этот метод полезен для комбинирования трассировок стека с чередованием, собранных из нескольких сред выполнения. Начало, конец указатели стека может охватывать несколько кадров стека физического компьютера (для интерпретируемых кадров среды выполнения JavaScript). Пуск > Завершить при увеличении стека от высокой низкий адрес.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** jscript9diag.h  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IJsDebugFrame](../../winscript/reference/ijsdebugframe-interface.md)

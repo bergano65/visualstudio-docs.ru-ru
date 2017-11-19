@@ -1,32 +1,33 @@
 ---
-title: "Элемент CommandPlacements | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CommandPlacements"
-helpviewer_keywords: 
-  - "Элемент CommandPlacements (VSCT XML-схемы)"
-  - "Элементы схемы VSCT XML, CommandPlacements"
+title: "Элемент CommandPlacements | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: CommandPlacements
+helpviewer_keywords:
+- CommandPlacements element (VSCT XML schema)
+- VSCT XML schema elements, CommandPlacements
 ms.assetid: 78a5724a-3b9f-4c78-9c0d-8faa3924f81c
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 7757716dc3f4c9e327a6145642e169c23e895c0e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Элемент CommandPlacements
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Элемент CommandPlacements группы элементов CommandPlacement и других CommandPlacements группирований.  
+# <a name="commandplacements-element"></a>Элемент CommandPlacements
+Элемент CommandPlacements группирует элементы CommandPlacement и других CommandPlacements группирований.  
   
- CommandPlacements элемент является необязательным. Если нет, группы или меню необходимо включить в дополнительном расположении, не нужно включать этот раздел в файл .vsct.  
+ Элемент CommandPlacements является необязательным. Если нет, группы или меню должен быть включен в другом месте, у вас для включения в vsct-файл в этом разделе.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <CommandPlacements>  
@@ -35,34 +36,39 @@ caps.handback.revision: 11
 </CommandPlacements>  
 ```  
   
-## Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Атрибуты и элементы  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
-### Атрибуты  
+### <a name="attributes"></a>Атрибуты  
   
 |Атрибут|Описание|  
-|-------------|--------------|  
-|Условие|Необязательный. См. раздел [Условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|---------------|-----------------|  
+|Условие|Необязательно. В разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
-### Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
+|-------------|-----------------|  
 |CommandPlacements|Группирует элементы CommandPlacement и других CommandPlacements группирований.|  
 |[Элемент CommandPlacement](../extensibility/commandplacement-element.md)|Включает кнопки, группы и меню, должны быть включены в более чем одной группе или меню.|  
   
-### Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
-|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, представляющие команды.|  
+|-------------|-----------------|  
+|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, которые представляют команды.|  
   
-## Пример  
+## <a name="example"></a>Пример  
   
 ```  
-<CommandPlacements> <CommandPlacement guid="guidWidgetPackage" id="cmdidInsertOptions" priority="0x0300"> <Parent guid="cmdGuidWidgetCommands" id="menuIDEditWidget"/> </CommandPlacement> </CommandPlacements>  
+<CommandPlacements>  
+  <CommandPlacement guid="guidWidgetPackage" id="cmdidInsertOptions"  
+    priority="0x0300">  
+    <Parent guid="cmdGuidWidgetCommands" id="menuIDEditWidget"/>  
+  </CommandPlacement>  
+</CommandPlacements>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Элемент CommandPlacement](../extensibility/commandplacement-element.md)   
- [Таблицы команд Visual Studio \(. Файлы Vsct\)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

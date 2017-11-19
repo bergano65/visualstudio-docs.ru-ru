@@ -1,40 +1,40 @@
 ---
-title: "IDiaSymbol::get_restrictedType | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: "IDiaSymbol::get_restrictedType | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: c48b00a6-26b0-47b0-b824-fe44dedbc756
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 294afc254ee9f08e21019d08354fdecb5c05c1f4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_restrictedType
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Определяет, находится ли указатель `this` помеченн, ограниченные выпусками.  
+# <a name="idiasymbolgetrestrictedtype"></a>IDiaSymbol::get_restrictedType
+Указывает ли `this` указатель будет отмечена как ограниченным доступом.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp  
+```C++  
 HRESULT get_restrictedType(   
    BOOL* pRetVal);  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pRetVal`  
- \[out\] указатель на `BOOL`, указывающее, находится ли указатель `this` помеченн, ограниченные выпусками.  
+ [out] Указатель на `BOOL` , указывает ли `this` указатель будет отмечена как ограниченные.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_ОК`; в противном случае передачи `S_FALSE` или код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

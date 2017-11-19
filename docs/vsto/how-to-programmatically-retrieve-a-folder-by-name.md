@@ -1,48 +1,44 @@
 ---
-title: 'How to: Programmatically Retrieve a Folder by Name | Microsoft Docs'
+title: "Как: программное извлечение папки по имени | Документы Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - VB
 - CSharp
-helpviewer_keywords:
-- Outlook folders [Office development in Visual Studio], retrieving by name
+helpviewer_keywords: Outlook folders [Office development in Visual Studio], retrieving by name
 ms.assetid: 7f819525-b431-4b57-9a7f-3a6454c74298
-caps.latest.revision: 16
-author: kempb
-ms.author: kempb
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 137e83801cb74468dd095ba81831305e0534e456
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 32db5d1ae316b571b71a8015bd6ea5dc7fe7a110
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>How to: Programmatically Retrieve a Folder by Name
-  This example gets a reference to a named custom folder and then displays the contents of the folder.  
+# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Практическое руководство. Программное извлечение папки по имени
+  В этом примере возвращает ссылку на папку с именем пользователя, а затем отображает содержимое папки.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## <a name="example"></a>Example  
+## <a name="example"></a>Пример  
  [!code-csharp[Trin_OL_GetFolderName#1](../vsto/codesnippet/CSharp/Trin_OL_GetFolderName/thisaddin.cs#1)]  
   
-## <a name="compiling-the-code"></a>Compiling the Code  
- This example requires:  
+## <a name="compiling-the-code"></a>Компиляция кода  
+ Для этого примера требуются:  
   
--   A folder named TestFolder.  
+-   Папка с именем TestFolder.  
   
-## <a name="see-also"></a>See Also  
- [Working with Folders](../vsto/working-with-folders.md)   
- [How to: Programmatically Search Within a Specific Folder](../vsto/how-to-programmatically-search-within-a-specific-folder.md)   
- [How to: Programmatically Search for a Specific Contact](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
- [How to: Programmatically Create Custom Folder Items](../vsto/how-to-programmatically-create-custom-folder-items.md)  
+## <a name="see-also"></a>См. также  
+ [Работа с папками](../vsto/working-with-folders.md)   
+ [Как: программный поиск в указанной папке](../vsto/how-to-programmatically-search-within-a-specific-folder.md)   
+ [Как: программный поиск определенного контакта](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
+ [Практическое руководство. Программное создание настраиваемых элементов папок](../vsto/how-to-programmatically-create-custom-folder-items.md)  
   
   

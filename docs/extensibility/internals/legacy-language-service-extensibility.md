@@ -1,53 +1,55 @@
 ---
-title: "Расширяемость устаревших языковой службы | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "языковые службы"
-  - "Visual Studio, языковые службы"
+title: "Расширяемость устаревших языковой службы | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- language services
+- Visual Studio, language services
 ms.assetid: 2700cd4d-5f68-43fc-b62f-dc80c3f3aa85
-caps.latest.revision: 42
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 42
+caps.latest.revision: "42"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a5072aef90e08d645bff2a1bb6800e409e7d2104
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Расширяемость устаревших языковой службы
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Языковая служба предоставляет языковой поддержки для редактирования исходного кода в Интегрированной среде разработки.  
+# <a name="legacy-language-service-extensibility"></a>Расширяемость устаревших языковой службы
+Языковая служба обеспечивает поддержку языка для редактирования исходного кода в Интегрированной среде разработки.  
   
- Устаревший языковые службы реализуются как частью VSPackage, но это использование расширений MEF новый способ реализации возможностей службы языка. Чтобы больше узнать о новый способ реализации службы языка, в разделе [Редактор и расширения службы языка](../../extensibility/editor-and-language-service-extensions.md).  
+ Прежних версий языка службы реализованы как часть пакета VSPackage, но новой реализации возможностей службы языка можно выполнить с помощью расширений MEF. Чтобы больше узнать о новых способ реализации языковую службу, в разделе [редактора и расширения службы языка](../../extensibility/editor-and-language-service-extensions.md).  
   
- В этом разделе описывает структуру и реализацию службы языка прежних версий.  
+ В этом разделе рассматриваются структуру и реализацию службы языка прежних версий.  
   
-## В этом подразделе  
- [Миграция языковую службу для прежних версий](../../extensibility/internals/migrating-a-legacy-language-service.md)  
- Описание обновления языковую службу из Visual Studio 2008 до последней версии.  
+## <a name="in-this-section"></a>Содержание  
+ [Миграция языковой службы прежних версий](../../extensibility/internals/migrating-a-legacy-language-service.md)  
+ Объясняет, как обновить языковой службы из Visual Studio 2008 до последней версии.  
   
- [Essentials устаревших языковой службы](../../extensibility/internals/legacy-language-service-essentials.md)  
- Важные сведения о разработке языковые службы интеграции языка программирования в Visual Studio.  
+ [Основные компоненты языковой службы прежних версий](../../extensibility/internals/legacy-language-service-essentials.md)  
+ Предоставляет важные сведения о разработке языковые службы интеграции на языке программирования в Visual Studio.  
   
- [Разработка службы языка](../../extensibility/internals/developing-a-legacy-language-service.md)  
- Ссылки на разделы, которые помогут вам создать языковую службу.  
+ [Разработка языковой службы прежних версий](../../extensibility/internals/developing-a-legacy-language-service.md)  
+ Ссылки на разделы, которые могут помочь в создании языковой службы.  
   
- [Синтаксиса в языковую службу для прежних версий](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
- Сведения о поддержке, выделение синтаксиса в языковой службы.  
+ [Цветовая маркировка синтаксиса в языковой службе прежних версий](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
+ Сведения о поддержке, выделение синтаксиса в службе языка.  
   
- [Реализация службы языка прежних версий](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
- Сведения об использовании платформа управляемых пакетов \(MPF\) для реализации полнофункционального языковую службу в управляемом коде.  
+ [Реализация службы языка для прежних версий](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
+ Сведения об использовании платформы управляемых пакетов (MPF) для реализации службы полнофункциональный язык в управляемом коде.  
   
  [Вспомогательные средства просмотра символов](../../extensibility/internals/supporting-symbol-browsing-tools.md)  
- Описание библиотеки и средства, позволяющие выбрать представления дерева символов в Интегрированной среде разработки.  
+ Описание библиотеки и средства, которые позволяют просматривать представления в виде дерева символов в Интегрированной среде разработки.  
   
-## Связанные подразделы  
- [Редактор и расширения службы языка](../../extensibility/editor-and-language-service-extensions.md)  
+## <a name="related-sections"></a>Связанные разделы  
+ [Расширения редактора и языковой службы](../../extensibility/editor-and-language-service-extensions.md)  
  Общие сведения о редакторах Visual Studio.  
   
- [Поддержка службы языка для отладки](../../extensibility/internals/language-service-support-for-debugging.md)  
- Содержит сведения и ссылки для Visual Studio отладка SDK, который содержит сведения, необходимые для создания и настройки компонентов отладчик для отладки программ.
+ [Поддержка языковой службы для отладки](../../extensibility/internals/language-service-support-for-debugging.md)  
+ Содержит сведения и ссылки для Visual Studio отладка пакета SDK, который содержит сведения, необходимые для создания и настройки компонентов отладчик, используемый для отладки программы.

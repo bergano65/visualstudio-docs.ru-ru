@@ -1,46 +1,47 @@
 ---
-title: "IDebugExpressionEvaluator3 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Интерфейс IDebugExpressionEvaluator3"
+title: "IDebugExpressionEvaluator3 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugExpressionEvaluator3 interface
 ms.assetid: c27c2a14-300b-4535-be22-767c83602f69
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 3980f48063894d2bbde88a5dbe851e75c450b54c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugExpressionEvaluator3
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugexpressionevaluator3"></a>IDebugExpressionEvaluator3
 > [!IMPORTANT]
 >  В Visual Studio 2015 этот способ реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Представляет средство оценки выражений \(EE\) с деревом улучшенные средства синтаксического анализа.  
+ Представляет средство оценки выражений (EE) с деревом улучшенные средства синтаксического анализа.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IDebugExpressionEvaluator3 : IDebugExpressionEvaluator2  
 ```  
   
-## Примечания для вызывающих объектов  
- Эта версия средства синтаксического анализа передает символ поставщика и адрес, оценке кадра.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Эта версия средства синтаксического анализа передает символ поставщика и адрес вычисление кадра.  
   
-## Методы  
+## <a name="methods"></a>Методы  
  В дополнение к методам на [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) интерфейс, этот интерфейс реализует следующий метод:  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[Parse2](../../../extensibility/debugger/reference/idebugexpressionevaluator3-parse2.md)|Преобразует строку выражения проанализированное выражение, заданное поставщиком символов и адрес, оценке кадра.|  
+|------------|-----------------|  
+|[Parse2](../../../extensibility/debugger/reference/idebugexpressionevaluator3-parse2.md)|Преобразует строку выражения проанализированный выражению, заданному символ поставщика и адрес вычисление кадра.|  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: Ee.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  

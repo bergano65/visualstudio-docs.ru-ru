@@ -1,52 +1,52 @@
 ---
-title: "IEEVisualizerDataProvider::GetNewObjectForVisualizer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEEVisualizerDataProvider::GetNewObjectForVisualizer"
-helpviewer_keywords: 
-  - "Метод IEEVisualizerDataProvider::GetNewObjectForVisualizer"
+title: "IEEVisualizerDataProvider::GetNewObjectForVisualizer | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEEVisualizerDataProvider::GetNewObjectForVisualizer
+helpviewer_keywords: IEEVisualizerDataProvider::GetNewObjectForVisualizer method
 ms.assetid: a898d549-4898-4fde-aad1-e8bb89129652
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 81bed6a59e9405c69f0c829f46f71b82c9988086
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IEEVisualizerDataProvider::GetNewObjectForVisualizer
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Этот метод возвращает новый объект для визуализатора.  Этот метод всегда будет создать новый объект из существующего объекта.  
+# <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
+Этот метод возвращает новый объект для визуализатора. Этот метод всегда создает новый объект из существующего объекта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-HRESULT GetNewObjectForVisualizer(  
-   IDebugObject** ppObject  
+HRESULT GetNewObjectForVisualizer(  
+   IDebugObject** ppObject  
 );  
 ```  
   
-```c#  
-int GetNewObjectForVisualizer(  
-   out IDebugObject ppObject  
+```csharp  
+int GetNewObjectForVisualizer(  
+   out IDebugObject ppObject  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppObject`  
- \[out\] новый объект.  
+ [out] Новый объект.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- `This method` пересчитать объект его в настоящий момент представляет и возвращает результат в виде нового объекта.  Существующий объект обновляется в результате вычисления.  
+## <a name="remarks"></a>Примечания  
+ `This method`повторно вычисляет объект в данный момент представляет и возвращает результат в виде объекта. Существующий объект обновляется в результате вычисления.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

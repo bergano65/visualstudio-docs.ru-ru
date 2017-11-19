@@ -1,47 +1,49 @@
 ---
-title: "IDebugPointerObject3::GetPointerAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetPointerAddress"
-  - "IDebugPointerObject3::GetPointerAddress"
+title: "IDebugPointerObject3::GetPointerAddress | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- GetPointerAddress
+- IDebugPointerObject3::GetPointerAddress
 ms.assetid: 4cc5af04-9e70-420d-8230-ef3108df6d51
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: aff3dcc29c58038e95bfb80a52e8c38928d802d6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPointerObject3::GetPointerAddress
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugpointerobject3getpointeraddress"></a>IDebugPointerObject3::GetPointerAddress
 Извлекает адрес указателя.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT GetPointerAddress (  
-   UINT64* puAddress  
+   UINT64* puAddress  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetPointerAddress (  
-   out ulong puAddress  
+   out ulong puAddress  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `puAddress`  
- \[out\] возвращает адрес указателя.  
+ [out] Возвращает адрес указателя.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugPointerObject3](../../../extensibility/debugger/reference/idebugpointerobject3.md)

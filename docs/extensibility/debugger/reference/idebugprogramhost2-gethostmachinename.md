@@ -1,48 +1,48 @@
 ---
-title: "IDebugProgramHost2::GetHostMachineName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramHost2::GetHostMachineName"
-helpviewer_keywords: 
-  - "IDebugProgramHost2::GetHostMachineName"
+title: "IDebugProgramHost2::GetHostMachineName | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgramHost2::GetHostMachineName
+helpviewer_keywords: IDebugProgramHost2::GetHostMachineName
 ms.assetid: 4677ffe4-aa9b-4450-a63b-74cd3984d956
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: aa47d74aef66d26fedaa1de6ac4348941234f642
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgramHost2::GetHostMachineName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Возвращает имя компьютера, на котором выполняется программа процесса размещения.  
+# <a name="idebugprogramhost2gethostmachinename"></a>IDebugProgramHost2::GetHostMachineName
+Возвращает имя компьютера, на котором выполняется процесс, размещение этой программы.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetHostMachineName(   
-   BSTR* pbstrHostMachineName  
+```cpp  
+HRESULT GetHostMachineName(   
+   BSTR* pbstrHostMachineName  
 );  
 ```  
   
-```c#  
-int GetHostMachineName(   
-   out string pbstrHostMachineName  
+```csharp  
+int GetHostMachineName(   
+   out string pbstrHostMachineName  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pbstrHostMachineName`  
- \[out\] возвращает имя компьютера.  
+ [out] Возвращает имя компьютера.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)

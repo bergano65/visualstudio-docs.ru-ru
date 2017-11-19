@@ -1,88 +1,163 @@
 ---
-title: "Манифеста из ресурсов | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Из ресурсов манифеста | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
-caps.latest.revision: 4
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 297d9535a8e9655ed87230d4f947faeb29e08487
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Манифеста из ресурсов
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Манифест из средства ресурсы — консольное приложение, которое принимает список ресурсов изображений \(файлы с расширением PNG или .xaml\) и создает файл .imagemanifest, позволяющий эти образы для использования со службой образов в Visual Studio. Кроме того это средство можно использовать Добавление изображений к существующей .imagemanifest. Это средство можно использовать для добавления поддержку высокого Разрешения и темы для изображений в расширение Visual Studio. Файл созданный .imagemanifest следует состава и развернут как часть расширения Visual Studio \(.vsix\).  
+# <a name="manifest-from-resources"></a>Ресурсы манифеста
+Манифест из ресурсов средство является консольным приложением, которое принимает список ресурсов изображений (.png или .xaml-файлы) и создает файл .imagemanifest, который позволяет этих образов для использования с служба образов в Visual Studio. Кроме того это средство можно использовать для добавления существующего .imagemanifest изображений. Это средство можно использовать для добавления поддержку высоким Разрешением и темы для изображений в расширение Visual Studio. .Imagemanifest созданный файл следует состава и развернут как часть расширений Visual Studio (VSIX).  
   
-## Как использовать средство  
+## <a name="how-to-use-the-tool"></a>Как использовать средство  
  **Синтаксис**  
   
- ManifestFromResources \/resources: \< Dir1 \>; \< Img1 \>\/Assembly: \< AssemblyName \>\< необязательные аргументы \>  
+ ManifestFromResources /resources:\<Dir1 >;\< Img1 >/Assembly:\<AssemblyName > \<необязательно Args >  
   
  **Аргументы**  
   
 ||||  
 |-|-|-|  
 |**Имя коммутатора**|**Примечания**|**Обязательный или необязательный**|  
-|\/Resources|Разделенный точками с запятыми список изображений или каталоги. Этот список всегда должен содержать полный список изображений, которые будут в манифесте. Если дано неполный список записей, которые не включены, будут потеряны.<br /><br /> Если файл данного ресурса полосу изображений, средство разделяет его на отдельные изображения перед добавлением каждого subimage в манифесте.<br /><br /> Если изображения PNG\-файл, рекомендуется форматировать имя следующим образом, чтобы средство можно заполнить необходимыми атрибутами для изображения: \< имя \>. \< ширина \>. \< высота \> .png.|Обязательный|  
-|\/ Assembly|Имя управляемой сборки \(не включая расширение\) или путь выполнения сборки в машинном коде, на котором размещается ресурсы \(относительно расположения выполнения манифеста\).|Обязательно|  
-|\/ manifest|Имя созданного .imagemanifest файл. Это также могут быть абсолютный или относительный путь, чтобы создать файл в другом месте. Имя по умолчанию соответствует имени сборки.<br /><br /> По умолчанию: \< текущий каталог \> \\ \< сборка \> .imagemanifest|Необязательный|  
-|\/guidName|Имя, присваиваемое символом GUID для всех образов в создаваемом манифесте.<br /><br /> По умолчанию: AssetsGuid|Необязательный|  
-|\/rootPath|Корневой путь, который должен быть отброшены перед созданием управляемых ресурсов идентификаторы URI. \(Этот флаг — помочь в случаях, когда средство Возвращает относительный путь URI неправильной ресурсы, которые не удалось загрузить.\)<br /><br /> По умолчанию: \< текущий каталог \>|Необязательный|  
-|\/ RECURSIVE|Установка этого флажка указывает, что для рекурсивного поиска каталогов в аргументе \/resources. Опустив этот флаг приведет только верхнего уровня поиска каталогов.|Необязательный|  
-|\/isNative|Установите этот флаг, если аргумент сборки является путь для собственной сборки. Исключить этот флаг, если аргумент сборки — имя управляемой сборки. \(См. в подразделе "Примечания" Дополнительные сведения об этом флаг\).|Необязательный|  
-|\/newGuids|Установка этого флажка указывает, что для создания нового значения для символа образы GUID вместо слияние из существующего манифеста.|Необязательный|  
-|\/newIds|Установка этого флажка указывает, что для создания новых значений символов идентификатора для каждого изображения вместо объединения значений из существующего манифеста.|Необязательный|  
-|\/nologo|Этот флаг установлен останавливает продукта и авторских правах сведения из печати.|Необязательный|  
-|\/?|Распечатайте справочной информации.|Необязательный|  
-|\/help|Распечатайте справочной информации.|Необязательный|  
+|/Resources|Разделенный точками с запятой список изображений или каталоги. Этот список всегда должен содержать полный список изображений, которые будут находиться в манифесте. Если дано неполный список записей, которые не включены, будут потеряны.<br /><br /> Если файл данному ресурсу полосу изображений, средство будет разбейте его на отдельные изображения перед добавлением каждого subimage в манифест.<br /><br /> Если изображение PNG-файл, мы рекомендуем форматировать имя следующим образом, чтобы средство можно заполнить вправо атрибуты для образа: \<имя >.\< Ширина >. \<Высота > .png.|Обязательно|  
+|/ Assembly|Имя управляемой сборки (без расширения) или путь выполнения сборки в машинном коде, который содержит ресурсы (относительно расположения среды выполнения манифеста).|Обязательно|  
+|параметр/MANIFEST|Имя должно быть присвоено .imagemanifest созданного файла. Это можно также указать абсолютный или относительный путь, для создания файла в другом месте. Имя по умолчанию соответствует имени сборки.<br /><br /> По умолчанию: \<текущий каталог >\\< сборки\>.imagemanifest|Optional|  
+|/guidName|Имя, присваиваемое символом GUID для всех образов в создаваемом манифесте.<br /><br /> По умолчанию: AssetsGuid|Optional|  
+|/rootPath|Корневой путь, который должен быть отброшены перед созданием URI управляемых ресурсов. (Этот флаг доступен для случаев, когда средство возвращает относительному пути URI неправильно, вызывая ресурсов, которые не удалось загрузить).<br /><br /> По умолчанию: \<текущий каталог >|Optional|  
+|/ RECURSIVE|Установка этого флажка указывает, что для рекурсивного поиска все каталоги в аргументе /resources. Пропуск этот флаг приведет только верхнего уровня поиска каталогов.|Optional|  
+|/isNative|Установите этот флаг, если аргумент сборки представляет путь для сборки в машинном коде. Не указывайте этот флаг, при сборке аргумент является именем для управляемой сборки. (См. раздел Примечания для дополнительных сведений о этот флаг).|Optional|  
+|/newGuids|Установка этого флажка указывает, что для создания нового значения для символа образы GUID вместо слияние из существующего манифеста.|Optional|  
+|/newIds|Установка этого флажка указывает, что для создания новых значений символов идентификатор для каждого изображения вместо объединения значений из существующего манифеста.|Optional|  
+|/nologo|Этот флаг установлен останавливает продукта и авторских правах информацию от печати.|Optional|  
+|/?|Выводит справку.|Optional|  
+|/help|Выводит справку.|Optional|  
   
  **Примеры**  
   
--   ManifestFromResources \/resources:D:\\Images \/assembly:My.Assembly.Name \/isNative  
+-   ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative  
   
--   ManifestFromResources \/resources:D:\\Images\\Image1.png;D:\\Images\\Image1.xaml \/assembly:My.Assembly.Name \/manifest:MyImageManifest.imagemanifest  
+-   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /manifest:MyImageManifest.imagemanifest  
   
--   ManifestFromResources \/resources:D:\\Images\\Image1.png;D:\\Images\\Image1.xaml \/assembly:My.Assembly.Name \/guidName:MyImages \/newGuids \/newIds  
+-   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
   
-## Примечания  
+## <a name="notes"></a>Примечания  
   
--   Средство поддерживает только файлы .xaml и .png. Другие типы изображение или файл будет игнорироваться. Предупреждение для всех неподдерживаемых типов обнаружения при синтаксическом анализе ресурсы. Не поддерживается изображений, обнаружены ли завершено средство синтаксического анализа ресурсы, будет сформирована ошибка  
+-   Средство поддерживает только файлы .png и .xaml. Другие типы изображений или файла будет игнорироваться. Предупреждение для всех типов не поддерживается, при синтаксическом анализе ресурсы. Если не поддерживается изображения найдены после завершения средство синтаксического анализа ресурсы, будет сформирована ошибка  
   
--   Следуя предполагаемый формат для изображений в формате PNG, средство будет присвоено значение измерения размер .png размер указан формат, даже если оно отличается от фактического размера изображения.  
+-   Следуя предполагаемый формат для изображений в формате PNG, средство будет присвоено значение размера или измерений .png размер задан формат, даже если он отличается от фактического размера изображения.  
   
--   Можно опустить формат ширины и высоты для изображения в формате PNG, но средство прочтет фактическое изображение ширины или высоты и использовать их для значения измерения размера изображения.  
+-   Можно опустить формат ширины или высоты для изображений в формате PNG, но средство чтения фактическое изображение ширины или высоты и использовать их для изображения значение размера или измерений.  
   
--   При запуске этого средства на полосе же изображение несколько раз для одного .imagemanifest приведет манифеста повторяющиеся записи, так как средство пытается разделить полосу изображения в автономные образы и добавлять их в существующий манифест.  
+-   При запуске этого средства на же изображений несколько раз для одного .imagemanifest приведет повторяющиеся записи манифеста, так как средство пытается разделить набора изображений на автономные изображения и добавить их в существующий манифест.  
   
--   Слияние \(пропуск \/newGuids или \/newIds\) должна выполняться только для созданных средством манифестов. Не может правильно объединены манифестов, которые были настроены или созданный с помощью других средств.  
+-   Слияние (опустив /newGuids или /newIds) должно использоваться только для созданных средствами манифестов. Манифесты, созданный с помощью других средств или настроить не могут быть объединены неправильно.  
   
--   Манифесты, созданные для собственные сборки может потребоваться изменить вручную после создания вносить символы идентификатор соответствует идентификаторы из собственной сборки RC\-файла ресурсов.  
+-   Манифесты, созданные для машинные сборки может потребоваться изменить вручную после формирования, чтобы сделать символы идентификатор, который соответствует ресурсу идентификаторы из RC-файла машинной сборки.  
   
-## Пример результатов выполнения  
- **Манифест простого образа**  
+## <a name="sample-output"></a>Пример результатов выполнения  
+ **Манифест простой изображения**  
   
- Манифест изображение будет иметь вид этот XML\-файл:  
+ Манифест изображения будет выглядеть этот XML-файл:  
   
 ```xml  
-<?xml version="1.0" encoding="utf-8"?> <!-- This file was generated by the ManifestFromResources tool.--> <!-- Version: 14.0.15197 --> <ImageManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/VisualStudio/ImageManifestSchema/2014"> <Symbols> <String Name="Resources" Value="/My.Assembly.Name;Component/Resources/Images" /> <Guid Name="AssetsGuid" Value="{fb41b7ef-6587-480c-aa27-5b559d42cfc9}" /> <ID Name="MyImage" Value="0" /> </Symbols> <Images> <Image Guid="$(AssetsGuid)" ID="$(MyImage)"> <Source Uri="$(Resources)/Xaml/MyImage.xaml" /> <Source Uri="$(Resources)/Png/MyImage.16.16.png"> <Size Value="16" /> </Source> </Image> </Images> <ImageLists /> </ImageManifest>  
+<?xml version="1.0" encoding="utf-8"?>  
+<!-- This file was generated by the ManifestFromResources tool.-->  
+<!-- Version: 14.0.15197 -->  
+<ImageManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/VisualStudio/ImageManifestSchema/2014">  
+  <Symbols>  
+    <String Name="Resources" Value="/My.Assembly.Name;Component/Resources/Images" />  
+    <Guid Name="AssetsGuid" Value="{fb41b7ef-6587-480c-aa27-5b559d42cfc9}" />  
+    <ID Name="MyImage" Value="0" />  
+  </Symbols>  
+  <Images>  
+    <Image Guid="$(AssetsGuid)" ID="$(MyImage)">  
+      <Source Uri="$(Resources)/Xaml/MyImage.xaml" />  
+      <Source Uri="$(Resources)/Png/MyImage.16.16.png">  
+        <Size Value="16" />  
+      </Source>  
+    </Image>  
+  </Images>  
+  <ImageLists />  
+</ImageManifest>  
 ```  
   
- **Изображение манифест полосу изображений**  
+ **Манифест изображения для изображений**  
   
- Манифест изображения для полосу изображений будет аналогичен этот XML\-файл:  
+ Манифест изображения для изображений будет выглядеть этот XML-файл:  
   
 ```xml  
-<?xml version="1.0" encoding="utf-8"?> <!-- This file was generated by the ManifestFromResources tool.--> <!-- Version: 14.0.15197 --> <ImageManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/VisualStudio/ImageManifestSchema/2014"> <Symbols> <String Name="Resources" Value="/My.Assembly.Name;Component/Resources/ImageStrip" /> <Guid Name="AssetsGuid" Value="{fb41b7ef-6587-480c-aa27-5b559d42cfc9}" /> <ID Name="MyImageStrip_0" Value="1" /> <ID Name="MyImageStrip_1" Value="2" /> <ID Name="MyImageStrip" Value="3" /> </Symbols> <Images> <Image Guid="$(AssetsGuid)" ID="$(MyImageStrip_0)"> <Source Uri="$(Resources)/MyImageStrip_0.png"> <Size Value="16" /> </Source> </Image> <Image Guid="$(AssetsGuid)" ID="$(MyImageStrip_1)"> <Source Uri="$(Resources)/MyImageStrip_1.png"> <Size Value="16" /> </Source> </Image> </Images> <ImageLists> <ImageList Guid="$(AssetsGuid)" ID="$(MyImageStrip)"> <ContainedImage Guid="$(AssetsGuid)" ID="$(MyImageStrip_0)" /> <ContainedImage Guid="$(AssetsGuid)" ID="$(MyImageStrip_1)" /> </ImageList> </ImageLists> </ImageManifest>  
+<?xml version="1.0" encoding="utf-8"?>  
+<!-- This file was generated by the ManifestFromResources tool.-->  
+<!-- Version: 14.0.15197 -->  
+<ImageManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/VisualStudio/ImageManifestSchema/2014">  
+  <Symbols>  
+    <String Name="Resources" Value="/My.Assembly.Name;Component/Resources/ImageStrip" />  
+    <Guid Name="AssetsGuid" Value="{fb41b7ef-6587-480c-aa27-5b559d42cfc9}" />  
+    <ID Name="MyImageStrip_0" Value="1" />  
+    <ID Name="MyImageStrip_1" Value="2" />  
+    <ID Name="MyImageStrip" Value="3" />  
+  </Symbols>  
+  <Images>  
+    <Image Guid="$(AssetsGuid)" ID="$(MyImageStrip_0)">  
+      <Source Uri="$(Resources)/MyImageStrip_0.png">  
+        <Size Value="16" />  
+      </Source>  
+    </Image>  
+    <Image Guid="$(AssetsGuid)" ID="$(MyImageStrip_1)">  
+      <Source Uri="$(Resources)/MyImageStrip_1.png">  
+        <Size Value="16" />  
+      </Source>  
+    </Image>  
+  </Images>  
+  <ImageLists>  
+    <ImageList Guid="$(AssetsGuid)" ID="$(MyImageStrip)">  
+      <ContainedImage Guid="$(AssetsGuid)" ID="$(MyImageStrip_0)" />  
+      <ContainedImage Guid="$(AssetsGuid)" ID="$(MyImageStrip_1)" />  
+    </ImageList>  
+  </ImageLists>  
+</ImageManifest>  
 ```  
   
- **Манифест образа для собственной сборки графические ресурсы**  
+ **Манифест изображения для сборки в машинном коде графические ресурсы**  
   
- Манифест образа для образов в машинном коде будет аналогичен этот XML\-файл:  
+ Манифест изображения для образов в машинном коде, будет выглядеть этот XML-файл:  
   
 ```xml  
-<?xml version="1.0" encoding="utf-8"?> <!-- This file was generated by the ManifestFromResources tool.--> <!-- Version: 14.0.15198 --> <ImageManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/VisualStudio/ImageManifestSchema/2014"> <Symbols> <String Name="Resources" Value="..\Assembly\Folder\My.Assembly.Name" /> <Guid Name="AssetsGuid" Value="{442d8739-efde-46a4-8f29-e3a1e5e7f8b4}" /> <ID Name="MyImage1" Value="0" /> <ID Name="MyImage2" Value="1" /> </Symbols> <Images> <Image Guid="$(AssetsGuid)" ID="$(MyImage1)"> <Source Uri="$(Resources)"> <Size Value="16" /> <NativeResource ID="$(MyImage1)" Type="PNG" /> </Source> </Image> <Image Guid="$(AssetsGuid)" ID="$(MyImage2)"> <Source Uri="$(Resources)"> <Size Value="16" /> <NativeResource ID="$(MyImage2)" Type="PNG" /> </Source> </Image> </Images> <ImageLists /> </ImageManifest>  
+<?xml version="1.0" encoding="utf-8"?>  
+<!-- This file was generated by the ManifestFromResources tool.-->  
+<!-- Version: 14.0.15198 -->  
+<ImageManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/VisualStudio/ImageManifestSchema/2014">  
+  <Symbols>  
+    <String Name="Resources" Value="..\Assembly\Folder\My.Assembly.Name" />  
+    <Guid Name="AssetsGuid" Value="{442d8739-efde-46a4-8f29-e3a1e5e7f8b4}" />  
+    <ID Name="MyImage1" Value="0" />  
+    <ID Name="MyImage2" Value="1" />  
+  </Symbols>  
+  <Images>  
+    <Image Guid="$(AssetsGuid)" ID="$(MyImage1)">  
+      <Source Uri="$(Resources)">  
+        <Size Value="16" />  
+        <NativeResource ID="$(MyImage1)" Type="PNG" />  
+      </Source>  
+    </Image>  
+    <Image Guid="$(AssetsGuid)" ID="$(MyImage2)">  
+      <Source Uri="$(Resources)">  
+        <Size Value="16" />  
+        <NativeResource ID="$(MyImage2)" Type="PNG" />  
+      </Source>  
+    </Image>  
+  </Images>  
+  <ImageLists />  
+</ImageManifest>  
 ```

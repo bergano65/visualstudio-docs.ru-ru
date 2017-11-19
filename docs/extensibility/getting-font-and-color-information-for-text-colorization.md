@@ -4,36 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - text, coloring
 - font and color control [Visual Studio SDK], coloring
 ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
-caps.latest.revision: 22
+caps.latest.revision: "22"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 57b3d53f86d132779fb00608886fa7c479b71551
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: e3b31ad2ec080070dec3c68b304f400d204d47a0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Получение шрифт и цвет шрифта для текста выделение цветом
 Процесс, который подготавливает к просмотру или отображение цветом текста в элементы пользовательского интерфейса (UI) зависит от типа проекта, технологии и разработчик предпочтений. **Шрифты и цвета** сохраняет страницу свойств параметры.  
@@ -50,17 +36,17 @@ ms.lasthandoff: 04/05/2017
   
 -   Используйте механизм сохранения шрифта и цвета для получения хранимой или текущего состояния. Дополнительные сведения см. в разделе [параметров доступа к хранимых шрифта и](../extensibility/accessing-stored-font-and-color-settings.md).  
   
--   Используйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>интерфейс службы, предоставляющей данные шрифта и цвета, чтобы получить экземпляр <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, если пакет VSPackage не также поставщика шрифта или цвета.</xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> </xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>  
+-   Используйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> интерфейс службы, предоставляющей данные шрифта и цвета, чтобы получить экземпляр <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, если пакет VSPackage не также поставщика шрифта или цвета.  
   
--   Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>интерфейса.</xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>  
+-   Реализовать интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>.  
   
- Чтобы убедиться, что результаты, полученные путем опроса, актуальные, может оказаться полезным использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>интерфейс, чтобы определить, требуется ли обновление до вызова методов получения <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>интерфейса.</xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> </xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>  
+ Чтобы убедиться, что результаты, полученные путем опроса, актуальные, может оказаться полезным использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> интерфейс, чтобы определить, требуется ли обновление до вызова методов получения <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> интерфейса.  
   
  После получения информации шрифта и цвета, синтаксического анализа текста для отображения для определения элементов, требующие выделение цветом и отображения текста в окне, указав соответствующие шрифты и цвета.  
   
 ## <a name="see-also"></a>См. также  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider></xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults></xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>   
- [Шрифты и текст](http://msdn.microsoft.com/Library/d43640f3-da94-4df2-a29d-a9d021a1c069)   
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>   
+ [Шрифты и текст](/dotnet/framework/winforms/advanced/using-fonts-and-text)   
  [Работа с цветом](/cpp/windows/working-with-color-image-editor-for-icons)   
  [GDI (интерфейс графических устройств)](http://msdn.microsoft.com/en-us/7e1d4540-bb2e-4257-8eee-eee376acba83)

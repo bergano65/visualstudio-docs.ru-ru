@@ -1,72 +1,74 @@
 ---
-title: "Практическое руководство. Добавление элементов управления XMLMappedRange на листы"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "элементы управления [разработка решений Office в Visual Studio], добавление к листам"
-  - "XMLMappedRange - элемент управления, добавление к листам"
+title: "Как: Добавление элементов управления XMLMappedRange на листы | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- XMLMappedRange control, adding to worksheets
+- controls [Office development in Visual Studio], adding to worksheets
 ms.assetid: e1d4f2a8-1157-49c2-9158-a1253b709cb8
-caps.latest.revision: 25
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 25
+caps.latest.revision: "25"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 0d83241e265db0e0ef0165cbc1615f23ea2ec5a2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Добавление элементов управления XMLMappedRange на листы
-  При сопоставлении XML\-элемента с ячейкой в Microsoft Office Excel Visual Studio автоматически добавляет в лист элемент управления <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>.  
+# <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Практическое руководство. Добавление элементов управления XMLMappedRange на листы
+  При сопоставлении XML-элемент с ячейкой в Microsoft Office Excel, Visual Studio автоматически добавляет <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> лист элемента управления.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
 > [!NOTE]  
->  Элемент управления <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> недоступен в окне **Панель элементов** или **Источники данных**.  Кроме того, элементы управления <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> можно создать программным путем.  
+>  <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Управления не доступен на **элементов** или **источники данных** окна. Кроме того, не удается создать <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> элементы управления программными средствами.  
   
-### Добавление элемента управления XMLMappedRange на лист  
+### <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>Чтобы добавить элемент управления XMLMappedRange на лист  
   
 1.  Откройте книгу Excel в конструкторе Visual Studio.  
   
-2.  Откройте лист, на который требуется добавить элемент управления.  
+2.  Откройте таблицу, в которой вы хотите добавить элемент управления.  
   
-3.  На вкладке **Разработчик** щелкните элемент **Исходный код**.  
-  
-    > [!NOTE]  
-    >  Если вкладка **Разработчик** не отображается в ленте, то ее следует включить.  Дополнительные сведения см. в разделе [Практическое руководство. Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
-  
-     Отобразится область задач **XML\-источник**:  
-  
-4.  В области задач **XML\-источник** щелкните **Карты XML**.  
-  
-5.  В диалоговом окне **Карты XML** нажмите кнопку **Добавить**.  
-  
-     Откроется диалоговое окно **XML\-источник**.  
-  
-6.  В диалоговом окне **XML\-источник** выберите XML\-схему и щелкните элемент **Открыть**.  
-  
-     Схема добавится в диалоговое окно **Карты XML**.  
-  
-7.  В диалоговом окне **Карты XML** нажмите кнопку **ОК**.  
-  
-8.  Перетащите элемент из области задач **XML\-источник** на ячейку листа.  
-  
-     Элемент управления <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> будет создан и добавлен в проект.  
+3.  На **разработчика** щелкните **источника**.  
   
     > [!NOTE]  
-    >  При перетаскивании родительского элемента из области задач **XML\-источник** создается элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject>.  
+    >  Если **разработчика** вкладка не отображается на ленте, необходимо включить его. Дополнительные сведения см. в разделе [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-## См. также  
+     **XML-источник** отображается область задач.  
+  
+4.  В **XML-источник** области задач, нажмите кнопку **карты XML**.  
+  
+5.  В **карты XML** диалоговое окно, нажмите кнопку **добавить**.  
+  
+     **XML-источник** откроется диалоговое окно.  
+  
+6.  Выберите XML-схемы из **XML-источник** диалоговое окно и нажмите кнопку **откройте**.  
+  
+     Схема добавляется к **карты XML** диалоговое окно.  
+  
+7.  В **карты XML** диалоговое окно, нажмите кнопку **ОК**.  
+  
+8.  Перетащите элемент из **XML-источник** области задач в ячейку на листе.  
+  
+     <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Создается и добавляется в проект.  
+  
+    > [!NOTE]  
+    >  При перетаскивании родительского элемента из **XML-источник** область задач <xref:Microsoft.Office.Tools.Excel.ListObject> создается элемент управления.  
+  
+## <a name="see-also"></a>См. также  
  [Элемент управления XmlMappedRange](../vsto/xmlmappedrange-control.md)   
  [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)   
- [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)   
- [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Практическое руководство. Сопоставление схем и листов внутри Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)  
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Практическое руководство. Сопоставление схем и листов в Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)  
   
   

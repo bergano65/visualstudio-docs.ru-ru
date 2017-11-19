@@ -1,41 +1,43 @@
 ---
-title: "IDebugExtendedField::IsClosedType | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IsClosedType"
-  - "IDebugExtendedField::IsClosedType"
+title: "IDebugExtendedField::IsClosedType | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IsClosedType
+- IDebugExtendedField::IsClosedType
 ms.assetid: 9136fc57-74ff-4fe4-a6e2-b137cb9d5b08
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ad1498f0f169e10bcc58cdc0f5e041096766e87c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugExtendedField::IsClosedType
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Определяет, если поле представляет тип закрыть.  
+# <a name="idebugextendedfieldisclosedtype"></a>IDebugExtendedField::IsClosedType
+Определяет, представляет ли поле закрытого типа.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT IsClosedType(  
-   void  
+   void  
 );  
 ```  
   
-```c#  
+```csharp  
 int IsClosedType();  
 ```  
   
-## Возвращаемое значение  
- Если поле тип закрыть, возвращается `S_OK`; в противном случае возвращает  `S_FALSE`.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Если поле является закрытым типом, возвращает `S_OK`; в противном случае возвращает `S_FALSE`.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)

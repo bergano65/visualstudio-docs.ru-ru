@@ -1,64 +1,69 @@
 ---
-title: "Элемент SortOrder (шаблоны Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#SortOrder"
-helpviewer_keywords: 
-  - "<SortOrder> - элемент [шаблоны Visual Studio]"
-  - "SortOrder - элемент [шаблоны Visual Studio]"
+title: "Элемент SortOrder (шаблоны Visual Studio) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#SortOrder
+helpviewer_keywords:
+- SortOrder element [Visual Studio Templates]
+- <SortOrder> element [Visual Studio Templates]
 ms.assetid: 151932c1-f08a-4f78-a8d0-bd2f32211a9c
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: eb16ed870697a84152761f2cabdb7d42b1b1fd32
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Элемент SortOrder (шаблоны Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Задает значение, с помощью которого шаблон упорядочивается относительно других шаблонов той же категории при отображении в диалоговом окне **Создать проект** или **Добавить новый элемент**.  
+# <a name="sortorder-element-visual-studio-templates"></a>Элемент SortOrder (шаблоны Visual Studio)
+Указывает значение, которое используется для размещения шаблона других шаблонов той же категории, как оно отображается в либо **новый проект** или **Добавление нового элемента** диалоговое окно.  
   
-## Синтаксис  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<SortOrder >  
+  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <SortOrder> ... </SortOrder>  
 ```  
   
-## Атрибуты и элементы  
- В следующих разделах описаны атрибуты, дочерние элементы и родительские элементы.  
+## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
-### Атрибуты  
+### <a name="attributes"></a>Атрибуты  
  Отсутствует.  
   
-### Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
   
-### Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Относит шаблон проекта к какой\-либо категории и определяет характеристики его отображения для диалоговых окон **Создать проект** или **Добавить новый элемент**.|  
+|-------------|-----------------|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
-## Текстовое значение  
+## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- `integer` представляет значение порядка сортировки.  
+ `integer` , Представляющий значение порядка сортировки.  
   
-## Заметки  
- Элемент `SortOrder` является необязательным.  Значением по умолчанию является 100, все значения должны быть кратными 10.  
+## <a name="remarks"></a>Примечания  
+ `SortOrder` — это необязательный элемент. Значение по умолчанию — 100, а все значения должны быть кратными 10.  
   
- Элемент `SortOrder` игнорируется для шаблонов, созданных пользователем.  Все шаблона, созданные пользователем, сортируются в алфавитном порядке.  
+ `SortOrder` Элемент игнорируется для шаблонов, созданных пользователем. Все шаблоны, созданные пользователем сортируются в алфавитном порядке.  
   
- Шаблоны с малыми значениями порядка сортировки отображаются в диалоговом окне **Создать проект** или **Добавить новый элемент** перед шаблонами с высокими значениями порядка сортировки.  
+ Шаблоны с малыми значениями порядка сортировки отображаются в либо **новый проект** или **добавить новый элемент** диалоговое окно перед шаблонами с высокими значениями порядка сортировки.  
   
-## Пример  
- В следующем примере демонстрируются метаданные для стандартного шаблона элемента класса [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
+## <a name="example"></a>Пример  
+ В следующем примере демонстрируется метаданные для стандартного [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] шаблона класса.  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -77,8 +82,8 @@ caps.handback.revision: 10
 </VSTemplate>  
 ```  
   
- В этом примере элемент `SortOrder` обладает относительно высоким значением.  Вероятно, другие шаблоны элемента [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] будут иметь значения `SortOrder` меньше `290` и, соответственно, будут отображаться перед данным шаблоном в диалоговом окне **Создать элемент**.  
+ В этом примере `SortOrder` элемента относительно высокая. Вполне вероятно, что и другие [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] будет иметь шаблоны элементов `SortOrder` меньше значения `290` и будет отображаться перед данным шаблоном в **новый элемент** диалоговое окно.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Создание пользовательских шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
+ [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

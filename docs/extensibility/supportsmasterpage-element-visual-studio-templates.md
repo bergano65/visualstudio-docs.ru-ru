@@ -1,62 +1,67 @@
 ---
-title: "Элемент SupportsMasterPage (шаблоны Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#SupportsMasterPage"
-helpviewer_keywords: 
-  - "<SupportsMasterPage> - элемент [шаблоны Visual Studio]"
-  - "SupportsMasterPage - элемент [шаблоны Visual Studio]"
+title: "Элемент SupportsMasterPage (шаблоны Visual Studio) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#SupportsMasterPage
+helpviewer_keywords:
+- <SupportsMasterPage> element [Visual Studio Templates]
+- SupportsMasterPage element [Visual Studio Templates]
 ms.assetid: ce877a6a-9bba-4fd9-92fb-0a8dfec9e75b
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6fe7edc9bcfe7df774c49afb2543170472d042aa
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Элемент SupportsMasterPage (шаблоны Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Указывает, включен ли флажок **Выбрать главную страницу** в диалоговом окне **Добавить новый элемент**.  
+# <a name="supportsmasterpage-element-visual-studio-templates"></a>Элемент SupportsMasterPage (шаблоны Visual Studio)
+Указывает ли **выбрать главную страницу** установлен флажок на **Добавление нового элемента** диалоговое окно.  
   
-## Синтаксис  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<SupportsMasterPage >  
+  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <SupportsMasterPage> true/false </SupportsMasterPage>  
 ```  
   
-## Атрибуты и элементы  
- В следующих разделах описаны атрибуты, дочерние элементы и родительские элементы.  
+## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
-### Атрибуты  
+### <a name="attributes"></a>Атрибуты  
  Отсутствует.  
   
-### Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
   
-### Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Указывает данные, относящие шаблон к какой\-либо категории и определяет характеристики его отображения для диалоговых окон **Создать проект** или **Создать элемент**.|  
+|-------------|-----------------|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Указывает данные, категорию шаблона и определяет его отображение в **новый проект** или **новый элемент** диалоговое окно.|  
   
-## Текстовое значение  
+## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Текст должен иметь значение `true` или `false`, указывающее, доступен ли флажок **Выбрать главную страницу** в диалоговом окне **Добавить новый элемент**.  
+ Этот текст должен быть либо `true` или `false`, означающее ли **выбрать главную страницу** установлен флажок на **Добавление нового элемента** диалоговое окно.  
   
-## Заметки  
- Элемент `SupportsMasterPage` является необязательным.  Значение по умолчанию — `false`.  
+## <a name="remarks"></a>Примечания  
+ `SupportsMasterPage` — это необязательный элемент. Значение по умолчанию — `false`.  
   
- Элемент `SupportsMasterPage` доступен только для шаблонов веб\-элементов.  
+ `SupportsMasterPage` Элемент доступен только для веб-шаблоны элемента.  
   
-## Пример  
- В следующем примере демонстрируются метаданные для веб\-проекта, включающего поддержку главной страницы.  
+## <a name="example"></a>Пример  
+ В следующем примере показано метаданных для веб-проекта, который включает поддержку главной страницы.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  
@@ -80,6 +85,6 @@ caps.handback.revision: 9
 </VSTemplate>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Создание пользовательских шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
+ [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

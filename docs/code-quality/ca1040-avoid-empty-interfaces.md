@@ -1,11 +1,10 @@
 ---
-title: 'CA1040: Avoid empty interfaces | Microsoft Docs'
+title: "CA1040: Избегайте пустых интерфейсов | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,54 +14,41 @@ helpviewer_keywords:
 - AvoidEmptyInterfaces
 - CA1040
 ms.assetid: 120a741b-5fd1-4836-8453-7857e0cd0380
-caps.latest.revision: 16
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: e61c17e0c1dec573b60b241eaf57dbb27c6bca41
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7e086ffc1b0166ec17954323b8cf7871fd758ea0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1040-avoid-empty-interfaces"></a>CA1040: Avoid empty interfaces
+# <a name="ca1040-avoid-empty-interfaces"></a>CA1040: избегайте пустых интерфейсов
 |||  
 |-|-|  
 |TypeName|AvoidEmptyInterfaces|  
 |CheckId|CA1040|  
-|Category|Microsoft.Design|  
-|Breaking Change|Breaking|  
+|Категория|Microsoft.Design|  
+|Критическое изменение|Критическое|  
   
-## <a name="cause"></a>Cause  
- The interface does not declare any members or implement two or more other interfaces.  
+## <a name="cause"></a>Причина  
+ Интерфейс не объявляет никаких элементов или реализовывать несколько интерфейсов.  
   
-## <a name="rule-description"></a>Rule Description  
- Interfaces define members that provide a behavior or usage contract. The functionality that is described by the interface can be adopted by any type, regardless of where the type appears in the inheritance hierarchy. A type implements an interface by providing implementations for the members of the interface. An empty interface does not define any members. Therefore, it does not define a contract that can be implemented.  
+## <a name="rule-description"></a>Описание правила  
+ Интерфейсы определяют члены, предоставляющие поведение или соглашение об использовании. Функциональность, описанная интерфейсом, может быть использована любым типом вне зависимости от расположения типа в иерархии интерфейса. Тип реализует интерфейс путем предоставления реализаций для членов интерфейса. Пустой интерфейс не определяет никаких элементов. Таким образом он не определяет контракт, который может быть реализован.  
   
- If your design includes empty interfaces that types are expected to implement, you are probably using an interface as a marker or a way to identify a group of types. If this identification will occur at run time, the correct way to accomplish this is to use a custom attribute. Use the presence or absence of the attribute, or the properties of the attribute, to identify the target types. If the identification must occur at compile time, then it is acceptable to use an empty interface.  
+ Если проект содержит пустой интерфейсы, типы должны быть реализованы, как маркер или для определения группы типов, возможно, вы используете интерфейс. Если этот код будет выполняться во время выполнения, правильный способ выполнения этой задачи является использование настраиваемого атрибута. Используйте наличие или отсутствие атрибута или свойства атрибута для определения целевых типов. Если определение должно произойти во время компиляции, он будет доступен для использования пустой интерфейс.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- Remove the interface or add members to it. If the empty interface is being used to label a set of types, replace the interface with a custom attribute.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Удалите интерфейс или добавьте в него члены. Если пустой интерфейс используется для обозначения набора типов, замените интерфейс настраиваемого атрибута.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule when the interface is used to identify a set of types at compile time.  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ Можно безопасно отключать предупреждение из этого правила, если этот интерфейс используется для идентификации набора типов во время компиляции.  
   
-## <a name="example"></a>Example  
- The following example shows an empty interface.  
+## <a name="example"></a>Пример  
+ В следующем примере пустой интерфейс.  
   
- [!code-csharp[FxCop.Design.InterfacesNotEmpty#1](../code-quality/codesnippet/CSharp/ca1040-avoid-empty-interfaces_1.cs)] [!code-cpp[FxCop.Design.InterfacesNotEmpty#1](../code-quality/codesnippet/CPP/ca1040-avoid-empty-interfaces_1.cpp)] [!code-vb[FxCop.Design.InterfacesNotEmpty#1](../code-quality/codesnippet/VisualBasic/ca1040-avoid-empty-interfaces_1.vb)]
+ [!code-csharp[FxCop.Design.InterfacesNotEmpty#1](../code-quality/codesnippet/CSharp/ca1040-avoid-empty-interfaces_1.cs)]
+ [!code-cpp[FxCop.Design.InterfacesNotEmpty#1](../code-quality/codesnippet/CPP/ca1040-avoid-empty-interfaces_1.cpp)]
+ [!code-vb[FxCop.Design.InterfacesNotEmpty#1](../code-quality/codesnippet/VisualBasic/ca1040-avoid-empty-interfaces_1.vb)]

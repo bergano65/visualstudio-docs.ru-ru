@@ -1,36 +1,38 @@
 ---
-title: "Работа с текстом в документах"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "документы [разработка решений Office в Visual Studio], текст"
-  - "Office - документы [разработка решений Office в Visual Studio], текст"
-  - "текст [разработка решений Office в Visual Studio]"
-  - "Word [разработка решений Office в Visual Studio], текст"
+title: "Работа с текстом в документах | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office documents [Office development in Visual Studio, text
+- Word [Office development in Visual Studio], text
+- text [Office development in Visual Studio]
+- documents [Office development in Visual Studio], text
 ms.assetid: 6f9e5a35-8c29-4237-bd44-f3a79e6a5f1c
-caps.latest.revision: 15
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c3d9ef7af80e7840405433ec7d87f647b90442c5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Работа с текстом в документах
+# <a name="working-with-text-in-documents"></a>Работа с текстом в документах
   В подразделах данного раздела приведены пошаговые инструкции и примеры кода для работы с текстом в проектах Office с помощью объектной модели Microsoft Office Word.  
   
  В некоторых случаях способы выполнения этих задач в надстройках VSTO отличаются от способов, которые применялись в настройках на уровне документа.  
   
 |Задача|Процедура|  
-|------------|---------------|  
+|----------|---------------|  
 |Определение диапазонов на основе различных критериев и их выбор.|[Практическое руководство. Программное определение и выделение диапазонов в документах](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)|  
 |Получение символов в начале и конце диапазона.|[Практическое руководство. Программное извлечение символов начала и завершения в диапазонах](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)|  
 |Выбор абзаца, не включая знак абзаца, и перемещение текста.|[Практическое руководство. Программное исключение знаков абзаца при создании диапазонов](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)|  
@@ -48,8 +50,8 @@ caps.handback.revision: 14
 |Скрытие текста в закладке перед печатью документа.|[Практическое руководство. Программное скрытие текста в документах](../vsto/how-to-programmatically-hide-text-in-documents.md)|  
 |Добавление комментария к тексту.|[Практическое руководство. Программное добавление примечаний в текст документа](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Общие сведения об объектной модели Word](../vsto/word-object-model-overview.md)   
- [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
+ [Общие сведения о разработке решений Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
   
   

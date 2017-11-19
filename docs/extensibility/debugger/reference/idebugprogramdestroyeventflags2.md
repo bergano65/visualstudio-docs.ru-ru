@@ -1,46 +1,47 @@
 ---
-title: "IDebugProgramDestroyEventFlags2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Интерфейс IDebugProgramDestroyEventFlags2"
+title: "IDebugProgramDestroyEventFlags2 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugProgramDestroyEventFlags2 interface
 ms.assetid: d384ff71-dc71-40b9-a871-801f8b6a3418
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: bee4fe04f22bd9afbff8e2d26ef9d699b0226241
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgramDestroyEventFlags2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Разрешает ядро отладки для переопределения по умолчанию применяются расширения функциональности [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Пользовательский интерфейс после завершения сеанса отладки.  
+# <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
+Включает модуль отладки для переопределения поведения по умолчанию [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] пользовательского интерфейса при завершении сеанса отладки.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IDebugProgramDestroyEventFlags2 : IUnknown  
 ```  
   
-## Примечания по реализации  
- Этот интерфейс реализуется определяемая обработчиков отладки.  Полезно для узлов, которые может создать и удалить несколько программ со временем существования процесса.  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
+ Этот интерфейс реализуется отладчики. Это полезно для узлов, которые могут создавать и удалять несколько программ в течение времени существования процесса.  
   
-## Методы  
+## <a name="methods"></a>Методы  
  В следующей таблице показаны методы `IDebugProgramDestroyEventFlags2`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|Извлекает программа destroy флаги.|  
+|------------|-----------------|  
+|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|Извлекает программа уничтожить флаги.|  
   
-## Заметки  
- По умолчанию применяются расширения функциональности [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Пользовательский интерфейс вернуться в режим конструктора, после того как все программы, отправленные программа разрушают событие.  Этот интерфейс позволяет обработчику отладки для изменения этой функциональности.  
+## <a name="remarks"></a>Примечания  
+ Поведение по умолчанию [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] пользовательского интерфейса — чтобы вернуться в режим конструктора после отправки программы все программы удаления события. Этот интерфейс позволяет модуля отладки изменить это поведение.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: Msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  

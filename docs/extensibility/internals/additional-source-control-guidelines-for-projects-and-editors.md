@@ -4,51 +4,36 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- source control [Visual Studio SDK], guidelines for projects and editors
+helpviewer_keywords: source control [Visual Studio SDK], guidelines for projects and editors
 ms.assetid: 2483cce5-321c-4d3c-9c5c-ee8385263f74
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: ee74f16c90dbf697732a490f895efb1a52233d80
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 4ed84b4b1bf6c974f22682dcb8d899208c653ebc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Правила управления дополнительные исходные проекты и редакторы
-Существует ряд рекомендаций, редакторы и проекты должны соблюдаться для поддержки системы управления версиями.  
+Существует ряд инструкций, редакторы и проекты должны соблюдаться для поддержки системы управления версиями.  
   
 ## <a name="guidelines"></a>Рекомендации  
- Проект или редактор должен выполнять следующие для поддержки системы управления версиями:  
+ Проект или редактор также должен выполнять следующие задачи для поддержки системы управления версиями.  
   
 |Область|Проект|Редактор|Подробные сведения|  
 |----------|-------------|------------|-------------|  
-|Частные копии файлов|x||Среда поддерживает закрытых копий файлов. То есть свой собственный частную копию файлов в этом проекте у каждого пользователя, в проект.|  
-|Сохраняемость ANSI в Юникод|x|x|При написании кода сохранения состояния, сохранения файлов в формате ANSI, так как большинство программ системы управления версиями в настоящее время не поддерживают Юникод.|  
-|Перечисление файлов|x||Проект должен содержать перечень всех файлов в этом и должен иметь возможность получить список файлов с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>или <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>(VSH_PROPID_First_Child или Next_Sibling).</xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> </xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> Проект также должен предоставлять имена элементов с помощью его <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.GetMkDocument%2A>реализации и поддержке поиск имени (в том числе файлов со специальным) через его <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>реализацию.</xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A> </xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.GetMkDocument%2A>|  
-|Текстовый формат|x|x|Если это возможно, файлы должны быть в формате для поддержки объединение различных версий. Файлы, которые не находятся в текстовом формате нельзя объединять с другими версиями файла позже. Предпочтительный текстовый формат — XML.|  
-|Основано на ссылке|x||Проекты, основанные на ссылку легко поддерживаются в системе управления версиями. Однако проектов на основе каталогов поддерживаются системой управления версиями до тех пор, пока проект можно создать список его файлы по требованию, независимо от того, существуют ли эти файлы на диске. При открытии проекта из системы управления версиями, файл проекта переносится раньше любого из его файлов.|  
-|Сохранять объекты и свойства в определенном порядке|x|x|Сохранять файлы в определенном порядке, например в алфавитном порядке, чтобы упростить объединение.|  
-|Перезагрузить|x|x|При изменении файла на диске, редактора, необходимо перезагрузить его. Когда вы участвуете в системе управления версиями, среды перезагрузить данные можно, вызвав вашей <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A>реализацию.</xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> Наиболее сложная перезагрузить случаем является извлечения вызова IVsQueryEditQuerySave::<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> и обрабатываются сведения.</xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> Однако перезагрузка код должен быть возможность работать в этой ситуации.<br /><br /> Среда автоматически перезагружать файлы проекта. Тем не менее, необходимо реализовать проект <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2>Если оно содержит вложенные иерархии для поддержки перезагрузки вложенные файлы проекта.</xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2>|  
+|Частные копии файлов|X||Среда поддерживает частной копии файлов. То есть каждый пользователь, вовлеченных в проект имеет своих собственных частную копию файлов в этом проекте.|  
+|Сохраняемость ANSI в Юникод|X|X|При написании кода сохраняемости, сохранения файлов в формате ANSI, так как большинство программ системы управления версиями в настоящее время не поддерживают Юникод.|  
+|Перечисление файлов|X||Проект должен содержать перечень всех файлов в этом и должен иметь возможность при перечислении файлов с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> или <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (VSH_PROPID_First_Child/Next_Sibling). Проект также предоставить имена элементов с помощью его <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.GetMkDocument%2A> реализация и поддержка поиска имен (включая файлов со специальным) через его <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A> реализации.|  
+|Формат текста|X|X|Если это возможно, файлы следует в текстовом формате для поддержки объединение различных версий. Файлы, которые не находятся в текстовом формате нельзя объединять с другими версиями файла позднее. Предпочтительный текстовый формат является XML.|  
+|Справочник по на|X||Ссылки проектов легко поддерживаются в системе управления версиями. Однако проектов на основе каталога поддерживаются системой управления версиями до тех пор, пока проекта можно получить список файлов по требованию, независимо от того, существуют ли эти файлы на диске. При открытии проекта из системы управления версиями, файл проекта будет переведена в режим сначала перед любым из его файлов.|  
+|Сохранять объекты и свойства в определенном порядке|X|X|Сохранение файлов в определенном порядке, например в алфавитном порядке для облегчения объединения.|  
+|Перезагрузить|X|X|При изменении файла на диске, в редакторе, необходимо перезагрузить его. При участии в системе управления версиями среды перезагрузить данные можно, вызвав вашей <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> реализации. Самым сложным перезагрузить случаем является извлечения происходит, когда вы вызвали IVsQueryEditQuerySave::<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> и обрабатываются сведения. Тем не менее перезагрузить кода необходимо выполнить в такой ситуации.<br /><br /> Среда автоматически перезагружать файлы проекта. Тем не менее, необходимо реализовать проект <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> Если имеет вложенные иерархии, чтобы обеспечить поддержку перезагрузки вложенные файлы проекта.|  
   
 ## <a name="see-also"></a>См. также  
  [Поддержка системы управления версиями](../../extensibility/internals/supporting-source-control.md)

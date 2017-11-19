@@ -1,82 +1,82 @@
 ---
-title: "DEBUG_CUSTOM_VIEWER | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DEBUG_CUSTOM_VIEWER"
-helpviewer_keywords: 
-  - "Структура DEBUG_CUSTOM_VIEWER"
+title: "DEBUG_CUSTOM_VIEWER | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: DEBUG_CUSTOM_VIEWER
+helpviewer_keywords: DEBUG_CUSTOM_VIEWER structure
 ms.assetid: 8e0ef3f0-0107-48e8-a037-6e52b4c4ed9d
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: cc6f9655d2ec7bc588bcd673d5331f12f7fab262
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# DEBUG_CUSTOM_VIEWER
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Структура, которая определяет пользовательские средства просмотра или визуализатора типа.  
+# <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
+Структура, идентифицирующая пользовательское средство просмотра или введите визуализатора.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-typedef struct tagDEBUG_CUSTOM_VIEWER {  
-   DWORD dwID;  
-   BSTR  bstrMenuName;  
-   BSTR  bstrDescription;  
-   GUID  guidLang;  
-   GUID  guidVendor;  
-   BSTR  bstrMetric;  
-} DEBUG_CUSTOM_VIEWER;  
+typedef struct tagDEBUG_CUSTOM_VIEWER {  
+   DWORD dwID;  
+   BSTR  bstrMenuName;  
+   BSTR  bstrDescription;  
+   GUID  guidLang;  
+   GUID  guidVendor;  
+   BSTR  bstrMetric;  
+} DEBUG_CUSTOM_VIEWER;  
 ```  
   
-```c#  
-public struct DEBUG_CUSTOM_VIEWER {  
-   public uint   dwID;  
-   public string bstrMenuName;  
-   public string bstrDescription;  
-   public Guid   guidLang;  
-   public Guid   guidVendor;  
-   public string bstrMetric;  
+```csharp  
+public struct DEBUG_CUSTOM_VIEWER {  
+   public uint   dwID;  
+   public string bstrMenuName;  
+   public string bstrDescription;  
+   public Guid   guidLang;  
+   public Guid   guidVendor;  
+   public string bstrMetric;  
 };  
 ```  
   
-## Члены  
+## <a name="members"></a>Члены  
  dwID  
- Идентификатор для различения нескольких средств просмотра или визуализаторов, реализованных на единицу `GUID`.  
+ Идентификатор для различения нескольких средств просмотра или визуализаторы, реализованных в одном `GUID`.  
   
  bstrMenuName  
- Текст, который отображается в раскрывающемся меню.  
+ Текст, который будет отображаться в раскрывающемся меню.  
   
  bstrDescription  
- Описание пользовательских средства просмотра или визуализатора типа \(должно быть значение NULL, если не используется\).  
+ Описание пользовательское средство просмотра или тип визуализатора (должно быть значение null, если не используется).  
   
  guidLang  
- Язык, предоставляющий средства оценки выражений.  
+ Язык обеспечивает средство оценки выражений.  
   
  guidVendor  
- Поставщик, предоставляющий средства оценки выражений.  
+ Поставщик обеспечивает средство оценки выражений.  
   
  bstrMetric  
- Показатель, от имени которой пользовательские средства просмотра или визуализатор типа `CLSID` хранит.  
+ Метрики, под которой пользовательское средство просмотра или тип визуализатора `CLSID` хранится.  
   
-## Заметки  
- Список этой структуры возвращаемый вызовом [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) метод \(и расширением  [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) метод\).  
+## <a name="remarks"></a>Примечания  
+ Возвращает список этой структуры с помощью вызова [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) метод (и, по мере расширения [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) метода).  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)

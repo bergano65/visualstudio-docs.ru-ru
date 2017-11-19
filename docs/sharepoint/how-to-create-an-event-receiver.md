@@ -1,16 +1,13 @@
 ---
-title: 'How to: Create an Event Receiver | Microsoft Docs'
+title: "Как: Создание приемника событий | Документы Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.SharePointTools.SPE.EventReceiver
+f1_keywords: VS.SharePointTools.SPE.EventReceiver
 dev_langs:
 - VB
 - CSharp
@@ -20,62 +17,62 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, event receivers
 - event receivers [SharePoint development in Visual Studio]
 ms.assetid: 6f90cb48-eb8f-43c2-a3f7-ed4ce81aedf2
-caps.latest.revision: 20
-author: kempb
-ms.author: kempb
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 69a1c53bd067b77838e133808f0c72ca153e4bc7
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 938c03a0bea5a4e96885f1816ddb1c1c13d80ce0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-create-an-event-receiver"></a>How to: Create an Event Receiver
-  By creating *event receivers*, you can respond when a user interacts with SharePoint items such as lists or list items. For example, the code in an event receiver can be triggered when a user changes the calendar or deletes a name from a contacts list. By following this topic, you can learn how to add an event receiver to a list instance.  
+# <a name="how-to-create-an-event-receiver"></a>Практическое руководство. Создание приемника событий
+  Создав *приемников событий*, можно ответить, когда пользователь взаимодействует с элементами SharePoint, таких как списки и элементы списков. Например, код приемника событий может сработать, если пользователь изменит календарь или удалит имя из списка контактов. Следуя описанным в этом разделе процедурам, можно узнать, как добавить приемник событий в экземпляр списка.  
   
- To complete these steps, you must have installed [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] and supported editions of Windows and SharePoint. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md). Because this example requires a SharePoint project, you also must have completed the procedure in the topic [Walkthrough: Create a Site Column, Content Type, and List for SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).  
+ Для выполнения этих шагов требуется установить [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и иметь поддерживаемые версии Windows и SharePoint. Дополнительные сведения см. в разделе [требования к разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md). Так как в этом примере требуется проект SharePoint, необходимо также выполнить процедуру, описанную в разделе [Пошаговое руководство: Создание столбца сайта, тип содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).  
   
-## <a name="adding-an-event-receiver"></a>Adding an Event Receiver  
- The project that you created in [Walkthrough: Create a Site Column, Content Type, and List for SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) includes custom site columns, a custom list, and a content type. In the following procedure, you'll expand this project by adding a simple event handler (an event receiver) to a list instance to show how to handle events that occur in SharePoint items such as lists.  
+## <a name="adding-an-event-receiver"></a>Добавление приемника событий  
+ Проект, созданный в [Пошаговое руководство: Создание столбца сайта, тип содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) включает пользовательских столбцов сайта, настраиваемого списка и тип содержимого. В следующей процедуре этот проект будет дополнен путем добавления простого обработчика событий (приемника событий) в экземпляр списка, чтобы показать, как обрабатывать события, возникающие в элементах SharePoint, таких как списки.  
   
-#### <a name="to-add-an-event-receiver-to-the-list-instance"></a>To add an event receiver to the list instance  
+#### <a name="to-add-an-event-receiver-to-the-list-instance"></a>Чтобы добавить приемник событий в экземпляр списка  
   
-1.  Open the project that you created in [Walkthrough: Create a Site Column, Content Type, and List for SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).  
+1.  Откройте проект, созданный в [Пошаговое руководство: Создание столбца сайта, тип содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).  
   
-2.  In **Solution Explorer**, choose the SharePoint project node, which is named **Clinic**.  
+2.  В **обозревателе решений**, выберите узел проекта SharePoint, который называется **Clinic**.  
   
-3.  On the menu bar, choose **Project**, **Add New Item**.  
+3.  В строке меню выберите **проекта**, **Добавление нового элемента**.  
   
-4.  Under either **Visual C#** or **Visual Basic**, expand the **SharePoint** node, and then choose the **2010** item.  
+4.  В рамках одного **Visual C#** или **Visual Basic**, разверните **SharePoint** узел, а затем выберите **2010** элемента.  
   
-5.  In the **Templates** pane, choose **Event Receiver**, name it **TestEventReceiver1**, and then choose the **OK** button.  
+5.  В **шаблоны** области, выберите **приемника событий**, назовите его **TestEventReceiver1**и нажмите кнопку **ОК** кнопки.  
   
-     The **SharePoint Customization Wizard** appears.  
+     **Мастер настройки SharePoint** отображается.  
   
-6.  In the **What type of event receiver do you want?** list, choose **List Item Events**.  
+6.  В **какой тип приемника событий??** выберите **события элемента списка**.  
   
-7.  In the **What item should be the event source?** list, choose **Patients (Clinic\Patients)**.  
+7.  В **элемент, который должен быть источником событий?** выберите **Patients (Clinic\Patients)**.  
   
-8.  In the **Handle the following events** list, select the check box next to **An item was added**, and then choose the **Finish** button.  
+8.  В **обрабатывать следующие события** списке, установите флажок рядом с **добавлен элемент**и нажмите кнопку **Готово** кнопки.  
   
-     The code file for the new event receiver contains a single method that's named `ItemAdded`. In the next step, you'll add code to this method so that every contact will be named Scott Brown by default.  
+     Файл кода для нового приемника событий содержит только один метод с именем `ItemAdded`. На следующем шаге вы добавите код в этот метод, чтобы каждому контакту имя Scott Brown по умолчанию.  
   
-9. Replace the existing `ItemAdded` method with the following code, and then choose the F5 key:  
+9. Замените существующий метод `ItemAdded` на следующий код и нажмите клавишу F5.  
   
-     [!code-csharp[SP_EventReceiver#1](../sharepoint/codesnippet/CSharp/CustomField1/TestEventReceiver1/TestEventReceiver1.cs#1)]   [!code-vb[SP_EventReceiver#1](../sharepoint/codesnippet/VisualBasic/CustomField1_VB/EventReceiver1/EventReceiver1.vb#1)]  
+     [!code-csharp[SP_EventReceiver#1](../sharepoint/codesnippet/CSharp/CustomField1/TestEventReceiver1/TestEventReceiver1.cs#1)]
+     [!code-vb[SP_EventReceiver#1](../sharepoint/codesnippet/VisualBasic/CustomField1_VB/EventReceiver1/EventReceiver1.vb#1)]  
   
-     The code runs, and the SharePoint site appears in the web browser.  
+     Код выполнится, и в веб-браузере откроется сайт SharePoint.  
   
-10. On the QuickLaunch bar, choose the **Patients** link, and then choose the **Add New Item** link.  
+10. На панели быстрого запуска выберите **пациентов** связь, а затем выберите **Добавление нового элемента** ссылку.  
   
-     The entry form for new items opens.  
+     Откроется форма ввода новых элементов.  
   
-11. Enter data in the fields, and then choose the **Save** button.  
+11. Введите данные в полях и нажмите кнопку **Сохранить** кнопки.  
   
-     After you choose the **Save** button, the **Patient Name** column automatically updates to the name Scott Brown.  
+     После выбора **Сохранить** кнопки, **Patient Name** автоматически обновляет столбец с именем Scott Brown.  
   
-## <a name="see-also"></a>See Also  
- [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
+## <a name="see-also"></a>См. также  
+ [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   
   

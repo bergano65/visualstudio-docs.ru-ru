@@ -1,52 +1,54 @@
 ---
-title: "Практическое руководство. Добавление ссылки на выходные данные проекта"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "выходные ссылки на данные проекта [разработка приложений SharePoint в Visual Studio]"
-  - "разработка приложений SharePoint в Visual Studio, расширенные средства создания пакетов"
-  - "разработка приложений SharePoint в Visual Studio, выходные ссылки проекта"
+title: "Как: Добавление ссылки на выходные данные проекта | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- project output references [SharePoint development in Visual Studio]
+- SharePoint development in Visual Studio, project output references
+- SharePoint development in Visual Studio, advanced packaging tools
 ms.assetid: 9d6bc25e-bf0d-4483-a691-2ad7a796fa80
-caps.latest.revision: 15
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: faf46489be0b9a56485fc93c2138a7f6702c4778
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Добавление ссылки на выходные данные проекта
-  Чтобы развернуть сборки проекта, не являющиеся сборками SharePoint \(или файлы .xap в проектах Silverlight\), в SharePoint, добавьте их в качестве выходной ссылки на данные проекта.  
+# <a name="how-to-add-a-project-output-reference"></a>Практическое руководство. Добавление ссылки на выходные данные проекта
+  Чтобы развернуть сборки проекта вне SharePoint (или файлы .xap в проектах Silverlight) для SharePoint, добавьте их в виде ссылки на выходные данные проекта.  
   
- Этот процесс создаст зависимость построения решения между двумя проектами.  Проекты, связанные с выходными ссылками на данные проекта будут построены перед построением и развертыванием проекта SharePoint.  
+ Этот процесс создает зависимость сборки решения в двух проектах. Проекты, связанные с Выходные ссылки проекта построены до построения и развертывания проекта SharePoint.  
   
-### Добавление ссылки на выходные данные проекта  
+### <a name="to-add-a-project-output-reference"></a>Добавление ссылки на выходные данные проекта  
   
-1.  Загрузите решение, содержащее по крайней мере один проект SharePoint и один, не являющийся проектом SharePoint.  
+1.  Загрузите решение, содержащее хотя бы один проект SharePoint и один проект, не являющегося элементом SharePoint.  
   
-2.  В **обозревателе решений** щелкните узел элемента проекта SharePoint.  
+2.  В **обозревателе решений**, выберите элемент в узле проекта SharePoint.  
   
-3.  В окне **Свойства** выберите свойство **Выходные ссылки на данные проекта** и нажмите кнопку с многоточием \(![Эллипс конструктора ASP.NET для мобильных устройств](~/sharepoint/media/mwellipsis.gif "Эллипс конструктора ASP.NET для мобильных устройств")\) рядом с ним.  
+3.  В **свойства** окна, выберите **Выходные ссылки проекта** свойства, а затем нажмите кнопку с многоточием (![эллипс конструктора ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ASP. Эллипс конструктора Mobile NET")) рядом с ним.  
   
-4.  В диалоговом окне **Выходные ссылки на данные проекта** нажмите кнопку **Добавить**.  
+4.  В **Выходные ссылки проекта** диалогового окна выберите **добавить** кнопки.  
   
-5.  В области свойств диалогового окна нажмите стрелку рядом со свойством **Тип развертывания** и выберите соответствующее значение для элемента, не являющегося элементом SharePoint, на который ссылаетесь, например, **ElementFile**.  
+5.  В панели «Свойства» щелкните стрелку рядом с **тип развертывания** свойства, а затем выберите соответствующее значение для элемента не SharePoint, вы ссылаетесь, таких как **ElementFile**.  
   
-6.  Нажмите стрелку рядом с кнопкой **Имя проекта**, выберите имя элемента не SharePoint проекта, и затем нажмите кнопку **ОК**.  
+6.  Щелкните стрелку рядом с **имя проекта**, выберите имя элемента проекта, не являющегося элементом SharePoint и нажмите кнопку **ОК** кнопки.  
   
-## См. также  
- [Предоставление сведений об упаковке и развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
- [Практическое руководство. Пометка элементов управления как безопасных](../sharepoint/how-to-mark-controls-as-safe-controls.md)   
+## <a name="see-also"></a>См. также  
+ [Предоставление упаковке и сведения о развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
+ [Как: Пометка элементов управления как безопасных элементов управления](../sharepoint/how-to-mark-controls-as-safe-controls.md)   
  [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

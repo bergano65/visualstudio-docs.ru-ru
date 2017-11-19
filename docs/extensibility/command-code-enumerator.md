@@ -1,80 +1,82 @@
 ---
-title: "Перечислитель кода команды | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Перечислитель кода команды"
-  - "Источник подключаемые модули управления, команда кода перечисления"
+title: "Команда перечислитель кода | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- command code enumerator
+- source control plug-ins, command code enumeration
 ms.assetid: 5d2c360c-59e4-4da8-bcb4-dd07c7441e40
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e8404b06e566f8d2efc40742c00d1a857af68261
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Перечислитель кода команды
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Этот перечислитель используется в параметрах [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) и [SccPopulateList](../extensibility/sccpopulatelist-function.md)для указания команды, для которого заданы параметры.  
+# <a name="command-code-enumerator"></a>Перечислитель кода команды
+Этот перечислитель используется в параметрах [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) и [SccPopulateList](../extensibility/sccpopulatelist-function.md)для указания команды, для которого задаются параметры.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 enum SCCCOMMAND {  
-   SCC_COMMAND_GET,  
-   SCC_COMMAND_CHECKOUT,  
-   SCC_COMMAND_CHECKIN,  
-   SCC_COMMAND_UNCHECKOUT,  
-   SCC_COMMAND_ADD,  
-   SCC_COMMAND_REMOVE,  
-   SCC_COMMAND_DIFF,  
-   SCC_COMMAND_HISTORY,  
-   SCC_COMMAND_RENAME,  
-   SCC_COMMAND_PROPERTIES,  
-   SCC_COMMAND_OPTIONS  
+   SCC_COMMAND_GET,  
+   SCC_COMMAND_CHECKOUT,  
+   SCC_COMMAND_CHECKIN,  
+   SCC_COMMAND_UNCHECKOUT,  
+   SCC_COMMAND_ADD,  
+   SCC_COMMAND_REMOVE,  
+   SCC_COMMAND_DIFF,  
+   SCC_COMMAND_HISTORY,  
+   SCC_COMMAND_RENAME,  
+   SCC_COMMAND_PROPERTIES,  
+   SCC_COMMAND_OPTIONS  
 };  
 ```  
   
-## Участники  
- SCC\_COMMAND\_GET  
+## <a name="members"></a>Члены  
+ SCC_COMMAND_GET  
  Соответствует [SccGet](../extensibility/sccget-function.md).  
   
- SCC\_COMMAND\_CHECKOUT  
+ SCC_COMMAND_CHECKOUT  
  Соответствует [SccCheckout](../extensibility/scccheckout-function.md).  
   
- SCC\_COMMAND\_CHECKIN  
+ SCC_COMMAND_CHECKIN  
  Соответствует [SccCheckin](../extensibility/scccheckin-function.md).  
   
- SCC\_COMMAND\_UNCHECKOUT  
+ SCC_COMMAND_UNCHECKOUT  
  Соответствует [SccUncheckout](../extensibility/sccuncheckout-function.md).  
   
- SCC\_COMMAND\_ADD  
+ SCC_COMMAND_ADD  
  Соответствует [SccAdd](../extensibility/sccadd-function.md).  
   
- SCC\_COMMAND\_REMOVE  
+ SCC_COMMAND_REMOVE  
  Соответствует [SccRemove](../extensibility/sccremove-function.md).  
   
- SCC\_COMMAND\_DIFF  
+ SCC_COMMAND_DIFF  
  Соответствует [SccDiff](../extensibility/sccdiff-function.md).  
   
- SCC\_COMMAND\_HISTORY  
+ SCC_COMMAND_HISTORY  
  Соответствует [SccHistory](../extensibility/scchistory-function.md).  
   
- SCC\_COMMAND\_RENAME  
+ SCC_COMMAND_RENAME  
  Соответствует [SccRename](../extensibility/sccrename-function.md).  
   
- SCC\_COMMAND\_PROPERTIES  
+ SCC_COMMAND_PROPERTIES  
  Соответствует [SccProperties](../extensibility/sccproperties-function.md).  
   
- SCC\_COMMAND\_OPTIONS  
+ SCC_COMMAND_OPTIONS  
  Соответствует [SccSetOption](../extensibility/sccsetoption-function.md).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Подключаемые модули управления версиями](../extensibility/source-control-plug-ins.md)   
  [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)   
  [SccPopulateList](../extensibility/sccpopulatelist-function.md)

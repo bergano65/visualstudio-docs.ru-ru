@@ -1,40 +1,36 @@
 ---
-title: "Диалоговое окно &quot;Изменить и продолжить&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.ENC.welcome"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "VB"
-  - "C++"
-helpviewer_keywords: 
-  - "Изменить и продолжить - диалоговое окно"
+title: "Изменить и продолжить-диалоговое | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.ENC.welcome
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords: Edit and Continue dialog box
 ms.assetid: 4390c09c-fc73-4cc3-ab8e-6f07a7d70be2
-caps.latest.revision: 9
-caps.handback.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 04b5bdb609c6c4914e8eb1e5abcd0bd0270946cb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Диалоговое окно &quot;Изменить и продолжить&quot;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-\(Только для машинного кода\). Данное диалоговое окно появляется, если в код были внесены изменения и операция **Изменить и продолжить** определила, что изменения кода могут быть применены.  Дополнительные сведения см. в разделе [Изменить и продолжить](../debugger/edit-and-continue.md).  
+# <a name="edit-and-continue-dialog-box"></a>Изменить и продолжить - диалоговое окно
+(Только машинный код) Оно появляется при изменении кода во время отладки и **изменить и продолжить** распознает, что он может применять изменения кода. Дополнительные сведения см. в разделе [изменить и продолжить](../debugger/edit-and-continue.md).  
   
- **Больше не показывать это окно**  
- Если установить этот флажок, операция **"Изменить и продолжить"** будет в дальнейшем применять изменения кода без запроса разрешения.  Данное предупреждение можно включить снова, если зайти в диалоговое окно **Параметры**, открыть папку **Отладка**, выбрать страницу **Изменить и продолжить**, а затем выбрать **Вызывать командами отладки** и **Запрос**.  
+ **Никогда не показывать это диалоговое окно**  
+ Если этот флажок установлен, **изменить и продолжить** будет применять изменения кода без запроса разрешения в будущем. Можно включить это предупреждение снова перейдите в **параметры** диалоговое окно, открыв **Отладка** папки, щелкнув **изменить и продолжить** , а затем выбрать **Вызов командами отладки** и **запрос**.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Безопасность отладчика](../debugger/debugger-security.md)   
- [Страница "Изменить и продолжить", папка "Отладка", диалоговое окно "Параметры"](../Topic/Edit%20and%20Continue,%20Debugging,%20Options%20Dialog%20Box.md)
+ [Изменить и продолжить, отладка, диалоговое окно «Параметры»](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)

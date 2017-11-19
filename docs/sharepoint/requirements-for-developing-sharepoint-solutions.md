@@ -1,75 +1,77 @@
 ---
-title: "Требования по разработке решений SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "разработка приложений SharePoint в Visual Studio, необходимые компоненты"
-  - "разработка приложений SharePoint в Visual Studio, требования"
+title: "Требования по разработке решений SharePoint | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, prerequisites
+- SharePoint development in Visual Studio, requirements
 ms.assetid: ae8ff69d-4540-4380-ab0b-845f7108e89c
-caps.latest.revision: 40
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 39
+caps.latest.revision: "40"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: a29eee363f3ad886d9ea6a13ee43475fba2e9448
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Требования по разработке решений SharePoint
-  Чтобы использовать средства разработки решений SharePoint, входящие в состав Visual Studio, в системе должны быть установлены следующие компоненты.  
+# <a name="requirements-for-developing-sharepoint-solutions"></a>Требования по разработке решений SharePoint
+  Перед тем как использовать средства разработки решений SharePoint, входящих в Visual Studio, необходимо установить следующие компоненты в системе:  
   
--   [!INCLUDE[vsPro](../sharepoint/includes/vspro-md.md)] или выпуск Visual Studio Application Lifecycle Management \(ALM\).  
+-   [!INCLUDE[vsPro](../sharepoint/includes/vspro-md.md)]или выпуск из Visual Studio Application Lifecycle Management (ALM).  
   
-    -   Компонент [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] или [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] \(или оба\) при установке [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+    -   Либо [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] или [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] функцию (или оба) при установке [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
--   [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] на 64\-разрядной версии [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)] или 64\-разрядной версии [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)] R2.  
+-   [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]установлен в 64-разрядной [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)] или 64-разрядной [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)] R2.  
   
      или  
   
--   [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] на 64\-разрядной версии [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)] или 64\-разрядной версии [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)] R2.  
+-   [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]установлен в 64-разрядной [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)] или 64-разрядной [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)] R2.  
   
 > [!NOTE]  
->  Хотя формально SharePoint поддерживает только серверные операционные системы, две клиентские операционные системы разрешены. [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] и [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] SP1.  Дополнительные сведения в разделе [Руководство по установке станции разработки SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkID=164557).  
+>  Хотя формально SharePoint поддерживает только серверные операционные системы, допускаются две клиентские операционные системы: [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] и [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] с пакетом обновления 1. Дополнительные сведения см. в разделе [установки SharePoint Server 2010 Developer рабочей станции руководство](http://go.microsoft.com/fwlink/?LinkID=164557).  
   
- Для проектов типа модели подключения к бизнес\-данным требуется наличие [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] в системе.  
+ Бизнес-данным (BDC) модели проекта типов требуют [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] установлено в системе.  
   
- Для разработки решений SharePoint в необходимо установить SharePoint на одном компьютере с Visual Studio.  Кроме того, средства разработки SharePoint поддерживают только изолированную конфигурацию; конфигурация фермы не поддерживается.  
+ Для разработки решений SharePoint в Visual Studio, необходимо установить SharePoint на одном компьютере с Visual Studio. Кроме того средства разработки SharePoint поддерживают только изолированную конфигурацию SharePoint; они не поддерживают конфигурации фермы (удаленном).  
   
 > [!NOTE]  
->  Проекты SharePoint в Visual Studio поддерживают только [!INCLUDE[net_v35_long](../sharepoint/includes/net-v35-long-md.md)].  Если для нового проекта SharePoint выбирается [!INCLUDE[net_v40_long](../sharepoint/includes/net-v40-long-md.md)], целевой все равно остается [!INCLUDE[net_v35_long](../sharepoint/includes/net-v35-long-md.md)].  
+>  Проекты SharePoint в Visual Studio поддерживают только [!INCLUDE[net_v35_long](../sharepoint/includes/net-v35-long-md.md)]. При выборе [!INCLUDE[net_v40_long](../sharepoint/includes/net-v40-long-md.md)] для нового проекта SharePoint, будут по-прежнему связаны [!INCLUDE[net_v35_long](../sharepoint/includes/net-v35-long-md.md)].  
   
- Дополнительные сведения об установке [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] см. в разделе [Установка Visual Studio](../Topic/Installing%20Visual%20Studio.md).  
+ Дополнительные сведения об установке [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], в разделе [установите Visual Studio](../install/install-visual-studio.md).  
   
-## Управление учетными записями в Vista и Windows 7  
- В [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] и [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] имеется встроенная функция обеспечения безопасности — управление учетными записями или UAC.  Для разработки решений SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] в системах [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] и [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] UAC требует запуска [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] от имени системного администратора.  На рабочем столе вызовите контекстное меню для [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] и выберите команду **Запуск от имени администратора**.  
+## <a name="vista-and-windows-7-user-account-control-uac"></a>Vista и контроль учетных (записей UAC) в Windows 7  
+ [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)]и [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] встроенная функция безопасности, известный как элемент управления учетных записей пользователей (UAC). Для разработки решений SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] на [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] и [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] системах контроля учетных Записей необходимо запустить [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] системный администратор. На рабочем столе откройте контекстное меню для [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], а затем выберите **Запуск от имени администратора**.  
   
- Можно настроить ярлык на рабочем столе так, чтобы приложение всегда запускалось от имени администратора. Для этого щелкните ярлык правой кнопкой мыши, выберите пункт **Свойства**, нажмите кнопку **Дополнительно** и выберите флажок **Запуск от имени администратора**.  
+ Чтобы настроить ярлыка на рабочем столе, чтобы приложение всегда запускалось от имени администратора, откройте ее контекстное меню, выберите **свойства**, выберите **Дополнительно** и затем выберите **Запуск от имени администратора**  флажок.  
   
- Дополнительные сведения см. в [Контроль учетных записей в Windows Vista: общие сведения и настройка](http://go.microsoft.com/fwlink/?LinkID=156476) и [Windows Vista: контроль учетных записей пользователей](http://go.microsoft.com/fwlink/?LinkId=177523).  
+ Дополнительные сведения см. в разделе [понимание и настройка контроля учетных записей в Windows Vista](http://go.microsoft.com/fwlink/?LinkID=156476). и [контроля учетных записей Windows 7](http://go.microsoft.com/fwlink/?LinkId=177523).  
   
-## Замечания о разрешениях для SharePoint  
- Для разработки решений SharePoint необходимо иметь соответствующие разрешения для их запуска и отладки.  Прежде чем тестировать решение SharePoint, выполните следующие действия, чтобы обеспечить наличие необходимых разрешений.  
+## <a name="sharepoint-permissions-considerations"></a>Разрешения безопасности SharePoint  
+ Для разработки решений SharePoint, необходимо иметь достаточные разрешения на выполнение и отладку решений SharePoint. Перед началом тестирования решения SharePoint, выполните следующие действия, чтобы убедиться, что имеются необходимые разрешения.  
   
-1.  Добавьте свою учетную запись в систему в качестве учетной записи администратора.  
+1.  Добавление учетной записи пользователя с правами администратора в системе.  
   
-2.  Добавьте свою учетную запись на сервер SharePoint в качестве учетной записи администратора фермы.  
+2.  Добавление учетной записи пользователя как администратора фермы на сервере SharePoint.  
   
-    1.  В центре администрирования SharePoint щелкните ссылку **Управление группой администраторов фермы**.  
+    1.  В центре администрирования SharePoint выберите **управление группой администраторов фермы** ссылку.  
   
-    2.  На странице **Администраторы фермы**, нажмите кнопку **Создать**.  
+    2.  На **Администраторы фермы** выберите **New** кнопки.  
   
-3.  Добавьте свою учетную запись в группу WSS\_ADMIN\_WPG.  
+3.  Добавить вашу учетную запись пользователя в группу WSS_ADMIN_WPG.  
   
-## См. также  
- [Начало работы &#40;разработка решений SharePoint в Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)  
+## <a name="see-also"></a>См. также  
+ [Приступая к работе &#40; Разработка приложений SharePoint в Visual Studio &#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)  
   
   

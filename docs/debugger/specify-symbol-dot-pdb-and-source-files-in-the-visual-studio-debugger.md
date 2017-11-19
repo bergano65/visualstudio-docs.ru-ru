@@ -1,11 +1,10 @@
 ---
-title: Specify symbol (.pdb) and source files in the debugger | Microsoft Docs
+title: "Укажите символов (.pdb) и исходных файлов в отладчике | Документы Microsoft"
 ms.custom: H1Hack27Feb2017
 ms.date: 04/05/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -28,248 +27,232 @@ helpviewer_keywords:
 - pdb files
 - debugger
 ms.assetid: 1105e169-5272-4e7c-b3e7-cda1b7798a6b
-caps.latest.revision: 31
+caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 8355e43e6c8e6142aedbe5dfb325196b01a7a681
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
-
+ms.openlocfilehash: 84dbee96880d651ab17efd1b19dbb2589f87f9f6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Specify symbol (.pdb) and source files in the Visual Studio debugger
-A program database (.pdb) file, also called a symbol file, maps the identifiers that you create in source code for classes, methods, and other code to the identifiers that are used in the compiled executables of your project. The .pdb file also maps the statements in the source code to the execution instructions in the executables. The debugger uses this information to determine two key pieces of information:
+# <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Указание файлов символов (.pdb) и файлов с исходным кодом в отладчике Visual Studio
+PDB-файл программы, также называемый файлом символов, сопоставляет идентификаторы, создаваемые в исходный код для классов, методов и другого кода, идентификаторы, которые используются в скомпилированных исполняемых файлах проекта. PDB-файл также сопоставляет операторы в исходном коде с инструкциями выполнения в исполняемых файлах. Отладчик использует эти сведения для определения ключа следующая информация:
 
-* Name of the source file and line number to be displayed in the Visual Studio IDE
-* Location in the executable to stop at when you set a breakpoint
+* Имя исходного файла и номер строки для отображения в Интегрированной среде разработки Visual Studio
+* Расположение в исполняемом файле, на котором должно останавливаться при задании точки останова
 
-A symbol file also contains the original location of the source files, and optionally, the location of a source server where the source files can be retrieved from.
+Файл символов также содержит исходное расположение исходных файлов и, при необходимости, расположение сервера системы управления версиями, откуда можно извлечь исходные файлы.
   
 > [!TIP]
-> If you want to debug code outside your project source code, such as Windows code or third-party code your project calls, you have to specify the location of the .pdb (and optionally, the source files of the external code) and those files need to exactly match the build of the executables.  
+> Если необходимо выполнить отладку кода за пределами исходного кода проекта, например кода Windows или стороннего кода вызовов проекта, необходимо указать расположение PDB-файл (и, при необходимости, исходных файлов для внешнего кода), и эти файлы должны точно соответствовать сборке t он исполняемые файлы.  
  
-##  <a name="BKMK_Find_symbol___pdb__files"></a> Where does the debugger search for symbol files? 
+##  <a name="BKMK_Find_symbol___pdb__files"></a>Где отладчик поиск файлов символов 
   
-1.  The location that is specified inside the DLL or the executable file.  
+1.  Расположение, указанное в библиотеке DLL или в исполняемом файле.  
   
-     (By default, if you have built a DLL or an executable file on your computer, the linker places the full path and file name of the associated .pdb file inside the DLL or the executable file. The debugger first checks to see if the symbol file exists in the location that is specified inside the DLL or the executable file. This is helpful, because you always have symbols available for code that you have compiled on your computer.)  
+     (По умолчанию, если на компьютере производится сборка библиотеки DLL или исполняемого файла, компоновщик помещает полный путь и имя связанного PDB-файла в библиотеку DLL или в исполняемый файл. Отладчик сначала проверяет, существует ли файл символов в расположении, которое задано в библиотеке DLL или в исполняемом файле. Это полезно, так как на компьютере всегда имеются символы для кода, который был скомпилирован на этом компьютере).  
   
-2.  .pdb files that are present in the same folder as the DLL or executable file.
+2.  PDB-файлы, которые присутствуют в той же папке, в исполняемый файл или DLL.
 
-3. Any locations [specified in the debugger options](#BKMK_Specify_symbol_locations_and_loading_behavior) for symbol files. 
+3. Все расположения, [указан в параметрах отладчика](#BKMK_Specify_symbol_locations_and_loading_behavior) файлов символов. 
   
-    * Any local symbol cache folders.  
+    * Все папки локального кэша символов.  
   
-    * Any network, internet, or local symbol servers and locations that are specified, such as the Microsoft symbol server (if enabled). 
+    * Все сети, Интернета, или серверы символов — локальные и расположений, указанных, таких как сервер символов Майкрософт (если он включен). 
 
 > [!NOTE]
-> Before Visual Studio 2012, when you debugged managed code on a remote device you needed to put the symbol files on the remote machine. Starting with Visual Studio 2012, all symbol files must be located on the local machine or in a location [specified in the debugger options](#BKMK_Specify_symbol_locations_and_loading_behavior).  
+> До Visual Studio 2012 при отладке управляемого кода на удаленном устройстве требовалось размещать файлы символов на удаленном компьютере. Начиная с Visual Studio 2012, все файлы символов должны располагаться на локальном компьютере или в расположении [указан в параметрах отладчика](#BKMK_Specify_symbol_locations_and_loading_behavior).  
   
-##  <a name="BKMK_Why_do_symbol_files_need_to_exactly_match_the_executable_files_"></a> Why do symbol files need to exactly match the executable files?  
-The debugger will load only a .pdb file for an executable file that exactly matches the .pdb file that was created when the executable was built (that is, the .pdb must be the original or a copy of the original .pdb file). Because the compiler is optimized for compilation speed in addition to its main task of creating correct and efficient code, the actual layout of an executable can change even if the code itself has not changed. For more information see [Why does Visual Studio require debugger symbol files to exactly match the binary files that they were built with?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+##  <a name="BKMK_Why_do_symbol_files_need_to_exactly_match_the_executable_files_"></a> Почему файлы символов должны точно соответствовать исполняемым файлам?  
+Отладчик загружает PDB-файл для исполняемого файла, только если он точно соответствует PDB-файлу, который был создан при сборке исполняемого файла (то есть это должен быть либо оригинальный PDB-файл, либо его копия). В дополнение к своей основной задаче — создать правильный и эффективный код, компилятор также стремится обеспечить оптимальную скорость компиляции, вследствие чего фактическая структура исполняемого файла может измениться, даже если сам код не изменяется. Дополнительные сведения см. в статье [Why does Visual Studio require debugger symbol files to exactly match the binary files that they were built with?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
   
-##  <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a> Configure where the debugger looks for symbol files and symbol loading behavior
- When you debug a project in the Visual Studio IDE, the debugger automatically loads symbol files that are located in the project directory. You can specify alternative search paths and symbol servers for Microsoft, Windows, or third-party components in **Tools > Options > Debugging > Symbols**. You can also specify specific modules that you want the debugger to automatically load symbols for. And you can then change these settings manually while you are actively debugging.  
+##  <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a>Настройка, где отладчик ищет файлы символов и поведения загрузки символов
+ При отладке проекта в Интегрированной среде разработки Visual Studio, отладчик автоматически загружает файлы символов, которые находятся в каталоге проекта. Можно указать альтернативные пути поиска и серверы символов Microsoft, Windows или сторонних компонентов в **Сервис > Параметры > Отладка > символы**. Можно также указать определенные модули, для которых отладчик, чтобы автоматически загрузить символы для. Эти параметры можно будет изменить вручную во время выполнения отладки.  
   
-1.  In Visual Studio, open the **Tools > Options > Debugging > Symbols** page.  
+1.  В Visual Studio откройте **Сервис > Параметры > Отладка > символы** страницы.  
   
-     ![Tools &#45; Options &#45; Debugging &#45; Symbols page](../debugger/media/dbg_tools_options_symbols.gif "DBG_Tools_Options_Symbols")  
+     ![Средства &#45; Параметры &#45; Отладка &#45; Страница "символы"](../debugger/media/dbg_tools_options_symbols.gif "DBG_Tools_Options_Symbols")  
   
-2.  Choose the folder ![Tools&#47; Options&#47; Debugging&#47;Symbols  folder icon](../debugger/media/dbg_tools_options_foldersicon.png "DBG_Tools_Options_FoldersIcon") icon. Editable text appears in the **Symbol file (.pdb) locations** box.  
+2.  Выберите папку ![средства &#47; Параметры &#47; Отладка &#47; Значок папки "символы"](../debugger/media/dbg_tools_options_foldersicon.png "DBG_Tools_Options_FoldersIcon") значок. В поле **Места размещения файлов символов (.pdb)** отобразится редактируемый текст.  
   
-3.  Type the URL or directory path of the symbol server or symbol location. Statement completion helps you find the correct format.
+3.  Введите URL-адрес либо путь к каталогу сервера символов или расположения символов. Завершение операторов помогает найти правильный формат.
 
-    You can use **Ctrl + Up** and **Ctrl + Down** to change the loading order for symbol locations. Press **F2** to edit a URL or directory path.
+    Можно использовать **Ctrl + вверх** и **Ctrl + вниз** для изменения порядка загрузки для расположения символов. Нажмите клавишу **F2** для изменения URL-адрес или путь к каталогу.
   
-4.  To improve symbol loading performance type the path a local directory where symbols can be copied by symbol servers in the **Cache symbols in this directory** box a local directory that symbols can be copied to.  
+4.  Чтобы улучшить производительность загрузки символов, в поле **Кэшировать символы в этом каталоге** введите путь к локальному каталогу, в который серверы символов могут копировать символы (локальный каталог, в который можно копировать символы).  
   
     > [!NOTE]
-    >  Do not place your symbol cache in a protected folder (such as the C:\Windows folder or one of its subfolders). Use a read-write folder instead.  
+    >  Не помещайте кэш символов в защищенную папку (такую как папка C:\Windows или одна из ее подпапок). Вместо этого следует использовать папку, для которой разрешены чтение и запись.  
   
-### <a name="specify-symbol-loading-behavior"></a>Specify symbol loading behavior 
+### <a name="specify-symbol-loading-behavior"></a>Указать поведение загрузки символов 
   
-You can specify the files that you want to be loaded automatically from **Symbol file (.pdb) locations** box locations when you start debugging. Symbol files in the project directory are always loaded.  
+Можно указать, какие файлы, находящиеся в расположениях, которые заданы в поле **Места размещения файлов символов (.pdb)** , должны загружаться автоматически при запуске отладки. Файлы символов в каталоге проекта загружаются всегда.  
   
-1.  Choose **All modules, unless excluded** to load all the symbols for all modules except those that you specify when you choose the **Specify excluded modules** link.  
+1.  Выберите **Все модули, кроме исключенных** , чтобы загрузить все символы для всех модулей, кроме тех, что были указаны при выборе ссылки **Укажите исключенные модули** .  
   
-2.  Choose the **Only specified modules** option and then choose **Specify modules** to list the modules that you symbol files that you want loaded automatically. The symbol files for other modules are ignored.  
+2.  Выберите вариант **Только указанные модули** , а затем выберите **Укажите модули** , чтобы перечислить модули, для которых требуется автоматически загружать файлы символов. Файлы символов для других модулей пропускаются.  
   
-### <a name="specify-additional-symbol-options"></a>Specify additional symbol options 
+### <a name="specify-additional-symbol-options"></a>Укажите дополнительные параметры символов 
   
-You can also set the following options on the **Tools > Options > Debugging > General** page:  
+Также можно задать следующие параметры на **Сервис > Параметры > Отладка > Общие** страницы:  
   
-**Load DLL exports (native only)**  
+**Загружать экспортированные DLL (только машинный код)**  
   
-When selected, loads DLL export tables. Symbolic information from DLL export tables can be useful if you are working with Windows messages, Windows procedures (WindowProcs), COM objects, or marshaling, or any DLL for which you do not have symbols. Reading DLL export information involves some overhead. Therefore, this capability is turned off by default.  
+Если выбран этот параметр, загружаются таблицы экспорта библиотеки DLL. Символьные данные из таблиц экспорта библиотеки DLL могут быть полезны при работе с сообщениями Windows, процедурами Windows (WindowProcs), объектами COM, при маршалинге или при работе с любой библиотекой DLL, для которой нет символов. Считывание данных экспорта библиотеки DLL создает дополнительную нагрузку. Поэтому данная возможность по умолчанию отключена.  
   
-To see what symbols are available in the export table of a DLL, use `dumpbin /exports`. Symbols are available for any 32-bit system DLL. By reading the `dumpbin /exports` output, you can see the exact function name, including non-alphanumeric characters. This is useful for setting a breakpoint on a function. Function names from DLL export tables might appear truncated elsewhere in the debugger. The calls are listed in the calling order, with the current function (the most deeply nested) at the top. For more information, see [dumpbin /exports](/cpp/build/reference/dash-exports).  
+Чтобы посмотреть, какие символы доступны в таблице экспорта библиотеки DLL, можно воспользоваться командой `dumpbin /exports`. Символы доступны для любой 32-разрядной системной библиотеки DLL. В выходных данных команды `dumpbin /exports` можно увидеть точное имя функции, включая символы, отличные от буквенно-цифровых. Это полезно при задании точки останова в функции. Имена функций из таблиц экспорта библиотеки DLL могут отображаться в отладчике в сокращенном виде. Вызовы функций перечисляются в том порядке, в котором эти функции вызываются, при этом текущая функция (наиболее глубоко вложенная) располагается наверху. Дополнительные сведения см. в разделе [dumpbin /exports](/cpp/build/reference/dash-exports).  
   
-###  <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a> Use symbol servers to find symbol files not on your local machine  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] can download debugging symbol files from symbol servers that implement the symsrv protocol. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) and the [Debugging Tools for Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) are two tools that can implement symbol servers. You specify the symbol servers to use in the VS **Options** dialog box.  
+###  <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a> Использование серверов символов для поиска файлов символов не на локальном компьютере  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] может загружать отладочные файлы символов с серверов символов, которые реализуют протокол symsrv. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) и [Средства отладки для Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) — два средства, которые могут реализовать функции сервера символов. Используемые серверы символов указываются в диалоговом окне **Параметры** Visual Studio.  
   
- Symbol servers that you might use include:  
+ Возможно использование следующих серверов символов:  
   
- **Microsoft public symbol servers**  
+ **Общедоступные серверы символов Майкрософт**  
   
- To debug a crash that occurs during a call to a system DLL or to a third-party library, you will often need system .pdb files, which contain symbols for Windows DLLs, EXEs, and device drivers. You can obtain these symbols from the Microsoft public sysmbol servers. The Microsoft public symbol servers provide symbols for Windows operating systems, in addition to MDAC, IIS, ISA, and the [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+ При отладке отказов, возникающих при обращении к системной библиотеке DLL или библиотеке стороннего производителя, зачастую требуются системные PDB-файлы, содержащие символьные данные для библиотек DLL, EXE-файлов и драйверов устройств Windows. Эти символы можно получить от общедоступных серверов символов корпорации Майкрософт. Общедоступные серверы символов Майкрософт предоставляют символы для операционных систем Windows, а также для MDAC, IIS, ISA и [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
- To use the Microsoft symbol servers, choose **Options and Settings** on the **Debug** menu and then choose **Symbols**. Select **Microsoft Symbol Servers**.  
+ Для использования серверов символов Майкрософт выберите **Параметры и настройки** в меню **Отладка** и выберите **Символы**. Выберите **Серверы символов Майкрософт**.  
   
- **Symbol servers on an internal network or on your local machine**  
+ **Серверы символов во внутренней сети или на локальном компьютере**  
   
- Your team or company can create symbol servers for your own products and as a cache for symbols from external sources. You might have a symbol server on your own machine. You can enter the location of the symbol servers as a URL or as a path on the **Debugging**/**Symbols** page of the VS **Option Dialog**.  
+ Команда разработчиков или компания может создавать серверы символов для собственных продуктов и поддерживать кэш для символов из внешних источников. Можно иметь сервер символов на собственном компьютере. Расположение серверов символов можно ввести в форме URL-адреса или как путь на странице **Отладка**/**Символы** диалогового окна **диалогового окна Параметры**(Почему Visual Studio требует, чтобы файлы символов отладчика точно соответствовали двоичным файлам, с которыми они были построены?)  
   
- **Third-party symbol servers**  
+ **Сторонние серверы символов**  
   
- Third-party providers of Windows applications and libraries can provide access to symbol server on the internet. You also enter the URL of these symbol servers on the **Debugging**/**Symbols** page,  
+ Сторонние поставщики приложений Windows и библиотек могут предоставить доступ к серверу символов в Интернете. В этом случае также введите URL-адрес этих серверов символов на странице **Отладка**/**Символы** ,  
   
 > [!NOTE]
->  If you use a symbol server other than the Microsoft public symbol servers, make sure that the symbol server and its path are trustworthy. Because symbol files can contain arbitrary executable code, you can become exposed to security threats.  
+>  При использовании сервера символов, отличного от открытых серверов корпорации Майкрософт, следует убедиться в том, что сервер и его путь заслуживают доверия. Поскольку файлы символов могут содержать произвольный исполняемый код, возможно возникновение угроз безопасности.  
   
-###  <a name="BKMK_Find_and_load_symbols_while_debugging"></a> Find and load symbols while debugging  
- At any time that the debugger is in break mode, you can load symbols for a module that was previously excluded by debugger options or that the compiler could not find. You can load symbols from the shortcut menus of the Call Stack, Modules, Locals, Autos, and all Watch windows. If the debugger breaks in code that does not have symbol or source files available, a document window appears. Here you can find information about the missing files and take actions to locate and load them.
+###  <a name="BKMK_Find_and_load_symbols_while_debugging"></a> Поиск и загрузка символов при отладке  
+ В любое время, когда отладчик находится в режиме приостановки выполнения, можно загрузить символы для модуля, который ранее был исключен в параметрах отладчика или который компилятору не удалось найти. Загрузку символов можно производить с помощью контекстных меню окон "Стек вызовов", "Модули", "Локальные", "Видимые" и всех окон контрольных значений. Если отладчик приостанавливает выполнение кода, для которого отсутствуют файлы символов или исходные файлы, появляется окно документа. В нем можно найти сведения об отсутствующих файлах и предпринять действия для их поиска и загрузки.
   
- **Find symbols with the No Symbols Loaded document pages**  
+ **Поиск символов с помощью страниц "Символы не загружены" в окне документа**  
   
- There are a number of ways for the debugger to break into code that does not have symbols available:  
+ Отладчик может прервать выполнение в коде, для которого отсутствуют символы, в результате любого из следующих событий:  
   
-1.  Stepping into code.  
+1.  Выполнение шага с заходом в код.  
   
-2.  Breaking into code from a breakpoint or exception.  
+2.  Приостановка выполнения кода из-за точки останова или исключения.  
   
-3.  Switching to a different thread.  
+3.  Переключение на другой поток.  
   
-4.  Changing the stack frame by double-clicking a frame in the Call Stack window.  
+4.  Изменение кадра стека двойным щелчком по кадру в окне "Стек вызовов".  
   
- When one of these events occurs, the debugger displays the **No Symbols Loaded** page to help you find and load the necessary symbols.  
+ Когда происходит любое из этих событий, отладчик отображает страницу **Символы не загружены** , чтобы помочь найти и загрузить необходимые символы.  
   
- ![No Symbols Loaded page](../debugger/media/dbg_nosymbolsloaded.png "DBG_NoSymbolsLoaded")  
+ ![Страница не загружены символы](../debugger/media/dbg_nosymbolsloaded.png "DBG_NoSymbolsLoaded")  
   
--   To change the search paths, choose an unselected path or choose **New** and enter a new path. Choose **Load** to search the paths again and load the symbol file if it is found.  
+-   Чтобы изменить пути поиска, выберите путь, который не выбран, или выберите **Создать** и введите новый путь. Нажмите **Загрузить** , чтобы повторить поиск в путях и загрузить файл символов, если он будет найден.  
   
--   Choose **Browse and find***executable-name***...** to override any symbol options and retry the search paths. The symbol file is loaded if it is found, or a File Explorer is displayed for you to manually select the symbol file.  
+-   Нажмите **Обзор для поиска***имя исполняемого файла***...** , чтобы переопределить все параметры символов и повторить поиск в выбранных путях. Если файл символов будет найден, он будет загружен, иначе отобразится Проводник, в котором можно вручную выбрать символьный файл.  
   
--   Choose **Change Symbol Settings ...** to display the **Debugging** > **Symbols** page of the VS Options dialog.  
+-   Выберите **изменить параметры символов...**  для отображения **Отладка** > **символы** VS параметры диалогового окна.  
   
--   Choose **view disassembly** to show the disassembly in a new window one time.  
+-   Выберите **просмотреть дизассемблированный код** для однократного отображения дизассемблированного кода в новом окне.  
   
--   To always show the disassembly when the source or symbol files are not found, choose the **Options dialog** link, and select both **Enable address level debugging** and **Show disassembly if source not available**.  
+-   Чтобы дизассемблированный код отображался всегда, когда не удается найти исходные файлы или файлы символов, щелкните ссылку **Диалоговое окно "Параметры"** и установите флажки **Включить отладку на уровне адреса** и **Показывать дизассемблированный код, если исходный код недоступен**.  
   
-     ![Options &#47; Debugging  &#47; General disassembly options](../debugger/media/dbg_options_general_disassembly_checkbox.png "DBG_Options_General_disassembly_checkbox")  
+     ![Параметры &#47; Отладка &#47; Параметры общего дизассемблирования](../debugger/media/dbg_options_general_disassembly_checkbox.png "DBG_Options_General_disassembly_checkbox")  
   
- **Change symbol options from the shortcut menu**  
+ **Изменение параметров символов из контекстного меню**  
   
- While you are in break mode, you can find and load symbols for items that are displayed in the Call Stack, Modules, Locals, Autos, and all Watch windows. Select an item in the window, open the shortcut menu, and choose one of the following options:  
+ В режиме приостановки выполнения можно найти и загрузить символы для элементов, которые отображаются в окнах "Стек вызовов", "Модули", "Локальные", "Видимые" и во всех окнах "Контрольные значения". Выделите элемент в окне, откройте контекстное меню и выберите одну из следующих команд:  
   
-|Option|Description|  
+|Параметр|Описание|  
 |------------|-----------------|  
-|**Load Symbols**|Attempts to load symbols from locations specified on the **Debugging**/**Symbols** page of the **Options** dialog box. If the symbol file cannot be found, File Explorer is launched so that you can specify a new location to search.|  
-|**Symbol Load Information**|Presents information showing the location of a loaded symbol file, or the locations that were searched if the debugger cannot find the file.|  
-|**Symbol Settings...**|Opens the **Debugging**/**Symbols** page of the VS **Options** dialog box.|  
-|**Always Load Automatically**|Adds the symbol file to the list of files that are automatically loaded by the debugger.|  
+|**Загрузить символы**|Пытается загрузить символы из расположений, указанных на **Отладка**/**символы** страница **параметры** диалоговое окно. Если файл символов обнаружить не удается, запускается Проводник, с помощью которого можно указать новое расположение для поиска.|  
+|**Сведения о загрузке символов**|Представляет сведения о расположении загруженного файла символов или о расположениях, в которых производился поиск, если отладчику не удалось найти файл.|  
+|**Параметры символов...**|Открывает **Отладка**/**символы** в Visual Studio **параметры** диалоговое окно.|  
+|**Всегда загружать автоматически**|Добавляет файл символов в список файлов, которые автоматически загружаются отладчиком.|  
   
-###  <a name="BKMK_Set_compiler_options_for_symbol_files"></a> Set compiler options for symbol files  
- When you build your project from the VS IDE and use the standard **Debug** build configuration, the C++ and managed compilers create the appropriate symbols files for your code. You can also set compiler options on the command line to create the symbol files.  
+###  <a name="BKMK_Set_compiler_options_for_symbol_files"></a> Задание параметров компилятора для файлов символов  
+ Если при выполнении сборки проекта из интегрированной среды разработки VS используется стандартная конфигурация сборки **Отладка** , C++ и управляемые компиляторы создают соответствующие файлы символов для кода. Можно также задать параметры компилятора в командной строке для создания файлов символов.  
   
- **C++ options**  
+ **Параметры C++**  
   
- A program database (.pdb) file holds debugging and project state information that allows incremental linking of a Debug configuration of your program. A .pdb file is created when you build with [/ZI or /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) (for C/C++).  
+ Файл базы данных программы (PDB-файл) содержит отладочные данные и сведения о состоянии проекта, позволяющие выполнять инкрементную компоновку отладочной конфигурации программы. PDB-файл создается при сборке с параметрами [/ZI или /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) (для С/С++).  
   
- In [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], the [/Fd](/cpp/build/reference/fd-program-database-file-name) option names the .pdb file created by the compiler. When you create a project in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] using wizards, the **/Fd** option is set to create a .pdb file named *project*.pdb.  
+ В [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]параметр [/Fd](/cpp/build/reference/fd-program-database-file-name) определяет имя PDB-файла, созданного компилятором. При создании проекта в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с использованием мастеров используется параметр **/Fd** с целью создания PDB-файла с именем *project*.pdb.  
   
- If you build your C/C++ application using a makefile, and you specify **/ZI** or **/Zi** without **/Fd**, you end up with two .pdb files:  
+ При сборке приложения, написанного на C/C++, с использованием файла makefile и указанием параметра **/ZI** или **/Zi** без **/Fd**создаются два описанных ниже PDB-файла.  
   
--   VC*x*.pdb, where *x* represents the version of Visual C++, for example VC11.pdb. This file stores all debugging information for the individual OBJ files and resides in the same directory as the project makefile.  
+-   VC*x*.pdb, где *x* представляет версию Visual C++, например VC11.pdb. Этот файл хранит все отладочные данные для отдельных OBJ-файлов и располагается в том же каталоге, что и файл makefile.  
   
--   project.pdb   This file stores all debug information for the.exe file. For C/C++, it resides in the \debug subdirectory.  
+-   project.pdb   Этот файл хранит все отладочные данные для исполняемого файла. Для С/С++ он располагается в подкаталоге \debug.  
   
- Each time it creates an OBJ file, the C/C++ compiler merges debug information into VC*x*.pdb. The inserted information includes type information but does not include symbol information such as function definitions. So even if every source file includes common header files such as \<windows.h>, the typedefs from those headers are stored only once, rather than being in every OBJ file.  
+ Каждый раз, создавая OBJ-файл, компилятор C/C++ добавляет отладочную информацию в файл VC*x*.pdb. Вставляемая информация включает информацию о типах, но не включает символьную информацию, такую как определения функций. Таким образом, даже если файл источника включает общие файлы заголовков, такие как \<windows.h >, определения типов из этих заголовков сохраняются только один раз, а не включаются в каждый OBJ-файл.  
   
- The linker creates project.pdb, which contains debug information for the project's EXE file. The project.pdb file contains full debug information, including function prototypes, not just the type information found in VC*x*.pdb. Both .pdb files allow incremental updates. The linker also embeds the path to the .pdb file in the .exe or .dll file that it creates.  
+ Компоновщик создает файл project.pdb, который содержит отладочные данные для исполняемого файла (EXE-файла) проекта. Файл project.pdb содержит полные отладочные данные, включая прототипы функций, а не только сведения о типах, содержащиеся в VC*x*.pdb. Оба PDB-файла позволяют осуществлять добавочное обновление. Компоновщик также включает путь к PDB-файлу в EXE-файл или DLL, который создает.  
   
- The [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugger uses the path to the .pdb file in the EXE or DLL file to find the project.pdb file. If the debugger cannot find the .pdb file at that location or if the path is invalid (for example, if the project was moved to another computer), the debugger searches the path containing the EXE, the symbol paths specified in the **Options** dialog box (**Debugging** folder, **Symbols** node). The debugger will not load a .pdb file that does not match the executable being debugged. If the debugger cannot find a .pdb file, a **Find Symbols** dialog box appears, which allows you to search for symbols or to add additional locations to the search path.  
+ Отладчик [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] использует путь к PDB-файлу в EXE-файле или в DLL, чтобы найти PDB-файл проекта (project.pdb). Если отладчику не удается найти PDB-файл по этому пути или если путь является недопустимым (например, если проект был перемещен на другой компьютер), отладчик производит поиск в расположении, содержащем исполняемый EXE-файл, а затем в расположениях символов, которые указаны в диалоговом окне **Параметры** (папка**Отладка** , узел **Символы** ). Отладчик не загружает PDB-файл, если тот не соответствует отлаживаемому исполняемому файлу. Если отладчик не может найти PDB-файл, открывается диалоговое окно **Поиск символов** , позволяющее найти символы или добавить дополнительные местоположения в путь поиска.  
   
- **.NET Framework options**  
+ **Параметры платформы .NET Framework**  
   
- A program database (.pdb) file holds debugging and project state information that allows incremental linking of a debug configuration of your program. A .pdb file is created when you build with **/debug**. You can build applications with **/debug:full** or **/debug:pdbonly**. Building with **/debug:full** generates debuggable code. Building with **/debug:pdbonly** generates .pdb files but does not generate the `DebuggableAttribute` that tells the JIT compiler that debug information is available. Use **/debug:pdbonly** if you want to generate .pdb files for a release build that you do not want to be debuggable. For more information, see [/debug (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) or [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
+ Файл базы данных программы (PDB-файл) содержит отладочные данные и сведения о состоянии проекта, позволяющие выполнять инкрементную компоновку отладочной конфигурации программы. PDB-файл создается при выполнении сборки с ключом **/debug**. Можно строить приложения с ключом **/debug: full** или **/debug: pdbonly**. При построении с ключом **/debug:full** создается отлаживаемый код. При построении с ключом **/debug:pdbonly** создаются PDB-файлы, но не создается `DebuggableAttribute` , сообщающий JIT-компилятору о доступности отладочной информации. Ключ **/debug:pdbonly** следует использовать при создании PDB-файла для выпускаемой сборки, которая не подлежит отладке. Дополнительные сведения см. в разделе [/debug (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) или [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
   
- The [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugger uses the path to the .pdb file in the EXE or DLL file to find the project.pdb file. If the debugger cannot find the .pdb file at that location, or if the path is invalid, the debugger searches the path containing the EXE, and then the symbol paths specified in the **Options** dialog box. This path is generally the **Debugging** folder in the **Symbols** node. The debugger will not load a .pdb file that does not match the executable file being debugged. If the debugger cannot find a .pdb file, a **Find Symbols** dialog box appears, which allows you to search for symbols or to add additional locations to the search path.  
+ Отладчик [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] использует путь к PDB-файлу в EXE-файле или в DLL, чтобы найти PDB-файл проекта (project.pdb). Если отладчику не удается найти PDB-файл по этому пути или если путь является недопустимым, отладчик производит поиск в расположении EXE-файла, а затем в расположениях символов, указанных в диалоговом окне **Параметры** . Этот путь обычно является папкой **Отладка** в узле **Символы** . Отладчик не загружает PDB-файл, если тот не соответствует отлаживаемому исполняемому файлу. Если отладчик не может найти PDB-файл, открывается диалоговое окно **Поиск символов** , позволяющее найти символы или добавить дополнительные местоположения в путь поиска.  
   
- **Web applications**  
+ **Веб-приложения**  
   
- The configuration file of your application (Web.config) must be set to debug mode. Debug mode causes ASP.NET to generate symbols for dynamically generated files and enables the debugger to attach to the ASP.NET application. Visual Studio sets this automatically when you start to debug, if you created your project from the Web projects template.  
+ В файле конфигурации данного приложения (Web.config) необходимо установить режим отладки. В режиме отладки ASP.NET создает символы для динамически созданных файлов и включает присоединение отладчика к приложению ASP.NET. Visual Studio устанавливает это автоматически при запуске отладки, если проект был создан из шаблона веб-проектов.  
   
-##  <a name="BKMK_Find_source_files"></a> Find source files  
+##  <a name="BKMK_Find_source_files"></a> Поиск исходных файлов  
   
-###  <a name="BKMK_Where_the_debugger_searches_for_source_files"></a> Where the debugger searches for source files  
- The debugger looks for source files in the following locations:  
+###  <a name="BKMK_Where_the_debugger_searches_for_source_files"></a> Где отладчик ищет исходные файлы  
+ Отладчик ищет исходные файлы в следующих местах.  
   
-1.  Files that are open in the IDE of the Visual Studio instance that launched the debugger.  
+1.  Файлы, открытые в интегрированной среде разработки того экземпляра Visual Studio, который запустил отладчик.  
   
-2.  Files in the solution that is open in the Visual Studio instance.  
+2.  Файлы в решении, открытом в экземпляре Visual Studio.  
   
-3.  Directories that are specified in the **Common Properties**/**Debug Source Files** page in the properties of the solution. (In the **Solution Explorer**, select the solution node, right-click, and select **Properties**. )  
+3.  Каталоги, заданные в **общие свойства**/**исходные файлы отладки** страницы свойств решения. (В **обозревателе решений**выберите узел решения, щелкните его правой кнопкой мыши и выберите **Свойства**. )  
   
-4.  The source information of the .pdb of the module. This can be the location of the source file when the module was built, or it can be a command to a source server.  
+4.  Сведения об исходном коде в PDB-файле модуля. Это может быть расположение исходных файлов на момент сборки модуля или команда для сервера системы управления версиями.  
   
-###  <a name="BKMK_Find_and_load_source_files_with_the_No_Source___No_Symbols_Loaded_pages"></a> Find and load source files with the No Source/No Symbols Loaded pages  
- When the debugger breaks execution at a location where the source file is not available, it will display the **No Source Loaded** or **No Symbols Loaded** pages that can help you find the source file. The **No Symbols Loaded** appears when the debugger cannot find a symbol (.pdb) file for the executable file to complete its search. The No Symbols page provides options to search for the file. If the .pdb is found of after you execute one of the options and the debugger can retrieve the source file using the information in the symbols file, the source is displayed. Otherwise, a **No Source Loaded** page appears that describes the issue. The page displays option links that can perform actions that might resolve the issue.  
+###  <a name="BKMK_Find_and_load_source_files_with_the_No_Source___No_Symbols_Loaded_pages"></a>Поиск и загрузка исходных файлов с помощью страниц символы Source/No не загружены  
+ Когда отладчик приостанавливает выполнение в месте, для которого отсутствует исходный файл, он отображает страницу **Нет исходного кода** или **Символы не загружены** , которая может помочь найти исходный файл. Страница **Символы не загружены** отображается, если отладчику не удалось найти файл символов (.pdb) для исполняемого файла с целью выполнения поиска. Страница "Символы не загружены" предоставляет варианты действий для поиска файла. Если PDB-файл оказывается найден после выполнения одного из этих действий и отладчик может извлечь исходный файл на основании информации в файле символов, отображается исходный код. В противном случае будет открыта страница **Нет исходного кода** с описанием проблемы. На странице отображаются ссылки на действия, которые могут помочь в решении проблемы.  
   
-###  <a name="BKMK_Add_source_file_search_paths_to_a_solution"></a> Add source file search paths to a solution  
- You can specify a network or local directories to search for source files.  
+###  <a name="BKMK_Add_source_file_search_paths_to_a_solution"></a> Добавление путей поиска исходных файлов в решение  
+ Для поиска исходных файлов можно указывать сетевые или локальные каталоги.  
   
-1.  Select the solution in Solution Explorer and then choose **Properties** from the shortcut menu.  
+1.  В Обозревателе решений выберите решение, затем в контекстном меню выберите **Свойства** .  
   
-2.  Under the **Common Properties** node, choose **Debug Source Files**.  
+2.  Разверните узел **Общие свойства** и выберите **Исходные файлы отладки**.  
   
-3.  Click the folder ![Tools&#47; Options&#47; Debugging&#47;Symbols  folder icon](../debugger/media/dbg_tools_options_foldersicon.png "DBG_Tools_Options_FoldersIcon") icon. Editable text appears in the **Directories containing source code** list.  
+3.  Щелкните папку ![средства &#47; Параметры &#47; Отладка &#47; Значок папки "символы"](../debugger/media/dbg_tools_options_foldersicon.png "DBG_Tools_Options_FoldersIcon") значок. Изменяемый текст отображается в списке **Каталоги, содержащие исходный код** .  
   
-4.  Add the path that you want to search.  
+4.  Добавьте путь, по которому требуется вести поиск.  
   
- Note that only the specified directory is searched. You must add entries for any subdirectories that you want to search.  
+ Обратите внимание, что поиск выполняется только в указанном каталоге. Любые подкаталоги, в которых требуется осуществлять поиск, должны быть внесены в список.  
   
-###  <a name="BKMK_Use_source_servers"></a> Use source servers  
- When there is no source code on the local machine or the .pdb file does not match the source code, you can use Source Server to help debug an application. Source Server takes requests for files and returns the actual files. Source Server runs by means of a DLL file named srcsrv.dll. Source Server reads the application's .pdb file, which contains pointers to the source code repository, as well as commands used to retrieve source code from the repository. You can limit what commands are allowed to be executed from the application's .pdb file by listing the allowed commands inside a file named srcsrv.ini, which must be placed in the same directory as srcsrv.dll and devenv.exe.  
+###  <a name="BKMK_Use_source_servers"></a> Использование серверов системы управления версиями  
+ Если исходный код на локальном компьютере отсутствует или PDB-файл не соответствует исходному коду, при отладке приложения может помочь сервер системы управления версиями. Сервер системы управления версиями принимает запросы на файлы и возвращает сами файлы. Сервер системы управления версиями выполняется посредством DLL-файла с именем srcsrv.dll. Сервер системы управления версиями считывает PDB-файл приложения, который содержит указатели на репозиторий исходного кода, а также команды, используемые для получения исходного кода из репозитория. Можно установить, каким командам из PDB-файла приложения разрешено выполняться, составив список разрешенных команд в файле с именем srcsrv.ini, который должен быть помещен в тот же каталог, что и файлы srcsrv.dll и devenv.exe.  
   
 > [!IMPORTANT]
->  Arbitrary commands can be embedded in the application's .pdb file, so make sure you put only the ones you want to execute in the srcsrv.ini file. Any attempt to execute a command not in the srcsvr.ini file will cause a confirmation dialog box to appear. For more information, see [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md). No validation is done on command parameters, so be careful with trusted commands. For example, if you trusted cmd.exe, a malicious user might specify parameters that would make the command dangerous.  
+>  В PDB-файл приложения можно внедрять произвольные команды, поэтому убедитесь, что в него помещены только те, которые требуется выполнить в файле srcsrv.ini. Любая попытка выполнить команду не из файла srcsvr.ini вызовет диалоговое окно подтверждения. Для получения дополнительной информации см. [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Параметры команд не проверяются, поэтому будьте внимательны с доверенными командами. Например, при доверии команде сmd.exe пользователь-злоумышленник может указать параметры, которые сделают команду опасной.  
   
- **To enable the use of a Source Server**  
+ **Включение использования сервера системы управления версиями**  
   
-1.  Ensure that you have complied with the security measures described in the previous section.  
+1.  Убедитесь, что компиляция проведена с учетом мер безопасности, описанных в предыдущем разделе.  
   
-2.  On the **Tools** menu, choose **Options**.  
+2.  В меню **Сервис** выберите пункт **Параметры**.  
   
-     The **Options** dialog box appears.  
+     Откроется диалоговое окно **Параметры** .  
   
-3.  In the **Debugging** node, choose **General**.  
+3.  Разверните узел **Отладка** и выберите пункт **Общие**.  
   
-4.  Select the **Enable source server support** check box.  
+4.  Установите флажок **Включить поддержку сервера системы управления версиями** .  
   
-     ![Enable source server options](../debugger/media/dbg_options_general_enablesrcsrvr_checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")  
+     ![Включить параметры исходного сервера](../debugger/media/dbg_options_general_enablesrcsrvr_checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")  
   
-5.  (Optional) Choose the child options that you want.  
+5.  (Необязательно) Выберите дочерние параметры, которые необходимы.  
   
-     Note that both **Allow source server for partial trust assemblies (Managed only)** and **Always run untrusted source server commands without prompting** can increase the security risks discussed above.  
+     Обратите внимание, что параметры **Разрешить выполнение частично доверенных сборок (только управляемых) на исходном сервере** и **Всегда выполнять ненадежные команды исходного сервера без запроса** могут повысить риски безопасности, описанные выше.  
   
-## <a name="see-also"></a>See Also  
-[Understanding Symbol Files and Visual Studio Symbol Settings](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
+## <a name="see-also"></a>См. также  
+[Основные сведения о файлах символов и параметры символов Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-[.NET Remote Symbol Loading Changes in Visual Studio 2012 and 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)
+[.NET Remote Symbol Loading Changes in Visual Studio 2012 and 2013 (Изменения принципов загрузки удаленных символов .NET в Visual Studio 2012 и 2013)](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)

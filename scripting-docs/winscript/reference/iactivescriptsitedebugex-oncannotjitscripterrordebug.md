@@ -1,29 +1,32 @@
 ---
-title: "IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptSiteDebugEx.OnCanNotJITScriptErrorDebug
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug"
+helpviewer_keywords: IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug
 ms.assetid: 83f81476-bf12-47f2-897d-1d37d21137d4
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e428f12b3d199603ac341a5e069fcc5ce5d36f93
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug
-Уведомляет основное приложение о ошибках во время выполнения скрипта, если диспетчер процесса отладки не находит а так же в отладчике скрипта Time.  
+# <a name="iactivescriptsitedebugexoncannotjitscripterrordebug"></a>IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug
+Сообщает о том, что ведущее приложение о ошибку во время выполнения сценария при процесс отладки Manager не удается найти только раз в отладчик сценариев.  
   
- Для реализации отладчик в основном приложении необходимо обрабатывать [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md).  На основе действию пользователя, основное приложение может либо вложить отладчик и извлечение и возврат запуска отладчика в параметре OnScriptErrorDebug `pfEnterDebugger`.  Необходимо также реализовать этот интерфейс, чтобы получать уведомления об ошибках во время выполнения даже при отсутствии внешние отладчики, которые могут интерпретироваться отростчатым диспетчером отладка.  
+ Чтобы реализовать отладчик на узле, должен обрабатывать [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md). На основании действий пользователя, узел можно подключить отладчик и вернет, или запуск отладчика в OnScriptErrorDebug `pfEnterDebugger` параметра. Также требуется реализовать этот интерфейс, чтобы получать уведомления об ошибке времени выполнения, даже при наличии не внешних отладчиков, которые могут обрабатываться диспетчером отладки процесса.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT OnCanNotJITScriptErrorDebug(  
@@ -32,22 +35,22 @@ HRESULT OnCanNotJITScriptErrorDebug(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pErrorDebug`  
- \[in\] ошибка, произошедшая во время выполнения.  
+ [in] Произошла ошибка во время выполнения.  
   
  `pfCallOnScriptErrorWhenContinuingt`  
- \[out\], следует ли вызывать [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md) если пользователь решает продолжить без отладки.  
+ [out] Следует ли вызывать [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md) Если пользователь решил продолжить без отладки.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
- Необходимо также реализовать этот интерфейс, чтобы получить уведомление.  
+## <a name="remarks"></a>Примечания  
+ Также требуется реализовать этот интерфейс, чтобы получить уведомление.  
   
-## См. также  
- [IActiveScriptSiteDebugEx — интерфейс](../../winscript/reference/iactivescriptsitedebugex-interface.md)
+## <a name="see-also"></a>См. также  
+ [Интерфейс IActiveScriptSiteDebugEx](../../winscript/reference/iactivescriptsitedebugex-interface.md)

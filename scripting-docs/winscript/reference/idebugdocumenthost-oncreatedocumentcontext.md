@@ -1,27 +1,30 @@
 ---
-title: "IDebugDocumentHost::OnCreateDocumentContext | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugDocumentHost::OnCreateDocumentContext | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentHost.OnCreateDocumentContext
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IDebugDocumentHost::OnCreateDocumentContext"
+helpviewer_keywords: IDebugDocumentHost::OnCreateDocumentContext
 ms.assetid: 080c8604-cfd7-484e-a337-15040870e683
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 55598a4191d421d3aea01d27cc7991b70bd6a019
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentHost::OnCreateDocumentContext
-Уведомляет основное приложение о том, что контекст создания нового документа и позволяет основному приложению при необходимости, чтобы вернуть управление неизвестно для нового контекста.  
+# <a name="idebugdocumenthostoncreatedocumentcontext"></a>IDebugDocumentHost::OnCreateDocumentContext
+Уведомляет узел, что новый контекст документа создается и позволяет при необходимости вернуть управление Неизвестный для нового контекста узла.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT OnCreateDocumentContext(  
@@ -29,20 +32,20 @@ HRESULT OnCreateDocumentContext(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppunkOuter`  
- \[out\] объект что элементы управления новый контекст.  
+ [out] Объект, управляющий новый контекст.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
-|`E_NOTIMPL`|Основное приложение не предоставляет управление объект.|  
+|`E_NOTIMPL`|Узел не предоставляет управляющего объекта.|  
   
-## Заметки  
- Этот метод позволяет основному приложению, чтобы добавить новую функциональность в приложение\- aux, контексты документа.  Этот метод может возвращать нулевой **E\_NOTIMPL** или внешний объект, в этом случае вызывающий объект отвечает за создание контекста.  
+## <a name="remarks"></a>Примечания  
+ Этот метод предоставляет узлу возможность добавлять новые функциональные возможности контексты вспомогательный техники документа. Этот метод может возвращать **E_NOTIMPL** или null внешний объект, в котором случае вызывающий объект отвечает за создание контекста.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)

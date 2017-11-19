@@ -1,53 +1,53 @@
 ---
-title: "IDebugField::GetTypeInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugField::GetTypeInfo"
-helpviewer_keywords: 
-  - "Метод IDebugField::GetTypeInfo"
+title: "IDebugField::GetTypeInfo | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugField::GetTypeInfo
+helpviewer_keywords: IDebugField::GetTypeInfo method
 ms.assetid: bb5acfa3-04c3-4088-be84-9ff8926cd16f
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 11b04ce148fbfe8129f62c21da0a0b015ed6e8f3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugField::GetTypeInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Этот метод возвращает тип\-независимое сведения о символе или типа.  
+# <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
+Этот метод возвращает сведения зависят от типов символов или типа.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetTypeInfo(   
-   TYPE_INFO* pTypeInfo  
+```cpp  
+HRESULT GetTypeInfo(   
+   TYPE_INFO* pTypeInfo  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetTypeInfo(  
-   TYPE_INFO[] pTypeInfo  
+   TYPE_INFO[] pTypeInfo  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pTypeInfo`  
- \[out\] возвращает сведения о типе в предоставленный TYPE\_INFO структура.  
+ [out] Возвращает сведения о типе в предоставленном [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) структуры.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Сведения Тип\-независимое enabled мере, например домен приложения, модуль и класс, в котором содержится символ.  
+## <a name="remarks"></a>Примечания  
+ Сведения зависят от типов будет включать, например, домен приложения, модуля и класса, который содержит символ.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
- [TYPE\_INFO](../../../extensibility/debugger/reference/type-info.md)
+ [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)

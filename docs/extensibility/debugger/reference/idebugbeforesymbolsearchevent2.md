@@ -1,46 +1,47 @@
 ---
-title: "IDebugBeforeSymbolSearchEvent2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Интерфейс IDebugBeforeSymbolSearchEvent2"
+title: "IDebugBeforeSymbolSearchEvent2 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugBeforeSymbolSearchEvent2 interface
 ms.assetid: 679fd7b1-765a-41a8-a046-63240c09a499
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9541c7008129f47df93e2e4cf2c3e8248742b0c8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBeforeSymbolSearchEvent2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Отладчик \(DE\) отправляет этот интерфейс для сеанса отладки \(SDM\) диспетчер для задания сообщение строки состояния во время загрузки символов.  
+# <a name="idebugbeforesymbolsearchevent2"></a>IDebugBeforeSymbolSearchEvent2
+Модуль отладки (DE) отправляет этот интерфейс диспетчера сеанса отладки (SDM), чтобы задать состояние панели сообщений во время загрузки символов.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IDebugBeforeSymbolSearchEvent2 : IUnknown  
 ```  
   
-## Примечания по реализации  
- DE реализующий этот интерфейс, когда он должен задать сообщение строки состояния во время загрузки символов.  Этот интерфейс реализуется только обработчиков отладки, которые работают с переводчиков скрипта или его часть.  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) интерфейс должен быть реализован в одном объекте, как этот интерфейс \(SDM использует  **QueryInterface** доступ  **IDebugEvent2** интерфейс\).  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
+ DE реализует этот интерфейс, когда он должен задать панель сообщений о состоянии во время загрузки символов. Этот интерфейс реализуется только отладчики, которые работы, или являются частью интерпретаторов скрипта. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) на один и тот же объект как этот интерфейс должен быть реализован интерфейс (использует SDM **QueryInterface** для доступа к **IDebugEvent2** интерфейс).  
   
-## Замечания для вызывающих объектов  
- DE создает и отправляет этот объект события, когда он должен поместить сообщение строки состояния во время загрузки символов.  Событие отправляется с помощью IDebugEventCallback2 функция обратного вызова, предоставляемая SDM, когда он вложен в отлаживаемом программе.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ DE создает и отправляет этот объект события, когда он должен задать панель сообщений о состоянии во время загрузки символов. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функции обратного вызова, предоставляемой SDM, когда он присоединен к отлаживаемой программы.  
   
-## Методы  
+## <a name="methods"></a>Методы  
  В следующей таблице показаны методы `IDebugBeforeSymbolSearchEvent2`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[GetModuleName](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2-getmodulename.md)|Извлекает имя в настоящее время, отлаживанными модуля.|  
+|------------|-----------------|  
+|[GetModuleName](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2-getmodulename.md)|Возвращает имя модуля, в настоящее время выполняется отладка.|  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: Msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  

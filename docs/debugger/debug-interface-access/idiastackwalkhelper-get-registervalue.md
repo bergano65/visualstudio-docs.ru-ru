@@ -1,51 +1,50 @@
 ---
-title: "IDiaStackWalkHelper::get_registerValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackWalkHelper2::get_registerValue - метод"
+title: "IDiaStackWalkHelper::get_registerValue | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackWalkHelper2::get_registerValue method
 ms.assetid: 46ac5eee-73a3-44a1-8635-6c58ba193cb6
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 35d956b1d246d0a43ae058bb58635117c093602c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackWalkHelper::get_registerValue
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
 Извлекает значение регистра.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT get_registerValue (   
-   DWORD      index,  
-   ULONGLONG* pRetVal  
+```C++  
+HRESULT get_registerValue (   
+   DWORD      index,  
+   ULONGLONG* pRetVal  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `index`  
- \[in\] значение из [Перечисление CV\_HREG\_e](../../debugger/debug-interface-access/cv-hreg-e.md) перечисление, указывающее, регистра для получения значения.  
+ [in] Значение из [перечисление CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) указание которой зарегистрироваться и получить значение из перечисления.  
   
  `pRetVal`  
- \[out\] возвращает текущее значение регистра.  
+ [out] Возвращает текущее значение регистра.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Несмотря на размер `pRetVal` параметр реализация должен хранить только что обычно сохраняет регистр.  Например, регистрация содержит только 8 \(sp2\) самые низкие 8 бит заданного значения.  Это значение к 8 разрядное развернут 64 \(sp2\) возвращаемый из этого метода.  
+## <a name="remarks"></a>Примечания  
+ Несмотря на размер `pRetVal` параметра реализацию следует хранить только регистр обычно содержат. Например 8-битный регистр содержит только младшие 8-битов заданного значения. Это значение 8-разрядного расширяется до 64 бит при возврате из этого метода.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [Перечисление CV\_HREG\_e](../../debugger/debug-interface-access/cv-hreg-e.md)
+ [Перечисление CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md)

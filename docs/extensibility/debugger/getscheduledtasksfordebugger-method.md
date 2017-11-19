@@ -1,43 +1,44 @@
 ---
-title: "Метод GetScheduledTasksForDebugger | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Метод GetScheduledTasksForDebugger, класс TaskScheduler [обработчиков отладки платформы .NET Framework]"
+title: "Метод GetScheduledTasksForDebugger | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: GetScheduledTasksForDebugger method, TaskScheduler class [.NET Framework debug engines]
 ms.assetid: 7c9b4cde-6e4a-4cef-929f-7d02b1da5762
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0f3099cdbcc8c49c7b6cb5064efad240ea32dea4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Метод GetScheduledTasksForDebugger
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Возвращает массив всех запланированных заданий.  
+# <a name="getscheduledtasksfordebugger-method"></a>Метод GetScheduledTasksForDebugger
+Возвращает массив всех запланированных задач.  
   
- **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Пространство имен:**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Сборки:** mscorlib \(в библиотеке mscorlib.dll\)  
+ **Сборка:** mscorlib (в библиотеке mscorlib.dll)  
   
- Так как не удается получить доступ к внутреннему элементу из платформы .NET Framework, следующий синтаксис предоставляется общего промежуточного языка \(CIL\).  
+ Так как не может получить доступ к внутреннему элементу из платформы .NET Framework, синтаксиса предоставляется общего промежуточного языка (CIL).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 .method assembly hidebysig instance class System.Threading.Tasks.Task[] GetScheduledTasksForDebugger() cil managed  
 ```  
   
-## Возвращаемое значение  
- Массив всех запланированных задач. Каждая задача выполняется или завершена.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Массив всех запланированных задач. Каждая задача выполняется, или выполнение было завершено.  
   
-## Заметки  
- Этот метод не является потокобезопасным и не должны использоваться параллельно с других экземпляров <xref:System.Threading.Tasks.TaskScheduler> она должна вызываться из отладчика только в том случае, если отладчик приостановил других потоков.  
+## <a name="remarks"></a>Примечания  
+ Этот метод не является потокобезопасным и не должны использоваться одновременно с другим экземплярам <xref:System.Threading.Tasks.TaskScheduler> его следует вызывать из отладчика, только в том случае, если отладчик приостановил всех остальных потоков.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Класс TaskScheduler](../../extensibility/debugger/taskscheduler-class-internal-members.md)

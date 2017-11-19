@@ -1,132 +1,132 @@
 ---
-title: "BP_LOCATION_TYPE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BP_LOCATION_TYPE"
-helpviewer_keywords: 
-  - "Структура BP_LOCATION_TYPE"
+title: "BP_LOCATION_TYPE | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: BP_LOCATION_TYPE
+helpviewer_keywords: BP_LOCATION_TYPE structure
 ms.assetid: 0248430a-3b61-4809-87a9-e9b6bb7d1130
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 7db6cbd73ba45d05b878648101a7643f21879076
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# BP_LOCATION_TYPE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Указывает тип расположения точки останова для запроса точки останова.  
+# <a name="bplocationtype"></a>BP_LOCATION_TYPE
+Указывает тип местоположения точки останова для запроса точки останова.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-enum enum_BP_LOCATION_TYPE {   
-   BPLT_NONE               = 0x00000000,  
-   BPLT_FILE_LINE          = 0x00010000,  
-   BPLT_FUNC_OFFSET        = 0x00020000,  
-   BPLT_CONTEXT            = 0x00030000,  
-   BPLT_STRING             = 0x00040000,  
-   BPLT_ADDRESS            = 0x00050000,  
-   BPLT_RESOLUTION         = 0x00060000,  
-   BPLT_CODE_FILE_LINE     = BPT_CODE | BPLT_FILE_LINE,  
-   BPLT_CODE_FUNC_OFFSET   = BPT_CODE | BPLT_FUNC_OFFSET,  
-   BPLT_CODE_CONTEXT       = BPT_CODE | BPLT_CONTEXT,  
-   BPLT_CODE_STRING        = BPT_CODE | BPLT_STRING,  
-   BPLT_CODE_ADDRESS       = BPT_CODE | BPLT_ADDRESS ,  
-   BPLT_DATA_STRING        = BPT_DATA | BPLT_STRING,  
-   BPLT_TYPE_MASK          = 0x0000FFFF,  
-   BPLT_LOCATION_TYPE_MASK = 0xFFFF0000  
+```cpp  
+enum enum_BP_LOCATION_TYPE {   
+   BPLT_NONE               = 0x00000000,  
+   BPLT_FILE_LINE          = 0x00010000,  
+   BPLT_FUNC_OFFSET        = 0x00020000,  
+   BPLT_CONTEXT            = 0x00030000,  
+   BPLT_STRING             = 0x00040000,  
+   BPLT_ADDRESS            = 0x00050000,  
+   BPLT_RESOLUTION         = 0x00060000,  
+   BPLT_CODE_FILE_LINE     = BPT_CODE | BPLT_FILE_LINE,  
+   BPLT_CODE_FUNC_OFFSET   = BPT_CODE | BPLT_FUNC_OFFSET,  
+   BPLT_CODE_CONTEXT       = BPT_CODE | BPLT_CONTEXT,  
+   BPLT_CODE_STRING        = BPT_CODE | BPLT_STRING,  
+   BPLT_CODE_ADDRESS       = BPT_CODE | BPLT_ADDRESS ,  
+   BPLT_DATA_STRING        = BPT_DATA | BPLT_STRING,  
+   BPLT_TYPE_MASK          = 0x0000FFFF,  
+   BPLT_LOCATION_TYPE_MASK = 0xFFFF0000  
 };  
 typedef DWORD BP_LOCATION_TYPE;  
 ```  
   
-```c#  
-public enum enum_BP_LOCATION_TYPE {   
-   BPLT_NONE               = 0x00000000,  
-   BPLT_FILE_LINE          = 0x00010000,  
-   BPLT_FUNC_OFFSET        = 0x00020000,  
-   BPLT_CONTEXT            = 0x00030000,  
-   BPLT_STRING             = 0x00040000,  
-   BPLT_ADDRESS            = 0x00050000,  
-   BPLT_RESOLUTION         = 0x00060000,  
-   BPLT_CODE_FILE_LINE     = BPT_CODE | BPLT_FILE_LINE,  
-   BPLT_CODE_FUNC_OFFSET   = BPT_CODE | BPLT_FUNC_OFFSET,  
-   BPLT_CODE_CONTEXT       = BPT_CODE | BPLT_CONTEXT,  
-   BPLT_CODE_STRING        = BPT_CODE | BPLT_STRING,  
-   BPLT_CODE_ADDRESS       = BPT_CODE | BPLT_ADDRESS ,  
-   BPLT_DATA_STRING        = BPT_DATA | BPLT_STRING,  
-   BPLT_TYPE_MASK          = 0x0000FFFF,  
-   BPLT_LOCATION_TYPE_MASK = 0xFFFF0000  
+```csharp  
+public enum enum_BP_LOCATION_TYPE {   
+   BPLT_NONE               = 0x00000000,  
+   BPLT_FILE_LINE          = 0x00010000,  
+   BPLT_FUNC_OFFSET        = 0x00020000,  
+   BPLT_CONTEXT            = 0x00030000,  
+   BPLT_STRING             = 0x00040000,  
+   BPLT_ADDRESS            = 0x00050000,  
+   BPLT_RESOLUTION         = 0x00060000,  
+   BPLT_CODE_FILE_LINE     = BPT_CODE | BPLT_FILE_LINE,  
+   BPLT_CODE_FUNC_OFFSET   = BPT_CODE | BPLT_FUNC_OFFSET,  
+   BPLT_CODE_CONTEXT       = BPT_CODE | BPLT_CONTEXT,  
+   BPLT_CODE_STRING        = BPT_CODE | BPLT_STRING,  
+   BPLT_CODE_ADDRESS       = BPT_CODE | BPLT_ADDRESS ,  
+   BPLT_DATA_STRING        = BPT_DATA | BPLT_STRING,  
+   BPLT_TYPE_MASK          = 0x0000FFFF,  
+   BPLT_LOCATION_TYPE_MASK = 0xFFFF0000  
 };  
 ```  
   
-## Члены  
- BPLT\_NONE  
- Не указывает местоположение точки останова.  
+## <a name="members"></a>Члены  
+ BPLT_NONE  
+ Указывает нет точки останова.  
   
- BPLT\_FILE\_LINE  
- Указывает тип расположения точки останова в виде линии файла.  
+ BPLT_FILE_LINE  
+ Указывает тип расположения точки останова, как строка файла.  
   
- BPLT\_FUNC\_OFFSET  
- Указывает тип расположения точки останова в качестве смещения функций.  
+ BPLT_FUNC_OFFSET  
+ Указывает тип расположения точки останова, как смещение функции.  
   
- BPLT\_CONTEXT  
- Указывает тип расположения точки останова в качестве контекста.  
+ BPLT_CONTEXT  
+ Указывает тип расположения точки останова, как контекст.  
   
- BPLT\_STRING  
+ BPLT_STRING  
  Указывает тип расположения точки останова в виде строки.  
   
- BPLT\_ADDRESS  
- Указывает тип расположения точки останова в качестве адреса.  
+ BPLT_ADDRESS  
+ Указывает тип расположения точки останова, как адрес.  
   
- BPLT\_RESOLUTION  
+ BPLT_RESOLUTION  
  Указывает тип расположения точки останова, как разрешение.  
   
- BPLT\_CODE\_FILE\_LINE  
- Указывает тип расположения точки останова в виде линии исходного кода.  
+ BPLT_CODE_FILE_LINE  
+ Указывает тип расположения точки останова в строке исходного кода.  
   
- BPLT\_CODE\_FUNC\_OFFSET  
- Указывает тип расположения точки останова в качестве смещения функций кода.  
+ BPLT_CODE_FUNC_OFFSET  
+ Указывает тип местоположения точки останова в виде смещения кода функции.  
   
- BPLT\_CODE\_CONTEXT  
- Указывает тип расположения точки останова в качестве контекста кода.  
+ BPLT_CODE_CONTEXT  
+ Указывает тип расположения точки останова, как контекст кода.  
   
- BPLT\_CODE\_STRING  
- Указывает тип расположения точки останова в виде строки кода.  
+ BPLT_CODE_STRING  
+ Указывает тип расположения точки останова, как строка кода.  
   
- BPLT\_CODE\_ADDRESS  
- Указывает тип расположения точки останова, как адрес кода.  
+ BPLT_CODE_ADDRESS  
+ Указывает тип расположения точки останова, как адреса кода.  
   
- BPLT\_DATA\_STRING  
- Указывает тип расположения точки останова в виде строки данных.  
+ BPLT_DATA_STRING  
+ Указывает тип расположения точки останова, как строка данных.  
   
- BPLT\_TYPE\_MASK  
- Указывает битовую маску, так что тип точки останова можно извлечь из значения.  
+ BPLT_TYPE_MASK  
+ Указывает битовую маску, чтобы тип точки останова могут быть извлечены из значения.  
   
- BPLT\_LOCATION\_TYPE\_MASK  
- Указывает битовую маску, так что тип расположения точки останова можно извлечь из значения.  
+ BPLT_LOCATION_TYPE_MASK  
+ Указывает битовую маску, чтобы тип местоположения точки останова могут быть извлечены из значения.  
   
-## Заметки  
- Передается как параметр [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) метод.  
+## <a name="remarks"></a>Примечания  
+ Переданное в качестве параметра для [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) метод.  
   
- Тип расположения точки останова состоит из типа точки останова и тип расположения.  Это означает, что тип расположения точки останова не просто тип точки останова \(например,`BPT_CODE`\) или тип расположения \(например,`BPLT_FILE_LINE`\).  Предопределенные константы для всех, в настоящее время поддерживаемых типов расположения точки останова включены в этом перечислении \(`BPLT_CODE_FILE_LINE` via  `BPLT_DATA_STRING`\).  
+ Тип местоположения точки останова, состоит из тип точки останова и тип расположения. Это означает, что тип местоположения точки останова никогда не является типом точки останова (например, `BPT_CODE`) или тип расположения (например, `BPLT_FILE_LINE`). Предопределенные константы для всех типов расположение точки останова в настоящее время поддерживается включены в перечисление (`BPLT_CODE_FILE_LINE` через `BPLT_DATA_STRING`).  
   
- `BPT_CODE` и `BPT_DATA` являются членами перечисления [BP\_TYPE](../../../extensibility/debugger/reference/bp-type.md).  
+ `BPT_CODE`и `BPT_DATA` являются членами [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) перечисления.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)   
- [BP\_TYPE](../../../extensibility/debugger/reference/bp-type.md)
+ [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)

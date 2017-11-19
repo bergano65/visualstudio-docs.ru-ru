@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptSite::GetDocVersionString | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IActiveScriptSite::GetDocVersionString | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptSite.GetDocVersionString
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptSite_GetDocVersionString"
+helpviewer_keywords: IActiveScriptSite_GetDocVersionString
 ms.assetid: ab3f892d-06d3-4cb5-9ea5-20c4a1e518cd
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b4b009c9eb40b2935a5b1aeca0d551819462bafc
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptSite::GetDocVersionString
-Получает основное приложение\- указанная строка, однозначно определяющее версию текущего документа.  Если связанный документ был изменен вне области скрипта Windows \(как в случае страницы HTML редактируемой в данный момент с блокнотом\), то обработчик скриптов может сохранить и сохранение состоянием принуждая recompile в следующий раз при загрузке скрипт.  
+# <a name="iactivescriptsitegetdocversionstring"></a>IActiveScriptSite::GetDocVersionString
+Извлекает строкой, определяемой узла, который уникально идентифицирует версию текущего документа. Если связанный документ был изменен за пределами области сценариев Windows (как в случае HTML-страницы, редактируемого в блокноте), обработчик скриптов можно сохранить вместе с его сохраненного состояния, принудительная перекомпиляция очередного загрузки скрипта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT GetDocVersionString(  
@@ -29,15 +32,15 @@ HRESULT GetDocVersionString(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pstrVersionString`  
- \[out\] адрес основного приложение\- указанной строки версии документа.  
+ [out] Адрес строки версии определяемого узла документа.  
   
-## Возвращаемое значение  
- Возвращает `S_ОК`, если успешно или `E_NOTIMPL`, если этот метод не поддерживается.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Возвращает `S_OK` в случае успешного выполнения или `E_NOTIMPL` , если этот метод не поддерживается.  
   
-## Заметки  
- Если `E_NOTIMPL` возвращается, то обработчик скриптов предположим, что скрипт в синхронизации с документом.  
+## <a name="remarks"></a>Примечания  
+ Если `E_NOTIMPL` возвращается, обработчик сценариев следует предполагать, что сценарий находится синхронизацию с документом.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

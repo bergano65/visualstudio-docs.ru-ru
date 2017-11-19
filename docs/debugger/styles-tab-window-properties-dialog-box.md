@@ -1,30 +1,30 @@
 ---
-title: "Вкладка &quot;Стили&quot; диалогового окна &quot;Свойства окна&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Диалоговое окно "Свойства окна", вкладка "Стили""
+title: "Вкладка диалогового окна \"Свойства окна\" \"Стили\" | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Window Properties dialog box, Styles Tab
 ms.assetid: 4ac1eae8-d6ce-4f05-98f0-a29065f471d4
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1fadd6043b86a6b73cc5c58be8b5d74558c3affc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Вкладка &quot;Стили&quot; диалогового окна &quot;Свойства окна&quot;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-На вкладке **Стили** отображаются стили, применяемые к выбранному окну.  Для отображения диалогового окна [Свойства окна](../debugger/window-properties-dialog-box.md) переместите фокус в окно [Представление окон](../debugger/windows-view.md).  Выберите любой узел окна в дереве, а затем выберите в меню **Вид** пункт **Свойства**.  
+# <a name="styles-tab-window-properties-dialog-box"></a>Вкладка "Стили" диалогового окна "Свойства окна"
+Используйте **стили** вкладку, чтобы показать стили, примененные к выбранному окну. Для отображения [диалоговое окно "Свойства"](../debugger/window-properties-dialog-box.md), перемещение фокуса к [представление окон](../debugger/windows-view.md) окна. Выберите любой узел окна в дереве, а затем выберите **свойства** из **представление** меню.  
   
- На вкладке **Стили** доступны следующие параметры.  
+ Следующие параметры доступны на **стили** вкладки:  
   
-|Entry|Описание|  
-|-----------|--------------|  
-|**Стили окна**|Сочетание кодов стилей окна и стилей элементов управления, если применимо.|  
+|Ввод|Описание|  
+|-----------|-----------------|  
+|**Стили окна**|Сочетание окна кодов стилей и стилей элементов управления, если применимо.|  
 |**Расширенные стили**|Сочетание кодов расширенных стилей окна.|

@@ -1,141 +1,143 @@
 ---
-title: "GUID и идентификаторы панелей инструментов Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "группы Visual studio"
-  - "панели инструментов"
-  - "панель инструментов Visual studio"
-  - "id"
-  - "toolgar группы"
-  - "панели инструментов окна инструментов"
-  - "Идентификатор GUID"
+title: "Идентификаторы GUID и идентификаторов панелей инструментов Visual Studio | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- visual studio groups
+- toolbars
+- visual studio toolbar
+- id
+- toolgar group
+- tool window toolbar
+- guid
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 787cebc77d0ca3d06fd88be8ab6f42c6bae3ee38
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# GUID и идентификаторы панелей инструментов Visual Studio
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-В этом подразделе перечисляются значения идентификатора GUID и панелей инструментов, включенных в интегрированной среде разработки \(ide\) Visual Studio и групп, которые они содержат.  Эти значения определяются в файлах .vsct, которые устанавливаются как часть пакета SDK для Visual Studio.  Дополнительные сведения см. в разделе [Команды, определенные в интегрированной среде разработки, меню и групп](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
+# <a name="guids-and-ids-of-visual-studio-toolbars"></a>Идентификаторы GUID и идентификаторов панелей инструментов Visual Studio
+В этом разделе перечисляются значения GUID и ID панелей инструментов, которые включены в среде разработки Visual Studio (IDE) и групп они содержат. Эти значения определяются в vsct-файлами, которые устанавливаются как часть пакета SDK для Visual Studio. Дополнительные сведения см. в разделе [IDE-Defined команд, меню и группы](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
   
 > [!NOTE]
->  Большинство панелей инструментов, доступных в Visual Studio не указаны Visual Studio и их значения идентификатора GUID и не являются открытыми.  В этом разделе перечислены только панели инструментов, определенные в файлах пакета SDK .vsct Visual Studio.  
+>  Многие из панели инструментов, доступные в Visual Studio не определены в Visual Studio, а также их GUID и ID значения не являются открытыми. В этом разделе перечислены только панелей инструментов, которые определены в пакет SDK для Visual Studio vsct-файлами.  
   
- Дополнительные сведения о том, как работать с объектами среды разработки, которые определены в файлах .vsct см. в разделе [Расширение меню и команд](../../extensibility/extending-menus-and-commands.md).  
+ Дополнительные сведения о работе с объектами интегрированной среды разработки, которые определены в vsct-файлами см. в разделе [расширение меню и команд](../../extensibility/extending-menus-and-commands.md).  
   
- По умолчанию панель инструментов, предоставляемых средой разработки Visual Studio используют идентификаторы GUID `guidSHLMainMenu`, за исключением случаев, когда указано иное, используя идентификатор GUID: Синтаксис идентификатор.  
+ Панели инструментов по умолчанию, предоставляемые в Интегрированной среде разработки Visual Studio используйте GUID `guidSHLMainMenu`, за исключением случаев, в противном случае значение задано с использованием синтаксиса GUID: ID.  
   
-## Панели инструментов интегрированной среды разработки  
- Следующие панели инструментов, предоставляемых средой разработки Visual Studio.  Панели инструментов могут отображаться путем выбора их на **панели инструментов** подменю  **Сервис** меню.  Панели инструментов в окнах инструментов не включаются в этом разделе.  
+## <a name="ide-toolbars"></a>Панели инструментов интегрированной среды разработки  
+ Следующие панели инструментов, предоставляемых Visual Studio IDE. Панели инструментов могут отображаться, выбирая их в **панели инструментов** подменю **средства** меню. Панели инструментов в окнах инструментов не включаются в этом разделе.  
   
- Только команды могут спустить непосредственно из панелей инструментов.  Чтобы добавить группу, установите его родительский идентификатор GUID и на панели инструментов.  Чтобы добавить кнопку на панели инструментов задайте его родительским элементом в группе на панели инструментов.  
+ Только группы может просматривать непосредственно из панели инструментов. Чтобы добавить группу, присвоено значение родительского GUID и ID на панели инструментов. Чтобы добавить кнопку на панель инструментов, присвоено значение родительской группы на панели инструментов.  
   
-|Панель инструментов|Идентификатор|  
-|-------------------------|-------------------|  
-|Standard|IDM\_VS\_TOOL\_STANDARD|  
-|Построение|IDM\_VS\_TOOL\_BUILD|  
-|Текстовый редактор|IDM\_VS\_TOOL\_TEXTEDITOR|  
-|Отладочная информация|guidVSDebugGroup: IDM\_DEBUG\_TOOLBAR|  
-|Место отладки|guidVSDebugGroup: IDM\_DEBUG\_CONTEXT\_TOOLBAR|  
+|Toolbar|Идентификатор|  
+|-------------|--------|  
+|Стандартный|IDM_VS_TOOL_STANDARD|  
+|Построить|IDM_VS_TOOL_BUILD|  
+|Текстовый редактор|IDM_VS_TOOL_TEXTEDITOR|  
+|Отладка|guidVSDebugGroup:IDM_DEBUG_TOOLBAR|  
+|Место отладки|guidVSDebugGroup:IDM_DEBUG_CONTEXT_TOOLBAR|  
   
-### Специальные панели инструментов  
- Эти панели инструментов определяются средой разработки Visual Studio, однако они служат специализированные функции и не делают группы команд основного приложения.  
+### <a name="special-toolbars"></a>Специальные панели инструментов  
+ Определенные этих панелей инструментов в интегрированной среде разработки Visual Studio, однако они служат специализированных функций и не размещайте группы команд.  
   
-|Панель инструментов|Идентификатор|  
-|-------------------------|-------------------|  
-|Добавьте команда|IDM\_VS\_TOOL\_ADDCOMMAND|  
-|Не определено|IDM\_VS\_TOOL\_UNDEFINED|  
-|Схема XML|IDM\_VS\_TOOL\_SCHEMA|  
-|XML\-данные|IDM\_VS\_TOOL\_DATA|  
+|Toolbar|Идентификатор|  
+|-------------|--------|  
+|Добавление команды|IDM_VS_TOOL_ADDCOMMAND|  
+|Не определено|IDM_VS_TOOL_UNDEFINED|  
+|схема XML|IDM_VS_TOOL_SCHEMA|  
+|XML-данных|IDM_VS_TOOL_DATA|  
   
-## Группы на панелях инструментов интегрированной среды разработки  
- Чтобы добавить кнопку к стандартной панели инструментов задайте одну из следующих групп в качестве его родительским элементом.  Группы упорядочены родительский элемент панели инструментов.  
+## <a name="groups-on-the-ide-toolbars"></a>Группы на панелях инструментов интегрированной среды разработки  
+ Чтобы добавить кнопку на стандартной панели инструментов, установите одно из следующих групп с родительским. Группы с сортировкой по родительской панели инструментов.  
   
-### Группы стандартной панели инструментов  
-  
-|Имя|Идентификатор|  
-|---------|-------------------|  
-|Сохраните открытый\/|IDG\_VS\_TOOLSB\_SAVEOPEN|  
-|Вырезать или копировать|IDG\_VS\_TOOLSB\_CUTCOPY|  
-|Отменить\/повторить|IDG\_VS\_TOOLSB\_UNDOREDO|  
-|Выполнить\/построения|IDG\_VS\_TOOLSB\_RUNBUILD|  
-|Поиск|IDG\_VS\_TOOLSB\_SEARCH|  
-|Окна|IDG\_VS\_TOOLSB\_WINDOWS|  
-|Новые окна|IDG\_VS\_TOOLSB\_NEWWINDOWS|  
-|Загрузка и сохранение|IDG\_VS\_WINDOWUI\_LOADSAVE|  
-|Датчик|IDG\_VS\_TOOLSB\_GAUGE|  
-  
-### Группы панели инструментов построения  
+### <a name="standard-toolbar-groups"></a>Стандартная панель инструментов группы  
   
 |Имя|Идентификатор|  
-|---------|-------------------|  
-|Линейчатая построения|IDG\_VS\_BUILDBAR|  
-|Отмена|IDG\_VS\_BUILD\_CANCEL|  
+|----------|--------|  
+|Сохранение и открытие|IDG_VS_TOOLSB_SAVEOPEN|  
+|Вырезания или копирования|IDG_VS_TOOLSB_CUTCOPY|  
+|Отменить/Повторить|IDG_VS_TOOLSB_UNDOREDO|  
+|Запуск и сборки|IDG_VS_TOOLSB_RUNBUILD|  
+|Поиск|IDG_VS_TOOLSB_SEARCH|  
+|Windows|IDG_VS_TOOLSB_WINDOWS|  
+|Новые окна|IDG_VS_TOOLSB_NEWWINDOWS|  
+|Загрузки и сохранения|IDG_VS_WINDOWUI_LOADSAVE|  
+|Датчик|IDG_VS_TOOLSB_GAUGE|  
   
-### Группы панели инструментов текстового редактора  
-  
-|Имя|Идентификатор|  
-|---------|-------------------|  
-|Выполнение|IDM\_VS\_TOOL\_TEXTEDITOR|  
-|Отступ|IDG\_VS\_EDITTOOLBAR\_INDENT|  
-|Комментарий|IDG\_VS\_EDITTOOLBAR\_COMMENT|  
-|Закладки|IDG\_VS\_EDITTOOLBAR\_TEMPBOOKMARKS|  
-  
-### Группы панели инструментов отладка  
+### <a name="build-toolbar-groups"></a>Построение группы на панели инструментов  
   
 |Имя|Идентификатор|  
-|---------|-------------------|  
-|Выполнение|IDM\_DEBUG\_TOOLBAR|  
-|Отладка по шагам|IDG\_DEBUG\_TOOLBAR\_STEPPING|  
-|Watch|IDG\_DEBUG\_TOOLBAR\_WATCH|  
-|Окна|IDG\_DEBUG\_TOOLBAR\_WINDOWS|  
+|----------|--------|  
+|Панель построения|IDG_VS_BUILDBAR|  
+|Cancel|IDG_VS_BUILD_CANCEL|  
   
-### Группы панели инструментов место отладки  
+### <a name="text-editor-toolbar-groups"></a>Панель инструментов редактора текстов групп  
   
 |Имя|Идентификатор|  
-|---------|-------------------|  
-|Расположение отладка|IDG\_DEBUG\_CONTEXT\_TOOLBAR|  
+|----------|--------|  
+|Завершение|IDM_VS_TOOL_TEXTEDITOR|  
+|Отступ|IDG_VS_EDITTOOLBAR_INDENT|  
+|Комментарий|IDG_VS_EDITTOOLBAR_COMMENT|  
+|Закладки|IDG_VS_EDITTOOLBAR_TEMPBOOKMARKS|  
   
-## На панели инструментов окна инструментов  
- Панели инструментов могут встречаться непосредственно в интегрированную среду разработки или в окне инструментов как **Обозреватель решений**.  Поскольку окна инструментов не определены в файлах .vsct, панели инструментов окна инструментов не указан родительские элементы.  Вместо этого они помещаются в коде.  В следующей таблице показаны панели инструментов, которые отображаются в окне инструментов в интегрированной среде разработки и группы команд, которые они содержат.  
+### <a name="debug-toolbar-groups"></a>Отладка инструментов группы  
+  
+|Имя|Идентификатор|  
+|----------|--------|  
+|Выполнение|IDM_DEBUG_TOOLBAR|  
+|Отладка по шагам|IDG_DEBUG_TOOLBAR_STEPPING|  
+|Контрольное значение|IDG_DEBUG_TOOLBAR_WATCH|  
+|Windows|IDG_DEBUG_TOOLBAR_WINDOWS|  
+  
+### <a name="debug-location-toolbar-groups"></a>Расположение группы инструментов отладки  
+  
+|Имя|Идентификатор|  
+|----------|--------|  
+|Место отладки|IDG_DEBUG_CONTEXT_TOOLBAR|  
+  
+## <a name="tool-window-toolbars"></a>Панели инструментов окна инструментов  
+ Панели инструментов могут появляться непосредственно в Интегрированной среде разработки или в окнах инструментов **обозревателе решений**. Так как окна инструментов не определены в vsct-файлами, панели инструментов окна инструментов не имеют определенных родительских узлов. Вместо этого их следует разместить в коде. Следующая таблица показывает панели инструментов, которые отображаются в окнах инструментов в Интегрированной среде разработки и группы команд, содержащихся в них.  
   
 > [!NOTE]
->  Панели инструментов и группы используют идентификаторы GUID `guidSHLMainMenu`, за исключением случаев, когда указано иное, используя идентификатор GUID: Синтаксис идентификатор.  Идентификатор GUID для панели инструментов, где указано, оно также применяется к группам, опускаются из этой панели инструментов.  
+>  Панели инструментов и группы используйте GUID `guidSHLMainMenu`, за исключением случаев, в противном случае значение задано с использованием синтаксиса GUID: ID. Если для панели инструментов указан идентификатор GUID, это также относится к групп, которые получены из панели инструментов.  
   
-|Окно инструментов|Панель инструментов|Groups|  
-|-----------------------|-------------------------|------------|  
-|Обозреватель решений|IDM\_VS\_TOOL\_PROJWIN|IDG\_VS\_PROJ\_TOOLBAR1..5|  
-|Обозреватель серверов|guid\_SE\_MenuGroup: IDM\_SE\_TOOLBAR\_SERVEREXPLORER|IDG\_SE\_TOOLBAR\_REFRESH|  
-|Свойства|IDM\_VS\_TOOL\_PROPERTIES|IDG\_VS\_PROPERTIES\_SORT<br /><br /> IDG\_VS\_PROPERTIES\_PAGES|  
-|Окно классов|IDM\_VS\_TOOL\_CLASSVIEW|IDG\_VS\_CLASSVIEW\_FOLDERS<br /><br /> IDG\_VS\_CLASSVIEW\_SEARCH<br /><br /> IDG\_VS\_CLASSVIEW\_SETTINGS|  
-|Окно классов|IDM\_VS\_TOOL\_CLASSVIEW\_GO|IDG\_VS\_CLASSVIEW\_SEARCH2|  
-|Обозреватель объектов|IDM\_VS\_TOOL\_OBJBROWSER|IDG\_VS\_OBJBROWSER\_SUBSETS<br /><br /> IDG\_VS\_OBJBROWSER\_SEARCH<br /><br /> IDG\_VS\_OBJBROWSER\_ADDREFERENCE<br /><br /> IDG\_VS\_OBJBROWSER\_BROWSERSETTINGS|  
-|Обозреватель объектов|IDM\_VS\_TOOL\_OBJECT\_BROWSER\_GO|IDG\_VS\_OBJBROWSER\_SEARCH2|  
-|Output|IDM\_VS\_TOOL\_OUTPUTWINDOW|IDG\_VS\_OUTPUTWINDOW\_SELECT<br /><br /> IDG\_VS\_OUTPUTWINDOW\_GOTO<br /><br /> IDG\_VS\_OUTPUTWINDOW\_NEXTPREV<br /><br /> IDG\_VS\_OUTPUTWINDOW\_CLEAR<br /><br /> IDG\_VS\_OUTPUTWINDOW\_WORDWRAP|  
-|Поиск и замена|IDM\_VS\_TOOL\_UNIFIEDFIND|IDG\_VS\_FINDTAB<br /><br /> IDG\_VS\_REPLACETAB|  
-|Результаты поиска 1|IDM\_VS\_TOOL\_FINDRESULTS1|IDG\_VS\_FINDRESULTS1\_GOTO<br /><br /> IDG\_VS\_FINDRESULTS1\_NEXTPREV<br /><br /> IDG\_VS\_FINDRESULTS1\_CLEAR<br /><br /> IDG\_VS\_FINDRESULTS1\_STOPFIND|  
-|Результаты поиска 2|IDM\_VS\_TOOL\_FINDRESULTS2|IDG\_VS\_FINDRESULTS2\_GOTO<br /><br /> IDG\_VS\_FINDRESULTS2\_NEXTPREV<br /><br /> IDG\_VS\_FINDRESULTS2\_CLEAR<br /><br /> IDG\_VS\_FINDRESULTS2\_STOPFIND|  
-|Snippet|IDM\_VS\_TOOL\_SNIPPETMENUS|IDG\_VS\_SNIPPET\_REPL<br /><br /> IDG\_VS\_SNIPPET\_REF<br /><br /> IDG\_VS\_SNIPPET\_PROP|  
-|Закладки|IDM\_VS\_TOOL\_BOOKMARKWIND|IDG\_VS\_BWNEWFOLDER<br /><br /> IDG\_VS\_BWNEXTBM<br /><br /> IDG\_VS\_BWNEXTBMF<br /><br /> IDG\_VS\_BWENABLE<br /><br /> IDG\_VS\_BWDELETE|  
-|Список задач|IDM\_VS\_TOOL\_TASKLIST|IDG\_VS\_TASKLIST\_PROVIDERLIST|  
-|Задачи пользователя|IDM\_VS\_TOOL\_USERTASKS|IDG\_VS\_TASKLIST\_PROVIDERLIST<br /><br /> IDG\_VS\_USERTASKS\_EDIT|  
-|Список ошибок|IDM\_VS\_TOOL\_ERRORLIST|IDG\_VS\_ERRORLIST\_ERRORGROUP<br /><br /> IDG\_VS\_ERRORLIST\_WARNINGGROUP<br /><br /> IDG\_VS\_ERRORLIST\_MESSAGEGROUP|  
-|Обозреватель вызовов|IDM\_VS\_TOOL\_CALLBROWSER1..16|IDG\_VS\_TOOLBAR\_CALLBROWSER1\_ACTIONS<br /><br /> IDG\_VS\_TOOLBAR\_CALLBROWSER1\_TYPE<br /><br /> IDG\_VS\_TOOLBAR\_CALLBROWSER1\_CBSETTINGS|  
-|Точки останова|guidVSDebugGroup: IDM\_BREAKPOINTS\_WINDOW\_TOOLBAR|IDG\_BREAKPOINTS\_WINDOW\_NEW<br /><br /> IDG\_BREAKPOINTS\_WINDOW\_DELETE<br /><br /> IDG\_BREAKPOINTS\_WINDOW\_ALL<br /><br /> IDG\_BREAKPOINTS\_WINDOW\_VIEW<br /><br /> IDG\_BREAKPOINTS\_WINDOW\_EDIT<br /><br /> IDG\_BREAKPOINTS\_WINDOW\_COLUMNS|  
-|Дизассемблированный код|guidVSDebugGroup: IDM\_DISASM\_WINDOW\_TOOLBAR|IDG\_DISASM\_WINDOW\_TOOLBAR|  
-|Память 1\-4|guidVSDebugGroup: IDM\_MEMORY\_WINDOW\_TOOLBAR1… 4|IDG\_MEMORY\_EXPRESSION1..4<br /><br /> IDG\_MEMORY\_COLUMNS1..4|  
-|Процессы|guidVSDebugGroup: IDM\_ATTACHED\_PROCS\_TOOLBAR|IDG\_ATTACHED\_PROCS\_EXECCNTRL IDG\_ATTACHED\_PROCS\_STEPPING<br /><br /> IDG\_ATTACHED\_PROCS\_EXECCNTRL2<br /><br /> IDG\_ATTACHED\_PROCS\_ATTACH<br /><br /> IDG\_ATTACHED\_PROCS\_COLUMNS|  
+|Окно инструментов|Toolbar|Группы|  
+|-----------------|-------------|------------|  
+|обозреватель решений|IDM_VS_TOOL_PROJWIN|IDG_VS_PROJ_TOOLBAR1... 5|  
+|обозревателя серверов|guid_SE_MenuGroup:IDM_SE_TOOLBAR_SERVEREXPLORER|IDG_SE_TOOLBAR_REFRESH|  
+|Свойства|IDM_VS_TOOL_PROPERTIES|IDG_VS_PROPERTIES_SORT<br /><br /> IDG_VS_PROPERTIES_PAGES|  
+|Представление классов|IDM_VS_TOOL_CLASSVIEW|IDG_VS_CLASSVIEW_FOLDERS<br /><br /> IDG_VS_CLASSVIEW_SEARCH<br /><br /> IDG_VS_CLASSVIEW_SETTINGS|  
+|Представление классов|IDM_VS_TOOL_CLASSVIEW_GO|IDG_VS_CLASSVIEW_SEARCH2|  
+|Обозреватель объектов|IDM_VS_TOOL_OBJBROWSER|IDG_VS_OBJBROWSER_SUBSETS<br /><br /> IDG_VS_OBJBROWSER_SEARCH<br /><br /> IDG_VS_OBJBROWSER_ADDREFERENCE<br /><br /> IDG_VS_OBJBROWSER_BROWSERSETTINGS|  
+|Обозреватель объектов|IDM_VS_TOOL_OBJECT_BROWSER_GO|IDG_VS_OBJBROWSER_SEARCH2|  
+|Вывод|IDM_VS_TOOL_OUTPUTWINDOW|IDG_VS_OUTPUTWINDOW_SELECT<br /><br /> IDG_VS_OUTPUTWINDOW_GOTO<br /><br /> IDG_VS_OUTPUTWINDOW_NEXTPREV<br /><br /> IDG_VS_OUTPUTWINDOW_CLEAR<br /><br /> IDG_VS_OUTPUTWINDOW_WORDWRAP|  
+|Поиск и замена|IDM_VS_TOOL_UNIFIEDFIND|IDG_VS_FINDTAB<br /><br /> IDG_VS_REPLACETAB|  
+|Результаты поиска 1|IDM_VS_TOOL_FINDRESULTS1|IDG_VS_FINDRESULTS1_GOTO<br /><br /> IDG_VS_FINDRESULTS1_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS1_CLEAR<br /><br /> IDG_VS_FINDRESULTS1_STOPFIND|  
+|Результаты поиска 2|IDM_VS_TOOL_FINDRESULTS2|IDG_VS_FINDRESULTS2_GOTO<br /><br /> IDG_VS_FINDRESULTS2_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS2_CLEAR<br /><br /> IDG_VS_FINDRESULTS2_STOPFIND|  
+|Фрагмент кода|IDM_VS_TOOL_SNIPPETMENUS|IDG_VS_SNIPPET_REPL<br /><br /> IDG_VS_SNIPPET_REF<br /><br /> IDG_VS_SNIPPET_PROP|  
+|Закладки|IDM_VS_TOOL_BOOKMARKWIND|IDG_VS_BWNEWFOLDER<br /><br /> IDG_VS_BWNEXTBM<br /><br /> IDG_VS_BWNEXTBMF<br /><br /> IDG_VS_BWENABLE<br /><br /> IDG_VS_BWDELETE|  
+|список задач|IDM_VS_TOOL_TASKLIST|IDG_VS_TASKLIST_PROVIDERLIST|  
+|Задачи пользователя|IDM_VS_TOOL_USERTASKS|IDG_VS_TASKLIST_PROVIDERLIST<br /><br /> IDG_VS_USERTASKS_EDIT|  
+|Список ошибок|IDM_VS_TOOL_ERRORLIST|IDG_VS_ERRORLIST_ERRORGROUP<br /><br /> IDG_VS_ERRORLIST_WARNINGGROUP<br /><br /> IDG_VS_ERRORLIST_MESSAGEGROUP|  
+|Обозреватель вызовов|IDM_VS_TOOL_CALLBROWSER1... 16|IDG_VS_TOOLBAR_CALLBROWSER1_ACTIONS<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_TYPE<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_CBSETTINGS|  
+|Точки останова|guidVSDebugGroup:IDM_BREAKPOINTS_WINDOW_TOOLBAR|IDG_BREAKPOINTS_WINDOW_NEW<br /><br /> IDG_BREAKPOINTS_WINDOW_DELETE<br /><br /> IDG_BREAKPOINTS_WINDOW_ALL<br /><br /> IDG_BREAKPOINTS_WINDOW_VIEW<br /><br /> IDG_BREAKPOINTS_WINDOW_EDIT<br /><br /> IDG_BREAKPOINTS_WINDOW_COLUMNS|  
+|Дизассемблированный код|guidVSDebugGroup:IDM_DISASM_WINDOW_TOOLBAR|IDG_DISASM_WINDOW_TOOLBAR|  
+|Память 1-4|guidVSDebugGroup:IDM_MEMORY_WINDOW_TOOLBAR1... 4|IDG_MEMORY_EXPRESSION1... 4<br /><br /> IDG_MEMORY_COLUMNS1... 4|  
+|Процессы|guidVSDebugGroup:IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|  
   
-## См. также  
- [Добавление контроллера меню панели инструментов](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)   
+## <a name="see-also"></a>См. также  
+ [Контроллер меню добавляется на панель инструментов](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)   
  [Добавление панели инструментов в окне инструментов](../../extensibility/adding-a-toolbar-to-a-tool-window.md)   
  [Идентификаторы GUID и идентификаторы меню Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)

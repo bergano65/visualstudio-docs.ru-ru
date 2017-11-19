@@ -1,40 +1,64 @@
 ---
-title: "Практическое руководство. Установка имени потока в управляемом коде | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "отладка [Visual Studio], потоки"
-  - "имена потоков"
-  - "Thread.Name - свойство"
-  - "работа с потоками [Visual Studio], имена"
+title: "Как: Установка имени потока в управляемом коде | Документы Microsoft"
+ms.custom: 
+ms.date: 04/27/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- Thread.Name property
+- threading [Visual Studio], names
+- thread names
+- debugging [Visual Studio], threads
 ms.assetid: c0c4d74a-0314-4b71-81c9-b0b019347ab8
-caps.latest.revision: 28
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 28
+caps.latest.revision: "28"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d793924b0a21bc2752d54b93569ded7a79add7f7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Установка имени потока в управляемом коде
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Именование потоков можно выполнить в любом выпуске Visual Studio.  Именование потоков позволяет отслеживать их в окне **Потоки**.  Так как окно **Потоки** не доступно в выпусках Visual Studio Express, именование потоков в них не имеет практического смысла.  
+# <a name="how-to-set-a-thread-name-in-managed-code"></a>Практическое руководство. Установка имени потока в управляемом коде
+Именование потоков можно выполнить в любом выпуске Visual Studio. Именование потоков позволяет отслеживать их потоков в **потоков** окна.
   
  Чтобы задать имя потока в управляемом коде, используйте свойство <xref:System.Threading.Thread.Name%2A>.  
   
-## Пример  
-  
-```  
+## <a name="example"></a>Пример  
+
+```csharp
+public class Needle
+{
+    // This method will be called when the thread is started.  
+    public void Baz()
+    {
+        Console.WriteLine("Needle Baz is running on another thread");
+    }
+}
+
+public void Main()
+{
+    Console.WriteLine("Thread Simple Sample");
+    Needle oNeedle = new Needle();
+    // Create a Thread object.   
+    System.Threading.Thread oThread = new System.Threading.Thread(oNeedle.Baz);
+    // Set the Thread name to "MyThread".  
+    oThread.Name = "MyThread";
+    // Starting the thread invokes the ThreadStart delegate  
+    oThread.Start();
+}
+```
+
+```VB 
 Public Class Needle  
     ' This method will be called when the thread is started.  
     Sub Baz()  
@@ -47,13 +71,13 @@ Sub Main()
     Dim oNeedle As New Needle()  
    ' Create a Thread object.   
     Dim oThread As New System.Threading.Thread(AddressOf oNeedle.Baz)  
-    ' Set the Thread name to "MainThread".  
-    oThread.Name = "MainThread"  
+    ' Set the Thread name to "MyThread".  
+    oThread.Name = "MyThread"  
     ' Starting the thread invokes the ThreadStart delegate  
     oThread.Start()  
 End Sub  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Отладка многопоточных приложений](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Практическое руководство. Установка имен потока в машинном коде](../debugger/how-to-set-a-thread-name-in-native-code.md)

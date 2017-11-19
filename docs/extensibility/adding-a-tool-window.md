@@ -1,66 +1,68 @@
 ---
-title: "Добавление окна инструментов | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "учебники"
-  - "окна инструментов"
+title: "Добавление окна инструментов | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- tutorials
+- tool windows
 ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
-caps.latest.revision: 52
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 52
+caps.latest.revision: "52"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5f160fb123a52fef7215d4f365ffa28a6cae451e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Добавление окна инструментов
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="adding-a-tool-window"></a>Добавление окна инструментов
 В этом пошаговом руководстве вы узнаете, как создать окно инструментов и интегрировать его в Visual Studio одним из следующих способов:  
   
--   Добавьте элемент управления в окно средства.  
+-   Добавление элемента управления в окне инструментов.  
   
 -   Добавление панели инструментов окна инструментов.  
   
--   Добавление команды на панели инструментов.  
+-   Добавьте команду на панель инструментов.  
   
 -   Реализации этих команд.  
   
--   Задайте положение по умолчанию для окна средства.  
+-   Задайте положение по умолчанию для окна инструментов.  
   
-## Обязательные компоненты  
- Начиная с Visual Studio 2015, не установить пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в установку Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [Установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Предварительные требования  
+ Начиная с Visual Studio 2015, не установить пакет SDK для Visual Studio из центра загрузки Майкрософт. Он включен в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [Установка пакета SDK для Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## Создание окна инструментов  
+## <a name="creating-a-tool-window"></a>Создание окна инструментов  
   
-1.  Создайте проект с именем **FirstToolWin** с помощью шаблона VSIX и добавление шаблона элемента окна пользовательского инструмента с именем **FirstToolWindow**.  
+1.  Создайте проект с именем **FirstToolWin** с помощью шаблона VSIX и добавить шаблон элемента окна пользовательского инструмента с именем **FirstToolWindow**.  
   
     > [!NOTE]
-    >  Дополнительные сведения о создании модуля с окном инструмента см. в разделе [Создание расширения с помощью окна инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).  
+    >  Дополнительные сведения о создании модуля с окном инструментов см. в разделе [создания расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-## Добавление элемента управления в окно средства  
+## <a name="add-a-control-to-the-tool-window"></a>Добавление элемента управления в окне инструментов  
   
-1.  Удалите элемент управления по умолчанию. Откройте FirstToolWindowControl.xaml и удалите **Click Me\!** кнопки.  
+1.  Удаление элемента управления по умолчанию. Откройте FirstToolWindowControl.xaml и удалите **Click Me!** .  
   
-2.  В **элементов**, разверните **все элементы управления WPF** статьи и перетащите **элемент мультимедиа** управления **FirstToolWindowControl** формы. Выберите элемент управления и в **Свойства** окна, имя этого элемента **mediaElement1**.  
+2.  В **элементов**, разверните **всех элементов управления WPF** статьи и перетащите **элемента мультимедиа** управления **FirstToolWindowControl** формы. Выберите элемент управления и в **свойства** окна, имя этого элемента **mediaElement1**.  
   
-## Добавление панели инструментов окна инструментов  
- Добавив на панель инструментов следующим образом, гарантирует его градиенты и цвета, согласованное с оставшейся частью интегрированной среды разработки.  
+## <a name="add-a-toolbar-to-the-tool-window"></a>Добавление панели инструментов окна инструментов  
+ Путем добавления на панель инструментов следующим образом, можно гарантировать его градиенты и цвета согласования с остальной частью интегрированной среды разработки.  
   
-1.  В **обозревателе решений**, откройте FirstToolWindowPackage.vsct. Файл .vsct определяет элементы графического пользовательского интерфейса \(GUI\) в окно средства с помощью XML.  
+1.  В **обозревателе решений**, откройте FirstToolWindowPackage.vsct. Vsct-файл определяет элементы графического пользовательского интерфейса (GUI) в окно инструментов с помощью XML.  
   
-2.  В `<Symbols>` найдите `<GuidSymbol>` узел которого `name` атрибут `guidFirstToolWindowPackageCmdSet`. Добавьте следующие две `<IDSymbol>` элементы в список `<IDSymbol>` элементы на этом узле для определения панели инструментов и группа панели инструментов.  
+2.  В `<Symbols>` найдите `<GuidSymbol>` узел которого `name` атрибут `guidFirstToolWindowPackageCmdSet`. Добавьте следующие два `<IDSymbol>` элементы в список `<IDSymbol>` элементов в этот узел, чтобы определить, панель инструментов и панель инструментов группы.  
   
     ```xml  
     <IDSymbol name="ToolbarID" value="0x1000" />  
     <IDSymbol name="ToolbarGroupID" value="0x1001" />  
     ```  
   
-3.  Непосредственно над `<Buttons>` Создайте `<Menus>` раздел, который имеет следующий вид:  
+3.  Непосредственно над `<Buttons>` создайте `<Menus>` раздел, который выглядит следующим образом:  
   
     ```xml  
     <Menus>  
@@ -74,11 +76,11 @@ caps.handback.revision: 52
     </Menus>  
     ```  
   
-     Существует несколько различных видов меню. Это меню — это панель инструментов в окне инструментов, определяется его `type` атрибута.`guid` И  `id` Параметры составляют полный идентификатор панели инструментов. Как правило `<Parent>` меню является объемлющей группы. Тем не менее панель инструментов определяется как его родительский элемент. Таким образом, используется тот же идентификатор для `<Menu>` и `<Parent>` элементы.`priority` Атрибут является только "0".  
+     Существует несколько разных меню. Это меню — это панель инструментов в окне инструментов, определяется его `type` атрибута. `guid` И `id` параметры составляют полный идентификатор панели инструментов. Как правило `<Parent>` меню является объемлющей группы. Тем не менее панель инструментов определяется как собственным родителем. Таким образом, используется тот же идентификатор для `<Menu>` и `<Parent>` элементы. `priority` Атрибут является только "0".  
   
-4.  Панели инструментов напоминают меню различными способами. Например как возможно группы команд, меню, панелей инструментов может имеется групп. \(Меню группы команд разделяются линиями. На панели инструментов группы не разделены visual разделителей.\)  
+4.  Панели инструментов напоминают меню различными способами. Например так же, как группы команд, возможно, меню, панели инструментов может быть групп. (В меню, группы команд разделяются горизонтальных линий. На панели инструментов группы не разделяются visual разделителей.)  
   
-     Добавить `<Groups>` раздел, содержащий `<Group>` элемента. Определяет группы, идентификатор которого объявлен в `<Symbols>` разделе. Добавить `<Groups>` раздел сразу после `<Menus>` раздел.  
+     Добавить `<Groups>` раздел, содержащий `<Group>` элемента. Определяет группы, идентификатор которого объявлен в `<Symbols>` раздела. Добавить `<Groups>` статьи сразу после `<Menus>` раздела.  
   
     ```xml  
     <Groups>  
@@ -88,19 +90,19 @@ caps.handback.revision: 52
     </Groups>  
     ```  
   
-     Установив родительского GUID и идентификатор GUID и идентификатор панели инструментов, добавьте группу на панель инструментов.  
+     Установив родительского GUID и идентификатор GUID и ID на панели инструментов, добавьте группу на панели инструментов.  
   
-## Добавление команды на панели инструментов  
- Добавление команды на панели инструментов, которая отображается в виде кнопки.  
+## <a name="add-a-command-to-the-toolbar"></a>Добавление команды на панель инструментов  
+ Добавьте команду панели инструментов, которая отображается в виде кнопки.  
   
-1.  В `<Symbols>` статьи, объявите следующие элементы IDSymbol объявления группы сразу после панели инструментов и панели инструментов.  
+1.  В `<Symbols>` статьи, объявите следующие элементы IDSymbol сразу после панель инструментов и панель инструментов группы объявления.  
   
     ```xml  
     <IDSymbol name="cmdidWindowsMedia" value="0x0100" />  
     <IDSymbol name="cmdidWindowsMediaOpen" value="0x132" />  
     ```  
   
-2.  Добавьте элемент Button внутри `<Buttons>` раздел. Этот элемент будет отображаться на панели инструментов в окне инструментов со значком поиска \(с увеличительным стеклом\).  
+2.  Добавьте элемент кнопки внутри `<Buttons>` раздела. Этот элемент будет отображаться на панели инструментов в окне инструментов со значком поиска (с увеличительным стеклом).  
   
     ```xml  
     <Button guid="guidFirstToolWindowPackageCmdSet" id="cmdidWindowsMediaOpen" priority="0x0101" type="Button">  
@@ -115,7 +117,7 @@ caps.handback.revision: 52
   
 3.  Откройте FirstToolWindowCommand.cs и добавьте следующие строки в классе сразу после существующих полей.  
   
-    ```c#  
+    ```csharp  
     public const string guidFirstToolWindowPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file  
     public const uint cmdidWindowsMedia =        0x100;   
     public const int cmdidWindowsMediaOpen = 0x132;  
@@ -124,45 +126,45 @@ caps.handback.revision: 52
   
      В результате команды доступны в коде.  
   
-## Добавьте свойство MediaPlayer FirstToolWindowControl  
- От обработчиков событий для элементов управления панели инструментов код должен иметь доступ к элемента управления Media Player, который является дочерним классом FirstToolWindowControl.  
+## <a name="add-a-mediaplayer-property-to-firsttoolwindowcontrol"></a>Добавить свойство MediaPlayer FirstToolWindowControl  
+ От обработчиков событий для элементов управления панели инструментов код должен иметь доступ к управления проигрыватель, который является дочерним элементом класса FirstToolWindowControl.  
   
- В **обозревателе решений**, щелкните правой кнопкой мыши FirstToolWindowControl.xaml, нажмите кнопку **Просмотр кода**, и добавьте следующий код в класс FirstToolWindowControl.  
+ В **обозревателе решений**, щелкните правой кнопкой мыши FirstToolWindowControl.xaml, нажмите кнопку **Просмотр кода**и добавьте следующий код в класс FirstToolWindowControl.  
   
-```c#  
+```csharp  
 public System.Windows.Controls.MediaElement MediaPlayer  
 {  
     get { return mediaElement1; }  
 }  
 ```  
   
-## Создать окно инструментов и панели инструментов  
- Добавление панели инструментов и команды меню, который вызывает **Открыть файл** диалоговое окно и воспроизведение файла мультимедиа.  
+## <a name="instantiate-the-tool-window-and-toolbar"></a>Создать окно инструментов и панели инструментов  
+ Добавить панель инструментов и команды меню, который вызывает **открыть файл** диалоговое окно и воспроизводит файл мультимедиа.  
   
 1.  Откройте FirstToolWindow.cs и добавьте следующие `using` инструкции.  
   
-    ```c#  
+    ```csharp  
     using System.ComponentModel.Design;  
     using System.Windows.Forms;  
     using Microsoft.VisualStudio.Shell.Interop;   
     ```  
   
-2.  В классе FirstToolWindow Добавьте открытый ссылку на элемент управления FirstToolWindowControl.  
+2.  Внутри класса FirstToolWindow Добавьте открытый ссылку на элемент управления FirstToolWindowControl.  
   
-    ```c#  
+    ```csharp  
     public FirstToolWindowControl control;  
     ```  
   
-3.  В конце конструктора значение этой переменной управления только что созданный элемент управления.  
+3.  В конце конструктора установите для этой переменной элемента управления в только что созданный элемент управления.  
   
-    ```c#  
+    ```csharp  
     control = new FirstToolWindowControl();   
     base.Content = control;  
     ```  
   
-4.  Создать экземпляр панели инструментов в конструктор.  
+4.  Создайте экземпляр инструментов внутри конструктора.  
   
-    ```c#  
+    ```csharp  
     this.ToolBar = new CommandID(new Guid(FirstToolWindowCommand.guidFirstToolWindowPackageCmdSet),   
         FirstToolWindowCommand.ToolbarID);  
     this.ToolBarLocation = (int)VSTWT_LOCATION.VSTWT_TOP;  
@@ -170,7 +172,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
   
 5.  На этом этапе конструктор FirstToolWindow должен выглядеть следующим образом:  
   
-    ```c#  
+    ```csharp  
     public FirstToolWindow() : base(null)  
     {  
         this.Caption = "FirstToolWindow";  
@@ -184,15 +186,15 @@ public System.Windows.Controls.MediaElement MediaPlayer
     }  
     ```  
   
-6.  Добавление команды меню на панели инструментов. В классе FirstToolWindowCommand.cs, добавьте следующий оператор using  
+6.  Добавьте команду меню в панели инструментов. В классе FirstToolWindowCommand.cs, добавьте следующий с помощью инструкции  
   
-    ```c#  
+    ```csharp  
     using System.Windows.Forms;  
     ```  
   
-7.  В классе FirstToolWindowCommand добавьте следующий код в конце метода ShowToolWindow\(\). Команда ButtonHandler будет реализована в следующем разделе.  
+7.  В классе FirstToolWindowCommand добавьте следующий код в конце метода ShowToolWindow(). Команда ButtonHandler будет реализована в следующем разделе.  
   
-    ```c#  
+    ```csharp  
     // Create the handles for the toolbar command.   
     var mcs = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
     var toolbarbtnCmdID = new CommandID(new Guid(FirstToolWindowCommand.guidFirstToolWindowPackageCmdSet),  
@@ -202,19 +204,19 @@ public System.Windows.Controls.MediaElement MediaPlayer
     mcs.AddCommand(menuItem);  
     ```  
   
-#### Реализация команды меню в окне инструментов  
+#### <a name="to-implement-a-menu-command-in-the-tool-window"></a>Реализация команды меню в окне инструментов  
   
-1.  Добавьте в класс FirstToolWindowCommand ButtonHandler метода, который вызывает **Открыть файл** диалогового окна. При выборе файла его воспроизведение файла мультимедиа.  
+1.  Добавьте в класс FirstToolWindowCommand ButtonHandler метода, который вызывает **открыть файл** диалогового окна. При выборе файла его воспроизведение файла мультимедиа.  
   
-2.  В классе FirstToolWindowCommand добавьте закрытый ссылку FirstToolWindow окна, которое создается в методе FindToolWindow\(\).  
+2.  В классе FirstToolWindowCommand добавьте закрытый ссылку FirstToolWindow окна, которое создается в методе FindToolWindow().  
   
-    ```c#  
+    ```csharp  
     private FirstToolWindow window;  
     ```  
   
-3.  Измените метод ShowToolWindow\(\) Настройка окна, определенный выше \(что обработчик команды ButtonHandler может обращаться к элементу управления окна. Ниже приведен полный метод ShowToolWindow\(\).  
+3.  Измените метод ShowToolWindow(), чтобы задать окно, которое определено выше (таким образом, обработчик команд ButtonHandler можно получить доступ к окна элемента управления. Ниже приведен полный метод ShowToolWindow().  
   
-    ```c#  
+    ```csharp  
     private void ShowToolWindow(object sender, EventArgs e)  
     {  
         window = (FirstToolWindow) this.package.FindToolWindow(typeof(FirstToolWindow), 0, true);  
@@ -235,9 +237,9 @@ public System.Windows.Controls.MediaElement MediaPlayer
     }  
     ```  
   
-4.  Добавьте метод ButtonHandler. Он создает OpenFileDialog, пользователь может указать файл мультимедиа, чтобы воспроизвести, и затем воспроизводит выбранного файла.  
+4.  Добавьте метод ButtonHandler. Он создает OpenFileDialog для пользователя указать файл мультимедиа, чтобы воспроизвести, и затем воспроизводит выбранного файла.  
   
-    ```c#  
+    ```csharp  
     private void ButtonHandler(object sender, EventArgs arguments)  
     {  
         OpenFileDialog openFileDialog = new OpenFileDialog();  
@@ -249,33 +251,33 @@ public System.Windows.Controls.MediaElement MediaPlayer
     }  
     ```  
   
-## Задать положение по умолчанию для окна средств  
- Затем укажите расположение по умолчанию в Интегрированной среде разработки для окна средства. Сведения о конфигурации для окна средств — в файле FirstToolWindowPackage.cs.  
+## <a name="set-the-default-position-for-the-tool-window"></a>Задать положение по умолчанию для окна инструментов  
+ Затем укажите расположение по умолчанию в IDE для окна инструментов. Сведения о конфигурации для окна инструментов — в файле FirstToolWindowPackage.cs.  
   
-1.  Найдите в FirstToolWindowPackage.cs, <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> атрибут `FirstToolWindowPackage` класс, который передается конструктору типа FirstToolWindow. Чтобы задать положение по умолчанию, необходимо добавить дополнительные параметры в конструктор, в следующем примере.  
+1.  Найдите в FirstToolWindowPackage.cs, <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> атрибут `FirstToolWindowPackage` класс, который передает тип FirstToolWindow в конструктор. Позволяет указать положение по умолчанию, необходимо добавить дополнительные параметры в конструктор, в следующем примере.  
   
-    ```c#  
+    ```csharp  
     [ProvideToolWindow(typeof(FirstToolWindow),  
         Style = Microsoft.VisualStudio.Shell.VsDockStyle.Tabbed,  
         Window = "3ae79031-e1bc-11d0-8f78-00a0c9110057")]  
     ```  
   
-     Именованные первый параметр является `Style` и имеет значение `Tabbed`, что означает, что окно вкладки в существующем окне. Позицию закрепления определяется `Window` параметр, в данном случае n идентификатор GUID **обозревателе решений**.  
+     Первый именованный параметр — `Style` и имеет значение `Tabbed`, что означает, что окно вкладки в существующее окно. Позиция закрепления задана `Window` параметра, n данном случае GUID **обозревателе решений**.  
   
     > [!NOTE]
     >  Дополнительные сведения о типах окон в Интегрированной среде разработки см. в разделе <xref:EnvDTE.vsWindowType>.  
   
-## Окно инструментов тестирования  
+## <a name="testing-the-tool-window"></a>Тестирование окна инструментов  
   
-1.  Нажмите клавишу F5, чтобы открыть новый экземпляр Visual Studio экспериментальной сборки.  
+1.  Нажмите клавишу F5, чтобы открыть новый экземпляр Visual Studio экспериментальный сборки.  
   
-2.  На **представление** наведите указатель мыши на **Другие окна** и нажмите кнопку **первое окно средства**.  
+2.  На **представление** последовательно выберите пункты **другие окна** и нажмите кнопку **первое окно средства**.  
   
-     В той же позиции, что следует открыть окно инструментов проигрывателя мультимедиа **обозревателе решений**. Если по\-прежнему отображается в той же позиции, что и раньше, Сброс макета окон \(**окна или Сброс макета окон**\).  
+     В окне инструментов media player следует открывать в той же позиции, что **обозревателе решений**. Если он по-прежнему находится в той же позиции, что перед, сброса структуры окон (**окна или восстановить параметры окон**).  
   
-3.  Нажмите кнопку \(он имеет значок поиска\) в окне инструментов. Выберите поддерживаемые аудио или видео файла, например, C:\\windows\\media\\chimes.wav, затем нажмите клавишу **Откройте**.  
+3.  Нажмите кнопку (он имеет значок поиска) в окне инструментов. Выберите поддерживаемые аудио или видео файла, например, C:\windows\media\chimes.wav нажмите клавишу **откройте**.  
   
-     Должен быть слышен звук колокольчика.  
+     Вы должны услышать звук колокольчика.  
   
-## См. также  
- [Команды, меню и панелей инструментов](../extensibility/internals/commands-menus-and-toolbars.md)
+## <a name="see-also"></a>См. также  
+ [Команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md)

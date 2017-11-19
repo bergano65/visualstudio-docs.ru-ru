@@ -1,48 +1,48 @@
 ---
-title: "Функция SccEndBatch | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccEndBatch"
-helpviewer_keywords: 
-  - "Функция SccEndBatch"
+title: "Функция SccEndBatch | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: SccEndBatch
+helpviewer_keywords: SccEndBatch function
 ms.assetid: 100e7833-fe0a-45c0-9fca-3e61fd1165b7
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e45d3ea8fefad30875ee91775412e7dcf40cb28e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Функция SccEndBatch
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Эта функция завершается пакет операций системы управления версиями. Эти пакеты не могут быть вложенными.  
+# <a name="sccendbatch-function"></a>Функция SccEndBatch
+Эта функция завершает пакет операций системы управления версиями. Эти пакеты не могут быть вложенными.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 SCCRTN SccEndBatch(void);  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  Отсутствует.  
   
-## Возвращаемое значение  
- Реализации подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
+## <a name="return-value"></a>Возвращаемое значение  
+ Реализация подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
 |Значение|Описание|  
-|--------------|--------------|  
-|SCC\_OK|Пакет успешно завершения операций.|  
-|SCC\_E\_UNKNOWNERROR|Неспецифическая ошибка.|  
+|-----------|-----------------|  
+|SCC_OK|Пакет успешно подтвердила операций.|  
+|SCC_E_UNKNOWNERROR|Неспецифичную сбоя.|  
   
-## Заметки  
- Пакеты управления источника используются для выполнения одной операции системы управления версиями для нескольких проектов или нескольких контекстов. Пакеты можно использовать во избежание избыточного диалоговые окна работу пользователей во время пакетной операции.[SccBeginBatch](../extensibility/sccbeginbatch-function.md) И `SccEndBatch` функции используются как пара для указания начала и окончания операции. Они не могут быть вложенными.  
+## <a name="remarks"></a>Примечания  
+ Пакеты управления источника используются для выполнения одной операции системы управления версиями в нескольких проектах или несколько контекстов. Пакеты можно использовать для устранения избыточных диалоговые окна из взаимодействие с пользователем во время пакетной операции. [SccBeginBatch](../extensibility/sccbeginbatch-function.md) и `SccEndBatch` функции используются как пара для указания начала и окончания операции. Они не могут быть вложенными.  
   
-## См. также  
- [Функции API подключаемого модуля источника элемента управления](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>См. также  
+ [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)   
  [SccBeginBatch](../extensibility/sccbeginbatch-function.md)

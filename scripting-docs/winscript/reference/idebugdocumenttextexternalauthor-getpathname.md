@@ -1,27 +1,30 @@
 ---
-title: "IDebugDocumentTextExternalAuthor::GetPathName | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugDocumentTextExternalAuthor::GetPathName | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentTextExternalAuthor.GetPathName
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugDocumentTextExternalAuthor::GetPathName"
+helpviewer_keywords: IDebugDocumentTextExternalAuthor::GetPathName
 ms.assetid: 445152a1-9cf8-402e-93d6-3d4bf2b81d17
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 93e5c27422d6b348d8c961d1555bfce07183e9e4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentTextExternalAuthor::GetPathName
-Возвращает полный путь и имя файла документа.  
+# <a name="idebugdocumenttextexternalauthorgetpathname"></a>IDebugDocumentTextExternalAuthor::GetPathName
+Возвращает полный путь и имя документа.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT GetPathName(  
@@ -30,25 +33,25 @@ HRESULT GetPathName(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pbstrLongName`  
- \[out\] строка, содержащая полный путь и имя файла.  
+ [out] Строка, содержащая полный путь и имя файла.  
   
  `pfIsOriginalFile`  
- \[out\] логическое значение, указывающее, является ли путь и имя файла ссылаются на исходный документ.  
+ [out] Логическое значение, указывающее, если путь и имя файла см. в исходном документе.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
-|`E_FAIL`|Исходный файл не удается создать или задать.|  
+|`E_FAIL`|Не удается создать или определить исходный файл.|  
   
-## Заметки  
- Этот метод возвращает полный путь и имя файла документа.  
+## <a name="remarks"></a>Примечания  
+ Этот метод возвращает полный путь и имя документа.  
   
- Если `pfIsOriginalFile` FALSE, то путь и имя файла в `pbstrLongName` ссылаются на вновь созданный временному файлу.  
+ Если `pfIsOriginalFile` имеет значение FALSE, путь и имя файла в `pbstrLongName` ссылается на вновь созданный временный файл.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentTextExternalAuthor](../../winscript/reference/idebugdocumenttextexternalauthor-interface.md)

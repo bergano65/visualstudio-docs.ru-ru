@@ -1,33 +1,35 @@
 ---
-title: "Интерфейсы службы языка прежних версий | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Интерфейс IVsLanguageInfo"
-  - "языковые службы, объекты"
+title: "Интерфейсы службы языка прежних версий | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IVsLanguageInfo interface
+- language services, objects
 ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
-caps.latest.revision: 24
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 925b504d8cba4813631d4f8ba6f7dbd9750f5eae
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Интерфейсы службы языка прежних версий
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Для любого языка программирования может существовать только один экземпляр службы языка одновременно.  Однако одна служба языка может обслуживать несколько редактор.  
+# <a name="legacy-language-service-interfaces"></a>Интерфейсы службы языка прежних версий
+Для любого конкретного языка программирования одновременно может быть только один экземпляр службы языка. Тем не менее одной языковой службы можно использовать более одного редактора.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] не связывает службу языка с одним конкретным редактором.  Поэтому при запросе операции службы языка необходимо указать соответствующий редактор в качестве параметра.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Не связывайте языковую службу с любого конкретного редактора. Таким образом при запросе операции службы языка необходимо определить соответствующий редактор как параметр.  
   
-## Общие интерфейсы, связанные со службами языка  
- Редактор получает путем вызова службы языка <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> на соответствующем VSPackage.  Идентификатор службы \(sid\), передаваемое в этот вызов определяет службу языка запрошено.  
+## <a name="common-interfaces-associated-with-language-services"></a>Общих интерфейсов, связанных с языковой службы  
+ Редактор получает языковой службы, вызывая <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> на соответствующий пакет VSPackage. ИДЕНТИФИКАТОР, переданных в этом вызове службы определяет запрашиваемого языковой службы.  
   
- Можно реализовать интерфейсы службы языка в любом количестве различных базовых классов.  Однако общий подход реализовывать следующие интерфейсы в одном классе.  
+ Для любого количества отдельных классов можно реализовать базовых интерфейсов службы языка. Тем не менее наиболее распространенный подход заключается в том, чтобы реализовать следующие интерфейсы в одном классе:  
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>  
   
@@ -35,22 +37,22 @@ caps.handback.revision: 24
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> \(необязательный параметр\)  
+-   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (необязательно)  
   
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> интерфейс должен быть реализован во всех службах языка.  Он предоставляет сведения о службе языка, например локализованное имя языка расширения имени файла, связанные со службой языка и как получить colorizer.  
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Необходимо реализовать интерфейс на все языковые службы. Он предоставляет сведения о службе языка, например локализованное имя языка, расширения имен файлов, связанных с языковой службы и как извлечь colorizer.  
   
-## Дополнительные интерфейсы службы языка  
- Другие интерфейсы могут быть защищены с этой службой языка.  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] запрашивает отдельный экземпляр этих интерфейсов для каждого экземпляра текстового буфера.  Поэтому необходимо реализовать каждый из этих интерфейсов в собственном объекте.  В следующей таблице перечислены интерфейсы, требующих одного экземпляра для каждого экземпляра текстового буфера.  
+## <a name="additional-language-service-interfaces"></a>Интерфейсы службы дополнительных языков  
+ Другие интерфейсы могут быть предоставлены в службе языка. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]запрашивает отдельный экземпляр эти интерфейсы для каждого экземпляра текстового буфера. Таким образом необходимо реализовать каждый из этих интерфейсов в своем объекте. В следующей таблице показаны интерфейсы, которые может потребоваться один экземпляр каждого экземпляра текстового буфера.  
   
 |Интерфейс|Описание|  
-|---------------|--------------|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Управляет оформления окна, например панель кода раскрывающемся списке.  Можно получить этот интерфейс с помощью <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> метод.  Одно <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> в поле кода.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>|Ключевые слова языка Colorizes и разделители.  Можно получить этот интерфейс с помощью <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> метод.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> вызывается во время рисования.  Избегайте вычислени\-интенсивнейший работы внутри <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> или производительность может снизиться.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>|Предоставляет подсказки параметров IntelliSense.  Когда служба языка распознает символ, указывающий, что данные метода должны отображаться в открытую круглую скобку, она вызывает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> метод, чтобы уведомить представление текста, что служба языка готова указать подсказку сведения о параметрах.  Представление текста, после чего вызывает обратно в службу языка, используя методы <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> интерфейс для получения необходимых сведений указать подсказку.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>|Предоставляет завершение выписки IntelliSense.  Когда служба готова для отображения списка завершения языка, он вызывает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> метод представления текста.  Представление текста, после чего вызывает обратно в службу языка с помощью методов <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> объект.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>|Разрешает для изменения представления текста с помощью обработчика команды.  Класс, в котором реализуется <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> также должен реализовывать интерфейс  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс.  Получает представление текста <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> объект путем запроса  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> объект, который передается в  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> метод.  Должен иметь одно <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> объект для каждого представления.|  
-|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Перехватывает эти пользовательские типы команд в поле кода.  Выход из элемента управления <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> реализация, чтобы обеспечить пользовательские данные завершения и просмотр изменений<br /><br /> Передавать свое <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>объект к представлению текста, вызов  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> .|  
+|---------------|-----------------|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Управляет оформлений окно кода, например раскрывающуюся панель. Этот интерфейс можно получить с помощью <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> метод. Имеется один <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> в окне кода.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>|Окрашивает ключевые слова языка и разделители. Этот интерфейс можно получить с помощью <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> метод. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>вызывается во время рисования. Избежать работы с большим объемом вычислений в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> или производительность может снизиться.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>|Предоставляет подсказки параметров IntelliSense. Если языковая служба распознает символ, которое указывает на данные, метод должен быть отображается, например открывающую скобку, он вызывает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> метод для уведомления текст представление, языковой службы будет готов для отображения всплывающей подсказки Info параметра. Текстовое представление затем выполняет обратный вызов языковой службы, с помощью методов <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> интерфейс, чтобы получить сведения, необходимые для отображения всплывающей подсказки.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>|Предоставляет функции завершения операторов IntelliSense. Если языковая служба готова для отображения списка завершения, он вызывает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> метод представления текста. Текстовое представление затем выполняет обратный вызов языковой службы, с помощью методов <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> объекта.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>|Позволяет изменять представления текста, с помощью обработчика команд. Класс, можно реализовать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> должны также реализовать интерфейс <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс. Возвращает текстовое представление <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> объектов с помощью запроса к <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> объекта, передаваемого в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> метод. Должна быть одна <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> для каждого представления.|  
+|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Перехватывает команд, введенная пользователем в окне кода. Отслеживать выходные данные вашей <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> реализацию, чтобы предоставить сведения о пользовательских завершения и просмотреть изменения<br /><br /> Для передачи вашей <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> объект для представления текста, вызов <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>.|  
   
-## См. также  
- [Разработка службы языка](../../extensibility/internals/developing-a-legacy-language-service.md)   
- [Контрольный список: Создание языковую службу для прежних версий](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
+## <a name="see-also"></a>См. также  
+ [Разработке службы языка для прежних версий](../../extensibility/internals/developing-a-legacy-language-service.md)   
+ [Контрольный список. Создание языковой службы прежних версий](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)

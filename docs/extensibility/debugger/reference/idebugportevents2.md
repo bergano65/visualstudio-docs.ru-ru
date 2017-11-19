@@ -1,59 +1,59 @@
 ---
-title: "IDebugPortEvents2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPortEvents2"
-helpviewer_keywords: 
-  - "Интерфейс IDebugPortEvents2"
+title: "IDebugPortEvents2 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPortEvents2
+helpviewer_keywords: IDebugPortEvents2 interface
 ms.assetid: 2c017094-3ba2-4067-83f9-147df1d96bce
-caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 75e0b83b81c0d0d80b29c6b9ab32826402fcec99
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPortEvents2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Этот интерфейс, уведомляет прослушивателя \(обычно сеанс отладки диспетчер \[SDM\] или обработчик отладки\) и создания и удаления программы на конкретном порте.  Эти сведения могут использоваться для представления в режиме реального времени представление процессов и программ, запущенных на порт.  
+# <a name="idebugportevents2"></a>IDebugPortEvents2
+Этот интерфейс сообщает прослушивателя (обычно сеанса диспетчер отладочной [SDM] или модуля отладки) создания процесса и программ и удаления на определенный порт. Эти сведения можно использовать для представления в режиме реального времени представление процессов и программы, запущенные на порт.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IDebugPortEvents2 : IUnknown  
 ```  
   
-## Примечания по реализации  
- Visual Studio обычно реализует этот интерфейс для получения уведомлений о создании и разрушении программы.  Отладчик может также реализовать данный интерфейс для прослушивания порта для таких событий.  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
+ Visual Studio, как правило, реализует этот интерфейс для получения уведомлений о программе созданием и удалением. Модуль отладки также можно реализовать этот интерфейс для таких событий порт прослушивания.  
   
-## Замечания для вызывающих объектов  
- Все [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) интерфейсы могут запросить  <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> интерфейс.  Then <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.FindConnectionPoint%2A> метод  `IDebugPortEvents2` вызывает  <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> интерфейс, который требуется возвратить  <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> интерфейс.  Наконец, <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> метод  <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> вызывается отправляемых через интерфейс события  [Событие](../../../extensibility/debugger/reference/idebugportevents2-event.md) метод.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Все [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) интерфейсы могут запрашиваться <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> интерфейса. Затем <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.FindConnectionPoint%2A> метод `IDebugPortEvents2` вызывается в <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> интерфейса <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> интерфейса. Наконец <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> метод в <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> интерфейс вызывается для отправки событий через [события](../../../extensibility/debugger/reference/idebugportevents2-event.md) метод.  
   
-## Методы в том порядке Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны метод `IDebugPortEvents2`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[Событие](../../../extensibility/debugger/reference/idebugportevents2-event.md)|Отправляет события, которые описывают создание и разрушение процессов и программ на порт.|  
+|------------|-----------------|  
+|[Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)|Отправляет события, которые описывают создание и уничтожение процессов и программ на порт.|  
   
-## Заметки  
- `IDebugPortEvents2` SDM также используется в процессе отладки программы, которые работают в котором уже отладки.  
+## <a name="remarks"></a>Примечания  
+ `IDebugPortEvents2`также используется SDM для отладки программы, которые запускаются в процессе, который уже отлаживается.  
   
- События порта передаются SDM этим интерфейсом.  
+ Порт события передаются SDM этим интерфейсом.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Базовых интерфейсов](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

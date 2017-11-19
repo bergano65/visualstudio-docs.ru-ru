@@ -1,51 +1,51 @@
 ---
-title: "IDebugClassField::GetEnclosingClass | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugClassField::GetEnclosingClass"
-helpviewer_keywords: 
-  - "Метод IDebugClassField::GetEnclosingClass"
+title: "IDebugClassField::GetEnclosingClass | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugClassField::GetEnclosingClass
+helpviewer_keywords: IDebugClassField::GetEnclosingClass method
 ms.assetid: a0c12e3c-9ea0-4dfb-9e45-8cea18725022
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: fbec5ac48280cf10bc89e73faca0779384bf3549
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugClassField::GetEnclosingClass
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Возвращает класс, ограничивающий данный класс.  
+# <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
+Возвращает класс, который содержит этот класс.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetEnclosingClass(   
-   IDebugClassField** ppClassField  
+```cpp  
+HRESULT GetEnclosingClass(   
+   IDebugClassField** ppClassField  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetEnclosingClass(  
-   out IDebugClassField ppClassField  
+   out IDebugClassField ppClassField  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppClassField`  
- \[out\] возвращает [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) объект, представляющий включающего класса.  Возвращает значение NULL, если включающего класса.  
+ [out] Возвращает [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) объект, представляющий включающий класс. Возвращает значение null, если нет включающего класса.  
   
-## Возвращаемое значение  
- В случае успеха возвращает значение S\_OK; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Если класс, представленный данным [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) объект вложенного класса, после чего  `ppClassField` параметр возвращает  `IDebugClassField` объект, представляющий включающего класса.  Например, если это определение класса.  
+## <a name="remarks"></a>Примечания  
+ Если класс представленный этим [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) объекта является вложенным классом, а затем `ppClassField` параметр возвращает `IDebugClassField` объект, представляющий включающий класс. Например рассмотрим следующее определение класса:  
   
 ```  
 class RootClass {  
@@ -53,7 +53,7 @@ class RootClass {
 };  
 ```  
   
- Вызов `GetEnclosingClass` метод  `IDebugClassField` представления объекта  `NestedClass` возвращает класс  `IDebugClassField` объект, представляющий класс  `RootClass`.  
+ Вызов `GetEnclosingClass` метод `IDebugClassField` , представляющий `NestedClass` возвращает `IDebugClassField` объект, представляющий класс `RootClass`.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

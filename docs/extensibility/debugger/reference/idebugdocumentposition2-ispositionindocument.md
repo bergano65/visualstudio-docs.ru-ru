@@ -1,52 +1,52 @@
 ---
-title: "IDebugDocumentPosition2::IsPositionInDocument | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentPosition2::IsPositionInDocument"
-helpviewer_keywords: 
-  - "IDebugDocumentPosition2::IsPositionInDocument"
+title: "IDebugDocumentPosition2::IsPositionInDocument | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDocumentPosition2::IsPositionInDocument
+helpviewer_keywords: IDebugDocumentPosition2::IsPositionInDocument
 ms.assetid: d5cf57cb-b93b-4e1d-bec9-185f4fe8668d
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: fc2c5d3a9b4d0a59aa85208479f57490c18d3c2c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDocumentPosition2::IsPositionInDocument
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Определяет, если позиция документа содержится в заданном документе.  
+# <a name="idebugdocumentposition2ispositionindocument"></a>IDebugDocumentPosition2::IsPositionInDocument
+Определяет, содержится ли в документе данной позиции документа.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT IsPositionInDocument(   
-   IDebugDocument2* pDoc  
+```cpp  
+HRESULT IsPositionInDocument(   
+   IDebugDocument2* pDoc  
 );  
 ```  
   
-```c#  
-int IsPositionInDocument(   
-   IDebugDocument2 pDoc  
+```csharp  
+int IsPositionInDocument(   
+   IDebugDocument2 pDoc  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pDoc`  
- \[in\] [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) объект, представляющий содержащий выбранный документа.  
+ [in] [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) , представляющий потенциальных содержащего документа.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Этот метод используется в основном в точках останова параметра in [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) интерфейсы.  По мере того, как документы загружаются, называется позиция точки останова определить если документ содержит эту позицию.  
+## <a name="remarks"></a>Примечания  
+ Этот метод используется главным образом задание точек останова [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) интерфейсов. После загрузки документов положение точки останова вызывается для определения, содержит ли документ этой позиции.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)   
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

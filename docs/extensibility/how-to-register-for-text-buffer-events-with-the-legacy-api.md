@@ -1,55 +1,40 @@
 ---
-title: "Практическое руководство: регистрация для событий текстового буфера с помощью API прежних версий | Документы Microsoft"
+title: "Как: регистрация событий буфера текста с помощью прежних версий API | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- editors [Visual Studio SDK], legacy - register for text buffer events
+helpviewer_keywords: editors [Visual Studio SDK], legacy - register for text buffer events
 ms.assetid: 5fc00ced-882c-4b48-b46c-1fa5a2469f94
-caps.latest.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b7da1dc26631294b6e41aa6335f2dca064c2831d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: fabdf30480666ee3bc24bf3d68af4cc0dcc1ccb6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Практическое руководство: регистрация для событий текстового буфера с помощью API прежних версий
-Если вы обращаетесь в текстовом буфере с помощью API прежних версий, следует зарегистрировать для текстового буфера событий, как показано в следующей процедуре.  
+# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Как: регистрация событий буфера текста с помощью API прежних версий
+При доступе к буфер текста с помощью предыдущих версий API, следует зарегистрировать для текстового буфера событий, как показано в следующей процедуре.  
   
 ### <a name="to-advise-text-buffer-events"></a>Чтобы уведомить событий текстового буфера  
   
-1.  Из указателя на один из интерфейсов на <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>, вызовите `QueryInterface` указатель <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>.</xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> </xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>  
+1.  Из указателя на один из интерфейсов на <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>, вызовите `QueryInterface` для указателя на <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>.  
   
-2.  Вызов <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer.FindConnectionPoint%2A>метод и передайте идентификатор интерфейса событий, для которых вы хотите зарегистрировать.</xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer.FindConnectionPoint%2A>  
+2.  Вызовите <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer.FindConnectionPoint%2A> и передайте в идентификатор интерфейса событий, для которых вы хотите зарегистрировать.  
   
-     Например, если вы хотите зарегистрировать для <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>, передается в интерфейсе идентификатор IID_IVsTextLinesEvents.</xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>  
+     Например, если вы хотите зарегистрировать для <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>, то передайте в интерфейс идентификатор IID_IVsTextLinesEvents.  
   
-     Текстовый буфер возвращает указатель на <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint>интерфейс для объекта точки подключения.</xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint>  
+     Буфер текста возвращает указатель на <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> интерфейс для объекта точки подключения.  
   
-3.  Используя этот указатель, позвоните <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A>, передавая указатель на вашу реализацию интерфейса событий, для которого требуется зарегистрировать, например, `IVsTextLinesEvents` интерфейс.</xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A>  
+3.  С помощью этого указателя, вызовите <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A> метод, передавая указатель на вашу реализацию интерфейса событий, для которого вы хотите зарегистрировать, например, `IVsTextLinesEvents` интерфейс.  
   
-     Среда возвращается cookie, который затем можно использовать для остановки прослушивание событий путем вызова <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Unadvise%2A>метод.</xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Unadvise%2A>  
+     Среда возвращает файл cookie, который затем можно использовать для остановки прослушивание событий путем вызова <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Unadvise%2A> метод.  
   
 ## <a name="see-also"></a>См. также  
- [Текст события буфера в интерфейсе API прежних версий](../extensibility/text-buffer-events-in-the-legacy-api.md)
+ [Текст события буфера в API прежних версий](../extensibility/text-buffer-events-in-the-legacy-api.md)

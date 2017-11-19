@@ -1,49 +1,50 @@
 ---
-title: "Таблицы команд Visual Studio (. Файлы Vsct) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Файлы VSCT, общие сведения"
-  - "Таблица команд Visual Studio – файлы конфигурации (VSCT), общие сведения"
+title: "Таблицы команд Visual Studio (. Файлы Vsct) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- VSCT files, overview
+- Visual Studio command table configuration files (VSCT), overview
 ms.assetid: 1313adb4-add4-4e74-90e2-f4be522f5259
-caps.latest.revision: 22
-caps.handback.revision: 22
-ms.author: "gregvanl"
-manager: "ghogen"
+caps.latest.revision: "22"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ace754b9d6ddb220b3647b281011d3763810987c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Таблицы команд Visual Studio (. Файлы Vsct)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Файл конфигурации команды таблицы — текстовый файл, описывающий набор команд, содержащих VSPackage.[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Команда компилятора таблицы \(VSCT\) компилирует файлы конфигурации на основе XML \(vsct\-файлы\) в файлы вывода \(.cto\) таблицы двоичная команда. Результирующий .cto файлы, которые создаются с помощью компилятора командной таблицы \(CTC\) для компиляции файлов конфигурации .ctc одинаковы. Однако файлы .vsct на основе XML имеет некоторые преимущества, такие как редактор XML и XML IntelliSense.  
+# <a name="visual-studio-command-table-vsct-files"></a>Таблицы команд Visual Studio (. Файлы Vsct)
+Таблица конфигурации командный файл является файлом, описывающую набор команд, которые содержит пакет VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Команда компилятора таблицы (VSCT) компилирует файлы конфигурации на основе XML (vsct-файлами) в файлы вывода (.cto) таблицу команда binary. Итоговый .cto файлы, которые создаются с помощью компилятора таблицы (CTC) команды для компиляции файлов конфигурации .ctc одинаковы. Однако файлы vstc на основе XML имеет некоторые преимущества, например редактора XML и XML IntelliSense.  
   
- Дополнительные сведения о синтаксисе и семантика vsct\-файлах см. [Разработка таблицы команд XML \(. Файлы Vsct\)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
+ Дополнительные сведения о синтаксисе и семантика vsct-файлами см. в разделе [проектирование таблицы команд XML (. Файлы Vsct)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
   
-## В этом подразделе  
- [Разработка таблицы команд XML \(. Файлы Vsct\)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
- Инструкции по разработке vsct\-файлы.  
+## <a name="in-this-section"></a>Содержание  
+ [Разработка файлов таблицы команд XML (VSCT-файлы)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
+ Содержит описание проектирования vsct-файлами.  
   
- [Практическое руководство: создание. Файл Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
- Сравнение методов для создания файла .vsct. Описание процесса создания нового файла .vsct вручную.  
+ [Практическое руководство. Создание VSCT-файла](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
+ Сравнение методов для создания vsct-файл. Описание процесса создания нового vsct-файл вручную.  
   
-## Связанные подразделы  
- [Справочник по схемам VSCT XML](../../extensibility/vsct-xml-schema-reference.md)  
- Подробное описание каждого раздела команду таблицы XML\-файл конфигурации.  
+## <a name="related-sections"></a>Связанные разделы  
+ [Справочник по схемам XML VSCT](../../extensibility/vsct-xml-schema-reference.md)  
+ Предоставляет подробные сведения о каждой части команды таблицы XML-файл конфигурации.  
   
- [Command Table Configuration \(.Ctc\) Files](http://msdn.microsoft.com/ru-ru/3413dda1-f372-4669-bcf0-c64d3463842c)  
- Представляет обзор формата файла .ctc не рекомендуется.  
+ [Команда конфигурации таблиц (. Файлы ctc)](http://msdn.microsoft.com/en-us/3413dda1-f372-4669-bcf0-c64d3463842c)  
+ Представляет обзор устаревшие .ctc формата файла.  
   
- [Как добавить элементы пользовательского интерфейса в пакеты VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
- Описывает спецификации формата команды таблицы.  
+ [Как добавить элементы пользовательского интерфейса с помощью пакетов VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
+ Описывает спецификации формата таблицы команд.  
   
- [Ресурсы в пакеты VSPackage](../../extensibility/internals/resources-in-vspackages.md)  
- Описывает способы использования управляемых и неуправляемых ресурсов в управляемых пакетов VSPackages.  
+ [Ресурсы в пакетах VSPackage](../../extensibility/internals/resources-in-vspackages.md)  
+ Описывает, как использовать управляемые и неуправляемые ресурсы в управляемые пакеты VSPackage.  
   
- [Команды, меню и панелей инструментов](../../extensibility/internals/commands-menus-and-toolbars.md)  
- Объясняется, как создать пользовательский Интерфейс, который включает меню, панелей инструментов и команд со списком.
+ [Команды, меню и панели инструментов](../../extensibility/internals/commands-menus-and-toolbars.md)  
+ Объясняется, как создать пользовательский интерфейс, включающий меню, панели инструментов и поля со списком команд.

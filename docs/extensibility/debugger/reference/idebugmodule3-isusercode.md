@@ -1,48 +1,48 @@
 ---
-title: "IDebugModule3::IsUserCode | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugModule3::IsUserCode"
-helpviewer_keywords: 
-  - "IDebugModule3::IsUserCode"
+title: "IDebugModule3::IsUserCode | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugModule3::IsUserCode
+helpviewer_keywords: IDebugModule3::IsUserCode
 ms.assetid: 77022946-bb8b-4114-aa81-614df6e54b13
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9dcade316ef9bd58cc7be2906df3ca3cfa9fa33b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugModule3::IsUserCode
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Получает сведения, представляет ли модуль кода пользователя.  
+# <a name="idebugmodule3isusercode"></a>IDebugModule3::IsUserCode
+Извлекает сведения о ли модуль представляет пользовательский код или нет.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT IsUserCode(  
-   BOOL* pfUser  
+```cpp  
+HRESULT IsUserCode(  
+   BOOL* pfUser  
 );  
 ```  
   
-```c#  
+```csharp  
 int IsUserCode(  
-   out int pfUser  
+   out int pfUser  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pfUser`  
- \[out\] ненулевое значение \(`TRUE`если модуль представляет код пользователя\), ноль \(`FALSE`\), если нет.  
+ [out] Ненулевое значение (`TRUE`), если модуль представляет пользовательский код, ноль (`FALSE`) Если это не так.  
   
-## Возвращаемое значение  
+## <a name="return-value"></a>Возвращаемое значение  
  В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

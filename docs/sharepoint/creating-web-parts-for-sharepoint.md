@@ -1,127 +1,126 @@
 ---
-title: "Создание веб-частей для SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "Microsoft.SharePoint.WebControls.DateTimeControl"
-  - "Microsoft.SharePoint.WebControls.CssLink"
-  - "Microsoft.SharePoint.WebControls.RssLink"
-  - "Microsoft.SharePoint.WebControls.Theme"
-  - "Microsoft.SharePoint.WebControls.AspMenu"
-  - "Microsoft.SharePoint.WebControls.ListProperty"
-  - "Microsoft.SharePoint.WebControls.ProjectProperty"
-  - "Microsoft.SharePoint.WebControls.FormsDigest"
-  - "Microsoft.SharePoint.WebControls.ScriptLink"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "разработка приложений SharePoint в Visual Studio, Веб-части"
-  - "веб-части [разработка приложений SharePoint в Visual Studio], разработка"
+title: "Создание веб-частей для SharePoint | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- Microsoft.SharePoint.WebControls.DateTimeControl
+- Microsoft.SharePoint.WebControls.CssLink
+- Microsoft.SharePoint.WebControls.RssLink
+- Microsoft.SharePoint.WebControls.Theme
+- Microsoft.SharePoint.WebControls.AspMenu
+- Microsoft.SharePoint.WebControls.ListProperty
+- Microsoft.SharePoint.WebControls.ProjectProperty
+- Microsoft.SharePoint.WebControls.FormsDigest
+- Microsoft.SharePoint.WebControls.ScriptLink
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, Web Parts
+- Web Parts [SharePoint development in Visual Studio], designing
 ms.assetid: a6349e85-45cf-4766-b856-e25c9f1ffd34
-caps.latest.revision: 42
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 41
+caps.latest.revision: "42"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 5bba3f2e5f645b6b97fb43b22e7dfc1028a01ab0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Создание веб-частей для SharePoint
-  С помощью веб\-частей можно изменять содержимое, внешний вид и поведение страниц сайта SharePoint, используя для этого браузер.  Веб\-части представляют собой серверные элементы управления, выполняемые внутри страницы веб\-части. Это составные компоненты страниц, отображаемых на сайте SharePoint.  См. раздел [Компонент: веб\-части](http://go.microsoft.com/fwlink/?LinkID=182097).  
+# <a name="creating-web-parts-for-sharepoint"></a>Создание веб-частей для SharePoint
+  С помощью веб-частей, можно изменить содержимое, внешний вид и поведение страниц сайта SharePoint с помощью браузера. Веб-части, серверные элементы управления, которые выполняются в страницу веб-частей: они являются составными частями страниц, которые отображаются на сайте SharePoint. В разделе [стандартный блок: веб-части](http://go.microsoft.com/fwlink/?LinkID=182097).  
   
- В Visual Studio предусмотрены шаблоны, которые можно использовать для создания веб\-частей и их отладки на сайте SharePoint.  
+ Можно создать и отлаживать веб-частей на сайте SharePoint с помощью шаблонов из Visual Studio.  
   
-## Создание веб\-части в Visual Studio  
- Создайте веб\-часть, добавив элемент **Веб\-часть** в любой проект SharePoint.  Элемент **Веб\-часть** можно использовать в изолированном решении или решении фермы.  
+## <a name="creating-a-web-part-in-visual-studio"></a>Создание веб-части в Visual Studio  
+ Создание веб-части путем добавления **веб-часть** элемента в любой проект SharePoint. Можно использовать **веб-часть** элемента в изолированное решение или решение фермы.  
   
- Если требуется разработать веб\-часть визуально с помощью конструктора, создайте проект **Визуальная веб\-часть** или добавьте элемент **Визуальная веб\-часть** в любой проект SharePoint.  Элемент **Визуальная веб\-часть** можно использовать только в решении фермы.  
+ Если необходимо визуально разработать веб-часть с помощью конструктора, создайте **визуальной веб-части** или добавьте **Визуальная веб-часть** элемента в любой проект SharePoint. Можно использовать **Визуальная веб-часть** элемента только решения фермы.  
   
-### Элемент "Веб\-часть"  
- Элемент **Веб\-часть** содержит файлы, используемые для разработки веб\-части для сайтов SharePoint.  При добавлении элемента **Веб\-часть** Visual Studio создает в проекте папку и добавляет в нее несколько файлов.  В следующей таблице описан каждый файл.  
+### <a name="web-part-item"></a>Элемент веб-части  
+ Объект **веб-часть** элемента содержит файлы, которые можно использовать для разработки веб-части для сайта SharePoint. При добавлении **веб-часть** элемента, Visual Studio создает папку в проекте и добавляет в нее несколько файлов. В следующей таблице описаны каждого файла.  
   
 |Файл|Описание|  
-|----------|--------------|  
-|Elements.xml|Содержит сведения, используемые файлом определения компонента в проекте для развертывания веб\-части.|  
-|файл с расширением .webpart|Предоставляет сведения, необходимые SharePoint для отображения веб\-части в коллекции веб\-частей.|  
-|Файл исходного кода|Содержит методы, добавляющие элементы управления в веб\-часть и создающие пользовательское содержимое внутри веб\-части.|  
+|----------|-----------------|  
+|Файл Elements.XML|Содержит сведения, используемые файлом определения компонента в проекте для развертывания веб-части.|  
+|файл .webpart|Предоставляет сведения, необходимые для отображения веб-части в веб-частей SharePoint.|  
+|Файл кода|Содержит методы, которые добавляют элементы управления веб-части и, создающие пользовательское содержимое внутри веб-части.|  
   
- Для получения дополнительной информации см. [Практическое руководство. Создание веб-части SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md).  
+ Дополнительные сведения см. в разделе [как: Создание веб-части SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md).  
   
-### Элемент "Визуальная веб\-часть"  
- Визуальная веб\-часть — это веб\-часть, создаваемая в Visual Studio с использованием конструктора Visual Web Developer.  См. раздел [Карта содержимого среды веб\-разработки Visual Studio](http://msdn.microsoft.com/ru-ru/9c31f93b-c8fb-4599-9b14-6194ec8c7539).  
+### <a name="visual-web-part-item"></a>Элемент Visual веб-части  
+ Визуальная веб-часть имеет веб-части, создаваемом с помощью конструктора Visual Web Developer в Visual Studio. Визуальная веб-часть работает так же, как веб-часть. Чтобы добавить элементы управления, такие как кнопки и текстовые поля, веб-часть, добавьте код в XML-файл. Тем не менее, добавлении элементов управления в визуальной веб-части, перетащив или скопировав их на веб-части из Visual Studio **элементов**. Затем конструктор создает требуемый код в XML-файле. В разделе [как: Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
   
- Визуальная веб\-часть функционирует так же, как любая другая веб\-часть.  Чтобы добавить элементы управления, такие как кнопки и текстовые поля, к веб\-части, добавьте код в файл XML.  Однако они добавляются в визуальные веб\-части путем перетаскивания или копирования в часть Интернета из **Панель элементов** Visual Studio.  Конструктор затем выдает необходимый код в XML\-файле.  См. раздел [Практическое руководство. Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
+## <a name="sharepoint-controls"></a>Элементы управления SharePoint  
+ Visual Studio предоставляет некоторые элементы управления для создания страницы SharePoint, например страниц приложений. Эти элементы управления отображаются в **элементов** под **элементы управления SharePoint**. Функциональные возможности этих элементов управления является производным от [Microsoft.SharePoint.WebControls](http://go.microsoft.com/fwlink/?LinkId=235315) имен, содержащее ASP.NET серверных элементов управления, используемые на страницах сайты и списки SharePoint.  
   
-## Элементы управления SharePoint  
- Visual Studio предоставляет некоторые элементы управления для создания страницы SharePoint, например страницы приложения.  Эти элементы управления отображаются в группе **Область элементов** в разделе **Элементы управления SharePoint**.  Функция для этих элементов управления [Microsoft.SharePoint.WebControls](http://go.microsoft.com/fwlink/?LinkId=235315) является производной от пространства имен, которое содержит серверные элементы управления ASP.NET, которые используются на сайте SharePoint и содержит страницы.  
+|Имя элемента|Описание|  
+|------------------|-----------------|  
+|[AspMenu](http://go.microsoft.com/fwlink/?LinkId=235307)|Вставляет ASP меню. Дополнительные сведения см. в разделе [Обзор элемента управления меню](http://go.microsoft.com/fwlink/?LinkId=235316).|  
+|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Вставляет **ССЫЛКУ** на странице ASPX элемента и применяет один или несколько внешних таблицах стилей определяется **CssRegistration**.|  
+|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|Вставляет элемент управления даты и времени в ASPX-страницы.|  
+|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|Вставляет проверки безопасности в ASPX-страницы|  
+|[ListProperty](http://go.microsoft.com/fwlink/?LinkId=235310)|Возвращает свойство из указанного списка.|  
+|[ProjectProperty](http://go.microsoft.com/fwlink/?LinkId=235311)|Возвращает глобальные свойства текущего веб-сайта.|  
+|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|Вставляет ссылку на RSS-канал в ASPX-страницы.|  
+|[ScriptLink](http://go.microsoft.com/fwlink/?LinkId=235313)|Предоставляет свойства и методы для регистрации ресурсы, такие как сценарии, на странице, чтобы они могут быть запрошены при отображении страницы.|  
+|[Тема](http://go.microsoft.com/fwlink/?LinkId=235314)|Применяет тему ASPX-страницу.|  
   
-|Имя элемента управления|Описание|  
-|-----------------------------|--------------|  
-|[AspMenu](http://go.microsoft.com/fwlink/?LinkId=235307)|Вставляет меню ASP.  Дополнительные сведения см. в разделе [Обзор элементов управления меню](http://go.microsoft.com/fwlink/?LinkId=235316).|  
-|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Вставляет элемент **LINK** на страницу ASPX и применяет один или несколько внешних таблиц стилей, определяемых параметром **CssRegistration**.|  
-|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|Вставляет элемент управления DateTime на страницу ASPX.|  
-|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|Вставляет проверку безопасности на страницу ASPX.|  
-|[ListProperty](http://go.microsoft.com/fwlink/?LinkId=235310)|Возвращает свойство указанного списка.|  
-|[ProjectProperty](http://go.microsoft.com/fwlink/?LinkId=235311)|Возвращает глобальное свойство текущего веб\-сайта.|  
-|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|Вставляет ссылку на RSS\-канал на страницу .aspx.|  
-|[ScriptLink](http://go.microsoft.com/fwlink/?LinkId=235313)|Предоставляет свойства и методы для регистрации ресурсы, такие как скрипты на странице, чтобы их можно было задать при обработке страницы.|  
-|[Тема](http://go.microsoft.com/fwlink/?LinkId=235314)|Применяет тему к странице ASPX.|  
+## <a name="debugging-a-web-part"></a>Отладка веб-части  
+ Можно отлаживать проект SharePoint, который содержит веб-части, так же, как отладка других проектов Visual Studio. При запуске отладчика Visual Studio, Visual Studio откроется сайт SharePoint.  
   
-## Отладка веб\-части  
- Отладка проекта SharePoint, который содержит веб\-часть, выполняется так же, как отладка других проектов Visual Studio.  При запуске отладчика Visual Studio среда Visual Studio открывает сайт SharePoint.  
-  
- Чтобы начать отладку кода, добавьте веб\-часть на страницу веб\-части в in SharePoint.  
+ Чтобы начать отладку кода, добавьте веб-части на страницу веб-частей в SharePoint.  
   
  Дополнительные сведения об отладке проектов SharePoint см. в разделе [Устранение неполадок решений SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   
-## Ограничения визуальной веб\-части  
- Начиная с Visual Studio можно добавить визуальные веб\-части в изолированные решения SharePoint и решения фермы.  Однако визуальные веб\-части имеют следующие ограничения.  
+## <a name="visual-web-part-limitations"></a>Ограничения визуальной веб-части  
+ Начиная с Visual Studio, можно добавить визуальных веб-частей для изолированного решения SharePoint и решениями фермы. Тем не менее визуальные веб-части имеют следующие ограничения:  
   
--   Визуальные веб\-части не поддерживает подстановочных параметров.  Для получения дополнительной информации см. [Подстановочные параметры](../sharepoint/replaceable-parameters.md).  
+-   Визуальные веб-части не поддерживают подстановочные параметры. Дополнительные сведения см. в разделе [подстановочные параметры](../sharepoint/replaceable-parameters.md).  
   
--   Пользовательские элементы управления или визуальные веб\-части невозможно удалить и переместить или скопировать на визуальные веб\-части.  Это действие приводит к возникновению ошибки сборки.  
+-   Пользовательские элементы управления или визуальных веб-частей нельзя перетащить и удалить или скопировать в визуальных веб-частей. Это действие приводит к ошибке построения.  
   
--   Визуальные веб\-части непосредственно не поддерживают токены сервера SharePoint как $SPUrl.  Дополнительные сведения см. в разделе "Ограничения токенов в изолированных визуальных веб\-частях" в разделе [Устранение неполадок решений SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).  
+-   Визуальные веб-части напрямую не поддерживается токены SharePoint server, например $SPUrl. Дополнительные сведения см. в разделе «Токена ограничения в изолированных визуальных веб-частей» в разделе [Устранение неполадок решений SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   
--   Визуальные веб\-части в изолированном решении иногда получают ошибку "Запрос выполнения изолированного кода запрещен, поскольку основная служба изолированного кода была слишком занят, чтобы обработать запрос». Дополнительные сведения об этой ошибке см. в записи [блога команды разработчиков SharePoint](http://go.microsoft.com/fwlink/?LinkId=225932).  
+-   Визуальные веб-части в изолированном решении возникнуть ошибка, «запрос на выполнение изолированного кода был отклонен, поскольку узел службы изолированного кода был слишком занят, чтобы обработать запрос.» Дополнительные сведения об этой ошибке см. в этой публикации [блог команды разработчиков SharePoint](http://go.microsoft.com/fwlink/?LinkId=225932).  
   
--   Серверная отладка JavaScript не поддерживается в Visual Studio, но клиентская отладка JavaScript поддерживается.  
+-   Отладка JavaScript на стороне сервера не поддерживается в Visual Studio, но поддерживается Отладка JavaScript на стороне клиента.  
   
-     Хотя можно добавить в серверный файл разметки подставляемый код JavaScript, отладка для добавленных в разметку точек останова не поддерживается.  Для отладки JavaScript создайте ссылки на внешний файл JavaScript в файле разметки, а затем установите точки останова в файле JavaScript.  
+     Несмотря на то, что встроенный JavaScript можно добавить в файл разметки на стороне сервера, отладка не поддерживается для точек останова, добавляемым в разметку. Отладка JavaScript, ссылку на внешний файл JavaScript, в файле разметки и установите точки останова в файле JavaScript.  
   
--   Отладка подставляемого кода [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] должна выполняться в созданном файле с кодом, а не в файле разметки.  
+-   Отладка встроенного [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] кода должно быть выполнено в файле сформированного кода, а не в файле разметки.  
   
--   Визуальные веб\-части не поддерживают использование директивы `<@ Assembly Src=`.  
+-   Визуальные веб-части не поддерживают использование `<@ Assembly Src=` директивы.  
   
--   Веб\-элементов управления SharePoint и некоторые элементы управления [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] не поддерживаются в этой среде изолированных решений SharePoint.  Если неподдерживаемые элементы управления используются в визуальной веб\-части в изолированном решении, возникает ошибка "Тип или имя пространства имен "Theme" не существует в пространстве имен "Microsoft.SharePoint.WebControls".  
+-   Веб-элементы управления, а также некоторые SharePoint [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] элементы управления не поддерживаются в изолированной среде SharePoint. Если используются неподдерживаемые элементы управления визуальной веб-части в изолированном решении, ошибки, отображается «Имя типа или пространства имен 'Theme' не существует в пространстве имен «Microsoft.SharePoint.WebControls»».  
   
- Дополнительные сведения об изолированных решениях см. в разделе [Различия между изолированными решениями и решениями фермы](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  
+ Дополнительные сведения об изолированных решениях см. в разделе [различия между изолированными решениями и решениями фермы](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  
   
-## Создание веб\-частей на основе SharePoint старого стиля  
- Шаблоны в Visual Studio позволяют создавать пользовательские веб\-части [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] для SharePoint.  Веб\-части [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] создаются поверх инфраструктуры веб\-частей [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] и представляют собой рекомендуемый тип для использования в новых проектах.  
+## <a name="creating-older-style-sharepoint-based-web-parts"></a>Создание более старых стилей SharePoint веб-частей  
+ Шаблоны в Visual Studio можно использовать для создания пользовательских [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] веб-частей для SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]веб-частей построены на основе [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] инфраструктура веб-части и представляют собой рекомендуемые типы для новых проектов.  
   
- В очень редких случаях может понадобиться создать веб\-часть с использованием веб\-части на основе SharePoint старого стиля.  Для создания этих типов веб\-частей можно использовать Visual Studio, но в Visual Studio не предусмотрено шаблонов, предназначенных специально для создания этих веб\-частей.  
+ В очень редких случаях может потребоваться создать веб-части с помощью старого стиля SharePoint веб-части. Visual Studio можно использовать для создания этих типов веб-частей, но Visual Studio не предоставляет шаблоны, специально предназначенных для их создания.  
   
- Дополнительные сведения об уместности создания веб\-части более старого стиля SharePoint см. в разделе [Инфраструктура веб\-частей в службах Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkId=169290).  Дополнительные сведения о создании веб\-части с использованием веб\-части на основе SharePoint старого стиля см. в разделе [Walkthrough Creating a Basic SharePoint Web Part](http://go.microsoft.com/fwlink/?LinkId=169288).  
+ Дополнительные сведения о когда может потребоваться создать старого стиля SharePoint веб-частей см. в разделе [уместно в Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkId=169290). Дополнительные сведения о создании веб-части с помощью старого стиля SharePoint веб-частей см. в разделе [Пошаговое руководство, Создание базовых веб-части SharePoint](http://go.microsoft.com/fwlink/?LinkId=169288).  
   
-## Связанные разделы  
+## <a name="related-topics"></a>Связанные разделы  
   
-|Название|Описание|  
-|--------------|--------------|  
-|[Практическое руководство. Создание веб-части SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Демонстрируется создание веб\-частей для страниц SharePoint.|  
-|[Практическое руководство. Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Демонстрируется создание веб\-частей для SharePoint с использованием визуальной рабочей области конструирования.|  
-|[Практическое руководство. Создание пользовательского элемента управления для страницы приложения или веб-части SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Демонстрируется создание пользовательских элементов управления с возможностью повторного использования, которые можно размещать на страницах приложений и в веб\-частях, используемых в SharePoint.|  
-|[Пошаговое руководство. Создание веб-части для SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Порядок разработки веб\-части для SharePoint.|  
-|[Пошаговое руководство. Создание веб-части для SharePoint с помощью конструктора](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Порядок разработки веб\-части для SharePoint путем перетаскивания элементов управления на визуальную поверхность разработки.|  
-|[Пошаговое руководство. Создание веб-части Silverlight, отображающей данные OData для SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)|Описание порядка конструирования веб\-части для SharePoint, в которой размещается приложение Silverlight и отображаются данные из списков SharePoint.|  
-|[Работа с Visual Web Developer](http://msdn.microsoft.com/ru-ru/9c31f93b-c8fb-4599-9b14-6194ec8c7539)|Порядок использования конструктора, отображаемого при открытии веб\-страницы в проекте.|  
+|Заголовок|Описание|  
+|-----------|-----------------|  
+|[Практическое руководство. Создание веб-части SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Показано, как создать веб-частей для SharePoint страницы.|  
+|[Практическое руководство. Создание веб-части SharePoint с помощью конструктора](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Показано, как создать веб-частей для SharePoint с помощью визуального конструктора.|  
+|[Практическое руководство. Создание пользовательского элемента управления для страницы приложения или веб-части SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Демонстрируется создание пользовательских, многократно используемых элементов управления, которые можно размещать на страницах приложений и веб-частей, которые выполняются в SharePoint.|  
+|[Пошаговое руководство. Создание веб-части для SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Инструкции по разработке веб-части для SharePoint.|  
+|[Пошаговое руководство. Создание веб-части для SharePoint с помощью конструктора](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Инструкции по разработке веб-части для SharePoint путем перетаскивания элементов управления в рабочую область конструирования visual.|  
+|[Пошаговое руководство. Создание веб-части Silverlight, которая отображает данные OData для SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)|Инструкции по разработке веб-части для SharePoint, где размещается приложение Silverlight и отображает данные из списков SharePoint.|  
   
   

@@ -1,29 +1,33 @@
 ---
-title: "Элемент Icon (шаблоны Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#Icon"
-helpviewer_keywords: 
-  - "Icon - элемент [шаблоны проектов Visual Studio]"
+title: "Элемент Icon (шаблоны Visual Studio) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Icon
+helpviewer_keywords: Icon element [Visual Studio project templates]
 ms.assetid: ec01d903-f4c2-4ca2-9cbc-e939ec84016c
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 00dd81c93e089a840c99efbd6165f005aff88b57
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Элемент Icon (шаблоны Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Задает путь и имя файла изображения, являющегося значком шаблона, который отображается в диалоговом окне **Создать проект** или **Добавить новый элемент**.  
+# <a name="icon-element-visual-studio-templates"></a>Элемент Icon (шаблоны Visual Studio)
+Указывает путь и имя файла изображения, который служит в качестве значок, который появляется в любом **новый проект** или **Добавление нового элемента** диалоговом для шаблона.  
   
-## Синтаксис  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<Значок >  
+  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <Icon>  
@@ -35,35 +39,35 @@ caps.handback.revision: 14
 <Icon Package="{PackageID}" ID="ResourceID" />  
 ```  
   
-## Атрибуты и элементы  
- В следующих разделах описаны атрибуты, дочерние элементы и родительские элементы.  
+## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
-### Атрибуты  
+### <a name="attributes"></a>Атрибуты  
   
 |Атрибут|Описание|  
-|-------------|--------------|  
-|`Package`|Необязательный атрибут, предназначенный для сложных пользовательских скриптов.<br /><br /> GUID, который определяет идентификатор пакета Visual Studio.|  
-|`ID`|Необязательный атрибут, предназначенный для сложных пользовательских скриптов.<br /><br /> Определяет идентификатор ресурса Visual Studio.|  
+|---------------|-----------------|  
+|`Package`|Необязательный атрибут для сложных пользовательских скриптов.<br /><br /> Идентификатор GUID, который определяет пакет Visual Studio.|  
+|`ID`|Необязательный атрибут для сложных пользовательских скриптов.<br /><br /> Указывает идентификатор ресурса Visual Studio.|  
   
-### Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
   
-### Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Относит шаблон проекта к какой\-либо категории и определяет характеристики его отображения для диалоговых окон **Создать проект** или **Добавить новый элемент**.|  
+|-------------|-----------------|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
-## Текстовое значение  
- Текстовое значение является обязательным, если не используются атрибуты `Package` и `ID`.  
+## <a name="text-value"></a>Текстовое значение  
+ Текстовое значение является обязательным, если `Package` и `ID` используются атрибуты.  
   
- Текст предоставляет путь и имя файла значка шаблона, который отображается в диалоговом окне **Создать проект**.  
+ Текст предоставляет путь и имя файла значка шаблона, который будет отображаться в **новый проект** диалоговое окно.  
   
-## Заметки  
- `Icon` является обязательным дочерним элементом элемента `TemplateData`.  
+## <a name="remarks"></a>Примечания  
+ `Icon` — обязательный дочерний элемент элемента `TemplateData`.  
   
-## Пример  
- В следующем примере демонстрируются метаданные для шаблона проекта приложения [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
+## <a name="example"></a>Пример  
+ В следующем примере показано метаданные для шаблона проекта [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -89,6 +93,6 @@ caps.handback.revision: 14
 </VSTemplate>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Создание пользовательских шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
+ [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

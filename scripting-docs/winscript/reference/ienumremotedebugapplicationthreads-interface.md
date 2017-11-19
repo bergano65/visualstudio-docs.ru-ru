@@ -1,31 +1,34 @@
 ---
-title: "Интерфейс IEnumRemoteDebugApplicationThreads | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "IEnumRemoteDebugApplicationThreads — интерфейс"
+title: "Интерфейс IEnumRemoteDebugApplicationThreads | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords: IEnumRemoteDebugApplicationThreads interface
 ms.assetid: 4ae6f8ef-e7be-4e2d-9be4-e0cde0a70eb1
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d261e9dfaaf06145554eb80e2e9f63e8d429082d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Интерфейс IEnumRemoteDebugApplicationThreads
+# <a name="ienumremotedebugapplicationthreads-interface"></a>Интерфейс IEnumRemoteDebugApplicationThreads
 Перечисляет выполняющиеся потоки в приложении.  
   
- В дополнение к методам, наследуемым от интерфейса `IUnknown`, интерфейс `IEnumRemoteDebugApplicationThreads` предоставляет следующие методы.  
+ Помимо методов, наследуемых от `IUnknown`, `IEnumRemoteDebugApplicationThreads` интерфейс предоставляет следующие методы.  
   
-## Методы в порядке таблицы Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[IEnumRemoteDebugApplicationThreads::Next](../../winscript/reference/ienumremotedebugapplicationthreads-next.md)|Извлекает заданное количество сегментов в последовательности перечисления.|  
-|[IEnumRemoteDebugApplicationThreads::Skip](../../winscript/reference/ienumremotedebugapplicationthreads-skip.md)|Пропустить указанное количество сегментов в последовательности перечисления.|  
-|[IEnumRemoteDebugApplicationThreads::Reset](../../winscript/reference/ienumremotedebugapplicationthreads-reset.md)|Сбрасывает последовательность перечислений в начало.|  
-|[IEnumRemoteDebugApplicationThreads::Clone](../../winscript/reference/ienumremotedebugapplicationthreads-clone.md)|Создает перечислитель с тем же состоянием, что и текущий перечислитель.|
+|------------|-----------------|  
+|[IEnumRemoteDebugApplicationThreads::Next](../../winscript/reference/ienumremotedebugapplicationthreads-next.md)|Возвращает указанное количество сегментов в последовательности перечисления.|  
+|[IEnumRemoteDebugApplicationThreads::Skip](../../winscript/reference/ienumremotedebugapplicationthreads-skip.md)|Пропускает указанное число сегментов в последовательности перечисления.|  
+|[IEnumRemoteDebugApplicationThreads::Reset](../../winscript/reference/ienumremotedebugapplicationthreads-reset.md)|Сбрасывает последовательность перечисления в начало.|  
+|[IEnumRemoteDebugApplicationThreads::Clone](../../winscript/reference/ienumremotedebugapplicationthreads-clone.md)|Создает перечислитель, который содержит том же состоянии, как у текущего перечислителя.|

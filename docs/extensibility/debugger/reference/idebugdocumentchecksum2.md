@@ -1,43 +1,44 @@
 ---
-title: "IDebugDocumentChecksum2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Интерфейс IDebugDocumentChecksum2"
+title: "IDebugDocumentChecksum2 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugDocumentChecksum2 interface
 ms.assetid: 6d22fa94-21aa-46cb-b5b5-32a6399ebb20
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d70923fa450f79aacd059ebb4d2fde753fb13564
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDocumentChecksum2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Представляет контрольную сумму для документа отладки, а также передача контрольную сумму между компонентами.  
+# <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
+Представляет контрольную сумму для документа отладки и обеспечивает передачи контрольная сумма между компонентами.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IDebugDocumentChecksum2 : IUnknown  
 ```  
   
-## Примечания по реализации  
- Этот интерфейс может быть реализован любым компонентом, который предоставляет IDebugDocumentContext2 интерфейс.  Однако он главным образом реализуется следующими элементами привязки отладочные обработчики, чтобы контрольную сумму внедренную в файле символов \(\*.pdb\) можно передать обратно в интегрированной среде разработки и использования при поиске источник.  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
+ Этот интерфейс может быть реализован любой компонент, предоставляющий [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) интерфейса. Тем не менее часто запрашивается реализуется отладчики, чтобы контрольная сумма, внедренных в файл символов (*.pdb) могут передаваться обратно в Интегрированной среде разработки и используется при поиске источника.  
   
-## Методы  
+## <a name="methods"></a>Методы  
  В следующей таблице показаны методы `IDebugDocumentChecksum2`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[GetChecksumAndAlgorithmId](../../../extensibility/debugger/reference/idebugdocumentchecksum2-getchecksumandalgorithmid.md)|Извлекает идентификатор контрольной суммы и алгоритма документа заданное максимальное число байтов, которое следует использовать.|  
+|------------|-----------------|  
+|[GetChecksumAndAlgorithmId](../../../extensibility/debugger/reference/idebugdocumentchecksum2-getchecksumandalgorithmid.md)|Извлекает идентификатор документа контрольной суммы и алгоритм Получает максимальное число байтов для использования.|  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: Msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  

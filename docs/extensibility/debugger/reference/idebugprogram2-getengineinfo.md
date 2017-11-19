@@ -1,56 +1,56 @@
 ---
-title: "IDebugProgram2::GetEngineInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::GetEngineInfo"
-helpviewer_keywords: 
-  - "IDebugProgram2::GetEngineInfo"
+title: "IDebugProgram2::GetEngineInfo | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgram2::GetEngineInfo
+helpviewer_keywords: IDebugProgram2::GetEngineInfo
 ms.assetid: 3a4f2dc0-e082-4d8d-aeaf-463ab09d279b
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a093ab6fc4acc1ea1d1a378b06d721b1316f359f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgram2::GetEngineInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Получает имя обработчика отладки и идентификатор GUID \(DE\) при выполнении этой программы.  
+# <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
+Возвращает имя и идентификатор GUID модуля отладки (DE), выполнение программы.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetEngineInfo(   
-   BSTR* pbstrEngine,  
-   GUID* pguidEngine  
+```cpp  
+HRESULT GetEngineInfo(   
+   BSTR* pbstrEngine,  
+   GUID* pguidEngine  
 );  
 ```  
   
-```c#  
-int GetEngineInfo(   
-   out string pbstrEngine,  
-   out GUID   pguidEngine  
+```csharp  
+int GetEngineInfo(   
+   out string pbstrEngine,  
+   out GUID   pguidEngine  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pbstrEngine`  
- \[out\] возвращает имя DE выполнения этой программы.  
+ [out] Возвращает имя DE, выполнение программы.  
   
  `pguidEngine`  
- \[out\] возвращает идентификатор GUID DE выполнения этой программы.  
+ [out] Возвращает идентификатор GUID DE, выполнение программы.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Каждый DE устанавливает собственное GUID для идентификации.  
+## <a name="remarks"></a>Примечания  
+ Каждый DE определяет собственный идентификатор GUID для идентификации.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

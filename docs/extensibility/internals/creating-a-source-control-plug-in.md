@@ -1,44 +1,46 @@
 ---
-title: "Создание подключаемого модуля системы управления версиями | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "подключаемые модули, системы управления версиями"
-  - "подключаемые модули управления версиями"
-  - "Система управления версиями [Visual Studio SDK] подключаемых модулей"
+title: "Создание подключаемого модуля системы управления версиями | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- plug-ins, source control
+- source control plug-ins
+- source control [Visual Studio SDK], plug-ins
 ms.assetid: c7e69fa4-150e-469a-a6fc-fa1260bdbb07
-caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e376ced68301abae6090a87114e2178c0adc28cf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Создание подключаемого модуля системы управления версиями
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Пакет SDK для Visual Studio предоставляет ресурсы, которые позволяют добавлять возможности системы управления версиями к [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированная среда разработки \(ide\).  Он позволяет использовать любое подключаемый модуль DLL, которое соответствует с API системы управления версиями конспектированное подключаемого модуля в этой документации.  
+# <a name="creating-a-source-control-plug-in"></a>Создание подключаемого модуля системы управления версиями
+Пакет SDK для Visual Studio предоставляет ресурсы, которые позволяют добавлять возможности элемента управления источника для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE). Он позволяет использовать любой подключаемый модуль библиотеки DLL, которая соответствует с API подключаемых модулей управления источника, описанные в этой документации.  
   
-## В этом подразделе  
+## <a name="in-this-section"></a>Содержание  
  [Начало работы](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)  
- Описывает, как устанавливать подключаемый модуль системы управления версиями и выбирает версии API в данный момент доступной подключаемых модулей системы управления версиями.  
+ Описывает, как установить подключаемый модуль системы управления версиями и выделяет в настоящее время доступных версий API подключаемых модулей для управления источника.  
   
  [Архитектура](../../extensibility/internals/source-control-plug-in-architecture.md)  
- Используется схема архитектуры для объяснения интеграцию подключаемого модуля для системы управления версиями [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированная среда разработки.  
+ Используется схема архитектуры объяснить интеграцию системы управления версиями, подключаемый модуль с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки.  
   
- [Руководство по проведению тестирования для подключаемых модулей системы управления версиями](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)  
- Предоставляет сведения о том, как проверить установку и операция подключаемых модулей системы управления версиями.  
+ [Руководство по тестированию подключаемых модулей системы управления версиями](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)  
+ Руководство по проверке установки и функционирования подключаемый модуль системы управления версиями.  
   
-## Связанные подразделы  
- [Создание VSPackage управления источника](../../extensibility/internals/creating-a-source-control-vspackage.md)  
- Обсуждается создание система управления версиями VSPackage, которая не только предоставляют функциональные возможности системы управления версиями, но заменить [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] пользовательский интерфейс системы управления версиями.  
+## <a name="related-sections"></a>Связанные разделы  
+ [Создание пакета VSPackage системы управления версиями](../../extensibility/internals/creating-a-source-control-vspackage.md)  
+ Описывает, как создать пакет VSPackage, который не только предоставляет функций системы управления версиями, но заменяет элемент управления источником [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] система управления версиями пользовательского интерфейса.  
   
- [Подключаемые модули управления версиями](../../extensibility/source-control-plug-ins.md)  
- Предоставляет полный листинг всех элементов в api\-интерфейсе подключаемых модулей системы управления версиями.  
+ [Подключаемые модули системы управления версиями](../../extensibility/source-control-plug-ins.md)  
+ Приводится полный список всех элементов API подключаемых модулей управления источника.  
   
  [Система управления версиями](../../extensibility/internals/source-control.md)  
- Описывает параметры для реализации системы управления версиями, как интегрированная функция [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Описание параметров для реализации системы управления версиями в качестве интегрированной функцией [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

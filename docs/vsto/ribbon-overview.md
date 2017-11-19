@@ -1,12 +1,10 @@
 ---
-title: Ribbon Overview | Microsoft Docs
+title: "Общие сведения о ленте | Документы Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -21,122 +19,122 @@ helpviewer_keywords:
 - toolbars [Office development in Visual Studio]
 - custom Ribbon, multiple Ribbons
 ms.assetid: 2bdef092-190d-47e3-9440-e862b95dacaa
-caps.latest.revision: 64
-author: kempb
-ms.author: kempb
+caps.latest.revision: "64"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 4335f1f397d8497ca0aaa359e443b823d7441dbe
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 52583bdbf6edf4f2a698bc8662a0faf659841926
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ribbon-overview"></a>Ribbon Overview
-  The Ribbon is a way to organize related commands so that they are easier to find. Commands appear as controls on the Ribbon. Controls are organized into *groups* along a horizontal strip at the top edge of an application window. Related groups are organized on tabs.  
+# <a name="ribbon-overview"></a>Обзор ленты
+  Лента позволяет так организовать связанные команды, чтобы их можно было легко найти. Команды отображаются на ленте в виде элементов управления. Элементы управления объединены в *группы* на горизонтальной полосе в верхней части окна приложения. Связанные группы расположены на вкладках.  
   
- Most of the features that were accessed by using menus and toolbars in earlier versions of the Microsoft Office system can now be accessed by using the Ribbon. For more information, see the technical article [Developer Overview of the User Interface for the 2007 Microsoft Office System](http://go.microsoft.com/fwlink/?LinkID=70860).  
+ Большинство возможностей, доступ к которым раньше выполнялся с помощью меню и панелей инструментов в более ранних версиях системы Microsoft Office, теперь доступны с помощью ленты. Дополнительные сведения см. в технической статье [разработчиков обзор пользовательского интерфейса для Microsoft Office 2007](http://go.microsoft.com/fwlink/?LinkID=70860).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-## <a name="customizing-the-microsoft-office-ribbon"></a>Customizing the Microsoft Office Ribbon  
- To customize the Ribbon, add one of the following Ribbon items to your Office project:  
+## <a name="customizing-the-microsoft-office-ribbon"></a>Настройка ленты Microsoft Office  
+ Для настройки ленты добавьте один из указанных ниже элементов ленты в проект Office:  
   
--   **Ribbon (Visual Designer)**  
+-   **Лента (визуальный конструктор)**  
   
--   **Ribbon (XML)**  
+-   **Лента (XML)**  
   
- For example, to customize the Excel Ribbon, add a Ribbon item to an Excel VSTO Add-in project.  
+ Например, для настройки ленты Excel добавьте элемент ленты в проект надстройки VSTO для Excel.  
   
-### <a name="ribbon-visual-designer-item"></a>Ribbon (Visual Designer) Item  
- The **Ribbon (Visual Designer)** item provides advanced tools that make it easier for you to design and develop a custom Ribbon. Use the **Ribbon (Visual Designer)** item to customize the Ribbon in the following ways:  
+### <a name="ribbon-visual-designer-item"></a>Элемент «Лента (визуальный конструктор)»  
+ **Лента (визуальный конструктор)** предоставляет расширенные средства, облегчающие проектирование и разработку настраиваемой ленты. Используйте **Лента (визуальный конструктор)** элемента для настройки ленты следующими способами:  
   
--   Add custom or built-in tabs to a Ribbon.  
+-   Добавление пользовательских или встроенных вкладок на ленту.  
   
--   Add custom groups to a custom or built-in tab.  
-  
-    > [!NOTE]  
-    >  A built-in tab or group is one that already exists on the Ribbon of a Microsoft Office application. For example, the **Data** tab is a built-in tab in Excel. The **Connections** group is a built-in group on the **Data** tab.  
-  
--   Add custom controls to a custom group.  
-  
--   Add custom controls to the Backstage View.  
-  
- For more information about how to customize a Ribbon by using the **Ribbon (Visual Designer)** item, see [Ribbon Designer](../vsto/ribbon-designer.md).  
-  
-### <a name="ribbon-xml-item"></a>Ribbon (XML) Item  
- Use the **Ribbon (XML)** item if you want to customize the Ribbon in a way that is not supported by the **Ribbon (Visual Designer)** item. Use the **Ribbon (XML)** item to customize the Ribbon in the following ways:  
-  
--   Add *built-in* groups to a custom tab or built-in tab.  
-  
--   Add built-in controls to a custom group.  
-  
--   Add custom code to override the event handlers of built-in controls.  
-  
--   Customize the Quick Access Toolbar.  
-  
--   Share a Ribbon customization between VSTO Add-in by using a qualified ID.  
-  
- For more information about how to customize the Ribbon by using the **Ribbon (XML)** item, see [Ribbon XML](../vsto/ribbon-xml.md).  
-  
-## <a name="exporting-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Exporting a Ribbon from the Ribbon Designer to Ribbon XML  
- If you create a Ribbon by using the Ribbon Designer, and then decide that you want to customize the Ribbon in ways that the **Ribbon (Visual Designer)** item does not support, you can export the Ribbon to XML.  
-  
- Visual Studio automatically creates a **Ribbon (XML)** item and populates the Ribbon XML file with elements and attributes for each control on the Ribbon.  
-  
- Not all of the properties that are in the **Properties** window of the Ribbon designer are transferred to the Ribbon XML file.  For example, Visual Studio does not export the value of the **Image** or **Text** property. That is because you must create a callback method in the Ribbon code file of the exported project to assign an image or set the text of a control. Visual Studio does not automatically generate callback methods as part of the export process.  
-  
- In addition, any unchanged default property values do not appear in the resulting Ribbon XML file.  
-  
- For more information about how to export the Ribbon to XML, see [How to: Export a Ribbon from the Ribbon Designer to Ribbon XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
-  
-### <a name="updating-the-code"></a>Updating the Code  
- A new Ribbon code file is added to **Solution Explorer**. This file contains the Ribbon XML class. You must create callback methods in the `Ribbon Callbacks` region of this class to handle user actions, such as clicking a button. Move your code from the event handlers to these callback methods and modify the code to work with the Ribbon extensibility (RibbonX) programming model. For more information, see [Ribbon XML](../vsto/ribbon-xml.md).  
-  
- You must also add code to the `ThisAddIn`, `ThisWorkbook`, or `ThisDocument` class that overrides the CreateRibbonExtensibilityObject method and returns the Ribbon XML class to the Office application.  
-  
- For more information, see [Ribbon XML](../vsto/ribbon-xml.md).  
-  
-## <a name="adding-multiple-ribbon-items-to-a-project"></a>Adding Multiple Ribbon Items to a Project  
- You can add more than one Ribbon item to a single project. This is useful if you want to perform either of the following two tasks:  
-  
--   Create Ribbons for Outlook *Inspectors*. For more information, see [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
+-   Добавление пользовательских групп на встроенную или пользовательскую вкладку на ленте.  
   
     > [!NOTE]  
-    >  An Inspector is a window that opens when users perform certain tasks, such as creating an e-mail message.  
+    >  Встроенная вкладка или группа — это вкладка или группа, которая уже есть на ленте приложения Microsoft Office. Например **данные** — Встроенная вкладка в Excel. **Подключений** группа включена встроенная группа **данные** вкладки.  
   
--   Select which Ribbon to display at run time.  
+-   Добавление пользовательских элементов в пользовательскую группу.  
   
-### <a name="selecting-which-ribbons-to-display-at-run-time"></a>Selecting Which Ribbons to Display at Run Time  
- Because a project can contain more than one Ribbon, you can select which Ribbon to display at run time.  
+-   Добавление пользовательских элементов управления в представление Backstage.  
   
- To select a Ribbon to display at run time, override the CreateRibbonExtensibilityObject method in the `ThisAddin`, `ThisWorkbook`, or `ThisDocument` class of your project and return the Ribbon that you want to display. The following example checks the value of a field named `myCondition` and returns the appropriate Ribbon.  
+ Дополнительные сведения о настройке ленты с помощью **Лента (визуальный конструктор)** см. в разделе [конструктор лент](../vsto/ribbon-designer.md).  
+  
+### <a name="ribbon-xml-item"></a>Элемент «Лента (XML)»  
+ Используйте **Лента (XML)** элемент, если вы хотите настроить ленту способом, который не поддерживается **Лента (визуальный конструктор)** элемента. Используйте **Лента (XML)** элемента для настройки ленты следующими способами:  
+  
+-   Добавить *встроенные* групп на встроенную вкладку или пользовательскую вкладку.  
+  
+-   Добавление встроенных элементов управления в пользовательскую группу.  
+  
+-   Добавление пользовательского кода для переопределения обработчиков событий встроенных элементов управления.  
+  
+-   Настройка панели быстрого доступа.  
+  
+-   Совместное использование настройки ленты между надстройками VSTO с помощью полного идентификатора.  
+  
+ Дополнительные сведения о настройке ленты с помощью **Лента (XML)** см. в разделе [XML-ленты](../vsto/ribbon-xml.md).  
+  
+## <a name="exporting-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Экспорт ленты из конструктора лент в XML-ленту  
+ Если вы создали ленту с помощью конструктора лент и решить, нужно настроить ленту таким способом, **Лента (визуальный конструктор)** элемент не поддерживает, можно экспортировать ленту в формат XML.  
+  
+ Visual Studio автоматически создает **Лента (XML)** и заполняет XML-файл ленты элементами и атрибутами для каждого элемента управления на ленте.  
+  
+ Не все свойства, которые находятся в **свойства** окна конструктора лент, переносятся в XML-файле ленты.  Например, Visual Studio не экспортирует значение **изображения** или **текст** свойство. Это связано с тем, что необходимо создать метод обратного вызова в файле кода ленты экспортированного проекта, чтобы указать изображение или текст элемента управления. Visual Studio не создает методы обратного вызова автоматически в процессе экспорта.  
+  
+ Кроме того, все неизмененные значения свойств по умолчанию не отображаются в полученном файле XML-ленты.  
+  
+ Дополнительные сведения об экспорте ленты в формат XML см. в разделе [как: экспорт ленты из конструктора лент в XML-ленты](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
+  
+### <a name="updating-the-code"></a>Обновление кода  
+ Новый файл кода ленты добавляется **обозревателе решений**. Он содержит класс XML ленты. Вам необходимо создать методы обратного вызова в области `Ribbon Callbacks` этого класса для обработки действий пользователя, таких как нажатие кнопки. Переместите свой код из обработчиков событий в методы обратного вызова и модифицируйте этот код, чтобы работать с моделью программирования расширения ленты (RibbonX). Дополнительные сведения см. в разделе [Ribbon XML](../vsto/ribbon-xml.md).  
+  
+ Необходимо также добавить код для `ThisAddIn`, `ThisWorkbook`, или `ThisDocument` класс, который переопределяет метод CreateRibbonExtensibilityObject и возвращает класс XML ленты в приложение Office.  
+  
+ Дополнительные сведения см. в разделе [Ribbon XML](../vsto/ribbon-xml.md).  
+  
+## <a name="adding-multiple-ribbon-items-to-a-project"></a>Добавление нескольких элементов ленты в проект  
+ В один проект можно добавить несколько лент. Это полезно, если вам необходимо выполнить одно из следующих действий.  
+  
+-   Создать ленты для Outlook *инспекторов*. Дополнительные сведения см. в разделе [Настройка ленты для Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
+  
+    > [!NOTE]  
+    >  Инспектор — это окно, которое открывается при выполнении пользователем определенных задач, таких как создание электронного сообщения.  
+  
+-   Выбрать ленту, которая отображается во время выполнения.  
+  
+### <a name="selecting-which-ribbons-to-display-at-run-time"></a>Выбор лент, которые отображаются во время выполнения  
+ Поскольку проект может содержать несколько лент, вы можете выбрать, какую ленту следует отображать во время выполнения.  
+  
+ Чтобы выбрать ленту следует отображать во время выполнения, переопределите метод CreateRibbonExtensibilityObject в `ThisAddin`, `ThisWorkbook`, или `ThisDocument` класс проекта и возвратите ленту, будет отображаться. Следующий пример проверяет значение поля с именем `myCondition` и возвращает соответствующую ленту.  
   
 > [!NOTE]  
->  The syntax used in this example returns a Ribbon that was created by using the **Ribbon (Visual Designer)** item. The syntax for returning a Ribbon that is created by using a **Ribbon (XML)** item is slightly different. For more information about returning a **Ribbon (XML)** item, see [Ribbon XML](../vsto/ribbon-xml.md).  
+>  Синтаксис, используемый в этом примере, возвращает ленту, была создана с помощью **Лента (визуальный конструктор)** элемента. Синтаксис, возвращающий ленту, созданную с помощью **Лента (XML)** немного отличается. Дополнительные сведения о возврате **Лента (XML)** см. в разделе [XML-ленты](../vsto/ribbon-xml.md).  
   
- Add the following code:  
+ Добавьте следующий код:  
   
- [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)] [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]  
+ [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)]
+ [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]  
   
-### <a name="related-topics"></a>Related Topics  
+### <a name="related-topics"></a>Связанные разделы  
   
-|Title|Description|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
-|[How to: Get Started Customizing the Ribbon](../vsto/how-to-get-started-customizing-the-ribbon.md)|Shows you how to customize the Ribbon of a Microsoft Office application, add a **Ribbon (Visual Designer)** or **Ribbon (XML)** item to an Office project.|  
-|[Ribbon Designer](../vsto/ribbon-designer.md)|Describes how you can use the Ribbon Designer to add custom tabs, groups, and controls to the Ribbon of a Microsoft Office application.|  
-|[Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Shows you how to create a custom Ribbon tab by using the Ribbon Designer. You can use the Ribbon Designer to add and position controls on the custom tab.|  
-|[Ribbon Object Model Overview](../vsto/ribbon-object-model-overview.md)|Provides an overview of the strongly typed object model that you can use to get and set the properties of Ribbon controls at run time.|  
-|[Walkthrough: Updating the Controls on a Ribbon at Run Time](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|Demonstrates how to use the Ribbon object model to update the controls on a Ribbon after the Ribbon is loaded into the Office application.|  
-|[Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md)|Provides guidance for customizing the Ribbon in Microsoft Office Outlook.|  
-|[Customizing a Ribbon for InfoPath](../vsto/customizing-a-ribbon-for-infopath.md)|Provides guidance for customizing the Ribbon in Microsoft Office InfoPath.|  
-|[Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)|Shows how to show, hide, and modify the Ribbon, and enable users to run the code from controls in a custom task pane, actions pane, or Outlook form region.|  
-|[How to: Change the Position of a Tab on the Ribbon](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Shows how to change the order of tabs on a Ribbon.|  
-|[How to: Customize a Built-in Tab](../vsto/how-to-customize-a-built-in-tab.md)|Shows how to add groups and controls to a built-in tab.|  
-|[How to: Add Controls to the Backstage View](../vsto/how-to-add-controls-to-the-backstage-view.md)|Shows how to add controls to the menu that opens when you click the **File**.|  
-|[How to: Add a Dialog Box Launcher to a Ribbon Group](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Shows to add a dialog box launcher to any group on a Ribbon.|  
-|[How to: Export a Ribbon from the Ribbon Designer to Ribbon XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Shows how to customize the Ribbon in advanced ways by exporting the Ribbon from the designer to Ribbon XML.|  
-|[Ribbon XML](../vsto/ribbon-xml.md)|Explains how you can customize a Ribbon by using Ribbon XML.|  
-|[Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Demonstrates how to create a custom Ribbon tab by using the **Ribbon (XML)** item.|  
+|[Практическое руководство. Приступая к настройке ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)|Показано, как настроить ленту приложения Microsoft Office, добавьте **Лента (визуальный конструктор)** или **Лента (XML)** элемента в проект Office.|  
+|[Конструктор лент](../vsto/ribbon-designer.md)|Описание использования конструктора лент для добавления пользовательских вкладок, групп и элементов управления на ленту приложения Microsoft Office.|  
+|[Пошаговое руководство. Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Здесь показано, как создать настраиваемую вкладку ленты с помощью конструктора лент. Конструктор лент позволяет добавлять и размещать элементы управления на настраиваемой вкладке.|  
+|[Общие сведения об объектной модели ленты](../vsto/ribbon-object-model-overview.md)|Общие сведения о строго типизированной объектной модели, которую можно использовать для получения и установки свойств элементов управления ленты во время выполнения.|  
+|[Пошаговое руководство. Обновление элементов управления на ленте во время выполнения](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|Здесь показано, как использовать объектную модель ленты для обновления элементов управления на ленте после загрузки ленты в приложение Office.|  
+|[Настройка ленты для Outlook](../vsto/customizing-a-ribbon-for-outlook.md)|Рекомендации по настройке ленты в Microsoft Office Outlook.|  
+|[Настройка ленты для InfoPath](../vsto/customizing-a-ribbon-for-infopath.md)|Рекомендации по настройке ленты в Microsoft Office InfoPath.|  
+|[Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)|Здесь показано, как отобразить, скрыть или изменить ленту и позволить пользователям запускать код из элементов управления в настраиваемой области задач, панели действий или области формы Outlook.|  
+|[Практическое руководство. Изменение положения вкладки на ленте](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Здесь показано, как изменить порядок вкладок на ленте.|  
+|[Практическое руководство. Настройка встроенной вкладки](../vsto/how-to-customize-a-built-in-tab.md)|Здесь показано, как добавить группы и элементы управления на встроенную вкладку.|  
+|[Практическое руководство. Добавление элементов управления в представление Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)|Демонстрируется добавление элементов управления в меню, которое открывается при нажатии кнопки **файл**.|  
+|[Практическое руководство. Добавление кнопки запуска диалогового окна в группу ленты](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Здесь показано, как добавить кнопку запуска диалогового окна в любую группу ленты.|  
+|[Практическое руководство. Экспорт лент из конструктора лент в XML-ленты](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Здесь описываются расширенные способы настройки ленты с помощью экспорта ленты из конструктора в XML.|  
+|[XML-ленты](../vsto/ribbon-xml.md)|Описание настройки ленты с помощью XML-ленты.|  
+|[Пошаговое руководство. Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Показано, как создать настраиваемую вкладку ленты с помощью **Лента (XML)** элемента.|  
   
   

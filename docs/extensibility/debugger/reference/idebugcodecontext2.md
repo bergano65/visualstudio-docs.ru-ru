@@ -1,63 +1,63 @@
 ---
-title: "IDebugCodeContext2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCodeContext2"
-helpviewer_keywords: 
-  - "Интерфейс IDebugCodeContext2"
+title: "IDebugCodeContext2 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCodeContext2
+helpviewer_keywords: IDebugCodeContext2 interface
 ms.assetid: 3670439e-2171-405d-9d77-dedb0f1cba93
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e9e003372e390d7e807f314555310c167bf011a8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCodeContext2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Этот интерфейс представляет начальную позицию инструкции кода.  Для большинства архитектур времени выполнения, сегодня контекст кода можно рассматривать как адреса в потоке выполнения программы.  
+# <a name="idebugcodecontext2"></a>IDebugCodeContext2
+Этот интерфейс представляет начальную позицию инструкции кода. Для большинства архитектур во время выполнения в настоящее время контекст кода может рассматриваться как адрес в поток выполнения программы.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
-IDebugCodeContext2 : IDebugMemoryContext2  
+IDebugCodeContext2 : IDebugMemoryContext2  
 ```  
   
-## Примечания по реализации  
- Отладчик реализующий этот интерфейс, чтобы связать позиция инструкции кода в позиции документа.  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
+ Модуль отладки реализует этот интерфейс для связи позицию инструкции кода место документа.  
   
-## Замечания для вызывающих объектов  
- Методы во многих интерфейсы возвращают этот интерфейс, обычно [GetCodeContext](../Topic/IDebugStackFrame2::GetCodeContext.md).  Кроме того, широко используется с [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) интерфейс так же, как в данных о разрешениях точки останова.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Для многих интерфейсов они возвращают этот интерфейс, чаще всего [GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md). Он также широко используется с [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) интерфейс также как сведения о точках останова разрешения.  
   
-## Методы в том порядке Vtable  
- в дополнение к методам на [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) интерфейс этот интерфейс реализует следующие методы:  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
+ В дополнение к методам на [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) интерфейс, этот интерфейс реализует следующие методы:  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[GetDocumentContext](../Topic/IDebugCodeContext2::GetDocumentContext.md)|Возвращает контекст документа, соответствующий активный контекст кода.|  
-|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|Получает сведения о языке для этого контекста кода.|  
+|------------|-----------------|  
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)|Возвращает контекст документа, соответствующий контексту активного кода.|  
+|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|Возвращает сведения о языке для этого контекста кода.|  
   
-## Заметки  
- Ключевое различие между `IDebugCodeContext2` интерфейс и  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) интерфейс, который  `IDebugCodeContext2` всегда инструкци\-выравнивает.  Это означает, что `IDebugCodeContext2` всегда указывает на начало инструкции, тогда как  `IDebugMemoryContext2` может указывать на любой байту памяти в архитектуре среды выполнения.  `IDebugCodeContext2` увеличивает инструкциям, а не размер базового хранилища \(обычно байтом\).  
+## <a name="remarks"></a>Примечания  
+ Основное различие между `IDebugCodeContext2` интерфейс и [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) интерфейс является, `IDebugCodeContext2` всегда инструкции по левому краю. Это означает, что `IDebugCodeContext2` всегда указывает на начало инструкцию, тогда как `IDebugMemoryContext2` может указывать любой байт памяти в архитектуре во время выполнения. `IDebugCodeContext2`увеличивается на инструкции, а не размер основное хранилище (обычно байт).  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)   
- [CanSetNextStatement](../Topic/IDebugThread2::CanSetNextStatement.md)   
+ [CanSetNextStatement](../../../extensibility/debugger/reference/idebugthread2-cansetnextstatement.md)   
  [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)   
  [GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)   
- [GetCodeContext](../Topic/IDebugStackFrame2::GetCodeContext.md)   
+ [GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)   
  [Далее](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)   
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

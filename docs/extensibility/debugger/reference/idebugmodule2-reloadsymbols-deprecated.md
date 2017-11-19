@@ -1,57 +1,57 @@
 ---
-title: "IDebugModule2::ReloadSymbols_Deprecated | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugModule2::ReloadSymbols"
-helpviewer_keywords: 
-  - "Метод IDebugModule2::ReloadSymbols"
+title: "IDebugModule2::ReloadSymbols_Deprecated | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugModule2::ReloadSymbols
+helpviewer_keywords: IDebugModule2::ReloadSymbols method
 ms.assetid: 0f9f0133-7d58-4cd9-a6ca-1141e095749d
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 3923431ed4936cf34a077d8d5d818c96e9630221
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugModule2::ReloadSymbols_Deprecated
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-УСТАРЕЛ.  НЕ ИСПОЛЬЗУЙТЕ.  Перезагрузить символов для этого модуля.  
+# <a name="idebugmodule2reloadsymbolsdeprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
+УСТАРЕВШИЕ. НЕ СЛЕДУЕТ ИСПОЛЬЗОВАТЬ. Повторно загружает символы для данного модуля.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT ReloadSymbols(   
-   LPCOLESTR pszUrlToSymbols,  
-   BSTR*     pbstrDebugMessage  
+```cpp  
+HRESULT ReloadSymbols(   
+   LPCOLESTR pszUrlToSymbols,  
+   BSTR*     pbstrDebugMessage  
 );  
 ```  
   
-```c#  
-int ReloadSymbols(   
-   string     pszUrlToSymbols,  
-   out string pbstrDebugMessage  
+```csharp  
+int ReloadSymbols(   
+   string     pszUrlToSymbols,  
+   out string pbstrDebugMessage  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pszUrlToSymbols`  
- \[in\] путь в хранилище символов.  
+ [in] Путь в хранилище символов.  
   
  `pbstrDebugMessage`  
- \[out\] возвращает информационное сообщение, например состояние или сообщение об ошибке, в котором отображаются справа от имени модуля в окне модули.  
+ [out] Возвращает информационное сообщение, такие как состояние или сообщение об ошибке, который отображается справа от имени модуля в окне «модули».  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  Отладчик должен всегда возвращать `E_FAIL`.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Модуль отладки всегда должны возвращать `E_FAIL`.  
   
-## Заметки  
- Этот метод больше не поддерживается.  Реализуйте [LoadSymbols](../Topic/IDebugModule3::LoadSymbols.md) вместо этого метод.  
+## <a name="remarks"></a>Примечания  
+ Этот метод больше не поддерживается. Реализуйте [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) метод вместо него.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)   
- [LoadSymbols](../Topic/IDebugModule3::LoadSymbols.md)
+ [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md)

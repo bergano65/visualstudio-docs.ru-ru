@@ -1,52 +1,52 @@
 ---
-title: "IPropertyProxyEESide::InitSourceDataProvider | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IPropertyProxyEESide::InitSourceDataProvider"
-helpviewer_keywords: 
-  - "IPropertyProxyEESide::InitSourceDataProvider"
+title: "IPropertyProxyEESide::InitSourceDataProvider | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IPropertyProxyEESide::InitSourceDataProvider
+helpviewer_keywords: IPropertyProxyEESide::InitSourceDataProvider
 ms.assetid: 5156f593-5052-4e3a-9d02-081916fb342d
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 97aec8a64cfa57bda8b1814fac50851c9cde61e1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IPropertyProxyEESide::InitSourceDataProvider
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
 Инициализирует исходные данные для этого объекта и возвращает объект, содержащий исходные данные.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT InitSourceDataProvider(  
-   IEEDataStorage** dataOut  
+   IEEDataStorage** dataOut  
 );  
 ```  
   
-```c#  
+```csharp  
 int InitSourceDataProvider(  
-   out IEEDataStorage dataOut  
+   out IEEDataStorage dataOut  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `dataOut`  
- \[out\] возвращает [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) object  
+ [out] Возвращает [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объекта  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Этот метод делает все действия, необходимая для инициализации объекта поэтому он может возвратить [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) интерфейс данных объекта.  Это позволяет данные объекта, который будет просматривать и, если разрешено изменимые визуализатор типа.  
+## <a name="remarks"></a>Примечания  
+ Этот метод не выполняет все, что необходимо инициализировать объект, чтобы он мог вернуть [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) интерфейс для объекта данных. Это позволяет данных объекта для просмотра и, если это разрешено, изменять тип визуализатора.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

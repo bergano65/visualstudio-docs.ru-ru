@@ -1,57 +1,57 @@
 ---
-title: "Развертывание приложений, служб и компонентов | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "приложения .NET, развертывание"
-  - "компоненты [платформа .NET Framework], развертывание"
-  - "компоненты [Visual Studio], развертывание"
-  - "развертывание приложений [Visual Studio]"
-  - "развертывание приложений [Visual Studio], о развертывании приложений"
-  - "установщики"
-  - "публикация"
+title: "Развертывание приложений, служб и компонентов | Документы Microsoft"
+ms.custom: 
+ms.date: 07/14/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- .NET applications, deploying
+- components [Visual Studio], deploying
+- installers
+- publishing
+- deploying applications [Visual Studio]
+- deploying applications [Visual Studio], about deploying applications
+- components [.NET Framework], deploying
 ms.assetid: 63fcdd5b-2e54-4210-9038-65bc23167725
-caps.latest.revision: 33
-caps.handback.revision: 33
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "33"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 9d9aeaa80aa054b8178adbfc707b1537449776d7
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/11/2017
 ---
-# Развертывание приложений, служб и компонентов
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+# <a name="deploying-applications-services-and-components"></a>Развертывание приложений, служб и компонентов
 
-Развертывание приложения, службы или компонента — это механизм их распространения для установки на других компьютерах, устройствах, серверах и в облаке.  В Visual Studio можно выбрать соответствующий подход в зависимости от требуемого типа развертывания.  
+Развертывание приложения, службы или компонента — это механизм их распространения для установки на других компьютерах, устройствах, серверах и в облаке. В Visual Studio можно выбрать соответствующий подход в зависимости от требуемого типа развертывания.  
   
- В следующей таблице приведены описания различных сценариев развертывания и даны ссылки на более подробные сведения о реализации этих сценариев.  
+В следующей таблице описаны различные сценарии развертывания и ссылки на дополнительные сведения для каждого сценария.  
+
+Описание способа работы программы установки для приложения Windows, см. в разделе [рабочего стола для универсальной платформы Windows (UWP) моста](/windows/uwp/porting/desktop-to-uwp-root#convert).
+
+ 
+## <a name="in-this-section"></a>Содержание  
   
-## В этом подразделе  
-  
-|Сценарий развертывания|Справочные материалы|  
-|----------------------------|--------------------------|  
-|**Публикация в облаке**. Visual Studio позволяет сделать приложения, службы и данные доступными отовсюду за счет их развертывания в Microsoft Azure.|[Публикация приложений в Microsoft Azure](http://msdn.microsoft.com/library/windowsazure/ee460772.aspx)|  
-|**Публикация приложения для Магазина Windows**. Вы можете легко собрать приложение и отправить его в Магазин Windows для продажи клиентам по всему миру.|[Упаковка, развертывание и запрос приложений для Магазина Windows](http://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
-|**Публикация приложения Windows Phone**. Вы можете отправить новое приложение или обновление существующего приложения на сертификацию в центре разработчиков Windows Phone.|[Публикация приложения Windows Phone](http://dev.windowsphone.com/RU/publish)|  
-|**Развертывание приложения или службы ASP.NET**. Приложения и службы ASP.NET можно развертывать несколькими способами.|[Развертывание веб\-приложений и служб ASP.NET](http://www.asp.net/aspnet/overview/deployment)|  
-|**Развертывание приложения или службы LightSwitch**. После создания приложений и служб OData с помощью LightSwitch можно развертывать их на веб\-сервере или в Microsoft Azure.|[Развертывание приложений LightSwitch](../Topic/Deploying%20LightSwitch%20Applications.md)|  
-|**Публикация приложения для SharePoint**. Вы можете опубликовать приложение для SharePoint в Магазине Office или в каталоге приложений внутри организации.|[Публикация приложения для SharePoint с помощью Visual Studio](http://msdn.microsoft.com/library/office/jj220044\(v=office.15\).aspx)|  
-|**Публикация приложения для Office**. Вы можете опубликовать приложение для Office в Магазине Office или в каталоге приложений внутри организации.|[Публикация своего приложения для Office](http://msdn.microsoft.com/library/office/fp123515.aspx)|  
-|**Развертывание службы WCF**. Другие приложения могут использовать службы RIA WCF, развертываемые на веб\-сервере.|[Развертывание решений на основе служб WCF RIA](http://msdn.microsoft.com/library/ff426912\(v=vs.91\).aspx)|  
-|**Развертывание службы OData**. Другие приложения могут использовать службы OData, развертываемые на веб\-сервере.|[Развертывание службы OData](http://msdn.microsoft.com/library/hh973447.aspx)|  
-|**Развертывание классических приложений**. С помощью развертывания ClickOnce можно опубликовать классическое приложение на веб\-сервере или в общей сетевой папке.  Затем пользователи смогут устанавливать приложение одним щелчком.|[Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)|  
-|**Создание программы установки** . Вы можете создать программу установки с помощью компонента InstallShield Limited Edition, который распространяется бесплатно.|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
-|**Поддержка существующей программы установки**. Продолжайте использовать программу установки, созданную в более ранней версии Visual Studio, установив расширение проектов установщиков Visual Studio.|[Расширение проектов установщиков Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2014/04/17/visual-studio-installer-projects-extension.aspx)<br /><br /> Документация по проектам установщиков доступна на следующей странице: [Развертывание установщика Visual Studio](http://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
-|**Развертывание приложения Visual C\+\+**. Вы можете развернуть среду выполнения Visual C\+\+ с приложением с использованием центрального развертывания, локального развертывания или статическое связывания.|[Развертывание приложений, разработанных специально для настольных систем \(Visual C\+\+\)](http://msdn.microsoft.com/library/zebw5zk9.aspx)|  
-|**Развертывание приложения для тестирования**. Вы можете применить более сложные процедуры разработки и тестирования, развернув приложение в виртуальных средах.|[Тестирование в лабораторной среде](/devops-test-docs/test/test-on-a-lab-environment)|  
-|**Установка необходимых компонентов**. Вы можете установить компоненты, необходимые для классических приложений, путем настройки универсального установщика, также называемого загрузчиком.|[Предварительные условия для развертывания приложения](../deployment/application-deployment-prerequisites.md)|
+| Сценарий развертывания | Справочные материалы |
+| --- | --- |  
+| **Публикация в облаке:** предоставления приложений, служб и данных из в любом месте, с помощью Visual Studio можно развертывать на Microsoft Azure.|[Публикация приложений в Microsoft Azure](http://msdn.microsoft.com/library/windowsazure/ee460772.aspx) |
+| **Публикация приложения Windows:** легко сборки, отправки и продавать приложения из магазина Microsoft клиентам по всему миру. |[Публикация приложения Windows](https://developer.microsoft.com/store/publish-apps) |
+| **Развертывание приложения ASP.NET или службы:** развертыванием приложений и служб ASP.NET несколькими различными способами.|[Развертывание веб-приложений ASP.NET и служб](http://www.asp.net/aspnet/overview/deployment) |
+| **Публикация надстройку для Office:** публикацией надстройку для Office в Visual Studio. | [Развертывание и публикация надстройки Office](https://dev.office.com/docs/add-ins/publish/publish) |
+| **Развертывание службы WCF или OData:** другие приложения могут использовать службы WCF RIA, развертываемые на веб-сервере. | [Разработка и развертывание служб данных WCF](https://docs.microsoft.com/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
+| **Развертывание классических приложений:** с помощью развертывания ClickOnce, можно опубликовать классическое приложение на веб-сервере или в сетевой общей папке. Затем пользователи смогут устанавливать приложение одним щелчком. | [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md) |
+| **Развертывание приложения Visual C++:** среды выполнения Visual C++ с помощью приложения можно развернуть с помощью центральное развертывание, локальное развертывание или статическое связывание. | [Развертывание классических приложений неуправляемого кода (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md) |
+| **Создать программу установки:** WiX на основе MSI установщика можно создать с помощью [2017 г. расширение WiX набора средств Visual Studio](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Обратите внимание, что InstallShield Limited Edition больше не входят в состав Visual Studio; Уточните [программного обеспечения Flexera](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) о доступности для Visual Studio 2017 г. |
+| **Развертывание приложения для тестирования:** можно включить более сложную разработку и тестирование путем развертывания приложений в виртуальных средах.|[Тестирование в лабораторной среде](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md) | 
+| **Установка необходимых компонентов:** можно установить необходимые компоненты для настольных приложений путем настройки универсального установщика, также называемого загрузчиком.|[Обязательные требования к развертыванию приложений](../deployment/application-deployment-prerequisites.md) |
+| **Развертывание приложения или службы LightSwitch:** LightSwitch больше не поддерживается в Visual Studio 2017 г., но по-прежнему могут развертываться из Visual Studio 2015 и более ранних версий. | [Развертывание приложений LightSwitch](http://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |  

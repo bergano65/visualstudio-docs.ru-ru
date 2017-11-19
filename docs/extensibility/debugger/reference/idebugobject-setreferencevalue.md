@@ -1,52 +1,52 @@
 ---
-title: "IDebugObject::SetReferenceValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugObject::SetReferenceValue"
-helpviewer_keywords: 
-  - "Метод IDebugObject::SetReferenceValue"
+title: "IDebugObject::SetReferenceValue | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugObject::SetReferenceValue
+helpviewer_keywords: IDebugObject::SetReferenceValue method
 ms.assetid: 08c78a4e-98eb-41cb-8b75-02a6a43d49f7
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1e001e747279ad64c97c500079adc9c4574d1d33
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugObject::SetReferenceValue
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Устанавливает значение ссылки данного объекта.  
+# <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
+Задает значение ссылки из этого объекта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT SetReferenceValue(   
-   IDebugObject* pObject  
+```cpp  
+HRESULT SetReferenceValue(   
+   IDebugObject* pObject  
 );  
 ```  
   
-```c#  
+```csharp  
 int SetReferenceValue(  
-   [In] IDebugObject pObject  
+   [In] IDebugObject pObject  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pObject`  
- \[in\] IDebugObject объект, представляющий новое значение ссылки.  
+ [in] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объект, представляющий значение ссылки на новый.  
   
-## Возвращаемое значение  
- В случае успеха возвращает значение S\_OK; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Этот метод делает это [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объект ссылка на значение объекта уступанного  `pObject` параметр генерация прочь любую предыдущую ссылку.  Обратите внимание, что это `IDebugObject` объект уже должен быть ссылочным типом.  
+## <a name="remarks"></a>Примечания  
+ Этот метод делает этот [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объекта ссылку на значение объекта, указанного в `pObject` параметра отбрасывание все предыдущие ссылки. Обратите внимание, это `IDebugObject` объект уже должен быть ссылочным типом.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

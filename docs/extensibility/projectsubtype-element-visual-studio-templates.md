@@ -1,72 +1,77 @@
 ---
-title: "Элемент ProjectSubType (шаблоны Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#ProjectSubType"
-helpviewer_keywords: 
-  - "<ProjectSubType> - элемент [шаблоны Visual Studio]"
-  - "ProjectSubType - элемент [шаблоны Visual Studio]"
+title: "Элемент ProjectSubType (шаблоны Visual Studio) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#ProjectSubType
+helpviewer_keywords:
+- ProjectSubType element [Visual Studio Templates]
+- <ProjectSubType> element [Visual Studio Templates]
 ms.assetid: f6895cd4-3e95-4f0e-aa9e-8c7750f46ed4
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c42cfdd72207fdca7fbbe0b17b0f96f20066f098
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Элемент ProjectSubType (шаблоны Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Классифицирует шаблон в подкатегорию значения, указанного в элементе `ProjectType`.  
+# <a name="projectsubtype-element-visual-studio-templates"></a>Элемент ProjectSubType (шаблоны Visual Studio)
+Классифицирует шаблон в подкатегорию значения, указанного в `ProjectType` элемент.  
   
-## Синтаксис  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<ProjectSubType >  
+  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <ProjectSubType> SubType </ProjectSubType>  
 ```  
   
-## Атрибуты и элементы  
- В следующих разделах описаны атрибуты, дочерние элементы и родительские элементы.  
+## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
-### Атрибуты  
+### <a name="attributes"></a>Атрибуты  
  Отсутствует.  
   
-### Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
   
-### Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Относит шаблон проекта к какой\-либо категории и определяет характеристики его отображения для диалоговых окон **Создать проект** или **Добавить новый элемент**.|  
+|-------------|-----------------|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
-## Текстовое значение  
+## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
  Это значение задает подкатегорию шаблона.  
   
-## Заметки  
- `ProjectSubType` является необязательным дочерним элементом для `TemplateData`.  
+## <a name="remarks"></a>Примечания  
+ `ProjectSubType` — необязательный дочерний элемент элемента `TemplateData`.  
   
- Элемент `ProjectSubType` предоставляет подкатегорию элементу [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md).  Значение может включать:  
+ `ProjectSubType` Элемент предоставляет подкатегорию для [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) элемента. Это значение может включать:  
   
--   `SmartDevice-NETCFv1`: указывает, что выбран шаблон, поддерживающий [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] версии 1.0.  
+-   `SmartDevice-NETCFv1`: Указывает, что предназначен шаблон [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] версии 1.0.  
   
--   `SmartDevice-NETCFv2`: указывает, что выбран шаблон, поддерживающий [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] версии 2.0.  
+-   `SmartDevice-NETCFv2`: Указывает, что целевые объекты tempalate [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] версии 2.0.  
   
- Если элемент содержит элемент `ProjectType` со значением `Web`, то `ProjectSubType` задает язык программирования шаблона.  Этот элемент может принимать следующие значения:  
+ Если шаблон содержит `ProjectType` элемент со значением `Web`, `ProjectSubType` элемент указывает язык программирования шаблона. Этот элемент может иметь следующие значения:  
   
--   `CSharp`: задает создание шаблоном веб\-проекта или элемента [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
+-   `CSharp`: Указывает, что этот шаблон создает [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] веб-проекта или элемента.  
   
--   `VisualBasic`: задает создание шаблоном веб\-проекта или элемента [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].  
+-   `VisualBasic`: Указывает, что этот шаблон создает [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] веб-проекта или элемента.  
   
-## Пример  
- В следующем примере демонстрируются метаданные для шаблона проекта приложения для устройств [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], предназначенных для [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] версии 2.0.  
+## <a name="example"></a>Пример  
+ В следующем примере показано метаданные для шаблона проекта [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения для устройств [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] версии 2.0.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -93,7 +98,7 @@ caps.handback.revision: 13
 </VSTemplate>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Создание пользовательских шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
- [Элемент ProjectType \(шаблоны Visual Studio\)](../extensibility/projecttype-element-visual-studio-templates.md)
+ [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
+ [Элемент ProjectType (шаблоны Visual Studio)](../extensibility/projecttype-element-visual-studio-templates.md)

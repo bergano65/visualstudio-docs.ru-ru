@@ -4,46 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#Project
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Project
 helpviewer_keywords:
 - Project element [Visual Studio Templates]
 - <Project> element [Visual Studio Templates]
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
-caps.latest.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f2995f6486ebb8d3e305c70c03fb543fab04b67a
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 6b4a60bdd81d2e6428d0fdafa6547227a496f862
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="project-element-visual-studio-templates"></a>Элемент Project (шаблоны Visual Studio)
-Указывает файлы или каталоги, чтобы добавить в проект.  
+Указывает, файлов или каталогов, добавляемых в проект.  
   
- \<VSTemplate настроек  
- \<TemplateContent настроек  
- \<Проект>  
+ \<VSTemplate >  
+ \<TemplateContent >  
+ \<Project>  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -64,16 +48,16 @@ ms.lasthandoff: 02/22/2017
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`File`|Обязательный атрибут.<br /><br /> Задает имя файла проекта в ZIP-файле шаблона.|  
+|`File`|Обязательный атрибут.<br /><br /> Указывает имя файла проекта в ZIP-файле шаблона.|  
 |`ReplaceParameters`|Необязательный атрибут.<br /><br /> Логическое значение, указывающее, содержит ли файл проекта значения параметров, которые должны быть заменены при создании проекта из шаблона. Значение по умолчанию — `false`.|  
 |`TargetFileName`|Необязательный атрибут.<br /><br /> Указывает имя файла проекта при создании проекта из шаблона.|  
-|`IgnoreProjectParameter`|Необязательный атрибут.<br /><br /> Указывает, следует ли добавить проект в текущее решение. Если значение пользовательского параметра «$*myCustomParameter*$» существует в файле замены параметров проекта создается, но не добавляется в рамках открытого решения.|  
+|`IgnoreProjectParameter`|Необязательный атрибут.<br /><br /> Указывает, следует ли добавить проект в текущее решение. Если значение пользовательского параметра, «$*myCustomParameter*$» существует в файле замены параметров проекта создается, но не добавлен в рамках открытого решения.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Папка](../extensibility/folder-element-visual-studio-project-templates.md)|Необязательный элемент.<br /><br /> Указывает папку, чтобы добавить в проект.|  
+|[Папка](../extensibility/folder-element-visual-studio-project-templates.md)|Необязательный элемент.<br /><br /> Указывает папку для добавления в проект.|  
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)|Необязательный элемент.<br /><br /> Задает файл для добавления в проект.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -85,11 +69,11 @@ ms.lasthandoff: 02/22/2017
 ## <a name="remarks"></a>Примечания  
  `Project` — необязательный дочерний элемент элемента `TemplateContent`.  
   
- `Project` Элемент используется для определения проекта и таким образом, действителен только в шаблонах проектов.  
+ `Project` Элемент используется для определения проекта и, таким образом, допустим только в шаблонах проектов.  
   
- `Project`элементы могут иметь [папки](../extensibility/folder-element-visual-studio-project-templates.md) дочерние элементы или [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) дочерние элементы, но не их комбинацией `Folder` и `ProjectItem` дочерние элементы.  
+ `Project`элементы могут иметь [папки](../extensibility/folder-element-visual-studio-project-templates.md) дочерние элементы или [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) дочерние элементы, но не сочетание обоих `Folder` и `ProjectItem` дочерние элементы.  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]автоматически переименовывает имя файла проекта, в зависимости от имени, введенного пользователем в **новый проект** диалоговое окно. Используйте `TargetFileName` атрибут, если вы хотите указать альтернативное имя файла для файлов проекта, созданные с помощью шаблона.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]автоматически переименовывает имя файла проекта, в зависимости от имени, введенного пользователем в **новый проект** диалоговое окно. Используйте `TargetFileName` атрибута, если вы хотите указать альтернативное имя файла для файлов проекта, созданных с использованием шаблона.  
   
 ## <a name="example"></a>Пример  
  В следующем примере показано метаданные для шаблона проекта [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения.  

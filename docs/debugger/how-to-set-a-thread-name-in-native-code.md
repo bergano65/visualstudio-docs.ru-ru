@@ -1,39 +1,42 @@
 ---
-title: "Практическое руководство. Установка имен потока в машинном коде | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "отладка [C++], потоки"
-  - "отладка [Visual Studio], потоки"
-  - "SetThreadName - функция"
-  - "имена потоков"
-  - "работа с потоками [Visual Studio], имена"
+title: "Как: Установка имени потока в машинном коде | Документы Microsoft"
+ms.custom: 
+ms.date: 04/27/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugging [C++], threads
+- SetThreadName function
+- threading [Visual Studio], names
+- thread names
+- debugging [Visual Studio], threads
 ms.assetid: c85d0968-9f22-4d69-87f4-acca2ae777b8
-caps.latest.revision: 37
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 37
+caps.latest.revision: "37"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2ded01065c3971daf630fd743d0ad017e2b3d91c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Установка имен потока в машинном коде
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+# <a name="how-to-set-a-thread-name-in-native-code"></a>Практическое руководство. Установка имен потока в машинном коде
+Именование потоков можно выполнить в любом выпуске Visual Studio. Именование потоков позволяет отслеживать их потоков в **потоков** окна.
 
-Для задания имени потока в программе используйте функцию `SetThreadName`, как показано в следующем примере. Обратите внимание, что имя потока копируется в поток, чтобы можно было освободить память для параметра `threadName`.  
+Для задания имени потока в программе используйте функцию `SetThreadName` , как показано в следующем примере. Обратите внимание, что имя потока копируется в поток, чтобы можно было освободить память для параметра `threadName` .  
   
-## Пример  
+## <a name="example"></a>Пример  
   
-```cpp  
+```C++  
 //  
 // Usage: SetThreadName ((DWORD)-1, "MainThread");  
 //  
@@ -66,7 +69,7 @@ void SetThreadName(DWORD dwThreadID, const char* threadName) {
   
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Отладка многопоточных приложений](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Просмотр данных в отладчике](../debugger/viewing-data-in-the-debugger.md)   
  [Практическое руководство. Установка имени потока в управляемом коде](../debugger/how-to-set-a-thread-name-in-managed-code.md)

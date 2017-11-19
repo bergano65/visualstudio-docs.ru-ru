@@ -1,49 +1,50 @@
 ---
-title: "Диалоговое окно &quot;Свойства потока&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Spy++, свойства потока"
-  - "свойства потока, Spy++"
+title: "Поток диалоговое окно «Свойства» | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Spy++, thread properties
+- thread properties, Spy++
 ms.assetid: 5352d11a-debb-4c20-b9a0-d37d94900b1c
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d9250db8b405885b5f8e8c76a68d0663c52d82ec
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Диалоговое окно &quot;Свойства потока&quot;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Это диалоговое окно используется для получения дополнительных сведений о конкретном потоке.  Чтобы открыть это диалоговое окно, переместите фокус на окно [Представление потоков](../debugger/threads-view.md) или откройте [Представление сообщений](../debugger/messages-view.md) и разверните сообщение.  Выберите любой узел потока в дереве, затем выберите в меню **Вид** пункт **Свойства**.  
+# <a name="thread-properties-dialog-box"></a>Диалоговое окно "Свойства потока"
+Используйте это диалоговое окно поиска дополнительных сведений о конкретном потоке. Чтобы открыть это диалоговое окно предназначено, переместите фокус элементу [представление "Потоки"](../debugger/threads-view.md) окна, либо открыть [представления сообщений](../debugger/messages-view.md) и разверните сообщение. Выберите любой узел потока в дереве, а затем выберите **свойства** из **представление** меню.  
   
- Вкладка **Общие** является единственной.  В операционных системах Windows 98 и Windows 95 присутствует видоизмененная версия этой вкладки.  
+ **Общие** отображается только вкладка. В операционных системах Windows 98 и Windows 95 измененную версию на этой вкладке отображается.  
   
-## В этом подразделе  
+## <a name="in-this-section"></a>Содержание  
  [Вкладка "Общие" диалогового окна "Свойства потока"](../debugger/general-tab-thread-properties-dialog-box.md)  
- Это диалоговое окно используется для получения дополнительных сведений о выбранном потоке.  
+ Используйте это диалоговое окно предназначено для поиска дополнительных сведений о выделенном потоке.  
   
-## Связанные подразделы  
+## <a name="related-sections"></a>Связанные разделы  
  [Диалоговое окно "Поиск потока"](../debugger/thread-search-dialog-box.md)  
- Используется для поиска узла заданного потока в представлении потоков.  
+ Используется для поиска узла для определенного потока в представлении потоков.  
   
- [Справочник по Spy\+\+](../debugger/spy-increment-reference.md)  
- Включает разделы с описанием всех меню и диалоговых окон средства Spy\+\+.  
+ [Справочник по Spy++](../debugger/spy-increment-reference.md)  
+ Содержит разделы с описанием каждого Spy ++ меню и диалоговых окон поле.  
   
  [Поиск потока в представлении потоков](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
  Описание поиска определенного потока в представлении потоков.  
   
- [Представление потоков](../debugger/threads-view.md)  
- Отображает представление активных потоков в виде дерева.  
+ [Представление "Потоки"](../debugger/threads-view.md)  
+ Отображает древовидное представление активных потоков.  
   
- [Представления Spy\+\+](../debugger/spy-increment-views.md)  
- Описание представлений окон, сообщений, процессов и потоков в виде дерева в средстве Spy\+\+.  
+ [Представления Spy++](../debugger/spy-increment-views.md)  
+ Описание представления деревьев Spy ++ окон, сообщений, процессов и потоков.  
   
- [Использование Spy\+\+](../debugger/using-spy-increment.md)  
- Содержит краткое описание средства Spy\+\+ и инструкции по его использованию.
+ [Использование Spy++](../debugger/using-spy-increment.md)  
+ Представляет средство Spy ++ и объясняется, как использовать.

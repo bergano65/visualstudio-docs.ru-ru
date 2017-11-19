@@ -1,29 +1,30 @@
 ---
-title: "Контекстные меню | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "редакторы [Visual Studio SDK] прежних версий - контекстные меню"
+title: "Контекстные меню | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - context menus
 ms.assetid: 44fd9e6a-6d42-4aba-80ba-f37fa0070f1d
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d56be2fecca89d3cfb5a7b12982a0de7f61d457f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Контекстные меню
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Контекстные меню отображаются, когда пользователь щелкнул правой кнопкой мыши в активной области клиентской области и clear при отпускании правой кнопки мыши.  
+# <a name="context-menus"></a>Контекстные меню
+Контекстные меню отображаются, когда пользователь щелкает правой кнопкой мыши в активной области, клиентской области и снимите при отпускании правой кнопки мыши.  
   
-## Контекстные меню редактора  
- Можно перехватывать `ECMD_SHOWCONTEXTMENU`ваша служба языка может отслеживать контекстные меню, которые будут отображаться в редакторе.  Для отображения собственного контекстного меню, настройте эту команду, когда оно передается в модель <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowContextMenu%2A>путем вызова  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> .  Если не обработать эту команду, интегрированная среда разработки отображает стандартное контекстное меню, предоставляемое для редактора.  Также можно контролировать содержимое контекстного меню для каждого в\-метки.  Дополнительные сведения см. в разделах [С помощью текстовых маркеров с API прежних версий](../extensibility/using-text-markers-with-the-legacy-api.md) и [Перехват команд службы языка прежних версий](../extensibility/internals/intercepting-legacy-language-service-commands.md).  
+## <a name="editor-context-menus"></a>Контекстные меню редактора  
+ Перехватывая `ECMD_SHOWCONTEXTMENU`, службе языка можно управлять контекстные меню, которые будут отображаться в редакторе. Чтобы отобразить контекстное меню, обрабатывать эту команду при передаче в вашей <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowContextMenu%2A>. Если эта команда не обрабатывают, интегрированной среды разработки отображает стандартное контекстное меню, предоставляемых для редактора. Также можно управлять содержимым на основе маркер контекстного меню. Дополнительные сведения об этом см. в разделе [с помощью текстовых маркеров с помощью прежних версий API](../extensibility/using-text-markers-with-the-legacy-api.md) и [перехват команды службы языка для прежних версий](../extensibility/internals/intercepting-legacy-language-service-commands.md).  
   
-## См. также  
- [Разработка службы языка](../extensibility/internals/developing-a-legacy-language-service.md)   
+## <a name="see-also"></a>См. также  
+ [Разработке службы языка для прежних версий](../extensibility/internals/developing-a-legacy-language-service.md)   
  [Расширение меню и команд](../extensibility/extending-menus-and-commands.md)

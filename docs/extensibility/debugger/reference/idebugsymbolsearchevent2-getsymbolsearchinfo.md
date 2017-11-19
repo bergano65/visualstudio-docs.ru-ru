@@ -1,67 +1,67 @@
 ---
-title: "IDebugSymbolSearchEvent2::GetSymbolSearchInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugSymbolSearchEvent2::GetSymbolSearchInfo"
-helpviewer_keywords: 
-  - "IDebugSymbolSearchEvent2::GetSymbolSearchInfo"
+title: "IDebugSymbolSearchEvent2::GetSymbolSearchInfo | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugSymbolSearchEvent2::GetSymbolSearchInfo
+helpviewer_keywords: IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 ms.assetid: ae9eb72b-f2aa-43b8-87ca-da19d2e78d17
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: bdf3b80a49641a13d9c17673376d70cfdee103cc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugSymbolSearchEvent2::GetSymbolSearchInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Вызывается обработчиком событий для получения результатов о процессе загрузки символов.  
+# <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
+Вызывает обработчик событий для получения результатов о процессе загрузки символов.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
 HRESULT GetSymbolSearchInfo(  
-   IDebugModule3**    pModule,  
-   BSTR*              pbstrDebugMessage,  
-   MODULE_INFO_FLAGS* pdwModuleInfoFlags  
+   IDebugModule3**    pModule,  
+   BSTR*              pbstrDebugMessage,  
+   MODULE_INFO_FLAGS* pdwModuleInfoFlags  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetSymbolSearchInfo(  
-   IDebugModule3              pModule,   
-   ref string                 pbstrDebugMessage,   
-   out enum_MODULE_INFO_FLAGS pdwModuleInfoFlags  
+   IDebugModule3              pModule,   
+   ref string                 pbstrDebugMessage,   
+   out enum_MODULE_INFO_FLAGS pdwModuleInfoFlags  
 );  
   
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pModule`  
- \[out\] объект IDebugModule3, представляющий модуль, для которого были загружены символы.  
+ [out] Объект IDebugModule3, представляющий модуль, для которого были загружены символы.  
   
  `pbstrDebugMessage`  
- \[in, out\] возвращает строку, содержащую все сообщения об ошибках из модуля.  Если ошибка, то эта строка будет содержать только имя модуля, но она никогда не пуста.  
+ [in, out] Возвращает строку, содержащую все сообщения об ошибках из модуля. Если нет ошибок, эта строка будет содержать только имя модуля, но никогда не бывает пустым.  
   
 > [!NOTE]
->  \[C\+\+\] `pbstrDebugMessage` не удается  `NULL` и быть освобожено с  `SysFreeString`.  
+>  [C++] `pbstrDebugMessage` не может быть `NULL` и должны быть освобождены вызовом `SysFreeString`.  
   
  `pdwModuleInfoFlags`  
- \[out\] сочетание пометит из [MODULE\_INFO\_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) перечисление, указывающее были загружены ли какие\-либо символы.  
+ [out] Сочетание флагов из [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) перечисления, указывающее, были ли загружены символы.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Когда обработчик возвращает [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) событие после попытке загрузить символы отладки для модуля, обработчик может вызвать thismethod, чтобы определить результаты этой загрузки.  
+## <a name="remarks"></a>Примечания  
+ Когда обработчик получает [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) событие после предпринята попытка загрузить отладочные символы для модуля, обработчик можно вызвать этот метод, чтобы определить результаты нагрузки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)   
- [MODULE\_INFO\_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md)   
+ [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md)   
  [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)

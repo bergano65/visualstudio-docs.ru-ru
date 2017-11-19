@@ -1,46 +1,30 @@
 ---
-title: Get Started with the Debugger in Visual Studio | Microsoft Docs
+title: "Начало работы с отладчиком в Visual Studio | Документы Microsoft"
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 0b3138c4-b840-446a-a15c-10ed8e2dd050
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 3545e37faa73d813e94fa488b935f4059b3fe86c
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
-
+ms.openlocfilehash: 68eb471f1db42b60114c2a14745ba4771b640c0d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="get-started-with-the-visual-studio-debugger"></a>Get Started with the Visual Studio Debugger
-The Visual Studio debugger is easy to use in any language. Here we'll show how to debug a simple C# program, but you can apply the same steps to code in other languages such as C++ and JavaScript.
+# <a name="get-started-with-the-visual-studio-debugger"></a>Начало работы с отладчиком Visual Studio
+Отладчик Visual Studio можно легко использовать на любом языке. Здесь мы покажем, как выполнить отладку простой программы C#, но можно применить те же действия к коду на других языках, например C++ и JavaScript.
 
-To watch a video showing similar features, see [Getting Started with the Debugger](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
+Видео, показывающая аналогичные функциональные возможности, в разделе [начало работы с отладчиком](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a> Debug a Basic C# Project  
- Let's start with a simple C# console application (**File > New > Project**, then select **Visual C#** and then **Console Application**). If you've never worked with Visual Studio before, see [Walkthrough: Create a Simple Application](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). The **Main** method just adds 1 to an integer variable 10 times and prints the result to the console:  
+##  <a name="BKMK_Start_debugging_a_VS_project"></a>Отладка простого проекта C#  
+ Давайте начнем с простого консольного приложения C# (**файл > Создать > проект**, а затем выберите **Visual C#** и затем **консольное приложение**). Если вы никогда не работали с Visual Studio, см. раздел [Пошаговое руководство: создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). **Main** метод просто добавляет 1 к целочисленной переменной 10 раз и выводит результат на консоль:  
   
 ```CSharp  
 static void Main(string[] args)  
@@ -54,37 +38,37 @@ static void Main(string[] args)
 }  
 ```  
   
- Build this code in the **Debug** configuration. This configuration is set by default. For more information about configurations, see [Understanding Build Configurations](../ide/understanding-build-configurations.md).  
+ Выполните сборку этого кода **отладки** конфигурации. Эта конфигурация задается по умолчанию. Дополнительные сведения о конфигурациях см. в разделе [общее представление о конфигурациях построения](../ide/understanding-build-configurations.md).  
   
- Run this code in the debugger by clicking **Debug > Start Debugging** (or **Start** on the toolbar, or **F5**). The application should exit almost immediately, so you can't actually tell whether anything was printed in the Console window.  
+ При выполнении этого кода в отладчик, нажав кнопку **Отладка > Начать отладку** (или **запустить** на панели инструментов или **F5**). Приложение должно практически сразу завершить работу, поэтому невозможно определить ли что-то было выведено в окне консоли.  
   
- You can stop the execution long enough to see the Console window by setting a breakpoint and then stepping ahead. To set a breakpoint, put your cursor in the `Console.WriteLine` line and click **Debug > New Breakpoint > Function Breakpoint**, or just click in the left margin at the same line. The breakpoint should look like this:  
+ Вы можете задать точку останова и остановить выполнение на достаточно длительный интервал времени, чтобы увидеть окно консоли, а затем перейти к следующему шагу. Задание точки останова, поместите курсор в `Console.WriteLine` линию и нажмите кнопку **Отладка > создать точку останова > точка останова в функции**, или просто щелкнуть область слева в той же строке. Точка останова должна выглядеть следующим образом:  
   
- ![Set a breakpoint](../debugger/media/getstartedbreakpoint.png "GetStartedBreakpoint")  
+ ![Установите точку останова](../debugger/media/getstartedbreakpoint.png "GetStartedBreakpoint")  
   
- For more information about breakpoints, see [Using Breakpoints](../debugger/using-breakpoints.md).  
+ Дополнительные сведения о точках останова см. в разделе [использование точек останова](../debugger/using-breakpoints.md).  
   
-##  <a name="BKMK_Inspect_Variables"></a> Inspect Variables  
- Debugging often involves finding variables that don't contain the values you expect at a particular point. We will show some of the ways that you can inspect variables.  
+##  <a name="BKMK_Inspect_Variables"></a>Отслеживание значений переменных  
+ Отладка часто предусматривает поиск переменные, которые не содержат значения, которые предполагается, что в определенный момент. Мы рассмотрим несколько способов проверить переменные.  
   
- Start debugging again. Execution stops before the `Console.WriteLine` code executes. You can cause it to execute by stepping ahead (click **Debug > Step Over** or **F10**). In this case you could have chosen **Step Into** (**F11**) and gotten the same result; we'll explain the difference later on. The line with the last curly brace of the method should have turned yellow. Look at the Console window. You should see **10**.  
+ Снова начните отладку. Выполнение остановится перед выполнением кода `Console.WriteLine`. Может вызвать выполнение, перейти к следующему шагу (щелкните **Отладка > шаг с обходом** или **F10**). В этом случае можно выбрать **шаг с заходом** (**F11**) и получить тот же результат; мы различия будут описаны позже. Строка с последней фигурной скобкой метода должна окраситься желтым цветом. Взгляните на окно консоли. Вы увидите **10**.  
   
- You can hover over the **testInt** variable to view the current value in a data tip.  
+ Можно навести на **testInt** переменной, чтобы просмотреть текущее значение в подсказке.  
   
- ![DBG&#95;Basics&#95;Data&#95;Tips](../debugger/media/dbg_basics_data_tips.png "DBG_Basics_Data_Tips")  
+ ![DBG &#95; Основные сведения о &#95; данные &#95; Советы по](../debugger/media/dbg_basics_data_tips.png "DBG_Basics_Data_Tips")  
   
- Just below the code window you should see the **Autos**, **Locals**, and **Watch** windows. These windows show the current values of variables at the time of execution. Both the **Autos** and the **Locals** windows show **testInt** with a value of **10**.  
+ Под окном кода должны увидеть **видимые**, **локальные**, и **Контрольные значения** windows. В этих окнах отображаются текущие значения переменных во время выполнения. Оба **видимые** и **локальные** Показать windows **testInt** со значением **10**.  
   
- ![Autos window when debugging](../debugger/media/getstartedwindows.png "GetStartedWindows")  
+ ![Видимые-окно при отладке](../debugger/media/getstartedwindows.png "GetStartedWindows")  
   
- For more information about these windows, see [Autos and Locals Windows](../debugger/autos-and-locals-windows.md).  
+ Дополнительные сведения об этих окнах см. в разделе [и локальные переменные Windows](../debugger/autos-and-locals-windows.md).  
   
- Let's see how the variable value changes as we walk through the program. Set a breakpoint on the `testInt += 1;` line, and restart debugging. You should see that **testInt** in the **Locals** and **Autos** windows is **0**, and **i** is **1**. When you continue debugging (**Debug > Continue**, or **Continue** on the toolbar, or **F5**), you can see that the value of **testInt** changes to **1**, then **2**, and so on. When you get tired of looking at these changes, remove the breakpoint (**Debug > Toggle Breakpoint**, or click on it in the margin), and continue debugging. If you want to remove all the breakpoints, click **Debug > Delete All Breakpoints**, or **CTRL+SHIFT+F9**, and click **Yes** on the dialog box that asks **Do you want to remove all breakpoints?**.  
+ Давайте посмотрим, как значение переменной изменяется будут рассмотрены программы. Установите точку останова на `testInt += 1;` строки и перезапустите отладку. Вы должны увидеть **testInt** в **локальные** и **видимые** windows является **0**, и **я** — **1**. При продолжении отладки (**Отладка > Продолжить**, или **Продолжить** на панели инструментов или **F5**), можно видеть, что значение **testInt** изменения **1**, затем **2**, и т. д. Если вам не хочется больше смотреть на эти изменения, удалите точку останова (**Отладка > точка останова**, или щелкните его в поле) и продолжите отладку. Если вы хотите удалить все точки останова, щелкните **Отладка > Удалить все точки останова**, или **CTRL + SHIFT + F9**и нажмите кнопку **Да** в диалоговом окне с вопросом **выполните Вы действительно хотите удалить все точки останова?** .  
   
-## <a name="stepping-into-and-over-function-calls"></a>Stepping Into and Over Function Calls  
- You can execute code in the debugger statement-by-statement (**Step Into**) or you can execute code while the debugger skips functions (**Step Over**) to quickly get to code that you're more interested in (function code is still executed). You can switch between both methods in the same debugging session.  
+## <a name="stepping-into-and-over-function-calls"></a>Шаги с заходом и обходом вызовов функций  
+ Может выполняться код в оператор с оператор debugger (**шаг с заходом**) или можно выполнить код, пока отладчик пропускает функции (**шаг с обходом**) чтобы быстро найти код, вы больше интересует () функция по-прежнему выполняется код). Можно переключаться между оба метода в одном сеансе отладки.  
   
- To see the difference between **Step Into** and **Step Over**, we need to add a method that is called by another method. Add a method to the C# application and call it from the Main method. The code should look something like this:  
+ Чтобы увидеть разницу между **шаг с заходом** и **шаг с обходом**, нам нужно добавить метод, вызываемый другим методом. Добавьте метод в приложение C# и вызовите его из метода Main. Код должен выглядеть следующим образом:  
   
 ```CSharp  
 static void Main(string[] args)  
@@ -99,10 +83,10 @@ private static void Method1()
 }  
 ```  
   
- Set a breakpoint on the `Method1();` call in the Main method and start debugging. When execution breaks, click **Debug > Step Into** (or **Step Into** on the toolbar, or **F11**). Execution breaks again at the first curly brace in Method1():  
+ Задайте точку останова в вызове `Method1();` в методе Main и начните отладку. При остановке выполнения щелкните **Отладка > шаг с заходом** (или **шаг с заходом** на панели инструментов или **F11**). Выполнение снова остановится у первой фигурной скобки в Method1():  
   
- ![Stepping into code](../debugger/media/getstartedstepinto.png "GetStartedStepInto")  
+ ![Шаг с заходом в код](../debugger/media/getstartedstepinto.png "GetStartedStepInto")  
   
- Stop debugging and start again, and when execution breaks at the breakpoint, click **Debug > Step Over** (or **Step Over** on the toolbar, or **F10**). Execution breaks again at `Console.WriteLine("end");`.  
+ Остановить отладку и снова запустить при остановке выполнения на точке останова щелкните **Отладка > шаг с обходом** (или **шаг с обходом** на панели инструментов или **F10**). Выполнение снова остановится в строке `Console.WriteLine("end");`.  
   
- If you want to know more about navigating code with the debugger, see [Navigating through Code with the Debugger](../debugger/navigating-through-code-with-the-debugger.md).
+ Если вы хотите узнать больше о навигации по коду в отладчике см. в разделе [Навигация по коду с помощью отладчика](../debugger/navigating-through-code-with-the-debugger.md).

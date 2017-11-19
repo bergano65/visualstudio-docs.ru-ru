@@ -1,65 +1,65 @@
 ---
-title: "IEnumDebugThreads2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugThreads2"
-helpviewer_keywords: 
-  - "IEnumDebugThreads2"
+title: "IEnumDebugThreads2 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugThreads2
+helpviewer_keywords: IEnumDebugThreads2
 ms.assetid: 1854f078-3b49-42c2-b65b-33e3b506fd63
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ca4fedeb7e52fff627a8fab9e100c0a99792f1c6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugThreads2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Это interfac перечисляет потоки, работающие в течение сеанса отладки.  
+# <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
+Это интерфейса перечисляет поток, выполняемый в текущий сеанс отладки.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IEnumDebugThreads2 : IUnknown  
 ```  
   
-## Примечания по реализации  
- Отладчик \(DE\) реализует этот интерфейс, чтобы представлять список потоков в программе.  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
+ Модуль отладки (DE) реализует этот интерфейс для представления списка потоков в программе.  
   
-## Замечания для вызывающих объектов  
- Вызов [EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md) получить этот интерфейс, представляющий список всех потоков во все программы, работающие в процессе.  Вызов [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) получить этот интерфейс, представляющий список потоков, работающих в программе.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Вызовите [EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md) получить этот интерфейс, представляющий список всех программ, запущенных в процессе все потоки. Вызовите [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) получить этот интерфейс, представляющий список потоков, выполняющих в программе.  
   
-## Методы в том порядке Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IEnumDebugThreads2`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[Далее](../Topic/IEnumDebugThreads2::Next.md)|Извлекает заданное количество потоков в последовательности перечисления.|  
-|[Пропустить](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|Пропустить указанное количество потоков в последовательности перечисления.|  
-|[Сбросить](../Topic/IEnumDebugThreads2::Reset.md)|Сбросить последовательность перечисления в начало.|  
-|[Клонировать](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий.|  
-|[GetCount](../Topic/IEnumDebugThreads2::GetCount.md)|Получает количество потоков в перечислителе.|  
+|------------|-----------------|  
+|[Вперед](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md)|Извлекает указанное число потоков в последовательности перечисления.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|Пропускает указанное число потоков в последовательности перечисления.|  
+|[Сброс](../../../extensibility/debugger/reference/ienumdebugthreads2-reset.md)|Сбрасывает последовательность перечисления в начало.|  
+|[Клон](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|Создает перечислитель, с тем же состоянием перечисления, что и текущий.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugthreads2-getcount.md)|Возвращает количество потоков в перечислителе.|  
   
-## Заметки  
- Visual Studio обычно получает этот интерфейс, чтобы обновить **потоки** окно так же, как получить первый поток списка, чтобы вызвать  [Выполнение](../../../extensibility/debugger/reference/idebugprocess3-execute.md)"  [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)и  [Шаг](../../../extensibility/debugger/reference/idebugprocess3-step.md).  
+## <a name="remarks"></a>Примечания  
+ Visual Studio обычно получает этот интерфейс для обновления **потоков** окно также для получения списка первый поток для вызова [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md), [Продолжить](../../../extensibility/debugger/reference/idebugprocess3-continue.md), и [Шаг](../../../extensibility/debugger/reference/idebugprocess3-step.md).  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Базовых интерфейсов](../../../extensibility/debugger/reference/core-interfaces.md)   
  [EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)   
  [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)   
  [Шаг](../../../extensibility/debugger/reference/idebugprocess3-step.md)   
- [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)   
+ [Продолжить](../../../extensibility/debugger/reference/idebugprocess3-continue.md)   
  [Выполнение](../../../extensibility/debugger/reference/idebugprocess3-execute.md)

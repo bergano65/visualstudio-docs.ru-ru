@@ -1,45 +1,46 @@
 ---
-title: "Клавиатура Microsoft Office Word, настройки клавиатуры Microsoft Office, диалоговое окно &quot;Параметры&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.ToolsOptionsPages.Microsoft_Office_Tools.Microsoft_Office_Word.Keyboard"
-  - "VS.ToolsOptionsPages.Microsoft_Office_Keyboard_Settings.Microsoft_Office_Word_Keyboard"
-  - "VST.WordOptions.KeyboardMappingScheme"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Разработка решений Office в Visual Studio, сочетания клавиш"
+title: "Клавиатура Microsoft Office Word, настройки клавиатуры Microsoft Office, диалоговое окно параметров | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.ToolsOptionsPages.Microsoft_Office_Tools.Microsoft_Office_Word.Keyboard
+- VS.ToolsOptionsPages.Microsoft_Office_Keyboard_Settings.Microsoft_Office_Word_Keyboard
+- VST.WordOptions.KeyboardMappingScheme
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: keyboard shortcuts, Office development in Visual Studio
 ms.assetid: d98edaab-846a-4baa-b190-702b1134754c
-caps.latest.revision: 18
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: bbce725246356086ac64b1810b80b91839caea3c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Клавиатура Microsoft Office Word, настройки клавиатуры Microsoft Office, диалоговое окно &quot;Параметры&quot;
-  Microsoft Office Word и Visual Studio могут обрабатывать сочетания клавиш.  Одна и та же комбинация может соответствовать разным командам в Visual Studio и в Word.  Если приложение Word открыто в проекте уровня документа в Visual Studio, только одно приложение в заданный момент времени получает команды клавиш быстрого доступа.  По умолчанию на все сочетания откликается Visual Studio, однако, можно изменить настройки таким образом, чтобы приложение Word откликалось на нажатие сочетания клавиш, если документ имеет фокус. Для этого необходимо выбрать функцию **Динамическая схема клавиатуры**.  
+# <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Клавиатура Microsoft Office Word, настройки клавиатуры Microsoft Office, диалоговое окно "Параметры"
+  Visual Studio и Microsoft Office Word и обрабатывать сочетания клавиш. Того же сочетания клавиш можно было использовать для различных команд в Word и в Visual Studio. Когда Word открыт в проекте уровня документа в Visual Studio, только одно приложение получает сочетания клавиш. По умолчанию Visual Studio получает сочетания клавиш, но может сделать их получения, если документ имеет фокус, выбрав Word **Динамическая схема клавиатуры**.  
   
- Если в одном из приложений, которое обрабатывает сочетания клавиш, для нажатой комбинации не задана ни одна команда, данная комбинация передается другому приложению.  
+ Если используется сочетание клавиш, которое не назначен команде в приложении, которое обрабатывает сочетания клавиш, сочетания клавиш передается другие приложения.  
   
- Выбранный параметр будет работать для проектов Word до тех пор, пока пользователь не изменит его.  Выбранные параметры не относятся к проектам Microsoft Office Excel; любые изменения для приложения Excel необходимо вносить с помощью параметров клавиатуры Microsoft Office Excel.  
+ Выбранного параметра будет работать для проектов Word, пока не потребуется изменить его. Не влияет на выбор проектов Microsoft Office Excel; с помощью Microsoft Office Excel сочетания параметров, необходимо выполнять изменений для Excel.  
   
-## Список элементов пользовательского интерфейса  
+## <a name="uielement-list"></a>Список элементов пользовательского интерфейса  
  **Схема клавиатуры Visual Studio**  
- Visual Studio откликается на нажатие сочетания клавиш, даже если документ Word имеет фокус.  Например, если нажать функциональную клавишу F5, в то время как документ имеет фокус, Visual Studio начнет отладку решения.  
+ Visual Studio получает нажатие сочетания клавиш, даже если документ Word имеет фокус. Например если документ имеет фокус, нажмите функциональную клавишу F5, Visual Studio запускает отладку решения.  
   
  **Динамическая схема клавиатуры**  
- Visual Studio откликается на нажатие сочетания клавиш только если оно имеет фокус.  Если документ Word имеет фокус, значит приложение Word будет откликаться на нажатие сочетаний клавиш.  Например, если нажать функциональную клавишу F5 в то время как документ Word будет иметь фокус, в приложении Word откроется диалоговое окно **Найти и заменить** с выбранной вкладкой **Перейти**.  Если нажать функциональную клавишу F5, в то время как приложение Visual Studio имеет фокус, Visual Studio начнет отладку решения.  
+ Visual Studio получает сочетания клавиш, только в том случае, когда он получает фокус. Если документ Word имеет фокус, Word получает сочетания клавиш. Например, если документ Word имеет фокус, нажмите функциональную клавишу F5, Word откроется **поиск и замена** диалоговое окно с **перейти к** с выбранной вкладкой. При нажатии клавиши F5 Visual Studio имеет фокус, Visual Studio запускает отладку решения.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Клавиатура Microsoft Office Excel, настройки клавиатуры Microsoft Office, диалоговое окно "Параметры"](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  
   
   

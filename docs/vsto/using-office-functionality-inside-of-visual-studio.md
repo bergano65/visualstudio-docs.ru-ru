@@ -1,46 +1,48 @@
 ---
-title: "Использование функциональных возможностей Office в Visual Studio"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Office - приложения [разработка решений Office в Visual Studio]"
-  - "функциональные возможности Office (Visual Studio)"
-  - "безопасность [разработка решений Office в Visual Studio], защита документов"
+title: "С помощью функциональных возможностей Office в Visual Studio | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- security [Office development in Visual Studio], document protection
+- Office applications [Office development in Visual Studio]
+- Office functionality inside Visual Studio
 ms.assetid: 593fd583-57e5-4ed5-8489-89f73b886c6c
-caps.latest.revision: 15
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: fa48a6d46035cd0c631882065b7c9b9ab2e2b8ba
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Использование функциональных возможностей Office в Visual Studio
-  При создании проекта уровня документа и документ, и связанное приложение размещаются в среде Visual Studio, чтобы разработчик мог проектировать документ и работать с ним напрямую.  При открытии приложения Microsoft Office в Visual Studio оно обычно выполняется, как ожидается.  Однако некоторые функциональные возможности приложения могут оказаться недоступными или вести себя неожиданным образом.  
+# <a name="using-office-functionality-inside-of-visual-studio"></a>Использование функциональных возможностей Office в Visual Studio
+  При создании проекта уровня документа, документ и связанное приложение размещаются в Visual Studio, чтобы можно было разрабатывать и работать непосредственно с документом. Если у вас есть Microsoft Office, откройте приложение в Visual Studio, обычно работает надлежащим образом. Тем не менее некоторые функциональные возможности приложений могут оказаться недоступными или.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
-## Защита документов  
- В Microsoft Office Word и Microsoft Office Excel предлагаются функции защиты документов, которые могут использоваться в проектах.  Однако если защита документа включена в то время, как документ открыт в Visual Studio, она может помешать внесению некоторых изменений в проект.  Дополнительные сведения см. в разделе [Защита документов в решениях уровня документа](../vsto/document-protection-in-document-level-solutions.md).  
+## <a name="document-protection"></a>Защита документов  
+ Microsoft Office Word и Microsoft Office Excel предоставляют функции защиты, которые можно использовать в проектах документов. Тем не менее если защита включена, когда документ открыт в Visual Studio, она может помешать внесения некоторых изменений в макет. Дополнительные сведения см. в разделе [Защита документов в решениях уровня документа](../vsto/document-protection-in-document-level-solutions.md).  
   
-## Управление правами на доступ к данным  
- В Microsoft Office Word и Microsoft Office Excel доступна функция управления правами на доступ к данным \(IRM\).  IRM позволяет защитить конфиденциальную информацию от просмотра или изменения со стороны несанкционированных пользователей.  Однако функция IRM также может помешать выполнению кода.  Дополнительные сведения см. в разделе [Общие сведения об управлении правами на доступ к данным и расширениях управляемого кода](../vsto/information-rights-management-and-managed-code-extensions-overview.md).  
+## <a name="information-rights-management"></a>Управление правами  
+ Управление правами на доступ к данным (IRM) в Microsoft Office Word и Microsoft Office Excel. IRM может помочь избежать несанкционированного просмотра и изменения важной информации. Однако IRM можно также предотвратить код работает. Дополнительные сведения см. в разделе [управление правами и Обзор расширений кода управляемых](../vsto/information-rights-management-and-managed-code-extensions-overview.md).  
   
-## Защита паролем  
- Документы Microsoft Office Word и рабочие книги Microsoft Office Excel можно настроить так, что они не смогут быть открыты при незнании пароля.  Защита паролем обрабатывается в Word и Excel разными способами и может повлиять на процесс разработки.  Дополнительные сведения см. в разделе [Защита паролей в документах Office](../vsto/password-protection-on-office-documents.md).  
+## <a name="password-protection"></a>Защита паролем  
+ Документы Microsoft Office Word и книг Microsoft Office Excel можно задать, чтобы они не может быть открыта тем, кто знает пароль. Защита паролем обрабатывается по-разному в Word и Excel и могут повлиять на процесс разработки. Дополнительные сведения см. в разделе [защита паролем в документах Office](../vsto/password-protection-on-office-documents.md).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Защита документов в решениях уровня документа](../vsto/document-protection-in-document-level-solutions.md)   
- [Общие сведения об управлении правами на доступ к данным и расширениях управляемого кода](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
- [Защита паролей в документах Office](../vsto/password-protection-on-office-documents.md)   
+ [Управление правами и Обзор расширений управляемого кода](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
+ [Защита паролем в документах Office](../vsto/password-protection-on-office-documents.md)   
  [Практическое руководство. Открытие решений Office без выполнения кода](../vsto/how-to-open-office-solutions-without-running-code.md)  
   
   

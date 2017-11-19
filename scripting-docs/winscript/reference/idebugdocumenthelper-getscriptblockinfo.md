@@ -1,27 +1,30 @@
 ---
-title: "IDebugDocumentHelper::GetScriptBlockInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugDocumentHelper::GetScriptBlockInfo | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentHelper.GetScriptBlockInfo
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugDocumentHelper::GetScriptBlockInfo"
+helpviewer_keywords: IDebugDocumentHelper::GetScriptBlockInfo
 ms.assetid: 332d7540-bbbe-4747-95ec-e47384d4f4e6
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d7e8dc63b8419424ed3fa01f67d3e77f0bc2b57f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentHelper::GetScriptBlockInfo
-Получает диапазон символов и обработчика скрипта, соответствующий блок скрипта.  
+# <a name="idebugdocumenthelpergetscriptblockinfo"></a>IDebugDocumentHelper::GetScriptBlockInfo
+Извлекает диапазон символов и обработчиком сценариев, соответствующий блок сценария.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT GetScriptBlockInfo(  
@@ -32,28 +35,28 @@ HRESULT GetScriptBlockInfo(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `dwSourceContext`  
- \[in\] контекст источника для блока скрипта.  
+ [in] Контекст источника для блока скрипта.  
   
  `ppasd`  
- \[out\] обработчик скриптов для данного блока скрипта.  
+ [out] Обработчик скриптов для этого блока сценария.  
   
  `piCharPos`  
- \[out\] начальное расположение блока скрипта.  
+ [out] Расположение на начало блока скрипта.  
   
  `cChars`  
- \[out\] количество символов в блоке скрипта.  
+ [out] Число символов в блоке сценария.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
- Этот метод возвращает диапазон символов и обработчика скрипта, соответствующий блок скрипта.  
+## <a name="remarks"></a>Примечания  
+ Этот метод извлекает диапазон символов и обработчиком сценариев, соответствующий блок сценария.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)

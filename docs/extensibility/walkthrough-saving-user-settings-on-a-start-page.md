@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
-caps.latest.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 7a7d8649e0d8cf83650da58386901e638ec14a2a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 0135240448bc74c85ab294b9eb4808830dbb4d00
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Пошаговое руководство: Сохранение пользовательских параметров на начальной странице
 Можно сохранить пользовательские параметры для Начальная страница. С помощью этого пошагового руководства, можно создать элемент управления, который сохраняет параметр в реестре, когда пользователь нажимает кнопку, а затем извлекает задание каждый раз при загрузке начальной страницы. Шаблон проекта начальной страницы включает в себя настраиваемый пользовательский элемент управления, и этот элемент управления вызывает XAML начальной страницы по умолчанию, у вас сам изменение начальной страницы.  
@@ -101,7 +86,7 @@ ms.lasthandoff: 09/06/2017
   
 2.  Добавьте следующие `using` инструкции в начало файла.  
   
-     [!code-csharp[StartPageDTE № 11](../extensibility/codesnippet/CSharp/walkthrough-saving-user-settings-on-a-start-page_1.cs)]  
+     [!code-csharp[StartPageDTE#11](../extensibility/codesnippet/CSharp/walkthrough-saving-user-settings-on-a-start-page_1.cs)]  
   
 3.  Добавьте закрытый `SettingsStore` свойства, как показано в следующем примере.  
   

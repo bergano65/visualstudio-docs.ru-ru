@@ -1,48 +1,48 @@
 ---
-title: "Spy++ Views | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "views, Spy++"
-  - "Spy++, views"
+title: "Представления Spy ++ | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- views, Spy++
+- Spy++, views
 ms.assetid: c60867af-f814-4fac-8f06-3c39cbefc7ea
-caps.latest.revision: 5
-caps.handback.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c804ad5fc4921eefc5529094c45361c5fa115fb9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Spy++ Views
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Spy \+\+ отображает окна, сообщения, процессы и потоки компьютера в представлениях в виде дерева.  
+# <a name="spy-views"></a>Представления Spy++
+Spy ++ отображает представления в виде дерева окон, сообщений, процессов и потоков, доступных на компьютере.  
   
-## В этом подразделе  
+## <a name="in-this-section"></a>Содержание  
  [Представление окон](../debugger/windows-view.md)  
- Отображает представление доступных окон и элементов управления в виде дерева.  
+ Отображение дерева доступных окон и элементов управления.  
   
  [Представление сообщений](../debugger/messages-view.md)  
- Отображает поток сообщений, связанных с окном, процессом или потоком.  
+ Отображает поток сообщений, связанных с окном, процесса или потока.  
   
  [Представление процессов](../debugger/processes-view.md)  
- Отображает представление активных процессов в виде дерева.  
+ Отображает древовидное представление активных процессов.  
   
- [Представление потоков](../debugger/threads-view.md)  
- Отображает представление активных потоков в виде дерева.  
+ [Представление "Потоки"](../debugger/threads-view.md)  
+ Отображает древовидное представление активных потоков.  
   
-## Связанные подразделы  
- [Средства поиска для представлений Spy\+\+](../debugger/search-tools-for-spy-increment-views.md)  
- Диалоговые окна, используемые для поиска узлов в окнах представлений Spy\+\+.  
+## <a name="related-sections"></a>Связанные разделы  
+ [Средства поиска для представлений Spy++](../debugger/search-tools-for-spy-increment-views.md)  
+ Диалоговые окна, используемый для поиска узлов в окнах представлений Spy ++.  
   
- [Использование Spy\+\+](../debugger/using-spy-increment.md)  
- Содержит краткое описание средства Spy\+\+ и инструкции по его использованию.  
+ [Использование Spy++](../debugger/using-spy-increment.md)  
+ Представляет средство Spy ++ и объясняется, как использовать.  
   
- [Справочник по Spy\+\+](../debugger/spy-increment-reference.md)  
- Включает разделы с описанием всех меню и диалоговых окон средства Spy\+\+.
+ [Справочник по Spy++](../debugger/spy-increment-reference.md)  
+ Содержит разделы с описанием каждого Spy ++ меню и диалоговых окон поле.

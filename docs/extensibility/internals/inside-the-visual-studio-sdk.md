@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,36 +12,23 @@ helpviewer_keywords:
 - Visual Studio integration SDK roadmap
 - integration roadmap, Visual Studio SDK
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
-caps.latest.revision: 30
+caps.latest.revision: "30"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 565aaeb189ad129d5e4e26d9c73c080de2e77676
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: ebba0ea11781a4b5a3d01aabb718b0ad778daab9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="inside-the-visual-studio-sdk"></a>В среде Visual Studio SDK
+# <a name="inside-the-visual-studio-sdk"></a>Компоненты пакета SDK для Visual Studio
 Подробные сведения о расширениях Visual Studio, включая архитектуры Visual Studio, компоненты, службы, схемы, служебные программы и т. д.  
   
 ## <a name="extensibility-architecture"></a>Архитектура расширяемости  
- Ниже показана архитектура расширяемости Visual Studio. Пакеты VSPackage предоставляют функциональные возможности приложений, которое является общим как службы в интегрированной среде разработки. Стандартная IDE также предлагает широкий набор служб, таких как <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, которые предоставляют доступ к функциям окон интегрированной среды разработки.</xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>  
+ Ниже показана архитектура расширяемости Visual Studio. Пакеты VSPackage предоставляют функциональные возможности приложений, которое является общим как службы в интегрированной среде разработки. Стандартная IDE также предлагает широкий набор служб, таких как <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, которые предоставляют доступ к функциям окон интегрированной среды разработки.  
   
- ![График архитектуры окружения](~/extensibility/internals/media/environment.gif "environment")  
+ ![График архитектуры окружения](../../extensibility/internals/media/environment.gif "среды")  
 Обобщенное представление архитектуры Visual Studio  
   
 ## <a name="vspackages"></a>VSPackages  
@@ -51,7 +37,7 @@ ms.lasthandoff: 04/05/2017
 ## <a name="visual-studio-shell"></a>Visual Studio Shell  
  Оболочка Visual Studio предоставляет базовые функциональные возможности и поддержки обмена данными между среди его компонент пакеты VSPackage и расширения MEF. Дополнительные сведения см. в разделе [оболочки Visual Studio](../../extensibility/internals/visual-studio-shell.md).  
   
-## <a name="user-experience-guidelines"></a>Рекомендации по пользовательскому интерфейсу  
+## <a name="user-experience-guidelines"></a>Руководство по работе пользователей  
  Если вы планируете разработать новые возможности Visual Studio, вы должны взгляните на эти рекомендации, советы по разработке и удобство использования: [Visual Studio техники](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
   
 ## <a name="commands"></a>Команды  
@@ -59,7 +45,7 @@ ms.lasthandoff: 04/05/2017
   
  При расширении Visual Studio можно создавать команды и зарегистрируйте его на оболочке Visual Studio. Можно указать эти команды отображения в Интегрированной среде разработки, например, в меню или панели инструментов. Обычно появляется пользовательской команды на **средства** на появятся меню и команды для отображения окна инструментов **другие окна** подменю **представление** меню.  
   
- При создании команды необходимо также создать обработчик событий для него. Обработчик событий определяет, когда команда видна или включена, можно изменить ее текст и гарантирует, что команда отвечает соответствующим образом при активации. В большинстве случаев IDE обрабатывает команды с помощью <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>интерфейса.</xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Команды в Visual Studio, обрабатываются, начиная с корневого контекста команды, на основе локального выбора и до самый внешний контекст, на основе глобального выделения. Команды, добавленные в главное меню, становятся сразу доступными для использования в сценариях.  
+ При создании команды необходимо также создать обработчик событий для него. Обработчик событий определяет, когда команда видна или включена, можно изменить ее текст и гарантирует, что команда отвечает соответствующим образом при активации. В большинстве случаев IDE обрабатывает команды с помощью <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейса. Команды в Visual Studio, обрабатываются, начиная с корневого контекста команды, на основе локального выбора и до самый внешний контекст, на основе глобального выделения. Команды, добавленные в главное меню, становятся сразу доступными для использования в сценариях.  
   
  Дополнительные сведения см. в разделе [команд, меню и панелей инструментов](../../extensibility/internals/commands-menus-and-toolbars.md).  
   
@@ -75,7 +61,7 @@ ms.lasthandoff: 04/05/2017
   
  Рассмотрим приведенный ниже рисунок Visual Studio, которая содержит несколько окон инструментов.  
   
- ![Снимок экрана](~/extensibility/internals/media/t1gui.png "T1gui")  
+ ![Снимок экрана](../../extensibility/internals/media/t1gui.png "T1gui")  
   
  Некоторые окна инструментов закреплены вместе в одну область, отображаются в окне инструментов обозревателя решений и скрывает окна инструментов, но делает их доступными, щелкнув вкладок. На рисунке показаны два окна инструментов **список ошибок** и **вывода** закреплены вместе на одной панели окна.  
   
@@ -118,7 +104,7 @@ ms.lasthandoff: 04/05/2017
  Дополнительные сведения см. в разделе [Добавление проекта и шаблоны элементов проекта](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
 ## <a name="properties-and-options"></a>Свойства и параметры  
- **Свойства** окне отображаются свойства одного или нескольких выбранных элементов: [расширение свойств](../../extensibility/internals/extending-properties.md) параметры страницы содержат наборами параметров, относящихся к конкретный компонент, например языка программирования или VSPackage: [параметры и параметры страницы](../../extensibility/internals/options-and-options-pages.md). Параметры являются компонентами, обычно связанные с Пользовательским интерфейсом, которые можно импортировать и экспортировать: [Поддержка пользовательских параметров](../../extensibility/internals/support-for-user-settings.md).  
+ **Свойства** окне отображаются свойства одного или нескольких выбранных элементов: [расширение свойств](../../extensibility/internals/extending-properties.md) параметры страницы содержат наборами параметров, относящихся к конкретный компонент, например Программирование языка или VSPackage: [параметры и параметры страницы](../../extensibility/internals/options-and-options-pages.md). Параметры являются компонентами, обычно связанные с Пользовательским интерфейсом, которые можно импортировать и экспортировать: [Поддержка пользовательских параметров](../../extensibility/internals/support-for-user-settings.md).  
   
 ## <a name="visual-studio-services"></a>Службы Visual Studio  
  Служба предоставляет определенный набор интерфейсов для использования компонентов. Visual Studio предоставляет ряд служб, которые могут использоваться все компоненты, включая расширения. Например службы Visual Studio позволяют окна инструментов, чтобы отображаться или скрыты динамически, включите доступ к справке, строка состояния или события пользовательского интерфейса. В редакторе Visual Studio также предоставляет службы, которые можно импортировать в расширения редактора. Дополнительные сведения см. в разделе [использование и предоставление службы](../../extensibility/using-and-providing-services.md).  
@@ -129,7 +115,7 @@ ms.lasthandoff: 04/05/2017
 ## <a name="source-control"></a>Система управления версиями  
  Сведения о реализации подключаемого модуля системы управления версиями или VSPackage см. в разделе [системы управления версиями](../../extensibility/internals/source-control.md).  
   
-## <a name="wizards"></a>Мастера  
+## <a name="wizards"></a>Мастеры  
  Мастер можно создать в сочетании с новым типом проекта, чтобы мастер поможет пользователям принимать правильные решения, при создании нового проекта этого типа. Дополнительные сведения см. в разделе [мастеров](../../extensibility/internals/wizards.md).  
   
 ## <a name="custom-tools"></a>Пользовательские средства  

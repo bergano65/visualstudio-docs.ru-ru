@@ -1,46 +1,49 @@
 ---
-title: "IRemoteDebugApplication::QueryAlive | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IRemoteDebugApplication::QueryAlive | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IRemoteDebugApplication.QueryAlive
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IRemoteDebugApplication::QueryAlive"
+helpviewer_keywords: IRemoteDebugApplication::QueryAlive
 ms.assetid: 08e49d3b-6fb3-4438-960e-f05395ba9b17
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3f938ad30562cd1131e8a50077106002d33cea2b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IRemoteDebugApplication::QueryAlive
-Указывает если приложение отзывчиво.  
+# <a name="iremotedebugapplicationqueryalive"></a>IRemoteDebugApplication::QueryAlive
+Указывает, является ли скорость реагирования приложения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT QueryAlive();  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  Этот метод не принимает параметры.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
- Этот метод отображает если приложение отзывчиво.  Реализации этого метода должны всегда возвращать `S_ОК`.  
+## <a name="remarks"></a>Примечания  
+ Этот метод указывает, является ли скорость реагирования приложения. Реализации этого метода всегда должны возвращать `S_OK`.  
   
- Если процесс приложения заканчивается неожиданно, то модель COM возвращает ошибку из выстраивая прокси для вызова этого метода.  
+ Если непредвиденное завершение процесса приложения COM возвращает ошибку из маршалинга прокси для вызова этого метода.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)

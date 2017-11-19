@@ -1,123 +1,123 @@
 ---
-title: "BP_REQUEST_INFO2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BP_REQUEST_INFO2"
-helpviewer_keywords: 
-  - "Структура BP_REQUEST_INFO2"
+title: "BP_REQUEST_INFO2 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: BP_REQUEST_INFO2
+helpviewer_keywords: BP_REQUEST_INFO2 structure
 ms.assetid: 008c87f7-a76e-43d3-8904-11b225d6a9a5
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 904210dc1547c587c62a44a8e788b3f07179a71b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# BP_REQUEST_INFO2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Содержит сведения, необходимые для реализации точку останова, включая идентификатор GUID поставщика, ограничение и точку трассировки.  
+# <a name="bprequestinfo2"></a>BP_REQUEST_INFO2
+Содержит сведения, необходимые для реализации точки останова, включая идентификатор GUID поставщика, ограничения и трассировки.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-typedef struct _BP_REQUEST_INFO2 {  
-   BPREQI_FIELDS   dwFields;  
-   GUID            guidLanguage;  
-   BP_LOCATION     bpLocation;  
-   IDebugProgram2* pProgram;  
-   BSTR            bstrProgramName;  
-   IDebugThread2*  pThread;  
-   BSTR            bstrThreadName;  
-   BP_CONDITION    bpCondition;  
-   BP_PASSCOUNT    bpPassCount;  
-   BP_FLAGS        dwFlags;  
-   GUID            guidVendor;  
-   BSTR            bstrConstraint;  
-   BSTR            bstrTracepoint;  
-} BP_REQUEST_INFO2;  
+```cpp  
+typedef struct _BP_REQUEST_INFO2 {  
+   BPREQI_FIELDS   dwFields;  
+   GUID            guidLanguage;  
+   BP_LOCATION     bpLocation;  
+   IDebugProgram2* pProgram;  
+   BSTR            bstrProgramName;  
+   IDebugThread2*  pThread;  
+   BSTR            bstrThreadName;  
+   BP_CONDITION    bpCondition;  
+   BP_PASSCOUNT    bpPassCount;  
+   BP_FLAGS        dwFlags;  
+   GUID            guidVendor;  
+   BSTR            bstrConstraint;  
+   BSTR            bstrTracepoint;  
+} BP_REQUEST_INFO2;  
 ```  
   
-```c#  
-public struct BP_REQUEST_INFO2 {  
-   public uint           dwFields;  
-   public Guid           guidLanguage;  
-   public BP_LOCATION    bpLocation;  
-   public IDebugProgram2 pProgram;  
-   public string         bstrProgramName;  
-   public IDebugThread2  pThread;  
-   public string         bstrThreadName;  
-   public BP_CONDITION   bpCondition;  
-   public BP_PASSCOUNT   bpPassCount;  
-   public uint           dwFlags;  
-   public Guid           guidVendor;  
-   public string         bstrConstraint;  
-   public string         bstrTracepoint;  
+```csharp  
+public struct BP_REQUEST_INFO2 {  
+   public uint           dwFields;  
+   public Guid           guidLanguage;  
+   public BP_LOCATION    bpLocation;  
+   public IDebugProgram2 pProgram;  
+   public string         bstrProgramName;  
+   public IDebugThread2  pThread;  
+   public string         bstrThreadName;  
+   public BP_CONDITION   bpCondition;  
+   public BP_PASSCOUNT   bpPassCount;  
+   public uint           dwFlags;  
+   public Guid           guidVendor;  
+   public string         bstrConstraint;  
+   public string         bstrTracepoint;  
 };  
 ```  
   
-## Члены  
+## <a name="members"></a>Члены  
  `dwFields`  
- Комбинация из пометит [BPREQI\_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисление, которое определяет, какие поля заполнянны.  
+ Сочетание флагов из [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисления, которое указывает, какие поля заполнены.  
   
  `guidLanguage`  
- Идентификатор GUID языка.  
+ GUID языка.  
   
  `bpLocation`  
- [BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структура, определяющая тип расположения точки останова.  
+ [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуру, которая указывает тип точки останова.  
   
  `pProgram`  
- IDebugProgram2 объект, который представляет приложение, в котором точка останова.  
+ [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий приложение, в котором происходит точки останова.  
   
  `bstrProgramName`  
- Имя приложения, в котором точка останова.  
+ Имя приложения, в котором происходит точки останова.  
   
  `pThread`  
- IDebugThread2 объект, представляющий поток, в котором точка останова.  
+ [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, в котором происходит точки останова.  
   
  `bstrThreadName`  
- Имя потока, в котором точка останова.  
+ Имя потока, в котором происходит точки останова.  
   
  `bpCondition`  
- [BP\_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) структура, которая описывает условия, при которых точка останова сгорит.  
+ [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) структуру, которая описывает условия, при которых точка останова будет срабатывать.  
   
  `bpPassCount`  
- [BP\_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) структура, содержащая данные о количестве передачи точки останова.  
+ [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) структуру, содержащую сведения о подсчете проход точки останова.  
   
  `dwFlags`  
- Комбинация из пометит [BP\_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) перечисление, указывающее флаги точки останова.  
+ Сочетание флагов из [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) перечисления, которое задает флаги для запрошенного точки останова.  
   
  `guidVendor`  
- Идентификатор GUID поставщика.  Может принимать значение NULL.  
+ Идентификатор GUID поставщика. Может иметь значение null.  
   
  `bstrConstraint`  
- Имя ограничения точки останова.  Может принимать значение NULL.  
+ Имя ограничения точки останова. Может иметь значение null.  
   
  `bstrTracepoint`  
- Имя точки трассировки.  Может принимать значение NULL.  
+ Имя точки трассировки. Может иметь значение null.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
  Эта структура возвращается [GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md) метод.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)   
- [BPREQI\_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)   
- [BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
+ [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)   
+ [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [BP\_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)   
- [BP\_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)   
- [BP\_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)
+ [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)   
+ [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)   
+ [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)

@@ -1,61 +1,63 @@
 ---
-title: "элемент &lt;document&gt; (разработка решений Office в Visual Studio)"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "document - элемент"
-  - "манифесты приложений [разработка решений Office в Visual Studio], элемент <document>"
-  - "элемент <document>"
+title: "&lt;документ&gt; элемент (Разработка решений Office в Visual Studio) | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- document element
+- application manifests [Office development in Visual Studio], <document> element
+- <document> element
 ms.assetid: b4525a0e-8a03-4881-a3e2-8cc019029071
-caps.latest.revision: 21
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 48995b4a40d4e67b0c0e2e44d66545c4c90dd26b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# элемент &lt;document&gt; (разработка решений Office в Visual Studio)
-  Элемент `document` пространства имен `vstov4` хранит сведения о настройках для настроек уровня документа.  
+# <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;документ&gt; элемент (Разработка решений Office в Visual Studio)
+  `document` Элемент `vstov4` имен хранит сведения о для настроек на уровне документа.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <document solutionId />  
 ```  
   
-## Элементы и атрибуты  
- Данный элемент является обязательным только для настроек на уровне документа.  Элемент `document` находится в пространстве имен `vstov4` .  Элемент `document` имеет следующие атрибуты.  
+## <a name="elements-and-attributes"></a>Элементы и атрибуты  
+ Является обязательным только для настроек на уровне документа. `document` Элемент находится в `vstov4` пространства имен. `document` Элемент имеет следующие атрибуты.  
   
 |Атрибут|Описание|  
-|-------------|--------------|  
-|`solutionId`|Обязательный.  GUID, используемый среды выполнения Visual Studio tools for office для уникального определения решения уровня документа.  Это значение хранится в настраиваемом свойстве документа «\_AssemblyLocation».  Дополнительные сведения см. в разделе [Общие сведения о настраиваемых свойствах документа](../vsto/custom-document-properties-overview.md).|  
+|---------------|-----------------|  
+|`solutionId`|Обязательный. Идентификатор GUID, используемый средой Visual Studio Tools для Office runtime для уникальной идентификации решения на уровне документа. Это значение хранится в виде _AssemblyLocation пользовательского свойства документа. Для получения дополнительной информации см. [Custom Document Properties Overview](../vsto/custom-document-properties-overview.md).|  
   
- Элемент `document` не имеет дочерних элементов.  
+ `document`не имеет дочерних элементов.  
   
-## Пример настройки на уровне документа  
+## <a name="document-level-customization-example"></a>Пример настройки на уровне документа  
   
-### Описание  
- В следующем примере кода показан элемент `document` в решении Office на уровне документа, развертываемом с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)].  Данный пример кода является частью большего примера, приведенного в разделе [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).  
+### <a name="description"></a>Описание  
+ В следующем примере кода показан `document` элемент в решении Office уровня документа, развернутом с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Этот пример кода является частью большего примера, приведенного в разделе [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
   
-### Код  
+### <a name="code"></a>Код  
   
 ```  
 <vstov4:document   
   solutionId="73e" />  
 ```  
   
-## См. также  
- [Манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md)   
+## <a name="see-also"></a>См. также  
+ [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Манифесты развертывания для решений Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)  
+ [Манифест приложения ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   
   

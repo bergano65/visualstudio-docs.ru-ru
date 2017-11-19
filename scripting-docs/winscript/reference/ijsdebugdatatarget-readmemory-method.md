@@ -1,25 +1,29 @@
 ---
-title: "Метод IJsDebugDataTarget::ReadMemory | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Метод IJsDebugDataTarget::ReadMemory | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IJsDebugDataTarget.ReadMemory
 apilocation: jscript9diag.dll
 ms.assetid: 664e0f7d-2007-45f4-b993-36fe8b1944e5
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fc1b67b33e17761a675d6ced9e175b4206ede2e1
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод IJsDebugDataTarget::ReadMemory
-Читает содержимое памяти целевого процесса.  
+# <a name="ijsdebugdatatargetreadmemory-method"></a>Метод IJsDebugDataTarget::ReadMemory
+Считывает память целевого процесса.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT ReadMemory(  
@@ -31,29 +35,29 @@ HRESULT ReadMemory(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `address`  
- \[in\] Базовый адрес, по которому следует читать память целевого процесса.  
+ [in] Базовый адрес, из которого выполняется чтение памяти в целевом процессе.  
   
  `flags`  
- \[in\] Флаги, контролирующие поведение ReadMemory.  
+ [in] Флаги управления поведением ReadMemory.  
   
  `pBuffer`  
- \[out\] Буфер, который получает содержимое из адресного пространства целевого процесса.  При сбое содержимое этого буфера не задается.  
+ [out] Буфер, получающий содержимое из адресное пространство целевого процесса. В случае сбоя содержимое данного буфера не определено.  
   
  `size`  
- \[in\] Максимальное число байтов, которое должно быть считано из текущего процесса.  
+ [in] Число байтов, считываемых из процесса.  
   
  `pBytesRead`  
- \[out\] Показывает количество байтов, считываемых из целевого процесса.  Если флаг JsDebugAllowPartialRead снят, при успешном завершении это значение всегда будет точно равно размеру ввода.  Если JsDebugAllowPartialRead задан, при успешном завершении это значение будет больше нуля.  
+ [out] Указывает число байтов, считанных из целевого процесса. Если снять JsDebugAllowPartialRead, в случае успешного выполнения это значение всегда будет точно равно размер входных данных. Если указан JsDebugAllowPartialRead, в случае успеха, это значение будет больше нуля.  
   
-## Возвращаемое значение  
+## <a name="return-value"></a>Возвращаемое значение  
   
-## Заметки  
- Возвращает значение S\_ОК в успехе и коды ошибок используются для любой ошибки.  Возвращает E\_JsDEBUG\_INVALID\_MEMORY\_ADDRESS, если адрес недопустим.  Дополнительные сведения см. в описании JsDebugAllowPartialRead.  
+## <a name="remarks"></a>Примечания  
+ Возвращает значение S_OK, в случае успеха и коды ошибок используются для любой ошибки. Возвращает E_JsDEBUG_INVALID_MEMORY_ADDRESS, если адрес является недопустимым. Дополнительные сведения см. в разделе JsDebugAllowPartialRead.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** jscript9diag.h  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

@@ -1,51 +1,51 @@
 ---
-title: "IDebugExceptionEvent2::GetExceptionDescription | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugExceptionEvent2::GetExceptionDescription"
-helpviewer_keywords: 
-  - "IDebugExceptionEvent2::GetExceptionDescription"
+title: "IDebugExceptionEvent2::GetExceptionDescription | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugExceptionEvent2::GetExceptionDescription
+helpviewer_keywords: IDebugExceptionEvent2::GetExceptionDescription
 ms.assetid: d07d458f-5729-47e4-9b77-1bd59c61a75a
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 46a6028917cd94e1105f96a230b870bf396864cf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugExceptionEvent2::GetExceptionDescription
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Возвращает displayable описание исключения.  
+# <a name="idebugexceptionevent2getexceptiondescription"></a>IDebugExceptionEvent2::GetExceptionDescription
+Возвращает отображаемую описание исключения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetExceptionDescription(   
-   BSTR* pbstrDescription  
+```cpp  
+HRESULT GetExceptionDescription(   
+   BSTR* pbstrDescription  
 );  
 ```  
   
-```c#  
-int GetExceptionDescription(   
-   out string pbstrDescription  
+```csharp  
+int GetExceptionDescription(   
+   out string pbstrDescription  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pbstrDescription`  
- \[out\] возвращает displayable описание исключения.  
+ [out] Возвращает отображаемую описание исключения.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Строка, возвращаемая этим методом, обычно имя исключения и отображается в **Вывод** окно при возникновении исключения.  
+## <a name="remarks"></a>Примечания  
+ Строка, возвращаемая этим методом, обычно совпадает с именем исключения и отображается в **вывода** окна при возникновении исключения.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

@@ -1,63 +1,45 @@
 ---
-title: Locating Visual Studio | Microsoft Docs
+title: "Обнаружение Visual Studio | Документы Microsoft"
 ms.custom: 
 ms.date: 08/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- deployment, VSIX
+helpviewer_keywords: deployment, VSIX
 ms.assetid: 680c3b25-7901-4768-8363-6d1fcd1ea636
 ms.author: heaths
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: c6dfe76ef1bfcfbcb0c39c33ea01668cc96f2596
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 3cd705d703b3d745c502290422e29b3c6da39ee5
-ms.openlocfilehash: d9a54a180baf1329b9538454bbfdb9bf0e992f14
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="locating-visual-studio"></a>Locating Visual Studio
+# <a name="locating-visual-studio"></a>Обнаружение Visual Studio
 
-Starting with Visual Studio 2017, you can install multiple instances of the same version or even edition. This is helpful when you want to preview new functionality on your primary development machine while retaining your previous installation. Because of these changes, there is no single environment variable or registry value you can use to locate an instance. Instead, you can use a [COM query API](https://msdn.microsoft.com/library/microsoft.visualstudio.setup.configuration.aspx) to find instances based on criteria relevant to your extension.
+Начиная с Visual Studio 2017 г., можно установить несколько экземпляров одной версии или даже выпуска. Это полезно в тех случаях, когда требуется просмотреть новые функциональные возможности на компьютере разработки основной сохраняя предыдущую установку. После внесения этих изменений нет, можно использовать, чтобы найти экземпляр значения переменной или раздела реестра единую среду. Вместо этого можно использовать [запроса COM API](https://msdn.microsoft.com/library/microsoft.visualstudio.setup.configuration.aspx) для поиска экземпляров на основе критериев, которые важны для вашего расширения.
 
-This is a fast, read-only API with NuGet packages available for native and managed code.
+Это — это быстрый, только для чтения API с пакетами NuGet для машинного и управляемого кода.
 
-| Code | Package |
+| Код | Пакет |
 | ---- | --- |
-| Native | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
-| Managed | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
+| машинный код; | https://NuGet.org/Packages/Microsoft.VisualStudio.Setup.Configuration.Native |
+| Управляемый | https://NuGet.org/Packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
-You can locate a single instance given a path or the current process, or enumerate all instances. See [our samples](https://github.com/Microsoft/vs-setup-samples) for complete examples of how to locate Visual Studio.
+Найдите один экземпляр, заданный путь или текущего процесса или перечислить все экземпляры. В разделе [наши примеры](https://github.com/Microsoft/vs-setup-samples) полные примеры того, как найти Visual Studio.
 
-## <a name="tools"></a>Tools
+## <a name="tools"></a>Инструменты
 
-To find Visual Studio and other tools in build environments, PowerShell scripts, installers, and more scenarios, we have a number of open source tools you can use directly or redistribute along with your own scripts.
+Чтобы найти Visual Studio и другие инструменты в среды сборки c, скрипты PowerShell, установщики и другие сценарии, у нас есть ряд средств открытым исходным кодом можно использовать непосредственно или повторно распространить вместе с собственных сценариев.
 
-| Project | Description |
+| Проект | Описание |
 | ------- | ----------- |
-| [vswhere](https://github.com/Microsoft/vswhere) | Single-file native executable to locate instances meeting criteria such as release or pre-release, what product is installed, and which workloads are installed. Also supports finding Visual Studio 2010 and newer, though less information is returned that for Visual Studio 2017 and newer. See the [wiki](https://github.com/Microsoft/vswhere/wiki) for examples. |
-| [VSSetup cmdlets](https://github.com/Microsoft/vssetup.powershell) | PowerShell cmdlets supported 2.0 and newer that return rich information as objects you can use to find instances based on the same criteria as _vswhere_ and to discover even more properties about instances. See the [wiki](https://github.com/Microsoft/vssetup.powershell/wiki) for examples. |
-| [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | Automatically locates _VSIXInstaller_ and passes the command line through to install a _*.vsix_ file. This can be useful in installers that do not have direct support for the query APIs. See the [wiki](https://github.com/Microsoft/vsixbootstrapper/wiki) for examples. |
+| [vswhere](https://github.com/Microsoft/vswhere) | Один файл собственного исполняемый файл, чтобы найти экземпляры, соответствующие критериям, например выпуска или предварительной версии, что продукт установлен и устанавливаются, рабочая нагрузка. Также поддерживает поиск Visual Studio 2010 и более поздних версиях на то, что меньше возвращаются сведения, для Visual Studio 2017 г. и более поздних. В разделе [вики-сайте](https://github.com/Microsoft/vswhere/wiki) примеры. |
+| [Командлеты VSSetup](https://github.com/Microsoft/vssetup.powershell) | Поддерживаемые командлеты PowerShell 2.0 и более поздних, возвращающие подробные сведения как объекты можно использовать для поиска экземпляров на основе одного условия как _vswhere_ и для обнаружения свойств еще больше об экземплярах. В разделе [вики-сайте](https://github.com/Microsoft/vssetup.powershell/wiki) примеры. |
+| [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | Автоматически находит _VSIXInstaller_ и передает через командной строки для установки _*.vsix_ файла. Это может быть полезно в установщики, у которых нет непосредственной поддержки API-интерфейсы запроса. В разделе [вики-сайте](https://github.com/Microsoft/vsixbootstrapper/wiki) примеры. |
 
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>См. также
 
-* [Changes to Visual Studio 2017 Setup](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup)
-
+* [Изменения в 2017 г. программа установки Visual Studio](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup)

@@ -1,37 +1,38 @@
 ---
-title: "Предоставляя автоматизации для кода | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Объекта CodeModel"
+title: "Предоставление автоматизации для кода | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: CodeModel object
 ms.assetid: 21cb3e63-f25c-404b-bc1d-a32ad0fdd4d5
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: aa1c2fa5d0da738057e59cdac007c499a834bc0a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Предоставляя автоматизации для кода
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Необходимо создать модель автоматизации пользовательского кода.  Пакет SDK для среды не предоставляет для выполнения образца.  Для решения в модели кода см. в разделе <xref:EnvDTE.CodeModel> объект.  
+# <a name="providing-automation-for-code"></a>Предоставление автоматизации для кода
+Создание модели автоматизации для кода не требуется. Пакет SDK для среды не предоставляет для этого образца. Для понимания модели кода, в разделе <xref:EnvDTE.CodeModel> объекта.  
   
- Для реализации модели кода, необходимо реализовать все интерфейсы, определенные своей внутренней структуры данных.  Объекты должны наследовать из `IDispatch`класс.  
+ Для реализации модели кода, необходимо реализовать все интерфейсы, которые определяются структуры внутренних данных. Объект, который должен быть производным от `IDispatch` класса.  
   
- Объекты, которые удлиняете, <xref:EnvDTE.CodeModel> и  <xref:EnvDTE.FileCodeModel>, доступные из  <xref:EnvDTE.Project> объект, и может выглядеть следующим образом:  
+ Объекты, которые расширяют возможности, <xref:EnvDTE.CodeModel> и <xref:EnvDTE.FileCodeModel>, доступны из <xref:EnvDTE.Project> объекта и выглядеть следующим образом:  
   
  <xref:EnvDTE.Project.CodeModel%2A>  
   
  <xref:EnvDTE.ProjectItem.FileCodeModel%2A>  
   
- Можно избрать для реализации просто `CodeModel` или  `FileCodeModel` интерфейс возвращается из объекта  `Project` и  <xref:EnvDTE.ProjectItem> объекты.  Укажите любую функциональность от этого интерфейса, который соответствует вашей системы проектов.  
+ Можно выбрать для реализации просто `CodeModel` или `FileCodeModel` интерфейса в объект возвращается из вашего `Project` и <xref:EnvDTE.ProjectItem> объектов. Предоставляет никакой функциональности из этого интерфейса, соответствующий вашей системе проектов.  
   
- Если необходимо добавить функции, такие как методы или свойства, которые недоступны из стандарта `CodeModel` и  `FileCodeModel` интерфейсы создайте собственный интерфейс, наследуемый от стандарта.  Убедитесь, что в документ его с системой проекта, поэтому пользователи знают для поиска.  Возвращается стандартный интерфейс, но пользователь может вызвать `QueryInterface` метод или приведение к пользовательскому интерфейсу, если известно, что существует.  
+ Если вы хотите добавить компоненты, например методы или свойства, которые недоступны из стандартного `CodeModel` и `FileCodeModel` интерфейсы, создайте собственный интерфейс, наследуемый от стандартного. Убедитесь, что документ в системе проекта, чтобы конечные пользователи могут искать его. Возвращает стандартный интерфейс, но пользователь может вызвать `QueryInterface` метода или преобразование в интерфейс, если известно, что существует.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Общие сведения о модели автоматизации](../../extensibility/internals/automation-model-overview.md)

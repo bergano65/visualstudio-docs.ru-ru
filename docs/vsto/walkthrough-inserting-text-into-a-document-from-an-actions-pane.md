@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Inserting Text into a Document from an Actions Pane | Microsoft Docs'
+title: "Пошаговое руководство: Вставка текста в документ из панели действий | Документы Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,176 +16,178 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], creating in Word
 - actions panes [Office development in Visual Studio], adding controls
 ms.assetid: fd14c896-5737-4a20-94f7-6064b67112c5
-caps.latest.revision: 70
-author: kempb
-ms.author: kempb
+caps.latest.revision: "70"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: f4952081dea98ae372ff1df9d87cd4146b6e6da6
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 5ca062823968153d7c8979cb13c0e3d403237be1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-inserting-text-into-a-document-from-an-actions-pane"></a>Walkthrough: Inserting Text into a Document from an Actions Pane
-  This walkthrough demonstrates how to create an actions pane in a Microsoft Office Word document. The actions pane contains two controls that collect input and then send the text to the document.  
+# <a name="walkthrough-inserting-text-into-a-document-from-an-actions-pane"></a>Пошаговое руководство. Вставка текста в документ из панели действий
+  В этом пошаговом руководстве показано, как создать панель действий в документ Microsoft Office Word. Панель действий содержит два элемента управления для сбора входных данных и затем отправить текст в документ.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- This walkthrough illustrates the following tasks:  
+ В данном пошаговом руководстве рассмотрены следующие задачи:  
   
--   Designing an interface by using Windows Forms controls on an actions pane control.  
+-   Разработка интерфейса с помощью элементов управления Windows Forms в элемент управления панели действий.  
   
--   Displaying the actions pane when the application opens.  
+-   Отображение панели действий при открытии приложения.  
   
 > [!NOTE]  
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Предварительные требования  
+ Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] or [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] или [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
-## <a name="creating-the-project"></a>Creating the Project  
- The first step is to create a Word Document project.  
+## <a name="creating-the-project"></a>Создание проекта  
+ Первым шагом является создание документа Word.  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>Создание нового проекта  
   
-1.  Create a Word Document project with the name **My Basic Actions Pane**. In the wizard, select **Create a new document**. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Создайте проект документа Word с именем **Моя базовая панель действий**. В мастере выберите **создания документа**. Дополнительные сведения см. в разделе [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio opens the new Word document in the designer and adds the **My Basic Actions Pane** project to **Solution Explorer**.  
+     Visual Studio откроет новый документ Word в конструкторе и добавляет **Моя базовая панель действий** проекта **обозревателе решений**.  
   
-## <a name="adding-text-and-bookmarks-to-the-document"></a>Adding Text and Bookmarks to the Document  
- The actions pane will send text to bookmarks in the document. To design the document, type some text to create a basic form.  
+## <a name="adding-text-and-bookmarks-to-the-document"></a>Добавление текста и закладок в документ  
+ Панель действий будет посылать текст в закладки в документе. Чтобы создать документ, введите текст для создания базовой форме.  
   
-#### <a name="to-add-text-to-your-document"></a>To add text to your document  
+#### <a name="to-add-text-to-your-document"></a>Добавление текста в документ  
   
-1.  Type the following text into your Word document:  
+1.  Введите следующий текст в документ Word:  
   
-     **March 21, 2008**  
+     **21 марта 2008 г.**  
   
-     **Name**  
+     **Имя**  
   
-     **Address**  
+     **Адрес**  
   
-     **This is an example of a basic actions pane in Word.**  
+     **Это пример базовой панели действий в Word.**  
   
- You can add a <xref:Microsoft.Office.Tools.Word.Bookmark> control to your document by dragging it from the **Toolbox** in Visual Studio or by using the **Bookmark** dialog box in Word.  
+ Можно добавить <xref:Microsoft.Office.Tools.Word.Bookmark> управления в документ, перетащив его из **элементов** в Visual Studio или с помощью **закладки** диалоговое окно в Word.  
   
-#### <a name="to-add-a-bookmark-control-to-your-document"></a>To add a Bookmark control to your document  
+#### <a name="to-add-a-bookmark-control-to-your-document"></a>Добавление элемента управления Bookmark в документ  
   
-1.  From the **Word Controls** tab of the **Toolbox**, drag a <xref:Microsoft.Office.Tools.Word.Bookmark> control to your document.  
+1.  Из **элементы управления Word** вкладке **элементов**, перетащите <xref:Microsoft.Office.Tools.Word.Bookmark> элемент управления.  
   
-     The **Add Bookmark Control** dialog box appears.  
+     **Добавление элемента управления Bookmark** откроется диалоговое окно.  
   
-2.  Select the word **Name**, without selecting the paragraph mark, and click **OK**.  
+2.  Выделите слово **имя**, без выберите знак абзаца и нажмите кнопку **ОК**.  
   
     > [!NOTE]  
-    >  The paragraph mark should be outside of the bookmark. If paragraph marks are not visible in the document, click the **Tools** menu, point to **Microsoft Office Word Tools** and then click **Options**. Click the **View** tab, and select the **Paragraph marks** check box in the **Formatting marks** section of the **Options** dialog box.  
+    >  Знак абзаца должно находиться за пределами закладки. Если знаки абзаца в документе не отображаются, щелкните **средства** последовательно выберите пункты **средства Microsoft Office Word** и нажмите кнопку **параметры**. Нажмите кнопку **представление** и выберите **знаки абзаца** флажок в **знаки форматирования** раздел **параметры** диалоговое окно.  
   
-3.  In the **Properties** window, change the **Name** property of **Bookmark1** to **showName**.  
+3.  В **свойства** измените **имя** свойство **Bookmark1** для **showName**.  
   
-4.  Select the word **Address**, without selecting the paragraph mark.  
+4.  Выделите слово **адрес**, не выбирая знак абзаца.  
   
-5.  On the **Insert** tab of the Ribbon, in the **Links** group, click **Bookmark**.  
+5.  На **вставить** ленты в **ссылки** щелкните **закладку**.  
   
-6.  In the **Bookmark** dialog box, type **showAddress** in the **Bookmark Name** box and click **Add**.  
+6.  В **закладки** диалоговом **showAddress** в **имя закладки** и нажмите кнопку **добавить**.  
   
-## <a name="adding-controls-to-the-actions-pane"></a>Adding Controls to the Actions Pane  
- To design the actions pane interface, add an actions pane control to the project and then add Windows Forms controls to the actions pane control.  
+## <a name="adding-controls-to-the-actions-pane"></a>Добавление элементов управления в панели действий  
+ Для разработки интерфейса панели действий, добавьте элемент управления панели действий в проект и затем добавить элементы управления Windows Forms в элемент управления панели действий.  
   
-#### <a name="to-add-an-actions-pane-control"></a>To add an actions pane control  
+#### <a name="to-add-an-actions-pane-control"></a>Чтобы добавить элемент управления панели действий  
   
-1.  Select the **My Basic Actions Pane** project in **Solution Explorer**.  
+1.  Выберите **Моя базовая панель действий** проекта в **обозревателе решений**.  
   
-2.  On the **Project** menu, click **Add New Item**.  
+2.  В меню **Проект** выберите пункт **Добавить новый элемент**.  
   
-3.  In the **Add New Item** dialog box, click **Actions Pane Control**, name the control **InsertTextControl,** and click **Add**.  
+3.  В **Добавление нового элемента** диалоговое окно, нажмите кнопку **управления панели действий**, имя элемента управления **InsertTextControl,** и нажмите кнопку **добавить**.  
   
-#### <a name="to-add-windows-form-controls-to-the-actions-pane-control"></a>To add Windows Form controls to the actions pane control  
+#### <a name="to-add-windows-form-controls-to-the-actions-pane-control"></a>Добавление элементов управления Windows Forms в элемент управления панели действий  
   
-1.  If the actions pane control is not visible in the designer, double-click **InsertTextControl**.  
+1.  Если элемент управления не виден в конструкторе, дважды щелкните **InsertTextControl**.  
   
-2.  From the **Common Controls** tab of the **Toolbox**, drag a **Label** control to the actions pane control.  
+2.  Из **стандартные элементы управления** вкладке **элементов**, перетащите **метка** элемента управления к элементу управления панели действий.  
   
-3.  Change the **Text** property of the Label control to **Name**.  
+3.  Изменение **текст** свойства для элемента управления метка **имя**.  
   
-4.  Add a **Textbox** control to the actions pane control, and change the following properties.  
+4.  Добавить **Textbox** управления к элементу управления панели действий и измените следующие свойства.  
   
-    |Property|Value|  
+    |Свойство|Значение|  
     |--------------|-----------|  
-    |**Name**|**getName**|  
+    |**Имя**|**getName**|  
     |**Size**|**130, 20**|  
   
-5.  Add a second **Label** control to the actions pane control, and change the **Text** property to **Address**.  
+5.  Добавьте второй **метка** управления к элементу управления панели действий и измените **текст** свойства **адрес**.  
   
-6.  Add a second **Textbox** control to the actions pane control, and change the following properties.  
+6.  Добавьте второй **Textbox** управления к элементу управления панели действий и измените следующие свойства.  
   
-    |Property|Value|  
+    |Свойство|Значение|  
     |--------------|-----------|  
-    |**Name**|**getAddress**|  
-    |**Accepts Return**|**True**|  
+    |**Имя**|**getAddress**|  
+    |**Принимает возврата**|**True**|  
     |**Multiline**|**True**|  
     |**Size**|**130, 40**|  
   
-7.  Add a **Button** control to the actions pane control, and change the following properties.  
+7.  Добавить **кнопку** управления к элементу управления панели действий и измените следующие свойства.  
   
-    |Property|Value|  
+    |Свойство|Значение|  
     |--------------|-----------|  
-    |**Name**|**addText**|  
-    |**Text**|**Insert**|  
+    |**Имя**|**addText**|  
+    |**Text**|**Вставка**|  
   
-## <a name="adding-code-to-insert-text-into-the-document"></a>Adding Code to Insert Text into the Document  
- In the actions pane, write code that inserts the text from the text boxes into the appropriate <xref:Microsoft.Office.Tools.Word.Bookmark> controls in the document. You can use the `Globals` class to access controls on the document from the controls on the actions pane. For more information, see [Global Access to Objects in Office Projects](../vsto/global-access-to-objects-in-office-projects.md).  
+## <a name="adding-code-to-insert-text-into-the-document"></a>Добавление кода для вставки текста в документ  
+ В области действия написать код, который вставляет текст из поля в соответствующие <xref:Microsoft.Office.Tools.Word.Bookmark> элементов управления в документе. Можно использовать `Globals` класса для доступа к элементам управления в документе из элементов управления в панели действий. Дополнительные сведения см. в разделе [глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
-#### <a name="to-insert-text-from-the-actions-pane-in-a-bookmark-in-the-document"></a>To insert text from the actions pane in a bookmark in the document  
+#### <a name="to-insert-text-from-the-actions-pane-in-a-bookmark-in-the-document"></a>Вставить текст из области действия в закладки в документе  
   
-1.  Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler of the **addText** button.  
+1.  Добавьте следующий код в <xref:System.Windows.Forms.Control.Click> обработчик событий **addText** кнопки.  
   
-     [!code-csharp[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#8)]  [!code-vb[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/InsertTextControl.vb#8)]  
+     [!code-csharp[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#8)]
+     [!code-vb[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/InsertTextControl.vb#8)]  
   
-2.  In C#, you must add an event handler for the button click. You can place this code in the `InsertTextControl` constructor after the call to `IntializeComponent`. For information about creating event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+2.  В C# необходимо добавить обработчик событий для нажатия кнопки. Можно заменить этот код в `InsertTextControl` конструктор после вызова `IntializeComponent`. Сведения о создании обработчиков событий см. в разделе [как: Создание обработчиков событий в проектах Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#9)]  
   
-## <a name="adding-code-to-show-the-actions-pane"></a>Adding Code to Show the Actions Pane  
- To show the actions pane, add the control you created to the control collection.  
+## <a name="adding-code-to-show-the-actions-pane"></a>Добавление кода для отображения панели «действия»  
+ Чтобы отобразить панель действий, добавьте элемент управления, созданный в коллекцию элементов управления.  
   
-#### <a name="to-show-the-actions-pane"></a>To show the actions pane  
+#### <a name="to-show-the-actions-pane"></a>Чтобы отобразить панель действий  
   
-1.  Create a new instance of the actions pane control in the `ThisDocument` class.  
+1.  Создать новый экземпляр элемента управления панели действий в `ThisDocument` класса.  
   
-     [!code-csharp[Trin_VstcoreActionsPaneWord#10](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#10)]  [!code-vb[Trin_VstcoreActionsPaneWord#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#10)]  
+     [!code-csharp[Trin_VstcoreActionsPaneWord#10](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#10)]
+     [!code-vb[Trin_VstcoreActionsPaneWord#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#10)]  
   
-2.  Add the following code to the <xref:Microsoft.Office.Tools.Word.Document.Startup> event handler of `ThisDocument`.  
+2.  Добавьте следующий код в <xref:Microsoft.Office.Tools.Word.Document.Startup> обработчик событий `ThisDocument`.  
   
-     [!code-csharp[Trin_VstcoreActionsPaneWord#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#11)]  [!code-vb[Trin_VstcoreActionsPaneWord#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#11)]  
+     [!code-csharp[Trin_VstcoreActionsPaneWord#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#11)]
+     [!code-vb[Trin_VstcoreActionsPaneWord#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#11)]  
   
-## <a name="testing-the-application"></a>Testing the Application  
- Test your document to verify that the actions pane opens when the document is opened and that text typed into the text boxes is inserted into the bookmarks when the button is clicked.  
+## <a name="testing-the-application"></a>Тестирование приложения  
+ Проверьте документ, чтобы убедиться, что панель действий открывается при открытии документа и что текст, вводимый в текстовые поля вставляется в закладки, при нажатии кнопки.  
   
-#### <a name="to-test-your-document"></a>To test your document  
+#### <a name="to-test-your-document"></a>Проверка документа  
   
-1.  Press F5 to run your project.  
+1.  Нажмите клавишу F5 для запуска проекта.  
   
-2.  Confirm that the actions pane is visible.  
+2.  Убедитесь, что панель действий становится видимой.  
   
-3.  Type your name and address into the text boxes on the actions pane and click **Insert**.  
+3.  Введите имя и адрес в текстовые поля в панели действий и нажмите кнопку **вставить**.  
   
-## <a name="next-steps"></a>Next Steps  
- Here are some tasks that might come next:  
+## <a name="next-steps"></a>Дальнейшие действия  
+ Ниже приводятся некоторые из возможных последующих задач.  
   
--   Creating an actions pane in Excel. For more information, see [How to: Add an Actions Pane to Excel Workbooks](http://msdn.microsoft.com/en-us/62abfce6-e44f-419d-85d8-26bf59f33872).  
+-   Создание панели действий в Excel. Дополнительные сведения см. в разделе [как: Добавление панели действий к книгам Excel](http://msdn.microsoft.com/en-us/62abfce6-e44f-419d-85d8-26bf59f33872).  
   
--   Binding data to controls on an actions pane. For more information, see [Walkthrough: Binding Data to Controls on a Word Actions Pane](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
+-   Привязка данных к элементам управления в панели действий. Дополнительные сведения см. в разделе [Пошаговое руководство: привязка данных к элементам управления в панели действий Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
   
-## <a name="see-also"></a>See Also  
- [Actions Pane Overview](../vsto/actions-pane-overview.md)   
- [How to: Add an Actions Pane to Word Documents or Excel Workbooks](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [How to: Add an Actions Pane to Excel Workbooks](http://msdn.microsoft.com/en-us/62abfce6-e44f-419d-85d8-26bf59f33872)   
- [How to: Manage Control Layout on Actions Panes](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [Bookmark Control](../vsto/bookmark-control.md)  
+## <a name="see-also"></a>См. также  
+ [Общие сведения о панели действий](../vsto/actions-pane-overview.md)   
+ [Как: Добавление панели действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Как: Добавление панели действий для книг Excel](http://msdn.microsoft.com/en-us/62abfce6-e44f-419d-85d8-26bf59f33872)   
+ [Как: Управление структурой элементов управления в панели действий](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
+ [Элемент управления Bookmark](../vsto/bookmark-control.md)  
   
   

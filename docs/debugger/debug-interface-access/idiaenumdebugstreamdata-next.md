@@ -1,60 +1,59 @@
 ---
-title: "IDiaEnumDebugStreamData::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumDebugStreamData::Next - метод"
+title: "IDiaEnumDebugStreamData::Next | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumDebugStreamData::Next method
 ms.assetid: 114171dd-38fd-4bd7-a702-8ff887ffc99b
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ac3e4e59f96c1178a57dbcb7b936a69905fa265d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumDebugStreamData::Next
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает заданное количество записей в указанной последовательности.  
+# <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
+Возвращает указанный число записей в последовательности перечисления.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT Next (   
-   ULONG  celt,  
-   DWORD  cbData,  
-   DWORD* pcbData,  
-   BYTE   data[],  
-   ULONG* pceltFetched  
+```C++  
+HRESULT Next (   
+   ULONG  celt,  
+   DWORD  cbData,  
+   DWORD* pcbData,  
+   BYTE   data[],  
+   ULONG* pceltFetched  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  celt  
- \[in\] число записей для извлечения.  
+ [in] Количество записей, которые требуется получить.  
   
  cbData  
- \[in\] размер буфера данных в байтах.  
+ [in] Размер буфера данных, в байтах.  
   
  pcbData  
- \[out\] возвращает число возвращаемых байтов.  If `data` равно null, после чего  `pcbData` содержит общее число байтов доступных данных для всех записей.  
+ [out] Возвращает число байтов, возвращенных. Если `data` имеет значение NULL, затем `pcbData` содержит общее число байтов данных, доступных для всех запрошенных записей.  
   
- данные \[\]  
- \[out\] буфер, который необходимо заполнить данными записи потока отладки.  
+ данные]  
+ [out] Буфер, в котором должен быть заполнен данными записи поток отладки.  
   
  pceltFetched  
- \[in, out\] возвращает число записей в пределах `data`.  
+ [in, out] Возвращает число записей в `data`.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`.  Возвращает `S_FALSE` если несколько записей.  В противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если нет дополнительных записей. В противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
  [IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)

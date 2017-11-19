@@ -1,27 +1,30 @@
 ---
-title: "IScriptNode::GetCookie | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IScriptNode::GetCookie | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IScriptNode.GetCookie
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IScriptNode::GetCookie"
+helpviewer_keywords: IScriptNode::GetCookie
 ms.assetid: 007339c6-a73a-4147-b3c0-cc041e467ecd
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fa68f528aeb405ca150cff717ab5e4bebb82027a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IScriptNode::GetCookie
-Возвращает приложение\- указанное значение, которое используется для связывания сценарий с объектом основного приложения.  
+# <a name="iscriptnodegetcookie"></a>IScriptNode::GetCookie
+Возвращает значение, определяемые приложением, которое используется для связи с объектом узла пользователи.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT GetCookie(  
@@ -29,20 +32,20 @@ HRESULT GetCookie(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pdwCookie`  
- \[out\] для получения объекта `IScriptEntry`, приложение\- указанное значение файла cookie.  
+ [out] Для `IScriptEntry` объектов, возвращает значение cookie, определяемые приложением.  
   
- Для объекта `IScriptNode`, представляющий страницу, возвращает значение 0.  
+ Для `IScriptNode` , представляющий веб-страницы, возвращает значение 0.  
   
-## Возвращаемое значение  
- Объект `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IScriptNode](../../winscript/reference/iscriptnode-interface.md)

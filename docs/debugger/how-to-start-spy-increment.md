@@ -1,49 +1,48 @@
 ---
-title: "How to: Start Spy++ | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Spy++, starting"
+title: "Как: Запуск Spy ++ | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Spy++, starting
 ms.assetid: 1d36813a-dc2a-4fda-9b3d-a38928a62ced
-caps.latest.revision: 11
-caps.handback.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b301d16c96878974c12b94879f717c727d129a7c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# How to: Start Spy++
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Spy\+\+ можно запустить либо из Visual Studio, либо из командной строки.  
+# <a name="how-to-start-spy"></a>Практическое руководство. Запуск Spy++
+Можно запустить Spy ++ из Visual Studio или в командной строке.  
   
- Если при запуске Spy\+\+ появляется сообщение, требующее разрешения на внесение изменений в систему, нажмите кнопку **Да**.  
+ При первом запуске Spy ++, если отображается сообщение, чтобы задать разрешения, чтобы внести изменения в компьютер, нажмите кнопку **Да**.  
   
 > [!NOTE]
->  Возможен запуск только одной копии Spy\+\+.  При попытке запуска другого экземпляра на передний план будет выведен текущий экземпляр.  
+>  Можно запустить только один экземпляр Spy ++. При попытке запустить другой экземпляр, то только текущего запущенного экземпляра получить фокус.  
   
-### Запуск Spy\+\+ из Visual Studio  
+### <a name="to-start-spy-from-visual-studio"></a>Запуск Spy ++ из Visual Studio  
   
--   В меню **Инструменты** выберите пункт **Spy\+\+**.  
+-   На **средства** меню, нажмите кнопку **Spy ++**.  
   
-     Поскольку Spy\+\+ работает независимо, после его запуска Visual Studio можно закрыть.  
+     Поскольку Spy ++ работает. независимо, после его запуска, можно закрыть Visual Studio.  
   
     > [!NOTE]
-    >  При записи сообщений в журнал с помощью Spy\+\+ производительность операционной системы может снизиться.  
+    >  При записи сообщений в журнал с помощью Spy ++ его может вызвать замедление операционной системы.  
   
-### Запуск Spy\+\+ из командной строки  
+### <a name="to-start-spy-at-a-command-prompt"></a>Запуск Spy ++ из командной строки  
   
-1.  В окне командной строки перейдите папку, в которой находится файл spyxx.exe.  Обычно путь к этой папке:  \\*папка установки Visual Studio*\\Common7\\Tools\\.  
+1.  В окне командной строки перейдите к папке, содержащей spyxx.exe. Как правило является путь к этой папке... \\ *Папка установки visual Studio*\Common7\Tools\\.  
   
-2.  Введите **spyxx.exe** и нажмите клавишу ВВОД.  
+2.  Тип **spyxx.exe** и нажмите клавишу ВВОД.  
   
-## См. также  
- [Using Spy\+\+](../debugger/using-spy-increment.md)   
- [Spy\+\+ Views](../debugger/spy-increment-views.md)   
- [Spy\+\+ Reference](../debugger/spy-increment-reference.md)
+## <a name="see-also"></a>См. также  
+ [Использование Spy ++](../debugger/using-spy-increment.md)   
+ [Представления Spy ++](../debugger/spy-increment-views.md)   
+ [Справочник по Spy++](../debugger/spy-increment-reference.md)

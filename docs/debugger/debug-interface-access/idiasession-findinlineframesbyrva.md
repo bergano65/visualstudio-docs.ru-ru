@@ -1,51 +1,50 @@
 ---
-title: "IDiaSession::findInlineFramesByRVA | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: "IDiaSession::findInlineFramesByRVA | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: ddb3ff0e-cb3d-4fa0-af56-f064b218b264
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e2fedaeed12ddc818bd3260cb46b0ef88a95ef24
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findInlineFramesByRVA
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает перечисление, которое позволяет клиенту выполнять перебор всех кадров относительному адресу встроенного по указанному виртуальному \(RVA\).  
+# <a name="idiasessionfindinlineframesbyrva"></a>IDiaSession::findInlineFramesByRVA
+Возвращает перечисление, которое позволяет клиенту проходить через все фреймы для указанного относительного виртуального адреса (RVA).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT findInlineFramesByRVA (   
-   IDiaSymbol*       parent,  
-   DWORD             rva,  
-   IDiaEnumSymbols** ppResult  
+```C++  
+HRESULT findInlineFramesByRVA (   
+   IDiaSymbol*       parent,   DWORD             rva,  
+   IDiaEnumSymbols** ppResult  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `parent`  
- \[in\] объект `IDiaSymbol`, представляющий родительский элемент.  
+ [in] `IDiaSymbol` Объект, представляющий родительский объект.  
   
  `rva`  
- \[in\] определяет в качестве адреса RVA.  
+ [in] Указывает адрес как RVA.  
   
  `ppResult`  
- \[out\] хранит объект `IDiaEnumSymbols`, содержащий список кадров, которые получены.  
+ [out] Содержит `IDiaEnumSymbols` , содержащий список кадров, которые извлекаются.  
   
-## Возвращаемое значение  
- Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   

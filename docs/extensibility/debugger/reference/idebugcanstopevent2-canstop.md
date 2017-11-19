@@ -1,56 +1,56 @@
 ---
-title: "IDebugCanStopEvent2::CanStop | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCanStopEvent2::CanStop"
-helpviewer_keywords: 
-  - "IDebugCanStopEvent2::CanStop"
+title: "IDebugCanStopEvent2::CanStop | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCanStopEvent2::CanStop
+helpviewer_keywords: IDebugCanStopEvent2::CanStop
 ms.assetid: 7d61adbe-6b3d-41f3-86a1-45d9cc01a7f8
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d9008410831d3c2c7b6e93d4f35a1d08914a5336
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCanStopEvent2::CanStop
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Отладчик \(DE\) уведомляет ли остановка на текущем месте кода или не просто возобновить выполнение.  
+# <a name="idebugcanstopevent2canstop"></a>IDebugCanStopEvent2::CanStop
+Уведомляет отладчик (DE) ли Остановка текущей позиции кода или просто продолжить выполнение.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT CanStop (   
-   BOOL fCanStop  
+```cpp  
+HRESULT CanStop (   
+   BOOL fCanStop  
 );  
 ```  
   
-```c#  
-int CanStop (   
-   int fCanStop  
+```csharp  
+int CanStop (   
+   int fCanStop  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `fCanStop`  
- \[in\] ненулевое значение \(`TRUE`если DE\) должен прерывается на текущем месте кода; в противном случае \- нуль \(`FALSE`\).  
+ [in] Не равно нулю (`TRUE`) Если DE остановки в коде текущего расположения; в противном случае — нуль (`FALSE`).  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Получатель данного события обычно вызывает [GetReason](../Topic/IDebugCanStopEvent2::GetReason.md) метод, чтобы определить причину DE хочет остановить, а затем вызывает  `IDebugCanStopEvent2::CanStop` метод с соответствующим ответом.  
+## <a name="remarks"></a>Примечания  
+ Получатель данного события обычно вызывает [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) метод, чтобы определить причину DE хочет остановить, а затем вызывает `IDebugCanStopEvent2::CanStop` метод с соответствующий ответ.  
   
- Если DE останавливается, он отправляет событие, описывающее причину для остановки.  Обычно 2 событий, отправляются пользователю или ввода, представленные break [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) интерфейс и событие точки останова, представленное  [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) интерфейс.  
+ При остановке DE, он отправляет событие, которое описывает причину остановки. Обычно существует два события, которые отправляются разрыв пользователя или сигнала, представленного [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) интерфейса и точка останова события, представленного [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) интерфейса.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)   
  [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)   
  [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)   
- [GetReason](../Topic/IDebugCanStopEvent2::GetReason.md)
+ [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

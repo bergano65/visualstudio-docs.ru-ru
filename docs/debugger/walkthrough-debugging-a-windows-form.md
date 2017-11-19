@@ -1,11 +1,10 @@
 ---
-title: 'Walkthrough: Debugging a Windows Form | Microsoft Docs'
+title: "Пошаговое руководство: Отладка в Windows Forms | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -23,98 +22,61 @@ helpviewer_keywords:
 - Windows Forms, debugging
 - debugging Windows Forms, walkthroughs
 ms.assetid: 529db1e2-d9ea-482a-b6a0-7c543d17f114
-caps.latest.revision: 28
+caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: d0addd573d5c339abc6714b63db6a779af72f5cb
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
-
+ms.openlocfilehash: a21450dda35addae55019545d67ab7f1e4ebe99a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-debugging-a-windows-form"></a>Walkthrough: Debugging a Windows Form
-A Windows Form is one of the most common managed applications. A Windows Form creates a standard Windows application. You can complete this walkthrough using Visual Basic, C#, or C++.  
+# <a name="walkthrough-debugging-a-windows-form"></a>Пример. Отладка в Windows Forms
+Форма Windows Forms — один из наиболее распространенных вариантов управляемых приложений. На основе формы Windows Forms создается стандартное приложение Windows. Можно реализовать данный примере на Visual Basic, C# или C++.  
   
- First, you must close any open solutions.  
+ Для начала необходимо закрыть и открыть решения.  
   
-### <a name="to-prepare-for-this-walkthrough"></a>To prepare for this walkthrough  
+### <a name="to-prepare-for-this-walkthrough"></a>Чтобы подготовиться к выполнению данного пошагового руководства  
   
--   If you already have an open solution open, close it. (On the **File** menu, select **Close Solution**.)  
+-   Если какое–либо решение уже открыто, закройте его. (На **файл** последовательно выберите пункты **закрыть решение**.)  
   
-## <a name="create-a-new-windows-form"></a>Create a New Windows Form  
- Next, you will create a new Windows Form.  
+## <a name="create-a-new-windows-form"></a>Создание новой формы Windows Forms.  
+ Далее нам предстоит создать новую форму Windows Forms.  
   
-#### <a name="to-create-the-windows-form-for-this-walkthrough"></a>To create the Windows form for this walkthrough  
+#### <a name="to-create-the-windows-form-for-this-walkthrough"></a>Чтобы создать форму Windows Forms для данного примера  
   
-1.  On the **File** menu, choose **New** and click **Project**.  
+1.  На **файл** меню, выберите **New** и нажмите кнопку **проекта**.  
   
-     The **New Project** dialog box appears.  
+     Откроется диалоговое окно **Новый проект** .  
   
-2.  In the Project Types pane, open the **Visual Basic**, **Visual C#**, or **Visual C++** node, then  
+2.  В области "типы проектов", откройте **Visual Basic**, **Visual C#**, или **Visual C++** узел, затем  
   
-    1.  For Visual Basic or Visual C#, select the **Windows** node, then select **Windows Form Application** in the **Templates** pane.  
+    1.  Для Visual Basic или Visual C# выберите **Windows** узел, затем выберите **приложение форм Windows** в **шаблоны** области.  
   
-    2.  For Visual C++, select the **CLR** node, then select **Windows Form Application** in the **Templates** pane..  
+    2.  Visual C++ выберите **CLR** узел, затем выберите **приложение форм Windows** в **шаблоны** области...  
   
-3.  In the **Templates** pane, select **Windows Application**.  
+3.  В **шаблоны** выберите **приложение Windows**.  
   
-4.  In the **Name** box, give the project a unique name (for example, Walkthrough_SimpleDebug).  
+4.  В **имя** Предоставьте уникальное имя (например, Walkthrough_SimpleDebug) проекта.  
   
-5.  Click **OK**.  
+5.  Нажмите кнопку **ОК**.  
   
-     Visual Studio creates a new project and displays a new form in the Windows Forms designer. For more information, see [Windows Forms Designer](http://msdn.microsoft.com/en-us/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
+     Visual Studio создаст новый проект и откроет новую форму в конструкторе Windows Forms. Дополнительные сведения см. в разделе [конструктор Windows Forms](http://msdn.microsoft.com/en-us/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
   
-6.  On the **View** menu, select **Toolbox**.  
+6.  На **представление** последовательно выберите пункты **элементов**.  
   
-     The Toolbox opens. For more information, see [Toolbox](../ide/reference/toolbox.md).  
+     Откроется Панель элементов. Дополнительные сведения см. в разделе [элементов](../ide/reference/toolbox.md).  
   
-7.  In the Toolbox, click on the **Button** control and drag the control to the Form design surface. Drop the button on the form.  
+7.  На панели инструментов нажмите кнопку **кнопку** управления и перетащите его на поверхность разработки формы. Сбросьте кнопку в форму.  
   
-8.  In the Toolbox, click on the **TextBox** control and drag the control to the Form design surface. Drop the **TextBox** on the form.  
+8.  На панели инструментов нажмите кнопку **TextBox** управления и перетащите его на поверхность разработки формы. Удалить **TextBox** в форме.  
   
-9. On the form design surface, double-click the button.  
+9. На поверхности разработки формы дважды щелкните кнопку.  
   
-     This takes you to the code page. The cursor should be in `button1_Click`.  
+     Появится страница кода. Курсор должен находиться в тексте `button1_Click`  
   
-10. In the function `button1_Click`., add the following code:  
-  
-    ```  
-    ' Visual Basic  
-    textBox1.Text = "Button was clicked!"  
-  
-    // C#  
-    textBox1.Text = "Button was clicked!";  
-  
-    // C++  
-    textBox1->Text = "Button was clicked!";  
-    ```  
-  
-11. On the **Build** menu, select **Build Solution**.  
-  
-     The project should build with no errors.  
-  
-## <a name="debug-your-form"></a>Debug Your Form  
- Now, you are ready to begin debugging.  
-  
-#### <a name="to-debug-the-windows-form-created-for-this-walkthrough"></a>To debug the Windows Form created for this walkthrough  
-  
-1.  In the source window, click the left margin on the same line as the text you added:  
+10. В функции `button1_Click` добавьте следующий код:  
   
     ```  
     ' Visual Basic  
@@ -127,55 +89,77 @@ A Windows Form is one of the most common managed applications. A Windows Form cr
     textBox1->Text = "Button was clicked!";  
     ```  
   
-     A red dot appears and the text on the line is highlighted in red. The red dot represents a breakpoint. For more information, see [Breakpoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). When you run the application under the debugger, the debugger will break execution at that location when the code is hit. You can then view the state of your application and debug it.  
+11. На **построения** последовательно выберите пункты **построить решение**.  
+  
+     Проект должен быть построен без ошибок.  
+  
+## <a name="debug-your-form"></a>Отладка формы  
+ Теперь все готово для того, чтобы начать отладку.  
+  
+#### <a name="to-debug-the-windows-form-created-for-this-walkthrough"></a>Чтобы выполнить отладку формы Windows Forms, созданной для данного примера  
+  
+1.  В окне исходного кода щелкните левое поле на той же строке, в которую добавляется текст:  
+  
+    ```  
+    ' Visual Basic  
+    textBox1.Text = "Button was clicked!"  
+  
+    // C#  
+    textBox1.Text = "Button was clicked!";  
+  
+    // C++  
+    textBox1->Text = "Button was clicked!";  
+    ```  
+  
+     Появится красная точка, и текст строки будет выделен красным цветом. Красная точка представляет точку останова. Дополнительные сведения см. в разделе [точки останова](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). Если приложение запускается из отладчика, выполнение этого приложения будет приостановлено отладчиком на строке с помеченным кодом. После этого можно просмотреть состояние приложения и произвести его отладку.  
   
     > [!NOTE]
-    >  You can also right-click any line of code, point to **Breakpoint**, and then click **Insert Breakpoint** to add a breakpoint on that line.  
+    >  Щелкните правой кнопкой мыши любую строку кода, выбрать пункт **останова**, а затем нажмите кнопку **вставить точку останова** Чтобы добавить точку останова в этой строке.  
   
-2.  ON the **Debug** menu, choose **Start**.  
+2.  ON **отладки** меню, выберите **запустить**.  
   
-     The Windows Form starts running.  
+     Запустится форма Windows Forms.  
   
-3.  On the Windows Form, click the button you added.  
+3.  В форме Windows Forms щелкните добавленную кнопку.  
   
-     In Visual Studio, this takes you to the line where you set your breakpoint on the code page. This line should be highlighted in yellow. You can now view the variables in your application and control its execution. Your application has now stopped executing, waiting for an action from you.  
+     После этого в Visual Studio приложение остановится на той строке, где была задана точка останова на странице кода. Эта строка будет выделена желтым цветом. Теперь можно просматривать переменные в приложении и управлять его выполнением. В этот момент приложение остановит свое выполнение и будет ожидать действий со стороны пользователя.  
   
-4.  On the **Debug** menu, choose **Windows**, then **Watch**, and click **Watch1**.  
+4.  На **отладки** меню, выберите **Windows**, затем **Контрольные значения**и нажмите кнопку **Контрольные значения 1**.  
   
-5.  In the **Watch1** window, click on a blank row. In the **Name** column, type `textBox1.Text` (if you are using Visual Basic, Visual C#, or J#) or `textBox1->Text` (if you are using C++), then press ENTER.  
+5.  В **Контрольные значения 1** щелкните пустую строку. В **имя** введите `textBox1.Text` (Если вы используете Visual Basic, Visual C# или J#) или `textBox1->Text` (если используется C++), затем нажмите клавишу ВВОД.  
   
-     The **Watch1** window shows the value of this variable in quotation marks as:  
+     **Контрольные значения 1** отобразит значение этой переменной в кавычки:  
   
     ```  
     ""  
     ```  
   
-6.  On the **Debug** menu, choose **Step Into**.  
+6.  На **отладки** меню, выберите **шаг с заходом**.  
   
-     The value of textBox1.Text changes in the **Watch1** window to:  
+     Значение textBox1.Text в **Контрольные значения 1** окна, чтобы:  
   
     ```  
     Button was clicked!  
     ```  
   
-7.  On the **Debug** menu, choose **Continue** to resume debugging your program.  
+7.  На **отладки** меню, выберите **Продолжить** для возобновления отладки программы.  
   
-8.  On the Windows Form, click the button again.  
+8.  В форме Windows Forms снова нажмите кнопку.  
   
-     Visual Studio breaks execution again.  
+     Visual Studio снова приостановит выполнение программы.  
   
-9. Click on the red dot that represents the breakpoint.  
+9. Щелкните красную точка, представляющую точка останова.  
   
-     This removes the breakpoint from your code.  
+     Это действие удалит точка останова из кода программы.  
   
-10. On the **Debug** menu, choose **Stop Debugging**.  
+10. На **отладки** меню, выберите **остановить отладку**.  
   
-## <a name="attach-to-your-windows-form-application-for-debugging"></a>Attach to Your Windows Form Application for Debugging  
- In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], you can attach the debugger to a running process. If you are using an Express Edition, this feature is not supported.  
+## <a name="attach-to-your-windows-form-application-for-debugging"></a>Присоединение к приложению Windows Form для отладки  
+ В [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] можно присоединить отладчик к выполняющемуся процессу. Если используется экспресс-выпуск, эта функция не поддерживается.  
   
-#### <a name="to-attach-to-the-windows-form-application-for-debugging"></a>To attach to the Windows Form Application for debugging  
+#### <a name="to-attach-to-the-windows-form-application-for-debugging"></a>Присоединение к приложению Windows Form для отладки  
   
-1.  In the project you created above, click in the left margin to once again set a breakpoint at the line you added:  
+1.  В созданном ранее проекте щелкните левое поле, чтобы еще раз установить точка останова на добавленной строке:  
   
     ```  
     ' Visual Basic  
@@ -188,22 +172,22 @@ A Windows Form is one of the most common managed applications. A Windows Form cr
     textBox1->Text = "Button was clicked!";  
     ```  
   
-2.  On the **Debug** menu, select **Start Without Debugging**.  
+2.  На **отладки** последовательно выберите пункты **Запуск без отладки**.  
   
-     The Windows Form starts running under Windows, just as if you had double-clicked its executable. The debugger is not attached.  
+     Форма Windows Forms запустится из Windows, как и при двойном щелчке исполняемого файла. Отладчик не будет присоединен.  
   
-3.  On the **Debug** menu, select **Attach to Process**. (This command is also available on the **Tools** menu.)  
+3.  На **отладки** последовательно выберите пункты **присоединиться к процессу**. (Данная команда доступна также на **средства** меню.)  
   
-     The **Attach to Process** dialog box appears.  
+     Откроется диалоговое окно **Присоединение к процессу** .  
   
-4.  In the **Available Processes** pane, find the process name (Walkthrough_SimpleDebug.exe) in the **Process** column and click it.  
+4.  В **доступные процессы** области, найдите имя процесса (Walkthrough_SimpleDebug.exe) в **процесс** столбец и щелкните его.  
   
-5.  Click the **Attach** button.  
+5.  Нажмите кнопку **присоединение** кнопки.  
   
-6.  In your Windows Form, click the one and only button.  
+6.  В форме Windows Forms нажмите единственную кнопку.  
   
-     The debugger breaks execution of the Windows Form at the breakpoint.  
+     Отладчик прервет выполнение формы Windows Forms на точке останова.  
   
-## <a name="see-also"></a>See Also  
- [Debugging Managed Code](../debugger/debugging-managed-code.md)   
- [Debugger Security](../debugger/debugger-security.md)
+## <a name="see-also"></a>См. также  
+ [Отладка управляемого кода](../debugger/debugging-managed-code.md)   
+ [Безопасность отладчика](../debugger/debugger-security.md)

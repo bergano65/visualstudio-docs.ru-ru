@@ -1,48 +1,50 @@
 ---
-title: "Предоставление событий в Visual Studio SDK | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Предоставление событий [Visual Studio]"
-  - "автоматизация [Visual Studio SDK], предоставление событий"
+title: "Предоставление доступа к событиям в Visual Studio SDK | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- events [Visual Studio], exposing
+- automation [Visual Studio SDK], exposing events
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
-caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c7b392ac841a50d835186e79a383e404e7fba190
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Предоставление событий в Visual Studio SDK
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] позволяет источником событий с помощью автоматизации. Корпорация Майкрософт рекомендует, чтобы вы источник события для проектов и элементов проектов.  
+# <a name="exposing-events-in-the-visual-studio-sdk"></a>Предоставление доступа к событиям в Visual Studio SDK
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]позволяет источником событий с помощью автоматизации. Корпорация Майкрософт рекомендует, чтобы вы источник события для проектов и элементов проектов.  
   
- Потребители автоматизации из получаются события <xref:EnvDTE.DTEClass.Events%2A> объекта или <xref:EnvDTE.DTEClass.GetObject%2A> («EventObjectName»). Среда вызывает `IDispatch::Invoke` с помощью `DISPATCH_METHOD` или `DISPATCH_PROPERTYGET` флаги для получения события.  
+ События получаются путем автоматизации потребителей из <xref:EnvDTE.DTEClass.Events%2A> объекта или <xref:EnvDTE.DTEClass.GetObject%2A> («EventObjectName»). Среда вызывает метод `IDispatch::Invoke` с помощью `DISPATCH_METHOD` или `DISPATCH_PROPERTYGET` флаги для возврата при возникновении события.  
   
- Процесс объясняется, как возвращаются события VSPackage.  
+ Процесс объясняется, как возвращаются VSPackage связанные события.  
   
 1.  Запускает среду.  
   
-2.  Считывает из реестра все имена значений в разделе Автоматизация, AutomationEvents и AutomationProperties ключи всех VSPackages и сохраняет эти имена в таблице.  
+2.  Считывает из реестра все имена значений в группе автоматизации, AutomationEvents и AutomationProperties ключи всех пакетов VSPackage и сохраняет эти имена в таблице.  
   
-3.  Вызывает потребителя автоматизации, в этом примере `DTE.Events.AutomationProjectsEvents` или `DTE.Events.AutomationProjectItemsEvents`.  
+3.  Вызывает объект-получатель автоматизации, в этом примере `DTE.Events.AutomationProjectsEvents` или `DTE.Events.AutomationProjectItemsEvents`.  
   
 4.  Среда находит параметр строки в таблице и загружает соответствующий пакет VSPackage.  
   
-5.  Среда вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> метод с помощью имени передается в вызов, в этом примере, AutomationProjectsEvents или AutomationProjectItemsEvents.  
+5.  Среда вызывает метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> метод с помощью имени, переданный в вызов; в этом примере AutomationProjectsEvents или AutomationProjectItemsEvents.  
   
-6.  VSPackage создает корневой объект, который содержит методы, такие как `get_AutomationProjectsEvents` и `get_AutomationProjectItemEvents` и возвращает указатель IDispatch объекта.  
+6.  VSPackage создается корневой объект, который содержит методы, такие как `get_AutomationProjectsEvents` и `get_AutomationProjectItemEvents` и затем возвращает указатель интерфейса IDispatch объекта.  
   
-7.  Среда вызывает соответствующий метод, основанный на имени, переданного в вызов автоматизации.  
+7.  Окружение вызывает соответствующий метод на основе имени, переданного в вызов автоматизации.  
   
-8.   `get_` Метод создает другой объект событий на основе интерфейса IDispatch, который реализует интерфейс `IConnectionPointContainer` интерфейс и `IConnectionPoint` интерфейс и возвращает объект IDispatchpointer.  
+8.  `get_` Метод создает другой объект события, основанный на IDispatch, который реализует интерфейс `IConnectionPointContainer` интерфейс и `IConnectionPoint` интерфейса и возвращает IDispatchpointer объекту.  
   
- Чтобы предоставить событие с помощью автоматизации, вы должны ответить <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> и контрольных значений для строк, которые можно добавить в реестр. В этом примере базовый проект строки являются «BscProjectsEvents» и «BscProjectItemsEvents».  
+ Чтобы предоставить событие с помощью автоматизации, должен отвечать на <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> и контрольных значений для строк, которые можно добавить в реестр. В этом примере базовый проект строки являются «BscProjectsEvents» и «BscProjectItemsEvents».  
   
 ## <a name="registry-entries-from-the-basic-project-sample"></a>Записи реестра из примера базового проекта  
  В этом разделе показано, куда нужно добавить в реестр значения событий автоматизации.  
@@ -55,29 +57,29 @@ caps.handback.revision: 16
   
 |Имя|Тип|Диапазон|Описание|  
 |----------|----------|-----------|-----------------|  
-|По умолчанию (@)|REG_SZ|Неиспользуемые|Не используется. Поля данных можно использовать документацию.|  
-|AutomationProjectsEvents|REG_SZ|Имя объекта события.|Действителен только имя ключа. Поля данных можно использовать документацию.<br /><br /> Этот пример взят из образца базового проекта.|  
-|AutomationProjectItemEvents|REG_SZ|Имя объекта события|Действителен только имя ключа. Поля данных можно использовать документацию.<br /><br /> Этот пример взят из образца базового проекта.|  
+|По умолчанию (@)|REG_SZ|Неиспользуемые|Не используется. Поля данных можно использовать для документации.|  
+|AutomationProjectsEvents|REG_SZ|Имя объекта события.|Действителен только имя ключа. Поля данных можно использовать для документации.<br /><br /> В этом примере состоит из базового проекта образца.|  
+|AutomationProjectItemEvents|REG_SZ|Имя объекта события|Действителен только имя ключа. Поля данных можно использовать для документации.<br /><br /> В этом примере состоит из базового проекта образца.|  
   
- Когда потребитель автоматизации запрашиваемых всех объектов событий, создайте корневой объект, который содержит методы для любого события, которое поддерживает VSPackage. Среда вызывает соответствующий `get_` этого объекта. Например если `DTE.Events.AutomationProjectsEvents` вызове `get_AutomationProjectsEvents` был вызван метод на корневой объект.  
+ При любых объектов событий запрашиваемые потребителя автоматизации, создайте корневой объект, который содержит методы для любых событий, поддерживающий VSPackage. Среда вызывает соответствующий `get_` метода для этого объекта. Например если `DTE.Events.AutomationProjectsEvents` вызове `get_AutomationProjectsEvents` вызова метода для корневого объекта.  
   
- ![События проекта Visual Studio](~/extensibility/internals/media/projectevents.gif "ProjectEvents")  
-Модель автоматизации для события  
+ ![События проекта Visual Studio](../../extensibility/internals/media/projectevents.gif "ProjectEvents")  
+Модель автоматизации для событий  
   
- Класс `CProjectEventsContainer` представляет исходный объект для BscProjectsEvents, а `CProjectItemsEventsContainer` представляет исходный объект для BscProjectItemsEvents.  
+ Класс `CProjectEventsContainer` представляет исходный объект для BscProjectsEvents, пока `CProjectItemsEventsContainer` представляет исходный объект для BscProjectItemsEvents.  
   
- В большинстве случаев должны возвращать новый объект для каждого запроса событий большинство объектов событий занять объект фильтра. При вызове события, проверьте этот фильтр, чтобы убедиться, что вызывается обработчик события.  
+ В большинстве случаев должен возвращать новый объект для каждого события запроса, так как большинство объектов событий принимают объект фильтра. Когда вызывается событие, проверьте этот фильтр, чтобы убедиться, что обработчик событий вызывается.  
   
  AutomationEvents.h и AutomationEvents.cpp содержат объявления и реализации классов в следующей таблице.  
   
 |Класс|Описание|  
 |-----------|-----------------|  
-|`CAutomationEvents`|Реализует объект корневого события, полученные из `DTE.Events` объекта.|  
-|`CProjectsEventsContainer` и `CProjectItemsEventsContainer`.|Реализуйте объекты источников событий, которые инициируют соответствующие события.|  
+|`CAutomationEvents`|Реализует объект корневой события, полученные из `DTE.Events` объекта.|  
+|`CProjectsEventsContainer` и `CProjectItemsEventsContainer`.|Реализуйте объекты источников событий, которые вызывают срабатывание соответствующих событий.|  
   
- В следующем примере кода показано, как ответить на запрос для объекта события.  
+ В следующем примере кода показано, как для ответа на запрос для объекта события.  
   
-```cpp#  
+```cpp  
 STDMETHODIMP CVsPackage::GetAutomationObject(  
     /* [in]  */ LPCOLESTR       pszPropName,   
     /* [out] */ IDispatch **    ppIDispatch)  
@@ -106,10 +108,10 @@ STDMETHODIMP CVsPackage::GetAutomationObject(
 }  
 ```  
   
- В приведенном выше коде `g_wszAutomationProjects` имя коллекции проектов («FigProjects»), `g_wszAutomationProjectsEvents` («FigProjectsEvents») и `g_wszAutomationProjectItemsEvents` («FigProjectItemEvents») — это имена событий проекта и элементов проекта события, которые получают данные из вашей реализации VSPackage.  
+ В представленном выше коде `g_wszAutomationProjects` имя коллекции проектов («FigProjects»), `g_wszAutomationProjectsEvents` («FigProjectsEvents») и `g_wszAutomationProjectItemsEvents` («FigProjectItemEvents») — это имена событий проекта и элементов проекта события, которые получают данные из вашей Реализация VSPackage.  
   
- Объекты событий получаются из центрального расположения, `DTE.Events` объект. Таким образом, все объекты событий группируются вместе, чтобы конечный пользователь не имеет для просмотра всей объектной моделью, чтобы найти конкретное событие. Это также позволяет предоставлять определенные объекты VSPackage, вместо необходимости реализовать собственный код для системных событий. Однако для конечного пользователя, который необходимо найти событие для вашего `ProjectItem` интерфейс, это не очевидно, из которой извлекается этот объект события.  
+ Объекты событий получаются из одного центрального расположения, `DTE.Events` объекта. Таким образом, все объекты событий группируются вместе, чтобы конечный пользователь не имеет для просмотра всей объектной модели для поиска конкретного события. Это также позволяет предоставлять определенных объектах VSPackage, вместо необходимости реализовать собственный код для событий во всей системе. Однако для конечного пользователя, который необходимо найти событие для вашего `ProjectItem` интерфейса, это не очевидно, из которой извлекается этот объект события.  
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>   
- [Образцы VSSDK](../../misc/vssdk-samples.md)
+ [Примеры VSSDK](http://aka.ms/vs2015sdksamples)

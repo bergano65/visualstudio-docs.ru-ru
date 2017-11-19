@@ -1,44 +1,45 @@
 ---
-title: "Реализация команды обработки вложенных проектов | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "вложенные проекты, реализация обработка команд"
+title: "Реализация команды для обработки вложенных проектов | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: nested projects, implementing command handling
 ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a71da10ee4473f3fb542e0ce0e03891d60b75d34
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Реализация команды обработки вложенных проектов
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Интегрированная среда разработки может передавать команды, которые передаются посредством <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> и  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейсы к вложенным проекты или родительским проекты могут фильтровать или переопределить команды.  
+# <a name="implementing-command-handling-for-nested-projects"></a>Реализация команды обработки вложенных проектов
+Интегрированной среде разработки можно передать команды, которые передаются через <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> и <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейсы для вложенных проектов или родительские проекты можно отфильтровать или переопределить команды.  
   
 > [!NOTE]
->  Только команды обычно обрабатывается родительским проектом могут быть отфильтрованы.  Команды как **Build** и  **Deploy** в качестве интегрированной средой разработки не могут быть отфильтрованы.  
+>  Можно фильтровать только те команды, которые обычно обрабатываются родительский проект. Команды, такие как **построения** и **развернуть** , обрабатываются интегрированной среды разработки, не могут быть отфильтрованы.  
   
- Следующие шаги описывают процесс для реализации обработки команд.  
+ Следующие шаги описывают процесс для реализации обработки команды.  
   
-## Процедуры  
+## <a name="procedures"></a>Процедуры  
   
-#### К обработке команды "  
+#### <a name="to-implement-command-handling"></a>Чтобы реализовать обработку команды  
   
-1.  Когда пользователь выбирает вложенную проект или узел во вложенных проекте.  
+1.  Когда пользователь выбирает вложенного проекта или узла в вложенного проекта:  
   
-    1.  Интегрированная среда разработки вызывает <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод.  
+    1.  Интегрированная среда разработки вызовы <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод.  
   
-     — либо —  
+     Или...  
   
-    1.  Если команда была создана в окне иерархия, как команда контекстного меню в обозревателе решений в интегрированной среде разработки вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> метод родительские проекта.  
+    1.  Если команда была создана в окне иерархии, например команды контекстного меню в обозревателе решений, интегрированной среды разработки вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> метод родительского элемента проекта.  
   
-2.  Родительский проект может просмотреть параметры, передаваемые `QueryStatus`как  `pguidCmdGroup` и  `prgCmds`, для указания, должен ли родительский проект фильтрации команды.  Если реализуется родительский проект фильтрации команды, он должен задать:  
+2.  Родительский проект можно проверить параметры должны быть переданы `QueryStatus`, такие как `pguidCmdGroup` и `prgCmds`, чтобы определить, нужно ли применять фильтрацию команды родительский проект. Если родительский проект реализована для фильтрации команд, следует установить:  
   
     ```  
     prgCmds[0].cmdf = OLECMDF_SUPPORTED;  
@@ -46,13 +47,13 @@ caps.handback.revision: 13
     prgCmds[0].cmdf &= ~MSOCMDF_ENABLED;  
     ```  
   
-     Затем родительский проект должен возвращать `S_OK`.  
+     Родительский проект должна возвращать `S_OK`.  
   
-     Если родительский проект не фильтрует команда, он должен просто возвратить `S_OK`.  В этом случае среда разработки автоматически направляет команду к проекту дочернего элемента.  
+     Если родительский проект не выполняет фильтрацию команды, она просто возвращает `S_OK`. В этом случае IDE автоматически направляет команду к дочернему проекту.  
   
-     Родительский проект не должен направлять команду к проекту дочернего элемента.  Интегрированная среда разработки выполняет эту задачу.  
+     Родительский проект не имеет для маршрутизации к дочернему проекту команды. Интегрированная среда разработки выполняет эту задачу...  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   
  [Команды, меню и панелей инструментов](../../extensibility/internals/commands-menus-and-toolbars.md)   
- [Вложенность проектов](../../extensibility/internals/nesting-projects.md)
+ [Проекты вложения](../../extensibility/internals/nesting-projects.md)

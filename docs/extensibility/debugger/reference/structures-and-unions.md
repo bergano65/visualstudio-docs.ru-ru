@@ -1,200 +1,201 @@
 ---
-title: "Структур и объединений | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "структуры [пакет SDK Visual Studio]"
+title: "Структур и объединений | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: structures [Visual Studio SDK]
 ms.assetid: 9ff0a8f8-1ee6-4fdd-8b80-206436ff589b
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a2fc3225bda24a9ea0d759c1f684801723ea396f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Структур и объединений
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Следующие структуры и объединения в пакете SDK для отладки Visual Studio.  
+# <a name="structures-and-unions"></a>Структур и объединений
+Ниже приведены структур и объединений в Visual Studio пакет SDK для отладки.  
   
- [AD\_PROCESS\_ID](../../../extensibility/debugger/reference/ad-process-id.md)  
- Задает идентификатор процесса, которая может быть либо системный идентификатор GUID.  
+ [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)  
+ Указывает идентификатор процесса, который может быть системный идентификатор или GUID.  
   
- [BP\_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)  
- Описывает условия, при которых точка останова сгорит.  
+ [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)  
+ Описывает условия, при которых точка останова будет срабатывать.  
   
- [BP\_ERROR\_RESOLUTION\_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)  
- Описывает разрешение точки останова ошибки, включая расположение программы, а поток.  
+ [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)  
+ Описание разрешения ошибки точки останова, включая расположение, программы и поток.  
   
- [BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md)  
- Указывает тип структуры, используемый для описания расположения точки останова.  
+ [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)  
+ Указывает тип структуры, используемый для описания расположение точки останова.  
   
- [BP\_LOCATION\_CODE\_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md)  
- Задает компоненты, которые описывают расположение точки останова по адресу в коде.  
+ [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md)  
+ Определяет компоненты, которые описывают расположение точки останова по адресу в коде.  
   
- [BP\_LOCATION\_CODE\_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md)  
- Описывает местоположение точки останова, которая непосредственно в привязана к адресу отлаживаемой программы.  
+ [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md)  
+ Описывает местоположение точки останова, привязано непосредственно к адрес из отлаживаемой программы.  
   
- [BP\_LOCATION\_CODE\_FILE\_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)  
- Описывает местоположение точки останова на линии в исходном файле кода.  
+ [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)  
+ Описывает расположение точки останова в строке в файле исходного кода.  
   
- [BP\_LOCATION\_CODE\_FUNC\_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)  
- Описывает расположение смещения точки останова в функции в коде.  
+ [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)  
+ Описывает смещения расположение точки останова в функции в коде.  
   
- [BP\_LOCATION\_CODE\_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md)  
- Используется для установки точки останова кода основано на строку, которую пользователь может ввести из интегрированной среды разработки.  
+ [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md)  
+ Используется для установки точек останова кода на основе строки, пользователь может ввести в интегрированной среде разработки.  
   
- [BP\_LOCATION\_DATA\_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md)  
- Используется для установки точки останова для данных, которые основаны на строку, которую пользователь может ввести из интегрированной среды разработки.  
+ [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md)  
+ Используется для задания точки останова в данных, основанных на строку, пользователь может ввести в интегрированной среде разработки.  
   
- [BP\_LOCATION\_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)  
- Описывает разрешение точки останова на определенном местоположении.  
+ [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)  
+ Описание разрешения точки останова в определенном месте.  
   
- [BP\_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)  
- Описывает количество и условия, на котором точка останова будет предоставляется после ранее для передачи.  
+ [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)  
+ Описывает количество и условия, от которых точка останова срабатывает после ранее успешно.  
   
- [BP\_REQUEST\_INFO](../../../extensibility/debugger/reference/bp-request-info.md)  
- Содержит сведения, необходимые для реализации точку останова.  
+ [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)  
+ Содержит сведения, необходимые для реализации точки останова.  
   
- [BP\_REQUEST\_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)  
- Содержит сведения, необходимые для реализации точку останова \(аналогично [BP\_REQUEST\_INFO](../../../extensibility/debugger/reference/bp-request-info.md) структура но включает идентификатор GUID поставщика, ограничение и данные точки трассировки\).  
+ [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)  
+ Содержит сведения, необходимые для реализации точки останова (то же, что [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) структуру, но содержит сведения о поставщике GUID, ограничения и точки трассировки).  
   
- [BP\_RESOLUTION\_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)  
- Описывает местоположение точки останова кода.  
+ [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)  
+ Описывает расположение точки останова в коде.  
   
- [BP\_RESOLUTION\_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)  
- Описывает результат привязки точку останова в данных.  
+ [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)  
+ Описывает результат привязки точки останова по данным.  
   
- [BP\_RESOLUTION\_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)  
- Описывает связанные данные точки останова для точки останова кода или точки останова для данных.  
+ [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)  
+ Описывает связанная точка останова сведения о коде точки останова или точки останова по данным.  
   
- [BP\_RESOLUTION\_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)  
+ [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)  
  Определяет структуру разрешения расположения точки останова.  
   
- [BSTR\_ARRAY](../../../extensibility/debugger/reference/bstr-array.md)  
+ [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md)  
  Описывает массив строк.  
   
- [BUILT\_TYPE](../../../extensibility/debugger/reference/built-type.md)  
- Указывает сведения о типе поля принятом из метаданных.  
+ [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)  
+ Указывает сведения о типе поля берутся из метаданных.  
   
- [CODE\_PATH](../../../extensibility/debugger/reference/code-path.md)  
+ [CODE_PATH](../../../extensibility/debugger/reference/code-path.md)  
  Описывает вызов функции или метода.  
   
- [COMPUTER\_INFO](../../../extensibility/debugger/reference/computer-info.md)  
- Описывает компьютер, на котором отладчик работает.  
+ [COMPUTER_INFO](../../../extensibility/debugger/reference/computer-info.md)  
+ Описывает компьютер, на котором выполняется отладчик.  
   
- [CONST\_GUID\_ARRAY](../../../extensibility/debugger/reference/const-guid-array.md)  
- Описывает список GUID.  
+ [CONST_GUID_ARRAY](../../../extensibility/debugger/reference/const-guid-array.md)  
+ Описывает список идентификаторов GUID.  
   
- [CONTEXT\_INFO](../../../extensibility/debugger/reference/context-info.md)  
+ [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)  
  Описывает контекст памяти или контекст кода.  
   
- [DEBUG\_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)  
- Описывает адрес в отлаживаемом программе.  
+ [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)  
+ Описывает адрес из отлаживаемой программы.  
   
- [DEBUG\_ADDRESS\_UNION](../../../extensibility/debugger/reference/debug-address-union.md)  
- Представляет один из нескольких разных типов адресов.  
+ [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)  
+ Представляет одно из множества различных видов адресов.  
   
- [DEBUG\_CUSTOM\_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)  
- Определяет пользовательские средства просмотра или визуализатора типа.  
+ [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)  
+ Определяет пользовательское средство просмотра или введите визуализатора.  
   
- [DEBUG\_PROPERTY\_INFO](../../../extensibility/debugger/reference/debug-property-info.md)  
- Описывает свойство отладки, которое, в свою очередь, описывает объект иерархической характера, которая имеет имя, тип и значение.  
+ [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)  
+ Описывает отладочное свойство, в свою очередь, описывает объект иерархический характер, который имеет имя, тип и значение.  
   
- [DEBUG\_REFERENCE\_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)  
+ [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)  
  Описывает ссылку.  
   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)  
- Описывает разборку в интегрированной среде разработки для отображения.  
+ Описывает Дизассемблированный код в интегрированную среду разработки для отображения.  
   
- [EXCEPTION\_INFO](../../../extensibility/debugger/reference/exception-info.md)  
- Описывает исключение или ошибка во время выполнения, создаваемые отлаживаемой программой.  
+ [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)  
+ Описывает исключения или ошибки во время выполнения вызванных отлаживаемой программы.  
   
- [FIELD\_INFO](../../../extensibility/debugger/reference/field-info.md)  
+ [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)  
  Описывает локальную переменную, параметр или другое поле.  
   
  [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)  
  Описывает кадр стека.  
   
- [GUID\_ARRAY](../../../extensibility/debugger/reference/guid-array.md)  
- Описывает массив уникальных идентификаторов доступных обработчиков отладки.  
+ [GUID_ARRAY](../../../extensibility/debugger/reference/guid-array.md)  
+ Описывает массив уникальных идентификаторов для Доступные отладчики.  
   
- [JMC\_CODE\_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)  
- Используется для задания сведений о JustMyCode для модуля.  
+ [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)  
+ Используется для задания сведений JustMyCode для модуля.  
   
- [MACHINE\_INFO](../../../extensibility/debugger/reference/machine-info.md)  
- Описывает указанном компьютере.  
+ [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)  
+ Описывает конкретного компьютера.  
   
- [METADATA\_ADDRESS\_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md)  
+ [METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md)  
  Описывает элемент массива в массиве.  
   
- [METADATA\_ADDRESS\_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md)  
+ [METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md)  
  Описывает адрес поля класса или структуры.  
   
- [METADATA\_ADDRESS\_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md)  
- Описывает адрес локальной переменной в пределах области \(как правило, функции или метода\).  
+ [METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md)  
+ Описывает адрес локальной переменной в области (обычно функция или метод).  
   
- [METADATA\_ADDRESS\_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md)  
- Описывает адрес метода класса.  
+ [METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md)  
+ Описывает адрес методу класса.  
   
- [METADATA\_ADDRESS\_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md)  
+ [METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md)  
  Описывает параметр метода или функции.  
   
- [METADATA\_ADDRESS\_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)  
- Описывает возвращаемое значение метода или функции.  
+ [METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)  
+ Описывает значение, возвращаемое из метода или функции.  
   
- [METADATA\_TYPE](../../../extensibility/debugger/reference/metadata-type.md)  
- Описывает тип поля принятый из метаданных.  
+ [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)  
+ Описывает тип поля, берутся из метаданных.  
   
- [MODULE\_INFO](../../../extensibility/debugger/reference/module-info.md)  
- Описывает указанный модуль \(DLL или EXE, сборку\).  
+ [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)  
+ Описание определенного модуля (DLL, EXE-файла или сборки).  
   
- [MODULE\_SYMBOL\_SEARCH\_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)  
- Описывает сведения о состоянии о путях поиска символов, которые были производится.  
+ [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)  
+ Описание состояния сведения о пути поиска символов, которые был выполнен поиск.  
   
- [NATIVE\_ADDRESS](../../../extensibility/debugger/reference/native-address.md)  
- Описывает собственный адрес.  
+ [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md)  
+ Описывает собственного адреса.  
   
- [PDB\_TYPE](../../../extensibility/debugger/reference/pdb-type.md)  
- Описывает тип поля принятый от символов PDB.  
+ [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)  
+ Описывает тип поля, взяты из PDB-символов.  
   
- [PENDING\_BP\_STATE\_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)  
- Описывает состояние точки останова, готовы привязать к местоположению кода.  
+ [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)  
+ Описывает состояние точки останова, можно привязать расположение кода.  
   
- [PROCESS\_INFO](../../../extensibility/debugger/reference/process-info.md)  
+ [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)  
  Описывает процесс.  
   
- [PROGRAM\_NODE\_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)  
- Описывает список  IDebugProgramNode2 объекты, представляющие узлы программы.  
+ [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)  
+ Описывается список [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) объекты, представляющие узлы программы.  
   
- [PROVIDER\_PROCESS\_DATA](../../../extensibility/debugger/reference/provider-process-data.md)  
- Описывает процессы, выполняющиеся на компьютере.  
+ [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)  
+ Описывает процессы, запущенные на компьютере.  
   
- [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md)  
- Описывает расположение линии и столбцов в заданный текст.  
+ [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)  
+ Описывает расположение строк и столбцов в заданном тексте.  
   
  [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)  
- Описывает свойства потока.  
+ Описание свойств потока.  
   
- [TYPE\_INFO](../../../extensibility/debugger/reference/type-info.md)  
- Описывает вид поля.  
+ [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)  
+ Описание типа поля.  
   
- [UNMANAGED\_ADDRESS\_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md)  
- Описывает физический адрес.  
+ [UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md)  
+ Описывает физические адреса.  
   
- [UNMANAGED\_ADDRESS\_THIS\_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)  
- Описывает адрес, по отношению к a `this` указатель \(`Me` в Visual Basic\).  
+ [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)  
+ Описывает адрес, который определяется относительно `this` указателя (`Me` в Visual Basic).  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h, sh.h или ee.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Справочник по интерфейсам API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

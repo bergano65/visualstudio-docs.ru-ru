@@ -1,74 +1,76 @@
 ---
-title: "Практическое руководство. Добавление элементов управления в представление Backstage"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "элементы управления, лента"
-  - "настраиваемая лента, меню"
-  - "настройка ленты, меню"
-  - "меню, настройка"
-  - "кнопка Microsoft Office"
-  - "Microsoft Office - меню"
-  - "кнопка Office"
-  - "лента, настройка"
-  - "лента, меню"
+title: "Как: Добавление элементов управления в представление Backstage | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- customizing the Ribbon, menus
+- controls, Ribbon
+- menus, customizing
+- Microsoft Office Button
+- custom Ribbon, menus
+- Ribbon, customizing
+- Office button
+- Ribbon, menus
+- Microsoft Office Menu
 ms.assetid: 4fda1278-9aea-4d54-928a-269a81584494
-caps.latest.revision: 30
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 29
+caps.latest.revision: "30"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7a16c564b39afdc2ec3cf3e15883fc05b2a13f5d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Добавление элементов управления в представление Backstage
-  Можно использовать конструктор ленты для добавления элементов управления в меню, которое открывается, если щелкнуть вкладку **Файл**.  при запуске приложения элементы управления, добавляемые в **Файл** на вкладке отображаются именованная группа **Надстройки**.  
+# <a name="how-to-add-controls-to-the-backstage-view"></a>Практическое руководство. Добавление элементов управления в представление Backstage
+  Конструктор лент можно использовать для добавления элементов управления меню, которое открывается при нажатии кнопки **файл** вкладку при запуске приложения, элементы управления, добавляемые к **файл** вкладка отображается группа с именем  **Add-ins**.  
   
- Нельзя управления позиции до или после встроенными элементами управления с помощью конструктора ленты в Visual Studio.  Встроенный элемент управления элемент управления, который уже присутствует в представление Backstage.  Если требуется разместить элементы управления до или после встроенных элементов управления, необходимо воспользоваться XML ленты.  Дополнительные сведения о **Лента \(XML\)** см. в разделе [XML-ленты](../vsto/ribbon-xml.md).  Дополнительные сведения о настройке представления Backstage см. на веб\-сайте [Introduction to the Office 2010 Backstage View for Developers](http://go.microsoft.com/fwlink/?LinkId=182189) и [Customizing the Office 2010 Backstage View for Developers](http://go.microsoft.com/fwlink/?LinkId=182188).  
+ Нельзя размещать элементы до или после встроенных элементов управления с помощью конструктора лент в Visual Studio. Встроенный элемент управления является элементом управления, который уже присутствует в представление Backstage. Если вы хотите разместить элементы управления до или после встроенных элементов управления, необходимо использовать XML-ленты. Дополнительные сведения о **Лента (XML)**, в разделе [XML-ленты](../vsto/ribbon-xml.md). Дополнительные сведения о настройке представления Backstage см. в разделе [введение в Office 2010 Backstage для разработчиков](http://go.microsoft.com/fwlink/?LinkId=182189) и [Настройка Office 2010 Backstage для разработчиков](http://go.microsoft.com/fwlink/?LinkId=182188).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-### Добавление элементов управления в представление Backstage  
+### <a name="to-add-controls-to-backstage-view"></a>Добавление элементов управления в представление Backstage  
   
-1.  Откройте элемент ленты в конструкторе.  
+1.  Откройте элемент ленты в режиме конструктора.  
   
-     Дополнительные сведения о добавлении элемента **Лента \(визуальный конструктор\)** в проект см. в разделе [Практическое руководство. Работа с настройкой ленты](../vsto/how-to-get-started-customizing-the-ribbon.md).  
+     Сведения о добавлении **Лента (визуальный конструктор)** в проект см. в разделе [как: работа с настройкой ленты](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
-2.  В конструкторе лент щелкните вкладку **Файл**.  
+2.  В конструкторе лент щелкните **файл** вкладки.  
   
-     Открывается конструктор меню.  В области конструктора не содержатся элементы управления.  
+     Откроется конструктор меню. Поверхность проектирования не содержит все элементы управления.  
   
-3.  Перетащите любые из следующих элементов управления со вкладки **Элементы управления ленты Officeпанели элементов** в конструктор меню:  
+3.  Из **элементы управления ленты Office** вкладке **элементов**, перетащите любой из следующих элементов управления в конструктор меню:  
   
     -   Кнопка  
   
     -   CheckBox  
   
-    -   Коллекция  
+    -   Коллекции  
   
     -   Меню  
   
-    -   Разделитель  
+    -   Separator  
   
     -   SplitButton  
   
     -   ToggleButton  
   
-4.  Чтобы изменить положение элементов управления в меню, перетащите их соответствующим образом.  
+4.  Перетащите элементы управления, чтобы переместить их в новые позиции в меню.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Обзор ленты](../vsto/ribbon-overview.md)   
  [Конструктор лент](../vsto/ribbon-designer.md)   
  [XML-ленты](../vsto/ribbon-xml.md)   
- [Практическое руководство. Работа с настройкой ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [Как: работа с настройкой ленты](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Пошаговое руководство. Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
   
   

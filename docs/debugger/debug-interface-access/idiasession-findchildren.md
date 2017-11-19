@@ -1,69 +1,68 @@
 ---
-title: "IDiaSession::findChildren | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSession::findChildren - метод"
+title: "IDiaSession::findChildren | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::findChildren method
 ms.assetid: 5d19046f-f668-4aa9-8788-95cda9a98997
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 74162d2985ea617569d4bcb250660a261528b395
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findChildren
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает все дочерние элементы указанного родительского идентификатора, соответствующие имени и типа символа.  
+# <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
+Извлекает все дочерние элементы идентификатора указанного родительского объекта, соответствующие типу наименование и символ.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT findChildren (   
-   IDiaSymbol*       parent,  
-   SymTagEnum        symtag,  
-   LPCOLESTR         name,  
-   DWORD             compareFlags,  
-   IDiaEnumSymbols** ppResult  
+```C++  
+HRESULT findChildren (   
+   IDiaSymbol*       parent,  
+   SymTagEnum        symtag,  
+   LPCOLESTR         name,  
+   DWORD             compareFlags,  
+   IDiaEnumSymbols** ppResult  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `parent`  
- \[in\] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объект, представляющий родительский элемент.  Если этот родительский символ функция, модуля или блока, то его возвращаемые в лексических дочерние элементы `ppResult`.  Если родительский символ тип, его дочерние элементы класса возвращаются.  Если этот параметр `NULL`после этого  `symtag` должен быть присвоено  `SymTagExe` OR  `SymTagNull`, который получает глобальную область \(EXE\-файл\).  
+ [in] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объект, представляющий родительский объект. Если этот символ родительской функцией, модулем или блоком, то его дочерние лексические элементы возвращаются в `ppResult`. Если родительский символ имеет тип, его дочерних элементов класса возвращаются. Если этот параметр имеет `NULL`, затем `symtag` должно быть присвоено `SymTagExe` или `SymTagNull`, который возвращает глобальной области (файл .exe).  
   
  `symtag`  
- \[in\] определяет тега символов дочерних элементов, которые необходимо извлечь.  Значения берутся из [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) перечисление.  Значение `SymTagNull` извлечь все дочерние элементы.  
+ [in] Указывает тег символа дочерних элементов, которые требуется получить. Значения берутся из [SymTagEnum-перечисление](../../debugger/debug-interface-access/symtagenum.md) перечисления. Значение `SymTagNull` для получения всех дочерних элементов.  
   
  `name`  
- \[in\] определяет имя дочерних элементов, которые необходимо извлечь.  Значение `NULL` для всех дочерних элементов, которые необходимо извлечь.  
+ [in] Указывает имя дочерние элементы, которые требуется получить. Значение `NULL` для всех дочерних требуется получить.  
   
  `compareFlags`  
- \[in\] определяет параметры сравнения, применяемые для именования совпадать.  Значения [Перечисление NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) перечисление можно использовать по отдельности или в сочетании.  
+ [in] Задает параметры сравнения, применяется для сопоставления имени. Значения из [NameSearchOptions-перечисление](../../debugger/debug-interface-access/namesearchoptions.md) перечисления может использоваться отдельно или в сочетании.  
   
  `ppResult`  
- \[out\] возвращает [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) объект, содержащий список полученных символов дочернего элемента.  
+ [out] Возвращает [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) извлечь объект, содержащий список дочерних символов.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Пример  
- В следующем примере показано, как найти локальные переменные, функции `pFunc` это имя сопоставления  `szVarName`.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как для поиска локальных переменных функции `pFunc` , имя для поиска `szVarName`.  
   
-```cpp#  
+```C++  
 IDiaEnumSymbols* pEnum;  
 pSession->findChildren( pFunc, SymTagData, szVarName, nsCaseSensitive, &pEnum );  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Обзор](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

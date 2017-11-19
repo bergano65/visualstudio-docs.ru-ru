@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,29 +15,15 @@ helpviewer_keywords:
 - localize visual studio
 - localize vsct
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 586f087e4c0cbd087bd06d7dc54a524b09ae21c3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 13910907c6041884cc0a1414fd0bfd82757a7639
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="localizing-menu-commands"></a>Локализация команды меню
 Можно предоставить локализованный текст меню и панели инструментов команды, создав локализованные vsct-файлами и локализованного RESX-файлы для вашего VSPackage, а затем обновить файлы проекта для включения изменений.  
@@ -52,11 +37,11 @@ ms.lasthandoff: 09/26/2017
   
 2.  Создайте копию *filename*.en-US.vsct для каждого языка локализации.  
   
-     Имя каждой копии *filename*.* Языковой стандарт*.vsct, где *языкового стандарта* — имя конкретного языка и региональных параметров. Список имен языка и региональных параметров и значений см. в разделе [языкового стандарта, назначаемые в Майкрософт](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx).  
+     Имя каждой копии *filename*. *Языковой стандарт*.vsct, где *языкового стандарта* — имя конкретного языка и региональных параметров. Список имен языка и региональных параметров и значений см. в разделе [языкового стандарта, назначаемые в Майкрософт](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx).  
   
-     Эти *filename*.* Языковой стандарт*vsct-файлами будет содержать текст локализованного меню для пакета.  
+     Эти *filename*. *Языковой стандарт*vsct-файлами будет содержать текст локализованного меню для пакета.  
   
-3.  Откройте каждый *filename*.* Языковой стандарт*vsct-файл для локализации текста.  
+3.  Откройте каждый *filename*. *Языковой стандарт*vsct-файл для локализации текста.  
   
     1.  Изменить [ButtonText](../extensibility/buttontext-element.md) элемент значения по необходимости для определенного языка.  
   

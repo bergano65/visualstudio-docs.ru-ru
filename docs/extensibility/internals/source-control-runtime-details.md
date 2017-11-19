@@ -1,30 +1,31 @@
 ---
-title: "Сведения об источнике управления среды выполнения | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Система управления версиями [Visual Studio SDK], сведения о времени выполнения"
+title: "Источник сведений среды выполнения элемента управления | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: source control [Visual Studio SDK], runtime details
 ms.assetid: 1acd30e0-f98c-4bde-b9cd-4076845887df
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f9647f1f399b0d6516fe6475e6245c6834a0ea2b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Сведения об источнике управления среды выполнения
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Проект будет добавлен к системе управления версиями, когда пользователь добавляет файл проекта к системе управления версиями или контроллер ole\-автоматизации, как мастер.  Проект не определяет для себя, что он находится в системе управления версиями; он поддерживает систему управления версиями, но должен быть добавлен на нее вручную.  
+# <a name="source-control-runtime-details"></a>Сведения об источнике управления среды выполнения
+Проект добавляется в систему управления версиями, когда пользователь добавляет файл в проект в систему управления версиями, или с помощью контроллеров автоматизации, таких как мастер. Проект не указан для себя что он находится в системе управления версиями; поддерживает системы управления версиями, но необходимо добавить его вручную.  
   
-## Регистрация с пакетом системы управления версиями  
- Если файл в проекте будет добавлен к системе управления версиями, вызовы среды <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2.SetSccLocation%2A> предоставить возможность 4 непрозрачных строки, используемые как файлы cookie системой управления версиями.  Храните эти строки в файле проекта.  Эти строки должны быть переданы в заглушке системы управления версиями \(компонент Visual Studio, который управляет пакетами системы управления версиями\) при запуске проекта путем вызова метода типа <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A>.  Это, в свою очередь, загружает соответствующий пакет системы управления версиями и переадресует вызов реализации `IVsSccManager2::RegisterSccProject`.  
+## <a name="registering-with-a-source-control-package"></a>Регистрация пакета управления версиями  
+ При добавлении файла в проект в систему управления версиями, среда вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2.SetSccLocation%2A> , который содержит четыре непрозрачные строки, которые используются как файлы cookie, системы управления версиями. Храните эти строки в файле проекта. Эти строки должны передаваться заглушки управления источника (Visual Studio компонент, который управляет пакеты управления исходным кодом) при запуске проекта типа путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A>. Это в свою очередь загружает этот пакет управления соответствующий источник и перенаправляет вызов своей реализации `IVsSccManager2::RegisterSccProject`.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2.SetSccLocation%2A>   
  [Поддержка системы управления версиями](../../extensibility/internals/supporting-source-control.md)

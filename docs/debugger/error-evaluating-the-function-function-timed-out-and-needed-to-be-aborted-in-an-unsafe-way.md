@@ -1,56 +1,53 @@
 ---
-title: 'Error: Evaluating the function &#39;function&#39; timed out and needed to be aborted in an unsafe way | Microsoft Docs'
+title: "Ошибка: При определении функции &#39; функция &#39; Истекло время ожидания и необходимости прерывается небезопасным способом | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.debug.error.unsafe_func_eval_abort
+f1_keywords: vs.debug.error.unsafe_func_eval_abort
 ms.assetid: 0a9f70ed-21ad-4a10-8535-b9c5885ad8f4
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 0b7c98d6938f60bc8a13ba744e9e03eaca1a6bac
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
-
+ms.openlocfilehash: 722abd91cb9f97aab67d0d9a5e77ff9e3a4f080d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Error: Evaluating the function &#39;function&#39; timed out and needed to be aborted in an unsafe way
+# <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Ошибка: При определении функции &#39; функция &#39; Истекло время ожидания и необходимости прерывается небезопасным способом
 
-Full message text: Evaluating the function 'function' timed out and needed to be aborted in an unsafe way. This may have corrupted the target process. 
+Полный текст сообщения: вычисление функции «функция» истекло время ожидания и необходимости прерывается небезопасным способом. Это возможно повреждение в целевом процессе. 
 
-To make it easier to inspect the state of .NET objects, the debugger will automatically force the debugged process to run additional code (typically property getter methods and ToString functions). In most all scenarios, these functions complete quickly and make debugging much easier. However, the debugger doesn't run the application in a sandbox. As a result, a property getter or ToString method that calls into a native function that hangs can lead to long timeouts that may not be recoverable. If you encounter this error message, this has occurred.
+Чтобы упростить проверять состояние объектов .NET, отладчик автоматически приведет к отлаженного процесса для выполнения дополнительного кода (обычно методов считывания свойства и функции ToString). В большинстве случаев все эти функции выполняются быстро и значительно упростить отладку. Тем не менее отладчик не запускается приложение в "песочнице". В результате получения значения свойства или метода ToString, вызывающего функцию машинного кода, который зависает, может привести к long временем ожидания, которое может быть невозможным. Если это сообщение об ошибке возникает, это произошло.
  
-One common reason for this problem is that when the debugger evaluates a property, it only allows the thread being inspected to execute. So if the property is waiting on other threads to run inside the debugged application, and if it is waiting in a way that the .NET Runtime isn't able to interrupt, this problem will happen.
+Одна из основных причин этой ошибки является то, что когда отладчик вычисляет это свойство, только поток, проверяемое для выполнения. Поэтому если свойство ожидает запуска внутри отлаживаемого приложения других потоков и ожидающих способом, который не может прерывать среды выполнения .NET, произойдет эту проблему.
  
-## <a name="to-correct-this-error"></a>To correct this error
+## <a name="to-correct-this-error"></a>Исправление ошибки
  
-There are three possible solutions to this issue.
+Существует три возможных решений этой проблемы.
  
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>Solution #1: Prevent the debugger from calling the getter property or ToString method
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>Решение #1: Запретить отладчик вызов метода считывания свойства или метода ToString
  
-The error message will tell you the name of the function the debugger tried to call. If you can modify this function, you can prevent the debugger from calling the property getter or ToString method. Try one of the following:
+Сообщение об ошибке сообщает имя функции, которую отладчик попытался вызвать. Если вы можете изменить эту функцию, можно предотвратить отладчик вызов метода получения свойства или метода ToString. Выполните одно из следующих действий.
  
-* Change the method to some other type of code besides a property getter or ToString method and the problem will go away.
-    -or-
-* (For ToString) Define a DebuggerDisplay attribute on the type and you can have the debugger evaluate something other than ToString.
-    -or-
-* (For a property getter) Put the `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` attribute on the property. This can be useful if you have a method that needs to stay a property for API compatibility reasons, but it should really be a method.
+* Изменение метода к другому типу кода, кроме получения значения свойства или метод ToString и проблема будет устранена.
+    -или-
+* (Для ToString) Определение атрибута DebuggerDisplay на типе и может иметь отладчик оценки нечто, отличное от ToString.
+    -или-
+* (Для получения значения свойства) Поместите `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` атрибута свойства. Это может быть полезно, если у вас есть метод, который должен оставаться свойства для обеспечения совместимости API, но он должен быть метод.
  
-### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>Solution #2: Have the target code ask the debugger to abort the evaluation
+### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>Решение #2: Попросите отладчик, чтобы прервать вычисление целевого кода имеют
  
-The error message will tell you the name of the function the debugger tried to call. If the property getter or ToString method sometimes fails to run correctly, especially in situations where the issue is that code needs another thread to run code, then the implementation function can call `System.Diagnostics.Debugger.NotifyOfCrossThreadDependency` to ask the debugger to abort the function evaluation. With this solution, it is still possible to explicitly evaluate these functions, but the default behavior is that execution stops when the NotifyOfCrossThreadDependency call occurs.
+Сообщение об ошибке сообщает имя функции, которую отладчик попытался вызвать. Если метод считывания свойства или метода ToString иногда не удается выполнить для правильной работы, особенно в случаях, когда проблема, код должен другой поток для выполнения кода, а затем можно вызвать функцию реализацию `System.Diagnostics.Debugger.NotifyOfCrossThreadDependency` попросить отладчику abort-функция вычисление. Благодаря этому решению по-прежнему можно явно оценить эти функции, но по умолчанию выполняется, выполнение останавливается при возникновении NotifyOfCrossThreadDependency вызова.
  
-### <a name="solution-3-disable-all-implicit-evaluation"></a>Solution #3: Disable all implicit evaluation
+### <a name="solution-3-disable-all-implicit-evaluation"></a>Решение #3: Отключить все неявное вычисление
  
-If the previous solutions don't fix the issue, go to *Tools* > *Options*, and uncheck the setting *Debugging* > *General* > *Enable property evaluation and other implicit function calls*. This will disable most implicit function evaluations and should resolve the issue.
+Если предыдущие решения не устранена, перейдите к *средства* > *параметры*и снимите флажок *Отладка*  >   *Общие* > *включить вычисление свойств и другие неявные вызовы функций*. Это приведет к отключению большинства оценок неявная функция и должен устранить ошибку.
 
 
 
   
-

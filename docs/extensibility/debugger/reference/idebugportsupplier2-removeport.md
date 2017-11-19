@@ -1,52 +1,52 @@
 ---
-title: "IDebugPortSupplier2::RemovePort | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPortSupplier2::RemovePort"
-helpviewer_keywords: 
-  - "IDebugPortSupplier2::RemovePort"
+title: "IDebugPortSupplier2::RemovePort | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPortSupplier2::RemovePort
+helpviewer_keywords: IDebugPortSupplier2::RemovePort
 ms.assetid: f5c1fbf2-9084-46f2-a682-7db963928df2
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b18c0e77f8a25bbe49a120b39fd0c57d9c549895
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPortSupplier2::RemovePort
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugportsupplier2removeport"></a>IDebugPortSupplier2::RemovePort
 Удаляет порт.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT RemovePort(   
-   IDebugPort2* pPort  
+```cpp  
+HRESULT RemovePort(   
+   IDebugPort2* pPort  
 );  
 ```  
   
-```c#  
-int RemovePort(   
-   IDebugPort2 pPort  
+```csharp  
+int RemovePort(   
+   IDebugPort2 pPort  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pPort`  
- \[in\] IDebugPort2 объект, представляющий порт, который необходимо удалить.  
+ [in] [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) , представляющий удаляемый порт.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Этот метод удаляет порт из списка поставщика порта внутреннего активных портов.  
+## <a name="remarks"></a>Примечания  
+ Этот метод удаляет порт из поставщика порта внутренний список активных портов.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

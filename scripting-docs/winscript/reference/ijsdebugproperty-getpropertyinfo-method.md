@@ -1,25 +1,29 @@
 ---
-title: "Метод IJsDebugProperty::GetPropertyInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Метод IJsDebugProperty::GetPropertyInfo | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IJsDebugProperty.GetPropertyInfo
 apilocation: jscript9diag.dll
 ms.assetid: ab9d6e0b-0448-4f21-b0b0-1738867587d2
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a98f0ec3c4b0cdde1432402fce16c7383947e309
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод IJsDebugProperty::GetPropertyInfo
-Получает информацию об этом объекте.  
+# <a name="ijsdebugpropertygetpropertyinfo-method"></a>Метод IJsDebugProperty::GetPropertyInfo
+Возвращает данные для этого объекта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT GetPropertyInfo(  
@@ -28,17 +32,17 @@ HRESULT GetPropertyInfo(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `nRadix`  
- \[in\] Система счисления для использования.  
+ [in] Основание системы счисления для использования.  
   
  `pPropertyInfo`  
- \[out\] Информация об объекте.  
+ [out] Сведения об объекте.  
   
-## Возвращаемое значение  
+## <a name="return-value"></a>Возвращаемое значение  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** jscript9diag.h  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IJsDebugProperty](../../winscript/reference/ijsdebugproperty-interface.md)

@@ -1,35 +1,35 @@
 ---
-title: "Диалоговое окно &quot;Разрешение неоднозначности&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.Disambig"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Разрешение неоднозначности - диалоговое окно"
-  - "отладчик, диалоговое окно "Разрешение неоднозначности""
-  - "отладка [C++], разрешение неоднозначности"
+title: "Разрешение неоднозначности-диалоговое окно | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.Disambig
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- Resolve Ambiguity dialog box
+- debugger, Resolve Ambiguity dialog box
+- debugging [C++], resolving ambiguity
 ms.assetid: d9f47455-a116-4c84-8bad-2dfbf4d77f74
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b0050ccdb3a4ccbd2d1d116239ad6fd6aba2032e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Диалоговое окно &quot;Разрешение неоднозначности&quot;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Диалоговое окно `Resolve Ambiguity` появляется, если отладчику не удалось выбрать расположение для отображения.  Например, при использовании шаблонов C\+\+ можно создавать несколько функций из одного шаблона функции.  Если отладчик останавливается в некотором месте исходного кода в шаблоне и выбрана команда `Go To Disassembly`, отладчик оказывается перед выбором.  Каждая функция, созданная из шаблона, имеет собственный дизассемблированный код, и отладчик не знает, какой именно код нужно отобразить.  Диалоговое окно `Resolve Ambiguity` позволяет выбрать желаемое расположение из списка всех соответствующих расположений.  
+# <a name="resolve-ambiguity-dialog-box"></a>Разрешение неоднозначности - диалоговое окно
+Диалоговое окно `Resolve Ambiguity` появляется, если отладчику не удалось выбрать расположение для отображения. Например, при использовании шаблонов C++ можно создавать несколько функций из одного шаблона функции. Если отладчик останавливается в некотором месте исходного кода в шаблоне и выбрана команда `Go To Disassembly`, отладчик оказывается перед выбором. Каждая функция, созданная из шаблона, имеет собственный дизассемблированный код, и отладчик не знает, какой именно код нужно отобразить. Диалоговое окно `Resolve Ambiguity` позволяет выбрать желаемое расположение из списка всех соответствующих расположений.  
   
  `Choose the specific location`  
  Перечисляются все расположения, соответствующие команде.  
@@ -41,7 +41,7 @@ caps.handback.revision: 7
  Отображается имя каждой функции.  
   
  `Module`  
- Отображается модуль \(EXE или DLL\), содержащий объектный код для функции.  
+ Отображается модуль (EXE или DLL), содержащий объектный код для функции.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Выражения в отладчике](../debugger/expressions-in-the-debugger.md)

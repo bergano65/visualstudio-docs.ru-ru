@@ -1,61 +1,61 @@
 ---
-title: "IDebugProgramEngines2::EnumPossibleEngines | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramEngines2::EnumPossibleEngines"
-helpviewer_keywords: 
-  - "IDebugProgramEngines2::EnumPossibleEngines"
+title: "IDebugProgramEngines2::EnumPossibleEngines | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgramEngines2::EnumPossibleEngines
+helpviewer_keywords: IDebugProgramEngines2::EnumPossibleEngines
 ms.assetid: 993d70a4-f6a5-4e47-a603-0b162b9fde00
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d1cf3eead4b268dbbca5ad4333adcc647522b051
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgramEngines2::EnumPossibleEngines
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Возвращает идентификатор GUID для всех возможных обработчиков отладки \(DE\), которые могут отлаживать этой программы.  
+# <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
+Возвращает идентификаторы GUID для всех возможных отладчики (DE), можно отлаживать этой программы.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT EnumPossibleEngines(   
-   DWORD  celtBuffer,  
-   GUID*  rgguidEngines,  
-   DWORD* pceltEngines  
+```cpp  
+HRESULT EnumPossibleEngines(   
+   DWORD  celtBuffer,  
+   GUID*  rgguidEngines,  
+   DWORD* pceltEngines  
 );  
 ```  
   
-```c#  
-int EnumPossibleEngines(   
-   uint      celtBuffer,  
-   GUID[]    rgguidEngines,  
-   ref DWORD pceltEngines  
+```csharp  
+int EnumPossibleEngines(   
+   uint      celtBuffer,  
+   GUID[]    rgguidEngines,  
+   ref DWORD pceltEngines  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `celtBuffer`  
- \[in\] число DE GUID, который необходимо вернуть.  Это также определяет максимальный размер `rgguidEngines` массив.  
+ [in] Число DE GUID для возврата. Это также указывает максимальный размер `rgguidEngines` массива.  
   
  `rgguidEngines`  
- \[in, out\] массив DE GUID, который требуется заполнить.  
+ [in, out] Массив идентификаторов GUID DE заполнить.  
   
  `pceltEngines`  
- \[out\] возвращает фактический номер DE GUID, которое возвращается.  
+ [out] Возвращает фактическое количество DE идентификаторы GUID, которые возвращаются.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  Возвращает \[C\+\+\] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` or \[c\#\] 0x8007007A если буфер недостаточно велик.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Возвращает [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` или [C#] 0x8007007A, если буфер недостаточно велик.  
   
-## Заметки  
- Чтобы определить, сколько обработчиков существует, этот метод вызывается один раз с `celtBuffer` имеет значение 0, а параметр  `rgguidEngines` набор параметров в значение NULL.  Возвращает `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` \(для c\#\) и 0x8007007A  `pceltEngines` параметр возвращает необходимый размер буфера.  
+## <a name="remarks"></a>Примечания  
+ Чтобы определить, сколько модулей существует, этот метод один раз с `celtBuffer` равным 0 и `rgguidEngines` параметра задать значение null. Возвращает `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (0x8007007A для C#) и `pceltEngines` параметр Возвращает размер буфера, необходимый.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

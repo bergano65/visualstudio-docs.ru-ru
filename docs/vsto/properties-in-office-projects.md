@@ -1,59 +1,61 @@
 ---
-title: "Свойства в проектах Office"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Расположение доверенных сборок - свойство"
-  - "Кэш (свойство документа)"
-  - "свойства [разработка решений Office в Visual Studio]"
-  - "Пространство имен для ведущего элемента - свойство"
-  - "проекты Office [разработка решений Office в Visual Studio], свойства"
-  - "проекты [разработка решений Office в Visual Studio], свойства"
-  - "Value2 - свойство"
+title: "Свойства в проектах Office | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Trust Assemblies Location property
+- Cache in Document property
+- properties [Office development in Visual Studio]
+- Namespace for Host Item property
+- Office projects [Office development in Visual Studio], properties
+- projects [Office development in Visual Studio], properties
+- Value2 property
 ms.assetid: 1284d6c3-8200-4151-88ce-0b5c7765af25
-caps.latest.revision: 34
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 33
+caps.latest.revision: "34"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 8c5832388db7e70791193024b263da275cdf5eaa
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Свойства в проектах Office
-  Существует несколько важных свойств, доступных для проектов Office в Visual Studio. Эти свойства доступны в окне **Свойства**.  
+# <a name="properties-in-office-projects"></a>Свойства в проектах Office
+  Существует несколько важных свойств, доступных для проектов Office в Visual Studio. Эти свойства доступны в окне **Свойства** .  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## Пространство имен для элемента узла  
- Используйте свойство **Пространство имен для элемента узла**, чтобы изменить пространство имен для классов ведущих элементов \(например, `ThisAddIn`, `ThisWorkbook` или `ThisDocument`\) в проектах Visual C\#. Это свойство появляется в окне **Свойства** в случае выбора узла документа в проекте на уровне документа \(например, ExcelWorkbook1.xlsx или WordDocument1.docx\) или узла приложения в проекте надстройки VSTO \(например, Excel или Word\) в **обозревателе решений**.  
+## <a name="namespace-for-host-item"></a>Пространство имен для элемента узла  
+ Используйте свойство **Пространство имен для элемента узла** , чтобы изменить пространство имен для классов ведущих элементов (например, `ThisAddIn`, `ThisWorkbook`или `ThisDocument` ) в проектах Visual C#. Это свойство появляется в окне **Свойства** в случае выбора узла документа в проекте на уровне документа (например, ExcelWorkbook1.xlsx или WordDocument1.docx) или узла приложения в проекте надстройки VSTO (например, Excel или Word) в **обозревателе решений**.  
   
- При создании проекта Visual C\# для Office ведущим элементам присваивается пространство имен на основании имени проекта. Для изменения пространства имен рекомендуется использовать свойство **Пространство имен для элемента узла**, а не изменять непосредственно файлы кода. Если вы используете это свойство, пространство имен изменяется в созданных \(скрытых\) файлах кода, а также в видимых файлах кода.  
+ При создании проекта Visual C# для Office ведущим элементам присваивается пространство имен на основании имени проекта. Для изменения пространства имен рекомендуется использовать свойство **Пространство имен для элемента узла** , а не изменять непосредственно файлы кода. Если вы используете это свойство, пространство имен изменяется в созданных (скрытых) файлах кода, а также в видимых файлах кода.  
   
-## CacheInDocument  
- Свойство **CacheInDocument** появляется в окне **Свойства** для проектов на уровне документа при выборе экземпляра <xref:System.Data.DataSet> в конструкторе Visual Studio. Кэшированы могут быть только открытые члены. Убедитесь, что для свойства **Модификаторы** установлено значение **Открытый**, если вы хотите кэшировать <xref:System.Data.DataSet>.  
+## <a name="cacheindocument"></a>CacheInDocument  
+ Свойство **CacheInDocument** появляется в окне **Свойства** для проектов на уровне документа при выборе экземпляра <xref:System.Data.DataSet> в конструкторе Visual Studio. Кэшированы могут быть только открытые члены. Убедитесь, что для свойства **Модификаторы** установлено значение **Открытый** , если вы хотите кэшировать <xref:System.Data.DataSet>.  
   
  Это свойство принимает логическое значение:  
   
 -   Выберите **true** для кэширования набора данных в документе.  
   
--   Выберите **false**, если набор данных не должен кэшироваться в документе.  
+-   Выберите **false** , если набор данных не должен кэшироваться в документе.  
   
- Дополнительные сведения о кэшировании данных см. в разделе [Кэшированные данные в настройках уровня документа](../vsto/cached-data-in-document-level-customizations.md).  
+ Дополнительные сведения о кэшировании данных см. в разделе [Cached Data in Document-Level Customizations](../vsto/cached-data-in-document-level-customizations.md).  
   
-## Value2  
- Свойство **Value2** доступно только для книги или проектов шаблонов Excel. Оно появляется в узле свойства **Привязки** в окне **Свойства**, когда вы выбираете элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> в конструкторе листа.  
+## <a name="value2"></a>Value2  
+ Свойство **Value2** доступно только для книги или проектов шаблонов Excel. Оно появляется в узле свойства **Привязки** в окне **Свойства** , когда вы выбираете элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> в конструкторе листа.  
   
- Используйте свойство **Value2** в окне **Свойства**, чтобы привязать свойство <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> объекта <xref:Microsoft.Office.Tools.Excel.NamedRange> к полю в источнике данных.  
+ Используйте свойство **Value2** в окне **Свойства** , чтобы привязать свойство <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> объекта <xref:Microsoft.Office.Tools.Excel.NamedRange> к полю в источнике данных.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Проектирование и создание решений Office](../vsto/designing-and-creating-office-solutions.md)   
  [Общие сведения о шаблонах проектов Office](../vsto/office-project-templates-overview.md)   
  [События в проектах Office](../vsto/events-in-office-projects.md)  

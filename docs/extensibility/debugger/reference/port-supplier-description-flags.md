@@ -1,57 +1,58 @@
 ---
-title: "PORT_SUPPLIER_DESCRIPTION_FLAGS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Перечисление PORT_SUPPLIER_DESCRIPTION_FLAGS"
+title: "PORT_SUPPLIER_DESCRIPTION_FLAGS | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: PORT_SUPPLIER_DESCRIPTION_FLAGS enumeration
 ms.assetid: 5acee0ee-3a20-41c9-a7dc-0dadae6a5ba5
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f0fe828d4f1aaa537cdccbb8dd353383cebb9df0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# PORT_SUPPLIER_DESCRIPTION_FLAGS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Определяет метаданные, которые можно получить о поставщике порта.  
+# <a name="portsupplierdescriptionflags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
+Определяет метаданные, которые можно получить о поставщика порта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS  
 {  
-   PSDFLAG_SHOW_WARNING_ICON = 0x1  
+   PSDFLAG_SHOW_WARNING_ICON = 0x1  
 };  
 typedef DWORD PORT_SUPPLIER_DESCRIPTION_FLAGS;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS  
 {  
-   PSDFLAG_SHOW_WARNING_ICON = 0x1  
+   PSDFLAG_SHOW_WARNING_ICON = 0x1  
 };  
 ```  
   
-## Термины  
- PSDFLAG\_SHOW\_WARNING\_ICON  
- Если этот параметр выбран, значок предупреждения будет отображаться в пользовательском интерфейсе.  
+## <a name="terms"></a>Термины  
+ PSDFLAG_SHOW_WARNING_ICON  
+ Если флажок установлен, в пользовательском Интерфейсе отображается значок предупреждения.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
  Это перечисление возвращается [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) метод.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: Msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)

@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptSiteDebug::GetRootApplicationNode | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IActiveScriptSiteDebug::GetRootApplicationNode | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptSiteDebug.GetRootApplicationNode
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptSiteDebug::GetRootApplicationNode"
+helpviewer_keywords: IActiveScriptSiteDebug::GetRootApplicationNode
 ms.assetid: 2393f566-6b97-47c0-8041-4dd7e3b1d3a3
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: abcb7c307513e513f3ba4d3a64d34f1e07e60d74
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptSiteDebug::GetRootApplicationNode
-Получает узел приложения, под которым должны быть добавитьы документы скрипта.  
+# <a name="iactivescriptsitedebuggetrootapplicationnode"></a>IActiveScriptSiteDebug::GetRootApplicationNode
+Возвращает узел приложения, в какой скрипт документы должны быть добавлены.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT GetRootApplicationNode(  
@@ -29,19 +32,19 @@ HRESULT GetRootApplicationNode(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppdanRoot`  
- \[out\] узел приложения отладки, содержащий документы скрипта.  Может принимать значение `NULL`.  
+ [out] Узел отладки приложения, который хранит документов скрипта. Может быть `NULL`.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
- Этот метод возвращает узел приложения, под которым должны быть добавитьы документы скрипта.  Метод может возвращать `NULL` для `ppdanRoot` если документы скрипта должны верхнего уровня.  
+## <a name="remarks"></a>Примечания  
+ Этот метод возвращает узел приложения, в котором должны быть добавлены документов скрипта. Этот метод может возвращать `NULL` для `ppdanRoot` Если документы скрипта должен быть верхнего уровня.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IActiveScriptSiteDebug](../../winscript/reference/iactivescriptsitedebug-interface.md)

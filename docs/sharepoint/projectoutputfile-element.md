@@ -1,30 +1,31 @@
 ---
-title: "ProjectOutputFile Element"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "ProjectOutputFile element"
+title: "Projectoutputfile-элемент | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: ProjectOutputFile element
 ms.assetid: 52a017bf-e19c-49e4-bb8f-cbe6958195c2
-caps.latest.revision: 13
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: a397648dd81ead8134777c8b36982fa6b65b687b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# ProjectOutputFile Element
+# <a name="projectoutputfile-element"></a>Элемент ProjectOutputFile
   Представляет выходные данные отдельного проекта для включения с элементом проекта при его развертывании в SharePoint.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <ProjectOutputFile ProjectId = "GUID of the project"  
@@ -33,45 +34,45 @@ caps.handback.revision: 12
     Type = "Type of deployment for the project output" />  
 ```  
   
-## Тип  
+## <a name="type"></a>Тип  
  **ProjectOutputFileType**  
   
-## Атрибуты и элементы  
- В следующих разделах описаны атрибуты, дочерние элементы и родительские элементы.  
+## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
-### Атрибуты  
+### <a name="attributes"></a>Атрибуты  
   
 |Атрибут|Описание|  
-|-------------|--------------|  
-|**ProjectId**|Обязательный атрибут элемента **xs:string**.<br /><br /> GUID зависимого проекта, имеющий выходные данные, которые требуется включить.  Это значение соответствует элементу **ProjectGuid** в файле зависимого проекта.|  
-|**ProjectPath**|Обязательный атрибут элемента **xs:string**.<br /><br /> Относительный путь, включая имя файла зависимого проекта, который содержит выходные данные, которые требуется включить.  Этот путь определяется относительно корневой папки проекта SharePoint, в которой содержится элемент проекта SharePoint.|  
-|**Target**|Необязательный атрибут элемента **xs:string**.<br /><br /> Путь, где выполняется развертывание выходных файлов зависимого проекта на сервере SharePoint, задаваемый относительно корневой папки развертывания.  Корневая папка развертывания определяется типом развертывания, заданным атрибутом **Type**.<br /><br /> Дополнительные сведения см. в описаниях свойств **Deployment Path** и **Deployment Root** элементов проекта SharePoint в разделе [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
-|**Type**|Обязательный атрибут элемента **xs:string**.<br /><br /> Тип развертывания, используемый для выходных данных зависимого проекта.  Дополнительные сведения о возможных значениях см. в описании свойства **Deployment Type** элементов проекта SharePoint в разделе [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
+|---------------|-----------------|  
+|**Идентификатора проекта**|Требуется **xs: String** атрибута.<br /><br /> Идентификатор GUID зависимого проекта, который содержит выходные данные, которые требуется включить. Это соответствует **ProjectGuid** в файле зависимого проекта.|  
+|**ProjectPath**|Требуется **xs: String** атрибута.<br /><br /> Относительный путь, включая имя файла проекта зависимого проекта, который содержит выходные данные, которые требуется включить. Данный путь задается относительно корневой папке проекта SharePoint, который содержит элемент проекта SharePoint.|  
+|**Целевой объект**|Необязательный **xs: String** атрибута.<br /><br /> Путь, где выходные данные зависимый проект развертывается на сервере SharePoint относительно корневой папки развертывания. Корневой папки развертывания определяется типом развертывания, заданные **тип** атрибута.<br /><br /> Дополнительные сведения см. в разделе описания **путь развертывания** и **корневого каталога развертывания** свойства SharePoint элементами проекта в [разработке решений SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
+|**Тип**|Требуется **xs: String** атрибута.<br /><br /> Тип развертывания для выходных данных зависимого проекта. Дополнительные сведения о возможных значениях см. в описании для **тип развертывания** свойства элементов проекта SharePoint в [разработке решений SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
   
-### Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
   
-### Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
-|[Файлы](../sharepoint/files-element.md)|Задает файлы для включения с элементом проекта SharePoint при его развертывании в SharePoint.|  
+|-------------|-----------------|  
+|[Файлы](../sharepoint/files-element.md)|Указывает файлы, включаемые в элемент проекта SharePoint при его развертывании в SharePoint.|  
   
-## Заметки  
- Используйте элемент **ProjectOutputFile** для включения выходных данных проекта в развертывании элемента проекта SharePoint.  Можно указать другой проект или тот же проект, который содержит элемент проекта.  Дополнительные сведения см. в разделе [Предоставление сведений об упаковке и развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
+## <a name="remarks"></a>Примечания  
+ Используйте **ProjectOutputFile** элемент для включения вывода проекта при развертывании элемента проекта SharePoint. Можно указать другой проект, или же проект, который содержит элемент проекта. Дополнительные сведения см. в разделе [предоставление упаковке и сведения о развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
-## Сведения об элементе  
+## <a name="element-information"></a>Сведения об элементе  
   
 |||  
 |-|-|  
-|**Пространство имен**|http:\/\/schemas.microsoft.com\/VisualStudio\/2010\/SharePointTools\/SharePointProjectItemModel|  
+|**Namespace**|http://schemas.Microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
 |**Имя схемы**|Схема элемента проекта SharePoint|  
 |**Файл проверки**|ProjectItemModelSchema.xsd|  
-|**Может быть пустым**|Нет|  
+|**Может быть пустым.**|Нет|  
   
-## См. также  
- [SharePoint Project Item Schema Reference](../sharepoint/sharepoint-project-item-schema-reference.md)   
- [Предоставление сведений об упаковке и развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
+## <a name="see-also"></a>См. также  
+ [Справочник по схеме элементов проектов SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
+ [Предоставление упаковке и сведения о развертывании в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
  [Разработка решений SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   
   

@@ -1,56 +1,56 @@
 ---
-title: "IDebugEnumField::GetStringFromValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEnumField::GetStringFromValue"
-helpviewer_keywords: 
-  - "Метод IDebugEnumField::GetStringFromValue"
+title: "IDebugEnumField::GetStringFromValue | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEnumField::GetStringFromValue
+helpviewer_keywords: IDebugEnumField::GetStringFromValue method
 ms.assetid: 5f95fd0c-fdce-497f-9f54-2ad8749494e9
-caps.latest.revision: 5
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ed010734ec09af01c4a7abe6f8ceab0a93fdb482
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEnumField::GetStringFromValue
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Этот метод возвращает имя константы перечисления заданным значением.  
+# <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
+Этот метод получает имя константы перечисления, заданным значением.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT GetStringFromValue(  
-   ULONGLONG value,  
-   BSTR*     pbstrValue  
+   ULONGLONG value,  
+   BSTR*     pbstrValue  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetStringFromValue(  
-   ulong      value,  
-   out string pbstrValue  
+   ulong      value,  
+   out string pbstrValue  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `value`  
- \[in\] значение, для которого нужно получить имя константы перечисления.  
+ [in] Значение, для которого нужно получить постоянное имя перечисления.  
   
  `pbstrValue`  
- \[out\] возвращает имя константы перечисления.  
+ [out] Возвращает имя константы перечисления.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает  `S_FALSE` если значение не имеет связанное имя или возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` , если значение не имеет связанного имени, либо возвращает код ошибки.  
   
-## Заметки  
- Если более чем одно имя, связанное с тем же значением, то возвращается имя, указанное в перечислении.  
+## <a name="remarks"></a>Примечания  
+ Если имеется более одного имени, связанного с тем же значением, будет возвращаться имя определяется в перечислении.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

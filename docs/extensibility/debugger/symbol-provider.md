@@ -1,33 +1,35 @@
 ---
-title: "Поставщик символов | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Обработчик символов"
-  - "отладка [пакет SDK для отладки], символ обработчика"
+title: "Символ поставщика | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- symbol handler
+- debugging [Debugging SDK], symbol handler
 ms.assetid: 5fce651b-fead-4418-81b0-a011df7644ab
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f845e18bbd4c06d5652571ec83270a80d31ec852
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Поставщик символов
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Реализация вычислителя выражений должна получать доступ символическое отладочные данные, сформированное компилятором языка для оценки переменных и выражений.  Это выполняется с помощью интерфейсов поставщика символов \(также называемые пакета обновления\), обработчиком символов.  
+# <a name="symbol-provider"></a>Символ поставщика
+Реализация вычислителя выражений должен получить доступ к символической отладочной информации, создаваемой компилятором языка для вычисления переменных и выражений. Это выполняется путем использования интерфейсов поставщика символ (SP), также называется обработчика символов.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] предоставляет SPs для управляемого кода, а также машинного кода, используя формат файлов символов базы данных программы \(PDB\).  Если нет необходимости сильной для программы использовать символы, хранящиеся в пользовательском формате, рекомендуется использовать SPs предоставленный by [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]SPs предоставляет для управляемого кода, а также для машинного кода с помощью формата файла базы данных программы (PDB) символов. При отсутствии надежный, необходимые для вашей программы для использования символов, хранящихся в пользовательском формате, это рекомендуется использовать SPs, предоставляемые [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-## Примечания по реализации  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладка обработчики рассчитывайте разговаривать с SPs с помощью интерфейсов среды CLR.  В результате пакет обновления, который будет работать с обработчикам отладки Visual Studio должен поддерживать среды CLR.  Полный список всех интерфейсов отладки среды CLR можно найти в debugref.doc, часть [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)].  
+## <a name="implementation-notes"></a>Примечания по реализации  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Ожидать, что отладчики возможность общаться с SPs, с помощью интерфейсов Common Language Runtime (CLR). В результате SP, будет работать отладчики Visual Studio должна поддерживать среды CLR. Полный список всех интерфейсами отладки среды CLR можно найти в debugref.doc, являющейся частью из [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)].  
   
- Если пакет обновления будет работать только с конкретной задачи отладки обработчик, можно реализовать пакет обновления по мере того, как видно, что совпадению в зависимости от потребностей обработчик отладки.  
+ Если ваш пакет будет работать только с модуль отладки, можно реализовать SP по своему усмотрению, в зависимости от потребностей вашего модуля отладки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Компоненты отладчика](../../extensibility/debugger/debugger-components.md)

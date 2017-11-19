@@ -1,46 +1,46 @@
 ---
-title: "IDebugPortSupplier2::CanAddPort | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPortSupplier2::CanAddPort"
-helpviewer_keywords: 
-  - "IDebugPortSupplier2::CanAddPort"
+title: "IDebugPortSupplier2::CanAddPort | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPortSupplier2::CanAddPort
+helpviewer_keywords: IDebugPortSupplier2::CanAddPort
 ms.assetid: 41f69e0a-e82c-473d-8b7a-0c40fc5730fc
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6f19d220f8638b84e194ab1604816ed767d10c41
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPortSupplier2::CanAddPort
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Проверяет, что поставщик порта может добавлять новые порты.  
+# <a name="idebugportsupplier2canaddport"></a>IDebugPortSupplier2::CanAddPort
+Проверяет, что поставщика порта можно добавить новые порты.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT CanAddPort(   
-   void   
+```cpp  
+HRESULT CanAddPort(   
+   void   
 );  
 ```  
   
-```c#  
+```csharp  
 int CanAddPort();  
 ```  
   
-## Возвращаемое значение  
- Если порт может быть добавлен; возвращает `S_OK`; в противном случае возвращает  `S_FALSE` не указывать никаких порты можно добавить к данному поставщику порта.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Если порт может быть добавлен, возвращает `S_OK`; в противном случае возвращает `S_FALSE` для указания порты не могут добавляться в этот поставщика порта.  
   
-## Заметки  
- Этот метод следует вызывать перед вызовом [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) метод с момента последнего метод создает порт, а также добавляют его, может оказаться длительной операцией.  
+## <a name="remarks"></a>Примечания  
+ Этот метод перед вызовом метода [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) метода, так как последний метод создает порт, а также добавление, который может быть длительной операции.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
  [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)

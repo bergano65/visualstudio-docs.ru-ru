@@ -1,44 +1,47 @@
 ---
-title: "IPerPropertyBrowsing2::MapPropertyToPage | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IPerPropertyBrowsing2::MapPropertyToPage | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IPerPropertyBrowsing2.MapPropertyToPage
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IPerPropertyBrowsing2::MapPropertyToPage"
+helpviewer_keywords: IPerPropertyBrowsing2::MapPropertyToPage
 ms.assetid: e6418a8e-500b-42e1-9b5a-52e6f7567f99
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 79b8d7cb9e1c8a9f79cdddc4f8d3404ff7a2036c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IPerPropertyBrowsing2::MapPropertyToPage
-Возвращает идентификатор CLSID страницы свойств, которые можно использовать, чтобы редактировать это свойство.  
+# <a name="iperpropertybrowsing2mappropertytopage"></a>IPerPropertyBrowsing2::MapPropertyToPage
+Возвращает CLSID страницы свойств, который может использоваться для изменения этого свойства.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT MapPropertyToPage(  
-   DISPID  dispid,  
-   CLSID*  pClsidPropPage  
+   DISPID  dispid,  
+   CLSID*  pClsidPropPage  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `dispid`  
- \[in\] пошлите идентификатор свойства.  
+ [in] Идентификатор свойства, представляющие интерес для отправки.  
   
  `pClsidPropPage`  
- \[out\] указатель на идентификатор CLSID, определяющий страницу свойств, связанное со свойством.  Если этот метод завершается ошибкой, \*`pClsidPropPage` установлено в CLSID\_NULL.  
+ [out] Указатель на идентификатор CLSID, определение страницы свойств, связанное со свойством. Если этот метод завершается ошибкой, *`pClsidPropPage` равно CLSID_NULL.  
   
-## Возвращаемое значение  
- Возвращает допустимое `HRESULT`, обычно `S_ОК`.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Возвращает допустимую `HRESULT`, обычно `S_OK`.  
   
-## См. также  
- [Интерфейс IPerPropertyBrowsing2](../../winscript/reference/iperpropertybrowsing2-interface-1.md)
+## <a name="see-also"></a>См. также  
+ [Интерфейс 1 IPerPropertyBrowsing2](../../winscript/reference/iperpropertybrowsing2-interface-1.md)

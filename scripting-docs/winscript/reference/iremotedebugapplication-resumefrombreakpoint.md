@@ -1,27 +1,30 @@
 ---
-title: "IRemoteDebugApplication::ResumeFromBreakPoint | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IRemoteDebugApplication::ResumeFromBreakPoint | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IRemoteDebugApplication.ResumeFromBreakPoint
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IRemoteDebugApplication::ResumeFromBreakPoint"
+helpviewer_keywords: IRemoteDebugApplication::ResumeFromBreakPoint
 ms.assetid: a613cc2b-1d69-4713-a235-64372c253b4a
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5da5fdbaaf74f463161f1a98bbad7d4d147b418d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IRemoteDebugApplication::ResumeFromBreakPoint
-Переход приложение, которое в данный момент в точке останова.  
+# <a name="iremotedebugapplicationresumefrombreakpoint"></a>IRemoteDebugApplication::ResumeFromBreakPoint
+Продолжает работу приложения, которое в данный момент точку останова.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT ResumeFromBreakPoint(  
@@ -31,27 +34,27 @@ HRESULT ResumeFromBreakPoint(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `prptFocus`  
- \[in\] для режимов пошаговое выполнение, поток, быть затронуты режиме пошагового выполнения.  
+ [in] Для пошагового выполнения режимы, поток, который является нарушается в пошаговом режиме.  
   
  `bra`  
- \[in\] действие, выполняемое по возобновлению приложение.  
+ [in] Действие, выполняемое при возобновлении приложения.  
   
  `era`  
- \[in\] действие, выполняемое в случае, приложению был остановлен из\-за ошибки.  
+ [in] Действие, выполняемое в случае, если приложение остановлено из-за ошибки.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
- Этот метод продолжает приложение, которое в данный момент в точке останова.  
+## <a name="remarks"></a>Примечания  
+ Этот метод продолжает работу приложения, которое в данный момент точку останова.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)   
  [Перечисление BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)   
  [Перечисление ERRORRESUMEACTION](../../winscript/reference/errorresumeaction-enumeration.md)

@@ -1,55 +1,55 @@
 ---
-title: "IDebugSymbolProvider::GetContextFromAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugSymbolProvider::GetContextFromAddress"
-helpviewer_keywords: 
-  - "Метод IDebugSymbolProvider::GetContextFromAddress"
+title: "IDebugSymbolProvider::GetContextFromAddress | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugSymbolProvider::GetContextFromAddress
+helpviewer_keywords: IDebugSymbolProvider::GetContextFromAddress method
 ms.assetid: 7a27d56f-20d4-4e5c-af7b-7307d3aff0a1
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 02a13ef3e12cfaca9b5b7f099158e98a70853a3a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugSymbolProvider::GetContextFromAddress
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Этот метод сопоставляет адреса отладки в контекст рисования.  
+# <a name="idebugsymbolprovidergetcontextfromaddress"></a>IDebugSymbolProvider::GetContextFromAddress
+Этот метод сопоставляет адрес отладки в контексте документа.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetContextFromAddress(   
-   IDebugAddress*           pAddress,  
-   IDebugDocumentContext2** ppDocContext  
+```cpp  
+HRESULT GetContextFromAddress(   
+   IDebugAddress*           pAddress,  
+   IDebugDocumentContext2** ppDocContext  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetContextFromAddress(  
-   IDebugAddress              pAddress,   
-   out IDebugDocumentContext2 ppDocContext  
+   IDebugAddress              pAddress,   
+   out IDebugDocumentContext2 ppDocContext  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pAddress`  
- \[in\] адрес в виде отладки [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.  
+ [in] Адрес отладки, представленные как [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейса.  
   
  `ppDocContext`  
- \[out\] возвращает контекст рисования, как представлено IDebugDocumentContext2 интерфейс.  
+ [out] Возвращает контекст документа, представленный [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) интерфейса.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

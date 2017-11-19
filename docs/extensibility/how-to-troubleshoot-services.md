@@ -1,69 +1,74 @@
 ---
-title: "Практическое руководство: Устранение неполадок служб | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Устранение неполадок служб"
+title: "Как: Устранение неполадок службы | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: services, troubleshooting
 ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c241b80430fd02a649efab7f8a65498e606d2804
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство: Устранение неполадок служб
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Существует несколько распространенных проблем, которые могут возникнуть при попытке получения службы:  
+# <a name="how-to-troubleshoot-services"></a>Как: диагностика служб
+Существует несколько распространенных проблем, которые могут возникнуть при попытке получения службы.  
   
--   Служба не зарегистрирована на [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+-   Служба не зарегистрирована в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
--   Типом интерфейса, а не тип службы, запрошенную службу.  
+-   Служба запрошена, тип интерфейса, а не тип службы.  
   
--   VSPackage, запрашивающего службу не был размещен.  
+-   Пакет VSPackage, запрашивающего службу не был размещен.  
   
 -   Используется неправильный доступ к службе.  
   
- Если запрошенная служба недоступна, вызов <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> возвращает значение null. Следует всегда тестировать после выполнения запроса службы со значением NULL:  
+ Если запрошенная служба недоступна, вызов <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> возвращает значение null. Следует всегда проверять значения NULL после выполнения запроса службы:  
   
-```c#  
-IVsActivityLog log = GetService(typeof(SVsActivityLog)) as IVsActivityLog; if (log == null) return;  
+```csharp  
+IVsActivityLog log =   
+    GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
+if (log == null) return;  
 ```  
   
-### Устранение неполадок со службой  
+### <a name="to-troubleshoot-a-service"></a>Устранение неполадок со службой  
   
-1.  Проверьте системный реестр для просмотра ли службы был правильно зарегистрирован. Для получения дополнительной информации см. [Регистрация служб](../misc/registering-services.md).  
+1.  Проверьте системный реестр, чтобы увидеть службы правильно зарегистрирован ли. Дополнительные сведения см. в разделе [как: обслуживать](../extensibility/how-to-provide-a-service.md).  
   
-     В следующем фрагменте файла .reg показано, как могут быть зарегистрированы SVsTextManager службы:  
+     В следующем фрагменте файла .reg показано, как служба SVsTextManager может быть зарегистрировано.  
   
     ```  
-    [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\<version number>\Services\{F5E7E71D-1401-11d1-883B-0000F87579D2}] @="{F5E7E720-1401-11d1-883B-0000F87579D2}" "Name"="SVsTextManager"  
+    [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\<version number>\Services\{F5E7E71D-1401-11d1-883B-0000F87579D2}]  
+    @="{F5E7E720-1401-11d1-883B-0000F87579D2}"  
+    "Name"="SVsTextManager"  
     ```  
   
-     В приведенном выше примере номер версии — версия [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], например 12.0 и 14.0 {F5E7E71D\-1401\-11d1\-883B\-0000F87579D2} ключ — это идентификатор службы \(SID\) службы SVsTextManager, и значение по умолчанию {F5E7E720\-1401\-11d1\-883B\-0000F87579D2} является GUID VSPackage, который предоставляет службу диспетчера текст пакета.  
+     В приведенном выше примере номер версии — версия [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], такие как 12.0 и 14.0, ключ {F5E7E71D-1401-11d1-883B-0000F87579D2} является идентификатором службы (SID) службы, SVsTextManager и {значение по умолчанию F5E7E720-1401-11D1-883B-0000F87579D2} является GUID диспетчера текстов VSPackage, который предоставляет службу пакета.  
   
-2.  Используйте тип службы, а не типа интерфейса, при вызове GetService. При запросе службы из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], <xref:Microsoft.VisualStudio.Shell.Package> извлекает идентификатор GUID типа. Не удалось найти службу, если выполняются следующие условия:  
+2.  Используйте тип службы, а не типа интерфейса, если вызывать GetService. При запросе к службе из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], <xref:Microsoft.VisualStudio.Shell.Package> извлекает идентификатор GUID из типа. Не удалось найти службу, если выполняются следующие условия:  
   
-    1.  Тип интерфейса, передается GetService вместо типа службы.  
+    1.  Тип интерфейса передается GetService вместо типа службы.  
   
-    2.  Идентификатор GUID не прямо назначенному элементу интерфейса. Таким образом система создает GUID по умолчанию для объекта при необходимости.  
+    2.  Идентификатор GUID не назначается явно интерфейс. Таким образом система создает GUID по умолчанию для объекта при необходимости.  
   
-3.  Убедитесь, что размещения VSPackage, запрашивающего службу.[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] узлы VSPackage после ее создания и перед вызовом метода <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
+3.  Убедитесь, что VSPackage, запрашивающего службу размещения. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]сайты VSPackage, после его создания и перед вызовом метода <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
   
-     Если у вас есть код в конструктор VSPackage, который нуждается в обслуживании, переместите ее в метод Initialize.  
+     Если у вас есть код в конструктор VSPackage, который нуждается в обслуживании, переместите его метода инициализации.  
   
 4.  Убедитесь, что вы используете правильный доступ к службе.  
   
-     Не все поставщики услуг индивидуальны. Поставщик услуг, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] передается в окне инструментов отличается от передачей VSPackage. Поставщик службы окна средства знает о <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>, но не знает о <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. Можно вызвать метод <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> для получения от поставщика услуг VSPackage из окна инструментов.  
+     Не все поставщики услуг похожи. Поставщик услуг, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] передает в окно инструментов отличается от передачей пакетов VSPackage. Поставщик услуг окна инструментов знает о <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>, но не знает о <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. Можно вызвать метод <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> для получения от поставщика услуг VSPackage в окне инструментов.  
   
-     Если окно инструментов содержит пользовательский элемент управления или любой другой контейнер элемента управления, контейнер будет размещаться по модели компонентов Windows и не будет иметь доступ к любому [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] служб. Можно вызвать метод <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> для получения поставщика услуг VSPackage из контейнера элемента управления.  
+     Если окно инструментов содержит пользовательский элемент управления или любой другой контейнер элемента управления, контейнер будет размещен в модели компонента Windows и не будет доступа к любому [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] служб. Можно вызвать метод <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> для получения поставщика услуг VSPackage из контейнера элемента управления.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Список доступных служб](../extensibility/internals/list-of-available-services.md)   
  [Использование и предоставления услуг](../extensibility/using-and-providing-services.md)   
- [Основы службы](../extensibility/internals/service-essentials.md)
+ [Основные компоненты службы](../extensibility/internals/service-essentials.md)

@@ -1,32 +1,34 @@
 ---
-title: "Пошаговые руководства с использованием Excel"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "пошаговые руководства [разработка решений Office в Visual Studio], Excel"
-  - "Excel [разработка решений Office в Visual Studio], пошаговые руководства"
+title: "Пошаговые руководства с использованием Excel | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- walkthroughs [Office development in Visual Studio], Excel
+- Excel [Office development in Visual Studio], walkthroughs
 ms.assetid: 0a113292-02e2-4156-b5a2-9bb252f788cd
-caps.latest.revision: 29
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 28
+caps.latest.revision: "29"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 423d7691d76bb9f14fb4cd728d932bc3bb2ddaad
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Пошаговые руководства с использованием Excel
+# <a name="walkthroughs-using-excel"></a>Пошаговые руководства с использованием Excel
   В следующих пошаговых руководствах показано, как можно использовать настройки на уровне документа и надстройки VSTO для автоматизации Microsoft Office Excel, а также для настройки пользовательского интерфейса.  
   
-## Пошаговые руководства на уровне документа  
- [Пошаговое руководство. Создание первой настройки уровня документа для Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
+## <a name="document-level-walkthroughs"></a>Пошаговые руководства на уровне документа  
+ [Пошаговое руководство. Создание первой настройки на уровне документа для Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
  Содержит сведения о создании базовой настройки на уровне документа для Excel.  
   
  [Пошаговое руководство. Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
@@ -41,7 +43,7 @@ caps.handback.revision: 28
  [Пошаговое руководство. Отображение текста в текстовом поле рабочего листа с помощью кнопки](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)  
  Демонстрирует основные принципы использования кнопок и текстовых полей на листах Excel.  
   
- [Пошаговое руководство. Программирование реакции на события элементов управления NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)  
+ [Пошаговое руководство. Программирование реакции на события для элементов управления NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)  
  Содержит пошаговые инструкции по добавлению элемента управления <xref:Microsoft.Office.Tools.Excel.NamedRange> на лист и программированию его событий.  
   
  [Пошаговое руководство. Простая привязка данных в проекте уровня документа](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
@@ -59,7 +61,7 @@ caps.handback.revision: 28
  [Пошаговое руководство. Привязка данных к элементам управления в панели действий Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)  
  Описывает способы добавления элементов управления, привязанных к источнику данных, на панель действий в Excel.  
   
-## Пошаговые руководства на уровне приложения  
+## <a name="application-level-walkthroughs"></a>Пошаговые руководства на уровне приложения  
  [Пошаговое руководство. Создание первой надстройки VSTO для Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
  Содержит сведения о создании базовой надстройки VSTO для Excel.  
   

@@ -1,15 +1,13 @@
 ---
-title: View DLLs and Executables in the Debugger | Microsoft Docs
+title: "Просматривать библиотеки DLL и исполняемых файлов в отладчике | Документы Microsoft"
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.debug.modules
+f1_keywords: vs.debug.modules
 dev_langs:
 - CSharp
 - VB
@@ -24,74 +22,59 @@ helpviewer_keywords:
 - DLLs, displaying while debugging
 - modules, displaying
 ms.assetid: d840fdca-b035-4452-b652-72580c831896
-caps.latest.revision: 36
+caps.latest.revision: "36"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: e0e565507f2ae48992231a122d32971d90c461c7
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
-
+ms.openlocfilehash: caaa710f0fc34a4e6a24038a7e65e5670bebd6ea
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="view-dlls-and-executables-using-the-modules-window-in-the-visual-studio-debugger"></a>View DLLs and Executables using the Modules Window in the Visual Studio Debugger
+# <a name="view-dlls-and-executables-using-the-modules-window-in-the-visual-studio-debugger"></a>Просмотр библиотеки DLL и исполняемых файлов, с помощью окна "Модули" в отладчике Visual Studio
  
-The **Modules** window lists the DLLs and executables (EXE) that are used by your program and shows relevant information for each. 
+**Модули** окне выводится список библиотек DLL и исполняемых файлов (EXE), используемых программой и отображаются соответствующие данные для каждого. 
 
 > [!NOTE]
->  This feature is not available for SQL or script debugging. 
+>  Эта возможность недоступна при отладке SQL и скриптов. 
   
-### <a name="to-display-the-modules-window"></a>To display the Modules window  
+### <a name="to-display-the-modules-window"></a>Для отображения окна "Модули"  
   
--   While you are debugging, select **Debug > Windows** and then click **Modules**.  
+-   В процессе отладки, выберите **Отладка > Windows** и нажмите кнопку **модулей**.  
   
-     By default, the **Modules** window sorts modules by load order. However, you can choose to sort by any column.  
+     По умолчанию **модули** окна модули упорядочены в порядке загрузки. При этом можно выбрать сортировку по любому столбцу.  
   
-### <a name="to-sort-by-any-column"></a>To sort by any column  
+### <a name="to-sort-by-any-column"></a>Выбор сортировки по произвольному столбцу  
   
--   Click the button at the top of the column.  
+-   Нажмите кнопку вверху столбца.  
   
-     You can load symbols or specify a symbol path from the **Modules** window by using the shortcut menu.  
+     Можно загрузить символы или указать путь к символам из **модули** окна с помощью контекстного меню.  
   
-## <a name="loading-symbols"></a>Loading Symbols  
- In the **Modules** window, you can see which modules have debugging symbols loaded. This information appears in the **Symbol Status** column. If the status says **Skipped loadingCannot find or open the PDB file**, or **Loading disabled by include/exclude setting**, you can direct the debugger to download symbols from the Microsoft public symbol servers or to load symbols from a symbol directory on your computer. For more information, see [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+## <a name="loading-symbols"></a>Загрузка символов  
+ В **модули** окна, можно видеть, каких модулей загружены символы отладки. Эта информация появляется в **состояние символов** столбца. Если указано состояние **loadingCannot пропускаются найти или открыть файл PDB**, или **загрузка отключена параметром включения/исключения**, можно настроить отладчик на загрузку символов с открытых символов Майкрософт серверы или загрузить символы из каталога символов на компьютере. Дополнительные сведения см. в разделе [укажите символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
-#### <a name="to-load-symbols-manually"></a>To load symbols manually  
+#### <a name="to-load-symbols-manually"></a>Загрузка символов вручную  
   
-1.  In the **Modules** window, right-click a module for which symbols have not loaded.  
+1.  В **модули** окно, щелкните правой кнопкой мыши какой-либо модуль, для которого не загружены символы.  
   
-2.  Point to **Load Symbols From** and then click **Microsoft Symbol Servers** or **Symbol Path**.  
+2.  Пункты **загрузить символы из** и нажмите кнопку **серверы символов Microsoft** или **путь к символам**.  
   
-#### <a name="to-change-symbol-load-settings"></a>To change symbol load settings  
+#### <a name="to-change-symbol-load-settings"></a>Изменение параметров загрузки символов  
   
-1.  In the **Modules** window, right-click any module.  
+1.  В **модули** окно, щелкните правой кнопкой мыши любой модуль.  
   
-2.  Click **Symbol Settings**.  
+2.  Нажмите кнопку **символов параметры**.  
   
-     You can now change the symbol load settings, as described in [Specify symbol locations and loading behavior](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Specify_symbol_locations_and_loading_behavior). Changes do not take effect until you restart the debugging session.  
+     Теперь можно изменить параметры загрузки символов, как описано в [укажите расположения символов и поведения при загрузке](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Specify_symbol_locations_and_loading_behavior). Изменения вступают в силу только после перезапуска сеанса отладки.  
   
-#### <a name="to-change-symbol-load-behavior-for-a-specific-module"></a>To change symbol load behavior for a specific module  
+#### <a name="to-change-symbol-load-behavior-for-a-specific-module"></a>Изменение поведения загрузки символов для конкретного модуля  
   
-1.  In the **Modules** window, right-click the module.  
+1.  В **модули** окно, щелкните правой кнопкой мыши модуль.  
   
-2.  Point to **Automatic Symbol Load Settings** and then click **Always Load Manually** or **Default**. Changes do not take effect until you restart the debugging session.  
+2.  Пункты **параметры автоматической загрузки символов** и нажмите кнопку **всегда загружать вручную** или **по умолчанию**. Изменения вступают в силу только после перезапуска сеанса отладки.  
   
-## <a name="see-also"></a>See Also  
- [Breaking Execution](http://msdn.microsoft.com/en-us/30fc4643-f337-4651-b1ff-f2de2c098d40)   
- [Viewing Data in the Debugger](../debugger/viewing-data-in-the-debugger.md)   
- [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+## <a name="see-also"></a>См. также  
+ [Прерывание выполнения](http://msdn.microsoft.com/en-us/30fc4643-f337-4651-b1ff-f2de2c098d40)   
+ [Просмотр данных в отладчике](../debugger/viewing-data-in-the-debugger.md)   
+ [Укажите символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

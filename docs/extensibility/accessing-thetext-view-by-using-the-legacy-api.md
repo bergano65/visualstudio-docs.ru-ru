@@ -1,43 +1,44 @@
 ---
-title: "Доступ к theText представление с помощью API прежних версий | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "редакторы [Visual Studio SDK] прежних версий - текстового представления."
+title: "Доступ к theText представления с помощью API прежних версий | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - text view
 ms.assetid: 8f751f72-c972-4be3-84ee-19c281e02e25
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 07ce61a0188802455c4e64b698344c3f275215bd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Доступ к theText представление с помощью API прежних версий
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Представление текста представление текста, который хранится в текстовом буфере.  Можно открыть представление текста с использованием традиционного API, как показано в следующем разделе.  
+# <a name="accessing-thetext-view-by-using-the-legacy-api"></a>Доступ к theText представления с помощью API прежних версий
+Текстовое представление — представления текста, который хранится в буфер текста. Текстовое представление доступны с помощью предыдущих версий API, как показано в следующем разделе.  
   
-## Объект вид текста  
- Каждое представление, связанное с собственным текстовым буфером, и представление окна на данных, находящихся в буфере.  На следующей диаграмме показаны ключевые интерфейсы объекта представления текста, представленный by <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>.  
+## <a name="text-view-object"></a>Объект представления текста  
+ Каждое представление связан с буфера текста, а представление — это окно на основе данных в буфере. На следующей диаграмме показаны ключевые интерфейсы объект представления текста, который представляется <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>.  
   
- ![Объект представления текста Visual Studio](~/extensibility/media/vstextview.gif "vstextview")  
+ ![Объект представления текста Visual Studio](../extensibility/media/vstextview.gif "vstextview")  
 Объект представления текста  
   
- Представление способ представления текста в буфере.  Оно включает функции, такие как перенос по словам и структуризации, чтобы которого выводятся в представлении не будет явным представлением текста в буфере.  
+ Представление — это способ представления текста в буфере. Он включает функции, например перенос по словам и структурирование, чтобы появиться в представлении не точное представление текста в буфере.  
   
- Представление позволяет других служб или процессов для перехвата входящие команды и устранить их, прежде чем представление действует на них.  Наиболее распространенной службу для этого служба языка.  Служба языка, например, команда может перехватывать клавиши ВВОД отступ для предоставления пользовательских советы расширения функциональности или средства.  
+ Представление включает других служб или процессов, чтобы перехватывать входящие команды и работать с ними, прежде чем представление работает с ними. Наиболее распространенной службой для этого является служба языка. Языковая служба может потребоваться, например, перехвата команды клавишу ВВОД для предоставления пользовательских отступов советы поведение или средства.  
   
-## Добавление функциональных возможностей вид текста  
- Можно настраивать функциональности представления текста при обработке определенных нажатия клавиш.  Для перехвата нажатия клавиши, реализации <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> в объекте и укажите целевой объект команды \(<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>наблюдение и перехватывать\) команды.  
+## <a name="adding-functionality-to-the-text-view"></a>Добавление функциональных возможностей в представление текста  
+ Можно настроить поведение представления текста с помощью обработки определенного нажатия клавиш. Для перехвата нажатия клавиш, необходимо реализовать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> объекта и укажите конечный объект команды (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>) для монитора и отсекаемый отрезок команд.  
   
- Текстовое представление использует последовательную архитектуру для фильтров команды.  Новая команда выполняет фильтрацию \(<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> объекты\) добавляются в последовательности путем вызова <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> метод.  
+ Текстовое представление последовательного архитектурой фильтры команд. Новые фильтры команды (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> объектов) добавляются в последовательность путем вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> метод.  
   
- Уведомление о событии для представления текста обеспечивается с помощью `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents` интерфейс.  Реализуйте этот интерфейс в объекте клиента для получения уведомления об изменениях к представлению текста.  Предоставьте этот интерфейс к представлению текста с помощью <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> интерфейс для представления текста для получения уведомления об изменениях из представления.  
+ Уведомление о событии для представления текста предоставляется с помощью `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents` интерфейса. Реализация этого интерфейса на объект клиента будет получать уведомления об изменениях для представления текста. Предоставить этот интерфейс для представления текста с помощью <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> интерфейс для представления текста, чтобы получать уведомления об изменениях из представления.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Изменение параметров представления с помощью API прежних версий](../extensibility/changing-view-settings-by-using-the-legacy-api.md)   
- [С помощью диспетчера текст для наблюдения за глобальные параметры](../extensibility/using-the-text-manager-to-monitor-global-settings.md)
+ [С помощью диспетчера текстов для наблюдения за глобальные параметры](../extensibility/using-the-text-manager-to-monitor-global-settings.md)

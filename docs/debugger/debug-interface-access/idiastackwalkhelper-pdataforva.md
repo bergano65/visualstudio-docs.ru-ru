@@ -1,60 +1,59 @@
 ---
-title: "IDiaStackWalkHelper::pdataForVA | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackWalkHelper2::pdataByVA - метод"
+title: "IDiaStackWalkHelper::pdataForVA | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackWalkHelper2::pdataByVA method
 ms.assetid: fafc38fe-74dc-4726-9a51-eebf3a673d7f
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4925a4a37395dd53fabb1d8d7ba7f80bc5cc6c93
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackWalkHelper::pdataForVA
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Возвращает фрагмент данных PDATA, связанный с виртуальным адресом.  
+# <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
+Возвращает PDATA блок данных, связанных с виртуальный адрес.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT pdataForVA(   
-   ULONGLONG  va,  
-   DWORD      cbData,  
-   DWORD*     pcbData,  
-   BYTE*      pbData  
+```C++  
+HRESULT pdataForVA(   
+   ULONGLONG  va,  
+   DWORD      cbData,  
+   DWORD*     pcbData,  
+   BYTE*      pbData  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `va`  
- \[in\] определяет виртуальный адрес данных для получения.  
+ [in] Указывает виртуальный адрес для получения данных.  
   
  `cbData`  
- \[in\] размер в байтах, который требуется получить.  
+ [in] Размер в байтах для получения данных.  
   
  `pcbData`  
- \[out\] возвращает фактический размер в байтах, которые были получены.  
+ [out] Возвращает фактический размер данных в байтах, который был получен.  
   
  `pbData`  
- \[in, out\] буфер, который заполняется с данными.  Не может иметь значение `NULL`.  
+ [in, out] Буфер, заполнено запрошенные данные. Не может быть `NULL`.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`.  Возвращает `S_FALSE` если PDATA для указанного адреса.  В противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если нет PDATA по указанному адресу. В противном случае возвращается код ошибки.  
   
-## Заметки  
- PDATA \(раздел .pdata с именем ""\) compiland содержит сведения об обработке ошибок для функций.  
+## <a name="remarks"></a>Примечания  
+ (Раздел с именем «.pdata») PDATA компилируемого объекта содержит сведения об обработке исключений для функции.  
   
- Вызывающий объект известно, сколько данных должен быть возвращен поэтому вызывающий не имеет никакой необходимости запросить объем данных.  Поэтому приемлемо для реализации этого метода возвращать ошибку, если `pbData` параметр  `NULL`.  
+ Вызывающий объект знает, какой объем данных должны быть возвращены, вызывающий оператор имеет не нужно запрашивать объему данных доступен. Таким образом, он допустим для реализации этого метода будут возвращать ошибку, если `pbData` параметр `NULL`.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

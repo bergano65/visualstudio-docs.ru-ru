@@ -1,32 +1,34 @@
 ---
-title: "Устранение неполадок при работе с решениями Office"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "приложения Office [разработка решений Office в Visual Studio], устранение неполадок"
-  - "разработка решений Office в Visual Studio, устранение неполадок"
-  - "устранение неполадок [разработка решений Office в Visual Studio]"
+title: "Устранение неполадок решений Office | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office applications [Office development in Visual Studio], troubleshooting
+- Office development in Visual Studio, troubleshooting
+- troubleshooting [Office development in Visual Studio]
 ms.assetid: 0518ffa9-97e5-4596-8ff2-8a24aef42b9e
-caps.latest.revision: 27
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 26
+caps.latest.revision: "27"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d4e93509595dc9bd576bc1f3f427ef222df11abd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Устранение неполадок при работе с решениями Office
+# <a name="troubleshooting-office-solutions"></a>Устранение неполадок при работе с решениями Office
   В этом разделе содержатся советы по решению типичных проблем, с которыми можно столкнуться при создании решений с помощью средств разработки Office в Visual Studio.  
   
-## В этом подразделе  
+## <a name="in-this-section"></a>Содержание  
  [Устранение ошибок в решениях Office](../vsto/troubleshooting-errors-in-office-solutions.md)  
  Описание распространенных проблем, с которыми можно столкнуться при проектировании, запуске и тестировании решений Office в Visual Studio.  
   
@@ -36,7 +38,7 @@ caps.handback.revision: 26
  [Дополнительные сведения об ошибках в решениях Office](../vsto/additional-support-for-errors-in-office-solutions.md)  
  Описываются другие ресурсы для устранения ошибок и предупреждений в решениях Office.  
   
-## Связанные подразделы  
+## <a name="related-sections"></a>Связанные разделы  
  [Устранение неполадок, связанных с безопасностью решений Office](../vsto/troubleshooting-office-solution-security.md)  
  Описываются типичные проблемы, которые могут возникать при работе по защите решений Office.  
   

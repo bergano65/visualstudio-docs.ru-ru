@@ -4,44 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#PromptForSaveOnCreation
-helpviewer_keywords:
-- PromptForSaveOnCreation element [Visual Studio project templates]
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#PromptForSaveOnCreation
+helpviewer_keywords: PromptForSaveOnCreation element [Visual Studio project templates]
 ms.assetid: 75174674-0c3c-4b57-b2fd-6ea8e817b67d
-caps.latest.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 6d39ad8e236ef2b9ea9fbf29fbe0d11d08e5643c
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 8ce7e73801b34542bcf1c6be35d950b1fabdc7c3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Элемент PromptForSaveOnCreation (шаблоны проектов Visual Studio)
-Указывает, является ли у пользователя запрашивается место сохранения проекта в **новый проект** диалоговое окно при создании проекта. Если этот элемент имеет значение `true`, то пользователю предлагается для сохранения расположения; Если `false`, то они не запрашиваются. (То есть, временный проект создается).  
+Указывает, будет ли пользователю предлагается ввести место сохранения проекта в **новый проект** диалоговое окно при создании проекта. Если этот элемент имеет значение `true`, то пользователю предлагается для сохранения расположения; Если `false`, то они не запрашиваются. (То есть временного проекта создается).  
   
- \<VSTemplate настроек  
- \<TemplateData настроек  
- \<PromptForSaveOnCreation настроек  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<PromptForSaveOnCreation >  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -67,7 +51,7 @@ ms.lasthandoff: 02/22/2017
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Текст должен быть либо `true` или `false`, `true` , указывающее, что пользователь будет запрашиваться сохранения расположение при создании нового проекта.  
+ Этот текст должен быть либо `true` или `false`, `true` , указывающее, что пользователь будет запрашиваться сохранения расположения при создании нового проекта.  
   
 ## <a name="remarks"></a>Примечания  
  `PromptForSaveOnCreation` — это необязательный элемент. Значение по умолчанию — `false`.  
@@ -75,7 +59,7 @@ ms.lasthandoff: 02/22/2017
  Временные проекты, проекты, которые могут создавать и изменять без сохранения содержимого проекта на диске. Дополнительные сведения см. в разделе [NIB временные проекты](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
   
 ## <a name="example"></a>Пример  
- В следующем примере задается значение `PromptForSaveOnCreation` равен `false`, который указывает разрешить проект создается как временный проект.  
+ В следующем примере задается значение `PromptForSaveOnCreation` равно `false`, которое указывает, чтобы разрешить проекта, который будет создан как временный проект.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  

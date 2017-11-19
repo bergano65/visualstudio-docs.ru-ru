@@ -1,33 +1,35 @@
 ---
-title: "Реализация и регистрации поставщика порта | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "отладка [пакет SDK для отладки], регистрация поставщикам портов"
-  - "поставщикам портов, регистрация"
+title: "Реализация и регистрации поставщика порта | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debugging [Debugging SDK], registering port suppliers
+- port suppliers, registering
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: fa7378493c8df41b70be6fda17b2763f90fd7f04
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Реализация и регистрации поставщика порта
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Роль поставщика порта порты отслеживания и указывает, которые, в свою очередь, определяют процессы.  При необходимости создания порту, создается поставщик порта с помощью CoCreate с идентификатором GUID поставщика порта \(сеанс отладки диспетчер \[SDM\] будет использовать поставщика порта выделенного пользователя или поставщик порта, определенные системой проекта\).  SDM затем вызывает метод [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) определить, существуют ли порты могут быть добавлены.  Если порт можно добавить, новый запрос, вызвав порт [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) и передайте ему  [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) он описывает порт.  `AddPort` возвращает новый порт, представленный  [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) интерфейс.  
+# <a name="implementing-and-registering-a-port-supplier"></a>Реализация и регистрации поставщика порта
+Для отслеживания и указать порты, которые в свою очередь, управление процессами — роль поставщика порта. Во время порта должно быть создано поставщика порта создается с помощью CoCreate с идентификатором GUID поставщика порта (Диспетчер сеанса отладки [SDM] будет использовать поставщика порта выбранный пользователем или поставщика порта, указанный в системе проекта). Затем вызовет SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) для просмотра, могут быть добавлены все порты. Если порт может быть добавлен, путем вызова запрашивается новый порт [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) и передачи его [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) , описывающий порт. `AddPort`Возвращает новый порт, представленный [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) интерфейса.  
   
-## Обсуждение  
- Порт, созданный поставщиком порта, который в свою очередь связаны с компьютером или отладки сервер.  Сервер может перечислять поставщиков портов через своих[EnumPortSuppliers](../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md) метод и поставщик порта могут перечислить свои через порты  [EnumPorts](../../extensibility/debugger/reference/idebugportsupplier2-enumports.md) метод.  
+## <a name="discussion"></a>Обсуждение  
+ Порт, созданных поставщика порта, который в свою очередь связан с сервером машины или отладки. Сервер можно перечислить ее поставщики порт через[EnumPortSuppliers](../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md) метод и поставщика порта можно перечислить его портам с помощью [EnumPorts](../../extensibility/debugger/reference/idebugportsupplier2-enumports.md) метод.  
   
- В дополнение к обычной регистрации модели COM, поставщик порта должен зарегистрировать с помощью Visual Studio, поместив его CLSID и имя в конкретных расположениях реестра.  Вспомогательная функция, вызываемая пакет SDK для отладки `SetMetric` обрабатывает эту работу по дому: она вызывается один раз для каждого элемента, который требуется зарегистрировать. таким образом:  
+ Помимо обычной регистрации COM поставщика порта должен зарегистрироваться с помощью Visual Studio, поместив его имя и идентификатор CLSID в определенные разделы реестра. Пакет SDK для отладки вспомогательная функция, вызываемая `SetMetric` обрабатывает переложить всю работу: вызывается один раз для каждого элемента, чтобы зарегистрировать, таким образом:  
   
-```cpp#  
+```cpp  
 SetMetric(metrictypePortSupplier,  
           <GUID of your port supplier>,  
           metricCLSID,  
@@ -42,9 +44,9 @@ SetMetric(metrictypePortSupplier,
           NULL);  
 ```  
   
- Отменяет регистрацию сами поставщика порта, вызвав `RemoveMetric` \(одна вспомогательная функция пакет SDK для отладки\) по одному разу для каждого элемента, который был зарегистрирован, таким образом:  
+ Поставщика порта отменяет регистрацию сам путем вызова `RemoveMetric` (Вспомогательная функция другой пакет SDK для отладки) один раз для каждого элемента, который был зарегистрирован, таким образом:  
   
-```cpp#  
+```cpp  
 RemoveMetric(metrictypePortSupplier,  
              <GUID of your port supplier>,  
              metricCLSID,  
@@ -56,11 +58,11 @@ RemoveMetric(metrictypePortSupplier,
 ```  
   
 > [!NOTE]
->  [Вспомогательные пакеты SDK для отладки](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric` и  `RemoveMetric` статические функции, определенные в dbgmetric.h и компилированные в ad2de.lib.  `metrictypePortSupplier`"  `metricCLSID`и`metricName` вспомогательные объекты также определяются в dbgmetric.h.  
+>  [SDK вспомогательные методы для отладки](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric` и `RemoveMetric` — это статические функции, определенные в dbgmetric.h и компилируются в ad2de.lib. `metrictypePortSupplier`, `metricCLSID`, И `metricName` помощников также определены в dbgmetric.h.  
   
- Поставщик порта может указать ее имя и идентификатор GUID через методы [GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md) и  [GetPortSupplierId](../Topic/IDebugPortSupplier2::GetPortSupplierId.md)соответственно.  
+ Порт поставщика можно указать его имя и идентификатор GUID в методах [GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md) и [GetPortSupplierId](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)соответственно.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Реализация поставщика порта](../../extensibility/debugger/implementing-a-port-supplier.md)   
- [Вспомогательные пакеты SDK для отладки](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
- [Поставщикам портов](../../extensibility/debugger/port-suppliers.md)
+ [Вспомогательные функции пакета SDK для отладки](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
+ [Поставщики портов](../../extensibility/debugger/port-suppliers.md)

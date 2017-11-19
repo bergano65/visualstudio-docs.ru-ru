@@ -1,27 +1,30 @@
 ---
-title: "IDebugDocumentHelper::Attach | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugDocumentHelper::Attach | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentHelper.Attach
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugDocumentHelper::Attach"
+helpviewer_keywords: IDebugDocumentHelper::Attach
 ms.assetid: 834f23a9-716d-44df-b23c-d1bf6da60e79
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 97ddb49f61e9df4044eb6e16b853e6cf8155162a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentHelper::Attach
-Добавляет этот документ в схеме документа.  
+# <a name="idebugdocumenthelperattach"></a>IDebugDocumentHelper::Attach
+Добавляет в этом документе в дереве документа.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT Attach(  
@@ -29,20 +32,20 @@ HRESULT Attach(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pddhParent`  
- \[in\] схема документации, где этот документ будет добавить.  Может иметь значение "NULL".  
+ [in] Дерево документов, куда будут добавлены в этом документе. Может иметь значение NULL.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
- Этот метод добавляет этот документ в дереве документа, используя `pddhParent` в качестве родительского.  Если `pddhParent``NULL`, то этот документ будет документом верхнего уровня.  
+## <a name="remarks"></a>Примечания  
+ Этот метод добавляет в документ в этом документе дерева, с помощью `pddhParent` как родительский элемент. Если `pddhParent` — `NULL`, этот документ будет верхнего уровня документа.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugDocumentHelper::Detach](../../winscript/reference/idebugdocumenthelper-detach.md)   
  [Интерфейс IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)

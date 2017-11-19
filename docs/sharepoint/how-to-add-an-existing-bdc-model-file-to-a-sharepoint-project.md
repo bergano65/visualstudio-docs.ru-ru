@@ -1,59 +1,60 @@
 ---
-title: "Практическое руководство. Добавление существующего файла модели подключения к бизнес-данным в проект SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.BDC.ImportDialog"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "подключение к бизнес-данным [разработка приложений SharePoint в Visual Studio], импорт модели"
-  - "подключение к бизнес-данным [разработка приложений SharePoint в Visual Studio], удаление модели"
-  - "служба подключения к бизнес-данным [разработка приложений SharePoint в Visual Studio], импорт модели"
-  - "служба подключения к бизнес-данным [разработка приложений SharePoint в Visual Studio], повторное использование модели"
+title: "Как: Добавление существующего файла модели BDC в проект SharePoint | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.SharePointTools.BDC.ImportDialog
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- Business Data Connectivity service [SharePoint development in Visual Studio], import a model
+- Business Data Connectivity service [SharePoint development in Visual Studio], reuse a model
+- BDC [SharePoint development in Visual Studio], import a model
+- BDC [SharePoint development in Visual Studio], remove a model
 ms.assetid: e843738a-f936-4dcd-be35-249407573b74
-caps.latest.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d0ae7190d0b55dec593e8d9f7c20542d5a7d5bc6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Добавление существующего файла модели подключения к бизнес-данным в проект SharePoint
-  Можно настраивать, упаковывать и повторно развертывать Business Data Connectivity\-модель \(BDC\) с помощью Visual Studio для добавления файла модели \(.bdcm\) к любому проекту фермы SharePoint.  Для получения дополнительной информации см. [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md).  
+# <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Практическое руководство. Добавление существующего файла модели подключения к бизнес-данным в проект SharePoint
+  Вы можете настраивать, упаковывать и повторно развертывать модель подключения к бизнес-данным (BDC) с помощью Visual Studio для добавления файла модели (.bdcm) к любому проекту фермы SharePoint. Дополнительные сведения см. в разделе [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
-### Добавление файла модели BDC в проект SharePoint  
+### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>Добавление файла модели подключения к бизнес-данным (BDC) в проект SharePoint  
   
-1.  В **Обозревателе решений** выберите папку для проекта SharePoint.  
+1.  В **обозревателе решений**, выберите папку для проекта SharePoint.  
   
-2.  В строке меню выберите **Проект**, **Добавить существующий элемент**.  
+2.  В строке меню выберите **проекта**, **Добавление существующего элемента**.  
   
-3.  В диалоговом окне **Добавление существующего элемента** найдите расположение файла определения модели, который необходимо добавить в проект, выберите файл и нажмите кнопку **Добавить**.  
+3.  В **Добавление существующего элемента** диалоговое окно, перейдите к расположению файла определения модели, которую требуется добавить в проект, выберите файл и нажмите кнопку **добавить** кнопки.  
   
-     Если модель не определяет *бизнес\-систему типа сборки .NET*, появляется диалоговое окно **Добавление бизнес\-системы сборки .NET**.  
+     Если модель не определяет *строке из БИЗНЕС-систему типа сборки .NET*, **бизнес-системы сборки .NET, добавьте** откроется диалоговое окно.  
   
 4.  Если появится диалоговое окно, выполните одно из следующих действий.  
   
-    -   Если требуется создавать пользовательский код и использовать конструктор для определения метаданных для импортированной модели, нажмите кнопку **Да**, назовите систему, а затем нажмите кнопку **ОК**.  
+    -   Если вы хотите создавать пользовательский код и использовать конструктор для определения метаданных для импортированной модели, выберите **Да** , назовите систему, а затем щелкните **ОК** кнопки.  
   
-    -   Иначе, нажмите кнопку **No**, а затем — кнопку **ОК**.  
+    -   В противном случае выберите **нет** , а затем кнопку **ОК** кнопки.  
   
-     Элемент **Модель подключения к бизнес\-данным** добавляется в проект.  
+     **Модель подключения к бизнес-данным** элемент добавляется в проект.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md)   
- [Практическое руководство. Создание модели подключения к бизнес-данным](../sharepoint/how-to-create-a-bdc-model.md)   
- [Практическое руководство. Использование файла ресурсов для задания локализованных имен, свойств и разрешений](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
- [Практическое руководство. Добавление пользовательской сборки в функцию BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
+ [Как: создать модель BDC](../sharepoint/how-to-create-a-bdc-model.md)   
+ [Как: определить локализованные имена, свойства и разрешения с помощью файла ресурсов](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
+ [Как: Добавление пользовательской сборки в функцию BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
  [Интеграция бизнес-данных в SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
   
   

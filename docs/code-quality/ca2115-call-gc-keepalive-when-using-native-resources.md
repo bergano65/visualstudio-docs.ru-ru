@@ -1,11 +1,10 @@
 ---
-title: 'CA2115: Call GC.KeepAlive when using native resources | Microsoft Docs'
+title: "CA2115: Вызывайте GC. KeepAlive при использовании собственных ресурсов | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,71 +14,55 @@ helpviewer_keywords:
 - CA2115
 - CallGCKeepAliveWhenUsingNativeResources
 ms.assetid: f00a59a7-2c6a-4bbe-a1b3-7bf77d366f34
-caps.latest.revision: 18
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: f4ca0b7ce757b4a4b616015b7341f3bfa9ee7a86
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 98833f1feccd70c3bdf140b4d2be7a4ad1a5d6bf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: Call GC.KeepAlive when using native resources
+# <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: вызывайте GC.KeepAlive при использовании собственных ресурсов
 |||  
 |-|-|  
 |TypeName|CallGCKeepAliveWhenUsingNativeResources|  
 |CheckId|CA2115|  
-|Category|Microsoft.Security|  
-|Breaking Change|Non Breaking|  
+|Категория|Microsoft.Security|  
+|Критическое изменение|Не критическое|  
   
-## <a name="cause"></a>Cause  
- A method declared in a type with a finalizer references a <xref:System.IntPtr?displayProperty=fullName> or <xref:System.UIntPtr?displayProperty=fullName> field, but does not call <xref:System.GC.KeepAlive%2A?displayProperty=fullName>.  
+## <a name="cause"></a>Причина  
+ Метода, объявленного в типе с методом завершения ссылается <xref:System.IntPtr?displayProperty=fullName> или <xref:System.UIntPtr?displayProperty=fullName> поле, но не вызывает <xref:System.GC.KeepAlive%2A?displayProperty=fullName>.  
   
-## <a name="rule-description"></a>Rule Description  
- Garbage collection finalizes an object if there are no more references to it in managed code. Unmanaged references to objects do not prevent garbage collection. This rule detects errors that might occur because an unmanaged resource is being finalized while it is still being used in unmanaged code.  
+## <a name="rule-description"></a>Описание правила  
+ Сборка мусора завершает объект, если на него больше нет ссылок в управляемом коде. Сборщик мусора не препятствуют неуправляемых ссылок на объекты. Данное правило обнаруживает ошибки, которые могут возникать из-за завершения неуправляемых ресурсов, по-прежнему используемых в машинном коде.  
   
- This rule assumes that <xref:System.IntPtr> and <xref:System.UIntPtr> fields store pointers to unmanaged resources. Because the purpose of a finalizer is to free unmanaged resources, the rule assumes that the finalizer will free the unmanaged resource pointed to by the pointer fields. This rule also assumes that the method is referencing the pointer field to pass the unmanaged resource to unmanaged code.  
+ Это правило предполагает, что <xref:System.IntPtr> и <xref:System.UIntPtr> поля сохранения указателей на неуправляемые ресурсы. Поскольку назначением метода завершения освободить неуправляемые ресурсы, правиле предполагается, что метода завершения освободить неуправляемый ресурс, на который указывает указатель полей. Это правило также предполагает, что метод ссылается на поле указателя для передачи неуправляемого ресурса в неуправляемый код.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, add a call to <xref:System.GC.KeepAlive%2A> to the method, passing the current instance (`this` in C# and C++) as the argument. Position the call after the last line of code where the object must be protected from garbage collection. Immediately after the call to <xref:System.GC.KeepAlive%2A>, the object is again considered ready for garbage collection assuming that there are no managed references to it.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Чтобы устранить нарушение данного правила, добавьте вызов <xref:System.GC.KeepAlive%2A> в метод передачи текущего экземпляра (`this` в C# и C++) в качестве аргумента. Поместите этот вызов после последней строки кода, где объект должен быть защищен от сборки мусора. Сразу после вызова <xref:System.GC.KeepAlive%2A>, при условии, что на него нет ссылок из управляемого объекта снова считается готов для сборки мусора.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- This rule makes some assumptions that can lead to false positives. You can safely suppress a warning from this rule if:  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ Это правило используется ряд предположений, которые могут привести к ложным положительным результатам. Можно безопасно подавить предупреждение из этого правила, если:  
   
--   The finalizer does not free the contents of the <xref:System.IntPtr> or <xref:System.UIntPtr> field referenced by the method.  
+-   Метод завершения не позволяет освободить содержимое <xref:System.IntPtr> или <xref:System.UIntPtr> поле, связанном с помощью метода.  
   
--   The method does not pass the <xref:System.IntPtr> or <xref:System.UIntPtr> field to unmanaged code.  
+-   Метод не прошел <xref:System.IntPtr> или <xref:System.UIntPtr> полей в неуправляемый код.  
   
- Carefully review other messages before excluding them. This rule detects errors that are difficult to reproduce and debug.  
+ Внимательно просмотрите другие сообщения, прежде чем отключать их. Данное правило обнаруживает ошибки, которые трудно воспроизвести и отладки.  
   
-## <a name="example"></a>Example  
- In the following example, `BadMethod` does not include a call to `GC.KeepAlive` and therefore violates the rule. `GoodMethod` contains the corrected code.  
+## <a name="example"></a>Пример  
+ В следующем примере `BadMethod` не включает вызов `GC.KeepAlive` и поэтому нарушает правило. `GoodMethod`содержит Исправленный код.  
   
 > [!NOTE]
->  This example is pseudo-code Although the code compiles and runs, the warning is not fired because an unmanaged resource is not created or freed.  
+>  В этом примере приведен код, несмотря на то, что код компилируется и выполняется, предупреждение не возникает из-за не создана или освобождения неуправляемых ресурсов.  
   
  [!code-csharp[FxCop.Security.IntptrAndFinalize#1](../code-quality/codesnippet/CSharp/ca2115-call-gc-keepalive-when-using-native-resources_1.cs)]  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>См. также  
  <xref:System.GC.KeepAlive%2A?displayProperty=fullName>   
  <xref:System.IntPtr?displayProperty=fullName>   
  <xref:System.Object.Finalize%2A?displayProperty=fullName>   
  <xref:System.UIntPtr?displayProperty=fullName>   
- [Dispose Pattern](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Шаблон удаления](/dotnet/standard/design-guidelines/dispose-pattern)

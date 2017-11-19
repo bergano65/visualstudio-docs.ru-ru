@@ -1,49 +1,49 @@
 ---
-title: "IDebugEngine3::SetEngineGuid | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine3::SetEngineGuid"
-helpviewer_keywords: 
-  - "IDebugEngine3::SetEngineGuid"
+title: "IDebugEngine3::SetEngineGuid | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEngine3::SetEngineGuid
+helpviewer_keywords: IDebugEngine3::SetEngineGuid
 ms.assetid: 8bdfa05d-feb7-4d98-abac-77825a04c50f
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f31bc27cdfe197a118d1b696225ea332fc0026ca
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEngine3::SetEngineGuid
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Этот метод устанавливает обработчик отладки \(DE\) `GUID`.  
+# <a name="idebugengine3setengineguid"></a>IDebugEngine3::SetEngineGuid
+Этот метод задает отладки механизма (DE) `GUID`.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-HRESULT SetEngineGuid(  
-   GUID* guidEngine  
+HRESULT SetEngineGuid(  
+   GUID* guidEngine  
 );  
 ```  
   
 ```  
 [C#]  
 int SetEngineGuid(  
-   ref Guid guidEngine  
+   ref Guid guidEngine  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `guidEngine`  
- \[in\] `GUID` обработчика.  
+ [in] `GUID` ядра.  
   
-## Возвращаемое значение  
+## <a name="return-value"></a>Возвращаемое значение  
  В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

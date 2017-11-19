@@ -1,27 +1,30 @@
 ---
-title: "IApplicationDebugger::onDebuggerEvent | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IApplicationDebugger::onDebuggerEvent | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IApplicationDebugger.onDebuggerEvent
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IApplicationDebugger::onDebuggerEvent"
+helpviewer_keywords: IApplicationDebugger::onDebuggerEvent
 ms.assetid: 82a5faaa-1222-4bf1-8569-10439dbdf16d
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 754c56b8474a5e21a05c1399540391197c373118
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IApplicationDebugger::onDebuggerEvent
-Обрабатывает пользовательское событие приложения.  
+# <a name="iapplicationdebuggerondebuggerevent"></a>IApplicationDebugger::onDebuggerEvent
+Обрабатывает событие пользовательского приложения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT onDebuggerEvent(  
@@ -30,28 +33,28 @@ HRESULT onDebuggerEvent(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `riid`  
- \[in\] идентификатор интерфейса для объекта.  
+ [in] Идентификатор для объекта.  
   
  `punk`  
- \[in\] объект события, который реализует интерфейс, указанный в параметре `riid`.  
+ [in] Объект события, который реализует интерфейс, определяемый `riid`.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
-|`E_NOTIMPL`|Метод в настоящее время не реализуется.|  
+|`E_NOTIMPL`|Метод не реализован в настоящее время.|  
   
-## Заметки  
- Семантика `IUnknown` все приложение\/указанный режим отладчика.  
+## <a name="remarks"></a>Примечания  
+ Семантика `IUnknown` является полностью определенные приложения и отладчика.  
   
- Этот метод позволяет пользовательских расширений модели отладчика; оно в настоящий момент не реализован.  
+ Этот метод позволяет для пользовательских расширений модели отладчика. он еще не реализован.  
   
- Этот метод вызывается при `IDebugApplication::FireDebuggerEvent` Позвонитьо.  
+ Этот метод вызывается, когда `IDebugApplication::FireDebuggerEvent` вызывается.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)   
  [IDebugApplication::FireDebuggerEvent](../../winscript/reference/idebugapplication-firedebuggerevent.md)

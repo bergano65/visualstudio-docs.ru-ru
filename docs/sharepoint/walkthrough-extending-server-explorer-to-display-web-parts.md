@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Extending Server Explorer to Display Web Parts | Microsoft Docs'
+title: "Пошаговое руководство: Расширение обозревателя серверов для отображения веб-частей | Документы Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,120 +16,113 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 ms.assetid: 5b1f104a-0eaf-4929-9f1f-d7afcfc8b707
-caps.latest.revision: 54
-author: kempb
-ms.author: kempb
+caps.latest.revision: "54"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 54e01f4db7fa98d808696b7ca8d85b1c4c038f02
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 0dce1b5ecafbccfdf9816bbc4ef3e8fee3e5c2fc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>Walkthrough: Extending Server Explorer to Display Web Parts
-  In Visual Studio, you can use the **SharePoint Connections** node of **Server Explorer** to view components on SharePoint sites. However, **Server Explorer** doesn't display some components by default. In this walkthrough, you'll extend **Server Explorer** so that it displays the Web Part gallery on each connected SharePoint site.  
+# <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>Пошаговое руководство. Расширение обозревателя сервера, чтобы в нем отображались веб-части
+  В Visual Studio можно использовать **подключения SharePoint** узел **обозревателя серверов** просматривать компоненты на сайтах SharePoint. Тем не менее **обозревателя серверов** по умолчанию не отображаются некоторые компоненты. В этом пошаговом руководстве вы будете расширить **обозревателя серверов** подключить отображается коллекции веб-частей на сайте SharePoint.  
   
- This walkthrough demonstrates the following tasks:  
+ В этом пошаговом руководстве описаны следующие задачи.  
   
--   Creating a Visual Studio extension that extends **Server Explorer** in the following ways:  
+-   Создание расширения Visual Studio, который расширяет **обозревателя серверов** одним из следующих способов:  
   
-    -   The extension adds a **Web Part Gallery** node under each SharePoint site node in **Server Explorer**. This new node contains child nodes that represent each Web Part in the Web Part gallery on the site.  
+    -   Добавляет расширение **коллекции веб-частей** в узле каждого узла сайта SharePoint в **обозревателя серверов**. Этот новый узел содержит дочерние узлы, представляющие каждой веб-части в галерею веб-частей на сайте.  
   
-    -   The extension defines a new type of node that represents a Web Part instance. This new node type is the basis for the child nodes under the new **Web Part Gallery** node. The new Web Part node type displays information in the **Properties** window about the Web Part that it represents. The node type also includes a custom shortcut menu item that you can use as a starting point for performing other tasks that relate to the Web Part.  
+    -   Расширение определяет новый тип узла, представляющий экземпляр веб-части. Этот новый тип узла является основой для дочерних узлов в новом **коллекции веб-частей** узла. Новый тип узла веб-части показывает информацию в **свойства** окна веб-части, который он представляет. Тип узла также включает пользовательский контекстного меню в элемент, можно использовать в качестве отправной точки для выполнения других задач, связанных с веб-части.  
   
--   Creating two custom SharePoint commands that the the extension assembly calls. SharePoint commands are methods that can be called by extension assemblies to use APIs in the server object model for SharePoint. In this walkthrough, you create commands that retrieve Web Part information from the local SharePoint site on the development computer. For more information, see [Calling into the SharePoint Object Models](../sharepoint/calling-into-the-sharepoint-object-models.md).  
+-   Создание двух пользовательских команд SharePoint, который вызывает сборку расширения. Команды SharePoint, методы, которые могут быть вызваны сборок расширения для использования API-интерфейсы в серверной объектной модели SharePoint. В этом пошаговом руководстве создается команд, которые извлекают данные о веб-части из локального сайта SharePoint на компьютере разработчика. Дополнительные сведения см. в разделе [вызова объектной модели SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   
--   Building a Visual Studio Extension (VSIX) package to deploy the extension.  
+-   Построение пакета расширения Visual Studio (VSIX) для развертывания расширения.  
   
--   Debugging and testing the extension.  
+-   Отладка и тестирование расширения.  
   
 > [!NOTE]  
->  For an alternate version of this walkthrough that uses the client object model for SharePoint instead of its server object model, see [Walkthrough: Calling into the SharePoint Client Object Model in a Server Explorer Extension](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
+>  Альтернативную версию данного пошагового руководства, использующего объектную модель клиента для SharePoint вместо его серверную объектную модель, в разделе [Пошаговое руководство: вызов клиентской объектной модели SharePoint в расширении обозревателя серверов](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components on the development computer to complete this walkthrough:  
+## <a name="prerequisites"></a>Предварительные требования  
+ Необходимы следующие компоненты на компьютере разработчика для выполнения данного пошагового руководства.  
   
--   Supported editions of Windows, SharePoint and Visual Studio. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Поддерживаемые версии Windows, SharePoint и Visual Studio. Дополнительные сведения см. в разделе [требования к разработке решений SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   The Visual Studio SDK. This walkthrough uses the **VSIX Project** template in the SDK to create a VSIX package to deploy the project item. For more information, see [Extending the SharePoint Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+-   Visual Studio SDK. В этом пошаговом руководстве используется **проект VSIX** шаблона в пакете SDK для создания пакета VSIX для развертывания элемента проекта. Дополнительные сведения см. в разделе [расширение инструментов SharePoint в Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Knowledge of the following concepts is helpful, but not required, to complete the walkthrough:  
+ Изучением приведенных ниже концепций будет полезно, хотя и не требуется для выполнения данного пошагового руководства.  
   
--   Using the server object model for SharePoint. For more information, see [Using the SharePoint Foundation Server-Side Object Model](http://go.microsoft.com/fwlink/?LinkId=177796).  
+-   Использование серверной объектной модели для SharePoint. Дополнительные сведения см. в разделе [с помощью объектной модели SharePoint Foundation серверные](http://go.microsoft.com/fwlink/?LinkId=177796).  
   
--   Web Parts in SharePoint solutions. For more information, see [Web Parts Overview](http://go.microsoft.com/fwlink/?LinkId=177803).  
+-   Веб-части в решениях SharePoint. Дополнительные сведения см. в разделе [Общие сведения о частях Web](http://go.microsoft.com/fwlink/?LinkId=177803).  
   
-## <a name="creating-the-projects"></a>Creating the Projects  
- To complete this walkthrough, you must create three projects:  
+## <a name="creating-the-projects"></a>Создание проектов  
+ Для выполнения данного пошагового руководства, необходимо создать три проекта:  
   
--   A VSIX project to create the VSIX package to deploy the extension.  
+-   Чтобы создать пакет VSIX для развертывания расширения проекта VSIX.  
   
--   A class library project that implements the extension. This project must target the .NET Framework 4.5.  
+-   Проект библиотеки классов, которая реализует расширение. Этот проект должны предназначаться для платформы .NET Framework 4.5.  
   
--   A class library project that defines the custom SharePoint commands. This project must target the.NET Framework 3.5.  
+-   Проект библиотеки классов, определяющий пользовательские команды SharePoint. Этот проект должен использовать.NET Framework 3.5.  
   
- Start the walkthrough by creating the projects.  
+ Пошаговое руководство начинается с создания проектов.  
   
-#### <a name="to-create-the-vsix-project"></a>To create the VSIX project  
+#### <a name="to-create-the-vsix-project"></a>Создание проекта VSIX  
   
-1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Запустите [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  On the menu bar, choose **File**, **New**, **Project**.  
+2.  В строке меню выберите **Файл**, **Создать**, **Проект**.  
   
-3.  In the  **New Project** dialog box, expand the **Visual C#** or **Visual Basic** nodes, and then choose the **Extensibility** node.  
-  
-    > [!NOTE]  
-    >  The **Extensibility** node is available only if you install the Visual Studio SDK. For more information, see the prerequisites section earlier in this topic.  
-  
-4.  At the top of the dialog box, choose **.NET Framework 4.5** in the list of versions of the .NET Framework.  
-  
-5.  Choose the **VSIX Project** template, name the project **WebPartNode**, and then choose the **OK** button.  
-  
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **WebPartNode** project to **Solution Explorer**.  
-  
-#### <a name="to-create-the-extension-project"></a>To create the extension project  
-  
-1.  In **Solution Explorer**, open the shortcut menu for the solution node, choose **Add**, and then choose **New Project**.  
+3.  В **новый проект** диалогового окна разверните **Visual C#** или **Visual Basic** узлов и нажмите кнопку **расширяемости** узла.  
   
     > [!NOTE]  
-    >  In Visual Basic projects, the solution node appears in **Solution Explorer** only when the **Always show solution** check box is selected in the [NIB: General, Projects and Solutions, Options Dialog Box](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
+    >  **Расширяемости** узел доступен, только если установлен пакет SDK для Visual Studio. Дополнительные сведения см. в разделе предварительных требований этого раздела.  
   
-2.  In the **New Project** dialog box, expand the **Visual C#** node or **Visual Basic** node, and then the choose **Windows** node.  
+4.  В верхней части диалогового окна выберите **.NET Framework 4.5** в списке версий .NET Framework.  
   
-3.  At the top of the dialog box, choose **.NET Framework 4.5** in the list of versions of the .NET Framework.  
+5.  Выберите **проект VSIX** шаблона, имя проекта **WebPartNode**и нажмите кнопку **ОК** кнопки.  
   
-4.  In the list of project templates, choose **Class Library**, name the project **WebPartNodeExtension**, and then choose the **OK** button.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет **WebPartNode** проекта **обозревателе решений**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **WebPartNodeExtension** project to the solution and opens the default Class1 code file.  
+#### <a name="to-create-the-extension-project"></a>Создание проекта расширения  
   
-5.  Delete the Class1 code file from the project.  
+1.  В **обозреватель решений**откройте контекстное меню узла решения, выберите **добавить**, а затем выберите **новый проект**.  
   
-#### <a name="to-create-the-sharepoint-commands-project"></a>To create the SharePoint commands project  
+2.  В **новый проект** диалогового окна разверните **Visual C#** узел или **Visual Basic** узел, а затем нажмите **Windows** узла.  
   
-1.  In **Solution Explorer**, open the shortcut menu for the solution node, choose **Add**, and then choose **New Project**.  
+3.  В верхней части диалогового окна выберите **.NET Framework 4.5** в списке версий .NET Framework.  
   
-    > [!NOTE]  
-    >  In Visual Basic projects, the solution node appears in **Solution Explorer** only when the **Always show solution** check box is selected in the [NIB: General, Projects and Solutions, Options Dialog Box](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
+4.  В списке шаблонов проектов выберите **библиотеки классов**, присвойте проекту имя **WebPartNodeExtension**, а затем выберите **ОК** кнопки.  
   
-2.  In the  **New Project** dialog box, expand the **Visual C#** node or **Visual Basic** node, and then choose the **Windows** node.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет **WebPartNodeExtension** в решение проект и открывает файл кода по умолчанию Class1.  
   
-3.  At the top of the dialog box, choose **.NET Framework 3.5** in the list of versions of the .NET Framework.  
+5.  Удалите файл Class1 код из проекта.  
+  
+#### <a name="to-create-the-sharepoint-commands-project"></a>Чтобы создать проект команды SharePoint  
+  
+1.  В **обозреватель решений**откройте контекстное меню узла решения, выберите **добавить**, а затем выберите **новый проект**.  
+  
+2.  В **новый проект** диалогового окна разверните **Visual C#** узел или **Visual Basic** узел и выберите **Windows** узла.  
+  
+3.  В верхней части диалогового окна выберите **.NET Framework 3.5** в списке версий .NET Framework.  
   
 4.  
   
-5.  In the list of project templates, choose **Class Library**, name the project **WebPartCommands**, and then choose the **OK** button.  
+5.  В списке шаблонов проектов выберите **библиотеки классов**, присвойте проекту имя **WebPartCommands**, а затем выберите **ОК** кнопки.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **WebPartCommands** project to the solution and opens the default Class1 code file.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет **WebPartCommands** в решение проект и открывает файл кода по умолчанию Class1.  
   
-6.  Delete the Class1 code file from the project.  
+6.  Удалите файл Class1 код из проекта.  
   
-## <a name="configuring-the-projects"></a>Configuring the Projects  
- Before you write code to create the extension, you must add code files and assembly references, and configure the project settings.  
+## <a name="configuring-the-projects"></a>Настройка проектов  
+ Перед написанием кода для создания расширения необходимо добавить файлы кода и ссылок на сборки и настроить параметры проекта.  
   
-#### <a name="to-configure-the-webpartnodeextension-project"></a>To configure the WebPartNodeExtension project  
+#### <a name="to-configure-the-webpartnodeextension-project"></a>Настройка проекта WebPartNodeExtension  
   
-1.  In the WebPartNodeExtension project, add four code files that have the following names:  
+1.  Добавьте в проект WebPartNodeExtension, четырех файлов кода, которые имеют следующие имена:  
   
     -   SiteNodeExtension  
   
@@ -141,248 +132,253 @@ ms.lasthandoff: 08/30/2017
   
     -   WebPartCommandIds  
   
-2.  Open the shortcut menu for the **WebPartNodeExtension** project, and then choose **Add Reference**.  
+2.  Откройте контекстное меню для **WebPartNodeExtension** проекта, а затем выберите **добавить ссылку**.  
   
-3.  In the **Reference Manager - WebPartNodeExtension** dialog box, choose the **Framework** tab, and then select the check box for each of the following assemblies:  
+3.  В **диспетчер ссылок - WebPartNodeExtension** диалогового окна выберите **Framework** вкладку, а затем установите флажок для каждого из следующих сборок:  
   
     -   System.ComponentModel.Composition  
   
-    -   System.Windows.Forms  
+    -   System.Windows.Forms.  
   
-4.  Choose the **Extensions** tab, select the check box for the Microsoft.VisualStudio.SharePoint assembly, and then choose the **OK** button.  
+4.  Выберите **расширения** , установите флажок для сборки Microsoft.VisualStudio.SharePoint и нажмите кнопку **ОК** кнопки.  
   
-5.  In **Solution Explorer**, open the shortcut menu for the **WebPartNodeExtension** project node, and then choose **Properties**.  
+5.  В **обозревателе решений**, откройте контекстное меню для **WebPartNodeExtension** узел проекта, а затем выберите **свойства**.  
   
-     The **Project Designer** opens.  
+     Открывается **Конструктор проектов**.  
   
-6.  Choose the **Application** tab.  
+6.  Перейдите на вкладку **Приложение**.  
   
-7.  In the **Default namespace** box (C#) or **Root namespace** box ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]), enter **ServerExplorer.SharePointConnections.WebPartNode**.  
+7.  В **пространство имен по умолчанию** поле (C#) или **корневое пространство имен** поле ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]), введите **ServerExplorer.SharePointConnections.WebPartNode**.  
   
-#### <a name="to-configure-the-webpartcommands-project"></a>To configure the WebPartCommands project  
+#### <a name="to-configure-the-webpartcommands-project"></a>Чтобы настроить проект WebPartCommands  
   
-1.  In the WebPartCommands project, add a code file that's named WebPartCommands.  
+1.  Добавьте в проект WebPartCommands, файл кода, который называется WebPartCommands.  
   
-2.  In **Solution Explorer**, open the shortcut menu for the **WebPartCommands** project node, choose **Add**, and then choose **Existing Item**.  
+2.  В **обозревателе решений**, откройте контекстное меню для **WebPartCommands** узел проекта, выберите **добавить**, а затем выберите **существующий элемент**.  
   
-3.  In the **Add Existing Item** dialog box, browse to the folder that contains the code files for the WebPartNodeExtension project, and then choose the WebPartNodeInfo and WebPartCommandIds code files.  
+3.  В **Добавление существующего элемента** диалоговое окно, перейдите в папку, содержащую файлы кода для проекта WebPartNodeExtension и выберите WebPartNodeInfo и WebPartCommandIds файлы кода.  
   
-4.  Choose the arrow next to the **Add** button, and then choose **Add As Link** in the menu that appears.  
+4.  Щелкните стрелку рядом с **добавить** , а затем кнопку **ссылку Добавить** в появившемся меню.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the code files to the WebPartCommands project as links. As a result, the code files are located in the WebPartNodeExtension project, but the code in the files are also compiled in the WebPartCommands project.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Добавляет файлы кода в проект WebPartCommands как ссылки. В результате файлы кода находятся в проекте WebPartNodeExtension, но код в файлы также компилируются в проекте WebPartCommands.  
   
-5.  Open the shortcut menu for the **WebPartCommands** project again, and choose **Add Reference**.  
+5.  Откройте контекстное меню для **WebPartCommands** проект еще раз и кнопку **добавить ссылку**.  
   
-6.  In the **Reference Manager - WebPartCommands** dialog box, choose the **Extensions** tab, select the check box for each of the following assemblies, and then choose the **OK** button:  
+6.  В **диспетчер ссылок - WebPartCommands** диалогового окна выберите **расширения** , установите флажок для каждого из следующих сборок и нажмите кнопку **ОК** кнопки:  
   
     -   Microsoft.SharePoint  
   
     -   Microsoft.VisualStudio.SharePoint.Commands  
   
-7.  In **Solution Explorer**, open the shortcut menu for the **WebPartCommands** project again, and then choose **Properties**.  
+7.  В **обозревателе решений**, откройте контекстное меню для **WebPartCommands** проекта еще раз, а затем выберите **свойства**.  
   
-     The **Project Designer** opens.  
+     Открывается **Конструктор проектов**.  
   
-8.  Choose the **Application** tab.  
+8.  Перейдите на вкладку **Приложение**.  
   
-9. In the **Default namespace** box (C#) or **Root namespace** box ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]), enter **ServerExplorer.SharePointConnections.WebPartNode**.  
+9. В **пространство имен по умолчанию** поле (C#) или **корневое пространство имен** поле ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]), введите **ServerExplorer.SharePointConnections.WebPartNode**.  
   
-## <a name="creating-icons-for-the-new-nodes"></a>Creating Icons for the New Nodes  
- Create two icons for the **Server Explorer** extension: an icon for the new **Web Part Gallery** node, and another icon for each child Web Part node under the **Web Part Gallery** node. Later in this walkthrough, you will write code that associates these icons with the nodes.  
+## <a name="creating-icons-for-the-new-nodes"></a>Создание значков для новых узлов  
+ Создайте два значка для **обозревателя серверов** расширение: значок для нового **коллекции веб-частей** узла и еще один значок для каждого дочернего узла веб-части, в разделе **коллекции веб-частей** узел. Далее в этом пошаговом руководстве будет написан код, связывающий эти значки с узлами.  
   
-#### <a name="to-create-icons-for-the-nodes"></a>To create icons for the nodes  
+#### <a name="to-create-icons-for-the-nodes"></a>Создание значков для узлов  
   
-1.  In **Solution Explorer**, open the shortcut menu for the **WebPartNodeExtension** project, and then choose **Properties**.  
+1.  В **обозревателе решений**, откройте контекстное меню для **WebPartNodeExtension** проекта, а затем выберите **свойства**.  
   
-2.  The **Project Designer** opens.  
+2.  Открывается **Конструктор проектов**.  
   
-3.  Choose the **Resources** tab, and then choose the **This project does not contain a default resources file. Click here to create one** link.  
+3.  Выберите **ресурсов** , а затем выберите **этот проект не содержит файл ресурсов по умолчанию. Щелкните здесь, чтобы создать его** ссылку.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] creates a resource file and opens it in the designer.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Создает файл ресурсов и открывает его в конструкторе.  
   
-4.  At the top of the designer, choose the arrow next to the **Add Resource** menu command, and then choose **Add New Icon** in the menu that appears.  
+4.  В верхней части конструктора, щелкните стрелку рядом с **добавить ресурс** меню команды, а затем выберите **добавить новый значок** в появившемся меню.  
   
-5.  In the **Add New Resource** dialog box, name the new icon **WebPartsNode**, and then choose the **Add** button.  
+5.  В **добавить новый ресурс** диалоговом имя нового значка **WebPartsNode**и нажмите кнопку **добавить** кнопки.  
   
-     The new icon opens in the **Image Editor**.  
+     Значок «Создать» открывается в **редактора изображений**.  
   
-6.  Edit the 16x16 version of the icon so that it has a design that you can easily recognize.  
+6.  Измените версию 16 x 16 значка, чтобы он имеет вид, который вы легко узнаете.  
   
-7.  Open the shortcut menu for the 32x32 version of the icon, and then choose **Delete Image Type**.  
+7.  Откройте контекстное меню для значка версии 32 x 32, а затем выберите **удалить тип изображения**.  
   
-8.  Repeat steps 5 through 8 to add a second icon to the project resources, and name this icon **WebPart**.  
+8.  Повторите шаги с 5 по 8, чтобы добавить второй значок в ресурсы проекта и назовите этот значок **веб-части**.  
   
-9. In **Solution Explorer**, under the **Resources** folder for the **WebPartNodeExtension** project, open the shortcut menu for **WebPartsNode.ico**.  
+9. В **обозревателе решений**в разделе **ресурсов** папку для **WebPartNodeExtension** проекта, откройте контекстное меню для **WebPartsNode.ico**.  
   
-10. In the **Properties** window, choose the arrow next to **Build Action**, and then choose **Embedded Resource** on the menu that appears.  
+10. В **свойства** окно, щелкните стрелку рядом с **действие при построении**и нажмите кнопку **внедренный ресурс** в появившемся меню.  
   
-11. Repeat the last two steps for **WebPart.ico**.  
+11. Повторите последние два шага для **значка WebPart.ico**.  
   
-## <a name="adding-the-web-part-gallery-node-to-server-explorer"></a>Adding the Web Part Gallery Node to Server Explorer  
- Create a class that adds the new **Web Part Gallery** node to each SharePoint site node. To add the new node, the class implements the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> interface. Implement this interface whenever you want to extend the behavior of an existing node in **Server Explorer**, such as adding a child node to a node.  
+## <a name="adding-the-web-part-gallery-node-to-server-explorer"></a>Добавление узла коллекции веб-частей в обозреватель серверов  
+ Создайте класс, который добавляет новый **коллекции веб-частей** узла к каждому узлу с сайта SharePoint. Для добавления нового узла класс реализует <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> интерфейса. Реализуйте этот интерфейс, каждый раз, когда требуется расширить поведение существующий узел в **обозревателя серверов**, таких как добавление дочернего узла на узел.  
   
-#### <a name="to-add-the-web-part-gallery-node-to-server-explorer"></a>To add the Web Part Gallery node to Server Explorer  
+#### <a name="to-add-the-web-part-gallery-node-to-server-explorer"></a>Добавление узла коллекции веб-частей в обозреватель серверов  
   
-1.  In the WebPartNodeExtension project, open the SiteNodeExtension code file, and then paste the following code into it.  
+1.  В проекте WebPartNodeExtension откройте файл кода SiteNodeExtension и вставьте в него следующий код.  
   
     > [!NOTE]  
-    >  After you add this code, the project will have some compile errors, but they'll go away when you add code in later steps.  
+    >  Добавьте следующий код, проект будет содержать ошибки компиляции, но они будут исчезнуть при добавлении кода в последующих шагах.  
   
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs#1)]  [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]  
+     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs#1)]
+     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]  
   
-## <a name="defining-a-node-type-that-represents-a-web-part"></a>Defining a Node Type that Represents a Web Part  
- Create a class that defines a new type of node that represents a Web Part. Visual Studio uses this new node type to display child nodes under the **Web Part Gallery** node. Each child node represents a single Web Part on the SharePoint site.  
+## <a name="defining-a-node-type-that-represents-a-web-part"></a>Определение типа узла, представляющий веб-части  
+ Создайте класс, который определяет новый тип узла, представляющий веб-часть. Visual Studio использует этот новый тип узла для отображения дочерних узлов в **коллекции веб-частей** узла. Каждый дочерний узел представляет одну веб-часть на сайте SharePoint.  
   
- To define the new node type, the class implements the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> interface. Implement this interface whenever you want to define a new type of node in **Server Explorer**.  
+ Для определения нового типа узлов, этот класс реализует <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> интерфейса. Реализуйте этот интерфейс, каждый раз, когда требуется определить новый тип узла в **обозревателя серверов**.  
   
-#### <a name="to-define-the-web-part-node-type"></a>To define the Web Part node type  
+#### <a name="to-define-the-web-part-node-type"></a>Чтобы определить тип узла веб-части  
   
-1.  In the WebPartNodeExtension project, open the WebPartNodeTypeProvder code file, and then paste the following code into it.  
+1.  В проекте WebPartNodeExtension откройте файл кода WebPartNodeTypeProvder и вставьте в него следующий код.  
   
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]  [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#2](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodetypeprovider.cs#2)]  
+     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]
+     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#2](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodetypeprovider.cs#2)]  
   
-## <a name="defining-the-web-part-data-class"></a>Defining the Web Part Data Class  
- Define a class that contains data about a single Web Part on the SharePoint site. Later in this walkthrough, you will create a custom SharePoint command that retrieves data about each Web Part on the site and then assigns the data to instances of this class.  
+## <a name="defining-the-web-part-data-class"></a>Определение класса данных части Web  
+ Определите класс, содержащий данные об одной веб-части на сайте SharePoint. Далее в этом пошаговом руководстве вы создадите настраиваемую команду SharePoint, который получает данные о каждой веб-части на узле, а затем назначает данные экземпляры этого класса.  
   
-#### <a name="to-define-the-web-part-data-class"></a>To define the Web Part data class  
+#### <a name="to-define-the-web-part-data-class"></a>Определение класса данных веб-части  
   
-1.  In the WebPartNodeExtension project, open the WebPartNodeInfo code file, and then paste the following code into it.  
+1.  В проекте WebPartNodeExtension откройте файл кода WebPartNodeInfo и вставьте в него следующий код.  
   
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#3](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodeinfo.vb#3)]  [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#3](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodeinfo.cs#3)]  
+     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#3](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodeinfo.vb#3)]
+     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#3](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodeinfo.cs#3)]  
   
-## <a name="defining-the-ids-for-the-sharepoint-command"></a>Defining the IDs for the SharePoint Command  
- Define several strings that identify the custom SharePoint commands. You will implement these commands later in this walkthrough.  
+## <a name="defining-the-ids-for-the-sharepoint-command"></a>Определение идентификаторов для команды SharePoint  
+ Определите несколько строк, которые определяют пользовательские команды SharePoint. Эти команды будут реализованы далее в этом пошаговом руководстве.  
   
-#### <a name="to-define-the-command-ids"></a>To define the command IDs  
+#### <a name="to-define-the-command-ids"></a>Для определения идентификаторов команд  
   
-1.  In the WebPartNodeExtension project, open the WebPartCommandIds code file, and then paste the following code into it.  
+1.  В проекте WebPartNodeExtension откройте файл кода WebPartCommandIds и вставьте в него следующий код.  
   
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartcommandids.cs#4)]  [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartcommandids.vb#4)]  
+     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartcommandids.cs#4)]
+     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartcommandids.vb#4)]  
   
-## <a name="creating-the-custom-sharepoint-commands"></a>Creating the Custom SharePoint Commands  
- Create custom commands that call into the server object model for SharePoint to retrieve data about the Web Parts on the SharePoint site. Each command is a method that has the <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> applied to it.  
+## <a name="creating-the-custom-sharepoint-commands"></a>Создание команд пользовательские SharePoint  
+ Создание пользовательских команд, которые вызывают серверную объектную модель для SharePoint, чтобы получить данные о веб-частей на сайте SharePoint. Каждая команда является метод, имеющий <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> применяемый к нему.  
   
-#### <a name="to-define-the-sharepoint-commands"></a>To define the SharePoint commands  
+#### <a name="to-define-the-sharepoint-commands"></a>Для определения команды SharePoint  
   
-1.  In the WebPartCommands project, open the WebPartCommands code file, and then paste the following code into it.  
+1.  В проекте WebPartCommands откройте файл кода WebPartCommands и вставьте в него следующий код.  
   
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/CSharp/WebPartNode/WebPartCommands/WebPartCommands.cs#6)]  [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartcommands/webpartcommands.vb#6)]  
+     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/CSharp/WebPartNode/WebPartCommands/WebPartCommands.cs#6)]
+     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartcommands/webpartcommands.vb#6)]  
   
-## <a name="checkpoint"></a>Checkpoint  
- At this point in the walkthrough, all the code for the **Web Part Gallery** node and the SharePoint commands are now in the projects. Build the solution to make sure that both projects compile without errors.  
+## <a name="checkpoint"></a>Контрольная точка  
+ На этом этапе в пошаговом руководстве, весь код **коллекции веб-частей** узла и команд SharePoint теперь находятся в проекты. Постройте решение, чтобы убедиться в том, что оба проекта компилируется без ошибок.  
   
-#### <a name="to-build-the-solution"></a>To build the solution  
+#### <a name="to-build-the-solution"></a>Построение решения  
   
-1.  On the menu bar, choose **Build**, **Build Solution**.  
+1.  В строке меню последовательно выберите **Сборка**и **Собрать решение**.  
   
     > [!WARNING]  
-    >  At this point, the WebPartNode project may have a build error because the VSIX manifest file doesn't have a value for Author. This error will go away when you add a value in later steps.  
+    >  На этом этапе проекта WebPartNode могут иметь ошибка сборки, так как значение не указано в файле манифеста VSIX для автора. Эта ошибка исчезнет при добавлении значения в последующих шагах.  
   
-## <a name="creating-a-vsix-package-to-deploy-the-extension"></a>Creating a VSIX Package to Deploy the Extension  
- To deploy the extension, use the VSIX project in your solution to create a VSIX package. First, configure the VSIX package by modifying the source.extension.vsixmanifest file in the VSIX project. Then, create the VSIX package by building the solution.  
+## <a name="creating-a-vsix-package-to-deploy-the-extension"></a>Создание пакета VSIX для развертывания расширения  
+ Для развертывания расширения, используйте проект VSIX в решении для создания пакета VSIX. Во-первых настройте пакет VSIX, изменив файл source.extension.vsixmanifest в проекте VSIX. Затем создайте пакет VSIX с построением решения.  
   
-#### <a name="to-configure-the-vsix-package"></a>To configure the VSIX package  
+#### <a name="to-configure-the-vsix-package"></a>Настройка пакета VSIX  
   
-1.  In **Solution Explorer**, under the WebPartNode project, open the **source.extension.vsixmanifest** file in the manifest editor.  
+1.  В **обозревателе решений**, в узле проекта WebPartNode откройте **source.extension.vsixmanifest** файл в редакторе манифестов.  
   
-     The source.extension.vsixmanifest file is the basis for the extension.vsixmanifest file that all VSIX packages require. For more information about this file, see [VSIX Extension Schema 1.0 Reference](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Файл source.extension.vsixmanifest является основой для файл extension.vsixmanifest, требующий все пакеты VSIX. Дополнительные сведения об этом файле см. в разделе [ссылки 1.0 схемы расширения VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
-2.  In the **Product Name** box, enter **Web Part Gallery Node for Server Explorer**.  
+2.  В **название продукта** введите **узел коллекции веб-частей для обозревателя серверов**.  
   
-3.  In the **Author** box, enter **Contoso**.  
+3.  В **автор** введите **Contoso**.  
   
-4.  In the **Description** box, enter **Adds a custom Web Part Gallery node to the SharePoint Connections node in Server Explorer. This extension uses a custom SharePoint command to call into the server object model.**  
+4.  В **описание** введите **добавляет пользовательский узел коллекции веб-частей узла подключений SharePoint в обозревателе сервера. Это расширение использует настраиваемую команду SharePoint для вызова объектной модели сервера.**  
   
-5.  Choose the **Assets** tab of the editor, and then choose the **New** button.  
+5.  Выберите **активы** вкладка редактора и выберите **New** кнопки.  
   
-     The **Add New Asset** dialog box appears.  
+     **Добавить новый актив** откроется диалоговое окно.  
   
-6.  In the **Type** list, choose **Microsoft.VisualStudio.MefComponent**.  
-  
-    > [!NOTE]  
-    >  This value corresponds to the `MefComponent` element in the extension.vsixmanifest file. This element specifies the name of an extension assembly in the VSIX package. For more information, see [NIB: MEFComponent Element (VSX Schema)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
-  
-7.  In the  **Source** list, choose **A project in current solution**.  
-  
-8.  In the **Project** list, choose **WebPartNodeExtension** and then choose the **OK** button.  
-  
-9. In the manifest editor, choose the **New** button again.  
-  
-     The **Add New Asset** dialog box appears.  
-  
-10. In the **Type** box, enter **SharePoint.Commands.v4**.  
+6.  В **тип** выберите **Microsoft.VisualStudio.MefComponent**.  
   
     > [!NOTE]  
-    >  This element specifies a custom extension that you want to include in the Visual Studio extension. For more information, see [Asset Element (VSX Schema)](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737).  
+    >  Это значение соответствует `MefComponent` элемент в файл extension.vsixmanifest. Этот элемент задает имя сборки расширения в пакете VSIX. Дополнительные сведения см. в разделе [MEFComponent элемент (Схема VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
   
-11. In the **Source** list, choose the **A project in current solution** list item.  
+7.  В **источника** выберите **проект в текущем решении**.  
   
-12. In the **Project** list, choose **WebPartCommands**, and then choose the **OK** button.  
+8.  В **проекта** выберите **WebPartNodeExtension** и выберите **ОК** кнопки.  
   
-13. On the menu bar, choose **Build**, **Build Solution**, and then make sure that the solution compiles without errors.  
+9. В редакторе манифеста выберите **New** еще раз.  
   
-14. Make sure that the build output folder for the WebPartNode project now contains the WebPartNode.vsix file.  
+     **Добавить новый актив** откроется диалоговое окно.  
   
-     By default, the build output folder is the ..\bin\Debug folder under the folder that contains your project file.  
+10. В **тип** введите **SharePoint.Commands.v4**.  
   
-## <a name="testing-the-extension"></a>Testing the Extension  
- You're now ready to test the new **Web Part Gallery** node in **Server Explorer**. First, start debugging the extension in an experimental instance of Visual Studio. Then, use the new **Web Parts** node in the experimental instance of [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+    > [!NOTE]  
+    >  Этот элемент задает пользовательский модуль, который требуется включить в расширение Visual Studio. Дополнительные сведения см. в разделе [активов элемент (Схема VSX)](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737).  
   
-#### <a name="to-start-debugging-the-extension"></a>To start debugging the extension  
+11. В **источника** выберите **проект в текущем решении** элемента списка.  
   
-1.  Restart [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] with administrative credentials, and then open the WebPartNode solution.  
+12. В **проекта** выберите **WebPartCommands**, а затем выберите **ОК** кнопки.  
   
-2.  In the WebPartNodeExtension project, open the SiteNodeExtension code file, and then add a breakpoint to the first line of code in the `NodeChildrenRequested` and `CreateWebPartNodes` methods.  
+13. В строке меню выберите **построения**, **построить решение**, а затем убедитесь, что решение компилируется без ошибок.  
   
-3.  Choose the F5 key to start debugging.  
+14. Убедитесь, что в выходную папку построения для проекта WebPartNode теперь содержит файл WebPartNode.vsix.  
   
-     Visual Studio installs the extension to %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Web Part Gallery Node Extension for Server Explorer\1.0 and starts an experimental instance of Visual Studio. You will test the project item in this instance of Visual Studio.  
+     По умолчанию является выходной папке сборки... папку \bin\debug в папке, содержащей файл проекта.  
   
-#### <a name="to-test-the-extension"></a>To test the extension  
+## <a name="testing-the-extension"></a>Тестирование расширения  
+ Теперь вы готовы для тестирования нового **коллекции веб-частей** узел в **обозревателя серверов**. Начните отладку расширения в экспериментальном экземпляре Visual Studio. Затем с помощью нового **веб-части** узел в экспериментальном экземпляре [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-1.  In the experimental instance of [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], on the menu bar, choose **View**, **Server Explorer**.  
+#### <a name="to-start-debugging-the-extension"></a>Чтобы начать отладку расширения  
   
-2.  Perform the following steps if the SharePoint site that you want to use for testing doesn't appear under the **SharePoint Connections** node in **Server Explorer**:  
+1.  Перезапустите [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] с учетными данными администратора и откройте решение WebPartNode.  
   
-    1.  In **Server Explorer**, open the shortcut menu for **SharePoint Connections**, and then choose **Add Connection**.  
+2.  В проекте WebPartNodeExtension, откройте файл кода SiteNodeExtension и затем добавьте точку останова в первой строке кода в `NodeChildrenRequested` и `CreateWebPartNodes` методы.  
   
-    2.  In the **Add SharePoint Connection** dialog box, enter the URL for the SharePoint site to which you want to connect, and then choose the **OK** button.  
+3.  Нажмите клавишу F5, чтобы начать отладку.  
   
-         To specify the SharePoint site on your development computer, enter **http://localhost**.  
+     Visual Studio устанавливает расширение для %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Web расширение узла коллекции частей для Explorer\1.0 сервера и запуске экспериментального экземпляра Visual Studio. В этом экземпляре Visual Studio будет тестировать элемент проекта.  
   
-3.  Expand the site connection node (which displays the URL of your site), and then expand a child site node (for example, **Team Site**).  
+#### <a name="to-test-the-extension"></a>Чтобы проверить расширение  
   
-4.  Verify that the code in the other instance of [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] stops on the breakpoint that you set earlier in the `NodeChildrenRequested` method, and then choose F5 to continue to debug the project.  
+1.  В экспериментальном экземпляре [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], в строке меню выберите **представление**, **обозревателя серверов**.  
   
-5.  In the experimental instance of Visual Studio, verify that a new node named **Web Part Gallery** appears under the top-level site node, and then expand the **Web Part Gallery** node.  
+2.  Выполните следующие действия, если сайт SharePoint, который будет использоваться для тестирования не отображается в списке **подключения SharePoint** узел в **обозревателя серверов**:  
   
-6.  Verify that the code in the other instance of Visual Studio stops on the breakpoint that you set earlier in the `CreateWebPartNodes` method, and then choose the F5 key to continue to debug the project.  
+    1.  В **обозревателя серверов**, откройте контекстное меню для **подключения SharePoint**, а затем выберите **добавить подключение**.  
   
-7.  In the experimental instance of Visual Studio, verify that all Web Parts on the connected site appear under the **Web Part Gallery** node in **Server Explorer**.  
+    2.  В **Добавление подключения SharePoint** диалоговом окне введите URL-адрес сайта SharePoint, к которому требуется подключиться, а затем выберите **ОК** кнопки.  
   
-8.  In **Server Explorer**, open the shortcut menu for one of the Web Parts, and then choose **Properties**.  
+         Чтобы указать сайт SharePoint на компьютере разработчика, введите **http://localhost**.  
   
-9. In the instance of [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] that you're debugging, verify that details about the Web Part appear in the **Properties** window.  
+3.  Разверните узел подключения (в котором отображается URL-адрес вашего сайта) и разверните дочерний узел сайта (например, **узла группы**).  
   
-## <a name="uninstalling-the-extension-from-visual-studio"></a>Uninstalling the Extension from Visual Studio  
- After you finish testing the extension, uninstall the extension from Visual Studio.  
+4.  Убедитесь, что код в другом экземпляре [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] останавливается в точке останова, заданной ранее в `NodeChildrenRequested` метода, а затем нажмите F5, чтобы продолжить отладку проекта.  
   
-#### <a name="to-uninstall-the-extension"></a>To uninstall the extension  
+5.  В экспериментальном экземпляре Visual Studio, убедитесь, что новый узел с именем **коллекции веб-частей** появится в узле сайта верхнего уровня, а затем разверните **коллекции веб-частей** узла.  
   
-1.  In the experimental instance of [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], on the menu bar, choose **Tools**, **Extensions and Updates**.  
+6.  Убедитесь, что код в другом экземпляре Visual Studio прервано на точке останова, заданной ранее в `CreateWebPartNodes` метода, а затем нажмите клавишу F5, чтобы продолжить отладку проекта.  
   
-     The **Extensions and Updates** dialog box opens.  
+7.  В экспериментальном экземпляре Visual Studio, убедитесь, что все веб-части на подключенном сайте отображаются под **коллекции веб-частей** узел в **обозревателя серверов**.  
   
-2.  In the list of extensions, choose **Web Part Gallery Node Extension for Server Explorer**, and then choose the **Uninstall** button.  
+8.  В **обозревателя серверов**, откройте контекстное меню для одного из веб-части и выберите **свойства**.  
   
-3.  In the dialog box that appears, choose the **Yes** button to confirm that you want to uninstall the extension, and then choose the **Restart Now** button to complete the uninstallation.  
+9. В экземпляре [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] выполняется отладка, убедитесь, что отображаются сведения о веб-часть в **свойства** окна.  
   
-4.  Close both instances of Visual Studio (the experimental instance and the instance of Visual Studio in which the WebPartNode solution is open).  
+## <a name="uninstalling-the-extension-from-visual-studio"></a>При удалении расширения из Visual Studio  
+ После завершения тестирования расширения, удалите расширение из Visual Studio.  
   
-## <a name="see-also"></a>See Also  
- [Extending the SharePoint Connections Node in Server Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Walkthrough: Calling into the SharePoint Client Object Model in a Server Explorer Extension](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
- [Image Editor for Icons](/cpp/windows/image-editor-for-icons)   
- [Creating an Icon or Other Image &#40;Image Editor for Icons&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+#### <a name="to-uninstall-the-extension"></a>Удаление расширения  
+  
+1.  В экспериментальном экземпляре [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], в строке меню выберите **средства**, **расширения и обновления**.  
+  
+     Появится диалоговое окно **Расширения и обновления**.  
+  
+2.  В списке расширений выберите **расширение узла коллекции веб-частей для обозревателя серверов**и нажмите кнопку **удаления** кнопки.  
+  
+3.  В появившемся диалоговом окне, выберите **Да** кнопку, чтобы убедиться, что вы хотите удалить расширение, а затем выберите **Перезагрузить сейчас** кнопку, чтобы завершить удаление.  
+  
+4.  Закройте оба экземпляра Visual Studio (экспериментальный экземпляр и экземпляр Visual Studio, в котором открыт решение WebPartNode).  
+  
+## <a name="see-also"></a>См. также  
+ [Расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
+ [Пошаговое руководство: Вызов клиентской объектной модели SharePoint в расширении обозревателя серверов](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
+ [Редактор изображений для значков](/cpp/windows/image-editor-for-icons)   
+ [Создание значка или другого изображения & #40; редактор изображений для значков & #41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

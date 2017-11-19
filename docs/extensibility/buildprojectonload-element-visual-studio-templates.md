@@ -1,55 +1,61 @@
 ---
-title: "BuildProjectOnload - элемент (шаблоны Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Buildprojectonload-элемент (шаблоны Visual Studio) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: b07d3074-0fc9-45e1-baf5-da6bd4f3f1c0
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 362dd868e6f9c273e9495295a453d8da4e2183cd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# BuildProjectOnload - элемент (шаблоны Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Проекты построений только новые при создании и добавления их в решение.  Все решение не создается.  
+# <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload - элемент (шаблоны Visual Studio)
+Создает только новые проекты можно создавать и добавлять их в решение. Всего решения не создается.  
   
-## Синтаксис  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<BuildProjectOnLoad >  
+  
+## <a name="syntax"></a>Синтаксис  
   
 ```vb  
 <BuildProjectOnLoad> true/false </BuildOnLoad>  
 ```  
   
-## Атрибуты и элементы  
- В следующих разделах описаны атрибуты, дочерние элементы и родительские элементы.  
+## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
-### Атрибуты  
+### <a name="attributes"></a>Атрибуты  
  Отсутствует.  
   
-### Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
   
-### Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
-|TemplateData|Классифицирует шаблон и определяет, как он отображается как в **Создать проект** и диалоговые окна **Добавление нового элемента**.|  
+|-------------|-----------------|  
+|TemplateData|Относит шаблон и определяет, как он выглядит в оба **новый проект** и **Добавление нового элемента** диалоговым окнам.|  
   
-## Текстовое значение  
+## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Текст должен иметь значение `true` или `false`, чтобы указать, следует ли выполнить построение только нового проекта при его, созданных из шаблона.  
+ Этот текст должен быть либо `true` или `false` для указания, следует ли создать только новый проект, когда он создается на основе шаблона.  
   
-## Заметки  
- Элемент `BuildProjectOnLoad` является необязательным.  Значение по умолчанию — `false`.  
+## <a name="remarks"></a>Примечания  
+ `BuildProjectOnLoad` — это необязательный элемент. Значение по умолчанию — `false`.  
   
-## Пример  
- В следующем примере демонстрируются метаданные для шаблона visual C\#.  
+## <a name="example"></a>Пример  
+ Следующий пример иллюстрирует метаданные для шаблона Visual C#.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -74,9 +80,8 @@ caps.handback.revision: 8
         </Project>  
     </TemplateContent>  
 </VSTemplate>  
-  
 ```  
   
-## См. также  
- [Создание пользовательских шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>См. также  
+ [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

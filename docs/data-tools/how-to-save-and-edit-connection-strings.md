@@ -1,5 +1,5 @@
 ---
-title: 'How to: Save and Edit Connection Strings | Microsoft Docs'
+title: "Как: Сохранить и продолжить изменение строк подключения | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,57 +7,56 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f8ef3a2c-029c-423b-9d9e-a4f1add4f640
-caps.latest.revision: 14
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 61e4ae70c3154c1b47ef5eb48ad3079d5602f59a
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 4a7482c269cd978d2c1848c896985b1194797e42
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="how-to-save-and-edit-connection-strings"></a>How to: Save and Edit Connection Strings
-Connection strings in Visual Studio applications can be saved in the application configuration file (also referred to as application settings), or hard-coded directly in your application. Saving connection strings in the application configuration file simplifies the task of maintaining your application. If the connection string needs to be changed, then you can update it in the application settings file (as opposed to having to change it in the source code and recompile the application).
+# <a name="how-to-save-and-edit-connection-strings"></a>Практическое руководство. Сохранение и изменение строк подключения
+Строки подключения в приложениях Visual Studio можно сохранить в файле конфигурации приложения (также называется параметрами приложения) или жестко непосредственно в приложении. Сохранение строк подключения в файле конфигурации приложения упрощает процесс обслуживания приложения. Если строку подключения необходимо изменить, вы можете обновить ее в файле параметров приложения (сравните это с ее изменением в исходном коде и повторной компиляцией приложения).
 
-Storing sensitive information (such as the password) within the connection string can affect the security of your application. Connection strings saved to the application configuration file are not encrypted or obfuscated, so it may be possible for someone to access the file and view its contents. Using Windows Integrated Security is a more secure way to control access to a database.
+Хранение конфиденциальных сведений (например, пароля) в строке подключения может повлиять на безопасность приложений. Строки подключения, сохраненные в файле конфигурации приложения, не шифруются и не скрываются, поэтому другой человек может получить доступ к файлу и просмотреть его содержимое. Использование встроенных средств безопасности Windows — более безопасный способ управления доступом к базе данных.
 
-If you do not choose to use Windows integrated security and your database requires a user name and password, you can omit them from the connection string, but your application will need to provide this information to successfully connect to the database. For example, you can create a dialog box that prompts the user for this information and dynamically builds the connection string at run time. Security can still be an issue if the information is intercepted on the way to the database. For more information, see [Protecting Connection Information](https://msdn.microsoft.com/library/89211k9b.aspx).
+Если вы решили не использовать встроенные средства безопасности Windows и ваша база данных требует имя пользователя и пароль, вы можете опустить их в строке подключения, однако ваше приложение должно предоставлять эти данные для успешного подключения к базе данных. Например, вы можете создать диалоговое окно, которое запрашивает эти сведения у пользователя и динамически формирует строку подключения во время выполнения. При этом все равно может возникнуть угроза безопасности, если эта информация будет перехвачена при передаче в базу данных. Дополнительные сведения см. в разделе [Защита сведений о подключении](/dotnet/framework/data/adonet/protecting-connection-information).
 
-## <a name="to-save-a-connection-string-from-within-the-data-wizards"></a>To save a connection string from within the data wizards
-Select the option to save the connection on the Save connection string to the application configuration file page.
+## <a name="to-save-a-connection-string-from-within-the-data-source-configuration-wizard"></a>Чтобы сохранить строку подключения в мастере настройки источника данных
+В **мастер настройки источника данных**, выберите параметр для сохранения подключения на сохранить строку подключения к странице файла конфигурации приложения.
 
-## <a name="to-save-a-connection-string-directly-into-application-settings"></a>To save a connection string directly into application settings
-- In Solution Explorer double-click the My Project icon (Visual Basic) or Properties icon (C#) to open the Project Designer.
-- Select the Settings tab.
-- Enter a Name for the connection string. Refer to this name when accessing the connection string in code.
-- Set the Type to (Connection string).
-- Leave the Scope set to Application.
-- Type your connection string into the Value field, or click the ellipses (...) button in the Value field to open the Connection Properties dialog box to build your connection string.
-## <a name="editing-connection-strings-stored-in-application-settings"></a>Editing Connection Strings Stored in Application Settings
-You can modify connection information that is saved in application settings by using the Project Designer.
-### <a name="to-edit-a-connection-string-stored-in-application-settings"></a>To edit a connection string stored in application settings
-- In Solution Explorer, double-click the My Project icon (Visual Basic) or Properties icon (Visual C# to open the Project Designer.
-- Select the Settings tab.
-- Locate the connection you want to edit and select the text in the Value box.
-- Edit the connection string in the Value box, or click the ellipses in the Value box to edit your connection with the Connection Properties dialog box.
-## <a name="editing-hard-coded-connection-strings-in-datasets"></a>Editing Hard-Coded Connection Strings in Datasets
-You can modify connection information that is saved in code by using the Creating and Editing Typed Datasets.
-### <a name="to-edit-a-connection-string-stored-in-a-dataset"></a>To edit a connection string stored in a Dataset
-- In Solution Explorer, double-click the dataset (.xsd file) with the connection you want to edit.
-- Select the TableAdapter or query with the connection you want to edit.
-- In the Properties window expand the DefaultConnection node.
-- To quickly modify the connection string, edit the ConnectionString property, or click the down arrow on the DefaultConnection property and choose New Connection.
+## <a name="to-save-a-connection-string-directly-into-application-settings"></a>Сохранение строки подключения прямо в параметрах приложения
+- В обозревателе решений дважды щелкните Мой проект (Visual Basic) или значок свойств (C#), чтобы открыть конструктор проектов.
+- Перейдите на вкладку Параметры.
+- Введите имя для строки подключения. Используйте ссылку на это имя при доступе к строке подключения в коде.
+- Установите тип (строка подключения).
+- Выходит за пределы области, задайте для приложения.
+- Введите строку подключения в соответствующее поле или нажмите кнопку с многоточием (...) в поле значение, чтобы открыть диалоговое окно свойств подключения для создания строки подключения.  
 
-## <a name="security"></a>Security
-Storing sensitive information (such as a password) within the connection string can affect the security of your application. Using Windows integrated security is a more secure way to control access to a database.
-For more information, see Securing Connection Strings and ADO.NET Secure Coding Guidelines.
+## <a name="editing-connection-strings-stored-in-application-settings"></a>Изменение строк подключения, сохраненной в параметрах приложения
+Можно изменить сведения о соединении, сохраненные в параметрах приложения с помощью конструктора проектов.  
+
+### <a name="to-edit-a-connection-string-stored-in-application-settings"></a>Порядок изменения строки подключения, сохраненной в параметрах приложения
+- В обозревателе решений дважды щелкните Мой проект (Visual Basic) или значок свойств (C#), чтобы открыть конструктор проектов.
+- Перейдите на вкладку Параметры.
+- Найдите подключение, которое требуется изменить и выделите текст в поле значение.
+- Измените строку подключения в поле значение или нажмите кнопку с многоточием (...) в поле "значение" для редактирования подключения с помощью диалогового окна Свойства подключения.  
+
+## <a name="editing-connection-strings-for-datasets"></a>Изменение строк подключения для наборов данных
+Можно изменить сведения о соединении для каждого адаптера таблицы в наборе данных.  
+
+### <a name="to-edit-a-connection-string-for-a-tableadapter-in-a-dataset"></a>Чтобы изменить строку соединения для адаптера таблицы в наборе данных
+- В обозревателе решений дважды щелкните набор данных (XSD-файл), имеющий подключение, которое требуется изменить.
+- Выберите TableAdapter или запрос, который имеет подключение, которое требуется изменить.
+- В окне «Свойства» разверните узел подключения.
+- Чтобы быстро изменить строку подключения, измените свойство ConnectionString или щелкните стрелку вниз на свойства соединения и выбрать новое соединение.
+
+## <a name="security"></a>Безопасность
+Хранение конфиденциальных сведений (например, пароля) в строке подключения может повлиять на безопасность приложений. Использование встроенных средств безопасности Windows — более безопасный способ управления доступом к базе данных.
+Дополнительные сведения см. в разделе [Защита сведений о подключении](/dotnet/framework/data/adonet/protecting-connection-information).
   
-## <a name="see-also"></a>See Also  
- [Visual Studio data tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+## <a name="see-also"></a>См. также
+[Добавление соединений](../data-tools/add-new-connections.md)

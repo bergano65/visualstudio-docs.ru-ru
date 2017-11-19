@@ -1,57 +1,56 @@
 ---
-title: "IDiaSession::symbolById | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSession::symbolById - метод"
+title: "IDiaSession::symbolById | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::symbolById method
 ms.assetid: 062e4b5a-9c4d-4703-88da-ec13102c2b66
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 70139b7bf3286e7c4527bd71cf78b4ba86aeac1e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::symbolById
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Получает символ его уникальным идентификатором.  
+# <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
+Возвращает символ, его уникальный идентификатор.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT symbolById (   
-   DWORD        id,  
-   IDiaSymbol** ppSymbol  
+```C++  
+HRESULT symbolById (   
+   DWORD        id,  
+   IDiaSymbol** ppSymbol  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `id`  
- \[in\] уникальный идентификатор.  
+ [in] Уникальный идентификатор.  
   
  `ppSymbol`  
- \[out\] возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объект, который представляет полученный символ.  
+ [out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) извлечь объект, представляющий символ.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Указанный идентификатор уникальное значение, используемое внутри пакета SDK для доступа к интерфейсу отладки, чтобы сделать все символы уникальным.  
+## <a name="remarks"></a>Примечания  
+ Указанный идентификатор — это уникальное значение, которые используются внутренним образом пакет SDK для чтобы сделать уникальным все символы.  
   
- Этот метод можно использовать, например, для получения символ, представляющий тип другого символа \(см. пример\).  
+ Этот метод может использоваться, например, для получения символ, представляющий тип символа другим (см. пример).  
   
-## Пример  
- Этот пример извлекает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) представления типа другого символа.  В этом примере показано, как использовать `symbolById` метод в сеансе.  Более простой способ вызова [IDiaSymbol::get\_type](../../debugger/debug-interface-access/idiasymbol-get-type.md) метод для извлечения символ типа напрямую.  
+## <a name="example"></a>Пример  
+ В этом примере извлекается [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) отражающее тип проверяемых другой символ. В этом примере показано, как использовать `symbolById` метода в сеансе. Более простой подход — вызов [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md) метод для извлечения символ типа напрямую.  
   
-```cpp#  
+```C++  
 IDiaSymbol *GetSymbolType(IDiaSymbol *pSymbol, IDiaSession *pSession)  
 {  
     IDiaSymbol *pTypeSymbol = NULL;  
@@ -65,7 +64,7 @@ IDiaSymbol *GetSymbolType(IDiaSymbol *pSymbol, IDiaSession *pSession)
 }  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get\_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)
+ [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)

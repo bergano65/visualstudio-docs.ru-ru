@@ -1,49 +1,50 @@
 ---
-title: "IDebugMemoryBytes2::GetSize | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMemoryBytes2::GetSize"
-helpviewer_keywords: 
-  - "Метод IDebugMemoryBytes2::GetSize"
-  - "GetSize - метод"
+title: "IDebugMemoryBytes2::GetSize | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugMemoryBytes2::GetSize
+helpviewer_keywords:
+- IDebugMemoryBytes2::GetSize method
+- GetSize method
 ms.assetid: dae64c5f-5b54-40c3-b32f-ec3b16c093f7
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9cf8a3fd147f4ed3a49e3220cd9e81075e04c2be
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugMemoryBytes2::GetSize
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Возвращает размер, в байтах, области памяти, представленной этим [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) объект.  
+# <a name="idebugmemorybytes2getsize"></a>IDebugMemoryBytes2::GetSize
+Получает размер памяти в байтах, представленный этим [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) объекта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetSize(   
-   UINT64* pqwSize  
+```cpp  
+HRESULT GetSize(   
+   UINT64* pqwSize  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetSize(  
-   out ulong pqwSize  
+   out ulong pqwSize  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pqwSize`  
- \[out\] возвращает размер, в байтах, области памяти.  
+ [out] Возвращает размер в байтах пространства памяти.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

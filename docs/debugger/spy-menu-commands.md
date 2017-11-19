@@ -1,41 +1,41 @@
 ---
-title: "Команды меню Spy | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Команды меню Spy"
+title: "Шпионские команды меню | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Spy menu commands
 ms.assetid: 802549be-dbd8-4df0-a18b-971900eaa769
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2d54477a809e891cbba30617a872bfbc22c62ce5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Команды меню Spy
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-В меню **Spy** представлены команды, необходимые для работы с окнами и представлениями в Spy\+\+.  
+# <a name="spy-menu-commands"></a>Команды меню Spy
+**Spy** предоставляет меню команд для работы с окнами и представлениями Spy ++.  
   
- **Окна**  
+ **Windows**  
  Открывает новое представление окон.  
   
  **Процессы**  
  Открывает новое представление процессов.  
   
  **Потоки**  
- Открывает новое представление потоков.  
+ Откроется представление "Потоки".  
   
- **Записывать сообщения**  
- Открывает новое представление сообщений и диалоговое окно [Параметры сообщения](../debugger/message-options-dialog-box.md) для представления.  
+ **Сообщения журнала**  
+ Открывает новое представление сообщений и [диалоговое окно "Параметры сообщения"](../debugger/message-options-dialog-box.md) для представления.  
   
  **Окно поиска**  
- Отображает диалоговое окно **Поиск окна** для выбора окна с помощью мыши.  
+ Отображает **Поиск окна** диалоговое окно используется для выбора окна с помощью мыши.  
   
- **Exit**  
- Закрывает служебную программу Spy\+\+.
+ **Выход**  
+ Закрывает программу Spy ++.

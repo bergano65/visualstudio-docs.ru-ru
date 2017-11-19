@@ -1,35 +1,36 @@
 ---
-title: "Практическое руководство. Настройка пакета решения SharePoint с помощью целевых объектов MSBuild"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "разработка приложений SharePoint в Visual Studio, пакеты"
+title: "Как: Настройка пакета решения SharePoint с помощью целевых объектов MSBuild | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords: SharePoint development in Visual Studio, packages
 ms.assetid: 7fa6a276-04c8-463e-be95-57c2c6240d76
-caps.latest.revision: 15
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 758cf3e62621c22f3f97dc62b70c745afb860b8a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Настройка пакета решения SharePoint с помощью целевых объектов MSBuild
-  С помощью целевых объектов MSBuild, управляемых командной строкой, можно настраивать способ создания пакетов SharePoint \(WSP\-файлов\).  Например, можно настроить свойства MSBuild, чтобы изменить промежуточный каталог пакета и группы элементов MSBuild с перечисляемыми файлами.  
+# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Практическое руководство. Настройка пакета решения SharePoint с помощью целевых объектов MSBuild
+  С помощью целевых объектов MSBuild, управляемых в командной строке, можно настраивать способ создания пакетов SharePoint (WSP-файлов) в Visual Studio. Например, можно настроить свойства MSBuild для изменения промежуточного каталога пакета и группы элементов MSBuild с перечисляемыми файлами.  
   
-## Настройка и выполнение целевых объектов MSBuild  
+## <a name="customizing-and-running-msbuild-targets"></a>Настройка и выполнение целевых объектов MSBuild  
  При настройке целевых объектов BeforeLayout и AfterLayout можно выполнять задачи до компоновки пакета, например добавлять, удалять или изменять файлы, которые будут упакованы.  
   
-#### Настройка целевого объекта BeforeLayout  
+#### <a name="to-customize-the-beforelayout-target"></a>Для настройки целевой BeforeLayout  
   
 1.  Откройте текстовый редактор, например Блокнот, и добавьте следующий код.  
   
@@ -45,9 +46,9 @@ caps.handback.revision: 14
   
 2.  Назовите файл **CustomLayout.SharePoint.targets**, а затем сохраните его в папке проекта SharePoint.  
   
-3.  Откройте проект, откройте его контекстное меню и выберите пункт **Выгрузить проект**.  
+3.  Откройте проект, откройте ее контекстное меню и выберите **выгрузить проект**.  
   
-4.  В **обозревателе решений** откройте контекстное меню для проекта и выберите **Изменить** *ProjectName***.vbproj** или **Изменить** *ProjectName***.csproj**.  
+4.  В **обозревателе решений**, откройте контекстное меню для проекта и выберите **изменить***ProjectName***.vbproj** или **Изменить***ProjectName***.csproj**.  
   
 5.  После строки `Import` в конце файла проекта добавьте следующую строку.  
   
@@ -57,15 +58,15 @@ caps.handback.revision: 14
   
 6.  Сохраните и закройте файл проекта.  
   
-7.  В **обозревателе решений** откройте контекстное меню для своего проекта и выберите **Перезагрузить проект**.  
+7.  В **обозревателе решений**, откройте контекстное меню для проекта и выберите **перезагрузить проект**.  
   
- При публикации проекта сообщение выведется прежде чем начнется упаковка.  
+ При публикации проекта сообщение выведется, прежде чем начнется упаковка.  
   
-#### Настройка целевого объекта AfterLayout  
+#### <a name="to-customize-the-afterlayout-target"></a>Для настройки целевой AfterLayout  
   
-1.  В строке меню последовательно выберите **Файл**, **Открыть**, **Файл**.  
+1.  В строке меню выберите **файл**, **откройте**, **файл**.  
   
-2.  В диалоговом окне **Открыть файл** перейдите к папке проекта, выберите файл CustomLayout.target, а затем нажмите кнопку **Открыть**.  
+2.  В **открыть файл** диалоговое окно, перейдите в папку проекта, выберите файл CustomLayout.target и выберите **откройте** кнопки.  
   
 3.  Непосредственно перед тегом `</Project>` добавьте следующий код:  
   
@@ -75,15 +76,15 @@ caps.handback.revision: 14
     </Target>  
     ```  
   
-     Этот пример выводит сообщение после того, как этот целевой объект упакован.  
+     Этот пример выводит сообщение после того, как этот целевой объект упаковывается.  
   
-4.  Сохраните и закройте файл.  
+4.  Сохраните и закройте файл targets.  
   
 5.  Перезапустите среду Visual Studio и откройте проект.  
   
- При публикации проекта сообщение BeforeLayout выведется прежде чем начнется упаковка и сообщение AfterLayout выведется после того, как упаковка завершится.  
+ При публикации проекта сообщение BeforeLayout выведется, прежде чем начнется упаковка, а сообщение AfterLayout выведется после того, как упаковка завершится.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Упаковка и развертывание решений SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

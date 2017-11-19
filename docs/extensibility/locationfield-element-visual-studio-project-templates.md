@@ -4,44 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#LocationField
-helpviewer_keywords:
-- LocationField element [Visual Studio project templates]
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#LocationField
+helpviewer_keywords: LocationField element [Visual Studio project templates]
 ms.assetid: 6aaaa155-6ce0-4f7f-aa50-8d63d7a7c992
-caps.latest.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 50a88925f718caa3a76281b6e96632204f66c67c
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 33be0fde28dded57aafa04e8d6862bcd6e0cf101
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>Элемент LocationField (шаблоны проектов Visual Studio)
-Указывает ли **расположение** текстовое поле в **новый проект** диалоговое окно включена, отключена или скрытым для шаблона проекта.  
+Указывает ли **расположение** текстовое поле в **новый проект** включено, отключено или скрытым для шаблона проекта диалоговое окно.  
   
- \<VSTemplate настроек  
- \<TemplateData настроек  
- \<LocationField настроек  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<LocationField >  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -62,7 +46,7 @@ ms.lasthandoff: 02/22/2017
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Относит шаблон и определяет способ отображения либо **новый проект**.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Относит шаблон и определяет его отображения в любом **новый проект**.|  
   
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
@@ -71,16 +55,16 @@ ms.lasthandoff: 02/22/2017
   
 -   `Enabled`, указывает, что **расположение** поле **новый проект** включен диалоговое окно.  
   
--   `Disabled`, указывает, что **расположение** поле **новый проект** диалоговое окно отключено.  
+-   `Disabled`, указывает, что **расположение** поле **новый проект** диалоговое окно будет отключена.  
   
--   `Hidden`, указывает, что **расположение** поле **новый проект** диалоговое окно является скрытым.  
+-   `Hidden`, указывает, что **расположение** поле **новый проект** диалоговое окно скрывается.  
   
 ## <a name="remarks"></a>Примечания  
  Значение по умолчанию — `Enabled`.  
   
- **Расположение** текстовое поле в **новый проект** диалоговое окно позволяет пользователям изменять каталог по умолчанию, в котором сохраняются новые проекты.  
+ **Расположение** текстовое поле в **новый проект** диалоговое окно позволяет пользователям возможность изменить каталог по умолчанию, в котором сохраняются новые проекты.  
   
- Значение, указанное в `Location` элемент принимаются диалоговым окном только если базовая система поддерживает его.  
+ Значение, указанное в `Location` элемент учитывается только в диалоговом окне Если базовая система поддерживает его.  
   
 ## <a name="example"></a>Пример  
  В следующем примере показаны метаданные для шаблона [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  

@@ -1,33 +1,35 @@
 ---
-title: "Модули | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "модули"
-  - "отладка [пакет SDK для отладки], модули"
+title: "Модули | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- modules
+- debugging [Debugging SDK], modules
 ms.assetid: c4cf2809-dbdb-4e75-9273-b3d3d77b67d0
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c363ea8809449118782597e68f60637f296af89f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Модули
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-В терминах архитектуры отладчика, a **Модуль**.  
+# <a name="modules"></a>Модули
+С точки зрения архитектуры отладчик **модуль**:  
   
--   Физический контейнер кода, например исполняемый файл или библиотеку DLL.  
+-   Представляет собой Физический контейнер код, например исполняемый файл или библиотеку DLL.  
   
--   Можно перезапустить ее символы и описания.  Описание модуля отображаются в окне модули среды разработки.  
+-   Можно перезагрузить его символы и описывать себя. Описание модуля, отображаются в окне модули интегрированной среды разработки.  
   
--   Представляет  IDebugModule2 интерфейс, созданный с помощью обработчика отладки для описания модуль.  
+-   Представленный [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) интерфейс, созданный модуль отладки для описания модуля.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Основные понятия отладчика](../../extensibility/debugger/debugger-concepts.md)   
  [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)

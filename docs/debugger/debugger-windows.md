@@ -1,70 +1,53 @@
 ---
-title: Debugger Windows in Visual Studio | Microsoft Docs
+title: "Отладчика, в Visual Studio | Документы Microsoft"
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 35524e297af4ad2c0427d65da490cd46b2f4c197
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
-
+ms.openlocfilehash: cb35cc5cdc00b5c4225ba4fd2fb8cc2b1214cb49
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="learn-about-debugger-windows-in-visual-studio"></a>Learn about Debugger Windows in Visual Studio
-You can open most debugger windows while you are debugging your program. To see a list of debugger windows, set a breakpoint and start debugging. When you hit the breakpoint and execution stops, click **Debug > Windows**.  
+# <a name="learn-about-debugger-windows-in-visual-studio"></a>Дополнительные сведения об окнах отладчика в Visual Studio
+В процессе отладки программы можно открывать большинство окон отладчика. Чтобы просмотреть список окон отладчика, установите точку останова и начните отладку. При попадании в точку останова и выполнение останавливается, нажмите кнопку **Отладка > Windows**.  
   
 ||||  
 |-|-|-|  
-|**Window**|**Hotkey**|**See Topic**|  
-|Breakpoints|CTRL+ALT+B|[Use Breakpoints](../debugger/using-breakpoints.md)|  
-|Exception Settings|CTRL+ALT+E|[Manage Exceptions with the Debugger](../debugger/managing-exceptions-with-the-debugger.md)|  
-|Output|CTRL+ALT+O|[Output Window](../ide/reference/output-window.md)|    
-|Watch|CTRL+ALT+W, (1, 2, 3, 4)|[Watch and QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)|  
-|QuickWatch|SHIFT+F9|[Watch and QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)|  
-|Autos|CTRL+ALT+V, A|[Autos and Locals Windows](../debugger/autos-and-locals-windows.md)|  
-|Locals|CTRL+ALT+V, L|[Autos and Locals Windows](../debugger/autos-and-locals-windows.md)|  
-|Call Stacks|CTRL+ALT+C|[How to: Use the Call Stack Window](../debugger/how-to-use-the-call-stack-window.md)|
-|Immediate|CTRL+ALT+I|[Immediate Window](../ide/reference/immediate-window.md)|     
-|Parallel Stacks|CTR:+SHIFT+D, S|[Using the Parallel Stacks Window](../debugger/using-the-parallel-stacks-window.md)|  
-|Parallel Watch|CTR:+SHIFT+D, (1, 2, 3, 4)|[Get started Debugging Multithreaded Applications](../debugger/get-started-debugging-multithreaded-apps.md)|
-|Threads|CTRL+ALT+H|[Debug using the Threads Window](../debugger/how-to-use-the-threads-window.md)|  
-|Modules|CTRL+ALT+U|[How to: Use the Modules Window](../debugger/how-to-use-the-modules-window.md)| 
-|GPU Threads|-|[How to: Use the GPU Threads Window](../debugger/how-to-use-the-gpu-threads-window.md)|  
-|Tasks|CTR:+SHIFT+D, K|[Using the Tasks Window](../debugger/using-the-tasks-window.md)| 
-|Python Debug Interactive|SHIFT+ALT+I|[Getting Started with PTVS: Interactive Python](../python/getting-started-with-ptvs-interactive-python.md)|  
-|JavaScript Console|CTRL+ALT+V, C|[QuickStart: Debug JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|  
-|DOM Explorer|CTRL+ALT+V, D|[Debug layout using DOM Explorer](../debugger/debug-layout-using-dom-explorer.md)|  
-|Live Visual Tree|-|[Inspect XAML properties while debugging](../debugger/inspect-xaml-properties-while-debugging.md)|  
-|Live Property Explorer|-|[Inspect XAML properties while debugging](../debugger/inspect-xaml-properties-while-debugging.md)|   
-|Processes|CTRL+ALT+Z|[Debug Threads and Processes](../debugger/debug-threads-and-processes.md)|  
-|Memory|CTRL+ALT+M, (1, 2, 3, 4)|[Memory Windows](../debugger/memory-windows.md)|  
-|Disassembly|CTRL+ALT+D|[How to: Use the Disassembly Window](../debugger/how-to-use-the-disassembly-window.md)|  
-|Registers|CTRL+ALT+G|[How to: Use the Registers Window](../debugger/how-to-use-the-registers-window.md)|  
+|**Окно**|**Сочетание клавиш**|**Раздел**|  
+|Точки останова|CTRL+ALT+B|[Использование точек останова](../debugger/using-breakpoints.md)|  
+|Параметры исключений|CTRL+ALT+E|[Управление исключениями с помощью отладчика](../debugger/managing-exceptions-with-the-debugger.md)|  
+|Вывод|CTRL+ALT+O|[Окно выходных данных](../ide/reference/output-window.md)|    
+|Контрольное значение|CTRL+ALT+W, (1, 2, 3, 4)|[Окна "Контрольные значения" и "Быстрая проверка"](../debugger/watch-and-quickwatch-windows.md)|  
+|Контрольное значение|SHIFT+F9|[Окна "Контрольные значения" и "Быстрая проверка"](../debugger/watch-and-quickwatch-windows.md)|  
+|Автоматические|CTRL+ALT+V, A|[Окна "Видимые" и "Локальные"](../debugger/autos-and-locals-windows.md)|  
+|Локальные|CTRL+ALT+V, L|[Окна "Видимые" и "Локальные"](../debugger/autos-and-locals-windows.md)|  
+|Стеки вызовов|CTRL+ALT+C|[Практическое руководство. Использование окна стека вызова](../debugger/how-to-use-the-call-stack-window.md)|
+|Интерпретация|CTRL+ALT+I|[Окно интерпретации](../ide/reference/immediate-window.md)|     
+|Параллельные стеки|CTRL+SHIFT+D, S|[Использование окна "Параллельные стеки"](../debugger/using-the-parallel-stacks-window.md)|  
+|Контроль параллельных данных|CTRL+SHIFT+D, (1, 2, 3, 4)|[Получение запуска отладки многопоточных приложений](../debugger/get-started-debugging-multithreaded-apps.md)|
+|Потоки|CTRL+ALT+H|[Отладка с помощью окна потоков](../debugger/how-to-use-the-threads-window.md)|  
+|Модули|CTRL+ALT+U|[Практическое руководство. Использование окна модулей](../debugger/how-to-use-the-modules-window.md)| 
+|Потоки GPU|-|[Практическое руководство. Использование окна потоков GPU](../debugger/how-to-use-the-gpu-threads-window.md)|  
+|Задачи|CTRL+SHIFT+D, K|[Использование окна задач](../debugger/using-the-tasks-window.md)| 
+|Интерактивная отладка Python|SHIFT+ALT+I|[Начало работы с PTVS. Interactive Python](../python/getting-started-with-ptvs-interactive-python.md)|  
+|Консоль JavaScript|CTRL+ALT+V, C|[Краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|  
+|Обозреватель DOM|CTRL+ALT+V, D|[Отладка макета с использованием проводника DOM](../debugger/debug-layout-using-dom-explorer.md)|  
+|Динамическое визуальное дерево|-|[Просмотр свойств XAML во время отладки](../debugger/inspect-xaml-properties-while-debugging.md)|  
+|Динамический обозреватель свойств|-|[Просмотр свойств XAML во время отладки](../debugger/inspect-xaml-properties-while-debugging.md)|   
+|Процессы|CTRL+ALT+Z|[Отладка потоков и процессов](../debugger/debug-threads-and-processes.md)|  
+|Память|CTRL+ALT+M, (1, 2, 3, 4)|[Окно памяти](../debugger/memory-windows.md)|  
+|Дизассемблированный код|CTRL+ALT+D|[Практическое руководство. Использование окна дизассемблирования](../debugger/how-to-use-the-disassembly-window.md)|  
+|Регистры|CTRL+ALT+G|[Практическое руководство. Использование окна регистров](../debugger/how-to-use-the-registers-window.md)|  
   
-## <a name="see-also"></a>See Also  
- [Debugger Basics](../debugger/debugger-basics.md)
+## <a name="see-also"></a>См. также  
+ [Основы отладки](../debugger/debugger-basics.md)
