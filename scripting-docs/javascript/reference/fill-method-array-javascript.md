@@ -1,54 +1,57 @@
 ---
-title: "Метод fill (Array) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Метод Fill (Array) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 11526627-c0bb-4157-a8c4-0a039079b4a1
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4546bafb3fa3a8c242b8b7ef4ef2863ea86bf179
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод fill (Array) (JavaScript)
+# <a name="fill-method-array-javascript"></a>Метод fill (Array) (JavaScript)
 Заполняет массив указанным значением.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 arrayObj.fill(value [ , start [ , end ] ]);  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `arrayObj`  
- Обязательный.  Объект Array  
+ Обязательный. Объект массива.  
   
  `value`  
- Обязательный.  Значение, используемое для заполнения массива.  
+ Обязательный. Значение, используемое для заполнения массива.  
   
  `start`  
- Необязательный.  Начальный индекс, используемый для заполнения массива значений.  Значение по умолчанию — 0.  
+ Необязательно. Начальный индекс, используемый для заполнения массива значений. Значение по умолчанию — 0.  
   
  `end`  
- Необязательный.  Конечный индекс, используемый для заполнения массива значений.  Значением по умолчанию является значение свойства length объекта `this`.  
+ Необязательно. Конечный индекс, используемый для заполнения массива значений. Значением по умолчанию является значение свойства length объекта `this`.  
   
-## Заметки  
- Если значение `start` отрицательно, то `start` рассматривается как `length`\+`start`, где `length` соответствует длине массива \(свойство length\).  Если значение `end` отрицательно, `end` рассматривается как `length`\+`end`.  
+## <a name="remarks"></a>Примечания  
+ Если `start` отрицательное, `start` рассматривается как `length` + `start`, где `length` длина массива. Если `end` отрицательное, `end` рассматривается как `length` + `end`.  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующих примерах кода массив заполняется значениями:  
   
-```javascript  
+```JavaScript  
 [0, 0, 0].fill(7, 1);  
 // Array contains [0,7,7]  
   
@@ -57,5 +60,5 @@ arrayObj.fill(value [ , start [ , end ] ]);
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]

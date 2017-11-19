@@ -10,30 +10,15 @@ helpviewer_keywords:
 - text templates, custom directive processors
 - walkthroughs [text templates], directive processor
 ms.assetid: b8f35a36-14e1-4467-8f5f-e01402af14d5
-caps.latest.revision: 74
+caps.latest.revision: "74"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: fd49e497844c85482780c925ef94bc2c422cd80a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 449a8d80eef26935251c265b526d8aacd471d147
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Пошаговое руководство. Создание пользовательского обработчика директив
 *Процессоры директив* работают путем добавления кода в *генерируемый класс преобразования*. При вызове метода *директивы* из *текстового шаблона*, остальной код, записанный в текстовый шаблон можно использовать предоставленную директивой функциональность.  
@@ -983,4 +968,3 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 3.  Чтобы просмотреть вывод в браузере, в **обозревателе решений**, щелкните файл TestDP.htm правой кнопкой мыши и выберите **просмотреть в браузере**.  
   
      Вывод должен быть таким же, как исходный текст, но с применением формата HTML. Имя каждого элемента должно отображаться полужирным шрифтом.
-

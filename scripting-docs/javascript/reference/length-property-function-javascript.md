@@ -1,51 +1,53 @@
 ---
-title: "Свойство length (функция) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "length Property"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Length - свойство"
-  - "length - свойство (функция)"
+title: "Свойство Length (функция) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: length Property
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- Length property
+- length property (function)
 ms.assetid: fdc8e1c9-0dac-4e1b-ba3a-11073c37ef63
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4fbd0334c18da2c6ef8de8366555d79f791e6855
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Свойство length (функция) (JavaScript)
-Получает количество аргументов, определенных для функции.  
+# <a name="length-property-function-javascript"></a>Свойство length (функция) (JavaScript)
+Возвращает число аргументов, определенных для функции.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 functionName.length  
 ```  
   
-## Заметки  
- Необходимое имя *functionName* представляет собой имя функции.  
+## <a name="remarks"></a>Примечания  
+ Необходимая *functionName* имя функции.  
   
- Обработчик сценариев инициализирует свойство **length** функции числом аргументов в определении функции, когда создается экземпляр функции.  
+ **Длина** свойства функции инициализируется обработчиком сценариев число аргументов в определении функции, когда создается экземпляр функции.  
   
- Поведение функции при ее вызове с числом аргументов, отличным от значения его свойства **length**, зависит от данной функции.  
+ Что происходит при вызове функции с числом аргументов, отличных от значения его **длина** свойство зависит от функции.  
   
-## Пример  
- В следующем примере показано использование свойства **length**.  
+## <a name="example"></a>Пример  
+ Следующий пример иллюстрирует использование **длина** свойство:  
   
-```javascript  
+```JavaScript  
 function ArgTest(a, b){  
     var s = "";  
   
@@ -64,10 +66,10 @@ document.write(ArgTest(1, 2));
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]  
   
-## См. также  
- [Свойство arguments \(Function\)](../../javascript/reference/arguments-property-function-javascript.md)   
- [Свойство length \(массив\)](../../javascript/reference/length-property-array-javascript.md)   
- [Свойство length \(строка\)](../../javascript/reference/length-property-string-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Свойство arguments (Function)](../../javascript/reference/arguments-property-function-javascript.md)   
+ [Свойство Length (массив)](../../javascript/reference/length-property-array-javascript.md)   
+ [Свойство length (строка)](../../javascript/reference/length-property-string-javascript.md)

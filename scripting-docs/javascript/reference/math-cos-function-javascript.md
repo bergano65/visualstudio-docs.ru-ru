@@ -1,53 +1,55 @@
 ---
-title: "Функция Math.cos (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "cos"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "cos - метод"
-  - "Math - объект"
+title: "Функция Math.cos (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: cos
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- Math object
+- cos method
 ms.assetid: 5887431e-a8a6-49af-8a4a-b53f6cea39e6
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 624cef21b61c35cb538d907977c90b1c8335c6c6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция Math.cos (JavaScript)
+# <a name="mathcos-function-javascript"></a>Функция Math.cos (JavaScript)
 Возвращает косинус числа.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 Math.cos(radians)   
 ```  
   
-## Заметки  
- Обязательный аргумент `radians` — числовое выражение, которое содержит угол в радианах.  
+## <a name="remarks"></a>Примечания  
+ Необходимая `radians` аргумент является числовым выражением, содержащий значение угла в радианах.  
   
- Возвращаемое значение является косинусом числового аргумента `radians`.  
+ Возвращаемым значением является косинус числового аргумента `radians`.  
   
- **Относится к**: [Объект Math](../../javascript/reference/math-object-javascript.md)  
+ **Применяется к**: [объект Math](../../javascript/reference/math-object-javascript.md)  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## См. также  
- [Функция Math.acos](../../javascript/reference/math-acos-function-javascript.md)   
- [Функция Math.asin](../../javascript/reference/math-asin-function-javascript.md)   
- [Функция Math.atan](../../javascript/reference/math-atan-function-javascript.md)   
+## <a name="see-also"></a>См. также  
+ [Функция Math.ACOS](../../javascript/reference/math-acos-function-javascript.md)   
+ [Функция Math.ASIN](../../javascript/reference/math-asin-function-javascript.md)   
+ [Функция Math.ATAN](../../javascript/reference/math-atan-function-javascript.md)   
  [Функция Math.sin](../../javascript/reference/math-sin-function-javascript.md)   
  [Функция Math.tan](../../javascript/reference/math-tan-function-javascript.md)

@@ -1,58 +1,60 @@
 ---
-title: "Функция Date.parse (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "parse"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Date.parse - функция [JavaScript]"
-  - "parse - функция [JavaScript]"
+title: "Функция Date.Parse (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: parse
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- parse function [JavaScript]
+- Date.parse function [JavaScript]
 ms.assetid: ed737e50-6398-4462-8779-2af3c03f8325
-caps.latest.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0a73fda66ef24df17a5213a182c04667fc4dfabf
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция Date.parse (JavaScript)
-Выполняет синтаксический анализ строки, содержащей дату, и возвращает количество миллисекунд, истекших с полуночи 1 января 1970 г.  
+# <a name="dateparse-function-javascript"></a>Функция Date.parse (JavaScript)
+Анализирует строку, содержащую дату и возвращает количество миллисекунд, истекших с полуночи 1 января 1970 года.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 Date.parse(dateVal)   
 ```  
   
-## Заметки  
- Обязательный аргумент `dateVal` является либо строкой, содержащей дату, либо значением VT\_DATE, извлеченным из объекта ActiveX или другого объекта.  Дополнительные сведения о строках дат, которые может синтаксически проанализировать функция `Date.parse`, см. [Строки даты и времени](../../javascript/date-and-time-strings-javascript.md).  
+## <a name="remarks"></a>Примечания  
+ Необходимая `dateVal` аргумент является строка, содержащая дату или значение VT_DATE, извлеченное из объекта ActiveX или другого объекта. Для строк сведений о дате, `Date.parse` функции можно провести синтаксический анализ. в разделе [строки даты и времени](../../javascript/date-and-time-strings-javascript.md).  
   
- Функция `Date.parse` возвращает целое значение, представляющее число миллисекунд между 1 января 1970 года и указанной в `dateVal` датой.  
+ `Date.parse` Функция возвращает целое число, представляющее количество миллисекунд, истекших с полуночи 1 января 1970 года до даты, указанной в `dateVal`.  
   
-## Пример  
- В следующем примере показано, как используется функция `Date.parse`.  
+## <a name="example"></a>Пример  
+ В следующем примере показано применение функции `Date.parse`.  
   
-```javascript  
+```JavaScript  
 var dateString = "November 1, 1997 10:15 AM";  
 var mSec = Date.parse(dateString);  
 document.write(mSec);  
 // Output: 878404500000  
 ```  
   
-## Пример  
- Следующий пример возвращает разницу между предоставленной датой и 01.01.1970.  
+## <a name="example"></a>Пример  
+ Следующий пример возвращает разницу между указанной датой и 1/1 января 1970 года.  
   
-```javascript  
+```JavaScript  
 var minMilli = 1000 * 60;  
 var hrMilli = minMilli * 60;  
 var dyMilli = hrMilli * 24;  
@@ -70,8 +72,8 @@ document.write(dateStr);
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## См. также  
- [Метод getDate \(Date\)](../../javascript/reference/getdate-method-date-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Метод getDate (Date)](../../javascript/reference/getdate-method-date-javascript.md)

@@ -1,56 +1,58 @@
 ---
-title: "Метод setTime (Date) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "setTime"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "SetTime - метод"
-  - "time - метод"
+title: "Метод setTime (Date) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: setTime
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- SetTime method
+- time method
 ms.assetid: 86584748-7219-495b-bf56-e27f5782778c
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e66b1fbf5d668330eb727e8bfc50ee9d11a28be3
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод setTime (Date) (JavaScript)
-Задает значение даты и времени в объекте `Date`.  
+# <a name="settime-method-date-javascript"></a>Метод setTime (Date) (JavaScript)
+Задает значение даты и времени в `Date` объекта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 dateObj.setTime(milliseconds)   
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `dateObj`  
- Обязательный.  Любой объект `Date`.  
+ Обязательный. Любой объект `Date`.  
   
- *milliseconds*  
- Обязательный.  Числовое значение, представляющее число миллисекунд, прошедших после полуночи 1 января, 1970 года \(время в формате GMT\).  
+ *миллисекунд*  
+ Обязательный. Числовое значение, представляющее количество миллисекунд, прошедших с полуночи 1 января 1970 г. GMT.  
   
-## Заметки  
- Если значение *milliseconds* является отрицательным, оно означает дату до 1970 года.  Диапазон доступных дат составляет приблизительно 285 616 лет до и после 1970 года.  
+## <a name="remarks"></a>Примечания  
+ Если *миллисекунд* имеет отрицательное значение, он указывает даты до 1970 года. Диапазон доступных дат — приблизительно 285616 лет 1970 года.  
   
- Часовой пояс не имеет значения при установке даты и времени с помощью метода `setTime`.  
+ При установке даты и времени с `setTime` метод не зависит от часового пояса.  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере показано использование метода `setTime`.  
   
-```javascript  
+```JavaScript  
 function SetTimeTest(newtime){  
    var d, s;                  //Declare variables.  
    d = new Date();            //Create Date object.  
@@ -61,10 +63,10 @@ function SetTimeTest(newtime){
 }  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **Относится к**: [Объект Date](../../javascript/reference/date-object-javascript.md)  
+ **Применимо к**: [Date Object](../../javascript/reference/date-object-javascript.md)  
   
-## См. также  
- [Метод getTime \(Date\)](../../javascript/reference/gettime-method-date-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Метод getTime (Date)](../../javascript/reference/gettime-method-date-javascript.md)

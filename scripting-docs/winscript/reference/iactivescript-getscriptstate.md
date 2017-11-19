@@ -1,27 +1,30 @@
 ---
-title: "IActiveScript::GetScriptState | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IActiveScript::GetScriptState | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScript.GetScriptState
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScript_GetScriptState"
+helpviewer_keywords: IActiveScript_GetScriptState
 ms.assetid: 59837f7c-755d-45c4-8194-bd57638fe2e1
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 285a09308c7477dbeed68f9f93417b503ca4fe49
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScript::GetScriptState
-Получает текущее состояние обработчика скриптов.  Этот метод может быть вызван из потоков, не относящихся к базовому без привести к появлению выноски отличные от причины для размещения объектов или к интерфейсу [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md).  
+# <a name="iactivescriptgetscriptstate"></a>IActiveScript::GetScriptState
+Извлекает текущее состояние обработчика сценариев. Этот метод может вызываться из потоков, отличной от base не входили в системе счисления с основанием выноски объектов узла или [iactivescriptsite —](../../winscript/reference/iactivescriptsite.md) интерфейса.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT GetScriptState(  
@@ -29,12 +32,12 @@ HRESULT GetScriptState(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pss`  
- \[out\] адрес переменной, которая возвращает значение, определенные в перечислении [Перечисление SCRIPTSTATE](../../winscript/reference/scriptstate-enumeration.md).  Значение показывает текущее состояние обработчика скриптов, связанного с вызывающим потоком.  
+ [out] Адрес переменной, которая получает значение, определенное в [перечисление SCRIPTSTATE](../../winscript/reference/scriptstate-enumeration.md) перечисления. Значение указывает текущее состояние обработчика сценариев, связанных с вызывающего потока.  
   
-## Возвращаемое значение  
- Возвращает `S_ОК`, если успешно или `E_POINTER`, если указан недопустимый указатель.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Возвращает `S_OK` в случае успешного выполнения или `E_POINTER` Если был указан недопустимый указатель.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IActiveScript](../../winscript/reference/iactivescript.md)

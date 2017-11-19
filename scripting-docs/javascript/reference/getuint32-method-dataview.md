@@ -1,51 +1,54 @@
 ---
-title: "Метод getUint32 (DataView) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Метод getUint32 (DataView) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 266ee6b6-c0b6-417e-a64b-c8cda48fde86
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4fc598239d65f371df78ade0c214b9961b022911
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод getUint32 (DataView)
-Получает значение Uint32 по указанному смещению в байтах от начала представления.  Ограничения по выравниванию отсутствуют; многобайтовые значения могут извлекаться по любому смещению.  
+# <a name="getuint32-method-dataview"></a>Метод getUint32 (DataView)
+Получает значение Uint32 на указанное смещение в байтах от начала представления. Не имеет ограничений выравнивания; многобайтовую значения могут быть извлечены из смещения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 var testInt = dataView.get Uint32 (byteOffset, littleEndian);   
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `testInt`  
- Обязательный.  Значение Uint32, возвращаемое методом.  
+ Обязательный. Значение Uint32, которое возвращается из метода.  
   
  `byteOffset`  
- Место в буфере, откуда следует извлечь значение.  
+ Позиция в буфере, с которого следует извлечь значение.  
   
  `littleEndian`  
- Необязательный.  Если этот аргумент имеет значение undefined, считывается значение с обратным порядком байтов, в противном случае — значение с прямым порядком байтов.  
+ Необязательно. Если значение false или не определено, должно быть считано значение с обратным порядком байтов, в противном случае должно быть считано значение с прямым порядком байтов.  
   
-## Заметки  
- При чтении за пределами представления эти методы вызывают исключение.  
+## <a name="remarks"></a>Примечания  
+ Эти методы вызывают исключение, если они бы чтения за концом представления.  
   
-## Пример  
- В следующем примере показано, как получить первое значение Uint32 в DataView.  
+## <a name="example"></a>Пример  
+ Следующий пример показывает способ получения первого Uint32 в DataView.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -61,5 +64,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

@@ -1,65 +1,55 @@
 ---
-title: "Оператор модуля (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "%"
-dev_langs: 
-  - "JavaScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "оператор модуля, JavaScript"
-  - "% - оператор [JavaScript]"
-  - "Modulo - функция [JavaScript]"
-ms.assetid: 087d654f-623b-498d-95ff-596d26bf674d
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+title: "Оператор модуля (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: '%'
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- '% operator [JavaScript]'
+- modulus operator [JavaScript]
+ms.assetid: f98bf7ee-8366-4f1d-8769-dbdff82056a8
+caps.latest.revision: "0"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0310b9ab6abde2661e0e1bf27cef59b79c1c0f30
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Оператор модуля (JavaScript)
-Выполняет деление значения одного выражения на значение другого выражения и возвращает остаток.  
+# <a name="modulus-operator--javascript"></a>Оператор модуля (JavaScript)
+Делит значение числового выражения значение другого выражения и создает остаток.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
-  
-result = number1 % number2  
+result = expression1 % expression2  
 ```  
   
-## Аргументы  
+## <a name="arguments"></a>Аргументы  
  `result`  
  Любая переменная.  
   
- `number1`  
+ `expression1`  
  Произвольное числовое выражение.  
   
- `number2`  
+ `expression2`  
  Произвольное числовое выражение.  
   
-## Заметки  
- Оператор модуля \(или остатка\) делит значение `number1` на значение `number2` и возвращает только остаток в качестве `result`.  Знак `result` совпадает со знаком `number1`.  Значение `result` находится между 0 и абсолютным значением `number2`.  
-  
- В следующем примере кода показано, как использовать оператор модуля.  
-  
-```  
-var modResult = 19 % 6.7;  
-document.write(modResult);  
-  
-// Output: 5.6  
-  
-```  
-  
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## См. также  
+## <a name="see-also"></a>См. также  
+ [Оператор присваивания модуля.](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)   
  [Приоритет операторов](../../javascript/operator-subtractprecedence-javascript.md)   
- [Сводный список операторов \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Сводный список операторов (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

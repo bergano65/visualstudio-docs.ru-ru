@@ -1,48 +1,49 @@
 ---
-title: "Свойство callee (arguments) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "callee"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "callee - свойство"
+title: "Свойство callee (arguments) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: callee
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: callee property
 ms.assetid: ad9d4d21-73f0-44f6-8bec-502f3456cd23
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 33f1c2926d76c0a1f088c8f4222b6f24c004b73b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Свойство callee (arguments) (JavaScript)
-Возвращает исполняемый объект `Function`, который является текстом тела указанного объекта `Function`.  
+# <a name="callee-property-arguments-javascript"></a>Свойство callee (arguments) (JavaScript)
+Возвращает `Function` объекта выполняется, то есть основной текст указанного `Function` объекта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 [function.]arguments.callee  
 ```  
   
-## Заметки  
- Необязательный аргумент *function* — это имя выполняемого в данный момент объекта `Function`  
+## <a name="remarks"></a>Примечания  
+ Необязательный *функция* аргумент — имя выполняющегося в данный момент `Function` объекта.  
   
- Свойство `callee` является членом объекта **arguments**, который становится доступным только при выполнении связанной с ним функции.  
+ `callee` Входит свойство **аргументы** объекта, который становится доступным только при выполнении связанной с ним функции.  
   
- Начальным значением свойства `callee` является выполняемый объект `Function`.  Это позволяет рекурсивно использовать анонимные функции.  
+ Начальное значение `callee` свойство `Function` исполняемый объект. Это позволяет анонимные функции рекурсивно.  
   
-## Пример  
+## <a name="example"></a>Пример  
   
-```javascript  
+```JavaScript  
 function factorial(n){  
   if (n <= 0)  
      return 1;  
@@ -52,10 +53,10 @@ function factorial(n){
 document.write(factorial(4));  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
- **Относится к**: [Объект arguments](../../javascript/reference/arguments-object-javascript.md)&#124; [Объект Function](../../javascript/reference/function-object-javascript.md)  
+ **Применяется к**: [объект arguments](../../javascript/reference/arguments-object-javascript.md)&#124; [Функции объекта](../../javascript/reference/function-object-javascript.md)  
   
-## См. также  
- [Свойство caller \(Function\)](../../javascript/reference/caller-property-function-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Свойство caller (Function)](../../javascript/reference/caller-property-function-javascript.md)

@@ -1,56 +1,57 @@
 ---
-title: "Функция isNaN (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "isNaN"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "isNaN - метод"
+title: "Функция isNaN (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: isNaN
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: isNaN method
 ms.assetid: 5af4eb29-72f6-484f-93bd-04ae1261f849
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7b7e6d3687e795ea5d5e38308a8af0d73ba7f5ff
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция isNaN (JavaScript)
-Возвращает логическое значение, которое указывает, является ли значение зарезервированным значением `NaN` \(не числом\).  
+# <a name="isnan-function-javascript"></a>Функция isNaN (JavaScript)
+Возвращает логическое значение, указывающее, является ли значение зарезервированным значением `NaN` (не числом).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 isNaN(numValue)   
 ```  
   
-## Возвращаемое значение  
- `true`, если значение преобразованное к типу `Number`, является `NaN`, в противном случае `false`.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Если значение преобразуется в тип `Number`, `true` имеет значение `NaN`; в противном случае — `false`.  
   
-## Заметки  
- Требуемое значение `numValue` — значение, которое проверяется для `NaN`.  
+## <a name="remarks"></a>Примечания  
+ Необходимая `numValue` это значение, которое нужно проверить вместе с `NaN`.  
   
- Этот метод обычно используется для проверки значений, возвращаемых методами `parseInt` и `parseFloat`.  
+ Обычно этот метод используется для проверки значений, возвращаемых методами `parseInt` и `parseFloat`.  
   
- Либо переменную, содержащую `NaN` или другое значение, можно сравнить саму с собой.  Если сравнение указывает на неравенство, то значение переменной равно `NaN`,  поскольку `NaN` является единственным значением, которое не равно самому себе.  
+ Кроме того, переменная, содержащая `NaN` или другим значением может быть по сравнению с самого. Если сравнение указывает на неравенство, это `NaN`. Это вызвано `NaN` является единственным значением, которое не равно самому себе.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **Применение**: [Объект Global](../../javascript/reference/global-object-javascript.md)  
+ **Применяется к**: [глобального объекта](../../javascript/reference/global-object-javascript.md)  
   
-## Пример  
+## <a name="example"></a>Пример  
   
-```javascript  
+```JavaScript  
 // Returns false.  
 isNaN(100);  
   
@@ -70,7 +71,7 @@ isNaN("abc123");
 isNaN(Math.sqrt(-1));           
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Функция isFinite](../../javascript/reference/isfinite-function-javascript.md)   
  [Константа NaN](../../javascript/reference/nan-constant-javascript.md)   
  [Функция parseFloat](../../javascript/reference/parsefloat-function-javascript.md)   

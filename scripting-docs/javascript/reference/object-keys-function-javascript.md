@@ -1,58 +1,61 @@
 ---
-title: "Функция Object.keys (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "keys - метод [JavaScript]"
-  - "Object.keys - метод [JavaScript]"
+title: "Функция Object.Keys (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- Object.keys method [JavaScript]
+- keys method [JavaScript]
 ms.assetid: cf4a7daf-cf28-4467-bc6b-f7f106ec3876
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0e725c3ab7206b04d9a900cb614b57c37dfc4351
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция Object.keys (JavaScript)
-Возвращает имена перечислимых свойств и методов объекта.  
+# <a name="objectkeys-function-javascript"></a>Функция Object.keys (JavaScript)
+Возвращает имена перечисляемых свойств и методов объекта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```javascript  
+```JavaScript  
 Object.keys(object)  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
   
 |Параметр|Определение|  
-|--------------|-----------------|  
-|`object`|Обязательный.  Объект, содержащий все свойства и методы.  Это может быть объект, созданный пользователем, или существующий объект DOM.|  
+|---------------|----------------|  
+|`object`|Обязательный. Объект, содержащий свойства и методы. Это может быть объект, который был создан, либо существующий объект объектной модели документа (DOM).|  
   
-## Возвращаемое значение  
- Массив, содержащий имена перечислимых свойства и методов объекта.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Массив, содержащий имена перечисляемых свойств и методов объекта.  
   
-## Исключения  
- Если значение, заданное для аргумента `object` не является именем объекта, возникает исключение `TypeError`.  
+## <a name="exceptions"></a>Исключения  
+ Если значение указано для `object` аргумент не является именем объекта, `TypeError` исключения.  
   
-## Заметки  
- Метод `keys` возвращает имена только перечислимых свойств и методов.  Для возвращения имен как перечислимых, так и неперечислимых свойств и методов можно использовать [Функция Object.getOwnPropertyNames](../../javascript/reference/object-getownpropertynames-function-javascript.md).  
+## <a name="remarks"></a>Примечания  
+ `keys` Метод возвращает только имена перечисляемые свойства и методы. Для возврата имен перечисляемую и не перечисляемых свойств и методов, можно использовать [функция Object.getOwnPropertyNames](../../javascript/reference/object-getownpropertynames-function-javascript.md).  
   
- Дополнительные сведения о свойстве `enumerable` см. в разделах [Функция Object.defineProperty](../../javascript/reference/object-defineproperty-function-javascript.md) и [Функция Object.getOwnPropertyDescriptor](../../javascript/reference/object-getownpropertydescriptor-function-javascript.md).  
+ Сведения о `enumerable` атрибута свойства. в разделе [функция Object.defineProperty](../../javascript/reference/object-defineproperty-function-javascript.md) и [функция Object.getOwnPropertyDescriptor](../../javascript/reference/object-getownpropertydescriptor-function-javascript.md).  
   
-## Пример  
- В следующем примере создается объект, имеющий три свойства и метод.  Затем используется метод `keys` для получения свойств и методов объекта.  
+## <a name="example"></a>Пример  
+ Следующий пример создает объект, который имеет три свойств и методов. Затем он использует `keys` метод получения свойства и методы объекта.  
   
-```javascript  
+```JavaScript  
 // Create a constructor function.  
 function Pasta(grain, width, shape) {  
     this.grain = grain;  
@@ -76,10 +79,10 @@ document.write (arr);
 // grain,width,shape,toString  
 ```  
   
-## Пример  
- В следующем примере отображаются имена всех перечислимых свойств объекта Pasta, начинающихся с буквы "g".  
+## <a name="example"></a>Пример  
+ Следующий пример отображает имена всех перечисляемые свойства, которые начинаются с буквы «g» в объекте Макарон.  
   
-```javascript  
+```JavaScript  
 // Create a constructor function.  
 function Pasta(grain, width, shape) {  
     this.grain = grain;  
@@ -105,8 +108,8 @@ function CheckKey(value) {
 // grain  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Функция Object.getOwnPropertyNames](../../javascript/reference/object-getownpropertynames-function-javascript.md)

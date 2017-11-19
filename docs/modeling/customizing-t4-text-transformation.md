@@ -1,42 +1,44 @@
 ---
-title: "Customizing T4 Text Transformation | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "text templates, API"
-  - "text templates, custom hosts"
+title: "Настройка преобразования текста T4 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- text templates, API
+- text templates, custom hosts
 ms.assetid: 62cd9a3c-a6e1-4b29-93f5-f2a0cf47dc92
-caps.latest.revision: 28
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 28
+caps.latest.revision: "28"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 4909edabd71686948632f390dfeed5f49cb6fca0
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Customizing T4 Text Transformation
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Поддержка текстовых шаблонов – это функция [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], позволяющая генерировать программный или другие текстовые файлы посредством процесса преобразования.  Используя [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)], можно расширить используемый по умолчанию процесс преобразования шаблона, настроив процессор директив текстового шаблона или основное приложение текстового шаблона.  
+# <a name="customizing-t4-text-transformation"></a>Настройка преобразования текста T4
+Текстовые шаблоны являются возможностью [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , которые позволяют создавать программный код или другие текстовые файлы посредством процесса преобразования. С помощью [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)], можно расширить процесс преобразования шаблона по умолчанию, настроив процессор директив текстового шаблона или основное приложение текстового шаблона.  
   
-## В этом подразделе  
- [The Text Template Transformation Process](../modeling/the-text-template-transformation-process.md)  
- Описано, как работает текстовое преобразование и какова роль основного приложения шаблона и процессоров директив.  
+## <a name="in-this-section"></a>Содержание  
+ [Процесс преобразования текстового шаблона](../modeling/the-text-template-transformation-process.md)  
+ Описано, как работает преобразование текста и роль основного приложения шаблона и процессоры директив.  
   
- [Creating Custom T4 Text Template Directive Processors](../modeling/creating-custom-t4-text-template-directive-processors.md)  
- Процессор директив обрабатывает содержащиеся в шаблоне директивы, такие как директива `<#@template#>.` Он выполняется в процессе компиляции шаблона и может загружать сборки и другие ресурсы.  Также он может вставлять код, загружающий ресурсы во время выполнения.  Определив собственный процессор директив, можно уменьшить сложность шаблонов.  
+ [Создание пользовательских обработчиков директив для текстовых шаблонов T4](../modeling/creating-custom-t4-text-template-directive-processors.md)  
+ Процессор директив обрабатывает директивы в шаблоне, такие как `<#@template#>.` он выполняется в процессе компиляции шаблона и может загружать сборки и другие ресурсы. Его можно также вставить код, который будет загружать ресурсы во время выполнения. Определив собственный процессор директив, можно уменьшить сложность шаблонов.  
   
- [Invoking Text Transformation in a VS Extension](../modeling/invoking-text-transformation-in-a-vs-extension.md)  
- При создании расширения [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], такого как команда меню или обработчик событий, расширение может использовать службу текстовых шаблонов для преобразования любого текстового шаблона.  Данные параметров можно передать в шаблон, воспользовавшись объектом "Сеанс", и получить значения из шаблона, воспользовавшись директивой `<#@parameter#>`.  
+ [Вызов преобразования текста в расширении VS](../modeling/invoking-text-transformation-in-a-vs-extension.md)  
+ При создании [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] расширения, такими как меню команды или обработчика событий, расширение можно использовать службы текстовых шаблонов для преобразования любого текстового шаблона. Можно передать данные параметров в шаблон с помощью объекта сеанса и получить значения из шаблона с помощью `<#@parameter#>` директивы.  
   
- [Processing Text Templates by using a Custom Host](../modeling/processing-text-templates-by-using-a-custom-host.md)  
- При выполнении кода текстового шаблона основное приложение предоставляет доступ ко внешним файлам и состоянию приложения.  Например, основное приложение, выполняющее преобразование текста в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], может предоставлять доступ к обозревателю решений.  Также оно отображает окно с сообщениями об ошибках.  Если требуется выполнить преобразования текста в другом контексте, можно определить собственное основное приложение, представляющее доступ к доступным в этом контексте службам.  
+ [Обработка текстовых шаблонов с помощью пользовательского хост-класса](../modeling/processing-text-templates-by-using-a-custom-host.md)  
+ При выполнении кода текстового шаблона узел предоставляет доступ к внешним файлам и состояние приложения. Например, узел, выполняющее преобразование текста в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] может предоставлять доступ к обозревателю решений. Она также отображает ошибки в окне сообщения об ошибках. Если вы хотите выполнить преобразования текста в другом контексте, можно определить собственный узел, который предоставляет доступ к службам, доступным в этом контексте.  
   
- При создании расширения [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] можно воспользоваться имеющейся службой преобразования текста, а не создавать собственный узел.  Дополнительные сведения см. в разделе [Invoking Text Transformation in a VS Extension](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
+ При создании [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] расширения, можно воспользоваться имеющейся службой преобразования текста, а не создавать собственный узел. Дополнительные сведения см. в разделе [вызов преобразования текста в расширении VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
   
-## Ссылка  
- [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md)  
+## <a name="reference"></a>Ссылка  
+ [Написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md)  
   
  Предоставляет синтаксис директив текстового шаблона и управляющие блоки.

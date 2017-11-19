@@ -1,48 +1,51 @@
 ---
-title: "Метод has (Map) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Метод has (Map) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 876df854-2941-4db2-92c6-1b497840b169
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 48228b495c845bef91caa0b85e67980100a6f790
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод has (Map) (JavaScript)
-Возвращает значение `true`, если сопоставление содержит указанный элемент.  
+# <a name="has-method-map-javascript"></a>Метод has (Map) (JavaScript)
+Возвращает `true` Если сопоставление содержит указанный элемент.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```javascript  
+```JavaScript  
 mapObj.has(key)  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `mapObj`  
- Обязательное.  Объект `Map`.  
+ Обязательный. Объект `Map`.  
   
  `key`  
- Обязательное.  Ключ элемента, который требуется протестировать.  
+ Обязательный. Ключ элемента, который требуется проверить.  
   
-## Значение свойства или возвращаемое значение  
- Значение `true`, если сопоставление содержит указанный элемент.  
+## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение  
+ `true`Если сопоставление содержит указанный элемент.  
   
-## Пример  
- В следующем примере показано, как добавить член в `Map` и затем проверить, содержится ли он в карте.  
+## <a name="example"></a>Пример  
+ Следующий пример демонстрирует добавление члена `Map` и проверьте, содержит ли объект map его.  
   
-```javascript  
+```JavaScript  
 var m = new Map();  
 m.set(2, "red");  
   
@@ -52,5 +55,5 @@ document.write(m.has(2));
 // true  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]

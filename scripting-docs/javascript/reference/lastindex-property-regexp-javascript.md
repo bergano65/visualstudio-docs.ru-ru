@@ -1,60 +1,61 @@
 ---
-title: "Свойство lastIndex (RegExp) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "lastIndex"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "lastIndex - свойство"
+title: "Свойство lastIndex (RegExp) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: lastIndex
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: lastIndex property
 ms.assetid: c8ae2a13-6dff-4cbe-b662-aca3d66c2a7f
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d5e24fe14d335e1494b13518543f56025625de0b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Свойство lastIndex (RegExp) (JavaScript)
-Возвращает позицию знака, с которого начинается следующее найденное совпадение в строке для поиска.  
+# <a name="lastindex-property-regexp-javascript"></a>Свойство lastIndex (RegExp) (JavaScript)
+Возвращает позицию символа, где начинается следующего совпадения в строке для поиска.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 RegExp.lastIndex  
 ```  
   
-## Заметки  
- Объект, связанный с этим свойством, — всегда глобальный объект `RegExp`.  
+## <a name="remarks"></a>Примечания  
+ Объект, связанный с этим свойством, всегда является глобальный `RegExp` объекта.  
   
- Значения свойства `lastIndex` начинаются с нуля, это означает, что индекс первого знака равен нулю.  Начальным значением свойства является –1.  Это значение изменяется при каждом успешном обнаружении искомого выражения.  
+ `lastIndex` Свойства начинается с нуля, индекс первого символа является ноль. Исходное значение равно -1. Это значение изменяется при каждом обнаружении совпадения.  
   
- Свойство `lastIndex` изменяется методами `exec` и **test** объекта `RegExp` и методами `match`, **replace** и **split** объекта `String`.  
+ `lastIndex` Изменено свойство `exec` и **тестирования** методы `RegExp` объекта и `match`, **заменить**, и **разбиение**методы `String` объекта.  
   
- К значениям свойства `lastIndex` применяются следующие правила.  
+ Следующие правила применяются к значениям `lastIndex`:  
   
--   Если совпадения не найдены, то для свойства `lastIndex` устанавливается значение \-1.  
+-   Если нет соответствия `lastIndex` имеет значение -1.  
   
--   Если значение свойства `lastIndex` больше длины строки, то происходит сбой методов **test** и `exec`, а для свойства `lastIndex` устанавливается значение \-1.  
+-   Если `lastIndex` больше, чем длина строки, **тестирования** и `exec` ошибкой и `lastIndex` имеет значение -1.  
   
--   Если значение свойства `lastIndex` равно длине строки, то регулярное выражение совпадает при совпадении шаблона с пустой строкой.  В противном случае поиск завершается неудачей и свойство `lastIndex` сбрасывается к значению \-1.  
+-   Если `lastIndex` — равным длине строки совпадений регулярного выражения, если шаблон соответствует пустая строка. В противном случае соответствие считается неудачным и `lastIndex` сбрасывается в значение -1.  
   
--   Во всех других случаях для свойства `lastIndex` устанавливается позиция, следующая за последним найденным совпадением.  
+-   В противном случае `lastIndex` устанавливается в следующую позицию после последнего найденного соответствия.  
   
-## Пример  
- В следующем примере показано использование свойства `lastIndex`.  Данная функция выполняет итерацию строки для поиска и печатает значения **index** и `lastIndex` для каждого слова в строке.  
+## <a name="example"></a>Пример  
+ Следующий пример иллюстрирует использование `lastIndex` свойство. Эта функция выполняет итерацию искомую строку и выводит **индекс** и `lastIndex` значения для каждого слова в строке.  
   
-```javascript  
+```JavaScript  
 function RegExpTest()  
 {  
    var ver = Number(ScriptEngineMajorVersion() + "." + ScriptEngineMinorVersion())  
@@ -81,10 +82,10 @@ function RegExpTest()
 }  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Применение**: [Объект RegExp](../../javascript/reference/regexp-object-javascript.md)  
+ **Применяется к**: [объект RegExp](../../javascript/reference/regexp-object-javascript.md)  
   
-## См. также  
- [Regular Expression Syntax \(JavaScript\)](http://msdn.microsoft.com/ru-ru/ab0766e1-7037-45ed-aa23-706f58358c0e)
+## <a name="see-also"></a>См. также  
+ [Синтаксис регулярного выражения (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)

@@ -1,45 +1,47 @@
 ---
-title: "Функция Promise.race (Promise) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Функция Promise.Race (Promise) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 9236eced-d313-4d03-8c3e-d89d762b3084
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fedd512f4565009c8429b43b0d9d93de943d13fb
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция Promise.race (Promise)
+# <a name="promiserace-function-promise"></a>Функция Promise.race (Promise)
 Создает новый объект Promise, который будет разрешен или отклонен с тем же значением результата, что и первый разрешенный или отклоненный объект Promise в числе переданных аргументов.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 Promise.race(iterable)  
-  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `iterable`  
- Обязательный.  Один или несколько объектов Promise.  
+ Обязательный. Один или несколько объектов Promise.  
   
-## Заметки  
- Если один из объектов Promise в объекте `iterable` уже разрешен или отклонен, `Promise.race` возвращает разрешенный или отклоненный объект Promise в том же виде, а результирующее значение равно значению, которое использовалось для разрешения \(или отклонения\) этого объекта.  Если в объекте `iterable` разрешены или отклонены уже несколько объектов Promise, `Promise.race` возвращает объект Promise, разрешенный таким же образом, как и первый итерированный объект Promise.  Если итерируемый объект не содержит разрешенных или отклоненных объектов Promise, объект Promise, возвращенный из `Promise.race`, также не разрешается и не отклоняется.  
+## <a name="remarks"></a>Примечания  
+ Если один из объектов Promise в объекте `iterable` уже разрешен или отклонен, `Promise.race` возвращает разрешенный или отклоненный объект Promise в том же виде, а результирующее значение равно значению, которое использовалось для разрешения (или отклонения) этого объекта. Если в объекте `iterable` разрешены или отклонены уже несколько объектов Promise, `Promise.race` возвращает объект Promise, разрешенный таким же образом, как и первый итерированный объект Promise. Если итерируемый объект не содержит разрешенных или отклоненных объектов Promise, объект Promise, возвращенный из `Promise.race`, также не разрешается и не отклоняется.  
   
-## Пример  
+## <a name="example"></a>Пример  
   
-```javascript  
+```JavaScript  
 var p1 = new Promise(function(resolve, reject) {  
     setTimeout(resolve, 0, 'success');  
 });  
@@ -65,8 +67,8 @@ race.catch(function(result) {
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Объект Promise](../../javascript/reference/promise-object-javascript.md)

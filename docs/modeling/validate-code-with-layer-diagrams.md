@@ -19,30 +19,15 @@ helpviewer_keywords:
 - MSBuild, dependency diagrams
 - MSBuild, validating code
 ms.assetid: 70cbe55d-4b33-4355-b0a7-88c770a6f75c
-caps.latest.revision: 82
+caps.latest.revision: "82"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 5581224b17a7b42f65b69f741f984a144d78fc26
-ms.openlocfilehash: 53c623ce7ab7126c22aaab856a439862252a5d56
-ms.contentlocale: ru-ru
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: c6c5954cdb4979ede5e43d2052801ca399f128fd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Проверка кода по схемам зависимостей
 
@@ -72,7 +57,7 @@ ms.lasthandoff: 04/04/2017
   
 -   Решение, которое содержит проект моделирования со схемой зависимостей. Это зависимостей схема должна быть связана с артефактами в проектах Visual C# .NET или Visual Basic .NET, который нужно проверить. В разделе [создавать диаграммы зависимостей в коде](../modeling/create-layer-diagrams-from-your-code.md).  
   
- Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, в разделе [поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Можно проверить код вручную из схемы зависимостей, откройте в Visual Studio или из командной строки. Также код можно проверить автоматически при выполнении локальных сборок или Team Foundation Build. В разделе [видео Channel 9: проектирования и проверки архитектуры с использованием схем зависимостей](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
@@ -186,7 +171,7 @@ ms.lasthandoff: 04/04/2017
   
 ##### <a name="to-create-a-work-item-for-a-validation-error"></a>Создание рабочего элемента для ошибки проверки  
   
--   В **список ошибок** , щелкните правой кнопкой мыши ошибку, подведите указатель к **Создание рабочего элемента**, а затем выберите тип рабочего элемента, который требуется создать.  
+-   В **список ошибок** , щелкните правой кнопкой мыши ошибку, подведите указатель к **создать рабочий элемент**, а затем выберите тип рабочего элемента, который требуется создать.  
   
  Воспользуйтесь следующими процедурами для управления ошибками проверки в **список ошибок** окна:  
   
@@ -240,14 +225,14 @@ ms.lasthandoff: 04/04/2017
   
 -   [Изменение прежних версий сборки, который основан на UpgradeTemplate.xaml](http://msdn.microsoft.com/Library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)  
   
--   [Настройка шаблона процесса построения](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+-   [Настройка шаблона процесса сборки](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
 -   [Отслеживание хода выполнения запуска построения](http://msdn.microsoft.com/Library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
   
 ##  <a name="TroubleshootingValidation"></a>Устранение неполадок проверки слоев  
  Следующая таблица описывает проблемы проверки слоев и способы их устранения. Эти проблемы отличаются от ошибок, возникающих из-за несоответствия между кодом и структурой. Дополнительные сведения об этих ошибках см. в разделе [понимание и устранение ошибок проверки слоев](#UnderstandingValidationErrors).  
   
-|**Проблема**|**Возможная причина**|**Разрешение**|  
+|**Проблема**|**Возможная причина**|**Решение**|  
 |---------------|------------------------|--------------------|  
 |Ошибки проверки не возникают так, как это ожидается.|Проверка не работает на схемах зависимостей, которые скопированы из других схем зависимостей в обозревателе решений и находятся в том же проекте моделирования. схемы зависимостей, которые копируются в этом случае содержат те же ссылки, что и исходная схема зависимостей.|Добавьте новую диаграмму зависимостей в проект моделирования.<br /><br /> Скопируйте элементы из исходной схемы зависимостей в новую схему.|  
   
@@ -264,7 +249,7 @@ ms.lasthandoff: 04/04/2017
   
 |**Синтаксис**|**Описание**|  
 |----------------|---------------------|  
-|*ArtifactN*(*ArtifactTypeN*)|*ArtifactN* — это артефакт, связанный со слоем на схеме зависимостей.<br /><br /> *ArtifactTypeN* — это тип *ArtifactN*, такие как **класса** или **метод**, например:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|  
+|*ArtifactN*(*ArtifactTypeN*)|*ArtifactN* — это артефакт, связанный со слоем на схеме зависимостей.<br /><br /> *ArtifactTypeN* тип *ArtifactN*, такие как **класса** или **метод**, например:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|  
 |*NamespaceNameN*|Имя пространства имен.|  
 |*LayerNameN*|Название слоя на диаграмме зависимостей.|  
 |*Тип_зависимости*|Тип отношения зависимости между *Artifact1* и *Artifact2*. Например *Artifact1* имеет **вызовы** связь с *Artifact2*.|  
@@ -282,4 +267,3 @@ ms.lasthandoff: 04/04/2017
 ## <a name="see-also"></a>См. также  
  [Проверка системы во время разработки](../modeling/validate-your-system-during-development.md)   
  [Видео: Проверка архитектуры зависимостей в режиме реального времени](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)   
-

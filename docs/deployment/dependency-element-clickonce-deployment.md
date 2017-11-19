@@ -1,43 +1,43 @@
 ---
-title: "Элемент &lt;dependency&gt; (развертывание ClickOnce) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "urn:schemas-microsoft-com:asm.v2#osVersionInfo"
-  - "urn:schemas-microsoft-com:asm.v2#os"
-  - "http://www.w3.org/2000/09/xmldsig#Transform"
-  - "urn:schemas-microsoft-com:asm.v2#dependency"
-  - "http://www.w3.org/2000/09/xmldsig#DigestValue"
-  - "urn:schemas-microsoft-com:asm.v2#assemblyIdentity"
-  - "http://www.w3.org/2000/09/xmldsig#DigestMethod"
-  - "http://www.w3.org/2000/09/xmldsig#Transforms"
-  - "urn:schemas-microsoft-com:asm.v2#hash"
-  - "urn:schemas-microsoft-com:asm.v2#dependentAssembly"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<dependency> - элемент [манифест развертывания ClickOnce]"
+title: "&lt;зависимость&gt; элемент (развертывание ClickOnce) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- urn:schemas-microsoft-com:asm.v2#osVersionInfo
+- urn:schemas-microsoft-com:asm.v2#os
+- http://www.w3.org/2000/09/xmldsig#Transform
+- urn:schemas-microsoft-com:asm.v2#dependency
+- http://www.w3.org/2000/09/xmldsig#DigestValue
+- urn:schemas-microsoft-com:asm.v2#assemblyIdentity
+- http://www.w3.org/2000/09/xmldsig#DigestMethod
+- http://www.w3.org/2000/09/xmldsig#Transforms
+- urn:schemas-microsoft-com:asm.v2#hash
+- urn:schemas-microsoft-com:asm.v2#dependentAssembly
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <dependency> element [ClickOnce deployment manifest]
 ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
-caps.latest.revision: 27
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 27
+caps.latest.revision: "27"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: df1c2e36f101422655b68fd2a6a012d80b71befa
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Элемент &lt;dependency&gt; (развертывание ClickOnce)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;зависимость&gt; элемент (развертывание ClickOnce)
 Определяет версию устанавливаемого приложения и расположение манифеста приложения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
@@ -72,64 +72,64 @@ caps.handback.revision: 27
 </dependency>  
 ```  
   
-## Элементы и атрибуты  
- Элемент `dependency` является обязательным.  В нем нет атрибутов.  Манифест развертывания может иметь несколько элементов `dependency`.  
+## <a name="elements-and-attributes"></a>Элементы и атрибуты  
+ `dependency` Элемент является обязательным. Он не имеет атрибутов. Манифест развертывания может иметь несколько `dependency` элементов.  
   
- Элемент `dependency` обычно выражает зависимости для главного приложения от сборок, содержащихся в приложении [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  Если приложение Main.exe включает сборку DotNetAssembly.dll, то эта сборка должна быть указана в разделе зависимостей.  Однако зависимость может также выражать другие типы зависимостей, например зависимости от определенной версии среды CLR, от сборки в глобальном кэше сборок \(GAC\) или от объекта COM.  Поскольку эта технология развертывания "без вмешательства", [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] не может инициировать загрузку и установку этих типов зависимостей, но предотвращает запуск приложения в случае, когда одна или несколько указанных зависимостей не существуют.  
+ `dependency` Элемент обычно выражает зависимости для главного приложения от сборок, содержащихся в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения. Если приложение Main.exe использует сборку DotNetAssembly.dll, этой сборки должны быть перечислены в разделе зависимостей. Зависимость, однако также можно выразить другие типы зависимостей, например зависимости от определенной версии среды CLR, от сборки в глобальный кэш сборок (GAC) или COM-объекта. Так как он является технологией развертывания без вмешательства, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] не может инициировать загрузку и установку этих типов зависимостей, но может помешать выполнению приложения Если один или несколько указанных зависимостей не существует.  
   
-## dependentAssembly  
- Обязательный.  Этот элемент содержит элемент `assemblyIdentity`.  В следующей таблице перечислены атрибуты, поддерживаемые элементом `dependentAssembly`.  
-  
-|Атрибут|Описание|  
-|-------------|--------------|  
-|`preRequisite`|Необязательный.  Указание того, что данная сборка уже должна присутствовать в GAC.  Допустимые значения: `true` и `false`.  Если присвоено значение `true` и указанная сбор отсутствует в GAC, запуск приложения невозможен.|  
-|`visible`|Необязательный.  Определение удостоверения приложения верхнего уровня, включая его зависимости.  Предназначен для внутреннего использования в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] для управления хранением и активацией приложений.|  
-|`dependencyType`|Обязательный.  Связь между зависимостью и приложением.  Допустимые значения:<br /><br /> -   `install`.  Компонент обозначает установку отдельно от текущего приложения.<br />-   `preRequisite`.  Компонент необходим текущему приложению.|  
-|`codebase`|Необязательный.  Полный путь к манифесту приложения.|  
-|`size`|Необязательный.  Размер манифеста приложения в байтах.|  
-  
-## assemblyIdentity  
- Обязательный.  Этот элемент является дочерним для элемента `dependentAssembly`.  Содержимое `assemblyIdentity` должно совпадать с описанием в манифесте приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  В следующей таблице перечислены атрибуты элемента `assemblyIdentity`.  
+## <a name="dependentassembly"></a>dependentAssembly  
+ Обязательный. Этот элемент содержит `assemblyIdentity` элемента. В следующей таблице показаны атрибуты `dependentAssembly` поддерживает.  
   
 |Атрибут|Описание|  
-|-------------|--------------|  
-|`Name`|Обязательный.  Идентифицирует имя приложения.|  
-|`Version`|Обязательный.  Указание номера версии приложения в следующем формате: `старший разряд.младший разряд.построение.редакция`|  
-|`publicKeyToken`|Обязательный.  Задание 16\-символьной шестнадцатеричной строки, которая представляет последние 8 байтов хэша SHA\-1 открытого ключа, которым приложение или сборка подписывается.  Открытый ключ доступа, используемый для подписи, должен иметь длину не менее 2048 бит.|  
-|`processorArchitecture`|Обязательный.  Указание микропроцессора.  Действующие значения `x86` для 32\-битового Windows и `IA64` для 64\-битового Windows.|  
-|`Language`|Необязательный.  Определение двух частей кодов языка сборки.  Например, EN\-US для "Английский \(США\)".  По умолчанию используется значение `neutral`.  Этот элемент находится в пространстве имен `asmv2`.|  
-|`type`|Необязательный.  Для обратной совместимости с технологией параллельной установки Windows.  Единственным допустимым значением является `win32`.|  
+|---------------|-----------------|  
+|`preRequisite`|Необязательно. Указывает, что эта сборка должна уже существовать в глобальном кэше СБОРОК. Допустимые значения: `true` и `false`. Если `true`и указанная сборка не существует в глобальном кэше СБОРОК, приложение не запускается.|  
+|`visible`|Необязательно. Определяет идентификатор приложения верхнего уровня, включая его зависимости. Используется внутренним образом [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] для управления хранилищем приложений и активации.|  
+|`dependencyType`|Обязательный. Связь между этой зависимости и приложением. Допустимые значения:<br /><br /> -   `install`. Компонент представляет установку отдельно от текущего приложения.<br />-   `preRequisite`. Компонент, необходимый для текущего приложения.|  
+|`codebase`|Необязательно. Полный путь к манифесту приложения.|  
+|`size`|Необязательно. Размер манифеста приложения, в байтах.|  
   
-## hash  
- Элемент `hash` является необязательным дочерним элементом элемента `file`.  У элемента `hash` отсутствуют атрибуты.  
-  
- Чтобы гарантировать, что ни один из файлов не был изменен после развертывания, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] использует алгоритмический хэш всех файлов в приложении.  Если элемент `hash` не включен, такая проверка выполняться не будет. Поэтому не рекомендуется пропускать элемент `hash`.  
-  
-## dsig:Transforms  
- Элемент `dsig:Transforms` является обязательным дочерним элементом элемента `hash`.  У элемента `dsig:Transforms` отсутствуют атрибуты.  
-  
-## dsig:Transform  
- Элемент `dsig:Transform` является обязательным дочерним элементом элемента `dsig:Transforms`.  В следующей таблице отображены атрибуты элемента `dsig:Transform`.  
+## <a name="assemblyidentity"></a>assemblyIdentity  
+ Обязательный. Этот элемент является дочерним по отношению к элементу `dependentAssembly`. Содержимое `assemblyIdentity` должен быть таким же, как описано в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифеста приложения. В следующей таблице показаны атрибуты `assemblyIdentity` элемента.  
   
 |Атрибут|Описание|  
-|-------------|--------------|  
-|`Algorithm`|Алгоритм, используемый для вычисления дайджеста для этого файла.  В настоящее время значением, используемым [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], может быть только `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
+|---------------|-----------------|  
+|`Name`|Обязательный. Определяет имя приложения.|  
+|`Version`|Обязательный. Указывает номер версии приложения, в следующем формате:`major.minor.build.revision`|  
+|`publicKeyToken`|Обязательный. Указывает символ 16 шестнадцатеричную строку, которая представляет собой последние 8 байтов хэша SHA-1 открытого ключа, которым подписана приложения или сборки. Открытый ключ, используемый для входа должно быть 2048 бит или больше.|  
+|`processorArchitecture`|Обязательный. Указание микропроцессора. Допустимые значения: `x86` для 32-разрядной версии Windows и `IA64` для 64-разрядной версии Windows.|  
+|`Language`|Необязательно. Идентифицирует две части кодов языка сборки. Например EN-US, предназначенную для английского языка (США). Значение по умолчанию — `neutral`. Этот элемент имеет `asmv2` пространства имен.|  
+|`type`|Необязательно. Для обеспечения обратной совместимости с Windows side-by-side устанавливает технологии. Единственным допустимым значением является `win32`.|  
   
-## dsig:DigestMethod  
- Элемент `dsig:DigestMethod` является обязательным дочерним элементом элемента `hash`.  В следующей таблице отображены атрибуты элемента `dsig:DigestMethod`.  
+## <a name="hash"></a>hash  
+ `hash` Элемент является необязательным и дочерним для `file` элемента. `hash` Элемент не имеет атрибутов.  
+  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]использует алгоритмической хэш всех файлов в приложении как проверка безопасности, чтобы убедиться, что ни один из файлов был изменен после развертывания. Если `hash` элемент не был включен, эта проверка не выполняется. Поэтому, пропустив `hash` элемента не рекомендуется.  
+  
+## <a name="dsigtransforms"></a>DSIG:TRANSFORMS  
+ `dsig:Transforms` Элемент является обязательным дочерним элементом `hash` элемента. `dsig:Transforms` Элемент не имеет атрибутов.  
+  
+## <a name="dsigtransform"></a>DSIG:Transform  
+ `dsig:Transform` Элемент является обязательным дочерним элементом `dsig:Transforms` элемента. В следующей таблице показаны атрибуты `dsig:Transform` элемента.  
   
 |Атрибут|Описание|  
-|-------------|--------------|  
-|`Algorithm`|Алгоритм, используемый для вычисления дайджеста для этого файла.  В настоящее время [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] может использовать только значение `http://www.w3.org/2000/09/xmldsig#sha1`.|  
+|---------------|-----------------|  
+|`Algorithm`|Алгоритм, используемый для вычисления хэш-кода для этого файла. В настоящее время единственным значением, используемые [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] — `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
   
-## dsig:DigestValue  
- Элемент `dsig:DigestValue` является обязательным дочерним элементом элемента `hash`.  У элемента `dsig:DigestValue` отсутствуют атрибуты.  Его текстовое значение – это вычисленный хэш для указанного файла.  
+## <a name="dsigdigestmethod"></a>DSIG:DigestMethod  
+ `dsig:DigestMethod` Элемент является обязательным дочерним элементом `hash` элемента. В следующей таблице показаны атрибуты `dsig:DigestMethod` элемента.  
   
-## Заметки  
- Обычно манифест развертывания имеет один элемент `assemblyIdentity`, идентифицирующий имя и версию манифеста приложения.  
+|Атрибут|Описание|  
+|---------------|-----------------|  
+|`Algorithm`|Алгоритм, используемый для вычисления хэш-кода для этого файла. В настоящее время единственным значением, используемые [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] — `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
-## Пример  
- В следующем примере кода показан элемент `dependency` в манифесте развертывания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
+## <a name="dsigdigestvalue"></a>DSIG:DigestValue  
+ `dsig:DigestValue` Элемент является обязательным дочерним элементом `hash` элемента. `dsig:DigestValue` Элемент не имеет атрибутов. Его текстовое значение представляет собой вычисленный хэш для указанного файла.  
+  
+## <a name="remarks"></a>Примечания  
+ Манифесты развертывания обычно имеют один `assemblyIdentity` элемент, который определяет имя и версию манифеста приложения.  
+  
+## <a name="example"></a>Пример  
+ В следующем примере кода показан `dependency` элемент в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест развертывания.  
   
 ```  
 <!-- Identify the assembly dependencies -->  
@@ -147,8 +147,8 @@ caps.handback.revision: 27
 </dependency>  
 ```  
   
-## Пример  
- В следующем примере кода указывается зависимость от сборки, уже установленной в GAC.  
+## <a name="example"></a>Пример  
+ В следующем примере кода указана зависимость от сборки уже установлены в глобальном кэше СБОРОК.  
   
 ```  
 <dependency>  
@@ -158,8 +158,8 @@ caps.handback.revision: 27
 </dependency>  
 ```  
   
-## Пример  
- В следующем примере кода указывается зависимость от определенной версии среды CLR.  
+## <a name="example"></a>Пример  
+ В следующем примере кода указана зависимость от определенной версии среды CLR.  
   
 ```  
 <dependency>  
@@ -169,8 +169,8 @@ caps.handback.revision: 27
 </dependency>  
 ```  
   
-## Пример  
- В следующем примере кода указывается зависимость от операционной системы.  
+## <a name="example"></a>Пример  
+ В следующем примере кода указана зависимость от операционной системы.  
   
 ```  
 <dependency>  
@@ -182,6 +182,6 @@ caps.handback.revision: 27
 </dependency>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [Элемент \<dependency\>](../deployment/dependency-element-clickonce-application.md)
+ [\<зависимость > элемент](../deployment/dependency-element-clickonce-application.md)

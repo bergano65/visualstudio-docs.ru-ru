@@ -1,75 +1,78 @@
 ---
-title: "Функция Object.preventExtensions (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Object.preventExtensions - функция [JavaScript]"
-  - "preventExtensions - функция [JavaScript]"
-  - "запрет новых свойств [JavaScript]"
-  - "свойства [JavaScript], запрет новых"
+title: "Функция Object.preventExtensions (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- properties [JavaScript], preventing new
+- preventing new properties [JavaScript]
+- preventExtensions function [JavaScript]
+- Object.preventExtensions function [JavaScript]
 ms.assetid: e6b48197-2374-4437-a9fe-519dd45a2077
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 868f917cc2249a1634194e4b2dd097e0dcbd4c08
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция Object.preventExtensions (JavaScript)
+# <a name="objectpreventextensions-function-javascript"></a>Функция Object.preventExtensions (JavaScript)
 Предотвращает добавление новых свойств к объекту.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```javascript  
+```JavaScript  
 Object.preventExtensions(object)  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `object`  
- Обязательный.  Объект, который требуется сделать нерасширяемым.  
+ Обязательный. Объект, который необходимо сделать нерасширяемым.  
   
-## Возвращаемое значение  
- Объект, переданный функции.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Объект, который передается в функцию.  
   
-## Исключения  
- Если аргумент `object` не является объектом, вызывается исключение `TypeError`.  
+## <a name="exceptions"></a>Исключения  
+ Если `object` аргумент не является объектом `TypeError` исключения.  
   
-## Заметки  
- Функция `Object.preventExtensions` делает объект нерасширяемым, чтобы к нему невозможно было добавить новые именованные свойства.  После того как объект сделан нерасширяемым, его нельзя сделать расширяемым.  
+## <a name="remarks"></a>Примечания  
+ `Object.preventExtensions` Функция делает объект нерасширяемым, для новых именованных свойств нельзя добавить к нему. После внесения объект нерасширяемым, его нельзя сделать расширяемые.  
   
- Дополнительные сведения о задании атрибутов свойств см. в разделе [Функция Object.defineProperty](../../javascript/reference/object-defineproperty-function-javascript.md).  
+ Сведения о настройке свойств атрибутов см. в разделе [функция Object.defineProperty](../../javascript/reference/object-defineproperty-function-javascript.md).  
   
-## Связанные функции  
- Следующие связанные функции предотвращают изменение атрибутов объекта.  
+## <a name="related-functions"></a>Связанные функции  
+ Следующие связанные функции предотвратить изменение атрибутов объектов.  
   
-|Функция|Объект становится нерасширяемым.|`configurable` получает значение `false` для каждого свойства|`writable` получает значение `false` для каждого свойства|  
-|-------------|--------------------------------------|-------------------------------------------------------------------|---------------------------------------------------------------|  
+|Функция|Сделать объект нерасширяемым|`configurable`имеет значение `false` для каждого свойства|`writable`имеет значение `false` для каждого свойства|  
+|--------------|------------------------------------|--------------------------------------------------------|----------------------------------------------------|  
 |`Object.preventExtensions`|Да|Нет|Нет|  
 |[Object.seal](../../javascript/reference/object-seal-function-javascript.md)|Да|Да|Нет|  
-|[Object.freeze](../../javascript/reference/object-freeze-function-javascript.md)|Да|Да|Да|  
+|[Object.Freeze](../../javascript/reference/object-freeze-function-javascript.md)|Да|Да|Да|  
   
- Следующие функции возвращают `true`, если все условия, отмеченные в следующей таблице, имеют значение true.  
+ Следующие функции возвращают `true` Если все условия, которые помечены в таблице ниже.  
   
-|Функция|Расширяем ли объект?|`configurable` имеет значение `false` для всех свойств?|`writable` имеет значение `false` для всех свойств данных?|  
-|-------------|--------------------------|-------------------------------------------------------------|----------------------------------------------------------------|  
+|Функция|Объект является расширяемым?|`configurable`— `false` для всех свойств?|`writable`— `false` для всех свойств данных?|  
+|--------------|---------------------------|---------------------------------------------------|----------------------------------------------------|  
 |[Object.isExtensible](../../javascript/reference/object-isextensible-function-javascript.md)|Да|Нет|Нет|  
 |[Object.isSealed](../../javascript/reference/object-issealed-function-javascript.md)|Нет|Да|Нет|  
 |[Object.isFrozen](../../javascript/reference/object-isfrozen-function-javascript.md)|Нет|Да|Да|  
   
-## Пример  
- В следующем примере показано использование функции `Object.preventExtensions`.  
+## <a name="example"></a>Пример  
+ В следующем примере показано применение функции `Object.preventExtensions`.  
   
-```javascript  
+```JavaScript  
 // Create an object that has two properties.  
 var obj = { pasta: "spaghetti", length: 10 };  
   
@@ -88,12 +91,12 @@ document.write(obj.newProp);
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Функция Object.seal](../../javascript/reference/object-seal-function-javascript.md)   
- [Функция Object.freeze](../../javascript/reference/object-freeze-function-javascript.md)   
+ [Функция Object.Freeze](../../javascript/reference/object-freeze-function-javascript.md)   
  [Функция Object.isExtensible](../../javascript/reference/object-isextensible-function-javascript.md)   
  [Функция Object.isSealed](../../javascript/reference/object-issealed-function-javascript.md)   
  [Функция Object.isFrozen](../../javascript/reference/object-isfrozen-function-javascript.md)

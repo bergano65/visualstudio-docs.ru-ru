@@ -1,53 +1,55 @@
 ---
-title: "Метод trim (String) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "trim - метод"
+title: "Метод Trim (String) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: trim method
 ms.assetid: 03d38c7e-25cd-4ede-b58e-1a10b5249bab
-caps.latest.revision: 17
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: de358981cfbf569ef35be95b55b3e9856027df35
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод trim (String) (JavaScript)
+# <a name="trim-method-string-javascript"></a>Метод trim (String) (JavaScript)
 Удаляет из строки начальные и конечные пробелы и символы конца строки.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 stringObj.trim()  
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `stringObj`  
- Обязательный.  Объект `String` или строковый литерал.  Эта строка не изменяется методом `trim`.  
+ Обязательный. Объект `String` или строковый литерал. Эта строка не изменяется методом `trim`.  
   
-## Возвращаемое значение  
+## <a name="return-value"></a>Возвращаемое значение  
  Исходная строка с удаленными начальными и конечными пробелами и символами конца строки.  
   
-## Заметки  
- К удаляемым символам относятся пробел, символ табуляции, перевод страницы, возврат каретки и перевод строки.  Полный список символов пробелов и конца строки см. в разделе [Специальные символы](../../javascript/advanced/special-characters-javascript.md).  
+## <a name="remarks"></a>Примечания  
+ К удаляемым символам относятся пробел, символ табуляции, перевод страницы, возврат каретки и перевод строки. В разделе [специальные символы](../../javascript/advanced/special-characters-javascript.md) полный список пробелы и символы конца строки.  
   
- Пример, в котором показана реализация собственного метода обрезки, см. в разделе [Прототипы и их наследование](../../javascript/advanced/prototypes-and-prototype-inheritance.md).  
+ Пример, демонстрирующий способы реализации trim методов см. в разделе [прототипы и наследование прототипов](../../javascript/advanced/prototypes-and-prototype-inheritance.md).  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере показано использование метода `trim`.  
   
-```javascript  
+```JavaScript  
 var message = "    abc def     \r\n  ";  
   
 document.write("[" + message.trim() + "]");  
@@ -59,10 +61,10 @@ document.write("length: " + message.trim().length);
 //  length: 7  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Специальные символы](../../javascript/advanced/special-characters-javascript.md)   
  [Объект String](../../javascript/reference/string-object-javascript.md)   
- [Пример приложения с функциями прокрутки, сдвига и масштабирования](http://code.msdn.microsoft.com/ie/Scrolling-panning-and-6834aaf9)
+ [Прокрутки, сдвига и масштабирования примера приложения](http://code.msdn.microsoft.com/ie/Scrolling-panning-and-6834aaf9)

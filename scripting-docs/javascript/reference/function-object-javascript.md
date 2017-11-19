@@ -1,75 +1,76 @@
 ---
-title: "Объект Function (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "function"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Function - объект"
+title: "Функция объект (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: function
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: Function object
 ms.assetid: d3834767-203c-475e-848c-95c423ba15b6
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4392fd57967e6312c96af50bdff2415d0f2dcd4d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Объект Function (JavaScript)
+# <a name="function-object-javascript"></a>Объект Function (JavaScript)
 Создает новую функцию.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 function functionName([argname1  [, ...[, argnameN]]])  
 {  
-   body  
+   body  
 }  
 ```  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 functionName = new Function( [argname1,  [... argnameN,]] body );  
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `functionName`  
- Обязательный.  Имя новой созданной функции.  
+ Обязательный. Имя созданного функции  
   
  `argname1...argnameN`  
- Необязательный.  Список аргументов, принимаемых функцией.  
+ Необязательно. Список аргументов, который принимает функция.  
   
  `body`  
- Необязательный.  Строка, содержащая блок кода [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], который должен быть выполнен при вызове функции.  
+ Необязательно. Строка, содержащая блок [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] код, выполняемый при вызове функции.  
   
-## Заметки  
- Функция является базовым типом данных в [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  Синтаксис 1 создает значение функции, которое при необходимости преобразуется [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] в объект `Function`.  [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] преобразует объекты `Function`, созданные с синтаксисом 2, в значения функции при вызове этой функции.  
+## <a name="remarks"></a>Примечания  
+ Функция является типом данных в [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Синтаксис 1 создает значение функции [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] преобразует в `Function` объекта при необходимости. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]Преобразует `Function` объекты, создаваемые синтаксиса 2 в значения функции во время вызова функции.  
   
- Синтаксис 1 является стандартным способом создания новых функций в [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  Синтаксис 2 представляет собой альтернативную форму, служащую для создания объектов функции явным образом.  
+ Синтаксис 1 — стандартный способ создания новых функций в [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Используется для создания объектов функций явно альтернативную форму используется синтаксис 2.  
   
- Например, чтобы объявить функцию, которая складывает два переданных ей аргумента, можно использовать один из двух способов:  
+ Например чтобы объявить функцию, которая добавляет два аргумента, переданного ему, это можно сделать одним из двух способов:  
   
-## Пример 1  
+## <a name="example-1"></a>Пример 1  
   
-```javascript  
+```JavaScript  
 function add(x, y)  
 {  
    return(x + y);  
 }  
 ```  
   
-## Пример 2  
+## <a name="example-2"></a>Пример 2  
   
 ```  
 var add = function(x, y) {  
@@ -77,26 +78,25 @@ var add = function(x, y) {
 }  
 ```  
   
- В обоих случаях функция вызывается с помощью строки кода, аналогичной следующей:  
+ В любом случае вызове функции со строкой кода следующего вида:  
   
-```javascript  
+```JavaScript  
 add(2, 3);  
 ```  
   
 > [!NOTE]
->  При вызове функции следует обязательно указывать скобки и все обязательные аргументы.  При вызове функции без скобок возвращается сама функция, а не результаты выполнения этой функции.  
+>  При вызове функции, убедитесь, что всегда включать круглые скобки и все обязательные аргументы. Вызов функции без скобок вызывает функция должны быть возвращены вместо возвращаемого значения функции.  
   
-## Свойства  
- [0...  
-          Свойства "n"](../../javascript/reference/0-dot-dot-dot-n-properties-arguments-javascript.md) &#124;[Свойство arguments](../../javascript/reference/arguments-property-function-javascript.md) &#124; [Свойство callee](../../javascript/reference/callee-property-arguments-javascript.md) &#124; [Свойство caller](../../javascript/reference/caller-property-function-javascript.md) &#124; [Свойство constructor](../../javascript/reference/constructor-property-object-javascript.md) &#124; [Свойство "length" \(функция\)](../../javascript/reference/length-property-function-javascript.md) &#124; [Свойство prototype](../../javascript/reference/prototype-property-object-javascript.md)  
+## <a name="properties"></a>Свойства  
+ [0... n свойства](../../javascript/reference/0-dot-dot-dot-n-properties-arguments-javascript.md) &#124;[ Свойство arguments](../../javascript/reference/arguments-property-function-javascript.md) &#124; [свойство callee](../../javascript/reference/callee-property-arguments-javascript.md) &#124; [свойство caller](../../javascript/reference/caller-property-function-javascript.md) &#124; [свойство constructor](../../javascript/reference/constructor-property-object-javascript.md) &#124; [свойство length (функция)](../../javascript/reference/length-property-function-javascript.md) &#124; [свойство prototype](../../javascript/reference/prototype-property-object-javascript.md)  
   
-## Методы  
- [Метод apply](../../javascript/reference/apply-method-function-javascript.md) &#124; [Метод bind](../../javascript/reference/bind-method-function-javascript.md) &#124; [Метод call](../../javascript/reference/call-method-function-javascript.md) &#124; [Метод toString](../../javascript/reference/tostring-method-object-javascript.md) &#124; [Метод valueOf](../../javascript/reference/valueof-method-object-javascript.md)  
+## <a name="methods"></a>Методы  
+ [Метод Apply](../../javascript/reference/apply-method-function-javascript.md) &#124; [метод bind](../../javascript/reference/bind-method-function-javascript.md) &#124; [вызовите метод](../../javascript/reference/call-method-function-javascript.md) &#124; [метод toString](../../javascript/reference/tostring-method-object-javascript.md) &#124; [метод valueOf](../../javascript/reference/valueof-method-object-javascript.md)  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]  
   
-## См. также  
- [Оператор function](../../javascript/reference/function-statement-javascript.md)   
+## <a name="see-also"></a>См. также  
+ [Оператор Function](../../javascript/reference/function-statement-javascript.md)   
  [Оператор new](../../javascript/reference/new-operator-decrementjavascript.md)   
  [Оператор var](../../javascript/reference/var-statement-javascript.md)

@@ -1,67 +1,69 @@
 ---
-title: "Метод setUTCFullYear (Date) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "setUTCFullYear"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "даты, время в формате UTC"
-  - "setUTCFullYear - метод"
-  - "даты в формате UTC, параметр"
+title: "Метод setUTCFullYear (Date) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: setUTCFullYear
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- dates, UTC
+- setUTCFullYear method
+- UTC dates, setting
 ms.assetid: e6c51b49-0149-4f9a-aa74-c73c0306f98e
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2dda8b75dd8bc8dac87ea383546f392b064c1d63
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод setUTCFullYear (Date) (JavaScript)
-Устанавливает значение года в объекте `Date`, используя универсальное время UTC.  
+# <a name="setutcfullyear-method-date-javascript"></a>Метод setUTCFullYear (Date) (JavaScript)
+Устанавливает значение года `Date` с помощью общего скоординированного времени (UTC).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 dateObj.setUTCFullYear(numYear[, numMonth[, numDate]])   
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `dateObj`  
- Обязательный.  Любой объект `Date`.  
+ Обязательный. Любой объект `Date`.  
   
  `numYear`  
- Обязательный.  Числовое значение, представляющее год.  
+ Обязательный. Числовое значение, представляющее год.  
   
  `numMonth`  
- Необязательный.  Числовое значение, равное месяцу.  Значение для января равно 0, значения других месяцев увеличиваются соответственно.  Должен указываться, если указывается аргумент *numDate*.  
+ Необязательно. Числовое значение, представляющее месяц. Значение для января равно 0, а значения других месяцев увеличиваются. Если необходимо указать *numDate* предоставляется.  
   
  *numDate*  
- Необязательный.  Числовое значение, обозначающее день месяца.  
+ Необязательно. Числовое значение, обозначающее день месяца.  
   
-## Заметки  
- Все методы **set**, принимающие необязательные аргументы, в случае, когда необязательный аргумент не задан, используют значение, возвращаемое соответствующими методами **get**.  Например, если аргумент `numMonth` не задан, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] использует значение, возвращенное методом `getUTCMonth`.  
+## <a name="remarks"></a>Примечания  
+ Все **задать** методы, принимающие необязательные аргументы, используют значение, возвращенное из соответствующего **получить** методов, если аргумент не задан. Например если `numMonth` аргумент не указан, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] использует значение, возвращенное из `getUTCMonth` метод.  
   
- Кроме того, если значение аргумента превышает верхнюю границу его диапазона или является отрицательным числом, остальные хранящиеся значения изменяются соответственно.  
+ Кроме того, если значение аргумента больше, диапазона или является отрицательным числом, остальные хранящиеся значения изменяются соответствующим образом.  
   
- Чтобы установить год с использованием местного времени, используйте метод `setFullYear`.  
+ Чтобы установить год с помощью локального времени, используйте `setFullYear` метод.  
   
- Диапазон лет, поддерживаемых в объекте `Date`, равен приблизительно 285 616 годам в каждую сторону от 1970 года.  
+ Диапазон лет, поддерживаемых в `Date` объекта составляет приблизительно 285616 лет в каждую сторону от 1970 года.  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере показано использование метода `setUTCFullYear`.  
   
-```javascript  
+```JavaScript  
 var dtFirst = new Date();  
 dtFirst.setUTCFullYear(2007);  
   
@@ -74,12 +76,12 @@ document.write ("<br />");
 document.write (dtSecond.toUTCString());  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Относится к**: [Объект Date](../../javascript/reference/date-object-javascript.md)  
+ **Применимо к**: [Date Object](../../javascript/reference/date-object-javascript.md)  
   
-## См. также  
- [Метод getFullYear \(Date\)](../../javascript/reference/getfullyear-method-date-javascript.md)   
- [Метод getUTCFullYear \(Date\)](../../javascript/reference/getutcfullyear-method-date-javascript.md)   
- [Метод setFullYear \(Date\)](../../javascript/reference/setfullyear-method-date-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Метод getFullYear (Date)](../../javascript/reference/getfullyear-method-date-javascript.md)   
+ [Метод getUTCFullYear (Date)](../../javascript/reference/getutcfullyear-method-date-javascript.md)   
+ [Метод setFullYear (Date)](../../javascript/reference/setfullyear-method-date-javascript.md)

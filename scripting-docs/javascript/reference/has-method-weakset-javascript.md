@@ -1,48 +1,51 @@
 ---
-title: "Метод has (WeakSet) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Метод has (WeakSet) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: e24f0876-26bd-4007-b12a-360bb6fa0951
-caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0dbc7e17e3fd73730386293c5e3f894455e41a93
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод has (WeakSet) (JavaScript)
+# <a name="has-method-weakset-javascript"></a>Метод has (WeakSet) (JavaScript)
 Возвращает `true`, если `WeakSet` содержит указанный элемент.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```javascript  
+```JavaScript  
 setObj.has(obj)  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `setObj`  
- Обязательный.  Объект `WeakSet`.  
+ Обязательный. Объект `WeakSet`.  
   
  `obj`  
- Обязательный.  Элемент для проверки.  
+ Обязательный. Элемент для проверки.  
   
-## Значение свойства, возвращаемое значение  
+## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение  
  `true`, если набор содержит указанный элемент.  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере показано, как добавлять элементы в `WeakSet`, а затем проверять, содержит ли набор конкретный элемент.  
   
-```javascript  
+```JavaScript  
 var ws = new WeakSet();  
   
 var str = new String("Thomas Jefferson");  
@@ -61,8 +64,7 @@ console.log(ws.has(str));
 // true  
 // true  
 // false  
-  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]

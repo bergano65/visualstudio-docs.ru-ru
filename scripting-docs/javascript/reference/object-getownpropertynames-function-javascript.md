@@ -1,56 +1,59 @@
 ---
-title: "Функция Object.getOwnPropertyNames (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "getOwnPropertyNames - метод [JavaScript]"
-  - "Object.getOwnPropertyNames - метод [JavaScript]"
+title: "Функция Object.getOwnPropertyNames (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- getOwnPropertyNames method [JavaScript]
+- Object.getOwnPropertyNames method [JavaScript]
 ms.assetid: 59f4b6b1-02be-44b3-a06c-a5ca8f70c3d8
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 76ca0036b9dedf7b4cee7b543469939e35dfe8d1
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция Object.getOwnPropertyNames (JavaScript)
-Возвращает имена собственных свойств объекта.  Собственные свойства объекта — те, которые определены непосредственно для этого объекта, а не унаследованы от прототипа объекта.  Свойства объекта включают как поля \(объекты\), так и функции.  
+# <a name="objectgetownpropertynames-function-javascript"></a>Функция Object.getOwnPropertyNames (JavaScript)
+Возвращает имена собственные свойства объекта. Собственные свойства объекта являются те, которые определены в этом объекте и не наследуется от прототипа. Свойства объекта включают поля (объекты) и функции.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```javascript  
+```JavaScript  
 Object.getOwnPropertyNames(object)  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
   
 |Параметр|Определение|  
-|--------------|-----------------|  
-|`object`|Обязательный.  Объект, содержащий собственные свойства.|  
+|---------------|----------------|  
+|`object`|Обязательный. Объект, содержащий собственные свойства.|  
   
-## Возвращаемое значение  
- Массив, содержащий имена собственных свойств объекта.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Массив, содержащий имена собственные свойства объекта.  
   
-## Исключения  
- Если значение, заданное для аргумента `object` не является именем объекта, возникает исключение `TypeError`.  
+## <a name="exceptions"></a>Исключения  
+ Если значение указано для `object` аргумент не является именем объекта, `TypeError` исключения.  
   
-## Заметки  
- Метод `getOwnPropertyNames` возвращает имена как перечислимых, так и неперечислимых свойств и методов.  Чтобы вернуть имена только перечислимых свойств и методов, можно использовать [Функция Object.keys](../../javascript/reference/object-keys-function-javascript.md).  
+## <a name="remarks"></a>Примечания  
+ `getOwnPropertyNames` Метод возвращает имена перечисляемую и не перечисляемых свойств и методов. Чтобы вернуть только имена перечисляемые свойства и методы, можно использовать [функция Object.keys](../../javascript/reference/object-keys-function-javascript.md).  
   
-## Пример  
- В следующем примере создается объект, имеющий три свойства и метод.  Затем используется метод `getOwnPropertyNames` для получения собственных свойств \(включая метод\) объекта.  
+## <a name="example"></a>Пример  
+ Следующий пример создает объект, который имеет три свойств и методов. Затем он использует `getOwnPropertyNames` метод, чтобы получить собственные свойства (включая метод) объекта.  
   
-```javascript  
+```JavaScript  
 function Pasta(grain, width, shape) {  
     // Define properties.  
     this.grain = grain;  
@@ -72,10 +75,10 @@ document.write (arr);
 //   grain,width,shape,toString  
 ```  
   
-## Пример  
- В следующем примере отображаются имена свойств, начинающиеся с буквы "s" объекта spaghetti, созданного с помощью конструктора Pasta.  
+## <a name="example"></a>Пример  
+ В следующем примере отображаются имена свойств, которые начинаются на букву "в **спагетти** объект создан с **Макарон** конструктор.  
   
-```javascript  
+```JavaScript  
 function Pasta(grain, size, shape) {  
     this.grain = grain;   
     this.size = size;   
@@ -99,8 +102,8 @@ function CheckKey(value) {
 // size,shape  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Функция Object.keys](../../javascript/reference/object-keys-function-javascript.md)

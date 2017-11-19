@@ -1,49 +1,51 @@
 ---
-title: "Свойство arguments (Function) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "arguments"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "аргументы, свойство arguments"
-  - "Arguments - свойство"
+title: "Свойство arguments (Function) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: arguments
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- arguments, arguments property
+- Arguments property
 ms.assetid: efc7a1ee-0880-4f05-b0f2-808f31a4af1d
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5b0b18fb8164639119e5db5e7a5d76b4280f9c9d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Свойство arguments (Function) (JavaScript)
-Получает аргументы выполняемого в данный момент объекта `Function`.  
+# <a name="arguments-property-function-javascript"></a>Свойство arguments (Function) (JavaScript)
+Возвращает аргументы для выполняющегося в данный момент `Function` объекта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 function.arguments  
 ```  
   
-## Заметки  
- Аргумент `function` — это имя выполняемой в данный момент функции, и он может быть пропущен.  
+## <a name="remarks"></a>Примечания  
+ `function` Аргумента — имя текущей выполняемой функции и может быть опущено.  
   
- Это свойство позволяет функции обрабатывать различное число аргументов.  Свойство **length** объекта `arguments` содержит число аргументов, переданных функции.  Отдельные аргументы, содержащиеся в объекте `arguments`, доступны таким же образом, как элементы массива.  
+ Это свойство предоставляет функцию для обработки переменное число аргументов. **Длина** свойство `arguments` объект содержит количество аргументов, переданных в функцию. Отдельные аргументы, содержащиеся в `arguments` объекту осуществляется таким же образом, элементы массива.  
   
-## Пример  
- В следующем примере показано использование свойства `arguments`.  
+## <a name="example"></a>Пример  
+ В следующем примере показано применение свойства `arguments`.  
   
-```javascript  
+```JavaScript  
 function ArgTest(arg1, arg2){  
    var s = "";  
    s += "The individual arguments are: "  
@@ -69,9 +71,9 @@ document.write(ArgTest(1, 2, "hello"));
 // Output: The individual arguments are: 1 2 hello  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Объект arguments](../../javascript/reference/arguments-object-javascript.md)   
  [Оператор function](../../javascript/reference/function-statement-javascript.md)

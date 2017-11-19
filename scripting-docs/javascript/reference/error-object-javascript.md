@@ -1,33 +1,34 @@
 ---
-title: "Объект Error (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "Error"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Error - объект"
+title: "Объект Error (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: Error
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: Error object
 ms.assetid: 0b27d6ec-3997-4e91-a6c0-5afbaf494db7
-caps.latest.revision: 25
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 25
+caps.latest.revision: "25"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: efc03f13a501a1a13a2e7f3eea000b406559f30b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Объект Error (JavaScript)
+# <a name="error-object-javascript"></a>Объект Error (JavaScript)
 Содержит сведения об ошибках.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
@@ -36,26 +37,26 @@ errorObj = new Error([number])
 errorObj = new Error([number[, description]])  
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `errorObj`  
- Обязательный.  Имя переменной, которой присваивается объект `Error`.  Присваивание переменной опускается, если ошибка создается с помощью оператора `throw`.  
+ Обязательный. Имя переменной, которой присваивается объект `Error`. Присваивание переменной опускается, если ошибка создается с помощью оператора `throw`.  
   
  `number`  
- Необязательный.  Числовое значение, присваиваемое ошибке.  Нуль, если аргумент не указан.  
+ Необязательно. Числовое значение, присваиваемое ошибке. Нуль, если аргумент не указан.  
   
  `description`  
- Необязательный.  Короткая строка, описывающая ошибку.  Пустая строка, если аргумент не указан.  
+ Необязательно. Короткая строка, описывающая ошибку. Пустая строка, если аргумент не указан.  
   
-## Заметки  
- Каждый раз, когда возникает ошибка времени выполнения, для ее описания создается объект `Error`.  Этот экземпляр имеет два встроенных свойства: свойство `description` содержит описание ошибки, а свойство `number` содержит номер ошибки.  Дополнительные сведения см. в разделе [Ошибки времени выполнения JavaScript](../../javascript/reference/javascript-run-time-errors.md).  
+## <a name="remarks"></a>Примечания  
+ Каждый раз, когда возникает ошибка времени выполнения, для ее описания создается объект `Error`. Этот экземпляр имеет два встроенных свойства: свойство `description` содержит описание ошибки, а свойство `number` содержит номер ошибки. Дополнительные сведения см. в разделе [ошибки времени выполнения JavaScript](../../javascript/reference/javascript-run-time-errors.md).  
   
- Номер ошибки представляет собой 32\-разрядное значение.  Старшие 16 разрядов — это код устройства, а младшие разряды — фактический код ошибки.  
+ Номер ошибки представляет собой 32-разрядное значение. Старшие 16 разрядов — это код устройства, а младшие разряды — фактический код ошибки.  
   
- Объекты `Error` также можно создавать явно, используя приведенный выше синтаксис, или вызывать с помощью оператора `throw`.  В обоих случаях можно добавлять любые свойства, чтобы расширить возможности объекта `Error`.  
+ Объекты `Error` также можно создавать явно, используя приведенный выше синтаксис, или вызывать с помощью оператора `throw`. В обоих случаях можно добавлять любые свойства, чтобы расширить возможности объекта `Error`.  
   
- Как правило, локальная переменная, создаваемая в операторе **try...catch**, ссылается на неявно созданный объект `Error`.  Поэтому вы можете использовать номер ошибки и описание нужным вам образом.  
+ Как правило, локальная переменная, созданная в **try... catch** Инструкция ссылается на неявно созданный `Error` объекта. Поэтому вы можете использовать номер ошибки и описание нужным вам образом.  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере показано использование объекта `Error`.  
   
 ```  
@@ -75,10 +76,10 @@ function checkInput(x) {
 checkInput("not a number");  
 ```  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере показано использование неявно созданного объекта `Error`.  
   
-```javascript  
+```JavaScript  
 try  
    {  
    // Cause an error.  
@@ -109,18 +110,18 @@ catch(e)
   
 ```  
   
-## Методы  
- [Метод toString \(Error\)](../../javascript/reference/tostring-method-error.md) &#124; [Метод valueOf \(Date\)](../../javascript/reference/valueof-method-date.md)  
+## <a name="methods"></a>Методы  
+ [Метод toString (Error)](../../javascript/reference/tostring-method-error.md) &#124; [метод valueOf (Date)](../../javascript/reference/valueof-method-date.md)  
   
-## Свойства  
- [Свойство constructor \(Error\)](../../javascript/reference/constructor-property-error.md) &#124; [Свойство description](../../javascript/reference/description-property-error-javascript.md) &#124; [Свойство message](../../javascript/reference/message-property-error-javascript.md) &#124; [Свойство name](../../javascript/reference/name-property-error-javascript.md) &#124; [Свойство number](../../javascript/reference/number-property-error-javascript.md) &#124; [Свойство prototype \(Error\)](../../javascript/reference/prototype-property-error.md) &#124; [Свойство stack \(Error\)](../../javascript/reference/stack-property-error-javascript.md) &#124; [Свойство stackTraceLimit \(Error\)](../../javascript/reference/stacktracelimit-property-error-javascript.md)  
+## <a name="properties"></a>Свойства  
+ [Свойство constructor (Error)](../../javascript/reference/constructor-property-error.md) &#124; [свойство description](../../javascript/reference/description-property-error-javascript.md) &#124; [свойство message](../../javascript/reference/message-property-error-javascript.md) &#124; [свойство name](../../javascript/reference/name-property-error-javascript.md) &#124; [свойство number](../../javascript/reference/number-property-error-javascript.md) &#124; [свойство prototype (Error)](../../javascript/reference/prototype-property-error.md) &#124; [свойство stack (Error)](../../javascript/reference/stack-property-error-javascript.md) &#124; [свойство stackTraceLimit (Error)](../../javascript/reference/stacktracelimit-property-error-javascript.md)  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv5](../../javascript/reference/includes/jsv5-md.md)]  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Оператор new](../../javascript/reference/new-operator-decrementjavascript.md)   
  [Оператор throw](../../javascript/reference/throw-statement-javascript.md)   
- [Оператор try...catch...finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)   
+ [Try... catch... finally инструкции](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)   
  [Оператор var](../../javascript/reference/var-statement-javascript.md)   
- [Пример приложения Hilo на JavaScript \(Магазин Windows\)](http://hilojs.codeplex.com/SourceControl/latest)
+ [Пример приложения Hilo JavaScript (магазин Windows)](http://hilojs.codeplex.com/SourceControl/latest)

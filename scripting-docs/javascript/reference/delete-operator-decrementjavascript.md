@@ -1,51 +1,53 @@
 ---
-title: "Оператор delete (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "delete_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "элементы массива, удаление"
-  - "свойства, удаление"
-  - "Оператор delete"
+title: "Оператор delete (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: delete_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- array elements, deleting
+- properties, deleting
+- delete operator
 ms.assetid: 55c6487e-96ea-455b-a7ed-dc35c41ac2f3
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ee3def1977c0b29ee14ebf836f2d9ebb51d5a5ef
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Оператор delete (JavaScript)
+# <a name="delete-operator-javascript"></a>Оператор delete (JavaScript)
 Удаляет свойство из объекта или элемент из массива.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 delete expression  
 ```  
   
-## Заметки  
- Аргумент `expression` — допустимое выражение [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], которое обычно дает в результате имя свойства или элемент массива.  
+## <a name="remarks"></a>Примечания  
+ `expression` Аргумент действителен [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] , обычно результатом выражения свойство name или элемента массива.  
   
- Если результатом `expression` является объект, свойство, указанное в `expression`, существует, и объект не допустит его удаления, то возвращается значение `false`.  
+ Если результат `expression` — это объект, свойства, указанного в `expression` существует, и будут удалены, не позволяет объект `false` возвращается.  
   
- Во всех остальных случаях возвращается значение `true`.  
+ Во всех остальных случаях `true` возвращается.  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере показано, как удалить элемент из массива.  
   
-```javascript  
+```JavaScript  
 // Create an array.  
 var ar = new Array (10, 11, 12, 13, 14);  
   
@@ -61,10 +63,10 @@ document.write ("array: " + ar);
 //  array: 10,,12,13,14  
 ```  
   
-## Пример  
- В следующем примере показано, как удалять свойства из объекта.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как удалить свойства из объекта.  
   
-```javascript  
+```JavaScript  
 // Create an object and add expando properties.  
 var myObj = new Object();  
 myObj.name = "Fred";  
@@ -83,9 +85,9 @@ document.write ("count: " + myObj.count);
 //  count: undefined  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Приоритет операторов](../../javascript/operator-subtractprecedence-javascript.md)   
- [Сводный список операторов \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Сводный список операторов (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

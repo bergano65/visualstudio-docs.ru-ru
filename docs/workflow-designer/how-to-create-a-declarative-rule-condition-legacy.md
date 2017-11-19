@@ -1,26 +1,30 @@
 ---
-title: "Как создать условие декларативного правила (для прежних версий) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "условные операторы, декларативные условия правил"
-  - "декларативные условия правил"
-  - "диалоговое окно «Редактор условий для правил»"
+title: "Как: создать условие декларативного правила (для прежних версий) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords:
+- declarative rule conditions
+- condition statements, declarative rule conditions
+- Rule Condition Editor dialog box
 ms.assetid: 804b6129-c433-408f-a424-46987967730c
-caps.latest.revision: 5
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 736c36df419d601c27998d8d34bde9abe5976a17
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Как создать условие декларативного правила (для прежних версий)
+# <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Как создать условие декларативного правила (для прежних версий)
 В этом разделе описывается объявление условия правила с помощью средства [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] прежних версий, ориентированного на работу с [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] или [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
   
- Условный оператор оценивает значение **True** или значение **False**.Условие декларативного правила — это условный оператор, который создается с использованием диалогового окна [Диалоговое окно «Редактор условий для правила» \(для прежних версий\)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) и сохраняется в формате XML вместе с рабочим процессом.Он может включать предикаты, которые сравнивают состояние рабочего процесса и булеву алгебру, в которой объединено множество предикатов.  
+ Условный оператор оценивает значение **True** или **False**. Условие декларативного правила — условный оператор, который создается с помощью [условие редактора диалогового окна правила (для прежних версий)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) и хранятся в виде XML с рабочим процессом. Он может включать предикаты, которые сравнивают состояние рабочего процесса и булеву алгебру, в которой объединено множество предикатов.  
   
  Условия декларативного правила используются в следующих готовых действиях Windows Workflow Foundation:  
   
@@ -30,42 +34,42 @@ caps.handback.revision: 5
   
 -   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+-   [У операции WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
 -   [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
   
 -   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
   
-### Для создания условия декларативного правила используется Редактор условий для правил  
+### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>Для создания условия декларативного правила используется Редактор условий для правил  
   
-1.  В окне действия **Свойства**, в зависимости от действия, выберите свойство **Condition** или свойство **UntilCondition**.  
+1.  В действии **свойства** окно, нажмите кнопку **условие** свойство или **UntilCondition** свойства, в зависимости от активности.  
   
-2.  Выберите из списка для свойства пункт **Условие декларативного правила**.  
+2.  Выберите **условие декларативного правила** из списка для свойства.  
   
-3.  Разверните свойство **Условие** или **UntilCondition**.  
+3.  Разверните **условие** или **UntilCondition** свойство.  
   
-4.  Выберите свойство **ConditionName**.  
+4.  Нажмите кнопку **ConditionName** свойство.  
   
-5.  Нажмите кнопку с многоточием **ConditionName\[…\]**, чтобы открыть диалоговое окно **Выбрать условие**.  
+5.  Нажмите кнопку **ConditionName** многоточие **[...]**  Открытие **выбрать условие** диалоговое окно.  
   
-6.  Выберите **Новое условие** для открытия диалогового окна **Редактор условий для правил**.  
+6.  Нажмите кнопку **новое условие** Открытие **редактор условий для правил** диалоговое окно.  
   
-7.  Введите выражение для условия в текстовое поле **Условие**.  
+7.  Введите выражение для условия в **условие** текстовое поле.  
   
-     Дополнительные сведения о создании выражений условия см. в разделе [Диалоговое окно «Редактор условий для правила» \(для прежних версий\)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).  
+     Сведения о способах создания выражения условия в разделе [условие редактора диалогового окна правила (для прежних версий)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).  
   
-8.  После завершения создания выражения условия нажмите кнопку **ОК**, чтобы закрыть диалоговое окно и создать условие правила с назначенным именем.  
+8.  После создания выражения условия нажмите кнопку **ОК** закрыть диалоговое окно и создать условие правила с назначенным именем.  
   
-     Откроется диалоговое окно **Выбрать условие**.  
+     **Выбрать условие** откроется диалоговое окно.  
   
-     Дополнительные сведения о порядке использования диалогового окна **Выбрать условие** см. раздел [Диалоговое окно «Выбор условия» \(для прежних версий\)](../workflow-designer/select-condition-dialog-box-legacy.md).  
+     Сведения об использовании **выбрать условие** диалоговое окно, в разделе [условие диалоговое окно Выбор (для прежних версий)](../workflow-designer/select-condition-dialog-box-legacy.md).  
   
-## См. также  
- [Действия с рабочими процессами для прежних версий](../workflow-designer/legacy-workflow-activities.md)   
- [Использование ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65066)   
+## <a name="see-also"></a>См. также  
+ [Действия рабочего процесса прежних версий](../workflow-designer/legacy-workflow-activities.md)   
+ [С помощью ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65066)   
  [Использование действия IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65075)   
- [Использование действия Replicator](http://go.microsoft.com/fwlink?LinkID=65080)   
- [Использование действия While](http://go.microsoft.com/fwlink?LinkID=65091)   
- [Диалоговое окно «Редактор условий для правила» \(для прежних версий\)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)   
- [Диалоговое окно «Выбор условия» \(для прежних версий\)](../workflow-designer/select-condition-dialog-box-legacy.md)   
+ [С помощью операции репликатора](http://go.microsoft.com/fwlink?LinkID=65080)   
+ [С помощью While действия](http://go.microsoft.com/fwlink?LinkID=65091)   
+ [Диалоговое окно «Редактор условий для правил» (для прежних версий)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)   
+ [Диалоговое окно выберите условие (для прежних версий)](../workflow-designer/select-condition-dialog-box-legacy.md)   
  [Использование условий в рабочих процессах](http://go.microsoft.com/fwlink?LinkID=65009)

@@ -1,40 +1,43 @@
 ---
-title: "Конструктор действия TerminateWorkflow | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "System.Activities.Statements.TerminateWorkflow.UI"
+title: "Конструктор действия Terminateworkflow | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: System.Activities.Statements.TerminateWorkflow.UI
 ms.assetid: 08e632ed-0724-4fb4-9df1-f8d443eaf0ac
-caps.latest.revision: 4
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 0a3b7c7cf56aa465f88ae918056e2d71ad6c41e4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Конструктор действия TerminateWorkflow
-Конструктор операций **TerminateWorkflow** используется для создания и настройки действия <xref:System.Activities.Statements.TerminateWorkflow>.  
+# <a name="terminateworkflow-activity-designer"></a>Конструктор действия TerminateWorkflow
+**TerminateWorkflow** конструктора действий используется для создания и настройки <xref:System.Activities.Statements.TerminateWorkflow> действия.  
   
-## Действие TerminateWorkflow  
+## <a name="the-terminateworkflow-activity"></a>Действие TerminateWorkflow  
  Действие <xref:System.Activities.Statements.TerminateWorkflow> прерывает выполнение текущего рабочего процесса.  
   
-### Использование конструктора операций TerminateWorkflow  
- Конструктор операций **TerminateWorkflow** можно найти в категории **ВыполнениеОбласти элементов**, нажав на вкладку **Область элементов** \(Иначе выберите **Область элементов** из меню **Просмотр**, или же CTRL\+ALT\+X.\)  
+### <a name="using-the-terminateworkflow-activity-designer"></a>Использование конструктора операций TerminateWorkflow  
+ **TerminateWorkflow** конструктора действий можно найти в **среды выполнения** категории **элементов**, который нажав **элементов** вкладка (либо выберите **элементов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)  
   
- Конструктор операций **TerminateWorkflow** можно перетащить из **Области элементов** в область [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] в любое место, куда обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>.Будет создано действие <xref:System.Activities.Statements.TerminateWorkflow> со значением по умолчанию **DisplayName** для TerminateWorkflow.<xref:System.Activities.Activity.DisplayName%2A> можно изменить в заголовке конструктора операций **TerminateWorkflow** либо в поле **DisplayName** таблицы свойств.  
+ **TerminateWorkflow** конструктора можно перетащить из **элементов** в [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] поверхности везде, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. При этом создается <xref:System.Activities.Statements.TerminateWorkflow> действия по умолчанию **DisplayName** для TerminateWorkflow. <xref:System.Activities.Activity.DisplayName%2A> Можно изменить в заголовке **TerminateWorkflow** конструктора или в **DisplayName** поле сетки свойств.  
   
-### Свойства TerminateWorkflow  
- В следующей таблице показаны свойства <xref:System.Activities.Statements.TerminateWorkflow> и описано их использование в конструкторе.Эти свойства можно изменить в таблице свойств, а некоторые из них можно изменить в области [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].  
+### <a name="the-terminateworkflow-properties"></a>Свойства TerminateWorkflow  
+ В следующей таблице показаны свойства <xref:System.Activities.Statements.TerminateWorkflow> и описано их использование в конструкторе. Эти свойства можно изменить в таблице свойств, а некоторые из них можно изменить в области [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].  
   
-|Имя свойства|Обязательное|Использование|  
-|------------------|------------------|-------------------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|Нет|Понятное имя действия <xref:System.Activities.Statements.TerminateWorkflow>.Значение по умолчанию — TerminateWorkflow.Несмотря на то что использовать отображаемое имя необязательно, его все же рекомендуется задавать.|  
-|<xref:System.Activities.Statements.TerminateWorkflow.Exception%2A>|Нет|Исключение, которое будет создано при прерывании рабочего процесса.Задайте это свойство в таблице свойств.|  
-|<xref:System.Activities.Statements.TerminateWorkflow.Reason%2A>|Нет|Причина, которая объясняет причину прерывания рабочего процесса.Задайте это свойство в таблице свойств.|  
+|Имя свойства|Обязательно|Использование|  
+|-------------------|--------------|-----------|  
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.TerminateWorkflow>. Значение по умолчанию - TerminateWorkflow. Несмотря на то что использовать отображаемое имя необязательно, его все же рекомендуется задавать.|  
+|<xref:System.Activities.Statements.TerminateWorkflow.Exception%2A>|False|Исключение, которое будет создано при прерывании рабочего процесса. Задайте это свойство в таблице свойств.|  
+|<xref:System.Activities.Statements.TerminateWorkflow.Reason%2A>|False|Причина, которая объясняет причину прерывания рабочего процесса. Задайте это свойство в таблице свойств.|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Среда выполнения](../workflow-designer/runtime-activity-designers.md)   
- [Persist](../workflow-designer/persist-activity-designer.md)
+ [Сохранение](../workflow-designer/persist-activity-designer.md)

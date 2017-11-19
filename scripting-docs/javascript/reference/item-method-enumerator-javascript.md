@@ -1,51 +1,52 @@
 ---
-title: "Метод item (Enumerator) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "item"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Item - метод"
+title: "Метод Item (Enumerator) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: item
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: Item method
 ms.assetid: a88e93f2-42df-4578-a4f9-0760bd074185
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 94275b2c82f199c96ef2d6c7d667fd27fba2702d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод item (Enumerator) (JavaScript)
+# <a name="item-method-enumerator-javascript"></a>Метод item (Enumerator) (JavaScript)
 Возвращает текущий элемент в коллекции.  
   
 > [!WARNING]
 >  Этот объект поддерживается только в Internet Explorer.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
-enumObj.item()  
+enumObj.item()   
 ```  
   
-## Заметки  
- Обязательная ссылка *enumObj* представляет собой любой объект `Enumerator`.  
+## <a name="remarks"></a>Примечания  
+ Обязательная ссылка *enumObj* представляет собой любой объект `Enumerator` .  
   
  Метод **item** возвращает текущий элемент. Если коллекция пуста или текущий элемент не определен, этот метод возвращает значение **undefined**.  
   
-## Пример  
- В следующем коде метод **item** используется для возврата элемента коллекции `Drives`.  
+## <a name="example"></a>Пример  
+ В следующем коде метод **item** используется для возврата элемента коллекции `Drives` .  
   
-```javascript  
+```JavaScript  
 function ShowDrives()  
 {  
     var s = "";  
@@ -82,12 +83,12 @@ function ShowDrives()
 }  
 ```  
   
-## Требования  
- Поддерживается в следующих режимах документов: случайный режим, стандартный режим Internet Explorer 6, стандартный режим Internet Explorer 7, стандартный режим Internet Explorer 8, стандартный режим Internet Explorer 9, стандартный режим Internet Explorer 10. Не поддерживается в приложениях [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]. См. [Сведения о версии](../../javascript/reference/javascript-version-information.md).  
+## <a name="requirements"></a>Требования  
+ Поддерживается в следующих режимах документов: случайный режим, стандартный режим Internet Explorer 6, стандартный режим Internet Explorer 7, стандартный режим Internet Explorer 8, стандартный режим Internet Explorer 9, стандартный режим Internet Explorer 10. Не поддерживается в приложениях [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] . См. [Сведения о версии](../../javascript/reference/javascript-version-information.md).  
   
- **Применимо к**: [Объект Enumerator](../../javascript/reference/enumerator-object-javascript.md)  
+ **Применимо к**: [Enumerator Object](../../javascript/reference/enumerator-object-javascript.md)  
   
-## См. также  
- [Метод atEnd \(Enumerator\)](../../javascript/reference/atend-method-enumerator-javascript.md)   
- [Метод moveFirst \(Enumerator\)](../../javascript/reference/movefirst-method-enumerator-javascript.md)   
- [Метод moveNext \(Enumerator\)](../../javascript/reference/movenext-method-enumerator-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Метод atEnd (Enumerator)](../../javascript/reference/atend-method-enumerator-javascript.md)   
+ [Метод moveFirst (Enumerator)](../../javascript/reference/movefirst-method-enumerator-javascript.md)   
+ [Метод moveNext (Enumerator)](../../javascript/reference/movenext-method-enumerator-javascript.md)

@@ -1,65 +1,66 @@
 ---
-title: "Функция Debug.write (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "Write"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "write - метод[JavaScript]"
+title: "Функция Debug.Write (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: Write
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: write method [JavaScript]
 ms.assetid: fd1cfbb3-46cb-47cc-896c-a70d457dd413
-caps.latest.revision: 22
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 22
+caps.latest.revision: "22"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 74aad7a01e0dc166f22173cf193b312e1fd4d804
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция Debug.write (JavaScript)
-Отправляет строки в отладчик скриптов.  
+# <a name="debugwrite-function-javascript"></a>Функция Debug.write (JavaScript)
+Отправляет строки в отладчик сценариев.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 Debug.write([str1 [, str2 [, ... [, strN]]]])  
 ```  
   
-## Параметры  
- *str1, str2, ... , strN*  
- Необязательный.  Строки, которые требуется отправить в отладчик скриптов.  
+## <a name="parameters"></a>Параметры  
+ *str1 str2,..., strN*  
+ Необязательно. Строки для отправки в отладчик сценариев.  
   
-## Заметки  
- Функция `Debug.write` отправляет строки в окно интерпретации отладчика скриптов во время выполнения.  Если не выполняется отладка скрипта, функция `Debug.write` не имеет никакого действия.  
+## <a name="remarks"></a>Примечания  
+ `Debug.write` Функция отправляет строки в окне интерпретации отладчика сценариев во время выполнения. Если сценарий не выполняется отладка, `Debug.write` функция не имеет эффекта.  
   
- Функция `Debug.write` практически идентична функции `Debug.writeln`.  Единственное отличие заключается в том, что функция `Debug.writeln` отправляет символ новой строки после отправки строк.  
+ `Debug.write` Функция практически идентичен `Debug.writeln` функции. Единственным различием является `Debug.writeln` функция отправляет символ перевода строки после отправки строки.  
   
-## Пример  
- В этом примере функция `Debug.write` используется для отображения значения переменной в окне интерпретации отладчика скриптов.  
+## <a name="example"></a>Пример  
+ В этом примере используется `Debug.write` функции, чтобы отобразить значение переменной в окне интерпретации отладчика сценариев.  
   
 > [!NOTE]
->  Для выполнения этого примера необходимо, чтобы был установлен отладчик скриптов и скрипт выполнялся в режиме отладки.  
+>  Чтобы выполнить этот пример, необходимо иметь отладчик скриптов и скрипт должен выполняться в режиме отладки.  
 >   
->  Браузер Internet Explorer 8 включает в себя отладчик [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  При использовании более ранней версии Internet Explorer см. раздел [Практическое руководство. Включение и запуск отладки сценариев из Internet Explorer](http://go.microsoft.com/fwlink/?LinkId=133801).  
+>  Internet Explorer 8 включает [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] отладчика. Если вы используете более раннюю версию Internet Explorer, см. раздел [Практическое руководство. Включение и запуск отладки скриптов из Internet Explorer](http://go.microsoft.com/fwlink/?LinkId=133801).  
   
-```javascript  
+```JavaScript  
 var counter = 42;  
 Debug.write("The value of counter is " + counter);  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Относится к**: [Объект Debug](../../javascript/reference/debug-object-javascript.md)  
+ **Применяется к**: [объект Debug](../../javascript/reference/debug-object-javascript.md)  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Функция Debug.writeln](../../javascript/reference/debug-writeln-function-javascript.md)

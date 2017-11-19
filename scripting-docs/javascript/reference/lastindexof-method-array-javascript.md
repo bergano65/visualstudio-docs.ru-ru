@@ -1,62 +1,65 @@
 ---
-title: "Метод lastIndexOf (массив) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "массивы [JavaScript], lastIndexOf - метод"
-  - "lastIndexOf - метод [JavaScript]"
+title: "Метод lastIndexOf (массив) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- arrays [JavaScript], lastIndexOf method
+- lastIndexOf method [JavaScript]
 ms.assetid: 04f5145d-007e-498f-b06f-11ab384c2968
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 12d2a0fca7a7cd82543a83ea19aca49d3cbb93b6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод lastIndexOf (массив) (JavaScript)
+# <a name="lastindexof-method-array-javascript"></a>Метод lastIndexOf (массив) (JavaScript)
 Возвращает индекс последнего вхождения указанного значения в массиве.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 array1.lastIndexOf(searchElement[, fromIndex])  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
   
 |Параметр|Определение|  
-|--------------|-----------------|  
-|`array1`|Обязательный.  Объект массива, в котором выполняется поиск.|  
-|`searchElement`|Обязательный.  Значение, которое требуется найти в `array1`.|  
-|`fromIndex`|Необязательный.  Индекс массива, с которого начинается поиск.  Если аргумент `fromIndex` опущен, поиск начинается с последнего индекса в массиве.|  
+|---------------|----------------|  
+|`array1`|Обязательный. Объект массива для поиска.|  
+|`searchElement`|Обязательный. Значение для поиска в `array1`.|  
+|`fromIndex`|Необязательно. Индекс в массиве, с которого начинается поиск. Если `fromIndex` — этот параметр опущен, поиск начинается с последнего индекса в массиве.|  
   
-## Возвращаемое значение  
- Индекс последнего вхождения `searchElement` в массиве или \-1, если `searchElement` не найден.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Индекс последнего вхождения `searchElement` в массиве или -1, если `searchElement` не найден.  
   
-## Заметки  
- Метод `lastIndexOf` ищет в массиве указанное значение.  Метод возвращает индекс первого вхождения или \-1, если указанное значение не найдено.  
+## <a name="remarks"></a>Примечания  
+ `lastIndexOf` Метод ищет массив для указанного значения. Метод возвращает индекс первого вхождения или -1, если указанное значение не найдено.  
   
- Поиск выполняется в порядке убывания индекса \(начиная с последнего элемента\).  Для поиска в порядке возрастания используется метод [Метод indexOf \(массив\)](../../javascript/reference/indexof-method-array-javascript.md).  
+ Поиск выполняется в порядке убывания индекса (Фамилия члена имя). Для поиска в порядке возрастания, используйте [метод indexOf (массив)](../../javascript/reference/indexof-method-array-javascript.md).  
   
- Элементы массива сравниваются со значением `searchElement` на предмет строгого равенства, аналогично сравнению с использованием оператора `===`.  Дополнительные сведения см. в разделе [Операторы сравнения](../../javascript/reference/comparison-operators-javascript.md).  
+ Элементы массива, сравниваются с `searchElement` значение на строгое равенство, аналогично сравнения, выполненные `===` оператор. Дополнительные сведения см. в разделе [операторы сравнения](../../javascript/reference/comparison-operators-javascript.md).  
   
- Необязательный аргумент `fromIndex` указывает индекс массива, с которого начинается поиск.  Если `fromIndex` больше или равен длине массива, выполняется поиск во всем массиве.  Если `fromIndex` имеет отрицательное значение, то поиск начинается с индекса, равного длине массива плюс `fromIndex`.  Если вычисленный индекс меньше 0, возвращается \-1.  
+ Необязательный `fromIndex` аргумент задает индекс массива, с которого начинается поиск. Если `fromIndex` больше или равен длине массива, весь массив выполняется поиск. Если `fromIndex` имеет отрицательное значение, поиск начинается плюс длина массива `fromIndex`. Если вычисляемый индекса меньше 0, возвращается значение -1.  
   
-## Пример  
- В следующих примерах показано использование метода `lastIndexOf`.  
+## <a name="example"></a>Пример  
+ Следующие примеры иллюстрируют использование `lastIndexOf` метода.  
   
-```javascript  
+```JavaScript  
 // Create an array.  
 var ar = ["ab", "cd", "ef", "ab", "cd"];  
   
@@ -83,10 +86,10 @@ document.write(ar.lastIndexOf("ab", -3) + "<br/>");
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## См. также  
- [Метод indexOf \(массив\)](../../javascript/reference/indexof-method-array-javascript.md)   
+## <a name="see-also"></a>См. также  
+ [Метод indexOf (массив)](../../javascript/reference/indexof-method-array-javascript.md)   
  [Объект Array](../../javascript/reference/array-object-javascript.md)   
  [Использование массивов](../../javascript/advanced/using-arrays-javascript.md)

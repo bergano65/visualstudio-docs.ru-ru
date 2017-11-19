@@ -1,65 +1,68 @@
 ---
-title: "Функция Object.create (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "create - функция [JavaScript]"
-  - "Object.create - функция [JavaScript]"
+title: "Функция Object.Create (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- create function [JavaScript]
+- Object.create function [JavaScript]
 ms.assetid: 0ad31f36-a9ee-444e-b0fe-c87843d03196
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f359908c5c836743e22390580f542df27d7b98e7
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция Object.create (JavaScript)
-Создает объект, который имеет указанный прототип и \(необязательно\) содержит указанные свойства.  
+# <a name="objectcreate-function-javascript"></a>Функция Object.create (JavaScript)
+Создает объект, который имеет указанный прототип и при необходимости, содержащий указанные свойства.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 Object.create(prototype, descriptors)  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `prototype`  
- Обязательное.  Объект для использования в качестве прототипа.  Может принимать значение `null`.  
+ Обязательный. Объект, используемый в качестве прототипа. Может иметь значение `null`.  
   
  `descriptors`  
- Необязательный параметр.  Объект [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], содержащий один или несколько дескрипторов свойств.  
+ Необязательно. Объект [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] , содержащий один или несколько дескрипторов свойств.  
   
- *Свойство данных* — это свойство, которое может получать и задавать значение.  Дескриптор свойства данных содержит атрибут `value`, а также атрибуты `writable`, `enumerable` и `configurable`.  Если последние 3 атрибута не заданы, по умолчанию они получают значение `false`.  *Свойство метода доступа* вызывает предоставленную пользователем функцию при каждом получении или задании значения.  Дескриптор свойства метода доступа содержит атрибут `set`, атрибут `get` или оба эти атрибута.  Для получения дополнительной информации см. [Функция Object.defineProperty](../../javascript/reference/object-defineproperty-function-javascript.md).  
+ *Свойство данных* — это свойство, способное получать и задавать значение. Дескриптор свойства данных содержит `value` атрибута, а также `writable`, `enumerable`, и `configurable` атрибуты. Если последние три атрибуты не указаны, они по умолчанию `false`. *Свойства доступа* вызывает определяемую пользователем функцию, каждый раз при получить или задать значение. Дескриптор метода доступа свойства содержит `set` атрибута `get` или оба этих атрибута. Дополнительные сведения см. в разделе [функция Object.defineProperty](../../javascript/reference/object-defineproperty-function-javascript.md).  
   
-## Возвращаемое значение  
- Новый объект с указанным внутренним прототипом, содержащий указанные свойства, если они были предоставлены.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Новый объект, который имеет указанный внутренний прототип и содержит указанные свойства, если таковые имеются.  
   
-## Исключения  
- Исключение `TypeError` создается при выполнении любого из следующих условий:  
+## <a name="exceptions"></a>Исключения  
+ Объект `TypeError` исключение вызывается, если выполняется хотя бы одно из следующих условий:  
   
--   Аргумент `prototype` не является объектом и не имеет значение `null`.  
+-   `prototype` Аргумент не является объектом, не `null`.  
   
--   Дескриптор в аргументе `descriptors` имеет атрибут `value` или `writable` и атрибут `get` или `set`.  
+-   Дескриптор в `descriptors` аргумент имеет `value` или `writable` , а `get` или `set` атрибута.  
   
--   Дескриптор в аргументе `descriptors` имеет атрибут `get` или `set`, который не является функцией.  
+-   Дескриптор в `descriptors` аргумент имеет `get` или `set` атрибут, который не является функцией.  
   
-## Заметки  
- Эту функцию можно использовать с параметром `null` `prototype`, чтобы прекратить использование цепи прототипов.  Созданный объект не будет иметь прототипа.  
+## <a name="remarks"></a>Примечания  
+ Воспользуйтесь этой функции с помощью `null``prototype` параметр, чтобы остановить цепочки прототипов. Созданный объект будет иметь без прототипа.  
   
-## Пример  
- В следующем примере создается объект с использованием прототипа `null` и добавлением двух перечислимых свойств.  
+## <a name="example"></a>Пример  
+ В следующем примере создается объект с помощью `null` прототип и добавляет два перечисляемые свойства.  
   
-```javascript  
+```JavaScript  
 var newObj = Object.create(null, {  
             size: {  
                 value: "large",  
@@ -82,10 +85,10 @@ document.write(Object.getPrototypeOf(newObj));
   
 ```  
   
-## Пример  
- В следующем примере создается объект, имеющий тот же внутренний прототип, что и объект Object.  Как видно, он имеет тот же прототип, что и объект, созданный с использованием литерала объекта.  Функция [Object.getPrototypeOf](../../javascript/reference/object-getprototypeof-function-javascript.md) получает прототип исходного объекта.  Чтобы получить дескриптор свойства объекта, можно использовать функцию [Функция Object.getOwnPropertyDescriptor](../../javascript/reference/object-getownpropertydescriptor-function-javascript.md).  
+## <a name="example"></a>Пример  
+ Следующий пример создает объект, имеющий же внутренний прототип как объект. Можно просмотреть наличие в нем же прототип как объект создан с помощью литерала объекта. [Object.getPrototypeOf](../../javascript/reference/object-getprototypeof-function-javascript.md) функция получает прототип для исходного объекта. Чтобы получить дескриптор свойства объекта, можно использовать [функция Object.getOwnPropertyDescriptor](../../javascript/reference/object-getownpropertydescriptor-function-javascript.md).  
   
-```javascript  
+```JavaScript  
 var firstLine = { x: undefined, y: undefined };  
   
 var secondLine = Object.create(Object.prototype, {  
@@ -112,10 +115,10 @@ document.write("second line prototype = " + Object.getPrototypeOf(secondLine));
 // second line prototype = [object Object]  
 ```  
   
-## Пример  
- В следующем примере создается объект, имеющий тот же внутренний прототип, что и объект Shape.  
+## <a name="example"></a>Пример  
+ Следующий пример создает объект, имеющий же внутренний прототип как объект фигуры.  
   
-```javascript  
+```JavaScript  
   
 // Create the shape object.  
 var Shape = { twoDimensional: true, color: undefined, hasLineSegments: undefined };  
@@ -124,10 +127,10 @@ var Square = Object.create(Object.getPrototypeOf(Shape));
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Функция Object.getPrototypeOf](../../javascript/reference/object-getprototypeof-function-javascript.md)   
- [Метод isPrototypeOf \(Object\)](../../javascript/reference/isprototypeof-method-object-javascript.md)   
+ [Метод isPrototypeOf (Object)](../../javascript/reference/isprototypeof-method-object-javascript.md)   
  [Создание объектов](../../javascript/creating-objects-javascript.md)

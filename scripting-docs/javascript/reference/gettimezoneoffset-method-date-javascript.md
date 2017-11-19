@@ -1,52 +1,54 @@
 ---
-title: "Метод getTimezoneOffset (Date) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "getTimeZoneOffset"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "getTimezoneOffset - метод"
-  - "часовые пояса [Visual Studio]"
+title: "Метод getTimezoneOffset (Date) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: getTimeZoneOffset
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- getTimezoneOffset method
+- time zones [Visual Studio]
 ms.assetid: 58ee22b0-4688-45bd-a337-cc23119b09ce
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e49a3c8b7060e6097300f8aaf99b2ef869833018
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод getTimezoneOffset (Date) (JavaScript)
-Получает разницу в минутах между местным временем компьютера и временем в формате UTC.  
+# <a name="gettimezoneoffset-method-date-javascript"></a>Метод getTimezoneOffset (Date) (JavaScript)
+Возвращает разницу в минутах между временем на локальном компьютере и в формате общего скоординированного времени (UTC).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 dateObj.getTimezoneOffset()   
 ```  
   
-#### Параметры  
- Обязательная ссылка `dateObj` — это объект `Date`.  
+#### <a name="parameters"></a>Параметры  
+ Обязательная ссылка `dateObj` — это объект `Date` .  
   
-## Возвращаемое значение  
- Возвращает количество минут между временем на текущем компьютере \(на клиентской машине или, если этот метод вызван из серверного скрипта, на серверной машине\) и временем в формате UTC.  Значение положительно, если местное время компьютера меньше времени в формате UTC \(например, Тихоокеанское время США\), и отрицательно, если местное время компьютера больше времени в формате UTC \(например, в Японии\).  Если к серверу в Нью\-Йорке отправлен запрос клиентом в Лос\-Анджелесе 1\-го декабря, то `getTimezoneOffset` возвращает 480, если выполняется на клиенте, или 300 при выполнении на сервере.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Возвращает количество минут между временем на текущем компьютере (клиентском компьютере или, если этот метод вызывается из серверного скрипта, компьютер сервера) и в формате UTC. Является положительным местного времени текущего компьютера отстает от UTC (например, тихоокеанское летнее время), а отрицательное местного времени текущего компьютера в случае опережают время UTC (например, Япония). Если связаться с сервером в Нью-Йорке, клиентом в Лос-Анджелес 1 декабря `getTimezoneOffset` возвращает 480, если выполняется на стороне клиента или 300, если выполняются на сервере.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
   
-## Пример  
- В следующем примере показано использование метода `getTimezoneOffset`.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как использовать метод `getTimezoneOffset`.  
   
-```javascript  
+```JavaScript  
 var date =  new Date();  
 var minutes = date.getTimezoneOffset();  
   
@@ -60,10 +62,10 @@ else
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **Относится к**: [Объект Date](../../javascript/reference/date-object-javascript.md)  
+ **Применимо к**: [Date Object](../../javascript/reference/date-object-javascript.md)  
   
-## См. также  
- [Метод getTime \(Date\)](../../javascript/reference/gettime-method-date-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Метод getTime (Date)](../../javascript/reference/gettime-method-date-javascript.md)

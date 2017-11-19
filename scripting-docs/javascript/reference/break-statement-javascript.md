@@ -1,50 +1,52 @@
 ---
-title: "Оператор break (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "break_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "break - оператор"
-  - "do...while - оператор"
+title: "Оператор break (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: break_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- do...while statement
+- break statement
 ms.assetid: 5be0f2a8-5fe7-4a6c-89af-ca20a925ce87
-caps.latest.revision: 23
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 23
+caps.latest.revision: "23"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5f085a4e51309bf9a060e9ffa352c6ae85924237
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Оператор break (JavaScript)
-Завершает выполнение текущего цикла или, если он используется в сочетании с меткой `label`, завершает работу связанного оператора.  
+# <a name="break-statement-javascript"></a>Оператор break (JavaScript)
+Завершает текущий цикл или, если в сочетании с `label`, завершает связанный с ним оператор.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 break [label];  
 ```  
   
-## Заметки  
- Необязательный аргумент `label` задает метку оператора, работа которого завершается.  
+## <a name="remarks"></a>Примечания  
+ Необязательный `label` аргумент задает метку инструкции прекращается.  
   
- Оператор `break` обычно используется в операторах `switch` и циклах `while`, `for`, `for...in` и `do...while`.  Аргумент `label` чаще всего используется в операторах `switch`, но его можно использовать в любых операторах, простых и составных.  
+ Как правило, используется `break` инструкции в `switch` инструкций и в `while`, `for`, `for...in`, или `do...while` циклы. Чаще всего используется `label` аргумент в `switch` операторы, но его можно использовать в любой инструкции простых и составных.  
   
- При выполнении оператора `break` выполняется выход из текущего цикла или оператора, выполнение скрипта продолжается с оператора, который идет следующим.  
+ Выполнение `break` инструкция выполняет выход из текущего цикла или оператора и начинается с оператора, следующего выполнения скрипта.  
   
-## Примеры  
- В этом примере настраивается счетчик, значения которого должны изменяться от 1 до 99; однако оператор `break` прерывает цикл после 14 итераций.  
+## <a name="examples"></a>Примеры  
+ В этом примере набор счетчиков для подсчета от 1 до 99; Однако `break` инструкция завершает цикл после 14 счетчиков.  
   
-```javascript  
+```JavaScript  
 for (var i = 1; i < 100; i++) {  
     if (i == 15) {  
         break;  
@@ -56,9 +58,9 @@ for (var i = 1; i < 100; i++) {
 // Output: 1234567891011121314  
 ```  
   
- В следующем примере кода оператор `break` относится к циклу `for`, которому предшествует оператор `Inner:`.  Когда `j` равняется 24, оператор `break` завершает выполнение этого цикла в программе.  Значения от 21 до 23 печатаются на каждой строке.  
+ В следующем коде `break` Инструкция ссылается на `for` цикл, который предшествует `Inner:` инструкции. Когда `j` равняется 24, `break` инструкция вызывает программного потока для выхода из цикла. Значения от 21 до 23 печати в каждой строке.  
   
-```javascript  
+```JavaScript  
 Outer:  
 for (var i = 1; i <= 10; i++) {  
     document.write ("<br />");  
@@ -87,13 +89,13 @@ Inner:
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## См. также  
- [Оператор continue](../../javascript/reference/continue-statement-javascript.md)   
- [Оператор do...while](../../javascript/reference/do-dot-dot-dot-while-statement-javascript.md)   
- [Оператор for](../../javascript/reference/for-statement-javascript.md)   
- [Оператор for...in](../../javascript/reference/for-dot-dot-dot-in-statement-javascript.md)   
- [Оператор с идентификатором](../../javascript/reference/labeled-statement-javascript.md)   
+## <a name="see-also"></a>См. также  
+ [Оператор Continue](../../javascript/reference/continue-statement-javascript.md)   
+ [Оператор Do... while](../../javascript/reference/do-dot-dot-dot-while-statement-javascript.md)   
+ [Оператор For](../../javascript/reference/for-statement-javascript.md)   
+ [for... в инструкции](../../javascript/reference/for-dot-dot-dot-in-statement-javascript.md)   
+ [Оператор с меткой](../../javascript/reference/labeled-statement-javascript.md)   
  [Оператор while](../../javascript/reference/while-statement-javascript.md)

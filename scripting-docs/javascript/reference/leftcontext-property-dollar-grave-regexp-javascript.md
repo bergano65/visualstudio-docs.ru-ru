@@ -1,48 +1,49 @@
 ---
-title: "Свойство leftContext ($`) (RegExp) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "$`"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "leftContext - свойство ($`)"
+title: "Свойство leftContext ($') (RegExp) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: $`
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: leftContext property ($`)
 ms.assetid: 840e56c0-eb7c-461f-bb56-91acff9b5bcf
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b0234a547d2e26c6cf6b1d1a058a46135e577fdd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Свойство leftContext ($`) (RegExp) (JavaScript)
-Возвращает знаки с начала строки, в которой выполняется поиск, до позиции перед началом последнего найденного соответствия.  Только для чтения.  
+# <a name="leftcontext-property--regexp-javascript"></a>Свойство leftContext ($`) (RegExp) (JavaScript)
+Возвращает символов от начала искомая строка до позиции перед началом последнего сопоставления. Только для чтения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 RegExp.leftContext  
 ```  
   
-## Заметки  
- Объект, связанный с данным свойством, всегда является глобальным объектом `RegExp`.  
+## <a name="remarks"></a>Примечания  
+ Объект, связанный с этим свойством, всегда является глобальный `RegExp` объекта.  
   
- Начальным значением свойства `leftContext` является пустая строка.  Значение свойства `leftContext` изменяется при каждом обнаружении искомого выражения.  
+ Начальное значение `leftContext` свойства является пустая строка. Значение `leftContext` свойство изменяется при каждом обнаружении совпадения.  
   
-## Пример  
- В следующем примере показано использование свойства `leftContext`.  
+## <a name="example"></a>Пример  
+ В следующем примере показано применение свойства `leftContext`.  
   
-```javascript  
+```JavaScript  
 // Create the regular expression pattern.  
 var re = new RegExp("d(b+)(d)","ig");  
 var str = "cdbBdbsbdbdz";  
@@ -64,16 +65,16 @@ s += "lastParen: " + RegExp.lastParen + "<br />";
 document.write(s);  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
- **Относится к**: [Объект RegExp](../../javascript/reference/regexp-object-javascript.md)  
+ **Применяется к**: [объект RegExp](../../javascript/reference/regexp-object-javascript.md)  
   
-## См. также  
- [Свойства $1...$9 \(RegExp\)](../../javascript/reference/dollar-1-dot-dot-dot-dollar-9-properties-regexp-javascript.md)   
- [Свойство index \(RegExp\)](../../javascript/reference/index-property-regexp-javascript.md)   
- [Свойство input \($\_\) \(RegExp\)](../../javascript/reference/input-property-dollar-regexp-javascript.md)   
- [Свойство lastIndex \(RegExp\)](../../javascript/reference/lastindex-property-regexp-javascript.md)   
- [Свойство lastMatch \($&\) \(RegExp\)](../../javascript/reference/lastmatch-property-dollar-regexp-javascript.md)   
- [Свойство lastParen \($\+\) \(RegExp\)](../../javascript/reference/lastparen-property-dollar-regexp-javascript.md)   
- [Свойство rightContext \($'\) \(RegExp\)](../../javascript/reference/rightcontext-property-dollar-regexp-javascript.md)
+## <a name="see-also"></a>См. также  
+ [$1... $9 свойства (RegExp)](../../javascript/reference/dollar-1-dot-dot-dot-dollar-9-properties-regexp-javascript.md)   
+ [Свойство Index (RegExp)](../../javascript/reference/index-property-regexp-javascript.md)   
+ [Свойство Input ($_) (RegExp)](../../javascript/reference/input-property-dollar-regexp-javascript.md)   
+ [Свойство lastIndex (RegExp)](../../javascript/reference/lastindex-property-regexp-javascript.md)   
+ [Свойство lastMatch ($&) (RegExp)](../../javascript/reference/lastmatch-property-dollar-regexp-javascript.md)   
+ [Свойство lastParen ($ +) (RegExp)](../../javascript/reference/lastparen-property-dollar-regexp-javascript.md)   
+ [Свойство rightContext ($') (RegExp)](../../javascript/reference/rightcontext-property-dollar-regexp-javascript.md)

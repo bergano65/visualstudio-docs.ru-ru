@@ -1,63 +1,65 @@
 ---
-title: "Метод setYear (Date) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "setYear"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "setYear - метод"
-  - "Year - метод"
+title: "Метод setYear (Date) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: setYear
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- Year method
+- setYear method
 ms.assetid: 36431050-e0ec-45ee-830d-0d7c20e207ea
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5a9318de4a9420e0518dcd7f00a51c7161a8f92c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод setYear (Date) (JavaScript)
-Устанавливает значение года в объекте `Date`.  
+# <a name="setyear-method-date-javascript"></a>Метод setYear (Date) (JavaScript)
+Устанавливает значение года `Date` объекта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 dateObj.setYear(numYear)   
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `dateObj`  
- Обязательный.  Любой объект `Date`.  
+ Обязательный. Любой объект `Date`.  
   
  `numYear`  
- Обязательный.  Для годов с 1900 по 1999 это числовое значение равно значению года минус 1900.  Для дат за пределами этого диапазона это 4\-значное числовое значение.  
+ Обязательный. За 1900 до 1999 года это числовое значение, представляющее год минус 1900. Даты вне этого диапазона это 4-значное числовое значение.  
   
-## Заметки  
- Этот метод является устаревшим и сохраняется только для поддержки обратной совместимости.  Вместо него рекомендуется использовать метод `setFullYear`.  
+## <a name="remarks"></a>Примечания  
+ Этот метод является устаревшим и сохраняется для обеспечения обратной совместимости. Вместо этого рекомендуется использовать метод `setFullYear`.  
   
- Чтобы задать для объекта `Date` 1997 год, вызовите метод **setYear\(97\)**.  Чтобы установить 2010 год, вызовите метод **setYear\(2010\)**.  И наконец, чтобы установить год в диапазоне от 0 до 99, используйте метод `setFullYear`.  
+ Чтобы задать год `Date` объекта 1997, вызов **setYear(97)**. Чтобы установить 2010 год, вызовите **setYear(2010)**. Наконец, чтобы задать года год в диапазоне от 0 до 99, используйте `setFullYear` метод.  
   
 > [!NOTE]
->  В языке [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] версии 1.0 метод `setYear` использует значение, которое получается в результате прибавления значения 1900 к году, переданному в параметре `numYear`, независимо от фактического значения года.  Например, чтобы установить 1899 год, значение `numYear` должно быть равно \-1, а для указания 2000 года в параметре `numYear` необходимо передать значение 100.  
+>  Для [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] версии 1.0, `setYear` использует значение, которое является результатом сложения 1900 для значения года, полученного от `numYear`, независимо от значения года. Например, чтобы установить 1899 года `numYear` равно -1 и задать 2000 года `numYear` равно 100.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **Относится к**: [Объект Date](../../javascript/reference/date-object-javascript.md)  
+ **Применимо к**: [Date Object](../../javascript/reference/date-object-javascript.md)  
   
-## См. также  
- [Метод getFullYear \(Date\)](../../javascript/reference/getfullyear-method-date-javascript.md)   
- [Метод getUTCFullYear \(Date\)](../../javascript/reference/getutcfullyear-method-date-javascript.md)   
- [Метод getYear \(Date\)](../../javascript/reference/getyear-method-date-javascript.md)   
- [Метод setFullYear \(Date\)](../../javascript/reference/setfullyear-method-date-javascript.md)   
- [Метод setUTCFullYear \(Date\)](../../javascript/reference/setutcfullyear-method-date-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Метод getFullYear (Date)](../../javascript/reference/getfullyear-method-date-javascript.md)   
+ [Метод getUTCFullYear (Date)](../../javascript/reference/getutcfullyear-method-date-javascript.md)   
+ [Метод getYear (Date)](../../javascript/reference/getyear-method-date-javascript.md)   
+ [Метод setFullYear (Date)](../../javascript/reference/setfullyear-method-date-javascript.md)   
+ [Метод setUTCFullYear (Date)](../../javascript/reference/setutcfullyear-method-date-javascript.md)

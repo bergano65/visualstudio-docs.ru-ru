@@ -1,54 +1,56 @@
 ---
-title: "Свойство __proto__ (Object) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "__proto__"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Свойство __proto__ (Object) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: __proto__
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 97c3f84d-125e-4905-b921-b021264964ee
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e38669c400acba6f4ed3c4ee3fb5836c31b1bc00
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Свойство __proto__ (Object) (JavaScript)
-Содержит Ссылку на внутренний прототип, содержащий указанный объект.  
+# <a name="proto-property-object-javascript"></a>__proto__ свойство (Object) (JavaScript)
+Содержит ссылку на внутренний прототип указанного объекта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 object.__proto__  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `object`  
- Обязательное.  Объект, для которого требуется задать прототип.  
+ Обязательный. Объект, для которого задается прототип.  
   
-## Заметки  
- Свойство `__proto__` можно использовать для задания прототипа объекта.  
+## <a name="remarks"></a>Примечания  
+ `__proto__` Свойство может использоваться для установки прототипа для объекта.  
   
- Объект или функция наследуют все методы и свойства нового прототипа вместе со всеми методами и свойствами в цепочке прототипов нового прототипа.  Объект может иметь только один прототип \(не включая наследуемые прототипы в цепочке прототипов\), поэтому при вызове свойства `__proto__` следует заменить предыдущий прототип.  
+ Объект или функцию наследует все методы и свойства нового прототипа, а также все методы и свойства в цепочке прототипов новый прототип. Объект может иметь только один прототип (не включая унаследованные прототипов в цепочке прототипов), поэтому при вызове `__proto__` свойство, замените предыдущих прототипа.  
   
- можно задать прототип только в расширяемом объекте.  Дополнительные сведения см. в разделе [Функция Object.preventExtensions](../../javascript/reference/object-preventextensions-function-javascript.md).  
+ Прототип можно задать только для расширяемого объекта. Дополнительные сведения см. в разделе [функция Object.preventExtensions](../../javascript/reference/object-preventextensions-function-javascript.md).  
   
 > [!NOTE]
->  Имя свойства `__proto__` начинается и заканчивается двумя символами подчеркивания.  
+>  `__proto__` Имя свойства начинается и заканчивается с двух символов подчеркивания.  
   
-## Пример  
- В следующем примере показано, как задать прототип для объекта.  
+## <a name="example"></a>Пример  
+ В следующем примере кода показано задание прототипа для объекта.  
   
-```javascript  
+```JavaScript  
 function Rectangle() {  
 }  
   
@@ -61,10 +63,10 @@ if (console && console.log) {
 }  
 ```  
   
-## Пример  
- В следующем примере кода показано добавление свойств в объект путем добавления их в прототип.  
+## <a name="example"></a>Пример  
+ В следующем примере кода показано добавление свойств в объект путем их добавления в прототип.  
   
-```javascript  
+```JavaScript  
 var proto = { y: 2 };  
   
 var obj = { x: 10 };  
@@ -80,10 +82,10 @@ if (console && console.log) {
 }  
 ```  
   
-## Пример  
- Следующий пример кода добавляет свойства в объект `String` путем задания в нем нового прототипа.  
+## <a name="example"></a>Пример  
+ Следующий пример кода добавляет свойства в объект `String`, задавая для него новый прототип.  
   
-```javascript  
+```JavaScript  
 var stringProp = { desc: "description" };  
   
 String.__proto__ = stringProp;  
@@ -104,8 +106,8 @@ if (console && console.log) {
 }  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
-## См. также  
- [Прототипы и их наследование](../../javascript/advanced/prototypes-and-prototype-inheritance.md)
+## <a name="see-also"></a>См. также  
+ [Прототипы и наследование прототипов](../../javascript/advanced/prototypes-and-prototype-inheritance.md)

@@ -1,72 +1,75 @@
 ---
-title: "Методы HTML-тегов (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "anchor - метод [JavaScript]"
-  - "big - метод [JavaScript]"
-  - "blink - метод [JavaScript]"
-  - "bold - метод [JavaScript]"
-  - "fixed - метод [JavaScript]"
-  - "fontcolor - метод [JavaScript]"
-  - "fontsize -метод [JavaScript]"
-  - "методы HTML-тегов [JavaScript]"
-  - "italics - метод [JavaScript]"
-  - "link - метод [JavaScript]"
-  - "small - метод [JavaScript]"
-  - "sub -метод [JavaScript]"
-  - "sup - метод [JavaScript]"
+title: "Методы HTML-тегов (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- link method [JavaScript]
+- blink method [JavaScript]
+- fontsize method [JavaScript]
+- italics method [JavaScript]
+- sup method [JavaScript]
+- anchor method [JavaScript]
+- fixed method [JavaScript]
+- fontcolor method [JavaScript]
+- bold method [JavaScript]
+- small method [JavaScript]
+- HTML Tag methods [JavaScript]
+- sub method [JavaScript]
+- big method [JavaScript]
 ms.assetid: 50376223-be95-4aa4-9147-9e738a5d3cfa
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7639bc609d8e9b7e4b212fe67ae40f81487d708e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Методы HTML-тегов (JavaScript)
-Можно использовать методы HTML\-тегов для размещения элементов HTML вокруг текста в объекте `String`.  
+# <a name="html-tag-methods-javascript"></a>Методы HTML-тегов (JavaScript)
+Методы HTML-тег используется для размещения элементов HTML вокруг текста в `String` объекта.  
   
-## Синтаксис  
- В следующей таблице описан синтаксис для каждого метода HTML\-тега и дано его описание.  
+## <a name="syntax"></a>Синтаксис  
+ В следующей таблице перечислены синтаксис и описание каждого метода тег HTML.  
   
- В столбце "Синтаксис" `string1` — это объект `String` или литерал.  
+ В столбце синтаксис `string1` — `String` объект или литерал.  
   
- Столбец "Стандарт" указывает рекомендации [консорциума W3C](http://go.microsoft.com/fwlink/?LinkId=199553) для HTML 4.  "Не рекомендуется" означает, что вместо HTML\-элемента лучше использовать таблицы стилей.  
+ Указывает стандартный столбец [World Wide Web Consortium (W3C)](http://go.microsoft.com/fwlink/?LinkId=199553) рекомендации для HTML 4. «Рекомендуется» указывает, HTML-элемента не рекомендуется использовать таблицы стилей.  
   
-|Синтаксис|Описание метода|Описание параметра|Стандарт|  
-|---------------|---------------------|------------------------|--------------|  
-|`string1`.anchor\(`name`\)|Заключает текст в привязку HTML, имеющую атрибут NAME.|Параметр `name` — это текст, который помещается в атрибут NAME привязки HTML.||  
-|`string1`.big \(\)|Заключает текст в HTML\-теги \<BIG\>.||Не рекомендуется|  
-|`string1`.blink \(\)|Заключает текст в HTML\-теги \<BLINK\>.  Теги \<BLINK\> не поддерживаются в Internet Explorer.||Нет в стандарте|  
-|`string1`.bold\(\)|Заключает текст в HTML\-теги \<B\>.||Не рекомендуется|  
-|`string1`.fixed\(\)|Заключает текст в HTML\-теги \<TT\>.||Не рекомендуется|  
-|`string1`.fontcolor\(`color`\)|Заключает текст в HTML\-теги \<FONT\> с атрибутом COLOR.|Параметр `color` — это строковое значение, содержащее шестнадцатеричное значение или стандартное имя цвета.  Допустимые стандартные имена цветов зависят от браузера, где используется [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], и его версии.|Устарело|  
-|`string1`.fontsize\(`size`\)|Заключает текст в HTML\-теги \<FONT\> с атрибутом SIZE.|Параметр `size` — целое число, задающее размер текста.  Допустимые целые числа зависят от браузера, где используется [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], и его версии.|Устарело|  
-|`string1`.italics\(\)|Заключает текст в HTML\-теги \<I\>.||Не рекомендуется|  
-|`string1`.link\(`href`\)|Заключает текст в привязку HTML, имеющую атрибут HREF.|Параметр `href` — это текст, который помещается в атрибут HREF привязки HTML.||  
-|`string1`.small\(\)|Заключает текст в HTML\-теги \<SMALL\>.||Не рекомендуется|  
-|`string1`.strike\(\)|Заключает текст в HTML\-теги \<STRIKE\>.||Устарело|  
-|`string1`.sub\(\)|Заключает текст в HTML\-теги \<SUB\>.|||  
-|`string1`.sup\(\)|Заключает текст в HTML\-теги \<SUP\>.|||  
+|Синтаксис|Описание метода|Описание параметра|Стандартный|  
+|------------|------------------------|---------------------------|--------------|  
+|`string1`.Anchor (`name`)|Помещает привязку HTML, имеющий атрибут NAME вокруг текста.|`name` Параметр является для перевода в атрибуте NAME HTML-привязкой.||  
+|`string1`.Big()|Помещает HTML \<BIG > теги вокруг текста.||Рекомендуется не использовать|  
+|`string1`.BLINK()|Помещает HTML \<BLINK > теги вокруг текста. \<BLINK > тег не поддерживается в обозревателе Internet Explorer.||Не в стандартном|  
+|`string1`.bold()|Помещает HTML \<B > теги вокруг текста.||Рекомендуется не использовать|  
+|`string1`.fixed()|Помещает HTML \<TT > теги вокруг текста.||Рекомендуется не использовать|  
+|`string1`.FontColor (`color`)|Помещает HTML \<ШРИФТА > тегов с атрибутом COLOR вокруг текста.|`color` Является значением строку, содержащую шестнадцатеричное значение цвета или предварительно определенное имя цвета. Допустимые стандартные имена цветов зависят от [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] размещения браузера и его версия.|Рекомендуется использовать|  
+|`string1`.FontSize (`size`)|Помещает HTML \<ШРИФТА > тегов с атрибутом SIZE вокруг текста.|`size` Параметра является целое число, указывающее размер текста. Действительные целочисленные значения зависят от [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] размещения браузера и его версия.|Рекомендуется использовать|  
+|`string1`.italics()|Помещает HTML \<я > теги вокруг текста.||Рекомендуется не использовать|  
+|`string1`.Link (`href`)|Помещает привязку HTML, имеющего атрибут HREF вокруг текста.|`href` Параметр является для перевода в атрибуте HREF HTML-привязкой.||  
+|`string1`.Small()|Помещает HTML \<SMALL > теги вокруг текста.||Рекомендуется не использовать|  
+|`string1`.Strike()|Помещает HTML \<STRIKE > теги вокруг текста.||Рекомендуется использовать|  
+|`string1`.Sub()|Помещает HTML \<SUB > теги вокруг текста.|||  
+|`string1`.SUP()|Помещает HTML \<SUP > теги вокруг текста.|||  
   
-## Заметки  
- Проверка того, применены ли уже HTML\-теги к строке не выполняется.  
+## <a name="remarks"></a>Примечания  
+ Проверка не выполняется, чтобы определить, является ли HTML-теги, уже были применены к строке.  
   
-## Пример  
- В следующих примерах показано использование методов HTML\-тегов.  
+## <a name="example"></a>Пример  
+ Следующие примеры показывают, как использовать методы тегов HTML.  
   
-```javascript  
+```JavaScript  
 // anchor method.  
 var strVariable = "This is an anchor.";  
 document.write(strVariable.anchor("Anchor1"));  
@@ -133,10 +136,10 @@ document.write(strVariable.sup());
 // Output: <SUP>This is a string.</SUP>  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **Относится к**: [Объект String](../../javascript/reference/string-object-javascript.md)  
+ **Применяется к**: [строковый объект](../../javascript/reference/string-object-javascript.md)  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Объект String](../../javascript/reference/string-object-javascript.md)

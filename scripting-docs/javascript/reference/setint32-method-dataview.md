@@ -1,51 +1,54 @@
 ---
-title: "Метод setInt32 (DataView) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Метод setInt32 (DataView) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 07e5f068-0e3f-4c23-84b3-c72658d7f194
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 00f3f6b03cdd3a8d5d7b95184f1c0ff5c356592a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод setInt32 (DataView)
-Задает значение Int32 по указанному смещению в байтах от начала представления.  Ограничения по выравниванию отсутствуют; многобайтовые значения могут задаваться по любому смещению.  
+# <a name="setint32-method-dataview"></a>Метод setInt32 (DataView)
+Задает значение Int32 на указанное смещение в байтах от начала представления. Не имеет ограничений выравнивания; многобайтовую значения можно задать любой позиции.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 dataView.setInt32 (byteOffset, value, littleEndian);   
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `byteOffset`  
- Место в буфере, откуда следует извлечь значение.  
+ Позиция в буфере, с которого следует извлечь значение.  
   
  `value`  
  Задаваемое значение.  
   
  `littleEndian`  
- Необязательный.  Если этот параметр имеет значение false или undefined, записывается значение с обратным порядком байтов, в противном случае — значение с прямым порядком байтов.  
+ Необязательно. Если значение false или не определено, должны быть написаны с обратным порядком байтов значение, в противном случае значение с прямым порядком байтов должен быть записан.  
   
-## Заметки  
- При записи за пределами представления эти методы вызывают исключение.  
+## <a name="remarks"></a>Примечания  
+ Эти методы вызывают исключение, если они записывают за пределами представления.  
   
-## Пример  
- В следующем примере показано, как задать первое значение Int32 в DataView.  
+## <a name="example"></a>Пример  
+ Приведенный ниже показано, как задать первый Int32 в DataView.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -61,5 +64,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

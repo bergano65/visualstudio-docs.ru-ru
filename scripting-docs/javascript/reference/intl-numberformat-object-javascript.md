@@ -1,90 +1,92 @@
 ---
-title: "Объект Intl.NumberFormat (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "NumberFormat"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Объект Intl.NumberFormat (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: NumberFormat
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 820bc90f-f1e7-457a-b90d-487dfc3a736d
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0dcb02dbe0d7a7eef88750c440a4fbcdde3ea7ee
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Объект Intl.NumberFormat (JavaScript)
-Содержит форматирование чисел, соответствующее языковому стандарту.  
+# <a name="intlnumberformat-object-javascript"></a>Объект Intl.NumberFormat (JavaScript)
+Обеспечивает формат чисел, соответствующий языковому стандарту.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 numberFormatObj = new Intl.NumberFormat([locales][, options])  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `numberFormatObj`  
- Обязательное.  Имя переменной, к которой нужно присвоить объект `NumberFormat`.  
+ Обязательный. Имя переменной, которой нужно присвоить объект `NumberFormat`.  
   
  `locales`  
- Необязательный параметр.  Массив строк языкового стандарта, которые содержат один или несколько тегов языка или языкового стандарта.  Если включить несколько строк языкового стандарта, нужно перечислить их в порядке убывания приоритета, чтобы первая запись была предпочитаемым языковым стандартом.  Если пропустить этот параметр, то используется языковой стандарт по умолчанию среды выполнения JavaScript.  Дополнительные сведения см. в разделе "Примечания".  
+ Необязательно. Массив строк языкового стандарта, которые содержат один или несколько тегов языка или языкового стандарта. При включении нескольких строк языкового стандарта их следует перечислять в порядке убывания приоритета, чтобы первая запись была предпочитаемым языковым стандартом. Если этот параметр опущен, используется языковой стандарт по умолчанию среды выполнения JavaScript. Дополнительные сведения см. в разделе "Примечания".  
   
  `options`  
- Необязательный параметр.  Объект, содержащий одно или несколько свойств, определяющих параметры форматирования числа.  Дополнительные сведения см. в разделе "Заметки".  
+ Необязательно. Объект, который содержит один или несколько свойств, определяющих форматов чисел. Подробные сведения см. в разделе "Заметки".  
   
-## Заметки  
- Параметр `locales` должен соответствовать тегам языка или языкового стандарта [BCP 47](http://tools.ietf.org/html/rfc5646), таким как "en\-US" и "zh\-CN".  Тег может включать язык, регион, страну и вариант.  Примеры тегов языка, см. в разделе [Приложение А](http://tools.ietf.org/html/rfc5646#appendix-A) к BCP 47.  Для `NumberFormat` можно добавить подтег **\-u**, за которым добавить \-nu для определения расширения системы нумерации:  
+## <a name="remarks"></a>Примечания  
+ `locales` Параметр должен соответствовать [BCP-47](http://tools.ietf.org/html/rfc5646) тегов языка или языкового стандарта, например «en US» и «zh-CN». Тег может включать язык, регион, страну и вариант. Примеры тегов языка см. в разделе [приложение A](http://tools.ietf.org/html/rfc5646#appendix-A) BCP-47. Для `NumberFormat`, вы можете добавить **-u** подтег следуют - Чис указать нумерации расширение системы:  
   
- "*language*\-*region*\-u\-nu\-*numberingsystem*"  
+ «*язык*-*область*-u-Чис -*numberingsystem*»  
   
- где *numberingsystem* может быть одним из следующих: arab, arabext, bali, beng, deva, fullwide, gujr, guru, hanidec, khmr, knda, laoo, latn, limb, mylm, mong, mymr, orya, tamldec, telu, thai, tibt.  
+ где *numberingsystem* может принимать одно из следующих: арабские, arabext, bali, beng, deva, fullwide, gujr, технике, hanidec, khmr, knda, laoo, latn, жизни, mylm, mong, mymr, orya, tamldec, telu, тайский, tibt.  
   
- Параметр `options` может включать следующие свойства:  
+ Параметр `options` может содержать указанные ниже свойства.  
   
 |Свойство|Описание|Возможные значения|Значение по умолчанию|  
-|--------------|--------------|------------------------|---------------------------|  
-|`localeMatcher`|Задает используемый алгоритм подбора языкового стандарта.|"lookup", "best fit"|"best fit"|  
-|`style`|Задает стиль формата чисел.|"decimal", "percent", "currency"|"decimal"|  
-|`currency`|Задает значение валюты ISO 4217 как алфавитный код.  Это значение требуется, если `style` задано как "валюта".|См. в разделе ISO [список кодов валют и фондов](http://www.currency-iso.org/en/home/tables/table-a1.html).|undefined|  
-|`currencyDisplay`|Указывает, отображать ли валюту как алфавитный код валюты ISO 4217, как локализованный символ валюты или как локализованное имя валюты.  Это значение используется, только если свойство `style` имеет значение "currency".|"code", "symbol", "name"|"symbol"|  
-|`useGrouping`|Указывает, должен ли использоваться разделитель группирования.|true, false|`true`.|  
-|`minimumIntegerDigits`|Задает минимальное число цифр целой части для использования.|От 1 до 21.|21|  
-|`minimumFractionDigits`|.  Задает минимальное число цифр дробной части для использования.|От 0 до 20.|0|  
-|`maximumFractionDigits`|Задает максимальное число цифр дробной части для использования.|Это значение может меняться в диапазоне от `minimumFractionDigits` до 20.|20.|  
-|`minimumSignificantDigits`|Задает минимальное число цифр дробной части для отображения.|Это значение может меняться в диапазоне от 1 до 21.|1|  
-|`maximumSignificantDigits`|Задает максимальное число цифр дробной части для отображения.|Это значение может меняться в диапазоне от `minimumSignificantDigits` до 21.|21|  
+|--------------|-----------------|---------------------|-------------------|  
+|`localeMatcher`|Задает используемый алгоритм подбора языкового стандарта.|«Просмотр», «оптимальных параметров»|"best fit"|  
+|`style`|Указывает стиль формат числа.|«decimal», «процент», «currency»|«десятичное число»|  
+|`currency`|Указывает значение валюты в формате ISO 4217 как буквенный код. Если `style` имеет значение на «currency», это значение является обязательным.|В разделе ISO [валют и фондов кода списка](http://www.currency-iso.org/en/home/tables/table-a1.html).|Не определено|  
+|`currencyDisplay`|Включение отображения валюты код валюты по алфавиту в формате ISO 4217, символ валюты, локализованное или валюты локализованное имя. Это значение используется только в том случае, если `style` имеет значение «валюта».|«код», «символ», «имя»|«символ»|  
+|`useGrouping`|Указывает, следует ли использовать разделитель групп.|значение true, false|`true`.|  
+|`minimumIntegerDigits`|Указывает минимальное число цифр целой части для использования.|1 по 21.|21|  
+|`minimumFractionDigits`|. Указывает минимальное число цифр дробной части для использования.|0 до 20.|0|  
+|`maximumFractionDigits`|Указывает максимальное количество цифр дробной части для использования.|Это значение может изменяться от `minimumFractionDigits` до 20 символов.|20.|  
+|`minimumSignificantDigits`|Указывает минимальное число цифр дробной части, который будет отображаться.|Это значение находится в диапазоне от 1 до 21.|1|  
+|`maximumSignificantDigits`|Указывает максимальное количество цифр дробной части, который будет отображаться.|Это значение может изменяться от `minimumSignificantDigits` 21.|21|  
   
-## Свойства  
+## <a name="properties"></a>Свойства  
  В следующей таблице перечислены свойства объекта `NumberFormat`.  
   
 |||  
 |-|-|  
 |Свойство|Описание|  
-|[Конструктор](../../javascript/reference/constructor-property-intl-numberformat.md)|Указывает функцию, которая создает объект средства форматирования числа.|  
-|[format](../../javascript/reference/format-property-intl-numberformat.md)|Возвращает функцию, которая форматирует число, используя настройки средства форматирования числа.|  
-|[прототип](../../javascript/reference/prototype-property-intl-numberformat.md)|Возвращает ссылку на прототип для модуля форматирования числа.|  
+|[Конструктор](../../javascript/reference/constructor-property-intl-numberformat.md)|Указывает функцию, которая создает пустой объект модуля форматирования.|  
+|[format](../../javascript/reference/format-property-intl-numberformat.md)|Возвращает функцию, в котором число форматируется с помощью параметров форматирования чисел.|  
+|[прототип](../../javascript/reference/prototype-property-intl-numberformat.md)|Возвращает ссылку на прототип для модуля форматирования чисел.|  
   
-## Методы  
+## <a name="methods"></a>Методы  
  В следующей таблице перечислены методы объекта `NumberFormat`.  
   
 |||  
 |-|-|  
 |Метод|Описание|  
-|[resolvedOptions](../../javascript/reference/resolvedoptions-method-intl-numberformat.md)|Возвращает объект, содержащий свойства и значения объекта средства форматирования числа.|  
+|[resolvedOptions](../../javascript/reference/resolvedoptions-method-intl-numberformat.md)|Возвращает объект, содержащий свойства и значения объекта средства форматирования.|  
   
-## Пример  
- В следующем примере создается объект `NumberFormat` для языкового стандарта en\-US с указанными параметрами форматирования.  
+## <a name="example"></a>Пример  
+ В следующем примере создается `NumberFormat` объект для языка "en US" с указанными параметрами форматирования.  
   
-```javascript  
+```JavaScript  
 var nf = new Intl.NumberFormat(["en-US"], {  
     style: "currency",  
     currency: "CNY",  
@@ -97,10 +99,10 @@ if (console && console.log) {
 }  
 ```  
   
-## Пример  
- В следующих примерах показаны результаты использования нескольких различных языковых стандартов и параметров.  
+## <a name="example"></a>Пример  
+ В следующих примерах результат с помощью несколько разных языков и параметров.  
   
-```javascript  
+```JavaScript  
 var number = 123456789;  
 var options1 = { style: "percent" };  
 var options2 = { style: "currency", currency: "INR" };  
@@ -117,10 +119,10 @@ if (console && console.log) {
 }  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
-## См. также  
- [toLocaleString \(Number\)](../../javascript/reference/tolocalestring-number.md)   
+## <a name="see-also"></a>См. также  
+ [метод toLocaleString (Number)](../../javascript/reference/tolocalestring-number.md)   
  [Объект Intl.Collator](../../javascript/reference/intl-collator-object-javascript.md)   
  [Объект Intl.DateTimeFormat](../../javascript/reference/intl-datetimeformat-object-javascript.md)

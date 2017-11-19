@@ -1,27 +1,30 @@
 ---
-title: "IActiveScript::AddTypeLib | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IActiveScript::AddTypeLib | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScript.AddTypeLib
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScript_AddTypeLib"
+helpviewer_keywords: IActiveScript_AddTypeLib
 ms.assetid: 8e507ea8-c80a-471c-b482-ae753c6e8595
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a2be7cf033b4b5dd4d99b19a3b71ed53e32af855
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScript::AddTypeLib
-Добавляет библиотеки типов в пространстве имен для скрипта.  Это аналогично директиве `#include` на C\/C\+\+.  Он позволяет набор стандартных элементов определения класса, `typedefs` и именованные константы, добавляемый к доступному среды выполнения к скрипту.  
+# <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
+Добавляет библиотеку типов в пространство имен для скрипта. Это похоже на `#include` директив в C/C++. Он позволяет набор стандартных элементов, таких как определения классов `typedefs`и именованных констант для добавления среды выполнения, которые доступны для скрипта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT AddTypeLib(  
@@ -32,32 +35,32 @@ HRESULT AddTypeLib(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `guidTypeLib`  
- \[in\] идентификатор CLSID библиотеки типов для добавления.  
+ [in] Код CLSID библиотеки типов для добавления.  
   
  `dwMaj`  
- \[in\] основной номер версии.  
+ [in] Основной номер версии.  
   
  `dwMin`  
- \[in\] дополнительный номер версии.  
+ [in] Дополнительный номер версии.  
   
  `dwFlags`  
- \[in\] флаги параметров.  Может быть следующее:  
+ [in] Флаги для параметра. Могут быть следующими:  
   
 |Значение|Значение|  
-|--------------|--------------|  
-|SCRIPTTYPELIB\_ISCONTROL|Библиотеки типов описывают элементы управления ActiveX, используемый основным приложением.|  
+|-----------|-------------|  
+|SCRIPTTYPELIB_ISCONTROL|Библиотека типов описывает элемент управления ActiveX, используемого ведущим приложением.|  
   
-## Возвращаемое значение  
- Возвращать одно из следующих значений:  
+## <a name="return-value"></a>Возвращаемое значение  
+ Возвращает одно из следующих значений:  
   
 |Возвращаемое значение|Значение|  
-|---------------------------|--------------|  
-|`S_OK`|Успех.|  
-|`E_INVALIDARG`|Аргумент был недопустимым.|  
-|`E_UNEXPECTED`|Вызов не ожидался \(например, обработчик скриптов еще не был загружен или не был инициализирован\).|  
-|`TYPE_E_CANTLOADLIBRARY`|Библиотека указанного типа не удалось загрузить.|  
+|------------------|-------------|  
+|`S_OK`|Выполнено.|  
+|`E_INVALIDARG`|Недопустимый аргумент.|  
+|`E_UNEXPECTED`|Вызов не ожидалось (например, обработчик сценариев еще не загрузки или инициализации).|  
+|`TYPE_E_CANTLOADLIBRARY`|Не удалось загрузить библиотеки указанного типа.|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IActiveScript](../../winscript/reference/iactivescript.md)

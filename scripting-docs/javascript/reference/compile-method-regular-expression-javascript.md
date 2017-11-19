@@ -1,64 +1,66 @@
 ---
-title: "Метод compile (Regular Expression) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "compile"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Compile - метод"
-  - "компиляция исходного кода, регулярные выражения"
-  - "регулярные выражения, компиляция"
+title: "Метод Compile (Regular Expression) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: compile
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- regular expressions, compiling
+- Compile method
+- compiling source code, regular expressions
 ms.assetid: dc28cae3-478d-49b5-b5ea-203e5edfe195
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8b8de23a9e4f0e03fbf042195867ad9426e4c6bb
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод compile (Regular Expression) (JavaScript)
-Выполняет компиляцию регулярного выражения во внутренний формат для более быстрого выполнения.  
+# <a name="compile-method-regular-expression-javascript"></a>Метод compile (Regular Expression) (JavaScript)
+Компилирует регулярные выражения во внутренний формат для более быстрого выполнения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 rgExp.compile(pattern, [flags])   
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `rgExp`  
- Обязательный.  Экземпляр объекта **Regular Expression**.  Может быть именем переменной или литералом.  
+ Обязательный. Экземпляр **регулярное выражение** объекта. Можно указать имя переменной или литерал.  
   
- *pattern*  
- Обязательный.  Строковое выражение, содержащее шаблон регулярного выражения для компиляции.  
+ *шаблон*  
+ Обязательный. Строковое выражение, содержащее шаблон регулярного выражения для компиляции  
   
  `flags`  
- Необязательный.  Далее перечислены доступные флаги, которые можно сочетать.  
+ Необязательно. Доступные флаги, которые можно совместить:  
   
--   g \(глобальный поиск всех вхождений шаблона *pattern*\)  
+-   g (глобальный поиск всех вхождений *шаблон*)  
   
--   i \(не учитывать регистр\)  
+-   i (не учитывать регистр);  
   
--   m \(многостроковый поиск\)  
+-   m (многостроковый поиск);  
   
-## Заметки  
- Метод **compile** преобразует выражение *pattern* во внутренний формат для более быстрого выполнения.  Это позволяет, например, более эффективно использовать регулярные выражения в циклах.  Благодаря компиляции регулярного выражения ускоряется выполнение программы при неоднократном повторном использовании одного и того же регулярного выражения.  Если регулярное выражение меняется, то его компиляция не предоставляет никаких преимуществ.  
+## <a name="remarks"></a>Примечания  
+ **Компиляции** метод преобразует *шаблон* во внутренний формат для более быстрого выполнения. Это позволяет более эффективно использовать регулярные выражения в циклах, например. Скомпилированное регулярное выражение ускоряет при повторном использовании того же выражения несколько раз. Не дает никаких преимуществ, однако не достигается, если регулярное выражение изменяется.  
   
-## Пример  
- В следующем примере показано использование метода **compile**.  
+## <a name="example"></a>Пример  
+ Следующий пример иллюстрирует использование **компиляции** метод:  
   
-```javascript  
+```JavaScript  
 function CompileDemo(){  
    var rs;  
    var s = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPp"  
@@ -73,10 +75,10 @@ function CompileDemo(){
 }  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Относится к**: [Объект Regular Expression](../../javascript/reference/regular-expression-object-javascript.md)  
+ **Применяется к**: [объект регулярного выражения](../../javascript/reference/regular-expression-object-javascript.md)  
   
-## См. также  
- [Regular Expression Syntax \(JavaScript\)](http://msdn.microsoft.com/ru-ru/ab0766e1-7037-45ed-aa23-706f58358c0e)
+## <a name="see-also"></a>См. также  
+ [Синтаксис регулярного выражения (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)

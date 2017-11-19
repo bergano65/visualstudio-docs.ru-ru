@@ -1,41 +1,43 @@
 ---
-title: "Недопустимый символ (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.WebClient.Help.SCRIPT1014"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Недопустимый символ (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.WebClient.Help.SCRIPT1014
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: b6a54a93-7fc9-459a-bdd6-f42d1ce40b5f
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c91e755b9a52deade5d5d5d24c0a7f28310c4425
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Недопустимый символ (JavaScript)
-Созданный идентификатор содержит знак \(или знаки\), который не распознается как допустимый компилятором [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  Для допустимых знаков используются следующие правила.  
+# <a name="invalid-character-javascript"></a>Недопустимый символ (JavaScript)
+Композицию идентификатора с помощью символ (или символы) не является допустимым путем [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] компилятора. Допустимые символы используются следующие правила:  
   
--   Первый знак должен быть буквой ASCII \(в верхнем или нижнем регистре\) или символом подчеркивания \(\_\).  
+-   Первый символ должен быть буквой ASCII (в верхнем или нижнем регистре) или символ подчеркивания (_).  
   
--   Последующие знаки должны быть буквами ASCII, числами или символами подчеркивания.  
+-   Последующие символы могут быть ASCII буквы, цифры и знаки подчеркивания.  
   
--   Имя идентификатора не должно совпадать с зарезервированным словом.  
+-   Имя идентификатора не может быть зарезервированным словом.  
   
-### Исправление ошибки  
+### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Старайтесь не использовать знаки, которые не входят в состав определения языка [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+-   Старайтесь не использовать символы, которые не являются частью [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] определение языка.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Переменные](../../javascript/variables-javascript.md)   
  [Специальные символы](../../javascript/advanced/special-characters-javascript.md)   
  [Типы данных](../../javascript/data-types-javascript.md)

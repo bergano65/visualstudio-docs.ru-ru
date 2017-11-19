@@ -1,64 +1,65 @@
 ---
-title: "Метод sort (Array) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sort"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Sort - метод"
+title: "Метод Sort (Array) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: sort
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: Sort method
 ms.assetid: 9bd8b54a-c838-4806-85c8-62eebe6bc48c
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2d098b47591ca7bbb4e3e8da5e5c14f8c0e9b255
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод sort (Array) (JavaScript)
+# <a name="sort-method-array-javascript"></a>Метод sort (Array) (JavaScript)
 Сортирует `Array`.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 arrayobj.sort(sortFunction)   
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `arrayObj`  
- Обязательный параметр.  Любой объект `Array`.  
+ Обязательный. Любой объект `Array`.  
   
  `sortFunction`  
- Необязательный параметр.  Имя функции, применяемой для определения порядка элементов.  Если этот аргумент опущен, элементы сортируются по возрастанию в порядке сортировки символов ASCII.  
+ Необязательно. Имя функции, используемый для определения порядка элементов. Если не указан, элементы сортируются в восходящем порядке символов ASCII.  
   
-## Возвращаемое значение  
- Сортируемый массив.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Отсортированный массив.  
   
-## Заметки  
- Метод `sort` сортирует имеющийся объект `Array`; нового объекта `Array` не создается.  
+## <a name="remarks"></a>Примечания  
+ `sort` Метод сортировки `Array` объекта на месте; нет новых `Array` объект создается во время выполнения.  
   
- Если указать функцию в аргументе `sortFunction`, она должна возвращать одно из следующих значений:  
+ Если указать функцию в `sortFunction` аргумент, оно должно возвращать одно из следующих значений:  
   
 -   Отрицательное значение, если первый переданный аргумент меньше второго аргумента.  
   
 -   Нуль, если аргументы эквивалентны.  
   
--   Положительное значение, если первый аргумент больше второго аргумента.  
+-   Положительное значение, если первый аргумент больше значения второго аргумента.  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере показано, как использовать метод `sort`.  
   
-```javascript  
+```JavaScript  
 var a = new Array(4, 11, 2, 10, 3, 1);  
   
 var b = a.sort();  
@@ -86,5 +87,5 @@ function CompareForSort(first, second)
 }  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]

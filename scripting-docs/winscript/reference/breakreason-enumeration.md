@@ -1,27 +1,30 @@
 ---
-title: "Перечисление BREAKREASON | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Перечисление BREAKREASON | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: BREAKREASON
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "BREAKREASON — перечисление"
+helpviewer_keywords: BREAKREASON enumeration
 ms.assetid: bde07ede-2f9b-4fa2-affc-f9405683f5f7
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bf1baa8b627df50db33cbd86302ce06e80c1cf34
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Перечисление BREAKREASON
-Указывает, что вызвавшее прерывание.  
+# <a name="breakreason-enumeration"></a>Перечисление BREAKREASON
+Показывает, что вызвало прерывание.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 typedef enum tagBREAKREASON {  
@@ -36,18 +39,18 @@ typedef enum tagBREAKREASON {
 } BREAKREASON;  
 ```  
   
-## Члены  
+## <a name="members"></a>Члены  
   
-|Элемент|Описание|  
-|-------------|--------------|  
-|BREAKREASON\_STEP|Обработчик языка в режиме пошагового выполнения.|  
-|BREAKREASON\_BREAKPOINT|Обработчик языка обнаружил явная точка останова.|  
-|BREAKREASON\_DEBUGGER\_BLOCK|Обработчик языка обнаружил блок отладчика в другом потоке.|  
-|BREAKREASON\_HOST\_INITIATED|Основное приложение запросила break.|  
-|BREAKREASON\_LANGUAGE\_INITIATED|Обработчик языка запросил прерывание.|  
-|BREAKREASON\_DEBUGGER\_HALT|Интегрированная среда разработки запрашивается прерывания отладчика.|  
-|BREAKREASON\_ERROR|Ошибка выполнения, вызвавшая прерывание.|  
-|BREAKREASON\_JIT|Причиненный запуском JIT\-отладка.|  
+|Член|Описание|  
+|------------|-----------------|  
+|BREAKREASON_STEP|Обработчик языка находится в пошаговом режиме.|  
+|BREAKREASON_BREAKPOINT|Обработчик языка обнаружил явная точка останова.|  
+|BREAKREASON_DEBUGGER_BLOCK|Обработчик языка обнаружил блок отладчика в другом потоке.|  
+|BREAKREASON_HOST_INITIATED|Узел запросил разрыв.|  
+|BREAKREASON_LANGUAGE_INITIATED|Обработчик языка запросил разрыв.|  
+|BREAKREASON_DEBUGGER_HALT|Разрыв запрошенной отладчиком интегрированной среды разработки.|  
+|BREAKREASON_ERROR|Ошибка выполнения вызвало прерывание.|  
+|BREAKREASON_JIT|Причина запуска JIT-отладка.|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Константы, перечисления и структуры отладчика активных скриптов](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

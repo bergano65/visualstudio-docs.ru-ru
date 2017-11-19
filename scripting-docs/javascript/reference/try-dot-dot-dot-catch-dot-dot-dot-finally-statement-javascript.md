@@ -1,38 +1,41 @@
 ---
-title: "Оператор try...catch...finally (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "try_JavaScriptKeyword"
-  - "finally_JavaScriptKeyword"
-  - "catch_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "обработка исключений try-catch"
-  - "обработка исключений try-catch, сведения об обработке исключений try-catch"
-  - "обработка исключений try-catch, catch - блок"
-  - "обработка исключений try-catch, finally - блок"
+title: "Try... catch... finally (JavaScript) оператор | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords:
+- try_JavaScriptKeyword
+- finally_JavaScriptKeyword
+- catch_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- try-catch exception handling, finally block
+- try-catch exception handling, about try-catch exception handling
+- try-catch exception handling, catch block
+- try-catch exception handling
 ms.assetid: b7a0a54e-dfaa-4e41-bf25-bcaa43e601fb
-caps.latest.revision: 28
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 28
+caps.latest.revision: "28"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b05f15e593aeb7cb921f6237fad30b589cfdfe66
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Оператор try...catch...finally (JavaScript)
-Настраивает блоки кода, в которых ошибки, возникшие в одном блоке, обрабатываются в другом.  Ошибки, возникающие в блоке `try`, перехватываются в блоке `catch`.  [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+# <a name="trycatchfinally-statement-javascript"></a>Оператор try...catch...finally (JavaScript)
+Настраивает блоки кода, в которых ошибки, возникшие в одном блоке, обрабатываются в другом. Ошибки, возникающие внутри блока `try`, перехватываются в блоке `catch`. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 try {  
@@ -46,32 +49,32 @@ finally {
 }  
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `tryStatements`  
- Обязательный.  Операторы, в которых может возникнуть ошибка.  
+ Обязательный. Операторы, в которых может возникнуть ошибка.  
   
  `exception`  
- Обязательный.  Любое имя переменной.  Начальное значение аргумента `exception` — это значение возникшей ошибки.  
+ Обязательный. Любое имя переменной. Начальное значение `exception` — это значение возникшей ошибки.  
   
  `catchStatements`  
- Необязательный.  Операторы обработки ошибок, возникающих в связанном блоке `tryStatements`.  
+ Необязательно. Операторы обработки ошибок, возникающих в соответствующем блоке `tryStatements`.  
   
  `finallyStatements`  
- Необязательный.  Операторы, безусловно выполняемые после выполнения всех остальных действий по обработке ошибки.  
+ Необязательно. Операторы, безусловно выполняемые после выполнения всех остальных действий по обработке ошибки.  
   
-## Заметки  
- Оператор `try...catch...finally` позволяет обрабатывать некоторые или все ошибки, которые могут возникнуть в том или ином блоке кода, не прерывая выполнение этого кода.  Если возникают ошибки, которые не обрабатываются, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] выдает обычное сообщение об ошибке.  
+## <a name="remarks"></a>Примечания  
+ Оператор `try...catch...finally` позволяет обрабатывать некоторые или все ошибки, которые могут возникать в конкретном блоке кода, не прерывая выполнения кода,. Если возникают ошибки, которые не обрабатываются, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] предоставляет обычное сообщение об ошибке.  
   
- Блок `try` содержит код, который может спровоцировать ошибку, а блок `catch` — код, который обрабатывает некоторые или все ошибки.  Если в блоке `try` возникает ошибка, управление программой передается блоку `catch`.  Значение `exception` — это значение ошибки, возникшей в блоке `try`.  Если ошибок нет, код в блоке `catch` не выполняется.  
+ Блок `try` содержит код, который может спровоцировать ошибку, а блок `catch` — код, который обрабатывает некоторые или все ошибки. Если в блоке `try` возникает ошибка, управление программой передается блоку `catch`. Значение `exception` — это значение ошибки, возникшей в блоке `try`. Если ошибок нет, блок `catch` не выполняется.  
   
- С помощью оператора `throw` можно передать ошибку на следующий уровень для повторного создания ошибки.  
+ Можно передать ошибку на следующий уровень с помощью оператора `throw` для повторного создания ошибки.  
   
- После того как в блоке `try` будут выполнены все операторы, а в блоке `catch` завершится обработка ошибок, выполняются операторы в блоке `finally` \(независимо от того, обработана ли ошибка\).  Код в блоке `finally` выполняется всегда, если нет необработанных ошибок \(например, если в блоке **catch** возникает ошибка времени выполнения\).  
+ После того как в блоке `try` выполнены все операторы и в блоке `catch` обработаны все ошибки, выполняются операторы в блоке `finally` (независимо от того, была ли обработана ошибка). Код в `finally` блок выполняется всегда, если не произошла необработанная ошибка (например, ошибка времени выполнения внутри **перехватывать** блока).  
   
-## Пример  
- В следующем примере создается исключение `ReferenceError` и отображается имя и текст ошибки.  
+## <a name="example"></a>Пример  
+ В следующем примере создается исключение `ReferenceError` и отображается имя ошибки и ее сообщение.  
   
-```javascript  
+```JavaScript  
 try {  
     addalert("bad call");  
 }  
@@ -91,10 +94,10 @@ Error Name: ReferenceError
   
 ```  
   
-## Пример  
- В следующем примере показано повторное создание ошибок и выполнение вложенных блоков `try…catch`.  Если ошибка создана во вложенном блоке `try`, она передается во вложенный блок `catch`, который создает ее повторно.  Вложенный блок `finally` выполняется до того, как внешний блок `catch` обработает ошибку, а в конце выполняется внешний блок `finally`.  
+## <a name="example"></a>Пример  
+ В следующем примере показано повторное создание ошибок и выполнение вложенных блоков `try...catch`. Если ошибка создана во вложенном блоке `try`, она передается во вложенный блок `catch`, который повторно создает ее. Вложенный блок `finally` выполняется прежде, чем внешний блок `catch` обрабатывает ошибку, и в конце выполняется внешний блок `finally`.  
   
-```javascript  
+```JavaScript  
 try {  
     document.write("Outer try running...<br/>");  
   
@@ -126,12 +129,12 @@ finally {
 // Outer finally running  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv5](../../javascript/reference/includes/jsv5-md.md)]  
   
 > [!NOTE]
->  Начиная с Internet Explorer 8 \(стандартный режим\), блок **catch** для выполнения `finally` не требуется.  
+>  Начиная с Internet Explorer 8, стандартный режим, **перехватывать** блок больше не требуется для `finally` для запуска.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Оператор throw](../../javascript/reference/throw-statement-javascript.md)   
- [Приложение\-пример мастера настройки Sсript Junkie](http://code.msdn.microsoft.com/Script-Junkie-Configuration-543ece24)
+ [Приложение-пример мастера настройки сценария Junkie](http://code.msdn.microsoft.com/Script-Junkie-Configuration-543ece24)

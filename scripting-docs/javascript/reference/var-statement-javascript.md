@@ -1,70 +1,72 @@
 ---
-title: "Оператор var (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/22/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "var_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "объявление переменных, оператор var"
-  - "var - оператор"
+title: "Оператор var (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/22/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: var_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- declaring variables, var statement
+- var statement
 ms.assetid: 56f900af-a5c4-4667-9664-5956d30f0aae
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 839b6904fa59b6f4ea9a5c4d8e00213cd351517a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Оператор var (JavaScript)
-Объявляет переменную  
+# <a name="var-statement-javascript"></a>Оператор var (JavaScript)
+Объявляет переменную.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 var variable1 = value1  
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `variable1`  
- Объявленное имя переменной.  
+ Имя объявляемой переменной.  
   
  `value1`  
- Исходное значение, присваиваемое переменной.  
+ Начальное значение, присвоенное переменной.  
   
-## Заметки  
- Используйте оператор `var` для объявления переменных.  Значения могут быть присвоены переменным при их объявлении или позже в скрипте.  
+## <a name="remarks"></a>Примечания  
+ Используйте `var` инструкции для объявления переменных. Можно назначить значения переменным, при их объявлении или более поздней версии в сценарии.  
   
- Переменная, объявленная в первый раз, появляется в скрипте.  
+ Переменная объявлена в первый раз он отображается в скрипте.  
   
- Можно объявить переменную без ключевого слова `var` и присвоить ей значение.  Это называется *неявным объявлением*, применять его не рекомендуется.  Неявное объявление дает переменной глобальную область видимости.  При объявлении переменной на уровне процедуры обычно не требуется, чтобы эта переменная обладала глобальной областью видимости.  Чтобы переменная не обладала глобальной областью видимости, необходимо использовать ключевое слово `var` в объявлении переменной.  
+ Можно объявить переменную без использования `var` ключевое слово и присвоить ей значение. Это называется *неявное объявление*, и не рекомендуется. Неявного объявления предоставляет область глобальной переменной. При объявлении переменной на уровне процедуры, вы обычно не следует раскрывать глобальной области. Следует избегать предоставления область глобальной переменной, необходимо использовать `var` ключевое слово в объявлении переменной.  
   
- Если не инициализировать переменную в операторе `var`, ей автоматически присваивается значение [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] `undefined`.  
+ Если вы не инициализировать переменную в `var` инструкции, автоматически назначается [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] значение `undefined`.  
   
-## Пример  
- В следующих примерах показано использование оператора `var`.  
+## <a name="example"></a>Пример  
+ Следующие примеры иллюстрируют использование `var` инструкции.  
   
-```javascript  
+```JavaScript  
 var index;  
 var name = "Thomas Jefferson";  
 var answer = 42, counter, numpages = 10;  
 var myarray = new Array();  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## См. также  
- [Оператор function](../../javascript/reference/function-statement-javascript.md)   
+## <a name="see-also"></a>См. также  
+ [Оператор Function](../../javascript/reference/function-statement-javascript.md)   
  [Оператор new](../../javascript/reference/new-operator-decrementjavascript.md)   
  [Объект Array](../../javascript/reference/array-object-javascript.md)   
  [Переменные](../../javascript/variables-javascript.md)

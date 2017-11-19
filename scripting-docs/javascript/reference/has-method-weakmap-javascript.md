@@ -1,48 +1,51 @@
 ---
-title: "Метод has (WeakMap) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Метод has (WeakMap) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 12bedca1-bde7-413a-a4e2-06c03559044f
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e9a1706a1b96b5273ec280c4cef2be47a3bc6e17
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод has (WeakMap) (JavaScript)
-Возвращает значение `true`, если объект `WeakMap` содержит указанный элемент.  
+# <a name="has-method-weakmap-javascript"></a>Метод has (WeakMap) (JavaScript)
+Возвращает `true` Если `WeakMap` содержит указанный элемент.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```javascript  
+```JavaScript  
 weakmapObj.has(key)  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `weakmapObj`  
- Обязательное.  Объект `WeakMap`.  
+ Обязательный. Объект `WeakMap`.  
   
  `key`  
- Обязательное.  Ключ элемента, который требуется протестировать.  
+ Обязательный. Ключ элемента, который требуется проверить.  
   
-## Значение свойства или возвращаемое значение  
- Значение `true`, если `WeakMap` содержит указанный ключ.  
+## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение  
+ `true`Если `WeakMap` содержит указанный ключ.  
   
-## Пример  
- В следующем примере показано добавление члена в `WeakMap` и использование для проверки наличия `has`.  
+## <a name="example"></a>Пример  
+ Следующий пример демонстрирует добавление члена `WeakMap` , а затем используйте `has` Чтобы проверить, присутствует ли он.  
   
-```javascript  
+```JavaScript  
 var dog = {  
     breed: "yorkie"  
 }  
@@ -56,5 +59,5 @@ document.write(wm.has(dog));
 // true  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]

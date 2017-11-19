@@ -1,36 +1,38 @@
 ---
-title: "Ожидалось ключевое слово &quot;catch&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.WebClient.Help.SCRIPT1033"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Ожидается &#39; catch &#39; | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.WebClient.Help.SCRIPT1033
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: f1cd947f-eba2-411e-8e84-8ca86f608643
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e6cd1e57137d220ebcf3834070e36d8257e2dca7
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Ожидалось ключевое слово &quot;catch&quot;
-Использован блок обработки исключений **try**, но не написан связанный с ним оператор **catch**.  Механизм обработки исключений требует, чтобы код, который может завершиться ошибкой, вместе с кодом, который не должен выполняться при возникновении исключения, был помещен внутрь блока **try**.  Исключения создаются внутри блока **try** с помощью оператора **throw** и перехватываются вне блока **try** с помощью одного или нескольких операторов **catch**.  
+# <a name="expected-39catch39"></a>Ожидается &#39; catch &#39;
+Использовать обработку исключений **повторите** блокировки, но не были записаны связанного **перехватывать** инструкции. Механизм обработки исключений требует, что код, который может завершиться ошибкой, а также код, который не следует выполнять при возникновении исключения быть упакован в **повторите** блока. Исключения из среды **повторите** с помощью **throw** инструкции и перехватываются за пределами **повторите** блок с одним или несколькими **перехватывать**инструкции.  
   
-### Исправление ошибки  
+### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Добавьте соответствующий блок **catch**.  
+-   Добавление связанного **перехватывать** блока.  
   
--   Попробуйте использовать блок **finally** вместо блока **catch**.  
+-   Попробуйте использовать **наконец** блокировать вместо **перехватывать** блока.  
   
-## См. также  
- [Оператор try...catch...finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)   
+## <a name="see-also"></a>См. также  
+ [Try... catch... finally инструкции](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)   
  [Объект Error](../../javascript/reference/error-object-javascript.md)

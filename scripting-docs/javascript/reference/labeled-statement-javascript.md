@@ -1,56 +1,58 @@
 ---
-title: "Оператор с идентификатором (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "labeled_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "continue - оператор"
-  - "идентификаторы, операторы"
-  - "labeled - оператор"
+title: "Оператор (JavaScript) с меткой | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: labeled_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- continue statement
+- labeled statement
+- identifiers, statements
 ms.assetid: 019f898e-9e27-4be4-a22f-c5927c7fcae2
-caps.latest.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bd72b15d3fc9083ca127a48981c0cd0a7ee56b6c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Оператор с идентификатором (JavaScript)
+# <a name="labeled-statement-javascript"></a>Оператор с идентификатором (JavaScript)
 Предоставляет идентификатор для оператора.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
       label :  
-   statements   
+   statements   
 ```  
   
-## Параметры  
- *label*  
- Обязательный.  Уникальный идентификатор, используемый для ссылки на оператор с меткой.  
+## <a name="parameters"></a>Параметры  
+ *Метка*  
+ Обязательный. Уникальный идентификатор, используемый при обращении к оператору с меткой.  
   
  `statements`  
- Необязательный.  Один или несколько операторов, связанных с идентификатором *label*.  
+ Необязательно. Один или несколько операторов, связанные с *метка*.  
   
-## Заметки  
- Метки используются операторами **break** и **continue** для указания оператора, к которому применяются операторы **break** и **continue**.  
+## <a name="remarks"></a>Примечания  
+ Метки используются **разрыв** и **Продолжить** инструкции, чтобы указать инструкции, к которому **разрыв** и **Продолжить** применения.  
   
-## Пример  
- В следующем коде оператор **continue** относится к циклу **for**, которому предшествует оператор `Inner:`.  Когда значение `j` равняется 24, оператор **continue** вызывает переход этого цикла **for** на следующую итерацию.  При значениях от 21 до 23 и от 25 до 30 выполняется вывод на каждой строке.  
+## <a name="example"></a>Пример  
+ В следующем коде **Продолжить** Инструкция ссылается на **для** цикл, который предшествует `Inner:` инструкции. Когда `j` 24, **Продолжить** инструкция вызывает, **для** переход к следующей итерации цикла. Значения от 21 до 23 и 25 до 30 печати в каждой строке.  
   
-```javascript  
+```JavaScript  
 Outer:  
 for (i = 1; i <= 10; i++) {  
    document.write ("<br />");  
@@ -68,9 +70,9 @@ Inner:
 }  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Оператор break](../../javascript/reference/break-statement-javascript.md)   
  [Оператор continue](../../javascript/reference/continue-statement-javascript.md)

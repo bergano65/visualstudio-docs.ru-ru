@@ -1,47 +1,48 @@
 ---
-title: "Функция Math.max (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "max"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "max - метод"
+title: "Функция Math.max (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: max
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: max method
 ms.assetid: f3ea1b8a-5fd0-482a-971b-b7f8e2b9b7eb
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: adf66164346f3802d92f8e0de82356df49bad5fa
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция Math.max (JavaScript)
-Возвращает наибольшее числовое выражение из представленного набора.  
+# <a name="mathmax-function-javascript"></a>Функция Math.max (JavaScript)
+Возвращает большее из набора числовых выражений.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 Math.max([number1[, number2[... [, numberN]]]])   
 ```  
   
-## Заметки  
- Необязательные аргументы `number1, number2, ..., numberN` представляют собой числовые выражения для вычисления.  
+## <a name="remarks"></a>Примечания  
+ Необязательный `number1, number2, ..., numberN` аргументы являются числовые выражения для оценки.  
   
- Если аргументы не предоставлены, то возвращается значение [Number.NEGATIVE\_INFINITY](../../javascript/reference/number-constants-javascript.md).  Если любой из аргументов имеет значение `NaN`, возвращается также значение `NaN`.  
+ Если аргументы не предоставлены, возвращаемое значение равно [Number.NEGATIVE_INFINITY](../../javascript/reference/number-constants-javascript.md). Если любой из аргументов `NaN`, возвращаемое значение также является `NaN`.  
   
-## Пример  
- В следующем примере кода показано, как получить наибольшее из двух выражений.  
+## <a name="example"></a>Пример  
+ Следующий код показывает способ получения большее из двух выражений.  
   
-```javascript  
+```JavaScript  
 var x = Math.max(107 - 3,  48 * 90);  
 document.write(x);  
   
@@ -50,8 +51,8 @@ document.write(x);
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Функция Math.min](../../javascript/reference/math-min-function-javascript.md)

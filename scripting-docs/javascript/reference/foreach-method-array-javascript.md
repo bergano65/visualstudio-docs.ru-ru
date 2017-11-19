@@ -1,56 +1,59 @@
 ---
-title: "Метод forEach (Array) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "массивы [JavaScript], forEach - метод"
-  - "функция обратного вызова, forEach - метод [JavaScript]"
-  - "forEach - метод [JavaScript]"
+title: "Метод forEach (Array) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- forEach method [JavaScript]
+- arrays [JavaScript], forEach method
+- callback function, forEach method [JavaScript]
 ms.assetid: bd188034-a62b-4cbd-99c8-46d70dd6823d
-caps.latest.revision: 28
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 28
+caps.latest.revision: "28"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ec35c49e272ba50e26d3e4e7d892aa719a090d73
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод forEach (Array) (JavaScript)
+# <a name="foreach-method-array-javascript"></a>Метод forEach (Array) (JavaScript)
 Выполняет указанное действие для каждого элемента массива.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 array1.forEach(callbackfn[, thisArg])  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
   
 |Параметр|Определение|  
-|--------------|-----------------|  
-|`array1`|Обязательный.  Объект массива.|  
-|`callbackfn`|Обязательный.  Функция, которая принимает до 3 аргументов.  Метод `forEach` вызывает функцию `callbackfn` по одному разу для каждого элемента массива.|  
-|`thisArg`|Необязательный.  Объект, на который может ссылаться ключевое слово `this` в функции `callbackfn`.  Если параметр `thisArg` опущен, в качестве значения `this` используется `undefined`.|  
+|---------------|----------------|  
+|`array1`|Обязательный. Объект массива.|  
+|`callbackfn`|Обязательный. Функция, которая принимает до 3 аргументов. Метод `forEach` вызывает функцию `callbackfn` по одному разу для каждого элемента массива.|  
+|`thisArg`|Необязательно. Объект, на который может ссылаться ключевое слово `this` в функции `callbackfn`. Если параметр `thisArg` опущен, в качестве значения `undefined` используется `this`.|  
   
-## Исключения  
+## <a name="exceptions"></a>Исключения  
  Если аргумент `callbackfn` не является объектом функции, вызывается исключение `TypeError`.  
   
-## Заметки  
- Метод `forEach` вызывает функцию `callbackfn` по одному разу для каждого элемента массива в порядке возрастания индекса.  Функция обратного вызова не вызывается для отсутствующих элементов массива.  
+## <a name="remarks"></a>Примечания  
+ Метод `forEach` вызывает функцию `callbackfn` по одному разу для каждого элемента массива в порядке возрастания индекса. Функция обратного вызова не вызывается для отсутствующих элементов массива.  
   
  Помимо объектов массива, метод `forEach` может использоваться любым объектом, имеющим свойство `length` и обладающим численно проиндексированными именами свойств.  
   
-## Синтаксис функции обратного вызова  
+## <a name="callback-function-syntax"></a>Синтаксис функции обратного вызова  
  Синтаксис функции обратного вызова выглядит следующим образом:  
   
  `function callbackfn(value, index, array1)`  
@@ -60,25 +63,25 @@ array1.forEach(callbackfn[, thisArg])
  Функция обратного вызова имеет следующие параметры.  
   
 |Аргумент обратного вызова|Определение|  
-|-------------------------------|-----------------|  
+|-----------------------|----------------|  
 |`value`|Значение элемента массива.|  
 |`index`|Числовой индекс элемента массива.|  
 |`array1`|Объект массива, содержащий требуемый элемент.|  
   
-## Изменение объекта массива  
- Сам метод `forEach` не изменяет исходный массив, но функция обратного вызова может изменять его.  В следующей таблице описаны результаты изменения объекта массива после запуска метода `forEach`.  
+## <a name="modifying-the-array-object"></a>Изменение объекта массива  
+ Сам метод `forEach` не изменяет исходный массив, но функция обратного вызова может изменять его. В следующей таблице описаны результаты изменения объекта массива после запуска метода `forEach`.  
   
 |Условие после запуска метода `forEach`|Элемент передается функции обратного вызова?|  
-|--------------------------------------------|--------------------------------------------------|  
+|---------------------------------------------|------------------------------------------|  
 |Элемент добавлен за пределами первоначальной длины массива.|Нет.|  
 |Элемент добавлен для заполнения отсутствующего элемента массива.|Да, если этот индекс еще не был передан функции обратного вызова.|  
 |Элемент изменен.|Да, если этот элемент еще не был передан функции обратного вызова.|  
 |Элемент удален из массива.|Нет, если этот элемент не был уже передан функции обратного вызова.|  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере показано использование метода `forEach`.  
   
-```javascript  
+```JavaScript  
 // Define the callback function.  
 function ShowResults(value, index, ar) {  
     document.write("value: " + value);  
@@ -99,10 +102,10 @@ letters.forEach(ShowResults);
 //  value: ef index: 2   
 ```  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере аргумент `callbackfn` включает код функции обратного вызова.  
   
-```javascript  
+```JavaScript  
 // Create an array.  
 var numbers = [10, 11, 12];  
   
@@ -117,10 +120,10 @@ document.write(sum);
   
 ```  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере показано использование аргумента `thisArg`, указывающего объект, на который можно ссылаться с помощью ключевого слова `this`.  
   
-```javascript  
+```JavaScript  
 // Define the object that contains the callback function.  
 var obj = {  
     showResults: function(value, index) {  
@@ -155,13 +158,13 @@ numbers.forEach(function(value, index) { this.showResults(value, index) }, obj);
 //  value: 6 index: 1 squared: 36  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## См. также  
- [Метод filter \(Array\)](../../javascript/reference/filter-method-array-javascript.md)   
- [Метод map \(Array\)](../../javascript/reference/map-method-array-javascript.md)   
- [Метод some \(Array\)](../../javascript/reference/some-method-array-javascript.md)   
+## <a name="see-also"></a>См. также  
+ [Метод Filter (Array)](../../javascript/reference/filter-method-array-javascript.md)   
+ [Метод Map (Array)](../../javascript/reference/map-method-array-javascript.md)   
+ [Метод Some (Array)](../../javascript/reference/some-method-array-javascript.md)   
  [Объект Array](../../javascript/reference/array-object-javascript.md)   
  [Использование массивов](../../javascript/advanced/using-arrays-javascript.md)   
- [Пример приложения Hilo на JavaScript \(Магазин Windows\)](http://hilojs.codeplex.com/SourceControl/latest)
+ [Пример приложения Hilo JavaScript (магазин Windows)](http://hilojs.codeplex.com/SourceControl/latest)

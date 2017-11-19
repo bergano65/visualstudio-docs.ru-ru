@@ -1,69 +1,70 @@
 ---
-title: "Оператор for (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "for_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "циклические структуры, операторы for"
+title: "Оператор for (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: for_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: loop structures, for statements
 ms.assetid: bae0ec40-152e-43f3-969b-3696489ec5c4
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7142dbb8c00a351918d0821c3ca7dba3d7b2acb6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Оператор for (JavaScript)
-Выполняет блок операторов, пока указанное условие имеет значение true.  
+# <a name="for-statement-javascript"></a>Оператор for (JavaScript)
+Выполняет блок операторов, пока указанное условие истинно.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 for ([initialization]; [test]; [increment])  
-   statement   
+   statement   
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `initialization`  
- Необязательный.  Выражение.  Данное выражение выполняется только один раз перед началом выполнения цикла.  
+ Необязательно. Выражения. Данное выражение выполняется только один раз, перед выполнением цикла.  
   
  `test`  
- Необязательный.  Выражение типа Boolean.  Если выражение `test` имеет значение `true`, выполняется оператор `statement`.  Если выражение `test` имеет значение `false`, выполнение цикла завершается.  
+ Необязательно. Выражение типа Boolean. Если `test` — `true`, `statement` выполняется. Если `test` Если `false`, выполнение цикла прекращается.  
   
  `increment`  
- Необязательный.  Выражение.  Данное выражение увеличения выполняется в конце каждого прохода цикла.  
+ Необязательно. Выражения. Выражение увеличения выполняется в конце каждого прохода цикла.  
   
  `statement`  
- Необязательный.  Один или несколько операторов, выполняемых, если выражение `test` имеет значение **true**.  Может представлять собой составную инструкцию.  
+ Необязательно. Один или несколько операторов для выполнения, если `test` — **true**. Может быть составным оператором.  
   
-## Заметки  
- Цикл `for` обычно используется, если цикл необходимо выполнить известное количество раз.  Цикл `for` удобно использовать для итерации всех элементов массива и для последовательной обработки.  
+## <a name="remarks"></a>Примечания  
+ Обычно используется `for` цикл, когда цикл необходимо выполнить известное количество раз. Объект `for` цикл удобно использовать для перебора массивов и для последовательной обработки.  
   
- Проверка условного выражения осуществляется до выполнения цикла, поэтому оператор `for` выполняется ноль или более раз.  
+ Тест условного выражения осуществляется до выполнения цикла, поэтому `for` инструкция выполняет ноль или более раз.  
   
- В любой строке блока операторов цикла `for` можно использовать оператор `break`, чтобы выйти из цикла, или оператор `continue`, чтобы передать управление следующей итерации цикла.  
+ В любой строке `for` блока инструкций цикла, можно использовать `break` можно использовать инструкцию, чтобы выйти из цикла, или `continue` передать управление в следующую итерацию цикла.  
   
-## Пример  
- В приведенном ниже примере оператор `for` выполняет заключенные в цикл операторы следующим образом.  
+## <a name="example"></a>Пример  
+ В следующем примере `for` инструкция выполняет заключенные в цикл инструкции следующим образом:  
   
--   Сначала вычисляется начальное значение переменной `i`.  
+-   Во-первых, начальное значение переменной `i` вычисляется.  
   
--   Затем, если значение `i` меньше или равно 9, выполняются операторы `document.write` и повторно вычисляется значение `i`.  
+-   Затем, при условии, что значение `i` меньше или равно 9, `document.write` инструкции и `i` перестраивается.  
   
--   Когда значение `i` становится больше 9, условие становится ложным и управление передается за пределы цикла.  
+-   Когда `i` больше 9, условие становится ложным и управление передается за пределы цикла.  
   
-```javascript  
+```JavaScript  
 // i is set to 0 at the start and is incremented by 1 at the  
 // end of each iteration.  
 // The loop terminates when i is not less than or equal to  
@@ -76,10 +77,10 @@ for (var i = 0; i <= 9; i++) {
 // Output: 0 1 2 3 4 5 6 7 8 9  
 ```  
   
-## Пример  
- Все выражения оператора `for` являются необязательными.  В следующем примере с помощью оператора `for` создается бесконечный цикл, для выхода из которого используется оператор `break`.  
+## <a name="example"></a>Пример  
+ Все выражения из `for` инструкции являются необязательными. В следующем примере `for` инструкции создают бесконечный цикл и `break` оператор используется для выхода из цикла.  
   
-```javascript  
+```JavaScript  
 var j = 0;  
 for (;;) {  
     if (j >= 5) {  
@@ -92,9 +93,9 @@ for (;;) {
 // Output: 1 2 3 4 5  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## См. также  
- [Оператор for...in](../../javascript/reference/for-dot-dot-dot-in-statement-javascript.md)   
+## <a name="see-also"></a>См. также  
+ [for... в инструкции](../../javascript/reference/for-dot-dot-dot-in-statement-javascript.md)   
  [Оператор while](../../javascript/reference/while-statement-javascript.md)

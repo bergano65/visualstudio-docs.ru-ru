@@ -7,16 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 51eb2af9-00e7-4725-a87d-62fb4f39f444
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: ae3a0d952b8ff88f2df4d297509d01d1a6731d56
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/26/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Обновление фигур и соединителей в соответствии с моделью
 В доменного языка в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], чтобы внешний вид фигуры отражают состояние базовой модели.  
@@ -158,4 +157,3 @@ public partial class ArrowConnector // My connector class.
  `AssociateValueWith()`должен быть вызван один раз для каждого свойства домена, который требуется зарегистрировать. После его вызова, все изменения к указанному свойству будет вызывать `OnAssociatedPropertyChanged()` в фигуры, представляющие свойства элемента модели.  
   
  Нет необходимости вызывать `AssociateValueWith()` для каждого экземпляра. Несмотря на то, что InitializeResources является методом экземпляра, он вызывается только один раз для каждого класса формы.
-

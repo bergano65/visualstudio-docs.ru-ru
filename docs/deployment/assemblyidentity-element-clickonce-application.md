@@ -1,34 +1,33 @@
 ---
-title: "Элемент &lt;assemblyIdentity&gt; (приложение ClickOnce) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "urn:schemas-microsoft-com:asm.v2#assemblyIdentity"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<assemblyIdentity> - элемент [манифест приложения ClickOnce]"
+title: "&lt;assemblyIdentity&gt; элемент (приложение ClickOnce) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: urn:schemas-microsoft-com:asm.v2#assemblyIdentity
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <assemblyIdentity> element [ClickOnce application manifest]
 ms.assetid: f48e9531-efac-4d11-8166-f63a5ece1ac5
-caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: db313077fa7903b2bdb2fbbe6b76aa80c940fecd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Элемент &lt;assemblyIdentity&gt; (приложение ClickOnce)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Идентифицирует приложение, развертываемое в рамках [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
+# <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity&gt; элемент (приложение ClickOnce)
+Идентифицирует приложение, развернутое в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
@@ -41,23 +40,23 @@ caps.handback.revision: 20
 />  
 ```  
   
-## Элементы и атрибуты  
- Элемент `assemblyIdentity` является обязательным.  Не содержит дочерних элементов и имеет следующие атрибуты.  
+## <a name="elements-and-attributes"></a>Элементы и атрибуты  
+ `assemblyIdentity` Элемент является обязательным. Он не содержит дочерних элементов и имеет следующие атрибуты.  
   
 |Атрибут|Описание|  
-|-------------|--------------|  
-|`Name`|Обязательный.  Идентифицирует имя приложения.<br /><br /> Если `Name` содержит специальные знаки, такие как одинарные или двойные кавычки, это может вызвать сбой активации приложения.|  
-|`Version`|Обязательный.  Задает номер версии приложения в следующем формате: `основной.дополнительный.построение.редакция`.|  
-|`publicKeyToken`|Необязательный.  Задает 16\-символьную шестнадцатеричную строку, которая представляет последние 8 байтов хэша `SHA-1` открытого ключа, которым подписывается приложение или сборка.  Открытый ключ, используемый для подписи каталога, должен иметь длину не менее 2048 бит.<br /><br /> Подписывать сборки рекомендуется, хотя и не обязательно, но этот атрибут является обязательным.  Если сборка не подписана, необходимо скопировать значение из самозаверенной сборки или использовать фиктивное значение, состоящее из всех нулей.|  
-|`processorArchitecture`|Обязательный.  Задает процессор.  Возможны следующие значения: `msil` для всех процессоров, `x86` для 32\-разрядной системы Windows, `IA64` для 64\-разрядной системы Windows и `Itanium` для 64\-разрядных процессоров Intel Itanium.|  
-|`language`|Обязательный.  Идентифицирует двухкомпонентные коды языка сборки, например `en-US`.  Этот элемент находится в пространстве имен `asmv2`.  Если данный элемент не задан, по умолчанию используется значение `neutral`.|  
+|---------------|-----------------|  
+|`Name`|Обязательный. Определяет имя приложения.<br /><br /> Если `Name` содержит специальные символы, такие как одинарные или двойные кавычки, приложение может вызвать сбой активации.|  
+|`Version`|Обязательный. Указывает номер версии приложения в следующем формате:`major.minor.build.revision`|  
+|`publicKeyToken`|Необязательно. Указывает символ 16 шестнадцатеричную строку, которая представляет собой последние 8 байтов `SHA-1` хэш-значение открытого ключа, которым подписана приложения или сборки. Открытый ключ, используемый для подписи каталога должна быть 2048 бит или больше.<br /><br /> Несмотря на то, что подпись сборки, рекомендуется, но необязательно, этот атрибут является обязательным. Если сборка не подписана, следует скопировать значение из самозаверяющий сборки или используйте значение «пустой» все нули.|  
+|`processorArchitecture`|Обязательный. Задает процессор. Допустимые значения: `msil` для всех процессоров `x86` для 32-разрядной версии Windows, `IA64` для 64-разрядной версии Windows, и `Itanium` для Intel 64-разрядных процессоров Itanium.|  
+|`language`|Обязательный. Идентифицирует две части кодов языка (например, `en-US`) сборки. Этот элемент имеет `asmv2` пространства имен. Если не указан, значение по умолчанию — `neutral`.|  
   
-## Примеры  
+## <a name="examples"></a>Примеры  
   
-### Описание  
- В следующем примере кода показан элемент `assemblyIdentity` в манифесте приложения[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  Данный пример кода является частью большего примера, приведенного в разделе [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md).  
+### <a name="description"></a>Описание  
+ В следующем примере кода показан `assemblyIdentity` элемент в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифеста приложения. Данный пример кода является частью большего примера, приведенного в [манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md).  
   
-### Код  
+### <a name="code"></a>Код  
   
 ```  
 <asmv1:assemblyIdentity   
@@ -69,6 +68,6 @@ caps.handback.revision: 20
   type="win32" />  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)   
- [Элемент \<assemblyIdentity\>](../deployment/assemblyidentity-element-clickonce-deployment.md)
+ [\<assemblyIdentity > элемент](../deployment/assemblyidentity-element-clickonce-deployment.md)

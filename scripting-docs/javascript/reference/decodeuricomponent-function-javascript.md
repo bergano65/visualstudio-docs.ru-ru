@@ -1,49 +1,50 @@
 ---
-title: "Функция decodeURIComponent (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "decodeURIComponent"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "decodeURIComponent - метод"
+title: "Функция decodeURIComponent (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: decodeURIComponent
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: decodeURIComponent method
 ms.assetid: 486ccee2-afd7-4863-97ce-4adb50cf39c0
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ef7bdcd374a328bad632381d19e9823853d37f01
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция decodeURIComponent (JavaScript)
-Получает декодированную версию закодированного компонента универсального кода ресурса \(URI\).  
+# <a name="decodeuricomponent-function-javascript"></a>Функция decodeURIComponent (JavaScript)
+Возвращает декодированную версию закодированного компонента универсальный код ресурса (URI).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 decodeURIComponent(encodedURIString)  
 ```  
   
-## Заметки  
- Обязательный аргумент `encodedURIString` — это значение, представляющее закодированный компонент URI.  
+## <a name="remarks"></a>Примечания  
+ Необходимая `encodedURIString` аргумент имеет значение, представляющее закодированный компонент URI.  
   
- URIComponent является частью целого URI.  
+ URIComponent является частью полным URI.  
   
- Если строка `encodedURIString` недопустима, происходит ошибка URIError.  
+ Если `encodedURIString` является недопустимым, возникает исключение URIError.  
   
-## Пример  
- В следующем примере сначала кодируется, а затем декодируется URI.  
+## <a name="example"></a>Пример  
+ Следующий код сначала кодирует и декодирует URI затем.  
   
-```javascript  
+```JavaScript  
 var uriEncode = encodeURI ("http://www.Not a URL.com");  
 var uriDecode = decodeURIComponent(uriEncode);  
   
@@ -56,9 +57,9 @@ document.write (uriDecode);
 // http://www.Not a URL.com  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Функция decodeURI](../../javascript/reference/decodeuri-function-javascript.md)   
  [Функция encodeURI](../../javascript/reference/encodeuri-function-javascript.md)

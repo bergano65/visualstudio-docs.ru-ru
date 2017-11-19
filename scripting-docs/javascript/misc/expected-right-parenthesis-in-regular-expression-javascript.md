@@ -1,37 +1,39 @@
 ---
-title: "В регулярном выражении ожидался символ &quot;)&quot; (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.WebClient.Help.SCRIPT5020"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Ожидается &#39;) &#39; в регулярном выражении (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.WebClient.Help.SCRIPT5020
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 2087ba1d-9783-4d40-b609-e8542f579f7f
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ca4560c638cc0e9209141ba9b0878208eb84eb0c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# В регулярном выражении ожидался символ &quot;)&quot; (JavaScript)
-Предпринята попытка создать запись, утверждение или группу регулярных выражений, но не поставлена закрывающая круглая скобка.  Круглые скобки используются в регулярных выражениях несколькими способами.  В основном они используются для записи частей выражений, для указания утверждений или для группирования шаблонов так, чтобы элементы воспринимались как одна единица операторами \*, \+, ? и т. п.  
+# <a name="expected-3939-in-regular-expression-javascript"></a>Ожидается &#39;) &#39; в регулярном выражении (JavaScript)
+Предпринята попытка создать захвата регулярного выражения, утверждение или группы, но не содержит закрывающую скобку. Круглые скобки имеют несколько целей в регулярных выражениях. В основном они используются для записи вложенных выражений, для указания утверждений, или группировать шаблонов, чтобы элементы могут рассматриваться как единое целое, *, +,?, и т. д.  
   
-### Исправление ошибки  
+### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Добавьте крайнюю правую закрывающую круглую скобку.  
+-   Добавьте правых закрывающей скобки.  
   
     > [!NOTE]
-    >  Если требуется сопоставить одну круглую скобку, необходимо предварить ее обратной косой чертой — \\\( — чтобы она не интерпретировалась [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] как специальный символ.  
+    >  Для сопоставления одной скобки следует экранировать его обратную косую черту - \\(-, чтобы он интерпретируется как специальный символ, не [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
-## См. также  
- [Объект Regular Expression](../../javascript/reference/regular-expression-object-javascript.md)   
- [Regular Expression Syntax \(JavaScript\)](http://msdn.microsoft.com/ru-ru/ab0766e1-7037-45ed-aa23-706f58358c0e)
+## <a name="see-also"></a>См. также  
+ [Объект регулярного выражения](../../javascript/reference/regular-expression-object-javascript.md)   
+ [Синтаксис регулярного выражения (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)

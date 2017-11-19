@@ -1,60 +1,59 @@
 ---
-title: "Элемент &lt;description&gt; (развертывание ClickOnce) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "urn:schemas-microsoft-com:asm.v2#description"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<description> - элемент [манифест развертывания ClickOnce]"
+title: "&lt;Описание&gt; элемент (развертывание ClickOnce) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: urn:schemas-microsoft-com:asm.v2#description
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <description> element [ClickOnce deployment manifest]
 ms.assetid: 18f6919e-a3ab-4942-a57d-167fabfac44e
-caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 41fd9fcee2d0ae954f5ec234bf23cbefd5ccd6da
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Элемент &lt;description&gt; (развертывание ClickOnce)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Идентифицирует сведения о приложении, используемом для присутствия в оболочке и создания элемента **Установка или удаление программ** в панели управления.  
+# <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;Описание&gt; элемент (развертывание ClickOnce)
+Определение сведений о приложении, используемый для создания оболочки присутствия и **Установка и удаление программ** элемента панели управления.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
-      <description   
-   publisher   
+      <description   
+   publisher   
    product  
    suiteName  
    supportUrl  
 />  
 ```  
   
-## Элементы и атрибуты  
- Элемент `description` является обязательным и находится в пространстве имен `urn:schemas-microsoft-com:asm.v1`.  Не содержит дочерних элементов и имеет следующие атрибуты.  
+## <a name="elements-and-attributes"></a>Элементы и атрибуты  
+ Элемент `description` обязателен и находится в пространстве имен `urn:schemas-microsoft-com:asm.v1`. Он не содержит дочерних элементов и имеет следующие атрибуты.  
   
 |Атрибут|Описание|  
-|-------------|--------------|  
-|`publisher`|Обязательный.  Идентифицирует имя компании, используемое для значка в меню **Пуск** Windows и для элемента **Установка или удаление программ** в панели управления, когда развертывание конфигурируется для установки.|  
-|`product`|Обязательный.  Идентифицирует полное имя продукта.  Используется в качестве названия значка, установленного в меню **Пуск** системы Windows.|  
-|`suiteName`|Необязательный.  Указывает вложенную папку в папке `publisher` меню **Пуск** Windows.|  
-|`supportUrl`|Необязательный.  Задает поддержку URL, который показан в элементе **Установка или удаление программ** в панели управления.  Ярлык к этому URL также создается для поддержки приложения в меню **Пуск** системы Windows, когда развертывание конфигурируется для установки.|  
+|---------------|-----------------|  
+|`publisher`|Обязательный. Идентифицирует имя компании, используемое для размещения значка в Windows **запустить** меню и **Установка и удаление программ** элемента панели управления, если развертывание настроено для установки.|  
+|`product`|Обязательный. Определяет полное название продукта. Используется в качестве названия значка, установленного в Windows **запустить** меню.|  
+|`suiteName`|Необязательно. Указывает вложенную `publisher` папки в Windows **запустить** меню.|  
+|`supportUrl`|Необязательно. Указывает URL-адрес поддержки, который отображается в **Установка и удаление программ** элемента панели управления. Ярлык этот URL-адрес также создается для поддержки приложения в Windows **запустить** меню, если развертывание настроено для установки.|  
   
-## Заметки  
- Элемент описания необходим во всех конфигурациях развертывания.  
+## <a name="remarks"></a>Примечания  
+ Элемент описания является обязательным во всех конфигурациях развертывания.  
   
-## Пример  
- В следующем примере кода показан элемент `description` в манифесте развертывания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  Данный пример кода является частью большего примера, приведенного для раздела [ClickOnce Deployment Manifest](../deployment/clickonce-deployment-manifest.md).  
+## <a name="example"></a>Пример  
+ В следующем примере кода показан `description` элемент в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест развертывания. Данный пример кода является частью большего примера, приведенного для [манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md) раздела.  
   
 ```  
 <description   
@@ -63,5 +62,5 @@ caps.handback.revision: 19
   xmlns="urn:schemas-microsoft-com:asm.v1" />  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)

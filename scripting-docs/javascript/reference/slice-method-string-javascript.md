@@ -1,61 +1,63 @@
 ---
-title: "Метод slice (String) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "slice"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "slice - метод"
-  - "строки [Visual Studio], возврат символов"
+title: "Метод slice (строка) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: slice
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- strings [Visual Studio], returning characters
+- slice method
 ms.assetid: 80cd77a6-3718-492e-8e96-f909d8721d91
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1baa0a05a2d6aa8c06cc962761c8e557632d034c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод slice (String) (JavaScript)
+# <a name="slice-method-string-javascript"></a>Метод slice (String) (JavaScript)
 Возвращает фрагмент строки.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 stringObj.slice(start, [end])   
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `stringObj`  
- Обязательный параметр.  Объект `String` или строковый литерал.  
+ Обязательный. Объект `String` или строковый литерал.  
   
  `start`  
- Обязательный параметр.  Индекс начала указанного фрагмента `stringObj`.  
+ Обязательный. Индекс начала указанного фрагмента `stringObj`.  
   
  `end`  
- Необязательный параметр.  Индекс конца указанного фрагмента `stringObj`.  Подстрока включает знаки до знака, задаваемого значением `end`, но не включая его.  Если это значение не указывается, подстрока заканчивается в конце `stringObj`.  
+ Необязательно. Индекс в конец заданную часть `stringObj`. Подстрока включает символы до, но не включая знак обозначается `end`. Если это значение не задано, подстрока продолжается до конца `stringObj`.  
   
-## Заметки  
- Метод `slice` возвращает объект `String`, который содержит указанный фрагмент `stringObj`.  
+## <a name="remarks"></a>Примечания  
+ `slice` Возвращает `String` объект, содержащий указанную часть `stringObj`.  
   
- Метод `slice` осуществляет копирование фрагмента вплоть до символа, указанного в `end` \(не включая его\).  
+ `slice` Метод копирует, но не включающую, символе, обозначенном `end`.  
   
- Если значение `start` является отрицательным, оно обрабатывается в соответствии с выражением *length* \+ `start`, где *length* — длина строки.  Если значение `end` отрицательно, оно рассматривается как *length* \+ `end`.  Если `end` не задано, то копирование происходит до конца `stringObj`.  Если значение `end` меньше `start`, знаки в новую строку не копируются.  
+ Если `start` имеет отрицательное значение, он рассматривается как *длина*  +  `start` где *длина* длина строки. Если `end` имеет отрицательное значение, он рассматривается как *длина* + `end`. Если `end` — этот параметр опущен, копирование продолжается до конца `stringObj`. Если `end` предшествует `start`, никакие символы копируются в новую строку.  
   
-## Пример  
- В первом примере метод `slice` возвращает всю строку.  Во втором примере метод `slice` возвращает всю строку, за исключением последнего символа.  
+## <a name="example"></a>Пример  
+ В первом примере `slice` метод возвращает всю строку. Во втором примере `slice` метод возвращает всю строку, за исключением последнего символа.  
   
-```javascript  
+```JavaScript  
 var str1 = "all good boys do fine";  
   
 var slice1 = str1.slice(0);  
@@ -76,10 +78,10 @@ document.write(slice4);
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Применение**: [Объект String](../../javascript/reference/string-object-javascript.md)  
+ **Применяется к**: [строковый объект](../../javascript/reference/string-object-javascript.md)  
   
-## См. также  
- [Метод slice \(массив\)](../../javascript/reference/slice-method-array-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Метод slice (массив)](../../javascript/reference/slice-method-array-javascript.md)

@@ -1,49 +1,51 @@
 ---
-title: "Функция Math.acos (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "acos"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "acos - метод"
-  - "arcosine - метод"
+title: "Функция Math.ACOS (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: acos
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- acos method
+- arcosine method
 ms.assetid: 828cb3c3-bdf7-4bb7-97ae-3617ce4b2d62
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 773499287e215fbc161f289954811d3ef62bcba6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция Math.acos (JavaScript)
-Возвращает арккосинус \(или обратный косинус\) числа.  
+# <a name="mathacos-function-javascript"></a>Функция Math.acos (JavaScript)
+Возвращает арккосинус (или обратный косинус) числа.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 Math.acos(number)  
 ```  
   
-#### Параметры  
- Обязательный аргумент `number` — числовое выражение.  
+#### <a name="parameters"></a>Параметры  
+ Обязательный аргумент `number` является числовым выражением.  
   
-## Возвращаемое значение  
- Арккосинус аргумента `number`, в радианах.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Арккосинус параметра `number` аргумент в радианах.  
   
-## Пример  
- В следующем коде показано, как использовать функцию `acos`.  
+## <a name="example"></a>Пример  
+ В следующем примере кода показано, как использовать функцию `acos`.  
   
-```javascript  
+```JavaScript  
 var v1 = Math.acos(-1.0);  
 var v2 = Math.cos(-1.0);  
   
@@ -57,15 +59,15 @@ document.write(v2);
   
 ```  
   
-## Заметки  
- **Применение**: [Объект Math](../../javascript/reference/math-object-javascript.md)  
+## <a name="remarks"></a>Примечания  
+ **Применяется к**: [объект Math](../../javascript/reference/math-object-javascript.md)  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## См. также  
- [Функция Math.asin](../../javascript/reference/math-asin-function-javascript.md)   
- [Функция Math.atan](../../javascript/reference/math-atan-function-javascript.md)   
+## <a name="see-also"></a>См. также  
+ [Функция Math.ASIN](../../javascript/reference/math-asin-function-javascript.md)   
+ [Функция Math.ATAN](../../javascript/reference/math-atan-function-javascript.md)   
  [Функция Math.cos](../../javascript/reference/math-cos-function-javascript.md)   
  [Функция Math.sin](../../javascript/reference/math-sin-function-javascript.md)   
  [Функция Math.tan](../../javascript/reference/math-tan-function-javascript.md)   

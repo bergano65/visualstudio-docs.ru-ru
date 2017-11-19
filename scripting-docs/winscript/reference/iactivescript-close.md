@@ -1,41 +1,44 @@
 ---
-title: "IActiveScript::Close | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IActiveScript::Close | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScript.Close
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScript_Close"
+helpviewer_keywords: IActiveScript_Close
 ms.assetid: cc7dd63b-1d7e-410a-857b-09ea3aade275
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7c90b5d089ea6665060944e0a6f720a43aa1295a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScript::Close
-Вызывает обработчик скриптов, чтобы прервать любой текущий загруженный скрипт, сохранить его состояние и освобождение все указатели интерфейса его другим объектам, поэтому вставка состояние закрыть.  Приемники событий, немедленно исполненное текста сценария и вызовы макроса, которые уже выполняется завершены перед изменениями состояния \(использованием [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) отменить выполняющийся поток сценария\).  Этот метод следует вызывать прежде, чем создание основным приложением интерфейс освобождение, чтобы предотвратить ошибки циклических ссылок.  
+# <a name="iactivescriptclose"></a>IActiveScript::Close
+Вызывает обработчик скриптов для прерывания любой сценарий, текущая загруженная, теряют свое состояние и освободить все указатели на интерфейс, он имеет другим объектам, таким образом, введя состояние closed. Приемники событий, немедленно выполненный скрипт текст и вызовов макросов, которые уже были завершены до изменения состояния (используйте [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) отменить выполняющийся поток сценария). Этот метод должен вызываться создание приложением перед интерфейс освобождается для предотвращения проблем циклическую ссылку.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT Close(void);  
 ```  
   
-## Возвращаемое значение  
- Возвращать одно из следующих значений:  
+## <a name="return-value"></a>Возвращаемое значение  
+ Возвращает одно из следующих значений:  
   
 |Значение|Значение|  
-|--------------|--------------|  
-|`S_OK`|Успех.|  
-|`E_UNEXPECTED`|Вызов не ожидался \(например, обработчик скриптов уже находился в состоянии закрыть\).|  
-|`OLESCRIPT_S_PENDING`|Метод был поставлен в очередь успешно, но состояние не изменилось.  При изменениях состояния, сайт вызываться обратно в методе [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md).|  
-|`S_FALSE`|Метод выполнен успешно, но скрипт уже были закрытьы.|  
+|-----------|-------------|  
+|`S_OK`|Выполнено.|  
+|`E_UNEXPECTED`|Вызов не ожидалось (например, обработчик сценариев уже был закрыт).|  
+|`OLESCRIPT_S_PENDING`|Метод в очередь и успешно, но состояние еще не изменилась. Когда об изменении состояния сайта должна быть обратного вызова в [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) метод.|  
+|`S_FALSE`|Метод успешно выполнен, но скрипт уже был закрыт.|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IActiveScript](../../winscript/reference/iactivescript.md)

@@ -1,71 +1,73 @@
 ---
-title: "Функция Date.UTC (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "UTC"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "UTC - функция [JavaScript]"
-  - "даты в формате UTC, возврат"
-  - "Date.UTC - функция [JavaScript]"
+title: "Функция Date.UTC (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: UTC
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- UTC function [JavaScript]
+- UTC dates, returning
+- Date.UTC function [JavaScript]
 ms.assetid: c0d67ce1-a47e-4dfd-bbf4-21619c406a0f
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a6a7c5622b74699e3d718ceb65e96638bdb6c3c5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция Date.UTC (JavaScript)
-Возвращает количество миллисекунд, истекших с полуночи 1 января 1970 года по времени в формате UTC \(или GMT\) до заданной даты.  
+# <a name="dateutc-function-javascript"></a>Функция Date.UTC (JavaScript)
+Возвращает число миллисекунд, истекших с полуночи 1 января 1970 года общего скоординированного времени (UTC) (или среднего времени по Гринвичу) и указанной даты.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 Date.UTC(year, month, day[, hours[, minutes[, seconds[,ms]]]])   
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `year`  
- Обязательный.  Чтобы обеспечить точность даты в разных веках, необходимо полное указание года.  Если используется значение `year` в диапазоне от 0 до 99, то предполагается, что `year` соответствует значению 1900 \+ `year`.  
+ Обязательный. Точность даты кросс-го века требуется полное указание года. Если `year` находится в диапазоне от 0 до 99 используется, затем `year` считается 1900 + `year`.  
   
  `month`  
- Обязательный.  Месяц в виде целого числа от 0 до 11 \(с января по декабрь\).  
+ Обязательный. Месяц как целое число от 0 до 11 (Январь — Декабрь).  
   
  `day`  
- Обязательный.  Дата в виде целого числа в диапазоне от 1 до 31.  
+ Обязательный. Дата как целое число от 1 до 31.  
   
  `hours`  
- Необязательный.  Должно быть указано, если указано значение `minutes`.  Целое число от 0 до 23 \(от полуночи до 23:00\), представляющее час.  
+ Необязательно. Если необходимо указать `minutes` предоставляется. Целое число от 0 до 23 (от полуночи до 23: 00), представляющее час.  
   
  `minutes`  
- Необязательный.  Должно быть указано, если указано значение `seconds`.  Целое число от 0 до 59, представляющее минуты.  
+ Необязательно. Если необходимо указать `seconds` предоставляется. Целое число от 0 до 59, представляющее минуты.  
   
  `seconds`  
- Необязательный.  Должно быть указано, если указано значение `milliseconds`.  Целое число от 0 до 59, представляющее секунды.  
+ Необязательно. Если необходимо указать `milliseconds` предоставляется. Целое число от 0 до 59, представляющее секунды.  
   
  `ms`  
- Необязательный.  Целое число от 0 до 999, представляющее миллисекунды.  
+ Необязательно. Целое число от 0 до 999, представляющее миллисекунды.  
   
-## Заметки  
- Функция `Date.UTC` возвращает количество миллисекунд, истекших с полуночи 1 января 1970 года по времени UTC до указанной даты.  Это возвращаемое значение может использоваться методом `setTime` и конструктором объекта `Date`.  Если значение аргумента превышает верхнюю границу его диапазона или является отрицательным числом, остальные хранящиеся значения изменяются соответственно.  Например, если задать 150 секунд, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] переопределит это число как две минуты и 30 секунд.  
+## <a name="remarks"></a>Примечания  
+ `Date.UTC` Функция возвращает число миллисекунд, истекших с полуночи, 1 января 1970 г. UTC и заданной даты. Это возвращаемое значение может использоваться в `setTime` метод и в `Date` конструктор объекта. Если значение аргумента больше значения диапазона или является отрицательным числом, остальные хранящиеся значения изменяются соответствующим образом. Например, если задать 150 секунд [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] переопределит это число как две минуты и 30 секунд.  
   
- Различие между функцией `Date.UTC` и конструктором объекта `Date` состоит в том, что в функции `Date.UTC` предполагается время UTC, а в конструкторе объекта `Date` предполагается местное время.  
+ Разница между `Date.UTC` функции и `Date` является конструктором объекта даты, `Date.UTC` функции предполагается время в формате UTC и `Date` конструктор объекта предполагается локальное время.  
   
-## Пример  
- В следующем примере показано использование функции `Date.UTC`.  
+## <a name="example"></a>Пример  
+ В следующем примере показано применение функции `Date.UTC`.  
   
-```javascript  
+```JavaScript  
 // Determine the milliseconds per day.  
  var MinMilli = 1000 * 60;  
 var HrMilli = MinMilli * 60;  
@@ -92,8 +94,8 @@ document.write(days);
 // Output: 10848  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## См. также  
- [Метод setTime \(Date\)](../../javascript/reference/settime-method-date-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Метод setTime (Date)](../../javascript/reference/settime-method-date-javascript.md)

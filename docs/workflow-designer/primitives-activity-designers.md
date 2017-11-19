@@ -1,40 +1,44 @@
 ---
-title: "Конструкторы действий с базовыми функциями | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Конструкторы примитивных действий | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: 0a2b613e-dc04-49a1-a787-caec2ec63b90
-caps.latest.revision: 7
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: d8f4c4763d40583f02aa97eaea066db5de2a7479
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Конструкторы действий с базовыми функциями
-Конструкторы примитивных действий используются для создания и настройки различных действий в пространстве имен <xref:System.Activities.Statement>, например, Assign и Delay.В подразделах этого раздела описывается использование действия [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] и конструкторов шаблонов.  
+# <a name="primitives-activity-designers"></a>Конструкторы действий с базовыми функциями
+Конструкторы примитивных действий используются для создания и настройки различных действий в пространстве имен <xref:System.Activities.Statements>, например Assign and Delay. В подразделах этого раздела описывается использование действия [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] и конструкторов шаблонов.  
   
-## В этом подразделе  
- [Assign](../workflow-designer/assign-activity-designer.md)  
+## <a name="in-this-section"></a>Содержание  
+ [Назначение](../workflow-designer/assign-activity-designer.md)  
  Используется для создания и настройки действия <xref:System.Activities.Statements.Assign>.  
   
- [Delay](../workflow-designer/delay-activity-designer.md)  
+ [Задержка](../workflow-designer/delay-activity-designer.md)  
  Используется для создания и настройки действия <xref:System.Activities.Statements.Delay>.  
   
- [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)  
+ [Метод InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)  
  Используется для создания и настройки действия <xref:System.Activities.Statements.InvokeMethod>.  
   
  [WriteLine](../workflow-designer/writeline-activity-designer.md)  
  Используется для создания и настройки действия <xref:System.Activities.Statements.WriteLine>.  
   
-## Ссылка  
+## <a name="reference"></a>Ссылка  
   
-## Связанные подразделы  
- [Управление потоком](../workflow-designer/control-flow-activity-designers.md)  
+## <a name="related-sections"></a>Связанные разделы  
+ [Поток управления](../workflow-designer/control-flow-activity-designers.md)  
   
- [Блок\-схема](../workflow-designer/flowchart-activity-designers.md)  
+ [Блок-схема](../workflow-designer/flowchart-activity-designers.md)  
   
  [Обмен сообщениями](../workflow-designer/messaging-activity-designers.md)  
   
@@ -46,5 +50,5 @@ caps.handback.revision: 7
   
  [Обработка ошибок](../workflow-designer/error-handling-activity-designers.md)  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Использование конструкторов действий](../workflow-designer/using-the-activity-designers.md)

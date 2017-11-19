@@ -1,48 +1,49 @@
 ---
-title: "Практическое руководство. Автоматическое увеличение номера версии публикации ClickOnce | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "развертывание ClickOnce, автоматическое увеличение версии публикации"
-  - "развертывание приложений [ClickOnce], автоматическое увеличение версии публикации"
-  - "Версия публикации - свойство, увеличение"
-  - "публикация, ClickOnce"
+title: "Как: автоматически версии публикации ClickOnce приращения | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- deploying applications [ClickOnce], incrementing publish version automatically
+- Publish Version property, incrementing
+- ClickOnce deployment, incrementing publish version automatically
+- publishing, ClickOnce
 ms.assetid: 686ab88a-6305-4914-a05b-fe269cc0ae1e
-caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 71665ea5053a4d3ddbdb933d2ecdf4ea20ba83c8
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Практическое руководство. Автоматическое увеличение номера версии публикации ClickOnce
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-При публикации приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] изменение свойства `Publish Version` вызывает публикацию приложения как обновление.  По умолчанию Visual Studio автоматически увеличивает номер `Revision` версии `Publish Version` при каждой публикации приложения.  
+# <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Практическое руководство. Автоматическое увеличение номера версии публикации ClickOnce
+При публикации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, изменив `Publish Version` свойство вызывает приложение публикуется как обновление. По умолчанию Visual Studio автоматически увеличивает `Revision` число `Publish Version` при каждой публикации приложения.  
   
- Это поведение можно отключить на странице **Публикация** в **конструкторе проектов**.  
+ Это поведение можно отключить на **публикации** страница **конструктора проектов**.  
   
 > [!NOTE]
->  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих настроек или выпуска.  Чтобы изменить параметры, в меню **Сервис** выберите команду **Импорт и экспорт параметров**.  Дополнительные сведения см. в разделе [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/ru-ru/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-### Автоматическое отключение увеличения номера версии публикации  
+### <a name="to-disable-automatically-incrementing-the-publish-version"></a>Чтобы отключить автоматическое увеличение версии публикации  
   
-1.  Выбрав проект в **обозревателе решений**, в меню **Проект** выберите пункт **Свойства**.  
+1.  Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.  
   
-2.  Выберите вкладку **Публикация**.  
+2.  Нажмите кнопку **публикации** вкладки.  
   
-3.  В разделе **Версия публикации** сбросьте флажок **Автоматическое внесение изменений при каждом выпуске**.  
+3.  В **версия публикации** снимите **автоматическое внесение изменений при каждом выпуске** флажок.  
   
-## См. также  
- [Практическое руководство. Установка версии публикации приложения ClickOnce](../Topic/How%20to:%20Set%20the%20ClickOnce%20Publish%20Version.md)   
- [Публикация ClickOnce\-приложений](../deployment/publishing-clickonce-applications.md)   
- [Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации](../Topic/How%20to:%20Publish%20a%20ClickOnce%20Application%20using%20the%20Publish%20Wizard.md)
+## <a name="see-also"></a>См. также  
+ [Практическое руководство. Установка версии публикации приложения ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md)   
+ [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)   
+ [Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

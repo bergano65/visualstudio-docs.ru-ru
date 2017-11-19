@@ -1,51 +1,54 @@
 ---
-title: "Функция Object.getPrototypeOf (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "getPrototypeOf - функция [JavaScript]"
-  - "Object.getPrototypeOf - функция [JavaScript]"
+title: "Функция Object.getPrototypeOf (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- getPrototypeOf function [JavaScript]
+- Object.getPrototypeOf function [JavaScript]
 ms.assetid: 1c59cd7a-a7e2-4c5c-83ec-e6bd2b104d9f
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0c752c57fcc47192bb43790b2e93dd74fcdfbb65
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция Object.getPrototypeOf (JavaScript)
+# <a name="objectgetprototypeof-function-javascript"></a>Функция Object.getPrototypeOf (JavaScript)
 Возвращает прототип объекта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```javascript  
+```JavaScript  
 Object.getPrototypeOf(object)  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `object`  
- Обязательный.  Объект, который ссылается на прототип.  
+ Обязательный. Объект, который ссылается прототипа.  
   
-## Возвращаемое значение  
- Прототип аргумента `object`.  Прототип также является объектом.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Прототип `object` аргумент. Прототип также является объектом.  
   
-## Исключения  
- Если аргумент `object` не является объектом, вызывается исключение `TypeError`.  
+## <a name="exceptions"></a>Исключения  
+ Если `object` аргумент не является объектом `TypeError` исключения.  
   
-## Пример  
- В следующем примере показано использование функции `Object.getPrototypeOf`.  
+## <a name="example"></a>Пример  
+ В следующем примере показано применение функции `Object.getPrototypeOf`.  
   
-```javascript  
+```JavaScript  
 // Create a constructor function.  
 function Pasta(grain, width) {  
     this.grain = grain;  
@@ -75,10 +78,10 @@ document.write(result);
 // Output: carbohydrates true true  
 ```  
   
-## Пример  
- В следующем примере функция `Object.getPrototypeOf` используется для проверки типов данных.  
+## <a name="example"></a>Пример  
+ В следующем примере используется `Object.getPrototypeOf` функция для проверки типов данных.  
   
-```javascript  
+```JavaScript  
 var reg = /a/;  
 var result = (Object.getPrototypeOf(reg) === RegExp.prototype);  
 document.write(result + " ");  
@@ -91,9 +94,9 @@ document.write(result);
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## См. также  
- [Свойство prototype \(Object\)](../../javascript/reference/prototype-property-object-javascript.md)   
- [Метод isPrototypeOf \(Object\)](../../javascript/reference/isprototypeof-method-object-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Свойство prototype (Object)](../../javascript/reference/prototype-property-object-javascript.md)   
+ [Метод isPrototypeOf (Object)](../../javascript/reference/isprototypeof-method-object-javascript.md)

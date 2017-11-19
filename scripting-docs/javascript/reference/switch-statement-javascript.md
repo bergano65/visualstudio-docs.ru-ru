@@ -1,35 +1,37 @@
 ---
-title: "Оператор switch (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "switch_JavaScriptKeyword"
-  - "default_JavaScriptKeyword"
-  - "case_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "switch - оператор"
+title: "Оператор switch (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords:
+- switch_JavaScriptKeyword
+- default_JavaScriptKeyword
+- case_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: switch statement
 ms.assetid: 61f80e8b-3739-4146-a893-c2832d92b28c
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a301fc8bcc72b48c6ba8e999c0ebb70fe9d92b41
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Оператор switch (JavaScript)
+# <a name="switch-statement-javascript"></a>Оператор switch (JavaScript)
 Обеспечивает выполнение одного или нескольких операторов, если значение указанного выражения совпадает с меткой.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 switch (expression) {  
@@ -41,37 +43,37 @@ switch (expression) {
 }   
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `expression`  
  Вычисляемое выражение.  
   
  `label`  
- Идентификатор, с которым сравнивается `expression`.  Если `label` является `expression`, выполнение начинается со `statementlist`сразу после двоеточия и продолжается либо до оператора `break` \(он не является обязательным\), либо до конца оператора `switch`.  
+ Идентификатор, с которым сравнивается `expression`. Если `label` — `expression`, выполнение начинается с `statementlist` сразу после двоеточия и продолжается, пока встретится либо `break` инструкцию, которая не является обязательным, либо до конца `switch` инструкции.  
   
  `statementlist`  
  Один или несколько операторов для выполнения.  
   
-## Заметки  
- Используйте предложение `default`, чтобы предоставить оператор для выполнения в том случае, если ни одна из меток не совпадает с выражением `expression`.  Предложение может находиться в любом месте блока кода `switch`.  
+## <a name="remarks"></a>Примечания  
+ Используйте `default` предложений, чтобы предоставить инструкции для выполнения, если ни один из метки значений совпадений `expression`. Он может находиться в любом месте `switch` блок кода.  
   
- Можно указать ноль или более блоков `label`.  Если ни одна метка `label` не совпадает со значением выражения `expression`, а предложение `default` отсутствует, операторы не выполняются.  
+ Ноль или более `label` блоки могут быть указаны. Если не `label` совпадает со значением `expression`и `default` регистр не предоставляется, то инструкции не выполняются.  
   
- Выполнение оператора `switch` происходит следующим образом.  
+ Выполнение `switch` следующим образом:  
   
--   Вычисление `expression` и перебор подписей `label` по порядку до тех пор, пока не будет найдено совпадение.  
+-   Оценка `expression` и посмотрите на `label` в порядке, пока не будет найдено совпадение.  
   
--   Если значение `label` равно `expression`, выполняется соответствующий `statementlist`.  
+-   Если `label` значение равно `expression`, выполните соответствующую ему коллекцию `statementlist`.  
   
-     Продолжение выполнения до обнаружения оператора `break` или до завершения оператора `switch`.  Это означает выполнение нескольких блоков `label`, если оператор `break` не используется.  
+     Продолжить выполнение до `break` обнаружил инструкции, или `switch` инструкция завершается. Это означает, что несколько `label` блоки выполняются в том случае, если `break` оператор не используется.  
   
--   Если `label` не равно `expression`, переход к случаю `default`.  Если случая `default` нет, выполняется переход к последнему шагу.  
+-   Если не `label` равняется `expression`, перейдите в меню `default` регистр. При наличии не `default` регистром, переход к последнему шагу.  
   
--   Продолжение выполнения с оператора, следующего за окончанием блока кода `switch`.  
+-   Продолжить выполнение на операторе, следующего за `switch` блок кода.  
   
-## Пример  
- В следующем примере проверяется тип объекта.  
+## <a name="example"></a>Пример  
+ В следующем примере проверка объекта для его типа.  
   
-```javascript  
+```JavaScript  
 function MyObjectType(obj) {  
     switch (obj.constructor) {  
         case Date:  
@@ -102,10 +104,10 @@ function MyObjectType(obj) {
   
 ```  
   
-## Пример  
- В следующем примере кода показано, что происходит, если не использовать оператор `break`.  
+## <a name="example"></a>Пример  
+ В следующем коде показано, что произойдет, если вы не используете `break` инструкции.  
   
-```javascript  
+```JavaScript  
 function MyObjectType(obj) {  
     switch (obj.constructor) {  
         case Date:  
@@ -133,9 +135,9 @@ function MyObjectType(obj) {
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Оператор break](../../javascript/reference/break-statement-javascript.md)   
  [Оператор if...else](../../javascript/reference/if-dot-dot-dot-else-statement-javascript.md)

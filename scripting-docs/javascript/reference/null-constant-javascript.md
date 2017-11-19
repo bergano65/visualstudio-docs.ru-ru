@@ -1,29 +1,31 @@
 ---
-title: "Константа null (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "null_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "значение null в JavaScript"
-  - "значение null, JavaScript"
+title: "значение NULL, константа (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: null_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- JavaScript null
+- null, JavaScript
 ms.assetid: d98d2a02-1e8c-4c3e-93f0-2a16d453cc33
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4adcec80d102cda5a59aad81e2693f396eec899c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Константа null (JavaScript)
-`null` используется для указания того, что переменная не ссылается на допустимые данные.  Это не то же самое, что [Константа undefined](../../javascript/reference/undefined-constant-javascript.md).
+# <a name="null-constant-javascript"></a>Константа null (JavaScript)
+`null`используется для указания, что переменная не ссылается на допустимые данные. Это не то же самое, что [не определено константа](../../javascript/reference/undefined-constant-javascript.md).

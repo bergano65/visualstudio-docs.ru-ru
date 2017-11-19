@@ -1,55 +1,57 @@
 ---
-title: "Метод join (Array) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "join"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Join - метод"
-  - "сцепление строк, метод join"
-  - "массивы [Visual Studio], соединение"
+title: "Метод Join (Array) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: join
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- Join method
+- concatenating strings, join method
+- arrays [Visual Studio], joining
 ms.assetid: 20f8fde1-014b-488e-9008-464a86e6b21f
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4591b12b3556384fef3e367d20cf9545d2f3dedd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод join (Array) (JavaScript)
-Объединяет все элементы массива, вставляя между ними заданную строку\-разделитель.  
+# <a name="join-method-array-javascript"></a>Метод join (Array) (JavaScript)
+Добавляет все элементы массива, разделенных указанной строкой-разделителем.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 arrayObj.join([separator])   
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `arrayObj`  
- Обязательный.  Объект `Array`.  
+ Обязательный. Объект `Array`.  
   
  `separator`  
- Необязательный.  Строка, используемая для отделения одного элемента массива от следующего в результирующем объекте `String`.  Если этот аргумент опущен, элементы массива разделяются запятыми.  
+ Необязательно. Строка, используемая для разделения одного элемента массива от следующего в результате `String`. Если не указано, элементы массива разделяются запятыми.  
   
-## Заметки  
- Если какой\-либо из элементов массива имеет значение **undefined** или `null`, он обрабатывается как пустая строка.  
+## <a name="remarks"></a>Примечания  
+ Если любой элемент массива **не определено** или `null`, он рассматривается как пустая строка.  
   
-## Пример  
- В следующем примере кода показано использование метода **join**.  
+## <a name="example"></a>Пример  
+ Следующий пример иллюстрирует использование **соединения** метод.  
   
-```javascript  
+```JavaScript  
 var a, b;  
 a = new Array(0,1,2,3,4);  
 b = a.join("-");  
@@ -60,8 +62,8 @@ document.write(b);
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Объект String](../../javascript/reference/string-object-javascript.md)

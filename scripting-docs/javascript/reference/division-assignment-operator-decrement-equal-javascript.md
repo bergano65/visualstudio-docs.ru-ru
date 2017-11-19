@@ -1,56 +1,58 @@
 ---
-title: "Оператор присваивания деления (/=) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "/="
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "оператор присваивания деления (/=)"
-  - "/= - оператор [JavaScript]"
-  - "оператор присваивания деления (/=) [JavaScript]"
-  - "операторы присваивания, JavaScript"
+title: "Оператор присваивания деления (-) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: /=
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- division assignment operator (/=)
+- /= operator [JavaScript]
+- division assignment operator (/=) [JavaScript]
+- assignment operators, JavaScript
 ms.assetid: df9ca0c5-4e79-46a8-91b5-6e5540221a27
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 66ec62d94d5105291a2b2eadf3a46cbb5f83e21f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Оператор присваивания деления (/=) (JavaScript)
+# <a name="division-assignment-operator---javascript"></a>Оператор присваивания деления (-) (JavaScript)
 Делит значение переменной на значение выражения и присваивает результат переменной.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 result /= expression   
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `result`  
- Любая числовая переменная.  
+ Любой числовой переменной.  
   
  `expression`  
  Произвольное числовое выражение.  
   
-## Заметки  
- Использование оператора `/=` полностью эквивалентно следующему выражению: `result = result / expression`.  
+## <a name="remarks"></a>Примечания  
+ С помощью `/=` оператор является эквивалентно следующему выражению: `result = result / expression`.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## См. также  
- [Оператор деления \(\/\)](../../javascript/reference/division-operator-decrement-javascript.md)   
+## <a name="see-also"></a>См. также  
+ [Оператор деления (/)](../../javascript/reference/division-operator-decrement-javascript.md)   
  [Приоритет операторов](../../javascript/operator-subtractprecedence-javascript.md)   
- [Сводный список операторов \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Сводный список операторов (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

@@ -1,54 +1,57 @@
 ---
-title: "Метод get (WeakMap) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Метод GET (WeakMap) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: d922c55d-486d-4feb-aedc-1f4867c417d2
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 29decb7e6a050188b75639eb7cf4f27494b31da2
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод get (WeakMap) (JavaScript)
-Возвращает указанный элемент из объекта `WeakMap`.  
+# <a name="get-method-weakmap-javascript"></a>Метод get (WeakMap) (JavaScript)
+Возвращает указанный элемент из `WeakMap` объекта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```javascript  
+```JavaScript  
 weakmapObj.get(key)  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `weakmapObj`  
- Обязательное.  Объект `WeakMap`.  
+ Обязательный. Объект `WeakMap`.  
   
  `key`  
- Обязательное.  Ключ элемента в `WeakMap`.  
+ Обязательный. Ключ элемента в `WeakMap`.  
   
-## Значение свойства или возвращаемое значение  
- Возвращает объект, связанный с ключом.  Если `WeakMap` не содержит ключ, этот метод возвращает значение `undefined`.  
+## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение  
+ Возвращает объект, связанный с ключом. Если `WeakMap` не содержит ключ, этот метод возвращает `undefined` значение.  
   
-## Пример  
- В следующем примере показано, как извлечь члены из объекта `WeakMap`.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как для получения элементов из `WeakMap` объекта.  
   
-```javascript  
+```JavaScript  
 var dog = {  
     breed: "yorkie"  
 }  
   
 var cat = {  
-    breed: "burmese"  
+    breed: "burmese"  
 }  
   
 var wm = new WeakMap();  
@@ -67,5 +70,5 @@ document.write(cat.breed);
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]

@@ -1,49 +1,50 @@
 ---
-title: "Метод shift (Array) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "shift"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "shift - метод"
+title: "Метод SHIFT (Array) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: shift
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: shift method
 ms.assetid: f33baec5-f67e-4760-b7c1-553727bd0423
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 664c3f764950b329cea8356f5b350ee917f0a60f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод shift (Array) (JavaScript)
+# <a name="shift-method-array-javascript"></a>Метод shift (Array) (JavaScript)
 Удаляет первый элемент из массива и возвращает его.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 arrayObj.shift( )  
 ```  
   
-#### Параметры  
- Требуемая ссылка на `arrayObj` — объект `Array`.  
+#### <a name="parameters"></a>Параметры  
+ Необходимая `arrayObj` ссылка `Array` объекта.  
   
-## Возвращаемое значение  
- Возвращает элемент, удаленный из массива.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Возвращает элемент, удаленные из массива.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
  В следующем примере показано использование метода `shift`.  
   
-```javascript  
+```JavaScript  
 var arr = new Array(10, 11, 12);  
 while (arr.length > 0)  
     {  
@@ -55,8 +56,8 @@ while (arr.length > 0)
 // 10 11 12  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
-## См. также  
- [Метод unshift \(Array\)](../../javascript/reference/unshift-method-array-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Метод unshift (Array)](../../javascript/reference/unshift-method-array-javascript.md)

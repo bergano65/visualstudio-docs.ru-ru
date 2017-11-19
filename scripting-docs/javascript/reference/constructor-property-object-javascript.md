@@ -1,48 +1,49 @@
 ---
-title: "Свойство constructor (Object) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "constructor"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "constructor - свойство"
+title: "Свойство constructor (Object) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: constructor
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: constructor property
 ms.assetid: 6f5d0e9d-e85f-4fde-b558-744510483d69
-caps.latest.revision: 17
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 569dab69906aa167ef486923bd7ceb7455ac243e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Свойство constructor (Object) (JavaScript)
-Задает функцию, которая создает объект.  
+# <a name="constructor-property-object-javascript"></a>Свойство constructor (Object) (JavaScript)
+Указывает функцию, которая создает объект.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 object.constructor  
 ```  
   
-## Заметки  
- Необходимый параметр `object` представляет собой имя объекта или функции.  
+## <a name="remarks"></a>Примечания  
+ Необходимая `object` имя объекта или функции.  
   
- Свойство `constructor` является членом прототипа каждого объекта, у которого есть прототип.  Это включает все встроенные объекты [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], за исключением объектов `Global` и `Math`.  Свойство `constructor` содержит ссылку на функцию, которая создает экземпляры данного конкретного объекта.  
+ Свойство `constructor` является членом прототипа каждого объекта, который имеет прототип. Сюда входят все встроенные [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] объектов, за исключением `Global` и `Math` объектов. Свойство `constructor` содержит ссылку на функцию, которая создает экземпляры конкретного объекта.  
   
-## Пример  
- В следующем примере кода демонстрируется использование свойства constructor.  
+## <a name="example"></a>Пример  
+ Следующий пример иллюстрирует использование свойства конструктора.  
   
-```javascript  
+```JavaScript  
 // A constructor function.  
 function MyObj() {  
     this.number = 1;  
@@ -64,8 +65,8 @@ if (y.constructor == MyObj)
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]  
   
-## См. также  
- [Свойство prototype \(Object\)](../../javascript/reference/prototype-property-object-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Свойство prototype (Object)](../../javascript/reference/prototype-property-object-javascript.md)

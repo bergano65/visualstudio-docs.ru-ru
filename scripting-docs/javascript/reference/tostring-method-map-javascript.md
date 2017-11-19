@@ -1,42 +1,45 @@
 ---
-title: "Метод toString (Map) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Метод toString (Map) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 9e7daa49-f7cc-49c5-b497-5cf0f2b51274
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e3ffbb5defef47391bc10664f81ae5ef860b73f2
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод toString (Map) (JavaScript)
-Возвращает строковое представление сопоставления.  
+# <a name="tostring-method-map-javascript"></a>Метод toString (Map) (JavaScript)
+Возвращает строковое представление карты.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```javascript  
+```JavaScript  
 mapObj.toString()  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `mapObj`  
- Обязательное.  Объект `Map`.  
+ Обязательный. Объект `Map`.  
   
-## Значение свойства или возвращаемое значение  
- Строковое представление сопоставления.  
+## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение  
+ Строковое представление карты.  
   
-## Исключения  
+## <a name="exceptions"></a>Исключения  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]

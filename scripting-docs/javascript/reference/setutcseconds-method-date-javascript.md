@@ -1,65 +1,67 @@
 ---
-title: "Метод setUTCSeconds (Date) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "setUTCSeconds"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "даты, время в формате UTC"
-  - "seconds - метод"
-  - "setUTCSeconds - метод"
-  - "время в формате UTC, параметр"
+title: "Метод setUTCSeconds (Date) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: setUTCSeconds
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- dates, UTC
+- setUTCSeconds method
+- UTC times, setting
+- seconds method
 ms.assetid: e035e282-b39d-4d1d-8771-c17542fd6493
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f3df010cd84332d8957f1c08c41c4543dec36e4a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод setUTCSeconds (Date) (JavaScript)
-Устанавливает значение секунд в объекте `Date`, используя универсальное время UTC.  
+# <a name="setutcseconds-method-date-javascript"></a>Метод setUTCSeconds (Date) (JavaScript)
+Задает значение секунд `Date` с помощью общего скоординированного времени (UTC).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 dateObj.setUTCSeconds(numSeconds[, numMilli])   
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `dateObj`  
- Обязательный.  Любой объект `Date`.  
+ Обязательный. Любой объект `Date`.  
   
  *numSeconds*  
- Обязательный.  Числовое значение, равное количеству секунд.  
+ Обязательный. Числовое значение, равное количеству секунд.  
   
  `numMilli`  
- Необязательный.  Числовое значение, равное количеству миллисекунд.  
+ Необязательно. Числовое значение, равное количеству миллисекунд.  
   
-## Заметки  
- Все методы **set**, принимающие необязательные аргументы, в случае, когда необязательный аргумент не задан, используют значение, возвращаемое соответствующими методами **get**.  Например, если аргумент `numMilli` не задан, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] использует значение, возвращенное методом `getUTCMilliseconds`.  
+## <a name="remarks"></a>Примечания  
+ Все **задать** методы, принимающие необязательные аргументы, используют значение, возвращенное из соответствующего **получить** методов, если аргумент не задан. Например если `numMilli` аргумент не указан, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] использует значение, возвращенное из `getUTCMilliseconds` метод.  
   
- Чтобы установить значение секунд с использованием местного времени, используйте метод `setSeconds`.  
+ Чтобы установить значение, с помощью локального времени секунд, используйте `setSeconds` метод.  
   
- Если значение аргумента превышает верхнюю границу его диапазона или является отрицательным числом, остальные хранящиеся значения изменяются соответственно.  Например, если сохранена дата "5 января 1996 г., 00:00:00,00" и вызывается метод **setSeconds\(150\)**, дата принимает значение "5 января 1996 г., 00:02:30,00".  
+ Если значение аргумента больше значения диапазона или является отрицательным числом, остальные хранящиеся значения изменяются соответствующим образом. Например, если сохранена дата «5 января 1996 00:00:00.00» и **метод setSeconds(150)** — вызывается, дата изменяется на «5 января 1996 г.»  
   
- С помощью метода **setUTCHours** можно задать часы, минуты, секунды и миллисекунды.  
+ **SetUTCHours** метод может использоваться для задания часов, минут, секунд и миллисекунд.  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере показано использование метода `setUTCSeconds`.  
   
-```javascript  
+```JavaScript  
 function SetUTCSecondsDemo(nsec){  
 // Create Date object.  
     var d = new Date();       
@@ -72,12 +74,12 @@ function SetUTCSecondsDemo(nsec){
 }  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Относится к**: [Объект Date](../../javascript/reference/date-object-javascript.md)  
+ **Применимо к**: [Date Object](../../javascript/reference/date-object-javascript.md)  
   
-## См. также  
- [Метод getSeconds \(Date\)](../../javascript/reference/getseconds-method-date-javascript.md)   
- [Метод getUTCSeconds \(Date\)](../../javascript/reference/getutcseconds-method-date-javascript.md)   
- [Метод setSeconds \(Date\)](../../javascript/reference/setseconds-method-date-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Метод getSeconds (Date)](../../javascript/reference/getseconds-method-date-javascript.md)   
+ [Метод getUTCSeconds (Date)](../../javascript/reference/getutcseconds-method-date-javascript.md)   
+ [Метод setSeconds (Date)](../../javascript/reference/setseconds-method-date-javascript.md)

@@ -1,39 +1,42 @@
 ---
-title: "Функция ArrayBuffer.isView (ArrayBuffer) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Функция ArrayBuffer.isView (ArrayBuffer) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 1887324f-892b-4fcd-ad33-748ba9517a06
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5aaae2acb38aa2f8c4b5e49ea203e86665315700
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция ArrayBuffer.isView (ArrayBuffer)
+# <a name="arraybufferisview-function-arraybuffer"></a>Функция ArrayBuffer.isView (ArrayBuffer)
 Определяет, обеспечивает ли объект представление буфера.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```javascript  
+```JavaScript  
 ArrayBuffer.isView(object)  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `object`  
- Обязательный.  Объект для тестирования.  
+ Обязательный. Объект для тестирования.  
   
-## Возвращаемое значение  
+## <a name="return-value"></a>Возвращаемое значение  
  `true`, если справедливо одно из следующих условий:  
   
 -   `object` является объектом `DataView`.  
@@ -42,12 +45,12 @@ ArrayBuffer.isView(object)
   
  В противном случае метод возвращает значение `false`.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере показано использование функции `isView` для тестирования типизированного массива и объекта `DataView`.  
   
-```javascript  
+```JavaScript  
 var uint = new UInt8ClampedArray(10);  
   
 if(console && console.log) {  
@@ -60,8 +63,8 @@ if(console && console.log) {
 }  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv11_winonly](../../javascript/reference/includes/jsv11-winonly-md.md)]  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Объект Uint8ClampedArray](../../javascript/reference/uint8clampedarray-object-javascript.md)

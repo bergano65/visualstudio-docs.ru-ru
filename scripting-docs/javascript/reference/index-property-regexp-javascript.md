@@ -1,49 +1,51 @@
 ---
-title: "Свойство index (RegExp) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "index"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Index - свойство"
-  - "совпадающие строки"
+title: "Свойство Index (RegExp) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: index
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- Index property
+- matching strings
 ms.assetid: d8be1ef6-1bf2-43cd-b0b5-567a61eabaad
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9c6b11a5caf6e727b4d525b9a2d51eddd4542bc4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Свойство index (RegExp) (JavaScript)
-Возвращает позицию знака, с которого начинается первое найденное совпадение в строке для поиска.  Только для чтения.  
+# <a name="index-property-regexp-javascript"></a>Свойство index (RegExp) (JavaScript)
+Возвращает позицию символа, где начинается первого совпадения в строке для поиска. Только для чтения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 RegExp.index   
 ```  
   
-## Заметки  
- Объект, связанный с данным свойством, всегда является глобальным объектом `RegExp`.  
+## <a name="remarks"></a>Примечания  
+ Объект, связанный с этим свойством, всегда является глобальный `RegExp` объекта.  
   
- Значения свойства **index** начинаются с нуля.  Начальным значением свойства **index** является \-1.  Его значение изменяется при каждом успешном обнаружении искомого выражения.  
+ **Индекс** свойства начинается с нуля. Начальное значение **индекс** свойство имеет значение -1. Его значение изменяется при каждом обнаружении совпадения.  
   
-## Пример  
- В следующем примере показано использование свойства **index**.  Данная функция выполняет итерацию строки для поиска и печатает значения **index** и `lastIndex` для каждого слова в строке.  
+## <a name="example"></a>Пример  
+ Следующий пример иллюстрирует использование **индекс** свойство. Эта функция выполняет итерацию искомую строку и выводит **индекс** и `lastIndex` значения для каждого слова в строке.  
   
-```javascript  
+```JavaScript  
 function RegExpTest()  
 {  
    var ver = Number(ScriptEngineMajorVersion() + "." + ScriptEngineMinorVersion())  
@@ -70,10 +72,10 @@ function RegExpTest()
 }  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Относится к**: [Объект RegExp](../../javascript/reference/regexp-object-javascript.md)  
+ **Применяется к**: [объект RegExp](../../javascript/reference/regexp-object-javascript.md)  
   
-## См. также  
- [Regular Expression Syntax \(JavaScript\)](http://msdn.microsoft.com/ru-ru/ab0766e1-7037-45ed-aa23-706f58358c0e)
+## <a name="see-also"></a>См. также  
+ [Синтаксис регулярного выражения (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)

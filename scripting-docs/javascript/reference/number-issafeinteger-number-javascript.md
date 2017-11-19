@@ -1,43 +1,46 @@
 ---
-title: "Number.isSafeInteger (Number) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Функция Number.isSafeInteger (Number) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: c7ef6ce8-fe71-4e53-be44-4dd440aef21d
-caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: eebc2147bc5043341be7e883548af825922036f9
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Number.isSafeInteger (Number) (JavaScript)
+# <a name="numberissafeinteger-number-javascript"></a>Number.isSafeInteger (Number) (JavaScript)
 Возвращает логическое значение, указывающее, можно ли безопасно представить число в JavaScript.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 Number.isSafeInteger(numValue)   
 ```  
   
-## Возвращаемое значение  
+## <a name="return-value"></a>Возвращаемое значение  
  `true`, если число находится в диапазоне от `Number.MIN_SAFE_INTEGER` до `Number.MAX_SAFE_INTEGER` включительно; в противном случае — `false`.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
  В JavaScript безопасное целое число — это число двойной точности IEEE 754 до округления.  
   
-## Пример  
+## <a name="example"></a>Пример  
   
-```javascript  
+```JavaScript  
 // Returns true  
 Number.isSafeInteger(-100)  
 Number.isSafeInteger(9007199254740991)  
@@ -49,7 +52,7 @@ Number.isSafeInteger("100")
 Number.isSafeInteger(9007199254740992);  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]  
   
- **Применение**: [Объект Number](../../javascript/reference/number-object-javascript.md)
+ **Применяется к**: [число объектов](../../javascript/reference/number-object-javascript.md)

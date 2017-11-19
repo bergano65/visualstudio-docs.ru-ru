@@ -1,38 +1,41 @@
 ---
-title: "Свойство byteOffset (DataView) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Свойство byteOffset (DataView) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 3b3e68bc-1476-4a32-a18d-6efa375bce0f
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f7cfc829f9821dbf4eb440071b9c1971e8c4e882
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Свойство byteOffset (DataView)
-Только для чтения.  Смещение данного представления от начала его ArrayBuffer в байтах, зафиксированное во время создания.  
+# <a name="byteoffset-property-dataview"></a>Свойство byteOffset (DataView)
+Только для чтения. Смещение от начала его буфера ArrayBuffer в байтах, зафиксированная во время создания этого представления.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```javascript  
+```JavaScript  
 var arrayOffset = dataView.byteOffset;  
 ```  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере показано, как получить длину DataView.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -48,5 +51,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

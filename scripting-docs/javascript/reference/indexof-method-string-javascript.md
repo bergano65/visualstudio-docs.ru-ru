@@ -1,61 +1,63 @@
 ---
-title: "Метод indexOf (строка) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "indexOf"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "indexOf - метод, строка"
-  - "строка, indexOf - метод"
+title: "Метод indexOf (строка) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: indexOf
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- indexOf method, string
+- string, indexOf method
 ms.assetid: a17372fa-669b-471b-9240-46927a265152
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ecd96acb21f9d7711f9ee00dbf1c1bb70705c0d8
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод indexOf (строка) (JavaScript)
+# <a name="indexof-method-string-javascript"></a>Метод indexOf (строка) (JavaScript)
 Возвращает позицию первого вхождения подстроки.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 strObj. indexOf(subString[, startIndex])  
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `strObj`  
- Обязательный.  Объект `String` или строковый литерал.  
+ Обязательный. Объект `String` или строковый литерал.  
   
  `subString`  
- Обязательный.  Подстрока, которую необходимо найти в строке  
+ Обязательный. Подстрока, которую необходимо найти в строке  
   
  `startIndex`  
- Необязательный.  Индекс, с которого необходимо начать поиск объекта `String`.  Если он не указан, поиск будет производиться с начала строки.  
+ Необязательно. Индекс, с которого необходимо начать поиск объекта `String`. Если он не указан, поиск будет производиться с начала строки.  
   
-## Заметки  
- Метод **indexOf** возвращает начало подстроки в объекте `String`.  Если подстрока не найдена, возвращается \-1.  
+## <a name="remarks"></a>Примечания  
+ **IndexOf** возвращает начало подстроки в `String` объекта. Если подстрока не найдена, возвращается -1.  
   
- Если значение `startindex` отрицательно, то `startindex` рассматривается как ноль.  Если его значение больше наибольшего индекса, он рассматривается как наибольший индекс.  
+ Если значение `startindex` отрицательно, то `startindex` рассматривается как ноль. Если его значение больше наибольшего индекса, он рассматривается как наибольший индекс.  
   
- Поиск выполняется слева направо.  В остальном этот метод идентичен методу **lastIndexOf**.  
+ Поиск выполняется слева направо. В противном случае этот метод идентичен **lastIndexOf**.  
   
-## Пример  
- В следующем примере показано использование метода **indexOf**.  
+## <a name="example"></a>Пример  
+ Следующий пример иллюстрирует использование **indexOf** метод.  
   
-```javascript  
+```JavaScript  
 var str = "original equipment manufacturer";  
   
 var s = "equip is at position " + str.indexOf("equip");  
@@ -69,11 +71,11 @@ document.write(s);
 // abc is at position -1  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **Применение**: [Объект String](../../javascript/reference/string-object-javascript.md)  
+ **Применяется к**: [строковый объект](../../javascript/reference/string-object-javascript.md)  
   
-## См. также  
- [Метод lastIndexOf \(строка\)](../../javascript/reference/lastindexof-method-string-javascript.md)   
- [Пример приложения с функциями прокрутки, сдвига и масштабирования](http://code.msdn.microsoft.com/ie/Scrolling-panning-and-6834aaf9)
+## <a name="see-also"></a>См. также  
+ [Метод lastIndexOf (строка)](../../javascript/reference/lastindexof-method-string-javascript.md)   
+ [Прокрутки, сдвига и масштабирования примера приложения](http://code.msdn.microsoft.com/ie/Scrolling-panning-and-6834aaf9)

@@ -1,48 +1,50 @@
 ---
-title: "Свойство input ($_) (RegExp) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "$_"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "$_ - свойство"
-  - "input - свойство"
+title: "Свойство Input ($_) (RegExp) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: $_
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- input property
+- $_ property
 ms.assetid: 88c6d1d8-56f7-4334-a7eb-e899aec9cda4
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8a447950783473d975bfe799eaa2bf18008e539e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Свойство input ($_) (RegExp) (JavaScript)
-Возвращает строку, в которой выполнялся поиск регулярного выражения.  Только для чтения.  
+# <a name="input-property--regexp-javascript"></a>Свойство input ($_) (RegExp) (JavaScript)
+Возвращает строку, в которой выполняется поиск регулярного выражения. Только для чтения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 RegExp.input  
 ```  
   
-## Заметки  
- Объект, связанный с данным свойством, всегда является глобальным объектом `RegExp`.  
+## <a name="remarks"></a>Примечания  
+ Объект, связанный с этим свойством, всегда является глобальный `RegExp` объекта.  
   
- Значение свойства **input** изменяется при каждом редактировании строки, в которой выполняется поиск.  
+ Значение **ввода** свойство изменяется в любое время изменить искомая строка.  
   
- В следующем примере демонстрируется использование свойства **input**.  
+ Следующий пример иллюстрирует использование **ввода** свойство:  
   
-```javascript  
+```JavaScript  
 function inputDemo(){  
    var s;  
    var re = new RegExp("d(b+)(d)","ig");  
@@ -53,10 +55,10 @@ function inputDemo(){
 }  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Относится к**: [Объект RegExp](../../javascript/reference/regexp-object-javascript.md)  
+ **Применяется к**: [объект RegExp](../../javascript/reference/regexp-object-javascript.md)  
   
-## См. также  
- [Regular Expression Syntax \(JavaScript\)](http://msdn.microsoft.com/ru-ru/ab0766e1-7037-45ed-aa23-706f58358c0e)
+## <a name="see-also"></a>См. также  
+ [Синтаксис регулярного выражения (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)

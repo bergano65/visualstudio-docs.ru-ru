@@ -1,33 +1,34 @@
 ---
-title: "Функция encodeURI (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "encodeURI"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "encodeURI - метод"
+title: "Функция encodeURI (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: encodeURI
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: encodeURI method
 ms.assetid: 17bab5a2-bcd4-46c2-8b52-b2b5a0ed98a3
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8cf9bbdf34c0481c889d1176bc32ab0246a333a4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция encodeURI (JavaScript)
-Кодирует текстовую строку как допустимый универсальный код ресурса \(URI\).  
+# <a name="encodeuri-function-javascript"></a>Функция encodeURI (JavaScript)
+Кодирует текстовую строку как допустимый универсальный идентификатор ресурса (URI)  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
@@ -37,15 +38,15 @@ URIString
   
 ```  
   
-## Заметки  
- Обязательный аргумент `URIString` — это значение, представляющее закодированный универсальный код ресурса \(URI\).  
+## <a name="remarks"></a>Примечания  
+ Необходимая `URIString` аргумент имеет значение, представляющее закодированный URI.  
   
- Функция `encodeURI` возвращает закодированный URI.  Если передать результат функции `decodeURI`, будет возвращена исходная строка.  Функция `encodeURI` не кодирует следующие знаки: ":", "\/", ";", и "?".  Для кодирования этих знаков используется функция `encodeURIComponent`.  
+ `encodeURI` Функция возвращает закодированный URI. Если передать результат в `decodeURI`, возвращается исходная строка. `encodeURI` Функция не кодирует следующие символы: «:», «/», «;», и «?». Используйте `encodeURIComponent` кодировать эти символы.  
   
-## Пример  
- В следующем примере сначала кодируется, а затем декодируется URI.  
+## <a name="example"></a>Пример  
+ Следующий код сначала кодирует и декодирует URI затем.  
   
-```javascript  
+```JavaScript  
 var uriEncode = encodeURI ("http://www.Not a URL.com");  
 var uriDecode = decodeURIComponent(uriEncode);  
   
@@ -58,9 +59,9 @@ document.write(uriDecode);
 // http://www.Not a URL.com  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Функция decodeURI](../../javascript/reference/decodeuri-function-javascript.md)   
- [Функция decodeURIComponent](../../javascript/reference/decodeuricomponent-function-javascript.md)
+ [Функция DecodeURIComponent](../../javascript/reference/decodeuricomponent-function-javascript.md)

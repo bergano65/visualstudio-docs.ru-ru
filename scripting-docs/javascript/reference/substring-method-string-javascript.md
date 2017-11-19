@@ -1,34 +1,36 @@
 ---
-title: "Метод substring (String) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "substring"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "подстроки"
-  - "substring - метод"
+title: "Метод SUBSTRING (String) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: substring
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- substrings
+- substring method
 ms.assetid: 9cf9a005-cbe3-42fd-828b-57a39f54224c
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 15ebaadc7b24fa97f531a22f6deb1453ff52b3e7
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод substring (String) (JavaScript)
-Возвращает подстроку, расположенную в указанном месте объекта `String`.  
+# <a name="substring-method-string-javascript"></a>Метод substring (String) (JavaScript)
+Возвращает подстроку, расположенную в указанном месте `String` объекта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
@@ -36,28 +38,28 @@ caps.handback.revision: 18
 "String Literal".substring(start [, end])   
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `start`  
- Обязательный.  Целое значение индекса \(начиная с нуля\), указывающее начало подстроки.  
+ Обязательный. Отсчитываемый от нуля индекс целочисленное значение, указывающее начало подстроки.  
   
  `end`  
- Необязательный.  Целое значение индекса \(начиная с нуля\), указывающее конец подстроки.  Подстрока включает символы до символа, задаваемого значением `end`, но не включая его.  
+ Необязательно. Отсчитываемый от нуля индекс целочисленное значение, указывающее, конец подстроки. Подстрока включает символы до, но не включая знак обозначается `end`.  
   
- Если значение `end` опущено, будут возвращены символы от позиции `start` до конца исходной строки.  
+ Если `end` опущен, символы от `start` до конца исходной строки возвращаются.  
   
-## Заметки  
- Метод `substring` возвращает строку, содержащую подстроку, которая начинается с позиции `start` и завершается позицией `end` \(но не включает эту позицию\).  
+## <a name="remarks"></a>Примечания  
+ `substring` Метод возвращает строку, содержащую подстроку из `start` , но не включающую, `end`.  
   
- В качестве начальной позиции подстроки метод **substring** использует наименьшее значение аргументов `start` и `end`.  Например, вызовы strvar.substring\(0, 3**\)** и strvar.substring\(3, 0\) возвращают одну и ту же подстроку.  
+ **Подстроки** метод использует наименьшее значение `start` и `end` в качестве начальной позиции подстроки. Например, strvar.substring (0, 3**)** и strvar.substring (3, 0) возвращают одну подстроку.  
   
- Если значение `start` или `end` равно `NaN` или является отрицательным числом, оно заменяется нулем.  
+ Если параметр `start` или `end` — `NaN` или отрицательное значение, оно будет заменено ноль.  
   
- Длина подстроки равна абсолютному значению разности аргументов `start` и `end`.  Например, длина подстроки, возвращаемой вызовами strvar.substring\(0, 3\) и strvar.substring\(3, 0\), равна 3.  
+ Длина подстроки равна абсолютное значение разницы между `start` и `end`. Например возвращается длина подстроки в strvar.substring (0, 3) и strvar.substring (3, 0), равно трем.  
   
-## Пример  
- В следующем примере показано использование метода **substring**.  
+## <a name="example"></a>Пример  
+ Следующий пример иллюстрирует использование **подстроки** метод.  
   
-```javascript  
+```JavaScript  
 var s = "The quick brown fox jumps over the lazy dog.";  
 var ss = s.substring(10, 15);  
 document.write(ss);  
@@ -67,8 +69,8 @@ document.write(ss);
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## См. также  
- [Метод substr \(String\)](../../javascript/reference/substr-method-string-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Метод substr (String)](../../javascript/reference/substr-method-string-javascript.md)

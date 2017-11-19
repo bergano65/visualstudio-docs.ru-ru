@@ -1,48 +1,50 @@
 ---
-title: "Оператор this (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "this_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "конструкторы, ссылка на текущий объект"
-  - "this - оператор"
+title: "Оператор this (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: this_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- this statement
+- constructors, referring to current object
 ms.assetid: 8510a00b-2f14-4700-a276-4d9a523c5112
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f4afed1bd978d1985c151efa77873c93e699f0b1
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Оператор this (JavaScript)
+# <a name="this-statement-javascript"></a>Оператор this (JavaScript)
 Ссылается на текущий объект.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 this.property  
 ```  
   
-## Заметки  
- Обязательный аргумент `property` — одно из свойств текущего объекта  
+## <a name="remarks"></a>Примечания  
+ Обязательный аргумент `property` — одно из свойств текущего объекта  
   
  Ключевое слово `this` можно использовать в конструкторах объекта для ссылки на текущий объект.  
   
-## Пример  
- В следующем примере **this** ссылается на вновь созданный объект Car и присваивает значения трем свойствам:  
+## <a name="example"></a>Пример  
+ В следующем примере **это** ссылается на вновь созданный объект Car и присваивает значения трем свойствам:  
   
-```javascript  
+```JavaScript  
 function Car(color, make, model){  
    this.color = color;  
    this.make = make;  
@@ -50,11 +52,11 @@ function Car(color, make, model){
 }  
 ```  
   
- Ключевое слово **this** обычно ссылается на объект **window**, если оно используется вне области любого другого объекта.  Однако внутри обработчиков событий `this` ссылается на элемент DOM, вызвавший событие.  
+ **Это** ключевое слово обычно ссылается на **окна** объекта, если используется вне области любого другого объекта. Однако внутри обработчиков событий `this` ссылается на элемент DOM, вызвавший событие.  
   
- В следующем коде \(для Internet Explorer 9 и более поздних версий\) обработчик событий выводит строковую версию кнопки, которая имеет идентификатор элемента "clicker".  
+ В следующем коде (для Internet Explorer 9 и более поздних версий) обработчик событий выводит строковую версию кнопки, которая имеет идентификатор элемента "clicker".  
   
-```javascript  
+```JavaScript  
 document.getElementById("clicker").addEventListener("click", eventHandler, false);  
   
         function eventHandler(ev) {  
@@ -65,9 +67,9 @@ document.getElementById("clicker").addEventListener("click", eventHandler, false
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Оператор new](../../javascript/reference/new-operator-decrementjavascript.md)   
  [Использование метода bind](../../javascript/advanced/using-the-bind-method-javascript.md)

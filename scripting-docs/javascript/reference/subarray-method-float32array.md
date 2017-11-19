@@ -1,35 +1,38 @@
 ---
-title: "Метод subarray (Float32Array) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Метод SubArray (Float32Array) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 97aa27c0-d650-411e-b929-dd9c4a2ae9a5
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 78d8c729298fe80d841d7c4750e4e6817120c9d3
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод subarray (Float32Array)
-Получает новое представление Float32Array хранилища [Объект ArrayBuffer](../../javascript/reference/arraybuffer-object.md) для этого массива, указывая первый и последний член подмассива.  
+# <a name="subarray-method-float32array"></a>Метод subarray (Float32Array)
+Получает новое представление Float32Array [объект ArrayBuffer](../../javascript/reference/arraybuffer-object.md) хранения для этого массива, указывая первый и последний члены подмассива.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```javascript  
+```JavaScript  
 var newFloat32Array = float32Array.subarray(begin, end);  
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `newFloat32Array`  
  Подмассив, возвращаемый данным методом.  
   
@@ -39,13 +42,13 @@ var newFloat32Array = float32Array.subarray(begin, end);
  `end`  
  Конечный индекс массива.  
   
-## Заметки  
- Если `begin` или `end` имеет отрицательное значение, он ссылается на индекс из конца массива, иначе — из начала.  Если `end` не указано, подмассив содержит все элементы, начиная с `begin` и до конца типизированного массива.  Диапазон, заданный значениями `begin` и `end`, ограничен допустимым диапазоном индексов для текущего массива.  Если вычисленная длина нового типизированного массива отрицательна, длина примет значение равное нулю.  Возвращаемый массив является массивом того же типа, что и массив, на котором был вызван этот метод.  
+## <a name="remarks"></a>Примечания  
+ Если параметр `begin` или `end` имеет отрицательное значение, он ссылается на индекс, считая с конца массива, а не с начала. Если параметр `end` не указан, подмассив содержит все элементы, начиная с `begin` и до конца типизированного массива. Диапазон, заданный значениями `begin` и `end`, ограничен допустимым диапазоном индексов текущего массива. Если вычисленная длина нового типизированного массива отрицательна, ей присваивается значение ноль. Возвращаемый массив имеет тот же тип, что и массив, для которого был вызван этот метод.  
   
-## Пример  
- В следующем примере показано, как получить подмассив из трех элементов, начиная с первого элемента массива.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как получить подмассив из трех элементов, начинающийся с первого элемента массива.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -61,5 +64,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

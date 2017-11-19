@@ -1,49 +1,50 @@
 ---
-title: "Метод toDateString (Date) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "toDateString"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "toDateString - метод"
+title: "Метод toDateString (Date) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: toDateString
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: toDateString method
 ms.assetid: 87d713aa-fd55-4f90-9a30-6df8abdfebe0
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0b8cd7b0802934c15180c2d7def82cc8ebc2298d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод toDateString (Date) (JavaScript)
+# <a name="todatestring-method-date-javascript"></a>Метод toDateString (Date) (JavaScript)
 Возвращает дату в виде строкового значения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 objDate.toDateString( )  
 ```  
   
-## Заметки  
- Обязательная ссылка *objDate* — это объект `Date`.  
+## <a name="remarks"></a>Примечания  
+ Необходимая *objDate* ссылка `Date` объекта.  
   
- Метод `toDateString` возвращает строковое значение, содержащее дату для текущего часового пояса в удобном для чтения формате.  
+ `toDateString` Метод возвращает строковое значение, содержащее дату в текущем часовом поясе является удобным в удобочитаемом формате.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
- **Относится к**: [Объект Date](../../javascript/reference/date-object-javascript.md)  
+ **Применимо к**: [Date Object](../../javascript/reference/date-object-javascript.md)  
   
-## См. также  
- [Метод toTimeString \(Date\)](../../javascript/reference/totimestring-method-date-javascript.md)   
- [Метод toLocaleDateString \(Date\)](../../javascript/reference/tolocaledatestring-method-date-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Метод toTimeString (Date)](../../javascript/reference/totimestring-method-date-javascript.md)   
+ [Метод toLocaleDateString (Date)](../../javascript/reference/tolocaledatestring-method-date-javascript.md)

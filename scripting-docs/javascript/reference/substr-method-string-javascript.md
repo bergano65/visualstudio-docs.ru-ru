@@ -1,56 +1,57 @@
 ---
-title: "Метод substr (String) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "substr"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "substr - метод"
+title: "Метод substr (String) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: substr
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: substr method
 ms.assetid: f12541c1-2623-482e-941d-2e22bc3c4a4a
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6b002bfefbeb81c534c882fa4a4720c93ccca185
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод substr (String) (JavaScript)
-Получает подстроку указанной длины, которая начинается с указанной позиции.  
+# <a name="substr-method-string-javascript"></a>Метод substr (String) (JavaScript)
+Возвращает подстроку, начиная с версии в указанном месте и с указанной длины.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 stringvar.substr(start [, length ])   
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `stringvar`  
- Обязательный.  Строковый литерал или объект `String`, из которого извлекается подстрока.  
+ Обязательный. Строковый литерал или `String` объекта, из которой извлекается подстрока.  
   
  `start`  
- Обязательный.  Начальная позиция требуемой подстроки.  Индекс первого знака строки равен нулю.  
+ Обязательный. Начальная позиция извлекаемой подстроки. Индекс первого символа в строке равен нулю.  
   
  `length`  
- Необязательный.  Число знаков, которые следует включить в возвращаемую подстроку.  
+ Необязательно. Число символов для включения в возвращаемой подстроки.  
   
-## Заметки  
- Если значение `length` равно нулю или является отрицательным, возвращается пустая строка.  Если этот аргумент не указан, подстрока продолжается до конца `stringvar`.  
+## <a name="remarks"></a>Примечания  
+ Если `length` равно нулю или отрицательное значение, возвращается пустая строка. Если не указан, подстрока продолжается до конца `stringvar`.  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере показано использование метода `substr`.  
   
-```javascript  
+```JavaScript  
 var s = "The quick brown fox jumps over the lazy dog.";  
 var ss = s.substr(10, 5);    
 document.write("[" + ss + "] <br>");  
@@ -67,10 +68,10 @@ document.write("[" + ss + "] <br>");
 // []  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Относится к**: [Объект String](../../javascript/reference/string-object-javascript.md)  
+ **Применяется к**: [строковый объект](../../javascript/reference/string-object-javascript.md)  
   
-## См. также  
- [Метод substring \(String\)](../../javascript/reference/substring-method-string-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Метод substring (String)](../../javascript/reference/substring-method-string-javascript.md)

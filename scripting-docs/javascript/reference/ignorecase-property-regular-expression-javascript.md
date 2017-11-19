@@ -1,52 +1,53 @@
 ---
-title: "Свойство ignoreCase (Regular Expression) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "ignoreCase"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "IgnoreCase - свойство"
+title: "Свойство ignoreCase (Regular Expression) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: ignoreCase
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: IgnoreCase property
 ms.assetid: 816f0df5-5a82-44a5-a4ab-dbc91fa76e61
-caps.latest.revision: 17
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ae9fee8e6303fb944f59c11c173f9e8b7f7cc75a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Свойство ignoreCase (Regular Expression) (JavaScript)
-Возвращает логическое значение, указывающее состояние флага ignoreCase \(**i**\), используемого с регулярным выражением.  Значение по умолчанию — **false**.  Только для чтения.  
+# <a name="ignorecase-property-regular-expression-javascript"></a>Свойство ignoreCase (Regular Expression) (JavaScript)
+Возвращает логическое значение, указывающее состояние флага ignoreCase (**я**) используется с регулярным выражением. Значение по умолчанию — **false**. Только для чтения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 rgExp.ignoreCase  
 ```  
   
-## Заметки  
- Обязательная ссылка `rgExp` — экземпляр объекта `RegExp`.  
+## <a name="remarks"></a>Примечания  
+ Необходимая `rgExp` ссылка представляет собой экземпляр `RegExp` объекта.  
   
- Свойство **ignoreCase** возвращает значение **true**, если для регулярного выражения установлен флаг ignoreCase, и значение **false**, если этот флаг не установлен.  
+ **IgnoreCase** возвращает **true** Если флаг ignoreCase установлен для регулярного выражения и возвращает **false** Если это не так.  
   
- Флаг ignoreCase используется для указания того, что при поиске соответствия шаблону в строке не следует учитывать регистр знаков.  
+ Флаг ignoreCase при использовании указывает, что следует учитывать регистр при сопоставлении шаблона в строке.  
   
-## Пример  
- В следующем примере демонстрируется использование свойства **ignoreCase**.  Если передать в показанную ниже функцию значение "gi", то все вхождения слова "the" будут заменены на слово "a", в том числе первое вхождение "The".  Это объясняется тем, что при установке флага ignoreCase поиск ведется без учета регистра.  Поэтому буквы "T" и "t" считаются одинаковыми.  
+## <a name="example"></a>Пример  
+ Следующий пример иллюстрирует использование **ignoreCase** свойство. При передаче «gi» в показанную ниже функцию, все экземпляры слова «» будут заменены слова «», включая начальные «». Это связано с установленным флагом ignoreCase, процедура поиска пропускает без учета регистра. Поэтому «T» совпадает со значением «t» в целях соответствия.  
   
- Эта функция возвращает логические значения, которые указывают состояние допустимых флагов регулярного выражения: **g**, **i** и **m**.  Кроме того, эта функция возвращает строку, в которой выполнены все замены.  
+ Эта функция возвращает логические значения, которые указывают состояние допустимых флагов регулярных выражений, которые являются **g**, **я**, и **m**. Функция также возвращает строку, которую были внесены все.  
   
-```javascript  
+```JavaScript  
 function RegExpPropDemo(flag){  
     // The flag parameter is a string that contains  
     // g, i, or m. The flags can be combined.  
@@ -83,10 +84,10 @@ document.write(RegExpPropDemo("gi"));
 document.write(RegExpPropDemo("g"));  
 ```  
   
-## Пример  
- Ниже показан результат.  
+## <a name="example"></a>Пример  
+ Ниже приведен результат.  
   
-```javascript  
+```JavaScript  
 global: true  
 ignoreCase: true  
 multiline: false  
@@ -98,12 +99,12 @@ multiline: false
 Resulting String: The batter hit a ball with a bat and a fielder caught a ball with a glove.  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
- **Относится к**: [Объект Regular Expression](../../javascript/reference/regular-expression-object-javascript.md)  
+ **Применяется к**: [объект регулярного выражения](../../javascript/reference/regular-expression-object-javascript.md)  
   
-## См. также  
- [Свойство global \(Regular Expression\)](../../javascript/reference/global-property-regular-expression-javascript.md)   
- [Свойство multiline \(Regular Expression\)](../../javascript/reference/multiline-property-regular-expression-javascript.md)   
- [Regular Expression Syntax \(JavaScript\)](http://msdn.microsoft.com/ru-ru/ab0766e1-7037-45ed-aa23-706f58358c0e)
+## <a name="see-also"></a>См. также  
+ [Свойство Global (Regular Expression)](../../javascript/reference/global-property-regular-expression-javascript.md)   
+ [Свойство Multiline (Regular Expression)](../../javascript/reference/multiline-property-regular-expression-javascript.md)   
+ [Синтаксис регулярного выражения (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)

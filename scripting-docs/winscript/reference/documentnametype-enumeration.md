@@ -1,27 +1,30 @@
 ---
-title: "Перечисление DOCUMENTNAMETYPE | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Перечисление DOCUMENTNAMETYPE | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: DOCUMENTNAMETYPE
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "DOCUMENTNAMETYPE — перечисление"
+helpviewer_keywords: DOCUMENTNAMETYPE enumeration
 ms.assetid: d36d550e-efb4-493d-8971-4de267005654
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a0bd21dddd209f21ae64ea2775bbaa0da226f077
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Перечисление DOCUMENTNAMETYPE
-Описывает, печатаемых для получения для документа.  
+# <a name="documentnametype-enumeration"></a>Перечисление DOCUMENTNAMETYPE
+Описывает тип, получаемый для документа.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 typedef enum tagDOCUMENTNAMETYPE {  
@@ -29,19 +32,18 @@ typedef enum tagDOCUMENTNAMETYPE {
    DOCUMENTNAMETYPE_TITLE,  
    DOCUMENTNAMETYPE_FILE_TAIL,  
    DOCUMENTNAMETYPE_URL,  
-DOCUMENTNAMETYPE_UNIQUE_TITLE,  
-} DOCUMENTNAMETYPE;  
+DOCUMENTNAMETYPE_UNIQUE_TITLE,} DOCUMENTNAMETYPE;  
 ```  
   
-## Члены  
+## <a name="members"></a>Члены  
   
-|Элемент|Описание|  
-|-------------|--------------|  
-|DOCUMENTNAMETYPE\_APPNODE|Возвращает имя, отображаемое в дерево приложения.|  
-|DOCUMENTNAMETYPE\_TITLE|Возвращает имя, отображаемое в заголовке окна просмотра.|  
-|DOCUMENTNAMETYPE\_FILE\_TAIL|Получает имя файла без пути.|  
-|DOCUMENTNAMETYPE\_URL|Получает URL\-адрес документа.|  
-|DOCUMENTNAMETYPE\_UNIQUE\_TITLE|Возвращает заголовок, добавленный с перечислением для идентификации.|  
+|Член|Описание|  
+|------------|-----------------|  
+|DOCUMENTNAMETYPE_APPNODE|Возвращает имя, как оно отображается в дереве приложения.|  
+|DOCUMENTNAMETYPE_TITLE|Возвращает имя, которое отображается в строке заголовка средства просмотра.|  
+|DOCUMENTNAMETYPE_FILE_TAIL|Возвращает имя файла без пути.|  
+|DOCUMENTNAMETYPE_URL|Получает URL-адрес документа.|  
+|DOCUMENTNAMETYPE_UNIQUE_TITLE|Возвращает название, дополненная перечисления для идентификации.|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Константы, перечисления и структуры отладчика активных скриптов](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

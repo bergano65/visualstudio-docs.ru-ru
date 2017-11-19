@@ -11,30 +11,15 @@ helpviewer_keywords:
 - text templates, guide
 - text templates, functions that generate text
 ms.assetid: 94328da7-953b-4e92-9587-648543d1f732
-caps.latest.revision: 43
+caps.latest.revision: "43"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: c5e60ada4489e12312df92ecceab8bc268a6cfac
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 97a9b5ce0237d9a06289e52e6db86ca33b901fc6
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="writing-a-t4-text-template"></a>Написание текстового шаблона T4
 Текстовый шаблон содержит текст, который будет создан на его основе. Например, шаблон, создающий веб-страницы будет содержать "\<html > …» и все прочие стандартные части HTML-страницы. Вставляемые в шаблон, *блоки управления*, они являются фрагментами программного кода. Блоки управления обеспечивают варьирующиеся значения и обеспечивают условность и повторяемость текста.  
@@ -294,4 +279,3 @@ Content of MyFile.txt is:
 |Запуск создания текста за пределами [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|[Создание файлов с помощью служебной программы TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|  
 |Преобразование данных в форме доменного языка.|[Создание кода из доменного языка](../modeling/generating-code-from-a-domain-specific-language.md)|  
 |Написание процессоров директив для преобразования собственных источников данных.|[Настройка преобразования текста T4](../modeling/customizing-t4-text-transformation.md)|
-

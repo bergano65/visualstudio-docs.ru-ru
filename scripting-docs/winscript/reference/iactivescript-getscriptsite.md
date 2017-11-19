@@ -1,27 +1,30 @@
 ---
-title: "IActiveScript::GetScriptSite | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IActiveScript::GetScriptSite | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScript.GetScriptSite
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScript_GetScriptSite"
+helpviewer_keywords: IActiveScript_GetScriptSite
 ms.assetid: 83a2a89d-93d0-4cbd-9244-91a730cb406b
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 961483d45c72018bc216306d6c1aba0400a367ad
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScript::GetScriptSite
-Извлекает объект сайта, связанный с обработчиком скрипта Windows.  
+# <a name="iactivescriptgetscriptsite"></a>IActiveScript::GetScriptSite
+Извлекает объект узла, связанный с обработчиком сценариев Windows.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT GetScriptSite(  
@@ -30,23 +33,23 @@ HRESULT GetScriptSite(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `iid`  
- \[in\] идентификатор запрошенного интерфейса.  
+ [in] Идентификатор запрашиваемого интерфейса.  
   
  `ppvSiteObject`  
- \[out\] адрес расположения, получающей указатель интерфейса на объект сайта основного приложения.  
+ [out] Адрес расположения, получающей указатель интерфейса на объект сайта поставщика услуг размещения.  
   
-## Возвращаемое значение  
- Возвращать одно из следующих значений:  
+## <a name="return-value"></a>Возвращаемое значение  
+ Возвращает одно из следующих значений:  
   
 |Возвращаемое значение|Значение|  
-|---------------------------|--------------|  
-|`S_OK`|Успех.|  
-|`E_INVALIDARG`|Аргумент был недопустимым.|  
+|------------------|-------------|  
+|`S_OK`|Выполнено.|  
+|`E_INVALIDARG`|Недопустимый аргумент.|  
 |`E_NOINTERFACE`|Указанный интерфейс не поддерживается.|  
-|`E_POINTER`|Недопустимый указатель был определен.|  
-|`S_FALSE`|Нет сайт не был установлен. параметр `ppvSiteObject` ему присваивается `NULL`.|  
+|`E_POINTER`|Указан недопустимый указатель.|  
+|`S_FALSE`|Сайт не был задан; `ppvSiteObject` параметра равным `NULL`.|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IActiveScript](../../winscript/reference/iactivescript.md)

@@ -1,81 +1,83 @@
 ---
-title: "Оператор побитового НЕ (~) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "~"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "побитовые операторы, NOT - оператор"
-  - "NOT - оператор"
+title: "Побитовый оператор не (~) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: ~
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- NOT operator
+- bitwise operators, NOT operator
 ms.assetid: 39f92474-fe05-4a8b-9ad8-caca93f82bca
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: aec64b055b260efb7a4b0d952aed9b3a5d7ddc82
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Оператор побитового НЕ (~) (JavaScript)
-Выполняет побитовую операцию НЕ \(отрицания\) для выражения.  
+# <a name="bitwise-not-operator--javascript"></a>Оператор побитового НЕ (~) (JavaScript)
+Выполняет операцию побитового НЕ (отрицания) для выражения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 result = ~ expression  
 ```  
   
-## Параметры  
- *result*  
+## <a name="parameters"></a>Параметры  
+ *результат*  
  Любая переменная.  
   
- *expression*  
- Произвольное выражение.  
+ *выражение*  
+ Любое выражение.  
   
-## Заметки  
- Все унарные операторы, такие как `~`, вычисляют выражения следующим образом.  
+## <a name="remarks"></a>Примечания  
+ Все унарные операторы, такие как `~` вычисляют выражения следующим образом:  
   
--   Если оператор применяется к неопределенному значению или выражению `null`, возникает ошибка времени выполнения.  
+-   Если применяется не определен или `null` возникает выражения, ошибка времени выполнения.  
   
 -   Объекты преобразуются в строки.  
   
--   Строки преобразуются в числа, если это возможно.  Если это невозможно, возникает ошибка времени выполнения.  
+-   Строки преобразуются в числа, если это возможно. В противном случае возникает ошибка времени выполнения.  
   
--   Логические значения интерпретируются как числа \(0 для false, 1 для true\).  
+-   Логические значения обрабатываются как числа (0, если значение равно false, 1, если значение true).  
   
  Оператор применяется к результирующему числу.  
   
- Оператор `~` выполняет операцию побитового отрицания над двоичным представлением значений выражения.  
+ `~` Оператор рассматривает двоичное представление значений выражения и выполняет операцию побитового отрицания на нем.  
   
- Любая позиция, содержащая 1 в исходном выражении, становится 0 в результате.  Любая позиция, содержащая 0 в исходном выражении, становится 1 в результате.  
+ Любая цифра, равного 1 в выражении становится равной нулю в результат. Любая цифра с 0 в выражении становится 1 в результате.  
   
- В следующем примере показано использование побитового оператора НЕ \(~\).  
+ В следующем примере показано использование побитового не (~)-оператор.  
   
 ```  
 var temp = ~5;  
 ```  
   
- Результирующее значение равно \-6, как показано в следующей таблице.  
+ Результирующее значение равно -6, как показано в следующей таблице.  
   
-|Выражение|Двоичное значение \(с дополнением до двух\)|Десятичное значение|  
-|---------------|-------------------------------------------------|-------------------------|  
+|Выражение|Двоичное значение (дополнение двух)|Десятичное значение|  
+|----------------|---------------------------------------|-------------------|  
 |5|00000000 00000000 00000000 00000101|5|  
-|~5|11111111 11111111 11111111 11111010|\-6|  
+|~5|11111111 11111111 11111111 11111010|-6|  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## См. также  
- [Оператор логического НЕ \(\!\)](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)   
+## <a name="see-also"></a>См. также  
+ [Логический оператор не (!)](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)   
  [Приоритет операторов](../../javascript/operator-subtractprecedence-javascript.md)   
- [Сводный список операторов \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Сводный список операторов (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

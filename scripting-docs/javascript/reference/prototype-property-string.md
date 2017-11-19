@@ -1,43 +1,46 @@
 ---
-title: "Свойство prototype (String) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Свойство prototype (String) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 437ce478-9c45-45f7-8952-bd71856cfcd8
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: df8c6abbd64fce9172d805c2e22dee51f4fbbee4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Свойство prototype (String)
+# <a name="prototype-property-string"></a>Свойство prototype (String)
 Возвращает ссылку на прототип класса строки.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 string.prototype  
 ```  
   
-## Заметки  
- Аргумент типа `string` представляет имя строки.  
+## <a name="remarks"></a>Примечания  
+ `string` Аргумент является именем строки.  
   
- Свойство `prototype` используется для предоставления базового набора функциональных возможностей классу объектов.  Новые экземпляры объекта наследуют поведение прототипа, присвоенного этому объекту.  
+ Чтобы для класса объектов обеспечить базовый набор функциональности, используйте свойство `prototype`. Новые экземпляры объекта "наследуют" поведение прототипа, назначенного этому объекту.  
   
- Например, чтобы добавить в объект `String` метод, возвращающий значение последнего элемента строки, объявите функцию, добавьте ее в свойство `String.prototype`, а затем используйте ее.  
+ Например, чтобы добавить метод в `String` , возвращающий значение последнего элемента строки, объявите функцию, добавьте его в `String.prototype`, а затем использовать его.  
   
-```javascript  
+```JavaScript  
 function string_last( ){  
     return this.charAt(this.length - 1);  
 }  
@@ -49,9 +52,9 @@ document.write(myString.last());
 // e  
 ```  
   
- Все встроенные объекты [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] имеют свойство `prototype`, которое доступно только для чтения.  К прототипу можно добавлять свойства и методы, но невозможно присвоить объекту другой прототип.  Однако пользовательским объектам можно присваивать новый прототип.  
+ Все встроенные [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] объекты имеют `prototype` свойство, которое доступно только для чтения. Свойства и методы могут быть добавлены в прототип, но объект нельзя назначить другому прототипу. Тем не менее определенных пользователем объектов можно назначить новый прототип.  
   
- В списках методов и свойств для каждого встроенного объекта, содержащихся в данном справочнике по языку, указано, какие члены принадлежат прототипу объекта, а какие нет.  
+ Списках методов и свойств для каждого встроенного объекта в этом справочнике по языку указывают, какие из них являются частью прототип объекта, а какие — нет.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]
