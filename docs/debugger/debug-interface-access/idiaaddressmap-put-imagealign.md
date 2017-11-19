@@ -1,52 +1,51 @@
 ---
-title: "IDiaAddressMap::put_imageAlign | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaAddressMap::put_imageAlign - метод"
+title: "IDiaAddressMap::put_imageAlign | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaAddressMap::put_imageAlign method
 ms.assetid: f9ce875d-c263-43e5-a534-f34c37f9866f
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 38856520641ff2ea191e3f712a1f355e841e1aff
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaAddressMap::put_imageAlign
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idiaaddressmapputimagealign"></a>IDiaAddressMap::put_imageAlign
 Задает выравнивание изображения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT put_imageAlign (   
-   DWORD NewVal  
+```C++  
+HRESULT put_imageAlign (   
+   DWORD NewVal  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  NewVal  
- \[in\] новое значение выравнивания образа для исполняемого файла.  
+ [in] Новое значение выравнивания изображения для исполняемого файла.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Загруженные исполняемые файлы изображений \(\) выравниваются по указанным границ памяти.  Это выравнивание может зависеть от текущей системной архитектурой и которым следует компилировать и параметрами времени ссылки.  Выравнивание изображения всегда в диапазоне байта.  Допустимы следующие значения выравнивания образа. 1, 2, 4, 8, 16, 32 и 64 границе байта.  
+## <a name="remarks"></a>Примечания  
+ Изображения (загруженных исполняемых файлов) выравниваются по заданной памяти границы. Выравнивание, это может повлиять текущую архитектуру системы и параметров времени компиляции и связывания. Выравнивание изображения всегда является в байт. Допустимы следующие значения выравнивания для изображений: 1, 2, 4, 8, 16, 32 и 64 байта границы.  
   
- Текущее выравнивание изображения можно получить, вызвав [IDiaAddressMap::get\_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md) метод.  
+ Текущее выравнивание изображения можно получить с помощью вызова [IDiaAddressMap::get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md) метод.  
   
 > [!NOTE]
->  Образ уже загружен к моменту этот метод может быть вызван.  `put_imageAlign` метод обычно используется, когда был перемещен или был изменен способ выравнивания и создается новый.  
+>  В момент вызова этого метода уже загружено изображение. `put_imageAlign` Метод обычно используется, когда изображение перемещены или изменены, и новый выравнивание является обязательным.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [IDiaAddressMap::get\_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)
+ [IDiaAddressMap::get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)

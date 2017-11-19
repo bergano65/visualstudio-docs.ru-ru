@@ -1,69 +1,52 @@
 ---
-title: 'CA2134: Methods must keep consistent transparency when overriding base methods | Microsoft Docs'
+title: "CA2134: Методы должны сохранять согласованную прозрачность при переопределении базовых методов | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- CA2134
+f1_keywords: CA2134
 ms.assetid: 3b17e487-0326-442e-90e1-dc0ba9cdd3f2
-caps.latest.revision: 9
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: d4ef9c4baadcdc6c26906664b24827948de1c5c9
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "9"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: feb33e630322237522c98ff3f803bc44b3fbcc86
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: Methods must keep consistent transparency when overriding base methods
+# <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: методы должны сохранять согласованную прозрачность при переопределении базовых методов
 |||  
 |-|-|  
 |TypeName|MethodsMustOverrideWithConsistentTransparency|  
 |CheckId|CA2134|  
-|Category|Microsoft.Security|  
-|Breaking Change|Breaking|  
+|Категория|Microsoft.Security|  
+|Критическое изменение|Критическое|  
   
-## <a name="cause"></a>Cause  
- This rule fires when a method marked with the <xref:System.Security.SecurityCriticalAttribute> overrides a method that is transparent or marked with the <xref:System.Security.SecuritySafeCriticalAttribute>. The rule also fires when a method that is transparent or marked with the <xref:System.Security.SecuritySafeCriticalAttribute> overrides a method that is marked with a <xref:System.Security.SecurityCriticalAttribute>.  
+## <a name="cause"></a>Причина  
+ Это правило срабатывает, если метод, помеченный атрибутом <xref:System.Security.SecurityCriticalAttribute> переопределяет метод, который является прозрачным или помечены <xref:System.Security.SecuritySafeCriticalAttribute>. Это правило также применяется, когда метод, который является прозрачным или помечены <xref:System.Security.SecuritySafeCriticalAttribute> переопределяет метод, который отмечен атрибутом <xref:System.Security.SecurityCriticalAttribute>.  
   
- The rule is applied when overriding a virtual method or implementing an interface.  
+ Это правило применяется при переопределении виртуального метода или реализации интерфейса.  
   
-## <a name="rule-description"></a>Rule Description  
- This rule fires on attempts to change the security accessibility of a method further up the inheritance chain. For example, if a virtual method in a base class is transparent or safe-critical, then the derived class must override it with a transparent or safe-critical method. Conversely, if the virtual is security critical, the derived class must override it with a security critical method. The same rule applies for implementing interface methods.  
+## <a name="rule-description"></a>Описание правила  
+ Это правило срабатывает при попытках изменить уровень доступности метода вверх по цепочке наследования. Например, если виртуальный метод в базовом классе является прозрачным или критическим, затем производный класс должен переопределять его с прозрачный или безопасный метод. И наоборот Если виртуальный метод является критически важным для безопасности, производный класс должен переопределять его с критический метод безопасности. Это же правило применяется для реализации методов интерфейса.  
   
- Transparency rules are enforced when the code is JIT compiled instead of at runtime, so that the transparency calculation does not have dynamic type information. Therefore, the result of the transparency calculation must be able to be determined solely from the static types being JIT-compiled, regardless of the dynamic type.  
+ Правила прозрачности применяются, когда код JIT-компиляцию, а не во время выполнения, поэтому расчет прозрачности не поддерживает динамические сведения о типе. Таким образом результат вычисления прозрачности необходимо определить исключительно из статических типов, JIT-компиляции, независимо от динамического типа.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, change the transparency of the method that is overriding a virtual method or implementing an interface to match the transparency of the virtual or interface method.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Чтобы устранить нарушение данного правила, измените прозрачность метода, который переопределяет виртуальный метод или реализации интерфейса в соответствии с прозрачностью виртуального метода или метода интерфейса.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress warnings from this rule. Violations of this rule will result in a runtime <xref:System.TypeLoadException> for assemblies that use level 2 transparency.  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ Не следует отключать предупреждения из этого правила. Нарушение этого правила приведет к среде выполнения <xref:System.TypeLoadException> для сборок, использующих прозрачность уровня 2.  
   
-## <a name="examples"></a>Examples  
+## <a name="examples"></a>Примеры  
   
-### <a name="code"></a>Code  
+### <a name="code"></a>Код  
  [!code-csharp[FxCop.Security.CA2134.MethodsMustOverrideWithConsistentTransparency#1](../code-quality/codesnippet/CSharp/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods_1.cs)]  
   
-## <a name="see-also"></a>See Also  
- [Security-Transparent Code, Level 2](http://msdn.microsoft.com/Library/4d05610a-0da6-4f08-acea-d54c9d6143c0)
+## <a name="see-also"></a>См. также  
+ [Прозрачный с точки зрения безопасности код, уровень 2](http://msdn.microsoft.com/Library/4d05610a-0da6-4f08-acea-d54c9d6143c0)

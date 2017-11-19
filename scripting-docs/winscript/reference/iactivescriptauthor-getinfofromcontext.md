@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptAuthor::GetInfoFromContext | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IActiveScriptAuthor::GetInfoFromContext | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptAuthor.GetInfoFromContext
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptAuthor::GetInfoFromContext"
+helpviewer_keywords: IActiveScriptAuthor::GetInfoFromContext
 ms.assetid: 9891b095-6eb5-4473-87c0-c2e5cd2afc1a
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 27c13dbe51bb1150554275b5fbeacd00be2e445f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptAuthor::GetInfoFromContext
-Извлечения сведений о типе и положения привязки для заданного символа в блоке кода.  Это предоставляет сведения для членов IntelliSense, глобальных списков и советы по параметра.  
+# <a name="iactivescriptauthorgetinfofromcontext"></a>IActiveScriptAuthor::GetInfoFromContext
+Возвращает введите сведения и позиций привязки для заданного символа в блок кода. Это дает сведения для элемента, IntelliSense, глобальных списков и подсказки по параметрам.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT GetInfoFromContext(  
@@ -38,64 +41,64 @@ HRESULT GetInfoFromContext(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pszCode`  
- \[in\] адрес строки блока кода, используемой для создания сведений результатов.  
+ [in] Адрес блока строка кода, используемый для формирования результатов сведения.  
   
  `cchCode`  
- \[in\] длина блока кода.  
+ [in] Длина блока кода.  
   
  `ichCurrentPosition`  
- \[in\] позиция символа относительно начала блока.  
+ [in] Позиция символа относительно начала блока.  
   
  `dwListTypesRequested`  
- \[in\] список типа.  Может быть сочетанием следующих значений:  
+ [in] Типы списка, запросу. Может быть сочетанием следующих значений:  
   
 |Константа|Значение|Описание|  
-|---------------|--------------|--------------|  
-|SCRIPT\_CMPL\_NOLIST|0x0000|Нет списка.|  
-|SCRIPT\_CMPL\_MEMBERLIST|0x0001|Список членов.|  
-|SCRIPT\_CMPL\_ENUMLIST|0x0002|Список Перечисления.|  
-|SCRIPT\_CMPL\_PARAMLIST|0x0004|Список параметров метода вызова.|  
-|SCRIPT\_CMPL\_GLOBALLIST|0x0008|Глобальный список.|  
+|--------------|-----------|-----------------|  
+|SCRIPT_CMPL_NOLIST|0x0000|Список отсутствует.|  
+|SCRIPT_CMPL_MEMBERLIST|0x0001|Список членов.|  
+|SCRIPT_CMPL_ENUMLIST|0x0002|Список перечисления.|  
+|SCRIPT_CMPL_PARAMLIST|0x0004|Вызов списка параметров метода.|  
+|SCRIPT_CMPL_GLOBALLIST|0x0008|Глобальный список.|  
   
- Тип обрабатывается как SCRIPT\_CMPL\_GLOBALLIST по умолчанию элемент завершения, который может быть объединяется с помощью оператора " ИЛИ с другими элементами завершения.  Скрипт создание обработчика сначала пытается заполнить сведения о типе для других элементов списка завершения.  Если происходит сбой, то обработчик заполняет для SCRIPT\_CMPL\_GLOBALLIST.  
+ Тип SCRIPT_CMPL_GLOBALLIST обрабатывается как элемент завершения по умолчанию, могут быть объединены с помощью оператора OR с другими элементами завершения. Скрипт создания engine сначала пытается получить информацию о типе для других элементы списков завершения заполнения. В случае неудачи ядро заполняет для SCRIPT_CMPL_GLOBALLIST.  
   
  `pdwListTypesProvided`  
- \[out\] предоставленный тип списка.  
+ [out] Тип списка.  
   
  `pichListAnchorPosition`  
- \[out\] начальный индекс контекста, содержащий текущую позицию.  Начальный индекс относительно начала блока.  
+ [out] Начальный индекс, содержащий позицию текущего контекста. Начальный индекс отсчитывается относительно начала блока.  
   
- Это заполнитьо только при `dwListTypesRequested` включает SCRIPT\_CMPL\_MEMBERLIST, SCRIPT\_CMPL\_ENUMLIST или SCRIPT\_CMPL\_GLOBALLIST.  Для других типов списков, не найдена, результат является неопределенным.  
+ Заполняется, только если `dwListTypesRequested` включает SCRIPT_CMPL_MEMBERLIST, SCRIPT_CMPL_ENUMLIST или SCRIPT_CMPL_GLOBALLIST. Для других типов запрошенный список результат не определен.  
   
  `pichFuncAnchorPosition`  
- \[out\] начальный индекс вызова функции, содержащий текущую позицию.  Начальный индекс относительно начала блока.  
+ [out] Начальный индекс вызова функции, который содержит текущее положение. Начальный индекс отсчитывается относительно начала блока.  
   
- Это заполнитьо, только если контекст, содержащий текущую позицию вызов функции и при `dwListTypesRequested` включает SCRIPT\_CMPL\_PARAMLIST.  В противном случае результат является неопределенным.  
+ Заполняется только в том случае, когда контекст, содержащий текущую позицию, вызов функции и когда `dwListTypesRequested` включает SCRIPT_CMPL_PARAMLIST. В противном случае результат не определен.  
   
  `pmemid`  
- \[out\] MEMBERID функции, как определяется типом в параметре `IProvideMultipleClassInfo``ppunk` ожидания.  
+ [out] MEMBERID в соответствии с определением типа в функции `IProvideMultipleClassInfo``ppunk` выходной параметр.  
   
- Это заполнитьо только при `dwListTypesRequested` включает SCRIPT\_CMPL\_PARAMLIST.  
+ Заполняется, только если `dwListTypesRequested` включает SCRIPT_CMPL_PARAMLIST.  
   
  `piCurrentParameter`  
- \[out\] индекс параметра, содержащий текущую позицию.  Если текущая позиция на имени функции, то возвращается значение \-1.  
+ [out] Индекс параметра, содержащего текущую позицию. Если текущее положение находится на имя функции, возвращается значение -1.  
   
- Значение `piCurrentParameter` заполнитьо только при `dwListTypesRequested` включает SCRIPT\_CMPL\_PARAMLIST.  
+ `piCurrentParameter` Значение заполняется, только если `dwListTypesRequested` включает SCRIPT_CMPL_PARAMLIST.  
   
  `ppunk`  
- Сведения о типе, приведенную в форме объекта `IProvideMultipleClassInfo`.  
+ Сведения о типе, который предоставляется в виде `IProvideMultipleClassInfo` объекта.  
   
-## Возвращаемое значение  
- Объект `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
   
-## См. также  
- <xref:Microsoft.VisualStudio.OLE.Interop.IProvideMultipleClassInfo>   
+## <a name="see-also"></a>См. также  
+ [Интерфейс IProvideMultipleClassInfo](https://msdn.microsoft.com/library/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo.aspx)   
  [Интерфейс IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)

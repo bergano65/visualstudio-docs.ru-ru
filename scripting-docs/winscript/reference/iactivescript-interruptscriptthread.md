@@ -1,27 +1,30 @@
 ---
-title: "IActiveScript::InterruptScriptThread | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IActiveScript::InterruptScriptThread | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScript.InterruptScriptThread
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScript_InterruptScriptThread"
+helpviewer_keywords: IActiveScript_InterruptScriptThread
 ms.assetid: 2304d035-6d39-4811-acd3-8a9640fdbef6
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ad717ee950dda4f0f0d7a14292f0f5f150ab4973
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScript::InterruptScriptThread
-Прерывает выполнение выполняющегося потока скрипта \(приемника событий, немедленного выполнения или вызова макросов\).  Этот метод можно использовать для выполнения скриптов, который вставлен \(например, в бесконечном цикле\).  Он может быть вызван из потоков, не относящихся к базовому без привести к появлению выноски отличные от причины для размещения объектов или методу [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md).  
+# <a name="iactivescriptinterruptscriptthread"></a>IActiveScript::InterruptScriptThread
+Прерывает выполнение выполняющийся поток скрипта (приемник событий, немедленное выполнение или вызов макроса). Этот метод можно использовать для завершения сценария (например, из бесконечного цикла). Может вызываться из потоков, отличной от base не входили в системе счисления с основанием выноски объектов узла или [iactivescriptsite —](../../winscript/reference/iactivescriptsite.md) метод.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT InterruptScriptThread(  
@@ -31,36 +34,36 @@ HRESULT InterruptScriptThread(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `stidThread`  
- \[in\] идентификатор потока прерван или следующего специального идентификатора потока оценка:  
+ [in] Идентификатор потока для прерывания или один из следующих значений идентификаторов специальных потоков:  
   
 |Значение|Значение|  
-|--------------|--------------|  
-|SCRIPTTHREADID\_ALL|Все потоки.  Прерывание применитьо ко всему методов сценария выполняется в данный момент.  Обратите внимание, что если вызывающий объект не будет запрашивать, что скрипт отключен, следующий код сценария в скрипт причин события, которое будет запущен повторно путем вызова метода [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) с набором SCRIPTSTATE\_DISCONNECTED или пометить SCRIPTSTATE\_INITIALIZED.|  
-|SCRIPTTHREADID\_BASE|Базовый поток. то есть поток, в котором был создан экземпляр обработчика сценариев.|  
-|SCRIPTTHREADID\_CURRENT|Выполняющийся в данный момент поток.|  
+|-----------|-------------|  
+|SCRIPTTHREADID_ALL|Все потоки. Прерывание применяется ко всем методам скрипт, выполняющиеся в настоящее время. Обратите внимание, что если вызывающий объект запрашивает отключен скрипт, далее сценариев событие вызывает код скрипта для повторного запуска путем вызова [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) метод с SCRIPTSTATE_DISCONNECTED или Установить флаг SCRIPTSTATE_INITIALIZED.|  
+|SCRIPTTHREADID_BASE|Базовый поток; то есть был создан поток, в котором модуль создания скриптов.|  
+|SCRIPTTHREADID_CURRENT|Текущий выполняемый поток.|  
   
  `pexcepinfo`  
- \[in\] адрес структуры `EXCEPINFO`, содержащий сведения об ошибке, которое должно быть отмечено в прерватьому скрипту.  
+ [in] Адрес `EXCEPINFO` структуру, содержащую сведения об ошибке, которая должна быть зарегистрирована в скрипте прерванных.  
   
  `dwFlags`  
- \[in\] флаги, связанные с помощью параметра условие.  Может принимать одно из следующих значений.  
+ [in] Параметр флаги, связанные с прерывания. Допустимо одно из следующих значений.  
   
 |Значение|Значение|  
-|--------------|--------------|  
-|SCRIPTINTERRUPT\_DEBUG|Если поддерживается, введите отладчик обработчика скриптов на текущий этап выполнения скрипта.|  
-|SCRIPTINTERRUPT\_RAISEEXCEPTION|Если поддерживается языком обработчика скриптов, скрипту обработки исключения.  В противном случае метод скрипта прерывается и код ошибки возвращается вызывающему коду. то есть средство вызова источника событий или макроса.|  
+|-----------|-------------|  
+|SCRIPTINTERRUPT_DEBUG|Если поддерживается, введите отладчика обработчика скриптов в текущей точке выполнения скрипта.|  
+|SCRIPTINTERRUPT_RAISEEXCEPTION|Если поддерживается языком обработчика скриптов, пусть скрипт обрабатывает исключение. В противном случае метод сценария прерывается и код ошибки возвращается в вызывающий объект; то есть средство событий источника или макрос вызова.|  
   
-## Возвращаемое значение  
- Возвращать одно из следующих значений:  
+## <a name="return-value"></a>Возвращаемое значение  
+ Возвращает одно из следующих значений:  
   
 |Возвращаемое значение|Значение|  
-|---------------------------|--------------|  
-|`S_OK`|Успех.|  
-|`E_INVALIDARG`|Аргумент был недопустимым.|  
-|`E_POINTER`|Недопустимый указатель был определен.|  
-|`E_UNEXPECTED`|Вызов не ожидался \(например, обработчик скриптов еще не был загружен или не был инициализирован\).|  
+|------------------|-------------|  
+|`S_OK`|Выполнено.|  
+|`E_INVALIDARG`|Недопустимый аргумент.|  
+|`E_POINTER`|Указан недопустимый указатель.|  
+|`E_UNEXPECTED`|Вызов не ожидалось (например, обработчик сценариев еще не загрузки или инициализации).|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IActiveScript](../../winscript/reference/iactivescript.md)

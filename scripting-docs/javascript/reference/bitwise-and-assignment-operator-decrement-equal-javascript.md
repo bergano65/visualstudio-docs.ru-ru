@@ -1,59 +1,61 @@
 ---
-title: "Оператор присваивания побитового И (&amp;=) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "&="
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "&= - оператор"
-  - "операторы присваивания, побитовые [JavaScript]"
-  - "AND - оператор"
-  - "побитовые операторы, оператор И"
+title: "Оператор присваивания побитового и (&amp;=) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: '&='
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- '&= operator'
+- assignment operators, bitwise [JavaScript]
+- AND operator
+- bitwise operators, AND operator
 ms.assetid: e7e2eabb-4fc1-4fdc-9dd8-1e6d715371fa
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: dfd2a77e66296cafc6c8403570f0536e1333e081
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Оператор присваивания побитового И (&amp;=) (JavaScript)
-Устанавливает результат операции побитового И для значения переменной и значения выражения.  Переменная и выражение обрабатываются как 32\-разрядные целые числа.  
+# <a name="bitwise-and-assignment-operator-amp-javascript"></a>Оператор присваивания побитового и (&amp;=) (JavaScript)
+Задает результат поразрядной операции AND для значения переменной и значения выражения. Переменную и выражение обрабатываются как 32-разрядных целых чисел.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 result &= expression  
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `result`  
  Любая переменная.  
   
  `expression`  
- Произвольное выражение.  
+ Любое выражение.  
   
-## Заметки  
- Использование данного оператора эквивалентно следующему выражению:  
+## <a name="remarks"></a>Примечания  
+ Использование этого оператора является эквивалентно следующему выражению:  
   
-```javascript  
+```JavaScript  
 result = result & expression  
 ```  
   
- Оператор [Оператор побитового И \(&\)](../../javascript/reference/bitwise-and-operator-decrement-javascript.md) рассматривает двоичное представление значений `result` и `expression` и выполняет над ними операцию побитового И.  Выходные данные этой операции ведут себя следующим образом:  
+ [Оператор побитового и (&)](../../javascript/reference/bitwise-and-operator-decrement-javascript.md) рассматривает двоичное представление значений `result` и `expression` и выполняет побитовую операцию и над ними. Выходные данные этой операции ведет себя следующим образом:  
   
-```javascript  
+```JavaScript  
 // 9 is 00000000000000000000000000001001  
 var expr1 = 9;  
   
@@ -64,15 +66,14 @@ var expr2 = 5;
 expr1 &= expr2;  
   
 document.write(expr1);  
-  
 ```  
   
- Если оба выражения содержат 1 в какой\-либо позиции, результат также содержит 1 в этой позиции.  В противном случае результат в этой позиции содержит 0.  
+ Любое время, оба выражения имеют значение 1 в позиции, результат содержит 1 в этой позиции. В противном случае результат имеет значение 0 в этой позиции.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## См. также  
- [Оператор побитового И \(&\)](../../javascript/reference/bitwise-and-operator-decrement-javascript.md)   
+## <a name="see-also"></a>См. также  
+ [Оператор побитового и (&)](../../javascript/reference/bitwise-and-operator-decrement-javascript.md)   
  [Приоритет операторов](../../javascript/operator-subtractprecedence-javascript.md)   
- [Сводный список операторов \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Сводный список операторов (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

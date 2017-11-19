@@ -1,28 +1,29 @@
 ---
-title: "Источники событий (SDK для Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "отладка [пакет SDK для отладки], источники событий"
+title: "Источники событий (Visual Studio SDK) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], event sources
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: dcd2b8457854817f84272420a42872a1b947e6c2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Источники событий (SDK для Visual Studio)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-2 Источника событий: отладчик \(DE\) и сеанс отладки \(SDM manager\).  События, передаваемые от DE имеют обработчик, отличных от null, пока события, передаваемые от SDM имеют ПУСТОЕ обработчик.  
+# <a name="event-sources-visual-studio-sdk"></a>Источники событий (SDK для Visual Studio)
+Существует два источника событий: модуль отладки (DE) и сеанс отладки manager (SDM). События, отправляемые из Развернутой иметь механизм отличное от NULL, тогда как события, отправляемые из SDM NULL engine.  
   
-## Пример  
- Следующий пример показывает, как отправить IDebugProgramCreateEvent2 из DE к SDM.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как отправить **IDebugProgramCreateEvent2** из DE для SDM.  
   
 ```  
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();  
@@ -73,5 +74,5 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
   
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Отправка событий](../../extensibility/debugger/sending-events.md)

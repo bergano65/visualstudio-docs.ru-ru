@@ -1,44 +1,45 @@
 ---
-title: "CA1724. Имена типов не должны совпадать с именами пространства имен | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "TypeNamesShouldNotMatchNamespaces"
-  - "CA1724"
-helpviewer_keywords: 
-  - "TypeNamesShouldNotMatchNamespaces"
-  - "CA1724"
+title: "CA1724: Имена типов не должны совпадать с пространствами имен | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- TypeNamesShouldNotMatchNamespaces
+- CA1724
+helpviewer_keywords:
+- TypeNamesShouldNotMatchNamespaces
+- CA1724
 ms.assetid: 329af3b5-5600-4101-831d-531ab3eb7060
-caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 556fd9eee1bc453d4f9782459050367e18a3193b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# CA1724. Имена типов не должны совпадать с именами пространства имен
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724. Имена типов не должны совпадать с именами пространства имен
 |||  
 |-|-|  
 |TypeName|TypeNamesShouldNotMatchNamespaces|  
 |CheckId|CA1724|  
 |Категория|Microsoft.Naming|  
-|Критическое изменение|Критическое изменение|  
+|Критическое изменение|Критическое|  
   
-## Причина  
- Имя типа совпадает с пространством имен [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] при сравнении без учета регистра.  
+## <a name="cause"></a>Причина  
+ Имя типа соответствует [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] имена пространств имен при сравнении без учета регистра.  
   
-## Описание правила  
- Имена типов не должны совпадать с именами пространств имен, определенными в библиотеке классов [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  Нарушение этого правила приводит к уменьшению функциональности библиотеки.  
+## <a name="rule-description"></a>Описание правила  
+ Имена типов не должны совпадать с именами пространств имен, определенными в библиотеке классов [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Нарушение этого правила приводит к уменьшению функциональности библиотеки.  
   
-## Устранение нарушений  
- Выберите имя типа, которое не совпадает ни с одним из пространств имен библиотеки класса [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Выберите имя типа, которое не соответствует имени [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] имен библиотеки классов.  
   
-## Отключение предупреждений  
- При разработке нового кода случаи, когда необходимо отключать предупреждения о нарушении данного правила, неизвестны.  Прежде чем отключить предупреждения, тщательно продумать, как пользователи библиотеки могут быть запутаны одинаковым именем.  В случае поставки библиотек подобные предупреждения, возможно, необходимо отключать.
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ При разработке новых проектов нет известной выполняется сценарий, где необходимо подавить предупреждение из этого правила. Прежде чем можно подавить предупреждение, учитывайте, как пользователи библиотеки могут быть в замешательстве с соответствующим именем. При поставке библиотек может потребоваться отключить предупреждение из этого правила.

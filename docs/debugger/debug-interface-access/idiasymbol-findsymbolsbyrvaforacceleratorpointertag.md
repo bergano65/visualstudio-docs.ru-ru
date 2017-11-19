@@ -1,52 +1,52 @@
 ---
-title: "IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: "IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: 024ccd78-5867-4ca7-bc26-548758e9ac53
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f12417323d0553fc6dd9ca33c65c566229454c99
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Если соответствующее значение тега, этот метод возвращает перечисление символов, содержащихся в этой функции заглушки для заданного относительного виртуальному адресу.  
+# <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
+Задано значение соответствующего тега, этот метод возвращает перечисление символов, содержащихся в этой функции заглушки указанного относительного виртуального адреса.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp  
+```C++  
 HRESULT findSymbolsByRVAForAcceleratorPointerTag (   
    DWORD             tagValue,  
    DWORD             rva,  
    IDiaEnumSymbols** ppResult);  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `tagValue`  
- \[in\] значение тега указателя, для которого pointee записывает символ найден.  
+ [in] Значение тега указатель, для которого находятся pointee символьные записи.  
   
  `rva`  
- \[in\] rva, которое используется для фильтрации символов, которые соответствуют переменной pointee с указанным значением тега.  
+ [in] Rva, используемый для фильтрации символы, которые соответствуют pointee переменную с указанным значением тега.  
   
  `ppResult`  
- \[out\] указатель на указатель интерфейса `IDiaEnumSymbols`, который инициализируется с результатом.  
+ [out] Указатель на `IDiaEnumSymbols` указатель интерфейса, который инициализируется с результатом.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_ОК`; в противном случае передачи `S_FALSE` или код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
-## Заметки  
- Этот метод следует вызывать только в интерфейсе `IDiaSymbol`, который соответствует функции заглушки сочетаний клавиш.  
+## <a name="remarks"></a>Примечания  
+ Этот метод вызывается только в `IDiaSymbol` интерфейс, который соответствует функции заглушки сочетаний клавиш.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

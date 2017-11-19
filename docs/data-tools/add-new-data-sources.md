@@ -1,121 +1,100 @@
 ---
-title: Add new data sources | Microsoft Docs
+title: "Добавить новый источник данных | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.datasource.datasourcefieldspicker
-dev_langs:
-- VB
-- CSharp
-- C++
-- aspx
+f1_keywords: vs.datasource.datasourcefieldspicker
 helpviewer_keywords:
 - data [Visual Studio], data sources
 - data sources
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
-caps.latest.revision: 56
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "56"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: b8e9d2a517e673cd7f44f1a392d6179f1c6b0801
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 0c83367d383ab72194e5f83609b0f93d8602fdcd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="add-new-data-sources"></a>Add new data sources
-In the context of .NET data tools in Visual Studio, the term *data source* refers to .NET objects that connect to a data store and expose the data to a .NET application. The Visual Studio designers can consume the output of the data source to generate the boilerplate code that binds the data to forms when you drag and drop database objects from the **Data Sources** window. This kind of data source can be:  
+# <a name="add-new-data-sources"></a>Добавление новых источников данных
+В контексте данных средств .NET в Visual Studio термин *источника данных* ссылается на объект .NET, подключиться к хранилищу данных и предоставления данных в приложении .NET. В конструкторах Visual Studio можно получать выходные данные источника данных для формирования стандартный код, который привязывает данные формы, при перетаскивании объектов базы данных из **источники данных** окна. Этот тип источника данных может быть:  
   
--   A class in an Entity Framework model that is associated with some kind of database.  
+-   Класс в модели Entity Framework, которая связана с каким-либо базы данных.  
   
--   A dataset that is associated with some kind of database.  
+-   Набор данных, который связан с каким-либо базы данных.  
   
--   A class that represents a network service such as a Windows Communication Foundation (WCF) data service or a REST service.  
+-   Класс, представляющий сетевой службы, такие как службы Windows Communication Foundation (WCF) данных или к службе REST.  
   
--   A class that represents a SharePoint service.  
+-   Класс, представляющий службу SharePoint.  
   
--   A class or collection in your solution.  
+-   Класс или коллекции в решении.  
   
 > [!NOTE]
->  If you are not using data-binding features, datasets, Entity Framework, LINQ to SQL, WCF, or SharePoint, the concept of a "data source" does not apply. Just connect directly to the database by using the SQLCommand objects and communicate directly with the database.  
+>  Если не используются функции привязки данных, наборы данных, Entity Framework, LINQ to SQL, WCF или на сервере SharePoint, понятие «data source» не применяется. Только подключения к базе данных объекты SQLCommand и взаимодействовать непосредственно с базой данных.  
   
- You create and edit data sources by using the **Data Source Configuration Wizard** in a Windows Forms or Windows Presentation Foundation application. For Entity Framework, first create your entity classes, and then start the wizard by selecting **Project** > **Add New Data Source** (described in more detail later in this article).  
+ Создание и изменение источников данных с помощью **мастер настройки источника данных** в приложении Windows Forms или Windows Presentation Foundation. Для Entity Framework, сначала создайте классы сущностей, а затем запустите мастер, выбрав **проекта** > **добавить новый источник данных** (более подробно далее в этой статье).  
   
- ![Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png "Data Source Configuration Wizard")  
+ ![Мастер настройки источника данных](../data-tools/media/data-source-configuration-wizard.png "мастера настройки источника данных")  
   
- After you create a data source, it appears in the **Data Sources** tool window (Shift+Alt+D or **View** > **Other Windows** > **Data Source**). You can drag a data source from the **Data Sources** window onto a form design surface or control. This causes boilerplate code to be generated—code that displays the data that originates in the data store to the user. The following illustration shows a dataset that has been dropped onto a Windows form. If you selected F5 on the application, the data from the underlying database would appear in the form's controls.  
+ После создания источника данных, он отображается в **источники данных** окно инструментов (Shift + Alt + D или **представление** > **другие окна**  >  **Источника данных**). Можно перетаскивать из источника данных **источники данных** окна на поверхность разработки формы или элемента управления. В результате создания стандартного кода — код, отображающий данные, возникающая в хранилище данных для пользователя. Ниже показан набор данных, была удалена на форму Windows. Если вы выбрали F5 на приложения, данные из базы данных будет выглядеть в элементах управления формы.  
   
- ![Data Source drag operation](../data-tools/media/raddata-data-source-drag-operation.png "raddata Data Source drag operation")  
+ ![Операции перетаскивания источника данных](../data-tools/media/raddata-data-source-drag-operation.png "raddata источника данных операции перетаскивания")  
   
-## <a name="data-source-for-a-database-or-a-database-file"></a>Data source for a database or a database file  
+## <a name="data-source-for-a-database-or-a-database-file"></a>Источник данных для базы данных или файла базы данных  
   
-### <a name="dataset"></a>Dataset  
- To create a dataset as a data source, run the **Data Source Configuration Wizard** (**Project** > **Add New Data Source**) and choose the **Database** data-source type. Follow the prompts to specify a new or existing database connection, or a database file.  
+### <a name="dataset"></a>Набор данных  
+ Чтобы создать набор данных в качестве источника данных, выполните **мастер настройки источника данных** (**проекта** > **добавить новый источник данных**) и выберите  **База данных** типа источника данных. Следуйте инструкциям на экране, чтобы указать подключение к новой или существующей базе данных или файла базы данных.  
   
-### <a name="entity-classes"></a>Entity classes  
- To create an Entity Framework model as a data source, first run the **Entity Data Model Wizard** to create the entity classes (**Project** > **Add New Item** > **ADO.NET Entity Data Model**).  
+### <a name="entity-classes"></a>Классы сущностей  
+ Чтобы создать модель Entity Framework в качестве источника данных, сначала выполните **мастер моделей EDM** для создания классов сущностей (**проекта** > **Добавление нового элемента**  >  **Модели EDM ADO.NET**).  
   
- ![New Entity Framework model project item](../data-tools/media/raddata-new-entity-framework-model-project-item.png "raddata New Entity Framework model project item")  
+ ![Новый элемент проекта модели Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png "элемент проекта модели raddata новый Entity Framework")  
   
- Choose the method by which you want to generate the model.  
+ Выберите метод, с помощью которого вы хотите создать модель.  
   
- ![Entity Data Model Wizard](../data-tools/media/raddata-entity-data-model-wizard.png "raddata Entity Data Model Wizard")  
+ ![Мастер моделей EDM](../data-tools/media/raddata-entity-data-model-wizard.png "raddata мастер моделей EDM")  
   
- Add the model as a data source. The classes that were generated appear in the **Data Source Configuration Wizard** when you choose the **Objects** category.  
+ Добавьте модель в качестве источника данных. Отображаются классы, которые были созданы в **мастер настройки источника данных** при выборе **объектов** категории.  
   
- ![Data Source Configuration Wizard with Entity Classes](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png "raddata Data Source Configuration Wizard with Entity Classes")  
+ ![Мастер настройки источника данных с классами сущностей](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png "raddata мастер настройки источника данных с классами сущностей")  
   
-## <a name="data-source-for-a-service"></a>Data source for a service  
- To create a data source from a service, run the **Data Source Configuration Wizard** and choose the **Service** data-source type. This is really just a shortcut to the **Add Service Reference** dialog box, which you can also access by right-clicking the project in **Solution Explorer** and selecting **Add service reference**.  
+## <a name="data-source-for-a-service"></a>Источник данных для службы  
+ Чтобы создать источник данных из службы, запустите **мастер настройки источника данных** и выберите **службы** типа источника данных. Это просто ярлык для **добавить ссылку на службу** диалоговое окно можно также открыть, щелкнув правой кнопкой мыши проект в **обозревателе решений** и выбрав **Добавление ссылки на службу** .  
   
- When you create a data source from a service, Visual Studio adds a service reference to your project. Visual Studio also creates proxy objects that correspond to the objects that the service returns. For example, a service that returns a dataset is represented in your project as a dataset; a service that returns a specific type is represented in your project as the type returned.  
+ При создании источника данных из службы Visual Studio добавляет ссылки на службу в проект. Visual Studio также создает прокси-объекты, которые соответствуют объектам, которые служба возвращает. Например службы, которая возвращает набор данных, представляется в проекте как набор данных; Служба, которая возвращает определенный тип, представляется в проекте как тип возвращается.  
   
- You can create a data source from the following types of services:  
+ Можно создать источник данных из следующих типов служб:  
   
--   WCF Data Services. For more information, see [Overview](/dotnet/framework/data/wcf/wcf-data-services-overview).  
+-   Службы данных WCF. Дополнительные сведения см. в разделе [Обзор](/dotnet/framework/data/wcf/wcf-data-services-overview).  
   
--   WCF data services. For more information, see [Windows Communication Foundation Services and WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
+-   Службы WCF. Дополнительные сведения см. в разделе [служб Windows Communication Foundation и службы данных WCF в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
   
--   Web services.  
+-   Веб-службы.  
   
     > [!NOTE]
-    >  The items that appear in the **Data Sources** window are dependent on the data that the service returns. Some services might not provide enough information for the **Data Source Configuration Wizard** to create bindable objects. For example, if the service returns an untyped dataset, no items will appear in the **Data Sources** window when you complete the wizard. This is because untyped datasets do not provide a schema, and therefore the wizard does not have enough information to create the data source.  
+    >  Элементы, отображаемые в **источники данных** , зависят от данных, то служба возвращает. Некоторые службы могут не предоставлять достаточно информации для **мастер настройки источника данных** создал объекты. Например, если служба возвращает нетипизированный набор данных, элементы не будут отображаться в **источники данных** окно при завершении работы мастера. Это потому, что нетипизированные наборы данных не предоставляют схему, и поэтому мастер не имеет достаточных сведений для создания источника данных.  
   
-## <a name="data-source-for-an-object"></a>Data source for an object  
- You can create a data source from any object that exposes one or more public properties by running the **Data Source Configuration Wizard** and then selecting the **Object** data-source type. All public properties of an object are displayed in the **Data Sources** window.   If you are using Entity Framework and have generated a model, this is where you find the entity classes that will be the data sources for your application.  
+## <a name="data-source-for-an-object"></a>Источник данных для объекта  
+ Можно создать источник данных из любого объекта, который предоставляет один или несколько общих служб, выполнив **мастер настройки источника данных** и выбрав **объект** типа источника данных. Все открытые свойства объекта отображаются в **источники данных** окна.   Если используется Entity Framework и создания модели, это расположение классы сущностей, которые будут источники данных для приложения.  
   
- On the **Select the Data Objects** page, expand the nodes in the tree view to locate the objects that you want to bind to. The tree view contains nodes for your project and for assemblies and other projects that are referenced by your project.  
+ На **Выбор объектов данных** разверните узлы в дереве, чтобы найти объекты, которые необходимо привязать к. Представление дерева содержит узлы для проекта и сборки и другие проекты, на которые ссылается проект.  
   
- If you want to bind to an object in an assembly or project that does not appear in the tree view, click **Add Reference** and use the **Add Reference Dialog Box** to add a reference to the assembly or project. After you add the reference, the assembly or project is added to the tree view.  
-  
-> [!NOTE]
->  You may need to build the project that contains your objects before the objects appear in the tree view.  
+ Если вы хотите привязать к объекту в сборку или проект, который не отображается в представлении в виде дерева, щелкните **добавить ссылку** и использовать **ссылка диалоговое окно Добавление** для добавления ссылки на сборку или проект. После добавления ссылки сборка или проект добавляется к представлению дерева.  
   
 > [!NOTE]
->  To support drag-and-drop data binding, objects that implement the <xref:System.ComponentModel.ITypedList> or <xref:System.ComponentModel.IListSource> interface must have a default constructor. Otherwise, Visual Studio cannot instantiate the data-source object, and it will display an error when you drag the item to the design surface.  
+>  Необходимо построить проект, который содержит объекты, объекты отображаются в представлении в виде дерева.  
   
-## <a name="data-source-for-a-sharepoint-list"></a>Data source for a SharePoint list  
- You can create a data source from a SharePoint list by running the **Data Source Configuration Wizard** and selecting the **SharePoint** data-source type. SharePoint exposes data through [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], so creating a SharePoint data source is the same as creating a data source from a service. Selecting the **SharePoint** item in the **Data Source Configuration Wizard** opens the **Add Service Reference** dialog box, where you connect to the SharePoint data service by pointing to the SharePoint server.  This requires the SharePoint SDK.  
+> [!NOTE]
+>  Для поддержки привязки данных и перетащите объекты, реализующие <xref:System.ComponentModel.ITypedList> или <xref:System.ComponentModel.IListSource> интерфейс должен иметь конструктор по умолчанию. В противном случае Visual Studio не удается создать экземпляр объекта источника данных и отобразит ошибку при перетаскивании элемента в область конструктора.  
   
-## <a name="see-also"></a>See Also  
- [Visual Studio data tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+## <a name="data-source-for-a-sharepoint-list"></a>Источник данных для списка SharePoint  
+ Можно создать источник данных из списка SharePoint, запустив **мастер настройки источника данных** и выбрав **SharePoint** типа источника данных. SharePoint предоставляет данные через [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], поэтому создание источника данных SharePoint является таким же, как создать источник данных из службы. При выборе **SharePoint** элемент **мастер настройки источника данных** открывает **добавить ссылку на службу** диалоговое окно, где можно подключиться к службе данных SharePoint Наведите указатель на сервере SharePoint.  Для этого пакет SDK для SharePoint.  
+  
+## <a name="see-also"></a>См. также  
+ [Visual Studio Data Tools для .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

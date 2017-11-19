@@ -1,41 +1,42 @@
 ---
-title: "CA1000: не объявляйте статические элементы в универсальных типах | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1000"
-  - "DoNotDeclareStaticMembersOnGenericTypes"
-helpviewer_keywords: 
-  - "CA1000"
-  - "DoNotDeclareStaticMembersOnGenericTypes"
+title: "CA1000: Не объявляйте статические элементы в универсальных типах | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1000
+- DoNotDeclareStaticMembersOnGenericTypes
+helpviewer_keywords:
+- DoNotDeclareStaticMembersOnGenericTypes
+- CA1000
 ms.assetid: 5c0da594-f8d0-4f40-953d-56bf7fbd2087
-caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 24d46fc6817f4d13ea5502ada707e2abbcdbfda9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# CA1000: не объявляйте статические элементы в универсальных типах
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1000-do-not-declare-static-members-on-generic-types"></a>CA1000: не объявляйте статические элементы в универсальных типах
 |||  
 |-|-|  
 |TypeName|DoNotDeclareStaticMembersOnGenericTypes|  
 |CheckId|CA1000|  
 |Категория|Microsoft.Design|  
-|Критическое изменение|Критическое изменение|  
+|Критическое изменение|Критическое|  
   
-## Причина  
- Видимый снаружи универсальный тип содержит элемент с модификатором `static` \(`Shared` в Visual Basic\).  
+## <a name="cause"></a>Причина  
+ Видимый извне тип универсального содержит `static` (`Shared` в Visual Basic) элемент.  
   
-## Описание правила  
- При вызове метода универсального типа с модификатором `static` для типа нужно указать аргумент типа.  При вызове универсального экземпляра элемента, не поддерживающего вывод типа, для элемента нужно указать аргумент типа.  Синтаксис для аргумента типа различается в этих двух случаях, его легко перепутать, как показано в следующих вызовах:  
+## <a name="rule-description"></a>Описание правила  
+ Когда `static` вызывается член универсального типа, аргумент типа должен быть указан для типа. При вызове универсального экземпляра элемента, не поддерживающего вывод типа, для элемента нужно указать аргумент типа. Синтаксис для определения аргумента типа в этих двух случаях различен и его легко перепутать, как показано в следующих вызовах:  
   
 ```vb  
 ' Shared method in a generic type.  
@@ -45,7 +46,7 @@ GenericType(Of Integer).SharedMethod()
 someObject.GenericMethod(Of Integer)()  
 ```  
   
-```c#  
+```csharp  
 // Static method in a generic type.  
 GenericType<int>.StaticMethod();  
   
@@ -53,28 +54,28 @@ GenericType<int>.StaticMethod();
 someObject.GenericMethod<int>();  
 ```  
   
- В общем случае следует избегать заблаговременного объявления, чтобы не при вызове элемента не требовалось указывать аргумент типа.  В результате синтаксис вызова элемента для универсальных типов не будет отличаться от синтаксиса для неуниверсальных типов.  Для получения дополнительной информации см. [CA1004: универсальные методы должны предоставлять параметр типа](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md).  
+ Как правило оба предыдущих объявлений следует избегать, чтобы аргумент типа не должны быть указаны при вызове члена. В результате синтаксис вызова универсальных типов, которые ничем не отличается от синтаксиса для неуниверсальных элемента. Дополнительные сведения см. в разделе [CA1004: универсальные методы должны предоставлять параметр типа](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md).  
   
-## Устранение нарушений  
- Чтобы устранить нарушение этого правила, удалите статический элемент или измените его, сделав его элементов экземпляра.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Чтобы устранить нарушение данного правила, удалите статический элемент или измените его на член экземпляра.  
   
-## Отключение предупреждений  
- Для этого правила отключать вывод предупреждений не следует.  Использование универсальных типов в синтаксисе, который легко понимать и использовать, сокращает время, необходимое на обучение, и улучшает скорость адаптации новых библиотек.  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ Для этого правила отключать вывод предупреждений не следует. Использование универсальных типов в синтаксисе, который легко понять и использовать, сокращает время, необходимое для обучения и ускоряет адаптацию новых библиотек.  
   
-## Связанные правила  
+## <a name="related-rules"></a>Связанные правила  
  [CA1005: не используйте слишком много параметров в универсальных типах](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)  
   
  [CA1010: коллекции должны реализовывать универсальный интерфейс](../code-quality/ca1010-collections-should-implement-generic-interface.md)  
   
- [CA1002: не следует раскрывать универсальные списки](../Topic/CA1002:%20Do%20not%20expose%20generic%20lists.md)  
+ [CA1002: не следует раскрывать универсальные списки](../code-quality/ca1002-do-not-expose-generic-lists.md)  
   
  [CA1006: не вкладывайте универсальные типы в сигнатуры членов](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)  
   
  [CA1004: универсальные методы должны предоставлять параметр типа](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)  
   
- [CA1003: используйте экземпляры обработчика универсальных событий](../Topic/CA1003:%20Use%20generic%20event%20handler%20instances.md)  
+ [CA1003: используйте экземпляры обработчика универсальных событий](../code-quality/ca1003-use-generic-event-handler-instances.md)  
   
- [CA1007: используйте универсальные методы, если это уместно](../code-quality/ca1007-use-generics-where-appropriate.md)  
+ [CA1007: используйте универсальные объекты, если это уместно](../code-quality/ca1007-use-generics-where-appropriate.md)  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Универсальные шаблоны](/dotnet/csharp/programming-guide/generics/index)

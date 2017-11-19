@@ -1,11 +1,10 @@
 ---
-title: 'CA1045: Do not pass types by reference | Microsoft Docs'
+title: "CA1045: Не передавайте типы по ссылке | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,91 +14,76 @@ helpviewer_keywords:
 - CA1045
 - DoNotPassTypesByReference
 ms.assetid: bcc3900a-e092-4bb8-896f-cb83f6289968
-caps.latest.revision: 18
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 7c067a3eddf961e5b970619ab356ee87a041807f
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 340fcf2994e7f013f8d23ccb291e3ceb55510348
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: Do not pass types by reference
+# <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: не передавайте типы по ссылке
 |||  
 |-|-|  
 |TypeName|DoNotPassTypesByReference|  
 |CheckId|CA1045|  
-|Category|Microsoft.Design|  
-|Breaking Change|Breaking|  
+|Категория|Microsoft.Design|  
+|Критическое изменение|Критическое|  
   
-## <a name="cause"></a>Cause  
- A public or protected method in a public type has a `ref` parameter that takes a primitive type, a reference type, or a value type that is not one of the built-in types.  
+## <a name="cause"></a>Причина  
+ Открытый или защищенный метод в открытом типе имеет `ref` параметр, принимающий тип-примитив, ссылочный тип или тип значения не является одним из встроенных типов.  
   
-## <a name="rule-description"></a>Rule Description  
- Passing types by reference (using `out` or `ref`) requires experience with pointers, understanding how value types and reference types differ, and handling methods that have multiple return values. Also, the difference between `out` and `ref` parameters is not widely understood.  
+## <a name="rule-description"></a>Описание правила  
+ Для реализации передачи типов по ссылке (с помощью `out` или `ref`) требуется опыт работы с указателями, понимание отличия между типами значения и ссылочными типами и умение работать с методами с несколькими возвращаемыми значениями. Кроме того, разница между `out` и `ref` параметры далеко не все понимают.  
   
- When a reference type is passed "by reference," the method intends to use the parameter to return a different instance of the object. (Passing a reference type by reference is also known as using a double pointer, pointer to a pointer, or double indirection.) Using the default calling convention, which is pass "by value," a parameter that takes a reference type already receives a pointer to the object. The pointer, not the object to which it points, is passed by value. Passing by value means that the method cannot change the pointer to have it point to a new instance of the reference type, but can change the contents of the object to which it points. For most applications this is sufficient and yields the behavior that you want.  
+ Если ссылочный тип передается «по ссылке», метод предполагает использовать параметр для возвращения другого экземпляра объекта. (Передача ссылочного типа по ссылке также известен как с помощью двойного указателя, указателя на указатель или двойного косвенного обращения.) По умолчанию, соглашение о вызовах, который используется передача «по значению», параметр, принимающий ссылочный тип, уже получает указатель на объект. Указатель, а не объект, на который он указывает, передается по значению. Передача по значению, означает, что метод не может изменить указатель, чтобы он указывал на новый экземпляр ссылки на тип, но можно изменить содержимое объекта, на который он указывает. Для большинства приложений достаточно и обеспечивает желаемое поведение.  
   
- If a method must return a different instance, use the return value of the method to accomplish this. See the <xref:System.String?displayProperty=fullName> class for a variety of methods that operate on strings and return a new instance of a string. By using this model, it is left to the caller to decide whether the original object is preserved.  
+ Если метод должен возвращать другой экземпляр, используйте возвращаемое значение метода для выполнения этой задачи. В разделе <xref:System.String?displayProperty=fullName> класс для различных методов, которые обрабатывают строки и возвращают новый экземпляр строки. С помощью этой модели, она останется вызывающей стороне, чтобы решить, сохраняются ли исходный объект.  
   
- Although return values are commonplace and heavily used, the correct application of `out` and `ref` parameters requires intermediate design and coding skills. Library architects who design for a general audience should not expect users to master working with `out` or `ref` parameters.  
+ Несмотря на то, что возвращаемые значения всем знакомы и повсеместно используются устойчивого приложения `out` и `ref` параметры требуются промежуточные проектирование и кодирование навыки. Архитекторам библиотеки для широкого использования, не следует ожидать пользователям разрабатывающим `out` или `ref` параметров.  
   
 > [!NOTE]
->  When you work with parameters that are large structures, the additional resources that are required to copy these structures could cause a performance effect when you pass by value. In these cases, you might consider using `ref` or `out` parameters.  
+>  При работе с параметрами, которые являются больших структур, дополнительные ресурсы, необходимые для копирования этих структур может привести к влияние на производительность при передаче по значению. В этих случаях можно использовать `ref` или `out` параметров.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule that is caused by a value type, have the method return the object as its return value. If the method must return multiple values, redesign it to return a single instance of an object that holds the values.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Чтобы устранить нарушение данного правила, связанную с типом значения, имеют метод возвращал объект в качестве возвращаемого значения. Если метод должен возвращать несколько значений, измените его возвращает один экземпляр объекта, содержащего значения.  
   
- To fix a violation of this rule that is caused by a reference type, make sure that the behavior that you want is to return a new instance of the reference. If it is, the method should use its return value to do this.  
+ Чтобы устранить нарушение данного правила, причиной является ссылочным типом, убедитесь, что желаемое поведение должно возвращать новый экземпляр ссылки. Если это так, метод следует использовать ее возвращаемое значение для этого.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule; however, this design could cause usability issues.  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ Можно безопасно подавить предупреждение из этого правила; Однако такой подход может привести к проблемах.  
   
-## <a name="example"></a>Example  
- The following library shows two implementations of a class that generates responses to the feedback of the user. The first implementation (`BadRefAndOut`) forces the library user to manage three return values. The second implementation (`RedesignedRefAndOut`) simplifies the user experience by returning an instance of a container class (`ReplyData`) that manages the data as a single unit.  
+## <a name="example"></a>Пример  
+ В следующей библиотеке показаны две реализации класса, который приводит к возникновению ошибки ответов на отзыв пользователя. Первая реализация (`BadRefAndOut`) вынуждает пользователя библиотеки управлять тремя возвращаемыми значениями. Во второй реализации (`RedesignedRefAndOut`) упрощает взаимодействие с пользователем, возвращают экземпляр класса контейнера (`ReplyData`), управляющий данных как единое целое.  
   
  [!code-csharp[FxCop.Design.NoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1045-do-not-pass-types-by-reference_1.cs)]  
   
-## <a name="example"></a>Example  
- The following application illustrates the experience of the user. The call to the redesigned library (`UseTheSimplifiedClass` method) is more straightforward, and the information that is returned by the method is easily managed. The output from the two methods is identical.  
+## <a name="example"></a>Пример  
+ В следующем приложении демонстрируется работы пользователя. Вызов модернизированный библиотеки (`UseTheSimplifiedClass` метод) имеет более простой и данные, возвращенные методом легко управлять. Выходные данные из двух методов аналогична.  
   
  [!code-csharp[FxCop.Design.TestNoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1045-do-not-pass-types-by-reference_2.cs)]  
   
-## <a name="example"></a>Example  
- The following example library illustrates how `ref` parameters for reference types are used, and shows a better way to implement this functionality.  
+## <a name="example"></a>Пример  
+ В следующем примере библиотеки показано, как `ref` используются параметры для ссылочных типов и показывает более эффективный способ реализации этой функции.  
   
  [!code-csharp[FxCop.Design.RefByRefNo#1](../code-quality/codesnippet/CSharp/ca1045-do-not-pass-types-by-reference_3.cs)]  
   
-## <a name="example"></a>Example  
- The following application calls each method in the library to demonstrate the behavior.  
+## <a name="example"></a>Пример  
+ Следующее приложение вызывает каждый метод в библиотеке с целью демонстрации поведения.  
   
  [!code-csharp[FxCop.Design.TestRefByRefNo#1](../code-quality/codesnippet/CSharp/ca1045-do-not-pass-types-by-reference_4.cs)]  
   
- This example produces the following output.  
+ В этом примере формируются следующие данные:  
   
- **Changing pointer - passed by value:**  
+ **Изменение указателя — по значению:**  
 **12345**  
 **12345**  
-**Changing pointer - passed by reference:**  
+**Изменение указателя - передается по ссылке:**  
 **12345**  
 **12345 ABCDE**  
-**Passing by return value:**  
+**Передача по возвращаемое значение:**  
 **12345 ABCDE**   
-## <a name="related-rules"></a>Related Rules  
- [CA1021: Avoid out parameters](../code-quality/ca1021-avoid-out-parameters.md)
+## <a name="related-rules"></a>Связанные правила  
+ [CA1021: не используйте параметры out](../code-quality/ca1021-avoid-out-parameters.md)

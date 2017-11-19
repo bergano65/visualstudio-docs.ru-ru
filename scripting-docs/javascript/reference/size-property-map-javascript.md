@@ -1,40 +1,43 @@
 ---
-title: "Свойство size (Map) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Свойство Size (Map) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: e4334ba4-7de6-42ff-a5e4-9203466e3ab4
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 219b94c5a7f722d09fa5efd29fdcc1b41bca6b54
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Свойство size (Map) (JavaScript)
-Возвращает число элементов в сопоставлении.  
+# <a name="size-property-map-javascript"></a>Свойство size (Map) (JavaScript)
+Возвращает количество элементов в сопоставлении.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```javascript  
+```JavaScript  
 sizeVar = mapObj.size  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `sizeVar`  
- Обязательное.  Любое число.  
+ Обязательный. Любое число.  
   
  `mapObj`  
- Обязательное.  Любой объект `Map`.  
+ Обязательный. Любой объект `Map`.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]

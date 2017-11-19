@@ -1,30 +1,30 @@
 ---
-title: "CA1409: видимые COM-типы должны быть создаваемыми | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ComVisibleTypesShouldBeCreatable"
-  - "CA1409"
-helpviewer_keywords: 
-  - "ComVisibleTypesShouldBeCreatable"
-  - "CA1409"
+title: "CA1409: Видимые COM-типы должны быть создаваемыми | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- ComVisibleTypesShouldBeCreatable
+- CA1409
+helpviewer_keywords:
+- ComVisibleTypesShouldBeCreatable
+- CA1409
 ms.assetid: 9f59569b-de15-4a38-b7cb-cff152972243
-caps.latest.revision: 18
-caps.handback.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c8d9fe357142cf8b95be0298797c4a18e9ee0df7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# CA1409: видимые COM-типы должны быть создаваемыми
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: видимые COM-типы должны быть создаваемыми
 |||  
 |-|-|  
 |TypeName|ComVisibleTypesShouldBeCreatable|  
@@ -32,25 +32,25 @@ manager: "wpickett"
 |Категория|Microsoft.Interoperability|  
 |Критическое изменение|Не критическое|  
   
-## Причина  
- Ссылочный тип, который специально помечен как видимый для модели COM, содержит открытый параметризованный конструктор, но не содержит открытого конструктора по умолчанию \(без параметров\).  
+## <a name="cause"></a>Причина  
+ Ссылочный тип, который специально помечен как видимый для модели объектов компонентов (COM) содержит открытый параметризованный конструктор, но не содержит открытого конструктора по умолчанию (без параметров).  
   
-## Описание правила  
- Тип без открытый конструктор по умолчанию нельзя создать с клиента COM.  Однако такой тип по\-прежнему доступен для COM\-клиентов, если для создания типа и передачи его клиенту доступны другие средства \(например использование возвращаемого значения вызываемого метода\).  
+## <a name="rule-description"></a>Описание правила  
+ Невозможно создать тип без открытого конструктора по умолчанию COM-клиентами. Однако тип можно по-прежнему осуществляться COM-клиентами Если доступен другим способом создания типа и передать его клиенту (например, через возвращаемое значение вызова метода).  
   
- Данное правило пропускает типы, производные от класса <xref:System.Delegate?displayProperty=fullName>.  
+ Правило не учитывает типы, которые являются производными от <xref:System.Delegate?displayProperty=fullName>.  
   
- По умолчанию для модели COM видимы следующие объекты: сборки, общие типы, члены общих экземпляров в общих типах и все элементы общих типов значений.  
+ По умолчанию, являются видимыми для COM следующие: сборки, открытые типы, члены общих экземпляров в открытых типах и все элементы общих типов значений.  
   
-## Устранение нарушений  
- Чтобы устранить нарушение данного правила, добавьте открытый конструктор по умолчанию или удалите из типа атрибут <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Чтобы устранить нарушение данного правила, добавьте открытый конструктор по умолчанию или удалите <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> из типа.  
   
-## Отключение предупреждений  
- Отключение предупреждений данного правила безопасно в том случае, если предоставлены другие средства создания и передачи объектов COM\-клиенту.  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ Можно безопасно подавить предупреждение из этого правила, если предоставлены другие средства для создания и передачи объекта COM-клиент.  
   
-## Связанные правила  
+## <a name="related-rules"></a>Связанные правила  
  [CA1017: помечайте сборки атрибутом ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
   
-## См. также  
- [Qualifying .NET Types for Interoperation](../Topic/Qualifying%20.NET%20Types%20for%20Interoperation.md)   
- [Interoperating with Unmanaged Code](../Topic/Interoperating%20with%20Unmanaged%20Code.md)
+## <a name="see-also"></a>См. также  
+ [Уточнение типов .NET для взаимодействия](/dotnet/framework/interop/qualifying-net-types-for-interoperation)   
+ [Взаимодействие с неуправляемым кодом](/dotnet/framework/interop/index)

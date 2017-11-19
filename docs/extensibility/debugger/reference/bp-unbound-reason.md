@@ -1,72 +1,72 @@
 ---
-title: "BP_UNBOUND_REASON | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BP_UNBOUND_REASON"
-helpviewer_keywords: 
-  - "Перечисление BP_UNBOUND_REASON"
+title: "BP_UNBOUND_REASON | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: BP_UNBOUND_REASON
+helpviewer_keywords: BP_UNBOUND_REASON enumeration
 ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: dfa3ab5ee6d38da45bd69cf4a9e49a86035d1252
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# BP_UNBOUND_REASON
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Предоставляет причину точка останова была отменена привязка.  
+# <a name="bpunboundreason"></a>BP_UNBOUND_REASON
+Предоставляет причина, по которой был свободные точки останова.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-enum enum_BP_UNBOUND_REASON {   
-   BPUR_UNKNOWN           = 0x0000,  
-   BPUR_CODE_UNLOADED     = 0x0002,  
-   BPUR_BREAKPOINT_REBIND = 0x0003,  
-   BPUR_BREAKPOINT_ERROR  = 0x0004  
+```cpp  
+enum enum_BP_UNBOUND_REASON {   
+   BPUR_UNKNOWN           = 0x0000,  
+   BPUR_CODE_UNLOADED     = 0x0002,  
+   BPUR_BREAKPOINT_REBIND = 0x0003,  
+   BPUR_BREAKPOINT_ERROR  = 0x0004  
 };  
 typedef DWORD BP_UNBOUND_REASON;  
 ```  
   
-```c#  
-public enum enum_BP_UNBOUND_REASON {   
-   BPUR_UNKNOWN           = 0x0000,  
-   BPUR_CODE_UNLOADED     = 0x0002,  
-   BPUR_BREAKPOINT_REBIND = 0x0003,  
-   BPUR_BREAKPOINT_ERROR  = 0x0004  
+```csharp  
+public enum enum_BP_UNBOUND_REASON {   
+   BPUR_UNKNOWN           = 0x0000,  
+   BPUR_CODE_UNLOADED     = 0x0002,  
+   BPUR_BREAKPOINT_REBIND = 0x0003,  
+   BPUR_BREAKPOINT_ERROR  = 0x0004  
 };  
 ```  
   
-## Члены  
- BPUR\_UNKNOWN  
+## <a name="members"></a>Члены  
+ BPUR_UNKNOWN  
  Причина неизвестна.  
   
- BPUR\_CODE\_UNLOADED  
- Код, в котором содержится точка останова был выгружен.  
+ BPUR_CODE_UNLOADED  
+ Код, который содержит точку останова был выгружен.  
   
- BPUR\_BREAKPOINT\_REBIND  
- Точка останова отскок в другое расположение.  Это может происходить после правка и продолжает операции, когда точка останова или точка останова перемещается привязана к файлу с путем, который больше не является допустимым.  
+ BPUR_BREAKPOINT_REBIND  
+ Точка останова были привязаны повторно в другом месте. Это может произойти после изменения и продолжить работу, если точка останова перемещается или при привязке точки останова в файл с путем, который больше не является допустимым.  
   
- BPUR\_ BREAKPOINT\_ERROR  
- Указываются находит точку останова в ошибке после того, как она привязана.  Это происходит в управляемый точки останова, состояние которых более не являются допустимыми.  
+ BPUR_ BREAKPOINT_ERROR  
+ Точка останова будет установлено по ошибке после он привязан. Это происходит, управляемый точек останова, состояние которых становятся недействительными.  
   
-## Заметки  
- Возвращается [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) метод.  
+## <a name="remarks"></a>Примечания  
+ Возвращенный [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) метод.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)

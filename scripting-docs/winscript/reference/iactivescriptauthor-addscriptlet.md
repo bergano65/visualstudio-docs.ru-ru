@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptAuthor::AddScriptlet | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IActiveScriptAuthor::AddScriptlet | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptAuthor.AddScriptlet
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptAuthor::AddScriptlet"
+helpviewer_keywords: IActiveScriptAuthor::AddScriptlet
 ms.assetid: 879a6651-f187-4934-b130-c1247549900b
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b21f906a73a313bf775683ba63738adb25af0007
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptAuthor::AddScriptlet
-Добавляет сценарий кода как дочерний элемент корневого уровня объекта `IScriptNode`.  В основном приложении полное имя скрипта разрешитьо иметь только 2 уровня.  
+# <a name="iactivescriptauthoraddscriptlet"></a>IActiveScriptAuthor::AddScriptlet
+Добавляет код пользователи в качестве дочернего элемента корневого уровня `IScriptNode` объекта. В узле полное имя сценариев допускается иметь только двух уровней.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT AddScriptlet(  
@@ -36,39 +39,39 @@ HRESULT AddScriptlet(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pszDefaultName`  
- \[in\] адрес имя по умолчанию, связанное со скриптом.  
+ [in] Адрес по умолчанию имя, связанное с помощью сценариев.  
   
  `pszCode`  
- \[in\] адрес текст сценария.  
+ [in] Адрес текст сценариев.  
   
  `pszItemName`  
- \[in\] адрес буфера верхнего уровня идентификатора полного имени скрипта в узле.  
+ [in] Адрес буфера верхнего уровня идентификатор сценариев полное имя в узле.  
   
  `pszSubItemName`  
- \[in\] адрес буфера идентификатора втор\- уровня полного имени скрипта в узле.  Задайте значение null, если имя имеет только один уровень.  
+ [in] Адрес буфера идентификатор второго уровня с именем полный сценарий в узле. Значение NULL, если имя содержит только один уровень.  
   
  `pszEventName`  
- \[in\] адрес буфера, содержащий имя события, для которого скрипт обработчика событий.  
+ [in] Адрес буфера, который содержит имя события, для которого сценариев является обработчиком событий.  
   
  `pszDelimiter`  
- \[in\] адрес разделителя элемент \- скрипт\- блока.  При `pszCode` анализироватьо из потока текста, основное приложение обычно использует разделитель как одинарных кавычек \(2\), чтобы обнаружить конец блока скрипта.  Установите этот параметр в значение null, если разделитель не отмечает конец блока скрипта.  
+ [in] Адрес разделитель end из скрипта блока. Когда `pszCode` анализируется из текстового потока, узел обычно использует разделитель (например, две одинарных кавычки), для определения конца блока скрипта. Установите этот параметр в значение NULL, если разделитель не отмечает конец блока скрипта.  
   
  `dwCookie`  
- \[in\] приложение\- указанное значение, которое используется для связывания сценарий с объектом основного приложения.  
+ [in] Определяемые приложением значения, используемый для связи с объектом узла сценариев.  
   
  `dwFlags`  
- \[in\] Не используется.  
+ [in] Не используется.  
   
-## Возвращаемое значение  
- Объект `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)

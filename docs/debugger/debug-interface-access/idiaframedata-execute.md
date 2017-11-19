@@ -1,54 +1,53 @@
 ---
-title: "IDiaFrameData::execute | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaFrameData::execute - метод"
+title: "IDiaFrameData::execute | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaFrameData::execute method
 ms.assetid: 7a6c7d03-1ff1-4059-bd54-5f407eeebc26
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 29b284e466ce751e86f488203b4b22c0c18c6573
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaFrameData::execute
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Выполняет стек разматывая и возвращает результаты в интерфейсе кадра проверки стека.  
+# <a name="idiaframedataexecute"></a>IDiaFrameData::execute
+Выполняет развертывание стека и возвращает результаты в интерфейсе обход кадра стека.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT execute (   
-   IDiaStackWalkFrame* frame  
+```C++  
+HRESULT execute (   
+   IDiaStackWalkFrame* frame  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `frame`  
- \[in\] [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) объект, содержащий состояние кадра регистрирует.  
+ [in] [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) объект, содержащий состояние регистров кадра.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  В следующей таблице приведены возможные возвращаемые значения для данного метода.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. В следующей таблице показаны возможные возвращаемые значения для этого метода.  
   
 |Значение|Описание|  
-|--------------|--------------|  
-|E\_DIA\_INPROLOG|Не удается выполнить кадр стека в коде пролога.|  
-|E\_DIA\_SYNTAX|Ошибка синтаксического анализа обнаружена в программе кадра.|  
-|E\_DIA\_FRAME\_ACCESS|Не удалось получить доступ к памяти или регистров.|  
-|E\_DIA\_VALUE|Ошибка при вычислении значения \(например, отделении нуля\).|  
+|-----------|-----------------|  
+|E_DIA_INPROLOG|Не удается выполнить кадра стека в кода пролога.|  
+|E_DIA_SYNTAX|Синтаксический анализ произошла ошибка в программе кадра.|  
+|E_DIA_FRAME_ACCESS|Не удается регистры доступа или памяти.|  
+|E_DIA_VALUE|Ошибка при вычислении значения (например, деление на ноль).|  
   
-## Заметки  
- Этот метод вызывается во время отладки для очистки последнего маркера стек.  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) объект реализуется клиентским приложением получить обновления к регистрам и предоставлять методы, предназначенные  `execute` метод.  
+## <a name="remarks"></a>Примечания  
+ Этот метод вызывается во время отладки для очистки стека. [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) объект реализован клиентским приложением для получения обновлений в регистры и предоставлять методы, используемые `execute` метод.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

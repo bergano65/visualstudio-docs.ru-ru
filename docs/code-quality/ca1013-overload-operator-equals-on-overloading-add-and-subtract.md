@@ -1,11 +1,10 @@
 ---
-title: 'CA1013: Overload operator equals on overloading add and subtract | Microsoft Docs'
+title: "CA1013: Перегружайте оператор равенства при перегрузке сложения и вычитания | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -19,47 +18,31 @@ helpviewer_keywords:
 - CA1013
 - OverloadOperatorEqualsOnOverloadingAddAndSubtract
 ms.assetid: 5bd28d68-c179-49ff-af47-5250b8b18a10
-caps.latest.revision: 22
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 5d5f17ca16cc28e4b0c583755f87069836a9422b
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 65f8802e0eb4e06466d5178b0af56753d537dd74
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Overload operator equals on overloading add and subtract
+# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: перегружайте оператор равенства при перегрузке сложения и вычитания
 |||  
 |-|-|  
 |TypeName|OverloadOperatorEqualsOnOverloadingAddAndSubtract|  
 |CheckId|CA1013|  
-|Category|Microsoft.Design|  
-|Breaking Change|Non-breaking|  
+|Категория|Microsoft.Design|  
+|Критическое изменение|Не критическое|  
   
-## <a name="cause"></a>Cause  
- A public or protected type implements the addition or subtraction operators without implementing the equality operator.  
+## <a name="cause"></a>Причина  
+ Открытый или защищенный тип реализует операторы сложения или вычитания без реализации оператора равенства.  
   
-## <a name="rule-description"></a>Rule Description  
- When instances of a type can be combined by using operations such as addition and subtraction, you should almost always define equality to return `true` for any two instances that have the same constituent values.  
+## <a name="rule-description"></a>Описание правила  
+ Когда экземпляров типа могут быть объединены с помощью операции, такие как сложение и вычитание, почти всегда следует определить равенство возвратит `true` для любых двух экземпляров, которые имеют одинаковые значения, составляющие.  
   
- You cannot use the default equality operator in an overloaded implementation of the equality operator. Doing so will cause a stack overflow. To implement the equality operator, use the Object.Equals method in your implementation. See the following example.  
+ Оператор проверки на равенство по умолчанию нельзя использовать в перегруженной реализации оператора равенства. Это приведет к переполнению стека. Чтобы реализовать оператор равенства, используйте метод Object.Equals в реализации. См. следующий пример.  
   
 ```vb  
 If (Object.ReferenceEquals(left, Nothing)) Then  
@@ -75,28 +58,28 @@ if (Object.ReferenceEquals(left, null))
 return left.Equals(right);  
 ```  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, implement the equality operator so that it is mathematically consistent with the addition and subtraction operators.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Чтобы устранить нарушение данного правила, реализуйте оператор равенства, чтобы он был математически совместим с операторы сложения и вычитания.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule when the default implementation of the equality operator provides the correct behavior for the type.  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ Можно безопасно отключать предупреждение из этого правила, если реализация оператора равенства по умолчанию обеспечивает правильное поведение для типа.  
   
-## <a name="example"></a>Example  
- The following example defines a type (`BadAddableType`) that violates this rule. This type should implement the equality operator to make any two instances that have the same field values test `true` for equality. The type `GoodAddableType` shows the corrected implementation. Note that this type also implements the inequality operator and overrides <xref:System.Object.Equals%2A> to satisfy other rules. A complete implementation would also implement <xref:System.Object.GetHashCode%2A>.  
+## <a name="example"></a>Пример  
+ В следующем примере определяется тип (`BadAddableType`), приводит к нарушению данного правила. Этот тип должен реализовать оператор равенства, чтобы любые два экземпляра, имеющие одинаковые значения полей тестирования `true` на равенство. Тип `GoodAddableType` приведен исправленный реализации. Обратите внимание, что этот тип также реализует оператор неравенства и переопределяет <xref:System.Object.Equals%2A> для выполнения других правил. Может также реализовать полную реализацию <xref:System.Object.GetHashCode%2A>.  
   
  [!code-csharp[FxCop.Design.AddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_1.cs)]  
   
-## <a name="example"></a>Example  
- The following example tests for equality by using instances of the types that were previously defined in this topic to illustrate the default and correct behavior for the equality operator.  
+## <a name="example"></a>Пример  
+ В следующем примере проверка на равенство с помощью экземпляров типов, которые ранее были определены в этом разделе иллюстрируют оператора равенства по умолчанию и правильное поведение.  
   
  [!code-csharp[FxCop.Design.TestAddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_2.cs)]  
   
- This example produces the following output.  
+ В этом примере формируются следующие данные:  
   
- **Bad type:  {2,2} {2,2} are equal? No**  
-**Good type: {3,3} {3,3} are equal? Yes**  
-**Good type: {3,3} {3,3} are == ?   Yes**  
-**Bad type:  {2,2} {9,9} are equal? No**  
-**Good type: {3,3} {9,9} are == ?   No**   
-## <a name="see-also"></a>See Also  
- [Equality Operators](/dotnet/standard/design-guidelines/equality-operators)
+ **Неверный тип: {2,2} {2,2} равны? Нет**  
+**Тип хорошо: {3,3} {3,3} равны? Да**  
+**Тип хорошо: {3,3} {3,3} являются ==?   Да**  
+**Неверный тип: {2,2} {9,9} равны? Нет**  
+**Тип хорошо: {3,3} {9,9} являются ==?   Нет**   
+## <a name="see-also"></a>См. также  
+ [Операторы равенства](/dotnet/standard/design-guidelines/equality-operators)

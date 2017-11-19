@@ -1,11 +1,10 @@
 ---
-title: 'CA1804: Remove unused locals | Microsoft Docs'
+title: "CA1804: Удалите неиспользуемые локальные переменные | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,62 +14,47 @@ helpviewer_keywords:
 - RemoveUnusedLocals
 - CA1804
 ms.assetid: cc332e67-6543-4813-bd8a-6f6fc75bf22a
-caps.latest.revision: 18
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 59d25656b929c36978f609f8b97da506e582f6af
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 9217f3109c6ef03de33e444e723caa585d065efb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1804-remove-unused-locals"></a>CA1804: Remove unused locals
+# <a name="ca1804-remove-unused-locals"></a>CA1804: удалите неиспользуемые локальные переменные
 |||  
 |-|-|  
 |TypeName|RemoveUnusedLocals|  
 |CheckId|CA1804|  
-|Category|Microsoft.Performance|  
-|Breaking Change|Non-breaking|  
+|Категория|Microsoft.Performance|  
+|Критическое изменение|Не критическое|  
   
-## <a name="cause"></a>Cause  
- A method declares a local variable but does not use the variable except possibly as the recipient of an assignment statement. For analysis by this rule, the tested assembly must be built with debugging information and the associated program database (.pdb) file must be available.  
+## <a name="cause"></a>Причина  
+ Метод объявляет локальную переменную, но не использовать переменную, за исключением возможно как получателя оператора присваивания. Для анализа с помощью этого правила тестируемой сборки должны быть построены с отладочной информацией и связанный PDB-файл должен быть доступен.  
   
-## <a name="rule-description"></a>Rule Description  
- Unused local variables and unnecessary assignments increase the size of an assembly and decrease performance.  
+## <a name="rule-description"></a>Описание правила  
+ Неиспользуемые локальные переменные и ненужные присвоения увеличивают размер сборки и снижают производительность.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, remove or use the local variable. Note that the C# compiler that is included with [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] removes unused local variables when the `optimize` option is enabled.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Чтобы устранить нарушение данного правила, удалите или использовать локальную переменную. Обратите внимание, что компилятор C#, входят в состав [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] удаляет неиспользуемые локальные переменные при `optimize` включен параметр.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Suppress a warning from this rule if the variable was compiler emitted. It is also safe to suppress a warning from this rule, or to disable the rule, if performance and code maintenance are not primary concerns.  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ Отключайте предупреждение из этого правила, если переменная создана компилятором. Можно также безопасно подавить предупреждение из этого правила, или отключить правило, если производительность и обслуживание кода не критичными моментами.  
   
-## <a name="example"></a>Example  
- The following example shows several unused local variables.  
+## <a name="example"></a>Пример  
+ В следующем примере показано несколько неиспользуемые локальные переменные.  
   
- [!code-vb[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/VisualBasic/ca1804-remove-unused-locals_1.vb)] [!code-csharp[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/CSharp/ca1804-remove-unused-locals_1.cs)]  
+ [!code-vb[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/VisualBasic/ca1804-remove-unused-locals_1.vb)]
+ [!code-csharp[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/CSharp/ca1804-remove-unused-locals_1.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1809: Avoid excessive locals](../code-quality/ca1809-avoid-excessive-locals.md)  
+## <a name="related-rules"></a>Связанные правила  
+ [CA1809: избегайте чрезмерного использования локальных переменных](../code-quality/ca1809-avoid-excessive-locals.md)  
   
- [CA1811: Avoid uncalled private code](../code-quality/ca1811-avoid-uncalled-private-code.md)  
+ [CA1811: не используйте невызываемый закрытый код](../code-quality/ca1811-avoid-uncalled-private-code.md)  
   
- [CA1812: Avoid uninstantiated internal classes](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
+ [CA1812: не создавайте внутренние классы без экземпляров](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
   
- [CA1801: Review unused parameters](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801: проверьте неиспользуемые параметры](../code-quality/ca1801-review-unused-parameters.md)

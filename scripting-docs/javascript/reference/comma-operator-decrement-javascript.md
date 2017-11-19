@@ -1,50 +1,51 @@
 ---
-title: "Оператор &quot;запятая&quot; (,) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "%2C"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "оператор "запятая""
+title: "Оператор \"запятая\" (,) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: '%2C'
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: comma operator
 ms.assetid: 699fa0bf-cd0a-45ee-a291-2fbed4ecd470
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2cb504beefc5ce4c260ec8296e2cf097e17d349e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Оператор &quot;запятая&quot; (,) (JavaScript)
+# <a name="comma-operator--javascript"></a>Оператор "запятая" (,) (JavaScript)
 Приводит к последовательному выполнению двух выражений.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 expression1, expression2  
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `expression1`  
- Произвольное выражение.  
+ Любое выражение.  
   
  `expression2`  
- Произвольное выражение.  
+ Любое выражение.  
   
-## Заметки  
- Оператор `,` приводит к выполнению выражений в порядке слева направо.  Чаще всего оператор `,` применяется в выражении инкремента для цикла `for`.  Примеры.  
+## <a name="remarks"></a>Примечания  
+ `,` Оператор вызывает выражения для выполнения в порядке слева направо. Обычно используются для `,` оператор находится в выражении увеличения `for` цикла. Например:  
   
-```javascript  
+```JavaScript  
 j=25;  
 for (i = 0; i < 10; i++, j++)  
 {  
@@ -52,12 +53,12 @@ for (i = 0; i < 10; i++, j++)
 }  
 ```  
   
- Оператор `for` позволяет выполнить только одно выражение в конце каждого прохода цикла.  Оператор `,` позволяет использовать несколько выражений как одно выражение, поэтому можно применить инкремент к обеим переменным.  
+ `for` Оператор разрешает только одно выражение для выполнения в конце каждого прохода цикла. `,` Оператор позволяет несколько выражений, следует рассматривать как одного выражения, поэтому обе переменные может быть увеличен.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## См. также  
- [Оператор for](../../javascript/reference/for-statement-javascript.md)   
+## <a name="see-also"></a>См. также  
+ [Оператор For](../../javascript/reference/for-statement-javascript.md)   
  [Приоритет операторов](../../javascript/operator-subtractprecedence-javascript.md)   
- [Сводный список операторов \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Сводный список операторов (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

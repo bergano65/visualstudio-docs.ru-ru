@@ -1,11 +1,10 @@
 ---
-title: 'CA2213: Disposable fields should be disposed | Microsoft Docs'
+title: "CA2213: Следует высвобождать высвобождаемые поля | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,61 +14,46 @@ helpviewer_keywords:
 - CA2213
 - DisposableFieldsShouldBeDisposed
 ms.assetid: e99442c9-70e2-47f3-b61a-d8ac003bc6e5
-caps.latest.revision: 15
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 538f013849b8e3391fdc3cdad7fee707e9cbb072
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 77cd32f97e3798362371fc21f8b38c14ce22c7fb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Disposable fields should be disposed
+# <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: следует высвобождать высвобождаемые поля
 |||  
 |-|-|  
 |TypeName|DisposableFieldsShouldBeDisposed|  
 |CheckId|CA2213|  
-|Category|Microsoft.Usage|  
-|Breaking Change|Non Breaking|  
+|Категория|Microsoft.Usage|  
+|Критическое изменение|Не критическое|  
   
-## <a name="cause"></a>Cause  
- A type that implements <xref:System.IDisposable?displayProperty=fullName> declares fields that are of types that also implement <xref:System.IDisposable>. The <xref:System.IDisposable.Dispose%2A> method of the field is not called by the <xref:System.IDisposable.Dispose%2A> method of the declaring type.  
+## <a name="cause"></a>Причина  
+ Тип, реализующий <xref:System.IDisposable?displayProperty=fullName> , объявляет поля, которые относятся к типам, которые также реализуют <xref:System.IDisposable>. <xref:System.IDisposable.Dispose%2A> Метод поля не вызывается <xref:System.IDisposable.Dispose%2A> метод объявляющего типа.  
   
-## <a name="rule-description"></a>Rule Description  
- A type is responsible for disposing of all its unmanaged resources; this is accomplished by implementing <xref:System.IDisposable>. This rule checks to see whether a disposable type `T` declares a field `F` that is an instance of a disposable type `FT`. For each field `F`, the rule attempts to locate a call to `FT.Dispose`. The rule searches the methods called by `T.Dispose`, and one level lower (the methods called by the methods called by `FT.Dispose`).  
+## <a name="rule-description"></a>Описание правила  
+ Тип отвечает за освобождение все неуправляемые ресурсы; Это достигается путем реализации <xref:System.IDisposable>. Это правило проверяет, является ли удаляемого типа `T` объявляет поле `F` который является экземпляром освобождаемого типа `FT`. Для каждого поля `F`, правило пытается найти вызов `FT.Dispose`. Правило выполняет поиск методов, вызываемых `T.Dispose`и один уровень вниз (методы, вызываемые методы, вызываемые `FT.Dispose`).  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, call <xref:System.IDisposable.Dispose%2A> on fields that are of types that implement <xref:System.IDisposable> if you are responsible for allocating and releasing the unmanaged resources held by the field.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Чтобы устранить нарушение данного правила, вызовите <xref:System.IDisposable.Dispose%2A> на поля, имеющие типы, реализующие <xref:System.IDisposable> Если вы несете ответственность за выделение и освобождение неуправляемых ресурсов, содержащихся в полях.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule if you are not responsible for releasing the resource held by the field, or if the call to <xref:System.IDisposable.Dispose%2A> occurs at a deeper calling level than the rule checks.  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ Можно безопасно подавить предупреждение из этого правила, если вы не отвечает для освобождения ресурсов, содержащихся в полях, или вызов <xref:System.IDisposable.Dispose%2A> происходит на более глубоком уровне вызывающего, чем правила проверки.  
   
-## <a name="example"></a>Example  
- The following example shows a type `TypeA` that implements <xref:System.IDisposable> (`FT` in the previosu discussion).  
+## <a name="example"></a>Пример  
+ В следующем примере показано тип `TypeA` , реализующий <xref:System.IDisposable> (`FT` в описании previosu).  
   
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2213-disposable-fields-should-be-disposed_1.cs)]  
   
-## <a name="example"></a>Example  
- The following example shows a type `TypeB` that violates this rule by declaring a field `aFieldOfADisposableType` (`F` in the previous discussion) as a disposable type (`TypeA`) and not calling <xref:System.IDisposable.Dispose%2A> on the field. `TypeB` corresponds to `T` in the previous discussion.  
+## <a name="example"></a>Пример  
+ В следующем примере показано тип `TypeB` , нарушающий это правило, объявив поле `aFieldOfADisposableType` (`F` в описании выше) как удаляемого типа (`TypeA`) и не вызывает метод <xref:System.IDisposable.Dispose%2A> по полю. `TypeB`соответствует `T` в описании выше.  
   
  [!code-csharp[FxCop.Usage.IDisposableFields#1](../code-quality/codesnippet/CSharp/ca2213-disposable-fields-should-be-disposed_2.cs)]  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>См. также  
  <xref:System.IDisposable?displayProperty=fullName>   
- [Dispose Pattern](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Шаблон удаления](/dotnet/standard/design-guidelines/dispose-pattern)

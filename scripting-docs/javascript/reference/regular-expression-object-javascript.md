@@ -1,79 +1,81 @@
 ---
-title: "Объект регулярного выражения (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "RegularExpression_JavaScript"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "RegExp - объект, общие сведения"
-  - "Объект регулярного выражения"
-  - "регулярные выражения, RegExp - объект"
+title: "Объект регулярного выражения (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: RegularExpression_JavaScript
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- Regular Expression object
+- regular expressions, RegExp object
+- RegExp object, overview
 ms.assetid: 346aa83e-a045-47ea-acae-b42c7b121534
-caps.latest.revision: 21
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: df2d07e3b47e315ec804e5a7f20024dc2184eef0
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Объект регулярного выражения (JavaScript)
+# <a name="regular-expression-object-javascript"></a>Объект регулярного выражения (JavaScript)
 Объект, который содержит шаблон регулярного выражения с флагами, определяющими, как применять шаблон.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 re = /pattern/[flags]  
 ```  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 re = new RegExp("pattern"[,"flags"])   
 ```  
   
-## Параметры  
- *re*  
- Обязательный.  Имя переменной, которой назначается шаблон регулярного выражения.  
+## <a name="parameters"></a>Параметры  
+ *RE*  
+ Обязательный. Имя переменной, которой назначается шаблон регулярного выражения.  
   
- *pattern*  
- Обязательный.  Используемый шаблон регулярного выражения.  Если вы используете синтаксис 1, разделите шаблон с помощью символов «\/».  Если вы используете синтаксис 2, заключите шаблон в кавычки.  
+ *шаблон*  
+ Обязательный. Используемый шаблон регулярного выражения. Если вы используете синтаксис 1, разделите шаблон с помощью символов «/». Если вы используете синтаксис 2, заключите шаблон в кавычки.  
   
  `flags`  
- Необязательно.  При использовании синтаксиса 2 заключите флаг в кавычки.  Доступные флаги, которые можно совместить:  
+ Необязательно. При использовании синтаксиса 2 заключите флаг в кавычки. Доступные флаги, которые можно совместить:  
   
--   g \(глобальный поиск всех вхождений *шаблона*\);  
+-   g (глобальный поиск всех вхождений *шаблон*)  
   
--   i \(не учитывать регистр\);  
+-   i (не учитывать регистр);  
   
--   m \(многостроковый поиск\);  
+-   m (многостроковый поиск);  
   
--   u \(Юникод\), включает [функции Юникода](../../javascript/advanced/special-characters-javascript.md) EcmaScript 6.  Поддерживается только в [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)];  
+-   u (Юникод), включает EcmaScript 6 [функции Юникода](../../javascript/advanced/special-characters-javascript.md). Поддерживается только в [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)];  
   
--   y \(прикрепленное совпадение\), ищет совпадения в свойстве `lastIndex` регулярного выражения \(и не ищет в более поздних индексах\).  Поддерживается в [!INCLUDE[jsv12textExp](../../javascript/includes/jsv12textexp-md.md)].  
+-   y (прикрепленное совпадение), ищет совпадения в свойстве `lastIndex` регулярного выражения (и не ищет в более поздних индексах). Поддерживается в [!INCLUDE[jsv12textExp](../../javascript/includes/jsv12textexp-md.md)].  
   
-## Заметки  
- Объект **Regular Expression** не следует путать с глобальным объектом `RegExp`.  Несмотря на их кажущееся сходство, они отличаются.  Свойства объекта **Regular Expression** содержат только сведения о конкретном экземпляре **Regular Expression**, тогда как свойства глобального объекта `RegExp` содержат постоянно обновляющуюся информацию о каждом возникающем совпадении.  
+## <a name="remarks"></a>Примечания  
+ **Регулярное выражение** объекта не следует путать с глобальным `RegExp` объекта. Несмотря на их кажущееся сходство, они отличаются. Свойства **регулярное выражение** содержат только сведения об определенном **регулярное выражение** экземпляра, тогда как свойства глобального `RegExp` объект содержит постоянно обновляются сведения о каждом возникающем совпадении.  
   
- Объекты **Regular Expression** хранят шаблоны, используемые при поиске сочетаний символов в строках.  После создания объекта **Regular Expression** он передается в строковый метод или строка передается в один из методов регулярных выражений.  Сведения о последнем выполненном поиске хранятся в глобальном объекте `RegExp`.  
+ **Регулярное выражение** объекты хранят шаблоны, используемые при поиске сочетаний символов в строках. После **регулярное выражение** создается объект, он передается в строковый метод или строка, передаваемая в один из методов регулярных выражений. Сведения о последнем выполненном поиске хранятся в глобальном объекте `RegExp`.  
   
- Используйте синтаксис 1, если искомая строка заранее известна.  Используйте синтаксис 2, если искомая строка часто меняется или неизвестна \(примером может служить строка, взятая из входных данных от пользователя\).  
+ Используйте синтаксис 1, если искомая строка заранее известна. Используйте синтаксис 2, если искомая строка часто меняется или неизвестна (примером может служить строка, взятая из входных данных от пользователя).  
   
- Аргумент *pattern* компилируется во внутренний формат перед использованием.  В синтаксисе 1 аргумент *pattern* компилируется в ходе загрузки скрипта.  В синтаксисе 2 аргумент *pattern* компилируется перед использованием или при вызове метода **compile**.  
+ *Шаблон* аргумент компилируется во внутренний формат перед использованием. В синтаксисе 1 *шаблон* компилируется в ходе загрузки скрипта. Для синтаксиса 2 *шаблон* компилируется непосредственно перед использованием или при **компиляции** вызывается метод.  
   
-## Пример  
- В следующем примере показано использование объекта **Regular Expression** путем создания объекта \(re\), содержащего шаблон регулярного выражения со связанными флагами.  В этом случае полученный объект **Regular Expression** затем используется методом `match`:  
+## <a name="example"></a>Пример  
+ Следующий пример иллюстрирует использование **регулярное выражение** объекта путем создания объекта (re), содержащего шаблон регулярного выражения со связанными флагами. В этом случае полученный **регулярное выражение** объект затем используется `match` метод:  
   
-```javascript  
+```JavaScript  
 var s = "through the pages of the book";  
   
 // Create regular expression pattern.  
@@ -91,10 +93,10 @@ if(console && console.log) {
 //   
 ```  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере обновляется шаблон регулярного выражения: разрешается поиск нескольких экземпляров.  
   
-```javascript  
+```JavaScript  
 // Create regular expression pattern using the i and g flags.  
 var re = new RegExp("the", "ig");  
   
@@ -112,12 +114,12 @@ if(console && console.log) {
 // [object Array] ["the", "the"]  
 ```  
   
-## Пример  
- Если используется флаг \/y, при нахождении совпадения он обновляет `lastindex` до индекса следующего символа после последнего совпадения.  При ненахождении совпадения он сбрасывает `lastindex` до 0.  
+## <a name="example"></a>Пример  
+ Если используется флаг /y, при нахождении совпадения он обновляет `lastindex` до индекса следующего символа после последнего совпадения. При ненахождении совпадения он сбрасывает `lastindex` до 0.  
   
- В следующем примере выполняется поиск совпадения в определенном индексе с использованием флага \/y и свойства `lastIndex`.  
+ В следующем примере выполняется поиск совпадения в определенном индексе с использованием флага /y и свойства `lastIndex`.  
   
-```javascript  
+```JavaScript  
 // Create regular expression pattern using the i and y flags.  
 var re = new RegExp("the", "iy");  
   
@@ -145,21 +147,21 @@ if(console && console.log) {
 ```  
   
 <a name="js56jsobjregexpressionprop"></a>   
-## Свойства  
- [Свойство global](../../javascript/reference/global-property-regular-expression-javascript.md) &#124; [Свойство ignoreCase](../../javascript/reference/ignorecase-property-regular-expression-javascript.md) &#124; [Свойство multiline](../../javascript/reference/multiline-property-regular-expression-javascript.md) &#124; [Свойство source](../../javascript/reference/source-property-regular-expression-javascript.md)  
+## <a name="properties"></a>Свойства  
+ [глобальное свойство](../../javascript/reference/global-property-regular-expression-javascript.md) &#124; [свойство ignoreCase](../../javascript/reference/ignorecase-property-regular-expression-javascript.md) &#124; [свойство multiline](../../javascript/reference/multiline-property-regular-expression-javascript.md) &#124; [свойство source](../../javascript/reference/source-property-regular-expression-javascript.md)  
   
 <a name="js56jsobjregexpressionmeth"></a>   
-## Методы  
- [Метод compile](../../javascript/reference/compile-method-regular-expression-javascript.md) &#124; [Метод exec](../../javascript/reference/exec-method-regular-expression-javascript.md) &#124; [Метод test](../../javascript/reference/test-method-regular-expression-javascript.md)  
+## <a name="methods"></a>Методы  
+ [Метод Compile](../../javascript/reference/compile-method-regular-expression-javascript.md) &#124; [метод exec](../../javascript/reference/exec-method-regular-expression-javascript.md) &#124; [метода теста](../../javascript/reference/test-method-regular-expression-javascript.md)  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
  Флаг u поддерживается в [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)].  
   
  Флаг y поддерживается в [!INCLUDE[jsv12textExp](../../javascript/includes/jsv12textexp-md.md)].  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Объект RegExp](../../javascript/reference/regexp-object-javascript.md)   
- [Regular Expression Syntax \(JavaScript\)](http://msdn.microsoft.com/ru-ru/ab0766e1-7037-45ed-aa23-706f58358c0e)   
+ [Синтаксис регулярного выражения (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)   
  [Объект String](../../javascript/reference/string-object-javascript.md)

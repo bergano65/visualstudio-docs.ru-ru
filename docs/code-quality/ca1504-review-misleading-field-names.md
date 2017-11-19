@@ -1,29 +1,30 @@
 ---
-title: "CA1504: проверьте имена полей, которые могут ввести в заблуждение | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ReviewMisleadingFieldNames"
-  - "CA1504"
-helpviewer_keywords: 
-  - "CA1504"
-  - "ReviewMisleadingFieldNames"
+title: "CA1504: Проверьте поле имена заблуждение | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- ReviewMisleadingFieldNames
+- CA1504
+helpviewer_keywords:
+- CA1504
+- ReviewMisleadingFieldNames
 ms.assetid: 94136ff1-4aaf-4dc2-9170-48c171ab7499
-caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d03c07b48b2cfbfc19fcb9aa2ac4353ddf87a8a6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# CA1504: проверьте имена полей, которые могут ввести в заблуждение
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1504-review-misleading-field-names"></a>CA1504: проверьте имена полей, которые могут ввести в заблуждение
 |||  
 |-|-|  
 |TypeName|ReviewMisleadingFieldNames|  
@@ -31,14 +32,14 @@ caps.handback.revision: 15
 |Категория|Microsoft.Maintainability|  
 |Критическое изменение|Не критическое|  
   
-## Причина  
- Имя поля экземпляра начинается с "s\_"; имя поля с модификатором `static` \(`Shared` в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\) начинается с "m\_".  
+## <a name="cause"></a>Причина  
+ Имя поля экземпляра начинается с «s_» или имя `static` (`Shared` в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) поля начинается с «m_».  
   
-## Описание правила  
- Многие пользователи связывают имена полей, начинающиеся с "s\_", со статическими данными.  Аналогичным образом, имена полей, начинающиеся с "m\_", связываются о данными экземпляра \(члена — member\).  Для упрощения поддержки кода следует следовать общепринятым соглашениями об именовании.  
+## <a name="rule-description"></a>Описание правила  
+ Имена полей, начинающиеся с «s_» связаны с статических данных несколькими пользователями. Аналогичным образом имена полей, которые начинаются с «m_» связаны с данными экземпляра (элемент). Для упрощения поддержки кода имена должны следовать часто используемые соглашения.  
   
-## Устранение нарушений  
- Чтобы устранить нарушение данного правила, измените префикс имени поля.  Можно также сделать поле соответствующим его текущему префиксу, добавив или удалив модификатор `static`.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Чтобы устранить нарушение данного правила, переименование поля, используя соответствующий префикс. Можно также сделать поле соответствующим текущему префиксу, добавив или удалив `static` модификатор.  
   
-## Отключение предупреждений  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
  Для этого правила отключать вывод предупреждений не следует.

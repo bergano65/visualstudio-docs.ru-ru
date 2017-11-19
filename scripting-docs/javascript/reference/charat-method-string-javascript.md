@@ -1,66 +1,67 @@
 ---
-title: "Метод charAt (строка) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "charAt"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "объект String, возврат символов"
-  - "charAt - метод"
-  - "символы, возврат части"
+title: "Метод charAt (String) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: charAt
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- String object, returning characters
+- charAt method
+- characters, returning part of
 ms.assetid: 63173e15-17f6-47c5-8f94-98ef1eb04c1a
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 201d85fec4ba184f0842c7401d986650b9ee078c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод charAt (строка) (JavaScript)
-Возвращает символ по указанному индексу.  
+# <a name="charat-method-string-javascript"></a>Метод charAt (строка) (JavaScript)
+Возвращает знак с указанным индексом.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 strObj. charAt(index)  
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `strObj`  
- Обязательный.  Любой объект `String` или строковый литерал.  
+ Обязательный. Любой `String` или строковый литерал.  
   
  `index`  
- Обязательный.  Индекс требуемого знака \(начиная с нуля\).  
+ Обязательный. Отсчитываемый от нуля индекс требуемого символа.  
   
-## Заметки  
- Метод `charAt` возвращает символьное значение, представляющее символ, расположенный по указанному индексу `index`.  Первый знак строки имеет индекс 0, второй — индекс 1 и т. д.  При указании значения `index`, выходящего за пределы допустимого диапазона, возвращается пустая строка.  
+## <a name="remarks"></a>Примечания  
+ `charAt` Метод возвращает значение символа знака из указанного `index`. Первый символ в строке по индексу 0, второй — с индексом 1 и т. д. Значения `index` , выходят за пределы диапазона возвращаемого пустая строка.  
   
-## Пример  
- В следующем примере показано использование метода `charAt`.  
+## <a name="example"></a>Пример  
+ Следующий пример иллюстрирует использование `charAt` метода:  
   
-```javascript  
+```JavaScript  
 var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";  
 document.write(str.charAt(str.length - 1));  
   
 // Output: Z  
-  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **Относится к**: [Объект String](../../javascript/reference/string-object-javascript.md)  
+ **Применяется к**: [строковый объект](../../javascript/reference/string-object-javascript.md)  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Объект String](../../javascript/reference/string-object-javascript.md)

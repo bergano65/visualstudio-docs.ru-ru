@@ -1,58 +1,51 @@
 ---
-title: "Практическое руководство. Сохранение набора данных в формате XML | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "данные [Visual Studio], сохранение как XML"
-  - "наборы данных [Visual Basic], сохранение как XML"
-  - "сохранение данных"
-  - "XML [Visual Basic], наборы данных"
+title: "Сохранение набора данных в формате XML | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- XML [Visual Basic], datasets
+- data [Visual Studio], saving as XML
+- datasets [Visual Basic], saving as XML
+- saving data
 ms.assetid: 68b8327c-ae05-49ff-b9ba-99183e70b52c
-caps.latest.revision: 11
-caps.handback.revision: 8
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: 1e41e0481325838b5de60b76ed1c7c1fc617f48e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Сохранение набора данных в формате XML
-К данным XML в наборе данных можно получить доступ, вызывая методы XML, доступные в наборе.  Для сохранения данных в формате XML можно вызвать либо метод <xref:System.Data.DataSet.GetXml%2A>, либо метод <xref:System.Data.DataSet.WriteXml%2A> <xref:System.Data.DataSet>.  
+# <a name="save-a-dataset-as-xml"></a>Сохранение набора данных в формате XML
+XML-данные в наборе данных может осуществляться путем вызова доступные методы XML для набора данных. Чтобы сохранить данные в формате XML, можно вызвать <xref:System.Data.DataSet.GetXml%2A> метода или <xref:System.Data.DataSet.WriteXml%2A> метод <xref:System.Data.DataSet>.  
   
- Метод <xref:System.Data.DataSet.GetXml%2A> возвращает строку, содержащую данные из всех таблиц в наборе данных в формате XML\-данных.  
+ Вызов <xref:System.Data.DataSet.GetXml%2A> метод возвращает строку, содержащую данные из всех таблиц в наборе данных, который имеет формат XML.  
   
- Метод <xref:System.Data.DataSet.WriteXml%2A> отправляет данные в формате XML в указанный файл.  
+ Вызов <xref:System.Data.DataSet.WriteXml%2A> метод отправляет данные в формате XML в файл, который задается.  
   
-### Чтобы сохранить данные из набора данных в формате XML в переменную  
+### <a name="to-save-the-data-in-a-dataset-as-xml-to-a-variable"></a>Чтобы сохранить данные в наборе данных в виде XML в переменную  
   
--   Метод <xref:System.Data.DataSet.GetXml%2A> возвращает <xref:System.String>, поэтому объявите переменную типа <xref:System.String> и присвойте ей результаты метода <xref:System.Data.DataSet.GetXml%2A>.  
+-   <xref:System.Data.DataSet.GetXml%2A> Возвращает <xref:System.String>. Это означает, что объявить переменную типа <xref:System.String> и назначьте его результаты <xref:System.Data.DataSet.GetXml%2A> метод.  
   
      [!code-vb[VbRaddataSaving#12](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_1.vb)]
-     [!code-cs[VbRaddataSaving#12](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_1.cs)]  
+     [!code-csharp[VbRaddataSaving#12](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_1.cs)]  
   
-### Чтобы сохранить данные из набора данных в формате XML в файле  
+### <a name="to-save-the-data-in-a-dataset-as-xml-to-a-file"></a>Для сохранения данных в наборе данных в формате XML в файл  
   
--   Метод <xref:System.Data.DataSet.WriteXml%2A> имеет несколько перегрузок.  Следующий фрагмент кода иллюстрирует сохранение данных в файле, поэтому объявите переменную и присвойте ей правильный путь для сохранения файла.  
+-   <xref:System.Data.DataSet.WriteXml%2A> Метода есть несколько перегрузок. Ниже показано, как сохранить данные в файл. Объявить переменную и присвоить ему допустимый путь для сохранения файла.  
   
      [!code-vb[VbRaddataSaving#13](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_2.vb)]
-     [!code-cs[VbRaddataSaving#13](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_2.cs)]  
+     [!code-csharp[VbRaddataSaving#13](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_2.cs)]  
   
-## См. также  
- [Объекты DataSet, DataTable и DataView](../Topic/DataSets,%20DataTables,%20and%20DataViews.md)   
- [Средства XML в Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)   
- [Подготовка приложения к получению данных](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Подключение к данным в Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Подготовка приложения к получению данных](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Выборка данных в приложение](../data-tools/fetching-data-into-your-application.md)   
- [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Редактирование данных в приложении](../data-tools/editing-data-in-your-application.md)   
- [Проверка данных](../Topic/Validating%20Data.md)   
- [Сохранение данных](../data-tools/saving-data.md)
+## <a name="see-also"></a>См. также  
+ [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)

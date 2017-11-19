@@ -1,54 +1,55 @@
 ---
-title: "Функция unescape (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "unescape"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Unescape - метод"
+title: "Функция Unescape (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: unescape
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: Unescape method
 ms.assetid: 4adf0270-88b5-4d54-8110-d879d6ae97c2
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 96601fc21f47c86aec8c3702a6861c3676aacacf
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция unescape (JavaScript)
-Декодирует объекты `String`, закодированные с помощью функции `escape`.  Не рекомендуется.  
+# <a name="unescape-function-javascript"></a>Функция unescape (JavaScript)
+Декодирует `String` закодированы в виде объектов `escape` функции. Не рекомендуется.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 unescape(charString)   
 ```  
   
-## Заметки  
- Обязательный аргумент `charString` представляет собой объект`String` или литерал для декодирования.  
+## <a name="remarks"></a>Примечания  
+ Необходимая `charString` аргумент `String` объекта или литерала для декодирования.  
   
- Функция `unescape` возвращает строковое значение с содержимым `charstring`.  Все знаки, закодированные в виде шестнадцатеричного значения %*xx*, заменяются эквивалентами из кодировки ASCII.  
+ `unescape` Функция возвращает значение типа string, содержащий содержимое `charstring`. Все символы, кодируемые %*xx* шестнадцатеричной форме заменяются на их эквиваленты набор символов ASCII.  
   
- Знаки, закодированные в формате **%u** *xxxx* \(знаки Юникода\), заменяются знаками Юникода в шестнадцатеричной кодировке *xxxx*.  
+ Символы в кодировке **%u** *xxxx* формат (символов Юникода) заменяются на символ Юникода в шестнадцатеричной кодировке *xxxx*.  
   
 > [!NOTE]
->  Не следует использовать функцию `unescape` для декодирования универсальных кодов ресурса \(URI\).  Вместо этого используйте функции `decodeURI` и `decodeURIComponent`.  
+>  `unescape` Функция не должна использоваться для декодирования универсальных кодов ресурса (URI). Используйте `decodeURI` и `decodeURIComponent` вместо функции.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **Относится к**: [Объект Global](../../javascript/reference/global-object-javascript.md)  
+ **Применяется к**: [глобального объекта](../../javascript/reference/global-object-javascript.md)  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Функция decodeURI](../../javascript/reference/decodeuri-function-javascript.md)   
  [Функция decodeURIComponent](../../javascript/reference/decodeuricomponent-function-javascript.md)   
  [Функция escape](../../javascript/reference/escape-function-javascript.md)   

@@ -1,37 +1,52 @@
 ---
-title: "Запрос данных с помощью концептуальной модели | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "данные [Visual Studio], LINQ to Entities"
-  - "данные [Visual Studio], запрос службы"
-  - "данные [Visual Studio], запрос модели EDM"
+title: "Работа с концептуальной модели (службы данных WCF) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- data [Visual Studio], querying a service
+- data [Visual Studio], LINQ to Entities
+- data [Visual Studio], querying an EDM
 ms.assetid: 2cd873cf-b010-49f2-a278-bb1277aaa934
-caps.latest.revision: 9
-caps.handback.revision: 6
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "9"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: d9c0fa3846380b58e78b449083eab486954fd8a5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Запрос данных с помощью концептуальной модели
-При использовании концептуальной модели для описания данных в базе данных данные можно запросить через объекты вместо перевода между схемой базы данных и объектной моделью.  
+# <a name="working-with-a-conceptual-model-wcf-data-services"></a>Работа с концептуальной модели (службы данных WCF)
+При использовании концептуальной модели для описания данных в базе данных их можно запросить через объекты вместо перевода вперед и назад между схемой базы данных и модель объектов.  
   
- Концептуальные модели можно использовать с приложениями Службы данных WCF.  В следующих темах рассказывается о запросе данных через концептуальную модель.  
+ Концептуальные модели можно использовать с приложениями служб данных WCF. В следующих темах запрос данных с помощью концептуальной модели.  
   
 |Раздел|Описание|  
-|------------|--------------|  
-|[Как выполнять запросы к службе данных](../Topic/How%20to:%20Execute%20Data%20Service%20Queries%20\(WCF%20Data%20Services\).md)|Запрос службы данных из приложения [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|  
-|[Как проецировать результаты запроса](../Topic/How%20to:%20Project%20Query%20Results%20\(WCF%20Data%20Services\).md)|Уменьшение объема данных, возвращаемых по запросу службы данных.|  
+|-----------|-----------------|  
+|[Практическое руководство. Выполнение запросов к службе данных](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services)|Показано, как создать запрос к службе данных из [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] приложения.|  
+|[Как: проекция результатов запроса](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services)|Показано, как уменьшить объем данных, возвращаемых по запросу службы данных.|  
   
-## См. также  
- [Запросы к службе данных](../Topic/Querying%20the%20Data%20Service%20\(WCF%20Data%20Services\).md)
+ При использовании концептуальной модели можно определить, какие данные допустимы в языке, соответствующем домену. Доступные данные можно определить в модели или добавлении проверки операций, выполняемых на сущности или службы данных.  
+  
+ Следующие разделы показывают, как добавить проверку в приложения служб данных WCF.  
+  
+|Раздел|Описание|  
+|-----------|-----------------|  
+|[Как: перехват сообщений службы данных](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Показано, как добавить проверку в операцию службы данных.|  
+  
+ Ниже показано, как создание, обновление и удаление данных с помощью операций с сущностями.  
+  
+|Раздел|Описание|  
+|-----------|-----------------|  
+|[Как: Добавление, изменение и удаление сущностей](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Показано, как создание, обновление и удаление данных сущности в службе данных.|  
+|[Как: Определение связей сущностей](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Показано, как создать или изменить связи в службе данных.|  
+  
+## <a name="see-also"></a>См. также  
+ [Служб Windows Communication Foundation и службы данных WCF в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   
+ [Выполнение запросов к службе данных](/dotnet/framework/data/wcf/querying-the-data-service-wcf-data-services)

@@ -1,43 +1,42 @@
 ---
-title: "IDiaEnumDebugStreamData::Clone | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumDebugStreamData::Clone - метод"
+title: "IDiaEnumDebugStreamData::Clone | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumDebugStreamData::Clone method
 ms.assetid: e7f17750-0694-4634-bf34-c821cd265c2f
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a28d189066e1f062c3dd268fb9226331bff5e23e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumDebugStreamData::Clone
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Создает перечислитель, который содержит ту же указанной последовательности, что и текущий перечислитель.  
+# <a name="idiaenumdebugstreamdataclone"></a>IDiaEnumDebugStreamData::Clone
+Создает перечислитель, содержащий нумерованный последовательность, совпадающую с текущего перечислителя.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT Clone (   
-   IDiaEnumDebugStreamData** ppenum  
+```C++  
+HRESULT Clone (   
+   IDiaEnumDebugStreamData** ppenum  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  ppenum  
- \[out\] возвращает [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) объект, содержащий дублированную последовательность отладочные записи потока данных.  
+ [out] Возвращает [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) объект, который содержит повторяющиеся последовательность записи об отладке в поток данных.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

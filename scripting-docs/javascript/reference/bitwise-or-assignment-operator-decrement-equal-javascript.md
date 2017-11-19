@@ -1,71 +1,73 @@
 ---
-title: "Оператор присваивания побитового ИЛИ (|=) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "|="
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "|= - оператор"
-  - "операторы присваивания, побитовые [JavaScript]"
-  - "побитовые операторы, OR - оператор"
-  - "OR - оператор"
+title: "Побитовый оператор назначения или (| =) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: '|='
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- assignment operators, bitwise [JavaScript]
+- '|= operator'
+- bitwise operators, OR operator
+- OR operator
 ms.assetid: 9b424ff6-4442-4621-b3b6-83e7fd1e5cd5
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8ce9cadcf07906c9eba6749706620ae6293c2682
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Оператор присваивания побитового ИЛИ (|=) (JavaScript)
-Осуществляет логическую операцию побитового ИЛИ для значения переменной и значения выражения, затем присваивает результат переменной.  
+# <a name="bitwise-or-assignment-operator--javascript"></a>Оператор присваивания побитового ИЛИ (|=) (JavaScript)
+Выполняет операцию побитового ИЛИ для значения переменной и значения выражения, а затем присваивает результат переменной.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 result |= expression  
 ```  
   
-## Параметры  
- *result*  
+## <a name="parameters"></a>Параметры  
+ *результат*  
  Любая переменная.  
   
- *expression*  
- Произвольное выражение.  
+ *выражение*  
+ Любое выражение.  
   
-## Заметки  
- Использование данного оператора полностью эквивалентно следующему выражению:  
+## <a name="remarks"></a>Примечания  
+ Использование этого оператора именно эквивалентно следующему выражению:  
   
-```javascript  
+```JavaScript  
 result = result | expression  
 ```  
   
- Оператор **&#124;\=** рассматривает двоичное представление значений *result* и *expression* и выполняет над ними операцию побитового ИЛИ.  Эта операция дает следующий результат:  
+ **&#124; =** оператор рассматривает двоичное представление значений *результат* и *выражение* и выполняет операцию побитового OR над ними. В результате этой операции ведет себя следующим образом:  
   
-```javascript  
+```JavaScript  
 0101    (result)  
 1100    (expression)  
 ----  
 1101    (output)  
 ```  
   
- Если любое из выражений содержит 1 в какой\-либо позиции, результат также содержит 1 в этой позиции.  В противном случае результат в этой позиции содержит 0.  
+ Каждый раз, либо из выражений имеет значение 1 в цифра, результат имеет значение 1 в этой позиции. В противном случае результат имеет значение 0 в этой позиции.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## См. также  
- [Оператор побитового ИЛИ \(&#124;\)](../../javascript/reference/bitwise-or-operator-decrement-javascript.md)   
+## <a name="see-also"></a>См. также  
+ [Побитовый оператор или оператор (&#124;)](../../javascript/reference/bitwise-or-operator-decrement-javascript.md)   
  [Приоритет операторов](../../javascript/operator-subtractprecedence-javascript.md)   
- [Сводный список операторов \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Сводный список операторов (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

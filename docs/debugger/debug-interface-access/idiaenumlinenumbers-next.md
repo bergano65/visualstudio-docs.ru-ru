@@ -1,53 +1,52 @@
 ---
-title: "IDiaEnumLineNumbers::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumLineNumbers::Next - метод"
+title: "IDiaEnumLineNumbers::Next | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumLineNumbers::Next method
 ms.assetid: 363d5b40-1316-4ab8-836f-63637f619e0a
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 627a6e2dd0e319cbcdccfa5824d9c379faa0d049
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumLineNumbers::Next
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает заданное количество чисел линии в последовательности перечисления.  
+# <a name="idiaenumlinenumbersnext"></a>IDiaEnumLineNumbers::Next
+Возвращает указанное количество номеров строк в порядке перечисления.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT Next (   
-   ULONG            celt,  
-   IDiaLineNumber** rgelt,  
-   ULONG*           pceltFetched  
+```C++  
+HRESULT Next (   
+   ULONG            celt,  
+   IDiaLineNumber** rgelt,  
+   ULONG*           pceltFetched  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  celt  
- \[in\] номера количество линий в перечислителе.  
+ [in] Количество номеров строк в перечислителе требуется получить.  
   
  rgelt  
- \[out\] возвращает массив [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) объекты, представляющие нужные числа линии.  
+ [out] Возвращает массив [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) объекты, представляющие номера нужной строке.  
   
  pceltFetched  
- \[out\] возвращает число выбранных количество линий в перечислителе.  
+ [out] Возвращает количество номеров строк в выбранных перечислителя.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`.  Возвращает `S_FALSE` если больше номера линии.  В противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` при наличии без дополнительных номеров строк. В противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   
  [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)

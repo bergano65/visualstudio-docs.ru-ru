@@ -1,43 +1,46 @@
 ---
-title: "Свойство prototype (Date) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Свойство prototype (Date) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 44f9c637-7da7-4833-906d-358506f32ced
-caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8c0b337964d2a2fe17a4e9a7906d81069470e61b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Свойство prototype (Date)
-Возвращает ссылку на прототип даты.  
+# <a name="prototype-property-date"></a>Свойство prototype (Date)
+Возвращает ссылку на прототип для даты.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 date.prototype  
 ```  
   
-## Заметки  
- Аргумент `date` представляет собой имя объекта.  
+## <a name="remarks"></a>Примечания  
+ Аргумент `date` является именем объекта.  
   
- Свойство `prototype` используется для предоставления базового набора функциональных возможностей объекта Date.  Новые экземпляры объекта наследуют поведение прототипа, присвоенного этому объекту.  
+ Используйте `prototype` свойство, чтобы предоставить базовый набор функциональных возможностей в дату. Новые экземпляры объекта "наследуют" поведение прототипа, назначенного этому объекту.  
   
- Например, чтобы добавить в объект `Date` метод, возвращающий значение наибольшего элемента массива, объявите функцию, добавьте ее в свойство `Date.prototype`, а затем используйте ее.  
+ Например, чтобы добавить метод в объект `Date`, возвращающий значение самого большого элемента массива, объявите функцию, добавьте ее в `Date.prototype`, а затем используйте его.  
   
-```javascript  
+```JavaScript  
 function max( ){  
     var max = new Date();  
     max.setFullYear(2200, 01, 01);  
@@ -56,7 +59,7 @@ else if (myDate == myDate.maxDate())
   
 ```  
   
- Все встроенные объекты [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] имеют свойство `prototype`, которое доступно только для чтения.  К прототипу можно добавлять свойства и методы, но невозможно присвоить объекту другой прототип.  Однако пользовательским объектам можно присваивать новый прототип.  
+ Все встроенные [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] объекты имеют `prototype` свойство, которое доступно только для чтения. Свойства и методы могут быть добавлены в прототип, но объект нельзя назначить другому прототипу. Тем не менее определенных пользователем объектов можно назначить новый прототип.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]

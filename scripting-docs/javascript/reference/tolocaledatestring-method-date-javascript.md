@@ -1,67 +1,68 @@
 ---
-title: "Метод toLocaleDateString (Date) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "toLocaleDateString"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "toLocaleDateString - метод"
+title: "Метод toLocaleDateString (Date) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: toLocaleDateString
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: toLocaleDateString method
 ms.assetid: 0b83715c-8ced-4bd7-8940-a8007d002d10
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d6b4b019ad329a73bec13766932fbcadfa2ed133
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод toLocaleDateString (Date) (JavaScript)
-Возвращает дату в виде строки, соответствующей текущему языковому стандарту хост\-среды или заданному языковому стандарту.  
+# <a name="tolocaledatestring-method-date-javascript"></a>Метод toLocaleDateString (Date) (JavaScript)
+Возвращает дату в виде строкового значения, подходящего для текущего языкового стандарта среды размещения или указанного языкового стандарта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 dateObj.toLocaleDateString( [locales][, options])   
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `dateObj`  
- Обязательное.  Объект `Date`.  
+ Обязательный. Объект `Date`.  
   
  `locales`  
- Необязательный параметр.  Массив строк языкового стандарта, которые содержат один или несколько тегов языка или языкового стандарта.  Если включить несколько строк языкового стандарта, нужно перечислить их в порядке убывания приоритета, чтобы первая запись была предпочитаемым языковым стандартом.  Если пропустить этот параметр, то используется языковой стандарт по умолчанию среды выполнения JavaScript.  
+ Необязательно. Массив строк языкового стандарта, которые содержат один или несколько тегов языка или языкового стандарта. При включении нескольких строк языкового стандарта их следует перечислять в порядке убывания приоритета, чтобы первая запись была предпочитаемым языковым стандартом. Если этот параметр опущен, используется языковой стандарт по умолчанию среды выполнения JavaScript.  
   
  `options`  
- Необязательный параметр.  Объект, содержащий одно или несколько свойств, определяющих параметры сравнения.  
+ Необязательно. Объект, содержащий одно или несколько свойств, определяющих параметры сравнения.  
   
-## Заметки  
- Начиная с версии Internet Explorer 11, `toLocaleDateString` использует `Intl.DateTimeFormat` внутренне для форматирования даты, благодаря чему добавлена поддержка параметров `locales` и `options`.  Дополнительные сведения об этих параметрах см. в разделе [Intl.DateTimeFormat](../../javascript/reference/intl-datetimeformat-object-javascript.md).  
+## <a name="remarks"></a>Примечания  
+ Начиная с Internet Explorer 11 `toLocaleDateString` использует `Intl.DateTimeFormat` внутренним образом для форматирования даты, который обеспечивает поддержку для `locales` и `options` параметров. Дополнительные сведения об этих параметрах см. в разделе [Intl.DateTimeFormat](../../javascript/reference/intl-datetimeformat-object-javascript.md).  
   
 > [!IMPORTANT]
->  Параметры `locales` и `options` поддерживаются не во всех версиях режимах документа и браузера.  Дополнительные сведения см. в разделе "Требования".  
+>  Параметры `locales` и `options` поддерживаются лишь в некоторых режимах документов и версиях браузеров. Дополнительные сведения см. в разделе «Требования».  
   
- При использовании `toLocaleDateString` в режиме стандартного документа Internet Explorer 10 и более ранних режимах документов и режиме совместимости:  
+ При использовании `toLocaleDateString` в стандартном режиме документов Internet Explorer 10, ранних версиях режимов документов и режиме совместимости:  
   
 -   он возвращает строковое значение, содержащее дату в текущем часовом поясе.  
   
--   Возвращаемая Дата представляется в формате, используемом по умолчанию в текущем языковом стандарте хост\-среды.  
+-   Возвращаемая дата имеет формат по умолчанию текущего языкового стандарта хост-среды.  
   
- Если параметр `locales` опущен, возвращаемое значение этого метода невозможно использовать в скриптах, поскольку оно изменяется в зависимости от компьютера.  В этом сценарии, используйте метод только для форматирования отображаемого текста, но никогда как часть вычисления.  
+ Если параметр `locales` опустить, возвращаемое значение этого метода нельзя использовать в сценариях, поскольку оно зависит от компьютера. В этом случае метод только для форматирования отображаемого текста — никогда не при вычислении.  
   
-## Пример  
- В следующем примере показано, как использовать метод `toLocaleDateString` с конкретным языковым стандартом и параметрами сравнения.  
+## <a name="example"></a>Пример  
+ В следующем примере показано использование метода `toLocaleDateString` с заданными параметрами языкового стандарта и сравнения.  
   
-```javascript  
+```JavaScript  
 var date = new Date(Date.UTC(2013, 1, 1, 14, 0, 0));  
 var options = { weekday: "long", year: "numeric", month: "short",  
     day: "numeric" };  
@@ -80,13 +81,13 @@ document.write(date.toLocaleDateString("hi-IN", options));
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
  Параметры `locales` и `options`:  
   
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
-## См. также  
- [Метод toDateString \(Date\)](../../javascript/reference/todatestring-method-date-javascript.md)   
- [Метод toLocaleTimeString \(Date\)](../../javascript/reference/tolocaletimestring-method-date-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Метод toDateString (Date)](../../javascript/reference/todatestring-method-date-javascript.md)   
+ [Метод toLocaleTimeString (Date)](../../javascript/reference/tolocaletimestring-method-date-javascript.md)

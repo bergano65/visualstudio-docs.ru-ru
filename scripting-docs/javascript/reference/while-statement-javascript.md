@@ -1,34 +1,36 @@
 ---
-title: "Оператор while (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "while_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "циклические структуры, операторы while"
-  - "Оператор while"
+title: "While-оператор (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: while_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- loop structures, while statements
+- while statement
 ms.assetid: d63777cf-0e1a-4555-8d3a-334381001f48
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: de64bf9181a0fc86a528fa7af21216b99530f217
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Оператор while (JavaScript)
-Выполняет оператор или набор операторов до тех пор, пока указанное условие не будет равно `false`.  
+# <a name="while-statement-javascript"></a>Оператор while (JavaScript)
+Выполняет инструкцию или последовательность операторов, пока заданное условие является `false`.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 while (expression) {  
@@ -36,20 +38,20 @@ while (expression) {
 }   
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `expression`  
- Обязательный параметр.  Логическое выражение, проверяемое перед каждой итерацией цикла.  Если `expression` имеет значение `true`, цикл выполняется.  Если `expression` имеет значение `false`, цикл завершается.  
+ Обязательный. Логическое выражение, которое проверяется перед каждой итерацией цикла. Если `expression` — `true`, цикла. Если `expression` — `false`, выполнение цикла прекращается.  
   
  `statements`  
- Необязательный параметр.  Один или несколько операторов для выполнения, пока `expression` равно `true`.  
+ Необязательно. Один или несколько операторов для выполнения, если `expression` — `true`.  
   
-## Заметки  
- Оператор `while` проверяет `expression` перед первым выполнением цикла.  Если `expression` равно `false` в этот раз, цикл никогда не выполнится.  
+## <a name="remarks"></a>Примечания  
+ `while` Инструкции проверки `expression` до цикла. Если `expression` — `false` в настоящее время цикла не выполняется.  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере показано использование оператора `while`.  
   
-```javascript  
+```JavaScript  
 var i = 0;  
 var j = 10;  
 while (i < 100) {  
@@ -63,12 +65,12 @@ document.write(i);
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Оператор break](../../javascript/reference/break-statement-javascript.md)   
- [Оператор continue](../../javascript/reference/continue-statement-javascript.md)   
- [Оператор do...while](../../javascript/reference/do-dot-dot-dot-while-statement-javascript.md)   
- [Оператор for](../../javascript/reference/for-statement-javascript.md)   
+ [Оператор Continue](../../javascript/reference/continue-statement-javascript.md)   
+ [Оператор Do... while](../../javascript/reference/do-dot-dot-dot-while-statement-javascript.md)   
+ [Оператор For](../../javascript/reference/for-statement-javascript.md)   
  [Оператор for...in](../../javascript/reference/for-dot-dot-dot-in-statement-javascript.md)

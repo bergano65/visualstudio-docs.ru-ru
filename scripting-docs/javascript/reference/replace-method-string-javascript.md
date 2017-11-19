@@ -1,73 +1,75 @@
 ---
-title: "Метод replace (String) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "replace"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Replace - метод"
-  - "замена строк"
+title: "Метод replace (String) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: replace
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- replacing strings
+- Replace method
 ms.assetid: 5f0e4765-df4d-4887-bd09-efe5e58251bf
-caps.latest.revision: 28
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 28
+caps.latest.revision: "28"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e78e17d4b9060a3a52498109a744c13cdf972abb
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод replace (String) (JavaScript)
-Заменяет текст в строке, используя регулярное выражение или строку поиска.  
+# <a name="replace-method-string-javascript"></a>Метод replace (String) (JavaScript)
+Заменяет текст в строке с помощью регулярного выражения или строки поиска.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 stringObj. replace(rgExp, replaceText)  
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `stringObj`  
- Обязательный.  Объект `String` или строковый литерал, в которых нужно выполнить замену.  Метод **replace** не меняет эту строку,  но значение, возвращаемое этим методом, представляет собой строку, созданную в результате замены.  
+ Обязательный. Объект `String` или строковый литерал, в котором выполняется замена. Эта строка не изменяется методом **заменить** метод. Вместо этого метод возвращает строку, созданную заменой.  
   
  `rgExp`  
- Обязательный.  Экземпляр объекта **Regular Expression**, содержащий шаблон регулярного выражения и установленные флаги.  Также может быть объектом `String` или строковым литералом, представляющим регулярное выражение.  Если `rgExp` не является экземпляром объекта **Regular Expression**, он преобразуется в строку, после чего выполняется поиск точного соответствия; попытки преобразовать строку в регулярное выражение не предпринимаются.  
+ Обязательный. Экземпляр **регулярное выражение** объект, содержащий шаблон регулярного выражения и установленные флаги. Также может быть объектом `String` или строковым литералом, представляющим регулярное выражение. Если `rgExp` не является экземпляром **регулярное выражение** объекта, он преобразуется в строку и выполняется поиск точного соответствия выполняется для результатов, не предпринимается попытка преобразовать строку в регулярном выражении.  
   
  `replaceText`  
- Обязательный.  Объект `String` или строковый литерал, содержащий текст, на который необходимо заменить все найденные соответствия `rgExp` в `stringObj`.  В [!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] и более поздних версиях аргумент `replaceText` может быть также функцией, возвращающей текст замены.  
+ Обязательный. Объект `String` или строковый литерал, содержащий текст, на который требуется заменить все найденные соответствия аргумента `rgExp` в объекте `stringObj`. В [!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] и более поздних версий аргумент `replaceText` также может быть функцией, возвращающей текст для замены.  
   
-## Возвращаемое значение  
- Результат применения метода **replace** представляет собой копию `stringObj` после внесения указанных замен.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Результат **заменить** метод представляет собой копию `stringObj` после внесения указанных замен.  
   
-## Заметки  
- Все описанные ниже переменные соответствия можно использовать для определения последнего найденного соответствия и строки, из которой оно поступило.  Переменные соответствия можно использовать при замене текста в случае, если строка замены определяется динамически.  
+## <a name="remarks"></a>Примечания  
+ Ниже указаны переменные соответствия, которые можно использовать для определения последнего найденного соответствия и содержащей его строки. Переменные соответствия можно использовать при замене текста, если строка для замены должна определяться динамически.  
   
 |Знаки|Значение|  
-|-----------|--------------|  
-|**$$**|`$` \([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] или более поздней версии\)|  
-|**$&**|Определяет часть `stringObj`, которая полностью совпадает с шаблоном.  \([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] или более поздней версии\)|  
-|`$``|Определяет часть `stringObj`, которая предшествует совпадению, описанному параметром **$&**.  \([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] или более поздней версии\)|  
-|`$'`|Определяет часть `stringObj`, которая следует за совпадением, описанным параметром **$&**.  \([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] или более поздней версии\)|  
-|`$`  ***n***|Найденное частичное совпадение под номером *n*, где *n* — это одна десятичная цифра от 1 до 9.  \([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] или более поздней версии\)|  
-|`$`  ***nn***|Найденное частичное совпадение под номером *nn*, где *nn* — это одна десятичная цифра от 01 до 99.  \([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] или более поздней версии\)|  
+|----------------|-------------|  
+|**$$**|`$` ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] или более поздней версии)|  
+|**$&**|Определяет часть `stringObj`, с которой совпадает весь шаблон. ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] или более поздней версии)|  
+|`$``|Определяет часть `stringObj` , предшествующую совпадению, описываемого  **$&** . ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] или более поздней версии)|  
+|`$'`|Определяет часть `stringObj` , следующую за совпадением, описываемого  **$&** . ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] или более поздней версии)|  
+|`$`  ***n***|*n* Th частичное совпадение под, где  *n*  является одна десятичная цифра от 1 до 9. ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] или более поздней версии)|  
+|`$`  ***nn***|*nn* Th частичное совпадение под, где  *nn*  — это 2 разряда десятичное число от 01 до 99. ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] или более поздней версии)|  
   
- Если `replaceText` является функцией, она вызывается для каждой найденной подстроки с описанными ниже аргументами *m* \+ 3, где *m* — число открывающих круглых скобок в `rgExp`.  Первым аргументом является найденная подстрока.  Следующие *m* аргументов — это все совпадения, обнаруженные в результате поиска.  Аргумент *m* \+ 2 — это смещение в пределах объекта `stringObj`, в котором нашлось совпадение, а аргумент *m* \+ 3 — это объект `stringObj`.  Результатом является строковое значение, полученное в результате замены каждой найденной подстроки на соответствующее возвращенное значение вызова функции.  
+ Если `replaceText` является функцией, то для каждой найденной подстроки функция вызывается следующим *m* + 3 аргумента где *m* число открывающих круглых скобок в `rgExp`. Первым аргументом является подстрока, поиск которой выполняется. Следующий *m* аргументов — это все совпадения, обнаруженные во время поиска. Аргумент *m* + 2 — это смещение в `stringObj` где нашлось совпадение, а аргумент *m* + 3 — `stringObj`. Результатом является строка, в которой все найденные подстроки заменены соответствующим значением, возвращаемым вызываемой функцией.  
   
- Метод **replace** обновляет свойства глобального объекта `RegExp`.  
+ **Заменить** метод обновляет свойства глобального `RegExp` объекта.  
   
-## Пример  
- В следующем примере показано использование метода **replace** для замены всех встречающихся в тесте артиклей the на артикль a.  
+## <a name="example"></a>Пример  
+ Следующий пример иллюстрирует использование **заменить** метод для замены всех вхождений «» на «».  
   
-```javascript  
+```JavaScript  
 var s = "the batter hit the ball with the bat";  
   
 // Replace "the" with "a".  
@@ -77,9 +79,9 @@ document.write(result);
 // Output: a batter hit a ball with a bat  
 ```  
   
- Кроме того, метод **replace** позволяет заменять части выражений в шаблоне.  В следующем примере меняются местами все пары слов в строке.  
+ Кроме того **заменить** позволяет заменять подвыражения в шаблоне. В следующем примере меняются местами все пары слов в строке.  
   
-```javascript  
+```JavaScript  
   
 var s = "The quick brown fox jumped over the lazy dog.";  
 var re = /(\S+)(\s+)(\S+)/g;  
@@ -90,9 +92,9 @@ document.write(result);
 // Output:  quick The fox brown over jumps lazy the dog.  
 ```  
   
- В следующем примере, который работает в [!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] и более поздних версиях, показано, как использовать функцию, возвращающую текст замены.  Она заменяет каждое число, после которого стоит буква F, на эквивалентное значение в градусах Цельсия.  
+ В следующем примере, который работает в [!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] и более поздних версиях, показано, как использовать функцию, возвращающую текст замены. Она заменяет любой экземпляр числа перед "F" с преобразованием в градусы Цельсия.  
   
-```javascript  
+```JavaScript  
 function f2c(s1) {  
     // Initialize pattern.  
     var test = /(\d+(\.\d*)?)F\b/g;  
@@ -112,18 +114,18 @@ document.write(f2c("Water freezes at 32F and boils at 212F."));
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **Применение**: [Объект String](../../javascript/reference/string-object-javascript.md)  
+ **Применяется к**: [строковый объект](../../javascript/reference/string-object-javascript.md)  
   
-## См. также  
- [Метод exec \(Regular Expression\)](../../javascript/reference/exec-method-regular-expression-javascript.md)   
- [Метод match \(String\)](../../javascript/reference/match-method-string-javascript.md)   
+## <a name="see-also"></a>См. также  
+ [Метод exec (Regular Expression)](../../javascript/reference/exec-method-regular-expression-javascript.md)   
+ [Метод Match (String)](../../javascript/reference/match-method-string-javascript.md)   
  [Объект RegExp](../../javascript/reference/regexp-object-javascript.md)   
- [Метод search \(String\)](../../javascript/reference/search-method-string-javascript.md)   
- [Метод test \(Regular Expression\)](../../javascript/reference/test-method-regular-expression-javascript.md)   
- [Regular Expression Programming \(JavaScript\)](http://msdn.microsoft.com/ru-ru/3b62e27c-4f07-4726-a95b-6e841807bfaf)   
- [Alternation and Subexpressions \(JavaScript\)](http://msdn.microsoft.com/ru-ru/c59dd3e8-7fee-493e-9123-065af1e651ae)   
- [Backreferences \(JavaScript\)](http://msdn.microsoft.com/ru-ru/5d8dbd5a-cd03-4548-850b-9d7bad2c839a)   
- [Пример приложения с перетаскиванием на HTML5](http://code.msdn.microsoft.com/Drag-and-drop-e2701a72)
+ [Метод Search (String)](../../javascript/reference/search-method-string-javascript.md)   
+ [Метод Test (Regular Expression)](../../javascript/reference/test-method-regular-expression-javascript.md)   
+ [Программирование регулярных выражений (JavaScript)](http://msdn.microsoft.com/en-us/3b62e27c-4f07-4726-a95b-6e841807bfaf)   
+ [Чередование и части выражений (JavaScript)](http://msdn.microsoft.com/en-us/c59dd3e8-7fee-493e-9123-065af1e651ae)   
+ [Обратные ссылки (JavaScript)](http://msdn.microsoft.com/en-us/5d8dbd5a-cd03-4548-850b-9d7bad2c839a)   
+ [HTML5 перетаскивание примера приложения](http://code.msdn.microsoft.com/Drag-and-drop-e2701a72)

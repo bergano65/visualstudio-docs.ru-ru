@@ -1,29 +1,30 @@
 ---
-title: "CA1307: укажите StringComparison | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1307"
-  - "SpecifyStringComparison"
-helpviewer_keywords: 
-  - "CA1307"
-  - "SpecifyStringComparison"
+title: "CA1307: Укажите StringComparison | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1307
+- SpecifyStringComparison
+helpviewer_keywords:
+- CA1307
+- SpecifyStringComparison
 ms.assetid: 9b0d5e71-1683-4a0d-bc4a-68b2fbd8af71
-caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 61d8ca557bfc55e3488a35e82f0242f931c51ed4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# CA1307: укажите StringComparison
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1307-specify-stringcomparison"></a>CA1307: укажите StringComparison
 |||  
 |-|-|  
 |TypeName|SpecifyStringComparison|  
@@ -31,20 +32,20 @@ caps.handback.revision: 11
 |Категория|Microsoft.Globalization|  
 |Критическое изменение|Не критическое|  
   
-## Причина  
- В операции сравнения строк используется перегрузка метода, которая не устанавливает параметр <xref:System.StringComparison>.  
+## <a name="cause"></a>Причина  
+ Операции сравнения строк используется перегрузка метода, которая не задает <xref:System.StringComparison> параметра.  
   
-## Описание правила  
- Многие операции со строками \(в первую очередь методы <xref:System.String.Compare%2A> и <xref:System.String.Equals%2A>\) предоставляют перегрузки, которые принимают в качестве параметра перечисление <xref:System.StringComparison>.  
+## <a name="rule-description"></a>Описание правила  
+ Многие строковые операции, наиболее важные <xref:System.String.Compare%2A> и <xref:System.String.Equals%2A> обеспечивают перегрузку, которая принимает <xref:System.StringComparison> значение перечисления в качестве параметра.  
   
- Если существует перегрузка, которая принимает параметр <xref:System.StringComparison>, следует использовать ее, а не другую перегрузку, не принимающую этого параметра.  При явном задании этого параметра код зачастую становится более ясным и простым для использования.  
+ Каждый раз, когда существует перегрузка, принимающую <xref:System.StringComparison> параметра, его следует использовать вместо перегрузку, которая не принимает этот параметр. Явно задать этот параметр, код часто становится более ясным и проще.  
   
-## Устранение нарушений  
- Чтобы устранить нарушение данного правила, замените методы сравнения строк на перегрузки, которые принимают в качестве параметра перечисление <xref:System.StringComparison>.  Например, замените `String.Compare(str1, str2)` на метод `String.Compare(str1, str2, StringComparison.Ordinal)`.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Чтобы устранить нарушение данного правила, измените методы сравнения строк на перегрузки, принимающие <xref:System.StringComparison> перечисление как параметр. Например: измените `String.Compare(str1, str2)` для `String.Compare(str1, str2, StringComparison.Ordinal)`.  
   
-## Отключение предупреждений  
- Отключение предупреждений о нарушении данного правила безопасно в том случае, если библиотека или приложение предназначено для ограниченного использования в одном регионе и поэтому их локализация не планируется.  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ Можно безопасно отключать предупреждение из этого правила, если библиотека или приложение предназначено для ограниченного круга локальных пользователей и поэтому не будет локализовано.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Предупреждения глобализации](../code-quality/globalization-warnings.md)   
  [CA1309: используйте порядковый параметр StringComparison](../code-quality/ca1309-use-ordinal-stringcomparison.md)

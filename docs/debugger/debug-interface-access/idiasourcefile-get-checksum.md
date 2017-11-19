@@ -1,59 +1,58 @@
 ---
-title: "IDiaSourceFile::get_checksum | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSourceFile::get_checksum - метод"
+title: "IDiaSourceFile::get_checksum | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSourceFile::get_checksum method
 ms.assetid: aad63a7e-4e22-44e4-8a5b-81b5174ced1e
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c2bcfbc701f6f4799a51d09fac4c4eb184e6f5d7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSourceFile::get_checksum
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Возвращает байты контрольной суммы.  
+# <a name="idiasourcefilegetchecksum"></a>IDiaSourceFile::get_checksum
+Получает байты контрольной суммы.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT get_checksum (   
-   DWORD  cbData,  
-   DWORD* pcbData,  
-   BYTE   data[]  
+```C++  
+HRESULT get_checksum (   
+   DWORD  cbData,  
+   DWORD* pcbData,  
+   BYTE   data[]  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `cbData`  
- \[in\] размер буфера данных в байтах.  
+ [in] Размер буфера данных, в байтах.  
   
  `pcbData`  
- \[out\] возвращает число байтов контрольной суммы.  Этот параметр не может иметь значение `NULL`.  
+ [out] Возвращает число байтов контрольной суммы. Этот параметр не может быть `NULL`.  
   
  `data`  
- \[in, out\] буфер, который заполняется байт контрольной суммы.  Если этот параметр `NULL`после этого  `pcbData` возвращает необходимое число байтов.  
+ [in, out] Буфер, заполненный байт контрольной суммы. Если этот параметр имеет `NULL`, затем `pcbData` возвращает число байтов, необходимое.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Чтобы определить тип алгоритма контрольной суммы, который использовался для создания байты контрольной суммы, вызовите [IDiaSourceFile::get\_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md) метод.  
+## <a name="remarks"></a>Примечания  
+ Чтобы определить тип алгоритма подсчета контрольной суммы, которая использовалась при создании контрольной суммы байт, вызовите [IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md) метод.  
   
- Контрольная сумма обычно создается из исходного файла образа, поэтому отражены изменения в файле источника в изменениях в байтах контрольной суммы.  Если байты контрольной суммы не соответствуют контрольной суммы, созданной из загруженного файла образа, то файл должен быть повреждено или искажено учитывается.  
+ Контрольная сумма обычно создается из образа исходного файла, поэтому изменения в исходном файле отражаются изменения в байтах контрольной суммы. Если байт контрольной суммы не совпадают контрольной суммы, созданные из загруженного файла, изображения, то файл считается поврежден или подделан.  
   
- Типичные контрольные суммы не более 32 байта, но не предполагать, что максимальный размер контрольной суммы.  Установка `data` параметр  `NULL` получить число байтов, необходимое для получения контрольная сумма.  Выберите буфер подходящего размера и этот метод следует вызывать несколько раз с новым буфером.  
+ Обычно контрольные суммы не более 32 байта, но не следует предполагать, что максимальный размер контрольной суммы. Задать `data` параметр `NULL` дает число байтов, необходимых для получения контрольной суммы. Затем выделить буфер соответствующий размер и вызвать этот метод еще раз с помощью нового буфера.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
- [IDiaSourceFile::get\_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)
+ [IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)

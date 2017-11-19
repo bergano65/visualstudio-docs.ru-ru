@@ -1,37 +1,40 @@
 ---
-title: "Метод set (Int8Array) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Метод set (Int8Array) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 4beae82e-8556-48aa-86c6-18c8859d913e
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bfa9c319caf448e20888aeefa2f29aaade9aa364
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод set (Int8Array)
+# <a name="set-method-int8array"></a>Метод set (Int8Array)
 Задает значение или массив значений.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```javascript  
+```JavaScript  
 int8Array.set(index, value);  
 int8Array.set(array, offset);  
   
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `index`  
  Индекс задаваемого расположения.  
   
@@ -42,17 +45,17 @@ int8Array.set(array, offset);
  Типизированный или нетипизированный массив задаваемых значений.  
   
  `offset`  
- Индекс в текущем массиве, по которому должны быть записаны значения.  
+ Индекс в текущем массиве, начиная с которого должны быть записаны значения.  
   
-## Заметки  
- Если входной массив представляет собой TypedArray, для обоих массивов может использоваться один и тот же базовый ArrayBuffer.  В этой ситуации задание значений происходит так, как если бы все данные сначала копировались во временный буфер, не перекрывающийся ни с одним из массивов, а затем данные из временного буфера копировались бы в текущий массив.  
+## <a name="remarks"></a>Примечания  
+ Если входной массив является массивом TypedArray, для обоих массивов может использоваться один и тот же базовый буфер ArrayBuffer. В этой ситуации задание значений происходит так, как если бы все данные сначала копировались во временный буфер, не перекрывающийся ни с одним из массивов, а затем данные из временного буфера копировались бы в текущий массив.  
   
- Если смещение плюс длина заданного массива находятся вне диапазона текущего TypedArray, вызывается исключение.  
+ Если смещение плюс длина заданного массива находятся вне диапазона текущего массива TypedArray, вызывается исключение.  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере показано, как задать первый элемент массива.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -69,5 +72,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

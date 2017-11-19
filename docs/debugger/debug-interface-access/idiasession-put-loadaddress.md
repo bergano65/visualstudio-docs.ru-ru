@@ -1,46 +1,45 @@
 ---
-title: "IDiaSession::put_loadAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSession::put_loadAddress - метод"
+title: "IDiaSession::put_loadAddress | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::put_loadAddress method
 ms.assetid: b157b245-1ea0-4b80-8962-d8b278dbc742
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3b12ef6fa6da9338346aa997ba16cb023548f138
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::put_loadAddress
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Задает адрес загрузки для исполняемого файла, который соответствует символам в этом хранилище символов.  
+# <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
+Задает адрес загрузки для исполняемого файла, соответствующее для символов в данном хранилище символов.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT put_loadAddress (   
-   ULONGLONG NewVal  
+```C++  
+HRESULT put_loadAddress (   
+   ULONGLONG NewVal  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `NewVal`  
- \[in\] загружает адрес для исполняемого файла.  
+ [in] Загрузить адрес для исполняемого файла.  
   
-## Заметки  
- Свойства виртуального адреса символов \(VA\) вычисляются с помощью значения этого метода.  Виртуальные адреса не вычисляются если это свойство не установлено в ненулевое значение.  
+## <a name="remarks"></a>Примечания  
+ Свойства виртуального адреса (VA) символа вычисляются с помощью значения этого метода. Если это свойство не задано равным нулю, виртуальных адресов не вычисляются.  
   
 > [!NOTE]
->  Этот метод следует вызывать при получении [IDiaSession](../../debugger/debug-interface-access/idiasession.md) объект и прежде чем начать с помощью объекта если необходимо использовать любые виртуальные свойства в символах.  
+>  Необходимо вызвать этот метод при получении [IDiaSession](../../debugger/debug-interface-access/idiasession.md) объекта и перед началом работы с помощью объекта, если необходимо использовать любые виртуальные свойства на символы.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

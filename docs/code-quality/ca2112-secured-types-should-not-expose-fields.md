@@ -1,11 +1,10 @@
 ---
-title: 'CA2112: Secured types should not expose fields | Microsoft Docs'
+title: "CA2112: Защищенные типы не должны предоставлять поля | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,77 +14,62 @@ helpviewer_keywords:
 - SecuredTypesShouldNotExposeFields
 - CA2112
 ms.assetid: 9eb13a78-3487-49f2-81d1-3c3866db132f
-caps.latest.revision: 15
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: b57c27397fc28536aade5bb5907a0b8d6ad28aab
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d60784b92d414b6a226605cd406378c1686529dd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112: Secured types should not expose fields
+# <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112: защищенные типы не должны предоставлять поля
 |||  
 |-|-|  
 |TypeName|SecuredTypesShouldNotExposeFields|  
 |CheckId|CA2112|  
-|Category|Microsoft.Security|  
-|Breaking Change|Breaking|  
+|Категория|Microsoft.Security|  
+|Критическое изменение|Критическое|  
   
-## <a name="cause"></a>Cause  
- A public or protected type contains public fields and is secured by a [Link Demands](/dotnet/framework/misc/link-demands).  
+## <a name="cause"></a>Причина  
+ Открытый или защищенный тип содержит открытые поля и защищен [требования связывания](/dotnet/framework/misc/link-demands).  
   
-## <a name="rule-description"></a>Rule Description  
- If code has access to an instance of a type that is secured by a link demand, the code does not have to satisfy the link demand to access the type's fields.  
+## <a name="rule-description"></a>Описание правила  
+ Если код имеет доступ к экземпляру типа, защищенного запросом компоновки, то для получения доступа к полям типа коду не требуется удовлетворять запросу компоновки.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, make the fields nonpublic and add public properties or methods that return the field data. LinkDemand security checks on types protect access to the type's properties and methods. However, code access security does not apply to fields.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Чтобы устранить нарушение данного правила, сделать поля неоткрытыми и добавить открытые свойства или методы, возвращающие данные поля. Проверки безопасности LinkDemand для типов защиты доступа к свойствам и методам типа. Тем не менее доступом для кода не применяется к полям.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Both for security issues and for good design, you should fix violations by making the public fields nonpublic. You can suppress a warning from this rule if the field does not hold information that should remain secured, and you do not rely on the contents of the field.  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ Для проблем безопасности и создать эффективную систему необходимо устранить нарушения, делая nonpublic открытые поля. Можно подавить предупреждение из этого правила, если поле не содержит информации, которую требуется защищать, и не следует полагаться на значения поля.  
   
-## <a name="example"></a>Example  
- The following example is composed of a library type (`SecuredTypeWithFields`) with unsecured fields, a type (`Distributor`) that can create instances of the library type and mistaken passes instances to types do not have permission to create them, and application code that can read an instance's fields even though it does not have the permission that secures the type.  
+## <a name="example"></a>Пример  
+ Следующий пример состоит из типа библиотеки (`SecuredTypeWithFields`) с незащищенными полями, типа (`Distributor`), можно создать экземпляры типа библиотеки ошибочный передает экземпляров типа нет разрешения для их создания и кода приложения, можно прочитать поля экземпляра, несмотря на то, что он не имеет разрешения, которое защищает тип.  
   
- The following library code violates the rule.  
+ Следующий код библиотеки нарушает правило.  
   
  [!code-csharp[FxCop.Security.LinkDemandOnField#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_1.cs)]  
   
-## <a name="example"></a>Example  
- The application cannot create an instance because of the link demand that protects the secured type. The following class enables the application to obtain an instance of the secured type.  
+## <a name="example"></a>Пример  
+ Приложение не может создать экземпляр из-за запрос компоновки защищает тип. Следующий класс позволяет приложению получить экземпляр защищенного типа.  
   
  [!code-csharp[FxCop.Security.LDOnFieldsDistributor#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_2.cs)]  
   
-## <a name="example"></a>Example  
- The following application illustrates how, without permission to access a secured type's methods, code can access its fields.  
+## <a name="example"></a>Пример  
+ В следующем приложении демонстрируется, как это сделать, без разрешения для доступа к методам защищенного типа, код может обращаться к его поля.  
   
  [!code-csharp[FxCop.Security.TestLinkDemandOnFields#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_3.cs)]  
   
- This example produces the following output.  
+ В этом примере формируются следующие данные:  
   
- **Creating an instance of SecuredTypeWithFields.**  
-**Secured type fields: 22, 33**  
-**Changing secured type's field...**  
-**Cached Object fields: 99, 33**   
-## <a name="related-rules"></a>Related Rules  
- [CA1051: Do not declare visible instance fields](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)  
+ **Создание экземпляра SecuredTypeWithFields.**  
+**Защищенные поля типа: 22, 33**  
+**Изменение защищенного типа поля...**  
+**Поля объекта в кэше: 99, 33**   
+## <a name="related-rules"></a>Связанные правила  
+ [CA1051: не объявляйте видимые поля экземпляров](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)  
   
-## <a name="see-also"></a>See Also  
- [Link Demands](/dotnet/framework/misc/link-demands)   
- [Data and Modeling](/dotnet/framework/data/index)
+## <a name="see-also"></a>См. также  
+ [Требования связывания](/dotnet/framework/misc/link-demands)   
+ [Данные и моделирование](/dotnet/framework/data/index)

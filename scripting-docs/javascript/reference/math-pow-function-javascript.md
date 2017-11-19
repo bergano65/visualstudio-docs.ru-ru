@@ -1,35 +1,37 @@
 ---
-title: "Функция Math.pow (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "pow"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "возведение в степень"
-  - "Math - объект"
-  - "pow - метод"
+title: "Функция Math.pow (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: pow
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- exponentiation
+- pow method
+- Math object
 ms.assetid: 18465617-5d17-4bac-b251-fa57970fec3f
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c976ff7b414688703e817ba3c690cfe7e359483f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Функция Math.pow (JavaScript)
-Возвращает значение выражения основания, возведенного в указанную степень.  
+# <a name="mathpow-function-javascript"></a>Функция Math.pow (JavaScript)
+Возвращает значение основания, возведенного в заданную степень.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
@@ -37,24 +39,24 @@ Math.pow(
 base, exponent)   
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  *base*  
- Обязательный.  Значение основания выражения.  
+ Обязательный. Базовое значение выражения.  
   
- *exponent*  
- Обязательный.  Значение экспоненты выражения.  
+ *показатель степени*  
+ Обязательный. Показатель степени значение выражения.  
   
-## Пример  
- В следующем примере числовое выражение, равное baseexponent, возвращает 1000.  
+## <a name="example"></a>Пример  
+ В следующем примере числовое выражение равно baseexponent возвращает 1000.  
   
-```javascript  
+```JavaScript  
 Math.pow(10,3);  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **Относится к**: [Объект Math](../../javascript/reference/math-object-javascript.md)  
+ **Применяется к**: [объект Math](../../javascript/reference/math-object-javascript.md)  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Объект Math](../../javascript/reference/math-object-javascript.md)

@@ -1,44 +1,43 @@
 ---
-title: "IDiaSession::getSymbolsByAddr | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSession::getSymbolsByAddr - метод"
+title: "IDiaSession::getSymbolsByAddr | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::getSymbolsByAddr method
 ms.assetid: eafcc757-b488-487d-a063-ad3703ff42e8
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: aa3467ad1129ea7f64444bfff0c8762c117cea1a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::getSymbolsByAddr
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает перечислитель, который находит символы в порядке их адресов.  
+# <a name="idiasessiongetsymbolsbyaddr"></a>IDiaSession::getSymbolsByAddr
+Возвращает перечислитель, выполняющий поиск символов в порядке их адреса.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT getSymbolsByAddr(   
-   IDiaEnumSymbolsByAddr** ppEnumbyAddr  
+```C++  
+HRESULT getSymbolsByAddr(   
+   IDiaEnumSymbolsByAddr** ppEnumbyAddr  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppEnumbyAddr`  
- \[out\] возвращает [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) объект.  Используйте этот интерфейс, чтобы поиск символов в хранилище символов участком памяти.  
+ [out] Возвращает [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) объекта. Этот интерфейс можно используйте для поиска символов в хранилище символов, расположение в памяти.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)

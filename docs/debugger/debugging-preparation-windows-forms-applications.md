@@ -1,61 +1,59 @@
 ---
-title: "Подготовка к отладке: приложения Windows Forms | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "отладка [C#], приложения Windows"
-  - "отладка [J#], приложения Windows"
-  - "отладка [Visual Basic], приложения Windows"
-  - "отладка [Visual Studio], приложения Windows"
-  - "отладка приложений Windows"
-  - "приложения Windows, отладка"
+title: "Подготовка к отладке: Приложения Windows Forms | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugging Windows applications
+- Windows applications, debugging
+- debugging [Visual Studio], Windows applications
+- debugging [J#], Windows applications
+- debugging [C#], Windows applications
+- debugging [Visual Basic], Windows applications
 ms.assetid: 7092ee7f-8378-4def-aef8-1695bd97cf14
-caps.latest.revision: 28
-caps.handback.revision: 28
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "28"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d2d8f123359e4dfff02f05709d8028c2b9fcd3e9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Подготовка к отладке: приложения Windows Forms
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Шаблон проекта Windows Forms создает приложение Windows Forms.  Отладка приложений такого типа в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] не вызывает никаких затруднений.  Дополнительные сведения см. в разделе [Creating a Windows Application Project](http://msdn.microsoft.com/ru-ru/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+# <a name="debugging-preparation-windows-forms-applications"></a>Подготовка к отладке: приложения Windows Forms
+Шаблон проекта Windows Forms создает приложение Windows Forms. Отладка приложений такого типа в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] не вызывает никаких затруднений. Дополнительные сведения см. в разделе [Создание проекта приложения Windows](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
- При создании проекта Windows Forms из шаблона проекта, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] автоматически создает требуемые параметры для отладки и выпуска.  При необходимости эти параметры можно изменить.  Эти параметры могут быть изменены в диалоговом окне **Страницы свойств \<имя проекта\>** \(**Мой проект** в Visual Basic\).  
+ При создании проекта Windows Forms из шаблона проекта, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] автоматически создает требуемые параметры для отладки и выпуска. При необходимости эти параметры можно изменить. Эти параметры могут быть изменены в  **\<имя проекта > страницы свойств** диалоговое окно (**Мой проект** в Visual Basic).  
   
- Дополнительные сведения см. в разделе [Рекомендуемые параметры свойств](../debugger/managed-debugging-recommended-property-settings.md).  
+ Дополнительные сведения см. в разделе [рекомендуемые параметры свойств](../debugger/managed-debugging-recommended-property-settings.md).  
   
  В следующей таблице приведены дополнительные параметры, рекомендуемые к использованию.  
   
-### "Свойства конфигурации" во вкладке "Отладка"  
+### <a name="configuration-properties-in-debug-tab"></a>"Свойства конфигурации" во вкладке "Отладка"  
   
 |**Имя свойства**|**Параметр**|  
-|----------------------|------------------|  
-|**Действие при запуске**|-   Установите в **Запуск проекта** в большинстве случаев.  Установите в **Запуск внешней программы**, если требуется запускать другой исполняемый файл при запуске отладки \(обычно для отладки DLL\).|  
+|-----------------------|-----------------|  
+|**Действие при запуске**|-Значение **Открытие проекта** большую часть времени. Значение **запуск внешней программы** Если требуется запускать другой исполняемый файл при запуске отладки (обычно для отладки DLL).|  
   
- Можно выполнять отладку приложений Windows Forms из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] или путем присоединения к уже запущенному приложению.  Дополнительные сведения о присоединении см. в разделе [Присоединение к выполняемым процессам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+ Можно выполнять отладку приложений Windows Forms из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] или путем присоединения к уже запущенному приложению. Дополнительные сведения о присоединении см. в разделе [присоединение к процессу под управлением](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
-### Выполнение отладки приложения Windows Forms на C\#, F\# или Visual Basic  
+### <a name="to-debug-a-c-f-or-visual-basic-windows-forms-application"></a>Выполнение отладки приложения Windows Forms на C#, F# или Visual Basic  
   
 1.  Откройте проект в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
 2.  Создайте точки останова, если требуется.  
   
-     Поскольку приложения Windows Forms управляются событиями, точки останова появятся в коде обработчиков событий, или в методах, вызываемых ими.  Типичные события, в которые стоит помещать точки останова:  
+     Поскольку приложения Windows Forms управляются событиями, точки останова появятся в коде обработчиков событий, или в методах, вызываемых ими. Типичные события, в которые стоит помещать точки останова:  
   
     1.  события, связанные с элементом управления, такие как Click, Enter, и т.д.;  
   
@@ -63,17 +61,17 @@ manager: "ghogen"
   
     3.  события, связанные с фокусом и проверками.  
   
-     Дополнительные сведения см. в разделе [Creating Event Handlers in Windows Forms](../Topic/Creating%20Event%20Handlers%20in%20Windows%20Forms.md).  
+     Подробнее см. в разделе [Создание обработчиков событий в Windows Forms](/dotnet/framework/winforms/creating-event-handlers-in-windows-forms).  
   
-3.  В меню **Отладка** выберите команду **Запуск**.  
+3.  На **отладки** меню, нажмите кнопку **запустить**.  
   
-4.  Отладка использует методы, обсуждаемые в [Основы отладки](../debugger/debugger-basics.md).  
+4.  Отладка с помощью способов, приведенных в [основы отладчик](../debugger/debugger-basics.md).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Отладка управляемого кода](../debugger/debugging-managed-code.md)   
- [Типы проектов C\#, F\# и Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Практическое руководство. Настройка конфигураций отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md)   
- [Параметры проекта для конфигураций отладки C\#](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Типы проектов C#, F# и Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [Как: набор отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md)   
+ [Параметры проекта для конфигураций отладки C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Параметры проекта для конфигурации отладки Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Присоединение к выполняемым процессам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Windows Forms](../Topic/Windows%20Forms.md)
+ [Windows Forms](/dotnet/framework/winforms/index)

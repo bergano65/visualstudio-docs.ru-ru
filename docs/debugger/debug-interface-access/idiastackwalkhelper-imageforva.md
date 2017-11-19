@@ -1,47 +1,46 @@
 ---
-title: "IDiaStackWalkHelper::imageForVA | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackWalkHelper::imageForVA - метод"
+title: "IDiaStackWalkHelper::imageForVA | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackWalkHelper::imageForVA method
 ms.assetid: 8d4edabf-3c01-4fef-8b61-4779f3371067
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: df2b5f938d136a3013c3128f3e32c583c109708e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackWalkHelper::imageForVA
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Возвращает начало образа исполняемого файла в памяти заданный виртуальный адрес расположения в области памяти исполняемого файла.  
+# <a name="idiastackwalkhelperimageforva"></a>IDiaStackWalkHelper::imageForVA
+Возвращает дату начала исполняемый образ в памяти указанного виртуального адреса где-либо в области памяти исполняемого файла.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```C++  
 HRESULT imageForVA(  
-   ULONGLONG  vaContext,  
-   ULONGLONG *pvaImageStart  
+   ULONGLONG  vaContext,  
+   ULONGLONG *pvaImageStart  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `vaContext`  
- \[in\] виртуальный адрес, который находится в пространстве исполняемого файла.  
+ [in] Виртуальный адрес в пространство исполняемого файла.  
   
  `pvaImageStart`  
- \[out\] возвращает начальный виртуальный адрес образа исполняемого файла.  
+ [out] Возвращает начальный виртуальный адрес исполняемого образа.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

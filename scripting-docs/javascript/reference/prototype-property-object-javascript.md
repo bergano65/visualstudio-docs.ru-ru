@@ -1,48 +1,50 @@
 ---
-title: "Свойство prototype (Object) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "Prototype"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "наследование, объекты"
-  - "Prototype - свойство"
+title: "Свойство prototype (Object) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: Prototype
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- inheritance, objects
+- Prototype property
 ms.assetid: 9fc434a1-5995-4fcb-a4e8-00e7f615aaa2
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a73d213b6b17f5046eb1f4c498aeb223f942f2d8
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Свойство prototype (Object) (JavaScript)
+# <a name="prototype-property-object-javascript"></a>Свойство prototype (Object) (JavaScript)
 Возвращает ссылку на прототип класса объектов.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 objectName.prototype  
 ```  
   
-## Заметки  
- Аргумент `objectName` представляет собой имя объекта.  
+## <a name="remarks"></a>Примечания  
+ Аргумент `objectName` является именем объекта.  
   
- Свойство `prototype` используется для предоставления базового набора функциональных возможностей классу объектов.  Новые экземпляры объекта наследуют поведение прототипа, присвоенного этому объекту.  
+ Чтобы для класса объектов обеспечить базовый набор функциональности, используйте свойство `prototype`. Новые экземпляры объекта "наследуют" поведение прототипа, назначенного этому объекту.  
   
- Например, чтобы добавить в объект `Array` метод, возвращающий значение наибольшего элемента массива, объявите функцию, добавьте ее в свойство `Array.prototype`, а затем используйте ее.  
+ Например, чтобы добавить метод в объект `Array`, возвращающий значение самого большого элемента массива, объявите функцию, добавьте ее в `Array.prototype`, а затем используйте его.  
   
-```javascript  
+```JavaScript  
 function array_max( ){  
     var i, max = this[0];  
     for (i = 1; i < this.length; i++)  
@@ -62,12 +64,12 @@ document.write(myArray.max());
   
 ```  
   
- Все встроенные объекты [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] имеют свойство `prototype`, которое доступно только для чтения.  К прототипу можно добавлять свойства и методы, но невозможно присвоить объекту другой прототип.  Однако пользовательским объектам можно присваивать новый прототип.  
+ Все встроенные [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] объекты имеют `prototype` свойство, которое доступно только для чтения. Свойства и методы могут быть добавлены в прототип, но объект нельзя назначить другому прототипу. Тем не менее определенных пользователем объектов можно назначить новый прототип.  
   
- В списках методов и свойств для каждого встроенного объекта, содержащихся в данном справочнике по языку, указано, какие члены принадлежат прототипу объекта, а какие нет.  
+ Списках методов и свойств для каждого встроенного объекта в этом справочнике по языку указывают, какие из них являются частью прототип объекта, а какие — нет.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]  
   
-## См. также  
- [Свойство constructor \(Object\)](../../javascript/reference/constructor-property-object-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Свойство constructor (Object)](../../javascript/reference/constructor-property-object-javascript.md)

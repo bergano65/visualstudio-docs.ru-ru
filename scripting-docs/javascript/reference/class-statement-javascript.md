@@ -1,69 +1,65 @@
 ---
-title: "Оператор class (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Оператор Class (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: bf45ebad-4678-4062-88df-55d32b603c69
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e828ae86c3f8f585179e3b097d98b3449c3f3b45
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Оператор class (JavaScript)
+# <a name="class-statement-javascript"></a>Оператор class (JavaScript)
 Объявляет новый класс.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
-class classname () [extends object] {  
-    [constructor([arg1 [,... [,argN]]]) {  
-        statements  
-    }]  
-    [[static] method([arg1 [,... [,argN]]]) {  
-        statements  
-    }]  
-}  
+class classname () [extends object] {    [constructor([arg1 [,... [,argN]]]) {        statements    }]    [[static] method([arg1 [,... [,argN]]]) {        statements    }]}  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `classname`  
- Обязательный.  Имя класса.  
+ Обязательный. Имя класса.  
   
  `object`  
- Необязательный.  Объект или класс, от которого новый класс наследует свойства и методы.  
+ Необязательно. Объект или класс, от которого новый класс наследует свойства и методы.  
   
  `constructor`  
- Необязательный.  Функция конструктора, которая инициализирует новый экземпляр класса.  
+ Необязательно. Функция конструктора, которая инициализирует новый экземпляр класса.  
   
  `arg1...argN`  
- Необязательный.  Вспомогательный список аргументов, которые понимает данная функция, разделенных запятыми.  
+ Необязательно. Вспомогательный список аргументов, которые понимает данная функция, разделенных запятыми.  
   
  `statements`  
- Необязательный.  Один или несколько операторов [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+ Необязательно. Один или несколько операторов [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
  `static`  
- Необязательный.  Указывает статический метод.  
+ Необязательно. Указывает статический метод.  
   
  `method`  
- Необязательный.  Один или несколько экземпляров или статических методов [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], которые могут быть вызваны для экземпляра класса.  
+ Необязательно. Один или несколько экземпляров или статических методов [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], которые могут быть вызваны для экземпляра класса.  
   
-## Заметки  
- Класс позволяет создавать новые объекты, используя наследование на основе прототипа, конструкторы, методы экземпляров и статические методы.  Объект `super` в конструкторе или методе класса позволяет вызывать такой же конструктор или метод, как и в родительском классе или объекте.  Чтобы указать, методы какого класса или объекта должен унаследовать новый класс, добавьте после имени класса оператор `extends`.  
+## <a name="remarks"></a>Примечания  
+ Класс позволяет создавать новые объекты, используя наследование на основе прототипа, конструкторы, методы экземпляров и статические методы. Объект `super` в конструкторе или методе класса позволяет вызывать такой же конструктор или метод, как и в родительском классе или объекте. Чтобы указать, методы какого класса или объекта должен унаследовать новый класс, добавьте после имени класса оператор `extends`.  
   
-## Пример  
+## <a name="example"></a>Пример  
   
-```javascript  
+```JavaScript  
 class Spelunking extends EXPERIENCE.Outdoor {  
   constructor(name, location) {  
     super(name, location);  
@@ -81,10 +77,10 @@ class Spelunking extends EXPERIENCE.Outdoor {
 }  
 ```  
   
-## Пример  
- Для классов можно также создавать имена вычисляемых свойств.  В следующем примере кода имя вычисляемого свойства создается с помощью синтаксиса `set`.  
+## <a name="example"></a>Пример  
+ Для классов можно также создавать имена вычисляемых свойств. В следующем примере кода имя вычисляемого свойства создается с помощью синтаксиса `set`.  
   
-```javascript  
+```JavaScript  
 var propName = "prop_42";  
   
 class Spelunking {  
@@ -104,10 +100,10 @@ console.log(s.value);
   
 ```  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере кода имя свойства для класса создается динамически с помощью синтаксиса `get`.  
   
-```javascript  
+```JavaScript  
 var propName = "prop_42";  
   
 class Spelunking {  
@@ -123,5 +119,5 @@ console.log(s.prop_42);
 // 777  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv12exp](../../javascript/reference/includes/jsv12exp-md.md)]

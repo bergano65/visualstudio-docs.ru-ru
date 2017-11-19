@@ -1,50 +1,49 @@
 ---
-title: "IDiaPropertyStorage::ReadLONG | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaPropertyStorage::ReadLONG"
+title: "IDiaPropertyStorage::ReadLONG | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaPropertyStorage::ReadLONG
 ms.assetid: 32054cbc-db55-4513-a1b4-de80e77aac8a
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: aba26ae4e2495d8c0a4feb1ff692d90a228e8292
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaPropertyStorage::ReadLONG
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Считывает `LONG` значения в наборе свойств.  
+# <a name="idiapropertystoragereadlong"></a>IDiaPropertyStorage::ReadLONG
+Считывает `LONG` значений в наборе свойств.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT ReadDLONG (   
-   PROPID id,  
-   LONG*  pValue  
+```C++  
+HRESULT ReadDLONG (   
+   PROPID id,  
+   LONG*  pValue  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `id`  
- \[in\] идентификатор свойства, которое необходимо считать \(`PROPID` определяет, а в WTypes.h  `ULONG`\).  
+ [in] Идентификатор свойства для чтения (`PROPID` определяется в файле WTypes.h как `ULONG`).  
   
  `pValue`  
- \[out\] возвращает значение свойства.  
+ [out] Возвращает значение свойства.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  Возвращает `E_INVALIDARG` если свойство не принадлежит к типу  `LONG`.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Возвращает `E_INVALIDARG` Если свойство не имеет типа `LONG`.  
   
-## Заметки  
- A `LONG` определяет окнами как 32 знаковое целое число.  
+## <a name="remarks"></a>Примечания  
+ Объект `LONG` определяется операционной системой Windows как 32-разрядное целое число со знаком.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

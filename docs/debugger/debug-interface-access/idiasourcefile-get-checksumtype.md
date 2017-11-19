@@ -1,57 +1,56 @@
 ---
-title: "IDiaSourceFile::get_checksumType | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSourceFile::get_checksumType - метод"
+title: "IDiaSourceFile::get_checksumType | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSourceFile::get_checksumType method
 ms.assetid: 4c363e61-a6a9-409a-9cc0-d06eb2bee645
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8fafd9e813c22b899603a2e62c5a2c90ece1a709
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSourceFile::get_checksumType
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает тип контрольной суммы.  
+# <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
+Получает тип контрольной суммы.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT get_checksumType (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_checksumType (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pRetVal`  
- \[out\] возвращает тип контрольной суммы.  
+ [out] Возвращает тип контрольной суммы.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Тип контрольной суммы значение, которое может быть сопоставлено алгоритм контрольной суммы.  Например, стандартный формат файла PDB обычно может иметь одно из следующих значений:  
+## <a name="remarks"></a>Примечания  
+ Тип контрольной суммы является значение, которое может быть сопоставлен алгоритма подсчета контрольной суммы. Например стандартный формат файла PDB можно иметь одно из следующих значений:  
   
 |Тип контрольной суммы|Метка CryptoAPI|Описание|  
-|---------------------------|---------------------|--------------|  
-|0|\<отсутствует\>|Без обращения к контрольной суммы.|  
-|1|`CALG_MD5`|контрольная сумма, созданная с помощью алгоритма хэширования MD5.|  
-|2|`CALG_SHA1`|контрольная сумма, созданная с помощью алгоритма хэширования SHA1.|  
+|-------------------|---------------------|-----------------|  
+|0|\<None >|Контрольная сумма отсутствует присутствует.|  
+|1|`CALG_MD5`|контрольная сумма, созданные с помощью алгоритма хэширования MD5.|  
+|2|`CALG_SHA1`|контрольная сумма, созданные с помощью алгоритма хэширования SHA1.|  
   
- `CryptoAPI` метки из  `ALG_ID` перечисление.  Дополнительные сведения об алгоритмах хэширования, обратитесь к `CryptoAPI` раздел microsoft  [!INCLUDE[winsdkshort](../../debugger/debug-interface-access/includes/winsdkshort_md.md)].  
+ `CryptoAPI` Метки принадлежат `ALG_ID` перечисления. Дополнительные сведения о алгоритмы хэширования, обратитесь к `CryptoAPI` части Microsoft [!INCLUDE[winsdkshort](../../debugger/debug-interface-access/includes/winsdkshort_md.md)].  
   
- Чтобы получить фактические байты контрольной суммы для файла источника, вызовите [IDiaSourceFile::get\_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) метод.  
+ Для получения байтов фактическая контрольная сумма исходного файла, вызовите [IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) метод.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
- [IDiaSourceFile::get\_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)
+ [IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)

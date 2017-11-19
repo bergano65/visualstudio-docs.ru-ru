@@ -1,29 +1,30 @@
 ---
-title: "CA2124: помещайте уязвимые предложения finally во внешний блок try | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2124"
-  - "WrapVulnerableFinallyClausesInOuterTry"
-helpviewer_keywords: 
-  - "CA2124"
-  - "WrapVulnerableFinallyClausesInOuterTry"
+title: "CA2124: Помещайте уязвимые предложения finally во внешний блок try | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2124
+- WrapVulnerableFinallyClausesInOuterTry
+helpviewer_keywords:
+- CA2124
+- WrapVulnerableFinallyClausesInOuterTry
 ms.assetid: 82efd224-9e60-4b88-a0f5-dfabcc49a254
-caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: f4d30a07ed0930d5165629f7c4b468d7e5146613
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# CA2124: помещайте уязвимые предложения finally во внешний блок try
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: помещайте уязвимые предложения finally во внешний блок try
 |||  
 |-|-|  
 |TypeName|WrapVulnerableFinallyClausesInOuterTry|  
@@ -31,27 +32,27 @@ caps.handback.revision: 20
 |Категория|Microsoft.Security|  
 |Критическое изменение|Не критическое|  
   
-## Причина  
- В версиях 1.0 и 1.1 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], открытый или защищенный метод содержит блок `try`\/ `catch`\/ `finally`.  Блок `finally` сбрасывает состояние безопасности не заключен в блок `finally`.  
+## <a name="cause"></a>Причина  
+ В версиях 1.0 и 1.1 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], содержит открытый или защищенный метод `try` / `catch` / `finally` блока. `finally` Блок сбрасывает состояние безопасности и не заключен в `finally` блока.  
   
-## Описание правила  
- Это правило находит блоки `try`\/`finally` в коде, метящем версии 1.0 и 1.1 платформы [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], которые могут быть уязвимы для вредоносных фильтров исключений в стеке вызова.  Если в блоке try происходят важные операции, такие как олицетворение, и возникает исключения, то фильтр может быть выполнен до блока `finally`.  В случае с олицетворением фильтр будет выполнен от имени олицетворенного пользователя.  В настоящее время фильтры можно реализовать только в Visual Basic.  
+## <a name="rule-description"></a>Описание правила  
+ Это правило находит `try` / `finally` блоков в код, предназначенный для версии 1.0 и 1.1 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , может стать уязвимым для фильтров вредоносных исключений присутствуют в стеке вызовов. Если важные операции, такие как олицетворение возникает в блоке try, и возникает исключение, фильтр может быть выполнен до `finally` блока. В случае это означает, что фильтр будет выполнен от имени олицетворенного пользователя. Фильтры добавляются в настоящее время может быть реализован только в Visual Basic.  
   
 > [!WARNING]
->  **Примечание** В версии 2.0 и более поздних версий [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], среда выполнения автоматически защищает блок `try`\/ `catch`\/ `finally` от вредоносных фильтров исключений, если происходит сброс непосредственно в методе, который содержит блок исключений.  
+>  **Примечание** в версиях 2.0 и более поздних версиях [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], среда выполнения автоматически защищает `try` / `catch` /  `finally` запретить фильтры вредоносных исключение в случае сброса непосредственно в методе, который содержит блок исключений.  
   
-## Устранение нарушений  
- Поместите распакованный блок `try`\/`finally` во внешний блок try.  См. второй пример ниже.  При этом блок `finally` будет выполнен перед кодом фильтра.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Поместите оболочку `try` / `finally` в внешнем блоке try. См. в следующем примере. Это заставляет `finally` для выполнения перед кодом фильтра.  
   
-## Отключение предупреждений  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
  Для этого правила отключать вывод предупреждений не следует.  
   
-## Пример псевдокода  
+## <a name="pseudo-code-example"></a>Пример псевдокода  
   
-### Описание  
- В следующем примере псевдокода показан шаблон, обнаруживаемый этим правилом.  
+### <a name="description"></a>Описание  
+ В приведенном ниже псевдокоде показан шаблон, обнаруживаемый этим правилом.  
   
-### Код  
+### <a name="code"></a>Код  
   
 ```  
 try {  
@@ -65,8 +66,8 @@ finally {
 }  
 ```  
   
-## Пример  
- В следующем примере псевдокода показан шаблон, который можно использовать для защиты кода и выполнения этого правила.  
+## <a name="example"></a>Пример  
+ Ниже псевдокоде показан шаблон, можно использовать для защиты кода и выполнения этого правила.  
   
 ```  
 try {  

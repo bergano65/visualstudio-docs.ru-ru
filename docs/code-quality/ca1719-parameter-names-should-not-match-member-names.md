@@ -1,49 +1,50 @@
 ---
-title: "CA1719: имена параметров не должны совпадать с именами элементов | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ParameterNamesShouldNotMatchMemberNames"
-  - "CA1719"
-helpviewer_keywords: 
-  - "CA1719"
-  - "ParameterNamesShouldNotMatchMemberNames"
+title: "CA1719: Имена параметров не должны совпадать с именами элементов | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- ParameterNamesShouldNotMatchMemberNames
+- CA1719
+helpviewer_keywords:
+- CA1719
+- ParameterNamesShouldNotMatchMemberNames
 ms.assetid: c6fea690-1659-4ee7-a1c5-125ad6754525
-caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 03c6459a4f879dce0f03e3516601e64c53d44b33
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# CA1719: имена параметров не должны совпадать с именами элементов
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719: имена параметров не должны совпадать с именами элементов
 |||  
 |-|-|  
 |TypeName|ParameterNamesShouldNotMatchMemberNames|  
 |CheckId|CA1719|  
 |Категория|Microsoft.Naming|  
-|Критическое изменение|Критическое изменение|  
+|Критическое изменение|Критическое|  
   
-## Причина  
- При сравнении без учета регистра имя доступного для внешнего кода члена совпадает с именем одного из его параметров.  
+## <a name="cause"></a>Причина  
+ Имя видимого снаружи элемента соответствует при сравнении без учета регистра, имя одного из своих параметров.  
   
-## Описание правила  
- Имя параметра должно передавать смысловое значение параметра, а имя члена — смысловое значение члена.  Они могут совпадать лишь в очень редких случаях.  Присвоение параметру имени содержащего его члена кажется неестественным и затрудняет использование библиотеки.  
+## <a name="rule-description"></a>Описание правила  
+ Имя параметра должно передавать смысловое значение параметра, а имя члена — смысловое значение члена. Они могут совпадать лишь в очень редких случаях. Присвоение параметру имени содержащего его члена кажется неестественным и затрудняет использование библиотеки.  
   
-## Устранение нарушений  
- Выберите имя параметра, которое не совпадает с именем члена.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Выберите имя параметра, которое не соответствует имени элемента.  
   
-## Отключение предупреждений  
- При разработке нового кода случаи, когда необходимо отключать предупреждения о нарушении данного правила, неизвестны.  В случае поставки библиотек подобные предупреждения, возможно, необходимо отключать.  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ При разработке новых проектов нет известной выполняется сценарий, где необходимо подавить предупреждение из этого правила. При поставке библиотек может потребоваться отключить предупреждение из этого правила.  
   
-## Связанные правила  
+## <a name="related-rules"></a>Связанные правила  
  [CA1709: идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
  [CA1708: идентификаторы должны отличаться не только регистром](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
