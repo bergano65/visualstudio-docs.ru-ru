@@ -1,59 +1,59 @@
 ---
-title: "IEnumDebugCustomAttributes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumCustomAttributes"
-helpviewer_keywords: 
-  - "Интерфейс IEnumDebugCustomAttributes"
+title: "IEnumDebugCustomAttributes | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumCustomAttributes
+helpviewer_keywords: IEnumDebugCustomAttributes interface
 ms.assetid: 11aa768d-1852-44d6-9de3-17f9bafaded2
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 74074505b9109638280d9fe8dad113b4dd13ba9e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugCustomAttributes
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="ienumdebugcustomattributes"></a>IEnumDebugCustomAttributes
 Перечисляет настраиваемые атрибуты.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IEnumCustomAttributes : IUnknown  
 ```  
   
-## Примечания по реализации  
- Поставщик символов реализующий этот интерфейс, чтобы поддерживать настраиваемые атрибуты \(посредством [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) интерфейс\).  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
+ Символ поставщик реализует этот интерфейс для поддержки настраиваемых атрибутов (через [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) интерфейс).  
   
-## Замечания для вызывающих объектов  
- [EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md) возвращает данный интерфейс.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ [EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md) возвращает этот интерфейс.  
   
-## Методы в том порядке Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IEnumDebugCustomAttributes`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[Далее](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)|Извлекает заданное количество настраиваемых атрибутов в последовательности перечисления.|  
-|[Пропустить](../../../extensibility/debugger/reference/ienumdebugcustomattributes-skip.md)|Пропустить указанное количество настраиваемых атрибутов в последовательности перечисления.|  
-|[Сбросить](../../../extensibility/debugger/reference/ienumdebugcustomattributes-reset.md)|Сбросить последовательность перечисления в начало.|  
-|[Клонировать](../Topic/IEnumDebugCustomAttributes::Clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugcustomattributes-getcount.md)|Возвращает количество настраиваемых атрибутов в перечислителе.|  
+|------------|-----------------|  
+|[Вперед](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)|Извлекает указанное число настраиваемых атрибутов в последовательности перечисления.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugcustomattributes-skip.md)|Пропускает указанное число настраиваемых атрибутов в последовательности перечисления.|  
+|[Сброс](../../../extensibility/debugger/reference/ienumdebugcustomattributes-reset.md)|Сбрасывает последовательность перечисления в начало.|  
+|[Клон](../../../extensibility/debugger/reference/ienumdebugcustomattributes-clone.md)|Создает перечислитель, с тем же состоянием, как у текущего перечислителя.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugcustomattributes-getcount.md)|Получает число настраиваемых атрибутов в перечислителе.|  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: sh.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейсы поставщика символов](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)   
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

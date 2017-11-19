@@ -1,11 +1,10 @@
 ---
-title: 'CA2105: Array fields should not be read only | Microsoft Docs'
+title: "CA2105: Поля массивов не должны считываться только | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,76 +14,60 @@ helpviewer_keywords:
 - ArrayFieldsShouldNotBeReadOnly
 - CA2105
 ms.assetid: 0bdc3421-3ceb-4182-b30c-a992fbfcc35d
-caps.latest.revision: 16
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 3980baa67ba22ff52329aaa8bf94c9699af63ed9
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: bfc20d1bb2ae34455c836219bb809221f2ca382e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: Array fields should not be read only
+# <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: поля массивов не должны быть доступны только для чтения
 |||  
 |-|-|  
 |TypeName|ArrayFieldsShouldNotBeReadOnly|  
 |CheckId|CA2105|  
-|Category|Microsoft.Security|  
-|Breaking Change|Breaking|  
+|Категория|Microsoft.Security|  
+|Критическое изменение|Критическое|  
   
-## <a name="cause"></a>Cause  
- A public or protected field that holds an array is declared read-only.  
+## <a name="cause"></a>Причина  
+ Открытый или защищенный поле, которое хранит массив объявлен только для чтения.  
   
-## <a name="rule-description"></a>Rule Description  
- When you apply the `readonly` (`ReadOnly` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) modifier to a field that contains an array, the field cannot be changed to refer to a different array. However, the elements of the array that are stored in a read-only field can be changed. Code that makes decisions or performs operations that are based on the elements of a read-only array that can be publicly accessed might contain an exploitable security vulnerability.  
+## <a name="rule-description"></a>Описание правила  
+ При применении `readonly` (`ReadOnly` в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) модификатор к полю, содержащему массив, это поле нельзя ссылаться в другой массив. Однако элементы массива, хранящегося в доступном только для чтения поле, можно будет изменить. Код, который принимает решения или выполняет операции, основанные на элементы массива только для чтения, могут быть открыты для общего доступа может содержать уязвимые места.  
   
- Note that having a public field also violates the design rule [CA1051: Do not declare visible instance fields](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).  
+ Обратите внимание, что открытое поле с также нарушает правило проектирования [CA1051: не объявляйте видимые поля экземпляров](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix the security vulnerability that is identified by this rule, do not rely on the contents of a read-only array that can be publicly accessed. It is strongly recommended that you use one of the following procedures:  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Чтобы устранить уязвимость системы безопасности, который определен с помощью этого правила, не следует полагаться на содержимое массива только для чтения, могут быть открыты для общего доступа. Настоятельно рекомендуется использовать один из следующих процедур:  
   
--   Replace the array with a strongly typed collection that cannot be changed. For more information, see <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>.  
+-   Замените массив строго типизированную коллекцию, которую нельзя изменить. Для получения дополнительной информации см. <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>.  
   
--   Replace the public field with a method that returns a clone of a private array. Because your code does not rely on the clone, there is no danger if the elements are modified.  
+-   Замените открытое поле методом, который возвращает клон частного массива. Поскольку код не использует копию, отсутствует опасность, если элементы были изменены.  
   
- If you chose the second approach, do not replace the field with a property; properties that return arrays adversely affect performance. For more information, see [CA1819: Properties should not return arrays](../code-quality/ca1819-properties-should-not-return-arrays.md).  
+ Если вы выбрали второй вариант, следует заменять поле свойством; свойства, возвращающие массивы отрицательно повлиять на производительность. Дополнительные сведения см. в разделе [CA1819: свойства не должны возвращать массивы](../code-quality/ca1819-properties-should-not-return-arrays.md).  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Exclusion of a warning from this rule is strongly discouraged. Almost no scenarios occur where the contents of a read-only field are unimportant. If this is the case with your scenario, remove the `readonly` modifier instead of excluding the message.  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ При исключении предупреждение из этого правила настоятельно не рекомендуется. Практически ни в каких случаях возникают, где значения только для чтения поля не имеют значения. Если это относится к сценарию удалить `readonly` модификатор вместо отключения сообщения.  
   
-## <a name="example"></a>Example  
- This example demonstrates the dangers of violating this rule. The first part shows an example library that has a type, `MyClassWithReadOnlyArrayField`, that contains two fields (`grades` and `privateGrades`) that are not secure. The field `grades` is public, and therefore vulnerable to any caller. The field `privateGrades` is private but is still vulnerable because it is returned to callers by the `GetPrivateGrades` method. The `securePrivateGrades` field is exposed in a safe manner by the `GetSecurePrivateGrades` method. It is declared as private to follow good design practices. The second part shows code that changes values stored in the `grades` and `privateGrades` members.  
+## <a name="example"></a>Пример  
+ В этом примере показана опасность нарушения этого правила. В первой части показывается образец библиотеки, который имеет тип, `MyClassWithReadOnlyArrayField`, содержит два поля (`grades` и `privateGrades`), не являются безопасными. Поле `grades` является открытым и, следовательно, уязвимым к любой вызывающий объект. Поле `privateGrades` является закрытым, но по-прежнему уязвимой, так как он возвращается к вызывающим объектам, `GetPrivateGrades` метод. `securePrivateGrades` Предоставляется безопасным образом, `GetSecurePrivateGrades` метод. Он объявляется как закрытые рекомендациям разработки. Вторая часть показывает код, который изменяет значения, хранящиеся в `grades` и `privateGrades` члены.  
   
- The example class library appears in the following example.  
+ В следующем примере отображается образец библиотеки классов.  
   
  [!code-csharp[FxCop.Security.ArrayFieldsNotReadOnly#1](../code-quality/codesnippet/CSharp/ca2105-array-fields-should-not-be-read-only_1.cs)]  
   
-## <a name="example"></a>Example  
- The following code uses the example class library to illustrate read-only array security issues.  
+## <a name="example"></a>Пример  
+ В следующем коде используется образец библиотеки классов для иллюстрации проблемы безопасности массива только для чтения.  
   
  [!code-csharp[FxCop.Security.TestArrayFieldsRead#1](../code-quality/codesnippet/CSharp/ca2105-array-fields-should-not-be-read-only_2.cs)]  
   
- The output from this example is:  
+ Выходные данные в этом примере будут:  
   
- **Before tampering: Grades: 90, 90, 90 Private Grades: 90, 90, 90  Secure Grades, 90, 90, 90**  
-**After tampering: Grades: 90, 555, 90 Private Grades: 90, 555, 90  Secure Grades, 90, 90, 90**   
-## <a name="see-also"></a>See Also  
+ **Перед изменение данных: оценок: 90, 90, 90 оценок закрытого: 90, 90, 90 Secure оценками 90, 90, 90**  
+**После изменения: оценок: 90, 555, 90 оценок Private: 90, 555, 90 Secure оценками 90, 90, 90**   
+## <a name="see-also"></a>См. также  
  <xref:System.Array?displayProperty=fullName>   
  <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>

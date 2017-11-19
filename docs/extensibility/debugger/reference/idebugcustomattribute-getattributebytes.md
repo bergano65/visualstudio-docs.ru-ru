@@ -1,58 +1,58 @@
 ---
-title: "IDebugCustomAttribute::GetAttributeBytes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCustomAttribute::GetAttributeBytes"
-helpviewer_keywords: 
-  - "IDebugCustomAttribute::GetAttributeBytes"
+title: "IDebugCustomAttribute::GetAttributeBytes | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCustomAttribute::GetAttributeBytes
+helpviewer_keywords: IDebugCustomAttribute::GetAttributeBytes
 ms.assetid: cf34583b-6530-4dcc-89f8-eb27e4e8d594
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1258b2b7fdc1c91eaaa6265ce74a3891deda8ab0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCustomAttribute::GetAttributeBytes
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Получает данные атрибута как большой двоичный объект байтов.  
+# <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
+Возвращает сведения об атрибутах, как большой двоичный объект байтов.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetAttributeBytes(   
-   BYTE*  ppBlob,  
-   DWORD* pdwLen  
+```cpp  
+HRESULT GetAttributeBytes(   
+   BYTE*  ppBlob,  
+   DWORD* pdwLen  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetAttributeBytes(  
-   ref byte[] ppBlob,   
-   ref uint   pdwLen  
+   ref byte[] ppBlob,   
+   ref uint   pdwLen  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppBlob`  
- \[in, out\] массив, который заполняется с байтами атрибута.  
+ [in, out] Массив, который содержит атрибут байт.  
   
  `pdwLen`  
- \[in, out\] указывает максимальное число байтов для возврата в `ppBlob` массив фактически и возвращает число байтов, записанных в массив.  
+ [in, out] Указывает максимальное число байтов для возврата в `ppBlob` массива и возвращает количество байтов, фактически записанных в массив.  
   
-## Возвращаемое значение  
- В случае успеха возвращает значение S\_OK; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Установка `ppBlob` параметр значение NULL, чтобы вернуть число байтов доступных атрибутов.  Затем выделите массив и передайте его в массив `ppBlob` параметр.  
+## <a name="remarks"></a>Примечания  
+ Задать `ppBlob` параметр в значение null для возврата количества атрибутов доступных байтов. Затем выделить память для массива и передать этот массив в для `ppBlob` параметра.  
   
- Байты атрибутов представляют необработанные данные настраиваемого атрибута.  
+ Байты атрибута представляют необработанные данные настраиваемого атрибута.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

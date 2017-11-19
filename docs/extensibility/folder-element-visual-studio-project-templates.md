@@ -1,29 +1,34 @@
 ---
-title: "Элемент Folder (шаблоны проектов Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#Folder"
-helpviewer_keywords: 
-  - "Folder - элемент [шаблоны проектов Visual Studio]"
+title: "Элемент Folder (шаблоны проектов Visual Studio) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Folder
+helpviewer_keywords: Folder element [Visual Studio project templates]
 ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 677b705015b2b12ee484db7595d6cfd919ad61d1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Элемент Folder (шаблоны проектов Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Задает папку, которая будет добавлена в проект.  
+# <a name="folder-element-visual-studio-project-templates"></a>Элемент Folder (шаблоны проектов Visual Studio)
+Указывает папку, в которые будут добавлены в проект.  
   
-## Синтаксис  
+ \<VSTemplate >  
+ \<TemplateContent >  
+ \<Project>  
+ \<Папка >  
+  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <Folder Name="Project Folder">  
@@ -32,35 +37,35 @@ caps.handback.revision: 11
 </Folder>  
 ```  
   
-## Атрибуты и элементы  
- В следующих разделах описаны атрибуты, дочерние элементы и родительские элементы.  
+## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
-### Атрибуты  
+### <a name="attributes"></a>Атрибуты  
   
 |Атрибут|Описание|  
-|-------------|--------------|  
+|---------------|-----------------|  
 |`Name`|Обязательный атрибут.<br /><br /> Имя папки проекта.|  
-|`TargetFolderName`|Необязательный атрибут.<br /><br /> Указывает имя, задаваемое папке при создании проекта из шаблона.  Этот атрибут полезен при использовании замены параметров для задания в качестве имени папки многоязыковой строки, которая не может использоваться непосредственно в ZIP\-файле, или для создания папки с таким именем.|  
+|`TargetFolderName`|Необязательный атрибут.<br /><br /> Указывает имя, задаваемое папке при создании проекта из шаблона. Этот атрибут полезен при использовании замены параметров для создания имени папки или имени папки многоязыковой строки, не может использоваться непосредственно в ZIP-файл.|  
   
-### Дочерние элементы  
-  
-|Элемент|Описание|  
-|-------------|--------------|  
-|`Folder`|Указывает папку, которая будет добавлена в проект.  Элементы `Folder` могут содержать дочерние элементы `Folder`.|  
-|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Указывает файл, который будет добавлен в проект.|  
-  
-### Родительские элементы  
+### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
-|[Проект](../extensibility/project-element-visual-studio-templates.md)|Необязательный дочерний элемент [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|  
+|-------------|-----------------|  
+|`Folder`|Указывает папку для добавления в проект. `Folder`элементы могут содержать дочерние `Folder` элементов.|  
+|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Задает файл для добавления в проект.|  
   
-## Заметки  
- `Folder` является необязательным дочерним элементом `Project`.  
+### <a name="parent-elements"></a>Родительские элементы  
   
- Для организации элементов проекта в папках в шаблоне можно использовать любой из перечисленных ниже методов.  
+|Элемент|Описание|  
+|-------------|-----------------|  
+|[Проект](../extensibility/project-element-visual-studio-templates.md)|Необязательный дочерний элемент элемента [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|  
   
--   Включить папки в ZIP\-файл шаблона и добавить их в проект в VSTEMPLATE\-файле, указав путь к файлу в элементах `ProjectItem` без элементов `Folder`.  Это рекомендуемый метод.  Например:  
+## <a name="remarks"></a>Примечания  
+ `Folder`Необязательный дочерний `Project`.  
+  
+ Для организации элементов проекта в папках в шаблоне можно использовать любой из следующих способов:  
+  
+-   Включить папки в ZIP-файл шаблона и добавить их в проект в VSTEMPLATE-файл, указав путь к файлу в `ProjectItem` элементы, которых не `Folder` элементов. Это рекомендуемый метод. Пример:  
   
      `...`  
   
@@ -70,7 +75,7 @@ caps.handback.revision: 11
   
      `...`  
   
--   Включить папки в ZIP\-файл шаблона и добавить их в проект в VSTEMPLATE\-файле с помощью элементов `Folder`.  Например:  
+-   Включить папки в ZIP-файл шаблона и добавить их в проект в VSTEMPLATE-файл с `Folder` элементов. Пример:  
   
      `...`  
   
@@ -84,7 +89,7 @@ caps.handback.revision: 11
   
      `...`  
   
--   Не включать папки в ZIP\-файл шаблона, а добавить их с помощью атрибута `TargetFileName` элемента `ProjectItem`.  Например:  
+-   Не включать папки в ZIP-файле шаблона, но Добавление папок с помощью `TargetFileName` атрибут `ProjectItem` элемента. Пример:  
   
      `...`  
   
@@ -94,8 +99,8 @@ caps.handback.revision: 11
   
      `...`  
   
-## Пример  
- В следующем примере демонстрируются метаданные для шаблона проекта Windows\-приложения [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
+## <a name="example"></a>Пример  
+ В следующем примере демонстрируется метаданные для шаблона проекта [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения Windows.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -123,7 +128,7 @@ caps.handback.revision: 11
 </VSTemplate>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Создание пользовательских шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
- [Элемент ProjectItem \(шаблоны элементов Visual Studio\)](../extensibility/projectitem-element-visual-studio-item-templates.md)
+ [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
+ [Элемент ProjectItem (шаблоны элементов Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

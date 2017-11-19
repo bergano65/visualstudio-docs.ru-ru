@@ -1,30 +1,34 @@
 ---
-title: "Интерфейсы отладчика активных скриптов | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "Интерфейсы отладчика активных скриптов"
-  - "activdbg.h"
+title: "Интерфейсы отладчика активных скриптов | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords:
+- Active Script Debugger interfaces
+- activdbg.h
 ms.assetid: bf4750b1-4e58-442b-ab56-254e640de61d
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d4a3d17a8ff43bb3bd18641c2298f5436f40d925
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Интерфейсы отладчика активных скриптов
-Файлы заголовка и activdbg.h activdbg100.h предоставляют интерфейсы, перечисления и структуры, перечисленные в этом разделе.  Они для отладки скрипта.  
+# <a name="active-script-debugger-interfaces"></a>Интерфейсы отладчика активных скриптов
+Activdbg.h и activdbg100.h файлы заголовков, которые предоставляют интерфейсы, перечисления и структуры, перечисленные в этом разделе. Они предназначены для отладки скрипта.  
   
 > [!NOTE]
->  Интерфейсы `IJSDebug*` и интерфейс `IEnumJsStackFrames` сначала выпуска в Internet Explorer 11 для отладки машинного кода со скриптом.  Файл заголовка для этих интерфейсов jscript9diag.h.  
+>  `IJSDebug*` Интерфейсы и `IEnumJsStackFrames` интерфейса были впервые появились в Internet Explorer 11 для отладки машинного кода с помощью скрипта. Файл заголовка для этих интерфейсов — jscript9diag.h.  
   
-## В этом подразделе  
- Следующие интерфейсы позволяют не зависящий от языка и отладку после внесения параметров:  
+## <a name="in-this-section"></a>Содержание  
+ Следующие интерфейсы отладки не зависящий от языка, зависящий от узла:  
   
 -   [Константы, перечисления и структуры отладчика активных скриптов](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)  
   
@@ -32,13 +36,15 @@ caps.handback.revision: 13
   
 -   [Интерфейс IActiveScriptErrorDebug](../../winscript/reference/iactivescripterrordebug-interface.md)  
   
--   [IActiveScriptErrorDebug110 — интерфейс](../../winscript/reference/iactivescripterrordebug110-interface.md)  
+-   [Интерфейс IActiveScriptErrorDebug110](../../winscript/reference/iactivescripterrordebug110-interface.md)  
   
 -   [Интерфейс IActiveScriptSiteDebug](../../winscript/reference/iactivescriptsitedebug-interface.md)  
   
--   [IActiveScriptSiteDebugEx — интерфейс](../../winscript/reference/iactivescriptsitedebugex-interface.md)  
+-   [Интерфейс IActiveScriptSiteDebug32](../../winscript/reference/iactivescriptsitedebug32-interface.md)  
   
--   [IActiveScriptWinRTErrorDebug — интерфейс](../../winscript/reference/iactivescriptwinrterrordebug-interface.md)  
+-   [Интерфейс IActiveScriptSiteDebugEx](../../winscript/reference/iactivescriptsitedebugex-interface.md)  
+  
+-   [Интерфейс IActiveScriptWinRTErrorDebug](../../winscript/reference/iactivescriptwinrterrordebug-interface.md)  
   
 -   [Интерфейс IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)  
   
@@ -46,19 +52,19 @@ caps.handback.revision: 13
   
 -   [Интерфейс IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
   
--   [IDebugApplication110 — интерфейс](../../winscript/reference/idebugapplication110-interface.md)  
+-   [Интерфейс IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md)  
   
 -   [Интерфейс IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)  
   
--   [IDebugApplicationNode100 — интерфейс](../../winscript/reference/idebugapplicationnode100-interface.md)  
+-   [Интерфейс IDebugApplicationNode100](../../winscript/reference/idebugapplicationnode100-interface.md)  
   
 -   [Интерфейс IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)  
   
 -   [Интерфейс IDebugApplicationThread](../../winscript/reference/idebugapplicationthread-interface.md)  
   
--   [IDebugApplicationThread110 — интерфейс](../../winscript/reference/idebugapplicationthread110-interface.md)  
+-   [Интерфейс IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md)  
   
--   [IDebugApplicationThreadEvents110 — интерфейс](../../winscript/reference/idebugapplicationthreadevents110-interface.md)  
+-   [Интерфейс IDebugApplicationThreadEvents110](../../winscript/reference/idebugapplicationthreadevents110-interface.md)  
   
 -   [Интерфейс IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)  
   
@@ -154,27 +160,27 @@ caps.handback.revision: 13
   
 -   [Интерфейс IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)  
   
--   [IRemoteDebugApplication110 — интерфейс](../../winscript/reference/iremotedebugapplication110-interface.md)  
+-   [Интерфейс IRemoteDebugApplication110](../../winscript/reference/iremotedebugapplication110-interface.md)  
   
--   [IRemoteDebugApplicationEx — интерфейс](../../winscript/reference/iremotedebugapplicationex-interface.md)  
+-   [IRemoteDebugApplicationEx Interface](../../winscript/reference/iremotedebugapplicationex-interface.md)  
   
 -   [Интерфейс IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md)  
   
 -   [Интерфейс IRemoteDebugApplicationThread](../../winscript/reference/iremotedebugapplicationthread-interface.md)  
   
--   [IRemoteDebugApplicationThreadEx — интерфейс](../../winscript/reference/iremotedebugapplicationthreadex-interface.md)  
+-   [Интерфейс IRemoteDebugApplicationThreadEx](../../winscript/reference/iremotedebugapplicationthreadex-interface.md)  
   
 -   [Интерфейс ISetNextStatement](../../winscript/reference/isetnextstatement-interface.md)  
   
 -   [Интерфейс ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)  
   
--   [IWebAppDiagnosticsSetup — интерфейс](../../winscript/reference/iwebappdiagnosticssetup-interface.md)  
+-   [Интерфейс IWebAppDiagnosticsSetup](../../winscript/reference/iwebappdiagnosticssetup-interface.md)  
   
--   [IWebAppDiagnosticsObjectInitialization — интерфейс](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md)  
+-   [Интерфейс IWebAppDiagnosticsObjectInitialization](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md)  
   
  В следующем разделе перечислены константы, перечисления и структуры, используемые для отладки:  
   
 -   [Константы, перечисления и структуры отладчика активных скриптов](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Обзор отладки активных скриптов](../../winscript/active-script-debugging-overview.md)

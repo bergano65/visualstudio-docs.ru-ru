@@ -1,27 +1,30 @@
 ---
-title: "IDebugFormatter::GetVariantForString | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugFormatter::GetVariantForString | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugFormatter.GetVariantForString
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IDebugFormatter::GetVariantForString"
+helpviewer_keywords: IDebugFormatter::GetVariantForString
 ms.assetid: 2993431d-0ee2-4d8d-b62c-0a810a8bc391
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3f9f783c8fe1864999e017ff348853df5464c93f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugFormatter::GetVariantForString
-Возвращает ВАРИАНТ, содержащий заданную строку.  
+# <a name="idebugformattergetvariantforstring"></a>IDebugFormatter::GetVariantForString
+Возврат свойства типа VARIANT, содержащего заданную строку.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT GetVariantForString(  
@@ -30,22 +33,22 @@ HRESULT GetVariantForString(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pwstrValue`  
- \[in\] строка, сохраняемый в ВАРИАНТЕ.  
+ [in] Строка для хранения в ВАРИАНТЕ.  
   
  `pvar`  
- \[out\] ДРУГОЕ, содержащий `pwstrValue`.  
+ [out] Типа VARIANT, содержащее `pwstrValue`.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
- Этот метод возвращает ВАРИАНТ, содержащий заданную строку.  
+## <a name="remarks"></a>Примечания  
+ Этот метод возвращает значение VARIANT, содержащего заданную строку.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IDebugFormatter](../../winscript/reference/idebugformatter-interface.md)

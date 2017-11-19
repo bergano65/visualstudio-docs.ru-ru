@@ -1,27 +1,30 @@
 ---
-title: "IDebugStackFrame::GetLanguageString | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugStackFrame::GetLanguageString | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugStackFrame.GetLanguageString
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IDebugStackFrame::GetLanguageString"
+helpviewer_keywords: IDebugStackFrame::GetLanguageString
 ms.assetid: 561d6306-f214-422f-abc9-b502cbfbe208
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 724ca98278eb8885d29aad1799f822ac57251597
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugStackFrame::GetLanguageString
-Возвращает короткое или long текстовое описание языка.  
+# <a name="idebugstackframegetlanguagestring"></a>IDebugStackFrame::GetLanguageString
+Возвращает короткое или долго текстовое описание языка.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT GetLanguageString(  
@@ -30,22 +33,22 @@ HRESULT GetLanguageString(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `fLong`  
- \[in\] пометьте, где `TRUE` возвращает длинное описание и `FALSE` возвращает краткое описание.  
+ [in] Флаг, где `TRUE` возвращает подробное описание и `FALSE` возвращает краткое описание.  
   
  `pbstrLanguage`  
- \[out\] описание языка.  
+ [out] Описание языка.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
- Как правило, если `fLong``FALSE`, то этот метод предоставляет только имя языка, связанного со кадром стека.  При `fLong``TRUE`, этот метод может предоставить полный описание продукта.  
+## <a name="remarks"></a>Примечания  
+ Как правило если `fLong` — `FALSE`, этот метод предоставляет только имя языка, связанного с этим кадром стека. Когда `fLong` — `TRUE`, этот метод может предоставить описание полной версии продукта.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IDebugStackFrame](../../winscript/reference/idebugstackframe-interface.md)

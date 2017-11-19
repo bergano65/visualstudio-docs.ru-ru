@@ -1,45 +1,44 @@
 ---
-title: "IDiaEnumStackFrames | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumStackFrames - интерфейс"
+title: "IDiaEnumStackFrames | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumStackFrames interface
 ms.assetid: 3d1e8403-c9fc-42ff-ae35-0ab9a5ed2ad7
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3cbfea7394a2720ed4341e883fefe90556c86e57
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumStackFrames
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Перечисляет различные кадры стека.  
+# <a name="idiaenumstackframes"></a>IDiaEnumStackFrames
+Перечисляет различные доступные кадры стека.  
   
-## Методы в том порядке Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)|Получает заданное число элементов кадра стека из последовательности перечисления.|  
-|[IDiaEnumStackFrames::Reset](../../debugger/debug-interface-access/idiaenumstackframes-reset.md)|Сбросить последовательность перечисления в начало.|  
+|------------|-----------------|  
+|[IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)|Извлекает указанное число элементов кадра стека из последовательности перечисления.|  
+|[IDiaEnumStackFrames::Reset](../../debugger/debug-interface-access/idiaenumstackframes-reset.md)|Сбрасывает последовательность перечисления в начало.|  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
   
-## Замечания для вызывающих объектов  
- Для получения этого интерфейса нужно вызвать метод [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) OR  [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) методы.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Получить этот интерфейс, вызвав [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) или [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) методы.  
   
-## Пример  
- В этом примере показано, как получить и использование `IDiaEnumStackFrames` интерфейс.  См. [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) интерфейс для реализации   `PrintStackFrame` функция.  
+## <a name="example"></a>Пример  
+ В этом примере показано, как получить и использовать `IDiaEnumStackFrames` интерфейса. В разделе [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) интерфейс для реализации `PrintStackFrame` функции.  
   
-```cpp#  
+```C++  
 void DumpStackFrames(IDiaStackWalker*     pStackWalker,  
                      IDiaStackWalkHelper* pStackWalkHelper,  
                      CV_CPU_TYPE_e        cpuType)  
@@ -64,15 +63,15 @@ void DumpStackFrames(IDiaStackWalker*     pStackWalker,
 }  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: Dia2.h  
   
- Библиотеки: diaguids.lib  
+ Библиотека: diaguids.lib  
   
- Библиотеки DLL: msdia80.dll  
+ Библиотека DLL: msdia80.dll  
   
-## См. также  
- [Интерфейсы \(SDK для доступа к интерфейсу отладки\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>См. также  
+ [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
  [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)   
  [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)

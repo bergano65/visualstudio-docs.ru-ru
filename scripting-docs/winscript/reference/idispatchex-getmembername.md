@@ -1,27 +1,30 @@
 ---
-title: "IDispatchEx::GetMemberName | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDispatchEx::GetMemberName | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDispatchEx.GetMemberName
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "GetMemberName — метод"
+helpviewer_keywords: GetMemberName method
 ms.assetid: 5e59b63c-b781-4b90-88fd-40603a379a2d
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 63489dad447ece245e14e483127cb67327d55fe5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IDispatchEx::GetMemberName
-Получает имя члена.  
+# <a name="idispatchexgetmembername"></a>IDispatchEx::GetMemberName
+Возвращает имя элемента.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT GetMemberName(  
@@ -30,22 +33,22 @@ HRESULT GetMemberName(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `id`  
- Идентифицирует член.  Использование `GetDispID` или `GetNextDispID` получить идентификатор диспетчера.  
+ Идентифицирует член. Использует `GetDispID` или `GetNextDispID` для получения идентификатора диспетчеризации.  
   
  `pbstrName`  
- Адрес `BSTR`, который получает имя члена.  Вызывающее приложение отвечает за освобождение это значение.  
+ Адрес `BSTR` , получающий имя члена. Вызывающее приложение отвечает за освобождение этого значения.  
   
-## Возвращаемое значение  
- Возвращать одно из следующих значений:  
+## <a name="return-value"></a>Возвращаемое значение  
+ Возвращает одно из следующих значений:  
   
 |||  
 |-|-|  
-|`S_OK`|Успех.|  
-|`DISP_E_UNKNOWNNAME`|Имя не было известно.|  
+|`S_OK`|Выполнено.|  
+|`DISP_E_UNKNOWNNAME`|Имя не был известен.|  
   
-## Пример  
+## <a name="example"></a>Пример  
   
 ```  
 HRESULT hr;  
@@ -68,7 +71,7 @@ HRESULT hr;
    }  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IDispatchEx](../../winscript/reference/idispatchex-interface.md)   
  [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

@@ -1,56 +1,55 @@
 ---
-title: "CV_access_e | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CV_access_e - перечисление"
+title: "CV_access_e | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: CV_access_e enumeration
 ms.assetid: 33c05d65-abb4-4800-a382-54a3805ea7b0
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6112c72836c718dbd97ddfb62504186fdcf6ca33
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# CV_access_e
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Определяет область видимости \(уровень доступа\) функций\-членов и переменных.  
+# <a name="cvaccesse"></a>CV_access_e
+Указывает область видимости (уровень доступа) для функций-членов и переменных.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-typedef enum CV_access_e {   
-   CV_private   = 1,  
-   CV_protected = 2,  
-   CV_public    = 3  
+```C++  
+typedef enum CV_access_e {   
+   CV_private   = 1,  
+   CV_protected = 2,  
+   CV_public    = 3  
 } CV_access_e;  
 ```  
   
-## Elements  
- CV\_private  
- Элемент имеет закрытый доступ.  
+## <a name="elements"></a>Элементы  
+ CV_private  
+ Элемент имеет доступ к закрытому.  
   
- CV\_protected  
- Элемент защищал доступ.  
+ CV_protected  
+ Элемент имеет защищенный доступ.  
   
- CV\_public  
- Член, имеющий открытый доступ.  
+ CV_public  
+ Элемент имеет общего доступа.  
   
-## Заметки  
- `friend` описатель доступа не включен здесь, поскольку обычно используется функциями non\-участника, имеющих доступ к закрытым и защищенным элементам и класса.  Используйте [IDiaSymbol::get\_symTag](../Topic/IDiaSymbol::get_symTag.md) метод, чтобы найти символы с  `SymTagFriend` доступ.  
+## <a name="remarks"></a>Примечания  
+ `friend` Спецификатор доступа не включено здесь, поскольку обычно он используется, не являющихся членами функции, которые имеют доступ к закрытым и защищенным элементам класса. Используйте [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) метод для поиска символов с `SymTagFriend` доступа.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: cvconst.h  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get\_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)   
- [IDiaSymbol::get\_symTag](../Topic/IDiaSymbol::get_symTag.md)
+ [IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)   
+ [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)

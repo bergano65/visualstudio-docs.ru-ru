@@ -1,47 +1,46 @@
 ---
-title: "IDiaFrameData::get_cplusplusExceptionHandling | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaFrameData::get_cplusplusExceptionHandling - метод"
+title: "IDiaFrameData::get_cplusplusExceptionHandling | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaFrameData::get_cplusplusExceptionHandling method
 ms.assetid: 54ee9cde-ce8e-45f1-809c-6fbad800d850
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 130ef97cefd04e34652ee664007ad503438b1ccb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaFrameData::get_cplusplusExceptionHandling
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает пометить, указывающее, является ли обработка исключений С\+\+.  
+# <a name="idiaframedatagetcplusplusexceptionhandling"></a>IDiaFrameData::get_cplusplusExceptionHandling
+Возвращает флаг, указывающий, действует ли обработка исключений с ++.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT get_cplusplusExceptionHandling (   
-   BOOL* pRetVal  
+```C++  
+HRESULT get_cplusplusExceptionHandling (   
+   BOOL* pRetVal  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pRetVal`  
- \[out\] возвращает `TRUE` если обработка исключений С\+\+ в результате; в противном случае возвращает  `FALSE`.  
+ [out] Возвращает `TRUE` Если обработка исключений с ++ действует; в противном случае возвращает `FALSE`.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`.  Возвращает `S_FALSE` если это свойство не поддерживается.  В противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
-## Заметки  
- Чтобы определить, структурная обработка исключений в силе \(который отличается от очень обработка исключений С\+\+\), вызовите [IDiaFrameData::get\_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) метод.  
+## <a name="remarks"></a>Примечания  
+ Для определения структурированные исключения применяется обработка (который сильно отличается от обработки исключений C++), вызвать [IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) метод.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
- [IDiaFrameData::get\_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)
+ [IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)

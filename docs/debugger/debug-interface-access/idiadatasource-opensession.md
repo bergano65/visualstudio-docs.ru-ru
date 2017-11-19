@@ -1,58 +1,57 @@
 ---
-title: "IDiaDataSource::openSession | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaDataSource::openSession - метод"
+title: "IDiaDataSource::openSession | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaDataSource::openSession method
 ms.assetid: a3319ed0-3979-483b-9852-c0af96852c48
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 72fa36bd077a08484c225e1349134929e541d074
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaDataSource::openSession
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Открывает сеанс для запросов символы.  
+# <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
+Открывается сеанс для выполнения запросов к символы.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT openSession (   
-   IDiaSession** ppSession  
+```C++  
+HRESULT openSession (   
+   IDiaSession** ppSession  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  ppSession  
- \[out\] возвращает [IDiaSession](../../debugger/debug-interface-access/idiasession.md) объект, представляющий первый сеанс.  
+ [out] Возвращает [IDiaSession](../../debugger/debug-interface-access/idiasession.md) объект, представляющий открытый сеанс.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  В следующей таблице приведены возможные возвращаемые значения для данного метода.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. В следующей таблице показаны возможные возвращаемые значения для этого метода.  
   
 |Значение|Описание|  
-|--------------|--------------|  
-|E\_UNEXPECTED|[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) объект, который ранее не был инициализирован с источником символов.|  
-|E\_INVALIDARG|Недопустимо `ppSession` параметр.|  
-|E\_OUTOFMEMORY|Недостаточно памяти, чтобы открыть сеанс.|  
+|-----------|-----------------|  
+|E_UNEXPECTED|[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) объекта не ранее был инициализирован с помощью источника символы.|  
+|E_INVALIDARG|Недопустимый `ppSession` параметра.|  
+|E_OUTOFMEMORY|Недостаточно памяти для открытия сеанса.|  
   
-## Заметки  
- Этот метод открывает [IDiaSession](../../debugger/debug-interface-access/idiasession.md) объект источника данных.  
+## <a name="remarks"></a>Примечания  
+ Этот метод открывает [IDiaSession](../../debugger/debug-interface-access/idiasession.md) объект для источника данных.  
   
- `IDiaSession` функциональные запросы объектов в источник данных.  Сеанс управляет одно адресное пространство для каждого набора символов отладки.  Если exe\- или dll\-файла, описанные символами источника данных активны в разных диапазонах адресов \(например, потому, что несколько процессов имеют загруженный него\), то один сеанс для каждого диапазона адресов следует использовать.  
+ `IDiaSession`объекты реализации запросов в источник данных. Сеанс управляет одно адресное пространство для каждого набора символов отладки. Если файл .exe или .dll, описываемый символы источника данных активного в нескольких адресов в диапазоне (например, если у нескольких процессов загружены), то следует использовать один сеанс для каждого из диапазонов адресов.  
   
-## Пример  
+## <a name="example"></a>Пример  
   
-```cpp#  
+```C++  
 IDiaSession* pSession;  
 HRESULT hr = pSource->openSession( &pSession );  
 if (FAILED(hr))  
@@ -61,8 +60,8 @@ if (FAILED(hr))
 }  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
  [Обзор](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [Запрос PDB\-файла](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+ [Запрос PDB-файла](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)

@@ -1,51 +1,51 @@
 ---
-title: "IDebugProcessEx2::Detach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcessEx2::Detach"
-helpviewer_keywords: 
-  - "Метод IDebugProcessEx2::Detach"
+title: "IDebugProcessEx2::Detach | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProcessEx2::Detach
+helpviewer_keywords: IDebugProcessEx2::Detach method
 ms.assetid: 66d54c2c-9302-47c8-9975-f30ed988ab29
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d810008391398741e644da7215de174918db604f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProcessEx2::Detach
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Этот метод сообщает процессу, что сеанс не процесс отладки.  
+# <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
+Этот метод сообщает процесс, что сеанс больше не является отладка процесса.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT Detach(   
-   IDebugSession2* pSession  
+```cpp  
+HRESULT Detach(   
+   IDebugSession2* pSession  
 );  
 ```  
   
-```c#  
+```csharp  
 int Detach(  
-   IDebugSession2 pSession  
+   IDebugSession2 pSession  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pSession`  
- \[in\] значение, уникально определяющее сеанс, чтобы в итоге удалить этот процесс.  
+ [in] Значение, уникально идентифицирующий сеанс отсоединение от этого процесса.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Интерфейс переданный `pSession` должна рассматриваться только как файл cookie, значение, уникально определяющее сеанс отладки диспетчер, который изначально вложил к этому процессу; ни один из методов в интерфейсе, предоставляемом функциональны.  
+## <a name="remarks"></a>Примечания  
+ Переданный интерфейс `pSession` является следует рассматривать только в качестве файла cookie, значение, однозначно определяющее диспетчера сеанса отладки, который изначально подключен этот процесс; ни один из методов в интерфейсе предоставленного работают.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

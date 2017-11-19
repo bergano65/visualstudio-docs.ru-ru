@@ -1,68 +1,68 @@
 ---
-title: "IDebugBinder3::GetEEService | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBinder3::GetEEService"
-helpviewer_keywords: 
-  - "Метод IDebugBinder3::GetEEService"
+title: "IDebugBinder3::GetEEService | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBinder3::GetEEService
+helpviewer_keywords: IDebugBinder3::GetEEService method
 ms.assetid: eb07aa40-8cd9-4a52-a4c7-4affd2307a01
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: aa705de1871530c8f53f5b29b6040909530b6639
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBinder3::GetEEService
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Этот метод возвращает запрошенную службу.  
+# <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
+Этот метод возвращает запрашиваемую службу.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-HRESULT GetEEService(  
-   [in] GUID        vendor,  
-   [in] GUID        language,  
-   [in] GUID        iid,  
-   [out] IUnknown** ppService  
+HRESULT GetEEService(  
+   [in] GUID        vendor,  
+   [in] GUID        language,  
+   [in] GUID        iid,  
+   [out] IUnknown** ppService  
 );  
 ```  
   
-```c#  
-Int GetEEService(  
-   Guid       vendor,  
-   Guid       language,  
-   Guid       iid,  
-   out object ppService  
+```csharp  
+Int GetEEService(  
+   Guid       vendor,  
+   Guid       language,  
+   Guid       iid,  
+   out object ppService  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `vendor`  
- \[in\] `GUID` поставщик \(допустимо значение NULL\).  
+ [in] `GUID` поставщика (приемлемо значение null).  
   
  `language`  
- \[in\] `GUID` language \(допустимо значение NULL\).  
+ [in] `GUID` языка (приемлемо значение null).  
   
  `iid`  
- \[in\] `IID` службы для получения.  
+ [in] `IID` службы для получения.  
   
  `ppService`  
- \[out\] интерфейс к службе.  
+ [out] Интерфейс запрашиваемую службу.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Передайте `IID` для  [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) интерфейс \(`IID_IEEVisualizerServiceProvider`\) доступна ли служба типа визуализатора.  Если да, то средство оценки выражений может получать [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) интерфейс для поддержки визуализаторы типа.  Более подробные сведения см. в разделе: [Визуализация и просмотр данных](../../../extensibility/debugger/visualizing-and-viewing-data.md).  
+## <a name="remarks"></a>Примечания  
+ Передайте `IID` для [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) интерфейса (`IID_IEEVisualizerServiceProvider`) для получения сведений о службе тип визуализатора. Если Да, можно получить средство оценки выражений [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) интерфейс для поддержки визуализаторами типов. В разделе [Visualizing и просмотр данных](../../../extensibility/debugger/visualizing-and-viewing-data.md) подробные сведения.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
  [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)   
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   

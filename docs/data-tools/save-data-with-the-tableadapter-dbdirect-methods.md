@@ -1,5 +1,5 @@
 ---
-title: Save data with the TableAdapter DBDirect methods | Microsoft Docs
+title: "Сохранять данные методы DBDirect адаптера таблицы | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -15,162 +15,159 @@ helpviewer_keywords:
 - saving data, walkthroughs
 - data [Visual Studio], TableAdapter
 ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
-caps.latest.revision: 14
+caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
-ms.openlocfilehash: aac04197ee35aa613f70f09f653bbde988dbe995
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/13/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 3ed52a167b607236b8493e4c8c1736ee597162b9
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Save data with the TableAdapter DBDirect methods
-This walkthrough provides detailed instructions for running SQL statements directly against a database by using the DBDirect methods of a TableAdapter. The DBDirect methods of a TableAdapter provide a fine level of control over your database updates. You can use them to run specific SQL statements and stored procedures by calling the individual `Insert`, `Update`, and `Delete` methods as needed by your application (as opposed to the overloaded `Update` method that performs the UPDATE, INSERT, and DELETE statements all in one call).  
+# <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Сохранять данные методы DBDirect адаптера таблицы
+Это пошаговое руководство содержит подробные инструкции для выполнения инструкций SQL непосредственно к базе данных с помощью методов DBDirect адаптера таблицы. Методы DBDirect адаптера таблицы обеспечивают точный контроль над обновлениями базы данных. Их можно использовать для выполнения определенных инструкций SQL и хранимые процедуры, вызывая отдельные `Insert`, `Update`, и `Delete` методы, необходимые для приложения (в отличие от перегруженного `Update` метод, который выполняет обновление INSERT и инструкций DELETE в одном вызове).  
   
- During this walkthrough, you will learn how to:  
+ В этом пошаговом руководстве описаны следующие процедуры.  
   
--   Create a new **Windows Forms Application**.  
+-   Создайте новый **приложение Windows Forms**.  
   
--   Create and configure a dataset with the [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png).  
+-   Создание и настройка набора данных с [мастер настройки источника данных](../data-tools/media/data-source-configuration-wizard.png).  
   
--   Select the control to be created on the form when dragging items from the **Data Sources** window. For more information, see [Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+-   Выберите элемент управления, создаваемого на форме при перетаскивании элементов из **источники данных** окна. Дополнительные сведения см. в разделе [задать элемент управления, создаваемого при перетаскивании из окна источников данных](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
--   Create a data-bound form by dragging items from the **Data Sources** window onto the form.  
+-   Создание формы с привязкой к данным путем перетаскивания элементов из **источники данных** на форму.  
   
--   Add methods to directly access the database and perform inserts, updates, and deletes..  
+-   Добавьте методы для непосредственного доступа к базе данных, выполнения операций вставки, обновления и удаления...  
   
-## <a name="prerequisites"></a>Prerequisites  
- In order to complete this walkthrough, you will need:  
+## <a name="prerequisites"></a>Предварительные требования  
+В этом пошаговом руководстве используется SQL Server Express LocalDB и базе данных Northwind.  
   
--   Access to the Northwind sample database. For more information, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
+1.  Если у вас нет SQL Server Express LocalDB, установите его из [страница загрузки выпуски SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), либо с помощью **установщик Visual Studio**. Установщик Visual Studio можно установить SQL Server Express LocalDB в рамках **хранения и обработки данных** рабочей нагрузки, или в отдельных компонентов.  
   
-## <a name="create-a-windows-forms-application"></a>Create a Windows Forms application  
- The first step is to create a **Windows Forms Application**.  
-  
-#### <a name="to-create-the-new-windows-project"></a>To create the new Windows project  
-  
-1. In Visual Studio, on the **File** menu, select **New**, **Project...**.  
-  
-2. Expand either **Visual C#** or **Visual Basic** in the left-hand pane, then select **Windows Classic Desktop**.  
+2.  Установка образца базы данных Northwind, выполните следующие действия:  
 
-3. In the middle pane, select the **Windows Forms App** project type.  
+    1. В Visual Studio откройте **обозреватель объектов SQL Server** окна. (Обозреватель объектов SQL Server устанавливается как часть **хранения и обработки данных** рабочей нагрузки в установщик Visual Studio.) Разверните **SQL Server** узла. Щелкните правой кнопкой мыши на экземпляре LocalDB и выберите **нового запроса...** .  
 
-4. Name the project **TableAdapterDbDirectMethodsWalkthrough**, and then choose **OK**. 
+       Откроется окно редактора запросов.  
+
+    2. Копировать [сценарий Northwind Transact-SQL](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) в буфер обмена. Этот скрипт T-SQL создает базу данных Northwind с нуля и заполняет ее данными.  
+
+    3. Вставьте скрипт T-SQL в редакторе запросов, а затем выберите **Execute** кнопки.  
+
+       Через некоторое время завершения выполнения запроса и создания базы данных "Борей".  
   
-     The **TableAdapterDbDirectMethodsWalkthrough** project is created and added to **Solution Explorer**.  
+## <a name="create-a-windows-forms-application"></a>Создайте приложение Windows Forms  
+ Первым шагом является создание **приложение Windows Forms**.  
   
-## <a name="create-a-data-source-from-your-database"></a>Create a data source from your database  
- This step uses the **Data Source Configuration Wizard** to create a data source based on the `Region` table in the Northwind sample database. You must have access to the Northwind sample database to create the connection. For information about setting up the Northwind sample database, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
+#### <a name="to-create-the-new-windows-project"></a>Порядок создания нового проекта Windows  
   
-#### <a name="to-create-the-data-source"></a>To create the data source  
+1. В Visual Studio на **файл** последовательно выберите пункты **New**, **проекта...** .  
   
-1.  On the **Data** menu, select **Show Data Sources**.  
+2. Разверните **Visual C#** или **Visual Basic** на левой панели, затем выберите **классического Windows**.  
+
+3. В средней области выберите **приложение Windows Forms** тип проекта.  
+
+4. Назовите проект **TableAdapterDbDirectMethodsWalkthrough**, а затем выберите **ОК**. 
   
-2.  In the **Data Sources** window, select **Add New Data Source** to start the **Data Source Configuration Wizard**.  
+     **TableAdapterDbDirectMethodsWalkthrough** создается и добавляется в проект **обозревателе решений**.  
   
-3.  On the **Choose a Data Source Type** screen, select **Database**, and then select **Next**.  
+## <a name="create-a-data-source-from-your-database"></a>Создать источник данных из базы данных  
+ Этот шаг использует **мастер настройки источника данных** для создания источника данных, на основе `Region` таблицы в базе данных Northwind. Для создания подключения необходимо иметь доступ к учебной базе данных "Борей". Сведения об установке образца базы данных Northwind см. в разделе [как: установить образцы баз данных](../data-tools/installing-database-systems-tools-and-samples.md).  
   
-4.  On the **Choose your Data Connection** screen, do one of the following:  
+#### <a name="to-create-the-data-source"></a>Создание источника данных  
   
-    -   If a data connection to the Northwind sample database is available in the drop-down list, select it.  
+1.  На **данные** последовательно выберите пункты **Показать источники данных**.  
   
-         -or-  
+2.  В **источники данных** выберите **добавить новый источник данных** запуск **мастер настройки источника данных**.  
   
-    -   Select **New Connection** to launch the **Add/Modify Connection** dialog box.  
+3.  На **Выбор типа источника данных** выберите **базы данных**, а затем выберите **Далее**.  
   
-5.  If your database requires a password, select the option to include sensitive data, and then select **Next**.  
+4.  На **Выбор подключения базы данных** экрана, выполните одно из следующих действий:  
   
-6.  On the **Save connection string to the Application Configuration file** screen, select **Next**.  
+    -   Если подключение к учебной базе данных Northwind доступно в раскрывающемся списке, то выберите его.  
   
-7.  On the **Choose your Database Objects** screen, expand the **Tables** node.  
+         -или-  
   
-8.  Select the `Region` table, and then select **Finish**.  
+    -   Выберите **новое подключение** для запуска **Добавить/изменить подключение** диалоговое окно.  
   
-     The **NorthwindDataSet** is added to your project and the `Region` table appears in the **Data Sources** window.  
+5.  Если базе данных требуется пароль, выберите параметр для включения конфиденциальных данных, а затем выберите **Далее**.  
   
-## <a name="add-controls-to-the-form-to-display-the-data"></a>Add controls to the form to display the data  
- Create the data-bound controls by dragging items from the **Data Sources** window onto your form.  
+6.  На **Сохранение строки подключения в файле конфигурации приложения** выберите **Далее**.  
   
-#### <a name="to-create-data-bound-controls-on-the-windows-form"></a>To create data bound controls on the Windows form  
+7.  На **Выбор объектов базы данных** экрана, разверните **таблиц** узла.  
   
--   Drag the main **Region** node from the **Data Sources** window onto the form.  
+8.  Выберите `Region` таблицы, а затем выберите **Готово**.  
   
-     A <xref:System.Windows.Forms.DataGridView> control and a tool strip (<xref:System.Windows.Forms.BindingNavigator>) for navigating records appear on the form. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray.  
+     **NorthwindDataSet** добавляется в проект и `Region` таблица появляется в **источники данных** окна.  
   
-#### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>To add buttons that will call the individual TableAdapter DbDirect methods  
+## <a name="add-controls-to-the-form-to-display-the-data"></a>Добавление элементов управления в форму для отображения данных  
+ Создавать элементы управления с привязкой к данным путем перетаскивания элементов из **источники данных** на форму.  
   
-1.  Drag three <xref:System.Windows.Forms.Button> controls from the **Toolbox** onto **Form1** (below the **RegionDataGridView**).  
+#### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Создание данных с привязкой к элементам управления в форме Windows  
   
-2.  Set the following **Name** and **Text** properties on each button.  
+-   Перетащите главный **область** узел из **источники данных** на форму.  
   
-    |Name|Text|  
+     На форме появляется элемент <xref:System.Windows.Forms.DataGridView> и панель инструментов (<xref:System.Windows.Forms.BindingNavigator>) для перемещения по записям. Объект [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource>, и <xref:System.Windows.Forms.BindingNavigator> отображаются в области компонентов.  
+  
+#### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Порядок добавления кнопок, вызывающих отдельные методы DbDirect адаптера таблицы  
+  
+1.  Перетащите три <xref:System.Windows.Forms.Button> управляет из **элементов** на **Form1** (ниже **RegionDataGridView**).  
+  
+2.  Задайте следующие **имя** и **текст** свойства на каждой кнопке.  
+  
+    |Имя|Text|  
     |----------|----------|  
-    |`InsertButton`|**Insert**|  
-    |`UpdateButton`|**Update**|  
-    |`DeleteButton`|**Delete**|  
+    |`InsertButton`|**Вставка**|  
+    |`UpdateButton`|**Обновление**|  
+    |`DeleteButton`|**Удалить**|  
   
-#### <a name="to-add-code-to-insert-new-records-into-the-database"></a>To add code to insert new records into the database  
+#### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Добавление кода для вставки новых записей в базу данных  
   
-1.  Select **InsertButton** to create an event handler for the click event and open your form in the code editor.  
+1.  Выберите **InsertButton** создайте обработчик событий для события щелчка кнопкой мыши и открыть форму в редакторе кода.  
   
-2.  Replace the `InsertButton_Click` event handler with the following code:  
+2.  Замените обработчик событий `InsertButton_Click` следующим кодом:  
   
      [!code-vb[VbRaddataSaving#1](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_1.vb)]
      [!code-csharp[VbRaddataSaving#1](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_1.cs)]  
   
-#### <a name="to-add-code-to-update-records-in-the-database"></a>To add code to update records in the database  
+#### <a name="to-add-code-to-update-records-in-the-database"></a>Добавление кода для обновления записей в базе данных  
   
-1.  Double-click the **UpdateButton** to create an event handler for the click event and open your form in the code editor.  
+1.  Дважды щелкните **UpdateButton** создайте обработчик событий для события щелчка кнопкой мыши и открыть форму в редакторе кода.  
   
-2.  Replace the `UpdateButton_Click` event handler with the following code:  
+2.  Замените обработчик событий `UpdateButton_Click` следующим кодом:  
   
      [!code-vb[VbRaddataSaving#2](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_2.vb)]
      [!code-csharp[VbRaddataSaving#2](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_2.cs)]  
   
-#### <a name="to-add-code-to-delete-records-from-the-database"></a>To add code to delete records from the database  
+#### <a name="to-add-code-to-delete-records-from-the-database"></a>Чтобы добавить код для удаления записей из базы данных  
   
-1.  Select **DeleteButton** to create an event handler for the click event and open your form in the code editor.  
+1.  Выберите **DeleteButton** создайте обработчик событий для события щелчка кнопкой мыши и открыть форму в редакторе кода.  
   
-2.  Replace the `DeleteButton_Click` event handler with the following code:  
+2.  Замените обработчик событий `DeleteButton_Click` следующим кодом:  
   
      [!code-vb[VbRaddataSaving#3](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_3.vb)]
      [!code-csharp[VbRaddataSaving#3](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_3.cs)]  
   
-## <a name="run-the-application"></a>Run the application  
+## <a name="run-the-application"></a>Запуск приложения  
   
-#### <a name="to-run-the-application"></a>To run the application  
+#### <a name="to-run-the-application"></a>Запуск приложения  
   
--   Select **F5** to run the application.  
+-   Выберите **F5** для запуска приложения.  
   
--   Select the **Insert** button, and verify that the new record appears in the grid.  
+-   Выберите **вставить** кнопку и убедитесь, что новая запись отображается в сетке.  
   
--   Select the **Update** button, and verify that the record is updated in the grid.  
+-   Выберите **обновление** кнопку и убедитесь, что запись обновляется в сетке.  
   
--   Select the **Delete** button, and verify that the record is removed from the grid.  
+-   Выберите **удалить** кнопку и убедитесь, что запись удаляется из сетки.  
   
-## <a name="next-steps"></a>Next Steps  
- Depending on your application requirements, there are several steps you might want to perform after creating a data-bound form. Some enhancements you could make to this walkthrough include:  
+## <a name="next-steps"></a>Дальнейшие действия  
+ В зависимости от требований приложения существуют несколько шагов, которые возможно потребуется выполнить после создания формы с привязкой к данным. Ниже приводится перечень рекомендаций, позволяющих улучшить полученный результат.  
   
--   Adding search functionality to the form.  
+-   Добавление функциональности поиска в форму.  
   
--   Adding additional tables to the dataset by selecting **Configure DataSet with Wizard** from within the **Data Sources** window. You can add controls that display related data by dragging the related nodes onto the form. For more information, see [Relationships in Datasets](relationships-in-datasets.md).  
+-   Добавление дополнительных таблиц в набор данных, выбрав **настроить набор данных с помощью мастера** изнутри **источники данных** окна. Вы можете добавить элементы управления, отображающие связанные данные, перетащив связанные узлы на форму. Дополнительные сведения см. в разделе [отношения в наборах данных](relationships-in-datasets.md).  
   
-## <a name="see-also"></a>See Also  
- [Save data back to the database](../data-tools/save-data-back-to-the-database.md)
+## <a name="see-also"></a>См. также  
+ [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)

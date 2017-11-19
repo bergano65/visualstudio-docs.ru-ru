@@ -1,56 +1,55 @@
 ---
-title: "IDiaSymbol::get_isSafeBuffers | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_isSafeBuffers - метод"
+title: "IDiaSymbol::get_isSafeBuffers | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_isSafeBuffers method
 ms.assetid: f29e373d-e7bb-4181-ab9f-bf708d401d83
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5f75693fe1caa638d60d69f9ba61e15426c8f2ed
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_isSafeBuffers
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает пометить который указывает, используется ли директива препроцессора для безопасного буфера.  Используется, если [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) равно  `SymTagFunction`.  
+# <a name="idiasymbolgetissafebuffers"></a>IDiaSymbol::get_isSafeBuffers
+Возвращает флаг, указывающий, следует ли использовать директиву препроцессора для безопасном буфере. Используется, когда [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) равно `SymTagFunction`.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT get_isSafeBuffers(   
-   BOOL* pRetVal)  
+```C++  
+HRESULT get_isSafeBuffers(   
+   BOOL* pRetVal)  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pRetVal`  
- \[out\] возвращает `TRUE` если указатель используется директива препроцессора для безопасного буфера. в противном случае возвращает  `FALSE`.  
+ [out] Возвращает `TRUE` если указатель используется директива препроцессора для безопасном буфере; в противном случае возвращает `FALSE`.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает  `S_FALSE` или код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение  `S_FALSE` означает, что свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: Dia2.h  
   
- Библиотеки: diaguids.lib  
+ Библиотека: diaguids.lib  
   
- Библиотеки DLL: msdia100.dll  
+ Библиотека DLL: msdia100.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [strict\_gs\_check](/visual-cpp/preprocessor/strict-gs-check)
+ [strict_gs_check](/cpp/preprocessor/strict-gs-check)

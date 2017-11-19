@@ -1,28 +1,30 @@
 ---
-title: "Примеры отладки Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "образцы приложений [пакет SDK для отладки]"
-  - "отладка [пакет SDK для отладки], примеры"
-  - "Отладка SDK, примеры"
+title: "Примеры отладки Visual Studio | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- sample applications [Debugging SDK]
+- debugging [Debugging SDK], samples
+- Debugging SDK, samples
 ms.assetid: fbcc42a7-7851-487f-b981-8c4ae7ec7347
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 04814e7f699d196f09152c927c723f16c9c779c4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Примеры отладки Visual Studio
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Образце показано, как расширить 2 отладчик Visual Studio с помощью [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
+# <a name="visual-studio-debugging-samples"></a>Примеры отладки Visual Studio
+Двух примерах показано, как расширить с помощью отладчика Visual Studio [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
   
--   Образец вычислителя выражений отладчика для управляемых языков, включенная в [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. в  [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] окно, нажмите кнопку  **Выборки** вкладка нажмите кнопку  **Все** OR  **C\#** в списке языков, а затем нажмите кнопку  **Отладчик**.  
+-   Образец средства оценки выражений отладчика, управляемых языков включается в [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. В [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] окно, нажмите кнопку **образцы** щелкните **все** или **C#** в список языков, а затем нажмите кнопку **отладчик**.  
   
--   Пример обработчика отладки Visual Studio для родных языков, доступна на сайте MSDN code gallery.  Дополнительные сведения см. на странице веб\-сайта Майкрософт: [Пример обработчика отладки Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150236).
+-   Visual Studio отлаживать механизм образца, машинного языков доступна на сайте MSDN Code Gallery. Дополнительные сведения см. в разделе этой страницы на веб-сайте Майкрософт: [образец ядра отладки для Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150236).

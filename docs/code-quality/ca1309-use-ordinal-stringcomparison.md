@@ -1,29 +1,30 @@
 ---
-title: "CA1309: используйте порядковый параметр StringComparison | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "UseOrdinalStringComparison"
-  - "CA1309"
-helpviewer_keywords: 
-  - "UseOrdinalStringComparison"
-  - "CA1309"
+title: "CA1309: Используйте порядковый параметр StringComparison | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- UseOrdinalStringComparison
+- CA1309
+helpviewer_keywords:
+- UseOrdinalStringComparison
+- CA1309
 ms.assetid: 19be0854-cb6e-4efd-a4c8-a5c1fc6f7a71
-caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ba777ea4cd272a1392413a2ecbb52b9f45a3d71b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# CA1309: используйте порядковый параметр StringComparison
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309: используйте порядковый параметр StringComparison
 |||  
 |-|-|  
 |TypeName|UseOrdinalStringComparison|  
@@ -31,20 +32,20 @@ caps.handback.revision: 15
 |Категория|Microsoft.Globalization|  
 |Критическое изменение|Не критическое|  
   
-## Причина  
- Операция сравнения строк, не являющаяся лингвистической, не задает параметру <xref:System.StringComparison> ни значение **Ordinal**, ни **OrdinalIgnoreCase**.  
+## <a name="cause"></a>Причина  
+ Не задает операции сравнения строк, лингвистической <xref:System.StringComparison> параметра к **порядковый номер** или **OrdinalIgnoreCase**.  
   
-## Описание правила  
- Многие строковые операции, большинство важных методов <xref:System.String.Compare%2A?displayProperty=fullName> и <xref:System.String.Equals%2A?displayProperty=fullName> теперь предоставляют перегрузку, принимающую перечисление <xref:System.StringComparision?displayProperty=fullName> в качестве параметра.  
+## <a name="rule-description"></a>Описание правила  
+ Многие строковые операции, наиболее важные <xref:System.String.Compare%2A?displayProperty=fullName> и <xref:System.String.Equals%2A?displayProperty=fullName> методы, теперь предоставляют перегрузку, которая принимает <xref:System.StringComparison?displayProperty=fullName> значение перечисления в качестве параметра.  
   
- Если указывается либо **StringComparison.Ordinal**, либо **StringComparison.OrdinalIgnoreCase**, сравнение строк будет нелингвистическим.  То есть при принятии решений на основании сравнения игнорируются функции, характерные для естественного языка.  Это означает, что решения основываются на простых байтовых сравнениях и игнорируют использование таблиц регистров и равенства, параметризованных по языку и региональным параметрам.  В результате за счет явного задания параметру значения **StringComparison.Ordinal** или **StringComparison.OrdinalIgnoreCase** код часто становится более надежным и правильным, кроме того, увеличивается скорость его выполнения.  
+ При указании либо **StringComparison.Ordinal** или **StringComparison.OrdinalIgnoreCase**, то строковое сравнение будет лингвистической. То есть функции, характерные для естественного языка игнорируются при принятии решений сравнения. Это означает, что решения основываются на простых байтовых сравнений и игнорировать таблиц регистров или эквивалентности, которые параметризуются языком и региональными параметрами. В результате путем явного задания для параметра либо **StringComparison.Ordinal** или **StringComparison.OrdinalIgnoreCase**, кода часто увеличивается скорость, повышает правильность и становится более надежным.  
   
-## Устранение нарушений  
- Чтобы устранить нарушение данного правила, измените метод сравнения строк на перегрузку, принимающую перечисление <xref:System.StringComparison?displayProperty=fullName> в качестве параметра и задайте значение **Ordinal** или **OrdinalIgnoreCase**.  Например, измените `String.Compare(str1, str2)` на `String.Compare(str1, str2, StringComparison.Ordinal)`.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Чтобы устранить нарушение данного правила, измените метод сравнения строк на перегрузку, которая принимает <xref:System.StringComparison?displayProperty=fullName> перечисления в качестве параметра и указать либо **порядковый номер** или **OrdinalIgnoreCase**. Например, измените `String.Compare(str1, str2)` на `String.Compare(str1, str2, StringComparison.Ordinal)`.  
   
-## Отключение предупреждений  
- Если библиотека или приложение предназначены для ограниченной локальной аудитории или необходимо использовать семантику текущего языка и региональных параметров, для данного правила можно отключить вывод предупреждений.  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ Можно безопасно отключать предупреждение из этого правила, если библиотека или приложение предназначено для ограниченного круга локальных пользователей или когда следует использовать семантику текущего языка и региональных параметров.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Предупреждения глобализации](../code-quality/globalization-warnings.md)   
  [CA1307: укажите StringComparison](../code-quality/ca1307-specify-stringcomparison.md)

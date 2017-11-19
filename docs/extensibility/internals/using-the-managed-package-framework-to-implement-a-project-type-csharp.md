@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,38 +12,25 @@ helpviewer_keywords:
 - MPF projects
 - managed package framework, creating projects
 ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
-caps.latest.revision: 20
+caps.latest.revision: "20"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: d5bc147592bfc36247c35f23ac2885055d096af3
-ms.openlocfilehash: 1d70a70b942b3722ed61e1e8a2f2e54d96b916e4
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 16e1d301e5a3977f656c52f9c97eb43ee216075f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Использование платформа управляемых пакетов для реализации типа проекта (C#)
-Управляемые пакета Framework Являющиеся классы C# можно использовать или наследовать реализовать собственные типы проектов. MPF реализует множество интерфейсов, Visual Studio ожидает, что тип проекта, чтобы указать, позволяя пользователю сосредоточиться на реализации особенностей данного типа проекта.  
+# <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>С помощью платформы управляемых пакетов для реализации типа проекта (C#)
+Managed Package Framework (MPF) предоставляет классов C# можно использовать или наследовать для реализации собственных типов проектов. MPF реализует множество интерфейсов, Visual Studio ожидает тип проекта для предоставления, позволяя пользователю сосредоточиться на реализации особенностей типа проекта.  
   
-## <a name="using-the-mpf-project-source-code"></a>Используя исходный код проекта MPF  
- Платформа управляемых пакетов для проектов (MPFProj) предоставляет вспомогательные классы для создания и управления новой системы проектов. В отличие от других классов в MPF классы проекта не включаются в сборках, поставляемых с Visual Studio. Вместо этого классы проекта предоставляются в виде исходного кода в [MPF проектов 2013](http://mpfproj12.codeplex.com).  
+## <a name="using-the-mpf-project-source-code"></a>С помощью MPF исходный код проекта  
+ Managed Package Framework для проектов (MPFProj) предоставляет вспомогательные классы для создания и управления новую систему проектов. В отличие от других классов в MPF классы проекта не включаются в сборках, поставляемых с Visual Studio. Вместо этого проект классы предоставляются в виде исходного кода в [MPF для проектов 2013](http://mpfproj12.codeplex.com).  
   
- Чтобы добавить этот проект в решении VSPackage, выполните следующие действия:  
+ Добавление этого проекта в решение VSPackage, выполните следующие действия.  
   
-1.  Загрузите файлы MPFProj *MPFProjectDir*.  
+1.  Загрузки файлов MPFProj *MPFProjectDir*.  
   
 2.  В *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file, измените следующий блок:  
   
@@ -59,7 +45,7 @@ ms.lasthandoff: 02/22/2017
   
 2.  Выгрузите проект VSPackage.  
   
-3.  Измените CSPROJ-файл VSPackage, добавив следующий блок до другой `<Import>` блоков:  
+3.  Измените CSPROJ-файл пакета VSPackage, добавив следующий блок раньше `<Import>` блоки:  
   
 ```  
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />  
@@ -75,16 +61,16 @@ ms.lasthandoff: 02/22/2017
   
 2.  Закройте и снова откройте решение VSPackage.  
   
-3.  Снова откройте проект VSPackage. Вы должны увидеть новый каталог с именем ProjectBase.  
+3.  Снова откройте проект VSPackage. Вы увидите новый каталог с именем ProjectBase.  
   
-4.  Добавьте следующие ссылки в проект VSPackage.  
+4.  Добавьте следующую ссылку на проект VSPackage.  
   
      Microsoft.Build.Tasks.4.0  
   
 5.  Выполните построение проекта.  
   
 ## <a name="hierarchy-classes"></a>Иерархия классов  
- В следующей таблице перечислены классы MPFProj, поддерживающие иерархии проекта. Дополнительные сведения см. в разделе [иерархий и выбора](../../extensibility/internals/hierarchies-and-selection.md).  
+ В следующей таблице перечислены классы в MPFProj, которые поддерживают иерархии проекта. Дополнительные сведения см. в разделе [иерархии и выбора](../../extensibility/internals/hierarchies-and-selection.md).  
   
 |Имя класса|  
 |----------------|  
@@ -101,7 +87,7 @@ ms.lasthandoff: 02/22/2017
 |`Microsoft.VisualStudio.Package.BuildDependency`|  
   
 ## <a name="document-handling-classes"></a>Классы для работы с документами  
- Ниже перечислены классы MPF, поддерживающие обработку документов. Дополнительные сведения см. в разделе [Открытие и сохранение элементов проекта](../../extensibility/internals/opening-and-saving-project-items.md).  
+ В следующей таблице перечислены классы MPF, поддерживающие обработку документов. Дополнительные сведения см. в разделе [открытия и сохранения элементов проекта](../../extensibility/internals/opening-and-saving-project-items.md).  
   
 |Имя класса|  
 |----------------|  
@@ -109,7 +95,7 @@ ms.lasthandoff: 02/22/2017
 |`Microsoft.VisualStudio.Package.FileDocumentManager`|  
   
 ## <a name="configuration-and-output-classes"></a>Конфигурация и классы вывода  
- Ниже перечислены классы в MPF, позволяющих типы проектов, которые поддерживают несколько конфигураций, например, отладки и выпуска и коллекции выходных данных проекта. Дополнительные сведения см. в разделе [управление параметры конфигурации](../../extensibility/internals/managing-configuration-options.md).  
+ В следующей таблице перечислены классы MPF, позволяющих типы проектов, которые поддерживают несколько конфигураций, например, отладки и выпуска и коллекциях выходных данных проекта. Дополнительные сведения см. в разделе [управление параметры конфигурации](../../extensibility/internals/managing-configuration-options.md).  
   
 |Имя класса|  
 |----------------|  
@@ -120,7 +106,7 @@ ms.lasthandoff: 02/22/2017
 |`Microsoft.VisualStudio.Package.ProjectElement`|  
   
 ## <a name="automation-support-classes"></a>Классы поддержки автоматизации  
- Ниже перечислены классы MPF, поддерживающих автоматизацию, чтобы пользователи типом проекта можно создавать надстройки.  
+ Ниже перечислены классы MPF, поддерживающих автоматизацию, чтобы пользователи вашего проекта типа можно создавать надстройки.  
   
 |Имя класса|  
 |----------------|  
@@ -130,8 +116,8 @@ ms.lasthandoff: 02/22/2017
 |`Microsoft.VisualStudio.Package.Automation.OAProjectItem`|  
 |`Microsoft.VisualStudio.Package.Automation.OANestedProjectItem`|  
   
-## <a name="properties-classes"></a>Свойства классов  
- В следующей таблице перечислены классы в MPF, позволяющих типы проектов добавить свойства, пользователи могут выполнять и изменять в обозревателе свойств.  
+## <a name="properties-classes"></a>Классы, свойства  
+ В следующей таблице перечислены классы MPF, позволяющих типы проектов добавить свойства, просмотра и изменения в браузере свойств пользователей.  
   
 |Имя класса|  
 |----------------|  

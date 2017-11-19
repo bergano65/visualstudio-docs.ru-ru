@@ -1,27 +1,30 @@
 ---
-title: "IEnumRemoteDebugApplicationThreads::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IEnumRemoteDebugApplicationThreads::Next | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IEnumRemoteDebugApplicationThreads.Next
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IEnumRemoteDebugApplicationThreads::Next"
+helpviewer_keywords: IEnumRemoteDebugApplicationThreads::Next
 ms.assetid: d8d10d7e-3468-49be-acf9-d842db9940e7
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d8ce0dc7c77cd3b58f388ab63a9d5a3573c93419
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IEnumRemoteDebugApplicationThreads::Next
-Метод `Next` извлекает заданное количество сегментов в последовательности перечисления.  
+# <a name="ienumremotedebugapplicationthreadsnext"></a>IEnumRemoteDebugApplicationThreads::Next
+`Next` Метод извлекает указанное число сегментов в последовательности перечисления.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT Next(  
@@ -31,25 +34,25 @@ HRESULT Next(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `celt`  
- \[in\] число сегментов, который необходимо извлечь.  
+ [in] Количество сегментов для извлечения.  
   
  `pprdat`  
- \[out\] возвращает массив интерфейсов `IRemoteDebugApplicationThread`, представляющий восстанавливаемая сегменты.  
+ [out] Возвращает массив `IRemoteDebugApplicationThread` интерфейсы, которые представляет извлекаемых сегменты.  
   
  `pceltFetched`  
- \[out\] фактическое количество сегментов выбирается перечислителем.  
+ [out] Фактическое число сегментов, выбранных с помощью перечислителя.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
- Этот метод извлекает заданное количество сегментов в последовательности перечисления.  
+## <a name="remarks"></a>Примечания  
+ Этот метод извлекает указанное число сегментов в последовательности перечисления.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IEnumRemoteDebugApplicationThreads](../../winscript/reference/ienumremotedebugapplicationthreads-interface.md)

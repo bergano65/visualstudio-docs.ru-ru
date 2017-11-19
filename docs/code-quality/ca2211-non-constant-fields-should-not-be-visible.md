@@ -1,11 +1,10 @@
 ---
-title: 'CA2211: Non-constant fields should not be visible | Microsoft Docs'
+title: "CA2211: Неконстантные поля должны быть скрыты | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,52 +14,38 @@ helpviewer_keywords:
 - NonConstantFieldsShouldNotBeVisible
 - CA2211
 ms.assetid: e1e42c40-0acd-4312-af29-70133739a304
-caps.latest.revision: 13
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 57ba4fb986fe2cf5c81ce83e6e6b02b57aa64dd6
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ac9a04038ba1d80e8abba2efbbab19c9779c384a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211: Non-constant fields should not be visible
+# <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211: неконстантные поля должны быть скрыты
 |||  
 |-|-|  
 |TypeName|NonConstantFieldsShouldNotBeVisible|  
 |CheckId|CA2211|  
-|Category|Microsoft.Usage|  
-|Breaking Change|Breaking|  
+|Категория|Microsoft.Usage|  
+|Критическое изменение|Критическое|  
   
-## <a name="cause"></a>Cause  
- A public or protected static field is not constant nor is it read-only.  
+## <a name="cause"></a>Причина  
+ Открытый или защищенный статическое поле не является константой и поддерживается только для чтения.  
   
-## <a name="rule-description"></a>Rule Description  
- Static fields that are neither constants nor read-only are not thread-safe. Access to such a field must be carefully controlled and requires advanced programming techniques for synchronizing access to the class object. Because these are difficult skills to learn and master, and testing such an object poses its own challenges, static fields are best used to store data that does not change. This rule applies to libraries; applications should not expose any fields.  
+## <a name="rule-description"></a>Описание правила  
+ Для статических полей, которые не являются константными и доступными только для чтения, невозможно обеспечить потокобезопасность. Доступ к подобным полям должен тщательно контролироваться и требуются дополнительные методы программирования для синхронизации доступа к такому объекту класса. Поскольку это сложно навыками, чтобы узнать и master и тестирование такого объекта создающего свои трудности, статические поля лучше подходят для хранения данных, которые не изменяются. Это правило применяется к библиотекам; приложения не должны предоставлять все поля.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, make the static field constant or read-only. If this is not possible, redesign the type to use an alternative mechanism such as a thread-safe property that manages thread-safe access to the underlying field. Realize that issues such as lock contention and deadlocks might affect the performance and behavior of the library.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Чтобы устранить нарушение данного правила, сделайте статическое поле константой или только для чтения. Если это невозможно, измените тип, чтобы использовать альтернативный механизм, например поточно-свойство, которое управляет потокобезопасный доступ к базовому полю. Имейте в виду, что проблем, таких как конфликт блокировки и взаимоблокировки может повлиять на производительность и поведение библиотеки.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule if you are developing an application and therefore have full control over access to the type that contains the static field. Library designers should not suppress a warning from this rule; using non-constant static fields can make using the library difficult for developers to use correctly.  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ Можно безопасно подавить предупреждение из этого правила, если вы разрабатываете приложение и поэтому имеют полный контроль над доступом к типу, содержащему статическое поле. Разработчикам библиотек не следует отключать предупреждение из этого правила; Использование статических полей неконстантное можно сделать с помощью библиотеки для разработчиков правильно использовать.  
   
-## <a name="example"></a>Example  
- The following example shows a type that violates this rule.  
+## <a name="example"></a>Пример  
+ В следующем примере показано тип, нарушающий это правило.  
   
- [!code-vb[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/VisualBasic/ca2211-non-constant-fields-should-not-be-visible_1.vb)] [!code-csharp[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/CSharp/ca2211-non-constant-fields-should-not-be-visible_1.cs)]
+ [!code-vb[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/VisualBasic/ca2211-non-constant-fields-should-not-be-visible_1.vb)]
+ [!code-csharp[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/CSharp/ca2211-non-constant-fields-should-not-be-visible_1.cs)]

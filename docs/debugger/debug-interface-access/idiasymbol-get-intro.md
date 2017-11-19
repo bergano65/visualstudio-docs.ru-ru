@@ -1,50 +1,49 @@
 ---
-title: "IDiaSymbol::get_intro | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_intro - метод"
+title: "IDiaSymbol::get_intro | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_intro method
 ms.assetid: 101afe4a-4c57-45de-87b4-330394c6de10
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 41a52574a2e966860d9143487a1befb5d3a1b95d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_intro
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает пометить который определяет, является ли функция при вводе виртуальная функция.  
+# <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
+Возвращает флаг, который указывает, является ли функция Знакомство с приложением виртуальной функции.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT get_intro (   
-   BOOL* pRetVal  
+```C++  
+HRESULT get_intro (   
+   BOOL* pRetVal  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pRetVal`  
- \[out\] возвращает `TRUE` если функция виртуальный вступления; в противном случае возвращает  `FALSE`.  
+ [out] Возвращает `TRUE` Если функция начальный виртуальным; в противном случае возвращает `FALSE`.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает  `S_FALSE` или код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение  `S_FALSE` означает, что свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
   
-## Пример  
+## <a name="example"></a>Пример  
   
-```cpp#  
+```C++  
 class A {  
    virtual int f1();  
 }  
@@ -53,14 +52,14 @@ class B : public A {
 }  
 ```  
   
- Оба`A::f1` и  `B::f1` виртуальные функции, но  `A::f1` виртуальный вступления.  
+ Оба `A::f1` и `B::f1` , виртуальные функции, но `A::f1` является виртуальным введение.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
   
 |Требование|Описание|  
-|----------------|--------------|  
+|-----------------|-----------------|  
 |Заголовок:|dia2.h|  
-|Версия:|Пакет SDK для доступа к интерфейсу отладки v7.0|  
+|Версия:|ПАКЕТ SDK для v7.0|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

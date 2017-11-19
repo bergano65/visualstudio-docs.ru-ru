@@ -1,59 +1,59 @@
 ---
-title: "IPropertyProxyEESide::CreateReplacementObject | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IPropertyProxyEESide::CreateReplacementObject"
-helpviewer_keywords: 
-  - "IPropertyProxyEESide::CreateReplacementObject"
+title: "IPropertyProxyEESide::CreateReplacementObject | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IPropertyProxyEESide::CreateReplacementObject
+helpviewer_keywords: IPropertyProxyEESide::CreateReplacementObject
 ms.assetid: 0cfe79b8-c3f1-48b0-a225-e39dee2c92fe
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0f0202f017004e69f356b31299f0ed28b55348aa
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IPropertyProxyEESide::CreateReplacementObject
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Создает копию конкретного объекта данных в средство оценки выражений \(EE\).  
+# <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
+Создает копию объекта данных для оценки выражений (EE).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-HRESULT CreateReplacementObject(  
-   IEEDataStorage*  dataIn,  
-   IEEDataStorage** dataOut  
+HRESULT CreateReplacementObject(  
+   IEEDataStorage*  dataIn,  
+   IEEDataStorage** dataOut  
 );  
 ```  
   
-```c#  
-int CreateReplacementObject(  
-   IEEDataStorage     dataIn,  
-   out IEEDataStorage dataOut  
+```csharp  
+int CreateReplacementObject(  
+   IEEDataStorage     dataIn,  
+   out IEEDataStorage dataOut  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `dataIn`  
- \[in\] [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект, содержащий данные, которые необходимо скопировать.  
+ [in] [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект, содержащий данные для копирования.  
   
  `dataOut`  
- \[out\] возвращает новую `IEEDataStorage` объект.  
+ [out] Возвращает новый `IEEDataStorage` объекта.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Получатель этот метод [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект, представляющий массив байтов.  Этот входящий объект данных, как правило, не реализуется EE.  Однако объект, возвращенный этим методом, всегда реализуется EE, который позволяет реализовать EE `IEEDataStorage` интерфейс на любой класс пожелан.  
+## <a name="remarks"></a>Примечания  
+ Этот метод получает [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект, представляющий массив байтов. Это входящего объекта данных обычно не реализуют EE. Тем не менее, возвращаемый этим методом объект всегда реализуется EE, которая позволяет реализовать EE `IEEDataStorage` интерфейс требуемого любой класс.  
   
- Обратите внимание, что данные, предоставляемые входящим `IEEDataStorage` объект должен быть одними и теми же данными в общительном  `IEEDataStorage` объект.  
+ Обратите внимание, что данные предоставляются во входящем `IEEDataStorage` объект должен иметь те же данные в исходящий `IEEDataStorage` объекта.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

@@ -1,71 +1,70 @@
 ---
-title: "IDiaSymbol::findChildrenExByRVA | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::findChildrenExByRVA"
+title: "IDiaSymbol::findChildrenExByRVA | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::findChildrenExByRVA
 ms.assetid: cbc57c6c-7d64-4469-a114-1dd6671e5ec5
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d4cebb4d9e1fce7b517dfd95880942e7975970d7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::findChildrenExByRVA
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Получает дочерние элементы символов, допустимых в указанном относительного адреса \(RVA виртуальном\).  
+# <a name="idiasymbolfindchildrenexbyrva"></a>IDiaSymbol::findChildrenExByRVA
+Получает дочерний символа, действительные в указанный относительный виртуальный адрес (RVA).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT findChildrenExByRVA (   
-   enum SymTagEnum   symtag,  
-   LPCOLESTR         name,  
-   DWORD             compareFlags,  
-   DWORD             address,  
-   IDiaEnumSymbols** ppResult  
+```C++  
+HRESULT findChildrenExByRVA (   
+   enum SymTagEnum   symtag,  
+   LPCOLESTR         name,  
+   DWORD             compareFlags,  
+   DWORD             address,  
+   IDiaEnumSymbols** ppResult  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `symtag`  
- \[in\] задает теги символов дочерних элементов, которые нужно извлечь, как определено в [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md).  Значение `SymTagNull` для всех дочерних элементов, которые необходимо извлечь.  
+ [in] Задает теги символов дочерних элементов, которые требуется получить, как определено в [SymTagEnum-перечисление](../../debugger/debug-interface-access/symtagenum.md). Значение `SymTagNull` для всех дочерних требуется получить.  
   
  `name`  
- \[in\] определяет имя дочерних элементов, которые необходимо извлечь.  Значение `NULL` для всех дочерних элементов, которые необходимо извлечь.  
+ [in] Указывает имя дочерние элементы, которые требуется получить. Значение `NULL` для всех дочерних требуется получить.  
   
  `compareFlags`  
- \[in\] определяет параметры сравнения, применяемых для именования совпадать.  Значения [Перечисление NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) перечисление можно использовать по отдельности или в сочетании.  
+ [in] Задает параметры сравнения для применения к совпадению имен. Значения из [NameSearchOptions-перечисление](../../debugger/debug-interface-access/namesearchoptions.md) перечисления может использоваться отдельно или в сочетании.  
   
  `address`  
- \[in\] определяет RVA.  
+ [in] Указывает RVA.  
   
  `ppResult`  
- \[out\] возвращает [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) объект, содержащий список полученных символов дочернего элемента.  
+ [out] Возвращает [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) извлечь объект, содержащий список дочерних символов.  
   
-## Возвращаемое значение  
- Возвращает `S_OK` если хотя бы один дочерний элемент был найден или возвращает символов  `S_FALSE` если дочерние элементы не были найдены. в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Возвращает `S_OK` Если хотя бы один дочерний символ найден, или возвращает `S_FALSE` , если дочерние элементы не были найдены; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Локальные символы, которые возвращаются включают данные в режиме реального времени диапазона.  
+## <a name="remarks"></a>Примечания  
+ Локальные символы, которые возвращаются включают сведения о динамической диапазоне.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: Dia2.h  
   
- Библиотеки: diaguids.lib  
+ Библиотека: diaguids.lib  
   
- Библиотеки DLL: msdia100.dll  
+ Библиотека DLL: msdia100.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   

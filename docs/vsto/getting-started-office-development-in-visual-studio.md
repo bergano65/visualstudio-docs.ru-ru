@@ -1,50 +1,54 @@
 ---
-title: "Начало работы (разработка решений Office в Visual Studio)"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Office - разработка решений в Visual Studio, начало работы"
+title: "Приступая к работе (Разработка решений Office в Visual Studio) | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: Office development in Visual Studio, getting started
 ms.assetid: fc27e84c-dca2-4b0a-8794-f57a2a886262
-caps.latest.revision: 56
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 52
+caps.latest.revision: "56"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 04e0419fe3c56ef51656aafb20f16d78045dabab
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Начало работы (разработка решений Office в Visual Studio)
+# <a name="getting-started-office-development-in-visual-studio"></a>Начало работы (разработка решений Office в Visual Studio)
   В этом разделе содержатся подразделы, позволяющие начать работу со средствами разработчика для Microsoft Office в Visual Studio.  
   
-## В этом подразделе  
- [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
+> [!NOTE]  
+>  Заинтересованы в разработке решений, расширяющих возможности Office через [нескольких платформ](https://dev.office.com/add-in-availability)? Ознакомьтесь с новой [модель надстроек Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Надстройки Office имеют небольшого размера, по сравнению с надстройками VSTO и решения, и их можно создавать с помощью почти любой технологии веб-программирования, таких как HTML5, JavaScript, CSS3 и XML.  
+  
+## <a name="in-this-section"></a>Содержание  
+ [Общие сведения о разработке решений Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
  Общие сведения о разработке решений Office в Visual Studio.  
   
- [Изменения проектирования проектов Office, предназначенных для .NET Framework 4 или .NET Framework 4.5](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
+ [Изменения структуры проектов Office для .NET Framework 4 и .NET Framework 4.5](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
  Описание новых методов разработки проектов Office, предназначенных для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии, и списки критически важных изменений в коде проектов Office, переносимых в [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии.  
   
- [Доступность функций по типам приложений Office и проектов](../vsto/features-available-by-office-application-and-project-type.md)  
+ [Доступность функций по типам приложений Office и типам проектов](../vsto/features-available-by-office-application-and-project-type.md)  
  Описание приложений и проектов, необходимых для использования таких функций разработки приложений Office, как расширяемость ленты, настраиваемые панели задач, панели действий и области формы.  
   
  [Настройка компьютера для разработки решений Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)  
- Сведения и инструкции по установке средств разработки Office \(среды выполнения, позволяющей решениям Office работать на компьютерах конечных пользователей\) и основных сборок взаимодействия Office.  
+ Сведения и инструкции по установке средств разработки Office (среды выполнения, позволяющей решениям Office работать на компьютерах конечных пользователей) и основных сборок взаимодействия Office.  
   
- [Знакомство с программными настройками уровня документа для Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)  
+ [Приступая к работе: программирование настроек уровня документа для Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)  
  Обзор важных понятий, необходимых для создания настроек уровня документа для Excel в Visual Studio.  
   
  [Приступая к работе: программирование настроек уровня документа для Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)  
  Обзор важных понятий, необходимых для создания настроек уровня документа для Word в Visual Studio.  
   
- [Приступая к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
- Обзор важных понятий, необходимых для создания надстроек VSTO \(Visual Studio Tools for Office\) уровня приложения для приложений Microsoft Office в Visual Studio.  
+ [Приступая к работе: программирование настроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
+ Обзор важных понятий, необходимых для создания надстроек VSTO (Visual Studio Tools for Office) уровня приложения для приложений Microsoft Office в Visual Studio.  
   
  [Сравнение решений Office и VBA в Visual Studio](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)  
  Описание сравнительных преимуществ набора средств Visual Basic для приложений и средств разработки Office в Visual Studio при разработке решений Office.  
@@ -52,8 +56,8 @@ caps.handback.revision: 52
  [Общие задачи программирования Office](../vsto/common-tasks-in-office-programming.md)  
  Ссылки на разделы, которые могут помочь в решении общих проблем.  
   
-## Связанные подразделы  
- [Образцы и пошаговые руководства разработки Office](../vsto/office-development-samples-and-walkthroughs.md)  
+## <a name="related-sections"></a>Связанные разделы  
+ [Примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md)  
  Ссылки на примеры приложений и разделы с пошаговыми инструкциями по выполнению типовых задач.  
   
  [Архитектура решений Office в Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)  

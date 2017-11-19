@@ -1,28 +1,27 @@
 ---
-title: "How to: Display Spy++ Views | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Spy++, viewing code"
+title: "Как: отображение представлений Spy ++ | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Spy++, viewing code
 ms.assetid: 38c88663-1f73-48e9-8b47-52a3e8451c98
-caps.latest.revision: 5
-caps.handback.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 03a8733e41ea17eaf1cf2412190761d5c329e793
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# How to: Display Spy++ Views
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-При запуске программы Spy\+\+ открывается [Представление окон](../debugger/windows-view.md) — представление всех доступных окон и элементов управления в виде дерева.  Это корневое окно называется "Окно 1". Кроме него есть еще три представления Spy\+\+: [Представление сообщений](../debugger/messages-view.md), [Представление процессов](../debugger/processes-view.md) и [Представление потоков](../debugger/threads-view.md).  Выбрать необходимое представление можно в меню **Spy**.  Дополнительные сведения см. в разделе [Представления Spy\+\+](../debugger/spy-increment-views.md).  
+# <a name="how-to-display-spy-views"></a>Практическое руководство. Отображение представлений Spy++
+При запуске программы Spy ++, он открывается в [представление окон](../debugger/windows-view.md), дерево всех окон и элементов управления, доступных на компьютере. Это корневое окно называется «Windows 1». Существует также доступны три представления Spy ++: [представления сообщений](../debugger/messages-view.md), [представление процессов](../debugger/processes-view.md), и [представление "Потоки"](../debugger/threads-view.md). Можно отобразить нужного представления из **Spy** меню. Дополнительные сведения см. в разделе [представлений Spy ++](../debugger/spy-increment-views.md).  
   
-## См. также  
- [Using Spy\+\+](../debugger/using-spy-increment.md)   
- [Spy\+\+ Reference](../debugger/spy-increment-reference.md)
+## <a name="see-also"></a>См. также  
+ [Использование Spy ++](../debugger/using-spy-increment.md)   
+ [Справочник по Spy++](../debugger/spy-increment-reference.md)

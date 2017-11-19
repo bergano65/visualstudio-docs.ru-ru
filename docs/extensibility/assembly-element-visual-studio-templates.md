@@ -1,56 +1,63 @@
 ---
-title: "Элемент Assembly (шаблоны Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#Assembly"
-helpviewer_keywords: 
-  - "Assembly - элемент [шаблоны Visual Studio]"
-  - "элемент <Assembly> [шаблоны Visual Studio]"
+title: "Элемент ASSEMBLY (шаблоны Visual Studio) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
+helpviewer_keywords:
+- Assembly element [Visual Studio templates]
+- <Assembly> element [Visual Studio templates]
 ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9032fa397e8fb4cb443d0209853ba4cfe7a5e53f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Элемент Assembly (шаблоны Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="assembly-element-visual-studio-templates"></a>Элемент Assembly (шаблоны Visual Studio)
 Указывает сведения о сборке, используемые шаблоном для добавления в проекты ссылки на эту сборку.  
   
-## Синтаксис  
+ \<VSTemplate >  
+ \<TemplateContent >  
+ \<Ссылки на >  
+ \<Ссылка >  
+ \<Сборки >  
+  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <Assembly> AssemblyName </Assembly>  
 ```  
   
-## Атрибуты и элементы  
- В следующих разделах описаны атрибуты, дочерние элементы и родительские элементы.  
+## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
-### Атрибуты  
+### <a name="attributes"></a>Атрибуты  
  Отсутствует.  
   
-### Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
   
-### Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
-|[Ссылки](../extensibility/reference-element-visual-studio-templates.md)|Задает ссылку на сборку, которая добавляется при добавлении элемента в проект.|  
+|-------------|-----------------|  
+|[Ссылки](../extensibility/reference-element-visual-studio-templates.md)|Указывает ссылку на сборку, которую нужно добавить при добавлении элемента в проект.|  
   
-## Текстовое значение  
+## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Данный текст указывает сборку, добавляемую к проекту при создании шаблона элемента.  Имя сборки должно быть задано одним из следующих способов.  
+ Данный текст задает сборку, чтобы добавить в проект при создании экземпляра шаблона элемента. Имя сборки необходимо указать в одном из следующих способов:  
   
--   Как полное имя сборки.  Примеры.  
+-   Как полное имя сборки. Например:  
   
     ```  
     <Assembly>  
@@ -58,19 +65,19 @@ caps.handback.revision: 10
     </Assembly>  
     ```  
   
--   Как простая текстовая ссылка.  Примеры.  
+-   Как простая текстовая ссылка. Пример:  
   
     ```  
     <Assembly> System </Assembly>  
     ```  
   
-## Заметки  
- `Assembly` является обязательным дочерним элементом элемента `Reference`.  
+## <a name="remarks"></a>Примечания  
+ `Assembly` — обязательный дочерний элемент элемента `Reference`.  
   
- Элементы `Reference`, `References,` и `Assembly` могут использоваться только в VSTEMPLATE\-файлах, атрибут `Type` которых имеет значение `Item`.  
+ `Reference`, `References,` И `Assembly` элементы могут использоваться только в VSTEMPLATE-файлах, имеющих `Type` значение атрибута `Item`.  
   
-## Пример  
- В следующем примере демонстрируется элемент `TemplateContent` шаблона элемента.  Этот XML добавляет ссылки на сборки System.dll и System.Data.dll.  
+## <a name="example"></a>Пример  
+ В следующем примере демонстрируется `TemplateContent` элемента шаблона элемента. Этот XML-код добавляет ссылки на сборки System.dll и System.Data.dll.  
   
 ```  
 <TemplateContent>  
@@ -90,6 +97,6 @@ caps.handback.revision: 10
 </TemplateContent>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Создание пользовательских шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
+ [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

@@ -1,33 +1,31 @@
 ---
-title: "IDiaSymbol::get_backEndMinor | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_backEndMinor - метод"
+title: "IDiaSymbol::get_backEndMinor | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_backEndMinor method
 ms.assetid: 37f38d19-6685-440d-a477-7127c4f8699e
-caps.latest.revision: 9
-caps.handback.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 474b62f702655472327f94370f75955695192795
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_backEndMinor
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает серверной части дополнительный номер версии компилятора.  
+# <a name="idiasymbolgetbackendminor"></a>IDiaSymbol::get_backEndMinor
+Извлекает внутренний дополнительный номер версии компилятора.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```C++  
 HRESULT get_backEndMinor (   
    DWORD* pRetVal  
 );  
@@ -35,25 +33,25 @@ HRESULT get_backEndMinor (
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает номер вспомогательной версии серверной части. См. заметки.  
+ [out] Возвращает внутренний дополнительный номер версии. См. заметки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае — возвращает `S_FALSE` или код ошибки.  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
 >  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="remarks"></a>Примечания  
- Компилятор обычно состоят из двух основных элементов: внешнего интерфейса (средство синтаксического анализа), который обрабатывает анализа исходного кода в промежуточную форму, и серверной части (генератор кода), преобразующий промежуточную форму в сборку. Обычно не возникают для внешнего интерфейса использовать другую версию, чем серверной части.  
+ Компилятор обычно состоит из двух основных элемента: внешнего интерфейса (средства синтаксического анализа), который обрабатывает разбора исходного кода в промежуточный формат, и серверную часть (генератор кода), который преобразует промежуточную форму в сборку. Довольно часто для внешнего интерфейса использовать другую версию, чем серверной части.  
   
- Переднего плана или номер версии серверной части состоит из трех частей: \< основных>. \< дополнительный>. \< сборки>, где \< основных> номер основной версии \< вспомогательных> является дополнительный номер версии, и \< сборки> — номер сборки. Например, 13.10.3077.  
+ Интерфейс или внутренний номер версии состоит из трех частей: \<основной >.\< дополнительный номер >. \<сборки >, где \<основной > является основной номер версии, \<дополнительный > имеет дополнительный номер версии, и \<сборки > — номер сборки. Например, 13.10.3077.  
   
 ## <a name="requirements"></a>Требования  
   
 |Требование|Описание|  
 |-----------------|-----------------|  
 |Заголовок:|dia2.h|  
-|Версия:|ПАКЕТ SDK ДЛЯ версии 7.0|  
+|Версия:|ПАКЕТ SDK для v7.0|  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

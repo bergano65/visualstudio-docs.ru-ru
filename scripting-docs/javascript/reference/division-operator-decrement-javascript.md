@@ -1,44 +1,46 @@
 ---
-title: "Оператор деления (/) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "/"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "/ - оператор"
-  - "оператор деления, синтаксис"
-  - "оператор деления"
+title: "Оператор деления (-) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: /
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- / operator
+- division operator, syntax
+- division operator
 ms.assetid: a552cc0a-3b28-4412-a2b3-24cbec917ac4
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c27456ec7f21dd969ae22892002ec87e90231fe8
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Оператор деления (/) (JavaScript)
-Выполняет деление двух выражений.  
+# <a name="division-operator---javascript"></a>Оператор деления (-) (JavaScript)
+Делит значение двух выражений.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 result = number1 / number2   
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `result`  
- Любая числовая переменная.  
+ Любой числовой переменной.  
   
  `number1`  
  Произвольное числовое выражение.  
@@ -46,10 +48,10 @@ result = number1 / number2
  `number2`  
  Произвольное числовое выражение.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## См. также  
- [Оператор присваивания деления \(\/\=\)](../../javascript/reference/division-assignment-operator-decrement-equal-javascript.md)   
+## <a name="see-also"></a>См. также  
+ [Оператор присваивания деления (/ =)](../../javascript/reference/division-assignment-operator-decrement-equal-javascript.md)   
  [Приоритет операторов](../../javascript/operator-subtractprecedence-javascript.md)   
- [Сводный список операторов \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Сводный список операторов (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

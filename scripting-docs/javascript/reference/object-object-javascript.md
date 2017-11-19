@@ -1,33 +1,34 @@
 ---
-title: "Объект Object (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "object"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Object - объект"
+title: "Объект Object (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: object
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: Object object
 ms.assetid: d24ef8fc-217b-4828-94e1-19f72780bae0
-caps.latest.revision: 25
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 25
+caps.latest.revision: "25"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 17e82b9c66c286c7f847e7b67b1b5928aadd613e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Объект Object (JavaScript)
+# <a name="object-object-javascript"></a>Объект Object (JavaScript)
 Предоставляет функции, общие для всех объектов [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
@@ -35,37 +36,37 @@ obj
  = new Object([value])   
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `obj`  
- Обязательный.  Имя переменной, которой присваивается объект `Object`.  
+ Обязательный. Имя переменной, которой присваивается объект `Object`.  
   
  *value*  
- Необязательный.  Любой из примитивных типов данных [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] \(число, логическое значение или строка\).  Если параметр value является объектом, объект возвращается без изменений.  Если параметр *value* имеет значение `null`, **не определен** или не указан, создается объект без содержимого.  
+ Необязательно. Любой из примитивных типов данных [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (число, логическое значение или строка). Если параметр value является объектом, объект возвращается без изменений. Если *значение* — `null`, **не определено**, или не указано, создается объект без содержимого.  
   
-## Заметки  
- Объект `Object` присутствует во всех остальных объектах [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]; все его методы и свойства доступны во всех остальных объектах.  Методы могут заново определяться в пользовательских объектах и вызываются [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] в соответствующее время.  Метод **toString** является примером часто переопределяемого метода `Object`.  
+## <a name="remarks"></a>Примечания  
+ Объект `Object` присутствует во всех остальных объектах [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]; все его методы и свойства доступны во всех остальных объектах. Методы могут заново определяться в пользовательских объектах и вызываются [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] в соответствующее время. **ToString** метод является примером часто переопределяемого `Object` метод.  
   
  В этом справочнике по языку описание каждого метода `Object` включает и информацию по умолчанию, и информацию по реализации отдельных встроенных объектов [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
-## Требования  
- `Object Object` появился в [!INCLUDE[jsv3text](../../javascript/reference/includes/jsv3text-md.md)].  Некоторые элементы следующих списков были представлены в более поздних версиях.  
+## <a name="requirements"></a>Требования  
+ `Object Object` появился в [!INCLUDE[jsv3text](../../javascript/reference/includes/jsv3text-md.md)]. Некоторые члены в следующих списках были введены в более поздних версиях.  
   
-## Свойства  
+## <a name="properties"></a>Свойства  
  В следующей таблице перечислены свойства объекта `Object Object`.  
   
 |Свойство|Описание|  
-|--------------|--------------|  
-|[Свойство \_\_proto\_\_](../../javascript/reference/proto-property-object-javascript.md)|Указывает прототип для объекта.|  
-|[Свойство constructor](../../javascript/reference/constructor-property-object-javascript.md)|Указывает функцию, которая создает объект.|  
+|--------------|-----------------|  
+|[__proto\_ \_ свойство](../../javascript/reference/proto-property-object-javascript.md)|Указывает прототип для объекта.|  
+|[Свойство сonstructor](../../javascript/reference/constructor-property-object-javascript.md)|Указывает функцию, которая создает объект.|  
 |[Свойство prototype](../../javascript/reference/prototype-property-object-javascript.md)|Возвращает ссылку на прототип класса объектов.|  
   
-## Функции  
+## <a name="functions"></a>Функции  
  В следующей таблице перечислены функции объекта `Object Object`.  
   
 |Функция|Описание|  
-|-------------|--------------|  
-|[Функция Object.assign](../../javascript/reference/object-assign-function-object-javascript.md)|Копирует значения из одного или нескольких объектов источников в целевой объект.|  
-|[Функция Object.create](../../javascript/reference/object-create-function-javascript.md)|Создает объект, который имеет указанный прототип и содержит указанные свойства \(необязательно\).|  
+|--------------|-----------------|  
+|[Функция Object.Assign](../../javascript/reference/object-assign-function-object-javascript.md)|Копирует значения из одного или нескольких исходных объектов в целевой объект.|  
+|[Функция Object.create](../../javascript/reference/object-create-function-javascript.md)|Создает объект, который имеет указанный прототип и содержит указанные свойства (необязательно).|  
 |[Функция Object.defineProperties](../../javascript/reference/object-defineproperties-function-javascript.md)|Добавляет одно или несколько свойств в объект и изменяет атрибуты существующих свойств.|  
 |[Функция Object.defineProperty](../../javascript/reference/object-defineproperty-function-javascript.md)|Добавляет свойство в объект или изменяет атрибуты существующего свойства.|  
 |[Функция Object.freeze](../../javascript/reference/object-freeze-function-javascript.md)|Предотвращает изменение существующих атрибутов и значений свойств, а также добавление новых свойств.|  
@@ -82,17 +83,17 @@ obj
 |[Функция Object.seal](../../javascript/reference/object-seal-function-javascript.md)|Предотвращает изменение атрибутов существующих свойств, а также добавление новых свойств.|  
 |[Функция Object.setPrototypeOf](../../javascript/reference/object-setprototypeof-function-javascript.md)|Задает прототип объекта.|  
   
-## Методы  
+## <a name="methods"></a>Методы  
  В следующей таблице перечислены методы объекта `Object Object`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[Метод hasOwnProperty](../../javascript/reference/hasownproperty-method-object-javascript.md)|Возвращает логическое значение, указывающее, содержит ли объект свойство с указанным именем.|  
-|[Метод isPrototypeOf](../../javascript/reference/isprototypeof-method-object-javascript.md)|Возвращает логическое значение, указывающее, существует ли объект в иерархии прототипов другого объекта.|  
-|[Метод propertyIsEnumerable](../../javascript/reference/propertyisenumerable-method-object-javascript.md)|Возвращает логическое значение, определяющее, является ли указанное свойство частью объекта, и является ли оно перечислимым.|  
-|[Метод toLocaleString](../../javascript/reference/tolocalestring-method-object-javascript.md)|Возвращает объект, преобразованный в строку на основе текущего языкового стандарта.|  
-|[Метод toString](../../javascript/reference/tostring-method-object-javascript.md)|Возвращает строковое представление объекта.|  
-|[Метод valueOf](../../javascript/reference/valueof-method-object-javascript.md)|Возвращает примитивное значение указанного объекта.|  
+|------------|-----------------|  
+|[метод hasOwnProperty](../../javascript/reference/hasownproperty-method-object-javascript.md)|Возвращает логическое значение, указывающее, содержит ли объект свойство с указанным именем.|  
+|[метод isPrototypeOf](../../javascript/reference/isprototypeof-method-object-javascript.md)|Возвращает логическое значение, указывающее, существует ли объект в иерархии прототипов другого объекта.|  
+|[метод propertyIsEnumerable](../../javascript/reference/propertyisenumerable-method-object-javascript.md)|Возвращает логическое значение, определяющее, является ли указанное свойство частью объекта, и является ли оно перечислимым.|  
+|[метод toLocaleString](../../javascript/reference/tolocalestring-method-object-javascript.md)|Возвращает объект, преобразованный в строку на основе текущего языкового стандарта.|  
+|[метод toString](../../javascript/reference/tostring-method-object-javascript.md)|Возвращает строковое представление объекта.|  
+|[метод valueOf](../../javascript/reference/valueof-method-object-javascript.md)|Возвращает примитивное значение указанного объекта.|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Объекты JavaScript](../../javascript/reference/javascript-objects.md)

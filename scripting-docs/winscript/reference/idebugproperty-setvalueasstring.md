@@ -1,44 +1,47 @@
 ---
-title: "IDebugProperty::SetValueAsString | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugProperty::SetValueAsString | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugProperty.SetValueAsString
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IDebugProperty::SetValueAsString"
+helpviewer_keywords: IDebugProperty::SetValueAsString
 ms.assetid: cad8d7b2-19a5-4a29-9000-cafdecdc238b
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 88a7cba4ec83c5428dd4da4a23ce554702177e76
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugProperty::SetValueAsString
-Устанавливает значения свойства из данной строки.  
+# <a name="idebugpropertysetvalueasstring"></a>IDebugProperty::SetValueAsString
+Задает значение свойства из заданной строки.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT SetValueAsString (  
-   LPCOLESTR pszValue,  
-   UINT nRadix,  
+   LPCOLESTR pszValue,  
+   UINTnRadix,  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pszValue`  
- \[in\] значение, задаваемое.  
+ [in] Задаваемое значение.  
   
  `nRadix`  
- \[in\] корневой каталог, используемый при интерпретации любое числовое сведения.  
+ [in] Основание системы счисления для использования в интерпретации все числовые данные.  
   
-## Возвращаемое значение  
- Возвращает допустимое `HRESULT`, обычно `S_ОК`.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Возвращает допустимую `HRESULT`, обычно `S_OK`.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IDebugProperty](../../winscript/reference/idebugproperty-interface.md)

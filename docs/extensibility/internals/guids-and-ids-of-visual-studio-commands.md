@@ -1,67 +1,69 @@
 ---
-title: "GUID и идентификаторы команд Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "команды"
-  - "id"
-  - "размещение команд"
-  - "команды Visual studio"
-  - "Идентификатор GUID"
+title: "Идентификаторы GUID и идентификаторов ID команд Visual Studio | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- commands
+- id
+- command placement
+- visual studio command
+- guid
 ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 3ce546f36ed93f0f42bfd548c64f2a25669e162b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# GUID и идентификаторы команд Visual Studio
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Идентификатор GUID и идентификатор команды, включенных в интегрированной среде разработки \(ide\) Visual Studio определены в файлах .vsct, которые устанавливаются как часть пакета SDK для Visual Studio.  Дополнительные сведения см. в разделе [Команды, определенные в интегрированной среде разработки, меню и групп](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
+# <a name="guids-and-ids-of-visual-studio-commands"></a>Идентификаторы GUID и идентификаторов ID команд Visual Studio
+Значения GUID и ID команды, добавленные в среде разработки Visual Studio (IDE) определяются в vsct-файлами, которые устанавливаются как часть пакета SDK для Visual Studio. Дополнительные сведения см. в разделе [IDE-Defined команд, меню и группы](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
   
- Дополнительные сведения о том, как работать с объектами среды разработки, которые определены в файлах .vsct см. в разделе [Расширение меню и команд](../../extensibility/extending-menus-and-commands.md).  
+ Дополнительные сведения о работе с объектами интегрированной среды разработки, которые определены в vsct-файлами см. в разделе [расширение меню и команд](../../extensibility/extending-menus-and-commands.md).  
   
-## Найти определение команды  
- Поскольку Visual Studio определяет более тысячу команд, непрактично перечислить все они здесь.  Вместо этого выполните следующие шаги, чтобы найти определение команды.  
+## <a name="finding-a-command-definition"></a>Поиск определения команды  
+ Поскольку Visual Studio определяет несколько тысяч команд, нецелесообразно их все здесь перечислить. Вместо этого выполните следующие действия, чтобы найти определение команды.  
   
-#### Найти определение команды  
+#### <a name="to-locate-a-command-definition"></a>Чтобы найти определение команды  
   
-1.  В Visual Studio откройте следующие файлы *Путь установки пакета SDK для Visual Studio*\\ \\ VisualStudioIntegration общее \\ Inc \\: SharedCmdDef.vsct, ShellCmdDef.vsct, VsDbgCmdUsed.vsct, Venusmenu.vsct.  
+1.  В Visual Studio откройте следующие файлы в *путь установки Visual Studio SDK*папки \VisualStudioIntegration\Common\Inc\: SharedCmdDef.vsct, ShellCmdDef.vsct, VsDbgCmdUsed.vsct, Venusmenu.vsct.  
   
-     Большинство команд Visual Studio определены в SharedCmdDef.vsct и ShellCmdDef.vsct.  VsDbgCmdUsed.vsct определяет команды, которые относятся к отладчику и Venusmenu.vsct определяет команды, которые относятся к разработке в интернете.  
+     Большинство команд Visual Studio, определяются в SharedCmdDef.vsct и ShellCmdDef.vsct. VsDbgCmdUsed.vsct определяет команды, которые относятся к отладчика, а Venusmenu.vsct команды, которые относятся к веб-разработки.  
   
-2.  Если команда пункт меню, запомните точный текст пункта меню.  Если команда кнопки на панели инструментов, то следует отметить текст подсказки, отображаемый при приостановке.  
+2.  Если команда является элемент меню, запомните точный текст элемента меню. Если команда является кнопка на панели инструментов, обратите внимание, текст подсказки, отображаемой при наведении на него.  
   
-3.  Нажмите клавишу CTRL\+F, чтобы открыть **Найти** диалоговое окно.  
+3.  Нажмите клавиши CTRL + F, чтобы открыть **найти** диалоговое окно.  
   
-4.  в **Найти** окно, введите текст на диаграмме видно на шаге 2.  
+4.  В **найти** введите текст, записанный на шаге 2.  
   
-5.  Проверьте, то **Все открытые документы** отображает  **Область поиска** окна.  
+5.  Убедитесь, что **все открытые документы** отображается в **папка** поле.  
   
-6.  Щелкните **Найти далее** кнопка до текста не выбрана в  `<Strings>` раздел a  [Элемент Button](../../extensibility/button-element.md).  
+6.  Нажмите кнопку **Найти далее** кнопку выбрать текст на `<Strings>` раздел [элемент Button](../../extensibility/button-element.md).  
   
-     `<Button>` элемент, команда отображается в определение команды.  
+     `<Button>` , Команда добавляется в элемент является определение команды.  
   
- Если был достигнут определение команды можно поместить копию другие команды в меню или на панели инструментов путем создания a [Элемент CommandPlacement](../../extensibility/commandplacement-element.md) то есть эти же  `guid` и  `id` значения в качестве команды.  Дополнительные сведения см. в разделе [Создание многократно используемых групп кнопок](../../extensibility/creating-reusable-groups-of-buttons.md).  
+ При определении команды будут найдены, можно поместить копию команды на другом меню или панели инструментов путем создания [элемент CommandPlacement](../../extensibility/commandplacement-element.md) , имеет те же `guid` и `id` значения как команду. Дополнительные сведения см. в разделе [группы кнопок для повторного использования создание](../../extensibility/creating-reusable-groups-of-buttons.md).  
   
-### Особые случаи  
- В следующих случаях текста меню или текст подсказки не может точно соответствовать, что в определении команды.  
+### <a name="special-cases"></a>Особые случаи  
+ В следующих случаях меню текст или текст всплывающей подсказки может не соответствовать возможности определения команды.  
   
--   Пункты меню, включая символ, например подчеркнутый **Печать** команда на  **Файл** меню, в котором p подчеркнутым.  
+-   Пункты меню, которые включают соответствующим подчеркнутым символом, такие как **печати** на **файл** меню, в котором подчеркивается P.  
   
-     Символы, предшествуются знака "&" в именах пункта меню отображаются как подчеркнут.  Однако файлы .vsct записываются в формате XML, в котором используется знак "&", чтобы указать, специальные символы и требует амперсандом, который должен отображаться за пределами быть записано как '&amp;'.  Поэтому в файле .vsct, **P**команда rint отображается как '&\#38;amp;Print.  
+     Символы, которым предшествует символ «&» в именах элементов меню отображаются как подчеркнутый. Тем не менее, vsct-файлами создаются на языке XML, который использует символ «&», чтобы указать специальные символы и требует, что должны быть написаны амперсанда, будет отображаться как&amp;". Таким образом, в vsct-файле **P**rint будет отображаться как "&amp;Печать".  
   
--   Команды, имеющих текст, например динамического **Сохранить** *текущее имя файла*и динамически созданные пункты меню, как элементы  **Последние файлы** список.  
+-   Команды, которые имеют динамический текст, такой как **Сохранить** *текущее имя файла*и динамически созданные элементы меню, такие как элементы на **последние файлы** списка.  
   
-     Нет надежный способ найти в динамическом текста.  Вместо этого узлы группа, найдите нужную команду путем обращения к [Идентификаторы GUID и идентификаторы меню Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) OR  [GUID и идентификаторы панелей инструментов Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)и поиск на идентификатор этой группы.  Если определение команды не содержит группу, что сво [Элемент Parent](../../extensibility/parent-element.md)поиск SharedCmdPlace.vsct и ShellCmdPlace.vsct \(или VsDbgCmdPlace.vsct для команд отладчика\), a  `<CommandPlacement>` элемент, который устанавливает родительский объект команды.  SharedCmdPlace.vsct, ShellCmdPlace.vsct, в andVsDbgCmdPlace.vsct *Путь установки пакета SDK для Visual Studio*\\ \\ VisualStudioIntegration общее \\ Inc \\ папка.  
+     Нет надежный способ поиска на динамический текст. Вместо этого найдите группу, на котором размещена нужную команду по журналу [идентификаторов GUID и идентификаторы из меню в Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) или [идентификаторы GUID и идентификаторы из Visual Studio панели инструментов](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)и выполните поиск по Идентификатору этой группы. Если определение команды не группе в качестве его [родительского элемента](../../extensibility/parent-element.md), SharedCmdPlace.vsct и ShellCmdPlace.vsct (или VsDbgCmdPlace.vsct для команд отладчика) поиск `<CommandPlacement>` задает родительский элемент команда. AndVsDbgCmdPlace.vsct SharedCmdPlace.vsct ShellCmdPlace.vsct, находятся в *путь установки Visual Studio SDK*\VisualStudioIntegration\Common\Inc\ папки.  
   
-## См. также  
- [команды MenuCommand и OleMenuCommand](../../misc/menucommands-vs-olemenucommands.md)   
- [Таблицы команд Visual Studio \(. Файлы Vsct\)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Справочник по схемам VSCT XML](../../extensibility/vsct-xml-schema-reference.md)
+## <a name="see-also"></a>См. также  
+ [Команды MenuCommand и OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)   
+ [Таблицы команд Visual Studio (. Файлы Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+ [Справочник по схемам XML VSCT](../../extensibility/vsct-xml-schema-reference.md)

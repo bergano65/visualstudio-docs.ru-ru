@@ -13,16 +13,16 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
 ms.openlocfilehash: 2d82fc0eb60b2680be9ed2bdb7de13313593da0d
-ms.contentlocale: ru-ru
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-1. If you intend to deploy your applications with Web Deploy in Visual Studio, install the latest version of Web Deploy on the server.
+1. Если вы планируете развернуть приложение с веб-развертывания в Visual Studio, установите последнюю версию веб-развертывания на сервере.
 
-    To install Web Deploy, use the [Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx) or obtain an installer directly from the [Microsoft Download Center](https://www.microsoft.com/search/result.aspx?q=webdeploy&form=dlc). You find Web Deploy in the Applications tab. 
+    Чтобы установить веб-развертывания, используйте [установщика веб-платформы (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx) или получите установщика непосредственно из [центра загрузки Майкрософт](https://www.microsoft.com/search/result.aspx?q=webdeploy&form=dlc). Найдите веб-развертывания на вкладке приложений. 
 
-2. Verify that Web Deploy is running correctly by opening  **Control Panel > System and Security > Administrative Tools > Services** and make sure that **Web Deployment Agent Service** is running (the service name is different in older versions).
+2. Убедитесь, что веб-развертывание работает нормально, открыв **панель управления > система и безопасность > Администрирование > службы** и убедитесь, что **службы агента веб-развертывания** работает ( Имя службы отличается в более ранних версиях).
 
-    If the agent service is not running, start it. If it is not present at all, go to **Control Panel > Programs > Uninstall a program**, find **Microsoft Web Deploy <version>**. Choose to **Change** the installation and make sure that you choose  **Will be installed to the local hard drive** for the Web Deploy components. Complete the change installation steps.
+    Если служба агента не запущена, запустите ее. Если она присутствует не во всех, перейдите к **панель управления > программы > Удаление программы**, найти **Microsoft Web Deploy <version>** . Выберите для **изменений** установки и убедитесь, что выбранная **будет установлен на локальный жесткий диск** для компонентов веб-развертывания. Выполните шаги установки изменения.

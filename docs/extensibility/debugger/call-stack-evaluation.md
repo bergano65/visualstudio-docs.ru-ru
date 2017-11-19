@@ -1,42 +1,44 @@
 ---
-title: "Оценка стека вызова | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Отладка оценки стека вызовов [отладка SDK]"
-  - "стеки вызовов, оценки"
+title: "Вызов стека вычислений | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debugging [Debugging SDK], call stack evaluation
+- call stacks, evaluation
 ms.assetid: 373d6b49-0459-4cce-816e-05745a44fe49
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 21626804ae60ca14b360f23acf17b3e336fa600b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Оценка стека вызова
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Для просмотра стека вызовов кадры стека в режиме приостановки выполнения, необходимо реализовать [EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) метод.  
+# <a name="call-stack-evaluation"></a>Вычисление стека вызовов
+Чтобы просматривать кадры стека в стеке вызовов в режиме приостановки выполнения, необходимо реализовать [EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) метод.  
   
-## Методы оценки  
- Для простого обработчика отладки \(DE\), там может составление только один кадр стека.  Чтобы просмотреть кадр стека во время работы в режиме приостановки выполнения, необходимо реализовать следующие методы [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md).  
+## <a name="methods-for-evaluation"></a>Методы для оценки  
+ Для модуля простой отладки (DE) может быть только один кадр стека. Чтобы изучить кадр стека, в режиме приостановки выполнения, необходимо реализовать следующие методы [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md).  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[GetCodeContext](../Topic/IDebugStackFrame2::GetCodeContext.md)|Возвращает контекст кода для кадра стека.  Контекст кода представляет текущий указатель инструкций в кадре стека.|  
-|[GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|Возвращает контекст рисования для кадра стека.  Контекст рисования представляющий текущее расположение в исходном коде для кадра стека.  Требуется для просмотреть исходный код в тех случаях, когда останавливаются в программе.|  
+|------------|-----------------|  
+|[GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|Возвращает контекст кода для кадра стека. Контекст кода представляет текущего указателя инструкций в кадре стека.|  
+|[GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|Возвращает контекст документа для кадра стека. Документ контекстом текущего расположения в исходном коде для кадра стека. Требуется для просмотра исходного кода, пока вы находитесь в программе.|  
   
- Эти методы требуют нескольких контекст\-родственных реализации интерфейсов и методов.  Таким образом, необходимо реализовать [GetDocumentContext](../Topic/IDebugCodeContext2::GetDocumentContext.md) метод и следующие методы  [IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md).  
+ Эти методы требуют реализации несколько связанных с контекстом интерфейсов и методов. Таким образом, необходимо реализовать [GetDocumentContext](../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) метод и следующие методы [IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md).  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[GetStatementRange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)|Получает диапазон выписки файла контекста документа.|  
+|------------|-----------------|  
+|[GetStatementRange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)|Возвращает диапазон инструкции файла к контексту документа.|  
   
  Чтобы перечислить контексты кода, необходимо реализовать все методы [IEnumDebugCodeContexts2](../../extensibility/debugger/reference/ienumdebugcodecontexts2.md).  
   
-## См. также  
- [Управление выполнением и оценки состояния](../../extensibility/debugger/execution-control-and-state-evaluation.md)
+## <a name="see-also"></a>См. также  
+ [Элемент управления выполнением и анализ состояния](../../extensibility/debugger/execution-control-and-state-evaluation.md)

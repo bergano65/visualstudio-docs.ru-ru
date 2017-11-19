@@ -1,67 +1,67 @@
 ---
-title: "IDebugCustomViewer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCustomViewer"
-helpviewer_keywords: 
-  - "Интерфейс IDebugCustomViewer"
+title: "IDebugCustomViewer | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCustomViewer
+helpviewer_keywords: IDebugCustomViewer interface
 ms.assetid: 7aca27d3-c7b8-470f-b42c-d1e9d9115edd
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2b7d32746fa42dc270497252065c3ac117a59547
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCustomViewer
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Этот интерфейс позволяет средство оценки выражений \(EE\) для отображения значения свойства в любой формат является обязательным.  
+# <a name="idebugcustomviewer"></a>IDebugCustomViewer
+Этот интерфейс позволяет вычислитель выражений (Эстония) для отображения значения свойства в формате необходим.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IDebugCustomViewer : IUknown  
 ```  
   
-## Примечания по реализации  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
  EE реализует этот интерфейс для отображения значения свойства в пользовательском формате.  
   
-## Замечания для вызывающих объектов  
- Вызов модели COM `CoCreateInstance` создает функции этот интерфейс.  `CLSID` передается методу  `CoCreateInstance` возвращает из реестра.  Вызов [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) получает расположение в реестре.  Дополнительные сведения см. в разделе " примечания ", а также примера.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Вызов COM `CoCreateInstance` функция создает экземпляр этого интерфейса. `CLSID` Передаваемый `CoCreateInstance` берется из реестра. Вызов [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) Получает расположение в реестре. Сведения, а также пример см. заметки.  
   
-## Методы в том порядке Vtable  
- Этот интерфейс реализован следующий метод:  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
+ Этот интерфейс реализует следующий метод:  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|Выполняет все действия, необходимые для отображения заданного значения.|  
+|------------|-----------------|  
+|[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|Выполняет все необходимые для отображения заданного значения.|  
   
-## Заметки  
- Этот интерфейс используется, если значение свойства не может быть отображается обычным середин\-для примера с таблицей данных или другим сложным типом свойства.  Пользовательское средство, как представлено `IDebugCustomViewer` интерфейс визуализатора, отличается от типа, внешняя программа для вывода данных конкретного типа, независимо от EE.  EE реализует пользовательское средство просмотра, относящихся к этому EE.  Пользователь выбирает тип визуализатора, оно визуализатор типов или настраиваемого средства просмотра.  См. [Визуализация и просмотр данных](../../../extensibility/debugger/visualizing-and-viewing-data.md) дополнительные сведения об этом процессе.  
+## <a name="remarks"></a>Примечания  
+ Этот интерфейс используется в том случае, когда не удается отобразить значение свойства обычным способом — например, с помощью таблицы данных или другой тип сложного свойства. Пользовательское средство просмотра, представленный как `IDebugCustomViewer` интерфейсом, отличается от визуализатор тип, который является внешней программой для отображения данных определенного типа независимо от EE. EE реализует пользовательское средство просмотра, относящиеся к этой EE. Пользователь выбирает, какой тип визуализатора для использования, будь то тип визуализатора или пользовательское средство просмотра. В разделе [Visualizing и просмотр данных](../../../extensibility/debugger/visualizing-and-viewing-data.md) подробные сведения об этом процессе.  
   
- Пользовательский средство просмотра зарегистрирован точно так же, как и EE и, следовательно, требует идентификатор GUID языка и GUID поставщика.  Явная показатель \(или имя записи реестра\) известны только к EE.  Данная метрика возвращается в [DEBUG\_CUSTOM\_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) структура которой, в свою очередь, возвращает вызовом  [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md).  Значение, хранящееся в метрике `CLSID` то передается в модели COM  `CoCreateInstance` функция \(см. пример\).  
+ Пользовательское средство просмотра регистрируется в так же, как EE и, следовательно, требует GUID языка и GUID поставщика. Точные метрики (или имя записи реестра) известен только EE. Эта метрика возвращается в [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) структуру, которая в свою очередь, возвращается путем вызова [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md). Значение, хранящееся в метрику — `CLSID` передается COM `CoCreateInstance` функцию (см. пример).  
   
- [Вспомогательные пакеты SDK для отладки](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) функция  `SetEEMetric`может использоваться для регистрации пользовательского средства просмотра.  См. раздел реестра "средства оценки выражений" `Debugging SDK Helpers` для отдельных разделов реестра, пользовательское средство просмотра требуется.  Обратите внимание, что пользовательское средство просмотра нужна только одна показатель \(которая определена разработчик EE\), в то время как средство оценки выражений требуется несколько стандартных показателей.  
+ [SDK вспомогательные методы для отладки](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) функции `SetEEMetric`, можно использовать для регистрации пользовательское средство просмотра. Обратитесь к разделу реестра «Вычислители выражений» `Debugging SDK Helpers` для ключей реестра, который требуется пользовательское средство просмотра. Обратите внимание, что пользовательское средство просмотра требуется только один показатель (который определяется исполнитель EE) а вычислитель выражений требует нескольких предопределенные метрики.  
   
- Обычно пользовательское средство просмотра предоставляет только для чтения представление данных с [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) интерфейс, предоставляемый в  [DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) не содержит методы для изменения значения этого свойства, за исключением строк.  Для поддержки изменить произвольные блоков данных, EE реализует пользовательский интерфейс для одного и того же объекта, реализующего `IDebugProperty3` интерфейс.  Этот пользовательский интерфейс затем предоставил бы методы, необходимые для изменения произвольный блок данных.  
+ Как правило, пользовательское средство просмотра предоставляет только для чтения представление данных, поскольку [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) предоставленный интерфейс [DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) не имеет методов, для изменения значения свойства, за исключением того, как строка. Чтобы поддерживать изменение произвольный блоков данных, EE реализует пользовательский интерфейс на тот же объект, реализующий `IDebugProperty3` интерфейса. Этот пользовательский интерфейс будет затем предоставить методы, необходимые для изменения произвольный блока данных.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Пример  
- В этом примере показано, как получить первого пользовательского средства просмотра из свойства, если свойство имеет любых пользовательских средств просмотра.  
+## <a name="example"></a>Пример  
+ В этом примере показано, как получить первый пользовательское средство просмотра из свойства, если это свойство имеет любые пользовательские средства просмотра.  
   
-```cpp#  
+```cpp  
 IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)  
 {  
     // This string is typically defined globally.  For this example, it  
@@ -105,8 +105,8 @@ IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)
 }  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Базовых интерфейсов](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)   
- [Вспомогательные пакеты SDK для отладки](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
+ [Вспомогательные функции пакета SDK для отладки](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

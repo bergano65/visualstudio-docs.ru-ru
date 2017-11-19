@@ -1,73 +1,73 @@
 ---
-title: "IDebugExpressionEvaluator::GetMethodProperty | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugExpressionEvaluator::GetMethodProperty"
-helpviewer_keywords: 
-  - "Метод IDebugExpressionEvaluator::GetMethodProperty"
+title: "IDebugExpressionEvaluator::GetMethodProperty | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugExpressionEvaluator::GetMethodProperty
+helpviewer_keywords: IDebugExpressionEvaluator::GetMethodProperty method
 ms.assetid: c394fe4d-eeb6-4feb-828c-098d84a6f1ba
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b80507a0ac3406474f26c6e206ac4d69c43ce27c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugExpressionEvaluator::GetMethodProperty
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Этот метод возвращает объект свойства, содержащего локальные переменные, аргументы и другие свойства метода.  
+# <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
+Этот метод возвращает объект свойства, содержит локальные переменные, аргументы и другие свойства для метода.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetMethodProperty(   
-   IDebugSymbolProvider* pSymbolProvider,  
-   IDebugAddress*        pAddress,  
-   IDebugBinder*         pBinder,  
-   BOOL                  fIncludeHiddenLocals,  
-   IDebugProperty2**     ppProperty  
+```cpp  
+HRESULT GetMethodProperty(   
+   IDebugSymbolProvider* pSymbolProvider,  
+   IDebugAddress*        pAddress,  
+   IDebugBinder*         pBinder,  
+   BOOL                  fIncludeHiddenLocals,  
+   IDebugProperty2**     ppProperty  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetMethodProperty(  
-   IDebugSymbolProvider pSymbolProvider,   
-   IDebugAddress        pAddress,   
-   IDebugBinder         pBinder,   
-   int                  fIncludeHiddenLocals,   
-   out IDebugProperty2  ppProperty  
+   IDebugSymbolProvider pSymbolProvider,   
+   IDebugAddress        pAddress,   
+   IDebugBinder         pBinder,   
+   int                  fIncludeHiddenLocals,   
+   out IDebugProperty2  ppProperty  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pSymbolProvider`  
- \[in\] поставщик символа, который требуется использовать, выраженное как [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) объект.  
+ [in] Поставщик символ для использования, выраженного как [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) объекта.  
   
  `pAddress`  
- \[in\] адрес в коде, выраженном как [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) объект, то должен быть разрешен до ближайшего, содержащий функции.  
+ [in] Адрес в коде в виде [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) объект, то должны быть исправлены ближайшего, в котором содержится функция.  
   
  `pBinder`  
- \[in\] связыватель использовать, выраженное как [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) объект.  
+ [in] Средство привязки, которую нужно использовать, выраженного как [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) объекта.  
   
  `fIncludeHiddenLocals`  
- \[in\] ненулевое значение \(`TRUE`\) означает включить скрытые локальные переменные. ноль \(`FALSE`выйти за пределы скрыть локальные переменные\) означает  
+ [in] Ненулевое значение (`TRUE`) означает включить скрытые локальных переменных; ноль (`FALSE`) означает оставлять скрытые локальные переменные  
   
  `ppProperty`  
- \[out\] возвращает IDebugProperty2 объект, представляющий метод.  
+ [out] Возвращает [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) объект, представляющий метод.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Скрытые переменные, локальные переменные обычно создаются компилятором.  
+## <a name="remarks"></a>Примечания  
+ Скрытые локальные переменные обычно являются переменные, которые создаются компилятором.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)   
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   

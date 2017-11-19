@@ -1,30 +1,30 @@
 ---
-title: "Search Tools for Spy++ Views | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "searching, Spy++"
-  - "Spy++, searching"
+title: "Поиск средства представлений Spy ++ | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- searching, Spy++
+- Spy++, searching
 ms.assetid: db0c32cf-8e50-4e1b-9a9f-4c07fd6a2163
-caps.latest.revision: 4
-caps.handback.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4fe030aef4ba755b9a147bcc1430d2e6046c9dbf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Search Tools for Spy++ Views
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Эти диалоговые окна используются для определения того, какие данные следует отображать в окне представлений Spy\+\+.  
+# <a name="search-tools-for-spy-views"></a>Средства поиска для представлений Spy++
+Используйте эти диалоговые окна для определения данных, будет отображаться в окне представления Spy ++:  
   
-## В этом подразделе  
+## <a name="in-this-section"></a>Содержание  
  [Диалоговое окно "Поиск окна"](../debugger/find-window-dialog-box.md)  
  Используется для просмотра свойств или сообщений из указанного окна.  
   
@@ -35,17 +35,17 @@ manager: "ghogen"
  Используется для поиска узла заданного сообщения в представлении сообщений.  
   
  [Диалоговое окно "Поиск процесса"](../debugger/process-search-dialog-box.md)  
- Используется для поиска узла заданного процесса в представлении процессов.  
+ Используется для поиска узла заданного процесса в представление "процесс".  
   
  [Диалоговое окно "Поиск потока"](../debugger/thread-search-dialog-box.md)  
- Используется для поиска узла заданного потока в представлении потоков.  
+ Используется для поиска узла для определенного потока в представлении потоков.  
   
-## Связанные подразделы  
- [Представления Spy\+\+](../debugger/spy-increment-views.md)  
- Описание представлений окон, сообщений, процессов и потоков в виде дерева в средстве Spy\+\+.  
+## <a name="related-sections"></a>Связанные разделы  
+ [Представления Spy++](../debugger/spy-increment-views.md)  
+ Описание представления деревьев Spy ++ окон, сообщений, процессов и потоков.  
   
- [Использование Spy\+\+](../debugger/using-spy-increment.md)  
- Содержит краткое описание средства Spy\+\+ и инструкции по его использованию.  
+ [Использование Spy++](../debugger/using-spy-increment.md)  
+ Представляет средство Spy ++ и объясняется, как использовать.  
   
- [Справочник по Spy\+\+](../debugger/spy-increment-reference.md)  
- Включает разделы с описанием всех меню и диалоговых окон средства Spy\+\+.
+ [Справочник по Spy++](../debugger/spy-increment-reference.md)  
+ Содержит разделы с описанием каждого Spy ++ меню и диалоговых окон поле.

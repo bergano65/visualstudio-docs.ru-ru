@@ -1,39 +1,41 @@
 ---
-title: "Реализация поставщика порта | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "отладка [пакет SDK для отладки], реализация поставщикам портов"
-  - "поставщикам портов, реализация"
+title: "Реализация поставщика порта | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debugging [Debugging SDK], implementing port suppliers
+- port suppliers, implementing
 ms.assetid: 6b8579df-58df-4c7f-8112-6015993e8765
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 3bc985bf9fb55b67b5a332f007abe98c6718fbf2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Реализация поставщика порта
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Предоставляет портов поставщика порта по запросу к сеансу диспетчер отладки \(SDM\).  Поставщик порта требуется реализовывать при отладке к компьютеру non\-DCOM или если новое устройство должно быть поддерживаемым.  Например, чтобы реализовать отладку сотовый телефон, можно реализовать поставщик порта, который предоставляет порты для подключения к сотовому обращении \(возможно с помощью ir или подключения ячейки\) и перечисляет процессы и программ, запущенных по телефону.  
+# <a name="implementing-a-port-supplier"></a>Реализация поставщика порта
+Порт поставщика предоставляет порты на запрос к диспетчеру сеанса отладки (SDM). Поставщика порта должен быть реализован при отладке на компьютер без DCOM или если требуется поддержка нового устройства. Например для предоставления отладки для сотовых телефонов, необходимо реализовать порт поставщика, который предоставляет порты, которые подключаются мобильного телефона (возможно с помощью IR или ячейки подключения) и перечисляет процессы и программы, запущенные на телефоне.  
   
- Для отладки программы на компьютерах на базе Windows \(включая удаленная отладка\) Visual Studio предоставляет поставщиков портов для собственного и процессы среды CLR, поэтому нет необходимости реализовывать собственного поставщика порта в этих случаях.  
+ Для отладки программ на компьютерах, на основе Windows (включая удаленную отладку) Visual Studio предоставляет поставщикам портов для машинного кода и процессы Common Language Runtime (CLR), поэтому нет необходимости реализовывать собственные поставщика порта в тех случаях.  
   
-## В этом подразделе  
- [Реализация и регистрации поставщика порта](../../extensibility/debugger/implementing-and-registering-a-port-supplier.md)  
- Обсуждается SDM взаимодействует с поставщиком порта и его портам.  
+## <a name="in-this-section"></a>Содержание  
+ [Реализация и регистрация поставщика порта](../../extensibility/debugger/implementing-and-registering-a-port-supplier.md)  
+ Описывает, как SDM взаимодействует с поставщика порта и его портов.  
   
- [Требуемый порт интерфейса поставщика](../../extensibility/debugger/required-port-supplier-interfaces.md)  
- Описывает интерфейсы, которые необходимо реализовать для доступа поставщика порта.  
+ [Интерфейс поставщика необходимого порта](../../extensibility/debugger/required-port-supplier-interfaces.md)  
+ Описываются интерфейсы, которые должны быть реализованы для получения поставщика порта.  
   
-## Связанные подразделы  
- [Основные понятия отладчика](../../extensibility/debugger/debugger-concepts.md)  
- Описывает понятия архитектуры главной отладки.  
+## <a name="related-sections"></a>Связанные разделы  
+ [Отладчик: основные понятия](../../extensibility/debugger/debugger-concepts.md)  
+ Описывает основные принципы отладки архитектуры.  
   
-## См. также  
- [Расширение возможностей отладчика Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+## <a name="see-also"></a>См. также  
+ [Расширяемость отладчика Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

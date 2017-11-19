@@ -1,56 +1,56 @@
 ---
-title: "IDebugEngine2::GetEngineID | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine2::GetEngineID"
-helpviewer_keywords: 
-  - "IDebugEngine2::GetEngineID"
+title: "IDebugEngine2::GetEngineID | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEngine2::GetEngineID
+helpviewer_keywords: IDebugEngine2::GetEngineID
 ms.assetid: 0d5674c8-a9b9-4b72-8211-d2d68695775a
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 008c3cb2f2c4f8e12eedbae347515099524da2c0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEngine2::GetEngineID
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Получает GUID обработчика отладки \(DE\).  
+# <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
+Возвращает идентификатор GUID модуля отладки (DE).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetEngineID(   
-   GUID* pguidEngine  
+```cpp  
+HRESULT GetEngineID(   
+   GUID* pguidEngine  
 );  
 ```  
   
-```c#  
-int GetEngineID(   
-   out Guid pguidEngine  
+```csharp  
+int GetEngineID(   
+   out Guid pguidEngine  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pguidEngine`  
- \[out\] возвращает идентификатор GUID DE.  
+ [out] Возвращает идентификатор GUID DE.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Некоторые примеры типичных GUID `guidScriptEng`"  `guidNativeEng`или  `guidSQLEng`.  Создать отладочные обработчики создает собственный идентификатор GUID для идентификации.  
+## <a name="remarks"></a>Примечания  
+ Примеры типичных GUID: `guidScriptEng`, `guidNativeEng`, или `guidSQLEng`. Новый отладчики создаст собственные GUID для идентификации.  
   
-## Пример  
- В следующем примере показано, как реализовать этот метод для простого `CEngine` объект, реализующий  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) интерфейс.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как реализовать этот метод для простой `CEngine` объект, реализующий [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) интерфейса.  
   
-```cpp#  
+```cpp  
 HRESULT CEngine::GetEngineId(GUID *pguidEngine){    
    if (pguidEngine) {    
       // Set pguidEngine to guidBatEng, as defined in the Batdbg.idl file.    
@@ -64,5 +64,5 @@ HRESULT CEngine::GetEngineId(GUID *pguidEngine){
 }    
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

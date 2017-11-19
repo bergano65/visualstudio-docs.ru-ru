@@ -1,52 +1,53 @@
 ---
-title: "IDebugBoundBreakpoint2::Enable | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBoundBreakpoint2::Enable"
-helpviewer_keywords: 
-  - "Enable - метод"
-  - "Метод IDebugBoundBreakpoint2::Enable"
+title: "IDebugBoundBreakpoint2::Enable | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBoundBreakpoint2::Enable
+helpviewer_keywords:
+- Enable method
+- IDebugBoundBreakpoint2::Enable method
 ms.assetid: 1b4e3f73-c94d-4aa3-9aa8-0d8cb8a6c5ca
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8f08ed8088e2b068b753209f7749d330c000221f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBoundBreakpoint2::Enable
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Позволяет включить или отключить точку останова.  
+# <a name="idebugboundbreakpoint2enable"></a>IDebugBoundBreakpoint2::Enable
+Включение или отключение точки останова.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT Enable(   
-   BOOL fEnable  
+```cpp  
+HRESULT Enable(   
+   BOOL fEnable  
 );  
 ```  
   
-```c#  
-int Enable(   
-   int fEnable  
+```csharp  
+int Enable(   
+   int fEnable  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `fEnable`  
- \[in\] набор \(как значение`TRUE`разрешить нулевое значение \(или\)`FALSE`\) отключить точку останова.  
+ [in] Ненулевое значение (`TRUE`) для включения или ноль (`FALSE`) отключает точку останова.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  Возвращает `E_BP_DELETED` если состояние связанного объекта точки останова равно  `BPS_DELETED` \(часть   [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md) перечисление\).  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Возвращает `E_BP_DELETED` Если состояние объекта связанная точка останова устанавливается `BPS_DELETED` (частью [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) перечисления).  
   
-## Пример  
- В следующем примере показано, как реализовать этот метод для простого `CBoundBreakpoint` объект, предоставляющий  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) интерфейс.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как реализовать этот метод для простой `CBoundBreakpoint` объекта, который предоставляет [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) интерфейса.  
   
 ```  
 HRESULT CBoundBreakpoint::Enable(BOOL fEnable)    
@@ -95,6 +96,6 @@ HRESULT CBoundBreakpoint::Enable(BOOL fEnable)
 }    
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
- [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md)
+ [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

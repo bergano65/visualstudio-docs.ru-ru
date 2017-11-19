@@ -1,40 +1,41 @@
 ---
-title: "m_stateObject поля | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "поле m_stateObject, класс задачи [обработчиков отладки платформы .NET Framework]"
+title: "m_stateObject поле | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: m_stateObject field, Task class [.NET Framework debug engines]
 ms.assetid: 68c54b22-3e1c-4031-b9c7-b972c519d8a0
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 85e8648fd757c6cdb7910123b3cd861f7abb3371
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# m_stateObject поля
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Объект, представляющий данные, которые будет использовать действие.  
+# <a name="mstateobject-field"></a>m_stateObject поля
+Объект, представляющий данные, будут использоваться действие.  
   
- **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Пространство имен:**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Сборки:** mscorlib \(в библиотеке mscorlib.dll\)  
+ **Сборка:** mscorlib (в библиотеке mscorlib.dll)  
   
- Так как не удается получить доступ к внутреннему элементу из платформы .NET Framework, следующий синтаксис предоставляется общего промежуточного языка \(CIL\).  
+ Так как не может получить доступ к внутреннему элементу из платформы .NET Framework, синтаксиса предоставляется общего промежуточного языка (CIL).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 .field assembly object m_stateObject  
 ```  
   
-## Заметки  
- Это `state` параметр в <xref:System.Threading.Tasks.Task.%23ctor%2A> конструктора. Это также резервное поле для <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> Свойства.  
+## <a name="remarks"></a>Примечания  
+ Это `state` параметр в <xref:System.Threading.Tasks.Task.%23ctor%2A> конструктора. Это также резервное поле для <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> свойства.  
   
-## См. также  
- [Класс Task](../../extensibility/debugger/task-class-internal-members.md)
+## <a name="see-also"></a>См. также  
+ [Task-класс](../../extensibility/debugger/task-class-internal-members.md)

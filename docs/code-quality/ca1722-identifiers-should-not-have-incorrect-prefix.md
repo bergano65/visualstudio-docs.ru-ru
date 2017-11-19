@@ -1,51 +1,52 @@
 ---
-title: "CA1722: идентификаторы не должны иметь неверные префиксы | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IdentifiersShouldNotHaveIncorrectPrefix"
-  - "CA1722"
-helpviewer_keywords: 
-  - "CA1722"
-  - "IdentifiersShouldNotHaveIncorrectPrefix"
+title: "CA1722: Идентификаторы не должны иметь неверные префиксы | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IdentifiersShouldNotHaveIncorrectPrefix
+- CA1722
+helpviewer_keywords:
+- CA1722
+- IdentifiersShouldNotHaveIncorrectPrefix
 ms.assetid: c3313c51-d004-4f9a-a0d1-6c4c4a1fb1e6
-caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 84cf14fc28a3de1d6ff5bff9e40216953d5d1461
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# CA1722: идентификаторы не должны иметь неверные префиксы
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722: идентификаторы не должны иметь неверные префиксы
 |||  
 |-|-|  
 |TypeName|IdentifiersShouldNotHaveIncorrectPrefix|  
 |CheckId|CA1722|  
 |Категория|Microsoft.Naming|  
-|Критическое изменение|Критическое изменение|  
+|Критическое изменение|Критическое|  
   
-## Причина  
+## <a name="cause"></a>Причина  
  Идентификатор имеет неверный префикс.  
   
-## Описание правила  
+## <a name="rule-description"></a>Описание правила  
  В соответствии с соглашением об именовании, только некоторые элементы программирования могут иметь имена, которые начинаются с особого префикса.  
   
- Имена типов не имеют особого префикса, и к ним не следует добавлять префикс "C".  Данное правило сообщает о нарушениях в таких именах типов, как «CMyClass», и не сообщает о нарушениях в таких именах типов, как «Cache».  
+ Имена типов не имеют особого префикса и не должно начинаться с «C». Это правило сообщает о нарушениях именования имена типов, например «CMyClass» и не касается нарушений имена типов, например «Кэш».  
   
- Соглашения об именах обеспечивают единообразие библиотек, предназначенных для выполнения в среде CLR.  Это позволяет сократить время обучения, необходимое для освоения новых библиотек программного обеспечения, и укрепить уверенность клиента в том, что библиотека была разработана опытным разработчиком управляемого кода.  
+ Соглашения об именовании обеспечивают единообразие библиотек, предназначенных общеязыковая среда выполнения. Это уменьшает обучения, необходимое для новых библиотек программного обеспечения и повышает уверенность клиента в том, что библиотека была разработана с тем, кто имеет опыт в разработке управляемого кода.  
   
-## Устранение нарушений  
- Удалите префикс из идентификатора.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Удалите префикс от идентификатора.  
   
-## Отключение предупреждений  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
  Для этого правила отключать вывод предупреждений не следует.  
   
-## Связанные правила  
+## <a name="related-rules"></a>Связанные правила  
  [CA1715: идентификаторы должны иметь правильные префиксы](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)

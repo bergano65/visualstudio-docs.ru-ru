@@ -1,55 +1,55 @@
 ---
-title: "IDebugMethodField::EnumArguments | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMethodField::EnumArguments"
-helpviewer_keywords: 
-  - "Метод IDebugMethodField::EnumArguments"
+title: "IDebugMethodField::EnumArguments | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugMethodField::EnumArguments
+helpviewer_keywords: IDebugMethodField::EnumArguments method
 ms.assetid: 3ab55488-2437-4ff6-a9ae-78ea6d7b23a8
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d500e5bedbd284c15430ab65e9477d4a3a404eaf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugMethodField::EnumArguments
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Создает перечислитель для каждого необходимого типа аргумента, чтобы вызвать метод.  
+# <a name="idebugmethodfieldenumarguments"></a>IDebugMethodField::EnumArguments
+Создает перечислитель для типа каждый аргумент, необходимый для вызова метода.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT EnumArguments(   
-   IEnumDebugFields** ppParams  
+```cpp  
+HRESULT EnumArguments(   
+   IEnumDebugFields** ppParams  
 );  
 ```  
   
-```c#  
+```csharp  
 int EnumArguments(  
-   out IEnumDebugFields ppParams  
+   out IEnumDebugFields ppParams  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppParams`  
- \[out\] возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список типов аргументов.  Возвращает значение NULL при отсутствии аргументов.  
+ [out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список типов аргументов. Возвращает значение null, если не указаны аргументы.  
   
-## Возвращаемое значение  
- В случае успеха возвращает значение S\_OK и возвращает значение S\_FALSE, если аргументов.  В противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK, или возвращает значение S_FALSE, если не указаны аргументы. В противном случае возвращается код ошибки.  
   
-## Заметки  
- Каждый элемент IDebugField объект, представляющий типы каждого параметра.  Вызовите [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) метод для извлечения сведений о типе каждого параметра.  
+## <a name="remarks"></a>Примечания  
+ Каждый элемент является [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объект, представляющий тип каждого параметра. Вызовите [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) метод для извлечения сведений о типе каждого параметра.  
   
- Если имя параметра, должны быть одновременно с типом, вызовите [EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md) метод.  
+ При необходимости имя параметра вместе с типом, затем вызовите [EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md) метод.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   

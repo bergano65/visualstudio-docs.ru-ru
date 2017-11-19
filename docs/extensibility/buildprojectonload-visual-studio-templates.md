@@ -4,45 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#BuildOnLoad
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#BuildOnLoad
 helpviewer_keywords:
 - <BuildOnLoad> element [Visual Studio Templates]
 - BuildOnLoad element [Visual Studio Templates]
 ms.assetid: 950f5fc1-d041-4090-9a5c-60844768a4cc
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1be6339ed3db61279f83b49a016d84d0b551c03d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ab3744d81f99c394a2633854a0ec24b76e665ecd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad (шаблоны Visual Studio)
-Указывает, следует ли при сборке проекта сразу после его создания.  
+Указывает, следует ли для построения проекта сразу после его создания.  
   
- \<VSTemplate настроек  
- \<TemplateData настроек  
- \<BuildProjectOnLoad настроек  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<BuildProjectOnLoad >  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -68,7 +53,7 @@ ms.lasthandoff: 02/22/2017
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Текст должен быть либо `true` или `false`, показывающее, постройте проект сразу же после его создания.  
+ Этот текст должен быть либо `true` или `false`, показывающее, постройте проект, сразу после его создания.  
   
 ## <a name="remarks"></a>Примечания  
  `BuildProjectOnLoad`— Это необязательный атрибут. Значение по умолчанию — `false`.  

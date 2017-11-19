@@ -1,47 +1,46 @@
 ---
-title: "IDiaLoadCallback::NotifyOpenPDB | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaLoadCallback::NotifyOpenPDB - метод"
+title: "IDiaLoadCallback::NotifyOpenPDB | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaLoadCallback::NotifyOpenPDB method
 ms.assetid: c0547f99-8468-4e57-82ca-9ef7d6707c8a
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0767be9a51c0d5c3395df9586c5c646a41b78e7e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaLoadCallback::NotifyOpenPDB
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Вызывается при открытии выбранного файла pdb.  
+# <a name="idialoadcallbacknotifyopenpdb"></a>IDiaLoadCallback::NotifyOpenPDB
+Вызывается при открытии кандидата PDB-файл.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT NotifyOpenPDB (   
-   LPCOLESTR pdbPath,  
-   HRESULT   resultCode  
+```C++  
+HRESULT NotifyOpenPDB (   
+   LPCOLESTR pdbPath,  
+   HRESULT   resultCode  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pdbPath`  
- \[in\] полный путь к pdb\-файлу.  
+ [in] Полный путь к PDB-файлу.  
   
  `resultCode`  
- \[in\] код, который отображает успешное завершение \(`S_OK`\) или сбой загрузки в применении к этому файлу.  
+ [in] Код, который указывает на успешное завершение (`S_OK`) или сбоя загрузки применительно к этому файлу.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  Код возврата, обычно не учитывается.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Код возврата, обычно учитывается.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

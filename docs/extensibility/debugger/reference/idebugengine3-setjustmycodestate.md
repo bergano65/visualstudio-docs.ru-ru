@@ -1,62 +1,62 @@
 ---
-title: "IDebugEngine3::SetJustMyCodeState | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine3::SetJustMyCodeState"
-helpviewer_keywords: 
-  - "IDebugEngine3::SetJustMyCodeState"
+title: "IDebugEngine3::SetJustMyCodeState | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEngine3::SetJustMyCodeState
+helpviewer_keywords: IDebugEngine3::SetJustMyCodeState
 ms.assetid: 8ec17fbf-df93-424a-b2ed-fd1e5ee51256
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 3a411287a369ca5b2beab70a9be7e4dcc2e4947d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEngine3::SetJustMyCodeState
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Этот метод сообщает отладчик о JustMyCode сведений о состоянии.  
+# <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
+Этот метод указывает модуль отладки о JustMyCode сведения о состоянии.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-HRESULT SetJustMyCodeState(  
-   BOOL           fUpdate,  
-   DWORD          dwModules,  
-   JMC_CODE_SPEC* rgJMCSpec  
+HRESULT SetJustMyCodeState(  
+   BOOL           fUpdate,  
+   DWORD          dwModules,  
+   JMC_CODE_SPEC* rgJMCSpec  
 );  
 ```  
   
-```c#  
+```csharp  
 int SetJustMyCodeState(  
-   int             fUpdate,   
-   uint            dwModules,   
-   JMC_CODE_SPEC[] rgJMCSpec  
+   int             fUpdate,   
+   uint            dwModules,   
+   JMC_CODE_SPEC[] rgJMCSpec  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `fUpdate`  
- \[in\] ненулевое значение \(`TRUE`\), ноль \(обновлять текущие сведения`FALSE`сбросить все сведения \(\) ничего игнорируя ранее задано\).  
+ [in] Ненулевое значение (`TRUE`) чтобы обновить текущие данные, ноль (`FALSE`) для сброса всех сведения (без учета все ранее значения).  
   
  `dwModules`  
- \[in\] количество структур данных в `rgJMCSpec.`  
+ [in] Число структур сведения в`rgJMCSpec.`  
   
  `rgJMCSpec`  
- \[in\] массив [JMC\_CODE\_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) структуры следует использовать.  
+ [in] Массив [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) структур для использования.  
   
-## Возвращаемое значение  
+## <a name="return-value"></a>Возвращаемое значение  
  В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
-## Заметки  
- JustMyCode понятие отладки только код, который принадлежит пользователю и игнорировать все промежуточный код, как система код\-ровная если исходный код доступен для системного кода.  
+## <a name="remarks"></a>Примечания  
+ JustMyCode является понятие отладки только код, к которой принадлежит пользователь и все промежуточного кода, такие как системный код игнорируется, даже если исходный код доступен для этого кода системы.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)   
- [JMC\_CODE\_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)
+ [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)

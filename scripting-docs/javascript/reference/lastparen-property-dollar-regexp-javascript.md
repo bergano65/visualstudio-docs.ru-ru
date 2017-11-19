@@ -1,48 +1,49 @@
 ---
-title: "Свойство lastParen ($+) (RegExp) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "$+"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "lastParen - свойство ($+)"
+title: "Свойство lastParen ($ +) (RegExp) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: $+
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: lastParen property ($+)
 ms.assetid: 18aca591-a97a-48da-8b06-422346804b16
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 059cfc6556873d770798eff59bf7415426526626
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Свойство lastParen ($+) (RegExp) (JavaScript)
-Возвращает последнюю заключенную в скобки подстроку найденного соответствия \(если таковая имеется\) из поиска регулярного выражения.  Только для чтения.  
+# <a name="lastparen-property--regexp-javascript"></a>Свойство lastParen ($+) (RegExp) (JavaScript)
+Возвращает последней подстроки соответствия скобки из поиске регулярного выражения, если таковые имеются. Только для чтения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 RegExp.lastParen  
 ```  
   
-## Заметки  
- Объект, связанный с данным свойством, всегда является глобальным объектом `RegExp`.  
+## <a name="remarks"></a>Примечания  
+ Объект, связанный с этим свойством, всегда является глобальный `RegExp` объекта.  
   
- Начальным значением свойства `lastParen` является пустая строка.  Значение свойства `lastParen` изменяется при каждом обнаружении искомого выражения.  
+ Начальное значение `lastParen` свойства является пустая строка. Значение `lastParen` свойство изменяется при каждом обнаружении совпадения.  
   
-## Пример  
- В следующем примере показано использование свойства `lastParen`.  
+## <a name="example"></a>Пример  
+ В следующем примере показано применение свойства `lastParen`.  
   
-```javascript  
+```JavaScript  
 // Create the regular expression pattern.  
 var re = new RegExp("d(b+)(d)","ig");  
 var str = "cdbBdbsbdbdz";  
@@ -64,16 +65,16 @@ s += "lastParen: " + RegExp.lastParen + "<br />";
 document.write(s);  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
- **Относится к**: [Объект RegExp](../../javascript/reference/regexp-object-javascript.md)  
+ **Применяется к**: [объект RegExp](../../javascript/reference/regexp-object-javascript.md)  
   
-## См. также  
- [Свойства $1...$9 \(RegExp\)](../../javascript/reference/dollar-1-dot-dot-dot-dollar-9-properties-regexp-javascript.md)   
- [Свойство index \(RegExp\)](../../javascript/reference/index-property-regexp-javascript.md)   
- [Свойство input \($\_\) \(RegExp\)](../../javascript/reference/input-property-dollar-regexp-javascript.md)   
- [Свойство lastIndex \(RegExp\)](../../javascript/reference/lastindex-property-regexp-javascript.md)   
- [Свойство lastMatch \($&\) \(RegExp\)](../../javascript/reference/lastmatch-property-dollar-regexp-javascript.md)   
- [Свойство leftContext \($\`\) \(RegExp\)](../../javascript/reference/leftcontext-property-dollar-grave-regexp-javascript.md)   
- [Свойство rightContext \($'\) \(RegExp\)](../../javascript/reference/rightcontext-property-dollar-regexp-javascript.md)
+## <a name="see-also"></a>См. также  
+ [$1... $9 свойства (RegExp)](../../javascript/reference/dollar-1-dot-dot-dot-dollar-9-properties-regexp-javascript.md)   
+ [Свойство Index (RegExp)](../../javascript/reference/index-property-regexp-javascript.md)   
+ [Свойство Input ($_) (RegExp)](../../javascript/reference/input-property-dollar-regexp-javascript.md)   
+ [Свойство lastIndex (RegExp)](../../javascript/reference/lastindex-property-regexp-javascript.md)   
+ [Свойство lastMatch ($&) (RegExp)](../../javascript/reference/lastmatch-property-dollar-regexp-javascript.md)   
+ [Свойство leftContext ($') (RegExp)](../../javascript/reference/leftcontext-property-dollar-grave-regexp-javascript.md)   
+ [Свойство rightContext ($') (RegExp)](../../javascript/reference/rightcontext-property-dollar-regexp-javascript.md)

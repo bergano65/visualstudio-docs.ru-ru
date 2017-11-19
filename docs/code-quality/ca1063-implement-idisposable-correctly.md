@@ -1,30 +1,30 @@
 ---
-title: "CA1063: следует правильно реализовывать IDisposable | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ImplementIDisposableCorrectly"
-  - "CA1063"
-helpviewer_keywords: 
-  - "CA1063"
-  - "ImplementIDisposableCorrectly"
+title: "Ca1063 следует: Реализовывать IDisposable правильно | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- ImplementIDisposableCorrectly
+- CA1063
+helpviewer_keywords:
+- CA1063
+- ImplementIDisposableCorrectly
 ms.assetid: 12afb1ea-3a17-4a3f-a1f0-fcdb853e2359
-caps.latest.revision: 17
-caps.handback.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 55784b95f12d83318b8d217282c3a2bb8933d76b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# CA1063: следует правильно реализовывать IDisposable
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: следует правильно реализовывать IDisposable
 |||  
 |-|-|  
 |TypeName|ImplementIDisposableCorrectly|  
@@ -32,56 +32,56 @@ manager: "wpickett"
 |Категория|Microsoft.Design|  
 |Критическое изменение|Не критическое|  
   
-## Причина  
- `IDisposable` реализован неправильно.  Далее перечислены некоторые возможные причины данной проблемы.  
+## <a name="cause"></a>Причина  
+ `IDisposable`реализован неверно. Ниже перечислены некоторые причины возникновения этой проблемы:  
   
--   IDisposable повторно реализован в классе.  
+-   Интерфейс IDisposable пересоздания в классе.  
   
--   Метод "Finalize" переопределен.  
+-   Завершение переопределяется повторно.  
   
--   Метод "Dispose" переопределен.  
+-   Метод Dispose переопределяется.  
   
--   "Dispose\(\)" не является открытым, запечатанным или не имеет имя "Dispose".  
+-   Метод Dispose() не является открытым, запечатанным или с именем Dispose.  
   
--   "Dispose\(bool\)" является незащищенным, виртуальным или незапечатанным.  
+-   Dispose(bool) не является защищенным, виртуальным или незапечатанном.  
   
--   В незапечатанных типах "Dispose\(\)" должен вызывать "Dispose\(true\)".  
+-   В незапечатанных типов Dispose() необходимо вызвать Dispose(true).  
   
--   В незапечатанных типах реализация метода "Finalize" не вызывает ни метод "Dispose\(bool\)", ни метод завершения класса.  
+-   Для незапечатанных типов реализации Finalize не вызывает один или оба Dispose(bool) или метод завершения класса.  
   
  Нарушение любого из этих шаблонов приведет к выводу предупреждения.  
   
- Каждый незапечатанный корневой тип IDisposable должен предоставлять собственный виртуальный метод Dispose\(bool\) с типом void.  Метод "Dispose\(\)" должен вызывать "Dipose\(true\)", а метод "Finalize" — "Dispose\(false\)".  При создании незапечатанного корневого типа IDisposable необходимо определить метод "Dispose\(bool\)" и вызывать его.  Дополнительные сведения см. в подразделе [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) раздела [Рекомендации по проектированию Framework](../Topic/Framework%20Design%20Guidelines.md) документации по .NET Framework.  
+ Каждый незапечатанного корневого типа IDisposable необходимо предоставить свой собственный защищенный виртуальный void Dispose(bool) метод. Метод Dispose() следует вызывать Dipose(true) и Finalize должен вызывать Dispose(false). При создании незапечатанного корневого типа IDisposable необходимо определить Dispose(bool) и вызывать его. Дополнительные сведения см. в разделе [очистки неуправляемых ресурсов](/dotnet/standard/garbage-collection/unmanaged) в [Framework рекомендации по проектированию](/dotnet/standard/design-guidelines/index) раздел документации платформы .NET Framework.  
   
-## Описание правила  
+## <a name="rule-description"></a>Описание правила  
  Все типы IDisposable должны правильно реализовывать шаблон "Dispose".  
   
-## Устранение нарушений  
- Проверьте код и выберите решение, подходящее для устранения нарушения.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Проверьте код и определите, какой из указанных ниже способов для устранения нарушения.  
   
--   Удалите IDisposable из списка интерфейсов, реализованных с помощью {0} и переопределите базовый класс реализации "Dispose".  
+-   Удалите IDisposable из списка интерфейсов, которые реализуются {0} и вместо него переопределите реализацию базового класса Dispose.  
   
--   Удалите метод завершения из типа {0}, переопределите метод "Dispose\(bool disposing\)" и поместите логику завершения в путь к коду, где "disposing" имеет значение "false".  
+-   Удалите метод завершения из типа {0}, переопределите Dispose (bool disposing) и поместите логику завершения в ветвь кода, где «disposing» равно false.  
   
--   Удалите {0}, переопределите метод "Dispose\(bool disposing\)" и поместите логику dispose в путь к коду, где "disposing" имеет значение "false".  
+-   Удалить {0}, переопределите Dispose (bool disposing) и поместите логику освобождения в ветвь кода, где «disposing» равно true.  
   
--   Убедитесь, что {0} объявлен как открытый и запечатанный.  
+-   Убедитесь, что этот {0} объявлен как открытый и запечатанный.  
   
--   Переименуйте {0} на "Dispose" и убедитесь, что он объявлен как открытый и запечатанный.  
+-   Переименуйте {0} на «Dispose» и убедитесь, что он объявлен как открытый и запечатанный.  
   
--   Убедитесь, что {0} объявлен как защищенный, виртуальный и распечатанный.  
+-   Убедитесь в том, что этот {0} объявлен как защищенный, виртуальный и незапечатанный.  
   
--   Измените {0} так, чтобы он вызывал метод "Dispose\(true\)", затем метод "GC.SuppressFinalize" в экземпляре текущего объекта \("this" или "Me" в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\), а затем возвращал результат.  
+-   Измените {0}, чтобы он вызывал Dispose(true), затем вызывает GC. SuppressFinalize для текущего экземпляра объекта («this» или «Me» в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]), а затем возвращает.  
   
--   Измените {0} так, чтобы он вызывал метод "Dispose\(false\)", а затем возвращался.  
+-   Измените {0}, чтобы он вызывал Dispose(false) и затем возвращает.  
   
--   При написании незапечатанного корневого класса IDisposable убедитесь, что реализация IDisposable выполняется в соответствии с описанным выше шаблоном.  
+-   При написании незапечатанного корневого класса IDisposable, убедитесь в том, что реализация IDisposable строятся по схеме, описанной ранее в этом разделе.  
   
-## Отключение предупреждений  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
  Для этого правила отключать вывод предупреждений не следует.  
   
-## Пример псевдокода  
- В следующем псевдокоде представлен общий пример реализации метода "Dispose\(bool\)" в классе, использующем управляемые и собственные ресурсы.  
+## <a name="pseudo-code-example"></a>Пример псевдокода  
+ Следующий псевдокод представлен общий пример реализации Dispose(bool) в классе, который использует управляемые и машинные ресурсы.  
   
 ```  
 public class Resource : IDisposable   

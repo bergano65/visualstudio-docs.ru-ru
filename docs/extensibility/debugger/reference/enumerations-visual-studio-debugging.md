@@ -1,255 +1,257 @@
 ---
-title: "Перечисления (Visual Studio для отладки) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "перечисления [пакет SDK Visual Studio]"
-  - "Отладка перечислений [отладка SDK]"
+title: "Перечисления (Visual Studio для отладки) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- enumerations [Visual Studio SDK]
+- debugging [Debugging SDK], enumerations
 ms.assetid: 557065bf-081f-4d57-8744-bae02b8a5a6e
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 339ebce7ddc338656abd1484d4dbdddbc02c060d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Перечисления (Visual Studio для отладки)
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ниже приведены перечисления для [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Пакет SDK для отладки.  
+# <a name="enumerations-visual-studio-debugging"></a>Перечисления (Visual Studio для отладки)
+Здесь представлены перечислениями [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] пакет SDK для отладки.  
   
- [AD\_PROCESS\_ID\_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)  
- Определяет способ интерпретации идентификатор процесса в [AD\_PROCESS\_ID](../../../extensibility/debugger/reference/ad-process-id.md) структура.  
+ [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)  
+ Указывает способ интерпретации идентификатор процесса в [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структуры.  
   
- [ADDRESS\_KIND](../../../extensibility/debugger/reference/address-kind.md)  
- Определяет типы адреса.  
+ [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)  
+ Указывает типы адреса.  
   
  [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)  
- Указывает, когда сборка найдена.  
+ Указывает, где находится сборка.  
   
- [ATTACH\_REASON](../../../extensibility/debugger/reference/attach-reason.md)  
- Указывает причину для обработчика отладки \(DE\) вложение к узлу программы.  
+ [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)  
+ Указывает причину для модуля отладки (DE) для присоединения к программе узла.  
   
- [BP\_COND\_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)  
- Задает стиль условия точки останова, ожидающих и связанных точек останова.  
+ [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)  
+ Задает стиль условие точки останова для ожидающих и привязку точки останова.  
   
- [BP\_ERROR\_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)  
+ [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)  
  Указывает тип ошибки точки останова.  
   
- [BP\_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)  
- Предоставляет дополнительные флаги, которые могут быть использованы для определения дополнительных сведений при установке точки останова.  
+ [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)  
+ Предоставляет необязательные флаги, которые могут использоваться для указания дополнительных сведений, при задании точки останова.  
   
- [BP\_FLAGS90](../../../extensibility/debugger/reference/bp-flags90.md)  
- Перечисляет допустимые значения для необязательных флагов, которые могут быть использованы для определения дополнительных сведений при установке точки останова.  Это перечисление расширяет [BP\_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) перечисление.  
+ [BP_FLAGS90](../../../extensibility/debugger/reference/bp-flags90.md)  
+ Перечисляет допустимые значения для необязательные флаги, которые могут использоваться для указания дополнительных сведений, при задании точки останова. Это перечисление расширяет [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) перечисления.  
   
- [BP\_LOCATION\_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)  
- Указывает тип расположения точки останова для запроса точки останова.  
+ [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)  
+ Указывает тип местоположения точки останова для запроса точки останова.  
   
- [BP\_PASSCOUNT\_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md)  
- Задает условие, связанное с количеством передачи точки останова, который вызывает создать точку останова.  
+ [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md)  
+ Указывает условие, связанное с количеством проход точки останова, приведет к срабатыванию точки останова.  
   
- [BP\_RES\_DATA\_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md)  
- Определяет эмуляции ли точка останова данных или приведена в оборудовании.  
+ [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md)  
+ Указывает, реализовано в оборудования или ли эмулируемого точки останова в данных.  
   
- [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md)  
- Определяет существование связанной точки останова и включена ли она.  
+ [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)  
+ Указывает наличие связанная точка останова, и включен ли он.  
   
- [BP\_TYPE](../../../extensibility/debugger/reference/bp-type.md)  
- Определяет, является ли точка останова на месте кода, доверенного данных или другой тип точки останова.  
+ [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)  
+ Определяет точку останова в месте кода, — это расположение данных или — еще один тип точки останова.  
   
- [BP\_UNBOUND\_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md)  
- Предоставляет причину точка останова была отменена привязка.  
+ [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md)  
+ Предоставляет причина, по которой был свободные точки останова.  
   
- [BPERESI\_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)  
- Указывает, какую информацию, которую необходимо извлечь сведения о разрешении ошибок точки останова.  
+ [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)  
+ Указывает, какую информацию для получения о неудачных разрешении точки останова.  
   
- [BPREQI\_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)  
- Указывает, какую информацию, которую необходимо извлечь сведения о запросе точки останова.  
+ [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)  
+ Указывает, какую информацию для получения о запросе на точку останова.  
   
- [BPREQI\_FIELDS90](../../../extensibility/debugger/reference/bpreqi-fields90.md)  
- Перечисляет допустимые значения, которые определяют данные для извлечения о запросе точки останова.  Это перечисление расширяет [BPREQI\_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисление.  
+ [BPREQI_FIELDS90](../../../extensibility/debugger/reference/bpreqi-fields90.md)  
+ Перечисляет допустимые значения, указывающие получаемых сведений о запросе на точку останова. Это перечисление расширяет [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисления.  
   
- [BPRESI\_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)  
- Определяет, какие сведения будут восстановлены об успешном разрешении точки останова.  
+ [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)  
+ Указывает, какие сведения требуется получить о успешного разрешения точки останова.  
   
- [CANSTOP\_REASON](../../../extensibility/debugger/reference/canstop-reason.md)  
- Используется для определения того, если программа может прекратить выполнение после достижения указанной точки выполнения.  
+ [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md)  
+ Используется для определения, если программы могут остановить выполнение после достижения определенной точки в процессе выполнения.  
   
- [CONNECTION\_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md)  
- Значение, указывающее протокол, используемый для связи между сервером отладки и пакетом отладки.  
+ [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md)  
+ Значение, указывающее, используемого для обмена данными между сервером отладки и отладки пакетов протокола.  
   
- [CONSTRUCTOR\_ENUM](../../../extensibility/debugger/reference/constructor-enum.md)  
- Выберите различные типы конструкторов.  
+ [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md)  
+ Выбирает различные типы конструкторов.  
   
- [CONTEXT\_COMPARE](../../../extensibility/debugger/reference/context-compare.md)  
- Указывает условие для сравнения 2 контекста памяти.  
+ [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md)  
+ Указывает критерии для сравнения двух контекстов памяти.  
   
- [CONTEXT\_INFO\_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)  
- Указывает, какую информацию, которую необходимо извлечь сведения о контексте памяти.  
+ [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)  
+ Указывает, какую информацию для получения о контексте памяти.  
   
- [DBG\_ATTRIB\_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)  
- Описывает различные атрибуты [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) или  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) интерфейс.  
+ [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)  
+ Описывает различные атрибуты для [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) или [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) интерфейса.  
   
- [DEBUG\_REASON](../../../extensibility/debugger/reference/debug-reason.md)  
- Указывает причину, по которой был запущен процесс отладки.  
+ [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md)  
+ Указывает, почему был запущен процесс для отладки.  
   
- [DEBUGPROP\_INFO\_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)  
- Указывает, какую информацию, которую необходимо извлечь об объекте свойства отладки.  
+ [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)  
+ Указывает, какую информацию, чтобы получить сведения об объекте debug свойство.  
   
- [DEBUGREF\_INFO\_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)  
- Указывает, какую информацию, которую необходимо извлечь об объекте ссылки отладки.  
+ [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)  
+ Указывает, какую информацию, чтобы получить сведения об объекте debug ссылки.  
   
- [DISASSEMBLY\_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)  
- Указывает флаги для дизассемблирования.  
+ [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)  
+ Задает флаги для дизассемблирования.  
   
- [DISASSEMBLY\_STREAM\_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)  
- Указывает, какую информацию, которую необходимо извлечь о поле дизассемблированный код.  
+ [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)  
+ Указывает, какую информацию для получения по полю Дизассемблированный код.  
   
- [DISASSEMBLY\_STREAM\_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)  
- Определяет область потока дизассемблированный код.  
+ [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)  
+ Указывает область потока Дизассемблированный код.  
   
  [DisplayKind](../../../extensibility/debugger/reference/displaykind.md)  
- Перечисляет допустимые значения, представляющие типы сведений браться из IDebugField объект и отображения пользователю.  
+ Перечисляет допустимые значения, которые представляют типы данных с [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекта и отображать для пользователя.  
   
- [DOCCONTEXT\_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md)  
- Указывает условие для сравнения 2 контекста документа.  
+ [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md)  
+ Указывает критерии для сравнения двух контекстов документа.  
   
  [DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md)  
- Указывает, какая часть состояния программы, который необходимо сбросить.  
+ Указывает, какая часть состояния программы для помещения в дамп.  
   
- [dwTYPE\_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)  
- Определяет способ интерпретации тип IDebugField объект.  
+ [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)  
+ Указывает, как интерпретировать тип [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекта.  
   
  [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)  
- Представляет причины, правка и кнопка продолжить не доступны.  
+ Представляет основные доводы, изменить и продолжить не доступен.  
   
  [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)  
- Указывает флаги, которые контролируют оценки выражений.  
+ Указывает флаги, управляющие вычисления выражения.  
   
  [EVALFLAGS90](../../../extensibility/debugger/reference/evalflags90.md)  
- Перечисляет допустимые значения для флагов, отслеживающие оценки выражений.  Это перечисление расширяет [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) перечисление.  
+ Перечисляет допустимые значения для флаги, управляющие вычисления выражения. Это перечисление расширяет [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) перечисления.  
   
  [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md)  
- Определяет атрибуты события.  
+ Задает атрибуты события.  
   
- [EXCEPTION\_STATE](../../../extensibility/debugger/reference/exception-state.md)  
+ [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)  
  Указывает состояние исключения.  
   
- [FIELD\_INFO\_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)  
- Указывает, какую информацию для получения собирается IDebugField объект.  
+ [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)  
+ Указывает, какую информацию для получения о [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекта.  
   
- [FIELD\_KIND](../../../extensibility/debugger/reference/field-kind.md)  
- Определяет тип поля, содержащиеся в IDebugField объект.  
+ [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)  
+ Указывает тип поля, содержащиеся в [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекта.  
   
- [FIELD\_KIND\_EX](../../../extensibility/debugger/reference/field-kind-ex.md)  
- Перечисляет дополнительные типы полей IDebugField объект может содержать.  Это перечисление расширяет [FIELD\_KIND](../../../extensibility/debugger/reference/field-kind.md) перечисление.  
+ [FIELD_KIND_EX](../../../extensibility/debugger/reference/field-kind-ex.md)  
+ Перечисляет дополнительных типов полей [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) может содержаться в объекте. Это перечисление расширяет [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) перечисления.  
   
- [FIELD\_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)  
+ [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)  
  Задает модификаторы для типа поля.  
   
- [FRAMEINFO\_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)  
- Определяет сведения для получения об объекте кадра стека.  
+ [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)  
+ Указывает, какую информацию необходимо вернуть о кадр стека.  
   
- [GETHOSTNAME\_TYPE](../../../extensibility/debugger/reference/gethostname-type.md)  
- Определяет тип имени узла.  
+ [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md)  
+ Указывает тип имени узла.  
   
- [GETNAME\_TYPE](../../../extensibility/debugger/reference/getname-type.md)  
- Определяет тип имени файлов для извлечения.  
+ [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)  
+ Задает имя тип файлов для извлечения.  
   
- [INTERCEPT\_EXCEPTION\_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md)  
- Определяет, какие действия предпринять перехват исключения.  
+ [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md)  
+ Указывает, какие действия предпринять при перехват исключения.  
   
- [LAUNCH\_FLAGS](../../../extensibility/debugger/reference/launch-flags.md)  
- Определяет, как программа запускаться.  
+ [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md)  
+ Указывает, как программа будет запускаться.  
   
- [MACHINE\_INFO\_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)  
- Определяет, какие сведения, которые необходимо получить для указанного компьютера.  
+ [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)  
+ Указывает, какого рода информация для извлечения для конкретного компьютера.  
   
- [MACHINE\_INFO\_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md)  
- Используется для описания компьютер.  
+ [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md)  
+ Используется для описания на машине.  
   
  [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)  
- Указывает тип сообщений и причину.  
+ Указывает тип сообщения и его причины.  
   
- [MODULE\_FLAGS](../../../extensibility/debugger/reference/module-flags.md)  
- Используется для описания модуль.  
+ [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)  
+ Используется для описания модуля.  
   
- [MODULE\_INFO\_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)  
- Указывает флаги для модуля отладки.  
+ [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)  
+ Задает флаги для модуля отладки.  
   
- [MODULE\_INFO\_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md)  
- Указывает состояние символов для модуля.  
+ [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md)  
+ Указывает состояние символы для модуля.  
   
- [NAME\_MATCH](../../../extensibility/debugger/reference/name-match.md)  
- Выбирает параметр регистра для сопоставления именам.  
+ [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)  
+ Выбирает вариантов для сопоставления имен.  
   
- [OBJECT\_TYPE](../../../extensibility/debugger/reference/object-type.md)  
- Указывает тип объекта в средстве оценки выражений.  
+ [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md)  
+ Указывает тип объекта в вычислителе выражений.  
   
  [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)  
- Определяет, как выполнить синтаксический анализ выражения.  
+ Указывает, как выполнить синтаксический анализ выражения.  
   
- [PENDING\_BP\_STATE](../../../extensibility/debugger/reference/pending-bp-state.md)  
- Указывает состояние отложенной точки останова \(точки останова, которая еще не была привязана\).  
+ [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md)  
+ Указывает состояние ожидающая точка останова (точка останова, которая еще не привязаны).  
   
- [PENDING\_BP\_STATE\_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md)  
- Определяет ожидающих национальные флаги точки останова.  
+ [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md)  
+ Задает флаги состояния ожидающая точка останова.  
   
- [PORT\_SUPPLIER\_DESCRIPTION\_FLAGS](../../../extensibility/debugger/reference/port-supplier-description-flags.md)  
- Определяет метаданные, которые можно получить о поставщике порта.  
+ [PORT_SUPPLIER_DESCRIPTION_FLAGS](../../../extensibility/debugger/reference/port-supplier-description-flags.md)  
+ Определяет метаданные, которые можно получить о поставщика порта.  
   
- [PROCESS\_INFO\_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)  
- Указывается, что тип сведений для извлечения процесса.  
+ [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)  
+ Указанный тип получаемых сведений для процесса.  
   
- [PROCESS\_INFO\_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md)  
- Описывает или задает свойства процесса.  
+ [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md)  
+ Описывает или задание свойств процесса.  
   
- [PROGRAM\_DESTROY\_FLAGS](../../../extensibility/debugger/reference/program-destroy-flags.md)  
- Перечисляет допустимые значения программы destroy флаги.  
+ [PROGRAM_DESTROY_FLAGS](../../../extensibility/debugger/reference/program-destroy-flags.md)  
+ Перечисляет допустимые значения в программе уничтожить флаги.  
   
- [PROVIDER\_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)  
- Задает свойства, связанные с поставщиком программы.  
+ [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)  
+ Указывает свойства, связанные с поставщиком программы.  
   
- [PROVIDER\_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)  
- Указывает необходимый тип свойства, которое необходимо получить от поставщика программы.  
+ [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)  
+ Указывает нужные свойства необходимо получить от поставщика программы.  
   
- [REFERENCE\_COMPARE](../../../extensibility/debugger/reference/reference-compare.md)  
+ [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md)  
  Указывает тип сравнения для ссылок.  
   
- [REFERENCE\_TYPE](../../../extensibility/debugger/reference/reference-type.md)  
- Определяет ссылочный тип.  
+ [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)  
+ Указывает тип ссылки.  
   
- [SEEK\_START](../../../extensibility/debugger/reference/seek-start.md)  
- Задает положение, с которого следует начать поиск в разборке.  
+ [SEEK_START](../../../extensibility/debugger/reference/seek-start.md)  
+ Указывает положение, с которого следует начать поиск в дизассемблированном коде.  
   
  [STEPKIND](../../../extensibility/debugger/reference/stepkind.md)  
- Указывает тип шага для захода.  
+ Указывает тип шага для пошагового выполнения.  
   
  [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md)  
- Определяет единицу измерения для пошагового выполнения этапа.  
+ Указывает размер шага для пошагового выполнения.  
   
- [SYMBOL\_SEARCH\_INFO\_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)  
- Указывается, какие данные символа, который необходимо извлечь.  
+ [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)  
+ Указывает, какого рода сведения символа для извлечения.  
   
- [TEXT\_DOC\_ATTR\_2](../../../extensibility/debugger/reference/text-doc-attr-2.md)  
+ [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md)  
  Описывает атрибуты документа.  
   
- [THREADPROPERTY\_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)  
- Определяет, какие сведения о потоке, который требуется извлечь.  
+ [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)  
+ Указывает, какую информацию о потоке, который требуется получить.  
   
- [СОСТОЯНИЯ ПОТОКА](../../../extensibility/debugger/reference/threadstate.md)  
- Задает состояние потока.  
+ [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md)  
+ Указывает состояние потока.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h, sh.h или ee.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Справочник по интерфейсам API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

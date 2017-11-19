@@ -1,51 +1,51 @@
 ---
-title: "IDebugObject2::GetICorDebugValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugObject2::GetICorDebugValue"
-helpviewer_keywords: 
-  - "Метод IDebugObject2::GetICorDebugValue"
+title: "IDebugObject2::GetICorDebugValue | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugObject2::GetICorDebugValue
+helpviewer_keywords: IDebugObject2::GetICorDebugValue method
 ms.assetid: bcd4355d-3fbe-483f-bb23-a44348323c6a
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6b1d1c05b6156cb38222eeedb287de4b3fc52b18
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugObject2::GetICorDebugValue
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Возвращает объект управляемого кода, представляющий значение, связанное с этим объектом.  
+# <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
+Возвращает объект управляемого кода, который представляет значение, связанное с этим объектом.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-HRESULT GetICorDebugValue(  
-   IUnknown** ppUnk  
+HRESULT GetICorDebugValue(  
+   IUnknown** ppUnk  
 );  
 ```  
   
-```c#  
-int GetICorDebugValue(  
-   out object ppUnk  
+```csharp  
+int GetICorDebugValue(  
+   out object ppUnk  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppUnk`  
- \[out\] `IUnknown` интерфейс, представляющий этот псевдоним.  Этот интерфейс может запросить `ICorDebugValue` интерфейс.  
+ [out] `IUnknown` интерфейс, который представляет этот псевдоним. Этот интерфейс можно запрашивать `ICorDebugValue` интерфейса.  
   
-## Возвращаемое значение  
- В случае успеха возвращает значение S\_OK; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
   
-## Заметки  
- `ICorDebugValue` объект интерфейса среды CLR, представляющий значение.  
+## <a name="remarks"></a>Примечания  
+ `ICorDebugValue` Объект является интерфейсом среды CLR, который представляет значение.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

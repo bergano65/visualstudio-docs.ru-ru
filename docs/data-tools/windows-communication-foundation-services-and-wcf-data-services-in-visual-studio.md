@@ -1,11 +1,14 @@
 ---
-title: Windows Communication Foundation Services and WCF Data Services in Visual Studio | Microsoft Docs
+title: "Служб Windows Communication Foundation и службы данных WCF в Visual Studio | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
+dev_langs:
+- VB
+- CSharp
 helpviewer_keywords:
 - services, WCF Data
 - WCF services, binding to
@@ -31,235 +34,223 @@ helpviewer_keywords:
 - WCF services, endpoints
 - service method, called asynchronously[Visual Studio]
 ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
-caps.latest.revision: 26
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "26"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 50cb8e237165ddd27d6b98c9bc403ad7debea81c
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 39c9ac7b1cbed8c64ee3b87fde4c990f998157a4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation Services and WCF Data Services in Visual Studio
-Visual Studio provides tools for working with Windows Communication Foundation (WCF) and [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], Microsoft technologies for creating distributed applications. This topic provides an introduction to services from a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] perspective. For the full documentation, see [WCF Data Services 4.5](/dotnet/framework/data/wcf/index).  
+# <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Службы Windows Communication Foundation и службы данных WCF в Visual Studio
+Visual Studio предоставляет средства для работы с Windows Communication Foundation (WCF) и [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], технологии Microsoft для создания распределенных приложений. В этом разделе содержатся вводные службы от [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] перспективы. Полную документацию см. в разделе [служб данных WCF 4.5](/dotnet/framework/data/wcf/index).  
   
-## <a name="what-is-wcf"></a>What Is WCF?  
- [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] is a unified framework for creating secure, reliable, transacted, and interoperable distributed applications. It replaces older interprocess communication technologies such as ASMX Web services, .NET Remoting, Enterprise Services (DCOM), and MSMQ. WCF brings together the functionality of all those technologies under a unified programming model. This simplifies the experience of developing distributed applications.  
+## <a name="what-is-wcf"></a>Что такое WCF  
+ [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)]— Это единое платформа для создания распределенных приложений безопасную, надежную, транзакций и с возможностью взаимодействия. Он заменяет старую межпроцессного взаимодействия технологий, таких как службы ASMX Web, удаленное взаимодействие .NET, Enterprise Services (DCOM) и MSMQ. WCF объединяет в себе функциональные возможности всех этих технологий в унифицированную модель программирования. Это упрощает процесс разработки распределенных приложений.  
   
-#### <a name="what-are-wcf-data-services"></a>What are WCF Data Services  
- [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] is an implementation of the Open Data (OData) Protocol standard.  WCF Data Services lets you expose tabular data as a set of REST APIs, allowing you to return data using standard HTTP verbs such as GET, POST, PUT or DELETE. On the server side, WCF Data Services are being superseded by [ASP.NET Web API](http://www.asp.net/web-api) for creating new OData services. The WCF Data Services client library continues to be a good choice for consuming OData services in a .NET application from Visual Studio (**Project &#124; Add Service Reference**) . For more information, see [WCF Data Services 4.5](http://go.microsoft.com/fwlink/?LinkID=119952).  
+#### <a name="what-are-wcf-data-services"></a>Что такое службы данных WCF  
+ [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]Реализация протокола Open Data (OData) является стандартным.  Службы данных WCF позволяет предоставляют табличные данные в виде набора интерфейсов API REST, что позволяет возвращать данные с помощью стандартных команд HTTP, такие как GET, POST, PUT или DELETE. На стороне сервера службы данных WCF заменяемые [веб-API ASP.NET](http://www.asp.net/web-api) для создания новых служб OData. Клиентская библиотека служб данных WCF по-прежнему будет хорошим выбором для работы со службами OData в приложении .NET из Visual Studio (**проекта &#124; Добавление ссылки на службу**). Дополнительные сведения см. в разделе [служб данных WCF 4.5](http://go.microsoft.com/fwlink/?LinkID=119952).  
   
-### <a name="wcf-programming-model"></a>WCF Programming Model  
- The WCF Programming model is based on communication between two entities: a WCF service and a WCF client. The programming model is encapsulated in the <xref:System.ServiceModel> namespace in the [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+### <a name="wcf-programming-model"></a>Модель программирования WCF  
+ Модель программирования WCF основана на связи между двумя сущностями: служба WCF и клиент WCF. Модель программирования, содержащийся в <xref:System.ServiceModel> пространства имен в [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
-#### <a name="wcf-service"></a>WCF Service  
- A WCF service is based on an interface that defines a contract between the service and the client. It is marked with a <xref:System.ServiceModel.ServiceContractAttribute> attribute, as shown in the following code:  
+#### <a name="wcf-service"></a>Служба WCF  
+ Служба WCF основана на интерфейс, определяющий контракт между службой и клиентом. Он помечен с помощью <xref:System.ServiceModel.ServiceContractAttribute> атрибута, как показано в следующем коде:  
   
- [!code-cs[WCFWalkthrough#6](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_1.cs)] [!code-vb[WCFWalkthrough#6](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_1.vb)]  
+ [!code-csharp[WCFWalkthrough#6](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_1.cs)]
+ [!code-vb[WCFWalkthrough#6](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_1.vb)]  
   
- [!code-cs[WCFWalkthrough#1](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_2.cs)] [!code-vb[WCFWalkthrough#1](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_2.vb)]  
+ [!code-csharp[WCFWalkthrough#1](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_2.cs)]
+ [!code-vb[WCFWalkthrough#1](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_2.vb)]  
   
- You define functions or methods that are exposed by a WCF service by marking them with a <xref:System.ServiceModel.OperationContractAttribute> attribute. In addition, you can expose serialized data by marking a composite type with a <xref:System.Runtime.Serialization.DataContractAttribute> attribute. This enables data binding in a client.  
+ Определение функции или методы, предоставляемые службой WCF, помечая их с <xref:System.ServiceModel.OperationContractAttribute> атрибута. Кроме того, можно предоставить сериализованные данные, пометив составной тип <xref:System.Runtime.Serialization.DataContractAttribute> атрибута. Это позволяет привязывать данные в клиенте.  
   
- After an interface and its methods are defined, they are encapsulated in a class that implements the interface. A single WCF service class can implement multiple service contracts.  
+ После определения интерфейса и его методы они инкапсулируются в класс, реализующий интерфейс. Один класс службы WCF можно реализовать несколько контрактов службы.  
   
- A WCF service is exposed for consumption through what is known as an *endpoint*. The endpoint provides the only way to communicate with the service; you cannot access the service through a direct reference as you would with other classes.  
+ Служба WCF предоставляется для использования посредством что называется *конечная точка*. Конечная точка содержит единственный способ взаимодействия со службой; не удается доступа к службе через прямые ссылки, как и с другими классами.  
   
- An endpoint consists of an address, a binding, and a contract. The address defines where the service is located; this could be a URL, an FTP address, or a network or local path. A binding defines the way that you communicate with the service. WCF bindings provide a versatile model for specifying a protocol such as HTTP or FTP, a security mechanism such as Windows Authentication or user names and passwords, and much more. A contract includes the operations that are exposed by the WCF service class.  
+ Конечная точка состоит из адреса, привязки и контракта. Определяет адрес, где расположена служба; Это может быть URL-адрес, адрес FTP или сетевой или локальный путь. Привязка определяет способ обмена данными со службой. Привязки WCF предоставляют гибкую модель для задания протокола, например HTTP или FTP, механизма обеспечения безопасности, такие как проверка подлинности Windows или имена пользователей и пароли и многое другое. Контракт включает операции, предоставляемые классом службы WCF.  
   
- Multiple endpoints can be exposed for a single WCF service. This enables different clients to communicate with the same service in different ways. For example, a banking service might provide one endpoint for employees and another for external customers, each using a different address, binding, and/or contract.  
+ Для одной службы WCF может быть представлено несколько конечных точек. Это позволяет разным клиентам взаимодействовать с той же службы по-разному. Например банковская служба может предоставить одну конечную точку для сотрудников, а другая — для внешних клиентов, использующих разные адреса, привязки, и/или контракта.  
   
-#### <a name="wcf-client"></a>WCF Client  
- A WCF client consists of a *proxy* that enables an application to communicate with a WCF service, and an endpoint that matches an endpoint defined for the service. The proxy is generated on the client side in the app.config file and includes information about the types and methods that are exposed by the service. For services that expose multiple endpoints, the client can select the one that best fits its needs, for example, to communicate over HTTP and use Windows Authentication.  
+#### <a name="wcf-client"></a>Клиент WCF  
+ Клиент WCF состоит из *прокси-сервера* , позволяет приложению взаимодействовать со службой WCF и конечной точки, соответствующей конечной точке, заданной для этой службы. Прокси-сервер создается на стороне клиента в файле app.config и включает сведения о типах и методы, предоставляемые службой. Для служб, предоставляющих несколько конечных точек клиент может выбрать ту, которая наилучшим образом соответствует потребностям, например, для взаимодействия по протоколу HTTP и использовать проверку подлинности Windows.  
   
- After a WCF client has been created, you reference the service in your code just as you would any other object. For example, to call the `GetData` method shown earlier, you would write code that resembles the following:  
+ После создания клиента WCF можно ссылаться на службу в коде так же, как и любой другой объект. Например, чтобы вызвать `GetData` метода, показанного выше, можно написать код, который имеет следующий вид:  
   
- [!code-cs[WCFWalkthrough#3](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.cs)] [!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.vb)]  
+ [!code-csharp[WCFWalkthrough#3](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.cs)]
+ [!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.vb)]  
   
-## <a name="wcf-tools-in-visual-studio"></a>WCF Tools in Visual Studio  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] provides tools to help you create both WCF services and WCF clients. For a walkthrough that demonstrates the tools, see [Walkthrough: Creating a simple WCF Service in Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).  
+## <a name="wcf-tools-in-visual-studio"></a>Средства служб WCF в Visual Studio  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]предоставляет средства для создания служб WCF и клиенты WCF. Пошаговое руководство, демонстрирующее эти средства, в разделе [Пошаговое руководство: создание простой службы WCF в Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).  
   
-### <a name="creating-and-testing-wcf-services"></a>Creating and Testing WCF Services  
- You can use the WCF [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] templates as a foundation to quickly create your own service. You can then use WCF Service Auto Host and WCF Test Client to debug and test the service. These tools together provide a fast and convenient debug and testing cycle, and eliminate the requirement to commit to a hosting model at an early stage.  
+### <a name="creating-and-testing-wcf-services"></a>Создание и тестирование службы WCF  
+ Можно использовать WCF [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] шаблоны как основу для быстрого создания собственной службы. Затем можно использовать WCF Service Auto Host и тестовый клиент WCF для отладки и тестирования службы. Вместе эти средства обеспечивают быстрый и удобный цикл отладки и тестирования и исключает необходимость фиксации модели размещения на ранней стадии.  
   
-#### <a name="wcf-templates"></a>WCF Templates  
- WCF [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] templates provide a basic class structure for service development. Several WCF templates are available in the **Add New Project** dialog box. These include WCF Service Library projects, WCF Service Web Sites, and WCF Service Item templates.  
+#### <a name="wcf-templates"></a>Шаблоны WCF  
+ WCF [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] шаблонов предоставляют базовую структуру класса для разработки службы. Имеется несколько шаблонов WCF в **Добавление нового проекта** диалоговое окно. К ним относятся проекты библиотеки служб WCF, веб-сайтов службы WCF и шаблонов элементов службы WCF.  
   
- When you select a template, files are added for a service contract, a service implementation, and a service configuration. All necessary attributes are already added, creating a simple "Hello World" type of service, and you did not have to write any code. You will, of course, want to add code to provide functions and methods for your real world service, but the templates provide the basic foundation.  
+ При выборе шаблона файлы добавляются в контракт службы, реализации службы и конфигурации службы. Все необходимые атрибуты уже добавлена, создания простого типа «Hello World», службы, а не содержал написания кода. Конечно, необходимо добавить код для обеспечения функций и методов реальной службы, но шаблоны обеспечивают основу.  
   
- To learn more about WCF templates, see [WCF Visual Studio Templates](/dotnet/framework/wcf/wcf-vs-templates).  
+ Дополнительные сведения о шаблонах WCF см. в разделе [шаблоны WCF в Visual Studio](/dotnet/framework/wcf/wcf-vs-templates).  
   
-#### <a name="wcf-service-host"></a>WCF Service Host  
- When you start the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugger (by pressing F5) for a WCF service project, the WCF Service Host tool is automatically started to host the service locally. WCF Service Host enumerates the services in a WCF service project, loads the project's configuration, and instantiates a host for each service that it finds.  
+#### <a name="wcf-service-host"></a>Узел службы WCF  
+ При запуске [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] отладчика (нажатием клавиши F5) для проекта службы WCF, узла службы WCF, автоматически запускается инструмент для размещения этой службы локально. Узел службы WCF выполняет перечисление служб в проекте службы WCF, загружает конфигурацию проекта и создает экземпляр узла для каждой найденной службы.  
   
- By using WCF Service Host, you can test a WCF service without writing extra code or committing to a specific host during development.  
+ Используя узел службы WCF, для тестирования службы WCF без создания дополнительного кода или фиксации в конкретном узле во время разработки.  
   
- To learn more about WCF Service Host, see [WCF Service Host (WcfSvcHost.exe)](/dotnet/framework/wcf/wcf-service-host-wcfsvchost-exe).  
+ Дополнительные сведения об узле службы WCF см. в разделе [узел службы WCF (WcfSvcHost.exe)](/dotnet/framework/wcf/wcf-service-host-wcfsvchost-exe).  
   
-#### <a name="wcf-test-client"></a>WCF Test Client  
- The WCF Test Client tool enables you to input test parameters, submit that input to a WCF service, and view the response that the service sends back. It provides a convenient service testing experience when you combine it with WCF Service Host. The tool can be found in the \Common7\IDE folder, which for Visual Studio 2015 installed in drive C: is here: **C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\\**.  
+#### <a name="wcf-test-client"></a>Тестовый клиент WCF  
+ Тестовый клиент WCF средство позволяет вводить тестовые параметры, отправить их в службу WCF и просмотреть ответ, то служба отправляет обратно. Он обеспечивает удобную практику тестирования при их сочетании с узлом службы WCF службы. Это средство можно найти в папке \Common7\IDE, в которой для Visual Studio 2015 установлен на диске C: в данном случае: **C:\Program Files (x86) \Microsoft Visual Studio 14.0\Common7\IDE\\**.  
   
- When you press F5 to debug a WCF service project, WCF Test Client opens and displays a list of service endpoints that are defined in the configuration file. You can test the parameters and start the service, and repeat this process to continuously test and validate your service.  
+ При нажатии клавиши F5 для отладки проекта службы WCF, тестовый клиент WCF открывает и отображает список конечных точек службы, которые определены в файле конфигурации. Можно протестировать эти параметры и запустить службу и повторять этот процесс для последовательного тестирования и проверки службы.  
   
- To learn more about WCF Test Client, see [WCF Test Client (WcfTestClient.exe)](/dotnet/framework/wcf/wcf-test-client-wcftestclient-exe).  
+ Дополнительные сведения о тестовом клиенте WCF см. в разделе [тестовый клиент WCF (WcfTestClient.exe)](/dotnet/framework/wcf/wcf-test-client-wcftestclient-exe).  
   
-### <a name="accessing-wcf-services-in-visual-studio"></a>Accessing WCF Services in Visual Studio  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] simplifies the task of creating WCF clients, automatically generating a proxy and an endpoint for services that you add by using the **Add Service Reference** dialog box. All necessary configuration information is added to the app.config file. Most of the time, all that you have to do is instantiate the service in order to use it.  
+### <a name="accessing-wcf-services-in-visual-studio"></a>Доступ к службам WCF в Visual Studio  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]упрощает задачу создания клиентов WCF, автоматически создавая прокси и конечную точку для службы, добавленные с помощью **добавить ссылку на службу** диалоговое окно. Все необходимые сведения о конфигурации добавляется в файл app.config. Большая часть времени, все, что нужно сделать — это создать службу для использования в.  
   
- The **Add Service Reference** dialog box enables you to enter the address for a service or to search for a service that is defined in your solution. The dialog box returns a list of services and the operations provided by those services. It also enables you to define the namespace by which you will reference the services in code.  
+ **Добавить ссылку на службу** диалоговое окно позволяет вводить адрес службы или для поиска службы, определенные в решении. Диалоговое окно возвращает список служб и операций, предоставляемых этими службами. Он также позволяет определить пространство имен, по которому будут приведены ссылки на службы в коде.  
   
- The **Configure Service References** dialog box enables you to customize the configuration for a service. You can change the address for a service, specify access level, asynchronous behavior, and message contract types, and configure type reuse.  
+ **Настройка ссылок на службы** диалоговое окно позволяет настроить конфигурацию службы. Можно изменить адрес службы, задать уровень доступа, асинхронное поведение и типы контрактов сообщений и настроить повторное использование типов.  
   
-## <a name="how-to-select-a-service-endpoint"></a>How to: Select a Service Endpoint  
- Some Windows Communication Foundation (WCF) services expose multiple endpoints through which a client may communicate with the service. For example, a service might expose one endpoint that uses an HTTP binding and user name / password security and a second endpoint that uses FTP and Windows Authentication. The first endpoint might be used by applications that access the service from outside a firewall, whereas the second might be used on an intranet.  
+## <a name="how-to-select-a-service-endpoint"></a>Как: выберите конечную точку службы  
+Некоторые службы Windows Communication Foundation (WCF) выдать несколько конечных точек, через которые клиент может связаться со службой. Например, служба может предоставлять одну конечную точку, использующую HTTP привязки и имя пользователя и пароля и вторую конечную точку, использующую FTP и проверку подлинности Windows. Первая конечная точка может использоваться приложениями, которые обращаются к службе с внешней стороны брандмауэра, в то время как второй может использоваться во внутренней сети.  
   
- In such a case, you can specify the `endpointConfigurationName` as a parameter to the constructor for a service reference.  
+В этом случае можно указать `endpointConfigurationName` в качестве параметра конструктора для ссылки на службу.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-#### <a name="to-select-a-service-endpoint"></a>To select a service endpoint  
+#### <a name="to-select-a-service-endpoint"></a>Чтобы выбрать конечную точку службы  
   
-1.  Add a reference to a WCF service by right-clicking the project node in Solution Explorer and choosing **Add service reference**.
+1.  Добавьте ссылку на службу WCF, щелкнув правой кнопкой мыши узел проекта в обозревателе решений и выбрав **Добавление ссылки на службу**.
   
-2.  In the Code Editor, add a constructor for the service reference:  
+2.  В редакторе кода добавьте конструктор для ссылки на службу:  
   
-    ```vb#  
+    ```vb  
     Dim proxy As New ServiceReference.Service1Client(  
     ```  
   
-    ```c#  
+    ```csharp  
     ServiceReference.Service1Client proxy = new ServiceReference.Service1Client(  
     ```  
   
     > [!NOTE]
-    >  Replace *ServiceReference* with the namespace for the service reference and replace *Service1Client* with the name of the service.  
+    >  Замените *ServiceReference* с пространством имен для ссылки на службу и замены *Service1Client* с именем службы.  
   
-3.  An IntelliSense list will be displayed with the overloads for the constructor. Select the `endpointConfigurationName As String` overload.  
+3.  Список IntelliSense отображается с помощью перегрузок для конструктора. Выберите `endpointConfigurationName As String` перегрузки.  
   
-4.  Following the overload, type `=` *ConfigurationName*, where *ConfigurationName* is the name of the endpoint that you want to use.  
+4.  Перегрузке, введите `=` *ConfigurationName*, где *ConfigurationName* имя конечной точки, которую вы хотите использовать.  
   
     > [!NOTE]
-    >  If you do not know the names of the available endpoints, you can find them in the app.config file.  
+    >  Если вы не знаете имена доступных конечных точек, их можно найти в файле app.config.  
   
-#### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>To find the available endpoints for a WCF service  
+#### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>Чтобы найти доступные конечные точки для службы WCF  
   
-1.  In **Solution Explorer**, right-click the app.config file for the project that contains the service reference and then click **Open**. The file will appear in the Code Editor.  
+1.  В **обозревателе решений**, щелкните правой кнопкой мыши файл app.config проекта, содержащего ссылку на службу и нажмите кнопку **откройте**. Файл появится в редакторе кода.  
   
-2.  Search for the `<Client>` tag in the file.  
+2.  Поиск `<Client>` тег в файле.  
   
-3.  Search underneath the `<Client>` tag for a tag that starts with `<Endpoint>`.  
+3.  Поиск под `<Client>` тег для тега, который начинается с `<Endpoint>`.  
   
-     If the service reference provides multiple endpoints, there will be two or more `<Endpoint` tags.  
+     Если ссылка на службу предоставляет несколько конечных точек, будет существовать две или более `<Endpoint` тегов.  
   
-4.  Inside the `<EndPoint>` tag you will find a `name="`*SomeService*`"` parameter (where *SomeService* represents an endpoint name). This is the name for the endpoint that can be passed to the `endpointConfigurationName As String` overload of a constructor for a service reference.  
+4.  Внутри `<EndPoint>` тег можно найти `name="` *SomeService* `"` параметра (где *SomeService* представляет имя конечной точки). Это имя для конечной точки, которая может быть передан `endpointConfigurationName As String` перегрузки конструктора для ссылки на службу.  
   
-## <a name="how-to-call-a-service-method-asynchronously"></a>How to: Call a Service Method Asynchronously  
- Most methods in Windows Communication Foundation (WCF) services may be called either synchronously or asynchronously. Calling a method asynchronously enables your application to continue to work while the method is being called when it operates over a slow connection.  
+## <a name="how-to-call-a-service-method-asynchronously"></a>Как: асинхронный вызов метода службы  
+Большинство методов в службах Windows Communication Foundation (WCF) могут вызываться синхронно или асинхронно. Асинхронный вызов метода позволяет приложению продолжать работу при вызове метода через медленное подключение.  
   
- By default, when a service reference is added to a project it is configured to call methods synchronously. You can change the behavior to call methods asynchronously by changing a setting in the **Configure Service Reference** dialog box.  
+По умолчанию при добавлении ссылки на службу в проект он настраивается для вызова методов синхронно. Можно изменить поведение для асинхронного вызова методов, изменив параметр в **настроить ссылку на службу** диалоговое окно.  
   
 > [!NOTE]
->  This option is set on a per-service basis. If one method for a service is called asynchronously, all methods must be called asynchronously.  
+>  Этот параметр устанавливается отдельно для каждой службы. Если один метод для службы вызывается асинхронно, все методы должны вызываться асинхронно.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-#### <a name="to-call-a-service-method-asynchronously"></a>To call a service method asynchronously  
+#### <a name="to-call-a-service-method-asynchronously"></a>Асинхронный вызов метода службы  
   
-1.  In **Solution Explorer**, select the service reference.  
+1.  В **обозревателе решений**, выберите ссылку на службу.  
   
-2.  On the **Project** menu, click **Configure Service Reference**.  
+2.  На **проекта** меню, нажмите кнопку **настроить ссылку на службу**.  
   
-3.  In the **Configure Service Reference** dialog box, select the **Generate asynchronous operations** check box.  
+3.  В **настроить ссылку на службу** выберите **создать асинхронные операции** флажок.  
   
-## <a name="how-to-bind-data-returned-by-a-service"></a>How to: Bind Data Returned by a Service  
- You can bind data returned by a Windows Communication Foundation (WCF) service to a control just as you can bind any other data source to a control. When you add a reference to a WCF service, if the service contains composite types that return data, they are automatically added to the **Data Sources** window.  
+## <a name="how-to-bind-data-returned-by-a-service"></a>Как: привязки данных, возвращенных службой,  
+Можно привязать данные, возвращаемые службой Windows Communication Foundation (WCF) для элемента управления так же, как любой другой источник данных можно привязать к элементу управления. При добавлении ссылки на службу WCF, если служба содержит составные типы, которые возвращают данные, они автоматически добавляются к **источники данных** окна.  
   
-#### <a name="to-bind-a-control-to-single-data-field-returned-by-a-wcf-service"></a>To bind a control to single data field returned by a WCF service  
+#### <a name="to-bind-a-control-to-single-data-field-returned-by-a-wcf-service"></a>Чтобы привязать элемент управления к одному полю данных возвращаемого службой WCF  
   
-1.  On the **Data** menu, click **Show Data Sources**. The **Data Sources** window will appear.  
+1.  В меню **Данные** выберите команду **Показать источники данных**. **Источники данных** появится окно.  
   
-2.  In the **Data Sources** window, expand the node for your service reference. Any composite types returned by the service will be displayed.  
+2.  В **источники данных** окна, разверните узел для ссылки на службу. Отображаются все составные типы, возвращенных службой.  
   
-3.  Expand a node for a type. The data fields for that type will be displayed.  
+3.  Разверните узел для типа. Поля данных для этого типа будут отображаться.  
   
-4.  Select a field and click the drop-down arrow to display a list of controls that are available for the data type.  
+4.  Выберите поле и щелкните стрелку раскрывающегося списка для отображения списка элементов управления, которые доступны для типа данных.  
   
-5.  Click the type of control that you want to bind to.  
+5.  Выберите тип элемента управления, который требуется привязать.  
   
-6.  Drag the field onto a form. The control will be added to the form together with a <xref:System.Windows.Forms.BindingSource> component and a <xref:System.Windows.Forms.BindingNavigator> component.  
+6.  Перетащите поле на форму. Элемент управления будет добавлен в форму вместе с <xref:System.Windows.Forms.BindingSource> компонента и <xref:System.Windows.Forms.BindingNavigator> компонента.  
   
-7.  Repeat steps 4 though 6 for any other fields that you want to bind.  
+7.  Повторите шаги 4 6 для любых других полей, необходимо выполнить привязку.  
   
-#### <a name="to-bind-a-control-to-composite-type-returned-by-a-wcf-service"></a>To bind a control to composite type returned by a WCF service  
+#### <a name="to-bind-a-control-to-composite-type-returned-by-a-wcf-service"></a>Чтобы привязать элемент управления к составному типу, возвращаемому службой WCF  
   
-1.  On the **Data** menu, select **Show Data Sources**. The **Data Sources** window will appear.  
+1.  На **данные** последовательно выберите пункты **Показать источники данных**. **Источники данных** появится окно.  
   
-2.  In the **Data Sources** window, expand the node for your service reference. Any composite types returned by the service will be displayed.  
+2.  В **источники данных** окна, разверните узел для ссылки на службу. Отображаются все составные типы, возвращенных службой.  
   
-3.  Select a node for a type and click the drop-down arrow to display a list of available options.  
+3.  Выберите узел типа и щелкните стрелку раскрывающегося списка, чтобы отобразить список доступных параметров.  
   
-4.  Click either **DataGridView** to display the data in a grid or **Details** to display the data in individual controls.  
+4.  Выберите либо **DataGridView** для отображения данных в виде сетки или **сведения** для отображения данных в отдельных элементах управления.  
   
-5.  Drag the node onto the form. The controls will be added to the form together with a <xref:System.Windows.Forms.BindingSource> component and a <xref:System.Windows.Forms.BindingNavigator> component.  
+5.  Перетащите узел в форме. Элементы управления будут добавлены в форму вместе с <xref:System.Windows.Forms.BindingSource> компонента и <xref:System.Windows.Forms.BindingNavigator> компонента.  
   
-## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>How to: Configure a Service to Reuse Existing Types  
- When a service reference is added to a project, any types defined in the service are generated in the local project. In many cases, this creates duplicate types when a service uses common [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] types or when types are defined in a shared library.  
+## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Как: Настройка службы для повторного использования существующих типов  
+При добавлении в проект ссылки на службу в локальном проекте создаются все типы, заданные в службе. В большинстве случаев создаются дублирующиеся типы Если служба использует Общие [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] типы или типы заданы в общей библиотеке.  
   
- To avoid this problem, types in referenced assemblies are shared by default. If you want to disable type sharing for one or more assemblies, you can do so in the **Configure Service References** dialog box.  
+Чтобы избежать этой проблемы, по умолчанию общим типы в сборках, на которую указывает ссылка. Если вы хотите отключить совместное использование типов для одной или нескольких сборок, это можно выполнить в **Настройка ссылок на службы** диалоговое окно.  
   
-#### <a name="to-disable-type-sharing-in-a-single-assembly"></a>To disable type sharing in a single assembly  
+#### <a name="to-disable-type-sharing-in-a-single-assembly"></a>Чтобы отключить совместное использование типов в одной сборке  
   
-1.  In **Solution Explorer**, select the service reference.  
+1.  В **обозревателе решений**, выберите ссылку на службу.  
   
-2.  On the **Project** menu, click **Configure Service Reference**.  
+2.  На **проекта** меню, нажмите кнопку **настроить ссылку на службу**.  
   
-3.  In the **Configure Service References** dialog box, select **Reuse types in specified referenced assemblies**.  
+3.  В **Настройка ссылок на службы** выберите **повторно использовать типы в указанных сборках, на которую указывает ссылка**.  
   
-4.  Select the check box for each assembly in which you want to enable type sharing. To disable type sharing for an assembly, leave the check box cleared.  
+4.  Установите флажок для каждой сборки, в которой вы хотите включить совместное использование типов. Чтобы отключить совместное использование типов для сборки, оставьте флажок снятым.  
   
-#### <a name="to-disable-type-sharing-in-all-assemblies"></a>To disable type sharing in all assemblies  
+#### <a name="to-disable-type-sharing-in-all-assemblies"></a>Чтобы отключить совместное использование типов в все сборки  
   
-1.  In **Solution Explorer**, select the service reference.  
+1.  В **обозревателе решений**, выберите ссылку на службу.  
   
-2.  On the **Project** menu, click **Configure Service Reference**.  
+2.  На **проекта** меню, нажмите кнопку **настроить ссылку на службу**.  
   
-3.  In the **Configure Service References** dialog box, clear the **Reuse types in referenced assemblies** check box.  
+3.  В **Настройка ссылок на службы** снимите флажок **повторно использовать типы в указанных сборках** флажок.  
   
-## <a name="related-topics"></a>Related Topics  
+## <a name="related-topics"></a>Связанные разделы  
   
-|Title|Description|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
-|[Walkthrough: Creating a simple WCF Service in Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Provides a step-by-step demonstration of creating and using WCF services in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-|[Walkthrough: Creating a WCF Data Service with WPF and Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Provides a step-by-step demonstration of how to create and use [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-|[Using the WCF Development Tools](/dotnet/framework/wcf/using-the-wcf-development-tools)|Discusses how to create and test WCF services in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-||[How to: Add, Update, or Remove a WCF Data Service Reference](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Discusses how to reference and use [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-|[Troubleshooting Service References](../data-tools/troubleshooting-service-references.md)|Presents some common errors that can occur with service references and how to prevent them.|  
-|[Debugging WCF Services](../debugger/debugging-wcf-services.md)|Describes common debugging problems and techniques you might encounter when debugging WCF services.|  
-|[Windows Communication Foundation Authentication Service Overview](http://msdn.microsoft.com/Library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|Describes how to use WCF to provide a role service for a Web site.|  
-|[Walkthrough: Creating an N-Tier Data Application](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Provides step-by-step instructions for creating a typed dataset and separating the TableAdapter and dataset code into multiple projects.|  
-|[Configure Service Reference Dialog Box](../data-tools/configure-service-reference-dialog-box.md)|Describes the user interface elements of the **Configure Service Reference** dialog box.|  
+|[Пошаговое руководство. Создание простой службы WCF в Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Пошаговая демонстрация создания и использования служб WCF в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
+|[Пошаговое руководство. Создание службы данных WCF с помощью WPF и Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Пошаговая демонстрация того, как создавать и использовать [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
+|[Использование средств разработки WCF](/dotnet/framework/wcf/using-the-wcf-development-tools)|Объясняет способы создания и тестирования служб WCF в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
+||[Практическое руководство. Добавление, обновление или удаление ссылки на службу данных WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Описывает, как использовать [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
+|[Диагностика ссылок на службы](../data-tools/troubleshooting-service-references.md)|Представляет некоторые распространенные ошибки, которые могут возникать с ссылки на службу и способов их устранения.|  
+|[Отладка служб WCF](../debugger/debugging-wcf-services.md)|Описание общих проблем отладки и методов, которыми можно столкнуться при отладке службы WCF.|  
+|[Общие сведения о Windows Communication Foundation проверки подлинности службы](http://msdn.microsoft.com/Library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|Описывает способы использования WCF для предоставления службы роли веб-сайта.|  
+|[Пошаговое руководство. Создание многоуровневого приложения для работы с данными](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Содержит пошаговые инструкции по созданию типизированного набора данных и разделения кода адаптера таблицы и набора данных на несколько проектов.|  
+|[Диалоговое окно "Настроить ссылку на службу"](../data-tools/configure-service-reference-dialog-box.md)|Описание элементов пользовательского интерфейса из **настроить ссылку на службу** диалоговое окно.|  
   
-## <a name="reference"></a>Reference  
+## <a name="reference"></a>Ссылка  
  <xref:System.ServiceModel>  
   
  <xref:System.Data.Services>  
   
-## <a name="see-also"></a>See Also  
- [Visual Studio data tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+## <a name="see-also"></a>См. также  
+ [Visual Studio Data Tools для .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

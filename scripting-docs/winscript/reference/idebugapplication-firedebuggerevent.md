@@ -1,27 +1,30 @@
 ---
-title: "IDebugApplication::FireDebuggerEvent | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugApplication::FireDebuggerEvent | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugApplication.FireDebuggerEvent
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugApplication::FireDebuggerEvent"
+helpviewer_keywords: IDebugApplication::FireDebuggerEvent
 ms.assetid: fd1f602e-fc15-4158-a6e7-497ff5b4a509
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c4cb02390602b6b93b8c233f245ede395833d67e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugApplication::FireDebuggerEvent
-Вызывает событие ресурса к интерфейсу `IApplicationDebugger` отладчика.  
+# <a name="idebugapplicationfiredebuggerevent"></a>IDebugApplication::FireDebuggerEvent
+Универсальный событие в отладчик `IApplicationDebugger` интерфейса.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT FireDebuggerEvent(  
@@ -30,28 +33,28 @@ HRESULT FireDebuggerEvent(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `riid`  
- \[in\] идентификатор GUID для объекта.  
+ [in] Идентификатор GUID для объекта.  
   
  `punk`  
- \[in\] объект события, передаваемые в отладчике.  
+ [in] Объект события для передачи в отладчик.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
-|`E_NOTIMPL`|Метод в настоящее время не реализуется.|  
+|`E_NOTIMPL`|Метод не реализован в настоящее время.|  
   
-## Заметки  
- Семантика GUID и `IUnknown` все приложение\/указанный режим отладчика.  
+## <a name="remarks"></a>Примечания  
+ Семантика GUID и `IUnknown` являются полностью определенные приложения и отладчика.  
   
- Этот метод позволяет пользовательских расширений модели отладчика; оно в настоящий момент не реализован.  
+ Этот метод позволяет для пользовательских расширений модели отладчика. он еще не реализован.  
   
- Этот метод вызывает `IApplicationDebugger::onDebuggerEvent` непосредственного вызова.  
+ Этот метод вызывает `IApplicationDebugger::onDebuggerEvent` для вызова.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
  [IApplicationDebugger::onDebuggerEvent](../../winscript/reference/iapplicationdebugger-ondebuggerevent.md)

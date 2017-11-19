@@ -1,60 +1,60 @@
 ---
-title: "IDebugProcess3::Execute | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcess3::Execute"
-helpviewer_keywords: 
-  - "IDebugProcess3::Execute"
+title: "IDebugProcess3::Execute | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProcess3::Execute
+helpviewer_keywords: IDebugProcess3::Execute
 ms.assetid: d831cd81-d7bf-4172-8517-aa699867791f
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 96b18bdb8aa0097071369a01013772dc3bd0d5bd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProcess3::Execute
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Выполнение продолжает этот процесс от остановленного состояния.  Очищено любое предыдущее состояние выполнения \(в качестве шага\) и запуске процесса выполнения.  
+# <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
+По-прежнему запускать этот процесс в остановленном состоянии. Предыдущее состояние выполнения (например, шаг) удаляется и процесс запускает выполнение снова.  
   
 > [!NOTE]
->  Этот метод следует использовать вместо [Выполнение](../../../extensibility/debugger/reference/idebugprogram2-execute.md).  
+>  Этот метод следует использовать вместо [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-HRESULT Execute(  
-   IDebugThread2* pThread  
+HRESULT Execute(  
+   IDebugThread2* pThread  
 );  
 ```  
   
-```c#  
-int Execute(  
-   IDebugThread2 pThread  
+```csharp  
+int Execute(  
+   IDebugThread2 pThread  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pThread`  
- \[in\] IDebugThread2 объект, представляющий поток для выполнения.  
+ [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) объект, представляющий выполнение потока.  
   
-## Возвращаемое значение  
+## <a name="return-value"></a>Возвращаемое значение  
  В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
-## Заметки  
- Когда пользователь запускает выполнение из остановленного состояния в потоке другого процесса этот метод вызывается при этом процессе.  Этот метод также вызывается, когда пользователь выбирает **Запуск** команда из  **Отладка** меню " в интегрированной среде разработки.  Реализация этого метода может быть как простой как вызов [Возобновить](../../../extensibility/debugger/reference/idebugthread2-resume.md) метод на текущем потоке в процессе.  
+## <a name="remarks"></a>Примечания  
+ Когда пользователь начинает выполнение из остановленного состояния в потоке занято другим процессом, этот метод вызывается по этому процессу. Этот метод также вызывается, когда пользователь выбирает **запустить** из **отладки** меню в Интегрированной среде разработки. Реализация этого метода может быть достаточно вызвать метод [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) метод в текущий поток в процессе.  
   
 > [!WARNING]
->  Не отправить событие остановки или немедленно \(синхронный\), событие [Событие](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) хотя обработка этого вызова; в противном случае он может повиснуть.  
+>  Не отправлять события остановки или немедленно (синхронно) событие [событие](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) при обработке этого вызова; в противном случае отладчик может зависнуть.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [Возобновить](../../../extensibility/debugger/reference/idebugthread2-resume.md)   
- [Событие](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+ [Резюме](../../../extensibility/debugger/reference/idebugthread2-resume.md)   
+ [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

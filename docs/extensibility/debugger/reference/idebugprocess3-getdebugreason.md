@@ -1,49 +1,49 @@
 ---
-title: "IDebugProcess3::GetDebugReason | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcess3::GetDebugReason"
-helpviewer_keywords: 
-  - "IDebugProcess3::GetDebugReason"
+title: "IDebugProcess3::GetDebugReason | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProcess3::GetDebugReason
+helpviewer_keywords: IDebugProcess3::GetDebugReason
 ms.assetid: f23fbabc-8b18-4278-bebf-4cdc7091513c
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1c88282541c20e93f86c5d8369ade795ecb95387
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProcess3::GetDebugReason
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Этот метод возвращает причину, что процесс запущен для отладки.  
+# <a name="idebugprocess3getdebugreason"></a>IDebugProcess3::GetDebugReason
+Этот метод возвращает причину, что процесс был запущен для отладки.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-HRESULT GetDebugReason(  
-   DEBUG_REASON* pReason  
+HRESULT GetDebugReason(  
+   DEBUG_REASON* pReason  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetDebugReason(  
-   out enum_DEBUG_REASON pReason  
+   out enum_DEBUG_REASON pReason  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pReason`  
- \[out\] возвращает значение [DEBUG\_REASON](../../../extensibility/debugger/reference/debug-reason.md) перечисление.  
+ [out] Возвращает значение из [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md) перечисления.  
   
-## Возвращаемое значение  
+## <a name="return-value"></a>Возвращаемое значение  
  В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
- [DEBUG\_REASON](../../../extensibility/debugger/reference/debug-reason.md)
+ [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md)

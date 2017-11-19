@@ -1,53 +1,53 @@
 ---
-title: "IDebugClassField::EnumNestedEnums | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugClassField::EnumNestedEnums"
-helpviewer_keywords: 
-  - "Метод IDebugClassField::EnumNestedEnums"
+title: "IDebugClassField::EnumNestedEnums | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugClassField::EnumNestedEnums
+helpviewer_keywords: IDebugClassField::EnumNestedEnums method
 ms.assetid: 90fd0cef-9145-4de6-91d4-6c881df39d6e
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 7667e21f57f3fc2844800e498d9519ddf9929f85
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugClassField::EnumNestedEnums
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugclassfieldenumnestedenums"></a>IDebugClassField::EnumNestedEnums
 Создает перечислитель для вложенных перечислителей этого класса.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT EnumNestedEnums(   
-   IEnumDebugFields** ppEnum  
+```cpp  
+HRESULT EnumNestedEnums(   
+   IEnumDebugFields** ppEnum  
 );  
 ```  
   
-```c#  
+```csharp  
 int EnumNestedEnums(  
-   out IEnumDebugFields ppEnum  
+   out IEnumDebugFields ppEnum  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppEnum`  
- \[out\] возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список вложенных перечислений.  Возвращает значение NULL, если нет вложенной перечисления.  
+ [out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список вложенных перечислений. Возвращает значение null, если нет вложенных перечислений.  
   
-## Возвращаемое значение  
- В случае успеха возвращает значение S\_OK и возвращает значение S\_FALSE, если нет вложенной перечислителей.  В противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK, или возвращает значение S_FALSE, если нет вложенной перечислителей. В противном случае возвращается код ошибки.  
   
-## Заметки  
- Каждый элемент перечисления [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md) объект, описывающий вложенное перечисление.  
+## <a name="remarks"></a>Примечания  
+ Каждый элемент перечисления является [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md) объект, описывающий вложенных перечисления.  
   
- Перечисление, объявленное в класс является вложенным перечислением.  Пример:  
+ Перечисление, объявленное в классе считается вложенных перечисления. Например, если учитывать, что:  
   
 ```  
 class RootClass {  
@@ -55,9 +55,9 @@ class RootClass {
 };  
 ```  
   
- `EnumNestedEnums` метод вернул бы  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, содержащий одно  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md) объект, представляющий  `NestedEnum` перечисление.  
+ `EnumNestedEnums` Метод вернет [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, который содержит один [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md) , представляющий `NestedEnum` перечисления.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

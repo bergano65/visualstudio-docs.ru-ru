@@ -1,53 +1,53 @@
 ---
-title: "IDebugBreakpointUnboundEvent2::GetBreakpoint | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBreakpointUnboundEvent2::GetBreakpoint"
-helpviewer_keywords: 
-  - "IDebugBreakpointUnboundEvent2::GetBreakpoint"
+title: "IDebugBreakpointUnboundEvent2::GetBreakpoint | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBreakpointUnboundEvent2::GetBreakpoint
+helpviewer_keywords: IDebugBreakpointUnboundEvent2::GetBreakpoint
 ms.assetid: ad73a207-b778-4dc5-b645-5ec668a63333
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 191f5bb8c2fbcbb3fa666ebfbc1db7956fc38524
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBreakpointUnboundEvent2::GetBreakpoint
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Получает точку останова, которая стала доступной несвязанный.  
+# <a name="idebugbreakpointunboundevent2getbreakpoint"></a>IDebugBreakpointUnboundEvent2::GetBreakpoint
+Возвращает точку останова, которые стали свободной.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetBreakpoint(   
-   IDebugBoundBreakpoint2** ppBP  
+```cpp  
+HRESULT GetBreakpoint(   
+   IDebugBoundBreakpoint2** ppBP  
 );  
 ```  
   
-```c#  
-int GetBreakpoint(   
-   out IDebugBoundBreakpoint2 ppBP  
+```csharp  
+int GetBreakpoint(   
+   out IDebugBoundBreakpoint2 ppBP  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppBP`  
- \[out\] возвращает IDebugBoundBreakpoint2 объект, представляющий непривязанную точку останова, которая стала доступной.  
+ [out] Возвращает [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) , представляющий точку останова, которые стали Несвязанный объект.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Пример  
- В следующем примере показано, как реализовать этот метод, a **CBreakpointUnboundDebugEventBase** объект, предоставляющий  [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) интерфейс.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как реализовать этот метод для **CBreakpointUnboundDebugEventBase** объекта, который предоставляет [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) интерфейса.  
   
-```cpp#  
+```cpp  
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetBreakpoint(  
     IDebugBoundBreakpoint2 **ppbp)  
 {  
@@ -74,6 +74,6 @@ STDMETHODIMP CBreakpointUnboundDebugEventBase::GetBreakpoint(
 }  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)   
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)

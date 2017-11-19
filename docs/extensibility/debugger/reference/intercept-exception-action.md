@@ -1,59 +1,59 @@
 ---
-title: "INTERCEPT_EXCEPTION_ACTION | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "INTERCEPT_EXCEPTION_ACTION"
-helpviewer_keywords: 
-  - "Перечисление INTERCEPT_EXCEPTION_ACTION"
+title: "INTERCEPT_EXCEPTION_ACTION | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: INTERCEPT_EXCEPTION_ACTION
+helpviewer_keywords: INTERCEPT_EXCEPTION_ACTION enumeration
 ms.assetid: e647f1eb-2932-4447-8c78-3b0d706fb972
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a6804e4991c8707e619c96d6945d120b2fb37ffb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# INTERCEPT_EXCEPTION_ACTION
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Определяет, какие действия предпринять перехват исключения.  
+# <a name="interceptexceptionaction"></a>INTERCEPT_EXCEPTION_ACTION
+Указывает, какие действия предпринять при перехват исключения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 enum enum_INTERCEPT_EXCEPTION_ACTION  
 {  
-   IEA_INTERCEPT = 0x0001  
+   IEA_INTERCEPT = 0x0001  
 }  
 typedef DWORD INTERCEPT_EXCEPTION_ACTION;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_INTERCEPT_EXCEPTION_ACTION  
 {  
-   IEA_INTERCEPT = 0x0001  
+   IEA_INTERCEPT = 0x0001  
 }  
 ```  
   
-#### Параметры  
- IEA\_INTERCEPT  
- Разрешает перехват текущее исключение.  Это единственное поддерживаемое значение в настоящий момент и должен быть задан.  
+#### <a name="parameters"></a>Параметры  
+ IEA_INTERCEPT  
+ Позволяет перехватить текущее исключение. Это единственное значение, поддерживается и должен быть указан.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
  Эти значения передаются в [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) метод.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)

@@ -1,57 +1,56 @@
 ---
-title: "IDiaEnumSourceFiles | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumSourceFiles - интерфейс"
+title: "IDiaEnumSourceFiles | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumSourceFiles interface
 ms.assetid: 5c0779a6-a2ea-408a-90da-ebdecf2b83c0
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: dbcd3e50e1b53a56342b5ab344ec54180001fa80
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumSourceFiles
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
 Перечисляет различные исходные файлы, содержащиеся в источнике данных.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
-IDiaEnumSourceFiles : IUknown  
+IDiaEnumSourceFiles : IUknown  
 ```  
   
-## Методы в том порядке Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDiaEnumSourceFiles`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[IDiaEnumSourceFiles::get\_\_NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|Извлекает `IEnumVARIANT Interface` версия данного перечислителя.|  
-|[IDiaEnumSourceFiles::get\_Count](../Topic/IDiaEnumSourceFiles::get_Count.md)|Получает количество исходных файлов.|  
-|[IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)|Извлекает исходный файл посредством индекса.|  
-|[IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)|Извлекает заданное количество исходных файлов в последовательности перечисления.|  
-|[IDiaEnumSourceFiles::Skip](../Topic/IDiaEnumSourceFiles::Skip.md)|Пропустить указанное количество исходных файлов в последовательности перечисления.|  
-|[IDiaEnumSourceFiles::Reset](../Topic/IDiaEnumSourceFiles::Reset.md)|Сбросить последовательность перечисления в начало.|  
-|[IDiaEnumSourceFiles::Clone](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|  
+|------------|-----------------|  
+|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|Извлекает `IEnumVARIANT Interface` версии этот перечислитель.|  
+|[IDiaEnumSourceFiles::get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)|Возвращает число исходных файлов.|  
+|[IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)|Получает исходный файл с помощью индекса.|  
+|[IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)|Извлекает указанное число исходных файлов в последовательности перечисления.|  
+|[IDiaEnumSourceFiles::Skip](../../debugger/debug-interface-access/idiaenumsourcefiles-skip.md)|Пропускает указанное число исходных файлов в последовательности перечисления.|  
+|[IDiaEnumSourceFiles::Reset](../../debugger/debug-interface-access/idiaenumsourcefiles-reset.md)|Сбрасывает последовательность перечисления в начало.|  
+|[IDiaEnumSourceFiles::Clone](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|Создает перечислитель, с тем же состоянием, как у текущего перечислителя.|  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
   
-## Замечания для вызывающих объектов  
- Для получения этого интерфейса нужно вызвать метод `QueryInterface` метод  [IDiaTable](../../debugger/debug-interface-access/idiatable.md) объект.  См. пример.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Получить этот интерфейс, вызвав `QueryInterface` метод [IDiaTable](../../debugger/debug-interface-access/idiatable.md) объекта. Дополнительные сведения см.  
   
-## Пример  
- В этом примере показано, как получить `IDiaEnumSourceFiles` интерфейс из списка таблиц в объекте сеанса DIA.  Пример доступа к данным из исходного файла см. в разделе [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) интерфейс.  
+## <a name="example"></a>Пример  
+ В этом примере показано, как получить `IDiaEnumSourceFiles` интерфейс из списка таблиц в объекте сеанса доступа к интерфейсу отладки. Пример доступа к информация об исходном файле, в разделе [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) интерфейса.  
   
-```cpp#  
+```C++  
   
 IDiaEnumSourceFiles* GetEnumSourceFiless(IDiaSession *pSession)  
 {  
@@ -81,15 +80,15 @@ IDiaEnumSourceFiles* GetEnumSourceFiless(IDiaSession *pSession)
 }  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: Dia2.h  
   
- Библиотеки: diaguids.lib  
+ Библиотека: diaguids.lib  
   
- Библиотеки DLL: msdia80.dll  
+ Библиотека DLL: msdia80.dll  
   
-## См. также  
- [Интерфейсы \(SDK для доступа к интерфейсу отладки\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>См. также  
+ [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
  [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

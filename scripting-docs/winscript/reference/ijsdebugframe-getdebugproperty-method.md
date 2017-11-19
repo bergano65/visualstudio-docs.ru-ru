@@ -1,25 +1,29 @@
 ---
-title: "Метод IJsDebugFrame::GetDebugProperty | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Метод IJsDebugFrame::GetDebugProperty | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IJsDebugFrame.GetDebugProperty
 apilocation: jscript9diag.dll
 ms.assetid: 19bfbe9e-323e-4fe7-ac0e-dc9e87d53219
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f1e47a7097c302532ec06b8985b9e9318c0ad4cc
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод IJsDebugFrame::GetDebugProperty
-Возвращает браузер свойств для данного фрейма стеков.  
+# <a name="ijsdebugframegetdebugproperty-method"></a>Метод IJsDebugFrame::GetDebugProperty
+Возвращает обозреватель свойств для этого кадра стека.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT GetDebugProperty(  
@@ -27,14 +31,14 @@ HRESULT GetDebugProperty(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppDebugProperty`  
- \[out\] Объект, представляющий обозреватель свойств.  
+ [out] Объект, представляющий свойства браузера.  
   
-## Возвращаемое значение  
+## <a name="return-value"></a>Возвращаемое значение  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** jscript9diag.h  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IJsDebugFrame](../../winscript/reference/ijsdebugframe-interface.md)

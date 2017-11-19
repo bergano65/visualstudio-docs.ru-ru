@@ -1,60 +1,60 @@
 ---
-title: "IDebugStackFrame2::GetInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugStackFrame2::GetInfo"
-helpviewer_keywords: 
-  - "IDebugStackFrame2::GetInfo"
+title: "IDebugStackFrame2::GetInfo | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugStackFrame2::GetInfo
+helpviewer_keywords: IDebugStackFrame2::GetInfo
 ms.assetid: 19c6870b-b94e-453c-bf19-82ce95b79d26
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b97acf264bfede855d96be90565e84b197e3e139
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugStackFrame2::GetInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
 Возвращает описание кадра стека.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetInfo (   
-   FRAMEINFO_FLAGS dwFieldSpec,  
-   UINT            nRadix,  
-   FRAMEINFO*      pFrameInfo  
+```cpp  
+HRESULT GetInfo (   
+   FRAMEINFO_FLAGS dwFieldSpec,  
+   UINT            nRadix,  
+   FRAMEINFO*      pFrameInfo  
 );  
 ```  
   
-```c#  
-int GetInfo (   
-   enum_FRAMEINFO_FLAGS dwFieldSpec,  
-   uint                 nRadix,  
-   FRAMEINFO[]          pFrameInfo  
+```csharp  
+int GetInfo (   
+   enum_FRAMEINFO_FLAGS dwFieldSpec,  
+   uint                 nRadix,  
+   FRAMEINFO[]          pFrameInfo  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `dwFieldSpec`  
- \[in\] сочетание пометит из [FRAMEINFO\_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) перечисление, которое определяет, какие поля  `pFrameInfo` параметр заполняемым.  
+ [in] Сочетание флагов из [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) перечисления, указывающее, какие поля `pFrameInfo` параметра должны быть заполнены.  
   
  `nRadix`  
- \[in\] корневой каталог, используемый в отформатировать любое числовое сведения.  
+ [in] Основание системы счисления, используемое в любой числовой сведения о форматировании.  
   
  `pFrameInfo`  
- \[out\] a [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) структура, заполняемую с описанием кадра стека.  
+ [out] Объект [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) структуру, которая содержит описание кадра стека.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
- [FRAMEINFO\_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)   
+ [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)   
  [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

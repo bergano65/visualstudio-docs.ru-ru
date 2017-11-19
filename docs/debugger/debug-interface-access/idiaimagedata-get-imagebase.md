@@ -1,46 +1,45 @@
 ---
-title: "IDiaImageData::get_imageBase | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaImageData::get_imageBase - метод"
+title: "IDiaImageData::get_imageBase | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaImageData::get_imageBase method
 ms.assetid: 4ba3d9e4-b205-4ee6-a41d-6996972f1f85
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: daaaf26e0a33ce8e90b2b8ac621ed47d299c8276
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaImageData::get_imageBase
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает область памяти, где образ должен быть основан.  
+# <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
+Получает области памяти, где должно быть основано изображения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT get_imageBase (   
-   ULONGLONG* pRetVal  
+```C++  
+HRESULT get_imageBase (   
+   ULONGLONG* pRetVal  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pRetVal`  
- \[out\] возвращает предложенную базовое значение образа.  
+ [out] Возвращает значение базового предлагаемые изображения.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Из\-за основанию образа конфликтов, образ может быть rebased автоматически на неиспользуемый расположение в памяти при ее загрузке.  Этот метод возвращает базовый подсказки \(предложенный ячейки памяти\), сохраненные в модуле во время компиляции.  
+## <a name="remarks"></a>Примечания  
+ Из-за конфликтов базового образа изображение может быть перемещен автоматически к размещению неиспользуемую память при ее загрузке. Этот метод возвращает базовый указание (расположение Рекомендуемый объем памяти), которое было сохранено в модуле во время компиляции.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

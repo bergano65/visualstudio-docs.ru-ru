@@ -1,56 +1,55 @@
 ---
-title: "IDiaSymbol::get_hasSetJump | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_hasSetJump - метод"
+title: "IDiaSymbol::get_hasSetJump | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_hasSetJump method
 ms.assetid: 22656206-dccf-40ed-b179-fc016d1b262a
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ed8cd869bc552b98f524bae2a372060b87129d24
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_hasSetJump
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает пометить, указывающее, содержит ли функция использование [setjmp](/visual-cpp/c-runtime-library/reference/setjmp) команда \(с связыванная  [longjmp](/visual-cpp/c-runtime-library/reference/longjmp) команда эти формы метода в стиле обработки ошибок\).  
+# <a name="idiasymbolgethassetjump"></a>IDiaSymbol::get_hasSetJump
+Возвращает флаг, указывающий, содержит ли функция использование [setjmp](/cpp/c-runtime-library/reference/setjmp) команда (соединен с [longjmp](/cpp/c-runtime-library/reference/longjmp) команды, они образуют метод C-стиле, обработки исключений).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp  
+```C++  
 HRESULT get_hasSetJump(  
-   BOOL *pFlag  
+   BOOL *pFlag  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pFlag`  
- \[out\] возвращает `TRUE` если функция содержит a  `setjmp` команда; в противном случае возвращает  `FALSE`.  
+ [out] Возвращает `TRUE` Если функция содержит `setjmp` команду; в противном случае возвращает `FALSE`.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает  `S_FALSE` или код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение  `S_FALSE` означает, что свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
   
 |Требование|Описание|  
-|----------------|--------------|  
+|-----------------|-----------------|  
 |Заголовок:|dia2.h|  
-|Версия:|Пакет SDK для доступа к интерфейсу отладки v8.0|  
+|Версия:|ПАКЕТ SDK для версии 8.0|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get\_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)   
- [longjmp](/visual-cpp/c-runtime-library/reference/longjmp)   
- [setjmp](/visual-cpp/c-runtime-library/reference/setjmp)
+ [IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)   
+ [longjmp](/cpp/c-runtime-library/reference/longjmp)   
+ [setjmp](/cpp/c-runtime-library/reference/setjmp)

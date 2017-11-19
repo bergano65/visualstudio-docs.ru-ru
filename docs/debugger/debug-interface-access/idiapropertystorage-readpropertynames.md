@@ -1,54 +1,53 @@
 ---
-title: "IDiaPropertyStorage::ReadPropertyNames | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaPropertyStorage::ReadPropertyNames"
+title: "IDiaPropertyStorage::ReadPropertyNames | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaPropertyStorage::ReadPropertyNames
 ms.assetid: f8bcab77-afca-4a8f-8710-697842f8a518
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 338d2c4f59eb9023d8a7d8c8618585bb902785f3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaPropertyStorage::ReadPropertyNames
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Имена извлечение соответствующей строки для заданного идентификатора свойства.  
+# <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
+Извлекает соответствующие имена строки для заданного идентификаторов свойств.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp  
+```C++  
 HRESULT ReadPropertyNames (  
-   ULONG         cpropid,  
-   PROPID const* rgpropid,  
-   BSTR*         rglpwstrName  
+   ULONG         cpropid,  
+   PROPID const* rgpropid,  
+   BSTR*         rglpwstrName  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `cpropid`  
- \[in\] количество идентификаторов свойства in `rgpropid`.  
+ [in] Количество идентификаторов свойств в `rgpropid`.  
   
  `rgpropid`  
- \[in\] массив идентификаторов свойства, для которых, чтобы получить имена \(`PROPID` определяет, а в WTypes.h  `ULONG`\).  
+ [in] Массив идентификаторов свойств, для которого необходимо получить имена (`PROPID` определяется в файле WTypes.h как `ULONG`).  
   
  `rglpwstrName`  
- \[in, out\] массив имен свойств для идентификаторов указанного свойства.  Массив должен pre\-выделить для хранения количества запрошенных имен свойств и должен содержать хотя бы `cpropid``BSTR` строки.  
+ [in, out] Массив имен свойств для указанного свойства идентификаторов. Массив должен быть предварительно выделить запрошенное число имен свойств и должен иметь возможность по крайней мере `cpropid``BSTR` строки.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Возвращаемые имена свойств необходимо освободить \(путем вызова `SysFreeString` функция\), если они больше не требуются.  
+## <a name="remarks"></a>Примечания  
+ Имя возвращаемого свойства освобождения (путем вызова `SysFreeString` функция) когда они больше не нужны.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

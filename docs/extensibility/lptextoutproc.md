@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- LPTEXTOUTPROC
+f1_keywords: LPTEXTOUTPROC
 helpviewer_keywords:
 - SccMsgDataOnMessage structure
 - SccMsgDataOnBeforeGetFile structure
@@ -17,29 +15,15 @@ helpviewer_keywords:
 - LPTEXTOUTPROC callback function
 - SccMsgDataOnAfterGetFile structure
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
-caps.latest.revision: 21
+caps.latest.revision: "21"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 86c8cce3abf16d7236acdd5ec468b06fdb46f997
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 658193f526123d237ef9b90a05861492b9f007c9
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 Когда пользователь выполняет операцию системы управления версиями из внутри интегрированной среды разработки (IDE), подключаемый модуль системы управления версиями может потребоваться передачи ошибка или состояние сообщения, относящиеся к работе. Подключаемый модуль может отображать свой собственный окон сообщений, для этой цели. Однако для более прозрачную интеграцию, подключаемый модуль можно передать строки в интегрированную среду разработки, которая затем отображает их в его собственном способ отображения сведений о состоянии. — Это механизм `LPTEXTOUTPROC` указатель функции. IDE реализует эту функцию, (более подробно ниже) для отображения ошибок и состояний.  

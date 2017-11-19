@@ -1,49 +1,49 @@
 ---
-title: "IDebugPropertyCreateEvent2::GetDebugProperty | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPropertyCreateEvent2::GetDebugProperty"
-helpviewer_keywords: 
-  - "IDebugPropertyCreateEvent2::GetDebugProperty"
+title: "IDebugPropertyCreateEvent2::GetDebugProperty | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPropertyCreateEvent2::GetDebugProperty
+helpviewer_keywords: IDebugPropertyCreateEvent2::GetDebugProperty
 ms.assetid: d7e43183-444c-4417-af19-82e28229f83a
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 18657eb39de276b2da68699d642e35cf9112f99f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPropertyCreateEvent2::GetDebugProperty
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugpropertycreateevent2getdebugproperty"></a>IDebugPropertyCreateEvent2::GetDebugProperty
 Возвращает новое свойство.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetDebugProperty (   
-   IDebugProperty2** ppProperty  
+```cpp  
+HRESULT GetDebugProperty (   
+   IDebugProperty2** ppProperty  
 );  
 ```  
   
-```c#  
-int GetDebugProperty (   
-   out IDebugProperty2 ppProperty  
+```csharp  
+int GetDebugProperty (   
+   out IDebugProperty2 ppProperty  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppProperty`  
- \[out\] возвращает IDebugProperty2 объект, представляющий новое свойство.  
+ [out] Возвращает [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , представляющий новое свойство.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

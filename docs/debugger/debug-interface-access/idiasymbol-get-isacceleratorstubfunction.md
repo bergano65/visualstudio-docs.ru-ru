@@ -1,40 +1,40 @@
 ---
-title: "IDiaSymbol::get_isAcceleratorStubFunction | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: "IDiaSymbol::get_isAcceleratorStubFunction | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: cc4ea375-76f6-4ba8-baed-c5fa82108137
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f6a7d2f27e776b37c392eb0116425ceeb6916031
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_isAcceleratorStubFunction
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Указывает, соответствует ли символ в символ верхнего уровня функции для шейдера компилированного для сочетаний клавиш, который соответствует вызову `parallel_for_each`.  
+# <a name="idiasymbolgetisacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
+Указывает, соответствует ли символ в символ верхнего уровня функция для шейдера, скомпилированную для ускорителя, соответствующий `parallel_for_each` вызова.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp  
+```C++  
 HRESULT get_isAcceleratorStubFunction(   
    BOOL* pFlag);  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pFlag`  
- \[out\] указатель на `BOOL`, указывающее, соответствует ли символ в символ верхнего уровня функции для шейдера компилированного для сочетаний клавиш, который соответствует вызову `parallel_for_each`.  
+ [out] Указатель на `BOOL` , указывающее, соответствует ли символ в символ верхнего уровня функция для шейдера, скомпилированную для ускорителя, соответствующий `parallel_for_each` вызова.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_ОК`; в противном случае передачи `S_FALSE` или код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

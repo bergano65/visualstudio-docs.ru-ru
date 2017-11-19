@@ -1,27 +1,30 @@
 ---
-title: "IDispError::GetNext | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDispError::GetNext | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDispError.GetNext
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IDispError::GetNext"
+helpviewer_keywords: IDispError::GetNext
 ms.assetid: 3e5267f8-ba62-41c3-bd3e-eced2ad85e8e
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5cbe4b044f2d3fb1d8ffb08565fc4093fbbe3ec7
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IDispError::GetNext
-Извлекает следующий объект `IDispError`.  
+# <a name="idisperrorgetnext"></a>IDispError::GetNext
+Извлекает следующий `IDispError` объекта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT GetNext(  
@@ -29,22 +32,22 @@ HRESULT GetNext(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppde`  
- \[out\] определяет следующий объект `IDispError`.  
+ [out] Указывает поле `IDispError` объекта.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
- Этот метод извлекает следующий объект `IDispError`.  Если это последний объект `IDispError`, то получения этого метода АННУЛИРУЮТ.  
+## <a name="remarks"></a>Примечания  
+ Этот метод извлекает следующий `IDispError` объекта. Если это последний `IDispError` объекта, этот метод возвращает значение NULL.  
   
 > [!NOTE]
 >  Этот метод не реализован.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IDispError](../../winscript/reference/idisperror-interface.md)

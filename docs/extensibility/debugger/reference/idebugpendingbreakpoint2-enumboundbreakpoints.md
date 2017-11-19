@@ -1,54 +1,55 @@
 ---
-title: "IDebugPendingBreakpoint2::EnumBoundBreakpoints | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPendingBreakpoint2::EnumBoundBreakpoints"
-helpviewer_keywords: 
-  - "Метод EnumBoundBreakpoints"
-  - "Метод IDebugPendingBreakpoint2::EnumBoundBreakpoints"
+title: "IDebugPendingBreakpoint2::EnumBoundBreakpoints | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPendingBreakpoint2::EnumBoundBreakpoints
+helpviewer_keywords:
+- EnumBoundBreakpoints method
+- IDebugPendingBreakpoint2::EnumBoundBreakpoints method
 ms.assetid: 179c7c54-8446-462d-b099-e0f9cf06dc52
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8fea52cd30ca93a1235ba0d096cfccbe4eaadb36
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPendingBreakpoint2::EnumBoundBreakpoints
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Перечисляет все точки останова из ожидающих привязанные этой точки останова.  
+# <a name="idebugpendingbreakpoint2enumboundbreakpoints"></a>IDebugPendingBreakpoint2::EnumBoundBreakpoints
+Перечисляет все точки останова, связанный с этой ожидающая точка останова.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT EnumBoundBreakpoints(   
-   IEnumDebugBoundBreakpoints2** ppEnum  
+```cpp  
+HRESULT EnumBoundBreakpoints(   
+   IEnumDebugBoundBreakpoints2** ppEnum  
 );  
 ```  
   
-```c#  
-int EnumBoundBreakpoints(   
-   out IEnumDebugBoundBreakpoints2 ppEnum  
+```csharp  
+int EnumBoundBreakpoints(   
+   out IEnumDebugBoundBreakpoints2 ppEnum  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppEnum`  
- \[out\] возвращает IEnumDebugBoundBreakpoints2 объект, перечисляющий связанные точки останова.  
+ [out] Возвращает [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) объекта, который перечисляет связанных точек останова.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  Возвращает `E_BP_DELETED` если точка останова удалена.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Возвращает `E_BP_DELETED` Если точка останова была удалена.  
   
-## Пример  
- В следующем примере показано, как реализовать этот метод для простого `CPendingBreakpoint` объект, предоставляющий  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) интерфейс.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как реализовать этот метод для простой `CPendingBreakpoint` объекта, который предоставляет [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) интерфейса.  
   
-```cpp#  
+```cpp  
 HRESULT CPendingBreakpoint::EnumBoundBreakpoints(IEnumDebugBoundBreakpoints2** ppEnum)    
 {    
    HRESULT hr;    
@@ -118,6 +119,6 @@ HRESULT CPendingBreakpoint::EnumBoundBreakpoints(IEnumDebugBoundBreakpoints2** p
 }    
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)

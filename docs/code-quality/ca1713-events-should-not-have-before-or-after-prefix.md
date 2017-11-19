@@ -1,46 +1,47 @@
 ---
-title: "CA1713: имена событий не должны содержать префикс &quot;before&quot; или &quot;after&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "EventsShouldNotHaveBeforeOrAfterPrefix"
-  - "CA1713"
-helpviewer_keywords: 
-  - "CA1713"
-  - "EventsShouldNotHaveBeforeOrAfterPrefix"
+title: "CA1713: События не должны содержать префикс before или after | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- EventsShouldNotHaveBeforeOrAfterPrefix
+- CA1713
+helpviewer_keywords:
+- CA1713
+- EventsShouldNotHaveBeforeOrAfterPrefix
 ms.assetid: 855772a4-aa9e-410b-88c1-c5fba1ca63da
-caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c211d2f2cc65c12fd11782058c5e8b8a3aaf47b6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# CA1713: имена событий не должны содержать префикс &quot;before&quot; или &quot;after&quot;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713: имена событий не должны содержать префикс "before" или "after"
 |||  
 |-|-|  
 |TypeName|EventsShouldNotHaveBeforeOrAfterPrefix|  
 |CheckId|CA1713|  
 |Категория|Microsoft.Naming|  
-|Критическое изменение|Критическое изменение|  
+|Критическое изменение|Критическое|  
   
-## Причина  
- Имя события начинается с "Before" или "After".  
+## <a name="cause"></a>Причина  
+ Имя события начинается с «Before» или «After».  
   
-## Описание правила  
- Имена событий должны описывать действия, создающие эти события.  Чтобы дать имена связанным событиям, возникающим в определенной последовательности, используйте настоящее или прошедшее время, чтобы обозначить положение события в последовательности действий.  Например, при создании имен для пары событий, возникающих при закрытии ресурса, можно назвать их "Closing" и "Closed", а не "BeforeClose" и "AfterClose".  
+## <a name="rule-description"></a>Описание правила  
+ Имена событий должны описывать действие, которое вызывает событие. Чтобы дать имена связанным событиям, возникающим в определенной последовательности, используйте настоящее или прошедшее время, чтобы обозначить положение события в последовательности действий. Например при возникновении именования пара событий, который вызывается при закрытии ресурса ей может имя «Закрытие» и «Закрыто», а не «BeforeClose» и «AfterClose».  
   
- Соглашения об именах обеспечивают единообразие библиотек, предназначенных для выполнения в среде CLR.  Это позволяет сократить время обучения, необходимое для освоения новых библиотек программного обеспечения, и укрепить уверенность клиента в том, что библиотека была разработана опытным разработчиком управляемого кода.  
+ Соглашения об именовании обеспечивают единообразие библиотек, предназначенных общеязыковая среда выполнения. Это уменьшает обучения, необходимое для новых библиотек программного обеспечения и повышает уверенность клиента в том, что библиотека была разработана с тем, кто имеет опыт в разработке управляемого кода.  
   
-## Устранение нарушений  
- Удалите префикс из имени события и попробуйте изменить имя, используя глагол в настоящем или прошедшем времени.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Удалите префикс из имени события и попробуйте изменить имя, используйте настоящее или прошедшее время команды.  
   
-## Отключение предупреждений  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
  Для этого правила отключать вывод предупреждений не следует.

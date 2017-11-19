@@ -1,67 +1,66 @@
 ---
-title: "IDiaStackFrame | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackFrame - интерфейс"
+title: "IDiaStackFrame | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackFrame interface
 ms.assetid: 486d25b8-a590-41c1-bdb5-faff3ae35632
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 30b3ca5d68731fccf874b250741a6e67697539fb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackFrame
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idiastackframe"></a>IDiaStackFrame
 Предоставляет свойства кадра стека.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IDiaStackFrame : IUnknown  
 ```  
   
-## Методы в том порядке Vtable  
- Следующие методы, поддерживаемые этим интерфейсом.  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
+ Ниже приведены методы, поддерживаемые этим интерфейсом.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[IDiaStackFrame::get\_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|Извлекает пометить указывающее, что базовый указатель установлен для кода в этом диапазоне адресов.  Этот метод является устаревшим.|  
-|[IDiaStackFrame::get\_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|Получает базовый адрес кадра.|  
-|[IDiaStackFrame::get\_cplusplusExceptionHandling](../Topic/IDiaStackFrame::get_cplusplusExceptionHandling.md)|Извлекает пометить показывающее, что обработка исключений С\+\+.|  
-|[IDiaStackFrame::get\_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|Извлекает пометить указывающее, что блок содержит точку входа функции.|  
-|[IDiaStackFrame::get\_lengthLocals](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|Извлекает число байтов локальных переменных отправлянных в стеке.|  
-|[IDiaStackFrame::get\_lengthParams](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|Возвращает число байтов отправлянных параметров в стеке.|  
-|[IDiaStackFrame::get\_lengthProlog](../../debugger/debug-interface-access/idiastackframe-get-lengthprolog.md)|Извлекает число байтов в блоке кода в прологе|  
-|[IDiaStackFrame::get\_lengthSavedRegisters](../Topic/IDiaStackFrame::get_lengthSavedRegisters.md)|Извлекает число байт, сохраненных регистров отправлянных в стеке.|  
-|[IDiaStackFrame::get\_localsBase](../../debugger/debug-interface-access/idiastackframe-get-localsbase.md)|Получает базовый адрес локальные переменные.|  
-|[IDiaStackFrame::get\_maxStack](../../debugger/debug-interface-access/idiastackframe-get-maxstack.md)|Получает максимальное число байтов отправлянных в стеке во фрейме.|  
-|[IDiaStackFrame::get\_rawLVarInstanceValue](../../debugger/debug-interface-access/idiastackframe-get-rawlvarinstancevalue.md)|Получает значение заданной локальной переменной в виде необработанных байт.|  
-|[IDiaStackFrame::get\_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)|Извлекает значение указанного регистра.|  
-|[IDiaStackFrame::get\_returnAddress](../../debugger/debug-interface-access/idiastackframe-get-returnaddress.md)|Получает обратный адрес кадра.|  
-|[IDiaStackFrame::get\_size](../Topic/IDiaStackFrame::get_size.md)|Извлекает размер кадра, в байтах.|  
-|[IDiaStackFrame::get\_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)|Извлекает пометить показывающее, что обработка ошибок системы.|  
-|[IDiaStackFrame::get\_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)|Извлекает тип кадра.|  
+|------------|-----------------|  
+|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|Возвращает флаг, указывающий, что базового указателя выделяется для кода в этом диапазоне. Этот метод является устаревшим.|  
+|[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|Получает базовый адрес кадра.|  
+|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|Возвращает флаг, указывающий, что обработка исключений с ++ действует.|  
+|[IDiaStackFrame::get_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|Возвращает флаг, указывающий, что блок содержит точку входа функции.|  
+|[IDiaStackFrame::get_lengthLocals](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|Возвращает число байтов, локальных переменных в стек.|  
+|[IDiaStackFrame::get_lengthParams](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|Возвращает число байтов параметров в стек.|  
+|[IDiaStackFrame::get_lengthProlog](../../debugger/debug-interface-access/idiastackframe-get-lengthprolog.md)|Возвращает число байтов кода пролога в блоке|  
+|[IDiaStackFrame::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiastackframe-get-lengthsavedregisters.md)|Возвращает число байтов, сохраненных регистров в стек.|  
+|[IDiaStackFrame::get_localsBase](../../debugger/debug-interface-access/idiastackframe-get-localsbase.md)|Получает базовый адрес локальных переменных.|  
+|[IDiaStackFrame::get_maxStack](../../debugger/debug-interface-access/idiastackframe-get-maxstack.md)|Возвращает максимальное число байтов, помещаются в стек в кадре.|  
+|[IDiaStackFrame::get_rawLVarInstanceValue](../../debugger/debug-interface-access/idiastackframe-get-rawlvarinstancevalue.md)|Получает значение указанной локальной переменной в виде необработанных байтов.|  
+|[IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)|Получает значение указанного регистра.|  
+|[IDiaStackFrame::get_returnAddress](../../debugger/debug-interface-access/idiastackframe-get-returnaddress.md)|Возвращает обратный адрес кадра.|  
+|[IDiaStackFrame::get_size](../../debugger/debug-interface-access/idiastackframe-get-size.md)|Получает размер кадра, в байтах.|  
+|[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)|Возвращает флаг, указывающий, что обработка исключений системы действует.|  
+|[IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)|Получает тип пакета.|  
   
-## Заметки  
- Абстракция кадр стека вызова функции во время его выполнения.  
+## <a name="remarks"></a>Примечания  
+ Кадр стека представляет собой абстракцию вызов функции во время выполнения.  
   
-## Замечания для вызывающих объектов  
- Для получения этого интерфейса нужно вызвать метод [IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md) метод.  См. [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) интерфейс пример на получение  `IDiaStackFrame` интерфейс.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Получить этот интерфейс, вызвав [IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md) метод. В разделе [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) интерфейс пример получения `IDiaStackFrame` интерфейса.  
   
-## Пример  
- В этом примере показаны различные атрибуты кадра стека.  
+## <a name="example"></a>Пример  
+ Этот пример отображает различные атрибуты кадра стека.  
   
-```cpp#  
+```C++  
 void PrintStackFrame(IDiaStackFrame* pFrame)  
 {  
     if (pFrame != NULL)  
@@ -102,15 +101,15 @@ void PrintStackFrame(IDiaStackFrame* pFrame)
 }  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: Dia2.h  
   
- Библиотеки: diaguids.lib  
+ Библиотека: diaguids.lib  
   
- Библиотеки DLL: msdia80.dll  
+ Библиотека DLL: msdia80.dll  
   
-## См. также  
- [Интерфейсы \(SDK для доступа к интерфейсу отладки\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>См. также  
+ [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)   
  [IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)   
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

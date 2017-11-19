@@ -1,27 +1,30 @@
 ---
-title: "IEnumDebugStackFrames::Clone | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IEnumDebugStackFrames::Clone | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IEnumDebugStackFrames.Clone
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IEnumDebugStackFrames::Clone"
+helpviewer_keywords: IEnumDebugStackFrames::Clone
 ms.assetid: 9d9e01a3-0be3-4336-832a-f065af388571
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 910b05024efcde8614882e0c95cdfab2ffe9be3e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IEnumDebugStackFrames::Clone
-Создает перечислитель с тем же состоянием, что и текущий перечислитель.  
+# <a name="ienumdebugstackframesclone"></a>IEnumDebugStackFrames::Clone
+Создает перечислитель, который содержит том же состоянии, как у текущего перечислителя.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT Clone(  
@@ -29,19 +32,19 @@ HRESULT Clone(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppedsf`  
- \[out\] возвращает интерфейс `IEnumDebugStackFrames` клона перечислителя.  
+ [out] Возвращает `IEnumDebugStackFrames` интерфейс клона перечислителя.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
- Этот метод создает перечислитель с тем же состоянием как текущий перечислитель.  
+## <a name="remarks"></a>Примечания  
+ Этот метод создает перечислитель, который содержит том же состоянии, как у текущего перечислителя.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IEnumDebugStackFrames](../../winscript/reference/ienumdebugstackframes-interface.md)

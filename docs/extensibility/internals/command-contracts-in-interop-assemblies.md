@@ -1,34 +1,36 @@
 ---
-title: "Команда контрактов в сборках взаимодействия | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Обработка с использованием сборок взаимодействия, команда контракты команд"
-  - "сборки взаимодействия, команда контрактов"
+title: "Команда контрактов в сборках взаимодействия | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- command handling with interop assemblies, command contracts
+- interop assemblies, command contracts
 ms.assetid: 57245708-f539-42dc-8963-2754a48f0189
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 901423bfa9b43e2d4eaaa20a225c35e76a0b8790
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Команда контрактов в сборках взаимодействия
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Основное соглашение для обработки команд через <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс является то, что среда вызывает <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод, чтобы определить команду, поддерживается ли он поддерживается, чтобы определить ее состояние и текст. Затем среда вызывает <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> метод для выполнения команды.  
+# <a name="command-contracts-in-interop-assemblies"></a>Команда контрактов в сборках взаимодействия
+Базовый контракт для обработки команды через <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс является то, что окружение вызывает <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод для определения ли команда поддерживается, и, если он поддерживается, чтобы определить его состояние и текст. Затем среда вызывает метод <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> метод для выполнения команды.  
   
- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Метод обрабатывается одинаково для всех команд. Дальнейшее взаимодействие при необходимости \(например, с помощью раскрывающихся списков\), осуществляется путем вызова <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> метод с соответствующими параметрами. Интерпретация этих параметров зависит от указанной команды.  
+ <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Метод обрабатываются одинаково для всех команд. Последующих сеансов связи, при необходимости (например, с помощью раскрывающихся списков), осуществляется путем вызова <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> метод с соответствующими параметрами. Интерпретация этих параметров зависит от указанной команды.  
   
- Если цель команды возвращает значения в выходном параметре, вызывающий объект всегда отвечает за освобождение все ресурсы, выделенные ранее. Поскольку этот параметр является вариантом, сняв вариант освобождает ресурсы.  
+ Если целевой объект команды возвращает значения в выходном параметре, вызывающий объект всегда отвечает за освободить все ресурсы, выделенные. Поскольку этот параметр является вариантом, сняв вариант высвобождает ресурсы.  
   
- В случаях, где должно работать команды в окне "Иерархия" <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> интерфейс должен использоваться.<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> Интерфейс имеет аналогичные контракт с аналогичные методы: <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A>.  
+ В случаях, где команды должны работать в окне "Иерархия" <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> интерфейса необходимо использовать. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> Интерфейс имеет аналогичные контракт с подобными методами: <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A>.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Как добавить элементы пользовательского интерфейса в пакеты VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Маршрутизация команд в пакеты VSPackage](../../extensibility/internals/command-routing-in-vspackages.md)   
  [Реализация](../../extensibility/internals/command-implementation.md)

@@ -1,81 +1,82 @@
 ---
-title: "Features1 устаревших языковой службы | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "языковые службы [платформа управляемых пакетов]"
+title: "Устаревший языковой службы Features1 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: language services [managed package framework]
 ms.assetid: a646e4f0-767d-4cd1-8e1a-9a2aa210a1b7
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: cc29529c7ba499cdc7291078774b9f546a3a08ca
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Компоненты прежних версий языка службы
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Управляемая служба языка платформы пакета \(MPF\) может поддерживать один или несколько [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] функции, например выделение синтаксиса, технологией IntelliSense и проверка точки останова.  Каждая функция может быть базовым независимым других но требуют средства синтаксического анализа и средства чтения за исключением выделения синтаксиса, который требуется только средства чтения.  
+# <a name="legacy-language-service-features"></a>Возможности службы прежних версий языка
+Служба языка framework (MPF) управляемых пакетов может поддерживать один или несколько [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] возможностей, таких как выделение синтаксиса, IntelliSense и проверка точек останова. Каждый компонент может осуществляться независимо от других, но все требуется средство синтаксического анализа и сканер за исключением выделения синтаксиса, что требует только сканер.  
   
-## В этом подразделе  
- [Проверка парности фигурных скобок в языковую службу для прежних версий](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)  
- Описывает, что требуется для поддержки соответствовать языковых пары, также известный как проверка парности фигурных скобок.  
+## <a name="in-this-section"></a>Содержание  
+ [Парные фигурные скобки в языковой службе прежних версий](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)  
+ Описывает, что требуется для поддержки языковой пары соответствия, также известные как парные фигурные скобки.  
   
- [Комментирование кода в языковую службу для прежних версий](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)  
- Описывает, что требуется для поддержки комментарий и uncommenting выбранного кода.  
+ [Комментирование кода синтаксиса в языковой службе прежних версий](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)  
+ Описывает, что требуется для поддержки комментирования и раскомментировать выделенного кода.  
   
- [Пользовательские свойства документа в языковую службу для прежних версий](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)  
- Описывает, что требуется для поддержки свойств документа, внедренных в файле источника.  
+ [Настраиваемые свойства документа в языковой службе прежних версий](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)  
+ Описывает, что требуется для поддержки свойств документа, которые внедряются в исходном файле.  
   
- [Структуризация в языковую службу для прежних версий](../../extensibility/internals/outlining-in-a-legacy-language-service.md)  
- Описывает, что требуется для поддержки структурирование через реализацию скрытых областей.  
+ [Структурирование в языковой службе прежних версий](../../extensibility/internals/outlining-in-a-legacy-language-service.md)  
+ Описывает, что требуется для поддержки структурирование путем реализации скрытых областей.  
   
- [Форматирование кода в языковую службу для прежних версий](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)  
- Описывает, что требуется для поддержки переформатирование код.  
+ [Переформатирование кода в языковой службе прежних версий](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)  
+ Описывает, что требуется для поддержки форматирования кода.  
   
- [Поддержка фрагментов кода в языковую службу для прежних версий](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)  
- Описывает, что требуется для поддержки фрагменты кода, сегменты кода, которые вставляются и могут редактироваться.  
+ [Поддержка фрагментов кода в языковой службе прежних версий](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)  
+ Описывает, что требуется для поддержки фрагменты кода, которые являются сегментами кода, можно изменить, которые вставляются.  
   
- [Сведения о параметрах в языковую службу для прежних версий](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
- Описывает, что требуется для поддержки операции IntelliSense для отображения сведений о параметрах подписи методов как метод типизирован.  
+ [Сведения о параметрах в языковую службу прежних версий](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
+ Описывает, что требуется для поддержки операции сведения о параметре IntelliSense для отображения сигнатуру метода, как типизированный метод.  
   
- [Краткие сведения в языковую службу для прежних версий](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
- Описывает, что требуется для поддержки информационную операции IntelliSense быструю для отображения сведений об идентификаторе.  
+ [Краткие сведения в языковой службе прежних версий](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
+ Описывает, что требуется для поддержки операции краткие сведения IntelliSense для отображения сведений об идентификаторе.  
   
- [Завершение члена в языковую службу для прежних версий](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
- Описывает, что требуется для поддержки операции завершения IntelliSense для элемента выбрать член пространства имен из списка.  
+ [Завершение участников в языковой службе прежних версий](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
+ Описание ресурсов, необходимых для поддержки операции выбора члена пространства имен из списка завершения IntelliSense члена.  
   
- [Завершение слов в языковую службу для прежних версий](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)  
- Описывает, что необходимо для машинного слов IntelliSense поддерживает операцию для выполнения полной частично типизированные машинные слова.  
+ [Завершение машинных слов в языковой службе прежних версий](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)  
+ Описывает требования для поддержки операции завершения слов IntelliSense для завершения частично типизированного слова.  
   
- [Поддержка окно видимых переменных в языковую службу для прежних версий](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)  
- Описывает, что служба языка может сделать для поддержки **Видимые** окно во время отладки.  
+ [Поддержка окна видимых переменных в языковой службе прежних версий](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)  
+ Описывает языковую службу можно сделать для поддержки **видимые** окно появляется при отладке.  
   
- [Поддержка панели навигации в языковую службу для прежних версий](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)  
- Описывает использование **Панель переходов** в верхней части представления редактора для реализации быстрый переход любой тип или член в файле, указанном в этом представлении.  
+ [Поддержка панели навигации в языковой службе прежних версий](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)  
+ Описывает использование **панель навигации** в верхней части редактора представления для быстрого перехода типов и членов в файле, показанные в этом представлении...  
   
- [Синтаксис выделения цветом в языковую службу для прежних версий](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
- Описывает, что требуется для поддержки выбора синтаксиса исходного кода.  
+ [Цветовая маркировка синтаксиса в языковой службе прежних версий](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
+ Описывает, что требуется для поддержки выделения синтаксиса исходного кода.  
   
- [Проверка точек останова в языковую службу для прежних версий](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
- Описывает, что служба языка может сделать для поддержки проверять точки останова вне отладчика.  
+ [Проверка точек останова в языковой службе прежних версий](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
+ Описывает языковую службу можно сделать для поддержки проверки точки останова вне отладчика.  
   
-## Связанные подразделы  
- [Средство синтаксического анализа языка прежних версий службы и сканера](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)  
- Описывает анализатор и средство чтения, необходимые для реализации любых функций языковой службы, использующей управляемые границы пакета.  
+## <a name="related-sections"></a>Связанные разделы  
+ [Средство синтаксического анализа и сканер языковой службы прежних версий](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)  
+ Описывает средство синтаксического анализа и проверки, которые необходимы для реализации всех функций службы языка, которая использует платформы управляемых пакетов.  
   
- [Реализация службы языка](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
- Описывает, что необходимо для реализующего службу языка с помощью MPF.  
+ [Реализация службы языка для прежних версий](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
+ Описывает требования для реализации языковую службу с помощью MPF.  
   
- [Регистрация службы языка](../../extensibility/internals/registering-a-legacy-language-service1.md)  
- Описаны шаги, которые необходимы, чтобы зарегистрировать службу языка с MPF\-основанная [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ [Регистрация службы языка для прежних версий](../../extensibility/internals/registering-a-legacy-language-service1.md)  
+ Описывает шаги, необходимые для регистрации службы язык на основе MPF с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
  [Использование технологии IntelliSense](../../ide/using-intellisense.md)  
- Объясняет, как IntelliSense выполняет справочника по языку легко получить доступ.  
+ Объясняет, как IntelliSense упрощает справочники по языкам, доступ к данным.  
   
- [Реализация службы языка прежних версий](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
- Предоставляет сведения о том, как использовать управляемые границы пакетов \(MPF\) для ссылки полн\-отличаемую службу языка в управляемом коде.
+ [Реализация службы языка для прежних версий](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
+ Сведения об использовании платформы управляемых пакетов (MPF) для реализации службы полнофункциональный язык в управляемом коде.

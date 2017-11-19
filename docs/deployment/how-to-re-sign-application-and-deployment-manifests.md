@@ -1,53 +1,54 @@
 ---
-title: "Практическое руководство. Повторное подписание манифестов приложения и развертывания | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "развертывание ClickOnce, подписание манифеста"
-  - "развертывание приложений [ClickOnce], подписание манифеста"
-  - "развертывание приложений, подписание манифеста"
-  - "приложения Office, подписание манифеста"
-  - "Office - разработка решений в Visual Studio, подписание манифеста"
+title: "Как: повторной подписи манифестов приложения и развертывания | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- Office applications, signing manifests
+- deploying applications [ClickOnce], signing manifests
+- deploying applications, signing manifests
+- ClickOnce deployment, signing manifests
+- Office development in Visual Studio, signing manifests
 ms.assetid: d53bceb9-4d3b-4c22-b909-8f370e7231fb
-caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: baa3e9310946482a4c7c64fdb619ce612a21dbda
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Практическое руководство. Повторное подписание манифестов приложения и развертывания
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-После внесения изменений в свойства развертывания в манифесте приложений Windows Forms, приложений Windows Presentation Foundation \(xbap\) или решений Office необходимо выполнить повторное подписание манифестов приложения и развертывания с помощью сертификата.  Это позволяет не допустить установки поддельных файлов на компьютерах конечных пользователей.  
+# <a name="how-to-re-sign-application-and-deployment-manifests"></a>Практическое руководство. Повторное подписание манифестов приложения и развертывания
+После внесения изменений в свойства развертывания в манифесте приложения для приложений Windows Forms, приложениях Windows Presentation Foundation (xbap) или решений Office, необходимо заново подписать приложение и манифесты развертывания с сертификат. Этот процесс гарантирует, что измененные злоумышленниками файлы не установлены на компьютерах конечных пользователей.  
   
- Кроме того, повторное подписание манифестов может потребоваться в том случае, если пользователи подписывают манифесты приложения и развертывания своими сертификатами.  
+ Другой сценарий, где могут заново подписывать манифесты при клиентам необходимо подписать приложение и манифесты развертывания своим собственным сертификатом.  
   
-## Повторное подписание манифестов приложения и развертывания  
- Эта процедура предполагает, что в файл манифеста приложения \(MANIFEST\) уже внесены изменения.  Дополнительные сведения см. в разделе [Практическое руководство. Изменение свойств развертывания](http://msdn.microsoft.com/ru-ru/66052a3a-8127-4964-8147-2477ef5d1472).  
+## <a name="re-signing-the-application-and-deployment-manifests"></a>Повторное подписывание приложения и развертывания манифестов  
+ Эта процедура предполагает, что вы уже внесены изменения в файл манифеста приложения (с расширением MANIFEST). Дополнительные сведения см. в разделе [как: изменить свойства развертывания](http://msdn.microsoft.com/en-us/66052a3a-8127-4964-8147-2477ef5d1472).  
   
-#### Повторное подписание манифестов приложения и развертывания с помощью mage.exe  
+#### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Для повторной подписи приложения и развертывания манифестов с помощью Mage.exe  
   
-1.  Откройте окно **Командная строка Visual Studio**.  
+1.  Откройте **командной строки Visual Studio** окна.  
   
-2.  Измените папки на паки, содержащие файлы манифестов, которые необходимо подписать.  
+2.  Перейдите в папку, содержащую файлы манифеста, которые вы хотите войти.  
   
-3.  Введите следующую команду для подписания файла манифеста приложения.  Замените ManifestFileName именем файла манифеста с расширением.  Замените Certificate относительным или полным путем к файлу сертификата и замените Password паролем сертификата.  
+3.  Введите следующую команду, чтобы подписать файл манифеста приложения. Замените на имя файла манифеста, а также расширение ManifestFileName. Заменить сертификат относительный или полный путь к файлу сертификата и замените пароль пароль для сертификата.  
   
     ```  
     mage -sign ManifestFileName.manifest -CertFile Certificate -Password Password  
     ```  
   
-     Например, для подписания манифеста приложения для надстройки, приложения Windows Form или браузерного приложения Windows Presentation Foundation следует выполнить следующую команду.  Временные сертификаты, созданные Visual Studio, не рекомендуется использовать при развертывании в рабочих средах.  
+     Например можно выполнить следующую команду для подписания манифеста приложения для надстройки, приложение Windows Forms или приложение браузера Windows Presentation Foundation. Временные сертификаты, созданные с помощью Visual Studio для развертывания в рабочей среде не рекомендуется.  
   
     ```  
     mage -sign WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx  
@@ -55,13 +56,13 @@ caps.handback.revision: 17
     mage -sign WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-4.  Введите следующую команду для обновления и подписания файла манифеста развертывания. Для этого замените заполнители, как указано выше.  
+4.  Введите следующую команду, чтобы обновить и подписать файл манифеста развертывания, заменив местозаполнители, как в предыдущем действии.  
   
     ```  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
     ```  
   
-     Например, чтобы обновить и подписать манифест развертывания для надстройки Excel, приложения Windows Forms или приложения браузера Windows Presentation Foundation, следует выполнить следующую команду.  
+     Например можно выполнить следующую команду, чтобы обновить и подписать манифест развертывания для надстройки Excel, в приложении Windows Forms или приложение браузера Windows Presentation Foundation.  
   
     ```  
     mage -update WindowsFormsApplication1.application -appmanifest WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx  
@@ -69,26 +70,26 @@ caps.handback.revision: 17
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  Разработчик также может скопировать основной манифест развертывания \(publish\\*\<appname\>*.application\) в каталог развертывания версий \(publish\\Application Files\\*\<appname\>*\_*\<version\>*\).  
+5.  При необходимости скопируйте основной манифест развертывания (публикация\\*appname*.application) в каталог развертывания версии (файлы publish\Application\\*appname*_ *версии*).  
   
-## Обновление и повторное подписание манифестов приложения и развертывания  
- В этой процедуре предполагается, что в файл манифеста приложения \(MANIFEST\) уже внесены изменения, но существуют другие файлы, которые были обновлены.  При обновлении файлов должен быть также обновлен хэш, представляющий файл.  
+## <a name="updating-and-re-signing-the-application-and-deployment-manifests"></a>Обновление и повторное подписание манифестов приложения и развертывания  
+ Эта процедура предполагает, что вы уже внесены изменения в приложение (с расширением MANIFEST) файл манифеста, однако, существуют другие файлы, которые были обновлены. При обновлении файлов, необходимо также обновить хэш, который представляет файл.  
   
-#### Обновление и повторное подписание манифестов приложения и развертывания с помощью Mage.exe  
+#### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Обновление и повторное подписание приложения и развертывания манифестов с Mage.exe  
   
-1.  Откройте окно **Командная строка Visual Studio**.  
+1.  Откройте **командной строки Visual Studio** окна.  
   
-2.  Измените папки на паки, содержащие файлы манифестов, которые необходимо подписать.  
+2.  Перейдите в папку, содержащую файлы манифеста, которые вы хотите войти.  
   
-3.  Удалите расширение DEPLOY из файлов в папке выходных данных публикации.  
+3.  Удалите расширение .deploy из файлов в папке выходных данных публикации.  
   
-4.  Введите указанную ниже команду, чтобы обновить манифест приложения новыми хэшами для обновленных файлов и подписать файл манифеста приложения.  Замените ManifestFileName именем файла манифеста с расширением.  Замените Certificate относительным или полным путем к файлу сертификата и замените Password паролем сертификата.  
+4.  Введите следующую команду, чтобы обновить манифест приложения с новыми хэшами для обновленных файлов и подписать файл манифеста приложения. Замените на имя файла манифеста, а также расширение ManifestFileName. Заменить сертификат относительный или полный путь к файлу сертификата и замените пароль пароль для сертификата.  
   
     ```  
     mage -update ManifestFileName.manifest -CertFile Certificate -Password Password  
     ```  
   
-     Например, для подписания манифеста приложения для надстройки, приложения Windows Form или браузерного приложения Windows Presentation Foundation следует выполнить следующую команду.  Временные сертификаты, созданные Visual Studio, не рекомендуется использовать при развертывании в рабочих средах.  
+     Например можно выполнить следующую команду для подписания манифеста приложения для надстройки, приложение Windows Forms или приложение браузера Windows Presentation Foundation. Временные сертификаты, созданные с помощью Visual Studio для развертывания в рабочей среде не рекомендуется.  
   
     ```  
     mage -update WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx  
@@ -96,13 +97,13 @@ caps.handback.revision: 17
     mage -update WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  Введите следующую команду для обновления и подписания файла манифеста развертывания. Для этого замените заполнители, как указано выше.  
+5.  Введите следующую команду, чтобы обновить и подписать файл манифеста развертывания, заменив местозаполнители, как в предыдущем действии.  
   
     ```  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
     ```  
   
-     Например, чтобы обновить и подписать манифест развертывания для надстройки Excel, приложения Windows Forms или приложения браузера Windows Presentation Foundation, следует выполнить следующую команду.  
+     Например можно выполнить следующую команду, чтобы обновить и подписать манифест развертывания для надстройки Excel, в приложении Windows Forms или приложение браузера Windows Presentation Foundation.  
   
     ```  
     mage -update WindowsFormsApplication1.application -appmanifest WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx  
@@ -110,18 +111,18 @@ caps.handback.revision: 17
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-6.  Верните в файлы расширение DEPLOY, кроме файлов приложения и манифеста развертывания.  
+6.  Добавьте расширение .deploy файлы, за исключением файлов манифеста приложения и развертывания.  
   
-7.  Разработчик также может скопировать основной манифест развертывания \(publish\\*\<appname\>*.application\) в каталог развертывания версий \(publish\\Application Files\\*\<appname\>*\_*\<version\>*\).  
+7.  При необходимости скопируйте основной манифест развертывания (публикация\\*appname*.application) в каталог развертывания версии (файлы publish\Application\\*appname*_ *версии*).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Управление доступом для кода для приложения ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce и технология Authenticode](../deployment/clickonce-and-authenticode.md)   
  [Общие сведения о развертывании доверенных приложений](../deployment/trusted-application-deployment-overview.md)   
- [Практическое руководство. Включение параметров безопасности ClickOnce\-приложений.](../deployment/how-to-enable-clickonce-security-settings.md)   
- [Практическое руководство. Установка зоны безопасности для ClickOnce\-приложения](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [Практическое руководство. Установка пользовательских разрешений для ClickOnce\-приложения](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Практическое руководство. Отладка ClickOnce\-приложения с ограниченными разрешениями](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [Инструкции: добавление надежного издателя на клиентский компьютер для приложений ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [Практическое руководство. Включение параметров безопасности ClickOnce-приложений.](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Практическое руководство. Установка зоны безопасности для ClickOnce-приложения](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [Практическое руководство. Установка пользовательских разрешений для ClickOnce-приложения](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Практическое руководство. Отладка ClickOnce-приложения с ограниченными разрешениями](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Как: Добавление надежного издателя на клиентский компьютер для приложений ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [Практическое руководство. Настройка поведения запроса о доверии ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

@@ -1,50 +1,49 @@
 ---
-title: "IDiaPropertyStorage::ReadBOOL | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaPropertyStorage::ReadBOOL"
+title: "IDiaPropertyStorage::ReadBOOL | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaPropertyStorage::ReadBOOL
 ms.assetid: ad1822db-4572-48f7-9919-f8137f6701f2
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9632ada4b3e19013f05006d22770c08e83eac5ba
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaPropertyStorage::ReadBOOL
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Считывает `BOOL` значения в наборе свойств.  
+# <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
+Считывает `BOOL` значений в наборе свойств.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT ReadBOOL (   
-   PROPID id,  
-   BOOL*  pValue  
+```C++  
+HRESULT ReadBOOL (   
+   PROPID id,  
+   BOOL*  pValue  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `id`  
- \[in\] идентификатор свойства, которое необходимо считать \(`PROPID` определяет, а в WTypes.h  `ULONG`\).  
+ [in] Идентификатор свойства для чтения (`PROPID` определяется в файле WTypes.h как `ULONG`).  
   
  `pValue`  
- \[out\] возвращает значение свойства.  
+ [out] Возвращает значение свойства.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  Возвращает `E_INVALIDARG` если свойство не принадлежит к типу  `BOOL`.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Возвращает `E_INVALIDARG` Если свойство не имеет типа `BOOL`.  
   
-## Заметки  
- Для реализации последовательных интерпретация результатов `BOOL` значение, так что ненулевые значения будут  `TRUE` и ноль  `FALSE`.  
+## <a name="remarks"></a>Примечания  
+ Согласованные результаты интерпретации `BOOL` чтобы для ненулевых значений являются `TRUE` и ноль является `FALSE`.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

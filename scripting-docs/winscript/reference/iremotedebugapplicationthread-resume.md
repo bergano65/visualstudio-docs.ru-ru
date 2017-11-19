@@ -1,27 +1,30 @@
 ---
-title: "IRemoteDebugApplicationThread::Resume | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IRemoteDebugApplicationThread::Resume | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IRemoteDebugApplicationThread.Resume
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IRemoteDebugApplicationThread::Resume"
+helpviewer_keywords: IRemoteDebugApplicationThread::Resume
 ms.assetid: ac290861-515d-4f06-b452-3b96f54e538c
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 265c0a368fc7f0a5faf3ced3f335b3d7d49c1b24
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IRemoteDebugApplicationThread::Resume
-Возобновляется поток.  
+# <a name="iremotedebugapplicationthreadresume"></a>IRemoteDebugApplicationThread::Resume
+Возобновляет выполнение потока.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT Resume(  
@@ -29,19 +32,19 @@ HRESULT Resume(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pdwCount`  
- \[out\] количество приостановка потока.  
+ [out] Счетчик приостановки для потока.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
- Когда этот метод возобновляет поток, он уменьшает счетчик приостановки.  
+## <a name="remarks"></a>Примечания  
+ Если этот метод возобновляет чтение потока, он уменьшает значение счетчика приостановок.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IRemoteDebugApplicationThread](../../winscript/reference/iremotedebugapplicationthread-interface.md)

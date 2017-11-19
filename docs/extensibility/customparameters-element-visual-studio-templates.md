@@ -1,29 +1,29 @@
 ---
-title: "Элемент CustomParameters (шаблоны Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#CustomParameters"
-helpviewer_keywords: 
-  - "CustomParameters - элемент [шаблоны проектов Visual Studio]"
+title: "Customparameters-элемент (шаблоны Visual Studio) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#CustomParameters
+helpviewer_keywords: CustomParameters element [Visual Studio project templates]
 ms.assetid: cf3efc91-1532-4022-bbb8-a18658424fee
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 90515cfa8a3aea03336aaee5503cb41df4704953
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Элемент CustomParameters (шаблоны Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Группирует пользовательские параметры, которые должны быть переданы для мастера шаблонов, когда мастер замены параметров.  
+# <a name="customparameters-element-visual-studio-templates"></a>Элемент CustomParameters (шаблоны Visual Studio)
+Группирует пользовательские параметры, которые могут быть переданы в мастер шаблонов, когда мастер замены параметров.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <CustomParameters>  
@@ -32,28 +32,28 @@ caps.handback.revision: 6
 </CustomParameters>  
 ```  
   
-## Атрибуты и элементы  
+## <a name="attributes-and-elements"></a>Атрибуты и элементы  
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
-### Атрибуты  
+### <a name="attributes"></a>Атрибуты  
  Отсутствует.  
   
-### Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
-|[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Содержит имя пользовательского параметра и значение для использования при создании проекта или элемента из шаблона. Элемент `CustomParameter` может содержать любое число элементов `CustomParameters`, включая ноль.|  
+|-------------|-----------------|  
+|[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Содержит имя пользовательского параметра и значение, используемое при создании проекта или элемента из шаблона. Элемент `CustomParameter` может содержать любое число элементов `CustomParameters`, включая ноль.|  
   
-### Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
+|-------------|-----------------|  
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Задает содержимое шаблона.|  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
   
-## Пример  
- Приведенный ниже показано, как использовать несколько пользовательских параметров в шаблоне. При создании проекта или элемента из шаблона с использованием следующих пользовательских параметров, все экземпляры `$color1$` и `$color2$` в шаблоне файлы будут заменены с `Red` и `Blue`, соответственно.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как использовать несколько пользовательских параметров в шаблоне. При создании проекта или элемента из шаблона с помощью следующих пользовательских параметров, все экземпляры `$color1$` и `$color2$` в шаблоне файлы будут заменены `Red` и `Blue`соответственно.  
   
 ```  
 <CustomParameters>  
@@ -62,7 +62,7 @@ caps.handback.revision: 6
 </CustomParameters>  
 ```  
   
-## См. также  
- [Элемент CustomParameter \(шаблоны Visual Studio\)](../extensibility/customparameter-element-visual-studio-templates.md)   
+## <a name="see-also"></a>См. также  
+ [Элемент CustomParameter (шаблоны Visual Studio)](../extensibility/customparameter-element-visual-studio-templates.md)   
  [Параметры шаблона](../ide/template-parameters.md)   
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

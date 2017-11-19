@@ -1,67 +1,67 @@
 ---
-title: "REFERENCE_COMPARE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "REFERENCE_COMPARE"
-helpviewer_keywords: 
-  - "Перечисление REFERENCE_COMPARE"
+title: "REFERENCE_COMPARE | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: REFERENCE_COMPARE
+helpviewer_keywords: REFERENCE_COMPARE enumeration
 ms.assetid: e31cdc78-f621-498b-9ca4-aefa790b9f6f
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 07d8b5ade6e80c0629d4f0c3eedee2941f9b95a5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# REFERENCE_COMPARE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="referencecompare"></a>REFERENCE_COMPARE
 Указывает тип сравнения для ссылок.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-enum enum_REFERENCE_COMPARE {   
-   REF_COMPARE_EQUAL        = 0x0001,  
-   REF_COMPARE_LESS_THAN    = 0x0002,  
-   REF_COMPARE_GREATER_THAN = 0x0003  
+```cpp  
+enum enum_REFERENCE_COMPARE {   
+   REF_COMPARE_EQUAL        = 0x0001,  
+   REF_COMPARE_LESS_THAN    = 0x0002,  
+   REF_COMPARE_GREATER_THAN = 0x0003  
 };  
 typedef DWORD REFERENCE_COMPARE;  
 ```  
   
-```c#  
-public enum enum_REFERENCE_COMPARE {   
-   REF_COMPARE_EQUAL        = 0x0001,  
-   REF_COMPARE_LESS_THAN    = 0x0002,  
-   REF_COMPARE_GREATER_THAN = 0x0003  
+```csharp  
+public enum enum_REFERENCE_COMPARE {   
+   REF_COMPARE_EQUAL        = 0x0001,  
+   REF_COMPARE_LESS_THAN    = 0x0002,  
+   REF_COMPARE_GREATER_THAN = 0x0003  
 };  
 ```  
   
-## Члены  
- REF\_COMPARE\_EQUAL  
- Определяет равно сравнению.  
+## <a name="members"></a>Члены  
+ REF_COMPARE_EQUAL  
+ Указывает, обозначающая неравенство.  
   
- REF\_COMPARE\_LESS\_THAN  
- Определяет a сравнение " меньше ".  
+ REF_COMPARE_LESS_THAN  
+ Указывает, меньше-сравнение.  
   
- REF\_COMPARE\_GREATER\_THAN  
- Определяет, а сравнения " больше ".  
+ REF_COMPARE_GREATER_THAN  
+ Указывает, больше-сравнение.  
   
-## Заметки  
- Передается в качестве аргумента [Сравнение](../../../extensibility/debugger/reference/idebugreference2-compare.md) метод.  
+## <a name="remarks"></a>Примечания  
+ Передается в качестве аргумента для [сравнения](../../../extensibility/debugger/reference/idebugreference2-compare.md) метод.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Сравнение](../../../extensibility/debugger/reference/idebugreference2-compare.md)
+ [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md)

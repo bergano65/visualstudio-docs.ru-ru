@@ -1,62 +1,64 @@
 ---
-title: "IDebugComPlusSymbolProvider::ReplaceSymbols | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "ReplaceSymbols"
-  - "IDebugComPlusSymbolProvider::ReplaceSymbols"
+title: "IDebugComPlusSymbolProvider::ReplaceSymbols | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- ReplaceSymbols
+- IDebugComPlusSymbolProvider::ReplaceSymbols
 ms.assetid: 82fbc8db-c4b1-432f-bec9-1a9dc09570be
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f4afd217521e19468db984d085fc55b568e891ce
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider::ReplaceSymbols
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Заменяет текущий символы отладки с этими в указанном потоке данных.  
+# <a name="idebugcomplussymbolproviderreplacesymbols"></a>IDebugComPlusSymbolProvider::ReplaceSymbols
+Заменяет текущий отладочных символов из указанного потока данных.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT ReplaceSymbols(  
-   ULONG32  ulAppDomainID,  
-   GUID     guidModule,  
-   IStream* pStream  
+   ULONG32  ulAppDomainID,  
+   GUID     guidModule,  
+   IStream* pStream  
 );  
 ```  
   
-```c#  
+```csharp  
 int ReplaceSymbols(  
-   uint    ulAppDomainID,  
-   Guid    guidModule,  
-   IStream pStream  
+   uint    ulAppDomainID,  
+   Guid    guidModule,  
+   IStream pStream  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ulAppDomainID`  
- \[in\] идентификатор домена приложения.  
+ [in] Идентификатор домена приложения.  
   
  `guidModule`  
- \[in\] уникальный идентификатор модуля.  
+ [in] Уникальный идентификатор модуля.  
   
  `pStream`  
- \[in\] поток данных, который содержит новые символы.  
+ [in] Поток данных, содержащий новые символы.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Пример  
- В следующем примере показано, как реализовать этот метод, a **CDebugSymbolProvider** объект, предоставляющий  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейса.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::ReplaceSymbols(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  
@@ -79,5 +81,5 @@ Error:
 }  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

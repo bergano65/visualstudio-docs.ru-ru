@@ -1,3 +1,3 @@
-Поддерживается в следующем режиме документов: стандартный режим Internet Explorer 11. Также поддерживается в приложениях Магазина \(Windows 8,1 и Windows Phone 8.1\). См. [Сведения о версии](../../../javascript/reference/javascript-version-information.md).  
+Поддерживается в следующем режиме документов: стандартный режим Internet Explorer 11. Также поддерживается в приложениях Магазина (Windows 8,1 и Windows Phone 8.1). См. [Сведения о версии](../../../javascript/reference/javascript-version-information.md).  
   
  Не поддерживается в следующих режимах документов: случайный режим, стандартный режим Internet Explorer 6, стандартный режим Internet Explorer 7, стандартный режим Internet Explorer 8, стандартный режим Internet Explorer 9, стандартный режим Internet Explorer 10. Не поддерживается в Windows 8.

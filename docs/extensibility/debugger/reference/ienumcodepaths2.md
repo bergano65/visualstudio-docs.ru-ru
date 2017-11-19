@@ -1,60 +1,60 @@
 ---
-title: "IEnumCodePaths2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumCodePaths2"
-helpviewer_keywords: 
-  - "Интерфейс IEnumCodePaths2"
+title: "IEnumCodePaths2 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumCodePaths2
+helpviewer_keywords: IEnumCodePaths2 interface
 ms.assetid: 17ec9f9e-dc06-4532-b5db-da52efcc8630
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a9c27084032e0492b1110b1a085ded4f8e556433
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumCodePaths2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="ienumcodepaths2"></a>IEnumCodePaths2
 Этот интерфейс представляет список путей кода.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IEnumCodePaths2 : IUnknown  
 ```  
   
-## Примечания по реализации  
- Отладчик \(DE\) реализует этот интерфейс, чтобы представлять список путей кода.  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
+ Модуль отладки (DE) реализует этот интерфейс для представления списка путей кода.  
   
-## Замечания для вызывающих объектов  
- Вызов [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) получить этот интерфейс.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Вызовите [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) для получения этого интерфейса.  
   
-## Методы в том порядке Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IEnumCodePaths2`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[Далее](../../../extensibility/debugger/reference/ienumcodepaths2-next.md)|Извлекает заданное количество путей кода в последовательности перечисления.|  
-|[Пропустить](../../../extensibility/debugger/reference/ienumcodepaths2-skip.md)|Пропустить указанное количество путей кода в последовательности перечисления.|  
-|[Сбросить](../../../extensibility/debugger/reference/ienumcodepaths2-reset.md)|Сбросить последовательность перечисления в начало.|  
-|[Клонировать](../../../extensibility/debugger/reference/ienumcodepaths2-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|  
-|[GetCount](../Topic/IEnumCodePaths2::GetCount.md)|Возвращает количество путей кода в перечислителе.|  
+|------------|-----------------|  
+|[Вперед](../../../extensibility/debugger/reference/ienumcodepaths2-next.md)|Извлекает указанное число путей кода в последовательности перечисления.|  
+|[Skip](../../../extensibility/debugger/reference/ienumcodepaths2-skip.md)|Пропускает указанное число путей кода в последовательности перечисления.|  
+|[Сброс](../../../extensibility/debugger/reference/ienumcodepaths2-reset.md)|Сбрасывает последовательность перечисления в начало.|  
+|[Клон](../../../extensibility/debugger/reference/ienumcodepaths2-clone.md)|Создает перечислитель, с тем же состоянием, как у текущего перечислителя.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumcodepaths2-getcount.md)|Возвращает количество путей кода в перечислителе.|  
   
-## Заметки  
- Путь кода представляет точку разветвления или вызов функции в программе.  Список путей кода представляет путь, с помощью которого выполнение кода принимало.  
+## <a name="remarks"></a>Примечания  
+ Пути к коду представляет ветви точки или вызов функции в программе. Список путей кода представляет собой путь, через который заняло выполнение кода.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
- [Базовых интерфейсов](../../../extensibility/debugger/reference/core-interfaces.md)
+## <a name="see-also"></a>См. также  
+ [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)

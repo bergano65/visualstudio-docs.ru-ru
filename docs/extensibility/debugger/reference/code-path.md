@@ -1,62 +1,62 @@
 ---
-title: "CODE_PATH | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CODE_PATH"
-helpviewer_keywords: 
-  - "Структура CODE_PATH"
+title: "CODE_PATH | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: CODE_PATH
+helpviewer_keywords: CODE_PATH structure
 ms.assetid: 2d4b2890-4c9d-47e1-83c0-df9c6436427f
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: aad85bd41537073a54b319b2830ea621fd4bece4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# CODE_PATH
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Описание метода или функции.  
+# <a name="codepath"></a>CODE_PATH
+Описывает вызов метода или функции.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-typedef struct tagCODE_PATH {   
-   BSTR                bstrName;  
-   IDebugCodeContext2* pCode;  
+```cpp  
+typedef struct tagCODE_PATH {   
+   BSTR                bstrName;  
+   IDebugCodeContext2* pCode;  
 } CODE_PATH;  
 ```  
   
-```c#  
+```csharp  
 public struct CODE_PATH {  
    public string            bstrName;  
    public IDebugCodeContext pCode;  
 }  
 ```  
   
-## Члены  
+## <a name="members"></a>Члены  
  bstrName  
  Имя пути кода.  
   
  pCode  
- IDebugCodeContext2 объект, который определяет, где в коде для захода в функцию.  
+ [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , определяющий в код, шаг с заходом в функцию.  
   
-## Заметки  
- Эта структура используется для реализации зайдя в функцию.  [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) возвращает все вызовы от текущего расположения в отлаживанными программе.  Эта структура представляет один такой вызов.  
+## <a name="remarks"></a>Примечания  
+ Эта структура используется для реализации, шаг с заходом в функцию. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) возвращает все вызовы от текущей позиции в отлаживаемую программу. Эта структура представляет один вызов.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
  [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)

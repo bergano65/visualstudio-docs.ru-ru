@@ -1,34 +1,36 @@
 ---
-title: "Метод setMilliseconds (Date) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "setMilliseconds"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "миллисекунды"
-  - "setMilliseconds - метод"
+title: "Метод setMilliseconds (Date) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: setMilliseconds
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- milliseconds
+- setMilliseconds method
 ms.assetid: 6c398961-130e-4f60-802f-6c30e1ef4de4
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f0cd339e1352511312ef9a9abf9a7ff02955c986
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод setMilliseconds (Date) (JavaScript)
-Устанавливает значение миллисекунд в объекте `Date`, используя локальное время.  
+# <a name="setmilliseconds-method-date-javascript"></a>Метод setMilliseconds (Date) (JavaScript)
+Устанавливает значение миллисекунд `Date` объекта с помощью локального времени.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
@@ -38,22 +40,22 @@ numMilli
 )   
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `dateObj`  
- Обязательный.  Любой объект `Date`.  
+ Обязательный. Любой объект `Date`.  
   
  `numMilli`  
- Обязательный.  Числовое значение, равное количеству миллисекунд.  
+ Обязательный. Числовое значение, равное количеству миллисекунд.  
   
-## Заметки  
- Чтобы установить значение миллисекунд с использованием универсального времени \(UTC\), используйте метод `setUTCMilliseconds`.  
+## <a name="remarks"></a>Примечания  
+ Чтобы установить значение миллисекунд с помощью общего скоординированного времени (UTC), используйте `setUTCMilliseconds` метод.  
   
- Если значение аргумента `numMilli` превышает 999 или является отрицательным числом, хранящееся значение секунд \(а при необходимости минут, часов и т. д.\) увеличивается соответствующим образом.  
+ Если значение `numMilli` превышает 999 или является отрицательным числом, увеличивается число секунд (минуты, часы и так далее, при необходимости) требуемого.  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере показано использование метода `setMilliseconds`.  
   
-```javascript  
+```JavaScript  
 function SetMSecDemo(nmsec){  
    var d, s;                    // Declare variables.  
    d = new Date();              // Create Date object.  
@@ -66,12 +68,12 @@ function SetMSecDemo(nmsec){
 }  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Относится к**: [Объект Date](../../javascript/reference/date-object-javascript.md)  
+ **Применимо к**: [Date Object](../../javascript/reference/date-object-javascript.md)  
   
-## См. также  
- [Метод getMilliseconds \(Date\)](../../javascript/reference/getmilliseconds-method-date-javascript.md)   
- [Метод getUTCMilliseconds \(Date\)](../../javascript/reference/getutcmilliseconds-method-date-javascript.md)   
- [Метод setUTCMilliseconds \(Date\)](../../javascript/reference/setutcmilliseconds-method-date-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Метод getMilliseconds (Date)](../../javascript/reference/getmilliseconds-method-date-javascript.md)   
+ [Метод getUTCMilliseconds (Date)](../../javascript/reference/getutcmilliseconds-method-date-javascript.md)   
+ [Метод setUTCMilliseconds (Date)](../../javascript/reference/setutcmilliseconds-method-date-javascript.md)

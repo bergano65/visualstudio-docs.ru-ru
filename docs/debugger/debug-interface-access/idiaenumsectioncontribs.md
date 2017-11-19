@@ -1,57 +1,56 @@
 ---
-title: "IDiaEnumSectionContribs | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumSectionContribs - интерфейс"
+title: "IDiaEnumSectionContribs | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumSectionContribs interface
 ms.assetid: 0d6c0632-310f-4a99-8921-58149a1817e3
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 38c73680435816d044c363f55193fba64b33ee44
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumSectionContribs
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Перечисляет различные вклады раздела, содержащихся в источнике данных.  
+# <a name="idiaenumsectioncontribs"></a>IDiaEnumSectionContribs
+Перечисляет различные раздел материалов, содержащиеся в источнике данных.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
-IDiaEnumSectionContribs : IUnknown  
+IDiaEnumSectionContribs : IUnknown  
 ```  
   
-## Методы в том порядке Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDiaEnumSectionContribs`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[IDiaEnumSectionContribs::get\_\_NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|Извлекает [интерфейс IEnumVARIANT](http://msdn.microsoft.com/ru-ru/139e3c93-faef-4003-9079-e0e94494db3e) версия данного перечислителя.|  
-|[IDiaEnumSectionContribs::get\_Count](../Topic/IDiaEnumSectionContribs::get_Count.md)|Извлекает число вкладов раздела.|  
-|[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|Извлекает вклады раздела посредством индекса.|  
-|[IDiaEnumSectionContribs::Next](../Topic/IDiaEnumSectionContribs::Next.md)|Извлекает заданное количество вкладов раздела в последовательности перечисления.|  
-|[IDiaEnumSectionContribs::Skip](../Topic/IDiaEnumSectionContribs::Skip.md)|Пропустить указанное количество вкладов раздела в последовательности перечисления.|  
-|[IDiaEnumSectionContribs::Reset](../../debugger/debug-interface-access/idiaenumsectioncontribs-reset.md)|Сбросить последовательность перечисления в начало.|  
-|[IDiaEnumSectionContribs::Clone](../../debugger/debug-interface-access/idiaenumsectioncontribs-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|  
+|------------|-----------------|  
+|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|Извлекает [интерфейса IEnumVARIANT](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) версии этот перечислитель.|  
+|[IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|Возвращает число вклады раздела.|  
+|[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|Извлекает вклады раздел с помощью индекса.|  
+|[IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)|Извлекает указанное число вклады раздела в последовательности перечисления.|  
+|[IDiaEnumSectionContribs::Skip](../../debugger/debug-interface-access/idiaenumsectioncontribs-skip.md)|Пропускает указанное число вклады раздела в последовательности перечисления.|  
+|[IDiaEnumSectionContribs::Reset](../../debugger/debug-interface-access/idiaenumsectioncontribs-reset.md)|Сбрасывает последовательность перечисления в начало.|  
+|[IDiaEnumSectionContribs::Clone](../../debugger/debug-interface-access/idiaenumsectioncontribs-clone.md)|Создает перечислитель, с тем же состоянием, как у текущего перечислителя.|  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
   
-## Примечание для вызывающих объектов  
- Для получения этого интерфейса из [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) метод.  См. пример.  
+## <a name="note-for-callers"></a>Примечание для клиентов  
+ Получить этот интерфейс из [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) метод. Дополнительные сведения см.  
   
-## Пример  
- В этом примере показано, как получить \( `GetEnumSectionContribs` \(функция\) и использует  `ShowSectionContribs` функция\)  `IDiaEnumSectionContribs` интерфейс.  Для более полного примера см. в разделе вкладов использования. [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) интерфейс.  
+## <a name="example"></a>Пример  
+ В этом примере показано, как получить ( `GetEnumSectionContribs` функции) и использовать ( `ShowSectionContribs` функция) `IDiaEnumSectionContribs` интерфейс. Более полный пример использования вклады раздел, в разделе [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) интерфейса.  
   
-```cpp#  
+```C++  
   
       IDiaEnumSectionContribs* GetEnumSectionContribs(IDiaSession *pSession)  
 {  
@@ -101,14 +100,14 @@ void ShowSectionContribs(IDiaSession *pSession)
 }  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: Dia2.h  
   
- Библиотеки: diaguids.lib  
+ Библиотека: diaguids.lib  
   
- Библиотеки DLL: msdia80.dll  
+ Библиотека DLL: msdia80.dll  
   
-## См. также  
- [Интерфейсы \(SDK для доступа к интерфейсу отладки\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>См. также  
+ [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

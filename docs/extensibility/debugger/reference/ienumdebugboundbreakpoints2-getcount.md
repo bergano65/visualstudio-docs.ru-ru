@@ -1,51 +1,51 @@
 ---
-title: "IEnumDebugBoundBreakpoints2::GetCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugBoundBreakpoints2::GetCount"
-helpviewer_keywords: 
-  - "IEnumDebugBoundBreakpoints2::GetCount"
+title: "IEnumDebugBoundBreakpoints2::GetCount | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugBoundBreakpoints2::GetCount
+helpviewer_keywords: IEnumDebugBoundBreakpoints2::GetCount
 ms.assetid: 5a572eeb-beb7-4fc7-8259-792d277069be
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 14645f65151c085e2934916c5c1b7b5dea135668
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugBoundBreakpoints2::GetCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Получает число элементов в перечислении.  
+# <a name="ienumdebugboundbreakpoints2getcount"></a>IEnumDebugBoundBreakpoints2::GetCount
+Возвращает число элементов в перечислении.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT GetCount(  
-   ULONG* pcelt  
+   ULONG* pcelt  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetCount(  
-   out uint pcelt  
+   out uint pcelt  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pcelt`  
- \[out\] возвращает число элементов в перечислении.  
+ [out] Возвращает число элементов в перечислении.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Этот метод не является частью привычного интерфейса перечисления модели COM, который указывает на то, что только `Next`"  `Clone`"  `Skip`и  `Reset` необходимость методов ссылкой его.  
+## <a name="remarks"></a>Примечания  
+ Этот метод не является частью обычной интерфейс перечисления COM, который указывает, что только `Next`, `Clone`, `Skip`, и `Reset` методы должны быть реализованы.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)

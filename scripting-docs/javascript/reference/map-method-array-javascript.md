@@ -1,58 +1,61 @@
 ---
-title: "Метод map (Array) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "массивы [JavaScript], map - метод"
-  - "map - метод [JavaScript]"
+title: "Метод Map (Array) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- map method [JavaScript]
+- arrays [JavaScript], map method
 ms.assetid: 500dc4f8-d73d-4a28-a5b8-c9bd5674ea36
-caps.latest.revision: 20
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 609d9c88000a7a30fe8edc03b52df032f7d19ba9
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод map (Array) (JavaScript)
+# <a name="map-method-array-javascript"></a>Метод map (Array) (JavaScript)
 Вызывает заданную функцию обратного вызова для каждого элемента массива и возвращает массив, содержащий результаты.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 array1.map(callbackfn[, thisArg])  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
   
 |Параметр|Определение|  
-|--------------|-----------------|  
-|`array1`|Обязательный.  Объект массива.|  
-|`callbackfn`|Обязательный.  Функция, которая принимает до 3 аргументов.  Метод `map` вызывает функцию `callbackfn` по одному разу для каждого элемента массива.|  
-|`thisArg`|Необязательный.  Объект, на который может ссылаться ключевое слово `this` в функции `callbackfn`.  Если параметр `thisArg` опущен, в качестве значения `this` используется `undefined`.|  
+|---------------|----------------|  
+|`array1`|Обязательный. Объект массива.|  
+|`callbackfn`|Обязательный. Функция, которая принимает до 3 аргументов. Метод `map` вызывает функцию `callbackfn` по одному разу для каждого элемента массива.|  
+|`thisArg`|Необязательно. Объект, на который может ссылаться ключевое слово `this` в функции `callbackfn`. Если параметр `thisArg` опущен, в качестве значения `undefined` используется `this`.|  
   
-## Возвращаемое значение  
+## <a name="return-value"></a>Возвращаемое значение  
  Новый массив, в котором каждый элемент — возвращаемое значение функции обратного вызова для связанного исходного элемента массива.  
   
-## Исключения  
+## <a name="exceptions"></a>Исключения  
  Если аргумент `callbackfn` не является объектом функции, вызывается исключение `TypeError`.  
   
-## Заметки  
- Метод `map` вызывает функцию `callbackfn` по одному разу для каждого элемента массива в порядке возрастания индекса.  Функция обратного вызова не вызывается для отсутствующих элементов массива.  
+## <a name="remarks"></a>Примечания  
+ Метод `map` вызывает функцию `callbackfn` по одному разу для каждого элемента массива в порядке возрастания индекса. Функция обратного вызова не вызывается для отсутствующих элементов массива.  
   
  Помимо объектов массива, метод `map` может использоваться любым объектом, имеющим свойство `length` и обладающим численно проиндексированными именами свойств.  
   
-## Синтаксис функции обратного вызова  
+## <a name="callback-function-syntax"></a>Синтаксис функции обратного вызова  
  Синтаксис функции обратного вызова выглядит следующим образом:  
   
  `function callbackfn(value, index, array1)`  
@@ -62,27 +65,27 @@ array1.map(callbackfn[, thisArg])
  В следующей таблице перечислены параметры функции обратного вызова.  
   
 |Аргумент обратного вызова|Определение|  
-|-------------------------------|-----------------|  
+|-----------------------|----------------|  
 |`value`|Значение элемента массива.|  
 |`index`|Числовой индекс элемента массива.|  
 |`array1`|Объект массива, содержащий требуемый элемент.|  
   
-## Изменение объекта массива  
+## <a name="modifying-the-array-object"></a>Изменение объекта массива  
  Объект массива может изменяться функцией обратного вызова.  
   
  В следующей таблице описаны результаты изменения объекта массива после запуска метода `map`.  
   
 |Условие после запуска метода `map`|Элемент передается функции обратного вызова?|  
-|----------------------------------------|--------------------------------------------------|  
+|---------------------------------------------|------------------------------------------|  
 |Элемент добавлен за пределами первоначальной длины массива.|Нет.|  
 |Элемент добавлен для заполнения отсутствующего элемента массива.|Да, если этот индекс еще не был передан функции обратного вызова.|  
 |Элемент изменен.|Да, если этот элемент еще не был передан функции обратного вызова.|  
 |Элемент удален из массива.|Нет, если этот элемент не был уже передан функции обратного вызова.|  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере показано использование метода `map`.  
   
-```javascript  
+```JavaScript  
 // Define the callback function.  
 function AreaOfCircle(radius) {  
     var area = Math.PI * (radius * radius);  
@@ -101,10 +104,10 @@ document.write(areas);
 // 314,1257,2827  
 ```  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере показано использование аргумента `thisArg`, задающего объект, на который может ссылаться ключевое слово `this`.  
   
-```javascript  
+```JavaScript  
 // Define an object that contains a divisor property and  
 // a remainder function.  
 var obj = {  
@@ -126,10 +129,10 @@ document.write(result);
 // 6,2,5,0  
 ```  
   
-## Пример  
+## <a name="example"></a>Пример  
  В следующем примере встроенный метод [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] используется как функция обратного вызова.  
   
-```javascript  
+```JavaScript  
 // Apply Math.sqrt(value) to each element in an array.  
 var numbers = [9, 16];  
 var result = numbers.map(Math.sqrt);  
@@ -138,10 +141,10 @@ document.write(result);
 // Output: 3,4  
 ```  
   
-## Пример  
- Метод `map` может быть применен к строке.  Это показано в следующем примере.  
+## <a name="example"></a>Пример  
+ Метод `map` может быть применен к строке. Это показано в следующем примере.  
   
-```javascript  
+```JavaScript  
 // Define the callback function.  
 function threeChars(value, index, str) {  
     // Create a string that contains the previous, current,  
@@ -166,13 +169,13 @@ document.write(result);
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Методы JavaScript](../../javascript/reference/javascript-methods.md)   
  [Объект Array](../../javascript/reference/array-object-javascript.md)   
  [Использование массивов](../../javascript/advanced/using-arrays-javascript.md)   
- [Метод filter \(Array\)](../../javascript/reference/filter-method-array-javascript.md)   
- [Метод forEach \(Array\)](../../javascript/reference/foreach-method-array-javascript.md)   
- [Пример приложения Hilo на JavaScript \(Магазин Windows\)](http://hilojs.codeplex.com/SourceControl/latest)
+ [Метод Filter (Array)](../../javascript/reference/filter-method-array-javascript.md)   
+ [Метод forEach (Array)](../../javascript/reference/foreach-method-array-javascript.md)   
+ [Пример приложения Hilo JavaScript (магазин Windows)](http://hilojs.codeplex.com/SourceControl/latest)

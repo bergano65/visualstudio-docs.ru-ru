@@ -1,56 +1,55 @@
 ---
-title: "IDiaReadExeAtOffsetCallback::ReadExecutableAt | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaReadExeAtOffsetCallback::ReadExecutableAt - метод"
+title: "IDiaReadExeAtOffsetCallback::ReadExecutableAt | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaReadExeAtOffsetCallback::ReadExecutableAt method
 ms.assetid: 30b1cef0-b366-4712-8e89-d21f640964f8
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8cb9ff60968d806cfdee0201746a02483895b0af
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaReadExeAtOffsetCallback::ReadExecutableAt
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Считывает указанное количество байтов, начиная с конкретного смещения из исполняемого файла.  
+# <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
+Считывает указанное число байтов, начиная с заданного смещения из исполняемого файла.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT ReadExecutableAt (   
-   DWORDLONG fileOffset,  
-   DWORD     cbData,  
-   DWORD*    pcbData,  
-   BYTE      data[]  
+```C++  
+HRESULT ReadExecutableAt (   
+   DWORDLONG fileOffset,  
+   DWORD     cbData,  
+   DWORD*    pcbData,  
+   BYTE      data[]  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  fileOffset  
- \[in\] смещение в исполняемом файле, с которой начинается чтение.  
+ [in] Смещение в исполняемом файле, должно начаться чтение.  
   
  cbData  
- \[in\] количество байтов, которое необходимо считать.  
+ [in] Число байтов для чтения.  
   
  pcbData  
- \[out\] возвращает число считанных байтов.  
+ [out] Возвращает число считанных байтов.  
   
- данные \[\]  
- \[in, out\] массив, который заполняется с байтами, считанные из файла.  
+ данные]  
+ [in, out] Массив, который заполняется байтов, считанных из файла.  
   
-## Заметки  
- Этот метод вызывается кодом поддержки DIA для загрузки байты данных из исполняемого файла с помощью абсолютное смещение файла.  Этот метод вызывается для поддержки [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) метод.  
+## <a name="remarks"></a>Примечания  
+ Этот метод вызывается код поддержки доступа к интерфейсу отладки для загрузки данных в байтах из исполняемого файла с помощью абсолютный смещение. Этот метод вызывается поддержки [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) метод.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   
  [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

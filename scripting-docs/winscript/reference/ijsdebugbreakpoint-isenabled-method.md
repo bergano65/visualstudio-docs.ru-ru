@@ -1,25 +1,29 @@
 ---
-title: "Метод IJsDebugBreakPoint::IsEnabled | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Метод IJsDebugBreakPoint::IsEnabled | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IJSDebugBreakPoint.IsEnabled
 apilocation: jscript9diag.dll
 ms.assetid: 39b63f49-2a0d-41b7-a2ba-75dcb06251a9
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fb7ab887b8e3442a0c38ea403ad43bdea10cdd66
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод IJsDebugBreakPoint::IsEnabled
-Указывает, включена ли точка останова.  
+# <a name="ijsdebugbreakpointisenabled-method"></a>Метод IJsDebugBreakPoint::IsEnabled
+Определяет, включена ли точка останова.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT IsEnabled(  
@@ -27,17 +31,17 @@ HRESULT IsEnabled(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pIsEnabled`  
- \[out\] Возвращает значение true, если точка останова включена. В противном случае возвращает значение false.  
+ [out] Возвращает значение true, если точка останова включена. в противном случае возвращает значение false.  
   
-## Возвращаемое значение  
+## <a name="return-value"></a>Возвращаемое значение  
   
-## Заметки  
- Возвращает E\_UNEXPECTED, если вызван на удаленной точке останова.  
+## <a name="remarks"></a>Примечания  
+ Возвращает E_UNEXPECTED при вызове в удаленных точках останова.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** jscript9diag.h  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IJsDebugBreakPoint](../../winscript/reference/ijsdebugbreakpoint-interface.md)

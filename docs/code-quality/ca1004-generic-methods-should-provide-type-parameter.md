@@ -1,11 +1,10 @@
 ---
-title: 'CA1004: Generic methods should provide type parameter | Microsoft Docs'
+title: "CA1004: Универсальные методы должны предоставлять параметр типа | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,70 +14,56 @@ helpviewer_keywords:
 - GenericMethodsShouldProvideTypeParameter
 - CA1004
 ms.assetid: 38755f6a-fb45-4bf2-932e-0354ad826499
-caps.latest.revision: 17
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 2b613bdd3f98b142f2e8f9fd4fe2a99560dee4bb
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 01e795c4505b71f337212f85c3946f8800fbc05d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004: Generic methods should provide type parameter
+# <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004: универсальные методы должны предоставлять параметр типа
 |||  
 |-|-|  
 |TypeName|GenericMethodsShouldProvideTypeParameter|  
 |CheckId|CA1004|  
-|Category|Microsoft.Design|  
-|Breaking Change|Breaking|  
+|Категория|Microsoft.Design|  
+|Критическое изменение|Критическое|  
   
-## <a name="cause"></a>Cause  
- The parameter signature of an externally visible generic method does not contain types that correspond to all the type parameters of the method.  
+## <a name="cause"></a>Причина  
+ Сигнатура параметра универсального видимый извне метод содержит типы, которые соответствуют всех параметров типа метода.  
   
-## <a name="rule-description"></a>Rule Description  
- Inference is how the type argument of a generic method is determined by the type of argument that is passed to the method, instead of by the explicit specification of the type argument. To enable inference, the parameter signature of a generic method must include a parameter that is of the same type as the type parameter for the method. In this case, the type argument does not have to be specified. When you use inference for all type parameters, the syntax for calling generic and nongeneric instance methods is identical. This simplifies the usability of generic methods.  
+## <a name="rule-description"></a>Описание правила  
+ Вывод – это то, как аргумент типа универсального метода определяется по типу аргумента, переданного методу, а не по явному указанию аргумента типа. Чтобы задействовать вывод, сигнатура параметра универсального метода должна включать параметр, тип которого совпадает с параметром типа для метода. В этом случае аргумент типа указывать не обязательно. При использовании вывода для всех параметров типа синтаксис вызова универсальных и неуниверсальных методов экземпляра является одинаковым. Это повышает удобство использования универсальных методов.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, change the design so that the parameter signature contains the same type for each type parameter of the method.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Чтобы устранить нарушение данного правила, измените структуру, чтобы сигнатура параметра содержит тот же тип для каждого параметра типа вызываемого метода.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule. Providing generics in a syntax that is easy to understand and use reduces the time that is required to learn and increases the adoption rate of new libraries.  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ Для этого правила отключать вывод предупреждений не следует. Использование универсальных типов в синтаксисе, который легко понять и использовать, сокращает время, необходимое для обучения и ускоряет адаптацию новых библиотек.  
   
-## <a name="example"></a>Example  
- The following example shows the syntax for calling two generic methods. The type argument for `InferredTypeArgument` is inferred, and the type argument for `NotInferredTypeArgument` must be explicitly specified.  
+## <a name="example"></a>Пример  
+ В следующем примере синтаксис вызова двух универсальных методов. Тип аргумента для `InferredTypeArgument` определяется и тип аргумента для `NotInferredTypeArgument` должна быть указана явно.  
   
- [!code-vb[FxCop.Design.Inference#1](../code-quality/codesnippet/VisualBasic/ca1004-generic-methods-should-provide-type-parameter_1.vb)] [!code-csharp[FxCop.Design.Inference#1](../code-quality/codesnippet/CSharp/ca1004-generic-methods-should-provide-type-parameter_1.cs)]  
+ [!code-vb[FxCop.Design.Inference#1](../code-quality/codesnippet/VisualBasic/ca1004-generic-methods-should-provide-type-parameter_1.vb)]
+ [!code-csharp[FxCop.Design.Inference#1](../code-quality/codesnippet/CSharp/ca1004-generic-methods-should-provide-type-parameter_1.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1005: Avoid excessive parameters on generic types](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)  
+## <a name="related-rules"></a>Связанные правила  
+ [CA1005: не используйте слишком много параметров в универсальных типах](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)  
   
- [CA1010: Collections should implement generic interface](../code-quality/ca1010-collections-should-implement-generic-interface.md)  
+ [CA1010: коллекции должны реализовывать универсальный интерфейс](../code-quality/ca1010-collections-should-implement-generic-interface.md)  
   
- [CA1000: Do not declare static members on generic types](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)  
+ [CA1000: не объявляйте статические элементы в универсальных типах](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)  
   
- [CA1002: Do not expose generic lists](../code-quality/ca1002-do-not-expose-generic-lists.md)  
+ [CA1002: не следует раскрывать универсальные списки](../code-quality/ca1002-do-not-expose-generic-lists.md)  
   
- [CA1006: Do not nest generic types in member signatures](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)  
+ [CA1006: не вкладывайте универсальные типы в сигнатуры членов](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)  
   
- [CA1003: Use generic event handler instances](../code-quality/ca1003-use-generic-event-handler-instances.md)  
+ [CA1003: используйте экземпляры обработчика универсальных событий](../code-quality/ca1003-use-generic-event-handler-instances.md)  
   
- [CA1007: Use generics where appropriate](../code-quality/ca1007-use-generics-where-appropriate.md)  
+ [CA1007: используйте универсальные объекты, если это уместно](../code-quality/ca1007-use-generics-where-appropriate.md)  
   
-## <a name="see-also"></a>See Also  
- [Generics](/dotnet/csharp/programming-guide/generics/index)
+## <a name="see-also"></a>См. также  
+ [Универсальные шаблоны](/dotnet/csharp/programming-guide/generics/index)

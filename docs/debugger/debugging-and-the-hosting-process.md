@@ -1,46 +1,47 @@
 ---
-title: "Отладка и процесс размещения | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "отладка [Visual Studio], ведущий процесс"
-  - "ведущий процесс"
+title: "Отладка и процесс размещения | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugging [Visual Studio], hosting process
+- hosting process
 ms.assetid: d0f0b9a6-2a6e-463d-b6ea-9518ee727933
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 02cdf8b50415a238c2af2735a20fea4ed8c23668
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Отладка и процесс размещения
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-В процессе размещения Visual Studio предусмотрены средства улучшения рабочих характеристик отладчика и новые возможности отладки, например, отладка с частичным доверием и вычисление выражения во время разработки. При необходимости процесс размещения можно отключить. Для получения дополнительной информации см. [Практическое руководство. Отключение главного процесса](../ide/how-to-disable-the-hosting-process.md). В следующих разделах описаны некоторые различия между отладкой с процессом размещения и отладкой без него.  
+# <a name="debugging-and-the-hosting-process"></a>Отладка и процесс размещения
+В процессе размещения Visual Studio предусмотрены средства улучшения рабочих характеристик отладчика и новые возможности отладки, например, отладка с частичным доверием и вычисление выражения во время разработки. При необходимости процесс размещения можно отключить. Для получения дополнительной информации см. [How to: Disable the Hosting Process](../ide/how-to-disable-the-hosting-process.md). В следующих разделах описаны некоторые различия между отладкой с процессом размещения и отладкой без него.  
   
-## Отладка с частичным доверием и модель безопасности Click\-Once  
- Отладка с частичным доверием требует наличия процесса размещения. Если отключить процесс размещения, отладка кода с частичным доверием не будет работать даже в случае, если на странице **Безопасность** окна **Свойства проекта** включена защита в случае частичного доверия. Дополнительные сведения см. в разделах [Практическое руководство. Отключение главного процесса](../ide/how-to-disable-the-hosting-process.md) и [Практическое руководство. Отладка не вполне надежного приложения](../debugger/how-to-debug-a-partial-trust-application.md).  
+## <a name="partial-trust-debugging-and-click-once-security"></a>Отладка с частичным доверием и модель безопасности Click-Once  
+ Отладка с частичным доверием требует наличия процесса размещения. Если отключить процесс размещения, отладка кода с частичным доверием не будет работать даже в случае, если на странице **Безопасность** окна **Свойства проекта**включена защита в случае частичного доверия. Дополнительные сведения см. в разделах [How to: Disable the Hosting Process](../ide/how-to-disable-the-hosting-process.md) и [How to: Debug a Partial Trust Application](../debugger/how-to-debug-a-partial-trust-application.md).  
   
-## Вычисление выражений в процессе разработки  
- Для вычисления выражений во время разработки всегда используется процесс размещения. Отключение процесса размещения в окне **Свойства проекта** отключает вычисление выражений во время разработки для проектов библиотек классов. Для других типов проектов вычисление выражений во время разработки не отключается. При этом Visual Studio запускает реальный исполняемый файл и использует его для вычислений во время разработки в отсутствие процесса размещения. Из\-за этого результаты могут быть разными.  
+## <a name="design-time-expression-evaluation"></a>Вычисление выражений в процессе разработки  
+ Для вычисления выражений во время разработки всегда используется процесс размещения. Отключение процесса размещения в окне **Свойства проекта** отключает вычисление выражений во время разработки для проектов библиотек классов. Для других типов проектов вычисление выражений во время разработки не отключается. При этом Visual Studio запускает реальный исполняемый файл и использует его для вычислений во время разработки в отсутствие процесса размещения. Из-за этого результаты могут быть разными.  
   
-## Различия для AppDomain.CurrentDomain.FriendlyName  
- `AppDomain.CurrentDomain.FriendlyName` возвращает различные результаты в зависимости от того, включен процесс размещения или нет. Если процесс размещения включен, вызов `AppDomain.CurrentDomain.FriendlyName` возвращает *имя\_приложения*`.vhost.exe`. Если процесс размещения выключен, будет возвращено *имя\_приложения*`.exe`.  
+## <a name="appdomaincurrentdomainfriendlyname-differences"></a>Различия для AppDomain.CurrentDomain.FriendlyName  
+ `AppDomain.CurrentDomain.FriendlyName` возвращает различные результаты в зависимости от того, включен процесс размещения или нет. Если процесс размещения включен, вызов `AppDomain.CurrentDomain.FriendlyName` возвращает *имя_приложения*`.vhost.exe`. Если процесс размещения выключен, будет возвращено *имя_приложения*`.exe`.  
   
-## Различия для Assembly.GetCallingAssembly\(\).FullName  
+## <a name="assemblygetcallingassemblyfullname-differences"></a>Различия для Assembly.GetCallingAssembly().FullName  
  `Assembly.GetCallingAssembly().FullName` возвращает различные результаты в зависимости от того, включен процесс размещения или нет. Если процесс размещения включен, вызов `Assembly.GetCallingAssembly().FullName` возвращает `mscorlib`. При вызове `Assembly.GetCallingAssembly().FullName` с отключенным процессом размещения будет возвращено имя приложения.  
   
-## См. также  
- [Главный процесс \(vshost.exe\)](../ide/hosting-process-vshost-exe.md)   
- [Практическое руководство. Отладка не вполне надежного приложения](../debugger/how-to-debug-a-partial-trust-application.md)   
+## <a name="see-also"></a>См. также  
+ [Главный процесс (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
+ [Как: отладка приложений частичного доверия](../debugger/how-to-debug-a-partial-trust-application.md)   
  [Практическое руководство. Отключение главного процесса](../ide/how-to-disable-the-hosting-process.md)

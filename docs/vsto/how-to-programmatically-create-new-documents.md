@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Create New Documents | Microsoft Docs'
+title: "Как: программное создание документов | Документы Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,43 +15,44 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], creating documents
 - documents [Office development in Visual Studio], creating
 ms.assetid: c24bb8a3-1303-438e-9b33-ba8b00b29c3b
-caps.latest.revision: 49
-author: kempb
-ms.author: kempb
+caps.latest.revision: "49"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: f829d68b1d278d22f839b3be458e8c952de81009
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: b1935b7657e7aad612b855ecd4e9c1c8e222c952
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-create-new-documents"></a>How to: Programmatically Create New Documents
-  When you create a document programmatically, the new document is a native <xref:Microsoft.Office.Interop.Word.Document> object. This object does not have the additional events and data binding capabilities of a <xref:Microsoft.Office.Tools.Word.Document> host item. For more information, see [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
+# <a name="how-to-programmatically-create-new-documents"></a>Практическое руководство. Программное создание документов
+  При создании документа программным образом новый документ является собственным объектом <xref:Microsoft.Office.Interop.Word.Document>. Этот объект не имеет дополнительных событий и возможностей привязки данных, которые имеет ведущий элемент <xref:Microsoft.Office.Tools.Word.Document>. Для получения дополнительной информации см. [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- When you develop a document-level project, you cannot programmatically add <xref:Microsoft.Office.Tools.Word.Document> host items to your project. In a VSTO Add-in project, you can convert any <xref:Microsoft.Office.Interop.Word.Document> object to a <xref:Microsoft.Office.Tools.Word.Document> host item at run time. For more information, see [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ При разработке проекта на уровне документа добавлять ведущие элементы <xref:Microsoft.Office.Tools.Word.Document> в проект программным образом нельзя. В проекте надстройки VSTO любой объект <xref:Microsoft.Office.Interop.Word.Document> можно преобразовать в ведущий элемент <xref:Microsoft.Office.Tools.Word.Document> во время выполнения. Дополнительные сведения см. в разделе [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
-### <a name="to-create-a-new-document-based-on-the-normal-template"></a>To create a new document based on the Normal template  
+### <a name="to-create-a-new-document-based-on-the-normal-template"></a>Создание нового документа на основе шаблона «Обычный»  
   
--   Use the <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> method of the <xref:Microsoft.Office.Interop.Word.Documents> collection to create a new document based on the Normal template. To use this code example, run it from the `ThisDocument` or `ThisAddIn` class in your project.  
+-   Для создания нового документа на основе шаблона «Обычный» используйте метод <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> коллекции <xref:Microsoft.Office.Interop.Word.Documents>. Чтобы использовать этот пример кода, запустите его из класса `ThisDocument` или `ThisAddIn` в своем проекте.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#1)]  [!code-csharp[Trin_VstcoreWordAutomation#1](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#1)]  
+     [!code-vb[Trin_VstcoreWordAutomation#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#1)]
+     [!code-csharp[Trin_VstcoreWordAutomation#1](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#1)]  
   
-## <a name="using-custom-templates"></a>Using Custom Templates  
- The <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> method has an optional *Template* argument to create a new document based on a template other than the Normal template. You must supply the file name and fully qualified path of the template.  
+## <a name="using-custom-templates"></a>Использование пользовательских шаблонов  
+ <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> Метод имеет необязательный *шаблона* аргумент для создания нового документа на основе шаблона, отличного от обычного шаблона. Необходимо указать имя файла и полный путь к шаблону.  
   
-#### <a name="to-create-a-new-document-based-on-a-custom-template"></a>To create a new document based on a custom template  
+#### <a name="to-create-a-new-document-based-on-a-custom-template"></a>Создание нового документа на основе пользовательского шаблона  
   
--   Call the <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> method of the <xref:Microsoft.Office.Interop.Word.Documents> collection and specify the path to the template. To use this code example, run it from the `ThisDocument` or `ThisAddIn` class in your project.  
+-   Вызовите метод <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> коллекции <xref:Microsoft.Office.Interop.Word.Documents> и укажите путь к шаблону. Чтобы использовать этот пример кода, запустите его из класса `ThisDocument` или `ThisAddIn` в своем проекте.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#2)]  [!code-csharp[Trin_VstcoreWordAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#2)]  
+     [!code-vb[Trin_VstcoreWordAutomation#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#2)]
+     [!code-csharp[Trin_VstcoreWordAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#2)]  
   
-## <a name="see-also"></a>See Also  
- [How to: Programmatically Open Existing Documents](../vsto/how-to-programmatically-open-existing-documents.md)   
+## <a name="see-also"></a>См. также  
+ [Как: Открытие существующих документов](../vsto/how-to-programmatically-open-existing-documents.md)   
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
  [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
+ [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

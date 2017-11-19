@@ -1,48 +1,48 @@
 ---
-title: "IDebugCoreServer2::GetMachineName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCoreServer2::GetName"
-helpviewer_keywords: 
-  - "IDebugCoreServer2::GetName"
+title: "IDebugCoreServer2::GetMachineName | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCoreServer2::GetName
+helpviewer_keywords: IDebugCoreServer2::GetName
 ms.assetid: 693bd794-7215-4f07-8651-b57366d39953
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d44fa397423d4b7c50f3eac0ae860e4c84cc938a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCoreServer2::GetMachineName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Получает имя компьютера, основной сервер запущен.  
+# <a name="idebugcoreserver2getmachinename"></a>IDebugCoreServer2::GetMachineName
+Возвращает имя компьютера, основной сервер, на котором выполняется.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetName(   
-   BSTR* pbstrName  
+```cpp  
+HRESULT GetName(   
+   BSTR* pbstrName  
 );  
 ```  
   
-```c#  
-int GetName(   
-   out string pbstrName  
+```csharp  
+int GetName(   
+   out string pbstrName  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pbstrName`  
- \[out\] возвращает строку, содержащую имя компьютера.  
+ [out] Возвращает строку, содержащую имя компьютера.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

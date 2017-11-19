@@ -1,56 +1,57 @@
 ---
-title: "IDebugBreakpointChecksumRequest2::GetChecksum | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugBreakpointChecksumRequest2::GetChecksum"
+title: "IDebugBreakpointChecksumRequest2::GetChecksum | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugBreakpointChecksumRequest2::GetChecksum
 ms.assetid: ec434882-e5c0-4d76-a58b-22c260d8626e
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 98ffcebd4070f86ff065e9eb3e4a1b06493cab20
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBreakpointChecksumRequest2::GetChecksum
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Извлекает контрольная сумма документа для запроса точки останова заданного уникальный идентификатор алгоритма контрольной суммы.  
+# <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
+Возвращает контрольную сумму документа для запроса останова Получает уникальный идентификатор алгоритма подсчета контрольной суммы для использования.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT GetChecksum(   
-   REFGUID        guidAlgorithm,  
-   CHECKSUM_DATA *pChecksumData  
+   REFGUID        guidAlgorithm,  
+   CHECKSUM_DATA *pChecksumData  
 );  
 ```  
   
-```c#  
+```csharp  
 public int GetChecksum(   
-   ref Guid               guidAlgorithm,  
-   out enum_CHECKSUM_DATA pChecksumData  
+   ref Guid               guidAlgorithm,  
+   out enum_CHECKSUM_DATA pChecksumData  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `guidAlgorithm`  
- \[in\] уникальный идентификатор алгоритма контрольной суммы.  
+ [in] Уникальный идентификатор алгоритма подсчета контрольной суммы.  
   
  `pChecksumData`  
- \[out\] контрольная сумма документа для запроса точки останова.  
+ [out] Контрольная сумма документа для запроса точки останова.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Пример  
- В следующем примере показана функция, которая проверяет, соответствует ли контрольная сумма документа, который должен быть привязанным, по одному из пользовательского интерфейса.  
+## <a name="example"></a>Пример  
+ В следующем примере показано функцию, которая проверяет, соответствует ли контрольная сумма документ, в котором собирается привязываться, один из пользовательского интерфейса.  
   
-```cpp#  
+```cpp  
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)  
 {  
     bool fRet = false;  
@@ -102,5 +103,5 @@ bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCo
 }  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)

@@ -1,25 +1,29 @@
 ---
-title: "Метод IJsDebugFrame::GetName | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Метод IJsDebugFrame::GetName | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IJsDebugFrame.GetName
 apilocation: jscript9diag.dll
 ms.assetid: 9d43f6d9-e424-4168-aa32-1401153c185c
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 34bb58444a30926ac558ca63a3a7ffff4ed5ca50
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод IJsDebugFrame::GetName
-Возвращает понятное имя кадра стека.  
+# <a name="ijsdebugframegetname-method"></a>Метод IJsDebugFrame::GetName
+Получает понятное имя кадра стека.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT GetName(  
@@ -27,14 +31,14 @@ HRESULT GetName(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pName`  
- \[out\] Имя кадра стека.  
+ [out] Имя кадра стека.  
   
-## Возвращаемое значение  
+## <a name="return-value"></a>Возвращаемое значение  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** jscript9diag.h  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IJsDebugFrame](../../winscript/reference/ijsdebugframe-interface.md)

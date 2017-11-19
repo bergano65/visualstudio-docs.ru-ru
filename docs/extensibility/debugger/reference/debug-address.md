@@ -1,87 +1,87 @@
 ---
-title: "DEBUG_ADDRESS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DEBUG_ADDRESS"
-helpviewer_keywords: 
-  - "Структура DEBUG_ADDRESS"
+title: "DEBUG_ADDRESS | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: DEBUG_ADDRESS
+helpviewer_keywords: DEBUG_ADDRESS structure
 ms.assetid: 79f5e765-9aac-4b6e-82ef-bed88095e9ba
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a112e8b8d2204259fbd3ea003aef957a8c713abf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# DEBUG_ADDRESS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="debugaddress"></a>DEBUG_ADDRESS
 Эта структура представляет адрес.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
 typedef struct _tagDEBUG_ADDRESS {  
-   ULONG32             ulAppDomainID;  
-   GUID                guidModule;  
-   _mdToken            tokClass;  
-   DEBUG_ADDRESS_UNION addr;  
+   ULONG32             ulAppDomainID;  
+   GUID                guidModule;  
+   _mdToken            tokClass;  
+   DEBUG_ADDRESS_UNION addr;  
 } DEBUG_ADDRESS;  
 ```  
   
-```c#  
+```csharp  
 public struct DEBUG_ADDRESS {  
-   public uint                ulAppDomainID;  
-   public Guid                guidModule;  
-   public int                 tokClass;  
-   public DEBUG_ADDRESS_UNION addr;  
+   public uint                ulAppDomainID;  
+   public Guid                guidModule;  
+   public int                 tokClass;  
+   public DEBUG_ADDRESS_UNION addr;  
 }  
 ```  
   
-## Термины  
+## <a name="terms"></a>Термины  
  ulAppDomainID  
- Идентификатор процесса  
+ Идентификатор процесса.  
   
  guidModule  
  Идентификатор GUID модуля, содержащего этот адрес.  
   
  tokClass  
- Токен, задав класс или тип адреса.  
+ Токен, определение класса или типа этого адреса.  
   
 > [!NOTE]
->  Это значение поставщику символов и поэтому не имеет смысл смысл как общий, отличный от идентификатора для типа класса.  
+>  Это значение относится к поставщику символ и таким образом не имеет общие значения отличный от как идентификатор для типа класса.  
   
- addr  
- A [DEBUG\_ADDRESS\_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структура, которая содержит объединение структур, которые описывают отдельные типы адреса.  Значение `addr`.`dwKind` поступает из  [ADDRESS\_KIND](../../../extensibility/debugger/reference/address-kind.md) перечисление, которое объясняет, как интерпретировать соединение.  
+ Addr  
+ Объект [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуры, который содержит объединение структур, которые описывают типы отдельные адреса. Значение `addr`.`dwKind` поступает из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) перечисления, который объясняет, как интерпретировать объединения.  
   
-## Заметки  
- Эта структура передается [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) метод, который требуется заполнить.  
+## <a name="remarks"></a>Примечания  
+ Эта структура передается [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) метод, чтобы быть заполнено.  
   
- **Предупреждение только \[C\+\+\]**  
+ **Предупреждения [C++]**  
   
- If `addr.dwKind` существует  `ADDRESS_KIND_METADATA_LOCAL` и  `addr.addr.addrLocal.pLocal` имеет значение NULL, необходимо вызвать  `Release` указателя токена:  
+ Если `addr.dwKind` — `ADDRESS_KIND_METADATA_LOCAL` и, если `addr.addr.addrLocal.pLocal` не имеет значение null, то необходимо вызвать метод `Release` для маркеров указателя:  
   
 ```  
 if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal != NULL)  
 {  
-    addr.addr.addrLocal.pLocal->Release();  
+    addr.addr.addrLocal.pLocal->Release();  
 }  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: sh.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)   
- [DEBUG\_ADDRESS\_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
- [ADDRESS\_KIND](../../../extensibility/debugger/reference/address-kind.md)
+ [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
+ [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

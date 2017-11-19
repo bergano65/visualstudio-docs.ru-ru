@@ -1,38 +1,40 @@
 ---
-title: "На основе запуска вложения | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "отладчики, запуск"
-  - "отладчики, присоединение к программам"
+title: "На основе запуска вложение | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debug engines, launching
+- debug engines, attaching to programs
 ms.assetid: 362f00ac-1909-4a3a-bacb-c0ceb5549816
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2aa9787ad432e402375680c4e27e433236b13249
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# На основе запуска вложения
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Запуск\-основанное автоматическое вложение в программе.  При запуске процесса размещения программы SDM, запуск\-основанное вложения выполните, аналогично параметрам ручного метода вложения.  Дополнительные сведения см. в разделе [Вложение в программе](../../extensibility/debugger/attaching-to-the-program.md).  
+# <a name="launch-based-attachment"></a>На основе запуска вложения
+На основе запуска вложения к программе выполняется автоматически. При запуске процесса, размещающего программа SDM, вложения на основе запуска следует путь, подобный метод вручную вложения. Сведения см. в разделе [присоединение к программе](../../extensibility/debugger/attaching-to-the-program.md).  
   
-## Вложа процесс  
- Основное различие последовательность событий, за которым следует **Присоединиться** вызов следующим образом:  
+## <a name="the-attaching-process"></a>Присоединение процесса  
+ Основное отличие заключается в последовательность событий после **присоединение** вызвать, как показано ниже:  
   
-1.  Send IDebugEngineCreateEvent2 объект события в SDM.  Дополнительные сведения см. в разделе [Отправлять события](../../extensibility/debugger/sending-events.md).  
+1.  Отправить **IDebugEngineCreateEvent2** SDM объекта события. Дополнительные сведения см. в разделе [отправки событий](../../extensibility/debugger/sending-events.md).  
   
-2.  Вызовите `IDebugProgram2::GetProgramId` метод  **IDebugProgram2** интерфейс, передаваемый  **Присоединиться** метод.  
+2.  Вызовите `IDebugProgram2::GetProgramId` метод **IDebugProgram2** передается интерфейс **присоединение** метод.  
   
-3.  Send **IDebugProgramCreateEvent2** объект события для оповещения SDM, локальное  **IDebugProgram2** объект создан для представления программы с DE.  
+3.  Отправить **IDebugProgramCreateEvent2** объект события для уведомления SDM, локальной **IDebugProgram2** был создан объект, представляющий программу DE.  
   
-4.  Send IDebugThreadCreateEvent2 объект события для оповещения SDM, что новый создания потока для процесса, запустившего.  
+4.  Отправить [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) объект события для уведомления SDM, для процесса, который запускается, создается новый поток.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Отправка необходимых событий](../../extensibility/debugger/sending-the-required-events.md)   
  [Включение программы для отладки](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

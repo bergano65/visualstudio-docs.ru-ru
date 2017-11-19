@@ -1,59 +1,61 @@
 ---
-title: "IDebugComPlusSymbolProvider::UpdateSymbols | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "UpdateSymbols"
-  - "IDebugComPlusSymbolProvider::UpdateSymbols"
+title: "IDebugComPlusSymbolProvider::UpdateSymbols | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- UpdateSymbols
+- IDebugComPlusSymbolProvider::UpdateSymbols
 ms.assetid: d530f6f1-4af2-454b-bab0-02478a8fe81e
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 39101f34ef3d0651ec1671456630f822f217d5b1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider::UpdateSymbols
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Обновляет символы отладки в памяти с этими из указанного потока данных.  
+# <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
+Обновляет символы отладки в памяти из указанного потока данных.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT UpdateSymbols (  
-   ULONG32  ulAppDomainID,  
-   GUID     guidModule,  
-   IStream* pUpdateStream  
+   ULONG32  ulAppDomainID,  
+   GUID     guidModule,  
+   IStream* pUpdateStream  
 );  
 ```  
   
-```c#  
+```csharp  
 int UpdateSymbols (  
-   uint    ulAppDomainID,  
-   Guid    guidModule,  
-   IStream pUpdateStream  
+   uint    ulAppDomainID,  
+   Guid    guidModule,  
+   IStream pUpdateStream  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ulAppDomainID`  
- \[in\] идентификатор домена приложения.  
+ [in] Идентификатор домена приложения.  
   
  `guidModule`  
- \[in\] уникальный идентификатор модуля.  
+ [in] Уникальный идентификатор модуля.  
   
  `pUpdateStream`  
- \[in\] поток данных, который содержит обновленное символов отладки.  
+ [in] Поток данных, содержащий обновленные отладочные символы.  
   
-## Пример  
- В следующем примере показано, как реализовать этот метод, a **CDebugSymbolProvider** объект, предоставляющий  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейса.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::UpdateSymbols(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  
@@ -89,8 +91,8 @@ Error:
 }  
 ```  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

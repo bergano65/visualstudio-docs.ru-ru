@@ -1,46 +1,49 @@
 ---
-title: "IActiveScriptProfilerControl2::PrepareProfilerStop | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "IActiveScriptProfilerControl2::PrepareProfilerStop"
+title: "IActiveScriptProfilerControl2::PrepareProfilerStop | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords: IActiveScriptProfilerControl2::PrepareProfilerStop
 ms.assetid: e43a63bc-c44f-44a8-9db4-29062b9e6a16
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 78078cd874be1d7d3d169be2d3d70e65866be3fd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptProfilerControl2::PrepareProfilerStop
-Уведомляет профилировщик о том, что планируется остановить профилирование всех применимых обработчиков скриптов.  С помощью этого метода можно получить полный стек вызова, если [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] выполняется при остановке профилирования.  
+# <a name="iactivescriptprofilercontrol2prepareprofilerstop"></a>IActiveScriptProfilerControl2::PrepareProfilerStop
+Уведомляет профилировщик о том, что вы собираетесь остановить профилирование на всех применимых обработчиков сценариев. С помощью этого метода, можно получить полный стек вызовов, если [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] выполняется при остановке профилирования.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT PrepareProfilerStop();  
 ```  
   
-#### Параметры  
- Метод не принимает параметры.  
+#### <a name="parameters"></a>Параметры  
+ Метод не принимает никаких параметров.  
   
-## Возвращаемое значение  
- Возвращает значение HRESULT.  Ниже приведены возможные значения:  
+## <a name="return-value"></a>Возвращаемое значение  
+ Возвращает значение HRESULT. Ниже приведены возможные значения.  
   
 |Возвращаемое значение|Значение|  
-|---------------------------|--------------|  
+|------------------|-------------|  
 |`S_OK`|Метод успешно выполнен.|  
-|`E_FAIL`|Профилирование не может быть запуститьо.|  
-|`S_FALSE`|Профилирование было остановитьо, если скрипт не выполнил.|  
-|`ACTIVPROF_E_PROFILER_ABSENT`|Профилирование не включено.|  
+|`E_FAIL`|Профилирование не удалось запустить.|  
+|`S_FALSE`|Профилирование была остановлена, если скрипт не был запущен.|  
+|`ACTIVPROF_E_PROFILER_ABSENT`|Профилирование не включен.|  
   
-## Заметки  
- Вызов `IActiveScriptProfilerControl2::PrepareProfilerStop` гарантирует, что отправитьы события для функций в стеке вызова.  Этот метод должен быть вызван перед остановкой профилирования в обработчике скриптов, на вкладке текущий.  Метод может быть вызван для любого обработчика скриптов.  
+## <a name="remarks"></a>Примечания  
+ Вызов `IActiveScriptProfilerControl2::PrepareProfilerStop` гарантирует, что отправка событий для функций в стеке вызовов. Этот метод должен вызываться перед остановкой профилирования на любой обработчик скриптов, который находится на текущей вкладке. Метод может вызываться для любой обработчик скриптов.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)   
  [Интерфейс IActiveScriptProfilerControl2](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

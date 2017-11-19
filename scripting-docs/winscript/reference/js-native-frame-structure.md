@@ -1,38 +1,39 @@
 ---
-title: "Структура JS_NATIVE_FRAME | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Структура JS_NATIVE_FRAME | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: JS_NATIVE_FRAME
 apilocation: jscript9diag.dll
 ms.assetid: 5afa2ee1-b3e2-47cb-b304-84f96e6fbb14
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c7e93041a6dec767cb3bb11382abfb562068c925
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Структура JS_NATIVE_FRAME
-Предоставляет кадр стека.  
+# <a name="jsnativeframe-structure"></a>Структура JS_NATIVE_FRAME
+Представляет кадр стека.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 typedef struct {  
-    UINT64 InstructionOffset;  
-    UINT64 ReturnOffset;  
-    UINT64 FrameOffset;  
-    UINT64 StackOffset;  
+    UINT64 InstructionOffset;    UINT64 ReturnOffset;    UINT64 FrameOffset;    UINT64 StackOffset;  
 } JS_NATIVE_FRAME;  
 ```  
   
-## Члены  
+## <a name="members"></a>Члены  
  `InstructionOffset`  
- Указатель инструкции.  
+ Указатель инструкций.  
   
  `ReturnOffset`  
  Обратный адрес.  
@@ -43,8 +44,8 @@ typedef struct {
  `StackOffset`  
  Указатель стека.  
   
-## Заметки  
- Структура `JS_NATIVE_FRAME` используется классом `IJsStackFrameEnumerator`.  
+## <a name="remarks"></a>Примечания  
+ `JS_NATIVE_FRAME` Используется структура `IJsStackFrameEnumerator`.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Константы, перечисления и структуры отладчика активных скриптов](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

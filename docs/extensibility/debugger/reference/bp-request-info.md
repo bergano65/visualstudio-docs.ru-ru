@@ -1,111 +1,111 @@
 ---
-title: "BP_REQUEST_INFO | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BP_REQUEST_INFO"
-helpviewer_keywords: 
-  - "Структура BP_REQUEST_INFO"
+title: "BP_REQUEST_INFO | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: BP_REQUEST_INFO
+helpviewer_keywords: BP_REQUEST_INFO structure
 ms.assetid: 42a31412-5b6b-47fe-a762-0c2bc769e1cc
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 64f39aa59d566d85147b953ca8df4930d2a49eca
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# BP_REQUEST_INFO
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Содержит сведения, необходимые для реализации точку останова.  
+# <a name="bprequestinfo"></a>BP_REQUEST_INFO
+Содержит сведения, необходимые для реализации точки останова.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-typedef struct _BP_REQUEST_INFO {  
-   BPREQI_FIELDS   dwFields;  
-   GUID            guidLanguage;  
-   BP_LOCATION     bpLocation;  
-   IDebugProgram2* pProgram;  
-   BSTR            bstrProgramName;  
-   IDebugThread2*  pThread;  
-   BSTR            bstrThreadName;  
-   BP_CONDITION    bpCondition;  
-   BP_PASSCOUNT    bpPassCount;  
-   BP_FLAGS        dwFlags;  
-} BP_REQUEST_INFO;  
+```cpp  
+typedef struct _BP_REQUEST_INFO {  
+   BPREQI_FIELDS   dwFields;  
+   GUID            guidLanguage;  
+   BP_LOCATION     bpLocation;  
+   IDebugProgram2* pProgram;  
+   BSTR            bstrProgramName;  
+   IDebugThread2*  pThread;  
+   BSTR            bstrThreadName;  
+   BP_CONDITION    bpCondition;  
+   BP_PASSCOUNT    bpPassCount;  
+   BP_FLAGS        dwFlags;  
+} BP_REQUEST_INFO;  
 ```  
   
-```c#  
-public struct BP_REQUEST_INFO {  
-   public uint           dwFields;  
-   public Guid           guidLanguage;  
-   public BP_LOCATION    bpLocation;  
-   public IDebugProgram2 pProgram;  
-   public string         bstrProgramName;  
-   public IDebugThread2  pThread;  
-   public string         bstrThreadName;  
-   public BP_CONDITION   bpCondition;  
-   public BP_PASSCOUNT   bpPassCount;  
-   public uint           dwFlags;  
+```csharp  
+public struct BP_REQUEST_INFO {  
+   public uint           dwFields;  
+   public Guid           guidLanguage;  
+   public BP_LOCATION    bpLocation;  
+   public IDebugProgram2 pProgram;  
+   public string         bstrProgramName;  
+   public IDebugThread2  pThread;  
+   public string         bstrThreadName;  
+   public BP_CONDITION   bpCondition;  
+   public BP_PASSCOUNT   bpPassCount;  
+   public uint           dwFlags;  
 };  
 ```  
   
-## Члены  
+## <a name="members"></a>Члены  
  `dwFields`  
- Комбинация из пометит [BPREQI\_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисление, которое определяет, какие поля заполнянны.  
+ Сочетание флагов из [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисления, которое указывает, какие поля заполнены.  
   
  `guidLanguage`  
- Идентификатор GUID языка.  
+ GUID языка.  
   
  `bpLocation`  
- [BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структура, определяющая тип расположения точки останова.  
+ [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуру, которая указывает тип точки останова.  
   
  `pProgram`  
- IDebugProgram2 объект, который представляет приложение, в котором точка останова.  
+ [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий приложение, в котором происходит точки останова.  
   
  `bstrProgramName`  
- Имя приложения, в котором точка останова.  
+ Имя приложения, в котором происходит точки останова.  
   
  `pThread`  
- IDebugThread2 объект, представляющий поток, в котором точка останова.  
+ [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, в котором происходит точки останова.  
   
  `bstrThreadName`  
- Имя потока, в котором точка останова.  
+ Имя потока, в котором происходит точки останова.  
   
  `bpCondition`  
- [BP\_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) структура, которая описывает условия, при которых точка останова сгорит.  
+ [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) структуру, которая описывает условия, при которых точка останова будет срабатывать.  
   
  `bpPassCount`  
- [BP\_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) структура, содержащая данные о количестве передачи точки останова.  
+ [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) структуру, содержащую сведения о подсчете проход точки останова.  
   
  `dwFlags`  
- Комбинация из пометит [BP\_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) перечисление, указывающее флаги точки останова.  
+ Сочетание флагов из [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) перечисления, которое задает флаги для запрошенного точки останова.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
  Эта структура возвращается [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) метод.  
   
- Если необходимо получить идентификатор GUID поставщика обработчика отладки ограничение точки останова или точка трассировки см. в разделе [BP\_REQUEST\_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структура.  
+ Если вам необходимо получить идентификатор GUID поставщика ядра отладки, ограничение точки останова или точки трассировки, см. раздел [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структуры.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)   
- [BPREQI\_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)   
- [BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
+ [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)   
+ [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [BP\_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)   
- [BP\_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)   
- [BP\_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)   
- [BP\_REQUEST\_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)
+ [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)   
+ [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)   
+ [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)   
+ [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

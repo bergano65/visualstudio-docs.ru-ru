@@ -1,11 +1,10 @@
 ---
-title: Inspect Variables in the Autos and Locals Windows | Microsoft Docs
+title: "Отслеживание значений переменных в окнах локальных переменных и видимые | Документы Microsoft"
 ms.custom: H1Hack27Feb2017
 ms.date: 04/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,46 +14,30 @@ helpviewer_keywords:
 - debugger, variable windows
 - debugging [Visual Studio], variable windows
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
-caps.latest.revision: 24
+caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 3cd705d703b3d745c502290422e29b3c6da39ee5
-ms.openlocfilehash: f681301201a4f39e0ad83c6724e0b38d82653b84
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
-
+ms.openlocfilehash: 2504807bd4717ec7f42ed059e7ef4d962c7441e4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Inspect Variables in the Autos and Locals Windows in Visual Studio
-The **Autos** window (while debugging, **CTRL+ALT+V, A**, or **Debug > Windows > Autos**) and the **Locals** window (while debugging, **CTRL+ALT+V, L**, or **Debug > Windows > Locals**) are quite useful when you want to see variable values while you are debugging. The **Locals** window displays variables that are defined in the local  scope, which is generally the function or method that is currently being executed. The **Autos** window displays variables used around the current line (the place where the debugger is stopped). Exactly which variables display in this window is different in different languages. See [What variables appear in the Autos Window?](#bkmk_whatvariables) below.  
+# <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Проверить переменные «видимые» и «локальные» в Visual Studio
+**Видимые** окна (во время отладки, **CTRL + ALT + V, A**, или **Отладка > Windows > видимые**) и **локальные** окна (во время отладки **CTRL + ALT + V, L**, или **Отладка > Windows > локальные**) являются весьма полезен при необходимости для просмотра значений переменных при отладке. В окне **Локальные** отображаются переменные, которые определены в локальной области, которой обычно является функция или метод, выполняемые в текущий момент. В окне **Видимые** отображаются переменные, используемые вокруг текущей строки (места, где остановилось выполнение отладчика). Только переменные, которые будут отображаться в этом окне отличается на разных языках. См. раздел [What variables appear in the Autos Window?](#bkmk_whatvariables) ниже.  
   
-If you need more information about basic debugging, see [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md).  
+Более подробную информацию об основных принципах отладки см. в разделе [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md).  
   
-## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Looking at objects in the Autos and Locals windows  
-Arrays and objects are displayed in the Autos and Locals windows as tree controls. Click on the arrow to the left of the variable name to expand the view to show fields and properties. Here is an example of a [FileStream](http://msdn.microsoft.com/Library/a8737776-e545-4867-91ed-51c7f031fa19) object in the **Locals** window:  
+## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Просмотр объектов в окнах "Видимые" и "Локальные"  
+Массивы и объекты отображаются в окнах "Видимые" и "Локальные" как элементы управления типа "дерево". Щелкните стрелку слева от имени переменной, чтобы развернуть представление и увидеть поля и свойства. Ниже приведен пример объекта [FileStream](http://msdn.microsoft.com/Library/a8737776-e545-4867-91ed-51c7f031fa19) в окне **Локальные** .  
   
-![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
+![Локальные переменные &#45; FileStream](../debugger/media/locals-filestream.png "FileStream локальные переменные")  
   
-## <a name="bkmk_whatvariables"></a> What variables appear in the Autos window?  
- You can use the **Autos** window in C#, Visual Basic, and C++ code. The **Autos** window does not support JavaScript or F#.  
+## <a name="bkmk_whatvariables"></a> Какие переменные отображаются в окне "Видимые"?  
+ Окно **Видимые** можно использовать в коде C#, Visual Basic и C++. Окно **Видимые** не поддерживает JavaScript и F#.  
   
- In C# and Visual Basic, the **Autos** window displays any  variable used on the current or preceding line. For example, if you declare four variables and set them as follows:
+ При использовании C# или Visual Basic в окне **Видимые** отображаются все переменные, используемые в текущей или предыдущей строках. Предположим, что вы объявили четыре переменных и задали их значения следующим образом:
 
 ```CSharp
     public static void Main()
@@ -67,13 +50,13 @@ Arrays and objects are displayed in the Autos and Locals windows as tree control
     }
 ```
 
- If you set a breakpoint on the line `c = 3`; and run the debugger, when execution stops the **Autos** window will look like this:  
+ Если установить точку останова в строке `c = 3`и запустить отладчик, то после остановки выполнения окно **Видимые** будет выглядеть так:  
 
- ![Autos&#45;CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")  
+ ![Видимые-45; C#](../debugger/media/autos-csharp.png "видимые CSharp")  
 
- Note that the value of `c` is 0, because the line `c = 3` has not yet been executed.  
+ Обратите внимание на то, что значение `c` равно 0, так как строка `c = 3` еще не была выполнена.  
 
- In C++ the **Autos** window displays the variables used at least three lines before the current line (the line at which execution is stopped). If you declare six variables:
+ При использовании C++ в окне **Видимые** отображаются переменные, которые используются по крайней мере в трех строках до текущей строки (строки, в которой выполнение остановилось). Предположим, вы объявили шесть переменных:
 
 ```C++
     void main() {
@@ -87,18 +70,18 @@ Arrays and objects are displayed in the Autos and Locals windows as tree control
     }
 ```
 
- If you set a breakpoint on the line `e = 5;` and run the debugger, when execution stops the **Autos** window will look like this:  
+ Если установить точку останова в строке `e = 5;` и запустить отладчик, то после остановки выполнения окно **Видимые** будет выглядеть так:  
   
- ![Autos&#45;Cplus](../debugger/media/autos-cplus.png "Autos-Cplus")  
+ ![Видимые-45; Cplus](../debugger/media/autos-cplus.png "Cplus видимые")  
   
- Note that the variable e is uninitialized because the code on the line `e = 5;` has not yet been executed.  
+ Обратите внимание на то, что переменная не инициализирована, так как код в строке `e = 5;` еще не выполнен.  
   
- You can also see the return values of functions and methods in certain circumstances. See [View return values of method calls](#bkmk_returnValue) below.  
+ При определенных условиях также можно увидеть возвращаемые значения функций и методов. См. раздел [View return values of method calls](#bkmk_returnValue) ниже.  
   
 ##  <a name="bkmk_returnValue"></a> View return values of method calls  
- In .NET and C++ code you can examine return values when you step over or out of a method call. This functionality is useful when the result of a method call is not stored in a local variable, for example when a method is used as a parameter or as a return value of another    method.  
+ В коде .NET и C++ можно просматривать возвращаемые значения при выполнении шага с обходом вызова метода или выходом из него. Эта функция полезна в ситуации, когда результат вызова метода не сохраняется в локальной переменной (например, в случае, когда метод используется в качестве параметра или возвращаемого значения другого метода).  
   
- The following C# code adds the return values of two functions:  
+ Следующий код C# добавляет возвращаемые значения двух функций:  
 
 ```CSharp
 static void Main(string[] args)  
@@ -122,38 +105,37 @@ private static int subtractVars(int i, int j)
 }  
 ```
 
- Set a breakpoint on the `int x = sumVars(a, b) + subtractVars(c, d);` line.  
+ Установите точку останова на строке `int x = sumVars(a, b) + subtractVars(c, d);`.  
   
- Start debugging, and when execution breaks at the first breakpoint, press **F10 (Step Over)**. You should see the following in the **Autos** window:  
+ Начните отладку и, когда выполнение остановится в первой точке останова, нажмите клавишу **F10 (шаг с обходом)**. Окно **Видимые** должно выглядеть так:  
   
  ![AutosReturnValueCSharp2](../debugger/media/autosreturnvaluecsharp2.png "AutosReturnValueCSharp2")  
   
-## <a name="why-are-variable-values-sometimes-red-in-locals-and-autos-windows"></a>Why are variable values sometimes red in Locals and Autos windows?  
-You may notice that the value of a variable is sometimes red in the **Locals** and **Autos** windows. These are variable values that have been changed since the last evaluation. The change could be from a previous debugging session, or because the value was changed in the window.  
+## <a name="why-are-variable-values-sometimes-red-in-locals-and-autos-windows"></a>Почему значения переменных иногда выделяются красным цветом в окнах "Локальные" и "Видимые"?  
+Иногда можно заметить, что значение переменной в окне **Локальные** или **Видимые** выделено красным цветом. Это означает, что значения изменились с момента последнего вычисления. Изменение могло произойти во время предыдущего сеанса отладки или быть внесено в окне.  
   
-## <a name="changing-the-numeric-format-of-a-variable-window"></a>Changing the numeric format of a variable window  
-The default numeric format is decimal, but you can change it to hexadecimal. Right-click inside a **Locals** or **Autos** window and select **Hexadecimal Display**. The change affects all debugger windows.  
+## <a name="changing-the-numeric-format-of-a-variable-window"></a>Изменение числового формата окна переменных  
+По умолчанию используется десятичный числовой формат, но его можно изменить на шестнадцатеричный. Щелкните правой кнопкой мыши в окне **Локальные** или **Видимые** и выберите пункт **Шестнадцатеричный вывод**. Изменение распространяется на все окна отладчика.  
   
-## <a name="editing-a-value-in-a-variable-window"></a>Editing a value in a Variable window  
-You can edit the values of most variables that appear in the **Autos**, **Locals**, **Watch**, and **QuickWatch** windows. For information about **Watch** and **QuickWatch** windows, see [Watch and QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md). Just double-click the value you want to change and add the new the value.  
+## <a name="editing-a-value-in-a-variable-window"></a>Изменение значения в окне переменной  
+Вы можете изменять значения большинства переменных, отображаемых в окнах **Видимые**, **Локальные**, **Контрольные значения**и **быстрая проверка** . Информацию об окнах **Контрольные значения** и **Быстрая проверка** см. в разделе [Watch and QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md). Просто дважды щелкните значение, которое нужно изменить, и введите новое значение.  
   
-You can enter an expression for a value, for example `a + b`. The debugger accepts most valid language expressions.  
+В качестве значения можно ввести выражение, например `a + b`. Отладчик принимает большинство допустимых выражений языка.  
   
-In native C++ code, you might have to qualify the context of a variable name. For more information, see [Context Operator (C++)](../debugger/context-operator-cpp.md).  
+При работе с машинным кодом C++ может потребоваться определить контекст имени переменной. Для получения дополнительной информации см. [Context Operator (C++)](../debugger/context-operator-cpp.md).  
  
-However, you should exercise caution when changing values. Here are some possible issues:  
+Однако при изменении значений следует соблюдать осторожность. Некоторые из возможных причин:  
   
--   Evaluating some expressions can change the value of a variable or otherwise affect the state of your program. For example, evaluating `var1 = ++var2` changes the value of `var1` and `var2`.  
+-   Вычисление некоторых выражений может привести к изменению значения некоторой переменной или иным образом повлиять на состояние программы. Например, вычисление `var1 = ++var2` изменяет значения `var1` и `var2`.  
   
-     Expressions that change data are said to have [side effects](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)), which can produce unexpected results if you are not aware of them. Make sure you understand the consequences of such a change before you make it.  
+     Выражения, которые изменяют данные, — это [выражения с побочными эффектами](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Они могут привести к непредсказуемым результатам, если не учитывать возможные последствия их выполнения. Перед внесением такого изменения нужно оценить его последствия.  
   
--   Editing floating-point values can result in minor inaccuracies because of decimal-to-binary conversion of fractional components. Even a seemingly harmless edit can result in changes to some of the least significant bits in the floating-point variable.  
+-   Изменение значений с плавающей запятой может привести к незначительной погрешности, связанной с преобразованием дробных компонентов из десятичной формы в двоичную. Даже внешне кажущееся безвредным редактирование может привести к изменениям некоторых младших разрядов переменной с плавающей запятой.  
   
-## <a name="changing-the-window-context"></a>Changing the window context  
-You can use the **Debug Location** toolbar to select the desired function, thread, or process, which changes the context for the variable windows. Set a breakpoint and start debugging. (If you do not see this toolbar, you can enable it by clicking in an empty part of the toolbar area. You should see a list of toolbars; select **Debug Location**). When the breakpoint is hit, execution stops and you can see the Debug Location toolbar, which is the bottom row of the following illustration.
+## <a name="changing-the-window-context"></a>Изменение контекста окна  
+Можно использовать **место отладки** инструментов для выбора нужной функции, потока или процесса, который изменяет контекст для окон переменных. Задайте точку останова и начните отладку. (Если эта панель инструментов не отображается, включите ее, щелкнув в пустой области панели инструментов. Должен появиться список панелей инструментов. Выберите панель **Место отладки**). При срабатывании точки останова выполнение останавливается и появляется увидите панели инструментов "Место отладки", который находится в нижней строке на следующем рисунке.
   
 ![DebugLocationToolbar](../debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")   
   
-## <a name="see-also"></a>See Also  
- [Debugger Windows](../debugger/debugger-windows.md)
-
+## <a name="see-also"></a>См. также  
+ [Окна отладчика](../debugger/debugger-windows.md)

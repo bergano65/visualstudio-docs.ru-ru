@@ -1,38 +1,38 @@
 ---
-title: "Перечисление SCRIPTGCTYPE | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Перечисление SCRIPTGCTYPE | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: f289cc7d-2a69-4720-bee0-ea27d054f308
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8d42187cc7467bea9d777f35bb208c4e42cabb31
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Перечисление SCRIPTGCTYPE
-Тип сборки мусора.  Используется в методе [IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md).  
+# <a name="scriptgctype-enumeration"></a>Перечисление SCRIPTGCTYPE
+Тип, для выполнения сборки мусора. Используется в [IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) метод.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-typedef enum tagSCRIPTGCTYPE {  
-    SCRIPTGCTYPE_NORMAL           = 0,  
-    SCRIPTGCTYPE_EXHAUSTIVE       = 1,  
-} SCRIPTGCTYPE;  
-  
+typedef enum tagSCRIPTGCTYPE {    SCRIPTGCTYPE_NORMAL           = 0,    SCRIPTGCTYPE_EXHAUSTIVE       = 1,} SCRIPTGCTYPE;  
 ```  
   
-## Значения перечисления  
+## <a name="enumeration-values"></a>Значения перечисления  
   
 |||  
 |-|-|  
-|SCRIPTGCTYPE\_NORMAL|Сделайте обычную сборки мусора.  Целое число 0.|  
-|SCRIPTGCTYPE\_EXHAUSTIVE|Сделайте исчерпывающую сборки мусора.  Целое число 1.|  
+|SCRIPTGCTYPE_NORMAL|Выполните обычные сборки мусора. Целочисленное значение — 0.|  
+|SCRIPTGCTYPE_EXHAUSTIVE|Сделайте полным сборки мусора. Целочисленное значение-1.|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Константы, перечисления и коды ошибок активных скриптов](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

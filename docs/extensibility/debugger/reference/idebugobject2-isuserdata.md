@@ -1,51 +1,51 @@
 ---
-title: "IDebugObject2::IsUserData | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugObject2::IsUserData"
-helpviewer_keywords: 
-  - "Метод IDebugObject2::IsUserData"
+title: "IDebugObject2::IsUserData | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugObject2::IsUserData
+helpviewer_keywords: IDebugObject2::IsUserData method
 ms.assetid: 6ffa0d0e-f742-496d-acc7-db74c248bc45
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ac758e7e8ce4d288b347b1207883642c920059bb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugObject2::IsUserData
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Определяет, представляет ли объект пользователей.  
+# <a name="idebugobject2isuserdata"></a>IDebugObject2::IsUserData
+Определяет, представляет ли объект пользовательских данных.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-HRESULT IsUserData(  
-   BOOL* pfUser  
+HRESULT IsUserData(  
+   BOOL* pfUser  
 );  
 ```  
   
-```c#  
-int IsUserData(  
-   out int pfUser  
+```csharp  
+int IsUserData(  
+   out int pfUser  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pfUser`  
- \[out\] возвращает ненулевое \(`TRUE`если объект представляет пользователей; ноль \(`FALSE`\), если нет.  
+ [out] Возвращает ненулевое значение (`TRUE`), если объект представляет данные пользователя; ноль (`FALSE`) Если это не так.  
   
-## Возвращаемое значение  
- В случае успеха возвращает значение S\_OK; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Пользователь любой объект, являющийся частью модуля, обозначенного как JustMyCode \(пользователь\-конфигурируемый параметр, который указывает модуль как код пользователя и поэтому видимый в трассировке стека\).  
+## <a name="remarks"></a>Примечания  
+ Данные пользователя является любой объект, который является частью модуля, в качестве JustMyCode (настраивается пользователем параметр, обозначающий модуля, как код пользователя и поэтому видимым в трассировке стека).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

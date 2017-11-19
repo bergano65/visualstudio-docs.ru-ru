@@ -1,53 +1,54 @@
 ---
-title: "Исключение при обработке (SDK для Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "отладка [пакет SDK для отладки], обработка исключений"
+title: "Исключение при обработке (SDK для Visual Studio) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], exception handling
 ms.assetid: 7279dc16-db14-482c-86b8-7b3da5a581d2
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4a0d950de8e9f91232e3526064561a7508c133b4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Исключение при обработке (SDK для Visual Studio)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Далее описывается процесс, который происходит, когда исключения возникают.  
+# <a name="exception-handling-visual-studio-sdk"></a>Исключение при обработке (SDK для Visual Studio)
+Далее описывается процесс, который происходит при возникновении исключения.  
   
-## Процесс обработки ошибок  
+## <a name="exception-handling-process"></a>Процесс обработки исключений  
   
-1.  Если исключение сначала создается, но до обработки обработчиком исключений в отлаживаемом программе, отладчик \(DE\) отправляет IDebugExceptionEvent2 к сеансу отладки \(SDM\) как диспетчер остановки событие.  `IDebugExceptionEvent2` отправляет если только параметры для исключения \(заданного в диалоговом окне исключения в пакете отладки\) определяют, что пользователь хочет остановить на уведомления о первой возможности захвата исключений.  
+1.  Если возникает исключение, но прежде чем он обрабатывается обработчиком исключений в отлаживаемой программы, отладчик (DE) отправляет [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) диспетчеру сеанса отладки (SDM) как событие остановки. `IDebugExceptionEvent2` Отправляется, если только параметры для исключения (указанный в диалоговом окне исключения отладочный пакет) укажите пользователь хочет остановить на уведомления о первом этапе обработки исключений.  
   
-2.  Вызовы SDM [IDebugExceptionEvent2:: GetException](../Topic/IDebugExceptionEvent2::GetException.md) получить свойство исключения.  
+2.  Вызовы SDM [IDebugExceptionEvent2::GetException](../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) для получения свойства исключения.  
   
-3.  Вызовы пакета отладки [IDebugExceptionEvent2:: CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) указать, какие параметры представления пользователю.  
+3.  Вызовы отладки пакета [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) для определения, какие параметры предлагать пользователю.  
   
-4.  Пакет отладки запрашивает пользователя, как обрабатывать исключения, открыв диалоговое окно о первичном исключении.  
+4.  Отладочный пакет запрашивает у пользователя, как обрабатывать исключения, открыв диалоговое окно исключения первого шанса.  
   
-5.  Если пользователь выбирает, чтобы продолжить, то вызовы SDM [IDebugExceptionEvent2:: CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md).  
+5.  Если пользователь решит продолжить, SDM вызывает [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md).  
   
-    -   Если метод возвращает значение S\_OK, то вызовы [IDebugExceptionEvent2:: PassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md).  
+    -   Если метод возвращает значение S_OK, вызывает [IDebugExceptionEvent2::PassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md).  
   
-         \-или\-  
+         -или-  
   
-         Если метод возвращает значение S\_FALSE, ему присваивается отлаживаемой программы второй возможность обработки исключения.  
+         Если метод возвращает значение S_FALSE, программа отлаживаемый получает вторая возможность обработки исключения.  
   
-6.  Если отлаживаемой программы отсутствует обработчик исключения второй вероятность, DE отправляет `IDebugExceptionEvent2` SDM, как к  **EVENT\_SYNC\_STOP**.  
+6.  Если отлаживаемая программа не имеет обработчика исключений вторичных, отправляет DE `IDebugExceptionEvent2` для SDM как **EVENT_SYNC_STOP**.  
   
-7.  Пакет отладки запрашивает пользователя, как обрабатывать исключения, открыв диалоговое окно о первичном исключении.  
+7.  Отладочный пакет запрашивает у пользователя, как обрабатывать исключения, открыв диалоговое окно исключения первого шанса.  
   
-8.  Вызовы пакета отладки [IDebugExceptionEvent2:: CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) указать, какие параметры представления пользователю.  
+8.  Вызовы отладки пакета [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) для определения, какие параметры предлагать пользователю.  
   
-9. Пакет отладки запрашивает пользователя, как обрабатывать исключения, открыв диалоговое окно исключения второй вероятность.  
+9. Отладочный пакет запрашивает у пользователя, как обрабатывать исключения, открыв диалоговое окно исключения вторичных.  
   
-10. Если метод возвращает значение S\_OK, то вызовы `IDebugExceptionEvent2::PassToDebuggee`.  
+10. Если метод возвращает значение S_OK, вызывает `IDebugExceptionEvent2::PassToDebuggee`.  
   
-## См. также  
- [Вызов события отладчика](../../extensibility/debugger/calling-debugger-events.md)
+## <a name="see-also"></a>См. также  
+ [Вызов событий отладчика](../../extensibility/debugger/calling-debugger-events.md)

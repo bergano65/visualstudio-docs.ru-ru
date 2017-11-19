@@ -1,27 +1,30 @@
 ---
-title: "IDebugApplication::SetName | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugApplication::SetName | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugApplication.SetName
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugApplication::SetName"
+helpviewer_keywords: IDebugApplication::SetName
 ms.assetid: 7b0ddc58-6f20-4ce3-9bdf-81a6c1d64256
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ad54c1c9ba950c7f1b98d393bec2bf65c385ec60
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugApplication::SetName
+# <a name="idebugapplicationsetname"></a>IDebugApplication::SetName
 Задает имя приложения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT SetName(  
@@ -29,22 +32,22 @@ HRESULT SetName(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pstrName`  
- \[in\] Имя приложения.  
+ [in] Имя приложения.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
- Имя, предоставляемого этот метод возвращается в последующих вызовах метода `IRemoteDebugApplication::GetName`.  
+## <a name="remarks"></a>Примечания  
+ Имя, указанное для этого метода возвращается в последующих вызовах `IRemoteDebugApplication::GetName` метод.  
   
- Этот метод должен быть вызван перед вызовом метода `IProcessDebugManager::AddApplication`.  
+ Этот метод следует вызывать до вызова метода `IProcessDebugManager::AddApplication` метод.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

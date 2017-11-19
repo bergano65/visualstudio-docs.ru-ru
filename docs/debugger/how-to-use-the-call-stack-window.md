@@ -1,15 +1,13 @@
 ---
-title: View the call stack in the Visual Studio debugger | Microsoft Docs
+title: "Просмотр стека вызовов в отладчике Visual Studio | Документы Microsoft"
 ms.custom: H1Hack27Feb2017
 ms.date: 04/06/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.debug.callstack
+f1_keywords: vs.debug.callstack
 dev_langs:
 - CSharp
 - VB
@@ -29,133 +27,119 @@ helpviewer_keywords:
 - stack, switching stack frames
 - Call Stack window, viewing disassembly code for functions on the call stack
 ms.assetid: 5154a2a1-4729-4dbb-b675-db611a72a731
-caps.latest.revision: 40
+caps.latest.revision: "40"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 83977d96d8e8503565f811608089279cfbef5d05
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
-
+ms.openlocfilehash: fdbc4c62b599ac19ff5bf6b6b0eedf862cc1b77d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>View the call stack and use the Call Stack Window in the Visual Studio debugger
+# <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>Просмотр стека вызовов и использование окна стека вызова в отладчике Visual Studio
 
-By using the **Call Stack** window, you can view the function or procedure calls that are currently on the stack. The **Call Stack** window shows the order in which methods and functions are getting called. The call stack is a good way to examine and understand the execution flow of an app.
+С помощью **стек вызовов** окна, можно просматривать вызовы функций и процедур, которые в данный момент в стеке. **Стек вызовов** окна показан порядок, в котором находятся вызван методы и функции. Стек вызовов является удобным способом проверки и понимать ход выполнения приложения.
   
-When [debugging symbols](#bkmk_symbols) are not available for part of a call stack, the **Call Stack** window might not be able to display correct information for that part of the call stack. If that occurs, the following notation appears:  
+Когда [символы отладки](#bkmk_symbols) недоступны для части стека вызовов, **стек вызовов** окна возможно не удастся отобразить правильные сведения об этой части стека вызовов. Если это происходит, появится следующая запись:  
   
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
 >  [!NOTE]
-> The **Call Stack** window is similar to the Debug perspective in some IDEs like Eclipse. 
+> **Стек вызовов** окна аналогична отладочной перспективы в некоторых интегрированных средах разработки, таких как Eclipse. 
 
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described here, depending on your active settings or edition. To change your settings, select **Import and Export Settings** on the **Tools** menu.  See [Personalizing the IDE](../ide/personalizing-the-visual-studio-ide.md)
+>  Отображаемые диалоговые окна и команды меню могут отличаться от описанных здесь в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите **Импорт и экспорт параметров** на **средства** меню.  В разделе [Персонализация среды IDE](../ide/personalizing-the-visual-studio-ide.md)
   
-## <a name="view-the-call-stack-while-in-the-debugger"></a>View the call stack while in the debugger 
+## <a name="view-the-call-stack-while-in-the-debugger"></a>Просмотр стека вызовов в отладчике 
   
--   While debugging, in the **Debug** menu, select **Windows > Call Stack**.
+-   Во время отладки в **отладки** последовательно выберите пункты **Windows > стек вызовов**.
 
- ![Call Stack Window](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
+ ![Окно стека вызовов](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
-A yellow arrow identifies the stack frame where the execution pointer is currently located. By default, this is the stack frame whose information appears in the source, **Locals**, **Autos**, **Watch**, and **Disassembly** windows. If you want to change the debugger context to another frame on the stack, you can do that by [switching to another stack frame](#bkmk_switch).   
+Желтая стрелка указывает на кадр стека, в котором находится указатель выполнения. По умолчанию это фрейм стека, сведения которого отображаются в источнике, **локальные**, **видимые**, **Контрольные значения**, и **Дизассемблирование** windows . Если вы хотите изменить контекст отладчика на другой кадр стека, это можно сделать с [переключение на другой кадр стека](#bkmk_switch).   
   
-## <a name="display-non-user-code-in-the-call-stack-window"></a>Display non-user code in the Call Stack window  
+## <a name="display-non-user-code-in-the-call-stack-window"></a>Отображение непользовательском коде в окне стека вызовов  
   
--   Right-click the **Call Stack** window and select **Show External Code**.
+-   Щелкните правой кнопкой мыши **стек вызовов** и выберите **Показать внешний код**.
 
-Non-user code is any code that is not shown when [Just My Code](../debugger/just-my-code.md) is enabled. In managed code, non-user code frames are hidden by default. The following notation appears instead of the non-user code frames:  
+Не принадлежащий пользователю код — это любой код, который не отображается, когда [только мой код](../debugger/just-my-code.md) включен. В управляемом коде по умолчанию скрыты кадры непользовательском коде. Следующая запись отображается вместо кадры непользовательском коде:  
   
-**[\<External Code>]**  
+**[\<Внешнего кода >]**  
   
-## <a name="bkmk_switch"></a> Switch to another stack frame (change the debugger context)
+## <a name="bkmk_switch"></a>Переключиться в другой кадр стека (изменение контекста отладчика)
   
-1.  In the **Call Stack** window, right-click the stack frame whose code and data that you want to view.
+1.  В **стек вызовов** окно, щелкните правой кнопкой мыши кадр стека, код и данные которого нужно просмотреть.
 
-    Or, you can double-click a frame in the **Call Stack** window to switch to the selected frame. 
+    Или можно дважды щелкнуть кадр в **стек вызовов** окна Переключение выбранного кадра. 
   
-2.  Select **Switch to Frame**.  
+2.  Выберите **перейти к кадру**.  
   
-     A green arrow with a curly tail appears next to the stack frame you selected. The execution pointer remains in the original frame, which is still marked with the yellow arrow. If you select **Step** or **Continue** from the **Debug** menu, execution will continue in the original frame, not the frame you selected.  
+     Зеленая стрелка с фигурным концом появится рядом с выбранного фрейма стека. Указатель выполнения остается в исходном кадре, который по-прежнему отмечен желтой стрелкой. При выборе **шаг** или **Продолжить** из **отладки** меню, выполнение продолжается в исходном кадре, не с выбранного фрейма.  
   
-## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>View the source code for a function on the call stack  
+## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>Просмотреть исходный код для функции в стеке вызовов  
   
--   In the **Call Stack** window, right-click the function whose source code you want to see and select **Go To Source Code**.
+-   В **стек вызовов** окно, щелкните правой кнопкой мыши функцию, исходный код которой нужно просмотреть и выберите **к исходному коду**.
 
-## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>Run to a specific function from the Call Stack window  
+## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>Выполнение до определенной функции из окна "Стек вызовов"  
   
--  In the **Call Stack** window, select the function, right-click and  choose **Run to Cursor**.  
+-  В **стек вызовов** окно, выберите функцию, щелкните правой кнопкой мыши и выберите **выполнить до текущей позиции**.  
   
-## <a name="set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Set a breakpoint on the exit point of a function call  
+## <a name="set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Установите точку останова в точке выхода вызова функции  
   
--   See [Set a breakpoint at a call stack function](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).
+-   В разделе [установите точку останова в функции в стеке вызова](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).
 
-## <a name="display-calls-to-or-from-another-thread"></a>Display calls to or from another thread  
+## <a name="display-calls-to-or-from-another-thread"></a>Отобразить вызовы в или из другого потока  
   
--   Right-click the **Call Stack** window and select **Include Calls To/From Other Threads**.   
+-   Щелкните правой кнопкой мыши **стек вызовов** и выберите **включить вызовы между потоками**.   
   
-## <a name="visually-trace-the-call-stack"></a>Visually trace the call stack  
+## <a name="visually-trace-the-call-stack"></a>Визуального отслеживания стека вызовов  
 
-If you are using Visual Studio Enterprise (only), you can view code maps for the call stack while debugging.
+При использовании Visual Studio Enterprise (только) можно просмотреть код карты для стека вызовов при отладке.
 
-- In the **Call Stack** window, open the shortcut menu. Choose **Show Call Stack on Code Map**. (Keyboard: **CTRL** + **SHIFT** + **`**)  
+- В **стек вызовов** окна, откройте контекстное меню. Выберите **Показать стек вызовов на карте кода**. (Клавиатура: **CTRL** + **SHIFT** + **`**)  
   
-    For detailed information, see [Map methods on the call stack while debugging](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
+    Дополнительные сведения см. в разделе [сопоставление методов в стеке вызовов при отладке](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
-![Show Call Stack on Code Map](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
+![Показать стек вызовов на карте кода](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
   
-## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack"></a>View the disassembly code for a function on the call stack  
+## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack"></a>Просмотреть дизассемблированный код функции в стеке вызовов  
   
--   In the **Call Stack** window, right-click the function whose disassembly code you want to see and select **Go To Disassembly**.    
+-   В **стек вызовов** окно, щелкните правой кнопкой мыши функцию, Дизассемблированный код которой нужно просмотреть и выберите **к дизассемблированному**.    
 
-## <a name="change-the-optional-information-displayed"></a>Change the optional information displayed  
+## <a name="change-the-optional-information-displayed"></a>Изменить отображение дополнительных сведений  
   
--   Right-click the **Call Stack** window and set or clear **Show \<***the information that you want***>**.  
+-   Щелкните правой кнопкой мыши **стек вызовов** окна "и" set "или" снимите флажок **Показать \<**  *информацией, которая должна*  **>** .  
   
-## <a name="bkmk_symbols"></a> Load Symbols for a module
-In the **Call Stack** window, you can load debugging symbols for code that does not currently have symbols loaded. These symbols can be .NET Framework or system symbols downloaded from the Microsoft public symbol servers or symbols in a symbol path on the computer that you are debugging.  
+## <a name="bkmk_symbols"></a>Загрузить символы для модуля
+В **стек вызовов** окна, можно загрузить символы для кода, который в данный момент нет загруженных символов отладки. Это могут быть символы платформы .NET Framework или системные символы, загруженные с общедоступных серверов символов корпорации Microsoft, или символы в каталоге символов на компьютере, на котором производится отладка.  
   
-See [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+В разделе [укажите символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
-### <a name="to-load-symbols"></a>To load symbols  
+### <a name="to-load-symbols"></a>Чтобы загрузить символы  
   
-1.  In the **Call Stack** window, right-click the stack frame for which symbols are not loaded. The frame will be dimmed.  
+1.  В **стек вызовов** окно, щелкните правой кнопкой мыши кадр стека для символы не загружены. Кадр затеняется.  
   
-2.  Point to **Load Symbols** and then click **Microsoft Symbol Servers** (if available) or browse to the symbol path.  
+2.  Пункты **загрузить символы** и нажмите кнопку **серверы символов Майкрософт** (если он доступен) или укажите путь к символам.  
   
-### <a name="to-set-the-symbol-path"></a>To set the symbol path  
+### <a name="to-set-the-symbol-path"></a>Установка пути к символам  
   
-1.  In the **Call Stack** window, choose **Symbol Settings** from the shortcut menu.  
+1.  В **стек вызовов** окно, выберите **параметры символов** в контекстном меню.  
   
-     The **Options** dialog box opens and the **Symbols** page is displayed.  
+     **Параметры** откроется диалоговое окно и **символы** -страница.  
   
-2.  Click **Symbol Settings**.  
+2.  Нажмите кнопку **символов параметры**.  
   
-3.  In the **Options** dialog box, click the Folder icon.  
+3.  В **параметры** диалогового окна щелкните значок папки.  
   
-     In the **Symbol file (.pdb) locations** box, a cursor appears.  
+     В **символов (PDB)** поле появится курсор.  
   
-4.  Type a directory pathname to the symbol location on the computer that you are debugging. For local and remote debugging, this is a path on your local computer.
+4.  Введите путь к каталогу с символами на компьютере, на котором производится отладка. Для локальной и удаленной отладки это путь на локальном компьютере.
   
-5.  Click **OK** to close the **Options** dialog box.  
+5.  Нажмите кнопку **ОК** закрыть **параметры** диалоговое окно.  
   
-## <a name="see-also"></a>See Also  
- [Mixed Code and Missing Information in the Call Stack Window](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md) [Viewing Data in the Debugger](../debugger/viewing-data-in-the-debugger.md)   
- [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
- [Using Breakpoints](../debugger/using-breakpoints.md)
+## <a name="see-also"></a>См. также  
+ [Смешанный код и отсутствующие данные в окне стека вызовов](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)  
+ [Просмотр данных в отладчике](../debugger/viewing-data-in-the-debugger.md)   
+ [Укажите символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [Использование точек останова](../debugger/using-breakpoints.md)

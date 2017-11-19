@@ -1,27 +1,30 @@
 ---
-title: "IDebugApplication::DebugOutput | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugApplication::DebugOutput | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugApplication.DebugOutput
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugApplication::DebugOutput"
+helpviewer_keywords: IDebugApplication::DebugOutput
 ms.assetid: 6c02939c-3c2d-474a-ab15-49a37e22b4a7
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: cfc956c7d2d65d20788a79c9f685e386aba97a80
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugApplication::DebugOutput
-Вызывает заданную строку для отображения отладчика интегрированной средой разработки \(ide\).  
+# <a name="idebugapplicationdebugoutput"></a>IDebugApplication::DebugOutput
+В результате заданной строки, которые должны отображаться в отладчике интегрированной среды разработки (IDE).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT DebugOutput(  
@@ -29,22 +32,22 @@ HRESULT DebugOutput(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pstr`  
- \[in\] строка, отображаемая в отладчике.  
+ [in] Строка, отображаемая в отладчике.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
- Этот метод позволяет обработчику языка в поддержке вывода отладки языкового ".  Строка обычно отображается в окне вывода отладчика.  
+## <a name="remarks"></a>Примечания  
+ Этот метод позволяет языковая подсистема реализовать поддержку отладки выходных данных для конкретного языка. Строка, как правило, отображается в окне вывода.  
   
- Этот метод вызывает `IApplicationDebugger::onDebugOutput` непосредственного вызова.  
+ Этот метод вызывает `IApplicationDebugger::onDebugOutput` для вызова.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
  [IApplicationDebugger::onDebugOutput](../../winscript/reference/iapplicationdebugger-ondebugoutput.md)

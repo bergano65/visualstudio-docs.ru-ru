@@ -1,45 +1,48 @@
 ---
-title: "IDebugApplicationNode::Detach | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugApplicationNode::Detach | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugApplicationNode.Detach
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugApplicationNode::Detach"
+helpviewer_keywords: IDebugApplicationNode::Detach
 ms.assetid: 36bb3e54-a4df-48d5-a6de-3b8d4c0e98a8
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 409501172a1ee4b8f00562adaee0d533d517e449
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugApplicationNode::Detach
-Удаляет данный узел приложения из дерева проекта.  
+# <a name="idebugapplicationnodedetach"></a>IDebugApplicationNode::Detach
+Удаляет данный узел приложения в дереве проекта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT Detach();  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  Этот метод не принимает параметры.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
- Этот метод удаляет данный узел приложения из дерева проекта.  
+## <a name="remarks"></a>Примечания  
+ Этот метод удаляет этот узел приложения в дереве проекта.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugApplicationNode::Attach](../../winscript/reference/idebugapplicationnode-attach.md)   
  [Интерфейс IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)

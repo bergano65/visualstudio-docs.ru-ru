@@ -1,99 +1,99 @@
 ---
-title: "CONTEXT_COMPARE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CONTEXT_COMPARE"
-helpviewer_keywords: 
-  - "Перечисление CONTEXT_COMPARE"
+title: "CONTEXT_COMPARE | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: CONTEXT_COMPARE
+helpviewer_keywords: CONTEXT_COMPARE enumeration
 ms.assetid: 701ed61c-a320-4c20-a335-0b840024abc0
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 48043375ebdf904a7fafbae5e4193b42d8ba8269
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# CONTEXT_COMPARE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Указывает условие для сравнения 2 контекста памяти.  
+# <a name="contextcompare"></a>CONTEXT_COMPARE
+Указывает критерии для сравнения двух контекстов памяти.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-enum enum_CONTEXT_COMPARE {   
-   CONTEXT_EQUAL                 = 0x0001,  
-   CONTEXT_LESS_THAN             = 0x0002,  
-   CONTEXT_GREATER_THAN          = 0x0003,  
-   CONTEXT_LESS_THAN_OR_EQUAL    = 0x0004,  
-   CONTEXT_GREATER_THAN_OR_EQUAL = 0x0005,  
-   CONTEXT_SAME_SCOPE            = 0x0006,  
-   CONTEXT_SAME_FUNCTION         = 0x0007,  
-   CONTEXT_SAME_MODULE           = 0x0008,  
-   CONTEXT_SAME_PROCESS          = 0x0009  
+```cpp  
+enum enum_CONTEXT_COMPARE {   
+   CONTEXT_EQUAL                 = 0x0001,  
+   CONTEXT_LESS_THAN             = 0x0002,  
+   CONTEXT_GREATER_THAN          = 0x0003,  
+   CONTEXT_LESS_THAN_OR_EQUAL    = 0x0004,  
+   CONTEXT_GREATER_THAN_OR_EQUAL = 0x0005,  
+   CONTEXT_SAME_SCOPE            = 0x0006,  
+   CONTEXT_SAME_FUNCTION         = 0x0007,  
+   CONTEXT_SAME_MODULE           = 0x0008,  
+   CONTEXT_SAME_PROCESS          = 0x0009  
 };  
 typedef DWORD CONTEXT_COMPARE;  
 ```  
   
-```c#  
-public enum enum_CONTEXT_COMPARE {   
-   CONTEXT_EQUAL                 = 0x0001,  
-   CONTEXT_LESS_THAN             = 0x0002,  
-   CONTEXT_GREATER_THAN          = 0x0003,  
-   CONTEXT_LESS_THAN_OR_EQUAL    = 0x0004,  
-   CONTEXT_GREATER_THAN_OR_EQUAL = 0x0005,  
-   CONTEXT_SAME_SCOPE            = 0x0006,  
-   CONTEXT_SAME_FUNCTION         = 0x0007,  
-   CONTEXT_SAME_MODULE           = 0x0008,  
-   CONTEXT_SAME_PROCESS          = 0x0009  
+```csharp  
+public enum enum_CONTEXT_COMPARE {   
+   CONTEXT_EQUAL                 = 0x0001,  
+   CONTEXT_LESS_THAN             = 0x0002,  
+   CONTEXT_GREATER_THAN          = 0x0003,  
+   CONTEXT_LESS_THAN_OR_EQUAL    = 0x0004,  
+   CONTEXT_GREATER_THAN_OR_EQUAL = 0x0005,  
+   CONTEXT_SAME_SCOPE            = 0x0006,  
+   CONTEXT_SAME_FUNCTION         = 0x0007,  
+   CONTEXT_SAME_MODULE           = 0x0008,  
+   CONTEXT_SAME_PROCESS          = 0x0009  
 };  
 ```  
   
-## Члены  
- CONTEXT\_EQUAL  
- Найдите первый контекст памяти в списке, равный контексту памяти целевого объекта.  
+## <a name="members"></a>Члены  
+ CONTEXT_EQUAL  
+ Найти первый контекст памяти в списке, равное целевой контекст памяти.  
   
- CONTEXT\_LESS\_THAN  
- Найдите первый контекст памяти в списке, чем контекст памяти целевого объекта.  
+ CONTEXT_LESS_THAN  
+ Найти первый контекст памяти в списке, который меньше, чем целевой контекст памяти.  
   
- CONTEXT\_GREATER\_THAN  
- Найдите первый контекст памяти в списке, больше контекст памяти целевого объекта.  
+ CONTEXT_GREATER_THAN  
+ Найти первый контекст памяти в списке, который больше, чем целевой контекст памяти.  
   
- CONTEXT\_LESS\_THAN\_OR\_EQUAL  
- Найдите первый контекст памяти в списке, меньшее или равное контексту памяти целевого объекта.  
+ CONTEXT_LESS_THAN_OR_EQUAL  
+ Найдите первый контекст памяти в списке, меньше или равно целевой контекст памяти.  
   
- CONTEXT\_GREATER\_THAN\_OR\_EQUAL  
- Найдите первый контекст памяти в списке, больше или равно контексту памяти целевого объекта.  
+ CONTEXT_GREATER_THAN_OR_EQUAL  
+ Найти первый контекст памяти в списке, который больше или равно целевой контекст памяти.  
   
- CONTEXT\_SAME\_SCOPE  
- Найдите первый контекст памяти в списке, в одной области в качестве контекста памяти целевого объекта.  
+ CONTEXT_SAME_SCOPE  
+ Найти первый контекст памяти в списке, который находится в той же области, как целевой контекст памяти.  
   
- CONTEXT\_SAME\_FUNCTION  
- Найдите первый контекст памяти в списке, в одной и той же функции, такие как область целевого объекта.  
+ CONTEXT_SAME_FUNCTION  
+ Найти первый контекст памяти в списке, который находится в той же функции, как целевой области памяти.  
   
- CONTEXT\_SAME\_MODULE  
- Найдите первый контекст памяти в списке, в одном модуле, как контекст памяти целевого объекта.  
+ CONTEXT_SAME_MODULE  
+ Найти первый контекст памяти в списке, который находится в одном модуле с целевой контекст памяти.  
   
- CONTEXT\_SAME\_PROCESS  
- Найдите первый контекст памяти в списке, в том же процессе, что контекст памяти целевого объекта.  
+ CONTEXT_SAME_PROCESS  
+ Найти первый контекст памяти в списке, который находится в том же процессе, как целевой контекст памяти.  
   
-## Заметки  
- Передается в качестве аргумента [Сравнение](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) метод.  
+## <a name="remarks"></a>Примечания  
+ Передается в качестве аргумента для [сравнения](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) метод.  
   
- Эти значения используются для поиска первый контекст памяти в списке, удовлетворяющий, определенные условия сравнения.  Получает контекст памяти список контекстов памяти для сравнения с посредством `IDebugMemoryContext2::Compare` метод.  Первый контекст памяти в списке, для которого оператор сравнения `true` затем возвращается.  
+ Эти значения используются для нахождения первого контекст памяти в списке, удовлетворяющий условиям указанного сравнения. Получает контекст памяти список контекстов памяти сравнивать себя с помощью `IDebugMemoryContext2::Compare` метод. Первый контекст памяти в списке, для которого является оператором сравнения `true` затем возвращается.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Сравнение](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
+ [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)

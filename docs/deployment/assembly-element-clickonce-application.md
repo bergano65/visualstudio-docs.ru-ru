@@ -1,34 +1,33 @@
 ---
-title: "Элемент &lt;assembly&gt; (приложение ClickOnce) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "urn:schemas-microsoft-com:asm.v2#assembly"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<assembly> - элемент [манифест приложения ClickOnce]"
+title: "&lt;сборка&gt; элемент (приложение ClickOnce) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: urn:schemas-microsoft-com:asm.v2#assembly
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <assembly> element [ClickOnce application manifest]
 ms.assetid: 51410569-10f9-4c0a-96b5-d39185edbefc
-caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: fafc5df1a2aa32fa60c1f41077f7e3fff29ddef7
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Элемент &lt;assembly&gt; (приложение ClickOnce)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Элемент верхнего уровня манифеста приложения.  
+# <a name="ltassemblygt-element-clickonce-application"></a>&lt;сборка&gt; элемент (приложение ClickOnce)
+Элемент верхнего уровня для манифеста приложения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
@@ -37,8 +36,8 @@ caps.handback.revision: 15
 />  
 ```  
   
-## Элементы и атрибуты  
- Элемент `assembly` является корневым и обязательным элементом.  Его первым вложенным элементом должен быть элемент `assemblyIdentity`.  Элементы манифеста должны принадлежать следующему пространству имен:  
+## <a name="elements-and-attributes"></a>Элементы и атрибуты  
+ `assembly` Элемент является корневым элементом и является обязательным. Должен быть первый элемент автономной `assemblyIdentity` элемента. Элементы манифеста должны быть в одном из следующих пространств имен:  
   
  `urn:schemas-microsoft-com:asm.v1`  
   
@@ -46,16 +45,16 @@ caps.handback.revision: 15
   
  `http://www.w3.org/2000/09/xmldsig#`  
   
- Дочерние элементы сборки также необходимо включить в эти пространства имен путем наследования или маркировки.  
+ Дочерние элементы сборки также необходимо включить в этих пространствах имен путем наследования или добавление тегов.  
   
- Элемент `assembly` имеет следующий атрибут.  
+ `assembly` Элемент имеет указанный ниже атрибут.  
   
 |Атрибут|Описание|  
-|-------------|--------------|  
-|`manifestVersion`|Обязательный.  Атрибут `manifestVersion` должен иметь значение `1.0`.|  
+|---------------|-----------------|  
+|`manifestVersion`|Обязательный. `manifestVersion` Атрибуту должно быть присвоено `1.0`.|  
   
-## Пример  
- В следующем примере кода показан элемент `assembly` файла  манифеста приложения для приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  Данный пример кода является частью большего примера, приведенного в разделе [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md).  
+## <a name="example"></a>Пример  
+ В следующем примере кода показан `assembly` элемента в манифесте приложения для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения. Данный пример кода является частью большего примера, приведенного в [манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md).  
   
 ```  
 <asmv1:assembly   
@@ -71,6 +70,6 @@ caps.handback.revision: 15
   xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)   
- [Элемент \<assembly\>](../deployment/assembly-element-clickonce-deployment.md)
+ [\<сборка > элемент](../deployment/assembly-element-clickonce-deployment.md)

@@ -1,83 +1,82 @@
 ---
-title: "DataKind | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DataKind - перечисление"
+title: "DataKind | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: DataKind enumeration
 ms.assetid: b64be708-22d6-4360-99e7-8f4e6b196de7
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6e9ffa36facb3c7f64f7eb2c0b96ef5209f70c78
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# DataKind
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Отображает заданную область значения.  
+# <a name="datakind"></a>DataKind
+Указывает, определенной областью значение данных.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-enum DataKind {   
-   DataIsUnknown,  
-   DataIsLocal,  
-   DataIsStaticLocal,  
-   DataIsParam,  
-   DataIsObjectPtr,  
-   DataIsFileStatic,  
-   DataIsGlobal,  
-   DataIsMember,  
-   DataIsStaticMember,  
-   DataIsConstant  
+```C++  
+enum DataKind {   
+   DataIsUnknown,  
+   DataIsLocal,  
+   DataIsStaticLocal,  
+   DataIsParam,  
+   DataIsObjectPtr,  
+   DataIsFileStatic,  
+   DataIsGlobal,  
+   DataIsMember,  
+   DataIsStaticMember,  
+   DataIsConstant  
 };  
 ```  
   
-## Elements  
+## <a name="elements"></a>Элементы  
  DataIsUnknown  
- Символ данных не может быть определено.  
+ Не удается определить символ данных.  
   
  DataIsLocal  
- Элемент данных локальной переменной.  
+ Элемент данных является локальной переменной.  
   
  DataIsStaticLocal  
- Элемент данных статическая локальная переменная.  
+ Элемент данных является статической локальной переменной.  
   
  DataIsParam  
- Элемент данных формальный параметр.  
+ Элемент данных относится формальных параметров.  
   
  DataIsObjectPtr  
- Элемент данных объекта \(указатель`this`\).  
+ Элемент данных является указатель на объект (`this`).  
   
  DataIsFileStatic  
- Элемент данных переменной файла\-scoped.  
+ Элемент данных относится переменную видимой в пределах файла.  
   
  DataIsGlobal  
- Элемент данных глобальная переменная.  
+ Элемент данных является глобальной переменной.  
   
  DataIsMember  
- Элемент данных, переменная члена объекта.  
+ Элемент данных относится переменная члена объекта.  
   
  DataIsStaticMember  
- Элемент данных статическая переменная класса.  
+ Элемент данных является статической переменной класса.  
   
  DataIsConstant  
- Элемент данных постоянное значение.  
+ Элемент данных имеет постоянное значение.  
   
-## Заметки  
- В этом перечислении возвращаемые значения [IDiaSymbol::get\_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) метод.  
+## <a name="remarks"></a>Примечания  
+ Возвращаемые значения в этом перечислении [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) метод.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: cvconst.h  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get\_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)
+ [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)

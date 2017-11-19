@@ -1,57 +1,58 @@
 ---
-title: "IDebugPendingBreakpoint2::Virtualize | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPendingBreakpoint2::Virtualize"
-helpviewer_keywords: 
-  - "Метод виртуализации"
-  - "Метод IDebugPendingBreakpoint2::Virtualize"
+title: "IDebugPendingBreakpoint2::Virtualize | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPendingBreakpoint2::Virtualize
+helpviewer_keywords:
+- Virtualize method
+- IDebugPendingBreakpoint2::Virtualize method
 ms.assetid: 58c8e9a5-4494-47c2-bddb-56f628da6a2d
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 93c9b09b7a9356687707837d818b9a603f8961b4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPendingBreakpoint2::Virtualize
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Переключает состояние ожидающих virtualized этой точки останова.  Если ожидается точка останова будет virtualized, отладчик пытается привязать его загрузки каждого кода времени новых в программу.  
+# <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
+Переключает состояние виртуализированных этого ожидающих точек останова. При виртуальных ожидающая точка останова, отладчик попытается привязать каждый раз загружает новый код в программе.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT Virtualize(   
-   BOOL fVirtualize  
+```cpp  
+HRESULT Virtualize(   
+   BOOL fVirtualize  
 );  
 ```  
   
-```cpp#  
-int Virtualize(   
-   int fVirtualize  
+```cpp  
+int Virtualize(   
+   int fVirtualize  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `fVirtualize`  
- \[in\] набор \(как значение`TRUE`ожидается\) virtualize точка останова или ноль \(`FALSE`отключить виртуализация\).  
+ [in] Задайте ненулевое значение (`TRUE`) для виртуализации ожидающая точка останова или нулевое значение (`FALSE`) для отключения виртуализации.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  Возвращает `E_BP_DELETED` если точка останова удалена.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Возвращает `E_BP_DELETED` Если точка останова была удалена.  
   
-## Заметки  
- Virtualized точка останова привязана каждому код времени загружена.  
+## <a name="remarks"></a>Примечания  
+ Точки останова виртуализированных привязан каждый раз при загрузке кода.  
   
-## Пример  
- В следующем примере показано, как реализовать этот метод для простого `CPendingBreakpoint` объект, предоставляющий  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) интерфейс.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как реализовать этот метод для простой `CPendingBreakpoint` объекта, который предоставляет [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) интерфейса.  
   
-```cpp#  
+```cpp  
 HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)    
 {    
    HRESULT hr;    
@@ -83,5 +84,5 @@ HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)
 }    
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

@@ -1,56 +1,56 @@
 ---
-title: "IDebugBreakpointErrorEvent2::GetErrorBreakpoint | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBreakpointErrorEvent2::GetErrorBreakpoint"
-helpviewer_keywords: 
-  - "IDebugBreakpointErrorEvent2::GetErrorBreakpoint"
+title: "IDebugBreakpointErrorEvent2::GetErrorBreakpoint | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBreakpointErrorEvent2::GetErrorBreakpoint
+helpviewer_keywords: IDebugBreakpointErrorEvent2::GetErrorBreakpoint
 ms.assetid: e5acfd19-ac17-47f3-a31a-b2aa8baca36d
-caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f46a515318dc7bc293f187720f79e3d48cc10b07
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBreakpointErrorEvent2::GetErrorBreakpoint
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Возвращает IDebugErrorBreakpoint2 объект, описывающий причину, почему была точка останова не привязана.  
+# <a name="idebugbreakpointerrorevent2geterrorbreakpoint"></a>IDebugBreakpointErrorEvent2::GetErrorBreakpoint
+Возвращает [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) объекта, которое описывает причину, почему не привязан точки останова.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetErrorBreakpoint(   
-   IDebugErrorBreakpoint2** ppErrorBP  
+```cpp  
+HRESULT GetErrorBreakpoint(   
+   IDebugErrorBreakpoint2** ppErrorBP  
 );  
 ```  
   
-```c#  
-int GetErrorBreakpoint(   
-   out IDebugErrorBreakpoint2 ppErrorBP  
+```csharp  
+int GetErrorBreakpoint(   
+   out IDebugErrorBreakpoint2 ppErrorBP  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppErrorBP`  
- \[out\] возвращает IDebugErrorBreakpoint2 объект, описывающий предупреждения или ошибки.  
+ [out] Возвращает [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) объекта, который описывает предупреждения или ошибки.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- После `IDebugErrorBreakpoint2` интерфейс получения вызывает  [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) метод доступа  [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) объект.  Then [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) метод можно использовать для определения недопустимое расположение недопустимое выражение или причины ожидается точка останова не будет привязана, например, код не загружен, и т д  
+## <a name="remarks"></a>Примечания  
+ После `IDebugErrorBreakpoint2` получить интерфейс, вызовите метод [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) метод, чтобы получить [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) объекта. Затем [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) метод можно использовать для определения недопустимое расположение, недопустимое выражение или причин, почему ожидающая точка останова не был привязан, например код, не загружен и т. д.  
   
-## Пример  
- В следующем примере показано, как реализовать этот метод, a **CBreakpointSetDebugEventBase** объект, предоставляющий  [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) интерфейс.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как реализовать этот метод для **CBreakpointSetDebugEventBase** объекта, который предоставляет [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) интерфейса.  
   
-```cpp#  
+```cpp  
 STDMETHODIMP CBreakpointErrorDebugEventBase::GetErrorBreakpoint(  
     IDebugErrorBreakpoint2 **ppbp)  
 {  
@@ -76,7 +76,7 @@ STDMETHODIMP CBreakpointErrorDebugEventBase::GetErrorBreakpoint(
 }  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)   
  [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)   
  [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)

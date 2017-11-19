@@ -1,61 +1,62 @@
 ---
-title: "IDebugSettingsCallback2::GetMetricGuid | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugSettingsCallback2::GetMetricGuid"
+title: "IDebugSettingsCallback2::GetMetricGuid | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugSettingsCallback2::GetMetricGuid
 ms.assetid: 91092763-3362-4857-adf0-231bc1254206
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d43bb839b1c8c4be3d9c56a20d6e9e17eb79cd1b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugSettingsCallback2::GetMetricGuid
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Извлекает уникальный идентификатор метрики заданным именем.  
+# <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
+Получает уникальный идентификатор метрики с заданным именем.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT GetMetricGuid(  
-   LPCWSTR pszType,  
-   REFGUID guidSection,  
-   LPCWSTR pszMetric,  
-   GUID*   pguidValue  
+   LPCWSTR pszType,  
+   REFGUID guidSection,  
+   LPCWSTR pszMetric,  
+   GUID*   pguidValue  
 );  
 ```  
   
-```c#  
+```csharp  
 private int GetMetricGuid(  
-   string   pszType,  
-   ref Guid guidSection,  
-   string   pszMetric,  
-   out Guid pguidValue  
+   string   pszType,  
+   ref Guid guidSection,  
+   string   pszMetric,  
+   out Guid pguidValue  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pszType`  
- \[in\] тип метрики.  
+ [in] Тип метрики.  
   
  `guidSection`  
- \[in\] уникальный идентификатор раздела.  
+ [in] Уникальный идентификатор раздела.  
   
  `pszMetric`  
- \[in\] имя метрики.  
+ [in] Имя метрики.  
   
  `pguidValue`  
- \[out\] возвращает уникальный идентификатор метрики.  
+ [out] Возвращает уникальный идентификатор метрики.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

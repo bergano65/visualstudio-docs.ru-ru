@@ -1,51 +1,51 @@
 ---
-title: "IDebugBreakpointRequest2::GetLocationType | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBreakpointRequest2::GetLocationType"
-helpviewer_keywords: 
-  - "IDebugBreakpointRequest2::GetLocationType"
+title: "IDebugBreakpointRequest2::GetLocationType | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBreakpointRequest2::GetLocationType
+helpviewer_keywords: IDebugBreakpointRequest2::GetLocationType
 ms.assetid: b6d14c59-d3aa-48ff-8278-f6b5bba9c2f3
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9a286d0d8faafaca9b646daecceab8fa165bcd02
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBreakpointRequest2::GetLocationType
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Возвращает тип расположения точки останова этого запроса точки останова.  
+# <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
+Возвращает тип местоположения точки останова запроса точки останова.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetLocationType(   
-   BP_LOCATION_TYPE* pBPLocationType  
+```cpp  
+HRESULT GetLocationType(   
+   BP_LOCATION_TYPE* pBPLocationType  
 );  
 ```  
   
-```c#  
-int GetLocationType(   
-   out enum_BP_LOCATION_TYPE pBPLocationType  
+```csharp  
+int GetLocationType(   
+   out enum_BP_LOCATION_TYPE pBPLocationType  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pBPLocationType`  
- \[out\] возвращает значение [BP\_LOCATION\_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) перечисление, описывающее расположение этого запроса точки останова.  
+ [out] Возвращает значение из [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) перечисления, которое описывает расположение точки останова запроса.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  Возвращает `E_FAIL` если  `bpLocation` поле, связанное  [BP\_REQUEST\_INFO](../../../extensibility/debugger/reference/bp-request-info.md) структура является недопустимой.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Возвращает `E_FAIL` Если `bpLocation` в соответствующем поле [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) имеет недопустимую структуру.  
   
-## Пример  
- В следующем примере показано, как реализовать этот метод для простого `CDebugBreakpointRequest` объект, предоставляющий[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) интерфейс.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как реализовать этот метод для простой `CDebugBreakpointRequest` объекта, который предоставляет[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) интерфейса.  
   
 ```  
 HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationType)    
@@ -78,8 +78,8 @@ HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationTy
 }    
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)   
- [BP\_LOCATION\_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)   
- [BPREQI\_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)   
- [BP\_REQUEST\_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
+ [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)   
+ [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)   
+ [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)

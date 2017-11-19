@@ -1,43 +1,42 @@
 ---
-title: "IDiaEnumInjectedSources::Clone | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumInjectedSources::Clone - метод"
+title: "IDiaEnumInjectedSources::Clone | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumInjectedSources::Clone method
 ms.assetid: 18038691-c140-426a-8617-27f0360650f3
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2969376a2531f92d61a91ecf697232a8d52698a2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumInjectedSources::Clone
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.  
+# <a name="idiaenuminjectedsourcesclone"></a>IDiaEnumInjectedSources::Clone
+Создает перечислитель, с тем же состоянием, как у текущего перечислителя.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT Clone (   
-   IDiaEnumInjectedSources** ppenum  
+```C++  
+HRESULT Clone (   
+   IDiaEnumInjectedSources** ppenum  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppenum`  
- \[out\] возвращает [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) объект, содержащий дубликат перечислителя.  Источники не повторяются впрыснутые только перечислитель.  
+ [out] Возвращает [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) объект, который содержит повторяющийся перечислителя. Введенный источники не повторяются, только перечислитель.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

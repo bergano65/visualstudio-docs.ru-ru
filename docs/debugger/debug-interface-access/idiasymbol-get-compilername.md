@@ -1,55 +1,54 @@
 ---
-title: "IDiaSymbol::get_compilerName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_compilerName - метод"
+title: "IDiaSymbol::get_compilerName | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_compilerName method
 ms.assetid: 66eaaf72-68d4-40ee-b132-97bea9fe395c
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0c8abef165e5e5714af142a6a60c97ecc03343c1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_compilerName
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Возвращает имя компилятора, используемого для формирования [Compiland](../../debugger/debug-interface-access/compiland.md).  
+# <a name="idiasymbolgetcompilername"></a>IDiaSymbol::get_compilerName
+Возвращает имя компилятор, используемый для создания [компилируемого объекта](../../debugger/debug-interface-access/compiland.md).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```C++  
 HRESULT get_compilerName (  
-   BSTR *pName  
+   BSTR *pName  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pName`  
- Указатель на строку BSTR, которое будет содержать имя в юникоде компилятора.  
+ Указатель на BSTR, будет содержать имя Юникода компилятора.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает  `S_FALSE` или код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение  `S_FALSE` означает, что свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
   
-## Требования  
+## <a name="requirements"></a>Требования  
   
 |Требование|Описание|  
-|----------------|--------------|  
+|-----------------|-----------------|  
 |Заголовок:|dia2.h|  
-|Версия:|Пакет SDK для доступа к интерфейсу отладки v8.0|  
+|Версия:|ПАКЕТ SDK для версии 8.0|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

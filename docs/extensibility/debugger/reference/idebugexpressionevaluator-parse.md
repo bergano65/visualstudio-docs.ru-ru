@@ -1,78 +1,78 @@
 ---
-title: "IDebugExpressionEvaluator::Parse | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugExpressionEvaluator::Parse"
-helpviewer_keywords: 
-  - "Метод IDebugExpressionEvaluator::Parse"
+title: "IDebugExpressionEvaluator::Parse | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugExpressionEvaluator::Parse
+helpviewer_keywords: IDebugExpressionEvaluator::Parse method
 ms.assetid: e6e31b3a-63a7-4293-bcda-267eb78dffb6
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b0491cd6d80db449fbeaa8fee2a6040a66082558
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugExpressionEvaluator::Parse
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Этот метод преобразует строку выражения в анализированному выражению.  
+# <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
+Этот метод преобразует строку выражения проанализированный выражение.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT Parse(   
-   LPCOLESTR                upstrExpression,  
-   PARSEFLAGS               dwFlags,  
-   UINT                     nRadix,  
-   BSTR*                    pbstrError,  
-   UINT*                    pichError,  
-   IDebugParsedExpression** ppParsedExpression  
+```cpp  
+HRESULT Parse(   
+   LPCOLESTR                upstrExpression,  
+   PARSEFLAGS               dwFlags,  
+   UINT                     nRadix,  
+   BSTR*                    pbstrError,  
+   UINT*                    pichError,  
+   IDebugParsedExpression** ppParsedExpression  
 );  
 ```  
   
-```c#  
+```csharp  
 int Parse(  
-   string                     upstrExpression,   
-   enum_PARSEFLAGS            dwFlags,   
-   uint                       nRadix,   
-   out string                 pbstrError,   
-   out uint                   pichError,   
-   out IDebugParsedExpression ppParsedExpression  
+   string                     upstrExpression,   
+   enum_PARSEFLAGS            dwFlags,   
+   uint                       nRadix,   
+   out string                 pbstrError,   
+   out uint                   pichError,   
+   out IDebugParsedExpression ppParsedExpression  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `upstrExpression`  
- \[in\] строка выражения, которое необходимо проанализировать.  
+ [in] Строка выражения для синтаксического анализа.  
   
  `dwFlags`  
- \[in\] коллекция [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) константы, определяющие, как выражение анализируется.  
+ [in] Коллекция [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) константы, которые определяют, как выполнить синтаксический анализ выражения.  
   
  `nRadix`  
- \[in\] корневой каталог, используемый для интерпретации любое числовое сведения.  
+ [in] Основание системы счисления, используемое для интерпретации все числовые данные.  
   
  `pbstrError`  
- \[out\] возвращает ошибку в виде удобочитаемого текста.  
+ [out] Возвращает ошибку в виде удобочитаемого текста.  
   
  `pichError`  
- \[out\] возвращает позицию знака начала ошибки в строке выражения.  
+ [out] Возвращает позицию символа начинается ошибка в строке выражения.  
   
  `ppParsedExpression`  
- \[out\] возвращает прошедшее синтаксический анализ выражения в [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) объект.  
+ [out] Возвращает выражение, проанализированных в [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) объекта.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Этот метод создает проанализированное выражение, не фактическое значение.  Проанализированное выражение готово должен вычисляться, т е преобразовать в значение.  
+## <a name="remarks"></a>Примечания  
+ Этот метод создает проанализированное выражение не фактического значения. Проанализированное выражение готовое к вычислению, то есть, преобразуется в значение.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)   
  [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)   
  [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)

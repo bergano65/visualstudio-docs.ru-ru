@@ -4,42 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- EnableEditOfLocationField (Visual Studio project templates)
+helpviewer_keywords: EnableEditOfLocationField (Visual Studio project templates)
 ms.assetid: 51a91963-8a3f-4741-928e-bc90c11473bb
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 620243fa3c764ed5d6b045f240cbf5b10c4bdedb
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 99916d3affa41d90c9fcfb912e2d3f94c743d87c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>Элемент EnableEditOfLocationField (шаблоны Visual Studio)
-Указывает, если пользователь может изменять расположение полей.  
+Указывает, если пользователь может изменить поле расположения.  
   
- \<VSTemplate настроек  
- \<TemplateData настроек  
- \<EnableEditOfLocationField настроек  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<EnableEditOfLocationField >  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -65,12 +50,12 @@ ms.lasthandoff: 02/22/2017
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Текст должен быть либо `true` или `false`, указывая, может ли пользователь изменять **расположение** текстовое поле в **новый проект** диалоговое окно.  
+ Этот текст должен быть либо `true` или `false`, указывая, может ли пользователь изменять **расположение** текстовое поле в **новый проект** диалоговое окно.  
   
 ## <a name="remarks"></a>Примечания  
  `EnableEditOfLocationField` — это необязательный элемент. Значение по умолчанию — `true`, который позволяет пользователю изменять значения в **расположение** текстовое поле в **новый проект** диалоговое окно.  
   
- В **новый проект** диалоговом **расположение** текстовое поле указывает каталог, который сохраняется новый проект.  
+ В **новый проект** диалоговом **расположение** текстовое поле указывает каталог, где сохранить новый проект.  
   
 ## <a name="example"></a>Пример  
  В следующем примере демонстрируется метаданные для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения Windows.  

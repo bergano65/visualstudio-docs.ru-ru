@@ -1,40 +1,40 @@
 ---
-title: "IDiaSymbol::get_isAcceleratorPointerTagLiveRange | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: "IDiaSymbol::get_isAcceleratorPointerTagLiveRange | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: d195aec4-6d3c-42e0-88a5-3d463539f0b8
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2434dac0a4f0e4d9ff1c998f0cd70da4f9c558b0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_isAcceleratorPointerTagLiveRange
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает пометить, указывающее, соответствует ли символ на *символ диапазона определения* для компонента тега переменной указателя в компилированном коде для сочетаний клавиш C\+\+ AMP.  Символ диапазона определения расположение переменной диапазона адресов.  
+# <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
+Возвращает флаг, указывающий, является ли символ соответствует *определения диапазона символов* для компонента тег в коде, скомпилированном для C++ AMP Accelerator переменной указателя. Символ определения диапазона является расположение переменной для диапазона адресов.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp  
+```C++  
 HRESULT get_isAcceleratorPointerTagLiveRange(   
    BOOL* pFlag);  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pFlag`  
- \[out\] указатель на `BOOL`, указывающее, соответствует ли символ на символ диапазона определения.  
+ [out] Указатель на `BOOL` , указывающее, соответствует ли символ к символу Определение диапазона.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_ОК`; в противном случае передачи `S_FALSE` или код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

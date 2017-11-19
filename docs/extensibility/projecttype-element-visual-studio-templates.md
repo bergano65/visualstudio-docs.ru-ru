@@ -4,47 +4,31 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#ProjectType
-helpviewer_keywords:
-- ProjectType element [Visual Studio project templates]
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#ProjectType
+helpviewer_keywords: ProjectType element [Visual Studio project templates]
 ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
-caps.latest.revision: 19
+caps.latest.revision: "19"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d23be61b83cd3c62b6ab33a271968f500ad8ff81
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: fb177139491236cf518aba4e7f2effd213c1a469
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>Элемент ProjectType (шаблоны Visual Studio)
-Относит шаблон проекта, чтобы он отображался в указанной группе в **новый проект** или **Add New Item** диалоговое окно.  
+Относит шаблон проекта, чтобы он отображался в указанной группе в **новый проект** или **Добавление нового элемента** диалоговое окно.  
   
 > [!WARNING]
->  Шаблоны проектов, поддерживаются для C++, начиная с версии Visual Studio 2012. Они не поддерживаются для C++ в Visual Studio 2010 и более ранних версий.  
+>  Шаблоны проектов поддерживаются для C++, начиная с Visual Studio 2012. Они не поддерживаются для C++ в Visual Studio 2010 и более ранних версий.  
   
- \<VSTemplate настроек  
- \<TemplateData настроек  
- \<ProjectType настроек  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<ProjectType >  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -70,18 +54,18 @@ ms.lasthandoff: 02/22/2017
 ## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Это значение указывает тип проекта шаблона будет создан и должно содержать одно из следующих значений:  
+ Это значение указывает тип шаблона проекта будет создан и должен содержать один из следующих значений:  
   
 -   `CSharp`: Указывает, что этот шаблон создает [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] проекта или элемента.  
   
 -   `VisualBasic`: Указывает, что этот шаблон создает [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] проекта или элемента.  
   
--   `Web`: Указывает, что этот шаблон создает веб-проекта или элемента. Если `ProjectType` это значение содержится элемент, язык проект или элемент определен в [элемент ProjectSubType (шаблоны Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
+-   `Web`: Указывает, что этот шаблон создает веб-проекта или элемента. Если `ProjectType` это значение содержится элемент, определенный язык проекта или элемента в [элемент ProjectSubType (шаблоны Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
   
 ## <a name="remarks"></a>Примечания  
  `ProjectType` — обязательный дочерний элемент элемента `TemplateData`.  
   
- Значение `ProjectType` элемент указывает, когда шаблон находится в **новый проект** или **Add New Item** диалоговое окно. Например, шаблон с `ProjectType` значение `CSharp` отображается под **Visual C#** узел в **новый проект** диалоговое окно.  
+ Значение `ProjectType` элемент определяет расположение шаблона в **новый проект** или **Добавление нового элемента** диалоговое окно. Например, шаблон с `ProjectType` значение `CSharp` отображается под **Visual C#** узел в **новый проект** диалоговое окно.  
   
  Подтип шаблона можно указать с помощью [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) элемента.  
   

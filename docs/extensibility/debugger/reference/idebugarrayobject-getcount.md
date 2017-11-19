@@ -1,53 +1,53 @@
 ---
-title: "IDebugArrayObject::GetCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugArrayObject::GetCount"
-helpviewer_keywords: 
-  - "Метод IDebugArrayObject::GetCount"
+title: "IDebugArrayObject::GetCount | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugArrayObject::GetCount
+helpviewer_keywords: IDebugArrayObject::GetCount method
 ms.assetid: 7931f3f7-033c-4bf8-8abd-95183952ebb0
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 7c7a860dd1039f5b2e5a2049674ba78a91af7741
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugArrayObject::GetCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Возвращает число элементов в массиве.  
+# <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
+Получает число элементов в массиве.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 [C++]  
-HRESULT GetCount(   
-   DWORD* pdwElements  
+HRESULT GetCount(   
+   DWORD* pdwElements  
 );  
 ```  
   
 ```  
 [C#]  
 int GetCount(  
-   out uint pdwElements  
+   out uint pdwElements  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pdwElements`  
- \[out\] возвращает число.  
+ [out] Возвращает число.  
   
-## Возвращаемое значение  
- В случае успеха возвращает значение S\_OK; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Этот метод видит любые элементы объекта массива как одномерный массив, даже если объект массива является многомерным.  Например, если массив `myarray[3][2][6]`этот метод вернул бы 36  `pdwElements` параметр.  Используйте [GetElement](../Topic/IDebugArrayObject::GetElement.md) метод, чтобы извлечь отдельные элементы поочередно.  
+## <a name="remarks"></a>Примечания  
+ Этот метод видит все элементы объекта массива как одномерный массив, даже если объект array является многомерным. Например, если массив `myarray[3][2][6]`, этот метод вернет 36 в `pdwElements` параметра. Используйте [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) метод для извлечения отдельных элементов одной за раз.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

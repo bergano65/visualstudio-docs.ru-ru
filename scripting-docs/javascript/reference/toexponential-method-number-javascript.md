@@ -1,54 +1,55 @@
 ---
-title: "Метод toExponential (Number) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "toExponential"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "toExponential - метод"
+title: "Метод toExponential (Number) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: toExponential
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: toExponential method
 ms.assetid: 7c4a6d84-3c1f-4cc4-a67d-7753e5d4ed66
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fff2f2bc0c443fa9308c8d01dcea42a3cec9ff04
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод toExponential (Number) (JavaScript)
-Представляет число в экспоненциальной нотации.  
+# <a name="toexponential-method-number-javascript"></a>Метод toExponential (Number) (JavaScript)
+Представляет число в экспоненциальном представлении.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 numObj. toExponential([fractionDigits])  
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `numObj`  
- Обязательный.  Объект **Number**.  
+ Обязательный. Объект **номер** объекта.  
   
  `fractionDigits`  
- Необязательный.  Количество разрядов после десятичной запятой.  Это число должно находиться в диапазоне от 0 до 20 включительно.  
+ Необязательно. Количество цифр после десятичной запятой. Должен быть в диапазоне 0 - 20, включительно.  
   
-## Возвращаемое значение  
- Возвращает строковое представление числа в экспоненциальной нотации.  Строка содержит одну цифру перед десятичной запятой, а после запятой может содержать то количество цифр, которое указано в параметре `fractionDigits`.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Возвращает строковое представление числа в экспоненциальном представлении. Строка содержит одну цифру перед десятичной запятой и может содержать `fractionDigits` цифры после него.  
   
- Если параметр `fractionDigits` не указан, метод `toExponential` возвращает столько цифр, сколько необходимо для уникального определения числа.  
+ Если `fractionDigits` не указан, `toExponential` метод возвращает количество цифр, необходимые для уникального определения числа.  
   
-## Пример  
+## <a name="example"></a>Пример  
   
-```javascript  
+```JavaScript  
 var num = new Number(123);  
 var exp = num.toExponential();  
 document.write(exp);  
@@ -61,14 +62,13 @@ document.write(exp);
 // Output:   
 // 1.23e+2  
 // 1.23456e+2  
-  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
- **Относится к**: [Объект Number](../../javascript/reference/number-object-javascript.md)  
+ **Применяется к**: [число объектов](../../javascript/reference/number-object-javascript.md)  
   
-## См. также  
- [Метод toFixed \(Number\)](../../javascript/reference/tofixed-method-number-javascript.md)   
- [Метод toPrecision \(Number\)](../../javascript/reference/toprecision-method-number-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Метод toFixed (Number)](../../javascript/reference/tofixed-method-number-javascript.md)   
+ [Метод toPrecision (Number)](../../javascript/reference/toprecision-method-number-javascript.md)

@@ -1,5 +1,5 @@
 ---
-title: Directly access the database with a TableAdapter | Microsoft Docs
+title: "Прямой доступ к базе данных с помощью адаптера таблицы | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -9,8 +9,6 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
-- C++
-- aspx
 helpviewer_keywords:
 - databases [Visual Basic], accessing with a TableAdapter
 - DBDirect methods
@@ -24,66 +22,54 @@ helpviewer_keywords:
 - saving data
 - TableAdapters
 ms.assetid: 012c5924-91f7-4790-b2a6-f51402b7014b
-caps.latest.revision: 12
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 2d3b6a7be25b04254cd4cdefd23f7edac2f93cd7
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: bd8a4c54ba67af567e28e27e5d70d3576645f496
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="directly-access-the-database-with-a-tableadapter"></a>Directly access the database with a TableAdapter
-In addition to the `InsertCommand`, `UpdateCommand`, and `DeleteCommand`, TableAdapters are created with methods that can be run directly against the database. These methods (`TableAdapter.Insert`, `TableAdapter.Update`, and `TableAdapter.Delete`) can be called to manipulate data directly in the database.  
+# <a name="directly-access-the-database-with-a-tableadapter"></a>Прямой доступ к базе данных с помощью адаптера таблицы
+В дополнение к `InsertCommand`, `UpdateCommand`, и `DeleteCommand`, адаптеры таблиц создаются с помощью методов, которые могут быть запущены напрямую с базой данных. Эти методы (`TableAdapter.Insert`, `TableAdapter.Update`, и `TableAdapter.Delete`) может быть вызван для работы с данными непосредственно в базе данных.  
   
- If you don't want to create these direct methods, set the TableAdapter's `GenerateDbDirectMethods` property to `false` in the **Properties** window. If any queries  are added to a TableAdapter in addition to the TableAdapter's main query, they are standalone queries that don't generate these DbDirect methods.  
+ Если вы не хотите создавать эти непосредственные методы, задайте `GenerateDbDirectMethods` свойства `false` в **свойства** окна. Если помимо основного запроса адаптера таблицы TableAdapter будут добавлены все запросы, они являются отдельными запросами, не создают эти методы DbDirect.  
   
-## <a name="send-commands-directly-to-a-database"></a>Send commands directly to a database  
- Call the TableAdapter DbDirect method that performs the task you are trying to accomplish.  
+## <a name="send-commands-directly-to-a-database"></a>Отправлять команды в базу данных  
+ Вызовите метод DbDirect адаптера таблицы, который выполняет задачу, которую вы пытаетесь выполнить.  
   
-#### <a name="to-insert-new-records-directly-into-a-database"></a>To insert new records directly into a database  
+#### <a name="to-insert-new-records-directly-into-a-database"></a>Для вставки новых записей непосредственно в базу данных  
   
--   Call the TableAdapter's `Insert` method, passing in the values for each column as parameters. The following procedure uses the `Region` table in the Northwind databaseas an example.  
-  
-    > [!NOTE]
-    >  If you do not have an instance available, instantiate the TableAdapter that you want to use.  
-  
-     [!code-vb[VbRaddataSaving#15](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_1.vb)]  [!code-cs[VbRaddataSaving#15](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_1.cs)]  
-  
-#### <a name="to-update-records-directly-in-a-database"></a>To update records directly in a database  
-  
--   Call the TableAdapter's `Update` method, passing in the new and original values for each column as parameters.  
+-   Вызов метода `Insert` метод, передав значения для каждого столбца в качестве параметров. В следующей процедуре используется `Region` таблицы в базе данных "Борей" в качестве примера.  
   
     > [!NOTE]
-    >  If you do not have an instance available, instantiate the TableAdapter that you want to use.  
+    >  Если экземпляра нет, создайте экземпляр адаптера таблицы, который вы хотите использовать.  
   
-     [!code-vb[VbRaddataSaving#18](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_2.vb)]  [!code-cs[VbRaddataSaving#18](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_2.cs)]  
+     [!code-vb[VbRaddataSaving#15](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_1.vb)]
+     [!code-csharp[VbRaddataSaving#15](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_1.cs)]  
   
-#### <a name="to-delete-records-directly-from-a-database"></a>To delete records directly from a database  
+#### <a name="to-update-records-directly-in-a-database"></a>Чтобы обновить записи непосредственно в базе данных  
   
--   Call the TableAdapter's `Delete` method, passing in the values for each column as parameters of the `Delete` method. The following procedure uses the `Region` table in the Northwind database as an example.  
+-   Вызов метода `Update` метод, передав новые и оригинальные значения для каждого столбца в качестве параметров.  
   
     > [!NOTE]
-    >  If you do not have an instance available, instantiate the TableAdapter that you want to use.  
+    >  Если экземпляра нет, создайте экземпляр адаптера таблицы, который вы хотите использовать.  
   
-     [!code-vb[VbRaddataSaving#21](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_3.vb)]  [!code-cs[VbRaddataSaving#21](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_3.cs)]  
+     [!code-vb[VbRaddataSaving#18](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_2.vb)]
+     [!code-csharp[VbRaddataSaving#18](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_2.cs)]  
   
-## <a name="see-also"></a>See Also  
- [Fill datasets by using TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
+#### <a name="to-delete-records-directly-from-a-database"></a>Для удаления записей непосредственно из базы данных  
+  
+-   Вызов метода `Delete` метод, передав значения для каждого столбца в качестве параметров `Delete` метод. В следующей процедуре используется `Region` таблицы в базе данных "Борей" в качестве примера.  
+  
+    > [!NOTE]
+    >  Если экземпляра нет, создайте экземпляр адаптера таблицы, который вы хотите использовать.  
+  
+     [!code-vb[VbRaddataSaving#21](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_3.vb)]
+     [!code-csharp[VbRaddataSaving#21](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_3.cs)]  
+  
+## <a name="see-also"></a>См. также  
+ [Заполнение наборов данных с помощью адаптера таблицы](../data-tools/fill-datasets-by-using-tableadapters.md)

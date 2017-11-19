@@ -1,28 +1,29 @@
 ---
-title: "How to: Generate Templates from Templates By Using Escape Sequences | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "text templates, generating templates from templates"
+title: "Как: создание шаблонов из шаблонов с помощью Escape-последовательности | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: text templates, generating templates from templates
 ms.assetid: 4126156a-7cea-48b8-925e-7790806cfe6c
-caps.latest.revision: 35
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 35
+caps.latest.revision: "35"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 421b8a8bde2bb383889bcb58915fa8a3acb027cf
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# How to: Generate Templates from Templates By Using Escape Sequences
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Можно создать текстовый шаблон, создающий другой текстовый шаблон, так же, как генерируется текстовый вывод.  Для этого необходимо использовать escape\-последовательности, отмечающие теги текстового шаблона.  Если не использовать escape\-последовательности, сгенерированный текстовый шаблон будет иметь предопределенное значение.  Дополнительные сведения об использовании escape\-последовательностей в текстовых шаблонах см. в разделе [Using Escape Sequences in Text Templates](../modeling/using-escape-sequences-in-text-templates.md).  
+# <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Практическое руководство. Создание шаблонов из шаблонов с помощью escape-последовательностей
+Можно создать текстовый шаблон, создающий другой текстовый шаблон, сгенерированный текстовый вывод. Чтобы сделать это, необходимо использовать escape-последовательности для разграничения теги текстового шаблона. Если не использовать escape-последовательности, сгенерированный текстовый шаблон будет иметь предопределенное значение. Дополнительные сведения об использовании escape-последовательностей в текстовых шаблонах см. в разделе [с помощью Escape-последовательностей в текстовых шаблонах](../modeling/using-escape-sequences-in-text-templates.md).  
   
-### Генерирование текстового шаблона из текстового шаблона  
+### <a name="to-generate-a-text-template-from-within-a-text-template"></a>Создание текстового шаблона из текстового шаблона  
   
--   Используйте в текстовом шаблоне обратную косую черту \(\\\) в качестве escape\-символа для создания необходимых тегов разметки для директив, операторов. выражений и элементов классов в отдельном файле текстового шаблона.  
+-   Используйте обратную косую черту (\\) как escape-символа для создания необходимых тегов разметки в текстовом шаблоне для директив, инструкции, выражения и функции в отдельный текстовый файл шаблона класса.  
   
     ```  
     \<#@ directive \#>  
@@ -31,10 +32,10 @@ caps.handback.revision: 35
     \<#+ classfeature \#>  
     ```  
   
-## Пример  
- В следующем примере escape\-символы используются для создания текстового шаблона из текстового шаблона.  Директива `output` устанавливает тип файла назначения как тип файла текстового шаблона \(.tt\).  
+## <a name="example"></a>Пример  
+ В следующем примере escape-символы для создания текстового шаблона из текстового шаблона. `output` Директива задает целевой тип файла для текстового файла шаблона (.tt).  
   
-```c#  
+```csharp  
 \<#@ output extension=".tt" \#>  
 \<#@ assembly name="System.Xml.dll" \#>  
 \<#@ import namespace="System.Xml" \#>  

@@ -1,59 +1,61 @@
 ---
-title: "Оператор присваивания вычитания (-=) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "-="
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "-= - оператор [JavaScript]"
-  - "операторы присваивания, JavaScript"
-  - "оператор присваивания вычитания [JavaScript]"
+title: "Оператор присваивания вычитания (-=) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: -=
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- subtraction assignment operator [JavaScript]
+- -= operator [JavaScript]
+- assignment operators, JavaScript
 ms.assetid: a03adbd8-75fa-4633-80c5-f7215332a8ef
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 500e5398e8fba4c10eb24e5ccfc64c10414ce9a2
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Оператор присваивания вычитания (-=) (JavaScript)
+# <a name="subtraction-assignment-operator---javascript"></a>Оператор присваивания вычитания (-=) (JavaScript)
 Вычитает значение выражения из значения переменной и присваивает результат переменной.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 result -= expression  
 ```  
   
-## Параметры  
- *result*  
- Любая числовая переменная.  
+## <a name="parameters"></a>Параметры  
+ *результат*  
+ Любой числовой переменной.  
   
- *expression*  
+ *выражение*  
  Произвольное числовое выражение.  
   
-## Заметки  
- Использование оператора `-=` полностью эквивалентно следующей операции:  
+## <a name="remarks"></a>Примечания  
+ С помощью `-=` оператор совпадает следующим образом:  
   
-```javascript  
-result = result – expression  
+```JavaScript  
+result = result - expression  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## См. также  
- [Оператор вычитания \(\-\)](../../javascript/reference/subtraction-operator-decrement-javascript.md)   
+## <a name="see-also"></a>См. также  
+ [Оператор вычитания (-)](../../javascript/reference/subtraction-operator-decrement-javascript.md)   
  [Приоритет операторов](../../javascript/operator-subtractprecedence-javascript.md)   
- [Сводный список операторов \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Сводный список операторов (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

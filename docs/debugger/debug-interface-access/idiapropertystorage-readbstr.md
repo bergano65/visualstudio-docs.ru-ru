@@ -1,50 +1,49 @@
 ---
-title: "IDiaPropertyStorage::ReadBSTR | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaPropertyStorage::ReadBSTR"
+title: "IDiaPropertyStorage::ReadBSTR | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaPropertyStorage::ReadBSTR
 ms.assetid: 7214643b-3286-48ed-90aa-0fe95b4cae5b
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 93ab7271ccef1819e16e4cdb4c690f82bfaeec35
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaPropertyStorage::ReadBSTR
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Считывает `BSTR` значения в наборе свойств.  
+# <a name="idiapropertystoragereadbstr"></a>IDiaPropertyStorage::ReadBSTR
+Считывает `BSTR` значений в наборе свойств.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT ReadBSTR (   
-   PROPID id,  
-   BSTR*  pValue  
+```C++  
+HRESULT ReadBSTR (   
+   PROPID id,  
+   BSTR*  pValue  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `id`  
- \[in\] идентификатор свойства, которое необходимо считать \(`PROPID` определяет, а в WTypes.h  `ULONG`\).  
+ [in] Идентификатор свойства для чтения (`PROPID` определяется в файле WTypes.h как `ULONG`).  
   
  `pValue`  
- \[out\] возвращает значение свойства.  
+ [out] Возвращает значение свойства.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  Возвращает `E_INVALIDARG` если свойство не принадлежит к типу  `BSTR`.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Возвращает `E_INVALIDARG` Если свойство не имеет типа `BSTR`.  
   
-## Заметки  
- A `BSTR` определяет окнами, как нул\-завершенная строка символов юникода.  
+## <a name="remarks"></a>Примечания  
+ Объект `BSTR` определяется операционной системой Windows как строку расширенных символов с завершающим нулевым символом.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

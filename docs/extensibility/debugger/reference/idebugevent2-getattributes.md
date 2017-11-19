@@ -1,52 +1,52 @@
 ---
-title: "IDebugEvent2::GetAttributes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEvent2::GetAttributes"
-helpviewer_keywords: 
-  - "IDebugEvent2::GetAttributes"
+title: "IDebugEvent2::GetAttributes | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEvent2::GetAttributes
+helpviewer_keywords: IDebugEvent2::GetAttributes
 ms.assetid: 2ac5b5fb-da17-43f7-811a-313f677e60d7
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ff7b568feb2eddff3d712c494e610fc6b9a6b262
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEvent2::GetAttributes
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Получает атрибуты этого события отладки.  
+# <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
+Получает атрибуты для этого события отладки.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetAttribute(   
-   DWORD* pdwAttrib  
+```cpp  
+HRESULT GetAttribute(   
+   DWORD* pdwAttrib  
 );  
 ```  
   
-```c#  
-int GetAttribute(   
-   out uint pdwAttrib  
+```csharp  
+int GetAttribute(   
+   out uint pdwAttrib  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pdwAttrib`  
- \[out\] сочетание пометит из [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) перечисление.  
+ [out] Сочетание флагов из [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) перечисления.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- IDebugEvent2 интерфейс общим для всех событий.  Этот метод описывает тип события; например, синхронный или асинхронный события и события остановки.  
+## <a name="remarks"></a>Примечания  
+ [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) интерфейса являются общими для всех событий. Этот метод описывается тип события; Например, события синхронным или асинхронным, и это событие остановки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md)

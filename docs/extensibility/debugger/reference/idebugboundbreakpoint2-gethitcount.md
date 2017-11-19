@@ -1,53 +1,54 @@
 ---
-title: "IDebugBoundBreakpoint2::GetHitCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBoundBreakpoint2::GetHitCount"
-helpviewer_keywords: 
-  - "Метод GetHitCount"
-  - "Метод IDebugBoundBreakpoint2::GetHitCount"
+title: "IDebugBoundBreakpoint2::GetHitCount | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBoundBreakpoint2::GetHitCount
+helpviewer_keywords:
+- GetHitCount method
+- IDebugBoundBreakpoint2::GetHitCount method
 ms.assetid: 23481f37-047c-41d2-8286-4da1f4084961
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5341a6c953a91d34f83421b620a7078a2250864d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBoundBreakpoint2::GetHitCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Возвращает текущее количество вариантов для этого прыгните точка останова.  
+# <a name="idebugboundbreakpoint2gethitcount"></a>IDebugBoundBreakpoint2::GetHitCount
+Возвращает текущий счетчик числа попаданий для данная связанная точка останова.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetHitCount(   
-   DWORD* pdwHitCount  
+```cpp  
+HRESULT GetHitCount(   
+   DWORD* pdwHitCount  
 );  
 ```  
   
-```c#  
-int GetHitCount(   
-   out uint pdwHitCount  
+```csharp  
+int GetHitCount(   
+   out uint pdwHitCount  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pdwHitCount`  
- \[out\] возвращает число вариантов.  
+ [out] Возвращает число попаданий.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  Возвращает `E_BP_DELETED` если состояние связанного объекта точки останова равно  `BPS_DELETED` \(часть   [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md) перечисление\).  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Возвращает `E_BP_DELETED` Если состояние объекта связанная точка останова устанавливается `BPS_DELETED` (частью [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) перечисления).  
   
-## Заметки  
- Количество вариантов, сколько раз эта точка останова горела во время запуска текущего сеанса.  
+## <a name="remarks"></a>Примечания  
+ Число попаданий — количество раз, когда результат этой точки останова во время выполнения текущего сеанса.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
- [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md)
+ [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

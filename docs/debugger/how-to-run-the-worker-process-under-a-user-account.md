@@ -1,36 +1,39 @@
 ---
-title: "Практическое руководство. Выполнение рабочего процесса с учетной записью пользователя | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "учетные записи пользователей, aspnet_wp.exe"
-  - "Отладка веб-приложений ASP.NET"
-  - "средства, aspnet_wp.exe"
-  - "ASP.NET, средства"
-  - "aspnet_wp.exe"
+title: "Как: выполнение рабочего процесса с учетной записью пользователя | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- user accounts, aspnet_wp.exe
+- ASP.NET, debugging Web applications
+- tools, aspnet_wp.exe
+- ASP.NET, tools
+- aspnet_wp.exe
 ms.assetid: b58e97b1-e62a-4318-aea4-52276ea20735
-caps.latest.revision: 32
-caps.handback.revision: 32
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "32"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8b823675623f20df49edb87582f3e40695aec50e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Выполнение рабочего процесса с учетной записью пользователя
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Практическое руководство. Выполнение рабочего процесса с учетной записью пользователя
 Для настройки компьютера, чтобы можно было выполнить рабочий процесс [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe или w3wp.exe) с учетной записью пользователя, выполните следующие действия.  
+
+ > [!IMPORTANT]
+ > Начиная с Windows Server 2008 R2, мы рекомендуем использовать [ApplicationPoolIdentity](https://docs.microsoft.com/en-us/iis/manage/configuring-security/application-pool-identities) с удостоверением для каждого пула приложений.
   
 ## <a name="procedure"></a>Процедура  
   
@@ -38,11 +41,11 @@ manager: "ghogen"
   
 1.  Откройте файл machine.config в папке CONFIG данного компьютера, согласно пути, указанному при установке среды выполнения.  
   
-2.  Найти &lt;processModel&gt; и измените атрибуты пользователя и пароль, имя и пароль учетной записи пользователя, необходимо выполнить aspnet_wp.exe.  
+2.  Найти &lt;processModel&gt; и измените атрибуты пользователя и пароль для имени и пароля учетной записи пользователя, необходимо выполнить aspnet_wp.exe.  
   
 3.  Сохраните файл machine.config.  
   
-4.  По умолчанию в [!INCLUDE[winxpsvr](../debugger/includes/winxpsvr_md.md)]установлены службы IIS 6.0. Соответствующий рабочий процесс — w3wp.exe. Чтобы выполнить в режиме IIS 6.0 с aspnet_wp.exe в качестве рабочего процесса, необходимо выполнить следующие действия:  
+4.  По умолчанию в [!INCLUDE[winxpsvr](../debugger/includes/winxpsvr_md.md)] установлены службы IIS 6.0. Соответствующий рабочий процесс — w3wp.exe. Чтобы выполнить в режиме IIS 6.0 с aspnet_wp.exe в качестве рабочего процесса, необходимо выполнить следующие действия:  
   
     1.  Нажмите кнопку **Пуск**, щелкните пункт **Администрирование** , затем выберите пункт **Службы IIS**.  
   
@@ -66,7 +69,7 @@ manager: "ghogen"
     net start w3svc  
     ```  
   
-6.  Найдите папку Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files, которая находится по тому же пути, что и папка CONFIG. Щелкните правой кнопкой мыши папку Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files и выберите в контекстном меню пункт **Свойства** .  
+6.  Найдите папку Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files, которая находится по тому же пути, что и папка CONFIG. Щелкните правой кнопкой мыши временный [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] файлы, папки и выберите **свойства** в контекстном меню.  
   
 7.  В диалоговом окне **Свойства: Temporary ASP.NET Files** перейдите на вкладку **Безопасность** .  
   
@@ -85,5 +88,6 @@ manager: "ghogen"
 13. Нажмите кнопку **OK** , чтобы закрыть диалоговое окно **Свойства Temporary ASP.NET Files** .  
   
 ## <a name="see-also"></a>См. также  
-[Отладка ASP.NET: Системные требования](../debugger/aspnet-debugging-system-requirements.md)  
+[Отладка приложений ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
+[Отладка ASP.NET: системные требования](../debugger/aspnet-debugging-system-requirements.md)  
   

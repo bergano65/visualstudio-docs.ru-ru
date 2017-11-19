@@ -1,40 +1,42 @@
 ---
-title: "Расширение настройки пользователя и параметры | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "настройки пользователя"
-  - "параметры пользователей [пакет SDK Visual Studio]"
-  - "Диалоговое окно «Параметры», управление с помощью Visual Studio SDK"
-  - "Пакеты VSPackage, настройки пользователя"
+title: "Расширение параметров пользователя и параметры | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- user preferences
+- user settings [Visual Studio SDK]
+- Options dialog box, controlling with the Visual Studio SDK
+- VSPackages, user preferences
 ms.assetid: 5bb6277a-8c9d-48c8-9b4e-1cb3052caded
-caps.latest.revision: 22
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 22
+caps.latest.revision: "22"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e8378114348e2cb384ab88c83e36bafc7294d871
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Расширение настройки пользователя и параметры
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-В Visual Studio существует два основных способа для сохранения настроек пользователей.**Инструменты и параметры** страницы позволяют пользователям задавать свои собственные значения для различных видов параметры, общие и зависящие от языка. Параметры пользователя позволяют задать общие свойства конфигурации Visual Studio. Дополнительные сведения о страницах параметров в разделе [Параметры и параметры страницы](../extensibility/internals/options-and-options-pages.md). Дополнительные сведения о пользовательских параметрах см. в разделе [Поддержка параметров пользователя](../extensibility/internals/support-for-user-settings.md).  
+# <a name="extending-user-settings-and-options"></a>Расширение настройки пользователя и параметры
+В Visual Studio существует два основных способа для сохранения настроек пользователей. **Сервис / Параметры** страницы позволяют пользователям задавать свои собственные значения для различных видов параметры, общие и зависящие от языка. Параметры пользователя позволяют пользователям указать общие свойства конфигурации Visual Studio. Дополнительные сведения о страницах параметров см. в разделе [параметры и параметры страницы](../extensibility/internals/options-and-options-pages.md). Дополнительные сведения о пользовательских параметрах см. в разделе [Поддержка пользовательских параметров](../extensibility/internals/support-for-user-settings.md).  
   
  [Создание страницы параметров](../extensibility/creating-an-options-page.md)  
- Объясняется, как создать страницу параметров.  
+ Описание способов создания страницы параметров.  
   
- [Создание категория параметров](../extensibility/creating-a-settings-category.md)  
- Объясняется, как создать категорию параметров.  
+ [Создание категории параметров](../extensibility/creating-a-settings-category.md)  
+ Описывается процесс создания категории параметров.  
   
- [С помощью параметров магазина](../extensibility/using-the-settings-store.md)  
- Описание способов использования хранилища параметров.  
+ [Использование хранилища параметров](../extensibility/using-the-settings-store.md)  
+ Объясняется, как использовать параметры хранилища.  
   
  [Получение сведений о службе из хранилища параметров](../extensibility/getting-service-information-from-the-settings-store.md)  
  Объясняется, как получить доступные службы из хранилища настроек.  
   
- [Запись в хранилище настроек пользователя](../extensibility/writing-to-the-user-settings-store.md)  
- Описание способов записи в хранилище настроек пользователя.
+ [Запись в хранилище параметров пользователя](../extensibility/writing-to-the-user-settings-store.md)  
+ Объясняет, как для записи в хранилище настроек пользователя.

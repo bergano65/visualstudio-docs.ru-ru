@@ -1,27 +1,30 @@
 ---
-title: "IDebugSyncOperation::GetTargetThread | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugSyncOperation::GetTargetThread | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugSyncOperation.GetTargetThread
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IDebugSyncOperation::GetTargetThread"
+helpviewer_keywords: IDebugSyncOperation::GetTargetThread
 ms.assetid: e6eeeb90-b5ed-4727-8434-fa3186c25013
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: df3e65d53e20dd51d045f26855c4f5e058dff159
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugSyncOperation::GetTargetThread
-Возвращает поток приложения целевого объекта для синхронной операции.  
+# <a name="idebugsyncoperationgettargetthread"></a>IDebugSyncOperation::GetTargetThread
+Возвращает целевой поток приложения для данной синхронной операции.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT GetTargetThread(  
@@ -29,19 +32,19 @@ HRESULT GetTargetThread(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppatTarget`  
- \[out\] поток приложения целевого объекта для синхронной операции.  
+ [out] Целевой поток приложения для данной синхронной операции.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
- Этот метод возвращает поток приложения целевого объекта для синхронной операции.  
+## <a name="remarks"></a>Примечания  
+ Этот метод возвращает целевой поток приложения для данной синхронной операции.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IDebugSyncOperation](../../winscript/reference/idebugsyncoperation-interface.md)

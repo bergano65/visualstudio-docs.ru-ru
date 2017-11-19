@@ -1,27 +1,30 @@
 ---
-title: "IActiveScript::SetScriptState | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IActiveScript::SetScriptState | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScript.SetScriptState
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScript_SetScriptState"
+helpviewer_keywords: IActiveScript_SetScriptState
 ms.assetid: f2b2700c-0c8d-40db-ad84-dc751c5d9bc2
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 146cd5e4f2b6137fc6fe6e32e8ca153c3aab8fd5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScript::SetScriptState
-Помещает обработчик скриптов в заданном состоянии.  Этот метод может быть вызван из потоков, не относящихся к базовому без привести к появлению выноски отличные от причины для размещения объектов или к интерфейсу [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md).  
+# <a name="iactivescriptsetscriptstate"></a>IActiveScript::SetScriptState
+Помещает обработчик скриптов в указанном состоянии. Этот метод может вызываться из потоков, отличной от base не входили в системе счисления с основанием выноски объектов узла или [iactivescriptsite —](../../winscript/reference/iactivescriptsite.md) интерфейса.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT SetScriptState(  
@@ -29,25 +32,25 @@ HRESULT SetScriptState(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ss`  
- \[in\] задает обработчик скриптов к заданному условию.  Может принимать одно из значений, определенных в перечислении [Перечисление SCRIPTSTATE](../../winscript/reference/scriptstate-enumeration.md).  
+ [in] Задает обработчик скриптов в указанное состояние. Может принимать одно из значений, определенных в [перечисление SCRIPTSTATE](../../winscript/reference/scriptstate-enumeration.md) перечисления.  
   
-## Возвращаемое значение  
- Возвращать одно из следующих значений:  
+## <a name="return-value"></a>Возвращаемое значение  
+ Возвращает одно из следующих значений:  
   
 |Возвращаемое значение|Значение|  
-|---------------------------|--------------|  
-|`S_OK`|Успех.|  
-|`E_FAIL`|Обработчик скриптов не поддерживает вернитесь к инициализированному состояние.  Основное приложение должно отменить этот обработчик сценариев и создать, инициализировать и загрузить новый обработчик скриптов для достижения одного результата.|  
-|`E_UNEXPECTED`|Вызов не ожидался \(например, обработчик скриптов еще не был загружен или не был инициализирован\) и поэтому не был сбой.|  
-|`OLESCRIPT_S_PENDING`|Метод был поставлен в очередь успешно, но состояние не изменилось.  При изменениях состояния, сайт, будут Позвонитьы обратно с помощью метода [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md).|  
-|`S_FALSE`|Метод выполнен успешно, но были уже скрипт в определенном состоянии.|  
+|------------------|-------------|  
+|`S_OK`|Выполнено.|  
+|`E_FAIL`|Обработчик скриптов не поддерживает переход обратно в исходное состояние. Имя узла необходимо отменить этот обработчик скриптов и создать, инициализировать и загрузить новый обработчик сценариев для достижения такого же эффекта.|  
+|`E_UNEXPECTED`|Вызов не ожидалось (например, обработчик сценариев еще не загрузки или инициализации) и поэтому не удалось выполнить.|  
+|`OLESCRIPT_S_PENDING`|Метод в очередь и успешно, но состояние еще не изменилась. При изменения состояния, узел получит обратный вызов через [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) метод.|  
+|`S_FALSE`|Метод успешно выполнен, но скрипт уже был в указанном состоянии.|  
   
-## Заметки  
- Дополнительные сведения о состояниях обработчика скриптов см. в разделе состояний обработчика скриптов [Обработчики скриптов Windows](../../winscript/windows-script-engines.md).  
+## <a name="remarks"></a>Примечания  
+ Дополнительные сведения о сценариях engine состояний см. разделе состояний обработчика сценария [обработчики скриптов Windows](../../winscript/windows-script-engines.md) .  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IActiveScript::Clone](../../winscript/reference/iactivescript-clone.md)   
  [IActiveScript::GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)   
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)   

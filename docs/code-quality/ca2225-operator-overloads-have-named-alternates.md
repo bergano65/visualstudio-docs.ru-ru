@@ -1,11 +1,10 @@
 ---
-title: 'CA2225: Operator overloads have named alternates | Microsoft Docs'
+title: "CA2225: Перегрузки операторов с именами | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,110 +14,95 @@ helpviewer_keywords:
 - OperatorOverloadsHaveNamedAlternates
 - CA2225
 ms.assetid: af8f7ab1-63ad-4861-afb9-b7a7a2be15e1
-caps.latest.revision: 20
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: bc8e648b8a463b08ce520cde7bcec8efaeeec4c8
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 07d15e5ec123e645a7607f16b6020487d4c0fc2a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Operator overloads have named alternates
+# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: для перезагрузок оператора существуют дополнения с именами
 |||  
 |-|-|  
 |TypeName|OperatorOverloadsHaveNamedAlternates|  
 |CheckId|CA2225|  
-|Category|Microsoft.Usage|  
-|Breaking Change|Non Breaking|  
+|Категория|Microsoft.Usage|  
+|Критическое изменение|Не критическое|  
   
-## <a name="cause"></a>Cause  
- An operator overload was detected, and the expected named alternative method was not found.  
+## <a name="cause"></a>Причина  
+ Обнаружена перегрузка оператора, однако не найден ожидаемый именованный альтернативный метод.  
   
-## <a name="rule-description"></a>Rule Description  
- Operator overloading allows the use of symbols to represent computations for a type. For example, a type that overloads the plus symbol (+) for addition would typically have an alternative member named 'Add'. The named alternative member provides access to the same functionality as the operator, and is provided for developers who program in languages that do not support overloaded operators.  
+## <a name="rule-description"></a>Описание правила  
+ Перегрузка операторов позволяет использовать символы, представляющие вычисления для типа. Например тип, который перегружает знак плюса (+) для добавления обычно есть другой член с именем «Add». Именованный альтернативный член предоставляет доступ к те же функциональные возможности, что и оператор и предоставляется для разработчиков, которые программируют на языках, не поддерживает перегруженные операторы.  
   
- This rule examines the operators listed in the following table.  
+ Данное правило отслеживает операторы, перечисленные в следующей таблице.  
   
-|C#|Visual Basic|C++|Alternate name|  
+|C#|Visual Basic|C++|Альтернативное имя|  
 |---------|------------------|-----------|--------------------|  
-|+ (binary)|+|+ (binary)|Add|  
+|+ (двоичный)|+|+ (двоичный)|Add|  
 |+=|+=|+=|Add|  
-|&|And|&|BitwiseAnd|  
-|&=|And=|&=|BitwiseAnd|  
-|&#124;|Or|&#124;|BitwiseOr|  
-|&#124;=|Or=|&#124;=|BitwiseOr|  
-|--|N/A|--|Decrement|  
+|&|И|&|BitwiseAnd|  
+|&=|И =|&=|BitwiseAnd|  
+|&#124;|Или|&#124;|BitwiseOr|  
+|&#124;=|Или =|&#124;=|BitwiseOr|  
+|--|Н/Д|--|Decrement|  
 |/|/|/|Divide|  
 |/=|/=|/=|Divide|  
-|==|=|==|Equals|  
+|==|=|==|Равно|  
 |^|Xor|^|Xor|  
-|^=|Xor=|^=|Xor|  
-|>|>|>|Compare|  
-|>=|>=|>=|Compare|  
-|++|N/A|++|Increment|  
-|<>|!=|Equals|  
-|<<|<<|<<|LeftShift|  
-|<<=|<<=|<<=|LeftShift|  
-|<|<|<|Compare|  
-|<=|<=|\<=|Compare|  
-|&&|N/A|&&|LogicalAnd|  
-|&#124;&#124;|N/A|&#124;&#124;|LogicalOr|  
-|!|N/A|!|LogicalNot|  
-|%|Mod|%|Mod or Remainder|  
-|%=|N/A|%=|Mod|  
-|* (binary)|*|*|Multiply|  
-|*=|N/A|*=|Multiply|  
-|~|Not|~|OnesComplement|  
-|>>|>>|>>|RightShift|  
-=|N/A|>>=|RightShift|  
-|- (binary)|- (binary)|- (binary)|Subtract|  
-|-=|N/A|-=|Subtract|  
-|true|IsTrue|N/A|IsTrue (Property)|  
-|- (unary)|N/A|-|Negate|  
-|+ (unary)|N/A|+|Plus|  
-|false|IsFalse|False|IsTrue (Property)|  
+|^=|Xor =|^=|Xor|  
+|>|>|>|Сравнение|  
+|>=|>=|>=|Сравнение|  
+|++|Н/Д|++|Increment|  
+|<>|!=|Равно|  
+|<<|<<|<<|Чтения|  
+|<<=|<<=|<<=|Чтения|  
+|<|<|<|Сравнение|  
+|<=|<=|\<=|Сравнение|  
+|&&|Н/Д|&&|LogicalAnd|  
+|&#124;&#124;|Н/Д|&#124;&#124;|LogicalOr|  
+|!|Н/Д|!|LogicalNot|  
+|%|Mod|%|Остаток от деления или остатка|  
+|%=|Н/Д|%=|Mod|  
+|* (двоичный)|*|*|Multiply|  
+|*=|Н/Д|*=|Multiply|  
+|~|не|~|OnesComplement|  
+|>>|>>|>>|Правая|  
+=|Н/Д|>>=|Правая|  
+|-(двоичный)|-(двоичный)|-(двоичный)|Subtract|  
+|-=|Н/Д|-=|Subtract|  
+|true|IsTrue|Н/Д|IsTrue (свойство)|  
+|— (унарные)|Н/Д|-|Инверсия|  
+|+ (унарный)|Н/Д|+|Плюс|  
+|false|IsFalse|False|IsTrue (свойство)|  
   
- N/A == Cannot be overloaded in the selected language.  
+ Н/д == не могут быть перегружены на выбранном языке.  
   
- The rule also checks implicit and explicit cast operators in a type (`SomeType`) by checking for methods named `ToSomeType` and `FromSomeType`.  
+ Данное правило также проверяет неявные и явные операторы приведения в типе (`SomeType`) посредством проверки методов с именем `ToSomeType` и `FromSomeType`.  
   
- In C#, when a binary operator is overloaded, the corresponding assignment operator, if any, is also implicitly overloaded.  
+ В C# при перегрузке двоичного оператора соответствующий оператор присваивания, при его наличии, также неявно перегружается.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, implement the alternative method for the operator; name it using the recommended alternative name.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Чтобы устранить нарушение данного правила, реализуйте альтернативный метод для оператора; использовать рекомендуемые альтернативное имя имен.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule if you are implementing a shared library. Applications can ignore a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ Не отключайте предупреждение из этого правила, если вы реализуете общей библиотеки. Приложения можно игнорировать предупреждение из этого правила.  
   
-## <a name="example"></a>Example  
- The following example defines a structure that violates this rule. To correct the example, add a public `Add(int x, int y)` method to the structure.  
+## <a name="example"></a>Пример  
+ В следующем примере определяется структура, которая нарушает это правило. Чтобы исправить пример, добавьте открытый `Add(int x, int y)` метод в структуре.  
   
  [!code-csharp[FxCop.Usage.OperatorOverloadsHaveNamedAlternates#1](../code-quality/codesnippet/CSharp/ca2225-operator-overloads-have-named-alternates_1.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1046: Do not overload operator equals on reference types](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)  
+## <a name="related-rules"></a>Связанные правила  
+ [CA1046: не перегружайте оператор равенства для ссылочных типов](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)  
   
- [CA2226: Operators should have symmetrical overloads](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)  
+ [CA2226: перегрузки операторов должны быть симметричны](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)  
   
- [CA2224: Override equals on overloading operator equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)  
+ [CA2224: переопределяйте равенство при перегрузке оператора равенства](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)  
   
- [CA2218: Override GetHashCode on overriding Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)  
+ [CA2218: переопределяйте GetHashCode при переопределении Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)  
   
- [CA2231: Overload operator equals on overriding ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
+ [CA2231: перегружать равенство операторов следует при перегрузке ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

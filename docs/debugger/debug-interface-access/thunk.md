@@ -1,66 +1,66 @@
 ---
-title: "Thunk | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "свойства преобразователей [пакет SDK для доступа к интерфейсу отладки]"
-  - "символ преобразователя"
+title: "Преобразователь | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords:
+- thunk properties [DIA SDK]
+- thunk symbol
 ms.assetid: 01abb95f-d89a-465c-a4eb-8e8509598c95
-caps.latest.revision: 17
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 514a0d7cea56158cbe15d59d2a809968b3c86979
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Thunk
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Каждое `thunk` определяет a  `SymTagThunk` тег.  
+# <a name="thunk"></a>Thunk
+Каждый `thunk` определяется `SymTagThunk` тег.  
   
-## Свойства  
- В следующей таблице показаны свойства, которые являются допустимыми для данного типа символов.  
+## <a name="properties"></a>Свойства  
+ Ниже приведены свойства, которые являются допустимыми для этого типа символа.  
   
-|Свойство.|Тип данных|Описание|  
-|---------------|----------------|--------------|  
-|[IDiaSymbol::get\_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Атрибут модификатора доступа, одно из [Перечисление CV\_access\_e](../../debugger/debug-interface-access/cv-access-e.md) значения \(только из пакета SDK для доступа к интерфейсу отладки V8.0 или более поздней версии\).|  
-|[IDiaSymbol::get\_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Часть смещения положения; дополнительные сведения см. в разделе [Перечисление LocationType](../../debugger/debug-interface-access/locationtype.md).|  
-|[IDiaSegment::get\_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|`DWORD`|Часть раздела расположения; дополнительные сведения см. в разделе [Перечисление LocationType](../../debugger/debug-interface-access/locationtype.md).|  
-|[IDiaSymbol::get\_classParent](../Topic/IDiaSymbol::get_classParent.md)|`IDiaSymbol*`|Заключающ родительского класса, если таковой существует \(только в пакет SDK для доступа к интерфейсу отладки V8.0 или более поздней версии\).|  
-|[IDiaSymbol::get\_classParentId](../Topic/IDiaSymbol::get_classParentId.md)|`DWORD`|Идентификатор родительского класса включающего символов \(только из пакета SDK для доступа к интерфейсу отладки V8.0 или более поздней версии\).|  
-|[IDiaSymbol::get\_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|Значение TRUE, если преобразователь помечен как константа \(только в пакет SDK для доступа к интерфейсу отладки V8.0 или более поздней версии\).|  
-|[IDiaSymbol::get\_intro](../../debugger/debug-interface-access/idiasymbol-get-intro.md)|`BOOL`|Значение TRUE, если преобразователь введение в виртуальной функции \(только в пакет SDK для доступа к интерфейсу отладки V8.0 или более поздние версии\)|  
-|[IDiaSymbol::get\_isStatic](../../debugger/debug-interface-access/idiasymbol-get-isstatic.md)|`BOOL`|Значение TRUE, если преобразователь является статическим \(только в пакет SDK для доступа к интерфейсу отладки V8.0 или более поздней версии\).|  
-|[IDiaSymbol::get\_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|Число байтов кода в преобразователе.|  
-|[IDiaSymbol::get\_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Символ, compiland, включающего блока или функции.|  
-|[IDiaSymbol::get\_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|Идентификатор словарного родительского символов.|  
-|[IDiaSymbol::get\_locationType](../Topic/IDiaSymbol::get_locationType.md)|`DWORD`|Конечные точки имеют фиксированное расположение. дополнительные сведения см. в разделе [Местоположения символов](../../debugger/debug-interface-access/symbol-locations.md) перечисление.|  
-|[IDiaSymbol::get\_name](../Topic/IDiaSymbol::get_name.md)|`BSTR`|Имя преобразователя.|  
-|[IDiaSymbol::get\_pure](../../debugger/debug-interface-access/idiasymbol-get-pure.md)|`BOOL`|Значение TRUE, если преобразователь чисто виртуальную \(только в пакет SDK для доступа к интерфейсу отладки V8.0 или более поздней версии\).|  
-|[IDiaSymbol::get\_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md)|`DWORD`|Относительное положение данного преобразователя в пределах своего модуля.|  
-|[IDiaSymbol::get\_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Идентификатор индекса символа.|  
-|[IDiaSymbol::get\_symTag](../Topic/IDiaSymbol::get_symTag.md)|`DWORD`|Возвращает `SymTagThunk` \(одно из  [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) значения\).|  
-|[IDiaSymbol::get\_targetOffset](../../debugger/debug-interface-access/idiasymbol-get-targetoffset.md)|`DWORD`|Часть смещения расположения целевого объекта преобразователя.|  
-|[IDiaSymbol::get\_targetRelativeVirtualAddress](../Topic/IDiaSymbol::get_targetRelativeVirtualAddress.md)|`DWORD`|Относительный виртуальный адрес целевого объекта преобразователя в своем включающем блоке.|  
-|[IDiaSymbol::get\_targetSection](../../debugger/debug-interface-access/idiasymbol-get-targetsection.md)|`DWORD`|Часть раздела целевого объекта преобразователя.|  
-|[IDiaSymbol::get\_targetVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-targetvirtualaddress.md)|`ULONGLONG`|Расположение целевого объекта преобразователя в исполняемом образом.|  
-|[IDiaSymbol::get\_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)|`DWORD`|Тип преобразователя, как определено  [Перечисление THUNK\_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md).|  
-|[IDiaSymbol::get\_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|Тип данного преобразователя \(только из пакета SDK для доступа к интерфейсу отладки V8.0 или более поздней версии\).|  
-|[IDiaSymbol::get\_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|Идентификатор типа символов \(только из пакета SDK для доступа к интерфейсу отладки V8.0 или более поздней версии\).|  
-|[IDiaSymbol::get\_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` если преобразователь не выравниваются \(только в пакет SDK для доступа к интерфейсу отладки V8.0 или более поздней версии\)|  
-|[IDiaSymbol::get\_virtual](../../debugger/debug-interface-access/idiasymbol-get-virtual.md)|`BOOL`|`TRUE` фактически, если преобразователь \(только в пакет SDK для доступа к интерфейсу отладки V8.0 или более поздней версии\).|  
-|[IDiaSymbol::get\_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|Положение этого преобразователя внутри исполняемого образа.|  
-|[IDiaSymbol::get\_virtualBaseOffset](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseoffset.md)|`DWORD`|Смещение в виртуальной таблице к данному преобразователю \(только из пакета SDK для доступа к интерфейсу отладки V8.0 или более поздней версии\).|  
-|[IDiaSymbol::get\_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` если преобразователь помечен как volatile \(только в пакет SDK для доступа к интерфейсу отладки V8.0 или более поздней версии\).|  
+|Свойство|Тип данных|Описание|  
+|--------------|---------------|-----------------|  
+|[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Атрибут модификатор доступа, один из [CV_access_e-перечисление](../../debugger/debug-interface-access/cv-access-e.md) значения (только в версии DIA SDK 8.0 или более поздней версии).|  
+|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Часть смещения расположения; Дополнительные сведения см. в разделе [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md).|  
+|[IDiaSegment::get_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|`DWORD`|Раздел часть расположение; Дополнительные сведения см. в разделе [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md).|  
+|[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Если какие-либо (только в версии DIA SDK 8.0 или более поздней версии), содержащего его родительского класса.|  
+|[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|Идентификатор включающего родительского класса символов (только в версии DIA SDK 8.0 или более поздней версии).|  
+|[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|Значение TRUE, если преобразователь помечен как константа (только в версии DIA SDK 8.0 или более поздней версии).|  
+|[IDiaSymbol::get_intro](../../debugger/debug-interface-access/idiasymbol-get-intro.md)|`BOOL`|Значение TRUE, если преобразователь вводные сведения о виртуальной функции (только в версии DIA SDK 8.0 или более поздней версии)|  
+|[IDiaSymbol::get_isStatic](../../debugger/debug-interface-access/idiasymbol-get-isstatic.md)|`BOOL`|Значение TRUE, если преобразователь считается статическим (только в версии DIA SDK 8.0 или более поздней версии).|  
+|[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|Число байтов кода в преобразователь.|  
+|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Символ компилируемого объекта включающего, блок или функции.|  
+|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|Идентификатор лексической родительского символа.|  
+|[IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)|`DWORD`|Конечные точки имеют статический расположение; Дополнительные сведения см. в разделе [расположения символов](../../debugger/debug-interface-access/symbol-locations.md) перечисления.|  
+|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Имя преобразователя.|  
+|[IDiaSymbol::get_pure](../../debugger/debug-interface-access/idiasymbol-get-pure.md)|`BOOL`|Значение TRUE, если преобразователь чисто виртуальный (только в версии DIA SDK 8.0 или более поздней версии).|  
+|[IDiaSymbol::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md)|`DWORD`|Относительное положение этот преобразователь, его модуля.|  
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Идентификатор индекса символа.|  
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Возвращает `SymTagThunk` (один из [SymTagEnum-перечисление](../../debugger/debug-interface-access/symtagenum.md) значения).|  
+|[IDiaSymbol::get_targetOffset](../../debugger/debug-interface-access/idiasymbol-get-targetoffset.md)|`DWORD`|Часть смещения из расположения целевого объекта преобразователя.|  
+|[IDiaSymbol::get_targetRelativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-targetrelativevirtualaddress.md)|`DWORD`|Относительный виртуальный адрес преобразователя целевого объекта в его внешнем блоке.|  
+|[IDiaSymbol::get_targetSection](../../debugger/debug-interface-access/idiasymbol-get-targetsection.md)|`DWORD`|Часть преобразовать конечный раздел.|  
+|[IDiaSymbol::get_targetVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-targetvirtualaddress.md)|`ULONGLONG`|Позиция преобразовать конечный в исполняемом образе.|  
+|[IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)|`DWORD`|Преобразовать тип в соответствии с определением [thunk_ordinal-перечисление](../../debugger/debug-interface-access/thunk-ordinal.md).|  
+|[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|Тип этого преобразователя (только в версии DIA SDK 8.0 или более поздней версии).|  
+|[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|Идентификатор типа символа (только в версии DIA SDK 8.0 или более поздней версии).|  
+|[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE`Если преобразователь не согласована (только в версии DIA SDK 8.0 или более поздней версии),|  
+|[IDiaSymbol::get_virtual](../../debugger/debug-interface-access/idiasymbol-get-virtual.md)|`BOOL`|`TRUE`Если преобразователь является виртуальным (только в версии DIA SDK 8.0 или более поздней версии).|  
+|[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|Позиция этот преобразователь в исполняемом образе.|  
+|[IDiaSymbol::get_virtualBaseOffset](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseoffset.md)|`DWORD`|Смещение в виртуальной таблице этот преобразователь (только в версии DIA SDK 8.0 или более поздней версии).|  
+|[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE`Если преобразователь помечен как volatile (только в версии DIA SDK 8.0 или более поздней версии).|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Лексическая иерархия символьных типов](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
  [Перечисление LocationType](../../debugger/debug-interface-access/locationtype.md)   
- [Перечисление THUNK\_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md)
+ [Перечисление THUNK_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md)

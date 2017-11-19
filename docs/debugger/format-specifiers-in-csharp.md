@@ -1,11 +1,10 @@
 ---
-title: Format specifiers in the debugger (C#) | Microsoft Docs
+title: "Описателях в отладчике (C#) | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -26,39 +25,23 @@ helpviewer_keywords:
 - format specifiers, debugger
 - debugger, format specifiers recognized by
 ms.assetid: 345c8589-5f36-4d34-a58c-e56271687dd6
-caps.latest.revision: 29
+caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 969a1ccc042ba453fed1f7f774b23a5c8ba971a4
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
-
+ms.openlocfilehash: edb41f8fea8447f8616b4c20f442ffd4fa8b48c8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Format specifiers in C# in the Visual Studio debugger
-You can change the format in which a value is displayed in the **Watch** window using format specifiers. You can also use format specifiers in the **Immediate** window, the **Command** window, and even in source windows. If you pause on an expression in those windows, the result will appear in a DataTip. DataTips will reflect the format specifier in the DataTip display.  
+# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Описатели формата в C# в отладчике Visual Studio
+С помощью описателей формата можно изменить формат, в котором значение отображается в окне **Контрольные значения** . Описатели формата можно также использовать в окне **интерпретации** , окне **команд** и даже в окнах исходного кода. Если вы приостановите выполнение на выражении в одном из этих окон, результат отобразится в подсказке по данным. Отображение результата в подсказке по данным будет соответствовать спецификатору формата.  
   
- To use a format specifier, type the expression followed by a comma. After the comma, add the appropriate specifier.  
+ Чтобы применить спецификатор формата, введите выражение и запятую. После запятой добавьте соответствующий спецификатор.  
   
-## <a name="using-format-specifiers"></a>Using Format Specifiers  
- If you have the following code:  
+## <a name="using-format-specifiers"></a>Использование спецификаторов формата  
+ Предположим, что имеется следующий код:  
   
 ```CSharp  
 {  
@@ -68,25 +51,24 @@ You can change the format in which a value is displayed in the **Watch** window 
 }  
 ```  
   
- Add the `my_var1` variable to the Watch window (while debugging, **Debug > Windows > Watch > Watch 1**) and set the display to hexadecimal (in the **Watch** window, right-click the variable and select **Hexadecimal Display**). Now the **Watch** window shows that it contains the value 0x0065. To see this value expressed as a decimal integer instead of a hexadecimal integer, in the Name column, after the variable name, add the decimal format specifier: **, d**. The Value column now displays the decimal value 101  
+ Добавить `my_var1` переменной в окно контрольных значений (во время отладки, **Отладка > Windows > Контрольные значения > Контрольные значения 1**) и задайте Шестнадцатеричный вывод (в **Контрольные значения** окно, щелкните правой кнопкой мыши переменную и Выберите **Шестнадцатеричный вывод**). Теперь в окне **Контрольные значения** показано значение 0x0065. Чтобы представить это значение в виде десятичного, а не шестнадцатеричного целого числа, в столбце «Имя» после имени переменной добавьте спецификатор десятичного формата: **, d**. В столбце «Значение» теперь отображается десятичное значение 101.  
   
  ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")  
   
-## <a name="format-specifiers"></a>Format Specifiers  
- The following table shows the C# format specifiers recognized by the debugger.  
+## <a name="format-specifiers"></a>Спецификаторы формата  
+ В следующей таблице показаны спецификаторы формата C#, распознаваемые отладчиком.  
   
-|Specifier|Format|Original Watch Value|Displays|  
+|класса хранения|Формат|Исходное контрольное значение|Отображение|  
 |---------------|------------|--------------------------|--------------|  
-|ac|Force evaluation of an expression. This can be useful when implicit evaluation of properties and implicit function calls is turned off.|Message "Implicit function evaluation is turned off by the user"|\<value>|  
-|d|decimal integer|0x0065|101|  
-|dynamic|Displays the specified object using a Dynamic View|Displays all the members of the object, including the Dynamic View|Displays only the Dynamic View|  
-|h|hexadecimal integer|61541|0x0000F065|  
-|nq|string with no quotes|"My String"|My String|  
-|hidden|Displays all public and non-public members|Displays public members|Displays all members|  
-|raw|Displays item as it appears in the raw item node. Valid on proxy objects only.|Dictionary\<T>|Raw View of Dictionary\<T>|  
-|results|Used with a variable of a type that implements IEnumerable or IEnumerable\<T>, usually the result of a query expression. Displays only the members that contain the query result.|Displays all the members.|Displays the members the meet the conditions of the query.|  
+|ac|Принудительное вычисление выражения. Это может быть полезно в том случае, когда неявное вычисление свойств и неявные вызовы функций отключены.|Сообщение «неявное вычисление функций отключена пользователем»|\<Значение >|  
+|d|Десятичное целое число|0x0065|101|  
+|dynamic|Отображает указанный объект с помощью динамического представления.|Отображает все члены объекта, включая динамическое представление|Отображает только динамическое представление|  
+|h|шестнадцатеричное целое число|61541|0x0000F065|  
+|nq|строка без кавычек|"Моя строка"|Моя строка|  
+|hidden|Отображает все открытые и не являющиеся открытыми члены.|Отображение открытых членов|Отображение всех членов|  
+|raw|Отображает элемент в том виде, в котором он отображается в узле необработанного элемента. Допустимо только для прокси-объектов.|Словарь\<T >|Базовое представление Dictionary\<T >|  
+|results|Используется с переменной типа, реализующего интерфейс IEnumerable или IEnumerable\<T >, обычно это результат выражения запроса. Отображает только члены, которые содержат результат запроса.|Отображение всех членов.|Отображение членов, соответствующих условиям запроса.|  
   
-## <a name="see-also"></a>See Also  
- [Watch and QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)   
- [Autos and Locals Windows](../debugger/autos-and-locals-windows.md)
-
+## <a name="see-also"></a>См. также  
+ [Контрольное значение и окна "Быстрая проверка"](../debugger/watch-and-quickwatch-windows.md)   
+ [Окна "Видимые" и "Локальные"](../debugger/autos-and-locals-windows.md)

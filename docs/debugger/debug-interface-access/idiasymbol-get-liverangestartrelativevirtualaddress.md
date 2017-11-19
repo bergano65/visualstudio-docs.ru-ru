@@ -1,55 +1,54 @@
 ---
-title: "IDiaSymbol::get_liveRangeStartRelativeVirtualAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_liveRangeStartRelativeVirtualAddress"
+title: "IDiaSymbol::get_liveRangeStartRelativeVirtualAddress | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
 ms.assetid: 1da52539-9872-4c20-8eaa-74b6cb5f3b02
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7fe43b99ce430e1e06683494fdeb1c5716b30cea
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Возвращает начало диапазона адресов, в котором локальным символ является допустимым.  
+# <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
+Возвращает начало диапазона адресов, в котором локальный символ является допустимой.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT get_liveRangeStartRelativeVirtualAddress (   
-   DWORD* address  
+```C++  
+HRESULT get_liveRangeStartRelativeVirtualAddress (   
+   DWORD* address  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `address`  
- \[out\] возвращает начало диапазона адресов.  
+ [out] Возвращает дату начала диапазона адресов.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  Относительный виртуальный адрес начало диапазона, в котором символ является допустимым.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Возвращаемый относительный виртуальный адрес — это начало диапазона, в котором символ является допустимой.  
   
 > [!NOTE]
->  Возвращен код ошибки означает, что символ " не имеет данные в режиме реального времени диапазона.  
+>  Возвращен код ошибки означает, что символ имеет сведения о динамической диапазоне.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: Dia2.h  
   
- Библиотеки: diaguids.lib  
+ Библиотека: diaguids.lib  
   
- Библиотеки DLL: msdia100.dll  
+ Библиотека DLL: msdia100.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

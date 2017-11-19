@@ -1,61 +1,65 @@
 ---
-title: "Элемент EnableLocationBrowseButton (шаблоны Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#EnableLocationBrowseButton"
-helpviewer_keywords: 
-  - "EnableLocationBrowseButton - элемент [шаблоны проектов Visual Studio]"
+title: "Элемент EnableLocationBrowseButton (шаблоны Visual Studio) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#EnableLocationBrowseButton
+helpviewer_keywords: EnableLocationBrowseButton [Visual Studio project templates]
 ms.assetid: a12d10d8-af49-482a-af77-e084fd07a47d
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e9271df96f5fa84044b33550e0d73750030d7e66
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Элемент EnableLocationBrowseButton (шаблоны Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Указывает, доступна ли кнопка **Обзор** в диалоговом окне **Создать проект**, чтобы пользователи могли легко изменять каталог по умолчанию, в который сохраняется новый проект.  
+# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>Элемент EnableLocationBrowseButton (шаблоны Visual Studio)
+Указывает ли **Обзор** кнопка доступна в **новый проект** диалоговым окном, чтобы пользователи могли легко изменять каталог по умолчанию, который сохраняется новый проект.  
   
-## Синтаксис  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<EnableLocationBrowseButton >  
+  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <EnableLocationBrowseButton> true/false </EnableLocationBrowseButton>  
 ```  
   
-## Атрибуты и элементы  
- В следующих разделах описаны атрибуты, дочерние элементы и родительские элементы.  
+## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
-### Атрибуты  
+### <a name="attributes"></a>Атрибуты  
  Отсутствует.  
   
-### Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
   
-### Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Относит шаблон проекта к какой\-либо категории и определяет характеристики его отображения для диалоговых окон **Создать проект** или **Добавить новый элемент**.|  
+|-------------|-----------------|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|  
   
-## Текстовое значение  
+## <a name="text-value"></a>Текстовое значение  
  Текстовое значение является обязательным.  
   
- Текст должен иметь значение `true` или `false`, указывающее, отображать ли кнопку **Обзор** в диалоговом окне **Создать проект**.  
+ Текст должен быть либо `true` или `false`, указывающее, требуется ли отображать **Обзор** кнопку **новый проект** диалоговое окно.  
   
-## Заметки  
- Элемент `EnableLocationBrowseButton` является необязательным.  По умолчанию используется значение `true`, включающее отображение кнопки **Обзор** в диалоговом окне **Создать проект**.  
+## <a name="remarks"></a>Примечания  
+ `EnableLocationBrowseButton` — это необязательный элемент. Значение по умолчанию — `true`, который отображает **Обзор** кнопку в **новый проект** диалоговое окно.  
   
- Текстовое поле **Расположение** в диалоговом окне **Создать проект** задает каталог, в который сохраняется новый проект.  Кнопка **Обзор** помогает изменить этот каталог, выводя на экран диалоговое окно **Расположение проекта**, позволяющее легко перейти к другому каталогу на диске компьютера и выбрать такой каталог для сохранения проекта.  
+ В **новый проект** диалоговом **расположение** текстовое поле указывает каталог, где сохранить новый проект. **Обзор** кнопка помогает изменить этот каталог, отобразив **расположение проекта** dialog box, в котором можно легко переходить в другой каталог, доступный с вашего компьютера, и Выберите такой каталог, где сохранить новый проект.  
   
-## Пример  
- В следующем примере демонстрируются метаданные для Windows\-приложения [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
+## <a name="example"></a>Пример  
+ В следующем примере демонстрируется метаданные для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] приложения Windows.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -82,6 +86,6 @@ caps.handback.revision: 11
 </VSTemplate>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Создание пользовательских шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
+ [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)

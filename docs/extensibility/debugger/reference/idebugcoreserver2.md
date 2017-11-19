@@ -1,66 +1,66 @@
 ---
-title: "IDebugCoreServer2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCoreServer2"
-helpviewer_keywords: 
-  - "Интерфейс IDebugCoreServer2"
+title: "IDebugCoreServer2 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCoreServer2
+helpviewer_keywords: IDebugCoreServer2 interface
 ms.assetid: 9c47d0a6-9eb1-464e-bd44-fa2b552d4d36
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 42695a58ecab7f898a0ef8561a9bc715909f6c06
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCoreServer2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Этот интерфейс используется для представления и получать сведения с сервера на компьютере в сети.  
+# <a name="idebugcoreserver2"></a>IDebugCoreServer2
+Этот интерфейс используется для представления и получения сведений с сервера на компьютере в сети.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IDebugCoreServer2 : IUknown  
 ```  
   
-## Примечания по реализации  
- Visual Studio реализующий этот интерфейс, чтобы представить сервер.  Каждый экземпляр Visual Studio создает экземпляр этого интерфейса.  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
+ Visual Studio реализует этот интерфейс для представления на сервере. Каждый экземпляр Visual Studio создает экземпляр этого интерфейса.  
   
-## Замечания для вызывающих объектов  
- Пользовательский поставщик порта получает это при вызове интерфейса [Событие](../../../extensibility/debugger/reference/idebugportevents2-event.md).  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Пользовательский порт поставщика получает этот интерфейс в вызове [событие](../../../extensibility/debugger/reference/idebugportevents2-event.md).  
   
- Отладчик может получить этот интерфейс косвенно через вызов [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md) \(которое возвращает  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)интерфейс, наследуемый от  `IDebugCoreServer2`\).  
+ Модуль отладки можно получить этот интерфейс косвенно посредством вызова [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md) (возвращающий [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md), интерфейс, который является производным от `IDebugCoreServer2`).  
   
-## Методы в том порядке Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugCoreServer2`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[GetMachineInfo](../Topic/IDebugCoreServer2::GetMachineInfo.md)|Возвращает имя и атрибуты компьютера.|  
+|------------|-----------------|  
+|[GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)|Возвращает имя и атрибуты машины.|  
 |[GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md)|Получает имя компьютера.|  
 |[GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)|Возвращает поставщика порта, который существует на компьютере.|  
-|[GetPort](../../../extensibility/debugger/reference/idebugcoreserver2-getport.md)|Получает порт, уже существует на компьютере.|  
+|[GetPort](../../../extensibility/debugger/reference/idebugcoreserver2-getport.md)|Возвращает порт, который уже существует на компьютере.|  
 |[EnumPorts](../../../extensibility/debugger/reference/idebugcoreserver2-enumports.md)|Создает перечислитель для всех портов на компьютере.|  
-|[EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)|Создает перечислитель для всех поставщиков портов на компьютере.|  
-|[GetMachineUtilities\_V7](../Topic/IDebugCoreServer2::GetMachineUtilities_V7.md)|Получает служебные программы компьютера для компьютера.|  
+|[EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)|Создает перечислитель для всех поставщиков, порт на компьютере.|  
+|[GetMachineUtilities_V7](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineutilities-v7.md)|Возвращает программы машины для машины.|  
   
-## Заметки  
- Этот интерфейс также используется Visual Studio, чтобы просмотреть процессами, запущенными на компьютерах в сети.  
+## <a name="remarks"></a>Примечания  
+ Этот интерфейс также используется в Visual Studio для просмотра процессов, запущенных на компьютерах в сети.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   
  [Событие](../../../extensibility/debugger/reference/idebugportevents2-event.md)   
  [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)   

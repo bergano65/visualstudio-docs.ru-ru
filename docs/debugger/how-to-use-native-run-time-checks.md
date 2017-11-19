@@ -1,56 +1,53 @@
 ---
-title: "Практическое руководство. Настройка проверок во время выполнения машинного кода | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "c.runtime.errorchecks"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "/O - параметр компилятора, /RTC - параметр"
-  - "/RTC - параметр компилятора [C++], /O - параметр компилятора"
-  - "массивы [Visual Studio], отладка"
-  - "отладчик, проверки времени выполнения машинного кода"
-  - "отладчик, ошибок времени выполнения"
-  - "отладка массивов"
-  - "проверки времени выполнения машинного кода"
-  - "O - параметр компилятора, /RTC - параметр"
-  - "оптимизированный параметр построения"
-  - "RTC - параметр компилятора, /O - параметр компилятора"
-  - "проверки во время выполнения"
-  - "проверки во время выполнения, в машинном коде"
-  - "ошибки во время выполнения, отладка"
-  - "ошибки во время выполнения, проверка ошибок"
-  - "runtime_checks - директива"
-  - "указатели стека"
-  - "указатели стека, повреждение"
-  - "стек, повреждение указателя"
-  - "переменные [отладчик], перехват зависимостей для неинициализированных локальных переменных"
-  - "переменные [отладчик], потеря данных"
+title: "Как: использовать проверки времени выполнения машинного кода | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: c.runtime.errorchecks
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+helpviewer_keywords:
+- /RTC compiler option [C++], /O compiler option
+- run-time checks, native
+- stack, pointer corruption
+- stack pointers, corruption
+- /O compiler option, /RTC option
+- run-time errors, error checks
+- O compiler option, /RTC option
+- debugger, runtime errors
+- variables [debugger], loss of data
+- runtime_checks pragma
+- variables [debugger], catching dependencies on uninitialized local variables
+- run-time errors, debugging
+- debugger, native run-time checks
+- optimized build option
+- RTC compiler option, /O compiler option
+- native run-time checks
+- run-time checks
+- debugging arrays
+- stack pointers
+- arrays [Visual Studio], debugging
 ms.assetid: dc7b2f1e-5ff6-42e0-89b3-dc9dead83ee1
-caps.latest.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f6dd581882231b64af03d34f53c3a5a67fa921e3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Настройка проверок во время выполнения машинного кода
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-В Visual C\+\+ можно использовать проверки в машинном коде [runtime\_checks](/visual-cpp/preprocessor/runtime-checks) для обнаружения таких распространенных ошибок, возникающих во время выполнения, как:  
+# <a name="how-to-use-native-run-time-checks"></a>Практическое руководство. Настройка проверок во время выполнения машинного кода
+В Visual C++ можно использовать проверки в машинном коде [runtime_checks](/cpp/preprocessor/runtime-checks) для обнаружения таких распространенных ошибок, возникающих во время выполнения, как:  
   
 -   повреждение указателя стека;  
   
@@ -62,9 +59,9 @@ caps.handback.revision: 19
   
 -   потеря данных при присваивании переменным меньшего размера.  
   
- Попытка использования опции **\/RTC** с оптимизированным построением \(**\/O**\) приведет к ошибке компилятора. Директивы `runtime_checks` при оптимизированном построении игнорируются.  
+ Попытка использования опции **/RTC** с оптимизированным построением (**/O**) приведет к ошибке компилятора. Директивы `runtime_checks` при оптимизированном построении игнорируются.  
   
- Если осуществляется отладка программы с включенным режимом проверки во время выполнения, по умолчанию при возникновении ошибки во время выполнения программа будет прервана и произойдет возврат в отладчик. Это используемое по умолчанию поведение можно изменить для любой проверки во время выполнения. Для получения дополнительной информации см. [Управление исключениями с помощью отладчика](../debugger/managing-exceptions-with-the-debugger.md).  
+ Если осуществляется отладка программы с включенным режимом проверки во время выполнения, по умолчанию при возникновении ошибки во время выполнения программа будет прервана и произойдет возврат в отладчик. Это используемое по умолчанию поведение можно изменить для любой проверки во время выполнения. Дополнительные сведения см. в разделе [Управление исключениями с помощью отладчика](../debugger/managing-exceptions-with-the-debugger.md).  
   
  В приведенной ниже процедуре описано, как включить в отладочном построении проверку в машинных кодах во время выполнения, и как изменить поведение проверки в машинных кодах во время выполнения.  
   
@@ -74,15 +71,16 @@ caps.handback.revision: 19
   
 -   [Использование проверки кода во время выполнения без библиотеки среды выполнения языка C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)  
   
-### Включение проверок в машинных кодах во время выполнения в отладочном построении  
+### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>Включение проверок в машинных кодах во время выполнения в отладочном построении  
   
--   Используйте опцию **\/RTC** и компоновку с отладочной версией библиотеки времени выполнения языка С \(например, \/MDd\).  
+-   Используйте опцию **/RTC** и компоновку с отладочной версией библиотеки времени выполнения языка С (например, /MDd).  
   
-### Изменение порядка проверки в машинных кодах во время выполнения  
+### <a name="to-modify-native-run-time-check-behavior"></a>Изменение порядка проверки в машинных кодах во время выполнения  
   
--   Используйте директиву `runtime_checks`.  
+-   Используйте директиву `runtime_checks` .  
   
-## См. также  
- [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)   
- [runtime\_checks](/visual-cpp/preprocessor/runtime-checks)   
- [Проверка ошибок во время выполнения](/visual-cpp/c-runtime-library/run-time-error-checking)
+## <a name="see-also"></a>См. также  
+ [Отладка в Visual Studio](../debugger/index.md)  
+ [Обзор функций отладчика](../debugger/debugger-feature-tour.md)   
+ [runtime_checks](/cpp/preprocessor/runtime-checks)   
+ [Проверка ошибок во время выполнения](/cpp/c-runtime-library/run-time-error-checking)

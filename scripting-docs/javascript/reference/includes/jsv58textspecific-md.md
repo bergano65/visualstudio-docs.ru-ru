@@ -1,1 +1,1 @@
-Internet Explorer 8 \(стандартный режим\)
+Internet Explorer 8 (стандартный режим)

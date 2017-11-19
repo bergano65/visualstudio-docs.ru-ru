@@ -1,50 +1,53 @@
 ---
-title: "IDebugProperty::GetPropertyInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugProperty::GetPropertyInfo | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugProperty.GetPropertyInfo
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IDebugProperty::GetPropertyInfo"
+helpviewer_keywords: IDebugProperty::GetPropertyInfo
 ms.assetid: b201c0c4-bff6-4285-880f-67be90584c5f
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: edd878419c6f2b4fd0f882a070d80c98a96eba56
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugProperty::GetPropertyInfo
-Возвращает значение `IDebugProperty`, описывающий метод или индексированное свойство.  
+# <a name="idebugpropertygetpropertyinfo"></a>IDebugProperty::GetPropertyInfo
+Возвращает значение `IDebugProperty` , описывающий метод или индексированному свойству.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT GetPropertyInfo (  
-   DBGPROP_INFO_FLAGS dwFields,  
-   UINT nRadix,  
-   DebugPropertyInfo* pPropertyInfo  
+   DBGPROP_INFO_FLAGSdwFields,  
+   UINT nRadix,  
+   DebugPropertyInfo* pPropertyInfo  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `dwFields`  
- \[in\] определяет константы `DBGPROP_INFO_FLAGS`, определяющие поля, которое нужно заполнять в структуре `DebugPropertyInfo`.  
+ [in] Указывает `DBGPROP_INFO_FLAGS` константы, которые определяют поля для заполнения `DebugPropertyInfo` структуры.  
   
  `nRadix`  
- \[in\] корневой каталог, используемый в отформатировать любое числовое сведения.  
+ [in] Основание системы счисления, используемое в любой числовой сведения о форматировании.  
   
  `pPropertyInfo`  
- \[out\] возвращает структуру `DebugPropertyInfo`, описывающая свойства.  
+ [out] Возвращает `DebugPropertyInfo` структура, описывающая свойства.  
   
-## Возвращаемое значение  
- Возвращает допустимое `HRESULT`, обычно `S_ОК`.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Возвращает допустимую `HRESULT`, обычно `S_OK`.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IDebugProperty](../../winscript/reference/idebugproperty-interface.md)   
- [DBGPROP\_INFO\_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
+ [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
  [Структура DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)

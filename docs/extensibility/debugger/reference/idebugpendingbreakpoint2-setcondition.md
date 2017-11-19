@@ -1,53 +1,54 @@
 ---
-title: "IDebugPendingBreakpoint2::SetCondition | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPendingBreakpoint2::SetCondition"
-helpviewer_keywords: 
-  - "Метод SetCondition"
-  - "Метод IDebugPendingBreakpoint2::SetCondition"
+title: "IDebugPendingBreakpoint2::SetCondition | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPendingBreakpoint2::SetCondition
+helpviewer_keywords:
+- SetCondition method
+- IDebugPendingBreakpoint2::SetCondition method
 ms.assetid: 0534224f-654f-4862-bc4d-a9a81a5f8899
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: fc4b55e1de6c643179b3ac9a5b06aecc24e85a59
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPendingBreakpoint2::SetCondition
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Задает или изменения ожидающих условие, связанное с точкой останова.  
+# <a name="idebugpendingbreakpoint2setcondition"></a>IDebugPendingBreakpoint2::SetCondition
+Задает или изменяет условие, связанное с ожидающая точка останова.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT SetCondition(   
-   BP_CONDITION bpCondition  
+```cpp  
+HRESULT SetCondition(   
+   BP_CONDITION bpCondition  
 );  
 ```  
   
-```c#  
-int SetCondition(   
-   BP_CONDITION bpCondition  
+```csharp  
+int SetCondition(   
+   BP_CONDITION bpCondition  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `bpCondition`  
- \[in\] значение [BP\_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) структура, которая определяет условия для установки.  
+ [in] Объект [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) структура, которая задает условие для установки.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Любое условие, которое предварительно было связано с точкой останова, ожидающих потеряно.  Все точки останова из этой привязанные ожидающих точки останова, называются, чтобы задать их к значению, указанному в состояние `bpCondition` параметр.  
+## <a name="remarks"></a>Примечания  
+ Любое условие, который был ранее связан с ожидающая точка останова теряется. Все точки останова, привязанный из этого ожидающих точек останова, называются присвоено значение, указанное в их условие `bpCondition` параметра.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
- [BP\_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)
+ [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)

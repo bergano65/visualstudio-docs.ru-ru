@@ -1,48 +1,48 @@
 ---
-title: "IDebugMethodField::IsCustomAttributeDefined | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMethodField::IsCustomAttributeDefined"
-helpviewer_keywords: 
-  - "Метод IDebugMethodField::IsCustomAttributeDefined"
+title: "IDebugMethodField::IsCustomAttributeDefined | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugMethodField::IsCustomAttributeDefined
+helpviewer_keywords: IDebugMethodField::IsCustomAttributeDefined method
 ms.assetid: 1b5d95a8-cc87-4acb-9e6a-3928f3632b7c
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5bf6d2dbc915638005f377826c5504b2f6bdf859
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugMethodField::IsCustomAttributeDefined
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Определяет, определен ли указанный настраиваемый атрибут.  
+# <a name="idebugmethodfieldiscustomattributedefined"></a>IDebugMethodField::IsCustomAttributeDefined
+Определяет, было ли определено определенного настраиваемого атрибута.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT IsCustomAttributeDefined(   
-   LPCOLESTR pszCustomAttributeName  
+```cpp  
+HRESULT IsCustomAttributeDefined(   
+   LPCOLESTR pszCustomAttributeName  
 );  
 ```  
   
-```c#  
+```csharp  
 int IsCustomAttributeDefined(  
-   [In] string pszCustomAttributeName  
+   [In] string pszCustomAttributeName  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pszCustomAttributeName`  
- \[in\] строка, содержащая а имя настраиваемого атрибута для поиска.  
+ [in] Строка, содержащая имя настраиваемого атрибута для поиска.  
   
-## Возвращаемое значение  
- Возвращает значение S\_OK, если настраиваемый атрибут задан в этом методе, то в противном случае возвращает значение S\_FALSE.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Возвращает значение S_OK, если настраиваемого атрибута определен в этом методе, в противном случае возвращает значение S_FALSE.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

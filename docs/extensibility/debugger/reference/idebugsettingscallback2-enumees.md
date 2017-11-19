@@ -1,61 +1,62 @@
 ---
-title: "IDebugSettingsCallback2::EnumEEs | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugSettingsCallback2::EnumEEs"
+title: "IDebugSettingsCallback2::EnumEEs | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugSettingsCallback2::EnumEEs
 ms.assetid: 9f884c49-426f-461b-b547-9d909486e73f
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8c916ce59e1a96122d4fc50113ca74cbe5133acf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugSettingsCallback2::EnumEEs
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Перечисляет доступные средства оценки выражений заданных идентификаторов языка и поставщика.  
+# <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
+Перечисляет вычислители выражений доступные, заданному идентификаторы языка и поставщика.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT EnumEEs(  
-   DWORD  celtBuffer,  
-   GUID*  rgguidLang,  
-   GUID*  rgguidVendor,  
-   DWORD* pceltEEs  
+   DWORD  celtBuffer,  
+   GUID*  rgguidLang,  
+   GUID*  rgguidVendor,  
+   DWORD* pceltEEs  
 );  
 ```  
   
-```c#  
+```csharp  
 public int EnumEEs(  
-   uint       celtBuffer,  
-   ref Guid   rgguidLang,  
-   ref Guid   rgguidVendor,  
-   ref uint[] pceltEEs  
+   uint       celtBuffer,  
+   ref Guid   rgguidLang,  
+   ref Guid   rgguidVendor,  
+   ref uint[] pceltEEs  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `celtBuffer`  
- \[in\] количество элементов в `pceltEEs` буфер.  
+ [in] Число элементов в `pceltEEs` буфера.  
   
  `rgguidLang`  
- \[in, out\] уникальный идентификатор языка программирования.  
+ [in, out] Уникальный идентификатор языка программирования.  
   
  `rgguidVendor`  
- \[in, out\] уникальный идентификатор для поставщика.  
+ [in, out] Уникальный идентификатор для поставщика.  
   
  `pceltEEs`  
- \[in, out\] массив средства оценки выражений.  
+ [in, out] Массив вычислители выражений.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

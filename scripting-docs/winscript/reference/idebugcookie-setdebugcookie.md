@@ -1,27 +1,30 @@
 ---
-title: "IDebugCookie::SetDebugCookie | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugCookie::SetDebugCookie | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugCookie.SetDebugCookie
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugCookie::SetDebugCookie"
+helpviewer_keywords: IDebugCookie::SetDebugCookie
 ms.assetid: 9cba3b05-ff81-4fb0-9382-e9338cb9192d
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1155b00750cfe2a91625ba0f531622f381467198
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugCookie::SetDebugCookie
-Задает файл cookie приложения отладки.  
+# <a name="idebugcookiesetdebugcookie"></a>IDebugCookie::SetDebugCookie
+Задает файл cookie отладки приложения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT SetDebugCookie(  
@@ -29,19 +32,19 @@ HRESULT SetDebugCookie(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `dwDebugAppCookie`  
- \[in\] файл cookie, который определяет приложение отладки.  
+ [in] Файл cookie, который идентифицирует приложение отладки.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
- Этот метод устанавливает файл cookie отладки приложения, который позволяет нескольким отладчика для вложение в процесс.  
+## <a name="remarks"></a>Примечания  
+ Этот метод задает отладки приложения куки-файл, что позволяет более одного отладчик мог присоединиться к процессу.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IDebugCookie](../../winscript/reference/idebugcookie-interface.md)

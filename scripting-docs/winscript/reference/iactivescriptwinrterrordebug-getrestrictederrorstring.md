@@ -1,37 +1,39 @@
 ---
-title: "IActiveScriptWinRTErrorDebug::GetRestrictedErrorString | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "IActiveScriptWinRTErrorDebug::GetRestrictedErrorString"
+title: "IActiveScriptWinRTErrorDebug::GetRestrictedErrorString | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords: IActiveScriptWinRTErrorDebug::GetRestrictedErrorString
 ms.assetid: d901e049-fb1b-4101-a04a-1395d657f1cf
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ade51ae9852519d6a059193aacbfdde49ae82d19
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptWinRTErrorDebug::GetRestrictedErrorString
-Возвращает строку ошибки Windows ограничиванную средой выполнения, если оно известно.  
+# <a name="iactivescriptwinrterrordebuggetrestrictederrorstring"></a>IActiveScriptWinRTErrorDebug::GetRestrictedErrorString
+Возвращает среды выполнения Windows только строка ошибки, если он доступен.  
   
 > [!IMPORTANT]
->  [IActiveScriptWinRTErrorDebug — интерфейс](../../winscript/reference/iactivescriptwinrterrordebug-interface.md) реализуется PDM v11.0 и большим.  Обнаружен в activdbg100.h.  
+>  [Iactivescriptwinrterrordebug — интерфейс](../../winscript/reference/iactivescriptwinrterrordebug-interface.md) — реализованный PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-HRESULT GetRestrictedErrorString([out] BSTR * errorString);  
-  
+HRESULT GetRestrictedErrorString([out] BSTR * errorString);   
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `errorString`  
- \[out\] \- это строка с ограничениями ошибки.  
+ [out] Строка только ошибки.  
   
-## См. также  
- [IActiveScriptWinRTErrorDebug — интерфейс](../../winscript/reference/iactivescriptwinrterrordebug-interface.md)
+## <a name="see-also"></a>См. также  
+ [Интерфейс IActiveScriptWinRTErrorDebug](../../winscript/reference/iactivescriptwinrterrordebug-interface.md)

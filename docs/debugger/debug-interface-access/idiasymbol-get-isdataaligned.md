@@ -1,56 +1,55 @@
 ---
-title: "IDiaSymbol::get_isDataAligned | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_isDataAligned - метод"
+title: "IDiaSymbol::get_isDataAligned | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_isDataAligned method
 ms.assetid: ddd11a41-6c00-4829-acf4-aa1ace8c21a7
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9a654db4e9da3490950e390d74fa0148a974fdd2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_isDataAligned
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает пометить, указывающее, был ли выравниваются пользовательский тип \(udt\) в какой\-либо конкретной границы памяти.  
+# <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
+Возвращает флаг, указывающий, выровнена ли определяемый пользователем тип (UDT) для некоторых границ памяти.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp  
+```C++  
 HRESULT get_isDataAligned(  
-   BOOL *pFlag  
+   BOOL *pFlag  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pFlag`  
- \[out\] возвращает `TRUE` если определяемый пользователем тип был выравнивается по какой\-либо границе памяти; в противном случае возвращает  `FALSE`.  
+ [out] Возвращает `TRUE` Если определяемый пользователем тип были выровнены по границе некоторые памяти; в противном случае возвращает `FALSE`.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает  `S_FALSE` или код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение  `S_FALSE` означает, что свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## Заметки  
- Это свойство обычно задается, когда исполняемый файл компилироваться с выравниванием данных, отличающиеся от заданных по умолчанию.  Например, компилятор microsoft C\+\+ может изменить выравнивание данных с параметром командной строки \/Zp*\#*, где *\#* значение байта.  
+## <a name="remarks"></a>Примечания  
+ Как правило, это свойство задается при компиляции исполняемый файл с выравниванием данных не по умолчанию. Компилятор Microsoft C++ можно изменить, например, выравнивание данных с параметром командной строки/Zp*#*, где  *#*  является байтовым значением.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
   
 |Требование|Описание|  
-|----------------|--------------|  
+|-----------------|-----------------|  
 |Заголовок:|dia2.h|  
-|Версия:|Пакет SDK для доступа к интерфейсу отладки v8.0|  
+|Версия:|ПАКЕТ SDK для версии 8.0|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

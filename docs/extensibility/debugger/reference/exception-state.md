@@ -1,140 +1,140 @@
 ---
-title: "EXCEPTION_STATE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "EXCEPTION_STATE"
-helpviewer_keywords: 
-  - "Перечисление EXCEPTION_STATE"
+title: "EXCEPTION_STATE | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: EXCEPTION_STATE
+helpviewer_keywords: EXCEPTION_STATE enumeration
 ms.assetid: 597f4f4c-9b70-485c-b5dc-3c2e3aecc664
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6237e061028ad568c0fdc0ed344d9eb86300c463
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# EXCEPTION_STATE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="exceptionstate"></a>EXCEPTION_STATE
 Указывает состояние исключения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-enum enum_EXCEPTION_STATE {   
-   EXCEPTION_NONE                          = 0x0000,  
-   EXCEPTION_STOP_FIRST_CHANCE             = 0x0001,  
-   EXCEPTION_STOP_SECOND_CHANCE            = 0x0002,  
-   EXCEPTION_STOP_USER_FIRST_CHANCE        = 0x0010,  
-   EXCEPTION_STOP_USER_UNCAUGHT            = 0x0020,  
-   EXCEPTION_STOP_ALL                      = 0x00FF,  
-   EXCEPTION_CANNOT_BE_CONTINUED           = 0x0100,  
+```cpp  
+enum enum_EXCEPTION_STATE {   
+   EXCEPTION_NONE                          = 0x0000,  
+   EXCEPTION_STOP_FIRST_CHANCE             = 0x0001,  
+   EXCEPTION_STOP_SECOND_CHANCE            = 0x0002,  
+   EXCEPTION_STOP_USER_FIRST_CHANCE        = 0x0010,  
+   EXCEPTION_STOP_USER_UNCAUGHT            = 0x0020,  
+   EXCEPTION_STOP_ALL                      = 0x00FF,  
+   EXCEPTION_CANNOT_BE_CONTINUED           = 0x0100,  
   
-   // These are for exception types only  
-   EXCEPTION_CODE_SUPPORTED                = 0x1000,  
-   EXCEPTION_CODE_DISPLAY_IN_HEX           = 0x2000,  
-   EXCEPTION_JUST_MY_CODE_SUPPORTED        = 0x4000,  
-   EXCEPTION_MANAGED_DEBUG_ASSISTANT       = 0x8000,  
+   // These are for exception types only  
+   EXCEPTION_CODE_SUPPORTED                = 0x1000,  
+   EXCEPTION_CODE_DISPLAY_IN_HEX           = 0x2000,  
+   EXCEPTION_JUST_MY_CODE_SUPPORTED        = 0x4000,  
+   EXCEPTION_MANAGED_DEBUG_ASSISTANT       = 0x8000,  
   
-   // These are no longer used  
-   EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT      = 0x0004,  
-   EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT     = 0x0008,  
-   EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT = 0x0040,  
-   EXCEPTION_STOP_USER_UNCAUGHT_USE_PARENT     = 0x0080,  
+   // These are no longer used  
+   EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT      = 0x0004,  
+   EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT     = 0x0008,  
+   EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT = 0x0040,  
+   EXCEPTION_STOP_USER_UNCAUGHT_USE_PARENT     = 0x0080,  
 };  
 typedef DWORD EXCEPTION_STATE;  
 ```  
   
-```c#  
-public enum enum_EXCEPTION_STATE {   
-   EXCEPTION_NONE                          = 0x0000,  
-   EXCEPTION_STOP_FIRST_CHANCE             = 0x0001,  
-   EXCEPTION_STOP_SECOND_CHANCE            = 0x0002,  
-   EXCEPTION_STOP_USER_FIRST_CHANCE        = 0x0010,  
-   EXCEPTION_STOP_USER_UNCAUGHT            = 0x0020,  
-   EXCEPTION_STOP_ALL                      = 0x00FF,  
-   EXCEPTION_CANNOT_BE_CONTINUED           = 0x0100,  
+```csharp  
+public enum enum_EXCEPTION_STATE {   
+   EXCEPTION_NONE                          = 0x0000,  
+   EXCEPTION_STOP_FIRST_CHANCE             = 0x0001,  
+   EXCEPTION_STOP_SECOND_CHANCE            = 0x0002,  
+   EXCEPTION_STOP_USER_FIRST_CHANCE        = 0x0010,  
+   EXCEPTION_STOP_USER_UNCAUGHT            = 0x0020,  
+   EXCEPTION_STOP_ALL                      = 0x00FF,  
+   EXCEPTION_CANNOT_BE_CONTINUED           = 0x0100,  
   
-   // These are for exception types only  
-   EXCEPTION_CODE_SUPPORTED                = 0x1000,  
-   EXCEPTION_CODE_DISPLAY_IN_HEX           = 0x2000,  
-   EXCEPTION_JUST_MY_CODE_SUPPORTED        = 0x4000,  
-   EXCEPTION_MANAGED_DEBUG_ASSISTANT       = 0x8000,  
+   // These are for exception types only  
+   EXCEPTION_CODE_SUPPORTED                = 0x1000,  
+   EXCEPTION_CODE_DISPLAY_IN_HEX           = 0x2000,  
+   EXCEPTION_JUST_MY_CODE_SUPPORTED        = 0x4000,  
+   EXCEPTION_MANAGED_DEBUG_ASSISTANT       = 0x8000,  
   
-   // These are no longer used  
-   EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT      = 0x0004,  
-   EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT     = 0x0008,  
-   EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT = 0x0040,  
-   EXCEPTION_STOP_USER_UNCAUGHT_USE_PARENT     = 0x0080,  
+   // These are no longer used  
+   EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT      = 0x0004,  
+   EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT     = 0x0008,  
+   EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT = 0x0040,  
+   EXCEPTION_STOP_USER_UNCAUGHT_USE_PARENT     = 0x0080,  
 };  
 ```  
   
-## Члены  
- EXCEPTION\_NONE  
- Не остановится в исключении.  
+## <a name="members"></a>Члены  
+ EXCEPTION_NONE  
+ Не останавливайте исключении.  
   
- EXCEPTION\_STOP\_FIRST\_CHANCE  
- Остановите на срабатывание исключения.  , Описывающий событие исключения, этот пометить означает, что событие исключения событие о первичном исключении.  
+ EXCEPTION_STOP_FIRST_CHANCE  
+ Остановиться на первый вызов события исключения. При описании события исключения, этот флаг указывает, что события исключения является событие исключения первого шанса.  
   
- EXCEPTION\_STOP\_SECOND\_CHANCE  
- Остановить во втором включении исключения.  , Описывающий событие исключения, указывающее, что событие исключения событие исключения второй вероятность.  
+ EXCEPTION_STOP_SECOND_CHANCE  
+ На второй срабатывание исключения останавливается. При описании события исключения, указывает на событие исключения событий второй экземпляр исключения.  
   
- EXCEPTION\_STOP\_USER\_FIRST\_CHANCE  
- Сначала остановить срабатывание исключения в режиме пользователя.  , Описывающий событие исключения, указывающее, что событие исключения события режима пользователя о первой возможности захвата исключений.  
+ EXCEPTION_STOP_USER_FIRST_CHANCE  
+ Остановиться на первой срабатывание исключения режима пользователя. При описании события исключения, указывает, что события исключения событий исключения первого шанса пользователя.  
   
- EXCEPTION\_STOP\_USER\_UNCAUGHT  
- Остановите работу, когда исключение перехватывается в режиме пользователя.  , Описывающий событие исключения, указывающее, что событие исключения событие исключения в режиме пользователя uncaught.  
+ EXCEPTION_STOP_USER_UNCAUGHT  
+ Остановитесь, когда режим пользователя исключение не обработано. При описании события исключения, указывает, что события исключения события исключения режима пользователя неперехваченных.  
   
- EXCEPTION\_STOP\_ALL  
- Остановить на любом исключении.  Не используется, описывающее событие исключения.  
+ EXCEPTION_STOP_ALL  
+ Остановите при любом исключении. Не используется при описании события исключения.  
   
- \_BE\_CONTINUED НЕ EXCEPTION\_CAN  
- , Описывающий событие исключения, указывающее, что исключение не может продолжить.  
+ EXCEPTION_CANNOT_BE_CONTINUED  
+ При описании события исключения, указывает, что исключение не может быть продолжено из.  
   
- EXCEPTION\_CODE\_SUPPORTED  
- Указывает, что исключение содержит код, поддерживающий их.  Используется при отображении исключения  
+ EXCEPTION_CODE_SUPPORTED  
+ Указывает, что исключение имеет код его поддержки. Используемые при отображении исключения  
   
- EXCEPTION\_CODE\_DISPLAY\_IN\_HEX  
- Указывает, что код исключения должен отображаться в шестнадцатеричном формате.  Используется при отображении исключения.  
+ EXCEPTION_CODE_DISPLAY_IN_HEX  
+ Указывает, что код исключения должен отображаться в шестнадцатеричном формате. Используется при отображении исключения.  
   
- EXCEPTION\_JUST\_MY\_CODE\_SUPPORTED  
- Указывает, что код исключения поддерживает JustMyCode.  Используется при отображении исключения.  
+ EXCEPTION_JUST_MY_CODE_SUPPORTED  
+ Указывает, что код исключения поддерживает JustMyCode. Используется при отображении исключения.  
   
- EXCEPTION\_MANAGED\_DEBUG\_ASSISTANT  
- Указывает, что отладчик управляемого кода должен обрабатывать исключения.  Если отладчик не имеет значения по умолчанию обрабатывает исключения.  Эти данные передаются обработчику [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) метод и не используется в  [EXCEPTION\_INFO](../../../extensibility/debugger/reference/exception-info.md) структура.  
+ EXCEPTION_MANAGED_DEBUG_ASSISTANT  
+ Указывает, что отладчик управляемого кода обработки исключений. В противном случае набор по умолчанию отладчик обрабатывает исключения. Аргумент передается в [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) метода и не используется в [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) структуры.  
   
- EXCEPTION\_STOP\_FIRST\_CHANCE\_USE\_PARENT  
- ЯВЛЯЕТСЯ УСТАРЕВШИМ, НЕ ИСПОЛЬЗУЙТЕ.  
+ EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT  
+ ЯВЛЯЕТСЯ УСТАРЕВШЕЙ, НЕ ИСПОЛЬЗУЙТЕ.  
   
- EXCEPTION\_STOP\_SECOND\_CHANCE\_USE\_PARENT  
- ЯВЛЯЕТСЯ УСТАРЕВШИМ, НЕ ИСПОЛЬЗУЙТЕ.  
+ EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT  
+ ЯВЛЯЕТСЯ УСТАРЕВШЕЙ, НЕ ИСПОЛЬЗУЙТЕ.  
   
- EXCEPTION\_STOP\_USER\_FIRST\_CHANCE\_USE\_PARENT  
- ЯВЛЯЕТСЯ УСТАРЕВШИМ, НЕ ИСПОЛЬЗУЙТЕ.  
+ EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT  
+ ЯВЛЯЕТСЯ УСТАРЕВШЕЙ, НЕ ИСПОЛЬЗУЙТЕ.  
   
- EXCEPTION\_STOP\_USER\_SECOND\_CHANCE\_USE\_PARENT  
- ЯВЛЯЕТСЯ УСТАРЕВШИМ, НЕ ИСПОЛЬЗУЙТЕ.  
+ EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT  
+ ЯВЛЯЕТСЯ УСТАРЕВШЕЙ, НЕ ИСПОЛЬЗУЙТЕ.  
   
-## Заметки  
- Используется как `dwState` элемент  [EXCEPTION\_INFO](../../../extensibility/debugger/reference/exception-info.md) структура для отображения состояния исключения и что можно сделать о них.  
+## <a name="remarks"></a>Примечания  
+ Используется в качестве `dwState` членом [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) структуры, в которых указывается состояние исключения и что можно сделать о нем.  
   
- Эти значения также передаются [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) метод, чтобы установить состояние всех исключений.  
+ Эти значения также передаются в [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) метод, чтобы установить для всех исключений.  
   
- Эти флаги могут объединяться с побитовый оператор ИЛИ.  
+ Эти флаги могут объединяться с Побитовый оператор или.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [EXCEPTION\_INFO](../../../extensibility/debugger/reference/exception-info.md)   
+ [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)   
  [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)

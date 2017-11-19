@@ -1,45 +1,47 @@
 ---
-title: "Вычислитель выражений | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "выражения [пакет SDK для отладки]"
-  - "отладка [отладка SDK], вычисление выражений"
-  - "вычисление выражений"
+title: "Средство оценки выражений | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- expressions [Debugging SDK]
+- debugging [Debugging SDK], expression evaluation
+- expression evaluation
 ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
-caps.latest.revision: 19
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b08da6a123107d793d522770d44315aaa432dede
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Вычислитель выражений
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Вычислителя выражений \(EE\) проверяет синтаксис языка для синтаксического анализа и оценки переменных и выражений во время выполнения, позволяя их для просмотра пользователь, когда интегрированная среда разработки в режиме приостановки выполнения.  
+# <a name="expression-evaluator"></a>Вычислитель выражений
+Вычислители выражений (EE) просмотрите синтаксис языка для синтаксического анализа и оценки переменных и выражений во время выполнения, позволяя представлены пользователю при IDE находится в режиме приостановки выполнения.  
   
-## С помощью средства оценки выражений  
+## <a name="using-expression-evaluators"></a>С помощью вычислители выражений  
  Выражения создаются с помощью [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) метод следующим образом:  
   
-1.  Отладчик \(DE\) реализует IDebugExpressionContext2 интерфейс.  
+1.  Модуль отладки (DE) реализует [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) интерфейса.  
   
-2.  Пакет отладки возвращает `IDebugExpressionContext2` объект  [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) интерфейс и затем вызывает метод  `IDebugStackFrame2::ParseText` метод на нем для получения  [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) объект.  
+2.  Возвращает отладочный пакет `IDebugExpressionContext2` объекта из [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) интерфейса, а затем вызывает метод `IDebugStackFrame2::ParseText` метод ее, чтобы получить [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) объекта.  
   
-3.  Пакет отладки вызывает [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) метод или  [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) метод, чтобы получить значение выражения.  `IDebugExpression2::EvaluateAsync` вызывает метод из команды или окна интерпретации.  Все остальные вызов компонентов пользовательского интерфейса `IDebugExpression2::EvaluateSync`.  
+3.  Вызовы отладки пакета [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) метода или [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) метод, чтобы получить значение выражения. `IDebugExpression2::EvaluateAsync`вызывается из окна команд и интерпретация. Все другие компоненты пользовательского интерфейса вызывать `IDebugExpression2::EvaluateSync`.  
   
-4.  Результат оценки выражений IDebugProperty2 объект, содержащий имя, тип и значение результата вычисления выражения.  
+4.  Результатом вычисления выражения является [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) объект, который содержит имя, тип и значение результата вычисления выражения.  
   
- Во время оценки выражения, EE требует данные из компонента поставщика символов.  Предоставляемый поставщиком символов символьные данные, используемые для идентификации и понимание проанализированное выражение.  
+ Во время вычисления выражения EE требует данные из компонента поставщика символа. Символ поставщик символьных данных, используемый для определения и понимания проанализированное выражение.  
   
- Когда асинхронная завершения асинхронное вычисление выражений событие отправляется DE через сеанс отладки \(SDM\) диспетчер для уведомления среды разработки, что вычисление выражений завершена.  После завершения синхронной вычисление выражений результат вычисления возвращается из вызова `IDebugExpression2::EvaluateSync` метод.  
+ По завершении вычисления выражения асинхронных асинхронного события отправленных DE диспетчера сеанса отладки (SDM) для уведомления IDE, что оценка выражения завершения. После завершения вычисления синхронной выражение, результат вычисления возвращается из вызова `IDebugExpression2::EvaluateSync` метод.  
   
-## Примечания по реализации  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладка обработчики рассчитывайте разговаривать с средство оценки выражений с помощью интерфейсов среды CLR.  В результате средство оценки выражений, которое работает с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] обработчики поддержки отладки среды CLR \(полный список всех интерфейсов отладки среды CLR можно найти в debugref.doc, часть  [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)]\).  
+## <a name="implementation-notes"></a>Примечания по реализации  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Ожидать, что отладчики возможность общаться с средство оценки выражений с помощью интерфейсов Common Language Runtime (CLR). В результате вычислитель выражений, работающее с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладчики должна поддерживать среды CLR (полный список всех интерфейсами отладки среды CLR можно найти в debugref.doc, являющейся частью из [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)]).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Компоненты отладчика](../../extensibility/debugger/debugger-components.md)

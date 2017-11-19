@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptAuthor::GetLanguageFlags | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IActiveScriptAuthor::GetLanguageFlags | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptAuthor.GetLanguageFlags
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptAuthor::GetLanguageFlags"
+helpviewer_keywords: IActiveScriptAuthor::GetLanguageFlags
 ms.assetid: eb244452-62f7-4a73-b48f-1aa05cbcc32d
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6137f1cd77d2f305a9ff9d51ac49c214e4c4237b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptAuthor::GetLanguageFlags
+# <a name="iactivescriptauthorgetlanguageflags"></a>IActiveScriptAuthor::GetLanguageFlags
 Возвращает сведения о языке.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT GetLanguageFlags(  
@@ -29,27 +32,27 @@ HRESULT GetLanguageFlags(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pgrfasa`  
- \[out\] флаги, которые содержат сведения о языке.  Может быть сочетанием следующих значений:  
+ [out] Флаги, которые содержат сведения о языке. Может быть сочетанием следующих значений:  
   
 |Константа|Значение|Описание|  
-|---------------|--------------|--------------|  
-|fasaPreferInternalHandler|0x0001|Язык обозревателем создание обработчика событий скрипта скриптом создания обработчика вместо приложения.|  
-|fasaSupportInternalHandler|0x0002|Язык сценария поддерживает обработчики событий, созданные скриптом создания обработчика.|  
-|fasaCaseSensitive|0x0004|Язык скрипта регистр.|  
+|--------------|-----------|-----------------|  
+|fasaPreferInternalHandler|0x0001|Язык является предпочтительным скрипт создания обработчика событий с помощью скрипта создания ядра вместо приложения.|  
+|fasaSupportInternalHandler|0x0002|Язык поддерживает сценарий обработчики событий, создаваемые сценарием разработки ядра.|  
+|fasaCaseSensitive|0x0004|Язык скриптов учитывается регистр символов.|  
   
-## Возвращаемое значение  
- Объект `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
- Если скрипт создание обработчика управляет обработчики событий, приложение должно вызвать `CreateChildHandler` из объекта `IScriptEntry`.  Это создает объект `IScriptScriptlet`, соответствующий обработчик событий.  Обработчик также добавляет обработчик события для записи скрипта.  Обработчик событий пустая функция, которая содержит заданную подпись.  
+## <a name="remarks"></a>Примечания  
+ Если скрипт создания engine управляет обработчики событий, приложение должно вызывать `CreateChildHandler` из `IScriptEntry` объекта. При этом создается `IScriptScriptlet` объект, соответствующий обработчик событий. Среда также добавляет обработчик событий запись скрипта. Обработчик событий — это пустой функция, которая содержит сведения о указанной подписи.  
   
- Если приложение управляет обработчики событий, оно должно вызвать `CreateChildHandler` из объекта `IScriptNode`, который представляет скрипт обработчика событий.  Это создает объект `IScriptScriptlet`, который связан с сценарием обработчика событий.  Приложение также необходимо добавить пустую функции в качестве обработчика событий в новый или существующий объект `IScriptEntry`.  
+ Если приложение управляет обработчики событий, он должен вызывать `CreateChildHandler` из `IScriptNode` , представляющий событие обработчика сценариев. При этом создается `IScriptScriptlet` объекта, связанного с сценариев обработчика событий. Приложение также должен добавить пустую функцию как событие обработчика в новую или существующую `IScriptEntry` объекта.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)

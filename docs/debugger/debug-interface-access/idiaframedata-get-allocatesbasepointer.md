@@ -1,47 +1,46 @@
 ---
-title: "IDiaFrameData::get_allocatesBasePointer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaFrameData::get_allocatesBasePointer - метод"
+title: "IDiaFrameData::get_allocatesBasePointer | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaFrameData::get_allocatesBasePointer method
 ms.assetid: 8a33db5d-008c-4fe5-b64f-210c9b77f686
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3aef929dbbb3555313917fbb67f618fb569d6ec6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaFrameData::get_allocatesBasePointer
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает пометить, указывающее, выделен ли базовый указатель для кода в этом диапазоне адресов.  Этот метод является устаревшим.  
+# <a name="idiaframedatagetallocatesbasepointer"></a>IDiaFrameData::get_allocatesBasePointer
+Возвращает флаг, указывающий, выделен ли указатель базы кода в этом диапазоне. Этот метод является устаревшим.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT get_allocatesBasePointer (   
-   BOOL* pRetVal  
+```C++  
+HRESULT get_allocatesBasePointer (   
+   BOOL* pRetVal  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pRetVal`  
- \[out\] возвращает `TRUE` если базовый указатель установлен; в противном случае возвращает  `FALSE`.  
+ [out] Возвращает `TRUE` Если базового указателя выделяется; в противном случае возвращает `FALSE`.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`.  Возвращает `S_FALSE` если это свойство не поддерживается.  В противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
-## Заметки  
- Это свойство должно использоваться только кодом, который ранее был получен доступ FPO\_DATA или если строка, возвращенная программы [IDiaFrameData::get\_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) метод  `NULL`.  В противном случае строку программы содержит все сведения, необходимые для вычисления предыдущие значения регистра.  
+## <a name="remarks"></a>Примечания  
+ Это свойство следует использовать только в коде, которые ранее доступны FPO_DATA или при возвращенной строке программы [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) метод `NULL`. В противном случае программа строка содержит все сведения, необходимые для вычисления предыдущие значения регистра.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
- [IDiaFrameData::get\_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)
+ [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

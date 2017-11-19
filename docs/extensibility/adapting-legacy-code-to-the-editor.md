@@ -1,80 +1,81 @@
 ---
-title: "Адаптация кода прежних версий для редактора | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "редакторы [Visual Studio SDK] прежних версий - адаптеры"
+title: "Адаптация кода прежних версий в редактор | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - adapters
 ms.assetid: a208d38e-9bea-41c9-9fe2-38bd86a359cb
-caps.latest.revision: 25
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 25
+caps.latest.revision: "25"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 03c0cbd20258618297e943524d06ba7b3a496264
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Адаптация кода прежних версий для редактора
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-В редакторе Visual Studio имеет множество функций, которые можно получить из существующих компонентов кода. Ниже показано, как адаптировать компонент не MEF, например, VSPackage, чтобы использовать функциональные возможности редактора. Инструкции также показано, как использовать адаптеры для получения служб редактора в управляемом и неуправляемом коде.  
+# <a name="adapting-legacy-code-to-the-editor"></a>Адаптация кода прежних версий в редактор
+В редакторе Visual Studio имеет множество функций, которые можно открыть из существующие компоненты кода. Ниже показано, как адаптировать компонент не MEF, например, VSPackage, чтобы использовать функциональные возможности редактора. Инструкции также показано, как использовать адаптеры для получения служб редактора в управляемом и неуправляемом коде.  
   
-## Редактор адаптеров  
- Редактор адаптеров или оболочки, являются оболочками для редактора объектов, которые также предоставляют классы и интерфейсы в <xref:Microsoft.VisualStudio.TextManager.Interop> API. Можно использовать адаптеры для перемещения между службы не редактора, например, команд оболочки Visual Studio и редактор служб. \(Это как редактор в настоящее время размещены в Visual Studio.\) Адаптеры позволяют также прежних версий редактора и язык расширения служб для правильной работы в Visual Studio.  
+## <a name="editor-adapters"></a>Редактор адаптеров  
+ Редактор адаптера или оболочки, являются оболочками для редактора объектов, которые также предоставляют классы и интерфейсы в <xref:Microsoft.VisualStudio.TextManager.Interop> API. Можно использовать адаптеры для перемещения между службы не редактора, например, команд оболочки Visual Studio и службы редактора. (Это как редактор в настоящий момент размещен в Visual Studio.) Адаптеры также включить устаревший редактора и язык расширения службы для правильной работы в Visual Studio.  
   
-## С помощью редактора адаптеров  
- <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> Предоставляет методы, которые переключаются между новых интерфейсов редактора и устаревшие интерфейсы и методы, создающие адаптеров.  
+## <a name="using-editor-adapters"></a>С помощью редактора адаптеров  
+ <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> Предоставляет методы, которые переключаются между новых интерфейсов редактора и стандартные интерфейсы и методы, которые создают адаптеров.  
   
- При использовании этой службы в части компонентов MEF, можно импортировать службы следующим образом.  
+ Если вы используете эту службу в компонент MEF, можно импортировать службы следующим образом.  
   
 ```  
 [Import(typeof(IVsEditorAdaptersFactoryService))]  
 internal IVsEditorAdaptersFactoryService editorFactory;  
 ```  
   
- Если вы хотите использовать эту службу в компонент не MEF, следуйте инструкциям в разделе «Использование Visual Studio редактора в MEF не компонент служб» далее в этом разделе.  
+ Если вы хотите использовать эту службу в компонент не MEF, следуйте инструкциям в разделе «С помощью Visual Studio редактора в MEF не компонент служб» далее в этом разделе.  
   
-## Переключение между прежних версий и новый API редактора  
- Для переключения между традиционным интерфейсом и редактор объекта, используйте следующие методы.  
+## <a name="switching-between-the-new-editor-api-and-the-legacy-api"></a>Переключение между новый редактор API и API для прежних версий  
+ Используйте следующие методы для переключения между объектом редактора и устаревшего интерфейса.  
   
-|Метод|преобразование|  
-|-----------|--------------------|  
+|Метод|Преобразование|  
+|------------|----------------|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetBufferAdapter%2A>|Преобразует <xref:Microsoft.VisualStudio.Text.ITextBuffer> для <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>.|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetDataBuffer%2A>|Преобразует <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> для <xref:Microsoft.VisualStudio.Text.ITextBuffer>.|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetDocumentBuffer%2A>|Преобразует <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> для <xref:Microsoft.VisualStudio.Text.ITextBuffer>.|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetViewAdapter%2A>|Преобразует <xref:Microsoft.VisualStudio.Text.Editor.ITextView> для <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetWpfTextView%2A>|Преобразует <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> для <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>.|  
   
-## Создание адаптеров  
- Используйте следующие методы для создания адаптеров для устаревшие интерфейсы.  
+## <a name="creating-adapters"></a>Создание адаптеров  
+ Используйте следующие методы для создания адаптеров для прежних версий интерфейсов.  
   
-|Метод|преобразование|  
-|-----------|--------------------|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsCodeWindowAdapter%2A>|Создает объект <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>.|  
+|Метод|Преобразование|  
+|------------|----------------|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsCodeWindowAdapter%2A>|Создает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>.|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextBufferAdapter%2A>|Создает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> для указанного <xref:Microsoft.VisualStudio.Utilities.IContentType>.|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextBufferAdapter%2A>|Создает объект <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>.|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextBufferCoordinatorAdapter%2A>|Создает объект <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator>.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextBufferAdapter%2A>|Создает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextBufferCoordinatorAdapter%2A>|Создает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator>.|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextViewAdapter%2A>|Создает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> для <xref:Microsoft.VisualStudio.Text.Editor.ITextViewRoleSet>.|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextViewAdapter%2A>|Создает объект <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextViewAdapter%2A>|Создает <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.|  
   
-## Создание адаптеров в неуправляемом коде  
- Все классы адаптеров регистрируются в качестве локальных совместно создаваемый объект и может быть создан с помощью `VsLocalCreateInstance()` функции.  
+## <a name="creating-adapters-in-unmanaged-code"></a>Создание адаптеров в неуправляемый код  
+ Все классы адаптеров регистрируются локальной воссоздаваемым и может быть создан с помощью `VsLocalCreateInstance()` функции.  
   
- Все адаптеры создаются с помощью идентификатора GUID, которые определены в файле vsshlids.h в... \\VisualStudioIntegration\\Common\\Inc\\ папка установки Visual Studio SDK. Чтобы создать экземпляр VsTextBufferAdapter, используйте следующий код.  
+ Все адаптеры создаются с помощью идентификатора GUID, которые определены в файле vsshlids.h в... \VisualStudioIntegration\Common\Inc\ папка установки Visual Studio SDK. Чтобы создать экземпляр VsTextBufferAdapter, используйте следующий код.  
   
 ```  
 IVsTextBuffer *pBuf = NULL;  
 VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTextBuffer, (void**)&pBuf);  
 ```  
   
-## Создание адаптеров в управляемом коде  
- В управляемом коде совместно можно создать адаптеры таким же образом, как описано для неуправляемого кода. Также можно использовать службу MEF, позволяет создавать и взаимодействовать с адаптерами. Таким способом получения адаптер обеспечивает более точное управление меньше, чем при его создании совместно.  
+## <a name="creating-adapters-in-managed-code"></a>Создание адаптеров в управляемом коде  
+ В управляемом коде совместно можно создать адаптеры таким же образом, как описано для неуправляемого кода. Также можно использовать службу MEF, которая позволяет создавать и взаимодействовать с адаптерами. Такой способ получения адаптер обеспечивает более точное управление меньше, чем при ее создании совместно.  
   
-#### Создание адаптера для IVsTextView  
+#### <a name="to-create-an-adapter-for-ivstextview"></a>Чтобы создать адаптер для IVsTextView  
   
-1.  Добавьте ссылку на Microsoft.VisualStudio.Editor.dll. Убедитесь, что `CopyLocal` имеет значение `false`.  
+1.  Добавьте ссылку на Microsoft.VisualStudio.Editor.dll. Убедитесь, что `CopyLocal` равно `false`.  
   
 2.  Создать экземпляр <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, как показано ниже.  
   
@@ -90,14 +91,14 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     adapterFactoryService.CreateTextViewAdapter(textView);  
     ```  
   
-## В редакторе Visual Studio непосредственно из неуправляемого кода  
- Microsoft.VisualStudio.Platform.VSEditor пространство имен и имен Microsoft.VisualStudio.Platform.VSEditor.Interop предоставлять интерфейсы COM\-вызовов в качестве интерфейсов IVx \*. Например, интерфейс Microsoft.VisualStudio.Platform.VSEditor.Interop.IVxTextBuffer — это версия COM <xref:Microsoft.VisualStudio.Text.ITextBuffer> интерфейса. Из `IVxTextBuffer`, можно получить доступ к моментальным снимкам буфера, меняющим содержимое буфера, прослушивать события изменения текста в буфере и создание точек отслеживания и диапазонов. Ниже показано, как получить доступ к `IVxTextBuffer` из `IVsTextBuffer`.  
+## <a name="using-the-visual-studio-editor-directly-from-unmanaged-code"></a>В редакторе Visual Studio непосредственно из неуправляемого кода  
+ Microsoft.VisualStudio.Platform.VSEditor Microsoft.VisualStudio.Platform.VSEditor.Interop имен и предоставлять вызываемых COM интерфейсы в качестве интерфейсов IVx *. Например, интерфейс Microsoft.VisualStudio.Platform.VSEditor.Interop.IVxTextBuffer — версию COM <xref:Microsoft.VisualStudio.Text.ITextBuffer> интерфейса. Из `IVxTextBuffer`, можно получить доступ к моментальным снимкам буфера, изменения буфера, прослушивать события изменения текста в буфере и создание точек отслеживания и диапазонов. Ниже показано, как получить доступ к `IVxTextBuffer` из `IVsTextBuffer`.  
   
-#### Для получения IVxTextBuffer  
+#### <a name="to-get-an-ivxtextbuffer"></a>Для получения IVxTextBuffer  
   
-1.  Определения интерфейсов IVx \* находятся в файле VSEditor.h в... \\VisualStudioIntegration\\Common\\Inc\\ папка установки Visual Studio SDK.  
+1.  Определения интерфейсов IVx * находятся в файле VSEditor.h в... \VisualStudioIntegration\Common\Inc\ папка установки Visual Studio SDK.  
   
-2.  Следующий код создает текстового буфера с помощью `IVsUserData->GetData()` метод. В следующем коде `pData` — это указатель на `IVsUserData` объект.  
+2.  Следующий код создает текстового буфера, используя `IVsUserData->GetData()` метод. В следующем коде `pData` — это указатель на `IVsUserData` объект.  
   
     ```  
     #include <textmgr.h>  
@@ -119,12 +120,12 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     }  
     ```  
   
-## С помощью редактора Visual Studio служб в компонент не MEF  
- При наличии существующего компонента управляемого кода, не использующих MEF и вы хотите использовать службы редактор Visual Studio, необходимо добавить ссылку на сборку, содержащую ComponentModelHost VSPackage и получить его модели SComponentModel службу.  
+## <a name="using-visual-studio-editor-services-in-a-non-mef-component"></a>С помощью редактора Visual Studio служб в компоненте не MEF  
+ Если имеется существующий компонент управляемого кода, которые не используют MEF, и вы хотите использовать службы в редакторе Visual Studio, необходимо добавить ссылку на сборку, содержащую ComponentModelHost VSPackage и получить его модели SComponentModel службу.  
   
-#### Чтобы использовать компоненты редактора Visual Studio из компонента не MEF  
+#### <a name="to-consume-visual-studio-editor-components-from-a-non-mef-component"></a>Для использования компонентов редактора Visual Studio из компонента не MEF  
   
-1.  Добавьте ссылку на сборку Microsoft.VisualStudio.ComponentModelHost.dll в... \\Common7\\IDE\\ папка установки Visual Studio. Убедитесь, что `CopyLocal` имеет значение `false`.  
+1.  Добавьте ссылку на сборку Microsoft.VisualStudio.ComponentModelHost.dll в... \Common7\IDE\ папка установки Visual Studio. Убедитесь, что `CopyLocal` равно `false`.  
   
 2.  Добавьте закрытый `IComponentModel` члена класса, в котором вы хотите использовать службы редактора Visual Studio, как показано ниже.  
   
@@ -134,14 +135,14 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     private IComponentModel componentModel;  
     ```  
   
-3.  Создайте экземпляр модели компонентов в методе инициализации компонента.  
+3.  Создайте экземпляр модели компонентов в метод инициализации компонента.  
   
     ```  
     componentModel =  
      (IComponentModel)Package.GetGlobalService(typeof(SComponentModel));  
     ```  
   
-4.  После этого одна из служб редактора Visual Studio можно получить, вызвав `IComponentModel.GetService<T>()` метод для службы.  
+4.  После этого можно получить путем вызова любого из службы редактора Visual Studio `IComponentModel.GetService<T>()` метод для службы.  
   
     ```  
     textBufferFactoryService =  

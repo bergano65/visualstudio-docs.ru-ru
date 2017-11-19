@@ -1,12 +1,10 @@
 ---
-title: Adding Controls to Office Documents at Run Time | Microsoft Docs
+title: "Добавление элементов управления в документы Office во время выполнения | Документы Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -25,130 +23,132 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding at run time
 - helper methods [Office development in Visual Studio]
 ms.assetid: 4f43b3eb-f0ec-44e2-9885-6ede327c6913
-caps.latest.revision: 102
-author: kempb
-ms.author: kempb
+caps.latest.revision: "102"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: d140f6a45f62fd9907a9a7ed2984dcbaa3626800
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: db8a4fad73bb710662ce63bd299751c725e0c6ce
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="adding-controls-to-office-documents-at-run-time"></a>Adding Controls to Office Documents at Run Time
-  You can add controls to a Microsoft Office Word document and Microsoft Office Excel workbook at run time. You can also remove them at run time. Controls that you add or remove at run time are called *dynamic controls*.  
+# <a name="adding-controls-to-office-documents-at-run-time"></a>Добавление элементов управления в документы Office во время выполнения
+  Элементы управления можно добавить в документ Microsoft Office Word или книгу Microsoft Office Excel во время выполнения. Их также можно удалять во время выполнения. Элементы управления, добавляемые или удаляемые в документах во время выполнения, называются *динамическими элементами управления*.  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
- This topic describes the following:  
+ Этот раздел содержит сведения по следующим темам.  
   
--   [Managing controls at run time by using the control collections](#ControlsCollection).  
+-   [Управление элементами управления во время выполнения с помощью коллекций элементов управления](#ControlsCollection).  
   
--   [Adding host controls to documents](#HostControls).  
+-   [Добавление элементов управления ведущего приложения в документы](#HostControls).  
   
--   [Adding Windows Forms controls to documents](#WindowsForms).  
+-   [Добавление элементов управления Windows Forms в документы](#WindowsForms).  
   
- ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [How Do I: Add Controls to a Document Surface at Runtime?](http://go.microsoft.com/fwlink/?LinkId=132782).  
+ ![ссылка на видео](../vsto/media/playvideo.gif "ссылку видео") связанные демонстрационные видеоролики см. в разделе [как следует добавить элементы управления на поверхность документа во время выполнения?](http://go.microsoft.com/fwlink/?LinkId=132782).  
   
 ##  <a name="ControlsCollection"></a> Managing Controls at Run Time by Using the Control Collections  
- To add, get, or remove controls at run time, use helper methods of <xref:Microsoft.Office.Tools.Excel.ControlCollection> and <xref:Microsoft.Office.Tools.Word.ControlCollection> objects.  
+ Чтобы добавить, получить или удалить элементы управления во время выполнения, используйте вспомогательные методы объектов <xref:Microsoft.Office.Tools.Excel.ControlCollection> и <xref:Microsoft.Office.Tools.Word.ControlCollection> .  
   
- The way that you access these objects depends on the type of project you are developing:  
+ Способ доступа к этим объектам зависит от типа разрабатываемого проекта.  
   
--   In a document-level project for Excel, use the <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> property of the `Sheet1`, `Sheet2`, and `Sheet3` classes. For more information about these classes, see [Worksheet Host Item](../vsto/worksheet-host-item.md).  
+-   В проекте уровня документа для Excel используйте свойство <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> классов `Sheet1`, `Sheet2`и `Sheet3` . Дополнительные сведения об этих классах см. в разделе [ведущий элемент листа](../vsto/worksheet-host-item.md).  
   
--   In a document-level project for Word, use the <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> property of the `ThisDocument` class. For more information about this class, see [Document Host Item](../vsto/document-host-item.md).  
+-   В проекте уровня документа для Word используйте свойство <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> класса `ThisDocument` . Дополнительные сведения об этом классе см. в разделе [ведущий элемент документа](../vsto/document-host-item.md).  
   
--   In an VSTO Add-in project for Excel or Word, use the Controls property of a <xref:Microsoft.Office.Tools.Excel.Worksheet> or <xref:Microsoft.Office.Tools.Word.Document> that you generate at run time. For more information about generating these objects at run time, see [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+-   В проекте слова надстройки VSTO для Excel или Word, используйте свойство элементов управления <xref:Microsoft.Office.Tools.Excel.Worksheet> или <xref:Microsoft.Office.Tools.Word.Document> , создаваемого во время выполнения. Дополнительные сведения о создании этих объектов во время выполнения см. в разделе [расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
-### <a name="adding-controls"></a>Adding Controls  
- The <xref:Microsoft.Office.Tools.Excel.ControlCollection> and <xref:Microsoft.Office.Tools.Word.ControlCollection> types include helper methods that you can use to add host controls and common Windows Forms controls to documents and worksheets. Each method name has the format `Add`*control class*, where *control class* is the class name of the control that you want to add. For example, to add a <xref:Microsoft.Office.Tools.Excel.NamedRange> control to your document, use the <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddNamedRange%2A> method.  
+### <a name="adding-controls"></a>Добавление элементов управления  
+ Типы <xref:Microsoft.Office.Tools.Excel.ControlCollection> И <xref:Microsoft.Office.Tools.Word.ControlCollection> включают вспомогательные методы, которые можно использовать для добавления элементов управления ведущего приложения и общих элементов управления Windows Forms в документы и листы. Каждое имя метода имеет формат `Add`*класс_элемента_управления*&gt; (где *класс_элемента_управления* — это имя класса элемента управления, который требуется добавить). Например, чтобы добавить элемент управления <xref:Microsoft.Office.Tools.Excel.NamedRange> в документ, используйте метод <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddNamedRange%2A> .  
   
- The following code example adds a <xref:Microsoft.Office.Tools.Excel.NamedRange> to `Sheet1` in a document-level project for Excel.  
+ В следующем примере кода показано, как добавить <xref:Microsoft.Office.Tools.Excel.NamedRange> в `Sheet1` в проекте уровня документа для Excel.  
   
- [!code-vb[Trin_ExcelWorkbookDynamicControls#3](../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/ThisWorkbook.vb#3)] [!code-csharp[Trin_ExcelWorkbookDynamicControls#3](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/ThisWorkbook.cs#3)]  
+ [!code-vb[Trin_ExcelWorkbookDynamicControls#3](../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/ThisWorkbook.vb#3)]
+ [!code-csharp[Trin_ExcelWorkbookDynamicControls#3](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/ThisWorkbook.cs#3)]  
   
-### <a name="accessing-and-deleting-controls"></a>Accessing and Deleting Controls  
- You can use the Controls property of a <xref:Microsoft.Office.Tools.Excel.Worksheet> or <xref:Microsoft.Office.Tools.Word.Document> to iterate through all the controls in your document, including the controls you added at design time. Controls that you add at design time are also called *static controls*.  
+### <a name="accessing-and-deleting-controls"></a>Доступ к элементам управления и их удаление  
+ Можно использовать свойство элементов управления <xref:Microsoft.Office.Tools.Excel.Worksheet> или <xref:Microsoft.Office.Tools.Word.Document> для перебора всех элементов управления в документе, включая элементы управления, добавленные во время разработки. Элементы управления, добавляемые во время разработки, также называются *статическими элементами управления*.  
   
- You can remove dynamic controls by calling the Delete method of the control, or by calling the Remove method of each Controls collection. The following code example uses the <xref:Microsoft.Office.Tools.Excel.ControlCollection.Remove%2A> method to remove a <xref:Microsoft.Office.Tools.Excel.NamedRange> from `Sheet1` in a document-level project for Excel.  
+ Динамические элементы управления можно удалить путем вызова метода удаления элемента управления или путем вызова метода Remove каждой коллекции элементов управления. В следующем примере кода показано использование метода <xref:Microsoft.Office.Tools.Excel.ControlCollection.Remove%2A> для удаления <xref:Microsoft.Office.Tools.Excel.NamedRange> из `Sheet1` в проекте уровня документа для Excel.  
   
- [!code-vb[Trin_ExcelWorkbookDynamicControls#4](../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/ThisWorkbook.vb#4)] [!code-csharp[Trin_ExcelWorkbookDynamicControls#4](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/ThisWorkbook.cs#4)]  
+ [!code-vb[Trin_ExcelWorkbookDynamicControls#4](../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/ThisWorkbook.vb#4)]
+ [!code-csharp[Trin_ExcelWorkbookDynamicControls#4](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/ThisWorkbook.cs#4)]  
   
- You cannot remove static controls at run time. If you try to use the Delete or Remove method to remove a static control, a <xref:Microsoft.Office.Tools.CannotRemoveControlException> will be thrown.  
+ Удалить статические элементы управления во время выполнения невозможно. Если вы попытаетесь удалить метод служит для удаления статического элемента управления, <xref:Microsoft.Office.Tools.CannotRemoveControlException> будет создано.  
   
 > [!NOTE]  
->  Do not programmatically remove controls in the `Shutdown` event handler of the document. The UI elements of the document are no longer available when the `Shutdown` event is raised. If you want to remove controls before the document closes, add your code to the event handler for another event, such as <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> or <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> for Word, or <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>, or <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> for Excel.  
+>  Не удаляйте программным образом элементы управления в обработчике событий `Shutdown` документа. Когда возникает событие `Shutdown` , элементы пользовательского интерфейса документа недоступны. Если требуется удалить элементы управления перед закрытием документа, добавьте код в обработчик другого типа событий, например <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> или <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> для Word либо <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>или <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> для Excel.  
   
 ##  <a name="HostControls"></a> Adding Host Controls to Documents  
- When you programmatically add host controls to documents, you must provide a name that uniquely identifies the control, and you must specify where to add the control on the document. For specific instructions, see the following topics:  
+ Если элементы управления ведущего приложения программно добавляются в документ, необходимо указать имя, которое однозначно определяет элемент управления, и расположение для добавления элемента управления в документе. Дополнительные инструкции см. в следующих разделах:  
   
--   [How to: Add ListObject Controls to Worksheets](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
+-   [Практическое руководство. Добавление элементов управления ListObject на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
   
--   [How to: Add NamedRange Controls to Worksheets](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
+-   [Практическое руководство. Добавление элементов управления NamedRange на листы](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
   
--   [How to: Add Chart Controls to Worksheets](../vsto/how-to-add-chart-controls-to-worksheets.md)  
+-   [Практическое руководство. Добавление элементов управления Chart на листы](../vsto/how-to-add-chart-controls-to-worksheets.md)  
   
--   [How to: Add Content Controls to Word Documents](../vsto/how-to-add-content-controls-to-word-documents.md)  
+-   [Практическое руководство. Добавление элементов управления содержимым в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
   
--   [How to: Add Bookmark Controls to Word Documents](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
+-   [Практическое руководство. Добавление элементов управления Bookmark в документы Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
   
- For more information about host controls, see [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
+ Дополнительные сведения об элементах управления ведущего приложения см. в разделе [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
   
- When a document is saved and then closed, all dynamically created host controls are disconnected from their events and they lose their data binding functionality. You can add code to your solution to re-create the host controls when the document is reopened. For more information, see [Persisting Dynamic Controls in Office Documents](../vsto/persisting-dynamic-controls-in-office-documents.md).  
+ Когда документ сохраняется, а затем закрывается, все динамически созданные элементы управления будут отключены от событий и потеряют функции привязки данных. Можно добавить в решение код для повторного создания элементов управления ведущего приложения при повторном открытии документа. Дополнительные сведения см. в разделе [Persisting Dynamic Controls in Office Documents](../vsto/persisting-dynamic-controls-in-office-documents.md).  
   
 > [!NOTE]  
->  Helper methods are not provided for the following host controls, because these controls cannot be added programmatically to documents: <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>, and <xref:Microsoft.Office.Tools.Word.XMLNodes>.  
+>  Вспомогательные методы для элементов управления ведущего приложения не предоставляются, так как следующие элементы управления не могут быть программно добавлены в документы: <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>и <xref:Microsoft.Office.Tools.Word.XMLNodes>.  
   
 ##  <a name="WindowsForms"></a> Adding Windows Forms Controls to Documents  
- When you programmatically add a Windows Forms control to a document, you must provide the location of the control and a name that uniquely identifies the control. The [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] provides helper methods for each control. These methods are overloaded so that you can pass either a range or specific coordinates for the location of the control.  
+ При программном добавлении элемента управления Windows Forms в документ необходимо указать расположение и имя, которое однозначно определяет элемент управления. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] предоставляет вспомогательные методы для каждого элемента управления. Эти методы являются перегруженными, поэтому можно передавать или диапазон, или конкретные координаты расположения элемента управления.  
   
- When a document is saved and then closed, all dynamically created Windows Forms controls are removed from the document. You can add code to your solution to re-create the controls when the document is reopened. If you create dynamic Windows Forms controls by using an VSTO Add-in, the ActiveX wrappers for the controls are left in the document. For more information, see [Persisting Dynamic Controls in Office Documents](../vsto/persisting-dynamic-controls-in-office-documents.md).  
+ Если сохранить и закрыть документ, все динамически созданные элементы управления Windows Forms будут удалены из документа. Можно добавить в решение код для повторного создания элементов управления при повторном открытии документа. Если создавать элементы управления Windows Forms с помощью надстройки VSTO, оболочки ActiveX для элементов управления остаются в документе. Дополнительные сведения см. в разделе [Persisting Dynamic Controls in Office Documents](../vsto/persisting-dynamic-controls-in-office-documents.md).  
   
 > [!NOTE]  
->  Windows Forms controls cannot be programmatically added to protected documents. If you programmatically unprotect a Word document or Excel worksheet to add a control, you must write additional code to remove the control's ActiveX wrapper when the document is closed. The control's ActiveX wrapper is not automatically deleted from protected documents.  
+>  В защищенные документы нельзя программно добавить элементы управления Windows Forms. Если программно снять защиту документа Word или листа Excel, чтобы добавить элемент управления, необходимо написать дополнительный код для удаления оболочки ActiveX элемента управления при закрытии документа. Оболочки ActiveX элементов управления не удаляются из защищенных документов автоматически.  
   
-### <a name="adding-custom-controls"></a>Adding Custom Controls  
- If you want to add a <xref:System.Windows.Forms.Control> that is not supported by the available helper methods, such as a custom user control, use the following methods:  
+### <a name="adding-custom-controls"></a>Добавление пользовательских элементов управления  
+ Если вы хотите добавить <xref:System.Windows.Forms.Control> , который не поддерживается доступными вспомогательными методами, например пользовательский элемент управления, выполните следующие действия.  
   
--   For Excel, use one of the <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> methods of a <xref:Microsoft.Office.Tools.Excel.ControlCollection> object.  
+-   В Excel следует использовать один из методов <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> объекта <xref:Microsoft.Office.Tools.Excel.ControlCollection> .  
   
--   For Word, use one of the <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A> methods of a <xref:Microsoft.Office.Tools.Word.ControlCollection> object.  
+-   В Word следует использовать один из методов <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A> объекта <xref:Microsoft.Office.Tools.Word.ControlCollection> .  
   
- To add the control, pass the <xref:System.Windows.Forms.Control>, a location for the control, and a name that uniquely identifies the control to the AddControl method. The AddControl method returns an object that defines how the control interacts with the worksheet or document. The AddControl method returns a <xref:Microsoft.Office.Tools.Excel.ControlSite> (for Excel) or a <xref:Microsoft.Office.Tools.Word.ControlSite> object (for Word).  
+ Чтобы добавить элемент управления, передайте <xref:System.Windows.Forms.Control>, расположение элемента управления и имя, которое однозначно определяет элемент управления в метод AddControl. Метод AddControl возвращает объект, определяющий, как элемент управления взаимодействует с листом или документом. Возвращает метод AddControl <xref:Microsoft.Office.Tools.Excel.ControlSite> (для Excel) или <xref:Microsoft.Office.Tools.Word.ControlSite> (для Word).  
   
- The following code example demonstrates how to use the <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> method to dynamically add a custom user control to a worksheet in a document-level Excel project. In this example, the user control is named `UserControl1`, and the <xref:Microsoft.Office.Interop.Excel.Range> is named `range1`. To use this example, run it from a `Sheet`*n* class in the project.  
+ В следующем примере кода показано использование метода <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> для динамического добавления пользовательского элемента управления в лист в проекте уровня документа для Excel. В этом примере пользовательский элемент управления называется `UserControl1`, а <xref:Microsoft.Office.Interop.Excel.Range> называется `range1`. Чтобы использовать этот пример, запустите его из `Sheet`  *n*  класса в проекте.  
   
- [!code-vb[Trin_VstcoreProgrammingControlsExcel#2](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#2)] [!code-csharp[Trin_VstcoreProgrammingControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#2)]  
+ [!code-vb[Trin_VstcoreProgrammingControlsExcel#2](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#2)]
+ [!code-csharp[Trin_VstcoreProgrammingControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#2)]  
   
-### <a name="using-members-of-custom-controls"></a>Using Members of Custom Controls  
- After using one of the AddControl methods to add a control to a worksheet or document, you now have two different control objects:  
+### <a name="using-members-of-custom-controls"></a>Использование членов пользовательских элементов управления  
+ После использования одного из методов AddControl Добавление элемента управления в лист или документ, теперь у вас есть два разных объекта элемента управления:  
   
--   The <xref:System.Windows.Forms.Control> that represents the custom control.  
+-   <xref:System.Windows.Forms.Control> , представляющий пользовательский элемент управления.  
   
--   The ControlSite, OLEObject, or OLEControl object that represents the control after it was added to the worksheet or document.  
+-   ControlSite OLEObject и OLEControl объект, представляющий элемент управления после его добавления в лист или документ.  
   
- Many properties and methods are shared between these controls. It is important that you access these members through the appropriate control:  
+ Многие свойства и методы этих элементов управления являются общими. Очень важно обращаться к этим членам через надлежащий элемент управления.  
   
--   To access members that belong only to the custom control, use the <xref:System.Windows.Forms.Control>.  
+-   Для доступа к членам, относящимся только к пользовательскому элементу управления, используйте <xref:System.Windows.Forms.Control>.  
   
--   To access members that are shared by the controls, use the ControlSite, OLEObject, or OLEControl object.  
+-   Для доступа к членам, которые являются общими для элементов управления, используйте объект ControlSite OLEObject и OLEControl.  
   
- If you access a shared member from the <xref:System.Windows.Forms.Control>, it might fail without warning or notification, or it can produce invalid results. Always use methods or properties of the ControlSite, OLEObject, or OLEControl object unless the method or property needed is not available; only then should you reference the <xref:System.Windows.Forms.Control>.  
+ При доступе к общему члену из <xref:System.Windows.Forms.Control>может возникнуть сбой без предупреждения или уведомления либо может быть получен недопустимый результат. Всегда используйте методы и свойства объекта ControlSite OLEObject и OLEControl, если необходимый метод или свойство недоступна; только после этого можно будет ссылаться <xref:System.Windows.Forms.Control>.  
   
- For example, both the <xref:Microsoft.Office.Tools.Excel.ControlSite> class and the <xref:System.Windows.Forms.Control> class have a Top property. To get or set the distance between the top of the control and the top of the document, use the <xref:Microsoft.Office.Tools.Excel.ControlSite.Top%2A> property of the <xref:Microsoft.Office.Tools.Excel.ControlSite>, not the <xref:System.Windows.Forms.Control.Top%2A> property of the <xref:System.Windows.Forms.Control>.  
+ Например, оба <xref:Microsoft.Office.Tools.Excel.ControlSite> класса и <xref:System.Windows.Forms.Control> класс имеет свойства, Top. Чтобы получить или задать расстояние между верхней границей элемента управления и верхней частью документа, используйте свойство <xref:Microsoft.Office.Tools.Excel.ControlSite.Top%2A> объекта <xref:Microsoft.Office.Tools.Excel.ControlSite>, а не свойство <xref:System.Windows.Forms.Control.Top%2A> объекта <xref:System.Windows.Forms.Control>.  
   
- [!code-vb[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#3)] [!code-csharp[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#3)]  
+ [!code-vb[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#3)]
+ [!code-csharp[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#3)]  
   
-## <a name="see-also"></a>See Also  
- [Controls on Office Documents](../vsto/controls-on-office-documents.md)   
- [Persisting Dynamic Controls in Office Documents](../vsto/persisting-dynamic-controls-in-office-documents.md)   
- [How to: Add ListObject Controls to Worksheets](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
- [How to: Add NamedRange Controls to Worksheets](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
- [How to: Add Chart Controls to Worksheets](../vsto/how-to-add-chart-controls-to-worksheets.md)   
- [How to: Add Content Controls to Word Documents](../vsto/how-to-add-content-controls-to-word-documents.md)   
+## <a name="see-also"></a>См. также  
+ [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)   
+ [Сохранение динамических элементов управления в документах Office](../vsto/persisting-dynamic-controls-in-office-documents.md)   
+ [Как: Добавление элементов управления ListObject на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
+ [Как: Добавление элементов управления NamedRange на листы](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Как: Добавление элементов управления диаграммой на листы](../vsto/how-to-add-chart-controls-to-worksheets.md)   
+ [Как: Добавление элементов управления содержимым в документы Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [How to: Add Bookmark Controls to Word Documents](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
- [Windows Forms Controls on Office Documents Overview](../vsto/windows-forms-controls-on-office-documents-overview.md)   
- [How to: Add Windows Forms Controls to Office Documents](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
-
+ [Элементы управления в документах Office Windows Forms](../vsto/windows-forms-controls-on-office-documents-overview.md)   
+ [Практическое руководство. Добавление элементов управления Windows Forms в документы Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   

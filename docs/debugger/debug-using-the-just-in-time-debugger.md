@@ -1,105 +1,88 @@
 ---
-title: Debug using the Just-In-Time Debugger | Microsoft Docs
+title: "Отладка с помощью JIT-отладчик | Документы Microsoft"
 ms.custom: 
 ms.date: 07/06/17
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
 ms.assetid: ee4d79a5-a1d2-4418-a93f-dd57a53e1836
-caps.latest.revision: 48
+caps.latest.revision: "48"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 79cf2896fa6dca5c6846768f30e180ae540af6b8
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
-
+ms.openlocfilehash: 470e4c728d246570e6f7e38ff3b71772de5b05fd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debug using the Just-In-Time Debugger in Visual Studio
-Just-In-Time debugging launches Visual Studio automatically when an exception or crash occurs in an application that is running outside Visual Studio. This enables you to test your application when Visual Studio is not running, and begin debugging with Visual Studio when a problem occurs.
+# <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Отладка с помощью JIT-отладчик в Visual Studio
+Just-In-Time отладка автоматически запускает Visual Studio при возникновении исключения или неустранимой ошибки в программе, на котором выполняется вне Visual Studio. Это позволяет тестировать приложение, не запуская Visual Studio и начинать отладку в Visual Studio при возникновении проблемы.
 
-Just-In-Time debugging works for Windows desktop apps. It does not work for Universal Windows Apps, and it does not work for managed code that is hosted in a native application, such as Visualizers.
+Отладка в времени работает для классических приложений Windows. Не работает для универсальных приложений Windows, а не работает для управляемого кода, размещенного в приложении машинного кода, например для визуализаторов.
 
 > [!TIP] 
-> If you just want to know how to respond to the Just-in-Time debugger dialog box, see [this topic](../debugger/just-in-time-debugging-in-visual-studio.md).
+> Если требуется узнать, как реагировать на только время диалоговое окно отладчика см. в разделе [в этом разделе](../debugger/just-in-time-debugging-in-visual-studio.md).
 
-##  <a name="BKMK_Enabling"></a> Enable or disable Just-In-Time debugging  
-You can enable or disable Just-In-Time debugging from the Visual Studio **Tools > Options** dialog box.
+##  <a name="BKMK_Enabling"></a>Включение или отключение непосредственно в время отладки  
+Можно включить или отключить непосредственно времени отладки из Visual Studio **Сервис > Параметры** диалоговое окно.
   
-#### <a name="to-enable-or-disable-just-in-time-debugging"></a>To enable or disable Just-In-Time debugging  
+#### <a name="to-enable-or-disable-just-in-time-debugging"></a>Включение или отключение JIT–отладки  
   
-1.  Open Visual Studio with Administrator privileges (right-click and choose **Run as administrator**).
+1.  Откройте Visual Studio с правами администратора (щелкните правой кнопкой мыши и выберите **Запуск от имени администратора**).
 
-    Enabling or disabling Just-In-Time debugging sets a registry key, and Administrator privileges may be required to change that key.
+    Включение или отключение времени непосредственно отладки устанавливает раздел реестра и правами администратора может потребоваться изменить этот ключ.
     
-2. On the **Tools** menu, click **Options**.
+2. В меню **Сервис** выберите пункт **Параметры**.
   
-2.  In the **Options** dialog box, expand the **Debugging** node.  
+2.  В **параметры** диалогового окна разверните **Отладка** узла.  
   
-3.  In the **Debugging** node, select **Just-In-Time**.
+3.  В **Отладка** выберите **непосредственно в момент**.
 
-    ![Enable or Disable JIT Debugging](../debugger/media/dbg-jit-enable-or-disable.png "Enable or Disable JIT Debugging") 
+    ![Включение или отключение JIT-отладка](../debugger/media/dbg-jit-enable-or-disable.png "Включение или отключение JIT-отладка") 
   
-4.  In the **Enable Just-In-Time debugging of these types of code** box, select or clear the relevant program types: **Managed**, **Native**, or **Script**.    
+4.  В **включить JIT – отладку для следующих типов кода** установите или снимите соответствующих типов программ: **управляемое**, **собственного**, или **сценария**.    
   
-5.  Click **OK**.  
+5.  Нажмите кнопку **ОК**.  
   
-Just-In-Time debugging may still be enabled even if Visual Studio is no longer installed on your computer. When Visual Studio is not installed, you cannot disable Just-In-Time debugging from the Visual Studio **Options** dialog box. In that case, you can disable Just-In-Time debugging by editing the Windows registry.  
+JIT-отладка может оставаться включенной даже после удаления Visual Studio с компьютера. Если Visual Studio не установлен, невозможно отключить непосредственно времени отладки из Visual Studio **параметры** диалоговое окно. В таком случае JIT-отладку можно отключить, отредактировав реестр Windows.  
   
-#### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>To disable Just-In-Time debugging by editing the registry  
+#### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>Отключение JIT-отладки путем редактирования реестра  
   
-1.  On the **Start** menu, search for and run `regedit.exe`  
+1.  На **запустить** меню, найдите и запустите`regedit.exe`  
   
-2.  In the **Registry Editor** window, locate and delete the following registry entries:  
+2.  В **редактора реестра** окна, найдите и удалите следующие параметры реестра:  
   
     -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger  
   
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\DbgManagedDebugger  
+    -   Реестр\.NETFramework\DbgManagedDebugger  
 
-    ![JIT Registry Key](../debugger/media/dbg-jit-registry.png "JIT Registry Key") 
+    ![Раздел реестра JIT](../debugger/media/dbg-jit-registry.png "JIT реестра") 
   
-3.  If your computer is running a 64-bit operating system, delete the following registry entries also:  
+3.  Если компьютер работает под управлением 64-разрядной операционной системе, также удалите следующие параметры реестра:  
   
     -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger  
   
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger  
+    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\DbgManagedDebugger  
   
-4.  Take care not to accidentally delete or change any other registry keys.  
+4.  Будьте внимательны, чтобы случайно не удалить или не изменить какие-либо другие разделы реестра.  
   
-5.  Close the **Registry Editor** window.   
+5.  Закрыть **редактора реестра** окна.   
   
-#### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>To enable Just-In-Time debugging of a Windows Form  
+#### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>Включение JIT-отладки для приложений Windows Forms  
   
-1.  By default, Windows Forms applications have a top-level exception handler that allows the program to continue to run if it can recover. For example, if your Windows Forms application throws an unhandled exception, you will see a dialog like the following:  
+1.  По умолчанию для приложений Windows Forms имеется обработчик исключений верхнего уровня, позволяющий программе продолжать работу, если возможно восстановление после ошибки. Например если приложение Windows Forms вызывает необработанное исключение, вы увидите диалоговое окно следующим образом:  
   
      ![WindowsFormsUnhandledException](../debugger/media/windowsformsunhandledexception.png "WindowsFormsUnhandledException")  
   
-     To enable Just-In-Time debugging of a Windows Forms application, you must perform the following additional steps:  
+     Для включения только по требованию отладки для приложения Windows Forms, необходимо выполнить следующие дополнительные действия:  
   
-2.  Set the `jitDebugging` value to `true` in the `system.windows.form` section of the machine.config or *\<application name>*.exe.config file:  
+2.  Задать `jitDebugging` значение `true` в `system.windows.form` раздел machine.config или  *\<имя приложения >*. exe.config файла:  
   
     ```  
     <configuration>  
@@ -107,28 +90,28 @@ Just-In-Time debugging may still be enabled even if Visual Studio is no longer i
     </configuration>  
     ```  
   
-3.  In a C++ Windows Form application, you must also set `DebuggableAttribute` in a .config file or in your code. If you compile with [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) and without [/Og](/cpp/build/reference/og-global-optimizations), the compiler sets this attribute for you. If you want to debug a non-optimized release build, however, you must set this yourself. You can do this by adding the following line to your the AssemblyInfo.cpp file of your application:  
+3.  Для приложений Windows Form, написанных на языке C++, в файле CONFIG или в коде должен быть задан атрибут `DebuggableAttribute`. Если компиляция выполняется с [/ZI](/cpp/build/reference/z7-zi-zi-debug-information-format) и без [/Og](/cpp/build/reference/og-global-optimizations), компилятор сам задаст этот атрибут. Однако если требуется отладка неоптимизированного построения выпуска, этот атрибут необходимо задать самостоятельно. Для этого добавьте следующую строку в файл AssemblyInfo.cpp своего приложения:  
   
     ```  
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];   
     ```  
   
-     For more information, see <xref:System.Diagnostics.DebuggableAttribute>.  
+     Для получения дополнительной информации см. <xref:System.Diagnostics.DebuggableAttribute>.  
   
-## <a name="a-namebkmkusingjituse-just-in-time-debugging"></a><a name="BKMK_Using_JIT">Use Just-In-Time Debugging  
- This section shows what happens when an executable throws an exception.  
+## <a name="a-namebkmkusingjituse-just-in-time-debugging"></a><a name="BKMK_Using_JIT">Используйте отладку Just-In-Time  
+ В этом разделе показано, что происходит, когда исполняемый файл создает исключение.  
   
- You must have Visual Studio installed to follow these steps. If you don't have Visual Studio, you can download the free [Visual Studio Community Edition](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).  
+ Необходимо иметь среда Visual Studio выполните следующие действия. Если у вас нет Visual Studio, вы можете загрузить бесплатную [Visual Studio Community Edition](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).  
   
- Make sure that Just-In-Time debugging is [enabled](#BKMK_Enabling).
+ Убедитесь, что только время Отладка — это [включен](#BKMK_Enabling).
   
- For the purposes of this section, we'll make a C# console app in Visual Studio that throws a [NullReferenceException](http://msdn.microsoft.com/Library/658af786-d893-4114-a3c5-31c7d586056a).  
+ В целях этого раздела мы выполним консольное приложение C# в Visual Studio, которая создает исключение [NullReferenceException](http://msdn.microsoft.com/Library/658af786-d893-4114-a3c5-31c7d586056a).  
   
- In Visual Studio, create a C# console app (**File > New > Project > Visual C# > Console Application**) named **ThrowsNullException**. For more information about creating projects in Visual Studio, see [Walkthrough: Create a Simple Application](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).  
+ В Visual Studio, создайте консольное приложение C# (**файл > Создать > проект > Visual C# > консольное приложение**) с именем **ThrowsNullException**. Дополнительные сведения о создании проектов в Visual Studio см. в разделе [Пошаговое руководство: создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).  
   
- When the project opens in Visual Studio, open the Program.cs file. Replace the Main() method with the following code, which prints a line to the console and then throws a NullReferenceException:  
+ При открытии проекта в Visual Studio откройте файл Program.cs. Замените метод Main() на следующий код, который выводит на консоль строку и затем создает исключение NullReferenceException:  
   
-```C#  
+```csharp  
 static void Main(string[] args)  
 {  
     Console.WriteLine("we will now throw a NullReferenceException");  
@@ -137,64 +120,64 @@ static void Main(string[] args)
 ```  
   
 > [!IMPORTANT]
->  In order for this procedure to work in a [release configuration](../debugger/how-to-set-debug-and-release-configurations.md), you need to turn off [Just My Code](../debugger/just-my-code.md). In Visual Studio, click **Tools > Options**. In the **Options** dialog, select **Debugging**. Remove the check from **Enable Just My Code**.  
+>  В этой процедуры для работы в [конфигурации выпуска](../debugger/how-to-set-debug-and-release-configurations.md), необходимо отключить [только мой код](../debugger/just-my-code.md). В Visual Studio щелкните **Сервис > Параметры**. В **параметры** диалогового окна выберите **Отладка**. Удалить проверку из **включить только мой код**.  
   
- Build the solution (in Visual Studio, choose **Build > Rebuild Solution**). You can choose either the Debug or the Release configuration (choose **Debug** for the full debugging experience). For more information about build configurations, see [Understanding Build Configurations](../ide/understanding-build-configurations.md).  
+ Выполните сборку решения (в Visual Studio выберите **сборки > Перестроить решение**). Можно выбрать отладки или конфигурации выпуска (выберите **отладки** для полного отладку). Дополнительные сведения о конфигурациях сборки см. в разделе [общее представление о конфигурациях построения](../ide/understanding-build-configurations.md).  
   
- The build process creates an executable ThrowsNullException.exe. You can find it under the folder where you created the C# project: **...\ThrowsNullException\ThrowsNullException\bin\Debug** or **...\ThrowsNullException\ThrowsNullException\bin\Release**.  
+ Процесс построения создает исполняемый файл ThrowsNullException.exe. Его можно найти в папке, в котором создается проект C#: **...\ThrowsNullException\ThrowsNullException\bin\Debug** или **...\ThrowsNullException\ThrowsNullException\bin\Release**.  
   
- Double-click the ThrowsNullException.exe. You should see a command window like this:  
+ Дважды щелкните ThrowsNullException.exe. Появится окно командной строки следующим образом:  
   
  ![ThrowsNullExceptionConsole](../debugger/media/throwsnullexceptionconsole.png "ThrowsNullExceptionConsole")  
   
- After a few seconds, an error window appears:  
+ Через несколько секунд откроется окно сообщений об ошибке:  
   
  ![ThrowsNullExceptionError](../debugger/media/throwsnullexceptionerror.png "ThrowsNullExceptionError")  
   
- Do not click **Cancel**! After a few seconds, you should see two buttons, **Debug** and **Close program**. Click **Debug**.  
+ Не нажимайте кнопку **отменить**! Через несколько секунд вы увидите две кнопки **отладки** и **закрыть программу**. Нажмите кнопку **отладки**.  
   
 > [!CAUTION]
->  If your application contains untrusted code, a dialog box with a security warning appears. This dialog box enables you to decide whether or not to proceed with debugging. Before you continue with debugging, decide whether you trust the code. Did you write the code yourself? Do you trust the coder? If the application is running on a remote machine, do you recognize the name of the process? Even if the application is running locally, that does not necessarily mean it can be trusted. Consider the possibility of malicious code running on your computer. If you decide that the code you are about to debug is trustworthy, click **Debug**. Otherwise, click **Don't Debug**.  
+>  Если приложение содержит ненадежный код, появится диалоговое окно с предупреждением системы безопасности. Это диалоговое окно позволяет выбрать, следует ли продолжать отладку или нет. Перед продолжением отладки решите, доверяете ли вы данному коду. Этот код написан вами самостоятельно? Доверяете ли вы автору кода? Если приложение выполняется на удаленном компьютере, узнаете ли вы имя процесса? Даже если приложение выполняется на локальном компьютере, это не обязательно означает, что ему можно доверять. Учитывайте возможность выполнения вредоносного кода на вашем компьютере. Если вы решите, что код вы собираетесь отладки доверять, нажмите **отладки**. В противном случае нажмите кнопку **не отлаживать**.  
   
- The **Visual Studio Just-In-Time Debugger** window appears:  
+ **JIT – отладчик Visual Studio** появится окно:  
   
  ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")  
   
- Under **Possible Debuggers**, you should see that the **New instance of Microsoft Visual Studio <available version>** line is selected. If it isn't selected already, select it now.  
+ В разделе **Доступные отладчики**, вы должны увидеть **новый экземпляр Microsoft Visual Studio <available version>**  выбрана строка. Если он не уже выбрана, выберите его.  
   
- At the bottom of the window, under **Do you want to debug using the selected debugger?**, click **Yes**.  
+ В нижней части окна в разделе **требуется отлаживать, используя выбранный отладчик?**, нажмите кнопку **Да**.  
   
- The ThrowsNullException project opens in a new instance of Visual Studio, with execution stopped at the line that throws the exception:  
+ ThrowsNullException проект откроется в новом экземпляре Visual Studio с Выполнение остановлено на строке, в которой создается исключение:  
   
  ![NullReferenceSecondInstance](../debugger/media/nullreferencesecondinstance.png "NullReferenceSecondInstance")  
   
- You can start debugging at this point. If this were a real application, you would need to find out why the code is throwing the exception.  
+ Можно начать отладку на этом этапе. Если бы это был реальному приложению, необходимо определить, почему код которой было вызвано исключение.  
   
-## <a name="just-in-time-debugging-errors"></a>Just-In-Time debugging errors  
- if you don't see the dialog when the program crashes, this might due to Windows Error Reporting settings on your computer. For more information, see [.WER Settings](/windows-hardware/drivers/dashboard/windows-error-reporting-getting-started).  
+## <a name="just-in-time-debugging-errors"></a>Ошибки JIT-отладки  
+ Если вы не видите диалоговое окно при аварийном завершении программы, это возможно из-за параметров отчетов об ошибках Windows на компьютере. Дополнительные сведения см. в разделе [. Параметры отчетов об ошибках Windows](/windows-hardware/drivers/dashboard/windows-error-reporting-getting-started).  
   
- You might see the following error messages that are associated with Just-In-Time debugging.  
+ Могут отображаться следующие сообщения об ошибках, связанные с JIT–отладкой.  
   
--   **Unable to attach to the crashing process. The specified program is not a Windows or MS-DOS program.**  
+-   **Не удается присоединиться к аварийному процессу. Указанная программа не является программой Windows или MS-DOS.**  
   
-     This error occurs when you try to attach to a process running as another user.  
+     Эта ошибка возникает при попытке подключиться к процессу, запущенного от имени другого пользователя.  
   
-     To work around this problem, start Visual Studio, open the **Attach to Process** dialog box from the **Debug** menu, and find the process you want to debug in the **Available Processes** list. If you do not know the name of the process, look at the **Visual Studio Just-In-Time Debugger** dialog and note the process ID. Select the process in the **Available Processes** list and click **Attach**. In the **Visual Studio Just-In-Time Debugger** dialog, click **No** to dismiss the dialog box.  
+     Чтобы решить эту проблему, запустите Visual Studio откройте **присоединиться к процессу** диалогового окна **отладки** меню и найдите процесс, который нужно отладить в **доступные процессы**список. Если вы не знаете имя процесса, посмотрите **JIT – отладчик Visual Studio** диалоговое окно и запомните идентификатор процесса Выберите процесс в **доступные процессы** списке и нажмите кнопку **присоединение**. В **JIT – отладчик Visual Studio** диалоговое окно, нажмите кнопку **нет** чтобы закрыть диалоговое окно.  
   
--   **Debugger could not be started because no user is logged on.**  
+-   **Не удалось запустить отладчик, поскольку пользователь не вошел в систему.**  
   
-     This error occurs when Just-In-Time debugging tries to start Visual Studio on a machine where there is no user logged onto the console. Because no user is logged on, there is no user session to display the Just-In-Time debugging dialog box.  
+     Данная ошибка возникает, когда JIT–отладка пытается запустить Visual Studio на компьютере, на котором нет пользователей, вошедших в консоль. Так как пользователи, выполнившие вход, отсутствуют, также отсутствует сеанс пользователя, в котором следовало бы отображать диалоговое окно JIT–отладки.  
   
-     To fix this problem, log onto the machine.  
+     Для решения этой проблемы необходимо войти в компьютер.  
   
--   **Class not registered.**  
+-   **Класс не зарегистрирован.**  
   
-     This error indicates that the debugger tried to create a COM class that is not registered, probably due to an installation problem.  
+     Эта ошибка указывает, что отладчик пытался создать класс COM, который не зарегистрирован, вероятно, из–за проблем с установкой.  
   
-     To fix this problem, use the setup disk to reinstall or repair your Visual Studio installation.  
+     Чтобы решить эту проблему, используйте установочный диск для переустановки или восстановления установки Visual Studio.  
   
-## <a name="see-also"></a>See Also  
- [Debugger Security](../debugger/debugger-security.md)   
- [Debugger Basics](../debugger/debugger-basics.md)   
- [Just-In-Time, Debugging, Options Dialog Box](../debugger/just-in-time-debugging-options-dialog-box.md)   
- [Security Warning: Attaching to a process owned by an untrusted user can be dangerous. If the following information looks suspicious or you are unsure, do not attach to this process](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)
+## <a name="see-also"></a>См. также  
+ [Безопасность отладчика](../debugger/debugger-security.md)   
+ [Основы отладки](../debugger/debugger-basics.md)   
+ [Just-In-Time, отладка, диалоговое окно параметров](../debugger/just-in-time-debugging-options-dialog-box.md)   
+ [Предупреждение безопасности. Присоединение к процессу, который принадлежит пользователю, не являющемуся доверенным, может быть опасным. Если следующие сведения не вызывают доверия, то не следует присоединяться к процессу](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)

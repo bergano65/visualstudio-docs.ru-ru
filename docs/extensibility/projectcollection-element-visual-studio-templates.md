@@ -1,30 +1,35 @@
 ---
-title: "Элемент ProjectCollection (шаблоны Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#ProjectCollection"
-helpviewer_keywords: 
-  - "<ProjectCollection> - элемент [шаблоны Visual Studio]"
-  - "ProjectCollection - элемент [шаблоны Visual Studio]"
+title: "Элемент ProjectCollection (шаблоны Visual Studio) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#ProjectCollection
+helpviewer_keywords:
+- <ProjectCollection> element [Visual Studio Templates]
+- ProjectCollection element [Visual Studio Templates]
 ms.assetid: deb27180-2035-49ed-b835-c47bb3cd2f8f
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d043d9963ad9f2bf9bd06b7a8cc543ffaee50e19
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Элемент ProjectCollection (шаблоны Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Указывает организацию и содержимое имя многопроектных шаблонов.  
+# <a name="projectcollection-element-visual-studio-templates"></a>Элемент ProjectCollection (шаблоны Visual Studio)
+Указывает организацию и содержимое многопроектных шаблонов.  
   
-## Синтаксис  
+ \<VSTemplate >  
+ \<TemplateContent >  
+ \<ProjectCollection >  
+  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <ProjectCollection>  
@@ -33,30 +38,30 @@ caps.handback.revision: 8
 </ProjectCollection>  
 ```  
   
-## Атрибуты и элементы  
- В следующих разделах описаны атрибуты, дочерние элементы и родительские элементы.  
+## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
-### Атрибуты  
+### <a name="attributes"></a>Атрибуты  
  Отсутствует.  
   
-### Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
-|[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает проект в многопроектном шаблоне.|  
+|-------------|-----------------|  
+|[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Указывает проекта в многопроектном шаблоне.|  
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|Необязательный элемент.<br /><br /> Группирует проекты в многопроектных шаблонах.|  
   
-### Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
+|-------------|-----------------|  
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Задает содержимое шаблона.|  
   
-## Заметки  
- Многопроектные шаблоны используются в качестве контейнера для двух или нескольких проектов.  Элемент `ProjectCollection` используется для указания проектов, которые будут содержаться в шаблоне.  Дополнительные сведения о многопроектных шаблонах см. в разделе [Практическое руководство. Создание многопроектных шаблонов](../ide/how-to-create-multi-project-templates.md).  
+## <a name="remarks"></a>Примечания  
+ Многопроектные шаблоны используются в качестве контейнера для двух или нескольких проектов. `ProjectCollection` Элемент используется для указания проектов содержат в шаблоне. Дополнительные сведения о многопроектных шаблонах см. в разделе [как: создание многопроектных шаблонов](../ide/how-to-create-multi-project-templates.md).  
   
-## Пример  
- В этом примере показан простой, включающий несколько проектов корневой VSTEMPLATE\-файл.  В этом примере шаблон содержит два проекта `My Windows Application` и `My Class Library`.  Атрибут `ProjectName` элемента `ProjectTemplateLink` задает имя, которое [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] назначает данному проекту.  Если атрибут `ProjectName` не существует, имя VSTEMPLATE\-файла используется в качестве имени проекта.  
+## <a name="example"></a>Пример  
+ В этом примере показан простой корневой VSTEMPLATE-файл, включающий несколько проектов. В этом примере шаблон содержит два проекта `My Windows Application` и `My Class Library`. Атрибут `ProjectName` элемента `ProjectTemplateLink` задает имя, которое [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] назначает данному проекту. Если атрибут `ProjectName` не существует, имя VSTEMPLATE-файла используется в качестве имени проекта.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="ProjectGroup"  
@@ -80,7 +85,7 @@ caps.handback.revision: 8
 </VSTemplate>  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Создание пользовательских шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
+ [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
  [Практическое руководство. Создание многопроектных шаблонов](../ide/how-to-create-multi-project-templates.md)

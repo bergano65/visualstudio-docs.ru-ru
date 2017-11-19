@@ -1,33 +1,34 @@
 ---
-title: "Отладка пакета | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "отладка [пакет SDK для отладки], пакеты"
+title: "Отладка пакета | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], packages
 ms.assetid: 99947fd4-fb87-4c69-b26c-65634e17d285
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: eccd258476f82871732ef7b16f0282d2f945b9ee
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Отладка пакета
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Пакет отладки работает в оболочке Visual Studio и обрабатывает все пользовательский интерфейс.  Он использует интерфейсы отладки Visual Studio и связывается с сеансом \(SDM\) диспетчер отладки.  
+# <a name="debug-package"></a>Отладка пакета
+Отладочный пакет работает в оболочке Visual Studio и обрабатывает все пользовательского интерфейса. Он использует интерфейсы отладки Visual Studio и взаимодействует с диспетчером сеанса отладки (SDM).  
   
- Разбейте события, передаваемые через параметр SDM отладчик из режима выполнения в режим приостановки и изменение фокуса в программе, в котором прерывание.  Пакет отладки отслеживает кадр стека, и поток из информации, отправленного в него событиями.  
+ Break события, отправляемые через SDM переключение отладчик из режима выполнения в режим приостановки выполнения и изменения фокуса в программу разрыва. Отладочный пакет отслеживает кадр стека и поток из сведения, передаваемые с помощью событий.  
   
- Пакет отладки нет зависимостей языка или среды выполнения.  Нет необходимости реализовывать или изменить пакеты отладки.  
+ Отладочный пакет не имеет языка или зависимости среды выполнения. Необязательно для реализации или изменить пакет отладки.  
   
- Пакет отладки реализуется vsdebug.dll.  
+ Отладочный пакет реализуется vsdebug.dll.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Диспетчер сеансов отладки](../../extensibility/debugger/session-debug-manager.md)   
  [Кадры стека](../../extensibility/debugger/stack-frames.md)   
  [Потоки](../../extensibility/debugger/threads.md)   

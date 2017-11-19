@@ -1,50 +1,50 @@
 ---
-title: "IDiaSession::findSymbolsForAcceleratorPointerTag | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: "IDiaSession::findSymbolsForAcceleratorPointerTag | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: 95fd5e7a-c637-437e-b369-c864eef733c2
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0f67263b385c184b0182716469f110c87bcebb50
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findSymbolsForAcceleratorPointerTag
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Возвращает перечисление символов переменной, которая соответствует указанным значением тега в родительский функции заглушки сочетаний клавиш.  
+# <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
+Возвращает перечисление символов для переменной, которая соответствует указанным значением тега в родительском объекте функция заглушки сочетаний клавиш.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT findSymbolsForAcceleratorPointerTag (   
-   IDiaSymbol*           parent,  
+```C++  
+HRESULT findSymbolsForAcceleratorPointerTag (   
+   IDiaSymbol*           parent,  
    DWORD                 tagValue,  
-   IDiaEnumSymbols**     ppResult  
+   IDiaEnumSymbols**     ppResult  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `parent`  
- \[in\] IDiaSymbol, которое соответствует функции заглушки сочетаний клавиш для поиска.  
+ [in] IDiaSymbol, соответствующую функции заглушки сочетаний клавиш для поиска.  
   
  `tagValue`  
- \[in\] значение тега указателя.  
+ [in] Значение тега указателя.  
   
  `ppResult`  
- \[out\] указатель на указатель интерфейса `IDiaEnumSymbols`, который инициализируется с результатом.  
+ [out] Указатель на `IDiaEnumSymbols` указатель интерфейса, который инициализируется с результатом.  
   
-## Возвращаемое значение  
- Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

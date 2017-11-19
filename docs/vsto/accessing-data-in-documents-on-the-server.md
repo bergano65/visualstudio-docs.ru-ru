@@ -1,12 +1,10 @@
 ---
-title: Accessing Data in Documents on the Server | Microsoft Docs
+title: "Доступ к данным в документах на сервере | Документы Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,74 +14,75 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], accessing on server
 - data access [Office development in Visual Studio]
 ms.assetid: 14a42e96-ed2f-48a1-a0c0-e19f9eba4956
-caps.latest.revision: 32
-author: kempb
-ms.author: kempb
+caps.latest.revision: "32"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 2e40f5a2c4daa058dfdff06354904dc3a8a0a4fe
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 8345f7d197f44455ae990c159550587bbc79de24
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="accessing-data-in-documents-on-the-server"></a>Accessing Data in Documents on the Server
-  You can program against the data in a document-level customization without having to use the object model of Microsoft Office Word or Microsoft Office Excel. This means that you can access data that is contained in a document on a server that does not have Word or Excel installed. For example, code on a server (for instance, in an [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] page) can customize the data in a document and send the customized document to an end user. When the end user opens the document, data binding code in the solution assembly binds the customized data into the document. This is possible because the data in the document is separated from the user interface. For more information, see [Cached Data in Document-Level Customizations](../vsto/cached-data-in-document-level-customizations.md).  
+# <a name="accessing-data-in-documents-on-the-server"></a>Доступ к данным в документах на сервере
+  Вы можете программировать на данных в настройке уровня документа, без использования объектной модели Microsoft Office Word или Microsoft Office Excel. Это означает, что получить доступ к данным, содержащимся в документе на сервере, у которого нет Word или Excel. Например, код на сервере (например, в [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] страницы) можно настроить данных в документе и пересылать настроенный документ конечному пользователю. Когда конечный пользователь открывает документ, код привязки данных в сборке решения привязывает настроенные данные в документ. Это возможно, поскольку данные в документе, отделен от пользовательского интерфейса. Дополнительные сведения см. в разделе [кэшированные данные в настройках уровня документа](../vsto/cached-data-in-document-level-customizations.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
-## <a name="caching-data-for-use-on-a-server"></a>Caching Data for Use on a Server  
- To cache a data object in a document, mark it with the <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> attribute at design time, or use the `StartCaching` method of a host item at run time. When you cache a data object in a document, the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] serializes the object into an XML string that is stored in the document. Objects must meet certain requirements to be eligible for caching. For more information, see [Caching Data](../vsto/caching-data.md).  
+## <a name="caching-data-for-use-on-a-server"></a>Кэширование данных для использования на сервере  
+ Чтобы кэшировать объект данных в документе, пометьте его с <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> атрибута во время разработки, или используйте `StartCaching` метод ведущего элемента во время выполнения. При кэшировании объекта данных в документ, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] сериализует объект в XML-строку, хранящимся в документе. Объекты должны соответствовать определенным требованиям, чтобы соответствовать требованиям для кэширования. Для получения дополнительной информации см. [Caching Data](../vsto/caching-data.md).  
   
- Server-side code can manipulate any data objects in the data cache. Controls that are bound to cached data instances are synchronized with the user interface, so that any server-side changes that are made to the data show up automatically when the document is opened on the client.  
+ Серверный код может обрабатывать любые объекты данных в кэше данных. Элементы управления, привязанные к экземплярам кэшированные данные синхронизируются с помощью пользовательского интерфейса, чтобы все серверные изменения, внесенные в данные отображаются автоматически при открытии документа на стороне клиента.  
   
-## <a name="accessing-data-in-the-cache"></a>Accessing Data in the Cache  
- You can access data in the cache from applications outside of Office, for example from a console application, a Windows Forms application, or a Web page. The application that accesses the cached data must have full trust; a Web application that has partial trust cannot insert, retrieve, or change data that is cached in an Office document.  
+## <a name="accessing-data-in-the-cache"></a>Доступ к данным в кэше  
+ Данные в кэше доступны из приложения за пределами офиса, например из консольного приложения, приложения Windows Forms или веб-страницы. Приложение, которое обращается к кэшированным данным должна иметь полное доверие; веб-приложения с частичным доверием не может вставить, извлечь или изменить данные, кэшированные в документе Office.  
   
- The data cache is accessible through a hierarchy of collections that are exposed by the <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> property of the <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> class:  
+ Кэш данных доступен через иерархию коллекций, представляемых <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> свойство <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> класса:  
   
--   The <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> property returns a <xref:Microsoft.VisualStudio.Tools.Applications.CachedData>, which contains all of the cached data in a document-level customization.  
+-   <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> Возвращает свойство <xref:Microsoft.VisualStudio.Tools.Applications.CachedData>, которое содержит все кэшированные данные в настройке на уровне документа.  
   
--   Each <xref:Microsoft.VisualStudio.Tools.Applications.CachedData> contains one or more <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem> objects. A <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem> contains all of the cached data objects that are defined within a single class.  
+-   Каждый <xref:Microsoft.VisualStudio.Tools.Applications.CachedData> содержит один или несколько <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem> объектов. Объект <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem> содержит все объекты кэшированных данных, которые определены в одном классе.  
   
--   Each <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem> contains one or more <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> objects. A <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> represents a single cached data object.  
+-   Каждый <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem> содержит один или несколько <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> объектов. Объект <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> представляет один объект кэшированных данных.  
   
- The following code example demonstrates how to access a cached string in the `Sheet1` class of an Excel workbook project. This example is part of a larger example that is provided for the <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> method.  
+ В следующем примере кода показано, как получить доступ к кэшированной строке в `Sheet1` класса в проекте книги Excel. Данный пример является частью большего примера, приведенного для <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> метод.  
   
- [!code-csharp[Trin_ServerDocument#12](../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs#12)] [!code-vb[Trin_ServerDocument#12](../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb#12)]  
+ [!code-csharp[Trin_ServerDocument#12](../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs#12)]
+ [!code-vb[Trin_ServerDocument#12](../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb#12)]  
   
-## <a name="modifying-data-in-the-cache"></a>Modifying Data in the Cache  
- To modify a cached data object, you typically perform the following steps:  
+## <a name="modifying-data-in-the-cache"></a>Изменение данных в кэше  
+ Чтобы изменить объект кэшированных данных, обычно выполните следующие действия:  
   
-1.  Deserialize the XML representation of the cached object into a new instance of the object. You can access the XML by using the <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> property of the <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> that represents the cached data object.  
+1.  Десериализует XML-представления кэшированного объекта в новый экземпляр объекта. Доступ к XML с помощью <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> свойство <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> , представляющий объект кэшированных данных.  
   
-2.  Make the changes to this copy.  
+2.  Внесите изменения в эту копию.  
   
-3.  Serialize the changed object back into the data cache by using one of the following options:  
+3.  Сериализация измененного объекта обратно в кэш данных, используя один из следующих вариантов:  
   
-    -   If you want to automatically serialize the changes, use the <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> method. This method uses the **DiffGram** format for serializing <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, and typed dataset objects in the data cache. The **DiffGram** format ensures that changes to the data cache in an offline document are sent to the server correctly.  
+    -   Если вы хотите автоматически выполнить сериализацию объекта, используйте <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> метод. Этот метод использует **DiffGram** формат для сериализации <xref:System.Data.DataSet>, <xref:System.Data.DataTable>и объектов типизированного набора данных в кэше данных. **DiffGram** формат гарантирует, что изменения в кэше данных автономного документа передаются серверу правильно.  
   
-    -   If you want to perform your own serialization for changes to cached data, you can write directly to the <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> property. Specify the **DiffGram** format if you use a <xref:System.Data.Common.DataAdapter> to update a database with changes made to data in a <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, or typed dataset. Otherwise, the <xref:System.Data.Common.DataAdapter> will update the database by adding new rows instead of modifying existing rows.  
+    -   Если вы хотите выполнить собственную сериализацию для изменения кэшированных данных, можно написать непосредственно <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> свойство. Укажите **DiffGram** форматирования при использовании <xref:System.Data.Common.DataAdapter> обновление базы данных с помощью изменений, внесенных в данные в <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, или типизированного набора данных. В противном случае <xref:System.Data.Common.DataAdapter> обновит базу данных, добавляя новые строки вместо изменения существующих строк.  
   
-### <a name="modifying-data-without-deserializing-the-current-value"></a>Modifying Data Without Deserializing the Current Value  
- In some cases, you might want to modify the value of the cached object without first deserializing the current value. For example, you can do this if you are changing the value of an object that has a simple type, such as a string or integer, or if you are initializing a cached <xref:System.Data.DataSet> in a document on a server. In these cases, you can use the <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> method without first deserializing the current value of the cached object.  
+### <a name="modifying-data-without-deserializing-the-current-value"></a>Изменение данных без сериализации текущее значение  
+ В некоторых случаях может потребоваться изменить значение кэшированного объекта без предварительной десериализации текущего значения. Например, это можно сделать при изменении значения объекта, имеющего простой тип, например, строку или целое число со знаком, или при инициализации кэшированной <xref:System.Data.DataSet> документа на сервере. В этих случаях можно использовать <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> метода без предварительной десериализации текущего значения кэшированного объекта.  
   
- The following code example demonstrates how to change the value of a cached string in the `Sheet1` class of an Excel workbook project. This example is part of a larger example that is provided for the <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> method.  
+ В следующем примере кода показано, как изменение значения кэшированной строки в `Sheet1` класса в проекте книги Excel. Данный пример является частью большего примера, приведенного для <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> метод.  
   
- [!code-csharp[Trin_ServerDocument#11](../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs#11)] [!code-vb[Trin_ServerDocument#11](../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb#11)]  
+ [!code-csharp[Trin_ServerDocument#11](../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs#11)]
+ [!code-vb[Trin_ServerDocument#11](../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb#11)]  
   
-### <a name="modifying-null-values-in-the-data-cache"></a>Modifying Null Values in the Data Cache  
- The data cache does not store objects that have the value **null** when the document is saved and closed. This limitation has several consequences when you modify cached data:  
+### <a name="modifying-null-values-in-the-data-cache"></a>Изменение значений Null в кэше данных  
+ Кэш данных не хранит объекты, имеющие значение **null** при сохранении и закрытии документа. Это ограничение имеет несколько последствий при изменении кэшированных данных.  
   
--   If you set any object in the data cache to the value **null**, all of the objects in the data cache will be automatically set to **null** when the document is opened, and the entire data cache will be cleared when the document is saved and closed. That is, all of the cached objects will be removed from the data cache, and the <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> collection will be empty.  
+-   Следует установить любого объекта в кэше данных значение **null**, все объекты в кэше данных автоматически присваивается значение **null** при открытии документа и все данные кэша будут очищены при сохранении и закрытии документа. То есть, все кэшированные объекты будут удалены из кэша данных и <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> коллекция будет пустой.  
   
--   If you build a solution with **null** objects in the data cache and you want to initialize these objects by using the <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> class before the document is opened for the first time, you must ensure that you initialize all of the objects in the data cache. If you initialize only some of the objects, all of the objects will be set to **null** when the document is opened, and the entire data cache will be cleared when the document is saved and closed.  
+-   При построении решения с **null** объектов в кэше данных, необходимо инициализировать данные объекты с помощью <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> класса перед документ открывается в первый раз, необходимо инициализировать все объекты в кэше данных. Если будут инициализированы только некоторые объекты, все объекты, будет присвоено **null** при открытии документа, и все данные кэша будут очищены при сохранении и закрытии документа.  
   
-## <a name="accessing-typed-datasets-in-the-cache"></a>Accessing Typed Datasets in the Cache  
- If you want to access the data in a typed dataset both from an Office solution and from an application outside of Office, such as a Windows Forms application or an [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] project, you must define the typed dataset in a separate assembly that is referenced in both projects. If you add the typed dataset to each project by using the **Data Source Configuration Wizard** or the **Dataset Designer**, the .NET Framework will treat the typed datasets in the two projects as different types. For more information about creating typed datasets, see [Create and configure datasets in Visual Studio](/visualstudio/data-tools/create-and-configure-datasets-in-visual-studio).  
+## <a name="accessing-typed-datasets-in-the-cache"></a>Доступ к типизированным наборам данных в кэше  
+ Если требуется доступ к данным в типизированный набор данных как из решения Office, так и из внешнего приложения Office, таких как приложения Windows Forms или [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] проекта, необходимо определить типизированный набор данных в отдельную сборку, упоминаются в проекты. При добавлении типизированный набор данных в каждом проекте с помощью **мастер настройки источника данных** или **конструктора наборов данных**, .NET Framework будет рассматривать типизированные наборы данных в двух проектах как имеющие разные типы . Дополнительные сведения о создании типизированных наборов данных см. в разделе [создания и настройки наборов данных в Visual Studio](/visualstudio/data-tools/create-and-configure-datasets-in-visual-studio).  
   
-## <a name="see-also"></a>See Also  
- [Accessing Data in Documents on the Server](../vsto/accessing-data-in-documents-on-the-server.md)   
- [Cached Data in Document-Level Customizations](../vsto/cached-data-in-document-level-customizations.md)  
+## <a name="see-also"></a>См. также  
+ [Доступ к данным в документах на сервере](../vsto/accessing-data-in-documents-on-the-server.md)   
+ [Кэшированные данные в настройках на уровне документа](../vsto/cached-data-in-document-level-customizations.md)  
   
   

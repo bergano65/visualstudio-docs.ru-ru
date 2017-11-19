@@ -1,53 +1,52 @@
 ---
-title: "IDiaSymbol::get_hasEH | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_hasEH - метод"
+title: "IDiaSymbol::get_hasEH | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_hasEH method
 ms.assetid: 9a4952d8-9fa7-4798-b48c-fe4357648276
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0b27bcb0cc3f74d4d99d8bbe4dedf5b7f48b6e9e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_hasEH
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает пометить, указывающее, содержит ли функция любую неуправляемую обработку ошибок C\+\+\-style \(например, блок try\-catch\).  
+# <a name="idiasymbolgethaseh"></a>IDiaSymbol::get_hasEH
+Возвращает флаг, указывающий, содержит ли функция любого неуправляемого обработки исключений (например, блок try/catch) стиле с ++.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp  
+```C++  
 HRESULT get_hasEH(  
-   BOOL *pFlag  
+   BOOL *pFlag  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pFlag`  
- \[out\] возвращает `TRUE` если функция имеет любую обработку ошибок C\+\+\-style; в противном случае возвращает  `FALSE`.  
+ [out] Возвращает `TRUE` Если функция содержит любые обработки исключений C++ стиль; в противном случае возвращает `FALSE`.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает  `S_FALSE` или код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение  `S_FALSE` означает, что свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
   
 |Требование|Описание|  
-|----------------|--------------|  
+|-----------------|-----------------|  
 |Заголовок:|dia2.h|  
-|Версия:|Пакет SDK для доступа к интерфейсу отладки v8.0|  
+|Версия:|ПАКЕТ SDK для версии 8.0|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

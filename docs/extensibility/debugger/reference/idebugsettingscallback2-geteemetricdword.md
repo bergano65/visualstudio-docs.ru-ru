@@ -1,61 +1,62 @@
 ---
-title: "IDebugSettingsCallback2::GetEEMetricDword | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugSettingsCallback2::GetEEMetricDword"
+title: "IDebugSettingsCallback2::GetEEMetricDword | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugSettingsCallback2::GetEEMetricDword
 ms.assetid: c5f8f417-0ef0-4fd0-a779-b0a8ead4effe
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 256809fac0de110fe9e136c1718b4f4cdec800fc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugSettingsCallback2::GetEEMetricDword
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Извлекает значение, соответствующее определенной метрике вычислителя выражений.  
+# <a name="idebugsettingscallback2geteemetricdword"></a>IDebugSettingsCallback2::GetEEMetricDword
+Извлекает значение, соответствующее указанной метрики оценки выражений.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT GetEEMetricDword(  
-   REFGUID guidLang,  
-   REFGUID guidVendor,  
-   LPCWSTR pszMetric,  
-   DWORD*  pdwValue  
+   REFGUID guidLang,  
+   REFGUID guidVendor,  
+   LPCWSTR pszMetric,  
+   DWORD*  pdwValue  
 );  
 ```  
   
-```c#  
+```csharp  
 private int GetEEMetricDword(  
-   ref Guid guidLang,  
-   ref Guid guidVendor,  
-   string   pszMetric,  
-   out uint pdwValue  
+   ref Guid guidLang,  
+   ref Guid guidVendor,  
+   string   pszMetric,  
+   out uint pdwValue  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `guidLang`  
- \[in\] уникальный идентификатор языка программирования.  
+ [in] Уникальный идентификатор языка программирования.  
   
  `guidVendor`  
- \[in\] уникальный идентификатор поставщика.  
+ [in] Уникальный идентификатор поставщика.  
   
  `pszMetric`  
- \[in\] имя метрики.  
+ [in] Имя метрики.  
   
  `pdwValue`  
- \[out\] возвращает значение, соответствующее метрической строке.  
+ [out] Возвращает значение, соответствующее строке метрики.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

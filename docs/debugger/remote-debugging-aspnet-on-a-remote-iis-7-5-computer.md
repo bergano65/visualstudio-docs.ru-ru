@@ -1,121 +1,111 @@
 ---
-title: Remote Debug ASP.NET on a Remote IIS Computer | Microsoft Docs
+title: "Удаленная отладки ASP.NET в IIS на удаленном компьютере | Документы Microsoft"
 ms.custom: remotedebugging
 ms.date: 07/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 1d4298d60886d8fe8b402b59b1838a4171532ab1
-ms.openlocfilehash: cbe4157280645977b74c65a2e1bf16b7a234e9ab
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/07/2017
-
+ms.openlocfilehash: 730a69894c8e38dd7b9d191fa7fe3396509148d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Remote Debug ASP.NET on a Remote IIS Computer
-To debug an ASP.NET application that has been deployed to IIS, install and run the remote tools on the computer where you deployed your app, and then attach to your running app from Visual Studio.
+# <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Удаленная отладка ASP.NET на IIS на удаленном компьютере
+Для отладки приложений ASP.NET, IIS был развернут, установите и запустите инструменты удаленной отладки на компьютере, на котором развернуто приложение и прикрепите запущенного приложения из Visual Studio.
 
-![Remote debugger components](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
+![Компоненты удаленной отладки](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-This guide explains how to set up and configure a Visual Studio 2017 ASP.NET MVC 4.5.2 application, deploy it to IIS, and attach the remote debugger from Visual Studio. To remote debug ASP.NET Core, see [Remote Debug ASP.NET Core on an IIS Computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). You can also deploy and debug on IIS using Azure. For more information, see [Remote debug on Azure](../debugger/remote-debugging-azure.md).
+В этом руководстве объясняется, как установить и настроить приложение Visual Studio 2017 г. ASP.NET MVC 4.5.2, его развертывание в IIS и присоединить удаленный отладчик из Visual Studio. Удаленная отладка ASP.NET Core. в разделе [удаленной отладки ASP.NET Core на компьютере с IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Кроме того, можно развернуть и отладить в IIS с помощью Azure. Дополнительные сведения см. в разделе [удаленной отладки на платформе Azure](../debugger/remote-debugging-azure.md).
 
-These procedures have been tested on these server configurations:
-* Windows Server 2012 R2 and IIS 10 (For Windows Server 2008 R2, server steps are different)
+Эти процедуры протестированы на эти конфигурации сервера:
+* Windows Server 2012 R2 и службы IIS 10 (для Windows Server 2008 R2, сервера используются разные процедуры)
 
-## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Create the ASP.NET 4.5.2 application on the Visual Studio computer
+## <a name="requirements"></a>Требования
+
+Удаленный отладчик поддерживается в Windows Server, начиная с Windows Server 2008 с пакетом обновления 2. Полный список требований см. в разделе [требования](../debugger/remote-debugging.md#requirements_msvsmon).
+
+> [!NOTE]
+> Отладка между двумя компьютерами, подключенными через прокси-сервер не поддерживается. Отладка в различных странах через высокой задержкой или низкой пропускной способностью, таких как удаленный доступ к Интернету, либо через Интернет не рекомендуется и может произойти сбой или медленную неприемлемо.
+
+## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Создание ASP.NET 4.5.2 приложение на компьютере Visual Studio
   
-1. Create a new MVC ASP.NET application. (**File > New > Project**, then select **Visual C# > Web > ASP.NET Web Application** . In the **ASP.NET 4.5.2** templates section, select **MVC**. Make sure that **Enable Docker Support** is not selected and that **Authentication** is set to **No Authentication**. Name the project **MyASPApp**.)
+1. Создайте приложение MVC ASP.NET. (**Файл > Создать > проект**, а затем выберите ** Visual C# > Web > веб-приложения ASP.NET. В разделе шаблонов **ASP.NET 4.5.2** выберите шаблон **MVC**. Убедитесь, что **Включение поддержки Docker** не выбран и что **проверки подлинности** равно **без проверки подлинности**. Назовите проект **MyASPApp**.)
 
-2. Open the  HomeController.cs file, and set a breakpoint in the `About()` method.
+2. Откройте файл HomeController.cs и установите точку останова в методе `About()` .
 
-## <a name="bkmk_configureIIS"></a> Install and Configure IIS on Windows Server
+## <a name="bkmk_configureIIS"></a>Установка и настройка служб IIS в Windows Server
 
 [!INCLUDE [remote-debugger-install-iis-role](../debugger/includes/remote-debugger-install-iis-role.md)]
 
-## <a name="update-browser-security-settings-on-windows-server"></a>Update browser security settings on Windows Server
+## <a name="update-browser-security-settings-on-windows-server"></a>Обновить параметры безопасности браузера в Windows Server
 
-Depending on your security settings, it may save you time to add the following trusted sites to your browser so you can easily download the software described in this tutorial. Access to these sites may be needed:
+В зависимости от настроек безопасности он может сэкономить время, чтобы добавить следующие надежные сайты в браузер, поэтому можно легко загрузить программное обеспечение, описанный в этом учебнике. Возможно, потребуется доступ к этим сайтам:
 
-- microsoft.com
+- Microsoft.com
 - go.microsoft.com
 - download.microsoft.com
-- visualstudio.com
+- загружаемые
 
-If you are using Internet Explorer, you can add the trusted sites by going to **Internet Options > Security > Trusted Sites > Sites**. These steps are different for other browsers.
+При использовании Internet Explorer, можно добавить надежных сайтов, перейдя **свойства обозревателя > Безопасность > надежных узлов > сайтов**. Эти шаги для других браузеров различаются.
 
-When you download the software, you may get requests to grant permission to load various web site scripts and resources. In most cases, these additional resources are not required to install the software.
+При загрузке программного обеспечения, можно получить запросы на предоставление разрешения на загрузку различные сценарии веб-сайт и ресурсы. В большинстве случаев эти дополнительные ресурсы не требуется устанавливать программное обеспечение.
 
-## <a name="BKMK_deploy_asp_net"></a> Install ASP.NET 4.5 on Windows Server
+## <a name="BKMK_deploy_asp_net"></a>Установка ASP.NET 4.5 на Windows Server
 
-If you want more detailed information to install ASP.NET on IIS, see [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+Если требуется более подробные сведения для установки ASP.NET на IIS, см. раздел [IIS 8.0 с помощью ASP.NET 3.5 и ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
-1. Use the Web Platform Installer (WebPI) to install ASP.NET 4.5 (from the Server node in Windows Server 2012 R2, choose **Get New Web Platform Components** and then search for ASP.NET)
+1. Используйте установщик веб-платформы (WebPI) для установки ASP.NET 4.5 (с узла сервера в Windows Server 2012 R2, выберите **получить новые компоненты платформы Web** и выполните поиск ASP.NET)
 
     ![RemoteDBG_IIS_AspNet_45](../debugger/media/remotedbg_iis_aspnet_45.png "RemoteDBG_IIS_AspNet_45")
 
     > [!NOTE]
-    > If you are using Windows Server 2008 R2, install ASP.NET 4 instead using this command:
+    > Если вы используете Windows Server 2008 R2, установите ASP.NET 4, вместо этого с помощью этой команды:
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe - ir**
 
-2. Restart the system (or execute **net stop was /y** followed by **net start w3svc** from a command prompt to pick up a change to the system PATH).
+2. Перезагрузку системы (или выполните **net stop был /y** следуют **net start w3svc** из командной строки, чтобы отобразить изменение в системе путь).
 
-## <a name="BKMK_install_webdeploy"></a> (Optional) Install Web Deploy 3.6 on Windows Server
+## <a name="BKMK_install_webdeploy"></a>(Необязательно) Установка веб-развертывания 3.6 в Windows Server
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
-## <a name="BKMK_deploy_asp_net"></a> Configure ASP.NET Web site on the Windows Server computer
+## <a name="BKMK_deploy_asp_net"></a>Настройка веб-сайта ASP.NET на сервере Windows Server
 
-1. Open Windows Explorer and create a new folder, **C:\Publish**, where you will later deploy the ASP.NET project.
+1. Откройте проводник Windows и создайте новую папку **C:\Publish**, где будут развернуты позднее проекта ASP.NET.
 
-2. Open the **Internet Information Services (IIS) Manager**. (In the left pane of Server Manager, select **IIS**. Right-click the server and select **Internet Information Services (IIS) Manager**.)
+2. Откройте **Internet Information Services (IIS) Manager**. (В левой панели диспетчера серверов выберите **IIS**. Щелкните правой кнопкой мыши сервер и выберите **Диспетчер Internet Information Services (IIS)**.)
 
-3. Under **Connections** in the left pane, go to **Sites**.
+3. В разделе **подключений** в левой области выберите **узлы**.
 
-4. Select the **Default Web Site**, choose **Basic Settings**, and set the **Physical path** to **C:\Publish**.
+4. Выберите **веб-сайт по умолчанию**, выберите **основные параметры**и задайте **физический путь** для **C:\Publish**.
 
-5. Right-click the **Default Web Site** node and select **Add Application**.
+5. Щелкните правой кнопкой мыши узел **Веб-сайт по умолчанию** и выберите команду **Добавить приложение**.
 
-6. Set the **Alias** field to **MyASPApp**, accept the default Application Pool (**DefaultAppPool**), and set the **Physical path** to **C:\Publish**.
+6. Задать **псевдоним** на **MyASPApp**, примите имя по умолчанию пула приложений (**DefaultAppPool**) и задайте **физический путь** для  **C:\Publish**.
 
-7. Under **Connections**, select **Application Pools**. Open **DefaultAppPool** and set the Application pool field to **ASP.NET v4.0** (ASP.NET 4.5 is not an option for the Application pool).
+7. В разделе **подключений**выберите **пулы приложений**. Откройте **DefaultAppPool** и задайте для поля пула приложений **ASP.NET v4.0** (ASP.NET 4.5 не предлагается для пула приложений).
 
-8. With the site selected in the IIS Manager, choose **Edit Permissions**, and make sure that IUSR, IIS_IUSRS, or the user configured for the Application Pool is an authorized user with Read & Execute rights. If none of these are present, add IUSR as a user with Read & Execute rights.
+8. С сайта, выбранного в диспетчере служб IIS, выберите **изменение разрешений**и убедитесь, что учетная запись IUSR, IIS_IUSRS или пользователь, настроен для пула приложений имеет полномочному пользователю с правами на чтение и выполнение. Если ни один из этих пользователей, добавление IUSR в качестве пользователя с правами на чтение и выполнение.
 
-## <a name="bkmk_webdeploy"></a> (Optional) Publish and deploy the app using Web Deploy from Visual Studio
+## <a name="bkmk_webdeploy"></a>(Необязательно) Публикация и развертывание приложения с помощью веб-развертывание из Visual Studio
 
 [!INCLUDE [remote-debugger-deploy-app-web-deploy](../debugger/includes/remote-debugger-deploy-app-web-deploy.md)]
 
-Also, you may need to read the section on [Troubleshooting ports](#bkmk_openports).
+Кроме того, необходимо ознакомиться с разделом [Устранение неполадок порты](#bkmk_openports).
 
-## <a name="optional-publish-and-deploy-the-app-by-publishing-to-a-local-folder-from-visual-studio"></a>(Optional) Publish and Deploy the app by publishing to a local folder from Visual Studio
+## <a name="optional-publish-and-deploy-the-app-by-publishing-to-a-local-folder-from-visual-studio"></a>(Необязательно) Публикация и развертывание приложения путем публикации в локальную папку из Visual Studio
 
-You can also publish and deploy the app using the file system or other tools.
+Можно также опубликовать и развертывание приложения с помощью файловой системы или других средств.
 
-1. (ASP.NET 4.5.2) Make sure that the web.config file lists the correct version of the .NET Framework.  For example, if you are targeting ASP.NET 4.5.2, make sure this version is listed in web.config.
+1. (ASP.NET 4.5.2) Убедитесь, что в файле web.config указана правильная версия платформы .NET Framework.  Например при разработке проектов для ASP.NET 4.5.2, убедитесь, что эта версия указана в файле web.config.
   
     ```xml
     <system.web>
@@ -128,79 +118,74 @@ You can also publish and deploy the app using the file system or other tools.
   
     ```
 
-    For example, the version should be 4.0 if you install ASP.NET 4 instead of 4.5.2.
+    Например версия должна быть 4.0 при установке ASP.NET 4 вместо 4.5.2.
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-## <a name="BKMK_msvsmon"></a> Download and Install the Remote Tools on Windows Server
+## <a name="BKMK_msvsmon"></a>Загрузите и установите инструменты удаленной отладки на Windows Server
 
-In this tutorial, we are using Visual Studio 2017.
+В этом учебнике мы используем Visual Studio 2017 г.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
 > [!TIP]
-> In some scenarios, it can be most efficient to run the remote debugger from a file share. For more information, see [Run the remote debugger from a file share](../debugger/remote-debugging.md#fileshare_msvsmon).
-
-## <a name="requirements"></a>Requirements
-
-The remote debugger is supported on Windows Server starting with Windows Server 2008 Service Pack 2 and is also supported on Windows 7 and newer. For a complete list of requirements, see [Requirements](../debugger/remote-debugging.md#requirements_msvsmon).
-
-> [!NOTE]
->  The remote computer and the Visual Studio computer must be connected over a network, workgroup, or homegroup, or else connected directly through an Ethernet cable. Debugging over the Internet is not supported in this scenario.
+> В некоторых сценариях может быть наиболее эффективным для запуска удаленного отладчика из общей папки. Дополнительные сведения см. в разделе [запуск удаленного отладчика из общей папки](../debugger/remote-debugging.md#fileshare_msvsmon).
   
-## <a name="BKMK_setup"></a> Set up the remote debugger on Windows Server
+## <a name="BKMK_setup"></a>Настройка удаленного отладчика на Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
-> If you need to add permissions for additional users, change the authentication mode, or port number for the remote debugger, see [Configure the remote debugger](../debugger/remote-debugging.md#configure_msvsmon).
+> Если необходимо добавить разрешения для других пользователей, изменение режима проверки подлинности, или номер порта удаленного отладчика, в разделе [настроить удаленный отладчик](../debugger/remote-debugging.md#configure_msvsmon).
 
-## <a name="BKMK_attach"></a> Attach to the ASP.NET application from the Visual Studio computer
+Сведения на запуск удаленного отладчика в качестве службы см. в разделе [запуска удаленного отладчика в качестве службы](../debugger/remote-debugging.md#bkmk_configureService).
 
-1. On the Visual Studio computer, open the **MyASPApp** solution.
-2. In Visual Studio, click **Debug > Attach to Process** (Ctrl + Alt + P).
+## <a name="BKMK_attach"></a> Подключение к приложению ASP.NET с компьютера с Visual Studio
+
+1. На компьютере с Visual Studio, откройте **MyASPApp** решения.
+2. В Visual Studio щелкните **Отладка > присоединить к процессу** (Ctrl + Alt + P).
 
     > [!TIP]
-    > In Visual Studio 2017, you can re-attach to the same process you previously attached to by using **Debug > Reattach to Process...** (Shift+Alt+P). 
+    > В Visual Studio 2017 г., можно подключить с тем же процессом, ранее присоединена к с помощью **Отладка > повторно присоединиться к процессу...** (Shift + Alt + P). 
 
-3. Set the Qualifier field to **\<remote computer name>:4022**.
-4. Click **Refresh**.
-    You should see some processes appear in the **Available Processes** window.
+3. Задайте для поля квалификатор  **\<имя удаленного компьютера >: 4022**.
+4. Нажмите кнопку **Обновить**.
+    В окне **Доступные процессы** должен появиться ряд процессов.
 
-    If you don't see any processes, try using the IP address instead of the remote computer name (the port is required). You can use `ipconfig` in a command line to get the IPv4 address.
+    Если вы не видите все процессы, попробуйте использовать IP-адрес вместо имени удаленного компьютера (порт является обязательным). Можно использовать `ipconfig` в командной строке, чтобы получить адрес IPv4.
 
-5. Check  **Show processes from all users**.
-6. Type the first letter of a process name to quickly find **w3wp.exe** for ASP.NET 4.5.
+5. Установите флажок  **Показать процессы, запущенные всеми пользователями**.
+6. Введите имя процесса, чтобы быстро найти первую букву **w3wp.exe** для ASP.NET 4.5.
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess.png "RemoteDBG_AttachToProcess")
 
-7. Click **Attach**
+7. Нажмите кнопку **присоединения**
 
-8. Open the remote computer's website. In a browser, go to **http://\<remote computer name>**.
+8. Откройте веб-сайт удаленного компьютера. В браузере, перейдите к **http://\<имя удаленного компьютера >**.
     
-    You should see the ASP.NET web page.
-9. In the running ASP.NET application, click the link to the **About** page.
+    Должна открыться веб-страница ASP.NET.
+9. В работающем приложении ASP.NET, щелкните ссылку, чтобы **о** страницы.
 
-    The breakpoint should be hit in Visual Studio.
+    В Visual Studio должна быть достигнута точка останова.
 
-## <a name="bkmk_openports"></a> Troubleshooting: Open required ports on Windows Server
+## <a name="bkmk_openports"></a>Устранение неполадок: Откройте требуемых портов в Windows Server
 
-In most setups, required ports are opened by the installation of ASP.NET and the remote debugger. However, you may need to verify that ports are open.
+В большинстве установок необходимые порты открыты путем установки ASP.NET и удаленный отладчик. Тем не менее может потребоваться проверить, что открыты порты.
 
 > [!NOTE]
-> On an Azure VM, you must open ports through the [Network security group](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80). 
+> На виртуальной Машине Azure, необходимо открыть порты, через [сетевой группы безопасности](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80). 
 
-Required ports:
+Необходимые порты:
 
-- 80 - Required for IIS
-- 8172 - (Optional) Required for Web Deploy to deploy the app from Visual Studio
-- 4022 - Required for remote debugging from Visual Studio 2017 (see [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md) for detailed information.
-- UDP 3702 - (Optional) Discovery port enables you to the **Find** button when attaching to the remote debugger in Visual Studio.
+- 80 - требуется для служб IIS
+- 8172 - (требуется необязательно) для веб-развертывания для развертывания приложения из Visual Studio
+- 4022 - необходимых для удаленной отладки из Visual Studio 2017 г. (см. [назначение портов удаленного отладчика](../debugger/remote-debugger-port-assignments.md) подробные сведения.
+- UDP 3702 - порта (необязательно) обнаружения позволяет **найти** кнопку при присоединении удаленного отладчика в Visual Studio.
 
-1. To open a port on Windows Server, open the **Start** menu, search for **Windows Firewall with Advanced Security**.
+1. Чтобы открыть порт на сервере Windows, откройте **запустить** меню, поиск **брандмауэр Windows в режиме повышенной безопасности**.
 
-2. Then choose **Inbound Rules > New Rule > Port**. Choose **Next** and under **Specific local ports**, enter the port number, click **Next**, then **Allow the Connection**, click **Next** and add the name (**IIS**, **Web Deploy**, or **msvsmon**) for the Inbound Rule.
+2. Выберите **правила для входящих подключений > новое правило > порт**. Выберите **Далее** и в разделе **определенные локальные порты**, введите номер порта, нажмите кнопку **Далее**, затем **Разрешить соединение**, нажмите кнопку Далее, и Добавьте имя (**IIS**, **веб-развертывания**, или **msvsmon**) для правила входящего подключения.
 
-    If you want more details on configuring Windows Firewall, see [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
+    Если для получения дополнительных сведений о настройке брандмауэра Windows см. раздел [Настройка брандмауэра Windows для удаленной отладки](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
 
-3. Create additional rules for the other required ports.
+3. Создайте дополнительные правила для требуемых портов.

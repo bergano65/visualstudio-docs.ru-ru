@@ -1,31 +1,34 @@
 ---
-title: "Интерфейс IActiveScriptSiteDebug | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "IActiveScriptSiteDebug — интерфейс"
+title: "Интерфейс IActiveScriptSiteDebug | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords: IActiveScriptSiteDebug interface
 ms.assetid: 2557ee09-688b-4c03-a821-180c24dfa0e6
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b9b36054deeceb0528fb7ea399cc41d8edbbb47e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Интерфейс IActiveScriptSiteDebug
-Промежуточные узлы реализуют интерфейс `IActiveScriptSiteDebug` для управления документами и участвовать в отладке.  Объект `IActiveScriptSite` обычно обеспечивает реализацию интерфейса `IActiveScriptSiteDebug`.  Если это сделано, вызовите метод `IActiveScriptSite::QueryInterface` чтобы получить интерфейс `IActiveScriptSiteDebug`.  
+# <a name="iactivescriptsitedebug-interface"></a>Интерфейс IActiveScriptSiteDebug
+Промежуточные узлы реализовать `IActiveScriptSiteDebug` интерфейс для управления документами и участвовать в отладке. `IActiveScriptSite` Объект обычно предоставляет реализацию `IActiveScriptSiteDebug` интерфейса. Если это сделано, вызовите `IActiveScriptSite::QueryInterface` метод, чтобы получить `IActiveScriptSiteDebug` интерфейса.  
   
- В дополнение к методам, наследуемым от интерфейса `IUnknown`, интерфейс `IActiveScriptSiteDebug` предоставляет следующие методы.  
+ Помимо методов, наследуемых от `IUnknown`, `IActiveScriptSiteDebug` интерфейс предоставляет следующие методы.  
   
-## Методы в порядке таблицы Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[IActiveScriptSiteDebug::GetDocumentContextFromPosition](../../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md)|Используемый обработчиком языка, чтобы делегировать `IDebugCodeContext::GetSourceContext`.|  
-|[IActiveScriptSiteDebug::GetApplication](../../winscript/reference/iactivescriptsitedebug-getapplication.md)|Возвращает объект приложения отладки, связанный с этим сайтом скрипта.|  
-|[IActiveScriptSiteDebug::GetRootApplicationNode](../../winscript/reference/iactivescriptsitedebug-getrootapplicationnode.md)|Получает узел приложения, под которым должны быть добавитьы документы скрипта.|  
-|[IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md)|Обеспечивает промежуточный узел, чтобы указать способ обработки ошибок во время выполнения.|
+|------------|-----------------|  
+|[IActiveScriptSiteDebug::GetDocumentContextFromPosition](../../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md)|Использовать обработчик языка для делегирования `IDebugCodeContext::GetSourceContext`.|  
+|[IActiveScriptSiteDebug::GetApplication](../../winscript/reference/iactivescriptsitedebug-getapplication.md)|Возвращает объект отладки приложения, связанный с этим узлом скрипта.|  
+|[IActiveScriptSiteDebug::GetRootApplicationNode](../../winscript/reference/iactivescriptsitedebug-getrootapplicationnode.md)|Возвращает узел приложения, в какой скрипт документы должны быть добавлены.|  
+|[IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md)|Позволяет промежуточных узлов определить способ обработки ошибок во время выполнения.|

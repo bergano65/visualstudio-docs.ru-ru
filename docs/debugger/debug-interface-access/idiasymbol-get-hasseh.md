@@ -1,54 +1,53 @@
 ---
-title: "IDiaSymbol::get_hasSEH | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_hasSEH - метод"
+title: "IDiaSymbol::get_hasSEH | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_hasSEH method
 ms.assetid: 1a709ded-22c8-464c-97be-eba5e464210c
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2a0e2ffb58b62acd35fea209e2c0c66fc7f1a9cf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_hasSEH
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает пометить, указывающее, содержит ли какие\-либо функция [Структурированная обработка исключений](/visual-cpp/cpp/structured-exception-handling-c-cpp) \(например, блоки \_\_try\/\_\_except\).  
+# <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
+Возвращает флаг, указывающий, является ли функция содержит любые [структурированная обработка исключений (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) (__try-например, /\_блоки _except.).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```C++  
 HRESULT get_hasSEH(  
-   BOOL *pFlag  
+   BOOL *pFlag  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pFlag`  
- \[out\] возвращает `TRUE` если функция имеются структурированные блоки обработки исключений; в противном случае возвращает  `FALSE`.  
+ [out] Возвращает `TRUE` Если функция содержит любые блоков структурной обработки исключений; в противном случае возвращает `FALSE`.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает  `S_FALSE` или код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение  `S_FALSE` означает, что свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
   
 |Требование|Описание|  
-|----------------|--------------|  
+|-----------------|-----------------|  
 |Заголовок:|dia2.h|  
-|Версия:|Пакет SDK для доступа к интерфейсу отладки v8.0|  
+|Версия:|ПАКЕТ SDK для версии 8.0|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Структурированная обработка исключений](/visual-cpp/cpp/structured-exception-handling-c-cpp)
+ [Структурированная обработка исключений (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp)

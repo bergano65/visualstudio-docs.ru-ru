@@ -1,60 +1,59 @@
 ---
-title: "IDiaStackWalkHelper::readMemory | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackWalkHelper2::readMemory - метод"
+title: "IDiaStackWalkHelper::readMemory | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackWalkHelper2::readMemory method
 ms.assetid: e1eb90aa-49b7-476c-9e70-7e8f08994cbe
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: cccec7df8428db0a1e7c1fe2274475c2b723d760
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackWalkHelper::readMemory
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Считывает блок данных из образа исполняемого файла в памяти.  
+# <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
+Считывает блок данных из исполняемого файла изображения в памяти.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT readMemory(   
-   enum MemoryTypeEnum type,  
-   ULONGLONG           va,  
-   DWORD               cbData,  
-   DWORD*              pcbData,  
-   BYTE*               pbData  
+```C++  
+HRESULT readMemory(   
+   enum MemoryTypeEnum type,  
+   ULONGLONG           va,  
+   DWORD               cbData,  
+   DWORD*              pcbData,  
+   BYTE*               pbData  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `type`  
- \[in\] значение из [Перечисление MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md) перечисление, указывающее тип памяти для чтения.  
+ [in] Значение из [memorytypeenum-перечисление](../../debugger/debug-interface-access/memorytypeenum.md) перечисление, указывающее тип памяти для чтения.  
   
- va  
- \[in\] виртуальный адрес способом, с которого начинается чтение.  
+ VA  
+ [in] Виртуальный адрес в образ, с которого начинается чтение.  
   
  `cbData`  
- \[in\] размер буфера в байтах.  
+ [in] Размер буфера данных в байтах.  
   
  `pcbData`  
- \[out\] возвращает число фактически считанных байтов.  If `pbData` существует  `NULL`затем это общее число байтов доступных данных.  
+ [out] Возвращает число фактически считанных байтов. Если `pbData` — `NULL`, то это общее число байтов доступных данных.  
   
  `pbData`  
- \[in, out\] буфер, который заполняется в память при для чтения.  
+ [in, out] Буфер, заполнено чтения объем памяти.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [Перечисление MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md)

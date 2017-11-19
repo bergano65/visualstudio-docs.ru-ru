@@ -1,27 +1,30 @@
 ---
-title: "IDebugDocumentHelper::AddDeferredText | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugDocumentHelper::AddDeferredText | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentHelper.AddDeferredText
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugDocumentHelper::AddDeferredText"
+helpviewer_keywords: IDebugDocumentHelper::AddDeferredText
 ms.assetid: 9463cfb0-76cc-45ee-b32c-f37dce2b2e0e
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c92909874429075bebc6a1f0a252573d049584e8
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentHelper::AddDeferredText
-Уведомляет вспомогательная подпрограмма, что заданный текст доступно, но не содержатся символы.  
+# <a name="idebugdocumenthelperadddeferredtext"></a>IDebugDocumentHelper::AddDeferredText
+Уведомляет вспомогательное приложение доступно заданный текст, но он не поддерживает символы.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT AddDeferredText(  
@@ -30,30 +33,30 @@ HRESULT AddDeferredText(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `cChars`  
- \[in\] количество символов \(юникод\) для добавления.  
+ [in] Число символов (Юникод) для добавления.  
   
  `dwTextStartCookie`  
- \[in\] базовая приложение\- указанный файл cookie, представляющее начальную позицию текста.  
+ [in] Определить на уровне узла куки-файл, представляющий начальное положение текста.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
 |`E_FAIL`|Сбой метода.|  
   
-## Заметки  
- Этот метод позволяет узлу отложить защита символы, чтобы добавить до тех пор, пока они не будут необходимы, пока что вспомогательный метод для создания точных уведомления и данные о размере.  Параметр `dwTextStartCookie` файл cookie, определяемый основным приложением, которое представляет начальную позицию текста.  Последующие вызовы `IDebugDocumentText::GetText` должны предоставить этот файл cookie.  Например, в основном приложении, которое представляет текст в двухбайтовой кодировке, файл " cookie " может быть возмещенным байтом.  
+## <a name="remarks"></a>Примечания  
+ Этот метод позволяет узлу отложить, предоставляя символы, которые требуется добавить, пока они нужны, обеспечив при этом вспомогательное приложение для создания точных уведомления и сведения о размере. `dwTextStartCookie` Параметр имеет файл cookie, определяемый узла, который представляет начальную позицию текста. Последующие вызовы `IDebugDocumentText::GetText` необходимо предоставить этот файл cookie. Например в узле, который представляет текст в кодировке DBCS, куки-файл может быть смещение в байтах.  
   
- Ожидается один вызов `IDebugDocumentText::GetText` может получить символы из нескольких вызовов `AddDeferredText`.  Вспомогательные классы могут также просить тот же диапазон символов отложенную несколько раз.  
+ Предполагается, что за один вызов `IDebugDocumentText::GetText` можно получить символов из нескольких вызовов `AddDeferredText`. Вспомогательные классы может также потребоваться тот же диапазон символов отложенное более одного раза.  
   
 > [!NOTE]
->  Вызовы `AddDeferredText` не должны быть смешаны с вызовами к `AddUnicodeText` или `AddDBCSText`.  Если это происходит, `E_FAIL` возвращается.  
+>  Вызовы `AddDeferredText` не должны смешиваться с вызовами `AddUnicodeText` или `AddDBCSText`. В этом случае `E_FAIL` возвращается.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
  [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   

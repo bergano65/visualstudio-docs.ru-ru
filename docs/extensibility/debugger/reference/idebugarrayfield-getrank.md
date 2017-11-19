@@ -1,51 +1,51 @@
 ---
-title: "IDebugArrayField::GetRank | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugArrayField::GetRank"
-helpviewer_keywords: 
-  - "Метод IDebugArrayField::GetRank"
+title: "IDebugArrayField::GetRank | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugArrayField::GetRank
+helpviewer_keywords: IDebugArrayField::GetRank method
 ms.assetid: 2364b876-5be1-4bab-9b8f-3b6121da35c6
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2467c8d4ed85a685de80511d68a20e24c047306e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugArrayField::GetRank
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Возвращает ряды или число измерений массива.  
+# <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
+Возвращает ранг или число измерений массива.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetRank(   
-   DWORD* pdwRank  
+```cpp  
+HRESULT GetRank(   
+   DWORD* pdwRank  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetRank(  
-   out uint pdwRank  
+   out uint pdwRank  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pdwRank`  
- \[out\] возвращает ряд.  
+ [out] Возвращает ранг.  
   
-## Возвращаемое значение  
- В случае успеха возвращает значение S\_OK; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Ряды массива соответствует количеству измерений.  В C\+\+ и c\#, индексация многомерных массивов являются массивы массивов и поэтому могут рассматриваться как одномерный массив \(и `GetRank` метод всегда возвращает 1\).  IN [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]с другой стороны, многомерный массив обрабатываются и ряды такого массива отражает количество измерений \(и  `GetRank` метод всегда возвращает количество измерений\).  
+## <a name="remarks"></a>Примечания  
+ Ранг массива соответствует числу измерений. В C++ и C# массивы массивов на самом деле являются многомерные массивы и таким образом можно считать одномерного массива (и `GetRank` метод всегда возвращает значение 1). В [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)], с другой стороны, многомерные массивы обрабатываются по-разному и ранг такой массив отражает число измерений (и `GetRank` метод всегда возвращает число измерений).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

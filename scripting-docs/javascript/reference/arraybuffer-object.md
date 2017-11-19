@@ -1,69 +1,72 @@
 ---
-title: "Объект ArrayBuffer | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Объект ArrayBuffer | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 9fda1261-f450-493b-b3db-ecfa9ca93cd7
-caps.latest.revision: 17
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c253d63d12a4a5e71d1661aae560b74debecdd62
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Объект ArrayBuffer
-Представляет необработанный буфер двоичных данных, который используется для хранения данных для разных типизированных массивов.  Буферы `ArrayBuffers` не поддерживают прямое чтение и запись данных, однако их можно передать в типизированный массив или представление [Объект DataView](../../javascript/reference/dataview-object.md) для интерпретации необработанного буфера по мере необходимости.  
+# <a name="arraybuffer-object"></a>Объект ArrayBuffer
+Представляет необработанный буфер двоичных данных, который используется для хранения данных для разных типизированных массивов. `ArrayBuffers`Невозможно чтение и запись напрямую, но могут передаваться в типизированный массив или [объекта DataView](../../javascript/reference/dataview-object.md) для интерпретации необработанного буфера по мере необходимости.  
   
- Дополнительные сведения о типизированных массивах см. в разделе [Типизированные массивы](../../javascript/advanced/typed-arrays-javascript.md).  
+ Дополнительные сведения о типизированных массивов см. в разделе [типизированные массивы](../../javascript/advanced/typed-arrays-javascript.md).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```javascript  
+```JavaScript  
   
 arrayBuffer = new ArrayBuffer(length);  
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `arrayBuffer`  
- Обязательный.  Имя переменной, которой присваивается объект `ArrayBuffer`.  
+ Обязательный. Имя переменной, которой присваивается объект `ArrayBuffer`.  
   
  `length`  
- Длина буфера.  Содержимое буфера ArrayBuffer инициализируется значением 0.  Если запрошенное число байтов не удалось выделить, возникает исключение.  
+ Длина буфера. Содержимое буфера ArrayBuffer инициализируется значением 0. Если запрошенное число байтов не удалось выделить, возникает исключение.  
   
-## Свойства  
+## <a name="properties"></a>Свойства  
  В следующей таблице перечислены свойства объекта `ArrayBuffer`.  
   
 |Свойство|Описание|  
-|--------------|--------------|  
-|[Свойство byteLength](../../javascript/reference/bytelength-property-arraybuffer.md)|Только для чтения.  Длина буфера ArrayBuffer \(в байтах\).|  
+|--------------|-----------------|  
+|[Свойство byteLength](../../javascript/reference/bytelength-property-arraybuffer.md)|Только для чтения. Длина буфера ArrayBuffer (в байтах).|  
   
-## Функции  
+## <a name="functions"></a>Функции  
  В следующей таблице перечислены функции объекта `ArrayBuffer`.  
   
 |Свойство|Описание|  
-|--------------|--------------|  
+|--------------|-----------------|  
 |[Функция ArrayBuffer.isView](../../javascript/reference/arraybuffer-isview-function-arraybuffer.md)|Определяет, обеспечивает ли объект представление буфера.|  
   
-## Методы  
+## <a name="methods"></a>Методы  
  В следующей таблице перечислены методы объекта `ArrayBuffer`.  
   
 |Свойство|Описание|  
-|--------------|--------------|  
+|--------------|-----------------|  
 |[Метод slice](../../javascript/reference/slice-method-arraybuffer.md)|Возвращает фрагмент буфера `ArrayBuffer`.|  
   
-## Пример  
- В следующем примере показано использование объекта ArrayBuffer для обработки двоичных данных, полученных из запроса [XMLHttpRequest](http://msdn.microsoft.com/library/ie/ms535874\(v=vs.85\).aspx).  Для получения отдельных значений можно использовать объект [Объект DataView](../../javascript/reference/dataview-object.md).  
+## <a name="example"></a>Пример  
+ В следующем примере показано использование объекта ArrayBuffer для обработки двоичных данных, полученных из [XMLHttpRequest](http://msdn.microsoft.com/library/ie/ms535874\(v=vs.85\).aspx). Можно использовать [объекта DataView](../../javascript/reference/dataview-object.md) для получения отдельных значений.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -83,8 +86,8 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Заметки  
- Дополнительные сведения об использовании `XmlHttpRequest` см. в разделе [XMLHttpRequest enhancements](http://msdn.microsoft.com/ru-ru/be09137c-6546-441b-b953-dcbf72b77069).  
+## <a name="remarks"></a>Примечания  
+ Дополнительные сведения об использовании `XmlHttpRequest`, в разделе [улучшения объекта XMLHttpRequest](http://msdn.microsoft.com/en-us/be09137c-6546-441b-b953-dcbf72b77069).  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

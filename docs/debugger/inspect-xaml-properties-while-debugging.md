@@ -1,56 +1,40 @@
 ---
-title: Inspect XAML properties while debugging | Microsoft Docs
+title: "Просмотр свойств XAML во время отладки | Документы Microsoft"
 ms.custom: 
 ms.date: 03/06/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 24dc103b195fbf0110a6c760beb9eb8e3ce305ba
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
-
+ms.openlocfilehash: f587c0241452d995a6676ca16d878c775da4750f
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/11/2017
 ---
-# <a name="inspect-xaml-properties-while-debugging"></a>Inspect XAML properties while debugging
-You can get a real-time view of your running XAML code with the **Live Visual Tree** and the **Live Property Explorer**. These tools give you a tree view of the UI elements of your running XAML application, and show you the runtime properties of any UI element you select.  
+# <a name="inspect-xaml-properties-while-debugging"></a>Просмотр свойств XAML во время отладки
+Вы можете получить в режиме реального времени представление о выполнении кода XAML с **динамическое визуальное дерево** и **динамический обозреватель свойств**. Эти средства обеспечивают представление элементов пользовательского интерфейса выполняющегося приложения XAML в виде дерева, а также отображение свойств среды выполнения любого выбранного элемента интерфейса.  
   
- You can use these tools in the following configurations:  
+ Эти средства можно использовать в следующих конфигурациях.  
   
-|Type of App|Operating System and Tools|  
+|Тип приложения|Операционная система и средства|  
 |-----------------|--------------------------------|  
-|Windows Presentation Foundation (4.0 and above) applications|Windows 7 and above|  
-|Windows Store and Windows Phone 8.1 apps|Windows 10 and above, with the [Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
-|Universal Windows apps|Windows 10 and above, with the [Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
+|Приложения Windows Presentation Foundation (4.0 и более поздних версий)|Windows 7 и более поздних версий|  
+|Windows 8.1 и Windows Phone 8.1 приложений|Windows 10 и более поздних версий, с [Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
+|Универсальные приложения Windows|Windows 10 и более поздних версий, с [Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
   
-## <a name="looking-at-elements-in-the-live-visual-tree"></a>Looking at Elements in the Live Visual Tree  
- Let's get started with a very simple WPF application that has a list view and a button. Every time you click the button, another item is added to the list. Even-numbered items are colored gray, and odd-numbered items are colored yellow.  
+## <a name="looking-at-elements-in-the-live-visual-tree"></a>Просмотр элементов в динамическом визуальном дереве  
+ Начнем с очень простого приложения WPF со списком и кнопкой. При каждом нажатии кнопки в список добавляется еще один элемент. Четные элементы показаны серым, а нечетные — желтым цветом.  
   
- Create a new C# WPF application (File > New > Project, then select C# and find WPF Application). Name it **TestXAML**.  
+ Создайте новое приложение WPF C# (Файл > Создать > проект, а затем выберите C# и найдите приложение WPF). Назовите его **TestXAML**.  
   
- Change MainWindow.xaml to the following:  
+ Измените файл MainWindow.xaml следующим образом.  
   
 ```xaml  
 <Window x:Class="TestXAML.MainWindow"  
@@ -68,9 +52,9 @@ You can get a real-time view of your running XAML code with the **Live Visual Tr
 </Window>  
 ```  
   
- Add the following command handler to the MainWindow.xaml.cs file:  
+ Добавьте следующий обработчик команд в файл MainWindow.xaml.cs:  
   
-```C# 
+```csharp 
 int count;
 
 private void button_Click(object sender, RoutedEventArgs e)  
@@ -89,37 +73,37 @@ private void button_Click(object sender, RoutedEventArgs e)
 }  
 ```  
   
- Build the project and start debugging. (The build configuration must be Debug, not Release. For more information about build configurations, see [Understanding Build Configurations](../ide/understanding-build-configurations.md).)  
+ Выполните сборку решения и запустите отладку. (В качестве конфигурации сборки нужно выбрать отладку, а не выпуск. Дополнительные сведения о конфигурациях сборки см. в разделе [общее представление о конфигурациях построения](../ide/understanding-build-configurations.md).)  
   
- When the window comes up, click the **Add Item** button a couple of times. You should see something like this:  
+ Когда окно, нажмите кнопку **добавить элемент** кнопку несколько раз. Результат должен быть примерно таким:  
   
- ![Main window of the app](../debugger/media/livevisualtree-app.png "LiveVIsualTree-App")  
+ ![Главное окно приложения](../debugger/media/livevisualtree-app.png "LiveVIsualTree приложения")  
   
- Now open the **Live Visual Tree** window (**Debug > Windows > Live Visual Tree**, or find it along the left side of the IDE). Drag it away from its docking position so we can look at this window and the **Live Properties** window side by side. In the **Live Visual Tree** window, expand the **ContentPresenter** node. It should contain nodes for the button and the list box. Expand the list box (and then the **ScrollContentPresenter** and the **ItemsPresenter**) to find the list box items. The window should look like this:  
+ Теперь откройте **динамическое визуальное дерево** окна (**Отладка > Windows > динамического визуального дерева**, или найдите его в левой части IDE). Перетащите его из закрепленного положения, чтобы можно было просмотреть это окно и **динамические свойства** рядом друг с другом. В **динамическое визуальное дерево** окна, разверните **ContentPresenter** узла. Он должен содержать узлы для кнопки и списка. Разверните список (а затем **ScrollContentPresenter** и **ItemsPresenter**) для поиска элементов списка. Окно должно выглядеть следующим образом:  
   
- ![ListBoxItems in the Live Visual Tree](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree-ListBoxItems")  
+ ![ListBoxItems в динамическом визуальном дереве](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree ListBoxItems")  
   
- Go back to the application window and add a few more items. You should see more list box items appear in the **Live Visual Tree**.  
+ Вернитесь в окно приложения и добавьте еще несколько элементов. Вы увидите список появится больше элементов в **динамическое визуальное дерево**.  
   
- Now let's look at the properties of one of the list box items. Select the first list box item in the **Live Visual Tree** and click the **Show Properties** icon on the toolbar. The **Live Property Explorer** should appear. Note that the **Content** field is "Item1", and the **Background** field is **#FFFFFFE0** (light yellow). Go back to the **Live Visual Tree** and select the second list box item. The **Live Property Explorer** should show that the **Content** field is "Item2", and the **Background** field is **#FFD3D3D3** (light gray).  
+ Теперь давайте взглянем на свойства одного из элементов списка. Выберите первый элемент списка в **динамическое визуальное дерево** и нажмите кнопку **Показать свойства** значок на панели инструментов. **Динамический обозреватель свойств** должны отображаться. Обратите внимание, что **содержимого** поле является «Item1» и **фона** поле является **#FFFFFFE0** (Светло-желтый). Вернитесь к **динамическое визуальное дерево** и выберите второй элемент списка. **Динамический обозреватель свойств** показывает, что **содержимого** поле является «Item2» и **фона** поле является **#FFD3D3D3** (светло-серый ).  
   
- The actual structure of the XAML has a lot of elements that you're probably not directly interested in, and if you don't know the code well you might have a hard time navigating the tree to find what you're looking for. So the **Live Visual Tree** has a couple of ways that let you use the application's UI to help you find the element you want to examine.  
+ Фактическая структура XAML-кода содержит много элементов, которые вы, вероятно, не интересует непосредственно, и если вы не знаете код также может быть сложно, навигация по дереву, чтобы найти то, что вы ищете. Поэтому **динамическое визуальное дерево** обеспечивает несколько способов, позволяющие использовать пользовательского интерфейса приложения для поиска элемента, которое необходимо исследовать.  
   
- **Enable selection in the running application**. You can enable this mode when you select the leftmost button on the **Live Visual Tree** toolbar. With this mode on, you can select a UI element in the application, and the **Live Visual Tree** (and the **Live Property Viewer**) automatically updates to show the node in the tree corresponding to that element, and its properties.  
+ **Разрешить выделение в выполняющемся приложении**. Этот режим можно включить, выбрав крайнюю левую кнопку на **динамическое визуальное дерево** инструментов. Этот режим включен, можно выбрать элемент пользовательского интерфейса в приложении и **динамическое визуальное дерево** (и **динамического обозревателя свойств**) автоматически обновляется для отображения узла в дереве, соответствующий этому элементу и его свойства.  
   
- **Display layout adorners in the running application**. You can enable this mode when you select the button that is immediately to the right of the Enable selection button. When **Display layout adorners** is on, it causes the application window to show horizontal and vertical lines along the bounds of the selected object so you can see what it aligns to, as well as rectangles showing the margins. For example, turn both **Enable selection** and **Display layout** on, and select the **Add Item** text block in the application. You should see the text block node in the **Live Visual Tree** and the text block properties in the **Live Property Viewer**, as well as the horizontal and vertical lines on the bounds of the text block.  
+ **Отображение графических элементов макета в работающем приложении**. Этот режим можно включить при нажатии кнопки, расположенной справа от кнопки включения выделения. Когда **отображение графических элементов макета** имеет значение on, то окно приложения Показать горизонтальные и вертикальные линии вдоль границ выбранного объекта, чтобы можно было видеть, относительно чего он выровнен, а также прямоугольники, показывающие поля. Например, включите оба **Включение возможности выбора** и **формат вывода** и выберите **добавить элемент** блок текста в приложении. Должен появиться узел блока текста в **динамическое визуальное дерево** и свойства блока текста **динамического обозревателя свойств**, а также горизонтальные и вертикальные линии для границы текстового блока.  
   
- ![LivePropertyViewer in DisplayLayout](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer-DisplayLayout")  
+ ![LivePropertyViewer в DisplayLayout](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer DisplayLayout")  
   
- **Preview Selection**. You can enable this mode by selecting the third button from the left on the Live Visual Tree toolbar. This mode shows the XAML where the element was declared, if you have access to the source code of the application. Select **Enable selection** and **Preview selection**, and then you select the button in our test application. The MainWindow.xaml file opens in Visual Studio and the cursor is placed on the line where the button is defined.  
+ **Предварительный просмотр выбора**. Этот режим можно включить, нажав третью кнопка слева на панели инструментов динамического визуального дерева. Этот режим показывает XAML-код, где был объявлен элемент, если имеется доступ к исходному коду приложения. Выберите **Включение возможности выбора** и **Предварительный просмотр выбора**, а затем нажмите кнопку в тестируемом приложении. Файл MainWindow.xaml откроется в Visual Studio и курсор будет находится в строке, где определена кнопка.  
   
-## <a name="using-xaml-tools-with-running-applications"></a>Using XAML tools with running applications  
- You can use these XAML tools even when you don't have the source code. When you attach to a running XAML application, you can use the **Live Visual Tree** on the UI elements of that application too. Here's an example, using the same WPF test application we used before.  
+## <a name="using-xaml-tools-with-running-applications"></a>Использование средств XAML с работающими приложениями  
+ Эти средства XAML можно использовать даже при отсутствии исходного кода. При подключении к выполняющемуся приложению XAML можно использовать **динамическое визуальное дерево** в элементах пользовательского интерфейса этого приложения слишком. Ниже приведен пример, с помощью же тестовое приложение WPF, которые использовались до.  
   
-1.  Start the **TestXaml** application in the Release configuration. You cannot attach to a process that is running in a **Debug** configuration.  
+1.  Запуск **TestXaml** приложение в конфигурации выпуска. Не удается присоединить к процессу, который выполняется в **отладки** конфигурации.  
   
-2.  Open a second instance of Visual Studio and click **Debug > Attach to Process**. Find **TestXaml.exe** in the list of available processes, and click **Attach**.  
+2.  Откройте второй экземпляр Visual Studio и нажмите кнопку **Отладка > присоединить к процессу**. Найти **TestXaml.exe** в списке доступных процессов и нажмите кнопку **присоединение**.  
   
-3.  The application starts running.  
+3.  Начнется выполнение приложения.  
   
-4.  In the second instance of Visual Studio, open the **Live Visual Tree** (**Debug > Windows > Live Visual Tree**). You should see the **TestXaml** UI elements, and you should be able to manipulate them as you did while debugging the application directly.
+4.  Во втором экземпляре Visual Studio, откройте **динамическое визуальное дерево** (**Отладка > Windows > динамического визуального дерева**). Вы увидите **TestXaml** элементы пользовательского интерфейса и вы сможете изменять их, как во время отладки приложения напрямую.

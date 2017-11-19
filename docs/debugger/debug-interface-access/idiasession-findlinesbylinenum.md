@@ -1,67 +1,66 @@
 ---
-title: "IDiaSession::findLinesByLinenum | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSession::findLinesByLinenum - метод"
+title: "IDiaSession::findLinesByLinenum | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::findLinesByLinenum method
 ms.assetid: 76d5622d-9a91-4c2a-a98f-263af5d1daef
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bb1538aedd1846e164301238262cfb9378973dfc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findLinesByLinenum
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Указывает количество линий compiland, что указанный номер линии в файле источника находится внутри или приближает.  
+# <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
+Определяет единицу компиляции, которая указанный номер строки в файле исходного кода находится в пределах или рядом с числом строк.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT findLinesByLinenum (   
-   IDiaSymbol*           compiland,  
-   IDiaSourceFile*       file,  
-   DWORD                 linenum,  
-   DWORD                 column,  
-   IDiaEnumLineNumbers** ppResult  
+```C++  
+HRESULT findLinesByLinenum (   
+   IDiaSymbol*           compiland,  
+   IDiaSourceFile*       file,  
+   DWORD                 linenum,  
+   DWORD                 column,  
+   IDiaEnumLineNumbers** ppResult  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `compiland`  
- \[in\] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объект, представляющий compiland, в котором поиск чисел линии.  Этот параметр не может иметь значение `NULL`.  
+ [in] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) , представляющий компилируемого объекта, в котором выполняется поиск для номеров строк. Этот параметр не может быть `NULL`.  
   
  `file`  
- \[in\] [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) объект, представляющий файл источника для поиска.  Этот параметр не может иметь значение `NULL`.  
+ [in] [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) , представляющий исходный файл для поиска. Этот параметр не может быть `NULL`.  
   
  `linenum`  
- \[in\] определяет смещение номер линии.  
+ [in] Указывает номер строки с единицы.  
   
 > [!NOTE]
->  Нельзя использовать ни для определения всех линии \(используйте [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md) метод, чтобы найти все линии\).  
+>  Ноль нельзя использовать для указания всех строк (используйте [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md) метод, чтобы найти все строки).  
   
  `column`  
- \[in\] определяет номер столбца.  Используйте нулю, чтобы указать все столбцы.  Столбец смещение байта в линию.  
+ [in] Указывает номер столбца. Используйте ноль для указания всех столбцов. Столбец содержит смещение байтов в строку.  
   
  `ppResult`  
- \[out\] возвращает [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objta, содержащее список извлеченных чисел линии.  
+ [out] Возвращает [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) получить objta со списком номеров строк.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Пример  
- В следующем примере показано, как открыть исходный файл, чтобы compilands предоставляемые этим файлом и найти номер линии в исходном файле, с которой начинается каждого compiland.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как открыть исходный файл, перечислять компилируемые объекты, добавленные в этот файл и найдите номера строки в исходном файле, с которой начинается каждую единицу компиляции.  
   
-```cpp#  
+```C++  
 void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)  
 {  
     IDiaEnumSourceFiles* pEnum;  
@@ -98,7 +97,7 @@ void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)
 }  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)   

@@ -1,47 +1,47 @@
 ---
-title: "IEnumDebugAddresses::Reset | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugAddresses::Reset"
-helpviewer_keywords: 
-  - "Метод IEnumDebugAddresses::Reset"
+title: "IEnumDebugAddresses::Reset | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugAddresses::Reset
+helpviewer_keywords: IEnumDebugAddresses::Reset method
 ms.assetid: 3a9d7f20-5bc6-4e13-8e91-5af4092e092f
-caps.latest.revision: 5
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b126565533bc46c315502ddce06f95f1d588271a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugAddresses::Reset
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Этот метод сбросит перечисление к первому элементу.  
+# <a name="ienumdebugaddressesreset"></a>IEnumDebugAddresses::Reset
+Этот метод сбрасывает перечисления на первый элемент.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT Reset(void);  
 ```  
   
-```c#  
+```csharp  
 int Reset();  
 ```  
   
-#### Параметры  
- None  
+#### <a name="parameters"></a>Параметры  
+ Нет  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- После вызова этого метода, следующий вызов [Далее](../Topic/IEnumDebugAddresses::Next.md) возвращает первый элемент перечисления.  
+## <a name="remarks"></a>Примечания  
+ После вызова этого метода, при следующем вызове [Далее](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md) возвращает первый элемент перечисления.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)   
- [Далее](../Topic/IEnumDebugAddresses::Next.md)
+ [Вперед](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)

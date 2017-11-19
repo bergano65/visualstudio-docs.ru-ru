@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,29 +14,15 @@ helpviewer_keywords:
 - lists, symbols for the object manager
 - symbols, exposing lists to the object manager
 ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
-caps.latest.revision: 25
+caps.latest.revision: "25"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 15248c2ed4ebca289421576bc6d59776cb0d6298
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 502fbce9d9fbd187e0cccb0b613d470a23f09e10
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Как: предоставлять список символов, предоставленный библиотекой диспетчер объектов
 Средства просмотра символ **представление классов**, **обозревателя объектов**, **обозревателя вызовов** и **результаты поиска символа**, передачи запросов для новых данных [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчер объектов. Диспетчер объектов находит соответствующие библиотеки и запрашивает новые списки символов. Библиотеки ответить предоставлением запрошенных данных для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчера объектов через <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> интерфейса. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Диспетчера объектов вызывает эти методы в <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> интерфейс для получения данных и использует его для заполнения и обновления представления средства обзора символа.  

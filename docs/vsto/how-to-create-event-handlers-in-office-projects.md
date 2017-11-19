@@ -1,60 +1,62 @@
 ---
-title: "Практическое руководство. Создание обработчиков событий в проектах Office"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "обработчики событий [разработка решений Office в Visual Studio]"
-  - "события [разработка решений Office в Visual Studio]"
-  - "Visual Basic [разработка решений Office в Visual Studio], обработчики событий"
-  - "Visual C# [разработка решений Office в Visual Studio], обработчики событий"
+title: "Как: Создание обработчиков событий в проектах Office | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Visual Basic [Office development in Visual Studio], event handlers
+- event handlers [Office development in Visual Studio]
+- Visual C# [Office development in Visual Studio], event handlers
+- events [Office development in Visual Studio]
 ms.assetid: 2cfd6a45-4c25-4431-b4fc-e0f2c0a72e54
-caps.latest.revision: 31
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 30
+caps.latest.revision: "31"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: af681832a8c298427c13060d858b57b99654953a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Создание обработчиков событий в проектах Office
-  В Visual Basic и C\# создавать обработчики событий можно несколькими способами.  Чтобы создать в режиме конструктора обработчики событий по умолчанию для элементов управления, дважды щелкните мышью элемент управления; чтобы создать обработчик любого события элемента управления, воспользуйтесь областью событий окна **Свойства**.  Однако чтобы создать обработчик событий в представлении кода, необязательно переключаться в режим конструктора.  
+# <a name="how-to-create-event-handlers-in-office-projects"></a>Практическое руководство. Создание обработчиков событий в проектах Office
+  Существует несколько способов создания обработчиков событий в Visual Basic и C#. В режиме конструктора можно создать обработчики событий для элементов управления по умолчанию, дважды щелкнув элемент управления или используйте панель события **свойства** окно для создания обработчиков событий в элементе управления. Однако при работе в представлении кода не можно переключиться в режим конструктора, чтобы создать обработчик событий.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-### Чтобы создать обработчик событий в Visual Basic, выполните указанные ниже действия.  
+### <a name="to-create-an-event-handler-in-visual-basic"></a>Чтобы создать обработчик событий в Visual Basic  
   
-1.  В раскрывающемся списке **Имя класса**, расположенном в верхней части редактора кода, выберите объект, для которого требуется создать обработчик событий.  
+1.  Из **имя класса** раскрывающемся списке в верхней части редактора кода, выберите объект, который вы хотите создать обработчик событий.  
   
     > [!NOTE]  
-    >  Если необходимо создать обработчики событий для объектов `ThisDocument` или `ThisWorkbook`, выберите в раскрывающемся списке **Имя класса** пункт **\(события ThisDocument\)** или **\(события ThisWorkbook\)**.  
+    >  Если вы хотите создавать обработчики событий для `ThisDocument` или `ThisWorkbook`, необходимо выбрать **(события ThisDocument)** или **(события ThisWorkbook)** в **имя класса**раскрывающегося списка  
   
-2.  Выберите событие в раскрывающемся списке **Имя метода**, расположенном в верхней части редактора кода.  
+2.  Из **имя метода** раскрывающегося списка в верхней части редактора кода, выберите событие.  
   
-     Система Visual Studio создаст обработчик событий и переместит точку вставки во вновь созданный обработчик событий.  Если обработчик событий уже существует, точка вставки будет перемещена в существующий обработчик событий.  
+     Visual Studio создает обработчик событий и перемещает курсор на вновь созданный обработчик событий. Если обработчик событий уже существует, курсор перемещается в существующий обработчик событий.  
   
-### Чтобы создать обработчик событий в C\#, выполните указанные ниже действия.  
+### <a name="to-create-an-event-handler-in-c"></a>Чтобы создать обработчик событий в C#  
   
-1.  Создайте в событии **Startup** класса делегат события; для этого введите полное имя события, пробел, после чего введите\+\= без последующего пробела.  Например:  
+1.  Создайте делегат события в **запуска** событие класса, введя имя события, пробел и введя  **+=**  без пробелов после него. Пример:  
   
      `this.<object name>.<event name> +=`  
   
 2.  В конце строки кода дважды нажмите клавишу TAB.  
   
-     Система Visual Studio автоматически завершит строку кода, создаст обработчик событий и переместит точку вставки во вновь созданный обработчик событий.  
+     Visual Studio автоматически завершает строку кода, будет создан обработчик событий и перемещает курсор на вновь созданный обработчик событий.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md)   
- [Пошаговое руководство. Программирование реакции на события элементов управления NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
- [Построение решений Office](../vsto/building-office-solutions.md)  
+ [Пошаговое руководство: Программирование реакции на события элементов управления NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
+ [Создание решений Office](../vsto/building-office-solutions.md)  
   
   

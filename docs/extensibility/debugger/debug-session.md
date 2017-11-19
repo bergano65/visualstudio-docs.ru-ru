@@ -1,30 +1,31 @@
 ---
-title: "Сеанс отладки | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "отладка [пакет SDK для отладки], сеансы"
+title: "Сеанс отладки | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], sessions
 ms.assetid: 18d82199-b2d4-47a9-924f-ab64faf60ca1
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: bd1654ba50f8bf4fd11558518f826d46f91151c3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Сеанс отладки
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-В терминах архитектуры отладчика, a **сеанс**.  
+# <a name="debug-session"></a>Сеанс отладки
+С точки зрения архитектуры отладчик **сеанса**:  
   
--   Набор всех процессов, соответствующие или отдельно, которые были запущены или были вложенные в результате единственному экземпляру класса среды разработки.  
+-   — Обрабатывает набор всех связанных или несвязанных, который запускается или подключен к из одного экземпляра интегрированной среды разработки.  
   
--   Реализует сеанс отладки \(SDM manager\).  Дополнительные сведения см. в разделе [Диспетчер сеансов отладки](../../extensibility/debugger/session-debug-manager.md).  
+-   Реализуется диспетчера сеанса отладки (SDM). Дополнительные сведения см. в разделе [сеанса отладки диспетчер](../../extensibility/debugger/session-debug-manager.md).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Диспетчер сеансов отладки](../../extensibility/debugger/session-debug-manager.md)   
- [Основные понятия отладчика](../../extensibility/debugger/debugger-concepts.md)
+ [Отладчик: основные понятия](../../extensibility/debugger/debugger-concepts.md)

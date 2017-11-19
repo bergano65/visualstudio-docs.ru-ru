@@ -1,30 +1,33 @@
 ---
-title: "Интерфейс IDebugFormatter | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "IDebugFormatter — интерфейс"
+title: "Интерфейс IDebugFormatter | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords: IDebugFormatter interface
 ms.assetid: 022142d4-c8e1-47ae-b771-3e24953293e5
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 97f95aa1ecb91f6caca187939a79a6f09cd2108f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Интерфейс IDebugFormatter
-Разрешает язык или интегрированная среда разработки настраивать преобразование между РАЗНЫМИ значениями и типами и строками VARTYPE.  
+# <a name="idebugformatter-interface"></a>Интерфейс IDebugFormatter
+Позволяет языка или интегрированной среды разработки, чтобы настроить преобразование значения типа VARIANT или типов VARTYPE и строки.  
   
- В дополнение к методам, наследуемым от интерфейса `IUnknown`, интерфейс `IDebugFormatter` предоставляет следующие методы.  
+ Помимо методов, наследуемых от `IUnknown`, `IDebugFormatter` интерфейс предоставляет следующие методы.  
   
-## Методы в порядке таблицы Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[IDebugFormatter::GetStringForVariant](../../winscript/reference/idebugformatter-getstringforvariant.md)|Возвращает строку, представляющую заданную ДРУГОЕ значение.|  
-|[IDebugFormatter::GetVariantForString](../../winscript/reference/idebugformatter-getvariantforstring.md)|Возвращает ВАРИАНТ, содержащий заданную строку.|  
-|[IDebugFormatter::GetStringForVarType](../../winscript/reference/idebugformatter-getstringforvartype.md)|Возвращает строку, которая представляет заданное значение VARTYPE.|
+|------------|-----------------|  
+|[IDebugFormatter::GetStringForVariant](../../winscript/reference/idebugformatter-getstringforvariant.md)|Возвращает строку, представляющую заданного значения типа VARIANT.|  
+|[IDebugFormatter::GetVariantForString](../../winscript/reference/idebugformatter-getvariantforstring.md)|Возврат свойства типа VARIANT, содержащего заданную строку.|  
+|[IDebugFormatter::GetStringForVarType](../../winscript/reference/idebugformatter-getstringforvartype.md)|Возвращает строку, представляющую указанное значение VARTYPE.|

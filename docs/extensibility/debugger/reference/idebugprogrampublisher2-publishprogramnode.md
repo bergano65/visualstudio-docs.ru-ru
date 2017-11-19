@@ -1,55 +1,55 @@
 ---
-title: "IDebugProgramPublisher2::PublishProgramNode | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramPublisher2::PublishProgramNode"
-helpviewer_keywords: 
-  - "IDebugProgramPublisher2::PublishProgramNode"
+title: "IDebugProgramPublisher2::PublishProgramNode | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgramPublisher2::PublishProgramNode
+helpviewer_keywords: IDebugProgramPublisher2::PublishProgramNode
 ms.assetid: d4b72e04-f726-46cf-8e56-5203ff205b12
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 49b510ec131a58778941ae925120fb58097b1db7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgramPublisher2::PublishProgramNode
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Делает их доступными для использования узла программы по отладке обработчики \(triple data encryption standard\) и сеанс отладки \(SDM manager\).  
+# <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
+Делает узел программы доступными для использования отладчики (DEs) и сеанс диспетчер отладочной (SDM).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-HRESULT PublishProgramNode(  
-   IDebugProgramNode2 *pProgramNode  
+HRESULT PublishProgramNode(  
+   IDebugProgramNode2 *pProgramNode  
 );  
 ```  
   
-```c#  
-int PublishProgramNode(  
-   IDebugProgramNode2 pProgramNode  
+```csharp  
+int PublishProgramNode(  
+   IDebugProgramNode2 pProgramNode  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pProgramNode`  
- \[in\] IDebugProgramNode2 объект, представляющий узел программы, чтобы сделать доступными.  
+ [in] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) , представляющий узел программы, чтобы сделать доступным.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Этот метод позволяет программы для запроса информации прежде чем выбрать и запустить их для отладки.  
+## <a name="remarks"></a>Примечания  
+ Этот метод позволяет программам запрашивать сведения до выбора и запуска их для отладки.  
   
- Чтобы удалить узел программы от доступности, вызовите [UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md) метод.  
+ Чтобы удалить узел программы из доступности, вызовите [UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md) метод.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)

@@ -1,86 +1,89 @@
 ---
-title: "Объект DataView | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Объект DataView | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 250ec067-7505-4ee0-82ab-bfd3c2820afa
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 370ee1afbdf7fe1d87843c4979833d54a575a4fd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Объект DataView
-Объект DataView можно использовать для чтения и записи различных типов двоичных данных в любом месте в ArrayBuffer.  
+# <a name="dataview-object"></a>Объект DataView
+Объект DataView можно использовать для чтения и записи различных типов двоичных данных в любое место в буфере ArrayBuffer.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 dataView = new DataView(buffer, byteOffset, byteLength);  
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `dataView`  
- Обязательное.  Имя переменной, которой присваивается объект **DataView**.  
+ Обязательный. Имя переменной, которой **DataView** присваивается объект.  
   
  `buffer`  
- ArrayBuffer, представляемый данным DataView.  
+ Буфер ArrayBuffer, представляемый DataView.  
   
  `byteOffset`  
- Необязательный параметр.  Задает смещение в байтах от начала буфера, по которому должно начинаться представление DataView.  
+ Необязательно. Задает смещение в байтах от начала буфера, по которому должно начинаться DataView.  
   
  `byteLength`  
- Необязательный параметр.  Задает длину \(в байтах\) раздела буфера, который должно представлять DataView.  
+ Необязательно. Указывает длину (в байтах) буфера, который должен представлять DataView раздела.  
   
-## Заметки  
- Если и byteOffset, и byteLength опущены, DataView охватывает весь диапазон ArrayBuffer.  Если аргумент byteLength опущен, DataView охватывает диапазон от смещения, заданного аргументом byteOffset, до конца ArrayBuffer.  Если значения в аргументах byteOffset и byteLength ссылаются на область за пределами ArrayBuffer, вызывается исключение.  
+## <a name="remarks"></a>Примечания  
+ Если не указано байтовое смещение и byteLength, DataView охватывает весь диапазон ArrayBuffer. Если byteLength опущено, DataView начиная с заданного байтовое смещение до конца буфера ArrayBuffer. Если данный байтовое смещение и byteLength ссылается на область за пределами буфера arraybuffer, возникает исключение.  
   
-## Свойства  
+## <a name="properties"></a>Свойства  
  В следующей таблице перечислены свойства объекта `DataView`.  
   
 |Свойство|Описание|  
-|--------------|--------------|  
-|[Свойство buffer](../../javascript/reference/buffer-property-dataview.md)|Только для чтения.  Получает ArrayBuffer, на который ссылается данное представление.|  
-|[Свойство byteLength](../../javascript/reference/bytelength-property-dataview.md)|Только для чтения.  Длина данного представления от начала его ArrayBuffer в байтах, зафиксированная во время создания.|  
-|[Свойство byteOffset](../../javascript/reference/byteoffset-property-dataview.md)|Только для чтения.  Смещение данного представления от начала его ArrayBuffer в байтах, зафиксированное во время создания.|  
+|--------------|-----------------|  
+|[Свойство buffer](../../javascript/reference/buffer-property-dataview.md)|Только для чтения. Получает буфер ArrayBuffer, на который ссылается это представление.|  
+|[Свойство byteLength](../../javascript/reference/bytelength-property-dataview.md)|Только для чтения. Длина данного представления от начала его буфера ArrayBuffer в байтах, зафиксированная во время создания.|  
+|[Свойство byteOffset](../../javascript/reference/byteoffset-property-dataview.md)|Только для чтения. Смещение от начала его буфера ArrayBuffer в байтах, зафиксированная во время создания этого представления.|  
   
-## Методы  
+## <a name="methods"></a>Методы  
  В следующей таблице перечислены методы объекта `DataView`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[Метод getInt8](../../javascript/reference/getint8-method-dataview.md)|Получает значение Int8 по указанному смещению в байтах от начала представления.|  
-|[Метод getUint8 \(DataView\)](../../javascript/reference/getuint8-method-dataview.md)|Получает значение Uint8 по указанному смещению в байтах от начала представления.|  
-|[Метод getInt16 \(DataView\)](../../javascript/reference/getint16-method-dataview.md)|Получает значение Int16 по указанному смещению в байтах от начала представления.|  
-|[Метод getUint16 \(DataView\)](../../javascript/reference/getuint16-method-dataview.md)|Получает значение Uint16 по указанному смещению в байтах от начала представления.|  
-|[Метод getInt32 \(DataView\)](../../javascript/reference/getint32-method-dataview.md)|Получает значение Int32 по указанному смещению в байтах от начала представления.|  
-|[Метод getUint32 \(DataView\)](../../javascript/reference/getuint32-method-dataview.md)|Получает значение Uint32 по указанному смещению в байтах от начала представления.|  
-|[Метод getFloat32 \(DataView\)](../../javascript/reference/getfloat32-method-dataview.md)|Получает значение Float32 по указанному смещению в байтах от начала представления.|  
-|[Метод getFloat64 \(DataView\)](../../javascript/reference/getfloat64-method-dataview.md)|Получает значение Float64 по указанному смещению в байтах от начала представления.|  
-|[Метод setInt8 \(DataView\)](../../javascript/reference/setint8-method-dataview.md)|Сохраняет значение Int8 по указанному смещению в байтах от начала представления.|  
-|[Метод setUint8 \(DataView\)](../../javascript/reference/setuint8-method-dataview.md)|Сохраняет значение Uint8 по указанному смещению в байтах от начала представления.|  
-|[Метод setInt16 \(DataView\)](../../javascript/reference/setint16-method-dataview.md)|Сохраняет значение Int16 по указанному смещению в байтах от начала представления.|  
-|[Метод setUint16 \(DataView\)](../../javascript/reference/setuint16-method-dataview.md)|Сохраняет значение Uint16 по указанному смещению в байтах от начала представления.|  
-|[Метод setInt32 \(DataView\)](../../javascript/reference/setint32-method-dataview.md)|Сохраняет значение Int32 по указанному смещению в байтах от начала представления.|  
-|[Метод setUint32 \(DataView\)](../../javascript/reference/setuint32-method-dataview.md)|Сохраняет значение Uint32 по указанному смещению в байтах от начала представления.|  
-|[Метод setFloat32 \(DataView\)](../../javascript/reference/setfloat32-method-dataview.md)|Сохраняет значение Float32 по указанному смещению в байтах от начала представления.|  
-|[Метод setFloat64 \(DataView\)](../../javascript/reference/setfloat64-method-dataview.md)|Сохраняет значение Float64 по указанному смещению в байтах от начала представления.|  
+|------------|-----------------|  
+|[Метод getInt8](../../javascript/reference/getint8-method-dataview.md)|Получает значение Int8 на указанное смещение в байтах от начала представления.|  
+|[Метод getUint8 (DataView)](../../javascript/reference/getuint8-method-dataview.md)|Получает значение Uint8 на указанное смещение в байтах от начала представления.|  
+|[Метод getInt16 (DataView)](../../javascript/reference/getint16-method-dataview.md)|Получает значение Int16 на указанное смещение в байтах от начала представления.|  
+|[Метод getUint16 (DataView)](../../javascript/reference/getuint16-method-dataview.md)|Получает значение Uint16 на указанное смещение в байтах от начала представления.|  
+|[Метод getInt32 (DataView)](../../javascript/reference/getint32-method-dataview.md)|Получает значение Int32 на указанное смещение в байтах от начала представления.|  
+|[Метод getUint32 (DataView)](../../javascript/reference/getuint32-method-dataview.md)|Получает значение Uint32 на указанное смещение в байтах от начала представления.|  
+|[Метод getFloat32 (DataView)](../../javascript/reference/getfloat32-method-dataview.md)|Получает значение Float32 на указанное смещение в байтах от начала представления.|  
+|[Метод getFloat64 (DataView)](../../javascript/reference/getfloat64-method-dataview.md)|Получает значение Float64 на указанное смещение в байтах от начала представления.|  
+|[Метод setInt8 (DataView)](../../javascript/reference/setint8-method-dataview.md)|Сохраняет значение Int8 на указанное смещение в байтах от начала представления.|  
+|[Метод setUint8 (DataView)](../../javascript/reference/setuint8-method-dataview.md)|Сохраняет значение Uint8 на указанное смещение в байтах от начала представления.|  
+|[Метод setInt16 (DataView)](../../javascript/reference/setint16-method-dataview.md)|Сохраняет значение Int16 на указанное смещение в байтах от начала представления.|  
+|[Метод setUint16 (DataView)](../../javascript/reference/setuint16-method-dataview.md)|Сохраняет значение Uint16 на указанное смещение в байтах от начала представления.|  
+|[Метод setInt32 (DataView)](../../javascript/reference/setint32-method-dataview.md)|Сохраняет значение Int32 на указанное смещение в байтах от начала представления.|  
+|[Метод setUint32 (DataView)](../../javascript/reference/setuint32-method-dataview.md)|Сохраняет значение Uint32 на указанное смещение в байтах от начала представления.|  
+|[Метод setFloat32 (DataView)](../../javascript/reference/setfloat32-method-dataview.md)|Сохраняет значение Float32 на указанное смещение в байтах от начала представления.|  
+|[Метод setFloat64 (DataView)](../../javascript/reference/setfloat64-method-dataview.md)|Сохраняет значение Float64 на указанное смещение в байтах от начала представления.|  
   
-## Пример  
- В следующем примере показано, как использовать объект DataView для обработки двоичных данных, полученных от запроса XmlHttpRequest:  
+## <a name="example"></a>Пример  
+ В следующем примере показано использование объекта DataView для обработки двоичных данных, полученных из запроса XmlHttpRequest:  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -100,5 +103,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

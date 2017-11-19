@@ -1,271 +1,273 @@
 ---
-title: "Регистрация типа проекта | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "проекты [Visual Studio SDK] новый проект записи реестра"
-  - "реестр, новых типов проектов"
-  - "Регистрация новых типов проектов"
+title: "Регистрация типа проекта | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- projects [Visual Studio SDK], new project registry entries
+- registry, new project types
+- registration, new project types
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
-caps.latest.revision: 21
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 3a60ac9de727e8542df7455ee331737403f6bef3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Регистрация типа проекта
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-При создании нового типа проекта, необходимо создать записей реестра, которые позволяют [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] определить и работать с системным типом проекта.  Как правило, создаются эти записи реестра с помощью файла сценария реестра \(.rgs\).  
+# <a name="registering-a-project-type"></a>Регистрация типа проекта
+Когда вы создаете новый тип проекта, необходимо создать записей реестра, которые позволяют [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] распознавать и работать с типа проекта. Обычно эти записи реестра создаются с помощью файла реестра (RGS-) сценария.  
   
- В примере, приведенном ниже, выписки из реестра предоставляют пути по умолчанию, и данные, где применимо, выполните таблицей, содержащей записи из сценария реестра для каждой выписки.  Таблицы содержат записи и дополнительные сведения о выписках скрипта.  
+ В приведенном ниже примере инструкций из реестра предоставляют пути по умолчанию и данных там, где это применимо, за которым следует таблицу, которая содержит записи из реестра скрипта для каждой инструкции. Таблицы содержат записи скрипта и Дополнительные сведения об инструкциях.  
   
 > [!NOTE]
->  Следующие данные реестра предназначены примере типа и назначений записей в скриптах реестра будет записывать для регистрации тип проекта.  В фактических записи и их используют могут отличаться в зависимости от конкретных требований конкретного типа проекта.  Необходимо просмотреть образцы, доступные для нахождения, во многом напоминает тип проекта разрабатывается и затем проанализировать скрипт реестра для этого образца.  
+>  Пример типа и целей записей в реестре скриптов, которые можно будет осуществлять запись регистрации типа проекта предназначен в реестр следующие сведения. Фактический записей и их использование может меняться в зависимости от требований конкретного типа проекта. Просмотрите образцы можно найти одну, которая напоминает тип проекта, который вы разрабатываете и просмотрите скрипт реестра для данного примера.  
   
- В следующих примерах из HKEY\_CLASSES\_ROOT.  
+ В следующих примерах показаны из HKEY_CLASSES_ROOT.  
   
-## Пример  
+## <a name="example"></a>Пример  
   
 ```  
 \.figp  
-   @="FigPrjFile"  
-   "Content Type"="text/plain"  
+   @="FigPrjFile"  
+   "Content Type"="text/plain"  
 \.figp\ShellNew  
-   "NullFile"=""  
+   "NullFile"=""  
 \FigPrjFile  
-   @="Figure Project File"  
+   @="Figure Project File"  
 \DefaultIcon  
-   @="<Visual Studio SDK installation path>\\9.0VSIntegration\\SomeFolder\\FigPkgs\\FigPrj\\Debug\\FigPrj.dll,-206"  
+   @="<Visual Studio SDK installation path>\\9.0VSIntegration\\SomeFolder\\FigPkgs\\FigPrj\\Debug\\FigPrj.dll,-206"  
 \shell\open  
-   @="&Open in Visual Studio"  
+   @="&Open in Visual Studio"  
 \shell\open\command  
-   @="devenv.exe \"%1\""  
+   @="devenv.exe \"%1\""  
 ```  
   
 |Имя|Тип|Данные|Описание|  
-|---------|---------|------------|--------------|  
-|`@`|REG\_SZ|`FigPrjFile`|Имя и описание файлов типа проекта, имеющие расширения .figp.|  
-|`Content Type`|REG\_SZ|`Text/plain`|Тип содержимого для файлов проекта.|  
-|`NullFile`|REG\_SZ|`Null`||  
-|`@`|REG\_SZ|`%MODULE%,-206`|По умолчанию значок, используемый для проекта этого типа.  Оператор %MODULE% завершена в реестре к обычному размещению библиотеки DLL типа проекта.|  
-|`@`|REG\_SZ|`&Open in Visual Studio`|По умолчанию приложение, в котором будет открыт этот тип проекта.|  
-|`@`|REG\_SZ|`devenv.exe "%1"`|По умолчанию команда, которая будет открыт проект выполняется при получении этого типа.|  
+|----------|----------|----------|-----------------|  
+|`@`|REG_SZ|`FigPrjFile`|Имя и описание типа файлов проекта, которые имеют расширение .figp.|  
+|`Content Type`|REG_SZ|`Text/plain`|Тип содержимого для файлов проекта.|  
+|`NullFile`|REG_SZ|`Null`||  
+|`@`|REG_SZ|`%MODULE%,-206`|Значок по умолчанию, используемая для проекта этого типа. Оператор % MODULE % завершено в реестре в папке по умолчанию тип проекта DLL.|  
+|`@`|REG_SZ|`&Open in Visual Studio`|Приложение по умолчанию, в котором будет открыт этот тип проекта.|  
+|`@`|REG_SZ|`devenv.exe "%1"`|По умолчанию, которая будет выполняться при открытии проекта этого типа.|  
   
- В следующих примерах из HKEY\_LOCAL\_MACHINE и находятся в реестре с ключом \[HKEY\_LOCAL\_MACHINE \\ software \\ microsoft \\ VisualStudio \\ 99.0Exp \\ пакетами\].  
+ В следующих примерах из HKEY_LOCAL_MACHINE и расположены в разделе [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\99.0Exp\Packages] реестра.  
   
-## Пример  
+## <a name="example"></a>Пример  
   
 ```  
 \{ACEF4EB2-57CF-11D2-96F4-000000000000} (The CLSID for the VSPackage)  
-   @="FigPrj Project Package"  
-   "InprocServer32"="9.0<Visual Studio SDK installation path>\\VSIntegration\\Archive\\FigPkgs\\FigPrj\\                      Debug\\FigPrj.dll"  
-   "CompanyName"="Microsoft"  
-   "ProductName"="Figure Project Sample"  
-   "ProductVersion"="9.0"  
-   "MinEdition"="professional"  
-   "ID"=dword:00000001  
+   @="FigPrj Project Package"  
+   "InprocServer32"="9.0<Visual Studio SDK installation path>\\VSIntegration\\Archive\\FigPkgs\\FigPrj\\                      Debug\\FigPrj.dll"  
+   "CompanyName"="Microsoft"  
+   "ProductName"="Figure Project Sample"  
+   "ProductVersion"="9.0"  
+   "MinEdition"="professional"  
+   "ID"=dword:00000001  
 \{ACEF4EB2-57CF-11D2-96F4-000000000000}\SatelliteDLL  
-   "DllName"="FigPrjUI.dll"  
-   "Path"="9.0<Visual Studio SDK installation path>\\VSIntegration\\Archive\\FigPkgs\\FigPrj\\Debug\\"  
+   "DllName"="FigPrjUI.dll"  
+   "Path"="9.0<Visual Studio SDK installation path>\\VSIntegration\\Archive\\FigPkgs\\FigPrj\\Debug\\"  
 \{ACEF4EB2-57CF-11D2-96F4-000000000000}\Automation  
-   "FigProjects"=""  
+   "FigProjects"=""  
 \{ACEF4EB2-57CF-11D2-96F4-000000000000}\AutomationEvents  
-   "FigProjectsEvents"="Returns the FigProjectsEvents Object"  
-   "FigProjectItemsEvents"="Returns the FigProjectItemsEvents Object"  
+   "FigProjectsEvents"="Returns the FigProjectsEvents Object"  
+   "FigProjectItemsEvents"="Returns the FigProjectItemsEvents Object"  
 ```  
   
 |Имя|Тип|Данные|Описание|  
-|---------|---------|------------|--------------|  
-|`@` \(По умолчанию\)|REG\_SZ|`FigPrj Project VSPackage`|Локализуемое имя зарегистрированного VSPackage \(типа проекта\).|  
-|`InprocServer32`|REG\_SZ|`%MODULE%`|Путь к библиотеке DLL типа проекта.  Интегрированная среда разработки загружает эта библиотека DLL и передает идентификатор CLSID в VSPackage `DllGetClassObject` доступ  <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> построение  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> объект.|  
-|`CompanyName`|REG\_SZ|`Microsoft`|Имя компании, начала тип проекта.|  
-|`ProductName`|REG\_SZ|`Figure Project Sample`|Имя типа проекта.|  
-|`ProductVersion`|REG\_SZ|`9.0`|Номер версии выпуска типа проекта.|  
-|`MinEdition`|REG\_SZ|`professional`|Выпуск, регистрированными VSPackage.|  
-|`ID`|REG\_DWORD|`%IDS_PACKAGE_LOAD_KEY%`|Ключ загрузки пакета для проекта VSPackage.  Ключ проверяется при загрузке проекта после того, как среда запущена.|  
-|`DllName`|REG\_SZ|`%RESOURCE_DLL%`|Имя файла спутникового библиотека DLL, которая содержит локализованные ресурсы для типа проекта.|  
-|`Path`|REG\_SZ|`%RESOURCE_PATH%`|Путь спутникового библиотеки DLL.|  
-|`FigProjectsEvents`|REG\_SZ|См. раздел выписку для значения.|Задает текстовую строку, возвращаемую для этого события автоматизации.|  
-|`FigProjectItemsEvents`|REG\_SZ|См. раздел выписку для значения.|Задает текстовую строку, возвращаемую для этого события автоматизации.|  
+|----------|----------|----------|-----------------|  
+|`@`(По умолчанию)|REG_SZ|`FigPrj Project VSPackage`|Локализуемое имя зарегистрировать VSPackage (типа проекта).|  
+|`InprocServer32`|REG_SZ|`%MODULE%`|Путь к типу проекта библиотеки DLL. Загружает этот DLL интегрированной среды разработки и передает CLSID VSPackage для `DllGetClassObject` для получения <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> для создания <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> объекта.|  
+|`CompanyName`|REG_SZ|`Microsoft`|Название компании, разработанным типа проекта.|  
+|`ProductName`|REG_SZ|`Figure Project Sample`|Имя для типа проекта.|  
+|`ProductVersion`|REG_SZ|`9.0`|Номер версии типа проекта выпуска.|  
+|`MinEdition`|REG_SZ|`professional`|Выпуск регистрируемого VSPackage.|  
+|`ID`|REG_DWORD|`%IDS_PACKAGE_LOAD_KEY%`|Пакет загрузки ключа для проекта VSPackage. Ключ проверки, если проект загружается после запуска среды.|  
+|`DllName`|REG_SZ|`%RESOURCE_DLL%`|Имя файла вспомогательной библиотеки DLL, который содержит локализованные ресурсы для данного типа проектов.|  
+|`Path`|REG_SZ|`%RESOURCE_PATH%`|Путь к DLL-Библиотеке дополнения.|  
+|`FigProjectsEvents`|REG_SZ|См. инструкции для значения.|Определяет, возвращает строку текста для этого события модели автоматизации.|  
+|`FigProjectItemsEvents`|REG_SZ|См. инструкции для значения.|Определяет, возвращает строку текста для этого события модели автоматизации.|  
   
- Все следующие примеры находятся в реестре с ключом \[HKEY\_LOCAL\_MACHINE \\ software \\ microsoft \\ VisualStudio \\ 9.0Exp \\ проектами\].  
+ Следующие примеры расположены в разделе [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects] реестра.  
   
-## Пример  
+## <a name="example"></a>Пример  
   
 ```  
 \{C061DB26-5833-11D2-96F5-000000000000} (The CLSID for projects of this type)  
-   @="FigPrj Project"  
-   "DisplayName"="#2"  
-   "Package"="{ACEF4EB2-57CF-11D2-96F4-000000000000}"  
-   "ProjectTemplatesDir"="C:\\Program Files\\VSIP 9.0\\EnvSDK\\FigPkgs\\                           FigPrj\\FigPrjProjects"  
-   "ItemTemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                           FigPrjProjectItems"  
-   "DisplayProjectFileExtensions"="#3"  
-   "PossibleProjectExtensions"="figp"  
-   "DefaultProjectExtension"=".figp"  
-\{C061DB26-5833-11D2-96F5-000000000000}\Filters\1       (Folder 1 contains settings for Open Files filters.)  
-   @="#4"  
-   "CommonOpenFilesFilter"=dword:00000000  
-   "CommonFindFilesFilter"=dword:00000000  
-   "NotAddExistingItemFilter"=dword:00000000  
-   "FindInFilesFilter"=dword:00000000  
-   "NotOpenFileFilter"=dword:00000000  
-   "SortPriority"=dword:000003e8  
+   @="FigPrj Project"  
+   "DisplayName"="#2"  
+   "Package"="{ACEF4EB2-57CF-11D2-96F4-000000000000}"  
+   "ProjectTemplatesDir"="C:\\Program Files\\VSIP 9.0\\EnvSDK\\FigPkgs\\                           FigPrj\\FigPrjProjects"  
+   "ItemTemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                           FigPrjProjectItems"  
+   "DisplayProjectFileExtensions"="#3"  
+   "PossibleProjectExtensions"="figp"  
+   "DefaultProjectExtension"=".figp"  
+\{C061DB26-5833-11D2-96F5-000000000000}\Filters\1       (Folder 1 contains settings for Open Files filters.)  
+   @="#4"  
+   "CommonOpenFilesFilter"=dword:00000000  
+   "CommonFindFilesFilter"=dword:00000000  
+   "NotAddExistingItemFilter"=dword:00000000  
+   "FindInFilesFilter"=dword:00000000  
+   "NotOpenFileFilter"=dword:00000000  
+   "SortPriority"=dword:000003e8  
 \{C061DB26-5833-11D2-96F5-000000000000}\Filters\2  
-      (Folder 2 contains settings for Find in Files filters.)  
-   @="#5"  
-   "CommonOpenFilesFilter"=dword:00000000  
-   "CommonFindFilesFilter"=dword:00000000  
-   "NotAddExistingItemFilter"=dword:00000001  
-   "FindInFilesFilter"=dword:00000001  
-   "NotOpenFileFilter"=dword:00000000  
-   "SortPriority"=dword:000003e8  
+      (Folder 2 contains settings for Find in Files filters.)  
+   @="#5"  
+   "CommonOpenFilesFilter"=dword:00000000  
+   "CommonFindFilesFilter"=dword:00000000  
+   "NotAddExistingItemFilter"=dword:00000001  
+   "FindInFilesFilter"=dword:00000001  
+   "NotOpenFileFilter"=dword:00000000  
+   "SortPriority"=dword:000003e8  
 \{C061DB26-5833-11D2-96F5-000000000000}\AddItemTemplates\TemplateDirs\ {ACEF4EB2-57CF-11D2-96F4-000000000000}\1 (Second GUID indicates the registered project type for the Add Items templates.)  
-   @="#6"  
-   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"  
-   "SortPriority"=dword:00000064  
+   @="#6"  
+   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"  
+   "SortPriority"=dword:00000064  
 ```  
   
 |Имя|Тип|Данные|Описание|  
-|---------|---------|------------|--------------|  
-|`@`|REG\_SZ|`FigPrj Project`|Имя по умолчанию проектов этого типа.|  
-|`DisplayName`|REG\_SZ|`#%IDS_PROJECT_TYPE%`|Идентификатор ресурса имени, извлекаемого из спутникового DLL, зарегистрированного с пакетами.|  
-|`Package`|REG\_SZ|`%CLSID_Package%`|Идентификатор класса зарегистрированного в VSPackage пакетами.|  
-|`ProjectTemplatesDir`|REG\_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|По умолчанию путь к файлам шаблонов проекта.  Эти файлы отображаются новым шаблоном проекта.|  
-|`ItemTemplatesDir`|REG\_SZ|`%TEMPLATE_PATH% \FigPrjProjectItems`|По умолчанию путь к файлам шаблонов элементов проекта.  Эти файлы, указанные шаблоном добавление нового элемента.|  
-|`DisplayProjectFileExtensions`|REG\_SZ|`#%IDS_DISPLAY_PROJ_FILE_EXT%`|Позволяет среде разработки для предоставления **Открыть** диалоговое окно.|  
-|`PossibleProjectExtensions`|REG\_SZ|`figp`|Используется средой разработки, чтобы определить, что открываемый проект обрабатывается данным типом проекта \(фабрикой проекта\).  Формат для более чем одной записи список разделенных точкой с запятой.  Например, "vdproj; vdp".|  
-|`DefaultProjectExtension`|REG\_SZ|`.figp`|Используется средой разработки, как расширение имени файла по умолчанию для операции сохранить как.|  
-|`Filter Settings`|REG\_DWORD|Разные см. в разделе выписки и комментарии после таблицы.|Эти параметры используются, чтобы задать различные фильтры для отображения файлов в диалоговых окнах пользовательского интерфейса.|  
-|`@`|REG\_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Идентификатор ресурса для добавляет шаблоны элементов.|  
-|`TemplatesDir`|REG\_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Путь элементов проектов, перечисленных в диалоговом окне, **Добавление нового элемента** шаблон.|  
-|`SortPriority`|REG\_DWORD|`100 (vcprx64)`|Указывает порядок сортировки в узле дерева файлов, отображаемых в **Добавление нового элемента** диалоговое окно.|  
+|----------|----------|----------|-----------------|  
+|`@`|REG_SZ|`FigPrj Project`|Имя по умолчанию для проектов этого типа.|  
+|`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|Идентификатор ресурса имени должно быть извлечено из вспомогательной библиотеки DLL зарегистрирован пакетов.|  
+|`Package`|REG_SZ|`%CLSID_Package%`|Идентификатор класса VSPackage зарегистрирован пакетов.|  
+|`ProjectTemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Путь по умолчанию файлы шаблонов проекта. Это файлы, отображаемые с помощью шаблона новый проект.|  
+|`ItemTemplatesDir`|REG_SZ|`%TEMPLATE_PATH% \FigPrjProjectItems`|Путь по умолчанию файлы шаблонов элемента проекта. Это файлы, отображаемые в шаблоне добавить новый элемент.|  
+|`DisplayProjectFileExtensions`|REG_SZ|`#%IDS_DISPLAY_PROJ_FILE_EXT%`|Включение интегрированной среды разработки для реализации **откройте** диалоговое окно.|  
+|`PossibleProjectExtensions`|REG_SZ|`figp`|Используется в интегрированной среде разработки для определения, обрабатывается ли открыть проект этого типа проекта (фабрики проектов). Формат для более чем одной операции является списком разделенных точками с запятой. Например «vdproj; vdp».|  
+|`DefaultProjectExtension`|REG_SZ|`.figp`|Использовать IDE как расширение имени файла по умолчанию для операции Сохранить как.|  
+|`Filter Settings`|REG_DWORD|Разных, см. инструкции и примечания, в следующей таблице.|Эти параметры используются для настройки различных фильтров для отображения файлов в диалоговых окнах пользовательского интерфейса.|  
+|`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Идентификатор ресурса для шаблонов добавить элемент.|  
+|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Путь проекта элементов, отображаемых в диалоговом окне **добавить новый элемент** шаблона.|  
+|`SortPriority`|REG_DWORD|`100 (vcprx64)`|Определяет порядок сортировки в узле дерева файлов, отображаемых в **Добавление нового элемента** диалоговое окно.|  
   
- В следующей таблице перечислены параметры, доступные в предыдущем фильтров сегменте кода.  
+ В следующей таблице показаны параметры фильтры, доступные в предыдущем фрагменте кода.  
   
 |Параметр фильтра|Описание|  
-|----------------------|--------------|  
-|`CommonFindFilesFilter`|Указывает, что один из распространенных фильтров в фильтр **Найти в файлах** диалоговое окно.  Общие фильтры, перечислены в списке фильтра перед фильтрами не маркированными как общее.|  
-|`CommonOpenFilesFilter`|Указывает, что один из распространенных фильтров в фильтр **Открыть файл** диалоговое окно.  Общие фильтры, перечислены в списке фильтра перед фильтрами не маркированными как общее.|  
-|`FindInFilesFilter`|Указывает, что фильтр будет одним из фильтров в **Найти в файлах** диалоговое окно и будет приведено после распространенных фильтров.|  
-|`NotOpenFileFilter`|Указывает, что фильтр не будет использоваться в **Открыть файл** диалоговое окно.|  
-|`NotAddExistingItemFilter`|Указывает, что фильтр не будет использоваться в поле добавить **Существующий элемент** диалоговое окно.|  
+|-------------------|-----------------|  
+|`CommonFindFilesFilter`|Указывает, что фильтр — одна из распространенных фильтров в **поиск в файлах** диалоговое окно. Общие фильтры, перечислены в списке фильтров перед фильтрами, не помечен как общий.|  
+|`CommonOpenFilesFilter`|Указывает, что фильтр — одна из распространенных фильтров в **открыть файл** диалоговое окно. Общие фильтры, перечислены в списке фильтров перед фильтрами, не помечен как общий.|  
+|`FindInFilesFilter`|Показывает, что фильтр одного из фильтров в **поиск в файлах** диалогового окна поле и приводятся после общие фильтры.|  
+|`NotOpenFileFilter`|Указывает, что фильтр не будет использоваться в **открыть файл** диалоговое окно.|  
+|`NotAddExistingItemFilter`|Указывает, что фильтр не будет использоваться в добавления **существующий элемент** диалоговое окно.|  
   
- По умолчанию, если фильтр не содержит один или несколько из этих флагов, то фильтр используется в **Добавление существующего элемента** диалоговое окно и  **Открыть файл** откроется диалоговое окно выберите распространенных фильтров отображается.  Фильтр не используется в **Найти в файлах** диалоговое окно.  
+ По умолчанию, если фильтр содержит один или несколько из следующих флагов набора, фильтр используется в **Добавление существующего элемента** диалоговое окно и **открыть файл** диалоговое окно после перечислены общие фильтры. Фильтр не используется в **поиск в файлах** диалоговое окно.  
   
- Все следующие примеры находятся в реестре с ключом \[HKEY\_LOCAL\_MACHINE \\ software \\ microsoft \\ VisualStudio \\ 9.0Exp \\ проектами\].  
+ Следующие примеры расположены в разделе [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects] реестра.  
   
-## Пример  
+## <a name="example"></a>Пример  
   
 ```  
 {FE3BBBB6-72D5-11d2-9ACE-00C04F79A2A4} (The CLSID for Enterprise Projects)  
 \{FE3BBBB6-72D5-11d2-9ACE-00C04F79A2A4}\AddItemTemplates\TemplateDirs\ {ACEF4EB2-57CF-11D2-96F4-000000000000}\1 (CLSID for projects of this type)  
-   @="#7"  
-   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPrj\\FigPrjProjects"  
-   "SortPriority"=dword:00000029  
-   "NewProjectDialogOnly"=dword:00000000  
+   @="#7"  
+   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPrj\\FigPrjProjects"  
+   "SortPriority"=dword:00000029  
+   "NewProjectDialogOnly"=dword:00000000  
 ```  
   
 |Имя|Тип|Данные|Описание|  
-|---------|---------|------------|--------------|  
-|`@`|REG\_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|Идентификатор ресурса для новых шаблонов проектов.|  
-|`TemplatesDir`|REG\_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|По умолчанию путь для проектов зарегистрированного типа проекта.|  
-|`SortPriority`|REG\_DWORD|`41 (x29)`|Задает порядок сортировки проектов, перечисленных в диалоговом окне мастера проектов.|  
-|`NewProjectDialogOnly`|REG\_DWORD|`0`|0 указывает на то, что проекты данного типа отображаются только в диалоговом окне новый проект.|  
+|----------|----------|----------|-----------------|  
+|`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|Идентификатор ресурса для шаблонов новый проект.|  
+|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Путь для проектов типа зарегистрированного проекта по умолчанию.|  
+|`SortPriority`|REG_DWORD|`41 (x29)`|Задает порядок проекты, которые отображаются в окне мастера новых проектов сортировки.|  
+|`NewProjectDialogOnly`|REG_DWORD|`0`|0 указывает, что проекты этого типа отображаются только в диалоговом окне нового проекта.|  
   
- Все следующие примеры находятся в реестре с ключом \[HKEY\_LOCAL\_MACHINE \\ software \\ microsoft \\ VisualStudio \\ 9.0Exp \\ проектами\].  
+ Следующие примеры расположены в разделе [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects] реестра.  
   
-## Пример  
+## <a name="example"></a>Пример  
   
 ```  
 \{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3} (CLSID for Miscellaneous Files projects)  
-   @="Miscellaneous Files Project"  
+   @="Miscellaneous Files Project"  
 \AddItemTemplates\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1  
-                                 (CLSID for Figures Project projects)  
-   @="#6"  
-   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"  
-   "SortPriority"=dword:00000064  
+                                 (CLSID for Figures Project projects)  
+   @="#6"  
+   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"  
+   "SortPriority"=dword:00000064  
 ```  
   
 |Имя|Тип|Данные|Описание|  
-|---------|---------|------------|--------------|  
-|`@`|REG\_SZ|None|Значение по умолчанию указывает на то, что следующие записи для прочих файлов проектов записи.|  
-|`@`|REG\_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Значение идентификатора ресурса для файлов шаблонов добавить новые элементы.|  
-|`TemplatesDir`|REG\_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|По умолчанию путь элементов, которые будут отображаться в **Добавление нового элемента** диалоговое окно.|  
-|`SortPriority`|REG\_DWORD|`100 (vcprx64)`|Задает порядок сортировки для отображения в узле дерева **Добавление нового элемента** диалоговое окно.|  
+|----------|----------|----------|-----------------|  
+|`@`|REG_SZ|Нет|Значение по умолчанию, которое показывает, что следующие записи в операциях, прочие файлы проектов.|  
+|`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Значение идентификатора ресурсов для файлов шаблонов Добавление новых элементов.|  
+|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Путь по умолчанию элементов, которые будут отображаться в **Добавление нового элемента** диалоговое окно.|  
+|`SortPriority`|REG_DWORD|`100 (vcprx64)`|Устанавливает порядок сортировки для отображения в узле дерева **Добавление нового элемента** диалоговое окно.|  
   
- В следующем примере найден в реестре с ключом \[HKEY\_LOCAL\_MACHINE \\ software \\ microsoft \\ VisualStudio \\ 9.0Exp \\ меню\].  
+ Следующий пример находится в разделе [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Menus] реестра.  
   
-## Пример  
+## <a name="example"></a>Пример  
   
 ```  
 "{ACEF4EB2-57CF-11D2-96F4-000000000000}"=",1000,1"  
 ```  
   
- Точки входа меню интегрированная среда разработки к ресурсу, использованный для извлечения сведений о меню.  Когда эти данные будут объединены в базу данных, меню, один и тот же ключ будет добавлен в разделе MenusMerged реестра.  VSPackage ничего не должен изменять непосредственно под разделом MenusMerged.  в поле данных в следующей таблице, 3 запятая\-отделять\-поля.  Первое поле указывает полный путь к файлу ресурсов меню:  
+ Элемент меню интегрированной среды разработки указывает на ресурс, используемый для получения сведения о меню. При слиянии данных в базу данных меню тот же ключ будет добавлена в разделе MenusMerged реестра. Пакет VSPackage не следует изменять что-либо в разделе MenusMerged напрямую. Поля данных в таблице ниже показаны три разделителями запятыми поля. Первое поле определяет полный путь файла ресурсов меню:  
   
--   Если первое поле пропущено, то ресурс меню загружен из спутникового библиотеки DLL заданного GUID VSPackage.  
+-   Если первое поле указан, ресурс меню загружается из вспомогательной библиотеки DLL с идентификатором GUID пакета VSPackage.  
   
- Второе поле указывает идентификатор ресурса меню типа CTMENU:  
+ Второе поле определяет идентификатор ресурса меню типа CTMENU:  
   
--   Если указан идентификатор ресурса и путь к файлу указан первым параметром, ресурс меню загружен из полного пути к файлу.  
+-   Если указан идентификатор ресурса и путь к файлу указан первым параметром, ресурс меню загружается из полный путь к файлу.  
   
--   Если идентификатор ресурса предоставлено, но путь к файлу отсутствует, ресурс меню загружен из спутникового библиотеки DLL.  
+-   Если указан идентификатор ресурса, но не является путь к файлу, этот ресурс загружается из вспомогательной библиотеки DLL.  
   
--   Если полный путь к файлу указан и идентификатор ресурса не указан, то предполагается, что файл, загружаемый файл настройки по порядку.  
+-   Если предоставляется полный путь к файлу, а указан идентификатор ресурса, загружаемый файл ожидается CTO-файлов.  
   
- Последнее поле указывает номер версии для ресурса CTMENU.  Можно снова путем слияния меню изменить номер версии.  
-  
-|Имя|Тип|Данные|Описание|  
-|---------|---------|------------|--------------|  
-|%CLSID\_Package%|REG\_SZ|`,1000,1`|Ресурс для получения сведений о меню.|  
-  
- Все следующие примеры находятся в реестре с ключом \[HKEY\_LOCAL\_MACHINE \\ software \\ microsoft \\ VisualStudio \\ 9.0Exp \\ NewProjectTemplates\].  
-  
-```  
-\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1                (CLSID for Figures Project projects)  
-   @="#7"  
-   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\FigPrjProjects"  
-   "SortPriority"=dword:00000029  
-   "NewProjectDialogOnly"=dword:00000000  
-```  
+ Последнее поле определяет номер версии для ресурса CTMENU. Можно объединить меню снова путем изменения номера версии.  
   
 |Имя|Тип|Данные|Описание|  
-|---------|---------|------------|--------------|  
-|`@`|REG\_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|Значение идентификатора ресурса для шаблонов проекта новых диаграмм.|  
-|`TemplatesDir`|REG\_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|По умолчанию путь нового каталога проекта.  Элементы в этом каталоге будет отображаться на **Мастер создания проектов** диалоговое окно.|  
-|`SortPriority`|REG\_DWORD|`41 (x29)`|Устанавливает порядок, в котором будут отображены в узле дерева проекты **Создать проект** диалоговое окно.|  
-|`NewProjectDialogOnly`|REG\_DWORD|`0`|0 указывает на то, что проекты данного типа отображаются только в **Создать проект** диалоговое окно.|  
+|----------|----------|----------|-----------------|  
+|% CLSID_Package %|REG_SZ|`,1000,1`|Ресурс, чтобы получить сведения о меню.|  
   
- В следующем примере найден в реестре с ключом \[HKEY\_LOCAL\_MACHINE \\ software \\ microsoft \\ VisualStudio \\ 9.0Exp \\ InstalledProducts\].  
+ Следующие примеры расположены в разделе [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates] реестра.  
+  
+```  
+\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1                (CLSID for Figures Project projects)  
+   @="#7"  
+   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\FigPrjProjects"  
+   "SortPriority"=dword:00000029  
+   "NewProjectDialogOnly"=dword:00000000  
+```  
+  
+|Имя|Тип|Данные|Описание|  
+|----------|----------|----------|-----------------|  
+|`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|Значение идентификатора ресурса для шаблонов проектов новых фигур.|  
+|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|По умолчанию путь к каталогу для новых проектов. Элементы в этом каталоге будет отображаться в **мастера создания проектов** диалоговое окно.|  
+|`SortPriority`|REG_DWORD|`41 (x29)`|Устанавливает порядок, в котором проектов будет отображаться в узле дерева **новый проект** диалоговое окно.|  
+|`NewProjectDialogOnly`|REG_DWORD|`0`|0 указывает, что отображаются только в проектах этого типа **новый проект** диалоговое окно.|  
+  
+ Следующий пример находится в разделе [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\InstalledProducts] реестра.  
   
 ```  
 \FiguresProductSample  
-   "Package"="{ACEF4EB2-57CF-11D2-96F4-000000000000}"  
-   "UseInterface"=dword:00000001  
+   "Package"="{ACEF4EB2-57CF-11D2-96F4-000000000000}"  
+   "UseInterface"=dword:00000001  
 ```  
   
 |Имя|Тип|Данные|Описание|  
-|---------|---------|------------|--------------|  
-|`Package`|REG\_SZ|`%CLSID_Package%`|Идентификатор класса зарегистрированного VSPackage.|  
-|`UseInterface`|REG\_DWORD|`1`|1 указывает на то, что пользовательский интерфейс будет использоваться для взаимодействия с этим проектом.  0 указывает на то, что интерфейс пользовательского интерфейса.|  
+|----------|----------|----------|-----------------|  
+|`Package`|REG_SZ|`%CLSID_Package%`|Идентификатор класса зарегистрированного VSPackage.|  
+|`UseInterface`|REG_DWORD|`1`|1 указывает, что пользовательский Интерфейс будет использоваться для взаимодействия с этим проектом. 0 указывает, что пользовательского интерфейса, не существует.|  
   
- Файлы The.vsz, которые управляют новые типы проектов часто содержат запись RELATIVE\_PATH.  Данный путь задается относительно пути, заданному в разделе \\ запись ProductDir типа проекта в следующем ключе установки:  
+ The.vsz файлы, которые управляют новых типов проектов часто содержит операции RELATIVE_PATH. Данный путь задается относительно пути, указанные в разделе \ProductDir запись типа проекта в следующий раздел установки:  
   
- HKEY\_LOCAL\_MACHINE \\ software \\ microsoft \\ VisualStudio \\ 7.0Exp \\ setup  
+ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup  
   
- Например, шаблоны проектов .NET Framework предприятия добавить следующие записи реестра:  
+ Например шаблоны проектов Enterprise Frameworks добавьте следующие параметры реестра:  
   
- HKEY\_LOCAL\_MACHINE \\ software \\ microsoft \\ VisualStudio \\ 7.0Exp \\ setup \\ EF \\ ProductDir \= " C:\\Program Files\\Microsoft \\ Visual Studio \\ EnterpriseFrameworks  
+ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup\EF\ProductDir = C:\Program Files\Microsoft Visual Studio\EnterpriseFrameworks\  
   
- Это означает если включить запись PROJECT\_TYPE\=EF в файле .vsz, то среда выполняется поиск файлов vsz в каталоге ProductDir указанном выше.  
+ Это означает, что если вы включите PROJECT_TYPE = EF запись в файле .vsz находит среды, ваш .vsz файлы в каталоге ProductDir, указанном ранее.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Контрольный список: Создание новых типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Элементы модели проекта](../../extensibility/internals/elements-of-a-project-model.md)   
- [Создание экземпляров проекта с помощью фабрик проекта](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
+ [Создание экземпляров проекта с помощью фабрик проектов](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

@@ -1,71 +1,71 @@
 ---
-title: "IDebugProperty3::SetValueAsStringWithError | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProperty3::SetValueAsStringWithError"
-helpviewer_keywords: 
-  - "IDebugProperty3::SetValueAsStringWithError"
+title: "IDebugProperty3::SetValueAsStringWithError | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProperty3::SetValueAsStringWithError
+helpviewer_keywords: IDebugProperty3::SetValueAsStringWithError
 ms.assetid: b378368f-4a45-4b2f-8e3d-3bff7a18ab17
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d713d4d29b0e7a0e51f998efe460ae75a8dbd0b6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProperty3::SetValueAsStringWithError
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Устанавливает значение данного свойства и возвращает сообщение об ошибке, если это необходимо.  
+# <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
+Задает значение этого свойства и возвращает сообщение об ошибке при необходимости.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-HRESULT SetValueAsStringWithError(  
-   LPCOLESTR pszValue,  
-   DWORD     dwRadix,  
-   DWORD     dwTimeout,  
-   BSTR*     errorString  
+HRESULT SetValueAsStringWithError(  
+   LPCOLESTR pszValue,  
+   DWORD     dwRadix,  
+   DWORD     dwTimeout,  
+   BSTR*     errorString  
 );  
 ```  
   
-```c#  
-int SetValueAsStringWithError(  
-   string     pszValue,  
-   uint       dwRadix,  
-   uint       dwTimeout,  
-   out string errorString  
+```csharp  
+int SetValueAsStringWithError(  
+   string     pszValue,  
+   uint       dwRadix,  
+   uint       dwTimeout,  
+   out string errorString  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pszValue`  
- \[in\] значение, задаваемое.  
+ [in] Задаваемое значение.  
   
  `dwRadix`  
- \[in\] корень значения.  
+ [in] Основание системы счисления задаваемое значение.  
   
  `dwTimeout`  
- \[in\] продолжительность времени ожидания значение для установить \(`INFINITE` означает навсегда ожидания\).  
+ [in] Время ожидания задаваемое значение (`INFINITE` означает ждать бесконечно).  
   
  `errorString`  
- \[out\] если возникла ошибка, то это значение параметра содержит причину ошибки.  
+ [out] Если возникла ошибка при задании значения, это содержит причину сбоя.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Входящее значение может быть выражением, которое необходимо вычислить.  
+## <a name="remarks"></a>Примечания  
+ Входящее значение может быть вычисляемое выражение.  
   
-## Пример  
- В следующем примере показано, как реализовать этот метод, a **CProperty** объект, предоставляющий  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) интерфейс.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как реализовать этот метод для **CProperty** объекта, который предоставляет [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) интерфейса.  
   
-```cpp#  
+```cpp  
 HRESULT CProperty::SetValueAsStringWithError(   
     LPCOLESTR in_szValue,  
     DWORD in_RADIX,  
@@ -167,5 +167,5 @@ HRESULT CProperty::SetValueAsStringWithError(
 }  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

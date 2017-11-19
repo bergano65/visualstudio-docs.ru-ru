@@ -1,53 +1,52 @@
 ---
-title: "IDiaSymbol::get_thunkOrdinal | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_thunkOrdinal - метод"
+title: "IDiaSymbol::get_thunkOrdinal | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_thunkOrdinal method
 ms.assetid: 4b28d78a-1974-4d8a-8bb7-781bf630f2f4
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d9eb23f90ea960f927ab8561ff215968134bc30e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_thunkOrdinal
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает тип преобразователя функции.  
+# <a name="idiasymbolgetthunkordinal"></a>IDiaSymbol::get_thunkOrdinal
+Возвращает преобразователь типа функции.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT get_thunkOrdinal (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_thunkOrdinal (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pRetVal`  
- \[out\] возвращает значение [Перечисление THUNK\_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md) перечисление, определяющее тип преобразователя функции.  
+ [out] Возвращает значение из [thunk_ordinal-перечисление](../../debugger/debug-interface-access/thunk-ordinal.md) перечисления, указывающее тип функции преобразователя.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает  `S_FALSE` или код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение  `S_FALSE` означает, что свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
   
-## Заметки  
- Это свойство допустимо только в том случае, если символ как a [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) значение   `SymTagThunk`.  
+## <a name="remarks"></a>Примечания  
+ Данное свойство допустимо только тогда, когда символ, представленный [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) значение `SymTagThunk`.  
   
- "Type" часть кода, который выполняет преобразование между 32 пробелом адреса памяти \(также известной как плоское адресное пространство\) и шестнадцатиразрядным местом для адреса \(называемый поделенное на сегменты адресное пространство\).  
+ «Преобразователь» — это фрагмент кода, который выполняет преобразование между памяти 32-разрядное адресное пространство (также известный как плоский пространства имен) и 16-разрядном адресном пространстве, (известный как сегментированное адресное пространство).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Перечисление THUNK\_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md)   
+ [Перечисление THUNK_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md)   
  [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

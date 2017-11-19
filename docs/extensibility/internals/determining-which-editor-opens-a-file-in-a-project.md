@@ -1,11 +1,10 @@
 ---
-title: "Определение того, какой редактор открывает файл в проект | Документы Microsoft"
+title: "Определение редактор открывает файл в проекте | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,52 +13,39 @@ helpviewer_keywords:
 - project types, determining which editor opens a file
 - persistence, determining which editor opens a file
 ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: ac16b6f4d8429d328cfd76b8b02cd1620f4a4294
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: fc0105b56f0a33a86953c95e3d36f5d7f00bcd37
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>Определение редактора откроется файл в проекте
-При открытии файла в проекте среды проходит процесс опроса, в конечном счете открыть соответствующий редактор или конструктор для этого файла. Начальный используемой среде одинакова для стандартных и пользовательских редакторов. В среде используются различные условия при опросе редактор для открытия файла и VSPackage необходимо координировать со средой во время этого процесса.  
+При открытии файла в проекте среда переходит в процессе опроса, в конечном итоге открыть соответствующий редактор или конструктор для этого файла. Для стандартных и пользовательских редакторов начальной процедуры, используемые средой одинаково. В среде используются различные критерии при опросе редактор для открытия файла и VSPackage необходимо координировать со средой во время этого процесса.  
   
- Например, когда пользователь выбирает **откройте** из **файл** меню и затем выбирает `filename`.rtf (или любой другой файл с расширением .rtf), среда вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>реализацию для каждого проекта, в конечном счете перебирать все экземпляры проекта в решении.</xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> Проекты возвращают набор флагов, определяющих утверждения документа по приоритету. С помощью наивысший приоритет, среда вызывает соответствующий <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>метод.</xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> Дополнительные сведения о процессе опроса [Добавление проекта и шаблоны элементов проекта](../../extensibility/internals/adding-project-and-project-item-templates.md).  
+ Например, когда пользователь выбирает **откройте** из **файл** меню и затем выбирает `filename`.rtf (или любой другой файл с расширением .rtf), среда вызывает метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> Реализация для каждого проекта, в конечном итоге перебирать все экземпляры проекта в решении. Проекты возвращают набор флагов, определяющих утверждений в документе по приоритету. С помощью самый высокий приоритет, среда вызывает соответствующий <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> метод. Дополнительные сведения о процессе опроса [Добавление проекта и шаблоны элементов проекта](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
- Проект прочих файлов утверждений все файлы, которые не требуются в других проектах. Таким образом, пользовательских редакторов можно открывать документы, прежде чем стандартные редакторы открыть их. Если проект прочих файлов утверждений файл, среда вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>метод, чтобы открыть файл с помощью стандартного редактора.</xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> Среда проверяет свой внутренний список зарегистрированных редакторов ту, которая обрабатывает RTF-файлы. Этот список находится в в следующий раздел реестра:  
+ Прочие файлы проекта утверждений все файлы, которые не требуются в других проектах. Таким образом, пользовательских редакторов можно открывать документы, прежде чем открыть стандартные редакторы их. Если проекта прочих файлов утверждений файл, среда вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метод, чтобы открыть файл с помощью стандартного редактора. Среда проверяет свой внутренний список зарегистрированных редакторы ту, которая обрабатывает RTF-файлы. Этот список находится в в следующий раздел реестра:  
   
- [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<`version`настроек \Editors\\{`editor factory guid`настроек} \Extensions]  
+ [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<`version`> \Editors\\{<`editor factory guid`>} \Extensions]  
   
- Среду также проверяет идентификаторы класса в ключе HKEY_CLASSES_ROOT\CLSID для объектов, имеющих подраздел DocObject. Если расширение обнаруживается, встроенной версии приложения, например Microsoft Word создается на месте в Visual Studio. Эти объекты документа должен быть составные файлы, которые реализуют <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage>должны реализовывать интерфейс или объект <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>интерфейса.</xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> </xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage>  
+ Среда также проверяет идентификаторы класса в ключе HKEY_CLASSES_ROOT\CLSID для любых объектов, имеющих подпараметр DocObject. Если обнаруживается расширение файла, встроенной версии приложения, например Microsoft Word, будет создан на месте в Visual Studio. Эти объекты документа должен быть составные файлы, которые реализуют <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> должен реализовывать интерфейс или объект <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> интерфейса.  
   
- Если нет фабрика редактора для RTF-файлы в реестре, то среды выглядит в разделе HKEY_CLASSES_ROOT \\ключ .rtf и открывает редактор указанный там. Если расширение файла не найден в разделе HKEY_CLASSES_ROOT, в среде используется текстовый редактор Visual Studio core для открытия файла, если он представляет собой текстовый файл.  
+ Если отсутствует фабрика редактора для RTF-файлы в реестре, а затем ищет среды в раздел HKEY_CLASSES_ROOT \\.rtf ключ и открывает редактор указанный существует. Если расширение файла не найден в раздел HKEY_CLASSES_ROOT, в среде используется текстовый редактор основных компонентов Visual Studio откройте файл, если он является текстовым файлом.  
   
- В случае сбоя основной текстовый редактор которого происходит, если файл не является текстовым файлом, затем в среде используется его двоичный редактор для файла.  
+ Если происходит сбой основной текстовый редактор, который происходит, если файл не является текстовый файл, затем в среде используется его двоичный редактор для файла.  
   
- Если среде найти редактор для расширения .rtf в его реестр, загружает VSPackage, который реализует этот редактор фабрики. Среда вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>метод на новый VSPackage.</xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> Вызовы VSPackage `QueryService` для `SID_SVsRegistorEditor`, с использованием <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A>метод для регистрации фабрики редактора в среде.</xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A>  
+ Если среде найти редактор для расширения .rtf в его реестра, он загружает пакет VSPackage, реализующий этот редактор фабрики. Среда вызывает метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> метод для нового пакета VSPackage. Вызовы VSPackage `QueryService` для `SID_SVsRegistorEditor`, с использованием <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> метода для регистрации фабрики редакторов в среде.  
   
- Теперь среды повторно проверяет свой внутренний список зарегистрированных редакторы найти фабрику зарегистрированный редактор для RTF-файлы. Среда вызывает вашу реализацию <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, передавая файл имя и представление создаваемого типа.</xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>  
+ Теперь среда повторно проверяет свой внутренний список зарегистрированных редакторы для поиска фабрики редакторов вновь зарегистрированного RTF-файлы. Среда вызывает вашу реализацию <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> метод, передавая имя и представление тип файла для создания.  
   
 ## <a name="see-also"></a>См. также  
- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat></xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>   
- <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage></xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage>   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A></xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A></xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A></xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A></xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>
+ <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>   
+ <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage>   
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>   
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>   
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>   
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>

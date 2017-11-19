@@ -1,64 +1,64 @@
 ---
-title: "IDebugThread2::SetNextStatement | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugThread2::SetNextStatement"
-helpviewer_keywords: 
-  - "IDebugThread2::SetNextStatement"
+title: "IDebugThread2::SetNextStatement | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugThread2::SetNextStatement
+helpviewer_keywords: IDebugThread2::SetNextStatement
 ms.assetid: 9e2834dd-4ecf-45af-8e6c-f9318ebdac06
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6dd345fe298af42a69ac076bf92de7df9db82ec2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugThread2::SetNextStatement
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Задает текущий указатель инструкций к заданному контексту кода.  
+# <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
+Задает контекст данного кода текущего указателя инструкций.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT SetNextStatement (   
-   IDebugStackFrame2*  pStackFrame,  
-   IDebugCodeContext2* pCodeContext  
+```cpp  
+HRESULT SetNextStatement (   
+   IDebugStackFrame2*  pStackFrame,  
+   IDebugCodeContext2* pCodeContext  
 );  
 ```  
   
-```c#  
-int SetNextStatement (   
-   IDebugStackFrame2  pStackFrame,  
-   IDebugCodeContext2 pCodeContext  
+```csharp  
+int SetNextStatement (   
+   IDebugStackFrame2  pStackFrame,  
+   IDebugCodeContext2 pCodeContext  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pStackFrame`  
- Зарезервировано для использования в будущем. установите в значение NULL.  
+ Зарезервировано для будущего использования; присвоено значение null.  
   
  `pCodeContext`  
- \[in\] IDebugCodeContext2 объект, описывающий расположение кода, который выполняется, и его контекст.  
+ [in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , описывающий расположение кода будет выполнена и его контекста.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  В следующей таблице приведены другие возможные значения.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Ниже приведены другие возможные значения.  
   
 |Значение|Описание|  
-|--------------|--------------|  
-|\_SET\_NEXT\_STATEMENT\_ON\_NONLEAF\_FRAME НЕ E\_CAN|Следующий оператор не может находиться в кадре стека более глубоком в стеке кадра.|  
-|\_SETIP\_TO\_DIFFERENT\_FUNCTION НЕ E\_CAN|Следующий оператор не связана с одним кадром в стеке.|  
-|\_SET\_NEXT\_STATEMENT\_ON\_EXCEPTION НЕ E\_CAN|Некоторые обработчики отладки не может установить следующей выписку после исключения.|  
+|-----------|-----------------|  
+|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|Следующий оператор не может быть в кадре стека глубже на кадра стека.|  
+|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|Следующий оператор не связан с любыми кадрами стека.|  
+|E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|Некоторые отладчики не удается задать следующий оператор после исключения.|  
   
-## Заметки  
- Указатель инструкции отображаются следующие инструкции или выписку выполнения.  Этот метод используется, чтобы повторить линию исходного кода или принудительно выполнить запрос, чтобы продолжить в другую функцию, например.  
+## <a name="remarks"></a>Примечания  
+ Указатель инструкции указывает Далее инструкцию или инструкции для выполнения. Этот метод используется попытки строка исходного кода или для принудительного выполнения продолжают выполняться в другой функции, например.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

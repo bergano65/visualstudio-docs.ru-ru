@@ -1,53 +1,52 @@
 ---
-title: "IDiaStackWalker | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackWalker - интерфейс"
+title: "IDiaStackWalker | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackWalker interface
 ms.assetid: 4a61a22a-9cf8-4ea1-9e6e-b42f96872d40
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e651c8ba8bee152121b96b14613144768a56cc2f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackWalker
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Предоставляет методы, чтобы выполнить проверку стека, используя информацию в файле pdb.  
+# <a name="idiastackwalker"></a>IDiaStackWalker
+Предоставляет методы, чтобы сделать стек стека, используя сведения в PDB-файл.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IDiaStackWalker: IUnknown  
 ```  
   
-## Методы в том порядке Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDiaStackWalker`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Извлекает перечислитель кадра стека для платформ x86.|  
-|[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|Извлекает перечислитель кадра стека для указанного типа платформы.|  
+|------------|-----------------|  
+|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Извлекает перечислитель кадр стека для x86 платформы.|  
+|[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|Извлекает перечислитель кадр стека для типа конкретную платформу.|  
   
-## Заметки  
- Этот интерфейс используется для получения списка кадров стека для загруженного модуля.  Каждый из методов передаются [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) объект \(реализованный клиентским приложением\), который предоставляет необходимые сведения для создания списка кадров стека.  
+## <a name="remarks"></a>Примечания  
+ Этот интерфейс используется для получения списка кадров стека для загруженного модуля. Каждый из методов передается [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) object (реализованный в клиентском приложении), который предоставляет сведения, необходимые для создания списка кадров стека.  
   
-## Замечания для вызывающих объектов  
- Этот интерфейс полученного вызовом метода `CoCreateInstance` метод с идентификатором класса  `CLSID_DiaStackWalker` и идентификатор интерфейса  `IID_IDiaStackWalker`.  Примере показано, как получить этот интерфейс.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Этот интерфейс можно получить, вызвав `CoCreateInstance` метод с кодом `CLSID_DiaStackWalker` и идентификатор интерфейса `IID_IDiaStackWalker`. В примере показано, как получить этот интерфейс.  
   
-## Пример  
- В этом примере показано, как получить `IDiaStackWalker` интерфейс.  
+## <a name="example"></a>Пример  
+ В этом примере показано, как получить `IDiaStackWalker` интерфейса.  
   
-```cpp#  
+```C++  
   
       IDiaStackWalker* pStackWalker;  
 HRESULT hr = CoCreateInstance(CLSID_DiaStackWalker,  
@@ -61,13 +60,13 @@ if (FAILED(hr))
 }  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: Dia2.h  
   
- Библиотеки: diaguids.lib  
+ Библиотека: diaguids.lib  
   
- Библиотеки DLL: msdia80.dll  
+ Библиотека DLL: msdia80.dll  
   
-## См. также  
- [Интерфейсы \(SDK для доступа к интерфейсу отладки\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>См. также  
+ [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

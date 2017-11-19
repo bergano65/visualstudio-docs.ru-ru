@@ -1,0 +1,42 @@
+---
+title: "IDiaEnumDebugStreams::get__NewEnum | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumDebugStreams::get__NewEnum method
+ms.assetid: 972372ff-abfc-4987-a302-7788fab90348
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7675a734375594276449b3b87d7662fa7554e6e9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
+---
+# <a name="idiaenumdebugstreamsgetnewenum"></a>IDiaEnumDebugStreams::get__NewEnum
+Извлекает <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> версии этот перечислитель.  
+  
+## <a name="syntax"></a>Синтаксис  
+  
+```C++  
+HRESULT get__NewEnum (   
+   IUnknown** pRetVal  
+);  
+```  
+  
+#### <a name="parameters"></a>Параметры  
+ pRetVal  
+ [out] Возвращает `IUnknown` интерфейс, который представляет <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> версии этот перечислитель.  
+  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
+  
+## <a name="see-also"></a>См. также  
+ [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

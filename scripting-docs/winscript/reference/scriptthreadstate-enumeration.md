@@ -1,27 +1,30 @@
 ---
-title: "Перечисление SCRIPTTHREADSTATE | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Перечисление SCRIPTTHREADSTATE | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: SCRIPTTHREADSTATE
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "SCRIPTTHREADSTATE — перечисление"
+helpviewer_keywords: SCRIPTTHREADSTATE enum
 ms.assetid: 975ec66b-c095-40ac-8ba9-631adb97b589
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9e18cc6f5f2afb1dcea6835983f69f6a6f7b9280
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Перечисление SCRIPTTHREADSTATE
-Задает состояние потока в обработчике скриптов.  Это перечисление используется методом [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md).  
+# <a name="scriptthreadstate-enumeration"></a>Перечисление SCRIPTTHREADSTATE
+Указывает состояние потока в обработчик сценариев. Это перечисление используется методом [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md) метод.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 typedef enum tagSCRIPTTHREADSTATE {  
@@ -30,12 +33,12 @@ typedef enum tagSCRIPTTHREADSTATE {
 } SCRIPTTHREADSTATE;  
 ```  
   
-## Значения перечисления  
+## <a name="enumeration-values"></a>Значения перечисления  
   
 |||  
 |-|-|  
-|SCRIPTTHREADSTATE\_NOTINSCRIPT|Указанный поток в настоящее время не поддерживает написанное событие, обрабатывает сразу исполненное текст скрипта или не запускает макрос скрипта.|  
-|SCRIPTTHREADSTATE\_RUNNING|Указанный поток активно ведет написанное событие, обрабатывает сразу исполненное текста сценария и запускает макрос скрипта.|  
+|SCRIPTTHREADSTATE_NOTINSCRIPT|Указанный поток в настоящее время не обслуживания сценариев событий, текст сценария обработки немедленно выполняется, или используется макрос сценария.|  
+|SCRIPTTHREADSTATE_RUNNING|Указанный поток активно обслуживания сценариев событий, текст сценария обработки немедленно выполняется, или используется макрос скрипта.|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Константы, перечисления и коды ошибок активных скриптов](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

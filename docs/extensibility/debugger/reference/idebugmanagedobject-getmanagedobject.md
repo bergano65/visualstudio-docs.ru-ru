@@ -1,51 +1,51 @@
 ---
-title: "IDebugManagedObject::GetManagedObject | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugManagedObject::GetManagedObject"
-helpviewer_keywords: 
-  - "Метод IDebugManagedObject::GetManagedObject"
+title: "IDebugManagedObject::GetManagedObject | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugManagedObject::GetManagedObject
+helpviewer_keywords: IDebugManagedObject::GetManagedObject method
 ms.assetid: 6abe1402-6aad-41e6-8ec1-ae12d5945992
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: cedcd5801d37256bcb419f4b4e6fb5317f0aedbf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugManagedObject::GetManagedObject
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Возвращает интерфейс, представляющий управляемый объект.  
+# <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
+Возвращает интерфейс, который представляет управляемый объект.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetManagedObject(   
-   IUnknown** ppManagedObject  
+```cpp  
+HRESULT GetManagedObject(   
+   IUnknown** ppManagedObject  
 );  
 ```  
   
-```cpp#  
+```cpp  
 int GetManagedObject(  
-   out object ppManagedObject  
+   out object ppManagedObject  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppManagedObject`  
- \[out\] возвращает интерфейс, представляющий управляемый объект.  
+ [out] Возвращает интерфейс, который представляет управляемый объект.  
   
-## Возвращаемое значение  
- В случае успеха возвращает значение S\_OK; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Интерфейс, возвращаемый из этого метода можно запросить для любого интерфейса, реализованного управляемым классом, позволяя его методы для вызова.  
+## <a name="remarks"></a>Примечания  
+ Можно запрашивать любой интерфейс, реализуемый управляемого класса, что позволяет вызывать его методы интерфейса, возвращаемый этим методом.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

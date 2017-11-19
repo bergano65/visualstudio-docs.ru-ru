@@ -1,54 +1,55 @@
 ---
-title: "Метод apply (Function) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "apply"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Apply - метод"
+title: "Метод Apply (Function) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: apply
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: Apply method
 ms.assetid: b36df78e-b14b-46ca-b5cb-de752d80f40a
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5a06a37006937b07214bf5a314d5151c3b658acf
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод apply (Function) (JavaScript)
-Вызывает функцию, подставляя указанный объект вместо значения `this` функции и указанный массив вместо аргументов функции.  
+# <a name="apply-method-function-javascript"></a>Метод apply (Function) (JavaScript)
+Вызывает функцию, заменив указанного объекта для `this` значение функции и заданного массива аргументов функции.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 apply([thisObj[,argArray]])  
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `thisObj`  
- Необязательный.  Объект для использования в качестве объекта `this`.  
+ Необязательно. Объект для использования в качестве `this` объекта.  
   
  `argArray`  
- Необязательный.  Набор аргументов для передачи в функцию.  
+ Необязательно. Набор аргументов для передачи в функцию.  
   
-## Заметки  
- Если `argArray` не является допустимым объектом, то возникает ошибка "Ожидался объект".  
+## <a name="remarks"></a>Примечания  
+ Если `argArray` не является допустимым объектом, и возникает ошибка «Предполагается наличие объекта».  
   
- Если ни один из аргументов `argArray` и `thisObj` не указан, в качестве объекта `thisObj` используется исходный объект `this`, которому не передаются никакие аргументы.  
+ Если ни одна из `argArray` , ни `thisObj` предоставляются, исходный `this` используется в качестве `thisObj` и аргументы не передаются.  
   
-## Пример  
- В следующем примере кода показано использование метода apply.  
+## <a name="example"></a>Пример  
+ Ниже показано, как метод apply.  
   
-```javascript  
+```JavaScript  
 function callMe(arg1, arg2){  
     var s = "";  
   
@@ -81,8 +82,8 @@ document.write(callMe.apply(3, [ 4, 5 ]));
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Объект Function](../../javascript/reference/function-object-javascript.md)

@@ -1,56 +1,59 @@
 ---
-title: "Отладка ASP.NET: системные требования | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "отладка веб-приложений ASP.NET, требования к системе"
-  - "отладка веб-приложений ASP.NET, требования безопасности"
+title: "Отладка ASP.NET: Системные требования | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugging ASP.NET Web applications, system requirements
+- debugging ASP.NET Web applications, security requirements
 ms.assetid: 7810b9b2-debf-4271-8fc7-1df031123255
-caps.latest.revision: 38
-caps.handback.revision: 38
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "38"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 30ac9c68104423c559ad3bfa8712426b67a4c734
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Отладка ASP.NET: системные требования
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-В этом разделе описаны требования к программному обеспечению и безопасности для сценариев локальной и удаленной отладки [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
+# <a name="aspnet-debugging-system-requirements"></a>Отладка ASP.NET: системные требования
+В этом разделе описаны требования к программному обеспечению и безопасности для сценариев локальной и удаленной отладки [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] .  
   
--   При локальной отладке [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и веб\-приложение выполняются на одном и том же компьютере. Существуют две версии этого сценария:  
+-   При локальной отладке [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и веб-приложение выполняются на одном и том же компьютере. Существуют две версии этого сценария:  
   
     -   код [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] располагается в файловой системе;  
   
-    -   код [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] располагается на веб\-сайте служб IIS.  
+    -   код [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] располагается на веб-сайте служб IIS.  
   
--   При удаленной отладке [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] выполняется на клиентском компьютере и используется для отладки веб\-приложения, работающего на удаленном \(серверном\) компьютере.  
+-   При удаленной отладке [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] выполняется на клиентском компьютере и используется для отладки веб-приложения, работающего на удаленном (серверном) компьютере.  
   
-## Требования безопасности  
+## <a name="security-requirements"></a>Требования безопасности  
  Для удаленной отладки локальный и удаленный компьютеры должны входить в домен или рабочую группу.  
   
- Чтобы выполнить отладку рабочего процесса [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], необходимо иметь разрешение на отладку этого процесса. По умолчанию приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] выполняются от имени учетной записи пользователя **ASPNET**. Если рабочий процесс выполняется от имени учетной записи **ASPNET** или **NETWORK SERVICE**, для его отладки необходимо иметь права администратора.  
+ Для отладки [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] рабочего процесса (размещаемую пула приложений), необходимо иметь разрешение на отладку этого процесса. По умолчанию [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] приложения до IIS 6.0 работают в **ASPNET** пользователя. В службах IIS 6.0 и IIS 7.0 **СЕТЕВОЙ службы** учетная запись используется по умолчанию. Если рабочий процесс выполняется от имени учетной записи **ASPNET**или **NETWORK SERVICE**, для его отладки необходимо иметь права администратора.
+
+ > [!IMPORTANT]
+ > Начиная с Windows Server 2008 R2, мы рекомендуем использовать [ApplicationPoolIdentity](https://docs.microsoft.com/en-us/iis/manage/configuring-security/application-pool-identities) с удостоверением для каждого пула приложений.
   
- Имя рабочего процесса [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] варьируется в зависимости от сценария отладки и версии служб IIS. Дополнительные сведения см. в разделе [Практическое руководство. Поиск имени процесса ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
+ Имя рабочего процесса [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] варьируется в зависимости от сценария отладки и версии служб IIS. Дополнительные сведения см. в разделе [How to: Find the Name of the ASP.NET Process](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   
- Вы можете изменить учетную запись пользователя, от имени которой должен выполняться рабочий процесс [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Для этого следует внести соответствующие изменения в файл machine.config на сервере, на котором запускаются службы IIS. Оптимальный способ сделать это — с помощью **Диспетчера служб IIS**. Для получения дополнительной информации см. [Практическое руководство. Выполнение рабочего процесса с учетной записью пользователя](../debugger/how-to-run-the-worker-process-under-a-user-account.md).  
+ Вы можете изменить учетную запись пользователя, от имени которой должен выполняться рабочий процесс [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] . Для этого следует внести соответствующие изменения в файл machine.config на сервере, на котором запускаются службы IIS. Оптимальный способ сделать это — с помощью **Диспетчера служб IIS**. Дополнительные сведения см. в разделе [как: запустить рабочий процесс в учетной записи пользователя](../debugger/how-to-run-the-worker-process-under-a-user-account.md).  
   
- Если в качестве учетной записи, от имени которой должен запускаться рабочий процесс [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], указать собственную учетную запись, то обладать правами администратора на сервере, на котором работают службы IIS, не потребуется.  
+ Если в качестве учетной записи, от имени которой должен запускаться рабочий процесс [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] , указать собственную учетную запись, то обладать правами администратора на сервере, на котором работают службы IIS, не потребуется.  
   
 > [!CAUTION]
 >  Прежде чем запускать рабочий процесс [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] от имени другой учетной записи, проанализируйте последствия возможной вредоносной атаки на рабочий процесс [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] при его выполнении от имени этой учетной записи. Учетные записи ASPNET и NETWORK SERVICE обладают минимальным набором разрешений, минимизируя возможный вред в случае вредоносной атаки на процесс. При выполнении рабочего процесса [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] от имени учетной записи с более широким объемом прав объем возможного вреда возрастает.  
   
-## См. также  
- [Отладка приложений ASP.NET и AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
+## <a name="see-also"></a>См. также  
+ [Отладка приложений ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
  [Практическое руководство. Выполнение рабочего процесса с учетной записью пользователя](../debugger/how-to-run-the-worker-process-under-a-user-account.md)

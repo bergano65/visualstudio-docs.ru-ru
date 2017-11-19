@@ -1,27 +1,30 @@
 ---
-title: "IDebugDocumentHelper::GetDebugApplicationNode | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugDocumentHelper::GetDebugApplicationNode | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentHelper.GetDebugApplicationNode
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugDocumentHelper::GetDebugApplicationNode"
+helpviewer_keywords: IDebugDocumentHelper::GetDebugApplicationNode
 ms.assetid: ecd18803-beb4-4ac2-9702-cc9e8a12c395
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 27d1fb09698cffa4826ab35b36e3ae315a12ba74
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentHelper::GetDebugApplicationNode
-Возвращает узел приложения отладки, соответствующий данному документу.  
+# <a name="idebugdocumenthelpergetdebugapplicationnode"></a>IDebugDocumentHelper::GetDebugApplicationNode
+Возвращает узел отладки приложения, соответствующий этому документу.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT GetDebugApplicationNode(  
@@ -29,19 +32,19 @@ HRESULT GetDebugApplicationNode(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppdan`  
- \[out\] узел приложения отладки, соответствующий данному документу.  
+ [out] Узел отладки приложения, соответствующий этому документу.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
- Возвращает узел приложения отладки, соответствующий данному документу.  
+## <a name="remarks"></a>Примечания  
+ Возвращает узел отладки приложения, соответствующий этому документу.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)

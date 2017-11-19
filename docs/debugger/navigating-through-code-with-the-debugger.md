@@ -1,77 +1,59 @@
 ---
-title: Navigate Code with the Debugger in Visual Studio | Microsoft Docs
+title: "Навигация по коду с помощью отладчика в Visual Studio | Документы Microsoft"
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.debug.execution
+f1_keywords: vs.debug.execution
 helpviewer_keywords:
 - stepping
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
-caps.latest.revision: 42
+caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 7ccde2740ba5216ca8e2a6258c283f655da8b06f
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
-
+ms.openlocfilehash: cda62de6fe72598674b90e4a0ef5dccd8cf2a2af
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="navigate-code-with-the-visual-studio-debugger"></a>Navigate Code with the Visual Studio Debugger
-Get familiar with commands and shortcuts to navigate code in the debugger and that will make it faster and easier to find and resolve issues in your app. While you navigate code in the debugger, you can inspect the state of your app or learn more about its execution flow.  
+# <a name="navigate-code-with-the-visual-studio-debugger"></a>Навигация по коду с помощью отладчика Visual Studio
+Ознакомиться с командами и сочетания клавиш для перемещения кода в отладчике, и, чтобы быстрее и проще для поиска и устранения проблем в приложении. При перемещении кода в отладчике можно проверять состояние приложения или Дополнительные сведения о его поток выполнения.  
   
-## <a name="start-debugging"></a>Start debugging  
- Often, you start a debugging session using **F5** (**Debug** > **Start Debugging**). This command starts your app with the debugger attached.  
+## <a name="start-debugging"></a>Начать отладку  
+ Часто, запуск сеанса отладки с использованием **F5** (**отладки** > **начать отладку**). Эта команда запускает приложение с подключенным отладчиком.  
   
- The green arrow also starts the debugger (same as **F5**).  
+ Зеленая стрелка также запускает отладчик (то же, что **F5**).  
   
- ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG &#95; Основные сведения о &#95; Запустить &#95; Отладка](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
- A few other ways that you can start the app with the debugger attached include **F11** ([step into code](#BKMK_Step_into__over__or_out_of_the_code)),  **F10** ([step over code](#BKMK_Step_over_Step_out)), or by using **Run to Cursor**.  See the other sections in this topic for info on what these options do.  
+ Включить несколько способов, что можно запустить приложение с подключенным отладчиком **F11** ([шаг с заходом в код](#BKMK_Step_into__over__or_out_of_the_code)), **F10** ([шаг с обходом кода](#BKMK_Step_over_Step_out)), или с помощью с помощью **выполнить до текущей позиции**.  См. другие разделы в этом разделе приводятся сведения о сделать эти параметры.  
   
- When you debug, the yellow line shows you the code that will execute next.  
+ При отладке, желтая линия показан код, который будет выполнена следующей.  
   
- ![DBG&#95;Basics&#95;Break&#95;Mode](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
+ ![DBG &#95; Основные сведения о &#95; Разрыв &#95; Режим](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
   
- While debugging, you can switch between commands like **F5**, **F11** and use other features described in this topic (like breakpoints) to quickly get to the code you want to look at.  
+ Во время отладки, можно переключаться между команды **F5**, **F11** и использовать другие функции, описанные в этом разделе (например, точки останова), чтобы быстро найти код, который будет использоваться для просмотра.  
   
- Most debugger features, such as viewing variable values in the Locals window or evaluating expressions in the Watch window, are available only while the debugger is paused (also called *break mode*). When the debugger is paused, your app state is suspended while functions, variables, and objects remain in memory. While in break mode, you can examine the elements' positions and states to look for violations or bugs. For some project types, you can also make adjustments to the app while in break mode. To watch a video showing these features, see [Getting Started with the Debugger](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
+ Многие возможности отладчика, такие как просмотр значений переменных в окне локальных переменных или вычисление выражений в окне контрольных значений, доступны только в том случае, когда отладчик приостановлена (также называемый *режим приостановки выполнения*). При приостановке отладчик состояние приложения приостанавливается при функции, переменные и объекты остаются в памяти. В режиме приостановки можно проверить положения элементов и состояний для поиска ошибок и нарушений. Для некоторых типов проектов можно также внести корректировки в приложение в режиме приостановки. Видео, показывающая эти функции, в разделе [начало работы с отладчиком](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
   
-##  <a name="BKMK_Step_into__over__or_out_of_the_code"></a> Step into code, line by line  
- To stop on each line of code (each statement) while debugging, use the **F11** keyboard shortcut (or **Debug** > **Step Into** on the menu).  
+##  <a name="BKMK_Step_into__over__or_out_of_the_code"></a>Пошаговое выполнение кода, по одной строке  
+ Для остановки в каждой строке кода (каждая инструкция) во время отладки используйте **F11** сочетание клавиш (или **отладки** > **шаг с заходом** меню).  
   
 > [!TIP]
->  As you execute each line of code, you can hover over variables to see their values, or use the [Locals](../debugger/autos-and-locals-windows.md) and [Watch](../debugger/autos-and-locals-windows.md) windows to watch their values change.  
+>  При выполнении каждой строки кода, можно навести на переменные, чтобы просмотреть их значения, или использовать [локальные](../debugger/autos-and-locals-windows.md) и [Контрольные значения](../debugger/autos-and-locals-windows.md) окон контрольных значений, их изменение.  
   
- Here are some details about the behavior of **Step Into**:  
+ Ниже приведены некоторые сведения о поведении **шаг с заходом**:  
   
--   On a nested function call, **Step Into** steps into the most deeply nested function. If you use **Step Into** on a call like `Func1(Func2())`, the debugger steps into the function `Func2`.  
+-   При вызове вложенных функций команда **Шаг с заходом** позволяет попасть в самую глубокую вложенную функцию. Если использовать **Шаг с заходом** на вызове `Func1(Func2())`, отладчик заходит в функцию `Func2`.  
   
--   The debugger actually steps through code statements rather than physical lines. For example an `if` clause can be written on one line:  
+-   Отладчик фактически осуществляет пошаговое выполнение операторов кода, а не физических строк. Например, предложение `if` может быть записано в одной строке:  
   
     ```CSharp  
     int x = 42;  
@@ -85,124 +67,124 @@ Get familiar with commands and shortcuts to navigate code in the debugger and th
     If x = 42 Then s = "Answered!"  
     ```  
   
-     When you step into this line, the debugger treats the condition as one step and the consequence as another (In this example, the condition is true).  
+     При пошаговом выполнении этой строки отладчик обрабатывает условие как один шаг, а следствие как другой (в этом примере условие выполняется).  
   
- To visually trace the call stack while stepping into functions, see [Map methods on the call stack while debugging](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
+ Визуальном отслеживании стека вызовов при пошаговом выполнении функций см. в разделе [сопоставление методов в стеке вызовов при отладке](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
-##  <a name="BKMK_Step_over_Step_out"></a> Step through code, skipping functions  
- When running code in the debugger, often you will realize that you don't need to see what happens in a particular function (you don't care about it or you know it works, like well-tested library code). Use these commands to skip through code (the functions still execute, of course, but the debugger skips over them).  
+##  <a name="BKMK_Step_over_Step_out"></a>Пошаговое выполнение кода, пропуская функции  
+ При выполнении кода в отладчике, часто отобразится, что не нужно увидеть, что происходит с помощью определенной функции (не заботятся о нем, или вы знаете, что он работает, как хорошо проверенное библиотека кода). Пропуск кода с помощью этих команд (функции по-прежнему выполнять, конечно, но отладчик пропускает их).  
   
-|Keyboard Command|Menu Command|Description|  
+|Команда клавиатуры|Команда меню|Описание|  
 |----------------------|------------------|-----------------|  
-|**F10**|**Step Over**|If the current line contains a function call, **Step Over** runs the code then suspends execution at the first line of code after the called function returns.|  
-|**Shift+F11**|**Step Out**|**Step Out** continues running code and suspends execution when the current function returns (the debugger skips through the current function).|  
+|**F10**|**Шаг с обходом**|Если текущая строка содержит вызов функции **шаг с обходом** выполняет код, а затем приостанавливает выполнение в первой строке кода после возврата вызываемой функции.|  
+|**SHIFT + F11**|**Шаг с выходом**|**Шаг с выходом** продолжает выполнение кода и приостанавливает выполнение, когда текущая функция возвращает (отладчик пропускает до текущей функции).|  
   
 > [!TIP]
->  If you need to find the entry point in your app, start with **F10** or **F11**. These commands are often helpful when you are inspecting your app state or trying to find out more about its execution flow.  
+>  Если необходимо найти точку входа в приложение, начните с **F10** или **F11**. Эти команды зачастую полезно при проверке состояние приложения или найти дополнительные сведения о его поток выполнения.  
   
-##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Run to a specific location or function  
- Often the preferred method of debugging code, these methods are useful when you know exactly what code you want to inspect, or at least you know where you want to start debugging.  
+##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a>Выполнение до определенного расположения или функции  
+ Часто предпочтительный способ отладки кода, эти методы полезны, когда вы знаете точно какой код, который требуется проверить, или по крайней мере известно, где требуется начать отладку.  
   
--   **Set breakpoints in the code**  
+-   **Задание точек останова в коде**  
   
-     To set a simple breakpoint in your code, open the source file in the Visual Studio editor. Set the cursor at the line of code where you want to suspend execution, and then right-click in the code window to see the context menu and choose **Breakpoint > Insert Breakpoint** (or press **F9**). The debugger suspends execution right before the line is executed.  
+     Для установки простой точки останова в коде откройте исходный файл в редакторе Visual Studio. Поместите курсор в строку кода, где требуется приостановить выполнение и щелкните правой кнопкой мыши в окне кода, чтобы открыть контекстное меню и выберите **останова > Вставить точку останова** (или нажмите клавишу **F9**). Отладчик приостанавливает выполнение справа, перед выполнением указанной строки.  
   
-     ![Set a breakpoint](../debugger/media/dbg_basics_setbreakpoint.png "DBG_Basics_SetBreakpoint")  
+     ![Установите точку останова](../debugger/media/dbg_basics_setbreakpoint.png "DBG_Basics_SetBreakpoint")  
   
-     Breakpoints in Visual Studio provide a rich set of additional functionality, such as conditional breakpoints and tracepoints. See [Using Breakpoints](../debugger/using-breakpoints.md).  
+     Точки останова в Visual Studio предоставляют широкий набор дополнительных функций, таких как условные точки останова и точки трассировки. В разделе [использование точек останова](../debugger/using-breakpoints.md).  
   
--   **Run to the cursor location**  
+-   **Выполнение до расположения курсора**  
   
-     To run to the cursor location, place the cursor on an executable line of code in a source window. On the editor's context menu (right-click in the editor), choose **Run to Cursor**. This is like setting a temporary breakpoint.
+     Чтобы осуществить выполнение до расположения курсора, поместите курсор в исполняемую строку кода в окне исходного кода. В контекстном меню редактора (правой кнопкой мыши в редакторе), выберите **выполнить до текущей позиции**. Это аналогично заданию временную точку останова.
 
--   **Run to Click** 
+-   **Нажмите кнопку запуска** 
 
-    To run to a point in your code while paused in the debugger, select the **Run execution to here** green arrow icon (you see the icon while hovering over a line of code). This eliminates the need to set temporary breakpoints.
+    Чтобы выполнить код до точки в коде во время приостановки в отладчике, выберите **выполнения сюда** зеленой стрелки (появится значок при наведении указателя мыши на строке кода). Это устраняет необходимость задания точек останова.
 
-    ![Debugger's Run to Click](../debugger/media/dbg-run-to-click.png "DbgRunToClick") 
+    ![Нажмите кнопку запуска отладчика](../debugger/media/dbg-run-to-click.png "DbgRunToClick") 
 
     > [!NOTE]
-    > **Run to Click** is new in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+    > **Запустите щелкните** новые возможности [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
   
--   **Manually break into code**  
+-   **Приостановка выполнения кода вручную**  
   
-     To break into the next available line of code in an executing app, choose **Debug**, **Break All** (keyboard: **Ctrl+Alt+Break**). 
+     Чтобы приостановить выполнение на следующей доступной строке кода в выполняющемся приложении, выберите **Отладка**, **Прервать все** (на клавиатуре: **Ctrl+Alt+Break**). 
   
-     If you break while executing code without corresponding source or symbol (.pdb) files), the debugger displays a **Source Files Not Found** or a **Symbols Not Found** page that can help you find the appropriate files. See [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). If you can't access the supporting files, you can still debug the assembly instructions in the Disassembly window.  
+     Если во время приостановки выполнения кода отсутствуют соответствующие исходные файлы или файлы символов (PDB-файлы), отладчик отображает страницу **Исходный файл не найден** или **Символы не найдены** , которая поможет найти необходимые файлы. В разделе [укажите символов (.pdb) и файлов исходного кода](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Если у вас нет доступа к вспомогательным файлам, можно выполнить отладку инструкций на языке ассемблера в окне "Дизассемблирование".  
   
--   **Run to a function on the call stack**  
+-   **Выполнение до функции в стеке вызовов**  
   
-     In the **Call Stack** window (available while debugging), select the function, right-click and  choose **Run to Cursor**. To visually trace the call stack, see [Map methods on the call stack while debugging](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
+     В **стек вызовов** окна (доступно во время отладки), выберите функцию, щелкните правой кнопкой мыши и выберите **выполнить до текущей позиции**. Для визуального отслеживания стека вызовов, в разделе [сопоставление методов в стеке вызовов при отладке](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
--   **Run to a function specified by name**  
+-   **Выполнение до функции, указанной по имени**  
   
-     You can tell the debugger to run your application until it reaches a specified function. You can specify the function by name or you can choose it from the call stack.  
+     Можно настроить отладчик для запуска приложения, пока не достигнет указанной функции. Можно задать функцию по имени или выбрать ее из стека вызовов.  
   
-     To specify a function by name, choose **Debug**, **New Breakpoint**, **Break at Function**, then enter the name of the function and other identifying information.  
+     Чтобы указать функцию по имени, последовательно выберите **Отладка**, **Создать точку останова**, **Прервать в функции**, а затем введите имя функции и другие идентификационные сведения.  
   
-     ![New Breakpoint dialog box](../debugger/media/dbg_execution_newbreakpoint.png "DBG_Execution_NewBreakpoint")  
+     ![Новое диалоговое окно точки останова](../debugger/media/dbg_execution_newbreakpoint.png "DBG_Execution_NewBreakpoint")  
   
-     If the function is overloaded or is in multiple namespace, you can choose the functions that you want in the **Choose Breakpoints** dialog box.  
+     Если функция перегружается или находится в нескольких пространствах имен, необходимые функции можно выбрать в диалоговом окне **Выбор точек останова** .  
   
-     ![Choose Breakpoints dialog box](../debugger/media/dbg_execution_overloadedbreakpoints.png "DBG_Execution_OverloadedBreakpoints")  
+     ![Выбор точек останова-диалоговое окно](../debugger/media/dbg_execution_overloadedbreakpoints.png "DBG_Execution_OverloadedBreakpoints")  
   
-##  <a name="BKMK_Set_the_next_statement_to_execute"></a> Move the pointer to change the execution flow  
- While the debugger is paused, you can move the instruction pointer to set the next statement of code to be executed. A yellow arrowhead in the margin of a source or Disassembly window marks the location of the next statement to be executed. By moving this arrowhead, you can skip over a portion of code or return to a line previously executed. You can use this for situations such as skipping a section of code that contains a known bug.  
+##  <a name="BKMK_Set_the_next_statement_to_execute"></a>Переместите указатель для изменения хода выполнения  
+ При приостановке отладчик, можно переместить указатель инструкции, чтобы задать следующий оператор кода для выполнения. Желтая стрелка на границе исходного текста или в окне "Дизассемблированный код" отмечает текущее расположение оператора, который должен быть выполнен следующим. Посредством перемещения этой стрелки можно пропустить часть кода или вернуться к строке, выполненной ранее. Это можно использовать при возникновении таких ситуаций, как пропуск раздела кода, содержащего известную ошибку.  
   
- ![Moving the Pointer](../debugger/media/dbg_basics_example3.gif "DBG_Basics_Example3")
+ ![При перемещении указателя](../debugger/media/dbg_basics_example3.gif "DBG_Basics_Example3")
   
- To set the next statement to execute, use one of these procedures:  
+ Чтобы задать следующий оператор для выполнения, воспользуйтесь одной из следующих процедур.  
   
--   In a source window, drag the yellow arrowhead to a location where you want to set the next statement in the same source file  
+-   В окне исходного кода перетащите желтую стрелку в то место этого же исходного файла, где необходимо задать следующий оператор.  
   
--   In a source window, set the cursor on the line that you want to execute next, right-click and choose **Set Next Statement**.  
+-   В окне исходного кода установите курсор в строке, которую требуется выполнить следующей, щелкните правой кнопкой мыши и выберите **задать следующий оператор**.  
   
--   In the Disassembly window, set the cursor on the assembly instruction that you want to execute next, right-click an and choose **Set Next Statement**.  
+-   В окне дизассемблирования установите курсор на инструкцию ассемблера, которую требуется выполнить следующей, щелкните правой кнопкой мыши и выберите **задать следующий оператор**.  
   
 > [!CAUTION]
->  Setting the next statement causes the program counter to jump directly to the new location. Use this command with caution:  
+>  Установка следующего оператора заставит программный счетчик инструкций перейти непосредственно на новое место. Следует применять эту команду с осторожностью.  
 >   
->  -   Instructions between the old and new execution points are not executed.  
-> -   If you move the execution point backwards, intervening instructions are not undone.  
-> -   Moving the next statement to another function or scope usually results in call-stack corruption, causing a run-time error or exception. If you try moving the next statement to another scope, the debugger opens a dialog box with a warning and gives you a chance to cancel the operation. In Visual Basic, you cannot move the next statement to another scope or function.  
-> -   In native C++, if you have run-time checks enabled, setting the next statement can cause an exception to be thrown when execution reaches the end of the method.  
-> -   When Edit and Continue is enabled, **Set Next Statement** fails if you have made edits that Edit and Continue cannot remap immediately. This can occur, for example, if you have edited code inside a catch block. When this happens, you'll see an error message that tells you that the operation is not supported.  
+>  -   Инструкции между старой и новой точками не выполняются.  
+> -   При перемещении точки выполнения обратно, промежуточные инструкции не отменяются.  
+> -   Перемещение следующего оператора на другую функцию или область обычно приводит к повреждению стека вызова, вызывая ошибку времени выполнения или исключение. При попытке перемещения следующего оператора в другую область, отладчик открывает диалоговое окно с предупреждением и предоставляет возможность отменить операцию. В Visual Basic нельзя переместить следующий оператор на другую область или функцию.  
+> -   Если при использовании машинного кода C++ включены проверки времени выполнения, установка следующего оператора может вызвать исключение, когда выполнение достигнет конца метода.  
+> -   При включенной операции "Изменить и продолжить" команда **Задать следующий оператор** завершится неудачей, если вы внесете изменения, которые операция "Изменить и продолжить" не сможет немедленно применить. Например, это может произойти, если были внесены изменения внутри блока catch. В этом случае вы увидите сообщение об ошибке, указывающее, что операция не поддерживается.  
   
 > [!NOTE]
->  In managed code, you cannot move the next statement under the following conditions:  
+>  В управляемом коде нельзя перемещать следующий оператор в следующих случаях:  
 >   
->  -   The next statement is in a different method than the current statement.  
-> -   Debugging was started by using Just-In-Time debugging.  
-> -   A callstack unwind is in progress.  
-> -   A System.StackOverflowException or System.Threading.ThreadAbortException exception has been thrown.  
+>  -   Следующий оператор находится в методе, отличном от метода текущего оператора.  
+> -   Отладка была запущена через JIT–отладку.  
+> -   Выполняется очистка стека вызова.  
+> -   Вызвано исключение System.StackOverflowException или System.Threading.ThreadAbortException.  
   
- You cannot set the next statement while your application is actively running. To set the next statement, the debugger must be in break mode.  
+ Нельзя устанавливать следующий оператор, если приложение выполняется. Чтобы задать следующий оператор, отладчик должен находиться в режиме приостановки.  
   
-## <a name="BKMK_Restrict_stepping_to_Just_My_Code"></a>Step into non-user code  
- By default, the debugger tries to show you only your app code while debugging, which is determined by a debugger setting called *Just My Code*. (See [Just My Code](../debugger/just-my-code.md) to see how this works for different project types and languages and how you might customize the behavior.) However, sometimes while you are debugging, you might want to look at framework code, third-party library code, or calls to the operating system (system calls).  
+## <a name="BKMK_Restrict_stepping_to_Just_My_Code"></a>Шаг с заходом в код, не написанный пользователем  
+ По умолчанию отладчик пытается покажут только код приложения во время отладки, определенный с помощью отладчика, параметр *только мой код*. (См. [только мой код](../debugger/just-my-code.md) чтобы увидеть, как это работает для языков и различных типов проектов и как можно настроить поведение.) Тем не менее, иногда при отладке, может потребоваться рассмотреть вызовов, код сторонних библиотек или код платформы в операционную систему (системные вызовы).  
   
- You can turn off Just My Code  by going to **Tools** > **Options** > **Debugging** and clear the **Enable Just My Code** checkbox.  
+ Можно отключить только мой код, последовательно выбрав пункты **средства** > **параметры** > **Отладка** и снимите **включить только мой код** флажок.  
   
- When Just My Code is disabled, the debugger can step into non-user code and non-user code appears in the debugger windows.  
+ При отключении только мой код, отладчик может войти в код, не написанный пользователем и не написанный пользователем код отображается в окнах отладчика.  
   
 > [!NOTE]
->  Just My Code is not supported for device projects.  
+>  Режим "Только мой код" не поддерживается для проектов устройств.  
   
- **Step into system calls**  
+ **Шаг с заходом в системные вызовы**  
   
- If you have loaded debugging symbols for system code and Just My Code is not enabled, you can step into a system call just as you can any other call.  
+ Если вы загрузили отладочные символы для системного кода и только мой код не включен, можно производить шаг в системные вызовы, так же, как любых других вызовов.  
   
- To access Microsoft symbol files, see [Use symbol servers to find symbol files not on your local machine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine) in the [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) topic.  
+ Для доступа к файлам символов Microsoft, в разделе [использование серверов символов для поиска файлов символов не на локальном компьютере](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine) в [укажите символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) раздела.  
   
- To load symbols for a specific system component while you are debugging:  
+ Чтобы загрузить символы для определенного системного компонента во время отладки, выполните следующие действия.  
   
-1.  Open the Modules window (keyboard: **Ctrl + Alt + U**).  
+1.  Открытие окна "Модули" (Клавиатура: **Ctrl + Alt + U**).  
   
-2.  Select the module that you want to load symbols for.  
+2.  Выберите модуль, для которого требуется загрузить символы.  
   
-     You can tell which modules have symbols loaded by looking at the **Symbol Status** column.  
+     Определить, для каких модулей символы загружены, можно по значению в столбце **Состояние символов** .  
   
-3.  Choose **Load Symbols** on the context menu.  
+3.  В контекстном меню выберите команду **Загрузить символы** .  
   
-##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Step into properties and operators in managed code  
- The debugger steps over properties and operators in managed code by default. In most cases, this provides a better debugging experience. To enable stepping into properties or operators, choose **Debug** > **Options**. On the **Debugging** > **General** page, clear the **Step over properties and operators (Managed only)** check box
+##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Шаг с заходом в свойства и операторы в управляемом коде  
+ По умолчанию отладчик обходит свойства и операторы при пошаговом выполнении в управляемом коде. В большинстве случаев это делает отладку более удобной и эффективной. Чтобы включить пошаговое выполнение свойств и операторов, выберите **отладки** > **параметры**. На **Отладка** > **Общие** снимите **обход свойств и операторов (только управляемый код)** флажок

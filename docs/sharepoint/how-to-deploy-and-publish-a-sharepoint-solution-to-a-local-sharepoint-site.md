@@ -1,54 +1,56 @@
 ---
-title: "Практическое руководство. Развертывание и публикация решения SharePoint на локальном сайте SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "развертывание [разработка приложений SharePoint в Visual Studio]"
-  - "разработка приложений SharePoint в Visual Studio, развертывание"
+title: "Как: развертывание и публикация решения SharePoint на локальном сайте SharePoint | Документы Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- deploying [SharePoint development in Visual Studio]
+- SharePoint development in Visual Studio, deploying
 ms.assetid: 73f8d6a9-4c64-4bba-ae0e-9474baf8df26
-caps.latest.revision: 18
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 4959334c9d6949e199ad18934e69ea46e1172b55
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Развертывание и публикация решения SharePoint на локальном сайте SharePoint
-  Решения SharePoint можно развертывать или публиковать на локальном сервере SharePoint на компьютере разработчика.  В процессе развертывания происходит копирование WSP\-файлов на сервер, установка решения SharePoint и активация компонентов.  Процесс публикации только копирует wsp\-файл на сервер SharePoint и устанавливает его.  Необходимо вручную активировать его, чтобы использовать в SharePoint.  
+# <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Практическое руководство. Развертывание и публикация решения SharePoint на локальном сайте SharePoint
+  Можно развернуть или публикации решений SharePoint на локальном сервере SharePoint на компьютере разработчика. Процесс развертывания копирует WSP-файл на сервер SharePoint, устанавливает решение и активация компонентов. Только процесс публикации копирует WSP-файл на сервер SharePoint и устанавливает его. Необходимо вручную активировать его, чтобы включить его в SharePoint.  
   
-## Развертывание решения SharePoint на локальном сервере SharePoint  
+## <a name="to-deploy-a-sharepoint-solution-to-the-local-sharepoint-server"></a>Для развертывания решения SharePoint на локальном сервере SharePoint  
   
-1.  В **обозревателе решений** выберите проект, который требуется развернуть.  
+1.  В **обозревателе решений**, выберите проект, который вы хотите развернуть.  
   
-2.  В строке меню последовательно выберите **Сборка** и **Развернуть решение**.  
+2.  В строке меню выберите **построения**, **развернуть решение**.  
   
-     WSP\-файл создается и устанавливается на локальном сервере SharePoint.  Кроме того, активируются компоненты.  
+     WSP-файл создается и устанавливается на локальном сервере SharePoint. Кроме того активируются компоненты.  
   
-## Публикация решения SharePoint на локальном сервере SharePoint  
+## <a name="to-publish-a-sharepoint-solution-to-a-local-sharepoint-server"></a>Для публикации решения SharePoint на локальном сервере SharePoint  
   
-1.  В **Обозревателе решений** откройте контекстное меню для проекта SharePoint, который требуется опубликовать, и выберите **Опубликовать**.  
+1.  В **обозревателе решений**, откройте контекстное меню для проекта SharePoint, которую требуется опубликовать, а затем выберите **публикации**.  
   
-2.  В диалоговом окне **Опубликовать** выберите переключатель **Опубликовать в файловой системе**.  
+2.  В **публикации** диалогового окна выберите **опубликовать в файловой системе** переключатель.  
   
-3.  В текстовом поле **Целевое расположение** введите локальный путь, а затем нажмите кнопку **Опубликовать**.  
+3.  В **целевое расположение** текстовом поле введите локальный путь и нажмите кнопку **публикации** кнопки.  
   
-     Ход выполнения публикации отображается в окне **Вывода** Visual Studio.  После завершения процесса, файл решения \(.wsp\-файл\) устанавливается на локальном сервере SharePoint.  Однако его по\-прежнему необходимо активировать, чтобы использовать в SharePoint.  Если файл решения уже существует, возникает ошибка с запросом на перезапись существующего файла.  Дополнительные сведения об обновлении пакета см. в разделе об обновлении удаленных пакетов в [Практическое руководство. Развертывание, публикация и обновление решений SharePoint на удаленном сервере](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
+     Ход выполнения публикации отображается в Visual Studio **вывода** окна. После завершения процесса файл решения (WSP-файл) устанавливается на локальном сервере SharePoint. Тем не менее его необходимо по-прежнему активировать для использования в SharePoint. Если файл решения уже существует, ошибку и вопросом, следует ли перезаписать существующий файл. Сведения об обновлении пакета, обратитесь к разделу об обновлении удаленные пакеты в [как: развертывание, публикация и обновление решений SharePoint на удаленном сервере](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
   
-## См. также  
- [Практическое руководство. Развертывание, публикация и обновление решений SharePoint на удаленном сервере](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)   
+## <a name="see-also"></a>См. также  
+ [Как: развертывание, публикация и обновление решений SharePoint на удаленном сервере](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)   
  [Создание пакетов решений SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)   
- [Практическое руководство. Настройка пакета решения SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
+ [Как: Настройка пакета решения SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
  [Практическое руководство. Добавление и удаление компонентов и элементов в пакете с помощью конструктора пакетов](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  
   
   

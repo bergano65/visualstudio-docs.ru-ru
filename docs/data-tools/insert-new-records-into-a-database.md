@@ -1,5 +1,5 @@
 ---
-title: Insert new records into a database | Microsoft Docs
+title: "Вставка новых записей в базу данных | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -9,8 +9,6 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
-- C++
-- aspx
 helpviewer_keywords:
 - TableAdapters, inserting new records into
 - data [Visual Studio], saving
@@ -18,84 +16,71 @@ helpviewer_keywords:
 - records, inserting
 - saving data
 ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
-caps.latest.revision: 11
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 66cafdac60b94a62c3ffa59180078a7a8b50aabb
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 2450ed950227b6755b57f20f3520a1e75034aafe
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="insert-new-records-into-a-database"></a>Insert new records into a database
-To insert new records into a database, you can use the `TableAdapter.Update` method, or one of the TableAdapter's DBDirect methods (specifically the `TableAdapter.Insert` method). For more information, see [TableAdapter](../data-tools/create-and-configure-tableadapters.md).  
+# <a name="insert-new-records-into-a-database"></a>Вставка новых записей в базе данных
+Для вставки новых записей в базу данных, можно использовать `TableAdapter.Update` метода или одного из методов DBDirect адаптера таблицы (в частности `TableAdapter.Insert` метода). Дополнительные сведения см. в разделе [TableAdapter](../data-tools/create-and-configure-tableadapters.md).  
   
- If your application doesn't use TableAdapters, you can use command objects (for example,  <xref:System.Data.SqlClient.SqlCommand>) to  insert new records in your database.
+ Если приложение не использует адаптеры таблиц, можно использовать командные объекты (например, <xref:System.Data.SqlClient.SqlCommand>) для вставки новых записей в базе данных.
   
- If your application uses datasets to store data, use the `TableAdapter.Update` method. The `Update` method sends all changes (updates, inserts, and deletes) to the database.  
+ Если приложение использует наборы данных для хранения данных, используйте `TableAdapter.Update` метод. `Update` Метод отправляет все изменения (обновления, вставки и удаления) в базу данных.  
   
- If your application uses objects to store data, or if you want finer control over creating new records in the database, use the `TableAdapter.Insert` method.  
+ Если приложение использует объекты для хранения данных, или если требуется детальный контроль над созданием новых записей в базе данных, используйте `TableAdapter.Insert` метод.  
   
- If your TableAdapter doesn't have an `Insert` method, it means that either the TableAdapter is configured to use stored procedures or its `GenerateDBDirectMethods` property is set to `false`. Try setting the TableAdapter's `GenerateDBDirectMethods` property to `true` from within the **Dataset Designer**, and then save the dataset. This will regenerate the TableAdapter. If the TableAdapter still doesn't have an `Insert` method, then the table probably does not provide enough schema information to distinguish between individual rows (for example, there might be no primary key set on the table).  
+ Если TableAdapter не имеет `Insert` метода, это означает, что либо TableAdapter настроен на использование сохраненных процедур или его `GenerateDBDirectMethods` свойству `false`. Попробуйте установить его `GenerateDBDirectMethods` свойства `true` изнутри **конструктора наборов данных**, а затем сохраните набор данных. Это приведет к повторному созданию адаптера таблицы. Если адаптер таблицы не имеет `Insert` метод, то таблица, скорее всего, не предоставляет достаточно сведений о схеме для различения отдельных строк (например, может существовать без основной набор ключей в таблице).  
   
-## <a name="insert-new-records-by-using-tableadapters"></a>Insert new records by using TableAdapters  
- TableAdapters provide different ways to insert new records into a database, depending on the requirements of your application.  
+## <a name="insert-new-records-by-using-tableadapters"></a>Вставка новых записей с помощью адаптера таблицы  
+ Адаптеры таблиц предоставляют различные способы вставки новых записей в базе данных, в зависимости от требований приложения.  
   
- If your application uses datasets to store data, then you can simply add new records to the desired <xref:System.Data.DataTable> in the dataset, and then call the `TableAdapter.Update` method. The `TableAdapter.Update` method sends any changes in the <xref:System.Data.DataTable> to the database (including modified and deleted records).  
+ Если приложение использует наборы данных для хранения данных, то можно просто добавлять данные в нужную таблицу <xref:System.Data.DataTable> в наборе данных, а затем вызовите `TableAdapter.Update` метод. `TableAdapter.Update` Метод отправляет все изменения <xref:System.Data.DataTable> в базу данных (включая измененные и удаленные записи).  
   
-#### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>To insert new records into a database by using the TableAdapter.Update method  
+#### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>Для вставки новых записей в базу данных с помощью TableAdapter.Update-метод  
   
-1.  Add new records to the desired <xref:System.Data.DataTable> by creating a new <xref:System.Data.DataRow> and adding it to the <xref:System.Data.DataTable.Rows%2A> collection. 
+1.  Добавление новых записей в нужные <xref:System.Data.DataTable> путем создания нового <xref:System.Data.DataRow> и его добавления в <xref:System.Data.DataTable.Rows%2A> коллекции. 
   
-2.  After the new rows are added to the <xref:System.Data.DataTable>, call the `TableAdapter.Update` method. You can control the amount of data to update by passing in either an entire <xref:System.Data.DataSet>, a <xref:System.Data.DataTable>, an array of <xref:System.Data.DataRow>s, or a single <xref:System.Data.DataRow>.  
+2.  После добавления новых строк в <xref:System.Data.DataTable>, вызовите `TableAdapter.Update` метод. Можно контролировать объем данных для обновления путем передачи всего <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, массив <xref:System.Data.DataRow>s или одной <xref:System.Data.DataRow>.  
   
-     The following code shows how to add a new record to a <xref:System.Data.DataTable> and then call the `TableAdapter.Update` method to save the new row to the database. (This example uses the `Region` table in the Northwind database.)  
+ Ниже показано, как добавить новую запись для <xref:System.Data.DataTable> и затем вызвать `TableAdapter.Update` метод для сохранения новой строки в базу данных. (В этом примере используется `Region` таблицы в базе данных "Борей".)  
   
-     [!code-vb[VbRaddataSaving#14](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_1.vb)]  [!code-cs[VbRaddataSaving#14](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_1.cs)]  
+ [!code-vb[VbRaddataSaving#14](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_1.vb)]
+ [!code-csharp[VbRaddataSaving#14](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_1.cs)]  
   
- If your application uses objects to store  data, you can use the `TableAdapter.Insert` method to create new rows directly in the database. The `Insert` method accepts the individual values for each column as parameters. Calling the method inserts a new record into the database with the parameter values passed in.  
+#### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>Для вставки новых записей в базу данных с помощью TableAdapter.Insert-метод  
+Если приложение использует объекты для хранения данных, можно использовать `TableAdapter.Insert` метод для создания новых строк непосредственно в базе данных. `Insert` Метод принимает отдельные значения для каждого столбца в качестве параметров. Вызов метода вставляет новую запись в базу данных с переданные значения параметров.  
   
- The following procedure uses the `Region` table in the Northwind database  as an example.  
+- Вызов метода `Insert` метод, передав значения для каждого столбца в качестве параметров.  
+
+ В следующей процедуре показано использование `TableAdapter.Insert` метода для вставки строк. В этом примере вставляет данные в `Region` таблицы в базе данных "Борей".  
   
-#### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>To insert new records into a database by using the TableAdapter.Insert method  
+ > [!NOTE]
+ >  Если экземпляра нет, создайте экземпляр адаптера таблицы, которые вы хотите использовать.  
   
--   Call the TableAdapter's `Insert` method, passing in the values for each column as parameters.  
+ [!code-vb[VbRaddataSaving#15](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_2.vb)]
+ [!code-csharp[VbRaddataSaving#15](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_2.cs)]  
   
-    > [!NOTE]
-    >  If you do not have an instance available, instantiate the TableAdapter you want to use.  
+## <a name="insert-new-records-by-using-command-objects"></a>Вставка новых записей с помощью командных объектов  
+Можно вставлять новые записи непосредственно в базу данных с помощью командных объектов.    
   
-     [!code-vb[VbRaddataSaving#15](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_2.vb)]  [!code-cs[VbRaddataSaving#15](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_2.cs)]  
+#### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>Для вставки новых записей в базу данных с помощью командных объектов  
   
-## <a name="insert-new-records-by-using-command-objects"></a>Insert new records by using command objects  
- The following example inserts new records directly into a database using command objects.  
+-   Создание объекта команды и установите его `Connection`, `CommandType`, и `CommandText` свойства.  
+
+ В следующем примере показано вставку записей в базу данных с помощью объекта команды. Он вставляет данные в `Region` таблицы в базе данных "Борей".
   
- The following procedure uses the `Region` table in the Northwind database  as an example.  
+ [!code-vb[VbRaddataSaving#16](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_3.vb)]
+ [!code-csharp[VbRaddataSaving#16](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_3.cs)]  
   
-#### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>To insert new records into a database by using command objects  
+## <a name="net-framework-security"></a>Безопасность платформы .NET Framework  
+ Необходимо иметь доступ для базы данных, которую вы пытаетесь подключиться, а также разрешение на вставку записей в нужную таблицу.  
   
--   Create a new command object, and then set its `Connection`, `CommandType`, and `CommandText` properties.  
-  
-     [!code-vb[VbRaddataSaving#16](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_3.vb)]  [!code-cs[VbRaddataSaving#16](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_3.cs)]  
-  
-## <a name="net-framework-security"></a>.NET Framework Security  
- You must have access to the database you are trying to connect to, as well as permission to perform inserts into the desired table.  
-  
-## <a name="see-also"></a>See Also  
- [Save data back to the database](../data-tools/save-data-back-to-the-database.md)
+## <a name="see-also"></a>См. также  
+ [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)

@@ -1,52 +1,52 @@
 ---
-title: "IDebugStackFrame3::GetUnwindCodeContext | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugStackFrame3::GetUnwindCodeContext"
-helpviewer_keywords: 
-  - "Метод IDebugStackFrame3::GetUnwindCodeContext"
+title: "IDebugStackFrame3::GetUnwindCodeContext | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugStackFrame3::GetUnwindCodeContext
+helpviewer_keywords: IDebugStackFrame3::GetUnwindCodeContext method
 ms.assetid: b25f7e7d-2b24-48e4-93b3-829e61d73ebf
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 000cb6be2c2aa15f70784513d3ce8bf929eb982e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugStackFrame3::GetUnwindCodeContext
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Возвращает контекст кода, представляющий расположение если стек операцию очистки.  
+# <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
+Возвращает контекст кода, представляющая расположение, если операция очистки стека произошла.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT GetUnwindCodeContext(  
-   IDebugCodeContext2 **ppCodeContext  
+   IDebugCodeContext2 **ppCodeContext  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetUnwindCodeContext(  
-   out IDebugCodeContext2 ppCodeContext  
+   out IDebugCodeContext2 ppCodeContext  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppCodeContext`  
- \[out\] возвращает IDebugCodeContext2 объект, представляющий расположение если стек контекста кода завершающей произойдено.  
+ [out] Возвращает [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , представляющий расположение контекст кода при возникновении очистки стека.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Даже если данный метод может вернуть контекст кода для расположения после очистки стека, он не обязательно означает, что стек очистки фактически может возникать в текущем кадре стека.  
+## <a name="remarks"></a>Примечания  
+ Несмотря на то, что этот метод может возвращать контекст кода для расположения после очистки стека, он не обязательно означает, что очистки стека может происходить в текущем кадре стека.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

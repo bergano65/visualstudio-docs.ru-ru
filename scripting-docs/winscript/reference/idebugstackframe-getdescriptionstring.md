@@ -1,27 +1,30 @@
 ---
-title: "IDebugStackFrame::GetDescriptionString | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugStackFrame::GetDescriptionString | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugStackFrame.GetDescriptionString
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IDebugStackFrame::GetDescriptionString"
+helpviewer_keywords: IDebugStackFrame::GetDescriptionString
 ms.assetid: a2ddc069-c440-4dee-98dc-ab7c78773b94
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: cdc77aa2ef2f9d7c95b0b82d5195a6a73524f055
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugStackFrame::GetDescriptionString
-Возвращает короткое или подробное текстовое описание кадра стека.  
+# <a name="idebugstackframegetdescriptionstring"></a>IDebugStackFrame::GetDescriptionString
+Возвращает описание короткие и длинные текстовые кадра стека.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT GetDescriptionString(  
@@ -30,22 +33,22 @@ HRESULT GetDescriptionString(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `fLong`  
- \[in\] пометьте, где `TRUE` возвращает длинное описание и `FALSE` возвращает краткое описание.  
+ [in] Флаг, где `TRUE` возвращает подробное описание и `FALSE` возвращает краткое описание.  
   
  `pbstrDescription`  
- \[out\] описание кадра стека.  
+ [out] Описание кадра стека.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
- Как правило, если `fLong``FALSE`, то этот метод предоставляет только имя функции, связанной с кадром стека.  При `fLong``TRUE`, этот метод может также предоставить параметры функций и другие необходимые сведения.  
+## <a name="remarks"></a>Примечания  
+ Как правило если `fLong` — `FALSE`, этот метод обеспечивает только имя функции, связанные с этим кадром стека. Когда `fLong` — `TRUE`, этот метод также может предоставлять параметров функции и другие важные сведения.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IDebugStackFrame](../../winscript/reference/idebugstackframe-interface.md)

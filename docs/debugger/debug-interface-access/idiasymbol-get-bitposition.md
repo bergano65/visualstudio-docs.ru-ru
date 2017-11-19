@@ -1,54 +1,53 @@
 ---
-title: "IDiaSymbol::get_bitPosition | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_bitPosition - метод"
+title: "IDiaSymbol::get_bitPosition | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_bitPosition method
 ms.assetid: b0059407-8655-497b-81ca-025595989371
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 34a6939c455037f2466c09ab44d742f8ccfe2977
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_bitPosition
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Получает положение бита расположения.  Используется, если [Перечисление LocationType](../../debugger/debug-interface-access/locationtype.md) существует  `LocIsBitField`.  
+# <a name="idiasymbolgetbitposition"></a>IDiaSymbol::get_bitPosition
+Получает положение разряда расположение. Используется, когда [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md) — `LocIsBitField`.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT get_bitPosition (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_bitPosition (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pRetVal`  
- \[out\] возвращает положение бита расположения.  
+ [out] Возвращает позиции расположения.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает  `S_FALSE` или код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение  `S_FALSE` означает, что свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
   
 |Требование|Описание|  
-|----------------|--------------|  
+|-----------------|-----------------|  
 |Заголовок:|dia2.h|  
-|Версия:|Пакет SDK для доступа к интерфейсу отладки v7.0|  
+|Версия:|ПАКЕТ SDK для v7.0|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Перечисление LocationType](../../debugger/debug-interface-access/locationtype.md)

@@ -1,63 +1,65 @@
 ---
-title: "Сохранение стандартного документа | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Сохранение документов стандартные редакторы [Visual Studio SDK]"
-  - "проекты [Visual Studio SDK] сохранение стандартных документов"
-  - "Сохраняемость, сохранение стандартных документов"
+title: "Сохранение стандартный документ | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- editors [Visual Studio SDK], saving standard documents
+- projects [Visual Studio SDK], saving standard documents
+- persistence, saving standard documents
 ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 73ef7f1b347dc2fdcfe2904ef19a2d52036d927e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Сохранение стандартного документа
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Дескрипторы среды сохранить, сохранить как и сохраняют все команды.  Когда пользователь выбирает **Сохранить**"  **Сохранить как**или  **Сохранить все** от  **Файл** меню или закрывает решение, что приводит к a  **Сохранить все**следующий процесс.  
+# <a name="saving-a-standard-document"></a>Сохранение стандартного документа
+Сохранить, сохранить как и сохранить все команды, обрабатывает среды. Когда пользователь выбирает **Сохранить**, **Сохранить как**, или **сохранить все** из **файл** меню или закрывает решение, в результате чего  **Сохранить все**, происходит следующее.  
   
- ![Standard Edition](~/extensibility/internals/media/public.gif "Public")  
-Сохранить, сохранить как и сохраните всю обработку команд для стандартного редактора  
+ ![Стандартный редактор](../../extensibility/internals/media/public.gif "открытый")  
+Сохранить, сохранить как и сохранить все обработку команд для стандартного редактора  
   
- Этот процесс детализирован в следующих шагах.  
+ Этот процесс подробно описан в следующих шагов:  
   
-1.  После **Сохранить** и  **Сохранить как** выделены команды среды используют  <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> служба, чтобы определить окно активного документа и, таким образом, какие элементы должны быть сохранены.  После того как окно активного документа известно, среда находит идентификатор указателей и элемента иерархии \(itemID\) для документа в таблице текущих документов.  Дополнительные сведения см. в разделе [Таблицы запущенных документа](../../extensibility/internals/running-document-table.md).  
+1.  При **Сохранить** и **Сохранить как** выбраны команды, в среде используется <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> службы для определения окна активного документа и таким образом какие элементы должно быть сохранено. После получения окна активного документа среде находит указатель иерархии и идентификатор элемента (itemID) для документа в запущенной таблице документов. Дополнительные сведения см. в разделе [под управлением таблицы Document](../../extensibility/internals/running-document-table.md).  
   
-     После **Сохранить все** команда выбрана среда использует сведения в таблице текущих документа, чтобы компилировать список всех элементов для сохранения.  
+     Когда **сохранить все** выборе команды, среде использует сведения в запущенной таблице документов для компиляции список всех элементов для сохранения.  
   
-2.  Если решение возвращает <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> вызов он проходит по набору выбранных элементов \(то есть вариантов выбора нескольких элементов, предоставляемых  <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> служба\).  
+2.  При получении решения <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> вызов, он проходит через набор выбранных элементов (то есть множественный выбор, предоставляемые <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> службы).  
   
-3.  Для каждого элемента в выделении решение использует указатель иерархии для вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> метод позволяет определить, является ли  **Save** команда меню должна быть включена.  Если один или несколько элементов, пакостны **Save** команда включена.  Если иерархия использует стандартный редактор, то иерархия делегатов запроса пакостного состояния к редактору путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> метод.  
+3.  Для каждого элемента в выделенном фрагменте, в решении используется указатель иерархии для вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> метод, чтобы определить ли **Сохранить** должна быть включена команда меню. Если один или несколько элементов "грязные", а затем **Сохранить** команда включена. Если иерархия использует стандартного редактора, затем делегаты иерархии, которая запрашивает "грязный" статус к редактору путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> метод.  
   
-4.  На каждом выбранном элементе, пакостн решение использует указатель иерархии для вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> метод на соответствующих иерархиях.  
+4.  На каждый выбранный элемент содержит "грязные" в решении используется указатель иерархии для вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> метод на соответствующие иерархии.  
   
-     Он применяется для иерархии для использования стандартного редактора изменить документ.  В этом случае объект данных документа для редактора должен поддерживать <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> интерфейс.  В начало <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.SaveDocData%2A> вызов метода, проект должен быть отчет, что документ сохраняется с помощью редактора  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> метод объекта данных документа.  Редактор может разрешить среда обработки **Сохранить как** диалоговое окно " вызов  `Query Service` для  <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> интерфейс.  Возвращает указатель на <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> интерфейс.  Редактор должен затем вызвать метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A> метод передачи указатель к редактору  <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> реализация посредством  `pPersistFile` параметр.  Среда затем выполняет операцию сохранения и предоставляет **Сохранить как** диалоговое окно редактора.  Среда затем выполняет обратный вызов в редактор с <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>.  
+     Чаще всего для иерархии для использования стандартного редактора для изменения документа. В этом случае объект данных документа, для этого редактор должен поддерживать <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> интерфейса. При получении сообщения <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> вызова метода проекта сообщает о редакторе, сохранении документа, вызвав <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.SaveDocData%2A> метод в объект данных документа. Редактор можно разрешить среду для обработки **Сохранить как** диалоговом путем вызова `Query Service` для <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> интерфейса. Возвращает указатель на <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> интерфейса. Затем необходимо вызвать редактор <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A> метод, передавая указатель в редактор <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> реализации с помощью параметра `pPersistFile` параметр. Среды, затем выполняет операции сохранения и предоставляет **Сохранить как** диалоговое окно для редактора. Среда вызывает редактор с <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>.  
   
-5.  Если пользователь пытается сохранить документ без заголовка \(то есть несохраненные документ ранее\), то команда сохранить как, фактически выполняется.  
+5.  Если пользователь пытается сохранить документ без имени (то есть ранее несохраненный документ), команда Сохранить как фактически выполняется.  
   
-6.  Для команды сохранить как среда отображает диалоговое окно сохранить как пробуждая пользователя для имени файла.  
+6.  Для «Сохранить как» среды отображается диалоговое окно Сохранить как, запрос на ввод имени файла.  
   
-     Если имя файла изменилось, то иерархия отвечает за обновление информации фрейма документа кэшированные путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A>\(VSFPROPID\_MkDocument\).  
+     Если изменилось имя файла, то для рамки документа обновление кэшированных данных путем вызова отвечает иерархии <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A>(VSFPROPID_MkDocument).  
   
- Если **Сохранить как** команда перемещает расположение документа и иерархия чувствительна к расположению документа, а иерархия отвечает за обработка с владения открытого окна документа в другой иерархии.  Например, это происходит, если проект отслеживает, является ли файл внутренний или внешний файл \(произвольный файл\) по отношению к проекту.  Следующая процедура используется для изменения владельца файла в проект прочих файлов.  
+ Если **Сохранить как** команда перемещает расположение документа и иерархии чувствительна к расположению документа, а затем иерархии отвечает за передачей владения на открытое окно документа в другой иерархии. Например это происходит, если проект отслеживает, является ли файл внутреннего или внешнего файла (файл) относительно проекта. Используйте следующую процедуру для изменения владельца файла в проект прочие файлы.  
   
-## Изменить владельца файла  
+## <a name="changing-file-ownership"></a>Смена владельца файла  
   
-#### Изменить владельца файла в проект прочих файлов  
+#### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>Чтобы изменить владельца файлов в проект прочие файлы  
   
-1.  Служба запросов <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> интерфейс.  
+1.  Запрос службы для <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> интерфейса.  
   
-     Указатель на <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2> возвращает.  
+     Указатель на <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2> возвращается.  
   
-2.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> \(`pszMkDocumentNew`"  `punkWindowFrame`\), чтобы передать документ в новой иерархии.  Иерархия при выполнении команды " сохранить как " вызывает этот метод.  
+2.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) метод, чтобы передать документ в новой иерархии. Этот метод вызывается при выполнении команды «Сохранить как» иерархии.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [Открытие и сохранение элементов проекта](../../extensibility/internals/opening-and-saving-project-items.md)

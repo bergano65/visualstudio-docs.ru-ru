@@ -1,51 +1,51 @@
 ---
-title: "IEnumDebugCustomAttributes::GetCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumCustomAttributes::GetCount"
-helpviewer_keywords: 
-  - "IEnumDebugCustomAttributes::GetCount"
+title: "IEnumDebugCustomAttributes::GetCount | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumCustomAttributes::GetCount
+helpviewer_keywords: IEnumDebugCustomAttributes::GetCount
 ms.assetid: fafe826f-4ebf-4572-b2a3-d5dd2916c12f
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 492fada19483d8c03c23f540e8fa0fb90e2525ba
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugCustomAttributes::GetCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Возвращает количество настраиваемых атрибутов в перечислителе.  
+# <a name="ienumdebugcustomattributesgetcount"></a>IEnumDebugCustomAttributes::GetCount
+Получает число настраиваемых атрибутов в перечислителе.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetCount(   
-   ULONG* pcelt  
+```cpp  
+HRESULT GetCount(   
+   ULONG* pcelt  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetCount(  
-   out uint pcelt  
+   out uint pcelt  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pcelt`  
- \[out\] возвращает число элементов в перечислении.  
+ [out] Возвращает число элементов в перечислении.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Этот метод не является частью привычного интерфейса перечисления только модели COM, указывающий `Next`"  `Clone`"  `Skip`и  `Reset` требуется реализовывать.  
+## <a name="remarks"></a>Примечания  
+ Этот метод не является частью обычной интерфейс перечисления COM, который указывает, что только `Next`, `Clone`, `Skip`, и `Reset` должны быть реализованы.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

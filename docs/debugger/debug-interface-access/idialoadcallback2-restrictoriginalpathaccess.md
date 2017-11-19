@@ -1,40 +1,39 @@
 ---
-title: "IDiaLoadCallback2::RestrictOriginalPathAccess | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaLoadCallback2::RestrictOriginalPathAccess - метод"
+title: "IDiaLoadCallback2::RestrictOriginalPathAccess | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaLoadCallback2::RestrictOriginalPathAccess method
 ms.assetid: 31fde3af-2824-4b0f-8d0d-cee6046596f6
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 826cebba9d4eaf8e2bcf6d055a2ce524e1cf17d0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaLoadCallback2::RestrictOriginalPathAccess
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Определяет, если он одобрен найти pdb\-файл в оригинале каталог отладки.  
+# <a name="idialoadcallback2restrictoriginalpathaccess"></a>IDiaLoadCallback2::RestrictOriginalPathAccess
+Определяет, является ли он подходит для поиска PDB-файл в исходном каталоге отладки.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```C++  
 HRESULT RestrictOriginalPathAccess ();  
 ```  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Любой код возврата, отличный от `S_OK` предотвращает найти pdb\-файл в оригинале каталог отладки.  Исходный каталог отладки путь к файлу символов отладки включит компилированному в исполняемый файл.  Этот путь не обязательно этого же, как путь, где исполняемый файл существует.  
+## <a name="remarks"></a>Примечания  
+ Любой код возврата не `S_OK` не позволяет найти PDB-файл в исходном каталоге отладки. Исходный каталог отладки — это путь для файла символов, которые компилируются в исполняемый файл при включении отладки. Этот путь не обязательно совпадает с пути, где существует исполняемый файл.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

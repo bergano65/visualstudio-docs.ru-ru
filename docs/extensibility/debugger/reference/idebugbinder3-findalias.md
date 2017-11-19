@@ -1,57 +1,57 @@
 ---
-title: "IDebugBinder3::FindAlias | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBinder3::FindAlias"
-helpviewer_keywords: 
-  - "Метод IDebugBinder3::FindAlias"
+title: "IDebugBinder3::FindAlias | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBinder3::FindAlias
+helpviewer_keywords: IDebugBinder3::FindAlias method
 ms.assetid: b8333701-2718-4983-8513-0875fb7cb730
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f209829e3b6c76571a53370c11c6d6d7343b088c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBinder3::FindAlias
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Этот метод находит псевдоним по имени.  Это будет искать все псевдонимы в программе.  
+# <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
+Этот метод осуществляет поиск псевдоним, заданному имени. Выполняется поиск всех псевдонимов в программе.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-HRESULT FindAlias(  
-   LPCOLESTR     pcstrName,  
-   IDebugAlias** ppAlias  
+HRESULT FindAlias(  
+   LPCOLESTR     pcstrName,  
+   IDebugAlias** ppAlias  
 );  
 ```  
   
-```c#  
-int FindAlias(  
-   string          pcstrName,  
-   out IDebugAlias ppAlias  
+```csharp  
+int FindAlias(  
+   string          pcstrName,  
+   out IDebugAlias ppAlias  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pcstrName`  
- \[in\] имя псевдонима для поиска.  
+ [in] Имя псевдонима для поиска.  
   
  `ppAlias`  
- \[out\] псевдоним обнаружил \(если таковые имеются\), представленное [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) интерфейс.  
+ [out] Представленный псевдоним обнаружен (если таковые имеются) [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) интерфейса.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает  `S_FALSE` \(если псевдоним не найден\) или код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` (Если псевдоним не найден) или код ошибки.  
   
-## Заметки  
- Этот метод инициализирует объект назначения перед вызовом; в null затем он проверяет значение NULL для того, чтобы определить, был ли найден или не псевдоним.  
+## <a name="remarks"></a>Примечания  
+ Этот метод инициализирует целевой объект значение null перед вызовом метода; Затем выполняется проверка значения null впоследствии определить, был ли найден псевдоним.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

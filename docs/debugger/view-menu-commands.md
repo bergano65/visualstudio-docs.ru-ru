@@ -1,35 +1,35 @@
 ---
-title: "Команды меню &quot;Вид&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Команды меню "Вид""
+title: "Просмотреть команды меню | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: View menu commands
 ms.assetid: 86a66cce-3436-4532-bc3e-3b0662c8b198
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7eba9358efbbf5321b485bffa5c4b77f94d7abde
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Команды меню &quot;Вид&quot;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-В меню **Вид** представлены команды управления пользовательским интерфейсом Spy\+\+.  
+# <a name="view-menu-commands"></a>Команды меню "Вид"
+**Представление** меню предоставляет команды для управления Spy ++ пользовательского интерфейса.  
   
  **Шрифт**  
- Открывает диалоговое окно **Шрифт**, в котором можно выбрать шрифт для использования в текущем представлении Spy\+\+.  
+ Открывает **шрифта** диалоговое окно «», в котором можно выбрать шрифт для использования в текущем представлении Spy ++.  
   
  **Панель инструментов**  
- Отображает или скрывает панель инструментов.  
+ Скрытие или отображение панели инструментов.  
   
- **Status Bar**  
- Отображает или скрывает строку состояния.  
+ **Строка состояния**  
+ Скрытие или отображение строки состояния.  
   
  **Свойства**  
- Открывает диалоговое окно **Свойства** для активного представления.
+ Открывает **свойства** диалоговое окно активное представление.

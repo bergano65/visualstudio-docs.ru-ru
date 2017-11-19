@@ -1,52 +1,54 @@
 ---
-title: "IDebugComPlusSymbolProvider2::IsAddressSequencePoint | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugComPlusSymbolProvider2::IsAddressSequencePoint"
-  - "IsAddressSequencePoint"
+title: "IDebugComPlusSymbolProvider2::IsAddressSequencePoint | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugComPlusSymbolProvider2::IsAddressSequencePoint
+- IsAddressSequencePoint
 ms.assetid: 89b27c57-5295-428b-8229-a402500d8cd3
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 757dd89d79db7e6bb1a3374de5693e8e76ca3f28
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider2::IsAddressSequencePoint
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Определяет, если заданные адрес отладочные точки последовательности.  
+# <a name="idebugcomplussymbolprovider2isaddresssequencepoint"></a>IDebugComPlusSymbolProvider2::IsAddressSequencePoint
+Определяет, является ли указанный отладки адрес точки последовательности.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT IsAddressSequencePoint(  
-   IDebugAddress* pAddress  
+   IDebugAddress* pAddress  
 );  
 ```  
   
-```c#  
+```csharp  
 int IsAddressSequencePoint(  
-   IDebugAddress pAddress  
+   IDebugAddress pAddress  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pAddress`  
- \[in\] адрес, представленного отладки [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.  
+ [in] Отладка, представленный адрес [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейса.  
   
-## Возвращаемое значение  
- Если адрес отладка пункт последовательности, возвращается `S_OK`; в противном случае возвращает  `S_FALSE`.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Если адрес отладки является точкой следования, возвращает `S_OK`; в противном случае возвращает `S_FALSE`.  
   
-## Пример  
- В следующем примере показано, как реализовать этот метод, a **CDebugSymbolProvider** объект, предоставляющий  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) интерфейс.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) интерфейса.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::IsAddressSequencePoint(  
     IDebugAddress* pAddress  
 )  
@@ -84,5 +86,5 @@ Error:
 }  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

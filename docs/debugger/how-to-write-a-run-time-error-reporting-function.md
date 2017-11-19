@@ -1,40 +1,38 @@
 ---
-title: "Практическое руководство. Написание функции, сообщающей об ошибке во время выполнения | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "функция отчетов"
-  - "ошибки во время выполнения, функции отчетов"
+title: "Как: ошибка во время выполнения, функцию отчетов записи | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+helpviewer_keywords:
+- run-time errors, reporting functions
+- reporting function
 ms.assetid: 989bf312-5038-44f3-805f-39a34d18760e
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4d140606382367d5968871f65034db619fb9325e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство. Написание функции, сообщающей об ошибке во время выполнения
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Настраиваемая функция, сообщающая об ошибках, возникающих во время выполнения, должна иметь такое же объявление, что и `_CrtDbgReportW`.  Она должна возвращать отладчику значение 1.  
+# <a name="how-to-write-a-run-time-error-reporting-function"></a>Практическое руководство. Написание функции, сообщающей об ошибке во время выполнения
+Настраиваемая функция, сообщающая об ошибках, возникающих во время выполнения, должна иметь такое же объявление, что и `_CrtDbgReportW`. Она должна возвращать отладчику значение 1.  
   
  В следующем примере показано, как определяется настраиваемая функция, сообщающая об ошибках.  
   
-## Пример  
+## <a name="example"></a>Пример  
   
 ```  
 #include <stdio.h>  
@@ -65,8 +63,8 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 }  
 ```  
   
-## Пример  
- В следующем примере показана более сложная настраиваемая функция, сообщающая об ошибках.  В данном примере оператор переключателя обрабатывает ошибки различных типов, как определено в параметре `reportType` функции `_CrtDbgReportW`.  Поскольку `_CrtDbgReportW` заменяется, использовать `_CrtSetReportMode` нельзя.  Функция должна обрабатывать выходные данные.  Первый аргумент\-переменная в этой функции принимает номер ошибки, возникшей во время выполнения.  Дополнительные сведения см. в разделе [\_RTC\_SetErrorType](/visual-cpp/c-runtime-library/reference/rtc-seterrortype).  
+## <a name="example"></a>Пример  
+ В следующем примере показана более сложная настраиваемая функция, сообщающая об ошибках. В данном примере оператор переключателя обрабатывает ошибки различных типов, как определено в параметре `reportType` функции `_CrtDbgReportW`. Поскольку `_CrtDbgReportW` заменяется, использовать `_CrtSetReportMode` нельзя. Функция должна обрабатывать выходные данные. Первый аргумент-переменная в этой функции принимает номер ошибки, возникшей во время выполнения. Дополнительные сведения см. в разделе [_RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype).  
   
 ```  
 #include <windows.h>  
@@ -110,8 +108,8 @@ int Catch_RTC_Failure(int errType, const wchar_t *file, int line,
 #pragma runtime_checks("", restore)  
 ```  
   
-## Пример  
- Используйте `_RTC_SetErrorFuncW`для установки настраиваемой функции вместо `_CrtDbgReportW`.  Дополнительные сведения см. в разделе [\_RTC\_SetErrorFuncW](/visual-cpp/c-runtime-library/reference/rtc-seterrorfuncw).  `_RTC_SetErrorFuncW` является предшествующей функцией, сообщающей об ошибках, которую можно сохранить и, при необходимости, восстановить:  
+## <a name="example"></a>Пример  
+ Используйте `_RTC_SetErrorFuncW`для установки настраиваемой функции вместо `_CrtDbgReportW`. Дополнительные сведения см. в разделе [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw). `_RTC_SetErrorFuncW` является предшествующей функцией, сообщающей об ошибках, которую можно сохранить и, при необходимости, восстановить:  
   
 ```  
 #include <rtcapi.h>  
@@ -126,5 +124,5 @@ int main()
 }  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Настройка проверок во время выполнения машинного кода](../debugger/native-run-time-checks-customization.md)

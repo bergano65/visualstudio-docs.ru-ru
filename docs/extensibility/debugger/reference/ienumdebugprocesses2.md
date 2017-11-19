@@ -1,61 +1,61 @@
 ---
-title: "IEnumDebugProcesses2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugProcesses2"
-helpviewer_keywords: 
-  - "IEnumDebugProcesses2"
+title: "IEnumDebugProcesses2 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugProcesses2
+helpviewer_keywords: IEnumDebugProcesses2
 ms.assetid: 06a1368f-10f0-44eb-af61-e388c2327111
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6e5be156ec0a30f736b96cfe6451b893dfb8eacf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugProcesses2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Этот интерфейс перечисляет процессами, запущенными на порт отладки.  
+# <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
+Этот интерфейс перечисляет процессы, запущенные на порт отладки.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IEnumDebugProcesses : IUnknown  
 ```  
   
-## Примечания по реализации  
- Пользовательский поставщик порта, реализующий этот интерфейс, чтобы предоставить список процессов, запущенных на порт.  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
+ Поставщик пользовательский порт реализует этот интерфейс для предоставления списка процессов, запущенных на порту.  
   
-## Замечания для вызывающих объектов  
- Вызовы Visual Studio [EnumProcesses](../Topic/IDebugPort2::EnumProcesses.md) получить этот интерфейс.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Visual Studio вызывает [EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md) для получения этого интерфейса.  
   
-## Методы в том порядке Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IEnumDebugProcesses2`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[Далее](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)|Получает заданное число процессов в последовательности перечисления.|  
-|[Пропустить](../../../extensibility/debugger/reference/ienumdebugprocesses2-skip.md)|Пропустить заданное число процессов в последовательности перечисления.|  
-|[Сбросить](../../../extensibility/debugger/reference/ienumdebugprocesses2-reset.md)|Сбросить последовательность перечисления в начало.|  
-|[Клонировать](../Topic/IEnumDebugProcesses2::Clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugprocesses2-getcount.md)|Получает число процессов в перечислителе.|  
+|------------|-----------------|  
+|[Вперед](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)|Извлекает указанное число процессов в последовательности перечисления.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugprocesses2-skip.md)|Пропускает указанное число процессов в последовательности перечисления.|  
+|[Сброс](../../../extensibility/debugger/reference/ienumdebugprocesses2-reset.md)|Сбрасывает последовательность перечисления в начало.|  
+|[Клон](../../../extensibility/debugger/reference/ienumdebugprocesses2-clone.md)|Создает перечислитель, с тем же состоянием, как у текущего перечислителя.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugprocesses2-getcount.md)|Возвращает число процессов в перечислителе.|  
   
-## Заметки  
- Visual Studio использует этот интерфейс для заполнения **Процессы** окна.  
+## <a name="remarks"></a>Примечания  
+ Visual Studio использует этот интерфейс для заполнения **процессов** окна.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Базовых интерфейсов](../../../extensibility/debugger/reference/core-interfaces.md)   
- [EnumProcesses](../Topic/IDebugPort2::EnumProcesses.md)
+ [EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)

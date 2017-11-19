@@ -1,46 +1,45 @@
 ---
-title: "IDiaSectionContrib::get_code16bit | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSectionContrib::get_code16bit - метод"
+title: "IDiaSectionContrib::get_code16bit | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSectionContrib::get_code16bit method
 ms.assetid: 8cde8fc5-9546-4f82-b4a8-afd0d835039e
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 98a20a771de7c03a2b9b28b21fd3c42634c1a989
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSectionContrib::get_code16bit
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает пометить, указывающее, содержит ли раздел 16\-разрядный код.  
+# <a name="idiasectioncontribgetcode16bit"></a>IDiaSectionContrib::get_code16bit
+Возвращает флаг, указывающий, является ли раздел содержит 16-разрядного кода.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```C++  
 HRESULT get_code16bit(  
-   BOOL *pRetVal  
+   BOOL *pRetVal  
 };  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pRetVal`  
- \[out\] возвращает `TRUE` если код в разделе шестнадцатиразрядн; в противном случае возвращает  `FALSE`.  
+ [out] Возвращает `TRUE` при 16-разрядным; в противном случае код в разделе возвращает `FALSE`.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Этот метод отображает только если код шестнадцатиразрядн.  Если код не шестнадцатиразрядн, он может быть что\-нибудь еще, например 32 или 64 64\-разрядная версия кода.  
+## <a name="remarks"></a>Примечания  
+ Этот метод только указывает, является ли код 16-разрядное. Если код является 16-разрядное, это может быть другая информация, например 32-разрядная или 64-разрядного кода.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

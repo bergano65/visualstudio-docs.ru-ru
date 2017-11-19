@@ -1,30 +1,32 @@
 ---
-title: "IDebugComPlusSymbolProvider2::GetTypesByName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetTypesByName"
-  - "IDebugComPlusSymbolProvider2::GetTypesByName"
+title: "IDebugComPlusSymbolProvider2::GetTypesByName | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- GetTypesByName
+- IDebugComPlusSymbolProvider2::GetTypesByName
 ms.assetid: ef76b1a8-6910-48fe-b4af-d9045eefd23f
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 51da86dbcdcc45f431d2ef73d7f15a19335f3819
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider2::GetTypesByName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Получает тип с заданным именем.  
+# <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
+Извлекает объект типа с заданным именем.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT GetTypesByName(  
    LPCOLESTR          pszClassName,  
    NAME_MATCH         nameMatch,  
@@ -32,7 +34,7 @@ HRESULT GetTypesByName(
 );  
 ```  
   
-```c#  
+```csharp  
 int GetTypesByName(  
    string               pszClassName,  
    enum_ NAME_MATCH     nameMatch,  
@@ -45,7 +47,7 @@ int GetTypesByName(
  [in] Имя типа.  
   
  `nameMatch`  
- [in] Выбор типа сопоставления, например, с учетом регистра. Значение из [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) перечисления.  
+ [in] Выбирает тип соответствия, например, с учетом регистра. Значение из [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) перечисления.  
   
  `ppEnum`  
  [out] Перечислитель, который содержит тип или типы с заданным именем.  
@@ -53,13 +55,13 @@ int GetTypesByName(
 ## <a name="return-value"></a>Возвращаемое значение  
  В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## <a name="remarks"></a>Заметки  
- Для универсальных типов, имя для поиска в "списке \< int>" или «Список \< int, int >» будет «Список». Если типы с тем же именем, отображаются в нескольких модулях `ppEnum` параметра будет содержать все копии. Необходимо использовать [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) и определения на основе `guidModule` параметр.  
+## <a name="remarks"></a>Примечания  
+ Для универсальных типов, имя для поиска в службе "список\<int >" или "список\<int, int >" будет «Список». Если типы с тем же именем, отображаются в нескольких модулях `ppEnum` параметра будет содержать все копии. Вы должны использовать [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) и определения на основе `guidModule` параметра.  
   
 ## <a name="example"></a>Пример  
  В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) интерфейса.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::GetTypesByName(  
     LPCOLESTR pszClassName,  
     NAME_MATCH nameMatch,  

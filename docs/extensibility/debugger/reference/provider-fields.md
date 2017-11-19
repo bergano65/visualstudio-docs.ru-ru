@@ -1,64 +1,64 @@
 ---
-title: "PROVIDER_FIELDS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "PROVIDER_FIELDS"
-helpviewer_keywords: 
-  - "Перечисление PROVIDER_FIELDS"
+title: "PROVIDER_FIELDS | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: PROVIDER_FIELDS
+helpviewer_keywords: PROVIDER_FIELDS enumeration
 ms.assetid: 39631545-2b0e-45b4-978b-d63656484b02
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 01aa9048e26c265b1fe04ba653fb224b86ec77cd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# PROVIDER_FIELDS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Задает свойства, связанные с поставщиком программы.  
+# <a name="providerfields"></a>PROVIDER_FIELDS
+Указывает свойства, связанные с поставщиком программы.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-enum enum_PROVIDER_FIELDS {  
-   PFIELD_PROGRAM_NODES       = 0x01,  
-   PFIELD_IS_DEBUGGER_PRESENT = 0x02  
+```cpp  
+enum enum_PROVIDER_FIELDS {  
+   PFIELD_PROGRAM_NODES       = 0x01,  
+   PFIELD_IS_DEBUGGER_PRESENT = 0x02  
 };  
 typedef DWORD PROVIDER_FIELDS;  
 ```  
   
-```c#  
-public enum enum_PROVIDER_FIELDS {  
-   PFIELD_PROGRAM_NODES       = 0x01,  
-   PFIELD_IS_DEBUGGER_PRESENT = 0x02  
+```csharp  
+public enum enum_PROVIDER_FIELDS {  
+   PFIELD_PROGRAM_NODES       = 0x01,  
+   PFIELD_IS_DEBUGGER_PRESENT = 0x02  
 };  
 ```  
   
-## Члены  
- PFIELD\_PROGRAM\_NODES  
- `ProgramNodes` поле является допустимым.  
+## <a name="members"></a>Члены  
+ PFIELD_PROGRAM_NODES  
+ `ProgramNodes` Поле допустимо.  
   
- PFIELD\_IS\_DEBUGGER\_PRESENT  
- `fIsDebuggerPresent` поле является допустимым.  
+ PFIELD_IS_DEBUGGER_PRESENT  
+ `fIsDebuggerPresent` Поле допустимо.  
   
-## Заметки  
- Эти значения возвращаются в `Fields` элемент  [PROVIDER\_PROCESS\_DATA](../../../extensibility/debugger/reference/provider-process-data.md) структура, чтобы показать, какие поля структуры были явно заполняются.  
+## <a name="remarks"></a>Примечания  
+ Эти значения возвращаются в `Fields` членом [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) структуры, чтобы указать, какие поля структуры явно были заполнены.  
   
- Эти значения можно объединять с побитовый оператор `OR`.  
+ Эти значения могут быть объединены с помощью битового оператора `OR`.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [PROVIDER\_PROCESS\_DATA](../../../extensibility/debugger/reference/provider-process-data.md)
+ [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)

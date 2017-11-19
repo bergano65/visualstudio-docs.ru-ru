@@ -4,44 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IPropertyProxyEESide::GetManagedViewerCreationData
-helpviewer_keywords:
-- IPropertyProxyEESide::GetManagedViewerCreationData
+f1_keywords: IPropertyProxyEESide::GetManagedViewerCreationData
+helpviewer_keywords: IPropertyProxyEESide::GetManagedViewerCreationData
 ms.assetid: c4eb4d60-8816-4d52-bc8d-dffd4f066499
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 221d26b43f57c5519747ef04e9ccc17fc9fad10e
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: bc4d81470a1ea15573171a80034efcd6daf720ea
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
-Извлекает сведения о средстве просмотра для этого типа свойства для создания экземпляра этого просмотра.  
+Извлекает сведения о средстве просмотра для этого типа свойства для создания экземпляра этого средства просмотра.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT GetManagedViewerCreationData(  
    BSTR*                  assemName,  
    IEEDataStorage**       assemBytes,  
@@ -52,7 +36,7 @@ HRESULT GetManagedViewerCreationData(
 );  
 ```  
   
-```c#  
+```csharp  
 int GetManagedViewerCreationData(  
    out string                     assemName,  
    out IEEDataStorage             assemBytes,  
@@ -71,10 +55,10 @@ int GetManagedViewerCreationData(
  [out] Возвращает [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект, содержащий байты сборки этого объекта (это значение null, если байты не доступны).  
   
  `assemPdb`  
- [out] Возвращает `IEEDataStorage` объект, содержащий символ хранить сведения для этого объекта (это значение null при наличии не хранилище символов).  
+ [out] Возвращает `IEEDataStorage` объект, содержащий символ хранить сведения для этого объекта (это значение null при наличии не хранилища символов).  
   
  `className`  
- [out] Возвращает имя класса, содержащего этот объект.  
+ [out] Возвращает имя класса, содержащий этот объект.  
   
  `alr`  
  [out] Возвращает значение из [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) перечисление, указывающее расположение сборки.  
@@ -86,7 +70,7 @@ int GetManagedViewerCreationData(
  В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Этот метод используется тип визуализаторы для создания управляемого средства просмотра.  
+ Этот метод используется с визуализаторами типов для создания экземпляра управляемого просмотра.  
   
 ## <a name="see-also"></a>См. также  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   

@@ -1,61 +1,61 @@
 ---
-title: "IDebugDocument2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocument2"
-helpviewer_keywords: 
-  - "Интерфейс IDebugDocument2"
+title: "IDebugDocument2 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDocument2
+helpviewer_keywords: IDebugDocument2 interface
 ms.assetid: 1bc58426-dbf5-4471-9aad-9d66cd80eef0
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2a252accd95dda401ab0be974df4edbf7b722a18
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDocument2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugdocument2"></a>IDebugDocument2
 Этот интерфейс представляет исходный документ.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IDebugDocument2 : IUnknown  
 ```  
   
-## Примечания по реализации  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] обычно реализует этот интерфейс.  Отладчик \(DE\) также может реализовать этот интерфейс, когда необходимо указать исходный код и источник не существует на диске.  В таких случаях DE также реализации бы [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) и  [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) интерфейсы, а также некоторые дополнительные методы  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) и  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) интерфейсы.  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]как правило, реализует этот интерфейс. Отладчик (DE) можно реализовать этот интерфейс также в том случае, если ему необходимо предоставить исходный код и источник не существует на диске.  В таких случаях будет также реализовывать DE [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) и [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) интерфейсов, а также некоторые дополнительные методы на [ IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) и [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) интерфейсов.  
   
-## Замечания для вызывающих объектов  
- Методы `IDebugDocumentContext2`"  `IDebugDisassemblyStream2`"  `IDebugDocumentPosition2`и  `IDebugActivateDocumentEvent2` интерфейсы возвращают этот интерфейс.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Методы в `IDebugDocumentContext2`, `IDebugDisassemblyStream2`, `IDebugDocumentPosition2`, и `IDebugActivateDocumentEvent2` интерфейсы возвращают этот интерфейс.  
   
-## Методы в том порядке Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugDocument2`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)|Возвращает имя документа в одной из следующих форм.|  
+|------------|-----------------|  
+|[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)|Возвращает имя документа в одном из нескольких форм.|  
 |[GetDocumentClassID](../../../extensibility/debugger/reference/idebugdocument2-getdocumentclassid.md)|Получает идентификатор класса документа.|  
   
-## Заметки  
- Этот интерфейс реализуется только если DE почту исходный код.  Например, при отладке скрипт на странице HTML, DE почту исходный код, поскольку источник будет загружен или создаваемый динамически и не существует в виде файла на диске.  Отладку традиционных языков, как C\+\+, этот интерфейс не требуется реализовывать.  
+## <a name="remarks"></a>Примечания  
+ Этот интерфейс реализуется только в том случае, когда DE предоставляет исходный код. Например, при отладке скрипта в HTML-страницы, DE предоставляет исходный код из-за загрузкой или формируется динамически источника и не существует в качестве файла на диске. При отладке традиционных языков, таких как C++, этот интерфейс необязательно должен быть реализован.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IsPositionInDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-ispositionindocument.md)   
- [GetDocument](../Topic/IDebugActivateDocumentEvent2::GetDocument.md)   
- [GetDocument](../Topic/IDebugDocumentContext2::GetDocument.md)   
+ [GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)   
+ [GetDocument](../../../extensibility/debugger/reference/idebugdocumentcontext2-getdocument.md)   
  [GetDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-getdocument.md)   
  [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)

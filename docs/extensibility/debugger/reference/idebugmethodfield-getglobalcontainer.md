@@ -1,52 +1,52 @@
 ---
-title: "IDebugMethodField::GetGlobalContainer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMethodField::GetGlobalContainer"
-helpviewer_keywords: 
-  - "Метод IDebugMethodField::GetGlobalContainer"
+title: "IDebugMethodField::GetGlobalContainer | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugMethodField::GetGlobalContainer
+helpviewer_keywords: IDebugMethodField::GetGlobalContainer method
 ms.assetid: 041ac5aa-0b80-4310-b9ae-b88f8e7e0e5f
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ffeb7c7c1abe6e5a816c2d7a67ad6820e0921bc8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugMethodField::GetGlobalContainer
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Получает глобальный контейнер метода.  
+# <a name="idebugmethodfieldgetglobalcontainer"></a>IDebugMethodField::GetGlobalContainer
+Получает контейнер глобального метода.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT GetGlobalContainer(  
-   IDebugClassField** ppClass  
+   IDebugClassField** ppClass  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetGlobalContainer(  
-   out IDebugClassField ppClass  
+   out IDebugClassField ppClass  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppClass`  
- \[out\] возвращает [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) представляющая модуль, в котором определен этот метод.  
+ [out] Возвращает [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) представляющий модуль, в котором определен этот метод.  
   
-## Возвращаемое значение  
- В случае успеха возвращает значение S\_OK; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Возвращаемое [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) объект, представляющий весь модуль и является искусственным объект, т е сам модуль не имеет фактического класс, но он может быть представлен  `IDebugClassField` объект, позволяя различным элементам открынный модуля для перечисления и.  
+## <a name="remarks"></a>Примечания  
+ Возвращенный [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) объект представляет весь модуль и является объектом искусственного, то есть сам модуль не имеет фактического класса, но она может быть представлена `IDebugClassField` объекта, позволяя различных элементы модуля перечисления и обнаружения.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

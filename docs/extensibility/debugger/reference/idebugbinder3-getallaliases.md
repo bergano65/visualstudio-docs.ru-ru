@@ -1,58 +1,58 @@
 ---
-title: "IDebugBinder3::GetAllAliases | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBinder3::GetAllAliases"
-helpviewer_keywords: 
-  - "Метод IDebugBinder3::GetAllAliases"
+title: "IDebugBinder3::GetAllAliases | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBinder3::GetAllAliases
+helpviewer_keywords: IDebugBinder3::GetAllAliases method
 ms.assetid: 1f9ab2ee-2ab3-4a61-8b99-95dd7fdf3511
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a01c05354c6dcf80967e1b577a9adde11a7fdb7a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBinder3::GetAllAliases
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
 Этот метод извлекает список псевдонимов из программы.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
 HRESULT GetAllAliases(  
-   UINT          uRequest,  
-   IDebugAlias** ppAliases,  
-   UINT*         puFetched  
+   UINT          uRequest,  
+   IDebugAlias** ppAliases,  
+   UINT*         puFetched  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetAllAliases(  
-   uint          uRequest,   
-   IDebugAlias[] ppAliases,   
-   out uint      puFetched  
+   uint          uRequest,   
+   IDebugAlias[] ppAliases,   
+   out uint      puFetched  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `uRequest`  
- \[in\] максимальное количество псевдонимов для возврата \(задающее длину массива в `ppAliases`\).  
+ [in] Максимальное количество псевдонимов для возврата (указывает длину массива, передаваемого в `ppAliases`).  
   
  `ppAliases`  
- \[in, out\] массив байтов, заполняемый с псевдонимами \(если это значение равно NULL и `uRequest` 0 содержит количество псевдонимов, которые могут быть возвращены будут возвращены by  `puFetched`\).  
+ [in, out] Массив, в который наполнить псевдонимы (если это значение null и `uRequest` равно 0, будут возвращаться количество псевдонимов, которые могут быть возвращены `puFetched`).  
   
  `puFetched`  
- \[out\] возвращает число полученных псевдонимов.  
+ [out] Возвращает количество получить псевдонимы.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

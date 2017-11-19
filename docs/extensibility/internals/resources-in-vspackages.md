@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,29 +12,15 @@ helpviewer_keywords:
 - resources, managed VSPackages
 - VSPackages, managed resources
 ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
-caps.latest.revision: 23
+caps.latest.revision: "23"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: e4f74912dc5233cd62a4d35465d34c70e376c1df
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 8a49aa40daaa1bd0fc0543d2f6198212185c8490
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="resources-in-vspackages"></a>Ресурсы в пакетах VSPackage
 Локализованные ресурсы можно внедрять в собственном вспомогательные библиотеки DLL пользовательского интерфейса, управляемого вспомогательные библиотеки DLL, или в управляемом VSPackage сам.  
@@ -60,7 +45,8 @@ ms.lasthandoff: 09/06/2017
   
  Можно использовать <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> атрибут для указания [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] доступны, управляемые ресурсы.  
   
- [!code-csharp[#1 VSSDKResources](../../extensibility/internals/codesnippet/CSharp/resources-in-vspackages_1.cs) ] [!code-vb [VSSDKResources #1](../../extensibility/internals/codesnippet/VisualBasic/resources-in-vspackages_1.vb)]  
+ [!code-csharp[VSSDKResources#1](../../extensibility/internals/codesnippet/CSharp/resources-in-vspackages_1.cs)]
+ [!code-vb[VSSDKResources#1](../../extensibility/internals/codesnippet/VisualBasic/resources-in-vspackages_1.vb)]  
   
  Установка <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> таким образом указывает, что [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] следует игнорировать неуправляемых библиотек спутниковой связи DLL при поиске ресурсов, например, с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>. Если [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] обнаруживает два или более ресурсов, которые имеют тот же идентификатор ресурса, в нем первый ресурс, он находит.  
   
@@ -105,4 +91,3 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ## <a name="see-also"></a>См. также  
  [Управление пакетов VSPackage](../../extensibility/managing-vspackages.md)   
  [Локализованные ресурсы в приложениях MFC: вспомогательные библиотеки DLL](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)   
-

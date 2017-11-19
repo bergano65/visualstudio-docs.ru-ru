@@ -1,43 +1,44 @@
 ---
-title: "IDebugWindowsComputerPort2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Интерфейс IDebugWindowsComputerPort2"
+title: "IDebugWindowsComputerPort2 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugWindowsComputerPort2 interface
 ms.assetid: 25f327b8-0303-4268-88d1-74df630436aa
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2be6dfa5b5946c2da92becd7b1699b203c8a170e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugWindowsComputerPort2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Разрешает при запросе информации о конечном компьютере.  
+# <a name="idebugwindowscomputerport2"></a>IDebugWindowsComputerPort2
+Позволяет запрашивать сведения о конечном компьютере.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IDebugWindowsComputerPort2 : IUnknown  
 ```  
   
-## Примечания по реализации  
- Этот интерфейс реализуется объектами порта сеанса отладки диспетчер.  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
+ Этот интерфейс реализуется объектами порт диспетчера сеанса отладки.  
   
-## Методы  
+## <a name="methods"></a>Методы  
  В следующей таблице показаны методы `IDebugWindowsComputerPort2`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|Извлекает сведения о компьютере, на котором отладчик находится в запущенном.|  
+|------------|-----------------|  
+|[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|Извлекает сведения о компьютере, на котором отладчик в работе.|  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: Msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  

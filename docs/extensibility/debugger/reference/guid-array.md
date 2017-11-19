@@ -1,61 +1,62 @@
 ---
-title: "GUID_ARRAY | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Структура GUID_ARRAY"
+title: "GUID_ARRAY | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: GUID_ARRAY structure
 ms.assetid: 9e12500c-2c1c-49b1-a0ba-e08366c97eb8
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 689285d73881ce4556b859c799a0f923a300d373
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# GUID_ARRAY
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Описывает массив уникальных идентификаторов доступных обработчиков отладки.  
+# <a name="guidarray"></a>GUID_ARRAY
+Описывает массив уникальных идентификаторов для Доступные отладчики.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 typedef struct tagGUID_ARRAY  
 {  
-   DWORD dwCount;  
-   GUID *Members;  
+   DWORD dwCount;  
+   GUID *Members;  
 } GUID_ARRAY;  
 ```  
   
-```c#  
+```csharp  
 public struct GUID_ARRAY  
 {  
-   public uint dwCount;  
-   public Guid Members;  
+   public uint dwCount;  
+   public Guid Members;  
 }  
 ```  
   
-## Термины  
+## <a name="terms"></a>Термины  
  dwCount  
  Количество уникальных идентификаторов в массиве.  
   
  Члены  
  Массив, содержащий уникальные идентификаторы.  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
  Эта структура возвращается [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) метод.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: Msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)

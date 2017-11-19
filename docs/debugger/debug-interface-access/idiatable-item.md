@@ -1,55 +1,54 @@
 ---
-title: "IDiaTable::Item | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaTable::Item - метод"
+title: "IDiaTable::Item | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaTable::Item method
 ms.assetid: eae11b26-4807-400c-be25-e85bbc0c6b20
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e5c0c810dfd1a17f2fa63e64bf199a5882174aae
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaTable::Item
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает ссылку на определенной записи в таблице.  
+# <a name="idiatableitem"></a>IDiaTable::Item
+Извлекает ссылку на указанную запись в таблице.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT Item (   
-   DWORD      index,  
-   IUnknown** element  
+```C++  
+HRESULT Item (   
+   DWORD      index,  
+   IUnknown** element  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `index`  
- \[in\] индекс записи в диапазоне от 0 до таблицы `count`\-1, где  `count` возвращает   [IDiaTable::get\_Count](../../debugger/debug-interface-access/idiatable-get-count.md)метод.  
+ [in] Индекс записи в таблице, в диапазоне от 0 до `count`-1, где `count` возвращается [IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)метод.  
   
  `element`  
- \[out\] возвращает `IUnknown` объект, представляющий запись указанной таблицы.  
+ [out] Возвращает `IUnknown` , представляющий запись указанной таблицы.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Таблица представляет собой коллекцию объектов.  В зависимости от объектов, параметр элемента может быть приведен к соответствующему интерфейсу.  Например, если таблица содержит [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) объекты, затем параметр элемента может быть приведен к  `IDiaSegment` интерфейс.  
+## <a name="remarks"></a>Примечания  
+ Таблицы представляет коллекцию объектов. В зависимости от этих объектов параметра элемента может быть приведен к соответствующий интерфейс. Например, если таблица содержит [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) объектов, а затем элемент параметра может быть приведен к `IDiaSegment` интерфейса.  
   
- Более общий подход, вызываемый `QueryInterface` метод  [IDiaTable](../../debugger/debug-interface-access/idiatable.md) интерфейс для соответствующего интерфейса перечислителя и использует методы, определенные для доступа к содержимому таблицы.  См. [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) интерфейс для примера.  
+ Это наиболее распространенный подход для вызова `QueryInterface` метод в [IDiaTable](../../debugger/debug-interface-access/idiatable.md) интерфейса для интерфейса соответствующим перечислителем и использования перечислителя конкретных методов для доступа к содержимому таблицы. В разделе [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) интерфейса в качестве примера.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   
- [IDiaTable::get\_Count](../../debugger/debug-interface-access/idiatable-get-count.md)   
+ [IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)   
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)   
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

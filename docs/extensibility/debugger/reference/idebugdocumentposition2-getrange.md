@@ -1,64 +1,64 @@
 ---
-title: "IDebugDocumentPosition2::GetRange | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentPosition2::GetRange"
-helpviewer_keywords: 
-  - "IDebugDocumentPosition2::GetRange"
+title: "IDebugDocumentPosition2::GetRange | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDocumentPosition2::GetRange
+helpviewer_keywords: IDebugDocumentPosition2::GetRange
 ms.assetid: 91a06ee7-253a-4215-be22-04bf57305aa8
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9c1ea17c8125aea6c962c0562095ea8fba680f8b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDocumentPosition2::GetRange
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Получает диапазон для этой части документа.  
+# <a name="idebugdocumentposition2getrange"></a>IDebugDocumentPosition2::GetRange
+Возвращает диапазон для положения этого документа.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetRange(   
-   TEXT_POSITION* pBegPosition,  
-   TEXT_POSITION* pEndPosition  
+```cpp  
+HRESULT GetRange(   
+   TEXT_POSITION* pBegPosition,  
+   TEXT_POSITION* pEndPosition  
 );  
 ```  
   
-```c#  
-int GetRange(   
-   TEXT_POSITION[] pBegPosition,  
-   TEXT_POSITION[] pEndPosition  
+```csharp  
+int GetRange(   
+   TEXT_POSITION[] pBegPosition,  
+   TEXT_POSITION[] pEndPosition  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pBegPosition`  
- \[in, out\] a [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md) структура, заполняемую с начальной позицией.  Установите этот аргумент значение NULL, если эти данные не требуются.  
+ [in, out] Объект [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структуру, которая заполняется начальную позицию. Задайте этот аргумент со значением null, если эта информация не требуется.  
   
  `pEndPosition`  
- \[in, out\] a [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md) структура, заполняемую с положением окончания.  Установите этот аргумент значение NULL, если эти данные не требуются.  
+ [in, out] Объект [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структуру, которая заносится в текущем положении. Задайте этот аргумент со значением null, если эта информация не требуется.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Диапазон, указанное в позиции документа для точки останова расположения используется обработчиком отладки \(DE\) для поиска вперед для выписки, фактически предоставляет код.  Рассмотрим следующий пример кода:  
+## <a name="remarks"></a>Примечания  
+ Диапазон, указанный в документе должности точку останова используется подсистема отладки (DE) для поиска вперед для инструкции, которая фактически участвует кода. Рассмотрим следующий пример кода:  
   
 ```  
 Line 5: // comment  
 Line 6: x = 1;  
 ```  
   
- Линия 5 не вносит никакой код отлаживаемой программы.  Если отладчик, который задает точку останова на линии 5 хочет DE поиск передне определённое число для первой линии, которая предоставляет код ", отладчик определит диапазон, который содержит дополнительные линии выбранного, где может быть размещена точка останова надлежащим образом.  DE затем искал бы передняя сквозную те линии до тех пор, пока он не оснует линию, которая может принять точку останова.  
+ Строка 5 вносит без кода для отлаживаемой программы. Отладчик, который задает точку останова в строке 5 DE поиска в прямом направлении отведенного для первой строки, содержащей код, отладчик будет указать диапазон, включающий дополнительный кандидат строки, где может правильно разместить точки останова. DE будет затем осуществлять поиск вперед по те строки, пока его найти строку, которая могла бы принять точки останова.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)   
- [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md)
+ [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

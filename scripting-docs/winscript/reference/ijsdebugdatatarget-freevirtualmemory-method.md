@@ -1,25 +1,29 @@
 ---
-title: "Метод IJsDebugDataTarget::FreeVirtualMemory | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Метод IJsDebugDataTarget::FreeVirtualMemory | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IJsDebugDataTarget.FreeVirtualMemory
 apilocation: jscript9diag.dll
 ms.assetid: ea54bad3-9ae3-436b-974d-70fc7fffefd6
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3b53d7f80227a1c4eb0ef0293093543c09c5a367
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод IJsDebugDataTarget::FreeVirtualMemory
-Выпускает и\(или\) отменяет фиксацию области памяти в пространстве виртуальных адресов целевого процесса.  
+# <a name="ijsdebugdatatargetfreevirtualmemory-method"></a>Метод IJsDebugDataTarget::FreeVirtualMemory
+Освобождает или снимает выделение области памяти в пределах виртуального адресного пространства целевого процесса.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT FreeVirtualMemory(  
@@ -29,23 +33,23 @@ HRESULT FreeVirtualMemory(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `address`  
- \[in\] Адрес в целевом процессе, память в котором необходимо освободить.  
+ [in] Адрес в целевом процессе, где следует освободить память.  
   
  `size`  
- \[входящий\] Число байтов для отмены фиксации.  Чтобы освободить область памяти, это значение должно быть равно нулю.  
+ [in] Число байтов для фиксации. Чтобы освободить это область памяти, это значение должно равняться нулю.  
   
  `freeType`  
- \[in\] указывает тип свободной операции для выполнения.  Обычно это MEM\_RELEASE \(0x8000\), который выпускает заданную область страниц.  После этой операции страницы будут находиться в свободном состоянии.  MEM\_DECOMMIT \(0x4000\) можно использовать вместо того, чтобы отменять фиксацию страниц без освобождения.  
+ [in] Указывает тип выполняемой операции бесплатно. Обычно это MEM_RELEASE (0x8000), который высвобождает заданной области страницы. После выполнения операции страницы находятся в свободном состоянии. MEM_DECOMMIT (0x4000) можно использовать для фиксации страниц без их освобождения.  
   
-## Возвращаемое значение  
+## <a name="return-value"></a>Возвращаемое значение  
   
-## Заметки  
- Дополнительные сведения см. в API VirtualFree Win32.  
+## <a name="remarks"></a>Примечания  
+ Дополнительные сведения см. в разделе VirtualFree Win32 API.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  **Заголовок:** jscript9diag.h  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

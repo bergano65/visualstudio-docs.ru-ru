@@ -1,52 +1,54 @@
 ---
-title: "IDebugGenericParamField::ConstraintCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "ConstraintCount"
-  - "IDebugGenericParamField::ConstraintCount"
+title: "IDebugGenericParamField::ConstraintCount | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- ConstraintCount
+- IDebugGenericParamField::ConstraintCount
 ms.assetid: 76bef0cb-8a3c-4ce5-87cc-1809de229f33
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 58c266beca272a13399a97378c9be14792912f60
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugGenericParamField::ConstraintCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Возвращает количество ограничений, связанных с данным родовым параметром.  
+# <a name="idebuggenericparamfieldconstraintcount"></a>IDebugGenericParamField::ConstraintCount
+Возвращает количество ограничений, связанных с этой универсального параметра.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT ConstraintCount(  
-   ULONG32* pcConst  
+   ULONG32* pcConst  
 );  
 ```  
   
-```c#  
+```csharp  
 int ConstraintCount(  
-   ref uint pcConst  
+   ref uint pcConst  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pcConst`  
- \[in, out\] количество ограничений, связанных с этим полем.  
+ [in, out] Число ограничений, связанных с этим полем.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Пример  
- В следующем примере показано, как реализовать этот метод, a **CDebugGenericParamFieldType** объект, предоставляющий  [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) интерфейс.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как реализовать этот метод для **CDebugGenericParamFieldType** объекта, который предоставляет [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) интерфейса.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugGenericParamFieldType::ConstraintCount(ULONG32* pcConst)  
 {  
     HRESULT hr = S_OK;  
@@ -79,5 +81,5 @@ Error:
 }  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

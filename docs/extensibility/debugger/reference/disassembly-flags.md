@@ -1,84 +1,84 @@
 ---
-title: "DISASSEMBLY_FLAGS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DISASSEMBLY_FLAGS"
-helpviewer_keywords: 
-  - "Перечисление DISASSEMBLY_FLAGS"
+title: "DISASSEMBLY_FLAGS | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: DISASSEMBLY_FLAGS
+helpviewer_keywords: DISASSEMBLY_FLAGS enumeration
 ms.assetid: c1ec5a4d-5d42-4660-932c-7348550140cb
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1959b101ed5c2aca4c1d806781952ad4e4e6b1ad
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# DISASSEMBLY_FLAGS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Указывает флаги для дизассемблирования.  
+# <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
+Задает флаги для дизассемблирования.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-enum enum_DISASSEMBLY_FLAGS {   
-   DF_DOCUMENTCHANGE     = 0x00000001,  
-   DF_DISABLED           = 0x00000002,  
-   DF_INSTRUCTION_ACTIVE = 0x00000004,  
-   DF_DATA               = 0x00000008,  
-   DF_HASSOURCE          = 0x00000010,  
-   DF_DOCUMENT_CHECKSUM  = 0x00000020  
+```cpp  
+enum enum_DISASSEMBLY_FLAGS {   
+   DF_DOCUMENTCHANGE     = 0x00000001,  
+   DF_DISABLED           = 0x00000002,  
+   DF_INSTRUCTION_ACTIVE = 0x00000004,  
+   DF_DATA               = 0x00000008,  
+   DF_HASSOURCE          = 0x00000010,  
+   DF_DOCUMENT_CHECKSUM  = 0x00000020  
 };  
 typedef DWORD DISASSEMBLY_FLAGS;  
 ```  
   
-```c#  
-public enum enum_DISASSEMBLY_FLAGS {   
-   DF_DOCUMENTCHANGE     = 0x00000001,  
-   DF_DISABLED           = 0x00000002,  
-   DF_INSTRUCTION_ACTIVE = 0x00000004,  
-   DF_DATA               = 0x00000008,  
-   DF_HASSOURCE          = 0x00000010,  
-   DF_DOCUMENT_CHECKSUM  = 0x00000020  
+```csharp  
+public enum enum_DISASSEMBLY_FLAGS {   
+   DF_DOCUMENTCHANGE     = 0x00000001,  
+   DF_DISABLED           = 0x00000002,  
+   DF_INSTRUCTION_ACTIVE = 0x00000004,  
+   DF_DATA               = 0x00000008,  
+   DF_HASSOURCE          = 0x00000010,  
+   DF_DOCUMENT_CHECKSUM  = 0x00000020  
 };  
 ```  
   
-## Члены  
- DF\_DOCUMENTCHANGE  
- Указывает, что эта инструкция в другом документе, чем предыдущий.  
+## <a name="members"></a>Члены  
+ DF_DOCUMENTCHANGE  
+ Указывает, что эта инструкция является в другом документе, чем предыдущая.  
   
- DF\_DISABLED  
- Указывает, что эта инструкция не будет выполнена.  
+ DF_DISABLED  
+ Указывает, что эта инструкция не будет выполняться.  
   
- DF\_INSTRUCTION\_ACTIVE  
- Указывает, что эта инструкция одной из следующих инструкций для выполнения \(часть сообщения может встречаться в сообщении несколько\).  
+ DF_INSTRUCTION_ACTIVE  
+ Указывает, что эта инструкция является один далее инструкциям для выполнения (может быть несколько).  
   
- DF\_DATA  
- Указывает, что эта инструкция не являются данные \(код\).  
+ DF_DATA  
+ Указывает, эта инструкция является данных (не код).  
   
- DF\_HASSOURCE  
- Указывает, что эта инструкция имеет источник.  Некоторые инструкции, как профилирование или код сборки мусора, не имеет соответствующего источника.  
+ DF_HASSOURCE  
+ Указывает, что эта инструкция имеет источника. Некоторые инструкции, например, профилирование и сборке мусора код коллекции имеют нет соответствующего источника.  
   
- DF\_DOCUMENT\_CHECKSUM  
- Указывает, что `bstrDocumentUrl` поле содержит сведения о контрольной сумме выберите URL\-адрес документа.  См. раздел " примечания ", [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) структура, например сведения о контрольной сумме сохраняются.  
+ DF_DOCUMENT_CHECKSUM  
+ Указывает, что `bstrDocumentUrl` поле содержит данных контрольной суммы после URL-адрес документа. В разделе «Примечания» [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) структуру для способ хранения данных контрольной суммы.  
   
-## Заметки  
- Используется как `dwFlags` элемент  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) структура.  
+## <a name="remarks"></a>Примечания  
+ Используется в качестве `dwFlags` членом [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) структуры.  
   
- Эти флаги могут объединяться с побитовый оператор `OR`.  
+ Эти флаги могут объединяться с битовой `OR`.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

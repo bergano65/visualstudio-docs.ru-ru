@@ -1,55 +1,54 @@
 ---
-title: "IDiaSourceFile | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSourceFile - интерфейс"
+title: "IDiaSourceFile | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSourceFile interface
 ms.assetid: 6e9be757-797f-4960-ba62-c14092620bbd
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b742986d59024021eff5e85d54fc64247571df61
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSourceFile
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idiasourcefile"></a>IDiaSourceFile
 Представляет исходный файл.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
-IDiaSourceFile : IUnknown  
+IDiaSourceFile : IUnknown  
 ```  
   
-## Методы в том порядке Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDiaSourceFile`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[IDiaSourceFile::get\_uniqueId](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|Получает простое значение ключа целое число, являющееся уникальным для этого образа.|  
-|[IDiaSourceFile::get\_fileName](../../debugger/debug-interface-access/idiasourcefile-get-filename.md)|Возвращает имя файла источника.|  
-|[IDiaSourceFile::get\_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)|Извлекает тип контрольной суммы.|  
-|[IDiaSourceFile::get\_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Извлекает перечислитель compilands с номера линии, ссылающийся на этот файл.|  
-|[IDiaSourceFile::get\_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|Возвращает байты контрольной суммы.|  
+|------------|-----------------|  
+|[IDiaSourceFile::get_uniqueId](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|Извлекает значение ключа простой целое число, уникальное для этого образа.|  
+|[IDiaSourceFile::get_fileName](../../debugger/debug-interface-access/idiasourcefile-get-filename.md)|Возвращает имя исходного файла.|  
+|[IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)|Получает тип контрольной суммы.|  
+|[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Извлекает перечислитель компилируемые объекты с номерами строк, ссылающиеся на этот файл.|  
+|[IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|Получает байты контрольной суммы.|  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
   
-## Замечания для вызывающих объектов  
- Для получения этого интерфейса нужно вызвать метод [IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) OR  [IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) методы.  См. пример.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Получить этот интерфейс, вызвав [IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) или [IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) методы. Дополнительные сведения см.  
   
-## Пример  
- Эта функция отображает имена всех исходных файлов, содержащий подставляемые в указанной таблице.  
+## <a name="example"></a>Пример  
+ Эта функция отображает имена всех исходных файлов, в дополнение к указанной таблице.  
   
-```cpp#  
+```C++  
 void ShowSourceFiles(IDiaTable *pTable)  
 {  
     CComPtr<IDiaEnumSourceFiles> pSourceFiles;  
@@ -74,18 +73,18 @@ void ShowSourceFiles(IDiaTable *pTable)
 }  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: Dia2.h  
   
- Библиотеки: diaguids.lib  
+ Библиотека: diaguids.lib  
   
- Библиотеки DLL: msdia80.dll  
+ Библиотека DLL: msdia80.dll  
   
-## См. также  
- [Интерфейсы \(SDK для доступа к интерфейсу отладки\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>См. также  
+ [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)   
  [IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)   
- [IDiaLineNumber::get\_sourceFile](../Topic/IDiaLineNumber::get_sourceFile.md)   
+ [IDiaLineNumber::get_sourceFile](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)   
  [IDiaSession::findFileById](../../debugger/debug-interface-access/idiasession-findfilebyid.md)   
  [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)   
  [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)

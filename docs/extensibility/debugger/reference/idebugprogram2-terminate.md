@@ -1,48 +1,48 @@
 ---
-title: "IDebugProgram2::Terminate | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::Terminate"
-helpviewer_keywords: 
-  - "IDebugProgram2::Terminate"
+title: "IDebugProgram2::Terminate | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgram2::Terminate
+helpviewer_keywords: IDebugProgram2::Terminate
 ms.assetid: 4d3127d3-b1e9-4b28-ac22-2f2eea255f86
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 16f9e718eaebbb1ab82ea96c08661622ef7e1cd1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgram2::Terminate
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugprogram2terminate"></a>IDebugProgram2::Terminate
 Завершает программу.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT Terminate(   
-   void   
+```cpp  
+HRESULT Terminate(   
+   void   
 );  
 ```  
   
-```c#  
+```csharp  
 int Terminate();  
 ```  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Если возможно, программа будет завершена и выгрузить из процесса; в противном случае, обработчик отладки \(DE\) выполняет любую необходимую очистку.  
+## <a name="remarks"></a>Примечания  
+ Если это возможно программа будет завершен и выгружать из процесса; в противном случае модуль отладки (DE) будет выполнить необходимую очистку.  
   
- Этот метод или [Завершить](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) метод вызывается средой разработки, обычно в ответ на пользователь останавливая всю отладку.  Реализация этого метода должна быть завершена, в идеальном случае программа внутри процесса.  Если это невозможно, DE должен запретить программу выполнения более в этом процессе \(и выполнить любую необходимую очистку\).  Если `IDebugProcess2::Terminate` метод был вызван интегрированной средой разработки, весь процесс будет завершен когда\-то после  `IDebugProgram2::Terminate` вызывается метод.  
+ Этот метод или [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) метод вызывается в интегрированной среде разработки, обычно в ответ на прерывание всех отладки. Реализация этого метода в идеальном случае завершался программы внутри процесса. Если это невозможно, DE должно предотвратить выполнение этого процесса более программы (и выполнить необходимую очистку). Если `IDebugProcess2::Terminate` метод был вызван в интегрированной среде разработки, процесс будет завершен через некоторое время после `IDebugProgram2::Terminate` вызывается метод.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
- [Завершить](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)
+ [Завершение](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)

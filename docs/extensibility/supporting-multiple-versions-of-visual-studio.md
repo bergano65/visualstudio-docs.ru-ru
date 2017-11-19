@@ -1,51 +1,52 @@
 ---
-title: "Поддержка нескольких версий Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Поддержка нескольких версий Visual Studio"
-  - "Пакеты VSPackage, side-by-side совместимости"
+title: "Поддержка нескольких версий Visual Studio | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Visual Studio, supporting multiple versions
+- VSPackages, side-by-side compatibility
 ms.assetid: 0047aa90-1ed4-40d3-8772-622b2719a4b1
-caps.latest.revision: 20
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: cc9c13ecf6a5cc6e62caa897adce16830026261a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Поддержка нескольких версий Visual Studio
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Термин *side\-by\-side* означает, что можно установить и поддерживать несколько версий продукта на одном компьютере. Для пакетов VSPackages, это означает, что у пользователя могут быть установлены на одном компьютере несколько версий Visual Studio. Тем не менее не может иметь версии side\-by\-side вашей VSPackages загружаются в одной версии Visual Studio.  
+# <a name="supporting-multiple-versions-of-visual-studio"></a>Поддержка нескольких версий Visual Studio
+Термин *side-by-side* означает, что можно установить и поддерживать несколько версий продукта на одном компьютере. Для пакетов VSPackage, это означает, что пользователь может иметь несколько версий Visual Studio установлена на том же компьютере. Тем не менее не может иметь side-by-side версии пакетов VSPackage загружаются в одной версии Visual Studio.  
   
- Прежде чем вносить VSPackage могут быть загружены в side\-by\-side версий Visual Studio, необходимо учитывайте следующее:  
+ Прежде чем вносить VSPackage может быть загружена в side-by-side версий Visual Studio, необходимо учитывайте следующее:  
   
--   Необходимо определить, какие стратегии реализации side\-by\-side, необходимо следовать.  
+-   Необходимо определить стратегию side-by-side реализации, необходимо следовать.  
   
-     Дополнительные сведения см. в разделе [Выбор между VSPackages общих и управление версиями](../extensibility/choosing-between-shared-and-versioned-vspackages.md).  
+     Дополнительные сведения см. в разделе [Выбор между общим и пакеты VSPackage с версиями](../extensibility/choosing-between-shared-and-versioned-vspackages.md).  
   
--   Форматы файлов вашего решения и проекта должны помещаться стратегии реализации.  
+-   Стратегии реализации должен лежать в собственных форматах файлов решения и проекта.  
   
-     Дополнительные сведения см. в разделах [Обновление пользовательских проектов](../misc/upgrading-custom-projects.md) и [Регистрация расширений файлов для развертываний Side\-By\-Side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
+     Дополнительные сведения см. в разделе [обновление пользовательских проектов](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects) и [регистрации расширения имен файлов для развертываний Side-By-Side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
   
--   Установщик должен обрабатывать стратегии реализации, чтобы версий компонентов, а также компоненты, совместно используется всеми версиями правильно установлены и зарегистрированы.  
+-   Установщик должен обрабатывать стратегии реализации, чтобы версий компонентов и компонентов, совместно используется всеми версиями правильности установки и регистрации.  
   
-     Дополнительные сведения см. в разделе [Установка пакетов VSPackages с помощью установщика Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md) а также [Компонент управления](../extensibility/internals/component-management.md).  
+     Дополнительные сведения см. в разделе [Установка пакетов VSPackage с помощью установщика Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md) , а также [управления компонентами](../extensibility/internals/component-management.md).  
   
     > [!NOTE]
-    >  Чтобы установить версию Visual Studio также устанавливает соответствующую версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Например, при установке Visual Studio 2010 и Visual Studio 2012 на одном компьютере также устанавливаются версии 4.0 и 4.5 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], соответственно.  
+    >  Установка версии Visual Studio также устанавливает соответствующую версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Например, вместе с Visual Studio 2010 и Visual Studio 2012 на том же компьютере устанавливается версии 4.0 и 4.5 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]соответственно.  
   
-## В этом подразделе  
- [Выбор между VSPackages общих и управление версиями](../extensibility/choosing-between-shared-and-versioned-vspackages.md)  
- Способы устранения проблем side\-by\-side в VSPackage.  
+## <a name="in-this-section"></a>Содержание  
+ [Выбор между общими пакетами VSPackage и пакетами с контролем версий](../extensibility/choosing-between-shared-and-versioned-vspackages.md)  
+ Описываются способы решения проблемы side-by-side в пакете VSPackage.  
   
- [Регистрация расширений файлов для развертываний Side\-By\-Side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)  
- Описывает, как в случае side\-by\-side VSPackage можно зарегистрировать сопоставления файлов.  
+ [Регистрация расширений имен файлов для параллельных развертываний](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)  
+ Описывает, как VSPackage можно зарегистрировать в сценарии side-by-side сопоставления файлов.  
   
-## Связанные подразделы  
- [Установка пакетов VSPackage](../misc/installing-vspackages.md)  
- Описывает способы создания и установки пакетов VSPackages и поддержки пользователей, работающих одновременно несколько версий Visual Studio.
+## <a name="related-sections"></a>Связанные разделы  
+ [Установка пакетов VSPackage с помощью установщика Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md)  

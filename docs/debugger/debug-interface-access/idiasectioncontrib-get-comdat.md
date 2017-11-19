@@ -1,46 +1,45 @@
 ---
-title: "IDiaSectionContrib::get_comdat | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSectionContrib::get_comdat - метод"
+title: "IDiaSectionContrib::get_comdat | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSectionContrib::get_comdat method
 ms.assetid: 8bd9be8d-59ee-4698-b055-daba354b8dcc
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d3797f60e9ca6e97da3b7b6e44c89f802b086d13
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSectionContrib::get_comdat
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает пометить раздела COMDAT, указывающее, является ли запись.  
+# <a name="idiasectioncontribgetcomdat"></a>IDiaSectionContrib::get_comdat
+Возвращает флаг, который указывает, является ли раздел записи COMDAT.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT get_comdat (   
-   BOOL* pRetVal  
+```C++  
+HRESULT get_comdat (   
+   BOOL* pRetVal  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pRetVal`  
- \[out\] возвращает `TRUE` если раздел запись COMDAT; в противном случае возвращает  `FALSE`.  
+ [out] Возвращает `TRUE` Если раздел записи COMDAT; в противном случае возвращает `FALSE`.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`.  Возвращает `S_FALSE` если это свойство не поддерживается.  В противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
-## Заметки  
- Запись COMDAT запись в формате COFF, упакованные функции видимым компоновщику.  
+## <a name="remarks"></a>Примечания  
+ Записи COMDAT является общий объект файла формат COFF запись, которая делает упакованные функции видимым в компоновщик.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

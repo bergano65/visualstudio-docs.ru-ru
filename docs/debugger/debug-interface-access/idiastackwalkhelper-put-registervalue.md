@@ -1,51 +1,50 @@
 ---
-title: "IDiaStackWalkHelper::put_registerValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackWalkHelper2::put_registerValue - метод"
+title: "IDiaStackWalkHelper::put_registerValue | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackWalkHelper2::put_registerValue method
 ms.assetid: 8f02ce54-ef59-455f-8aa6-dc26761c7aff
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8abfd209e5c2f59a0c55128eb235fda868f4bfd5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackWalkHelper::put_registerValue
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Устанавливает значение регистра.  
+# <a name="idiastackwalkhelperputregistervalue"></a>IDiaStackWalkHelper::put_registerValue
+Задает значение регистра.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT put_registerValue (   
-   DWORD     index,  
-   ULONGLONG NewVal  
+```C++  
+HRESULT put_registerValue (   
+   DWORD     index,  
+   ULONGLONG NewVal  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `index`  
- \[in\] значение из [Перечисление CV\_HREG\_e](../../debugger/debug-interface-access/cv-hreg-e.md) перечисление, указывающее регистр для записи.  
+ [in] Значение из [CV_HREG_e-перечисление](../../debugger/debug-interface-access/cv-hreg-e.md) перечисление, определяющее регистра для записи.  
   
  `NewVal`  
- \[in\] новое значение регистра.  
+ [in] Новое значение регистра.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Несмотря на размер значения, реализация должна содержать только что обычно сохраняет регистр.  Например, регистрация держал мере 8 \(sp2\) только самые низкие 8 бит заданного значения.  
+## <a name="remarks"></a>Примечания  
+ Несмотря на размер значения реализация следует хранить только регистр обычно содержат. Например 8-битный регистр будет содержать только младшие 8-битов заданного значения.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [Перечисление CV\_HREG\_e](../../debugger/debug-interface-access/cv-hreg-e.md)
+ [Перечисление CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md)

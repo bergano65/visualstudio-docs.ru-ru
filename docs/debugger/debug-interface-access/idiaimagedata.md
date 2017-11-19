@@ -1,54 +1,53 @@
 ---
-title: "IDiaImageData | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaImageData - интерфейс"
+title: "IDiaImageData | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaImageData interface
 ms.assetid: b696f350-fc08-4352-9287-a15e87512c1e
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c76a173f137ede589b870f5119153a4233bcd730
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaImageData
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Предоставляет подробные сведения о базовых смещений расположения и памяти модуля или образа.  
+# <a name="idiaimagedata"></a>IDiaImageData
+Предоставляет сведения о базовых расположение и памяти смещения модуля или образа.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
-IDiaImageData : IUnknown  
+IDiaImageData : IUnknown  
 ```  
   
-## Методы в том порядке Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDiaImageData`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[IDiaImageData::get\_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Извлекает расположение в виртуальной памяти модуля по отношению к приложению.|  
-|[IDiaImageData::get\_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Извлекает расположение в виртуальной памяти образа.|  
-|[IDiaImageData::get\_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Извлекает область памяти, где образ должен быть основан.|  
+|------------|-----------------|  
+|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Получает расположение виртуальной памяти модуля относительно приложения.|  
+|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Вычисляет положение изображения в виртуальной памяти.|  
+|[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Получает области памяти, где должно быть основано изображения.|  
   
-## Заметки  
- Некоторые потоки отладки \(XDATA \- PDATA\) содержат копии данных, хранящихся в режиме.  Эти объекты данных потока можно запросить `IDiaImageData` интерфейс.  См. "примечания для вызывающих объектов" этого раздела.  
+## <a name="remarks"></a>Примечания  
+ Некоторые потоки отладки (XDATA, PDATA) содержат копии данных, также сохраняются в образе. Эти поток данных, можно запрашивать объекты `IDiaImageData` интерфейса. В разделе «Примечания для вызывающих объектов» в этом разделе приводятся подробные сведения.  
   
-## Замечания для вызывающих объектов  
- Для получения этого интерфейса нужно вызвать метод `QueryInterface` на  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) объект.  Обратите внимание, что не все потоки поддерживают отладки `IDiaImageData` интерфейс.  Например, в настоящее время потоки поддерживают только XDATA и PDATA `IDiaImageData` интерфейс.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Получить этот интерфейс, вызвав `QueryInterface` на [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) объекта. Обратите внимание, что не все отладки потоков поддержки `IDiaImageData` интерфейса. Например, в настоящее время поддерживает только потоки XDATA и PDATA `IDiaImageData` интерфейса.  
   
-## Пример  
- Этот пример находит все потоки отладки для любого потока, поддерживающий `IDiaImageData` интерфейс.  Если такой поток найден, то некоторые сведения об этом потоке.  
+## <a name="example"></a>Пример  
+ В этом примере производится поиск во всем потоки отладки для любой поток, поддерживающий `IDiaImageData` интерфейса. При обнаружении таких потока, отображается некоторые сведения об этом потоке.  
   
-```cpp#  
+```C++  
 void ShowImageData(IDiaSession *pSession)  
 {  
     if (pSession != NULL)  
@@ -112,13 +111,13 @@ void ShowImageData(IDiaSession *pSession)
 }  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: Dia2.h  
   
- Библиотеки: diaguids.lib  
+ Библиотека: diaguids.lib  
   
- Библиотеки DLL: msdia80.dll  
+ Библиотека DLL: msdia80.dll  
   
-## См. также  
- [Интерфейсы \(SDK для доступа к интерфейсу отладки\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>См. также  
+ [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

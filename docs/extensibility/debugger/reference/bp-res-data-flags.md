@@ -1,57 +1,57 @@
 ---
-title: "BP_RES_DATA_FLAGS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BP_RES_DATA_FLAGS"
-helpviewer_keywords: 
-  - "Перечисление BP_RES_DATA_FLAGS"
+title: "BP_RES_DATA_FLAGS | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: BP_RES_DATA_FLAGS
+helpviewer_keywords: BP_RES_DATA_FLAGS enumeration
 ms.assetid: d97611e2-def6-45a9-ad7d-eedf2ad4c82b
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 89bfe7f92e1260c83803136eeed1bf921c8913c8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# BP_RES_DATA_FLAGS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Определяет эмуляции ли точка останова данных или приведена в оборудовании.  
+# <a name="bpresdataflags"></a>BP_RES_DATA_FLAGS
+Указывает, реализовано в оборудования или ли эмулируемого точки останова в данных.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-enum enum_BP_RES_DATA_FLAGS {   
-   BP_RES_DATA_EMULATED = 0x0001  
+```cpp  
+enum enum_BP_RES_DATA_FLAGS {   
+   BP_RES_DATA_EMULATED = 0x0001  
 };  
 typedef DWORD BP_RES_DATA_FLAGS;  
 ```  
   
-```c#  
-public enum enum_BP_RES_DATA_FLAGS {   
-   BP_RES_DATA_EMULATED = 0x0001  
+```csharp  
+public enum enum_BP_RES_DATA_FLAGS {   
+   BP_RES_DATA_EMULATED = 0x0001  
 };  
 ```  
   
-## Члены  
- BP\_RES\_DATA\_EMULATED  
- Указывает, что точка останова данных эмуляции.  
+## <a name="members"></a>Члены  
+ BP_RES_DATA_EMULATED  
+ Указывает, что точка останова для данных эмулируется.  
   
-## Заметки  
- Используется для `dwFlags` элемент  [BP\_RESOLUTION\_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) структура.  
+## <a name="remarks"></a>Примечания  
+ Используется для `dwFlags` членом [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) структуры.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [BP\_RESOLUTION\_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)
+ [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)

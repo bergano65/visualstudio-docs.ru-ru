@@ -1,69 +1,71 @@
 ---
-title: "IDebugComPlusSymbolProvider::GetArrayTypeFromAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetArrayTypeFromAddress"
-  - "IDebugComPlusSymbolProvider::GetArrayTypeFromAddress"
+title: "IDebugComPlusSymbolProvider::GetArrayTypeFromAddress | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- GetArrayTypeFromAddress
+- IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
 ms.assetid: cc0c53f1-8c0f-49fa-8dbe-bc155e9ce0ef
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 43e8df22bcf5acdcef81dce761cfdf49398fcfee
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Извлекает сведения о типе об указанном массиве заданной его адрес отладки.  
+# <a name="idebugcomplussymbolprovidergetarraytypefromaddress"></a>IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
+Извлекает введите сведения о заданного массива, указанного адреса его отладки.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 [C++]  
 HRESULT GetArrayTypeFromAddress(  
-   IDebugAddress* pAddress,  
-   BYTE*          pSig,  
-   DWORD          dwSigLength,  
-   IDebugField**  ppField  
+   IDebugAddress* pAddress,  
+   BYTE*          pSig,  
+   DWORD          dwSigLength,  
+   IDebugField**  ppField  
 );  
 ```  
   
 ```  
 [C#]  
 int GetArrayTypeFromAddress(  
-   IDebugAddress   pAddress,  
-   int[]           pSig,  
-   uint            dwSigLength,  
-   out IDebugField ppField  
+   IDebugAddress   pAddress,  
+   int[]           pSig,  
+   uint            dwSigLength,  
+   out IDebugField ppField  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pAddress`  
- \[in\] адрес отладки, представленный [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.  
+ [in] Представленный адрес отладки [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейса.  
   
  `pSig`  
- \[in\] массив, который требуется проверить.  
+ [in] Массив, для проверки.  
   
  `dwSigLength`  
- \[in\] длина в байтах `pSig` массив.  
+ [in] Длина в байтах `pSig` массива.  
   
  `ppField`  
- \[out\] возвращает тип массива, как представлено [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) интерфейс.  
+ [out] Возвращает тип массива, представленный [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) интерфейса.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Пример  
- В следующем примере показано, как реализовать этот метод, a **CDebugSymbolProvider** объект, предоставляющий  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейса.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::GetArrayTypeFromAddress(  
     IDebugAddress *pAddress,  
     BYTE *pSig,  
@@ -96,5 +98,5 @@ Error:
 }  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

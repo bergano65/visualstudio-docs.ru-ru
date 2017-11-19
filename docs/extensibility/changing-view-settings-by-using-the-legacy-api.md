@@ -1,49 +1,50 @@
 ---
-title: "Изменение параметров представления с помощью API прежних версий | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "редакторы [Visual Studio SDK] прежних версий - изменение параметров представления"
+title: "Изменение параметров представления с помощью прежних версий API | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - changing view settings
 ms.assetid: 12c9b300-0894-4124-96a1-764326176d77
-caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: fe5bd3b149981ca8183e9311185ef5d6ed19e48f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Изменение параметров представления с помощью API прежних версий
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Параметры функций редактора, как перенос по словам, поле выделения и виртуальное пространство, могут быть изменены пользователем посредством **Параметры** диалоговое окно.  Однако можно также изменять эти параметры.  
+# <a name="changing-view-settings-by-using-the-legacy-api"></a>Изменение параметров представления с помощью API прежних версий
+Параметры основных функций редактора, например перенос по словам, выделения и виртуальное пространство, которые могут быть изменены пользователем с помощью параметра **параметры** диалоговое окно. Однако это также можно изменить эти параметры программным образом.  
   
-## Изменение параметров с использованием традиционного API  
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> интерфейс предоставляет набор свойств текстового редактора.  Представление текста, содержащий категорию свойств \(GUID\_EditPropCategory\_View\_MasterSettings\), которая представляет группу в составе программно изменены параметры для представления текста.  После настройки представления было изменено таким образом, они не могут быть изменены в **Параметры** диалоговое окно до тех пор, пока они не сброшены.  
+## <a name="changing-settings-by-using-the-legacy-api"></a>Изменение параметров с помощью API прежних версий  
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> Интерфейс предоставляет набор свойств текстового редактора. Текстовое представление содержит категорию свойств (GUID_EditPropCategory_View_MasterSettings), представляющее группу программно измененные параметры для представления текста. После настройки представления были изменены таким образом, их нельзя изменить в **параметры** диалоговое окно «», пока они переопределены.  
   
- Ниже приведен типичный процесс для изменения параметров представления для экземпляра редактора.  
+ Ниже приведен типичный процесс изменения параметров представления для экземпляра базового редактора.  
   
-1.  Вызов `QueryInterface` on \(<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>\)  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> интерфейс.  
+1.  Вызовите `QueryInterface` на (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) для <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> интерфейса.  
   
-2.  Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> метод, указав значение для GUID\_EditPropCategory\_View\_MasterSettings  `rguidCategory` параметр.  
+2.  Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> метод, указывая значение GUID_EditPropCategory_View_MasterSettings для `rguidCategory` параметра.  
   
-     Это возвращает указатель на <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> интерфейс, который содержит набор forced свойств для представления.  Все параметры в этой группе окончательно принудятся.  Если параметр отсутствует в этой группе, то его следует параметрами, определенными в **Параметры** диалоговое окно или группы пользователей.  
+     Таким образом возвращает указатель на <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> интерфейс, содержащий набор свойств принудительного для представления. Все параметры в этой группе постоянно принудительно. Если параметр не входит в эту группу, то она будет следовать параметры, указанные в **параметры** диалогового окна или команды пользователя.  
   
-3.  Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> метод, указав соответствующее значение параметров  `idprop` параметр.  
+3.  Вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> метод, указывая значение соответствующие параметры в `idprop` параметра.  
   
-     Например, принудительно перенос по словам, вызов <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> и укажите значение VSEDITPROPID\_ViewLangOpt\_WordWrap,  `vt` для  `idprop` параметр.  В этом вызове `vt` ВАРИАНТ типа и VT\_BOOL  `vt.boolVal` VARIANT\_TRUE.  
+     Например, чтобы принудительно выполнить перенос по словам, вызвать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> и укажите значение VSEDITPROPID_ViewLangOpt_WordWrap, `vt` для `idprop` параметра. В этом вызове `vt` является РАЗНОВИДНОСТЬЮ VT_BOOL и `vt.boolVal` имеет значение VARIANT_TRUE.  
   
-## Сбросить измененные параметры вид  
- Чтобы сбросить любой измененный параметр представления для экземпляра редактора, вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> метод и определяет подходящее значение параметра  `idprop` параметр.  
+## <a name="resetting-changed-view-settings"></a>Сброс параметров представления  
+ Чтобы сбросить все измененных параметров для экземпляра базового редактора просмотра, вызовите <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> метод и указать значение соответствующего параметра в `idprop` параметра.  
   
- Например, чтобы включить перенос по словам для плыть свободно, удалитьTfи мере его из категорий свойства путем вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> и указав значение для VSEDITPROPID\_ViewLangOpt\_WordWrap  `idprop` параметр.  
+ Например, разрешить свободно перемещаться по словам, вам нужно удалить его из категории свойств путем вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> и указав значение VSEDITPROPID_ViewLangOpt_WordWrap для `idprop` параметра.  
   
- Чтобы удалить все измененные параметры для редактора core одновременно, укажите значение для VSEDITPROPID\_ViewComposite\_AllCodeWindowDefaults, vt `idprop` параметр.  В этом вызове, vt ВАРИАНТ типа VT\_BOOL и vt.boolVal VARIANT\_TRUE.  
+ Чтобы удалить все измененные параметры для базового редактора, укажите значение VSEDITPROPID_ViewComposite_AllCodeWindowDefaults vt для `idprop` параметра. В этом вызове vt является РАЗНОВИДНОСТЬЮ VT_BOOL и vt.boolVal имеет значение VARIANT_TRUE.  
   
-## См. также  
- [В редакторе ядра](../extensibility/inside-the-core-editor.md)   
- [Доступ к theText представление с помощью API прежних версий](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
+## <a name="see-also"></a>См. также  
+ [В редакторе Core](../extensibility/inside-the-core-editor.md)   
+ [Доступ к theText представления с помощью API прежних версий](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
  [Диалоговое окно "Параметры"](../ide/reference/options-dialog-box-visual-studio.md)

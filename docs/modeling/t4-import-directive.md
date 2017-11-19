@@ -1,26 +1,28 @@
 ---
-title: "T4 Import Directive | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "T4 Import-директива | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 713ca975-b9aa-4210-bf6d-b7660f5b193b
-caps.latest.revision: 3
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: e27400d82f751136a3ce8e2e448f04935f2157a4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# T4 Import Directive
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-В блоках кода текстового шаблона T4 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] директива `import` позволяет ссылаться на элементы в другом пространстве имен без предоставления полного имени.  Она эквивалентна директиве `using` в C\# или `imports` в [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)].  
+# <a name="t4-import-directive"></a>Директива Import T4
+В блоках кода текстового шаблона T4 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] директива `import` позволяет ссылаться на элементы в другом пространстве имен без предоставления полного имени. Она эквивалентна директиве `using` в C# или `imports` в [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)].  
   
- Общие сведения о создании текстовых шаблонов T4 см. в разделе [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md).  
+ Общие сведения о создании текстовых шаблонов T4. в разделе [написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md).  
   
-## Использование директивы Import  
+## <a name="using-the-import-directive"></a>Использование директивы Import  
   
 ```  
 <#@ import namespace="namespace" #>  
@@ -36,18 +38,18 @@ caps.handback.revision: 3
 The file contains: <#=  fileContent #>  
 ```  
   
-## Стандартные импорты  
+## <a name="standard-imports"></a>Стандартные импорты  
  Следующее пространство имен импортируется автоматически, поэтому для него не нужно создавать директиву импорта:  
   
 -   `System`  
   
  Кроме того, при использовании пользовательской директивы процессор директив может импортировать некоторые пространства имен автоматически.  
   
- Например, при создании шаблонов для доменного языка \(DSL\) не требуется создавать директивы импорта для следующих пространств имен:  
+ Например, при создании шаблонов для доменного языка (DSL) не требуется создавать директивы импорта для следующих пространств имен:  
   
 -   `Microsoft.VisualStudio.Modeling`  
   
 -   Пространство имен доменного языка  
   
-## См. также  
- [T4 Assembly Directive](../modeling/t4-assembly-directive.md)
+## <a name="see-also"></a>См. также  
+ [Директива Assembly T4](../modeling/t4-assembly-directive.md)

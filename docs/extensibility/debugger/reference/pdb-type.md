@@ -1,67 +1,67 @@
 ---
-title: "PDB_TYPE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "PDB_TYPE"
-helpviewer_keywords: 
-  - "Структура PDB_TYPE"
+title: "PDB_TYPE | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: PDB_TYPE
+helpviewer_keywords: PDB_TYPE structure
 ms.assetid: 1c1bb772-77d6-4870-90b2-fd9247d0004e
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: eadfeb8ffdf7cdb1b51951c466f0cb94283da6a2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# PDB_TYPE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Эта структура содержит сведения о типе поля принятом из символов PDB.  
+# <a name="pdbtype"></a>PDB_TYPE
+Эта структура указывает сведения о типа поля, взяты из PDB-символов.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 typedef struct _tagTYPE_PDB {  
-   ULONG32 ulAppDomainID;  
-   GUID    guidModule;  
-   DWORD   symid;  
+   ULONG32 ulAppDomainID;  
+   GUID    guidModule;  
+   DWORD   symid;  
 } PDB_TYPE;  
 ```  
   
-```c#  
+```csharp  
 public struct PDB_TYPE {  
-   public uint ulAppDomainID;  
-   public Guid guidModule;  
-   public uint symid;  
+   public uint ulAppDomainID;  
+   public Guid guidModule;  
+   public uint symid;  
 };  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  ulAppDomainID  
- Идентификатор приложения, из которой пришел символ.  Это используется для уникальной идентификации экземпляра приложения.  
+ Идентификатор приложения, от которого поступило символа. Это используется для уникальной идентификации экземпляра приложения.  
   
  guidModule  
  Идентификатор GUID модуля, содержащего это поле.  
   
  symid  
- Идентификатор символа, который соответствует этому полю.  
+ Идентификатор символ, который соответствует этому полю.  
   
-## Заметки  
- Эта структура появляется как часть соединения в [TYPE\_INFO](../../../extensibility/debugger/reference/type-info.md) когда структура  `dwKind` поле   `TYPE_INFO` структура имеет значение  `TYPE_KIND_PDB` \(значение  [dwTYPE\_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) перечисление\).  
+## <a name="remarks"></a>Примечания  
+ Эта структура выводится как часть объединения в [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) структуры при `dwKind` поле `TYPE_INFO` структуры задано значение `TYPE_KIND_PDB` (значение из [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) Перечисление).  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: sh.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [TYPE\_INFO](../../../extensibility/debugger/reference/type-info.md)   
- [dwTYPE\_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)
+ [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)   
+ [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)

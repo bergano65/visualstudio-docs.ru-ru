@@ -1,64 +1,64 @@
 ---
-title: "IDebugSymbolProvider::GetTypeByName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugSymbolProvider::GetTypeByName"
-helpviewer_keywords: 
-  - "Метод IDebugSymbolProvider::GetTypeByName"
+title: "IDebugSymbolProvider::GetTypeByName | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugSymbolProvider::GetTypeByName
+helpviewer_keywords: IDebugSymbolProvider::GetTypeByName method
 ms.assetid: b9d88d3b-8b75-484a-b9cc-dc8c0fbb4bc8
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 816fc4685d4a431a81c5d3b3623690a95399aa99
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugSymbolProvider::GetTypeByName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Этот метод сопоставляет имя символа в тип символа.  
+# <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
+Этот метод сопоставляет имя символа типа символа.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetTypeByName(   
-   LPCOLESTR     pszClassName,  
-   NAME_MATCH    nameMatch,  
-   IDebugField** ppField  
+```cpp  
+HRESULT GetTypeByName(   
+   LPCOLESTR     pszClassName,  
+   NAME_MATCH    nameMatch,  
+   IDebugField** ppField  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetTypeByName(  
-   string          pszClassName,   
-   NAME_MATCH      nameMatch,   
-   out IDebugField ppField  
+   string          pszClassName,   
+   NAME_MATCH      nameMatch,   
+   out IDebugField ppField  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pszClassName`  
- \[in\] имя символа.  
+ [in] Имя символа.  
   
  `nameMatch`  
- \[in\] выбирает тип соответствия, например, с учетом регистра.  Значение из перечисления [NAME\_MATCH](../../../extensibility/debugger/reference/name-match.md).  
+ [in] Выбирает тип соответствия, например, с учетом регистра. Значение из [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) перечисления.  
   
  `ppField`  
- \[out\] возвращает тип символа как IDebugField объект.  
+ [out] Возвращает тип символа как [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекта.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Этот метод родовая версия  [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md).  
+## <a name="remarks"></a>Примечания  
+ Этот метод является универсальная версия [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
- [NAME\_MATCH](../../../extensibility/debugger/reference/name-match.md)   
+ [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)   
  [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)

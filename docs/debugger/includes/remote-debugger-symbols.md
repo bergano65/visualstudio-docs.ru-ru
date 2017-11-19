@@ -13,14 +13,14 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
 ms.openlocfilehash: 95d76781f651b681b81e4dd18848b404d8a85664
-ms.contentlocale: ru-ru
-
---- 
- You should be able to debug your code with the symbols you generate on the Visual Studio computer. The performance of the remote debugger is much better when you use local symbols.  If you must   use remote symbols, you need to tell the remote debugging monitor to look for symbols on the remote machine.  
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
+---
+ Вы можете отлаживать код с использованием символов, созданных на компьютере Visual Studio. Производительность удаленного отладчика гораздо выше при использовании локальных символов.  Если необходимо использовать удаленные символы, укажите, что монитор удаленной отладки должен искать символы на удаленном компьютере.  
   
- Starting in Visual Studio 2013 Update 2, you can use the following msvsmon command-line switch to use remote symbols for managed code: `Msvsmon /FallbackLoadRemoteManagedPdbs`  
+ Начиная с Visual Studio 2013 с обновлением 2, можно использовать следующий параметр командной строки msvsmon для использования удаленных символов для управляемого кода:`Msvsmon /FallbackLoadRemoteManagedPdbs`  
   
- For more information, please see the remote debugging help (press **F1** in the remote debugger window, or click **Help > Usage**). You can find more information at [.NET Remote Symbol Loading Changes in Visual Studio 2012 and 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)
+ Дополнительные сведения см. в разделе справке по удаленной отладке (нажмите клавишу **F1** в окне удаленного отладчика, или щелкните **Справка > использование**). Дополнительные сведения можно найти [.NET удаленной загрузки изменения символов в Visual Studio 2012 и 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)

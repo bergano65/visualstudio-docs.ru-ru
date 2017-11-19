@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptSiteDebug::GetDocumentContextFromPosition | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IActiveScriptSiteDebug::GetDocumentContextFromPosition | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptSiteDebug.GetDocumentContextFromPosition
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptSiteDebug::GetDocumentContextFromPosition"
+helpviewer_keywords: IActiveScriptSiteDebug::GetDocumentContextFromPosition
 ms.assetid: ba5f7348-0107-4b12-b949-79a012476cf7
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 25ce03a124f246443afd0f5a8540a93e7d474f9a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptSiteDebug::GetDocumentContextFromPosition
-Используемый обработчиком языка, чтобы делегировать `IDebugCodeContext::GetSourceContext`.  
+# <a name="iactivescriptsitedebuggetdocumentcontextfromposition"></a>IActiveScriptSiteDebug::GetDocumentContextFromPosition
+Использовать обработчик языка для делегирования `IDebugCodeContext::GetSourceContext`.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT GetDocumentContextFromPosition(  
@@ -32,28 +35,28 @@ HRESULT GetDocumentContextFromPosition(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `dwSourceContext`  
- \[in\] содержимое источника изменений в `ParseScriptText` или `AddScriptlet`.  
+ [in] Исходное содержимое, предоставляемое `ParseScriptText` или `AddScriptlet`.  
   
  `uCharacterOffset`  
- \[in\] смещение символа относительно начала блока или скрипта скрипта.  
+ [in] Знак смещения относительно начала блока сценария или сценариев.  
   
  `uNumChars`  
- \[in\] количество знаков в этом контексте.  
+ [in] Число символов в данном контексте.  
   
  `ppsc`  
- \[out\] контекст документа, соответствующий данному диапазону позиции символа.  
+ [out] Контекст документа, соответствующий диапазону этой позиции символа.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
- Обработчики языка, использующих этот метод, чтобы делегировать `IDebugCodeContext::GetSourceContext`.  
+## <a name="remarks"></a>Примечания  
+ Язык обработчики используют этот метод позволяет делегировать `IDebugCodeContext::GetSourceContext`.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IActiveScriptSiteDebug](../../winscript/reference/iactivescriptsitedebug-interface.md)

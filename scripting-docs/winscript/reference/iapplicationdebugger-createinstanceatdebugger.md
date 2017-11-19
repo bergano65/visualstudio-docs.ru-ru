@@ -1,30 +1,33 @@
 ---
-title: "IApplicationDebugger::CreateInstanceAtDebugger | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IApplicationDebugger::CreateInstanceAtDebugger | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IApplicationDebugger.CreateInstanceAtDebugger
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IApplicationDebugger::CreateInstanceAtDebugger"
+helpviewer_keywords: IApplicationDebugger::CreateInstanceAtDebugger
 ms.assetid: 6763afac-c86a-4e88-9580-77108fb242fb
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f6495c2d8782d1128700bdfb6d4081b80ffae878
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IApplicationDebugger::CreateInstanceAtDebugger
-Разрешает создание объектов в процессе отладчика кодом, вне процесса в отладчике.  
+# <a name="iapplicationdebuggercreateinstanceatdebugger"></a>IApplicationDebugger::CreateInstanceAtDebugger
+Позволяет создавать объекты в процессе отладчика с кодом, out-of-process в отладчик.  
   
 > [!IMPORTANT]
->  Этот метод не должен быть реализован, поскольку он позволяет ненадежный код для создания произвольных объектов в доверенном потоке отладчика.  
+>  Этот метод не должен быть реализован, так как она допускает ненадежного кода для создания произвольных объектов в поток доверенных отладчика.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT CreateInstanceAtDebugger(  
@@ -36,33 +39,33 @@ HRESULT CreateInstanceAtDebugger(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `rclsid`  
- \[in\] идентификатор класса \(CLSID\) объекта, который необходимо создать.  
+ [in] Идентификатор (класса CLSID) создаваемого объекта класса.  
   
  `pUnkOuter`  
- \[in\] если `NULL`, объект не создавать как часть пользователем агрегате.  В противном случае \- значение `pUnkOuter` указатель на интерфейс объекта `IUnknown` aggregate \(управление `IUnknown`\).  
+ [in] Если `NULL`, объект не создается в ходе статистической обработки. В противном случае `pUnkOuter` — это указатель на Агрегатный объект `IUnknown` интерфейса (Управление `IUnknown`).  
   
  `dwClsContext`  
- \[in\] контекст для выполнения исполняемого кода.  Значения берутся из перечисления `CLSCTX`.  
+ [in] Контекст для выполняющегося исполняемого кода. Значения берутся из перечисления `CLSCTX`.  
   
  `riid`  
- \[in\] идентификатор интерфейса, используемый для взаимодействия с объектом.  
+ [in] Идентификатор интерфейса, используемый для связи с объектом.  
   
  `ppvObject`  
- \[out\] Адрес переменной указателя, получающей указатель интерфейса, запрашиваемый в `riid`.  При удачном возвращении \- \*`ppvObject` содержит указатель интерфейса.  В случае сбоя, \*`ppvObject` содержит `NULL`.  
+ [out] Адрес переменной указателя, получающей указатель интерфейса, запрашиваемый в `riid`. После успешного возврата *`ppvObject` содержит указатель на запрошенный интерфейс. После сбоя \* `ppvObject` содержит `NULL`.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
- Делегаты этого метода в `CoCreateInstance`.  
+## <a name="remarks"></a>Примечания  
+ Этот метод делегирует `CoCreateInstance`.  
   
- Метод в настоящее время не реализуется.  
+ Метод не реализован в настоящее время.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)

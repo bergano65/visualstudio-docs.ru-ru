@@ -1,65 +1,47 @@
 ---
-title: CA2141:Transparent methods must not satisfy LinkDemands | Microsoft Docs
+title: "CA2141: прозрачные методы не должны удовлетворять требования LinkDemand | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- CA2141
+f1_keywords: CA2141
 ms.assetid: 2957f5f7-c511-4180-ba80-752034f10a77
-caps.latest.revision: 14
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: cc82ea81d02381c43d19d8fd55d4bd616085409e
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 880f48a3fc6f9ae09191d8d63120e7d71091118b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2141transparent-methods-must-not-satisfy-linkdemands"></a>CA2141:Transparent methods must not satisfy LinkDemands
+# <a name="ca2141transparent-methods-must-not-satisfy-linkdemands"></a>CA2141: прозрачные методы не должны удовлетворять требования LinkDemand
 |||  
 |-|-|  
 |TypeName|TransparentMethodsMustNotSatisfyLinkDemands|  
 |CheckId|CA2141|  
-|Category|Microsoft.Security|  
-|Breaking Change|Breaking|  
+|Категория|Microsoft.Security|  
+|Критическое изменение|Критическое|  
   
-## <a name="cause"></a>Cause  
- A security transparent method calls a method in an assembly that is not marked with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) attribute, or a security transparent method satisfies a <xref:System.Security.Permissions.SecurityAction>`.LinkDemand` for a type or a method.  
+## <a name="cause"></a>Причина  
+ Прозрачный для безопасности метод вызывает метод в сборке, не помеченной атрибутом <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) атрибута или прозрачный для безопасности метод удовлетворяет <xref:System.Security.Permissions.SecurityAction> `.LinkDemand` для типа или метода.  
   
-## <a name="rule-description"></a>Rule Description  
- Satisfying a LinkDemand is a security sensitive operation which can cause unintentional elevation of privilege. Security transparent code must not satisfy LinkDemands, because it is not subject to the same security audit requirements as security critical code. Transparent methods in security rule set level 1 assemblies will cause all LinkDemands they satisfy to be converted to full demands at run time, which can cause performance problems. In security rule set level 2 assemblies, transparent methods will fail to compile in the just-in-time (JIT) compiler if they attempt to satisfy a LinkDemand.  
+## <a name="rule-description"></a>Описание правила  
+ Удовлетворение требования LinkDemand является критически важные для операции безопасности, что может привести к непреднамеренному повышению уровня привилегий. Прозрачный для системы безопасности код не должны удовлетворять требования LinkDemand, так как он не может быть те же требования аудита безопасности, что и критический код безопасности. Прозрачные методы в сборках уровня 1 набора правил безопасности приведет все требования LinkDemand, они удовлетворяют должно быть преобразовано в полные требования во время выполнения, что может привести к снижению производительности. В сборках 2 уровня набора правил безопасности прозрачные методы не компилируется в компилятор just-in-time (JIT), если они пытаются удовлетворяет требованию LinkDemand.  
   
- In assemblies that usee Level 2 security, attempts by a security transparent method to satisfy a LinkDemand or call a method in a non-APTCA assembly raises a <xref:System.MethodAccessException>; in Level 1 assemblies the LinkDemand becomes a full Demand.  
+ В сборках, использующих безопасности уровня 2, попытки прозрачный для безопасности метод удовлетворяет требованию LinkDemand или вызвать метод в не APTCA сборки вызывает <xref:System.MethodAccessException>; в сборках уровня 1 LinkDemand, становятся полными требованиями.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, mark the accessing method with the <xref:System.Security.SecurityCriticalAttribute> or <xref:System.Security.SecuritySafeCriticalAttribute> attribute, or remove the LinkDemand from the accessed method.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Чтобы устранить нарушение данного правила, пометьте доступ к метод <xref:System.Security.SecurityCriticalAttribute> или <xref:System.Security.SecuritySafeCriticalAttribute> атрибута, либо удалите LinkDemand из метода доступа.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ Для этого правила отключать вывод предупреждений не следует.  
   
-## <a name="example"></a>Example  
- In this example, a transparent method attempts to call a method that has a LinkDemand. This rule will fire on this code.  
+## <a name="example"></a>Пример  
+ В этом примере прозрачный метод пытается вызвать метод с помощью LinkDemand. Это правило срабатывает на этот код.  
   
  [!code-csharp[FxCop.Security.CA2141.TransparentMethodsMustNotSatisfyLinkDemands#1](../code-quality/codesnippet/CSharp/ca2141-transparent-methods-must-not-satisfy-linkdemands_1.cs)]

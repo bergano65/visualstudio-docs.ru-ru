@@ -1,58 +1,58 @@
 ---
-title: "Элемент CustomParameter (шаблоны Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#CustomParameter"
-helpviewer_keywords: 
-  - "CustomParameters - элемент [шаблоны проектов Visual Studio]"
+title: "Элемент CustomParameter (шаблоны Visual Studio) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#CustomParameter
+helpviewer_keywords: CustomParameters element [Visual Studio project templates]
 ms.assetid: 743c4489-74ac-403a-bbaa-eed7d785a3ac
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d52d22e3b4200cee0bd5d3dd3eab3e5356f0dbbd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Элемент CustomParameter (шаблоны Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Содержит имя и значение пользовательского параметра, которые используются при создании проекта или элемента на основе шаблона.  
+# <a name="customparameter-element-visual-studio-templates"></a>Элемент CustomParameter (шаблоны Visual Studio)
+Содержит имя пользовательского параметра и значение, используемое при создании проекта или элемента из шаблона.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <CustomParameter Name="name" Value="value">  
 ```  
   
-## Атрибуты и элементы  
- В следующих разделах описаны атрибуты, дочерние элементы и родительские элементы.  
+## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
-### Атрибуты  
+### <a name="attributes"></a>Атрибуты  
   
 |Атрибут|Описание|  
-|-------------|--------------|  
-|`Name`|Обязательное.  Имя параметра.  Формат параметра: $*name*$.|  
-|`Value`|Обязательное.  Замещающее значение параметра.|  
+|---------------|-----------------|  
+|`Name`|Обязательный. Имя параметра. Формат для параметров: $*имя*$.|  
+|`Value`|Обязательный. Значение замены для параметра.|  
   
-### Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы  
  Отсутствует.  
   
-### Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы  
   
 |Элемент|Описание|  
-|-------------|--------------|  
-|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Группирует пользовательские параметры, которые передаются мастеру шаблонов при выполнении мастером замены параметров.|  
+|-------------|-----------------|  
+|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Группирует пользовательские параметры, которые могут быть переданы в мастер шаблонов, когда мастер замены параметров.|  
   
-## Заметки  
- Если шаблон содержит элементы `CustomParameter`, в каждом экземпляре атрибут `Name` заменяется атрибутом `Value` из файлов созданного проекта или элемента.  
+## <a name="remarks"></a>Примечания  
+ Если шаблон содержит `CustomParameter` элементов, каждый экземпляр `Name` атрибут заменяется `Value` атрибута в создаваемых файлов проекта или элемента.  
   
-## Пример  
- В следующем примере показано, как использовать в шаблоне несколько пользовательских параметров.  Когда проект или элемент создается из шаблона с использованием следующих пользовательских параметров, все экземпляры `$color1$` и `$color2$` в файлах шаблона заменяются на `Red` и `Blue` соответственно.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как использовать несколько пользовательских параметров в шаблоне. При создании проекта или элемента из шаблона с помощью следующих пользовательских параметров, все экземпляры `$color1$` и `$color2$` в шаблоне файлы будут заменены `Red` и `Blue`соответственно.  
   
 ```  
 <CustomParameters>  
@@ -61,7 +61,7 @@ caps.handback.revision: 6
 </CustomParameters>  
 ```  
   
-## См. также  
- [Элемент CustomParameters \(шаблоны Visual Studio\)](../extensibility/customparameters-element-visual-studio-templates.md)   
+## <a name="see-also"></a>См. также  
+ [Customparameters-элемент (шаблоны Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md)   
  [Параметры шаблона](../ide/template-parameters.md)   
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

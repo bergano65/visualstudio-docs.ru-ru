@@ -1,52 +1,52 @@
 ---
-title: "IDebugObject::GetManagedDebugObject | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugObject::GetManagedDebugObject"
-helpviewer_keywords: 
-  - "Метод IDebugObject::GetManagedDebugObject"
+title: "IDebugObject::GetManagedDebugObject | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugObject::GetManagedDebugObject
+helpviewer_keywords: IDebugObject::GetManagedDebugObject method
 ms.assetid: cb89692e-7657-47ff-846d-311943521951
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a01823a2409b15ba101ad4b55d5584e385872574
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugObject::GetManagedDebugObject
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Создает копию управляемого объекта в адресном пространстве обработчика отладки.  
+# <a name="idebugobjectgetmanageddebugobject"></a>IDebugObject::GetManagedDebugObject
+Создает копию объекта управляемого объекта в адресном пространстве ядро отладки.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetManagedDebugObject(   
-   IDebugManagedObject** ppObject  
+```cpp  
+HRESULT GetManagedDebugObject(   
+   IDebugManagedObject** ppObject  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetManagedDebugObject(  
-   out IDebugManagedObject ppObject  
+   out IDebugManagedObject ppObject  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppObject`  
- \[out\] возвращает [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) объект, представляющий созданный управляемый объект.  
+ [out] Возвращает [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) объект, представляющий только что созданный управляемого объекта.  
   
-## Возвращаемое значение  
- В случае успеха возвращает значение S\_OK; в противном случае возвращает код ошибки.  Возвращает E\_FAIL, если данное IDebugObject не представляет управляемый экземпляр класса значения.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки. Возвращает значение E_FAIL, если этот [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) не представляет экземпляр класса управляемого значения.  
   
-## Заметки  
- This [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объект должен представить управляемый экземпляр класса значения, например, a  `System.Decimal` экземпляр.  Путем иметь локальную копию, издержки вызова [Оценка](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) исключает.  
+## <a name="remarks"></a>Примечания  
+ Это [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объект должен представлять экземпляр класса управляемого значения `System.Decimal` экземпляра. При наличии локальной копии издержки, связанные с вызовом [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) исключается.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

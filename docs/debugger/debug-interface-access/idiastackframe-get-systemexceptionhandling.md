@@ -1,49 +1,48 @@
 ---
-title: "IDiaStackFrame::get_systemExceptionHandling | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackFrame::get_systemExceptionHandling"
+title: "IDiaStackFrame::get_systemExceptionHandling | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackFrame::get_systemExceptionHandling
 ms.assetid: c76cf265-dea0-4159-883f-32b50bbef044
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 29fb7d0493991e2cfcfe60b474bce1ff749c38e6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackFrame::get_systemExceptionHandling
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает пометить, указывающее, является ли обработка ошибок системы.  
+# <a name="idiastackframegetsystemexceptionhandling"></a>IDiaStackFrame::get_systemExceptionHandling
+Возвращает флаг, который указывает, является ли система обработки исключений в силе.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT get_systemExceptionHandling (   
-   BOOL* pRetVal  
+```C++  
+HRESULT get_systemExceptionHandling (   
+   BOOL* pRetVal  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pRetVal`  
- \[out\] возвращает `TRUE` если обработка ошибок системы, действующих для данного кадра; в противном случае возвращает  `FALSE`.  
+ [out] Возвращает `TRUE` Если обработка исключений системы действует для этого кадра; в противном случае возвращает `FALSE`.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`.  Возвращает `S_FALSE` если свойство не поддерживается.  В противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` , если свойство не поддерживается. В противном случае возвращается код ошибки.  
   
-## Заметки  
- Обработка ошибок системы также называется структурная обработка исключений.  Это не является один и тот же действия, как обработка исключений С\+\+.  
+## <a name="remarks"></a>Примечания  
+ Обработка исключений системы называется также структурированной обработки исключений. Это не то же, что обработка исключений с ++.  
   
- Чтобы определить, что обработка исключений С\+\+ в силе, вызовите [IDiaStackFrame::get\_cplusplusExceptionHandling](../Topic/IDiaStackFrame::get_cplusplusExceptionHandling.md) метод.  
+ Чтобы определить, действует ли обработка исключений с ++, вызовите [IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md) метод.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   
- [IDiaStackFrame::get\_cplusplusExceptionHandling](../Topic/IDiaStackFrame::get_cplusplusExceptionHandling.md)
+ [IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)

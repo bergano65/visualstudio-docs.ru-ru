@@ -1,46 +1,31 @@
 ---
-title: "Элемент UsedCommands | Документы Microsoft"
+title: "Элемент Используемыхкоманд | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- UsedCommands
+f1_keywords: UsedCommands
 helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
 ms.assetid: 5e000ee0-a919-46e9-9277-2a0659f1eb78
-caps.latest.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 2988cc106a87f82dc2a670076e9ff396802b7644
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: a51359a840812bc20714df91a3357801366f3616
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="usedcommands-element"></a>Элемент UsedCommands
-Элемент UsedCommands группы элементов UsedCommand и других UsedCommands группирований.  
+# <a name="usedcommands-element"></a>Элемент Используемыхкоманд
+Элемент Используемыхкоманд группирует элементы Используемойкоманды и других Используемыхкоманд группирований.  
   
- UsedCommands элемент является необязательным. Если не вызвать команды, определенные вне пакета, не нужно включать этот раздел в файл .vsct.  
+ Элемент Используемыхкоманд является необязательным. Если не нужно вызывать команды, определенные вне пакета, у вас для включения в vsct-файл в этом разделе.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -57,7 +42,7 @@ ms.lasthandoff: 02/22/2017
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|Условие|Необязательный. В разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Условие|Необязательно. В разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
@@ -69,7 +54,7 @@ ms.lasthandoff: 02/22/2017
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, представляющие команды (например, элементы меню, меню, панелей инструментов и поля со списком), которые предоставляет VSPackage интегрированную среду разработки (IDE).|  
+|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, представляющие команды (например, пункты меню, меню, панелей инструментов и поля со списком), которые VSPackage предоставляет интегрированную среду разработки (IDE).|  
   
 ## <a name="example"></a>Пример  
   
@@ -82,5 +67,5 @@ ms.lasthandoff: 02/22/2017
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Элемент UsedCommand](../extensibility/usedcommand-element.md)   
- [Таблицы команд Visual Studio (. Файлы Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Элемент Используемойкоманды](../extensibility/usedcommand-element.md)   
+ [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

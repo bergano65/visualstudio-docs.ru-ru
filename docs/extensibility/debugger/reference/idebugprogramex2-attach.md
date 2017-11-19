@@ -1,65 +1,65 @@
 ---
-title: "IDebugProgramEx2::Attach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramEx2::Attach"
-helpviewer_keywords: 
-  - "IDebugProgramEx2::Attach"
+title: "IDebugProgramEx2::Attach | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgramEx2::Attach
+helpviewer_keywords: IDebugProgramEx2::Attach
 ms.assetid: 33b22b2f-431e-4205-9441-d28a9c928c97
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b8d025d4e788ac63ab0c75429e08c48215b9c902
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgramEx2::Attach
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Вложите сеанс в программе.  
+# <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
+Сеанс присоединения к программе.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT Attach(   
-   IDebugEventCallback2* pCallback,  
-   DWORD                 dwReason,  
-   IDebugSession2*       pSession  
+```cpp  
+HRESULT Attach(   
+   IDebugEventCallback2* pCallback,  
+   DWORD                 dwReason,  
+   IDebugSession2*       pSession  
 );  
 ```  
   
 ```  
 [C#]  
-int Attach(   
-   IDebugEventCallback2 pCallback,  
-   uint                 dwReason,  
-   IDebugSession2       pSession  
+int Attach(   
+   IDebugEventCallback2 pCallback,  
+   uint                 dwReason,  
+   IDebugSession2       pSession  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pCallback`  
- \[in\] IDebugEventCallback2 объект, который представляет функцию обратного вызова, что вложенные обработчик отладки отправляет события.  
+ [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) , представляющий модуль вложенного отладки отправка событий в функции обратного вызова.  
   
  `dwReason`  
- \[in\] значение из [ATTACH\_REASON](../../../extensibility/debugger/reference/attach-reason.md) перечисление, описывающее причину для операции присоединения.  
+ [in] Значение из [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) перечисление, описывающее причину операции присоединения.  
   
  `pSession`  
- \[in\] значение, уникально определяющее сеанс, вложение в программе.  
+ [in] Значение, уникально идентифицирующий сеанс, присоединение к программе.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  Этот метод должен возвращать `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` если программа уже вложенна.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Этот метод должен возвращать `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` Если программа уже присоединен.  
   
-## Заметки  
- Порт, который содержит программу может использовать значение в пределах `pSession` определить, какой сеанс пытается вложить в программе.  Например, если порт разрешает только один сеанс отладки, чтобы вложение в процесс, если один и тот же порт может определить сеанс уже вложен в другой программы в процессе.  
+## <a name="remarks"></a>Примечания  
+ Порт, в которой находится программа может использовать значение в `pSession` для определения, какой сеанс пытается выполнить присоединение к программе. Например если порт допускает только один отладку для присоединения к процессу одновременно, порт можно определить, если сеанс уже присоединен к другие программы, в процессе.  
   
 > [!NOTE]
->  Интерфейс переданный `pSession` должна рассматриваться только как файл cookie, значение, уникально определяющее сеанс отладки диспетчер вложа в этой программе; ни один из методов в интерфейсе, предоставляемом функциональны.  
+>  Переданный интерфейс `pSession` следует рассматривать только в качестве файла cookie, значение, однозначно определяющее диспетчера сеанса отладки, присоединение к этой программе; ни один из методов в интерфейсе предоставленного работают.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

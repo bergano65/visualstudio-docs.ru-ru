@@ -1,57 +1,58 @@
 ---
-title: "IDebugProgram3::ExecuteOnThread | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugProgram3::ExecuteOnThread"
+title: "IDebugProgram3::ExecuteOnThread | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugProgram3::ExecuteOnThread
 ms.assetid: 2f5211e3-7a3f-47bf-9595-dfc8b4895d0d
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b75ee8c7b53e751f322ba41bc3f93e2542e192ef
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgram3::ExecuteOnThread
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Выполняет программу отладчика.  Поток возвращается для предоставления сведений отладчика, на которых поток пользователь просматривает выполнение программы.  
+# <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
+Выполняет программу отладчика. Поток возвращается для предоставления информации отладчика, в каком потоке пользователь просматривает при выполнении программы.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT ExecuteOnThread(  
-   [in] IDebugThread2* pThread)  
+   [in] IDebugThread2* pThread)  
 ```  
   
-```c#  
+```csharp  
 int ExecuteOnThread(  
-   IDebugThread2 pThread  
+   IDebugThread2 pThread  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pThread`  
- \[in\] IDebugThread2 объект.  
+ [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) объекта.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- 3 Различными способами, что отладчик может возобновить выполнение после остановки.  
+## <a name="remarks"></a>Примечания  
+ Существует три способа, отладчик может возобновить выполнение после остановки:  
   
--   Выполните: Не смогут отменять любой предыдущий шаг, и запускается до следующей точки останова и т д  
+-   Выполнение: Отменить все ранее и выполняется до следующей точки останова и т. д.  
   
--   Шаг: Отмена любой старый шаг и запуск нового шага до завершения.  
+-   Шаг: Отменить все старые шаг и выполнить до завершения новый шаг.  
   
--   Продолжайте: Запустите снова и оставить старый активный любого этапа.  
+-   Продолжить: Запустите еще раз, а также оставить какой-либо шаг старого active.  
   
- Поток, передаваемый `ExecuteOnThread` удобно использовать при решении того, авторизирован, шаг, который требуется отменить.  Если неизвестно, то при выполнении потока выполнения отменяет все шаги.  С набором знаний потока, нужно только отмены шага на активном потоке.  
+ Поток, передаваемый `ExecuteOnThread` полезно при определении этап для отмены. Если вы не знаете, работающей в потоке выполнения отменяет все шаги. С помощью базы знаний потока достаточно отменить действие для активного потока.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Выполнение](../../../extensibility/debugger/reference/idebugprogram2-execute.md)   
  [IDebugProgram3](../../../extensibility/debugger/reference/idebugprogram3.md)

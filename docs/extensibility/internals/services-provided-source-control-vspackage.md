@@ -1,29 +1,31 @@
 ---
-title: "Службы, предоставляемые (VSPackage управления источника) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "службы пакетов систем управления версиями"
-  - "пакеты управления исходным кодом, службы"
+title: "Службы, предоставляемые (VSPackage управления источника) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- services, source control packages
+- source control packages, services
 ms.assetid: 9db07d70-87d2-4401-bc88-e3a49d81e9a2
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c30c374756578fd71dd344393b58f38cacadeb19
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Службы, предоставляемые (VSPackage управления источника)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Службы первичный механизм, через который функциональность совместно между VSPackages, а между средой разработки Visual Studio ide\), и устанавливанным VSPackages.  Подробное описание служб и их важность в интегрированной среде разработки Visual Studio см. в разделе[Использование и предоставления услуг](../../extensibility/using-and-providing-services.md).  
+# <a name="services-provided-source-control-vspackage"></a>Службы, предоставляемые (VSPackage управления источника)
+Службы являются основным механизмом, через который общие функциональные возможности среди пакетов VSPackage, а также между Visual Studio интегрированной среды разработки (IDE) и его установленных пакетов VSPackage. Подробное описание службы и их важности в Интегрированной среде разработки Visual Studio см. в разделе[использование и предоставление службы](../../extensibility/using-and-providing-services.md).  
   
-## Службы системы управления версиями  
- Visual Studio предоставляет 2 уровня службы, служб \- это Интегрированная среда разработки\-уровня и служб уровня пакета.  Интегрированная среда разработки Visual Studio изначально предоставляет службы среда разработки\-уровня.  Пакет системы управления версиями использует некоторые из этих служб.  Пакет системы управления версиями, как VSPackage совместно использует его возможности системы управления версиями, предоставляя частной службы системы управления версиями.  Пакет системы управления версиями инкапсулирует набор интерфейсов, реализованных ним источника элемент управления\-родственных в форме контракта, который используется средой разработки Visual Studio.  
+## <a name="the-source-control-service"></a>Систему управления версиями  
+ Visual Studio предоставляет два уровня службы, службы интегрированной среды разработки уровня и уровня пакета. По умолчанию, в Интегрированной среде разработки Visual Studio предоставляют интегрированной среды разработки уровня служб. Пакет системы управления версиями использует некоторые из этих служб. Пакет системы управления версиями, как VSPackage использует его функций системы управления версиями, предоставляя свои собственные службы управления частного источника. Пакет системы управления версиями инкапсулирует набор источника связанные с управлением интерфейсов, реализованных в виде контракта, который можно использовать в интегрированной среде разработки Visual Studio.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Элементы макета](../../extensibility/internals/source-control-vspackage-design-elements.md)

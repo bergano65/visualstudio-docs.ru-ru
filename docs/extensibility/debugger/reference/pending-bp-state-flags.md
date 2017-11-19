@@ -1,62 +1,62 @@
 ---
-title: "PENDING_BP_STATE_FLAGS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "PENDING_BP_STATE_FLAGS"
-helpviewer_keywords: 
-  - "Перечисление PENDING_BP_STATE_FLAGS"
+title: "PENDING_BP_STATE_FLAGS | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: PENDING_BP_STATE_FLAGS
+helpviewer_keywords: PENDING_BP_STATE_FLAGS enumeration
 ms.assetid: 85522449-3fd8-4da5-b0fe-a43160e0c33b
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c89469cd1b2d41fc0e3258d2875b9e22b7c55747
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# PENDING_BP_STATE_FLAGS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Определяет ожидающих национальные флаги точки останова.  
+# <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
+Задает флаги состояния ожидающая точка останова.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-enum enum_PENDING_BP_STATE_FLAGS {   
-   PBPSF_NONE        = 0x0000,  
-   PBPSF_VIRTUALIZED = 0x0001  
+```cpp  
+enum enum_PENDING_BP_STATE_FLAGS {   
+   PBPSF_NONE        = 0x0000,  
+   PBPSF_VIRTUALIZED = 0x0001  
 };  
 typedef DWORD PENDING_BP_STATE_FLAGS;  
 ```  
   
-```c#  
-public enum enum_PENDING_BP_STATE_FLAGS {   
-   PBPSF_NONE        = 0x0000,  
-   PBPSF_VIRTUALIZED = 0x0001  
+```csharp  
+public enum enum_PENDING_BP_STATE_FLAGS {   
+   PBPSF_NONE        = 0x0000,  
+   PBPSF_VIRTUALIZED = 0x0001  
 };  
 ```  
   
-## Члены  
- PBPSF\_NONE  
+## <a name="members"></a>Члены  
+ PBPSF_NONE  
  Заполнитель.  
   
- PBPSF\_VIRTUALIZED  
- Определяет virtualized ожидающие точки останова, расположенную быть привязанным каждый раз, когда новый код загружен.  
+ PBPSF_VIRTUALIZED  
+ Указывает виртуализированных ожидающие точки останова, будет привязано каждый раз при загрузке нового кода.  
   
-## Заметки  
- Используется для `flags` элемент  [PENDING\_BP\_STATE\_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) структура.  
+## <a name="remarks"></a>Примечания  
+ Используется для `flags` членом [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) структуры.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [PENDING\_BP\_STATE\_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)
+ [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)

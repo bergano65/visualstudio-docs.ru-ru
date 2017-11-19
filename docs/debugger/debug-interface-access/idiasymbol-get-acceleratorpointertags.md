@@ -1,51 +1,51 @@
 ---
-title: "IDiaSymbol::get_acceleratorPointerTags | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: "IDiaSymbol::get_acceleratorPointerTags | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: 30e13cee-e511-49ec-affd-99b0097071b2
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e8467c25c8665dfb3fc91ea29d9b99c184b7ecce
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_acceleratorPointerTags
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Возвращает все значения тега указателя сочетаний клавиш, которые соответствуют функции заглушки сочетаний клавиш C\+\+ AMP.  
+# <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
+Возвращает все значения тега указатель сочетаний клавиш, соответствующие функции C++ AMP заглушки сочетаний клавиш.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp  
+```C++  
 HRESULT get_acceleratorPointerTags(   
    DWORD          cnt,  
    DWORD*         pcnt,  
    DWORD*         pPointerTags);  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `cnt`  
- \[in\] размер массива `pPointerTags` вывода.  
+ [in] Размер выходного массива `pPointerTags`.  
   
  `pcnt`  
- \[out\] количество тегов указателя сочетаний клавиш в функции заглушки сочетаний клавиш C\+\+ AMP.  
+ [out] Счетчик тегов указатель сочетаний клавиш в C++ AMP функции заглушки сочетаний клавиш.  
   
  `pPointerTags`  
- \[out\] указатель массива a `DWORD`, который заполняется тегом указателя сочетаний клавиш оценивает в функции заглушки сочетаний клавиш C\+\+ AMP.  
+ [out] Объект `DWORD` указатель на массив, который заполняется значениями тег указателей сочетаний клавиш в C++ AMP функции заглушки сочетаний клавиш.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_ОК`; в противном случае передачи `S_FALSE` или код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
-## Заметки  
- Этот метод вызывается в интерфейсе `IDiaSymbol`, который соответствует функции заглушки сочетаний клавиш C\+\+ AMP.  
+## <a name="remarks"></a>Примечания  
+ Этот метод вызывается для `IDiaSymbol` интерфейс, который соответствует функции C++ AMP заглушки сочетаний клавиш.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,1 +1,1 @@
-Internet Explorer 9 \(стандартный режим\)
+Internet Explorer 9 (стандартный режим)

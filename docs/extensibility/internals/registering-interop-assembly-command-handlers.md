@@ -4,52 +4,37 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - interop assemblies, command handlers
 - command handling with interop assemblies, registering
 ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
-caps.latest.revision: 19
+caps.latest.revision: "19"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 774266bbcd64e87229f8f97626cdff1462b27fcb
-ms.contentlocale: ru-ru
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 6f359c8bcad7bdc32b481fa6fc30a96a8669129f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Регистрация обработчиков команд сборки взаимодействия
 Необходимо зарегистрировать VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , чтобы интегрированной среды разработки (IDE) правильно перенаправляет его команды.  
   
  Можно обновить реестр, путем редактирования вручную или с помощью файла регистратора (RGS-). Дополнительные сведения см. в разделе [Создание скриптов регистратора](/cpp/atl/creating-registrar-scripts).  
   
- Managed Package Framework (MPF) предоставляет следующие функциональные возможности через <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>класс.</xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>  
+ Managed Package Framework (MPF) предоставляет следующие функциональные возможности через <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> класса.  
   
  [Команда ссылка на формат таблицы](http://msdn.microsoft.com/en-us/09e9c6ef-9863-48de-9483-d45b7b7c798f) ресурсы находятся в неуправляемых библиотек спутниковой связи DLL пользовательского интерфейса.  
   
 ## <a name="command-handler-registration-of-a-vspackage"></a>Команда регистрации обработчика пакета VSPackage  
- Пакет VSPackage, выступающего в качестве обработчика для пользовательского интерфейса (UI) — на основе команды требуется запись реестра с именем VSPackage `GUID`. Эта запись реестра указывает расположение файла ресурсов пользовательского интерфейса в пакете VSPackage и ресурс меню в этом файле. Параметр реестра сам находится в папке HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<версии настроек*\Menus, где  *\<версии настроек* версия [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], например 9.0.  
+ Пакет VSPackage, выступающего в качестве обработчика для пользовательского интерфейса (UI) — на основе команды требуется запись реестра с именем VSPackage `GUID`. Эта запись реестра указывает расположение файла ресурсов пользовательского интерфейса в пакете VSPackage и ресурс меню в этом файле. Параметр реестра сам находится в папке HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<версии >*\Menus, где  *\<версии >* версия [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], например 9.0.  
   
 > [!NOTE]
->  Путь к корневому каталогу HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<версии настроек* может быть переопределен с альтернативной корневой при [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] инициализируется оболочки. Дополнительные сведения о корневой путь в разделе [Установка пакетов VSPackage с помощью установщика Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  
+>  Путь к корневому каталогу HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<версии >* может быть переопределен с альтернативной корневой при [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] инициализируется оболочки. Дополнительные сведения о корневой путь в разделе [Установка пакетов VSPackage с помощью установщика Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  
   
 ### <a name="the-ctmenu-resource-registry-entry"></a>Запись реестра CTMENU ресурсов  
  Структура записи реестра выглядит так:  
@@ -60,13 +45,13 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
     <GUID> = <Resource Information>  
 ```  
   
- \<*Идентификатор GUID*настроек — `GUID` пакета VSPackage в форме {XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXX}.  
+ \<*Идентификатор GUID*> является `GUID` пакета VSPackage в форме {XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXX}.  
   
- *\<Сведения о ресурсах настроек* состоит из трех элементов, разделенных запятыми. Эти элементы располагаются в порядке:  
+ *\<Сведения о ресурсах >* состоит из трех элементов, разделенных запятыми. Эти элементы располагаются в порядке:  
   
- \<*Путь к DLL-Библиотека ресурсов*настроек, \< *идентификатор ресурса меню*настроек, \< *версии меню*>  
+ \<*Путь к DLL-Библиотека ресурсов*>, \< *идентификатор ресурса меню*>, \< *версии меню*>  
   
- В следующей таблице описаны поля \< *сведения о ресурсах*настроек.  
+ В следующей таблице описаны поля \< *сведения о ресурсах*>.  
   
 |Элемент|Описание|  
 |-------------|-----------------|  

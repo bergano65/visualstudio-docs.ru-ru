@@ -1,45 +1,47 @@
 ---
-title: "Краткие сведения в языковую службу для прежних версий | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Краткие сведения, поддержке в языковые службы [платформа управляемых пакетов]"
-  - "Технология IntelliSense, краткие сведения"
-  - "языковые службы [платформа управляемых пакетов] кратких сведений IntelliSense"
+title: "Краткие сведения в службе языка прежних версий | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Quick Info, supporting in language services [managed package framework]
+- IntelliSense, Quick Info
+- language services [managed package framework], IntelliSense Quick Info
 ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
-caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 692884d31e55921489aad0fbbea32ca1c094c6c3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Краткие сведения в языковую службу для прежних версий
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Краткие сведения IntelliSense показывает информацию об идентификаторе в источнике, когда пользователь помещает курсор в идентификаторах и выбирает **Краткие сведения** из **IntelliSense** меню или содержит курсор мыши над ним. В результате всплывающей подсказки с информацией об идентификатор. Эти сведения обычно состоит из идентификатора типа. Когда отладчик активен, эта информация может включать текущее значение. Отладчик предоставляет значения выражения, пока языковая служба обрабатывает только идентификаторы.  
+# <a name="quick-info-in-a-legacy-language-service"></a>Краткие сведения в службе языка прежних версий
+Краткие сведения IntelliSense показывает информацию об идентификаторе в источнике, когда пользователь помещает курсор в идентификаторе и выбирает **краткие сведения** из **IntelliSense** меню или содержит мыши курсор на идентификатор. В этом случае всплывающей подсказки с информацией об идентификатор. Эти сведения обычно состоит из идентификатора типа. Когда отладчик активна, эти сведения могут включать текущее значение. Отладчик предоставляет значений выражения, пока языковая служба обрабатывает только идентификаторы.  
   
- Устаревший языковые службы реализуются как частью VSPackage, но это использование расширений MEF новый способ реализации возможностей службы языка. Для получения дополнительных см [Пошаговое руководство: Отображение кратких сведений подсказки](../Topic/Walkthrough:%20Displaying%20QuickInfo%20Tooltips.md).  
+ Прежних версий языка службы реализованы как часть пакета VSPackage, но новой реализации возможностей службы языка можно выполнить с помощью расширений MEF. Подробнее см. в разделе [Пошаговое руководство: отображение кратких сведений подсказки](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md).  
   
 > [!NOTE]
->  Мы рекомендуем начать использовать новый редактор API как можно быстрее. Это улучшает производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.  
+>  Мы рекомендуем начать использовать новый редактор API, как можно быстрее. Это повысит быстродействие языковой службы и позволяют воспользоваться преимуществами новых функций редактора.  
   
- Управляемых пакетов framework \(MPF\) языковой службы классы обеспечивают полную поддержку для отображения всплывающей подсказки IntelliSense Quick Info. Нужно всего лишь указать текст, который будет отображаться и включить функцию краткие сведения.  
+ Классы managed package framework (MPF) языка службы предоставляют полную поддержку для отображения всплывающей подсказки кратких сведений IntelliSense. Все, что нужно сделать — укажите текст для отображения и включить функцию краткие сведения.  
   
- Текст, отображаемый получается путем вызова метода <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод синтаксического анализа со значением причина синтаксического анализа <xref:Microsoft.VisualStudio.Package.ParseReason>. Поэтому сообщает средство синтаксического анализа, чтобы получить сведения о типе \(или соответствующие действия для отображения в подсказке краткие сведения\) для идентификатора в расположении, указанном в <xref:Microsoft.VisualStudio.Package.ParseRequest> объекта.<xref:Microsoft.VisualStudio.Package.ParseRequest> Объект является то, что было передано <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод.  
+ Текст, отображаемый получается путем вызова метода <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод синтаксического анализа со значением причина синтаксического анализа <xref:Microsoft.VisualStudio.Package.ParseReason>. Поэтому сообщает средство синтаксического анализа, чтобы получить сведения о типе (или соответствующие действия для отображения в подсказке краткие сведения) для идентификатора в расположении, указанном в <xref:Microsoft.VisualStudio.Package.ParseRequest> объекта. <xref:Microsoft.VisualStudio.Package.ParseRequest> Объект является то, что было передано <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод.  
   
- Средство синтаксического анализа необходимо проанализировать все до позиции в <xref:Microsoft.VisualStudio.Package.ParseRequest> объекта, чтобы определить, какие идентификаторы. Затем средство синтаксического анализа необходимо получить идентификатор запроса на месте синтаксического анализа. Наконец, средство синтаксического анализа необходимо передать данные tip средство, связанный с этим идентификатором для <xref:Microsoft.VisualStudio.Package.AuthoringScope> таким образом, чтобы этот объект можно вернуть текст из <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> метод.  
+ Средство синтаксического анализа необходимо проанализировать все данные до позиции в <xref:Microsoft.VisualStudio.Package.ParseRequest> объекта, чтобы определить, какие все идентификаторы. Затем средство синтаксического анализа необходимо получить идентификатор в расположении синтаксического анализа запроса. И, наконец, средство синтаксического анализа необходимо передать данные совет средства, связанные с этого идентификатора к <xref:Microsoft.VisualStudio.Package.AuthoringScope> таким образом, может возвращать текст из <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> метод.  
   
-## Включение функции кратких сведений  
- Чтобы включить функцию краткие сведения, необходимо задать `CodeSense` и `QuickInfo` Параметры с именем <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>. Эти атрибуты заданы <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> и <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableQuickInfo%2A> Свойства.  
+## <a name="enabling-the-quick-info-feature"></a>Включение функции краткие сведения  
+ Чтобы включить функцию краткие сведения, необходимо задать `CodeSense` и `QuickInfo` именованные параметры <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>. Задать эти атрибуты <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> и <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableQuickInfo%2A> свойства.  
   
-## Реализация функции кратких сведений  
- <xref:Microsoft.VisualStudio.Package.ViewFilter> Класс обрабатывает операции кратких сведений IntelliSense. При <xref:Microsoft.VisualStudio.Package.ViewFilter> получает класс <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> команды, класс вызывает <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод parse причину <xref:Microsoft.VisualStudio.Package.ParseReason> и положением курсора во время <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> команда была отправлена.<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Метод синтаксического анализа необходимо затем проанализировать источника вплоть до указанного расположения и затем анализа кода в заданном месте, чтобы определить, что для отображения всплывающей подсказки Quick Info.  
+## <a name="implementing-the-quick-info-feature"></a>Реализации функции краткие сведения  
+ <xref:Microsoft.VisualStudio.Package.ViewFilter> Класс обрабатывает операцию кратких сведений IntelliSense. При <xref:Microsoft.VisualStudio.Package.ViewFilter> класс получает <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> команда, класс вызывает <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод с причиной по синтаксического анализа <xref:Microsoft.VisualStudio.Package.ParseReason> и расположение курсора во время <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> команды было отправлено. <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Метод синтаксического анализа необходимо затем проанализировать вплоть до указанного расположения источника и затем анализа кода в заданном месте, чтобы определить, что для отображения в подсказке краткие сведения.  
   
- Большинство анализаторы сделать начального анализа всего исходного файла и сохранение результатов в дерево синтаксического анализа. Полный анализ выполняется при <xref:Microsoft.VisualStudio.Package.ParseReason> передается <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод. Другие виды анализа затем можно использовать дерево синтаксического анализа для получения требуемой информации.  
+ Большинство средств синтаксического анализа выполнить начального анализа всего исходного файла и сохранение результатов в дерево синтаксического анализа. Полный анализ будет проведена при <xref:Microsoft.VisualStudio.Package.ParseReason> передается <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод. Другие виды анализа затем используется для получения требуемой информации дерево синтаксического анализа.  
   
- Например, синтаксический анализ причин значение <xref:Microsoft.VisualStudio.Package.ParseReason> можно найти идентификатор в исходном расположении и выполнять поиск в дереве синтаксического анализа, чтобы получить сведения о типе. Сведения о типе затем передается <xref:Microsoft.VisualStudio.Package.AuthoringScope> класса и возвращается <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> метод.
+ Например, синтаксический анализ причина значение <xref:Microsoft.VisualStudio.Package.ParseReason> можно найти идентификатор в исходном расположении и выполнять поиск в дерево синтаксического анализа, чтобы получить сведения о типе. Эта информация о типах затем передается <xref:Microsoft.VisualStudio.Package.AuthoringScope> класса и возвращается <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> метод.

@@ -1,57 +1,57 @@
 ---
-title: "IDebugMethodField::EnumParameters | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMethodField::EnumParameters"
-helpviewer_keywords: 
-  - "Метод IDebugMethodField::EnumParameters"
+title: "IDebugMethodField::EnumParameters | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugMethodField::EnumParameters
+helpviewer_keywords: IDebugMethodField::EnumParameters method
 ms.assetid: d77b1197-deb6-4144-8d1b-8b09949ccfac
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a29f39c28651de1053f4fa7e229eab5505896ecc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugMethodField::EnumParameters
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugmethodfieldenumparameters"></a>IDebugMethodField::EnumParameters
 Создает перечислитель для параметров метода.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT EnumParameters(   
-   IEnumDebugFields** ppParams  
+```cpp  
+HRESULT EnumParameters(   
+   IEnumDebugFields** ppParams  
 );  
 ```  
   
-```c#  
+```csharp  
 int EnumParameters(  
-   out IEnumDebugFields ppParams  
+   out IEnumDebugFields ppParams  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppParams`  
- \[out\] возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список параметров для метода. в противном случае возвращает значение NULL, если никаких параметров.  
+ [out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список параметров метода; в противном случае возвращает значение null, если нет параметров.  
   
-## Возвращаемое значение  
- В случае успеха возвращает значение S\_OK и возвращает значение S\_FALSE, если параметры.  В противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK, или возвращает значение S_FALSE, если нет параметров. В противном случае возвращается код ошибки.  
   
-## Заметки  
- Каждый элемент IDebugField объект, представляющий различные типы параметров.  Вызовите [GetKind](../Topic/IDebugField::GetKind.md) метод на каждом объекте, чтобы точно задать, какие параметр представляет объект.  
+## <a name="remarks"></a>Примечания  
+ Каждый элемент является [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объектов, представляющих различные типы параметров. Вызовите [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) метод для каждого объекта, чтобы определить точно какого рода параметра представляет объект.  
   
- Параметр включает и его имя переменной и его тип.  Первый параметр метода класса, как правило, этот указатель "".  
+ Параметр включает его имя переменной и ее типа. Первый параметр метода класс обычно является указатель «this».  
   
- Если необходимы только типы параметров, вызовите [EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) метод.  
+ Если только необходимые типы параметров, вызовите [EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) метод.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   

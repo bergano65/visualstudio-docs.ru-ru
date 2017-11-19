@@ -1,54 +1,54 @@
 ---
-title: "IDebugThread2::Resume | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugThread2::Resume"
-helpviewer_keywords: 
-  - "IDebugThread2::Resume"
+title: "IDebugThread2::Resume | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugThread2::Resume
+helpviewer_keywords: IDebugThread2::Resume
 ms.assetid: 36aad682-b0b9-40a2-b3fc-f0e61d41cdbc
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 25b0f663b6f512cbe8ea6eaafa2167a6828280c9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugThread2::Resume
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugthread2resume"></a>IDebugThread2::Resume
 Возобновляет выполнение потока.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT Resume (   
-   DWORD *pdwSuspendCount  
+```cpp  
+HRESULT Resume (   
+   DWORD *pdwSuspendCount  
 );  
 ```  
   
-```c#  
-int Resume (   
-   out uint pdwSuspendCount  
+```csharp  
+int Resume (   
+   out uint pdwSuspendCount  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pdwSuspendCount`  
- \[out\] возвращает счетчик приостановки после операции восстановления.  
+ [out] Возвращает счетчик приостановок после завершения операции возобновления.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Каждый вызов этого метода уменьшает количество приостанавливается до тех пор, пока он не достигнет 0, в который фактически возобновление время выполнения.  Это число отображается в suspend **потоки** окна отладки.  
+## <a name="remarks"></a>Примечания  
+ При каждом вызове функции этот метод уменьшает счетчик приостановок возобновляется пока не достигнет 0 в какое время выполнения. Этот счетчик приостановок отображается в **потоков** окон отладки.  
   
- Для каждого вызова этого метода, должен быть предыдущий вызов [Suspend](../Topic/IDebugThread2::Suspend.md) метод.  Количество приостановить указывающее, сколько раз `IDebugThread2::Suspend` метод вызван на данный момент.  
+ При каждом вызове этого метода, должны быть предыдущего вызова [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md) метод. Счетчик приостановок определяет, сколько раз `IDebugThread2::Suspend` к текущему моменту вызова метода.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [Suspend](../Topic/IDebugThread2::Suspend.md)
+ [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md)

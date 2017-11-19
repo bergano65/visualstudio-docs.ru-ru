@@ -1,41 +1,40 @@
 ---
-title: "Диалоговое окно &quot;Предупреждение о необходимости обновления кода&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.ENC.stalecode"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Предупреждение о необходимости обновления кода - диалоговое окно"
-  - "код, предупреждение об устаревшем коде"
-  - "предупреждения, диалоговое окно "Предупреждение об устаревшем коде""
-  - "Изменить и продолжить, устаревший код"
+title: "Устаревшие сообщения код | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.ENC.stalecode
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- Stale Code Warning dialog box
+- code, stale code warning
+- warnings, Stale Code Warning dialog box
+- Edit and Continue, stale code
 ms.assetid: 594b894c-e652-4e13-a980-9909473d5712
-caps.latest.revision: 13
-caps.handback.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 54ff550719f1b0bbea12f3b64b49fc9792f63ee6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Диалоговое окно &quot;Предупреждение о необходимости обновления кода&quot;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Это диалоговое окно появляется, если в машинный код были внесены изменения, которые не удалось немедленно применить с использованием операции **Изменить и продолжить**.  В результате часть машинного кода в текущем кадре стека является устаревшей.  Дополнительные сведения см. в разделе [How to: Work with Stale Code](http://msdn.microsoft.com/ru-ru/c7536e95-66a6-44a0-995d-3fe5035250b4).  
+# <a name="stale-code-warning-dialog-box"></a>Предупреждение о необходимости обновления кода - диалоговое окно
+Оно появляется после внесения изменений в машинный код, **изменить и продолжить** не удалось немедленно применить. В результате часть машинного кода в текущем кадре стека является устаревшей. Дополнительные сведения см. в разделе [как: работа с устаревшим кодом](http://msdn.microsoft.com/en-us/c7536e95-66a6-44a0-995d-3fe5035250b4).  
   
- **Больше не показывать это окно**  
- Если установить этот флажок, операция "Изменить и продолжить" будет в дальнейшем применять изменения кода без запроса разрешения.  Данное предупреждение можно включить снова, если зайти в диалоговое окно **Параметры**, открыть папку **Отладка**, выбрать страницу **Изменить и продолжить** и выбрать **Предупреждение о необходимости обновления кода**.  
+ **Больше не показывать это диалоговое окно**  
+ Если установить этот флажок, операция "Изменить и продолжить" будет в дальнейшем применять изменения кода без запроса разрешения. Можно включить это предупреждение снова перейдите в **параметры** диалоговое окно, открыв **Отладка** папки, щелкнув **изменить и продолжить** , а затем выбрать **Предупреждать об устаревшем коде**.  
   
-## См. также  
- [Поддерживаемые изменения и ограничения кода \(C\+\+\)](../debugger/supported-code-changes-cpp.md)   
- [Страница "Изменить и продолжить", папка "Отладка", диалоговое окно "Параметры"](../Topic/Edit%20and%20Continue,%20Debugging,%20Options%20Dialog%20Box.md)
+## <a name="see-also"></a>См. также  
+ [Поддерживаемые изменения кода (C++)](../debugger/supported-code-changes-cpp.md)   
+ [Изменить и продолжить, отладка, диалоговое окно «Параметры»](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)

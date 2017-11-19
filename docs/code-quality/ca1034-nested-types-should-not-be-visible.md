@@ -1,11 +1,10 @@
 ---
-title: 'CA1034: Nested types should not be visible | Microsoft Docs'
+title: "CA1034: Вложенные типы не должны быть видимыми | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,59 +14,45 @@ helpviewer_keywords:
 - NestedTypesShouldNotBeVisible
 - CA1034
 ms.assetid: e9789a2c-2540-42a1-8705-ae7104011194
-caps.latest.revision: 18
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 69a2a595b21dcc7f63bf905e1740e15c3ac56598
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: bb549e50f33ac172f1eaa0e2a4489cd1900d0542
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034: Nested types should not be visible
+# <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034: вложенные типы не должны быть видимыми
 |||  
 |-|-|  
 |TypeName|NestedTypesShouldNotBeVisible|  
 |CheckId|CA1034|  
-|Category|Microsoft.Design|  
-|Breaking Change|Breaking|  
+|Категория|Microsoft.Design|  
+|Критическое изменение|Критическое|  
   
-## <a name="cause"></a>Cause  
- An externally visible type contains an externally visible type declaration. Nested enumerations and protected types are exempt from this rule.  
+## <a name="cause"></a>Причина  
+ Видимый извне тип содержит объявление видимого типа. Вложенных перечислений и защищенные типы будут исключены из этого правила.  
   
-## <a name="rule-description"></a>Rule Description  
- A nested type is a type declared within the scope of another type. Nested types are useful for encapsulating private implementation details of the containing type. Used for this purpose, nested types should not be externally visible.  
+## <a name="rule-description"></a>Описание правила  
+ Вложенный тип — это тип, объявленный внутри области другого типа. Вложенные типы полезны для инкапсуляции закрытых сведений о реализациях содержащего типа. В силу этого вложенные типы не должны быть видимыми для внешнего кода.  
   
- Do not use externally visible nested types for logical grouping or to avoid name collisions; instead, use namespaces.  
+ Не используйте вложенные типы, видимые извне для логической группировки или во избежание конфликтов имен. Вместо этого используйте пространства имен.  
   
- Nested types include the notion of member accessibility, which some programmers do not understand clearly.  
+ Вложенные типы включают понятие доступности членов некоторые программисты не всегда очевидно.  
   
- Protected types can be used in subclasses and nested types in advance customization scenarios.  
+ Защищенные типы можно использовать в подклассах, а вложенные типы в сценариях расширенной настройки.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- If you do not intend the nested type to be externally visible, change the type's accessibility. Otherwise, remove the nested type from its parent. If the purpose of the nesting is to categorize the nested type, use a namespace to create the hierarchy instead.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Если вложенный тип, видимый извне не требуется, измените доступность типов. В противном случае удалите вложенный тип из своего родителя. Если целью вложения является категоризация вложенных типов, необходимо используйте пространство имен для создания иерархии.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ Для этого правила отключать вывод предупреждений не следует.  
   
-## <a name="example"></a>Example  
- The following example shows a type that violates the rule.  
+## <a name="example"></a>Пример  
+ В следующем примере показано тип, нарушающий правило.  
   
- [!code-cpp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CPP/ca1034-nested-types-should-not-be-visible_1.cpp)] [!code-csharp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CSharp/ca1034-nested-types-should-not-be-visible_1.cs)] [!code-vb[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/VisualBasic/ca1034-nested-types-should-not-be-visible_1.vb)]
+ [!code-cpp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CPP/ca1034-nested-types-should-not-be-visible_1.cpp)]
+ [!code-csharp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CSharp/ca1034-nested-types-should-not-be-visible_1.cs)]
+ [!code-vb[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/VisualBasic/ca1034-nested-types-should-not-be-visible_1.vb)]

@@ -1,51 +1,50 @@
 ---
-title: "IDiaSession::findInlineFramesByVA | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: "IDiaSession::findInlineFramesByVA | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: df9e68f6-e0a4-4cf6-b11d-61c40351e0cd
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1f9ef4aa471ca4bf12e2d609f7b0dcd6129b644a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findInlineFramesByVA
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает перечисление, которое позволяет клиенту выполнять перебор всех кадров встроенного по указанному виртуальному адресу \(VA\).  
+# <a name="idiasessionfindinlineframesbyva"></a>IDiaSession::findInlineFramesByVA
+Возвращает перечисление, которое позволяет клиенту проходить через все встроенные рамки указанного виртуального адреса (VA).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT findInlineFramesByVA (   
-   IDiaSymbol*       parent,  
-   ULONGLONG         va,  
-   IDiaEnumSymbols** ppResult  
+```C++  
+HRESULT findInlineFramesByVA (   
+   IDiaSymbol*       parent,   ULONGLONG         va,  
+   IDiaEnumSymbols** ppResult  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `parent`  
- \[in\] объект `IDiaSymbol`, представляющий родительский элемент.  
+ [in] `IDiaSymbol` Объект, представляющий родительский объект.  
   
  `va`  
- \[in\] задает адрес, как VA.  
+ [in] Указывает адрес как ва.  
   
  `ppResult`  
- \[out\] хранит объект `IDiaEnumSymbols`, содержащий список кадров, которые получены.  
+ [out] Содержит `IDiaEnumSymbols` , содержащий список кадров, которые извлекаются.  
   
-## Возвращаемое значение  
- Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

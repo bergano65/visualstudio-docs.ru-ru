@@ -1,89 +1,90 @@
 ---
-title: "IDebugExpressionEvaluator3::Parse2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugExpressionEvaluator3::Parse2"
+title: "IDebugExpressionEvaluator3::Parse2 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugExpressionEvaluator3::Parse2
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f8b170a0031374bcd9ecb2a63d72586797bfdbce
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugExpressionEvaluator3::Parse2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Преобразует строку выражения в анализированному выражению заданного поставщика символов и адрес оценка кадра.  
+# <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
+Преобразует строку выражения проанализированный выражению, заданному символ поставщика и адрес вычисление кадра.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT Parse2 (  
-   LPCOLESTR                upstrExpression,  
-   PARSEFLAGS               dwFlags,  
-   UINT                     nRadix,  
-   IDebugSymbolProvider*    pSymbolProvider,  
-   IDebugAddress*           pAddress,  
-   BSTR*                    pbstrError,  
-   UINT*                    pichError,  
-   IDebugParsedExpression** ppParsedExpression  
+   LPCOLESTR                upstrExpression,  
+   PARSEFLAGS               dwFlags,  
+   UINT                     nRadix,  
+   IDebugSymbolProvider*    pSymbolProvider,  
+   IDebugAddress*           pAddress,  
+   BSTR*                    pbstrError,  
+   UINT*                    pichError,  
+   IDebugParsedExpression** ppParsedExpression  
 );  
 ```  
   
-```c#  
+```csharp  
 HRESULT Parse2 (  
-   string                     upstrExpression,  
-   enum_PARSEFLAGS            dwFlags,  
-   uint                       nRadix,  
-   IDebugSymbolProvider       pSymbolProvider,  
-   IDebugAddress              pAddress,  
-   out string                 pbstrError,  
-   out uint                   pichError,  
-   out IDebugParsedExpression ppParsedExpression  
+   string                     upstrExpression,  
+   enum_PARSEFLAGS            dwFlags,  
+   uint                       nRadix,  
+   IDebugSymbolProvider       pSymbolProvider,  
+   IDebugAddress              pAddress,  
+   out string                 pbstrError,  
+   out uint                   pichError,  
+   out IDebugParsedExpression ppParsedExpression  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `upstrExpression`  
- \[in\] строка выражения, которое необходимо проанализировать.  
+ [in] Строка выражения для синтаксического анализа.  
   
  `dwFlags`  
- \[in\] коллекция [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) константы, определяющие, как выражение анализируется.  
+ [in] Коллекция [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) константы, которые определяют, как выполнить синтаксический анализ выражения.  
   
  `nRadix`  
- \[in\] корневой каталог, используемый для интерпретации любое числовое сведения.  
+ [in] Основание системы счисления, используемое для интерпретации все числовые данные.  
   
  `pSymbolProvider`  
- \[in\] интерфейс поставщика символов.  
+ [in] Интерфейс поставщика символа.  
   
  `pAddress`  
- \[in\] адрес оценка кадра.  
+ [in] Адрес вычисление кадра.  
   
  `pbstrError`  
- \[out\] возвращает ошибку в виде удобочитаемого текста.  
+ [out] Возвращает ошибку в виде удобочитаемого текста.  
   
  `pichError`  
- \[out\] возвращает позицию знака начала ошибки в строке выражения.  
+ [out] Возвращает позицию символа начинается ошибка в строке выражения.  
   
  `ppParsedExpression`  
- \[out\] возвращает прошедшее синтаксический анализ выражения в [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) объект.  
+ [out] Возвращает выражение, проанализированных в [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) объекта.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Этот метод создает проанализированное выражение, не фактическое значение.  Проанализированное выражение готово должен вычисляться, т е преобразовать в значение.  
+## <a name="remarks"></a>Примечания  
+ Этот метод создает проанализированное выражение не фактического значения. Проанализированное выражение готовое к вычислению, то есть, преобразуется в значение.  
   
-## Пример  
- В следующем примере показано, как реализовать этот метод, a **CEE** объект, предоставляющий  [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) интерфейс.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как реализовать этот метод для **CEE** объекта, который предоставляет [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) интерфейса.  
   
-```cpp#  
+```cpp  
 HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,  
   PARSEFLAGS in_FLAGS,  
   UINT in_RADIX,  
@@ -135,5 +136,5 @@ HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,
 }  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)

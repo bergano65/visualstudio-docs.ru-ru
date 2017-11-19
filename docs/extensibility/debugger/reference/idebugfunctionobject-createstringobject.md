@@ -1,56 +1,56 @@
 ---
-title: "IDebugFunctionObject::CreateStringObject | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugFunctionObject::CreateStringObject"
-helpviewer_keywords: 
-  - "Метод IDebugFunctionObject::CreateStringObject"
+title: "IDebugFunctionObject::CreateStringObject | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugFunctionObject::CreateStringObject
+helpviewer_keywords: IDebugFunctionObject::CreateStringObject method
 ms.assetid: fd6070ab-07d4-4ea1-8d71-b16592d6f1a7
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 60e690ebe589671e9ead6496f33f30923ea3ca36
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugFunctionObject::CreateStringObject
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Создает объект типа String.  
+# <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
+Создает объект string.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT CreateStringObject(   
-   LPCOLESTR      pcstrString,  
-   IDebugObject** ppObject  
+```cpp  
+HRESULT CreateStringObject(   
+   LPCOLESTR      pcstrString,  
+   IDebugObject** ppObject  
 );  
 ```  
   
-```c#  
+```csharp  
 int CreateStringObject(  
-   string      pcstrString,   
-   out IDebugObject ppOjbect  
+   string      pcstrString,   
+   out IDebugObject ppOjbect  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pcstrString`  
- \[in\] строковое значение для строкового объекта.  
+ [in] Строковое значение для объекта string.  
   
  `ppObject`  
- \[out\] возвращает IDebugObject объект, представляющий только что созданный строковый объект.  
+ [out] Возвращает [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , представляющий только что созданный строковый объект.  
   
-## Возвращаемое значение  
- В случае успеха возвращает значение S\_OK; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Вызовите этот метод, чтобы создать объект, представляющий строку, параметр функции, которая представлена IDebugFunctionObject интерфейс.  
+## <a name="remarks"></a>Примечания  
+ Вызовите этот метод, чтобы создать объект, представляющий строку, являющуюся параметра функции, который представляется [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) интерфейса.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

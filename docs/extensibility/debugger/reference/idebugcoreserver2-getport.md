@@ -1,54 +1,54 @@
 ---
-title: "IDebugCoreServer2::GetPort | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCoreServer2::GetPort"
-helpviewer_keywords: 
-  - "IDebugCoreServer2::GetPort"
+title: "IDebugCoreServer2::GetPort | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCoreServer2::GetPort
+helpviewer_keywords: IDebugCoreServer2::GetPort
 ms.assetid: 3f5ea4a8-6085-4600-980a-9e48f8b5be56
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4efbdaa1d2dc3502d0eeaf49f03689d98114fc90
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCoreServer2::GetPort
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Получает определенный порт.  
+# <a name="idebugcoreserver2getport"></a>IDebugCoreServer2::GetPort
+Извлекает определенный порт.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetPort(   
-   REFGUID       guidPort,  
-   IDebugPort2** ppPort  
+```cpp  
+HRESULT GetPort(   
+   REFGUID       guidPort,  
+   IDebugPort2** ppPort  
 );  
 ```  
   
-```c#  
-int GetPort(   
-   ref Guid        guidPort,  
-   out IDebugPort2 ppPort  
+```csharp  
+int GetPort(   
+   ref Guid        guidPort,  
+   out IDebugPort2 ppPort  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `guidPort`  
- \[in\] идентификатор GUID порта, который необходимо извлечь.  
+ [in] Идентификатор GUID порта должно быть извлечено.  
   
  `ppPort`  
- \[out\] возвращает IDebugPort2 объект, представляющий требуемый порт.  
+ [out] Возвращает [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) объект, представляющий нужный порт.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  Возвращает `E_PORTSUPPLIER_NO_PORT` если порт с заданным идентификатором.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Возвращает `E_PORTSUPPLIER_NO_PORT` , если нет порта с указанным идентификатором.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

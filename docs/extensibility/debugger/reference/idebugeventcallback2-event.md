@@ -1,85 +1,85 @@
 ---
-title: "IDebugEventCallback2::Event | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEventCallback2::Event"
-helpviewer_keywords: 
-  - "IDebugEventCallback2::Event"
+title: "IDebugEventCallback2::Event | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEventCallback2::Event
+helpviewer_keywords: IDebugEventCallback2::Event
 ms.assetid: e5a3345b-d460-4e40-8f5b-3111c56a2ed9
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8c1a69c3ce3a8b59c1cea7b9282d0169c3637729
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEventCallback2::Event
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Отправляет уведомление отладочные события.  
+# <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
+Отправляет уведомление о событиях отладки.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT Event(   
-   IDebugEngine2*  pEngine,  
-   IDebugProcess2* pProcess,  
-   IDebugProgram2* pProgram,  
-   IDebugThread2*  pThread,  
-   IDebugEvent2*   pEvent,  
-   REFIID          riidEvent,  
-   DWORD           dwAttrib  
+```cpp  
+HRESULT Event(   
+   IDebugEngine2*  pEngine,  
+   IDebugProcess2* pProcess,  
+   IDebugProgram2* pProgram,  
+   IDebugThread2*  pThread,  
+   IDebugEvent2*   pEvent,  
+   REFIID          riidEvent,  
+   DWORD           dwAttrib  
 );  
 ```  
   
-```c#  
-int Event(   
-   IDebugEngine2  pEngine,  
-   IDebugProcess2 pProcess,  
-   IDebugProgram2 pProgram,  
-   IDebugThread2  pThread,  
-   IDebugEvent2   pEvent,  
-   ref Guid       riidEvent,  
-   uint           dwAttrib  
+```csharp  
+int Event(   
+   IDebugEngine2  pEngine,  
+   IDebugProcess2 pProcess,  
+   IDebugProgram2 pProgram,  
+   IDebugThread2  pThread,  
+   IDebugEvent2   pEvent,  
+   ref Guid       riidEvent,  
+   uint           dwAttrib  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pEngine`  
- \[in\] [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) объект, представляющий обработчик отладки \(DE\), отправляющего это событие.  Требуются заполняет DE этот параметр.  
+ [in] [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) , представляющий модуль отладки (DE), который отправляет это событие. Для заполнения этого параметра требуется DE.  
   
  `pProcess`  
- \[in\] IDebugProcess2 объект, представляющий процесс, в котором произошло событие.  Этот параметр заполняется в сеансе отладки \(SDM manager\).  DE всегда передает значение NULL для этого параметра.  
+ [in] [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) объект, который представляет собой процесс, в котором происходит событие. Этот параметр будет заполнено диспетчером сеанса отладки (SDM). DE всегда передает значение null для этого параметра.  
   
  `pProgram`  
- \[in\] IDebugProgram2 объект, представляющий программы, в которой это событие возникает.  Для большинства событий, этот параметр имеет значение NULL.  
+ [in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий программу, в котором возникает это событие. Для большинства событий этот параметр не является значение null.  
   
  `pThread`  
- \[in\] IDebugThread2 объект, представляющий поток, в котором событие происходит.  Для остановки события, этот параметр не может принимать значение NULL, так как кадр стека получен от данного параметра.  
+ [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, в котором возникает это событие. Для события остановки, этот параметр не может быть значение null, кадр стека, полученное из этого параметра.  
   
  `pEvent`  
- \[in\] IDebugEvent2 объект, представляющий событие отладки.  
+ [in] [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) , представляющий событие отладки.  
   
  `riidEvent`  
- \[in\] идентификатор GUID, определяющий, интерфейс событий, получаемых из `pEvent` параметр.  
+ [in] Идентификатор GUID, определяющий интерфейс событий, который нужно получить из `pEvent` параметра.  
   
  `dwAttrib`  
- \[in\] сочетание пометит из [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) перечисление.  
+ [in] Сочетание флагов из [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) перечисления.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- При вызове этого метода `dwAttrib` параметр должен соответствовать значению, возвращенному из  [GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) метод вызывается на объекте, переданном в событий  `pEvent` параметр.  
+## <a name="remarks"></a>Примечания  
+ При вызове этого метода `dwAttrib` параметра должно соответствовать значение, возвращенное [GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) переданный метод, как он вызван для объекта события `pEvent` параметра.  
   
- Все отладочные события создаются асинхронно независимо от того, является ли событие само асинхронно.  DE при вызове этого метода возвращаемое значение показывает, было ли обработано событие не только было получено ли событие.  В действительности в большинстве случаев не было обработано событие при возвращении данного метода.  
+ Все события отладки учитываются асинхронно, независимо от того, событие сам асинхронной или нет. Когда DE вызывает этот метод, возвращаемое значение не определить, было ли обработано событие, только ли событие было получено. На самом деле в большинстве случаев это событие не была обработана при возвращении этим методом.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   

@@ -1,74 +1,74 @@
 ---
-title: "BP_PASSCOUNT_STYLE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BP_PASSCOUNT_STYLE"
-helpviewer_keywords: 
-  - "Структура BP_PASSCOUNT_STYLE"
+title: "BP_PASSCOUNT_STYLE | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: BP_PASSCOUNT_STYLE
+helpviewer_keywords: BP_PASSCOUNT_STYLE structure
 ms.assetid: 0a647047-e2d5-4724-a0b8-68108425ecad
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 58baa5aca9ef5bddf5d7060fdc88022952bc9ce3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# BP_PASSCOUNT_STYLE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Задает условие, связанное с количеством передачи точки останова, который вызывает создать точку останова.  
+# <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
+Указывает условие, связанное с количеством проход точки останова, вызывающее срабатывание точки останова.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-enum enum_BP_PASSCOUNT_STYLE {   
-   BP_PASSCOUNT_NONE             = 0x0000,  
-   BP_PASSCOUNT_EQUAL            = 0x0001,  
-   BP_PASSCOUNT_EQUAL_OR_GREATER = 0x0002,  
-   BP_PASSCOUNT_MOD              = 0x0003  
+```cpp  
+enum enum_BP_PASSCOUNT_STYLE {   
+   BP_PASSCOUNT_NONE             = 0x0000,  
+   BP_PASSCOUNT_EQUAL            = 0x0001,  
+   BP_PASSCOUNT_EQUAL_OR_GREATER = 0x0002,  
+   BP_PASSCOUNT_MOD              = 0x0003  
 };  
 typedef DWORD BP_PASSCOUNT_STYLE;  
 ```  
   
-```c#  
-public enum enum_BP_PASSCOUNT_STYLE {   
-   BP_PASSCOUNT_NONE             = 0x0000,  
-   BP_PASSCOUNT_EQUAL            = 0x0001,  
-   BP_PASSCOUNT_EQUAL_OR_GREATER = 0x0002,  
-   BP_PASSCOUNT_MOD              = 0x0003  
+```csharp  
+public enum enum_BP_PASSCOUNT_STYLE {   
+   BP_PASSCOUNT_NONE             = 0x0000,  
+   BP_PASSCOUNT_EQUAL            = 0x0001,  
+   BP_PASSCOUNT_EQUAL_OR_GREATER = 0x0002,  
+   BP_PASSCOUNT_MOD              = 0x0003  
 };  
 ```  
   
-## Члены  
- BP\_PASSCOUNT\_NONE  
- Не задает ни один стиль количества передачи точки останова.  
+## <a name="members"></a>Члены  
+ BP_PASSCOUNT_NONE  
+ Задает стиль счетчика проход не точки останова.  
   
- BP\_PASSCOUNT\_EQUAL  
- Задает стиль количества передачи точки останова равно значению выражения.  Срабатывает точки останова, когда количество проходов равно попадания объем передачи.  
+ BP_PASSCOUNT_EQUAL  
+ Задает стиль числа проход точки останова, равное. Точка останова срабатывает, если количество раз, когда точка останова будет достигнута равна числу проход.  
   
- BP\_PASSCOUNT\_EQUAL\_OR\_GREATER  
- Задает стиль количества передачи точки останова равным или больше него.  Срабатывает точки останова, когда количество проходов выполненная строка, равно или больше, чем объем передачи.  
+ BP_PASSCOUNT_EQUAL_OR_GREATER  
+ Устанавливает стиль счетчика проход останова больше или равно. Точка останова срабатывает, если число попаданий точки останова равно или больше числа проход.  
   
- BP\_PASSCOUNT\_MOD  
- Указывает объем передачи остатка от деления.  Например, если объем передачи типа `BP_PASSCOUNT_MOD` положительный и значение числа 4, срабатывает каждый раз, когда количество обращений точки останова кратной 4.  
+ BP_PASSCOUNT_MOD  
+ Указывает число проходов остаток от деления. Например, если этапа прошло типа `BP_PASSCOUNT_MOD` и передайте значение счетчика равно 4, точка останова срабатывает каждый раз, число попаданий кратно 4.  
   
-## Заметки  
- Используется для `stylePassCount` элемент  [BP\_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) структура, которая, в свою очередь, элемент  [BP\_REQUEST\_INFO](../../../extensibility/debugger/reference/bp-request-info.md) и  [BP\_REQUEST\_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структуры.  
+## <a name="remarks"></a>Примечания  
+ Используется для `stylePassCount` членом [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) структуру, которая в свою очередь является членом [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) и [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структуры.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [BP\_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)   
- [BP\_REQUEST\_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
- [BP\_REQUEST\_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)
+ [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)   
+ [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
+ [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

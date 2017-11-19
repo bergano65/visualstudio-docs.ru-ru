@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptSite::OnScriptTerminate | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IActiveScriptSite::OnScriptTerminate | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptSite.OnScriptTerminate
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptSite_OnScriptTerminate"
+helpviewer_keywords: IActiveScriptSite_OnScriptTerminate
 ms.assetid: 3301ddf4-5929-404c-81d3-1a720e589008
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: eef8bd2a3f2e2a4eb4fd4b5f0e35fcd9acfe5bc9
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptSite::OnScriptTerminate
-Уведомляет основное приложение о том, что одно выполнение скриптов.  
+# <a name="iactivescriptsiteonscriptterminate"></a>IActiveScriptSite::OnScriptTerminate
+Уведомляет узел, завершения выполнения скрипта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT OnScriptTerminate(  
@@ -30,18 +33,18 @@ HRESULT OnScriptTerminate(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pvarResult`  
- \[in\] адрес переменной, содержащей результат скрипта или `NULL` если скрипт не дал нет.  
+ [in] Адрес переменной, содержащее результат скрипта или `NULL` Если сценарий произведено никаких результатов.  
   
  `pexcepinfo`  
- \[in\] адрес структуры `EXCEPINFO`, содержащий данные об исключении, если скрипт был завершен или `NULL`, если исключение не было создано.  
+ [in] Адрес `EXCEPINFO` структуру, содержащую сведения об исключении, созданные после завершения скрипта или `NULL` Если исключений не был создан.  
   
-## Возвращаемое значение  
- Возвращает значение `S_OK` в случае успеха.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Возвращает значение `S_OK` в случае успешного выполнения.  
   
-## Заметки  
- Обработчик скриптов вызывает этот метод прежде чем выполнить вызов метода [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) с набором SCRIPTSTATE\_INITIALIZED, пометить.  Этот метод может использоваться для возвращения состояние и результаты выполнения на узле.  Обратите внимание, что многие языки скриптов, которые основаны на тонуть событиях из основного приложения, имеющие жизненные точки, определенные основным приложением.  В этом случае этот метод не может никогда не должен вызываться.  
+## <a name="remarks"></a>Примечания  
+ Обработчик скриптов вызывает этот метод перед вызовом [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) метод вместе с установленным флагом SCRIPTSTATE_INITIALIZED завершения. Этот метод можно использовать для возврата состояния завершения и результаты на узел. Обратите внимание, что многие языки сценариев, основанные на получение событий от узла, жизни диапазонов, которые определены в узле. В этом случае этот метод может никогда не вызывается.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

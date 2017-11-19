@@ -1,41 +1,44 @@
 ---
-title: "Конструктор действия Throw | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "System.Activities.Statements.Throw.UI"
+title: "Конструктор действия throw | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: System.Activities.Statements.Throw.UI
 ms.assetid: 5e97c947-be39-4a1f-af04-000e2e09528a
-caps.latest.revision: 4
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: a4dcc10419d5c1dbc0552aba62057cba2e82647f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Конструктор действия Throw
-Конструктор операций  **Throw** используется для создания и настройки действия <xref:System.Activities.Statements.Throw>.  
+# <a name="throw-activity-designer"></a>Конструктор действия Throw
+**Throw** конструктора действий используется для создания и настройки <xref:System.Activities.Statements.Throw> действия.  
   
-## Действие Throw  
+## <a name="the-throw-activity"></a>Действие Throw  
  Действие <xref:System.Activities.Statements.Throw> вызывает исключение.  
   
-### Использование конструктора операций Throw  
- Конструктор операций  **Throw** можно найти в категории **Обработка ошибокОбласти элементов**, нажав на вкладку **Область элементов** по левую сторону [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] \(Иначе выберите **Область элементов** из меню **Просмотр**, или нажмите CTRL\+ALT\+X\).  
+### <a name="using-the-throw-activity-designer"></a>Использование конструктора операций Throw  
+ **Throw** конструктора действий можно найти в **обработка ошибок** категории **элементов**, который нажав **элементов**вкладка на левой стороне [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (либо выберите **инструментов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)  
   
- Конструктор операций  **Throw** можно перетащить из **Области элементов** в любое место области [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], куда обычно размещаются действия, например, внутри <xref:System.Activities.Statements.Sequence>.Будет создано действие <xref:System.Activities.Statements.Throw> со значением по умолчанию **DisplayName** для Throw.Значение <xref:System.Activities.Activity.DisplayName%2A> можно изменить в заголовке конструктора операций  **Throw** либо в поле **DisplayName** таблицы свойств.Свойство <xref:System.Activities.Statements.Throw.Exception%2A> должно редактироваться в таблице свойств.  
+ **Throw** конструктора можно перетащить из **элементов** в [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] поверхности везде, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. При этом создается <xref:System.Activities.Statements.Throw> действия по умолчанию **DisplayName** для Throw. <xref:System.Activities.Activity.DisplayName%2A> Значение можно изменить в заголовке **Throw** конструктора или в **DisplayName** поле сетки свойств. Свойство <xref:System.Activities.Statements.Throw.Exception%2A> должно редактироваться в таблице свойств.  
   
-### Свойства Throw  
+### <a name="the-throw-properties"></a>Свойства Throw  
  В следующей таблице показаны свойства <xref:System.Activities.Statements.Throw> и описано их использование в конструкторе.  
   
-|Имя свойства|Обязательное|Использование|  
-|------------------|------------------|-------------------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|Нет|Указывает дополнительное понятное имя действия <xref:System.Activities.Statements.Throw>.По умолчанию используется Throw.|  
-|<xref:System.Activities.Statements.Throw.Exception%2A>|Да|Вызываемое исключение.Данное исключение должно быть производным от класса <xref:System.Exception>.Чтобы указать исключение, введите выражение Visual Basic в таблице свойств.|  
+|Имя свойства|Обязательно|Использование|  
+|-------------------|--------------|-----------|  
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Указывает необязательное понятное имя действия <xref:System.Activities.Statements.Throw>. По умолчанию используется Throw.|  
+|<xref:System.Activities.Statements.Throw.Exception%2A>|True|Вызываемое исключение. Данное исключение должно быть производным от класса <xref:System.Exception>. Чтобы указать исключение, введите выражение Visual Basic в таблице свойств.|  
   
-## См. также  
- [Коллекция](../workflow-designer/collection-activity-designers.md)   
- [Rethrow](../workflow-designer/rethrow-activity-designer.md)   
- [Throw Activity Designer](../workflow-designer/throw-activity-designer.md)   
+## <a name="see-also"></a>См. также  
+ [Коллекции](../workflow-designer/collection-activity-designers.md)   
+ [Заново создать](../workflow-designer/rethrow-activity-designer.md)   
+ [Конструктор действия throw](../workflow-designer/throw-activity-designer.md)   
  [TryCatch](../workflow-designer/trycatch-activity-designer.md)

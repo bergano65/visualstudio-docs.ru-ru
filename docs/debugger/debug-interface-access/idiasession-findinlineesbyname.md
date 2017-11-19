@@ -1,51 +1,51 @@
 ---
-title: "IDiaSession::findInlineesByName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: "IDiaSession::findInlineesByName | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: 9860336d-f703-4ecb-bfc4-3f5beb175a76
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d0162e15d1692aa1ad6efef6a1a4d2a2088e8661
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findInlineesByName
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает перечисление, которое позволяет клиенту выполнять перебор число линии всех встроенным функциям, которые соответствуют заданному имени.  
+# <a name="idiasessionfindinlineesbyname"></a>IDiaSession::findInlineesByName
+Возвращает перечисление, которое позволяет клиенту итерации сведения о номерах строк для всех встроенных функций, которые соответствуют заданному имени.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT findInlineesByName (   
-   LPCOLESTR             name,  
+```C++  
+HRESULT findInlineesByName (   
+   LPCOLESTR             name,  
    DWORD                 option,  
-   IDiaEnumLineNumbers** ppResult  
+   IDiaEnumLineNumbers** ppResult  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `name`  
- \[in\] определяет имя для сравнения.  
+ [in] Указывает имя, используемое для сравнения.  
   
  `option`  
- \[in\] определяет параметры сравнения, применяемые для именования поиск.  Значения из перечисления [Перечисление NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) можно использовать по отдельности или в сочетании.  
+ [in] Задает параметры сравнения, который применяется для поиска имени. Значения из [NameSearchOptions-перечисление](../../debugger/debug-interface-access/namesearchoptions.md) перечисления может использоваться отдельно или в сочетании.  
   
  `ppResult`  
- \[out\] возвращает объект [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md), который содержит список номеров линии, которые были получены.  
+ [out] Возвращает [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) , содержащий список номера строк, которые были получены.  
   
-## Возвращаемое значение  
- Возвращает значение `S_OK`, если выполнение прошло успешно; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

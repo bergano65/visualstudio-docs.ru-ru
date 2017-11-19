@@ -1,46 +1,46 @@
 ---
-title: "IDebugExceptionEvent2::CanPassToDebuggee | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugExceptionEvent2::CanPassToDebuggee"
-helpviewer_keywords: 
-  - "IDebugExceptionEvent2::CanPassToDebuggee"
+title: "IDebugExceptionEvent2::CanPassToDebuggee | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugExceptionEvent2::CanPassToDebuggee
+helpviewer_keywords: IDebugExceptionEvent2::CanPassToDebuggee
 ms.assetid: ae4bbe0a-fbe1-49be-a310-ea64279a434b
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ef10fd3ca7f41c2afd1c827fb71ca2178782e3d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugExceptionEvent2::CanPassToDebuggee
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Определяет, поддерживает ли отладчик \(DE\) параметр передача это исключение в отлаживанными программе, когда выполнение продолжится.  
+# <a name="idebugexceptionevent2canpasstodebuggee"></a>IDebugExceptionEvent2::CanPassToDebuggee
+Определяет, поддерживает ли модуль отладки (DE) передать это исключение для отлаживаемой при возобновлении выполнения программы.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT CanPassToDebuggee(  
-   void  
+```cpp  
+HRESULT CanPassToDebuggee(  
+   void  
 );  
 ```  
   
-```c#  
-int CanPassToDebuggee();  
+```csharp  
+int CanPassToDebuggee();  
 ```  
   
-## Возвращаемое значение  
- Возвращает значение `S_OK` \(исключение может быть передано в программе\) или  `S_FALSE` \(исключение \- невозможно передать on\).  
+## <a name="return-value"></a>Возвращаемое значение  
+ Возвращает один `S_OK` (исключение может быть передан программой) или `S_FALSE` (исключение не может быть передано в).  
   
-## Заметки  
- DE должен быть действие по умолчанию для передачи в отлаживаемый процесс.  Интегрированная среда разработки может получать [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) событие и вызывает  [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md) метод без вызова  `CanPassToDebuggee` метод.  Поэтому DE должен иметь аргументы по умолчанию, передав исключение on.  
+## <a name="remarks"></a>Примечания  
+ DE должен иметь действия по умолчанию для передачи отлаживаемому процессу. Может появиться в Интегрированной среде разработки [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) событий и вызовов [Продолжить](../../../extensibility/debugger/reference/idebugprocess3-continue.md) метод без вызова `CanPassToDebuggee` метод. Таким образом DE должен регистра по умолчанию для передачи исключение, или нет.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)   
  [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)

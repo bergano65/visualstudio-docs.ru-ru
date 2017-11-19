@@ -1,59 +1,60 @@
 ---
-title: "IDebugMemoryContext2::Add | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMemoryContext2::Add"
-helpviewer_keywords: 
-  - "Метод IDebugMemoryContext2::Add"
-  - "Add - метод"
+title: "IDebugMemoryContext2::Add | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugMemoryContext2::Add
+helpviewer_keywords:
+- IDebugMemoryContext2::Add method
+- Add method
 ms.assetid: 3c47e646-ce9e-4dd3-8f1a-6dbd3827d407
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 40ec185caf65197d46abc7def26def7929f70d74
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugMemoryContext2::Add
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
 Добавляет указанное значение к текущему контексту и возвращает новый контекст.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT Add(   
-   UINT64                 dwCount,  
-   IDebugMemoryContext2** ppMemCxt  
+```cpp  
+HRESULT Add(   
+   UINT64                 dwCount,  
+   IDebugMemoryContext2** ppMemCxt  
 );  
 ```  
   
-```c#  
+```csharp  
 int Add(  
-   ulong                    dwCount,   
-   out IDebugMemoryContext2 ppMemCxt  
+   ulong                    dwCount,   
+   out IDebugMemoryContext2 ppMemCxt  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `dwCount`  
- \[in\] значение, добавляемое к текущему контексту.  
+ [in] Значение, чтобы добавить к текущему контексту.  
   
  `ppMemCxt`  
- \[out\] возвращает новую [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) объект.  
+ [out] Возвращает новый [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) объекта.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Контекст памяти адрес, поэтому добавление значение адреса создает новый адрес, который требует создания нового интерфейса контекста.  
+## <a name="remarks"></a>Примечания  
+ Контекст памяти — это адрес, поэтому добавление значения в адрес создает новый адрес, который требуется новый интерфейс контекста.  
   
- Этот метод должен всегда создания нового контекста, даже если полученный адрес вне области памяти, связанной с данным контекстом.  Единственное исключение из этого, если объем памяти, выделяемой для нового контекста или если `ppMemCxt` значение NULL \(ошибка\).  
+ Этот метод всегда должен создавать новый контекст, даже если Итоговый адрес находится вне области памяти, связанный с данным контекстом. Единственное исключение — если памяти не может быть выделено для нового контекста или `ppMemCxt` имеет значение null (который является ошибкой).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

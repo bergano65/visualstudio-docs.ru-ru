@@ -1,72 +1,72 @@
 ---
-title: "BP_STATE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BP_STATE"
-helpviewer_keywords: 
-  - "Перечисление BP_STATE"
+title: "BP_STATE | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: BP_STATE
+helpviewer_keywords: BP_STATE enumeration
 ms.assetid: 08aa6a3f-3e5f-4c83-8eca-7b7b5f8e208d
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 51574fd91a338f7d05d38755884412202d33637b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# BP_STATE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Определяет существование связанной точки останова и определяет также, если она включена.  
+# <a name="bpstate"></a>BP_STATE
+Задает существование связанная точка останова, а также указывает, включено ли.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-enum enum_BP_STATE {   
-   BPS_NONE     = 0x0000,  
-   BPS_DELETED  = 0x0001,  
-   BPS_DISABLED = 0x0002,  
-   BPS_ENABLED  = 0x0003  
+```cpp  
+enum enum_BP_STATE {   
+   BPS_NONE     = 0x0000,  
+   BPS_DELETED  = 0x0001,  
+   BPS_DISABLED = 0x0002,  
+   BPS_ENABLED  = 0x0003  
 };  
 typedef DWORD BP_STATE;  
 ```  
   
-```c#  
-public enum enum_BP_STATE {   
-   BPS_NONE     = 0x0000,  
-   BPS_DELETED  = 0x0001,  
-   BPS_DISABLED = 0x0002,  
-   BPS_ENABLED  = 0x0003  
+```csharp  
+public enum enum_BP_STATE {   
+   BPS_NONE     = 0x0000,  
+   BPS_DELETED  = 0x0001,  
+   BPS_DISABLED = 0x0002,  
+   BPS_ENABLED  = 0x0003  
 };  
 ```  
   
-## Члены  
- BPS\_NONE  
+## <a name="members"></a>Члены  
+ BPS_NONE  
  Указывает, что точка останова не существует.  
   
- BPS\_DELETED  
- Указывает, что точка останова удалена.  
+ BPS_DELETED  
+ Указывает, что точка останова была удалена.  
   
- BPS\_DISABLED  
- Указывает, что точка останова заблокирована.  
+ BPS_DISABLED  
+ Указывает, что точка останова отключена.  
   
- BPS\_ENABLED  
+ BPS_ENABLED  
  Указывает, что точка останова включена.  
   
-## Заметки  
- Возвращает [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) метод.  
+## <a name="remarks"></a>Примечания  
+ Возвращенные [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) метод.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)

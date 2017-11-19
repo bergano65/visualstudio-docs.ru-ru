@@ -1,39 +1,40 @@
 ---
-title: "Общие сведения о кэше ClickOnce | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "приложения ClickOnce, кэш"
-  - "развертывание ClickOnce, кэш"
-  - "приложения Windows, развертывание ClickOnce"
+title: "Общие сведения о кэше ClickOnce | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- Windows applications, ClickOnce deployemtn
+- ClickOnce applications, cache
+- ClickOnce deployment, cache
 ms.assetid: e379921e-9ef1-4326-bbf3-53ba67925526
-caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 1aa73140760f161971f30e4232658b18453f233f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Общие сведения о кэше ClickOnce
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Все приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], установлены ли они локально или размещаются в сети, хранятся на клиентском компьютере в *кэше* приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  Кэш [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] — это семейство скрытых подкаталогов в каталоге "Локальные параметры" папки "Documents and Settings" текущего пользователя.  В этом кэше содержатся все файлы приложения, включая сборки, файлы конфигурации, параметры приложения и пользовательские настройки, а также каталог данных.  Кэш также отвечает за миграцию каталога данных приложения при переходе на более позднюю версию.  Дополнительные сведения о миграции данных см. в разделе [Доступ к локальным и удаленным данным в приложениях ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  
+# <a name="clickonce-cache-overview"></a>Общие сведения о кэше ClickOnce
+Все [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, являются ли они установлены локально или размещаются в сети, хранятся на клиентском компьютере в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]приложения *кэша*. Объект [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] кэша — это семейство скрытых каталогов в каталоге локальные параметры папки Documents and Settings текущего пользователя. Этот кэш содержит файлы приложения, включая сборки, файлы конфигурации, приложения и пользовательские параметры и каталог данных. Кэш также отвечает за перенос каталог данных приложения до последней версии. Дополнительные сведения о миграции данных см. в разделе [доступ к локальным и удаленным данным в приложениях ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  
   
- Предоставляя одно местоположение для хранилища приложения, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] берет на себя выполнение задачи управления физической установкой приложения вместо пользователя.  Кэш также помогает изолировать приложения путем хранения сборок и файлов данных для всех приложений и их разных версий отдельно друг от друга.  Например, при обновлении приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] эта версия и ее информационные ресурсы предоставляются с их собственными каталогами в кэше.  
+ Предоставляя одно местоположение для хранилища приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] берет на себя задачи управления физической установкой приложения от пользователя. Кэш также помогает изолировать приложения путем хранения сборок и файлов данных для всех приложений и их разных версий отдельно друг от друга. Например, при обновлении [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, версия и ее информационные ресурсы предоставляются с их собственными каталогами в кэше.  
   
-## Квота хранилища кэша  
- Приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], размещаемые в сети, ограничиваются по объему занимаемого ими места квотой, лимитирующей размер кэша [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  Размер кэша применяется ко всем интерактивным приложениям пользователя; одиночное интерактивное приложение с частичным доверием может занимать не более половины пространства квоты.  Установленные приложения не ограничиваются размером квоты и не учитываются в предельном размере кэша.  Для всех приложений [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] кэше сохраняются только текущая версия и ранее установленная версия.  
+## <a name="cache-storage-quota"></a>Квота хранилища кэша  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]приложения, размещенного в сети, ограничиваются по объему занимаемого квотой, которая ограничивает размер [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] кэша. Размер кэша применяется для всех пользователей сети приложений; одно приложение с частичным доверием, в Интернете может занимать не более половины пространства квоты. Установленные приложения не ограничены размером кэша и не учитываются счетчиком предельный размер кэша. Для всех [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложений в кэше сохраняются только текущая версия и ранее установленная версия.  
   
- По умолчанию на клиентских компьютерах имеется 250 МБ хранилища для интерактивных приложений [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  В этом пределе не учитываются файлы данных.  Администратор системы может увеличить или уменьшить данную квоту на конкретном клиентском компьютере, изменив значение раздела реестра, HKEY\_CURRENT\_USER\\Software\\Classes\\Software\\Microsoft\\Windows\\CurrentVersion\\Deployment\\OnlineAppQuotaInKB, которое представлено значением DWORD, выражающим размер кэша в килобайтах.  Например, чтобы уменьшить размер кэша до 50 МБ, это значение следовало бы установить равным 51200.  
+ По умолчанию клиентские компьютеры имеют 250 МБ хранилища для, сети [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложений. Это ограничение не учитываются файлы данных. Системный администратор можно увеличивать и уменьшать эту квоту на определенный компьютер, изменив раздел реестра HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment\OnlineAppQuotaInKB, который является значением типа DWORD выражается размер кэша, в килобайтах. Например чтобы уменьшить размер кэша до 50 МБ, нужно изменить это значение равным 51200.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Доступ к локальным и удаленным данным в приложениях ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

@@ -1,11 +1,10 @@
 ---
-title: Limitations on WCF Debugging | Microsoft Docs
+title: "Ограничения на отладку WCF | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,52 +16,37 @@ helpviewer_keywords:
 - debugging, WCF
 - WCF, debugging limitations
 ms.assetid: 8e0333c4-1ddc-4abe-8f1c-d19bf6a2a07a
-caps.latest.revision: 30
+caps.latest.revision: "30"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 02e261c06d065eec1c93159f39103d9281cef3b9
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
-
+ms.openlocfilehash: 72e166d5501849dd84964364a94b2bdf6dc239a2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="limitations-on-wcf-debugging"></a>Limitations on WCF Debugging
-There are three ways that you can begin debugging a WCF service:  
+# <a name="limitations-on-wcf-debugging"></a>Ограничения на отладку WCF
+Существуют три способа, позволяющих начать отладку службы WCF:  
   
--   You are debugging a client process that calls a service. The debugger steps into the service. The service does not have to be in the same solution as your client application.  
+-   Отладка клиентского процесса, который вызывает службу. Отладчик выполняет шаг с заходом в службу. Служба и используемое клиентское приложение не обязательно должны находиться в одном и том же решении.  
   
--   You are debugging a client process that makes a request to a service. The service must be part of your solution.  
+-   Отладка клиентского процесса, который отправляет запрос службе. Служба должна быть частью решения.  
   
--   You use **Attach to Process** to attach to a service that is currently running. Debugging begins inside the service.  
+-   Вы используете **присоединиться к процессу** подключиться к службе, которая выполняется в данный момент. Отладка начинается внутри службы.  
   
- This topic describes limitations on these scenarios.  
+ В этом разделе описаны ограничения на применение данных сценариев.  
   
-## <a name="limitations-on-stepping-into-a-service"></a>Limitations on Stepping Into a Service  
- To step into a service from a client applications that you are debugging, the following conditions must be met:  
+## <a name="limitations-on-stepping-into-a-service"></a>Ограничения на выполнение шага с заходом в службу  
+ Чтобы выполнить шаг с заходом в службу из отлаживаемого клиентского приложения, необходимо соблюдать следующие условия.  
   
--   The client must call the service by using a synchronous client object.  
+-   Для вызова службы клиент должен использовать синхронный клиентский объект.  
   
--   The contract operation cannot be one-way.  
+-   Операция контракта не может быть односторонней.  
   
--   If the server is asynchronous, you cannot view the full call stack while you are executing code inside the service.  
+-   Если сервер асинхронный, то при выполнении кода внутри службы невозможно просмотреть полный стек вызовов.  
   
--   Debugging must be enabled with the following code in the app.config or Web.config file:  
+-   В файле app.config или Web.config должна быть включена отладка с помощью показанного ниже кода.  
   
     ```  
     <system.web>  
@@ -70,21 +54,21 @@ There are three ways that you can begin debugging a WCF service:
     </system.web>  
     ```  
   
-     This code only has to be added one time. You can add this code by editing the .config file or by attaching to the service by using **Attach to Process**. When you use **Attach to Process** on a service, the debug code is automatically added to the .config file. After that, you can debug and step into the service without having to edit the .config file.  
+     Этот код требуется добавить только один раз. Можно добавить этот код, изменив файл .config или выполнив присоединение к службе с помощью **присоединиться к процессу**. При использовании **присоединиться к процессу** на службу, код отладки автоматически добавляется в файл конфигурации .config. После этого можно выполнить отладку и выполнить шаг с заходом в службу, не изменяя файл .config.  
   
-## <a name="limitations-on-stepping-out-of-a-service"></a>Limitations on Stepping Out of a Service  
- Stepping out of a service and back to the client has the same limitations described for stepping into a service. In addition, the debugger must be attached to the client. If you are debugging a client and step into a service, the debugger remains attached to the service. This is true whether you started the client by using **Start Debugging** or attached to the client by using **Attach to Process**. If you began debugging by attaching to the service, the debugger is not yet attached to the client. In that case, if you have to step out of the service and back to the client, you must first use **Attach to Process** to attach to the client manually.  
+## <a name="limitations-on-stepping-out-of-a-service"></a>Ограничения на выполнение шага с выходом из службы  
+ В отношении выхода из пошагового выполнения службы и возвращения к клиенту действуют те же ограничения, что и для шага с заходом в службу. Кроме того, отладчик должен быть присоединен к клиенту. Если во время отладки клиента производится шаг с заходом в службу, отладчик остается присоединенным к службе. Это справедливо как в случае запуска клиента с помощью **начать отладку** или присоединен к клиенту с помощью **присоединиться к процессу**. Если отладка начинается путем присоединения к службе, отладчик больше не будет присоединен к клиенту. В этом случае при наличии для пошагового выполнения службы и обратно клиенту, необходимо сначала использовать **присоединиться к процессу** для присоединения к клиенту вручную.  
   
-## <a name="limitations-on-automatic-attach-to-a-service"></a>Limitations on Automatic Attach to a Service  
- Automatically attaching to a service has the following limitations:  
+## <a name="limitations-on-automatic-attach-to-a-service"></a>Ограничения на автоматическое присоединение к службе  
+ Автоматическое присоединение к службе имеет следующие ограничения:  
   
--   The service must be part of the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution you are debugging.  
+-   Служба должна быть частью решения [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], для которого выполняется отладка.  
   
--   The service must be hosted. It may be part of a Web Site Project (File System and HTTP), Web Application Project (File System and HTTP), or WCF Service Library project. WCF Service Library projects can be either Service Libraries or Workflow Service Libraries.  
+-   Служба должна быть размещена. Служба может быть частью проекта веб-сайта (файловая система или HTTP), проекта веб-приложения (файловая система или HTTP) или проекта библиотеки служб WCF. Проекты библиотеки служб WCF могут быть либо библиотеками служб, либо библиотеками служб рабочих процессов.  
   
--   The service must be invoked from a WCF client.  
+-   Обращение к службе должно производиться из клиента WCF.  
   
--   Debugging must be enabled with the following code in the app.config or Web.config file:  
+-   В файле app.config или Web.config должна быть включена отладка с помощью показанного ниже кода.  
   
     ```  
     <system.web>  
@@ -92,12 +76,12 @@ There are three ways that you can begin debugging a WCF service:
     <system.web>  
     ```  
   
-## <a name="self-hosting"></a>Self-Hosting  
- A *self-hosted service* is a WCF service that does not run inside IIS, the WCF Service Host, or the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server. For information about how to debug a self-hosted service, see [How to: Debug a Self-Hosted WCF Service](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  
+## <a name="self-hosting"></a>Резидентное размещение  
+ Объект *резидентная служба* является службой WCF, которая не запускается внутри IIS, узла службы WCF или [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server. Сведения об отладке резидентной службы см. в разделе [как: отладка резидентной службы](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  
   
-## <a name="self-hosting"></a>Self-Hosting  
- To enable debugging of [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 or 3.5 applications, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 or 3.5 must be installed before [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] is installed. If [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] is installed before [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 or 3.5, an error occurs when you try to debug a [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 or 3.5 application. The error message is, "Unable to Automatically Step Into the Server." To fix this problem, use the Windows **Control Panel** > **Programs and Features** to repair your [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] installation.  
+## <a name="self-hosting"></a>Резидентное размещение  
+ Чтобы включить отладку [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] приложений 3.0 или 3.5, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 или 3.5 необходимо установить перед [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] установлен. Если [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] установлена перед [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 или 3.5, произошла ошибка при попытке отладки [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 или 3.5. Сообщение об ошибке: "Не удалось автоматически выполнить шаг на сервере". Чтобы устранить эту проблему, воспользуйтесь окном **панели управления** > **программы и компоненты** для восстановления вашей [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] установки.  
   
-## <a name="see-also"></a>See Also  
- [Debugging WCF Services](../debugger/debugging-wcf-services.md)   
- [How to: Debug a Self-Hosted WCF Service](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+## <a name="see-also"></a>См. также  
+ [Отладка служб WCF](../debugger/debugging-wcf-services.md)   
+ [Практическое руководство. Отладка резидентной службы WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

@@ -1,11 +1,10 @@
 ---
-title: 'CA1403: Auto layout types should not be COM visible | Microsoft Docs'
+title: "CA1403: Типы макета Auto не должны быть видимыми для COM | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,63 +14,48 @@ helpviewer_keywords:
 - CA1403
 - AutoLayoutTypesShouldNotBeComVisible
 ms.assetid: a7007714-f9b4-4730-94e0-67d3dc68991f
-caps.latest.revision: 17
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: d37505e5525641ad1917bae8f8f4327ea4888faf
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 3e5f8617b7ed5f0bec9ecaa2f4fbca1653cee46f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: Auto layout types should not be COM visible
+# <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: типы макета Auto не должны быть видимыми для COM
 |||  
 |-|-|  
 |TypeName|AutoLayoutTypesShouldNotBeComVisible|  
 |CheckId|CA1403|  
-|Category|Microsoft.Interoperability|  
-|Breaking Change|Breaking|  
+|Категория|Microsoft.Interoperability|  
+|Критическое изменение|Критическое|  
   
-## <a name="cause"></a>Cause  
- A Component Object Model (COM) visible value type is marked with the <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> attribute set to <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName>.  
+## <a name="cause"></a>Причина  
+ Тип значений, видимых объектов модели компонентов (COM) помечен атрибутом <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> атрибуту присвоено значение <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName>.  
   
-## <a name="rule-description"></a>Rule Description  
- <xref:System.Runtime.InteropServices.LayoutKind> layout types are managed by the common language runtime. The layout of these types can change between versions of the .NET Framework, which will break COM clients that expect a specific layout. Note that if the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute is not specified, the C#, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], and C++ compilers specify the <xref:System.Runtime.InteropServices.LayoutKind> layout for value types.  
+## <a name="rule-description"></a>Описание правила  
+ <xref:System.Runtime.InteropServices.LayoutKind>Общеязыковая среда выполнения управляет типы макета. Макеты этих типов может меняться в различных версиях платформы .NET Framework, что нарушит работу клиентов COM, которые ожидают определенного макета. Обратите внимание, что если <xref:System.Runtime.InteropServices.StructLayoutAttribute> атрибут не указан, в C#, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], и компиляторы C++ указывают <xref:System.Runtime.InteropServices.LayoutKind> макета для типов значений.  
   
- Unless marked otherwise, all public nongeneric types are visible to COM; all nonpublic and generic types are invisible to COM. However, to reduce false positives, this rule requires the COM visibility of the type to be explicitly stated; the containing assembly must be marked with the <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> set to `false` and the type must be marked with the <xref:System.Runtime.InteropServices.ComVisibleAttribute> set to `true`.  
+ Если не указано иное, все открытые неуниверсальные типы являются видимыми для COM; все закрытые и универсальные типы являются невидимыми для COM. Однако во избежание ложных положительных результатов, это правило требует видимость COM типа требуется явно указывать; содержащей сборки должны быть отмечены <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> значение `false` и тип должен быть помечен атрибутом <xref:System.Runtime.InteropServices.ComVisibleAttribute> значение `true`.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, change the value of the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute to <xref:System.Runtime.InteropServices.LayoutKind> or <xref:System.Runtime.InteropServices.LayoutKind>, or make the type invisible to COM.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Чтобы устранить нарушение данного правила, измените значение <xref:System.Runtime.InteropServices.StructLayoutAttribute> атрибут <xref:System.Runtime.InteropServices.LayoutKind> или <xref:System.Runtime.InteropServices.LayoutKind>, или сделайте тип невидимый в COM.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ Для этого правила отключать вывод предупреждений не следует.  
   
-## <a name="example"></a>Example  
- The following example shows a type that violates the rule and a type that satisfies the rule.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, тип, который нарушает правила и тип, соответствующий этому правилу.  
   
- [!code-csharp[FxCop.Interoperability.AutoLayout#1](../code-quality/codesnippet/CSharp/ca1403-auto-layout-types-should-not-be-com-visible_1.cs)] [!code-vb[FxCop.Interoperability.AutoLayout#1](../code-quality/codesnippet/VisualBasic/ca1403-auto-layout-types-should-not-be-com-visible_1.vb)]  
+ [!code-csharp[FxCop.Interoperability.AutoLayout#1](../code-quality/codesnippet/CSharp/ca1403-auto-layout-types-should-not-be-com-visible_1.cs)]
+ [!code-vb[FxCop.Interoperability.AutoLayout#1](../code-quality/codesnippet/VisualBasic/ca1403-auto-layout-types-should-not-be-com-visible_1.vb)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1408: Do not use AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)  
+## <a name="related-rules"></a>Связанные правила  
+ [CA1408: не используйте AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)  
   
-## <a name="see-also"></a>See Also  
- [Introducing the Class Interface](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024)   
- [Qualifying .NET Types for Interoperation](/dotnet/framework/interop/qualifying-net-types-for-interoperation)   
- [Interoperating with Unmanaged Code](/dotnet/framework/interop/index)
+## <a name="see-also"></a>См. также  
+ [Введение в интерфейс класса](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024)   
+ [Уточнение типов .NET для взаимодействия](/dotnet/framework/interop/qualifying-net-types-for-interoperation)   
+ [Взаимодействие с неуправляемым кодом](/dotnet/framework/interop/index)

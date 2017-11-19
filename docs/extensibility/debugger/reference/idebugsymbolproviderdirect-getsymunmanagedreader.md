@@ -1,57 +1,59 @@
 ---
-title: "IDebugSymbolProviderDirect::GetSymUnmanagedReader | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetSymUnmanagedReader"
-  - "IDebugSymbolProviderDirect::GetSymUnmanagedReader"
+title: "IDebugSymbolProviderDirect::GetSymUnmanagedReader | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- GetSymUnmanagedReader
+- IDebugSymbolProviderDirect::GetSymUnmanagedReader
 ms.assetid: 147bacfa-f66c-43e0-8a72-e601058dc57f
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8ccbc65919c658fac5132fa3fc9cec37b16e05e5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugSymbolProviderDirect::GetSymUnmanagedReader
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Возвращает средство чтения символов для неуправляемого кода\).  
+# <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
+Возвращает средство чтения символов для неуправляемого кода.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT GetSymUnmanagedReader (  
-   ULONG32    ulAppDomainID,  
-   GUID       guidModule,  
-   IUnknown** ppSymUnmanagedReader  
+   ULONG32    ulAppDomainID,  
+   GUID       guidModule,  
+   IUnknown** ppSymUnmanagedReader  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetSymUnmanagedReader (  
-   uint       ulAppDomainID,  
-   Guid       guidModule,  
-   out object ppSymUnmanagedReader  
+   uint       ulAppDomainID,  
+   Guid       guidModule,  
+   out object ppSymUnmanagedReader  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ulAppDomainID`  
- \[in\] идентификатор домена приложения.  
+ [in] Идентификатор домена приложения.  
   
  `guidModule`  
- \[in\] уникальный идентификатор модуля.  
+ [in] Уникальный идентификатор модуля.  
   
  `ppSymUnmanagedReader`  
- \[out\] возвращает объект, который представляет средство чтения символов для неуправляемого кода\).  
+ [out] Возвращает объект, представляющий средства чтения символов для неуправляемого кода.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

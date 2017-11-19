@@ -1,48 +1,45 @@
 ---
-title: "IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp"
+title: "IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords: IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp
 ms.assetid: 30975973-acb1-48f4-8266-5e097a57db22
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1442297fcacb3a9464f9ea67489c91c8ab64ad78
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp
-Этот метод co\- создает класс, идентификатор которого передан с `rclsid` с помощью `dwClsContext`.  Это аналогично переходу [IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md) работает, за исключением того, что в случае `CreateObjectWithSiteAtWebApp` объект создать асинхронно в потоке пользовательского интерфейса веб\-приложения.  Объект, определенный идентификатор класса, должен реализовывать [IWebAppDiagnosticsObjectInitialization — интерфейс](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md).  После того как объект был создания, [IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) Позвонитьо со ссылкой на PDM отладку приложения и параметр `hPassToObject``CreateObjectWithSiteAtWebApp`.  Этот метод можно использовать для передачи приложению дескриптор анонимного канала, который был скопирован с помощью [DuplicateHandle](http://go.microsoft.com/fwlink/?LinkId=232450).  
+# <a name="iwebappdiagnosticssetupcreateobjectwithsiteatwebapp"></a>IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp
+Этот метод совместно создает класс, идентификатор которого передается с помощью `rclsid` с помощью `dwClsContext`. Это аналогично тому, как [IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md) работает, за исключением того, что в случае `CreateObjectWithSiteAtWebApp` объект создается асинхронно в потоке пользовательского интерфейса веб-приложения. Объект, заданный Идентификатором класса следует реализовать [iwebappdiagnosticsobjectinitialization — интерфейс](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md). После создания объекта [IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) вызывается со ссылкой на приложение отладки PDM и `hPassToObject` параметр `CreateObjectWithSiteAtWebApp`. Этот метод можно использовать для передачи в приложение дескриптор анонимного канала, скопированный с помощью [DuplicateHandle](http://go.microsoft.com/fwlink/?LinkId=232450).  
   
 > [!IMPORTANT]
->  [IWebAppDiagnosticsSetup — интерфейс](../../winscript/reference/iwebappdiagnosticssetup-interface.md) реализуется PDM v11.0 и большим.  Обнаружен в activdbg100.h.  
+>  [Iwebappdiagnosticssetup — интерфейс](../../winscript/reference/iwebappdiagnosticssetup-interface.md) — реализованный PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-HRESULT CreateObjectWithSiteAtWebApp(  
-        [in] REFCLSID rclsid,   
-        [in] DWORD dwClsContext,   
-        [in] REFIID riid,   
-        [in] DWORD_PTR hPassToObject  
-        );  
-  
+HRESULT CreateObjectWithSiteAtWebApp(        [in] REFCLSID rclsid,         [in] DWORD dwClsContext,         [in] REFIID riid,         [in] DWORD_PTR hPassToObject        );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `rclsid`  
- Идентификатор класса, который требуется создать.  
+ Идентификатор класса для создания класса.  
   
  `dwClsContext`  
- Контекст, в котором выполняется код.  В большинстве случаев это CLSCTX\_INPROC\_SERVER.  
+ Контекст, в котором будет выполняться код. В большинстве случаев это CLSCTX_INPROC_SERVER.  
   
  `riid`  
  Не используется.  
   
  `hPassToObject`  
- Значение, которое будет передано объекту раз, когда он создатьо в потоке пользовательского интерфейса, если объект реализует [IWebAppDiagnosticsObjectInitialization — интерфейс](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md).
+ Значение, которое будет передано в объект после его создания в потоке пользовательского интерфейса, если объект реализует [iwebappdiagnosticsobjectinitialization — интерфейс](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md).

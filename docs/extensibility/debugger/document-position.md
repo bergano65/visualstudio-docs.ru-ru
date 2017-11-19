@@ -1,35 +1,36 @@
 ---
-title: "Позиция в документе | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "отладка [отладка SDK] контексты"
+title: "Позиция документа | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], contexts
 ms.assetid: b59d739c-7572-427f-a70d-4e5df63d02c1
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4132742177eac126a6aa67f915c16c2ff4e8c93c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Позиция в документе
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-IN [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладки, a позиция документа.  
+# <a name="document-position"></a>Позиция в документе
+В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладка, **позиция документа**:  
   
--   Предоставляет абстракцию позиции в файле источника, что известен интегрированная среда разработки.  Для большинства языков, сегодня позиции документа можно рассматривать как позиции в файле источника.  
+-   Предоставляет краткое описание позиции в файле исходного кода, как оно известно в Интегрированной среде разработки. Для большинства языков в настоящее время позиции документа может рассматриваться как положение в файле исходного кода.  
   
--   Описывает положение в исходном документе в обработчик отладки.  
+-   Описание позиции в исходном документе на ядро отладки.  
   
--   Реализует IDebugDocumentPosition2 интерфейс.  
+-   Реализуется [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) интерфейса.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Контекст кода](../../extensibility/debugger/code-context.md)   
  [Контекст документа](../../extensibility/debugger/document-context.md)   
- [Поставщик символов](../../extensibility/debugger/symbol-provider.md)   
+ [Символ поставщика](../../extensibility/debugger/symbol-provider.md)   
  [Интерфейсы поставщика символов](../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [Контексты отладчика](../../extensibility/debugger/debugger-contexts.md)

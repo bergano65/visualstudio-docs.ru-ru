@@ -1,55 +1,53 @@
 ---
-title: "IDiaSymbol::get_InlSpec | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_InlSpec - метод"
+title: "IDiaSymbol::get_InlSpec | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_InlSpec method
 ms.assetid: 30af6a2f-be84-429e-a96a-d0f9ed9343fb
-caps.latest.revision: 7
-caps.handback.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 950384dfce7de39969b054f6c1019fa36c1efa38
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_InlSpec
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Эта функция получает пометить указывающее, является ли функция была помечена как встроенный \(с помощью одного из [inline, \_\_inline, \_\_forceinline](../../misc/inline-inline-forceinline.md) атрибуты\).  
+# <a name="idiasymbolgetinlspec"></a>IDiaSymbol::get_InlSpec
+Эта функция получает флаг, указывающий ли функция была помечена как встроенная (с помощью одного из [встроенным образом, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp.md) атрибутов).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```C++  
 HRESULT get_inlSpec(  
-   BOOL *pRetVal  
+   BOOL *pRetVal  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pRetVal`  
- \[out\] возвращает `TRUE` если функция была помечена как встроенный; в противном случае возвращает  `FALSE`.  
+ [out] Возвращает `TRUE` Если функция была помечена как подставляемая; в противном случае возвращает `FALSE`.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает  `S_FALSE` или код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение  `S_FALSE` означает, что свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
   
 |Требование|Описание|  
-|----------------|--------------|  
+|-----------------|-----------------|  
 |Заголовок:|dia2.h|  
-|Версия:|Пакет SDK для доступа к интерфейсу отладки v8.0|  
+|Версия:|ПАКЕТ SDK для версии 8.0|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [inline, \_\_inline, \_\_forceinline](../../misc/inline-inline-forceinline.md)
+ [inline, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp.md)

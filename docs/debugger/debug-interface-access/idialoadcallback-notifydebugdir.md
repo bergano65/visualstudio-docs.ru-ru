@@ -1,59 +1,58 @@
 ---
-title: "IDiaLoadCallback::NotifyDebugDir | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaLoadCallback::NotifyDebugDir - метод"
+title: "IDiaLoadCallback::NotifyDebugDir | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaLoadCallback::NotifyDebugDir method
 ms.assetid: bd04e2f6-0dbf-4742-a556-96f2cd99aa19
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3bc5150146953dc99970da82747c6e608660b104
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaLoadCallback::NotifyDebugDir
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Вызывается, когда был найден в каталог отладки exe\-файла.  
+# <a name="idialoadcallbacknotifydebugdir"></a>IDiaLoadCallback::NotifyDebugDir
+Вызывается, когда каталог отладки был найден в файле .exe.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT NotifyDebugDir (   
-   BOOL  fExecutable,  
-   DWORD cbData,  
-   BYTE  data[]  
+```C++  
+HRESULT NotifyDebugDir (   
+   BOOL  fExecutable,  
+   DWORD cbData,  
+   BYTE  data[]  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `fExecutable`  
- \[in\] `TRUE` если каталог отладки прочитан из исполняемого файла \(а не файл .dbg\).  
+ [in] `TRUE` Если каталог отладки считывается из исполняемого файла (а не файл .dbg).  
   
  `cbData`  
- \[in\] число байтов данных в каталоге отладки.  
+ [in] Число байт данных в каталоге отладки.  
   
  `data[]`  
- \[in\] массив, который заполняется с каталогом отладки.  
+ [in] Массив, который содержит каталог отладки.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  Код возврата, обычно не учитывается.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Код возврата, обычно учитывается.  
   
-## Заметки  
- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) этот метод вызывает метод обратного вызова при обнаружении каталог отладки при обработке исполняемый файл.  
+## <a name="remarks"></a>Примечания  
+ [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) метод вызывает этот обратный вызов, когда находит каталог отладки при обработке исполняемого файла.  
   
- Этот метод удаляет необходимости, клиента в метод обратного инженеру исполняемого файла или файла отладки для поддержки отладочные данные за исключением того, найденных в файле pdb.  С этими данными, клиент может распознать тип отладочной информации и находится ли он в исполняемом файле или в файле .dbg.  
+ Этот метод удаляет необходимость для клиента реконструировать исполняемый файл и (или) отладки файл отладочной информации, отличный от того, в PDB-файл. На основе этих данных клиент может распознать тип отладочной информации, и он находится в исполняемый файл или файл .dbg.  
   
- Большинство клиентов не требуется, поскольку этот обратный вызов `IDiaDataSource::loadDataForExe` метод прозрачным открывает и pdb\-файлы и файлы .dbg при необходимости, что послужили символы.  
+ Большинство клиентов не требуется этот обратный вызов, так как `IDiaDataSource::loadDataForExe` метод прозрачно открывает PDB-файл и .dbg файлы при необходимости обрабатывать символы.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)   
  [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

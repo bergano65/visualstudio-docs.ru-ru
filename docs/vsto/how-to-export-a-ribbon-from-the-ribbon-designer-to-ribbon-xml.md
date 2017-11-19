@@ -1,12 +1,10 @@
 ---
-title: 'How to: Export a Ribbon from the Ribbon Designer to Ribbon XML | Microsoft Docs'
+title: "Как: экспорт ленты из конструктора лент в XML-ленты | Документы Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -21,60 +19,60 @@ helpviewer_keywords:
 - Ribbon Designer [Office development in Visual Studio]
 - exporting Ribbon
 ms.assetid: 96e0e9ed-4392-4f45-ac33-b6f7c22ea321
-caps.latest.revision: 37
-author: kempb
-ms.author: kempb
+caps.latest.revision: "37"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: cf3b9b66e0626328bccac92ab473dee33326b0f2
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: b73bff8170e351e9e22e95d53ae446895cfdbd2b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>How to: Export a Ribbon from the Ribbon Designer to Ribbon XML
-  The **Ribbon (Visual Designer)** item does not support all possible types of Ribbon customization. To customize the Ribbon in advanced ways, you can export the Ribbon from the designer to Ribbon XML and edit the XML directly.  
+# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Практическое руководство. Экспорт лент из конструктора лент в XML-ленты
+  **Лента (визуальный конструктор)** элемент не поддерживает все типы настроек ленты. Для настройки ленты дополнительными способами, можно экспортировать ленту из конструктора XML-ленты и непосредственного редактирования XML.  
   
 > [!NOTE]  
->  Not all property values appear in the Ribbon XML file. For more information, see [Ribbon Overview](../vsto/ribbon-overview.md).  
+>  Не все свойства отображаются в XML-файле ленты. Дополнительные сведения см. в разделе [Обзор ленты](../vsto/ribbon-overview.md).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>To export a Ribbon from the Ribbon Designer to Ribbon XML  
+### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Для экспорта ленты из конструктора лент в XML-ленты  
   
-1.  Right-click the Ribbon code file in **Solution Explorer**, and then click **View Designer**.  
+1.  Щелкните правой кнопкой мыши файл кода ленты в **обозревателе решений**, а затем нажмите кнопку **конструктор представлений**.  
   
-2.  Right-click the Ribbon Designer, and then click **Export Ribbon to XML**.  
+2.  Щелкните правой кнопкой мыши в конструкторе лент и нажмите кнопку **экспортировать ленту в XML**.  
   
-     Visual Studio adds a Ribbon XML file and a Ribbon XML code file to your project.  
+     Visual Studio добавляет XML-файл ленты и файл кода XML ленты в проект.  
   
-3.  In the Ribbon code class, locate the comments that start with `TODO:`.  
+3.  В классе кода ленты разместите комментарии, начинающиеся с `TODO:`.  
   
-4.  Copy the code block in these comments to the **ThisAddin**, **ThisWorkbook**, or **ThisDocument** class, depending on which type of solution you are developing.  
+4.  Скопируйте блок кода в этих комментариев к **ThisAddin**, **ThisWorkbook**, или **ThisDocument** класса, в зависимости от того, какой тип решения вы разрабатываете.  
   
-     This code enables the Microsoft Office application to discover and load your custom Ribbon. For more information, see [Ribbon XML](../vsto/ribbon-xml.md).  
+     Этот код позволяет приложению Microsoft Office обнаружить и загрузить пользовательскую ленту. Дополнительные сведения см. в разделе [Ribbon XML](../vsto/ribbon-xml.md).  
   
-5.  In the **ThisAddin**, **ThisWorkbook**, or **ThisDocument** class, uncomment the code block.  
+5.  В **ThisAddin**, **ThisWorkbook**, или **ThisDocument** класса, раскомментируйте блок кода.  
   
-     After you uncomment the code, it should resemble the following example. In this example, the Ribbon class is called `MyRibbon`.  
+     После отмены комментариев кода, он должен выглядеть примерно так. В этом примере класс ленты называется `MyRibbon`.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]  [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
+     [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
   
-6.  Switch to the Ribbon XML code file and find the `Ribbon Callbacks` region.  
+6.  В файле кода ленты XML и найти `Ribbon Callbacks` области.  
   
-     This is where you write callback methods to handle user actions, such as clicking a button.  
+     Это происходит, где вы записываете методы обратного вызова для обработки действий пользователя, например на нажатие кнопки.  
   
-7.  Create a callback method for each event handler that you wrote in the Ribbon Designer code.  
+7.  Создайте метод обратного вызова для каждого обработчика события, записанного в коде конструктора лент.  
   
-8.  Move all your event handler code from the event handlers to the callback methods, and modify the code to work with the Ribbon extensibility (RibbonX) programming model.  
+8.  Переместите весь свой код обработчика событий из обработчиков событий в методы обратного вызова и изменения кода для работы с моделью программирования расширения ленты (RibbonX).  
   
-     For information about writing callback methods and using the RibbonX programming model, see [Ribbon XML](../vsto/ribbon-xml.md).  
+     Сведения о создании методов обратного вызова и использование модели программирования RibbonX см. в разделе [XML-ленты](../vsto/ribbon-xml.md).  
   
-## <a name="see-also"></a>See Also  
- [Ribbon Overview](../vsto/ribbon-overview.md)   
- [Ribbon Designer](../vsto/ribbon-designer.md)   
- [Ribbon XML](../vsto/ribbon-xml.md)   
- [Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Walkthrough: Creating a Custom Tab by Using Ribbon XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
+## <a name="see-also"></a>См. также  
+ [Обзор ленты](../vsto/ribbon-overview.md)   
+ [Конструктор лент](../vsto/ribbon-designer.md)   
+ [XML-ленты](../vsto/ribbon-xml.md)   
+ [Пошаговое руководство: Создание настраиваемой вкладки с помощью конструктора лент](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Пошаговое руководство. Создание настраиваемой вкладки с помощью XML-лент](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
   
   

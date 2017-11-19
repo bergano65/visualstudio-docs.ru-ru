@@ -1,31 +1,31 @@
 ---
-title: "CA1062: проверьте аргументы открытых методов | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1062"
-  - "ValidateArgumentsOfPublicMethods"
-  - "Validate arguments of public methods"
-helpviewer_keywords: 
-  - "CA1062"
-  - "ValidateArgumentsOfPublicMethods"
+title: "CA1062: Проверьте аргументы открытых методов | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1062
+- ValidateArgumentsOfPublicMethods
+- Validate arguments of public methods
+helpviewer_keywords:
+- CA1062
+- ValidateArgumentsOfPublicMethods
 ms.assetid: db1f69ca-68f7-477e-94f3-d135cc5dfcbc
-caps.latest.revision: 27
-caps.handback.revision: 27
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "27"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 8f225159e551dac2327c35774db846eec4ccc6fc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# CA1062: проверьте аргументы открытых методов
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: проверьте аргументы открытых методов
 |||  
 |-|-|  
 |TypeName|ValidateArgumentsOfPublicMethods|  
@@ -33,91 +33,178 @@ manager: "wpickett"
 |Категория|Microsoft.Design|  
 |Критическое изменение|Не критическое|  
   
-## Причина  
- Видимый для внешнего кода методы выполняет разыменование одного из своих ссылочных аргументов, не проверяя его на равенство со значением `null` \(`Nothing` в Visual Basic\).  
+## <a name="cause"></a>Причина  
+ Видимый извне метод разыменовывает одного из его аргументов ссылки без проверки, является ли этот аргумент `null` (`Nothing` в Visual Basic).  
   
-## Описание правила  
- Все ссылочные аргументы, передаваемые в видимые для внешнего кода методы, должны проверяться на равенство значению `null`.  Если это возможно, при равенстве аргумента значению `null` следует вызывать исключение <xref:System.ArgumentNullException>.  
+## <a name="rule-description"></a>Описание правила  
+ Все ссылочные аргументы, передаваемые внешним видимым методам должны проверяться на `null`. При необходимости, создавать <xref:System.ArgumentNullException> когда аргумент является `null`.  
   
- Если метод может быть вызван из неизвестной сборки, поскольку был объявлен как открытый или защищенный, необходимо проверить все параметры метода.  Если метод сконструирован для вызова только известными сборками, следует сделать этот метод внутренним и применить атрибут <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> к сборке, содержащей этот метод.  
+ Если метод может вызываться из неизвестного сборки, поскольку он объявлен как открытый или защищенный, следует проверить все параметры метода. Метод предназначен для вызывать только известные сборок, следует сделать метод внутренней и применить <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> атрибут к сборке, содержащего метод.  
   
-## Устранение нарушений  
- Чтобы устранить нарушение данного правила, проверьте каждый ссылочный аргумент на равенство значению `null`.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Чтобы устранить нарушение данного правила, проверьте каждый ссылочный аргумент для `null`.  
   
-## Отключение предупреждений  
- Предупреждение из этого правила можно отключить, если вы уверены, что со снятой ссылкой параметр был проверен другим вызовом метода в функции.  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ Можно подавить предупреждение из этого правила, если вы уверены, что со снятой ссылкой параметр был проверен другим вызовом метода в функции.  
   
-## Пример  
- В следующем примере показан метод, который нарушает данное правило, и метод, удовлетворяющий ему.  
+## <a name="example"></a>Пример  
+ В следующем примере показано метод, который нарушает правила и метод, соответствующий этому правилу.  
   
- [!code-cs[FxCop.Design.ValidateArguments#1](../code-quality/codesnippet/CSharp/ca1062-validate-arguments-of-public-methods_1.cs)]
- [!code-cs[FxCop.Design.ValidateArguments#1](../code-quality/codesnippet/CSharp/ca1062-validate-arguments-of-public-methods_1.cs)]
- [!code-vb[FxCop.Design.ValidateArguments#1](../code-quality/codesnippet/VisualBasic/ca1062-validate-arguments-of-public-methods_1.vb)]  
+ ```csharp
+ using System;
+
+namespace DesignLibrary
+{
+    public class Test
+    {
+        // This method violates the rule.
+        public void DoNotValidate(string input)
+        {
+            if (input.Length != 0)
+            {
+                Console.WriteLine(input);
+            }
+        }
+
+        // This method satisfies the rule.
+        public void Validate(string input)
+        {
+            if (input == null)
+            {
+                throw new ArgumentNullException("input");
+            }
+            if (input.Length != 0)
+            {
+                Console.WriteLine(input);
+            }
+        }
+    }
+}
+```
+
+```vb
+Imports System
+
+Namespace DesignLibrary
+
+    Public Class Test
+
+        ' This method violates the rule.
+        Sub DoNotValidate(ByVal input As String)
+
+            If input.Length <> 0 Then
+                Console.WriteLine(input)
+            End If
+
+        End Sub
+
+        ' This method satisfies the rule.
+        Sub Validate(ByVal input As String)
+
+            If input Is Nothing Then
+                Throw New ArgumentNullException("input")
+            End If
+
+            If input.Length <> 0 Then
+                Console.WriteLine(input)
+            End If
+
+        End Sub
+
+    End Class
+
+End Namespace
+```
   
-## Пример  
- В [!INCLUDE[vsprvslong](../code-quality/includes/vsprvslong_md.md)] это правило не определяет ситуацию, когда параметры передаются другому методу, в котором производится такая проверка.  
+## <a name="example"></a>Пример  
+ В [!INCLUDE[vsprvslong](../code-quality/includes/vsprvslong_md.md)], это правило обнаруживает, что параметры передаются другому методу, который выполняет проверку.  
+
+```csharp
+public string Method(string value)
+{
+    EnsureNotNull(value);
+
+    // Fires incorrectly    
+    return value.ToString();
+}
+
+private void EnsureNotNull(string value)
+{
+    if (value == null)
+        throw new ArgumentNullException("value");
+}
+```
+
+```vb
+Public Function Method(ByVal value As String) As String
+    EnsureNotNull(value)
+
+    ' Fires incorrectly    
+    Return value.ToString()
+End Function
+
+Private Sub EnsureNotNull(ByVal value As String)
+    If value Is Nothing Then
+        Throw (New ArgumentNullException("value"))
+    End If
+End Sub
+```
+
+## <a name="example"></a>Пример  
+ Конструкторы копирования, заполняющие поля или свойства, которые являются ссылочными объектами, также могут нарушать правило CA1062. Нарушение возникает, если копируемый объект, который передается в конструктор копии может быть `null` (`Nothing` в Visual Basic). Чтобы устранить нарушение, используйте статический (Shared в Visual Basic) метод для проверки того, что копируемый объект не равен null.  
   
- [!code-cs[FxCop.Design.ValidateArguments#2](../code-quality/codesnippet/CSharp/ca1062-validate-arguments-of-public-methods_2.cs)]
- [!code-cs[FxCop.Design.ValidateArguments#2](../code-quality/codesnippet/CSharp/ca1062-validate-arguments-of-public-methods_2.cs)]
- [!code-vb[FxCop.Design.ValidateArguments#2](../code-quality/codesnippet/VisualBasic/ca1062-validate-arguments-of-public-methods_2.vb)]  
+ В следующем `Person` пример класса `other` объект, передаваемый `Person` конструктор копии может быть `null`.  
   
-## Пример  
- Конструкторы копирования, заполняющие поля или свойства, которые являются ссылочными объектами, также могут нарушать правило CA1062.  Нарушение возникает, если копируемый объект, который передается в конструктор копирования, может иметь значение `null` \(`Nothing` в Visual Basic\).  Чтобы устранить нарушение, используйте статический метод \(Shared в Visual Basic\), чтобы проверить, что скопированный объект не равен null.  
-  
- В следующем примере класса `Person` объект `other`, который передается в конструктор копии `Person`, может быть равен `null`.  
-  
-```  
-  
+```csharp  
 public class Person  
 {  
-    public string Name { get; private set; }  
-    public int Age { get; private set; }  
+    public string Name { get; private set; }  
+    public int Age { get; private set; }  
   
-    public Person(string name, int age)  
-    {  
-        Name = name;  
-        Age = age;  
-    }  
+    public Person(string name, int age)  
+    {  
+        Name = name;  
+        Age = age;  
+    }  
   
-    // Copy constructor CA1062 fires because other is dereferenced  
-    // without being checked for null  
-    public Person(Person other)  
-        : this(other.Name, other.Age)  
-    {  
-    }  
+    // Copy constructor CA1062 fires because other is dereferenced  
+    // without being checked for null  
+    public Person(Person other)  
+        : this(other.Name, other.Age)  
+    {  
+    }  
 }  
+```
   
-```  
+## <a name="example"></a>Пример  
+ В следующем примере пересмотра `Person` примере `other` объект, передаваемый в конструктор копирования сначала проверяется на равенство null в `PassThroughNonNull` метод.  
   
-## Пример  
- В следующем пересмотренном примере класса `Person` объект `other`, который передается в конструктор копии, сначала проверяется на равенство NULL в методе `PassThroughNonNull`.  
-  
-```  
+```csharp  
 public class Person  
 {  
-    public string Name { get; private set; }  
-    public int Age { get; private set; }  
+    public string Name { get; private set; }  
+    public int Age { get; private set; }  
   
-    public Person(string name, int age)  
-    {  
-        Name = name;  
-        Age = age;  
-    }  
+    public Person(string name, int age)  
+    {  
+        Name = name;  
+        Age = age;  
+    }  
   
-    // Copy constructor  
-    public Person(Person other)  
-        : this(PassThroughNonNull(other).Name,   
-          PassThroughNonNull(other).Age)  
-    {   
-    }  
+    // Copy constructor  
+    public Person(Person other)  
+        : this(PassThroughNonNull(other).Name,   
+          PassThroughNonNull(other).Age)  
+    {   
+    }  
   
-    // Null check method  
-    private static Person PassThroughNonNull(Person person)  
-    {  
-        if (person == null)  
-            throw new ArgumentNullException("person");  
-        return person;  
-    }  
+    // Null check method  
+    private static Person PassThroughNonNull(Person person)  
+    {  
+        if (person == null)  
+            throw new ArgumentNullException("person");  
+        return person;  
+    }  
 }  
   
 ```

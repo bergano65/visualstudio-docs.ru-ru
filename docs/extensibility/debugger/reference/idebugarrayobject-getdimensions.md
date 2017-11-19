@@ -1,56 +1,56 @@
 ---
-title: "IDebugArrayObject::GetDimensions | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugArrayObject::GetDimensions"
-helpviewer_keywords: 
-  - "Метод IDebugArrayObject::GetDimensions"
+title: "IDebugArrayObject::GetDimensions | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugArrayObject::GetDimensions
+helpviewer_keywords: IDebugArrayObject::GetDimensions method
 ms.assetid: 113e0aff-9028-49d6-b104-9fe7be4772d7
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d516032e458bcc0f85c73c75a9147ff53fc0fff2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugArrayObject::GetDimensions
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Получает измерения массива.  
+# <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
+Возвращает размерность массива.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetDimensions(   
-   DWORD dwCount,  
-   DWORD dwDimensions[]  
+```cpp  
+HRESULT GetDimensions(   
+   DWORD dwCount,  
+   DWORD dwDimensions[]  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetDimensions(  
-   [In] uint    dwCount,   
-   [Out] uint[] dwDimensions  
+   [In] uint    dwCount,   
+   [Out] uint[] dwDimensions  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `dwCount`  
- \[in\] размерность, который необходимо извлечь.  
+ [in] Число измерений для извлечения.  
   
  `dwDimensions`  
- \[in, out\] массив, который заполняется с размерами каждого измерения.  `dwCount` определяет максимальный размер  `dwDimensions` массив.  
+ [in, out] Массив, который заполняется размеров каждого измерения. `dwCount`Указывает максимальный размер `dwDimensions` массива.  
   
-## Возвращаемое значение  
- В случае успеха возвращает значение S\_OK; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Многомерный массив может иметь различные размеры для каждого измерения.  Например, если трехмерный массив `myarray[3][2][6]`этот метод вернул бы 3, 2 и 6  `dwDimensions` параметр в указанном порядке.  
+## <a name="remarks"></a>Примечания  
+ Многомерный массив может иметь различные размеры для каждого измерения. Например, при наличии трехмерный массив `myarray[3][2][6]`, этот метод возвращает 3, 2 и 6 в `dwDimensions` параметра в указанном порядке.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

@@ -1,61 +1,60 @@
 ---
-title: "IDiaSymbol::get_dataBytes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_dataBytes - метод"
+title: "IDiaSymbol::get_dataBytes | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_dataBytes method
 ms.assetid: 5eb37179-20d8-44ae-a72a-405c1b0435c4
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 98c8cd366b2f9c5c3befcbb86b9d9f8d54fafc7b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_dataBytes
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает байт данных символов OEM.  
+# <a name="idiasymbolgetdatabytes"></a>IDiaSymbol::get_dataBytes
+Получает байты данных из символов OEM.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT get_dataBytes (   
-   DWORD  cbData,  
-   DWORD* pcbData,  
-   BYTE   data[]  
+```C++  
+HRESULT get_dataBytes (   
+   DWORD  cbData,  
+   DWORD* pcbData,  
+   BYTE   data[]  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `cbData`  
- \[in\] размер буфера для хранения данных.  
+ [in] Размер буфера для хранения данных.  
   
  `pcbData`  
- \[out\] возвращает число записанных байтов или, если `data` параметр  `NULL`возвращает число байтов, доступных.  
+ [out] Возвращает число байтов, записанных, либо, если `data` параметр `NULL`, возвращает число доступных байтов.  
   
  `data[]`  
- \[out\] буфер, который заполняется с байт данных.  
+ [out] Буфер, заполнено байты данных.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает  `S_FALSE` или код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение  `S_FALSE` означает, что свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
   
 |Требование|Описание|  
-|----------------|--------------|  
+|-----------------|-----------------|  
 |Заголовок:|dia2.h|  
-|Версия:|Пакет SDK для доступа к интерфейсу отладки v7.0|  
+|Версия:|ПАКЕТ SDK для v7.0|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

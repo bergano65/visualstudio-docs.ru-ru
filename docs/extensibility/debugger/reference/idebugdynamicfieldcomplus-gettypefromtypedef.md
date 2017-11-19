@@ -1,62 +1,64 @@
 ---
-title: "IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetTypeFromTypeDef"
-  - "IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef"
+title: "IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- GetTypeFromTypeDef
+- IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef
 ms.assetid: 7f6cd3d3-f4da-4893-be91-8dd104be8010
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4ff4d4df3051719e62af2b0a2fad8a238387ba5b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Возвращает тип заданного свой маркер.  
+# <a name="idebugdynamicfieldcomplusgettypefromtypedef"></a>IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef
+Возвращает тип, указанному токену.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT GetTypeFromTypeDef(  
-   ULONG32       ulAppDomainID,  
-   GUID          guidModule,  
-   _mdToken      tokClass,  
-   IDebugField** ppType  
+   ULONG32       ulAppDomainID,  
+   GUID          guidModule,  
+   _mdToken      tokClass,  
+   IDebugField** ppType  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetTypeFromTypeDef(  
-   uint            ulAppDomainID,  
-   Guid            guidModule,  
-   int             tokClass,  
-   out IDebugField ppType  
+   uint            ulAppDomainID,  
+   Guid            guidModule,  
+   int             tokClass,  
+   out IDebugField ppType  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ulAppDomainID`  
- \[in\] идентификатор домена приложения.  
+ [in] Идентификатор домена приложения.  
   
  `guidModule`  
- \[in\] уникальный идентификатор модуля.  
+ [in] Уникальный идентификатор модуля.  
   
  `tokClass`  
- \[in\] маркер, представляющий тип.  
+ [in] Токен, представляющий тип.  
   
  `ppType`  
- \[out\] возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объект, который содержит тип.  
+ [out] Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , содержащий тип.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)

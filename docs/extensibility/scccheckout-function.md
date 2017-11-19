@@ -1,79 +1,79 @@
 ---
-title: "Функция SccCheckout | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccCheckout"
-helpviewer_keywords: 
-  - "Функция SccCheckout"
+title: "Функция SccCheckout | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: SccCheckout
+helpviewer_keywords: SccCheckout function
 ms.assetid: 06e9ecd7-fc09-40c1-9dd1-2b56c622c80b
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: de22bd4722df1cd78472fd9e180fdb8132401828
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Функция SccCheckout
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Получает список имен полным путем к файлу, эта функция извлекает их на локальном диске. Для извлечения всех файлов относится комментарий. Комментарий может быть `null` строку.  
+# <a name="scccheckout-function"></a>Функция SccCheckout
+Получает список имен полным путем к файлу, эта функция извлекает их на локальный диск. Комментарий применяется ко всем файлам, извлечения. Аргумент примечания могут быть `null` строки.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 SCCRTN SccCheckout (  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LONG      nFiles,  
-   LPCSTR*   lpFileNames,  
-   LPCSTR    lpComment,  
-   LONG      fOptions,  
-   LPCMDOPTS pvOptions  
+   LPVOID    pvContext,  
+   HWND      hWnd,  
+   LONG      nFiles,  
+   LPCSTR*   lpFileNames,  
+   LPCSTR    lpComment,  
+   LONG      fOptions,  
+   LPCMDOPTS pvOptions  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  pvContext  
- \[in\] Структура подключаемого модуля контекста исходного элемента управления.  
+ [in] Исходная структура подключаемого модуля контекста элемента управления.  
   
  hWnd  
- \[in\] Дескриптор окна интегрированной среды разработки, подключаемый модуль системы управления версиями можно использовать в качестве родительского для все диалоговые окна, которые он предоставляет.  
+ [in] Дескриптор окна интегрированной среды разработки, подключаемый модуль системы управления версиями можно использовать в качестве родительского для все диалоговые окна, которые он предоставляет.  
   
  nFiles  
- \[in\] Число файлов, выбранных для извлечения.  
+ [in] Число файлов, выбранных для извлечения.  
   
  lpFileNames  
- \[in\] Массив имен файлов для извлечения полный локальный путь.  
+ [in] Массив имен файлов для извлечения неполный локальный путь.  
   
  lpComment  
- \[in\] Комментарий, применяемый к каждой из выбранных извлекаемых файлов.  
+ [in] Комментарий для применения к каждой из выбранных извлекаемых файлов.  
   
- Возможности  
- \[in\] Команда флагов \(см. [Битовые флаги, используемые команды](../extensibility/bitflags-used-by-specific-commands.md)\).  
+ fOptions  
+ [in] Команда флагов (см. [битовые флаги, используемые определенные команды](../extensibility/bitflags-used-by-specific-commands.md)).  
   
  pvOptions  
- \[in\] Параметры конкретного подключаемого модуля системы управления версиями.  
+ [in] Параметры для конкретного подключаемого модуля системы управления версиями.  
   
-## Возвращаемое значение  
- Реализации подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
+## <a name="return-value"></a>Возвращаемое значение  
+ Реализация подключаемого модуля управления источника этой функции должен возвращать одно из следующих значений:  
   
 |Значение|Описание|  
-|--------------|--------------|  
-|SCC\_OK|Извлечение выполнена успешно.|  
-|SCC\_E\_FILENOTCONTROLLED|Выбранный файл не существует в системе управления версиями.|  
-|SCC\_E\_ACCESSFAILURE|Произошла ошибка при доступе к системе управления версиями, вероятно, из\-за проблемы с сетью или конфликтов. Рекомендуется повторить операцию.|  
-|SCC\_E\_NOTAUTHORIZED|Для выполнения этой операции не разрешено пользователю.|  
-|SCC\_E\_NONSPECIFICERROR|Неспецифическая ошибка. Файл не был извлечен.|  
-|SCC\_E\_ALREADYCHECKEDOUT|Пользователь уже извлек файл.|  
-|SCC\_E\_FILEISLOCKED|Файл заблокирован Запрет создания новых версий.|  
-|SCC\_E\_FILEOUTEXCLUSIVE|Другой пользователь выполнит монопольного извлечения на этот файл.|  
-|SCC\_I\_OPERATIONCANCELED|Операция была отменена до завершения.|  
+|-----------|-----------------|  
+|SCC_OK|Извлечение выполнено успешно.|  
+|SCC_E_FILENOTCONTROLLED|Выбранный файл не существует в системе управления версиями.|  
+|SCC_E_ACCESSFAILURE|Возникла проблема с доступом к системе управления версиями, возможно, из-за проблемы с сетью или конфликтов. Рекомендуется повторить операцию.|  
+|SCC_E_NOTAUTHORIZED|Для выполнения этой операции не разрешено пользователю.|  
+|SCC_E_NONSPECIFICERROR|Неспецифичную сбоя. Файл не извлечен.|  
+|SCC_E_ALREADYCHECKEDOUT|У пользователя уже есть файл извлечен.|  
+|SCC_E_FILEISLOCKED|Файл заблокирован запрещения создания новых версий.|  
+|SCC_E_FILEOUTEXCLUSIVE|Другой пользователь выполнит монопольного извлечения на этот файл.|  
+|SCC_I_OPERATIONCANCELED|Операция отменена до завершения.|  
   
-## См. также  
- [Функции API подключаемого модуля источника элемента управления](../extensibility/source-control-plug-in-api-functions.md)   
- [Битовые флаги, используемые команды](../extensibility/bitflags-used-by-specific-commands.md)
+## <a name="see-also"></a>См. также  
+ [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)   
+ [Битовые флаги, используемые конкретными командами](../extensibility/bitflags-used-by-specific-commands.md)

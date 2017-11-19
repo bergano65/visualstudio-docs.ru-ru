@@ -1,50 +1,52 @@
 ---
-title: "Свойство caller (Function) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "caller"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "caller - свойство"
-  - "вызовы функций, выполняющиеся функции"
+title: "Свойство CALLER (Function) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: caller
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- caller property
+- function calls, functions that are executing
 ms.assetid: ae210853-7160-4102-9cfd-ab489f180ce1
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8c6eef1b8304612c2ed16a4cc389bf3b2a28b70f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Свойство caller (Function) (JavaScript)
-Получает функцию, вызвавшую текущую функцию.  
+# <a name="caller-property-function-javascript"></a>Свойство caller (Function) (JavaScript)
+Возвращает функцию, которая вызвала текущую функцию.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 functionName.caller  
 ```  
   
-## Заметки  
- Объект `functionName` представляет собой имя любой выполняемой функции.  
+## <a name="remarks"></a>Примечания  
+ `functionName` Объекта является имя любой выполнение функции.  
   
- Свойство `caller` определено для функции только на время ее выполнения.  Если функция вызывается из верхнего уровня программы [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], свойство `caller` содержит значение `null`.  
+ `caller` Определяется свойство для функции только во время исполнения функции. Если функция вызывается от верхнего уровня [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] программы, `caller` содержит `null`.  
   
- Если свойство `caller` используется в строковом контексте, результат совпадает со строкой `functionName`.`toString`, то есть отображается декомпилированный текст функции.  
+ Если `caller` свойство используется в контексте строк, результат будет таким же, как `functionName`.`toString`, то есть отображается декомпилированный текст функции.  
   
- В следующем примере показано использование свойства `caller`.  
+ В следующем примере показано применение свойства `caller`.  
   
-```javascript  
+```JavaScript  
 function CallLevel(){  
    if (CallLevel.caller == null)  
       return("CallLevel was called from the top level.");  
@@ -57,8 +59,8 @@ document.write(CallLevel());
 // Output: CallLevel was called from the top level.  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Оператор function](../../javascript/reference/function-statement-javascript.md)

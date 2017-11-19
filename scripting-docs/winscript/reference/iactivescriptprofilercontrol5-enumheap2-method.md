@@ -1,45 +1,46 @@
 ---
-title: "Метод IActiveScriptProfilerControl5::EnumHeap2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Метод IActiveScriptProfilerControl5::EnumHeap2 | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: a25859eb-ac28-4a97-bcb3-33788982a76b
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5c493acdb2843877c506d9d84e145a79ac2d60d7
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод IActiveScriptProfilerControl5::EnumHeap2
-Возвращает интерфейс \([Интерфейс IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)\), который можно использовать для итерации объектами кучи СБОРКИ в контексте связанного обработчика скриптов.  
+# <a name="iactivescriptprofilercontrol5enumheap2-method"></a>Метод IActiveScriptProfilerControl5::EnumHeap2
+Возвращает интерфейс ([интерфейс IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)) может использоваться для перебора объектов кучи сборщика Мусора в контексте обработчика связанных сценариев.  
   
- Этот метод можно вызвать в режиме отладки или выпуска.  Этот метод должен вызываться, когда поток пользовательского интерфейса неактивен.  После того как метод был вызван, с обработчиком скриптов не должно выполняться никаких операций, кроме [IActiveScriptProfilerHeapEnum::Next](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md), до тех пор, пока [IActiveScriptProfilerHeapEnum::Next](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md) не возвратит значение S\_FALSE или не будет освобожден указатель интерфейса [Интерфейс IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md).  
+ Можно вызвать этот метод в любом отладки или в режиме выпуска. Этот метод должен вызываться во время простоя потока пользовательского интерфейса. После вызова метода, необходимо выполнить никакие операции в обработчик сценариев, за исключением [метод IActiveScriptProfilerHeapEnum::Next](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md) до [метод IActiveScriptProfilerHeapEnum::Next](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md)возвращает значение S_FALSE или [интерфейс IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) освобождается указатель на интерфейс.  
   
-## Синтаксис  
-  
-```  
-HRESULT EnumHeap2(  
-    [in] PROFILER_HEAP_ENUM_FLAGS enumFlags,  
-    [out] IActiveScriptProfilerHeapEnum** ppEnum);  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
+HRESULT EnumHeap2(    [in] PROFILER_HEAP_ENUM_FLAGS enumFlags,    [out] IActiveScriptProfilerHeapEnum** ppEnum);  
+```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  enumFlags  
- Значение, указывающее, предоставляется ли дополнительная информацию об объекте кучи, на который указывает указатель в объектном отношении.  Дополнительные сведения могут указывать, что представляет собой объект, на который указывает указатель — метод get или метод set.  Дополнительные сведения см. в разделе [Перечисление PROFILER\_HEAP\_ENUM\_FLAGS](../../winscript/reference/profiler-heap-enum-flags-enumeration.md).  
+ Значение, указывающее, предоставляется ли Дополнительные сведения об объекте, на который указывает в отношении объекта. Дополнительных сведений может указывать, является ли объект, на который указывает метод доступа get или Set. Дополнительные сведения см. в разделе [перечисление PROFILER_HEAP_ENUM_FLAGS](../../winscript/reference/profiler-heap-enum-flags-enumeration.md).  
   
  ppEnum  
- \[out\] Возвращает [Интерфейс IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md).  
+ [out] Возвращает [интерфейс IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md).  
   
-## Возвращаемое значение  
- Возвращает значение HRESULT.  Ниже приведены возможные значения:  
+## <a name="return-value"></a>Возвращаемое значение  
+ Возвращает значение HRESULT. Ниже приведены возможные значения.  
   
 |Возвращаемое значение|Значение|  
-|---------------------------|--------------|  
-|`S_OK`|Перечисление кучи завершенные успешно.|  
-|`E_OUTOFMEMORY`|Была не хватает памяти, доступной выполнить перечисление кучи.|  
-|`E_FAIL`|Внутренняя ошибка.|
+|------------------|-------------|  
+|`S_OK`|Перечисление кучи успешно завершена.|  
+|`E_OUTOFMEMORY`|Не хватает памяти для выполнения перечисление кучи.|  
+|`E_FAIL`|Произошла внутренняя ошибка.|

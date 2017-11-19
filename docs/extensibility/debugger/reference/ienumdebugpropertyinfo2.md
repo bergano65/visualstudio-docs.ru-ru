@@ -1,64 +1,64 @@
 ---
-title: "IEnumDebugPropertyInfo2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugPropertyInfo2"
-helpviewer_keywords: 
-  - "IEnumDebugPropertyInfo2"
+title: "IEnumDebugPropertyInfo2 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugPropertyInfo2
+helpviewer_keywords: IEnumDebugPropertyInfo2
 ms.assetid: fdea8262-40b8-473e-88ba-639e4c4648e6
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9e7f261a449e20873183ff59487c1a6b2df6b678
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugPropertyInfo2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Этот интерфейс перечисляет [DEBUG\_PROPERTY\_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структуры.  
+# <a name="ienumdebugpropertyinfo2"></a>IEnumDebugPropertyInfo2
+Этот интерфейс перечисляет [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структуры.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IEnumDebugPropertyInfo2 : IUnknown  
 ```  
   
-## Примечания по реализации  
- Отладчик \(DE\) реализует этот интерфейс для представления сведений для указанного свойства.  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
+ Модуль отладки (DE) реализует этот интерфейс для представления сведений для определенного свойства.  
   
-## Замечания для вызывающих объектов  
- Вызов [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) получить этот интерфейс, представляющий дочерние элементы указанного свойства.  Вызов [EnumProperties](../Topic/IDebugStackFrame2::EnumProperties.md) получить этот интерфейс, представляющий свойства, определенного кадра стека.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Вызовите [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) для получения этого интерфейса, представляющую дочерние узлы определенного свойства. Вызовите [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) получить этот интерфейс, представляющий свойства определенного кадра стека.  
   
-## Методы в том порядке Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IEnumDebugPropertyInfo2`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[Далее](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)|Получает заданное число [DEBUG\_PROPERTY\_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структуры в последовательности перечисления.|  
-|[Пропустить](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-skip.md)|Пропустить заданное число [DEBUG\_PROPERTY\_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структуры в последовательности перечисления.|  
-|[Сбросить](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-reset.md)|Сбросить последовательность перечисления в начало.|  
-|[Клонировать](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|  
-|[GetCount](../Topic/IEnumDebugPropertyInfo2::GetCount.md)|Получает число [DEBUG\_PROPERTY\_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структуры в перечислителе.|  
+|------------|-----------------|  
+|[Вперед](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)|Извлекает указанное число [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структуры в последовательности перечисления.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-skip.md)|Пропускает указанное число [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структуры в последовательности перечисления.|  
+|[Сброс](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-reset.md)|Сбрасывает последовательность перечисления в начало.|  
+|[Клон](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-clone.md)|Создает перечислитель, с тем же состоянием, как у текущего перечислителя.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)|Возвращает число [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структуры в перечислителе.|  
   
-## Заметки  
- Обычно свойство иерархия информацию, которая может включать имя, значение и тип, адрес, а также любого другого сведения соответствующего к связанным объектом или кадр стека свойства.  Дополнительные сведения см. в разделе [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md).  
+## <a name="remarks"></a>Примечания  
+ Как правило свойство представляет собой иерархию сведения, которые могут включать имя, значение, адрес и тип, а также любые другие данные, соответствующий кадру стека или объект связанного свойства. В разделе [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) для получения дополнительных сведений.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Базовых интерфейсов](../../../extensibility/debugger/reference/core-interfaces.md)   
- [DEBUG\_PROPERTY\_INFO](../../../extensibility/debugger/reference/debug-property-info.md)   
+ [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)   
- [EnumProperties](../Topic/IDebugStackFrame2::EnumProperties.md)
+ [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)

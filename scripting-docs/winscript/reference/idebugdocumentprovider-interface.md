@@ -1,37 +1,40 @@
 ---
-title: "Интерфейс IDebugDocumentProvider | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "IDebugDocumentProvider — интерфейс"
+title: "Интерфейс IDebugDocumentProvider | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords: IDebugDocumentProvider interface
 ms.assetid: 36510acf-1ef9-479c-a430-d3f09502f82c
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 262794718e238068cfd9a8e3fae5161b9fe8cc54
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Интерфейс IDebugDocumentProvider
-Предоставляет середины для того, чтобы документ по запросу.  
+# <a name="idebugdocumentprovider-interface"></a>Интерфейс IDebugDocumentProvider
+Предоставляет средства для создания документа по требованию.  
   
-## Заметки  
- Этот косвенные середины для создания экземпляра документа.  
+## <a name="remarks"></a>Примечания  
+ Это означает косвенных для создания документа:  
   
--   Разрешает документ для загрузки при необходимости.  
+-   Позволяет при необходимости загружать документ.  
   
--   Позволяет объекту документа, которое должно содержаться внутри интегрированной среды разработки отладчика.  
+-   Позволяет объекту документа должны находиться в пределах IDE отладчик.  
   
--   Позволяет использовать несколько способов получить доступ к одному и тому же объект документа.  
+-   Обеспечивает несколько способов доступа к объект того же документа.  
   
- Это фактически отделяет документ из своего поставщика и позволяет поставщику для внесения дополнительную среде выполнения сведения о контексте.  
+ Это эффективно отделяет его от его поставщика и позволяет поставщику содержат дополнительные сведения о контексте времени выполнения.  
   
- В дополнение к методам, наследуемым от интерфейса `IDebugDocumentInfo`, интерфейс `IDebugDocumentProvider` предоставляет следующие методы.  
+ Помимо методов, наследуемых от `IDebugDocumentInfo`, `IDebugDocumentProvider` интерфейс предоставляет следующие методы.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[IDebugDocumentProvider::GetDocument](../../winscript/reference/idebugdocumentprovider-getdocument.md)|Приводит к тому, что документ быть создан, если он еще не существует.|
+|------------|-----------------|  
+|[IDebugDocumentProvider::GetDocument](../../winscript/reference/idebugdocumentprovider-getdocument.md)|Документа, будет создан в том случае, если он еще не существует.|

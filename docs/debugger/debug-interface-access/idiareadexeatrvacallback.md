@@ -1,56 +1,55 @@
 ---
-title: "IDiaReadExeAtRVACallback | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaReadExeAtRVACallback - интерфейс"
+title: "IDiaReadExeAtRVACallback | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaReadExeAtRVACallback interface
 ms.assetid: b2892513-3952-4f99-9b98-60cb9b1fdc91
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 09a570f27200dc677d292d645973fae8f9460f95
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaReadExeAtRVACallback
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Включает клиентское приложение предоставить байты исполняемого файла в соответствии с относительным виртуальным адресом.  
+# <a name="idiareadexeatrvacallback"></a>IDiaReadExeAtRVACallback
+Позволяет клиентскому приложению для предоставления байт исполняемого файла в соответствии с относительный виртуальный адрес.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
-IDiaReadExeAtRVACallback : IUnknown  
+IDiaReadExeAtRVACallback : IUnknown  
 ```  
   
-## Методы в том порядке Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDiaReadExeAtRVACallback`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[IDiaReadExeAtRVACallback::ReadExecutableAtRVA](../../debugger/debug-interface-access/idiareadexeatrvacallback-readexecutableatrva.md)|Считывает указанное количество байтов, начиная с определенного относительного адреса \(RVA\) виртуальном из исполняемого файла.|  
+|------------|-----------------|  
+|[IDiaReadExeAtRVACallback::ReadExecutableAtRVA](../../debugger/debug-interface-access/idiareadexeatrvacallback-readexecutableatrva.md)|Считывает указанное число байтов, начиная с указанного относительного виртуального адреса (RVA) из исполняемого файла.|  
   
-## Заметки  
- Клиентское приложение реализует этот интерфейс, чтобы предоставить байты исполняемого файла с помощью относительный виртуальный адрес загрузочный модуль.  Для использования абсолютного смещения файла, реализуйте [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) интерфейс.  
+## <a name="remarks"></a>Примечания  
+ Клиентское приложение реализует этот интерфейс, чтобы обеспечить байты исполняемый файл, использующий относительный виртуальный адрес в исполняемый файл. Для использования абсолютных смещение, реализовать [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) интерфейса.  
   
-## Замечания для вызывающих объектов  
- Этот метод реализуется клиентским приложением и передается [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) метод как альтернативный метод для чтения файла.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Этот метод реализуется клиентским приложением и переданный [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) метод как альтернативный метод для чтения этого файла.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: Dia2.h  
   
- Библиотеки: diaguids.lib  
+ Библиотека: diaguids.lib  
   
- Библиотеки DLL: msdia80.dll  
+ Библиотека DLL: msdia80.dll  
   
-## См. также  
- [Интерфейсы \(SDK для доступа к интерфейсу отладки\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>См. также  
+ [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
  [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)

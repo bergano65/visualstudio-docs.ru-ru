@@ -1,60 +1,60 @@
 ---
-title: "IDebugDocumentContext2::GetSourceRange | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentContext2::GetSourceRange"
-helpviewer_keywords: 
-  - "IDebugDocumentContext2::GetSourceRange"
+title: "IDebugDocumentContext2::GetSourceRange | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDocumentContext2::GetSourceRange
+helpviewer_keywords: IDebugDocumentContext2::GetSourceRange
 ms.assetid: 5903c75e-5390-4d13-9314-1ee276255313
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 3fc08e761b3944aafd2303bd7266c98dc06e1be8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDocumentContext2::GetSourceRange
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Получает диапазон исходного кода этого контекста документа.  
+# <a name="idebugdocumentcontext2getsourcerange"></a>IDebugDocumentContext2::GetSourceRange
+Возвращает диапазон код исходного контекста этого документа.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetSourceRange(   
-   TEXT_POSITION* pBegPosition,  
-   TEXT_POSITION* pEndPosition  
+```cpp  
+HRESULT GetSourceRange(   
+   TEXT_POSITION* pBegPosition,  
+   TEXT_POSITION* pEndPosition  
 );  
 ```  
   
-```c#  
-int GetSourceRange(   
-   TEXT_POSITION[] pBegPosition,  
-   TEXT_POSITION[] pEndPosition  
+```csharp  
+int GetSourceRange(   
+   TEXT_POSITION[] pBegPosition,  
+   TEXT_POSITION[] pEndPosition  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pBegPosition`  
- \[in, out\] a [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md) структура, заполняемую с начальной позицией.  Установите этот аргумент значение NULL, если эти данные не требуются.  
+ [in, out] Объект [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структуру, которая заполняется начальную позицию. Задайте этот аргумент со значением null, если эта информация не требуется.  
   
  `pEndPosition`  
- \[in, out\] a [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md) структура, заполняемую с положением окончания.  Установите этот аргумент значение NULL, если эти данные не требуются.  
+ [in, out] Объект [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структуру, которая заносится в текущем положении. Задайте этот аргумент со значением null, если эта информация не требуется.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Диапазон источника все диапазон исходного кода из текущей выписки обратно на сразу после предыдущей выписке, способствовала код.  Диапазон источника, как правило, используется для выписок смешивание источника, включая комментарии с кодом в окне дизассемблированный код.  
+## <a name="remarks"></a>Примечания  
+ Исходный диапазон является весь диапазон исходного кода из текущей резервной инструкции сразу же после предыдущей инструкции, использованное кода. Исходный диапазон обычно используется при смешивании исходного кода, включая комментарии, с помощью кода в окне дизассемблирования.  
   
- Чтобы получить диапазон только для выписок кода, содержащихся в данном контексте документа, вызовите [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) метод.  
+ Чтобы получить диапазон для только что исходный код инструкций, содержащихся в этом контексте документа, вызовите [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) метод.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
  [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)   
- [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md)
+ [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

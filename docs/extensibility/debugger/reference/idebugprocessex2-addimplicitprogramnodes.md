@@ -1,62 +1,62 @@
 ---
-title: "IDebugProcessEx2::AddImplicitProgramNodes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcessEx2::AddImplicitProgramNodes"
-helpviewer_keywords: 
-  - "Метод IDebugProcessEx2::AddImplicitProgramNodes"
+title: "IDebugProcessEx2::AddImplicitProgramNodes | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProcessEx2::AddImplicitProgramNodes
+helpviewer_keywords: IDebugProcessEx2::AddImplicitProgramNodes method
 ms.assetid: 8b491b00-f9e7-45b3-9115-fe58c3464289
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 799ac5ee39322579ab60901ffe2abb2f2a683138
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProcessEx2::AddImplicitProgramNodes
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Этот метод добавляет узел программы для каждого указанный обработчик отладки \(DE\).  
+# <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
+Этот метод добавляет узел программы для каждого ядра отладки (DE) указан.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT AddImplicitProgramNodes(  
-   REFGUID guidLaunchingEngine,  
-   GUID*   rgguidSpecificEngines,  
-   DWORD   celtSpecificEngines  
+   REFGUID guidLaunchingEngine,  
+   GUID*   rgguidSpecificEngines,  
+   DWORD   celtSpecificEngines  
 );  
 ```  
   
-```c#  
+```csharp  
 int AddImplicitProgramNodes(  
-   ref Guid guidLaunchingEngine,  
-   Guid[]   rgguidSpecificEngines,  
-   uint     celtSpecificEngines  
+   ref Guid guidLaunchingEngine,  
+   Guid[]   rgguidSpecificEngines,  
+   uint     celtSpecificEngines  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `guidLaunchingEngine`  
- \[in\] `GUID` DE, для использования запуск программы \(и предполагает, что добавить собственные узлы программы\).  
+ [in] `GUID` Из Развернутой, будет использоваться для запуска программы (и предполагается, что добавлять свои собственные программы узлы).  
   
  `rgguidSpecificEngines`  
- \[in\] массив `GUID`s DEs, для которого узлы программы будут добавлены.  
+ [in] Массив `GUID`s DEs для программы будут добавлены узлы.  
   
  `celtSpecificEngines`  
- \[in\] число `GUID`в  `rgguidSpecificEngines` массив.  
+ [in] Число `GUID`s в `rgguidSpecificEngines` массива.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- [Программа узлов](../../../extensibility/debugger/program-nodes.md) добавляет для каждого перечисляемого внутри DE `rgguidSpecificEngines`\- за исключением начальной обработчика \(например, уступано  `guidLaunchingEngine`\), который предполагается, что добавляет собственный узел программы, когда он запускает программу.  
+## <a name="remarks"></a>Примечания  
+ [Программы узлы](../../../extensibility/debugger/program-nodes.md) будут добавлены для каждого DE, перечисленных в `rgguidSpecificEngines`— исключение при запуске подсистемы (как в `guidLaunchingEngine`), которой предполагается добавить собственный узел в программу, когда он запускает программу.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)   
- [Программа узлов](../../../extensibility/debugger/program-nodes.md)
+ [Узлы программы](../../../extensibility/debugger/program-nodes.md)

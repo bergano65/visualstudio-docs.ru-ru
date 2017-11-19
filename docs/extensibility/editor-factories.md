@@ -1,57 +1,58 @@
 ---
-title: "Редактор фабрик | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "редакторы [Visual Studio SDK] прежних версий - редактор фабрик"
+title: "Редактор фабрики | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - editor factories
 ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
-caps.latest.revision: 20
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0bfef7e641bc8f7e041242ce28110845855c2a65
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Редактор фабрик
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Фабрика редактора создает объекты редактора и помещает их в границы окна, известную как физическое представление.  Он создает объекты представления данных документа и документ, необходимые для создания редакторы и конструкторы.  Необходимые для создания фабрики редактора редактор Visual Studio и любой основной стандартный редактор.  Специализированный редактор также при необходимости можно создать с фабрикой редактора.  
+# <a name="editor-factories"></a>Редактор фабрики
+Фабрика редакторов создает редактор объектов и помещение их в рамки окна, известный как физическое представление. Он создает документ данных и объекты представления документа, необходимые для создания редакторов и конструкторов. Фабрика редакторов необходим для создания базового редактора Visual Studio и любого стандартного редактора. Пользовательский редактор также могут создаваться с помощью фабрики редактора.  
   
- Создать фабрику редактора, реализовав <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> интерфейс.  В следующем примере показано, как реализовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> создать фабрику редактора.  
+ Создайте фабрику редактора путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> интерфейса. Следующий пример показывает, как реализовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> для создания фабрики редактора:  
   
  [!code-vb[VSSDKEditorFactories#1](../extensibility/codesnippet/VisualBasic/editor-factories_1.vb)]
- [!code-cs[VSSDKEditorFactories#1](../extensibility/codesnippet/CSharp/editor-factories_1.cs)]  
+ [!code-csharp[VSSDKEditorFactories#1](../extensibility/codesnippet/CSharp/editor-factories_1.cs)]  
   
- Редактор загружается при первом открытии файла, тип обрабатывается этим редактором.  Можно выбрать, чтобы открыть или конкретным редактор или редактор по умолчанию.  Если выбрать редактор по умолчанию, интегрированная среда разработки \(ide\) определяет нужный редактор, чтобы открыть, а затем открыть его.  Дополнительные сведения см. в разделе [Определение редактора откроется файл в проекте](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).  
+ Редактор загружается при первом открытии тип файла, обработано, редактор. Вы можете открыть определенным редактором или редактором по умолчанию. Если выбрать редактор по умолчанию, интегрированной среды разработки (IDE) определяет правильный редактор для открытия, а затем открывает его. Дополнительные сведения см. в разделе [определение редактор открывает файл в проекте](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).  
   
-## Регистрация фабрики редактора  
- Прежде чем использовать редактор, который был создан, необходимо зарегистрировать сведения о нем, включая расширение файла, оно может обработать.  
+## <a name="registering-editor-factories"></a>Регистрация фабрик редакторов  
+ Прежде чем использовать редактор, который вы создали, сначала необходимо зарегистрировать сведения о нем, включая расширения имен файлов, которые он может обрабатывать.  
   
- Если в VSPackage написаны в управляемом коде, можно использовать управляемый метод .NET Framework пакета \(MPF\) <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> регистрация фабрики редактора, установленном после загрузки VSPackage.  Если в VSPackage записывается в неуправляемом коде, необходимо зарегистрировать пользовательское производство с помощью редактора <xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterEditors> служба.  
+ Если пакет VSPackage, написанных на управляемом коде, можно использовать метод Managed Package Framework (MPF) <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> для регистрации фабрики редакторов после загрузки VSPackage. Если пакет VSPackage, написанные в неуправляемом коде, то необходимо зарегистрировать фабрику редактора с помощью <xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterEditors> службы.  
   
-### Регистрация фабрики редактора с помощью управляемого кода  
- Необходимо зарегистрировать в фабрику редактора в VSPackage `Initialize` метод.  Первый вызов `base.Initialize`, а затем вызовите  <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> для каждого фабрики редактора  
+### <a name="registering-an-editor-factory-by-using-managed-code"></a>Регистрация фабрики редактора с помощью управляемого кода  
+ Необходимо зарегистрировать фабрику редактора в вашего VSPackage `Initialize` метод. Сначала вызвать `base.Initialize`, а затем вызвать метод <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> для каждой фабрики редакторов  
   
- В управляемом коде никакого регистрацию необходимости фабрика редактора, поскольку VSPackage обрабатывающий это автоматически.  Кроме того, если фабрику редактора реализует <xref:System.IDisposable>автоматически удален при его регистрации.  
+ В управляемом коде нет необходимости для отмены регистрации фабрики редакторов, так как пакет VSPackage обрабатывающий это. Кроме того Если редактор фабрики реализует <xref:System.IDisposable>, автоматически удаляется, если он не зарегистрирован.  
   
-### Регистрация фабрики редактора с помощью неуправляемого кода  
- в <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> реализация для пакета редактора, использующий  `QueryService` метод, вызываемый  `SVsRegisterEditors`.  Это возвращает указатель на <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors>.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> метод, передавая пользовательскую реализацию  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> интерфейс.  Вы mplement <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> в отдельном классе.  
+### <a name="registering-an-editor-factory-by-using-unmanaged-code"></a>Регистрация фабрики редактора с помощью неуправляемого кода  
+ В <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> реализацию пакета редактора, используйте `QueryService` метод, вызываемый `SVsRegisterEditors`. Таким образом возвращает указатель на <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors>. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> метод путем передачи реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> интерфейса. Необходимо ыполнить <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> в отдельном классе.  
   
-## Процесс регистрации фабрики редактора  
- Следующий процесс происходит, когда Visual Studio загружает редактор с помощью работы фабрика редактора.  
+## <a name="the-editor-factory-registration-process"></a>Процесс регистрации фабрики редактора  
+ Следующая процедура выполняется при загрузке редактора, с помощью фабрики редактора Visual Studio:  
   
-1.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>система проекта вызывает  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .  
+1.  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Проекта системные вызовы <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
   
-2.  Этот метод возвращает фабрику редактора.  Visual Studio задерживает загрузку пакета редактора, однако до системы проектов в действительности не будут требуется редактор.  
+2.  Этот метод возвращает фабрику редактора. Visual Studio задержки загрузки пакета редактора, тем не менее, пока система проектов фактически требуется редактор.  
   
-3.  При необходимости вызывает редактор системе проектов Visual Studio <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, специализированный метод, возвращающий оба представления документа и объекты данных документа.  
+3.  Редактор требованиями к системе проекта, Visual Studio вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, специализированный метод, который возвращает представление документа и документа объектов данных.  
   
-4.  Если вызовы Visual Studio в рабочей среде с помощью редактора <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> возврат и объект данных документа и объект представления документа Visual Studio, а затем создает окно документа, устанавливает объект представления документа в нем, и делает запись в выполняющуюся document table \(RDT\) для объекта данных документа.  
+4.  Если вызовы в Visual Studio с помощью редактора фабрики <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> возвращают объект данных документа и объект представления документа, Visual Studio создает окно документа, помещает объект представления документа в нем затем вносит изменение в выполняющийся документ Таблица (RDT) для объекта данных документа.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   
- [Таблицы запущенных документа](../extensibility/internals/running-document-table.md)
+ [Запуск таблицы документов](../extensibility/internals/running-document-table.md)

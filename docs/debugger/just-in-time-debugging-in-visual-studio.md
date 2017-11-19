@@ -1,72 +1,54 @@
 ---
-title: 'How to: Respond to the Just-In-Time Debugger | Microsoft Docs'
+title: "Как: ответ на отладчик Just-In-Time | Документы Microsoft"
 ms.custom: 
 ms.date: 05/23/17
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
 ms.assetid: 14972d5f-69bc-479b-9529-03b8787b118f
-caps.latest.revision: 48
+caps.latest.revision: "48"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 5b32beabb79d6f6f2bc12eb0e47fc0bd37e17da1
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/22/2017
-
+ms.openlocfilehash: 06beda1fdeda9f62d8f89b9458f488961d39fe29
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-respond-to-the-just-in-time-debugger"></a>How to: Respond to the Just-In-Time Debugger
+# <a name="how-to-respond-to-the-just-in-time-debugger"></a>Как: ответ на отладчик Just-In-Time
 
-The actions you should take when you see the Just-in-Time debugger dialog box depend on what you are trying to do:
+Действия, которые следует выполнять при появлении только время диалоговое окно отладчика зависят от того, вы пытаетесь сделать:
 
-#### <a name="if-you-want-to-fix-or-debug-the-error-visual-studio-users"></a>If you want to fix or debug the error (Visual Studio users)
+#### <a name="if-you-want-to-fix-or-debug-the-error-visual-studio-users"></a>Чтобы исправить или устранения ошибки (для пользователей Visual Studio)
 
-- You must have [Visual Studio installed](https://www.microsoft.com/en-us/download/details.aspx?id=48146) to view the detailed information about the error and to try to debug it. For more information, see [Debug using the Just-In-Time Debugger](../debugger/debug-using-the-just-in-time-debugger.md). If you cannot resolve the error and fix the app, contact the owner of the app to resolve the error.
+- Необходимо иметь [установленной среды Visual Studio](https://www.microsoft.com/en-us/download/details.aspx?id=48146) для просмотра подробных сведений об ошибке и попробуйте отладить его. Дополнительные сведения см. в разделе [отладки с помощью JIT-отладчик](../debugger/debug-using-the-just-in-time-debugger.md). Если не удается исправить ошибку и исправить приложение, обратитесь к владельцу приложения для устранения этой ошибки.
 
-#### <a name="if-you-want-to-prevent-the-just-in-time-debugger-dialog-box-from-appearing"></a>If you want to prevent the Just-In-Time Debugger dialog box from appearing
+#### <a name="if-you-want-to-prevent-the-just-in-time-debugger-dialog-box-from-appearing"></a>Чтобы предотвратить появление диалоговое окно JIT – отладчик
 
-You can take steps to prevent the Just-in-Time Debugger dialog box from appearing. If the app handles the error, you can run the app normally.
+Можно предпринять шаги, чтобы предотвратить только время отладчик диалоговое окно отображение. Если приложение обрабатывает ошибку, обычно можно запустить приложение.
 
-1. (Web apps) If you are trying to run a web app, you can disable script debugging.
+1. (Веб-приложений) Если вы пытаетесь запустить веб-приложения, можно отключить отладку скриптов.
 
-    For Internet Explorer or Edge, disable script debugging in the Internet Options dialog box. You can access these settings from the **Control Panel** > **Network and Internet** > **Internet Options** (the exact steps depend on your version of Windows and your browser).
+    Для Internet Explorer или Edge Запретить отладку скриптов в диалоговом окне Свойства обозревателя. Вы можете использовать эти параметры из **панели управления** > **сеть и Интернет** > **обозревателя** (точные действия зависят от вашей версия Windows и в браузере).
 
     ![JITInternetOptions](../debugger/media/jitinternetoptions.png "JITInternetOptions")
 
-    Then reopen the web page where you found the error. If changing this setting does not resolve the issue, contact the owner of the web app to fix the issue.
+    Затем снова откройте веб-страницы, где найти ошибку. Если увеличить значение этого параметра не приводит к устранению проблемы, обратитесь к владельцу веб-приложения, для устранения проблемы.
 
-3. (Visual Studio users) If you have Visual Studio installed (or if you had it installed previously and removed it), [disable Just-in-Time debugging](../debugger/debug-using-the-just-in-time-debugger.md) and try to run the app again.
+3. (Для пользователей visual Studio) Если у вас установлено приложение Visual Studio (или если были установлены ранее и она удалена), [отключение непосредственно времени отладки](../debugger/debug-using-the-just-in-time-debugger.md) и попытайтесь еще раз запустить приложение.
 
     > [!IMPORTANT]
-    > If you disable Just-in-Time debugging and the app encounters an unhandled exception (an error), you will either see a standard error dialog box instead, or the app will crash or hang. The app will not run normally until the error is fixed (by you or the owner of the app).
+    > При отключении непосредственно времени отладки и приложение обнаруживает необработанное исключение (ошибка), либо появится диалоговое окно стандартную ошибку вместо или ожидать сбой или зависание приложения. Приложение не будет работать нормально, до ошибка была исправлена (пользователь или владелец приложения).
 
-2. (ASP.NET and IIS) If you are hosting an ASP.NET Web app in IIS, disable server-side debugging.
+2. (ASP.NET и IIS) При размещении веб-приложение ASP.NET в IIS, отключите отладку на стороне сервера.
 
-    In IIS Manager, right-click the server node and choose **Switch to Features View**. Under the ASP.NET section, choose **.NET Compilation** and then make sure you choose **False** as the Debug behavior (the steps are different in older versions of IIS).
+    В диспетчере служб IIS щелкните правой кнопкой мыши узел сервера и выберите **переключиться в режим просмотра возможностей**. В разделе "ASP.NET", выберите **компиляции .NET** и затем убедитесь, что выбран **False** как поведение отладки (шаги будут различаться в предыдущих версиях IIS).
   
-## <a name="see-also"></a>See Also    
- [Debugger Basics](../debugger/debugger-basics.md)   
-
+## <a name="see-also"></a>См. также    
+ [Основы отладки](../debugger/debugger-basics.md)   

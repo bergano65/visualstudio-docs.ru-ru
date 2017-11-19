@@ -1,36 +1,36 @@
 ---
-title: "Элемент &lt;Strings&gt; (загрузчик) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MSBuild.GenerateBootstrapper.NoStringsForCulture"
-  - "MSBuild.GenerateBootstrapper.ProductCultureNotFound"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<Strings> - элемент [загрузчик]"
+title: "&lt;Строки&gt; элемент (загрузчик) | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- MSBuild.GenerateBootstrapper.NoStringsForCulture
+- MSBuild.GenerateBootstrapper.ProductCultureNotFound
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <Strings> element [bootstrapper]
 ms.assetid: d5ea3613-5fc9-4a11-bef3-46a01178bf60
-caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 19c4c961dd226ada84fe825643af6d1c7eacc925
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Элемент &lt;Strings&gt; (загрузчик)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Определяет локализованные строки названий продуктов, имен пакетов и сообщений об ошибках установки.  
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Строки&gt; элемент (загрузчик)
+Определяет локализованные строки названий продуктов, имена пакетов и сообщения об ошибках установки.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 <Strings>  
@@ -41,20 +41,20 @@ caps.handback.revision: 4
 </Strings>  
 ```  
   
-## Элементы и атрибуты  
- Элемент `Strings` является дочерним для элемента `Package`.  В нем нет атрибутов.  
+## <a name="elements-and-attributes"></a>Элементы и атрибуты  
+ `Strings` Элемент является дочерним элементом `Package` элемента. Он не имеет атрибутов.  
   
-## Строка.  
- Элемент `String` является дочерним для элемента `Strings`.  В элементе `Strings` может содержаться один или несколько элементов `String` .  
+## <a name="string"></a>Строка  
+ `String` Элемент является дочерним элементом `Strings` элемента. Объект `Strings` элемент может иметь один или несколько `String` элементов.  
   
- Элемент `String` имеет следующий атрибут.  
+ `String`имеет следующий атрибут.  
   
 |Атрибут|Описание|  
-|-------------|--------------|  
-|`Name`|Обязательный.  Имя строки.|  
+|---------------|-----------------|  
+|`Name`|Обязательный. Имя строки.|  
   
-## Пример  
- В следующем примере кода задаются все англоязычные строки для программы установки [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+## <a name="example"></a>Пример  
+ В следующем примере кода задаются все англоязычные строки для [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] установщика.  
   
 ```  
 <Strings>  
@@ -75,5 +75,5 @@ caps.handback.revision: 4
 </Strings>  
 ```  
   
-## См. также  
- [Элемент \<Package\>](../deployment/package-element-bootstrapper.md)
+## <a name="see-also"></a>См. также  
+ [\<Пакет > элемент](../deployment/package-element-bootstrapper.md)

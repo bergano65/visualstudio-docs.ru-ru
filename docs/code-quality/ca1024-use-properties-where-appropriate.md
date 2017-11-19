@@ -1,11 +1,10 @@
 ---
-title: 'CA1024: Use properties where appropriate | Microsoft Docs'
+title: "CA1024: Используйте свойства, если это уместно | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,75 +14,60 @@ helpviewer_keywords:
 - CA1024
 - UsePropertiesWhereAppropriate
 ms.assetid: 3a04f765-af7c-4872-87ad-9cc29e8e657f
-caps.latest.revision: 21
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 1a7ce15f3b5fbdb759733250467a928715f6fedf
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 42fb569dbf469ed91f96b25818b717353d53bf0b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Use properties where appropriate
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: используйте свойства, если это уместно
 |||  
 |-|-|  
 |TypeName|UsePropertiesWhereAppropriate|  
 |CheckId|CA1024|  
-|Category|Microsoft.Design|  
-|Breaking Change|Breaking|  
+|Категория|Microsoft.Design|  
+|Критическое изменение|Критическое|  
   
-## <a name="cause"></a>Cause  
- A public or protected method has a name that starts with `Get`, takes no parameters, and returns a value that is not an array.  
+## <a name="cause"></a>Причина  
+ Открытый или защищенный метод имеет имя, которое начинается с `Get`, не принимает никаких параметров и возвращает значение, которое не является массивом.  
   
-## <a name="rule-description"></a>Rule Description  
- In most cases, properties represent data and methods perform actions. Properties are accessed like fields, which makes them easier to use. A method is a good candidate to become a property if one of these conditions is present:  
+## <a name="rule-description"></a>Описание правила  
+ В большинстве случаев свойства представляют данные, и методы выполнения действий. Доступ к свойствам как поля, что делает их проще использовать. Метод является хорошим кандидатом в качестве свойства, если присутствует одно из следующих условий:  
   
--   Takes no arguments and returns the state information of an object.  
+-   Не принимает аргументы и возвращает сведения о состоянии объекта.  
   
--   Accepts a single argument to set some part of the state of an object.  
+-   Принимает один аргумент для установки некоторой части состояния объекта.  
   
- Properties should behave as if they are fields; if the method cannot, it should not be changed to a property. Methods are better than properties in the following situations:  
+ Свойства должны представляться так, как если бы они были полей; Если метод не удается, он не должны изменяться со свойством. Методы работают лучше, чем свойства в следующих ситуациях:  
   
--   The method performs a time-consuming operation. The method is perceivably slower than the time that is required to set or get the value of a field.  
+-   Этот метод выполняет длительную операцию. Метод ощутимо, чем время, когда необходимо задать или получить значение поля.  
   
--   The method performs a conversion. Accessing a field does not return a converted version of the data that it stores.  
+-   Этот метод выполняет преобразование. Доступ к полю не возвращает преобразованную версию данных, который хранится.  
   
--   The Get method has an observable side effect. Retrieving the value of a field does not produce any side effects.  
+-   Метод Get оказывает видимое побочное действие. Получение значения поля не вызывает никаких побочных эффектов.  
   
--   The order of execution is important. Setting the value of a field does not rely on the occurrence of other operations.  
+-   Важен порядок выполнения. Установка значения поля не зависит от вхождения других операций.  
   
--   Calling the method two times in succession creates different results.  
+-   Вызов метода два раза подряд создает различные результаты.  
   
--   The method is static but returns an object that can be changed by the caller. Retrieving the value of a field does not allow the caller to change the data that is stored by the field.  
+-   Метод является статическим, но возвращает объект, вызывающий объект может быть изменено. Получение значения поля не позволяет вызывающему объекту изменить данные, которые хранятся в поле.  
   
--   The method returns an array.  
+-   Метод возвращает массив.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, change the method to a property.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Чтобы устранить нарушение данного правила, измените метод на свойство.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Suppress a warning from this rule if the method meets at least one of the previously listed criteria.  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ Отключайте предупреждение из этого правила, если метод не отвечает по крайней мере один из перечисленных выше условий.  
   
-## <a name="controlling-property-expansion-in-the-debugger"></a>Controlling Property Expansion in the Debugger  
- One reason programmers avoid using a property is because they do not want the debugger to auto-expand it. For example, the property might involve allocating a large object or calling a P/Invoke, but it might not actually have any observable side effects.  
+## <a name="controlling-property-expansion-in-the-debugger"></a>Управление расширением свойств в отладчике  
+ Одна из причин, программисты не использовать свойство — поскольку отладчик его автоматическое расширение не должен. Например свойство может включать выделения больших объектов или вызова P/Invoke, но он может фактически не иметь наблюдаемый побочных эффектов.  
   
- You can prevent the debugger from auto-expanding properties by applying <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. The following example shows this attribute being applied to an instance property.  
+ Отладчик может предотвратить автоматическое расширение свойств путем применения <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. В следующем примере показано этот атрибут применяется к экземпляру свойства.  
   
 ```vb  
 Imports System   
@@ -132,7 +116,7 @@ namespace Microsoft.Samples
 }  
 ```  
   
-## <a name="example"></a>Example  
- The following example contains several methods that should be converted to properties, and several that should not because they do not behave like fields.  
+## <a name="example"></a>Пример  
+ В следующем примере содержится несколько методов, должны быть преобразованы в свойства и следует не потому, что они не ведут себя как поля.  
   
  [!code-csharp[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]

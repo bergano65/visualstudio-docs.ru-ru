@@ -1,51 +1,51 @@
 ---
-title: "IDebugExpressionEvaluator::SetLocale | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugExpressionEvaluator::SetLocale"
-helpviewer_keywords: 
-  - "Метод IDebugExpressionEvaluator::SetLocale"
+title: "IDebugExpressionEvaluator::SetLocale | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugExpressionEvaluator::SetLocale
+helpviewer_keywords: IDebugExpressionEvaluator::SetLocale method
 ms.assetid: d3d2027d-74e2-4ae6-bcc7-59d12f873b7c
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: bdba51967b470023deb5997bc243b900e3155245
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugExpressionEvaluator::SetLocale
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Этот метод устанавливает язык для использования создания печатных результаты.  
+# <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
+Этот метод задает язык, используемый для создания печатных результатов.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT SetLocale(   
-   WORD wLangID  
+```cpp  
+HRESULT SetLocale(   
+   WORD wLangID  
 );  
 ```  
   
-```c#  
+```csharp  
 int SetLocale(  
-   ushort wLangID  
+   ushort wLangID  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `wLangID`  
- \[in\] идентификатор языка.  
+ [in] Идентификатор языка.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Этот метод может быть вызван несколько раз, пока средство оценки выражений \(EE\) загружается, поэтому EE должен иметь возможность переключаться языки во время работы.  EE использует этот языковой стандарт для возвращения сообщений об ошибках и строк в соответствующем языке.  
+## <a name="remarks"></a>Примечания  
+ Этот метод может вызываться несколько раз во время оценки выражений (Эстония) загружается, поэтому EE должен иметь возможность переключения языков на ходу. EE использует этот языковой стандарт для возврата сообщения об ошибках и строки на соответствующем языке.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

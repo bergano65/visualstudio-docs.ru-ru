@@ -1,30 +1,32 @@
 ---
-title: "IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule"
-  - "LoadSymbolsWithCorModule"
+title: "IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
+- LoadSymbolsWithCorModule
 ms.assetid: b6abf3a4-ce60-4e66-9637-82ce911148de
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: eea91e5898296c9f315b83ea85dee8a91cc52010
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 Загружает отладки символы указанного **ICorDebugModule** объекта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT LoadSymbolsWithCorModule(  
    ULONG32   ulAppDomainID,  
    GUID      guidModule,  
@@ -36,7 +38,7 @@ HRESULT LoadSymbolsWithCorModule(
 );  
 ```  
   
-```c#  
+```csharp  
 int LoadSymbolsWithCorModule(  
    uint   ulAppDomainID,  
    Guid   guidModule,  
@@ -62,7 +64,7 @@ int LoadSymbolsWithCorModule(
  [in] Объект, содержащий метаданные символов отладки.  
   
  `pUnkCorDebugModule`  
- [in] Объект, реализующий интерфейс [ICorDebugModule-интерфейс](ICorDebugModule%20Interface.xml).  
+ [in] Объект, реализующий [ICorDebugModule-интерфейс](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).  
   
  `bstrModuleName`  
  [in] Имя модуля.  
@@ -76,7 +78,7 @@ int LoadSymbolsWithCorModule(
 ## <a name="example"></a>Пример  
  В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) интерфейса.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::LoadSymbolsWithCorModule(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  

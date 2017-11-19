@@ -1,52 +1,52 @@
 ---
-title: "IDebugBreakpointEvent2::EnumBreakpoints | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBreakpointEvent2:::EnumBreakpoints"
-helpviewer_keywords: 
-  - "IDebugBreakpointEvent2:::EnumBreakpoints"
+title: "IDebugBreakpointEvent2::EnumBreakpoints | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBreakpointEvent2:::EnumBreakpoints
+helpviewer_keywords: IDebugBreakpointEvent2:::EnumBreakpoints
 ms.assetid: 606a9625-ee43-4e84-9a47-af9a50d2d005
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5cf2190586db74fa36927e333641f4a8cf516255
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBreakpointEvent2::EnumBreakpoints
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Создает перечислитель для всех точек останова, сгорели в текущем расположении кода.  
+# <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
+Создает перечислитель для всех точек останова, инициируемое в текущего расположения в коде.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT EnumBreakpoints(  
   IEnumDebugBoundBreakpoints2** ppEnum  
 );  
 ```  
   
-```c#  
+```csharp  
 int EnumBreakpoints(  
   out IEnumDebugBoundBreakpoints2 ppEnum  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppEnum`  
- \[out\] возвращает IEnumDebugBoundBreakpoints2 объект, перечисляющий все точки останова, связанный с текущим местоположением кода.  
+ [out] Возвращает [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) объекта, который перечисляет все точки останова, связанную с текущим расположением кода.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Не все точки останова на определенном месте могут создать в указанное время \(например, точка останова с условием не сгорит до тех пор, пока не будет выполнено условие\).  
+## <a name="remarks"></a>Примечания  
+ Не все точки останова в определенном месте могут срабатывать в конкретный момент времени (например, условие точки останова не сработает до этого условия).  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)   
  [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)

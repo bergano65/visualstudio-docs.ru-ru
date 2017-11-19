@@ -1,57 +1,56 @@
 ---
-title: "IDiaEnumTables | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumTables - интерфейс"
+title: "IDiaEnumTables | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumTables interface
 ms.assetid: 016190c5-09e4-48f2-bf60-9b02603a03e0
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 913fdcefc4e90ea09030e416cb6a300e50855478
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumTables
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Перечисляет различные таблицы, содержащихся в источнике данных.  
+# <a name="idiaenumtables"></a>IDiaEnumTables
+Перечисление различных таблицах, содержащихся в источнике данных.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
-IDiaEnumTables : IUnknown  
+IDiaEnumTables : IUnknown  
 ```  
   
-## Методы в том порядке Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDiaEnumTables`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[IDiaEnumTables::get\_\_NewEnum](../../debugger/debug-interface-access/idiaenumtables-get-newenum.md)|Извлекает [интерфейс IEnumVARIANT](http://msdn.microsoft.com/ru-ru/139e3c93-faef-4003-9079-e0e94494db3e) версия данного перечислителя.|  
-|[IDiaEnumTables::get\_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)|Получает количество таблиц.|  
-|[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)|Извлекает таблицу с помощью индекса или имени.|  
-|[IDiaEnumTables::Next](../Topic/IDiaEnumTables::Next.md)|Извлекает заданное количество таблиц в последовательности перечисления.|  
-|[IDiaEnumTables::Skip](../../debugger/debug-interface-access/idiaenumtables-skip.md)|Пропустить указанное количество таблиц в последовательности перечисления.|  
-|[IDiaEnumTables::Reset](../Topic/IDiaEnumTables::Reset.md)|Сбросить последовательность перечисления в начало.|  
-|[IDiaEnumTables::Clone](../../debugger/debug-interface-access/idiaenumtables-clone.md)|Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.|  
+|------------|-----------------|  
+|[IDiaEnumTables::get__NewEnum](../../debugger/debug-interface-access/idiaenumtables-get-newenum.md)|Извлекает [интерфейса IEnumVARIANT](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) версии этот перечислитель.|  
+|[IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)|Возвращает число таблиц.|  
+|[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)|Возвращает таблицу с помощью индекса или имени.|  
+|[IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)|Извлекает указанное число таблиц в последовательности перечисления.|  
+|[IDiaEnumTables::Skip](../../debugger/debug-interface-access/idiaenumtables-skip.md)|Пропускает указанное число таблиц в последовательности перечисления.|  
+|[IDiaEnumTables::Reset](../../debugger/debug-interface-access/idiaenumtables-reset.md)|Сбрасывает последовательность перечисления в начало.|  
+|[IDiaEnumTables::Clone](../../debugger/debug-interface-access/idiaenumtables-clone.md)|Создает перечислитель, с тем же состоянием, как у текущего перечислителя.|  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
   
-## Замечания для вызывающих объектов  
- Для получения этого интерфейса нужно вызвать метод [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) метод.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Получить этот интерфейс, вызвав [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) метод.  
   
-## Пример  
- В этом примере показано, как получить `IDiaEnumTables` интерфейс из сеанса.  Для более полного примера таблиц использования см. в разделе [IDiaTable](../../debugger/debug-interface-access/idiatable.md) интерфейс.  
+## <a name="example"></a>Пример  
+ В этом примере показано, как получить `IDiaEnumTables` интерфейс из сеанса. Более полный пример использования таблиц см. в разделе [IDiaTable](../../debugger/debug-interface-access/idiatable.md) интерфейса.  
   
-```cpp#  
+```C++  
 void ShowTableNames(IDiaSession *pSession)  
 {  
     CComPtr<IDiaEnumTables> pTables;  
@@ -63,13 +62,13 @@ void ShowTableNames(IDiaSession *pSession)
 }  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: Dia2.h  
   
- Библиотеки: diaguids.lib  
+ Библиотека: diaguids.lib  
   
- Библиотеки DLL: msdia80.dll  
+ Библиотека DLL: msdia80.dll  
   
-## См. также  
- [Интерфейсы \(SDK для доступа к интерфейсу отладки\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>См. также  
+ [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)

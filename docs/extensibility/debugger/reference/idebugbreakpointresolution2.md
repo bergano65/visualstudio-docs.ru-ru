@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugBreakpointResolution2
-helpviewer_keywords:
-- IDebugBreakpointRequest2 interface
+f1_keywords: IDebugBreakpointResolution2
+helpviewer_keywords: IDebugBreakpointRequest2 interface
 ms.assetid: 451d5bce-b9c1-48ff-beaa-2b4c3e1ceea0
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b4d5c4ed0ad36f3eabcec9d943be53554b958a67
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 44de0372c1951a13061c4726f9a83d15fc31435d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugbreakpointresolution2"></a>IDebugBreakpointResolution2
 Этот интерфейс представляет сведения, описывающие связанная точка останова.  
@@ -46,7 +30,7 @@ IDebugBreakpointResolution2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- Отладчик (DE) реализует этот интерфейс как часть поддержки точек останова. Этот интерфейс предоставляет описание связанная точка останова, диспетчер сеансов отладки при просмотре свойств точки останова.  
+ Модуль отладки (DE) реализует этот интерфейс в рамках поддержки точек останова. Этот интерфейс предоставляет описание связанная точка останова, используемый диспетчером сеанса отладки при просмотре свойств точки останова.  
   
 ## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
  Вызов [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md) возвращает этот интерфейс.  
@@ -56,8 +40,8 @@ IDebugBreakpointResolution2 : IUnknown
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|Получает тип точки останова, представленный данным разрешением.|  
-|[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|Возвращает сведения о точке останова разрешения, описывающий эту точку останова.|  
+|[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|Получает тип точки останова, представленный это разрешение.|  
+|[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|Получает сведения о разрешении точки останова, описывающий эту точку останова.|  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  

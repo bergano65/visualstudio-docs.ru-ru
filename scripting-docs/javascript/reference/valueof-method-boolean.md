@@ -1,42 +1,45 @@
 ---
-title: "Метод valueOf (Boolean) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Метод valueOf (Boolean) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: ac6ad343-7663-406a-a2b7-4cc5025ca3d6
-caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c36eda63fb38886df4d8bffec7cfdbb6c6d05eb8
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод valueOf (Boolean)
+# <a name="valueof-method-boolean"></a>Метод valueOf (Boolean)
 Возвращает примитивное значение указанного логического значения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 boolean.valueOf()  
 ```  
   
-## Возвращаемое значение  
- Примитивное значение \(true или false\) указанного логического значения.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Примитивное значение (true или false) логического.  
   
-## Заметки  
- В следующем примере кода демонстрируется применение этого метода.  
+## <a name="remarks"></a>Примечания  
+ Ниже показано, как с помощью этого метода.  
   
-```javascript  
+```JavaScript  
 var bool = new Boolean("true");  
 var s = bool.valueOf();  
 document.write(s);  
@@ -45,5 +48,5 @@ document.write(s);
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]

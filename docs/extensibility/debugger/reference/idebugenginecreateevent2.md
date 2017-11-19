@@ -1,55 +1,55 @@
 ---
-title: "IDebugEngineCreateEvent2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngineCreateEvent2"
-helpviewer_keywords: 
-  - "Интерфейс IDebugEngineCreateEvent2"
+title: "IDebugEngineCreateEvent2 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEngineCreateEvent2
+helpviewer_keywords: IDebugEngineCreateEvent2 interface
 ms.assetid: 37c0a841-1c8d-4802-a990-36b54bca3ef7
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b98b21e3e3220da2a42609c9344e24867ab11828
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEngineCreateEvent2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Отладчик \(DE\) отправляет этот интерфейс для сеанса отладки \(SDM\), если диспетчер будет создан экземпляр DE.  
+# <a name="idebugenginecreateevent2"></a>IDebugEngineCreateEvent2
+Модуль отладки (DE) отправляет этот интерфейс диспетчера сеанса отладки (SDM) при создании экземпляра DE.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IDebugEngineCreateEvent2 : IUnknown  
 ```  
   
-## Примечания по реализации  
- DE реализует этот интерфейс реализованы как часть обычных операций.  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) интерфейс должен быть реализован в одном объекте, как этот интерфейс \(SDM использует  `QueryInterface` метод позволяет получить доступ  `IDebugEvent2` интерфейс\).  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
+ DE реализует этот интерфейс как часть его нормальной работы. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) на один и тот же объект как этот интерфейс должен быть реализован интерфейс (использует SDM `QueryInterface` метод для доступа к `IDebugEvent2` интерфейс).  
   
-## Замечания для вызывающих объектов  
- DE создает и отправляет этот объект события, когда DE был создан экземпляр.  Событие отправляется с помощью IDebugEventCallback2 функция обратного вызова, предоставленные SDM, когда он вложило в отлаживаемом программе.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ DE создает и отправляет этот объект события, когда был создан экземпляр DE. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функции обратного вызова, предоставляемую SDM, когда он присоединен к отлаживаемой программы.  
   
-## Методы в том порядке Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugEngineCreateEvent2`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)|Извлекает объект, представляющий только что созданный обработчик отладки \(DE\).|  
+|------------|-----------------|  
+|[GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)|Извлекает объект, представляющий только что созданный отладчик (DE).|  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

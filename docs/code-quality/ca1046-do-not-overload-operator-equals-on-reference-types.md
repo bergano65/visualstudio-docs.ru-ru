@@ -1,11 +1,10 @@
 ---
-title: 'CA1046: Do not overload operator equals on reference types | Microsoft Docs'
+title: "CA1046: Не перегружайте оператор равенства для ссылочных типов | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,70 +14,55 @@ helpviewer_keywords:
 - CA1046
 - DoNotOverloadOperatorEqualsOnReferenceTypes
 ms.assetid: c1dfbfe3-63f9-4005-a81a-890427b77e79
-caps.latest.revision: 14
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 0677ccd263ae3cd2a171eb99ef9aaf006d0dd88e
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 344dfe7a4e35bf42e9e0a4efb2ca9bdf1b8f5d6b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: Do not overload operator equals on reference types
+# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: не перегружайте оператор равенства для ссылочных типов
 |||  
 |-|-|  
 |TypeName|DoNotOverloadOperatorEqualsOnReferenceTypes|  
 |CheckId|CA1046|  
-|Category|Microsoft.Design|  
-|Breaking Change|Breaking|  
+|Категория|Microsoft.Design|  
+|Критическое изменение|Критическое|  
   
-## <a name="cause"></a>Cause  
- A public or nested public reference type overloads the equality operator.  
+## <a name="cause"></a>Причина  
+ Открытый или вложенный открытый ссылочный тип перегружает оператор равенства.  
   
-## <a name="rule-description"></a>Rule Description  
- For reference types, the default implementation of the equality operator is almost always correct. By default, two references are equal only if they point to the same object.  
+## <a name="rule-description"></a>Описание правила  
+ Реализация оператора равенства по умолчанию почти всегда правильно работает для ссылочных типов. По умолчанию две ссылки равны, если они указывают на один объект.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, remove the implementation of the equality operator.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Чтобы устранить нарушение данного правила, удалите реализацию оператора равенства.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule when the reference type behaves like a built-in value type. If it is meaningful to do addition or subtraction on instances of the type, it is probably correct to implement the equality operator and suppress the violation.  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ Можно безопасно отключать предупреждение из этого правила, если ссылочный тип ведет себя как встроенный тип значения. Это может применяться для выполнения сложения или вычитания для экземпляров типа, правильность, возможно, для реализации оператора равенства и отключение нарушение.  
   
-## <a name="example"></a>Example  
- The following example demonstrates the default behavior when comparing two references.  
+## <a name="example"></a>Пример  
+ В следующем примере показано поведение по умолчанию при сравнении двух ссылок.  
   
  [!code-csharp[FxCop.Design.RefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_1.cs)]  
   
-## <a name="example"></a>Example  
- The following application compares some references.  
+## <a name="example"></a>Пример  
+ В следующем приложении сравниваются несколько ссылок.  
   
  [!code-csharp[FxCop.Design.TestRefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_2.cs)]  
   
- This example produces the following output.  
+ В этом примере формируются следующие данные:  
   
- **a = new (2,2) and b = new (2,2) are equal? No**  
-**c and a are equal? Yes**  
-**b and a are == ? No**  
-**c and a are == ? Yes**   
-## <a name="related-rules"></a>Related Rules  
- [CA1013: Overload operator equals on overloading add and subtract](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)  
+ **= новый (2,2) и b = равны новый (2,2)? Нет**  
+**c и которых равны? Да**  
+**b и являются ==? Нет**  
+**c и являются ==? Да**   
+## <a name="related-rules"></a>Связанные правила  
+ [CA1013: перегружайте оператор равенства при перегрузке сложения и вычитания](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>См. также  
  <xref:System.Object.Equals%2A?displayProperty=fullName>   
- [Equality Operators](/dotnet/standard/design-guidelines/equality-operators)
+ [Операторы равенства](/dotnet/standard/design-guidelines/equality-operators)

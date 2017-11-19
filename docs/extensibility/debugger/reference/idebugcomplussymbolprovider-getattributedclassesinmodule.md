@@ -1,69 +1,71 @@
 ---
-title: "IDebugComPlusSymbolProvider::GetAttributedClassesinModule | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugComPlusSymbolProvider::GetAttributedClassesinModule"
-  - "GetAttributedClassesinModule"
+title: "IDebugComPlusSymbolProvider::GetAttributedClassesinModule | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugComPlusSymbolProvider::GetAttributedClassesinModule
+- GetAttributedClassesinModule
 ms.assetid: d8b087f3-1d32-4570-9eb0-7e0f7b051bc8
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0784887b769ccb70ef323376cb3200f575fb807c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider::GetAttributedClassesinModule
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Извлекает классы с заданным атрибутом в данном модуле.  
+# <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
+Извлекает классы с помощью указанного атрибута в указанный модуль.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 [C++]  
 HRESULT GetAttributedClassesinModule (  
-   ULONG32            ulAppDomainID,  
-   GUID               guidModule,  
-   LPOLESTR           pstrAttribute,  
-   IEnumDebugFields** ppEnum  
+   ULONG32            ulAppDomainID,  
+   GUID               guidModule,  
+   LPOLESTR           pstrAttribute,  
+   IEnumDebugFields** ppEnum  
 );  
 ```  
   
 ```  
 [C#]  
 int GetAttributedClassesinModule (  
-   uint                 ulAppDomainID,  
-   Guid                 guidModule,  
-   string               pstrAttribute,  
-   out IEnumDebugFields ppEnum  
+   uint                 ulAppDomainID,  
+   Guid                 guidModule,  
+   string               pstrAttribute,  
+   out IEnumDebugFields ppEnum  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ulAppDomainID`  
- \[in\] идентификатор домена приложения.  
+ [in] Идентификатор домена приложения.  
   
  `guidModule`  
- \[in\] уникальный идентификатор модуля.  
+ [in] Уникальный идентификатор модуля.  
   
  `pstrAttribute`  
- \[in\] строка атрибута.  
+ [in] Строка атрибутов.  
   
  `ppEnum`  
- \[out\] возвращает перечисление помеченных атрибутами классов.  
+ [out] Возвращает перечисление атрибутами классов.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Пример  
- В следующем примере показано, как реализовать этот метод, a **CDebugSymbolProvider** объект, предоставляющий  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейса.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::GetAttributedClassesinModule(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  
@@ -151,5 +153,5 @@ Error:
 }  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

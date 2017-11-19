@@ -1,51 +1,51 @@
 ---
-title: "IDebugObject::GetMemoryContext | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugObject::GetMemoryContext"
-helpviewer_keywords: 
-  - "Метод IDebugObject::GetMemoryContext"
+title: "IDebugObject::GetMemoryContext | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugObject::GetMemoryContext
+helpviewer_keywords: IDebugObject::GetMemoryContext method
 ms.assetid: 6760a0d3-a898-4e81-b68f-c45c584b225b
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 93f6d82b88be23b160effe1c8162648132f461c5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugObject::GetMemoryContext
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
 Возвращает контекст памяти, представляющий адрес значения объекта.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetMemoryContext(   
-   IDebugMemoryContext2** pContext  
+```cpp  
+HRESULT GetMemoryContext(   
+   IDebugMemoryContext2** pContext  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetMemoryContext(  
-   ref IDebugMemoryContext2 pContext  
+   ref IDebugMemoryContext2 pContext  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pContext`  
- \[out\] возвращает [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) объект, представляющий адрес значения объекта.  
+ [out] Возвращает [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) объект, представляющий адрес значения объекта.  
   
-## Возвращаемое значение  
- В случае успеха возвращает значение S\_OK; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Возвращенный контекст определяет адрес памяти значения, представленного этим IDebugObject объект.  
+## <a name="remarks"></a>Примечания  
+ Контекст возвращаемой памяти задает адрес значения, представленные в данном [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объекта.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

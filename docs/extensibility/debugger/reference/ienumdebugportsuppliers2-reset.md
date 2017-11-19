@@ -1,45 +1,45 @@
 ---
-title: "IEnumDebugPortSuppliers2::Reset | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugPortSuppliers2::Next"
-helpviewer_keywords: 
-  - "IEnumDebugPortSuppliers2::Next"
+title: "IEnumDebugPortSuppliers2::Reset | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugPortSuppliers2::Next
+helpviewer_keywords: IEnumDebugPortSuppliers2::Next
 ms.assetid: f69cbacf-da9d-4b22-b8a2-abd9b8c131f2
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4a8b615656e9e42c1f907f3782533b02529f8eeb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugPortSuppliers2::Reset
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Сбросит перечисление к первому элементу.  
+# <a name="ienumdebugportsuppliers2reset"></a>IEnumDebugPortSuppliers2::Reset
+Сбрасывает перечисления на первый элемент.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT Reset(  
-   void  
+   void  
 );  
 ```  
   
-```c#  
+```csharp  
 int Reset();  
 ```  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- После вызова этого метода, следующий вызов [Далее](../Topic/IEnumDebugPortSuppliers2::Next.md) метод возвращает первый элемент перечисления.  
+## <a name="remarks"></a>Примечания  
+ После вызова этого метода, при следующем вызове [Далее](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-next.md) метод возвращает первый элемент перечисления.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)

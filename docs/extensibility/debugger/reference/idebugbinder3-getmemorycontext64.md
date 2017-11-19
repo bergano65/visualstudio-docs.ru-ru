@@ -1,62 +1,64 @@
 ---
-title: "IDebugBinder3::GetMemoryContext64 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetMemoryContext64"
-  - "IDebugBinder3::GetMemoryContext64"
+title: "IDebugBinder3::GetMemoryContext64 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- GetMemoryContext64
+- IDebugBinder3::GetMemoryContext64
 ms.assetid: f021fd16-9fc7-4c41-86af-e54e6224cfbb
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e482be9105670297e10dd392c4d32e9ee19d7ee9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBinder3::GetMemoryContext64
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Преобразование или расположение объекта или 64 адрес памяти к контексту памяти.  
+# <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
+Преобразует расположение объекта или адресе памяти 64-разрядных контекст памяти.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT GetMemoryContext64 (  
-   IDebugField*           pField,  
-   UINT64                 uConstant,  
-   IDebugMemoryContext2** ppMemCxt  
+   IDebugField*           pField,  
+   UINT64                 uConstant,  
+   IDebugMemoryContext2** ppMemCxt  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetMemoryContext64 (  
-   IDebugField              pField,  
-   ulong                    uConstant,  
-   out IDebugMemoryContext2 ppMemCxt  
+   IDebugField              pField,  
+   ulong                    uConstant,  
+   out IDebugMemoryContext2 ppMemCxt  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pField`  
- \[in\] IDebugField он описывает объект для поиска.  If `NULL`после этого используйте  `dwConstant` вместо этого.  
+ [in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , описывающий объект, который требуется найти. Если `NULL`, затем с помощью `dwConstant` вместо него.  
   
  `uConstant`  
- \[in\] адрес памяти, а 64, как 0x50000000.  
+ [in] Адрес памяти 64-разрядной, например 0x50000000.  
   
  `ppMemCxt`  
- \[out\] возвращает [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) интерфейс, представляющий адрес объекта или адрес в памяти.  
+ [out] Возвращает [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) интерфейс, представляющий адрес объекта, или адрес в памяти.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Пример  
- В следующих примерах создается объект, реализующий [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) интерфейс, и этот метод используется для получения контекста памяти.  
+## <a name="example"></a>Пример  
+ Следующие примеры создает объект, реализующий интерфейс [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) интерфейсов и получить контекст памяти с помощью этого метода.  
   
-```cpp#  
+```cpp  
 HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryContext )  
 {  
     // precondition  
@@ -127,5 +129,5 @@ HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryCo
 }  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

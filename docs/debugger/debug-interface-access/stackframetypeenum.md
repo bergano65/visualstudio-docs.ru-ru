@@ -1,67 +1,66 @@
 ---
-title: "StackFrameTypeEnum | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "StackFrameTypeEnum - перечисление"
+title: "StackFrameTypeEnum | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: StackFrameTypeEnum enumeration
 ms.assetid: 61e40163-eee0-4c1f-af47-cef3771bdc41
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 37d8e960d256b8746781668068978aa72f45155c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# StackFrameTypeEnum
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="stackframetypeenum"></a>StackFrameTypeEnum
 Указывает тип кадра стека.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp  
+```C++  
 enum StackFrameTypeEnum {  
-   FrameTypeFPO,  
-   FrameTypeTrap,  
-   FrameTypeTSS,  
-   FrameTypeStandard,  
-   FrameTypeFrameData,  
-   FrameTypeUnknown = -1  
+   FrameTypeFPO,  
+   FrameTypeTrap,  
+   FrameTypeTSS,  
+   FrameTypeStandard,  
+   FrameTypeFrameData,  
+   FrameTypeUnknown = -1  
 };  
 ```  
   
-## Elements  
+## <a name="elements"></a>Элементы  
  `FrameTypeFPO`  
- Снятый указатель кадра; FPO доступные данные.  
+ Указатель кадра опустить; FPO сведения недоступны.  
   
  `FrameTypeTrap`  
- Кадр ловушки ядра.  
+ Кадр перехвата ядра.  
   
  `FrameTypeTSS`  
- Кадр ловушки ядра.  
+ Кадр перехвата ядра.  
   
  `FrameTypeStandard`  
- Стандартный кадр стека EBP.  
+ Стандартная кадр стека EBP.  
   
  `FrameTypeFrameData`  
- Снятый указатель кадра; Доступ к данным по данным кадра.  
+ Указатель кадра опустить; Сведения кадра данных недоступны.  
   
  `FrameTypeUnknown`  
- Кадр, который не имеет каких\-либо отладки сведения.  
+ Кадр, не имеет сведений о отладки.  
   
-## Заметки  
- Значения в этом перечислении возвращаемых вызовом [IDiaStackFrame::get\_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) метод.  
+## <a name="remarks"></a>Примечания  
+ Значения в этом перечислении возвращаются путем вызова [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) метод.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: cvconst.h  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaStackFrame::get\_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)
+ [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)

@@ -1,48 +1,51 @@
 ---
-title: "Метод delete (WeakMap) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Метод Delete (WeakMap) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 7d54ae55-e514-45ba-b403-d1eee46837d2
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fd4cec06b77b7198e23d7e455849b5c0bf6d7ff9
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод delete (WeakMap) (JavaScript)
+# <a name="delete-method-weakmap-javascript"></a>Метод delete (WeakMap) (JavaScript)
 Удаляет указанный элемент из объекта `WeakMap`.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```javascript  
+```JavaScript  
 weakmapObj.delete(key)  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `weakmapObj`  
- Обязательное.  Объект `WeakMap`.  
+ Обязательный. Объект `WeakMap`.  
   
  `key`  
- Обязательное.  Ключ удаляемого элемента.  
+ Обязательный. Ключ элемента, который требуется удалить.  
   
-## Значение свойства или возвращаемое значение  
- Значение `true`, если элемент удален.  
+## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение  
+ `true`, если элемент был удален.  
   
-## Пример  
- В следующем примере показано, как добавить член в `WeakMap` и затем удалить его.  
+## <a name="example"></a>Пример  
+ Следующий пример демонстрирует добавление члена `WeakMap` и затем удалите его.  
   
-```javascript  
+```JavaScript  
 function Dog(breed) {  
     this.breed = breed;  
 }  
@@ -54,5 +57,5 @@ wm.set(dog, "fido");
 wm.delete(dog);  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]

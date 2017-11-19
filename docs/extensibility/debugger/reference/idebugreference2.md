@@ -1,80 +1,80 @@
 ---
-title: "IDebugReference2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugReference2"
-helpviewer_keywords: 
-  - "Интерфейс IDebugReference2"
+title: "IDebugReference2 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugReference2
+helpviewer_keywords: IDebugReference2 interface
 ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 27e880dbf5b602c1bd0b98c6ce5ccc2fdf88e37a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugReference2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Этот интерфейс представляет ссылку на свойство кадра стека или другие свойства.  
+# <a name="idebugreference2"></a>IDebugReference2
+Этот интерфейс представляет ссылку на свойство кадра стека или некоторые другие свойства.  
   
 > [!NOTE]
->  `IDebugReference2` зарезервировано для будущего использования, и его методы должны возвращать  `E_NOTIMPL`.  
+>  `IDebugReference2`Зарезервировано для будущего использования и все его методы должны возвращать `E_NOTIMPL`.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IDebugReference2 : IUnknown  
 ```  
   
-## Примечания по реализации  
- DE реализует этот интерфейс для представления ссылки на определенный тип значения.  Например, значение может быть по числовому значением в результате оценки выражений, контекст памяти, используемого для отображения памяти или списка регистров и их значений.  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
+ DE реализует этот интерфейс для представления ссылку на значение определенного типа. Например значение может быть числовое значение в результате вычисления выражения, контекст памяти, используемый для отображения в памяти, или список регистров и их значения.  
   
-## Замечания для вызывающих объектов  
- Вызов [GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md) получить этот интерфейс.  [GetParent](../../../extensibility/debugger/reference/idebugreference2-getparent.md) и [GetDerivedMostReference](../Topic/IDebugReference2::GetDerivedMostReference.md) также возвращают этот интерфейс.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Вызовите [GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md) для получения этого интерфейса. [GetParent](../../../extensibility/debugger/reference/idebugreference2-getparent.md) и [GetDerivedMostReference](../../../extensibility/debugger/reference/idebugreference2-getderivedmostreference.md) также возвращают этот интерфейс.  
   
-## Методы в том порядке Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugReference2`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)|Возвращает [DEBUG\_REFERENCE\_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структура, описывающая эту ссылку.|  
-|[SetValueAsString](../../../extensibility/debugger/reference/idebugreference2-setvalueasstring.md)|Устанавливает значение этой ссылки из строки.|  
-|[SetValueAsReference](../Topic/IDebugReference2::SetValueAsReference.md)|Устанавливает значение этой ссылки из другой ссылки.|  
-|[EnumChildren](../Topic/IDebugReference2::EnumChildren.md)|Перечисляет дочерние элементы данной ссылки.|  
-|[GetParent](../../../extensibility/debugger/reference/idebugreference2-getparent.md)|Возвращает родительский объект для этой ссылки.|  
-|[GetDerivedMostReference](../Topic/IDebugReference2::GetDerivedMostReference.md)|Возвращает более всего\-выведенную ссылку этой ссылки.|  
-|[GetMemoryBytes](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md)|Возвращает объем памяти, на которые ссылается эта ссылка.|  
+|------------|-----------------|  
+|[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)|Возвращает [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структура, описывающая этой ссылки.|  
+|[SetValueAsString](../../../extensibility/debugger/reference/idebugreference2-setvalueasstring.md)|Задает значение из этой ссылки из строки.|  
+|[SetValueAsReference](../../../extensibility/debugger/reference/idebugreference2-setvalueasreference.md)|Задает значение из этой ссылки из другой ссылки.|  
+|[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)|Перечисляет дочерние элементы из этой ссылки.|  
+|[GetParent](../../../extensibility/debugger/reference/idebugreference2-getparent.md)|Получает родительский элемент из этой ссылки.|  
+|[GetDerivedMostReference](../../../extensibility/debugger/reference/idebugreference2-getderivedmostreference.md)|Возвращает ссылку на более низкого уровня из этой ссылки.|  
+|[GetMemoryBytes](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md)|Возвращает байт памяти, на которые ссылается эта ссылка.|  
 |[GetMemoryContext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md)|Возвращает контекст памяти для этой ссылки.|  
-|[GetSize](../../../extensibility/debugger/reference/idebugreference2-getsize.md)|Возвращает размер \(в байтах\) этой ссылки.|  
-|[SetReferenceType](../Topic/IDebugReference2::SetReferenceType.md)|Устанавливает этот ссылочный тип.|  
-|[Сравнение](../../../extensibility/debugger/reference/idebugreference2-compare.md)|Сравнивает эту ссылку с другими.|  
+|[GetSize](../../../extensibility/debugger/reference/idebugreference2-getsize.md)|Возвращает размер в байтах этой ссылки.|  
+|[SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)|Задает этот ссылочный тип.|  
+|[Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md)|Сравнивает с другим этой ссылки.|  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
   
 > [!NOTE]
->  Эта использование "свойства" не следует путать с этой переменной члена класса, хотя смыслью `IDebugReference2` может представлять ту сущность.  
+>  Такое использование «свойства» не следует путать с, то есть переменную-член класса, несмотря на то что `IDebugReference2` может представлять такая сущность.  
   
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) представляет свойство, пока `IDebugReference2` представляет ссылку на свойство, обычно ссылка на объект, отлаживанными в программе.  
+ [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) представляет свойство, а `IDebugReference2` представляет ссылку на свойство, как правило, ссылку на объект в отлаживаемой программы.  
   
- Основное различие между свойством и ссылкой, что свойство относится к именованному экземпляру объекта, а ссылка указывает на неименованный экземпляр.  Например, оно может ссылаться на объект в куче программы by `"a.b"`.  Другое свойство может относиться к одному и тому же объекту как `"c.d"`.  Способ обратившись к этому свойству, чтобы требует `"a.b"` OR  `"c.d"` в области.  Ссылка на данный один и тот же объект безыменна; объект можно ссылаться, если память для объекта допустимой.  
+ Основное различие между свойством и ссылка — что свойство относится к именованному экземпляру объекта, пока ссылка указывает на неименованный экземпляр. Например, свойство может ссылаться на объект в куче программы по `"a.b"`. Другое свойство может ссылаться на один и тот же объект как `"c.d"`. Способ обращения к этому свойству необходимо, `"a.b"` или `"c.d"` входить в область действия. Ссылка на этот же объект является безымянным; объект можно ссылаться при условии, что память для этого объекта является допустимым.  
   
- `IDebugProperty2` интерфейс можно рассматривать как значения с именем, типом и адресом.  `IDebugReference2`с другой стороны, можно рассматривать в качестве типа и адреса.  
+ `IDebugProperty2` Интерфейс может рассматриваться как значение с именем, типом и адрес. `IDebugReference2`, С другой стороны, можно рассматривать как тип и адрес.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Базовых интерфейсов](../../../extensibility/debugger/reference/core-interfaces.md)   
- [DEBUG\_REFERENCE\_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)   
+ [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)

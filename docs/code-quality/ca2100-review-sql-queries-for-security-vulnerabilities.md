@@ -1,11 +1,10 @@
 ---
-title: 'CA2100: Review SQL queries for security vulnerabilities | Microsoft Docs'
+title: "CA2100: Проверьте SQL-запросов для уязвимостей системы безопасности | Документы Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,90 +15,76 @@ helpviewer_keywords:
 - CA2100
 - ReviewSqlQueriesForSecurityVulnerabilities
 ms.assetid: 79670604-c02a-448d-9c0e-7ea0120bc5fe
-caps.latest.revision: 24
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 931e2dae6c7b773ca2b8236917146ab9410d3565
-ms.contentlocale: ru-ru
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "24"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c28bf4d7162a7b646653ff1833067d47e7ff574d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: Review SQL queries for security vulnerabilities
+# <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: проанализируйте SQL-запросы с целью выявления уязвимостей безопасности
 |||  
 |-|-|  
 |TypeName|ReviewSqlQueriesForSecurityVulnerabilities|  
 |CheckId|CA2100|  
-|Category|Microsoft.Security|  
-|Breaking Change|Non-breaking|  
+|Категория|Microsoft.Security|  
+|Критическое изменение|Не критическое|  
   
-## <a name="cause"></a>Cause  
- A method sets the <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> property by using a string that is built from a string argument to the method.  
+## <a name="cause"></a>Причина  
+ Метод задает <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> свойства с использованием строки, созданной из строкового аргумента метода.  
   
-## <a name="rule-description"></a>Rule Description  
- This rule assumes that the string argument contains user input. A SQL command string that is built from user input is vulnerable to SQL injection attacks. In a SQL injection attack, a malicious user supplies input that alters the design of a query in an attempt to damage or gain unauthorized access to the underlying database. Typical techniques include injection of a single quotation mark or apostrophe, which is the SQL literal string delimiter; two dashes, which signifies a SQL comment; and a semicolon, which indicates that a new command follows. If user input must be part of the query, use one of the following, listed in order of effectiveness, to reduce the risk of attack.  
+## <a name="rule-description"></a>Описание правила  
+ Это правило предполагает, что строковый аргумент содержит введенные пользователем данные. Созданная из введенных пользователем данных командная строка SQL уязвима перед атаками путем внедрения кода SQL. При атаке путем внедрения кода SQL пользователь-злоумышленник вводит данные, которые изменяют структуру запроса при попытке привести к повреждению или получить несанкционированный доступ к базе данных. Типичные приемы можно назвать вставку кавычки или апострофа, который является разделитель строк-литералов SQL; двух тире, обозначающих Комментарий SQL; и точкой с запятой, которое указывает, соответствует новую команду. Если входные данные пользователя должны быть частью запроса, воспользуйтесь одним из следующих значений, перечисленных в порядке эффективности методы, чтобы снизить риск атак.  
   
--   Use a stored procedure.  
+-   Используйте хранимую процедуру.  
   
--   Use a parameterized command string.  
+-   Использование параметризованной командной строки.  
   
--   Validate the user input for both type and content before you build the command string.  
+-   Проверка введенных пользователем данных тип и содержимое перед построением командную строку.  
   
- The following [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] types implement the <xref:System.Data.IDbCommand.CommandText%2A> property or provide constructors that set the property by using a string argument.  
+ Следующие [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] типы реализуют <xref:System.Data.IDbCommand.CommandText%2A> свойство или предоставляют конструкторы, которые свойству, используя строковый аргумент.  
   
--   <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> and <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>  
+-   <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> и <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>.  
   
--   <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> and <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>  
+-   <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> и <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>.  
   
--   <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> and <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>  
+-   <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> и <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>.  
   
--   [System.Data.SqlServerCe.SqlCeCommand](https://msdn.microsoft.com/library/system.data.sqlserverce.sqlcecommand.aspx) and  [System.Data.SqlServerCe.SqlCeDataAdapter](https://msdn.microsoft.com/library/system.data.sqlserverce.sqlcedataadapter.aspx)  
+-   [System.Data.SqlServerCe.SqlCeCommand](https://msdn.microsoft.com/library/system.data.sqlserverce.sqlcecommand.aspx) и [System.Data.SqlServerCe.SqlCeDataAdapter](https://msdn.microsoft.com/library/system.data.sqlserverce.sqlcedataadapter.aspx)  
   
--   <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> and <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>  
+-   <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> и <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>.  
   
- Notice that this rule is violated when the ToString method of a type is used explicitly or implicitly to construct the query string. The following is an example.  
+ Обратите внимание, что это правило нарушается, при использовании метода ToString типа явно или неявно для построения строки запроса. Пример.  
   
 ```  
 int x = 10;  
 string query = "SELECT TOP " + x.ToString() + " FROM Table";  
 ```  
   
- The rule is violated because a malicious user can override the ToString() method.  
+ При нарушении правила, так как пользователь-злоумышленник может переопределить метод ToString().  
   
- The rule also is violated when ToString is used implicitly.  
+ Также при нарушении правила при ToString используется неявно.  
   
 ```  
 int x = 10;  
 string query = String.Format("SELECT TOP {0} FROM Table", x);  
 ```  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, use a parameterized query.  
+## <a name="how-to-fix-violations"></a>Устранение нарушений  
+ Чтобы устранить нарушение этого правила, используйте параметризованный запрос.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule if the command text does not contain any user input.  
+## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
+ Это безопасно подавить предупреждение из этого правила, если текст команды не содержит вводимых пользователем.  
   
-## <a name="example"></a>Example  
- The following example shows a method, `UnsafeQuery`, that violates the rule and a method, `SaferQuery`, that satisfies the rule by using a parameterized command string.  
+## <a name="example"></a>Пример  
+ В примере показан метод, `UnsafeQuery`, которое нарушает правило и метод, `SaferQuery`, соответствующий этому правилу, используя строку параметризованной команды.  
   
- [!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)] [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)] [!code-cpp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CPP/ca2100-review-sql-queries-for-security-vulnerabilities_1.cpp)]  
+ [!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
+ [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]
+ [!code-cpp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CPP/ca2100-review-sql-queries-for-security-vulnerabilities_1.cpp)]  
   
-## <a name="see-also"></a>See Also  
- [Security Overview](/dotnet/framework/data/adonet/security-overview)
+## <a name="see-also"></a>См. также  
+ [Общие сведения о безопасности](/dotnet/framework/data/adonet/security-overview)

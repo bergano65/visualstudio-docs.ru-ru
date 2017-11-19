@@ -1,71 +1,71 @@
 ---
-title: "BP_FLAGS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BP_FLAGS"
-helpviewer_keywords: 
-  - "Перечисление BP_FLAGS"
+title: "BP_FLAGS | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: BP_FLAGS
+helpviewer_keywords: BP_FLAGS enumeration
 ms.assetid: c45dfc74-5e7f-4f1e-a147-ab2a55dccbd0
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 801ea6fb80c410b43fb8dd9c164e0c83a0f2ea8f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# BP_FLAGS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Предоставляет дополнительные флаги, которые могут быть использованы для определения дополнительных сведений при установке точки останова.  
+# <a name="bpflags"></a>BP_FLAGS
+Предоставляет необязательные флаги, которые могут использоваться для указания дополнительных сведений, при задании точки останова.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-enum enum_BP_FLAGS {   
-   BP_FLAG_NONE            = 0x0000,  
-   BP_FLAG_MAP_DOCPOSITION = 0x0001,  
-   BP_FLAG_DONT_STOP       = 0x0002  
+```cpp  
+enum enum_BP_FLAGS {   
+   BP_FLAG_NONE            = 0x0000,  
+   BP_FLAG_MAP_DOCPOSITION = 0x0001,  
+   BP_FLAG_DONT_STOP       = 0x0002  
 };  
 typedef DWORD BP_FLAGS;  
 ```  
   
-```c#  
-public enum enum_BP_FLAGS {   
-   BP_FLAG_NONE            = 0x0000,  
-   BP_FLAG_MAP_DOCPOSITION = 0x0001,  
-   BP_FLAG_DONT_STOP       = 0x0002  
+```csharp  
+public enum enum_BP_FLAGS {   
+   BP_FLAG_NONE            = 0x0000,  
+   BP_FLAG_MAP_DOCPOSITION = 0x0001,  
+   BP_FLAG_DONT_STOP       = 0x0002  
 };  
 ```  
   
-## Члены  
- BP\_FLAG\_NONE  
- Не задает ни пометить точки останова.  
+## <a name="members"></a>Члены  
+ BP_FLAG_NONE  
+ Задает флаг без точки останова.  
   
- BP\_FLAG\_MAP\_DOCPOSITION  
- Указывает, что отладчик \(DE\) должен сопоставить точки останова, используя позицию документа.  Это применимо только к точкам останова, заданных в скрипт\-ориентированные исходных файлов, например active server pages \(ASP\).  
+ BP_FLAG_MAP_DOCPOSITION  
+ Указывает модуль отладки (DE) следует сопоставить в точку останова, используя позиции документа. Это значение применимо только к точки останова в скрипт ориентированного исходных файлов как Active Server Pages (ASP).  
   
- \_STOP НЕ BP\_FLAG\_DO  
- Указывает, что точка останова должна обрабатываться службами отладки, но в конечном счете, что отладчик не должен остановиться у \(т е IDebugBreakpointEvent2 объект события не должен быть отправлен\).  Этот пометить предназначен для использования главным образом с точками трассировки.  
+ BP_FLAG_DONT_STOP  
+ Указывает, что точка останова должны обрабатываться с помощью модуля отладки, но, модуль отладки в конечном счете должны не останавливаться (то есть [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) не следует отправлять объект события). Этот флаг предназначен для использования главным образом с использованием точек трассировки.  
   
-## Заметки  
- Используется для `dwFlags` элемент  [BP\_REQUEST\_INFO](../../../extensibility/debugger/reference/bp-request-info.md) и  [BP\_REQUEST\_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структуры.  
+## <a name="remarks"></a>Примечания  
+ Используется для `dwFlags` членом [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) и [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структуры.  
   
- Эти значения могут объединяться с побитовый оператор `OR`.  
+ Эти значения могут объединяться с помощью битового оператора `OR`.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [BP\_REQUEST\_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
- [BP\_REQUEST\_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)   
+ [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
+ [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)   
  [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)

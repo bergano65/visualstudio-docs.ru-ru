@@ -1,52 +1,52 @@
 ---
-title: "IDebugExpressionEvaluationCompleteEvent2::GetResult | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugExpressionEvaluationCompleteEvent2::GetResult"
-helpviewer_keywords: 
-  - "IDebugExpressionEvaluationCompleteEvent2::GetResult"
+title: "IDebugExpressionEvaluationCompleteEvent2::GetResult | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugExpressionEvaluationCompleteEvent2::GetResult
+helpviewer_keywords: IDebugExpressionEvaluationCompleteEvent2::GetResult
 ms.assetid: d9ad3e22-b6b2-421e-9a43-6bb8c70d12a9
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d8950a69c5086616bc5f0b3177e5c6aa9aad9dfe
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugExpressionEvaluationCompleteEvent2::GetResult
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Возвращает результат оценки выражений.  
+# <a name="idebugexpressionevaluationcompleteevent2getresult"></a>IDebugExpressionEvaluationCompleteEvent2::GetResult
+Возвращает результат вычисления выражения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetResult(   
-   IDebugProperty2** ppResult  
+```cpp  
+HRESULT GetResult(   
+   IDebugProperty2** ppResult  
 );  
 ```  
   
-```c#  
-int GetResult(   
-   out IDebugProperty2 ppResult  
+```csharp  
+int GetResult(   
+   out IDebugProperty2 ppResult  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppResult`  
- \[out\] возвращает IDebugProperty2 объект, представляющий результат оценки выражений.  
+ [out] Возвращает [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , представляющий результат вычисления выражения.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Возвращаемое IDebugProperty2 объект, содержащий значение вычисленного выражения.  Обратите внимание, что это значение может быть сложным значение в виде массива, но конечный результат должен быть по числовому или строковым значением, отображаемых для пользователя.  
+## <a name="remarks"></a>Примечания  
+ Возвращенный [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) объект содержит значение вычисленного выражения. Обратите внимание, что это значение может быть сложное значение, например массива окончательный результат должен быть числовое или строковое значение, которое отображается для пользователя.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

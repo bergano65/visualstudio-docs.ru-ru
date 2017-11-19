@@ -1,59 +1,58 @@
 ---
-title: "IDiaSymbol::get_addressSection | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_addressSection - метод"
+title: "IDiaSymbol::get_addressSection | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_addressSection method
 ms.assetid: fe80d479-3bb5-4f55-9b62-1bd58d0a60ce
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2410dd7a059d28f9140ea9162df64f098118364e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_addressSection
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Извлекает часть раздела расположения адреса.  Используется, если [Перечисление LocationType](../../debugger/debug-interface-access/locationtype.md) равно  `LocIsStatic`.  
+# <a name="idiasymbolgetaddresssection"></a>IDiaSymbol::get_addressSection
+Получает раздел часть адреса размещения. Используется, когда [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md) равно `LocIsStatic`.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT get_addressSection (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_addressSection (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pRetVal`  
- \[out\] возвращает часть раздела расположения адреса.  
+ [out] Возвращает часть раздела адрес расположения.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает  `S_FALSE` или код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение  `S_FALSE` означает, что свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
-## Заметки  
- Для статических элементов, расположенных во внешнем библиотеки DLL, возвращенный раздел этим методом может быть равен 0, так как этот метод использует получение виртуальный адрес члена.  Допустимо, только если виртуальные адреса [IDiaSession::put\_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) метод  [IDiaSession](../../debugger/debug-interface-access/idiasession.md) был вызван интерфейс с ненулевой параметр, задающий адрес загрузки библиотеки DLL.  
+## <a name="remarks"></a>Примечания  
+ Для статических элементов, расположенных в библиотеке DLL внешних раздел, возвращаемый этим методом может быть 0, этот способ полагается на получение виртуальный адрес элемента. Виртуальные адреса допустимы только если [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) метод в [IDiaSession](../../debugger/debug-interface-access/idiasession.md) интерфейс был вызван с ненулевой параметр, указывающий адрес загрузки библиотеки DLL.  
   
- Для получения адреса часть смещения \- метод [IDiaSymbol::get\_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md) метод.  
+ Чтобы получить часть смещения из адреса, вызовите [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md) метод.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
   
 |Требование|Описание|  
-|----------------|--------------|  
+|-----------------|-----------------|  
 |Заголовок:|dia2.h|  
-|Версия:|Пакет SDK для доступа к интерфейсу отладки v7.0|  
+|Версия:|ПАКЕТ SDK для v7.0|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Перечисление LocationType](../../debugger/debug-interface-access/locationtype.md)

@@ -1,63 +1,63 @@
 ---
-title: "IDebugEngine2::CreatePendingBreakpoint | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine2::CreatePendingBreakpoint"
-helpviewer_keywords: 
-  - "IDebugEngine2::CreatePendingBreakpoint"
+title: "IDebugEngine2::CreatePendingBreakpoint | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEngine2::CreatePendingBreakpoint
+helpviewer_keywords: IDebugEngine2::CreatePendingBreakpoint
 ms.assetid: 92e85b90-a931-48d9-89a7-a6edcb83ae5a
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: fdc73a2245390ec04cc3adc2b3a4ac4f5ced3f51
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEngine2::CreatePendingBreakpoint
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Создает ожидается точка останова в обработчике отладки \(DE\).  
+# <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
+Создает ожидающая точка останова в модуль отладки (DE).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT CreatePendingBreakpoint(   
-   IDebugBreakpointRequest2*  pBPRequest,  
-   IDebugPendingBreakpoint2** ppPendingBP  
+```cpp  
+HRESULT CreatePendingBreakpoint(   
+   IDebugBreakpointRequest2*  pBPRequest,  
+   IDebugPendingBreakpoint2** ppPendingBP  
 );  
 ```  
   
-```c#  
-int CreatePendingBreakpoint(   
-   IDebugBreakpointRequest2     pBPRequest,  
-   out IDebugPendingBreakpoint2 ppPendingBP  
+```csharp  
+int CreatePendingBreakpoint(   
+   IDebugBreakpointRequest2     pBPRequest,  
+   out IDebugPendingBreakpoint2 ppPendingBP  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pBPRequest`  
- \[in\] [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) объект, описывающий завершения отложенной точку останова для создания.  
+ [in] [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) , описывающий ожидающая точка останова для создания.  
   
  `ppPendingBP`  
- \[out\] возвращает IDebugPendingBreakpoint2 объект, представляющий завершения отложенной точку останова.  
+ [out] Возвращает [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) , представляющий ожидающая точка останова.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  Обычно возвращает `E_FAIL` если  `pBPRequest` параметр не соответствует языку, поддерживаемый DE  `pBPRequest` параметр является недопустимым или незакончен.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Как правило, возвращает `E_FAIL` Если `pBPRequest` параметр не соответствует любой язык, поддерживаемый DE, если `pBPRequest` параметр неверные или неполные.  
   
-## Заметки  
- Ожидается точка останова по существу коллекция всех данных, необходимых для связывания точки останова в коде.  Ожидается точка останова, возвращаемая из этого метода не привязана к коду до [Привязка](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) вызывается метод.  
+## <a name="remarks"></a>Примечания  
+ Ожидающая точка останова — по существу это совокупность все сведения, необходимые для привязки точки останова в коде. Ожидающая точка останова, возвращаемый этим методом, не привязан к кода до [привязки](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) вызывается метод.  
   
- Для каждой, ожидающих точки останова наборы пользователя, сеанс отладки вызовы диспетчера \(SDM\) этот метод в каждом вложенном DE.  Он до DE, чтобы убедиться, что точка останова является допустимой для программ, выполняемых в этом DE.  
+ Для каждого ожидающих точек останова наборы пользователей, диспетчера сеанса отладки (SDM) этот метод вызывается в каждой вложенного DE. Именно DE, чтобы проверить, точка останова является допустимым для программы, работающие в этом DE.  
   
- Если пользователь задает точку останова на строке кода, DE свободно привязки точка останова до самой ближайшей линии в документе, который соответствует этому коду.  Это делает возможным для пользователя установить точку останова на первой линии многополосной выписки, но выполняется его привязка последней линии \(где весь код приписан в данных отладки\).  
+ Когда пользователь устанавливает точку останова на строке кода, DE может выполнять привязку точки останова на ближайшую строку в документе, который соответствует этот код. Это позволяет пользователю задать точку останова на первой строке многострочного оператора, но привязать его в последней строке (где весь код помечается в отладочной информации).  
   
-## Пример  
- В следующем примере показано, как реализовать этот метод для простого `CProgram` объект.  Реализация DE  `IDebugEngine2::CreatePendingBreakpoint` затем удается переадресовать все вызовы этой реализации метода содержится в каждой программе.  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как реализовать этот метод для простой `CProgram` объекта. Реализация DE `IDebugEngine2::CreatePendingBreakpoint` может затем пересылать все вызовы этой реализации метода в каждой программе.  
   
 ```  
 HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, IDebugPendingBreakpoint2** ppPendingBP)     
@@ -71,8 +71,8 @@ HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, 
 }    
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
- [Привязка](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)   
+ [BIND](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)   
  [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

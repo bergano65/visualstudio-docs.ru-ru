@@ -1,36 +1,37 @@
 ---
-title: "Элементы управления конструктора VSPackage источника | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "пакеты управления исходным кодом, элементы макета"
+title: "Исходных VSPackage конструктора элементов управления | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: source control packages, design elements
 ms.assetid: edd3f2ff-ca32-4465-8ace-4330493b67bb
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c78e6a8a93a89d39434552694b5d969698bea45e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Элементы управления конструктора VSPackage источника
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-В подразделах этого раздела конспектируют структуру системы управления версиями VSPackage должна реализовывать для глубокой интеграции.  Она также перечислены интерфейсы и службы, которые система управления версиями VSPackage может реализовать и интерфейсы и службы системы управления версиями могут использоваться из другого VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] компоненты для поддержки его модель и возможности системы управления версиями.  
+# <a name="source-control-vspackage-design-elements"></a>Исходные элементы VSPackage конструктора элемента управления
+В этом разделе описаны структуры, VSPackage должен реализовать для глубокую интеграцию системы управления версиями. Он также содержит интерфейсы и службы, что система управления VSPackage могут реализовывать интерфейсы и службы системы управления версиями VSPackage можно использовать из других [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] компонентов для поддержки его источником управления модель и функциональные возможности.  
   
-## В этом подразделе  
- [Структура VSPackage](../../extensibility/internals/vspackage-structure-source-control-vspackage.md)  
- Определяет структуру системы управления версиями VSPackage.  
+## <a name="in-this-section"></a>Содержание  
+ [Структура пакета VSPackage](../../extensibility/internals/vspackage-structure-source-control-vspackage.md)  
+ Определяет структуру системы управления версиями пакета VSPackage.  
   
  [Связанные службы и интерфейсы](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)  
- Интерфейсы и службы системы управления версиями пакет\-родственные списков.  
+ Список исходных интерфейсов относящиеся к пакету управления и служб.  
   
  [Службы, предоставляемые](../../extensibility/internals/services-provided-source-control-vspackage.md)  
- Описывает службу системы управления версиями, предоставленных системой управления версиями VSPackage.  
+ Описывает службу управления версиями, предоставляемые элементом управления источником VSPackage.  
   
-## Связанные подразделы  
- [Создание VSPackage управления источника](../../extensibility/internals/creating-a-source-control-vspackage.md)  
- Обсуждается создание система управления версиями VSPackage, что не только предоставляют функциональные возможности системы управления версиями, но можно использовать для настройки [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] пользовательский интерфейс системы управления версиями.
+## <a name="related-sections"></a>Связанные разделы  
+ [Создание пакета VSPackage системы управления версиями](../../extensibility/internals/creating-a-source-control-vspackage.md)  
+ Описывает, как создать пакет VSPackage, который не только предоставляет функций системы управления версиями, но можно использовать для настройки системы управления версиями [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] система управления версиями пользовательского интерфейса.

@@ -4,39 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - VSCT XML schema elements, Parent
 - Parent element (VSCT XML schema)
 ms.assetid: e4624ac8-1b9a-4940-910a-528a661cefad
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 0da0bd0aceaccdbf8d2cf11fd3490a3e5810ad2e
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: fc66e193b13ac6baf9d6089483a1281c2d6a59ef
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="parent-element"></a>Элемент Parent
-Родительские поля кнопку или поле со списком может быть только группу. Родительского меню или группы может быть любым другим меню или группы. В [CommandPlacement элемент](../extensibility/commandplacement-element.md), этот элемент является обязательным; во всех остальных случаях это необязательно. Если этот элемент указан, родительский `Group_Undefined:0` будет неявно.  
+Родительский кнопку или поле со списком может быть только группу. Родительского меню или группы, возможно, других меню или группу. В [CommandPlacement элемент](../extensibility/commandplacement-element.md), этот элемент является обязательным; во всех остальных случаях это необязательно. Если этот элемент указан, родительский `Group_Undefined:0` будет содержится в разрешении.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -51,8 +37,8 @@ ms.lasthandoff: 02/22/2017
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|guid|Обязательный. Идентификатор GUID из идентификатора GUID и идентификатор команды.|  
-|id|Обязательный. Идентификатор команды, идентификатор из GUID-идентификатор.|  
+|guid|Обязательный. Идентификатор GUID из идентификатора GUID или идентификатор команды.|  
+|id|Обязательный. Идентификатор команды, идентификатор GUID или с Идентификатором.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
  Нет  
@@ -61,10 +47,10 @@ ms.lasthandoff: 02/22/2017
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, представляющие команды, которые VSPackage предоставляет интегрированную среду разработки (IDE). Например элементы меню, меню, панелей инструментов и поля со списком.|  
-|[Элемент кнопки](../extensibility/buttons-element.md)|Группы [элемент Button](../extensibility/button-element.md) элементы.|  
-|[Элемент меню](../extensibility/menus-element.md)|Определяет все меню, которые реализует VSPackage.|  
-|[Элемент Groups](../extensibility/groups-element.md)|Содержит элементы, которые определяют группы команды VSPackage.|  
+|[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, представляющие команды, которые VSPackage предоставляет интегрированную среду разработки (IDE). Например пункты меню, меню, панелей инструментов и поля со списком.|  
+|[Элемент Buttons](../extensibility/buttons-element.md)|Группы [элемент Button](../extensibility/button-element.md) элементов.|  
+|[Элемент Menus](../extensibility/menus-element.md)|Определяет все меню, которые реализует VSPackage.|  
+|[Элемент Groups](../extensibility/groups-element.md)|Содержит записи, которые определяют группы команд пакета VSPackage.|  
   
 ## <a name="see-also"></a>См. также  
- [Таблицы команд Visual Studio (. Файлы Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

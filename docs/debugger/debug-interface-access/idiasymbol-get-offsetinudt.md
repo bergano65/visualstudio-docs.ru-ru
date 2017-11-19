@@ -1,56 +1,55 @@
 ---
-title: "IDiaSymbol::get_offsetInUdt | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_offsetInUdt - метод"
+title: "IDiaSymbol::get_offsetInUdt | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_offsetInUdt method
 ms.assetid: 442f20d9-9d6a-44a1-83fb-c3f8c14b6c97
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 94c53927b4d74a7a6f114425d6260f52609645e2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_offsetInUdt
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Получает смещение к началу пользовательского типа \(udt\) участника на определяемый пользователем тип.  
+# <a name="idiasymbolgetoffsetinudt"></a>IDiaSymbol::get_offsetInUdt
+Получает смещение в начало определяемых пользователем типов (UDT) члена в определяемый пользователем тип.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT get_offsetInUdt(   
-   DWORD* pRetVal)  
+```C++  
+HRESULT get_offsetInUdt(   
+   DWORD* pRetVal)  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pRetVal`  
- \[out\] возвращает смещение в байтах расположения символов.  
+ [out] Возвращает смещение в байтах расположения символов.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает  `S_FALSE` или код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение  `S_FALSE` означает, что свойство недоступно для символа.  
+>  Возвращаемое значение `S_FALSE` означает свойство недоступно для символа.  
   
-## Заметки  
- Эта функция используется только в локальных записях в оптимизированном построении.  
+## <a name="remarks"></a>Примечания  
+ Эта функция используется только в локальные записи при оптимизированном построении.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: Dia2.h  
   
- Библиотеки: diaguids.lib  
+ Библиотека: diaguids.lib  
   
- Библиотеки DLL: msdia100.dll  
+ Библиотека DLL: msdia100.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

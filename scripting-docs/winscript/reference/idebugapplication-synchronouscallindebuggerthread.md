@@ -1,27 +1,30 @@
 ---
-title: "IDebugApplication::SynchronousCallInDebuggerThread | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugApplication::SynchronousCallInDebuggerThread | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugApplication.SynchronousCallInDebuggerThread
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugApplication::SynchronousCallInDebuggerThread"
+helpviewer_keywords: IDebugApplication::SynchronousCallInDebuggerThread
 ms.assetid: 9daa1722-f25a-4691-aefc-fd28672fb883
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c7b66b0b085c0fe3abbee3c3b8c5c3f7d252d3b5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugApplication::SynchronousCallInDebuggerThread
-Предоставляет механизм для вызывающего кода выполняется в потоке отладчика.  
+# <a name="idebugapplicationsynchronouscallindebuggerthread"></a>IDebugApplication::SynchronousCallInDebuggerThread
+Предоставляет механизм для вызывающего объекта, для выполнения кода в поток отладки.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT SynchronousCallInDebuggerThread(  
@@ -32,29 +35,29 @@ HRESULT SynchronousCallInDebuggerThread(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pptc`  
- \[in\] объект вызова.  
+ [in] Объект для вызова.  
   
  `dwParam1`  
- \[in\] первый параметр для передачи в метод `IDebugThreadCall::ThreadCallHandler`.  
+ [in] Первый параметр для передачи `IDebugThreadCall::ThreadCallHandler` метод.  
   
  `dwParam2`  
- \[in\] второй параметр для передачи в метод `IDebugThreadCall::ThreadCallHandler`.  
+ [in] Второй параметр для передачи `IDebugThreadCall::ThreadCallHandler` метод.  
   
  `dwParam3`  
- \[in\] третий параметр для передачи в метод `IDebugThreadCall::ThreadCallHandler`.  
+ [in] Третий параметр для передачи `IDebugThreadCall::ThreadCallHandler` метод.  
   
-## Возвращаемое значение  
- Метод возвращает `HRESULT`.  Допустимые значения включают, но не ограничиваются см. в следующей таблице.  
+## <a name="return-value"></a>Возвращаемое значение  
+ Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
 |Значение|Описание|  
-|--------------|--------------|  
+|-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
-## Заметки  
- Обработчики и узлы языка обычно используют этот метод для реализации свободен\- продетые потоками объектов на основе их отдельных реализаций продетых потоками.  
+## <a name="remarks"></a>Примечания  
+ Модули языка и узлы обычно используется этот метод для реализации свободнопоточный объекты на основе реализаций одного однопотоковое.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
  [Интерфейс IDebugThreadCall](../../winscript/reference/idebugthreadcall-interface.md)

@@ -1,75 +1,75 @@
 ---
-title: "IDebugProcess2::Attach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcess2::Attach"
-helpviewer_keywords: 
-  - "IDebugProcess2::Attach"
+title: "IDebugProcess2::Attach | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProcess2::Attach
+helpviewer_keywords: IDebugProcess2::Attach
 ms.assetid: 40d78417-fde2-45c3-96c9-16e06bd9008d
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 840f2dee6648a84b0f7c6259049dcc701b5aef82
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProcess2::Attach
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Вложение сеанс отладки \(SDM\) диспетчер к процессу.  
+# <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
+Присоединяет к процессу диспетчера сеанса отладки (SDM).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT Attach(   
-   IDebugEventCallback2* pCallback,  
-   GUID*                 rgguidSpecificEngines,  
-   DWORD                 celtSpecificEngines,  
-   HRESULT*              rghrEngineAttach  
+```cpp  
+HRESULT Attach(   
+   IDebugEventCallback2* pCallback,  
+   GUID*                 rgguidSpecificEngines,  
+   DWORD                 celtSpecificEngines,  
+   HRESULT*              rghrEngineAttach  
 );  
 ```  
   
-```c#  
-int Attach(   
-   IDebugEventCallback2 pCallback,  
-   Guid[]               rgguidSpecificEngines,  
-   uint                 celtSpecificEngines,  
-   int[]                rghrEngineAttach  
+```csharp  
+int Attach(   
+   IDebugEventCallback2 pCallback,  
+   Guid[]               rgguidSpecificEngines,  
+   uint                 celtSpecificEngines,  
+   int[]                rghrEngineAttach  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pCallback`  
- \[in\] IDebugEventCallback2 объект которого используется для отладки уведомление о событии.  
+ [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) объект, используемый для уведомления о событии отладки.  
   
  `rgguidSpecificEngines`  
- \[in\] массив идентификаторов GUID отладочные обработчики для отладки программы, работающие в процессе.  Этот параметр может иметь значение NULL.  Дополнительные сведения см. в разделе " примечания ".  
+ [in] Массив идентификаторов GUID для отладчики для отладки программы, запущенные в процессе. Этот параметр может иметь значение null. Дополнительные сведения см. заметки.  
   
  `celtSpecificEngines`  
- \[in\] число обработчиков отладки в `rgguidSpecificEngines` массив и размер  `rghrEngineAttach` массив.  
+ [in] Число отладки ядра в `rgguidSpecificEngines` массива и размера `rghrEngineAttach` массива.  
   
  `rghrEngineAttach`  
- \[in, out\] массив кодов HRESULT, возвращаемого командами отладки.  Размер массива определяется в `celtSpecificEngines` параметр.  Как правило, то каждый код `S_OK` OR  `S_ATTACH_DEFERRED`.  Вторая показывает, что DE вложен в данный момент нет программы.  
+ [in, out] Массив кодов HRESULT, возвращаемых отладчики. Размер массива указан в `celtSpecificEngines` параметра. Каждый код обычно является либо `S_OK` или `S_ATTACH_DEFERRED`. Второй случай показывает, что DE в настоящее время присоединена к нет программ.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  В следующей таблице приведены другие возможные значения.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки. Ниже приведены другие возможные значения.  
   
 |Значение|Описание|  
-|--------------|--------------|  
-|`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|Указанный процесс уже вложен в отладчике.|  
-|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Произошло нарушение безопасности при выполнении процедуры вложить.|  
-|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Процесс рабочего стола нельзя вложить в отладчике.|  
+|-----------|-----------------|  
+|`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|Указанный процесс уже присоединен к отладчику.|  
+|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Произошло нарушение безопасности во время процедуры подключения.|  
+|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Отладчику не удается присоединить процесса рабочего стола.|  
   
-## Заметки  
- Вложение в процесс вложение SDM все программы, работающие в этом процессе, который может быть отлажен командами отладки \(DE\), определенными в `rgguidSpecificEngines` массив.  Установка `rgguidSpecificEngines` параметр значение NULL или включает  `GUID_NULL` в массиве, который требуется вложить все программы в процессе.  
+## <a name="remarks"></a>Примечания  
+ Присоединение к процессу присоединяет SDM все программы, запущенные в нем отлаживаемого ядра отладки (DE), указанный в `rgguidSpecificEngines` массива. Задать `rgguidSpecificEngines` параметр со значением null значения или содержать `GUID_NULL` в массиве для присоединения к все программы, в процессе.  
   
- Все отладочные события, возникающие в процессе отправляются с заданным IDebugEventCallback2 объект.  This `IDebugEventCallback2` объект, предоставляемый, когда SDM вызывает этот метод.  
+ Все события отладки, возникающие в процессе отправляются для данного [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) объекта. Это `IDebugEventCallback2` объекта используется, если SDM вызывает этот метод.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

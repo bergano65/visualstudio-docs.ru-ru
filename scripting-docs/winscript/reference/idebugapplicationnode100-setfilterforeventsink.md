@@ -1,43 +1,42 @@
 ---
-title: "IDebugApplicationNode100::SetFilterForEventSink | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "IDebugApplicationNode100::SetFilterForEventSink"
+title: "IDebugApplicationNode100::SetFilterForEventSink | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords: IDebugApplicationNode100::SetFilterForEventSink
 ms.assetid: cfb34efe-c6e1-4692-8ffd-3ede3a24cd4b
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6db8ea26787427844a92417bf525dba271063cba
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugApplicationNode100::SetFilterForEventSink
-Устанавливает фильтр для указанной реализации [Интерфейс IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md).  Он позволяет отладчики скрипта, чтобы отфильтровать компилятор\- приложения, созданные узлы дочернего элемента так как PDM больше не отправляет события, когда они будут создатьы или удалитьы.  По умолчанию все узлы будут отправитьо.  
+# <a name="idebugapplicationnode100setfilterforeventsink"></a>IDebugApplicationNode100::SetFilterForEventSink
+Задает фильтр на определенном [интерфейс IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md) реализации. Она позволяет отладчики сценариев для фильтрации компилятором дочерних узлов приложения, чтобы PDM больше не будет отправлять события при их создании или удалены. По умолчанию будут отправляться все узлы.  
   
 > [!IMPORTANT]
->  [IDebugApplicationNode100 — интерфейс](../../winscript/reference/idebugapplicationnode100-interface.md) реализуется PDM v10.0 и большим.  Обнаружен в activdbg100.h.  
+>  [Idebugapplicationnode100 — интерфейс](../../winscript/reference/idebugapplicationnode100-interface.md) — реализованный PDM v10.0 и более поздней версии. Обнаружено в activdbg100.h.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-HRESULT SetFilterForEventSink(  
-        [in] DWORD dwCookie,  
-        [in] APPLICATION_NODE_EVENT_FILTER filter  
-        );  
-  
+HRESULT SetFilterForEventSink(        [in] DWORD dwCookie,        [in] APPLICATION_NODE_EVENT_FILTER filter        );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `dwCookie`  
  Файл cookie фильтра.  
   
  `filter`  
  Фильтр.  
   
-## См. также  
- [IDebugApplicationNode100 — интерфейс](../../winscript/reference/idebugapplicationnode100-interface.md)
+## <a name="see-also"></a>См. также  
+ [Интерфейс IDebugApplicationNode100](../../winscript/reference/idebugapplicationnode100-interface.md)

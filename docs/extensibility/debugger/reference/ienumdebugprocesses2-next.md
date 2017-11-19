@@ -1,59 +1,59 @@
 ---
-title: "IEnumDebugProcesses2::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugProcesses2::Next"
-helpviewer_keywords: 
-  - "IEnumDebugProcesses2::Next"
+title: "IEnumDebugProcesses2::Next | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugProcesses2::Next
+helpviewer_keywords: IEnumDebugProcesses2::Next
 ms.assetid: abef89eb-198b-49cd-a4c9-17bce6cac0e1
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e1987dbc7e14824ccbfda5fd6bb7d644389a65f7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugProcesses2::Next
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Возвращает следующий набор элементов перечисления.  
+# <a name="ienumdebugprocesses2next"></a>IEnumDebugProcesses2::Next
+Возвращает следующий набор элементов из перечисления.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT Next(  
-   ULONG            celt,  
-   IDebugProcess2** rgelt,  
-   ULONG*           pceltFetched  
+   ULONG            celt,  
+   IDebugProcess2** rgelt,  
+   ULONG*           pceltFetched  
 );  
 ```  
   
-```c#  
+```csharp  
 int Next(  
-   uint             celt,  
-   IDebugProcess2[] rgelt,  
-   ref uint         pceltFetched  
+   uint             celt,  
+   IDebugProcess2[] rgelt,  
+   ref uint         pceltFetched  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `celt`  
- \[in\] число элементов, которые нужно получить.  Также определяет максимальный размер `rgelt` массив.  
+ [in] Число элементов для извлечения. Также указывает максимальный размер `rgelt` массива.  
   
  `rgelt`  
- \[in, out\] массив IDebugProcess2 элементы, которые требуется заполнить.  
+ [in, out] Массив [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) элементы, которые должны заполняться в.  
   
  `pceltFetched`  
- \[out\] возвращает число элементов, фактически возвращенных в пределах `rgelt`.  
+ [out] Возвращает количество элементов, фактически извлеченных в `rgelt`.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`.  Возвращает `S_FALSE` если меньше, чем количество запрошенных элементов могут быть возвращены. в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` меньше запрошенного числа элементов может быть возвращен; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

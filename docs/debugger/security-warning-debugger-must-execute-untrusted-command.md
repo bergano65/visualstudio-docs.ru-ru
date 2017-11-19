@@ -1,42 +1,42 @@
 ---
-title: "Предупреждение системы безопасности. Отладчик должен выполнить команду без доверия | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.sourceserver.securityalert"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: "Предупреждение системы безопасности: Отладчик должен выполнить ненадежную команду | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.sourceserver.securityalert
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: e5c004b3-b364-4098-ac98-770076ca9981
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 21daec7113462221b392b5f29b1604a24fe5c74c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Предупреждение системы безопасности. Отладчик должен выполнить команду без доверия
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Это диалоговое окно с предупреждением появляется при использовании сервера системы управления версиями.  Оно указывает, что команды, которую должен выполнить отладчик для получения исходного кода, нет в списке доверенных команд для сервера системы управления версиями, содержащемся в файле srcsvr.ini.  Если это допустимая команда, ее можно добавить в файл srcsvr.ini.  В противном случае ее не следует выполнять.  Дополнительные сведения см. в разделе [Указание файлов символов \(.pdb\) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+# <a name="security-warning-debugger-must-execute-untrusted-command"></a>Security Warning: Debugger Must Execute Untrusted Command
+Это диалоговое окно с предупреждением появляется при использовании сервера системы управления версиями. Оно указывает, что команды, которую должен выполнить отладчик для получения исходного кода, нет в списке доверенных команд для сервера системы управления версиями, содержащемся в файле srcsvr.ini. Если это допустимая команда, ее можно добавить в файл srcsvr.ini. В противном случае ее не следует выполнять. Дополнительные сведения см. в разделе [Указание файлов символов (.pdb) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
-## Текст сообщения  
- Отладчик должен выполнить эту команду, для которой не установлено доверие, чтобы получить исходный код с сервера системы управления версиями.  
+## <a name="message-text"></a>Текст сообщения  
+ **Отладчик должен выполнить следующую команду без доверия, чтобы получить исходный код с исходного сервера.**  
   
- Если файл символов отладки \(\*.pdb\) получен из ненадежного источника, эта команда может быть недопустимой или опасной.  
+ **Если файл символов отладки (\*PDB-файл) — не из известного и надежного источника, эта команда может быть недопустимой или опасной.**  
   
- Вы хотите выполнить эту команду?  
+ **Вы действительно хотите выполнить эту команду?**  
   
-## Список элементов пользовательского интерфейса  
+## <a name="uielement-list"></a>Список элементов пользовательского интерфейса  
  Текстовое поле  
- Команда из PDB\-файла, подлежащая выполнению.  
+ Команда из PDB-файла, подлежащая выполнению.  
   
  Запуск  
  Позволить выполнить команду.  
@@ -44,7 +44,7 @@ caps.handback.revision: 13
  Не выполнять  
  Прекратить выполнение команды и загрузку файла с сервера системы управления версиями.  
   
-## См. также  
- [Указание файлов символов \(.pdb\) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+## <a name="see-also"></a>См. также  
+ [Укажите символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Безопасность отладчика](../debugger/debugger-security.md)   
- [Сервер системы управления версиями](http://msdn.microsoft.com/library/windows/desktop/ms680641\(v=vs.85\).aspx)
+ [Исходный сервер](http://msdn.microsoft.com/library/windows/desktop/ms680641\(v=vs.85\).aspx)

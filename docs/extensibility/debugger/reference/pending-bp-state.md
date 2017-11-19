@@ -1,72 +1,72 @@
 ---
-title: "PENDING_BP_STATE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "PENDING_BP_STATE"
-helpviewer_keywords: 
-  - "Перечисление PENDING_BP_STATE"
+title: "PENDING_BP_STATE | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: PENDING_BP_STATE
+helpviewer_keywords: PENDING_BP_STATE enumeration
 ms.assetid: ac04ad72-fa92-4a15-ade2-0d0bbbadfc7f
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: de7ac105f7dea0c57297c29a4bdb8d5c85f62321
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# PENDING_BP_STATE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Указывает состояние отложенной точки останова \(точки останова, которая еще не была привязана\).  
+# <a name="pendingbpstate"></a>PENDING_BP_STATE
+Указывает состояние ожидающая точка останова (точка останова, которая еще не привязаны).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-enum enum_PENDING_BP_STATE {   
-   PBPS_NONE     = 0x0000,  
-   PBPS_DELETED  = 0x0001,  
-   PBPS_DISABLED = 0x0002,  
-   PBPS_ENABLED  = 0x0003  
+```cpp  
+enum enum_PENDING_BP_STATE {   
+   PBPS_NONE     = 0x0000,  
+   PBPS_DELETED  = 0x0001,  
+   PBPS_DISABLED = 0x0002,  
+   PBPS_ENABLED  = 0x0003  
 };  
 typedef DWORD PENDING_BP_STATE;  
 ```  
   
-```c#  
-public enum enum_PENDING_BP_STATE {   
-   PBPS_NONE     = 0x0000,  
-   PBPS_DELETED  = 0x0001,  
-   PBPS_DISABLED = 0x0002,  
-   PBPS_ENABLED  = 0x0003  
+```csharp  
+public enum enum_PENDING_BP_STATE {   
+   PBPS_NONE     = 0x0000,  
+   PBPS_DELETED  = 0x0001,  
+   PBPS_DISABLED = 0x0002,  
+   PBPS_ENABLED  = 0x0003  
 };  
 ```  
   
-## Члены  
- PBPS\_NONE  
- Заполнитель для нулю.  Это значение никогда не возвращается.  
+## <a name="members"></a>Члены  
+ PBPS_NONE  
+ Местозаполнитель для нуля. Это значение никогда не возвращается.  
   
- PBPS\_DELETED  
- Указывает, что ожидается точка останова удалена.  
+ PBPS_DELETED  
+ Указывает, что ожидающая точка останова была удалена.  
   
- PBPS\_DISABLED  
- Указывает, что ожидается точка останова заблокирована.  
+ PBPS_DISABLED  
+ Указывает, что запрещено ожидающая точка останова.  
   
- PBPS\_ENABLED  
- Указывает, что ожидается точка останова включена.  
+ PBPS_ENABLED  
+ Указывает, что ожидающая точка останова включена.  
   
-## Заметки  
- Используйте как `state` элемент  [PENDING\_BP\_STATE\_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) структура.  
+## <a name="remarks"></a>Примечания  
+ Использовать в качестве `state` членом [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) структуры.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [PENDING\_BP\_STATE\_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)
+ [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)

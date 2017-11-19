@@ -1,53 +1,52 @@
 ---
-title: "IDiaSymbol::get_container | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_container - метод"
+title: "IDiaSymbol::get_container | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_container method
 ms.assetid: 24e832eb-80b3-484c-a41b-11477ec9de99
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f2a9dbd550247f432a7329bfbba224220ea6ea5a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_container
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Эта функция получает указатель на символ, представляющий родительский контейнер\/этого символа.  
+# <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
+Эта функция извлекает указатель на символ, представляющий родительский/контейнер этот символ.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```C++  
 HRESULT get_container(  
-   IDiaSymbol **pRetVal  
+   IDiaSymbol **pRetVal  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pRetVal`  
- \[out\] возвращает указатель на `IDiaSymbol` содержит сведения о контейнере этого символа.  
+ [out] Возвращает указатель на `IDiaSymbol` содержащую сведения о контейнере этот символ.  
   
-## Возвращаемое значение  
- В случае успеха возвращает значение S\_OK; в противном случае возвращает значение S\_FALSE или код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает значение S_FALSE или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение S\_FALSE означает, что свойство недоступно для символа.  
+>  Возвращаемое значение S_FALSE означает, что свойство недоступно для символа.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
   
 |Требование|Описание|  
-|----------------|--------------|  
+|-----------------|-----------------|  
 |Заголовок:|dia2.h|  
-|Версия:|Пакет SDK для доступа к интерфейсу отладки v8.0|  
+|Версия:|ПАКЕТ SDK для версии 8.0|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

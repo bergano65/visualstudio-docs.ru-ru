@@ -1,90 +1,90 @@
 ---
-title: "EVENTATTRIBUTES | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "EVENTATTRIBUTES"
-helpviewer_keywords: 
-  - "Перечисления EVENTATTRIBUTES"
+title: "EVENTATTRIBUTES | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: EVENTATTRIBUTES
+helpviewer_keywords: EVENTATTRIBUTES enumeration
 ms.assetid: 04db10f7-df31-4464-98e8-b3777428179e
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 097a61ff6c96fd4901265ad960169fd5ec7244c2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# EVENTATTRIBUTES
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Определяет атрибуты события.  
+# <a name="eventattributes"></a>EVENTATTRIBUTES
+Задает атрибуты события.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-enum enum_EVENTATTRIBUTES {   
-   EVENT_ASYNCHRONOUS          = 0x0000,  
-   EVENT_SYNCHRONOUS           = 0x0001,  
-   EVENT_STOPPING              = 0x0002,  
-   EVENT_ASYNC_STOP            = 0x0002,  
-   EVENT_SYNC_STOP             = 0x0003,  
-   EVENT_IMMEDIATE             = 0x0004,  
-   EVENT_EXPRESSION_EVALUATION = 0x0008  
+```cpp  
+enum enum_EVENTATTRIBUTES {   
+   EVENT_ASYNCHRONOUS          = 0x0000,  
+   EVENT_SYNCHRONOUS           = 0x0001,  
+   EVENT_STOPPING              = 0x0002,  
+   EVENT_ASYNC_STOP            = 0x0002,  
+   EVENT_SYNC_STOP             = 0x0003,  
+   EVENT_IMMEDIATE             = 0x0004,  
+   EVENT_EXPRESSION_EVALUATION = 0x0008  
 };  
 typedef DWORD EVENTATTRIBUTES;  
 ```  
   
-```c#  
-public enum enum_EVENTATTRIBUTES {   
-   EVENT_ASYNCHRONOUS          = 0x0000,  
-   EVENT_SYNCHRONOUS           = 0x0001,  
-   EVENT_STOPPING              = 0x0002,  
-   EVENT_ASYNC_STOP            = 0x0002,  
-   EVENT_SYNC_STOP             = 0x0003,  
-   EVENT_IMMEDIATE             = 0x0004,  
-   EVENT_EXPRESSION_EVALUATION = 0x0008  
+```csharp  
+public enum enum_EVENTATTRIBUTES {   
+   EVENT_ASYNCHRONOUS          = 0x0000,  
+   EVENT_SYNCHRONOUS           = 0x0001,  
+   EVENT_STOPPING              = 0x0002,  
+   EVENT_ASYNC_STOP            = 0x0002,  
+   EVENT_SYNC_STOP             = 0x0003,  
+   EVENT_IMMEDIATE             = 0x0004,  
+   EVENT_EXPRESSION_EVALUATION = 0x0008  
 };  
 ```  
   
-## Члены  
- EVENT\_ASYNCHRONOUS  
- Указывает, что событие асинхронно и ответ на событие.  
+## <a name="members"></a>Члены  
+ EVENT_ASYNCHRONOUS  
+ Указывает, что событие является асинхронным и необходимости ответ на событие.  
   
- EVENT\_SYNCHRONOUS  
- Указывает, что события синхронно. ответ посредством [ContinueFromSynchronousEvent](../Topic/IDebugEngine2::ContinueFromSynchronousEvent.md).  
+ EVENT_SYNCHRONOUS  
+ Указывает, что событие является синхронным; ответ с помощью параметра [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).  
   
- EVENT\_STOPPING  
- Это событие указывает на то, что остановки.  Быть совмещено с этим `EVENT_ASYNCHRONOUS` OR  `EVENT_SYNCHRONOUS`.  
+ EVENT_STOPPING  
+ Указывает, что это событие остановки. Должны быть объединены с помощью `EVENT_ASYNCHRONOUS` или `EVENT_SYNCHRONOUS`.  
   
- EVENT\_ASYNC\_STOP  
- Указывает асинхронное при остановке событие.  В данный момент такое событие.  Этот пометить только заполнителем.  
+ EVENT_ASYNC_STOP  
+ Обозначает событие остановки асинхронной. В настоящее время нет такого события. Этот флаг доступен только заполнителем.  
   
- EVENT\_SYNC\_STOP  
- Указывает событие \(сочетание выполняются при остановке `EVENT_SYNCHRONOUS` и  `EVENT_STOPPING`\).  Это значение используется обработчиком отладки \(DE\), когда оно отправляет при остановке событие.  Ответ выполняется посредством вызова [Выполнение](../../../extensibility/debugger/reference/idebugprogram2-execute.md)"  [Шаг](../../../extensibility/debugger/reference/idebugprogram2-step.md)или  [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
+ EVENT_SYNC_STOP  
+ Указывает на событие синхронной остановки (сочетание `EVENT_SYNCHRONOUS` и `EVENT_STOPPING`). Это значение используется модулем отладки (DE) при отправке события остановки. Ответ осуществляется посредством вызова [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [шаг](../../../extensibility/debugger/reference/idebugprogram2-step.md), или [Продолжить](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
   
- EVENT\_IMMEDIATE  
- Указывает событие, отправляются немедленно и одновременно в интегрированной среде разработки.  Этот пометить объединяется с другими флагами как `EVENT_ASYNCHRONOUS`"  `EVENT_SYNCHRONOUS`или  `EVENT_SYNC_STOP` указывает тип события и fact этого механизм ответа \(если есть\), то известно, что.  
+ EVENT_IMMEDIATE  
+ Указывает событие, которое отправляется немедленно и синхронно в интегрированную среду разработки. Этот флаг используется в сочетании с другими флагами как `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, или `EVENT_SYNC_STOP` для указания типа события и тот факт, что известен механизм ответа (если таковые имеются).  
   
- EVENT\_EXPRESSION\_EVALUATION  
- Событие результат оценки выражений.  
+ EVENT_EXPRESSION_EVALUATION  
+ Это событие является результатом вычисления выражения.  
   
-## Заметки  
- Эти значения передаются в `dwAttrib` параметр   [Событие](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) метод.  
+## <a name="remarks"></a>Примечания  
+ Эти значения передаются в `dwAttrib` параметр [события](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) метод.  
   
- Эти значения могут объединяться с побитовый оператор `OR`.  
+ Эти значения могут объединяться с помощью битового оператора `OR`.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [ContinueFromSynchronousEvent](../Topic/IDebugEngine2::ContinueFromSynchronousEvent.md)   
- [Событие](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+ [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)   
+ [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

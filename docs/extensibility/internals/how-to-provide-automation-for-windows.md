@@ -1,44 +1,46 @@
 ---
-title: "Практическое руководство: автоматизации для Windows | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "автоматизация [Visual Studio SDK] окна инструментов"
-  - "окна инструментов, автоматизация"
+title: "Как: обеспечения автоматизации Windows | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- automation [Visual Studio SDK], tool windows
+- tool windows, automation
 ms.assetid: 512ab2a4-7987-4912-8f40-8804bf66f829
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 945eeb8b81ecb26d43da9528db154d133c4f868c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство: автоматизации для Windows
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Можно предоставить автоматизации для документа и окна инструментов.  Защита автоматизацию целесообразен, когда требуется сделать объекты автоматизации доступной в окне, а среда уже не предоставляет готовые объект автоматизации, поскольку она делает со списком задач.  
+# <a name="how-to-provide-automation-for-windows"></a>Как: обеспечения автоматизации Windows
+Чтобы обеспечить автоматизацию для окна документов и средств. Предоставление автоматизации рекомендуется всякий раз, когда требуется освободить объекты автоматизации на окно и среде не предоставить объект готовых автоматизации, как в список задач.  
   
-## Автоматизация для окна инструментов  
- Среда предоставляет автоматизацию в окне инструментов, возвращая стандарт <xref:EnvDTE.Window> объект как описано в следующей процедуре:  
+## <a name="automation-for-tool-windows"></a>Автоматизация для окон инструментов  
+ Среда предлагает автоматизации на окно инструментов, возвращая стандартного <xref:EnvDTE.Window> объекта, как описано в следующей процедуре:  
   
-#### Предоставить автоматизации для окна инструментов  
+#### <a name="to-provide-automation-for-tool-windows"></a>Для обеспечения автоматизации окна инструментов  
   
-1.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> метод через среду с  <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID> Вставить как  `VSFPROPID` параметр, который требуется возвратить  `Window` объект.  
+1.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> метод через среду с <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID> как `VSFPROPID` для получения `Window` объекта.  
   
-2.  Если вызывающий объект запрашивает объект автоматизации VSPackage\-специфического до окончания для окна инструментов <xref:EnvDTE.Window.Object%2A>calls среды  `QueryInterface` для  `IExtensibleObject`"  <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>или  `IDispatch` интерфейсы.  Оба `IExtensibleObject` и  `IVsExtensibleObject` обеспечьте a  <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject.GetAutomationObject%2A> метод.  
+2.  Если вызывающий объект запрашивает объект автоматизации конкретного VSPackage для вашего окна инструментов через <xref:EnvDTE.Window.Object%2A>, среда вызывает метод `QueryInterface` для `IExtensibleObject`, <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>, или `IDispatch` интерфейсов. Оба `IExtensibleObject` и `IVsExtensibleObject` предоставляют <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject.GetAutomationObject%2A> метод.  
   
-3.  Вызывается, когда среда `GetAutomationObject` передача метода  `NULL`в ответ, передавая обратно объект VSPackage\-специфического.  
+3.  Если затем вызывает среды `GetAutomationObject` метод передачи `NULL`, ответ, передавая обратно вашего VSPackage-объект.  
   
-4.  Если вызов `QueryInterface` для  `IExtensibleObject` и  `IVsExtensibleObject` сбой, после чего вызовы среды  `QueryInterface` для  `IDispatch`.  
+4.  Если вызов `QueryInterface` для `IExtensibleObject` и `IVsExtensibleObject` завершается ошибкой, то среда вызывает `QueryInterface` для `IDispatch`.  
   
-## Автоматизация для окон документов  
- Standard <xref:EnvDTE.Document> объект также доступен из среды, хотя редактор может иметь собственную реализацию  `T:EnvDTE.Document` объект путем реализации  `IExtensibleObject` интерфейс и реакция на  `GetAutomationObject`.  
+## <a name="automation-for-document-windows"></a>Модель автоматизации для окна документов  
+ Стандартный <xref:EnvDTE.Document> объект можно получить из среды, несмотря на то, что редактор может иметь собственную реализацию `T:EnvDTE.Document` объекта путем реализации `IExtensibleObject` интерфейс и реагирование на `GetAutomationObject`.  
   
- Кроме того, редактор может предоставить объект, извлеченный с помощью автоматизации VSPackage\-специфического <xref:EnvDTE.Document.Object%2A> метод путем реализации  `IVsExtensibleObject` OR  `IExtensibleObject` интерфейсы.  [Примеры VSSDK](../../misc/vssdk-samples.md) предоставляет объект автоматизации документ\-специфического RTF.  
+ Кроме того, редактор предоставляет зависящие от пакета VSPackage объект автоматизации, извлекаемые с помощью <xref:EnvDTE.Document.Object%2A> метод путем реализации `IVsExtensibleObject` или `IExtensibleObject` интерфейсов. [Примеры VSSDK](http://aka.ms/vs2015sdksamples) участвует объекта автоматизации документа RTF.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>

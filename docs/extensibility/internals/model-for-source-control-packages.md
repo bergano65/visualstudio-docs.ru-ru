@@ -1,41 +1,42 @@
 ---
-title: "Модель для пакетов управления версиями | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "модель управления версиями файлов [Visual Studio SDK]"
+title: "Для пакетов управления версиями | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: source control [Visual Studio SDK], model
 ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a8dacc0a3dfc230085c7575960238711d16d1ef8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Модель для пакетов управления версиями
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Следующая модель представляет пример реализации системы управления версиями.  В модели отображаются интерфейсы, которые необходимо реализовать и службы среды, необходимо вызвать.  Как и все службы, фактически вызовите методы указанного интерфейса, полученные через службы.  Имена классов, определенных для упрощения увидеть, как система управления версиями унесена.  
+# <a name="model-for-source-control-packages"></a>Модель для пакетов управления версиями
+Следующая модель представляет пример реализации элемента управления источника. В модели можно увидеть, интерфейсы, которые должны быть реализованы и среды служб, которые необходимо вызвать. Как и все службы фактически вызова методов определенный интерфейс, который можно получить посредством службы. Имена классов определяются для упрощения разделе способ выполнения системы управления версиями.  
   
- ![SCC&#95;TUP примеры](~/extensibility/internals/media/scc_tup.gif "SCC\_TUP")  
-Проект из системы управления версиями примера  
+ ![SCC &#95; Примеры TUP](../../extensibility/internals/media/scc_tup.gif "SCC_TUP")  
+Пример проекта системы управления версиями  
   
-## Интерфейсы  
- Можно реализовать систему управления версиями для новых типов проектов в Visual Studio, используя список интерфейсов, приведенных в следующей таблице.  
+## <a name="interfaces"></a>Интерфейсы  
+ Система управления версиями можно реализовать для вашего новых типов проектов в Visual Studio, используя список интерфейсов, показанные в следующей таблице.  
   
 |Интерфейс|Применение|  
-|---------------|----------------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Вызывается проектами и редакторами перед их сохранение изменений \(\) или измененные файлы.  Этот интерфейс, доступ к которому можно получить с помощью <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> служба.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Вызывается проектами запросить разрешение на добавление, удаление или переименуйте файл или каталог.  Этот интерфейс также вызывается проектами среде, когда ок добавить, удаляет или переименовывает действие завершено.  Он получить доступ с помощью <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> служба.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>|Реализуется любой сущностью, которая регистрирует быть получать извещения об изменениях проектов добавляют, переименовать или удалить файл или каталог.  Для регистрации для уведомления о событии, вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2.AdviseTrackProjectDocumentsEvents%2A>.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Вызывается проектами зарегистрировать с пакетом системы управления версиями и получения сведений о состоянии системы управления версиями.  Этот интерфейс, доступ к которому можно получить с помощью <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> служба.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Реализуется проектом отвечать на запросы системы управления версиями дополнительные сведения о файлах и получить параметры системы управления версиями, необходимые для файла проекта.|  
+|---------------|---------|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Вызывается по проектам и редакторы перед их сохранения или файлы изменение («грязные»). Этот интерфейс осуществляется с помощью <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> службы.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Вызывается проектами, чтобы запросить разрешение на добавление, удаление или переименование файла или каталога. Этот интерфейс также вызывается проекты, чтобы сообщить среде при утвержденных сложения, удаление или переименование действия выполнена. Осуществляется с помощью <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> службы.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>|Реализован Любая сущность, которая регистрируется для уведомления о проектах добавить, переименовать или удалить файл или каталог. Чтобы зарегистрироваться для уведомления о событии, вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2.AdviseTrackProjectDocumentsEvents%2A>.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Вызывается проектами для регистрации с помощью пакета управления версиями и получить сведения о состоянии элемента управления источника. Этот интерфейс осуществляется с помощью <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> службы.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Реализован проекта отвечает на запросы системы управления версиями для получения сведений о файлах и получить источник параметров управления, необходимых для файла проекта.|  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>   

@@ -1,77 +1,77 @@
 ---
-title: "DEBUG_REASON | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DEBUG_REASON"
-helpviewer_keywords: 
-  - "Перечисление DEBUG_REASON"
+title: "DEBUG_REASON | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: DEBUG_REASON
+helpviewer_keywords: DEBUG_REASON enumeration
 ms.assetid: ad2ee898-8648-4671-9078-d32873862346
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9607afd765e1ddbc9fb2be97a0b7694aed7d493d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# DEBUG_REASON
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Указывает причину, по которой был запущен процесс отладки.  
+# <a name="debugreason"></a>DEBUG_REASON
+Указывает, почему был запущен процесс для отладки.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-enum enum_DEBUG_REASON {  
-   DEBUG_REASON_ERROR         = 0,  
-   DEBUG_REASON_USER_LAUNCHED = 1,  
-   DEBUG_REASON_USER_ATTACHED = 2,  
-   DEBUG_REASON_AUTO_ATTACHED = 3,  
-   DEBUG_REASON_CAUSALITY     = 4  
+```cpp  
+enum enum_DEBUG_REASON {  
+   DEBUG_REASON_ERROR         = 0,  
+   DEBUG_REASON_USER_LAUNCHED = 1,  
+   DEBUG_REASON_USER_ATTACHED = 2,  
+   DEBUG_REASON_AUTO_ATTACHED = 3,  
+   DEBUG_REASON_CAUSALITY     = 4  
 };  
-typedef DWORD DEBUG_REASON;  
+typedef DWORD DEBUG_REASON;  
 ```  
   
-```c#  
-public enum enum_DEBUG_REASON {  
-   DEBUG_REASON_ERROR         = 0,  
-   DEBUG_REASON_USER_LAUNCHED = 1,  
-   DEBUG_REASON_USER_ATTACHED = 2,  
-   DEBUG_REASON_AUTO_ATTACHED = 3,  
-   DEBUG_REASON_CAUSALITY     = 4  
+```csharp  
+public enum enum_DEBUG_REASON {  
+   DEBUG_REASON_ERROR         = 0,  
+   DEBUG_REASON_USER_LAUNCHED = 1,  
+   DEBUG_REASON_USER_ATTACHED = 2,  
+   DEBUG_REASON_AUTO_ATTACHED = 3,  
+   DEBUG_REASON_CAUSALITY     = 4  
 };  
 ```  
   
-#### Параметры  
- DEBUG\_REASON\_ERROR  
- Неспецифичная произошла ошибка \(это значение используется как условие по умолчанию, если ни одна из других причин соответствия\).  
+#### <a name="parameters"></a>Параметры  
+ DEBUG_REASON_ERROR  
+ Произошла общая ошибка (используется как условие по умолчанию, если ни один из других причин, по размеру).  
   
- DEBUG\_REASON\_USER\_LAUNCHED  
- Процесс запущен по запроса пользователя.  
+ DEBUG_REASON_USER_LAUNCHED  
+ Процесс был запущен по запросу пользователя.  
   
- DEBUG\_REASON\_USER\_ATTACHED  
- Процесс уже\-хода был вложен пользователю.  
+ DEBUG_REASON_USER_ATTACHED  
+ Процесс выполнения уже был присоединен к пользователем.  
   
- DEBUG\_REASON\_AUTO\_ATTACHED  
- Процесс был вложен в автоматически, когда он запущен.  
+ DEBUG_REASON_AUTO_ATTACHED  
+ Процесс автоматически присоединяется к, при запуске.  
   
- DEBUG\_REASON\_CAUSALITY  
- Процесса запущено из\-за a *Jit\-отладка* \(JIT\), событие отладки.  
+ DEBUG_REASON_CAUSALITY  
+ Процесс был запущен из-за *непосредственно в момент* событий отладки (JIT).  
   
-## Заметки  
- Возвращает [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) метод.  
+## <a name="remarks"></a>Примечания  
+ Возвращенные [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) метод.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Перечисления](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)

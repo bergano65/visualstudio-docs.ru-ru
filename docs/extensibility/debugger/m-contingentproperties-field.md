@@ -1,39 +1,40 @@
 ---
-title: "m_contingentProperties поля | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "поле m_contingentProperties, класс задачи [обработчиков отладки платформы .NET Framework]"
+title: "m_contingentProperties поле | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: m_contingentProperties field, Task class [.NET Framework debug engines]
 ms.assetid: 49e8cb36-db39-440b-acda-a325651f1165
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 571dbe359773ad6a469e17c13546a39fad791dc0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# m_contingentProperties поля
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="mcontingentproperties-field"></a>m_contingentProperties поля
 Хранит дополнительные свойства <xref:System.Threading.Tasks.Task> объекта.  
   
- **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Пространство имен:**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Сборки:** mscorlib \(в библиотеке mscorlib.dll\)  
+ **Сборка:** mscorlib (в библиотеке mscorlib.dll)  
   
- Так как не удается получить доступ к внутреннему элементу из платформы .NET Framework, следующий синтаксис предоставляется общего промежуточного языка \(CIL\).  
+ Так как не может получить доступ к внутреннему элементу из платформы .NET Framework, синтаксиса предоставляется общего промежуточного языка (CIL).  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 .field assembly class System.Threading.Tasks.Task/ContingentProperties modreq(System.Runtime.CompilerServices.IsVolatile) m_contingentProperties  
 ```  
   
-## Заметки  
+## <a name="remarks"></a>Примечания  
   
-## См. также  
- [Класс Task](../../extensibility/debugger/task-class-internal-members.md)
+## <a name="see-also"></a>См. также  
+ [Task-класс](../../extensibility/debugger/task-class-internal-members.md)

@@ -1,53 +1,53 @@
 ---
-title: "Диалоговое окно &quot;Поиск потока&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Поиск потоков"
+title: "Диалоговое окно поиска потока | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Thread Search
 ms.assetid: 52ecb289-9b86-455c-a52b-3dcd3f7255bf
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9887fef89ea78665a64eead02f4d7ea11a28d890
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Диалоговое окно &quot;Поиск потока&quot;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Это диалоговое окно используется для поиска и выбора узла для конкретного потока в [представлении потоков](../debugger/threads-view.md).  Чтобы открыть это диалоговое окно, переместите фокус на окно представления **Потоки**.  Затем в меню **Поиск** выберите команду **Найти поток**.  
+# <a name="thread-search-dialog-box"></a>Диалоговое окно "Поиск потока"
+Используйте это диалоговое окно предназначено для поиска и выбора узла для конкретного потока в [представление "Потоки"](../debugger/threads-view.md). Чтобы открыть это диалоговое окно предназначено, переместите фокус элементу **потоков** окно просмотра. Выберите **найти поток** из **поиска** меню.  
   
  Доступны следующие параметры:  
   
  **Поток**  
- Идентификатор искомого потока.  
+ Идентификатор потока для поиска.  
   
  **Модуль**  
  Искомая строка модуля.  
   
- **Направление поиска: вверх или вниз**  
- Начальное направление поиска.  
+ **Направление поиска вверх или вниз**  
+ Исходное направление поиска.  
   
-## Связанные разделы  
+## <a name="related-sections"></a>Связанные разделы  
  [Диалоговое окно "Свойства потока"](../debugger/thread-properties-dialog-box.md)  
  Используется для отображения свойств потока, выбранного в представлении потоков.  
   
- [Справочник по Spy\+\+](../debugger/spy-increment-reference.md)  
- Включает разделы с описанием всех меню и диалоговых окон средства Spy\+\+.  
+ [Справочник по Spy++](../debugger/spy-increment-reference.md)  
+ Содержит разделы с описанием каждого Spy ++ меню и диалоговых окон поле.  
   
  [Поиск потока в представлении потоков](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
  Описание поиска определенного потока в представлении потоков.  
   
- [Представление потоков](../debugger/threads-view.md)  
- Отображает представление активных потоков в виде дерева  
+ [Представление "Потоки"](../debugger/threads-view.md)  
+ Отображает древовидное представление активных потоков  
   
- [Представления Spy\+\+](../debugger/spy-increment-views.md)  
- Описание представлений окон, сообщений, процессов и потоков в виде дерева в средстве Spy\+\+.  
+ [Представления Spy++](../debugger/spy-increment-views.md)  
+ Описание представления деревьев Spy ++ окон, сообщений, процессов и потоков.  
   
- [Использование Spy\+\+](../debugger/using-spy-increment.md)  
- Содержит краткое описание средства Spy\+\+ и инструкции по его использованию.
+ [Использование Spy++](../debugger/using-spy-increment.md)  
+ Представляет средство Spy ++ и объясняется, как использовать.

@@ -1,27 +1,30 @@
 ---
-title: "IDispatchEx::DeleteMemberByDispID | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDispatchEx::DeleteMemberByDispID | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDispatchEx.DeleteMemberByDispID
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "DeleteMemberByDispID — метод"
+helpviewer_keywords: DeleteMemberByDispID method
 ms.assetid: f61231e5-ba93-4ac3-bde8-d363548356b3
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 573eb60dc901e43706835c4d627b25bd54bbe751
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IDispatchEx::DeleteMemberByDispID
-Удаляет член DISPID.  
+# <a name="idispatchexdeletememberbydispid"></a>IDispatchEx::DeleteMemberByDispID
+Удаляет элемент по DISPID.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT DeleteMemberByDispID(  
@@ -29,24 +32,24 @@ HRESULT DeleteMemberByDispID(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `id`  
- Идентификатор элемента.  Использование `GetDispID` или `GetNextDispID` получить идентификатор диспетчера.  
+ Идентификатор элемента. Использует `GetDispID` или `GetNextDispID` для получения идентификатора диспетчеризации.  
   
-## Возвращаемое значение  
- Возвращать одно из следующих значений:  
+## <a name="return-value"></a>Возвращаемое значение  
+ Возвращает одно из следующих значений:  
   
 |||  
 |-|-|  
-|`S_OK`|Успех.|  
+|`S_OK`|Выполнено.|  
 |`S_FALSE`|Элемент существует, но не может быть удалена.|  
   
-## Заметки  
- Если элемент удален, то идентификатор DISPID должны оставаться допустимыми для `GetNextDispID`.  
+## <a name="remarks"></a>Примечания  
+ При удалении члена DISPID должен оставаться действительным для `GetNextDispID`.  
   
- Если элемент с заданным именем удаление и более поздних версий элемент создается повторно с тем же именем, то идентификатор DISPID должен быть одинаковым.  \(Как имена, которые отличаются только регистр "одинаковое" объект\- зависимые\).  
+ Если удаляется элемент с заданным именем и в дальнейшем воссоздать член с тем же именем, идентификатор DISPID должны совпадать. (Имена элементов, которые отличаются только регистром одинаковы ли «» зависит от объекта.)  
   
-## Пример  
+## <a name="example"></a>Пример  
   
 ```  
 BSTR bstrName;  
@@ -58,7 +61,7 @@ if (SUCCEEDED(pdex->GetDispID(bstrName, fdexNameCaseSensitive, &dispid)))
     pdex->DeleteMemberByDispID(dispid);  
 ```  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Интерфейс IDispatchEx](../../winscript/reference/idispatchex-interface.md)   
  [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

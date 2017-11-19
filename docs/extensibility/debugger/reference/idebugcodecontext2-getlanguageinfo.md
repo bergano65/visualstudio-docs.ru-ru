@@ -1,56 +1,56 @@
 ---
-title: "IDebugCodeContext2::GetLanguageInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCodeContext2::GetLanguageInfo"
-helpviewer_keywords: 
-  - "IDebugCodeContext2::GetLanguageInfo"
+title: "IDebugCodeContext2::GetLanguageInfo | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCodeContext2::GetLanguageInfo
+helpviewer_keywords: IDebugCodeContext2::GetLanguageInfo
 ms.assetid: 03002ef1-9fe6-44b6-b23b-ef7b86b2b21b
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b2b2f6f49b7ee8ebdf356a25bc2531aa2b8b9cf8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCodeContext2::GetLanguageInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Получает сведения о языке для этого контекста кода.  
+# <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
+Возвращает сведения о языке для этого контекста кода.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT GetLanguageInfo(   
-   BSTR* pbstrLanguage,  
-   GUID* pguidLanguage  
+```cpp  
+HRESULT GetLanguageInfo(   
+   BSTR* pbstrLanguage,  
+   GUID* pguidLanguage  
 );  
 ```  
   
-```c#  
-int GetLanguageInfo(   
-   ref string pbstrLanguage,  
-   ref Guid pguidLanguage  
+```csharp  
+int GetLanguageInfo(   
+   ref string pbstrLanguage,  
+   ref Guid pguidLanguage  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pbstrLanguage`  
- \[in, out\] возвращает строку, содержащую имя языка, например C\+\+ "."  
+ [in, out] Возвращает строку, содержащую имя языка, например «C++».  
   
  `pguidLanguage`  
- \[in, out\] возвращает идентификатор GUID для языка контекста кода, например `guidCPPLang`.  
+ [in, out] Возвращает идентификатор GUID для языка кода контекста, например, `guidCPPLang`.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Хотя бы один из параметров должен возвратить ненулевое значение.  
+## <a name="remarks"></a>Примечания  
+ По крайней мере один из параметров должен возвращать значение отличное от null.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

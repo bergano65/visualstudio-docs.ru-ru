@@ -1,66 +1,66 @@
 ---
-title: "IDebugCoreServer3::EnableAutoAttach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCoreServer3::EnableAutoAttach"
-helpviewer_keywords: 
-  - "IDebugCoreServer3::EnableAutoAttach"
+title: "IDebugCoreServer3::EnableAutoAttach | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCoreServer3::EnableAutoAttach
+helpviewer_keywords: IDebugCoreServer3::EnableAutoAttach
 ms.assetid: 06aa633b-263b-4e08-8844-9a52d5120b94
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 23c7faed077b8af442d81593808f9360995ba246
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCoreServer3::EnableAutoAttach
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Включает автоматический вложить обработчики для указанного debug.  
+# <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
+Включает автоматическое присоединение для указанного отладчики.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT EnableAutoAttach(  
-   GUID*     rgguidSpecificEngines,  
-   DWORD     celtSpecificEngines,  
-   LPCOLESTR pszStartPageUrl,  
-   BSTR*     pbstrSessionId  
+```cpp  
+HRESULT EnableAutoAttach(  
+   GUID*     rgguidSpecificEngines,  
+   DWORD     celtSpecificEngines,  
+   LPCOLESTR pszStartPageUrl,  
+   BSTR*     pbstrSessionId  
 );  
 ```  
   
-```c#  
-int EnableAutoAttach(  
-   Guid[]     rgguidSpecificEngines,  
-   uint       celtSpecificEngines,  
-   string     pszStartPageUrl,  
-   out string pbstrSessionId  
+```csharp  
+int EnableAutoAttach(  
+   Guid[]     rgguidSpecificEngines,  
+   uint       celtSpecificEngines,  
+   string     pszStartPageUrl,  
+   out string pbstrSessionId  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `rgguidSpecificEngines`  
- \[in\] массив идентификаторов GUID для каждого обработчика отладки, чтобы пометить как автоматическ\-вложащ.  
+ [in] Массив идентификаторов GUID для каждого ядра отладки для пометки как автоматическое присоединение.  
   
  `celtSpecificEngines`  
- \[in\] число обработчиков, определенных в пределах `rgguidSpecificEngines`.  
+ [in] Количество обработчиков, указанный в `rgguidSpecificEngines`.  
   
  `pszStartPageUrl`  
- \[in\] начальный URL\-адрес, используемый автоматическ\-вложа.  
+ [in] Начальный URL-адрес для использования при присоединении автоматически.  
   
  `pbstrSessionID`  
- \[out\] идентификатор сеанса, который был вложен.  
+ [out] Идентификатор сеанса, который был подключен автоматически.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  Один код ошибки `E_AUTO_ATTACH_NOT_REGISTERED`означает, что не была зарегистрирована фабрика класса автоматическ\-вложить.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки. Один код ошибки- `E_AUTO_ATTACH_NOT_REGISTERED`, указывающая, что фабрика класса auto-attach не был зарегистрирован.  
   
-## Заметки  
- При запуске программа, связанная с указанным url\-адресом, заданные обработчики отладки автоматически запускаются и вложенные.  
+## <a name="remarks"></a>Примечания  
+ При запуске программы, связанные с указанным URL-адрес, указанный отладчики автоматически запущен и присоединенного.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

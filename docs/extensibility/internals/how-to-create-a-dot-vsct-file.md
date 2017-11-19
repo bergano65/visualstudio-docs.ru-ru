@@ -1,65 +1,117 @@
 ---
-title: "Практическое руководство: создание. Файл Vsct | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "VSCT-файлы, создание"
+title: "Как: создать. Vsct-файле | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: VSCT files, creating
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
-caps.latest.revision: 19
-caps.handback.revision: 19
-ms.author: "gregvanl"
-manager: "ghogen"
+caps.latest.revision: "19"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f05461aa75a8088f758bd24ec5e73ccd407a8681
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Практическое руководство: создание. Файл Vsct
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Существует несколько способов создания файла конфигурации \(.vsct\) на основе XML таблицы команд Visual Studio.  
+# <a name="how-to-create-a-vsct-file"></a>Как: создать. Vsct-файла  
+  
+Существует несколько способов создания файла конфигурации (.vsct) на базе XML Visual Studio Command Table.  
   
 -   Можно создать новый пакет VSPackage в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] шаблона пакета.  
   
--   Компилятор конфигурации таблицы команд на основе XML, Vsct.exe, можно использовать для создания файла из существующего файла .ctc.  
+-   Компилятор конфигурации таблицы команд на основе XML, Vsct.exe, можно использовать для создания файла из существующего файла ctc.  
   
--   Vsct.exe можно использовать для создания файла .vsct из существующего файла .cto.  
+-   Vsct.exe можно использовать для создания vsct-файл из существующего файла cto.  
   
--   Можно вручную создать новый файл .vsct.  
+-   Можно вручную создать vsct-файл.  
   
- В этом разделе объясняется, как вручную создать новый файл .vsct.  
+ В этом разделе объясняется, как вручную создать vsct-файл.  
   
-### Чтобы вручную создать новый файл .vsct  
+### <a name="to-manually-create-a-new-vsct-file"></a>Чтобы вручную создать vsct-файл  
   
 1.  Запустите [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-2.  На **файл** наведите указатель мыши на **New**, а затем нажмите кнопку **файл**.  
+2.  На **файл** последовательно выберите пункты **New**, а затем нажмите кнопку **файл**.  
   
-3.  В **шаблоны** панели, щелкните **XML\-файл** и нажмите кнопку **Откройте**.  
+3.  В **шаблоны** области, нажмите кнопку **XML-файл** и нажмите кнопку **откройте**.  
   
-4.  На **представление** меню, щелкните **окно свойств** для отображения свойств XML\-файла.  
+4.  На **представление** меню, нажмите кнопку **окно свойств** для отображения свойств XML-файла.  
   
-5.  В **Свойства** окно, нажмите кнопку обзора \(...\) Кнопка для свойства схемы.  
+5.  В **свойства** окно, нажмите кнопку обзора (...) для свойства схемы.  
   
-6.  В списке XSD\-схемы выберите схему vsct.xsd. Если нет в списке, нажмите кнопку **Добавить** и найдите файл на локальный диск. Щелкните **ОК** по окончании.  
+6.  В списке XSD-схемы выберите схему vsct.xsd. Если он отсутствует в списке, нажмите кнопку **добавить** и найдите файл на локальный диск. Нажмите кнопку **ОК** по окончании.  
   
-7.  В XML\-файл, введите `<CommandTable` и нажмите клавишу TAB. Закрыть тег, введя `>`.  
+7.  В XML-файле введите `<CommandTable` и нажмите клавишу TAB. Закрыть тег, введя `>`.  
   
-     Будет создан файл основные .vsct.  
+     Это создает базовый vsct-файл.  
   
-8.  Заполнить элементы XML\-файл, который требуется добавить, в соответствии с [схемы VSCT](../../extensibility/vsct-xml-schema-reference.md). Дополнительные сведения см. в разделе [Разработка. Vsct\-файлы](../../extensibility/internals/authoring-dot-vsct-files.md).  
+8.  Заполнять элементы XML-файл, который требуется добавить, в соответствии с [VSCT схемы](../../extensibility/vsct-xml-schema-reference.md). Дополнительные сведения см. в разделе [Authoring. Файлы Vsct](../../extensibility/internals/authoring-dot-vsct-files.md)  
   
-## Компиляция кода  
- Добавления в проект файла .vsct не вызывает его компиляции. Его необходимо включить в процесс построения.  
+<a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file"></a>
+
+## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Практическое руководство. Создание файла VSCT на основе существующего файла CTC  
   
-### Чтобы добавить файл .vsct для компиляции проекта  
+Вы можете создать файл VSTC на основе XML из существующего исходного CTC-файла таблицы команд. Таким образом, можно воспользоваться преимуществами нового основанный на XML [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] формата компилятора таблицы (VSCT) команд.  
   
-1.  Откройте файл проекта в редакторе. Если проект загружен, необходимо его выгрузить сначала.  
+### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>Создание файла VSCT на основе файла CTC  
   
-2.  Добавить [элемент ItemGroup](../../msbuild/itemgroup-element-msbuild.md) содержит элемент VSCTCompile, как показано в следующем примере.  
+1.  Получите копию языка Perl.  
+  
+2.  Получите копию скрипта ConvertCTCToVSCT.pl, Perl, обычно находится в  *\<путь установки Visual Studio SDK >*папки \VisualStudioIntegration\Tools\bin.  
+  
+3.  Получите копию исходного файла CTC, который нужно преобразовать.  
+  
+4.  Поместите файлы в один каталог.  
+  
+5.  В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] окне командной строки, перейдите в каталог.  
+  
+6.  Тип  
+  
+    ```  
+    perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct  
+    ```  
+  
+     Здесь PkgCmd.ctc — это имя файла CTC, а PkgCmd.vsct — имя файла VSCT, который нужно создать.  
+  
+     Будет создан исходный VSCT-файл таблицы команд XML. Этот файл можно скомпилировать с помощью Vsct.exe, компилятора VSCT, как и любой другой файл VSCT.  
+  
+    > [!NOTE]
+    >  Чтобы повысить удобочитаемость файла VSCT, можно переформатировать комментарии XML.  
+  
+<a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
+
+## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Практическое руководство. Создание файла VSCT на основе существующего файла CTO  
+  
+Вы можете создать файл VSTC на основе XML из существующего двоичного CTO-файла. Это позволяет воспользоваться преимуществами нового формата компилятора таблицы команд. Этот процесс работает, даже если файл CTO был скомпилирован из файла CTC. Файл VSCT можно изменить и скомпилировать в другой файл CTO.  
+  
+### <a name="to-create-a-vsct-file-from-a-cto-file"></a>Создание файла VSCT на основе файла CTO  
+  
+1.  Получите копии файла CTO и соответствующего файла CTSYM.  
+  
+2.  Поместите файлы в тот же каталог, что и компилятор vsct.exe.  
+  
+3.  В командной строке Visual Studio перейдите в каталог, содержащий файлы CTO и CTSYM.  
+  
+4.  Введите **vsct.exe** *ctofilename***.cto** *vsctfilename***.vsct -S***symfilename***.ctsym**.  
+  
+     `ctofilename`Имя файла cto `vsctfilename` имя файла vsct, который нужно создать, и `symfilename` имя файла ctsym.  
+  
+     В результате этого процесса будет создан файл компилятора таблицы команд XML. Этот файл можно изменить и скомпилировать с помощью vsct.exe, компилятора VSCT, как и любой другой файл VSCT.  
+  
+## <a name="compiling-the-code"></a>Компиляция кода  
+ Просто добавив vsct-файл в проект не приводит к его компиляции. Его необходимо включить в процесс построения.  
+  
+### <a name="to-add-a-vsct-file-to-project-compilation"></a>Чтобы добавить vsct-файл для компиляции проекта  
+  
+1.  Откройте файл проекта в редакторе. При загрузке проекта сначала его необходимо выгрузить.  
+  
+2.  Добавить [элемент ItemGroup](../../msbuild/itemgroup-element-msbuild.md) , содержит элемент VSCTCompile, как показано в следующем примере.  
   
     ```xml  
     <ItemGroup>  
@@ -70,9 +122,9 @@ manager: "ghogen"
   
     ```  
   
-     Элемент ResourceName всегда должно быть присвоено `Menus.ctmenu`.  
+     Элемент ResourceName должно всегда быть присвоено `Menus.ctmenu`.  
   
-3.  Если проект содержит файл .resx, добавьте EmbeddedResource элемента, который содержит элемент MergeWithCTO, как показано в следующем примере.  
+3.  Если проект содержит файл RESX, добавьте EmbeddedResource элементом, который содержит элемент MergeWithCTO, как показано в следующем примере.  
   
     ```xml  
     <EmbeddedResource Include="VSPackage.resx">  
@@ -82,21 +134,19 @@ manager: "ghogen"
   
     ```  
   
-     Эта разметка должна находиться внутри ItemGroup\-элемент, содержащий внедренные ресурсы.  
+     Эта разметка должна находиться внутри элемент ItemGroup, содержащий внедренные ресурсы.  
   
-4.  Открыть файл пакета, обычно называется *ProjectName*Package.cs или *ProjectName*Package.vb в редакторе.  
+4.  Открыть файл пакета, обычно с именем *ProjectName*Package.cs или *ProjectName*Package.vb в редакторе.  
   
-5.  Добавьте атрибут ProvideMenuResource в класс пакета, как показано в следующем примере.  
+5.  Добавление атрибута ProvideMenuResource класс пакета, как показано в следующем примере.  
   
-    ```c#  
+    ```csharp  
     [ProvideMenuResource("Menus.ctmenu", 1)]  
     ```  
   
      Значение первого параметра должно соответствовать значение атрибута ResourceName, заданных в файле проекта.  
   
-## См. также  
- [Разработка. Vsct\-файлы](../../extensibility/internals/authoring-dot-vsct-files.md)   
- [Таблицы команд Visual Studio \(. Файлы Vsct\)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Практическое руководство. Создание файла VSCT на основе существующего файла CTC](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file.md)   
- [Практическое руководство. Создание файла VSCT на основе существующего файла CTO](../Topic/How%20to:%20Create%20a%20.Vsct%20File%20from%20an%20Existing%20.Cto%20File.md)   
- [Справочник по схемам VSCT XML](../../extensibility/vsct-xml-schema-reference.md)
+## <a name="see-also"></a>См. также  
+ [Разработка. Файлы Vsct](../../extensibility/internals/authoring-dot-vsct-files.md)   
+ [Таблицы команд Visual Studio (. Файлы Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+ [Справочник по схемам XML VSCT](../../extensibility/vsct-xml-schema-reference.md)

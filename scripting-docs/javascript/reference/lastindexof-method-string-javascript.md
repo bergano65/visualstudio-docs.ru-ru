@@ -1,60 +1,62 @@
 ---
-title: "Метод lastIndexOf (строка) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "lastIndexOf"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "метод lastIndexOf, строка"
-  - "строка, метод lastIndexOf"
+title: "Метод lastIndexOf (строка) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: lastIndexOf
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- lastIndexOf method, string
+- string, lastIndexOf method
 ms.assetid: 1ed36ccd-0f0b-4f16-be45-0567207670af
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0fa0f35e970435a4d0296493c20afdeaac128cae
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Метод lastIndexOf (строка) (JavaScript)
+# <a name="lastindexof-method-string-javascript"></a>Метод lastIndexOf (строка) (JavaScript)
 Возвращает последнее вхождение подстроки в строке.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 strObj.lastIndexOf(substring[, startindex])  
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `strObj`  
- Обязательный.  Объект `String` или строковый литерал.  
+ Обязательный. Объект `String` или строковый литерал.  
   
  `substring`  
- Обязательный.  Искомая подстрока.  
+ Обязательный. Подстрока для поиска.  
   
  `startindex`  
- Необязательный.  Индекс, с которого начинается поиск.  Если индекс опущен, поиск начинается с конца строки.  
+ Необязательно. Индекс, с которой начинается поиск. Если не указано, поиск начинается с конца проверяемой строки.  
   
-## Заметки  
- Метод **lastIndexOf** возвращает целочисленное значение, указывающее начало подстроки в объекте `String`.  Если подстрока не найдена, возвращается \-1.  
+## <a name="remarks"></a>Примечания  
+ **LastIndexOf** метод возвращает целочисленное значение, указывающее начало подстроки в пределах `String` объекта. Если подстрока не найдена, возвращается значение -1.  
   
- Если значение `startindex` является отрицательным, `startindex` считается равным нулю.  Если оно больше наибольшего индекса позиции символа, оно обрабатывается как наибольший возможный индекс.  
+ Если значение `startindex` отрицательно, то `startindex` рассматривается как ноль. Если оно больше наибольшего индекса положения знака, оно рассматривается как наибольший возможный индекс.  
   
- Поиск выполняется начиная с последнего символа в строке.  В остальном данный метод идентичен методу **indexOf**.  
+ Поиск выполняется начиная с последнего символа в строке. В противном случае этот метод идентичен **indexOf**.  
   
- В следующем примере показано использование метода **lastIndexOf**.  
+ Следующий пример иллюстрирует использование **lastIndexOf** метод.  
   
-```javascript  
+```JavaScript  
 var str = "time, time";  
   
 var s = "";  
@@ -69,10 +71,10 @@ document.write(s);
 // abc is at position -1  
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **Относится к**: [Объект String](../../javascript/reference/string-object-javascript.md)  
+ **Применяется к**: [строковый объект](../../javascript/reference/string-object-javascript.md)  
   
-## См. также  
- [Метод indexOf \(строка\)](../../javascript/reference/indexof-method-string-javascript.md)
+## <a name="see-also"></a>См. также  
+ [Метод indexOf (строка)](../../javascript/reference/indexof-method-string-javascript.md)

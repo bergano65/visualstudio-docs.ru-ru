@@ -1,43 +1,44 @@
 ---
-title: "IDebugTypeFieldBuilder2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Интерфейс IDebugTypeFieldBuilder2"
+title: "IDebugTypeFieldBuilder2 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugTypeFieldBuilder2 interface
 ms.assetid: 23911c5b-2bbf-4734-9976-87a0bd6ea36c
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: cee126ad63e0a50ec2b859c470c06a4f2ae07600
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugTypeFieldBuilder2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Расширяет IDebugTypeFieldBuilder возможность создания типы массива.  
+# <a name="idebugtypefieldbuilder2"></a>IDebugTypeFieldBuilder2
+Расширяет **IDebugTypeFieldBuilder** возможность создания массивов.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IDebugTypeFieldBuilder2 : IDebugTypeFieldBuilder  
 ```  
   
-## Замечания для вызывающих объектов  
- Этот интерфейс может быть получен от поставщика символов.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Этот интерфейс можно получить от поставщика символа.  
   
-## Методы  
- в дополнение к методам на IDebugTypeFieldBuilder интерфейс, этот интерфейс реализован следующий метод:  
+## <a name="methods"></a>Методы  
+ В дополнение к методам на [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md) интерфейс, этот интерфейс реализует следующий метод:  
   
 |Метод|Описание|  
-|-----------|--------------|  
-|[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|Создает массив указанного типа и размера.|  
+|------------|-----------------|  
+|[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|Создает массив заданного типа и размера.|  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: Sh.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  

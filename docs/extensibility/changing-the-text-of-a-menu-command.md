@@ -1,31 +1,33 @@
 ---
-title: "Изменение текста команды меню | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Изменение текста меню"
-  - "текст меню"
-  - "команды, изменение текста"
+title: "Изменение текста команды меню | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- menus, changing text
+- text, menus
+- commands, changing text
 ms.assetid: 5cb676a0-c6e2-47e5-bd2b-133dc8842e46
-caps.latest.revision: 25
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 25
+caps.latest.revision: "25"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 65e7d3d4e3d9a4034a948ee0fa094efbb45b6a93
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# Изменение текста команды меню
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Ниже показано, как изменить текстовую метку для команды меню с помощью <xref:System.ComponentModel.Design.IMenuCommandService> службы.  
+# <a name="changing-the-text-of-a-menu-command"></a>Изменение текста команды меню
+Ниже показано, как изменить текстовую подпись команды меню с помощью <xref:System.ComponentModel.Design.IMenuCommandService> службы.  
   
-## Изменение метки команды меню с IMenuCommandService  
+## <a name="changing-a-menu-command-label-with-the-imenucommandservice"></a>Изменение метки меню команд с IMenuCommandService  
   
-1.  Создайте проект VSIX с именем `MenuText` с командой меню с именем **ChangeMenuText**. Для получения дополнительной информации см. [Создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Создайте проект VSIX с именем `MenuText` с помощью команды меню с именем **ChangeMenuText**. Дополнительные сведения см. в разделе [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
 2.  Добавьте в файл .vstc `TextChanges` флаг команды меню, как показано в следующем примере.  
   
@@ -42,24 +44,24 @@ caps.handback.revision: 25
   
 3.  В файле ChangeMenuText.cs создайте обработчик событий, который будет вызываться перед отображением команды меню.  
   
-    ```c#  
+    ```csharp  
     private void OnBeforeQueryStatus(object sender, EventArgs e)  
     {  
         var myCommand = sender as OleMenuCommand;  
         if (null != myCommand)  
         {  
             myCommand.Text = "New Text";  
-                    }  
+        }  
     }  
     ```  
   
-     Можно также обновить состояние команды меню в этом методе, изменив <xref:System.ComponentModel.Design.MenuCommand.Visible%2A>, <xref:System.ComponentModel.Design.MenuCommand.Checked%2A>, и <xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> Свойства <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> объекта.  
+     Состояние команды меню в этот метод также можно обновить, изменив <xref:System.ComponentModel.Design.MenuCommand.Visible%2A>, <xref:System.ComponentModel.Design.MenuCommand.Checked%2A>, и <xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> свойства <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> объекта.  
   
-4.  В конструкторе ChangeMenuText замените код, который создает исходный код инициализации и размещения команды <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> \(а не `MenuCommand`\), которые представляет команды меню, добавляет <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> обработчик событий и предоставляет команду меню, чтобы служба команд меню.  
+4.  В конструкторе ChangeMenuText замените код, который создает исходный код инициализации и размещения команды <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> (а не `MenuCommand`), представляющее команду меню, добавляет <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> обработчик событий и предоставляет меню Команда службу команд меню.  
   
-     Вот, что оно должно выглядеть.  
+     Вот, оно должно иметь вид:  
   
-    ```c#  
+    ```csharp  
     private ChangeMenuText(Package package)  
     {  
         if (package == null)  
@@ -84,6 +86,6 @@ caps.handback.revision: 25
   
 5.  Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр Visual Studio.  
   
-6.  На **средства** меню вы должны увидеть команды с именем **вызова ChangeMenuText**.  
+6.  На **средства** меню появится команда **ChangeMenuText вызова**.  
   
-7.  Выберите команду. Появится окно сообщения объявляет о вызов MenuItemCallback. После закрытия окна сообщения, вы увидите, что теперь имеет имя команды в меню Сервис **новый текст**.
+7.  Выберите команду. Вы увидите поле сообщение объявляет о том, что MenuItemCallback был вызван. После закрытия окна сообщения, вы увидите, что теперь имя команды меню "Сервис" — **новый текст**.

@@ -1,63 +1,63 @@
 ---
-title: "PENDING_BP_STATE_INFO | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "PENDING_BP_STATE_INFO"
-helpviewer_keywords: 
-  - "Структура PENDING_BP_STATE_INFO"
+title: "PENDING_BP_STATE_INFO | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: PENDING_BP_STATE_INFO
+helpviewer_keywords: PENDING_BP_STATE_INFO structure
 ms.assetid: 4d73ceff-43f9-4e95-8dba-88e1fab2def3
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 909385cbf2b5fceb8d55ebe24aba763ccdf7e98a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# PENDING_BP_STATE_INFO
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Содержит сведения о состоянии точки останова, готовы привязать к местоположению кода.  
+# <a name="pendingbpstateinfo"></a>PENDING_BP_STATE_INFO
+Содержит сведения о состоянии точки останова, можно привязать расположение кода.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-typedef struct _tagPENDING_BP_STATE_INFO {   
-   PENDING_BP_STATE       state;  
-   PENDING_BP_STATE_FLAGS flags;  
+```cpp  
+typedef struct _tagPENDING_BP_STATE_INFO {   
+   PENDING_BP_STATE       state;  
+   PENDING_BP_STATE_FLAGS flags;  
 } PENDING_BP_STATE_INFO;  
 ```  
   
-```c#  
-public struct PENDING_BP_STATE_INFO {   
-   public uint state;  
-   public uint flags;  
+```csharp  
+public struct PENDING_BP_STATE_INFO {   
+   public uint state;  
+   public uint flags;  
 };  
 ```  
   
-## Члены  
- Состояние  
- Значение [PENDING\_BP\_STATE](../../../extensibility/debugger/reference/pending-bp-state.md) перечисление, указывающее состояние отложенной точки останова.  
+## <a name="members"></a>Члены  
+ состояние  
+ Значение из [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md) перечисления, указывающее состояние ожидающая точка останова.  
   
  флаги  
- Комбинация из пометит [PENDING\_BP\_STATE\_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md) перечисление, указывающее virtualized ли точка останова.  
+ Сочетание флагов из [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md) перечисления, которое указывает, виртуализируется ли точка останова.  
   
-## Заметки  
- Эта структура передается [GetState](../Topic/IDebugPendingBreakpoint2::GetState.md) метод, в котором он заполнен.  
+## <a name="remarks"></a>Примечания  
+ Эта структура передается [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md) метод, где он заполняется.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Структур и объединений](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [GetState](../Topic/IDebugPendingBreakpoint2::GetState.md)   
- [PENDING\_BP\_STATE](../../../extensibility/debugger/reference/pending-bp-state.md)   
- [PENDING\_BP\_STATE\_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md)
+ [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)   
+ [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md)   
+ [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md)

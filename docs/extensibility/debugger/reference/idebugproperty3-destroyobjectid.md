@@ -1,48 +1,48 @@
 ---
-title: "IDebugProperty3::DestroyObjectID | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProperty3::DestroyObjectID"
-helpviewer_keywords: 
-  - "IDebugProperty3::DestroyObjectID"
+title: "IDebugProperty3::DestroyObjectID | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProperty3::DestroyObjectID
+helpviewer_keywords: IDebugProperty3::DestroyObjectID
 ms.assetid: bd08f356-cc67-4717-98c9-c3d00cad2040
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0ceae63b77f0797e0781318cfa362e735d995eb3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProperty3::DestroyObjectID
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Уничтожает уникальный идентификатор, связанный с это свойство, указывающее, что вызывающий не имеет значения, чтобы определить это свойство однозначно от всех остальных свойств.  
+# <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
+Уничтожает уникальный идентификатор, связанный с этим свойством, указывающее, что вызывающий объект больше не прослушивает для идентификации этого свойства уникально от всех других свойств.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-HRESULT DestroyObjectID(  
-   void  
+HRESULT DestroyObjectID(  
+   void  
 );  
 ```  
   
-```c#  
-int DestroyObjectID();  
+```csharp  
+int DestroyObjectID();  
 ```  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Если обработчик отладки не требуется поддерживать уникальных идентификаторов для свойства \(потому что он уже отслеживает их уникальными внутри\), он может просто возвращать `E_NOTIMPL` для данного метода.  
+## <a name="remarks"></a>Примечания  
+ Если отладчик не требуется для поддержки уникальных идентификаторов для свойства (так как он уже отслеживает их однозначно внутренне), то он может просто возвращать `E_NOTIMPL` для этого метода.  
   
- Уникальные идентификаторы создаются с вызовом [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) когда вызывающий метод необходимо убедиться в том, что это свойство однозначно определяется среди всех других свойств.  
+ Уникальные идентификаторы создаются с помощью вызова [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) метод, когда вызывающий объект хочет убедитесь, что это свойство однозначно идентифицируется среди других свойств.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)

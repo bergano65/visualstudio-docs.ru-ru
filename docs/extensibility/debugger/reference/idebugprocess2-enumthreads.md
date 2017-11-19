@@ -1,55 +1,55 @@
 ---
-title: "IDebugProcess2::EnumThreads | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcess2::EnumThreads"
-helpviewer_keywords: 
-  - "IDebugProcess2::EnumThreads"
+title: "IDebugProcess2::EnumThreads | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProcess2::EnumThreads
+helpviewer_keywords: IDebugProcess2::EnumThreads
 ms.assetid: 05677385-7a7f-4545-8438-af00dde85db0
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6e1cc33d1a84f5f8a3cd186b148f57e296a350f4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProcess2::EnumThreads
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Возвращает список всех потоков в процессе.  
+# <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
+Получает список всех потоков, выполняемых в процессе.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
-HRESULT EnumThreads(  
-   IEnumDebugThreads2** ppEnum  
+```cpp  
+HRESULT EnumThreads(  
+   IEnumDebugThreads2** ppEnum  
 );  
 ```  
   
-```c#  
-int EnumThreads(  
-   out IEnumDebugThreads2 ppEnum  
+```csharp  
+int EnumThreads(  
+   out IEnumDebugThreads2 ppEnum  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `ppEnum`  
- \[out\] возвращает IEnumDebugThreads2 объект, содержащий список всех потоков в процессе во все программы.  
+ [out] Возвращает [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) , содержащий список всех потоков во всех приложениях в процессе.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Этот метод перечисляет потоки, работающие в каждой программе, а затем объединять их в представлении потоков процесса.  Один поток может выполняться в нескольких программах; этот метод перечисляет этот поток только один раз.  
+## <a name="remarks"></a>Примечания  
+ Этот метод перечисляет потоками, выполняющимися в каждой программе и затем объединяет их в представление "процесс" потоков. Один поток может работать в разных программах; Этот метод перечисляет только один раз для этого потока.  
   
- Этот метод представляет список потоков процесса без дубликатов.  В противном случае чтобы вывести потоки, работающие в определенной программы, используйте [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) метод.  
+ Этот метод выводит список потоков процесса без дубликатов. В противном случае для перечисления потоки, работающие в конкретной программы, используйте [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) метод.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   

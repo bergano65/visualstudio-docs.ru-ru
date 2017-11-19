@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptProperty::GetProperty | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IActiveScriptProperty::GetProperty | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptProperty.GetProperty
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "GetProperty — метод, IActiveScriptProperty — интерфейс"
+helpviewer_keywords: GetProperty method, IActiveScriptProperty interface
 ms.assetid: a43383db-b148-4d76-83bd-4f0e899b7cb1
-caps.latest.revision: 24
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d55fb2d816931a74827d318e13860b3f97f0fd23
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptProperty::GetProperty
-Возвращает свойство, заданное параметром.  
+# <a name="iactivescriptpropertygetproperty"></a>IActiveScriptProperty::GetProperty
+Возвращает свойство, которое указано в параметре.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 HRESULT GetProperty(  
@@ -34,9 +37,9 @@ HRESULT GetProperty(
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `dwProperty`  
- Значение возвращаемого свойства.  
+ Чтобы получить значение свойства.  
   
  `pvarIndex`  
  Не используется.  
@@ -44,30 +47,30 @@ HRESULT GetProperty(
  `pvarValue`  
  Значение свойства.  
   
- Значения, разрешенные для `dwProperty` описаны в таблице ниже.  
+ Допускаются значения для `dwProperty` описаны в следующей таблице.  
   
 |Константа|Значение|Значение|  
-|---------------|--------------|--------------|  
-|SCRIPTPROP\_INTEGERMODE|0x00003000|Заставляет обработчик скриптов для разбиения в режиме целого числа вместо режима с плавающей запятой.|  
-|SCRIPTPROP\_STRINGCOMPAREINSTANCE|0x00003001|Разрешает строка сравнение функции обработчика скриптов, который требуется заменить.|  
-|SCRIPTPROP\_ABBREVIATE\_GLOBALNAME\_RESOLUTION|0x70000002|Уведомляет обработчик скриптов, что никакие другие обработчики сценариев не существуют в глобальный объект.|  
-|SCRIPTPROP\_INVOKEVERSIONING|0x00004000|Заставляет обработчик скриптов [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] для выбора набора функций языка для поддержки.  По умолчанию набор функций языков, поддерживаемых [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] обработчиком сценариев является эквивалентом функции языка установки, которая отображается в версию 5.7 обработчика скриптов [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].|  
+|--------------|-----------|-------------|  
+|SCRIPTPROP_INTEGERMODE|0x00003000|Вызывает обработчик скриптов для разделения в целое число со знаком режиме вместо режима с плавающей точкой.|  
+|SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|Позволяет функции сравнения строки замены обработчика сценариев.|  
+|SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION|0x70000002|Информирует о том, что нет других обработчиков сценариев, которые влияют на глобальный объект обработчика скриптов.|  
+|SCRIPTPROP_INVOKEVERSIONING|0x00004000|Принудительно начинает [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] обработчик скриптов для выбора набора возможностей языка для поддержки. Набор функций языка, поддерживаемые по умолчанию [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] обработчик скриптов эквивалентно набор функций языка, которая появилась в версии 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] обработчика сценариев.|  
   
-## Возвращаемое значение  
- Возвращать одно из следующих значений:  
+## <a name="return-value"></a>Возвращаемое значение  
+ Возвращает одно из следующих значений:  
   
 |Возвращаемое значение|Значение|  
-|---------------------------|--------------|  
-|`S_OK`|Успех.|  
+|------------------|-------------|  
+|`S_OK`|Выполнено.|  
 |`E_INVALIDARG`|Аргумент является недопустимым.|  
-|`E_UNEXPECTED`|Вызов не ожидался \(например, обработчик скриптов еще не был загружен или не был инициализирован\).|  
+|`E_UNEXPECTED`|Вызов не ожидалось (например, обработчик сценариев еще не загрузки или инициализации).|  
   
-## Заметки  
- Основное приложение может использовать свойство SCRIPTPROP\_ABBREVIATE\_GLOBALNAME\_RESOLUTION для оповещения обработчик скриптов, что никакие другие обработчики сценариев не существуют в глобальный объект.  Например, Internet Explorer может информировать обработчик [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], отображаемой, что страница содержит только скрипты [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  Таким образом, только обработчик [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] может добавлять новые свойства к глобальным окно объекта, и обработчик visual basic scripting edition \(VBScript\), чтобы сделать эти же.  Обработчик может пропустить этот пометить или может использовать его, чтобы оптимизировать управление новых элементов, добавитьы к глобальному объекту.  
+## <a name="remarks"></a>Примечания  
+ Узел может использовать свойство SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION для информирования обработчика скриптов, что нет других обработчиков сценариев, которые влияют на глобальный объект. Например, Internet Explorer может сообщать [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] engine, который готовится к просмотру страницы содержит только [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] сценариев. Таким образом только [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] engine можно добавлять новые свойства в окне глобальный объект, и нет ни одному обработчику Visual Basic Scripting Edition (VBScript) сделать то же самое. Обработчик можно пропустить этот флаг, или можно использовать его для оптимизации управления новых элементов, которые были добавлены с глобальным объектом.  
   
- Основное приложение может использовать свойство SCRIPTPROP\_INVOKEVERSIONING для выбора набора функций языка для поддержки, когда обработчик скриптов [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] запуска.  Если это свойство установлено значение 1 \(SCRIPTLANGUAGEVERSION\_5\_7\), доступных языковых функций совпадают, какие те, которые появились в версии 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] обработчика скриптов.  Если он установлен в значение 2 \(SCRIPTLANGUAGEVERSION\_5\_8\), то функции доступных языковых те, которые появились в версии 5.7 в дополнение к тем, которые были добавитьы в версии 5.8.  По умолчанию это свойство установлено значение 0 \(SCRIPTLANGUAGEVERSION\_DEFAULT\), которое эквивалентно set функции языка, которая отображается в версию 5.7, если основное приложение не будет поддерживать различие по умолчанию расширений функциональности.  Например, 8 Internet Explorer выбирает в функции языка [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] поддерживаемые по умолчанию обработчика скриптов [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] версии 5.8, когда режим документа в Internet Explorer 8 "режим стандартов Internet Explorer 8".  
+ Узел может использовать свойство SCRIPTPROP_INVOKEVERSIONING Выбор набора возможностей языка, чтобы быть поддерживаются, если [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] работы обработчика сценариев. Если это свойство имеет значение 1 (SCRIPTLANGUAGEVERSION_5_7), доступные языковые возможности совпадают, появившиеся в версии 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] обработчика сценариев. Если он имеет значение 2 (SCRIPTLANGUAGEVERSION_5_8), доступные языковые функции, те, которые были доступны в версии 5.7 в дополнение к функциям, которые были добавлены в версии 5.8. По умолчанию это свойство имеет значение 0 (SCRIPTLANGUAGEVERSION_DEFAULT), что эквивалентно набор функций языка, которая появилась в версии 5.7, если узел не поддерживает поведение по умолчанию. Например, Internet Explorer 8 переводит в [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] возможности языка, поддерживаемые версией 5.8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] обработчик скриптов по умолчанию, если документ для Internet Explorer 8 используется режим «Internet Explorer 8, стандартный режим».  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Определение совместимости документов](http://msdn.microsoft.com/library/cc288325)   
- [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)   
+ [Iactivescriptproperty —](../../winscript/reference/iactivescriptproperty.md)   
  [Сведения о версии](../../javascript/reference/javascript-version-information.md)

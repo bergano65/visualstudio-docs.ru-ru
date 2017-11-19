@@ -1,65 +1,65 @@
 ---
-title: "IDebugPort2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPort2"
-helpviewer_keywords: 
-  - "Интерфейс IDebugPort2"
+title: "IDebugPort2 | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPort2
+helpviewer_keywords: IDebugPort2 interface
 ms.assetid: 8fd87f05-a950-4d14-b925-98be29d4facc
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b40a141b90489fa65ffc5f29b363d3d647ca4cb8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPort2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugport2"></a>IDebugPort2
 Этот интерфейс представляет порт отладки на компьютере.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
 IDebugPort2 : IUnknown  
 ```  
   
-## Примечания по реализации  
- Пользовательский поставщик порта, реализующий этот интерфейс, чтобы представить порт отладки на компьютере.  
+## <a name="notes-for-implementers"></a>Примечания для разработчиков  
+ Поставщик пользовательский порт реализует этот интерфейс для представления порта отладки на компьютере.  
   
- Если порт поддерживает отправлять события порта, он также должен реализовывать <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> интерфейс для поддержки  <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> интерфейс, который, в свою очередь, предоставляющий  [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) интерфейс.  
+ Если порт поддерживает отправлять события портов, необходимо также реализовать <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> интерфейс для поддержки <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> интерфейс, который в свою очередь предоставляет [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) интерфейса.  
   
-## Замечания для вызывающих объектов  
- Вызовы [GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md) OR  [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) возвращение этот интерфейс, представляющий порт.  
+## <a name="notes-for-callers"></a>Примечания для вызывающих объектов  
+ Вызовы [GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md) или [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) возвращают этот интерфейс, представляющий запрошенный порт.  
   
-## Методы в том порядке Vtable  
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugPort2`.  
   
 |Метод|Описание|  
-|-----------|--------------|  
+|------------|-----------------|  
 |[GetPortName](../../../extensibility/debugger/reference/idebugport2-getportname.md)|Возвращает имя порта.|  
 |[GetPortId](../../../extensibility/debugger/reference/idebugport2-getportid.md)|Возвращает идентификатор порта.|  
-|[GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md)|Возвращает запрос, используемый для создания порт \(при наличии\).|  
-|[GetPortSupplier](../Topic/IDebugPort2::GetPortSupplier.md)|Возвращает поставщика порта для данного порта.|  
-|[GetProcess](../Topic/IDebugPort2::GetProcess.md)|Возвращает интерфейс к процессу заданный идентификатор процесса.|  
-|[EnumProcesses](../Topic/IDebugPort2::EnumProcesses.md)|Перечисляет все процессы, выполняющиеся на порт.|  
+|[GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md)|Возвращает запрос, используемый для создания порта (если доступно).|  
+|[GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)|Возвращает поставщика порта для этого порта.|  
+|[GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)|Возвращает интерфейс процесс, Получает идентификатор процесса.|  
+|[EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)|Перечисляет все процессы, запущенные на порт.|  
   
-## Заметки  
- Локальный порт предоставляет доступ ко всем процессам и программам, выполняющимся на локальном компьютере.  Другие порты могут представлять последовательного соединения с помощью метода с префиксом tail в устройство CE\-основанному окнами или сетевого подключения к компьютеру non\-DCOM.  `IDebugPort2` интерфейс используется для поиска имени и идентификатора порта перечислить все процессы, выполняющиеся на порт, и предоставить возможности для запуска и окончания процессов на порт.  
+## <a name="remarks"></a>Примечания  
+ Локальный порт предоставляет доступ ко всем процессам и программы, запущенные на локальном компьютере. Другим портам, может представлять подключения к последовательному на устройстве под управлением Windows CE или сетевое подключение к компьютеру не DCOM. `IDebugPort2` Интерфейс используется для поиска, имя и идентификатор порта, перечислить все процессы, запущенные на порт и предоставляет средства для запуска и завершения процессов в порт.  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
  Сборка: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [Базовых интерфейсов](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

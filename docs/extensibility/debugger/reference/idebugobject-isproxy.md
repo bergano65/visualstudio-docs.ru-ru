@@ -1,50 +1,52 @@
 ---
-title: "IDebugObject::IsProxy | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugObject::IsProxy"
-  - "Прокси"
+title: "IDebugObject::IsProxy | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugObject::IsProxy
+- IsProxy
 ms.assetid: 06c66b87-db95-4400-ab26-5d33e743a439
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 40c1b54c8da094ed48685bd59789290f4206699a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugObject::IsProxy
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Определяет, является ли объект прозрачным прокси.  
+# <a name="idebugobjectisproxy"></a>IDebugObject::IsProxy
+Определяет, является ли объект прозрачного прокси.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT IsProxy (  
-   BOOL* pfIsProxy  
+   BOOL* pfIsProxy  
 );  
 ```  
   
-```c#  
+```csharp  
 int IsProxy (  
-   out bool pfIsProxy  
+   out bool pfIsProxy  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `pfIsProxy`  
- \[out\] `TRUE` если объект прозрачным прокси. в противном случае \-  `FALSE`.  
+ [out] `TRUE` Если объект является прозрачным прокси-сервер; в противном случае `FALSE`.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## Заметки  
- Этот метод реализуется значение по умолчанию C\+\+ debug обработчик.  
+## <a name="remarks"></a>Примечания  
+ Этот метод реализуется модулем отладки C++ по умолчанию.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

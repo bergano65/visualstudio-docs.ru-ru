@@ -1,57 +1,59 @@
 ---
-title: "IEEVisualizerService::GetValueDisplayStringCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IEEVisualizerService::GetValueDisplayStringCount"
-  - "GetValueDisplayStringCount"
+title: "IEEVisualizerService::GetValueDisplayStringCount | Документы Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IEEVisualizerService::GetValueDisplayStringCount
+- GetValueDisplayStringCount
 ms.assetid: d683a833-fbfb-4042-84df-6905124a268a
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6fd3d05935c2edaeff723dc979764faf04d61c10
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
-# IEEVisualizerService::GetValueDisplayStringCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Извлекает число строк значения для отображения указанного свойства или поля.  
+# <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
+Возвращает номер строки значение указанного свойства или поля.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
-```cpp#  
+```cpp  
 HRESULT GetValueDisplayStringCount (  
-   DWORD         displayKind,   
-   IDebugField * propertyOrField,   
-   ULONG *       pcelt  
+   DWORD         displayKind,   
+   IDebugField * propertyOrField,   
+   ULONG *       pcelt  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetValueDisplayStringCount (  
-   uint        displayKind,   
-   IDebugField propertyOrField,   
-   out ulong   pcelt  
+   uint        displayKind,   
+   IDebugField propertyOrField,   
+   out ulong   pcelt  
 );  
 ```  
   
-#### Параметры  
+#### <a name="parameters"></a>Параметры  
  `displayKind`  
- \[in\] значение [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) перечисление.  
+ [in] Значение из [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) перечисления.  
   
  `propertyOrField`  
- \[in\] IDebugField интерфейс, представляющий свойство или поле.  
+ [in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс, который представляет свойство или поле.  
   
  `pcelt`  
- \[out\] возвращает число строк значения для отображения.  
+ [out] Возвращает число строк, значение для отображения.  
   
-## Возвращаемое значение  
- В случае успеха возвращает `S_OK`; в противном случае возвращает код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успеха возвращает `S_OK`; в противном случае возвращается код ошибки.  
   
-## См. также  
+## <a name="see-also"></a>См. также  
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

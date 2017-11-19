@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - managed package framework, creating Tools Options pages
 - Tools Options pages [Visual Studio SDK], creating using managed package framework
 ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
-caps.latest.revision: 29
+caps.latest.revision: "29"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: f6329950b3af0b0ec44347ad9a85124ee7192439
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 6ed61dbc745b00f5f6f0beeba5aa38c3d316f98f
-ms.contentlocale: ru-ru
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="creating-options-pages"></a>Создание страницы параметров
 В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] платформы управляемых пакетов классы, производные от <xref:Microsoft.VisualStudio.Shell.DialogPage> расширить [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки, добавив **параметры** страниц в группе **средства** меню.  
@@ -81,13 +66,15 @@ ms.lasthandoff: 09/06/2017
  Следующий класс определяет минимальные параметры страницы «hello world». При открытии, пользователь может задать открытый `HelloWorld` свойства в сетке свойств.  
   
 ### <a name="code"></a>Код  
- [!code-csharp[#11 UI_UserSettings_ToolsOptionPages](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_1.cs) ] [!code-vb [UI_UserSettings_ToolsOptionPages № 11](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_1.vb)]  
+ [!code-csharp[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_1.cs)]
+ [!code-vb[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_1.vb)]  
   
 ### <a name="description"></a>Описание  
  Применение в класс пакета следующий атрибут доступны параметры страницы при загрузке пакета. Произвольные идентификаторы ресурсов категории и страницы, числа и логическое значение в конце указывает, поддерживает ли странице автоматизации.  
   
 ### <a name="code"></a>Код  
- [!code-csharp[UI_UserSettings_ToolsOptionPages #07](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_2.cs) ] [!code-vb [UI_UserSettings_ToolsOptionPages #07](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_2.vb)]  
+ [!code-csharp[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_2.cs)]
+ [!code-vb[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_2.vb)]  
   
 ### <a name="description"></a>Описание  
  Следующий обработчик событий выводит результат в зависимости от значения свойства, заданного на странице параметров. Она использует <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> метод с результатом явно привести тип страницы настраиваемый параметр для доступа к свойствам на странице.  
@@ -95,7 +82,8 @@ ms.lasthandoff: 09/06/2017
  В случае проектов, созданных с помощью шаблона пакета, вызовите эту функцию из `MenuItemCallback` добавлена функция, чтобы присоединить его к команды по умолчанию для **средства** меню.  
   
 ### <a name="code"></a>Код  
- [!code-csharp[#08 UI_UserSettings_ToolsOptionPages](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_3.cs) ] [!code-vb [UI_UserSettings_ToolsOptionPages #08](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_3.vb)]  
+ [!code-csharp[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_3.cs)]
+ [!code-vb[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_3.vb)]  
   
 ## <a name="see-also"></a>См. также  
  [Расширение настройки пользователя и параметры](../../extensibility/extending-user-settings-and-options.md)   

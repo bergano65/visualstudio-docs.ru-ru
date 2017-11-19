@@ -1,53 +1,54 @@
 ---
-title: "Свойства $1...$9 (RegExp) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "$1...$9"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "$1...$9 - свойства"
+title: "$1... $9 свойства (RegExp) (JavaScript) | Документы Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: $1...$9
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: $1...$9 properties
 ms.assetid: 8bd84851-f62f-4eb1-a93d-b67135ea091a
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fc1926d6281c9003c432c9c9e89a73a48a584ef4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/27/2017
 ---
-# Свойства $1...$9 (RegExp) (JavaScript)
-Возвращает девять последних сохраненных в памяти фрагментов, совпадающих с шаблоном поиска.  Только для чтения.  
+# <a name="19-properties-regexp-javascript"></a>Свойства $1...$9 (RegExp) (JavaScript)
+Возвращает девять последних сохраненных в памяти фрагментов, во время сравнения с шаблоном. Только для чтения.  
   
-## Синтаксис  
+## <a name="syntax"></a>Синтаксис  
   
 ```  
   
 RegExp.$n   
 ```  
   
-## Параметры  
+## <a name="parameters"></a>Параметры  
  `RegExp`  
- Всегда глобальный объект `RegExp`.  
+ Всегда глобальный `RegExp` объекта.  
   
  `n`  
- Любое число в диапазоне от 1 до 9.  
+ Любое целое число от 1 до 9.  
   
-## Заметки  
- Значения свойств **$1...$9** изменяются при каждом успешном обнаружении заключенной в скобки подстроки.  В шаблоне регулярного выражения можно указать любое количество заключенных в скобки подстрок, однако сохраняется только девять последних совпадений.  
+## <a name="remarks"></a>Примечания  
+ Значения **$1... $9** свойства изменяются при каждом успешном скобки подстроки. Любое число подстрок в скобках могут быть указаны в шаблоне регулярного выражения, но можно сохранить только девять последних.  
   
-## Пример  
- В следующем примере выполняется поиск регулярного выражения.  В нем отображаются совпадения и подсовпадения из глобального объекта `RegExp`.  Подсовпадения — это найденные совпадения в скобках, содержащиеся в свойствах `$1…$9`.  В примере также отображаются совпадения и подсовпадения из массива, возвращаемого методом `exec`.  
+## <a name="example"></a>Пример  
+ В следующем примере выполняется поиск регулярного выражения. Он отображает совпадения и submatches из глобального `RegExp` объекта. Подстроки соответствия совпадают успешно скобки, содержащихся в `$1...$9` свойства. В примере также отображает совпадения и submatches из массива, возвращаемого `exec` метод.  
   
-```javascript  
+```JavaScript  
 var newLine = "<br />";  
   
 var re = /(\w+)@(\w+)\.(\w+)/g  
@@ -103,10 +104,10 @@ document.write(s);
   
 ```  
   
-## Требования  
+## <a name="requirements"></a>Требования  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **Относится к**: [Объект RegExp](../../javascript/reference/regexp-object-javascript.md)  
+ **Применяется к**: [объект RegExp](../../javascript/reference/regexp-object-javascript.md)  
   
-## См. также  
- [Regular Expression Syntax \(JavaScript\)](http://msdn.microsoft.com/ru-ru/ab0766e1-7037-45ed-aa23-706f58358c0e)
+## <a name="see-also"></a>См. также  
+ [Синтаксис регулярного выражения (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)
